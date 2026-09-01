@@ -91,13 +91,15 @@ export function createAtlas({ manifest, topology, sources, land = null, dataRoot
 
 // landFile overrides the manifest's land list; the fixture manifest has
 // none, and the site still wants coastlines under the synthetic marks.
+// `false` loads no coastlines at all: the contribution form needs the
+// topology and nothing that is only drawn.
 export async function loadAtlas({ dataRoot = 'data/', landFile = null, fetchJson = defaultFetchJson } = {}) {
   const manifest = await fetchJson(`${dataRoot}index/manifest.json`, { cache: 'no-store' });
   const [topology, sourcesIndex] = await Promise.all([
     fetchJson(`${dataRoot}${manifest.files.topology}`),
     fetchJson(`${dataRoot}${manifest.files.sources}`),
   ]);
-  const landPath = landFile ?? (manifest.land?.[0] ? `${dataRoot}${manifest.land[0].file}` : null);
+  const landPath = landFile === false ? null : landFile ?? (manifest.land?.[0] ? `${dataRoot}${manifest.land[0].file}` : null);
   const land = landPath ? await fetchJson(landPath) : null;
   return createAtlas({ manifest, topology, sources: sourcesIndex.sources, land, dataRoot, fetchJson });
 }

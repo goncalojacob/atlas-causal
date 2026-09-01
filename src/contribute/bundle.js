@@ -36,10 +36,10 @@ export const FIELDS = Object.freeze({
   edge: Object.freeze([
     { key: 'from', label: 'From', input: 'select', optionsFrom: 'events', path: '/from', required: true },
     { key: 'to', label: 'To', input: 'select', optionsFrom: 'events', path: '/to', required: true },
-    { key: 'type', label: 'Type', input: 'select', options: EDGE_TYPES, path: '/type', required: true, hint: 'the right one of five, not the nearest one' },
-    { key: 'confidence', label: 'Confidence', input: 'select', options: CONFIDENCE, path: '/confidence', required: true },
+    { key: 'type', label: 'Type', input: 'select', options: ['', ...EDGE_TYPES], path: '/type', required: true, hint: 'the right one of five, not the nearest one' },
+    { key: 'confidence', label: 'Confidence', input: 'select', options: ['', ...CONFIDENCE], path: '/confidence', required: true, hint: 'defined by evidence, not by how strongly you feel: consensus needs two sources by different authors' },
     { key: 'explanation', label: 'Explanation', input: 'textarea', path: '/explanation', required: true, hint: 'the argument for the link, written by you: why this, and not coincidence' },
-    { key: 'disputeText', label: 'The dispute', input: 'textarea', path: '/dispute/text', hint: 'required when disputed: who disagrees, and why' },
+    { key: 'disputeText', label: 'The dispute', input: 'textarea', path: '/dispute/text', when: (v) => v.confidence === 'disputed', hint: 'who disagrees about this link, and why; the reader sees the disagreement rather than a side' },
   ]),
   source: Object.freeze([
     { key: 'id', label: 'Id', input: 'text', path: '/id', required: true, hint: 'author, year, keyword: russell-2000-henry' },

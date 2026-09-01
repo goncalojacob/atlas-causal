@@ -42,11 +42,22 @@ test('modules import without a DOM (main.js excepted)', async () => {
   }
 });
 
-test('index.html loads only local modules and the stylesheet', async () => {
-  const html = await readFile(path.join(ROOT, 'index.html'), 'utf8');
-  assert.match(html, /<script type="module" src="src\/main\.js">/);
-  assert.match(html, /href="src\/style\.css"/);
-  assert.doesNotMatch(html, /https?:\/\//);
+test('every page loads only local modules and the stylesheet', async () => {
+  const pages = (await readdir(ROOT)).filter((name) => name.endsWith('.html')).sort();
+  assert.ok(pages.includes('index.html') && pages.includes('contribute.html'), 'every page in the repository root is checked here');
+  for (const page of pages) {
+    const html = await readFile(path.join(ROOT, page), 'utf8');
+    assert.match(html, /<link rel="stylesheet" href="src\/style\.css">/, page);
+    // <a href> may point anywhere; nothing the browser executes or renders
+    // may come from off the origin (no CDN, no fonts, no analytics).
+    for (const [, tag, , url] of html.matchAll(/<(script|link|img|iframe|source)\b[^>]*\b(src|href)="([^"]*)"/g)) {
+      assert.doesNotMatch(url, /^(https?:)?\/\//, `${page}: <${tag}> loads ${url}`);
+      await assert.doesNotReject(stat(path.join(ROOT, url)), `${page}: <${tag}> ${url} is missing`);
+    }
+    for (const [, src] of html.matchAll(/<script\b[^>]*\bsrc="([^"]*)"/g)) {
+      assert.match(src, /^src\/(?:[a-z-]+\/)?main\.js$/, `${page}: only a bootstrap module`);
+    }
+  }
 });
 
 test('no hex colour outside the tokens in style.css', async () => {

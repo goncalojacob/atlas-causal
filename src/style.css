@@ -162,3 +162,90 @@ button { font: inherit; }
 .panel .citation .identifiers { color: var(--ink-soft); font-size: 0.85rem; display: block; }
 .panel .citation.missing, .panel .unsafe-url { color: var(--madder); }
 .panel code { font-size: 0.85em; background: var(--ground); padding: 0 0.25rem; }
+
+/* --- reading pages: contribute.html, about.html ----------------------- */
+
+.page-body { height: auto; }
+.page-body .bar h1 a { color: inherit; text-decoration: none; }
+.page {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 1rem 1rem 4rem;
+}
+.prose h2 { font-family: var(--font); font-weight: normal; font-size: 1.4rem; color: var(--cobalt); margin: 1.5rem 0 0.5rem; }
+.prose h3 { font-family: var(--font); font-weight: normal; font-size: 1.1rem; color: var(--cobalt); margin: 1.25rem 0 0.4rem; }
+.prose p, .prose li, .prose dd { font-family: var(--font); font-size: 1rem; }
+.prose p.hint, .prose .hint { font-family: var(--font-ui); }
+.prose a { color: var(--cobalt); }
+.prose code { font-size: 0.85em; background: var(--paper); padding: 0 0.25rem; border: 1px solid var(--line); }
+.prose .levels dt { margin-top: 0.6rem; }
+.prose .levels dd { margin: 0.15rem 0 0 1.5rem; }
+.prose .badge {
+  display: inline-block; padding: 0 0.4rem; border-radius: 3px; font-size: 0.75rem;
+  font-family: var(--font-ui); border: 1px solid var(--cobalt-soft); color: var(--cobalt);
+}
+.prose .badge.consensus { background: var(--cobalt); color: var(--paper); border-color: var(--cobalt); }
+.prose .badge.probable { background: var(--paper); }
+.prose .badge.disputed { border-style: dashed; border-color: var(--madder); color: var(--madder); }
+.prose .footnote { color: var(--ink-soft); font-size: 0.85rem; }
+
+/* --- the contribution form -------------------------------------------- */
+
+.contrib { margin-top: 1.5rem; }
+.contrib fieldset, .contrib .entry {
+  border: 1px solid var(--line);
+  background: var(--paper);
+  padding: 0.75rem 1rem 1rem;
+  margin: 0 0 1rem;
+}
+.contrib legend, .contrib .entry-head h3 {
+  font-family: var(--font); font-weight: normal; font-size: 1.1rem; color: var(--cobalt); margin: 0;
+}
+.contrib .entry-head { display: flex; align-items: baseline; justify-content: space-between; }
+.contrib .field { margin-top: 0.75rem; }
+.contrib label, .contrib .citations-label { display: block; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--ink-soft); }
+.contrib input[type="text"], .contrib textarea, .contrib select {
+  width: 100%; font: inherit; padding: 0.3rem 0.4rem;
+  border: 1px solid var(--line); background: var(--ground); color: var(--ink); border-radius: 2px;
+}
+.contrib textarea { font-family: var(--font); font-size: 1rem; resize: vertical; }
+.contrib input:focus, .contrib textarea:focus, .contrib select:focus { outline: 2px solid var(--cobalt-soft); background: var(--paper); }
+.contrib .field.has-error input, .contrib .field.has-error textarea, .contrib .field.has-error select { border-color: var(--madder); }
+.contrib .hint { color: var(--ink-soft); font-size: 0.8rem; margin: 0.15rem 0 0; }
+.contrib .field-error { color: var(--madder); font-size: 0.85rem; margin: 0.2rem 0 0; }
+.contrib .entry-errors { list-style: none; padding: 0.4rem 0.6rem; margin: 0.5rem 0 0; color: var(--madder); background: var(--madder-faint); }
+
+.contrib .citations-head { display: flex; align-items: baseline; gap: 0.5rem; }
+.contrib .citation-rows { list-style: none; padding: 0; margin: 0.25rem 0 0; }
+.contrib .citation-row { display: flex; gap: 0.5rem; align-items: center; margin-bottom: 0.25rem; }
+.contrib .citation-row select { flex: 2; }
+.contrib .citation-row input { flex: 1; }
+
+.contrib .similar { border-left: 3px solid var(--madder); background: var(--madder-faint); padding: 0.5rem 0.75rem; margin-top: 0.5rem; }
+.contrib .similar p { margin: 0 0 0.25rem; }
+.contrib .similar ul { margin: 0 0 0.4rem; padding-left: 1.2rem; }
+.contrib .acknowledge { display: flex; gap: 0.4rem; align-items: baseline; text-transform: none; letter-spacing: 0; font-size: 0.9rem; color: var(--ink); }
+.contrib .acknowledge input { width: auto; }
+
+.contrib button {
+  border: 1px solid var(--cobalt); background: var(--paper); color: var(--cobalt);
+  padding: 0.2rem 0.6rem; border-radius: 3px; cursor: pointer;
+}
+.contrib button:hover { background: var(--cobalt-faint); }
+.contrib button[disabled] { border-color: var(--line); color: var(--ink-soft); cursor: not-allowed; background: var(--ground); }
+.contrib button.link { background: none; border: 0; padding: 0; color: var(--cobalt); text-decoration: underline; }
+.contrib button.link.small { font-size: 0.8rem; }
+.contrib .add-row { display: flex; gap: 0.5rem; margin-bottom: 1rem; }
+
+.contrib .report { margin: 1rem 0; }
+.contrib .report .summary { font-family: var(--font); font-size: 1rem; margin: 0.4rem 0 0; }
+.contrib .report .summary.bad { color: var(--madder); }
+.contrib .report .warning { color: var(--ink-soft); font-size: 0.85rem; margin: 0.15rem 0; }
+.contrib .bundle-preview summary { cursor: pointer; color: var(--ink-soft); font-size: 0.85rem; }
+.contrib .preview {
+  max-height: 22rem; overflow: auto; background: var(--paper);
+  border: 1px solid var(--line); padding: 0.5rem; font-size: 0.8rem; margin: 0.4rem 0 0;
+}
+.contrib .submit-row { margin-top: 1rem; }
+.contrib .submit { font-size: 1rem; padding: 0.4rem 0.9rem; }
+.contrib .submit-note { color: var(--ink-soft); margin: 0.4rem 0 0; }
