@@ -1,0 +1,60 @@
+# On push to main, one job: validate, rebuild data/index/, commit it if it
+# changed, then upload and deploy the same checkout to GitHub Pages. The
+# index is owned by main, post-merge; PRs never carry it. The commit uses
+# the default token on purpose: pushes made with it start no workflows, and
+# the deploy happens right here, so no loop and no stale site.
+#
+# Requires: Settings → Pages → Source "GitHub Actions", and branch
+# protection that lets github-actions[bot] push to main.
+name: deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+      - name: Validate records
+        run: node tools/validate.mjs
+      - name: Tests
+        run: node --test
+      - name: Build the index
+        run: node tools/build-index.mjs
+      - name: Assert the index is what the builder produces
+        run: node tools/validate.mjs --index --quiet
+      - name: Commit the index if it changed
+        run: |
+          if [ -n "$(git status --porcelain -- data/index)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/index
+            git commit -m "chore: regenerate data/index"
+            git push
+          else
+            echo "index unchanged"
+          fi
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - id: deployment
+        uses: actions/deploy-pages@v4
