@@ -1,0 +1,265 @@
+// The side panel: detail of the selected event, the chain walked, its
+// consequences, the other branches that fed it (convergence), citations
+// with supporting and dissenting sources shown apart. Confidence and status
+// are shown as such; a disputed link is never walked through silently.
+// Traversal logic lives in graph.js; this file only asks it.
+
+import { esc, safeUrl } from './util/esc.js';
+import { consequences, convergence } from './graph.js';
+import { formatInterval, formatYear, bounds, defaultCalendar } from './util/dates.js';
+
+const TYPE_LABEL = Object.freeze({
+  caused: 'caused',
+  enabled: 'enabled',
+  'reacted-to': 'reacted to',
+  'precondition-of': 'precondition of',
+  inspired: 'inspired',
+});
+
+const CONFIDENCE_HINT = Object.freeze({
+  consensus: 'accepted; at least two independent sources',
+  probable: 'supported by the cited sources, no known dissent',
+  disputed: 'qualified historians disagree about this link',
+});
+
+function badge(confidence) {
+  return `<span class="badge ${esc(confidence)}" title="${esc(CONFIDENCE_HINT[confidence] ?? '')}">${esc(confidence)}</span>`;
+}
+
+function startYear(event) {
+  return bounds(event.when.start).min;
+}
+
+function whenLine(event) {
+  const { when } = event;
+  let text = formatInterval(when);
+  if (when.date) {
+    const calendar = when.calendar ?? defaultCalendar(startYear(event));
+    text += ` · ${esc(when.date)} (${calendar})`;
+  }
+  return text;
+}
+
+export function createPanel(container, { atlas, state, fixtures = false }) {
+  let token = 0;
+  const laneLabel = (id) => atlas.regions.find((r) => r.id === id)?.label ?? id ?? '—';
+
+  container.addEventListener('click', (e) => {
+    const el = e.target.closest('[data-action]');
+    if (!el) return;
+    const s = state.get();
+    switch (el.dataset.action) {
+      case 'select':
+        state.set({ selected: el.dataset.id, chain: [] });
+        break;
+      case 'follow': {
+        const edge = atlas.edges.get(el.dataset.edge);
+        if (edge) state.set({ chain: [...s.chain, edge.id], selected: edge.to });
+        break;
+      }
+      case 'back': {
+        const chain = s.chain.slice(0, -1);
+        const last = atlas.edges.get(chain[chain.length - 1] ?? '');
+        const first = atlas.edges.get(s.chain[0] ?? '');
+        state.set({ chain, selected: last ? last.to : first ? first.from : s.selected });
+        break;
+      }
+      case 'clear':
+        state.set({ chain: [] });
+        break;
+      case 'year':
+        state.set({ year: Number(el.dataset.year) });
+        break;
+      default:
+    }
+  });
+
+  // Explanations load when their <details> opens. toggle does not bubble,
+  // hence the capturing listener.
+  container.addEventListener('toggle', (e) => {
+    const details = e.target;
+    if (!(details instanceof HTMLDetailsElement) || !details.open || !details.dataset.edge) return;
+    const slot = details.querySelector('[data-slot="explanation"]');
+    if (!slot || slot.dataset.loaded) return;
+    slot.dataset.loaded = '1';
+    atlas.record('edge', details.dataset.edge).then(
+      (edge) => { slot.innerHTML = edgeTextHtml(edge); },
+      () => { slot.innerHTML = '<p class="muted">Could not load the record.</p>'; },
+    );
+  }, true);
+
+  function citationsHtml(citations, heading) {
+    if (!citations || citations.length === 0) return '';
+    const items = citations.map((c) => {
+      const src = atlas.sources.get(c.source);
+      if (!src) return `<li class="citation missing">unknown source <code>${esc(c.source)}</code></li>`;
+      const ids = [];
+      if (src.isbn) ids.push(`ISBN ${esc(src.isbn)}`);
+      if (src.doi) ids.push(`<a href="https://doi.org/${encodeURIComponent(src.doi)}" rel="noopener" target="_blank">doi:${esc(src.doi)}</a>`);
+      if (src.url) {
+        const url = safeUrl(src.url);
+        ids.push(url ? `<a href="${esc(url)}" rel="noopener" target="_blank">${esc(url)}</a>` : `<span class="unsafe-url">${esc(src.url)}</span>`);
+      }
+      if (src.repository) ids.push(`${esc(src.repository)}${src.reference ? `, ${esc(src.reference)}` : ''}`);
+      return `<li class="citation">
+        <span class="creators">${esc((src.creators ?? []).join(', '))}</span>${src.year ? ` (${esc(src.year)})` : ''}.
+        <em>${esc(src.title)}</em>${src.publisher ? `. ${esc(src.publisher)}` : ''}.
+        ${c.locator ? `<span class="locator">${esc(c.locator)}.</span>` : ''}
+        <span class="identifiers">${ids.join(' · ')}</span>
+        ${src.status !== 'active' ? `<span class="badge status">${esc(src.status)}</span>` : ''}
+      </li>`;
+    });
+    return `<h3>${esc(heading)}</h3><ul class="citations">${items.join('')}</ul>`;
+  }
+
+  function edgeTextHtml(edge) {
+    const parts = [`<p class="explanation">${esc(edge.explanation)}</p>`];
+    parts.push(citationsHtml(edge.sources, 'Supporting sources'));
+    if (edge.dispute) {
+      parts.push(`<div class="dispute"><h3>The dispute</h3><p>${esc(edge.dispute.text)}</p>${citationsHtml(edge.dispute.sources, 'Dissenting sources')}</div>`);
+    }
+    return parts.join('');
+  }
+
+  function eventLink(event, extra = '') {
+    return `<button type="button" class="link" data-action="select" data-id="${esc(event.id)}">${esc(event.title)}</button> <span class="when">${esc(formatInterval(event.when))}</span>${extra}`;
+  }
+
+  function chainHtml(chainEdges) {
+    if (chainEdges.length === 0) return '';
+    const first = atlas.events.get(chainEdges[0].from);
+    const steps = chainEdges.map((edge) => {
+      const to = atlas.events.get(edge.to);
+      return `<li class="step ${edge.confidence === 'disputed' ? 'disputed' : ''}">
+        <span class="arrow">${esc(TYPE_LABEL[edge.type] ?? edge.type)}</span> ${badge(edge.confidence)}
+        <span class="step-target">${to ? eventLink(to) : esc(edge.to)}</span>
+      </li>`;
+    });
+    return `<section class="chain">
+      <h2>The path you walked <span class="count">${chainEdges.length} step${chainEdges.length === 1 ? '' : 's'}</span></h2>
+      <ol class="steps"><li class="step start">${first ? eventLink(first) : esc(chainEdges[0].from)}</li>${steps.join('')}</ol>
+      <p class="actions"><button type="button" data-action="back">Step back</button> <button type="button" data-action="clear">Clear the path</button></p>
+    </section>`;
+  }
+
+  function consequencesHtml(list) {
+    if (list.length === 0) return '<section class="consequences"><h2>Consequences</h2><p class="muted">No outgoing links recorded.</p></section>';
+    const items = list.map(({ edge, event }) => `<li class="edge-row ${esc(edge.confidence)}">
+      <div class="edge-head">
+        <span class="arrow">${esc(TYPE_LABEL[edge.type] ?? edge.type)}</span> ${badge(edge.confidence)}
+        <button type="button" class="follow" data-action="follow" data-edge="${esc(edge.id)}">${esc(event.title)} <span class="when">${esc(formatInterval(event.when))}</span> →</button>
+      </div>
+      <details data-edge="${esc(edge.id)}"><summary>Why</summary><div data-slot="explanation"><p class="muted">Loading…</p></div></details>
+    </li>`);
+    return `<section class="consequences"><h2>Consequences <span class="count">${list.length}</span></h2><ul class="edges">${items.join('')}</ul></section>`;
+  }
+
+  function convergenceHtml(list, walked, selectedId) {
+    const heading = walked ? 'Other branches into this event' : 'What fed this event';
+    const hint = walked
+      ? 'Ancestors of this event that are not on the path you walked. Arriving one way does not mean that way explains it.'
+      : 'Every ancestor. Walk a path to see which branches are not the one you took.';
+    if (list.length === 0) return `<section class="convergence"><h2>${heading}</h2><p class="muted">${walked ? 'Nothing else fed this event.' : 'No incoming links recorded.'}</p></section>`;
+    const items = list.map(({ event, edge, to, depth }) => `<li class="edge-row ${esc(edge.confidence)}">
+      <div class="edge-head">
+        ${eventLink(event)}
+        <span class="arrow">${esc(TYPE_LABEL[edge.type] ?? edge.type)}</span> ${badge(edge.confidence)}
+        ${to.id === selectedId ? '' : `<span class="via">→ ${esc(to.title)}</span>`}
+        ${depth > 1 ? `<span class="depth">${depth} steps up</span>` : ''}
+      </div>
+      <details data-edge="${esc(edge.id)}"><summary>Why</summary><div data-slot="explanation"><p class="muted">Loading…</p></div></details>
+    </li>`);
+    return `<section class="convergence"><h2>${heading} <span class="count">${list.length}</span></h2><p class="hint">${hint}</p><ul class="edges">${items.join('')}</ul></section>`;
+  }
+
+  function introHtml() {
+    const n = atlas.activeEvents.length;
+    if (n === 0 && !fixtures) {
+      return `<section class="intro"><h2>No records yet</h2>
+        <p>The dataset is empty. Write the first event with <code>node tools/new-record.mjs</code>, run the validator and <code>node tools/build-index.mjs</code>.</p>
+        <p>To see the interface working on a synthetic graph, open <a href="?fixtures=1">?fixtures=1</a>.</p></section>`;
+    }
+    return `<section class="intro"><h2>Pick an event</h2>
+      <p>Click a mark on the map or a bar on the timeline. Then follow its consequences; the panel will show which other branches fed the same endpoint.</p>
+      <p class="muted">${n} events, ${[...atlas.edges.values()].filter((e) => e.status === 'active').length} links, ${atlas.sources.size} sources.${fixtures ? ' Synthetic fixtures: nothing here is history.' : ''}</p></section>`;
+  }
+
+  function render(s) {
+    token += 1;
+    const mine = token;
+    if (!s.selected) {
+      container.innerHTML = introHtml();
+      return;
+    }
+    const found = atlas.resolve(s.selected);
+    if (!found || found.kind !== 'event') {
+      container.innerHTML = `<section class="intro"><h2>Not found</h2><p>No event with id <code>${esc(s.selected)}</code>.</p></section>`;
+      return;
+    }
+    const event = found.record;
+    const chainEdges = s.chain.map((id) => atlas.edges.get(id)).filter(Boolean);
+    const pathIds = [...new Set([...chainEdges.flatMap((e) => [e.from, e.to]), event.id])];
+    const lastEdge = chainEdges[chainEdges.length - 1] ?? null;
+    const out = consequences(atlas.adjacency, event.id);
+    const conv = convergence(atlas.adjacency, event.id, pathIds);
+
+    const notices = found.via.map((v) => (v.reason === 'alias'
+      ? `<p class="notice"><code>${esc(v.id)}</code> is a former id of this event.</p>`
+      : `<p class="notice"><code>${esc(v.id)}</code> was merged into this event.</p>`));
+    if (event.status !== 'active') notices.push(`<p class="notice status">This event is <strong>${esc(event.status)}</strong>; it has no active links.</p>`);
+    if (lastEdge && lastEdge.confidence === 'disputed') {
+      notices.push('<p class="notice disputed">You arrived here through a <strong>disputed</strong> link. Read the dispute below before going on.</p>');
+    }
+
+    container.innerHTML = `
+      ${notices.join('')}
+      <header class="event-head">
+        <h2>${esc(event.title)}</h2>
+        <p class="meta">
+          <span class="when">${whenLine(event)}</span>
+          ${event.where ? ` · <span class="where">${esc(event.where.label)} <span class="muted">(${esc(event.where.precision)})</span></span>` : ' · <span class="muted">no place: timeline only</span>'}
+          · <span class="lane">${esc(laneLabel(event.region))}</span>
+          <button type="button" class="link small" data-action="year" data-year="${esc(startYear(event))}">map at ${esc(formatYear(startYear(event)))}</button>
+        </p>
+      </header>
+      <section class="summary" data-slot="summary"><p class="muted">Loading…</p></section>
+      ${lastEdge ? `<section class="last-step ${lastEdge.confidence === 'disputed' ? 'disputed' : ''}">
+        <h2>The link you followed</h2>
+        <p class="edge-head"><span class="arrow">${esc(atlas.events.get(lastEdge.from)?.title ?? lastEdge.from)} — ${esc(TYPE_LABEL[lastEdge.type] ?? lastEdge.type)} →</span> ${badge(lastEdge.confidence)}</p>
+        <div data-slot="last-step"><p class="muted">Loading…</p></div>
+      </section>` : ''}
+      ${chainHtml(chainEdges)}
+      ${consequencesHtml(out)}
+      ${convergenceHtml(conv, chainEdges.length > 0, event.id)}
+      <section class="sources" data-slot="sources"></section>
+    `;
+
+    atlas.record('event', event.id).then(
+      (rec) => {
+        if (mine !== token) return;
+        container.querySelector('[data-slot="summary"]').innerHTML = `<p>${esc(rec.summary)}</p>`;
+        container.querySelector('[data-slot="sources"]').innerHTML = citationsHtml(rec.sources, 'Sources for this event');
+      },
+      () => {
+        if (mine !== token) return;
+        container.querySelector('[data-slot="summary"]').innerHTML = '<p class="muted">Could not load the record text.</p>';
+      },
+    );
+    if (lastEdge) {
+      atlas.record('edge', lastEdge.id).then(
+        (rec) => {
+          if (mine !== token) return;
+          container.querySelector('[data-slot="last-step"]').innerHTML = edgeTextHtml(rec);
+        },
+        () => {
+          if (mine !== token) return;
+          container.querySelector('[data-slot="last-step"]').innerHTML = '<p class="muted">Could not load the link text.</p>';
+        },
+      );
+    }
+  }
+
+  state.subscribe(render);
+  render(state.get());
+  return { render };
+}

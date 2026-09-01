@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Atlas causal</title>
+  <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+  <header class="bar">
+    <h1>Atlas causal</h1>
+    <p class="tagline">Pick an event, follow its consequences, see which other branches fed the same endpoint.</p>
+    <div class="layers" role="group" aria-label="Layers">
+      <label><input type="checkbox" data-layer="land" checked> coastlines</label>
+      <label><input type="checkbox" data-layer="events" checked> events</label>
+    </div>
+    <span id="fixtures-badge" class="fixtures-badge" hidden title="tests/fixtures/data: invented records for testing the interface">synthetic fixtures — not history</span>
+  </header>
+  <main class="layout">
+    <section id="map" class="map-area" aria-label="Map"></section>
+    <aside id="panel" class="panel" aria-live="polite"></aside>
+    <section id="timeline" class="timeline-area" aria-label="Timeline"></section>
+  </main>
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>
