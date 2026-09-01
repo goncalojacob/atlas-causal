@@ -130,7 +130,7 @@ later as `i18n` overlays; the base never changes.
   "status": "active",
   "supersededBy": null,
   "aliases": [],
-  "authors": [ { "name": "Gonçalo Jacob", "github": "gjacob" } ],
+  "authors": [ { "name": "Gonçalo Jacob", "github": "goncalojacob" } ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-01",
   "revised": null,

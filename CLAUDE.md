@@ -87,14 +87,14 @@ tests/                     node --test, zero deps; tests/fixtures/data/ is the s
 ## The data model
 
 An edge is a small historiographical argument, so `explanation` and `sources`
-are required. Five edge types exist (`causou`, `permitiu`, `reagiu-a`,
-`precondicao-de`, `inspirou`) specifically so everything does not collapse into
+are required. Five edge types exist (`caused`, `enabled`, `reacted-to`,
+`precondition-of`, `inspired`) specifically so everything does not collapse into
 plain causation. Do not add a generic type.
 
 `confidence` separates consensus from debate. The interface shows the
 difference. Presenting a disputed link as fact is the worst mistake this project
-can make. When historians disagree, mark it `disputada` and say so in the
-explanation rather than picking a side.
+can make. When historians disagree, mark it `disputed` and say who disagrees in
+`dispute` rather than picking a side.
 
 ## The convergence query
 
@@ -110,8 +110,8 @@ connected graph nearly every node descends from the oldest one. Do not
 
 - Vanilla JS, ES modules, no framework, no TypeScript for now.
 - Data from `data/` is untrusted input; it becomes community contributions
-  later. Escape it before putting it in the DOM. `esc()` in `src/main.js`.
-- Comments explain why, not what. In Portuguese.
+  later. Escape it before putting it in the DOM. `esc()` in `src/util/esc.js`.
+- Comments explain why, not what. In English.
 - Small modules with one job. If `main.js` passes ~300 lines, split it.
 - No dark mode yet. Visual direction is azulejo: cold white ground, cobalt
   drawing, one madder red accent for the path being followed. Colors are CSS
