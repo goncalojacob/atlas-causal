@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "common/confidence.json",
+  "title": "Confidence",
+  "description": "Defined by evidence so it can be checked. consensus: the link is accepted; requires at least two sources by different authors (rule 9). probable: supported by the cited sources, no known dissent. disputed: qualified historians disagree about the link itself; must carry dispute { text, sources } (rule 8). No fourth value.",
+  "type": "string",
+  "enum": ["consensus", "probable", "disputed"]
+}

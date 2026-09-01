@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "v1/event.json",
+  "title": "Event",
+  "description": "One point in space and time, or a long process with an interval and usually no place. region is derived at index time from where; on the record it is an optional override, required when where is absent.",
+  "type": "object",
+  "required": ["schema", "id", "kind", "status", "supersededBy", "aliases", "authors", "license", "created", "revised", "sources", "title", "summary", "when", "actors"],
+  "additionalProperties": false,
+  "properties": {
+    "schema": { "$ref": "../common/provenance.json#/properties/schema" },
+    "id": { "$ref": "../common/provenance.json#/properties/id" },
+    "kind": { "const": "event" },
+    "status": { "$ref": "../common/provenance.json#/properties/status" },
+    "supersededBy": { "$ref": "../common/provenance.json#/properties/supersededBy" },
+    "aliases": { "$ref": "../common/provenance.json#/properties/aliases" },
+    "authors": { "$ref": "../common/provenance.json#/properties/authors" },
+    "license": { "$ref": "../common/provenance.json#/properties/license" },
+    "created": { "$ref": "../common/provenance.json#/properties/created" },
+    "revised": { "$ref": "../common/provenance.json#/properties/revised" },
+    "sources": { "$ref": "../common/provenance.json#/properties/sources" },
+    "title": { "type": "string", "minLength": 1, "maxLength": 200 },
+    "summary": {
+      "description": "Written by a person.",
+      "type": "string",
+      "minLength": 1
+    },
+    "when": { "$ref": "../common/interval.json" },
+    "where": {
+      "oneOf": [
+        { "type": "null" },
+        { "$ref": "../common/place.json" }
+      ]
+    },
+    "region": {
+      "oneOf": [
+        { "type": "null" },
+        { "$ref": "../common/provenance.json#/properties/id" }
+      ]
+    },
+    "actors": {
+      "description": "Must be empty until data/actors/ exists (rule 14).",
+      "type": "array"
+    }
+  }
+}

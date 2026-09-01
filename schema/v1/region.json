@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "v1/region.json",
+  "title": "Region",
+  "description": "One timeline lane. data/regions.json is an array of these; data/geo/regions.json holds one polygon per id.",
+  "type": "object",
+  "required": ["id", "label", "order"],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "$ref": "../common/provenance.json#/properties/id" },
+    "label": { "type": "string", "minLength": 1, "maxLength": 100 },
+    "order": { "type": "integer", "minimum": 1 }
+  }
+}

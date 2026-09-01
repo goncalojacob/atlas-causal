@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "v1/source.json",
+  "title": "Source",
+  "description": "A bibliography entry, shared by reference: fifty records citing the same book cite one file. The envelope's authors are the contributors of this record; the authors of the work itself are creators. Identifier requirements per type are rule 13.",
+  "type": "object",
+  "required": ["schema", "id", "kind", "status", "supersededBy", "aliases", "authors", "license", "created", "revised", "type", "creators", "title"],
+  "additionalProperties": false,
+  "properties": {
+    "schema": { "$ref": "../common/provenance.json#/properties/schema" },
+    "id": { "$ref": "../common/provenance.json#/properties/id" },
+    "kind": { "const": "source" },
+    "status": { "$ref": "../common/provenance.json#/properties/status" },
+    "supersededBy": { "$ref": "../common/provenance.json#/properties/supersededBy" },
+    "aliases": { "$ref": "../common/provenance.json#/properties/aliases" },
+    "authors": { "$ref": "../common/provenance.json#/properties/authors" },
+    "license": { "$ref": "../common/provenance.json#/properties/license" },
+    "created": { "$ref": "../common/provenance.json#/properties/created" },
+    "revised": { "$ref": "../common/provenance.json#/properties/revised" },
+    "type": {
+      "type": "string",
+      "enum": ["book", "chapter", "article", "thesis", "primary", "dataset", "web"]
+    },
+    "creators": {
+      "description": "Authors of the work, as printed. Rule 9 compares these across sources.",
+      "type": "array",
+      "items": { "type": "string", "minLength": 1, "maxLength": 200 }
+    },
+    "title": { "type": "string", "minLength": 1, "maxLength": 500 },
+    "year": {
+      "oneOf": [
+        { "type": "null" },
+        { "type": "integer" }
+      ]
+    },
+    "publisher": {
+      "oneOf": [
+        { "type": "null" },
+        { "type": "string", "minLength": 1, "maxLength": 200 }
+      ]
+    },
+    "isbn": {
+      "oneOf": [
+        { "type": "null" },
+        { "type": "string", "pattern": "^[0-9]{9}[0-9Xx]$|^[0-9]{13}$" }
+      ]
+    },
+    "doi": {
+      "oneOf": [
+        { "type": "null" },
+        { "type": "string", "pattern": "^10\\.[0-9]{4,9}/\\S+$" }
+      ]
+    },
+    "url": {
+      "oneOf": [
+        { "type": "null" },
+        { "type": "string", "minLength": 1, "maxLength": 2000 }
+      ]
+    },
+    "accessed": {
+      "oneOf": [
+        { "type": "null" },
+        { "$ref": "../common/provenance.json#/properties/created" }
+      ]
+    },
+    "repository": {
+      "description": "For primary sources: the archive or library holding the document.",
+      "oneOf": [
+        { "type": "null" },
+        { "type": "string", "minLength": 1, "maxLength": 300 }
+      ]
+    },
+    "reference": {
+      "description": "For primary sources: the shelfmark or call number inside the repository.",
+      "oneOf": [
+        { "type": "null" },
+        { "type": "string", "minLength": 1, "maxLength": 300 }
+      ]
+    }
+  }
+}

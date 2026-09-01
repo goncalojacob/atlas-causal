@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "common/provenance.json",
+  "title": "Common envelope",
+  "description": "The provenance every record carries. Kind schemas in v1/ reference these property definitions one by one, because the validator's keyword subset has no allOf.",
+  "type": "object",
+  "required": ["schema", "id", "kind", "status", "supersededBy", "aliases", "authors", "license", "created", "revised", "sources"],
+  "additionalProperties": false,
+  "properties": {
+    "schema": { "const": 1 },
+    "id": {
+      "description": "Slug; immutable once merged; equals the file name.",
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "maxLength": 120
+    },
+    "kind": {
+      "type": "string",
+      "enum": ["event", "edge", "source"]
+    },
+    "status": {
+      "type": "string",
+      "enum": ["active", "merged", "retracted"]
+    },
+    "supersededBy": {
+      "oneOf": [
+        { "type": "null" },
+        { "$ref": "#/properties/id" }
+      ]
+    },
+    "aliases": {
+      "description": "Former ids only. Unique across all ids and all other aliases.",
+      "type": "array",
+      "items": { "$ref": "#/properties/id" }
+    },
+    "authors": {
+      "description": "Contributors to this record, set from the issue opener by the Action. Never free text alone.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "github"],
+        "additionalProperties": false,
+        "properties": {
+          "name": { "type": "string", "minLength": 1, "maxLength": 120 },
+          "github": {
+            "oneOf": [
+              { "type": "null" },
+              { "type": "string", "pattern": "^[A-Za-z0-9-]{1,39}$" }
+            ]
+          }
+        }
+      }
+    },
+    "license": {
+      "type": "string",
+      "enum": ["CC-BY-SA-4.0", "PD", "CC0-1.0", "ODbL-1.0"]
+    },
+    "created": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+    },
+    "revised": {
+      "oneOf": [
+        { "type": "null" },
+        { "$ref": "#/properties/created" }
+      ]
+    },
+    "sources": {
+      "description": "Citations. A citation points at a source record by id, with an optional locator (page, chapter, folio).",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["source"],
+        "additionalProperties": false,
+        "properties": {
+          "source": { "$ref": "#/properties/id" },
+          "locator": {
+            "oneOf": [
+              { "type": "null" },
+              { "type": "string", "minLength": 1, "maxLength": 200 }
+            ]
+          }
+        }
+      }
+    }
+  }
+}
