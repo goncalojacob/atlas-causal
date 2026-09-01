@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "fixture-event-h",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Fixture Author",
+      "github": "fixture-author"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-01-01",
+  "revised": null,
+  "sources": [
+    {
+      "source": "fixture-source-1",
+      "locator": null
+    }
+  ],
+  "title": "Fixture event H",
+  "summary": "Synthetic record used by the test suite. It is not history and describes nothing that happened.",
+  "when": {
+    "start": 1290,
+    "end": 1290
+  },
+  "where": {
+    "lon": -12,
+    "lat": 25,
+    "precision": "city",
+    "label": "Fixture place H"
+  },
+  "region": null,
+  "actors": []
+}
