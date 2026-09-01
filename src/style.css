@@ -43,6 +43,7 @@ button { font: inherit; }
 .bar h1 { margin: 0; font-family: var(--font); font-size: 1.25rem; color: var(--cobalt); font-weight: normal; }
 .bar .tagline { margin: 0; color: var(--ink-soft); flex: 1; }
 .bar .layers { display: flex; gap: 0.75rem; color: var(--ink-soft); }
+.bar-link { color: var(--cobalt); }
 .fixtures-badge {
   padding: 0.1rem 0.5rem;
   border: 1px solid var(--madder);
