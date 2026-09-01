@@ -59,6 +59,9 @@ data/LICENSE  data/geo/LICENSE   CC BY-SA 4.0 for records; per source for geomet
 schema/common/             interval, place, provenance (the envelope), confidence
 schema/v1/                 event, edge, source, region, bundle
 index.html                 the atlas; no build step, plain ES modules
+contribute.html            the contribution form; not linked from the atlas while contributions are closed
+about.html                 what it is, how to read confidence and a dispute, the licences
+README.md  CONTRIBUTING.md for people reading the repository
 src/main.js                bootstrap only: load, wire views; ?fixtures=1 reads tests/fixtures/data/
 src/state.js               { year, selected, chain, layers } ⇄ URL query string
 src/data.js                manifest → topology (whole) → record text on demand; aliases, adjacency
@@ -68,9 +71,13 @@ src/map/map.js             SVG scaffold, pan/zoom, year slider
 src/map/layers/land.js     coastlines;  layers/events.js  marks and chain lines
 src/timeline.js            one lane per region; timeline-scale.js is the injected scale
 src/panel.js               detail, chain, consequences, convergence, citations
+src/contribute/bundle.js   the pure half of the form: fields, bundle assembly, duplicate search
+src/contribute/form.js     the form itself; submit.js copies the bundle and opens the issue
+src/contribute/main.js     bootstrap for contribute.html
 src/validate/schema.js     JSON Schema subset validator; fails closed on unknown keywords
 src/validate/rules.js      cross-record invariants 2–15 and the warnings; pure
 src/validate/core.js       validate(records, topology, schemas); buildTopology
+src/validate/schemas.js    the schema file list, for the browser: it cannot scan a directory
 src/util/dates.js          toAstronomical() and interval formatting; the only place years are compared
 src/util/geo.js            point-in-polygon and nearest-lane region derivation
 src/util/esc.js  dom.js    esc() and safeUrl(); SVG/HTML element helpers
@@ -79,9 +86,12 @@ tools/validate.mjs         CLI over core, plus the disk-only checks and --index
 tools/build-index.mjs      deterministic index: manifest + hashed topology and sources
 tools/build-regions.mjs    Natural Earth → data/geo/
 tools/new-record.mjs       scaffold a record
+tools/bundle-to-files.mjs  issue body → data/<kind>s/<id>.json; ids slug-checked before any path
+tools/lookup-sources.mjs   what the catalogues say a DOI or ISBN names; a review aid, never a gate
 tools/lib/read.mjs         all filesystem access for the tools
 tests/                     node --test, zero deps; tests/fixtures/data/ is the synthetic graph
-.github/workflows/         validate.yml on pull requests; deploy.yml on main
+.github/ISSUE_TEMPLATE/    contribution.yml, correction.yml, config.yml (no blank issues)
+.github/workflows/         validate.yml on pull requests; contribution.yml on the `accepted` label; deploy.yml on main
 ```
 
 ## The data model
