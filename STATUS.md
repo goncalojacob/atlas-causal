@@ -67,7 +67,6 @@ modules; the map shows events that have started by the slider year.
    repo) for `contribution.yml`; note its expiry in `CONTRIBUTING.md`.
    M2 itself (`contribute.html`, issue templates, `bundle-to-files.mjs`) is
    not started.
-4. Reconcile the two `CLAUDE.md` lines listed under Open questions.
 
 ## Open questions
 
@@ -76,14 +75,6 @@ modules; the map shows events that have started by the slider year.
   Owner: "we'll decide later."
 - The scoped PAT for `contribution.yml` has to be created by the owner in
   GitHub settings at M2; its expiry goes in `CONTRIBUTING.md`.
-- `CLAUDE.md` still says "Comments explain why, not what. In Portuguese."
-  and names the edge types and `disputada` in Portuguese under "The data
-  model". The brief said to keep every line outside Commands and Layout, so
-  they were kept; they contradict the everything-in-English decision.
-  Owner to reconcile (code, data and interface use the English names).
-- `ARCHITECTURE.md` shows `"github": "gjacob"`; the GitHub account is
-  `goncalojacob`, which is what `CODEOWNERS` uses. Records should carry the
-  real handle.
 - Source records have no field for the container of a chapter or article
   (journal, edited volume). `locator` and the DOI cover locating it; the
   owner decides whether a `container` field is wanted before records exist.
