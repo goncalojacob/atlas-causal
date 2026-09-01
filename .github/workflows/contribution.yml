@@ -1,0 +1,162 @@
+# A contribution issue becomes a pull request — but only when a maintainer
+# says so. The auto-applied `contribution` label triggers nothing; the
+# `accepted` label, which only someone with write access can apply, is the
+# spam gate (docs/review-2026-09-01.md, finding 8).
+#
+# Two rules this file exists to keep:
+#   - untrusted text reaches scripts through `env:`, never through `${{ }}`
+#     inside a `run:` block, which would be shell injection with a token
+#     that can push. tests/workflows.test.mjs asserts this for every
+#     workflow in the repository;
+#   - the branch and the pull request are made with a scoped PAT, not with
+#     GITHUB_TOKEN, because a pull request opened with GITHUB_TOKEN starts
+#     no workflows and would arrive with no CI at all (finding 2).
+name: contribution
+
+on:
+  issues:
+    types: [labeled]
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: contribution-${{ github.event.issue.number }}
+  cancel-in-progress: false
+
+jobs:
+  accept:
+    if: github.event.label.name == 'accepted'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Require the contribution PAT
+        env:
+          PAT: ${{ secrets.CONTRIBUTION_PAT }}
+        run: |
+          if [ -z "$PAT" ]; then
+            echo "::error::The repository secret CONTRIBUTION_PAT is not set."
+            echo "::error::Create a fine-grained personal access token with Contents: read and write and Pull requests: read and write on this repository, store it as the secret CONTRIBUTION_PAT, note its expiry in CONTRIBUTING.md, and apply the accepted label again."
+            exit 1
+          fi
+
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          token: ${{ secrets.CONTRIBUTION_PAT }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+
+      - name: Write the records from the issue body
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+          ISSUE_AUTHOR: ${{ github.event.issue.user.login }}
+          CORRECTION: ${{ contains(github.event.issue.labels.*.name, 'correction') }}
+        run: |
+          set -o pipefail
+          if [ "$CORRECTION" = "true" ]; then
+            node tools/bundle-to-files.mjs --correction 2>&1 | tee "$RUNNER_TEMP/report.log"
+          else
+            node tools/bundle-to-files.mjs 2>&1 | tee "$RUNNER_TEMP/report.log"
+          fi
+
+      - name: Validate the whole dataset
+        run: |
+          set -o pipefail
+          node tools/validate.mjs 2>&1 | tee -a "$RUNNER_TEMP/report.log"
+
+      - name: Tests
+        run: node --test
+
+      - name: Branch, commit and push
+        env:
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          ISSUE_AUTHOR: ${{ github.event.issue.user.login }}
+        run: |
+          # The committer is the Action; the author is the contributor, whose
+          # login bundle-to-files.mjs has already checked against GitHub's own
+          # shape, so it cannot be read here as a flag.
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "contribution/${ISSUE_NUMBER}"
+          git add data
+          git commit \
+            --author="${ISSUE_AUTHOR} <${ISSUE_AUTHOR}@users.noreply.github.com>" \
+            -m "data: records from issue #${ISSUE_NUMBER}" \
+            -m "Filed through the contribution form and written by tools/bundle-to-files.mjs."
+          git push -u origin "contribution/${ISSUE_NUMBER}"
+
+      - name: Open the pull request
+        id: pr
+        env:
+          GH_TOKEN: ${{ secrets.CONTRIBUTION_PAT }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          ISSUE_AUTHOR: ${{ github.event.issue.user.login }}
+        run: |
+          {
+            echo "Records from issue #${ISSUE_NUMBER}, opened by @${ISSUE_AUTHOR} and accepted by a maintainer."
+            echo
+            echo "Written by \`tools/bundle-to-files.mjs\`; \`tools/validate.mjs\` passed before this branch was pushed."
+            echo "The checklist below is the part no tool does."
+            echo
+            echo '```'
+            cat "$RUNNER_TEMP/report.log"
+            echo '```'
+            echo
+            echo "Closes #${ISSUE_NUMBER}"
+          } > "$RUNNER_TEMP/pr-body.md"
+          url=$(gh pr create \
+            --base main \
+            --head "contribution/${ISSUE_NUMBER}" \
+            --title "Contribution from issue #${ISSUE_NUMBER}" \
+            --body-file "$RUNNER_TEMP/pr-body.md")
+          echo "url=$url" >> "$GITHUB_OUTPUT"
+
+      - name: Say so on the issue
+        env:
+          GH_TOKEN: ${{ secrets.CONTRIBUTION_PAT }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          PR_URL: ${{ steps.pr.outputs.url }}
+        run: |
+          {
+            echo "Accepted and opened as a pull request: ${PR_URL}"
+            echo
+            echo "The records are written and the validator passed. A person still reads the argument, the sources and the confidence before anything is merged."
+          } > "$RUNNER_TEMP/accepted.md"
+          gh issue comment "$ISSUE_NUMBER" --body-file "$RUNNER_TEMP/accepted.md"
+
+      # A reading aid for the reviewer, never a gate: what the catalogues say
+      # the DOIs and ISBNs actually name. Failure here is not failure.
+      - name: Check the identifiers against the catalogues
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.CONTRIBUTION_PAT }}
+          ISSUE_BODY: ${{ github.event.issue.body }}
+          PR_URL: ${{ steps.pr.outputs.url }}
+        run: |
+          node tools/lookup-sources.mjs > "$RUNNER_TEMP/identifiers.md"
+          if [ -s "$RUNNER_TEMP/identifiers.md" ]; then
+            gh pr comment "$PR_URL" --body-file "$RUNNER_TEMP/identifiers.md"
+          fi
+
+      - name: Report the failure on the issue
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          {
+            echo "This contribution could not be turned into a pull request."
+            echo
+            echo '```'
+            tail -c 40000 "$RUNNER_TEMP/report.log" 2>/dev/null || echo "(the run failed before the records were written)"
+            echo '```'
+            echo
+            echo "Full log: ${RUN_URL}"
+            echo
+            echo "Fix the bundle in the form and edit this issue with the new JSON. A maintainer then removes the \`accepted\` label and applies it again — a label already on the issue does not fire this workflow twice."
+          } > "$RUNNER_TEMP/failure.md"
+          gh issue comment "$ISSUE_NUMBER" --body-file "$RUNNER_TEMP/failure.md"
