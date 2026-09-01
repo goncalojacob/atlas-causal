@@ -7,39 +7,37 @@ session ends. `ARCHITECTURE.md` is the target; this file is the position.
 ## Last updated
 
 2026-09-01, by the agent building M0/M1 (`docs/m0-brief.md`), at the end of
-M0.
+M1.
 
 ## Phase
 
-**M0 built, on branch `m0`, pull request open against `main`; M1 starting
-on the same branch.** `ARCHITECTURE.md` revision 3 is still the
-specification. `data/events|edges|sources` are empty: no record has been
-written, by design — the owner writes every record.
+**M0 and M1 built, on branch `m0`, pull request #1 open against `main`.**
+`ARCHITECTURE.md` revision 3 is still the specification.
+`data/events|edges|sources` are empty: no record has been written, by
+design — the owner writes every record. The site renders the synthetic
+fixture graph from `python3 -m http.server 8000` at
+`http://localhost:8000/?fixtures=1` (verified in headless Chrome: map,
+timeline, panel, chain in the URL, convergence, disputed-link notice).
 
 What exists and passes (`node tools/validate.mjs --index`, `node --test`:
-61 tests):
+87 tests, CI green on the PR):
 
-- Licences: `LICENSE` (MIT), `data/LICENSE` (CC BY-SA 4.0 legal code),
-  `data/geo/LICENSE` (Natural Earth, public domain, URL and version).
-  `.nvmrc` = 22.
-- `schema/common/` (interval, place, provenance, confidence) and
-  `schema/v1/` (event, edge, source, region, bundle).
-- `src/validate/schema.js` — subset validator, fails closed, tested;
-  `src/validate/rules.js` — invariants 2–15 plus the three warnings, each
-  with a passing and a failing test; `src/validate/core.js` —
-  `validate(records, topology, schemas)` and `buildTopology`.
-- `src/util/dates.js` (`toAstronomical` and friends), `src/util/geo.js`
-  (point-in-polygon, nearest lane).
-- `tools/validate.mjs` (with `--index`), `tools/build-index.mjs`
-  (byte-deterministic, tested), `tools/build-regions.mjs` (ran once;
-  `data/geo/land-present.json` and `data/geo/regions.json` committed),
-  `tools/new-record.mjs`, `tools/lib/read.mjs`.
-- `data/index/` for the empty dataset (manifest with zero records) and
-  `tests/fixtures/data/` with its own index: a synthetic graph of twelve
-  events, ten edges, four sources, three square lanes.
-- `.github/workflows/validate.yml`, `deploy.yml`, `CODEOWNERS`,
-  `PULL_REQUEST_TEMPLATE.md`.
-- `CLAUDE.md` commands and layout updated.
+- **M0.** Licences (`LICENSE` MIT, `data/LICENSE` CC BY-SA 4.0,
+  `data/geo/LICENSE` Natural Earth); `.nvmrc` = 22; `schema/common/` and
+  `schema/v1/`; `src/validate/{schema,rules,core}.js`;
+  `src/util/{dates,geo}.js`; `tools/{validate,build-index,build-regions,
+  new-record}.mjs` and `tools/lib/read.mjs`; `data/geo/land-present.json`
+  and `data/geo/regions.json` from Natural Earth v5.1.2; `data/index/` for
+  the empty dataset; `tests/fixtures/data/` (twelve events, ten edges, four
+  sources, three square lanes) with its own index; `validate.yml`,
+  `deploy.yml`, `CODEOWNERS`, PR template; `CLAUDE.md` updated.
+- **M1.** `index.html`, `src/style.css` (azulejo tokens), `src/main.js`,
+  `state.js`, `data.js`, `graph.js`, `map/projection.js` (equirectangular),
+  `map/map.js`, `map/layers/{land,events}.js`, `timeline.js`,
+  `timeline-scale.js`, `panel.js`, `util/{esc,dom}.js`. State
+  `{ year, selected, chain, layers }` in the query string; `chain` is the
+  list of edge ids walked. Disputed edges dashed on the map and marked in
+  the panel; arriving through one shows a notice and the dispute text.
 
 ## Decided
 
@@ -48,22 +46,28 @@ review was accepted except two items the owner chose to defer or drop:
 contributions-open timing (deferred), `strength` on edges (left out).
 
 Taken by the building agent, all reversible, all listed under Deviations:
-`creators` on source records; edge-id shape; nearest-lane fallback; the two
-helper modules.
+`creators` on source records; edge-id shape; nearest-lane fallback; helper
+modules; the map shows events that have started by the slider year.
 
 ## Next
 
-1. Owner: review and merge the M0 pull request (link below). Before the
-   first merge to `main`, enable **Settings → Pages → Source: GitHub
-   Actions**, otherwise `deploy.yml` fails at `configure-pages`; and let
-   `github-actions[bot]` push to `main` if branch protection is on.
-2. Agent (same branch, in progress): M1 — `src/` site against
-   `tests/fixtures/` via `?fixtures=1`.
-3. Owner: write the first events, edges and sources with
-   `node tools/new-record.mjs`, then `node tools/validate.mjs` and
-   `node tools/build-index.mjs`.
-4. Owner, at M2: create the scoped PAT for `contribution.yml`; note its
-   expiry in `CONTRIBUTING.md`.
+1. **Owner: review and merge PR #1**
+   (https://github.com/goncalojacob/atlas-causal/pull/1). Before the first
+   merge to `main`, enable **Settings → Pages → Source: GitHub Actions**,
+   otherwise `deploy.yml` fails at `configure-pages`; if branch protection
+   is on, let `github-actions[bot]` push to `main` (it commits the
+   regenerated index).
+2. **Owner: write the first records.** `node tools/new-record.mjs event
+   <id> --title … --start … --lon … --lat … --label …` (and `edge`,
+   `source`), fill in the text, then `node tools/validate.mjs` and
+   `node tools/build-index.mjs`; open `http://localhost:8000/`. Use
+   `region` on the record whenever the derived lane is wrong (strait
+   cities, islands absent at 110m).
+3. **Owner, at M2: create the scoped PAT** (contents + pull-requests on this
+   repo) for `contribution.yml`; note its expiry in `CONTRIBUTING.md`.
+   M2 itself (`contribute.html`, issue templates, `bundle-to-files.mjs`) is
+   not started.
+4. Reconcile the two `CLAUDE.md` lines listed under Open questions.
 
 ## Open questions
 
@@ -76,7 +80,7 @@ helper modules.
   and names the edge types and `disputada` in Portuguese under "The data
   model". The brief said to keep every line outside Commands and Layout, so
   they were kept; they contradict the everything-in-English decision.
-  Owner to reconcile (the code and data use the English names).
+  Owner to reconcile (code, data and interface use the English names).
 - `ARCHITECTURE.md` shows `"github": "gjacob"`; the GitHub account is
   `goncalojacob`, which is what `CODEOWNERS` uses. Records should carry the
   real handle.
@@ -87,13 +91,20 @@ helper modules.
   Turkey and the Caucasus in `asia`, Greenland in `americas`. Overridable
   per record with `region`; acceptable for v1?
 - Nearest-lane tolerance is 3° (`NEAREST_TOLERANCE` in `src/util/geo.js`).
-  Azores and Madeira are absent from 110m Natural Earth, so an event there
-  needs `region` set by hand; the validator says so.
+  A point in the Strait of Gibraltar (Ceuta) derives by nearest and may land
+  on `europe`; Azores and Madeira are absent from 110m Natural Earth. Such
+  events need `region` set by hand; the validator says so when nothing is in
+  reach, but not when the nearest guess is merely wrong — the owner should
+  glance at `regionMethod: "nearest"` entries in the topology index.
+- Map semantics: the map shows events whose start is at or before the
+  slider year; the timeline always shows everything. Is that the intended
+  reading of "look at a map at a given moment"?
 
 ## Deviations
 
-Where `ARCHITECTURE.md` could not be built as written, the closest thing
-that keeps its invariants was built. Each is one edit to reverse.
+Where `ARCHITECTURE.md` or the brief could not be built as written, the
+closest thing that keeps the invariants was built. Each is one edit to
+reverse.
 
 1. **Bibliographic authors of a source are `creators`.** The envelope's
    `authors[{name, github}]` is the record's contributors on every kind
@@ -114,10 +125,10 @@ that keeps its invariants was built. Each is one edit to reverse.
    lane, recorded as `regionMethod: "nearest"` in the topology; beyond
    that, `validate.mjs` errors and `build-index.mjs` refuses to write until
    the record sets `region`. Without this, most port cities fail at 110m.
-5. **Two modules not in the tree:** `src/util/geo.js` (geometry, pure, so
-   the browser form can derive a lane one day) and `tools/lib/read.mjs`
-   (every filesystem access of the tools, so `src/validate` stays free of
-   `fs`).
+5. **Modules not in the tree:** `src/util/geo.js` (geometry, pure),
+   `src/util/dom.js` (SVG/HTML element helpers shared by the views),
+   `tools/lib/read.mjs` (every filesystem access of the tools, so
+   `src/validate` stays free of `fs`).
 6. **Schema files may carry `$schema`, `$id`, `title`, `description`.**
    Annotations without validation semantics, listed in `schema.js`.
    Everything else outside the fourteen keywords fails closed, tested.
@@ -136,11 +147,20 @@ that keeps its invariants was built. Each is one edit to reverse.
 10. **`build-regions.mjs` downloads GeoJSON, not shapefiles.** The upstream
     repository publishes GeoJSON at the pinned tag v5.1.2, so no converter
     was needed. `--source <dir>` reads local copies when offline.
+11. **Fixture mode borrows the real coastlines.** `tests/fixtures/data/`
+    has square lane polygons but no land file; `main.js` passes
+    `data/geo/land-present.json` as the land layer in `?fixtures=1` so the
+    synthetic marks sit on a recognisable map. Everything else in fixture
+    mode is synthetic and the header says so.
+12. **`chain` in the URL is a list of edge ids**, not event ids: two events
+    can be joined by up to five parallel edges of different types, and the
+    panel must know which one was walked to show its confidence and
+    dispute.
 
 ## Where things live
 
 - Repo: `~/atlas-causal` (this directory), branch `m0`.
-- Pull request: "M0: skeleton, schemas, validator, CI" on GitHub.
+- Pull request #1: https://github.com/goncalojacob/atlas-causal/pull/1
 - Architecture page (artifact, now **behind** the repo file — revision 2;
   `ARCHITECTURE.md` is the source of truth):
   https://claude.ai/code/artifact/b3940d66-ad98-4de9-9bfd-aff8c77e6f36
