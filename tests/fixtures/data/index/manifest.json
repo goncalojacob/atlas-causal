@@ -1,0 +1,31 @@
+{
+  "counts": {
+    "edges": 10,
+    "events": 12,
+    "regions": 3,
+    "sources": 4
+  },
+  "files": {
+    "sources": "index/sources-bc0e6f1ea1f7.json",
+    "topology": "index/topology-1d92aac3def0.json"
+  },
+  "land": [],
+  "regions": [
+    {
+      "id": "fixture-lane-1",
+      "label": "Fixture lane 1",
+      "order": 1
+    },
+    {
+      "id": "fixture-lane-2",
+      "label": "Fixture lane 2",
+      "order": 2
+    },
+    {
+      "id": "fixture-lane-3",
+      "label": "Fixture lane 3",
+      "order": 3
+    }
+  ],
+  "schema": 1
+}

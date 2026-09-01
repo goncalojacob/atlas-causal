@@ -1,0 +1,337 @@
+{
+  "edges": [
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "fixture-event-a",
+      "id": "fixture-event-a--fixture-event-a2--enabled",
+      "status": "active",
+      "supersededBy": null,
+      "to": "fixture-event-a2",
+      "type": "enabled"
+    },
+    {
+      "aliases": [],
+      "confidence": "consensus",
+      "from": "fixture-event-a",
+      "id": "fixture-event-a--fixture-event-b--caused",
+      "status": "active",
+      "supersededBy": null,
+      "to": "fixture-event-b",
+      "type": "caused"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "fixture-event-b",
+      "id": "fixture-event-b--fixture-event-d--enabled",
+      "status": "active",
+      "supersededBy": null,
+      "to": "fixture-event-d",
+      "type": "enabled"
+    },
+    {
+      "aliases": [],
+      "confidence": "consensus",
+      "from": "fixture-event-c",
+      "id": "fixture-event-c--fixture-event-t--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "fixture-event-t",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "fixture-event-d",
+      "id": "fixture-event-d--fixture-event-t--caused",
+      "status": "active",
+      "supersededBy": null,
+      "to": "fixture-event-t",
+      "type": "caused"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "fixture-event-e",
+      "id": "fixture-event-e--fixture-event-c--inspired",
+      "status": "active",
+      "supersededBy": null,
+      "to": "fixture-event-c",
+      "type": "inspired"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "fixture-event-e",
+      "id": "fixture-event-e--fixture-event-t--inspired",
+      "status": "retracted",
+      "supersededBy": null,
+      "to": "fixture-event-t",
+      "type": "inspired"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "fixture-event-f",
+      "id": "fixture-event-f--fixture-event-t--reacted-to",
+      "status": "active",
+      "supersededBy": null,
+      "to": "fixture-event-t",
+      "type": "reacted-to"
+    },
+    {
+      "aliases": [],
+      "confidence": "disputed",
+      "from": "fixture-event-g",
+      "id": "fixture-event-g--fixture-event-t--caused",
+      "status": "active",
+      "supersededBy": null,
+      "to": "fixture-event-t",
+      "type": "caused"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "fixture-event-o",
+      "id": "fixture-event-o--fixture-event-e--enabled",
+      "status": "active",
+      "supersededBy": null,
+      "to": "fixture-event-e",
+      "type": "enabled"
+    }
+  ],
+  "events": [
+    {
+      "aliases": [],
+      "id": "fixture-event-a",
+      "region": "fixture-lane-1",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Fixture event A",
+      "when": {
+        "date": "1200-03-01",
+        "end": 1200,
+        "start": 1200
+      },
+      "where": {
+        "label": "Fixture place A",
+        "lat": 40,
+        "lon": -30,
+        "precision": "city"
+      }
+    },
+    {
+      "aliases": [],
+      "id": "fixture-event-a2",
+      "region": "fixture-lane-1",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Fixture event A2",
+      "when": {
+        "date": "1200-06-01",
+        "end": 1200,
+        "start": 1200
+      },
+      "where": {
+        "label": "Fixture place A2",
+        "lat": 42,
+        "lon": -28,
+        "precision": "city"
+      }
+    },
+    {
+      "aliases": [
+        "fixture-event-b-old"
+      ],
+      "id": "fixture-event-b",
+      "region": "fixture-lane-1",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Fixture event B",
+      "when": {
+        "end": 1220,
+        "start": 1220
+      },
+      "where": {
+        "label": "Fixture place B",
+        "lat": 35,
+        "lon": -25,
+        "precision": "city"
+      }
+    },
+    {
+      "aliases": [],
+      "id": "fixture-event-c",
+      "region": "fixture-lane-2",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Fixture event C",
+      "when": {
+        "end": 1230,
+        "start": 1230
+      },
+      "where": {
+        "label": "Fixture place C",
+        "lat": 0,
+        "lon": -30,
+        "precision": "city"
+      }
+    },
+    {
+      "aliases": [],
+      "id": "fixture-event-d",
+      "region": "fixture-lane-3",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Fixture event D",
+      "when": {
+        "end": 1240,
+        "start": 1240
+      },
+      "where": {
+        "label": "Fixture place D",
+        "lat": 10,
+        "lon": 20,
+        "precision": "city"
+      }
+    },
+    {
+      "aliases": [],
+      "id": "fixture-event-e",
+      "region": "fixture-lane-2",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Fixture event E",
+      "when": {
+        "end": 1225,
+        "start": 1225
+      },
+      "where": {
+        "label": "Fixture place E",
+        "lat": -10,
+        "lon": -20,
+        "precision": "city"
+      }
+    },
+    {
+      "aliases": [],
+      "id": "fixture-event-f",
+      "region": "fixture-lane-3",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Fixture event F",
+      "when": {
+        "end": 1300,
+        "start": 1260
+      },
+      "where": null
+    },
+    {
+      "aliases": [],
+      "id": "fixture-event-g",
+      "region": "fixture-lane-1",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Fixture event G",
+      "when": {
+        "end": null,
+        "start": {
+          "max": 1275,
+          "min": 1265
+        }
+      },
+      "where": {
+        "label": "Fixture place G",
+        "lat": 45,
+        "lon": -35,
+        "precision": "city"
+      }
+    },
+    {
+      "aliases": [],
+      "id": "fixture-event-h",
+      "region": "fixture-lane-1",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Fixture event H",
+      "when": {
+        "end": 1290,
+        "start": 1290
+      },
+      "where": {
+        "label": "Fixture place H",
+        "lat": 25,
+        "lon": -12,
+        "precision": "city"
+      }
+    },
+    {
+      "aliases": [],
+      "id": "fixture-event-m",
+      "region": "fixture-lane-1",
+      "regionMethod": "nearest",
+      "status": "merged",
+      "supersededBy": "fixture-event-b",
+      "title": "Fixture event M",
+      "when": {
+        "end": 1210,
+        "start": 1210
+      },
+      "where": {
+        "label": "Fixture place M",
+        "lat": 30,
+        "lon": -9,
+        "precision": "city"
+      }
+    },
+    {
+      "aliases": [],
+      "id": "fixture-event-o",
+      "region": "fixture-lane-2",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Fixture event O",
+      "when": {
+        "end": 1215,
+        "start": 1215
+      },
+      "where": {
+        "label": "Fixture place O",
+        "lat": -60,
+        "lon": 100,
+        "precision": "city"
+      }
+    },
+    {
+      "aliases": [],
+      "id": "fixture-event-t",
+      "region": "fixture-lane-3",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Fixture event T",
+      "when": {
+        "end": 1280,
+        "start": 1280
+      },
+      "where": {
+        "label": "Fixture place T",
+        "lat": 30,
+        "lon": 25,
+        "precision": "city"
+      }
+    }
+  ],
+  "schema": 1
+}

@@ -1,0 +1,41 @@
+{
+  "counts": {
+    "edges": 0,
+    "events": 0,
+    "regions": 5,
+    "sources": 0
+  },
+  "files": {
+    "sources": "index/sources-b79be19eb630.json",
+    "topology": "index/topology-f64ff9c0e46c.json"
+  },
+  "land": [],
+  "regions": [
+    {
+      "id": "europe",
+      "label": "Europe",
+      "order": 1
+    },
+    {
+      "id": "africa",
+      "label": "Africa",
+      "order": 2
+    },
+    {
+      "id": "asia",
+      "label": "Asia",
+      "order": 3
+    },
+    {
+      "id": "americas",
+      "label": "Americas",
+      "order": 4
+    },
+    {
+      "id": "oceania",
+      "label": "Oceania",
+      "order": 5
+    }
+  ],
+  "schema": 1
+}
