@@ -1,0 +1,14 @@
+Geometry under data/geo/ is licensed per source, file by file.
+
+Natural Earth (land-present.json, regions.json)
+  Public domain. Natural Earth is made with the participation of volunteers
+  and is free of any licence restrictions in any way.
+  https://www.naturalearthdata.com/about/terms-of-use/
+  Files derived from Natural Earth 1:110m vector data, version 5.1.2, taken
+  from the GeoJSON conversions published in the upstream repository:
+  https://github.com/nvkelso/natural-earth-vector/tree/v5.1.2/geojson
+  Regeneration is reproducible with tools/build-regions.mjs.
+
+Any geometry later imported from another source gets its own directory, its
+own paragraph here and its own attribution in the interface. Imported
+geometry is never merged into record files (see ARCHITECTURE.md).
