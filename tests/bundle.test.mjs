@@ -1,0 +1,210 @@
+// The pure half of the contribution form. Everything here is synthetic:
+// fixture-* ids, invented titles, no historical claim anywhere.
+
+import { test } from 'node:test';
+import assert from 'node:assert/strict';
+import {
+  FIELDS, CITATION_LISTS, emptyValues, slugify, parseBound, buildRecord, buildBundle,
+  findSimilar, similarity, checkBundleShape, validateBundle, everythingCited,
+} from '../src/contribute/bundle.js';
+import { buildTopology } from '../src/validate/core.js';
+import { createValidator } from '../src/validate/schema.js';
+import { createRegionDeriver } from '../src/util/geo.js';
+import { schemas, fixtures } from './helpers.mjs';
+
+const CONTEXT = { author: 'Fixture Contributor', today: '2026-09-01' };
+
+async function topologyOf() {
+  const { records, regions, polygons } = await fixtures();
+  return buildTopology(records, regions, { deriveRegion: createRegionDeriver(polygons) });
+}
+
+const eventValues = {
+  ...emptyValues('event'),
+  id: 'fixture-event-new',
+  title: 'Fixture event new',
+  summary: 'A synthetic event added by the form in a test. It is not history.',
+  start: '1300',
+  lon: '1.5',
+  lat: '2.5',
+  label: 'Fixture place',
+  precision: 'city',
+  citations: [{ source: 'fixture-source-1', locator: 'p. 1' }],
+};
+
+test('every field path is a property the kind schema knows', async () => {
+  const all = await schemas();
+  for (const [kind, fields] of Object.entries(FIELDS)) {
+    const properties = all[`v1/${kind}.json`].properties;
+    for (const field of fields) {
+      const head = field.path.split('/')[1];
+      assert.ok(Object.hasOwn(properties, head), `${kind}.${field.key} → /${head} is not in v1/${kind}.json`);
+    }
+    for (const list of CITATION_LISTS[kind]) {
+      assert.ok(Object.hasOwn(properties, list.path.split('/')[1]), `${kind} citation list ${list.key}`);
+    }
+  }
+});
+
+test('slugify, parseBound and the end-year shorthand', () => {
+  assert.equal(slugify('Fixture Event: the Second!'), 'fixture-event-the-second');
+  assert.equal(slugify('Ceütä  Fixture'), 'ceuta-fixture');
+  assert.equal(slugify('  '), '');
+
+  assert.equal(parseBound('1415'), 1415);
+  assert.equal(parseBound(' -44 '), -44);
+  assert.deepEqual(parseBound('-9600..-9000'), { min: -9600, max: -9000 });
+  // Not a year: it comes back as typed, so the schema reports the path.
+  assert.equal(parseBound('fifteenth century'), 'fifteenth century');
+  assert.equal(parseBound(''), '');
+
+  const same = buildRecord('event', { ...eventValues, start: '1300', end: '' }, CONTEXT);
+  assert.deepEqual(same.when, { start: 1300, end: 1300 });
+  const ongoing = buildRecord('event', { ...eventValues, end: 'ongoing' }, CONTEXT);
+  assert.equal(ongoing.when.end, null);
+  const ranged = buildRecord('event', { ...eventValues, start: '1300..1310', end: '1320' }, CONTEXT);
+  assert.deepEqual(ranged.when, { start: { min: 1300, max: 1310 }, end: 1320 });
+});
+
+test('a built record carries the envelope and passes its schema', async () => {
+  const v = createValidator(await schemas());
+
+  const event = buildRecord('event', { ...eventValues, date: '1300-05-06', calendar: 'julian' }, CONTEXT);
+  assert.deepEqual(event.authors, [{ name: 'Fixture Contributor', github: null }]);
+  assert.equal(event.license, 'CC-BY-SA-4.0');
+  assert.equal(event.created, '2026-09-01');
+  assert.deepEqual(event.actors, []);
+  assert.deepEqual(event.where, { lon: 1.5, lat: 2.5, precision: 'city', label: 'Fixture place' });
+  assert.deepEqual(v.validate('v1/event.json', event), []);
+
+  // No place at all is legal: a long process is timeline-only.
+  const process = buildRecord('event', { ...eventValues, lon: '', lat: '', label: '', region: 'europe' }, CONTEXT);
+  assert.equal(process.where, null);
+  assert.deepEqual(v.validate('v1/event.json', process), []);
+
+  const edge = buildRecord('edge', {
+    ...emptyValues('edge'),
+    from: 'fixture-event-a',
+    to: 'fixture-event-b',
+    type: 'caused',
+    confidence: 'probable',
+    explanation: 'A synthetic argument long enough to count as an argument.',
+    citations: [{ source: 'fixture-source-1', locator: '' }],
+  }, CONTEXT);
+  assert.equal(edge.id, 'fixture-event-a--fixture-event-b--caused');
+  assert.equal(Object.hasOwn(edge, 'dispute'), false);
+  assert.deepEqual(edge.sources, [{ source: 'fixture-source-1', locator: null }]);
+  assert.deepEqual(v.validate('v1/edge.json', edge), []);
+
+  const disputed = buildRecord('edge', {
+    ...emptyValues('edge'),
+    from: 'fixture-event-a',
+    to: 'fixture-event-b',
+    type: 'caused',
+    confidence: 'disputed',
+    explanation: 'A synthetic argument long enough to count as an argument.',
+    disputeText: 'Synthetic dissent, also long enough to be a real sentence.',
+    citations: [{ source: 'fixture-source-1' }],
+    disputeCitations: [{ source: 'fixture-source-2' }],
+  }, CONTEXT);
+  assert.deepEqual(disputed.dispute.sources, [{ source: 'fixture-source-2', locator: null }]);
+  assert.deepEqual(v.validate('v1/edge.json', disputed), []);
+
+  const source = buildRecord('source', {
+    ...emptyValues('source'),
+    id: 'fixture-source-new',
+    type: 'article',
+    creators: 'One Fixture; Two Fixture ',
+    title: 'A synthetic article',
+    year: '2026',
+    doi: '10.0000/fixture',
+  }, CONTEXT);
+  assert.deepEqual(source.creators, ['One Fixture', 'Two Fixture']);
+  assert.equal(source.year, 2026);
+  assert.equal(source.publisher, null);
+  assert.deepEqual(v.validate('v1/source.json', source), []);
+
+  assert.throws(() => buildRecord('presence', {}, CONTEXT), /kind must be/);
+});
+
+test('validateBundle runs the cross-record rules against the topology', async () => {
+  const topology = await topologyOf();
+  const all = await schemas();
+
+  const good = buildBundle([
+    { kind: 'source', values: { ...emptyValues('source'), id: 'fixture-source-new', type: 'book', creators: 'One Fixture', title: 'A synthetic book', isbn: '9780000000001' } },
+    { kind: 'event', values: eventValues },
+    {
+      kind: 'edge',
+      values: {
+        ...emptyValues('edge'),
+        from: 'fixture-event-a',
+        to: 'fixture-event-new',
+        type: 'caused',
+        confidence: 'probable',
+        explanation: 'A synthetic argument long enough to count as an argument.',
+        citations: [{ source: 'fixture-source-new' }],
+      },
+    },
+  ], CONTEXT);
+  const result = validateBundle(good, topology, all);
+  assert.deepEqual(result.errors, []);
+  assert.equal(result.ok, true);
+
+  // References resolve inside the bundle or in the topology, and nowhere else.
+  const dangling = buildBundle([{ kind: 'event', values: { ...eventValues, citations: [{ source: 'fixture-source-absent' }] } }], CONTEXT);
+  const danglingResult = validateBundle(dangling, topology, all);
+  assert.equal(danglingResult.ok, false);
+  assert.ok(danglingResult.errors.some((e) => e.rule === 3 && e.path === '/sources/0/source'));
+
+  // Arrow of time fires in the browser, not only in CI.
+  const backwards = buildBundle([{
+    kind: 'edge',
+    values: {
+      ...emptyValues('edge'),
+      from: 'fixture-event-t',
+      to: 'fixture-event-a',
+      type: 'caused',
+      confidence: 'probable',
+      explanation: 'A synthetic argument long enough to count as an argument.',
+      citations: [{ source: 'fixture-source-1' }],
+    },
+  }], CONTEXT);
+  assert.ok(validateBundle(backwards, topology, all).errors.some((e) => e.rule === 4));
+
+  // No sources, no submit.
+  const uncited = buildBundle([{ kind: 'event', values: { ...eventValues, citations: [] } }], CONTEXT);
+  assert.equal(everythingCited(uncited), false);
+  const uncitedResult = validateBundle(uncited, topology, all);
+  assert.equal(uncitedResult.ok, false);
+  assert.ok(uncitedResult.errors.some((e) => e.rule === 6));
+});
+
+test('checkBundleShape rejects anything that is not a bundle', () => {
+  assert.deepEqual(checkBundleShape({ schema: 1, records: [{}] }), []);
+  assert.ok(checkBundleShape(null).length);
+  assert.ok(checkBundleShape([]).length);
+  assert.ok(checkBundleShape({ schema: 2, records: [] }).some((p) => p.path === '/schema'));
+  assert.ok(checkBundleShape({ schema: 1, records: [] }).some((p) => p.path === '/records'));
+  assert.ok(checkBundleShape({ schema: 1 }).some((p) => p.path === '/records'));
+  assert.ok(checkBundleShape({ schema: 1, records: [{}], extra: 1 }).some((p) => p.path === '/extra'));
+});
+
+test('the duplicate search finds near-matches before a new event is allowed', () => {
+  const candidates = [
+    { id: 'fixture-event-a', title: 'Fixture event A', aliases: ['fixture-event-alpha'] },
+    { id: 'fixture-event-b', title: 'Fixture event B', aliases: [] },
+    { id: 'fixture-event-melaka', title: 'Fixture capture of Melaka', aliases: [] },
+  ];
+  const hits = findSimilar('Fixture capture of Malacca', candidates);
+  assert.equal(hits[0].id, 'fixture-event-melaka');
+
+  assert.equal(findSimilar('Fixture event A', candidates)[0].score, 1);
+  assert.equal(findSimilar('fixture event alpha', candidates)[0].id, 'fixture-event-a');
+  assert.deepEqual(findSimilar('Something entirely unrelated here', candidates), []);
+  assert.deepEqual(findSimilar('', candidates), []);
+  assert.equal(findSimilar('Fixture event', candidates, { limit: 1 }).length, 1);
+
+  assert.equal(similarity('Fixture Event A', 'fixture  event   a'), 1);
+  assert.equal(similarity('', 'anything'), 0);
+});
