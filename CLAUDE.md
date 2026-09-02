@@ -73,8 +73,9 @@ src/state.js               { year, selected, actor, chain, layers } ⇄ URL quer
 src/data.js                manifest → topology (whole) → record text on demand; aliases, adjacency, events by actor
 src/graph.js               consequences, ancestors, convergence; pure, ordered by type then confidence
 src/map/projection.js      lon/lat ⇄ SVG (equirectangular); the only file a projection change touches
-src/map/map.js             SVG scaffold, pan/zoom, year slider
-src/map/layers/land.js     coastlines;  layers/events.js  marks and chain lines
+src/map/cluster.js         pure: which marks overlap at this zoom, which of them no zoom can part
+src/map/map.js             SVG scaffold, pan/zoom, year slider, click into a cluster
+src/map/layers/land.js     coastlines;  layers/events.js  marks, clusters and chain lines
 src/timeline.js            one lane per region; timeline-scale.js is the injected scale
 src/panel.js               detail, chain, consequences, convergence, citations, the actor card
 src/contribute/bundle.js   the pure half of the form: fields, bundle assembly, duplicate search

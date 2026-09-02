@@ -350,7 +350,7 @@ reverse. 1–12 are from M0/M1, 13–21 from M2/M3.
     the citation rendering, the event links, the lane labels and the
     load-token discipline with the event view; splitting it would have
     meant threading five closures across a module boundary. `panel.js` is
-    now ~370 lines and still has one job. The ~300-line rule in
+    now ~390 lines and still has one job. The ~300-line rule in
     `CLAUDE.md` names `main.js` only, but this is the file to watch next.
 26. **The form's actor search is a `<select>` of names, not a search
     box.** "Searches the loaded topology's actors (and the bundle's) by
