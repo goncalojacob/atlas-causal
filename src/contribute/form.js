@@ -11,16 +11,21 @@
 
 import { html } from '../util/dom.js';
 import {
-  FIELDS, CITATION_LISTS, emptyValues, buildBundle, slugify, findSimilar, validateBundle,
+  FIELDS, CITATION_LISTS, ACTOR_LISTS, emptyValues, buildBundle, slugify, findSimilar, validateBundle,
 } from './bundle.js';
 import { submitBundle } from './submit.js';
 
-const KIND_LABEL = Object.freeze({ event: 'Event', edge: 'Edge', source: 'Source' });
+const KIND_LABEL = Object.freeze({ event: 'Event', edge: 'Edge', source: 'Source', actor: 'Actor' });
 const KIND_HINT = Object.freeze({
   event: 'One point in space and time, or a long process with an interval and no place.',
   edge: 'One causal link, with the argument for it. The id is derived: from, to and type.',
   source: 'A bibliography entry, cited by reference. Fifty records citing the same book cite one file.',
+  actor: 'A person, polity, institution or people. Actors are reached through their events, never listed on their own.',
 });
+
+// The field whose text suggests the id, per kind. An actor's display name
+// is the first of its semicolon-separated names.
+const TITLE_KEY = Object.freeze({ event: 'title', actor: 'names' });
 
 let sequence = 0;
 
@@ -90,7 +95,7 @@ export function createForm(container, { topology, schemas, template, fixtures = 
 
   // --- add buttons -------------------------------------------------------
   const addRow = html('div', { class: 'add-row' });
-  for (const kind of ['source', 'event', 'edge']) {
+  for (const kind of ['source', 'event', 'edge', 'actor']) {
     const button = html('button', { type: 'button' }, `Add ${kind}`);
     button.addEventListener('click', () => {
       addEntry(kind);
@@ -136,6 +141,17 @@ export function createForm(container, { topology, schemas, template, fixtures = 
     return [...seen].sort((a, b) => (a[0] < b[0] ? -1 : 1)).map(([value, label]) => ({ value, label }));
   }
 
+  function actorChoices() {
+    const seen = new Map();
+    for (const a of topology.actors ?? []) if (a.status === 'active') seen.set(a.id, `${a.name ?? a.id} — ${a.actorType ?? ''}`);
+    for (const entry of entries) {
+      if (entry.kind !== 'actor') continue;
+      const id = (entry.values.id ?? '').trim();
+      if (id) seen.set(id, `${(entry.values.names ?? '').split(';')[0].trim() || id} — in this bundle`);
+    }
+    return [...seen].sort((a, b) => (a[1] < b[1] ? -1 : a[1] > b[1] ? 1 : 0)).map(([value, label]) => ({ value, label }));
+  }
+
   function regionChoices() {
     return (topology.regions ?? []).map((r) => ({ value: r.id, label: r.label ?? r.id }));
   }
@@ -144,6 +160,7 @@ export function createForm(container, { topology, schemas, template, fixtures = 
     if (name === 'events') return [{ value: '', label: '— choose an event —' }, ...eventChoices()];
     if (name === 'sources') return [{ value: '', label: '— choose a source —' }, ...sourceChoices()];
     if (name === 'regions') return [{ value: '', label: '— derived from the place —' }, ...regionChoices()];
+    if (name === 'actors') return [{ value: '', label: '— choose an actor —' }, ...actorChoices()];
     return [];
   }
 
@@ -205,6 +222,7 @@ export function createForm(container, { topology, schemas, template, fixtures = 
     }
 
     for (const field of FIELDS[entry.kind]) node.appendChild(renderField(entry, field));
+    for (const list of ACTOR_LISTS[entry.kind]) node.appendChild(renderActors(entry, list));
     for (const list of CITATION_LISTS[entry.kind]) node.appendChild(renderCitations(entry, list));
     applyVisibility(entry);
     return node;
@@ -236,8 +254,8 @@ export function createForm(container, { topology, schemas, template, fixtures = 
     input.addEventListener('input', () => {
       entry.values[field.key] = input.value;
       if (field.key === 'id') entry.idTouched = true;
-      if (entry.kind === 'event' && field.key === 'title' && !entry.idTouched) {
-        entry.values.id = slugify(input.value);
+      if (field.key === TITLE_KEY[entry.kind] && !entry.idTouched) {
+        entry.values.id = slugify(input.value.split(';')[0]);
         const idInput = entry.fields.get('/id')?.input;
         if (idInput) idInput.value = entry.values.id;
       }
@@ -250,6 +268,62 @@ export function createForm(container, { topology, schemas, template, fixtures = 
     const error = html('p', { class: 'field-error', hidden: 'hidden' });
     wrap.appendChild(error);
     entry.fields.set(field.path, { wrap, input, error, field });
+    return wrap;
+  }
+
+  // The actors of an event: a repeatable row of an actor and the role it
+  // played. The select is the search the brief asks for — it lists every
+  // active actor in the atlas and every actor in this bundle, by name.
+  function renderActors(entry, list) {
+    const wrap = html('div', { class: 'field actors' });
+    const head = html('div', { class: 'citations-head' });
+    head.appendChild(html('span', { class: 'citations-label' }, list.label));
+    const add = html('button', { type: 'button', class: 'link small' }, 'add');
+    head.appendChild(add);
+    wrap.appendChild(head);
+    wrap.appendChild(html('p', { class: 'hint' }, 'The actors of this event and what each did in it — not everyone alive at the time.'));
+    const rows = html('ul', { class: 'citation-rows' });
+    wrap.appendChild(rows);
+    const error = html('p', { class: 'field-error', hidden: 'hidden' });
+    wrap.appendChild(error);
+
+    const addRowFor = (item) => {
+      const row = html('li', { class: 'citation-row' });
+      const select = html('select', { 'aria-label': 'Actor' });
+      dynamic.add({ select, name: 'actors' });
+      fill(select, 'actors');
+      select.value = item.actor ?? '';
+      select.addEventListener('input', () => {
+        item.actor = select.value;
+        refresh();
+      });
+      const role = html('input', { type: 'text', placeholder: 'role: leader, signatory, deposed', 'aria-label': 'Role' });
+      role.value = item.role ?? '';
+      role.addEventListener('input', () => {
+        item.role = role.value;
+        refresh();
+      });
+      const drop = html('button', { type: 'button', class: 'link small' }, 'remove');
+      drop.addEventListener('click', () => {
+        const at = entry.values[list.key].indexOf(item);
+        if (at >= 0) entry.values[list.key].splice(at, 1);
+        for (const d of [...dynamic]) if (d.select === select) dynamic.delete(d);
+        row.remove();
+        refresh();
+      });
+      row.append(select, role, drop);
+      rows.appendChild(row);
+    };
+
+    add.addEventListener('click', () => {
+      const item = { actor: '', role: '' };
+      entry.values[list.key].push(item);
+      addRowFor(item);
+      refresh();
+    });
+    for (const item of entry.values[list.key]) addRowFor(item);
+
+    entry.fields.set(list.path, { wrap, input: null, error, field: list });
     return wrap;
   }
 

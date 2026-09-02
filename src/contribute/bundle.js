@@ -9,7 +9,7 @@
 // data/<kind>s/<id>.json, unchanged.
 
 import { validate } from '../validate/core.js';
-import { EDGE_TYPES } from '../validate/rules.js';
+import { ACTOR_TYPES, EDGE_TYPES } from '../validate/rules.js';
 
 export const CONFIDENCE = Object.freeze(['consensus', 'probable', 'disputed']);
 export const SOURCE_TYPES = Object.freeze(['book', 'chapter', 'article', 'thesis', 'primary', 'dataset', 'web']);
@@ -41,6 +41,18 @@ export const FIELDS = Object.freeze({
     { key: 'explanation', label: 'Explanation', input: 'textarea', path: '/explanation', required: true, hint: 'the argument for the link, written by you: why this, and not coincidence' },
     { key: 'disputeText', label: 'The dispute', input: 'textarea', path: '/dispute/text', when: (v) => v.confidence === 'disputed', hint: 'who disagrees about this link, and why; the reader sees the disagreement rather than a side' },
   ]),
+  actor: Object.freeze([
+    { key: 'names', label: 'Names', input: 'text', path: '/names', required: true, hint: 'the display name first, then variants, former names and acronyms, separated by semicolons' },
+    { key: 'id', label: 'Id', input: 'text', path: '/id', required: true, hint: 'lowercase words joined by hyphens; it becomes the file name and the permanent URL' },
+    { key: 'actorType', label: 'Type', input: 'select', options: ['', ...ACTOR_TYPES], path: '/actorType', required: true, hint: 'a person, a polity, an institution, or a people' },
+    { key: 'summary', label: 'Summary', input: 'textarea', path: '/summary', required: true, hint: 'written by you, in your own words' },
+    { key: 'start', label: 'Start year', input: 'text', path: '/when/start', required: true, hint: 'birth for a person, founding for the rest; a range as 1400..1450' },
+    { key: 'end', label: 'End year', input: 'text', path: '/when/end', hint: 'death or dissolution; write "ongoing" for someone still alive or a body still standing' },
+    { key: 'label', label: 'Seat or birthplace', input: 'text', path: '/where/label', hint: 'optional: leave the three place fields blank rather than invent a point' },
+    { key: 'lon', label: 'Longitude', input: 'text', path: '/where/lon', hint: 'WGS84, east positive' },
+    { key: 'lat', label: 'Latitude', input: 'text', path: '/where/lat', hint: 'WGS84, north positive' },
+    { key: 'precision', label: 'Precision', input: 'select', options: PRECISION, path: '/where/precision' },
+  ]),
   source: Object.freeze([
     { key: 'id', label: 'Id', input: 'text', path: '/id', required: true, hint: 'author, year, keyword: russell-2000-henry' },
     { key: 'type', label: 'Type', input: 'select', options: SOURCE_TYPES, path: '/type', required: true },
@@ -67,6 +79,17 @@ export const CITATION_LISTS = Object.freeze({
     { key: 'disputeCitations', label: 'Dissenting sources', path: '/dispute/sources', when: (v) => v.confidence === 'disputed' },
   ],
   source: [],
+  actor: [{ key: 'citations', label: 'Sources', path: '/sources' }],
+});
+
+// The actors of an event, each with the role it played in it. One list, on
+// one kind, but the same shape as a citation list: a repeatable row of a
+// reference and a bit of text.
+export const ACTOR_LISTS = Object.freeze({
+  event: [{ key: 'actors', label: 'Actors', path: '/actors' }],
+  edge: [],
+  source: [],
+  actor: [],
 });
 
 function isObject(v) {
@@ -86,6 +109,7 @@ export function emptyValues(kind) {
   const values = {};
   for (const field of FIELDS[kind]) values[field.key] = field.options && field.options[0] !== '' ? field.options[0] : '';
   for (const list of CITATION_LISTS[kind]) values[list.key] = [];
+  for (const list of ACTOR_LISTS[kind]) values[list.key] = [];
   return values;
 }
 
@@ -126,6 +150,15 @@ function parseNumber(text) {
   if (t === '') return null;
   const n = Number(t);
   return Number.isFinite(n) ? n : t;
+}
+
+// A row with no actor chosen is a row the contributor has not filled in
+// yet, not an error: it is dropped. A blank role is kept, so the schema
+// reports it at /actors/<i>/role and the form puts the message on the row.
+function actorsOf(list) {
+  return (Array.isArray(list) ? list : [])
+    .filter((a) => trimmed(a?.actor) !== '')
+    .map((a) => ({ actor: trimmed(a.actor), role: trimmed(a.role) }));
 }
 
 function citationsOf(list) {
@@ -171,7 +204,23 @@ export function buildRecord(kind, values, context = {}) {
         ? { lon: parseNumber(v.lon), lat: parseNumber(v.lat), precision: trimmed(v.precision) || 'city', label: trimmed(v.label) }
         : null,
       region: orNull(v.region),
-      actors: [],
+      actors: actorsOf(v.actors),
+    };
+  }
+
+  if (kind === 'actor') {
+    const start = parseBound(v.start);
+    const hasPlace = [v.lon, v.lat, v.label].some((x) => trimmed(x) !== '');
+    return {
+      ...envelope('actor', trimmed(v.id), context),
+      sources: citationsOf(v.citations),
+      actorType: trimmed(v.actorType),
+      names: trimmed(v.names).split(';').map((s) => s.trim()).filter(Boolean),
+      summary: trimmed(v.summary),
+      when: { start, end: parseEnd(v.end, start) },
+      where: hasPlace
+        ? { lon: parseNumber(v.lon), lat: parseNumber(v.lat), precision: trimmed(v.precision) || 'city', label: trimmed(v.label) }
+        : null,
     };
   }
 
@@ -212,7 +261,7 @@ export function buildRecord(kind, values, context = {}) {
     };
   }
 
-  throw new Error(`kind must be event, edge or source, not "${kind}"`);
+  throw new Error(`kind must be event, edge, source or actor, not "${kind}"`);
 }
 
 // entries: [{ kind, values }] in the order the contributor added them.
@@ -318,6 +367,6 @@ export function validateBundle(bundle, topology, schemas) {
 // asserted here rather than inferred from an empty error list.
 export function everythingCited(bundle) {
   return (bundle?.records ?? [])
-    .filter((r) => r.kind === 'event' || r.kind === 'edge')
+    .filter((r) => r.kind === 'event' || r.kind === 'edge' || r.kind === 'actor')
     .every((r) => Array.isArray(r.sources) && r.sources.length > 0);
 }
