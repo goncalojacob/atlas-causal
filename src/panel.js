@@ -210,6 +210,47 @@ export function createPanel(container, { atlas, state, fixtures = false }) {
     return `<section class="actors"><h2>Who is in it <span class="count">${listed.length}</span></h2><ul class="actor-rows">${items.join('')}</ul></section>`;
   }
 
+  const DEPENDENCY_LABEL = Object.freeze({
+    colony: 'colony',
+    protectorate: 'protectorate',
+    mandate: 'mandate',
+    occupied: 'occupied',
+  });
+
+  // What the map draws for this actor, and when. Presences carry no text, so
+  // this is built entirely from the topology — no record fetched, however
+  // many periods an entity has. Two lists: the ground it held itself, and
+  // the ground it held through somebody else.
+  function territoryHtml(actor) {
+    const own = atlas.presencesByActor.get(actor.id) ?? [];
+    const held = atlas.dependenciesOf.get(actor.id) ?? [];
+    if (own.length === 0 && held.length === 0) return '';
+    const row = (presence, name) => {
+      const kind = presence.dependencyKind ? `<span class="role">${esc(DEPENDENCY_LABEL[presence.dependencyKind] ?? presence.dependencyKind)}</span>` : '';
+      const sovereign = presence.dependencyOf && presence.dependencyOf !== actor.id
+        ? ` <span class="muted">of</span> <button type="button" class="link" data-action="actor" data-id="${esc(presence.dependencyOf)}">${esc(atlas.actors.get(presence.dependencyOf)?.name ?? presence.dependencyOf)}</button>`
+        : '';
+      return `<li class="actor-row">
+        ${name}<span class="when">${esc(formatInterval(presence.when))}</span>
+        ${kind}${sovereign}
+        ${presence.capital ? `<span class="muted">${esc(presence.capital.label)}</span>` : ''}
+        <button type="button" class="link small" data-action="year" data-year="${esc(bounds(presence.when.start).min)}">map at ${esc(formatYear(bounds(presence.when.start).min))}</button>
+      </li>`;
+    };
+    const ownRows = own.map((p) => row(p, ''));
+    const heldRows = held.map((p) => row(
+      p,
+      `<button type="button" class="link" data-action="actor" data-id="${esc(p.actor)}">${esc(atlas.actors.get(p.actor)?.name ?? p.actor)}</button> `,
+    ));
+    return `<section class="territory">
+      ${own.length ? `<h2>Territory shown on the map <span class="count">${own.length} period${own.length === 1 ? '' : 's'}</span></h2>
+        <p class="hint">The outline the map draws for this actor in a given year, and the capital the source names.</p>
+        <ul class="actor-rows">${ownRows.join('')}</ul>` : ''}
+      ${held.length ? `<h2>What it held <span class="count">${held.length}</span></h2>
+        <ul class="actor-rows">${heldRows.join('')}</ul>` : ''}
+    </section>`;
+  }
+
   function actorCardHtml(actor) {
     const appearances = atlas.eventsByActor.get(actor.id) ?? [];
     const variants = (actor.names ?? []).slice(1);
@@ -229,6 +270,7 @@ export function createPanel(container, { atlas, state, fixtures = false }) {
         ${variants.length ? `<p class="also-known muted">also: ${variants.map((n) => esc(n)).join(' · ')}</p>` : ''}
       </header>
       <section class="summary" data-slot="actor-summary"><p class="muted">Loading…</p></section>
+      ${territoryHtml(actor)}
       <section class="actor-events">
         <h2>Where it appears <span class="count">${appearances.length}</span></h2>
         ${appearances.length ? `<ul class="actor-rows">${rows.join('')}</ul>` : '<p class="muted">No event records this actor yet.</p>'}

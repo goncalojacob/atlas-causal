@@ -12,7 +12,7 @@ import { isValidYear } from './util/dates.js';
 
 const SLUG = /^[a-z0-9]+(-[a-z0-9]+)*$/;
 const EDGE_ID = /^[a-z0-9]+(-[a-z0-9]+)*--[a-z0-9]+(-[a-z0-9]+)*--[a-z-]+$/;
-export const LAYERS = Object.freeze(['land', 'events']);
+export const LAYERS = Object.freeze(['land', 'territories', 'events']);
 // Query parameters that are not state but must survive a state write.
 const PASSTHROUGH = Object.freeze(['fixtures']);
 

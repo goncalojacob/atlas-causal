@@ -46,5 +46,5 @@ test('the store merges patches and notifies', () => {
   off();
   store.set({ year: 1220 });
   assert.deepEqual(seen, [1210, 1210]);
-  assert.deepEqual(store.get(), { year: 1220, selected: 'fixture-event-a', actor: null, chain: [], layers: ['land', 'events'] });
+  assert.deepEqual(store.get(), { year: 1220, selected: 'fixture-event-a', actor: null, chain: [], layers: ['land', 'territories', 'events'] });
 });

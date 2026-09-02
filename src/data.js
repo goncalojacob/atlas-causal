@@ -92,9 +92,73 @@ export function createAtlas({ manifest, topology, sources, land = null, dataRoot
       || (a.event.id < b.event.id ? -1 : a.event.id > b.event.id ? 1 : 0));
   }
 
+  // --- territories -------------------------------------------------------
+  // The topology carries every presence without its coordinates, so an
+  // actor's territory over time is a list the panel can draw at once. The
+  // outlines themselves are sharded by period and fetched one shard at a
+  // time, by year: scrubbing the slider inside a period costs nothing, and
+  // crossing into another one costs a single request that is then cached.
+  const activePresences = (topology.presences ?? []).filter((p) => p.status === 'active');
+  const presences = new Map(activePresences.map((p) => [p.id, p]));
+  const presencesByActor = new Map();
+  const dependenciesOf = new Map();
+  for (const presence of activePresences) {
+    if (!presencesByActor.has(presence.actor)) presencesByActor.set(presence.actor, []);
+    presencesByActor.get(presence.actor).push(presence);
+    if (presence.dependencyOf) {
+      if (!dependenciesOf.has(presence.dependencyOf)) dependenciesOf.set(presence.dependencyOf, []);
+      dependenciesOf.get(presence.dependencyOf).push(presence);
+    }
+  }
+  const byStart = (a, b) => intervalExtent(a.when).min - intervalExtent(b.when).min
+    || (a.id < b.id ? -1 : a.id > b.id ? 1 : 0);
+  for (const list of presencesByActor.values()) list.sort(byStart);
+  for (const list of dependenciesOf.values()) list.sort(byStart);
+
+  const presenceShards = manifest.presenceShards ?? [];
+  const shardForYear = (year) => presenceShards.find((s) => year >= s.from && year <= s.to) ?? null;
+
+  const geometry = new Map();
+  const geometryLoading = new Map();
+  // Synchronous: what is already in hand, so a render never waits.
+  const loadedGeometry = (file) => geometry.get(file) ?? null;
+  function loadGeometry(file) {
+    if (geometry.has(file)) return Promise.resolve(geometry.get(file));
+    if (!geometryLoading.has(file)) {
+      geometryLoading.set(file, fetchJson(`${dataRoot}${file}`).then((collection) => {
+        const byKey = new Map((collection.features ?? []).map((f) => [String(f.id), f.geometry]));
+        geometry.set(file, byKey);
+        return byKey;
+      }));
+    }
+    return geometryLoading.get(file);
+  }
+
+  // Who held territory in a given year. One presence per actor: two of an
+  // actor's presences can share the year a border moved in, because a year
+  // is the finest bound the model has, and the later one is the one to draw.
+  function presencesAt(year) {
+    const chosen = new Map();
+    for (const presence of activePresences) {
+      const { min, max } = intervalExtent(presence.when);
+      if (year < min || (max !== null && year > max)) continue;
+      const standing = chosen.get(presence.actor);
+      if (!standing || intervalExtent(standing.when).min < min) chosen.set(presence.actor, presence);
+    }
+    return [...chosen.values()].sort((a, b) => (a.id < b.id ? -1 : a.id > b.id ? 1 : 0));
+  }
+
   return {
     manifest,
     regions: [...manifest.regions].sort((a, b) => a.order - b.order),
+    presences,
+    presencesByActor,
+    dependenciesOf,
+    presenceShards,
+    shardForYear,
+    loadedGeometry,
+    loadGeometry,
+    presencesAt,
     events,
     edges,
     sources: sourceMap,

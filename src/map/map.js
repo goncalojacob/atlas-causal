@@ -4,6 +4,7 @@
 import { svg, html } from '../util/dom.js';
 import { fitBounds, WORLD } from './projection.js';
 import { createLandLayer } from './layers/land.js';
+import { createPresencesLayer } from './layers/presences.js';
 import { createEventsLayer } from './layers/events.js';
 import { DEEPEST_ZOOM } from './cluster.js';
 import { fromAstronomical, toAstronomical, formatYear } from '../util/dates.js';
@@ -31,11 +32,18 @@ export function createMap(container, { atlas, state, onCluster = null }) {
   const projection = fitBounds(eventBounds(atlas.activeEvents), { width: WIDTH, height: HEIGHT, margin: 0.15 });
   const viewport = svg('g', { class: 'viewport' });
   const landGroup = svg('g', { class: 'layer layer-land' });
+  // Territories go between the coastlines and the marks: an event still sits
+  // on top of the state it happened in.
+  const presencesGroup = svg('g', { class: 'layer layer-presences' });
   const eventsGroup = svg('g', { class: 'layer layer-events' });
-  viewport.append(landGroup, eventsGroup);
+  viewport.append(landGroup, presencesGroup, eventsGroup);
   const root = svg('svg', { viewBox: `0 0 ${WIDTH} ${HEIGHT}`, class: 'map', role: 'img', 'aria-label': 'Map' }, [viewport]);
 
   const land = createLandLayer(landGroup, projection);
+  const presences = createPresencesLayer(presencesGroup, projection, {
+    atlas,
+    onSelect: (id) => state.set({ actor: id, selected: null, chain: [] }),
+  });
   // A cluster of marks that zooming can pull apart is zoomed into; one whose
   // members share a point — Lisbon's thirty-seven — is spread open instead,
   // because no zoom would ever separate those. Either way the panel is given
@@ -200,6 +208,7 @@ export function createMap(container, { atlas, state, onCluster = null }) {
 
   function render(s) {
     landGroup.style.display = s.layers.includes('land') ? '' : 'none';
+    presencesGroup.style.display = s.layers.includes('territories') ? '' : 'none';
     eventsGroup.style.display = s.layers.includes('events') ? '' : 'none';
     const year = s.year === null ? null : toAstronomical(s.year);
     if (year !== null && !slider.disabled) slider.value = String(year);
@@ -215,6 +224,11 @@ export function createMap(container, { atlas, state, onCluster = null }) {
     const actorIds = actor && actor.kind === 'actor'
       ? new Set((atlas.eventsByActor.get(actor.id) ?? []).map((a) => a.event.id))
       : null;
+    // Drawn before the marks so the marks are appended over them, and only
+    // when the layer is on: an off layer costs no fetch.
+    if (s.layers.includes('territories')) {
+      presences.render({ year, actorId: actor && actor.kind === 'actor' ? actor.id : null, onReady: () => render(state.get()) });
+    }
     const result = events.render({
       events: atlas.activeEvents,
       year,
