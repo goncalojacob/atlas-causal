@@ -1455,6 +1455,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "25 November",
+      "weight": 7,
       "when": {
         "calendar": "gregorian",
         "date": "1975-11-25",
@@ -1498,6 +1499,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "The Alvor Agreement",
+      "weight": 7,
       "when": {
         "calendar": "gregorian",
         "date": "1975-01-15",
@@ -1537,6 +1539,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Independence of Angola",
+      "weight": 6,
       "when": {
         "calendar": "gregorian",
         "date": "1975-11-11",
@@ -1572,6 +1575,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Beginning of the war in Angola",
+      "weight": 10,
       "when": {
         "calendar": "gregorian",
         "date": "1961-02-04",
@@ -1603,6 +1607,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Anglo-Portuguese agreement on Azores bases",
+      "weight": 3,
       "when": {
         "calendar": "gregorian",
         "date": "1943-08-17",
@@ -1638,6 +1643,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Battle of the Lys",
+      "weight": 5,
       "when": {
         "calendar": "gregorian",
         "date": "1918-04-09",
@@ -1669,6 +1675,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Botelho Moniz's failed move against Salazar",
+      "weight": 3,
       "when": {
         "calendar": "gregorian",
         "date": "1961-04-13",
@@ -1696,6 +1703,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Nationalisation of the Banco Português de Negócios",
+      "weight": 2,
       "when": {
         "calendar": "gregorian",
         "date": "2008-11-02",
@@ -1731,6 +1739,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Assassination of Amílcar Cabral",
+      "weight": 5,
       "when": {
         "calendar": "gregorian",
         "date": "1973-01-20",
@@ -1766,6 +1775,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Marcelo Caetano succeeds Salazar",
+      "weight": 4,
       "when": {
         "calendar": "gregorian",
         "date": "1968-09-27",
@@ -1813,6 +1823,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "25 April",
+      "weight": 17,
       "when": {
         "calendar": "gregorian",
         "date": "1974-04-25",
@@ -1844,6 +1855,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Cavaco Silva's absolute majority",
+      "weight": 3,
       "when": {
         "calendar": "gregorian",
         "date": "1987-07-19",
@@ -1879,6 +1891,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Constituent Assembly election",
+      "weight": 5,
       "when": {
         "calendar": "gregorian",
         "date": "1975-04-25",
@@ -1910,6 +1923,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Constitution of 1911",
+      "weight": 5,
       "when": {
         "calendar": "gregorian",
         "date": "1911-08-21",
@@ -1945,6 +1959,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Constitution of 1933",
+      "weight": 7,
       "when": {
         "calendar": "gregorian",
         "date": "1933-03-19",
@@ -1980,6 +1995,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Constitution of 1976",
+      "weight": 8,
       "when": {
         "calendar": "gregorian",
         "date": "1976-04-02",
@@ -2015,6 +2031,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "The revision that ends direct presidential elections",
+      "weight": 4,
       "when": {
         "calendar": "gregorian",
         "date": "1959-08",
@@ -2050,6 +2067,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "The revision that abolishes the Council of the Revolution",
+      "weight": 6,
       "when": {
         "calendar": "gregorian",
         "date": "1982-09-30",
@@ -2089,6 +2107,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Coup of 28 May",
+      "weight": 10,
       "when": {
         "calendar": "gregorian",
         "date": "1926-05-28",
@@ -2124,6 +2143,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "The failed coup of 11 March",
+      "weight": 5,
       "when": {
         "calendar": "gregorian",
         "date": "1975-03-11",
@@ -2159,6 +2179,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Humberto Delgado murdered by the PIDE",
+      "weight": 4,
       "when": {
         "calendar": "gregorian",
         "date": "1965-02-13",
@@ -2194,6 +2215,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Humberto Delgado's presidential candidacy",
+      "weight": 6,
       "when": {
         "calendar": "gregorian",
         "date": "1958-06-08",
@@ -2225,6 +2247,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Ramalho Eanes elected president",
+      "weight": 4,
       "when": {
         "calendar": "gregorian",
         "date": "1976-06-27",
@@ -2260,6 +2283,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Independence of East Timor",
+      "weight": 4,
       "when": {
         "calendar": "gregorian",
         "date": "2002-05-20",
@@ -2295,6 +2319,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Indonesia invades East Timor",
+      "weight": 5,
       "when": {
         "calendar": "gregorian",
         "date": "1975-12-07",
@@ -2334,6 +2359,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Portugal joins the EEC",
+      "weight": 11,
       "when": {
         "calendar": "gregorian",
         "date": "1986-01-01",
@@ -2369,6 +2395,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Portugal applies to join the EEC",
+      "weight": 6,
       "when": {
         "calendar": "gregorian",
         "date": "1977-03-28",
@@ -2396,6 +2423,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Portugal adopts the euro",
+      "weight": 3,
       "when": {
         "calendar": "gregorian",
         "date": "1999-01-01",
@@ -2423,6 +2451,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Expo 98",
+      "weight": 2,
       "when": {
         "calendar": "gregorian",
         "date": "1998-05-22",
@@ -2454,6 +2483,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Exhibition of the Portuguese World",
+      "weight": 3,
       "when": {
         "calendar": "gregorian",
         "date": "1940-06-23",
@@ -2485,6 +2515,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Germany declares war on Portugal",
+      "weight": 4,
       "when": {
         "calendar": "gregorian",
         "date": "1916-03-09",
@@ -2520,6 +2551,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "India annexes Goa, Daman and Diu",
+      "weight": 4,
       "when": {
         "calendar": "gregorian",
         "date": "1961-12-18",
@@ -2551,6 +2583,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "PAIGC declares the independence of Guinea-Bissau",
+      "weight": 5,
       "when": {
         "calendar": "gregorian",
         "date": "1973-09-24",
@@ -2586,6 +2619,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Beginning of the war in Guinea",
+      "weight": 7,
       "when": {
         "calendar": "gregorian",
         "date": "1963-01-23",
@@ -2621,6 +2655,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "First stabilisation agreement with the IMF",
+      "weight": 5,
       "when": {
         "calendar": "gregorian",
         "date": "1978-05",
@@ -2656,6 +2691,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Second stabilisation agreement with the IMF",
+      "weight": 5,
       "when": {
         "calendar": "gregorian",
         "date": "1983-09",
@@ -2687,6 +2723,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Law of Separation of Church and State",
+      "weight": 4,
       "when": {
         "calendar": "gregorian",
         "date": "1911-04-20",
@@ -2722,6 +2759,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Foundation of the Portuguese Legion",
+      "weight": 4,
       "when": {
         "calendar": "gregorian",
         "date": "1936-09-30",
@@ -2753,6 +2791,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "First legislative election under the constitution",
+      "weight": 4,
       "when": {
         "calendar": "gregorian",
         "date": "1976-04-25",
@@ -2780,6 +2819,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Handover of Macau",
+      "weight": 2,
       "when": {
         "calendar": "gregorian",
         "date": "1999-12-20",
@@ -2815,6 +2855,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "The Monarchy of the North",
+      "weight": 5,
       "when": {
         "calendar": "gregorian",
         "date": "1919-01-19",
@@ -2850,6 +2891,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Beginning of the war in Mozambique",
+      "weight": 5,
       "when": {
         "calendar": "gregorian",
         "date": "1964-09-25",
@@ -2881,6 +2923,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Nationalisation of banks and insurance",
+      "weight": 6,
       "when": {
         "calendar": "gregorian",
         "date": "1975-03-14",
@@ -2916,6 +2959,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Portugal signs the North Atlantic Treaty",
+      "weight": 5,
       "when": {
         "calendar": "gregorian",
         "date": "1949-04-04",
@@ -2943,6 +2987,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Noite Sangrenta",
+      "weight": 3,
       "when": {
         "calendar": "gregorian",
         "date": "1921-10-19",
@@ -2978,6 +3023,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Pimenta de Castro's authoritarian government",
+      "weight": 5,
       "when": {
         "calendar": "gregorian",
         "date": "1915-01",
@@ -3009,6 +3055,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Portugal supports the Nationalists in the Spanish Civil War",
+      "weight": 4,
       "when": {
         "calendar": "gregorian",
         "date": "1936-07",
@@ -3044,6 +3091,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Publication of Portugal e o Futuro",
+      "weight": 5,
       "when": {
         "calendar": "gregorian",
         "date": "1974-02-22",
@@ -3075,6 +3123,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Proclamation of the Republic",
+      "weight": 4,
       "when": {
         "calendar": "gregorian",
         "date": "1910-10-05",
@@ -3110,6 +3159,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "The revolt of 14 May restores the Democrats",
+      "weight": 5,
       "when": {
         "calendar": "gregorian",
         "date": "1915-05-14",
@@ -3141,6 +3191,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Salazar becomes Minister of Finance",
+      "weight": 4,
       "when": {
         "calendar": "gregorian",
         "date": "1928-04-27",
@@ -3172,6 +3223,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Salazar becomes President of the Council",
+      "weight": 4,
       "when": {
         "calendar": "gregorian",
         "date": "1932-07-05",
@@ -3203,6 +3255,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "The seizure of the liner Santa Maria",
+      "weight": 4,
       "when": {
         "calendar": "gregorian",
         "date": "1961-01-22",
@@ -3230,6 +3283,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Assassination of Sidónio Pais",
+      "weight": 3,
       "when": {
         "calendar": "gregorian",
         "date": "1918-12-14",
@@ -3265,6 +3319,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Sidónio Pais's coup",
+      "weight": 6,
       "when": {
         "calendar": "gregorian",
         "date": "1917-12-05",
@@ -3296,6 +3351,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Mário Soares elected president",
+      "weight": 3,
       "when": {
         "calendar": "gregorian",
         "date": "1986-02-16",
@@ -3331,6 +3387,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Spínola resigns the presidency",
+      "weight": 5,
       "when": {
         "calendar": "gregorian",
         "date": "1974-09-30",
@@ -3366,6 +3423,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Request for financial assistance",
+      "weight": 6,
       "when": {
         "calendar": "gregorian",
         "date": "2011-04-06",
@@ -3401,6 +3459,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Portugal admitted to the United Nations",
+      "weight": 5,
       "when": {
         "calendar": "gregorian",
         "date": "1955-12-14",
@@ -3432,6 +3491,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "The Wiriyamu massacre",
+      "weight": 3,
       "when": {
         "calendar": "gregorian",
         "date": "1972-12-16",

@@ -5,7 +5,8 @@ import { tmpdir } from 'node:os';
 import path from 'node:path';
 import { canonical, serialize, buildIndex, writeIndex, readIndex, compareIndex } from '../tools/build-index.mjs';
 import { runValidation } from '../tools/validate.mjs';
-import { FIXTURE_DATA, ROOT } from './helpers.mjs';
+import { buildTopology, eventWeights } from '../src/validate/core.js';
+import { FIXTURE_DATA, ROOT, fixtures } from './helpers.mjs';
 
 async function tempCopyOfFixtures() {
   const dir = await mkdtemp(path.join(tmpdir(), 'atlas-index-'));
@@ -60,6 +61,34 @@ test('manifest names the hashed files, counts, lanes and land', async () => {
   assert.equal(byId['fixture-event-o'].regionMethod, 'override');
   assert.equal(Object.hasOwn(byId['fixture-event-a'], 'summary'), false, 'text stays out of the index');
   assert.deepEqual(built.unresolved, []);
+});
+
+test('weight counts active edges in and out plus the actors named', async () => {
+  const fx = await fixtures();
+  const topology = buildTopology(fx.records, fx.regions);
+  const byId = Object.fromEntries(topology.events.map((e) => [e.id, e]));
+  for (const event of topology.events) {
+    const degree = topology.edges.filter((e) => e.status === 'active' && (e.from === event.id || e.to === event.id)).length;
+    assert.equal(event.weight, degree + (event.actors ?? []).length, event.id);
+    assert.ok(Number.isInteger(event.weight) && event.weight >= 0);
+  }
+  // An event nothing links to and nobody appears in weighs nothing.
+  assert.equal(byId['fixture-event-h'].weight, 0);
+  // fixture-event-e has one active edge each way and a retracted third: a
+  // retracted edge never adds to either end.
+  assert.equal(byId['fixture-event-e'].weight, 2);
+  const weights = eventWeights(topology.events, topology.edges.filter((e) => e.status === 'active'));
+  for (const event of topology.events) assert.equal(weights.get(event.id), event.weight, `${event.id}: inactive edges are not counted`);
+});
+
+test('weight is in the built index and does not change between builds', async () => {
+  const first = await buildIndex(FIXTURE_DATA);
+  const second = await buildIndex(FIXTURE_DATA);
+  const name = path.basename(JSON.parse(first.files['manifest.json']).files.topology);
+  const events = JSON.parse(first.files[name]).events;
+  assert.ok(events.every((e) => Number.isInteger(e.weight)), 'every event in the index carries a weight');
+  assert.ok(events.some((e) => e.weight > 0));
+  assert.equal(first.files[name], second.files[name]);
 });
 
 test('writeIndex removes stale hashed files and the result is fresh', async () => {

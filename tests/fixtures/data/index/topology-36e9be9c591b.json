@@ -150,6 +150,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Fixture event A",
+      "weight": 3,
       "when": {
         "date": "1200-03-01",
         "end": 1200,
@@ -171,6 +172,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Fixture event A2",
+      "weight": 1,
       "when": {
         "date": "1200-06-01",
         "end": 1200,
@@ -203,6 +205,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Fixture event B",
+      "weight": 4,
       "when": {
         "end": 1220,
         "start": 1220
@@ -223,6 +226,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Fixture event C",
+      "weight": 2,
       "when": {
         "end": 1230,
         "start": 1230
@@ -243,6 +247,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Fixture event D",
+      "weight": 2,
       "when": {
         "end": 1240,
         "start": 1240
@@ -263,6 +268,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Fixture event E",
+      "weight": 2,
       "when": {
         "end": 1225,
         "start": 1225
@@ -283,6 +289,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Fixture event F",
+      "weight": 1,
       "when": {
         "end": 1300,
         "start": 1260
@@ -298,6 +305,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Fixture event G",
+      "weight": 1,
       "when": {
         "end": null,
         "start": {
@@ -321,6 +329,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Fixture event H",
+      "weight": 0,
       "when": {
         "end": 1290,
         "start": 1290
@@ -341,6 +350,7 @@
       "status": "merged",
       "supersededBy": "fixture-event-b",
       "title": "Fixture event M",
+      "weight": 0,
       "when": {
         "end": 1210,
         "start": 1210
@@ -361,6 +371,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Fixture event O",
+      "weight": 1,
       "when": {
         "end": 1215,
         "start": 1215
@@ -386,6 +397,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Fixture event T",
+      "weight": 5,
       "when": {
         "end": 1280,
         "start": 1280

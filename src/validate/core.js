@@ -89,6 +89,26 @@ export function rolesInUse(events) {
   return [...roles].sort();
 }
 
+// How much of the graph an event carries: active edges in and out, plus the
+// actors it names. Mechanical on purpose — it is how many arguments and
+// people the record already holds, not how important anyone thinks the
+// event was. The map uses it to choose which mark represents a cluster and
+// which clusters earn a label; an editorial `prominence` field may override
+// it later (ARCHITECTURE.md, extension points).
+export function eventWeights(events, edges) {
+  const weights = new Map(events.map((e) => [e.id, 0]));
+  for (const edge of edges) {
+    if (edge.status !== 'active') continue;
+    for (const end of [edge.from, edge.to]) {
+      if (weights.has(end)) weights.set(end, weights.get(end) + 1);
+    }
+  }
+  for (const event of events) {
+    weights.set(event.id, weights.get(event.id) + (event.actors ?? []).length);
+  }
+  return weights;
+}
+
 // The topology object: what build-index.mjs writes and what the rules read.
 // Text fields stay out; the site fetches record files for them. `region` on
 // an event is the record's override or, failing that, what deriveRegion
@@ -148,6 +168,8 @@ export function buildTopology(records, regions, { deriveRegion } = {}) {
       });
     }
   }
+  const weights = eventWeights(events, edges);
+  for (const event of events) event.weight = weights.get(event.id);
   events.sort(byId);
   edges.sort(byId);
   sources.sort(byId);
