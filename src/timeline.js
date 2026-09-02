@@ -54,6 +54,14 @@ export function createTimeline(container, { atlas, state, createScale = createLi
       const edge = atlas.edges.get(id);
       return edge ? [edge.from, edge.to] : [];
     }));
+    // A second emphasis, distinct from the path's: the events of the actor
+    // whose card is open.
+    // Through resolve(), so a former id in the URL highlights the same
+    // actor the panel is showing.
+    const actor = s.actor ? atlas.resolve(s.actor) : null;
+    const actorIds = actor && actor.kind === 'actor'
+      ? new Set((atlas.eventsByActor.get(actor.id) ?? []).map((a) => a.event.id))
+      : null;
 
     lanes.forEach((lane, i) => {
       const y = AXIS_HEIGHT + i * LANE_HEIGHT;
@@ -82,10 +90,12 @@ export function createTimeline(container, { atlas, state, createScale = createLi
       const y = AXIS_HEIGHT + i * LANE_HEIGHT + 8;
       const onPath = pathIds.has(event.id);
       const selected = event.id === s.selected;
-      const classes = ['bar', x.max === null ? 'ongoing' : '', onPath ? 'on-path' : '', selected ? 'selected' : ''].join(' ').trim();
+      const ofActor = actorIds ? actorIds.has(event.id) : false;
+      const classes = ['bar', x.max === null ? 'ongoing' : '', ofActor ? 'of-actor' : '', onPath ? 'on-path' : '', selected ? 'selected' : ''].join(' ').replace(/\s+/g, ' ').trim();
       const bar = svg('rect', { x: x0 - (x1 - x0 < 6 ? 3 : 0), y, width: w, height: LANE_HEIGHT - 16, rx: 3, class: classes, 'data-id': event.id }, [svgTitle(event.title)]);
-      // Path and selection are drawn last so they sit above their neighbours.
-      if (selected || onPath) deferred.push(bar);
+      // Path, actor and selection are drawn last so they sit above their
+      // neighbours.
+      if (selected || onPath || ofActor) deferred.push(bar);
       else root.appendChild(bar);
       if (selected || onPath) {
         const text = svg('text', { x: x0 + w + 4, y: y + (LANE_HEIGHT - 16) / 2, class: `bar-label ${selected ? 'selected' : ''}`, 'dominant-baseline': 'middle' });

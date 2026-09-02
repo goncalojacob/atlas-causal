@@ -3,6 +3,13 @@
 // with supporting and dissenting sources shown apart. Confidence and status
 // are shown as such; a disputed link is never walked through silently.
 // Traversal logic lives in graph.js; this file only asks it.
+//
+// It also shows an actor's card — type, dates, seat, summary, the events it
+// appears in with the role it played in each — because an actor is never on
+// the timeline on its own: it is reached through its events and read
+// alongside them. A selected event wins the panel; the actor's card is what
+// the panel falls back to, and the highlight on the map and the timeline
+// outlives it.
 
 import { esc, safeUrl } from './util/esc.js';
 import { consequences, convergence } from './graph.js';
@@ -14,6 +21,13 @@ const TYPE_LABEL = Object.freeze({
   'reacted-to': 'reacted to',
   'precondition-of': 'precondition of',
   inspired: 'inspired',
+});
+
+const ACTOR_TYPE_LABEL = Object.freeze({
+  person: 'person',
+  polity: 'polity',
+  institution: 'institution',
+  people: 'people',
 });
 
 const CONFIDENCE_HINT = Object.freeze({
@@ -50,7 +64,15 @@ export function createPanel(container, { atlas, state, fixtures = false }) {
     const s = state.get();
     switch (el.dataset.action) {
       case 'select':
+        // The actor stays selected: its events keep their emphasis while
+        // they are read one after another.
         state.set({ selected: el.dataset.id, chain: [] });
+        break;
+      case 'actor':
+        state.set({ actor: el.dataset.id, selected: null, chain: [] });
+        break;
+      case 'clear-actor':
+        state.set({ actor: null });
         break;
       case 'follow': {
         const edge = atlas.edges.get(el.dataset.edge);
@@ -172,6 +194,64 @@ export function createPanel(container, { atlas, state, fixtures = false }) {
     return `<section class="convergence"><h2>${heading} <span class="count">${list.length}</span></h2><p class="hint">${hint}</p><ul class="edges">${items.join('')}</ul></section>`;
   }
 
+  // The actors of one event, with what each did in it. Short by design: the
+  // actors *of* the event, not everyone alive.
+  function actorsHtml(event, highlighted) {
+    const listed = (event.actors ?? []).filter((a) => atlas.actors.has(a.actor));
+    if (listed.length === 0) return '';
+    const items = listed.map(({ actor, role }) => {
+      const record = atlas.actors.get(actor);
+      return `<li class="actor-row ${actor === highlighted ? 'highlighted' : ''}">
+        <button type="button" class="link" data-action="actor" data-id="${esc(actor)}">${esc(record.name)}</button>
+        <span class="role">${esc(role)}</span>
+        <span class="muted">${esc(ACTOR_TYPE_LABEL[record.actorType] ?? record.actorType)}</span>
+      </li>`;
+    });
+    return `<section class="actors"><h2>Who is in it <span class="count">${listed.length}</span></h2><ul class="actor-rows">${items.join('')}</ul></section>`;
+  }
+
+  function actorCardHtml(actor) {
+    const appearances = atlas.eventsByActor.get(actor.id) ?? [];
+    const variants = (actor.names ?? []).slice(1);
+    const rows = appearances.map(({ event, role }) => `<li class="actor-row">
+      ${eventLink(event)} <span class="role">${esc(role)}</span>
+      <span class="muted">${esc(laneLabel(event.region))}</span>
+    </li>`);
+    return `
+      ${actor.status !== 'active' ? `<p class="notice status">This actor is <strong>${esc(actor.status)}</strong>.</p>` : ''}
+      <header class="actor-head">
+        <h2>${esc(actor.name)}</h2>
+        <p class="meta">
+          <span class="actor-type">${esc(ACTOR_TYPE_LABEL[actor.actorType] ?? actor.actorType)}</span>
+          · <span class="when">${esc(formatInterval(actor.when))}</span>
+          <button type="button" class="link small" data-action="clear-actor">stop highlighting</button>
+        </p>
+        ${variants.length ? `<p class="also-known muted">also: ${variants.map((n) => esc(n)).join(' · ')}</p>` : ''}
+      </header>
+      <section class="summary" data-slot="actor-summary"><p class="muted">Loading…</p></section>
+      <section class="actor-events">
+        <h2>Where it appears <span class="count">${appearances.length}</span></h2>
+        ${appearances.length ? `<ul class="actor-rows">${rows.join('')}</ul>` : '<p class="muted">No event records this actor yet.</p>'}
+      </section>
+      <section class="sources" data-slot="actor-sources"></section>`;
+  }
+
+  function renderActorCard(actor, mine) {
+    container.innerHTML = actorCardHtml(actor);
+    atlas.record('actor', actor.id).then(
+      (rec) => {
+        if (mine !== token) return;
+        const place = rec.where ? ` <span class="where">${esc(rec.where.label)}</span>` : '';
+        container.querySelector('[data-slot="actor-summary"]').innerHTML = `<p>${esc(rec.summary)}</p>${place ? `<p class="meta">${place}</p>` : ''}`;
+        container.querySelector('[data-slot="actor-sources"]').innerHTML = citationsHtml(rec.sources, 'Sources for this actor');
+      },
+      () => {
+        if (mine !== token) return;
+        container.querySelector('[data-slot="actor-summary"]').innerHTML = '<p class="muted">Could not load the record text.</p>';
+      },
+    );
+  }
+
   function introHtml() {
     const n = atlas.activeEvents.length;
     if (n === 0 && !fixtures) {
@@ -181,13 +261,22 @@ export function createPanel(container, { atlas, state, fixtures = false }) {
     }
     return `<section class="intro"><h2>Pick an event</h2>
       <p>Click a mark on the map or a bar on the timeline. Then follow its consequences; the panel will show which other branches fed the same endpoint.</p>
-      <p class="muted">${n} events, ${[...atlas.edges.values()].filter((e) => e.status === 'active').length} links, ${atlas.sources.size} sources.${fixtures ? ' Synthetic fixtures: nothing here is history.' : ''}</p></section>`;
+      <p class="muted">${n} events, ${[...atlas.edges.values()].filter((e) => e.status === 'active').length} links, ${atlas.actors.size} actors, ${atlas.sources.size} sources.${fixtures ? ' Synthetic fixtures: nothing here is history.' : ''}</p></section>`;
   }
 
   function render(s) {
     token += 1;
     const mine = token;
+    const highlighted = s.actor ? atlas.resolve(s.actor) : null;
     if (!s.selected) {
+      if (s.actor && highlighted && highlighted.kind === 'actor') {
+        renderActorCard(highlighted.record, mine);
+        return;
+      }
+      if (s.actor) {
+        container.innerHTML = `<section class="intro"><h2>Not found</h2><p>No actor with id <code>${esc(s.actor)}</code>.</p></section>`;
+        return;
+      }
       container.innerHTML = introHtml();
       return;
     }
@@ -210,6 +299,12 @@ export function createPanel(container, { atlas, state, fixtures = false }) {
     if (lastEdge && lastEdge.confidence === 'disputed') {
       notices.push('<p class="notice disputed">You arrived here through a <strong>disputed</strong> link. Read the dispute below before going on.</p>');
     }
+    const highlightedActor = highlighted && highlighted.kind === 'actor' ? highlighted.record : null;
+    if (highlightedActor) {
+      notices.push(`<p class="notice actor">Highlighting the events of
+        <button type="button" class="link" data-action="actor" data-id="${esc(highlightedActor.id)}">${esc(highlightedActor.name)}</button>.
+        <button type="button" class="link small" data-action="clear-actor">stop</button></p>`);
+    }
 
     container.innerHTML = `
       ${notices.join('')}
@@ -223,6 +318,7 @@ export function createPanel(container, { atlas, state, fixtures = false }) {
         </p>
       </header>
       <section class="summary" data-slot="summary"><p class="muted">Loading…</p></section>
+      ${actorsHtml(event, highlightedActor?.id ?? null)}
       ${lastEdge ? `<section class="last-step ${lastEdge.confidence === 'disputed' ? 'disputed' : ''}">
         <h2>The link you followed</h2>
         <p class="edge-head"><span class="arrow">${esc(atlas.events.get(lastEdge.from)?.title ?? lastEdge.from)} — ${esc(TYPE_LABEL[lastEdge.type] ?? lastEdge.type)} →</span> ${badge(lastEdge.confidence)}</p>

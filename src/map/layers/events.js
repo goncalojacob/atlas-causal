@@ -16,7 +16,7 @@ export function createEventsLayer(group, projection, { onSelect }) {
   // year: astronomical, or null for "everything". k: current zoom factor,
   // so marks keep their screen size.
   return {
-    render({ events, year, selected, pathIds, chainEdges, consequenceEdges, eventById, k = 1 }) {
+    render({ events, year, selected, pathIds, actorIds = null, chainEdges, consequenceEdges, eventById, k = 1 }) {
       group.replaceChildren();
       const line = (edge, cls) => {
         const a = eventById.get(edge.from);
@@ -37,7 +37,10 @@ export function createEventsLayer(group, projection, { onSelect }) {
         if (year !== null && extent(event.when).min > year) continue;
         const onPath = pathIds.has(event.id);
         const isSelected = event.id === selected;
-        const classes = ['mark', onPath ? 'on-path' : '', isSelected ? 'selected' : ''].join(' ').trim();
+        // The madder accent belongs to the walked path; an actor's events
+        // are emphasised in cobalt so the two never say the same thing.
+        const ofActor = actorIds ? actorIds.has(event.id) : false;
+        const classes = ['mark', ofActor ? 'of-actor' : '', onPath ? 'on-path' : '', isSelected ? 'selected' : ''].join(' ').replace(/\s+/g, ' ').trim();
         const mark = svg('circle', {
           cx: p[0], cy: p[1], r: (isSelected ? 6 : 4) / k, class: classes, 'data-id': event.id,
         }, [svgTitle(event.title)]);

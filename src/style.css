@@ -80,6 +80,10 @@ button { font: inherit; }
 .map .land { fill: var(--land); stroke: var(--cobalt); stroke-width: 0.6; vector-effect: non-scaling-stroke; }
 .map .mark { fill: var(--paper); stroke: var(--cobalt); stroke-width: 1.5; vector-effect: non-scaling-stroke; cursor: pointer; }
 .map .mark:hover { fill: var(--cobalt-faint); }
+/* The events of the selected actor. Cobalt and heavier, never madder:
+   the accent belongs to the path being followed, and the two emphases
+   must not be confused with one another. */
+.map .mark.of-actor { fill: var(--cobalt-soft); stroke: var(--cobalt); stroke-width: 2.5; }
 .map .mark.on-path { fill: var(--madder); stroke: var(--madder); }
 .map .mark.selected { fill: var(--madder); stroke: var(--paper); stroke-width: 2; }
 .map .edge { stroke: var(--cobalt-soft); stroke-width: 1.2; vector-effect: non-scaling-stroke; fill: none; }
@@ -105,6 +109,7 @@ button { font: inherit; }
 .timeline .bar { fill: var(--cobalt-faint); stroke: var(--cobalt); stroke-width: 1; cursor: pointer; }
 .timeline .bar:hover { fill: var(--cobalt-soft); }
 .timeline .bar.ongoing { stroke-dasharray: 3 3; }
+.timeline .bar.of-actor { fill: var(--cobalt-soft); stroke: var(--cobalt); stroke-width: 2; }
 .timeline .bar.on-path { fill: var(--madder-faint); stroke: var(--madder); }
 .timeline .bar.selected { fill: var(--madder); stroke: var(--madder); }
 .timeline .bar-label { fill: var(--ink); font-size: 11px; pointer-events: none; }
@@ -163,6 +168,17 @@ button { font: inherit; }
 .panel .citation .identifiers { color: var(--ink-soft); font-size: 0.85rem; display: block; }
 .panel .citation.missing, .panel .unsafe-url { color: var(--madder); }
 .panel code { font-size: 0.85em; background: var(--ground); padding: 0 0.25rem; }
+
+/* --- actors ---------------------------------------------------------- */
+
+.panel .actor-head h2 { font-size: 1.5rem; margin-top: 0; }
+.panel .actor-type { text-transform: uppercase; letter-spacing: 0.04em; font-size: 0.8rem; }
+.panel .also-known { margin: 0.2rem 0 0; font-size: 0.9rem; }
+.panel .actor-rows { list-style: none; padding: 0; margin: 0; }
+.panel .actor-row { padding: 0.3rem 0; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.4rem; }
+.panel .actor-row.highlighted { border-left: 3px solid var(--cobalt); padding-left: 0.5rem; }
+.panel .role { color: var(--ink-soft); font-style: italic; }
+.panel .notice.actor { border-color: var(--cobalt); }
 
 /* --- reading pages: contribute.html, about.html ----------------------- */
 

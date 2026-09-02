@@ -106,11 +106,18 @@ export function createMap(container, { atlas, state }) {
     const pathIds = new Set(chainEdges.flatMap((e) => [e.from, e.to]));
     if (s.selected) pathIds.add(s.selected);
     const consequenceEdges = s.selected ? (atlas.adjacency.out.get(s.selected) ?? []) : [];
+    // Through resolve(), so a former id in the URL highlights the same
+    // actor the panel is showing.
+    const actor = s.actor ? atlas.resolve(s.actor) : null;
+    const actorIds = actor && actor.kind === 'actor'
+      ? new Set((atlas.eventsByActor.get(actor.id) ?? []).map((a) => a.event.id))
+      : null;
     events.render({
       events: atlas.activeEvents,
       year,
       selected: s.selected,
       pathIds,
+      actorIds,
       chainEdges,
       consequenceEdges,
       eventById: atlas.events,
