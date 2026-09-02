@@ -49,21 +49,37 @@ export function createMap(container, { atlas, state }) {
   // to outlive it in a flag of its own; reading it off `drag` meant reading
   // it off null, and every drag that ended on a mark selected it.
   let dragged = false;
+  const capture = (method, pointerId) => {
+    try {
+      root[method](pointerId);
+    } catch {
+      // No such pointer any more; nothing to capture or release.
+    }
+  };
   root.addEventListener('pointerdown', (e) => {
-    drag = { start: toSvg(e), origin: { ...transform }, moved: false };
+    drag = { start: toSvg(e), origin: { ...transform }, moved: false, pointerId: e.pointerId };
     dragged = false;
-    root.setPointerCapture(e.pointerId);
   });
   root.addEventListener('pointermove', (e) => {
     if (!drag) return;
     const [x, y] = toSvg(e);
     const dx = x - drag.start[0];
     const dy = y - drag.start[1];
-    if (Math.abs(dx) + Math.abs(dy) > 2) drag.moved = true;
+    if (Math.abs(dx) + Math.abs(dy) > 2 && !drag.moved) {
+      drag.moved = true;
+      // The pointer is captured here and not on the press. Capturing on
+      // pointerdown retargets pointerup — and with it the click — to the
+      // SVG root, so the click never reached the mark under the cursor and
+      // no event on the map could be selected at all. A pan still needs the
+      // capture to survive leaving the map, so it is taken the moment the
+      // press becomes a drag.
+      capture('setPointerCapture', drag.pointerId);
+    }
     transform = { ...transform, x: drag.origin.x + dx, y: drag.origin.y + dy };
     applyTransform();
   });
   root.addEventListener('pointerup', () => {
+    if (drag?.moved) capture('releasePointerCapture', drag.pointerId);
     dragged = drag?.moved ?? false;
     drag = null;
   });
