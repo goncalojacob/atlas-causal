@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "ramalho-eanes",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "maxwell-1995-making-of-portuguese-democracy",
+      "locator": null
+    }
+  ],
+  "actorType": "person",
+  "names": [
+    "Ramalho Eanes",
+    "António dos Santos Ramalho Eanes"
+  ],
+  "summary": "Officer who commanded the operation that ended the revolutionary period on 25 November 1975 and was elected president in 1976, serving two terms and presiding over the return of the military to barracks.",
+  "when": {
+    "start": 1935,
+    "end": null
+  },
+  "where": {
+    "lon": -7.45,
+    "lat": 39.92,
+    "precision": "city",
+    "label": "Alcains"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "amilcar-cabral",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "macqueen-1997-decolonization",
+      "locator": null
+    },
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    }
+  ],
+  "actorType": "person",
+  "names": [
+    "Amílcar Cabral",
+    "Abel Djassi"
+  ],
+  "summary": "Agronomist and founder of the PAIGC, the strategist of the liberation war in Guinea and the most internationally effective of the leaders of the Portuguese-African movements. He was assassinated in Conakry in January 1973, months before Guinea-Bissau declared independence.",
+  "when": {
+    "start": 1924,
+    "end": 1973
+  },
+  "where": {
+    "lon": -14.66,
+    "lat": 12.17,
+    "precision": "city",
+    "label": "Bafatá"
+  }
+}

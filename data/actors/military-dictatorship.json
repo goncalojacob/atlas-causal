@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "military-dictatorship",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    },
+    {
+      "source": "meneses-2004-portugal-1914-1926",
+      "locator": null
+    }
+  ],
+  "actorType": "polity",
+  "names": [
+    "Military Dictatorship",
+    "Ditadura Militar",
+    "Ditadura Nacional"
+  ],
+  "summary": "The regime installed by the coup of 28 May 1926, which governed without a constitution while its internal disputes were settled, and out of which the Estado Novo was built once Salazar had taken control of the finances.",
+  "when": {
+    "start": 1926,
+    "end": 1933
+  },
+  "where": {
+    "lon": -9.14,
+    "lat": 38.72,
+    "precision": "city",
+    "label": "Lisbon"
+  }
+}

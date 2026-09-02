@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "republic-of-india",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "macqueen-1997-decolonization",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    }
+  ],
+  "actorType": "polity",
+  "names": [
+    "Republic of India",
+    "India",
+    "Índia"
+  ],
+  "summary": "Independent from 1947, and from the beginning a claimant to the Portuguese enclaves on its coast. After years of negotiation and blockade it annexed Goa, Daman and Diu by force in December 1961.",
+  "when": {
+    "start": 1947,
+    "end": null
+  },
+  "where": {
+    "lon": 77.21,
+    "lat": 28.61,
+    "precision": "city",
+    "label": "New Delhi"
+  }
+}

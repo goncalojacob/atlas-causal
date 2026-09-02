@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "frelimo",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "macqueen-1997-decolonization",
+      "locator": null
+    }
+  ],
+  "actorType": "institution",
+  "names": [
+    "FRELIMO",
+    "Frente de Libertação de Moçambique",
+    "Mozambique Liberation Front"
+  ],
+  "summary": "Founded in Dar es Salaam in 1962 out of three earlier movements and led first by Eduardo Mondlane, it began the war in Mozambique in 1964 and took power at independence in 1975.",
+  "when": {
+    "start": 1962,
+    "end": null
+  },
+  "where": {
+    "lon": 32.57,
+    "lat": -25.97,
+    "precision": "city",
+    "label": "Maputo"
+  }
+}

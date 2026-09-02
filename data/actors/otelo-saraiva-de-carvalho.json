@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "otelo-saraiva-de-carvalho",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "maxwell-1995-making-of-portuguese-democracy",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    }
+  ],
+  "actorType": "person",
+  "names": [
+    "Otelo Saraiva de Carvalho",
+    "Otelo"
+  ],
+  "summary": "Officer who drew up the operational plan of the 25 April 1974 coup and commanded COPCON during the revolutionary period, becoming the emblem of its most radical wing.",
+  "when": {
+    "start": 1936,
+    "end": 2021
+  },
+  "where": {
+    "lon": 32.57,
+    "lat": -25.97,
+    "precision": "city",
+    "label": "Lourenço Marques"
+  }
+}

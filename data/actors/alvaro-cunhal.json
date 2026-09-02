@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "alvaro-cunhal",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "maxwell-1995-making-of-portuguese-democracy",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    }
+  ],
+  "actorType": "person",
+  "names": [
+    "Álvaro Cunhal"
+  ],
+  "summary": "Secretary-general of the Portuguese Communist Party from 1961 to 1992, imprisoned for eleven years and in exile until 1974. The party he led was the best-organised force of the revolutionary period and the pivot of the disputes of 1975.",
+  "when": {
+    "start": 1913,
+    "end": 2005
+  },
+  "where": {
+    "lon": -8.43,
+    "lat": 40.21,
+    "precision": "city",
+    "label": "Coimbra"
+  }
+}

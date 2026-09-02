@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "sidonio-pais",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "wheeler-1978-republican-portugal",
+      "locator": null
+    },
+    {
+      "source": "meneses-2004-portugal-1914-1926",
+      "locator": null
+    }
+  ],
+  "actorType": "person",
+  "names": [
+    "Sidónio Pais",
+    "Sidónio Bernardino Cardoso da Silva Pais"
+  ],
+  "summary": "Army officer and professor who seized power in December 1917 and governed as a plebiscitary president until he was shot dead in Lisbon in December 1918. His \"New Republic\" is read by some historians as a first Portuguese experiment with charismatic authoritarian rule.",
+  "when": {
+    "start": 1872,
+    "end": 1918
+  },
+  "where": {
+    "lon": -8.84,
+    "lat": 41.87,
+    "precision": "city",
+    "label": "Caminha"
+  }
+}

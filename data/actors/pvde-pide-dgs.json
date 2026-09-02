@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "pvde-pide-dgs",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    },
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    }
+  ],
+  "actorType": "institution",
+  "names": [
+    "PIDE",
+    "Polícia Internacional e de Defesa do Estado",
+    "PVDE",
+    "Polícia de Vigilância e Defesa do Estado",
+    "DGS",
+    "Direcção-Geral de Segurança"
+  ],
+  "summary": "The political police of the Estado Novo, under three names in succession, responsible for surveillance, the political prisons and, in cases such as the killing of Humberto Delgado, for murder. Dissolved after 25 April 1974.",
+  "when": {
+    "start": 1933,
+    "end": 1974
+  },
+  "where": {
+    "lon": -9.14,
+    "lat": 38.72,
+    "precision": "city",
+    "label": "Lisbon"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "gomes-da-costa",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "meneses-2004-portugal-1914-1926",
+      "locator": null
+    },
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    }
+  ],
+  "actorType": "person",
+  "names": [
+    "Gomes da Costa",
+    "Manuel de Oliveira Gomes da Costa"
+  ],
+  "summary": "Career officer who had commanded Portuguese troops in Flanders and who led the column that entered Lisbon in the coup of 28 May 1926. He headed the new government for barely two months before being removed by his fellow officers.",
+  "when": {
+    "start": 1863,
+    "end": 1929
+  },
+  "where": null
+}

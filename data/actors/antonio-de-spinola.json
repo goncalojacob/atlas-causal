@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "antonio-de-spinola",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "maxwell-1995-making-of-portuguese-democracy",
+      "locator": null
+    },
+    {
+      "source": "macqueen-1997-decolonization",
+      "locator": null
+    }
+  ],
+  "actorType": "person",
+  "names": [
+    "António de Spínola",
+    "General Spínola"
+  ],
+  "summary": "General and former governor of Guinea whose book \"Portugal e o Futuro\" broke with the regime's colonial policy in February 1974. He became the first president after the revolution, resigned in September 1974, and after a failed coup in March 1975 went into exile.",
+  "when": {
+    "start": 1910,
+    "end": 1996
+  },
+  "where": {
+    "lon": -7.59,
+    "lat": 38.84,
+    "precision": "city",
+    "label": "Estremoz"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "third-portuguese-republic",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    }
+  ],
+  "actorType": "polity",
+  "names": [
+    "Third Portuguese Republic",
+    "Terceira República Portuguesa"
+  ],
+  "summary": "The democratic regime opened by the revolution of 25 April 1974 and given its form by the constitution of 1976: parliamentary, with a directly elected president, in the European Community from 1986.",
+  "when": {
+    "start": 1974,
+    "end": null
+  },
+  "where": {
+    "lon": -9.14,
+    "lat": 38.72,
+    "precision": "city",
+    "label": "Lisbon"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "first-portuguese-republic",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "wheeler-1978-republican-portugal",
+      "locator": null
+    },
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    }
+  ],
+  "actorType": "polity",
+  "names": [
+    "First Portuguese Republic",
+    "Primeira República Portuguesa"
+  ],
+  "summary": "The parliamentary republic proclaimed on 5 October 1910 and ended by the coup of 28 May 1926. Sixteen years of chronic instability: dozens of governments, recurrent revolts, an unpopular war, and a monarchist and then a military reaction.",
+  "when": {
+    "start": 1910,
+    "end": 1926
+  },
+  "where": {
+    "lon": -9.14,
+    "lat": 38.72,
+    "precision": "city",
+    "label": "Lisbon"
+  }
+}

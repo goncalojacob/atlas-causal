@@ -1,5 +1,705 @@
 {
-  "actors": [],
+  "actors": [
+    {
+      "actorType": "person",
+      "aliases": [],
+      "id": "afonso-costa",
+      "name": "Afonso Costa",
+      "names": [
+        "Afonso Costa",
+        "Afonso Augusto da Costa"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": 1937,
+        "start": 1871
+      }
+    },
+    {
+      "actorType": "person",
+      "aliases": [],
+      "id": "alvaro-cunhal",
+      "name": "Álvaro Cunhal",
+      "names": [
+        "Álvaro Cunhal"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": 2005,
+        "start": 1913
+      }
+    },
+    {
+      "actorType": "person",
+      "aliases": [],
+      "id": "amilcar-cabral",
+      "name": "Amílcar Cabral",
+      "names": [
+        "Amílcar Cabral",
+        "Abel Djassi"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": 1973,
+        "start": 1924
+      }
+    },
+    {
+      "actorType": "person",
+      "aliases": [],
+      "id": "antonio-de-spinola",
+      "name": "António de Spínola",
+      "names": [
+        "António de Spínola",
+        "General Spínola"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": 1996,
+        "start": 1910
+      }
+    },
+    {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "armed-forces-movement",
+      "name": "Armed Forces Movement",
+      "names": [
+        "Armed Forces Movement",
+        "Movimento das Forças Armadas",
+        "MFA",
+        "Movimento dos Capitães"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": 1975,
+        "start": 1973
+      }
+    },
+    {
+      "actorType": "person",
+      "aliases": [],
+      "id": "cavaco-silva",
+      "name": "Aníbal Cavaco Silva",
+      "names": [
+        "Aníbal Cavaco Silva",
+        "Cavaco Silva"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 1939
+      }
+    },
+    {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "council-of-the-revolution",
+      "name": "Council of the Revolution",
+      "names": [
+        "Council of the Revolution",
+        "Conselho da Revolução"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": 1982,
+        "start": 1975
+      }
+    },
+    {
+      "actorType": "person",
+      "aliases": [],
+      "id": "eduardo-mondlane",
+      "name": "Eduardo Mondlane",
+      "names": [
+        "Eduardo Mondlane",
+        "Eduardo Chivambo Mondlane"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": 1969,
+        "start": 1920
+      }
+    },
+    {
+      "actorType": "polity",
+      "aliases": [],
+      "id": "estado-novo",
+      "name": "Estado Novo",
+      "names": [
+        "Estado Novo",
+        "New State",
+        "Second Portuguese Republic"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": 1974,
+        "start": 1933
+      }
+    },
+    {
+      "actorType": "polity",
+      "aliases": [],
+      "id": "european-economic-community",
+      "name": "European Economic Community",
+      "names": [
+        "European Economic Community",
+        "EEC",
+        "Comunidade Económica Europeia",
+        "CEE",
+        "Common Market"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": 1993,
+        "start": 1957
+      }
+    },
+    {
+      "actorType": "polity",
+      "aliases": [],
+      "id": "first-portuguese-republic",
+      "name": "First Portuguese Republic",
+      "names": [
+        "First Portuguese Republic",
+        "Primeira República Portuguesa"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": 1926,
+        "start": 1910
+      }
+    },
+    {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "fnla",
+      "name": "FNLA",
+      "names": [
+        "FNLA",
+        "Frente Nacional de Libertação de Angola",
+        "National Front for the Liberation of Angola"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 1962
+      }
+    },
+    {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "frelimo",
+      "name": "FRELIMO",
+      "names": [
+        "FRELIMO",
+        "Frente de Libertação de Moçambique",
+        "Mozambique Liberation Front"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 1962
+      }
+    },
+    {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "fretilin",
+      "name": "FRETILIN",
+      "names": [
+        "FRETILIN",
+        "Frente Revolucionária de Timor-Leste Independente",
+        "Revolutionary Front for an Independent East Timor"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 1974
+      }
+    },
+    {
+      "actorType": "person",
+      "aliases": [],
+      "id": "gomes-da-costa",
+      "name": "Gomes da Costa",
+      "names": [
+        "Gomes da Costa",
+        "Manuel de Oliveira Gomes da Costa"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": 1929,
+        "start": 1863
+      }
+    },
+    {
+      "actorType": "person",
+      "aliases": [],
+      "id": "henrique-galvao",
+      "name": "Henrique Galvão",
+      "names": [
+        "Henrique Galvão"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": 1970,
+        "start": 1895
+      }
+    },
+    {
+      "actorType": "person",
+      "aliases": [],
+      "id": "humberto-delgado",
+      "name": "Humberto Delgado",
+      "names": [
+        "Humberto Delgado",
+        "Humberto da Silva Delgado",
+        "the Fearless General",
+        "General Sem Medo"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": 1965,
+        "start": 1906
+      }
+    },
+    {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "imf",
+      "name": "International Monetary Fund",
+      "names": [
+        "International Monetary Fund",
+        "IMF",
+        "Fundo Monetário Internacional",
+        "FMI"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 1945
+      }
+    },
+    {
+      "actorType": "polity",
+      "aliases": [],
+      "id": "indonesia",
+      "name": "Indonesia",
+      "names": [
+        "Indonesia",
+        "Republic of Indonesia",
+        "República da Indonésia"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 1945
+      }
+    },
+    {
+      "actorType": "person",
+      "aliases": [],
+      "id": "jawaharlal-nehru",
+      "name": "Jawaharlal Nehru",
+      "names": [
+        "Jawaharlal Nehru"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": 1964,
+        "start": 1889
+      }
+    },
+    {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "legiao-portuguesa",
+      "name": "Portuguese Legion",
+      "names": [
+        "Portuguese Legion",
+        "Legião Portuguesa"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": 1974,
+        "start": 1936
+      }
+    },
+    {
+      "actorType": "person",
+      "aliases": [],
+      "id": "manuel-ii",
+      "name": "Manuel II",
+      "names": [
+        "Manuel II",
+        "D. Manuel II",
+        "Manuel II of Portugal"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": 1932,
+        "start": 1889
+      }
+    },
+    {
+      "actorType": "person",
+      "aliases": [],
+      "id": "marcelo-caetano",
+      "name": "Marcelo Caetano",
+      "names": [
+        "Marcelo Caetano",
+        "Marcello Caetano"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": 1980,
+        "start": 1906
+      }
+    },
+    {
+      "actorType": "person",
+      "aliases": [],
+      "id": "mario-soares",
+      "name": "Mário Soares",
+      "names": [
+        "Mário Soares",
+        "Mário Alberto Nobre Lopes Soares"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": 2017,
+        "start": 1924
+      }
+    },
+    {
+      "actorType": "polity",
+      "aliases": [],
+      "id": "military-dictatorship",
+      "name": "Military Dictatorship",
+      "names": [
+        "Military Dictatorship",
+        "Ditadura Militar",
+        "Ditadura Nacional"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": 1933,
+        "start": 1926
+      }
+    },
+    {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "mpla",
+      "name": "MPLA",
+      "names": [
+        "MPLA",
+        "Movimento Popular de Libertação de Angola",
+        "People's Movement for the Liberation of Angola"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 1956
+      }
+    },
+    {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "nato",
+      "name": "NATO",
+      "names": [
+        "NATO",
+        "North Atlantic Treaty Organization",
+        "OTAN",
+        "Organização do Tratado do Atlântico Norte"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 1949
+      }
+    },
+    {
+      "actorType": "person",
+      "aliases": [],
+      "id": "otelo-saraiva-de-carvalho",
+      "name": "Otelo Saraiva de Carvalho",
+      "names": [
+        "Otelo Saraiva de Carvalho",
+        "Otelo"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": 2021,
+        "start": 1936
+      }
+    },
+    {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "paigc",
+      "name": "PAIGC",
+      "names": [
+        "PAIGC",
+        "Partido Africano para a Independência da Guiné e Cabo Verde",
+        "African Party for the Independence of Guinea and Cape Verde"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 1956
+      }
+    },
+    {
+      "actorType": "person",
+      "aliases": [],
+      "id": "paiva-couceiro",
+      "name": "Henrique Mitchell de Paiva Couceiro",
+      "names": [
+        "Henrique Mitchell de Paiva Couceiro",
+        "Paiva Couceiro"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": 1944,
+        "start": 1861
+      }
+    },
+    {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "partido-democratico",
+      "name": "Democratic Party",
+      "names": [
+        "Democratic Party",
+        "Partido Democrático",
+        "Partido Republicano Português"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": 1926,
+        "start": 1912
+      }
+    },
+    {
+      "actorType": "person",
+      "aliases": [],
+      "id": "pimenta-de-castro",
+      "name": "Joaquim Pereira Pimenta de Castro",
+      "names": [
+        "Joaquim Pereira Pimenta de Castro",
+        "Pimenta de Castro"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": 1918,
+        "start": 1846
+      }
+    },
+    {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "portuguese-expeditionary-corps",
+      "name": "Portuguese Expeditionary Corps",
+      "names": [
+        "Portuguese Expeditionary Corps",
+        "Corpo Expedicionário Português",
+        "CEP"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": 1919,
+        "start": 1916
+      }
+    },
+    {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "pvde-pide-dgs",
+      "name": "PIDE",
+      "names": [
+        "PIDE",
+        "Polícia Internacional e de Defesa do Estado",
+        "PVDE",
+        "Polícia de Vigilância e Defesa do Estado",
+        "DGS",
+        "Direcção-Geral de Segurança"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": 1974,
+        "start": 1933
+      }
+    },
+    {
+      "actorType": "person",
+      "aliases": [],
+      "id": "ramalho-eanes",
+      "name": "Ramalho Eanes",
+      "names": [
+        "Ramalho Eanes",
+        "António dos Santos Ramalho Eanes"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 1935
+      }
+    },
+    {
+      "actorType": "polity",
+      "aliases": [],
+      "id": "republic-of-india",
+      "name": "Republic of India",
+      "names": [
+        "Republic of India",
+        "India",
+        "Índia"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 1947
+      }
+    },
+    {
+      "actorType": "person",
+      "aliases": [],
+      "id": "salazar",
+      "name": "António de Oliveira Salazar",
+      "names": [
+        "António de Oliveira Salazar",
+        "Salazar"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": 1970,
+        "start": 1889
+      }
+    },
+    {
+      "actorType": "person",
+      "aliases": [],
+      "id": "sidonio-pais",
+      "name": "Sidónio Pais",
+      "names": [
+        "Sidónio Pais",
+        "Sidónio Bernardino Cardoso da Silva Pais"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": 1918,
+        "start": 1872
+      }
+    },
+    {
+      "actorType": "polity",
+      "aliases": [],
+      "id": "third-portuguese-republic",
+      "name": "Third Portuguese Republic",
+      "names": [
+        "Third Portuguese Republic",
+        "Terceira República Portuguesa"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 1974
+      }
+    },
+    {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "unita",
+      "name": "UNITA",
+      "names": [
+        "UNITA",
+        "União Nacional para a Independência Total de Angola",
+        "National Union for the Total Independence of Angola"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 1966
+      }
+    },
+    {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "united-nations",
+      "name": "United Nations",
+      "names": [
+        "United Nations",
+        "UN",
+        "Organização das Nações Unidas",
+        "ONU"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 1945
+      }
+    },
+    {
+      "actorType": "person",
+      "aliases": [],
+      "id": "vasco-goncalves",
+      "name": "Vasco Gonçalves",
+      "names": [
+        "Vasco Gonçalves",
+        "Vasco dos Santos Gonçalves"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": 2005,
+        "start": 1921
+      }
+    }
+  ],
   "edges": [
     {
       "aliases": [],

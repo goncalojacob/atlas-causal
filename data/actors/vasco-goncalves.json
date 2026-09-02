@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "vasco-goncalves",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "maxwell-1995-making-of-portuguese-democracy",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    }
+  ],
+  "actorType": "person",
+  "names": [
+    "Vasco Gonçalves",
+    "Vasco dos Santos Gonçalves"
+  ],
+  "summary": "Officer of the Armed Forces Movement and prime minister through most of 1974 and 1975, over five provisional governments; his removal in the summer of 1975 marked the turn away from the revolutionary course.",
+  "when": {
+    "start": 1921,
+    "end": 2005
+  },
+  "where": {
+    "lon": -9.14,
+    "lat": 38.72,
+    "precision": "city",
+    "label": "Lisbon"
+  }
+}

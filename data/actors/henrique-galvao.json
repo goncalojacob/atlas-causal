@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "henrique-galvao",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    },
+    {
+      "source": "macqueen-1997-decolonization",
+      "locator": null
+    }
+  ],
+  "actorType": "person",
+  "names": [
+    "Henrique Galvão"
+  ],
+  "summary": "Officer and colonial administrator who turned against the regime after reporting on forced labour in Angola, escaped from custody, and in January 1961 led the seizure of the liner Santa Maria to draw world attention to the dictatorship.",
+  "when": {
+    "start": 1895,
+    "end": 1970
+  },
+  "where": {
+    "lon": -9.07,
+    "lat": 38.66,
+    "precision": "city",
+    "label": "Barreiro"
+  }
+}

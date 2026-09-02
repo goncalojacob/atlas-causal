@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "humberto-delgado",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    },
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    }
+  ],
+  "actorType": "person",
+  "names": [
+    "Humberto Delgado",
+    "Humberto da Silva Delgado",
+    "the Fearless General",
+    "General Sem Medo"
+  ],
+  "summary": "Air force general who stood against the regime in the presidential election of 1958 and turned it into the widest legal opposition mobilisation the Estado Novo faced. Exiled afterwards, he was lured to the Spanish border and murdered by the PIDE in 1965.",
+  "when": {
+    "start": 1906,
+    "end": 1965
+  },
+  "where": {
+    "lon": -8.54,
+    "lat": 39.48,
+    "precision": "city",
+    "label": "Torres Novas"
+  }
+}

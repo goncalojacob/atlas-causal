@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "cavaco-silva",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "reis-2013-portuguese-slump",
+      "locator": null
+    }
+  ],
+  "actorType": "person",
+  "names": [
+    "Aníbal Cavaco Silva",
+    "Cavaco Silva"
+  ],
+  "summary": "Economist and leader of the Social Democratic Party, prime minister from 1985 to 1995 with absolute majorities from 1987, and president from 2006 to 2016. His governments coincided with accession to the European Community and the largest inflow of structural funds.",
+  "when": {
+    "start": 1939,
+    "end": null
+  },
+  "where": {
+    "lon": -8.14,
+    "lat": 37.13,
+    "precision": "city",
+    "label": "Boliqueime"
+  }
+}

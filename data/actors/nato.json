@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "nato",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    }
+  ],
+  "actorType": "institution",
+  "names": [
+    "NATO",
+    "North Atlantic Treaty Organization",
+    "OTAN",
+    "Organização do Tratado do Atlântico Norte"
+  ],
+  "summary": "The Atlantic alliance founded in 1949, of which Portugal was a founding member despite being a dictatorship — a membership that shaped both its armed forces and its standing among the Western powers during the colonial war.",
+  "when": {
+    "start": 1949,
+    "end": null
+  },
+  "where": {
+    "lon": 4.35,
+    "lat": 50.85,
+    "precision": "city",
+    "label": "Brussels"
+  }
+}

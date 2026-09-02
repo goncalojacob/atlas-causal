@@ -1,6 +1,6 @@
 {
   "counts": {
-    "actors": 0,
+    "actors": 42,
     "edges": 37,
     "events": 35,
     "regions": 5,
@@ -8,7 +8,7 @@
   },
   "files": {
     "sources": "index/sources-6c36ac871efd.json",
-    "topology": "index/topology-0d800eb6a425.json"
+    "topology": "index/topology-d597cfcd0d93.json"
   },
   "land": [
     {

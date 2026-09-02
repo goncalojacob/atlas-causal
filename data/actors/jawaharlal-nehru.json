@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "jawaharlal-nehru",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "macqueen-1997-decolonization",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    }
+  ],
+  "actorType": "person",
+  "names": [
+    "Jawaharlal Nehru"
+  ],
+  "summary": "First prime minister of independent India, from 1947 until his death. His government took Goa, Daman and Diu by force in December 1961 after years of failed negotiation with Lisbon.",
+  "when": {
+    "start": 1889,
+    "end": 1964
+  },
+  "where": {
+    "lon": 81.85,
+    "lat": 25.44,
+    "precision": "city",
+    "label": "Allahabad"
+  }
+}

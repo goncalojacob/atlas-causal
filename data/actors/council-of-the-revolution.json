@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "council-of-the-revolution",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    }
+  ],
+  "actorType": "institution",
+  "names": [
+    "Council of the Revolution",
+    "Conselho da Revolução"
+  ],
+  "summary": "The military body written into the 1976 constitution as guarantor of the revolution, with power to judge the constitutionality of laws. The revision of 1982 abolished it and returned the armed forces to civilian authority.",
+  "when": {
+    "start": 1975,
+    "end": 1982
+  },
+  "where": {
+    "lon": -9.14,
+    "lat": 38.72,
+    "precision": "city",
+    "label": "Lisbon"
+  }
+}

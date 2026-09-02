@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "united-nations",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "macqueen-1997-decolonization",
+      "locator": null
+    },
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    }
+  ],
+  "actorType": "institution",
+  "names": [
+    "United Nations",
+    "UN",
+    "Organização das Nações Unidas",
+    "ONU"
+  ],
+  "summary": "Portugal was kept out until 1955 and, once admitted, faced sustained pressure over the African territories, which it answered by reclassifying them as overseas provinces.",
+  "when": {
+    "start": 1945,
+    "end": null
+  },
+  "where": {
+    "lon": -73.97,
+    "lat": 40.75,
+    "precision": "city",
+    "label": "New York"
+  }
+}

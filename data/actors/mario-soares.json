@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mario-soares",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "maxwell-1995-making-of-portuguese-democracy",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    }
+  ],
+  "actorType": "person",
+  "names": [
+    "Mário Soares",
+    "Mário Alberto Nobre Lopes Soares"
+  ],
+  "summary": "Socialist leader, repeatedly imprisoned and then deported under the Estado Novo. Foreign minister and prime minister after 1974, he negotiated the decolonisation agreements and the accession to the European Community, and was president from 1986 to 1996.",
+  "when": {
+    "start": 1924,
+    "end": 2017
+  },
+  "where": {
+    "lon": -9.14,
+    "lat": 38.72,
+    "precision": "city",
+    "label": "Lisbon"
+  }
+}

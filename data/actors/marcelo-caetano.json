@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "marcelo-caetano",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    },
+    {
+      "source": "maxwell-1995-making-of-portuguese-democracy",
+      "locator": null
+    }
+  ],
+  "actorType": "person",
+  "names": [
+    "Marcelo Caetano",
+    "Marcello Caetano"
+  ],
+  "summary": "Jurist and long-serving figure of the regime who succeeded Salazar as president of the council in 1968. His \"evolution in continuity\" liberalised at the margins without ending the colonial war, and he was deposed on 25 April 1974 and exiled to Brazil.",
+  "when": {
+    "start": 1906,
+    "end": 1980
+  },
+  "where": {
+    "lon": -9.14,
+    "lat": 38.72,
+    "precision": "city",
+    "label": "Lisbon"
+  }
+}

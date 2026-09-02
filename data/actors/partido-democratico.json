@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "partido-democratico",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "wheeler-1978-republican-portugal",
+      "locator": null
+    },
+    {
+      "source": "meneses-2004-portugal-1914-1926",
+      "locator": null
+    }
+  ],
+  "actorType": "institution",
+  "names": [
+    "Democratic Party",
+    "Partido Democrático",
+    "Partido Republicano Português"
+  ],
+  "summary": "The largest party of the First Republic, heir to the Portuguese Republican Party and led by Afonso Costa; in government for most of the period, and the target of every reaction against it.",
+  "when": {
+    "start": 1912,
+    "end": 1926
+  },
+  "where": {
+    "lon": -9.14,
+    "lat": 38.72,
+    "precision": "city",
+    "label": "Lisbon"
+  }
+}

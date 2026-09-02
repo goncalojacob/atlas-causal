@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "indonesia",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "macqueen-1997-decolonization",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    }
+  ],
+  "actorType": "polity",
+  "names": [
+    "Indonesia",
+    "Republic of Indonesia",
+    "República da Indonésia"
+  ],
+  "summary": "Independent from the Netherlands after 1945; it invaded Portuguese Timor in December 1975 and occupied it until 1999, when a United Nations ballot led to withdrawal.",
+  "when": {
+    "start": 1945,
+    "end": null
+  },
+  "where": {
+    "lon": 106.85,
+    "lat": -6.21,
+    "precision": "city",
+    "label": "Jakarta"
+  }
+}

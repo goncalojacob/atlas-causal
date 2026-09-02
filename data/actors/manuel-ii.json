@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "manuel-ii",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    },
+    {
+      "source": "wheeler-1978-republican-portugal",
+      "locator": null
+    }
+  ],
+  "actorType": "person",
+  "names": [
+    "Manuel II",
+    "D. Manuel II",
+    "Manuel II of Portugal"
+  ],
+  "summary": "The last king of Portugal, on the throne from the assassination of his father and brother in 1908 until the republican revolution of 5 October 1910, after which he lived in exile in England until his death.",
+  "when": {
+    "start": 1889,
+    "end": 1932
+  },
+  "where": {
+    "lon": -9.14,
+    "lat": 38.72,
+    "precision": "city",
+    "label": "Lisbon"
+  }
+}

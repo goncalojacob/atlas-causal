@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "imf",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "reis-2013-portuguese-slump",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    }
+  ],
+  "actorType": "institution",
+  "names": [
+    "International Monetary Fund",
+    "IMF",
+    "Fundo Monetário Internacional",
+    "FMI"
+  ],
+  "summary": "The fund whose stabilisation programmes framed Portuguese economic policy after the balance-of-payments crises of 1977 and 1983, and again, with the European institutions, in 2011.",
+  "when": {
+    "start": 1945,
+    "end": null
+  },
+  "where": {
+    "lon": -77.04,
+    "lat": 38.9,
+    "precision": "city",
+    "label": "Washington, D.C."
+  }
+}

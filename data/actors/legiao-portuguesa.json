@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "legiao-portuguesa",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    }
+  ],
+  "actorType": "institution",
+  "names": [
+    "Portuguese Legion",
+    "Legião Portuguesa"
+  ],
+  "summary": "The regime's militia, founded in 1936 in the atmosphere of the Spanish Civil War as an anti-communist paramilitary body; it survived, with declining importance, until 1974.",
+  "when": {
+    "start": 1936,
+    "end": 1974
+  },
+  "where": {
+    "lon": -9.14,
+    "lat": 38.72,
+    "precision": "city",
+    "label": "Lisbon"
+  }
+}

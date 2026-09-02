@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "afonso-costa",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "wheeler-1978-republican-portugal",
+      "locator": null
+    },
+    {
+      "source": "meneses-2004-portugal-1914-1926",
+      "locator": null
+    }
+  ],
+  "actorType": "person",
+  "names": [
+    "Afonso Costa",
+    "Afonso Augusto da Costa"
+  ],
+  "summary": "Jurist and leader of the Democratic Party, the dominant figure of the First Republic: author of the 1911 separation of church and state, several times head of government, and the principal advocate of Portuguese belligerence in the First World War. He left for Paris after 1917 and never governed again.",
+  "when": {
+    "start": 1871,
+    "end": 1937
+  },
+  "where": {
+    "lon": -7.7,
+    "lat": 40.42,
+    "precision": "city",
+    "label": "Seia"
+  }
+}

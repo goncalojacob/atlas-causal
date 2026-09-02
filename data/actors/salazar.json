@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "salazar",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "meneses-2009-salazar",
+      "locator": null
+    },
+    {
+      "source": "rosas-2012-salazar-e-o-poder",
+      "locator": null
+    }
+  ],
+  "actorType": "person",
+  "names": [
+    "António de Oliveira Salazar",
+    "Salazar"
+  ],
+  "summary": "Coimbra professor of finance who became minister of finance in 1928 and president of the council from 1932 to 1968, and who built and ran the Estado Novo. Incapacitated by a stroke in 1968, he was replaced without being told.",
+  "when": {
+    "start": 1889,
+    "end": 1970
+  },
+  "where": {
+    "lon": -8.13,
+    "lat": 40.4,
+    "precision": "city",
+    "label": "Santa Comba Dão"
+  }
+}
