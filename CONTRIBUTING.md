@@ -72,8 +72,8 @@ resolve. It cannot read. For every record touched:
 
 ## The record format
 
-One JSON file per record, under `data/events/`, `data/edges/`, `data/actors/`
-or `data/sources/`; the id is the file name. The schemas in `schema/v1/` and
+One JSON file per record, under `data/events/`, `data/edges/`, `data/actors/`,
+`data/sources/` or `data/presences/`; the id is the file name. The schemas in `schema/v1/` and
 `schema/common/` are authoritative — what follows is a synthetic example, of
 the kind that lives in `tests/fixtures/`, not a historical claim.
 
@@ -173,6 +173,31 @@ Notes that catch people out:
   variants, former names and acronyms, which is what search will use.
 - **An actor cites a source too**, like every other node.
 
+## Territories, and the licence they carry
+
+`data/presences/` says who held which ground and when, and
+`data/geo/presences/` holds the outlines. Both were imported from
+[CShapes 2.0](https://icr.ethz.ch/data/cshapes/) by
+`tools/import/cshapes.mjs`, and both are **CC BY-NC-SA 4.0**, not the CC BY-SA
+4.0 of everything else under `data/`. So are the actor records the import
+created — they live in `data/actors/` beside the hand-written ones and are
+told apart by their `authors`, which name the import, and by their `license`.
+The validator enforces that: only an import listed in `IMPORT_AUTHORS`
+(`src/validate/rules.js`) may put the NC-SA licence on an actor.
+
+Practically, for a contributor: **do not copy anything out of a presence
+record, an imported actor record or a geometry shard into a record you are
+writing.** The two licences are not compatible in either direction, and a
+non-commercial clause cannot be undone once it is in a CC BY-SA file. Writing
+a presence of your own is fine — set `license` to `CC-BY-SA-4.0`, cite your
+own source, and give it its own geometry.
+
+The import owns its files and nothing else: it refuses to overwrite a record
+whose `authors` do not name it, and re-running it changes nothing. If a
+CShapes entity ever wants an id that a hand-written record already has, the
+tool stops and says so; the fix is a line in its `ACTOR_MAP`, never an
+overwrite.
+
 ## Working on the code
 
 ```bash
@@ -180,6 +205,7 @@ node tools/validate.mjs            # schemas, cross-record rules, region derivat
 node --test                        # every test under tests/
 python3 -m http.server 8000        # then http://localhost:8000/ — add ?fixtures=1
 node tools/build-index.mjs         # after changing anything under data/
+node tools/import/cshapes.mjs --source cshapes_2_gw.topojson   # territories; rarely
 ```
 
 Both commands must pass before a pull request is ready. There are no runtime

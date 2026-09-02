@@ -9,6 +9,39 @@ Natural Earth (land-present.json, regions.json)
   https://github.com/nvkelso/natural-earth-vector/tree/v5.1.2/geojson
   Regeneration is reproducible with tools/build-regions.mjs.
 
+CShapes 2.0 (presences/*.json)
+  Licence: CC BY-NC-SA 4.0 — https://creativecommons.org/licenses/by-nc-sa/4.0/
+  NOT COVERED BY data/LICENSE. The records under data/presences/, and the
+  actor records that data/actors/ holds for CShapes entities, carry
+  "license": "CC-BY-NC-SA-4.0" for the same reason: they are derived from
+  this dataset. Nothing derived from it is merged into a CC BY-SA record,
+  and the two licences are not compatible in either direction.
+
+  Attribution: Guy Schvitz, Luc Girardin, Seraina Rüegger, Nils B. Weidmann,
+  Lars-Erik Cederman and Kristian Skrede Gleditsch.
+
+  Citation: Schvitz, G., Girardin, L., Rüegger, S., Weidmann, N. B.,
+  Cederman, L.-E., & Gleditsch, K. S. (2022). Mapping the International
+  System, 1886-2019: The CShapes 2.0 Dataset. Journal of Conflict
+  Resolution, 66(1), 144–161. https://doi.org/10.1177/00220027211013563
+
+  Home: https://icr.ethz.ch/data/cshapes/
+  The file imported was cshapes_2_gw.topojson, version 2.0 (package
+  changelog dated 2021-05-31), taken from the CRAN package's GitHub mirror
+  because the ETH site is not reachable from every network:
+  https://github.com/cran/cshapes — inst/extdata/cshapes_2_gw.topojson.xz,
+  decompressed with `xz -dc`.
+  sha256 of the decompressed file:
+  9f73468bb56aae6a6b22bb5e56bf5f3e013b9ee17c641aba37db97bcb5c1c3bc
+  Regeneration is reproducible with tools/import/cshapes.mjs --source <file>,
+  which verifies that sha256 before it writes anything.
+
+  What the import changed: coordinates are quantized to three decimals and
+  the topology's arcs are simplified (Douglas–Peucker, 0.1° or a sixth of an
+  arc's own extent, whichever is less), so the outlines are less detailed
+  than the source. Nothing else is altered; every date, status, owner and
+  capital is the dataset's own.
+
 Any geometry later imported from another source gets its own directory, its
 own paragraph here and its own attribution in the interface. Imported
 geometry is never merged into record files (see ARCHITECTURE.md).

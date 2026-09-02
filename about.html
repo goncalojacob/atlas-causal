@@ -71,31 +71,59 @@
       tombstone that still resolves the old link, pointing at whatever supersedes it: a URL
       someone shared keeps working.</p>
 
-      <h3>What the map does not draw</h3>
-      <p>Coastlines, and no borders. A crisp border is a modern idea, and drawing sharp lines for
-      most of history projects the nation-state backwards onto periods that had no such thing.
-      When territories are added they will have to be representable as diffuse zones, not as
-      outlines. The timeline's lanes are continents, derived from the coordinates of each event
-      rather than stored on it, so that redrawing the lanes never means rewriting the records.</p>
+      <h3>Territories, and where they stop</h3>
+      <p>The <strong>territories</strong> layer draws who held which ground in the year on the
+      slider. It covers <strong>1886 to 2019 and nothing else</strong>: before 1886 and after
+      2019 the layer is simply empty, and that is not a gap to be filled in with guesswork. The
+      switch in the header turns it off.</p>
+      <p>The outlines come from
+      <a href="https://icr.ethz.ch/data/cshapes/" rel="noreferrer">CShapes 2.0</a> — Guy Schvitz,
+      Luc Girardin, Seraina Rüegger, Nils B. Weidmann, Lars-Erik Cederman and Kristian Skrede
+      Gleditsch, <em>Mapping the International System, 1886-2019</em>, <cite>Journal of Conflict
+      Resolution</cite> 66(1), 2022,
+      <a href="https://doi.org/10.1177/00220027211013563" rel="noreferrer">doi:10.1177/00220027211013563</a>
+      — used under
+      <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="license noreferrer">CC BY-NC-SA 4.0</a>,
+      which is <strong>not</strong> the licence of the rest of the data. Coordinates have been
+      simplified for size; every date, status, sovereign and capital is the dataset's own.</p>
+      <p>What the styles mean: a <strong>thin line over a faint wash</strong> is a state holding
+      its own ground; a <strong>lighter line over a stronger wash</strong> is a dependency —
+      colony, protectorate, mandate or occupied territory — and hovering it names both the
+      territory and whoever held it; a <strong>dashed outline</strong> means the presence itself
+      is disputed, the same as a dashed link. There is no colour per country on purpose: two
+      hundred polities share one palette, so who was where is answered by hovering and by
+      clicking, which opens the actor and fills in everything it held.</p>
+      <p>A border on this map is still a modern idea imposed on the past. It is drawn here only
+      for a period that had such borders and a source that dates every change of them; earlier
+      periods will need diffuse zones rather than outlines, which is what the
+      <code>presenceType</code> field is for. The timeline's lanes are continents, derived from
+      the coordinates of each event rather than stored on it, so that redrawing the lanes never
+      means rewriting the records.</p>
 
       <h2>Licences</h2>
 
-      <p>Three, because one licence cannot honestly cover code, prose and imported geometry.</p>
+      <p>Four, because one licence cannot honestly cover code, prose and two imported datasets.</p>
 
       <ul>
         <li><strong>The code</strong> — everything under <code>src/</code>, <code>tools/</code>
         and <code>tests/</code> — is <a href="https://opensource.org/license/mit" rel="license noreferrer">MIT</a>.
         CC BY-SA on JavaScript is a nuisance nobody wants.</li>
-        <li><strong>The records</strong> — everything under <code>data/</code>: every event, edge
-        and source, which is to say all the writing —
+        <li><strong>The records</strong> — every event, edge, source and actor that a person
+        wrote, which is to say all the writing —
         are <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license noreferrer">CC BY-SA 4.0</a>.
         Use them, including commercially, with attribution, and share what you build on them under
         the same terms.</li>
-        <li><strong>The geometry</strong> under <code>data/geo/</code> keeps the licence of its
-        source. The present-day coastlines and the lane polygons derive from
-        <a href="https://www.naturalearthdata.com/" rel="noreferrer">Natural Earth</a>, which is
-        public domain; its makers ask to be credited and are, here and in
+        <li><strong>The coastlines and lane polygons</strong> under <code>data/geo/</code> derive
+        from <a href="https://www.naturalearthdata.com/" rel="noreferrer">Natural Earth</a>, which
+        is public domain; its makers ask to be credited and are, here and in
         <code>data/geo/LICENSE</code>.</li>
+        <li><strong>The territories</strong> — <code>data/geo/presences/</code>,
+        <code>data/presences/</code> and the actor records the CShapes import created — are
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="license noreferrer">CC BY-NC-SA 4.0</a>,
+        because <a href="https://icr.ethz.ch/data/cshapes/" rel="noreferrer">CShapes 2.0</a> is.
+        That licence forbids commercial use and the rest of the data does not, so the two are
+        kept apart and each record says which one it carries. Attribution and the full citation
+        are in <code>data/geo/LICENSE</code>.</li>
       </ul>
 
       <h3>Why this cannot be changed later</h3>
@@ -104,9 +132,10 @@
       grows with every contribution. There is no realistic point after which all of those people
       can be found and asked. So the licence is not a default that can be revisited when it
       becomes inconvenient: it is a decision taken once, before contributions opened, and it is
-      final. The same reasoning is why imported geometry under an incompatible licence — ODbL,
-      for instance — will live in its own directory with its own attribution, never merged into
-      a record file.</p>
+      final. The same reasoning is why imported geometry under an incompatible licence lives in
+      its own directory with its own attribution and is never merged into a record somebody
+      wrote — which is exactly what happened with CShapes, whose non-commercial clause CC BY-SA
+      cannot absorb in either direction.</p>
 
       <h2>Contributions</h2>
 

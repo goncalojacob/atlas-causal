@@ -1,8 +1,9 @@
 # Atlas causal
 
 A map and a timeline over one graph: historical events as nodes, the people,
-polities and institutions in them as actors, causal links as edges, each edge carrying a type, a confidence level and a written argument
-with its sources. Pick an event, follow its consequences, and see which other
+polities and institutions in them as actors, the ground those actors held as
+presences, causal links as edges, each edge carrying a type, a confidence level
+and a written argument with its sources. Pick an event, follow its consequences, and see which other
 branches fed the same endpoint — the antidote to reading one chain as the
 explanation.
 
@@ -30,7 +31,13 @@ node --test                        # every test under tests/
 node tools/new-record.mjs event <id> --title … --start …   # scaffold a record
 node tools/new-record.mjs actor <id> --type person --names "…" --start …
 node tools/build-index.mjs         # regenerate data/index/ after changing data/
+node tools/import/cshapes.mjs --source cshapes_2_gw.topojson   # territories; rarely
 ```
+
+The **territories** layer draws who held which ground in the year on the
+slider, from CShapes 2.0 — 1886 to 2019 only, and empty outside it. The
+switch in the header turns it off. It is an import, not writing: see the
+licence note below and `about.html`.
 
 Node 22 (`.nvmrc`). `tools/validate.mjs` and `node --test` are what CI runs on
 every pull request.
@@ -56,7 +63,7 @@ every pull request.
 
 ## Licences
 
-Three, because one cannot honestly cover code, prose and imported geometry.
+Four, because one cannot honestly cover code, prose and two imported datasets.
 
 - **Code** (`src/`, `tools/`, `tests/`): MIT — `LICENSE`.
 - **Records** (everything under `data/`): CC BY-SA 4.0 — `data/LICENSE`.
@@ -64,6 +71,15 @@ Three, because one cannot honestly cover code, prose and imported geometry.
   The coastlines and lane polygons derive from
   [Natural Earth](https://www.naturalearthdata.com/), public domain, credited
   there.
+- **Territories** (`data/geo/presences/`, `data/presences/` and the actor
+  records the import created): CC BY-NC-SA 4.0, because
+  [CShapes 2.0](https://icr.ethz.ch/data/cshapes/) is — Schvitz, Girardin,
+  Rüegger, Weidmann, Cederman & Gleditsch, *Mapping the International System,
+  1886-2019*, Journal of Conflict Resolution 66(1), 2022,
+  [doi:10.1177/00220027211013563](https://doi.org/10.1177/00220027211013563).
+  Non-commercial, so it is kept apart from the CC BY-SA records and every one
+  of those files says which licence it carries. Full attribution in
+  `data/geo/LICENSE`.
 
 Relicensing the records stops being possible the moment someone else's writing
 is merged; `about.html` explains why that is deliberate.
