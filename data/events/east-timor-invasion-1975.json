@@ -35,5 +35,18 @@
     "label": "Dili"
   },
   "region": null,
-  "actors": []
+  "actors": [
+    {
+      "actor": "indonesia",
+      "role": "invader"
+    },
+    {
+      "actor": "fretilin",
+      "role": "target"
+    },
+    {
+      "actor": "third-portuguese-republic",
+      "role": "withdrew"
+    }
+  ]
 }

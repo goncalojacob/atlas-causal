@@ -39,5 +39,18 @@
     "label": "Conakry"
   },
   "region": null,
-  "actors": []
+  "actors": [
+    {
+      "actor": "amilcar-cabral",
+      "role": "victim"
+    },
+    {
+      "actor": "paigc",
+      "role": "movement"
+    },
+    {
+      "actor": "pvde-pide-dgs",
+      "role": "alleged accomplice"
+    }
+  ]
 }

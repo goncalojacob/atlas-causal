@@ -39,5 +39,30 @@
     "label": "Lisbon"
   },
   "region": null,
-  "actors": []
+  "actors": [
+    {
+      "actor": "armed-forces-movement",
+      "role": "leader"
+    },
+    {
+      "actor": "otelo-saraiva-de-carvalho",
+      "role": "planner"
+    },
+    {
+      "actor": "marcelo-caetano",
+      "role": "deposed"
+    },
+    {
+      "actor": "estado-novo",
+      "role": "deposed"
+    },
+    {
+      "actor": "antonio-de-spinola",
+      "role": "figurehead"
+    },
+    {
+      "actor": "third-portuguese-republic",
+      "role": "founded"
+    }
+  ]
 }

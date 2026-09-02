@@ -39,5 +39,18 @@
     "label": "Lisbon"
   },
   "region": null,
-  "actors": []
+  "actors": [
+    {
+      "actor": "pimenta-de-castro",
+      "role": "leader"
+    },
+    {
+      "actor": "partido-democratico",
+      "role": "excluded"
+    },
+    {
+      "actor": "afonso-costa",
+      "role": "target"
+    }
+  ]
 }

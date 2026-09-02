@@ -39,5 +39,18 @@
     "label": "Porto"
   },
   "region": null,
-  "actors": []
+  "actors": [
+    {
+      "actor": "paiva-couceiro",
+      "role": "leader"
+    },
+    {
+      "actor": "first-portuguese-republic",
+      "role": "target"
+    },
+    {
+      "actor": "manuel-ii",
+      "role": "invoked"
+    }
+  ]
 }

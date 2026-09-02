@@ -39,5 +39,18 @@
     "label": "Lisbon"
   },
   "region": null,
-  "actors": []
+  "actors": [
+    {
+      "actor": "third-portuguese-republic",
+      "role": "constituted"
+    },
+    {
+      "actor": "council-of-the-revolution",
+      "role": "created"
+    },
+    {
+      "actor": "mario-soares",
+      "role": "legislator"
+    }
+  ]
 }

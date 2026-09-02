@@ -39,5 +39,14 @@
     "label": "Lajes, Terceira"
   },
   "region": "europe",
-  "actors": []
+  "actors": [
+    {
+      "actor": "salazar",
+      "role": "signatory"
+    },
+    {
+      "actor": "estado-novo",
+      "role": "signatory"
+    }
+  ]
 }

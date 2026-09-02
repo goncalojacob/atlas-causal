@@ -39,5 +39,18 @@
     "label": "Lisbon"
   },
   "region": null,
-  "actors": []
+  "actors": [
+    {
+      "actor": "antonio-de-spinola",
+      "role": "author"
+    },
+    {
+      "actor": "marcelo-caetano",
+      "role": "target"
+    },
+    {
+      "actor": "estado-novo",
+      "role": "target"
+    }
+  ]
 }

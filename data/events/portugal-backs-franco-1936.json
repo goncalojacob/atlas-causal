@@ -39,5 +39,14 @@
     "label": "Lisbon"
   },
   "region": "europe",
-  "actors": []
+  "actors": [
+    {
+      "actor": "salazar",
+      "role": "leader"
+    },
+    {
+      "actor": "estado-novo",
+      "role": "supporter"
+    }
+  ]
 }

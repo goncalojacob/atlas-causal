@@ -39,5 +39,18 @@
     "label": "Lisbon"
   },
   "region": null,
-  "actors": []
+  "actors": [
+    {
+      "actor": "sidonio-pais",
+      "role": "leader"
+    },
+    {
+      "actor": "partido-democratico",
+      "role": "deposed"
+    },
+    {
+      "actor": "afonso-costa",
+      "role": "deposed"
+    }
+  ]
 }

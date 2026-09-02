@@ -35,5 +35,18 @@
     "label": "New York"
   },
   "region": null,
-  "actors": []
+  "actors": [
+    {
+      "actor": "united-nations",
+      "role": "admitting body"
+    },
+    {
+      "actor": "estado-novo",
+      "role": "admitted"
+    },
+    {
+      "actor": "salazar",
+      "role": "leader"
+    }
+  ]
 }

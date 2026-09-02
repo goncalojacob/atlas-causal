@@ -39,5 +39,18 @@
     "label": "Lisbon"
   },
   "region": null,
-  "actors": []
+  "actors": [
+    {
+      "actor": "legiao-portuguesa",
+      "role": "founded"
+    },
+    {
+      "actor": "salazar",
+      "role": "founder"
+    },
+    {
+      "actor": "estado-novo",
+      "role": "government"
+    }
+  ]
 }

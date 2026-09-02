@@ -39,5 +39,14 @@
     "label": "Lisbon"
   },
   "region": null,
-  "actors": []
+  "actors": [
+    {
+      "actor": "mario-soares",
+      "role": "winner"
+    },
+    {
+      "actor": "alvaro-cunhal",
+      "role": "candidate"
+    }
+  ]
 }

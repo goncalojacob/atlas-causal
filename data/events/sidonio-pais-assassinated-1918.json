@@ -39,5 +39,10 @@
     "label": "Lisbon"
   },
   "region": null,
-  "actors": []
+  "actors": [
+    {
+      "actor": "sidonio-pais",
+      "role": "victim"
+    }
+  ]
 }

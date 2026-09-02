@@ -39,5 +39,14 @@
     "label": "Lisbon"
   },
   "region": null,
-  "actors": []
+  "actors": [
+    {
+      "actor": "cavaco-silva",
+      "role": "winner"
+    },
+    {
+      "actor": "mario-soares",
+      "role": "president"
+    }
+  ]
 }

@@ -39,5 +39,18 @@
     "label": "near Villanueva del Fresno, Spain"
   },
   "region": "europe",
-  "actors": []
+  "actors": [
+    {
+      "actor": "humberto-delgado",
+      "role": "victim"
+    },
+    {
+      "actor": "pvde-pide-dgs",
+      "role": "perpetrator"
+    },
+    {
+      "actor": "estado-novo",
+      "role": "government"
+    }
+  ]
 }

@@ -39,5 +39,18 @@
     "label": "Lisbon"
   },
   "region": null,
-  "actors": []
+  "actors": [
+    {
+      "actor": "ramalho-eanes",
+      "role": "commander"
+    },
+    {
+      "actor": "otelo-saraiva-de-carvalho",
+      "role": "removed"
+    },
+    {
+      "actor": "armed-forces-movement",
+      "role": "divided"
+    }
+  ]
 }

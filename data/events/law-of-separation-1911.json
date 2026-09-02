@@ -35,5 +35,14 @@
     "label": "Lisbon"
   },
   "region": null,
-  "actors": []
+  "actors": [
+    {
+      "actor": "afonso-costa",
+      "role": "author"
+    },
+    {
+      "actor": "first-portuguese-republic",
+      "role": "legislator"
+    }
+  ]
 }

@@ -39,5 +39,18 @@
     "label": "Lisbon"
   },
   "region": null,
-  "actors": []
+  "actors": [
+    {
+      "actor": "salazar",
+      "role": "author"
+    },
+    {
+      "actor": "estado-novo",
+      "role": "legislator"
+    },
+    {
+      "actor": "humberto-delgado",
+      "role": "target"
+    }
+  ]
 }

@@ -39,5 +39,18 @@
     "label": "Lisbon"
   },
   "region": null,
-  "actors": []
+  "actors": [
+    {
+      "actor": "third-portuguese-republic",
+      "role": "applicant"
+    },
+    {
+      "actor": "european-economic-community",
+      "role": "target"
+    },
+    {
+      "actor": "mario-soares",
+      "role": "leader"
+    }
+  ]
 }

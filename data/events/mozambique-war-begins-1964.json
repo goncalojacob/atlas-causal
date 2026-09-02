@@ -35,5 +35,18 @@
     "label": "Chai, Cabo Delgado"
   },
   "region": null,
-  "actors": []
+  "actors": [
+    {
+      "actor": "frelimo",
+      "role": "belligerent"
+    },
+    {
+      "actor": "eduardo-mondlane",
+      "role": "leader"
+    },
+    {
+      "actor": "estado-novo",
+      "role": "belligerent"
+    }
+  ]
 }

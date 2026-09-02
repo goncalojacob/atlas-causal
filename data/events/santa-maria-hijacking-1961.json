@@ -39,5 +39,14 @@
     "label": "Recife, at the end of the voyage"
   },
   "region": "americas",
-  "actors": []
+  "actors": [
+    {
+      "actor": "henrique-galvao",
+      "role": "leader"
+    },
+    {
+      "actor": "estado-novo",
+      "role": "target"
+    }
+  ]
 }

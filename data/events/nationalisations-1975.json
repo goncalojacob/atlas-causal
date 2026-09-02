@@ -39,5 +39,14 @@
     "label": "Lisbon"
   },
   "region": null,
-  "actors": []
+  "actors": [
+    {
+      "actor": "vasco-goncalves",
+      "role": "leader"
+    },
+    {
+      "actor": "armed-forces-movement",
+      "role": "author"
+    }
+  ]
 }

@@ -39,5 +39,18 @@
     "label": "Washington"
   },
   "region": null,
-  "actors": []
+  "actors": [
+    {
+      "actor": "nato",
+      "role": "founded"
+    },
+    {
+      "actor": "estado-novo",
+      "role": "founding member"
+    },
+    {
+      "actor": "salazar",
+      "role": "leader"
+    }
+  ]
 }

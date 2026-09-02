@@ -35,5 +35,18 @@
     "label": "Flanders, near Laventie"
   },
   "region": null,
-  "actors": []
+  "actors": [
+    {
+      "actor": "portuguese-expeditionary-corps",
+      "role": "defeated"
+    },
+    {
+      "actor": "gomes-da-costa",
+      "role": "commander"
+    },
+    {
+      "actor": "first-portuguese-republic",
+      "role": "belligerent"
+    }
+  ]
 }

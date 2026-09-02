@@ -35,5 +35,18 @@
     "label": "Tite"
   },
   "region": null,
-  "actors": []
+  "actors": [
+    {
+      "actor": "paigc",
+      "role": "belligerent"
+    },
+    {
+      "actor": "amilcar-cabral",
+      "role": "leader"
+    },
+    {
+      "actor": "estado-novo",
+      "role": "belligerent"
+    }
+  ]
 }

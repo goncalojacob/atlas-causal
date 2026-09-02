@@ -35,5 +35,14 @@
     "label": "Tete district, Mozambique"
   },
   "region": null,
-  "actors": []
+  "actors": [
+    {
+      "actor": "estado-novo",
+      "role": "belligerent"
+    },
+    {
+      "actor": "frelimo",
+      "role": "belligerent"
+    }
+  ]
 }

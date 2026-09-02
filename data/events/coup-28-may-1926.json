@@ -39,5 +39,22 @@
     "label": "Braga"
   },
   "region": null,
-  "actors": []
+  "actors": [
+    {
+      "actor": "gomes-da-costa",
+      "role": "leader"
+    },
+    {
+      "actor": "first-portuguese-republic",
+      "role": "deposed"
+    },
+    {
+      "actor": "partido-democratico",
+      "role": "deposed"
+    },
+    {
+      "actor": "military-dictatorship",
+      "role": "founded"
+    }
+  ]
 }

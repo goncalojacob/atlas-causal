@@ -35,5 +35,14 @@
     "label": "Boé"
   },
   "region": null,
-  "actors": []
+  "actors": [
+    {
+      "actor": "paigc",
+      "role": "declared it"
+    },
+    {
+      "actor": "estado-novo",
+      "role": "target"
+    }
+  ]
 }

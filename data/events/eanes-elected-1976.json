@@ -39,5 +39,14 @@
     "label": "Lisbon"
   },
   "region": null,
-  "actors": []
+  "actors": [
+    {
+      "actor": "ramalho-eanes",
+      "role": "elected"
+    },
+    {
+      "actor": "mario-soares",
+      "role": "backer"
+    }
+  ]
 }

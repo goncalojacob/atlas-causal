@@ -39,5 +39,18 @@
     "label": "Panaji"
   },
   "region": null,
-  "actors": []
+  "actors": [
+    {
+      "actor": "republic-of-india",
+      "role": "annexed it"
+    },
+    {
+      "actor": "jawaharlal-nehru",
+      "role": "leader"
+    },
+    {
+      "actor": "estado-novo",
+      "role": "dispossessed"
+    }
+  ]
 }

@@ -35,5 +35,10 @@
     "label": "Parque das Nações, Lisbon"
   },
   "region": null,
-  "actors": []
+  "actors": [
+    {
+      "actor": "third-portuguese-republic",
+      "role": "host"
+    }
+  ]
 }

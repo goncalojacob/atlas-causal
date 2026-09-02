@@ -39,5 +39,18 @@
     "label": "Lisbon"
   },
   "region": null,
-  "actors": []
+  "actors": [
+    {
+      "actor": "council-of-the-revolution",
+      "role": "abolished"
+    },
+    {
+      "actor": "third-portuguese-republic",
+      "role": "legislator"
+    },
+    {
+      "actor": "ramalho-eanes",
+      "role": "president"
+    }
+  ]
 }

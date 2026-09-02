@@ -39,5 +39,18 @@
     "label": "Lisbon"
   },
   "region": null,
-  "actors": []
+  "actors": [
+    {
+      "actor": "marcelo-caetano",
+      "role": "successor"
+    },
+    {
+      "actor": "salazar",
+      "role": "replaced"
+    },
+    {
+      "actor": "estado-novo",
+      "role": "government"
+    }
+  ]
 }

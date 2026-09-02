@@ -39,5 +39,14 @@
     "label": "Belém, Lisbon"
   },
   "region": null,
-  "actors": []
+  "actors": [
+    {
+      "actor": "estado-novo",
+      "role": "host"
+    },
+    {
+      "actor": "salazar",
+      "role": "patron"
+    }
+  ]
 }

@@ -39,5 +39,18 @@
     "label": "Lisbon"
   },
   "region": null,
-  "actors": []
+  "actors": [
+    {
+      "actor": "antonio-de-spinola",
+      "role": "resigned"
+    },
+    {
+      "actor": "armed-forces-movement",
+      "role": "opponent"
+    },
+    {
+      "actor": "vasco-goncalves",
+      "role": "prime minister"
+    }
+  ]
 }

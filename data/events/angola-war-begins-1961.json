@@ -39,5 +39,18 @@
     "label": "Luanda"
   },
   "region": null,
-  "actors": []
+  "actors": [
+    {
+      "actor": "mpla",
+      "role": "claimed responsibility"
+    },
+    {
+      "actor": "estado-novo",
+      "role": "belligerent"
+    },
+    {
+      "actor": "salazar",
+      "role": "leader"
+    }
+  ]
 }

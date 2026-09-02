@@ -39,5 +39,18 @@
     "label": "Lisbon"
   },
   "region": null,
-  "actors": []
+  "actors": [
+    {
+      "actor": "mario-soares",
+      "role": "candidate"
+    },
+    {
+      "actor": "alvaro-cunhal",
+      "role": "candidate"
+    },
+    {
+      "actor": "armed-forces-movement",
+      "role": "organiser"
+    }
+  ]
 }

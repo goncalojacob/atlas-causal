@@ -39,5 +39,14 @@
     "label": "Lisbon"
   },
   "region": null,
-  "actors": []
+  "actors": [
+    {
+      "actor": "manuel-ii",
+      "role": "deposed"
+    },
+    {
+      "actor": "first-portuguese-republic",
+      "role": "founded"
+    }
+  ]
 }

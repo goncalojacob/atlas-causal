@@ -39,5 +39,18 @@
     "label": "Lisbon"
   },
   "region": null,
-  "actors": []
+  "actors": [
+    {
+      "actor": "imf",
+      "role": "lender"
+    },
+    {
+      "actor": "third-portuguese-republic",
+      "role": "borrower"
+    },
+    {
+      "actor": "cavaco-silva",
+      "role": "president"
+    }
+  ]
 }

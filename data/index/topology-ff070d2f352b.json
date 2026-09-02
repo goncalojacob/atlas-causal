@@ -1434,7 +1434,20 @@
   ],
   "events": [
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "ramalho-eanes",
+          "role": "commander"
+        },
+        {
+          "actor": "otelo-saraiva-de-carvalho",
+          "role": "removed"
+        },
+        {
+          "actor": "armed-forces-movement",
+          "role": "divided"
+        }
+      ],
       "aliases": [],
       "id": "25-november-1975",
       "region": "europe",
@@ -1456,7 +1469,28 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "mpla",
+          "role": "signatory"
+        },
+        {
+          "actor": "fnla",
+          "role": "signatory"
+        },
+        {
+          "actor": "unita",
+          "role": "signatory"
+        },
+        {
+          "actor": "third-portuguese-republic",
+          "role": "signatory"
+        },
+        {
+          "actor": "mario-soares",
+          "role": "negotiator"
+        }
+      ],
       "aliases": [],
       "id": "alvor-agreement-1975",
       "region": "europe",
@@ -1478,7 +1512,24 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "mpla",
+          "role": "government"
+        },
+        {
+          "actor": "fnla",
+          "role": "belligerent"
+        },
+        {
+          "actor": "unita",
+          "role": "belligerent"
+        },
+        {
+          "actor": "third-portuguese-republic",
+          "role": "withdrew"
+        }
+      ],
       "aliases": [],
       "id": "angola-independence-1975",
       "region": "africa",
@@ -1500,7 +1551,20 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "mpla",
+          "role": "claimed responsibility"
+        },
+        {
+          "actor": "estado-novo",
+          "role": "belligerent"
+        },
+        {
+          "actor": "salazar",
+          "role": "leader"
+        }
+      ],
       "aliases": [],
       "id": "angola-war-begins-1961",
       "region": "africa",
@@ -1522,7 +1586,16 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "salazar",
+          "role": "signatory"
+        },
+        {
+          "actor": "estado-novo",
+          "role": "signatory"
+        }
+      ],
       "aliases": [],
       "id": "azores-agreement-1943",
       "region": "europe",
@@ -1544,7 +1617,20 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "portuguese-expeditionary-corps",
+          "role": "defeated"
+        },
+        {
+          "actor": "gomes-da-costa",
+          "role": "commander"
+        },
+        {
+          "actor": "first-portuguese-republic",
+          "role": "belligerent"
+        }
+      ],
       "aliases": [],
       "id": "battle-of-the-lys-1918",
       "region": "europe",
@@ -1566,7 +1652,16 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "salazar",
+          "role": "target"
+        },
+        {
+          "actor": "estado-novo",
+          "role": "government"
+        }
+      ],
       "aliases": [],
       "id": "botelho-moniz-coup-attempt-1961",
       "region": "europe",
@@ -1588,7 +1683,12 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "third-portuguese-republic",
+          "role": "nationalised it"
+        }
+      ],
       "aliases": [],
       "id": "bpn-nationalisation-2008",
       "region": "europe",
@@ -1610,7 +1710,20 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "amilcar-cabral",
+          "role": "victim"
+        },
+        {
+          "actor": "paigc",
+          "role": "movement"
+        },
+        {
+          "actor": "pvde-pide-dgs",
+          "role": "alleged accomplice"
+        }
+      ],
       "aliases": [],
       "id": "cabral-assassinated-1973",
       "region": "africa",
@@ -1632,7 +1745,20 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "marcelo-caetano",
+          "role": "successor"
+        },
+        {
+          "actor": "salazar",
+          "role": "replaced"
+        },
+        {
+          "actor": "estado-novo",
+          "role": "government"
+        }
+      ],
       "aliases": [],
       "id": "caetano-succeeds-salazar-1968",
       "region": "europe",
@@ -1654,7 +1780,32 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "armed-forces-movement",
+          "role": "leader"
+        },
+        {
+          "actor": "otelo-saraiva-de-carvalho",
+          "role": "planner"
+        },
+        {
+          "actor": "marcelo-caetano",
+          "role": "deposed"
+        },
+        {
+          "actor": "estado-novo",
+          "role": "deposed"
+        },
+        {
+          "actor": "antonio-de-spinola",
+          "role": "figurehead"
+        },
+        {
+          "actor": "third-portuguese-republic",
+          "role": "founded"
+        }
+      ],
       "aliases": [],
       "id": "carnation-revolution-1974",
       "region": "europe",
@@ -1676,7 +1827,16 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "cavaco-silva",
+          "role": "winner"
+        },
+        {
+          "actor": "mario-soares",
+          "role": "president"
+        }
+      ],
       "aliases": [],
       "id": "cavaco-absolute-majority-1987",
       "region": "europe",
@@ -1698,7 +1858,20 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "mario-soares",
+          "role": "candidate"
+        },
+        {
+          "actor": "alvaro-cunhal",
+          "role": "candidate"
+        },
+        {
+          "actor": "armed-forces-movement",
+          "role": "organiser"
+        }
+      ],
       "aliases": [],
       "id": "constituent-assembly-election-1975",
       "region": "europe",
@@ -1720,7 +1893,16 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "first-portuguese-republic",
+          "role": "constituted"
+        },
+        {
+          "actor": "afonso-costa",
+          "role": "author"
+        }
+      ],
       "aliases": [],
       "id": "constitution-1911",
       "region": "europe",
@@ -1742,7 +1924,20 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "salazar",
+          "role": "author"
+        },
+        {
+          "actor": "estado-novo",
+          "role": "founded"
+        },
+        {
+          "actor": "military-dictatorship",
+          "role": "superseded"
+        }
+      ],
       "aliases": [],
       "id": "constitution-1933",
       "region": "europe",
@@ -1764,7 +1959,20 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "third-portuguese-republic",
+          "role": "constituted"
+        },
+        {
+          "actor": "council-of-the-revolution",
+          "role": "created"
+        },
+        {
+          "actor": "mario-soares",
+          "role": "legislator"
+        }
+      ],
       "aliases": [],
       "id": "constitution-1976",
       "region": "europe",
@@ -1786,7 +1994,20 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "salazar",
+          "role": "author"
+        },
+        {
+          "actor": "estado-novo",
+          "role": "legislator"
+        },
+        {
+          "actor": "humberto-delgado",
+          "role": "target"
+        }
+      ],
       "aliases": [],
       "id": "constitutional-revision-1959",
       "region": "europe",
@@ -1808,7 +2029,20 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "council-of-the-revolution",
+          "role": "abolished"
+        },
+        {
+          "actor": "third-portuguese-republic",
+          "role": "legislator"
+        },
+        {
+          "actor": "ramalho-eanes",
+          "role": "president"
+        }
+      ],
       "aliases": [],
       "id": "constitutional-revision-1982",
       "region": "europe",
@@ -1830,7 +2064,24 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "gomes-da-costa",
+          "role": "leader"
+        },
+        {
+          "actor": "first-portuguese-republic",
+          "role": "deposed"
+        },
+        {
+          "actor": "partido-democratico",
+          "role": "deposed"
+        },
+        {
+          "actor": "military-dictatorship",
+          "role": "founded"
+        }
+      ],
       "aliases": [],
       "id": "coup-28-may-1926",
       "region": "europe",
@@ -1852,7 +2103,20 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "antonio-de-spinola",
+          "role": "leader"
+        },
+        {
+          "actor": "armed-forces-movement",
+          "role": "target"
+        },
+        {
+          "actor": "otelo-saraiva-de-carvalho",
+          "role": "opponent"
+        }
+      ],
       "aliases": [],
       "id": "coup-attempt-11-march-1975",
       "region": "europe",
@@ -1874,7 +2138,20 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "humberto-delgado",
+          "role": "victim"
+        },
+        {
+          "actor": "pvde-pide-dgs",
+          "role": "perpetrator"
+        },
+        {
+          "actor": "estado-novo",
+          "role": "government"
+        }
+      ],
       "aliases": [],
       "id": "delgado-assassinated-1965",
       "region": "europe",
@@ -1896,7 +2173,20 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "humberto-delgado",
+          "role": "candidate"
+        },
+        {
+          "actor": "estado-novo",
+          "role": "target"
+        },
+        {
+          "actor": "salazar",
+          "role": "target"
+        }
+      ],
       "aliases": [],
       "id": "delgado-candidacy-1958",
       "region": "europe",
@@ -1918,7 +2208,16 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "ramalho-eanes",
+          "role": "elected"
+        },
+        {
+          "actor": "mario-soares",
+          "role": "backer"
+        }
+      ],
       "aliases": [],
       "id": "eanes-elected-1976",
       "region": "europe",
@@ -1940,7 +2239,20 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "fretilin",
+          "role": "government"
+        },
+        {
+          "actor": "indonesia",
+          "role": "withdrew"
+        },
+        {
+          "actor": "united-nations",
+          "role": "administered"
+        }
+      ],
       "aliases": [],
       "id": "east-timor-independence-2002",
       "region": "asia",
@@ -1962,7 +2274,20 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "indonesia",
+          "role": "invader"
+        },
+        {
+          "actor": "fretilin",
+          "role": "target"
+        },
+        {
+          "actor": "third-portuguese-republic",
+          "role": "withdrew"
+        }
+      ],
       "aliases": [],
       "id": "east-timor-invasion-1975",
       "region": "asia",
@@ -1984,7 +2309,24 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "european-economic-community",
+          "role": "admitting body"
+        },
+        {
+          "actor": "third-portuguese-republic",
+          "role": "acceded"
+        },
+        {
+          "actor": "mario-soares",
+          "role": "negotiator"
+        },
+        {
+          "actor": "cavaco-silva",
+          "role": "leader"
+        }
+      ],
       "aliases": [],
       "id": "eec-accession-1986",
       "region": "europe",
@@ -2006,7 +2348,20 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "third-portuguese-republic",
+          "role": "applicant"
+        },
+        {
+          "actor": "european-economic-community",
+          "role": "target"
+        },
+        {
+          "actor": "mario-soares",
+          "role": "leader"
+        }
+      ],
       "aliases": [],
       "id": "eec-application-1977",
       "region": "europe",
@@ -2028,7 +2383,12 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "third-portuguese-republic",
+          "role": "adopter"
+        }
+      ],
       "aliases": [],
       "id": "euro-adoption-1999",
       "region": "europe",
@@ -2050,7 +2410,12 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "third-portuguese-republic",
+          "role": "host"
+        }
+      ],
       "aliases": [],
       "id": "expo-98",
       "region": "europe",
@@ -2072,7 +2437,16 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "estado-novo",
+          "role": "host"
+        },
+        {
+          "actor": "salazar",
+          "role": "patron"
+        }
+      ],
       "aliases": [],
       "id": "exposicao-mundo-portugues-1940",
       "region": "europe",
@@ -2094,7 +2468,16 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "first-portuguese-republic",
+          "role": "target"
+        },
+        {
+          "actor": "afonso-costa",
+          "role": "leader"
+        }
+      ],
       "aliases": [],
       "id": "germany-declares-war-1916",
       "region": "europe",
@@ -2116,7 +2499,20 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "republic-of-india",
+          "role": "annexed it"
+        },
+        {
+          "actor": "jawaharlal-nehru",
+          "role": "leader"
+        },
+        {
+          "actor": "estado-novo",
+          "role": "dispossessed"
+        }
+      ],
       "aliases": [],
       "id": "goa-annexed-1961",
       "region": "asia",
@@ -2138,7 +2534,16 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "paigc",
+          "role": "declared it"
+        },
+        {
+          "actor": "estado-novo",
+          "role": "target"
+        }
+      ],
       "aliases": [],
       "id": "guinea-bissau-declares-independence-1973",
       "region": "africa",
@@ -2160,7 +2565,20 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "paigc",
+          "role": "belligerent"
+        },
+        {
+          "actor": "amilcar-cabral",
+          "role": "leader"
+        },
+        {
+          "actor": "estado-novo",
+          "role": "belligerent"
+        }
+      ],
       "aliases": [],
       "id": "guinea-war-begins-1963",
       "region": "africa",
@@ -2182,7 +2600,20 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "imf",
+          "role": "lender"
+        },
+        {
+          "actor": "third-portuguese-republic",
+          "role": "borrower"
+        },
+        {
+          "actor": "mario-soares",
+          "role": "leader"
+        }
+      ],
       "aliases": [],
       "id": "imf-agreement-1978",
       "region": "europe",
@@ -2204,7 +2635,20 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "imf",
+          "role": "lender"
+        },
+        {
+          "actor": "third-portuguese-republic",
+          "role": "borrower"
+        },
+        {
+          "actor": "mario-soares",
+          "role": "leader"
+        }
+      ],
       "aliases": [],
       "id": "imf-agreement-1983",
       "region": "europe",
@@ -2226,7 +2670,16 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "afonso-costa",
+          "role": "author"
+        },
+        {
+          "actor": "first-portuguese-republic",
+          "role": "legislator"
+        }
+      ],
       "aliases": [],
       "id": "law-of-separation-1911",
       "region": "europe",
@@ -2248,7 +2701,20 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "legiao-portuguesa",
+          "role": "founded"
+        },
+        {
+          "actor": "salazar",
+          "role": "founder"
+        },
+        {
+          "actor": "estado-novo",
+          "role": "government"
+        }
+      ],
       "aliases": [],
       "id": "legiao-portuguesa-founded-1936",
       "region": "europe",
@@ -2270,7 +2736,16 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "mario-soares",
+          "role": "winner"
+        },
+        {
+          "actor": "alvaro-cunhal",
+          "role": "candidate"
+        }
+      ],
       "aliases": [],
       "id": "legislative-election-1976",
       "region": "europe",
@@ -2292,7 +2767,12 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "third-portuguese-republic",
+          "role": "withdrew"
+        }
+      ],
       "aliases": [],
       "id": "macau-handover-1999",
       "region": "asia",
@@ -2314,7 +2794,20 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "paiva-couceiro",
+          "role": "leader"
+        },
+        {
+          "actor": "first-portuguese-republic",
+          "role": "target"
+        },
+        {
+          "actor": "manuel-ii",
+          "role": "invoked"
+        }
+      ],
       "aliases": [],
       "id": "monarchy-of-the-north-1919",
       "region": "europe",
@@ -2336,7 +2829,20 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "frelimo",
+          "role": "belligerent"
+        },
+        {
+          "actor": "eduardo-mondlane",
+          "role": "leader"
+        },
+        {
+          "actor": "estado-novo",
+          "role": "belligerent"
+        }
+      ],
       "aliases": [],
       "id": "mozambique-war-begins-1964",
       "region": "africa",
@@ -2358,7 +2864,16 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "vasco-goncalves",
+          "role": "leader"
+        },
+        {
+          "actor": "armed-forces-movement",
+          "role": "author"
+        }
+      ],
       "aliases": [],
       "id": "nationalisations-1975",
       "region": "europe",
@@ -2380,7 +2895,20 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "nato",
+          "role": "founded"
+        },
+        {
+          "actor": "estado-novo",
+          "role": "founding member"
+        },
+        {
+          "actor": "salazar",
+          "role": "leader"
+        }
+      ],
       "aliases": [],
       "id": "nato-founding-1949",
       "region": "americas",
@@ -2402,7 +2930,12 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "first-portuguese-republic",
+          "role": "discredited"
+        }
+      ],
       "aliases": [],
       "id": "noite-sangrenta-1921",
       "region": "europe",
@@ -2424,7 +2957,20 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "pimenta-de-castro",
+          "role": "leader"
+        },
+        {
+          "actor": "partido-democratico",
+          "role": "excluded"
+        },
+        {
+          "actor": "afonso-costa",
+          "role": "target"
+        }
+      ],
       "aliases": [],
       "id": "pimenta-de-castro-government-1915",
       "region": "europe",
@@ -2446,7 +2992,16 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "salazar",
+          "role": "leader"
+        },
+        {
+          "actor": "estado-novo",
+          "role": "supporter"
+        }
+      ],
       "aliases": [],
       "id": "portugal-backs-franco-1936",
       "region": "europe",
@@ -2468,7 +3023,20 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "antonio-de-spinola",
+          "role": "author"
+        },
+        {
+          "actor": "marcelo-caetano",
+          "role": "target"
+        },
+        {
+          "actor": "estado-novo",
+          "role": "target"
+        }
+      ],
       "aliases": [],
       "id": "portugal-e-o-futuro-1974",
       "region": "europe",
@@ -2490,7 +3058,16 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "manuel-ii",
+          "role": "deposed"
+        },
+        {
+          "actor": "first-portuguese-republic",
+          "role": "founded"
+        }
+      ],
       "aliases": [],
       "id": "republic-proclaimed-1910",
       "region": "europe",
@@ -2512,7 +3089,20 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "pimenta-de-castro",
+          "role": "deposed"
+        },
+        {
+          "actor": "partido-democratico",
+          "role": "restored"
+        },
+        {
+          "actor": "afonso-costa",
+          "role": "beneficiary"
+        }
+      ],
       "aliases": [],
       "id": "revolt-14-may-1915",
       "region": "europe",
@@ -2534,7 +3124,16 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "salazar",
+          "role": "appointed"
+        },
+        {
+          "actor": "military-dictatorship",
+          "role": "government"
+        }
+      ],
       "aliases": [],
       "id": "salazar-finance-minister-1928",
       "region": "europe",
@@ -2556,7 +3155,16 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "salazar",
+          "role": "appointed"
+        },
+        {
+          "actor": "military-dictatorship",
+          "role": "government"
+        }
+      ],
       "aliases": [],
       "id": "salazar-president-of-council-1932",
       "region": "europe",
@@ -2578,7 +3186,16 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "henrique-galvao",
+          "role": "leader"
+        },
+        {
+          "actor": "estado-novo",
+          "role": "target"
+        }
+      ],
       "aliases": [],
       "id": "santa-maria-hijacking-1961",
       "region": "americas",
@@ -2600,7 +3217,12 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "sidonio-pais",
+          "role": "victim"
+        }
+      ],
       "aliases": [],
       "id": "sidonio-pais-assassinated-1918",
       "region": "europe",
@@ -2622,7 +3244,20 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "sidonio-pais",
+          "role": "leader"
+        },
+        {
+          "actor": "partido-democratico",
+          "role": "deposed"
+        },
+        {
+          "actor": "afonso-costa",
+          "role": "deposed"
+        }
+      ],
       "aliases": [],
       "id": "sidonio-pais-coup-1917",
       "region": "europe",
@@ -2644,7 +3279,16 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "mario-soares",
+          "role": "elected"
+        },
+        {
+          "actor": "ramalho-eanes",
+          "role": "outgoing"
+        }
+      ],
       "aliases": [],
       "id": "soares-elected-president-1986",
       "region": "europe",
@@ -2666,7 +3310,20 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "antonio-de-spinola",
+          "role": "resigned"
+        },
+        {
+          "actor": "armed-forces-movement",
+          "role": "opponent"
+        },
+        {
+          "actor": "vasco-goncalves",
+          "role": "prime minister"
+        }
+      ],
       "aliases": [],
       "id": "spinola-resigns-1974",
       "region": "europe",
@@ -2688,7 +3345,20 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "imf",
+          "role": "lender"
+        },
+        {
+          "actor": "third-portuguese-republic",
+          "role": "borrower"
+        },
+        {
+          "actor": "cavaco-silva",
+          "role": "president"
+        }
+      ],
       "aliases": [],
       "id": "troika-bailout-2011",
       "region": "europe",
@@ -2710,7 +3380,20 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "united-nations",
+          "role": "admitting body"
+        },
+        {
+          "actor": "estado-novo",
+          "role": "admitted"
+        },
+        {
+          "actor": "salazar",
+          "role": "leader"
+        }
+      ],
       "aliases": [],
       "id": "un-admission-1955",
       "region": "americas",
@@ -2732,7 +3415,16 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "estado-novo",
+          "role": "belligerent"
+        },
+        {
+          "actor": "frelimo",
+          "role": "belligerent"
+        }
+      ],
       "aliases": [],
       "id": "wiriyamu-massacre-1972",
       "region": "africa",

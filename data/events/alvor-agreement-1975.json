@@ -39,5 +39,26 @@
     "label": "Alvor, Algarve"
   },
   "region": null,
-  "actors": []
+  "actors": [
+    {
+      "actor": "mpla",
+      "role": "signatory"
+    },
+    {
+      "actor": "fnla",
+      "role": "signatory"
+    },
+    {
+      "actor": "unita",
+      "role": "signatory"
+    },
+    {
+      "actor": "third-portuguese-republic",
+      "role": "signatory"
+    },
+    {
+      "actor": "mario-soares",
+      "role": "negotiator"
+    }
+  ]
 }

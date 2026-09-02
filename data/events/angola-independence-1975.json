@@ -39,5 +39,22 @@
     "label": "Luanda"
   },
   "region": null,
-  "actors": []
+  "actors": [
+    {
+      "actor": "mpla",
+      "role": "government"
+    },
+    {
+      "actor": "fnla",
+      "role": "belligerent"
+    },
+    {
+      "actor": "unita",
+      "role": "belligerent"
+    },
+    {
+      "actor": "third-portuguese-republic",
+      "role": "withdrew"
+    }
+  ]
 }

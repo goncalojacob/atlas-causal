@@ -35,5 +35,14 @@
     "label": "Berlin"
   },
   "region": null,
-  "actors": []
+  "actors": [
+    {
+      "actor": "first-portuguese-republic",
+      "role": "target"
+    },
+    {
+      "actor": "afonso-costa",
+      "role": "leader"
+    }
+  ]
 }

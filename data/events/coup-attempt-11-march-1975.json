@@ -39,5 +39,18 @@
     "label": "Lisbon"
   },
   "region": null,
-  "actors": []
+  "actors": [
+    {
+      "actor": "antonio-de-spinola",
+      "role": "leader"
+    },
+    {
+      "actor": "armed-forces-movement",
+      "role": "target"
+    },
+    {
+      "actor": "otelo-saraiva-de-carvalho",
+      "role": "opponent"
+    }
+  ]
 }

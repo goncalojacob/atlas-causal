@@ -35,5 +35,14 @@
     "label": "Lisbon"
   },
   "region": null,
-  "actors": []
+  "actors": [
+    {
+      "actor": "salazar",
+      "role": "appointed"
+    },
+    {
+      "actor": "military-dictatorship",
+      "role": "government"
+    }
+  ]
 }

@@ -39,5 +39,22 @@
     "label": "Lisbon"
   },
   "region": null,
-  "actors": []
+  "actors": [
+    {
+      "actor": "european-economic-community",
+      "role": "admitting body"
+    },
+    {
+      "actor": "third-portuguese-republic",
+      "role": "acceded"
+    },
+    {
+      "actor": "mario-soares",
+      "role": "negotiator"
+    },
+    {
+      "actor": "cavaco-silva",
+      "role": "leader"
+    }
+  ]
 }

@@ -35,5 +35,18 @@
     "label": "Dili"
   },
   "region": null,
-  "actors": []
+  "actors": [
+    {
+      "actor": "fretilin",
+      "role": "government"
+    },
+    {
+      "actor": "indonesia",
+      "role": "withdrew"
+    },
+    {
+      "actor": "united-nations",
+      "role": "administered"
+    }
+  ]
 }
