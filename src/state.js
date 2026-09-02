@@ -1,7 +1,12 @@
-// One state object, { year, selected, chain, layers }, mirrored to the URL
-// query string so every view is a shareable link. Knows nothing about SVG
-// or data files. The pure parse/format pair is separate from the binding
-// to window so it can be tested in Node.
+// One state object, { year, selected, actor, chain, layers }, mirrored to
+// the URL query string so every view is a shareable link. Knows nothing
+// about SVG or data files. The pure parse/format pair is separate from the
+// binding to window so it can be tested in Node.
+//
+// `selected` and `actor` are two dimensions of the same view, not
+// alternatives: an actor stays highlighted on the map and the timeline
+// while its events are read one after another, and `?actor=salazar` alone
+// opens the actor's card.
 
 import { isValidYear } from './util/dates.js';
 
@@ -12,7 +17,7 @@ export const LAYERS = Object.freeze(['land', 'events']);
 const PASSTHROUGH = Object.freeze(['fixtures']);
 
 export function defaultState() {
-  return { year: null, selected: null, chain: [], layers: [...LAYERS] };
+  return { year: null, selected: null, actor: null, chain: [], layers: [...LAYERS] };
 }
 
 // Garbage in the URL falls back to defaults field by field; a bad chain
@@ -27,6 +32,10 @@ export function parseState(search, defaults = defaultState()) {
   if (params.has('selected')) {
     const id = params.get('selected');
     if (SLUG.test(id)) state.selected = id;
+  }
+  if (params.has('actor')) {
+    const id = params.get('actor');
+    if (SLUG.test(id)) state.actor = id;
   }
   if (params.has('chain')) {
     const chain = [];
@@ -48,6 +57,7 @@ export function formatState(state, search = '') {
   for (const key of PASSTHROUGH) if (previous.has(key)) params.set(key, previous.get(key));
   if (state.year !== null) params.set('year', String(state.year));
   if (state.selected) params.set('selected', state.selected);
+  if (state.actor) params.set('actor', state.actor);
   if (state.chain.length) params.set('chain', state.chain.join(','));
   if (state.layers.length !== LAYERS.length || state.layers.some((l, i) => l !== LAYERS[i])) {
     params.set('layers', state.layers.join(','));

@@ -43,7 +43,23 @@ test('resolve follows aliases and merged tombstones', async () => {
   assert.equal(merged.record.id, 'fixture-event-b');
   assert.deepEqual(merged.via, [{ id: 'fixture-event-m', reason: 'merged' }]);
   assert.equal(atlas.resolve('fixture-source-1').kind, 'source');
+  assert.equal(atlas.resolve('fixture-actor-one').kind, 'actor');
   assert.equal(atlas.resolve('nothing-here'), null);
+});
+
+test('actors resolve and carry the events they appear in, chronologically', async () => {
+  const atlas = await loadAtlas({ dataRoot: 'tests/fixtures/data/', fetchJson });
+  assert.equal(atlas.actors.size, 2);
+  assert.equal(atlas.actors.get('fixture-actor-one').name, 'Fixture Actor One');
+  assert.deepEqual(
+    atlas.eventsByActor.get('fixture-actor-one').map((a) => [a.event.id, a.role]),
+    [['fixture-event-a', 'leader'], ['fixture-event-b', 'signatory']],
+  );
+  assert.deepEqual(
+    atlas.eventsByActor.get('fixture-actor-two').map((a) => a.event.id),
+    ['fixture-event-b', 'fixture-event-t'],
+  );
+  assert.equal(atlas.events.get('fixture-event-a').actors[0].actor, 'fixture-actor-one');
 });
 
 test('createAtlas copes with an empty dataset', () => {

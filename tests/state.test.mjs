@@ -6,11 +6,12 @@ test('parse and format round trip', () => {
   const state = {
     year: 1250,
     selected: 'fixture-event-t',
+    actor: 'fixture-actor-one',
     chain: ['fixture-event-a--fixture-event-b--caused', 'fixture-event-b--fixture-event-d--enabled'],
     layers: ['events'],
   };
   const search = formatState(state);
-  assert.equal(search, '?year=1250&selected=fixture-event-t&chain=fixture-event-a--fixture-event-b--caused,fixture-event-b--fixture-event-d--enabled&layers=events');
+  assert.equal(search, '?year=1250&selected=fixture-event-t&actor=fixture-actor-one&chain=fixture-event-a--fixture-event-b--caused,fixture-event-b--fixture-event-d--enabled&layers=events');
   assert.deepEqual(parseState(search), state);
 });
 
@@ -24,6 +25,8 @@ test('garbage falls back field by field; a bad chain step cuts the chain there',
   const s = parseState('?year=soon&selected=<script>&chain=fixture-event-a--fixture-event-b--caused,nope,fixture-event-b--fixture-event-d--enabled&layers=events,lasers');
   assert.equal(s.year, null);
   assert.equal(s.selected, null);
+  assert.equal(parseState('?actor=<script>').actor, null);
+  assert.equal(parseState('?actor=fixture-actor-one').actor, 'fixture-actor-one');
   assert.deepEqual(s.chain, ['fixture-event-a--fixture-event-b--caused']);
   assert.deepEqual(s.layers, ['events']);
   assert.equal(parseState('?year=0').year, null);
@@ -43,5 +46,5 @@ test('the store merges patches and notifies', () => {
   off();
   store.set({ year: 1220 });
   assert.deepEqual(seen, [1210, 1210]);
-  assert.deepEqual(store.get(), { year: 1220, selected: 'fixture-event-a', chain: [], layers: ['land', 'events'] });
+  assert.deepEqual(store.get(), { year: 1220, selected: 'fixture-event-a', actor: null, chain: [], layers: ['land', 'events'] });
 });

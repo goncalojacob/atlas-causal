@@ -1,6 +1,7 @@
 // Reads the manifest, loads the topology whole, fetches record text on
-// demand, resolves aliases and supersededBy, builds adjacency. Knows
-// nothing about how things are drawn.
+// demand, resolves aliases and supersededBy, builds adjacency — of events
+// to events through edges, and of actors to the events they appear in.
+// Knows nothing about how things are drawn.
 //
 // The topology is always loaded whole because consequences, ancestors and
 // convergence need the whole graph; a window would make convergence return
@@ -20,7 +21,8 @@ export function createAtlas({ manifest, topology, sources, land = null, dataRoot
   const events = new Map(topology.events.map((e) => [e.id, e]));
   const edges = new Map(topology.edges.map((e) => [e.id, e]));
   const sourceMap = new Map(sources.map((s) => [s.id, s]));
-  const kinds = [['event', events], ['edge', edges], ['source', sourceMap]];
+  const actors = new Map((topology.actors ?? []).map((a) => [a.id, a]));
+  const kinds = [['event', events], ['edge', edges], ['source', sourceMap], ['actor', actors]];
 
   const aliases = new Map();
   for (const [kind, map] of kinds) {
@@ -73,12 +75,31 @@ export function createAtlas({ manifest, topology, sources, land = null, dataRoot
     return cache.get(key);
   }
 
+  // The other direction of an event's `actors`: which events an actor
+  // appears in, chronologically, with the role each time. Only active
+  // events, and only actors that resolve — a dangling reference is the
+  // validator's business, not the panel's.
+  const eventsByActor = new Map();
+  for (const event of activeEvents) {
+    for (const { actor, role } of event.actors ?? []) {
+      if (!actors.has(actor)) continue;
+      if (!eventsByActor.has(actor)) eventsByActor.set(actor, []);
+      eventsByActor.get(actor).push({ event, role });
+    }
+  }
+  for (const list of eventsByActor.values()) {
+    list.sort((a, b) => intervalExtent(a.event.when).min - intervalExtent(b.event.when).min
+      || (a.event.id < b.event.id ? -1 : a.event.id > b.event.id ? 1 : 0));
+  }
+
   return {
     manifest,
     regions: [...manifest.regions].sort((a, b) => a.order - b.order),
     events,
     edges,
     sources: sourceMap,
+    actors,
+    eventsByActor,
     aliases,
     adjacency: buildAdjacency(topology.events, topology.edges),
     activeEvents,
