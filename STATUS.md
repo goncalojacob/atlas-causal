@@ -6,13 +6,17 @@ session ends. `ARCHITECTURE.md` is the target; this file is the position.
 
 ## Last updated
 
-2026-09-02, at the end of M4 (the `actor` kind, and a denser test set).
+2026-09-02, after the map usability work (`docs/map-brief.md`): clusters,
+level of detail, and two bugs that made the map unclickable.
 
 ## Phase
 
-**M0, M1, M2, M3 and M4 built, on branch `m0`, pull request #1 open
-against `main`.** `ARCHITECTURE.md` **revision 4** is the specification;
-its opening note says what M4 changed and why.
+**M0, M1, M2, M3 and M4 built, plus the map usability work, on branch
+`m0`, pull request #1 open against `main`.** `ARCHITECTURE.md`
+**revision 5** is the specification; its opening note says what changed
+and why (revision 4 added the `actor` kind; revision 5 added
+`map/cluster.js`, `weight` in the index and `prominence` as a reserved
+override).
 
 `data/` holds a **test dataset, 20th–21st century Portugal** — **60
 events, 73 edges, 42 actors, 11 sources**, 1910 → 2011 — drafted by the
@@ -29,7 +33,7 @@ Spanish war). Every page still serves from `python3 -m http.server 8000`.
 "Dates to verify" below.
 
 What exists and passes (`node tools/validate.mjs --index`, `node --test`:
-127 tests):
+140 tests):
 
 - **M0.** Licences (`LICENSE` MIT, `data/LICENSE` CC BY-SA 4.0,
   `data/geo/LICENSE` Natural Earth); `.nvmrc` = 22; `schema/common/` and
@@ -73,6 +77,24 @@ What exists and passes (`node tools/validate.mjs --index`, `node --test`:
   actor-and-role row on events; `new-record.mjs actor …`; two synthetic
   actors in `tests/fixtures/`. `ARCHITECTURE.md` revision 4, and
   `CLAUDE.md`, `CONTRIBUTING.md`, `README.md` updated.
+- **Map usability** (`docs/map-brief.md`). `weight` on every topology
+  event, derived at index time: active edges in and out plus the actors
+  named — mechanical, not editorial, with `prominence` reserved as the
+  override. `src/map/cluster.js`, pure and tested: which marks overlap at
+  the current zoom, which of them no zoom the map allows could ever part,
+  where a cluster comes apart. `layers/events.js` renders clusters — one
+  mark for the heaviest member, a `+n` badge for what is under it, an
+  invisible larger hit circle behind every mark, and a label on the
+  heaviest clusters on screen past `k = 4`; the selected event, the walked
+  path, the endpoints of a drawn edge and the events of the selected actor
+  are never put in a cluster. Clicking a cluster zooming can separate goes
+  to the zoom where everything separable has separated; clicking a
+  coincident one spreads its members on rings with a leg each. Either
+  click lists the members in the panel, chronologically, which is the
+  keyboard path in. **Two bugs fixed**: the drag guard never fired
+  (`pointerup` cleared `drag` before the click arrived), and — worse —
+  `setPointerCapture` on `pointerdown` retargeted every click to the SVG
+  root, so **no mark on the map had ever been clickable**.
 
 Verified in headless Chromium, against `?fixtures=1`: the atlas renders
 (marks, lanes, bars, panel); the form derives an id from a title, lists the
@@ -81,6 +103,22 @@ is acknowledged, fires the arrow of time and the consensus rule in the
 browser, shows the dispute fields only for a disputed edge, and produces the
 bundle JSON; the actor entry renders its fields and the event's actor row
 lists the actors of the atlas and of the bundle by name.
+
+Verified in headless Chromium against the **real** dataset, for the map
+work, driving a real pointer through the DevTools protocol so the guards
+are exercised rather than bypassed: at `k = 1` the map draws 13 marks, and
+the Lisbon mark carries `+42` (43 events under it); one click zooms to
+`k = 2.74` and the mark becomes the 39 records that really share the
+point; a second click spreads those 39, each with its own mark, title and
+leg; clicking a spread member selects it and the URL carries it
+(`?year=2011&selected=sidonio-pais-coup-1917`); a drag that ends on a mark
+leaves the URL empty and the panel on the intro, while a clean click on
+the same mark opens it; zooming out of Lisbon separates Alvor, Porto,
+Braga and the point on the Spanish border (13 marks become 19) and labels
+appear; an event selected from the timeline is drawn as its own mark and
+not swallowed by the stack; the panel's list of a stack is 43 focusable
+buttons; `?fixtures=1`, `about.html` and `contribute.html` still render
+with a clean console.
 
 Verified in headless Chromium against the **real** dataset: the card for a
 person (`?actor=salazar` — 14 events) and for an institution
@@ -142,7 +180,13 @@ Taken by the building agents, all reversible, all listed under Deviations.
    `contribute.html`, build a bundle, file the issue, apply `accepted`, and
    check that the pull request arrives with green CI. That is the M2
    acceptance criterion and the one thing the agent cannot do for you.
-7. **Not yet: publishing the templates.** `contribute.html` is deliberately
+7. **Owner: look at the map and say whether the numbers are right.** Open
+   `http://localhost:8000/`, click the mark on Lisbon twice — the first
+   click zooms it down to the records that share the point, the second
+   spreads them in rings — and say whether the merge distance, the ring
+   and the labels are where you want them (see the fourth open question,
+   and deviations 29–33 for why each is what it is).
+8. **Not yet: publishing the templates.** `contribute.html` is deliberately
    not linked from the atlas or from `about.html`; both pages say
    contributions are not open. Opening them is the owner's call (see the
    first open question).
@@ -170,6 +214,13 @@ Taken by the building agents, all reversible, all listed under Deviations.
 - Map semantics: the map shows events whose start is at or before the
   slider year; the timeline always shows everything. Is that the intended
   reading of "look at a map at a given moment"?
+- **The map's four numbers are tuned to this dataset and are the owner's
+  to judge by eye**, all at the top of their file: `MERGE_DISTANCE` (16)
+  and `SPREAD_RADIUS`/`SPREAD_GAP` (46/24) in `src/map/cluster.js`,
+  `LABEL_ZOOM` (4) and `LABEL_LIMIT` (12) in `layers/events.js`. Lowering
+  the merge distance makes the badges smaller and the map busier; raising
+  it makes one click cover more ground. Nothing else depends on them.
+  See deviation 29 for why 16.
 - Nearest-lane tolerance is 3° (`NEAREST_TOLERANCE` in `src/util/geo.js`).
   A point in the Strait of Gibraltar (Ceuta) derives by nearest and may land
   on `europe`; Azores and Madeira are absent from 110m Natural Earth. Such
@@ -320,6 +371,57 @@ reverse. 1–12 are from M0/M1, 13–21 from M2/M3.
     compares duplicates on and what `build-index.mjs` collects for the
     manifest's `roles`, while the record keeps the text as filed.
 
+29–34 are from the map usability work (`docs/map-brief.md`).
+
+29. **The badge counts what is under the mark, not what shares its
+    coordinates.** The brief expects "at k = 1 Lisbon shows one badge with
+    37". It shows **+42** — 43 events — because at k = 1 the merge
+    threshold also catches Belém and Parque das Nações (0.23 and 0.26 SVG
+    units away), Alvor (6.1), the point on the Spanish border (7.3), Porto
+    (9.1) and Braga (10.6). Making the badge say 37 would mean a merge
+    distance under 0.23, which would leave every one of those drawn on top
+    of the Lisbon stack with nothing to say so — the bug the brief exists
+    to fix. So the badge answers "how many events are under this mark",
+    which is the question the reader is asking, and the panel lists all 43
+    on the first click. Reverse by lowering `MERGE_DISTANCE` in
+    `cluster.js`.
+30. **A click on the Lisbon mark at k = 1 zooms; the spread is the second
+    click.** Follows from 29 and from the brief's own rule 4: that cluster
+    *can* be split, so it is zoomed, and rule 4 says a splittable cluster
+    zooms. One click takes it from 43 to the 39 that share the point, the
+    second spreads those. Every one of the 43 is already reachable from
+    the panel on the first click.
+31. **`COINCIDENT_EPSILON` is derived, `MERGE_DISTANCE / DEEPEST_ZOOM`,
+    and `MAX_ZOOM` now comes from `cluster.js`.** The brief says
+    coincident means "within an epsilon that no zoom can separate", and
+    that is only definable against the deepest zoom the map allows. A
+    fixed small epsilon was tried first and was wrong on the real data:
+    Belém and Parque das Nações are a fraction of a unit from the Lisbon
+    stack, so they merged with it at every zoom while counting as
+    separable, and the cluster could therefore never be spread — 39
+    records permanently unreachable. `map.js` takes its `MAX_ZOOM` from
+    `cluster.js` so the two cannot drift.
+32. **A splittable cluster zooms to `coreZoom`, not by a fixed factor.**
+    The brief says "multiply `k`". Multiplying peels off one neighbour per
+    click — five clicks from the Lisbon blob to the stack. `coreZoom` is
+    the zoom at which every member that *can* leave has left, so one click
+    does it. The fixed multiplier survives as the fallback for a cluster
+    that has nothing separable to shed.
+33. **The cluster's mark sits on its representative's point, not on its
+    centre.** The cluster reports `centre` (the mean of its members) and
+    that is what the zoom aims at, but the mark is drawn on a real event's
+    coordinates, so a cluster of two coastal cities is not a dot in the
+    sea. Marks also went from `r = 4` to `r = 5`; the hit target is 10, as
+    the brief asks.
+34. **The brief's item 6 was two bugs, not one.** The `moved` flag dying
+    before the click was real and is fixed as described. Underneath it,
+    `setPointerCapture` on `pointerdown` retargeted `pointerup` — and with
+    it the `click` — to the SVG root, so a click on a mark arrived with
+    the mark nowhere in its event path and **nothing on the map had ever
+    been selectable by clicking**. The capture is now taken on the first
+    `pointermove` past the drag threshold: a click never captures, a pan
+    still does.
+
 ## Dates to verify
 
 Everything below was written from memory and is where the owner's review
@@ -378,8 +480,9 @@ should look first. The record's own summary says so in the worst cases.
   https://claude.ai/code/artifact/b3940d66-ad98-4de9-9bfd-aff8c77e6f36
 - Assistant memory: `~/.claude/projects/-home-gjacob-atlas-causal/memory/`
   (and a copy under `-mnt-c-Users-gonca` pointing here).
-- Build briefs: `docs/m0-brief.md`, `docs/m2-brief.md`, `docs/m4-brief.md`;
-  the adversarial review is `docs/review-2026-09-01.md`.
+- Build briefs: `docs/m0-brief.md`, `docs/m2-brief.md`, `docs/m4-brief.md`,
+  `docs/map-brief.md`; the adversarial review is
+  `docs/review-2026-09-01.md`.
 
 ## Uncommitted
 
