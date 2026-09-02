@@ -16,7 +16,7 @@
     },
     "kind": {
       "type": "string",
-      "enum": ["event", "edge", "source", "actor"]
+      "enum": ["event", "edge", "source", "actor", "presence"]
     },
     "status": {
       "type": "string",
@@ -52,8 +52,9 @@
       }
     },
     "license": {
+      "description": "Validated per directory (rule 12). CC-BY-NC-SA-4.0 exists for imported geometry, which data/LICENSE does not cover; it is allowed under data/presences/ and, for the actors an import creates, under data/actors/.",
       "type": "string",
-      "enum": ["CC-BY-SA-4.0", "PD", "CC0-1.0", "ODbL-1.0"]
+      "enum": ["CC-BY-SA-4.0", "CC-BY-NC-SA-4.0", "PD", "CC0-1.0", "ODbL-1.0"]
     },
     "created": {
       "type": "string",
