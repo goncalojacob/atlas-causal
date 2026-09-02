@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "sudan-2011",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 472"
+    }
+  ],
+  "actor": "sudan",
+  "presenceType": "state",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 2011,
+    "end": null,
+    "date": "2011-07-09"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1975-2019.json"
+    ],
+    "key": "472"
+  },
+  "capital": {
+    "lon": 32.534168,
+    "lat": 15.58806,
+    "precision": "city",
+    "label": "Khartoum"
+  },
+  "confidence": "consensus"
+}

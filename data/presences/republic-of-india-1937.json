@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "republic-of-india-1937",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 570"
+    }
+  ],
+  "actor": "republic-of-india",
+  "presenceType": "state",
+  "dependencyOf": "united-kingdom",
+  "dependencyKind": "colony",
+  "when": {
+    "start": 1937,
+    "end": 1947,
+    "date": "1937-04-01",
+    "endDate": "1947-08-14"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1933-1945.json",
+      "geo/presences/1946-1974.json"
+    ],
+    "key": "570"
+  },
+  "capital": {
+    "lon": 77.199997,
+    "lat": 28.6,
+    "precision": "city",
+    "label": "New Delhi (Delhi)"
+  },
+  "confidence": "consensus"
+}

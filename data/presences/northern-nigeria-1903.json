@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "northern-nigeria-1903",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 684"
+    }
+  ],
+  "actor": "northern-nigeria",
+  "presenceType": "state",
+  "dependencyOf": "united-kingdom",
+  "dependencyKind": "protectorate",
+  "when": {
+    "start": 1903,
+    "end": 1904,
+    "date": "1903-01-01",
+    "endDate": "1904-04-07"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1886-1913.json"
+    ],
+    "key": "684"
+  },
+  "capital": {
+    "lon": 6.15,
+    "lat": 9.8,
+    "precision": "city",
+    "label": "Zungeru"
+  },
+  "confidence": "consensus"
+}

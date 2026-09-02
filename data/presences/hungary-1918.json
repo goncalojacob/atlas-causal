@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "hungary-1918",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 104"
+    }
+  ],
+  "actor": "hungary",
+  "presenceType": "state",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1918,
+    "end": 1918,
+    "date": "1918-11-03",
+    "endDate": "1918-11-30"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1914-1932.json"
+    ],
+    "key": "104"
+  },
+  "capital": {
+    "lon": 19.08333,
+    "lat": 47.5,
+    "precision": "city",
+    "label": "Budapest"
+  },
+  "confidence": "consensus"
+}

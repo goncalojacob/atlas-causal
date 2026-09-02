@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "jordan-1925",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 507"
+    }
+  ],
+  "actor": "jordan",
+  "presenceType": "state",
+  "dependencyOf": "united-kingdom",
+  "dependencyKind": "mandate",
+  "when": {
+    "start": 1925,
+    "end": 1946,
+    "date": "1925-11-02",
+    "endDate": "1946-05-24"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1914-1932.json",
+      "geo/presences/1933-1945.json",
+      "geo/presences/1946-1974.json"
+    ],
+    "key": "507"
+  },
+  "capital": {
+    "lon": 35.933331,
+    "lat": 31.95,
+    "precision": "city",
+    "label": "Amman"
+  },
+  "confidence": "consensus"
+}

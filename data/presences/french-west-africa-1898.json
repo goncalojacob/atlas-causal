@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "french-west-africa-1898",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 227"
+    }
+  ],
+  "actor": "french-west-africa",
+  "presenceType": "state",
+  "dependencyOf": "france",
+  "dependencyKind": "colony",
+  "when": {
+    "start": 1898,
+    "end": 1902,
+    "date": "1898-06-14",
+    "endDate": "1902-12-24"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1886-1913.json"
+    ],
+    "key": "227"
+  },
+  "capital": {
+    "lon": -16.510011,
+    "lat": 16.01999,
+    "precision": "city",
+    "label": "Saint-Louis"
+  },
+  "confidence": "consensus"
+}

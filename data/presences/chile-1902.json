@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "chile-1902",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 68"
+    }
+  ],
+  "actor": "chile",
+  "presenceType": "state",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1902,
+    "end": null,
+    "date": "1902-11-20"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1886-1913.json",
+      "geo/presences/1914-1932.json",
+      "geo/presences/1933-1945.json",
+      "geo/presences/1946-1974.json",
+      "geo/presences/1975-2019.json"
+    ],
+    "key": "68"
+  },
+  "capital": {
+    "lon": -70.666656,
+    "lat": -33.45,
+    "precision": "city",
+    "label": "Santiago"
+  },
+  "confidence": "consensus"
+}

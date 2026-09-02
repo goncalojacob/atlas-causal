@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "new-guinea-german-new-guinea-kaiser-wilhelmsland-1891",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 661"
+    }
+  ],
+  "actor": "new-guinea-german-new-guinea-kaiser-wilhelmsland",
+  "presenceType": "state",
+  "dependencyOf": "germany-prussia",
+  "dependencyKind": "colony",
+  "when": {
+    "start": 1891,
+    "end": 1899,
+    "date": "1891-01-01",
+    "endDate": "1899-12-31"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1886-1913.json"
+    ],
+    "key": "661"
+  },
+  "capital": {
+    "lon": 145.785251,
+    "lat": -5.22481,
+    "precision": "city",
+    "label": "Friedrich-Wilhelmshafen"
+  },
+  "confidence": "consensus"
+}

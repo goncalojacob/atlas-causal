@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "straits-settlements",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "gwcode 827"
+    }
+  ],
+  "actorType": "polity",
+  "names": [
+    "Straits Settlements"
+  ],
+  "summary": "Entity 827 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1886 to 1946. Its last capital in the dataset is Singapore City. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "when": {
+    "start": 1886,
+    "end": 1946
+  },
+  "where": {
+    "lon": 103.851959,
+    "lat": 1.29027,
+    "precision": "city",
+    "label": "Singapore City"
+  }
+}

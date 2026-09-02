@@ -93,8 +93,10 @@ test('rule 12: only an import may put the NC-SA licence on an actor', async () =
 });
 
 test('rule 17: dependencyOf and dependencyKind stand or fall together', async () => {
-  let r = await run((fx) => { fx.byId[P3].dependencyKind = 'colony'; });
-  assert.match(hit(r, 17)[0].message, /depends on nobody/);
+  // A kind without a sovereign is allowed and means what it says: Danzig
+  // was a mandate held by the League of Nations, which is not a state here.
+  let r = await run((fx) => { fx.byId[P3].dependencyKind = 'mandate'; });
+  assert.equal(hit(r, 17).length, 0, messages(r));
   r = await run((fx) => { fx.byId[P4].dependencyKind = null; });
   assert.match(hit(r, 17)[0].message, /how it was held/);
   r = await run((fx) => { fx.byId[P4].dependencyOf = 'fixture-polity-four'; });

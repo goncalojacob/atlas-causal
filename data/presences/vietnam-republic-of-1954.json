@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "vietnam-republic-of-1954",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 609"
+    }
+  ],
+  "actor": "vietnam-republic-of",
+  "presenceType": "state",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1954,
+    "end": 1975,
+    "date": "1954-05-01",
+    "endDate": "1975-04-30"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1946-1974.json",
+      "geo/presences/1975-2019.json"
+    ],
+    "key": "609"
+  },
+  "capital": {
+    "lon": 106.666702,
+    "lat": 10.75,
+    "precision": "city",
+    "label": "Saigon"
+  },
+  "confidence": "consensus"
+}

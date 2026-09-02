@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "costa-rica-1886",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 36"
+    }
+  ],
+  "actor": "costa-rica",
+  "presenceType": "state",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1886,
+    "end": null,
+    "date": "1886-01-01"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1886-1913.json",
+      "geo/presences/1914-1932.json",
+      "geo/presences/1933-1945.json",
+      "geo/presences/1946-1974.json",
+      "geo/presences/1975-2019.json"
+    ],
+    "key": "36"
+  },
+  "capital": {
+    "lon": -84.083344,
+    "lat": 9.93333,
+    "precision": "city",
+    "label": "San Jose"
+  },
+  "confidence": "consensus"
+}

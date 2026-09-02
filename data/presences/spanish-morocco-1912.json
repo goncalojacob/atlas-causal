@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "spanish-morocco-1912",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 447"
+    }
+  ],
+  "actor": "spanish-morocco",
+  "presenceType": "state",
+  "dependencyOf": "spain",
+  "dependencyKind": "protectorate",
+  "when": {
+    "start": 1912,
+    "end": 1956,
+    "date": "1912-11-27",
+    "endDate": "1956-04-06"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1886-1913.json",
+      "geo/presences/1914-1932.json",
+      "geo/presences/1933-1945.json",
+      "geo/presences/1946-1974.json"
+    ],
+    "key": "447"
+  },
+  "capital": {
+    "lon": -5.366667,
+    "lat": 35.56667,
+    "precision": "city",
+    "label": "Tetuan"
+  },
+  "confidence": "consensus"
+}

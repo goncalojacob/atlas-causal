@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "botswana-1886",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 421"
+    }
+  ],
+  "actor": "botswana",
+  "presenceType": "state",
+  "dependencyOf": "united-kingdom",
+  "dependencyKind": "protectorate",
+  "when": {
+    "start": 1886,
+    "end": 1890,
+    "date": "1886-01-01",
+    "endDate": "1890-06-30"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1886-1913.json"
+    ],
+    "key": "421"
+  },
+  "capital": {
+    "lon": 25.911949,
+    "lat": -24.64639,
+    "precision": "city",
+    "label": "Gaborone"
+  },
+  "confidence": "consensus"
+}

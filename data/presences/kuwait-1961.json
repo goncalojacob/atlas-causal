@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "kuwait-1961",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 524"
+    }
+  ],
+  "actor": "kuwait",
+  "presenceType": "state",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1961,
+    "end": null,
+    "date": "1961-06-19"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1946-1974.json",
+      "geo/presences/1975-2019.json"
+    ],
+    "key": "524"
+  },
+  "capital": {
+    "lon": 47.978329,
+    "lat": 29.36972,
+    "precision": "city",
+    "label": "Kuwait"
+  },
+  "confidence": "consensus"
+}

@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "congo-democratic-republic-of-zaire-1908",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 334"
+    }
+  ],
+  "actor": "congo-democratic-republic-of-zaire",
+  "presenceType": "state",
+  "dependencyOf": "belgium",
+  "dependencyKind": "colony",
+  "when": {
+    "start": 1908,
+    "end": 1910,
+    "date": "1908-10-18",
+    "endDate": "1910-06-15"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1886-1913.json"
+    ],
+    "key": "334"
+  },
+  "capital": {
+    "lon": 15.315,
+    "lat": -4.32972,
+    "precision": "city",
+    "label": "Kinshasa (Léopoldville)"
+  },
+  "confidence": "consensus"
+}

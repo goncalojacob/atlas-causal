@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "bulgaria-1918",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 150"
+    }
+  ],
+  "actor": "bulgaria",
+  "presenceType": "state",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1918,
+    "end": 1919,
+    "date": "1918-05-07",
+    "endDate": "1919-11-26"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1914-1932.json"
+    ],
+    "key": "150"
+  },
+  "capital": {
+    "lon": 23.316669,
+    "lat": 42.68333,
+    "precision": "city",
+    "label": "Sofia"
+  },
+  "confidence": "consensus"
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "cyprus-1914",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 146"
+    }
+  ],
+  "actor": "cyprus",
+  "presenceType": "state",
+  "dependencyOf": "united-kingdom",
+  "dependencyKind": "colony",
+  "when": {
+    "start": 1914,
+    "end": 1960,
+    "date": "1914-11-05",
+    "endDate": "1960-08-15"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1914-1932.json",
+      "geo/presences/1933-1945.json",
+      "geo/presences/1946-1974.json"
+    ],
+    "key": "146"
+  },
+  "capital": {
+    "lon": 33.366661,
+    "lat": 35.16667,
+    "precision": "city",
+    "label": "Nicosia"
+  },
+  "confidence": "consensus"
+}

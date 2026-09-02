@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "saudi-arabia-1935",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 516"
+    }
+  ],
+  "actor": "saudi-arabia",
+  "presenceType": "state",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1935,
+    "end": 2000,
+    "date": "1935-01-01",
+    "endDate": "2000-06-11"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1933-1945.json",
+      "geo/presences/1946-1974.json",
+      "geo/presences/1975-2019.json"
+    ],
+    "key": "516"
+  },
+  "capital": {
+    "lon": 46.772781,
+    "lat": 24.64083,
+    "precision": "city",
+    "label": "Riyadh"
+  },
+  "confidence": "consensus"
+}

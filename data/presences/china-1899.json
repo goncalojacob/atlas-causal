@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "china-1899",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 545"
+    }
+  ],
+  "actor": "china",
+  "presenceType": "state",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1899,
+    "end": 1912,
+    "date": "1899-01-01",
+    "endDate": "1912-12-31"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1886-1913.json"
+    ],
+    "key": "545"
+  },
+  "capital": {
+    "lon": 116.388298,
+    "lat": 39.92889,
+    "precision": "city",
+    "label": "Beijing"
+  },
+  "confidence": "consensus"
+}

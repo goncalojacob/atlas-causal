@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "algeria-1962",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 456"
+    }
+  ],
+  "actor": "algeria",
+  "presenceType": "state",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1962,
+    "end": null,
+    "date": "1962-07-05"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1946-1974.json",
+      "geo/presences/1975-2019.json"
+    ],
+    "key": "456"
+  },
+  "capital": {
+    "lon": 3.050556,
+    "lat": 36.76305,
+    "precision": "city",
+    "label": "Algiers"
+  },
+  "confidence": "consensus"
+}

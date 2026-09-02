@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "equatorial-guinea-1900",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 222"
+    }
+  ],
+  "actor": "equatorial-guinea",
+  "presenceType": "state",
+  "dependencyOf": "spain",
+  "dependencyKind": "colony",
+  "when": {
+    "start": 1900,
+    "end": 1968,
+    "date": "1900-06-27",
+    "endDate": "1968-10-11"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1886-1913.json",
+      "geo/presences/1914-1932.json",
+      "geo/presences/1933-1945.json",
+      "geo/presences/1946-1974.json"
+    ],
+    "key": "222"
+  },
+  "capital": {
+    "lon": 8.737104,
+    "lat": 3.75041,
+    "precision": "city",
+    "label": "Malabo"
+  },
+  "confidence": "consensus"
+}

@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "norway",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "gwcode 385"
+    }
+  ],
+  "actorType": "polity",
+  "names": [
+    "Norway"
+  ],
+  "summary": "Entity 385 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1905 to where the dataset stops, in 2019. Its last capital in the dataset is Oslo. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "when": {
+    "start": 1905,
+    "end": null
+  },
+  "where": {
+    "lon": 10.752245,
+    "lat": 59.91387,
+    "precision": "city",
+    "label": "Oslo"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "haiti-1915",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 18"
+    }
+  ],
+  "actor": "haiti",
+  "presenceType": "state",
+  "dependencyOf": "united-states-of-america",
+  "dependencyKind": "occupied",
+  "when": {
+    "start": 1915,
+    "end": 1934,
+    "date": "1915-07-05",
+    "endDate": "1934-08-14"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1914-1932.json",
+      "geo/presences/1933-1945.json"
+    ],
+    "key": "18"
+  },
+  "capital": {
+    "lon": -72.334999,
+    "lat": 18.5392,
+    "precision": "city",
+    "label": "Port-au-Prince"
+  },
+  "confidence": "consensus"
+}

@@ -478,9 +478,11 @@ export function checkRules(records, topology = {}) {
   // disk question, and lives in tools/validate.mjs.
   for (const r of own) {
     if (r.kind !== 'presence') continue;
-    if (r.dependencyOf === null && r.dependencyKind !== null) {
-      error(17, r, '/dependencyKind', 'a presence that depends on nobody has no dependencyKind');
-    }
+    // The other direction does not hold, and deliberately: Danzig was a
+    // mandate under the League of Nations and West New Guinea a protectorate
+    // under the United Nations, so the kind is known and the sovereign is
+    // not a state. dependencyKind says how a territory was held;
+    // dependencyOf says by whom, when that is a state on this map.
     if (r.dependencyOf !== null && r.dependencyKind === null) {
       error(17, r, '/dependencyKind', 'a dependency says how it was held: colony, protectorate, mandate or occupied');
     }

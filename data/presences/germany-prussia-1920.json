@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "germany-prussia-1920",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 86"
+    }
+  ],
+  "actor": "germany-prussia",
+  "presenceType": "state",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1920,
+    "end": 1938,
+    "date": "1920-02-10",
+    "endDate": "1938-09-29"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1914-1932.json",
+      "geo/presences/1933-1945.json"
+    ],
+    "key": "86"
+  },
+  "capital": {
+    "lon": 13.4,
+    "lat": 52.51667,
+    "precision": "city",
+    "label": "Berlin"
+  },
+  "confidence": "consensus"
+}

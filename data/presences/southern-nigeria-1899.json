@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "southern-nigeria-1899",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 681"
+    }
+  ],
+  "actor": "southern-nigeria",
+  "presenceType": "state",
+  "dependencyOf": "united-kingdom",
+  "dependencyKind": "protectorate",
+  "when": {
+    "start": 1899,
+    "end": 1906,
+    "date": "1899-01-01",
+    "endDate": "1906-02-15"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1886-1913.json"
+    ],
+    "key": "681"
+  },
+  "capital": {
+    "lon": 8.316667,
+    "lat": 4.95,
+    "precision": "city",
+    "label": "Old Calabar (Calabar)"
+  },
+  "confidence": "consensus"
+}

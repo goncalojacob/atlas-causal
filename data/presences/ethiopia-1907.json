@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "ethiopia-1907",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 378"
+    }
+  ],
+  "actor": "ethiopia",
+  "presenceType": "state",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1907,
+    "end": 1952,
+    "date": "1907-12-06",
+    "endDate": "1952-09-14"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1886-1913.json",
+      "geo/presences/1914-1932.json",
+      "geo/presences/1933-1945.json",
+      "geo/presences/1946-1974.json"
+    ],
+    "key": "378"
+  },
+  "capital": {
+    "lon": 38.77513,
+    "lat": 9.01393,
+    "precision": "city",
+    "label": "Addis Ababa"
+  },
+  "confidence": "consensus"
+}

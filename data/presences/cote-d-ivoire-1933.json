@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "cote-d-ivoire-1933",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 258"
+    }
+  ],
+  "actor": "cote-d-ivoire",
+  "presenceType": "state",
+  "dependencyOf": "france",
+  "dependencyKind": "colony",
+  "when": {
+    "start": 1933,
+    "end": 1947,
+    "date": "1933-08-10",
+    "endDate": "1947-01-03"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1933-1945.json",
+      "geo/presences/1946-1974.json"
+    ],
+    "key": "258"
+  },
+  "capital": {
+    "lon": -4.040048,
+    "lat": 5.32,
+    "precision": "city",
+    "label": "Abidjan"
+  },
+  "confidence": "consensus"
+}

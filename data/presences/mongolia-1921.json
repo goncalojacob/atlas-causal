@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "mongolia-1921",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 555"
+    }
+  ],
+  "actor": "mongolia",
+  "presenceType": "state",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1921,
+    "end": null,
+    "date": "1921-03-13"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1914-1932.json",
+      "geo/presences/1933-1945.json",
+      "geo/presences/1946-1974.json",
+      "geo/presences/1975-2019.json"
+    ],
+    "key": "555"
+  },
+  "capital": {
+    "lon": 106.916702,
+    "lat": 47.91667,
+    "precision": "city",
+    "label": "Ulan Bator"
+  },
+  "confidence": "consensus"
+}

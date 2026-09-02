@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "serbia-2006",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 126"
+    }
+  ],
+  "actor": "serbia",
+  "presenceType": "state",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 2006,
+    "end": 2008,
+    "date": "2006-06-06",
+    "endDate": "2008-02-16"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1975-2019.json"
+    ],
+    "key": "126"
+  },
+  "capital": {
+    "lon": 20.46806,
+    "lat": 44.81861,
+    "precision": "city",
+    "label": "Belgrade"
+  },
+  "confidence": "consensus"
+}

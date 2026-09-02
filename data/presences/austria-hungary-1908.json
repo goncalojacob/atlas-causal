@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "austria-hungary-1908",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 101"
+    }
+  ],
+  "actor": "austria-hungary",
+  "presenceType": "state",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1908,
+    "end": 1918,
+    "date": "1908-10-07",
+    "endDate": "1918-11-02"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1886-1913.json",
+      "geo/presences/1914-1932.json"
+    ],
+    "key": "101"
+  },
+  "capital": {
+    "lon": 16.366671,
+    "lat": 48.2,
+    "precision": "city",
+    "label": "Vienna"
+  },
+  "confidence": "consensus"
+}

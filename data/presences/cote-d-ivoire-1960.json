@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "cote-d-ivoire-1960",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 264"
+    }
+  ],
+  "actor": "cote-d-ivoire",
+  "presenceType": "state",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1960,
+    "end": 1983,
+    "date": "1960-08-07",
+    "endDate": "1983-03-20"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1946-1974.json",
+      "geo/presences/1975-2019.json"
+    ],
+    "key": "264"
+  },
+  "capital": {
+    "lon": -4.040048,
+    "lat": 5.32,
+    "precision": "city",
+    "label": "Abidjan"
+  },
+  "confidence": "consensus"
+}

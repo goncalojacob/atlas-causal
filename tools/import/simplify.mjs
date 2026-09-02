@@ -67,8 +67,34 @@ export function quantize(points, decimals) {
   return out;
 }
 
+// How much smaller than the thing being simplified the tolerance has to
+// stay. Without this, one tolerance for the whole world deletes the small
+// countries: Malta is about a fifth of a degree across, so a 0.1° band
+// flattens its coastline into a line and Malta stops existing. An arc is
+// therefore simplified at its own scale — the tolerance, or a sixth of the
+// arc's own extent, whichever is less, so the smallest island still keeps
+// enough segments to read as a shape. It costs about a third more bytes
+// across the world and it is the difference between Malta, Bahrain and the
+// Maldives being on the map and not being on it at all.
+export const MIN_DETAIL = 6;
+
+export function arcExtent(arc) {
+  let minX = Infinity;
+  let minY = Infinity;
+  let maxX = -Infinity;
+  let maxY = -Infinity;
+  for (const [x, y] of arc) {
+    if (x < minX) minX = x;
+    if (x > maxX) maxX = x;
+    if (y < minY) minY = y;
+    if (y > maxY) maxY = y;
+  }
+  return arc.length ? Math.max(maxX - minX, maxY - minY) : 0;
+}
+
 export function simplifyArc(arc, { tolerance, decimals }) {
-  return quantize(douglasPeucker(arc, tolerance), decimals);
+  const scaled = Math.min(tolerance, arcExtent(arc) / MIN_DETAIL);
+  return quantize(douglasPeucker(arc, scaled), decimals);
 }
 
 // Twice the signed area, which is all the caller needs: sign for winding,

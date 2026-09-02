@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "papua-1905",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 657"
+    }
+  ],
+  "actor": "papua",
+  "presenceType": "state",
+  "dependencyOf": "united-kingdom",
+  "dependencyKind": "colony",
+  "when": {
+    "start": 1905,
+    "end": 1920,
+    "date": "1905-11-16",
+    "endDate": "1920-12-16"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1886-1913.json",
+      "geo/presences/1914-1932.json"
+    ],
+    "key": "657"
+  },
+  "capital": {
+    "lon": 147.192504,
+    "lat": -9.46471,
+    "precision": "city",
+    "label": "Port Moresby"
+  },
+  "confidence": "consensus"
+}

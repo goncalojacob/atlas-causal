@@ -45,18 +45,21 @@ export const IMPORT_AUTHOR = Object.freeze({ name: 'CShapes 2.0 import (tools/im
 export const LICENSE = 'CC-BY-NC-SA-4.0';
 
 // Simplification: comparable in detail to the Natural Earth 110 m coastlines
-// already under data/geo/, which is what the map draws these over. At this
-// tolerance the busiest single year of the world is about 600 KB and every
-// shard is under a megabyte.
+// already under data/geo/, which is what the map draws these over. The
+// busiest single year of the world comes to about 700 KB and no shard much
+// exceeds a megabyte. MIN_AREA only has to be small enough to say "this ring
+// is a line, not an island"; simplify.mjs keeps small islands by simplifying
+// every arc at its own scale, which is what actually decides the size here.
 export const TOLERANCE = 0.1;
 export const DECIMALS = 3;
-export const MIN_AREA = 0.005;
+export const MIN_AREA = 1e-6;
 
 // Period shards. A presence is written into every shard its interval
 // touches, so the site loads exactly one file for the year on the slider.
 // Five and not the four the brief suggested: 1914–1945 in one piece came to
-// 1.18 MB, and the interwar years are where the entities are smallest and
-// most numerous.
+// 1.4 MB, and the interwar years are where the entities are smallest and
+// most numerous. Cutting further does not help — the 1914–1922 shard is
+// large because the entities in it are large and span the whole window.
 export const SHARDS = Object.freeze([
   Object.freeze({ from: 1886, to: 1913 }),
   Object.freeze({ from: 1914, to: 1932 }),
@@ -75,6 +78,14 @@ export const ACTOR_MAP = Object.freeze({
   750: 'republic-of-india',
   850: 'indonesia',
 });
+
+// Two `owner` codes in the file name no entity in it, and both are
+// international administrations rather than states: 0 is the League of
+// Nations over the Free City of Danzig (1919–1938) and 1 is the United
+// Nations over West New Guinea (1962–1963). Their presences keep how they
+// were held and get no sovereign on this map, which is the truth; inventing
+// an actor for either would be inventing a state.
+export const INTERNATIONAL_OWNERS = new Set(['0', '1']);
 
 // CShapes `status` → how the territory was held. `independent` and the two
 // `N/A` features (Morocco, 1904–1912) carry no dependency: N/A is read as
@@ -249,10 +260,16 @@ export function planImport(features, { created, shards = SHARDS, actorMap = ACTO
       const ownerCode = Number(p.owner);
       const dependent = Number.isInteger(ownerCode) && ownerCode !== code;
       const dependencyOf = dependent ? actorIds.get(ownerCode) ?? null : null;
-      if (dependent && !dependencyOf) problems.push(`feature ${p.fid} (${p.country_name}) is owned by ${p.owner}, which is in no CShapes entity`);
       if (!Object.hasOwn(DEPENDENCY_KIND, p.status)) problems.push(`feature ${p.fid} has an unknown status "${p.status}"`);
-      const kind = dependencyOf ? DEPENDENCY_KIND[p.status] ?? 'occupied' : null;
-      if (dependencyOf && DEPENDENCY_KIND[p.status] === null) {
+      // The status is the reliable half. An owner code that names no entity
+      // in the file is an international administration — the League of
+      // Nations over Danzig, the United Nations over West New Guinea — so
+      // the presence keeps how it was held and has no sovereign on this map.
+      if (dependent && !dependencyOf && !INTERNATIONAL_OWNERS.has(p.owner)) {
+        problems.push(`feature ${p.fid} (${p.country_name}) is owned by ${p.owner}, which is in no CShapes entity`);
+      }
+      const kind = dependent ? DEPENDENCY_KIND[p.status] ?? 'occupied' : null;
+      if (dependent && DEPENDENCY_KIND[p.status] === null) {
         problems.push(`feature ${p.fid} (${p.country_name}) is owned by ${p.owner} but its status is "${p.status}"`);
       }
 

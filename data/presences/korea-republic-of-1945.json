@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "korea-republic-of-1945",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 563"
+    }
+  ],
+  "actor": "korea-republic-of",
+  "presenceType": "state",
+  "dependencyOf": "united-states-of-america",
+  "dependencyKind": "occupied",
+  "when": {
+    "start": 1945,
+    "end": 1948,
+    "date": "1945-08-15",
+    "endDate": "1948-08-14"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1933-1945.json",
+      "geo/presences/1946-1974.json"
+    ],
+    "key": "563"
+  },
+  "capital": {
+    "lon": 126.999703,
+    "lat": 37.56639,
+    "precision": "city",
+    "label": "Seoul"
+  },
+  "confidence": "consensus"
+}

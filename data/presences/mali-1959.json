@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "mali-1959",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 235"
+    }
+  ],
+  "actor": "mali",
+  "presenceType": "state",
+  "dependencyOf": "france",
+  "dependencyKind": "colony",
+  "when": {
+    "start": 1959,
+    "end": 1960,
+    "date": "1959-04-04",
+    "endDate": "1960-06-19"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1946-1974.json"
+    ],
+    "key": "235"
+  },
+  "capital": {
+    "lon": -7.97491,
+    "lat": 12.61771,
+    "precision": "city",
+    "label": "Bamako"
+  },
+  "confidence": "consensus"
+}

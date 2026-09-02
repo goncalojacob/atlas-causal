@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "austria-1918",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 102"
+    }
+  ],
+  "actor": "austria",
+  "presenceType": "state",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1918,
+    "end": 1919,
+    "date": "1918-11-03",
+    "endDate": "1919-09-09"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1914-1932.json"
+    ],
+    "key": "102"
+  },
+  "capital": {
+    "lon": 16.366671,
+    "lat": 48.2,
+    "precision": "city",
+    "label": "Vienna"
+  },
+  "confidence": "consensus"
+}

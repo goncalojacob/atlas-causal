@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "mauritania-1904",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 249"
+    }
+  ],
+  "actor": "mauritania",
+  "presenceType": "state",
+  "dependencyOf": "france",
+  "dependencyKind": "protectorate",
+  "when": {
+    "start": 1904,
+    "end": 1904,
+    "date": "1904-04-08",
+    "endDate": "1904-10-02"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1886-1913.json"
+    ],
+    "key": "249"
+  },
+  "capital": {
+    "lon": -16.027356,
+    "lat": 18.11944,
+    "precision": "city",
+    "label": "Nouakchott"
+  },
+  "confidence": "consensus"
+}

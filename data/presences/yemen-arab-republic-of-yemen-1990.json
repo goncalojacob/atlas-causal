@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "yemen-arab-republic-of-yemen-1990",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 520"
+    }
+  ],
+  "actor": "yemen-arab-republic-of-yemen",
+  "presenceType": "state",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1990,
+    "end": 2000,
+    "date": "1990-05-22",
+    "endDate": "2000-06-11"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1975-2019.json"
+    ],
+    "key": "520"
+  },
+  "capital": {
+    "lon": 44.183331,
+    "lat": 15.28333,
+    "precision": "city",
+    "label": "Sana'a"
+  },
+  "confidence": "consensus"
+}

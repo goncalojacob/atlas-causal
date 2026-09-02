@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "eritrea-1900",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 382"
+    }
+  ],
+  "actor": "eritrea",
+  "presenceType": "state",
+  "dependencyOf": "italy-sardinia",
+  "dependencyKind": "colony",
+  "when": {
+    "start": 1900,
+    "end": 1941,
+    "date": "1900-01-24",
+    "endDate": "1941-05-18"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1886-1913.json",
+      "geo/presences/1914-1932.json",
+      "geo/presences/1933-1945.json"
+    ],
+    "key": "382"
+  },
+  "capital": {
+    "lon": 38.933331,
+    "lat": 15.33333,
+    "precision": "city",
+    "label": "Asmara"
+  },
+  "confidence": "consensus"
+}

@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "cote-d-ivoire-1932",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 262"
+    }
+  ],
+  "actor": "cote-d-ivoire",
+  "presenceType": "state",
+  "dependencyOf": "france",
+  "dependencyKind": "colony",
+  "when": {
+    "start": 1932,
+    "end": 1933,
+    "date": "1932-09-05",
+    "endDate": "1933-08-09"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1914-1932.json",
+      "geo/presences/1933-1945.json"
+    ],
+    "key": "262"
+  },
+  "capital": {
+    "lon": -3.9,
+    "lat": 5.35,
+    "precision": "city",
+    "label": "Bingerville"
+  },
+  "confidence": "consensus"
+}

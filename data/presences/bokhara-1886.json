@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "bokhara-1886",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 702"
+    }
+  ],
+  "actor": "bokhara",
+  "presenceType": "state",
+  "dependencyOf": "russia-soviet-union",
+  "dependencyKind": "protectorate",
+  "when": {
+    "start": 1886,
+    "end": 1920,
+    "date": "1886-01-01",
+    "endDate": "1920-09-01"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1886-1913.json",
+      "geo/presences/1914-1932.json"
+    ],
+    "key": "702"
+  },
+  "capital": {
+    "lon": 64.43001,
+    "lat": 39.78001,
+    "precision": "city",
+    "label": "Bukhara"
+  },
+  "confidence": "consensus"
+}

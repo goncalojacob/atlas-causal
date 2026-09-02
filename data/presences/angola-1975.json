@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "angola-1975",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 390"
+    }
+  ],
+  "actor": "angola",
+  "presenceType": "state",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1975,
+    "end": null,
+    "date": "1975-11-11"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1975-2019.json"
+    ],
+    "key": "390"
+  },
+  "capital": {
+    "lon": 13.23444,
+    "lat": -8.83833,
+    "precision": "city",
+    "label": "Luanda"
+  },
+  "confidence": "consensus"
+}

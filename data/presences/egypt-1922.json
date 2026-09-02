@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "egypt-1922",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 491"
+    }
+  ],
+  "actor": "egypt",
+  "presenceType": "state",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1922,
+    "end": 1925,
+    "date": "1922-02-28",
+    "endDate": "1925-12-05"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1914-1932.json"
+    ],
+    "key": "491"
+  },
+  "capital": {
+    "lon": 31.25,
+    "lat": 30.05,
+    "precision": "city",
+    "label": "Cairo"
+  },
+  "confidence": "consensus"
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "turkey-ottoman-empire-1923",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 475"
+    }
+  ],
+  "actor": "turkey-ottoman-empire",
+  "presenceType": "state",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1923,
+    "end": null,
+    "date": "1923-10-14"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1914-1932.json",
+      "geo/presences/1933-1945.json",
+      "geo/presences/1946-1974.json",
+      "geo/presences/1975-2019.json"
+    ],
+    "key": "475"
+  },
+  "capital": {
+    "lon": 32.864441,
+    "lat": 39.92722,
+    "precision": "city",
+    "label": "Ankara"
+  },
+  "confidence": "consensus"
+}

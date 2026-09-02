@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "kenya-1963",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 346"
+    }
+  ],
+  "actor": "kenya",
+  "presenceType": "state",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1963,
+    "end": null,
+    "date": "1963-12-12"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1946-1974.json",
+      "geo/presences/1975-2019.json"
+    ],
+    "key": "346"
+  },
+  "capital": {
+    "lon": 36.816669,
+    "lat": -1.28333,
+    "precision": "city",
+    "label": "Nairobi"
+  },
+  "confidence": "consensus"
+}

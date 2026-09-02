@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "taiwan-1949",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 557"
+    }
+  ],
+  "actor": "taiwan",
+  "presenceType": "state",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1949,
+    "end": null,
+    "date": "1949-12-08"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1946-1974.json",
+      "geo/presences/1975-2019.json"
+    ],
+    "key": "557"
+  },
+  "capital": {
+    "lon": 121.525002,
+    "lat": 25.03917,
+    "precision": "city",
+    "label": "Taipei"
+  },
+  "confidence": "consensus"
+}

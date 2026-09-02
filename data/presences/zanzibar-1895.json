@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "zanzibar-1895",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 363"
+    }
+  ],
+  "actor": "zanzibar",
+  "presenceType": "state",
+  "dependencyOf": "united-kingdom",
+  "dependencyKind": "protectorate",
+  "when": {
+    "start": 1895,
+    "end": 1963,
+    "date": "1895-07-01",
+    "endDate": "1963-12-18"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1886-1913.json",
+      "geo/presences/1914-1932.json",
+      "geo/presences/1933-1945.json",
+      "geo/presences/1946-1974.json"
+    ],
+    "key": "363"
+  },
+  "capital": {
+    "lon": 39.195592,
+    "lat": -6.16698,
+    "precision": "city",
+    "label": "Zanzibar City"
+  },
+  "confidence": "consensus"
+}

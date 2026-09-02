@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "cshapes-2-0",
+  "kind": "source",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "type": "dataset",
+  "creators": [
+    "Guy Schvitz",
+    "Luc Girardin",
+    "Seraina Rüegger",
+    "Nils B. Weidmann",
+    "Lars-Erik Cederman",
+    "Kristian Skrede Gleditsch"
+  ],
+  "title": "Mapping the International System, 1886-2019: The CShapes 2.0 Dataset",
+  "year": 2022,
+  "publisher": "Journal of Conflict Resolution",
+  "isbn": null,
+  "doi": "10.1177/00220027211013563",
+  "url": "https://icr.ethz.ch/data/cshapes/",
+  "accessed": null,
+  "repository": null,
+  "reference": null
+}

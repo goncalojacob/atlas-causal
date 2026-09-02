@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "syria-1946",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 496"
+    }
+  ],
+  "actor": "syria",
+  "presenceType": "state",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1946,
+    "end": 1967,
+    "date": "1946-01-01",
+    "endDate": "1967-06-09"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1946-1974.json"
+    ],
+    "key": "496"
+  },
+  "capital": {
+    "lon": 36.299999,
+    "lat": 33.5,
+    "precision": "city",
+    "label": "Damascus"
+  },
+  "confidence": "consensus"
+}

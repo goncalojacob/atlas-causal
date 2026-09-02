@@ -35,7 +35,7 @@
       ]
     },
     "dependencyKind": {
-      "description": "How the territory was held, as the source classifies it. null exactly when dependencyOf is null.",
+      "description": "How the territory was held, as the source classifies it. A dependency always says which of these it was (rule 17); the reverse does not hold, because a territory can be held this way by something that is not a state on this map — Danzig was a League of Nations mandate and West New Guinea a United Nations protectorate.",
       "oneOf": [
         { "type": "null" },
         {

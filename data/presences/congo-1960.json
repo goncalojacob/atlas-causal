@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "congo-1960",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 329"
+    }
+  ],
+  "actor": "congo",
+  "presenceType": "state",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1960,
+    "end": null,
+    "date": "1960-08-15"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1946-1974.json",
+      "geo/presences/1975-2019.json"
+    ],
+    "key": "329"
+  },
+  "capital": {
+    "lon": 15.28472,
+    "lat": -4.25917,
+    "precision": "city",
+    "label": "Brazzaville"
+  },
+  "confidence": "consensus"
+}

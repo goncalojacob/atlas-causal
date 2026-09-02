@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "sarawak-1888",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 622"
+    }
+  ],
+  "actor": "sarawak",
+  "presenceType": "state",
+  "dependencyOf": "united-kingdom",
+  "dependencyKind": "protectorate",
+  "when": {
+    "start": 1888,
+    "end": 1889,
+    "date": "1888-06-14",
+    "endDate": "1889-06-19"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1886-1913.json"
+    ],
+    "key": "622"
+  },
+  "capital": {
+    "lon": 110.329999,
+    "lat": 1.52997,
+    "precision": "city",
+    "label": "Kuching"
+  },
+  "confidence": "consensus"
+}

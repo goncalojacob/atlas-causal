@@ -1,15 +1,15 @@
 {
   "counts": {
-    "actors": 42,
+    "actors": 292,
     "edges": 73,
     "events": 60,
-    "presences": 0,
+    "presences": 710,
     "regions": 5,
-    "sources": 11
+    "sources": 12
   },
   "files": {
-    "sources": "index/sources-6c36ac871efd.json",
-    "topology": "index/topology-4c1f44446256.json"
+    "sources": "index/sources-31c09e552164.json",
+    "topology": "index/topology-562a8ea3b8df.json"
   },
   "land": [
     {
@@ -19,7 +19,33 @@
       "to": null
     }
   ],
-  "presenceShards": [],
+  "presenceShards": [
+    {
+      "file": "geo/presences/1886-1913.json",
+      "from": 1886,
+      "to": 1913
+    },
+    {
+      "file": "geo/presences/1914-1932.json",
+      "from": 1914,
+      "to": 1932
+    },
+    {
+      "file": "geo/presences/1933-1945.json",
+      "from": 1933,
+      "to": 1945
+    },
+    {
+      "file": "geo/presences/1946-1974.json",
+      "from": 1946,
+      "to": 1974
+    },
+    {
+      "file": "geo/presences/1975-2019.json",
+      "from": 1975,
+      "to": 2019
+    }
+  ],
   "regions": [
     {
       "id": "europe",

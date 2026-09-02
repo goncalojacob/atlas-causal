@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "iceland-1942",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 214"
+    }
+  ],
+  "actor": "iceland",
+  "presenceType": "state",
+  "dependencyOf": "united-states-of-america",
+  "dependencyKind": "occupied",
+  "when": {
+    "start": 1942,
+    "end": 1944,
+    "date": "1942-04-22",
+    "endDate": "1944-06-16"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1933-1945.json"
+    ],
+    "key": "214"
+  },
+  "capital": {
+    "lon": -21.950001,
+    "lat": 64.15,
+    "precision": "city",
+    "label": "Reykjavik"
+  },
+  "confidence": "consensus"
+}

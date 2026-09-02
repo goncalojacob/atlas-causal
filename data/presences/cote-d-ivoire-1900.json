@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "cote-d-ivoire-1900",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 260"
+    }
+  ],
+  "actor": "cote-d-ivoire",
+  "presenceType": "state",
+  "dependencyOf": "france",
+  "dependencyKind": "colony",
+  "when": {
+    "start": 1900,
+    "end": 1902,
+    "date": "1900-11-15",
+    "endDate": "1902-03-19"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1886-1913.json"
+    ],
+    "key": "260"
+  },
+  "capital": {
+    "lon": -3.9,
+    "lat": 5.35,
+    "precision": "city",
+    "label": "Bingerville"
+  },
+  "confidence": "consensus"
+}

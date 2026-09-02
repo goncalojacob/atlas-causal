@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "martinique-1886",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 27"
+    }
+  ],
+  "actor": "martinique",
+  "presenceType": "state",
+  "dependencyOf": "france",
+  "dependencyKind": "colony",
+  "when": {
+    "start": 1886,
+    "end": null,
+    "date": "1886-01-01"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1886-1913.json",
+      "geo/presences/1914-1932.json",
+      "geo/presences/1933-1945.json",
+      "geo/presences/1946-1974.json",
+      "geo/presences/1975-2019.json"
+    ],
+    "key": "27"
+  },
+  "capital": {
+    "lon": -61.0588,
+    "lat": 14.6161,
+    "precision": "city",
+    "label": "Fort-de-France"
+  },
+  "confidence": "consensus"
+}

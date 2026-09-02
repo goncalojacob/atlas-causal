@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "albania-1914",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 121"
+    }
+  ],
+  "actor": "albania",
+  "presenceType": "state",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1914,
+    "end": 1920,
+    "date": "1914-03-07",
+    "endDate": "1920-02-10"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1914-1932.json"
+    ],
+    "key": "121"
+  },
+  "capital": {
+    "lon": 19.454967,
+    "lat": 41.32052,
+    "precision": "city",
+    "label": "Durres"
+  },
+  "confidence": "consensus"
+}

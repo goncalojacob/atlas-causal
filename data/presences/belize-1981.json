@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "belize-1981",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 31"
+    }
+  ],
+  "actor": "belize",
+  "presenceType": "state",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1981,
+    "end": null,
+    "date": "1981-09-21"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1975-2019.json"
+    ],
+    "key": "31"
+  },
+  "capital": {
+    "lon": -88.76667,
+    "lat": 17.25,
+    "precision": "city",
+    "label": "Belmopan"
+  },
+  "confidence": "consensus"
+}

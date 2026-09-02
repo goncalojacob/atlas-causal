@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "czechoslovakia-1918",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 110"
+    }
+  ],
+  "actor": "czechoslovakia",
+  "presenceType": "state",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1918,
+    "end": 1938,
+    "date": "1918-11-11",
+    "endDate": "1938-09-29"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1914-1932.json",
+      "geo/presences/1933-1945.json"
+    ],
+    "key": "110"
+  },
+  "capital": {
+    "lon": 14.46667,
+    "lat": 50.08333,
+    "precision": "city",
+    "label": "Prague"
+  },
+  "confidence": "consensus"
+}

@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "pakistan-1967",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 576"
+    }
+  ],
+  "actor": "pakistan",
+  "presenceType": "state",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1967,
+    "end": 1971,
+    "date": "1967-08-14",
+    "endDate": "1971-12-15"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1946-1974.json"
+    ],
+    "key": "576"
+  },
+  "capital": {
+    "lon": 73.166656,
+    "lat": 33.7,
+    "precision": "city",
+    "label": "Islamabad"
+  },
+  "confidence": "consensus"
+}

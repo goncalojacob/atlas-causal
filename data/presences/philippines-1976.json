@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "philippines-1976",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 632"
+    }
+  ],
+  "actor": "philippines",
+  "presenceType": "state",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1976,
+    "end": null,
+    "date": "1976-05-29"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1975-2019.json"
+    ],
+    "key": "632"
+  },
+  "capital": {
+    "lon": 120.982201,
+    "lat": 14.60417,
+    "precision": "city",
+    "label": "Manila"
+  },
+  "confidence": "consensus"
+}

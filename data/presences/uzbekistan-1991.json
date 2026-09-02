@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "uzbekistan-1991",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 540"
+    }
+  ],
+  "actor": "uzbekistan",
+  "presenceType": "state",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1991,
+    "end": null,
+    "date": "1991-09-01"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1975-2019.json"
+    ],
+    "key": "540"
+  },
+  "capital": {
+    "lon": 69.25,
+    "lat": 41.31667,
+    "precision": "city",
+    "label": "Tashkent"
+  },
+  "confidence": "consensus"
+}

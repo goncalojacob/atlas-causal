@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "kamerun-1894",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 297"
+    }
+  ],
+  "actor": "kamerun",
+  "presenceType": "state",
+  "dependencyOf": "germany-prussia",
+  "dependencyKind": "colony",
+  "when": {
+    "start": 1894,
+    "end": 1900,
+    "date": "1894-03-15",
+    "endDate": "1900-12-31"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1886-1913.json"
+    ],
+    "key": "297"
+  },
+  "capital": {
+    "lon": 9.709991,
+    "lat": 4.06041,
+    "precision": "city",
+    "label": "Duala"
+  },
+  "confidence": "consensus"
+}

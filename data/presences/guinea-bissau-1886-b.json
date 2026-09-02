@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "guinea-bissau-1886-b",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 219"
+    }
+  ],
+  "actor": "guinea-bissau",
+  "presenceType": "state",
+  "dependencyOf": "portugal",
+  "dependencyKind": "colony",
+  "when": {
+    "start": 1886,
+    "end": 1942,
+    "date": "1886-05-12",
+    "endDate": "1942-06-30"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1886-1913.json",
+      "geo/presences/1914-1932.json",
+      "geo/presences/1933-1945.json"
+    ],
+    "key": "219"
+  },
+  "capital": {
+    "lon": -15.482804,
+    "lat": 11.58295,
+    "precision": "city",
+    "label": "Bolama"
+  },
+  "confidence": "consensus"
+}
