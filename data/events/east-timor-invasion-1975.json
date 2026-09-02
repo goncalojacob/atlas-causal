@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "east-timor-invasion-1975",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "macqueen-1997-decolonization",
+      "locator": null
+    }
+  ],
+  "title": "Indonesia invades East Timor",
+  "summary": "Indonesian forces invaded East Timor on 7 December 1975, nine days after FRETILIN had declared independence and with the Portuguese administration withdrawn to Ataúro.",
+  "when": {
+    "start": 1975,
+    "end": 1975,
+    "date": "1975-12-07",
+    "calendar": "gregorian"
+  },
+  "where": {
+    "lon": 125.57,
+    "lat": -8.56,
+    "precision": "city",
+    "label": "Dili"
+  },
+  "region": null,
+  "actors": []
+}

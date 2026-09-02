@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "angola-war-begins-1961--carnation-revolution-1974--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "maxwell-1995-making-of-portuguese-democracy",
+      "locator": null
+    },
+    {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    }
+  ],
+  "from": "angola-war-begins-1961",
+  "to": "carnation-revolution-1974",
+  "type": "caused",
+  "confidence": "consensus",
+  "explanation": "Thirteen years of war on three fronts exhausted the army, the treasury and the regime's legitimacy; the officers who overthrew the Estado Novo did so to end a war they judged unwinnable.",
+  "dispute": null
+}

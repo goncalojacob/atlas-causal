@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "republic-proclaimed-1910",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "wheeler-1978-republican-portugal",
+      "locator": null
+    },
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    }
+  ],
+  "title": "Proclamation of the Republic",
+  "summary": "The 5 October revolution in Lisbon ended the constitutional monarchy; Manuel II left for exile and a provisional government led by Teófilo Braga took power.",
+  "when": {
+    "start": 1910,
+    "end": 1910,
+    "date": "1910-10-05",
+    "calendar": "gregorian"
+  },
+  "where": {
+    "lon": -9.14,
+    "lat": 38.72,
+    "precision": "city",
+    "label": "Lisbon"
+  },
+  "region": null,
+  "actors": []
+}

@@ -6,17 +6,22 @@ session ends. `ARCHITECTURE.md` is the target; this file is the position.
 
 ## Last updated
 
-2026-09-01, by the agent building M2/M3 (`docs/m2-brief.md`), at the end of
-M3.
+2026-09-02, after the 20th–21st century Portugal test dataset was added.
 
 ## Phase
 
 **M0, M1, M2 and M3 built, on branch `m0`, pull request #1 open against
 `main`.** `ARCHITECTURE.md` revision 3 is still the specification.
-`data/events|edges|sources` are empty: no record has been written, by
-design — the owner writes every record. Every page serves from
-`python3 -m http.server 8000`; with no records yet, `?fixtures=1` on the
-atlas and on the form loads the synthetic set in `tests/fixtures/data/`.
+`data/` now holds a **test dataset, 20th–21st century Portugal** (35
+events, 37 edges, 11 sources; 1910 → 2011), drafted by the assistant on
+2026-09-02 at the owner's request as an exception to the "written by a
+person" rule (recorded in `CLAUDE.md`). Every record says so in `authors`.
+It validates (0 errors; one `degree-zero` warning on
+`delgado-candidacy-1958`, left deliberately), the index is built, and the
+atlas renders it at `http://localhost:8000/` without `?fixtures=1`. Three
+edges are `disputed` with dissenting citations; two lanes derive by
+`nearest` (Goa, Macau — both correct); the Azores use a `region` override.
+Every page still serves from `python3 -m http.server 8000`.
 
 What exists and passes (`node tools/validate.mjs --index`, `node --test`:
 120 tests):
@@ -89,17 +94,25 @@ Taken by the building agents, all reversible, all listed under Deviations.
    deploy job commits the regenerated index.
 3. **Owner: review and merge PR #1**
    (https://github.com/goncalojacob/atlas-causal/pull/1).
-4. **Owner: write the first records.** `node tools/new-record.mjs event <id>
+4. **Owner: review the test dataset before anything is public.** Every
+   date, coordinate, explanation and confidence was written by the assistant
+   from memory. `docs/drafts/portugal-since-1910.md` (untracked, local)
+   lists the dates flagged least certain. The eleven source records carry a
+   WorldCat search URL as their identifier, not an ISBN, and every citation
+   has `locator: null` — replace with ISBNs and page or chapter references,
+   or retract the record. The assistant's `authors` entry stays until a
+   person has reviewed the record and signs it.
+5. **Owner: write the first records** of the 1415→ period. `node tools/new-record.mjs event <id>
    --title … --start … --lon … --lat … --label …` (and `edge`, `source`),
    fill in the text, then `node tools/validate.mjs` and
    `node tools/build-index.mjs`; open `http://localhost:8000/`. Use `region`
    on the record whenever the derived lane is wrong (strait cities, islands
    absent at 110m).
-5. **Owner: test one bundle end to end** once the PAT exists — open
+6. **Owner: test one bundle end to end** once the PAT exists — open
    `contribute.html`, build a bundle, file the issue, apply `accepted`, and
    check that the pull request arrives with green CI. That is the M2
    acceptance criterion and the one thing the agent cannot do for you.
-6. **Not yet: publishing the templates.** `contribute.html` is deliberately
+7. **Not yet: publishing the templates.** `contribute.html` is deliberately
    not linked from the atlas or from `about.html`; both pages say
    contributions are not open. Opening them is the owner's call (see the
    first open question).

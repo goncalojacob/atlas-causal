@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "goa-annexed-1961",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "macqueen-1997-decolonization",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    }
+  ],
+  "title": "India annexes Goa, Daman and Diu",
+  "summary": "Indian forces took Goa, Daman and Diu on 18–19 December 1961, ending four and a half centuries of Portuguese rule in India.",
+  "when": {
+    "start": 1961,
+    "end": 1961,
+    "date": "1961-12-18",
+    "calendar": "gregorian"
+  },
+  "where": {
+    "lon": 73.83,
+    "lat": 15.49,
+    "precision": "city",
+    "label": "Panaji"
+  },
+  "region": null,
+  "actors": []
+}

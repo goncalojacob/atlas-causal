@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "east-timor-invasion-1975--east-timor-independence-2002--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "macqueen-1997-decolonization",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    }
+  ],
+  "from": "east-timor-invasion-1975",
+  "to": "east-timor-independence-2002",
+  "type": "precondition-of",
+  "confidence": "consensus",
+  "explanation": "The independence of 2002 resolved the occupation that began in 1975; the referendum of 1999 and the United Nations administration were responses to that occupation and its resistance.",
+  "dispute": null
+}

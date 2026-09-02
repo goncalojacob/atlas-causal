@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "nato-founding-1949--un-admission-1955--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    }
+  ],
+  "from": "nato-founding-1949",
+  "to": "un-admission-1955",
+  "type": "enabled",
+  "confidence": "disputed",
+  "explanation": "Membership of the Atlantic alliance placed Portugal firmly in the Western camp and is argued to have secured Western sponsorship of its admission to the United Nations.",
+  "dispute": {
+    "text": "Admission in 1955 came in a package of sixteen states negotiated between the blocs after years of Soviet vetoes; on that reading the timing owes more to the general thaw than to Portugal's alliance membership, which had not prevented the vetoes.",
+    "sources": [
+      {
+        "source": "costa-pinto-2003-contemporary-portugal",
+        "locator": null
+      }
+    ]
+  }
+}

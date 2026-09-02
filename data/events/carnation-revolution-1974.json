@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "carnation-revolution-1974",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "maxwell-1995-making-of-portuguese-democracy",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    }
+  ],
+  "title": "25 April",
+  "summary": "On 25 April 1974 the Armed Forces Movement overthrew the Estado Novo in a nearly bloodless coup that became a revolution.",
+  "when": {
+    "start": 1974,
+    "end": 1974,
+    "date": "1974-04-25",
+    "calendar": "gregorian"
+  },
+  "where": {
+    "lon": -9.14,
+    "lat": 38.72,
+    "precision": "city",
+    "label": "Lisbon"
+  },
+  "region": null,
+  "actors": []
+}

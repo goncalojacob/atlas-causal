@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "battle-of-the-lys-1918",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "meneses-2004-portugal-1914-1926",
+      "locator": null
+    }
+  ],
+  "title": "Battle of the Lys",
+  "summary": "On 9 April 1918 the German spring offensive broke the sector held by the Portuguese Expeditionary Corps on the Lys, the heaviest single loss suffered by Portuguese forces in the war.",
+  "when": {
+    "start": 1918,
+    "end": 1918,
+    "date": "1918-04-09",
+    "calendar": "gregorian"
+  },
+  "where": {
+    "lon": 2.78,
+    "lat": 50.62,
+    "precision": "region",
+    "label": "Flanders, near Laventie"
+  },
+  "region": null,
+  "actors": []
+}

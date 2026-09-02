@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "republic-proclaimed-1910--law-of-separation-1911--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "wheeler-1978-republican-portugal",
+      "locator": null
+    },
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    }
+  ],
+  "from": "republic-proclaimed-1910",
+  "to": "law-of-separation-1911",
+  "type": "caused",
+  "confidence": "consensus",
+  "explanation": "Anticlericalism was central to the republican programme before 1910, and the provisional government legislated against the Church within weeks of taking power; the Law of Separation was the culmination of that programme rather than a later departure from it.",
+  "dispute": null
+}

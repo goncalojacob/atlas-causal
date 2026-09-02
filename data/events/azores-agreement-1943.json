@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "azores-agreement-1943",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    }
+  ],
+  "title": "Anglo-Portuguese agreement on Azores bases",
+  "summary": "Invoking the alliance of 1373, Britain obtained the use of bases in the Azores from Portugal in August 1943, while Portugal remained formally neutral.",
+  "when": {
+    "start": 1943,
+    "end": 1943,
+    "date": "1943-08-17",
+    "calendar": "gregorian"
+  },
+  "where": {
+    "lon": -27.09,
+    "lat": 38.76,
+    "precision": "city",
+    "label": "Lajes, Terceira"
+  },
+  "region": "europe",
+  "actors": []
+}

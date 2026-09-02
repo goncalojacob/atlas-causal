@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "germany-declares-war-1916",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "meneses-2004-portugal-1914-1926",
+      "locator": null
+    }
+  ],
+  "title": "Germany declares war on Portugal",
+  "summary": "After Portugal requisitioned German merchant ships in the Tagus at British request in February 1916, Germany declared war on 9 March, bringing Portugal formally into the First World War.",
+  "when": {
+    "start": 1916,
+    "end": 1916,
+    "date": "1916-03-09",
+    "calendar": "gregorian"
+  },
+  "where": {
+    "lon": 13.4,
+    "lat": 52.52,
+    "precision": "city",
+    "label": "Berlin"
+  },
+  "region": null,
+  "actors": []
+}

@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "caetano-succeeds-salazar-1968--carnation-revolution-1974--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    }
+  ],
+  "from": "caetano-succeeds-salazar-1968",
+  "to": "carnation-revolution-1974",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Caetano's promise of liberalisation raised expectations that the regime then failed to meet, and his inability to change colonial policy left the army without a political solution; the disillusion of the \"Primavera Marcelista\" is part of why the coup found so little resistance.",
+  "dispute": null
+}

@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "noite-sangrenta-1921--coup-28-may-1926--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "wheeler-1978-republican-portugal",
+      "locator": null
+    },
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    }
+  ],
+  "from": "noite-sangrenta-1921",
+  "to": "coup-28-may-1926",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The murders of October 1921 fixed the Republic's association with political violence in conservative and military opinion, and were still invoked in 1926 as evidence that the regime could not keep order.",
+  "dispute": null
+}

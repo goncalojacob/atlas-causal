@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "constituent-assembly-election-1975",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "maxwell-1995-making-of-portuguese-democracy",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    }
+  ],
+  "title": "Constituent Assembly election",
+  "summary": "The election of 25 April 1975, the first with universal suffrage, gave the Socialist and Popular Democratic parties a clear majority over the Communists and their allies.",
+  "when": {
+    "start": 1975,
+    "end": 1975,
+    "date": "1975-04-25",
+    "calendar": "gregorian"
+  },
+  "where": {
+    "lon": -9.14,
+    "lat": 38.72,
+    "precision": "city",
+    "label": "Lisbon"
+  },
+  "region": null,
+  "actors": []
+}

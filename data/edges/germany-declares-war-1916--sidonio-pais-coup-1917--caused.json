@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "germany-declares-war-1916--sidonio-pais-coup-1917--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "meneses-2004-portugal-1914-1926",
+      "locator": null
+    },
+    {
+      "source": "wheeler-1978-republican-portugal",
+      "locator": null
+    }
+  ],
+  "from": "germany-declares-war-1916",
+  "to": "sidonio-pais-coup-1917",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "Entry into the war was the policy of the Democratic party and was unpopular with much of the army and the public; the December 1917 coup drew its support from opposition to the war and to the government that had chosen it.",
+  "dispute": null
+}

@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "constitution-1911",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "wheeler-1978-republican-portugal",
+      "locator": null
+    }
+  ],
+  "title": "Constitution of 1911",
+  "summary": "The Constituent Assembly approved a parliamentary constitution with a weak presidency, the framework of the First Republic until 1926.",
+  "when": {
+    "start": 1911,
+    "end": 1911,
+    "date": "1911-08-21",
+    "calendar": "gregorian"
+  },
+  "where": {
+    "lon": -9.14,
+    "lat": 38.72,
+    "precision": "city",
+    "label": "Lisbon"
+  },
+  "region": null,
+  "actors": []
+}

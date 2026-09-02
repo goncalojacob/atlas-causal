@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "sidonio-pais-coup-1917",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "meneses-2004-portugal-1914-1926",
+      "locator": null
+    },
+    {
+      "source": "wheeler-1978-republican-portugal",
+      "locator": null
+    }
+  ],
+  "title": "Sidónio Pais's coup",
+  "summary": "Between 5 and 8 December 1917 Sidónio Pais overthrew the Democratic government of Afonso Costa and founded the presidentialist \"República Nova\".",
+  "when": {
+    "start": 1917,
+    "end": 1917,
+    "date": "1917-12-05",
+    "calendar": "gregorian"
+  },
+  "where": {
+    "lon": -9.14,
+    "lat": 38.72,
+    "precision": "city",
+    "label": "Lisbon"
+  },
+  "region": null,
+  "actors": []
+}

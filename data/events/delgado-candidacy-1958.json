@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "delgado-candidacy-1958",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    },
+    {
+      "source": "meneses-2009-salazar",
+      "locator": null
+    }
+  ],
+  "title": "Humberto Delgado's presidential candidacy",
+  "summary": "General Humberto Delgado ran against the regime's candidate in the presidential election of 8 June 1958; the campaign drew large crowds and the official result was widely disbelieved.",
+  "when": {
+    "start": 1958,
+    "end": 1958,
+    "date": "1958-06-08",
+    "calendar": "gregorian"
+  },
+  "where": {
+    "lon": -9.14,
+    "lat": 38.72,
+    "precision": "city",
+    "label": "Lisbon"
+  },
+  "region": null,
+  "actors": []
+}

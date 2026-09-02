@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "mozambique-war-begins-1964",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "macqueen-1997-decolonization",
+      "locator": null
+    }
+  ],
+  "title": "Beginning of the war in Mozambique",
+  "summary": "FRELIMO opened the armed struggle in Mozambique with an attack at Chai, in Cabo Delgado, on 25 September 1964.",
+  "when": {
+    "start": 1964,
+    "end": 1964,
+    "date": "1964-09-25",
+    "calendar": "gregorian"
+  },
+  "where": {
+    "lon": 40,
+    "lat": -12.4,
+    "precision": "region",
+    "label": "Chai, Cabo Delgado"
+  },
+  "region": null,
+  "actors": []
+}

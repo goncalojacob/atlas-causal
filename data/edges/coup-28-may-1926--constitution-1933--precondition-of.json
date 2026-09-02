@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "coup-28-may-1926--constitution-1933--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    },
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    }
+  ],
+  "from": "coup-28-may-1926",
+  "to": "constitution-1933",
+  "type": "precondition-of",
+  "confidence": "consensus",
+  "explanation": "The Estado Novo was built inside the Military Dictatorship that 28 May created; the 1933 constitution formalised a state of exception that had lasted seven years.",
+  "dispute": null
+}

@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "constituent-assembly-election-1975--25-november-1975--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "maxwell-1995-making-of-portuguese-democracy",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    }
+  ],
+  "from": "constituent-assembly-election-1975",
+  "to": "25-november-1975",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The election showed that a majority of voters supported the moderate parties, giving the officers who suppressed the radical uprising in November a legitimacy the revolutionary left could not claim.",
+  "dispute": null
+}

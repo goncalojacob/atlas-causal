@@ -28,6 +28,12 @@ These are not preferences. Ask before breaking any of them.
 - **No database.** Data is JSON files in the repo, validated on every commit.
 - **No AI-generated historical claims.** Every edge explanation is written by a
   person. This one is not negotiable.
+  One exception, decided by the owner on 2026-09-02: the 20th–21st century
+  Portugal records under `data/` are a **test dataset drafted by the
+  assistant**. Each carries `authors: [{ "name": "Claude (assistant draft,
+  unreviewed)", "github": null }]`. They exist to exercise the model and the
+  interface, must be reviewed or rewritten by a person before the site goes
+  public, and are not a precedent for any other period.
 
 ## Commands
 

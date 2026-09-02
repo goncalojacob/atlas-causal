@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "salazar-finance-minister-1928--salazar-president-of-council-1932--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "meneses-2009-salazar",
+      "locator": null
+    },
+    {
+      "source": "rosas-2012-salazar-e-o-poder",
+      "locator": null
+    }
+  ],
+  "from": "salazar-finance-minister-1928",
+  "to": "salazar-president-of-council-1932",
+  "type": "caused",
+  "confidence": "consensus",
+  "explanation": "The balanced budgets from 1928 onwards were the basis of Salazar's authority within the dictatorship; his political ascendancy over the military was built on his financial record.",
+  "dispute": null
+}

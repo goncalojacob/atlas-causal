@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "eec-application-1977--eec-accession-1986--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    }
+  ],
+  "from": "eec-application-1977",
+  "to": "eec-accession-1986",
+  "type": "caused",
+  "confidence": "consensus",
+  "explanation": "Accession in 1986 was the outcome of the negotiation opened by the 1977 application, prolonged by the Community's own difficulties and by the parallel Spanish application.",
+  "dispute": null
+}

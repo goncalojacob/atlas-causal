@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "macau-handover-1999",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    }
+  ],
+  "title": "Handover of Macau",
+  "summary": "Portugal transferred the administration of Macau to China on 20 December 1999 under the Joint Declaration of 1987.",
+  "when": {
+    "start": 1999,
+    "end": 1999,
+    "date": "1999-12-20",
+    "calendar": "gregorian"
+  },
+  "where": {
+    "lon": 113.54,
+    "lat": 22.2,
+    "precision": "city",
+    "label": "Macau"
+  },
+  "region": null,
+  "actors": []
+}

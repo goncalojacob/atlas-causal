@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "nato-founding-1949",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    }
+  ],
+  "title": "Portugal signs the North Atlantic Treaty",
+  "summary": "Portugal was one of the twelve founding signatories of the North Atlantic Treaty in Washington on 4 April 1949, the only non-democratic member at its foundation.",
+  "when": {
+    "start": 1949,
+    "end": 1949,
+    "date": "1949-04-04",
+    "calendar": "gregorian"
+  },
+  "where": {
+    "lon": -77.04,
+    "lat": 38.9,
+    "precision": "city",
+    "label": "Washington"
+  },
+  "region": null,
+  "actors": []
+}

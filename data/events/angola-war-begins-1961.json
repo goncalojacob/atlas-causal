@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "angola-war-begins-1961",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "macqueen-1997-decolonization",
+      "locator": null
+    },
+    {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    }
+  ],
+  "title": "Beginning of the war in Angola",
+  "summary": "Attacks on prisons in Luanda on 4 February 1961 and the uprisings in the north from 15 March opened the armed conflict in Angola, the first front of the colonial war.",
+  "when": {
+    "start": 1961,
+    "end": 1961,
+    "date": "1961-02-04",
+    "calendar": "gregorian"
+  },
+  "where": {
+    "lon": 13.23,
+    "lat": -8.84,
+    "precision": "city",
+    "label": "Luanda"
+  },
+  "region": null,
+  "actors": []
+}

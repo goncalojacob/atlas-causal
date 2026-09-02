@@ -1,0 +1,1112 @@
+{
+  "edges": [
+    {
+      "aliases": [],
+      "confidence": "consensus",
+      "from": "25-november-1975",
+      "id": "25-november-1975--constitution-1976--enabled",
+      "status": "active",
+      "supersededBy": null,
+      "to": "constitution-1976",
+      "type": "enabled"
+    },
+    {
+      "aliases": [],
+      "confidence": "consensus",
+      "from": "angola-war-begins-1961",
+      "id": "angola-war-begins-1961--carnation-revolution-1974--caused",
+      "status": "active",
+      "supersededBy": null,
+      "to": "carnation-revolution-1974",
+      "type": "caused"
+    },
+    {
+      "aliases": [],
+      "confidence": "disputed",
+      "from": "angola-war-begins-1961",
+      "id": "angola-war-begins-1961--goa-annexed-1961--enabled",
+      "status": "active",
+      "supersededBy": null,
+      "to": "goa-annexed-1961",
+      "type": "enabled"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "angola-war-begins-1961",
+      "id": "angola-war-begins-1961--guinea-war-begins-1963--inspired",
+      "status": "active",
+      "supersededBy": null,
+      "to": "guinea-war-begins-1963",
+      "type": "inspired"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "angola-war-begins-1961",
+      "id": "angola-war-begins-1961--mozambique-war-begins-1964--inspired",
+      "status": "active",
+      "supersededBy": null,
+      "to": "mozambique-war-begins-1964",
+      "type": "inspired"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "azores-agreement-1943",
+      "id": "azores-agreement-1943--nato-founding-1949--enabled",
+      "status": "active",
+      "supersededBy": null,
+      "to": "nato-founding-1949",
+      "type": "enabled"
+    },
+    {
+      "aliases": [],
+      "confidence": "disputed",
+      "from": "battle-of-the-lys-1918",
+      "id": "battle-of-the-lys-1918--coup-28-may-1926--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "coup-28-may-1926",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "caetano-succeeds-salazar-1968",
+      "id": "caetano-succeeds-salazar-1968--carnation-revolution-1974--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "carnation-revolution-1974",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "consensus",
+      "from": "carnation-revolution-1974",
+      "id": "carnation-revolution-1974--angola-independence-1975--caused",
+      "status": "active",
+      "supersededBy": null,
+      "to": "angola-independence-1975",
+      "type": "caused"
+    },
+    {
+      "aliases": [],
+      "confidence": "consensus",
+      "from": "carnation-revolution-1974",
+      "id": "carnation-revolution-1974--constituent-assembly-election-1975--caused",
+      "status": "active",
+      "supersededBy": null,
+      "to": "constituent-assembly-election-1975",
+      "type": "caused"
+    },
+    {
+      "aliases": [],
+      "confidence": "consensus",
+      "from": "carnation-revolution-1974",
+      "id": "carnation-revolution-1974--east-timor-invasion-1975--enabled",
+      "status": "active",
+      "supersededBy": null,
+      "to": "east-timor-invasion-1975",
+      "type": "enabled"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "carnation-revolution-1974",
+      "id": "carnation-revolution-1974--macau-handover-1999--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "macau-handover-1999",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "consensus",
+      "from": "carnation-revolution-1974",
+      "id": "carnation-revolution-1974--nationalisations-1975--enabled",
+      "status": "active",
+      "supersededBy": null,
+      "to": "nationalisations-1975",
+      "type": "enabled"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "constituent-assembly-election-1975",
+      "id": "constituent-assembly-election-1975--25-november-1975--enabled",
+      "status": "active",
+      "supersededBy": null,
+      "to": "25-november-1975",
+      "type": "enabled"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "constitution-1911",
+      "id": "constitution-1911--sidonio-pais-coup-1917--reacted-to",
+      "status": "active",
+      "supersededBy": null,
+      "to": "sidonio-pais-coup-1917",
+      "type": "reacted-to"
+    },
+    {
+      "aliases": [],
+      "confidence": "consensus",
+      "from": "constitution-1976",
+      "id": "constitution-1976--eec-application-1977--enabled",
+      "status": "active",
+      "supersededBy": null,
+      "to": "eec-application-1977",
+      "type": "enabled"
+    },
+    {
+      "aliases": [],
+      "confidence": "consensus",
+      "from": "coup-28-may-1926",
+      "id": "coup-28-may-1926--constitution-1933--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "constitution-1933",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "consensus",
+      "from": "coup-28-may-1926",
+      "id": "coup-28-may-1926--salazar-finance-minister-1928--enabled",
+      "status": "active",
+      "supersededBy": null,
+      "to": "salazar-finance-minister-1928",
+      "type": "enabled"
+    },
+    {
+      "aliases": [],
+      "confidence": "consensus",
+      "from": "east-timor-invasion-1975",
+      "id": "east-timor-invasion-1975--east-timor-independence-2002--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "east-timor-independence-2002",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "disputed",
+      "from": "eec-accession-1986",
+      "id": "eec-accession-1986--troika-bailout-2011--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "troika-bailout-2011",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "consensus",
+      "from": "eec-application-1977",
+      "id": "eec-application-1977--eec-accession-1986--caused",
+      "status": "active",
+      "supersededBy": null,
+      "to": "eec-accession-1986",
+      "type": "caused"
+    },
+    {
+      "aliases": [],
+      "confidence": "consensus",
+      "from": "germany-declares-war-1916",
+      "id": "germany-declares-war-1916--battle-of-the-lys-1918--caused",
+      "status": "active",
+      "supersededBy": null,
+      "to": "battle-of-the-lys-1918",
+      "type": "caused"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "germany-declares-war-1916",
+      "id": "germany-declares-war-1916--sidonio-pais-coup-1917--caused",
+      "status": "active",
+      "supersededBy": null,
+      "to": "sidonio-pais-coup-1917",
+      "type": "caused"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "guinea-bissau-declares-independence-1973",
+      "id": "guinea-bissau-declares-independence-1973--portugal-e-o-futuro-1974--caused",
+      "status": "active",
+      "supersededBy": null,
+      "to": "portugal-e-o-futuro-1974",
+      "type": "caused"
+    },
+    {
+      "aliases": [],
+      "confidence": "consensus",
+      "from": "guinea-war-begins-1963",
+      "id": "guinea-war-begins-1963--carnation-revolution-1974--caused",
+      "status": "active",
+      "supersededBy": null,
+      "to": "carnation-revolution-1974",
+      "type": "caused"
+    },
+    {
+      "aliases": [],
+      "confidence": "consensus",
+      "from": "guinea-war-begins-1963",
+      "id": "guinea-war-begins-1963--guinea-bissau-declares-independence-1973--caused",
+      "status": "active",
+      "supersededBy": null,
+      "to": "guinea-bissau-declares-independence-1973",
+      "type": "caused"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "law-of-separation-1911",
+      "id": "law-of-separation-1911--coup-28-may-1926--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "coup-28-may-1926",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "nationalisations-1975",
+      "id": "nationalisations-1975--25-november-1975--reacted-to",
+      "status": "active",
+      "supersededBy": null,
+      "to": "25-november-1975",
+      "type": "reacted-to"
+    },
+    {
+      "aliases": [],
+      "confidence": "disputed",
+      "from": "nato-founding-1949",
+      "id": "nato-founding-1949--un-admission-1955--enabled",
+      "status": "active",
+      "supersededBy": null,
+      "to": "un-admission-1955",
+      "type": "enabled"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "noite-sangrenta-1921",
+      "id": "noite-sangrenta-1921--coup-28-may-1926--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "coup-28-may-1926",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "consensus",
+      "from": "portugal-e-o-futuro-1974",
+      "id": "portugal-e-o-futuro-1974--carnation-revolution-1974--enabled",
+      "status": "active",
+      "supersededBy": null,
+      "to": "carnation-revolution-1974",
+      "type": "enabled"
+    },
+    {
+      "aliases": [],
+      "confidence": "consensus",
+      "from": "republic-proclaimed-1910",
+      "id": "republic-proclaimed-1910--constitution-1911--caused",
+      "status": "active",
+      "supersededBy": null,
+      "to": "constitution-1911",
+      "type": "caused"
+    },
+    {
+      "aliases": [],
+      "confidence": "consensus",
+      "from": "republic-proclaimed-1910",
+      "id": "republic-proclaimed-1910--law-of-separation-1911--caused",
+      "status": "active",
+      "supersededBy": null,
+      "to": "law-of-separation-1911",
+      "type": "caused"
+    },
+    {
+      "aliases": [],
+      "confidence": "consensus",
+      "from": "salazar-finance-minister-1928",
+      "id": "salazar-finance-minister-1928--salazar-president-of-council-1932--caused",
+      "status": "active",
+      "supersededBy": null,
+      "to": "salazar-president-of-council-1932",
+      "type": "caused"
+    },
+    {
+      "aliases": [],
+      "confidence": "consensus",
+      "from": "salazar-president-of-council-1932",
+      "id": "salazar-president-of-council-1932--constitution-1933--caused",
+      "status": "active",
+      "supersededBy": null,
+      "to": "constitution-1933",
+      "type": "caused"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "sidonio-pais-assassinated-1918",
+      "id": "sidonio-pais-assassinated-1918--noite-sangrenta-1921--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "noite-sangrenta-1921",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "un-admission-1955",
+      "id": "un-admission-1955--angola-war-begins-1961--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "angola-war-begins-1961",
+      "type": "precondition-of"
+    }
+  ],
+  "events": [
+    {
+      "aliases": [],
+      "id": "25-november-1975",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "25 November",
+      "when": {
+        "calendar": "gregorian",
+        "date": "1975-11-25",
+        "end": 1975,
+        "start": 1975
+      },
+      "where": {
+        "label": "Lisbon",
+        "lat": 38.72,
+        "lon": -9.14,
+        "precision": "city"
+      }
+    },
+    {
+      "aliases": [],
+      "id": "angola-independence-1975",
+      "region": "africa",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Independence of Angola",
+      "when": {
+        "calendar": "gregorian",
+        "date": "1975-11-11",
+        "end": 1975,
+        "start": 1975
+      },
+      "where": {
+        "label": "Luanda",
+        "lat": -8.84,
+        "lon": 13.23,
+        "precision": "city"
+      }
+    },
+    {
+      "aliases": [],
+      "id": "angola-war-begins-1961",
+      "region": "africa",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Beginning of the war in Angola",
+      "when": {
+        "calendar": "gregorian",
+        "date": "1961-02-04",
+        "end": 1961,
+        "start": 1961
+      },
+      "where": {
+        "label": "Luanda",
+        "lat": -8.84,
+        "lon": 13.23,
+        "precision": "city"
+      }
+    },
+    {
+      "aliases": [],
+      "id": "azores-agreement-1943",
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Anglo-Portuguese agreement on Azores bases",
+      "when": {
+        "calendar": "gregorian",
+        "date": "1943-08-17",
+        "end": 1943,
+        "start": 1943
+      },
+      "where": {
+        "label": "Lajes, Terceira",
+        "lat": 38.76,
+        "lon": -27.09,
+        "precision": "city"
+      }
+    },
+    {
+      "aliases": [],
+      "id": "battle-of-the-lys-1918",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Battle of the Lys",
+      "when": {
+        "calendar": "gregorian",
+        "date": "1918-04-09",
+        "end": 1918,
+        "start": 1918
+      },
+      "where": {
+        "label": "Flanders, near Laventie",
+        "lat": 50.62,
+        "lon": 2.78,
+        "precision": "region"
+      }
+    },
+    {
+      "aliases": [],
+      "id": "caetano-succeeds-salazar-1968",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Marcelo Caetano succeeds Salazar",
+      "when": {
+        "calendar": "gregorian",
+        "date": "1968-09-27",
+        "end": 1968,
+        "start": 1968
+      },
+      "where": {
+        "label": "Lisbon",
+        "lat": 38.72,
+        "lon": -9.14,
+        "precision": "city"
+      }
+    },
+    {
+      "aliases": [],
+      "id": "carnation-revolution-1974",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "25 April",
+      "when": {
+        "calendar": "gregorian",
+        "date": "1974-04-25",
+        "end": 1974,
+        "start": 1974
+      },
+      "where": {
+        "label": "Lisbon",
+        "lat": 38.72,
+        "lon": -9.14,
+        "precision": "city"
+      }
+    },
+    {
+      "aliases": [],
+      "id": "constituent-assembly-election-1975",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Constituent Assembly election",
+      "when": {
+        "calendar": "gregorian",
+        "date": "1975-04-25",
+        "end": 1975,
+        "start": 1975
+      },
+      "where": {
+        "label": "Lisbon",
+        "lat": 38.72,
+        "lon": -9.14,
+        "precision": "city"
+      }
+    },
+    {
+      "aliases": [],
+      "id": "constitution-1911",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Constitution of 1911",
+      "when": {
+        "calendar": "gregorian",
+        "date": "1911-08-21",
+        "end": 1911,
+        "start": 1911
+      },
+      "where": {
+        "label": "Lisbon",
+        "lat": 38.72,
+        "lon": -9.14,
+        "precision": "city"
+      }
+    },
+    {
+      "aliases": [],
+      "id": "constitution-1933",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Constitution of 1933",
+      "when": {
+        "calendar": "gregorian",
+        "date": "1933-03-19",
+        "end": 1933,
+        "start": 1933
+      },
+      "where": {
+        "label": "Lisbon",
+        "lat": 38.72,
+        "lon": -9.14,
+        "precision": "city"
+      }
+    },
+    {
+      "aliases": [],
+      "id": "constitution-1976",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Constitution of 1976",
+      "when": {
+        "calendar": "gregorian",
+        "date": "1976-04-02",
+        "end": 1976,
+        "start": 1976
+      },
+      "where": {
+        "label": "Lisbon",
+        "lat": 38.72,
+        "lon": -9.14,
+        "precision": "city"
+      }
+    },
+    {
+      "aliases": [],
+      "id": "coup-28-may-1926",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Coup of 28 May",
+      "when": {
+        "calendar": "gregorian",
+        "date": "1926-05-28",
+        "end": 1926,
+        "start": 1926
+      },
+      "where": {
+        "label": "Braga",
+        "lat": 41.55,
+        "lon": -8.42,
+        "precision": "city"
+      }
+    },
+    {
+      "aliases": [],
+      "id": "delgado-candidacy-1958",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Humberto Delgado's presidential candidacy",
+      "when": {
+        "calendar": "gregorian",
+        "date": "1958-06-08",
+        "end": 1958,
+        "start": 1958
+      },
+      "where": {
+        "label": "Lisbon",
+        "lat": 38.72,
+        "lon": -9.14,
+        "precision": "city"
+      }
+    },
+    {
+      "aliases": [],
+      "id": "east-timor-independence-2002",
+      "region": "asia",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Independence of East Timor",
+      "when": {
+        "calendar": "gregorian",
+        "date": "2002-05-20",
+        "end": 2002,
+        "start": 2002
+      },
+      "where": {
+        "label": "Dili",
+        "lat": -8.56,
+        "lon": 125.57,
+        "precision": "city"
+      }
+    },
+    {
+      "aliases": [],
+      "id": "east-timor-invasion-1975",
+      "region": "asia",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Indonesia invades East Timor",
+      "when": {
+        "calendar": "gregorian",
+        "date": "1975-12-07",
+        "end": 1975,
+        "start": 1975
+      },
+      "where": {
+        "label": "Dili",
+        "lat": -8.56,
+        "lon": 125.57,
+        "precision": "city"
+      }
+    },
+    {
+      "aliases": [],
+      "id": "eec-accession-1986",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Portugal joins the EEC",
+      "when": {
+        "calendar": "gregorian",
+        "date": "1986-01-01",
+        "end": 1986,
+        "start": 1986
+      },
+      "where": {
+        "label": "Lisbon",
+        "lat": 38.72,
+        "lon": -9.14,
+        "precision": "city"
+      }
+    },
+    {
+      "aliases": [],
+      "id": "eec-application-1977",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Portugal applies to join the EEC",
+      "when": {
+        "calendar": "gregorian",
+        "date": "1977-03-28",
+        "end": 1977,
+        "start": 1977
+      },
+      "where": {
+        "label": "Lisbon",
+        "lat": 38.72,
+        "lon": -9.14,
+        "precision": "city"
+      }
+    },
+    {
+      "aliases": [],
+      "id": "germany-declares-war-1916",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Germany declares war on Portugal",
+      "when": {
+        "calendar": "gregorian",
+        "date": "1916-03-09",
+        "end": 1916,
+        "start": 1916
+      },
+      "where": {
+        "label": "Berlin",
+        "lat": 52.52,
+        "lon": 13.4,
+        "precision": "city"
+      }
+    },
+    {
+      "aliases": [],
+      "id": "goa-annexed-1961",
+      "region": "asia",
+      "regionMethod": "nearest",
+      "status": "active",
+      "supersededBy": null,
+      "title": "India annexes Goa, Daman and Diu",
+      "when": {
+        "calendar": "gregorian",
+        "date": "1961-12-18",
+        "end": 1961,
+        "start": 1961
+      },
+      "where": {
+        "label": "Panaji",
+        "lat": 15.49,
+        "lon": 73.83,
+        "precision": "city"
+      }
+    },
+    {
+      "aliases": [],
+      "id": "guinea-bissau-declares-independence-1973",
+      "region": "africa",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "PAIGC declares the independence of Guinea-Bissau",
+      "when": {
+        "calendar": "gregorian",
+        "date": "1973-09-24",
+        "end": 1973,
+        "start": 1973
+      },
+      "where": {
+        "label": "Boé",
+        "lat": 11.75,
+        "lon": -14.2,
+        "precision": "region"
+      }
+    },
+    {
+      "aliases": [],
+      "id": "guinea-war-begins-1963",
+      "region": "africa",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Beginning of the war in Guinea",
+      "when": {
+        "calendar": "gregorian",
+        "date": "1963-01-23",
+        "end": 1963,
+        "start": 1963
+      },
+      "where": {
+        "label": "Tite",
+        "lat": 11.42,
+        "lon": -15.35,
+        "precision": "city"
+      }
+    },
+    {
+      "aliases": [],
+      "id": "law-of-separation-1911",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Law of Separation of Church and State",
+      "when": {
+        "calendar": "gregorian",
+        "date": "1911-04-20",
+        "end": 1911,
+        "start": 1911
+      },
+      "where": {
+        "label": "Lisbon",
+        "lat": 38.72,
+        "lon": -9.14,
+        "precision": "city"
+      }
+    },
+    {
+      "aliases": [],
+      "id": "macau-handover-1999",
+      "region": "asia",
+      "regionMethod": "nearest",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Handover of Macau",
+      "when": {
+        "calendar": "gregorian",
+        "date": "1999-12-20",
+        "end": 1999,
+        "start": 1999
+      },
+      "where": {
+        "label": "Macau",
+        "lat": 22.2,
+        "lon": 113.54,
+        "precision": "city"
+      }
+    },
+    {
+      "aliases": [],
+      "id": "mozambique-war-begins-1964",
+      "region": "africa",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Beginning of the war in Mozambique",
+      "when": {
+        "calendar": "gregorian",
+        "date": "1964-09-25",
+        "end": 1964,
+        "start": 1964
+      },
+      "where": {
+        "label": "Chai, Cabo Delgado",
+        "lat": -12.4,
+        "lon": 40,
+        "precision": "region"
+      }
+    },
+    {
+      "aliases": [],
+      "id": "nationalisations-1975",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Nationalisation of banks and insurance",
+      "when": {
+        "calendar": "gregorian",
+        "date": "1975-03-14",
+        "end": 1975,
+        "start": 1975
+      },
+      "where": {
+        "label": "Lisbon",
+        "lat": 38.72,
+        "lon": -9.14,
+        "precision": "city"
+      }
+    },
+    {
+      "aliases": [],
+      "id": "nato-founding-1949",
+      "region": "americas",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Portugal signs the North Atlantic Treaty",
+      "when": {
+        "calendar": "gregorian",
+        "date": "1949-04-04",
+        "end": 1949,
+        "start": 1949
+      },
+      "where": {
+        "label": "Washington",
+        "lat": 38.9,
+        "lon": -77.04,
+        "precision": "city"
+      }
+    },
+    {
+      "aliases": [],
+      "id": "noite-sangrenta-1921",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Noite Sangrenta",
+      "when": {
+        "calendar": "gregorian",
+        "date": "1921-10-19",
+        "end": 1921,
+        "start": 1921
+      },
+      "where": {
+        "label": "Lisbon",
+        "lat": 38.72,
+        "lon": -9.14,
+        "precision": "city"
+      }
+    },
+    {
+      "aliases": [],
+      "id": "portugal-e-o-futuro-1974",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Publication of Portugal e o Futuro",
+      "when": {
+        "calendar": "gregorian",
+        "date": "1974-02-22",
+        "end": 1974,
+        "start": 1974
+      },
+      "where": {
+        "label": "Lisbon",
+        "lat": 38.72,
+        "lon": -9.14,
+        "precision": "city"
+      }
+    },
+    {
+      "aliases": [],
+      "id": "republic-proclaimed-1910",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Proclamation of the Republic",
+      "when": {
+        "calendar": "gregorian",
+        "date": "1910-10-05",
+        "end": 1910,
+        "start": 1910
+      },
+      "where": {
+        "label": "Lisbon",
+        "lat": 38.72,
+        "lon": -9.14,
+        "precision": "city"
+      }
+    },
+    {
+      "aliases": [],
+      "id": "salazar-finance-minister-1928",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Salazar becomes Minister of Finance",
+      "when": {
+        "calendar": "gregorian",
+        "date": "1928-04-27",
+        "end": 1928,
+        "start": 1928
+      },
+      "where": {
+        "label": "Lisbon",
+        "lat": 38.72,
+        "lon": -9.14,
+        "precision": "city"
+      }
+    },
+    {
+      "aliases": [],
+      "id": "salazar-president-of-council-1932",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Salazar becomes President of the Council",
+      "when": {
+        "calendar": "gregorian",
+        "date": "1932-07-05",
+        "end": 1932,
+        "start": 1932
+      },
+      "where": {
+        "label": "Lisbon",
+        "lat": 38.72,
+        "lon": -9.14,
+        "precision": "city"
+      }
+    },
+    {
+      "aliases": [],
+      "id": "sidonio-pais-assassinated-1918",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Assassination of Sidónio Pais",
+      "when": {
+        "calendar": "gregorian",
+        "date": "1918-12-14",
+        "end": 1918,
+        "start": 1918
+      },
+      "where": {
+        "label": "Lisbon",
+        "lat": 38.72,
+        "lon": -9.14,
+        "precision": "city"
+      }
+    },
+    {
+      "aliases": [],
+      "id": "sidonio-pais-coup-1917",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Sidónio Pais's coup",
+      "when": {
+        "calendar": "gregorian",
+        "date": "1917-12-05",
+        "end": 1917,
+        "start": 1917
+      },
+      "where": {
+        "label": "Lisbon",
+        "lat": 38.72,
+        "lon": -9.14,
+        "precision": "city"
+      }
+    },
+    {
+      "aliases": [],
+      "id": "troika-bailout-2011",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Request for financial assistance",
+      "when": {
+        "calendar": "gregorian",
+        "date": "2011-04-06",
+        "end": 2011,
+        "start": 2011
+      },
+      "where": {
+        "label": "Lisbon",
+        "lat": 38.72,
+        "lon": -9.14,
+        "precision": "city"
+      }
+    },
+    {
+      "aliases": [],
+      "id": "un-admission-1955",
+      "region": "americas",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Portugal admitted to the United Nations",
+      "when": {
+        "calendar": "gregorian",
+        "date": "1955-12-14",
+        "end": 1955,
+        "start": 1955
+      },
+      "where": {
+        "label": "New York",
+        "lat": 40.75,
+        "lon": -73.97,
+        "precision": "city"
+      }
+    }
+  ],
+  "schema": 1
+}

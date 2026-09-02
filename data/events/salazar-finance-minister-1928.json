@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "salazar-finance-minister-1928",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "meneses-2009-salazar",
+      "locator": null
+    },
+    {
+      "source": "rosas-2012-salazar-e-o-poder",
+      "locator": null
+    }
+  ],
+  "title": "Salazar becomes Minister of Finance",
+  "summary": "António de Oliveira Salazar accepted the Finance portfolio on 27 April 1928 on condition of a veto over the spending of every other ministry.",
+  "when": {
+    "start": 1928,
+    "end": 1928,
+    "date": "1928-04-27",
+    "calendar": "gregorian"
+  },
+  "where": {
+    "lon": -9.14,
+    "lat": 38.72,
+    "precision": "city",
+    "label": "Lisbon"
+  },
+  "region": null,
+  "actors": []
+}

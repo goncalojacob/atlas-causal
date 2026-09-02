@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "azores-agreement-1943--nato-founding-1949--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    }
+  ],
+  "from": "azores-agreement-1943",
+  "to": "nato-founding-1949",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The Azores agreement made Portugal a strategic partner of the Western allies before the war ended; the archipelago's value in Atlantic defence is the usual explanation for the invitation of an authoritarian regime into the alliance in 1949.",
+  "dispute": null
+}

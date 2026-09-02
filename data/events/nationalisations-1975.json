@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "nationalisations-1975",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "maxwell-1995-making-of-portuguese-democracy",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    }
+  ],
+  "title": "Nationalisation of banks and insurance",
+  "summary": "In the days after the failed coup of 11 March 1975, the Council of the Revolution nationalised the banks and insurance companies, the core of the revolutionary economic programme.",
+  "when": {
+    "start": 1975,
+    "end": 1975,
+    "date": "1975-03-14",
+    "calendar": "gregorian"
+  },
+  "where": {
+    "lon": -9.14,
+    "lat": 38.72,
+    "precision": "city",
+    "label": "Lisbon"
+  },
+  "region": null,
+  "actors": []
+}

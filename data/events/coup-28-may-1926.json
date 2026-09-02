@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "coup-28-may-1926",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "wheeler-1978-republican-portugal",
+      "locator": null
+    },
+    {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    }
+  ],
+  "title": "Coup of 28 May",
+  "summary": "The military uprising that began in Braga under Gomes da Costa on 28 May 1926 ended the First Republic and opened the Military Dictatorship.",
+  "when": {
+    "start": 1926,
+    "end": 1926,
+    "date": "1926-05-28",
+    "calendar": "gregorian"
+  },
+  "where": {
+    "lon": -8.42,
+    "lat": 41.55,
+    "precision": "city",
+    "label": "Braga"
+  },
+  "region": null,
+  "actors": []
+}

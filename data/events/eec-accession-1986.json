@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "eec-accession-1986",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    }
+  ],
+  "title": "Portugal joins the EEC",
+  "summary": "Portugal became a member of the European Economic Community on 1 January 1986; the treaty had been signed at the Jerónimos monastery on 12 June 1985.",
+  "when": {
+    "start": 1986,
+    "end": 1986,
+    "date": "1986-01-01",
+    "calendar": "gregorian"
+  },
+  "where": {
+    "lon": -9.14,
+    "lat": 38.72,
+    "precision": "city",
+    "label": "Lisbon"
+  },
+  "region": null,
+  "actors": []
+}

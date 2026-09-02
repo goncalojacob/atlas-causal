@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "eec-accession-1986--troika-bailout-2011--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "reis-2013-portuguese-slump",
+      "locator": null
+    }
+  ],
+  "from": "eec-accession-1986",
+  "to": "troika-bailout-2011",
+  "type": "precondition-of",
+  "confidence": "disputed",
+  "explanation": "One line of argument holds that integration and later the euro removed the exchange-rate adjustment and cheapened credit, producing the debt accumulation and loss of competitiveness that ended in the 2011 request for assistance.",
+  "dispute": {
+    "text": "The counter-argument locates the crisis in domestic choices — the allocation of credit to non-tradable sectors, fiscal policy, and the failure to raise productivity — which membership permitted but did not dictate; on that reading the 1986 accession is context, not cause.",
+    "sources": [
+      {
+        "source": "telo-2007-historia-contemporanea",
+        "locator": null
+      },
+      {
+        "source": "reis-2013-portuguese-slump",
+        "locator": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "angola-war-begins-1961--guinea-war-begins-1963--inspired",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "macqueen-1997-decolonization",
+      "locator": null
+    }
+  ],
+  "from": "angola-war-begins-1961",
+  "to": "guinea-war-begins-1963",
+  "type": "inspired",
+  "confidence": "probable",
+  "explanation": "The PAIGC had prepared its armed struggle independently, but the Angolan uprising of 1961 and the international attention it drew shaped the timing and the expectations of the other movements in the Portuguese empire.",
+  "dispute": null
+}

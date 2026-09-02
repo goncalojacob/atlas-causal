@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "portugal-e-o-futuro-1974--carnation-revolution-1974--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "maxwell-1995-making-of-portuguese-democracy",
+      "locator": null
+    },
+    {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    }
+  ],
+  "from": "portugal-e-o-futuro-1974",
+  "to": "carnation-revolution-1974",
+  "type": "enabled",
+  "confidence": "consensus",
+  "explanation": "The book gave the captains' movement a political horizon and a senior general willing to lead; its publication and the regime's reaction to it are the immediate political context of the conspiracy that acted on 25 April.",
+  "dispute": null
+}

@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "guinea-war-begins-1963",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "macqueen-1997-decolonization",
+      "locator": null
+    }
+  ],
+  "title": "Beginning of the war in Guinea",
+  "summary": "The PAIGC attack on the barracks at Tite in January 1963 opened the war in Portuguese Guinea, the front the Portuguese army came closest to losing.",
+  "when": {
+    "start": 1963,
+    "end": 1963,
+    "date": "1963-01-23",
+    "calendar": "gregorian"
+  },
+  "where": {
+    "lon": -15.35,
+    "lat": 11.42,
+    "precision": "city",
+    "label": "Tite"
+  },
+  "region": null,
+  "actors": []
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "angola-independence-1975",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "macqueen-1997-decolonization",
+      "locator": null
+    },
+    {
+      "source": "maxwell-1995-making-of-portuguese-democracy",
+      "locator": null
+    }
+  ],
+  "title": "Independence of Angola",
+  "summary": "Portugal withdrew from Angola on 11 November 1975 without transferring power to any of the three liberation movements, which were already at war with one another.",
+  "when": {
+    "start": 1975,
+    "end": 1975,
+    "date": "1975-11-11",
+    "calendar": "gregorian"
+  },
+  "where": {
+    "lon": 13.23,
+    "lat": -8.84,
+    "precision": "city",
+    "label": "Luanda"
+  },
+  "region": null,
+  "actors": []
+}

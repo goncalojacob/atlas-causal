@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "sidonio-pais-assassinated-1918",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "meneses-2004-portugal-1914-1926",
+      "locator": null
+    },
+    {
+      "source": "wheeler-1978-republican-portugal",
+      "locator": null
+    }
+  ],
+  "title": "Assassination of Sidónio Pais",
+  "summary": "Sidónio Pais was shot at Rossio station in Lisbon on 14 December 1918, ending the República Nova after a year and opening a period of acute instability.",
+  "when": {
+    "start": 1918,
+    "end": 1918,
+    "date": "1918-12-14",
+    "calendar": "gregorian"
+  },
+  "where": {
+    "lon": -9.14,
+    "lat": 38.72,
+    "precision": "city",
+    "label": "Lisbon"
+  },
+  "region": null,
+  "actors": []
+}
