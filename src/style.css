@@ -86,6 +86,19 @@ button { font: inherit; }
 .map .mark.of-actor { fill: var(--cobalt-soft); stroke: var(--cobalt); stroke-width: 2.5; }
 .map .mark.on-path { fill: var(--madder); stroke: var(--madder); }
 .map .mark.selected { fill: var(--madder); stroke: var(--paper); stroke-width: 2; }
+/* A larger invisible circle behind every mark, so a click that is merely
+   close still lands on it. */
+.map .hit { fill: transparent; stroke: none; cursor: pointer; }
+/* A stack of marks drawn as one. Heavier ring and a count beside it: the
+   reader has to be able to tell a cluster from a single event. */
+.map .mark.cluster { fill: var(--cobalt-faint); stroke: var(--cobalt); stroke-width: 2.5; }
+.map .mark.cluster:hover { fill: var(--cobalt-soft); }
+.map .cluster-count { fill: var(--cobalt); font-family: var(--font-ui); font-weight: 600; pointer-events: none; }
+.map .mark-label { fill: var(--ink); font-family: var(--font-ui); paint-order: stroke; stroke: var(--paper); stroke-width: 3; pointer-events: none; }
+/* A coincident cluster opened: members on rings, each on a leg back to the
+   point they all share. */
+.map .spread-hub { fill: var(--cobalt); stroke: none; }
+.map .spread-leg { stroke: var(--cobalt-soft); stroke-width: 0.8; vector-effect: non-scaling-stroke; }
 .map .edge { stroke: var(--cobalt-soft); stroke-width: 1.2; vector-effect: non-scaling-stroke; fill: none; }
 .map .edge.chain { stroke: var(--madder); stroke-width: 2; }
 .map .edge.disputed { stroke-dasharray: 5 4; }
@@ -179,6 +192,8 @@ button { font: inherit; }
 .panel .actor-row.highlighted { border-left: 3px solid var(--cobalt); padding-left: 0.5rem; }
 .panel .role { color: var(--ink-soft); font-style: italic; }
 .panel .notice.actor { border-color: var(--cobalt); }
+.panel .cluster-list h2 { margin-top: 0; }
+.panel .cluster-list .when { min-width: 4ch; display: inline-block; }
 
 /* --- reading pages: contribute.html, about.html ----------------------- */
 

@@ -252,6 +252,30 @@ export function createPanel(container, { atlas, state, fixtures = false }) {
     );
   }
 
+  // The events under one mark on the map. Not part of the state — clicking
+  // a cluster does not change what the URL points at — so the next state
+  // change replaces this, which is right: choosing one of them is what the
+  // list is for. It is also the keyboard path into a stack of marks, and
+  // the only way to see the whole stack at once.
+  function clusterHtml(cluster) {
+    const members = cluster.members
+      .map((m) => m.event)
+      .sort((a, b) => startYear(a) - startYear(b) || (a.id < b.id ? -1 : a.id > b.id ? 1 : 0));
+    const place = cluster.representative.event.where?.label ?? null;
+    const rows = members.map((event) => `<li class="actor-row">
+      <span class="when">${esc(formatYear(startYear(event)))}</span>
+      <button type="button" class="link" data-action="select" data-id="${esc(event.id)}">${esc(event.title)}</button>
+      <span class="muted">${esc(laneLabel(event.region))}</span>
+    </li>`);
+    return `<section class="cluster-list">
+      <h2>${members.length} event${members.length === 1 ? '' : 's'} here${place ? ` <span class="count">${esc(place)}</span>` : ''}</h2>
+      <p class="hint">${cluster.coincident
+        ? 'These records share the same coordinates, so no amount of zooming separates them. The map spreads them in a ring instead.'
+        : 'The map draws these as one mark at this zoom. Zoom in and they separate.'}</p>
+      <ul class="actor-rows">${rows.join('')}</ul>
+    </section>`;
+  }
+
   function introHtml() {
     const n = atlas.activeEvents.length;
     if (n === 0 && !fixtures) {
@@ -355,7 +379,13 @@ export function createPanel(container, { atlas, state, fixtures = false }) {
     }
   }
 
+  // Cancels any record text still loading for the view being replaced.
+  function showCluster(cluster) {
+    token += 1;
+    container.innerHTML = clusterHtml(cluster);
+  }
+
   state.subscribe(render);
   render(state.get());
-  return { render };
+  return { render, showCluster };
 }

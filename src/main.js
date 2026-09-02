@@ -27,9 +27,11 @@ try {
   document.getElementById('fixtures-badge').hidden = !fixtures;
   document.body.classList.toggle('fixtures', fixtures);
 
-  createMap(document.getElementById('map'), { atlas, state });
+  // The panel is built first because the map hands it the members of a
+  // cluster of marks the reader clicks on.
+  const panel = createPanel(panelEl, { atlas, state, fixtures });
+  createMap(document.getElementById('map'), { atlas, state, onCluster: (cluster) => panel.showCluster(cluster) });
   createTimeline(document.getElementById('timeline'), { atlas, state });
-  createPanel(panelEl, { atlas, state, fixtures });
 
   for (const box of document.querySelectorAll('input[data-layer]')) {
     box.checked = state.get().layers.includes(box.dataset.layer);

@@ -13,17 +13,30 @@
 // constant, so zooming in shrinks it and clusters split on their own.
 export const MERGE_DISTANCE = 16;
 
-// Members closer together than this never separate: at the map's deepest
-// zoom (40x, MAX_ZOOM in map.js) they are still 2 SVG units apart, well
-// inside a single mark. Zooming into such a cluster would do nothing, so it
-// is spread in a ring instead.
-export const COINCIDENT_EPSILON = 0.05;
+// How far the map zooms. It lives here and not only in map.js because the
+// clustering rule and the zoom limit are one question: whether a cluster
+// can ever be pulled apart depends on how far in the reader is allowed to
+// go. map.js imports this so the two cannot drift.
+export const DEEPEST_ZOOM = 40;
+
+// Members closer together than this are coincident: D / DEEPEST_ZOOM is the
+// merge threshold at the deepest zoom, so nothing this close can be
+// separated by any zoom the map allows. Two records a kilometre apart in
+// Lisbon are coincident by this measure, which is the honest answer —
+// zooming to the limit would leave them a mark's width apart with
+// thirty-seven others still stacked underneath. Such a cluster is spread in
+// a ring instead.
+export const COINCIDENT_EPSILON = MERGE_DISTANCE / DEEPEST_ZOOM;
 
 // The spread: the radius of the first ring and the room one member needs on
 // it, both in SVG units at k = 1 and divided by k when drawn, so the ring
 // keeps its size on screen however far the map is zoomed.
 export const SPREAD_RADIUS = 46;
 export const SPREAD_GAP = 24;
+
+// A hair past the zoom at which a cluster comes apart, so the member that
+// was exactly on the threshold is on the far side of it.
+const SPLIT_MARGIN = 1.05;
 
 function distanceSquared(a, b) {
   const dx = a.x - b.x;
@@ -63,6 +76,14 @@ export function clusterPoints(points, { k = 1, distance = MERGE_DISTANCE, epsilo
       }
     }
     const coincident = members.every((m) => distanceSquared(seed, m) <= withinEpsilon);
+    // The zoom at which everything that *can* leave this cluster has left,
+    // and only the members no zoom can part are still on the mark. Clicking
+    // a splittable cluster goes straight there instead of peeling one
+    // neighbour off per click. null when there is nothing to shed.
+    const separable = members.filter((m) => distanceSquared(seed, m) > withinEpsilon);
+    const nearestSeparable = separable.length
+      ? Math.sqrt(Math.min(...separable.map((m) => distanceSquared(seed, m))))
+      : null;
     clusters.push({
       // The representative's id names the cluster: stable across renders as
       // long as the same events are on screen, so a spread survives one.
@@ -82,6 +103,7 @@ export function clusterPoints(points, { k = 1, distance = MERGE_DISTANCE, epsilo
       // Zooming in will eventually separate these; zooming into a
       // coincident cluster never would.
       splittable: members.length > 1 && !coincident,
+      coreZoom: nearestSeparable === null ? null : (distance / nearestSeparable) * SPLIT_MARGIN,
       weight: members.reduce((sum, m) => sum + (m.weight ?? 0), 0),
     });
   }

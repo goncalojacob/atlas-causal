@@ -6,7 +6,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import {
   clusterPoints, spreadPositions, byWeightThenId,
-  MERGE_DISTANCE, COINCIDENT_EPSILON, SPREAD_RADIUS, SPREAD_GAP,
+  MERGE_DISTANCE, COINCIDENT_EPSILON, DEEPEST_ZOOM, SPREAD_RADIUS, SPREAD_GAP,
 } from '../src/map/cluster.js';
 
 const point = (id, x, y, weight = 0) => ({ id, x, y, weight });
@@ -85,6 +85,40 @@ test('coincident members are recognised and never counted as splittable', () => 
   const [alone] = clusterPoints([point('only', 0, 0, 1)], { k: 1 });
   assert.equal(alone.coincident, true, 'one point is trivially coincident with itself');
   assert.equal(alone.splittable, false, 'but a cluster of one is never split or spread');
+});
+
+test('coincident means no zoom the map allows could separate them', () => {
+  // The epsilon is the merge threshold at the deepest zoom: exactly the
+  // distance below which zooming to the limit still leaves two marks merged.
+  assert.equal(COINCIDENT_EPSILON, MERGE_DISTANCE / DEEPEST_ZOOM);
+  const hair = COINCIDENT_EPSILON * 0.9;
+  const stack = [point('core', 0, 0, 2), point('almost', hair, 0, 1)];
+  const [atLimit] = clusterPoints(stack, { k: DEEPEST_ZOOM });
+  assert.equal(atLimit.count, 2, 'the deepest zoom does not part them');
+  assert.equal(atLimit.coincident, true);
+  // A hair further and the deepest zoom does part them, so they are not.
+  const parted = clusterPoints([point('core', 0, 0, 2), point('almost', COINCIDENT_EPSILON * 1.1, 0, 1)], { k: DEEPEST_ZOOM });
+  assert.equal(parted.length, 2);
+});
+
+test('coreZoom is the zoom at which only the inseparable members are left', () => {
+  // A stack of three on one point, a neighbour at 6 and another at 10.
+  const points = [
+    point('stack-a', 0, 0, 9), point('stack-b', 0, 0, 4), point('stack-c', 0, 0, 1),
+    point('near', 6, 0, 2), point('far', 10, 0, 3),
+  ];
+  const [cluster] = clusterPoints(points, { k: 1 });
+  assert.equal(cluster.count, 5);
+  assert.equal(cluster.splittable, true);
+  // The nearest member that can leave is `near`, at 6: past D/6 it is gone,
+  // and so is everything further out.
+  assert.ok(cluster.coreZoom > MERGE_DISTANCE / 6 && cluster.coreZoom < (MERGE_DISTANCE / 6) * 1.1);
+  const core = clusterPoints(points, { k: cluster.coreZoom });
+  const stack = core.find((c) => c.key === 'stack-a');
+  assert.deepEqual(stack.members.map((m) => m.id).sort(), ['stack-a', 'stack-b', 'stack-c']);
+  assert.equal(stack.coincident, true, 'one click on the blob reaches a cluster that can be spread');
+  assert.equal(stack.coreZoom, null, 'and it has nothing left to shed');
+  assert.equal(clusterPoints([point('only', 0, 0, 1)], { k: 1 })[0].coreZoom, null);
 });
 
 test('the result does not depend on the order the points arrive in', () => {
