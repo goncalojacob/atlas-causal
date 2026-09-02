@@ -196,9 +196,84 @@ test('rule 13: source identifiers per type', async () => {
   assert.equal(rulesHit(r, 13)[0].path, '/creators');
 });
 
-test('rule 14: actors stay empty', async () => {
-  const r = await run((fx) => { fx.byId['fixture-event-a'].actors = ['fixture-actor']; });
-  assert.equal(rulesHit(r, 14).length, 1);
+test('rule 14: an event\'s actors resolve, with a role each', async () => {
+  // The fixture set is the passing case: three events carry actors.
+  let r = await run();
+  assert.equal(rulesHit(r, 14).length, 0, messages(r));
+
+  r = await run((fx) => { fx.byId['fixture-event-a'].actors = [{ actor: 'nobody-at-all', role: 'leader' }]; });
+  assert.equal(rulesHit(r, 14)[0].path, '/actors/0/actor');
+  // A source is not an actor, however well the id resolves.
+  r = await run((fx) => { fx.byId['fixture-event-a'].actors = [{ actor: 'fixture-source-1', role: 'leader' }]; });
+  assert.equal(rulesHit(r, 14)[0].path, '/actors/0/actor');
+  r = await run((fx) => { fx.byId['fixture-event-a'].actors[0].role = '   '; });
+  assert.equal(rulesHit(r, 14)[0].path, '/actors/0/role');
+  // Two roles for one actor in one event are two facts; the same role twice
+  // is a duplicate, whatever the casing.
+  r = await run((fx) => {
+    fx.byId['fixture-event-a'].actors.push({ actor: 'fixture-actor-one', role: 'target' });
+  });
+  assert.equal(rulesHit(r, 14).length, 0, messages(r));
+  r = await run((fx) => {
+    fx.byId['fixture-event-a'].actors.push({ actor: 'fixture-actor-one', role: 'Leader' });
+  });
+  assert.equal(rulesHit(r, 14)[0].path, '/actors/1');
+});
+
+test('rule 14: an actor has at least one name, none repeated', async () => {
+  let r = await run((fx) => { fx.byId['fixture-actor-one'].names = []; });
+  assert.equal(rulesHit(r, 14)[0].path, '/names');
+  r = await run((fx) => { fx.byId['fixture-actor-one'].names = ['  ']; });
+  assert.equal(rulesHit(r, 14)[0].path, '/names');
+  r = await run((fx) => { fx.byId['fixture-actor-one'].names = ['One', 'One']; });
+  assert.equal(rulesHit(r, 14)[0].path, '/names/1');
+});
+
+test('rules 6, 10, 15 reach actors too', async () => {
+  let r = await run((fx) => { fx.byId['fixture-actor-two'].sources = []; });
+  assert.equal(rulesHit(r, 6)[0].path, '/sources');
+  // An actor needs no lane: it is reached through its events, never put on
+  // the timeline alone.
+  r = await run((fx) => { fx.byId['fixture-actor-one'].where = null; });
+  assert.equal(r.errors.length, 0, messages(r));
+  r = await run((fx) => { fx.byId['fixture-actor-one'].where.lat = 91; });
+  assert.equal(rulesHit(r, 10)[0].path, '/where/lat');
+  r = await run((fx) => { fx.byId['fixture-actor-one'].when = { start: 0, end: 1240 }; });
+  assert.equal(rulesHit(r, 15)[0].path, '/when/start');
+  r = await run((fx) => { fx.byId['fixture-actor-one'].when = { start: 1240, end: 1180 }; });
+  assert.equal(rulesHit(r, 15)[0].path, '/when/end');
+});
+
+test('rule 11: a retired actor cannot be referenced by an active event', async () => {
+  let r = await run((fx) => {
+    fx.byId['fixture-actor-one'].status = 'retracted';
+  });
+  const hits = rulesHit(r, 11);
+  assert.ok(hits.some((e) => e.id === 'fixture-actor-one'), messages(r));
+  assert.ok(hits.some((e) => e.id === 'fixture-event-a' && e.path === '/actors/0/actor'), messages(r));
+  // Retired and unreferenced is fine.
+  r = await run((fx) => {
+    fx.byId['fixture-actor-one'].status = 'retracted';
+    for (const rec of fx.records) {
+      if (rec.kind === 'event') rec.actors = (rec.actors ?? []).filter((a) => a.actor !== 'fixture-actor-one');
+    }
+  });
+  assert.equal(rulesHit(r, 11).length, 0, messages(r));
+});
+
+test('warnings: an unused actor, and an event outside an actor\'s dates', async () => {
+  let r = await run((fx) => {
+    for (const rec of fx.records) {
+      if (rec.kind === 'event') rec.actors = (rec.actors ?? []).filter((a) => a.actor !== 'fixture-actor-two');
+    }
+  });
+  assert.ok(r.warnings.some((w) => w.rule === 'actor-unused' && w.id === 'fixture-actor-two'));
+  // Posthumous events are real, so this is a warning and not an error.
+  r = await run((fx) => { fx.byId['fixture-event-t'].actors.push({ actor: 'fixture-actor-one', role: 'invoked' }); });
+  assert.equal(r.errors.length, 0, messages(r));
+  assert.ok(r.warnings.some((w) => w.rule === 'actor-outside-when' && w.id === 'fixture-event-t'));
+  // An ongoing actor is never outside anything later than its start.
+  assert.equal(r.warnings.filter((w) => w.rule === 'actor-outside-when').length, 1);
 });
 
 test('rule 15: no year 0, ordered bounds, end after start', async () => {

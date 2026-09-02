@@ -34,5 +34,10 @@
     "label": "Fixture place A"
   },
   "region": null,
-  "actors": []
+  "actors": [
+    {
+      "actor": "fixture-actor-one",
+      "role": "leader"
+    }
+  ]
 }

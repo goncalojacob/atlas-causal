@@ -1,4 +1,38 @@
 {
+  "actors": [
+    {
+      "actorType": "person",
+      "aliases": [],
+      "id": "fixture-actor-one",
+      "name": "Fixture Actor One",
+      "names": [
+        "Fixture Actor One",
+        "Fixture the Elder"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": 1240,
+        "start": 1180
+      }
+    },
+    {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "fixture-actor-two",
+      "name": "Fixture Institution Two",
+      "names": [
+        "Fixture Institution Two",
+        "FIT"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 1150
+      }
+    }
+  ],
   "edges": [
     {
       "aliases": [],
@@ -103,6 +137,12 @@
   ],
   "events": [
     {
+      "actors": [
+        {
+          "actor": "fixture-actor-one",
+          "role": "leader"
+        }
+      ],
       "aliases": [],
       "id": "fixture-event-a",
       "region": "fixture-lane-1",
@@ -123,6 +163,7 @@
       }
     },
     {
+      "actors": [],
       "aliases": [],
       "id": "fixture-event-a2",
       "region": "fixture-lane-1",
@@ -143,6 +184,16 @@
       }
     },
     {
+      "actors": [
+        {
+          "actor": "fixture-actor-two",
+          "role": "founded"
+        },
+        {
+          "actor": "fixture-actor-one",
+          "role": "signatory"
+        }
+      ],
       "aliases": [
         "fixture-event-b-old"
       ],
@@ -164,6 +215,7 @@
       }
     },
     {
+      "actors": [],
       "aliases": [],
       "id": "fixture-event-c",
       "region": "fixture-lane-2",
@@ -183,6 +235,7 @@
       }
     },
     {
+      "actors": [],
       "aliases": [],
       "id": "fixture-event-d",
       "region": "fixture-lane-3",
@@ -202,6 +255,7 @@
       }
     },
     {
+      "actors": [],
       "aliases": [],
       "id": "fixture-event-e",
       "region": "fixture-lane-2",
@@ -221,6 +275,7 @@
       }
     },
     {
+      "actors": [],
       "aliases": [],
       "id": "fixture-event-f",
       "region": "fixture-lane-3",
@@ -235,6 +290,7 @@
       "where": null
     },
     {
+      "actors": [],
       "aliases": [],
       "id": "fixture-event-g",
       "region": "fixture-lane-1",
@@ -257,6 +313,7 @@
       }
     },
     {
+      "actors": [],
       "aliases": [],
       "id": "fixture-event-h",
       "region": "fixture-lane-1",
@@ -276,6 +333,7 @@
       }
     },
     {
+      "actors": [],
       "aliases": [],
       "id": "fixture-event-m",
       "region": "fixture-lane-1",
@@ -295,6 +353,7 @@
       }
     },
     {
+      "actors": [],
       "aliases": [],
       "id": "fixture-event-o",
       "region": "fixture-lane-2",
@@ -314,6 +373,12 @@
       }
     },
     {
+      "actors": [
+        {
+          "actor": "fixture-actor-two",
+          "role": "signatory"
+        }
+      ],
       "aliases": [],
       "id": "fixture-event-t",
       "region": "fixture-lane-3",

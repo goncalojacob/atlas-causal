@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "id": "fixture-event-t",
-  "kind": "event",
+  "id": "fixture-actor-one",
+  "kind": "actor",
   "status": "active",
   "supersededBy": null,
   "aliases": [],
@@ -20,23 +20,20 @@
       "locator": null
     }
   ],
-  "title": "Fixture event T",
-  "summary": "Synthetic record used by the test suite. It is not history and describes nothing that happened.",
+  "actorType": "person",
+  "names": [
+    "Fixture Actor One",
+    "Fixture the Elder"
+  ],
+  "summary": "Synthetic record used by the test suite. This person never lived and did nothing.",
   "when": {
-    "start": 1280,
-    "end": 1280
+    "start": 1180,
+    "end": 1240
   },
   "where": {
-    "lon": 25,
-    "lat": 30,
+    "lon": -30,
+    "lat": 40,
     "precision": "city",
-    "label": "Fixture place T"
-  },
-  "region": null,
-  "actors": [
-    {
-      "actor": "fixture-actor-two",
-      "role": "signatory"
-    }
-  ]
+    "label": "Fixture place A"
+  }
 }

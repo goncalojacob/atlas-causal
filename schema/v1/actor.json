@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "v1/actor.json",
+  "title": "Actor",
+  "description": "A person, polity, institution or people that events involve. Actors are never on the timeline alone; they are reached through the events that reference them. names[0] is the display name and the rest are variants and former names, for search; that the list is non-empty is rule 14, because the keyword subset has no minItems.",
+  "type": "object",
+  "required": ["schema", "id", "kind", "status", "supersededBy", "aliases", "authors", "license", "created", "revised", "sources", "actorType", "names", "summary", "when"],
+  "additionalProperties": false,
+  "properties": {
+    "schema": { "$ref": "../common/provenance.json#/properties/schema" },
+    "id": { "$ref": "../common/provenance.json#/properties/id" },
+    "kind": { "const": "actor" },
+    "status": { "$ref": "../common/provenance.json#/properties/status" },
+    "supersededBy": { "$ref": "../common/provenance.json#/properties/supersededBy" },
+    "aliases": { "$ref": "../common/provenance.json#/properties/aliases" },
+    "authors": { "$ref": "../common/provenance.json#/properties/authors" },
+    "license": { "$ref": "../common/provenance.json#/properties/license" },
+    "created": { "$ref": "../common/provenance.json#/properties/created" },
+    "revised": { "$ref": "../common/provenance.json#/properties/revised" },
+    "sources": { "$ref": "../common/provenance.json#/properties/sources" },
+    "actorType": {
+      "type": "string",
+      "enum": ["person", "polity", "institution", "people"]
+    },
+    "names": {
+      "description": "The display name first, then variants, former names, acronyms and other-language forms.",
+      "type": "array",
+      "items": { "type": "string", "minLength": 1, "maxLength": 200 }
+    },
+    "summary": {
+      "description": "Written by a person, like an event summary.",
+      "type": "string",
+      "minLength": 1
+    },
+    "when": {
+      "description": "Birth and death for a person; founding and dissolution for the rest. end: null means ongoing.",
+      "$ref": "../common/interval.json"
+    },
+    "where": {
+      "description": "Birthplace or seat. Optional: an actor with no honest point is not a dot on the map.",
+      "oneOf": [
+        { "type": "null" },
+        { "$ref": "../common/place.json" }
+      ]
+    }
+  }
+}

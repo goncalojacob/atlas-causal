@@ -5,9 +5,9 @@
 // out of the rules pass: the rules assume the shapes the schema guarantees.
 
 import { createValidator } from './schema.js';
-import { checkRules } from './rules.js';
+import { checkRules, normalizeRole } from './rules.js';
 
-export const KINDS = Object.freeze(['event', 'edge', 'source']);
+export const KINDS = Object.freeze(['event', 'edge', 'source', 'actor']);
 export const SCHEMA_VERSION = 1;
 
 function isObject(v) {
@@ -75,14 +75,30 @@ export function byId(a, b) {
   return a.id < b.id ? -1 : a.id > b.id ? 1 : 0;
 }
 
+// The set of roles in use, normalised, sorted by code unit. Emitted in the
+// manifest so a closed vocabulary can be decided later from what people
+// actually wrote (m4-brief).
+export function rolesInUse(events) {
+  const roles = new Set();
+  for (const e of events ?? []) {
+    for (const a of e.actors ?? []) {
+      const role = normalizeRole(a?.role);
+      if (role) roles.add(role);
+    }
+  }
+  return [...roles].sort();
+}
+
 // The topology object: what build-index.mjs writes and what the rules read.
 // Text fields stay out; the site fetches record files for them. `region` on
 // an event is the record's override or, failing that, what deriveRegion
-// says about its place.
+// says about its place. An actor's `summary` and `where` stay out for the
+// same reason: the panel fetches the record when the card is opened.
 export function buildTopology(records, regions, { deriveRegion } = {}) {
   const events = [];
   const edges = [];
   const sources = [];
+  const actors = [];
   for (const r of records) {
     if (r.kind === 'event') {
       let region = typeof r.region === 'string' ? r.region : null;
@@ -104,6 +120,7 @@ export function buildTopology(records, regions, { deriveRegion } = {}) {
         status: r.status,
         supersededBy: r.supersededBy ?? null,
         aliases: r.aliases ?? [],
+        actors: (Array.isArray(r.actors) ? r.actors : []).map((a) => ({ actor: a.actor, role: a.role })),
       });
     } else if (r.kind === 'edge') {
       edges.push({
@@ -118,15 +135,28 @@ export function buildTopology(records, regions, { deriveRegion } = {}) {
       });
     } else if (r.kind === 'source') {
       sources.push(r);
+    } else if (r.kind === 'actor') {
+      actors.push({
+        id: r.id,
+        actorType: r.actorType,
+        name: (r.names ?? [])[0] ?? r.id,
+        names: r.names ?? [],
+        when: r.when,
+        status: r.status,
+        supersededBy: r.supersededBy ?? null,
+        aliases: r.aliases ?? [],
+      });
     }
   }
   events.sort(byId);
   edges.sort(byId);
   sources.sort(byId);
+  actors.sort(byId);
   return {
     events,
     edges,
     sources,
+    actors,
     regions: [...(regions ?? [])].sort((a, b) => a.order - b.order || byId(a, b)),
   };
 }

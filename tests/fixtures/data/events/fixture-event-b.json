@@ -35,5 +35,14 @@
     "label": "Fixture place B"
   },
   "region": null,
-  "actors": []
+  "actors": [
+    {
+      "actor": "fixture-actor-two",
+      "role": "founded"
+    },
+    {
+      "actor": "fixture-actor-one",
+      "role": "signatory"
+    }
+  ]
 }

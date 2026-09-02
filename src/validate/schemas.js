@@ -9,6 +9,7 @@ export const SCHEMA_FILES = Object.freeze([
   'common/interval.json',
   'common/place.json',
   'common/provenance.json',
+  'v1/actor.json',
   'v1/bundle.json',
   'v1/edge.json',
   'v1/event.json',

@@ -16,7 +16,7 @@
     },
     "kind": {
       "type": "string",
-      "enum": ["event", "edge", "source"]
+      "enum": ["event", "edge", "source", "actor"]
     },
     "status": {
       "type": "string",

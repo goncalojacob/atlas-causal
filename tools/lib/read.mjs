@@ -6,7 +6,7 @@ import { readdir, readFile } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import path from 'node:path';
 
-export const KIND_DIRS = Object.freeze({ event: 'events', edge: 'edges', source: 'sources' });
+export const KIND_DIRS = Object.freeze({ event: 'events', edge: 'edges', source: 'sources', actor: 'actors' });
 
 async function readJson(file) {
   const text = await readFile(file, 'utf8');
@@ -28,7 +28,7 @@ export async function readSchemaFiles(schemaDir) {
   return files;
 }
 
-// Every record under data/{events,edges,sources}, with the file it came from,
+// Every record under data/{events,edges,sources,actors}, with the file it came from,
 // so the CLI can check id = file name. Files that are not valid JSON are
 // reported as problems rather than thrown, so one bad file does not hide the
 // rest.

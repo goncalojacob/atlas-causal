@@ -12,7 +12,7 @@ import { mkdir, readdir, readFile, unlink, writeFile } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
-import { buildTopology } from '../src/validate/core.js';
+import { buildTopology, rolesInUse } from '../src/validate/core.js';
 import { createRegionDeriver } from '../src/util/geo.js';
 import { readRecords, readRegions, readRegionPolygons, readLandFiles } from './lib/read.mjs';
 
@@ -55,7 +55,7 @@ export async function buildIndex(dataDir = DEFAULT_DATA) {
   const deriveRegion = polygons ? createRegionDeriver(polygons) : undefined;
   const topology = buildTopology(records, regions, { deriveRegion });
 
-  const topologyText = serialize({ schema: 1, events: topology.events, edges: topology.edges });
+  const topologyText = serialize({ schema: 1, events: topology.events, edges: topology.edges, actors: topology.actors });
   const sourcesText = serialize({ schema: 1, sources: topology.sources });
   const topologyName = `topology-${hashOf(topologyText)}.json`;
   const sourcesName = `sources-${hashOf(sourcesText)}.json`;
@@ -65,10 +65,14 @@ export async function buildIndex(dataDir = DEFAULT_DATA) {
       events: topology.events.length,
       edges: topology.edges.length,
       sources: topology.sources.length,
+      actors: topology.actors.length,
       regions: topology.regions.length,
     },
     files: { topology: `index/${topologyName}`, sources: `index/${sourcesName}` },
     regions: topology.regions,
+    // What people actually wrote in `role`, normalised. The vocabulary is
+    // open on purpose; this is the evidence for closing it later.
+    roles: rolesInUse(topology.events),
     // Paleo-coastlines will list a year range here; the present covers all.
     land: land.map((l) => ({ file: l.file, epoch: l.epoch, from: null, to: null })),
   });
@@ -133,7 +137,7 @@ async function main(argv) {
   }
   await writeIndex(dataDir, built);
   const c = built.topology;
-  console.log(`index written to ${path.relative(process.cwd(), path.join(dataDir, 'index')) || '.'}: ${c.events.length} events, ${c.edges.length} edges, ${c.sources.length} sources`);
+  console.log(`index written to ${path.relative(process.cwd(), path.join(dataDir, 'index')) || '.'}: ${c.events.length} events, ${c.edges.length} edges, ${c.actors.length} actors, ${c.sources.length} sources`);
   return 0;
 }
 

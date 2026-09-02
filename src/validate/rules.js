@@ -11,15 +11,36 @@
 
 import { isValidYear, astronomicalBounds, defaultCalendar } from '../util/dates.js';
 
+// An interval as two astronomical bounds for overlap tests: an open end
+// (`end: null`, ongoing) reaches forward without limit.
+function span(when) {
+  if (!isObject(when)) return null;
+  try {
+    const start = astronomicalBounds(when.start);
+    return { from: start.min, to: when.end === null || when.end === undefined ? Infinity : astronomicalBounds(when.end).max };
+  } catch {
+    return null;
+  }
+}
+
 export const SLUG = /^[a-z0-9]+(-[a-z0-9]+)*$/;
 export const EDGE_TYPES = Object.freeze(['caused', 'enabled', 'reacted-to', 'precondition-of', 'inspired']);
 export const EDGE_ID = /^([a-z0-9]+(?:-[a-z0-9]+)*)--([a-z0-9]+(?:-[a-z0-9]+)*)--(caused|enabled|reacted-to|precondition-of|inspired)$/;
 export const CONFIDENCE_ORDER = Object.freeze(['consensus', 'probable', 'disputed']);
+export const ACTOR_TYPES = Object.freeze(['person', 'polity', 'institution', 'people']);
 export const ALLOWED_LICENSES = Object.freeze({
   event: ['CC-BY-SA-4.0'],
   edge: ['CC-BY-SA-4.0'],
   source: ['CC-BY-SA-4.0'],
+  actor: ['CC-BY-SA-4.0'],
 });
+
+// Roles are free text until there is a reason for a closed vocabulary, so
+// "Leader", "leader " and "leader" are one role: this is the form they are
+// compared and counted in. The record keeps what the contributor wrote.
+export function normalizeRole(role) {
+  return typeof role === 'string' ? role.trim().toLowerCase().replace(/\s+/g, ' ') : '';
+}
 // "Non-trivial" text for explanation and dispute: an argument, not a label.
 export const MIN_TEXT_LENGTH = 40;
 export const HTTP_URL = /^https?:\/\/\S+$/;
@@ -68,6 +89,7 @@ export function checkRules(records, topology = {}) {
   for (const e of topology.events ?? []) add('event', e, false);
   for (const e of topology.edges ?? []) add('edge', e, false);
   for (const s of topology.sources ?? []) add('source', s, false);
+  for (const a of topology.actors ?? []) add('actor', a, false);
 
   const ownIds = new Set();
   for (const r of records) {
@@ -157,7 +179,9 @@ export function checkRules(records, topology = {}) {
     return a;
   };
   for (const r of own) {
-    if (r.kind === 'event' && isObject(r.when)) {
+    // An actor's interval is birth–death or founding–dissolution; the same
+    // arithmetic, the same no-year-zero rule.
+    if ((r.kind === 'event' || r.kind === 'actor') && isObject(r.when)) {
       const start = checkBound(r, '/when/start', r.when.start);
       const end = r.when.end === null ? null : checkBound(r, '/when/end', r.when.end);
       if (start && end && (end.min < start.min || end.max < start.max)) {
@@ -248,7 +272,7 @@ export function checkRules(records, topology = {}) {
 
   // --- rules 6, 7, 8, 9, 14: per-record content ---------------------------
   for (const r of own) {
-    if (r.kind === 'event' || r.kind === 'edge') {
+    if (r.kind === 'event' || r.kind === 'edge' || r.kind === 'actor') {
       if (!Array.isArray(r.sources) || r.sources.length === 0) {
         error(6, r, '/sources', `every ${r.kind} cites at least one source`);
       }
@@ -286,19 +310,42 @@ export function checkRules(records, topology = {}) {
         }
       }
     }
-    if (r.kind === 'event' && Array.isArray(r.actors) && r.actors.length > 0) {
-      error(14, r, '/actors', 'actors must stay empty until data/actors/ exists');
+    // Rule 14: an event's actors resolve, each with a role saying what it
+    // did in this event. The same actor may appear twice in one event only
+    // under different roles — "deposed" and "signatory" are two facts;
+    // "leader" twice is a duplicate.
+    if (r.kind === 'event') {
+      const listed = new Set();
+      (Array.isArray(r.actors) ? r.actors : []).forEach((a, i) => {
+        if (!lookup(a.actor, 'actor')) error(14, r, `/actors/${i}/actor`, `"${a.actor}" is not an actor record`);
+        const role = normalizeRole(a.role);
+        if (role === '') error(14, r, `/actors/${i}/role`, 'a role says what the actor did in this event');
+        const key = `${a.actor} ${role}`;
+        if (listed.has(key)) error(14, r, `/actors/${i}`, `"${a.actor}" is already listed in this event as "${role}"`);
+        listed.add(key);
+      });
+    }
+    if (r.kind === 'actor') {
+      // minItems is outside the schema subset, so the non-empty name list
+      // is checked here (STATUS.md, deviation 22).
+      const names = Array.isArray(r.names) ? r.names.filter((n) => typeof n === 'string' && n.trim() !== '') : [];
+      if (names.length === 0) error(14, r, '/names', 'an actor has at least one name; the first is the display name');
+      names.forEach((name, i) => {
+        if (names.indexOf(name) !== i) error(14, r, `/names/${i}`, `name "${name}" repeated`);
+      });
     }
   }
 
   // --- rule 10: place and region ------------------------------------------
   for (const r of own) {
-    if (r.kind !== 'event') continue;
+    if (r.kind !== 'event' && r.kind !== 'actor') continue;
     const where = isObject(r.where) ? r.where : null;
     if (where) {
       if (typeof where.lon !== 'number' || where.lon < -180 || where.lon > 180) error(10, r, '/where/lon', 'longitude must be within [-180, 180]');
       if (typeof where.lat !== 'number' || where.lat < -90 || where.lat > 90) error(10, r, '/where/lat', 'latitude must be within [-90, 90]');
-    } else if (typeof r.region !== 'string') {
+    } else if (r.kind === 'event' && typeof r.region !== 'string') {
+      // An actor has no lane: it is reached through its events, never put
+      // on the timeline alone.
       error(10, r, '/region', 'region is required when where is absent');
     }
   }
@@ -317,6 +364,20 @@ export function checkRules(records, topology = {}) {
           error(11, r, '', `${r.status} event still has an active edge: ${e.id}`);
         }
       }
+    }
+    if (r.kind === 'actor' && r.status !== 'active') {
+      for (const u of universe.values()) {
+        if (u.kind !== 'event' || u.entry.status !== 'active') continue;
+        if ((u.entry.actors ?? []).some((a) => a?.actor === r.id)) {
+          error(11, r, '', `${r.status} actor is still referenced by the active event "${u.entry.id}"`);
+        }
+      }
+    }
+    if (r.kind === 'event' && r.status === 'active') {
+      (r.actors ?? []).forEach((a, i) => {
+        const actor = lookup(a?.actor, 'actor');
+        if (actor && actor.status !== 'active') error(11, r, `/actors/${i}/actor`, `an active event cannot reference the ${actor.status} actor "${actor.id}"`);
+      });
     }
     if (r.kind === 'edge' && r.status === 'active') {
       for (const end of ['from', 'to']) {
@@ -384,6 +445,35 @@ export function checkRules(records, topology = {}) {
     }
     if (r.kind === 'source' && r.status === 'active' && !cited.has(r.id)) {
       warning('no-citers', r, 'source is cited by nothing under validation');
+    }
+  }
+
+  // An actor nothing references is the actor equivalent of degree zero, and
+  // an event outside an actor's life is a warning rather than an error:
+  // posthumous events are real, and so are institutions acting through
+  // their successors.
+  const referencedActors = new Map();
+  for (const u of universe.values()) {
+    if (u.kind !== 'event' || u.entry.status !== 'active') continue;
+    for (const a of u.entry.actors ?? []) {
+      if (!referencedActors.has(a?.actor)) referencedActors.set(a?.actor, []);
+      referencedActors.get(a?.actor).push(u.entry);
+    }
+  }
+  for (const r of own) {
+    if (r.kind === 'actor' && r.status === 'active' && !referencedActors.has(r.id)) {
+      warning('actor-unused', r, 'actor is referenced by no event');
+    }
+    if (r.kind !== 'event' || r.status !== 'active') continue;
+    const eventSpan = span(r.when);
+    if (!eventSpan) continue;
+    for (const a of r.actors ?? []) {
+      const actor = lookup(a?.actor, 'actor');
+      const actorSpan = actor ? span(actor.when) : null;
+      if (!actorSpan) continue;
+      if (eventSpan.to < actorSpan.from || eventSpan.from > actorSpan.to) {
+        warning('actor-outside-when', r, `the event falls entirely outside "${actor.id}"'s dates`);
+      }
     }
   }
 

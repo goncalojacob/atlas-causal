@@ -38,8 +38,17 @@
       ]
     },
     "actors": {
-      "description": "Must be empty until data/actors/ exists (rule 14).",
-      "type": "array"
+      "description": "The actors of this event and what each did in it — not everyone alive. Roles are free text for now; build-index.mjs emits the set in use so a closed vocabulary can be decided later. That every actor resolves is rule 14.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["actor", "role"],
+        "additionalProperties": false,
+        "properties": {
+          "actor": { "$ref": "../common/provenance.json#/properties/id" },
+          "role": { "type": "string", "minLength": 1, "maxLength": 60 }
+        }
+      }
     }
   }
 }
