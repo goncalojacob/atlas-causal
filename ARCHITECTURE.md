@@ -4,8 +4,19 @@ What the Atlas causal is meant to become, structurally. `CLAUDE.md` has the
 rules, `CONTEXT.md` the reasoning, `STATUS.md` where we are right now. This
 file is the target: the shape every milestone builds toward.
 
-Revision 4, 2 September 2026. Sections marked ● exist in v1; things marked ○
+Revision 5, 2 September 2026. Sections marked ● exist in v1; things marked ○
 are reserved by a line in this file only — no folder, no schema, no code.
+
+**What revision 5 changed, and why.** Nothing in the data model: one derived
+field in the index, one new module, one reserved override. The map drew one
+circle per event at the event's point, and thirty-seven of the sixty records
+in the test dataset share a point in Lisbon, so the map showed one dot and
+let the reader click one of thirty-seven events. `map/cluster.js` (pure,
+tested) now decides which marks overlap at the current zoom and which of
+them no zoom could ever part; `weight` on every topology event says which
+member of a stack the mark should show; `prominence` is reserved as the
+editorial override of that, so nothing an editor thinks is smuggled into a
+derived number. Revision 4 is otherwise intact.
 
 **What revision 4 changed, and why.** The `actor` kind moved from ○ to ●.
 It was the first reserved kind to become necessary rather than merely
@@ -86,7 +97,8 @@ atlas-causal/
 │   ├── graph.js                  ● consequences, ancestors, convergence; pure functions over adjacency
 │   ├── map/
 │   │   ├── projection.js         ● lon/lat → SVG and back; the only file a projection change touches
-│   │   ├── map.js                ● SVG scaffold, pan/zoom, year slider
+│   │   ├── cluster.js            ● pure: which marks overlap at this zoom, which of them no zoom can part
+│   │   ├── map.js                ● SVG scaffold, pan/zoom, year slider, click into a cluster
 │   │   └── layers/land.js  events.js   ●
 │   ├── timeline.js               ● one lane per region; renders only the visible window
 │   ├── timeline-scale.js         ● linear now; the scale is injected
@@ -390,7 +402,8 @@ layers }`, mirrored to the URL so every view is a shareable link.
 | `data.js` | Reads the manifest, loads the topology whole, fetches record text on demand, resolves aliases and `supersededBy` for every kind, builds adjacency and the events of each actor. | How things are drawn. |
 | `graph.js` | Consequences, ancestors, convergence. Pure functions over adjacency; results ordered by type, then confidence. | The DOM. |
 | `map/projection.js` | lon/lat → SVG coordinates and back. | Everything else. |
-| `map/layers/*` | One layer per thing drawn. Renders only records in the visible window; one `<g>` per lane. | Each other. |
+| `map/cluster.js` | Groups projected points that overlap at the current zoom, picks each group's representative by `weight`, says which groups no zoom could part and where a group comes apart. Pure. | The DOM, the projection, what a point means. |
+| `map/layers/*` | One layer per thing drawn. Renders only records in the visible window; one `<g>` per lane. A stack of marks is drawn as one, with a count, and opened by a click. | Each other. |
 | `timeline.js` + `timeline-scale.js` | Lanes from `regions.json`; the scale is injected. | Which regions exist. |
 | `panel.js` | Detail, consequences, convergence, supporting and dissenting citations shown apart, confidence and status shown as such; an event's actors with their roles, and an actor's card. | Traversal logic. |
 | `validate/core.js` | `validate(records, topology)`: schema subset + cross-record rules, pure. Needs the topology to check references, so the form loads it too. | `fs`. |
