@@ -15,7 +15,7 @@ test('validate.mjs passes on the fixtures and prints the warnings', () => {
   const r = cli('validate.mjs', '--data', FIXTURE_DATA, '--index');
   assert.equal(r.status, 0, r.err);
   assert.match(r.out, /warning \[degree-zero\] events\/fixture-event-h\.json/);
-  assert.match(r.out, /28 records, 3 regions: 0 error\(s\), 2 warning\(s\)/);
+  assert.match(r.out, /33 records, 3 regions: 0 error\(s\), 2 warning\(s\)/);
 });
 
 test('validate.mjs passes on the repository data', () => {
@@ -49,7 +49,7 @@ test('build-index.mjs writes an index that validate.mjs --index accepts', async 
     assert.equal(cli('validate.mjs', '--data', dir, '--index').status, 1);
     const b = cli('build-index.mjs', '--data', dir);
     assert.equal(b.status, 0, b.err);
-    assert.match(b.out, /12 events, 10 edges, 2 actors, 4 sources/);
+    assert.match(b.out, /12 events, 10 edges, 4 actors, 3 presences, 4 sources/);
     assert.equal(cli('validate.mjs', '--data', dir, '--index').status, 0);
   } finally {
     await rm(dir, { recursive: true, force: true });

@@ -49,7 +49,7 @@ test('resolve follows aliases and merged tombstones', async () => {
 
 test('actors resolve and carry the events they appear in, chronologically', async () => {
   const atlas = await loadAtlas({ dataRoot: 'tests/fixtures/data/', fetchJson });
-  assert.equal(atlas.actors.size, 2);
+  assert.equal(atlas.actors.size, 4);
   assert.equal(atlas.actors.get('fixture-actor-one').name, 'Fixture Actor One');
   assert.deepEqual(
     atlas.eventsByActor.get('fixture-actor-one').map((a) => [a.event.id, a.role]),

@@ -7,7 +7,7 @@
 import { createValidator } from './schema.js';
 import { checkRules, normalizeRole } from './rules.js';
 
-export const KINDS = Object.freeze(['event', 'edge', 'source', 'actor']);
+export const KINDS = Object.freeze(['event', 'edge', 'source', 'actor', 'presence']);
 export const SCHEMA_VERSION = 1;
 
 function isObject(v) {
@@ -119,6 +119,7 @@ export function buildTopology(records, regions, { deriveRegion } = {}) {
   const edges = [];
   const sources = [];
   const actors = [];
+  const presences = [];
   for (const r of records) {
     if (r.kind === 'event') {
       let region = typeof r.region === 'string' ? r.region : null;
@@ -166,6 +167,25 @@ export function buildTopology(records, regions, { deriveRegion } = {}) {
         supersededBy: r.supersededBy ?? null,
         aliases: r.aliases ?? [],
       });
+    } else if (r.kind === 'presence') {
+      // Everything the panel and the map need except the coordinates: an
+      // actor's territory over time is a list the card can draw without
+      // fetching a single outline, and the outlines themselves are fetched
+      // one shard at a time, by year.
+      presences.push({
+        id: r.id,
+        actor: r.actor,
+        presenceType: r.presenceType,
+        dependencyOf: r.dependencyOf ?? null,
+        dependencyKind: r.dependencyKind ?? null,
+        when: r.when,
+        geometry: r.geometry,
+        capital: isObject(r.capital) ? r.capital : null,
+        confidence: r.confidence,
+        status: r.status,
+        supersededBy: r.supersededBy ?? null,
+        aliases: r.aliases ?? [],
+      });
     }
   }
   const weights = eventWeights(events, edges);
@@ -174,11 +194,13 @@ export function buildTopology(records, regions, { deriveRegion } = {}) {
   edges.sort(byId);
   sources.sort(byId);
   actors.sort(byId);
+  presences.sort(byId);
   return {
     events,
     edges,
     sources,
     actors,
+    presences,
     regions: [...(regions ?? [])].sort((a, b) => a.order - b.order || byId(a, b)),
   };
 }

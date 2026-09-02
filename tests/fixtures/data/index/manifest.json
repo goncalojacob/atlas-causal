@@ -1,16 +1,29 @@
 {
   "counts": {
-    "actors": 2,
+    "actors": 4,
     "edges": 10,
     "events": 12,
+    "presences": 3,
     "regions": 3,
     "sources": 4
   },
   "files": {
     "sources": "index/sources-bc0e6f1ea1f7.json",
-    "topology": "index/topology-36e9be9c591b.json"
+    "topology": "index/topology-64871f6cf7a5.json"
   },
   "land": [],
+  "presenceShards": [
+    {
+      "file": "geo/presences/1100-1199.json",
+      "from": 1100,
+      "to": 1199
+    },
+    {
+      "file": "geo/presences/1200-1299.json",
+      "from": 1200,
+      "to": 1299
+    }
+  ],
   "regions": [
     {
       "id": "fixture-lane-1",

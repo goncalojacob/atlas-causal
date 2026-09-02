@@ -28,12 +28,25 @@ export const EDGE_TYPES = Object.freeze(['caused', 'enabled', 'reacted-to', 'pre
 export const EDGE_ID = /^([a-z0-9]+(?:-[a-z0-9]+)*)--([a-z0-9]+(?:-[a-z0-9]+)*)--(caused|enabled|reacted-to|precondition-of|inspired)$/;
 export const CONFIDENCE_ORDER = Object.freeze(['consensus', 'probable', 'disputed']);
 export const ACTOR_TYPES = Object.freeze(['person', 'polity', 'institution', 'people']);
+export const PRESENCE_TYPES = Object.freeze(['state', 'polity', 'sphere-of-influence', 'archaeological-culture']);
+export const DEPENDENCY_KINDS = Object.freeze(['colony', 'protectorate', 'mandate', 'occupied']);
 export const ALLOWED_LICENSES = Object.freeze({
   event: ['CC-BY-SA-4.0'],
   edge: ['CC-BY-SA-4.0'],
   source: ['CC-BY-SA-4.0'],
-  actor: ['CC-BY-SA-4.0'],
+  // An actor may be NC-SA only when an import created it: see IMPORT_AUTHORS.
+  actor: ['CC-BY-SA-4.0', 'CC-BY-NC-SA-4.0'],
+  // A presence is written from imported geometry more often than not, and
+  // that geometry's licence is not data/LICENSE's. A hand-made presence is
+  // CC BY-SA like every other record.
+  presence: ['CC-BY-SA-4.0', 'CC-BY-NC-SA-4.0'],
 });
+
+// The exception that keeps the NC-SA licence out of data/actors/ generally:
+// an actor record may carry it only when one of these wrote it. The list is
+// the set of imports allowed to create actors; adding an import adds a line
+// here, so nothing else can quietly relicense an actor.
+export const IMPORT_AUTHORS = Object.freeze(['CShapes 2.0 import (tools/import/cshapes.mjs)']);
 
 // Roles are free text until there is a reason for a closed vocabulary, so
 // "Leader", "leader " and "leader" are one role: this is the form they are
@@ -90,6 +103,7 @@ export function checkRules(records, topology = {}) {
   for (const e of topology.edges ?? []) add('edge', e, false);
   for (const s of topology.sources ?? []) add('source', s, false);
   for (const a of topology.actors ?? []) add('actor', a, false);
+  for (const p of topology.presences ?? []) add('presence', p, false);
 
   const ownIds = new Set();
   for (const r of records) {
@@ -161,6 +175,12 @@ export function checkRules(records, topology = {}) {
     if (r.kind === 'event' && typeof r.region === 'string' && !regionIds.has(r.region)) {
       error(3, r, '/region', `"${r.region}" is not in regions.json`);
     }
+    if (r.kind === 'presence') {
+      if (!lookup(r.actor, 'actor')) error(3, r, '/actor', `"${r.actor}" is not an actor record`);
+      if (r.dependencyOf !== null && r.dependencyOf !== undefined && !lookup(r.dependencyOf, 'actor')) {
+        error(3, r, '/dependencyOf', `"${r.dependencyOf}" is not an actor record`);
+      }
+    }
   }
 
   // --- rule 15: years (checked before 4 and 5, which assume sane bounds) --
@@ -179,9 +199,10 @@ export function checkRules(records, topology = {}) {
     return a;
   };
   for (const r of own) {
-    // An actor's interval is birth–death or founding–dissolution; the same
-    // arithmetic, the same no-year-zero rule.
-    if ((r.kind === 'event' || r.kind === 'actor') && isObject(r.when)) {
+    // An actor's interval is birth–death or founding–dissolution and a
+    // presence's is how long the outline held; the same arithmetic, the same
+    // no-year-zero rule.
+    if ((r.kind === 'event' || r.kind === 'actor' || r.kind === 'presence') && isObject(r.when)) {
       const start = checkBound(r, '/when/start', r.when.start);
       const end = r.when.end === null ? null : checkBound(r, '/when/end', r.when.end);
       if (start && end && (end.min < start.min || end.max < start.max)) {
@@ -272,7 +293,7 @@ export function checkRules(records, topology = {}) {
 
   // --- rules 6, 7, 8, 9, 14: per-record content ---------------------------
   for (const r of own) {
-    if (r.kind === 'event' || r.kind === 'edge' || r.kind === 'actor') {
+    if (r.kind === 'event' || r.kind === 'edge' || r.kind === 'actor' || r.kind === 'presence') {
       if (!Array.isArray(r.sources) || r.sources.length === 0) {
         error(6, r, '/sources', `every ${r.kind} cites at least one source`);
       }
@@ -338,11 +359,14 @@ export function checkRules(records, topology = {}) {
 
   // --- rule 10: place and region ------------------------------------------
   for (const r of own) {
-    if (r.kind !== 'event' && r.kind !== 'actor') continue;
-    const where = isObject(r.where) ? r.where : null;
+    if (r.kind !== 'event' && r.kind !== 'actor' && r.kind !== 'presence') continue;
+    // A presence's point is its capital; it has no `where` of its own,
+    // because the outline says where it was.
+    const field = r.kind === 'presence' ? 'capital' : 'where';
+    const where = isObject(r[field]) ? r[field] : null;
     if (where) {
-      if (typeof where.lon !== 'number' || where.lon < -180 || where.lon > 180) error(10, r, '/where/lon', 'longitude must be within [-180, 180]');
-      if (typeof where.lat !== 'number' || where.lat < -90 || where.lat > 90) error(10, r, '/where/lat', 'latitude must be within [-90, 90]');
+      if (typeof where.lon !== 'number' || where.lon < -180 || where.lon > 180) error(10, r, `/${field}/lon`, 'longitude must be within [-180, 180]');
+      if (typeof where.lat !== 'number' || where.lat < -90 || where.lat > 90) error(10, r, `/${field}/lat`, 'latitude must be within [-90, 90]');
     } else if (r.kind === 'event' && typeof r.region !== 'string') {
       // An actor has no lane: it is reached through its events, never put
       // on the timeline alone.
@@ -367,10 +391,19 @@ export function checkRules(records, topology = {}) {
     }
     if (r.kind === 'actor' && r.status !== 'active') {
       for (const u of universe.values()) {
-        if (u.kind !== 'event' || u.entry.status !== 'active') continue;
-        if ((u.entry.actors ?? []).some((a) => a?.actor === r.id)) {
+        if (u.entry.status !== 'active') continue;
+        if (u.kind === 'event' && (u.entry.actors ?? []).some((a) => a?.actor === r.id)) {
           error(11, r, '', `${r.status} actor is still referenced by the active event "${u.entry.id}"`);
         }
+        if (u.kind === 'presence' && (u.entry.actor === r.id || u.entry.dependencyOf === r.id)) {
+          error(11, r, '', `${r.status} actor is still referenced by the active presence "${u.entry.id}"`);
+        }
+      }
+    }
+    if (r.kind === 'presence' && r.status === 'active') {
+      for (const field of ['actor', 'dependencyOf']) {
+        const actor = lookup(r[field], 'actor');
+        if (actor && actor.status !== 'active') error(11, r, `/${field}`, `an active presence cannot reference the ${actor.status} actor "${actor.id}"`);
       }
     }
     if (r.kind === 'event' && r.status === 'active') {
@@ -398,6 +431,12 @@ export function checkRules(records, topology = {}) {
     const allowed = ALLOWED_LICENSES[r.kind] ?? [];
     if (!allowed.includes(r.license)) {
       error(12, r, '/license', `records under data/${r.kind}s/ must be licensed ${allowed.join(' or ')}`);
+    }
+    // data/actors/ is a CC BY-SA directory with one hole in it, and the hole
+    // is exactly the actors an import creates for geometry it does not own.
+    if (r.kind === 'actor' && r.license === 'CC-BY-NC-SA-4.0'
+      && !(r.authors ?? []).some((a) => IMPORT_AUTHORS.includes(a?.name))) {
+      error(12, r, '/license', `an actor may be ${r.license} only when an import wrote it: ${IMPORT_AUTHORS.join(', ')}`);
     }
     if (!Array.isArray(r.authors) || r.authors.length === 0) {
       error(12, r, '/authors', 'authors must name at least one contributor');
@@ -429,6 +468,53 @@ export function checkRules(records, topology = {}) {
     }
   }
 
+  // --- rule 17: presences -------------------------------------------------
+  // Everything a presence must be internally, plus the one thing only the
+  // set of them can say: an actor cannot hold two outlines of the same
+  // territory at once. Overlapping intervals with *different* geometry are
+  // allowed — a year is the finest bound the model has, so a border that
+  // moved in August leaves two presences sharing that year, and that is the
+  // truth rather than a mistake. Whether the files named actually exist is a
+  // disk question, and lives in tools/validate.mjs.
+  for (const r of own) {
+    if (r.kind !== 'presence') continue;
+    if (r.dependencyOf === null && r.dependencyKind !== null) {
+      error(17, r, '/dependencyKind', 'a presence that depends on nobody has no dependencyKind');
+    }
+    if (r.dependencyOf !== null && r.dependencyKind === null) {
+      error(17, r, '/dependencyKind', 'a dependency says how it was held: colony, protectorate, mandate or occupied');
+    }
+    if (r.dependencyOf === r.actor) {
+      error(17, r, '/dependencyOf', 'a presence cannot be a dependency of its own actor');
+    }
+    if (!Array.isArray(r.geometry?.files) || r.geometry.files.length === 0) {
+      error(17, r, '/geometry/files', 'a presence names at least one file holding its outline');
+    }
+  }
+  {
+    const byActor = new Map();
+    for (const u of universe.values()) {
+      if (u.kind !== 'presence' || u.entry.status !== 'active') continue;
+      if (!byActor.has(u.entry.actor)) byActor.set(u.entry.actor, []);
+      byActor.get(u.entry.actor).push(u.entry);
+    }
+    for (const list of byActor.values()) {
+      for (let i = 0; i < list.length; i += 1) {
+        for (let j = i + 1; j < list.length; j += 1) {
+          const a = list[i];
+          const b = list[j];
+          if (!universe.get(a.id)?.own && !universe.get(b.id)?.own) continue;
+          if (a.geometry?.key !== b.geometry?.key) continue;
+          const sa = span(a.when);
+          const sb = span(b.when);
+          if (!sa || !sb || sa.to < sb.from || sb.to < sa.from) continue;
+          const culprit = universe.get(a.id)?.own ? a : b;
+          error(17, culprit, '/when', `"${a.id}" and "${b.id}" put the same outline on "${a.actor}" over overlapping years`);
+        }
+      }
+    }
+  }
+
   // --- warnings: degree zero, no citers -----------------------------------
   const degree = new Map();
   for (const e of activeEdges) {
@@ -453,16 +539,35 @@ export function checkRules(records, topology = {}) {
   // posthumous events are real, and so are institutions acting through
   // their successors.
   const referencedActors = new Map();
+  const noteActor = (id, entry) => {
+    if (!referencedActors.has(id)) referencedActors.set(id, []);
+    referencedActors.get(id).push(entry);
+  };
   for (const u of universe.values()) {
-    if (u.kind !== 'event' || u.entry.status !== 'active') continue;
-    for (const a of u.entry.actors ?? []) {
-      if (!referencedActors.has(a?.actor)) referencedActors.set(a?.actor, []);
-      referencedActors.get(a?.actor).push(u.entry);
+    if (u.entry.status !== 'active') continue;
+    if (u.kind === 'event') for (const a of u.entry.actors ?? []) noteActor(a?.actor, u.entry);
+    // An actor that holds a territory is used, even if no event names it:
+    // most of the world's polities are on the map long before this project
+    // has an event about them.
+    if (u.kind === 'presence') {
+      noteActor(u.entry.actor, u.entry);
+      if (u.entry.dependencyOf) noteActor(u.entry.dependencyOf, u.entry);
     }
   }
   for (const r of own) {
     if (r.kind === 'actor' && r.status === 'active' && !referencedActors.has(r.id)) {
-      warning('actor-unused', r, 'actor is referenced by no event');
+      warning('actor-unused', r, 'actor is referenced by no event and holds no territory');
+    }
+    // A presence outside its actor's life is a warning for the same reason
+    // an event outside it is: the dates come from two sources and either may
+    // be the one that is wrong.
+    if (r.kind === 'presence' && r.status === 'active') {
+      const actor = lookup(r.actor, 'actor');
+      const presenceSpan = span(r.when);
+      const actorSpan = actor ? span(actor.when) : null;
+      if (presenceSpan && actorSpan && (presenceSpan.to < actorSpan.from || presenceSpan.from > actorSpan.to)) {
+        warning('presence-outside-actor-when', r, `the presence falls entirely outside "${actor.id}"'s dates`);
+      }
     }
     if (r.kind !== 'event' || r.status !== 'active') continue;
     const eventSpan = span(r.when);

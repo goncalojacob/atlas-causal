@@ -12,7 +12,7 @@ import { existsSync } from 'node:fs';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { validate, buildTopology } from '../src/validate/core.js';
 import { createRegionDeriver, NEAREST_TOLERANCE } from '../src/util/geo.js';
-import { readSchemaFiles, readRecords, readRegions, readRegionPolygons, KIND_DIRS } from './lib/read.mjs';
+import { readSchemaFiles, readRecords, readRegions, readRegionPolygons, readPresenceShards, KIND_DIRS } from './lib/read.mjs';
 import { buildIndex, readIndex, compareIndex } from './build-index.mjs';
 
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -62,6 +62,42 @@ export async function runValidation(dataDir = DEFAULT_DATA, { index = false } = 
     }
   } else if (topology.events.some((e) => e.where && !e.region)) {
     warnings.push({ rule: 'no-polygons', id: null, file: 'geo/regions.json', path: '', message: 'geo/regions.json is missing; regions cannot be derived from where (run tools/build-regions.mjs)' });
+  }
+
+  // Rule 17's half that needs the disk: the files a presence names exist,
+  // hold its key, and between them cover every year the presence claims —
+  // a shard missing from the middle would make a territory blink out.
+  if (topology.presences.length) {
+    const shards = await readPresenceShards(dataDir, { keys: true });
+    const byFile = new Map(shards.map((s) => [s.file, s]));
+    for (const p of topology.presences) {
+      if (p.status !== 'active') continue;
+      const files = Array.isArray(p.geometry?.files) ? p.geometry.files : [];
+      const covered = [];
+      for (const file of files) {
+        const shard = byFile.get(file);
+        if (!shard) {
+          errors.push({ rule: 17, id: p.id, file: fileOf.get(p.id) ?? null, path: '/geometry/files', message: `no such geometry shard: data/${file}` });
+          continue;
+        }
+        if (!shard.keys.has(p.geometry.key)) {
+          errors.push({ rule: 17, id: p.id, file: fileOf.get(p.id) ?? null, path: '/geometry/key', message: `data/${file} holds no feature "${p.geometry.key}"` });
+          continue;
+        }
+        covered.push(shard);
+      }
+      const start = Number.isInteger(p.when?.start) ? p.when.start : p.when?.start?.min;
+      const end = p.when?.end === null ? (shards[shards.length - 1]?.to ?? start)
+        : Number.isInteger(p.when?.end) ? p.when.end : p.when?.end?.max;
+      if (Number.isInteger(start) && Number.isInteger(end)) {
+        for (const shard of shards) {
+          const touches = shard.from <= end && start <= shard.to;
+          if (touches && !covered.includes(shard)) {
+            errors.push({ rule: 17, id: p.id, file: fileOf.get(p.id) ?? null, path: '/geometry/files', message: `the presence runs through ${shard.from}–${shard.to} but does not name data/${shard.file}` });
+          }
+        }
+      }
+    }
   }
 
   if (index) {

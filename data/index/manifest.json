@@ -3,12 +3,13 @@
     "actors": 42,
     "edges": 73,
     "events": 60,
+    "presences": 0,
     "regions": 5,
     "sources": 11
   },
   "files": {
     "sources": "index/sources-6c36ac871efd.json",
-    "topology": "index/topology-e98803583ee9.json"
+    "topology": "index/topology-4c1f44446256.json"
   },
   "land": [
     {
@@ -18,6 +19,7 @@
       "to": null
     }
   ],
+  "presenceShards": [],
   "regions": [
     {
       "id": "europe",

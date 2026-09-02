@@ -31,6 +31,37 @@
         "end": null,
         "start": 1150
       }
+    },
+    {
+      "actorType": "polity",
+      "aliases": [],
+      "id": "fixture-polity-four",
+      "name": "Fixture Polity Four",
+      "names": [
+        "Fixture Polity Four"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": 1260,
+        "start": 1120
+      }
+    },
+    {
+      "actorType": "polity",
+      "aliases": [],
+      "id": "fixture-polity-three",
+      "name": "Fixture Polity Three",
+      "names": [
+        "Fixture Polity Three",
+        "FP3"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 1100
+      }
     }
   ],
   "edges": [
@@ -407,6 +438,95 @@
         "lat": 30,
         "lon": 25,
         "precision": "city"
+      }
+    }
+  ],
+  "presences": [
+    {
+      "actor": "fixture-polity-four",
+      "aliases": [],
+      "capital": {
+        "label": "Fixture seat D",
+        "lat": 26,
+        "lon": -18,
+        "precision": "city"
+      },
+      "confidence": "consensus",
+      "dependencyKind": "colony",
+      "dependencyOf": "fixture-polity-three",
+      "geometry": {
+        "files": [
+          "geo/presences/1100-1199.json"
+        ],
+        "key": "f2"
+      },
+      "id": "fixture-polity-four-1120",
+      "presenceType": "state",
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "date": "1120-01-01",
+        "end": 1199,
+        "endDate": "1199-12-31",
+        "start": 1120
+      }
+    },
+    {
+      "actor": "fixture-polity-four",
+      "aliases": [],
+      "capital": {
+        "label": "Fixture seat D",
+        "lat": 26,
+        "lon": -18,
+        "precision": "city"
+      },
+      "confidence": "probable",
+      "dependencyKind": "protectorate",
+      "dependencyOf": "fixture-polity-three",
+      "geometry": {
+        "files": [
+          "geo/presences/1200-1299.json"
+        ],
+        "key": "f3"
+      },
+      "id": "fixture-polity-four-1200",
+      "presenceType": "state",
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "date": "1200-01-01",
+        "end": 1260,
+        "endDate": "1260-06-30",
+        "start": 1200
+      }
+    },
+    {
+      "actor": "fixture-polity-three",
+      "aliases": [],
+      "capital": {
+        "label": "Fixture seat C",
+        "lat": 35,
+        "lon": -25,
+        "precision": "city"
+      },
+      "confidence": "consensus",
+      "dependencyKind": null,
+      "dependencyOf": null,
+      "geometry": {
+        "files": [
+          "geo/presences/1100-1199.json",
+          "geo/presences/1200-1299.json"
+        ],
+        "key": "f1"
+      },
+      "id": "fixture-polity-three-1100",
+      "presenceType": "state",
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "date": "1100-03-01",
+        "end": null,
+        "start": 1100
       }
     }
   ],

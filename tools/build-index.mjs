@@ -14,7 +14,7 @@ import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { buildTopology, rolesInUse } from '../src/validate/core.js';
 import { createRegionDeriver } from '../src/util/geo.js';
-import { readRecords, readRegions, readRegionPolygons, readLandFiles } from './lib/read.mjs';
+import { readRecords, readRegions, readRegionPolygons, readLandFiles, readPresenceShards } from './lib/read.mjs';
 
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 export const DEFAULT_DATA = path.join(ROOT, 'data');
@@ -52,10 +52,13 @@ export async function buildIndex(dataDir = DEFAULT_DATA) {
   const regions = await readRegions(dataDir);
   const polygons = await readRegionPolygons(dataDir);
   const land = await readLandFiles(dataDir);
+  const presenceShards = await readPresenceShards(dataDir);
   const deriveRegion = polygons ? createRegionDeriver(polygons) : undefined;
   const topology = buildTopology(records, regions, { deriveRegion });
 
-  const topologyText = serialize({ schema: 1, events: topology.events, edges: topology.edges, actors: topology.actors });
+  const topologyText = serialize({
+    schema: 1, events: topology.events, edges: topology.edges, actors: topology.actors, presences: topology.presences,
+  });
   const sourcesText = serialize({ schema: 1, sources: topology.sources });
   const topologyName = `topology-${hashOf(topologyText)}.json`;
   const sourcesName = `sources-${hashOf(sourcesText)}.json`;
@@ -66,6 +69,7 @@ export async function buildIndex(dataDir = DEFAULT_DATA) {
       edges: topology.edges.length,
       sources: topology.sources.length,
       actors: topology.actors.length,
+      presences: topology.presences.length,
       regions: topology.regions.length,
     },
     files: { topology: `index/${topologyName}`, sources: `index/${sourcesName}` },
@@ -75,6 +79,9 @@ export async function buildIndex(dataDir = DEFAULT_DATA) {
     roles: rolesInUse(topology.events),
     // Paleo-coastlines will list a year range here; the present covers all.
     land: land.map((l) => ({ file: l.file, epoch: l.epoch, from: null, to: null })),
+    // The territory shards, in year order. The site loads the one that
+    // covers the year on the slider and nothing else.
+    presenceShards,
   });
 
   const unresolved = topology.events.filter((e) => e.status === 'active' && e.where && !e.region);
@@ -137,7 +144,7 @@ async function main(argv) {
   }
   await writeIndex(dataDir, built);
   const c = built.topology;
-  console.log(`index written to ${path.relative(process.cwd(), path.join(dataDir, 'index')) || '.'}: ${c.events.length} events, ${c.edges.length} edges, ${c.actors.length} actors, ${c.sources.length} sources`);
+  console.log(`index written to ${path.relative(process.cwd(), path.join(dataDir, 'index')) || '.'}: ${c.events.length} events, ${c.edges.length} edges, ${c.actors.length} actors, ${c.presences.length} presences, ${c.sources.length} sources`);
   return 0;
 }
 

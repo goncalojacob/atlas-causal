@@ -6,7 +6,8 @@ import { readdir, readFile } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import path from 'node:path';
 
-export const KIND_DIRS = Object.freeze({ event: 'events', edge: 'edges', source: 'sources', actor: 'actors' });
+export const KIND_DIRS = Object.freeze({ event: 'events', edge: 'edges', source: 'sources', actor: 'actors', presence: 'presences' });
+export const PRESENCE_GEO_DIR = 'geo/presences';
 
 async function readJson(file) {
   const text = await readFile(file, 'utf8');
@@ -64,6 +65,28 @@ export async function readRegionPolygons(dataDir) {
   const file = path.join(dataDir, 'geo', 'regions.json');
   if (!existsSync(file)) return null;
   return readJson(file);
+}
+
+// The geometry shards under data/geo/presences/, named <from>-<to>.json, in
+// year order: what the manifest lists and what the site loads one of, by
+// year. Returns the years and, when `keys` is asked for, the set of feature
+// keys each shard holds, so the validator can check a presence's outline is
+// really where the record says it is.
+export async function readPresenceShards(dataDir, { keys = false } = {}) {
+  const dir = path.join(dataDir, 'geo', 'presences');
+  if (!existsSync(dir)) return [];
+  const shards = [];
+  for (const name of (await readdir(dir)).sort()) {
+    const m = /^(-?\d+)-(-?\d+)\.json$/.exec(name);
+    if (!m) continue;
+    const shard = { file: `${PRESENCE_GEO_DIR}/${name}`, from: Number(m[1]), to: Number(m[2]) };
+    if (keys) {
+      const collection = await readJson(path.join(dir, name));
+      shard.keys = new Set((collection.features ?? []).map((f) => f.id));
+    }
+    shards.push(shard);
+  }
+  return shards.sort((a, b) => a.from - b.from || a.to - b.to);
 }
 
 // Land files are listed in the manifest by epoch. Only the present exists;
