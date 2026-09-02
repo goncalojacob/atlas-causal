@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "pimenta-de-castro-government-1915--revolt-14-may-1915--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "wheeler-1978-republican-portugal",
+      "locator": null
+    },
+    {
+      "source": "meneses-2004-portugal-1914-1926",
+      "locator": null
+    }
+  ],
+  "from": "pimenta-de-castro-government-1915",
+  "to": "revolt-14-may-1915",
+  "type": "caused",
+  "confidence": "consensus",
+  "explanation": "The revolt was made against this government and ended with it: the suspension of parliament, the rule by decree and the readmission of monarchists to public life are what the insurgents named as their reasons, and they stopped fighting once the government fell."
+}

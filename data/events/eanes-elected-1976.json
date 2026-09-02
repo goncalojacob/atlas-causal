@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "eanes-elected-1976",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "maxwell-1995-making-of-portuguese-democracy",
+      "locator": null
+    }
+  ],
+  "title": "Ramalho Eanes elected president",
+  "summary": "Eanes, who had commanded the operation of 25 November 1975, was elected president in June 1976 in the first round, with the support of the Socialists, the Social Democrats and the CDS.",
+  "when": {
+    "start": 1976,
+    "end": 1976,
+    "date": "1976-06-27",
+    "calendar": "gregorian"
+  },
+  "where": {
+    "lon": -9.14,
+    "lat": 38.72,
+    "precision": "city",
+    "label": "Lisbon"
+  },
+  "region": null,
+  "actors": []
+}

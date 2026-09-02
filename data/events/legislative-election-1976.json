@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "legislative-election-1976",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    }
+  ],
+  "title": "First legislative election under the constitution",
+  "summary": "The first election to the Assembly of the Republic under the new constitution was held on 25 April 1976, a year to the day after the constituent election. The Socialists came first without a majority and formed a minority government.",
+  "when": {
+    "start": 1976,
+    "end": 1976,
+    "date": "1976-04-25",
+    "calendar": "gregorian"
+  },
+  "where": {
+    "lon": -9.14,
+    "lat": 38.72,
+    "precision": "city",
+    "label": "Lisbon"
+  },
+  "region": null,
+  "actors": []
+}

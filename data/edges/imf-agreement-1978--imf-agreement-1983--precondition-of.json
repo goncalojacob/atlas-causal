@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "imf-agreement-1978--imf-agreement-1983--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "reis-2013-portuguese-slump",
+      "locator": null
+    }
+  ],
+  "from": "imf-agreement-1978",
+  "to": "imf-agreement-1983",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The 1978 programme stabilised the external accounts without changing what produced them, and the same imbalance reappeared once restraint was relaxed. The second programme was, in its own terms, a second attempt at the first one's problem."
+}

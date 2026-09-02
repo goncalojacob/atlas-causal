@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "constitutional-revision-1959",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    },
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    }
+  ],
+  "title": "The revision that ends direct presidential elections",
+  "summary": "After the shock of the 1958 campaign the constitution was revised so that the president would be chosen by an electoral college rather than by direct suffrage. The month given here is from memory and should be checked against the text of the law.",
+  "when": {
+    "start": 1959,
+    "end": 1959,
+    "date": "1959-08",
+    "calendar": "gregorian"
+  },
+  "where": {
+    "lon": -9.14,
+    "lat": 38.72,
+    "precision": "city",
+    "label": "Lisbon"
+  },
+  "region": null,
+  "actors": []
+}

@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "eec-accession-1986--expo-98--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    }
+  ],
+  "from": "eec-accession-1986",
+  "to": "expo-98",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The exhibition was built with Community structural funds and by the administrative machinery that a decade of them had produced, on the model of public works Portugal had been running since accession. It is hard to imagine the scale of it in the economy of 1985."
+}

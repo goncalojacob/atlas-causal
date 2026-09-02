@@ -1,14 +1,14 @@
 {
   "counts": {
     "actors": 42,
-    "edges": 37,
-    "events": 35,
+    "edges": 73,
+    "events": 60,
     "regions": 5,
     "sources": 11
   },
   "files": {
     "sources": "index/sources-6c36ac871efd.json",
-    "topology": "index/topology-d597cfcd0d93.json"
+    "topology": "index/topology-e7535957932a.json"
   },
   "land": [
     {

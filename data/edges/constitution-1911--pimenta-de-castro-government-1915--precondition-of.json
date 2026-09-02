@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "constitution-1911--pimenta-de-castro-government-1915--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "wheeler-1978-republican-portugal",
+      "locator": null
+    }
+  ],
+  "from": "constitution-1911",
+  "to": "pimenta-de-castro-government-1915",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The 1911 constitution gave the president the power to appoint a head of government without a parliamentary majority behind him, and it is that power the president used in January 1915. Without it the Democrats could not have been excluded from office while holding the chamber."
+}

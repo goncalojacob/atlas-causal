@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "coup-attempt-11-march-1975",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "maxwell-1995-making-of-portuguese-democracy",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    }
+  ],
+  "title": "The failed coup of 11 March",
+  "summary": "An attempt by officers associated with Spínola, including an air attack on the RAL-1 barracks in Lisbon, collapsed the same day. Spínola left the country, and the balance inside the Armed Forces Movement shifted sharply to the left.",
+  "when": {
+    "start": 1975,
+    "end": 1975,
+    "date": "1975-03-11",
+    "calendar": "gregorian"
+  },
+  "where": {
+    "lon": -9.14,
+    "lat": 38.72,
+    "precision": "city",
+    "label": "Lisbon"
+  },
+  "region": null,
+  "actors": []
+}

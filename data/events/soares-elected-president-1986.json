@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "soares-elected-president-1986",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    }
+  ],
+  "title": "Mário Soares elected president",
+  "summary": "Soares won the second round in February 1986, narrowly, becoming the first civilian head of state in sixty years and completing the return of the military to barracks begun by the revision of 1982.",
+  "when": {
+    "start": 1986,
+    "end": 1986,
+    "date": "1986-02-16",
+    "calendar": "gregorian"
+  },
+  "where": {
+    "lon": -9.14,
+    "lat": 38.72,
+    "precision": "city",
+    "label": "Lisbon"
+  },
+  "region": null,
+  "actors": []
+}

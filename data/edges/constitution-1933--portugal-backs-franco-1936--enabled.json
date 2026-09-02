@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "constitution-1933--portugal-backs-franco-1936--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    }
+  ],
+  "from": "constitution-1933",
+  "to": "portugal-backs-franco-1936",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "By 1936 the regime had a constitution, a single party and a police, and Salazar held the government firmly enough to commit the country to one side of a war next door without needing to argue it through a parliament. The help given to the Nationalists presupposes that concentration of decision."
+}

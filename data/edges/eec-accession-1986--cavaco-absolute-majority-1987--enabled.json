@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "eec-accession-1986--cavaco-absolute-majority-1987--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    }
+  ],
+  "from": "eec-accession-1986",
+  "to": "cavaco-absolute-majority-1987",
+  "type": "enabled",
+  "confidence": "disputed",
+  "explanation": "One reading credits accession: the funds, the growth and the sense that the country had arrived somewhere gave the government of 1985 a record to run on, and the majority of 1987 rewarded it.",
+  "dispute": {
+    "text": "Another explains the majority by the party system instead — the collapse of the centrist competition, the discredit of the motion of censure that forced the election, and the voters' preference for a stable government after a decade of short ones. On that reading Europe was the background, not the cause.",
+    "sources": [
+      {
+        "source": "costa-pinto-2003-contemporary-portugal",
+        "locator": null
+      }
+    ]
+  }
+}

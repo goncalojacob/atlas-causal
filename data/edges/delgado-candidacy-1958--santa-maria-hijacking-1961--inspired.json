@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "delgado-candidacy-1958--santa-maria-hijacking-1961--inspired",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "macqueen-1997-decolonization",
+      "locator": null
+    }
+  ],
+  "from": "delgado-candidacy-1958",
+  "to": "santa-maria-hijacking-1961",
+  "type": "inspired",
+  "confidence": "probable",
+  "explanation": "The 1958 campaign showed the opposition how much attention a single public confrontation could draw and then, in its defeat, that the legal road was closed. The seizure of the ship was an attempt at the same effect by other means, mounted by men from the milieu the campaign had brought together."
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "santa-maria-hijacking-1961",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    },
+    {
+      "source": "macqueen-1997-decolonization",
+      "locator": null
+    }
+  ],
+  "title": "The seizure of the liner Santa Maria",
+  "summary": "A group led by Henrique Galvão took over the Portuguese liner Santa Maria in the Caribbean on 22 January 1961 and held it for eleven days, drawing the world press to the Portuguese dictatorship before surrendering at Recife on 2 February.",
+  "when": {
+    "start": 1961,
+    "end": 1961,
+    "date": "1961-01-22",
+    "calendar": "gregorian"
+  },
+  "where": {
+    "lon": -34.88,
+    "lat": -8.05,
+    "precision": "region",
+    "label": "Recife, at the end of the voyage"
+  },
+  "region": "americas",
+  "actors": []
+}

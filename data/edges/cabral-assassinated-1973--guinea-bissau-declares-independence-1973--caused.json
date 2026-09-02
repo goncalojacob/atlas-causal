@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "cabral-assassinated-1973--guinea-bissau-declares-independence-1973--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "macqueen-1997-decolonization",
+      "locator": null
+    }
+  ],
+  "from": "cabral-assassinated-1973",
+  "to": "guinea-bissau-declares-independence-1973",
+  "type": "caused",
+  "confidence": "disputed",
+  "explanation": "On one reading the unilateral declaration eight months later was the movement's answer to the killing: proof that the PAIGC had survived the loss of its founder, and a way of turning international sympathy into recognition while it was still fresh.",
+  "dispute": {
+    "text": "Others hold the declaration was already prepared before Cabral died — the elections to the assembly that proclaimed it had been planned, and the military position in the interior was what made it credible — so the assassination changed the timing at most, not the decision.",
+    "sources": [
+      {
+        "source": "ramos-2009-historia-de-portugal",
+        "locator": null
+      }
+    ]
+  }
+}

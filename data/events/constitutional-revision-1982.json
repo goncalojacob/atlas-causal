@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "constitutional-revision-1982",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    }
+  ],
+  "title": "The revision that abolishes the Council of the Revolution",
+  "summary": "The first revision of the 1976 constitution removed the Council of the Revolution, put constitutional review in the hands of a new Constitutional Court, and ended the military tutelage written into the text in 1976. The exact date should be checked.",
+  "when": {
+    "start": 1982,
+    "end": 1982,
+    "date": "1982-09-30",
+    "calendar": "gregorian"
+  },
+  "where": {
+    "lon": -9.14,
+    "lat": 38.72,
+    "precision": "city",
+    "label": "Lisbon"
+  },
+  "region": null,
+  "actors": []
+}

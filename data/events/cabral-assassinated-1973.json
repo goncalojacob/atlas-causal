@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "cabral-assassinated-1973",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "macqueen-1997-decolonization",
+      "locator": null
+    },
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    }
+  ],
+  "title": "Assassination of Amílcar Cabral",
+  "summary": "Cabral was shot dead outside his house in Conakry on 20 January 1973 by members of his own movement. Portuguese involvement through the PIDE has been alleged since the day it happened and is argued over; the plotters were caught and executed by the PAIGC.",
+  "when": {
+    "start": 1973,
+    "end": 1973,
+    "date": "1973-01-20",
+    "calendar": "gregorian"
+  },
+  "where": {
+    "lon": -13.68,
+    "lat": 9.51,
+    "precision": "city",
+    "label": "Conakry"
+  },
+  "region": null,
+  "actors": []
+}

@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "santa-maria-hijacking-1961--angola-war-begins-1961--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "macqueen-1997-decolonization",
+      "locator": null
+    }
+  ],
+  "from": "santa-maria-hijacking-1961",
+  "to": "angola-war-begins-1961",
+  "type": "enabled",
+  "confidence": "disputed",
+  "explanation": "The hijacking drew the international press to Portugal and its empire, and several accounts hold that the Luanda attacks of early February were timed to strike while that attention was still on Lisbon, giving them a hearing they would not otherwise have had.",
+  "dispute": {
+    "text": "Against that, the risings in Luanda had their own causes and calendar — the cotton and coffee grievances, the prisoners the attackers set out to free — and the coincidence of dates is read as coincidence. Whether either set of organisers knew of the other's plans is not established.",
+    "sources": [
+      {
+        "source": "rosas-1994-estado-novo",
+        "locator": null
+      }
+    ]
+  }
+}

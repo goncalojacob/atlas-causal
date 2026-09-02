@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "revolt-14-may-1915",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "wheeler-1978-republican-portugal",
+      "locator": null
+    },
+    {
+      "source": "meneses-2004-portugal-1914-1926",
+      "locator": null
+    }
+  ],
+  "title": "The revolt of 14 May restores the Democrats",
+  "summary": "A rising of armed civilians and naval units in Lisbon on 14 May 1915 overthrew the Pimenta de Castro government after several days of fighting with hundreds of casualties, and returned the Democratic Party to power.",
+  "when": {
+    "start": 1915,
+    "end": 1915,
+    "date": "1915-05-14",
+    "calendar": "gregorian"
+  },
+  "where": {
+    "lon": -9.14,
+    "lat": 38.72,
+    "precision": "city",
+    "label": "Lisbon"
+  },
+  "region": null,
+  "actors": []
+}

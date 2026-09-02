@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "exposicao-mundo-portugues-1940",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    },
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    }
+  ],
+  "title": "Exhibition of the Portuguese World",
+  "summary": "The great exhibition held at Belém from June to December 1940, marking the eight hundredth anniversary of the founding of the kingdom and the third centenary of the restoration of 1640. It was the regime's fullest statement of itself in stone and pageantry, staged while the rest of Europe was at war.",
+  "when": {
+    "start": 1940,
+    "end": 1940,
+    "date": "1940-06-23",
+    "calendar": "gregorian"
+  },
+  "where": {
+    "lon": -9.2,
+    "lat": 38.7,
+    "precision": "city",
+    "label": "Belém, Lisbon"
+  },
+  "region": null,
+  "actors": []
+}

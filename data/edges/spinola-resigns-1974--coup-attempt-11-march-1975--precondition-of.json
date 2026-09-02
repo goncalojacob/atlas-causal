@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "spinola-resigns-1974--coup-attempt-11-march-1975--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    }
+  ],
+  "from": "spinola-resigns-1974",
+  "to": "coup-attempt-11-march-1975",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Having lost the presidency in September, Spínola and the officers around him had no institutional route back; what they attempted in March was the attempt of men already outside. The resignation is what put them there."
+}

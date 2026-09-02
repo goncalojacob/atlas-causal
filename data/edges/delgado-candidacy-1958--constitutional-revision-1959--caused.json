@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "delgado-candidacy-1958--constitutional-revision-1959--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    },
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    }
+  ],
+  "from": "delgado-candidacy-1958",
+  "to": "constitutional-revision-1959",
+  "type": "caused",
+  "confidence": "consensus",
+  "explanation": "The revision removed the very mechanism that had produced the shock: direct election of the president. It was drafted in the year after the campaign, and the regime made no secret of the connection — a contest it could only win by fraud and force was one it would not hold again."
+}

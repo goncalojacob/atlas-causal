@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "euro-adoption-1999--troika-bailout-2011--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "reis-2013-portuguese-slump",
+      "locator": null
+    }
+  ],
+  "from": "euro-adoption-1999",
+  "to": "troika-bailout-2011",
+  "type": "precondition-of",
+  "confidence": "disputed",
+  "explanation": "On one account the euro is the mechanism of the crisis: interest rates far below what Portugal had known drew in a decade of capital that went into non-tradable sectors, productivity stalled, and when the flow stopped the country had neither the growth to service the debt nor a currency to devalue.",
+  "dispute": {
+    "text": "Others put the weight on choices rather than the currency: fiscal policy through the 2000s, the cost of the bank rescues, and the loss of market confidence in 2010 and 2011 in a general European panic. On that reading a country outside the euro with the same accounts would have arrived somewhere similar by a different road.",
+    "sources": [
+      {
+        "source": "telo-2007-historia-contemporanea",
+        "locator": null
+      }
+    ]
+  }
+}

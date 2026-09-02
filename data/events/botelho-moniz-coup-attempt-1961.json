@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "botelho-moniz-coup-attempt-1961",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    },
+    {
+      "source": "macqueen-1997-decolonization",
+      "locator": null
+    }
+  ],
+  "title": "Botelho Moniz's failed move against Salazar",
+  "summary": "In April 1961, weeks after the rising in Angola, the minister of defence Botelho Moniz sought the president's support for replacing Salazar and changing course in Africa. Salazar learned of it, dismissed the ministers involved and took the defence portfolio himself. How close the attempt came to succeeding is argued over.",
+  "when": {
+    "start": 1961,
+    "end": 1961,
+    "date": "1961-04-13",
+    "calendar": "gregorian"
+  },
+  "where": {
+    "lon": -9.14,
+    "lat": 38.72,
+    "precision": "city",
+    "label": "Lisbon"
+  },
+  "region": null,
+  "actors": []
+}

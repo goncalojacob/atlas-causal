@@ -713,6 +713,36 @@
     },
     {
       "aliases": [],
+      "confidence": "probable",
+      "from": "25-november-1975",
+      "id": "25-november-1975--eanes-elected-1976--caused",
+      "status": "active",
+      "supersededBy": null,
+      "to": "eanes-elected-1976",
+      "type": "caused"
+    },
+    {
+      "aliases": [],
+      "confidence": "consensus",
+      "from": "alvor-agreement-1975",
+      "id": "alvor-agreement-1975--angola-independence-1975--enabled",
+      "status": "active",
+      "supersededBy": null,
+      "to": "angola-independence-1975",
+      "type": "enabled"
+    },
+    {
+      "aliases": [],
+      "confidence": "consensus",
+      "from": "angola-war-begins-1961",
+      "id": "angola-war-begins-1961--botelho-moniz-coup-attempt-1961--caused",
+      "status": "active",
+      "supersededBy": null,
+      "to": "botelho-moniz-coup-attempt-1961",
+      "type": "caused"
+    },
+    {
+      "aliases": [],
       "confidence": "consensus",
       "from": "angola-war-begins-1961",
       "id": "angola-war-begins-1961--carnation-revolution-1974--caused",
@@ -774,12 +804,42 @@
     {
       "aliases": [],
       "confidence": "probable",
+      "from": "bpn-nationalisation-2008",
+      "id": "bpn-nationalisation-2008--troika-bailout-2011--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "troika-bailout-2011",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "disputed",
+      "from": "cabral-assassinated-1973",
+      "id": "cabral-assassinated-1973--guinea-bissau-declares-independence-1973--caused",
+      "status": "active",
+      "supersededBy": null,
+      "to": "guinea-bissau-declares-independence-1973",
+      "type": "caused"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
       "from": "caetano-succeeds-salazar-1968",
       "id": "caetano-succeeds-salazar-1968--carnation-revolution-1974--precondition-of",
       "status": "active",
       "supersededBy": null,
       "to": "carnation-revolution-1974",
       "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "consensus",
+      "from": "carnation-revolution-1974",
+      "id": "carnation-revolution-1974--alvor-agreement-1975--caused",
+      "status": "active",
+      "supersededBy": null,
+      "to": "alvor-agreement-1975",
+      "type": "caused"
     },
     {
       "aliases": [],
@@ -834,12 +894,32 @@
     {
       "aliases": [],
       "confidence": "probable",
+      "from": "carnation-revolution-1974",
+      "id": "carnation-revolution-1974--spinola-resigns-1974--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "spinola-resigns-1974",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
       "from": "constituent-assembly-election-1975",
       "id": "constituent-assembly-election-1975--25-november-1975--enabled",
       "status": "active",
       "supersededBy": null,
       "to": "25-november-1975",
       "type": "enabled"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "constitution-1911",
+      "id": "constitution-1911--pimenta-de-castro-government-1915--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "pimenta-de-castro-government-1915",
+      "type": "precondition-of"
     },
     {
       "aliases": [],
@@ -853,6 +933,46 @@
     },
     {
       "aliases": [],
+      "confidence": "probable",
+      "from": "constitution-1933",
+      "id": "constitution-1933--exposicao-mundo-portugues-1940--enabled",
+      "status": "active",
+      "supersededBy": null,
+      "to": "exposicao-mundo-portugues-1940",
+      "type": "enabled"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "constitution-1933",
+      "id": "constitution-1933--portugal-backs-franco-1936--enabled",
+      "status": "active",
+      "supersededBy": null,
+      "to": "portugal-backs-franco-1936",
+      "type": "enabled"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "constitution-1976",
+      "id": "constitution-1976--constitutional-revision-1982--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "constitutional-revision-1982",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "consensus",
+      "from": "constitution-1976",
+      "id": "constitution-1976--eanes-elected-1976--enabled",
+      "status": "active",
+      "supersededBy": null,
+      "to": "eanes-elected-1976",
+      "type": "enabled"
+    },
+    {
+      "aliases": [],
       "confidence": "consensus",
       "from": "constitution-1976",
       "id": "constitution-1976--eec-application-1977--enabled",
@@ -860,6 +980,36 @@
       "supersededBy": null,
       "to": "eec-application-1977",
       "type": "enabled"
+    },
+    {
+      "aliases": [],
+      "confidence": "consensus",
+      "from": "constitution-1976",
+      "id": "constitution-1976--legislative-election-1976--enabled",
+      "status": "active",
+      "supersededBy": null,
+      "to": "legislative-election-1976",
+      "type": "enabled"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "constitutional-revision-1982",
+      "id": "constitutional-revision-1982--eec-accession-1986--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "eec-accession-1986",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "constitutional-revision-1982",
+      "id": "constitutional-revision-1982--soares-elected-president-1986--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "soares-elected-president-1986",
+      "type": "precondition-of"
     },
     {
       "aliases": [],
@@ -884,12 +1034,82 @@
     {
       "aliases": [],
       "confidence": "consensus",
+      "from": "coup-attempt-11-march-1975",
+      "id": "coup-attempt-11-march-1975--nationalisations-1975--caused",
+      "status": "active",
+      "supersededBy": null,
+      "to": "nationalisations-1975",
+      "type": "caused"
+    },
+    {
+      "aliases": [],
+      "confidence": "consensus",
+      "from": "delgado-candidacy-1958",
+      "id": "delgado-candidacy-1958--constitutional-revision-1959--caused",
+      "status": "active",
+      "supersededBy": null,
+      "to": "constitutional-revision-1959",
+      "type": "caused"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "delgado-candidacy-1958",
+      "id": "delgado-candidacy-1958--delgado-assassinated-1965--caused",
+      "status": "active",
+      "supersededBy": null,
+      "to": "delgado-assassinated-1965",
+      "type": "caused"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "delgado-candidacy-1958",
+      "id": "delgado-candidacy-1958--santa-maria-hijacking-1961--inspired",
+      "status": "active",
+      "supersededBy": null,
+      "to": "santa-maria-hijacking-1961",
+      "type": "inspired"
+    },
+    {
+      "aliases": [],
+      "confidence": "consensus",
       "from": "east-timor-invasion-1975",
       "id": "east-timor-invasion-1975--east-timor-independence-2002--precondition-of",
       "status": "active",
       "supersededBy": null,
       "to": "east-timor-independence-2002",
       "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "disputed",
+      "from": "eec-accession-1986",
+      "id": "eec-accession-1986--cavaco-absolute-majority-1987--enabled",
+      "status": "active",
+      "supersededBy": null,
+      "to": "cavaco-absolute-majority-1987",
+      "type": "enabled"
+    },
+    {
+      "aliases": [],
+      "confidence": "consensus",
+      "from": "eec-accession-1986",
+      "id": "eec-accession-1986--euro-adoption-1999--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "euro-adoption-1999",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "eec-accession-1986",
+      "id": "eec-accession-1986--expo-98--enabled",
+      "status": "active",
+      "supersededBy": null,
+      "to": "expo-98",
+      "type": "enabled"
     },
     {
       "aliases": [],
@@ -910,6 +1130,16 @@
       "supersededBy": null,
       "to": "eec-accession-1986",
       "type": "caused"
+    },
+    {
+      "aliases": [],
+      "confidence": "disputed",
+      "from": "euro-adoption-1999",
+      "id": "euro-adoption-1999--troika-bailout-2011--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "troika-bailout-2011",
+      "type": "precondition-of"
     },
     {
       "aliases": [],
@@ -943,6 +1173,16 @@
     },
     {
       "aliases": [],
+      "confidence": "probable",
+      "from": "guinea-war-begins-1963",
+      "id": "guinea-war-begins-1963--cabral-assassinated-1973--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "cabral-assassinated-1973",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
       "confidence": "consensus",
       "from": "guinea-war-begins-1963",
       "id": "guinea-war-begins-1963--carnation-revolution-1974--caused",
@@ -964,11 +1204,61 @@
     {
       "aliases": [],
       "confidence": "probable",
+      "from": "imf-agreement-1978",
+      "id": "imf-agreement-1978--imf-agreement-1983--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "imf-agreement-1983",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "imf-agreement-1983",
+      "id": "imf-agreement-1983--eec-accession-1986--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "eec-accession-1986",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
       "from": "law-of-separation-1911",
       "id": "law-of-separation-1911--coup-28-may-1926--precondition-of",
       "status": "active",
       "supersededBy": null,
       "to": "coup-28-may-1926",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "legislative-election-1976",
+      "id": "legislative-election-1976--eec-application-1977--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "eec-application-1977",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "disputed",
+      "from": "monarchy-of-the-north-1919",
+      "id": "monarchy-of-the-north-1919--coup-28-may-1926--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "coup-28-may-1926",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "mozambique-war-begins-1964",
+      "id": "mozambique-war-begins-1964--wiriyamu-massacre-1972--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "wiriyamu-massacre-1972",
       "type": "precondition-of"
     },
     {
@@ -980,6 +1270,16 @@
       "supersededBy": null,
       "to": "25-november-1975",
       "type": "reacted-to"
+    },
+    {
+      "aliases": [],
+      "confidence": "disputed",
+      "from": "nationalisations-1975",
+      "id": "nationalisations-1975--imf-agreement-1978--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "imf-agreement-1978",
+      "type": "precondition-of"
     },
     {
       "aliases": [],
@@ -1000,6 +1300,26 @@
       "supersededBy": null,
       "to": "coup-28-may-1926",
       "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "consensus",
+      "from": "pimenta-de-castro-government-1915",
+      "id": "pimenta-de-castro-government-1915--revolt-14-may-1915--caused",
+      "status": "active",
+      "supersededBy": null,
+      "to": "revolt-14-may-1915",
+      "type": "caused"
+    },
+    {
+      "aliases": [],
+      "confidence": "consensus",
+      "from": "portugal-backs-franco-1936",
+      "id": "portugal-backs-franco-1936--legiao-portuguesa-founded-1936--caused",
+      "status": "active",
+      "supersededBy": null,
+      "to": "legiao-portuguesa-founded-1936",
+      "type": "caused"
     },
     {
       "aliases": [],
@@ -1033,6 +1353,16 @@
     },
     {
       "aliases": [],
+      "confidence": "probable",
+      "from": "revolt-14-may-1915",
+      "id": "revolt-14-may-1915--sidonio-pais-coup-1917--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "sidonio-pais-coup-1917",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
       "confidence": "consensus",
       "from": "salazar-finance-minister-1928",
       "id": "salazar-finance-minister-1928--salazar-president-of-council-1932--caused",
@@ -1053,12 +1383,42 @@
     },
     {
       "aliases": [],
+      "confidence": "disputed",
+      "from": "santa-maria-hijacking-1961",
+      "id": "santa-maria-hijacking-1961--angola-war-begins-1961--enabled",
+      "status": "active",
+      "supersededBy": null,
+      "to": "angola-war-begins-1961",
+      "type": "enabled"
+    },
+    {
+      "aliases": [],
+      "confidence": "consensus",
+      "from": "sidonio-pais-assassinated-1918",
+      "id": "sidonio-pais-assassinated-1918--monarchy-of-the-north-1919--enabled",
+      "status": "active",
+      "supersededBy": null,
+      "to": "monarchy-of-the-north-1919",
+      "type": "enabled"
+    },
+    {
+      "aliases": [],
       "confidence": "probable",
       "from": "sidonio-pais-assassinated-1918",
       "id": "sidonio-pais-assassinated-1918--noite-sangrenta-1921--precondition-of",
       "status": "active",
       "supersededBy": null,
       "to": "noite-sangrenta-1921",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "spinola-resigns-1974",
+      "id": "spinola-resigns-1974--coup-attempt-11-march-1975--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "coup-attempt-11-march-1975",
       "type": "precondition-of"
     },
     {
@@ -1092,6 +1452,28 @@
         "label": "Lisbon",
         "lat": 38.72,
         "lon": -9.14,
+        "precision": "city"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "alvor-agreement-1975",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "The Alvor Agreement",
+      "when": {
+        "calendar": "gregorian",
+        "date": "1975-01-15",
+        "end": 1975,
+        "start": 1975
+      },
+      "where": {
+        "label": "Alvor, Algarve",
+        "lat": 37.13,
+        "lon": -8.59,
         "precision": "city"
       }
     },
@@ -1186,6 +1568,72 @@
     {
       "actors": [],
       "aliases": [],
+      "id": "botelho-moniz-coup-attempt-1961",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Botelho Moniz's failed move against Salazar",
+      "when": {
+        "calendar": "gregorian",
+        "date": "1961-04-13",
+        "end": 1961,
+        "start": 1961
+      },
+      "where": {
+        "label": "Lisbon",
+        "lat": 38.72,
+        "lon": -9.14,
+        "precision": "city"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "bpn-nationalisation-2008",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Nationalisation of the Banco Português de Negócios",
+      "when": {
+        "calendar": "gregorian",
+        "date": "2008-11-02",
+        "end": 2008,
+        "start": 2008
+      },
+      "where": {
+        "label": "Lisbon",
+        "lat": 38.72,
+        "lon": -9.14,
+        "precision": "city"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "cabral-assassinated-1973",
+      "region": "africa",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Assassination of Amílcar Cabral",
+      "when": {
+        "calendar": "gregorian",
+        "date": "1973-01-20",
+        "end": 1973,
+        "start": 1973
+      },
+      "where": {
+        "label": "Conakry",
+        "lat": 9.51,
+        "lon": -13.68,
+        "precision": "city"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
       "id": "caetano-succeeds-salazar-1968",
       "region": "europe",
       "regionMethod": "inside",
@@ -1219,6 +1667,28 @@
         "date": "1974-04-25",
         "end": 1974,
         "start": 1974
+      },
+      "where": {
+        "label": "Lisbon",
+        "lat": 38.72,
+        "lon": -9.14,
+        "precision": "city"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "cavaco-absolute-majority-1987",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Cavaco Silva's absolute majority",
+      "when": {
+        "calendar": "gregorian",
+        "date": "1987-07-19",
+        "end": 1987,
+        "start": 1987
       },
       "where": {
         "label": "Lisbon",
@@ -1318,6 +1788,50 @@
     {
       "actors": [],
       "aliases": [],
+      "id": "constitutional-revision-1959",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "The revision that ends direct presidential elections",
+      "when": {
+        "calendar": "gregorian",
+        "date": "1959-08",
+        "end": 1959,
+        "start": 1959
+      },
+      "where": {
+        "label": "Lisbon",
+        "lat": 38.72,
+        "lon": -9.14,
+        "precision": "city"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "constitutional-revision-1982",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "The revision that abolishes the Council of the Revolution",
+      "when": {
+        "calendar": "gregorian",
+        "date": "1982-09-30",
+        "end": 1982,
+        "start": 1982
+      },
+      "where": {
+        "label": "Lisbon",
+        "lat": 38.72,
+        "lon": -9.14,
+        "precision": "city"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
       "id": "coup-28-may-1926",
       "region": "europe",
       "regionMethod": "inside",
@@ -1340,6 +1854,50 @@
     {
       "actors": [],
       "aliases": [],
+      "id": "coup-attempt-11-march-1975",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "The failed coup of 11 March",
+      "when": {
+        "calendar": "gregorian",
+        "date": "1975-03-11",
+        "end": 1975,
+        "start": 1975
+      },
+      "where": {
+        "label": "Lisbon",
+        "lat": 38.72,
+        "lon": -9.14,
+        "precision": "city"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "delgado-assassinated-1965",
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Humberto Delgado murdered by the PIDE",
+      "when": {
+        "calendar": "gregorian",
+        "date": "1965-02-13",
+        "end": 1965,
+        "start": 1965
+      },
+      "where": {
+        "label": "near Villanueva del Fresno, Spain",
+        "lat": 38.38,
+        "lon": -7.17,
+        "precision": "region"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
       "id": "delgado-candidacy-1958",
       "region": "europe",
       "regionMethod": "inside",
@@ -1351,6 +1909,28 @@
         "date": "1958-06-08",
         "end": 1958,
         "start": 1958
+      },
+      "where": {
+        "label": "Lisbon",
+        "lat": 38.72,
+        "lon": -9.14,
+        "precision": "city"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "eanes-elected-1976",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Ramalho Eanes elected president",
+      "when": {
+        "calendar": "gregorian",
+        "date": "1976-06-27",
+        "end": 1976,
+        "start": 1976
       },
       "where": {
         "label": "Lisbon",
@@ -1450,6 +2030,72 @@
     {
       "actors": [],
       "aliases": [],
+      "id": "euro-adoption-1999",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Portugal adopts the euro",
+      "when": {
+        "calendar": "gregorian",
+        "date": "1999-01-01",
+        "end": 1999,
+        "start": 1999
+      },
+      "where": {
+        "label": "Lisbon",
+        "lat": 38.72,
+        "lon": -9.14,
+        "precision": "city"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "expo-98",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Expo 98",
+      "when": {
+        "calendar": "gregorian",
+        "date": "1998-05-22",
+        "end": 1998,
+        "start": 1998
+      },
+      "where": {
+        "label": "Parque das Nações, Lisbon",
+        "lat": 38.77,
+        "lon": -9.09,
+        "precision": "city"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "exposicao-mundo-portugues-1940",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Exhibition of the Portuguese World",
+      "when": {
+        "calendar": "gregorian",
+        "date": "1940-06-23",
+        "end": 1940,
+        "start": 1940
+      },
+      "where": {
+        "label": "Belém, Lisbon",
+        "lat": 38.7,
+        "lon": -9.2,
+        "precision": "city"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
       "id": "germany-declares-war-1916",
       "region": "europe",
       "regionMethod": "inside",
@@ -1538,6 +2184,50 @@
     {
       "actors": [],
       "aliases": [],
+      "id": "imf-agreement-1978",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "First stabilisation agreement with the IMF",
+      "when": {
+        "calendar": "gregorian",
+        "date": "1978-05",
+        "end": 1978,
+        "start": 1978
+      },
+      "where": {
+        "label": "Lisbon",
+        "lat": 38.72,
+        "lon": -9.14,
+        "precision": "city"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "imf-agreement-1983",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Second stabilisation agreement with the IMF",
+      "when": {
+        "calendar": "gregorian",
+        "date": "1983-09",
+        "end": 1983,
+        "start": 1983
+      },
+      "where": {
+        "label": "Lisbon",
+        "lat": 38.72,
+        "lon": -9.14,
+        "precision": "city"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
       "id": "law-of-separation-1911",
       "region": "europe",
       "regionMethod": "inside",
@@ -1549,6 +2239,50 @@
         "date": "1911-04-20",
         "end": 1911,
         "start": 1911
+      },
+      "where": {
+        "label": "Lisbon",
+        "lat": 38.72,
+        "lon": -9.14,
+        "precision": "city"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "legiao-portuguesa-founded-1936",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Foundation of the Portuguese Legion",
+      "when": {
+        "calendar": "gregorian",
+        "date": "1936-09-30",
+        "end": 1936,
+        "start": 1936
+      },
+      "where": {
+        "label": "Lisbon",
+        "lat": 38.72,
+        "lon": -9.14,
+        "precision": "city"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "legislative-election-1976",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "First legislative election under the constitution",
+      "when": {
+        "calendar": "gregorian",
+        "date": "1976-04-25",
+        "end": 1976,
+        "start": 1976
       },
       "where": {
         "label": "Lisbon",
@@ -1576,6 +2310,28 @@
         "label": "Macau",
         "lat": 22.2,
         "lon": 113.54,
+        "precision": "city"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "monarchy-of-the-north-1919",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "The Monarchy of the North",
+      "when": {
+        "calendar": "gregorian",
+        "date": "1919-01-19",
+        "end": 1919,
+        "start": 1919
+      },
+      "where": {
+        "label": "Porto",
+        "lat": 41.15,
+        "lon": -8.61,
         "precision": "city"
       }
     },
@@ -1670,6 +2426,50 @@
     {
       "actors": [],
       "aliases": [],
+      "id": "pimenta-de-castro-government-1915",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Pimenta de Castro's authoritarian government",
+      "when": {
+        "calendar": "gregorian",
+        "date": "1915-01",
+        "end": 1915,
+        "start": 1915
+      },
+      "where": {
+        "label": "Lisbon",
+        "lat": 38.72,
+        "lon": -9.14,
+        "precision": "city"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "portugal-backs-franco-1936",
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Portugal supports the Nationalists in the Spanish Civil War",
+      "when": {
+        "calendar": "gregorian",
+        "date": "1936-07",
+        "end": 1939,
+        "start": 1936
+      },
+      "where": {
+        "label": "Lisbon",
+        "lat": 38.72,
+        "lon": -9.14,
+        "precision": "city"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
       "id": "portugal-e-o-futuro-1974",
       "region": "europe",
       "regionMethod": "inside",
@@ -1703,6 +2503,28 @@
         "date": "1910-10-05",
         "end": 1910,
         "start": 1910
+      },
+      "where": {
+        "label": "Lisbon",
+        "lat": 38.72,
+        "lon": -9.14,
+        "precision": "city"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "revolt-14-may-1915",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "The revolt of 14 May restores the Democrats",
+      "when": {
+        "calendar": "gregorian",
+        "date": "1915-05-14",
+        "end": 1915,
+        "start": 1915
       },
       "where": {
         "label": "Lisbon",
@@ -1758,6 +2580,28 @@
     {
       "actors": [],
       "aliases": [],
+      "id": "santa-maria-hijacking-1961",
+      "region": "americas",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "The seizure of the liner Santa Maria",
+      "when": {
+        "calendar": "gregorian",
+        "date": "1961-01-22",
+        "end": 1961,
+        "start": 1961
+      },
+      "where": {
+        "label": "Recife, at the end of the voyage",
+        "lat": -8.05,
+        "lon": -34.88,
+        "precision": "region"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
       "id": "sidonio-pais-assassinated-1918",
       "region": "europe",
       "regionMethod": "inside",
@@ -1791,6 +2635,50 @@
         "date": "1917-12-05",
         "end": 1917,
         "start": 1917
+      },
+      "where": {
+        "label": "Lisbon",
+        "lat": 38.72,
+        "lon": -9.14,
+        "precision": "city"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "soares-elected-president-1986",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Mário Soares elected president",
+      "when": {
+        "calendar": "gregorian",
+        "date": "1986-02-16",
+        "end": 1986,
+        "start": 1986
+      },
+      "where": {
+        "label": "Lisbon",
+        "lat": 38.72,
+        "lon": -9.14,
+        "precision": "city"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "spinola-resigns-1974",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Spínola resigns the presidency",
+      "when": {
+        "calendar": "gregorian",
+        "date": "1974-09-30",
+        "end": 1974,
+        "start": 1974
       },
       "where": {
         "label": "Lisbon",
@@ -1841,6 +2729,28 @@
         "lat": 40.75,
         "lon": -73.97,
         "precision": "city"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "wiriyamu-massacre-1972",
+      "region": "africa",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "The Wiriyamu massacre",
+      "when": {
+        "calendar": "gregorian",
+        "date": "1972-12-16",
+        "end": 1972,
+        "start": 1972
+      },
+      "where": {
+        "label": "Tete district, Mozambique",
+        "lat": -16.3,
+        "lon": 33.4,
+        "precision": "region"
       }
     }
   ],

@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "eec-accession-1986--euro-adoption-1999--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "reis-2013-portuguese-slump",
+      "locator": null
+    }
+  ],
+  "from": "eec-accession-1986",
+  "to": "euro-adoption-1999",
+  "type": "precondition-of",
+  "confidence": "consensus",
+  "explanation": "Membership of the Community was the condition of membership of its monetary union, and the convergence Portugal ran through in the 1990s was set by treaties it had signed as a member. There is no route to the euro that does not pass through 1986."
+}

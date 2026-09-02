@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "bpn-nationalisation-2008--troika-bailout-2011--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "reis-2013-portuguese-slump",
+      "locator": null
+    }
+  ],
+  "from": "bpn-nationalisation-2008",
+  "to": "troika-bailout-2011",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The rescue put a large and, for years, uncertain liability onto the public accounts at the moment when the market was pricing Portuguese debt on exactly such uncertainties. It is one of the specific reasons the numbers looked worse in 2011 than they had in 2008."
+}

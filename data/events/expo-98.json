@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "expo-98",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    }
+  ],
+  "title": "Expo 98",
+  "summary": "The world exposition held in Lisbon from May to September 1998, on the theme of the oceans and the fifth centenary of Vasco da Gama's voyage to India. It rebuilt a stretch of derelict riverfront and was the largest public works programme of the decade.",
+  "when": {
+    "start": 1998,
+    "end": 1998,
+    "date": "1998-05-22",
+    "calendar": "gregorian"
+  },
+  "where": {
+    "lon": -9.09,
+    "lat": 38.77,
+    "precision": "city",
+    "label": "Parque das Nações, Lisbon"
+  },
+  "region": null,
+  "actors": []
+}

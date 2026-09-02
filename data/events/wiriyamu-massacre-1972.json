@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "wiriyamu-massacre-1972",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "macqueen-1997-decolonization",
+      "locator": null
+    }
+  ],
+  "title": "The Wiriyamu massacre",
+  "summary": "Portuguese troops killed a large number of villagers in the Tete district of Mozambique in December 1972. The killings were made public in London in July 1973 by the priest Adrian Hastings, days before Caetano's state visit to Britain. The death toll and the chain of command are both disputed.",
+  "when": {
+    "start": 1972,
+    "end": 1972,
+    "date": "1972-12-16",
+    "calendar": "gregorian"
+  },
+  "where": {
+    "lon": 33.4,
+    "lat": -16.3,
+    "precision": "region",
+    "label": "Tete district, Mozambique"
+  },
+  "region": null,
+  "actors": []
+}

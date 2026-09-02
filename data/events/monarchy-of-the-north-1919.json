@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "monarchy-of-the-north-1919",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "wheeler-1978-republican-portugal",
+      "locator": null
+    },
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    }
+  ],
+  "title": "The Monarchy of the North",
+  "summary": "Monarchists led by Paiva Couceiro proclaimed the restoration of the monarchy in Porto on 19 January 1919 and held the north for about a month before republican forces retook the city in mid-February. A parallel rising in Lisbon failed within days.",
+  "when": {
+    "start": 1919,
+    "end": 1919,
+    "date": "1919-01-19",
+    "calendar": "gregorian"
+  },
+  "where": {
+    "lon": -8.61,
+    "lat": 41.15,
+    "precision": "city",
+    "label": "Porto"
+  },
+  "region": null,
+  "actors": []
+}

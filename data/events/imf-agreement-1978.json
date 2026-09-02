@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "imf-agreement-1978",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "reis-2013-portuguese-slump",
+      "locator": null
+    }
+  ],
+  "title": "First stabilisation agreement with the IMF",
+  "summary": "Facing a balance-of-payments crisis, Portugal agreed a stabilisation programme with the International Monetary Fund: devaluation, credit ceilings and restraint on wages and public spending. The month given here is from memory and should be checked.",
+  "when": {
+    "start": 1978,
+    "end": 1978,
+    "date": "1978-05",
+    "calendar": "gregorian"
+  },
+  "where": {
+    "lon": -9.14,
+    "lat": 38.72,
+    "precision": "city",
+    "label": "Lisbon"
+  },
+  "region": null,
+  "actors": []
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "cavaco-absolute-majority-1987",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    }
+  ],
+  "title": "Cavaco Silva's absolute majority",
+  "summary": "The Social Democrats won an absolute majority in July 1987, the first in the democratic period, opening ten years of stable single-party government and a decade of European structural funds.",
+  "when": {
+    "start": 1987,
+    "end": 1987,
+    "date": "1987-07-19",
+    "calendar": "gregorian"
+  },
+  "where": {
+    "lon": -9.14,
+    "lat": 38.72,
+    "precision": "city",
+    "label": "Lisbon"
+  },
+  "region": null,
+  "actors": []
+}

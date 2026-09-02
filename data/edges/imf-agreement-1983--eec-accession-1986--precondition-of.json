@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "imf-agreement-1983--eec-accession-1986--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    }
+  ],
+  "from": "imf-agreement-1983",
+  "to": "eec-accession-1986",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Accession required an economy the Community could admit, and the adjustment of 1983 to 1985 — devaluation, restriction, a current account brought back to balance — is what produced one. The negotiation closed as the programme ended."
+}

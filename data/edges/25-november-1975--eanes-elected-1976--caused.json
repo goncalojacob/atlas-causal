@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "25-november-1975--eanes-elected-1976--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    }
+  ],
+  "from": "25-november-1975",
+  "to": "eanes-elected-1976",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "Eanes was the officer who commanded the operation of 25 November, and it is that command which made him the candidate the parties of the centre and right could agree on seven months later. He entered the election as the man who had ended the revolutionary period."
+}
