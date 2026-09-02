@@ -4,7 +4,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import {
-  FIELDS, CITATION_LISTS, emptyValues, slugify, parseBound, buildRecord, buildBundle,
+  FIELDS, CITATION_LISTS, ACTOR_LISTS, emptyValues, slugify, parseBound, buildRecord, buildBundle,
   findSimilar, similarity, checkBundleShape, validateBundle, everythingCited,
 } from '../src/contribute/bundle.js';
 import { buildTopology } from '../src/validate/core.js';
@@ -40,8 +40,8 @@ test('every field path is a property the kind schema knows', async () => {
       const head = field.path.split('/')[1];
       assert.ok(Object.hasOwn(properties, head), `${kind}.${field.key} → /${head} is not in v1/${kind}.json`);
     }
-    for (const list of CITATION_LISTS[kind]) {
-      assert.ok(Object.hasOwn(properties, list.path.split('/')[1]), `${kind} citation list ${list.key}`);
+    for (const list of [...CITATION_LISTS[kind], ...ACTOR_LISTS[kind]]) {
+      assert.ok(Object.hasOwn(properties, list.path.split('/')[1]), `${kind} list ${list.key}`);
     }
   }
 });
@@ -207,4 +207,42 @@ test('the duplicate search finds near-matches before a new event is allowed', ()
 
   assert.equal(similarity('Fixture Event A', 'fixture  event   a'), 1);
   assert.equal(similarity('', 'anything'), 0);
+});
+
+test('the form builds an actor, and puts actors with roles on an event', async () => {
+  const topology = await topologyOf();
+  const all = await schemas();
+  const actor = buildRecord('actor', {
+    ...emptyValues('actor'),
+    id: 'fixture-actor-new',
+    names: 'Fixture Body; FB; Corpo Fixture',
+    actorType: 'institution',
+    summary: 'A synthetic actor added by the form in a test. It never existed.',
+    start: '1900',
+    end: 'ongoing',
+    citations: [{ source: 'fixture-source-1', locator: null }],
+  }, CONTEXT);
+  assert.deepEqual(actor.names, ['Fixture Body', 'FB', 'Corpo Fixture']);
+  assert.deepEqual(actor.when, { start: 1900, end: null });
+  assert.equal(actor.where, null);
+  assert.deepEqual(createValidator(all).validate('v1/actor.json', actor), []);
+  // An actor without a source is not submittable, as rule 6 now says.
+  assert.equal(everythingCited({ records: [{ ...actor, sources: [] }] }), false);
+
+  const event = buildRecord('event', {
+    ...eventValues,
+    actors: [
+      { actor: 'fixture-actor-one', role: ' Leader ' },
+      { actor: '', role: 'dropped: no actor chosen' },
+    ],
+  }, CONTEXT);
+  assert.deepEqual(event.actors, [{ actor: 'fixture-actor-one', role: 'Leader' }]);
+
+  const ok = validateBundle({ schema: 1, records: [event] }, topology, all);
+  assert.deepEqual(ok.errors, [], JSON.stringify(ok.errors));
+
+  // A role left blank reports at the row, not at the record.
+  const blank = buildRecord('event', { ...eventValues, actors: [{ actor: 'fixture-actor-one', role: '' }] }, CONTEXT);
+  const bad = validateBundle({ schema: 1, records: [blank] }, topology, all);
+  assert.equal(bad.errors[0].path, '/actors/0/role');
 });
