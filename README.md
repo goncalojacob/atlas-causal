@@ -1,7 +1,7 @@
 # Atlas causal
 
-A map and a timeline over one graph: historical events as nodes, causal links
-as edges, each edge carrying a type, a confidence level and a written argument
+A map and a timeline over one graph: historical events as nodes, the people,
+polities and institutions in them as actors, causal links as edges, each edge carrying a type, a confidence level and a written argument
 with its sources. Pick an event, follow its consequences, and see which other
 branches fed the same endpoint — the antidote to reading one chain as the
 explanation.
@@ -17,16 +17,18 @@ No dependencies, no build step, nothing to install but Node for the tools.
 python3 -m http.server 8000        # http://localhost:8000/
 ```
 
-`data/events`, `data/edges` and `data/sources` are empty until records are
-written, so the interface has a synthetic mode:
-<http://localhost:8000/?fixtures=1> loads `tests/fixtures/data/` — twelve
-invented events that exercise the map, the timeline, the chain and the
+`data/` holds an assistant-drafted test dataset for the 20th and 21st
+centuries, which nobody has reviewed yet (see `CLAUDE.md` and `STATUS.md`);
+the interface also has a synthetic mode: <http://localhost:8000/?fixtures=1>
+loads `tests/fixtures/data/` — twelve invented events and two invented
+actors that exercise the map, the timeline, the chain, the actor card and the
 convergence query. The badge in the header says so; none of it is history.
 
 ```bash
 node tools/validate.mjs            # schemas, cross-record rules, region derivation
 node --test                        # every test under tests/
 node tools/new-record.mjs event <id> --title … --start …   # scaffold a record
+node tools/new-record.mjs actor <id> --type person --names "…" --start …
 node tools/build-index.mjs         # regenerate data/index/ after changing data/
 ```
 

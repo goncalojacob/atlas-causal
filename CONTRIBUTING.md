@@ -72,8 +72,8 @@ resolve. It cannot read. For every record touched:
 
 ## The record format
 
-One JSON file per record, under `data/events/`, `data/edges/` or
-`data/sources/`; the id is the file name. The schemas in `schema/v1/` and
+One JSON file per record, under `data/events/`, `data/edges/`, `data/actors/`
+or `data/sources/`; the id is the file name. The schemas in `schema/v1/` and
 `schema/common/` are authoritative — what follows is a synthetic example, of
 the kind that lives in `tests/fixtures/`, not a historical claim.
 
@@ -95,7 +95,7 @@ the kind that lives in `tests/fixtures/`, not a historical claim.
   "when": { "start": 1400, "end": 1400, "date": "1400-01-02", "calendar": "julian" },
   "where": { "lon": 1.5, "lat": 2.5, "precision": "city", "label": "Fixture place" },
   "region": null,
-  "actors": []
+  "actors": [{ "actor": "fixture-actor-one", "role": "leader" }]
 }
 ```
 
@@ -127,6 +127,30 @@ own fields — `from--to--type` — so the same argument cannot be filed twice:
 }
 ```
 
+An actor — a person, a polity, an institution or a people — is the same
+envelope again, and is reached only through the events that name it:
+
+```json
+{
+  "schema": 1,
+  "id": "fixture-actor-one",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [{ "name": "A Contributor", "github": "a-contributor" }],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-01",
+  "revised": null,
+  "sources": [{ "source": "fixture-source-1", "locator": "ch. 1" }],
+  "actorType": "person",
+  "names": ["Fixture Actor One", "Fixture the Elder"],
+  "summary": "A synthetic person, invented to exercise the interface.",
+  "when": { "start": 1180, "end": 1240 },
+  "where": { "lon": 1.5, "lat": 2.5, "precision": "city", "label": "Fixture place" }
+}
+```
+
 Notes that catch people out:
 
 - **Years are integers**, negative for BCE, and there is no year 0. `date` is
@@ -138,8 +162,16 @@ Notes that catch people out:
   coordinates at index time. Set it only when the derivation would be wrong.
 - **`authors`, `created` and `revised` are set by the Action**, not by you.
   Whatever the form puts there is replaced.
-- **`actors` stays empty.** The validator rejects a non-empty list until
-  `data/actors/` exists.
+- **`actors` names the actors *of* the event**, not everyone alive at the
+  time, each with the role it played in it. Roles are free text for now —
+  `leader`, `signatory`, `deposed` — compared lowercased and trimmed, so the
+  same actor may appear twice in one event only under different roles. Every
+  id must resolve to an active actor record.
+- **An actor has no lane.** It is never put on the timeline on its own, so
+  unlike an event it needs no `region` when it has no `where`. Its `names`
+  list must not be empty; `names[0]` is the display name and the rest are
+  variants, former names and acronyms, which is what search will use.
+- **An actor cites a source too**, like every other node.
 
 ## Working on the code
 
