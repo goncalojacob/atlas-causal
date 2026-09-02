@@ -45,8 +45,13 @@ export function createMap(container, { atlas, state }) {
     return [((e.clientX - rect.left) / rect.width) * WIDTH, ((e.clientY - rect.top) / rect.height) * HEIGHT];
   };
   let drag = null;
+  // The drag is over by the time the click arrives, so whether it moved has
+  // to outlive it in a flag of its own; reading it off `drag` meant reading
+  // it off null, and every drag that ended on a mark selected it.
+  let dragged = false;
   root.addEventListener('pointerdown', (e) => {
     drag = { start: toSvg(e), origin: { ...transform }, moved: false };
+    dragged = false;
     root.setPointerCapture(e.pointerId);
   });
   root.addEventListener('pointermove', (e) => {
@@ -58,10 +63,17 @@ export function createMap(container, { atlas, state }) {
     transform = { ...transform, x: drag.origin.x + dx, y: drag.origin.y + dy };
     applyTransform();
   });
-  root.addEventListener('pointerup', () => { drag = null; });
+  root.addEventListener('pointerup', () => {
+    dragged = drag?.moved ?? false;
+    drag = null;
+  });
   root.addEventListener('click', (e) => {
-    // A drag that ends on a mark must not select it.
-    if (drag?.moved) e.stopPropagation();
+    // A drag that ends on a mark must not select it. Cleared here, once the
+    // click has been judged, so the next clean click selects.
+    if (dragged) {
+      dragged = false;
+      e.stopPropagation();
+    }
   }, true);
   root.addEventListener('wheel', (e) => {
     e.preventDefault();
