@@ -25,11 +25,19 @@ test('scaffolded records have the envelope and pass their schema; the text is le
   const source = scaffold('source', ['fixture-scaffold-source'], { ...opts, type: 'article', title: 'Fixture', creators: 'A One; B Two', doi: '10.0000/x' });
   assert.deepEqual(source.creators, ['A One', 'B Two']);
   assert.deepEqual(v.validate('v1/source.json', source), []);
+
+  const actor = scaffold('actor', ['fixture-scaffold-actor'], { ...opts, type: 'institution', names: 'Fixture Body; FB', start: '1900', end: 'null' });
+  assert.deepEqual(actor.names, ['Fixture Body', 'FB']);
+  assert.deepEqual(actor.when, { start: 1900, end: null });
+  assert.equal(actor.where, null);
+  assert.deepEqual(v.validate('v1/actor.json', actor).map((e) => e.path), ['/summary']);
 });
 
 test('scaffold refuses bad input', () => {
   assert.throws(() => scaffold('event', ['Bad Id'], { ...opts, start: '1' }), /slug/);
   assert.throws(() => scaffold('event', ['fixture-x'], opts), /--start/);
   assert.throws(() => scaffold('edge', ['a', 'b', 'made'], opts), /type must be one of/);
+  assert.throws(() => scaffold('actor', ['x'], { ...opts, type: 'deity' }), /--type must be one of/);
+  assert.throws(() => scaffold('actor', ['x'], opts), /--start/);
   assert.throws(() => scaffold('presence', ['x'], opts), /kind must be/);
 });

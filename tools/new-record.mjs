@@ -6,6 +6,8 @@
 //   node tools/new-record.mjs event <id> --title "…" --start 1415 [--end 1415]
 //        [--lon -9.14 --lat 38.71 --label "Lisbon" --precision city] [--region europe]
 //   node tools/new-record.mjs edge <from> <to> <type> [--confidence probable] [--source <id>]
+//   node tools/new-record.mjs actor <id> --type person --names "Salazar; António de Oliveira Salazar"
+//        --start 1889 [--end 1970 | --end null] [--lon -8.1 --lat 40.5 --label "Santa Comba Dão"]
 //   node tools/new-record.mjs source <id> --type book --title "…" --creators "A; B"
 //        [--year 2000 --publisher "…" --isbn … --doi … --url … --accessed YYYY-MM-DD
 //         --repository "…" --reference "…"]
@@ -16,7 +18,7 @@ import { existsSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
-import { EDGE_TYPES, SLUG } from '../src/validate/rules.js';
+import { ACTOR_TYPES, EDGE_TYPES, SLUG } from '../src/validate/rules.js';
 import { KIND_DIRS } from './lib/read.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -120,6 +122,31 @@ export function scaffold(kind, positional, options) {
     };
   }
 
+  if (kind === 'actor') {
+    const [id] = positional;
+    if (!id || !SLUG.test(id)) throw new Error('actor needs a slug id');
+    const actorType = options.type ?? 'person';
+    if (!ACTOR_TYPES.includes(actorType)) throw new Error(`--type must be one of ${ACTOR_TYPES.join(', ')}`);
+    const start = int(options.start, 'start');
+    if (start === undefined) throw new Error('actor needs --start <year>');
+    // `--end null` is an actor that has not ended: a living person, a state
+    // that still exists.
+    const end = options.end === 'null' ? null : (int(options.end, 'end') ?? start);
+    const lon = num(options.lon, 'lon');
+    const lat = num(options.lat, 'lat');
+    return {
+      ...envelope(id),
+      sources,
+      actorType,
+      names: typeof options.names === 'string' ? options.names.split(';').map((s) => s.trim()).filter(Boolean) : [],
+      summary: '',
+      when: { start, end },
+      where: lon !== undefined && lat !== undefined
+        ? { lon, lat, precision: options.precision ?? 'city', label: options.label ?? '' }
+        : null,
+    };
+  }
+
   if (kind === 'source') {
     const [id] = positional;
     if (!id || !SLUG.test(id)) throw new Error('source needs a slug id');
@@ -140,7 +167,7 @@ export function scaffold(kind, positional, options) {
     };
   }
 
-  throw new Error(`kind must be event, edge or source, not "${kind}"`);
+  throw new Error(`kind must be event, edge, source or actor, not "${kind}"`);
 }
 
 async function main(argv) {

@@ -38,7 +38,7 @@ function event(id, over = {}) {
 
 async function scratch() {
   const dir = await mkdtemp(path.join(tmpdir(), 'atlas-bundle-'));
-  for (const sub of ['events', 'edges', 'sources']) await mkdir(path.join(dir, sub), { recursive: true });
+  for (const sub of ['events', 'edges', 'sources', 'actors']) await mkdir(path.join(dir, sub), { recursive: true });
   return dir;
 }
 
@@ -223,4 +223,33 @@ test('a bundle written to files passes the validator it will meet in CI', async 
   await bundleToFiles({ schema: 1, records: [event('fixture-event-new')] }, { ...OPTIONS, dataDir: dir });
   const result = await runValidation(dir);
   assert.deepEqual(result.errors, []);
+});
+
+test('an actor in a bundle is written to data/actors/', async () => {
+  const dir = await scratch();
+  const actor = {
+    schema: 1,
+    id: 'fixture-actor-new',
+    kind: 'actor',
+    status: 'active',
+    supersededBy: null,
+    aliases: [],
+    authors: [{ name: 'Fixture Contributor', github: null }],
+    license: 'CC-BY-SA-4.0',
+    created: '1970-01-01',
+    revised: null,
+    sources: [{ source: 'fixture-source-1', locator: null }],
+    actorType: 'people',
+    names: ['Fixture People'],
+    summary: 'A synthetic actor, written for a test.',
+    when: { start: 1300, end: null },
+    where: null,
+  };
+  const written = await bundleToFiles({ schema: 1, records: [actor] }, { ...OPTIONS, dataDir: dir });
+  assert.deepEqual(written.map((w) => w.path), ['data/actors/fixture-actor-new.json']);
+  const onDisk = JSON.parse(await readFile(path.join(dir, 'actors', 'fixture-actor-new.json'), 'utf8'));
+  assert.deepEqual(onDisk.authors, [{ name: 'Fixture Contributor', github: 'fixture-opener' }]);
+  assert.equal(onDisk.actorType, 'people');
+  // An actor id is a plain slug, so the same path checks apply as everywhere.
+  assert.throws(() => checkBundle({ schema: 1, records: [{ ...actor, id: '../events/x' }] }), /not a slug/);
 });
