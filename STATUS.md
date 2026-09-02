@@ -6,25 +6,30 @@ session ends. `ARCHITECTURE.md` is the target; this file is the position.
 
 ## Last updated
 
-2026-09-02, after the 20th–21st century Portugal test dataset was added.
+2026-09-02, at the end of M4 (the `actor` kind, and a denser test set).
 
 ## Phase
 
-**M0, M1, M2 and M3 built, on branch `m0`, pull request #1 open against
-`main`.** `ARCHITECTURE.md` revision 3 is still the specification.
-`data/` now holds a **test dataset, 20th–21st century Portugal** (35
-events, 37 edges, 11 sources; 1910 → 2011), drafted by the assistant on
-2026-09-02 at the owner's request as an exception to the "written by a
-person" rule (recorded in `CLAUDE.md`). Every record says so in `authors`.
-It validates (0 errors; one `degree-zero` warning on
-`delgado-candidacy-1958`, left deliberately), the index is built, and the
-atlas renders it at `http://localhost:8000/` without `?fixtures=1`. Three
-edges are `disputed` with dissenting citations; two lanes derive by
-`nearest` (Goa, Macau — both correct); the Azores use a `region` override.
-Every page still serves from `python3 -m http.server 8000`.
+**M0, M1, M2, M3 and M4 built, on branch `m0`, pull request #1 open
+against `main`.** `ARCHITECTURE.md` **revision 4** is the specification;
+its opening note says what M4 changed and why.
+
+`data/` holds a **test dataset, 20th–21st century Portugal** — **60
+events, 73 edges, 42 actors, 11 sources**, 1910 → 2011 — drafted by the
+assistant on 2026-09-02 at the owner's request as an exception to the
+"written by a person" rule (recorded in `CLAUDE.md`). Every record says so
+in `authors`. It validates with **0 errors and 0 warnings**, the index is
+built, and the atlas renders it at `http://localhost:8000/` without
+`?fixtures=1`. Eight edges are `disputed` with dissenting citations; two
+lanes derive by `nearest` (Goa, Macau — both correct); four events use a
+`region` override (the Azores, Recife, the Spanish border, Lisbon for the
+Spanish war). Every page still serves from `python3 -m http.server 8000`.
+
+**Nothing in it has been read by a person.** See item 4 under Next, and
+"Dates to verify" below.
 
 What exists and passes (`node tools/validate.mjs --index`, `node --test`:
-120 tests):
+127 tests):
 
 - **M0.** Licences (`LICENSE` MIT, `data/LICENSE` CC BY-SA 4.0,
   `data/geo/LICENSE` Natural Earth); `.nvmrc` = 22; `schema/common/` and
@@ -39,7 +44,8 @@ What exists and passes (`node tools/validate.mjs --index`, `node --test`:
   `state.js`, `data.js`, `graph.js`, `map/projection.js` (equirectangular),
   `map/map.js`, `map/layers/{land,events}.js`, `timeline.js`,
   `timeline-scale.js`, `panel.js`, `util/{esc,dom}.js`. State
-  `{ year, selected, chain, layers }` in the query string. Disputed edges
+  `{ year, selected, actor, chain, layers }` in the query string (`actor`
+  arrived in M4). Disputed edges
   dashed on the map and marked in the panel.
 - **M2.** `contribute.html` and `src/contribute/{bundle,form,submit,main}.js`:
   the form builds a bundle, runs the same `validate()` the CLI runs against
@@ -54,13 +60,34 @@ What exists and passes (`node tools/validate.mjs --index`, `node --test`:
   `tools/lookup-sources.mjs` for the DOI/ISBN reading aid.
 - **M3.** `about.html` (linked from the atlas header), `CONTRIBUTING.md`,
   `README.md`; `deploy.yml` re-checked against the current tree.
+- **M4.** The **`actor` kind**, end to end. `schema/v1/actor.json`
+  (`actorType`, `names`, `summary`, `when`, optional `where`, the usual
+  envelope); an event's `actors` is now `[{ actor, role }]`; rule 14
+  rewritten and rules 6, 10, 11 and 15 extended to actors, with two new
+  warnings (`actor-unused`, `actor-outside-when`); the topology carries
+  `actors` and the manifest counts them and lists the `roles` in use;
+  `data.js` resolves actor ids and builds `eventsByActor`; `panel.js` shows
+  an event's actors and an actor's card; the map and the timeline give an
+  actor's events a cobalt emphasis, distinct from the madder path;
+  `?actor=<id>` in the URL; the form has an actor record type and an
+  actor-and-role row on events; `new-record.mjs actor …`; two synthetic
+  actors in `tests/fixtures/`. `ARCHITECTURE.md` revision 4, and
+  `CLAUDE.md`, `CONTRIBUTING.md`, `README.md` updated.
 
 Verified in headless Chromium, against `?fixtures=1`: the atlas renders
 (marks, lanes, bars, panel); the form derives an id from a title, lists the
 bundle's own sources alongside the atlas's, blocks on a near-match until it
 is acknowledged, fires the arrow of time and the consensus rule in the
 browser, shows the dispute fields only for a disputed edge, and produces the
-bundle JSON.
+bundle JSON; the actor entry renders its fields and the event's actor row
+lists the actors of the atlas and of the bundle by name.
+
+Verified in headless Chromium against the **real** dataset: the card for a
+person (`?actor=salazar` — 14 events) and for an institution
+(`?actor=pvde-pide-dgs` — 2 events, with the hedged roles), and an event
+view with an actor selected (`?selected=carnation-revolution-1974&actor=salazar`):
+six actors listed on the event, the notice, and 14 marks emphasised on the
+map.
 
 ## Decided
 
@@ -95,16 +122,19 @@ Taken by the building agents, all reversible, all listed under Deviations.
 3. **Owner: review and merge PR #1**
    (https://github.com/goncalojacob/atlas-causal/pull/1).
 4. **Owner: review the test dataset before anything is public.** Every
-   date, coordinate, explanation and confidence was written by the assistant
-   from memory. `docs/drafts/portugal-since-1910.md` (untracked, local)
-   lists the dates flagged least certain. The eleven source records carry a
-   WorldCat search URL as their identifier, not an ISBN, and every citation
-   has `locator: null` — replace with ISBNs and page or chapter references,
-   or retract the record. The assistant's `authors` entry stays until a
-   person has reviewed the record and signs it.
+   date, coordinate, name, role, explanation and confidence was written by
+   the assistant from memory. "Dates to verify" below lists what is least
+   certain. The eleven source records carry a WorldCat search URL as their
+   identifier, not an ISBN, and every citation has `locator: null` —
+   replace with ISBNs and page or chapter references, or retract the
+   record. The assistant's `authors` entry stays until a person has
+   reviewed the record and signs it. Read in this order: the eight
+   `disputed` edges (a wrong dispute is the worst failure this project can
+   have), then the roles where responsibility is contested — Wiriyamu,
+   the 1961 Luanda attacks, Cabral's killing — then the dates.
 5. **Owner: write the first records** of the 1415→ period. `node tools/new-record.mjs event <id>
-   --title … --start … --lon … --lat … --label …` (and `edge`, `source`),
-   fill in the text, then `node tools/validate.mjs` and
+   --title … --start … --lon … --lat … --label …` (and `edge`, `source`,
+   `actor`), fill in the text, then `node tools/validate.mjs` and
    `node tools/build-index.mjs`; open `http://localhost:8000/`. Use `region`
    on the record whenever the derived lane is wrong (strait cities, islands
    absent at 110m).
@@ -119,6 +149,15 @@ Taken by the building agents, all reversible, all listed under Deviations.
 
 ## Open questions
 
+- **Does the role vocabulary close, and to what?** Roles on
+  `actors[].role` are free text for now; the manifest lists the 62 in use
+  across the test dataset, which is what a decision should be made from.
+  Some are plainly general (`leader`, `target`, `signatory`,
+  `belligerent`, `deposed`); some are one-offs written to hedge
+  (`claimed responsibility`, `alleged accomplice`). A closed enum would
+  make the panel groupable and search possible; it would also force the
+  hedges out of the role and into the summary, which may be the right
+  place for them. The agent did not decide this.
 - When contributions open to strangers. `CONTEXT.md` argues: after the
   1580–1640 chain coheres and a few hundred of the owner's own records exist.
   Owner: "we'll decide later."
@@ -235,6 +274,101 @@ reverse. 1–12 are from M0/M1, 13–21 from M2/M3.
     not permitted through this proxy" — which is the environment, not the
     token's permissions. Left for the owner, with the commands, under Next.
 
+22–28 are from M4.
+
+22. **An actor's `names` being non-empty is a rule, not a schema
+    keyword.** The subset validator implements fourteen keywords and
+    `minItems` is not one of them (adding it would widen the subset for
+    one field). Rule 14 checks it instead, and `schema/v1/actor.json` says
+    so in its description.
+23. **Rule 14 is stricter than the brief in two places, in its spirit.**
+    The same actor may appear twice in one event only under *different*
+    roles — "deposed" and "signatory" are two facts, "leader" twice is a
+    mistake — and an actor's `names` may not repeat a name. Both would
+    otherwise pass silently and produce a duplicated line in the panel.
+24. **`?actor=` is a second dimension, not an alternative to
+    `?selected=`.** The brief says the URL carries the selected actor "the
+    same way it carries a selected event"; carrying it *instead* would
+    mean the highlight died the moment you opened one of the actor's
+    events, which is the opposite of what the highlight is for. So both
+    can be set: choosing an actor clears the selected event and the chain
+    (as choosing an event already cleared the chain), choosing an event
+    keeps the actor, and the panel shows the event when there is one and
+    the card otherwise.
+25. **The actor card lives in `panel.js`, not its own module.** It shares
+    the citation rendering, the event links, the lane labels and the
+    load-token discipline with the event view; splitting it would have
+    meant threading five closures across a module boundary. `panel.js` is
+    now ~370 lines and still has one job. The ~300-line rule in
+    `CLAUDE.md` names `main.js` only, but this is the file to watch next.
+26. **The form's actor search is a `<select>` of names, not a search
+    box.** "Searches the loaded topology's actors (and the bundle's) by
+    name" is implemented the way the form already picks events and
+    sources: one control listing every active actor, and every actor in
+    the bundle being written, by display name and type. A separate
+    free-text search would be a second idiom in the same form.
+27. **The topology's actor entries carry no `where`.** The brief lists the
+    fields — `{ id, actorType, name, names, when, status, aliases,
+    supersededBy }` — and `where` is not among them, so the panel fetches
+    the record for the seat, as it already does for the summary and the
+    sources. Actors are not drawn on the map, so nothing needs it before
+    the card opens.
+28. **Roles are stored as written and normalised only for comparison.**
+    The brief says the validator "lowercases and trims"; doing that to the
+    stored value would edit a contributor's record. Instead the
+    normalisation (trim, lowercase, collapse inner spaces) is what rule 14
+    compares duplicates on and what `build-index.mjs` collects for the
+    manifest's `roles`, while the record keeps the text as filed.
+
+## Dates to verify
+
+Everything below was written from memory and is where the owner's review
+should look first. The record's own summary says so in the worst cases.
+
+**Events, dates the assistant is least sure of:**
+
+- `pimenta-de-castro-government-1915` — the appointment is given as
+  January 1915; the day is not recorded.
+- `monarchy-of-the-north-1919` — proclaimed 19 January, and given here as
+  collapsing on 13 February. Both ends want checking, and so does whether
+  the parallel Lisbon rising belongs in the same record.
+- `legiao-portuguesa-founded-1936` — 30 September 1936, from the founding
+  decree; check the Diário do Governo.
+- `exposicao-mundo-portugues-1940` — 23 June to 2 December 1940.
+- `constitutional-revision-1959` — August 1959; the month is a guess and
+  the number of the law is not recorded here at all.
+- `santa-maria-hijacking-1961` — 22 January to 2 February 1961.
+- `botelho-moniz-coup-attempt-1961` — 13 April 1961.
+- `delgado-assassinated-1965` — 13 February 1965 is the killing; the
+  bodies were found in April. Check which date the sources use.
+- `wiriyamu-massacre-1972` — 16 December 1972.
+- `imf-agreement-1978` — May 1978.
+- `imf-agreement-1983` — September 1983.
+- `constitutional-revision-1982` — 30 September 1982.
+- `soares-elected-president-1986` — 16 February 1986 (second round).
+- `cavaco-absolute-majority-1987` — 19 July 1987.
+- `expo-98` — 22 May to 30 September 1998.
+- `bpn-nationalisation-2008` — 2 November 2008.
+
+**Actors, dates and places:**
+
+- Birth and death years for `gomes-da-costa` (1863–1929),
+  `paiva-couceiro` (1861–1944) and `pimenta-de-castro` (1846–1918) are the
+  least certain of the twenty persons. Their `where` is deliberately
+  `null`: the assistant would have been guessing.
+- Founding years of the movements: `paigc` 1956 (founded under another
+  name and renamed — check which year the record should carry), `mpla`
+  1956, `fnla` 1962, `unita` 1966, `fretilin` 1974 (formed as ASDT and
+  renamed the same year), `frelimo` 1962.
+- `armed-forces-movement` is given 1973–1975 and
+  `council-of-the-revolution` 1975–1982; both are conventions rather than
+  dates in a document.
+- `frelimo`'s seat is given as Maputo, though it was founded in Dar es
+  Salaam; `eduardo-mondlane`'s birthplace is a point in Gaza province at
+  `region` precision, not a village.
+- `european-economic-community` is closed at 1993 (Maastricht). Whether
+  the record should instead be open and renamed is an editorial choice.
+
 ## Where things live
 
 - Repo: `~/atlas-causal`, branch `m0`.
@@ -244,6 +378,8 @@ reverse. 1–12 are from M0/M1, 13–21 from M2/M3.
   https://claude.ai/code/artifact/b3940d66-ad98-4de9-9bfd-aff8c77e6f36
 - Assistant memory: `~/.claude/projects/-home-gjacob-atlas-causal/memory/`
   (and a copy under `-mnt-c-Users-gonca` pointing here).
+- Build briefs: `docs/m0-brief.md`, `docs/m2-brief.md`, `docs/m4-brief.md`;
+  the adversarial review is `docs/review-2026-09-01.md`.
 
 ## Uncommitted
 
