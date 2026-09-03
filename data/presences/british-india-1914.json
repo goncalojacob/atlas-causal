@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "id": "republic-of-india-1899",
+  "id": "british-india-1914",
   "kind": "presence",
   "status": "active",
   "supersededBy": null,
@@ -12,30 +12,29 @@
     }
   ],
   "license": "CC-BY-NC-SA-4.0",
-  "created": "2026-09-02",
+  "created": "2026-09-03",
   "revised": null,
   "sources": [
     {
       "source": "cshapes-2-0",
-      "locator": "fid 567"
+      "locator": "fid 568"
     }
   ],
-  "actor": "republic-of-india",
+  "actor": "british-india",
   "presenceType": "state",
   "dependencyOf": "united-kingdom",
   "dependencyKind": "colony",
   "when": {
-    "start": 1899,
-    "end": 1914,
-    "date": "1899-01-01",
-    "endDate": "1914-07-02"
+    "start": 1914,
+    "end": 1931,
+    "date": "1914-07-03",
+    "endDate": "1931-02-12"
   },
   "geometry": {
     "files": [
-      "geo/presences/1886-1913.json",
       "geo/presences/1914-1932.json"
     ],
-    "key": "567"
+    "key": "568"
   },
   "capital": {
     "lon": 88.324676,

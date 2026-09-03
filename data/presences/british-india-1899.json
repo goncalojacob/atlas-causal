@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "id": "indonesia-1886",
+  "id": "british-india-1899",
   "kind": "presence",
   "status": "active",
   "supersededBy": null,
@@ -12,35 +12,36 @@
     }
   ],
   "license": "CC-BY-NC-SA-4.0",
-  "created": "2026-09-02",
+  "created": "2026-09-03",
   "revised": null,
   "sources": [
     {
       "source": "cshapes-2-0",
-      "locator": "fid 634"
+      "locator": "fid 567"
     }
   ],
-  "actor": "indonesia",
+  "actor": "british-india",
   "presenceType": "state",
-  "dependencyOf": "netherlands",
+  "dependencyOf": "united-kingdom",
   "dependencyKind": "colony",
   "when": {
-    "start": 1886,
-    "end": 1889,
-    "date": "1886-01-01",
-    "endDate": "1889-06-19"
+    "start": 1899,
+    "end": 1914,
+    "date": "1899-01-01",
+    "endDate": "1914-07-02"
   },
   "geometry": {
     "files": [
-      "geo/presences/1886-1913.json"
+      "geo/presences/1886-1913.json",
+      "geo/presences/1914-1932.json"
     ],
-    "key": "634"
+    "key": "567"
   },
   "capital": {
-    "lon": 106.829399,
-    "lat": -6.17444,
+    "lon": 88.324676,
+    "lat": 22.49497,
     "precision": "city",
-    "label": "Jakarta"
+    "label": "Calcutta"
   },
   "confidence": "consensus"
 }

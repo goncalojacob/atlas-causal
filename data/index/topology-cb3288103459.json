@@ -519,6 +519,22 @@
     {
       "actorType": "polity",
       "aliases": [],
+      "id": "british-india",
+      "name": "British India",
+      "names": [
+        "British India",
+        "India (British)"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": 1947,
+        "start": 1886
+      }
+    },
+    {
+      "actorType": "polity",
+      "aliases": [],
       "id": "british-somaliland-somaliland-republic",
       "name": "British Somaliland (Somaliland Republic)",
       "names": [
@@ -995,6 +1011,22 @@
       "supersededBy": null,
       "when": {
         "end": null,
+        "start": 1886
+      }
+    },
+    {
+      "actorType": "polity",
+      "aliases": [],
+      "id": "dutch-east-indies",
+      "name": "Dutch East Indies",
+      "names": [
+        "Dutch East Indies",
+        "Netherlands East Indies"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": 1945,
         "start": 1886
       }
     },
@@ -9252,6 +9284,183 @@
       }
     },
     {
+      "actor": "british-india",
+      "aliases": [],
+      "capital": {
+        "label": "Calcutta",
+        "lat": 22.49497,
+        "lon": 88.324676,
+        "precision": "city"
+      },
+      "confidence": "consensus",
+      "dependencyKind": "colony",
+      "dependencyOf": "united-kingdom",
+      "geometry": {
+        "files": [
+          "geo/presences/1886-1913.json"
+        ],
+        "key": "565"
+      },
+      "id": "british-india-1886",
+      "presenceType": "state",
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "date": "1886-01-01",
+        "end": 1893,
+        "endDate": "1893-11-11",
+        "start": 1886
+      }
+    },
+    {
+      "actor": "british-india",
+      "aliases": [],
+      "capital": {
+        "label": "Calcutta",
+        "lat": 22.49497,
+        "lon": 88.324676,
+        "precision": "city"
+      },
+      "confidence": "consensus",
+      "dependencyKind": "colony",
+      "dependencyOf": "united-kingdom",
+      "geometry": {
+        "files": [
+          "geo/presences/1886-1913.json"
+        ],
+        "key": "566"
+      },
+      "id": "british-india-1893",
+      "presenceType": "state",
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "date": "1893-11-12",
+        "end": 1898,
+        "endDate": "1898-12-31",
+        "start": 1893
+      }
+    },
+    {
+      "actor": "british-india",
+      "aliases": [],
+      "capital": {
+        "label": "Calcutta",
+        "lat": 22.49497,
+        "lon": 88.324676,
+        "precision": "city"
+      },
+      "confidence": "consensus",
+      "dependencyKind": "colony",
+      "dependencyOf": "united-kingdom",
+      "geometry": {
+        "files": [
+          "geo/presences/1886-1913.json",
+          "geo/presences/1914-1932.json"
+        ],
+        "key": "567"
+      },
+      "id": "british-india-1899",
+      "presenceType": "state",
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "date": "1899-01-01",
+        "end": 1914,
+        "endDate": "1914-07-02",
+        "start": 1899
+      }
+    },
+    {
+      "actor": "british-india",
+      "aliases": [],
+      "capital": {
+        "label": "Calcutta",
+        "lat": 22.49497,
+        "lon": 88.324676,
+        "precision": "city"
+      },
+      "confidence": "consensus",
+      "dependencyKind": "colony",
+      "dependencyOf": "united-kingdom",
+      "geometry": {
+        "files": [
+          "geo/presences/1914-1932.json"
+        ],
+        "key": "568"
+      },
+      "id": "british-india-1914",
+      "presenceType": "state",
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "date": "1914-07-03",
+        "end": 1931,
+        "endDate": "1931-02-12",
+        "start": 1914
+      }
+    },
+    {
+      "actor": "british-india",
+      "aliases": [],
+      "capital": {
+        "label": "New Delhi (Delhi)",
+        "lat": 28.6,
+        "lon": 77.199997,
+        "precision": "city"
+      },
+      "confidence": "consensus",
+      "dependencyKind": "colony",
+      "dependencyOf": "united-kingdom",
+      "geometry": {
+        "files": [
+          "geo/presences/1914-1932.json",
+          "geo/presences/1933-1945.json"
+        ],
+        "key": "569"
+      },
+      "id": "british-india-1931",
+      "presenceType": "state",
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "date": "1931-02-13",
+        "end": 1937,
+        "endDate": "1937-03-31",
+        "start": 1931
+      }
+    },
+    {
+      "actor": "british-india",
+      "aliases": [],
+      "capital": {
+        "label": "New Delhi (Delhi)",
+        "lat": 28.6,
+        "lon": 77.199997,
+        "precision": "city"
+      },
+      "confidence": "consensus",
+      "dependencyKind": "colony",
+      "dependencyOf": "united-kingdom",
+      "geometry": {
+        "files": [
+          "geo/presences/1933-1945.json",
+          "geo/presences/1946-1974.json"
+        ],
+        "key": "570"
+      },
+      "id": "british-india-1937",
+      "presenceType": "state",
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "date": "1937-04-01",
+        "end": 1947,
+        "endDate": "1947-08-14",
+        "start": 1937
+      }
+    },
+    {
       "actor": "british-somaliland-somaliland-republic",
       "aliases": [],
       "capital": {
@@ -12185,6 +12394,66 @@
         "date": "1886-01-01",
         "end": null,
         "start": 1886
+      }
+    },
+    {
+      "actor": "dutch-east-indies",
+      "aliases": [],
+      "capital": {
+        "label": "Jakarta",
+        "lat": -6.17444,
+        "lon": 106.829399,
+        "precision": "city"
+      },
+      "confidence": "consensus",
+      "dependencyKind": "colony",
+      "dependencyOf": "netherlands",
+      "geometry": {
+        "files": [
+          "geo/presences/1886-1913.json"
+        ],
+        "key": "634"
+      },
+      "id": "dutch-east-indies-1886",
+      "presenceType": "state",
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "date": "1886-01-01",
+        "end": 1889,
+        "endDate": "1889-06-19",
+        "start": 1886
+      }
+    },
+    {
+      "actor": "dutch-east-indies",
+      "aliases": [],
+      "capital": {
+        "label": "Jakarta",
+        "lat": -6.17444,
+        "lon": 106.829399,
+        "precision": "city"
+      },
+      "confidence": "consensus",
+      "dependencyKind": "colony",
+      "dependencyOf": "netherlands",
+      "geometry": {
+        "files": [
+          "geo/presences/1886-1913.json",
+          "geo/presences/1914-1932.json",
+          "geo/presences/1933-1945.json"
+        ],
+        "key": "635"
+      },
+      "id": "dutch-east-indies-1889",
+      "presenceType": "state",
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "date": "1889-06-20",
+        "end": 1945,
+        "endDate": "1945-08-16",
+        "start": 1889
       }
     },
     {
@@ -15430,66 +15699,6 @@
         "date": "1944-06-17",
         "end": null,
         "start": 1944
-      }
-    },
-    {
-      "actor": "indonesia",
-      "aliases": [],
-      "capital": {
-        "label": "Jakarta",
-        "lat": -6.17444,
-        "lon": 106.829399,
-        "precision": "city"
-      },
-      "confidence": "consensus",
-      "dependencyKind": "colony",
-      "dependencyOf": "netherlands",
-      "geometry": {
-        "files": [
-          "geo/presences/1886-1913.json"
-        ],
-        "key": "634"
-      },
-      "id": "indonesia-1886",
-      "presenceType": "state",
-      "status": "active",
-      "supersededBy": null,
-      "when": {
-        "date": "1886-01-01",
-        "end": 1889,
-        "endDate": "1889-06-19",
-        "start": 1886
-      }
-    },
-    {
-      "actor": "indonesia",
-      "aliases": [],
-      "capital": {
-        "label": "Jakarta",
-        "lat": -6.17444,
-        "lon": 106.829399,
-        "precision": "city"
-      },
-      "confidence": "consensus",
-      "dependencyKind": "colony",
-      "dependencyOf": "netherlands",
-      "geometry": {
-        "files": [
-          "geo/presences/1886-1913.json",
-          "geo/presences/1914-1932.json",
-          "geo/presences/1933-1945.json"
-        ],
-        "key": "635"
-      },
-      "id": "indonesia-1889",
-      "presenceType": "state",
-      "status": "active",
-      "supersededBy": null,
-      "when": {
-        "date": "1889-06-20",
-        "end": 1945,
-        "endDate": "1945-08-16",
-        "start": 1889
       }
     },
     {
@@ -22303,183 +22512,6 @@
         "end": 1900,
         "endDate": "1900-12-31",
         "start": 1886
-      }
-    },
-    {
-      "actor": "republic-of-india",
-      "aliases": [],
-      "capital": {
-        "label": "Calcutta",
-        "lat": 22.49497,
-        "lon": 88.324676,
-        "precision": "city"
-      },
-      "confidence": "consensus",
-      "dependencyKind": "colony",
-      "dependencyOf": "united-kingdom",
-      "geometry": {
-        "files": [
-          "geo/presences/1886-1913.json"
-        ],
-        "key": "565"
-      },
-      "id": "republic-of-india-1886",
-      "presenceType": "state",
-      "status": "active",
-      "supersededBy": null,
-      "when": {
-        "date": "1886-01-01",
-        "end": 1893,
-        "endDate": "1893-11-11",
-        "start": 1886
-      }
-    },
-    {
-      "actor": "republic-of-india",
-      "aliases": [],
-      "capital": {
-        "label": "Calcutta",
-        "lat": 22.49497,
-        "lon": 88.324676,
-        "precision": "city"
-      },
-      "confidence": "consensus",
-      "dependencyKind": "colony",
-      "dependencyOf": "united-kingdom",
-      "geometry": {
-        "files": [
-          "geo/presences/1886-1913.json"
-        ],
-        "key": "566"
-      },
-      "id": "republic-of-india-1893",
-      "presenceType": "state",
-      "status": "active",
-      "supersededBy": null,
-      "when": {
-        "date": "1893-11-12",
-        "end": 1898,
-        "endDate": "1898-12-31",
-        "start": 1893
-      }
-    },
-    {
-      "actor": "republic-of-india",
-      "aliases": [],
-      "capital": {
-        "label": "Calcutta",
-        "lat": 22.49497,
-        "lon": 88.324676,
-        "precision": "city"
-      },
-      "confidence": "consensus",
-      "dependencyKind": "colony",
-      "dependencyOf": "united-kingdom",
-      "geometry": {
-        "files": [
-          "geo/presences/1886-1913.json",
-          "geo/presences/1914-1932.json"
-        ],
-        "key": "567"
-      },
-      "id": "republic-of-india-1899",
-      "presenceType": "state",
-      "status": "active",
-      "supersededBy": null,
-      "when": {
-        "date": "1899-01-01",
-        "end": 1914,
-        "endDate": "1914-07-02",
-        "start": 1899
-      }
-    },
-    {
-      "actor": "republic-of-india",
-      "aliases": [],
-      "capital": {
-        "label": "Calcutta",
-        "lat": 22.49497,
-        "lon": 88.324676,
-        "precision": "city"
-      },
-      "confidence": "consensus",
-      "dependencyKind": "colony",
-      "dependencyOf": "united-kingdom",
-      "geometry": {
-        "files": [
-          "geo/presences/1914-1932.json"
-        ],
-        "key": "568"
-      },
-      "id": "republic-of-india-1914",
-      "presenceType": "state",
-      "status": "active",
-      "supersededBy": null,
-      "when": {
-        "date": "1914-07-03",
-        "end": 1931,
-        "endDate": "1931-02-12",
-        "start": 1914
-      }
-    },
-    {
-      "actor": "republic-of-india",
-      "aliases": [],
-      "capital": {
-        "label": "New Delhi (Delhi)",
-        "lat": 28.6,
-        "lon": 77.199997,
-        "precision": "city"
-      },
-      "confidence": "consensus",
-      "dependencyKind": "colony",
-      "dependencyOf": "united-kingdom",
-      "geometry": {
-        "files": [
-          "geo/presences/1914-1932.json",
-          "geo/presences/1933-1945.json"
-        ],
-        "key": "569"
-      },
-      "id": "republic-of-india-1931",
-      "presenceType": "state",
-      "status": "active",
-      "supersededBy": null,
-      "when": {
-        "date": "1931-02-13",
-        "end": 1937,
-        "endDate": "1937-03-31",
-        "start": 1931
-      }
-    },
-    {
-      "actor": "republic-of-india",
-      "aliases": [],
-      "capital": {
-        "label": "New Delhi (Delhi)",
-        "lat": 28.6,
-        "lon": 77.199997,
-        "precision": "city"
-      },
-      "confidence": "consensus",
-      "dependencyKind": "colony",
-      "dependencyOf": "united-kingdom",
-      "geometry": {
-        "files": [
-          "geo/presences/1933-1945.json",
-          "geo/presences/1946-1974.json"
-        ],
-        "key": "570"
-      },
-      "id": "republic-of-india-1937",
-      "presenceType": "state",
-      "status": "active",
-      "supersededBy": null,
-      "when": {
-        "date": "1937-04-01",
-        "end": 1947,
-        "endDate": "1947-08-14",
-        "start": 1937
       }
     },
     {

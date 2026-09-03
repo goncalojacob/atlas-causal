@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "id": "republic-of-india-1931",
+  "id": "dutch-east-indies-1889",
   "kind": "presence",
   "status": "active",
   "supersededBy": null,
@@ -12,36 +12,37 @@
     }
   ],
   "license": "CC-BY-NC-SA-4.0",
-  "created": "2026-09-02",
+  "created": "2026-09-03",
   "revised": null,
   "sources": [
     {
       "source": "cshapes-2-0",
-      "locator": "fid 569"
+      "locator": "fid 635"
     }
   ],
-  "actor": "republic-of-india",
+  "actor": "dutch-east-indies",
   "presenceType": "state",
-  "dependencyOf": "united-kingdom",
+  "dependencyOf": "netherlands",
   "dependencyKind": "colony",
   "when": {
-    "start": 1931,
-    "end": 1937,
-    "date": "1931-02-13",
-    "endDate": "1937-03-31"
+    "start": 1889,
+    "end": 1945,
+    "date": "1889-06-20",
+    "endDate": "1945-08-16"
   },
   "geometry": {
     "files": [
+      "geo/presences/1886-1913.json",
       "geo/presences/1914-1932.json",
       "geo/presences/1933-1945.json"
     ],
-    "key": "569"
+    "key": "635"
   },
   "capital": {
-    "lon": 77.199997,
-    "lat": 28.6,
+    "lon": 106.829399,
+    "lat": -6.17444,
     "precision": "city",
-    "label": "New Delhi (Delhi)"
+    "label": "Jakarta"
   },
   "confidence": "consensus"
 }

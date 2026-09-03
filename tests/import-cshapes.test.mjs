@@ -10,7 +10,7 @@ import { tmpdir } from 'node:os';
 import path from 'node:path';
 import { decodeCollection, ringFrom, arcIndex, decodeArcs } from '../tools/import/topojson.mjs';
 import { douglasPeucker, quantize, simplifyArc, pruneGeometry, ringArea, keepRing, round } from '../tools/import/simplify.mjs';
-import { planImport, slug, yearOf, shardsTouched, shardFile, runImport, IMPORT_AUTHOR, SHARDS, DATA_END } from '../tools/import/cshapes.mjs';
+import { planImport, slug, yearOf, shardsTouched, shardFile, dayAfter, runImport, reportMarkdown, IMPORT_AUTHOR, SHARDS, DATA_END, MAP_FILE } from '../tools/import/cshapes.mjs';
 
 const SHARD_CUT = [{ from: 1886, to: 1913 }, { from: 1914, to: 1945 }, { from: 1946, to: 2019 }];
 
@@ -66,7 +66,7 @@ const plan = (over = (t) => t, options = {}) => {
   const simplified = { ...topology, arcs: topology.arcs.map((a) => simplifyArc(a, { tolerance: 0.1, decimals: 3 })) };
   const features = decodeCollection(simplified, 'cshapes_2_gw')
     .map((f) => ({ properties: f.properties, geometry: pruneGeometry(f.geometry, { minArea: 0.005 }) }));
-  return planImport(features, { created: '2026-09-02', shards: SHARD_CUT, actorMap: {}, ...options });
+  return planImport(features, { created: '2026-09-02', shards: SHARD_CUT, map: {}, ...options });
 };
 
 // --- topojson -------------------------------------------------------------
@@ -175,12 +175,21 @@ test('one actor per entity, named over time, open when the data does not end it'
   assert.deepEqual(actors[1].when, { start: 1886, end: 1960 }, 'it does end, so it is closed');
 });
 
-test('an entity the dataset already has an actor for is reused, not duplicated', () => {
-  const { actors, presences } = plan((t) => t, { actorMap: { 1: 'republic-of-westland' } });
+test('an actor the atlas already has is reused, not duplicated', () => {
+  const options = { map: { 1: { actor: 'republic-of-westland' } }, existingActors: new Set(['republic-of-westland']) };
+  const { actors, presences } = plan((t) => t, options);
   assert.deepEqual(actors.map((a) => a.id), ['eastland'], 'no second record for the mapped entity');
   assert.deepEqual(presences.filter((p) => p.actor === 'republic-of-westland').map((p) => p.id),
     ['republic-of-westland-1886', 'republic-of-westland-1913']);
   assert.equal(presences.find((p) => p.id === 'eastland-1886').dependencyOf, 'republic-of-westland');
+});
+
+test('an actor the mapping file names but nobody has written yet is created', () => {
+  const { actors } = plan((t) => t, { map: { 1: { actor: 'republic-of-westland', names: ['The Republic of Westland'] } } });
+  const made = actors.find((a) => a.id === 'republic-of-westland');
+  assert.ok(made, 'the import writes the record the file asks for');
+  assert.deepEqual(made.names, ['The Republic of Westland'], "the file's names beat the source's");
+  assert.deepEqual(made.authors, [IMPORT_AUTHOR]);
 });
 
 test('a slug two entities both want is a mapping decision, and says so', () => {
@@ -188,7 +197,80 @@ test('a slug two entities both want is a mapping decision, and says so', () => {
     t.objects.cshapes_2_gw.geometries[2].properties.country_name = 'Westland Republic';
     return t;
   });
-  assert.match(problems.join('\n'), /two CShapes entities want the actor id "westland-republic"/);
+  assert.match(problems.join('\n'), new RegExp(`two CShapes segments want the actor id "westland-republic".*${MAP_FILE}`, 's'));
+});
+
+// --- splitting one code into two actors -----------------------------------
+
+test('a split cuts a code by date into two actors, with two actor records', () => {
+  const map = { 1: { actor: 'old-westland', names: ['Old Westland'], splits: [{ from: '1913-07-01', actor: 'new-westland' }] } };
+  const { actors, presences, problems } = plan((t) => t, { map });
+  assert.deepEqual(problems, []);
+  assert.deepEqual(actors.map((a) => a.id), ['old-westland', 'new-westland', 'eastland']);
+  assert.deepEqual(actors[0].when, { start: 1886, end: 1913 }, 'the first segment closes where the cut is');
+  assert.deepEqual(actors[1].when, { start: 1913, end: null });
+  assert.match(actors[1].summary, /this record holds the periods from 1913-07-01/);
+  assert.deepEqual(presences.map((p) => p.id), ['old-westland-1886', 'new-westland-1913', 'eastland-1886']);
+  assert.equal(presences[0].actor, 'old-westland');
+  assert.equal(presences[1].actor, 'new-westland');
+});
+
+test('a sovereign is named as the actor it was on the day the ground was held', () => {
+  const map = { 1: { actor: 'old-westland', splits: [{ from: '1913-07-01', actor: 'new-westland' }] } };
+  // Eastland is a colony from 1886, so its sovereign is the code's first
+  // segment and not the one the code ends as.
+  const { presences } = plan((t) => t, { map });
+  assert.equal(presences.find((p) => p.id === 'eastland-1886').dependencyOf, 'old-westland');
+});
+
+test('a split date the source does not draw is refused, with the boundaries named', () => {
+  const map = { 1: { actor: 'old-westland', splits: [{ from: '1920-01-01', actor: 'new-westland' }] } };
+  const { problems } = plan((t) => t, { map });
+  assert.equal(problems.length, 2, 'the bad date, and the empty first segment it leaves');
+  assert.match(problems[0], /entity 1: 1920-01-01 is not a boundary CShapes draws for it; the boundaries are 1913-07-01/);
+  assert.equal(dayAfter('1913-06-30'), '1913-07-01');
+  assert.equal(dayAfter('1899-12-31'), '1900-01-01', 'a year boundary');
+  assert.equal(dayAfter('1904-02-28'), '1904-02-29', 'a leap day');
+});
+
+// --- the report -----------------------------------------------------------
+
+test('the report lists codes that are both held and independent and are not cut', () => {
+  // Eastland is a colony until 1960 and its own state after it, under one code.
+  const { report } = plan((t) => {
+    t.objects.cshapes_2_gw.geometries.push({
+      type: 'Polygon',
+      arcs: [[2, -1]],
+      properties: {
+        gwcode: 2, country_name: 'Eastland', start: '1961-01-01', end: DATA_END,
+        status: 'independent', owner: '2', capname: 'East City', caplong: 5, caplat: 5, b_def: 1, fid: 22,
+      },
+    });
+    return t;
+  });
+  assert.equal(report.length, 1);
+  assert.deepEqual(report[0], {
+    code: 2, actor: 'eastland', name: 'Eastland', periods: 2, dependent: 1, independent: 1,
+    firstIndependent: '1961-01-01', lastDependent: '1960-12-31', status: ['colony'],
+  });
+  assert.match(reportMarkdown(report, { generated: '2026-09-03' }), /\| 2 \| `eastland` \| Eastland \| 2 \| 1 \(colony\) \| 1961-01-01 \| 1960-12-31 \|/);
+  assert.match(reportMarkdown(report, { generated: '2026-09-03' }), /Generated by/);
+});
+
+test('a code the mapping file already cuts is not in the report', () => {
+  const withSplit = (map) => plan((t) => {
+    t.objects.cshapes_2_gw.geometries.push({
+      type: 'Polygon',
+      arcs: [[2, -1]],
+      properties: {
+        gwcode: 2, country_name: 'Eastland', start: '1961-01-01', end: DATA_END,
+        status: 'independent', owner: '2', capname: 'East City', caplong: 5, caplat: 5, b_def: 1, fid: 22,
+      },
+    });
+    return t;
+  }, { map });
+  assert.equal(withSplit({}).report.length, 1);
+  assert.deepEqual(withSplit({ 2: { actor: 'east-colony', splits: [{ from: '1961-01-01', actor: 'eastland' }] } }).report, []);
 });
 
 test('one presence per feature: id, dates, sovereign, capital and shards', () => {

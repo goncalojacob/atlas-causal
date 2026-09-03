@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "id": "republic-of-india-1914",
+  "id": "british-india-1931",
   "kind": "presence",
   "status": "active",
   "supersededBy": null,
@@ -12,35 +12,36 @@
     }
   ],
   "license": "CC-BY-NC-SA-4.0",
-  "created": "2026-09-02",
+  "created": "2026-09-03",
   "revised": null,
   "sources": [
     {
       "source": "cshapes-2-0",
-      "locator": "fid 568"
+      "locator": "fid 569"
     }
   ],
-  "actor": "republic-of-india",
+  "actor": "british-india",
   "presenceType": "state",
   "dependencyOf": "united-kingdom",
   "dependencyKind": "colony",
   "when": {
-    "start": 1914,
-    "end": 1931,
-    "date": "1914-07-03",
-    "endDate": "1931-02-12"
+    "start": 1931,
+    "end": 1937,
+    "date": "1931-02-13",
+    "endDate": "1937-03-31"
   },
   "geometry": {
     "files": [
-      "geo/presences/1914-1932.json"
+      "geo/presences/1914-1932.json",
+      "geo/presences/1933-1945.json"
     ],
-    "key": "568"
+    "key": "569"
   },
   "capital": {
-    "lon": 88.324676,
-    "lat": 22.49497,
+    "lon": 77.199997,
+    "lat": 28.6,
     "precision": "city",
-    "label": "Calcutta"
+    "label": "New Delhi (Delhi)"
   },
   "confidence": "consensus"
 }

@@ -3,7 +3,11 @@
 // dependencies, idempotent: it rewrites exactly the files it owns and
 // refuses to touch a record whose authors do not name it.
 //
-//   node tools/import/cshapes.mjs --source <cshapes_2_gw.topojson> [--data <dir>] [--check]
+//   node tools/import/cshapes.mjs --source <cshapes_2_gw.topojson> [--data <dir>] [--check] [--report]
+//
+// Which actor a code's territory belongs to is not decided here: it is
+// data/imports/cshapes-actors.json, and --report lists the codes that
+// probably want an entry in it.
 //
 // The dataset is CC BY-NC-SA 4.0, which data/LICENSE (CC BY-SA 4.0) cannot
 // absorb, so everything this tool writes says so in its own `license` field
@@ -68,16 +72,17 @@ export const SHARDS = Object.freeze([
   Object.freeze({ from: 1975, to: 2019 }),
 ]);
 
-// CShapes entities that the test dataset already has an actor for. Keyed by
-// Gleditsch–Ward code, so a country renamed in the data still lands on the
-// right record. Portugal is deliberately absent: 235 becomes a `portugal`
-// state actor, never one of the regime actors (first-portuguese-republic,
-// estado-novo, third-portuguese-republic), which are regimes *of* a state
-// and not the state itself.
-export const ACTOR_MAP = Object.freeze({
-  750: 'republic-of-india',
-  850: 'indonesia',
-});
+// Which actor a CShapes entity's territory belongs to is data, not code:
+// data/imports/cshapes-actors.json, keyed by Gleditsch–Ward code so a country
+// renamed in the data still lands on the right record, validated by
+// tools/validate.mjs, and correctable by anyone through a pull request. A code
+// absent from the file gets an actor derived from its own name, and --report
+// lists the ones that probably want an entry. Portugal is deliberately
+// absent: 235 becomes a `portugal` state actor, never one of the regime
+// actors (first-portuguese-republic, estado-novo, third-portuguese-republic),
+// which are regimes *of* a state and not the state itself.
+export const MAP_FILE = 'imports/cshapes-actors.json';
+export const REPORT_FILE = 'docs/cshapes-entities.md';
 
 // Two `owner` codes in the file name no entity in it, and both are
 // international administrations rather than states: 0 is the League of
@@ -121,6 +126,47 @@ export function shardsTouched(start, end, shards = SHARDS) {
 
 export function shardFile(shard) {
   return `geo/presences/${shard.from}-${shard.to}.json`;
+}
+
+// ISO dates are fixed-width, so string order is date order; only the day
+// after a date needs real arithmetic.
+export function dayAfter(date) {
+  const d = new Date(`${date}T00:00:00Z`);
+  d.setUTCDate(d.getUTCDate() + 1);
+  return d.toISOString().slice(0, 10);
+}
+
+// A code's features cut into segments by the entry's splits: the first
+// belongs to the entry's own actor, and each split starts a new one. Pure, so
+// the tests can hand it a list of properties.
+//
+// A split date has to be a boundary the source itself draws — the day after
+// some feature's end — because anything else would put a presence on one side
+// of a date whose outline was drawn for the other. The dates the source gives
+// are the only ones it can be held to.
+export function segmentsFor(code, list, entry, problems = []) {
+  const fallback = slug(list[list.length - 1].properties.country_name);
+  const cuts = entry?.splits ?? [];
+  const boundaries = list.slice(0, -1).map((f) => dayAfter(f.properties.end));
+  for (const split of cuts) {
+    if (boundaries.includes(split.from)) continue;
+    const near = boundaries.length ? boundaries.join(', ') : 'none — the code has a single feature';
+    problems.push(`entity ${code}: ${split.from} is not a boundary CShapes draws for it; the boundaries are ${near}`);
+  }
+  const segments = [
+    { actor: entry?.actor ?? fallback, names: entry?.names ?? null, from: null, features: [] },
+    ...cuts.map((split) => ({ actor: split.actor, names: split.names ?? null, from: split.from, features: [] })),
+  ];
+  for (const feature of list) {
+    // The last segment whose date the feature has reached.
+    let chosen = segments[0];
+    for (const segment of segments) if (segment.from !== null && feature.properties.start >= segment.from) chosen = segment;
+    chosen.features.push(feature);
+  }
+  for (const segment of segments) {
+    if (segment.features.length === 0) problems.push(`entity ${code}: the segment for "${segment.actor}" has no feature in it`);
+  }
+  return segments.filter((s) => s.features.length > 0);
 }
 
 function record(id, kind, fields, { created }) {
@@ -177,17 +223,30 @@ export function sourceRecord({ created }) {
 // One actor summary, assembled from the dataset's own fields and saying so.
 // Nothing here is a historical claim: it is a count of rows and the dates on
 // them, which is all an import is allowed to know.
-function actorSummary(code, names, periods, capital) {
+function actorSummary(code, sourceNames, periods, capital, split = null, renamed = false) {
   const span = periods.end === null ? `from ${periods.start} to where the dataset stops, in 2019` : `from ${periods.start} to ${periods.end}`;
-  const called = names.length > 1 ? ` It is called ${names.map((n) => `"${n}"`).join(', then ')} over that time.` : '';
+  // Only the source's own names go in this sentence. When the mapping file
+  // names the actor instead, saying "it is called" would put words in the
+  // dataset's mouth: CShapes calls entity 750 "India" throughout.
+  const called = renamed
+    ? ` The source calls it ${sourceNames.map((n) => `"${n}"`).join(', then ')}; the names on this record are the ones data/${MAP_FILE} gives it.`
+    : sourceNames.length > 1 ? ` It is called ${sourceNames.map((n) => `"${n}"`).join(', then ')} over that time.` : '';
   const seat = capital ? ` Its last capital in the dataset is ${capital.label}.` : '';
-  return `Entity ${code} in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it ${periods.count} period${periods.count === 1 ? '' : 's'} of territorial validity, ${span}.${called}${seat} This record was written by the import from those fields and asserts nothing the dataset does not.`;
+  // A code the mapping file cuts in two is two records here, and each says so
+  // rather than claiming the whole code.
+  const cut = split
+    ? ` The code is mapped onto more than one actor (data/imports/cshapes-actors.json); this record holds the ${split.of === 1 ? 'periods before the first cut' : `periods from ${split.from}`}.`
+    : '';
+  return `Entity ${code} in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it ${periods.count} period${periods.count === 1 ? '' : 's'} of territorial validity, ${span}.${called}${seat}${cut} This record was written by the import from those fields and asserts nothing the dataset does not.`;
 }
+
+// Whether a feature is somebody else's ground, by the field that says so.
+const isDependent = (p, code) => Number.isInteger(Number(p.owner)) && Number(p.owner) !== code;
 
 // The whole plan, from decoded features to the exact set of files to write.
 // Pure, so the tests can hand it a synthetic collection: `features` is
 // [{ properties, geometry }] as topojson.mjs returns, already simplified.
-export function planImport(features, { created, shards = SHARDS, actorMap = ACTOR_MAP } = {}) {
+export function planImport(features, { created, shards = SHARDS, map = {}, existingActors = new Set() } = {}) {
   const problems = [];
   const byCode = new Map();
   for (const feature of features) {
@@ -199,97 +258,145 @@ export function planImport(features, { created, shards = SHARDS, actorMap = ACTO
   for (const list of byCode.values()) {
     list.sort((a, b) => (a.properties.start < b.properties.start ? -1 : a.properties.start > b.properties.start ? 1 : a.properties.fid - b.properties.fid));
   }
+  const codes = [...byCode.keys()].sort((a, b) => a - b);
+  const entryOf = (code) => map[String(code)] ?? null;
 
-  // Ids first, so a presence can name its sovereign's actor.
-  const actorIds = new Map();
+  // Segments first, so a presence can name the actor its sovereign was at the
+  // date it was held — a code split in two has a different sovereign record
+  // on either side of the cut.
+  const segmentsByCode = new Map();
   const claimed = new Map();
-  for (const code of [...byCode.keys()].sort((a, b) => a - b)) {
+  for (const code of codes) {
+    const segments = segmentsFor(code, byCode.get(code), entryOf(code), problems);
+    segmentsByCode.set(code, segments);
+    for (const segment of segments) {
+      if (claimed.has(segment.actor)) {
+        problems.push(`two CShapes segments want the actor id "${segment.actor}": ${claimed.get(segment.actor)} and ${code}. Give one of them an entry in ${MAP_FILE}.`);
+      }
+      claimed.set(segment.actor, code);
+    }
+  }
+  // Who held a code at a given date, as an actor id. The last segment whose
+  // date the feature has reached; null when the code is not in the file.
+  const actorAt = (code, date) => {
+    const segments = segmentsByCode.get(code);
+    if (!segments) return null;
+    let chosen = segments[0];
+    for (const segment of segments) if (segment.from !== null && date >= segment.from) chosen = segment;
+    return chosen?.actor ?? null;
+  };
+
+  // Codes that carry both a dependency and an independent state under one id
+  // and have no cut in the mapping file: the list the owner splits from, in
+  // batches, by editing that file. Reported, never guessed at.
+  const report = [];
+  for (const code of codes) {
     const list = byCode.get(code);
-    const id = actorMap[code] ?? slug(list[list.length - 1].properties.country_name);
-    if (claimed.has(id)) problems.push(`two CShapes entities want the actor id "${id}": ${claimed.get(id)} and ${code}. Add one of them to ACTOR_MAP.`);
-    claimed.set(id, code);
-    actorIds.set(code, id);
+    if ((entryOf(code)?.splits ?? []).length) continue;
+    const held = list.filter((f) => isDependent(f.properties, code));
+    const own = list.filter((f) => !isDependent(f.properties, code));
+    if (!held.length || !own.length) continue;
+    report.push({
+      code,
+      actor: segmentsByCode.get(code)[0].actor,
+      name: list[list.length - 1].properties.country_name,
+      periods: list.length,
+      dependent: held.length,
+      independent: own.length,
+      // The date the source first shows it holding its own ground, which is
+      // where a split would go.
+      firstIndependent: own[0].properties.start,
+      lastDependent: held[held.length - 1].properties.end,
+      status: [...new Set(held.map((f) => f.properties.status))].sort(),
+    });
   }
 
   const actors = [];
   const presences = [];
   const shardMembers = new Map(shards.map((s) => [shardFile(s), []]));
-  const mapped = new Set(Object.values(actorMap));
 
-  for (const code of [...byCode.keys()].sort((a, b) => a - b)) {
-    const list = byCode.get(code);
-    const id = actorIds.get(code);
-    const last = list[list.length - 1].properties;
-    const start = yearOf(list[0].properties.start);
-    const open = list.some((f) => f.properties.end === DATA_END);
-    const end = open ? null : Math.max(...list.map((f) => yearOf(f.properties.end)));
-    const names = [...new Set(list.map((f) => f.properties.country_name))];
-    const capital = last.capname
-      ? { lon: last.caplong, lat: last.caplat, precision: 'city', label: last.capname }
-      : null;
+  for (const code of codes) {
+    const segments = segmentsByCode.get(code);
+    for (const [index, segment] of segments.entries()) {
+      const list = segment.features;
+      const id = segment.actor;
+      const last = list[list.length - 1].properties;
+      const start = yearOf(list[0].properties.start);
+      const open = list.some((f) => f.properties.end === DATA_END);
+      const end = open ? null : Math.max(...list.map((f) => yearOf(f.properties.end)));
+      // The mapping file may name the actor better than the source does:
+      // CShapes calls entity 750 "India" from 1886, colony and republic alike.
+      const sourceNames = [...new Set(list.map((f) => f.properties.country_name))];
+      const names = segment.names ?? sourceNames;
+      const capital = last.capname
+        ? { lon: last.caplong, lat: last.caplat, precision: 'city', label: last.capname }
+        : null;
 
-    // An entity the dataset already has a record for keeps that record: the
-    // import reuses it and never rewrites somebody else's work.
-    if (!mapped.has(id)) {
-      actors.push(record(id, 'actor', {
-        sources: [{ source: SOURCE_ID, locator: `gwcode ${code}` }],
-        actorType: 'polity',
-        names,
-        summary: actorSummary(code, names, { start, end, count: list.length }, capital),
-        when: { start, end },
-        where: capital,
-      }, { created }));
-    }
-
-    const used = new Set();
-    for (const feature of list) {
-      const p = feature.properties;
-      if (!feature.geometry) {
-        problems.push(`feature ${p.fid} (${p.country_name}, ${p.start}) has no polygon left after simplification`);
-        continue;
-      }
-      const from = yearOf(p.start);
-      const closes = p.end !== DATA_END;
-      const to = closes ? yearOf(p.end) : null;
-      // Two features of one entity starting in the same year get a letter;
-      // the id stays a slug either way.
-      let presenceId = `${id}-${from}`;
-      for (let n = 1; used.has(presenceId); n += 1) presenceId = `${id}-${from}-${String.fromCharCode(98 + n - 1)}`;
-      used.add(presenceId);
-
-      const ownerCode = Number(p.owner);
-      const dependent = Number.isInteger(ownerCode) && ownerCode !== code;
-      const dependencyOf = dependent ? actorIds.get(ownerCode) ?? null : null;
-      if (!Object.hasOwn(DEPENDENCY_KIND, p.status)) problems.push(`feature ${p.fid} has an unknown status "${p.status}"`);
-      // The status is the reliable half. An owner code that names no entity
-      // in the file is an international administration — the League of
-      // Nations over Danzig, the United Nations over West New Guinea — so
-      // the presence keeps how it was held and has no sovereign on this map.
-      if (dependent && !dependencyOf && !INTERNATIONAL_OWNERS.has(p.owner)) {
-        problems.push(`feature ${p.fid} (${p.country_name}) is owned by ${p.owner}, which is in no CShapes entity`);
-      }
-      const kind = dependent ? DEPENDENCY_KIND[p.status] ?? 'occupied' : null;
-      if (dependent && DEPENDENCY_KIND[p.status] === null) {
-        problems.push(`feature ${p.fid} (${p.country_name}) is owned by ${p.owner} but its status is "${p.status}"`);
+      // An actor the atlas already has a record for keeps that record: the
+      // import reuses it and never rewrites somebody else's work.
+      if (!existingActors.has(id)) {
+        actors.push(record(id, 'actor', {
+          sources: [{ source: SOURCE_ID, locator: `gwcode ${code}` }],
+          actorType: 'polity',
+          names,
+          summary: actorSummary(code, sourceNames, { start, end, count: list.length }, capital,
+            segments.length > 1 ? { of: index + 1, from: segment.from } : null,
+            segment.names !== null),
+          when: { start, end },
+          where: capital,
+        }, { created }));
       }
 
-      const touched = shardsTouched(from, to, shards);
-      const key = String(p.fid);
-      for (const shard of touched) shardMembers.get(shardFile(shard)).push({ key, presence: presenceId, geometry: feature.geometry });
+      const used = new Set();
+      for (const feature of list) {
+        const p = feature.properties;
+        if (!feature.geometry) {
+          problems.push(`feature ${p.fid} (${p.country_name}, ${p.start}) has no polygon left after simplification`);
+          continue;
+        }
+        const from = yearOf(p.start);
+        const closes = p.end !== DATA_END;
+        const to = closes ? yearOf(p.end) : null;
+        // Two features of one entity starting in the same year get a letter;
+        // the id stays a slug either way.
+        let presenceId = `${id}-${from}`;
+        for (let n = 1; used.has(presenceId); n += 1) presenceId = `${id}-${from}-${String.fromCharCode(98 + n - 1)}`;
+        used.add(presenceId);
 
-      const when = { start: from, end: to, date: p.start };
-      if (closes) when.endDate = p.end;
-      presences.push(record(presenceId, 'presence', {
-        sources: [{ source: SOURCE_ID, locator: `fid ${p.fid}` }],
-        actor: id,
-        presenceType: 'state',
-        dependencyOf,
-        dependencyKind: kind,
-        when,
-        geometry: { files: touched.map(shardFile), key },
-        capital: p.capname ? { lon: p.caplong, lat: p.caplat, precision: 'city', label: p.capname } : null,
-        confidence: 'consensus',
-      }, { created }));
+        const ownerCode = Number(p.owner);
+        const dependent = isDependent(p, code);
+        const dependencyOf = dependent ? actorAt(ownerCode, p.start) : null;
+        if (!Object.hasOwn(DEPENDENCY_KIND, p.status)) problems.push(`feature ${p.fid} has an unknown status "${p.status}"`);
+        // The status is the reliable half. An owner code that names no entity
+        // in the file is an international administration — the League of
+        // Nations over Danzig, the United Nations over West New Guinea — so
+        // the presence keeps how it was held and has no sovereign on this map.
+        if (dependent && !dependencyOf && !INTERNATIONAL_OWNERS.has(p.owner)) {
+          problems.push(`feature ${p.fid} (${p.country_name}) is owned by ${p.owner}, which is in no CShapes entity`);
+        }
+        const kind = dependent ? DEPENDENCY_KIND[p.status] ?? 'occupied' : null;
+        if (dependent && DEPENDENCY_KIND[p.status] === null) {
+          problems.push(`feature ${p.fid} (${p.country_name}) is owned by ${p.owner} but its status is "${p.status}"`);
+        }
+
+        const touched = shardsTouched(from, to, shards);
+        const key = String(p.fid);
+        for (const shard of touched) shardMembers.get(shardFile(shard)).push({ key, presence: presenceId, geometry: feature.geometry });
+
+        const when = { start: from, end: to, date: p.start };
+        if (closes) when.endDate = p.end;
+        presences.push(record(presenceId, 'presence', {
+          sources: [{ source: SOURCE_ID, locator: `fid ${p.fid}` }],
+          actor: id,
+          presenceType: 'state',
+          dependencyOf,
+          dependencyKind: kind,
+          when,
+          geometry: { files: touched.map(shardFile), key },
+          capital: p.capname ? { lon: p.caplong, lat: p.caplat, precision: 'city', label: p.capname } : null,
+          confidence: 'consensus',
+        }, { created }));
+      }
     }
   }
 
@@ -321,7 +428,38 @@ export function planImport(features, { created, shards = SHARDS, actorMap = ACTO
     });
   }
 
-  return { source: sourceRecord({ created }), actors, presences, shardFiles, problems };
+  return { source: sourceRecord({ created }), actors, presences, shardFiles, problems, report };
+}
+
+// The report as a page, so the owner can work down it in batches: every code
+// the source gives both as somebody's dependency and as its own state, that
+// the mapping file does not yet cut. It is generated; the sentence at the top
+// says so, and nothing in it is written by hand.
+export function reportMarkdown(report, { generated, mapFile = MAP_FILE } = {}) {
+  const rows = [...report].sort((a, b) => a.code - b.code).map((r) => `| ${r.code} | \`${r.actor}\` | ${r.name} | ${r.periods} | ${r.dependent} (${r.status.join(', ')}) | ${r.firstIndependent} | ${r.lastDependent} |`);
+  return `# CShapes entities that could be split
+
+Generated by \`node tools/import/cshapes.mjs --source <file> --report\` on
+${generated}. Do not edit it by hand: edit \`data/${mapFile}\` and run the
+import again.
+
+CShapes gives some entities under one Gleditsch–Ward code for their whole
+life, dependency and independent state alike. This atlas can hold such a code
+as one actor or as two, and the mapping file decides which: a \`splits\` entry
+cuts the code's outlines by date into different actors. The ${report.length} codes below
+are the ones that file does **not** yet cut and that the source shows in both
+conditions — the list to work down, in batches, by editing it. Nothing here is
+a recommendation: which of them are two things and which are one is a
+historical judgement, and the import does not make it.
+
+"First independent" is the date the source first gives the code its own
+ground, and is the boundary a split would use; a split date must be a
+boundary CShapes itself draws or the import refuses it.
+
+| Code | Actor now | Name in the source | Periods | Held by another | First independent | Last held |
+|---|---|---|---|---|---|---|
+${rows.join('\n')}
+`;
 }
 
 // --- reading and writing --------------------------------------------------
@@ -399,7 +537,35 @@ export async function runImport(sourceFile, dataDir = DEFAULT_DATA, { today = ne
   const sourceOnDisk = await readJson(path.join(dataDir, 'sources', `${SOURCE_ID}.json`));
   const createdOf = (dir, id, fallback) => dir.owned.get(`${id}.json`)?.created ?? fallback;
 
-  const plan = planImport(features, { created: today });
+  // The mapping is data (see MAP_FILE). A missing file is not an error — the
+  // import then derives every actor from the source's own names — but a
+  // broken one is, because carrying on would silently write the wrong actors.
+  const mapPath = path.join(dataDir, ...MAP_FILE.split('/'));
+  let map = {};
+  if (existsSync(mapPath)) {
+    const loaded = await readJson(mapPath);
+    if (loaded === null) return { failed: [`data/${MAP_FILE} is not valid JSON`], notes, written: [], removed: [] };
+    map = loaded.entries ?? {};
+  } else {
+    notes.push(`note: no data/${MAP_FILE}; every actor is derived from the source's own names`);
+  }
+  // An actor the mapping file names and somebody has already written is
+  // reused untouched; one the file names that nobody has written yet is
+  // created here, like any other. A record the file does *not* name and that
+  // the import does not own is never adopted, however well the slug matches:
+  // an accidental collision between a country's name and somebody's record is
+  // a mapping decision, and `claim` below stops the whole import until it is
+  // made (STATUS.md, deviation 45).
+  const named = new Set();
+  for (const entry of Object.values(map)) {
+    named.add(entry.actor);
+    for (const split of entry.splits ?? []) named.add(split.actor);
+  }
+  const existingActors = new Set([...actorSurvey.foreign.keys()]
+    .map((name) => name.slice(0, -'.json'.length))
+    .filter((id) => named.has(id)));
+
+  const plan = planImport(features, { created: today, map, existingActors });
   const failed = [...plan.problems];
 
   // A record the import does not own is never overwritten, and a slug that
@@ -409,7 +575,7 @@ export async function runImport(sourceFile, dataDir = DEFAULT_DATA, { today = ne
     for (const rec of records) {
       const file = `${rec.id}.json`;
       if (surveyed.foreign.has(file)) {
-        failed.push(`data/${dirName}/${file} was not written by the import; add ${rec.id} to ACTOR_MAP or rename it rather than overwriting somebody's record`);
+        failed.push(`data/${dirName}/${file} was not written by the import; give ${rec.id} an entry in data/${MAP_FILE} or rename it rather than overwriting somebody's record`);
         continue;
       }
       const created = createdOf(surveyed, rec.id, today);
@@ -465,18 +631,21 @@ export async function runImport(sourceFile, dataDir = DEFAULT_DATA, { today = ne
 async function main(argv) {
   let source = null;
   let dataDir = DEFAULT_DATA;
+  let reportFile = null;
   let check = false;
   for (let i = 0; i < argv.length; i += 1) {
     if (argv[i] === '--source') source = path.resolve(argv[++i]);
     else if (argv[i] === '--data') dataDir = path.resolve(argv[++i]);
     else if (argv[i] === '--check') check = true;
+    else if (argv[i] === '--report') reportFile = path.join(ROOT, ...REPORT_FILE.split('/'));
+    else if (argv[i] === '--report-to') reportFile = path.resolve(argv[++i]);
     else {
       console.error(`unknown argument ${argv[i]}`);
       return 2;
     }
   }
   if (!source) {
-    console.error('usage: node tools/import/cshapes.mjs --source <cshapes_2_gw.topojson> [--data <dir>] [--check]');
+    console.error('usage: node tools/import/cshapes.mjs --source <cshapes_2_gw.topojson> [--data <dir>] [--check] [--report | --report-to <file>]');
     console.error(`the file is inst/extdata/cshapes_2_gw.topojson.xz in the CRAN package, decompressed; sha256 ${SOURCE_FILE_SHA256}`);
     return 2;
   }
@@ -493,6 +662,17 @@ async function main(argv) {
   };
   console.log(`imported CShapes ${PACKAGE_VERSION} (sha256 ${result.digest.slice(0, 12)}…): ${counts.actors} actors, ${counts.presences} presences, ${counts.shards} shards`);
   console.log(`${result.written.length} file(s) written, ${result.removed.length} removed`);
+  // Every code the source gives both as a dependency and as its own state
+  // that the mapping file does not cut: what the owner splits from next.
+  for (const row of result.plan.report) {
+    console.log(`could be split: ${row.code} ${row.actor} (${row.name}) — independent from ${row.firstIndependent}, held by another until ${row.lastDependent}`);
+  }
+  console.log(`${result.plan.report.length} entit${result.plan.report.length === 1 ? 'y' : 'ies'} could be split`);
+  if (reportFile) {
+    await mkdir(path.dirname(reportFile), { recursive: true });
+    await writeFile(reportFile, reportMarkdown(result.plan.report, { generated: new Date().toISOString().slice(0, 10) }), 'utf8');
+    console.log(`report written to ${path.relative(ROOT, reportFile)}`);
+  }
   return 0;
 }
 
