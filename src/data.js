@@ -96,7 +96,7 @@ export function createAtlas({ manifest, topology, sources, land = null, dataRoot
   // The topology carries every presence without its coordinates, so an
   // actor's territory over time is a list the panel can draw at once. The
   // outlines themselves are sharded by period and fetched one shard at a
-  // time, by year: scrubbing the slider inside a period costs nothing, and
+  // time, by year: moving the band inside a period costs nothing, and
   // crossing into another one costs a single request that is then cached.
   const activePresences = (topology.presences ?? []).filter((p) => p.status === 'active');
   const presences = new Map(activePresences.map((p) => [p.id, p]));

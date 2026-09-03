@@ -84,7 +84,7 @@ export function formatState(state, search = '') {
 }
 
 // The store. set() merges a patch, writes the URL (replaceState, so the
-// back button is not spammed by slider drags) and notifies subscribers.
+// back button is not spammed by dragging the band) and notifies subscribers.
 export function createState(initial, { window: win = null } = {}) {
   let state = { ...defaultState(), ...initial };
   const listeners = new Set();

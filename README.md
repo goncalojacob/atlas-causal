@@ -34,10 +34,11 @@ node tools/build-index.mjs         # regenerate data/index/ after changing data/
 node tools/import/cshapes.mjs --source cshapes_2_gw.topojson   # territories; rarely
 ```
 
-The **territories** layer draws who held which ground in the year on the
-slider, from CShapes 2.0 — 1886 to 2019 only, and empty outside it. The
-switch in the header turns it off. It is an import, not writing: see the
-licence note below and `about.html`.
+The **territories** layer draws who held which ground in the last year of the
+window, from CShapes 2.0 — 1886 to 2019 only, empty before it and held at
+2019 after it, which the band on the timeline says. The switch in the header
+turns it off. It is an import, not writing: see the licence note below and
+`about.html`.
 
 Node 22 (`.nvmrc`). `tools/validate.mjs` and `node --test` are what CI runs on
 every pull request.

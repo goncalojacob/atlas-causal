@@ -47,8 +47,8 @@ export function presenceClasses(presence, { actorId, dependencyIds }) {
 }
 
 export function createPresencesLayer(group, projection, { onSelect, atlas }) {
-  // What the last render drew, so scrubbing the slider inside one period
-  // does not rebuild two hundred paths on every tick.
+  // What the last render drew, so moving the band inside one period does not
+  // rebuild two hundred paths on every tick.
   let signature = null;
   // Which render asked for a shard: an older fetch arriving late must not
   // draw over a newer year.

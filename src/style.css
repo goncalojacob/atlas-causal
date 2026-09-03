@@ -73,6 +73,7 @@ button { font: inherit; }
 .search-option .search-label { color: var(--ink); }
 .search-option .when { color: var(--ink-soft); font-size: 0.85rem; }
 .search-empty { padding: 0.35rem 0.6rem; color: var(--ink-soft); }
+kbd { font-family: var(--font-ui); font-size: 0.9em; padding: 0 0.3em; border: 1px solid var(--line); border-radius: 3px; background: var(--ground); }
 .bar-link { color: var(--cobalt); }
 .fixtures-badge {
   padding: 0.1rem 0.5rem;
