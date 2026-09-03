@@ -22,10 +22,17 @@ try {
   document.getElementById('fixtures-badge').hidden = !fixtures;
 
   createForm(mount, {
+    // Everything the form offers as a choice and everything a reference in
+    // the bundle may resolve to. Actors were missing here since M4, which
+    // left the actor row empty on the real dataset and made an event citing
+    // an actor that exists fail rule 14 in the browser; places would have
+    // gone the same way.
     topology: {
       events: [...atlas.events.values()],
       edges: [...atlas.edges.values()],
       sources: [...atlas.sources.values()],
+      actors: [...atlas.actors.values()],
+      places: [...atlas.places.values()],
       regions: atlas.regions,
     },
     schemas,
