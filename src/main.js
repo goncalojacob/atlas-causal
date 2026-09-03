@@ -7,7 +7,7 @@ import { createState, parseState } from './state.js';
 import { createMap } from './map/map.js';
 import { createGraphView } from './graph-view/graph-view.js';
 import { createTimeline } from './timeline.js';
-import { createPanel } from './panel.js';
+import { createPanel } from './panel/panel.js';
 import { createSearchBox } from './search-box.js';
 import { esc } from './util/esc.js';
 
