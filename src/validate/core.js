@@ -109,6 +109,43 @@ export function eventWeights(events, edges) {
   return weights;
 }
 
+// Who cites what, the other way round: Map<source id, [{ kind, id, locator,
+// dissent }]>. A source is shared by reference — fifty records citing one
+// book cite one file — and that direction is the one nothing could answer
+// without reading every record in the atlas, which is exactly what the index
+// exists to prevent. `dissent` marks a citation that comes from an edge's
+// `dispute.sources`: a book that argues against a link is never listed as
+// evidence for it.
+//
+// Only active records cite: a tombstone still resolves its own URL but it is
+// not part of the graph, and counting it would make the bibliography's
+// numbers disagree with what the atlas draws.
+export function citationsBySource(records) {
+  const out = new Map();
+  const add = (sourceId, entry) => {
+    if (!out.has(sourceId)) out.set(sourceId, []);
+    out.get(sourceId).push(entry);
+  };
+  for (const r of records) {
+    if (!isObject(r) || r.status !== 'active' || r.kind === 'source') continue;
+    for (const c of r.sources ?? []) {
+      if (typeof c?.source === 'string') add(c.source, { kind: r.kind, id: r.id, locator: c.locator ?? null, dissent: false });
+    }
+    if (isObject(r.dispute)) {
+      for (const c of r.dispute.sources ?? []) {
+        if (typeof c?.source === 'string') add(c.source, { kind: r.kind, id: r.id, locator: c.locator ?? null, dissent: true });
+      }
+    }
+  }
+  for (const list of out.values()) {
+    list.sort((a, b) => (a.kind < b.kind ? -1 : a.kind > b.kind ? 1 : 0)
+      || (a.id < b.id ? -1 : a.id > b.id ? 1 : 0)
+      || (a.dissent === b.dissent ? 0 : a.dissent ? 1 : -1)
+      || (String(a.locator) < String(b.locator) ? -1 : String(a.locator) > String(b.locator) ? 1 : 0));
+  }
+  return out;
+}
+
 // Where a record sits and which lane that puts it in: the override on the
 // record wins, then the polygon the point falls in, then the nearest lane
 // within tolerance.
@@ -185,7 +222,10 @@ export function buildTopology(records, regions, { deriveRegion } = {}) {
         aliases: r.aliases ?? [],
       });
     } else if (r.kind === 'source') {
-      sources.push(r);
+      // The record whole — it is small, it is all citation, and the panel
+      // shows every field of it. `citations` is added below, once every
+      // record has been seen.
+      sources.push({ ...r });
     } else if (r.kind === 'actor') {
       actors.push({
         id: r.id,
@@ -220,6 +260,15 @@ export function buildTopology(records, regions, { deriveRegion } = {}) {
   }
   const weights = eventWeights(events, edges);
   for (const event of events) event.weight = weights.get(event.id);
+  // Every source carries its own citers and how many there are, so a source
+  // card and a bibliography are both one fetch of the sources index and no
+  // more. The count is written out beside the list rather than left to
+  // length: the bibliography is the one page that reads it.
+  const citations = citationsBySource(records);
+  for (const source of sources) {
+    source.citations = citations.get(source.id) ?? [];
+    source.citationCount = source.citations.length;
+  }
   events.sort(byId);
   edges.sort(byId);
   sources.sort(byId);
