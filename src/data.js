@@ -8,6 +8,7 @@
 // a subset and present it as complete (ARCHITECTURE.md).
 
 import { buildAdjacency } from './graph.js';
+import { narrativeEventIds } from './narrative.js';
 import { extent as intervalExtent } from './util/dates.js';
 
 async function defaultFetchJson(url, init) {
@@ -23,7 +24,8 @@ export function createAtlas({ manifest, topology, sources, land = null, dataRoot
   const sourceMap = new Map(sources.map((s) => [s.id, s]));
   const actors = new Map((topology.actors ?? []).map((a) => [a.id, a]));
   const places = new Map((topology.places ?? []).map((p) => [p.id, p]));
-  const kinds = [['event', events], ['edge', edges], ['source', sourceMap], ['actor', actors], ['place', places]];
+  const narratives = new Map((topology.narratives ?? []).map((n) => [n.id, n]));
+  const kinds = [['event', events], ['edge', edges], ['source', sourceMap], ['actor', actors], ['place', places], ['narrative', narratives]];
 
   const aliases = new Map();
   for (const [kind, map] of kinds) {
@@ -113,6 +115,26 @@ export function createAtlas({ manifest, topology, sources, land = null, dataRoot
   for (const list of relationsByActor.values()) {
     list.sort((a, b) => intervalExtent(a.relation.when).min - intervalExtent(b.relation.when).min
       || (a.relation.id < b.relation.id ? -1 : a.relation.id > b.relation.id ? 1 : 0));
+  }
+
+  // --- narratives ---------------------------------------------------------
+  // The other direction of a narrative's steps: which narratives pass through
+  // a record, so an event's card and a link's argument can say what they are
+  // part of. An event counts as walked when a step names it and when a step
+  // names an edge that touches it — a narrative that crosses an event through
+  // its links is passing through the event, whatever the step happens to name.
+  const activeNarratives = [...narratives.values()].filter((n) => n.status === 'active')
+    .sort((a, b) => (a.title < b.title ? -1 : a.title > b.title ? 1 : 0) || (a.id < b.id ? -1 : a.id > b.id ? 1 : 0));
+  const narrativesByRef = new Map();
+  const noteNarrative = (ref, narrative) => {
+    if (!narrativesByRef.has(ref)) narrativesByRef.set(ref, []);
+    if (!narrativesByRef.get(ref).includes(narrative)) narrativesByRef.get(ref).push(narrative);
+  };
+  for (const narrative of activeNarratives) {
+    for (const id of narrativeEventIds({ events, edges }, narrative)) noteNarrative(id, narrative);
+    for (const step of narrative.steps ?? []) {
+      if (edges.has(step.ref)) noteNarrative(step.ref, narrative);
+    }
   }
 
   // --- places ------------------------------------------------------------
@@ -226,6 +248,9 @@ export function createAtlas({ manifest, topology, sources, land = null, dataRoot
     eventsByActor,
     relations,
     relationsByActor,
+    narratives,
+    activeNarratives,
+    narrativesByRef,
     aliases,
     adjacency: buildAdjacency(topology.events, topology.edges),
     activeEvents,

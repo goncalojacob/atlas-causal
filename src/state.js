@@ -1,5 +1,5 @@
 // One state object, { from, to, view, selected, source, place, actor, chain,
-// horizon, layers },
+// horizon, layers, narrative, step },
 // mirrored to
 // the URL query string so every view is a shareable link. Knows nothing
 // about SVG or data files. The pure parse/format pair is separate from the
@@ -27,6 +27,12 @@
 // Null means the window's far end, which is the default and is deliberately
 // never written to the URL: only a year the reader chose is worth carrying
 // in a link, and only a chosen year lights the reachable set in the views.
+//
+// `narrative` and `step` are a mode rather than another dimension: while a
+// narrative is being read, the two of them are the whole of the URL, and the
+// selection, the chain and the window are derived from the step (narrative.js)
+// and deliberately not written. A link to a narrative is a link to a place in
+// an argument, not a snapshot of somebody's screen.
 
 import { isValidYear } from './util/dates.js';
 
@@ -47,7 +53,7 @@ const PASSTHROUGH = Object.freeze(['fixtures']);
 export function defaultState() {
   return {
     from: null, to: null, view: 'map', selected: null, source: null, place: null,
-    actor: null, chain: [], horizon: null, layers: [...LAYERS],
+    actor: null, chain: [], horizon: null, layers: [...LAYERS], narrative: null, step: 0,
   };
 }
 
@@ -94,6 +100,16 @@ export function parseState(search, defaults = defaultState()) {
     }
     state.chain = chain;
   }
+  if (params.has('narrative')) {
+    const id = params.get('narrative');
+    if (SLUG.test(id)) state.narrative = id;
+  }
+  // Clamped to the walk by narrative.js, which is the only thing that knows
+  // how long the walk is; here it only has to be a step number.
+  if (params.has('step')) {
+    const step = Number(params.get('step'));
+    state.step = Number.isInteger(step) && step >= 0 ? step : 0;
+  }
   if (params.has('view') && VIEWS.includes(params.get('view'))) state.view = params.get('view');
   if (params.has('layers')) {
     state.layers = params.get('layers').split(',').filter((l) => LAYERS.includes(l));
@@ -105,6 +121,14 @@ export function formatState(state, search = '') {
   const params = new URLSearchParams();
   const previous = new URLSearchParams(search);
   for (const key of PASSTHROUGH) if (previous.has(key)) params.set(key, previous.get(key));
+  // Reading mode: the narrative and the step are the state, and everything
+  // derived from them stays out of the address bar.
+  if (state.narrative) {
+    params.set('narrative', state.narrative);
+    params.set('step', String(state.step ?? 0));
+    const reading = params.toString().replace(/%2C/g, ',').replace(/%2D/g, '-');
+    return reading ? `?${reading}` : '';
+  }
   if (state.from !== null) params.set('from', String(state.from));
   if (state.to !== null) params.set('to', String(state.to));
   if (state.view && state.view !== 'map') params.set('view', state.view);
