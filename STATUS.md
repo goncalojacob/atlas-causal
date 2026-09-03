@@ -6,16 +6,16 @@ session ends. `ARCHITECTURE.md` is the target; this file is the position.
 
 ## Last updated
 
-2026-09-03, after M7 (`docs/m7-brief.md`): the graph view — every event a
-node, every edge a line, the year across and one band per region down, the
-five edge types drawn distinctly, convergence visible as a picture, behind a
-Map | Graph toggle and `?view=graph`.
+2026-09-03, after M9 (`docs/m9-brief.md`): places as records — an event
+points at a place instead of carrying coordinates of its own, the coordinates
+are written once however many events happen there, and `?place=lisbon` reads
+a place as a thing with a history.
 
 ## Phase
 
-**M0 to M7 built, plus the map usability work, on branch `m0`, pull
-request #1 open against `main`.** `ARCHITECTURE.md` **revision 8** is the
-specification; its opening note says what changed and why (revision 4
+**M0 to M7 and M9 built, plus the map usability work, on branch `m0`, pull
+request #1 open against `main`.** M8 is next in the order the run protocol
+sets. `ARCHITECTURE.md` **revision 9** is the specification; its opening note says what changed and why (revision 4
 added the `actor` kind; revision 5 added `cluster.js`, `weight` in the
 index and `prominence` as a reserved override; revision 6 added the
 `presence` kind, the CC BY-NC-SA licence and its one exception, and moved
@@ -23,20 +23,24 @@ the last four reserved names in the tree into use; revision 7 made an
 import's actor mapping data, turned the year into a window, and moved
 `map/cluster.js` to `cluster.js` because the timeline stacks with it too;
 revision 8 added the graph view, the `view` state and a reserved line for
-level of detail along the time axis).
+level of detail along the time axis; revision 9 made places records, took
+`where` off events, added rule 18 and split the panel into one file per
+card).
 The M5 brief asks for revision 5; the map work had already taken that
 number.
 
 `data/` holds a **test dataset, 20th–21st century Portugal** — **60
-events, 73 edges, 42 actors, 11 sources**, 1910 → 2011 — drafted by the
+events, 73 edges, 42 actors, 22 places, 11 sources**, 1910 → 2011 — drafted by the
 assistant on 2026-09-02 at the owner's request as an exception to the
 "written by a person" rule (recorded in `CLAUDE.md`). Every record says so
 in `authors`. It validates with **0 errors and 0 warnings**, the index is
 built, and the atlas renders it at `http://localhost:8000/` without
 `?fixtures=1`. Ten edges are `disputed` with dissenting citations; two
-lanes derive by `nearest` (Goa, Macau — both correct); four events use a
-`region` override (the Azores, Recife, the Spanish border, Lisbon for the
-Spanish war). Every page still serves from `python3 -m http.server 8000`.
+lanes derive by `nearest` (Goa, Macau — both correct); one **place** uses a
+`region` override (the Azores, absent from the 110m coastline) and four
+events keep the override they were written with (the Azores, Recife, the
+Spanish border, Lisbon for the Spanish war), three of which now agree with
+what their place derives and could be dropped. Every page still serves from `python3 -m http.server 8000`.
 
 **Nothing in it has been read by a person.** See item 4 under Next, and
 "Dates to verify" below.
@@ -49,7 +53,7 @@ import" below. Which actor each of them belongs to is
 table in the tool.
 
 What exists and passes (`node tools/validate.mjs --index`: **0 errors, 0
-warnings**; `node --test`: 214 tests):
+warnings**; `node --test`: 230 tests):
 
 - **M0.** Licences (`LICENSE` MIT, `data/LICENSE` CC BY-SA 4.0,
   `data/geo/LICENSE` Natural Earth); `.nvmrc` = 22; `schema/common/` and
@@ -188,6 +192,37 @@ warnings**; `node --test`: 214 tests):
   the layer switches, which belong to the map, go with it. `about.html` gains
   a section on reading the graph and a key to the five line patterns, drawn
   with the same CSS rules as the graph itself so the two cannot drift apart.
+
+- **M9.** **Places as records.** `schema/v1/place.json` — the envelope, a
+  name list, a point and an optional lane override, with `sources` allowed to
+  be empty because a place is a geographic fact rather than an argument (rule
+  6's exemption, beside `source` and `region`). An event carries
+  `place: "<id>"` and **no coordinates of its own**: the lane is derived from
+  the place's point, the place's own override wins over the derivation and the
+  event's override wins over both. **Rule 18** is what is left to check on a
+  place — at least one name, no repeats — and rules 3, 10, 11 and 12 reach
+  into it; a place no active event names is the warning `place-unused`.
+  `tools/migrate-places.mjs`, kept in the repository and idempotent, grouped
+  the sixty events by their exact coordinates and label into **22 places**
+  (37 of them Lisbon) and rewrote every event; it was run over
+  `tests/fixtures/data/` too, giving 11 synthetic places. **Two lanes were set
+  by hand**, and both are the argument for the change: the Azores
+  (`places/lajes`) and the synthetic `fixture-place-o` are outside every lane
+  polygon, so the override that used to sit on one event now sits on the place
+  where the derivation happens. `panel.js` became
+  `src/panel/{panel,event,place,actor,cluster}.js` — a shell that owns the
+  container, the clicks and the load token, and one file per card — before the
+  place card was added to it. The card is `?place=lisbon`: names, the point and
+  its precision, the lane, everything that happened there in order with the
+  window applied and the rest faded, and the actors who turn up there most.
+  Card precedence is `selected` > `place` > `actor`. Places join the search
+  (`search.js`, `search-box.js`), the map and the cluster heading name them,
+  the form has a place record type and picks one on an event, and
+  `new-record.mjs` gained `place` and `--new-place`, the one command that
+  writes two files. **Two older bugs fixed in passing**: the topology handed to
+  the contribution form never carried the atlas's `actors` (empty actor row
+  since M4, and an event naming an existing actor failed rule 14 in the
+  browser), and `schema/v1/bundle.json`'s `oneOf` never listed `actor.json`.
 
 ### The CShapes import
 
@@ -410,12 +445,15 @@ overnight runs and the hourly shepherd keep off each other's toes on `m0`.
    `disputed` edges (a wrong dispute is the worst failure this project can
    have), then the roles where responsibility is contested — Wiriyamu,
    the 1961 Luanda attacks, Cabral's killing — then the dates.
-5. **Owner: write the first records** of the 1415→ period. `node tools/new-record.mjs event <id>
-   --title … --start … --lon … --lat … --label …` (and `edge`, `source`,
-   `actor`), fill in the text, then `node tools/validate.mjs` and
-   `node tools/build-index.mjs`; open `http://localhost:8000/`. Use `region`
-   on the record whenever the derived lane is wrong (strait cities, islands
-   absent at 110m).
+5. **Owner: write the first records** of the 1415→ period.
+   `node tools/new-record.mjs event <id> --title … --start … --place <place id>`
+   — or `--new-place <id> --label … --lon … --lat …`, which writes the place
+   and the event together — and `edge`, `source`, `actor`, `place`. Fill in
+   the text, then `node tools/validate.mjs` and `node tools/build-index.mjs`;
+   open `http://localhost:8000/`. Set `region` **on the place** when the
+   derived lane is wrong for everywhere that happens there (strait cities,
+   islands absent at 110m), and on the event only when that event belongs to
+   another lane than the one it happened in.
 6. **Owner: test one bundle end to end** once the PAT exists — open
    `contribute.html`, build a bundle, file the issue, apply `accepted`, and
    check that the pull request arrives with green CI. That is the M2
@@ -433,11 +471,17 @@ overnight runs and the hourly shepherd keep off each other's toes on `m0`.
    `MIN_AREA` in `cshapes.mjs`, `MIN_DETAIL` (6) in `simplify.mjs`, and the
    five period cuts in `SHARDS`. Changing any of them means re-running the
    import, which is one command and reproducible.
-9. **Owner: the `?year=1911` in item 8 is now `?from=1886&to=1911`.** The
+9. **Owner: rename the three places whose ids came out mechanical** —
+   `near-villanueva-del-fresno`, `tete-district` and `recife` — if you want
+   them shorter, and add the variant names you know (`lisbon` has only
+   "Lisbon"; "Lisboa" would make the search find it either way). Renaming is
+   the file, its `id`, and the `place` on the events that point at it. See
+   deviation 58.
+10. **Owner: the `?year=1911` in item 8 is now `?from=1886&to=1911`.** The
    slider went in M6 and the timeline's band replaced it; a legacy `?year=X`
    link still opens, read as the window's far end. Item 8 reads the same
    either way.
-10. **Not yet: publishing the templates.** `contribute.html` is deliberately
+11. **Not yet: publishing the templates.** `contribute.html` is deliberately
    not linked from the atlas or from `about.html`; both pages say
    contributions are not open. Opening them is the owner's call (see the
    first open question).
@@ -782,11 +826,11 @@ reverse. 1–12 are from M0/M1, 13–21 from M2/M3.
     touching the working tree, so a half-import never has to be unpicked.
     The fix for a collision is a line in `ACTOR_MAP`, never an overwrite.
 
-`panel.js` is now about 470 lines and is still the file to watch
-(deviation 25). The actor card gained the territory section rather than a
-module of its own for the same reason it had no module of its own before:
-it shares the citation rendering, the event links and the load-token
-discipline with the event view.
+`panel.js` was the file to watch (deviation 25) and M9 split it:
+`src/panel/{panel,event,place,actor,cluster}.js`, a shell of about 200 lines
+and one file per card, with everything shared — citations, the link to an
+event, the lane's name, the load token — handed to the cards in one `ctx`
+object. Every later card gets a file.
 
 46– are from M6 (`docs/m6-brief.md`).
 
@@ -880,6 +924,28 @@ discipline with the event view.
     exactly what the panel's follow button does; otherwise the click selects
     and clears, as on the map. Said in `about.html`.
 
+57–59 are from M9 (`docs/m9-brief.md`).
+
+57. **A place's `sources` is a required key that may be empty.** The brief
+    says "sources optional". Every record in this project carries the same
+    envelope keys, and making one kind's optional would mean two shapes for
+    the same envelope; so the key is required, the value may be `[]`, and it
+    is rule 6 that exempts the kind — beside `source` and `region`, which is
+    where the brief puts it. Reversing it is removing one name from a
+    `required` list.
+58. **The migration's ids are mechanical, and three of them want a person.**
+    The amendment's rule — the slug of the label's first comma-separated
+    segment — gives `near-villanueva-del-fresno`, `tete-district` and
+    `recife` (from "Recife, at the end of the voyage"). All three are
+    accurate and none is what a person would have typed. The tool prints the
+    whole mapping for exactly this, and renaming a place is a file rename, an
+    `id` and the `place` on the events that point at it.
+59. **`new-record.mjs` can write two files.** `--new-place <id>` scaffolds the
+    place and the event that happens at it in one command, because the
+    alternative is asking for coordinates on an event that no longer has any.
+    Nothing else in the tool writes more than one record, and `scaffold()` is
+    still one record in, one out; `scaffoldAll()` is the pair.
+
 ## Dates to verify
 
 Everything below was written from memory and is where the owner's review
@@ -961,6 +1027,27 @@ DevTools protocol — twenty-five assertions, all passing:
   active edges (one event is a tombstone and one edge retracted).
 - No console error on the atlas, `about.html`, `contribute.html` or the
   fixture graph (the only 404 is `/favicon.ico`, which nothing asks for).
+
+Verified in headless Chromium for **M9**, against the real dataset and
+`?fixtures=1`, driving real clicks and keys through the DevTools protocol —
+twenty-five assertions, all passing:
+
+- The map is unchanged to the eye: **13 marks** at `k = 1` and the Lisbon mark
+  still carries **+42**, exactly as before the migration.
+- `?place=lisbon` opens the card and lists **37 events**, with the actors who
+  turn up there most. `?place=lisbon&from=1960&to=1975` keeps all 37 in the
+  list and fades the ones outside the window rather than hiding them.
+- The place is reached three ways: the place name on an open event
+  (`?selected=carnation-revolution-1974` → "Lisbon" → `?place=lisbon`), the
+  heading of a stack of marks on the map, and the search ("lisbo" offers a
+  **Places** group; Enter opens the card).
+- The precedence holds: `?place=lisbon&actor=salazar` shows the place,
+  `?place=lisbon&selected=…` shows the event and keeps `place=` in the URL, and
+  an unknown place says "Not found".
+- The graph view still draws its 60 nodes; `?fixtures=1` still draws; the form
+  offers every place in the atlas on an event and can add a new one.
+- No console error on any page (the only 404 is `/favicon.ico`, which nothing
+  asks for).
 
 ## Where things live
 
