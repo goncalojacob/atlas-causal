@@ -17,6 +17,10 @@
       <ul id="search-results" class="search-results" role="listbox" aria-label="Search results" data-slot="results" hidden></ul>
       <span class="visually-hidden" role="status" aria-live="polite" data-slot="count"></span>
     </div>
+    <div class="views" role="group" aria-label="View">
+      <button type="button" data-view="map" aria-pressed="true">Map</button>
+      <button type="button" data-view="graph" aria-pressed="false">Graph</button>
+    </div>
     <div class="layers" role="group" aria-label="Layers">
       <label><input type="checkbox" data-layer="land" checked> coastlines</label>
       <label><input type="checkbox" data-layer="territories" checked> territories</label>
@@ -27,6 +31,7 @@
   </header>
   <main class="layout">
     <section id="map" class="map-area" aria-label="Map"></section>
+    <section id="graph" class="graph-area" aria-label="Graph" hidden></section>
     <aside id="panel" class="panel" aria-live="polite"></aside>
     <section id="timeline" class="timeline-area" aria-label="Timeline"></section>
   </main>

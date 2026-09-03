@@ -1,4 +1,5 @@
-// One state object, { from, to, selected, actor, chain, layers }, mirrored to
+// One state object, { from, to, view, selected, actor, chain, layers },
+// mirrored to
 // the URL query string so every view is a shareable link. Knows nothing
 // about SVG or data files. The pure parse/format pair is separate from the
 // binding to window so it can be tested in Node.
@@ -10,6 +11,10 @@
 // from before the window existed still opens: it is read as the far end,
 // with the near end left at the data's own beginning.
 //
+// `view` is which drawing of the graph is on screen, the map or the graph
+// view. It is state, not a preference: a link is meant to open on the
+// picture the person who sent it was looking at.
+//
 // `selected` and `actor` are two dimensions of the same view, not
 // alternatives: an actor stays highlighted on the map and the timeline
 // while its events are read one after another, and `?actor=salazar` alone
@@ -20,11 +25,12 @@ import { isValidYear } from './util/dates.js';
 const SLUG = /^[a-z0-9]+(-[a-z0-9]+)*$/;
 const EDGE_ID = /^[a-z0-9]+(-[a-z0-9]+)*--[a-z0-9]+(-[a-z0-9]+)*--[a-z-]+$/;
 export const LAYERS = Object.freeze(['land', 'territories', 'events']);
+export const VIEWS = Object.freeze(['map', 'graph']);
 // Query parameters that are not state but must survive a state write.
 const PASSTHROUGH = Object.freeze(['fixtures']);
 
 export function defaultState() {
-  return { from: null, to: null, selected: null, actor: null, chain: [], layers: [...LAYERS] };
+  return { from: null, to: null, view: 'map', selected: null, actor: null, chain: [], layers: [...LAYERS] };
 }
 
 // Garbage in the URL falls back to defaults field by field; a bad chain
@@ -61,6 +67,7 @@ export function parseState(search, defaults = defaultState()) {
     }
     state.chain = chain;
   }
+  if (params.has('view') && VIEWS.includes(params.get('view'))) state.view = params.get('view');
   if (params.has('layers')) {
     state.layers = params.get('layers').split(',').filter((l) => LAYERS.includes(l));
   }
@@ -73,6 +80,7 @@ export function formatState(state, search = '') {
   for (const key of PASSTHROUGH) if (previous.has(key)) params.set(key, previous.get(key));
   if (state.from !== null) params.set('from', String(state.from));
   if (state.to !== null) params.set('to', String(state.to));
+  if (state.view && state.view !== 'map') params.set('view', state.view);
   if (state.selected) params.set('selected', state.selected);
   if (state.actor) params.set('actor', state.actor);
   if (state.chain.length) params.set('chain', state.chain.join(','));

@@ -43,6 +43,16 @@ button { font: inherit; }
 .bar h1 { margin: 0; font-family: var(--font); font-size: 1.25rem; color: var(--cobalt); font-weight: normal; }
 .bar .tagline { margin: 0; color: var(--ink-soft); flex: 1; }
 .bar .layers { display: flex; gap: 0.75rem; color: var(--ink-soft); }
+/* Map | Graph. Two ways of drawing the same records, so the control is a
+   pair of buttons and not a menu of unrelated things. */
+.bar .views { display: flex; }
+.bar .views button {
+  border: 1px solid var(--cobalt); background: var(--paper); color: var(--cobalt);
+  padding: 0.15rem 0.6rem; cursor: pointer; font: inherit;
+}
+.bar .views button:first-child { border-radius: 3px 0 0 3px; }
+.bar .views button:last-child { border-radius: 0 3px 3px 0; border-left: 0; }
+.bar .views button[aria-pressed="true"] { background: var(--cobalt); color: var(--paper); }
 
 /* Search: an input in the header and its results under it. The list is
    absolutely positioned so the header does not grow as you type. */
@@ -91,6 +101,8 @@ kbd { font-family: var(--font-ui); font-size: 0.9em; padding: 0 0.3em; border: 1
   height: calc(100% - 3rem);
 }
 .map-area { grid-area: map; position: relative; min-height: 0; background: var(--ground); }
+/* The graph view takes the map's slot; one of the two is hidden at a time. */
+.graph-area { grid-area: map; position: relative; min-height: 0; background: var(--ground); }
 .panel { grid-area: panel; overflow: auto; padding: 1rem; border-left: 1px solid var(--line); background: var(--paper); }
 .timeline-area { grid-area: timeline; border-top: 1px solid var(--line); background: var(--paper); overflow-x: auto; }
 
@@ -152,6 +164,70 @@ kbd { font-family: var(--font-ui); font-size: 0.9em; padding: 0 0.3em; border: 1
    hidden — a chain that vanished as the band moved would be worse. */
 .map .mark.faded { opacity: 0.3; }
 .map .mark.faded.selected, .map .mark.faded.on-path { opacity: 0.55; }
+
+/* --- graph view ------------------------------------------------------- */
+
+/* The five edge types are told apart by the pattern of the line and its
+   weight, both from these tokens, so the key in about.html has one place to
+   agree with. Not by colour: the atlas has one accent and it belongs to the
+   path being followed. A disputed edge is dashed whatever its type, as it is
+   everywhere else, and its type then reads in the weight alone. */
+:root {
+  --edge-caused: none;
+  --edge-caused-width: 2;
+  --edge-enabled: 7 3;
+  --edge-enabled-width: 1.6;
+  --edge-reacted-to: 1 3;
+  --edge-reacted-to-width: 1.6;
+  --edge-precondition-of: 3 3;
+  --edge-precondition-of-width: 1;
+  --edge-inspired: 5 2 1 2;
+  --edge-inspired-width: 1;
+}
+
+.graph { width: 100%; height: 100%; display: block; cursor: grab; touch-action: none; font-family: var(--font-ui); }
+.graph:active { cursor: grabbing; }
+/* One band per region, alternating like the timeline's lanes, so the two
+   readings of the same continent look like the same thing. */
+.graph .band.even { fill: var(--paper); }
+.graph .band.odd { fill: var(--ground); }
+.graph .band-label { fill: var(--ink-soft); font-size: 12px; pointer-events: none; }
+.graph .tick { stroke: var(--line); stroke-width: 1; vector-effect: non-scaling-stroke; }
+.graph .tick-label { fill: var(--ink-soft); font-size: 11px; pointer-events: none; }
+/* The window of time, shaded across every band: what is outside it fades
+   rather than leaving, so the whole web is always there. */
+.graph .window-band { fill: var(--cobalt); opacity: 0.06; pointer-events: none; }
+
+.graph .edge, .graph .edge-head { stroke: var(--cobalt-soft); fill: none; vector-effect: non-scaling-stroke; pointer-events: none; }
+.graph .edge-head { fill: var(--cobalt-soft); stroke: none; }
+.graph .edge.type-caused { stroke-width: var(--edge-caused-width); stroke-dasharray: var(--edge-caused); }
+.graph .edge.type-enabled { stroke-width: var(--edge-enabled-width); stroke-dasharray: var(--edge-enabled); }
+.graph .edge.type-reacted-to { stroke-width: var(--edge-reacted-to-width); stroke-dasharray: var(--edge-reacted-to); stroke-linecap: round; }
+.graph .edge.type-precondition-of { stroke-width: var(--edge-precondition-of-width); stroke-dasharray: var(--edge-precondition-of); }
+.graph .edge.type-inspired { stroke-width: var(--edge-inspired-width); stroke-dasharray: var(--edge-inspired); }
+.graph .edge.disputed { stroke-dasharray: 5 4; opacity: 0.75; }
+.graph .edge.consequence, .graph .edge-head.consequence { stroke: var(--cobalt); }
+.graph .edge-head.consequence { fill: var(--cobalt); }
+/* The branches that fed the selected event from off the walked path: the
+   convergence query, drawn. Cobalt and heavier, never madder — madder is
+   the path the reader took, and these are the ones they did not. */
+.graph .edge.converging { stroke: var(--cobalt); stroke-width: 2; opacity: 1; }
+.graph .edge-head.converging { fill: var(--cobalt); }
+.graph .edge.chain { stroke: var(--madder); stroke-width: 2.4; }
+.graph .edge-head.chain { fill: var(--madder); }
+.graph .edge.faded, .graph .edge-head.faded { opacity: 0.16; }
+
+.graph .node { fill: var(--paper); stroke: var(--cobalt); stroke-width: 1.5; vector-effect: non-scaling-stroke; cursor: pointer; }
+.graph .hit { fill: transparent; stroke: none; cursor: pointer; }
+.graph .node:hover { fill: var(--cobalt-faint); }
+.graph .node.of-actor { fill: var(--cobalt-soft); stroke: var(--cobalt); stroke-width: 2.5; }
+.graph .node.converging { fill: var(--cobalt); stroke: var(--cobalt); }
+.graph .node.on-path { fill: var(--madder); stroke: var(--madder); }
+.graph .node.selected { fill: var(--madder); stroke: var(--paper); stroke-width: 2; }
+.graph .node.faded { opacity: 0.28; }
+.graph .node.faded.selected, .graph .node.faded.on-path { opacity: 0.6; }
+.graph .node-label { fill: var(--ink); paint-order: stroke; stroke: var(--paper); stroke-width: 3; pointer-events: none; }
+.graph .node-label.selected { fill: var(--madder); font-weight: 600; }
 
 /* --- timeline -------------------------------------------------------- */
 

@@ -7,14 +7,24 @@ test('parse and format round trip', () => {
   const state = {
     from: 1200,
     to: 1250,
+    view: 'graph',
     selected: 'fixture-event-t',
     actor: 'fixture-actor-one',
     chain: ['fixture-event-a--fixture-event-b--caused', 'fixture-event-b--fixture-event-d--enabled'],
     layers: ['events'],
   };
   const search = formatState(state);
-  assert.equal(search, '?from=1200&to=1250&selected=fixture-event-t&actor=fixture-actor-one&chain=fixture-event-a--fixture-event-b--caused,fixture-event-b--fixture-event-d--enabled&layers=events');
+  assert.equal(search, '?from=1200&to=1250&view=graph&selected=fixture-event-t&actor=fixture-actor-one&chain=fixture-event-a--fixture-event-b--caused,fixture-event-b--fixture-event-d--enabled&layers=events');
   assert.deepEqual(parseState(search), state);
+});
+
+// The view is state, not a preference: the picture travels in the link.
+test('the view travels in the URL, and only when it is not the map', () => {
+  assert.equal(formatState({ ...defaultState(), view: 'map' }), '');
+  assert.equal(formatState({ ...defaultState(), view: 'graph' }), '?view=graph');
+  assert.equal(parseState('?view=graph').view, 'graph');
+  assert.equal(parseState('?view=map').view, 'map');
+  assert.equal(parseState('?view=hologram').view, 'map', 'an unknown view falls back to the map');
 });
 
 test('defaults produce an empty query and BCE years survive', () => {
@@ -63,7 +73,7 @@ test('the store merges patches and notifies', () => {
   off();
   store.set({ to: 1220 });
   assert.deepEqual(seen, [1210, 1210]);
-  assert.deepEqual(store.get(), { from: null, to: 1220, selected: 'fixture-event-a', actor: null, chain: [], layers: ['land', 'territories', 'events'] });
+  assert.deepEqual(store.get(), { from: null, to: 1220, view: 'map', selected: 'fixture-event-a', actor: null, chain: [], layers: ['land', 'territories', 'events'] });
 });
 
 // --- the window itself ----------------------------------------------------

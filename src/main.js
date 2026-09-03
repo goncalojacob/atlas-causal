@@ -5,6 +5,7 @@
 import { loadAtlas } from './data.js';
 import { createState, parseState } from './state.js';
 import { createMap } from './map/map.js';
+import { createGraphView } from './graph-view/graph-view.js';
 import { createTimeline } from './timeline.js';
 import { createPanel } from './panel.js';
 import { createSearchBox } from './search-box.js';
@@ -34,6 +35,30 @@ try {
   createMap(document.getElementById('map'), { atlas, state, onCluster: (cluster) => panel.showCluster(cluster) });
   createTimeline(document.getElementById('timeline'), { atlas, state, onCluster: (cluster) => panel.showCluster(cluster) });
   createSearchBox(document.getElementById('search'), { atlas, state });
+
+  // The graph view takes the map's slot behind the toggle. It is built the
+  // first time it is asked for, not at load: a reader who never leaves the
+  // map never pays for the layout.
+  const mapArea = document.getElementById('map');
+  const graphArea = document.getElementById('graph');
+  const layersGroup = document.querySelector('.bar .layers');
+  let graph = null;
+  const showView = (view) => {
+    const graphOn = view === 'graph';
+    if (graphOn && !graph) graph = createGraphView(graphArea, { atlas, state });
+    mapArea.hidden = graphOn;
+    graphArea.hidden = !graphOn;
+    // The layer switches belong to the map: the graph has no coastlines.
+    if (layersGroup) layersGroup.hidden = graphOn;
+    for (const button of document.querySelectorAll('[data-view]')) {
+      button.setAttribute('aria-pressed', String(button.dataset.view === view));
+    }
+  };
+  for (const button of document.querySelectorAll('[data-view]')) {
+    button.addEventListener('click', () => state.set({ view: button.dataset.view }));
+  }
+  state.subscribe((s) => showView(s.view));
+  showView(state.get().view);
 
   for (const box of document.querySelectorAll('input[data-layer]')) {
     box.checked = state.get().layers.includes(box.dataset.layer);
