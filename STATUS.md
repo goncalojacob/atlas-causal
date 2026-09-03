@@ -1183,8 +1183,10 @@ fixtures and the three static pages — sixteen assertions, all passing:
 
 - Repo: `~/atlas-causal`, branch `m0`.
 - Pull request #1: https://github.com/goncalojacob/atlas-causal/pull/1 — its
-  body is now about 59 KB against GitHub's 64 KB limit, so the next milestone
-  to add a section should shorten the earlier ones rather than only append.
+  body is about **57 KB** against GitHub's 64 KB limit. M8 added its own
+  section and paid for it by cutting M5's to a summary that points at
+  `STATUS.md`; the next milestone to add a section must do the same, because
+  there is room for roughly one more.
 - Architecture page (artifact, now **behind** the repo file — revision 2;
   `ARCHITECTURE.md` is the source of truth):
   https://claude.ai/code/artifact/b3940d66-ad98-4de9-9bfd-aff8c77e6f36
