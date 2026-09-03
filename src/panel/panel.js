@@ -16,6 +16,8 @@ import { renderActorCard } from './actor.js';
 import { renderPlaceCard } from './place.js';
 import { renderSourceCard } from './source.js';
 import { clusterHtml } from './cluster.js';
+import { narrativeListHtml, partOfHtml, renderNarrativeCard } from './narrative.js';
+import { readingNarrative } from '../narrative.js';
 
 export function createPanel(container, { atlas, state, fixtures = false }) {
   let token = 0;
@@ -62,6 +64,17 @@ export function createPanel(container, { atlas, state, fixtures = false }) {
         break;
       case 'clear-actor':
         state.set({ actor: null });
+        break;
+      // Opening a narrative is entering a mode: the step is authoritative and
+      // the selection and the path are derived from it (narrative-mode.js).
+      case 'narrative':
+        state.set({ narrative: el.dataset.id, step: 0 });
+        break;
+      case 'narrative-step':
+        state.set({ step: Number(el.dataset.step) });
+        break;
+      case 'leave-narrative':
+        state.set({ narrative: null });
         break;
       case 'follow': {
         const edge = atlas.edges.get(el.dataset.edge);
@@ -155,6 +168,9 @@ export function createPanel(container, { atlas, state, fixtures = false }) {
     if (edge.dispute) {
       parts.push(`<div class="dispute"><h3>The dispute</h3><p>${esc(edge.dispute.text)}</p>${citationsHtml(edge.dispute.sources, 'Dissenting sources')}</div>`);
     }
+    // A link is walked by narratives as an event is, and says so where its
+    // argument is read: an edge has no card of its own to say it on.
+    parts.push(partOfHtml(ctx, edge.id));
     return parts.join('');
   }
 
@@ -178,6 +194,7 @@ export function createPanel(container, { atlas, state, fixtures = false }) {
     startYear,
     citationsHtml,
     edgeTextHtml,
+    partOfHtml: (id) => partOfHtml(ctx, id),
     eventLink,
     highlightedActor,
     isCurrent: (mine) => mine === token,
@@ -202,6 +219,14 @@ export function createPanel(container, { atlas, state, fixtures = false }) {
   function render(s) {
     token += 1;
     const mine = token;
+    // Reading a narrative is a mode and wins the panel: everything else in
+    // the state was derived from the step.
+    if (s.narrative) {
+      const narrative = readingNarrative(atlas, s);
+      if (narrative) renderNarrativeCard(ctx, { container, narrative, state: s, mine });
+      else notFound('narrative', s.narrative);
+      return;
+    }
     // The precedence: an event, then a source, then a place, then an actor.
     // Opening an event from a place's list therefore does not throw the
     // place away.
@@ -241,7 +266,14 @@ export function createPanel(container, { atlas, state, fixtures = false }) {
     container.innerHTML = clusterHtml(ctx, cluster);
   }
 
+  // The list of narratives is a way in, not a state: it is replaced by
+  // whatever the reader opens next, as a cluster's list is.
+  function showNarratives() {
+    token += 1;
+    container.innerHTML = narrativeListHtml(ctx);
+  }
+
   state.subscribe(render);
   render(state.get());
-  return { render, showCluster };
+  return { render, showCluster, showNarratives };
 }

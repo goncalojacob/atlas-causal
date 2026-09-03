@@ -13,6 +13,7 @@ import { createEventsLayer } from './layers/events.js';
 import { DEEPEST_ZOOM } from '../cluster.js';
 import { resolveWindow } from '../util/window.js';
 import { horizonSet } from '../horizon.js';
+import { narrativeSet } from '../narrative.js';
 
 const WIDTH = 960;
 const HEIGHT = 540;
@@ -229,6 +230,9 @@ export function createMap(container, { atlas, state, onCluster = null }) {
       selected: s.selected,
       pathIds,
       actorIds,
+      // The whole walk, when one is open: where the narrative is going, not
+      // only where the reader has got to (narrative.js).
+      narrativeIds: narrativeSet(atlas, s),
       // Empty unless the reader has chosen a horizon year (horizon.js).
       reachable: horizonSet(atlas, s),
       chainEdges,

@@ -72,6 +72,13 @@ function citerRow(ctx, citation) {
       <button type="button" class="link" data-action="actor" data-id="${esc(relation.to)}">${name(relation.to)}</button>
       ${locator}${dissent}</li>`;
   }
+  // A narrative is read as a walk rather than as a card of fields: the row
+  // opens it at its first step.
+  if (citation.kind === 'narrative') {
+    const narrative = atlas.narratives?.get(citation.id);
+    if (!narrative) return '';
+    return `<li class="actor-row"><button type="button" class="link" data-action="narrative" data-id="${esc(narrative.id)}">${esc(narrative.title)}</button>${locator}${dissent}</li>`;
+  }
   if (citation.kind === 'place') {
     const place = atlas.places.get(citation.id);
     if (!place) return '';

@@ -47,7 +47,7 @@ function shorten(text, chars = LABEL_CHARS) {
   return text.length > chars ? `${text.slice(0, chars - 1).trimEnd()}…` : text;
 }
 
-function markClasses(event, { selected, pathIds, actorIds, reachable = null, faded = false }) {
+function markClasses(event, { selected, pathIds, actorIds, narrativeIds = null, reachable = null, faded = false }) {
   // The madder accent belongs to the walked path; an actor's events are
   // emphasised in cobalt so the two never say the same thing. The horizon's
   // reachable set is a ring rather than a fill, fading with distance, so it
@@ -56,6 +56,7 @@ function markClasses(event, { selected, pathIds, actorIds, reachable = null, fad
   return ['mark',
     faded ? 'faded' : '',
     band,
+    narrativeIds && narrativeIds.has(event.id) ? 'of-narrative' : '',
     actorIds && actorIds.has(event.id) ? 'of-actor' : '',
     pathIds.has(event.id) ? 'on-path' : '',
     event.id === selected ? 'selected' : '',
@@ -93,7 +94,7 @@ export function createEventsLayer(group, projection, { pointOf, onSelect, onClus
   // coincident cluster the reader has opened, or null.
   return {
     render({
-      events, window: timeWindow = null, selected, pathIds, actorIds = null, reachable = null,
+      events, window: timeWindow = null, selected, pathIds, actorIds = null, narrativeIds = null, reachable = null,
       chainEdges, consequenceEdges, eventById, k = 1, view = null, spread = null,
     }) {
       group.replaceChildren();
@@ -128,6 +129,9 @@ export function createEventsLayer(group, projection, { pointOf, onSelect, onClus
       if (selected) drawnAlone.add(selected);
       for (const id of pathIds) drawnAlone.add(id);
       if (actorIds) for (const id of actorIds) drawnAlone.add(id);
+      // Where the walk is going is drawn mark by mark: a narrative swallowed
+      // by a cluster would be a walk the reader cannot see ahead of.
+      if (narrativeIds) for (const id of narrativeIds) drawnAlone.add(id);
 
       // Drawn at all, in the window or out of it: what the reader is working
       // with, plus the reachable set when a horizon is open — an answer to
@@ -163,7 +167,7 @@ export function createEventsLayer(group, projection, { pointOf, onSelect, onClus
         if (cluster.count === 1) {
           appendMark(group, {
             x: cluster.x, y: cluster.y, radius: MARK_RADIUS, title: event.title, id: event.id,
-            classes: markClasses(event, { selected, pathIds, actorIds, reachable }),
+            classes: markClasses(event, { selected, pathIds, actorIds, narrativeIds, reachable }),
           });
           continue;
         }
@@ -196,7 +200,7 @@ export function createEventsLayer(group, projection, { pointOf, onSelect, onClus
         const mark = appendMark(group, {
           x, y, radius: isSelected ? SELECTED_RADIUS : MARK_RADIUS,
           title: faded ? `${event.title} — outside the window` : event.title, id: event.id,
-          classes: markClasses(event, { selected, pathIds, actorIds, reachable, faded }),
+          classes: markClasses(event, { selected, pathIds, actorIds, narrativeIds, reachable, faded }),
         });
         if (isSelected) selectedMark = mark;
       }
@@ -223,7 +227,7 @@ export function createEventsLayer(group, projection, { pointOf, onSelect, onClus
           ring.appendChild(svg('line', { x1: cluster.x, y1: cluster.y, x2: x, y2: y, class: 'spread-leg' }));
           appendMark(ring, {
             x, y, radius: MARK_RADIUS, title: member.event.title, id: member.id,
-            classes: markClasses(member.event, { selected, pathIds, actorIds, reachable }),
+            classes: markClasses(member.event, { selected, pathIds, actorIds, narrativeIds, reachable }),
           });
           const right = positions[i].x >= 0;
           ring.appendChild(textNode(shorten(member.event.title), {

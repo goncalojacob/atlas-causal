@@ -19,6 +19,7 @@ import { formatInterval } from '../util/dates.js';
 import { overlaps, resolveWindow } from '../util/window.js';
 import { convergence } from '../graph.js';
 import { horizonSet, horizonBand } from '../horizon.js';
+import { narrativeSet } from '../narrative.js';
 import { layoutGraph } from './layout.js';
 
 // Sizes in SVG units at k = 1; divided by k when drawn, so a node keeps its
@@ -244,6 +245,9 @@ export function createGraphView(container, { atlas, state }) {
     const actorIds = actor && actor.kind === 'actor'
       ? new Set((atlas.eventsByActor.get(actor.id) ?? []).map((a) => a.event.id))
       : null;
+    // The whole of an open narrative's walk: where it is going, not only
+    // where the reader has got to.
+    const narrativeIds = narrativeSet(atlas, s);
     // What the selected event had led to by the horizon year, faded by how
     // far out it is. Empty unless the reader chose a year (horizon.js).
     const reachable = horizonSet(atlas, s);
@@ -309,6 +313,7 @@ export function createGraphView(container, { atlas, state }) {
         'node',
         faded ? 'faded' : '',
         reachable.has(node.id) ? `in-horizon ${horizonBand(reachable.get(node.id))}` : '',
+        narrativeIds && narrativeIds.has(node.id) ? 'of-narrative' : '',
         actorIds && actorIds.has(node.id) ? 'of-actor' : '',
         converging.has(node.id) ? 'converging' : '',
         pathIds.has(node.id) ? 'on-path' : '',

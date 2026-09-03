@@ -23,6 +23,7 @@ import { clusterPoints } from './cluster.js';
 import { extent, fromAstronomical, formatYear } from './util/dates.js';
 import { resolveWindow, overlaps, windowAt, decadeOf } from './util/window.js';
 import { horizonBand, horizonSet } from './horizon.js';
+import { narrativeSet } from './narrative.js';
 
 const LANE_HEIGHT = 34;
 const LABEL_WIDTH = 120;
@@ -169,7 +170,7 @@ export function createTimeline(container, { atlas, state, createScale = createLi
 
   // --- drawing ------------------------------------------------------------
 
-  function laneBars(root_, lane, i, events, s, window, actorIds, pathIds, reachable) {
+  function laneBars(root_, lane, i, events, s, window, actorIds, narrativeIds, pathIds, reachable) {
     const y = AXIS_HEIGHT + i * LANE_HEIGHT + 8;
     const barHeight = LANE_HEIGHT - 16;
     const geometry = (event) => {
@@ -186,11 +187,12 @@ export function createTimeline(container, { atlas, state, createScale = createLi
       const onPath = pathIds.has(event.id);
       const selected = event.id === s.selected;
       const ofActor = actorIds ? actorIds.has(event.id) : false;
+      const ofNarrative = narrativeIds ? narrativeIds.has(event.id) : false;
       const inside = overlaps(event.when, window);
       const box = geometry(event);
       const depth = reachable.get(event.id) ?? null;
-      const item = { id: event.id, event, onPath, selected, ofActor, inside, depth, ...box };
-      if (onPath || selected || ofActor) alone.push(item);
+      const item = { id: event.id, event, onPath, selected, ofActor, ofNarrative, inside, depth, ...box };
+      if (onPath || selected || ofActor || ofNarrative) alone.push(item);
       else groups[inside ? 'inside' : 'outside'].push(item);
     }
 
@@ -200,6 +202,7 @@ export function createTimeline(container, { atlas, state, createScale = createLi
         item.inside ? '' : 'faded',
         count ? 'stack' : '',
         item.depth === null ? '' : `in-horizon ${horizonBand(item.depth)}`,
+        item.ofNarrative ? 'of-narrative' : '',
         item.ofActor ? 'of-actor' : '',
         item.onPath ? 'on-path' : '',
         item.selected ? 'selected' : '',
@@ -274,6 +277,9 @@ export function createTimeline(container, { atlas, state, createScale = createLi
     const actorIds = actor && actor.kind === 'actor'
       ? new Set((atlas.eventsByActor.get(actor.id) ?? []).map((a) => a.event.id))
       : null;
+    // The whole of an open narrative's walk, so the lanes show where it is
+    // going and not only the step reached.
+    const narrativeIds = narrativeSet(atlas, s);
     // What the selected event had led to by the horizon year, faded by how
     // far out it is. Empty unless the reader chose a year (horizon.js).
     const reachable = horizonSet(atlas, s);
@@ -304,7 +310,7 @@ export function createTimeline(container, { atlas, state, createScale = createLi
     }
     const deferred = [];
     lanes.forEach((lane, i) => {
-      for (const item of laneBars(root, lane, i, byLane.get(lane.id), s, window, actorIds, pathIds, reachable)) {
+      for (const item of laneBars(root, lane, i, byLane.get(lane.id), s, window, actorIds, narrativeIds, pathIds, reachable)) {
         deferred.push({ item, i });
       }
     });
@@ -314,6 +320,7 @@ export function createTimeline(container, { atlas, state, createScale = createLi
         item.ongoing ? 'ongoing' : '',
         item.inside ? '' : 'faded',
         item.depth === null ? '' : `in-horizon ${horizonBand(item.depth)}`,
+        item.ofNarrative ? 'of-narrative' : '',
         item.ofActor ? 'of-actor' : '',
         item.onPath ? 'on-path' : '',
         item.selected ? 'selected' : '',

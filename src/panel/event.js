@@ -163,6 +163,7 @@ export function renderEventCard(ctx, { container, event, found, state, mine }) {
     ${consequencesHtml(out)}
     ${horizonHtml(ctx, { event, state })}
     ${convergenceHtml(ctx, conv, chainEdges.length > 0, event.id)}
+    ${ctx.partOfHtml(event.id)}
     <section class="sources" data-slot="sources"></section>
   `;
 

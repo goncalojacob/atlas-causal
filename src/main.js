@@ -9,6 +9,8 @@ import { createGraphView } from './graph-view/graph-view.js';
 import { createTimeline } from './timeline.js';
 import { createPanel } from './panel/panel.js';
 import { createSearchBox } from './search-box.js';
+import { createReadingMode, openingState } from './narrative-mode.js';
+import { bindNarrativeKeys } from './panel/narrative.js';
 import { esc } from './util/esc.js';
 
 const params = new URLSearchParams(window.location.search);
@@ -24,7 +26,12 @@ try {
   // Nothing is filled in here: a window bound left null means "as far as the
   // data goes", and each view resolves it against the atlas it was given. An
   // empty URL is therefore the whole span, and stays an empty URL.
-  const state = createState(parseState(window.location.search), { window });
+  // A link that names a narrative opens with the walk already derived, so no
+  // view is ever built on a state the reading mode has not seen. Everything
+  // downstream is given the wrapper, not the store: it is where the step
+  // becomes a selection, a chain and a window (narrative-mode.js).
+  const store = createState(openingState(atlas, parseState(window.location.search)), { window });
+  const state = createReadingMode(store, atlas);
 
   document.getElementById('fixtures-badge').hidden = !fixtures;
   document.body.classList.toggle('fixtures', fixtures);
@@ -35,6 +42,8 @@ try {
   createMap(document.getElementById('map'), { atlas, state, onCluster: (cluster) => panel.showCluster(cluster) });
   createTimeline(document.getElementById('timeline'), { atlas, state, onCluster: (cluster) => panel.showCluster(cluster) });
   createSearchBox(document.getElementById('search'), { atlas, state });
+  bindNarrativeKeys(document, { atlas, state });
+  document.getElementById('narratives-button').addEventListener('click', () => panel.showNarratives());
 
   // The graph view takes the map's slot behind the toggle. It is built the
   // first time it is asked for, not at load: a reader who never leaves the
