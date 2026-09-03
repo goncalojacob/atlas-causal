@@ -257,6 +257,23 @@ contributions-open timing (deferred), `strength` on edges (left out).
 
 Taken by the building agents, all reversible, all listed under Deviations.
 
+## Decided on 2026-09-03 (owner), not yet built
+
+- **Split colony and successor state.** `british-india` and
+  `dutch-east-indies` become their own actors; the pre-independence
+  presences move to them; `republic-of-india` and `indonesia` keep only
+  what follows independence. The same treatment for any other CShapes
+  entity whose status changes under one code.
+- **The actor mapping of the import becomes data, not code**, so a
+  contributor can correct a territory's actor by editing one JSON file
+  through the ordinary contribution path, without touching `tools/`.
+- **The two date disagreements are resolved by one sentence in each
+  event's summary** (`east-timor-invasion-1975`,
+  `guinea-bissau-declares-independence-1973`), saying what the outline
+  shows and why the dates differ. The imported outlines stay as the source
+  has them.
+- **Builds run in the cloud only, after 18:00 Europe/Lisbon.**
+
 ## Next
 
 1. **Owner: create the PAT.** `contribution.yml` needs the repository secret
