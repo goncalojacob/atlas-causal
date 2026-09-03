@@ -10,6 +10,13 @@
   <header class="bar">
     <h1>Atlas causal</h1>
     <p class="tagline">Pick an event, follow its consequences, see which other branches fed the same endpoint.</p>
+    <div class="search" id="search" role="search">
+      <input type="search" id="search-input" class="search-input" placeholder="Search events and actors  /"
+             autocomplete="off" spellcheck="false" role="combobox" aria-expanded="false"
+             aria-controls="search-results" aria-autocomplete="list" aria-label="Search events and actors">
+      <ul id="search-results" class="search-results" role="listbox" aria-label="Search results" data-slot="results" hidden></ul>
+      <span class="visually-hidden" role="status" aria-live="polite" data-slot="count"></span>
+    </div>
     <div class="layers" role="group" aria-label="Layers">
       <label><input type="checkbox" data-layer="land" checked> coastlines</label>
       <label><input type="checkbox" data-layer="territories" checked> territories</label>

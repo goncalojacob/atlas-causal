@@ -7,6 +7,7 @@ import { createState, parseState } from './state.js';
 import { createMap } from './map/map.js';
 import { createTimeline } from './timeline.js';
 import { createPanel } from './panel.js';
+import { createSearchBox } from './search-box.js';
 import { esc } from './util/esc.js';
 
 const params = new URLSearchParams(window.location.search);
@@ -32,6 +33,7 @@ try {
   const panel = createPanel(panelEl, { atlas, state, fixtures });
   createMap(document.getElementById('map'), { atlas, state, onCluster: (cluster) => panel.showCluster(cluster) });
   createTimeline(document.getElementById('timeline'), { atlas, state, onCluster: (cluster) => panel.showCluster(cluster) });
+  createSearchBox(document.getElementById('search'), { atlas, state });
 
   for (const box of document.querySelectorAll('input[data-layer]')) {
     box.checked = state.get().layers.includes(box.dataset.layer);
