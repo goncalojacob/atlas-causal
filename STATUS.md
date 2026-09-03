@@ -6,19 +6,24 @@ session ends. `ARCHITECTURE.md` is the target; this file is the position.
 
 ## Last updated
 
-2026-09-02, after M5 (`docs/m5-brief.md`): the `presence` kind, the
-CShapes 2.0 import, and the territories layer on the map.
+2026-09-03, after M6 (`docs/m6-brief.md`): the import's actor mapping as a
+validated data file with splits by date, the two date disagreements said in
+the events' summaries, a window of time in place of the year slider, stacking
+on the timeline, and search by name.
 
 ## Phase
 
-**M0 to M5 built, plus the map usability work, on branch `m0`, pull
-request #1 open against `main`.** `ARCHITECTURE.md` **revision 6** is the
+**M0 to M6 built, plus the map usability work, on branch `m0`, pull
+request #1 open against `main`.** `ARCHITECTURE.md` **revision 7** is the
 specification; its opening note says what changed and why (revision 4
-added the `actor` kind; revision 5 added `map/cluster.js`, `weight` in the
+added the `actor` kind; revision 5 added `cluster.js`, `weight` in the
 index and `prominence` as a reserved override; revision 6 added the
 `presence` kind, the CC BY-NC-SA licence and its one exception, and moved
-the last four reserved names in the tree into use). The M5 brief asks for
-revision 5; the map work had already taken that number.
+the last four reserved names in the tree into use; revision 7 made an
+import's actor mapping data, turned the year into a window, and moved
+`map/cluster.js` to `cluster.js` because the timeline stacks with it too).
+The M5 brief asks for revision 5; the map work had already taken that
+number.
 
 `data/` holds a **test dataset, 20th–21st century Portugal** — **60
 events, 73 edges, 42 actors, 11 sources**, 1910 → 2011 — drafted by the
@@ -34,13 +39,15 @@ Spanish war). Every page still serves from `python3 -m http.server 8000`.
 **Nothing in it has been read by a person.** See item 4 under Next, and
 "Dates to verify" below.
 
-`data/` also holds **710 presences and 250 imported polity actors**,
+`data/` also holds **710 presences and 252 imported polity actors**,
 1886–2019, from **CShapes 2.0** — an import, not writing, under
 **CC BY-NC-SA 4.0**, which `data/LICENSE` does not cover. See "The CShapes
-import" below.
+import" below. Which actor each of them belongs to is
+`data/imports/cshapes-actors.json`, a validated data file rather than a
+table in the tool.
 
-What exists and passes (`node tools/validate.mjs --index`, `node --test`:
-177 tests):
+What exists and passes (`node tools/validate.mjs --index`: **0 errors, 0
+warnings**; `node --test`: 207 tests):
 
 - **M0.** Licences (`LICENSE` MIT, `data/LICENSE` CC BY-SA 4.0,
   `data/geo/LICENSE` Natural Earth); `.nvmrc` = 22; `schema/common/` and
@@ -56,8 +63,8 @@ What exists and passes (`node tools/validate.mjs --index`, `node --test`:
   `map/map.js`, `map/layers/{land,events}.js`, `timeline.js`,
   `timeline-scale.js`, `panel.js`, `util/{esc,dom}.js`. State
   `{ year, selected, actor, chain, layers }` in the query string (`actor`
-  arrived in M4). Disputed edges
-  dashed on the map and marked in the panel.
+  arrived in M4; `year` became the window `{ from, to }` in M6). Disputed
+  edges dashed on the map and marked in the panel.
 - **M2.** `contribute.html` and `src/contribute/{bundle,form,submit,main}.js`:
   the form builds a bundle, runs the same `validate()` the CLI runs against
   the loaded topology, shows each error next to the input that caused it, and
@@ -87,7 +94,8 @@ What exists and passes (`node tools/validate.mjs --index`, `node --test`:
 - **Map usability** (`docs/map-brief.md`). `weight` on every topology
   event, derived at index time: active edges in and out plus the actors
   named — mechanical, not editorial, with `prominence` reserved as the
-  override. `src/map/cluster.js`, pure and tested: which marks overlap at
+  override. `src/map/cluster.js` (`src/cluster.js` since M6), pure and
+  tested: which marks overlap at
   the current zoom, which of them no zoom the map allows could ever part,
   where a cluster comes apart. `layers/events.js` renders clusters — one
   mark for the heaviest member, a `+n` badge for what is under it, an
@@ -123,6 +131,38 @@ What exists and passes (`node tools/validate.mjs --index`, `node --test`:
   the attribution and the licence warning. Fixtures gain two synthetic
   polities, three presences and two geometry shards.
 
+- **M6.** **The import's actor mapping as data.**
+  `data/imports/cshapes-actors.json`, validated against a new
+  `schema/v1/import-map.json` that the browser never fetches
+  (`TOOL_SIDE` in `src/validate/schemas.js`); `readImportMaps()` in
+  `tools/lib/read.mjs` and `checkImportMap()` in `tools/validate.mjs`;
+  `tools/import/cshapes.mjs` reads it, cuts a code's features into segments
+  by date, refuses a split date that is not a boundary CShapes itself draws
+  and names the ones it has, and gained `--report`, which writes
+  `docs/cshapes-entities.md`. **The six warnings are gone**: 750 is
+  `british-india` to 1947-08-15 and `republic-of-india` after it, 850 is
+  `dutch-east-indies` to 1945-08-17 and `indonesia` after it, all by
+  re-running the import. `CONTRIBUTING.md` gains "Correcting a territory".
+  **The two date disagreements** are said in the summaries of
+  `east-timor-invasion-1975` and `guinea-bissau-declares-independence-1973`;
+  no outline and no date was touched.
+  **A window of time**: `{ from, to }` replaces `year` in `state.js`, either
+  end null for the data's own bound, resolved by the views in a new pure
+  `src/util/window.js`; `?from&to` in the URL and a legacy `?year=X`
+  rewritten once at load. The map draws the events whose interval overlaps
+  the window and the territories of its far end, clamped to the last year the
+  outlines cover; the chain, the selected event and the selected actor's
+  events are drawn outside the window too, faded. The map's year slider is
+  gone. **The band**: the window drawn over the timeline's lanes with a
+  handle at each end, dragging, sliding, arrow keys, a double-click that
+  snaps to a decade, and a marker saying which year's borders the map has.
+  **Stacking**: `map/cluster.js` becomes `src/cluster.js` and the timeline
+  uses it in one dimension; only the events in the window stack together, so
+  narrowing the band splits them. **Search**: `src/search.js` (pure, ranked,
+  diacritic-insensitive, over titles and every one of an actor's names) and
+  `src/search-box.js` (`/` to focus, arrows, Enter, Escape, combobox and
+  listbox roles, a live count).
+
 ### The CShapes import
 
 Source: **CShapes 2.0** (Schvitz, Girardin, Rüegger, Weidmann, Cederman &
@@ -152,14 +192,15 @@ What came out:
 
 | | |
 |---|---|
-| entities | 252 (250 new actors; India → `republic-of-india` and Indonesia → `indonesia` reuse existing records) |
+| entities | 254 actor records over 252 codes (2 codes are split in two; `republic-of-india` and `indonesia` are reused, not rewritten) |
 | presences | 710, one per feature |
 | geometry shards | 5 — 1886–1913, 1914–1932, 1933–1945, 1946–1974, 1975–2019 |
 | geometry on disk | 4.5 MB total; largest shard 1.11 MB (1914–1932); the world of one year about 700 KB |
 | presence records | 636 KB across 710 files |
 | imported actor records | 303 KB across 250 files |
 | `status` values found | `independent` 365, `colony` 219, `protectorate` 62, `occupied` 39, `mandate` 23, `N/A` 2 |
-| validator | 0 errors, 6 warnings (all one thing — see the open questions) |
+| validator | 0 errors, 0 warnings (the six were the colony/successor question, answered in M6) |
+| could still be split | 89 codes, listed in `docs/cshapes-entities.md` |
 
 Simplification is Douglas–Peucker at 0.1°, or a sixth of an arc's own
 extent when that is less, then quantization to three decimals. It runs on
@@ -251,6 +292,34 @@ view with an actor selected (`?selected=carnation-revolution-1974&actor=salazar`
 six actors listed on the event, the notice, and 14 marks emphasised on the
 map.
 
+Verified in headless Chromium for **M6**, against the real dataset and
+`?fixtures=1`, driving a real pointer and real keys through the DevTools
+protocol — sixteen assertions, all passing:
+
+- `?from=1960&to=1975` draws 8 marks (3 of them clusters) for the 21 events
+  whose interval overlaps that window, and **not one mark from outside it**.
+- `?from=1960&to=1975&actor=salazar` draws 20 marks of which 11 carry
+  `faded`, and the set that carries it is **exactly** the set outside the
+  window — checked mark by mark against the topology, not counted by eye.
+- The band: dragging the near handle 60 px gives `?from=1954&to=1975`,
+  dragging the far one gives `?from=1954&to=1970`, and an arrow key on the
+  focused handle moves it one year. The URL follows each.
+- `?year=1975` becomes `?to=1975` in the address bar at load.
+- At full width the Europe lane's heaviest stack carries `+7`, and clicking
+  it lists **8** buttons in the panel. The stacks go 12 → 4 → 1 as the window
+  narrows to 1960–1980 and then 1974–1975.
+- `/`, "sal", Enter yields `?actor=salazar` and opens his card.
+- `?from=1910&to=1911` says "borders as of 1911" and draws 149 outlines; the
+  clamp past the last shard is unreachable with this dataset (its events stop
+  in 2011, inside CShapes's 1886–2019), so it was checked against the
+  fixtures, whose outlines stop in 1299: `?fixtures=1&from=1300&to=1400` says
+  "borders as of 1299, the latest the source covers", and
+  `?fixtures=1&from=1000&to=1050` says there are none before 1100 and draws
+  none.
+- `about.html`, `contribute.html` and `?fixtures=1` still render, and there
+  is no console error on any page (the only 404 is `/favicon.ico`, which
+  nothing asks for).
+
 ## Decided
 
 See "Decisions taken" at the end of `ARCHITECTURE.md`. Everything in the
@@ -259,7 +328,7 @@ contributions-open timing (deferred), `strength` on edges (left out).
 
 Taken by the building agents, all reversible, all listed under Deviations.
 
-## Decided on 2026-09-03 (owner), not yet built
+## Decided on 2026-09-03 (owner) — all four built in M6
 
 - **Split colony and successor state.** `british-india` and
   `dutch-east-indies` become their own actors; the pre-independence
@@ -275,6 +344,10 @@ Taken by the building agents, all reversible, all listed under Deviations.
   shows and why the dates differ. The imported outlines stay as the source
   has them.
 - **Builds run in the cloud only, after 18:00 Europe/Lisbon.**
+
+The first three are built (see M6 above). The fourth is a working
+arrangement, not a thing to build: `docs/run-protocol.md` is how the
+overnight runs and the hourly shepherd keep off each other's toes on `m0`.
 
 ## Next
 
@@ -719,6 +792,24 @@ discipline with the event view.
     time". The old sentence would have put the file's names in the
     dataset's mouth: CShapes calls entity 750 "India" throughout, colony and
     republic alike.
+50. **Search's "widen to include" can narrow the window to one year.** The
+    amendment defines it as the same action as "map at Y" — `to = Y;
+    from = min(from, Y)` — and that is what was built. The consequence is
+    worth seeing before it surprises anyone: choosing an event *earlier* than
+    the window's near end moves both ends onto its year, so the window
+    collapses to that one year rather than stretching back to reach it.
+    Selecting the 1974 revolution from `?from=1990&to=2000` gives
+    `?from=1974&to=1974`. Reversing it is one line in `windowAt`
+    (`src/util/window.js`) and would change every "map at Y" with it, which
+    is presumably why the amendment tied them together.
+51. **The band does not zoom the lanes, so a stack splits by losing
+    members.** Straight from the amendment ("the timeline does not zoom"):
+    the scale stays on the whole extent, only the events inside the window
+    stack with each other, and narrowing the band therefore takes members out
+    of a stack rather than pulling the bars apart. It is why the counts go
+    12 → 4 → 1 above. The events outside the band stack among themselves and
+    are drawn faded, so a narrow window does not leave fifty overlapping
+    grey bars in one lane.
 
 ## Dates to verify
 
