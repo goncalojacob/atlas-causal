@@ -227,6 +227,11 @@ kbd { font-family: var(--font-ui); font-size: 0.9em; padding: 0 0.3em; border: 1
 .graph .node.faded.selected, .graph .node.faded.on-path { opacity: 0.6; }
 .graph .node-label { fill: var(--ink); paint-order: stroke; stroke: var(--paper); stroke-width: 3; pointer-events: none; }
 .graph .node-label.selected { fill: var(--madder); font-weight: 600; }
+/* The key in about.html is drawn with the same rules as the lines it
+   explains, so the two cannot drift apart. */
+svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align: middle; cursor: default; }
+.edge-key { display: grid; grid-template-columns: auto 1fr; gap: 0.35rem 0.75rem; align-items: center; margin: 0.5rem 0; }
+.edge-key dt, .edge-key dd { margin: 0; }
 
 /* --- timeline -------------------------------------------------------- */
 

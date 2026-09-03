@@ -79,6 +79,44 @@
       tombstone that still resolves the old link, pointing at whatever supersedes it: a URL
       someone shared keeps working.</p>
 
+      <h3>The graph view</h3>
+      <p>The <strong>Graph</strong> button in the header replaces the map with a third drawing of
+      the same records: every event a node, every link a line, so the whole web can be seen at
+      once instead of one chain at a time. It is the same atlas — the same panel, the same
+      search, the same window of time, the same link in the address bar — drawn another way.</p>
+      <p><strong>Left to right is the year</strong>, on the same scale the timeline keeps, so the
+      arrow of time is visible and nothing is ever placed by simulated physics. Down the page,
+      one faint band per continent, and inside a band the events of a year are spread apart and
+      ordered so that the lines between them come out short and cross each other as little as
+      possible. The window of time is the shaded band across the picture: what falls outside it
+      fades rather than leaving, so the web is always all there. Drag to move, scroll to zoom,
+      double-click to go back; zoomed in, every node on screen is named.</p>
+      <p>Clicking a node opens it in the panel. Clicking a node that the open one leads to
+      <strong>walks the chain</strong> — the same step as the panel's follow button — and the
+      path you have walked is drawn in red in the graph, on the map and on the timeline alike.
+      When an event is open, the other branches that fed it, the ones you did not walk, are
+      drawn filled in: that is the convergence query, as a picture.</p>
+
+      <h3>The key to the lines</h3>
+      <p>The five types are told apart by the pattern and weight of the line, not by colour: the
+      atlas has one accent and it belongs to the path being followed. A disputed link is dashed
+      whatever its type, as it is everywhere else in the atlas, and its type then reads in the
+      weight of the line alone.</p>
+      <dl class="edge-key">
+        <dt><svg class="graph key-line" viewBox="0 0 62 12" aria-hidden="true"><line class="edge type-caused" x1="1" y1="6" x2="50" y2="6"/><polygon class="edge-head type-caused" points="60,6 50,3 50,9"/></svg></dt>
+        <dd><code>caused</code></dd>
+        <dt><svg class="graph key-line" viewBox="0 0 62 12" aria-hidden="true"><line class="edge type-enabled" x1="1" y1="6" x2="50" y2="6"/><polygon class="edge-head type-enabled" points="60,6 50,3 50,9"/></svg></dt>
+        <dd><code>enabled</code></dd>
+        <dt><svg class="graph key-line" viewBox="0 0 62 12" aria-hidden="true"><line class="edge type-reacted-to" x1="1" y1="6" x2="50" y2="6"/><polygon class="edge-head type-reacted-to" points="60,6 50,3 50,9"/></svg></dt>
+        <dd><code>reacted-to</code></dd>
+        <dt><svg class="graph key-line" viewBox="0 0 62 12" aria-hidden="true"><line class="edge type-precondition-of" x1="1" y1="6" x2="50" y2="6"/><polygon class="edge-head type-precondition-of" points="60,6 50,3 50,9"/></svg></dt>
+        <dd><code>precondition-of</code></dd>
+        <dt><svg class="graph key-line" viewBox="0 0 62 12" aria-hidden="true"><line class="edge type-inspired" x1="1" y1="6" x2="50" y2="6"/><polygon class="edge-head type-inspired" points="60,6 50,3 50,9"/></svg></dt>
+        <dd><code>inspired</code></dd>
+        <dt><svg class="graph key-line" viewBox="0 0 62 12" aria-hidden="true"><line class="edge type-caused disputed" x1="1" y1="6" x2="50" y2="6"/><polygon class="edge-head type-caused" points="60,6 50,3 50,9"/></svg></dt>
+        <dd>any type, <span class="badge disputed">disputed</span></dd>
+      </dl>
+
       <h3>Territories, and where they stop</h3>
       <p>The <strong>territories</strong> layer draws who held which ground in one year: the
       last year of the window, which the band on the timeline says out loud. It covers
