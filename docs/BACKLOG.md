@@ -30,8 +30,12 @@ the assistant. Scheduled work lives in `docs/*-brief.md`; the position in
   clustering idea along the time axis).
 - Close the roles vocabulary (62 in use; the manifest lists them).
 - A `container` field on sources (journal, edited volume).
-- Narratives in the contribution form, if writing them as JSON proves too
-  much for contributors.
+- Reordering the steps of a narrative in the contribution form: the rows are
+  added in the order of the walk and can be removed, but a step written in the
+  wrong place has to be removed and added again. (The form itself was built in
+  M12; this is the one thing it does not do.)
+- A narrative's own page in the list, so several accounts of the same period
+  can be read side by side rather than one at a time.
 - Presences' `capital` as a reference to a place record once places exist.
 - Natural Earth's continent assignment (Russia → Europe, Turkey → Asia,
   Greenland → Americas): keep, or redraw the lane polygons.

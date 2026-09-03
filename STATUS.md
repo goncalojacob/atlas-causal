@@ -6,21 +6,24 @@ session ends. `ARCHITECTURE.md` is the target; this file is the position.
 
 ## Last updated
 
-2026-09-03, after M11 (`docs/m11-brief.md`): actors are linked to each other.
-The **`relation` kind** — `regime-of`, `succeeded`, `member-of`, `part-of`,
-`led`, `allied-with`, six and closed — is the first link in this model that
-does not run between events, and it answers the open question this file has
-carried since M5: the Estado Novo is a regime *of* Portugal, and now a record
-says so. Twenty-eight relations were drafted under the same exception as the
-rest of the test dataset; every one of them is assistant-written and unread by
-a person.
+2026-09-03, after M12 (`docs/m12-brief.md`): the graph can be *told*. The
+**`narrative` kind** is a signed walk through records that are already here —
+an ordered list of steps, each naming one event or one edge and carrying the
+narrator's own paragraph on why that step follows — and it changes nothing it
+walks. Reading one is the first **mode** in this interface:
+`?narrative=<id>&step=<n>` is the whole of the URL, and the selection, the
+chain and the window are derived from the step, so the map, the graph and the
+timeline follow the walk without knowing what a narrative is. One example was
+drafted under the same exception as the rest of the test dataset — twelve
+steps from Luanda in 1961 to 25 November 1975 — and it is assistant-written
+and unread by a person, like everything else in `data/`.
 
 ## Phase
 
-**M0 to M11 built, plus the map usability work, on branch `m0`, pull
-request #1 open against `main`.** M12 is next in the order the run protocol
+**M0 to M12 built, plus the map usability work, on branch `m0`, pull
+request #1 open against `main`.** M13 is next in the order the run protocol
 sets. M8 changed no structure and wrote no revision, as its brief allows.
-`ARCHITECTURE.md` **revision 11** is the specification; its opening note says what changed and why (revision 4
+`ARCHITECTURE.md` **revision 12** is the specification; its opening note says what changed and why (revision 4
 added the `actor` kind; revision 5 added `cluster.js`, `weight` in the
 index and `prominence` as a reserved override; revision 6 added the
 `presence` kind, the CC BY-NC-SA licence and its one exception, and moved
@@ -33,12 +36,14 @@ level of detail along the time axis; revision 9 made places records, took
 card; revision 10 put each source's citers in the sources index, added the
 source card, the bibliography page and the horizon, and put `source` and
 `horizon` in the state; revision 11 added the `relation` kind, rule 19 and
-the relations on the actor card).
+the relations on the actor card; revision 12 added the `narrative` kind, rule
+20, and reading as a mode — `narrative` and `step` in the state, with the
+selection, the chain and the window derived from them).
 The M5 brief asks for revision 5; the map work had already taken that
 number.
 
 `data/` holds a **test dataset, 20th–21st century Portugal** — **80
-events, 91 edges, 59 actors, 28 relations, 25 places, 30 sources**, 1910 → 2025 — drafted by the
+events, 91 edges, 59 actors, 28 relations, 1 narrative, 25 places, 30 sources**, 1910 → 2025 — drafted by the
 assistant on 2026-09-02 and 2026-09-03 at the owner's request as an exception to the
 "written by a person" rule (recorded in `CLAUDE.md`). Every record says so
 in `authors`. It validates with **0 errors and 2 warnings**, both of them
@@ -285,6 +290,44 @@ warnings**, both `degree-zero` and both intended; `node --test`: 275 tests):
   people and what they led, five party memberships and two alliances the
   events already describe. **Nothing was verified against a source**; see
   "Dates to verify".
+
+- **M12.** **Narratives, and reading as a mode.** `schema/v1/narrative.json` —
+  the envelope with **sources required as for an edge**, a `title`, a
+  `summary`, `steps` (an ordered array of `{ ref, text }` where a ref is an
+  event id or an edge id) and an optional `window` to open on. **Rule 20** is
+  what only the whole walk can say: at least two steps, non-trivial prose in
+  the summary and at every step, no record named twice running, and a window
+  that opens before it closes. Rules 3, 6, 11 and 12 reach the kind — an
+  active narrative cannot walk a tombstone — and `refKind()` is what tells the
+  two ref shapes apart, refusing a relation id by name as `state.js` does.
+  The topology carries the titles, the summary, the authors and the refs and
+  **none of the prose**: the list of narratives is one fetch and a step's
+  words come with the record when that step is read.
+  **Reading is a mode, and it is the first one.** `?narrative=<id>&step=<n>`
+  is authoritative and is the whole of the URL; `selected`, `chain`, `from`
+  and `to` are derived from the step by `src/narrative.js` and never written
+  (deviation 76). `src/narrative-mode.js` wraps the store and is the only
+  place that derivation happens, so no view knows the state it reads was
+  computed: the map, the graph view and the timeline follow the walk as they
+  follow anything else. The chain drawn is **the longest contiguous run of
+  edges ending at the step** — a step that jumps simply breaks the run — and
+  the whole walk is ringed in dashed cobalt (deviation 79) so the reader sees
+  where it is going. Entering remembers what it replaced, in memory; leaving
+  puts it back; clicking a mark instead of pressing "next" leaves the
+  narrative and keeps what was clicked.
+  The panel has the list (**narratives** in the header) and the reading card:
+  the narrator's words, the record they are about drawn as the panel draws
+  that kind elsewhere, previous/next, the arrow keys and Escape, and the walk
+  itself with the current step marked. The event card and a link's argument
+  say what they are **part of** (deviation 78), and a narrative citing a
+  source is a citer on that source's card. The form has a narrative record
+  type with repeatable step rows (deviation 81), `new-record.mjs narrative
+  <id> --step …` scaffolds one, and the fixtures gained a synthetic narrative
+  whose four steps include a deliberate break in the chain.
+  **The dataset gained one narrative**, twelve steps, *How the colonial war
+  ended the regime* — assistant-drafted under the same exception as the rest
+  and unread by a person. It is an argument, not a record of facts, and the
+  right answer to it is a second narrative rather than a correction.
 
 ### The CShapes import
 
@@ -1092,7 +1135,8 @@ object. Every later card gets a file.
     reachable event outside the window is drawn (rather than hidden by the
     band) but still allowed to join a stack.
 
-71– are from M11 (`docs/m11-brief.md`).
+71–75 are from M11 (`docs/m11-brief.md`); 76– from M12
+(`docs/m12-brief.md`).
 
 71. **The graph view does not draw relations.** The brief allows the second
     layer "only if it stays readable — otherwise the card is enough. Record
@@ -1129,6 +1173,39 @@ object. Every later card gets a file.
     `allied-with` only for the two alliances events describe (NATO in 1949,
     the EEC in 1986). Nothing was written for the MFA's leadership or for
     the Junta, where responsibility is exactly what historians argue about.
+
+76. **While a narrative is open the URL carries `narrative` and `step` and
+    nothing else** — not only the derived selection, chain and window, which
+    the m12 amendment requires, but also `view` and `layers`, which are not
+    derived. The amendment's own acceptance test says the URL carries the two
+    parameters only, and splitting the difference would mean explaining why
+    some non-derived state survives a mode and some does not. The cost is
+    real and small: a link copied while reading in the graph view opens on the
+    map. Undoing it is one branch in `formatState`.
+77. **Leaving a narrative that was opened from a link restores nothing**,
+    because there was nothing to restore: the reader is left in the years the
+    walk ended in rather than thrown back to the whole span. Only a narrative
+    entered from inside the atlas remembers what it replaced, and that memory
+    is in `narrative-mode.js` and never in the URL.
+78. **A record is "part of" a narrative when a step names it *or* when a step
+    names an edge that touches it.** Without the second half the card for
+    `carnation-revolution-1974` would list nothing, because the walk reaches it
+    through the link from Spínola's book rather than by naming it: a narrative
+    that crosses an event through its links is passing through the event.
+79. **The walk's emphasis is a dashed ring, and every event on it keeps its own
+    mark.** The actor's emphasis is a cobalt fill and the path's is madder;
+    a third fill would be unreadable, and a walk swallowed by the stack of
+    thirty-seven marks in Lisbon is a walk the reader cannot see ahead of. So
+    the narrative's events are drawn alone, as the actor's and the path's are.
+80. **A step whose ref does not resolve is drawn as a gap**, not as an error
+    that stops the walk. Rule 3 refuses such a record, so this can only happen
+    to a hand-edited file; the reader still gets the prose and is told which id
+    is missing.
+81. **The contribution form was built rather than deferred**, which the brief
+    left open. The repeatable row it needed already existed for the actors of
+    an event — a reference and a bit of text — so a narrative's steps are the
+    same shape with a textarea and a list of events *and* links. The one thing
+    it does not do is reorder rows; that is in `docs/BACKLOG.md`.
 
 ## Dates to verify
 
@@ -1235,6 +1312,33 @@ not membership dates at all (deviation 73). The two alliances are
   `region` precision, not a village.
 - `european-economic-community` is closed at 1993 (Maastricht). Whether
   the record should instead be open and renamed is an editorial choice.
+
+Verified in headless Chromium for **M12**, against the real dataset, the
+fixtures and the form — every assertion passing:
+
+- **narratives** in the header lists the one narrative with its author line,
+  its step count and its summary; clicking the title opens
+  `?narrative=how-the-colonial-war-ended-the-regime&step=0`.
+- Stepping through all twelve changes `selected` at **every** step, in order
+  from `angola-war-begins-1961` to `25-november-1975`, and the URL stays
+  `?narrative=…&step=<n>` and nothing else throughout.
+- The chain grows 0, 1, 1, 2, 1, 2, 3, 4, 5, 6, 1, 2 — the two deliberate
+  jumps in the walk are the two places it falls back to one.
+- Twelve marks on the map and twelve bars on the timeline carry
+  `of-narrative` at every step; in the graph view, twelve nodes and four chain
+  edges at step 8.
+- The arrow keys step forward and back, Escape leaves; `?step=99` opens at
+  "step 12 of 12"; `?narrative=no-such-walk` says Not found.
+- Clicking a mark while reading leaves the narrative and keeps what was
+  clicked: `?from=1960&to=1976&selected=wiriyamu-massacre-1972`.
+- The card for `carnation-revolution-1974` lists the narrative under **Part
+  of**, though no step names that event — the walk reaches it through the link
+  from Spínola's book.
+- `contribute.html?fixtures=1` → **Add narrative** builds a two-step walk with
+  one source and reports "The bundle validates against the records already in
+  the atlas", with the submit control enabled.
+- No console error on the atlas, `?fixtures=1`, `about.html`,
+  `contribute.html` or `sources.html`.
 
 Verified in headless Chromium for **M11**, against the real dataset, the
 fixtures and the form — every assertion passing:
