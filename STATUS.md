@@ -6,22 +6,24 @@ session ends. `ARCHITECTURE.md` is the target; this file is the position.
 
 ## Last updated
 
-2026-09-03, after M6 (`docs/m6-brief.md`): the import's actor mapping as a
-validated data file with splits by date, the two date disagreements said in
-the events' summaries, a window of time in place of the year slider, stacking
-on the timeline, and search by name.
+2026-09-03, after M7 (`docs/m7-brief.md`): the graph view — every event a
+node, every edge a line, the year across and one band per region down, the
+five edge types drawn distinctly, convergence visible as a picture, behind a
+Map | Graph toggle and `?view=graph`.
 
 ## Phase
 
-**M0 to M6 built, plus the map usability work, on branch `m0`, pull
-request #1 open against `main`.** `ARCHITECTURE.md` **revision 7** is the
+**M0 to M7 built, plus the map usability work, on branch `m0`, pull
+request #1 open against `main`.** `ARCHITECTURE.md` **revision 8** is the
 specification; its opening note says what changed and why (revision 4
 added the `actor` kind; revision 5 added `cluster.js`, `weight` in the
 index and `prominence` as a reserved override; revision 6 added the
 `presence` kind, the CC BY-NC-SA licence and its one exception, and moved
 the last four reserved names in the tree into use; revision 7 made an
 import's actor mapping data, turned the year into a window, and moved
-`map/cluster.js` to `cluster.js` because the timeline stacks with it too).
+`map/cluster.js` to `cluster.js` because the timeline stacks with it too;
+revision 8 added the graph view, the `view` state and a reserved line for
+level of detail along the time axis).
 The M5 brief asks for revision 5; the map work had already taken that
 number.
 
@@ -31,7 +33,7 @@ assistant on 2026-09-02 at the owner's request as an exception to the
 "written by a person" rule (recorded in `CLAUDE.md`). Every record says so
 in `authors`. It validates with **0 errors and 0 warnings**, the index is
 built, and the atlas renders it at `http://localhost:8000/` without
-`?fixtures=1`. Eight edges are `disputed` with dissenting citations; two
+`?fixtures=1`. Ten edges are `disputed` with dissenting citations; two
 lanes derive by `nearest` (Goa, Macau — both correct); four events use a
 `region` override (the Azores, Recife, the Spanish border, Lisbon for the
 Spanish war). Every page still serves from `python3 -m http.server 8000`.
@@ -47,7 +49,7 @@ import" below. Which actor each of them belongs to is
 table in the tool.
 
 What exists and passes (`node tools/validate.mjs --index`: **0 errors, 0
-warnings**; `node --test`: 207 tests):
+warnings**; `node --test`: 214 tests):
 
 - **M0.** Licences (`LICENSE` MIT, `data/LICENSE` CC BY-SA 4.0,
   `data/geo/LICENSE` Natural Earth); `.nvmrc` = 22; `schema/common/` and
@@ -162,6 +164,30 @@ warnings**; `node --test`: 207 tests):
   diacritic-insensitive, over titles and every one of an actor's names) and
   `src/search-box.js` (`/` to focus, arrows, Enter, Escape, combobox and
   listbox roles, a live count).
+- **M7.** **The graph view.** `src/graph-view/layout.js` — pure: the topology,
+  the lane list and the data's extent in, the coordinates of every node and
+  every edge out. x is the year on the whole extent, the same scale the
+  timeline keeps; y is one band per region and, inside a band, a layered
+  barycentre pass over the events of each year, forwards then backwards.
+  Every sweep's arrangement is scored by how many edges cross and the best
+  wins, the plain id order included, so the pass can never leave the drawing
+  more tangled than doing nothing would; ties break by id then weight and
+  every list feeding a floating-point sum is sorted, so the picture does not
+  depend on the order the records arrive in. `tests/graph-layout.test.mjs`
+  asserts all of that, on a hand-built sample and on the whole atlas.
+  `src/graph-view/graph-view.js` draws it: the bands and the year axis once;
+  the five edge types by dash pattern and weight from tokens in `style.css`,
+  each with its own arrowhead, disputed dashed over its type; the window as a
+  shade with everything outside it faded, never hidden; the walked chain in
+  madder, an actor's events in cobalt, and the convergence branches — the
+  same list the panel shows — filled in, which is the one thing this view can
+  say that the other two cannot. Pan, zoom, double-click to reset; labels for
+  the heaviest nodes zoomed out and for every node on screen at zoom 2 and
+  over. `view` joins the state and the URL (`?view=graph`, default `map`);
+  the **Map | Graph** toggle in the header swaps the two in the same slot and
+  the layer switches, which belong to the map, go with it. `about.html` gains
+  a section on reading the graph and a key to the five line patterns, drawn
+  with the same CSS rules as the graph itself so the two cannot drift apart.
 
 ### The CShapes import
 
@@ -811,6 +837,49 @@ discipline with the event view.
     are drawn faded, so a narrow window does not leave fifty overlapping
     grey bars in one lane.
 
+52. **Ten disputed edges, not the brief's eight.** The amendment's numbers to
+    assert say "73 `.edge` elements, 8 of them with a `disputed` class". The
+    dataset has **ten** edges at `confidence: disputed`, counted from
+    `data/index/`, and the graph draws ten dashed lines. The verification
+    asserts ten; nothing was changed to make eight true.
+53. **The map's transform handling was not factored into `src/viewport.js`.**
+    The brief offers it as an option ("if you factor…"). The map's pan and
+    zoom are entangled with cluster spreading and the animated zoom into a
+    cluster, and pulling them out would have been a refactor of the map in a
+    milestone about the graph. The graph view has its own forty lines of the
+    same idiom, with the same pointer-capture and drag-guard comments
+    pointing at deviation 34. Sharing them is still worth doing, and is one
+    obvious cleanup for whoever next touches either file.
+54. **The initial fit to the window is capped, and skipped for a wide one.**
+    The amendment says the initial view fits the window. Filling the width
+    with a two-year window would mean a zoom of ten, and since the zoom is
+    uniform that would push the outer bands off the screen — and the bands
+    are the frame the picture is read against. So the first drawing zooms to
+    the window up to **2**, and not at all when the window is more than 60%
+    of the data, where the right first view of the whole graph is the whole
+    graph. `?from=1972&to=1976&view=graph` opens at 2; a plain `?view=graph`
+    opens at 1.
+55. **A click is resolved to the nearest node, not to the circle on top.**
+    Two adjacent years are about eight units apart on this dataset, so a
+    hit target of the map's size — or even a mark's own stroke — covered the
+    neighbouring node's centre and made it unclickable at rest: the first
+    attempt could select 25 November and then could not select the
+    constitution eight units to its right. The graph view therefore has no
+    hit circles at all. It reads the click into graph coordinates through the
+    SVG's own matrix and picks the nearest node centre within reach, which is
+    both simpler and exact. Marks were also brought down a little
+    (heaviest 6.5, selected 7.5) so that nothing a node draws reaches its
+    neighbour.
+56. **In the graph view, clicking a consequence of the open event walks the
+    chain.** On the map a click always selects afresh and clears the path.
+    The brief's numbers to assert require "the walked chain after clicking
+    two connected nodes", which cannot happen under the map's rule, and in a
+    picture of the whole web following an arrow with the eye and clicking its
+    head is the obvious gesture. So: if the clicked node is a direct
+    consequence of the one already open, the step is appended to the chain —
+    exactly what the panel's follow button does; otherwise the click selects
+    and clears, as on the map. Said in `about.html`.
+
 ## Dates to verify
 
 Everything below was written from memory and is where the owner's review
@@ -859,6 +928,37 @@ should look first. The record's own summary says so in the worst cases.
   `region` precision, not a village.
 - `european-economic-community` is closed at 1993 (Maastricht). Whether
   the record should instead be open and renamed is an editorial choice.
+
+Verified in headless Chromium for **M7**, against the real dataset and
+`?fixtures=1`, driving real pointer, wheel and drag events through the
+DevTools protocol — twenty-four assertions, all passing:
+
+- `?view=graph` draws **60** `.node` and **73** `.edge` elements, each edge
+  with its own arrowhead, **10** of them dashed as disputed, in **five**
+  bands, with the map hidden and the Graph button pressed.
+- The five types come out with five distinct line signatures (dash pattern
+  and weight), read off `getComputedStyle`, not off the source.
+- Sorting the nodes by their x sorts them by year, and every node sits in the
+  band of its region — checked node by node against the topology.
+- `?from=1960&to=1975&view=graph` fades **39** of the 60, and the set that
+  carries `faded` is **exactly** the set outside the window; the window band
+  is drawn.
+- Clicking 25 November selects it and the panel opens it; clicking the
+  constitution, which it leads to, appends the step —
+  `?view=graph&selected=constitution-1976&chain=25-november-1975--constitution-1976--enabled`
+  — and the chain is madder in the graph; switching to the map with the
+  toggle shows the same chain madder there, and the URL drops `view=`.
+- `?view=graph&selected=25-november-1975` highlights **16** converging nodes
+  and 16 converging edges, the same 16 the panel's convergence section counts.
+- `/`-less search from the graph view: "sal" and Enter gives
+  `?view=graph&actor=salazar` and emphasises his **14** events.
+- A plain `?view=graph` opens unzoomed; `?from=1972&to=1976&view=graph` opens
+  at zoom 2. Zoomed out, 14 labels; wheeled to 2.1, all **12** nodes on
+  screen are named. A drag pans and does not select the node it ends on.
+- `?fixtures=1&view=graph` draws the synthetic graph's 11 active events and 9
+  active edges (one event is a tombstone and one edge retracted).
+- No console error on the atlas, `about.html`, `contribute.html` or the
+  fixture graph (the only 404 is `/favicon.ico`, which nothing asks for).
 
 ## Where things live
 
