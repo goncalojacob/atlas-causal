@@ -2,14 +2,19 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import path from 'node:path';
-import { buildAdjacency, consequences, antecedents, ancestors, descendants, convergence, compareEdges } from '../src/graph.js';
-import { FIXTURE_DATA } from './helpers.mjs';
+import {
+  buildAdjacency, consequences, antecedents, ancestors, descendants, convergence,
+  compareEdges, shortestPaths, pathTo, reachableBy,
+} from '../src/graph.js';
+import { FIXTURE_DATA, ROOT } from './helpers.mjs';
 
-async function fixtureAdjacency() {
-  const manifest = JSON.parse(await readFile(path.join(FIXTURE_DATA, 'index', 'manifest.json'), 'utf8'));
-  const topology = JSON.parse(await readFile(path.join(FIXTURE_DATA, manifest.files.topology), 'utf8'));
+async function adjacencyIn(dataDir) {
+  const manifest = JSON.parse(await readFile(path.join(dataDir, 'index', 'manifest.json'), 'utf8'));
+  const topology = JSON.parse(await readFile(path.join(dataDir, manifest.files.topology), 'utf8'));
   return buildAdjacency(topology.events, topology.edges);
 }
+
+const fixtureAdjacency = () => adjacencyIn(FIXTURE_DATA);
 
 const ids = (list) => list.map((x) => x.event.id);
 
@@ -84,4 +89,90 @@ test('convergence results are ordered by type, confidence, then depth', async ()
   ]);
   const sorted = [...r].sort((x, y) => compareEdges(x.edge, y.edge) || x.depth - y.depth);
   assert.deepEqual(sorted, r);
+});
+
+// --- "what did this lead to by year X?" -----------------------------------
+
+test('the shortest path outward is by hops, and it is the same path twice', async () => {
+  const adj = await fixtureAdjacency();
+  const best = shortestPaths(adj, 'fixture-event-a');
+  assert.deepEqual([...best.keys()].sort(), ['fixture-event-a2', 'fixture-event-b', 'fixture-event-d', 'fixture-event-t']);
+  assert.equal(best.get('fixture-event-b').depth, 1);
+  assert.equal(best.get('fixture-event-d').depth, 2);
+  assert.equal(best.get('fixture-event-t').depth, 3);
+  assert.deepEqual(pathTo(best, 'fixture-event-t').map((e) => e.id), [
+    'fixture-event-a--fixture-event-b--caused',
+    'fixture-event-b--fixture-event-d--enabled',
+    'fixture-event-d--fixture-event-t--caused',
+  ]);
+  assert.deepEqual(pathTo(best, 'fixture-event-a'), [], 'the start is not reachable from itself');
+  assert.deepEqual(pathTo(best, 'fixture-event-h'), [], 'nor is what it does not reach');
+  // Deterministic: the tree does not depend on the order the walk met things.
+  const again = shortestPaths(adj, 'fixture-event-a');
+  assert.deepEqual([...again].map(([id, s]) => [id, s.depth, s.edge.id]), [...best].map(([id, s]) => [id, s.depth, s.edge.id]));
+  // A retracted edge is not a step: e reaches t only through c.
+  assert.equal(shortestPaths(adj, 'fixture-event-e').get('fixture-event-t').depth, 2);
+});
+
+test('the horizon cuts what is reported, ordered by path length then year', async () => {
+  const adj = await fixtureAdjacency();
+  const all = reachableBy(adj, 'fixture-event-a', 9999);
+  assert.deepEqual(all.map((r) => `${r.depth}:${r.event.id}`), [
+    '1:fixture-event-a2', '1:fixture-event-b', '2:fixture-event-d', '3:fixture-event-t',
+  ]);
+  assert.deepEqual(reachableBy(adj, 'fixture-event-a', 1240).map((r) => r.event.id), [
+    'fixture-event-a2', 'fixture-event-b', 'fixture-event-d',
+  ]);
+  assert.deepEqual(reachableBy(adj, 'fixture-event-a', 1219).map((r) => r.event.id), ['fixture-event-a2']);
+  assert.deepEqual(reachableBy(adj, 'fixture-event-a', 1199), []);
+  // Everything reachable is reported at a horizon past the data, and nothing
+  // else: the same set descendants() gives.
+  assert.deepEqual(new Set(all.map((r) => r.event.id)), descendants(adj, 'fixture-event-a'));
+  assert.deepEqual(reachableBy(adj, 'fixture-event-h', 9999), [], 'an event with no consequences leads nowhere');
+});
+
+test('each result carries the first step of its path and whether any step is disputed', async () => {
+  const adj = await fixtureAdjacency();
+  const byId = Object.fromEntries(reachableBy(adj, 'fixture-event-a', 9999).map((r) => [r.event.id, r]));
+  assert.equal(byId['fixture-event-t'].first.id, 'fixture-event-a--fixture-event-b--caused');
+  assert.equal(byId['fixture-event-t'].last.id, 'fixture-event-d--fixture-event-t--caused');
+  assert.equal(byId['fixture-event-t'].first.type, 'caused');
+  assert.equal(byId['fixture-event-t'].first.confidence, 'consensus');
+  assert.equal(byId['fixture-event-t'].disputed, false);
+  assert.equal(byId['fixture-event-t'].edges.length, 3);
+  // g → t is the only disputed edge, and g leads nowhere else.
+  const fromG = reachableBy(adj, 'fixture-event-g', 9999);
+  assert.deepEqual(fromG.map((r) => [r.event.id, r.disputed]), [['fixture-event-t', true]]);
+});
+
+// The brief's own example, on the records in the repository rather than on
+// fixtures: what 25 April had led to by 2011, and the path to the
+// constitution that the panel hands the reader as a chain.
+test('25 April, horizon 2011, on the repository dataset', async () => {
+  const adj = await adjacencyIn(path.join(ROOT, 'data'));
+  const list = reachableBy(adj, 'carnation-revolution-1974', 2011);
+  assert.equal(list.length, 23);
+  assert.equal(list.filter((r) => r.depth === 1).length, 7);
+  // Every one of them has begun by the horizon, and none of them is the
+  // event itself.
+  for (const r of list) {
+    assert.ok(r.edges.length === r.depth && r.edges[0] === r.first);
+    assert.notEqual(r.event.id, 'carnation-revolution-1974');
+  }
+  assert.ok(reachableBy(adj, 'carnation-revolution-1974', 2025).length > list.length, 'a later horizon reaches further');
+  const constitution = list.find((r) => r.event.id === 'constitution-1976');
+  assert.ok(constitution, 'the constitution is downstream of the revolution');
+  assert.deepEqual(constitution.edges.map((e) => e.id), [
+    'carnation-revolution-1974--constituent-assembly-election-1975--caused',
+    'constituent-assembly-election-1975--25-november-1975--enabled',
+    '25-november-1975--constitution-1976--enabled',
+  ]);
+  // The chain the panel sets is a walkable path: each step starts where the
+  // one before it ended.
+  let at = 'carnation-revolution-1974';
+  for (const edge of constitution.edges) {
+    assert.equal(edge.from, at);
+    at = edge.to;
+  }
+  assert.equal(at, 'constitution-1976');
 });

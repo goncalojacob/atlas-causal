@@ -1,7 +1,10 @@
-// Traversal over the topology: consequences, ancestors, convergence. Pure
-// functions over an adjacency object; nothing here knows the DOM or how
-// files are loaded. Results are ordered by edge type, then confidence, then
-// id, so the panel never depends on file order.
+// Traversal over the topology: consequences, ancestors, convergence, and
+// what an event led to by a given year. Pure functions over an adjacency
+// object; nothing here knows the DOM or how files are loaded. Results are
+// ordered by edge type, then confidence, then id, so the panel never depends
+// on file order.
+
+import { extent } from './util/dates.js';
 
 export const TYPE_ORDER = Object.freeze(['caused', 'enabled', 'reacted-to', 'precondition-of', 'inspired']);
 export const CONFIDENCE_ORDER = Object.freeze(['consensus', 'probable', 'disputed']);
@@ -74,6 +77,105 @@ export function ancestors(adj, id) {
 
 export function descendants(adj, id) {
   return reach(adj, id, 'out');
+}
+
+// The start of an event's interval, astronomical, which is the only
+// numbering years may be compared in (dates.js). A record whose interval
+// will not parse sorts last rather than throwing: the validator's business,
+// not the panel's.
+function startOf(event) {
+  try {
+    return extent(event.when).min;
+  } catch {
+    return Infinity;
+  }
+}
+
+// Breadth-first from `id` over active edges: Map<event id, { depth, edge,
+// from }>, the tree of shortest paths outward. Breadth-first is what makes
+// the first arrival the shortest one in hops; where two paths of the same
+// length arrive, the earlier predecessor wins, then the smaller id, then the
+// edge's own order — so the tree is one tree on every machine and the chain
+// a reader is handed is the same chain twice running.
+export function shortestPaths(adj, id) {
+  const best = new Map();
+  let frontier = [id];
+  let depth = 0;
+  while (frontier.length) {
+    const next = new Map();
+    depth += 1;
+    for (const current of frontier) {
+      for (const edge of adj.out.get(current) ?? []) {
+        const to = edge.to;
+        if (to === id || best.has(to)) continue;
+        const candidate = { depth, edge, from: current };
+        const standing = next.get(to);
+        if (!standing || better(candidate, standing)) next.set(to, candidate);
+      }
+    }
+    for (const [to, entry] of next) best.set(to, entry);
+    frontier = [...next.keys()].sort();
+  }
+  return best;
+
+  function better(a, b) {
+    const ya = startOf(adj.events.get(a.from));
+    const yb = startOf(adj.events.get(b.from));
+    if (ya !== yb) return ya < yb;
+    if (a.from !== b.from) return a.from < b.from;
+    return compareEdges(a.edge, b.edge) < 0;
+  }
+}
+
+// The edges of the shortest path from the event `shortestPaths` was called
+// on to `target`, in order. Empty when the target is that event itself or is
+// not reachable from it.
+export function pathTo(best, target) {
+  const edges = [];
+  let current = target;
+  while (best.has(current)) {
+    const step = best.get(current);
+    edges.push(step.edge);
+    current = step.from;
+  }
+  return edges.reverse();
+}
+
+// "What did this lead to by year X?" Every event reachable downstream from
+// `id` whose interval has begun by `horizon` — `start.min ≤ horizon`,
+// astronomical, the same lenient bound the arrow of time and the window use
+// — each with the shortest path to it, the first step of that path, and
+// whether any step of it is disputed.
+//
+// The horizon cuts the *answer*, not the walk: reachability is explored in
+// full and the year is applied to what it found. Under the arrow of time the
+// years along a path mostly rise, but a start written as { min, max } can
+// dip below its own antecedent's, and a walk that stopped at the first event
+// past the horizon would silently drop what lies beyond it.
+//
+// Ordered by path length, then by year, then by id, which is the order the
+// question is asked in: what did this lead to first, and how soon.
+export function reachableBy(adj, id, horizon) {
+  const best = shortestPaths(adj, id);
+  const results = [];
+  for (const [eventId, step] of best) {
+    const event = adj.events.get(eventId);
+    if (!event || event.status !== 'active') continue;
+    if (startOf(event) > horizon) continue;
+    const edges = pathTo(best, eventId);
+    results.push({
+      event,
+      depth: step.depth,
+      edges,
+      first: edges[0] ?? null,
+      last: edges[edges.length - 1] ?? null,
+      disputed: edges.some((e) => e.confidence === 'disputed'),
+    });
+  }
+  results.sort((a, b) => a.depth - b.depth
+    || startOf(a.event) - startOf(b.event)
+    || (a.event.id < b.event.id ? -1 : a.event.id > b.event.id ? 1 : 0));
+  return results;
 }
 
 // The convergence query. Given the target and the path the user walked
