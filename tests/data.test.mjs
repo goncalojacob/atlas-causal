@@ -72,3 +72,27 @@ test('createAtlas copes with an empty dataset', () => {
   assert.deepEqual(atlas.activeEvents, []);
   assert.equal(atlas.resolve('x'), null);
 });
+
+test('the window\'s far end is clamped to the years the outlines cover', async () => {
+  const atlas = await loadAtlas({ dataRoot: 'tests/fixtures/data/', fetchJson });
+  assert.deepEqual(atlas.presenceCoverage, { from: 1100, to: 1299 });
+  assert.equal(atlas.territoryYear(1250), 1250, 'inside the coverage, the year asked for');
+  assert.equal(atlas.territoryYear(1400), 1299, 'past it, the last year there is');
+  assert.equal(atlas.territoryYear(1000), 1000, 'before it, unchanged — and nothing is drawn');
+  assert.equal(atlas.territoryYear(null), null);
+  // presencesAt clamps the same way, so the map, the actor card and the
+  // band's marker cannot end up disagreeing about which year is drawn.
+  assert.deepEqual(atlas.presencesAt(1400).map((p) => p.id), atlas.presencesAt(1299).map((p) => p.id));
+  assert.deepEqual(atlas.presencesAt(1000), []);
+  assert.deepEqual(atlas.presencesAt(1250).map((p) => p.id), ['fixture-polity-four-1200', 'fixture-polity-three-1100']);
+});
+
+test('an atlas with no outlines at all has no coverage and clamps nothing', () => {
+  const atlas = createAtlas({
+    manifest: { schema: 1, regions: [], land: [], files: {} },
+    topology: { events: [], edges: [] },
+    sources: [],
+  });
+  assert.equal(atlas.presenceCoverage, null);
+  assert.equal(atlas.territoryYear(1400), 1400);
+});
