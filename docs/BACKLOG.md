@@ -44,3 +44,26 @@ the assistant. Scheduled work lives in `docs/*-brief.md`; the position in
   pipeline.
 - When contributions open to strangers; `CONTEXT.md` argues for after the
   1415–1580 slice exists.
+
+## Research
+
+- **A small language model that writes narratives on demand from the
+  atlas's own records, and nothing else** — no paid API, no dependence on a
+  vendor. Owner's idea, 3 September 2026. Constraints it must satisfy
+  before it can be more than an experiment, from `CONTEXT.md` and
+  `CLAUDE.md`: the model may only *explain and connect records that
+  exist* (events, edges with their explanations and sources, actors,
+  relations), never invent a link or a fact; every generated narrative is
+  marked as generated, keeps the subgraph it was built from (the record
+  ids), and can be checked claim by claim against those records; a
+  generated narrative never enters `data/narratives/` unless a person
+  reviews and signs it. Open questions: whether "on demand" means in the
+  browser (a quantised small model over WebGPU/WASM is a large optional
+  asset, not a runtime dependency in the sense of the rule, but it has to
+  be decided) or on the maintainer's machine in batch, as `CONTEXT.md`
+  already sketches; how to constrain generation to the retrieved records
+  (retrieval over the graph plus a verifier that rejects sentences that
+  cite nothing); and how the interface labels a generated walk so it is
+  never mistaken for a signed one. Start with the batch form and a
+  verifier; the browser form only if the batch form proves honest.
+
