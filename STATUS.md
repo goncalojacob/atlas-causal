@@ -757,3 +757,7 @@ should look first. The record's own summary says so in the worst cases.
 ## Uncommitted
 
 Nothing.
+
+## Milestones landed
+
+M6 started 2026-09-03T17:06:55Z by scheduled
