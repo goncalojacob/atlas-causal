@@ -1052,7 +1052,9 @@ twenty-five assertions, all passing:
 ## Where things live
 
 - Repo: `~/atlas-causal`, branch `m0`.
-- Pull request #1: https://github.com/goncalojacob/atlas-causal/pull/1
+- Pull request #1: https://github.com/goncalojacob/atlas-causal/pull/1 — its
+  body is now about 59 KB against GitHub's 64 KB limit, so the next milestone
+  to add a section should shorten the earlier ones rather than only append.
 - Architecture page (artifact, now **behind** the repo file — revision 2;
   `ARCHITECTURE.md` is the source of truth):
   https://claude.ai/code/artifact/b3940d66-ad98-4de9-9bfd-aff8c77e6f36
@@ -1086,3 +1088,4 @@ M7 started 2026-09-03T18:20:47Z by shepherd
 M7 done
 
 M9 started 2026-09-03T19:20:45Z by shepherd
+M9 done
