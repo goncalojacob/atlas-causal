@@ -212,6 +212,16 @@ export function createAtlas({ manifest, topology, sources, land = null, dataRoot
   };
 }
 
+// The sources index alone: the manifest names it, and it carries every
+// source with its citers and their count. The bibliography page needs
+// nothing else — not the topology, not the coastlines — and this is why the
+// counts are in the index rather than computed from records at render.
+export async function loadSources({ dataRoot = 'data/', fetchJson = defaultFetchJson } = {}) {
+  const manifest = await fetchJson(`${dataRoot}index/manifest.json`, { cache: 'no-store' });
+  const index = await fetchJson(`${dataRoot}${manifest.files.sources}`);
+  return { manifest, sources: index.sources ?? [] };
+}
+
 // landFile overrides the manifest's land list; the fixture manifest has
 // none, and the site still wants coastlines under the synthetic marks.
 // `false` loads no coastlines at all: the contribution form needs the

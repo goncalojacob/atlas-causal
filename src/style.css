@@ -384,6 +384,28 @@ svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align:
 .prose .badge.probable { background: var(--paper); }
 .prose .badge.disputed { border-style: dashed; border-color: var(--madder); color: var(--madder); }
 .prose .footnote { color: var(--ink-soft); font-size: 0.85rem; }
+.prose .muted { color: var(--ink-soft); }
+.prose .badge.status { border-color: var(--madder); color: var(--madder); }
+
+/* The bibliography on sources.html. A hanging indent, because that is what a
+   bibliography looks like and the eye finds the author by it. */
+.bib-summary { color: var(--ink-soft); font-size: 0.9rem; }
+.bib-list { list-style: none; padding: 0; margin: 1rem 0 0; }
+.bib-entry {
+  padding: 0.6rem 0; border-top: 1px solid var(--line);
+  padding-left: 1.5rem; text-indent: -1.5rem;
+}
+.bib-entry.inactive { opacity: 0.6; }
+.bib-citation { margin: 0; font-family: var(--font); }
+.bib-citation a { text-decoration: none; }
+.bib-citation a:hover { text-decoration: underline; }
+.bib-meta {
+  margin: 0.15rem 0 0; text-indent: 0; color: var(--ink-soft);
+  font-family: var(--font-ui); font-size: 0.85rem;
+}
+.bib-type { text-transform: uppercase; letter-spacing: 0.04em; font-size: 0.75rem; }
+.bib-count { color: var(--cobalt); }
+.bib-meta .unsafe-url { color: var(--madder); }
 
 /* --- the contribution form -------------------------------------------- */
 
