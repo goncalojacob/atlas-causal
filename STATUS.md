@@ -179,7 +179,9 @@ Agreement:
 - **East Timor's independence.** CShapes starts East Timor again
   2002-05-20; `east-timor-independence-2002` is 2002-05-20. Exact.
 
-Disagreement, for the owner to resolve:
+Disagreement. **Resolved in M6 the way the owner chose**: one sentence in
+each event's summary saying what the outline shows and why the dates differ.
+Neither outline was touched, and neither date was changed.
 
 - **East Timor, 1975–1976.** CShapes keeps East Timor a Portuguese colony
   until **1976-07-16**, and gives it to Indonesia from 1976-07-17 — the
@@ -325,18 +327,17 @@ Taken by the building agents, all reversible, all listed under Deviations.
    spreads them in rings — and say whether the merge distance, the ring
    and the labels are where you want them (see the fourth open question,
    and deviations 29–33 for why each is what it is).
-8. **Owner: the two date disagreements in "Portugal's territories" above.**
-   East Timor 1975-12-07 against CShapes's 1976-07-16, and Guinea-Bissau
-   1973-09-24 against CShapes's 1974-09-09. Neither side was edited. Decide
-   what the atlas should say and where — probably in the event's summary,
-   since the outline is an import and should stay as the source has it.
-9. **Owner: look at the territories layer and say whether it reads.** Open
+8. **Owner: look at the territories layer and say whether it reads.** Open
    `http://localhost:8000/?year=1911`, then drag the slider to 1975 and
    watch Africa. Then `?actor=portugal`. The four numbers that decide how
    it looks are at the top of `tools/import/` — `TOLERANCE` (0.1) and
    `MIN_AREA` in `cshapes.mjs`, `MIN_DETAIL` (6) in `simplify.mjs`, and the
    five period cuts in `SHARDS`. Changing any of them means re-running the
    import, which is one command and reproducible.
+9. **Owner: the `?year=1911` in item 8 is now `?from=1886&to=1911`.** The
+   slider went in M6 and the timeline's band replaced it; a legacy `?year=X`
+   link still opens, read as the window's far end. Item 8 reads the same
+   either way.
 10. **Not yet: publishing the templates.** `contribute.html` is deliberately
    not linked from the atlas or from `about.html`; both pages say
    contributions are not open. Opening them is the owner's call (see the
