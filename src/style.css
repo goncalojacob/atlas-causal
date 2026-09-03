@@ -218,7 +218,6 @@ kbd { font-family: var(--font-ui); font-size: 0.9em; padding: 0 0.3em; border: 1
 .graph .edge.faded, .graph .edge-head.faded { opacity: 0.16; }
 
 .graph .node { fill: var(--paper); stroke: var(--cobalt); stroke-width: 1.5; vector-effect: non-scaling-stroke; cursor: pointer; }
-.graph .hit { fill: transparent; stroke: none; cursor: pointer; }
 .graph .node:hover { fill: var(--cobalt-faint); }
 .graph .node.of-actor { fill: var(--cobalt-soft); stroke: var(--cobalt); stroke-width: 2.5; }
 .graph .node.converging { fill: var(--cobalt); stroke: var(--cobalt); }

@@ -23,9 +23,10 @@ import { layoutGraph } from './layout.js';
 // Sizes in SVG units at k = 1; divided by k when drawn, so a node keeps its
 // size on screen at any zoom, as the map's marks do.
 const MIN_RADIUS = 4;
-const MAX_RADIUS = 7;
-const HIT_RADIUS = 9;
-const SELECTED_RADIUS = 8;
+const MAX_RADIUS = 6.5;
+// How far from a node's centre a click still means that node.
+const HIT_RADIUS = 8;
+const SELECTED_RADIUS = 7.5;
 const HEAD_LENGTH = 7;
 const HEAD_WIDTH = 4.5;
 const LABEL_SIZE = 11;
@@ -36,8 +37,10 @@ const LABEL_ALL_ZOOM = 2;
 const LABEL_LIMIT = 14;
 const MIN_ZOOM = 1;
 const MAX_ZOOM = 8;
-// As far as the first drawing will zoom to a narrow window on its own.
+// As far as the first drawing will zoom to a narrow window on its own, and
+// the share of the data a window has to be under before it zooms at all.
 const FIT_ZOOM = 2;
+const FIT_SHARE = 0.6;
 
 function textNode(text, attrs) {
   const el = svg('text', attrs);
@@ -116,9 +119,18 @@ export function createGraphView(container, { atlas, state }) {
     x1: (laid.width - transform.x) / transform.k,
     y1: (laid.height - transform.y) / transform.k,
   });
+  // Client coordinates into the coordinates of the viewBox, through the
+  // SVG's own matrix: the element is letterboxed inside its box, so scaling
+  // by the bounding rectangle would be a few units out — enough to miss a
+  // node in a picture where a year is eight units wide.
   const toSvg = (e) => {
-    const rect = root.getBoundingClientRect();
-    return [((e.clientX - rect.left) / rect.width) * laid.width, ((e.clientY - rect.top) / rect.height) * laid.height];
+    const p = new DOMPoint(e.clientX, e.clientY).matrixTransform(root.getScreenCTM().inverse());
+    return [p.x, p.y];
+  };
+  // And from there into the graph's own coordinates, under the pan and zoom.
+  const toGraph = (e) => {
+    const [x, y] = toSvg(e);
+    return [(x - transform.x) / transform.k, (y - transform.y) / transform.k];
   };
 
   let drag = null;
@@ -155,12 +167,6 @@ export function createGraphView(container, { atlas, state }) {
     dragged = drag?.moved ?? false;
     drag = null;
   });
-  root.addEventListener('click', (e) => {
-    if (dragged) {
-      dragged = false;
-      e.stopPropagation();
-    }
-  }, true);
   root.addEventListener('wheel', (e) => {
     e.preventDefault();
     const [x, y] = toSvg(e);
@@ -177,10 +183,30 @@ export function createGraphView(container, { atlas, state }) {
     render(state.get());
   });
 
-  nodesGroup.addEventListener('click', (e) => {
-    const el = e.target.closest('[data-id]');
-    if (!el) return;
-    select(el.getAttribute('data-id'));
+  // Which node a click means is decided by distance, not by which circle
+  // happens to be on top. Two adjacent years are about eight units apart
+  // here, and a mark or its stroke covering a neighbour's centre would have
+  // made that neighbour unreachable at rest — the nearest centre inside the
+  // reach is always the one the reader aimed at.
+  root.addEventListener('click', (e) => {
+    // A drag that ends over a node must not select it; the flag is cleared
+    // here, once this click has been judged, so the next clean one selects.
+    if (dragged) {
+      dragged = false;
+      return;
+    }
+    const [x, y] = toGraph(e);
+    const reach = HIT_RADIUS / transform.k;
+    let best = null;
+    let distance = Infinity;
+    for (const node of laid.nodes) {
+      const d = Math.hypot(node.x - x, node.y - y);
+      if (d < distance || (d === distance && best && node.id < best.id)) {
+        best = node;
+        distance = d;
+      }
+    }
+    if (best && distance <= reach) select(best.id);
   });
 
   // Clicking on a consequence of the selected event walks the chain;
@@ -284,7 +310,6 @@ export function createGraphView(container, { atlas, state }) {
         isSelected ? 'selected' : '',
       );
       const title = `${node.event.title} — ${formatInterval(node.event.when)}${faded ? ' — outside the window' : ''}`;
-      nodesGroup.appendChild(svg('circle', { cx: node.x, cy: node.y, r: HIT_RADIUS / k, class: 'hit', 'data-id': node.id }));
       const mark = svg('circle', {
         cx: node.x, cy: node.y,
         r: (isSelected ? SELECTED_RADIUS : radiusFor(node.weight, weights)) / k,
@@ -298,34 +323,51 @@ export function createGraphView(container, { atlas, state }) {
     drawLabels(s, k);
   }
 
-  // Zoomed in, every node on screen is named; zoomed out, only the heaviest,
-  // and a label that would land on one already placed is skipped rather than
-  // nudged — the same rule the map's labels follow.
+  // Zoomed out, only the heaviest nodes on screen are named and a label
+  // that would land on one already placed is skipped, as on the map. Zoomed
+  // in, every node on screen is named: at sixty events that is the whole
+  // picture, and a name that disappeared because a neighbour got there
+  // first would be the wrong kind of tidy. A label that collides is moved
+  // to the other side of its node first, and only drawn over another if
+  // neither side is free.
   function drawLabels(s, k) {
     labelsGroup.replaceChildren();
     const box = view();
+    const all = k >= LABEL_ALL_ZOOM;
     const onScreen = laid.nodes.filter((n) => n.x >= box.x0 && n.x <= box.x1 && n.y >= box.y0 && n.y <= box.y1);
     const candidates = [...onScreen].sort(
       (a, b) => b.weight - a.weight || (a.id < b.id ? -1 : a.id > b.id ? 1 : 0),
     );
-    const limit = k >= LABEL_ALL_ZOOM ? candidates.length : LABEL_LIMIT;
     const placed = [];
-    for (const node of candidates) {
-      if (placed.length >= limit) break;
-      const text = shorten(node.event.title);
-      const x = node.x + (MAX_RADIUS + 3) / k;
-      const y = node.y;
-      const rect = {
-        x0: x,
-        x1: x + (text.length * LABEL_SIZE * 0.55) / k,
-        y0: y - (LABEL_SIZE * 0.7) / k,
-        y1: y + (LABEL_SIZE * 0.7) / k,
+    // Rough, and deliberately so: an em is about half the font size, and the
+    // box only has to be good enough to keep two labels off each other.
+    const boxFor = (node, text, right) => {
+      const width = (text.length * LABEL_SIZE * 0.55) / k;
+      const x = node.x + (right ? 1 : -1) * (MAX_RADIUS + 3) / k;
+      return {
+        x0: right ? x : x - width,
+        x1: right ? x + width : x,
+        y0: node.y - (LABEL_SIZE * 0.7) / k,
+        y1: node.y + (LABEL_SIZE * 0.7) / k,
+        x,
+        right,
       };
-      if (placed.some((p) => rect.x0 < p.x1 && p.x0 < rect.x1 && rect.y0 < p.y1 && p.y0 < rect.y1)) continue;
+    };
+    const free = (rect) => !placed.some((p) => rect.x0 < p.x1 && p.x0 < rect.x1 && rect.y0 < p.y1 && p.y0 < rect.y1);
+    for (const node of candidates) {
+      if (!all && placed.length >= LABEL_LIMIT) break;
+      const text = shorten(node.event.title);
+      let rect = boxFor(node, text, true);
+      if (!free(rect)) {
+        const other = boxFor(node, text, false);
+        if (free(other)) rect = other;
+        else if (!all) continue;
+      }
       placed.push(rect);
       labelsGroup.appendChild(textNode(text, {
-        x, y: y + (LABEL_SIZE * 0.35) / k,
+        x: rect.x, y: node.y + (LABEL_SIZE * 0.35) / k,
         class: classes('node-label', node.id === s.selected ? 'selected' : ''),
+        'text-anchor': rect.right ? 'start' : 'end',
         'font-size': LABEL_SIZE / k,
       }));
     }
@@ -340,9 +382,12 @@ export function createGraphView(container, { atlas, state }) {
     if (!timeWindow) return;
     const x0 = laid.scale.x(timeWindow.from);
     const x1 = laid.scale.x(timeWindow.to);
-    const wanted = laid.width / Math.max(1, Math.abs(x1 - x0));
-    if (wanted < 1.15) return;
-    const k = Math.min(FIT_ZOOM, wanted);
+    const span = Math.max(1, Math.abs(x1 - x0));
+    const whole = Math.abs(laid.scale.x(atlas.extent.max) - laid.scale.x(atlas.extent.min));
+    // A window that is most of the data is not worth zooming to: the right
+    // first view of the whole graph is the whole graph.
+    if (span > whole * FIT_SHARE) return;
+    const k = Math.min(FIT_ZOOM, laid.width / span);
     transform = { k, x: laid.width / 2 - ((x0 + x1) / 2) * k, y: laid.height / 2 - (laid.height / 2) * k };
     applyTransform();
   };
