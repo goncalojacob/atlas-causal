@@ -1474,11 +1474,14 @@ fixtures and the three static pages — sixteen assertions, all passing:
 
 - Repo: `~/atlas-causal`, branch `m0`.
 - Pull request #1: https://github.com/goncalojacob/atlas-causal/pull/1 — its
-  body is about **54 KB** against GitHub's 64 KB limit. Each milestone that
+  body is about **56 KB** against GitHub's 64 KB limit. Each milestone that
   adds a section pays for it by cutting an older one to a summary that points
-  here: M8 cut M5's, M11 cut M7's. There is room for roughly one more section
-  before the next run has to cut again — M6's and M5's summaries are the
-  shortest, so M9's or M10's is the one to cut next.
+  here: M8 cut M5's, M11 cut M7's, M12 cut M9's. **M13 has to cut one too**,
+  and M10's is the longest of the ones still written out in full. Editing the
+  body from a run means sending the whole 56 KB back, which is more text than
+  a session can retype faithfully: M12 rebuilt it from the copy the read
+  returned and sent it with `curl` and `$GITHUB_TOKEN` rather than through the
+  GitHub tool, which takes the body as an argument.
 - Architecture page (artifact, now **behind** the repo file — revision 2;
   `ARCHITECTURE.md` is the source of truth):
   https://claude.ai/code/artifact/b3940d66-ad98-4de9-9bfd-aff8c77e6f36
@@ -1524,3 +1527,4 @@ M11 started 2026-09-03T22:21:09Z by shepherd
 M11 done
 
 M12 started 2026-09-03T23:21:25Z by shepherd
+M12 done
