@@ -6,18 +6,21 @@ session ends. `ARCHITECTURE.md` is the target; this file is the position.
 
 ## Last updated
 
-2026-09-03, after M10 (`docs/m10-brief.md`): a source is a card and a page —
-`?source=<id>` lists everything that cites it, `sources.html` is the
-bibliography — and an event can be asked what it led to by a given year, with
-the answer walkable as a chain. No record was written and no historical claim
-was made; the whole milestone is code, index and prose about the interface.
+2026-09-03, after M11 (`docs/m11-brief.md`): actors are linked to each other.
+The **`relation` kind** — `regime-of`, `succeeded`, `member-of`, `part-of`,
+`led`, `allied-with`, six and closed — is the first link in this model that
+does not run between events, and it answers the open question this file has
+carried since M5: the Estado Novo is a regime *of* Portugal, and now a record
+says so. Twenty-eight relations were drafted under the same exception as the
+rest of the test dataset; every one of them is assistant-written and unread by
+a person.
 
 ## Phase
 
-**M0 to M10 built, plus the map usability work, on branch `m0`, pull
-request #1 open against `main`.** M11 is next in the order the run protocol
+**M0 to M11 built, plus the map usability work, on branch `m0`, pull
+request #1 open against `main`.** M12 is next in the order the run protocol
 sets. M8 changed no structure and wrote no revision, as its brief allows.
-`ARCHITECTURE.md` **revision 10** is the specification; its opening note says what changed and why (revision 4
+`ARCHITECTURE.md` **revision 11** is the specification; its opening note says what changed and why (revision 4
 added the `actor` kind; revision 5 added `cluster.js`, `weight` in the
 index and `prominence` as a reserved override; revision 6 added the
 `presence` kind, the CC BY-NC-SA licence and its one exception, and moved
@@ -29,12 +32,13 @@ level of detail along the time axis; revision 9 made places records, took
 `where` off events, added rule 18 and split the panel into one file per
 card; revision 10 put each source's citers in the sources index, added the
 source card, the bibliography page and the horizon, and put `source` and
-`horizon` in the state).
+`horizon` in the state; revision 11 added the `relation` kind, rule 19 and
+the relations on the actor card).
 The M5 brief asks for revision 5; the map work had already taken that
 number.
 
 `data/` holds a **test dataset, 20th–21st century Portugal** — **80
-events, 91 edges, 59 actors, 25 places, 30 sources**, 1910 → 2025 — drafted by the
+events, 91 edges, 59 actors, 28 relations, 25 places, 30 sources**, 1910 → 2025 — drafted by the
 assistant on 2026-09-02 and 2026-09-03 at the owner's request as an exception to the
 "written by a person" rule (recorded in `CLAUDE.md`). Every record says so
 in `authors`. It validates with **0 errors and 2 warnings**, both of them
@@ -58,7 +62,7 @@ import" below. Which actor each of them belongs to is
 table in the tool.
 
 What exists and passes (`node tools/validate.mjs --index`: **0 errors, 2
-warnings**, both `degree-zero` and both intended; `node --test`: 230 tests):
+warnings**, both `degree-zero` and both intended; `node --test`: 275 tests):
 
 - **M0.** Licences (`LICENSE` MIT, `data/LICENSE` CC BY-SA 4.0,
   `data/geo/LICENSE` Natural Earth); `.nvmrc` = 22; `schema/common/` and
@@ -250,6 +254,37 @@ warnings**, both `degree-zero` and both intended; `node --test`: 230 tests):
   code: M6's clamp is right, and `?to=2025` was verified to draw the 2019
   outlines under the marker "borders as of 2019, the latest the source
   covers".
+
+- **M11.** **Relations between actors.** `schema/v1/relation.json` — the
+  envelope with **sources required as for an edge**, `from` and `to` (actor
+  ids), a `type` from a closed six, `when`, and an optional short `note`. The
+  id is derived, `from--to--type`, which is an edge id's shape with another
+  vocabulary in the third part, so **`RELATION_ID` sits beside `EDGE_ID`** and
+  the schema, `rules.js`, `bundle-to-files.mjs` and `state.js` each pick the
+  pattern by kind — in `state.js` the walked chain now refuses a relation id
+  by name, and its edge pattern names the five types instead of matching any
+  hyphenated word. **Rule 19** is what only the pair can say: two different
+  actors, the actor types each relation type allows (the table in the brief's
+  amendment, and now in `ARCHITECTURE.md`), a succession between two of a
+  kind, and no cycle in `regime-of` or in `succeeded`, **each on its own**.
+  Rules 2, 3, 6, 11, 12 and 15 reach the kind, an actor standing in a relation
+  is no longer `actor-unused`, and a relation dated entirely outside either
+  actor's own dates is the new warning `relation-outside-actor-when` (the
+  dataset raises none). The topology carries relations whole, the `note`
+  included, and `data.js` builds adjacency by actor with each relation listed
+  from **both ends**. The **actor card** groups them by type and direction:
+  Portugal's card says "Regimes" and lists four, the Estado Novo's says
+  "Regime of Portugal, 1933–1974" and then what belonged to it, who led it and
+  who it was allied with; `allied-with` is symmetric and is the one type whose
+  two directions are one group. A relation citing a source is a citer on that
+  source's card, drawn as its two actors with the type between them. The form
+  has a relation record type, `new-record.mjs relation <from> <to> <type>`
+  scaffolds one, and the fixtures gained three synthetic relations.
+  **The dataset gained 28 relations**: the four regimes of `portugal`, the two
+  successions the import map splits, three bodies inside a regime, twelve
+  people and what they led, five party memberships and two alliances the
+  events already describe. **Nothing was verified against a source**; see
+  "Dates to verify".
 
 ### The CShapes import
 
@@ -475,11 +510,14 @@ overnight runs and the hourly shepherd keep off each other's toes on `m0`.
    reviewed the record and signs it. Read in this order: the
    twelve `disputed` edges (a wrong dispute is the worst failure this project
    can have), then the roles where responsibility is contested — Wiriyamu,
-   the 1961 Luanda attacks, Cabral's killing — then the dates.
+   the 1961 Luanda attacks, Cabral's killing — then the **relations of M11**,
+   whose leadership dates are all from memory and whose five `member-of`
+   intervals are not membership dates at all (deviation 73) — then the dates.
 5. **Owner: write the first records** of the 1415→ period.
    `node tools/new-record.mjs event <id> --title … --start … --place <place id>`
    — or `--new-place <id> --label … --lon … --lat …`, which writes the place
-   and the event together — and `edge`, `source`, `actor`, `place`. Fill in
+   and the event together — and `edge`, `source`, `actor`, `place`,
+   `relation`. Fill in
    the text, then `node tools/validate.mjs` and `node tools/build-index.mjs`;
    open `http://localhost:8000/`. Set `region` **on the place** when the
    derived lane is wrong for everywhere that happens there (strait cities,
@@ -529,14 +567,14 @@ overnight runs and the hourly shepherd keep off each other's toes on `m0`.
   an entry in `data/imports/cshapes-actors.json` and a re-run of the import;
   which of them are two things and which are one is a historical judgement
   and the agent does not make it.
-- **"Regime of state" is a relation this project does not have.**
-  `portugal` is a state actor created by the import; `first-portuguese-republic`,
-  `estado-novo` and `third-portuguese-republic` are regimes *of* that state,
-  written by hand. Nothing links them, on purpose: the honest link is an
-  edge between actors, and edges in this model run between events only.
-  That is a real extension — a second edge kind, or an `actorEdges` file —
-  and faking it now (an alias, a `names` entry, a shared id) would put a
-  claim in the data that no schema checks. Left undone and named here.
+- **Answered in M11: "regime of state" is a relation, and the project has
+  one now.** `data/relations/`, `schema/v1/relation.json` and rule 19: a
+  dated, typed link between two actors, with six closed types and its own id
+  pattern. `estado-novo--portugal--regime-of` is a record, and Portugal's card
+  lists its four regimes. What is still open is the **vocabulary**: six types
+  covered everything the test dataset implied, and the next period will say
+  whether it needs a seventh. A missing type is to be reported here, never
+  replaced by a generic one.
 - **Two CShapes features carry `status: "N/A"`** — Morocco, 1904-01-02 to
   1904-10-02 and 1904-10-03 to 1912-11-26, both with `owner` equal to their
   own code. The import reads them as independent, which is what `owner`
@@ -1054,6 +1092,44 @@ object. Every later card gets a file.
     reachable event outside the window is drawn (rather than hidden by the
     band) but still allowed to join a stack.
 
+71– are from M11 (`docs/m11-brief.md`).
+
+71. **The graph view does not draw relations.** The brief allows the second
+    layer "only if it stays readable — otherwise the card is enough. Record
+    the choice." It is not drawn, and the reason is the view's own rule: x is
+    the year. A relation has an interval, but the actors at its ends are not
+    nodes there and putting them in would mean deciding where an actor sits
+    on a scale of events. The card says it better, in both directions, with
+    the dates and the note. Reversing this is a layer in `graph-view.js` and
+    nothing in the data.
+72. **The topology carries a relation's `note`.** Text stays out of the index
+    everywhere else — an event's summary, an actor's summary — and this is the
+    exception, for the same reason a presence carries its `capital`
+    (deviation 43): a relation has no card of its own, so an actor's card
+    would otherwise fetch one record per relation to show a line of text. The
+    schema caps the note at 200 characters, and the card escapes it like
+    everything else from `data/`.
+73. **A `member-of` interval is the span the atlas's own records show, not a
+    membership record.** Nobody in this run could find out when António Costa
+    joined the Socialist Party. Rather than invent a year or leave the type
+    unused, the five `member-of` relations start at the first year the atlas
+    shows the person acting for the party and say so in the `note`; the end is
+    open because nothing here says they left. Replacing them with real dates
+    is one edit each.
+74. **The two successions cite the CShapes dataset record.** The dates are the
+    boundaries the import map draws inside codes 750 and 850, which is where
+    they were decided in M6, and the only honest source for them is the
+    dataset that draws them. A *citation* of `cshapes-2-0` is not a copy out
+    of an NC record: nothing from a presence, an imported actor or an outline
+    was carried into these CC BY-SA records, and rule 12 still holds on all
+    of them.
+75. **No relation was written for a type the dataset could not support.** All
+    six types are used, but only where an event record or an actor record
+    already said the thing: `led` where the dataset gives the role,
+    `allied-with` only for the two alliances events describe (NATO in 1949,
+    the EEC in 1986). Nothing was written for the MFA's leadership or for
+    the Junta, where responsibility is exactly what historians argue about.
+
 ## Dates to verify
 
 Everything below was written from memory and is where the owner's review
@@ -1127,6 +1203,20 @@ years want checking, and neither has an ISBN or a DOI in the record. The other
 seventeen are official documents cited by repository and description, with no
 number: see deviation 61.
 
+**The relations of M11, every date of them.** The four `regime-of` intervals
+and the three `part-of` ones follow the actor records they join, so they are
+only as good as those. The rest were written from memory and are listed here
+in full: `salazar` led the Estado Novo **1932–1968**; `marcelo-caetano`
+**1968–1974**; `amilcar-cabral` led the PAIGC **1956–1973**;
+`eduardo-mondlane` FRELIMO **1962–1969**; `mario-soares` the PS **1973–1986**;
+`alvaro-cunhal` the PCP **1961–1992**; `cavaco-silva` the PSD **1985–1995**;
+`marcelo-rebelo-de-sousa` **1996–1999**; `pedro-passos-coelho`
+**2010–2018**; `antonio-costa` the PS **2014–2024**; `luis-montenegro` the PSD
+**2022–**; `andre-ventura` Chega **2019–**. The five `member-of` intervals are
+not membership dates at all (deviation 73). The two alliances are
+`estado-novo`–NATO **1949–1974** and `third-portuguese-republic`–EEC
+**1986–1993**, the second ending where the EEC actor record does.
+
 **Actors, dates and places:**
 
 - Birth and death years for `gomes-da-costa` (1863–1929),
@@ -1145,6 +1235,28 @@ number: see deviation 61.
   `region` precision, not a village.
 - `european-economic-community` is closed at 1993 (Maastricht). Whether
   the record should instead be open and renamed is an editorial choice.
+
+Verified in headless Chromium for **M11**, against the real dataset, the
+fixtures and the form — every assertion passing:
+
+- `?actor=portugal` opens the card with **Relations 4**, one group headed
+  **Regimes**, and the four regimes in order with their dates and notes:
+  First Republic 1910–1926, Military Dictatorship 1926–1933, Estado Novo
+  1933–1974, Third Republic 1974–ongoing. Each is a link.
+- `?actor=salazar` shows **Led — Estado Novo, 1932–1968**, with the note that
+  says why it starts a year before the regime does.
+- Clicking the Estado Novo from Portugal's card gives `?actor=estado-novo`,
+  whose relations read **Regime of · Parts of it · Led by · Allied with** —
+  the same records, from the other end.
+- `?actor=british-india` says **Succeeded by** and `?actor=indonesia`
+  **Successor of**, which is the same pair of records read both ways.
+- `contribute.html?fixtures=1` → **Add relation** gives the six fields (From,
+  To, Type, Start year, End year, Note), the type list is exactly the closed
+  six, and filling it in produces
+  `fixture-actor-one--fixture-actor-two--member-of` in the bundle preview with
+  no error on the entry.
+- No console error on the atlas, `?fixtures=1`, `about.html`,
+  `contribute.html` or `sources.html`.
 
 Verified in headless Chromium for **M7**, against the real dataset and
 `?fixtures=1`, driving real pointer, wheel and drag events through the
