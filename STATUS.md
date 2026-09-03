@@ -931,7 +931,7 @@ should look first. The record's own summary says so in the worst cases.
 
 Verified in headless Chromium for **M7**, against the real dataset and
 `?fixtures=1`, driving real pointer, wheel and drag events through the
-DevTools protocol — twenty-four assertions, all passing:
+DevTools protocol — twenty-five assertions, all passing:
 
 - `?view=graph` draws **60** `.node` and **73** `.edge` elements, each edge
   with its own arrowhead, **10** of them dashed as disputed, in **five**
@@ -949,7 +949,9 @@ DevTools protocol — twenty-four assertions, all passing:
   — and the chain is madder in the graph; switching to the map with the
   toggle shows the same chain madder there, and the URL drops `view=`.
 - `?view=graph&selected=25-november-1975` highlights **16** converging nodes
-  and 16 converging edges, the same 16 the panel's convergence section counts.
+  and 16 converging edges, the same 16 the panel's convergence section counts;
+  25 April (`carnation-revolution-1974`) highlights **11**, likewise matching
+  the panel.
 - `/`-less search from the graph view: "sal" and Enter gives
   `?view=graph&actor=salazar` and emphasises his **14** events.
 - A plain `?view=graph` opens unzoomed; `?from=1972&to=1976&view=graph` opens
@@ -994,3 +996,4 @@ M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
 
 M7 started 2026-09-03T18:20:47Z by shepherd
+M7 done
