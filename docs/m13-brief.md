@@ -73,3 +73,37 @@ file and the index; signing one removes it from the queue and the record
 carries the reviewer; without the server the same action yields a
 correction bundle; tests green; the next `ARCHITECTURE.md` revision;
 `STATUS.md` with the literal line `M13 done`; an "M13" section on PR #1.
+
+## Amendments after review (3 September, afternoon) — these override the body
+
+- **Protocol.** Gate on `M12 done`; follow `docs/run-protocol.md`; `M13
+  done` as its own line.
+- **`tools/serve.mjs` hardening, all required and tested**: listen on
+  `127.0.0.1` only (never `0.0.0.0`); reject any request whose `Host` is
+  not `localhost:<port>` or `127.0.0.1:<port>`, and any whose `Origin`
+  header, if present, differs from that; **no CORS headers and no
+  `OPTIONS` handling** (a page in another tab must not be able to write);
+  require `Content-Type: application/json`; `kind` must be a key of
+  `KIND_DIRS` and `id` must pass the kind's id pattern **before any path
+  is built**, exactly as `bundle-to-files.mjs` does; write only
+  `data/<dir>/<id>.json`.
+- **Editing without wiping the envelope.** Add `valuesFromRecord(kind,
+  record)` to `src/contribute/bundle.js` beside `buildRecord`, tested as a
+  round-trip on every record in `data/`; a save is the original record
+  with the edited fields replaced — `created`, `aliases`, `supersededBy`,
+  `authors` untouched except by Sign.
+- **Saves are bundles.** The write endpoint accepts a bundle of records
+  validated as a unit (one record is a bundle of one), so Retract on an
+  event with active edges can retract the edges in the same save, and the
+  dashboard says which records a retraction will touch before it does.
+- **Attribution amendment**, to record in `ARCHITECTURE.md`: the local
+  server is the one path where `authors` and `revised` are written without
+  the Action, because the reviewer is the maintainer at their own machine;
+  the correction-bundle path keeps the Action's attribution.
+- **If M12 deferred the narrative form**, add `FIELDS.narrative` to
+  `bundle.js`, not to the dashboard.
+- **Done when — numbers**: the queue lists every record whose `authors`
+  contains the draft marker (assert the count against the validator's);
+  a save round-trips a record unchanged when nothing was edited (byte
+  identical); a request with a foreign `Origin` or a non-loopback `Host`
+  is refused with 403 in a test.

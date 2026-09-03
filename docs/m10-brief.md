@@ -44,3 +44,19 @@ bibliography lists every source; on 25 April with horizon 2011 the panel
 lists the downstream events and choosing one walks the chain; tests
 green; `ARCHITECTURE.md`'s next revision; `STATUS.md` with the literal
 line `M10 done`; an "M10" section on PR #1.
+
+## Amendments after review (3 September, afternoon) — these override the body
+
+- **Protocol.** Gate on `M8 done`; follow `docs/run-protocol.md`; `M10
+  done` as its own line.
+- **Card precedence** (from M9): `selected` > `source` > `place` > `actor`;
+  choosing a source clears `selected` and `chain`, keeps `actor`.
+- **`horizon`** is written to the URL only when set explicitly; the
+  default (the window's `to`) is never written. Reachability uses
+  `start.min ≤ horizon`, astronomical, via `extent()`.
+- **Done when — numbers**: clicking a citation on any event opens
+  `?source=<id>` whose card lists every citer (assert the count equals the
+  sources index's citation count); on `?selected=carnation-revolution-1974&horizon=2011`
+  the panel lists every downstream event (assert the count against
+  `graph.js` in a test) and choosing `constitution-1976` sets a chain of
+  the shortest path's edges.

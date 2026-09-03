@@ -63,3 +63,32 @@ Lisbon events; the form can pick and create places; tests cover the
 migration (on fixtures), the rule, the derivation; `ARCHITECTURE.md`'s
 next revision with its dated note; `STATUS.md` with the literal line
 `M9 done`; an "M9" section on PR #1.
+
+## Amendments after review (3 September, afternoon) — these override the body
+
+- **Protocol and order.** M9 now runs **before M8**: gate on `M7 done`;
+  follow `docs/run-protocol.md`; `M9 done` as its own line.
+- **Three commits, in this order, each green**: (1) the place kind, its
+  rule, the topology, the form and the tools, with events accepting
+  *either* `where` *or* `place` for the duration of the migration;
+  (2) `tools/migrate-places.mjs` run on `data/` **and on
+  `tests/fixtures/data/`**, one commit — the tool is idempotent (events
+  that already carry `place` are skipped) so a cut-off between (2) and (3)
+  resumes cleanly; (3) `where` removed from `schema/v1/event.json`.
+- **Only events migrate.** Actors keep `where`; presences keep `capital`.
+- **Place ids**: slug of the label's first comma-separated segment
+  (`Lajes, Terceira` → `lajes`; `Flanders, near Laventie` → `flanders`),
+  with a printed mapping to hand-fix and the full label kept in `names`.
+- **Everything that reads `event.where` changes**: `map.js#eventBounds`,
+  `panel.js#clusterHtml`, `layers/events.js`, `new-record.mjs event
+  --lon --lat` (becomes `--place <id>` or `--new-place …`),
+  `bundle-to-files.mjs`, the region derivation in `build-index.mjs`, the
+  fixtures. Grep for `.where` before declaring done.
+- **Split `panel.js` first**: into `src/panel/{panel,event,actor,cluster}.js`
+  before adding the place card; every later card gets a file.
+- **Card precedence**, to be shared by later runs: `selected` > `source` >
+  `place` > `actor`; choosing a place clears `selected` and `chain` and
+  keeps `actor`.
+- **Done when — numbers**: `data/places/` holds one record per distinct
+  location (expect ~20); `?place=lisbon` lists 37 events; the map at
+  `k = 1` still draws the same marks as before the migration.

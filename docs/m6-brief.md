@@ -144,3 +144,51 @@ headless Chromium against the real data and `?fixtures=1`; tests green;
 `ARCHITECTURE.md` revision 7 with its dated note; `STATUS.md` updated,
 including a line "M6 done" the next run looks for; an "M6" section on PR
 #1.
+
+## Amendments after review (3 September, afternoon) — these override the body
+
+- **Protocol.** Follow `docs/run-protocol.md`: claim line first, push after
+  every commit, `M6 done` as its own line under `## Milestones landed`.
+- **Part 1, obtaining the source.** ETH and CRAN are unreachable from the
+  sandbox. The file comes from the CRAN mirror on GitHub, which the git
+  proxy serves: `git clone --depth 1 https://github.com/cran/cshapes`, file
+  `inst/extdata/cshapes_2_gw.topojson.xz`, `xz -dc` it, sha256
+  `9f73468bb56aae6a6b22bb5e56bf5f3e013b9ee17c641aba37db97bcb5c1c3bc`. Applying a
+  split means **re-running the import**; never edit presence records by
+  hand. If the source cannot be obtained, build the mapping file, the
+  schema, the validator rules and `--report` against the tests' synthetic
+  collection, leave `data/presences/` untouched, and record "blocked:
+  source unavailable" in `STATUS.md`.
+- **Split dates must fall on a CShapes feature boundary** (the day after a
+  feature's `end`); the tool errors otherwise and names the nearest
+  boundaries. CShapes's own boundary for 750 is 1947-08-15 and for 850 is
+  whatever the file says (check; the body's 1949-12-27 may not be one).
+- **Where the file is read.** Add `readImportMaps()` to `tools/lib/read.mjs`;
+  the file is validated by `tools/validate.mjs` only, not by the browser;
+  `src/validate/schemas.js` keeps its list for the form, with a comment
+  that `v1/import-map.json` is tool-side (adjust `tests/schemas.test.mjs`
+  accordingly). The `--report` goes to `docs/cshapes-entities.md`, with one
+  line in `STATUS.md` pointing at it — not into `STATUS.md` itself.
+- **Part 3, the timeline does not zoom.** The lanes stay on the full data
+  extent as today; the window is a shaded band drawn over them with its
+  two handles. Narrowing the window filters the map and fades the
+  timeline outside the band; it does not rescale the lanes. (Zooming to
+  the window would leave a handle no room to widen.)
+- **Window semantics.** An event is in the window when `start.min ≤ to`
+  and (`end` is null or `end.max ≥ from`), astronomical, via `extent()`.
+- **State.** `from` and `to` may be `null`, meaning "the data's bound",
+  resolved by the views (never by `state.js`, which stays data-free).
+  `?year=X` parses to `{ from: null, to: X }`. Every "map at Y" action in
+  the panel means `to = Y; from = min(from, Y)`. Search's "widen to
+  include" and the timeline click do the same.
+- **Territories past the last shard.** When `to` is later than the last
+  presence shard's end (2019), draw the last shard's year and make the band
+  marker say "borders as of 2019, the latest the source covers"; `presencesAt`
+  and the actor card use the same clamp so they agree with the layer.
+- **Done when — numbers to assert** in headless Chromium against the real
+  data: `?from=1960&to=1975` draws only the events in that window as
+  ordinary marks and every other drawn mark carries a `faded` class; the
+  band's two handles move with pointer drag and arrow keys and the URL
+  follows; at full width the Lisbon lane shows a stacked bar with a `+n`
+  badge and clicking it lists n+1 buttons in the panel; `/`, "sal", Enter
+  yields `?actor=salazar`; `?year=1975` becomes `?to=1975`.

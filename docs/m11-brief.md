@@ -56,3 +56,26 @@ unsure.
 Relations validate; the Portugal card lists its four regimes; Salazar's
 card says what he led; tests green; the next `ARCHITECTURE.md` revision;
 `STATUS.md` with the literal line `M11 done`; an "M11" section on PR #1.
+
+## Amendments after review (3 September, afternoon) — these override the body
+
+- **Protocol.** Gate on `M10 done`; follow `docs/run-protocol.md`; `M11
+  done` as its own line.
+- **Id pattern.** `from--to--type` with a relation type is not an edge id:
+  add a `RELATION_ID` pattern and use it in the schema, `rules.js`,
+  `state.js` and `bundle-to-files.mjs` — all four; grep for `EDGE_ID` to
+  find them.
+- **Acyclicity is per type** (`regime-of` alone, `succeeded` alone).
+- **Which actor types may stand where**:
+
+  | type | from | to |
+  |---|---|---|
+  | regime-of | polity | polity |
+  | succeeded | polity or institution | same kind as from |
+  | member-of | person | institution or polity |
+  | part-of | institution | institution or polity |
+  | led | person | institution or polity |
+  | allied-with | polity or institution | polity or institution |
+
+- **Done when — numbers**: `?actor=portugal` lists four regimes;
+  `?actor=salazar` lists what he led; the validator is clean.

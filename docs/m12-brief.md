@@ -57,3 +57,21 @@ the event cards show "Part of"; the validator is clean; tests cover the
 rules and the step navigation logic; the next `ARCHITECTURE.md` revision
 (narrative moves from ○ to ●); `STATUS.md` with the literal line
 `M12 done`; an "M12" section on PR #1.
+
+## Amendments after review (3 September, afternoon) — these override the body
+
+- **Protocol.** Gate on `M11 done`; follow `docs/run-protocol.md`; `M12
+  done` as its own line.
+- **Reading mode is a mode.** `?narrative=<id>&step=<n>` is authoritative;
+  `selected` and `chain` are derived from it and **not written to the
+  URL** while reading. The chain shown is the longest contiguous run of
+  edges ending at the current step (steps not joined by an edge simply
+  break it). A step that references an edge selects the edge's `to` and
+  adds the edge. Entering reading mode remembers the state it replaced, in
+  memory; leaving restores it.
+- **The example narrative** is drafted under the dated exception in
+  `CLAUDE.md`, which since this afternoon names narratives explicitly.
+- **Done when — numbers**: the example has ≥ 10 steps and every `ref`
+  resolves; stepping through it in headless Chromium changes `selected`
+  at every step and the URL carries `narrative` and `step` only; the
+  `carnation-revolution-1974` card lists the narrative under "Part of".

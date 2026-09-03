@@ -73,3 +73,18 @@ views; selecting 25 April shows its convergence branches highlighted;
 narrowing the window fades the rest; search works from the graph view;
 tests green; verified in headless Chromium; `STATUS.md` updated with a line
 "M7 done"; an "M7" section on PR #1.
+
+## Amendments after review (3 September, afternoon) — these override the body
+
+- **Protocol.** Follow `docs/run-protocol.md`: gate on `M6 done`, claim
+  line first, push after every commit, `M7 done` as its own line.
+- **x is the year on the full data extent**, the scale the timeline keeps
+  after M6 (it does not zoom to the window); the window is a shaded band
+  across the graph and nodes and edges outside it are faded, never hidden.
+  The initial view fits the window; pan and zoom from there.
+- **Determinism.** Barycentre ties break by id, then by weight; the layout
+  test asserts identical output on two runs and on shuffled input.
+- **Done when — numbers to assert**: `?view=graph` renders 60 `.node` and
+  73 `.edge` elements, 8 of them with a `disputed` class; the walked chain
+  after clicking two connected nodes carries the madder class in both
+  views; `?from=1960&to=1975&view=graph` fades every node outside.

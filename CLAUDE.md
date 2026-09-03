@@ -34,6 +34,9 @@ These are not preferences. Ask before breaking any of them.
   unreviewed)", "github": null }]`. They exist to exercise the model and the
   interface, must be reviewed or rewritten by a person before the site goes
   public, and are not a precedent for any other period.
+  Extended by the owner on 2026-09-03 to the same period's places, relations
+  between actors and one example narrative drafted on 3–4 September 2026, all
+  carrying the same draft marker and queued for the review dashboard.
 
 ## Commands
 

@@ -109,3 +109,23 @@ in; every date not verified is listed; `STATUS.md` updated with counts,
 "Dates to verify", and the literal line `M8 done`; an "M8" section on PR
 #1; verified in headless Chromium that the timeline reaches 2025 and the
 map handles a window ending after 2019.
+
+## Amendments after review (3 September, afternoon) — these override the body
+
+- **Protocol and order.** M8 now runs **after M9**: gate on `M9 done`;
+  follow `docs/run-protocol.md`; `M8 done` as its own line. Events are
+  written with `place: "<id>"`, not `where`; create the places that do not
+  exist yet (Saint-Denis, Pedrógão Grande, the central-Portugal fire zone)
+  as place records in the same style as the migrated ones.
+- **You cannot reach the web.** Do not create `web` sources: an `accessed`
+  date on a page nobody opened would be a false statement in the one field
+  that exists to say the page was seen. Cite the books where they reach;
+  for official publications use `type: "primary"` with `repository`
+  ("Diário da República", "Comissão Nacional de Eleições", "Banco de
+  Portugal", "Instituto Nacional de Estatística") and `reference` (the
+  series and number, or "official results, legislative election of
+  2025-05-18") where you know it. **List every date** of this batch under
+  "Dates to verify" — do not claim to have verified any.
+- **Part 5**: the clamp to the last shard is already M6's job; verify it
+  and assert: `?to=2025` draws the 2019 outlines with the marker text
+  "borders as of 2019" visible.
