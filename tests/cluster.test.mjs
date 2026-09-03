@@ -7,7 +7,7 @@ import assert from 'node:assert/strict';
 import {
   clusterPoints, spreadPositions, byWeightThenId,
   MERGE_DISTANCE, COINCIDENT_EPSILON, DEEPEST_ZOOM, SPREAD_RADIUS, SPREAD_GAP,
-} from '../src/map/cluster.js';
+} from '../src/cluster.js';
 
 const point = (id, x, y, weight = 0) => ({ id, x, y, weight });
 
@@ -173,4 +173,22 @@ test('a spread gives every member its own place, far enough apart to click', () 
     assert.ok(many.filter((p) => p.ring === ring).length > 1, `ring ${ring} has more than one member`);
   }
   assert.equal(spreadPositions(4, { radius: 10, gap: 1 })[0].x.toFixed(6), '0.000000');
+});
+
+// The timeline uses the same function in one dimension: a lane is the same
+// problem with y held at zero and no zoom to split anything.
+test('one dimension: bars whose middles are close merge, and the heaviest represents', () => {
+  const bar = (id, x, weight) => ({ id, x, y: 0, weight });
+  const clusters = clusterPoints(
+    [bar('a', 100, 1), bar('b', 105, 9), bar('c', 108, 2), bar('d', 300, 1)],
+    { k: 1, distance: 11, epsilon: 0 },
+  );
+  assert.equal(clusters.length, 2);
+  assert.equal(clusters[0].representative.id, 'b', 'the heaviest seeds and represents');
+  assert.deepEqual(clusters[0].members.map((m) => m.id).sort(), ['a', 'b', 'c']);
+  assert.deepEqual(clusters[1].members.map((m) => m.id), ['d']);
+  // Narrowing the window takes members out of the lane, and what is left
+  // stands on its own: this is how a stack splits when the scale cannot move.
+  const fewer = clusterPoints([bar('b', 105, 9), bar('d', 300, 1)], { k: 1, distance: 11, epsilon: 0 });
+  assert.deepEqual(fewer.map((c) => c.count), [1, 1]);
 });

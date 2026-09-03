@@ -1,6 +1,12 @@
-// Event marks and the lines of the chain being followed. Renders only the
-// events that have happened by the current year and have a place; a
-// process with no honest point is timeline-only, not a dot in the ocean.
+// Event marks and the lines of the chain being followed. Renders the events
+// whose interval overlaps the window and that have a place; a process with no
+// honest point is timeline-only, not a dot in the ocean.
+//
+// What the reader is working with is drawn whether or not it is in the
+// window — the walked chain, the selected event, the events of the selected
+// actor — because a chain that vanished as the band moved would be worse
+// than a chain that greys. Those are given a `faded` class instead, and
+// nothing else outside the window is drawn at all.
 //
 // Marks that overlap are drawn as one, with a count of what is underneath.
 // Thirty-seven of the sixty records in the test dataset sit on the same
@@ -13,7 +19,8 @@
 
 import { svg, svgTitle } from '../../util/dom.js';
 import { extent } from '../../util/dates.js';
-import { clusterPoints, spreadPositions, SPREAD_RADIUS, SPREAD_GAP } from '../cluster.js';
+import { overlaps } from '../../util/window.js';
+import { clusterPoints, spreadPositions, SPREAD_RADIUS, SPREAD_GAP } from '../../cluster.js';
 
 // Sizes in SVG units at k = 1; every one of them is divided by k when drawn,
 // so a mark, a badge and a label keep their size on screen at any zoom.
@@ -39,10 +46,11 @@ function shorten(text, chars = LABEL_CHARS) {
   return text.length > chars ? `${text.slice(0, chars - 1).trimEnd()}…` : text;
 }
 
-function markClasses(event, { selected, pathIds, actorIds }) {
+function markClasses(event, { selected, pathIds, actorIds, faded = false }) {
   // The madder accent belongs to the walked path; an actor's events are
   // emphasised in cobalt so the two never say the same thing.
   return ['mark',
+    faded ? 'faded' : '',
     actorIds && actorIds.has(event.id) ? 'of-actor' : '',
     pathIds.has(event.id) ? 'on-path' : '',
     event.id === selected ? 'selected' : '',
@@ -69,13 +77,13 @@ export function createEventsLayer(group, projection, { onSelect, onCluster = nul
 
   const place = (event) => (event.where ? projection.project([event.where.lon, event.where.lat]) : null);
 
-  // year: astronomical, or null for "everything". k: current zoom factor.
-  // view: the rectangle of projected space on screen, for deciding which
-  // clusters are worth labelling. spread: the key of a coincident cluster
-  // the reader has opened, or null.
+  // window: { from, to } astronomical, or null for "everything". k: current
+  // zoom factor. view: the rectangle of projected space on screen, for
+  // deciding which clusters are worth labelling. spread: the key of a
+  // coincident cluster the reader has opened, or null.
   return {
     render({
-      events, year, selected, pathIds, actorIds = null, chainEdges, consequenceEdges,
+      events, window: timeWindow = null, selected, pathIds, actorIds = null, chainEdges, consequenceEdges,
       eventById, k = 1, view = null, spread = null,
     }) {
       group.replaceChildren();
@@ -104,19 +112,21 @@ export function createEventsLayer(group, projection, { onSelect, onCluster = nul
         return mark;
       };
 
-      const visible = [];
-      for (const event of events) {
-        const p = place(event);
-        if (!p) continue;
-        if (year !== null && extent(event.when).min > year) continue;
-        visible.push({ event, x: p[0], y: p[1] });
-      }
-
-      // Everything the reader is currently working with keeps its own mark.
+      // Everything the reader is currently working with keeps its own mark,
+      // in the window or out of it.
       const drawnAlone = new Set([...chainEdges, ...consequenceEdges].flatMap((e) => [e.from, e.to]));
       if (selected) drawnAlone.add(selected);
       for (const id of pathIds) drawnAlone.add(id);
       if (actorIds) for (const id of actorIds) drawnAlone.add(id);
+
+      const visible = [];
+      for (const event of events) {
+        const p = place(event);
+        if (!p) continue;
+        const inWindow = overlaps(event.when, timeWindow);
+        if (!inWindow && !drawnAlone.has(event.id)) continue;
+        visible.push({ event, x: p[0], y: p[1], faded: !inWindow });
+      }
 
       const alone = visible.filter((v) => drawnAlone.has(v.event.id));
       const clusters = clusterPoints(
@@ -156,11 +166,12 @@ export function createEventsLayer(group, projection, { onSelect, onCluster = nul
       // The events the reader is working with, on top of the clusters. The
       // selected one goes last of all.
       let selectedMark = null;
-      for (const { event, x, y } of alone) {
+      for (const { event, x, y, faded } of alone) {
         const isSelected = event.id === selected;
         const mark = appendMark(group, {
-          x, y, radius: isSelected ? SELECTED_RADIUS : MARK_RADIUS, title: event.title, id: event.id,
-          classes: markClasses(event, { selected, pathIds, actorIds }),
+          x, y, radius: isSelected ? SELECTED_RADIUS : MARK_RADIUS,
+          title: faded ? `${event.title} — outside the window` : event.title, id: event.id,
+          classes: markClasses(event, { selected, pathIds, actorIds, faded }),
         });
         if (isSelected) selectedMark = mark;
       }

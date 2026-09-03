@@ -1,6 +1,11 @@
-// Territories: who held which ground in the year on the slider. Drawn under
-// the events and over the coastlines, so a mark still sits on top of the
-// state it happened in.
+// Territories: who held which ground in the last year of the window. Drawn
+// under the events and over the coastlines, so a mark still sits on top of
+// the state it happened in.
+//
+// One year and not the window, because a border is a state of affairs and
+// not an interval: drawing every outline a fifteen-year window touches would
+// stack four Angolas on each other. The far end is the year the reader has
+// dragged to, and the timeline's band says which year that is.
 //
 // Honesty in the drawing, not a legend of forty hues. Everything is cobalt
 // on white: an independent state is a thin line and a very faint fill; a
@@ -57,9 +62,11 @@ export function createPresencesLayer(group, projection, { onSelect, atlas }) {
   const nameOf = (id) => atlas.actors.get(id)?.name ?? null;
 
   return {
-    // year: astronomical. actorId: the selected actor, whose territory and
-    // whose dependencies' territory are filled in.
-    render({ year, actorId = null, onReady = null }) {
+    // year: astronomical, the window's far end; clamped by the atlas to the
+    // last year the outlines cover. actorId: the selected actor, whose
+    // territory and whose dependencies' territory are filled in.
+    render({ year: requested, actorId = null, onReady = null }) {
+      const year = atlas.territoryYear(requested);
       if (year === null) {
         group.replaceChildren();
         signature = null;

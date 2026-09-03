@@ -1,7 +1,11 @@
 // Grouping the marks that overlap, so that a stack of events at one point
-// can be seen, counted and reached. Pure and free of the DOM: projected
-// points and the current zoom factor in, clusters out, so node --test can
-// hold it to its promises.
+// can be seen, counted and reached. Pure and free of the DOM: points and the
+// current zoom factor in, clusters out, so node --test can hold it to its
+// promises.
+//
+// It lives at the top of src/ and not under map/ because the timeline stacks
+// its bars with the same function, in one dimension: a lane is the same
+// problem with y held at zero.
 //
 // Why at render time and not at index time: what overlaps depends on the
 // projection and on how far the user has zoomed in, and the index knows

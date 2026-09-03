@@ -1,13 +1,17 @@
-// The SVG map: scaffold, pan and zoom, year slider. Layers draw; this file
-// only places them and forwards state.
+// The SVG map: scaffold, pan and zoom. Layers draw; this file only places
+// them and forwards state.
+//
+// There is no year control here any more. Time is a window now, and the
+// timeline's band is the one place it is set — a slider that moved only one
+// end of it would have been a second, quieter answer to the same question.
 
-import { svg, html } from '../util/dom.js';
+import { svg } from '../util/dom.js';
 import { fitBounds, WORLD } from './projection.js';
 import { createLandLayer } from './layers/land.js';
 import { createPresencesLayer } from './layers/presences.js';
 import { createEventsLayer } from './layers/events.js';
-import { DEEPEST_ZOOM } from './cluster.js';
-import { fromAstronomical, toAstronomical, formatYear } from '../util/dates.js';
+import { DEEPEST_ZOOM } from '../cluster.js';
+import { resolveWindow } from '../util/window.js';
 
 const WIDTH = 960;
 const HEIGHT = 540;
@@ -190,29 +194,15 @@ export function createMap(container, { atlas, state, onCluster = null }) {
     render(state.get());
   });
 
-  // The slider works on the astronomical axis (continuous integers); the
-  // state keeps historians' years.
-  const controls = html('div', { class: 'map-controls' });
-  const slider = html('input', { type: 'range', class: 'year-slider', 'aria-label': 'Year' });
-  const label = html('output', { class: 'year-label' });
-  if (atlas.extent) {
-    slider.min = String(atlas.extent.min);
-    slider.max = String(atlas.extent.max);
-    slider.step = '1';
-  } else {
-    slider.disabled = true;
-  }
-  slider.addEventListener('input', () => state.set({ year: fromAstronomical(Number(slider.value)) }));
-  controls.append(slider, label);
-  container.append(root, controls);
+  container.append(root);
 
   function render(s) {
     landGroup.style.display = s.layers.includes('land') ? '' : 'none';
     presencesGroup.style.display = s.layers.includes('territories') ? '' : 'none';
     eventsGroup.style.display = s.layers.includes('events') ? '' : 'none';
-    const year = s.year === null ? null : toAstronomical(s.year);
-    if (year !== null && !slider.disabled) slider.value = String(year);
-    label.textContent = s.year === null ? '' : formatYear(s.year);
+    // Events by overlap with the window, territories by its far end: a
+    // border is a state of affairs at a moment, an event is an interval.
+    const timeWindow = resolveWindow(s, atlas.extent);
 
     const chainEdges = s.chain.map((id) => atlas.edges.get(id)).filter(Boolean);
     const pathIds = new Set(chainEdges.flatMap((e) => [e.from, e.to]));
@@ -227,11 +217,11 @@ export function createMap(container, { atlas, state, onCluster = null }) {
     // Drawn before the marks so the marks are appended over them, and only
     // when the layer is on: an off layer costs no fetch.
     if (s.layers.includes('territories')) {
-      presences.render({ year, actorId: actor && actor.kind === 'actor' ? actor.id : null, onReady: () => render(state.get()) });
+      presences.render({ year: timeWindow ? timeWindow.to : null, actorId: actor && actor.kind === 'actor' ? actor.id : null, onReady: () => render(state.get()) });
     }
     const result = events.render({
       events: atlas.activeEvents,
-      year,
+      window: timeWindow,
       selected: s.selected,
       pathIds,
       actorIds,
@@ -242,7 +232,7 @@ export function createMap(container, { atlas, state, onCluster = null }) {
       view: view(),
       spread,
     });
-    // A spread survives a re-render — the year slider, a selection — for as
+    // A spread survives a re-render — the band moving, a selection — for as
     // long as its cluster is still there to be spread.
     if (spread && !result.spread) spread = null;
   }

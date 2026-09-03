@@ -14,6 +14,7 @@
 import { esc, safeUrl } from './util/esc.js';
 import { consequences, convergence } from './graph.js';
 import { formatInterval, formatYear, bounds, defaultCalendar } from './util/dates.js';
+import { windowAt } from './util/window.js';
 
 const TYPE_LABEL = Object.freeze({
   caused: 'caused',
@@ -90,7 +91,10 @@ export function createPanel(container, { atlas, state, fixtures = false }) {
         state.set({ chain: [] });
         break;
       case 'year':
-        state.set({ year: Number(el.dataset.year) });
+        // "Map at 1911" puts the window's far end there and takes the near
+        // end with it only if it was later, so the year asked for is always
+        // inside the window that results.
+        state.set(windowAt(s, Number(el.dataset.year)));
         break;
       default:
     }
@@ -303,17 +307,23 @@ export function createPanel(container, { atlas, state, fixtures = false }) {
     const members = cluster.members
       .map((m) => m.event)
       .sort((a, b) => startYear(a) - startYear(b) || (a.id < b.id ? -1 : a.id > b.id ? 1 : 0));
-    const place = cluster.representative.event.where?.label ?? null;
+    const onTimeline = cluster.on === 'timeline';
+    // On the map a stack is a place; on the timeline it is a stretch of one
+    // lane, and saying "here" of a lane means the lane's own name.
+    const where = onTimeline ? cluster.lane?.label ?? null : cluster.representative.event.where?.label ?? null;
+    const hint = onTimeline
+      ? 'The timeline draws these as one bar at this width. Narrow the window and they separate.'
+      : cluster.coincident
+        ? 'These records share the same coordinates, so no amount of zooming separates them. The map spreads them in a ring instead.'
+        : 'The map draws these as one mark at this zoom. Zoom in and they separate.';
     const rows = members.map((event) => `<li class="actor-row">
       <span class="when">${esc(formatYear(startYear(event)))}</span>
       <button type="button" class="link" data-action="select" data-id="${esc(event.id)}">${esc(event.title)}</button>
       <span class="muted">${esc(laneLabel(event.region))}</span>
     </li>`);
     return `<section class="cluster-list">
-      <h2>${members.length} event${members.length === 1 ? '' : 's'} here${place ? ` <span class="count">${esc(place)}</span>` : ''}</h2>
-      <p class="hint">${cluster.coincident
-        ? 'These records share the same coordinates, so no amount of zooming separates them. The map spreads them in a ring instead.'
-        : 'The map draws these as one mark at this zoom. Zoom in and they separate.'}</p>
+      <h2>${members.length} event${members.length === 1 ? '' : 's'} here${where ? ` <span class="count">${esc(where)}</span>` : ''}</h2>
+      <p class="hint">${hint}</p>
       <ul class="actor-rows">${rows.join('')}</ul>
     </section>`;
   }

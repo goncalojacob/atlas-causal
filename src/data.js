@@ -116,6 +116,16 @@ export function createAtlas({ manifest, topology, sources, land = null, dataRoot
   for (const list of dependenciesOf.values()) list.sort(byStart);
 
   const presenceShards = manifest.presenceShards ?? [];
+  // The years the outlines actually cover. Past the far end there is nothing
+  // to draw — CShapes stops in 2019 — and drawing nothing would say the world
+  // had no borders, so the last shard's year is held instead and the
+  // interface says which year it is showing. Everything that answers "who
+  // held this ground" goes through the same clamp so the map, the actor card
+  // and the band's marker cannot disagree.
+  const presenceCoverage = presenceShards.length
+    ? { from: presenceShards[0].from, to: presenceShards[presenceShards.length - 1].to }
+    : null;
+  const territoryYear = (year) => (year === null || presenceCoverage === null ? year : Math.min(year, presenceCoverage.to));
   const shardForYear = (year) => presenceShards.find((s) => year >= s.from && year <= s.to) ?? null;
 
   const geometry = new Map();
@@ -137,7 +147,8 @@ export function createAtlas({ manifest, topology, sources, land = null, dataRoot
   // Who held territory in a given year. One presence per actor: two of an
   // actor's presences can share the year a border moved in, because a year
   // is the finest bound the model has, and the later one is the one to draw.
-  function presencesAt(year) {
+  function presencesAt(requested) {
+    const year = territoryYear(requested);
     const chosen = new Map();
     for (const presence of activePresences) {
       const { min, max } = intervalExtent(presence.when);
@@ -155,6 +166,8 @@ export function createAtlas({ manifest, topology, sources, land = null, dataRoot
     presencesByActor,
     dependenciesOf,
     presenceShards,
+    presenceCoverage,
+    territoryYear,
     shardForYear,
     loadedGeometry,
     loadGeometry,

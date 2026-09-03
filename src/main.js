@@ -7,7 +7,6 @@ import { createState, parseState } from './state.js';
 import { createMap } from './map/map.js';
 import { createTimeline } from './timeline.js';
 import { createPanel } from './panel.js';
-import { fromAstronomical } from './util/dates.js';
 import { esc } from './util/esc.js';
 
 const params = new URLSearchParams(window.location.search);
@@ -20,9 +19,10 @@ try {
     landFile: fixtures ? 'data/geo/land-present.json' : null,
   });
 
-  const initial = parseState(window.location.search);
-  if (initial.year === null && atlas.extent) initial.year = fromAstronomical(atlas.extent.max);
-  const state = createState(initial, { window });
+  // Nothing is filled in here: a window bound left null means "as far as the
+  // data goes", and each view resolves it against the atlas it was given. An
+  // empty URL is therefore the whole span, and stays an empty URL.
+  const state = createState(parseState(window.location.search), { window });
 
   document.getElementById('fixtures-badge').hidden = !fixtures;
   document.body.classList.toggle('fixtures', fixtures);
@@ -31,7 +31,7 @@ try {
   // cluster of marks the reader clicks on.
   const panel = createPanel(panelEl, { atlas, state, fixtures });
   createMap(document.getElementById('map'), { atlas, state, onCluster: (cluster) => panel.showCluster(cluster) });
-  createTimeline(document.getElementById('timeline'), { atlas, state });
+  createTimeline(document.getElementById('timeline'), { atlas, state, onCluster: (cluster) => panel.showCluster(cluster) });
 
   for (const box of document.querySelectorAll('input[data-layer]')) {
     box.checked = state.get().layers.includes(box.dataset.layer);

@@ -116,13 +116,11 @@ button { font: inherit; }
 .map .edge.chain { stroke: var(--madder); stroke-width: 2; }
 .map .edge.disputed { stroke-dasharray: 5 4; }
 
-.map-controls {
-  position: absolute;
-  left: 1rem; right: 1rem; bottom: 0.75rem;
-  display: flex; align-items: center; gap: 0.75rem;
-}
-.year-slider { flex: 1; accent-color: var(--cobalt); }
-.year-label { font-family: var(--font); font-size: 1.4rem; color: var(--cobalt); min-width: 5ch; text-align: right; }
+/* Outside the window, but still drawn because the reader is working with it:
+   the walked path, the selected event, an actor's events. Greyed, not
+   hidden — a chain that vanished as the band moved would be worse. */
+.map .mark.faded { opacity: 0.3; }
+.map .mark.faded.selected, .map .mark.faded.on-path { opacity: 0.55; }
 
 /* --- timeline -------------------------------------------------------- */
 
@@ -140,7 +138,23 @@ button { font: inherit; }
 .timeline .bar.selected { fill: var(--madder); stroke: var(--madder); }
 .timeline .bar-label { fill: var(--ink); font-size: 11px; pointer-events: none; }
 .timeline .bar-label.selected { fill: var(--madder); font-weight: 600; }
-.timeline .playhead { stroke: var(--cobalt); stroke-width: 1.5; pointer-events: none; }
+/* A stack of bars drawn as one, and a count beside it: the same idiom as the
+   map's clusters, so one reading serves both. */
+.timeline .bar.stack { stroke-width: 2.5; }
+.timeline .cluster-count { fill: var(--cobalt); font-weight: 600; pointer-events: none; }
+/* Outside the band: still there, still clickable, plainly not in the window. */
+.timeline .bar.faded { opacity: 0.28; }
+.timeline .cluster-count.faded { opacity: 0.35; }
+
+/* The window of time: a shaded band under the bars, a handle at each end
+   over them. The band is the only time control the atlas has. */
+.timeline .window-band { fill: var(--cobalt); opacity: 0.06; cursor: grab; }
+.timeline .window-band:active { cursor: grabbing; }
+.timeline .window-handle { fill: var(--cobalt); opacity: 0.5; cursor: ew-resize; }
+.timeline .window-handle:hover { opacity: 0.75; }
+.timeline .window-handle:focus { outline: none; opacity: 0.9; stroke: var(--madder); stroke-width: 2; }
+.timeline .window-year { fill: var(--cobalt); font-size: 11px; font-weight: 600; pointer-events: none; }
+.timeline .window-marker { fill: var(--ink-soft); font-size: 10.5px; pointer-events: none; }
 
 /* --- panel ----------------------------------------------------------- */
 
