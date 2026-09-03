@@ -67,6 +67,13 @@ export const FIELDS = Object.freeze({
     { key: 'end', label: 'End year', input: 'text', path: '/when/end', hint: 'blank means the same year as the start; write "ongoing" for one that still holds' },
     { key: 'note', label: 'Note', input: 'text', path: '/note', hint: 'optional, short, and written by you: what the type and the dates cannot say' },
   ]),
+  narrative: Object.freeze([
+    { key: 'title', label: 'Title', input: 'text', path: '/title', required: true },
+    { key: 'id', label: 'Id', input: 'text', path: '/id', required: true, hint: 'lowercase words joined by hyphens; it becomes the file name and the permanent URL' },
+    { key: 'summary', label: 'Summary', input: 'textarea', path: '/summary', required: true, hint: 'what your account claims, in your own words — enough for a reader choosing between two accounts of the same period' },
+    { key: 'windowFrom', label: 'Opens in', input: 'text', path: '/window/from', hint: 'optional: the year the atlas opens on when the narrative is opened' },
+    { key: 'windowTo', label: 'Closes in', input: 'text', path: '/window/to', hint: 'optional; leave both blank to open on whatever the reader was looking at' },
+  ]),
   source: Object.freeze([
     { key: 'id', label: 'Id', input: 'text', path: '/id', required: true, hint: 'author, year, keyword: russell-2000-henry' },
     { key: 'type', label: 'Type', input: 'select', options: SOURCE_TYPES, path: '/type', required: true },
@@ -96,6 +103,8 @@ export const CITATION_LISTS = Object.freeze({
   actor: [{ key: 'citations', label: 'Sources', path: '/sources' }],
   // A relation is an assertion about two actors, so it cites like an edge.
   relation: [{ key: 'citations', label: 'Sources', path: '/sources' }],
+  // A narrative cites what it rests on beyond the records it walks.
+  narrative: [{ key: 'citations', label: 'Sources', path: '/sources' }],
   // A place is a geographic fact, not an argument: rule 6 exempts it, and the
   // form says so rather than asking for a citation nobody has.
   place: [],
@@ -106,6 +115,21 @@ export const CITATION_LISTS = Object.freeze({
 // reference and a bit of text.
 export const ACTOR_LISTS = Object.freeze({
   event: [{ key: 'actors', label: 'Actors', path: '/actors' }],
+  edge: [],
+  source: [],
+  actor: [],
+  relation: [],
+  place: [],
+  narrative: [],
+});
+
+// The steps of a narrative: the same repeatable shape again — a reference and
+// a bit of text — except that the reference is to an event *or* a link, and
+// the text is the narrator's own paragraph rather than a role. Order is the
+// order of the rows, which is the order of the walk.
+export const STEP_LISTS = Object.freeze({
+  narrative: [{ key: 'steps', label: 'Steps', path: '/steps' }],
+  event: [],
   edge: [],
   source: [],
   actor: [],
@@ -131,6 +155,7 @@ export function emptyValues(kind) {
   for (const field of FIELDS[kind]) values[field.key] = field.options && field.options[0] !== '' ? field.options[0] : '';
   for (const list of CITATION_LISTS[kind]) values[list.key] = [];
   for (const list of ACTOR_LISTS[kind]) values[list.key] = [];
+  for (const list of STEP_LISTS[kind]) values[list.key] = [];
   return values;
 }
 
@@ -180,6 +205,15 @@ function actorsOf(list) {
   return (Array.isArray(list) ? list : [])
     .filter((a) => trimmed(a?.actor) !== '')
     .map((a) => ({ actor: trimmed(a.actor), role: trimmed(a.role) }));
+}
+
+// A row with nothing chosen is a row the contributor has not filled in yet,
+// as an actor row is; a chosen record with no text is kept, so rule 20
+// reports it at /steps/<i>/text and the form puts the message on the row.
+function stepsOf(list) {
+  return (Array.isArray(list) ? list : [])
+    .filter((s) => trimmed(s?.ref) !== '')
+    .map((s) => ({ ref: trimmed(s.ref), text: trimmed(s.text) }));
 }
 
 function citationsOf(list) {
@@ -291,6 +325,22 @@ export function buildRecord(kind, values, context = {}) {
     };
   }
 
+  if (kind === 'narrative') {
+    const from = parseBound(v.windowFrom);
+    const to = parseBound(v.windowTo);
+    const record = {
+      ...envelope('narrative', trimmed(v.id), context),
+      sources: citationsOf(v.citations),
+      title: trimmed(v.title),
+      summary: trimmed(v.summary),
+      steps: stepsOf(v.steps),
+    };
+    // Half a window is not a window: either both years are there or the
+    // narrative opens on whatever the reader was already looking at.
+    if (from !== '' || to !== '') record.window = { from, to };
+    return record;
+  }
+
   if (kind === 'source') {
     const year = parseNumber(v.year);
     return {
@@ -309,7 +359,7 @@ export function buildRecord(kind, values, context = {}) {
     };
   }
 
-  throw new Error(`kind must be event, edge, source, actor, place or relation, not "${kind}"`);
+  throw new Error(`kind must be event, edge, source, actor, place, relation or narrative, not "${kind}"`);
 }
 
 // entries: [{ kind, values }] in the order the contributor added them.

@@ -11,12 +11,13 @@
 
 import { html } from '../util/dom.js';
 import {
-  FIELDS, CITATION_LISTS, ACTOR_LISTS, emptyValues, buildBundle, slugify, findSimilar, validateBundle,
+  FIELDS, CITATION_LISTS, ACTOR_LISTS, STEP_LISTS, emptyValues, buildBundle, slugify, findSimilar, validateBundle,
 } from './bundle.js';
 import { submitBundle } from './submit.js';
 
 const KIND_LABEL = Object.freeze({
   event: 'Event', edge: 'Edge', source: 'Source', actor: 'Actor', place: 'Place', relation: 'Relation',
+  narrative: 'Narrative',
 });
 const KIND_HINT = Object.freeze({
   event: 'One point in space and time, or a long process with an interval and no place.',
@@ -25,11 +26,12 @@ const KIND_HINT = Object.freeze({
   actor: 'A person, polity, institution or people. Actors are reached through their events, never listed on their own.',
   place: 'Somewhere events happen, with its own coordinates. A place is a geographic fact, so it needs no source — the events that point at it still do.',
   relation: 'A dated link between two actors — a regime of a state, a member of a party, who led a body. The id is derived: from, to and type.',
+  narrative: 'A signed walk through records that are already here: your account of them, in order, changing none of them. Where yours and somebody else\'s disagree, both stand.',
 });
 
 // The field whose text suggests the id, per kind. An actor's and a place's
 // display name is the first of its semicolon-separated names.
-const TITLE_KEY = Object.freeze({ event: 'title', actor: 'names', place: 'names' });
+const TITLE_KEY = Object.freeze({ event: 'title', actor: 'names', place: 'names', narrative: 'title' });
 
 let sequence = 0;
 
@@ -99,7 +101,7 @@ export function createForm(container, { topology, schemas, template, fixtures = 
 
   // --- add buttons -------------------------------------------------------
   const addRow = html('div', { class: 'add-row' });
-  for (const kind of ['source', 'event', 'edge', 'actor', 'place', 'relation']) {
+  for (const kind of ['source', 'event', 'edge', 'actor', 'place', 'relation', 'narrative']) {
     const button = html('button', { type: 'button' }, `Add ${kind}`);
     button.addEventListener('click', () => {
       addEntry(kind);
@@ -167,6 +169,18 @@ export function createForm(container, { topology, schemas, template, fixtures = 
     return [...seen].sort((a, b) => (a[1] < b[1] ? -1 : a[1] > b[1] ? 1 : 0)).map(([value, label]) => ({ value, label }));
   }
 
+  // A step of a narrative points at an event or at a link, so the two are
+  // offered in one list, links after events and each named by its ends.
+  function recordChoices() {
+    const rows = eventChoices();
+    const titleOf = (id) => (topology.events ?? []).find((e) => e.id === id)?.title ?? id;
+    for (const edge of topology.edges ?? []) {
+      if (edge.status !== 'active') continue;
+      rows.push({ value: edge.id, label: `${titleOf(edge.from)} — ${edge.type} → ${titleOf(edge.to)}` });
+    }
+    return rows;
+  }
+
   function regionChoices() {
     return (topology.regions ?? []).map((r) => ({ value: r.id, label: r.label ?? r.id }));
   }
@@ -177,6 +191,7 @@ export function createForm(container, { topology, schemas, template, fixtures = 
     if (name === 'regions') return [{ value: '', label: '— derived from the place —' }, ...regionChoices()];
     if (name === 'actors') return [{ value: '', label: '— choose an actor —' }, ...actorChoices()];
     if (name === 'places') return [{ value: '', label: '— no place: timeline only —' }, ...placeChoices()];
+    if (name === 'records') return [{ value: '', label: '— choose an event or a link —' }, ...recordChoices()];
     return [];
   }
 
@@ -239,6 +254,7 @@ export function createForm(container, { topology, schemas, template, fixtures = 
 
     for (const field of FIELDS[entry.kind]) node.appendChild(renderField(entry, field));
     for (const list of ACTOR_LISTS[entry.kind]) node.appendChild(renderActors(entry, list));
+    for (const list of STEP_LISTS[entry.kind]) node.appendChild(renderSteps(entry, list));
     for (const list of CITATION_LISTS[entry.kind]) node.appendChild(renderCitations(entry, list));
     applyVisibility(entry);
     return node;
@@ -333,6 +349,62 @@ export function createForm(container, { topology, schemas, template, fixtures = 
 
     add.addEventListener('click', () => {
       const item = { actor: '', role: '' };
+      entry.values[list.key].push(item);
+      addRowFor(item);
+      refresh();
+    });
+    for (const item of entry.values[list.key]) addRowFor(item);
+
+    entry.fields.set(list.path, { wrap, input: null, error, field: list });
+    return wrap;
+  }
+
+  // The steps of a narrative, in the order of the rows: a record chosen by
+  // name and the paragraph that says why this step follows. Removing a row
+  // renumbers the walk, which is what a walk with a step taken out is.
+  function renderSteps(entry, list) {
+    const wrap = html('div', { class: 'field steps' });
+    const head = html('div', { class: 'citations-head' });
+    head.appendChild(html('span', { class: 'citations-label' }, `${list.label} *`));
+    const add = html('button', { type: 'button', class: 'link small' }, 'add');
+    head.appendChild(add);
+    wrap.appendChild(head);
+    wrap.appendChild(html('p', { class: 'hint' }, 'At least two, in the order they are read. The text is yours; the record it points at is the atlas\'s and is not changed by walking it.'));
+    const rows = html('ul', { class: 'citation-rows' });
+    wrap.appendChild(rows);
+    const error = html('p', { class: 'field-error', hidden: 'hidden' });
+    wrap.appendChild(error);
+
+    const addRowFor = (item) => {
+      const row = html('li', { class: 'citation-row step-row' });
+      const select = html('select', { 'aria-label': 'Event or link' });
+      dynamic.add({ select, name: 'records' });
+      fill(select, 'records');
+      select.value = item.ref ?? '';
+      select.addEventListener('input', () => {
+        item.ref = select.value;
+        refresh();
+      });
+      const text = html('textarea', { rows: '3', placeholder: 'why this step follows, in your own words', 'aria-label': 'Step text' });
+      text.value = item.text ?? '';
+      text.addEventListener('input', () => {
+        item.text = text.value;
+        refresh();
+      });
+      const drop = html('button', { type: 'button', class: 'link small' }, 'remove');
+      drop.addEventListener('click', () => {
+        const at = entry.values[list.key].indexOf(item);
+        if (at >= 0) entry.values[list.key].splice(at, 1);
+        for (const d of [...dynamic]) if (d.select === select) dynamic.delete(d);
+        row.remove();
+        refresh();
+      });
+      row.append(select, text, drop);
+      rows.appendChild(row);
+    };
+
+    add.addEventListener('click', () => {
+      const item = { ref: '', text: '' };
       entry.values[list.key].push(item);
       addRowFor(item);
       refresh();

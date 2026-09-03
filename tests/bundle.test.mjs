@@ -4,7 +4,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import {
-  FIELDS, CITATION_LISTS, ACTOR_LISTS, emptyValues, slugify, parseBound, buildRecord, buildBundle,
+  FIELDS, CITATION_LISTS, ACTOR_LISTS, STEP_LISTS, emptyValues, slugify, parseBound, buildRecord, buildBundle,
   findSimilar, similarity, checkBundleShape, validateBundle, everythingCited,
 } from '../src/contribute/bundle.js';
 import { buildTopology } from '../src/validate/core.js';
@@ -48,7 +48,7 @@ test('every field path is a property the kind schema knows', async () => {
       const head = field.path.split('/')[1];
       assert.ok(Object.hasOwn(properties, head), `${kind}.${field.key} → /${head} is not in v1/${kind}.json`);
     }
-    for (const list of [...CITATION_LISTS[kind], ...ACTOR_LISTS[kind]]) {
+    for (const list of [...CITATION_LISTS[kind], ...ACTOR_LISTS[kind], ...STEP_LISTS[kind]]) {
       assert.ok(Object.hasOwn(properties, list.path.split('/')[1]), `${kind} list ${list.key}`);
     }
   }
@@ -287,4 +287,41 @@ test('the form builds an actor, and puts actors with roles on an event', async (
   const blank = buildRecord('event', { ...eventValues, actors: [{ actor: 'fixture-actor-one', role: '' }] }, CONTEXT);
   const bad = validateBundle({ schema: 1, records: [blank] }, topology, all);
   assert.equal(bad.errors[0].path, '/actors/0/role');
+});
+
+// A narrative is the one kind whose repeatable rows carry prose rather than a
+// word, and the one whose window is two years or none.
+test('the form builds a narrative out of rows, and a half window is no window', async () => {
+  const topology = await topologyOf();
+  const all = await schemas();
+  const values = {
+    ...emptyValues('narrative'),
+    id: 'fixture-narrative-form',
+    title: 'A narrative built by the form',
+    summary: 'A synthetic account added by the form in a test. It claims nothing about the world.',
+    citations: [{ source: 'fixture-source-1', locator: null }],
+    steps: [
+      { ref: 'fixture-event-a', text: 'The first step of a walk, written at length enough to be an argument.' },
+      { ref: 'fixture-event-a--fixture-event-b--caused', text: 'The second step, which follows the first through a link of the atlas.' },
+      { ref: '', text: 'dropped: no record chosen' },
+    ],
+  };
+  const record = buildRecord('narrative', values, CONTEXT);
+  assert.equal(record.steps.length, 2);
+  assert.equal(record.steps[1].ref, 'fixture-event-a--fixture-event-b--caused');
+  assert.equal(record.window, undefined, 'both years blank: no window at all');
+  assert.deepEqual(createValidator(all).validate('v1/narrative.json', record), []);
+  const ok = validateBundle({ schema: 1, records: [record] }, topology, all);
+  assert.deepEqual(ok.errors, [], JSON.stringify(ok.errors));
+
+  const windowed = buildRecord('narrative', { ...values, windowFrom: '1200', windowTo: '1260' }, CONTEXT);
+  assert.deepEqual(windowed.window, { from: 1200, to: 1260 });
+
+  // A step with a record and no text reports at the row, not at the record.
+  const thin = buildRecord('narrative', {
+    ...values,
+    steps: [values.steps[0], { ref: 'fixture-event-b', text: '' }],
+  }, CONTEXT);
+  const bad = validateBundle({ schema: 1, records: [thin] }, topology, all);
+  assert.deepEqual(bad.errors.map((e) => e.path), ['/steps/1/text']);
 });

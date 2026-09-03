@@ -17,7 +17,8 @@
           { "$ref": "source.json" },
           { "$ref": "actor.json" },
           { "$ref": "place.json" },
-          { "$ref": "relation.json" }
+          { "$ref": "relation.json" },
+          { "$ref": "narrative.json" }
         ]
       }
     }
