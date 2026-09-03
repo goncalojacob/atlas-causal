@@ -68,7 +68,26 @@ export const ALLOWED_LICENSES = Object.freeze({
   // A relation is written by a person about two actors; nothing imports one,
   // so there is no NC hole here.
   relation: ['CC-BY-SA-4.0'],
+  // A narrative is prose about records that are already here, and it is
+  // signed: the same licence as everything else somebody wrote.
+  narrative: ['CC-BY-SA-4.0'],
 });
+
+// A narrative walks events and edges and nothing else, so a step's ref is one
+// of two shapes. The edge id is tried first: an edge id also matches SLUG's
+// shape nowhere, but the two vocabularies are kept apart here for the same
+// reason RELATION_ID is written out — anything that turns a ref into a path
+// has to know which kind it is holding.
+export function refKind(ref) {
+  if (typeof ref !== 'string') return null;
+  if (EDGE_ID.test(ref)) return 'edge';
+  if (RELATION_ID.test(ref)) return null;
+  return SLUG.test(ref) ? 'event' : null;
+}
+
+// A narrative is a walk, not a label: two steps is the fewest that can say
+// "this, and then that".
+export const MIN_NARRATIVE_STEPS = 2;
 
 // The exception that keeps the NC-SA licence out of data/actors/ generally:
 // an actor record may carry it only when one of these wrote it. The list is
@@ -134,6 +153,7 @@ export function checkRules(records, topology = {}) {
   for (const p of topology.presences ?? []) add('presence', p, false);
   for (const p of topology.places ?? []) add('place', p, false);
   for (const r of topology.relations ?? []) add('relation', r, false);
+  for (const n of topology.narratives ?? []) add('narrative', n, false);
 
   const ownIds = new Set();
   for (const r of records) {
@@ -211,6 +231,14 @@ export function checkRules(records, topology = {}) {
     if (r.kind === 'relation') {
       if (!lookup(r.from, 'actor')) error(3, r, '/from', `"${r.from}" is not an actor record`);
       if (!lookup(r.to, 'actor')) error(3, r, '/to', `"${r.to}" is not an actor record`);
+    }
+    if (r.kind === 'narrative') {
+      (Array.isArray(r.steps) ? r.steps : []).forEach((step, i) => {
+        const kind = refKind(step?.ref);
+        if (!kind || !lookup(step.ref, kind)) {
+          error(3, r, `/steps/${i}/ref`, `"${step?.ref}" is neither an event nor an edge`);
+        }
+      });
     }
     if (r.kind === 'presence') {
       if (!lookup(r.actor, 'actor')) error(3, r, '/actor', `"${r.actor}" is not an actor record`);
@@ -330,7 +358,7 @@ export function checkRules(records, topology = {}) {
 
   // --- rules 6, 7, 8, 9, 14: per-record content ---------------------------
   for (const r of own) {
-    if (r.kind === 'event' || r.kind === 'edge' || r.kind === 'actor' || r.kind === 'presence' || r.kind === 'relation') {
+    if (['event', 'edge', 'actor', 'presence', 'relation', 'narrative'].includes(r.kind)) {
       if (!Array.isArray(r.sources) || r.sources.length === 0) {
         error(6, r, '/sources', `every ${r.kind} cites at least one source`);
       }
@@ -480,6 +508,18 @@ export function checkRules(records, topology = {}) {
         const ev = lookup(r[end], 'event');
         if (ev && ev.status !== 'active') error(11, r, `/${end}`, `an active edge cannot reference the ${ev.status} event "${ev.id}"`);
       }
+    }
+    // A narrative that walks a retracted record would be a reader sent to a
+    // tombstone in the middle of an argument. Retract the narrative too, or
+    // rewrite the step.
+    if (r.kind === 'narrative' && r.status === 'active') {
+      (Array.isArray(r.steps) ? r.steps : []).forEach((step, i) => {
+        const kind = refKind(step?.ref);
+        const walked = kind ? lookup(step.ref, kind) : null;
+        if (walked && walked.status !== 'active') {
+          error(11, r, `/steps/${i}/ref`, `an active narrative cannot walk the ${walked.status} ${kind} "${walked.id}"`);
+        }
+      });
     }
     if (r.status === 'active') {
       citations(r).forEach((id) => {
@@ -653,6 +693,35 @@ export function checkRules(records, topology = {}) {
       const culprit = own.find((r) => r.kind === 'relation' && r.type === type && r.status === 'active'
         && stuck.includes(r.from) && stuck.includes(r.to)) ?? null;
       error(19, culprit, '', `"${type}" closes on itself through: ${stuck.join(', ')}`);
+    }
+  }
+
+  // --- rule 20: narratives ------------------------------------------------
+  // What only the whole walk can say. Whether the refs exist is rule 3 and
+  // whether they are still active is rule 11; this is the shape of the
+  // argument itself — long enough to be a walk, with prose at every step.
+  for (const r of own) {
+    if (r.kind !== 'narrative') continue;
+    const steps = Array.isArray(r.steps) ? r.steps : [];
+    if (steps.length < MIN_NARRATIVE_STEPS) {
+      error(20, r, '/steps', `a narrative walks at least ${MIN_NARRATIVE_STEPS} records; this one has ${steps.length}`);
+    }
+    if (!nonTrivial(r.summary)) {
+      error(20, r, '/summary', `summary must say what the narrative claims (at least ${MIN_TEXT_LENGTH} characters)`);
+    }
+    steps.forEach((step, i) => {
+      if (!nonTrivial(step?.text)) {
+        error(20, r, `/steps/${i}/text`, `a step says why it follows (at least ${MIN_TEXT_LENGTH} characters)`);
+      }
+      // The same record twice running is a step that does not step.
+      if (i > 0 && step?.ref === steps[i - 1]?.ref) {
+        error(20, r, `/steps/${i}/ref`, `"${step.ref}" is already the step before this one`);
+      }
+    });
+    if (isObject(r.window)) {
+      const from = checkBound(r, '/window/from', r.window.from);
+      const to = checkBound(r, '/window/to', r.window.to);
+      if (from && to && from.min > to.max) error(20, r, '/window', 'the window opens after it closes');
     }
   }
 

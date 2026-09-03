@@ -22,6 +22,7 @@ export const SCHEMA_FILES = Object.freeze([
   'v1/bundle.json',
   'v1/edge.json',
   'v1/event.json',
+  'v1/narrative.json',
   'v1/place.json',
   'v1/presence.json',
   'v1/region.json',

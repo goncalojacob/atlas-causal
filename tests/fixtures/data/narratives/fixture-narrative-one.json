@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "fixture-narrative-one",
+  "kind": "narrative",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Fixture Author",
+      "github": "fixture-author"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-01-01",
+  "revised": null,
+  "sources": [
+    {
+      "source": "fixture-source-1",
+      "locator": "pp. 1-10"
+    }
+  ],
+  "title": "A synthetic walk from A to T",
+  "summary": "Nothing here is history. This narrative exists so the reading mode can be opened, stepped through and left without any real record being involved.",
+  "steps": [
+    {
+      "ref": "fixture-event-a",
+      "text": "The walk opens on an event rather than on a link, so the first step has a selection and no chain behind it."
+    },
+    {
+      "ref": "fixture-event-a--fixture-event-b--caused",
+      "text": "The second step is an edge, which selects its own far end and starts the chain the map draws in madder."
+    },
+    {
+      "ref": "fixture-event-b--fixture-event-d--enabled",
+      "text": "A third step joined to the second: the chain is two links long here, because the far end of one is the near end of the next."
+    },
+    {
+      "ref": "fixture-event-c--fixture-event-t--precondition-of",
+      "text": "This step is deliberately not joined to the one before it, so the chain breaks and starts again from a single link."
+    }
+  ],
+  "window": {
+    "from": 1200,
+    "to": 1260
+  }
+}

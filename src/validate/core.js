@@ -7,7 +7,7 @@
 import { createValidator } from './schema.js';
 import { checkRules, normalizeRole } from './rules.js';
 
-export const KINDS = Object.freeze(['event', 'edge', 'source', 'actor', 'presence', 'place', 'relation']);
+export const KINDS = Object.freeze(['event', 'edge', 'source', 'actor', 'presence', 'place', 'relation', 'narrative']);
 export const SCHEMA_VERSION = 1;
 
 function isObject(v) {
@@ -173,6 +173,7 @@ export function buildTopology(records, regions, { deriveRegion } = {}) {
   const presences = [];
   const places = [];
   const relations = [];
+  const narratives = [];
   // Places first: an event's lane is derived from the place it names, so the
   // places have to be resolved before any event is.
   const placeById = new Map();
@@ -254,6 +255,22 @@ export function buildTopology(records, regions, { deriveRegion } = {}) {
         supersededBy: r.supersededBy ?? null,
         aliases: r.aliases ?? [],
       });
+    } else if (r.kind === 'narrative') {
+      // Everything the list of narratives and the walk itself need, and not a
+      // word of the steps: the titles, the summary and the authors are what a
+      // reader chooses between, the refs are what the map and the graph
+      // follow, and the prose of a step is fetched when that step is read.
+      narratives.push({
+        id: r.id,
+        title: r.title,
+        summary: r.summary,
+        authors: r.authors ?? [],
+        window: isObject(r.window) ? r.window : null,
+        steps: (Array.isArray(r.steps) ? r.steps : []).map((step) => ({ ref: step.ref })),
+        status: r.status,
+        supersededBy: r.supersededBy ?? null,
+        aliases: r.aliases ?? [],
+      });
     } else if (r.kind === 'presence') {
       // Everything the panel and the map need except the coordinates: an
       // actor's territory over time is a list the card can draw without
@@ -293,6 +310,7 @@ export function buildTopology(records, regions, { deriveRegion } = {}) {
   presences.sort(byId);
   places.sort(byId);
   relations.sort(byId);
+  narratives.sort(byId);
   return {
     events,
     edges,
@@ -301,6 +319,7 @@ export function buildTopology(records, regions, { deriveRegion } = {}) {
     presences,
     places,
     relations,
+    narratives,
     regions: [...(regions ?? [])].sort((a, b) => a.order - b.order || byId(a, b)),
   };
 }

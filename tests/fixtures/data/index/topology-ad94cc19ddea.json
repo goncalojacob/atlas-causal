@@ -386,6 +386,40 @@
       }
     }
   ],
+  "narratives": [
+    {
+      "aliases": [],
+      "authors": [
+        {
+          "github": "fixture-author",
+          "name": "Fixture Author"
+        }
+      ],
+      "id": "fixture-narrative-one",
+      "status": "active",
+      "steps": [
+        {
+          "ref": "fixture-event-a"
+        },
+        {
+          "ref": "fixture-event-a--fixture-event-b--caused"
+        },
+        {
+          "ref": "fixture-event-b--fixture-event-d--enabled"
+        },
+        {
+          "ref": "fixture-event-c--fixture-event-t--precondition-of"
+        }
+      ],
+      "summary": "Nothing here is history. This narrative exists so the reading mode can be opened, stepped through and left without any real record being involved.",
+      "supersededBy": null,
+      "title": "A synthetic walk from A to T",
+      "window": {
+        "from": 1200,
+        "to": 1260
+      }
+    }
+  ],
   "places": [
     {
       "aliases": [],

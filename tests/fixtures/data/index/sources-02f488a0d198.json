@@ -10,7 +10,7 @@
           "name": "Fixture Author"
         }
       ],
-      "citationCount": 24,
+      "citationCount": 25,
       "citations": [
         {
           "dissent": false,
@@ -131,6 +131,12 @@
           "id": "fixture-event-t",
           "kind": "event",
           "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "fixture-narrative-one",
+          "kind": "narrative",
+          "locator": "pp. 1-10"
         },
         {
           "dissent": false,

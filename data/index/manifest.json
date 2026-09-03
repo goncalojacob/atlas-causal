@@ -3,6 +3,7 @@
     "actors": 311,
     "edges": 91,
     "events": 80,
+    "narratives": 0,
     "places": 25,
     "presences": 710,
     "regions": 5,
@@ -11,7 +12,7 @@
   },
   "files": {
     "sources": "index/sources-c268222aea5d.json",
-    "topology": "index/topology-013984d991fe.json"
+    "topology": "index/topology-de19d8e7da11.json"
   },
   "land": [
     {

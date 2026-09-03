@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "v1/narrative.json",
+  "title": "Narrative",
+  "description": "A signed walk through records that are already in the atlas: an ordered list of steps, each naming one event or one edge and saying in prose why this step follows. A narrative never changes what it walks — it is an argument beside the graph, not another edge in it — and it cites what it rests on beyond the records themselves. Several narratives may cross the same period and disagree; each is attributed and the reader compares them (CONTEXT.md).",
+  "type": "object",
+  "required": ["schema", "id", "kind", "status", "supersededBy", "aliases", "authors", "license", "created", "revised", "sources", "title", "summary", "steps"],
+  "additionalProperties": false,
+  "properties": {
+    "schema": { "$ref": "../common/provenance.json#/properties/schema" },
+    "id": { "$ref": "../common/provenance.json#/properties/id" },
+    "kind": { "const": "narrative" },
+    "status": { "$ref": "../common/provenance.json#/properties/status" },
+    "supersededBy": {
+      "oneOf": [
+        { "type": "null" },
+        { "$ref": "#/properties/id" }
+      ]
+    },
+    "aliases": {
+      "type": "array",
+      "items": { "$ref": "#/properties/id" }
+    },
+    "authors": { "$ref": "../common/provenance.json#/properties/authors" },
+    "license": { "$ref": "../common/provenance.json#/properties/license" },
+    "created": { "$ref": "../common/provenance.json#/properties/created" },
+    "revised": { "$ref": "../common/provenance.json#/properties/revised" },
+    "sources": {
+      "description": "What the narrative rests on beyond the records it walks — the account being told is itself an argument, so it cites like an edge does (rule 6).",
+      "$ref": "../common/provenance.json#/properties/sources"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "summary": {
+      "description": "What this narrative claims, in a paragraph: enough for a reader choosing between two accounts of the same period. Non-trivial by rule 20.",
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 2000
+    },
+    "steps": {
+      "description": "The walk, in order. At least two steps, each with real text: rule 20, because the validator's keyword subset has no minItems.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["ref", "text"],
+        "additionalProperties": false,
+        "properties": {
+          "ref": {
+            "description": "The record this step is about: an event id, or an edge id in its from--to--type shape. Nothing else — a narrative walks the graph and does not annotate sources or actors.",
+            "type": "string",
+            "pattern": "^[a-z0-9]+(-[a-z0-9]+)*(--[a-z0-9]+(-[a-z0-9]+)*--(caused|enabled|reacted-to|precondition-of|inspired))?$",
+            "maxLength": 260
+          },
+          "text": {
+            "description": "Why this step follows, in the narrator's own words. Non-trivial by rule 20.",
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4000
+          }
+        }
+      }
+    },
+    "window": {
+      "description": "Optional: the years to open on, so a narrative about 1961–1975 does not start on the whole span of the atlas. Historians' years, no year 0, from before to (rule 20).",
+      "oneOf": [
+        { "type": "null" },
+        {
+          "type": "object",
+          "required": ["from", "to"],
+          "additionalProperties": false,
+          "properties": {
+            "from": { "type": "integer" },
+            "to": { "type": "integer" }
+          }
+        }
+      ]
+    }
+  }
+}

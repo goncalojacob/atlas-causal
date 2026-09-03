@@ -6,7 +6,7 @@ import { readdir, readFile } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import path from 'node:path';
 
-export const KIND_DIRS = Object.freeze({ event: 'events', edge: 'edges', source: 'sources', actor: 'actors', presence: 'presences', place: 'places', relation: 'relations' });
+export const KIND_DIRS = Object.freeze({ event: 'events', edge: 'edges', source: 'sources', actor: 'actors', presence: 'presences', place: 'places', relation: 'relations', narrative: 'narratives' });
 export const PRESENCE_GEO_DIR = 'geo/presences';
 export const IMPORTS_DIR = 'imports';
 

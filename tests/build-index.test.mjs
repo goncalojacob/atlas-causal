@@ -48,7 +48,7 @@ test('manifest names the hashed files, counts, lanes and land', async () => {
   const built = await buildIndex(FIXTURE_DATA);
   const manifest = JSON.parse(built.files['manifest.json']);
   assert.equal(manifest.schema, 1);
-  assert.deepEqual(manifest.counts, { events: 12, edges: 10, sources: 4, actors: 4, presences: 3, places: 11, relations: 3, regions: 3 });
+  assert.deepEqual(manifest.counts, { events: 12, edges: 10, sources: 4, actors: 4, presences: 3, places: 11, relations: 3, narratives: 1, regions: 3 });
   assert.match(manifest.files.topology, /^index\/topology-[0-9a-f]{12}\.json$/);
   assert.match(manifest.files.sources, /^index\/sources-[0-9a-f]{12}\.json$/);
   assert.ok(Object.hasOwn(built.files, path.basename(manifest.files.topology)));
@@ -120,7 +120,7 @@ test('an empty dataset builds a manifest with zero records and validates', async
   try {
     await writeFile(path.join(dir, 'regions.json'), '[]\n');
     const built = await buildIndex(dir);
-    assert.deepEqual(JSON.parse(built.files['manifest.json']).counts, { events: 0, edges: 0, sources: 0, actors: 0, presences: 0, places: 0, relations: 0, regions: 0 });
+    assert.deepEqual(JSON.parse(built.files['manifest.json']).counts, { events: 0, edges: 0, sources: 0, actors: 0, presences: 0, places: 0, relations: 0, narratives: 0, regions: 0 });
     await writeIndex(dir, built);
     const result = await runValidation(dir, { index: true });
     assert.deepEqual(result.errors, []);

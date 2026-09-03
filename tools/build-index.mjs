@@ -64,6 +64,7 @@ export async function buildIndex(dataDir = DEFAULT_DATA) {
     presences: topology.presences,
     places: topology.places,
     relations: topology.relations,
+    narratives: topology.narratives,
   });
   const sourcesText = serialize({ schema: 1, sources: topology.sources });
   const topologyName = `topology-${hashOf(topologyText)}.json`;
@@ -78,6 +79,7 @@ export async function buildIndex(dataDir = DEFAULT_DATA) {
       presences: topology.presences.length,
       places: topology.places.length,
       relations: topology.relations.length,
+      narratives: topology.narratives.length,
       regions: topology.regions.length,
     },
     files: { topology: `index/${topologyName}`, sources: `index/${sourcesName}` },
@@ -152,7 +154,7 @@ async function main(argv) {
   }
   await writeIndex(dataDir, built);
   const c = built.topology;
-  console.log(`index written to ${path.relative(process.cwd(), path.join(dataDir, 'index')) || '.'}: ${c.events.length} events, ${c.edges.length} edges, ${c.actors.length} actors, ${c.relations.length} relations, ${c.places.length} places, ${c.presences.length} presences, ${c.sources.length} sources`);
+  console.log(`index written to ${path.relative(process.cwd(), path.join(dataDir, 'index')) || '.'}: ${c.events.length} events, ${c.edges.length} edges, ${c.actors.length} actors, ${c.relations.length} relations, ${c.narratives.length} narratives, ${c.places.length} places, ${c.presences.length} presences, ${c.sources.length} sources`);
   return 0;
 }
 
