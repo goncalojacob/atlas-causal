@@ -3,15 +3,17 @@
 // This file owns the container, the clicks, the load token that cancels the
 // text of a card the reader has already left, and the helpers every card
 // needs — citations, the link to an event, the lane's name. The cards
-// themselves are one file each: event.js, place.js, actor.js, cluster.js.
-// Which one is shown is decided in render() and nowhere else.
+// themselves are one file each: event.js, source.js, place.js, actor.js,
+// cluster.js. Which one is shown is decided in render() and nowhere else.
 
-import { esc, safeUrl } from '../util/esc.js';
+import { esc } from '../util/esc.js';
 import { formatInterval, bounds } from '../util/dates.js';
 import { windowAt } from '../util/window.js';
+import { identifiers } from '../citation.js';
 import { renderEventCard } from './event.js';
 import { renderActorCard } from './actor.js';
 import { renderPlaceCard } from './place.js';
+import { renderSourceCard } from './source.js';
 import { clusterHtml } from './cluster.js';
 
 export function createPanel(container, { atlas, state, fixtures = false }) {
@@ -38,6 +40,22 @@ export function createPanel(container, { atlas, state, fixtures = false }) {
       case 'place':
         state.set({ place: el.dataset.id, selected: null, chain: [] });
         break;
+      // A source is a card like a place's: it clears the event and the path
+      // it was read from, and keeps the actor, since "which of this actor's
+      // events rest on this book" is a question worth being left in.
+      case 'source':
+        state.set({ source: el.dataset.id, selected: null, chain: [] });
+        break;
+      case 'clear-source':
+        state.set({ source: null });
+        break;
+      // An edge has no card of its own: opening one from a source's list
+      // walks that single step, which names both ends and loads the argument.
+      case 'follow-edge': {
+        const edge = atlas.edges.get(el.dataset.edge);
+        if (edge) state.set({ selected: edge.to, chain: [edge.id], source: null });
+        break;
+      }
       case 'clear-place':
         state.set({ place: null });
         break;
@@ -83,22 +101,22 @@ export function createPanel(container, { atlas, state, fixtures = false }) {
     );
   }, true);
 
+  // A citation, wherever one is shown. The title is a way into the source's
+  // own card — the citation is the door to the bibliography and not merely a
+  // line of small print — and the identifiers stay as links out to the work
+  // itself. Formatting is citation.js, so this and the bibliography page
+  // cannot drift apart.
   function citationsHtml(citations, heading) {
     if (!citations || citations.length === 0) return '';
     const items = citations.map((c) => {
       const src = atlas.sources.get(c.source);
       if (!src) return `<li class="citation missing">unknown source <code>${esc(c.source)}</code></li>`;
-      const ids = [];
-      if (src.isbn) ids.push(`ISBN ${esc(src.isbn)}`);
-      if (src.doi) ids.push(`<a href="https://doi.org/${encodeURIComponent(src.doi)}" rel="noopener" target="_blank">doi:${esc(src.doi)}</a>`);
-      if (src.url) {
-        const url = safeUrl(src.url);
-        ids.push(url ? `<a href="${esc(url)}" rel="noopener" target="_blank">${esc(url)}</a>` : `<span class="unsafe-url">${esc(src.url)}</span>`);
-      }
-      if (src.repository) ids.push(`${esc(src.repository)}${src.reference ? `, ${esc(src.reference)}` : ''}`);
+      const ids = identifiers(src).map(({ label, href }) => (href
+        ? `<a href="${esc(href)}" rel="noopener" target="_blank">${esc(label)}</a>`
+        : `<span class="unsafe-url">${esc(label)}</span>`));
       return `<li class="citation">
         <span class="creators">${esc((src.creators ?? []).join(', '))}</span>${src.year ? ` (${esc(src.year)})` : ''}.
-        <em>${esc(src.title)}</em>${src.publisher ? `. ${esc(src.publisher)}` : ''}.
+        <button type="button" class="link cite" data-action="source" data-id="${esc(src.id)}"><em>${esc(src.title)}</em></button>${src.publisher ? `. ${esc(src.publisher)}` : ''}.
         ${c.locator ? `<span class="locator">${esc(c.locator)}.</span>` : ''}
         <span class="identifiers">${ids.join(' · ')}</span>
         ${src.status !== 'active' ? `<span class="badge status">${esc(src.status)}</span>` : ''}
@@ -160,9 +178,16 @@ export function createPanel(container, { atlas, state, fixtures = false }) {
   function render(s) {
     token += 1;
     const mine = token;
-    // The precedence: an event, then a place, then an actor. Opening an
-    // event from a place's list therefore does not throw the place away.
+    // The precedence: an event, then a source, then a place, then an actor.
+    // Opening an event from a place's list therefore does not throw the
+    // place away.
     if (!s.selected) {
+      if (s.source) {
+        const found = atlas.resolve(s.source);
+        if (found && found.kind === 'source') renderSourceCard(ctx, { container, source: found.record });
+        else notFound('source', s.source);
+        return;
+      }
       if (s.place) {
         const found = atlas.resolve(s.place);
         if (found && found.kind === 'place') renderPlaceCard(ctx, { container, place: found.record, state: s, mine });

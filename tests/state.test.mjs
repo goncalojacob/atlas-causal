@@ -9,13 +9,15 @@ test('parse and format round trip', () => {
     to: 1250,
     view: 'graph',
     selected: 'fixture-event-t',
+    source: 'fixture-source-one',
     place: 'fixture-place-one',
     actor: 'fixture-actor-one',
     chain: ['fixture-event-a--fixture-event-b--caused', 'fixture-event-b--fixture-event-d--enabled'],
+    horizon: 1240,
     layers: ['events'],
   };
   const search = formatState(state);
-  assert.equal(search, '?from=1200&to=1250&view=graph&selected=fixture-event-t&place=fixture-place-one&actor=fixture-actor-one&chain=fixture-event-a--fixture-event-b--caused,fixture-event-b--fixture-event-d--enabled&layers=events');
+  assert.equal(search, '?from=1200&to=1250&view=graph&selected=fixture-event-t&source=fixture-source-one&place=fixture-place-one&actor=fixture-actor-one&chain=fixture-event-a--fixture-event-b--caused,fixture-event-b--fixture-event-d--enabled&horizon=1240&layers=events');
   assert.deepEqual(parseState(search), state);
 });
 
@@ -76,7 +78,29 @@ test('the store merges patches and notifies', () => {
   off();
   store.set({ to: 1220 });
   assert.deepEqual(seen, [1210, 1210]);
-  assert.deepEqual(store.get(), { from: null, to: 1220, view: 'map', selected: 'fixture-event-a', place: null, actor: null, chain: [], layers: ['land', 'territories', 'events'] });
+  assert.deepEqual(store.get(), {
+    from: null, to: 1220, view: 'map', selected: 'fixture-event-a', source: null,
+    place: null, actor: null, chain: [], horizon: null, layers: ['land', 'territories', 'events'],
+  });
+});
+
+// A source is a card and a URL like a place or an actor, and the horizon is
+// a year the reader chose — never the default, which is the window's own far
+// end and would only make every link longer.
+test('a source and a horizon travel in the URL; the default horizon does not', () => {
+  assert.equal(parseState('?source=maxwell-1995').source, 'maxwell-1995');
+  assert.equal(parseState('?source=../secret').source, null);
+  assert.equal(formatState({ ...defaultState(), source: 'maxwell-1995' }), '?source=maxwell-1995');
+  assert.equal(formatState({ ...defaultState(), horizon: null }), '');
+  assert.equal(formatState({ ...defaultState(), horizon: 2011 }), '?horizon=2011');
+  assert.equal(parseState('?horizon=2011').horizon, 2011);
+  assert.equal(parseState('?horizon=-44').horizon, -44);
+  assert.equal(parseState('?horizon=0').horizon, null, 'there is no year 0');
+  assert.equal(parseState('?horizon=soon').horizon, null);
+  assert.deepEqual(
+    parseState('?selected=carnation-revolution-1974&horizon=2011'),
+    { ...defaultState(), selected: 'carnation-revolution-1974', horizon: 2011 },
+  );
 });
 
 // --- the window itself ----------------------------------------------------

@@ -13,13 +13,14 @@ import { windowAt } from './util/window.js';
 
 const LIMIT = 8;
 
-const KIND_LABEL = Object.freeze({ event: 'Events', actor: 'Actors', place: 'Places' });
+const KIND_LABEL = Object.freeze({ event: 'Events', actor: 'Actors', place: 'Places', source: 'Sources' });
 
 export function createSearchBox(container, { atlas, state }) {
   const entries = buildSearchIndex({
     events: atlas.activeEvents,
     actors: [...atlas.actors.values()],
     places: [...atlas.places.values()],
+    sources: [...atlas.sources.values()],
   });
   const input = container.querySelector('input[type="search"]');
   const list = container.querySelector('[data-slot="results"]');
@@ -91,6 +92,8 @@ export function createSearchBox(container, { atlas, state }) {
       state.set({ actor: item.id, selected: null, chain: [] });
     } else if (item.kind === 'place') {
       state.set({ place: item.id, selected: null, chain: [] });
+    } else if (item.kind === 'source') {
+      state.set({ source: item.id, selected: null, chain: [] });
     } else {
       // Widen to include it, then select: the same rule as every other "map
       // at Y" in the atlas.

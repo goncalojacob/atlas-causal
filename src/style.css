@@ -341,6 +341,24 @@ svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align:
    on the map: a place's history does not stop at the edge of the band. */
 .panel .actor-row.faded { opacity: 0.45; }
 
+/* --- sources --------------------------------------------------------- */
+
+.panel .source-head h2 { font-size: 1.4rem; margin-top: 0; font-style: italic; }
+.panel .source-type { text-transform: uppercase; letter-spacing: 0.04em; font-size: 0.8rem; }
+.panel .creators { color: var(--ink-soft); }
+.panel .identifiers a { color: var(--cobalt); }
+.panel .source-head .identifiers { margin: 0.3rem 0 0; font-size: 0.85rem; }
+/* The citation as a running line, the way it would be typed in a footnote:
+   what a reader copies out of the atlas and into their own notes. */
+.panel .citation-full {
+  font-family: var(--font); font-size: 0.9rem; color: var(--ink-soft);
+  border-left: 3px solid var(--cobalt-soft); padding-left: 0.75rem; margin: 0.75rem 0 0;
+}
+.panel .citers .locator { color: var(--ink-soft); font-size: 0.85rem; }
+/* The title inside a citation is the door to the source's own card; it reads
+   as part of the citation, not as a button on top of one. */
+.panel .link.cite { font-style: normal; }
+
 /* --- reading pages: contribute.html, about.html ----------------------- */
 
 .page-body { height: auto; }

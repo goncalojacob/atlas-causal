@@ -23,7 +23,12 @@ const PLACES = [
   { id: 'luanda', name: 'Luanda', names: ['Luanda'], where: { lon: 13.23, lat: -8.84, precision: 'city', label: 'Luanda' }, status: 'active' },
   { id: 'nowhere', name: 'Nowhere', names: ['Nowhere'], where: { lon: 0, lat: 0, precision: 'city', label: 'Nowhere' }, status: 'retracted' },
 ];
-const index = buildSearchIndex({ events: EVENTS, actors: ACTORS, places: PLACES });
+const SOURCES = [
+  { id: 'maxwell-1995', title: 'The Making of Portuguese Democracy', creators: ['Kenneth Maxwell'], year: 1995, type: 'book', status: 'active' },
+  { id: 'telo-2007', title: 'História Contemporânea de Portugal', creators: ['António José Telo'], year: 2007, type: 'book', status: 'active' },
+  { id: 'withdrawn', title: 'Salazar, a Life', creators: ['Nobody'], year: 1800, type: 'book', status: 'retracted' },
+];
+const index = buildSearchIndex({ events: EVENTS, actors: ACTORS, places: PLACES, sources: SOURCES });
 
 test('folding drops case and diacritics', () => {
   assert.equal(fold('Amílcar Cabral'), 'amilcar cabral');
@@ -57,6 +62,18 @@ test('a place is found by any of its names, and only while it is active', () => 
   // A place has no dates, and sorting must not fall over on that.
   assert.equal(hits[0].when, null);
   assert.equal(flatten(search(index, 'luand'))[0].id, 'luanda');
+});
+
+test('a source is found by its title or by whoever wrote it', () => {
+  assert.equal(index.filter((e) => e.kind === 'source').length, 2, 'the retracted source is not searchable');
+  const byTitle = flatten(search(index, 'making of portuguese'));
+  assert.equal(byTitle[0].kind, 'source');
+  assert.equal(byTitle[0].id, 'maxwell-1995');
+  assert.equal(byTitle[0].detail, 'Kenneth Maxwell, 1995');
+  const byAuthor = flatten(search(index, 'maxwell'));
+  assert.equal(byAuthor[0].id, 'maxwell-1995');
+  // Diacritics are optional here too: nobody types the â of Contemporânea.
+  assert.equal(flatten(search(index, 'historia contemporanea'))[0].id, 'telo-2007');
 });
 
 test('"sal" puts Salazar the actor first, above the events that mention him', () => {

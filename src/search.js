@@ -4,9 +4,10 @@
 //
 // It searches what the topology already carries: every active event's title,
 // every active actor's names — the imported polities included, so "Angola"
-// finds the colony's record and the events it appears in at once — and every
+// finds the colony's record and the events it appears in at once — every
 // place's names, so "Lisboa" finds Lisbon and everything that happened there
-// without knowing a single title. Nothing is
+// without knowing a single title, and every source's title and creators, so
+// a reader who knows the book can find what rests on it. Nothing is
 // fetched and nothing is precomputed at index time: a few hundred titles is a
 // scan, and a search index in data/index/ would be five megabytes of the one
 // thing the atlas deliberately keeps out of it (ARCHITECTURE.md, "Scale").
@@ -30,7 +31,7 @@ export function rank(term, query) {
 }
 
 // One entry per record: everything it can be found by, folded once.
-export function buildSearchIndex({ events = [], actors = [], places = [] } = {}) {
+export function buildSearchIndex({ events = [], actors = [], places = [], sources = [] } = {}) {
   const entries = [];
   for (const event of events) {
     if (event.status && event.status !== 'active') continue;
@@ -71,6 +72,21 @@ export function buildSearchIndex({ events = [], actors = [], places = [] } = {})
       variants: names.slice(1),
       weight: 0,
       terms: names.map(fold),
+    });
+  }
+  for (const source of sources) {
+    if (source.status && source.status !== 'active') continue;
+    const creators = source.creators ?? [];
+    entries.push({
+      kind: 'source',
+      id: source.id,
+      label: source.title,
+      detail: creators.length ? `${creators.join(', ')}${source.year ? `, ${source.year}` : ''}` : source.type ?? null,
+      when: null,
+      // A source is as findable by whoever wrote it as by its title: nobody
+      // remembers the subtitle of a book they remember the author of.
+      terms: [fold(source.title), ...creators.map(fold)],
+      weight: 0,
     });
   }
   return entries;

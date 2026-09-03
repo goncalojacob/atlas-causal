@@ -1,4 +1,5 @@
-// One state object, { from, to, view, selected, place, actor, chain, layers },
+// One state object, { from, to, view, selected, source, place, actor, chain,
+// horizon, layers },
 // mirrored to
 // the URL query string so every view is a shareable link. Knows nothing
 // about SVG or data files. The pure parse/format pair is separate from the
@@ -15,12 +16,17 @@
 // view. It is state, not a preference: a link is meant to open on the
 // picture the person who sent it was looking at.
 //
-// `selected`, `place` and `actor` are dimensions of the same view, not
-// alternatives: an actor stays highlighted on the map and the timeline
+// `selected`, `source`, `place` and `actor` are dimensions of the same view,
+// not alternatives: an actor stays highlighted on the map and the timeline
 // while its events are read one after another, and `?actor=salazar` alone
 // opens the actor's card. Which card the panel shows is a precedence —
-// `selected` over `place` over `actor` — so opening an event from a place's
-// list does not throw the place away.
+// `selected` over `source` over `place` over `actor` — so opening an event
+// from a place's list does not throw the place away.
+//
+// `horizon` is the year of the question "what did this lead to by then?".
+// Null means the window's far end, which is the default and is deliberately
+// never written to the URL: only a year the reader chose is worth carrying
+// in a link, and only a chosen year lights the reachable set in the views.
 
 import { isValidYear } from './util/dates.js';
 
@@ -32,7 +38,10 @@ export const VIEWS = Object.freeze(['map', 'graph']);
 const PASSTHROUGH = Object.freeze(['fixtures']);
 
 export function defaultState() {
-  return { from: null, to: null, view: 'map', selected: null, place: null, actor: null, chain: [], layers: [...LAYERS] };
+  return {
+    from: null, to: null, view: 'map', selected: null, source: null, place: null,
+    actor: null, chain: [], horizon: null, layers: [...LAYERS],
+  };
 }
 
 // Garbage in the URL falls back to defaults field by field; a bad chain
@@ -57,6 +66,11 @@ export function parseState(search, defaults = defaultState()) {
     const id = params.get('selected');
     if (SLUG.test(id)) state.selected = id;
   }
+  if (params.has('source')) {
+    const id = params.get('source');
+    if (SLUG.test(id)) state.source = id;
+  }
+  if (params.has('horizon')) state.horizon = year('horizon');
   if (params.has('place')) {
     const id = params.get('place');
     if (SLUG.test(id)) state.place = id;
@@ -88,9 +102,11 @@ export function formatState(state, search = '') {
   if (state.to !== null) params.set('to', String(state.to));
   if (state.view && state.view !== 'map') params.set('view', state.view);
   if (state.selected) params.set('selected', state.selected);
+  if (state.source) params.set('source', state.source);
   if (state.place) params.set('place', state.place);
   if (state.actor) params.set('actor', state.actor);
   if (state.chain.length) params.set('chain', state.chain.join(','));
+  if (state.horizon !== null && state.horizon !== undefined) params.set('horizon', String(state.horizon));
   if (state.layers.length !== LAYERS.length || state.layers.some((l, i) => l !== LAYERS[i])) {
     params.set('layers', state.layers.join(','));
   }
