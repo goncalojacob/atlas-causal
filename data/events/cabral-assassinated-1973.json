@@ -32,12 +32,7 @@
     "date": "1973-01-20",
     "calendar": "gregorian"
   },
-  "where": {
-    "lon": -13.68,
-    "lat": 9.51,
-    "precision": "city",
-    "label": "Conakry"
-  },
+  "place": "conakry",
   "region": null,
   "actors": [
     {

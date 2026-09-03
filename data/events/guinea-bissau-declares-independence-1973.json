@@ -28,12 +28,7 @@
     "date": "1973-09-24",
     "calendar": "gregorian"
   },
-  "where": {
-    "lon": -14.2,
-    "lat": 11.75,
-    "precision": "region",
-    "label": "Boé"
-  },
+  "place": "boe",
   "region": null,
   "actors": [
     {

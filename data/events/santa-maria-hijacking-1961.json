@@ -32,12 +32,7 @@
     "date": "1961-01-22",
     "calendar": "gregorian"
   },
-  "where": {
-    "lon": -34.88,
-    "lat": -8.05,
-    "precision": "region",
-    "label": "Recife, at the end of the voyage"
-  },
+  "place": "recife",
   "region": "americas",
   "actors": [
     {

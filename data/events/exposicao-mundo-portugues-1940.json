@@ -32,12 +32,7 @@
     "date": "1940-06-23",
     "calendar": "gregorian"
   },
-  "where": {
-    "lon": -9.2,
-    "lat": 38.7,
-    "precision": "city",
-    "label": "Belém, Lisbon"
-  },
+  "place": "belem",
   "region": null,
   "actors": [
     {

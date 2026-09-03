@@ -32,12 +32,7 @@
     "date": "1919-01-19",
     "calendar": "gregorian"
   },
-  "where": {
-    "lon": -8.61,
-    "lat": 41.15,
-    "precision": "city",
-    "label": "Porto"
-  },
+  "place": "porto",
   "region": null,
   "actors": [
     {

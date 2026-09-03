@@ -137,5 +137,5 @@ test('a place nothing happened at is a warning, not an error', async () => {
 
   // Referenced, and the warning is gone.
   const { result: used } = await run(withPlace());
-  assert.equal(used.warnings.filter((w) => w.rule === 'place-unused').length, 0);
+  assert.equal(used.warnings.filter((w) => w.rule === 'place-unused' && w.id === ID).length, 0);
 });

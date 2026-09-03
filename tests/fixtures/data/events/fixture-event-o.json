@@ -26,12 +26,7 @@
     "start": 1215,
     "end": 1215
   },
-  "where": {
-    "lon": 100,
-    "lat": -60,
-    "precision": "city",
-    "label": "Fixture place O"
-  },
+  "place": "fixture-place-o",
   "region": "fixture-lane-2",
   "actors": []
 }

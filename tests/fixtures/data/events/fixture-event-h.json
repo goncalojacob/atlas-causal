@@ -26,12 +26,7 @@
     "start": 1290,
     "end": 1290
   },
-  "where": {
-    "lon": -12,
-    "lat": 25,
-    "precision": "city",
-    "label": "Fixture place H"
-  },
+  "place": "fixture-place-h",
   "region": null,
   "actors": []
 }

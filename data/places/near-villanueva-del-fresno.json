@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "near-villanueva-del-fresno",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "sources": [],
+  "names": [
+    "near Villanueva del Fresno, Spain"
+  ],
+  "where": {
+    "lon": -7.17,
+    "lat": 38.38,
+    "precision": "region",
+    "label": "near Villanueva del Fresno, Spain"
+  },
+  "region": null,
+  "summary": null
+}

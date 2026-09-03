@@ -32,12 +32,7 @@
     "date": "1975-01-15",
     "calendar": "gregorian"
   },
-  "where": {
-    "lon": -8.59,
-    "lat": 37.13,
-    "precision": "city",
-    "label": "Alvor, Algarve"
-  },
+  "place": "alvor",
   "region": null,
   "actors": [
     {

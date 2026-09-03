@@ -32,12 +32,7 @@
     "date": "1943-08-17",
     "calendar": "gregorian"
   },
-  "where": {
-    "lon": -27.09,
-    "lat": 38.76,
-    "precision": "city",
-    "label": "Lajes, Terceira"
-  },
+  "place": "lajes",
   "region": "europe",
   "actors": [
     {

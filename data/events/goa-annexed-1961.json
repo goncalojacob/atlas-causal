@@ -32,12 +32,7 @@
     "date": "1961-12-18",
     "calendar": "gregorian"
   },
-  "where": {
-    "lon": 73.83,
-    "lat": 15.49,
-    "precision": "city",
-    "label": "Panaji"
-  },
+  "place": "panaji",
   "region": null,
   "actors": [
     {

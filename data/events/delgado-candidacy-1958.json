@@ -32,12 +32,7 @@
     "date": "1958-06-08",
     "calendar": "gregorian"
   },
-  "where": {
-    "lon": -9.14,
-    "lat": 38.72,
-    "precision": "city",
-    "label": "Lisbon"
-  },
+  "place": "lisbon",
   "region": null,
   "actors": [
     {

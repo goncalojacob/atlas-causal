@@ -28,12 +28,7 @@
     "date": "1975-12-07",
     "calendar": "gregorian"
   },
-  "where": {
-    "lon": 125.57,
-    "lat": -8.56,
-    "precision": "city",
-    "label": "Dili"
-  },
+  "place": "dili",
   "region": null,
   "actors": [
     {

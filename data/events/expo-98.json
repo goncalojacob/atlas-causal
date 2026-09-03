@@ -28,12 +28,7 @@
     "date": "1998-05-22",
     "calendar": "gregorian"
   },
-  "where": {
-    "lon": -9.09,
-    "lat": 38.77,
-    "precision": "city",
-    "label": "Parque das Nações, Lisbon"
-  },
+  "place": "parque-das-nacoes",
   "region": null,
   "actors": [
     {

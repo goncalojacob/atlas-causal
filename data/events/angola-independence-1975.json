@@ -32,12 +32,7 @@
     "date": "1975-11-11",
     "calendar": "gregorian"
   },
-  "where": {
-    "lon": 13.23,
-    "lat": -8.84,
-    "precision": "city",
-    "label": "Luanda"
-  },
+  "place": "luanda",
   "region": null,
   "actors": [
     {

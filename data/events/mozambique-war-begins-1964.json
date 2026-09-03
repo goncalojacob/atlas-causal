@@ -28,12 +28,7 @@
     "date": "1964-09-25",
     "calendar": "gregorian"
   },
-  "where": {
-    "lon": 40,
-    "lat": -12.4,
-    "precision": "region",
-    "label": "Chai, Cabo Delgado"
-  },
+  "place": "chai",
   "region": null,
   "actors": [
     {

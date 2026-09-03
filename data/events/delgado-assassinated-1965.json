@@ -32,12 +32,7 @@
     "date": "1965-02-13",
     "calendar": "gregorian"
   },
-  "where": {
-    "lon": -7.17,
-    "lat": 38.38,
-    "precision": "region",
-    "label": "near Villanueva del Fresno, Spain"
-  },
+  "place": "near-villanueva-del-fresno",
   "region": "europe",
   "actors": [
     {

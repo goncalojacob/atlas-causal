@@ -32,12 +32,7 @@
     "date": "1926-05-28",
     "calendar": "gregorian"
   },
-  "where": {
-    "lon": -8.42,
-    "lat": 41.55,
-    "precision": "city",
-    "label": "Braga"
-  },
+  "place": "braga",
   "region": null,
   "actors": [
     {

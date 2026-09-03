@@ -29,12 +29,7 @@
     },
     "end": null
   },
-  "where": {
-    "lon": -35,
-    "lat": 45,
-    "precision": "city",
-    "label": "Fixture place G"
-  },
+  "place": "fixture-place-g",
   "region": null,
   "actors": []
 }

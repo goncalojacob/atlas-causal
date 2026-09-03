@@ -23,7 +23,9 @@ test('the fixture dataset passes with exactly the two intended warnings', async 
   assert.equal(r.errors.length, 0, messages(r));
   assert.deepEqual(
     r.warnings.map((w) => `${w.rule}:${w.id}`).sort(),
-    ['degree-zero:fixture-event-h', 'no-citers:fixture-source-4'],
+    // fixture-place-m is where the tombstoned event happened: no active event
+    // stands there any more, and that is exactly what place-unused says.
+    ['degree-zero:fixture-event-h', 'no-citers:fixture-source-4', 'place-unused:fixture-place-m'],
   );
 });
 
@@ -155,11 +157,15 @@ test('rule 9: consensus needs two sources by different authors', async () => {
   assert.equal(rulesHit(r, 9).length, 0, messages(r));
 });
 
-test('rule 10: WGS84 bounds, region required without where', async () => {
-  let r = await run((fx) => { fx.byId['fixture-event-a'].where.lon = 181; });
+test('rule 10: WGS84 bounds, region required without a place', async () => {
+  // The coordinates live on the place now, so that is where the bounds are
+  // checked; tests/place-rules.test.mjs has the rest of the kind.
+  let r = await run((fx) => { fx.byId['fixture-place-a'].where.lon = 181; });
   assert.equal(rulesHit(r, 10)[0].path, '/where/lon');
-  r = await run((fx) => { fx.byId['fixture-event-a'].where.lat = -91; });
+  r = await run((fx) => { fx.byId['fixture-place-a'].where.lat = -91; });
   assert.equal(rulesHit(r, 10)[0].path, '/where/lat');
+  r = await run((fx) => { fx.byId['fixture-actor-one'].where.lon = 181; });
+  assert.equal(rulesHit(r, 10)[0].path, '/where/lon');
   r = await run((fx) => { fx.byId['fixture-event-f'].region = null; });
   assert.equal(rulesHit(r, 10)[0].path, '/region');
 });

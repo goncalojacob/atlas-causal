@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "dili",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "sources": [],
+  "names": [
+    "Dili"
+  ],
+  "where": {
+    "lon": 125.57,
+    "lat": -8.56,
+    "precision": "city",
+    "label": "Dili"
+  },
+  "region": null,
+  "summary": null
+}

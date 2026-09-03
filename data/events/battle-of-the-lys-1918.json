@@ -28,12 +28,7 @@
     "date": "1918-04-09",
     "calendar": "gregorian"
   },
-  "where": {
-    "lon": 2.78,
-    "lat": 50.62,
-    "precision": "region",
-    "label": "Flanders, near Laventie"
-  },
+  "place": "flanders",
   "region": null,
   "actors": [
     {

@@ -28,12 +28,7 @@
     "date": "1963-01-23",
     "calendar": "gregorian"
   },
-  "where": {
-    "lon": -15.35,
-    "lat": 11.42,
-    "precision": "city",
-    "label": "Tite"
-  },
+  "place": "tite",
   "region": null,
   "actors": [
     {

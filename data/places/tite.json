@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "tite",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "sources": [],
+  "names": [
+    "Tite"
+  ],
+  "where": {
+    "lon": -15.35,
+    "lat": 11.42,
+    "precision": "city",
+    "label": "Tite"
+  },
+  "region": null,
+  "summary": null
+}

@@ -28,12 +28,7 @@
     "date": "1911-04-20",
     "calendar": "gregorian"
   },
-  "where": {
-    "lon": -9.14,
-    "lat": 38.72,
-    "precision": "city",
-    "label": "Lisbon"
-  },
+  "place": "lisbon",
   "region": null,
   "actors": [
     {

@@ -48,7 +48,7 @@ test('manifest names the hashed files, counts, lanes and land', async () => {
   const built = await buildIndex(FIXTURE_DATA);
   const manifest = JSON.parse(built.files['manifest.json']);
   assert.equal(manifest.schema, 1);
-  assert.deepEqual(manifest.counts, { events: 12, edges: 10, sources: 4, actors: 4, presences: 3, places: 0, regions: 3 });
+  assert.deepEqual(manifest.counts, { events: 12, edges: 10, sources: 4, actors: 4, presences: 3, places: 11, regions: 3 });
   assert.match(manifest.files.topology, /^index\/topology-[0-9a-f]{12}\.json$/);
   assert.match(manifest.files.sources, /^index\/sources-[0-9a-f]{12}\.json$/);
   assert.ok(Object.hasOwn(built.files, path.basename(manifest.files.topology)));
@@ -137,14 +137,19 @@ test('the repository data/ validates and its index is fresh', async () => {
 test('a point with no lane in reach blocks the index', async () => {
   const dir = await tempCopyOfFixtures();
   try {
-    const file = path.join(dir, 'events', 'fixture-event-o.json');
-    const record = JSON.parse(await readFile(file, 'utf8'));
-    record.region = null;
-    await writeFile(file, JSON.stringify(record));
+    // The lane is derived from the place now, so both overrides have to go
+    // before the point is genuinely out of reach of every lane polygon.
+    for (const [sub, id] of [['events', 'fixture-event-o'], ['places', 'fixture-place-o']]) {
+      const file = path.join(dir, sub, `${id}.json`);
+      const record = JSON.parse(await readFile(file, 'utf8'));
+      record.region = null;
+      await writeFile(file, JSON.stringify(record));
+    }
     const built = await buildIndex(dir);
     assert.deepEqual(built.unresolved.map((e) => e.id), ['fixture-event-o']);
     const result = await runValidation(dir);
     assert.ok(result.errors.some((e) => e.rule === 10 && e.id === 'fixture-event-o'));
+    assert.ok(result.errors.some((e) => e.rule === 10 && e.id === 'fixture-place-o'), 'the place is where the lane could not be found');
   } finally {
     await rm(dir, { recursive: true, force: true });
   }

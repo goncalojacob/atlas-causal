@@ -28,12 +28,7 @@
     "date": "1955-12-14",
     "calendar": "gregorian"
   },
-  "where": {
-    "lon": -73.97,
-    "lat": 40.75,
-    "precision": "city",
-    "label": "New York"
-  },
+  "place": "new-york",
   "region": null,
   "actors": [
     {

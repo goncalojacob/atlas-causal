@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "panaji",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "sources": [],
+  "names": [
+    "Panaji"
+  ],
+  "where": {
+    "lon": 73.83,
+    "lat": 15.49,
+    "precision": "city",
+    "label": "Panaji"
+  },
+  "region": null,
+  "summary": null
+}

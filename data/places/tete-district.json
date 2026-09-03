@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "tete-district",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "sources": [],
+  "names": [
+    "Tete district, Mozambique"
+  ],
+  "where": {
+    "lon": 33.4,
+    "lat": -16.3,
+    "precision": "region",
+    "label": "Tete district, Mozambique"
+  },
+  "region": null,
+  "summary": null
+}

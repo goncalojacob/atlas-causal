@@ -32,12 +32,7 @@
     "date": "1949-04-04",
     "calendar": "gregorian"
   },
-  "where": {
-    "lon": -77.04,
-    "lat": 38.9,
-    "precision": "city",
-    "label": "Washington"
-  },
+  "place": "washington",
   "region": null,
   "actors": [
     {

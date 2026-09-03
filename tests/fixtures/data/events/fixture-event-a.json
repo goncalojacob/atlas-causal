@@ -27,12 +27,7 @@
     "end": 1200,
     "date": "1200-03-01"
   },
-  "where": {
-    "lon": -30,
-    "lat": 40,
-    "precision": "city",
-    "label": "Fixture place A"
-  },
+  "place": "fixture-place-a",
   "region": null,
   "actors": [
     {

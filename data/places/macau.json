@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "macau",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "sources": [],
+  "names": [
+    "Macau"
+  ],
+  "where": {
+    "lon": 113.54,
+    "lat": 22.2,
+    "precision": "city",
+    "label": "Macau"
+  },
+  "region": null,
+  "summary": null
+}

@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "luanda",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "sources": [],
+  "names": [
+    "Luanda"
+  ],
+  "where": {
+    "lon": 13.23,
+    "lat": -8.84,
+    "precision": "city",
+    "label": "Luanda"
+  },
+  "region": null,
+  "summary": null
+}

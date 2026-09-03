@@ -28,12 +28,7 @@
     "date": "1999-12-20",
     "calendar": "gregorian"
   },
-  "where": {
-    "lon": 113.54,
-    "lat": 22.2,
-    "precision": "city",
-    "label": "Macau"
-  },
+  "place": "macau",
   "region": null,
   "actors": [
     {

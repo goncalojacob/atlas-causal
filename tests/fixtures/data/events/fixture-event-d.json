@@ -26,12 +26,7 @@
     "start": 1240,
     "end": 1240
   },
-  "where": {
-    "lon": 20,
-    "lat": 10,
-    "precision": "city",
-    "label": "Fixture place D"
-  },
+  "place": "fixture-place-d",
   "region": null,
   "actors": []
 }
