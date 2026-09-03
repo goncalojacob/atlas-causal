@@ -106,11 +106,16 @@ function actorsHtml(ctx, event, highlighted) {
   return `<section class="actors"><h2>Who is in it <span class="count">${listed.length}</span></h2><ul class="actor-rows">${items.join('')}</ul></section>`;
 }
 
-// Where it happened. An event with no place is timeline-only and says so.
+// Where it happened: the place record, by name, and a way into its card. An
+// event with no place is timeline-only and says so.
 function whereHtml(ctx, event) {
+  const place = ctx.atlas.placeOf(event);
   const where = ctx.atlas.pointOf(event);
   if (!where) return ' · <span class="muted">no place: timeline only</span>';
-  return ` · <span class="where">${esc(where.label)} <span class="muted">(${esc(where.precision)})</span></span>`;
+  const name = place
+    ? `<button type="button" class="link" data-action="place" data-id="${esc(place.id)}">${esc(place.name)}</button>`
+    : esc(where.label);
+  return ` · <span class="where">${name} <span class="muted">(${esc(where.precision)})</span></span>`;
 }
 
 export function renderEventCard(ctx, { container, event, found, state, mine }) {

@@ -2,9 +2,11 @@
 // results out — so node --test can hold it to its promises; search-box.js is
 // the input, the list and the keys.
 //
-// It searches what the topology already carries: every active event's title
-// and every active actor's names, the imported polities included, so "Angola"
-// finds the colony's record and the events it appears in at once. Nothing is
+// It searches what the topology already carries: every active event's title,
+// every active actor's names — the imported polities included, so "Angola"
+// finds the colony's record and the events it appears in at once — and every
+// place's names, so "Lisboa" finds Lisbon and everything that happened there
+// without knowing a single title. Nothing is
 // fetched and nothing is precomputed at index time: a few hundred titles is a
 // scan, and a search index in data/index/ would be five megabytes of the one
 // thing the atlas deliberately keeps out of it (ARCHITECTURE.md, "Scale").
@@ -28,7 +30,7 @@ export function rank(term, query) {
 }
 
 // One entry per record: everything it can be found by, folded once.
-export function buildSearchIndex({ events = [], actors = [] } = {}) {
+export function buildSearchIndex({ events = [], actors = [], places = [] } = {}) {
   const entries = [];
   for (const event of events) {
     if (event.status && event.status !== 'active') continue;
@@ -52,6 +54,20 @@ export function buildSearchIndex({ events = [], actors = [] } = {}) {
       detail: actor.actorType ?? null,
       when: actor.when,
       // The variants are what makes "PIDE" and "DGS" one record.
+      variants: names.slice(1),
+      weight: 0,
+      terms: names.map(fold),
+    });
+  }
+  for (const place of places) {
+    if (place.status && place.status !== 'active') continue;
+    const names = place.names?.length ? place.names : [place.name];
+    entries.push({
+      kind: 'place',
+      id: place.id,
+      label: names[0],
+      detail: null,
+      when: null,
       variants: names.slice(1),
       weight: 0,
       terms: names.map(fold),

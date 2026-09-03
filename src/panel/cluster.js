@@ -12,10 +12,14 @@ export function clusterHtml(ctx, cluster) {
     .map((m) => m.event)
     .sort((a, b) => ctx.startYear(a) - ctx.startYear(b) || (a.id < b.id ? -1 : a.id > b.id ? 1 : 0));
   const onTimeline = cluster.on === 'timeline';
-  // On the map a stack is a place; on the timeline it is a stretch of one
-  // lane, and saying "here" of a lane means the lane's own name.
+  // On the map a stack is a place — a record of its own, so the heading names
+  // it and opens its card; on the timeline it is a stretch of one lane, and
+  // saying "here" of a lane means the lane's own name.
+  const place = onTimeline ? null : ctx.atlas.placeOf(cluster.representative.event);
   const label = onTimeline ? cluster.lane?.label ?? null : ctx.atlas.pointOf(cluster.representative.event)?.label ?? null;
-  const where = label ? `<span class="count">${esc(label)}</span>` : '';
+  const where = place
+    ? `<span class="count"><button type="button" class="link" data-action="place" data-id="${esc(place.id)}">${esc(place.name)}</button></span>`
+    : label ? `<span class="count">${esc(label)}</span>` : '';
   const hint = onTimeline
     ? 'The timeline draws these as one bar at this width. Narrow the window and they separate.'
     : cluster.coincident

@@ -333,6 +333,14 @@ svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align:
 .panel .cluster-list h2 { margin-top: 0; }
 .panel .cluster-list .when { min-width: 4ch; display: inline-block; }
 
+/* --- places ---------------------------------------------------------- */
+
+.panel .place-head h2 { font-size: 1.5rem; margin-top: 0; }
+.panel .place-events .when { min-width: 4ch; display: inline-block; }
+/* An event outside the window is faded here for the same reason it is faded
+   on the map: a place's history does not stop at the edge of the band. */
+.panel .actor-row.faded { opacity: 0.45; }
+
 /* --- reading pages: contribute.html, about.html ----------------------- */
 
 .page-body { height: auto; }

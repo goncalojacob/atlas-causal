@@ -9,12 +9,13 @@ test('parse and format round trip', () => {
     to: 1250,
     view: 'graph',
     selected: 'fixture-event-t',
+    place: 'fixture-place-one',
     actor: 'fixture-actor-one',
     chain: ['fixture-event-a--fixture-event-b--caused', 'fixture-event-b--fixture-event-d--enabled'],
     layers: ['events'],
   };
   const search = formatState(state);
-  assert.equal(search, '?from=1200&to=1250&view=graph&selected=fixture-event-t&actor=fixture-actor-one&chain=fixture-event-a--fixture-event-b--caused,fixture-event-b--fixture-event-d--enabled&layers=events');
+  assert.equal(search, '?from=1200&to=1250&view=graph&selected=fixture-event-t&place=fixture-place-one&actor=fixture-actor-one&chain=fixture-event-a--fixture-event-b--caused,fixture-event-b--fixture-event-d--enabled&layers=events');
   assert.deepEqual(parseState(search), state);
 });
 
@@ -53,6 +54,8 @@ test('garbage falls back field by field; a bad chain step cuts the chain there',
   assert.equal(s.selected, null);
   assert.equal(parseState('?actor=<script>').actor, null);
   assert.equal(parseState('?actor=fixture-actor-one').actor, 'fixture-actor-one');
+  assert.equal(parseState('?place=../secret').place, null);
+  assert.equal(parseState('?place=lisbon').place, 'lisbon');
   assert.deepEqual(s.chain, ['fixture-event-a--fixture-event-b--caused']);
   assert.deepEqual(s.layers, ['events']);
   assert.equal(parseState('?to=0').to, null);
@@ -73,7 +76,7 @@ test('the store merges patches and notifies', () => {
   off();
   store.set({ to: 1220 });
   assert.deepEqual(seen, [1210, 1210]);
-  assert.deepEqual(store.get(), { from: null, to: 1220, view: 'map', selected: 'fixture-event-a', actor: null, chain: [], layers: ['land', 'territories', 'events'] });
+  assert.deepEqual(store.get(), { from: null, to: 1220, view: 'map', selected: 'fixture-event-a', place: null, actor: null, chain: [], layers: ['land', 'territories', 'events'] });
 });
 
 // --- the window itself ----------------------------------------------------

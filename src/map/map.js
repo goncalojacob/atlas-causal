@@ -24,16 +24,18 @@ const MAX_ZOOM = DEEPEST_ZOOM;
 const CLUSTER_ZOOM_STEP = 3;
 const ZOOM_DURATION = 260;
 
-function eventBounds(events) {
-  const placed = events.filter((e) => e.where);
-  if (placed.length === 0) return WORLD;
-  const lons = placed.map((e) => e.where.lon);
-  const lats = placed.map((e) => e.where.lat);
+// The box every placed event fits in. An event's coordinates are its place's:
+// pointOf resolves the one to the other.
+function eventBounds(events, pointOf) {
+  const points = events.map(pointOf).filter(Boolean);
+  if (points.length === 0) return WORLD;
+  const lons = points.map((p) => p.lon);
+  const lats = points.map((p) => p.lat);
   return [[Math.min(...lons), Math.min(...lats)], [Math.max(...lons), Math.max(...lats)]];
 }
 
 export function createMap(container, { atlas, state, onCluster = null }) {
-  const projection = fitBounds(eventBounds(atlas.activeEvents), { width: WIDTH, height: HEIGHT, margin: 0.15 });
+  const projection = fitBounds(eventBounds(atlas.activeEvents, atlas.pointOf), { width: WIDTH, height: HEIGHT, margin: 0.15 });
   const viewport = svg('g', { class: 'viewport' });
   const landGroup = svg('g', { class: 'layer layer-land' });
   // Territories go between the coastlines and the marks: an event still sits
@@ -54,6 +56,7 @@ export function createMap(container, { atlas, state, onCluster = null }) {
   // the members, so there is a way to read the stack and a way in from the
   // keyboard.
   const events = createEventsLayer(eventsGroup, projection, {
+    pointOf: atlas.pointOf,
     onSelect: (id) => state.set({ selected: id, chain: [] }),
     onCluster: (cluster) => {
       if (onCluster) onCluster(cluster);

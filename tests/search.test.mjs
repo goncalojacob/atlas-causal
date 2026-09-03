@@ -18,7 +18,12 @@ const ACTORS = [
   { id: 'pvde-pide-dgs', name: 'PIDE', names: ['PIDE', 'Polícia Internacional e de Defesa do Estado', 'DGS'], actorType: 'institution', when: { start: 1945, end: 1974 }, status: 'active' },
   { id: 'gone', name: 'Gone', names: ['Gone'], actorType: 'polity', when: { start: 1900, end: 1901 }, status: 'merged' },
 ];
-const index = buildSearchIndex({ events: EVENTS, actors: ACTORS });
+const PLACES = [
+  { id: 'lisbon', name: 'Lisbon', names: ['Lisbon', 'Lisboa'], where: { lon: -9.14, lat: 38.72, precision: 'city', label: 'Lisbon' }, status: 'active' },
+  { id: 'luanda', name: 'Luanda', names: ['Luanda'], where: { lon: 13.23, lat: -8.84, precision: 'city', label: 'Luanda' }, status: 'active' },
+  { id: 'nowhere', name: 'Nowhere', names: ['Nowhere'], where: { lon: 0, lat: 0, precision: 'city', label: 'Nowhere' }, status: 'retracted' },
+];
+const index = buildSearchIndex({ events: EVENTS, actors: ACTORS, places: PLACES });
 
 test('folding drops case and diacritics', () => {
   assert.equal(fold('Amílcar Cabral'), 'amilcar cabral');
@@ -40,6 +45,18 @@ test('the index holds active records only, with their variants', () => {
   const pide = index.find((e) => e.id === 'pvde-pide-dgs');
   assert.deepEqual(pide.terms, ['pide', 'policia internacional e de defesa do estado', 'dgs']);
   assert.equal(pide.label, 'PIDE');
+});
+
+test('a place is found by any of its names, and only while it is active', () => {
+  assert.equal(index.filter((e) => e.kind === 'place').length, 2, 'the retracted place is not searchable');
+  const hits = flatten(search(index, 'lisboa'));
+  assert.equal(hits.length, 1);
+  assert.equal(hits[0].kind, 'place');
+  assert.equal(hits[0].id, 'lisbon');
+  assert.equal(hits[0].label, 'Lisbon', 'the display name, whichever variant matched');
+  // A place has no dates, and sorting must not fall over on that.
+  assert.equal(hits[0].when, null);
+  assert.equal(flatten(search(index, 'luand'))[0].id, 'luanda');
 });
 
 test('"sal" puts Salazar the actor first, above the events that mention him', () => {

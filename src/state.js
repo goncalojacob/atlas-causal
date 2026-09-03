@@ -1,4 +1,4 @@
-// One state object, { from, to, view, selected, actor, chain, layers },
+// One state object, { from, to, view, selected, place, actor, chain, layers },
 // mirrored to
 // the URL query string so every view is a shareable link. Knows nothing
 // about SVG or data files. The pure parse/format pair is separate from the
@@ -15,10 +15,12 @@
 // view. It is state, not a preference: a link is meant to open on the
 // picture the person who sent it was looking at.
 //
-// `selected` and `actor` are two dimensions of the same view, not
+// `selected`, `place` and `actor` are dimensions of the same view, not
 // alternatives: an actor stays highlighted on the map and the timeline
 // while its events are read one after another, and `?actor=salazar` alone
-// opens the actor's card.
+// opens the actor's card. Which card the panel shows is a precedence —
+// `selected` over `place` over `actor` — so opening an event from a place's
+// list does not throw the place away.
 
 import { isValidYear } from './util/dates.js';
 
@@ -30,7 +32,7 @@ export const VIEWS = Object.freeze(['map', 'graph']);
 const PASSTHROUGH = Object.freeze(['fixtures']);
 
 export function defaultState() {
-  return { from: null, to: null, view: 'map', selected: null, actor: null, chain: [], layers: [...LAYERS] };
+  return { from: null, to: null, view: 'map', selected: null, place: null, actor: null, chain: [], layers: [...LAYERS] };
 }
 
 // Garbage in the URL falls back to defaults field by field; a bad chain
@@ -54,6 +56,10 @@ export function parseState(search, defaults = defaultState()) {
   if (params.has('selected')) {
     const id = params.get('selected');
     if (SLUG.test(id)) state.selected = id;
+  }
+  if (params.has('place')) {
+    const id = params.get('place');
+    if (SLUG.test(id)) state.place = id;
   }
   if (params.has('actor')) {
     const id = params.get('actor');
@@ -82,6 +88,7 @@ export function formatState(state, search = '') {
   if (state.to !== null) params.set('to', String(state.to));
   if (state.view && state.view !== 'map') params.set('view', state.view);
   if (state.selected) params.set('selected', state.selected);
+  if (state.place) params.set('place', state.place);
   if (state.actor) params.set('actor', state.actor);
   if (state.chain.length) params.set('chain', state.chain.join(','));
   if (state.layers.length !== LAYERS.length || state.layers.some((l, i) => l !== LAYERS[i])) {

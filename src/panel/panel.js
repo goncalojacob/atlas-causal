@@ -3,14 +3,15 @@
 // This file owns the container, the clicks, the load token that cancels the
 // text of a card the reader has already left, and the helpers every card
 // needs — citations, the link to an event, the lane's name. The cards
-// themselves are one file each: event.js, actor.js, cluster.js. Which one is
-// shown is decided in render() and nowhere else.
+// themselves are one file each: event.js, place.js, actor.js, cluster.js.
+// Which one is shown is decided in render() and nowhere else.
 
 import { esc, safeUrl } from '../util/esc.js';
 import { formatInterval, bounds } from '../util/dates.js';
 import { windowAt } from '../util/window.js';
 import { renderEventCard } from './event.js';
 import { renderActorCard } from './actor.js';
+import { renderPlaceCard } from './place.js';
 import { clusterHtml } from './cluster.js';
 
 export function createPanel(container, { atlas, state, fixtures = false }) {
@@ -30,6 +31,15 @@ export function createPanel(container, { atlas, state, fixtures = false }) {
         break;
       case 'actor':
         state.set({ actor: el.dataset.id, selected: null, chain: [] });
+        break;
+      // Choosing a place clears the event and the path and keeps the actor,
+      // the way choosing an actor does: they are different questions about
+      // the same graph.
+      case 'place':
+        state.set({ place: el.dataset.id, selected: null, chain: [] });
+        break;
+      case 'clear-place':
+        state.set({ place: null });
         break;
       case 'clear-actor':
         state.set({ actor: null });
@@ -150,7 +160,15 @@ export function createPanel(container, { atlas, state, fixtures = false }) {
   function render(s) {
     token += 1;
     const mine = token;
+    // The precedence: an event, then a place, then an actor. Opening an
+    // event from a place's list therefore does not throw the place away.
     if (!s.selected) {
+      if (s.place) {
+        const found = atlas.resolve(s.place);
+        if (found && found.kind === 'place') renderPlaceCard(ctx, { container, place: found.record, state: s, mine });
+        else notFound('place', s.place);
+        return;
+      }
       if (s.actor) {
         const actor = highlightedActor(s);
         if (actor) renderActorCard(ctx, { container, actor, mine });

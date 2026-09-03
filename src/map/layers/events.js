@@ -57,7 +57,9 @@ function markClasses(event, { selected, pathIds, actorIds, faded = false }) {
   ].join(' ').replace(/\s+/g, ' ').trim();
 }
 
-export function createEventsLayer(group, projection, { onSelect, onCluster = null }) {
+// pointOf resolves an event to the coordinates of the place it names; the
+// coordinates are the place's, never the event's own (M9).
+export function createEventsLayer(group, projection, { pointOf, onSelect, onCluster = null }) {
   // What the last render drew, so a click on a cluster can be answered with
   // the cluster itself rather than with an id the caller would have to look
   // the members up from.
@@ -75,7 +77,10 @@ export function createEventsLayer(group, projection, { onSelect, onCluster = nul
     if (cluster && onCluster) onCluster(cluster);
   });
 
-  const place = (event) => (event.where ? projection.project([event.where.lon, event.where.lat]) : null);
+  const place = (event) => {
+    const where = pointOf(event);
+    return where ? projection.project([where.lon, where.lat]) : null;
+  };
 
   // window: { from, to } astronomical, or null for "everything". k: current
   // zoom factor. view: the rectangle of projected space on screen, for
