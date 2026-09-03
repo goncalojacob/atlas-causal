@@ -93,6 +93,28 @@ export function createAtlas({ manifest, topology, sources, land = null, dataRoot
       || (a.event.id < b.event.id ? -1 : a.event.id > b.event.id ? 1 : 0));
   }
 
+  // --- relations between actors ------------------------------------------
+  // An edge runs between events; a relation runs between actors, and it is
+  // read from either end. One list per actor, each entry saying which way the
+  // relation points from where you are standing, so the card can head a group
+  // with "Regime of" or with "Regimes" from the same record.
+  const activeRelations = (topology.relations ?? []).filter((r) => r.status === 'active');
+  const relations = new Map(activeRelations.map((r) => [r.id, r]));
+  const relationsByActor = new Map();
+  const noteRelation = (actorId, entry) => {
+    if (!actors.has(actorId)) return;
+    if (!relationsByActor.has(actorId)) relationsByActor.set(actorId, []);
+    relationsByActor.get(actorId).push(entry);
+  };
+  for (const relation of activeRelations) {
+    noteRelation(relation.from, { relation, direction: 'out', other: relation.to });
+    noteRelation(relation.to, { relation, direction: 'in', other: relation.from });
+  }
+  for (const list of relationsByActor.values()) {
+    list.sort((a, b) => intervalExtent(a.relation.when).min - intervalExtent(b.relation.when).min
+      || (a.relation.id < b.relation.id ? -1 : a.relation.id > b.relation.id ? 1 : 0));
+  }
+
   // --- places ------------------------------------------------------------
   // An event points at a place and the place holds the point, so everything
   // that draws asks for the point here rather than reading a field off the
@@ -202,6 +224,8 @@ export function createAtlas({ manifest, topology, sources, land = null, dataRoot
     placeOf,
     pointOf,
     eventsByActor,
+    relations,
+    relationsByActor,
     aliases,
     adjacency: buildAdjacency(topology.events, topology.edges),
     activeEvents,

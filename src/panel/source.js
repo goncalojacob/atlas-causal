@@ -59,6 +59,19 @@ function citerRow(ctx, citation) {
     if (!actor) return '';
     return `<li class="actor-row"><button type="button" class="link" data-action="actor" data-id="${esc(actor.id)}">${esc(actor.name)}</button>${locator}${dissent}</li>`;
   }
+  // A relation has no card of its own either: it is drawn as the two actors
+  // with its type between them, and either name opens that actor's card,
+  // where the relation is listed with everything else about it.
+  if (citation.kind === 'relation') {
+    const relation = atlas.relations?.get(citation.id);
+    if (!relation) return '';
+    const name = (id) => esc(atlas.actors.get(id)?.name ?? id);
+    return `<li class="actor-row">
+      <button type="button" class="link" data-action="actor" data-id="${esc(relation.from)}">${name(relation.from)}</button>
+      <span class="arrow">${esc(relation.type)}</span>
+      <button type="button" class="link" data-action="actor" data-id="${esc(relation.to)}">${name(relation.to)}</button>
+      ${locator}${dissent}</li>`;
+  }
   if (citation.kind === 'place') {
     const place = atlas.places.get(citation.id);
     if (!place) return '';

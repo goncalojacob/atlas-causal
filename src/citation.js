@@ -12,6 +12,7 @@ export const CITER_LABEL = Object.freeze({
   event: 'Events',
   edge: 'Links',
   actor: 'Actors',
+  relation: 'Relations between actors',
   place: 'Places',
   presence: 'Territories',
   narrative: 'Narratives',
@@ -19,7 +20,7 @@ export const CITER_LABEL = Object.freeze({
 
 // The order the groups are shown in on a source's card. A kind the record
 // set does not have yet simply never appears.
-export const CITER_ORDER = Object.freeze(['event', 'edge', 'actor', 'place', 'presence', 'narrative']);
+export const CITER_ORDER = Object.freeze(['event', 'edge', 'actor', 'relation', 'place', 'presence', 'narrative']);
 
 // "Maxwell, K. (1995). The Making of Portuguese Democracy. Cambridge
 // University Press." — the citation as the record has it, in one string, for

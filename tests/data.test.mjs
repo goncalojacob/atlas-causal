@@ -62,6 +62,27 @@ test('actors resolve and carry the events they appear in, chronologically', asyn
   assert.equal(atlas.events.get('fixture-event-a').actors[0].actor, 'fixture-actor-one');
 });
 
+test('relations are adjacency by actor, read from both ends', async () => {
+  const atlas = await loadAtlas({ dataRoot: 'tests/fixtures/data/', fetchJson });
+  assert.equal(atlas.relations.size, 3);
+  // The person's end: two relations out, oldest first.
+  assert.deepEqual(
+    atlas.relationsByActor.get('fixture-actor-one').map((r) => [r.relation.type, r.direction, r.other]),
+    [['member-of', 'out', 'fixture-actor-two'], ['led', 'out', 'fixture-actor-two']],
+  );
+  // The body's end: the same two records, pointing the other way.
+  assert.deepEqual(
+    atlas.relationsByActor.get('fixture-actor-two').map((r) => [r.relation.type, r.direction, r.other]),
+    [['member-of', 'in', 'fixture-actor-one'], ['led', 'in', 'fixture-actor-one']],
+  );
+  assert.deepEqual(
+    atlas.relationsByActor.get('fixture-polity-three').map((r) => [r.relation.type, r.direction, r.other]),
+    [['regime-of', 'in', 'fixture-polity-four']],
+  );
+  // An actor in no relation is absent rather than empty, like eventsByActor.
+  assert.equal(atlas.relationsByActor.has('fixture-nobody'), false);
+});
+
 test('createAtlas copes with an empty dataset', () => {
   const atlas = createAtlas({
     manifest: { schema: 1, regions: [], land: [], files: {} },

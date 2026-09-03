@@ -8,6 +8,28 @@ import { esc } from '../util/esc.js';
 import { formatInterval, formatYear, bounds } from '../util/dates.js';
 import { ACTOR_TYPE_LABEL } from './event.js';
 
+// What a relation is called from each end. The same record reads two ways —
+// "Regime of Portugal" on the Estado Novo's card and "Regimes" on Portugal's —
+// which is the whole reason the card groups by type *and* direction.
+// `allied-with` is symmetric and is the one type whose two directions are one
+// group.
+const RELATION_LABEL = Object.freeze({
+  'regime-of': { out: 'Regime of', in: 'Regimes' },
+  succeeded: { out: 'Succeeded by', in: 'Successor of' },
+  'member-of': { out: 'Member of', in: 'Members' },
+  'part-of': { out: 'Part of', in: 'Parts of it' },
+  led: { out: 'Led', in: 'Led by' },
+  'allied-with': { out: 'Allied with', in: 'Allied with' },
+});
+
+// The order the groups are drawn in: what this actor is, then what it was
+// made of, then who ran it, then who it stood beside.
+const RELATION_ORDER = Object.freeze([
+  'regime-of:out', 'regime-of:in', 'succeeded:out', 'succeeded:in',
+  'part-of:out', 'part-of:in', 'member-of:out', 'member-of:in',
+  'led:out', 'led:in', 'allied-with:out',
+]);
+
 const DEPENDENCY_LABEL = Object.freeze({
   colony: 'colony',
   protectorate: 'protectorate',
@@ -49,7 +71,42 @@ function territoryHtml(ctx, actor) {
   </section>`;
 }
 
-function actorCardHtml(ctx, actor) {
+// The relations this actor stands in, both ways round, grouped by type. Built
+// from the topology alone — a relation carries its note there — so however
+// many of them an actor has, the card costs no further request.
+function relationsHtml(ctx, actor) {
+  const standing = ctx.atlas.relationsByActor.get(actor.id) ?? [];
+  if (standing.length === 0) return '';
+  const groups = new Map();
+  for (const { relation, direction, other } of standing) {
+    // Symmetric: an alliance read from either end says the same thing, so
+    // both directions land in one group.
+    const key = `${relation.type}:${relation.type === 'allied-with' ? 'out' : direction}`;
+    if (!groups.has(key)) groups.set(key, []);
+    groups.get(key).push({ relation, other });
+  }
+  const sections = [];
+  for (const key of RELATION_ORDER) {
+    const rows = groups.get(key);
+    if (!rows) continue;
+    const [type, direction] = key.split(':');
+    const items = rows.map(({ relation, other }) => `<li class="actor-row">
+      <button type="button" class="link" data-action="actor" data-id="${esc(other)}">${esc(ctx.atlas.actors.get(other)?.name ?? other)}</button>
+      <span class="when">${esc(formatInterval(relation.when))}</span>
+      ${relation.note ? `<span class="muted">${esc(relation.note)}</span>` : ''}
+    </li>`);
+    sections.push(`<h3>${esc(RELATION_LABEL[type][direction])}</h3><ul class="actor-rows">${items.join('')}</ul>`);
+  }
+  return `<section class="relations">
+    <h2>Relations <span class="count">${standing.length}</span></h2>
+    <p class="hint">Links between actors, not between events: who a body belonged to, who led it, what came after it.</p>
+    ${sections.join('')}
+  </section>`;
+}
+
+// Exported for the tests: there is no DOM in node --test, and the card is
+// the string, exactly as the source card is.
+export function actorCardHtml(ctx, actor) {
   const appearances = ctx.atlas.eventsByActor.get(actor.id) ?? [];
   const variants = (actor.names ?? []).slice(1);
   const rows = appearances.map(({ event, role }) => `<li class="actor-row">
@@ -68,6 +125,7 @@ function actorCardHtml(ctx, actor) {
       ${variants.length ? `<p class="also-known muted">also: ${variants.map((n) => esc(n)).join(' · ')}</p>` : ''}
     </header>
     <section class="summary" data-slot="actor-summary"><p class="muted">Loading…</p></section>
+    ${relationsHtml(ctx, actor)}
     ${territoryHtml(ctx, actor)}
     <section class="actor-events">
       <h2>Where it appears <span class="count">${appearances.length}</span></h2>
