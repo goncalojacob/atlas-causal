@@ -9,7 +9,7 @@
 // data/<kind>s/<id>.json, unchanged.
 
 import { validate } from '../validate/core.js';
-import { ACTOR_TYPES, EDGE_TYPES } from '../validate/rules.js';
+import { ACTOR_TYPES, EDGE_TYPES, RELATION_TYPES } from '../validate/rules.js';
 
 export const CONFIDENCE = Object.freeze(['consensus', 'probable', 'disputed']);
 export const SOURCE_TYPES = Object.freeze(['book', 'chapter', 'article', 'thesis', 'primary', 'dataset', 'web']);
@@ -59,6 +59,14 @@ export const FIELDS = Object.freeze({
     { key: 'lat', label: 'Latitude', input: 'text', path: '/where/lat', hint: 'WGS84, north positive' },
     { key: 'precision', label: 'Precision', input: 'select', options: PRECISION, path: '/where/precision' },
   ]),
+  relation: Object.freeze([
+    { key: 'from', label: 'From', input: 'select', optionsFrom: 'actors', path: '/from', required: true, hint: 'the regime, the body, the person: the end the type is written from' },
+    { key: 'to', label: 'To', input: 'select', optionsFrom: 'actors', path: '/to', required: true },
+    { key: 'type', label: 'Type', input: 'select', options: ['', ...RELATION_TYPES], path: '/type', required: true, hint: 'regime-of a state, succeeded by, member-of a body, part-of a body, led it, allied-with it' },
+    { key: 'start', label: 'Start year', input: 'text', path: '/when/start', required: true, hint: 'the year the relation began; a range as 1400..1450' },
+    { key: 'end', label: 'End year', input: 'text', path: '/when/end', hint: 'blank means the same year as the start; write "ongoing" for one that still holds' },
+    { key: 'note', label: 'Note', input: 'text', path: '/note', hint: 'optional, short, and written by you: what the type and the dates cannot say' },
+  ]),
   source: Object.freeze([
     { key: 'id', label: 'Id', input: 'text', path: '/id', required: true, hint: 'author, year, keyword: russell-2000-henry' },
     { key: 'type', label: 'Type', input: 'select', options: SOURCE_TYPES, path: '/type', required: true },
@@ -86,6 +94,8 @@ export const CITATION_LISTS = Object.freeze({
   ],
   source: [],
   actor: [{ key: 'citations', label: 'Sources', path: '/sources' }],
+  // A relation is an assertion about two actors, so it cites like an edge.
+  relation: [{ key: 'citations', label: 'Sources', path: '/sources' }],
   // A place is a geographic fact, not an argument: rule 6 exempts it, and the
   // form says so rather than asking for a citation nobody has.
   place: [],
@@ -99,6 +109,7 @@ export const ACTOR_LISTS = Object.freeze({
   edge: [],
   source: [],
   actor: [],
+  relation: [],
   place: [],
 });
 
@@ -264,6 +275,22 @@ export function buildRecord(kind, values, context = {}) {
     return record;
   }
 
+  if (kind === 'relation') {
+    const from = trimmed(v.from);
+    const to = trimmed(v.to);
+    const type = trimmed(v.type);
+    const start = parseBound(v.start);
+    return {
+      ...envelope('relation', `${from}--${to}--${type}`, context),
+      sources: citationsOf(v.citations),
+      from,
+      to,
+      type,
+      when: { start, end: parseEnd(v.end, start) },
+      note: orNull(v.note),
+    };
+  }
+
   if (kind === 'source') {
     const year = parseNumber(v.year);
     return {
@@ -282,7 +309,7 @@ export function buildRecord(kind, values, context = {}) {
     };
   }
 
-  throw new Error(`kind must be event, edge, source, actor or place, not "${kind}"`);
+  throw new Error(`kind must be event, edge, source, actor, place or relation, not "${kind}"`);
 }
 
 // entries: [{ kind, values }] in the order the contributor added them.
@@ -388,6 +415,6 @@ export function validateBundle(bundle, topology, schemas) {
 // asserted here rather than inferred from an empty error list.
 export function everythingCited(bundle) {
   return (bundle?.records ?? [])
-    .filter((r) => r.kind === 'event' || r.kind === 'edge' || r.kind === 'actor')
+    .filter((r) => r.kind === 'event' || r.kind === 'edge' || r.kind === 'actor' || r.kind === 'relation')
     .every((r) => Array.isArray(r.sources) && r.sources.length > 0);
 }

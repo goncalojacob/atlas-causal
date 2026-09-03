@@ -33,6 +33,15 @@ test('scaffolded records have the envelope and pass their schema; the text is le
   assert.equal(actor.where, null);
   assert.deepEqual(v.validate('v1/actor.json', actor).map((e) => e.path), ['/summary']);
 
+  const relation = scaffold('relation', ['salazar', 'estado-novo', 'led'], { ...opts, start: '1932', end: '1968', note: 'as President of the Council' });
+  assert.equal(relation.id, 'salazar--estado-novo--led');
+  assert.deepEqual(relation.when, { start: 1932, end: 1968 });
+  assert.equal(relation.note, 'as President of the Council');
+  // A relation is complete as scaffolded: its argument is the two ids, the
+  // type and the source, and there is no text a person still has to write.
+  assert.deepEqual(v.validate('v1/relation.json', relation), []);
+  assert.equal(scaffold('relation', ['a', 'b', 'member-of'], { ...opts, start: '1970', end: 'null' }).when.end, null);
+
   // A place is complete as scaffolded: it cites nothing and has no text a
   // person still has to write.
   const place = scaffold('place', ['fixture-scaffold-place'], {
@@ -64,6 +73,9 @@ test('scaffold refuses bad input', () => {
   assert.throws(() => scaffold('actor', ['x'], { ...opts, type: 'deity' }), /--type must be one of/);
   assert.throws(() => scaffold('actor', ['x'], opts), /--start/);
   assert.throws(() => scaffold('presence', ['x'], opts), /kind must be/);
+  assert.throws(() => scaffold('relation', ['a', 'b', 'friend-of'], { ...opts, start: '1' }), /type must be one of/);
+  assert.throws(() => scaffold('relation', ['a', 'b'], { ...opts, start: '1' }), /<from> <to> <type>/);
+  assert.throws(() => scaffold('relation', ['a', 'b', 'led'], opts), /--start/);
   assert.throws(() => scaffold('place', ['x'], opts), /--lon and --lat/);
   assert.throws(() => scaffold('place', ['Bad Id'], { ...opts, lon: '1', lat: '2' }), /slug/);
   assert.throws(() => scaffold('event', ['fixture-x'], { ...opts, start: '1', place: 'Not A Slug' }), /--place/);

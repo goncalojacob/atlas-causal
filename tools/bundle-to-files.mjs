@@ -6,8 +6,9 @@
 // be read (docs/review-2026-09-01.md, finding 8):
 //
 //   - every id is checked against the slug regex — the edge pattern for
-//     edges — BEFORE any path is built, so "../../.github/workflows/x.yml"
-//     is rejected as an id and never reaches the filesystem;
+//     edges, the relation pattern for relations — BEFORE any path is built,
+//     so "../../.github/workflows/x.yml" is rejected as an id and never
+//     reaches the filesystem;
 //   - the only directories it can write to are the three record ones, and
 //     the file name is path.basename of an id already proved to contain no
 //     separator, with the resolved path checked against the directory again;
@@ -23,7 +24,7 @@ import { writeFile, readFile, mkdir } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
-import { SLUG, EDGE_ID } from '../src/validate/rules.js';
+import { SLUG, EDGE_ID, RELATION_ID } from '../src/validate/rules.js';
 import { checkBundleShape } from '../src/contribute/bundle.js';
 import { KIND_DIRS } from './lib/read.mjs';
 
@@ -157,9 +158,14 @@ export function checkBundle(bundle) {
       problems.push(`${where}: id must be a string of 1 to ${MAX_ID} characters`);
       return;
     }
-    const pattern = record.kind === 'edge' ? EDGE_ID : SLUG;
+    // An edge id and a relation id have the same shape and different
+    // vocabularies, and neither is a slug: the pattern is chosen by kind so
+    // that an edge type can never stand in a relation's id or the reverse.
+    const pattern = record.kind === 'edge' ? EDGE_ID : record.kind === 'relation' ? RELATION_ID : SLUG;
     if (!pattern.test(id)) {
-      problems.push(`${where}: id ${JSON.stringify(id)} is not a ${record.kind === 'edge' ? 'from--to--type edge id' : 'slug'}`);
+      const shape = record.kind === 'edge' ? 'from--to--type edge id'
+        : record.kind === 'relation' ? 'from--to--type relation id' : 'slug';
+      problems.push(`${where}: id ${JSON.stringify(id)} is not a ${shape}`);
       return;
     }
     // The regexes above already forbid a separator, a dot and everything

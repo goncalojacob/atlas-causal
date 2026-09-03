@@ -38,7 +38,7 @@ function event(id, over = {}) {
 
 async function scratch() {
   const dir = await mkdtemp(path.join(tmpdir(), 'atlas-bundle-'));
-  for (const sub of ['events', 'edges', 'sources', 'actors', 'places']) await mkdir(path.join(dir, sub), { recursive: true });
+  for (const sub of ['events', 'edges', 'sources', 'actors', 'places', 'relations']) await mkdir(path.join(dir, sub), { recursive: true });
   return dir;
 }
 
@@ -91,6 +91,14 @@ test('an id that is a path is rejected before any path is built', async () => {
   const edge = { schema: 1, records: [{ ...event('fixture-event-a--fixture-event-b--invented'), kind: 'edge' }] };
   assert.throws(() => checkBundle(edge), /from--to--type/);
   assert.throws(() => checkBundle({ schema: 1, records: [{ ...event('plain-slug'), kind: 'edge' }] }), /from--to--type/);
+  // A relation id has the same shape and its own vocabulary: an edge type in
+  // a relation id, or the reverse, is not a bare file name of anything.
+  assert.throws(() => checkBundle({ schema: 1, records: [{ ...event('salazar--estado-novo--caused'), kind: 'relation' }] }), /relation id/);
+  assert.throws(() => checkBundle({ schema: 1, records: [{ ...event('salazar--estado-novo--led'), kind: 'edge' }] }), /edge id/);
+  assert.deepEqual(
+    checkBundle({ schema: 1, records: [{ ...event('salazar--estado-novo--led'), kind: 'relation' }] }).map((c) => c.dir),
+    ['relations'],
+  );
   assert.deepEqual(
     checkBundle({ schema: 1, records: [{ ...event('fixture-event-a--fixture-event-b--caused'), kind: 'edge' }] }).map((c) => c.dir),
     ['edges'],

@@ -143,6 +143,27 @@ test('a built record carries the envelope and passes its schema', async () => {
   assert.equal(source.publisher, null);
   assert.deepEqual(v.validate('v1/source.json', source), []);
 
+  const relation = buildRecord('relation', {
+    ...emptyValues('relation'),
+    from: 'fixture-actor-one',
+    to: 'fixture-polity-three',
+    type: 'member-of',
+    start: '1200',
+    end: '',
+    note: '  ',
+    citations: [{ source: 'fixture-source-1' }],
+  }, CONTEXT);
+  assert.equal(relation.id, 'fixture-actor-one--fixture-polity-three--member-of');
+  // A blank end is the year it began, as everywhere else in the form; a blank
+  // note is no note rather than an empty one.
+  assert.deepEqual(relation.when, { start: 1200, end: 1200 });
+  assert.equal(relation.note, null);
+  assert.deepEqual(v.validate('v1/relation.json', relation), []);
+  const ongoing = buildRecord('relation', {
+    ...emptyValues('relation'), from: 'a', to: 'b', type: 'led', start: '1970', end: 'ongoing', citations: [{ source: 'fixture-source-1' }],
+  }, CONTEXT);
+  assert.deepEqual(ongoing.when, { start: 1970, end: null });
+
   assert.throws(() => buildRecord('presence', {}, CONTEXT), /kind must be/);
 });
 

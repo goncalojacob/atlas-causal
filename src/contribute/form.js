@@ -16,7 +16,7 @@ import {
 import { submitBundle } from './submit.js';
 
 const KIND_LABEL = Object.freeze({
-  event: 'Event', edge: 'Edge', source: 'Source', actor: 'Actor', place: 'Place',
+  event: 'Event', edge: 'Edge', source: 'Source', actor: 'Actor', place: 'Place', relation: 'Relation',
 });
 const KIND_HINT = Object.freeze({
   event: 'One point in space and time, or a long process with an interval and no place.',
@@ -24,6 +24,7 @@ const KIND_HINT = Object.freeze({
   source: 'A bibliography entry, cited by reference. Fifty records citing the same book cite one file.',
   actor: 'A person, polity, institution or people. Actors are reached through their events, never listed on their own.',
   place: 'Somewhere events happen, with its own coordinates. A place is a geographic fact, so it needs no source — the events that point at it still do.',
+  relation: 'A dated link between two actors — a regime of a state, a member of a party, who led a body. The id is derived: from, to and type.',
 });
 
 // The field whose text suggests the id, per kind. An actor's and a place's
@@ -98,7 +99,7 @@ export function createForm(container, { topology, schemas, template, fixtures = 
 
   // --- add buttons -------------------------------------------------------
   const addRow = html('div', { class: 'add-row' });
-  for (const kind of ['source', 'event', 'edge', 'actor', 'place']) {
+  for (const kind of ['source', 'event', 'edge', 'actor', 'place', 'relation']) {
     const button = html('button', { type: 'button' }, `Add ${kind}`);
     button.addEventListener('click', () => {
       addEntry(kind);
