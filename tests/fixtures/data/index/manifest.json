@@ -6,11 +6,12 @@
     "places": 11,
     "presences": 3,
     "regions": 3,
+    "relations": 3,
     "sources": 4
   },
   "files": {
-    "sources": "index/sources-c0d684e96ef7.json",
-    "topology": "index/topology-f46301942d2f.json"
+    "sources": "index/sources-e591076ef8b8.json",
+    "topology": "index/topology-cd7be8cb4729.json"
   },
   "land": [],
   "presenceShards": [

@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "v1/relation.json",
+  "title": "Relation",
+  "description": "A typed, dated link between two actors — the thing edges cannot say, because an edge runs between events. The id is derived, from--to--type, so the same relation cannot be filed twice (rule 2). Six types, closed: a missing one is reported in STATUS.md, never replaced by a generic one. Which kind of actor may stand at each end is rule 19.",
+  "type": "object",
+  "required": ["schema", "id", "kind", "status", "supersededBy", "aliases", "authors", "license", "created", "revised", "sources", "from", "to", "type", "when"],
+  "additionalProperties": false,
+  "properties": {
+    "schema": { "$ref": "../common/provenance.json#/properties/schema" },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*--[a-z0-9]+(-[a-z0-9]+)*--(regime-of|succeeded|member-of|part-of|led|allied-with)$",
+      "maxLength": 260
+    },
+    "kind": { "const": "relation" },
+    "status": { "$ref": "../common/provenance.json#/properties/status" },
+    "supersededBy": {
+      "oneOf": [
+        { "type": "null" },
+        { "$ref": "#/properties/id" }
+      ]
+    },
+    "aliases": {
+      "type": "array",
+      "items": { "$ref": "#/properties/id" }
+    },
+    "authors": { "$ref": "../common/provenance.json#/properties/authors" },
+    "license": { "$ref": "../common/provenance.json#/properties/license" },
+    "created": { "$ref": "../common/provenance.json#/properties/created" },
+    "revised": { "$ref": "../common/provenance.json#/properties/revised" },
+    "sources": {
+      "description": "A relation is an assertion about two actors, so it cites at least one source, as an edge does (rule 6).",
+      "$ref": "../common/provenance.json#/properties/sources"
+    },
+    "from": { "$ref": "../common/provenance.json#/properties/id" },
+    "to": { "$ref": "../common/provenance.json#/properties/id" },
+    "type": {
+      "description": "regime-of: `from` is a regime of the state `to` (Estado Novo → Portugal). succeeded: `from` was succeeded by `to` (British India → Republic of India). member-of: a person belongs to a party or body. part-of: a body belongs to the state or body it was part of. led: a person headed `to`. allied-with: symmetric, and the only one that is.",
+      "type": "string",
+      "enum": ["regime-of", "succeeded", "member-of", "part-of", "led", "allied-with"]
+    },
+    "when": {
+      "description": "How long the relation held. end: null means it still does. A succession is an instant: start and end are the same year.",
+      "$ref": "../common/interval.json"
+    },
+    "note": {
+      "description": "Optional, short, and written by a person: what a bare type and two dates cannot say. Carried in the topology, so an actor's card draws its relations without fetching one record each.",
+      "oneOf": [
+        { "type": "null" },
+        { "type": "string", "minLength": 1, "maxLength": 200 }
+      ]
+    }
+  }
+}

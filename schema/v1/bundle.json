@@ -16,7 +16,8 @@
           { "$ref": "edge.json" },
           { "$ref": "source.json" },
           { "$ref": "actor.json" },
-          { "$ref": "place.json" }
+          { "$ref": "place.json" },
+          { "$ref": "relation.json" }
         ]
       }
     }

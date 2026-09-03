@@ -10,7 +10,7 @@
           "name": "Fixture Author"
         }
       ],
-      "citationCount": 22,
+      "citationCount": 24,
       "citations": [
         {
           "dissent": false,
@@ -143,6 +143,18 @@
           "id": "fixture-polity-three-1100",
           "kind": "presence",
           "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "fixture-actor-one--fixture-actor-two--led",
+          "kind": "relation",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "fixture-polity-four--fixture-polity-three--regime-of",
+          "kind": "relation",
+          "locator": null
         }
       ],
       "created": "2026-01-01",
@@ -175,7 +187,7 @@
           "name": "Fixture Author"
         }
       ],
-      "citationCount": 6,
+      "citationCount": 7,
       "citations": [
         {
           "dissent": false,
@@ -211,6 +223,12 @@
           "dissent": false,
           "id": "fixture-polity-four-1120",
           "kind": "presence",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "fixture-actor-one--fixture-actor-two--member-of",
+          "kind": "relation",
           "locator": null
         }
       ],

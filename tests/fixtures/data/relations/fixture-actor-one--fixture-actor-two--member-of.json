@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "id": "fixture-actor-one--fixture-actor-two--member-of",
+  "kind": "relation",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Fixture Author",
+      "github": "fixture-author"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-01-01",
+  "revised": null,
+  "sources": [
+    {
+      "source": "fixture-source-2",
+      "locator": null
+    }
+  ],
+  "from": "fixture-actor-one",
+  "to": "fixture-actor-two",
+  "type": "member-of",
+  "when": {
+    "start": 1200,
+    "end": 1240
+  },
+  "note": null
+}

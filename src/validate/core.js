@@ -7,7 +7,7 @@
 import { createValidator } from './schema.js';
 import { checkRules, normalizeRole } from './rules.js';
 
-export const KINDS = Object.freeze(['event', 'edge', 'source', 'actor', 'presence', 'place']);
+export const KINDS = Object.freeze(['event', 'edge', 'source', 'actor', 'presence', 'place', 'relation']);
 export const SCHEMA_VERSION = 1;
 
 function isObject(v) {
@@ -172,6 +172,7 @@ export function buildTopology(records, regions, { deriveRegion } = {}) {
   const actors = [];
   const presences = [];
   const places = [];
+  const relations = [];
   // Places first: an event's lane is derived from the place it names, so the
   // places have to be resolved before any event is.
   const placeById = new Map();
@@ -237,6 +238,22 @@ export function buildTopology(records, regions, { deriveRegion } = {}) {
         supersededBy: r.supersededBy ?? null,
         aliases: r.aliases ?? [],
       });
+    } else if (r.kind === 'relation') {
+      // The whole record but its envelope's text: a relation has no card of
+      // its own, so an actor's card draws every relation it stands in without
+      // fetching one record each. `note` is short by schema and comes with
+      // it for the same reason a presence's `capital` does (deviation 43).
+      relations.push({
+        id: r.id,
+        from: r.from,
+        to: r.to,
+        type: r.type,
+        when: r.when,
+        note: typeof r.note === 'string' ? r.note : null,
+        status: r.status,
+        supersededBy: r.supersededBy ?? null,
+        aliases: r.aliases ?? [],
+      });
     } else if (r.kind === 'presence') {
       // Everything the panel and the map need except the coordinates: an
       // actor's territory over time is a list the card can draw without
@@ -275,6 +292,7 @@ export function buildTopology(records, regions, { deriveRegion } = {}) {
   actors.sort(byId);
   presences.sort(byId);
   places.sort(byId);
+  relations.sort(byId);
   return {
     events,
     edges,
@@ -282,6 +300,7 @@ export function buildTopology(records, regions, { deriveRegion } = {}) {
     actors,
     presences,
     places,
+    relations,
     regions: [...(regions ?? [])].sort((a, b) => a.order - b.order || byId(a, b)),
   };
 }

@@ -675,5 +675,49 @@
       }
     }
   ],
+  "relations": [
+    {
+      "aliases": [],
+      "from": "fixture-actor-one",
+      "id": "fixture-actor-one--fixture-actor-two--led",
+      "note": "Synthetic: the same pair under a second type, which is legal.",
+      "status": "active",
+      "supersededBy": null,
+      "to": "fixture-actor-two",
+      "type": "led",
+      "when": {
+        "end": 1240,
+        "start": 1210
+      }
+    },
+    {
+      "aliases": [],
+      "from": "fixture-actor-one",
+      "id": "fixture-actor-one--fixture-actor-two--member-of",
+      "note": null,
+      "status": "active",
+      "supersededBy": null,
+      "to": "fixture-actor-two",
+      "type": "member-of",
+      "when": {
+        "end": 1240,
+        "start": 1200
+      }
+    },
+    {
+      "aliases": [],
+      "from": "fixture-polity-four",
+      "id": "fixture-polity-four--fixture-polity-three--regime-of",
+      "note": "Synthetic: a regime of a synthetic state.",
+      "status": "active",
+      "supersededBy": null,
+      "to": "fixture-polity-three",
+      "type": "regime-of",
+      "when": {
+        "end": 1260,
+        "start": 1120
+      }
+    }
+  ],
   "schema": 1
 }

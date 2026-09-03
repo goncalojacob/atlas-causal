@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "id": "fixture-actor-one--fixture-actor-two--led",
+  "kind": "relation",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Fixture Author",
+      "github": "fixture-author"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-01-01",
+  "revised": null,
+  "sources": [
+    {
+      "source": "fixture-source-1",
+      "locator": null
+    }
+  ],
+  "from": "fixture-actor-one",
+  "to": "fixture-actor-two",
+  "type": "led",
+  "when": {
+    "start": 1210,
+    "end": 1240
+  },
+  "note": "Synthetic: the same pair under a second type, which is legal."
+}

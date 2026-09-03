@@ -31,7 +31,14 @@
 import { isValidYear } from './util/dates.js';
 
 const SLUG = /^[a-z0-9]+(-[a-z0-9]+)*$/;
-const EDGE_ID = /^[a-z0-9]+(-[a-z0-9]+)*--[a-z0-9]+(-[a-z0-9]+)*--[a-z-]+$/;
+// The chain is a list of edge ids (deviation 12), and an edge id names one of
+// the five types. A relation id has the same three-part shape and a type from
+// its own closed set: it links two actors and is not a step of a causal path,
+// so it is refused here by name rather than by falling through a loose
+// pattern. The two vocabularies are written out because this file stays free
+// of the data and of the rules that read it.
+const EDGE_ID = /^[a-z0-9]+(-[a-z0-9]+)*--[a-z0-9]+(-[a-z0-9]+)*--(caused|enabled|reacted-to|precondition-of|inspired)$/;
+const RELATION_ID = /^[a-z0-9]+(-[a-z0-9]+)*--[a-z0-9]+(-[a-z0-9]+)*--(regime-of|succeeded|member-of|part-of|led|allied-with)$/;
 export const LAYERS = Object.freeze(['land', 'territories', 'events']);
 export const VIEWS = Object.freeze(['map', 'graph']);
 // Query parameters that are not state but must survive a state write.
@@ -82,7 +89,7 @@ export function parseState(search, defaults = defaultState()) {
   if (params.has('chain')) {
     const chain = [];
     for (const step of params.get('chain').split(',').filter(Boolean)) {
-      if (!EDGE_ID.test(step)) break;
+      if (RELATION_ID.test(step) || !EDGE_ID.test(step)) break;
       chain.push(step);
     }
     state.chain = chain;

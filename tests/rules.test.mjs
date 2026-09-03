@@ -257,9 +257,13 @@ test('rule 11: a retired actor cannot be referenced by an active event', async (
   const hits = rulesHit(r, 11);
   assert.ok(hits.some((e) => e.id === 'fixture-actor-one'), messages(r));
   assert.ok(hits.some((e) => e.id === 'fixture-event-a' && e.path === '/actors/0/actor'), messages(r));
-  // Retired and unreferenced is fine.
+  // A relation is a reference like any other: an active one naming a retired
+  // actor is the same error from both ends.
+  assert.ok(hits.some((e) => e.id === 'fixture-actor-one--fixture-actor-two--led' && e.path === '/from'), messages(r));
+  // Retired and unreferenced is fine — by no event and by no relation.
   r = await run((fx) => {
     fx.byId['fixture-actor-one'].status = 'retracted';
+    fx.records = fx.records.filter((rec) => rec.kind !== 'relation' || (rec.from !== 'fixture-actor-one' && rec.to !== 'fixture-actor-one'));
     for (const rec of fx.records) {
       if (rec.kind === 'event') rec.actors = (rec.actors ?? []).filter((a) => a.actor !== 'fixture-actor-one');
     }
@@ -268,7 +272,10 @@ test('rule 11: a retired actor cannot be referenced by an active event', async (
 });
 
 test('warnings: an unused actor, and an event outside an actor\'s dates', async () => {
+  // Unused means named by no event and standing in no relation: an actor
+  // reachable from another actor's card is used.
   let r = await run((fx) => {
+    fx.records = fx.records.filter((rec) => rec.kind !== 'relation' || rec.to !== 'fixture-actor-two');
     for (const rec of fx.records) {
       if (rec.kind === 'event') rec.actors = (rec.actors ?? []).filter((a) => a.actor !== 'fixture-actor-two');
     }

@@ -64,6 +64,19 @@ test('garbage falls back field by field; a bad chain step cuts the chain there',
   assert.equal(parseState('?from=0&to=1975').from, null);
 });
 
+test('a relation id is not a step of the walked chain', () => {
+  // A relation id has an edge id's shape and links two actors, so the chain —
+  // which is a list of edge ids (deviation 12) — refuses it by name rather
+  // than by falling through a loose pattern.
+  assert.deepEqual(parseState('?chain=estado-novo--portugal--regime-of').chain, []);
+  assert.deepEqual(
+    parseState('?chain=fixture-event-a--fixture-event-b--caused,salazar--estado-novo--led').chain,
+    ['fixture-event-a--fixture-event-b--caused'],
+  );
+  // Nor is an invented type: the five are the five.
+  assert.deepEqual(parseState('?chain=fixture-event-a--fixture-event-b--led-to').chain, []);
+});
+
 test('fixtures=1 passes through a state write', () => {
   const out = formatState({ ...defaultState(), to: 1300 }, '?fixtures=1&to=9');
   assert.equal(out, '?fixtures=1&to=1300');

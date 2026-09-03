@@ -25,6 +25,7 @@ export const SCHEMA_FILES = Object.freeze([
   'v1/place.json',
   'v1/presence.json',
   'v1/region.json',
+  'v1/relation.json',
   'v1/source.json',
 ]);
 

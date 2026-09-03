@@ -28,6 +28,30 @@ export const EDGE_TYPES = Object.freeze(['caused', 'enabled', 'reacted-to', 'pre
 export const EDGE_ID = /^([a-z0-9]+(?:-[a-z0-9]+)*)--([a-z0-9]+(?:-[a-z0-9]+)*)--(caused|enabled|reacted-to|precondition-of|inspired)$/;
 export const CONFIDENCE_ORDER = Object.freeze(['consensus', 'probable', 'disputed']);
 export const ACTOR_TYPES = Object.freeze(['person', 'polity', 'institution', 'people']);
+// A relation's id has the same three-part shape as an edge's and is not one:
+// its third part is a relation type, and the two vocabularies never meet.
+// Anything that turns an id into a path or a URL has to know which of the two
+// it is holding, so the pattern is written once, here.
+export const RELATION_TYPES = Object.freeze(['regime-of', 'succeeded', 'member-of', 'part-of', 'led', 'allied-with']);
+export const RELATION_ID = /^([a-z0-9]+(?:-[a-z0-9]+)*)--([a-z0-9]+(?:-[a-z0-9]+)*)--(regime-of|succeeded|member-of|part-of|led|allied-with)$/;
+// Which kind of actor may stand at each end (m11-brief, amendment). A person
+// is not a regime and a party is not a state, and the shape of the record
+// cannot say so: this table is what rule 19 checks.
+export const RELATION_ENDPOINTS = Object.freeze({
+  'regime-of': { from: ['polity'], to: ['polity'] },
+  // A colony and the state after it are two actors of the same kind; a
+  // ministry is not succeeded by a country.
+  succeeded: { from: ['polity', 'institution'], to: ['polity', 'institution'], sameKind: true },
+  'member-of': { from: ['person'], to: ['institution', 'polity'] },
+  'part-of': { from: ['institution'], to: ['institution', 'polity'] },
+  led: { from: ['person'], to: ['institution', 'polity'] },
+  'allied-with': { from: ['polity', 'institution'], to: ['polity', 'institution'] },
+});
+// The two types that describe a line of succession, and are therefore the two
+// that must not close on themselves. Each is acyclic on its own: a body may be
+// part of a state that is a regime of it in no sense, and mixing the types
+// would forbid arrangements that are merely unusual.
+export const ACYCLIC_RELATION_TYPES = Object.freeze(['regime-of', 'succeeded']);
 export const PRESENCE_TYPES = Object.freeze(['state', 'polity', 'sphere-of-influence', 'archaeological-culture']);
 export const DEPENDENCY_KINDS = Object.freeze(['colony', 'protectorate', 'mandate', 'occupied']);
 export const ALLOWED_LICENSES = Object.freeze({
@@ -41,6 +65,9 @@ export const ALLOWED_LICENSES = Object.freeze({
   // CC BY-SA like every other record.
   presence: ['CC-BY-SA-4.0', 'CC-BY-NC-SA-4.0'],
   place: ['CC-BY-SA-4.0'],
+  // A relation is written by a person about two actors; nothing imports one,
+  // so there is no NC hole here.
+  relation: ['CC-BY-SA-4.0'],
 });
 
 // The exception that keeps the NC-SA licence out of data/actors/ generally:
@@ -106,6 +133,7 @@ export function checkRules(records, topology = {}) {
   for (const a of topology.actors ?? []) add('actor', a, false);
   for (const p of topology.presences ?? []) add('presence', p, false);
   for (const p of topology.places ?? []) add('place', p, false);
+  for (const r of topology.relations ?? []) add('relation', r, false);
 
   const ownIds = new Set();
   for (const r of records) {
@@ -134,11 +162,11 @@ export function checkRules(records, topology = {}) {
     }
   }
   for (const r of own) {
-    if (r.kind === 'edge') {
-      const m = EDGE_ID.exec(r.id);
-      if (!m) error(2, r, '/id', 'edge id must have the shape from--to--type');
+    if (r.kind === 'edge' || r.kind === 'relation') {
+      const m = (r.kind === 'edge' ? EDGE_ID : RELATION_ID).exec(r.id);
+      if (!m) error(2, r, '/id', `${r.kind} id must have the shape from--to--type`);
       else if (m[1] !== r.from || m[2] !== r.to || m[3] !== r.type) {
-        error(2, r, '/id', `edge id must be derived from its fields: expected "${r.from}--${r.to}--${r.type}"`);
+        error(2, r, '/id', `${r.kind} id must be derived from its fields: expected "${r.from}--${r.to}--${r.type}"`);
       }
     } else if (!SLUG.test(r.id)) {
       error(2, r, '/id', 'id must be a slug: lowercase letters, digits and single hyphens');
@@ -180,6 +208,10 @@ export function checkRules(records, topology = {}) {
     if (r.kind === 'event' && typeof r.place === 'string' && !lookup(r.place, 'place')) {
       error(3, r, '/place', `"${r.place}" is not a place record`);
     }
+    if (r.kind === 'relation') {
+      if (!lookup(r.from, 'actor')) error(3, r, '/from', `"${r.from}" is not an actor record`);
+      if (!lookup(r.to, 'actor')) error(3, r, '/to', `"${r.to}" is not an actor record`);
+    }
     if (r.kind === 'presence') {
       if (!lookup(r.actor, 'actor')) error(3, r, '/actor', `"${r.actor}" is not an actor record`);
       if (r.dependencyOf !== null && r.dependencyOf !== undefined && !lookup(r.dependencyOf, 'actor')) {
@@ -207,7 +239,7 @@ export function checkRules(records, topology = {}) {
     // An actor's interval is birth–death or founding–dissolution and a
     // presence's is how long the outline held; the same arithmetic, the same
     // no-year-zero rule.
-    if ((r.kind === 'event' || r.kind === 'actor' || r.kind === 'presence') && isObject(r.when)) {
+    if ((r.kind === 'event' || r.kind === 'actor' || r.kind === 'presence' || r.kind === 'relation') && isObject(r.when)) {
       const start = checkBound(r, '/when/start', r.when.start);
       const end = r.when.end === null ? null : checkBound(r, '/when/end', r.when.end);
       if (start && end && (end.min < start.min || end.max < start.max)) {
@@ -298,7 +330,7 @@ export function checkRules(records, topology = {}) {
 
   // --- rules 6, 7, 8, 9, 14: per-record content ---------------------------
   for (const r of own) {
-    if (r.kind === 'event' || r.kind === 'edge' || r.kind === 'actor' || r.kind === 'presence') {
+    if (r.kind === 'event' || r.kind === 'edge' || r.kind === 'actor' || r.kind === 'presence' || r.kind === 'relation') {
       if (!Array.isArray(r.sources) || r.sources.length === 0) {
         error(6, r, '/sources', `every ${r.kind} cites at least one source`);
       }
@@ -409,6 +441,9 @@ export function checkRules(records, topology = {}) {
         if (u.kind === 'presence' && (u.entry.actor === r.id || u.entry.dependencyOf === r.id)) {
           error(11, r, '', `${r.status} actor is still referenced by the active presence "${u.entry.id}"`);
         }
+        if (u.kind === 'relation' && (u.entry.from === r.id || u.entry.to === r.id)) {
+          error(11, r, '', `${r.status} actor is still referenced by the active relation "${u.entry.id}"`);
+        }
       }
     }
     if (r.kind === 'place' && r.status !== 'active') {
@@ -421,6 +456,12 @@ export function checkRules(records, topology = {}) {
     if (r.kind === 'event' && r.status === 'active' && typeof r.place === 'string') {
       const place = lookup(r.place, 'place');
       if (place && place.status !== 'active') error(11, r, '/place', `an active event cannot reference the ${place.status} place "${place.id}"`);
+    }
+    if (r.kind === 'relation' && r.status === 'active') {
+      for (const end of ['from', 'to']) {
+        const actor = lookup(r[end], 'actor');
+        if (actor && actor.status !== 'active') error(11, r, `/${end}`, `an active relation cannot reference the ${actor.status} actor "${actor.id}"`);
+      }
     }
     if (r.kind === 'presence' && r.status === 'active') {
       for (const field of ['actor', 'dependencyOf']) {
@@ -553,6 +594,68 @@ export function checkRules(records, topology = {}) {
     });
   }
 
+  // --- rule 19: relations between actors ----------------------------------
+  // What holds a relation together: two different actors, of the kinds the
+  // type allows, and — for the two types that describe a line of succession —
+  // no cycle. Whether the actors exist at all is rule 3 and whether the years
+  // are years is rule 15; this is everything left that only the pair can say.
+  for (const r of own) {
+    if (r.kind !== 'relation') continue;
+    if (r.from === r.to) {
+      error(19, r, '/to', 'a relation runs between two different actors');
+      continue;
+    }
+    const ends = RELATION_ENDPOINTS[r.type];
+    if (!ends) continue;
+    const from = lookup(r.from, 'actor');
+    const to = lookup(r.to, 'actor');
+    if (from && !ends.from.includes(from.actorType)) {
+      error(19, r, '/from', `a ${from.actorType} cannot be the "${r.type}" end of this relation: ${ends.from.join(' or ')} only`);
+    }
+    if (to && !ends.to.includes(to.actorType)) {
+      error(19, r, '/to', `a "${r.type}" relation points at ${ends.to.join(' or ')}, not at a ${to.actorType}`);
+    }
+    // A succession is between two of a kind: a colony is succeeded by the
+    // state that followed it, never by the ministry that administered it.
+    if (ends.sameKind && from && to && from.actorType !== to.actorType) {
+      error(19, r, '/to', `a succession runs between two actors of the same kind: "${r.from}" is a ${from.actorType} and "${r.to}" a ${to.actorType}`);
+    }
+  }
+  // Acyclicity, per type: regime-of on its own and succeeded on its own.
+  // Both describe a line — a regime of a state, a state after a state — and a
+  // line that closes on itself is a mistake in the data rather than an
+  // unusual arrangement.
+  for (const type of ACYCLIC_RELATION_TYPES) {
+    const out = new Map();
+    const nodes = new Set();
+    const indegree = new Map();
+    for (const u of universe.values()) {
+      if (u.kind !== 'relation' || u.entry.status !== 'active' || u.entry.type !== type) continue;
+      const { from, to } = u.entry;
+      nodes.add(from);
+      nodes.add(to);
+      if (!out.has(from)) out.set(from, []);
+      out.get(from).push(to);
+      indegree.set(to, (indegree.get(to) ?? 0) + 1);
+    }
+    const queue = [...nodes].filter((n) => !indegree.get(n));
+    const seen = new Set();
+    while (queue.length) {
+      const n = queue.pop();
+      seen.add(n);
+      for (const m of out.get(n) ?? []) {
+        indegree.set(m, indegree.get(m) - 1);
+        if (indegree.get(m) === 0) queue.push(m);
+      }
+    }
+    const stuck = [...nodes].filter((n) => !seen.has(n)).sort();
+    if (stuck.length) {
+      const culprit = own.find((r) => r.kind === 'relation' && r.type === type && r.status === 'active'
+        && stuck.includes(r.from) && stuck.includes(r.to)) ?? null;
+      error(19, culprit, '', `"${type}" closes on itself through: ${stuck.join(', ')}`);
+    }
+  }
+
   // --- warnings: degree zero, no citers -----------------------------------
   const degree = new Map();
   for (const e of activeEdges) {
@@ -591,6 +694,12 @@ export function checkRules(records, topology = {}) {
       noteActor(u.entry.actor, u.entry);
       if (u.entry.dependencyOf) noteActor(u.entry.dependencyOf, u.entry);
     }
+    // An actor at either end of a relation is reachable from the other one's
+    // card, so it is used in the same sense a territory-holder is.
+    if (u.kind === 'relation') {
+      noteActor(u.entry.from, u.entry);
+      noteActor(u.entry.to, u.entry);
+    }
   }
   // A place nothing happened at is the place equivalent of degree zero. It is
   // a warning and not an error: writing the place before the event it is for
@@ -605,7 +714,22 @@ export function checkRules(records, topology = {}) {
       warning('place-unused', r, 'place is referenced by no event');
     }
     if (r.kind === 'actor' && r.status === 'active' && !referencedActors.has(r.id)) {
-      warning('actor-unused', r, 'actor is referenced by no event and holds no territory');
+      warning('actor-unused', r, 'actor is referenced by no event and no relation, and holds no territory');
+    }
+    // A relation whose years fall entirely outside an actor's own is a
+    // warning for the same reason an event outside them is: a party's
+    // founding date and the year somebody joined it come from two records,
+    // and either may be the one that is wrong.
+    if (r.kind === 'relation' && r.status === 'active') {
+      const relationSpan = span(r.when);
+      for (const end of ['from', 'to']) {
+        const actor = lookup(r[end], 'actor');
+        const actorSpan = actor ? span(actor.when) : null;
+        if (!relationSpan || !actorSpan) continue;
+        if (relationSpan.to < actorSpan.from || relationSpan.from > actorSpan.to) {
+          warning('relation-outside-actor-when', r, `the relation falls entirely outside "${actor.id}"'s dates`);
+        }
+      }
     }
     // A presence outside its actor's life is a warning for the same reason
     // an event outside it is: the dates come from two sources and either may
