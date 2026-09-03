@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "troika-programme-ends-2014",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "sources": [
+    {
+      "source": "imf-2016-portugal-ex-post-evaluation",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-teixeira-2019-political-institutions",
+      "locator": null
+    }
+  ],
+  "title": "Exit from the adjustment programme",
+  "summary": "The three-year programme agreed with the European Commission, the European Central Bank and the IMF ended on 17 May 2014, and the government left it without the precautionary credit line that had been under discussion. The clean exit was presented as proof that the adjustment had worked and criticised as a decision taken for its political effect; the IMF's own evaluation of the programme, published two years later, records the argument without closing it.",
+  "when": {
+    "start": 2014,
+    "end": 2014,
+    "date": "2014-05-17",
+    "calendar": "gregorian"
+  },
+  "place": "lisbon",
+  "region": null,
+  "actors": [
+    {
+      "actor": "pedro-passos-coelho",
+      "role": "prime minister"
+    },
+    {
+      "actor": "european-commission",
+      "role": "lender"
+    },
+    {
+      "actor": "european-central-bank",
+      "role": "lender"
+    },
+    {
+      "actor": "imf",
+      "role": "lender"
+    },
+    {
+      "actor": "third-portuguese-republic",
+      "role": "borrower"
+    }
+  ]
+}

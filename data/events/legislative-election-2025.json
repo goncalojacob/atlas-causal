@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "legislative-election-2025",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cne-legislative-2025",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-teixeira-2019-political-institutions",
+      "locator": null
+    }
+  ],
+  "title": "Legislative election of 2025",
+  "summary": "The election of 18 May 2025 returned the AD as the largest list and left Chega and the PS close enough for second place that the order was settled weeks later by the seats of the emigrant circles. It was the third legislative election in three years.",
+  "when": {
+    "start": 2025,
+    "end": 2025,
+    "date": "2025-05-18",
+    "calendar": "gregorian"
+  },
+  "place": "lisbon",
+  "region": null,
+  "actors": [
+    {
+      "actor": "luis-montenegro",
+      "role": "prime minister"
+    },
+    {
+      "actor": "psd",
+      "role": "coalition party"
+    },
+    {
+      "actor": "cds-pp",
+      "role": "coalition party"
+    },
+    {
+      "actor": "partido-socialista",
+      "role": "opposition party"
+    },
+    {
+      "actor": "chega",
+      "role": "opposition party"
+    },
+    {
+      "actor": "andre-ventura",
+      "role": "party leader"
+    }
+  ]
+}

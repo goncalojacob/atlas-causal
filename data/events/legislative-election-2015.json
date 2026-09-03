@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "legislative-election-2015",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cne-legislative-2015",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-teixeira-2019-political-institutions",
+      "locator": null
+    }
+  ],
+  "title": "Legislative election of 2015",
+  "summary": "The Portugal à Frente coalition of the PSD and the CDS-PP won the most votes on 4 October 2015 and lost its absolute majority; the PS, the Bloco de Esquerda, the PCP and the Greens together held a majority of the seats. Which of the two readings of that result — the largest list, or the arithmetic of the chamber — should produce a government was the question the following seven weeks answered.",
+  "when": {
+    "start": 2015,
+    "end": 2015,
+    "date": "2015-10-04",
+    "calendar": "gregorian"
+  },
+  "place": "lisbon",
+  "region": null,
+  "actors": [
+    {
+      "actor": "pedro-passos-coelho",
+      "role": "incumbent"
+    },
+    {
+      "actor": "antonio-costa",
+      "role": "opposition leader"
+    },
+    {
+      "actor": "psd",
+      "role": "coalition party"
+    },
+    {
+      "actor": "cds-pp",
+      "role": "coalition party"
+    },
+    {
+      "actor": "partido-socialista",
+      "role": "opposition party"
+    },
+    {
+      "actor": "bloco-de-esquerda",
+      "role": "opposition party"
+    },
+    {
+      "actor": "pcp",
+      "role": "opposition party"
+    }
+  ]
+}

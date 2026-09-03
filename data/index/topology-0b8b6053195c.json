@@ -5690,6 +5690,41 @@
     {
       "actors": [
         {
+          "actor": "banco-de-portugal",
+          "role": "resolution authority"
+        },
+        {
+          "actor": "banco-espirito-santo",
+          "role": "resolved"
+        },
+        {
+          "actor": "novo-banco",
+          "role": "created"
+        },
+        {
+          "actor": "ricardo-salgado",
+          "role": "executive chairman"
+        }
+      ],
+      "aliases": [],
+      "id": "bes-resolution-2014",
+      "place": "lisbon",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Resolution of Banco Espírito Santo",
+      "weight": 4,
+      "when": {
+        "calendar": "gregorian",
+        "date": "2014-08-03",
+        "end": 2014,
+        "start": 2014
+      }
+    },
+    {
+      "actors": [
+        {
           "actor": "salazar",
           "role": "target"
         },
@@ -6054,6 +6089,37 @@
     {
       "actors": [
         {
+          "actor": "antonio-costa",
+          "role": "resigned"
+        },
+        {
+          "actor": "marcelo-rebelo-de-sousa",
+          "role": "president"
+        },
+        {
+          "actor": "partido-socialista",
+          "role": "governing party"
+        }
+      ],
+      "aliases": [],
+      "id": "costa-resigns-2023",
+      "place": "lisbon",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "António Costa resigns",
+      "weight": 3,
+      "when": {
+        "calendar": "gregorian",
+        "date": "2023-11-07",
+        "end": 2023,
+        "start": 2023
+      }
+    },
+    {
+      "actors": [
+        {
           "actor": "gomes-da-costa",
           "role": "leader"
         },
@@ -6115,6 +6181,34 @@
         "date": "1975-03-11",
         "end": 1975,
         "start": 1975
+      }
+    },
+    {
+      "actors": [
+        {
+          "actor": "marcelo-rebelo-de-sousa",
+          "role": "declared it"
+        },
+        {
+          "actor": "antonio-costa",
+          "role": "prime minister"
+        }
+      ],
+      "aliases": [],
+      "id": "covid-state-of-emergency-2020",
+      "place": "lisbon",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "First state of emergency of the pandemic",
+      "weight": 2,
+      "when": {
+        "calendar": "gregorian",
+        "date": "2020-03-18",
+        "end": 2020,
+        "endDate": "2020-05-02",
+        "start": 2020
       }
     },
     {
@@ -6335,6 +6429,24 @@
       }
     },
     {
+      "actors": [],
+      "aliases": [],
+      "id": "euro-2016-final",
+      "place": "saint-denis",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Portugal wins the European Championship",
+      "weight": 0,
+      "when": {
+        "calendar": "gregorian",
+        "date": "2016-07-10",
+        "end": 2016,
+        "start": 2016
+      }
+    },
+    {
       "actors": [
         {
           "actor": "third-portuguese-republic",
@@ -6410,6 +6522,72 @@
     {
       "actors": [
         {
+          "actor": "marcelo-rebelo-de-sousa",
+          "role": "president"
+        },
+        {
+          "actor": "luis-montenegro",
+          "role": "prime minister"
+        }
+      ],
+      "aliases": [],
+      "id": "fiftieth-anniversary-25-april-2024",
+      "place": "lisbon",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Fifty years of 25 April",
+      "weight": 2,
+      "when": {
+        "calendar": "gregorian",
+        "date": "2024-04-25",
+        "end": 2024,
+        "start": 2024
+      }
+    },
+    {
+      "actors": [
+        {
+          "actor": "antonio-costa",
+          "role": "prime minister"
+        },
+        {
+          "actor": "partido-socialista",
+          "role": "governing party"
+        },
+        {
+          "actor": "bloco-de-esquerda",
+          "role": "supporting party"
+        },
+        {
+          "actor": "pcp",
+          "role": "supporting party"
+        },
+        {
+          "actor": "cavaco-silva",
+          "role": "president"
+        }
+      ],
+      "aliases": [],
+      "id": "geringonca-2015",
+      "place": "lisbon",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "The PS minority government of 2015",
+      "weight": 5,
+      "when": {
+        "calendar": "gregorian",
+        "date": "2015-11-26",
+        "end": 2015,
+        "start": 2015
+      }
+    },
+    {
+      "actors": [
+        {
           "actor": "first-portuguese-republic",
           "role": "target"
         },
@@ -6468,6 +6646,45 @@
     {
       "actors": [
         {
+          "actor": "luis-montenegro",
+          "role": "prime minister"
+        },
+        {
+          "actor": "psd",
+          "role": "governing party"
+        },
+        {
+          "actor": "partido-socialista",
+          "role": "opposition party"
+        },
+        {
+          "actor": "chega",
+          "role": "opposition party"
+        },
+        {
+          "actor": "andre-ventura",
+          "role": "party leader"
+        }
+      ],
+      "aliases": [],
+      "id": "government-falls-2025",
+      "place": "lisbon",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "The government loses a confidence vote",
+      "weight": 5,
+      "when": {
+        "calendar": "gregorian",
+        "date": "2025-03-11",
+        "end": 2025,
+        "start": 2025
+      }
+    },
+    {
+      "actors": [
+        {
           "actor": "paigc",
           "role": "declared it"
         },
@@ -6521,6 +6738,24 @@
         "date": "1963-01-23",
         "end": 1963,
         "start": 1963
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "iberian-blackout-2025",
+      "place": "lisbon",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "The Iberian blackout",
+      "weight": 0,
+      "when": {
+        "calendar": "gregorian",
+        "date": "2025-04-28",
+        "end": 2025,
+        "start": 2025
       }
     },
     {
@@ -6673,6 +6908,229 @@
     {
       "actors": [
         {
+          "actor": "pedro-passos-coelho",
+          "role": "incumbent"
+        },
+        {
+          "actor": "antonio-costa",
+          "role": "opposition leader"
+        },
+        {
+          "actor": "psd",
+          "role": "coalition party"
+        },
+        {
+          "actor": "cds-pp",
+          "role": "coalition party"
+        },
+        {
+          "actor": "partido-socialista",
+          "role": "opposition party"
+        },
+        {
+          "actor": "bloco-de-esquerda",
+          "role": "opposition party"
+        },
+        {
+          "actor": "pcp",
+          "role": "opposition party"
+        }
+      ],
+      "aliases": [],
+      "id": "legislative-election-2015",
+      "place": "lisbon",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Legislative election of 2015",
+      "weight": 7,
+      "when": {
+        "calendar": "gregorian",
+        "date": "2015-10-04",
+        "end": 2015,
+        "start": 2015
+      }
+    },
+    {
+      "actors": [
+        {
+          "actor": "antonio-costa",
+          "role": "prime minister"
+        },
+        {
+          "actor": "partido-socialista",
+          "role": "governing party"
+        },
+        {
+          "actor": "psd",
+          "role": "opposition party"
+        },
+        {
+          "actor": "bloco-de-esquerda",
+          "role": "opposition party"
+        },
+        {
+          "actor": "pcp",
+          "role": "opposition party"
+        },
+        {
+          "actor": "chega",
+          "role": "opposition party"
+        },
+        {
+          "actor": "andre-ventura",
+          "role": "elected"
+        }
+      ],
+      "aliases": [],
+      "id": "legislative-election-2019",
+      "place": "lisbon",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Legislative election of 2019",
+      "weight": 7,
+      "when": {
+        "calendar": "gregorian",
+        "date": "2019-10-06",
+        "end": 2019,
+        "start": 2019
+      }
+    },
+    {
+      "actors": [
+        {
+          "actor": "antonio-costa",
+          "role": "prime minister"
+        },
+        {
+          "actor": "partido-socialista",
+          "role": "governing party"
+        },
+        {
+          "actor": "bloco-de-esquerda",
+          "role": "opposition party"
+        },
+        {
+          "actor": "pcp",
+          "role": "opposition party"
+        },
+        {
+          "actor": "chega",
+          "role": "opposition party"
+        },
+        {
+          "actor": "andre-ventura",
+          "role": "party leader"
+        }
+      ],
+      "aliases": [],
+      "id": "legislative-election-2022",
+      "place": "lisbon",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Legislative election of 2022",
+      "weight": 6,
+      "when": {
+        "calendar": "gregorian",
+        "date": "2022-01-30",
+        "end": 2022,
+        "start": 2022
+      }
+    },
+    {
+      "actors": [
+        {
+          "actor": "luis-montenegro",
+          "role": "winner"
+        },
+        {
+          "actor": "psd",
+          "role": "coalition party"
+        },
+        {
+          "actor": "cds-pp",
+          "role": "coalition party"
+        },
+        {
+          "actor": "partido-socialista",
+          "role": "outgoing party"
+        },
+        {
+          "actor": "chega",
+          "role": "opposition party"
+        },
+        {
+          "actor": "andre-ventura",
+          "role": "party leader"
+        }
+      ],
+      "aliases": [],
+      "id": "legislative-election-2024",
+      "place": "lisbon",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Legislative election of 2024",
+      "weight": 6,
+      "when": {
+        "calendar": "gregorian",
+        "date": "2024-03-10",
+        "end": 2024,
+        "start": 2024
+      }
+    },
+    {
+      "actors": [
+        {
+          "actor": "luis-montenegro",
+          "role": "prime minister"
+        },
+        {
+          "actor": "psd",
+          "role": "coalition party"
+        },
+        {
+          "actor": "cds-pp",
+          "role": "coalition party"
+        },
+        {
+          "actor": "partido-socialista",
+          "role": "opposition party"
+        },
+        {
+          "actor": "chega",
+          "role": "opposition party"
+        },
+        {
+          "actor": "andre-ventura",
+          "role": "party leader"
+        }
+      ],
+      "aliases": [],
+      "id": "legislative-election-2025",
+      "place": "lisbon",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Legislative election of 2025",
+      "weight": 6,
+      "when": {
+        "calendar": "gregorian",
+        "date": "2025-05-18",
+        "end": 2025,
+        "start": 2025
+      }
+    },
+    {
+      "actors": [
+        {
           "actor": "third-portuguese-republic",
           "role": "withdrew"
         }
@@ -6691,6 +7149,64 @@
         "date": "1999-12-20",
         "end": 1999,
         "start": 1999
+      }
+    },
+    {
+      "actors": [
+        {
+          "actor": "marcelo-rebelo-de-sousa",
+          "role": "elected"
+        },
+        {
+          "actor": "cavaco-silva",
+          "role": "outgoing president"
+        },
+        {
+          "actor": "psd",
+          "role": "party of origin"
+        }
+      ],
+      "aliases": [],
+      "id": "marcelo-elected-president-2016",
+      "place": "lisbon",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Marcelo Rebelo de Sousa elected president",
+      "weight": 3,
+      "when": {
+        "calendar": "gregorian",
+        "date": "2016-01-24",
+        "end": 2016,
+        "start": 2016
+      }
+    },
+    {
+      "actors": [
+        {
+          "actor": "marcelo-rebelo-de-sousa",
+          "role": "re-elected"
+        },
+        {
+          "actor": "andre-ventura",
+          "role": "candidate"
+        }
+      ],
+      "aliases": [],
+      "id": "marcelo-reelected-2021",
+      "place": "lisbon",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Marcelo Rebelo de Sousa re-elected",
+      "weight": 2,
+      "when": {
+        "calendar": "gregorian",
+        "date": "2021-01-24",
+        "end": 2021,
+        "start": 2021
       }
     },
     {
@@ -6722,6 +7238,41 @@
         "date": "1919-01-19",
         "end": 1919,
         "start": 1919
+      }
+    },
+    {
+      "actors": [
+        {
+          "actor": "luis-montenegro",
+          "role": "prime minister"
+        },
+        {
+          "actor": "marcelo-rebelo-de-sousa",
+          "role": "president"
+        },
+        {
+          "actor": "psd",
+          "role": "governing party"
+        },
+        {
+          "actor": "cds-pp",
+          "role": "governing party"
+        }
+      ],
+      "aliases": [],
+      "id": "montenegro-government-2024",
+      "place": "lisbon",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "The Montenegro government takes office",
+      "weight": 4,
+      "when": {
+        "calendar": "gregorian",
+        "date": "2024-04-02",
+        "end": 2024,
+        "start": 2024
       }
     },
     {
@@ -6834,6 +7385,54 @@
         "date": "1921-10-19",
         "end": 1921,
         "start": 1921
+      }
+    },
+    {
+      "actors": [
+        {
+          "actor": "antonio-costa",
+          "role": "prime minister"
+        }
+      ],
+      "aliases": [],
+      "id": "october-fires-2017",
+      "place": "central-portugal",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "The fires of October 2017",
+      "weight": 1,
+      "when": {
+        "calendar": "gregorian",
+        "date": "2017-10-15",
+        "end": 2017,
+        "endDate": "2017-10-16",
+        "start": 2017
+      }
+    },
+    {
+      "actors": [
+        {
+          "actor": "antonio-costa",
+          "role": "prime minister"
+        }
+      ],
+      "aliases": [],
+      "id": "pedrogao-grande-fires-2017",
+      "place": "pedrogao-grande",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "The Pedrógão Grande fires",
+      "weight": 1,
+      "when": {
+        "calendar": "gregorian",
+        "date": "2017-06-17",
+        "end": 2017,
+        "endDate": "2017-06-24",
+        "start": 2017
       }
     },
     {
@@ -7210,6 +7809,45 @@
     {
       "actors": [
         {
+          "actor": "pedro-passos-coelho",
+          "role": "prime minister"
+        },
+        {
+          "actor": "european-commission",
+          "role": "lender"
+        },
+        {
+          "actor": "european-central-bank",
+          "role": "lender"
+        },
+        {
+          "actor": "imf",
+          "role": "lender"
+        },
+        {
+          "actor": "third-portuguese-republic",
+          "role": "borrower"
+        }
+      ],
+      "aliases": [],
+      "id": "troika-programme-ends-2014",
+      "place": "lisbon",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Exit from the adjustment programme",
+      "weight": 5,
+      "when": {
+        "calendar": "gregorian",
+        "date": "2014-05-17",
+        "end": 2014,
+        "start": 2014
+      }
+    },
+    {
+      "actors": [
+        {
           "actor": "united-nations",
           "role": "admitting body"
         },
@@ -7263,6 +7901,34 @@
         "date": "1972-12-16",
         "end": 1972,
         "start": 1972
+      }
+    },
+    {
+      "actors": [
+        {
+          "actor": "antonio-costa",
+          "role": "prime minister"
+        },
+        {
+          "actor": "marcelo-rebelo-de-sousa",
+          "role": "head of state"
+        }
+      ],
+      "aliases": [],
+      "id": "world-youth-day-2023",
+      "place": "lisbon",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "World Youth Day in Lisbon",
+      "weight": 2,
+      "when": {
+        "calendar": "gregorian",
+        "date": "2023-08-01",
+        "end": 2023,
+        "endDate": "2023-08-06",
+        "start": 2023
       }
     }
   ],

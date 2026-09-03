@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "fiftieth-anniversary-25-april-2024",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "sources": [
+    {
+      "source": "ar-2024-fiftieth-anniversary",
+      "locator": null
+    },
+    {
+      "source": "maxwell-1995-making-of-portuguese-democracy",
+      "locator": null
+    }
+  ],
+  "title": "Fifty years of 25 April",
+  "summary": "The fiftieth anniversary of the coup was marked on 25 April 2024 by a solemn session in parliament and by the march down the Avenida da Liberdade, three weeks after a legislative election that had changed the arithmetic of the chamber it was held in.",
+  "when": {
+    "start": 2024,
+    "end": 2024,
+    "date": "2024-04-25",
+    "calendar": "gregorian"
+  },
+  "place": "lisbon",
+  "region": null,
+  "actors": [
+    {
+      "actor": "marcelo-rebelo-de-sousa",
+      "role": "president"
+    },
+    {
+      "actor": "luis-montenegro",
+      "role": "prime minister"
+    }
+  ]
+}

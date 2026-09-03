@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "government-falls-2025",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "sources": [
+    {
+      "source": "ar-2025-confidence-vote",
+      "locator": null
+    }
+  ],
+  "title": "The government loses a confidence vote",
+  "summary": "The government tabled a motion of confidence over questions about a company owned by the prime minister's family and lost it on 11 March 2025, the PS and Chega voting against. The motion was its own: the opposition had put down censure motions, and the government chose to ask the chamber to confirm it instead.",
+  "when": {
+    "start": 2025,
+    "end": 2025,
+    "date": "2025-03-11",
+    "calendar": "gregorian"
+  },
+  "place": "lisbon",
+  "region": null,
+  "actors": [
+    {
+      "actor": "luis-montenegro",
+      "role": "prime minister"
+    },
+    {
+      "actor": "psd",
+      "role": "governing party"
+    },
+    {
+      "actor": "partido-socialista",
+      "role": "opposition party"
+    },
+    {
+      "actor": "chega",
+      "role": "opposition party"
+    },
+    {
+      "actor": "andre-ventura",
+      "role": "party leader"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "marcelo-reelected-2021",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cne-presidential-2021",
+      "locator": null
+    }
+  ],
+  "title": "Marcelo Rebelo de Sousa re-elected",
+  "summary": "The president was re-elected in the first round on 24 January 2021, in a poll held in the worst weeks of the winter wave, with the campaign curtailed and turnout below forty per cent. André Ventura, standing for the first time, came third.",
+  "when": {
+    "start": 2021,
+    "end": 2021,
+    "date": "2021-01-24",
+    "calendar": "gregorian"
+  },
+  "place": "lisbon",
+  "region": null,
+  "actors": [
+    {
+      "actor": "marcelo-rebelo-de-sousa",
+      "role": "re-elected"
+    },
+    {
+      "actor": "andre-ventura",
+      "role": "candidate"
+    }
+  ]
+}

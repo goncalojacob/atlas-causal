@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "geringonca-2015",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "sources": [
+    {
+      "source": "dre-government-appointments-2015-2024",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-teixeira-2019-political-institutions",
+      "locator": null
+    }
+  ],
+  "title": "The PS minority government of 2015",
+  "summary": "The XXI Constitutional Government, a PS minority under António Costa, took office on 26 November 2015 with written agreements with the Bloco de Esquerda, the PCP and the Greens: the first time since 1974 that the parties to the left of the PS supported a government without joining it. The arrangement is known by a word first used against it, geringonça, a contraption that should not work.",
+  "when": {
+    "start": 2015,
+    "end": 2015,
+    "date": "2015-11-26",
+    "calendar": "gregorian"
+  },
+  "place": "lisbon",
+  "region": null,
+  "actors": [
+    {
+      "actor": "antonio-costa",
+      "role": "prime minister"
+    },
+    {
+      "actor": "partido-socialista",
+      "role": "governing party"
+    },
+    {
+      "actor": "bloco-de-esquerda",
+      "role": "supporting party"
+    },
+    {
+      "actor": "pcp",
+      "role": "supporting party"
+    },
+    {
+      "actor": "cavaco-silva",
+      "role": "president"
+    }
+  ]
+}

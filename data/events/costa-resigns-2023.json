@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "costa-resigns-2023",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "sources": [
+    {
+      "source": "pgr-2023-operation-influencer",
+      "locator": null
+    }
+  ],
+  "title": "António Costa resigns",
+  "summary": "António Costa resigned on 7 November 2023, hours after searches in an inquiry into lithium and hydrogen projects and after a communiqué of the Public Prosecutor's Office said his conduct was being examined separately at the Supreme Court. The naming was afterwards disputed and attributed in part to a confusion in the transcripts; by then the resignation had been accepted and parliament was dissolved.",
+  "when": {
+    "start": 2023,
+    "end": 2023,
+    "date": "2023-11-07",
+    "calendar": "gregorian"
+  },
+  "place": "lisbon",
+  "region": null,
+  "actors": [
+    {
+      "actor": "antonio-costa",
+      "role": "resigned"
+    },
+    {
+      "actor": "marcelo-rebelo-de-sousa",
+      "role": "president"
+    },
+    {
+      "actor": "partido-socialista",
+      "role": "governing party"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "covid-state-of-emergency-2020",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "sources": [
+    {
+      "source": "dre-2020-state-of-emergency",
+      "locator": null
+    }
+  ],
+  "title": "First state of emergency of the pandemic",
+  "summary": "The president declared a state of emergency on 18 March 2020, the first under the 1976 constitution, and parliament renewed it twice before it lapsed on 2 May; it was declared again in November. Movement, assembly and most economic activity were restricted by decree for six weeks.",
+  "when": {
+    "start": 2020,
+    "end": 2020,
+    "date": "2020-03-18",
+    "calendar": "gregorian",
+    "endDate": "2020-05-02"
+  },
+  "place": "lisbon",
+  "region": null,
+  "actors": [
+    {
+      "actor": "marcelo-rebelo-de-sousa",
+      "role": "declared it"
+    },
+    {
+      "actor": "antonio-costa",
+      "role": "prime minister"
+    }
+  ]
+}

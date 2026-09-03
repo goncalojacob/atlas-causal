@@ -1,0 +1,34 @@
+{
+  "schema": 1,
+  "id": "iberian-blackout-2025",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "sources": [
+    {
+      "source": "ren-2025-blackout",
+      "locator": null
+    }
+  ],
+  "title": "The Iberian blackout",
+  "summary": "Electricity supply failed across mainland Portugal and Spain around midday on 28 April 2025 and took most of a day to restore. The event is placed at Lisbon for want of a point that would stand for a whole peninsula, and no edge leaves it: what caused it was still being examined by the system operators and the regulators, and this atlas will not guess.",
+  "when": {
+    "start": 2025,
+    "end": 2025,
+    "date": "2025-04-28",
+    "calendar": "gregorian"
+  },
+  "place": "lisbon",
+  "region": null,
+  "actors": []
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "legislative-election-2019",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cne-legislative-2019",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-teixeira-2019-political-institutions",
+      "locator": null
+    }
+  ],
+  "title": "Legislative election of 2019",
+  "summary": "The PS won on 6 October 2019 with more votes and more seats than in 2015 and still without a majority, and formed a government without renewing the written agreements of four years before. Chega and Iniciativa Liberal each returned their first deputy.",
+  "when": {
+    "start": 2019,
+    "end": 2019,
+    "date": "2019-10-06",
+    "calendar": "gregorian"
+  },
+  "place": "lisbon",
+  "region": null,
+  "actors": [
+    {
+      "actor": "antonio-costa",
+      "role": "prime minister"
+    },
+    {
+      "actor": "partido-socialista",
+      "role": "governing party"
+    },
+    {
+      "actor": "psd",
+      "role": "opposition party"
+    },
+    {
+      "actor": "bloco-de-esquerda",
+      "role": "opposition party"
+    },
+    {
+      "actor": "pcp",
+      "role": "opposition party"
+    },
+    {
+      "actor": "chega",
+      "role": "opposition party"
+    },
+    {
+      "actor": "andre-ventura",
+      "role": "elected"
+    }
+  ]
+}

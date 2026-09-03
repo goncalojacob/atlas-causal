@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "october-fires-2017",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cti-2017-2018-fires",
+      "locator": null
+    }
+  ],
+  "title": "The fires of October 2017",
+  "summary": "On 15 and 16 October 2017 fires across the centre and north killed about forty-five people in a day, in conditions the meteorological services had warned of. The minister of internal administration resigned within the week and the command of the civil protection was replaced; the second report of the Independent Technical Commission followed in 2018.",
+  "when": {
+    "start": 2017,
+    "end": 2017,
+    "date": "2017-10-15",
+    "calendar": "gregorian",
+    "endDate": "2017-10-16"
+  },
+  "place": "central-portugal",
+  "region": null,
+  "actors": [
+    {
+      "actor": "antonio-costa",
+      "role": "prime minister"
+    }
+  ]
+}
