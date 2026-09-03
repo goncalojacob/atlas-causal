@@ -75,13 +75,16 @@ schema/v1/                 event, edge, source, actor, place, presence, region, 
 index.html                 the atlas; no build step, plain ES modules
 contribute.html            the contribution form; not linked from the atlas while contributions are closed
 about.html                 what it is, how to read confidence and a dispute, the licences
+sources.html               the bibliography, generated from the sources index at render
 README.md  CONTRIBUTING.md for people reading the repository
 src/main.js                bootstrap only: load, wire views; ?fixtures=1 reads tests/fixtures/data/
-src/state.js               { from, to, view, selected, place, actor, chain, layers } ⇄ URL; a null bound is "as far as the data goes"
+src/state.js               { from, to, view, selected, source, place, actor, chain, horizon, layers } ⇄ URL; a null bound is "as far as the data goes"
 src/data.js                manifest → topology (whole) → record text on demand; aliases, adjacency, events by actor and by place, an event's point through its place, one geometry shard per year
-src/graph.js               consequences, ancestors, convergence; pure, ordered by type then confidence
+src/graph.js               consequences, ancestors, convergence, shortest paths outward; pure, ordered by type then confidence
+src/horizon.js             pure: what the selected event had led to by a year, and the set the views light
+src/citation.js            pure: a source as a citation, its identifiers as links, the bibliography's order
 src/cluster.js             pure: which marks overlap at this zoom; the timeline uses it in one dimension
-src/search.js              pure: titles and every name of an actor or a place, folded and ranked;  search-box.js  the input and the keys
+src/search.js              pure: titles, every name of an actor or a place, and a source's title and creators, folded and ranked;  search-box.js  the input and the keys
 src/map/projection.js      lon/lat ⇄ SVG (equirectangular); the only file a projection change touches
 src/map/map.js             SVG scaffold, pan/zoom, click into a cluster
 src/map/layers/land.js     coastlines;  layers/presences.js  territories;  layers/events.js  marks, clusters and chain lines
@@ -89,7 +92,8 @@ src/graph-view/layout.js   pure: where every node goes — x is the year, y is b
 src/graph-view/graph-view.js  the graph drawn: nodes, the five edge types, the window shaded, pan/zoom
 src/timeline.js            one lane per region; the window as a band with two handles; bars stack
 src/panel/panel.js         the shell: container, clicks, load token, what the cards share
-src/panel/event.js         one card each: event.js, place.js, actor.js, cluster.js
+src/panel/event.js         one card each: event.js, source.js, place.js, actor.js, cluster.js;  horizon.js  the "led to by year X" section
+src/sources/main.js        bootstrap for sources.html;  bibliography.js  the list as markup, pure
 src/contribute/bundle.js   the pure half of the form: fields, bundle assembly, duplicate search
 src/contribute/form.js     the form itself; submit.js copies the bundle and opens the issue
 src/contribute/main.js     bootstrap for contribute.html
