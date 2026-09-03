@@ -8,6 +8,7 @@ import path from 'node:path';
 
 export const KIND_DIRS = Object.freeze({ event: 'events', edge: 'edges', source: 'sources', actor: 'actors', presence: 'presences' });
 export const PRESENCE_GEO_DIR = 'geo/presences';
+export const IMPORTS_DIR = 'imports';
 
 async function readJson(file) {
   const text = await readFile(file, 'utf8');
@@ -51,6 +52,27 @@ export async function readRecords(dataDir) {
     }
   }
   return { entries, problems };
+}
+
+// The import maps under data/imports/: how a source's entities become actors
+// of this atlas. Not records — no envelope, no kind, and the browser never
+// reads them — so they are read here and checked by tools/validate.mjs only.
+// A file that is not valid JSON is reported rather than thrown, like a record.
+export async function readImportMaps(dataDir) {
+  const dir = path.join(dataDir, IMPORTS_DIR);
+  const maps = [];
+  const problems = [];
+  if (!existsSync(dir)) return { maps, problems };
+  for (const name of (await readdir(dir)).sort()) {
+    if (!name.endsWith('.json')) continue;
+    const file = `${IMPORTS_DIR}/${name}`;
+    try {
+      maps.push({ file, name: name.slice(0, -'.json'.length), map: await readJson(path.join(dir, name)) });
+    } catch (e) {
+      problems.push({ file, message: `not valid JSON: ${e.message}` });
+    }
+  }
+  return { maps, problems };
 }
 
 export async function readRegions(dataDir) {

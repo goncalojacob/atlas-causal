@@ -11,9 +11,57 @@ import path from 'node:path';
 import { existsSync } from 'node:fs';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { validate, buildTopology } from '../src/validate/core.js';
+import { createValidator } from '../src/validate/schema.js';
 import { createRegionDeriver, NEAREST_TOLERANCE } from '../src/util/geo.js';
-import { readSchemaFiles, readRecords, readRegions, readRegionPolygons, readPresenceShards, KIND_DIRS } from './lib/read.mjs';
+import { readSchemaFiles, readRecords, readRegions, readRegionPolygons, readPresenceShards, readImportMaps, KIND_DIRS } from './lib/read.mjs';
 import { buildIndex, readIndex, compareIndex } from './build-index.mjs';
+
+export const IMPORT_MAP_SCHEMA = 'v1/import-map.json';
+
+// An import map is not a record and has no rules file: what holds it together
+// is here. The schema has already said the shape is right; these are the
+// things a shape cannot say. Whether a code exists in the source at all is
+// not checkable without the source, so the import checks that at run time and
+// says so loudly instead.
+export function checkImportMap(file, map) {
+  const problems = [];
+  const say = (path, message) => problems.push({ path, message });
+  const names = (list, path) => {
+    if (!Array.isArray(list)) return;
+    const seen = new Set();
+    list.forEach((name, i) => {
+      const key = name.trim().toLowerCase();
+      if (seen.has(key)) say(`${path}/${i}`, `"${name}" is listed twice`);
+      seen.add(key);
+    });
+  };
+  for (const [code, entry] of Object.entries(map?.entries ?? {})) {
+    const at = `/entries/${code}`;
+    if (!/^[0-9]+$/.test(code)) say(at, `"${code}" is not an entity code of the source (digits)`);
+    names(entry.names, `${at}/names`);
+    const used = new Map([[entry.actor, 'the entry itself']]);
+    let previous = null;
+    (entry.splits ?? []).forEach((split, i) => {
+      const here = `${at}/splits/${i}`;
+      // Sortable as strings because the pattern fixes the width; a date that
+      // is not a real day is caught below.
+      if (previous !== null && split.from <= previous) {
+        say(`${here}/from`, `${split.from} does not come after ${previous}; splits are in order and strictly increasing`);
+      }
+      previous = split.from;
+      const parsed = new Date(`${split.from}T00:00:00Z`);
+      if (Number.isNaN(parsed.getTime()) || parsed.toISOString().slice(0, 10) !== split.from) {
+        say(`${here}/from`, `${split.from} is not a real date`);
+      }
+      if (used.has(split.actor)) {
+        say(`${here}/actor`, `"${split.actor}" is already the actor of ${used.get(split.actor)}; a split cuts a code into different actors`);
+      }
+      used.set(split.actor, `split ${i}`);
+      names(split.names, `${here}/names`);
+    });
+  }
+  return problems.map((p) => ({ ...p, file }));
+}
 
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const SCHEMA_DIR = path.join(ROOT, 'schema');
@@ -96,6 +144,27 @@ export async function runValidation(dataDir = DEFAULT_DATA, { index = false } = 
             errors.push({ rule: 17, id: p.id, file: fileOf.get(p.id) ?? null, path: '/geometry/files', message: `the presence runs through ${shard.from}–${shard.to} but does not name data/${shard.file}` });
           }
         }
+      }
+    }
+  }
+
+  // The import maps: schema first, then the things a shape cannot say. They
+  // are not records, so they are not in `entries` and no rule number owns
+  // them.
+  const { maps, problems: mapProblems } = await readImportMaps(dataDir);
+  for (const p of mapProblems) errors.push({ rule: 'import-map', id: null, file: p.file, path: '', message: p.message });
+  if (maps.length) {
+    const validator = createValidator(schemas);
+    const sourceIds = new Set(records.filter((r) => r?.kind === 'source').map((r) => r.id));
+    for (const { file, map } of maps) {
+      for (const e of validator.validate(IMPORT_MAP_SCHEMA, map)) {
+        errors.push({ rule: 'import-map', id: null, file, path: e.path, message: e.message, alternatives: e.alternatives });
+      }
+      for (const p of checkImportMap(file, map)) {
+        errors.push({ rule: 'import-map', id: null, file, path: p.path, message: p.message });
+      }
+      if (typeof map?.source === 'string' && sourceIds.size && !sourceIds.has(map.source)) {
+        warnings.push({ rule: 'import-map', id: null, file, path: '/source', message: `no source record "${map.source}"; the import writes one, so this is expected only before it has run` });
       }
     }
   }
