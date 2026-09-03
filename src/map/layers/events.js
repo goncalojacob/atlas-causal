@@ -21,6 +21,7 @@ import { svg, svgTitle } from '../../util/dom.js';
 import { extent } from '../../util/dates.js';
 import { overlaps } from '../../util/window.js';
 import { clusterPoints, spreadPositions, SPREAD_RADIUS, SPREAD_GAP } from '../../cluster.js';
+import { horizonBand } from '../../horizon.js';
 
 // Sizes in SVG units at k = 1; every one of them is divided by k when drawn,
 // so a mark, a badge and a label keep their size on screen at any zoom.
@@ -46,11 +47,15 @@ function shorten(text, chars = LABEL_CHARS) {
   return text.length > chars ? `${text.slice(0, chars - 1).trimEnd()}…` : text;
 }
 
-function markClasses(event, { selected, pathIds, actorIds, faded = false }) {
+function markClasses(event, { selected, pathIds, actorIds, reachable = null, faded = false }) {
   // The madder accent belongs to the walked path; an actor's events are
-  // emphasised in cobalt so the two never say the same thing.
+  // emphasised in cobalt so the two never say the same thing. The horizon's
+  // reachable set is a ring rather than a fill, fading with distance, so it
+  // can be read underneath either of them.
+  const band = reachable && reachable.has(event.id) ? `in-horizon ${horizonBand(reachable.get(event.id))}` : '';
   return ['mark',
     faded ? 'faded' : '',
+    band,
     actorIds && actorIds.has(event.id) ? 'of-actor' : '',
     pathIds.has(event.id) ? 'on-path' : '',
     event.id === selected ? 'selected' : '',
@@ -88,8 +93,8 @@ export function createEventsLayer(group, projection, { pointOf, onSelect, onClus
   // coincident cluster the reader has opened, or null.
   return {
     render({
-      events, window: timeWindow = null, selected, pathIds, actorIds = null, chainEdges, consequenceEdges,
-      eventById, k = 1, view = null, spread = null,
+      events, window: timeWindow = null, selected, pathIds, actorIds = null, reachable = null,
+      chainEdges, consequenceEdges, eventById, k = 1, view = null, spread = null,
     }) {
       group.replaceChildren();
       drawn = new Map();
@@ -124,12 +129,21 @@ export function createEventsLayer(group, projection, { pointOf, onSelect, onClus
       for (const id of pathIds) drawnAlone.add(id);
       if (actorIds) for (const id of actorIds) drawnAlone.add(id);
 
+      // Drawn at all, in the window or out of it: what the reader is working
+      // with, plus the reachable set when a horizon is open — an answer to
+      // "what did this lead to by 2011" that the band had hidden would not be
+      // an answer. Kept is not the same as alone: a reachable event still
+      // joins a stack, or forty of them in Lisbon would be forty circles on
+      // one point.
+      const kept = new Set(drawnAlone);
+      if (reachable) for (const id of reachable.keys()) kept.add(id);
+
       const visible = [];
       for (const event of events) {
         const p = place(event);
         if (!p) continue;
         const inWindow = overlaps(event.when, timeWindow);
-        if (!inWindow && !drawnAlone.has(event.id)) continue;
+        if (!inWindow && !kept.has(event.id)) continue;
         visible.push({ event, x: p[0], y: p[1], faded: !inWindow });
       }
 
@@ -149,15 +163,21 @@ export function createEventsLayer(group, projection, { pointOf, onSelect, onClus
         if (cluster.count === 1) {
           appendMark(group, {
             x: cluster.x, y: cluster.y, radius: MARK_RADIUS, title: event.title, id: event.id,
-            classes: markClasses(event, { selected, pathIds, actorIds }),
+            classes: markClasses(event, { selected, pathIds, actorIds, reachable }),
           });
           continue;
         }
         const hidden = cluster.count - 1;
         const title = `${event.title} — and ${hidden} more event${hidden === 1 ? '' : 's'} here`;
+        // A stack is in the horizon when any event under it is, at the band
+        // of its nearest member: forty marks in Lisbon are not pulled apart
+        // to say so, but the stack does not hide that the answer is in there.
+        const nearest = reachable
+          ? Math.min(...cluster.members.map((m) => reachable.get(m.id) ?? Infinity))
+          : Infinity;
         appendMark(group, {
           x: cluster.x, y: cluster.y, radius: MARK_RADIUS, title, cluster: cluster.key,
-          classes: `mark cluster ${cluster.coincident ? 'coincident' : 'splittable'}`,
+          classes: `mark cluster ${cluster.coincident ? 'coincident' : 'splittable'}${Number.isFinite(nearest) ? ` in-horizon ${horizonBand(nearest)}` : ''}`,
         });
         group.appendChild(textNode(`+${hidden}`, {
           x: cluster.x + (MARK_RADIUS + 2) / k,
@@ -176,7 +196,7 @@ export function createEventsLayer(group, projection, { pointOf, onSelect, onClus
         const mark = appendMark(group, {
           x, y, radius: isSelected ? SELECTED_RADIUS : MARK_RADIUS,
           title: faded ? `${event.title} — outside the window` : event.title, id: event.id,
-          classes: markClasses(event, { selected, pathIds, actorIds, faded }),
+          classes: markClasses(event, { selected, pathIds, actorIds, reachable, faded }),
         });
         if (isSelected) selectedMark = mark;
       }
@@ -203,7 +223,7 @@ export function createEventsLayer(group, projection, { pointOf, onSelect, onClus
           ring.appendChild(svg('line', { x1: cluster.x, y1: cluster.y, x2: x, y2: y, class: 'spread-leg' }));
           appendMark(ring, {
             x, y, radius: MARK_RADIUS, title: member.event.title, id: member.id,
-            classes: markClasses(member.event, { selected, pathIds, actorIds }),
+            classes: markClasses(member.event, { selected, pathIds, actorIds, reachable }),
           });
           const right = positions[i].x >= 0;
           ring.appendChild(textNode(shorten(member.event.title), {

@@ -28,6 +28,23 @@ export function overlaps(when, window) {
   return x.min <= window.to && (x.max === null || x.max >= window.from);
 }
 
+// The year "what did this lead to by then?" is asked about: the reader's own
+// if they chose one, otherwise the window's far end. Astronomical, like
+// everything the traversal compares. Null only when there is no data at all.
+export function resolveHorizon(state, window) {
+  if (state.horizon !== null && state.horizon !== undefined) return toAstronomical(state.horizon);
+  return window ? window.to : null;
+}
+
+// The horizon is *open* — the reachable set lit on the map, the graph and the
+// timeline — only when a reader has chosen a year and an event to ask about.
+// The default is the window's own far end and is never written to the URL;
+// lighting the whole downstream of every event by default would say
+// something the reader has not asked.
+export function horizonIsOpen(state) {
+  return Boolean(state.selected) && state.horizon !== null && state.horizon !== undefined;
+}
+
 // "Map at 1911", wherever it is offered: the far end goes to that year and
 // the near end comes with it if it was later. Never the other way round —
 // moving the far end backwards past the near one would silently empty the

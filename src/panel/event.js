@@ -7,6 +7,7 @@
 import { esc } from '../util/esc.js';
 import { consequences, convergence } from '../graph.js';
 import { formatInterval, formatYear, defaultCalendar } from '../util/dates.js';
+import { horizonHtml } from './horizon.js';
 
 export const TYPE_LABEL = Object.freeze({
   caused: 'caused',
@@ -160,6 +161,7 @@ export function renderEventCard(ctx, { container, event, found, state, mine }) {
     </section>` : ''}
     ${chainHtml(ctx, chainEdges)}
     ${consequencesHtml(out)}
+    ${horizonHtml(ctx, { event, state })}
     ${convergenceHtml(ctx, conv, chainEdges.length > 0, event.id)}
     <section class="sources" data-slot="sources"></section>
   `;

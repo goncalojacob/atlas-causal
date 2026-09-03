@@ -22,6 +22,7 @@ import { createLinearScale } from './timeline-scale.js';
 import { clusterPoints } from './cluster.js';
 import { extent, fromAstronomical, formatYear } from './util/dates.js';
 import { resolveWindow, overlaps, windowAt, decadeOf } from './util/window.js';
+import { horizonBand, horizonSet } from './horizon.js';
 
 const LANE_HEIGHT = 34;
 const LABEL_WIDTH = 120;
@@ -168,7 +169,7 @@ export function createTimeline(container, { atlas, state, createScale = createLi
 
   // --- drawing ------------------------------------------------------------
 
-  function laneBars(root_, lane, i, events, s, window, actorIds, pathIds) {
+  function laneBars(root_, lane, i, events, s, window, actorIds, pathIds, reachable) {
     const y = AXIS_HEIGHT + i * LANE_HEIGHT + 8;
     const barHeight = LANE_HEIGHT - 16;
     const geometry = (event) => {
@@ -187,7 +188,8 @@ export function createTimeline(container, { atlas, state, createScale = createLi
       const ofActor = actorIds ? actorIds.has(event.id) : false;
       const inside = overlaps(event.when, window);
       const box = geometry(event);
-      const item = { id: event.id, event, onPath, selected, ofActor, inside, ...box };
+      const depth = reachable.get(event.id) ?? null;
+      const item = { id: event.id, event, onPath, selected, ofActor, inside, depth, ...box };
       if (onPath || selected || ofActor) alone.push(item);
       else groups[inside ? 'inside' : 'outside'].push(item);
     }
@@ -197,6 +199,7 @@ export function createTimeline(container, { atlas, state, createScale = createLi
         item.ongoing ? 'ongoing' : '',
         item.inside ? '' : 'faded',
         count ? 'stack' : '',
+        item.depth === null ? '' : `in-horizon ${horizonBand(item.depth)}`,
         item.ofActor ? 'of-actor' : '',
         item.onPath ? 'on-path' : '',
         item.selected ? 'selected' : '',
@@ -232,6 +235,10 @@ export function createTimeline(container, { atlas, state, createScale = createLi
           bar(item);
           continue;
         }
+        // A stack is in the horizon when any bar under it is, at the band of
+        // its nearest member — the same rule the map's stacks follow.
+        const depths = cluster.members.map((m) => m.item.depth).filter((d) => d !== null);
+        const stacked = { ...item, depth: depths.length ? Math.min(...depths) : null };
         // Namespaced by lane and group, because one event's id names at most
         // one cluster but the same id could seed two if a lane were redrawn.
         const key = `${lane.id}:${name}:${cluster.key}`;
@@ -244,7 +251,7 @@ export function createTimeline(container, { atlas, state, createScale = createLi
           lane,
           inside: item.inside,
         });
-        bar(item, { count: cluster.count - 1, key });
+        bar(stacked, { count: cluster.count - 1, key });
       }
     }
     // Path, actor and selection last, so they sit above their neighbours.
@@ -267,6 +274,9 @@ export function createTimeline(container, { atlas, state, createScale = createLi
     const actorIds = actor && actor.kind === 'actor'
       ? new Set((atlas.eventsByActor.get(actor.id) ?? []).map((a) => a.event.id))
       : null;
+    // What the selected event had led to by the horizon year, faded by how
+    // far out it is. Empty unless the reader chose a year (horizon.js).
+    const reachable = horizonSet(atlas, s);
 
     lanes.forEach((lane, i) => {
       const y = AXIS_HEIGHT + i * LANE_HEIGHT;
@@ -294,7 +304,7 @@ export function createTimeline(container, { atlas, state, createScale = createLi
     }
     const deferred = [];
     lanes.forEach((lane, i) => {
-      for (const item of laneBars(root, lane, i, byLane.get(lane.id), s, window, actorIds, pathIds)) {
+      for (const item of laneBars(root, lane, i, byLane.get(lane.id), s, window, actorIds, pathIds, reachable)) {
         deferred.push({ item, i });
       }
     });
@@ -303,6 +313,7 @@ export function createTimeline(container, { atlas, state, createScale = createLi
       const classes = ['bar',
         item.ongoing ? 'ongoing' : '',
         item.inside ? '' : 'faded',
+        item.depth === null ? '' : `in-horizon ${horizonBand(item.depth)}`,
         item.ofActor ? 'of-actor' : '',
         item.onPath ? 'on-path' : '',
         item.selected ? 'selected' : '',

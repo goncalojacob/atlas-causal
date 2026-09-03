@@ -12,6 +12,7 @@ import { createPresencesLayer } from './layers/presences.js';
 import { createEventsLayer } from './layers/events.js';
 import { DEEPEST_ZOOM } from '../cluster.js';
 import { resolveWindow } from '../util/window.js';
+import { horizonSet } from '../horizon.js';
 
 const WIDTH = 960;
 const HEIGHT = 540;
@@ -228,6 +229,8 @@ export function createMap(container, { atlas, state, onCluster = null }) {
       selected: s.selected,
       pathIds,
       actorIds,
+      // Empty unless the reader has chosen a horizon year (horizon.js).
+      reachable: horizonSet(atlas, s),
       chainEdges,
       consequenceEdges,
       eventById: atlas.events,

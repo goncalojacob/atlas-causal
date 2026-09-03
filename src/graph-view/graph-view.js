@@ -18,6 +18,7 @@ import { svg, svgTitle } from '../util/dom.js';
 import { formatInterval } from '../util/dates.js';
 import { overlaps, resolveWindow } from '../util/window.js';
 import { convergence } from '../graph.js';
+import { horizonSet, horizonBand } from '../horizon.js';
 import { layoutGraph } from './layout.js';
 
 // Sizes in SVG units at k = 1; divided by k when drawn, so a node keeps its
@@ -243,6 +244,9 @@ export function createGraphView(container, { atlas, state }) {
     const actorIds = actor && actor.kind === 'actor'
       ? new Set((atlas.eventsByActor.get(actor.id) ?? []).map((a) => a.event.id))
       : null;
+    // What the selected event had led to by the horizon year, faded by how
+    // far out it is. Empty unless the reader chose a year (horizon.js).
+    const reachable = horizonSet(atlas, s);
 
     const inWindow = new Map(laid.nodes.map((n) => [n.id, overlaps(n.event.when, timeWindow)]));
     const k = transform.k;
@@ -304,6 +308,7 @@ export function createGraphView(container, { atlas, state }) {
       const cls = classes(
         'node',
         faded ? 'faded' : '',
+        reachable.has(node.id) ? `in-horizon ${horizonBand(reachable.get(node.id))}` : '',
         actorIds && actorIds.has(node.id) ? 'of-actor' : '',
         converging.has(node.id) ? 'converging' : '',
         pathIds.has(node.id) ? 'on-path' : '',

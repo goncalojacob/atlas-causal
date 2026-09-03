@@ -7,8 +7,9 @@
 // cluster.js. Which one is shown is decided in render() and nowhere else.
 
 import { esc } from '../util/esc.js';
-import { formatInterval, bounds } from '../util/dates.js';
+import { formatInterval, bounds, isValidYear } from '../util/dates.js';
 import { windowAt } from '../util/window.js';
+import { shortestPaths, pathTo } from '../graph.js';
 import { identifiers } from '../citation.js';
 import { renderEventCard } from './event.js';
 import { renderActorCard } from './actor.js';
@@ -77,6 +78,18 @@ export function createPanel(container, { atlas, state, fixtures = false }) {
       case 'clear':
         state.set({ chain: [] });
         break;
+      // Choosing an answer to "what did this lead to by then?" walks the
+      // shortest path to it: the answer becomes a chain, and a chain has
+      // convergence — what else fed the endpoint the reader picked.
+      case 'horizon-walk': {
+        if (!s.selected) break;
+        const edges = pathTo(shortestPaths(atlas.adjacency, s.selected), el.dataset.id);
+        if (edges.length) state.set({ chain: edges.map((e) => e.id), selected: el.dataset.id });
+        break;
+      }
+      case 'clear-horizon':
+        state.set({ horizon: null });
+        break;
       case 'year':
         // "Map at 1911" puts the window's far end there and takes the near
         // end with it only if it was later, so the year asked for is always
@@ -85,6 +98,17 @@ export function createPanel(container, { atlas, state, fixtures = false }) {
         break;
       default:
     }
+  });
+
+  // The horizon's year. On change rather than on input: a re-render per
+  // keystroke would take the field out from under the reader's fingers, and
+  // a year is finished when they stop typing it. A year that is not a year —
+  // an empty field, a 0 — means "back to the window's end".
+  container.addEventListener('change', (e) => {
+    const el = e.target.closest('[data-horizon]');
+    if (!el) return;
+    const year = Number(el.value);
+    state.set({ horizon: isValidYear(year) ? year : null });
   });
 
   // Explanations load when their <details> opens. toggle does not bubble,
