@@ -29,7 +29,7 @@ function event(id, over = {}) {
     title: 'Fixture event new',
     summary: 'A synthetic event, written for a test.',
     when: { start: 1300, end: 1300 },
-    where: null,
+    place: null,
     region: 'fixture-lane-1',
     actors: [],
     ...over,
@@ -38,7 +38,7 @@ function event(id, over = {}) {
 
 async function scratch() {
   const dir = await mkdtemp(path.join(tmpdir(), 'atlas-bundle-'));
-  for (const sub of ['events', 'edges', 'sources', 'actors']) await mkdir(path.join(dir, sub), { recursive: true });
+  for (const sub of ['events', 'edges', 'sources', 'actors', 'places']) await mkdir(path.join(dir, sub), { recursive: true });
   return dir;
 }
 
@@ -252,4 +252,32 @@ test('an actor in a bundle is written to data/actors/', async () => {
   assert.equal(onDisk.actorType, 'people');
   // An actor id is a plain slug, so the same path checks apply as everywhere.
   assert.throws(() => checkBundle({ schema: 1, records: [{ ...actor, id: '../events/x' }] }), /not a slug/);
+});
+
+test('a place in a bundle is written to data/places/', async () => {
+  const dir = await scratch();
+  const place = {
+    schema: 1,
+    id: 'fixture-place-new',
+    kind: 'place',
+    status: 'active',
+    supersededBy: null,
+    aliases: [],
+    authors: [{ name: 'Fixture Contributor', github: null }],
+    license: 'CC-BY-SA-4.0',
+    created: '1970-01-01',
+    revised: null,
+    sources: [],
+    names: ['Fixture place new'],
+    where: { lon: 1.5, lat: 2.5, precision: 'city', label: 'Fixture place new' },
+    region: null,
+    summary: null,
+  };
+  const written = await bundleToFiles({ schema: 1, records: [place] }, { ...OPTIONS, dataDir: dir });
+  assert.deepEqual(written.map((w) => w.path), ['data/places/fixture-place-new.json']);
+  const onDisk = JSON.parse(await readFile(path.join(dir, 'places', 'fixture-place-new.json'), 'utf8'));
+  assert.deepEqual(onDisk.authors, [{ name: 'Fixture Contributor', github: 'fixture-opener' }]);
+  assert.deepEqual(onDisk.where, place.where);
+  // A place id is a plain slug, so the same path checks apply as everywhere.
+  assert.throws(() => checkBundle({ schema: 1, records: [{ ...place, id: '../events/x' }] }), /not a slug/);
 });

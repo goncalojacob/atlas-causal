@@ -149,7 +149,7 @@ export function checkBundle(bundle) {
     }
     const dir = KIND_DIRS[record.kind];
     if (!dir) {
-      problems.push(`${where}: unknown kind ${JSON.stringify(record.kind)}; expected event, edge or source`);
+      problems.push(`${where}: unknown kind ${JSON.stringify(record.kind)}; expected ${Object.keys(KIND_DIRS).join(', ')}`);
       return;
     }
     const id = record.id;

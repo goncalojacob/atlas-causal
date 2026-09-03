@@ -15,17 +15,20 @@ import {
 } from './bundle.js';
 import { submitBundle } from './submit.js';
 
-const KIND_LABEL = Object.freeze({ event: 'Event', edge: 'Edge', source: 'Source', actor: 'Actor' });
+const KIND_LABEL = Object.freeze({
+  event: 'Event', edge: 'Edge', source: 'Source', actor: 'Actor', place: 'Place',
+});
 const KIND_HINT = Object.freeze({
   event: 'One point in space and time, or a long process with an interval and no place.',
   edge: 'One causal link, with the argument for it. The id is derived: from, to and type.',
   source: 'A bibliography entry, cited by reference. Fifty records citing the same book cite one file.',
   actor: 'A person, polity, institution or people. Actors are reached through their events, never listed on their own.',
+  place: 'Somewhere events happen, with its own coordinates. A place is a geographic fact, so it needs no source — the events that point at it still do.',
 });
 
-// The field whose text suggests the id, per kind. An actor's display name
-// is the first of its semicolon-separated names.
-const TITLE_KEY = Object.freeze({ event: 'title', actor: 'names' });
+// The field whose text suggests the id, per kind. An actor's and a place's
+// display name is the first of its semicolon-separated names.
+const TITLE_KEY = Object.freeze({ event: 'title', actor: 'names', place: 'names' });
 
 let sequence = 0;
 
@@ -95,7 +98,7 @@ export function createForm(container, { topology, schemas, template, fixtures = 
 
   // --- add buttons -------------------------------------------------------
   const addRow = html('div', { class: 'add-row' });
-  for (const kind of ['source', 'event', 'edge', 'actor']) {
+  for (const kind of ['source', 'event', 'edge', 'actor', 'place']) {
     const button = html('button', { type: 'button' }, `Add ${kind}`);
     button.addEventListener('click', () => {
       addEntry(kind);
@@ -152,6 +155,17 @@ export function createForm(container, { topology, schemas, template, fixtures = 
     return [...seen].sort((a, b) => (a[1] < b[1] ? -1 : a[1] > b[1] ? 1 : 0)).map(([value, label]) => ({ value, label }));
   }
 
+  function placeChoices() {
+    const seen = new Map();
+    for (const p of topology.places ?? []) if (p.status === 'active') seen.set(p.id, p.name ?? p.id);
+    for (const entry of entries) {
+      if (entry.kind !== 'place') continue;
+      const id = (entry.values.id ?? '').trim();
+      if (id) seen.set(id, `${(entry.values.names ?? '').split(';')[0].trim() || id} — in this bundle`);
+    }
+    return [...seen].sort((a, b) => (a[1] < b[1] ? -1 : a[1] > b[1] ? 1 : 0)).map(([value, label]) => ({ value, label }));
+  }
+
   function regionChoices() {
     return (topology.regions ?? []).map((r) => ({ value: r.id, label: r.label ?? r.id }));
   }
@@ -161,6 +175,7 @@ export function createForm(container, { topology, schemas, template, fixtures = 
     if (name === 'sources') return [{ value: '', label: '— choose a source —' }, ...sourceChoices()];
     if (name === 'regions') return [{ value: '', label: '— derived from the place —' }, ...regionChoices()];
     if (name === 'actors') return [{ value: '', label: '— choose an actor —' }, ...actorChoices()];
+    if (name === 'places') return [{ value: '', label: '— no place: timeline only —' }, ...placeChoices()];
     return [];
   }
 

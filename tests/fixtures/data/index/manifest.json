@@ -3,13 +3,14 @@
     "actors": 4,
     "edges": 10,
     "events": 12,
+    "places": 0,
     "presences": 3,
     "regions": 3,
     "sources": 4
   },
   "files": {
     "sources": "index/sources-bc0e6f1ea1f7.json",
-    "topology": "index/topology-64871f6cf7a5.json"
+    "topology": "index/topology-3bcb700ad71e.json"
   },
   "land": [],
   "presenceShards": [

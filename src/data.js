@@ -22,7 +22,8 @@ export function createAtlas({ manifest, topology, sources, land = null, dataRoot
   const edges = new Map(topology.edges.map((e) => [e.id, e]));
   const sourceMap = new Map(sources.map((s) => [s.id, s]));
   const actors = new Map((topology.actors ?? []).map((a) => [a.id, a]));
-  const kinds = [['event', events], ['edge', edges], ['source', sourceMap], ['actor', actors]];
+  const places = new Map((topology.places ?? []).map((p) => [p.id, p]));
+  const kinds = [['event', events], ['edge', edges], ['source', sourceMap], ['actor', actors], ['place', places]];
 
   const aliases = new Map();
   for (const [kind, map] of kinds) {
@@ -90,6 +91,27 @@ export function createAtlas({ manifest, topology, sources, land = null, dataRoot
   for (const list of eventsByActor.values()) {
     list.sort((a, b) => intervalExtent(a.event.when).min - intervalExtent(b.event.when).min
       || (a.event.id < b.event.id ? -1 : a.event.id > b.event.id ? 1 : 0));
+  }
+
+  // --- places ------------------------------------------------------------
+  // An event points at a place and the place holds the point, so everything
+  // that draws asks for the point here rather than reading a field off the
+  // event. `where` on an event is what it carried before places existed and
+  // is only still read while the migration runs; it goes with the field.
+  const placeOf = (event) => (event && typeof event.place === 'string' ? places.get(event.place) ?? null : null);
+  const pointOf = (event) => placeOf(event)?.where ?? event?.where ?? null;
+
+  // The other direction: which events happened at a place, chronologically.
+  // Only active events, and only places that resolve.
+  const eventsByPlace = new Map();
+  for (const event of activeEvents) {
+    if (!places.has(event.place)) continue;
+    if (!eventsByPlace.has(event.place)) eventsByPlace.set(event.place, []);
+    eventsByPlace.get(event.place).push(event);
+  }
+  for (const list of eventsByPlace.values()) {
+    list.sort((a, b) => intervalExtent(a.when).min - intervalExtent(b.when).min
+      || (a.id < b.id ? -1 : a.id > b.id ? 1 : 0));
   }
 
   // --- territories -------------------------------------------------------
@@ -176,6 +198,10 @@ export function createAtlas({ manifest, topology, sources, land = null, dataRoot
     edges,
     sources: sourceMap,
     actors,
+    places,
+    eventsByPlace,
+    placeOf,
+    pointOf,
     eventsByActor,
     aliases,
     adjacency: buildAdjacency(topology.events, topology.edges),

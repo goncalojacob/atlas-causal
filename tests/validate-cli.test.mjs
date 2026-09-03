@@ -49,7 +49,7 @@ test('build-index.mjs writes an index that validate.mjs --index accepts', async 
     assert.equal(cli('validate.mjs', '--data', dir, '--index').status, 1);
     const b = cli('build-index.mjs', '--data', dir);
     assert.equal(b.status, 0, b.err);
-    assert.match(b.out, /12 events, 10 edges, 4 actors, 3 presences, 4 sources/);
+    assert.match(b.out, /12 events, 10 edges, 4 actors, 0 places, 3 presences, 4 sources/);
     assert.equal(cli('validate.mjs', '--data', dir, '--index').status, 0);
   } finally {
     await rm(dir, { recursive: true, force: true });

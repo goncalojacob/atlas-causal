@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "v1/place.json",
+  "title": "Place",
+  "description": "Somewhere events happen. A place is a geographic fact, not a historiographical argument, so it needs no source: sources may be empty here, as on region and source records (rule 6). names[0] is the display name and the rest are variants and other-language forms; that the list is non-empty is rule 18, because the keyword subset has no minItems. region is an override, as on an event: it is derived from where at index time.",
+  "type": "object",
+  "required": ["schema", "id", "kind", "status", "supersededBy", "aliases", "authors", "license", "created", "revised", "sources", "names", "where"],
+  "additionalProperties": false,
+  "properties": {
+    "schema": { "$ref": "../common/provenance.json#/properties/schema" },
+    "id": { "$ref": "../common/provenance.json#/properties/id" },
+    "kind": { "const": "place" },
+    "status": { "$ref": "../common/provenance.json#/properties/status" },
+    "supersededBy": { "$ref": "../common/provenance.json#/properties/supersededBy" },
+    "aliases": { "$ref": "../common/provenance.json#/properties/aliases" },
+    "authors": { "$ref": "../common/provenance.json#/properties/authors" },
+    "license": { "$ref": "../common/provenance.json#/properties/license" },
+    "created": { "$ref": "../common/provenance.json#/properties/created" },
+    "revised": { "$ref": "../common/provenance.json#/properties/revised" },
+    "sources": { "$ref": "../common/provenance.json#/properties/sources" },
+    "names": {
+      "description": "The display name first, then variants: \"Lisbon\", \"Lisboa\".",
+      "type": "array",
+      "items": { "type": "string", "minLength": 1, "maxLength": 200 }
+    },
+    "where": {
+      "description": "The point itself. Required: a place with no coordinates is a word, and an event that wants one is placeless instead.",
+      "$ref": "../common/place.json"
+    },
+    "region": {
+      "oneOf": [
+        { "type": "null" },
+        { "$ref": "../common/provenance.json#/properties/id" }
+      ]
+    },
+    "summary": {
+      "description": "Optional, and written by a person when it is there: what this place is, in a sentence or two.",
+      "oneOf": [
+        { "type": "null" },
+        { "type": "string", "minLength": 1 }
+      ]
+    }
+  }
+}

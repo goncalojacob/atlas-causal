@@ -14,7 +14,9 @@
         "oneOf": [
           { "$ref": "event.json" },
           { "$ref": "edge.json" },
-          { "$ref": "source.json" }
+          { "$ref": "source.json" },
+          { "$ref": "actor.json" },
+          { "$ref": "place.json" }
         ]
       }
     }

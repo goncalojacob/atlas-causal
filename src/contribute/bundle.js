@@ -27,11 +27,17 @@ export const FIELDS = Object.freeze({
     { key: 'end', label: 'End year', input: 'text', path: '/when/end', hint: 'blank means the same year as the start; write "ongoing" for an interval with no end' },
     { key: 'date', label: 'Exact date', input: 'text', path: '/when/date', hint: 'display only, exactly as the source gives it: YYYY-MM-DD or YYYY-MM' },
     { key: 'calendar', label: 'Calendar', input: 'select', options: ['', 'julian', 'gregorian'], path: '/when/calendar', hint: 'of the exact date; Julian before 1582, Gregorian after, unless the source says otherwise' },
-    { key: 'label', label: 'Place', input: 'text', path: '/where/label', hint: 'leave the three place fields blank for a long process with no honest point' },
-    { key: 'lon', label: 'Longitude', input: 'text', path: '/where/lon', hint: 'WGS84, east positive' },
-    { key: 'lat', label: 'Latitude', input: 'text', path: '/where/lat', hint: 'WGS84, north positive' },
-    { key: 'precision', label: 'Precision', input: 'select', options: PRECISION, path: '/where/precision' },
+    { key: 'place', label: 'Place', input: 'select', optionsFrom: 'places', path: '/place', hint: 'a place record, chosen by name; add one below if it is not there yet. Leave it empty for a long process with no honest point' },
     { key: 'region', label: 'Timeline lane', input: 'select', optionsFrom: 'regions', path: '/region', hint: 'derived from the place; set it only when the derivation would be wrong, and always when there is no place' },
+  ]),
+  place: Object.freeze([
+    { key: 'names', label: 'Names', input: 'text', path: '/names', required: true, hint: 'the display name first, then variants and other-language forms, separated by semicolons: Lisbon; Lisboa' },
+    { key: 'id', label: 'Id', input: 'text', path: '/id', required: true, hint: 'lowercase words joined by hyphens; it becomes the file name and the permanent URL' },
+    { key: 'lon', label: 'Longitude', input: 'text', path: '/where/lon', required: true, hint: 'WGS84, east positive' },
+    { key: 'lat', label: 'Latitude', input: 'text', path: '/where/lat', required: true, hint: 'WGS84, north positive' },
+    { key: 'precision', label: 'Precision', input: 'select', options: PRECISION, path: '/where/precision' },
+    { key: 'region', label: 'Timeline lane', input: 'select', optionsFrom: 'regions', path: '/region', hint: 'derived from the coordinates; set it only when the derivation would be wrong' },
+    { key: 'summary', label: 'Summary', input: 'textarea', path: '/summary', hint: 'optional, and written by you when it is there' },
   ]),
   edge: Object.freeze([
     { key: 'from', label: 'From', input: 'select', optionsFrom: 'events', path: '/from', required: true },
@@ -80,6 +86,9 @@ export const CITATION_LISTS = Object.freeze({
   ],
   source: [],
   actor: [{ key: 'citations', label: 'Sources', path: '/sources' }],
+  // A place is a geographic fact, not an argument: rule 6 exempts it, and the
+  // form says so rather than asking for a citation nobody has.
+  place: [],
 });
 
 // The actors of an event, each with the role it played in it. One list, on
@@ -90,6 +99,7 @@ export const ACTOR_LISTS = Object.freeze({
   edge: [],
   source: [],
   actor: [],
+  place: [],
 });
 
 function isObject(v) {
@@ -193,18 +203,29 @@ export function buildRecord(kind, values, context = {}) {
     const when = { start, end: parseEnd(v.end, start) };
     if (trimmed(v.date) !== '') when.date = trimmed(v.date);
     if (trimmed(v.calendar) !== '') when.calendar = trimmed(v.calendar);
-    const hasPlace = [v.lon, v.lat, v.label].some((x) => trimmed(x) !== '');
     return {
       ...envelope('event', trimmed(v.id), context),
       sources: citationsOf(v.citations),
       title: trimmed(v.title),
       summary: trimmed(v.summary),
       when,
-      where: hasPlace
-        ? { lon: parseNumber(v.lon), lat: parseNumber(v.lat), precision: trimmed(v.precision) || 'city', label: trimmed(v.label) }
-        : null,
+      place: orNull(v.place),
       region: orNull(v.region),
       actors: actorsOf(v.actors),
+    };
+  }
+
+  if (kind === 'place') {
+    const names = trimmed(v.names).split(';').map((s) => s.trim()).filter(Boolean);
+    return {
+      ...envelope('place', trimmed(v.id), context),
+      sources: [],
+      names,
+      // The label of the point is the display name: two fields for one thing
+      // would only let them disagree.
+      where: { lon: parseNumber(v.lon), lat: parseNumber(v.lat), precision: trimmed(v.precision) || 'city', label: names[0] ?? '' },
+      region: orNull(v.region),
+      summary: orNull(v.summary),
     };
   }
 
@@ -261,7 +282,7 @@ export function buildRecord(kind, values, context = {}) {
     };
   }
 
-  throw new Error(`kind must be event, edge, source or actor, not "${kind}"`);
+  throw new Error(`kind must be event, edge, source, actor or place, not "${kind}"`);
 }
 
 // entries: [{ kind, values }] in the order the contributor added them.

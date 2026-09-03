@@ -57,7 +57,12 @@ export async function buildIndex(dataDir = DEFAULT_DATA) {
   const topology = buildTopology(records, regions, { deriveRegion });
 
   const topologyText = serialize({
-    schema: 1, events: topology.events, edges: topology.edges, actors: topology.actors, presences: topology.presences,
+    schema: 1,
+    events: topology.events,
+    edges: topology.edges,
+    actors: topology.actors,
+    presences: topology.presences,
+    places: topology.places,
   });
   const sourcesText = serialize({ schema: 1, sources: topology.sources });
   const topologyName = `topology-${hashOf(topologyText)}.json`;
@@ -70,6 +75,7 @@ export async function buildIndex(dataDir = DEFAULT_DATA) {
       sources: topology.sources.length,
       actors: topology.actors.length,
       presences: topology.presences.length,
+      places: topology.places.length,
       regions: topology.regions.length,
     },
     files: { topology: `index/${topologyName}`, sources: `index/${sourcesName}` },
@@ -84,7 +90,7 @@ export async function buildIndex(dataDir = DEFAULT_DATA) {
     presenceShards,
   });
 
-  const unresolved = topology.events.filter((e) => e.status === 'active' && e.where && !e.region);
+  const unresolved = topology.events.filter((e) => e.status === 'active' && (e.place || e.where) && !e.region);
   return {
     files: { 'manifest.json': manifest, [topologyName]: topologyText, [sourcesName]: sourcesText },
     topology,
@@ -138,13 +144,13 @@ async function main(argv) {
   const built = await buildIndex(dataDir);
   if (built.unresolved.length) {
     for (const e of built.unresolved) {
-      console.error(`error: ${e.id}: region could not be derived from where; set region on the record`);
+      console.error(`error: ${e.id}: region could not be derived from its place; set region on the place or on the event`);
     }
     return 1;
   }
   await writeIndex(dataDir, built);
   const c = built.topology;
-  console.log(`index written to ${path.relative(process.cwd(), path.join(dataDir, 'index')) || '.'}: ${c.events.length} events, ${c.edges.length} edges, ${c.actors.length} actors, ${c.presences.length} presences, ${c.sources.length} sources`);
+  console.log(`index written to ${path.relative(process.cwd(), path.join(dataDir, 'index')) || '.'}: ${c.events.length} events, ${c.edges.length} edges, ${c.actors.length} actors, ${c.places.length} places, ${c.presences.length} presences, ${c.sources.length} sources`);
   return 0;
 }
 

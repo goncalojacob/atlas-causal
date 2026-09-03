@@ -40,6 +40,7 @@ export const ALLOWED_LICENSES = Object.freeze({
   // that geometry's licence is not data/LICENSE's. A hand-made presence is
   // CC BY-SA like every other record.
   presence: ['CC-BY-SA-4.0', 'CC-BY-NC-SA-4.0'],
+  place: ['CC-BY-SA-4.0'],
 });
 
 // The exception that keeps the NC-SA licence out of data/actors/ generally:
@@ -104,6 +105,7 @@ export function checkRules(records, topology = {}) {
   for (const s of topology.sources ?? []) add('source', s, false);
   for (const a of topology.actors ?? []) add('actor', a, false);
   for (const p of topology.presences ?? []) add('presence', p, false);
+  for (const p of topology.places ?? []) add('place', p, false);
 
   const ownIds = new Set();
   for (const r of records) {
@@ -172,8 +174,11 @@ export function checkRules(records, topology = {}) {
       if (r.supersededBy === r.id) error(3, r, '/supersededBy', 'a record cannot supersede itself');
       else if (!lookup(r.supersededBy, r.kind)) error(3, r, '/supersededBy', `"${r.supersededBy}" is not a ${r.kind}`);
     }
-    if (r.kind === 'event' && typeof r.region === 'string' && !regionIds.has(r.region)) {
+    if ((r.kind === 'event' || r.kind === 'place') && typeof r.region === 'string' && !regionIds.has(r.region)) {
       error(3, r, '/region', `"${r.region}" is not in regions.json`);
+    }
+    if (r.kind === 'event' && typeof r.place === 'string' && !lookup(r.place, 'place')) {
+      error(3, r, '/place', `"${r.place}" is not a place record`);
     }
     if (r.kind === 'presence') {
       if (!lookup(r.actor, 'actor')) error(3, r, '/actor', `"${r.actor}" is not an actor record`);
@@ -359,7 +364,7 @@ export function checkRules(records, topology = {}) {
 
   // --- rule 10: place and region ------------------------------------------
   for (const r of own) {
-    if (r.kind !== 'event' && r.kind !== 'actor' && r.kind !== 'presence') continue;
+    if (!['event', 'actor', 'presence', 'place'].includes(r.kind)) continue;
     // A presence's point is its capital; it has no `where` of its own,
     // because the outline says where it was.
     const field = r.kind === 'presence' ? 'capital' : 'where';
@@ -367,10 +372,11 @@ export function checkRules(records, topology = {}) {
     if (where) {
       if (typeof where.lon !== 'number' || where.lon < -180 || where.lon > 180) error(10, r, `/${field}/lon`, 'longitude must be within [-180, 180]');
       if (typeof where.lat !== 'number' || where.lat < -90 || where.lat > 90) error(10, r, `/${field}/lat`, 'latitude must be within [-90, 90]');
-    } else if (r.kind === 'event' && typeof r.region !== 'string') {
+    } else if (r.kind === 'event' && typeof r.place !== 'string' && typeof r.region !== 'string') {
       // An actor has no lane: it is reached through its events, never put
-      // on the timeline alone.
-      error(10, r, '/region', 'region is required when where is absent');
+      // on the timeline alone. A place has one, but derives it from its own
+      // point, which the schema requires.
+      error(10, r, '/region', 'region is required when the event has no place');
     }
   }
 
@@ -399,6 +405,17 @@ export function checkRules(records, topology = {}) {
           error(11, r, '', `${r.status} actor is still referenced by the active presence "${u.entry.id}"`);
         }
       }
+    }
+    if (r.kind === 'place' && r.status !== 'active') {
+      for (const u of universe.values()) {
+        if (u.kind === 'event' && u.entry.status === 'active' && u.entry.place === r.id) {
+          error(11, r, '', `${r.status} place is still referenced by the active event "${u.entry.id}"`);
+        }
+      }
+    }
+    if (r.kind === 'event' && r.status === 'active' && typeof r.place === 'string') {
+      const place = lookup(r.place, 'place');
+      if (place && place.status !== 'active') error(11, r, '/place', `an active event cannot reference the ${place.status} place "${place.id}"`);
     }
     if (r.kind === 'presence' && r.status === 'active') {
       for (const field of ['actor', 'dependencyOf']) {
@@ -517,6 +534,20 @@ export function checkRules(records, topology = {}) {
     }
   }
 
+  // --- rule 18: places ----------------------------------------------------
+  // The little a place has to hold together. Its point is required by the
+  // schema and checked by rule 10; its lane is derived from that point, so a
+  // place needs no region of its own. What is left is the name list, for the
+  // same reason an actor's is a rule and not a keyword (deviation 22).
+  for (const r of own) {
+    if (r.kind !== 'place') continue;
+    const names = Array.isArray(r.names) ? r.names.filter((n) => typeof n === 'string' && n.trim() !== '') : [];
+    if (names.length === 0) error(18, r, '/names', 'a place has at least one name; the first is the display name');
+    names.forEach((name, i) => {
+      if (names.indexOf(name) !== i) error(18, r, `/names/${i}`, `name "${name}" repeated`);
+    });
+  }
+
   // --- warnings: degree zero, no citers -----------------------------------
   const degree = new Map();
   for (const e of activeEdges) {
@@ -556,7 +587,18 @@ export function checkRules(records, topology = {}) {
       if (u.entry.dependencyOf) noteActor(u.entry.dependencyOf, u.entry);
     }
   }
+  // A place nothing happened at is the place equivalent of degree zero. It is
+  // a warning and not an error: writing the place before the event it is for
+  // is a reasonable order to work in, and a place left behind by a retracted
+  // event is a fact about the world that has not stopped being true.
+  const usedPlaces = new Set();
+  for (const u of universe.values()) {
+    if (u.kind === 'event' && u.entry.status === 'active' && typeof u.entry.place === 'string') usedPlaces.add(u.entry.place);
+  }
   for (const r of own) {
+    if (r.kind === 'place' && r.status === 'active' && !usedPlaces.has(r.id)) {
+      warning('place-unused', r, 'place is referenced by no event');
+    }
     if (r.kind === 'actor' && r.status === 'active' && !referencedActors.has(r.id)) {
       warning('actor-unused', r, 'actor is referenced by no event and holds no territory');
     }

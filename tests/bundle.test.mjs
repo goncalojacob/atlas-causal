@@ -19,17 +19,25 @@ async function topologyOf() {
   return buildTopology(records, regions, { deriveRegion: createRegionDeriver(polygons) });
 }
 
+// No place: the lane is set by hand, which is what a timeline-only event
+// does. The bundles below that want a place add one and point at it.
 const eventValues = {
   ...emptyValues('event'),
   id: 'fixture-event-new',
   title: 'Fixture event new',
   summary: 'A synthetic event added by the form in a test. It is not history.',
   start: '1300',
+  region: 'fixture-lane-1',
+  citations: [{ source: 'fixture-source-1', locator: 'p. 1' }],
+};
+
+const placeValues = {
+  ...emptyValues('place'),
+  id: 'fixture-place-new',
+  names: 'Fixture place new; Fixtura Nova',
   lon: '1.5',
   lat: '2.5',
-  label: 'Fixture place',
   precision: 'city',
-  citations: [{ source: 'fixture-source-1', locator: 'p. 1' }],
 };
 
 test('every field path is a property the kind schema knows', async () => {
@@ -74,13 +82,24 @@ test('a built record carries the envelope and passes its schema', async () => {
   assert.equal(event.license, 'CC-BY-SA-4.0');
   assert.equal(event.created, '2026-09-01');
   assert.deepEqual(event.actors, []);
-  assert.deepEqual(event.where, { lon: 1.5, lat: 2.5, precision: 'city', label: 'Fixture place' });
+  // No place at all is legal: a long process is timeline-only, and then the
+  // lane is the record's own.
+  assert.equal(event.place, null);
+  assert.equal(event.region, 'fixture-lane-1');
   assert.deepEqual(v.validate('v1/event.json', event), []);
 
-  // No place at all is legal: a long process is timeline-only.
-  const process = buildRecord('event', { ...eventValues, lon: '', lat: '', label: '', region: 'europe' }, CONTEXT);
-  assert.equal(process.where, null);
-  assert.deepEqual(v.validate('v1/event.json', process), []);
+  const placed = buildRecord('event', { ...eventValues, place: 'fixture-place-new', region: '' }, CONTEXT);
+  assert.equal(placed.place, 'fixture-place-new');
+  assert.deepEqual(v.validate('v1/event.json', placed), []);
+
+  // A place cites nothing and carries its display name into the point's
+  // label, so the two can never disagree.
+  const place = buildRecord('place', placeValues, CONTEXT);
+  assert.deepEqual(place.names, ['Fixture place new', 'Fixtura Nova']);
+  assert.deepEqual(place.where, { lon: 1.5, lat: 2.5, precision: 'city', label: 'Fixture place new' });
+  assert.deepEqual(place.sources, []);
+  assert.equal(place.summary, null);
+  assert.deepEqual(v.validate('v1/place.json', place), []);
 
   const edge = buildRecord('edge', {
     ...emptyValues('edge'),
@@ -133,7 +152,9 @@ test('validateBundle runs the cross-record rules against the topology', async ()
 
   const good = buildBundle([
     { kind: 'source', values: { ...emptyValues('source'), id: 'fixture-source-new', type: 'book', creators: 'One Fixture', title: 'A synthetic book', isbn: '9780000000001' } },
-    { kind: 'event', values: eventValues },
+    { kind: 'place', values: placeValues },
+    // The place is in this same bundle: a reference resolves inside it.
+    { kind: 'event', values: { ...eventValues, place: 'fixture-place-new', region: '' } },
     {
       kind: 'edge',
       values: {

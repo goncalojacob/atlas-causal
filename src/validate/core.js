@@ -7,7 +7,7 @@
 import { createValidator } from './schema.js';
 import { checkRules, normalizeRole } from './rules.js';
 
-export const KINDS = Object.freeze(['event', 'edge', 'source', 'actor', 'presence']);
+export const KINDS = Object.freeze(['event', 'edge', 'source', 'actor', 'presence', 'place']);
 export const SCHEMA_VERSION = 1;
 
 function isObject(v) {
@@ -109,33 +109,68 @@ export function eventWeights(events, edges) {
   return weights;
 }
 
+// Where a record sits and which lane that puts it in: the override on the
+// record wins, then the polygon the point falls in, then the nearest lane
+// within tolerance. Shared by places and by events that still carry their own
+// `where` during the migration.
+function laneOf(record, where, deriveRegion) {
+  const override = typeof record.region === 'string' ? record.region : null;
+  if (override) return { region: override, regionMethod: 'override' };
+  if (isObject(where) && deriveRegion) {
+    const derived = deriveRegion(where);
+    if (derived) return { region: derived.region, regionMethod: derived.method };
+  }
+  return { region: null, regionMethod: null };
+}
+
 // The topology object: what build-index.mjs writes and what the rules read.
-// Text fields stay out; the site fetches record files for them. `region` on
-// an event is the record's override or, failing that, what deriveRegion
-// says about its place. An actor's `summary` and `where` stay out for the
-// same reason: the panel fetches the record when the card is opened.
+// Text fields stay out; the site fetches record files for them. An event's
+// coordinates are its place's, and its `region` is its own override, then the
+// place's lane (the place's own override or what deriveRegion says of its
+// point). An actor's `summary` and `where` stay out for the same reason: the
+// panel fetches the record when the card is opened.
 export function buildTopology(records, regions, { deriveRegion } = {}) {
   const events = [];
   const edges = [];
   const sources = [];
   const actors = [];
   const presences = [];
+  const places = [];
+  // Places first: an event's lane is derived from the place it names, so the
+  // places have to be resolved before any event is.
+  const placeById = new Map();
+  for (const r of records) {
+    if (r.kind !== 'place') continue;
+    const entry = {
+      id: r.id,
+      name: (r.names ?? [])[0] ?? r.id,
+      names: r.names ?? [],
+      where: isObject(r.where) ? r.where : null,
+      ...laneOf(r, r.where, deriveRegion),
+      status: r.status,
+      supersededBy: r.supersededBy ?? null,
+      aliases: r.aliases ?? [],
+    };
+    places.push(entry);
+    if (!placeById.has(entry.id)) placeById.set(entry.id, entry);
+  }
   for (const r of records) {
     if (r.kind === 'event') {
-      let region = typeof r.region === 'string' ? r.region : null;
-      let regionMethod = region ? 'override' : null;
-      if (!region && isObject(r.where) && deriveRegion) {
-        const derived = deriveRegion(r.where);
-        if (derived) {
-          region = derived.region;
-          regionMethod = derived.method;
-        }
+      const place = typeof r.place === 'string' ? placeById.get(r.place) ?? null : null;
+      // `where` on an event is transitional and goes with the migration; while
+      // it is there it is the point, so nothing stops being drawn mid-way.
+      const own = place ? null : (isObject(r.where) ? r.where : null);
+      let { region, regionMethod } = laneOf(r, own, deriveRegion);
+      if (!region && place) {
+        region = place.region;
+        regionMethod = place.regionMethod;
       }
       events.push({
         id: r.id,
         title: r.title,
         when: r.when,
-        where: isObject(r.where) ? r.where : null,
+        place: typeof r.place === 'string' ? r.place : null,
+        where: own,
         region,
         regionMethod,
         status: r.status,
@@ -195,12 +230,14 @@ export function buildTopology(records, regions, { deriveRegion } = {}) {
   sources.sort(byId);
   actors.sort(byId);
   presences.sort(byId);
+  places.sort(byId);
   return {
     events,
     edges,
     sources,
     actors,
     presences,
+    places,
     regions: [...(regions ?? [])].sort((a, b) => a.order - b.order || byId(a, b)),
   };
 }

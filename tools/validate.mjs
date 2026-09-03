@@ -103,13 +103,18 @@ export async function runValidation(dataDir = DEFAULT_DATA, { index = false } = 
     for (const region of regions) {
       if (!lanes.has(region.id)) warnings.push({ rule: 'no-polygon', id: region.id, file: 'regions.json', path: '', message: `lane "${region.id}" has no polygon in geo/regions.json; events reach it only by override` });
     }
-    for (const e of topology.events) {
-      if (e.status === 'active' && e.where && !e.region) {
-        errors.push({ rule: 10, id: e.id, file: fileOf.get(e.id) ?? null, path: '/region', message: `no lane polygon within ${NEAREST_TOLERANCE}° of where; set region on the record` });
+    for (const p of topology.places) {
+      if (p.status === 'active' && p.where && !p.region) {
+        errors.push({ rule: 10, id: p.id, file: fileOf.get(p.id) ?? null, path: '/region', message: `no lane polygon within ${NEAREST_TOLERANCE}° of where; set region on the place` });
       }
     }
-  } else if (topology.events.some((e) => e.where && !e.region)) {
-    warnings.push({ rule: 'no-polygons', id: null, file: 'geo/regions.json', path: '', message: 'geo/regions.json is missing; regions cannot be derived from where (run tools/build-regions.mjs)' });
+    for (const e of topology.events) {
+      if (e.status === 'active' && (e.place || e.where) && !e.region) {
+        errors.push({ rule: 10, id: e.id, file: fileOf.get(e.id) ?? null, path: '/region', message: `no lane polygon within ${NEAREST_TOLERANCE}° of the place; set region on the place or on the event` });
+      }
+    }
+  } else if (topology.events.some((e) => (e.place || e.where) && !e.region)) {
+    warnings.push({ rule: 'no-polygons', id: null, file: 'geo/regions.json', path: '', message: 'geo/regions.json is missing; regions cannot be derived from a place (run tools/build-regions.mjs)' });
   }
 
   // Rule 17's half that needs the disk: the files a presence names exist,

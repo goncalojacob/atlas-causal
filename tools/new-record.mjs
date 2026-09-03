@@ -4,7 +4,10 @@
 // or a dispute. It refuses to overwrite.
 //
 //   node tools/new-record.mjs event <id> --title "…" --start 1415 [--end 1415]
-//        [--lon -9.14 --lat 38.71 --label "Lisbon" --precision city] [--region europe]
+//        [--place lisbon | --new-place ceuta --label "Ceuta" --lon -5.319 --lat 35.889]
+//        [--region europe]
+//   node tools/new-record.mjs place <id> --names "Lisbon; Lisboa" --lon -9.14 --lat 38.72
+//        [--precision city] [--region europe]
 //   node tools/new-record.mjs edge <from> <to> <type> [--confidence probable] [--source <id>]
 //   node tools/new-record.mjs actor <id> --type person --names "Salazar; António de Oliveira Salazar"
 //        --start 1889 [--end 1970 | --end null] [--lon -8.1 --lat 40.5 --label "Santa Comba Dão"]
@@ -88,20 +91,40 @@ export function scaffold(kind, positional, options) {
     const start = int(options.start, 'start');
     if (start === undefined) throw new Error('event needs --start <year>');
     const end = options.end === 'null' ? null : (int(options.end, 'end') ?? start);
-    const lon = num(options.lon, 'lon');
-    const lat = num(options.lat, 'lat');
-    const where = lon !== undefined && lat !== undefined
-      ? { lon, lat, precision: options.precision ?? 'city', label: options.label ?? '' }
-      : null;
+    const place = typeof options.place === 'string' ? options.place
+      : typeof options['new-place'] === 'string' ? options['new-place']
+        : null;
+    if (place !== null && !SLUG.test(place)) throw new Error('--place and --new-place take a slug place id');
     return {
       ...envelope(id),
       sources,
       title: options.title ?? '',
       summary: '',
       when: { start, end },
-      where,
+      place,
       region: options.region ?? null,
       actors: [],
+    };
+  }
+
+  if (kind === 'place') {
+    const [id] = positional;
+    if (!id || !SLUG.test(id)) throw new Error('place needs a slug id');
+    const lon = num(options.lon, 'lon');
+    const lat = num(options.lat, 'lat');
+    if (lon === undefined || lat === undefined) throw new Error('place needs --lon and --lat');
+    const names = typeof options.names === 'string'
+      ? options.names.split(';').map((s) => s.trim()).filter(Boolean)
+      : typeof options.label === 'string' ? [options.label] : [];
+    return {
+      ...envelope(id),
+      // A place is a geographic fact and cites nothing (rule 6); --source is
+      // accepted anyway, for the place whose location is itself argued over.
+      sources,
+      names,
+      where: { lon, lat, precision: options.precision ?? 'city', label: names[0] ?? '' },
+      region: options.region ?? null,
+      summary: null,
     };
   }
 
@@ -167,29 +190,46 @@ export function scaffold(kind, positional, options) {
     };
   }
 
-  throw new Error(`kind must be event, edge, source or actor, not "${kind}"`);
+  throw new Error(`kind must be event, edge, source, actor or place, not "${kind}"`);
+}
+
+// One command may write two files: an event and the place it happens at, when
+// that place does not exist yet. Nothing else scaffolds more than itself.
+export function scaffoldAll(kind, positional, options) {
+  const records = [scaffold(kind, positional, options)];
+  if (kind === 'event' && typeof options['new-place'] === 'string') {
+    records.unshift(scaffold('place', [options['new-place']], options));
+  }
+  return records;
 }
 
 async function main(argv) {
   const { positional, options } = parse(argv);
   const [kind, ...rest] = positional;
-  let record;
+  let records;
   try {
-    record = scaffold(kind, rest, options);
+    records = scaffoldAll(kind, rest, options);
   } catch (e) {
     console.error(e.message);
     return 2;
   }
   const dataDir = options.data ? path.resolve(options.data) : DEFAULT_DATA;
-  const dir = path.join(dataDir, KIND_DIRS[kind]);
-  const file = path.join(dir, `${path.basename(record.id)}.json`);
-  if (existsSync(file)) {
-    console.error(`refusing to overwrite ${file}`);
-    return 1;
+  const planned = records.map((record) => {
+    const dir = path.join(dataDir, KIND_DIRS[record.kind]);
+    return { record, dir, file: path.join(dir, `${path.basename(record.id)}.json`) };
+  });
+  for (const item of planned) {
+    if (existsSync(item.file)) {
+      console.error(`refusing to overwrite ${item.file}`);
+      return 1;
+    }
   }
-  await mkdir(dir, { recursive: true });
-  await writeFile(file, `${JSON.stringify(record, null, 2)}\n`, 'utf8');
-  console.log(`${path.relative(process.cwd(), file)} — now write the text, then run node tools/validate.mjs`);
+  for (const item of planned) {
+    await mkdir(item.dir, { recursive: true });
+    await writeFile(item.file, `${JSON.stringify(item.record, null, 2)}\n`, 'utf8');
+    console.log(path.relative(process.cwd(), item.file));
+  }
+  console.log('now write the text, then run node tools/validate.mjs');
   return 0;
 }
 

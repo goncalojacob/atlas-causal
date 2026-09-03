@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { scaffold } from '../tools/new-record.mjs';
+import { scaffold, scaffoldAll } from '../tools/new-record.mjs';
 import { createValidator } from '../src/validate/schema.js';
 import { schemas } from './helpers.mjs';
 
@@ -8,8 +8,9 @@ const opts = { author: 'Fixture Author', github: 'fixture-author', source: ['fix
 
 test('scaffolded records have the envelope and pass their schema; the text is left empty for a person', async () => {
   const v = createValidator(await schemas());
-  const event = scaffold('event', ['fixture-scaffold'], { ...opts, title: 'Fixture', start: '1300', lon: '1', lat: '2', label: 'Fixture' });
+  const event = scaffold('event', ['fixture-scaffold'], { ...opts, title: 'Fixture', start: '1300', place: 'fixture-place-one' });
   assert.equal(event.kind, 'event');
+  assert.equal(event.place, 'fixture-place-one');
   assert.equal(event.summary, '');
   assert.deepEqual(event.when, { start: 1300, end: 1300 });
   assert.deepEqual(event.authors, [{ name: 'Fixture Author', github: 'fixture-author' }]);
@@ -31,6 +32,29 @@ test('scaffolded records have the envelope and pass their schema; the text is le
   assert.deepEqual(actor.when, { start: 1900, end: null });
   assert.equal(actor.where, null);
   assert.deepEqual(v.validate('v1/actor.json', actor).map((e) => e.path), ['/summary']);
+
+  // A place is complete as scaffolded: it cites nothing and has no text a
+  // person still has to write.
+  const place = scaffold('place', ['fixture-scaffold-place'], {
+    ...opts, source: [], names: 'Fixture Place; Fixtura', lon: '1', lat: '2', region: 'fixture-lane-1',
+  });
+  assert.deepEqual(place.names, ['Fixture Place', 'Fixtura']);
+  assert.deepEqual(place.where, { lon: 1, lat: 2, precision: 'city', label: 'Fixture Place' });
+  assert.equal(place.region, 'fixture-lane-1');
+  assert.deepEqual(v.validate('v1/place.json', place), []);
+});
+
+test('one command writes an event and the place it happens at', () => {
+  const records = scaffoldAll('event', ['fixture-scaffold-two'], {
+    ...opts, title: 'Fixture', start: '1300', 'new-place': 'fixture-ceuta', label: 'Ceuta', lon: '-5.319', lat: '35.889',
+  });
+  // The place first: it is written before the event that points at it.
+  assert.deepEqual(records.map((r) => [r.kind, r.id]), [['place', 'fixture-ceuta'], ['event', 'fixture-scaffold-two']]);
+  assert.equal(records[1].place, 'fixture-ceuta');
+  assert.deepEqual(records[0].names, ['Ceuta']);
+  assert.equal(records[0].where.lon, -5.319);
+  // Without --new-place it is one record, as every other kind is.
+  assert.equal(scaffoldAll('event', ['fixture-scaffold-three'], { ...opts, start: '1300' }).length, 1);
 });
 
 test('scaffold refuses bad input', () => {
@@ -40,4 +64,7 @@ test('scaffold refuses bad input', () => {
   assert.throws(() => scaffold('actor', ['x'], { ...opts, type: 'deity' }), /--type must be one of/);
   assert.throws(() => scaffold('actor', ['x'], opts), /--start/);
   assert.throws(() => scaffold('presence', ['x'], opts), /kind must be/);
+  assert.throws(() => scaffold('place', ['x'], opts), /--lon and --lat/);
+  assert.throws(() => scaffold('place', ['Bad Id'], { ...opts, lon: '1', lat: '2' }), /slug/);
+  assert.throws(() => scaffold('event', ['fixture-x'], { ...opts, start: '1', place: 'Not A Slug' }), /--place/);
 });
