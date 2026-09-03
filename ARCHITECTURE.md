@@ -4,8 +4,49 @@ What the Atlas causal is meant to become, structurally. `CLAUDE.md` has the
 rules, `CONTEXT.md` the reasoning, `STATUS.md` where we are right now. This
 file is the target: the shape every milestone builds toward.
 
-Revision 7, 3 September 2026. Sections marked ● exist in v1; things marked ○
+Revision 8, 3 September 2026. Sections marked ● exist in v1; things marked ○
 are reserved by a line in this file only — no folder, no schema, no code.
+
+**What revision 8 changed, and why.** Nothing in the data model. A third view
+of the same graph, and one more field in the state.
+
+*The graph view.* `src/graph-view/` draws every event as a node and every edge
+as a line, so the whole web is visible at once instead of one chain at a time.
+It takes the map's slot behind a **Map | Graph** toggle and shares everything
+else — panel, search, window, URL, selection, walked chain. **x is the year**,
+on the same scale the timeline keeps for the whole extent of the data; there is
+no force simulation, because physics would put 1910 beside 2011 and lie about
+time. **y** is spent on one faint band per region and, inside a band, on a
+barycentre pass over the events of each year. The five edge types are drawn
+distinctly — pattern and weight, from tokens in `style.css`, keyed in
+`about.html` — never by colour: the atlas has one accent and it belongs to the
+path being walked. Convergence, which the panel can only list, is a picture
+here: the branches that fed the selected event from off the walked path are
+drawn filled in.
+
+*The layout is pure and its arrangement is checked, not trusted.* `layout.js`
+takes the topology and gives back coordinates, with no DOM and no state. Its
+barycentre sweeps are counted: every sweep's arrangement is scored by how many
+edges cross, and the best wins — the plain order included, so the pass can
+never leave the drawing more tangled than doing nothing would. Ties break by
+id, then by weight, and every list that feeds a floating-point sum is sorted,
+so the same records give the same picture whatever order they arrive in.
+
+*Which node a click means is decided by distance*, not by which circle is on
+top. Two adjacent years are about eight units apart at rest on this data, and
+a mark or its stroke covering a neighbour's centre would have made that
+neighbour unreachable until the reader zoomed.
+
+*Level of detail for the graph view is reserved, not built* ○. At thousands of
+nodes it will need the map's clustering idea applied along the time axis —
+events of a period drawn as one node with a count, opened by a click — and
+`cluster.js` is already the one-dimensional case of that. Sixty nodes do not
+need it and building it now would be guessing at the shape of a problem we
+have not got.
+
+*The state carries `view`*, `map` or `graph`, in the URL as `?view=graph`. It
+is state and not a preference: a link is meant to open on the picture the
+person who sent it was looking at.
 
 **What revision 7 changed, and why.** Nothing in the data model of the graph;
 one new directory beside it, and a different shape for the state. Three
@@ -145,7 +186,7 @@ atlas-causal/
 │
 ├── src/
 │   ├── main.js                   ● bootstrap only: load, wire views
-│   ├── state.js                  ● { from, to, selected, actor, chain, layers } ⇄ URL; data-free
+│   ├── state.js                  ● { from, to, view, selected, actor, chain, layers } ⇄ URL; data-free
 │   ├── data.js                   ● manifest → topology (whole) → record text on demand; lookup tables, adjacency, events by actor
 │   ├── graph.js                  ● consequences, ancestors, convergence; pure functions over adjacency
 │   ├── cluster.js                ● pure: which marks overlap at this zoom, which of them no zoom can part; the timeline uses it in one dimension
@@ -155,6 +196,9 @@ atlas-causal/
 │   │   ├── projection.js         ● lon/lat → SVG and back; the only file a projection change touches
 │   │   ├── map.js                ● SVG scaffold, pan/zoom, click into a cluster
 │   │   └── layers/land.js  presences.js  events.js   ●
+│   ├── graph-view/
+│   │   ├── layout.js             ● pure: topology + regions → coordinates; x is the year, y is bands and a barycentre pass
+│   │   └── graph-view.js         ● the SVG: nodes, the five edge types, the window as a shade, pan/zoom, nearest-centre clicks
 │   ├── timeline.js               ● one lane per region; the window as a band with two handles; bars stack
 │   ├── timeline-scale.js         ● linear now; the scale is injected
 │   ├── panel.js                  ● detail, consequences, convergence, citations, the actor card; confidence and dispute shown as such
@@ -192,7 +236,9 @@ atlas-causal/
 ```
 
 Reserved, by this line only ○: `data/narratives/`, `data/i18n/<lang>/`,
-`data/geo/land-<epoch>.json`.
+`data/geo/land-<epoch>.json`, and level of detail for the graph view — the
+map's clustering idea along the time axis, for when the data outgrows sixty
+nodes.
 Nothing named for AI-generated content exists anywhere in the tree; if that
 layer ever comes it gets its own design against the rules in `CONTEXT.md`.
 
@@ -502,9 +548,11 @@ make a mark bigger except by giving it more edges and more actors.
 ## Site modules
 
 Vanilla ES modules, no framework, no build. Each module has one job;
-`main.js` only wires them. State is one object, `{ year, selected, actor, chain,
-layers }`, mirrored to the URL so every view is a shareable link. `layers`
-is `land`, `territories`, `events`; a layer switched off costs no fetch.
+`main.js` only wires them. State is one object, `{ from, to, view, selected,
+actor, chain, layers }`, mirrored to the URL so every view is a shareable
+link. `layers` is `land`, `territories`, `events`; a layer switched off costs
+no fetch. `view` is `map` or `graph`: the two share the same slot in the
+layout, and the graph view is built the first time it is asked for.
 
 | Module | Job | Must not know |
 |---|---|---|
@@ -517,6 +565,8 @@ is `land`, `territories`, `events`; a layer switched off costs no fetch.
 | `search.js` + `search-box.js` | Folds and ranks event titles and every one of an actor's names — prefix, then word start, then substring — and draws the result as a combobox. | Anything about the map or the timeline; choosing is a state change. |
 | `map/layers/*` | One layer per thing drawn, in a fixed order: coastlines, then territories, then marks, so an event sits on top of the state it happened in. Renders only records in the visible window. A stack of marks is drawn as one, with a count, and opened by a click. | Each other. |
 | `map/layers/presences.js` | The territories of the window's far end: a thin line for a state, a lighter one over a stronger wash for a dependency, dashed when disputed. Hover names it and its sovereign; click selects the actor. No colour per polity — two hundred of them share one palette. | Which shard the year is in, or how one is fetched. |
+| `graph-view/layout.js` | Topology, regions and the data's extent → the coordinates of every node and every edge, plus the bands. x is the year on the whole extent; y is a barycentre pass inside the band of the region. Deterministic — ties by id then weight, neighbour lists sorted — and self-checking: it counts crossings and keeps the best arrangement it saw, the plain order included. | The DOM, the state, what is selected, what is in the window. |
+| `graph-view/graph-view.js` | Draws what the layout gives it: the bands and the year axis once, then the nodes, the five edge types by pattern and weight, the window as a shade, the walked chain in madder and the convergence branches filled in. Pan and zoom; a click is resolved to the nearest node centre within reach; clicking a consequence of the open event walks the chain. | Where a node goes, and how the panel renders anything. |
 | `timeline.js` + `timeline-scale.js` | Lanes from `regions.json`; the scale is injected; the window drawn over them as a band with two handles, which is the atlas's only time control. Bars that would overlap stack, and only within the window, so narrowing the band splits them without moving the scale. | Which regions exist. |
 | `panel.js` | Detail, consequences, convergence, supporting and dissenting citations shown apart, confidence and status shown as such; an event's actors with their roles, and an actor's card. | Traversal logic. |
 | `validate/core.js` | `validate(records, topology)`: schema subset + cross-record rules, pure. Needs the topology to check references, so the form loads it too. | `fs`. |
@@ -672,6 +722,7 @@ the fix is rendering only the visible window, not a map library.
 | M4 | The `actor` kind end to end — schema, rules, index, panel card and highlight, form, tools, fixtures — and a denser 20th–21st century test dataset to exercise it. | An actor's card lists its events with roles; the dataset validates with no errors; the manifest reports the roles in use. |
 | M5 | The `presence` kind end to end — schema, rule 17, index, the CShapes 2.0 import, the territories layer, the actor card's territory, the attribution. | The map scrubbed from 1886 to 2019 shows borders changing; Portugal's colonies leave as they became independent; hovering names them; clicking opens the actor; the layer switches off; every presence validates; the import is reproducible from the recorded sha256. |
 | M6 | The import's actor mapping as data with splits by date; a window of time in place of a year, with the band on the timeline; stacking on the timeline; search by name. | The six `presence-outside-actor-when` warnings are gone; `data/imports/cshapes-actors.json` splits 750 and 850 and `docs/cshapes-entities.md` lists the rest; the band moves with pointer and keyboard and the URL follows; stacks split as the window narrows; `/`, "sal", Enter opens Salazar. |
+| M7 | The graph view: `graph-view/layout.js` and `graph-view.js`, the Map \| Graph toggle, `view` in the state and the URL, the edge-type key in `about.html`. | `?view=graph` draws all sixty events left to right by year in five bands with all 73 edges, the types distinguishable and the disputed ones dashed; clicking a node selects it and the panel follows; walking a chain paints it madder in both views; a selected event shows its convergence branches; narrowing the window fades the rest; search works from the graph view. |
 | — | **Opening contributions to strangers**: timing not yet decided (see `STATUS.md`). `CONTEXT.md` argues for waiting until the schema has survived the 1580–1640 test and a few hundred of the owner's own records. | — |
 
 ## Decisions taken

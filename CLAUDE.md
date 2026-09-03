@@ -76,7 +76,7 @@ contribute.html            the contribution form; not linked from the atlas whil
 about.html                 what it is, how to read confidence and a dispute, the licences
 README.md  CONTRIBUTING.md for people reading the repository
 src/main.js                bootstrap only: load, wire views; ?fixtures=1 reads tests/fixtures/data/
-src/state.js               { from, to, selected, actor, chain, layers } ⇄ URL; a null bound is "as far as the data goes"
+src/state.js               { from, to, view, selected, actor, chain, layers } ⇄ URL; a null bound is "as far as the data goes"
 src/data.js                manifest → topology (whole) → record text on demand; aliases, adjacency, events by actor, one geometry shard per year
 src/graph.js               consequences, ancestors, convergence; pure, ordered by type then confidence
 src/cluster.js             pure: which marks overlap at this zoom; the timeline uses it in one dimension
@@ -84,6 +84,8 @@ src/search.js              pure: titles and an actor's every name, folded and ra
 src/map/projection.js      lon/lat ⇄ SVG (equirectangular); the only file a projection change touches
 src/map/map.js             SVG scaffold, pan/zoom, click into a cluster
 src/map/layers/land.js     coastlines;  layers/presences.js  territories;  layers/events.js  marks, clusters and chain lines
+src/graph-view/layout.js   pure: where every node goes — x is the year, y is bands and a barycentre pass
+src/graph-view/graph-view.js  the graph drawn: nodes, the five edge types, the window shaded, pan/zoom
 src/timeline.js            one lane per region; the window as a band with two handles; bars stack
 src/panel.js               detail, chain, consequences, convergence, citations, the actor card
 src/contribute/bundle.js   the pure half of the form: fields, bundle assembly, duplicate search
