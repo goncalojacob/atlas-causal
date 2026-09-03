@@ -6,16 +6,17 @@ session ends. `ARCHITECTURE.md` is the target; this file is the position.
 
 ## Last updated
 
-2026-09-03, after M9 (`docs/m9-brief.md`): places as records — an event
-points at a place instead of carrying coordinates of its own, the coordinates
-are written once however many events happen there, and `?place=lisbon` reads
-a place as a thing with a history.
+2026-09-03, after M8 (`docs/m8-brief.md`): the test dataset carried from the
+2011 bailout to the legislative election of May 2025 — twenty events, eighteen
+edges, seventeen actors, three places and nineteen sources, all of them
+assistant drafts under the owner's dated exception and none of them verified.
 
 ## Phase
 
-**M0 to M7 and M9 built, plus the map usability work, on branch `m0`, pull
-request #1 open against `main`.** M8 is next in the order the run protocol
-sets. `ARCHITECTURE.md` **revision 9** is the specification; its opening note says what changed and why (revision 4
+**M0 to M9 built, plus the map usability work, on branch `m0`, pull
+request #1 open against `main`.** M10 is next in the order the run protocol
+sets. M8 changed no structure and wrote no revision, as its brief allows.
+`ARCHITECTURE.md` **revision 9** is the specification; its opening note says what changed and why (revision 4
 added the `actor` kind; revision 5 added `cluster.js`, `weight` in the
 index and `prominence` as a reserved override; revision 6 added the
 `presence` kind, the CC BY-NC-SA licence and its one exception, and moved
@@ -29,13 +30,14 @@ card).
 The M5 brief asks for revision 5; the map work had already taken that
 number.
 
-`data/` holds a **test dataset, 20th–21st century Portugal** — **60
-events, 73 edges, 42 actors, 22 places, 11 sources**, 1910 → 2011 — drafted by the
-assistant on 2026-09-02 at the owner's request as an exception to the
+`data/` holds a **test dataset, 20th–21st century Portugal** — **80
+events, 91 edges, 59 actors, 25 places, 30 sources**, 1910 → 2025 — drafted by the
+assistant on 2026-09-02 and 2026-09-03 at the owner's request as an exception to the
 "written by a person" rule (recorded in `CLAUDE.md`). Every record says so
-in `authors`. It validates with **0 errors and 0 warnings**, the index is
+in `authors`. It validates with **0 errors and 2 warnings**, both of them
+`degree-zero` and both deliberate (see M8 below), the index is
 built, and the atlas renders it at `http://localhost:8000/` without
-`?fixtures=1`. Ten edges are `disputed` with dissenting citations; two
+`?fixtures=1`. Twelve edges are `disputed` with dissenting citations; two
 lanes derive by `nearest` (Goa, Macau — both correct); one **place** uses a
 `region` override (the Azores, absent from the 110m coastline) and four
 events keep the override they were written with (the Azores, Recife, the
@@ -52,8 +54,8 @@ import" below. Which actor each of them belongs to is
 `data/imports/cshapes-actors.json`, a validated data file rather than a
 table in the tool.
 
-What exists and passes (`node tools/validate.mjs --index`: **0 errors, 0
-warnings**; `node --test`: 230 tests):
+What exists and passes (`node tools/validate.mjs --index`: **0 errors, 2
+warnings**, both `degree-zero` and both intended; `node --test`: 230 tests):
 
 - **M0.** Licences (`LICENSE` MIT, `data/LICENSE` CC BY-SA 4.0,
   `data/geo/LICENSE` Natural Earth); `.nvmrc` = 22; `schema/common/` and
@@ -223,6 +225,28 @@ warnings**; `node --test`: 230 tests):
   the contribution form never carried the atlas's `actors` (empty actor row
   since M4, and an event naming an existing actor failed rule 14 in the
   browser), and `schema/v1/bundle.json`'s `oneOf` never listed `actor.json`.
+
+- **M8.** **The test dataset carried to 2025.** Twenty events from the exit
+  from the adjustment programme (17 May 2014) to the legislative election of
+  18 May 2025, eighteen edges, seventeen actors — six persons and eleven
+  institutions: the parties, the two banks, the central bank, the ECB and the
+  Commission — three places (Saint-Denis, Pedrógão Grande and a point standing
+  for the central-Portugal fire belt) and nineteen sources. Every event points
+  at a place and carries no coordinates of its own; every lane derived from
+  the point, so **not one `region` override was needed**. Two of the new edges
+  are `disputed` with dissenting citations: what produced the recovery of
+  2015–2019 (the IMF's evaluation against the political-science accounts), and
+  how the result of 2024 should be read (a verdict on November 2023, or the
+  end of a cycle). **Nothing was verified against a source**: the run cannot
+  reach the web, so there are no `web` records and no `accessed` dates, the
+  seventeen official documents are `primary` with a repository and a described
+  document rather than a shelfmark, and **every date of the batch is under
+  "Dates to verify"**. Two events are left with **no edges at all** — the
+  European Championship final and the Iberian blackout — and are the dataset's
+  two `degree-zero` warnings; see deviation 60. Part 5 of the brief needed no
+  code: M6's clamp is right, and `?to=2025` was verified to draw the 2019
+  outlines under the marker "borders as of 2019, the latest the source
+  covers".
 
 ### The CShapes import
 
@@ -437,13 +461,17 @@ overnight runs and the hourly shepherd keep off each other's toes on `m0`.
 4. **Owner: review the test dataset before anything is public.** Every
    date, coordinate, name, role, explanation and confidence was written by
    the assistant from memory. "Dates to verify" below lists what is least
-   certain. The eleven source records carry a WorldCat search URL as their
-   identifier, not an ISBN, and every citation has `locator: null` —
+   certain, and **every date of the 2014–2025 batch is in it**. The two
+   book and article records carry a WorldCat search URL as their
+   identifier, not an ISBN; the seventeen `primary` records name a
+   repository and a class of document rather than a shelfmark, because the
+   run could not open a page to get one; and every citation has
+   `locator: null` —
    replace with ISBNs and page or chapter references, or retract the
    record. The assistant's `authors` entry stays until a person has
-   reviewed the record and signs it. Read in this order: the eight
-   `disputed` edges (a wrong dispute is the worst failure this project can
-   have), then the roles where responsibility is contested — Wiriyamu,
+   reviewed the record and signs it. Read in this order: the
+   twelve `disputed` edges (a wrong dispute is the worst failure this project
+   can have), then the roles where responsibility is contested — Wiriyamu,
    the 1961 Luanda attacks, Cabral's killing — then the dates.
 5. **Owner: write the first records** of the 1415→ period.
    `node tools/new-record.mjs event <id> --title … --start … --place <place id>`
@@ -946,6 +974,45 @@ object. Every later card gets a file.
     Nothing else in the tool writes more than one record, and `scaffold()` is
     still one record in, one out; `scaffoldAll()` is the pair.
 
+60– are from M8 (`docs/m8-brief.md`).
+
+60. **Two events are wired to nothing, against the brief's "at least one
+    edge".** `euro-2016-final` and `iberian-blackout-2025` have no edge in
+    either direction, and the validator says so twice under `degree-zero`.
+    Neither could be given one without inventing the claim: no source in this
+    bibliography argues a consequence for the final of a football match, and
+    what caused the blackout was still being examined when the record was
+    written. A `disputed` edge would not have helped — it asserts that a link
+    exists and is argued about, which is a stronger claim than the evidence
+    carries. Both summaries say plainly that the event stands alone and why.
+    The brief's "Done when" asks for 0 errors and does not mention warnings,
+    so the dataset still passes; reversing this is one edge each, the day
+    somebody can cite one.
+61. **No `web` sources, and seventeen `primary` records that name a class of
+    document rather than a shelfmark.** Straight from the amendment: the run
+    cannot open a page, so an `accessed` date would be a false statement in
+    the one field that exists to say the page was seen. Rule 13 requires a
+    `primary` record to carry both `repository` and `reference`, so the
+    `reference` says what the document is and when it was issued — "official
+    results, legislative election of 2025-05-18", "deliberation of the Board
+    of Directors of 3 August 2014" — which is true and findable, rather than a
+    number the run would have had to guess. The review's first job on these is
+    to replace each with the real citation.
+62. **One source record covers two government appointments.**
+    `dre-government-appointments-2015-2024` stands behind both `geringonca-2015`
+    and `montenegro-government-2024`, because the two decrees are the same kind
+    of document in the same series and the run knows neither number. Splitting
+    it in two is one file each once the numbers are known.
+63. **`banco-de-portugal` is an actor and `banco-de-portugal-2014-bes-resolution`
+    a source.** Ids are unique per record, not per prefix, and nothing in the
+    tree derives one from the other; noted only because the pair reads like a
+    collision and is not.
+64. **The events of 2024 and 2025 are written short.** The brief asks for less
+    text and more hedging on the recent end, and that is what is there: the
+    summaries state what happened and stop, and the readings that would need a
+    source — what the 2024 result meant, whether the blackout touched the
+    campaign — are either in a `disputed` edge or left out.
+
 ## Dates to verify
 
 Everything below was written from memory and is where the owner's review
@@ -975,6 +1042,49 @@ should look first. The record's own summary says so in the worst cases.
 - `cavaco-absolute-majority-1987` — 19 July 1987.
 - `expo-98` — 22 May to 30 September 1998.
 - `bpn-nationalisation-2008` — 2 November 2008.
+
+**The whole 2014–2025 batch, every date of it.** Nothing in M8 was checked
+against a source: the run could not reach one. The dates as filed are:
+
+- `troika-programme-ends-2014` 2014-05-17 · `bes-resolution-2014` 2014-08-03 ·
+  `legislative-election-2015` 2015-10-04 · `geringonca-2015` 2015-11-26 ·
+  `marcelo-elected-president-2016` 2016-01-24 · `euro-2016-final` 2016-07-10.
+- `pedrogao-grande-fires-2017` 2017-06-17 to 2017-06-24 (the end date is the
+  least certain of the two, and so is the figure of 66 dead) ·
+  `october-fires-2017` 2017-10-15 to 2017-10-16 ("about forty-five" dead is a
+  memory, not a count).
+- `legislative-election-2019` 2019-10-06 · `covid-state-of-emergency-2020`
+  2020-03-18 to 2020-05-02 (both ends, and the claim that it was the first
+  under the 1976 constitution) · `marcelo-reelected-2021` 2021-01-24 (and
+  "turnout below forty per cent") · `legislative-election-2022` 2022-01-30.
+- `world-youth-day-2023` 2023-08-01 to 2023-08-06 (and the 2019 designation
+  date in the source record) · `costa-resigns-2023` 2023-11-07 (and what the
+  communiqué actually said, which the summary hedges) ·
+  `legislative-election-2024` 2024-03-10 (and "about two seats", and Chega's
+  twelve to fifty) · `montenegro-government-2024` 2024-04-02 ·
+  `fiftieth-anniversary-25-april-2024` 2024-04-25.
+- `government-falls-2025` 2025-03-11 · `iberian-blackout-2025` 2025-04-28 (and
+  "around midday") · `legislative-election-2025` 2025-05-18 (and that the
+  emigrant circles settled second place).
+
+**The 2014–2025 actors**, founding and birth years all from memory:
+`antonio-costa` 1961, `pedro-passos-coelho` 1964, `marcelo-rebelo-de-sousa`
+1948, `luis-montenegro` 1973, `andre-ventura` 1983, `ricardo-salgado` 1944;
+`partido-socialista` 1973, `psd` 1974, `cds-pp` 1974, `pcp` 1921,
+`bloco-de-esquerda` 1999, `chega` 2019, `banco-espirito-santo` 1869–2014,
+`novo-banco` 2014, `banco-de-portugal` 1846, `european-central-bank` 1998,
+`european-commission` 1958. Only two carry a birthplace (Lisbon, for Costa and
+for Rebelo de Sousa); the other four persons have `where: null` rather than a
+guess. The three new places' coordinates are approximate, and
+`central-portugal` is a point invented to stand for a burned belt that no town
+names.
+
+**The sources of the batch.** Two are works — the IMF's ex post evaluation of
+the 2011 programme (2016) and Costa Pinto and Pequito Teixeira's *Political
+Institutions and Democracy in Portugal* (2019); the exact titles, subtitles and
+years want checking, and neither has an ISBN or a DOI in the record. The other
+seventeen are official documents cited by repository and description, with no
+number: see deviation 61.
 
 **Actors, dates and places:**
 
@@ -1049,6 +1159,26 @@ twenty-five assertions, all passing:
 - No console error on any page (the only 404 is `/favicon.ico`, which nothing
   asks for).
 
+Verified in headless Chromium for **M8**, against the real dataset, the
+fixtures and the three static pages — sixteen assertions, all passing:
+
+- `?to=2025` draws **181 outlines** and says "borders as of 2019, the latest
+  the source covers"; `?to=2019` draws the same 181. The clamp M6 built is
+  right, and this is the first time the dataset could reach past the last
+  shard to prove it. Part 5 of the brief needed no code.
+- The timeline reaches 2025: the window handle's `aria-valuemax` is 2025.
+- `?from=2014&to=2025` draws **two marks**, one of them a Lisbon cluster
+  carrying `+18`, and nothing else — exactly the twenty new events, nineteen
+  of them within merge distance of Lisbon and the twentieth at Saint-Denis.
+- The graph view draws **80 nodes and 91 edges**, **12** of them dashed as
+  disputed.
+- `?selected=government-falls-2025` opens the confidence vote in the panel,
+  `?place=saint-denis` opens the new place (48.94, 2.36, city, Europe), and
+  `?actor=chega` opens a party added in this batch.
+- `about.html`, `contribute.html` and `?fixtures=1` still render, and there is
+  no console error on any page (the only 404 is `/favicon.ico`, which nothing
+  asks for).
+
 ## Where things live
 
 - Repo: `~/atlas-causal`, branch `m0`.
@@ -1091,3 +1221,4 @@ M9 started 2026-09-03T19:20:45Z by shepherd
 M9 done
 
 M8 started 2026-09-03T20:22:00Z by shepherd
+M8 done
