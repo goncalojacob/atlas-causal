@@ -28,7 +28,14 @@
       shows the events whose own interval overlaps the window — an event that ran for ten years
       is in every window it touches — and the territories of the window's last year. The
       <kbd>/</kbd> key jumps to the search box, which finds events by title and actors by any of
-      their names.</p>
+      their names, and places by any of theirs.</p>
+
+      <p>An event happens at a <strong>place</strong>, and a place is a record of its own rather
+      than a pair of coordinates typed onto each event: thirty-seven of the records in the
+      current test dataset happened in Lisbon, and Lisbon is written once. Clicking a place name
+      — on an event, or at the head of a stack of marks on the map — opens what happened there,
+      in order, with the events outside the window faded rather than hidden, and the actors who
+      turn up there most.</p>
 
       <p>The first slice is Portuguese expansion, 1415 to 1580, chosen because its consequences
       cross continents, which is what the format is for. If the model survives that period it
@@ -144,8 +151,8 @@
       for a period that had such borders and a source that dates every change of them; earlier
       periods will need diffuse zones rather than outlines, which is what the
       <code>presenceType</code> field is for. The timeline's lanes are continents, derived from
-      the coordinates of each event rather than stored on it, so that redrawing the lanes never
-      means rewriting the records.</p>
+      the coordinates of the place each event happened at rather than stored on the record, so
+      that redrawing the lanes never means rewriting the records.</p>
 
       <h2>Licences</h2>
 
@@ -155,8 +162,8 @@
         <li><strong>The code</strong> — everything under <code>src/</code>, <code>tools/</code>
         and <code>tests/</code> — is <a href="https://opensource.org/license/mit" rel="license noreferrer">MIT</a>.
         CC BY-SA on JavaScript is a nuisance nobody wants.</li>
-        <li><strong>The records</strong> — every event, edge, source and actor that a person
-        wrote, which is to say all the writing —
+        <li><strong>The records</strong> — every event, edge, source, place and actor that a
+        person wrote, which is to say all the writing —
         are <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license noreferrer">CC BY-SA 4.0</a>.
         Use them, including commercially, with attribution, and share what you build on them under
         the same terms.</li>

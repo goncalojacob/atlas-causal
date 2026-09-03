@@ -73,7 +73,7 @@ resolve. It cannot read. For every record touched:
 ## The record format
 
 One JSON file per record, under `data/events/`, `data/edges/`, `data/actors/`,
-`data/sources/` or `data/presences/`; the id is the file name. The schemas in `schema/v1/` and
+`data/places/`, `data/sources/` or `data/presences/`; the id is the file name. The schemas in `schema/v1/` and
 `schema/common/` are authoritative — what follows is a synthetic example, of
 the kind that lives in `tests/fixtures/`, not a historical claim.
 
@@ -93,7 +93,7 @@ the kind that lives in `tests/fixtures/`, not a historical claim.
   "title": "Fixture event A",
   "summary": "A synthetic event, invented to exercise the interface.",
   "when": { "start": 1400, "end": 1400, "date": "1400-01-02", "calendar": "julian" },
-  "where": { "lon": 1.5, "lat": 2.5, "precision": "city", "label": "Fixture place" },
+  "place": "fixture-place-a",
   "region": null,
   "actors": [{ "actor": "fixture-actor-one", "role": "leader" }]
 }
@@ -156,10 +156,17 @@ Notes that catch people out:
 - **Years are integers**, negative for BCE, and there is no year 0. `date` is
   display-only, recorded exactly as the source gives it. A bound may be a range,
   `{ "min": 1400, "max": 1450 }`, and `"end": null` means ongoing.
-- **`where` is optional.** A long process with no honest point is a
-  timeline-only record, not a dot in the ocean — but then `region` is required.
+- **An event points at a place; it has no coordinates of its own.** `place`
+  is the id of a record under `data/places/`, and the coordinates live there,
+  written once however many events happen there. `place: null` is a long
+  process with no honest point — a timeline-only record rather than a dot in
+  the ocean — and then `region` is required.
 - **`region` is normally `null`.** The timeline lane is derived from the
-  coordinates at index time. Set it only when the derivation would be wrong.
+  place's coordinates at index time. Set it on the place when the derivation
+  would be wrong for everything that happens there (the Azores are outside
+  every lane polygon at this resolution), and on the event only when this
+  event belongs somewhere else than where it happened — Tordesillas is about
+  the Americas and was signed in Castile.
 - **`authors`, `created` and `revised` are set by the Action**, not by you.
   Whatever the form puts there is replaced.
 - **`actors` names the actors *of* the event**, not everyone alive at the
@@ -172,6 +179,35 @@ Notes that catch people out:
   list must not be empty; `names[0]` is the display name and the rest are
   variants, former names and acronyms, which is what search will use.
 - **An actor cites a source too**, like every other node.
+- **A place does not.** It is a geographic fact rather than a
+  historiographical argument, so `sources` may be empty — the same exemption
+  `source` and `region` records have. Everything else about it is the usual
+  envelope:
+
+```json
+{
+  "schema": 1,
+  "id": "fixture-place-a",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [{ "name": "A Contributor", "github": "a-contributor" }],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-01",
+  "revised": null,
+  "sources": [],
+  "names": ["Lisbon", "Lisboa"],
+  "where": { "lon": -9.14, "lat": 38.72, "precision": "city", "label": "Lisbon" },
+  "region": null,
+  "summary": null
+}
+```
+
+  `names[0]` is the display name and the rest are variants and other-language
+  forms, which is what search uses; `where.label` is the same name. Before
+  adding a place, look for it: two records for one town split its history in
+  two, and the form lists every place the atlas already has.
 
 ## Territories, and the licence they carry
 

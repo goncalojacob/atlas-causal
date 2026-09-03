@@ -1,8 +1,8 @@
 # Atlas causal
 
-A map and a timeline over one graph: historical events as nodes, the people,
-polities and institutions in them as actors, the ground those actors held as
-presences, causal links as edges, each edge carrying a type, a confidence level
+A map and a timeline over one graph: historical events as nodes, the places
+they happened at, the people, polities and institutions in them as actors, the
+ground those actors held as presences, causal links as edges, each edge carrying a type, a confidence level
 and a written argument with its sources. Pick an event, follow its consequences, and see which other
 branches fed the same endpoint — the antidote to reading one chain as the
 explanation.
@@ -28,7 +28,8 @@ convergence query. The badge in the header says so; none of it is history.
 ```bash
 node tools/validate.mjs            # schemas, cross-record rules, region derivation
 node --test                        # every test under tests/
-node tools/new-record.mjs event <id> --title … --start …   # scaffold a record
+node tools/new-record.mjs event <id> --title … --start … --place lisbon   # scaffold a record
+node tools/new-record.mjs place <id> --names "Lisbon; Lisboa" --lon … --lat …
 node tools/new-record.mjs actor <id> --type person --names "…" --start …
 node tools/build-index.mjs         # regenerate data/index/ after changing data/
 node tools/import/cshapes.mjs --source cshapes_2_gw.topojson   # territories; rarely
