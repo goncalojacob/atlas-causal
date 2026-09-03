@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "id": "cti-2017-2018-fires",
+  "kind": "source",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "type": "primary",
+  "creators": [
+    "Comissão Técnica Independente"
+  ],
+  "title": "Reports on the forest fires of June and October 2017",
+  "year": 2018,
+  "publisher": null,
+  "isbn": null,
+  "doi": null,
+  "url": null,
+  "accessed": null,
+  "repository": "Assembleia da República",
+  "reference": "reports of the Comissão Técnica Independente on the fires of 17-24 June 2017 and of 15-16 October 2017"
+}

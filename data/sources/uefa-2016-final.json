@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "id": "uefa-2016-final",
+  "kind": "source",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "type": "primary",
+  "creators": [
+    "Union of European Football Associations"
+  ],
+  "title": "Match report, final of the 2016 European Championship",
+  "year": 2016,
+  "publisher": null,
+  "isbn": null,
+  "doi": null,
+  "url": null,
+  "accessed": null,
+  "repository": "Union of European Football Associations",
+  "reference": "official match report, Saint-Denis, 10 July 2016"
+}

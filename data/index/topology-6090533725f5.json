@@ -123,6 +123,22 @@
       }
     },
     {
+      "actorType": "person",
+      "aliases": [],
+      "id": "andre-ventura",
+      "name": "André Ventura",
+      "names": [
+        "André Ventura",
+        "André Claro Amaral Ventura"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 1983
+      }
+    },
+    {
       "actorType": "polity",
       "aliases": [],
       "id": "angola",
@@ -135,6 +151,22 @@
       "when": {
         "end": null,
         "start": 1886
+      }
+    },
+    {
+      "actorType": "person",
+      "aliases": [],
+      "id": "antonio-costa",
+      "name": "António Costa",
+      "names": [
+        "António Costa",
+        "António Luís Santos da Costa"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 1961
       }
     },
     {
@@ -292,6 +324,38 @@
       }
     },
     {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "banco-de-portugal",
+      "name": "Banco de Portugal",
+      "names": [
+        "Banco de Portugal",
+        "Bank of Portugal"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 1846
+      }
+    },
+    {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "banco-espirito-santo",
+      "name": "Banco Espírito Santo",
+      "names": [
+        "Banco Espírito Santo",
+        "BES"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": 2014,
+        "start": 1869
+      }
+    },
+    {
       "actorType": "polity",
       "aliases": [],
       "id": "bangladesh",
@@ -394,6 +458,23 @@
       "when": {
         "end": null,
         "start": 1886
+      }
+    },
+    {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "bloco-de-esquerda",
+      "name": "Bloco de Esquerda",
+      "names": [
+        "Bloco de Esquerda",
+        "BE",
+        "Left Bloc"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 1999
       }
     },
     {
@@ -714,6 +795,23 @@
       }
     },
     {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "cds-pp",
+      "name": "CDS - Partido Popular",
+      "names": [
+        "CDS - Partido Popular",
+        "CDS-PP",
+        "Centro Democrático Social"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 1974
+      }
+    },
+    {
       "actorType": "polity",
       "aliases": [],
       "id": "central-african-republic",
@@ -741,6 +839,21 @@
       "when": {
         "end": null,
         "start": 1900
+      }
+    },
+    {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "chega",
+      "name": "Chega",
+      "names": [
+        "Chega"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 2019
       }
     },
     {
@@ -1196,6 +1309,40 @@
       "when": {
         "end": null,
         "start": 1886
+      }
+    },
+    {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "european-central-bank",
+      "name": "European Central Bank",
+      "names": [
+        "European Central Bank",
+        "ECB",
+        "Banco Central Europeu",
+        "BCE"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 1998
+      }
+    },
+    {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "european-commission",
+      "name": "European Commission",
+      "names": [
+        "European Commission",
+        "Comissão Europeia"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 1958
       }
     },
     {
@@ -2315,6 +2462,22 @@
       }
     },
     {
+      "actorType": "person",
+      "aliases": [],
+      "id": "luis-montenegro",
+      "name": "Luís Montenegro",
+      "names": [
+        "Luís Montenegro",
+        "Luís Filipe Montenegro"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 1973
+      }
+    },
+    {
       "actorType": "polity",
       "aliases": [],
       "id": "luxembourg",
@@ -2465,6 +2628,22 @@
       "when": {
         "end": 1980,
         "start": 1906
+      }
+    },
+    {
+      "actorType": "person",
+      "aliases": [],
+      "id": "marcelo-rebelo-de-sousa",
+      "name": "Marcelo Rebelo de Sousa",
+      "names": [
+        "Marcelo Rebelo de Sousa",
+        "Marcelo"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 1948
       }
     },
     {
@@ -2926,6 +3105,21 @@
       }
     },
     {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "novo-banco",
+      "name": "Novo Banco",
+      "names": [
+        "Novo Banco"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 2014
+      }
+    },
+    {
       "actorType": "polity",
       "aliases": [],
       "id": "oil-rivers-protectorate",
@@ -3142,6 +3336,56 @@
       }
     },
     {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "partido-socialista",
+      "name": "Partido Socialista",
+      "names": [
+        "Partido Socialista",
+        "PS",
+        "Socialist Party"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 1973
+      }
+    },
+    {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "pcp",
+      "name": "Partido Comunista Português",
+      "names": [
+        "Partido Comunista Português",
+        "PCP",
+        "Portuguese Communist Party"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 1921
+      }
+    },
+    {
+      "actorType": "person",
+      "aliases": [],
+      "id": "pedro-passos-coelho",
+      "name": "Pedro Passos Coelho",
+      "names": [
+        "Pedro Passos Coelho",
+        "Pedro Manuel Mamede Passos Coelho"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 1964
+      }
+    },
+    {
       "actorType": "polity",
       "aliases": [],
       "id": "perak",
@@ -3247,6 +3491,24 @@
       "when": {
         "end": 1919,
         "start": 1916
+      }
+    },
+    {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "psd",
+      "name": "Partido Social Democrata",
+      "names": [
+        "Partido Social Democrata",
+        "PSD",
+        "Partido Popular Democrático",
+        "PPD"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 1974
       }
     },
     {
@@ -3360,6 +3622,22 @@
       "when": {
         "end": null,
         "start": 1886
+      }
+    },
+    {
+      "actorType": "person",
+      "aliases": [],
+      "id": "ricardo-salgado",
+      "name": "Ricardo Salgado",
+      "names": [
+        "Ricardo Salgado",
+        "Ricardo Espírito Santo Silva Salgado"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 1944
       }
     },
     {
@@ -7081,6 +7359,25 @@
     },
     {
       "aliases": [],
+      "id": "central-portugal",
+      "name": "Central Portugal",
+      "names": [
+        "Central Portugal",
+        "Portugal central"
+      ],
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "where": {
+        "label": "central Portugal",
+        "lat": 40.2,
+        "lon": -8.3,
+        "precision": "region"
+      }
+    },
+    {
+      "aliases": [],
       "id": "chai",
       "name": "Chai, Cabo Delgado",
       "names": [
@@ -7297,6 +7594,24 @@
     },
     {
       "aliases": [],
+      "id": "pedrogao-grande",
+      "name": "Pedrógão Grande",
+      "names": [
+        "Pedrógão Grande"
+      ],
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "where": {
+        "label": "Pedrógão Grande",
+        "lat": 39.92,
+        "lon": -8.14,
+        "precision": "region"
+      }
+    },
+    {
+      "aliases": [],
       "id": "porto",
       "name": "Porto",
       "names": [
@@ -7329,6 +7644,24 @@
         "lat": -8.05,
         "lon": -34.88,
         "precision": "region"
+      }
+    },
+    {
+      "aliases": [],
+      "id": "saint-denis",
+      "name": "Saint-Denis",
+      "names": [
+        "Saint-Denis"
+      ],
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "where": {
+        "label": "Saint-Denis",
+        "lat": 48.94,
+        "lon": 2.36,
+        "precision": "city"
       }
     },
     {

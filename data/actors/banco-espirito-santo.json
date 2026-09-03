@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "banco-espirito-santo",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "sources": [
+    {
+      "source": "banco-de-portugal-2014-bes-resolution",
+      "locator": null
+    },
+    {
+      "source": "imf-2016-portugal-ex-post-evaluation",
+      "locator": null
+    }
+  ],
+  "actorType": "institution",
+  "names": [
+    "Banco Espírito Santo",
+    "BES"
+  ],
+  "summary": "One of the largest private banks in the country, and the head of a family group whose losses brought it down in August 2014, when the Banco de Portugal split it into a bridge bank and a residual entity.",
+  "when": {
+    "start": 1869,
+    "end": 2014
+  },
+  "where": {
+    "lon": -9.14,
+    "lat": 38.72,
+    "precision": "city",
+    "label": "Lisbon"
+  }
+}

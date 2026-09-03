@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "id": "ren-2025-blackout",
+  "kind": "source",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "type": "primary",
+  "creators": [
+    "Redes Energéticas Nacionais"
+  ],
+  "title": "The supply interruption of 28 April 2025",
+  "year": 2025,
+  "publisher": null,
+  "isbn": null,
+  "doi": null,
+  "url": null,
+  "accessed": null,
+  "repository": "Redes Energéticas Nacionais",
+  "reference": "transmission system operator's records of the interruption of 28 April 2025 on the Iberian peninsula"
+}

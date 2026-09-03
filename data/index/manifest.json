@@ -1,16 +1,16 @@
 {
   "counts": {
-    "actors": 294,
+    "actors": 311,
     "edges": 73,
     "events": 60,
-    "places": 22,
+    "places": 25,
     "presences": 710,
     "regions": 5,
-    "sources": 12
+    "sources": 31
   },
   "files": {
-    "sources": "index/sources-31c09e552164.json",
-    "topology": "index/topology-548f1e01bd08.json"
+    "sources": "index/sources-bd0711085959.json",
+    "topology": "index/topology-6090533725f5.json"
   },
   "land": [
     {

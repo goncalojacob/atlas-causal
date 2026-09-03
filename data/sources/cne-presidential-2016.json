@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "id": "cne-presidential-2016",
+  "kind": "source",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "type": "primary",
+  "creators": [
+    "Comissão Nacional de Eleições"
+  ],
+  "title": "Official results, presidential election of 2016-01-24",
+  "year": 2016,
+  "publisher": null,
+  "isbn": null,
+  "doi": null,
+  "url": null,
+  "accessed": null,
+  "repository": "Comissão Nacional de Eleições",
+  "reference": "official results, presidential election of 2016-01-24"
+}

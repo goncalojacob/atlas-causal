@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "european-commission",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "sources": [
+    {
+      "source": "reis-2013-portuguese-slump",
+      "locator": null
+    },
+    {
+      "source": "imf-2016-portugal-ex-post-evaluation",
+      "locator": null
+    }
+  ],
+  "actorType": "institution",
+  "names": [
+    "European Commission",
+    "Comissão Europeia"
+  ],
+  "summary": "The executive of the European Communities and then of the Union, and the third of the lenders of the 2011 programme, which negotiated and reviewed the memorandum quarterly until May 2014.",
+  "when": {
+    "start": 1958,
+    "end": null
+  },
+  "where": {
+    "lon": 4.35,
+    "lat": 50.85,
+    "precision": "city",
+    "label": "Brussels"
+  }
+}

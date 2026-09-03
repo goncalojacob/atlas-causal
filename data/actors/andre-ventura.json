@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "andre-ventura",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cne-legislative-2019",
+      "locator": null
+    },
+    {
+      "source": "cne-legislative-2024",
+      "locator": null
+    }
+  ],
+  "actorType": "person",
+  "names": [
+    "André Ventura",
+    "André Claro Amaral Ventura"
+  ],
+  "summary": "Founder and leader of Chega from 2019, its first deputy in the same year, a presidential candidate in 2021, and leader of the third and then the second parliamentary group after the elections of 2024 and 2025.",
+  "when": {
+    "start": 1983,
+    "end": null
+  },
+  "where": null
+}

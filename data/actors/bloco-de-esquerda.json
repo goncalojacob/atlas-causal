@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "bloco-de-esquerda",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "sources": [
+    {
+      "source": "costa-pinto-teixeira-2019-political-institutions",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    }
+  ],
+  "actorType": "institution",
+  "names": [
+    "Bloco de Esquerda",
+    "BE",
+    "Left Bloc"
+  ],
+  "summary": "Formed in 1999 out of three smaller parties of the radical left, and one of the two that supported the PS government of 2015 from outside before voting down its budget for 2022.",
+  "when": {
+    "start": 1999,
+    "end": null
+  },
+  "where": {
+    "lon": -9.14,
+    "lat": 38.72,
+    "precision": "city",
+    "label": "Lisbon"
+  }
+}

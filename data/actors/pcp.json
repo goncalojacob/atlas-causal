@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "pcp",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    }
+  ],
+  "actorType": "institution",
+  "names": [
+    "Partido Comunista Português",
+    "PCP",
+    "Portuguese Communist Party"
+  ],
+  "summary": "Founded in 1921, clandestine through the dictatorship and the largest organised force of the revolutionary period; one of the two parties whose written agreement kept the PS in office between 2015 and 2019.",
+  "when": {
+    "start": 1921,
+    "end": null
+  },
+  "where": {
+    "lon": -9.14,
+    "lat": 38.72,
+    "precision": "city",
+    "label": "Lisbon"
+  }
+}

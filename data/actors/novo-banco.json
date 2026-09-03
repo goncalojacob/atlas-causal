@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "novo-banco",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "sources": [
+    {
+      "source": "banco-de-portugal-2014-bes-resolution",
+      "locator": null
+    },
+    {
+      "source": "imf-2016-portugal-ex-post-evaluation",
+      "locator": null
+    }
+  ],
+  "actorType": "institution",
+  "names": [
+    "Novo Banco"
+  ],
+  "summary": "The bridge bank created by the resolution of Banco Espírito Santo in August 2014 to hold the part of the business judged sound, funded by the resolution fund and sold in part in 2017.",
+  "when": {
+    "start": 2014,
+    "end": null
+  },
+  "where": {
+    "lon": -9.14,
+    "lat": 38.72,
+    "precision": "city",
+    "label": "Lisbon"
+  }
+}
