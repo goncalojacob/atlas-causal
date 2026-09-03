@@ -6,17 +6,18 @@ session ends. `ARCHITECTURE.md` is the target; this file is the position.
 
 ## Last updated
 
-2026-09-03, after M8 (`docs/m8-brief.md`): the test dataset carried from the
-2011 bailout to the legislative election of May 2025 — twenty events, eighteen
-edges, seventeen actors, three places and nineteen sources, all of them
-assistant drafts under the owner's dated exception and none of them verified.
+2026-09-03, after M10 (`docs/m10-brief.md`): a source is a card and a page —
+`?source=<id>` lists everything that cites it, `sources.html` is the
+bibliography — and an event can be asked what it led to by a given year, with
+the answer walkable as a chain. No record was written and no historical claim
+was made; the whole milestone is code, index and prose about the interface.
 
 ## Phase
 
-**M0 to M9 built, plus the map usability work, on branch `m0`, pull
-request #1 open against `main`.** M10 is next in the order the run protocol
+**M0 to M10 built, plus the map usability work, on branch `m0`, pull
+request #1 open against `main`.** M11 is next in the order the run protocol
 sets. M8 changed no structure and wrote no revision, as its brief allows.
-`ARCHITECTURE.md` **revision 9** is the specification; its opening note says what changed and why (revision 4
+`ARCHITECTURE.md` **revision 10** is the specification; its opening note says what changed and why (revision 4
 added the `actor` kind; revision 5 added `cluster.js`, `weight` in the
 index and `prominence` as a reserved override; revision 6 added the
 `presence` kind, the CC BY-NC-SA licence and its one exception, and moved
@@ -26,7 +27,9 @@ import's actor mapping data, turned the year into a window, and moved
 revision 8 added the graph view, the `view` state and a reserved line for
 level of detail along the time axis; revision 9 made places records, took
 `where` off events, added rule 18 and split the panel into one file per
-card).
+card; revision 10 put each source's citers in the sources index, added the
+source card, the bibliography page and the horizon, and put `source` and
+`horizon` in the state).
 The M5 brief asks for revision 5; the map work had already taken that
 number.
 
@@ -1013,6 +1016,44 @@ object. Every later card gets a file.
     source — what the 2024 result meant, whether the blackout touched the
     campaign — are either in a `disputed` edge or left out.
 
+65. **The bibliography is `sources.html`, not a section of `about.html`.**
+    The brief allows either and says which decides it: thirty entries with
+    their citation counts would swamp the prose on `about`, and the list only
+    grows. `about.html` links to it, and the header of the atlas does too.
+66. **The horizon is "open" when a year was chosen, not when the section
+    is.** The brief's body lights the reachable set "while the horizon is
+    open"; its amendment says the default year is never written to the URL.
+    Both hold only if *open* means `horizon !== null` — a `<details>` element
+    the reader unfolded is DOM state the map and the timeline cannot see, and
+    writing the default year to make it visible is exactly what the amendment
+    forbids. So the section is always on the event card, drawn folded with
+    the window's far end filled in and its list inside; unfolding it costs
+    nothing and lights nothing; typing a year lights the set on all three
+    views. One edit to reverse: the `chosen` flag in `panel/horizon.js`.
+67. **The sources index grew from 27 KB to 231 KB.** Carrying every citer of
+    every source is what makes a source card and a bibliography cost no
+    further request, and it is 3.5 KB → 17 KB gzipped against the topology's
+    43 KB. It is dominated by the 710 presences citing one dataset record; if
+    it ever matters, the fix is to summarise a kind that cites in bulk rather
+    than to drop the field.
+68. **A citer that is a tombstone is not counted.** `citationsBySource`
+    skips records whose `status` is not `active`, so a retracted event's
+    citation does not appear on the source card or in the bibliography's
+    count. It matches the validator's own `no-citers` warning; the cost is
+    that a source cited only by tombstones reads as cited by nothing, which
+    is what the atlas draws.
+69. **An edge citer opens as a walked step, not as a card.** An edge has no
+    card of its own anywhere in the atlas, so a citation made by one is drawn
+    as `from — type → to` and clicking it selects the far end with that edge
+    as a one-step chain: the panel then names both ends and loads the
+    argument, which is everything an edge card would have shown.
+70. **A stack takes the horizon's band from its nearest member.** Forty
+    events share a point in Lisbon; pulling every reachable one out of its
+    cluster to light it would have put forty circles on one point. The stack
+    is lit instead, at the band of the closest event under it, and a
+    reachable event outside the window is drawn (rather than hidden by the
+    band) but still allowed to join a stack.
+
 ## Dates to verify
 
 Everything below was written from memory and is where the owner's review
@@ -1137,6 +1178,40 @@ DevTools protocol — twenty-five assertions, all passing:
   active edges (one event is a tombstone and one edge retracted).
 - No console error on the atlas, `about.html`, `contribute.html` or the
   fixture graph (the only 404 is `/favicon.ico`, which nothing asks for).
+
+Verified in headless Chromium for **M10**, against the real dataset and
+`?fixtures=1`, driving real clicks and typing through the DevTools protocol —
+thirty assertions, all passing:
+
+- Clicking the title in a citation on 25 April opens
+  `?source=maxwell-1995-making-of-portuguese-democracy`, whose card lists
+  **37 citers** — 12 events, 17 links, 8 actors — which is exactly the
+  `citationCount` the sources index carries for it. Every one of the
+  thirty-one sources was checked the same way in `node --test`.
+- A dissenting citation is marked as one: `cne-legislative-2024` draws its
+  7 citers with one **dissenting** badge, the citation an edge made from its
+  `dispute.sources`.
+- The precedence holds: `?source=…&actor=salazar` shows the source and keeps
+  the actor in the URL; `?selected=…&source=…` shows the event and keeps the
+  source; an unknown source says "Not found".
+- `sources.html` lists **31 entries**, "31 sources, 31 of them cited, carrying
+  1366 citations between them", and a title opens that source in the atlas.
+  `sources.html?fixtures=1` lists the fixtures' 4.
+- `?selected=carnation-revolution-1974&horizon=2011` opens the horizon folded
+  out, lists **23** events, and lights **9 marks** on the map and **11 bars**
+  on the timeline (the rest are inside stacks, lit at their nearest member's
+  band: 5 near, 3 mid, 3 far) and **23 nodes** in the graph view.
+- Choosing the constitution walks the three-step path to it — the URL carries
+  the chain, the panel draws 4 steps and then **14** other branches into that
+  endpoint, which is convergence asked from the other direction.
+- The default horizon is folded, filled in with **2025**, and lights nothing.
+  Typing 1976 writes `?horizon=1976` and narrows the list to 11; "back to the
+  window's end" removes the parameter again.
+- Searching "telo" offers a **Sources** group above an **Actors** one and
+  opens `?source=telo-2007-historia-contemporanea`.
+- `?fixtures=1`, `about.html` and `contribute.html` still render, and there is
+  no console error on any page (the only 404 is `/favicon.ico`, which nothing
+  asks for).
 
 Verified in headless Chromium for **M9**, against the real dataset and
 `?fixtures=1`, driving real clicks and keys through the DevTools protocol —
