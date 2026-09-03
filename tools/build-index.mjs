@@ -90,7 +90,7 @@ export async function buildIndex(dataDir = DEFAULT_DATA) {
     presenceShards,
   });
 
-  const unresolved = topology.events.filter((e) => e.status === 'active' && (e.place || e.where) && !e.region);
+  const unresolved = topology.events.filter((e) => e.status === 'active' && e.place && !e.region);
   return {
     files: { 'manifest.json': manifest, [topologyName]: topologyText, [sourcesName]: sourcesText },
     topology,

@@ -18,9 +18,27 @@ const minimalEvent = {
   title: 'Fixture event A',
   summary: 'A synthetic event used only by the tests.',
   when: { start: 1200, end: 1200 },
-  where: { lon: 10, lat: 10, precision: 'city', label: 'Fixture place' },
+  place: 'fixture-place-a',
   region: null,
   actors: [],
+};
+
+const minimalPlace = {
+  schema: 1,
+  id: 'fixture-place-a',
+  kind: 'place',
+  status: 'active',
+  supersededBy: null,
+  aliases: [],
+  authors: [{ name: 'Fixture Author', github: 'fixture-author' }],
+  license: 'CC-BY-SA-4.0',
+  created: '2026-01-01',
+  revised: null,
+  sources: [],
+  names: ['Fixture place A'],
+  where: { lon: 10, lat: 10, precision: 'city', label: 'Fixture place A' },
+  region: null,
+  summary: null,
 };
 
 test('the repository schemas use only the implemented subset', async () => {
@@ -122,7 +140,11 @@ test('type, enum, const, required, additionalProperties, pattern, lengths, bound
   check((e) => { e.title = ''; }, 'minLength', /^\/title$/);
   check((e) => { e.title = 'x'.repeat(201); }, 'maxLength', /^\/title$/);
   check((e) => { e.when.start = 'soon'; }, 'oneOf', /^\/when\/start$/);
-  check((e) => { e.where.precision = 'exactish'; }, 'oneOf', /^\/where$/);
+  check((e) => { e.place = 'Not A Slug'; }, 'oneOf', /^\/place$/);
+  // The coordinates now live on a place record, which is where the shape of a
+  // point is checked.
+  const point = { ...minimalPlace, where: { ...minimalPlace.where, precision: 'exactish' } };
+  assert.ok(v.validate('v1/place.json', point).some((x) => x.keyword === 'enum' && x.path === '/where/precision'));
 
   const r = createValidator({ 'x.json': { type: 'integer', minimum: 1, maximum: 5 } });
   assert.equal(r.validate('x.json', 0)[0].keyword, 'minimum');

@@ -364,7 +364,17 @@ export function checkRules(records, topology = {}) {
 
   // --- rule 10: place and region ------------------------------------------
   for (const r of own) {
-    if (!['event', 'actor', 'presence', 'place'].includes(r.kind)) continue;
+    // An event has no coordinates of its own any more: it names a place and
+    // the place holds the point. What is left to check on an event is that a
+    // placeless one says which lane it belongs to — an actor needs no lane,
+    // being reached through its events and never put on the timeline alone.
+    if (r.kind === 'event') {
+      if (typeof r.place !== 'string' && typeof r.region !== 'string') {
+        error(10, r, '/region', 'region is required when the event has no place');
+      }
+      continue;
+    }
+    if (!['actor', 'presence', 'place'].includes(r.kind)) continue;
     // A presence's point is its capital; it has no `where` of its own,
     // because the outline says where it was.
     const field = r.kind === 'presence' ? 'capital' : 'where';
@@ -372,11 +382,6 @@ export function checkRules(records, topology = {}) {
     if (where) {
       if (typeof where.lon !== 'number' || where.lon < -180 || where.lon > 180) error(10, r, `/${field}/lon`, 'longitude must be within [-180, 180]');
       if (typeof where.lat !== 'number' || where.lat < -90 || where.lat > 90) error(10, r, `/${field}/lat`, 'latitude must be within [-90, 90]');
-    } else if (r.kind === 'event' && typeof r.place !== 'string' && typeof r.region !== 'string') {
-      // An actor has no lane: it is reached through its events, never put
-      // on the timeline alone. A place has one, but derives it from its own
-      // point, which the schema requires.
-      error(10, r, '/region', 'region is required when the event has no place');
     }
   }
 

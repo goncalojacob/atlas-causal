@@ -2,9 +2,9 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "v1/event.json",
   "title": "Event",
-  "description": "One point in space and time, or a long process with an interval and usually no place. An event points at a place record rather than repeating its coordinates; region is derived at index time from that place, and on the record it is an optional override, required when there is no place. `where` is the shape events carried before places existed and is accepted only while the migration runs (tools/migrate-places.mjs); it is removed the moment every event references a place.",
+  "description": "One point in space and time, or a long process with an interval and usually no place. An event points at a place record rather than repeating its coordinates; region is derived at index time from that place, and on the record it is an optional override, required when place is null.",
   "type": "object",
-  "required": ["schema", "id", "kind", "status", "supersededBy", "aliases", "authors", "license", "created", "revised", "sources", "title", "summary", "when", "actors"],
+  "required": ["schema", "id", "kind", "status", "supersededBy", "aliases", "authors", "license", "created", "revised", "sources", "title", "summary", "when", "place", "actors"],
   "additionalProperties": false,
   "properties": {
     "schema": { "$ref": "../common/provenance.json#/properties/schema" },
@@ -25,13 +25,6 @@
       "minLength": 1
     },
     "when": { "$ref": "../common/interval.json" },
-    "where": {
-      "description": "Transitional. Replaced by `place`; see the description above.",
-      "oneOf": [
-        { "type": "null" },
-        { "$ref": "../common/place.json" }
-      ]
-    },
     "place": {
       "description": "The place record this event happened at, or null for a process with no honest point, which is then timeline-only and must carry a region.",
       "oneOf": [

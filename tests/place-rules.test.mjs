@@ -39,7 +39,7 @@ function place(overrides = {}) {
 function withPlace(overrides = {}, event = {}) {
   return (fx) => {
     fx.records.push(place(overrides));
-    Object.assign(fx.byId['fixture-event-a'], { place: ID, where: null, region: null }, event);
+    Object.assign(fx.byId['fixture-event-a'], { place: ID, region: null }, event);
   };
 }
 
@@ -65,7 +65,7 @@ test('an event takes its point and its lane from the place it names', async () =
 
   const event = topology.events.find((e) => e.id === 'fixture-event-a');
   assert.equal(event.place, ID);
-  assert.equal(event.where, null, 'the coordinates live on the place, not on the event');
+  assert.equal(Object.hasOwn(event, 'where'), false, 'the coordinates live on the place, not on the event');
   assert.equal(event.region, entry.region);
   assert.equal(event.regionMethod, entry.regionMethod);
   assert.deepEqual(topology.places.map((p) => p.id), [...topology.places.map((p) => p.id)].sort());
@@ -105,7 +105,7 @@ test('rule 6: a place cites nothing, and rule 10 still wants a point on Earth', 
 
   // An event with no place needs a lane of its own; with one it does not.
   ({ result } = await run((fx) => {
-    Object.assign(fx.byId['fixture-event-a'], { place: null, where: null, region: null });
+    Object.assign(fx.byId['fixture-event-a'], { place: null, region: null });
   }));
   assert.match(hit(result, 10)[0].message, /region is required when the event has no place/);
 });

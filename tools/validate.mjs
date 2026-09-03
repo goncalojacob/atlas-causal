@@ -109,11 +109,11 @@ export async function runValidation(dataDir = DEFAULT_DATA, { index = false } = 
       }
     }
     for (const e of topology.events) {
-      if (e.status === 'active' && (e.place || e.where) && !e.region) {
+      if (e.status === 'active' && e.place && !e.region) {
         errors.push({ rule: 10, id: e.id, file: fileOf.get(e.id) ?? null, path: '/region', message: `no lane polygon within ${NEAREST_TOLERANCE}° of the place; set region on the place or on the event` });
       }
     }
-  } else if (topology.events.some((e) => (e.place || e.where) && !e.region)) {
+  } else if (topology.events.some((e) => e.place && !e.region)) {
     warnings.push({ rule: 'no-polygons', id: null, file: 'geo/regions.json', path: '', message: 'geo/regions.json is missing; regions cannot be derived from a place (run tools/build-regions.mjs)' });
   }
 

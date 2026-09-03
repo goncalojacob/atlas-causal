@@ -111,8 +111,7 @@ export function eventWeights(events, edges) {
 
 // Where a record sits and which lane that puts it in: the override on the
 // record wins, then the polygon the point falls in, then the nearest lane
-// within tolerance. Shared by places and by events that still carry their own
-// `where` during the migration.
+// within tolerance.
 function laneOf(record, where, deriveRegion) {
   const override = typeof record.region === 'string' ? record.region : null;
   if (override) return { region: override, regionMethod: 'override' };
@@ -157,10 +156,7 @@ export function buildTopology(records, regions, { deriveRegion } = {}) {
   for (const r of records) {
     if (r.kind === 'event') {
       const place = typeof r.place === 'string' ? placeById.get(r.place) ?? null : null;
-      // `where` on an event is transitional and goes with the migration; while
-      // it is there it is the point, so nothing stops being drawn mid-way.
-      const own = place ? null : (isObject(r.where) ? r.where : null);
-      let { region, regionMethod } = laneOf(r, own, deriveRegion);
+      let { region, regionMethod } = laneOf(r, null, deriveRegion);
       if (!region && place) {
         region = place.region;
         regionMethod = place.regionMethod;
@@ -170,7 +166,6 @@ export function buildTopology(records, regions, { deriveRegion } = {}) {
         title: r.title,
         when: r.when,
         place: typeof r.place === 'string' ? r.place : null,
-        where: own,
         region,
         regionMethod,
         status: r.status,

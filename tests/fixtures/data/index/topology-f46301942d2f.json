@@ -187,8 +187,7 @@
         "date": "1200-03-01",
         "end": 1200,
         "start": 1200
-      },
-      "where": null
+      }
     },
     {
       "actors": [],
@@ -205,8 +204,7 @@
         "date": "1200-06-01",
         "end": 1200,
         "start": 1200
-      },
-      "where": null
+      }
     },
     {
       "actors": [
@@ -233,8 +231,7 @@
       "when": {
         "end": 1220,
         "start": 1220
-      },
-      "where": null
+      }
     },
     {
       "actors": [],
@@ -250,8 +247,7 @@
       "when": {
         "end": 1230,
         "start": 1230
-      },
-      "where": null
+      }
     },
     {
       "actors": [],
@@ -267,8 +263,7 @@
       "when": {
         "end": 1240,
         "start": 1240
-      },
-      "where": null
+      }
     },
     {
       "actors": [],
@@ -284,8 +279,7 @@
       "when": {
         "end": 1225,
         "start": 1225
-      },
-      "where": null
+      }
     },
     {
       "actors": [],
@@ -301,8 +295,7 @@
       "when": {
         "end": 1300,
         "start": 1260
-      },
-      "where": null
+      }
     },
     {
       "actors": [],
@@ -321,8 +314,7 @@
           "max": 1275,
           "min": 1265
         }
-      },
-      "where": null
+      }
     },
     {
       "actors": [],
@@ -338,8 +330,7 @@
       "when": {
         "end": 1290,
         "start": 1290
-      },
-      "where": null
+      }
     },
     {
       "actors": [],
@@ -355,8 +346,7 @@
       "when": {
         "end": 1210,
         "start": 1210
-      },
-      "where": null
+      }
     },
     {
       "actors": [],
@@ -372,8 +362,7 @@
       "when": {
         "end": 1215,
         "start": 1215
-      },
-      "where": null
+      }
     },
     {
       "actors": [
@@ -394,8 +383,7 @@
       "when": {
         "end": 1280,
         "start": 1280
-      },
-      "where": null
+      }
     }
   ],
   "places": [

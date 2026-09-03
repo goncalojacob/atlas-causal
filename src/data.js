@@ -96,10 +96,9 @@ export function createAtlas({ manifest, topology, sources, land = null, dataRoot
   // --- places ------------------------------------------------------------
   // An event points at a place and the place holds the point, so everything
   // that draws asks for the point here rather than reading a field off the
-  // event. `where` on an event is what it carried before places existed and
-  // is only still read while the migration runs; it goes with the field.
+  // event: the coordinates have one home and cannot disagree with themselves.
   const placeOf = (event) => (event && typeof event.place === 'string' ? places.get(event.place) ?? null : null);
-  const pointOf = (event) => placeOf(event)?.where ?? event?.where ?? null;
+  const pointOf = (event) => placeOf(event)?.where ?? null;
 
   // The other direction: which events happened at a place, chronologically.
   // Only active events, and only places that resolve.
