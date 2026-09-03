@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "first-portuguese-republic--portugal--regime-of",
+  "kind": "relation",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "sources": [
+    {
+      "source": "wheeler-1978-republican-portugal",
+      "locator": null
+    },
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    }
+  ],
+  "from": "first-portuguese-republic",
+  "to": "portugal",
+  "type": "regime-of",
+  "when": {
+    "start": 1910,
+    "end": 1926
+  },
+  "note": "From the revolution of 5 October 1910 to the coup of 28 May 1926."
+}

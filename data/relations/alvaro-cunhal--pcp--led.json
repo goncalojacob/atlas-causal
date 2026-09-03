@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "alvaro-cunhal--pcp--led",
+  "kind": "relation",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "maxwell-1995-making-of-portuguese-democracy",
+      "locator": null
+    }
+  ],
+  "from": "alvaro-cunhal",
+  "to": "pcp",
+  "type": "led",
+  "when": {
+    "start": 1961,
+    "end": 1992
+  },
+  "note": "Secretary-general. Both years are from memory and want checking."
+}

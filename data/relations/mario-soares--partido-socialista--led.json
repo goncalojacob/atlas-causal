@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "mario-soares--partido-socialista--led",
+  "kind": "relation",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "sources": [
+    {
+      "source": "maxwell-1995-making-of-portuguese-democracy",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    }
+  ],
+  "from": "mario-soares",
+  "to": "partido-socialista",
+  "type": "led",
+  "when": {
+    "start": 1973,
+    "end": 1986
+  },
+  "note": "Founding secretary-general; he left the leadership on being elected President. Both ends want checking."
+}

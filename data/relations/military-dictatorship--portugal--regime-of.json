@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "military-dictatorship--portugal--regime-of",
+  "kind": "relation",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "sources": [
+    {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    },
+    {
+      "source": "meneses-2004-portugal-1914-1926",
+      "locator": null
+    }
+  ],
+  "from": "military-dictatorship",
+  "to": "portugal",
+  "type": "regime-of",
+  "when": {
+    "start": 1926,
+    "end": 1933
+  },
+  "note": "Between the coup of 28 May 1926 and the constitution that named the Estado Novo."
+}

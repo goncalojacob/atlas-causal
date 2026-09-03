@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "id": "antonio-costa--partido-socialista--led",
+  "kind": "relation",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "sources": [
+    {
+      "source": "costa-pinto-teixeira-2019-political-institutions",
+      "locator": null
+    }
+  ],
+  "from": "antonio-costa",
+  "to": "partido-socialista",
+  "type": "led",
+  "when": {
+    "start": 2014,
+    "end": 2024
+  },
+  "note": "Secretary-general from 2014; the end is the year he left the leadership after resigning as prime minister, and wants checking."
+}

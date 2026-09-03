@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "id": "andre-ventura--chega--member-of",
+  "kind": "relation",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cne-legislative-2019",
+      "locator": null
+    }
+  ],
+  "from": "andre-ventura",
+  "to": "chega",
+  "type": "member-of",
+  "when": {
+    "start": 2019,
+    "end": null
+  },
+  "note": "From the party's founding, which the records show him leading; the end is open because nothing here says otherwise."
+}

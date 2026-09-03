@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "estado-novo--nato--allied-with",
+  "kind": "relation",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    }
+  ],
+  "from": "estado-novo",
+  "to": "nato",
+  "type": "allied-with",
+  "when": {
+    "start": 1949,
+    "end": 1974
+  },
+  "note": "A founding member in 1949. That the Third Republic stayed in the alliance is a separate fact and is not recorded here."
+}

@@ -29625,6 +29625,401 @@
       }
     }
   ],
-  "relations": [],
+  "relations": [
+    {
+      "aliases": [],
+      "from": "alvaro-cunhal",
+      "id": "alvaro-cunhal--pcp--led",
+      "note": "Secretary-general. Both years are from memory and want checking.",
+      "status": "active",
+      "supersededBy": null,
+      "to": "pcp",
+      "type": "led",
+      "when": {
+        "end": 1992,
+        "start": 1961
+      }
+    },
+    {
+      "aliases": [],
+      "from": "amilcar-cabral",
+      "id": "amilcar-cabral--paigc--led",
+      "note": "Founder, and its leader until he was killed in January 1973.",
+      "status": "active",
+      "supersededBy": null,
+      "to": "paigc",
+      "type": "led",
+      "when": {
+        "end": 1973,
+        "start": 1956
+      }
+    },
+    {
+      "aliases": [],
+      "from": "andre-ventura",
+      "id": "andre-ventura--chega--led",
+      "note": "Founder. The sources name him at the head of the party; neither is a party record.",
+      "status": "active",
+      "supersededBy": null,
+      "to": "chega",
+      "type": "led",
+      "when": {
+        "end": null,
+        "start": 2019
+      }
+    },
+    {
+      "aliases": [],
+      "from": "andre-ventura",
+      "id": "andre-ventura--chega--member-of",
+      "note": "From the party's founding, which the records show him leading; the end is open because nothing here says otherwise.",
+      "status": "active",
+      "supersededBy": null,
+      "to": "chega",
+      "type": "member-of",
+      "when": {
+        "end": null,
+        "start": 2019
+      }
+    },
+    {
+      "aliases": [],
+      "from": "antonio-costa",
+      "id": "antonio-costa--partido-socialista--led",
+      "note": "Secretary-general from 2014; the end is the year he left the leadership after resigning as prime minister, and wants checking.",
+      "status": "active",
+      "supersededBy": null,
+      "to": "partido-socialista",
+      "type": "led",
+      "when": {
+        "end": 2024,
+        "start": 2014
+      }
+    },
+    {
+      "aliases": [],
+      "from": "antonio-costa",
+      "id": "antonio-costa--partido-socialista--member-of",
+      "note": "The years the atlas's own records show him acting for the party; when he joined it is not in this dataset.",
+      "status": "active",
+      "supersededBy": null,
+      "to": "partido-socialista",
+      "type": "member-of",
+      "when": {
+        "end": null,
+        "start": 2015
+      }
+    },
+    {
+      "aliases": [],
+      "from": "british-india",
+      "id": "british-india--republic-of-india--succeeded",
+      "note": "The date is the boundary CShapes 2.0 itself draws inside entity code 750, and is why the atlas has two actors for it.",
+      "status": "active",
+      "supersededBy": null,
+      "to": "republic-of-india",
+      "type": "succeeded",
+      "when": {
+        "date": "1947-08-15",
+        "end": 1947,
+        "start": 1947
+      }
+    },
+    {
+      "aliases": [],
+      "from": "cavaco-silva",
+      "id": "cavaco-silva--psd--led",
+      "note": "Party leader through the two absolute majorities. Both years want checking.",
+      "status": "active",
+      "supersededBy": null,
+      "to": "psd",
+      "type": "led",
+      "when": {
+        "end": 1995,
+        "start": 1985
+      }
+    },
+    {
+      "aliases": [],
+      "from": "council-of-the-revolution",
+      "id": "council-of-the-revolution--third-portuguese-republic--part-of",
+      "note": "A constitutional organ of the republic until the revision of 1982 abolished it.",
+      "status": "active",
+      "supersededBy": null,
+      "to": "third-portuguese-republic",
+      "type": "part-of",
+      "when": {
+        "end": 1982,
+        "start": 1975
+      }
+    },
+    {
+      "aliases": [],
+      "from": "dutch-east-indies",
+      "id": "dutch-east-indies--indonesia--succeeded",
+      "note": "The date is the boundary CShapes 2.0 itself draws inside entity code 850: the proclamation, not the transfer of sovereignty in 1949.",
+      "status": "active",
+      "supersededBy": null,
+      "to": "indonesia",
+      "type": "succeeded",
+      "when": {
+        "date": "1945-08-17",
+        "end": 1945,
+        "start": 1945
+      }
+    },
+    {
+      "aliases": [],
+      "from": "eduardo-mondlane",
+      "id": "eduardo-mondlane--frelimo--led",
+      "note": "First president, until he was killed in 1969.",
+      "status": "active",
+      "supersededBy": null,
+      "to": "frelimo",
+      "type": "led",
+      "when": {
+        "end": 1969,
+        "start": 1962
+      }
+    },
+    {
+      "aliases": [],
+      "from": "estado-novo",
+      "id": "estado-novo--nato--allied-with",
+      "note": "A founding member in 1949. That the Third Republic stayed in the alliance is a separate fact and is not recorded here.",
+      "status": "active",
+      "supersededBy": null,
+      "to": "nato",
+      "type": "allied-with",
+      "when": {
+        "end": 1974,
+        "start": 1949
+      }
+    },
+    {
+      "aliases": [],
+      "from": "estado-novo",
+      "id": "estado-novo--portugal--regime-of",
+      "note": "From the constitution of 1933 to 25 April 1974.",
+      "status": "active",
+      "supersededBy": null,
+      "to": "portugal",
+      "type": "regime-of",
+      "when": {
+        "end": 1974,
+        "start": 1933
+      }
+    },
+    {
+      "aliases": [],
+      "from": "first-portuguese-republic",
+      "id": "first-portuguese-republic--portugal--regime-of",
+      "note": "From the revolution of 5 October 1910 to the coup of 28 May 1926.",
+      "status": "active",
+      "supersededBy": null,
+      "to": "portugal",
+      "type": "regime-of",
+      "when": {
+        "end": 1926,
+        "start": 1910
+      }
+    },
+    {
+      "aliases": [],
+      "from": "legiao-portuguesa",
+      "id": "legiao-portuguesa--estado-novo--part-of",
+      "note": null,
+      "status": "active",
+      "supersededBy": null,
+      "to": "estado-novo",
+      "type": "part-of",
+      "when": {
+        "end": 1974,
+        "start": 1936
+      }
+    },
+    {
+      "aliases": [],
+      "from": "luis-montenegro",
+      "id": "luis-montenegro--psd--led",
+      "note": "The source is the election return that names him at the head of the list, not a party record; the year he became leader wants checking.",
+      "status": "active",
+      "supersededBy": null,
+      "to": "psd",
+      "type": "led",
+      "when": {
+        "end": null,
+        "start": 2022
+      }
+    },
+    {
+      "aliases": [],
+      "from": "luis-montenegro",
+      "id": "luis-montenegro--psd--member-of",
+      "note": "The years the atlas's own records show him acting for the party; when he joined it is not in this dataset.",
+      "status": "active",
+      "supersededBy": null,
+      "to": "psd",
+      "type": "member-of",
+      "when": {
+        "end": null,
+        "start": 2024
+      }
+    },
+    {
+      "aliases": [],
+      "from": "marcelo-caetano",
+      "id": "marcelo-caetano--estado-novo--led",
+      "note": null,
+      "status": "active",
+      "supersededBy": null,
+      "to": "estado-novo",
+      "type": "led",
+      "when": {
+        "end": 1974,
+        "start": 1968
+      }
+    },
+    {
+      "aliases": [],
+      "from": "marcelo-rebelo-de-sousa",
+      "id": "marcelo-rebelo-de-sousa--psd--led",
+      "note": "Party leader in opposition. Both years want checking.",
+      "status": "active",
+      "supersededBy": null,
+      "to": "psd",
+      "type": "led",
+      "when": {
+        "end": 1999,
+        "start": 1996
+      }
+    },
+    {
+      "aliases": [],
+      "from": "marcelo-rebelo-de-sousa",
+      "id": "marcelo-rebelo-de-sousa--psd--member-of",
+      "note": "The party of origin the records name. A President suspends party activity, which nothing here records.",
+      "status": "active",
+      "supersededBy": null,
+      "to": "psd",
+      "type": "member-of",
+      "when": {
+        "end": null,
+        "start": 1996
+      }
+    },
+    {
+      "aliases": [],
+      "from": "mario-soares",
+      "id": "mario-soares--partido-socialista--led",
+      "note": "Founding secretary-general; he left the leadership on being elected President. Both ends want checking.",
+      "status": "active",
+      "supersededBy": null,
+      "to": "partido-socialista",
+      "type": "led",
+      "when": {
+        "end": 1986,
+        "start": 1973
+      }
+    },
+    {
+      "aliases": [],
+      "from": "military-dictatorship",
+      "id": "military-dictatorship--portugal--regime-of",
+      "note": "Between the coup of 28 May 1926 and the constitution that named the Estado Novo.",
+      "status": "active",
+      "supersededBy": null,
+      "to": "portugal",
+      "type": "regime-of",
+      "when": {
+        "end": 1933,
+        "start": 1926
+      }
+    },
+    {
+      "aliases": [],
+      "from": "pedro-passos-coelho",
+      "id": "pedro-passos-coelho--psd--led",
+      "note": "Party leader, in government from 2011 to 2015. Both years want checking.",
+      "status": "active",
+      "supersededBy": null,
+      "to": "psd",
+      "type": "led",
+      "when": {
+        "end": 2018,
+        "start": 2010
+      }
+    },
+    {
+      "aliases": [],
+      "from": "pedro-passos-coelho",
+      "id": "pedro-passos-coelho--psd--member-of",
+      "note": "The years the atlas's own records show him acting for the party; when he joined it is not in this dataset.",
+      "status": "active",
+      "supersededBy": null,
+      "to": "psd",
+      "type": "member-of",
+      "when": {
+        "end": null,
+        "start": 2014
+      }
+    },
+    {
+      "aliases": [],
+      "from": "pvde-pide-dgs",
+      "id": "pvde-pide-dgs--estado-novo--part-of",
+      "note": "The political police of the regime, under its three successive names.",
+      "status": "active",
+      "supersededBy": null,
+      "to": "estado-novo",
+      "type": "part-of",
+      "when": {
+        "end": 1974,
+        "start": 1933
+      }
+    },
+    {
+      "aliases": [],
+      "from": "salazar",
+      "id": "salazar--estado-novo--led",
+      "note": "President of the Council from 1932, a year before the constitution that named the regime, until he was incapacitated in 1968.",
+      "status": "active",
+      "supersededBy": null,
+      "to": "estado-novo",
+      "type": "led",
+      "when": {
+        "end": 1968,
+        "start": 1932
+      }
+    },
+    {
+      "aliases": [],
+      "from": "third-portuguese-republic",
+      "id": "third-portuguese-republic--european-economic-community--allied-with",
+      "note": "From accession in 1986; the end is where the actor record for the Community closes, at Maastricht.",
+      "status": "active",
+      "supersededBy": null,
+      "to": "european-economic-community",
+      "type": "allied-with",
+      "when": {
+        "end": 1993,
+        "start": 1986
+      }
+    },
+    {
+      "aliases": [],
+      "from": "third-portuguese-republic",
+      "id": "third-portuguese-republic--portugal--regime-of",
+      "note": "The regime the revolution of 1974 opened, and the one still standing.",
+      "status": "active",
+      "supersededBy": null,
+      "to": "portugal",
+      "type": "regime-of",
+      "when": {
+        "end": null,
+        "start": 1974
+      }
+    }
+  ],
   "schema": 1
 }

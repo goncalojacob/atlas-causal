@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "dutch-east-indies--indonesia--succeeded",
+  "kind": "relation",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "gwcode 850"
+    }
+  ],
+  "from": "dutch-east-indies",
+  "to": "indonesia",
+  "type": "succeeded",
+  "when": {
+    "start": 1945,
+    "end": 1945,
+    "date": "1945-08-17"
+  },
+  "note": "The date is the boundary CShapes 2.0 itself draws inside entity code 850: the proclamation, not the transfer of sovereignty in 1949."
+}

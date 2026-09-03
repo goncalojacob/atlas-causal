@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "amilcar-cabral--paigc--led",
+  "kind": "relation",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "sources": [
+    {
+      "source": "macqueen-1997-decolonization",
+      "locator": null
+    },
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    }
+  ],
+  "from": "amilcar-cabral",
+  "to": "paigc",
+  "type": "led",
+  "when": {
+    "start": 1956,
+    "end": 1973
+  },
+  "note": "Founder, and its leader until he was killed in January 1973."
+}

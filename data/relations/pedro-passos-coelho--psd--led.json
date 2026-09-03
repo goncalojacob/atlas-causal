@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "id": "pedro-passos-coelho--psd--led",
+  "kind": "relation",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "sources": [
+    {
+      "source": "costa-pinto-teixeira-2019-political-institutions",
+      "locator": null
+    }
+  ],
+  "from": "pedro-passos-coelho",
+  "to": "psd",
+  "type": "led",
+  "when": {
+    "start": 2010,
+    "end": 2018
+  },
+  "note": "Party leader, in government from 2011 to 2015. Both years want checking."
+}

@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "salazar--estado-novo--led",
+  "kind": "relation",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "sources": [
+    {
+      "source": "meneses-2009-salazar",
+      "locator": null
+    },
+    {
+      "source": "rosas-2012-salazar-e-o-poder",
+      "locator": null
+    }
+  ],
+  "from": "salazar",
+  "to": "estado-novo",
+  "type": "led",
+  "when": {
+    "start": 1932,
+    "end": 1968
+  },
+  "note": "President of the Council from 1932, a year before the constitution that named the regime, until he was incapacitated in 1968."
+}

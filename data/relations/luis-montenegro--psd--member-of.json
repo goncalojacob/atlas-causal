@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "id": "luis-montenegro--psd--member-of",
+  "kind": "relation",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cne-legislative-2024",
+      "locator": null
+    }
+  ],
+  "from": "luis-montenegro",
+  "to": "psd",
+  "type": "member-of",
+  "when": {
+    "start": 2024,
+    "end": null
+  },
+  "note": "The years the atlas's own records show him acting for the party; when he joined it is not in this dataset."
+}

@@ -11,7 +11,7 @@ import { readFile } from 'node:fs/promises';
 import { createAtlas } from '../src/data.js';
 import { actorCardHtml } from '../src/panel/actor.js';
 import { esc } from '../src/util/esc.js';
-import { FIXTURE_DATA } from './helpers.mjs';
+import { FIXTURE_DATA, ROOT } from './helpers.mjs';
 
 async function fixtureAtlas() {
   const read = async (rel) => JSON.parse(await readFile(path.join(FIXTURE_DATA, rel), 'utf8'));
@@ -64,6 +64,36 @@ test('an actor in no relation has no relations section at all', async () => {
   const ctx = context(atlas);
   const html = actorCardHtml(ctx, { ...atlas.actors.get('fixture-actor-one'), id: 'fixture-nobody' });
   assert.doesNotMatch(html, /class="relations"/);
+});
+
+test('the atlas\'s own cards: Portugal\'s four regimes and what Salazar led', async () => {
+  const dataDir = path.join(ROOT, 'data');
+  const read = async (rel) => JSON.parse(await readFile(path.join(dataDir, rel), 'utf8'));
+  const manifest = await read('index/manifest.json');
+  const [topology, sources] = await Promise.all([read(manifest.files.topology), read(manifest.files.sources)]);
+  const atlas = createAtlas({ manifest, topology, sources: sources.sources, fetchJson: () => Promise.reject(new Error('the card fetches its text separately')) });
+  const ctx = context(atlas);
+
+  const portugal = actorCardHtml(ctx, atlas.actors.get('portugal'));
+  assert.deepEqual(headings(portugal), ['Regimes']);
+  assert.match(portugal, /<h2>Relations <span class="count">4<\/span><\/h2>/);
+  for (const regime of ['first-portuguese-republic', 'military-dictatorship', 'estado-novo', 'third-portuguese-republic']) {
+    assert.match(portugal, new RegExp(`data-action="actor" data-id="${regime}"`), regime);
+  }
+
+  const salazar = actorCardHtml(ctx, atlas.actors.get('salazar'));
+  assert.deepEqual(headings(salazar), ['Led']);
+  assert.match(salazar, /data-action="actor" data-id="estado-novo"/);
+  assert.match(salazar, /1932 – 1968/);
+
+  // The regime's own card is where all six directions meet.
+  assert.deepEqual(
+    headings(actorCardHtml(ctx, atlas.actors.get('estado-novo'))),
+    ['Regime of', 'Parts of it', 'Led by', 'Allied with'],
+  );
+  // Both successions are drawn from the colony's end and the state's.
+  assert.deepEqual(headings(actorCardHtml(ctx, atlas.actors.get('british-india'))), ['Succeeded by']);
+  assert.deepEqual(headings(actorCardHtml(ctx, atlas.actors.get('indonesia'))), ['Successor of']);
 });
 
 test('nothing from a relation reaches the card unescaped', async () => {

@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "pvde-pide-dgs--estado-novo--part-of",
+  "kind": "relation",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "sources": [
+    {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    },
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    }
+  ],
+  "from": "pvde-pide-dgs",
+  "to": "estado-novo",
+  "type": "part-of",
+  "when": {
+    "start": 1933,
+    "end": 1974
+  },
+  "note": "The political police of the regime, under its three successive names."
+}
