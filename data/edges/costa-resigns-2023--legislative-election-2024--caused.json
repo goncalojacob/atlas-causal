@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "costa-resigns-2023--legislative-election-2024--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "sources": [
+    {
+      "source": "pgr-2023-operation-influencer",
+      "locator": null
+    },
+    {
+      "source": "cne-legislative-2024",
+      "locator": null
+    }
+  ],
+  "from": "costa-resigns-2023",
+  "to": "legislative-election-2024",
+  "type": "caused",
+  "confidence": "consensus",
+  "explanation": "The resignation left a majority government without the prime minister it had been built around, and the president chose dissolution over a replacement from the same benches. The election of March 2024 is the direct consequence of that choice, and its date was set within a week of the resignation.",
+  "dispute": null
+}

@@ -1,7 +1,7 @@
 {
   "counts": {
     "actors": 311,
-    "edges": 73,
+    "edges": 91,
     "events": 80,
     "places": 25,
     "presences": 710,
@@ -10,7 +10,7 @@
   },
   "files": {
     "sources": "index/sources-bd0711085959.json",
-    "topology": "index/topology-0b8b6053195c.json"
+    "topology": "index/topology-c54639df03d2.json"
   },
   "land": [
     {

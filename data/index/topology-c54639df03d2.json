@@ -4933,6 +4933,16 @@
     },
     {
       "aliases": [],
+      "confidence": "consensus",
+      "from": "carnation-revolution-1974",
+      "id": "carnation-revolution-1974--fiftieth-anniversary-25-april-2024--caused",
+      "status": "active",
+      "supersededBy": null,
+      "to": "fiftieth-anniversary-25-april-2024",
+      "type": "caused"
+    },
+    {
+      "aliases": [],
       "confidence": "probable",
       "from": "carnation-revolution-1974",
       "id": "carnation-revolution-1974--macau-handover-1999--precondition-of",
@@ -5074,6 +5084,16 @@
     {
       "aliases": [],
       "confidence": "consensus",
+      "from": "costa-resigns-2023",
+      "id": "costa-resigns-2023--legislative-election-2024--caused",
+      "status": "active",
+      "supersededBy": null,
+      "to": "legislative-election-2024",
+      "type": "caused"
+    },
+    {
+      "aliases": [],
+      "confidence": "consensus",
       "from": "coup-28-may-1926",
       "id": "coup-28-may-1926--constitution-1933--precondition-of",
       "status": "active",
@@ -5099,6 +5119,26 @@
       "status": "active",
       "supersededBy": null,
       "to": "nationalisations-1975",
+      "type": "caused"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "covid-state-of-emergency-2020",
+      "id": "covid-state-of-emergency-2020--marcelo-reelected-2021--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "marcelo-reelected-2021",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "covid-state-of-emergency-2020",
+      "id": "covid-state-of-emergency-2020--world-youth-day-2023--caused",
+      "status": "active",
+      "supersededBy": null,
+      "to": "world-youth-day-2023",
       "type": "caused"
     },
     {
@@ -5203,6 +5243,36 @@
     },
     {
       "aliases": [],
+      "confidence": "disputed",
+      "from": "geringonca-2015",
+      "id": "geringonca-2015--legislative-election-2019--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "legislative-election-2019",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "geringonca-2015",
+      "id": "geringonca-2015--legislative-election-2022--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "legislative-election-2022",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "geringonca-2015",
+      "id": "geringonca-2015--marcelo-elected-president-2016--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "marcelo-elected-president-2016",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
       "confidence": "consensus",
       "from": "germany-declares-war-1916",
       "id": "germany-declares-war-1916--battle-of-the-lys-1918--caused",
@@ -5219,6 +5289,16 @@
       "status": "active",
       "supersededBy": null,
       "to": "sidonio-pais-coup-1917",
+      "type": "caused"
+    },
+    {
+      "aliases": [],
+      "confidence": "consensus",
+      "from": "government-falls-2025",
+      "id": "government-falls-2025--legislative-election-2025--caused",
+      "status": "active",
+      "supersededBy": null,
+      "to": "legislative-election-2025",
       "type": "caused"
     },
     {
@@ -5303,6 +5383,56 @@
     },
     {
       "aliases": [],
+      "confidence": "consensus",
+      "from": "legislative-election-2015",
+      "id": "legislative-election-2015--geringonca-2015--enabled",
+      "status": "active",
+      "supersededBy": null,
+      "to": "geringonca-2015",
+      "type": "enabled"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "legislative-election-2019",
+      "id": "legislative-election-2019--legislative-election-2022--caused",
+      "status": "active",
+      "supersededBy": null,
+      "to": "legislative-election-2022",
+      "type": "caused"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "legislative-election-2022",
+      "id": "legislative-election-2022--costa-resigns-2023--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "costa-resigns-2023",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "disputed",
+      "from": "legislative-election-2022",
+      "id": "legislative-election-2022--legislative-election-2024--caused",
+      "status": "active",
+      "supersededBy": null,
+      "to": "legislative-election-2024",
+      "type": "caused"
+    },
+    {
+      "aliases": [],
+      "confidence": "consensus",
+      "from": "legislative-election-2024",
+      "id": "legislative-election-2024--montenegro-government-2024--caused",
+      "status": "active",
+      "supersededBy": null,
+      "to": "montenegro-government-2024",
+      "type": "caused"
+    },
+    {
+      "aliases": [],
       "confidence": "disputed",
       "from": "monarchy-of-the-north-1919",
       "id": "monarchy-of-the-north-1919--coup-28-may-1926--precondition-of",
@@ -5310,6 +5440,16 @@
       "supersededBy": null,
       "to": "coup-28-may-1926",
       "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "montenegro-government-2024",
+      "id": "montenegro-government-2024--government-falls-2025--caused",
+      "status": "active",
+      "supersededBy": null,
+      "to": "government-falls-2025",
+      "type": "caused"
     },
     {
       "aliases": [],
@@ -5359,6 +5499,16 @@
       "status": "active",
       "supersededBy": null,
       "to": "coup-28-may-1926",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "pedrogao-grande-fires-2017",
+      "id": "pedrogao-grande-fires-2017--october-fires-2017--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "october-fires-2017",
       "type": "precondition-of"
     },
     {
@@ -5479,6 +5629,36 @@
       "status": "active",
       "supersededBy": null,
       "to": "coup-attempt-11-march-1975",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "troika-bailout-2011",
+      "id": "troika-bailout-2011--bes-resolution-2014--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "bes-resolution-2014",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "consensus",
+      "from": "troika-bailout-2011",
+      "id": "troika-bailout-2011--troika-programme-ends-2014--caused",
+      "status": "active",
+      "supersededBy": null,
+      "to": "troika-programme-ends-2014",
+      "type": "caused"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "troika-programme-ends-2014",
+      "id": "troika-programme-ends-2014--legislative-election-2015--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "legislative-election-2015",
       "type": "precondition-of"
     },
     {
@@ -5714,7 +5894,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Resolution of Banco Espírito Santo",
-      "weight": 4,
+      "weight": 5,
       "when": {
         "calendar": "gregorian",
         "date": "2014-08-03",
@@ -5869,7 +6049,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "25 April",
-      "weight": 17,
+      "weight": 18,
       "when": {
         "calendar": "gregorian",
         "date": "1974-04-25",
@@ -6109,7 +6289,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "António Costa resigns",
-      "weight": 3,
+      "weight": 5,
       "when": {
         "calendar": "gregorian",
         "date": "2023-11-07",
@@ -6202,7 +6382,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "First state of emergency of the pandemic",
-      "weight": 2,
+      "weight": 4,
       "when": {
         "calendar": "gregorian",
         "date": "2020-03-18",
@@ -6538,7 +6718,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Fifty years of 25 April",
-      "weight": 2,
+      "weight": 3,
       "when": {
         "calendar": "gregorian",
         "date": "2024-04-25",
@@ -6577,7 +6757,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "The PS minority government of 2015",
-      "weight": 5,
+      "weight": 9,
       "when": {
         "calendar": "gregorian",
         "date": "2015-11-26",
@@ -6674,7 +6854,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "The government loses a confidence vote",
-      "weight": 5,
+      "weight": 7,
       "when": {
         "calendar": "gregorian",
         "date": "2025-03-11",
@@ -6944,7 +7124,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Legislative election of 2015",
-      "weight": 7,
+      "weight": 9,
       "when": {
         "calendar": "gregorian",
         "date": "2015-10-04",
@@ -6991,7 +7171,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Legislative election of 2019",
-      "weight": 7,
+      "weight": 9,
       "when": {
         "calendar": "gregorian",
         "date": "2019-10-06",
@@ -7034,7 +7214,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Legislative election of 2022",
-      "weight": 6,
+      "weight": 10,
       "when": {
         "calendar": "gregorian",
         "date": "2022-01-30",
@@ -7077,7 +7257,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Legislative election of 2024",
-      "weight": 6,
+      "weight": 9,
       "when": {
         "calendar": "gregorian",
         "date": "2024-03-10",
@@ -7120,7 +7300,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Legislative election of 2025",
-      "weight": 6,
+      "weight": 7,
       "when": {
         "calendar": "gregorian",
         "date": "2025-05-18",
@@ -7174,7 +7354,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Marcelo Rebelo de Sousa elected president",
-      "weight": 3,
+      "weight": 4,
       "when": {
         "calendar": "gregorian",
         "date": "2016-01-24",
@@ -7201,7 +7381,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Marcelo Rebelo de Sousa re-elected",
-      "weight": 2,
+      "weight": 3,
       "when": {
         "calendar": "gregorian",
         "date": "2021-01-24",
@@ -7267,7 +7447,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "The Montenegro government takes office",
-      "weight": 4,
+      "weight": 6,
       "when": {
         "calendar": "gregorian",
         "date": "2024-04-02",
@@ -7402,7 +7582,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "The fires of October 2017",
-      "weight": 1,
+      "weight": 2,
       "when": {
         "calendar": "gregorian",
         "date": "2017-10-15",
@@ -7426,7 +7606,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "The Pedrógão Grande fires",
-      "weight": 1,
+      "weight": 2,
       "when": {
         "calendar": "gregorian",
         "date": "2017-06-17",
@@ -7798,7 +7978,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Request for financial assistance",
-      "weight": 6,
+      "weight": 8,
       "when": {
         "calendar": "gregorian",
         "date": "2011-04-06",
@@ -7837,7 +8017,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Exit from the adjustment programme",
-      "weight": 5,
+      "weight": 7,
       "when": {
         "calendar": "gregorian",
         "date": "2014-05-17",
@@ -7922,7 +8102,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "World Youth Day in Lisbon",
-      "weight": 2,
+      "weight": 3,
       "when": {
         "calendar": "gregorian",
         "date": "2023-08-01",

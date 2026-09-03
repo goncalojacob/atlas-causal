@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "troika-bailout-2011--bes-resolution-2014--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "sources": [
+    {
+      "source": "imf-2016-portugal-ex-post-evaluation",
+      "locator": null
+    },
+    {
+      "source": "banco-de-portugal-2014-bes-resolution",
+      "locator": null
+    }
+  ],
+  "from": "troika-bailout-2011",
+  "to": "bes-resolution-2014",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The resolution was carried out under the supervisory regime the 2011 programme had imposed and paid for out of the bank solvency support line the programme had provided. Without that money and that framework the Banco de Portugal would have had to choose between a rescue it could not fund and a disorderly failure; whether the same programme also delayed the recognition of the group's losses is a separate argument this edge does not make.",
+  "dispute": null
+}

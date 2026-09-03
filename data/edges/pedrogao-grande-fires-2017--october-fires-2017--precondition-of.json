@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "pedrogao-grande-fires-2017--october-fires-2017--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cti-2017-2018-fires",
+      "locator": null
+    }
+  ],
+  "from": "pedrogao-grande-fires-2017",
+  "to": "october-fires-2017",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The failures the Independent Technical Commission found in June — the alert, the closing of the roads, the emergency communications network — had not been repaired by 15 October, and the second wave met the same system with the same gaps. This is a claim about what was not done in the four months between them, not that one fire lit the other.",
+  "dispute": null
+}

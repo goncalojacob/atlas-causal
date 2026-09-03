@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "montenegro-government-2024--government-falls-2025--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "sources": [
+    {
+      "source": "ar-2025-confidence-vote",
+      "locator": null
+    }
+  ],
+  "from": "montenegro-government-2024",
+  "to": "government-falls-2025",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "A minority government that had ruled out the only party able to give it a majority had no way of answering questions about the prime minister's family company except by asking the chamber to confirm it. The chamber did not, and the motion the government lost was its own: the fall follows from the terms on which it had taken office eleven months earlier.",
+  "dispute": null
+}

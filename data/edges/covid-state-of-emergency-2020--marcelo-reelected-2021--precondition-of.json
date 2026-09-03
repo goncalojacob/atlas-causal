@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "covid-state-of-emergency-2020--marcelo-reelected-2021--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cne-presidential-2021",
+      "locator": null
+    },
+    {
+      "source": "dre-2020-state-of-emergency",
+      "locator": null
+    }
+  ],
+  "from": "covid-state-of-emergency-2020",
+  "to": "marcelo-reelected-2021",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The presidential election of January 2021 was held in the worst weeks of the winter wave, under the restrictions the emergency had normalised, with campaigning curtailed and turnout below forty per cent. A first-round win against a divided field owed something to a contest nobody was able to fight in the ordinary way.",
+  "dispute": null
+}

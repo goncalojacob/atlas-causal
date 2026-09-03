@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "legislative-election-2019--legislative-election-2022--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cne-legislative-2019",
+      "locator": null
+    },
+    {
+      "source": "cne-legislative-2022",
+      "locator": null
+    }
+  ],
+  "from": "legislative-election-2019",
+  "to": "legislative-election-2022",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The government elected in 2019 governed without renewing the written agreements of 2015 and fell when the budget for 2022 was rejected by the same parties it had stopped writing agreements with. The second election follows from the terms on which the first government was formed rather than from any single vote.",
+  "dispute": null
+}
