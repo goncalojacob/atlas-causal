@@ -42,6 +42,18 @@ test('scaffolded records have the envelope and pass their schema; the text is le
   assert.deepEqual(v.validate('v1/relation.json', relation), []);
   assert.equal(scaffold('relation', ['a', 'b', 'member-of'], { ...opts, start: '1970', end: 'null' }).when.end, null);
 
+  const narrative = scaffold('narrative', ['fixture-scaffold-walk'], {
+    ...opts, title: 'A fixture walk', step: ['fixture-event-a', 'fixture-event-a--fixture-event-b--caused'], from: '1200', to: '1260',
+  });
+  assert.deepEqual(narrative.steps, [
+    { ref: 'fixture-event-a', text: '' },
+    { ref: 'fixture-event-a--fixture-event-b--caused', text: '' },
+  ]);
+  assert.deepEqual(narrative.window, { from: 1200, to: 1260 });
+  // The whole of a narrative is its prose, so the scaffold leaves the summary
+  // and every step blank for a person to write.
+  assert.deepEqual(v.validate('v1/narrative.json', narrative).map((e) => e.path), ['/summary', '/steps/0/text', '/steps/1/text']);
+
   // A place is complete as scaffolded: it cites nothing and has no text a
   // person still has to write.
   const place = scaffold('place', ['fixture-scaffold-place'], {
@@ -76,6 +88,8 @@ test('scaffold refuses bad input', () => {
   assert.throws(() => scaffold('relation', ['a', 'b', 'friend-of'], { ...opts, start: '1' }), /type must be one of/);
   assert.throws(() => scaffold('relation', ['a', 'b'], { ...opts, start: '1' }), /<from> <to> <type>/);
   assert.throws(() => scaffold('relation', ['a', 'b', 'led'], opts), /--start/);
+  assert.throws(() => scaffold('narrative', ['x'], { ...opts, step: ['fixture-event-a'] }), /at least two --step/);
+  assert.throws(() => scaffold('narrative', ['Bad Id'], { ...opts, step: ['a', 'b'] }), /slug/);
   assert.throws(() => scaffold('place', ['x'], opts), /--lon and --lat/);
   assert.throws(() => scaffold('place', ['Bad Id'], { ...opts, lon: '1', lat: '2' }), /slug/);
   assert.throws(() => scaffold('event', ['fixture-x'], { ...opts, start: '1', place: 'Not A Slug' }), /--place/);

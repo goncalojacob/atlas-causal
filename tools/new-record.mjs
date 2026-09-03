@@ -13,6 +13,8 @@
 //        --start 1889 [--end 1970 | --end null] [--lon -8.1 --lat 40.5 --label "Santa Comba Dão"]
 //   node tools/new-record.mjs relation <from> <to> <type> --start 1933 [--end 1974 | --end null]
 //        [--note "…"]
+//   node tools/new-record.mjs narrative <id> --title "…" --step <event or edge id> (repeatable)
+//        [--from 1961 --to 1975]
 //   node tools/new-record.mjs source <id> --type book --title "…" --creators "A; B"
 //        [--year 2000 --publisher "…" --isbn … --doi … --url … --accessed YYYY-MM-DD
 //         --repository "…" --reference "…"]
@@ -38,6 +40,7 @@ function parse(argv) {
       const key = a.slice(2);
       const value = argv[i + 1] !== undefined && !argv[i + 1].startsWith('--') ? argv[++i] : true;
       if (key === 'source') (options.source ??= []).push(value);
+      else if (key === 'step') (options.step ??= []).push(value);
       else options[key] = value;
     } else positional.push(a);
   }
@@ -192,6 +195,26 @@ export function scaffold(kind, positional, options) {
     };
   }
 
+  if (kind === 'narrative') {
+    const [id] = positional;
+    if (!id || !SLUG.test(id)) throw new Error('narrative needs a slug id');
+    const steps = Array.isArray(options.step) ? options.step.filter((s) => typeof s === 'string') : [];
+    if (steps.length < 2) throw new Error('narrative needs at least two --step <event or edge id>');
+    const record = {
+      ...envelope(id),
+      sources,
+      title: options.title ?? '',
+      // The text of the walk is the whole of a narrative and is a person's
+      // to write: the scaffold names the records and leaves every word blank.
+      summary: '',
+      steps: steps.map((ref) => ({ ref, text: '' })),
+    };
+    const from = int(options.from, 'from');
+    const to = int(options.to, 'to');
+    if (from !== undefined || to !== undefined) record.window = { from, to };
+    return record;
+  }
+
   if (kind === 'source') {
     const [id] = positional;
     if (!id || !SLUG.test(id)) throw new Error('source needs a slug id');
@@ -212,7 +235,7 @@ export function scaffold(kind, positional, options) {
     };
   }
 
-  throw new Error(`kind must be event, edge, source, actor, place or relation, not "${kind}"`);
+  throw new Error(`kind must be event, edge, source, actor, place, relation or narrative, not "${kind}"`);
 }
 
 // One command may write two files: an event and the place it happens at, when
