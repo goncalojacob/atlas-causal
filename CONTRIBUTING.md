@@ -73,7 +73,7 @@ resolve. It cannot read. For every record touched:
 ## The record format
 
 One JSON file per record, under `data/events/`, `data/edges/`, `data/actors/`,
-`data/places/`, `data/sources/` or `data/presences/`; the id is the file name. The schemas in `schema/v1/` and
+`data/places/`, `data/relations/`, `data/sources/` or `data/presences/`; the id is the file name. The schemas in `schema/v1/` and
 `schema/common/` are authoritative — what follows is a synthetic example, of
 the kind that lives in `tests/fixtures/`, not a historical claim.
 
@@ -208,6 +208,33 @@ Notes that catch people out:
   forms, which is what search uses; `where.label` is the same name. Before
   adding a place, look for it: two records for one town split its history in
   two, and the form lists every place the atlas already has.
+
+- **A relation links two actors**, which is the one thing an edge cannot do:
+  an edge runs between events. `from`, `to`, a `type` from a closed set of six
+  — `regime-of`, `succeeded`, `member-of`, `part-of`, `led`, `allied-with` —
+  an interval, and an optional short `note`. The id is derived,
+  `from--to--type`, as an edge's is.
+
+```json
+{
+  "...envelope",
+  "kind": "relation",
+  "id": "estado-novo--portugal--regime-of",
+  "sources": [{ "source": "rosas-1994-estado-novo", "locator": null }],
+  "from": "estado-novo",
+  "to": "portugal",
+  "type": "regime-of",
+  "when": { "start": 1933, "end": 1974 },
+  "note": "From the constitution of 1933 to 25 April 1974."
+}
+```
+
+  Which kind of actor may stand at each end is checked (rule 19): a regime and
+  the state it is a regime of are both polities, `member-of` and `led` start
+  at a person, `part-of` at an institution, and a succession runs between two
+  actors of the same kind. **A relation cites at least one source**, like an
+  edge: who belonged to what is argued from evidence. There is no card for a
+  relation — it is read on the card of the actor at either end.
 
 ## Territories, and the licence they carry
 
