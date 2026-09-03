@@ -592,7 +592,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 40,
+      "citationCount": 41,
       "citations": [
         {
           "dissent": false,
@@ -796,6 +796,12 @@
           "dissent": false,
           "id": "un-admission-1955",
           "kind": "event",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "how-the-colonial-war-ended-the-regime",
+          "kind": "narrative",
           "locator": null
         },
         {
@@ -7210,7 +7216,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 45,
+      "citationCount": 46,
       "citations": [
         {
           "dissent": false,
@@ -7472,6 +7478,12 @@
         },
         {
           "dissent": false,
+          "id": "how-the-colonial-war-ended-the-regime",
+          "kind": "narrative",
+          "locator": null
+        },
+        {
+          "dissent": false,
           "id": "amilcar-cabral--paigc--led",
           "kind": "relation",
           "locator": null
@@ -7513,7 +7525,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 40,
+      "citationCount": 41,
       "citations": [
         {
           "dissent": false,
@@ -7735,6 +7747,12 @@
           "dissent": false,
           "id": "spinola-resigns-1974",
           "kind": "event",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "how-the-colonial-war-ended-the-regime",
+          "kind": "narrative",
           "locator": null
         },
         {
@@ -8796,7 +8814,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 70,
+      "citationCount": 71,
       "citations": [
         {
           "dissent": false,
@@ -9174,6 +9192,12 @@
           "dissent": false,
           "id": "troika-bailout-2011",
           "kind": "event",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "how-the-colonial-war-ended-the-regime",
+          "kind": "narrative",
           "locator": null
         },
         {

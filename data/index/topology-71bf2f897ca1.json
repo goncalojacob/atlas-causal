@@ -8112,7 +8112,64 @@
       }
     }
   ],
-  "narratives": [],
+  "narratives": [
+    {
+      "aliases": [],
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "how-the-colonial-war-ended-the-regime",
+      "status": "active",
+      "steps": [
+        {
+          "ref": "angola-war-begins-1961"
+        },
+        {
+          "ref": "angola-war-begins-1961--guinea-war-begins-1963--inspired"
+        },
+        {
+          "ref": "angola-war-begins-1961--mozambique-war-begins-1964--inspired"
+        },
+        {
+          "ref": "mozambique-war-begins-1964--wiriyamu-massacre-1972--precondition-of"
+        },
+        {
+          "ref": "guinea-war-begins-1963--cabral-assassinated-1973--precondition-of"
+        },
+        {
+          "ref": "cabral-assassinated-1973--guinea-bissau-declares-independence-1973--caused"
+        },
+        {
+          "ref": "guinea-bissau-declares-independence-1973--portugal-e-o-futuro-1974--caused"
+        },
+        {
+          "ref": "portugal-e-o-futuro-1974--carnation-revolution-1974--enabled"
+        },
+        {
+          "ref": "carnation-revolution-1974--alvor-agreement-1975--caused"
+        },
+        {
+          "ref": "alvor-agreement-1975--angola-independence-1975--enabled"
+        },
+        {
+          "ref": "carnation-revolution-1974--constituent-assembly-election-1975--caused"
+        },
+        {
+          "ref": "constituent-assembly-election-1975--25-november-1975--enabled"
+        }
+      ],
+      "summary": "A walk from the first shots in Angola in 1961 to the end of the revolutionary period in November 1975, following one claim: that the Estado Novo was brought down by the war it refused to end, and that the war then went on setting the terms of what replaced it. It is one account among the possible ones — the weight it puts on the army against the weight others put on the economy, on the succession to Salazar or on the opposition inside Portugal is exactly what a second narrative would argue with.",
+      "supersededBy": null,
+      "title": "How the colonial war ended the regime",
+      "window": {
+        "from": 1960,
+        "to": 1976
+      }
+    }
+  ],
   "places": [
     {
       "aliases": [],
