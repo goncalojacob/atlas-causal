@@ -4,8 +4,39 @@ What the Atlas causal is meant to become, structurally. `CLAUDE.md` has the
 rules, `CONTEXT.md` the reasoning, `STATUS.md` where we are right now. This
 file is the target: the shape every milestone builds toward.
 
-Revision 6, 2 September 2026. Sections marked ● exist in v1; things marked ○
+Revision 7, 3 September 2026. Sections marked ● exist in v1; things marked ○
 are reserved by a line in this file only — no folder, no schema, no code.
+
+**What revision 7 changed, and why.** Nothing in the data model of the graph;
+one new directory beside it, and a different shape for the state. Three
+things:
+
+*The mapping of an import is data.* `data/imports/<source>.json`, validated by
+`schema/v1/import-map.json`, says which actor a source's entity becomes and
+where one entity's code is more than one actor over its life. It is not a
+record — no envelope, no kind, not in the topology, never fetched by the
+browser — and it exists so that correcting a territory is a pull request
+against one file rather than a change to `tools/`. The first thing it decided
+is the question revision 6 left open: a colony and the state that followed it
+are **two actors**. CShapes code 750 is `british-india` until 1947-08-15 and
+`republic-of-india` after it. A split date must be a boundary the source
+itself draws, or the import refuses it — an outline was surveyed for one side
+of a date and cannot be moved to the other.
+
+*Time is a window, not a moment.* The state carries `{ from, to }` in place of
+`year`, either end null for "as far as the data goes". The map draws the
+events whose interval **overlaps** the window and the territories of its
+**far end**, because an event is an interval and a border is a state of
+affairs at a moment. The timeline draws the window as a band with a handle at
+each end and keeps its lanes on the whole extent of the data: zooming the
+lanes to the window would leave a handle no room to widen into.
+
+*The map's clustering serves the timeline too*, so `map/cluster.js` becomes
+`cluster.js` and a lane is the same problem in one dimension. `search.js`
+and `search-box.js` are new and reserved-no-longer: the extension-points
+table promised a generated `search-<hash>.json` and it turned out not to be
+needed at this size — the topology already carries every title and every
+name, and scanning a few hundred of them is a keystroke.
 
 **What revision 6 changed, and why.** The `presence` kind moved from ○ to ●,
 and with it `data/presences/`, `data/geo/presences/`,
@@ -95,6 +126,7 @@ atlas-causal/
 │   ├── sources/<id>.json         ● bibliography, shared by reference
 │   ├── actors/<id>.json          ● people, polities, institutions, peoples
 │   ├── presences/<id>.json       ● who held which ground, and when; CC BY-NC-SA when imported
+│   ├── imports/<source>.json     ● which actor a source's entity becomes; not a record, tool-side only
 │   ├── regions.json              ● timeline lanes: id, label, order
 │   ├── geo/
 │   │   ├── LICENSE               ● per-source: Natural Earth = public domain, CShapes = CC BY-NC-SA 4.0
@@ -108,19 +140,22 @@ atlas-causal/
 │
 ├── schema/
 │   ├── v1/event.json  edge.json  source.json  actor.json  presence.json  region.json  bundle.json  ●
+│   ├── v1/import-map.json        ● the shape of data/imports/; checked by tools/validate.mjs only
 │   └── common/interval.json  place.json  provenance.json  confidence.json  ●
 │
 ├── src/
 │   ├── main.js                   ● bootstrap only: load, wire views
-│   ├── state.js                  ● { year, selected, actor, chain, layers } ⇄ URL
+│   ├── state.js                  ● { from, to, selected, actor, chain, layers } ⇄ URL; data-free
 │   ├── data.js                   ● manifest → topology (whole) → record text on demand; lookup tables, adjacency, events by actor
 │   ├── graph.js                  ● consequences, ancestors, convergence; pure functions over adjacency
+│   ├── cluster.js                ● pure: which marks overlap at this zoom, which of them no zoom can part; the timeline uses it in one dimension
+│   ├── search.js                 ● pure: titles and every one of an actor's names, folded and ranked
+│   ├── search-box.js             ● the input, the list and the keys
 │   ├── map/
 │   │   ├── projection.js         ● lon/lat → SVG and back; the only file a projection change touches
-│   │   ├── cluster.js            ● pure: which marks overlap at this zoom, which of them no zoom can part
-│   │   ├── map.js                ● SVG scaffold, pan/zoom, year slider, click into a cluster
+│   │   ├── map.js                ● SVG scaffold, pan/zoom, click into a cluster
 │   │   └── layers/land.js  presences.js  events.js   ●
-│   ├── timeline.js               ● one lane per region; renders only the visible window
+│   ├── timeline.js               ● one lane per region; the window as a band with two handles; bars stack
 │   ├── timeline-scale.js         ● linear now; the scale is injected
 │   ├── panel.js                  ● detail, consequences, convergence, citations, the actor card; confidence and dispute shown as such
 │   ├── contribute/
@@ -131,6 +166,7 @@ atlas-causal/
 │   │   ├── rules.js              ● cross-record rules (arrow of time, DAG, references, consensus, dispute…)
 │   │   └── core.js               ● validate(records, topology) — pure; runs in browser and Node
 │   ├── util/esc.js  dates.js     ● escaping; toAstronomical(), interval formatting, BCE/CE
+│   ├── util/window.js            ● pure: a null bound is the data's own; what overlaps the window; "map at Y"
 │   └── style.css                 ● azulejo tokens
 │
 ├── tools/
@@ -476,10 +512,12 @@ is `land`, `territories`, `events`; a layer switched off costs no fetch.
 | `data.js` | Reads the manifest, loads the topology whole, fetches record text on demand, resolves aliases and `supersededBy` for every kind, builds adjacency, the events of each actor, and each actor's presences and dependencies; loads and caches one geometry shard per year. | How things are drawn. |
 | `graph.js` | Consequences, ancestors, convergence. Pure functions over adjacency; results ordered by type, then confidence. | The DOM. |
 | `map/projection.js` | lon/lat → SVG coordinates and back. | Everything else. |
-| `map/cluster.js` | Groups projected points that overlap at the current zoom, picks each group's representative by `weight`, says which groups no zoom could part and where a group comes apart. Pure. | The DOM, the projection, what a point means. |
+| `cluster.js` | Groups points that overlap at the current zoom, picks each group's representative by `weight`, says which groups no zoom could part and where a group comes apart. Pure, and used in two dimensions by the map and in one by the timeline. | The DOM, the projection, what a point means. |
+| `util/window.js` | Resolves a null bound against the data's extent, says what overlaps the window, and owns the "map at Y" rule. Pure. | The DOM, and which view is asking. |
+| `search.js` + `search-box.js` | Folds and ranks event titles and every one of an actor's names — prefix, then word start, then substring — and draws the result as a combobox. | Anything about the map or the timeline; choosing is a state change. |
 | `map/layers/*` | One layer per thing drawn, in a fixed order: coastlines, then territories, then marks, so an event sits on top of the state it happened in. Renders only records in the visible window. A stack of marks is drawn as one, with a count, and opened by a click. | Each other. |
-| `map/layers/presences.js` | The territories of the year on the slider: a thin line for a state, a lighter one over a stronger wash for a dependency, dashed when disputed. Hover names it and its sovereign; click selects the actor. No colour per polity — two hundred of them share one palette. | Which shard the year is in, or how one is fetched. |
-| `timeline.js` + `timeline-scale.js` | Lanes from `regions.json`; the scale is injected. | Which regions exist. |
+| `map/layers/presences.js` | The territories of the window's far end: a thin line for a state, a lighter one over a stronger wash for a dependency, dashed when disputed. Hover names it and its sovereign; click selects the actor. No colour per polity — two hundred of them share one palette. | Which shard the year is in, or how one is fetched. |
+| `timeline.js` + `timeline-scale.js` | Lanes from `regions.json`; the scale is injected; the window drawn over them as a band with two handles, which is the atlas's only time control. Bars that would overlap stack, and only within the window, so narrowing the band splits them without moving the scale. | Which regions exist. |
 | `panel.js` | Detail, consequences, convergence, supporting and dissenting citations shown apart, confidence and status shown as such; an event's actors with their roles, and an actor's card. | Traversal logic. |
 | `validate/core.js` | `validate(records, topology)`: schema subset + cross-record rules, pure. Needs the topology to check references, so the form loads it too. | `fs`. |
 | `contribute/*` | Form → bundle → validation → clipboard + issue. | GitHub, beyond one URL in `submit.js`. |
@@ -570,6 +608,15 @@ Errors:
     files between them cover every year the presence claims — is in
     `tools/validate.mjs` beside rule 16.
 
+`data/imports/` is not records and has no rule number. `tools/validate.mjs`
+checks it against `schema/v1/import-map.json` and then checks what a shape
+cannot say: the keys are entity codes of the source, a split's dates are real
+and strictly increasing, a split's actor is neither the entry's own nor
+another split's, and a name is not listed twice. Whether a code exists in the
+source at all is checked when the import runs, which is the only place that
+can know, and whether a split date is a boundary the source draws is checked
+there too.
+
 Rules 3, 6, 10, 11 and 12 reach the newer kinds. An actor and a presence
 cite at least one source. An actor's `where` and a presence's `capital`, if
 present, are within WGS84, and neither needs a `region`, having no lane. A
@@ -594,10 +641,12 @@ from two sources of which either may be the wrong one.
 | Ancient / deep time | `timeline-scale.js`, `land-<epoch>` files, manifest | Interval with four bounds and `end: null`; single `toAstronomical()`; manifest lists land by epoch |
 | Territories ● | built in M5: `data/presences/`, `data/geo/presences/`, `schema/v1/presence.json`, rule 17, the topology's `presences`, `layers/presences.js`, `tools/import/` | `presenceType` still has three unused values for diffuse eras; `within: <presence-id>` additive on `where` is untouched |
 | Another geometry import | one file under `tools/import/`, one paragraph in `data/geo/LICENSE`, one line in `IMPORT_AUTHORS` | the licence enum and the per-directory rule; shards named `<from>-<to>.json` and listed in the manifest |
+| A window of time ● | built in M6: `{ from, to }` in `state.js`, `util/window.js`, the band in `timeline.js` | either bound may be null and the views resolve it, so a deeper scale changes `timeline-scale.js` and nothing else |
 | Actors ● | built in M4: `data/actors/`, `schema/v1/actor.json`, rule 14, the topology's `actors`, the card and the highlight | roles still free text; the manifest's `roles` is the evidence for closing the vocabulary |
 | Narratives | `narratives/`, a panel mode | steps reference ids that never change; tombstones keep old ids resolving |
 | Other languages | `data/i18n/`, `src/i18n/` | overlay design with `baseRevised` |
-| Search | `build-index.mjs` emits `search-<hash>.json` | index is generated, so a new output is one function |
+| Search ● | built in M6: `search.js`, `search-box.js`, a box in the header | the reserved `search-<hash>.json` was **not** needed and is still reserved: the topology already carries every title and name, and a few hundred of them is a scan. It becomes necessary when the scan is slow, not before |
+| Another import's mapping | one file under `data/imports/`, validated by the same `v1/import-map.json` | keyed by the source's own entity code; splits by date; the schema is tool-side and the browser never fetches it |
 | Contributors without GitHub | `submit.js` target only | bundle format is the wire format |
 | Tens of thousands of records | render only the visible window; topology stays whole | hashed, immutable index files; manifest uncached |
 | Editorial emphasis on the map | a `prominence` field on the event record; `cluster.js` reads `prominence ?? weight` | ○ reserved by this line: derived `weight` in the index is the only measure now, and it is mechanical |
@@ -622,6 +671,7 @@ the fix is rendering only the visible window, not a map library.
 | M3 | GitHub Pages, `CONTRIBUTING.md`, `about.html`. Site public. | A stranger can read it. |
 | M4 | The `actor` kind end to end — schema, rules, index, panel card and highlight, form, tools, fixtures — and a denser 20th–21st century test dataset to exercise it. | An actor's card lists its events with roles; the dataset validates with no errors; the manifest reports the roles in use. |
 | M5 | The `presence` kind end to end — schema, rule 17, index, the CShapes 2.0 import, the territories layer, the actor card's territory, the attribution. | The map scrubbed from 1886 to 2019 shows borders changing; Portugal's colonies leave as they became independent; hovering names them; clicking opens the actor; the layer switches off; every presence validates; the import is reproducible from the recorded sha256. |
+| M6 | The import's actor mapping as data with splits by date; a window of time in place of a year, with the band on the timeline; stacking on the timeline; search by name. | The six `presence-outside-actor-when` warnings are gone; `data/imports/cshapes-actors.json` splits 750 and 850 and `docs/cshapes-entities.md` lists the rest; the band moves with pointer and keyboard and the URL follows; stacks split as the window narrows; `/`, "sal", Enter opens Salazar. |
 | — | **Opening contributions to strangers**: timing not yet decided (see `STATUS.md`). `CONTEXT.md` argues for waiting until the schema has survived the 1580–1640 test and a few hundred of the owner's own records. | — |
 
 ## Decisions taken
@@ -688,7 +738,22 @@ On 2 September 2026, in the building of M5:
   everything else; who was where is answered by hovering and by clicking,
   not by a legend of two hundred hues.
 
+On 3 September 2026, by the owner, and built in M6:
+
+- **A colony and the state that followed it are two actors.** The question
+  revision 6 left open, answered: CShapes code 750 is `british-india` until
+  1947-08-15 and `republic-of-india` after it, 850 is `dutch-east-indies`
+  until 1945-08-17 and `indonesia` after it. Which of the other 89 codes in
+  the same position are two things and which are one is a historical
+  judgement, and `docs/cshapes-entities.md` is the list to work down.
+- **The actor mapping of an import is data, not code.** `data/imports/`, so a
+  contributor corrects a territory through the ordinary pull-request path and
+  a maintainer re-runs the import. Presences are never edited by hand.
+- **A date disagreement between an outline and a record is said in the
+  record's summary**, not resolved by editing either. The outline is an
+  import and stays as the source has it.
+- **Time is a window, and the timeline's band is the only control that sets
+  it.** The map's year slider is gone.
+
 Open: when contributions open to strangers; whether the role vocabulary
-closes, and to what; whether an entity that was a colony and then a state —
-CShapes gwcode 750 is British India *and* the Republic — should be one
-actor or two.
+closes, and to what; which of the 89 remaining CShapes codes want splitting.
