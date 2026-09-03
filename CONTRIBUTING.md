@@ -73,7 +73,7 @@ resolve. It cannot read. For every record touched:
 ## The record format
 
 One JSON file per record, under `data/events/`, `data/edges/`, `data/actors/`,
-`data/places/`, `data/relations/`, `data/sources/` or `data/presences/`; the id is the file name. The schemas in `schema/v1/` and
+`data/places/`, `data/relations/`, `data/narratives/`, `data/sources/` or `data/presences/`; the id is the file name. The schemas in `schema/v1/` and
 `schema/common/` are authoritative — what follows is a synthetic example, of
 the kind that lives in `tests/fixtures/`, not a historical claim.
 
@@ -235,6 +235,34 @@ Notes that catch people out:
   actors of the same kind. **A relation cites at least one source**, like an
   edge: who belonged to what is argued from evidence. There is no card for a
   relation — it is read on the card of the actor at either end.
+
+- **A narrative is your account of records that are already here**, walked in
+  order. `steps` is a list of `{ ref, text }`: each `ref` is an event id or an
+  edge id, and each `text` is your paragraph on why that step follows. At least
+  two steps, real text at every one (rule 20), and **at least one source**,
+  because a narrative rests on something beyond the records it walks. An
+  optional `window` says which years the atlas opens on.
+
+```json
+{
+  "...envelope",
+  "kind": "narrative",
+  "id": "fixture-narrative-one",
+  "sources": [{ "source": "fixture-source-1", "locator": "pp. 1-10" }],
+  "title": "A synthetic walk from A to T",
+  "summary": "What this account claims, in enough words to count as a claim.",
+  "steps": [
+    { "ref": "fixture-event-a", "text": "Why the walk opens here." },
+    { "ref": "fixture-event-a--fixture-event-b--caused", "text": "Why this step follows." }
+  ],
+  "window": { "from": 1200, "to": 1260 }
+}
+```
+
+  A narrative **changes nothing it walks**. If you think a link is wrong,
+  correct the link; a narrative is not the place to argue with a record from
+  the outside. Two narratives may cross the same period and disagree, and both
+  stand: that is the point of them, and it is why yours is signed.
 
 ## Territories, and the licence they carry
 
