@@ -14,6 +14,13 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-03",
   "revised": null,
+  "review": {
+    "flags": [
+      "date",
+      "figures"
+    ],
+    "note": "Filed in a run that could not reach a source: no date on this record has been checked against one. The summary carries a number that was written from memory. Check it, or take it out."
+  },
   "sources": [
     {
       "source": "cti-2017-2018-fires",

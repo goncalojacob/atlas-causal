@@ -14,6 +14,12 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-02",
   "revised": null,
+  "review": {
+    "flags": [
+      "date"
+    ],
+    "note": "The interval is a convention rather than a date in a document. Decide which it should be and say so in the summary."
+  },
   "sources": [
     {
       "source": "maxwell-1995-making-of-portuguese-democracy",

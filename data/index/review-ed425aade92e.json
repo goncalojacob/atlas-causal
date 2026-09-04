@@ -79,6 +79,12 @@
       "from": "alvaro-cunhal",
       "id": "alvaro-cunhal--pcp--led",
       "kind": "relation",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source."
+      },
       "status": "active",
       "to": "pcp",
       "type": "led"
@@ -148,6 +154,12 @@
       "from": "amilcar-cabral",
       "id": "amilcar-cabral--paigc--led",
       "kind": "relation",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source."
+      },
       "status": "active",
       "to": "paigc",
       "type": "led"
@@ -165,6 +177,12 @@
         "André Ventura",
         "André Claro Amaral Ventura"
       ],
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The birth or founding year, and the end where there is one, were written from memory."
+      },
       "status": "active"
     },
     {
@@ -177,6 +195,12 @@
       "from": "andre-ventura",
       "id": "andre-ventura--chega--led",
       "kind": "relation",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source."
+      },
       "status": "active",
       "to": "chega",
       "type": "led"
@@ -191,6 +215,12 @@
       "from": "andre-ventura",
       "id": "andre-ventura--chega--member-of",
       "kind": "relation",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source."
+      },
       "status": "active",
       "to": "chega",
       "type": "member-of"
@@ -302,6 +332,12 @@
         "António Costa",
         "António Luís Santos da Costa"
       ],
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The birth or founding year, and the end where there is one, were written from memory."
+      },
       "status": "active"
     },
     {
@@ -314,6 +350,12 @@
       "from": "antonio-costa",
       "id": "antonio-costa--partido-socialista--led",
       "kind": "relation",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source."
+      },
       "status": "active",
       "to": "partido-socialista",
       "type": "led"
@@ -328,6 +370,12 @@
       "from": "antonio-costa",
       "id": "antonio-costa--partido-socialista--member-of",
       "kind": "relation",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source."
+      },
       "status": "active",
       "to": "partido-socialista",
       "type": "member-of"
@@ -392,6 +440,12 @@
         "MFA",
         "Movimento dos Capitães"
       ],
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is a convention rather than a date in a document. Decide which it should be and say so in the summary."
+      },
       "status": "active"
     },
     {
@@ -433,6 +487,12 @@
         "Banco de Portugal",
         "Bank of Portugal"
       ],
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The birth or founding year, and the end where there is one, were written from memory."
+      },
       "status": "active"
     },
     {
@@ -463,6 +523,12 @@
         "Banco Espírito Santo",
         "BES"
       ],
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The birth or founding year, and the end where there is one, were written from memory."
+      },
       "status": "active"
     },
     {
@@ -528,6 +594,12 @@
       ],
       "id": "bes-resolution-2014",
       "kind": "event",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "Filed in a run that could not reach a source: no date on this record has been checked against one."
+      },
       "status": "active",
       "title": "Resolution of Banco Espírito Santo"
     },
@@ -545,6 +617,12 @@
         "BE",
         "Left Bloc"
       ],
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The birth or founding year, and the end where there is one, were written from memory."
+      },
       "status": "active"
     },
     {
@@ -570,6 +648,12 @@
       ],
       "id": "botelho-moniz-coup-attempt-1961",
       "kind": "event",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "Written from memory, and STATUS.md lists it among the dates it is least sure of. Check the day, the month and the interval against a source before signing."
+      },
       "status": "active",
       "title": "Botelho Moniz's failed move against Salazar"
     },
@@ -582,6 +666,12 @@
       ],
       "id": "bpn-nationalisation-2008",
       "kind": "event",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "Written from memory, and STATUS.md lists it among the dates it is least sure of. Check the day, the month and the interval against a source before signing."
+      },
       "status": "active",
       "title": "Nationalisation of the Banco Português de Negócios"
     },
@@ -623,6 +713,12 @@
       "from": "british-india",
       "id": "british-india--republic-of-india--succeeded",
       "kind": "relation",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source."
+      },
       "status": "active",
       "to": "republic-of-india",
       "type": "succeeded"
@@ -812,6 +908,12 @@
       ],
       "id": "cavaco-absolute-majority-1987",
       "kind": "event",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "Written from memory, and STATUS.md lists it among the dates it is least sure of. Check the day, the month and the interval against a source before signing."
+      },
       "status": "active",
       "title": "Cavaco Silva's absolute majority"
     },
@@ -840,6 +942,12 @@
       "from": "cavaco-silva",
       "id": "cavaco-silva--psd--led",
       "kind": "relation",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source."
+      },
       "status": "active",
       "to": "psd",
       "type": "led"
@@ -858,6 +966,12 @@
         "CDS-PP",
         "Centro Democrático Social"
       ],
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The birth or founding year, and the end where there is one, were written from memory."
+      },
       "status": "active"
     },
     {
@@ -873,6 +987,12 @@
         "Central Portugal",
         "Portugal central"
       ],
+      "review": {
+        "flags": [
+          "place"
+        ],
+        "note": "A point invented to stand for an area, not a settlement. Either name the place the events happened at or say in the summary what the point stands for."
+      },
       "status": "active"
     },
     {
@@ -901,6 +1021,12 @@
       "names": [
         "Chega"
       ],
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The birth or founding year, and the end where there is one, were written from memory."
+      },
       "status": "active"
     },
     {
@@ -1205,6 +1331,12 @@
       ],
       "id": "constitutional-revision-1959",
       "kind": "event",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "Written from memory, and STATUS.md lists it among the dates it is least sure of. Check the day, the month and the interval against a source before signing."
+      },
       "status": "active",
       "title": "The revision that ends direct presidential elections"
     },
@@ -1217,6 +1349,12 @@
       ],
       "id": "constitutional-revision-1982",
       "kind": "event",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "Written from memory, and STATUS.md lists it among the dates it is least sure of. Check the day, the month and the interval against a source before signing."
+      },
       "status": "active",
       "title": "The revision that abolishes the Council of the Revolution"
     },
@@ -1287,6 +1425,13 @@
       ],
       "id": "costa-resigns-2023",
       "kind": "event",
+      "review": {
+        "flags": [
+          "claim",
+          "date"
+        ],
+        "note": "Filed in a run that could not reach a source: no date on this record has been checked against one. The summary says more than the dates do, and what it adds was written from memory rather than read in a source."
+      },
       "status": "active",
       "title": "António Costa resigns"
     },
@@ -1317,6 +1462,12 @@
         "Council of the Revolution",
         "Conselho da Revolução"
       ],
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is a convention rather than a date in a document. Decide which it should be and say so in the summary."
+      },
       "status": "active"
     },
     {
@@ -1329,6 +1480,12 @@
       "from": "council-of-the-revolution",
       "id": "council-of-the-revolution--third-portuguese-republic--part-of",
       "kind": "relation",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source."
+      },
       "status": "active",
       "to": "third-portuguese-republic",
       "type": "part-of"
@@ -1408,6 +1565,13 @@
       ],
       "id": "covid-state-of-emergency-2020",
       "kind": "event",
+      "review": {
+        "flags": [
+          "claim",
+          "date"
+        ],
+        "note": "Filed in a run that could not reach a source: no date on this record has been checked against one. The summary says more than the dates do, and what it adds was written from memory rather than read in a source."
+      },
       "status": "active",
       "title": "First state of emergency of the pandemic"
     },
@@ -1463,6 +1627,12 @@
       ],
       "id": "delgado-assassinated-1965",
       "kind": "event",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "Written from memory, and STATUS.md lists it among the dates it is least sure of. Check the day, the month and the interval against a source before signing."
+      },
       "status": "active",
       "title": "Humberto Delgado murdered by the PIDE"
     },
@@ -1574,6 +1744,12 @@
       "from": "dutch-east-indies",
       "id": "dutch-east-indies--indonesia--succeeded",
       "kind": "relation",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source."
+      },
       "status": "active",
       "to": "indonesia",
       "type": "succeeded"
@@ -1641,6 +1817,12 @@
         "Eduardo Mondlane",
         "Eduardo Chivambo Mondlane"
       ],
+      "review": {
+        "flags": [
+          "place"
+        ],
+        "note": "The point on this record stands for a region or a seat it is not certain of. Check it, and drop it rather than keep a guess."
+      },
       "status": "active"
     },
     {
@@ -1653,6 +1835,12 @@
       "from": "eduardo-mondlane",
       "id": "eduardo-mondlane--frelimo--led",
       "kind": "relation",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source."
+      },
       "status": "active",
       "to": "frelimo",
       "type": "led"
@@ -1777,6 +1965,12 @@
       "from": "estado-novo",
       "id": "estado-novo--nato--allied-with",
       "kind": "relation",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source."
+      },
       "status": "active",
       "to": "nato",
       "type": "allied-with"
@@ -1791,6 +1985,12 @@
       "from": "estado-novo",
       "id": "estado-novo--portugal--regime-of",
       "kind": "relation",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source."
+      },
       "status": "active",
       "to": "portugal",
       "type": "regime-of"
@@ -1804,6 +2004,12 @@
       ],
       "id": "euro-2016-final",
       "kind": "event",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "Filed in a run that could not reach a source: no date on this record has been checked against one."
+      },
       "status": "active",
       "title": "Portugal wins the European Championship"
     },
@@ -1848,6 +2054,12 @@
         "Banco Central Europeu",
         "BCE"
       ],
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The birth or founding year, and the end where there is one, were written from memory."
+      },
       "status": "active"
     },
     {
@@ -1863,6 +2075,12 @@
         "European Commission",
         "Comissão Europeia"
       ],
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The birth or founding year, and the end where there is one, were written from memory."
+      },
       "status": "active"
     },
     {
@@ -1881,6 +2099,13 @@
         "CEE",
         "Common Market"
       ],
+      "review": {
+        "flags": [
+          "claim",
+          "date"
+        ],
+        "note": "Closing this actor rather than renaming it is an editorial choice nobody has made deliberately; the closing year follows from it."
+      },
       "status": "active"
     },
     {
@@ -1892,6 +2117,12 @@
       ],
       "id": "expo-98",
       "kind": "event",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "Written from memory, and STATUS.md lists it among the dates it is least sure of. Check the day, the month and the interval against a source before signing."
+      },
       "status": "active",
       "title": "Expo 98"
     },
@@ -1904,6 +2135,12 @@
       ],
       "id": "exposicao-mundo-portugues-1940",
       "kind": "event",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "Written from memory, and STATUS.md lists it among the dates it is least sure of. Check the day, the month and the interval against a source before signing."
+      },
       "status": "active",
       "title": "Exhibition of the Portuguese World"
     },
@@ -1916,6 +2153,12 @@
       ],
       "id": "fiftieth-anniversary-25-april-2024",
       "kind": "event",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "Filed in a run that could not reach a source: no date on this record has been checked against one."
+      },
       "status": "active",
       "title": "Fifty years of 25 April"
     },
@@ -1944,6 +2187,12 @@
       "from": "first-portuguese-republic",
       "id": "first-portuguese-republic--portugal--regime-of",
       "kind": "relation",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source."
+      },
       "status": "active",
       "to": "portugal",
       "type": "regime-of"
@@ -1976,6 +2225,12 @@
         "Frente Nacional de Libertação de Angola",
         "National Front for the Liberation of Angola"
       ],
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "A founding year from memory, and for the movements that were founded under another name it is also a question of which year the record should carry."
+      },
       "status": "active"
     },
     {
@@ -1992,6 +2247,13 @@
         "Frente de Libertação de Moçambique",
         "Mozambique Liberation Front"
       ],
+      "review": {
+        "flags": [
+          "date",
+          "place"
+        ],
+        "note": "A founding year from memory, and for the movements that were founded under another name it is also a question of which year the record should carry. The point on this record stands for a region or a seat it is not certain of. Check it, and drop it rather than keep a guess."
+      },
       "status": "active"
     },
     {
@@ -2008,6 +2270,12 @@
         "Frente Revolucionária de Timor-Leste Independente",
         "Revolutionary Front for an Independent East Timor"
       ],
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "A founding year from memory, and for the movements that were founded under another name it is also a question of which year the record should carry."
+      },
       "status": "active"
     },
     {
@@ -2019,6 +2287,12 @@
       ],
       "id": "geringonca-2015",
       "kind": "event",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "Filed in a run that could not reach a source: no date on this record has been checked against one."
+      },
       "status": "active",
       "title": "The PS minority government of 2015"
     },
@@ -2129,6 +2403,12 @@
         "Gomes da Costa",
         "Manuel de Oliveira Gomes da Costa"
       ],
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "STATUS.md names these as the least certain years of the twenty persons in the dataset."
+      },
       "status": "active"
     },
     {
@@ -2140,6 +2420,12 @@
       ],
       "id": "government-falls-2025",
       "kind": "event",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "Filed in a run that could not reach a source: no date on this record has been checked against one."
+      },
       "status": "active",
       "title": "The government loses a confidence vote"
     },
@@ -2304,6 +2590,12 @@
       ],
       "id": "iberian-blackout-2025",
       "kind": "event",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "Filed in a run that could not reach a source: no date on this record has been checked against one."
+      },
       "status": "active",
       "title": "The Iberian blackout"
     },
@@ -2348,6 +2640,12 @@
       ],
       "id": "imf-agreement-1978",
       "kind": "event",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "Written from memory, and STATUS.md lists it among the dates it is least sure of. Check the day, the month and the interval against a source before signing."
+      },
       "status": "active",
       "title": "First stabilisation agreement with the IMF"
     },
@@ -2374,6 +2672,12 @@
       ],
       "id": "imf-agreement-1983",
       "kind": "event",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "Written from memory, and STATUS.md lists it among the dates it is least sure of. Check the day, the month and the interval against a source before signing."
+      },
       "status": "active",
       "title": "Second stabilisation agreement with the IMF"
     },
@@ -2486,6 +2790,12 @@
       "from": "legiao-portuguesa",
       "id": "legiao-portuguesa--estado-novo--part-of",
       "kind": "relation",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source."
+      },
       "status": "active",
       "to": "estado-novo",
       "type": "part-of"
@@ -2499,6 +2809,12 @@
       ],
       "id": "legiao-portuguesa-founded-1936",
       "kind": "event",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "Written from memory, and STATUS.md lists it among the dates it is least sure of. Check the day, the month and the interval against a source before signing."
+      },
       "status": "active",
       "title": "Foundation of the Portuguese Legion"
     },
@@ -2537,6 +2853,12 @@
       ],
       "id": "legislative-election-2015",
       "kind": "event",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "Filed in a run that could not reach a source: no date on this record has been checked against one."
+      },
       "status": "active",
       "title": "Legislative election of 2015"
     },
@@ -2563,6 +2885,12 @@
       ],
       "id": "legislative-election-2019",
       "kind": "event",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "Filed in a run that could not reach a source: no date on this record has been checked against one."
+      },
       "status": "active",
       "title": "Legislative election of 2019"
     },
@@ -2589,6 +2917,12 @@
       ],
       "id": "legislative-election-2022",
       "kind": "event",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "Filed in a run that could not reach a source: no date on this record has been checked against one."
+      },
       "status": "active",
       "title": "Legislative election of 2022"
     },
@@ -2629,6 +2963,13 @@
       ],
       "id": "legislative-election-2024",
       "kind": "event",
+      "review": {
+        "flags": [
+          "date",
+          "figures"
+        ],
+        "note": "Filed in a run that could not reach a source: no date on this record has been checked against one. The summary carries a number that was written from memory. Check it, or take it out."
+      },
       "status": "active",
       "title": "Legislative election of 2024"
     },
@@ -2655,6 +2996,13 @@
       ],
       "id": "legislative-election-2025",
       "kind": "event",
+      "review": {
+        "flags": [
+          "claim",
+          "date"
+        ],
+        "note": "Filed in a run that could not reach a source: no date on this record has been checked against one. The summary says more than the dates do, and what it adds was written from memory rather than read in a source."
+      },
       "status": "active",
       "title": "Legislative election of 2025"
     },
@@ -2699,6 +3047,12 @@
         "Luís Montenegro",
         "Luís Filipe Montenegro"
       ],
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The birth or founding year, and the end where there is one, were written from memory."
+      },
       "status": "active"
     },
     {
@@ -2711,6 +3065,12 @@
       "from": "luis-montenegro",
       "id": "luis-montenegro--psd--led",
       "kind": "relation",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source."
+      },
       "status": "active",
       "to": "psd",
       "type": "led"
@@ -2725,6 +3085,12 @@
       "from": "luis-montenegro",
       "id": "luis-montenegro--psd--member-of",
       "kind": "relation",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source."
+      },
       "status": "active",
       "to": "psd",
       "type": "member-of"
@@ -2811,6 +3177,12 @@
       "from": "marcelo-caetano",
       "id": "marcelo-caetano--estado-novo--led",
       "kind": "relation",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source."
+      },
       "status": "active",
       "to": "estado-novo",
       "type": "led"
@@ -2824,6 +3196,12 @@
       ],
       "id": "marcelo-elected-president-2016",
       "kind": "event",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "Filed in a run that could not reach a source: no date on this record has been checked against one."
+      },
       "status": "active",
       "title": "Marcelo Rebelo de Sousa elected president"
     },
@@ -2840,6 +3218,12 @@
         "Marcelo Rebelo de Sousa",
         "Marcelo"
       ],
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The birth or founding year, and the end where there is one, were written from memory."
+      },
       "status": "active"
     },
     {
@@ -2852,6 +3236,12 @@
       "from": "marcelo-rebelo-de-sousa",
       "id": "marcelo-rebelo-de-sousa--psd--led",
       "kind": "relation",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source."
+      },
       "status": "active",
       "to": "psd",
       "type": "led"
@@ -2866,6 +3256,12 @@
       "from": "marcelo-rebelo-de-sousa",
       "id": "marcelo-rebelo-de-sousa--psd--member-of",
       "kind": "relation",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source."
+      },
       "status": "active",
       "to": "psd",
       "type": "member-of"
@@ -2879,6 +3275,13 @@
       ],
       "id": "marcelo-reelected-2021",
       "kind": "event",
+      "review": {
+        "flags": [
+          "date",
+          "figures"
+        ],
+        "note": "Filed in a run that could not reach a source: no date on this record has been checked against one. The summary carries a number that was written from memory. Check it, or take it out."
+      },
       "status": "active",
       "title": "Marcelo Rebelo de Sousa re-elected"
     },
@@ -2907,6 +3310,12 @@
       "from": "mario-soares",
       "id": "mario-soares--partido-socialista--led",
       "kind": "relation",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source."
+      },
       "status": "active",
       "to": "partido-socialista",
       "type": "led"
@@ -2982,6 +3391,12 @@
       "from": "military-dictatorship",
       "id": "military-dictatorship--portugal--regime-of",
       "kind": "relation",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source."
+      },
       "status": "active",
       "to": "portugal",
       "type": "regime-of"
@@ -2995,6 +3410,12 @@
       ],
       "id": "monarchy-of-the-north-1919",
       "kind": "event",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "Written from memory, and STATUS.md lists it among the dates it is least sure of. Check the day, the month and the interval against a source before signing."
+      },
       "status": "active",
       "title": "The Monarchy of the North"
     },
@@ -3021,6 +3442,12 @@
       ],
       "id": "montenegro-government-2024",
       "kind": "event",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "Filed in a run that could not reach a source: no date on this record has been checked against one."
+      },
       "status": "active",
       "title": "The Montenegro government takes office"
     },
@@ -3078,6 +3505,12 @@
         "Movimento Popular de Libertação de Angola",
         "People's Movement for the Liberation of Angola"
       ],
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "A founding year from memory, and for the movements that were founded under another name it is also a question of which year the record should carry."
+      },
       "status": "active"
     },
     {
@@ -3229,6 +3662,12 @@
       "names": [
         "Novo Banco"
       ],
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The birth or founding year, and the end where there is one, were written from memory."
+      },
       "status": "active"
     },
     {
@@ -3240,6 +3679,13 @@
       ],
       "id": "october-fires-2017",
       "kind": "event",
+      "review": {
+        "flags": [
+          "date",
+          "figures"
+        ],
+        "note": "Filed in a run that could not reach a source: no date on this record has been checked against one. The summary carries a number that was written from memory. Check it, or take it out."
+      },
       "status": "active",
       "title": "The fires of October 2017"
     },
@@ -3272,6 +3718,12 @@
         "Partido Africano para a Independência da Guiné e Cabo Verde",
         "African Party for the Independence of Guinea and Cape Verde"
       ],
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "A founding year from memory, and for the movements that were founded under another name it is also a question of which year the record should carry."
+      },
       "status": "active"
     },
     {
@@ -3287,6 +3739,12 @@
         "Henrique Mitchell de Paiva Couceiro",
         "Paiva Couceiro"
       ],
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "STATUS.md names these as the least certain years of the twenty persons in the dataset."
+      },
       "status": "active"
     },
     {
@@ -3347,6 +3805,12 @@
         "PS",
         "Socialist Party"
       ],
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The birth or founding year, and the end where there is one, were written from memory."
+      },
       "status": "active"
     },
     {
@@ -3363,6 +3827,12 @@
         "PCP",
         "Portuguese Communist Party"
       ],
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The birth or founding year, and the end where there is one, were written from memory."
+      },
       "status": "active"
     },
     {
@@ -3378,6 +3848,12 @@
         "Pedro Passos Coelho",
         "Pedro Manuel Mamede Passos Coelho"
       ],
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The birth or founding year, and the end where there is one, were written from memory."
+      },
       "status": "active"
     },
     {
@@ -3390,6 +3866,12 @@
       "from": "pedro-passos-coelho",
       "id": "pedro-passos-coelho--psd--led",
       "kind": "relation",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source."
+      },
       "status": "active",
       "to": "psd",
       "type": "led"
@@ -3404,6 +3886,12 @@
       "from": "pedro-passos-coelho",
       "id": "pedro-passos-coelho--psd--member-of",
       "kind": "relation",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source."
+      },
       "status": "active",
       "to": "psd",
       "type": "member-of"
@@ -3431,6 +3919,13 @@
       ],
       "id": "pedrogao-grande-fires-2017",
       "kind": "event",
+      "review": {
+        "flags": [
+          "date",
+          "figures"
+        ],
+        "note": "Filed in a run that could not reach a source: no date on this record has been checked against one. The summary carries a number that was written from memory. Check it, or take it out."
+      },
       "status": "active",
       "title": "The Pedrógão Grande fires"
     },
@@ -3476,6 +3971,12 @@
         "Joaquim Pereira Pimenta de Castro",
         "Pimenta de Castro"
       ],
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "STATUS.md names these as the least certain years of the twenty persons in the dataset."
+      },
       "status": "active"
     },
     {
@@ -3487,6 +3988,12 @@
       ],
       "id": "pimenta-de-castro-government-1915",
       "kind": "event",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "Written from memory, and STATUS.md lists it among the dates it is least sure of. Check the day, the month and the interval against a source before signing."
+      },
       "status": "active",
       "title": "Pimenta de Castro's authoritarian government"
     },
@@ -3601,6 +4108,12 @@
         "Partido Popular Democrático",
         "PPD"
       ],
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The birth or founding year, and the end where there is one, were written from memory."
+      },
       "status": "active"
     },
     {
@@ -3632,6 +4145,12 @@
       "from": "pvde-pide-dgs",
       "id": "pvde-pide-dgs--estado-novo--part-of",
       "kind": "relation",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source."
+      },
       "status": "active",
       "to": "estado-novo",
       "type": "part-of"
@@ -3805,6 +4324,12 @@
         "Ricardo Salgado",
         "Ricardo Espírito Santo Silva Salgado"
       ],
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The birth or founding year, and the end where there is one, were written from memory."
+      },
       "status": "active"
     },
     {
@@ -3876,6 +4401,12 @@
       "from": "salazar",
       "id": "salazar--estado-novo--led",
       "kind": "relation",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source."
+      },
       "status": "active",
       "to": "estado-novo",
       "type": "led"
@@ -3941,6 +4472,12 @@
       ],
       "id": "santa-maria-hijacking-1961",
       "kind": "event",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "Written from memory, and STATUS.md lists it among the dates it is least sure of. Check the day, the month and the interval against a source before signing."
+      },
       "status": "active",
       "title": "The seizure of the liner Santa Maria"
     },
@@ -4034,6 +4571,12 @@
       ],
       "id": "soares-elected-president-1986",
       "kind": "event",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "Written from memory, and STATUS.md lists it among the dates it is least sure of. Check the day, the month and the interval against a source before signing."
+      },
       "status": "active",
       "title": "Mário Soares elected president"
     },
@@ -4117,6 +4660,12 @@
       "from": "third-portuguese-republic",
       "id": "third-portuguese-republic--european-economic-community--allied-with",
       "kind": "relation",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source."
+      },
       "status": "active",
       "to": "european-economic-community",
       "type": "allied-with"
@@ -4131,6 +4680,12 @@
       "from": "third-portuguese-republic",
       "id": "third-portuguese-republic--portugal--regime-of",
       "kind": "relation",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source."
+      },
       "status": "active",
       "to": "portugal",
       "type": "regime-of"
@@ -4198,6 +4753,12 @@
       ],
       "id": "troika-programme-ends-2014",
       "kind": "event",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "Filed in a run that could not reach a source: no date on this record has been checked against one."
+      },
       "status": "active",
       "title": "Exit from the adjustment programme"
     },
@@ -4270,6 +4831,12 @@
         "União Nacional para a Independência Total de Angola",
         "National Union for the Total Independence of Angola"
       ],
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "A founding year from memory, and for the movements that were founded under another name it is also a question of which year the record should carry."
+      },
       "status": "active"
     },
     {
@@ -4342,6 +4909,12 @@
       ],
       "id": "wiriyamu-massacre-1972",
       "kind": "event",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "Written from memory, and STATUS.md lists it among the dates it is least sure of. Check the day, the month and the interval against a source before signing."
+      },
       "status": "active",
       "title": "The Wiriyamu massacre"
     },
@@ -4354,6 +4927,12 @@
       ],
       "id": "world-youth-day-2023",
       "kind": "event",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "Filed in a run that could not reach a source: no date on this record has been checked against one."
+      },
       "status": "active",
       "title": "World Youth Day in Lisbon"
     }

@@ -14,6 +14,12 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-02",
   "revised": null,
+  "review": {
+    "flags": [
+      "date"
+    ],
+    "note": "STATUS.md names these as the least certain years of the twenty persons in the dataset."
+  },
   "sources": [
     {
       "source": "meneses-2004-portugal-1914-1926",
