@@ -5868,6 +5868,51 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "doi": null,
+      "id": "wikidata",
+      "isbn": null,
+      "kind": "source",
+      "status": "active",
+      "title": "Wikidata",
+      "type": "dataset"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "doi": null,
+      "id": "wikipedia-en",
+      "isbn": null,
+      "kind": "source",
+      "status": "active",
+      "title": "Wikipedia, English edition",
+      "type": "web"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "doi": null,
+      "id": "wikipedia-pt",
+      "isbn": null,
+      "kind": "source",
+      "status": "active",
+      "title": "Wikipedia, Portuguese edition",
+      "type": "web"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
       "cites": [
         "macqueen-1997-decolonization"
       ],
@@ -5905,7 +5950,7 @@
     }
   ],
   "schema": 1,
-  "total": 567,
+  "total": 570,
   "warnings": [
     {
       "id": "euro-2016-final",
@@ -5918,6 +5963,24 @@
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"
+    },
+    {
+      "id": "wikidata",
+      "kind": "source",
+      "message": "source is cited by nothing under validation",
+      "rule": "no-citers"
+    },
+    {
+      "id": "wikipedia-en",
+      "kind": "source",
+      "message": "source is cited by nothing under validation",
+      "rule": "no-citers"
+    },
+    {
+      "id": "wikipedia-pt",
+      "kind": "source",
+      "message": "source is cited by nothing under validation",
+      "rule": "no-citers"
     }
   ]
 }

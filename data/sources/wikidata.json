@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "id": "wikidata",
+  "kind": "source",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "type": "dataset",
+  "creators": [
+    "Wikidata contributors"
+  ],
+  "title": "Wikidata",
+  "year": null,
+  "publisher": "Wikimedia Foundation; the data is released under CC0 1.0",
+  "isbn": null,
+  "doi": null,
+  "url": "https://www.wikidata.org/",
+  "accessed": "2026-09-04",
+  "repository": null,
+  "reference": null
+}

@@ -1,3 +1,28 @@
+Records under data/ are licensed CC BY-SA 4.0. The full text follows, and
+this notice is not part of it.
+
+Third-party material these records point at
+  Wikidata (data/sources/wikidata.json)
+    The item ids, article titles and sitelink counts that records carry in
+    their optional `wikidata`, `wikipedia` and `sitelinks` fields are read
+    off Wikidata, whose data is released under CC0 1.0 — a public-domain
+    dedication, which CC BY-SA 4.0 absorbs without difficulty in the
+    direction it is used here. https://www.wikidata.org/
+
+  Wikipedia (data/sources/wikipedia-en.json, data/sources/wikipedia-pt.json)
+    Wikipedia's text is licensed CC BY-SA 4.0, the same licence as these
+    records, so quoting it would be possible with attribution — but no
+    record here holds any of it. What is stored is an article *title*, which
+    is a name and not the article, and the atlas links out to the article
+    rather than reproducing it. Nothing under data/ is derived from
+    Wikipedia's prose. https://en.wikipedia.org/ · https://pt.wikipedia.org/
+
+  Geometry is licensed separately, file by file: see data/geo/LICENSE. The
+  CC BY-NC-SA material described there is NOT covered by this licence and is
+  never merged into a record under this one.
+
+=======================================================================
+
 Attribution-ShareAlike 4.0 International
 
 =======================================================================

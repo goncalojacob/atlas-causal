@@ -45,7 +45,10 @@ test('a source card lists exactly as many citers as the index counts', async () 
   for (const source of atlas.sources.values()) {
     const html = sourceCardHtml(ctx, source);
     assert.equal(rowsIn(html), source.citationCount, `${source.id}: a citer the card could not draw`);
-    assert.match(html, new RegExp(`What cites it <span class="count">${source.citationCount}</span>`));
+    // A source nothing cites yet — the Wikimedia records are written before
+    // the import that will cite them — says so instead of counting to zero.
+    if (source.citationCount === 0) assert.match(html, /Nothing in the atlas cites this source yet/);
+    else assert.match(html, new RegExp(`What cites it <span class="count">${source.citationCount}</span>`));
   }
   // And the atlas really does have a source with a lot of them: the check
   // above would pass on an empty bibliography.
