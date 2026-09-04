@@ -52,6 +52,22 @@ export const RELATION_ENDPOINTS = Object.freeze({
 // part of a state that is a regime of it in no sense, and mixing the types
 // would forbid arrangements that are merely unusual.
 export const ACYCLIC_RELATION_TYPES = Object.freeze(['regime-of', 'succeeded']);
+// The identity a record may claim on Wikidata, and the kinds that may claim
+// one: a Wikidata item is about a thing in the world, which an event, an
+// actor and a place are, and an edge and a narrative are not — those are
+// arguments about things, and nobody else's database has an item for them.
+export const IDENTITY_KINDS = Object.freeze(['event', 'actor', 'place']);
+export const WIKIDATA_ID = /^Q[1-9][0-9]*$/;
+// A Wikipedia language edition as Wikipedia itself writes it: "en", "pt",
+// "pt-br", "zh-hans". It is checked because it becomes a hostname.
+export const WIKIPEDIA_LANG = /^[a-z]{2,3}(-[a-z0-9]{2,8})*$/;
+// The source records that *are* Wikipedia. An edge may not call itself
+// consensus resting on these alone (rule 22): an encyclopedia reports what
+// the scholarship says, so an argument that cites nothing else has not shown
+// the scholarship. Adding an edition adds a line here, exactly as adding an
+// import adds one to IMPORT_AUTHORS; nothing else can quietly become an
+// authority.
+export const WIKIPEDIA_SOURCES = Object.freeze(['wikipedia-en', 'wikipedia-pt']);
 export const PRESENCE_TYPES = Object.freeze(['state', 'polity', 'sphere-of-influence', 'archaeological-culture']);
 export const DEPENDENCY_KINDS = Object.freeze(['colony', 'protectorate', 'mandate', 'occupied']);
 export const ALLOWED_LICENSES = Object.freeze({
@@ -131,6 +147,14 @@ function citations(record) {
   for (const c of record.sources ?? []) list.push(c.source);
   if (isObject(record.dispute)) for (const c of record.dispute.sources ?? []) list.push(c.source);
   return list;
+}
+
+// The distinct sources a record rests on, supporting and dissenting alike:
+// what a reviewer has to open and check, and therefore what the per-citation
+// verification flags are keyed by. A book cited twice in one record is one
+// book to go and read.
+export function citedSources(record) {
+  return [...new Set(citations(record ?? {}).filter((id) => typeof id === 'string'))];
 }
 
 export function checkRules(records, topology = {}) {
@@ -217,6 +241,16 @@ export function checkRules(records, topology = {}) {
       (r.dispute.sources ?? []).forEach((c, i) => {
         if (!lookup(c.source, 'source')) error(3, r, `/dispute/sources/${i}/source`, `"${c.source}" is not a source record`);
       });
+    }
+    // A per-citation verification flag is keyed by the source it is about, so
+    // a key naming something this record does not cite says nothing about
+    // this record — usually a citation that was edited away and left its
+    // flag behind, which would then count as checked for ever.
+    if (isObject(r.review?.citations)) {
+      const cited = new Set(citedSources(r));
+      for (const key of Object.keys(r.review.citations)) {
+        if (!cited.has(key)) error(3, r, `/review/citations/${key}`, `"${key}" is not a source this record cites`);
+      }
     }
     if (r.supersededBy !== null && r.supersededBy !== undefined) {
       if (r.supersededBy === r.id) error(3, r, '/supersededBy', 'a record cannot supersede itself');
@@ -722,6 +756,62 @@ export function checkRules(records, topology = {}) {
       const from = checkBound(r, '/window/from', r.window.from);
       const to = checkBound(r, '/window/to', r.window.to);
       if (from && to && from.min > to.max) error(20, r, '/window', 'the window opens after it closes');
+    }
+  }
+
+  // --- rule 21: the identity a record claims ------------------------------
+  // Three optional fields that say which item in Wikidata this record is
+  // about. They are identifiers and not evidence: what the atlas asserts is
+  // in the record, and this only says where the same thing is catalogued
+  // elsewhere, so that an import can find a record again and a reader can go
+  // and read the article. Two records of one kind claiming one item is the
+  // mistake worth catching — it means one of them is a duplicate.
+  {
+    const claimants = new Map();
+    for (const u of universe.values()) {
+      if (typeof u.entry.wikidata !== 'string') continue;
+      const key = `${u.kind} ${u.entry.wikidata}`;
+      if (!claimants.has(key)) claimants.set(key, []);
+      claimants.get(key).push(u.entry.id);
+    }
+    for (const r of own) {
+      const hasItem = typeof r.wikidata === 'string';
+      if ((hasItem || isObject(r.wikipedia) || Number.isInteger(r.sitelinks)) && !IDENTITY_KINDS.includes(r.kind)) {
+        error(21, r, '/wikidata', `a ${r.kind} has no Wikidata item: only ${IDENTITY_KINDS.join(', ')} records do`);
+        continue;
+      }
+      if (hasItem) {
+        const others = (claimants.get(`${r.kind} ${r.wikidata}`) ?? []).filter((id) => id !== r.id).sort();
+        if (others.length) {
+          error(21, r, '/wikidata', `"${r.wikidata}" is already the Wikidata item of the ${r.kind} ${others.join(', ')}`);
+        }
+      }
+      if (isObject(r.wikipedia)) {
+        // A title with no item behind it is a guess about which article is
+        // meant, and the link on the card would be that guess made public.
+        if (!hasItem) error(21, r, '/wikipedia', 'a Wikipedia title is written beside the Wikidata item it belongs to, never on its own');
+        for (const lang of Object.keys(r.wikipedia)) {
+          // The code becomes a hostname on the card, so it is checked here
+          // rather than trusted there.
+          if (!WIKIPEDIA_LANG.test(lang)) error(21, r, `/wikipedia/${lang}`, `"${lang}" is not a language edition code`);
+        }
+      }
+    }
+  }
+
+  // --- rule 22: an argument does not rest on an encyclopedia alone --------
+  // `consensus` says the link is accepted by the scholarship. An
+  // encyclopedia reports scholarship rather than being it, so an edge whose
+  // every supporting citation is a Wikipedia record has not shown that the
+  // scholarship agrees — only that somebody summarised it. Deliberately not
+  // folded into rule 9: that rule asks whether two authors are independent,
+  // and this one asks what kind of thing was cited, which stays true however
+  // many editions are named.
+  for (const r of own) {
+    if (r.kind !== 'edge' || r.confidence !== 'consensus') continue;
+    const cited = (r.sources ?? []).map((c) => c?.source).filter((id) => typeof id === 'string');
+    if (cited.length && cited.every((id) => WIKIPEDIA_SOURCES.includes(id))) {
+      error(22, r, '/sources', 'consensus cannot rest on Wikipedia alone: cite the scholarship the article rests on, or mark the link probable');
     }
   }
 

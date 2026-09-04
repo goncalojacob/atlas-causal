@@ -146,6 +146,19 @@ export function citationsBySource(records) {
   return out;
 }
 
+// The identity a record claims, for the topology. `wikidata` is carried
+// because rule 21's uniqueness has to hold against the whole atlas and not
+// only against the bundle in hand, and `wikipedia` because the card offers
+// the link without fetching the record. `sitelinks` stays out: nothing drawn
+// reads it, and putting a number nobody uses in the index every reader
+// downloads would be paying for it twice.
+function identityOf(record) {
+  const out = {};
+  if (typeof record.wikidata === 'string') out.wikidata = record.wikidata;
+  if (isObject(record.wikipedia)) out.wikipedia = record.wikipedia;
+  return out;
+}
+
 // Where a record sits and which lane that puts it in: the override on the
 // record wins, then the polygon the point falls in, then the nearest lane
 // within tolerance.
@@ -185,6 +198,7 @@ export function buildTopology(records, regions, { deriveRegion } = {}) {
       names: r.names ?? [],
       where: isObject(r.where) ? r.where : null,
       ...laneOf(r, r.where, deriveRegion),
+      ...identityOf(r),
       status: r.status,
       supersededBy: r.supersededBy ?? null,
       aliases: r.aliases ?? [],
@@ -207,6 +221,7 @@ export function buildTopology(records, regions, { deriveRegion } = {}) {
         place: typeof r.place === 'string' ? r.place : null,
         region,
         regionMethod,
+        ...identityOf(r),
         status: r.status,
         supersededBy: r.supersededBy ?? null,
         aliases: r.aliases ?? [],
@@ -235,6 +250,7 @@ export function buildTopology(records, regions, { deriveRegion } = {}) {
         name: (r.names ?? [])[0] ?? r.id,
         names: r.names ?? [],
         when: r.when,
+        ...identityOf(r),
         status: r.status,
         supersededBy: r.supersededBy ?? null,
         aliases: r.aliases ?? [],

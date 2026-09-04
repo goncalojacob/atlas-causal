@@ -18,6 +18,9 @@
     "created": { "$ref": "../common/provenance.json#/properties/created" },
     "revised": { "$ref": "../common/provenance.json#/properties/revised" },
     "review": { "$ref": "../common/provenance.json#/properties/review" },
+    "wikidata": { "$ref": "../common/provenance.json#/properties/wikidata" },
+    "wikipedia": { "$ref": "../common/provenance.json#/properties/wikipedia" },
+    "sitelinks": { "$ref": "../common/provenance.json#/properties/sitelinks" },
     "sources": { "$ref": "../common/provenance.json#/properties/sources" },
     "title": { "type": "string", "minLength": 1, "maxLength": 200 },
     "summary": {

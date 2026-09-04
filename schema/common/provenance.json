@@ -81,8 +81,50 @@
             { "type": "null" },
             { "type": "string", "minLength": 1, "maxLength": 500 }
           ]
+        },
+        "citations": {
+          "description": "Which of this record's citations a person has opened and checked against the source itself, keyed by the cited source's id (rule 3 checks the key is a source the record cites). A citation with no entry here has not been checked; the validator counts those and Sign warns about them without blocking. Never a claim about the world — only about how far this record has been read.",
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "required": ["verified"],
+            "additionalProperties": false,
+            "properties": {
+              "verified": {
+                "description": "Who checked this citation and on what day; null is a citation somebody looked at and did not confirm, which is not the same as one nobody has opened.",
+                "oneOf": [
+                  { "type": "null" },
+                  {
+                    "type": "object",
+                    "required": ["by", "on"],
+                    "additionalProperties": false,
+                    "properties": {
+                      "by": { "type": "string", "minLength": 1, "maxLength": 120 },
+                      "on": { "$ref": "#/properties/created" }
+                    }
+                  }
+                ]
+              }
+            }
+          }
         }
       }
+    },
+    "wikidata": {
+      "description": "The Wikidata item this record is about: Q followed by digits. Optional and additive — written by the import, or derived by the contribution form from a pasted Wikidata URL — and unique among records of the same kind (rule 21). It is an identifier and never a source: what the atlas asserts is in the record.",
+      "type": "string",
+      "pattern": "^Q[1-9][0-9]*$",
+      "maxLength": 20
+    },
+    "wikipedia": {
+      "description": "Language code to article title: { \"en\": \"Carnation Revolution\" }. Allowed only beside a wikidata id (rule 21), because a title with no item behind it is a guess about which article is meant. Written by the import.",
+      "type": "object",
+      "additionalProperties": { "type": "string", "minLength": 1, "maxLength": 300 }
+    },
+    "sitelinks": {
+      "description": "How many language editions have an article for the item. A stored fact for an editorial decision nobody has taken: it feeds neither prominence nor weight, and the map's measure stays the derived weight (ARCHITECTURE.md).",
+      "type": "integer",
+      "minimum": 0
     },
     "sources": {
       "description": "Citations. A citation points at a source record by id, with an optional locator (page, chapter, folio).",
