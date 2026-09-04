@@ -1182,6 +1182,28 @@
       "authors": [
         {
           "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-teixeira-2019-political-institutions"
+      ],
+      "from": "1998-portuguese-abortion-referendum",
+      "id": "1998-portuguese-abortion-referendum--2007-portuguese-abortion-referendum--reacted-to",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "2007-portuguese-abortion-referendum",
+      "type": "reacted-to"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
@@ -1225,6 +1247,243 @@
       },
       "status": "active",
       "to": "macau-handover-1999",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-teixeira-2019-political-institutions",
+        "telo-2007-historia-contemporanea",
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "2001-portuguese-local-elections",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "2001 Portuguese local elections"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-teixeira-2019-political-institutions",
+        "telo-2007-historia-contemporanea"
+      ],
+      "from": "2001-portuguese-local-elections",
+      "id": "2001-portuguese-local-elections--2002-portuguese-legislative-election--caused",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "2002-portuguese-legislative-election",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-teixeira-2019-political-institutions",
+        "telo-2007-historia-contemporanea",
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "2002-portuguese-legislative-election",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "2002 Portuguese legislative election"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-teixeira-2019-political-institutions",
+        "telo-2007-historia-contemporanea"
+      ],
+      "from": "2002-portuguese-legislative-election",
+      "id": "2002-portuguese-legislative-election--2005-portuguese-legislative-election--caused",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "2005-portuguese-legislative-election",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-teixeira-2019-political-institutions",
+        "telo-2007-historia-contemporanea",
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "2005-portuguese-legislative-election",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "2005 Portuguese legislative election"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-teixeira-2019-political-institutions",
+        "telo-2007-historia-contemporanea"
+      ],
+      "from": "2005-portuguese-legislative-election",
+      "id": "2005-portuguese-legislative-election--2007-portuguese-abortion-referendum--caused",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "2007-portuguese-abortion-referendum",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-teixeira-2019-political-institutions",
+        "telo-2007-historia-contemporanea",
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "2007-portuguese-abortion-referendum",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "2007 Portuguese abortion referendum"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-teixeira-2019-political-institutions",
+        "imf-2016-portugal-ex-post-evaluation",
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "2009-portuguese-legislative-election",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "2009 Portuguese legislative election"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-teixeira-2019-political-institutions",
+        "imf-2016-portugal-ex-post-evaluation"
+      ],
+      "from": "2009-portuguese-legislative-election",
+      "id": "2009-portuguese-legislative-election--troika-bailout-2011--precondition-of",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "troika-bailout-2011",
       "type": "precondition-of"
     },
     {
@@ -8359,134 +8618,8 @@
     }
   ],
   "schema": 1,
-  "total": 875,
+  "total": 880,
   "warnings": [
-    {
-      "id": "1998-portuguese-abortion-referendum",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2000-azorean-regional-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2000-madeiran-regional-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2001-portuguese-local-elections",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2001-portuguese-presidential-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2002-portuguese-legislative-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2004-azorean-regional-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2004-european-parliament-election-in-portugal",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2004-madeiran-regional-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2005-portuguese-legislative-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2005-portuguese-local-elections",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2006-portuguese-presidential-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2007-lisbon-local-elections",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2007-madeiran-regional-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2007-portuguese-abortion-referendum",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2008-azorean-regional-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2009-european-parliament-election-in-portugal",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2009-lisbon-local-elections",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2009-porto-local-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2009-portuguese-legislative-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2009-portuguese-local-elections",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
     {
       "id": "2011-madeiran-regional-election",
       "kind": "event",
@@ -8824,12 +8957,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "espirito-santo-bank-of-campolide-robbery",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
       "id": "hurricane-leslie",
       "kind": "event",
       "message": "event has no edges",
@@ -8860,18 +8987,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "murder-of-joana-cipriano",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "portuguese-european-constitution-referendum",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
       "id": "resolute-support-mission",
       "kind": "event",
       "message": "event has no edges",
@@ -8884,18 +8999,6 @@
       "rule": "place-unused"
     },
     {
-      "id": "sismo-de-portugal-de-2009",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "telecoms-package",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
       "id": "tragedia-de-borba",
       "kind": "event",
       "message": "event has no edges",
@@ -8903,12 +9006,6 @@
     },
     {
       "id": "treaty-establishing-the-european-stability-mechanism",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "treaty-of-lisbon",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"

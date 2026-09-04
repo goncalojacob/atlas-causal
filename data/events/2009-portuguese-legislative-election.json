@@ -9,14 +9,19 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "summary-drafted"
     ]
   },
   "wikidata": "Q1228693",
@@ -27,12 +32,28 @@
   },
   "sources": [
     {
+      "source": "costa-pinto-teixeira-2019-political-institutions",
+      "locator": null
+    },
+    {
+      "source": "imf-2016-portugal-ex-post-evaluation",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"2009 Portuguese legislative election\", revision 1369111843"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Eleições legislativas portuguesas de 2009\", revision 71998337"
+    },
+    {
       "source": "wikidata",
-      "locator": "Q1228693"
+      "locator": null
     }
   ],
   "title": "2009 Portuguese legislative election",
-  "summary": "Wikidata item Q1228693, imported by tools/import/wikidata.mjs. The item's own description reads \"election in Portugal\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The election of 27 September 2009 returned the Socialists to office without the majority they had held since 2005, ninety-seven seats of two hundred and thirty. The government that followed spent eighteen months legislating austerity packages through an Assembly that did not owe it a majority, and in March 2011 the fourth of them was rejected by every opposition party at once; the prime minister resigned and, six weeks later, asked the European Union and the International Monetary Fund for assistance. It is in the atlas as the arithmetic behind the request of 2011: a minority government, a deficit the markets had stopped funding, and a parliament that would not carry the measures either way.",
   "when": {
     "start": 2009,
     "end": 2009,
@@ -40,5 +61,14 @@
   },
   "place": null,
   "region": "europe",
-  "actors": []
+  "actors": [
+    {
+      "actor": "partido-socialista",
+      "role": "returned without a majority"
+    },
+    {
+      "actor": "psd",
+      "role": "in opposition"
+    }
+  ]
 }

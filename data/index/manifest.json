@@ -1,7 +1,7 @@
 {
   "counts": {
     "actors": 326,
-    "edges": 135,
+    "edges": 140,
     "events": 326,
     "narratives": 1,
     "places": 25,
@@ -11,9 +11,9 @@
     "sources": 34
   },
   "files": {
-    "review": "index/review-9ae70dad8953.json",
-    "sources": "index/sources-8a669ac384f0.json",
-    "topology": "index/topology-83816529f660.json"
+    "review": "index/review-4afb55f56895.json",
+    "sources": "index/sources-e6018fcf4829.json",
+    "topology": "index/topology-d007f3a3420a.json"
   },
   "land": [
     {
@@ -99,6 +99,7 @@
     "borrower",
     "broke up the opposition campaign",
     "called the election as his opening",
+    "called the referendum and legislated on the result",
     "came first and formed a minority government",
     "came first and led the government",
     "campaigned against",
@@ -136,6 +137,7 @@
     "incumbent",
     "invader",
     "invoked",
+    "junior partner",
     "junior partner in the bloco central",
     "king in whose name it was called",
     "king, killed in the attack",
@@ -148,6 +150,7 @@
     "lender",
     "lost office",
     "lost office after ten years",
+    "lost the main cities and the government",
     "movement",
     "nationalised it",
     "negotiated and signed for portugal",
@@ -184,6 +187,7 @@
     "resolution authority",
     "resolved",
     "restored",
+    "returned without a majority",
     "sheltered and armed the gunmen",
     "signatory",
     "signed as prime minister",
@@ -220,6 +224,8 @@
     "won a majority of the new assembly",
     "won a second absolute majority",
     "won and formed a minority government",
+    "won its first absolute majority",
+    "won lisbon and porto",
     "younger son, succeeded to the throne"
   ],
   "schema": 1

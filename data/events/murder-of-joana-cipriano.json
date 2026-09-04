@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "murder-of-joana-cipriano",
   "kind": "event",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,11 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "m22-retracted"
+    ],
+    "note": "Retracted in M22: the killing of Joana Cipriano at Figueira, in the Algarve, in September 2004, and the investigation and trial that followed it. The case mattered here for what it did to the reputation of the Judiciary Police and to the argument about confessions, none of which the atlas holds. There is nothing for it to attach to in either direction."
   },
   "wikidata": "Q264468",
   "sitelinks": 7,

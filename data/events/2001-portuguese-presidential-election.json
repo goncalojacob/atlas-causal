@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "2001-portuguese-presidential-election",
   "kind": "event",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,11 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "m22-retracted"
+    ],
+    "note": "Retracted in M22: the presidential election of 14 January 2001, at which Jorge Sampaio was re-elected for a second term. As with the re-elections of 1980 and 1991, the atlas holds nothing the result can be argued to have changed. Sampaio's second term contains the dismissal of the Santana Lopes government in November 2004, which the atlas does hold — through the election of 2005 that it caused — but the dismissal belongs to the president, not to the ballot that put him back."
   },
   "wikidata": "Q3131667",
   "sitelinks": 7,

@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "portuguese-european-constitution-referendum",
   "kind": "event",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,11 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "m22-retracted"
+    ],
+    "note": "Retracted in M22: this is a referendum that never happened. It was planned for 9 October 2005 on ratifying the Treaty establishing a Constitution for Europe, and was abandoned after the French and Dutch votes of that summer killed the treaty. The atlas holds events that occurred; a cancelled ballot is a fact about a government's calendar. What could be written instead is the abandonment itself, as part of the Portuguese presidency of 2007 and the treaty that replaced the constitution."
   },
   "wikidata": "Q3454893",
   "sitelinks": 2,

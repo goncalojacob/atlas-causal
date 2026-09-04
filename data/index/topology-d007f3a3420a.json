@@ -5507,11 +5507,61 @@
     {
       "aliases": [],
       "confidence": "probable",
+      "from": "1998-portuguese-abortion-referendum",
+      "id": "1998-portuguese-abortion-referendum--2007-portuguese-abortion-referendum--reacted-to",
+      "status": "active",
+      "supersededBy": null,
+      "to": "2007-portuguese-abortion-referendum",
+      "type": "reacted-to"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
       "from": "1999-macanese-chief-executive-election",
       "id": "1999-macanese-chief-executive-election--macau-handover-1999--precondition-of",
       "status": "active",
       "supersededBy": null,
       "to": "macau-handover-1999",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "2001-portuguese-local-elections",
+      "id": "2001-portuguese-local-elections--2002-portuguese-legislative-election--caused",
+      "status": "active",
+      "supersededBy": null,
+      "to": "2002-portuguese-legislative-election",
+      "type": "caused"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "2002-portuguese-legislative-election",
+      "id": "2002-portuguese-legislative-election--2005-portuguese-legislative-election--caused",
+      "status": "active",
+      "supersededBy": null,
+      "to": "2005-portuguese-legislative-election",
+      "type": "caused"
+    },
+    {
+      "aliases": [],
+      "confidence": "consensus",
+      "from": "2005-portuguese-legislative-election",
+      "id": "2005-portuguese-legislative-election--2007-portuguese-abortion-referendum--caused",
+      "status": "active",
+      "supersededBy": null,
+      "to": "2007-portuguese-abortion-referendum",
+      "type": "caused"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "2009-portuguese-legislative-election",
+      "id": "2009-portuguese-legislative-election--troika-bailout-2011--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "troika-bailout-2011",
       "type": "precondition-of"
     },
     {
@@ -8790,7 +8840,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "1998 Portuguese abortion referendum",
-      "weight": 1,
+      "weight": 2,
       "when": {
         "calendar": "gregorian",
         "date": "1998-06-28",
@@ -8901,7 +8951,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "2000 Azorean regional election",
       "weight": 0,
@@ -8923,7 +8973,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "2000 Madeiran regional election",
       "weight": 0,
@@ -8939,7 +8989,16 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "partido-socialista",
+          "role": "lost the main cities and the government"
+        },
+        {
+          "actor": "psd",
+          "role": "won Lisbon and Porto"
+        }
+      ],
       "aliases": [],
       "id": "2001-portuguese-local-elections",
       "place": null,
@@ -8948,7 +9007,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "2001 Portuguese local elections",
-      "weight": 0,
+      "weight": 3,
       "when": {
         "date": "2001-12-16",
         "end": 2001,
@@ -8967,7 +9026,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "2001 Portuguese presidential election",
       "weight": 0,
@@ -8983,7 +9042,20 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "psd",
+          "role": "came first and led the government"
+        },
+        {
+          "actor": "cds-pp",
+          "role": "junior partner"
+        },
+        {
+          "actor": "partido-socialista",
+          "role": "lost office"
+        }
+      ],
       "aliases": [],
       "id": "2002-portuguese-legislative-election",
       "place": null,
@@ -8992,7 +9064,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "2002 Portuguese legislative election",
-      "weight": 0,
+      "weight": 5,
       "when": {
         "date": "2002-03-17",
         "end": 2002,
@@ -9011,7 +9083,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "2004 Azorean regional election",
       "weight": 0,
@@ -9033,7 +9105,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "2004 European Parliament election in Portugal",
       "weight": 0,
@@ -9055,7 +9127,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "2004 Madeiran regional election",
       "weight": 0,
@@ -9071,7 +9143,16 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "partido-socialista",
+          "role": "won its first absolute majority"
+        },
+        {
+          "actor": "psd",
+          "role": "lost office"
+        }
+      ],
       "aliases": [],
       "id": "2005-portuguese-legislative-election",
       "place": null,
@@ -9080,7 +9161,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "2005 Portuguese legislative election",
-      "weight": 0,
+      "weight": 4,
       "when": {
         "date": "2005-02-20",
         "end": 2005,
@@ -9099,7 +9180,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "2005 Portuguese local elections",
       "weight": 0,
@@ -9121,7 +9202,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "2006 Portuguese presidential election",
       "weight": 0,
@@ -9143,7 +9224,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "2007 Lisbon local elections",
       "weight": 0,
@@ -9165,7 +9246,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "2007 Madeiran regional election",
       "weight": 0,
@@ -9181,7 +9262,16 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "third-portuguese-republic",
+          "role": "the state putting the question"
+        },
+        {
+          "actor": "partido-socialista",
+          "role": "called the referendum and legislated on the result"
+        }
+      ],
       "aliases": [],
       "id": "2007-portuguese-abortion-referendum",
       "place": null,
@@ -9190,7 +9280,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "2007 Portuguese abortion referendum",
-      "weight": 0,
+      "weight": 4,
       "when": {
         "date": "2007-02-11",
         "end": 2007,
@@ -9209,7 +9299,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "2008 Azorean regional election",
       "weight": 0,
@@ -9231,7 +9321,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "2009 European Parliament election in Portugal",
       "weight": 0,
@@ -9253,7 +9343,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "2009 Lisbon local elections",
       "weight": 0,
@@ -9275,7 +9365,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "2009 Porto local election",
       "weight": 0,
@@ -9291,7 +9381,16 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "partido-socialista",
+          "role": "returned without a majority"
+        },
+        {
+          "actor": "psd",
+          "role": "in opposition"
+        }
+      ],
       "aliases": [],
       "id": "2009-portuguese-legislative-election",
       "place": null,
@@ -9300,7 +9399,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "2009 Portuguese legislative election",
-      "weight": 0,
+      "weight": 3,
       "when": {
         "date": "2009-09-27",
         "end": 2009,
@@ -9319,7 +9418,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "2009 Portuguese local elections",
       "weight": 0,
@@ -12181,7 +12280,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "Espírito Santo Bank of Campolide robbery",
       "weight": 0,
@@ -13432,7 +13531,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "murder of Joana Cipriano",
       "weight": 0,
@@ -13735,7 +13834,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "Portuguese European Constitution referendum",
       "weight": 0,
@@ -14268,7 +14367,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "Sismo de Portugal de 2009",
       "weight": 0,
@@ -14347,7 +14446,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "Telecoms Package",
       "weight": 0,
@@ -14474,7 +14573,7 @@
       "place": "lisbon",
       "region": "europe",
       "regionMethod": "inside",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "Treaty of Lisbon",
       "weight": 0,
@@ -14532,7 +14631,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Request for financial assistance",
-      "weight": 8,
+      "weight": 9,
       "when": {
         "calendar": "gregorian",
         "date": "2011-04-06",

@@ -9,14 +9,19 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "summary-drafted"
     ]
   },
   "wikidata": "Q250247",
@@ -27,12 +32,28 @@
   },
   "sources": [
     {
+      "source": "costa-pinto-teixeira-2019-political-institutions",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"2007 Portuguese abortion referendum\", revision 1372123133"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Referendo à despenalização do aborto em Portugal (2007)\", revision 71782356"
+    },
+    {
       "source": "wikidata",
-      "locator": "Q250247"
+      "locator": null
     }
   ],
   "title": "2007 Portuguese abortion referendum",
-  "summary": "Wikidata item Q250247, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "Portugal was asked again on 11 February 2007 whether abortion at the woman's request up to ten weeks should cease to be a crime, and this time the yes won, with about fifty-nine per cent. Turnout was under a half, so the result was again not binding; the Assembly legislated on it anyway, and the law of April 2007 ended the criminal provision. It is in the atlas as the answer to the question of 1998 — the same question, nine years and one generation apart, decided the other way and by a margin nobody disputed.",
   "when": {
     "start": 2007,
     "end": 2007,
@@ -40,5 +61,14 @@
   },
   "place": null,
   "region": "europe",
-  "actors": []
+  "actors": [
+    {
+      "actor": "third-portuguese-republic",
+      "role": "the state putting the question"
+    },
+    {
+      "actor": "partido-socialista",
+      "role": "called the referendum and legislated on the result"
+    }
+  ]
 }

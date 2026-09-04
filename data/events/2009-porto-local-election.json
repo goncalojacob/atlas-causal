@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "2009-porto-local-election",
   "kind": "event",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,11 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "m22-retracted"
+    ],
+    "note": "Retracted in M22: the Porto municipal election of 11 October 2009. The import brought several single-municipality ballots as records of their own, alongside the national local election of the same day. The atlas has no level between the country and the place, and a municipal result with no consequence recorded here has nothing to attach to in either direction. Revisit if a mayoralty is ever written as an actor."
   },
   "wikidata": "Q48866840",
   "sitelinks": 2,

@@ -9,14 +9,19 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "summary-drafted"
     ]
   },
   "wikidata": "Q18471358",
@@ -27,12 +32,28 @@
   },
   "sources": [
     {
+      "source": "costa-pinto-teixeira-2019-political-institutions",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"2001 Portuguese local elections\", revision 1361853776"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Eleições autárquicas portuguesas de 2001\", revision 72533533"
+    },
+    {
       "source": "wikidata",
-      "locator": "Q18471358"
+      "locator": null
     }
   ],
   "title": "2001 Portuguese local elections",
-  "summary": "Wikidata item Q18471358, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "Local elections were held on 16 December 2001 for the chambers and assemblies of 308 municipalities and more than four thousand parishes. The Socialists lost Lisbon and Porto and much else, and António Guterres, prime minister since 1995, resigned the same night rather than govern on; the president dissolved the Assembly and called an early election for March. It is in the atlas as the only local election in the democratic period to bring down a national government — the clearest case there is that the second arena the constitution of 1976 created is not a lesser one.",
   "when": {
     "start": 2001,
     "end": 2001,
@@ -40,5 +61,14 @@
   },
   "place": null,
   "region": "europe",
-  "actors": []
+  "actors": [
+    {
+      "actor": "partido-socialista",
+      "role": "lost the main cities and the government"
+    },
+    {
+      "actor": "psd",
+      "role": "won Lisbon and Porto"
+    }
+  ]
 }

@@ -1,0 +1,34 @@
+{
+  "schema": 1,
+  "id": "1998-portuguese-abortion-referendum--2007-portuguese-abortion-referendum--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "costa-pinto-teixeira-2019-political-institutions",
+      "locator": null
+    }
+  ],
+  "from": "1998-portuguese-abortion-referendum",
+  "to": "2007-portuguese-abortion-referendum",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The referendum of 2007 is the same question as that of 1998, put again because the first answer had settled nothing: a margin of two points, on a turnout of under a third, against a law the Assembly had already passed. Both sides read 1998 as unfinished — the yes because it had lost narrowly on an abstention it blamed on the date and the campaign, the no because it had won without the turnout that would have bound anyone. Nine years is a long reaction, and the edge is `reacted-to` rather than `caused` for that reason: what 1998 produced was not the second ballot but the certainty that there would have to be one.",
+  "dispute": null
+}

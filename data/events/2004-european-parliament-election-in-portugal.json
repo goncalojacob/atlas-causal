@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "2004-european-parliament-election-in-portugal",
   "kind": "event",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,11 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "m22-retracted"
+    ],
+    "note": "Retracted in M22: the European Parliament election of 13 June 2004 in Portugal. The atlas keeps the first exercise of an institution and the ballot at which it became a cycle, and retracts the routine repetitions after them; the fifth European election is one. The only link available is the constitutional one the earlier records already carry. Revisit if a consequence is written."
   },
   "wikidata": "Q959901",
   "sitelinks": 9,

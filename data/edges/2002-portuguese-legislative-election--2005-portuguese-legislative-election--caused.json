@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "2002-portuguese-legislative-election--2005-portuguese-legislative-election--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "costa-pinto-teixeira-2019-political-institutions",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    }
+  ],
+  "from": "2002-portuguese-legislative-election",
+  "to": "2005-portuguese-legislative-election",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The legislature this election returned should have run to 2006 and ran to 2005, and the reason is inside it. Durão Barroso left the government he led for the European Commission in July 2004; Santana Lopes took over without going back to the country; and in November President Sampaio dismissed the government — using, for the only time in the democratic period, the power to dissolve against a majority that still had one. The early election of February 2005 is the direct consequence of a prime minister leaving mid-term, and that is what the edge argues.",
+  "dispute": null
+}

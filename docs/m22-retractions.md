@@ -241,3 +241,63 @@ regionalisation referendum it called), `1998-portuguese-abortion-referendum`,
 The abortion referendum also carries a correction: the import dated it
 8 June 1998 from the Wikidata item, both cached leads give 28 June, and the
 record now says the 28th with a `date` flag on it.
+
+---
+
+## 2000s — 21 of 26 retracted, none merged, 5 wired
+
+The five that stayed make one chain, and it is the best thing M22 found: the
+local election of December 2001 brings down Guterres, the early election of
+March 2002 follows, Barroso leaves it for Brussels, the president dismisses
+his successor, the early election of 2005 gives the Socialists their first
+absolute majority, that majority holds the abortion referendum it promised in
+2007, and the answer of 2007 is the answer to the question of 1998. The last
+of the five, the election of 2009, is the arithmetic behind the request for
+assistance in 2011.
+
+**Repetitions, thirteen records.** Local elections of 2005 and 2009; European
+elections of 2004 and 2009; Azorean regional elections of 2000, 2004 and 2008;
+Madeiran of 2000, 2004 and 2007; and three single-municipality ballots —
+Lisbon in 2007 and 2009, Porto in 2009 — which the import brought as records
+of their own beside the national election of the same day. The atlas has no
+level between the country and the place: a municipal result with no recorded
+consequence has nothing to attach to.
+
+**Two presidential elections.** `2001-portuguese-presidential-election`
+(Sampaio re-elected) and `2006-portuguese-presidential-election` (Cavaco Silva
+elected, the first president of the democratic period to come from the right).
+Sampaio's second term contains the dismissal of the Santana Lopes government,
+which the atlas does hold — through the 2005 election it caused — but the
+dismissal belongs to the president, not to the ballot that put him back.
+Cavaco's presidency spans the bailout and is entirely unwritten here.
+
+**A referendum that never happened.** `portuguese-european-constitution-referendum`
+was planned for 9 October 2005 and abandoned when the French and Dutch votes
+killed the treaty that summer. The atlas holds events that occurred. What
+could be written is the abandonment itself.
+
+**Two acts of the Union.** `treaty-of-lisbon` — signed at the Jerónimos on
+13 December 2007, during the Portuguese presidency — and `telecoms-package`.
+The venue rule of the 1990s applies to a treaty that carries the city's name
+as much as to one that does not: it is an act of twenty-seven states, and the
+record the atlas is missing is the Portuguese presidency of 2007, not the
+treaty. This is the retraction in M22 most likely to be argued with.
+
+**Three events with nothing to reach.** `espirito-santo-bank-of-campolide-robbery`
+(the atlas holds the bank and its resolution in 2014; a branch robbery has
+nothing to do with either, and wiring them would be a pun on the name),
+`murder-of-joana-cipriano` (what it changed was the standing of the Judiciary
+Police and the argument about confessions, neither of which is here) and
+`sismo-de-portugal-de-2009` (a third earthquake with no recorded consequence).
+
+### Wired
+
+`2001-portuguese-local-elections`, `2002-portuguese-legislative-election`,
+`2005-portuguese-legislative-election`, `2007-portuguese-abortion-referendum`,
+`2009-portuguese-legislative-election`. Five edges, four of them inside the
+chain above.
+
+The local election of 2001 is the answer to a doubt the 1980s section raised:
+a repetition stops being a repetition the moment something follows from it,
+and this is the only local election in the democratic period to bring down a
+national government.
