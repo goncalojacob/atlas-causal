@@ -285,6 +285,16 @@ export function createForm(container, { topology, schemas, template, fixtures = 
     input.value = entry.values[field.key] ?? '';
     input.addEventListener('input', () => {
       entry.values[field.key] = input.value;
+      // A field that knows how to read what was pasted into it says so in
+      // the input: the contributor pastes the Wikidata URL of an item and
+      // sees the Q-number it became, rather than finding out at submit.
+      if (field.derive) {
+        const derived = field.derive(input.value);
+        if (derived !== input.value) {
+          entry.values[field.key] = derived;
+          input.value = derived;
+        }
+      }
       if (field.key === 'id') entry.idTouched = true;
       if (field.key === TITLE_KEY[entry.kind] && !entry.idTouched) {
         entry.values.id = slugify(input.value.split(';')[0]);

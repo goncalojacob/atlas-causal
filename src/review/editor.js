@@ -78,6 +78,32 @@ export function choicesFrom(topology) {
   };
 }
 
+// What the import wrote about this record's identity, shown and not offered
+// for editing: the article titles and how many language editions have one.
+// A reviewer's job here is to see whether the item is the right one — a
+// wrong title is corrected on Wikidata and re-imported, never typed in.
+// Returns null when the record claims nothing, so a record the import has
+// not touched looks exactly as it did before.
+export function identityBlock(record) {
+  const titles = record?.wikipedia && typeof record.wikipedia === 'object' ? Object.entries(record.wikipedia) : [];
+  const count = Number.isInteger(record?.sitelinks) ? record.sitelinks : null;
+  if (titles.length === 0 && count === null) return null;
+  const wrap = html('div', { class: 'field identity' });
+  wrap.appendChild(html('span', { class: 'citations-label' }, 'From the import'));
+  const list = html('ul', { class: 'identity-rows' });
+  for (const [lang, title] of titles) {
+    const row = html('li', {});
+    row.append(html('span', { class: 'lang' }, lang), html('span', { class: 'title' }, title));
+    list.appendChild(row);
+  }
+  if (count !== null) {
+    list.appendChild(html('li', { class: 'muted' }, `${count} language edition${count === 1 ? '' : 's'} have an article`));
+  }
+  wrap.appendChild(list);
+  wrap.appendChild(html('p', { class: 'hint' }, 'Read-only: written by the Wikidata import, and corrected there rather than here.'));
+  return wrap;
+}
+
 // record: the file as it is on disk. onChange is called after every edit,
 // with the validation result, so the page can enable or disable Save.
 export function createEditor({ record, topology, schemas, onChange = () => {} }) {
@@ -128,6 +154,10 @@ export function createEditor({ record, topology, schemas, onChange = () => {} })
       input = html('input', { type: 'text', id });
     }
     input.value = values[field.key] ?? '';
+    // What a record is catalogued as elsewhere is not corrected by editing
+    // this atlas: the identity fields are shown so a reviewer can check that
+    // the item is the right one, and changed by re-running the import.
+    if (field.identity) input.readOnly = true;
     input.addEventListener('input', () => {
       values[field.key] = input.value;
       applyVisibility();
@@ -204,6 +234,8 @@ export function createEditor({ record, topology, schemas, onChange = () => {} })
   }
 
   for (const field of FIELDS[kind]) root.appendChild(renderField(field));
+  const identity = identityBlock(record);
+  if (identity) root.appendChild(identity);
   for (const list of ACTOR_LISTS[kind]) {
     root.appendChild(renderList(list, {
       optionsName: 'actors', refKey: 'actor', textKey: 'role', label: list.label,

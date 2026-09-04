@@ -6,7 +6,7 @@ import assert from 'node:assert/strict';
 import {
   FIELDS, CITATION_LISTS, ACTOR_LISTS, STEP_LISTS, emptyValues, slugify, parseBound, buildRecord, buildBundle,
   findSimilar, similarity, checkBundleShape, validateBundle, everythingCited,
-  valuesFromRecord, applyValues,
+  valuesFromRecord, applyValues, wikidataFrom,
 } from '../src/contribute/bundle.js';
 import { buildTopology } from '../src/validate/core.js';
 import { createValidator } from '../src/validate/schema.js';
@@ -375,6 +375,51 @@ test('an edit replaces the field and leaves the envelope alone', async () => {
   // The id is immutable once merged: everything that points here points at it.
   const renamed = applyValues('event', record, { ...values, id: 'fixture-event-renamed' });
   assert.equal(renamed.id, record.id);
+});
+
+// The identity fields are added here before any record carries them, so that
+// the day the import writes one, a save through the dashboard or the form
+// does not quietly drop it (docs/review-2026-09-04-plan.md, finding 5).
+test('a record carrying every identity field round-trips byte identical', async () => {
+  const { byId } = await fixtures();
+  for (const kind of ['event', 'actor', 'place']) {
+    const base = Object.values(byId).find((r) => r.kind === kind);
+    assert.ok(base, `a fixture ${kind}`);
+    const record = {
+      ...base,
+      wikidata: 'Q11',
+      wikipedia: { en: `Fixture article for ${base.id}`, 'pt-br': 'Artigo de fixture' },
+      sitelinks: 3,
+      review: {
+        flags: ['date'],
+        note: 'a synthetic note',
+        citations: Object.fromEntries((base.sources ?? []).map((c) => [c.source, { verified: { by: 'A Reviewer', on: '2026-09-04' } }])),
+      },
+    };
+    const back = applyValues(kind, record, valuesFromRecord(kind, record));
+    assert.deepEqual(back, record, kind);
+    assert.equal(JSON.stringify(back, null, 2), JSON.stringify(record, null, 2), `${kind}, byte for byte`);
+  }
+});
+
+test('the wikidata field takes the item out of a pasted URL, and guesses nothing', () => {
+  assert.equal(wikidataFrom('https://www.wikidata.org/wiki/Q186496'), 'Q186496');
+  assert.equal(wikidataFrom('http://wikidata.org/entity/Q42'), 'Q42');
+  assert.equal(wikidataFrom('https://www.wikidata.org/wiki/Special:EntityPage/Q42'), 'Q42');
+  assert.equal(wikidataFrom('  q42  '), 'Q42');
+  assert.equal(wikidataFrom('Q42'), 'Q42');
+  assert.equal(wikidataFrom(''), '');
+  assert.equal(wikidataFrom(null), '');
+  // A Wikipedia article URL carries a title and no item: it comes back as
+  // typed, and the schema reports it, rather than a Q-number being invented.
+  assert.equal(wikidataFrom('https://en.wikipedia.org/wiki/Lisbon'), 'https://en.wikipedia.org/wiki/Lisbon');
+  assert.equal(wikidataFrom('https://evil.example.com/wiki/Q42'), 'https://evil.example.com/wiki/Q42');
+
+  const record = buildRecord('event', { ...eventValues, wikidata: 'https://www.wikidata.org/wiki/Q7' }, CONTEXT);
+  assert.equal(record.wikidata, 'Q7');
+  // A blank field writes no key at all: a record with no identity looks
+  // exactly as it did before these fields existed.
+  assert.equal(Object.hasOwn(buildRecord('event', eventValues, CONTEXT), 'wikidata'), false);
 });
 
 // What the draft asks to have looked at is the envelope's, not the editor's:

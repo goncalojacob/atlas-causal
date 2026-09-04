@@ -15,9 +15,39 @@ export const CONFIDENCE = Object.freeze(['consensus', 'probable', 'disputed']);
 export const SOURCE_TYPES = Object.freeze(['book', 'chapter', 'article', 'thesis', 'primary', 'dataset', 'web']);
 export const PRECISION = Object.freeze(['point', 'city', 'region']);
 
+// The Wikidata item id out of whatever was pasted: the id on its own, or a
+// Wikidata URL in the shapes the site hands out. A *Wikipedia* article URL
+// carries no item id — a title is not an item — so it comes back exactly as
+// typed and the schema reports it at /wikidata, rather than this function
+// guessing a Q-number from a title. Guessing an identifier is how two
+// records end up claiming one item.
+export function wikidataFrom(text) {
+  const t = typeof text === 'string' ? text.trim() : '';
+  if (t === '') return '';
+  const url = /^https?:\/\/(?:www\.)?wikidata\.org\/(?:wiki|entity)\/(?:Special:EntityPage\/)?(Q[1-9][0-9]*)(?:[#?/].*)?$/i.exec(t);
+  if (url) return url[1].toUpperCase();
+  return /^[Qq][1-9][0-9]*$/.test(t) ? t.toUpperCase() : t;
+}
+
+// The one identity field a person may write. `wikipedia` and `sitelinks` are
+// the import's — a title and a count are read off Wikidata, not typed — so
+// they never appear in a form and are carried through a save untouched
+// (IDENTITY_KEYS, below).
+const WIKIDATA_FIELD = Object.freeze({
+  key: 'wikidata',
+  label: 'Wikidata item',
+  input: 'text',
+  path: '/wikidata',
+  identity: true,
+  derive: wikidataFrom,
+  hint: 'optional: paste the item\'s Wikidata URL and the Q-number is taken from it. An identifier, never a source — the argument stays in the record',
+});
+
 // Field descriptors. `path` is the JSON pointer the validator reports for
 // that field, which is how an error finds its way back to the input that
 // caused it. `optionsFrom` is filled at render time from the topology.
+// `identity` marks a field the review dashboard shows read-only: what a
+// record is catalogued as elsewhere is not corrected by editing this atlas.
 export const FIELDS = Object.freeze({
   event: Object.freeze([
     { key: 'title', label: 'Title', input: 'text', path: '/title', required: true },
@@ -30,6 +60,7 @@ export const FIELDS = Object.freeze({
     { key: 'endDate', label: 'Exact end date', input: 'text', path: '/when/endDate', hint: 'only for something that ran between two known days, in the same shape and calendar as the exact date' },
     { key: 'place', label: 'Place', input: 'select', optionsFrom: 'places', path: '/place', hint: 'a place record, chosen by name; add one below if it is not there yet. Leave it empty for a long process with no honest point' },
     { key: 'region', label: 'Timeline lane', input: 'select', optionsFrom: 'regions', path: '/region', hint: 'derived from the place; set it only when the derivation would be wrong, and always when there is no place' },
+    WIKIDATA_FIELD,
   ]),
   place: Object.freeze([
     { key: 'names', label: 'Names', input: 'text', path: '/names', required: true, hint: 'the display name first, then variants and other-language forms, separated by semicolons: Lisbon; Lisboa' },
@@ -39,6 +70,7 @@ export const FIELDS = Object.freeze({
     { key: 'precision', label: 'Precision', input: 'select', options: PRECISION, path: '/where/precision' },
     { key: 'region', label: 'Timeline lane', input: 'select', optionsFrom: 'regions', path: '/region', hint: 'derived from the coordinates; set it only when the derivation would be wrong' },
     { key: 'summary', label: 'Summary', input: 'textarea', path: '/summary', hint: 'optional, and written by you when it is there' },
+    WIKIDATA_FIELD,
   ]),
   edge: Object.freeze([
     { key: 'from', label: 'From', input: 'select', optionsFrom: 'events', path: '/from', required: true },
@@ -59,6 +91,7 @@ export const FIELDS = Object.freeze({
     { key: 'lon', label: 'Longitude', input: 'text', path: '/where/lon', hint: 'WGS84, east positive' },
     { key: 'lat', label: 'Latitude', input: 'text', path: '/where/lat', hint: 'WGS84, north positive' },
     { key: 'precision', label: 'Precision', input: 'select', options: PRECISION, path: '/where/precision' },
+    WIKIDATA_FIELD,
   ]),
   relation: Object.freeze([
     { key: 'from', label: 'From', input: 'select', optionsFrom: 'actors', path: '/from', required: true, hint: 'the regime, the body, the person: the end the type is written from' },
@@ -243,6 +276,17 @@ function envelope(kind, id, { author = '', today = '1970-01-01' } = {}) {
   };
 }
 
+// The identity a record claims, on the kinds that may claim one. Only
+// `wikidata` is ever typed: `wikipedia` and `sitelinks` are the import's and
+// reach a saved record through IDENTITY_KEYS, never through a form. An empty
+// field writes no key at all, so a record without an identity looks exactly
+// as it did before these fields existed.
+function withIdentity(record, values) {
+  const item = wikidataFrom(values.wikidata);
+  if (item !== '') record.wikidata = item;
+  return record;
+}
+
 export function buildRecord(kind, values, context = {}) {
   const v = values ?? {};
   if (kind === 'event') {
@@ -251,7 +295,7 @@ export function buildRecord(kind, values, context = {}) {
     if (trimmed(v.date) !== '') when.date = trimmed(v.date);
     if (trimmed(v.calendar) !== '') when.calendar = trimmed(v.calendar);
     if (trimmed(v.endDate) !== '') when.endDate = trimmed(v.endDate);
-    return {
+    return withIdentity({
       ...envelope('event', trimmed(v.id), context),
       sources: citationsOf(v.citations),
       title: trimmed(v.title),
@@ -260,12 +304,12 @@ export function buildRecord(kind, values, context = {}) {
       place: orNull(v.place),
       region: orNull(v.region),
       actors: actorsOf(v.actors),
-    };
+    }, v);
   }
 
   if (kind === 'place') {
     const names = trimmed(v.names).split(';').map((s) => s.trim()).filter(Boolean);
-    return {
+    return withIdentity({
       ...envelope('place', trimmed(v.id), context),
       sources: [],
       names,
@@ -274,13 +318,13 @@ export function buildRecord(kind, values, context = {}) {
       where: { lon: parseNumber(v.lon), lat: parseNumber(v.lat), precision: trimmed(v.precision) || 'city', label: names[0] ?? '' },
       region: orNull(v.region),
       summary: orNull(v.summary),
-    };
+    }, v);
   }
 
   if (kind === 'actor') {
     const start = parseBound(v.start);
     const hasPlace = [v.lon, v.lat, v.label].some((x) => trimmed(x) !== '');
-    return {
+    return withIdentity({
       ...envelope('actor', trimmed(v.id), context),
       sources: citationsOf(v.citations),
       actorType: trimmed(v.actorType),
@@ -290,7 +334,7 @@ export function buildRecord(kind, values, context = {}) {
       where: hasPlace
         ? { lon: parseNumber(v.lon), lat: parseNumber(v.lat), precision: trimmed(v.precision) || 'city', label: trimmed(v.label) }
         : null,
-    };
+    }, v);
   }
 
   if (kind === 'edge') {
@@ -407,6 +451,10 @@ export function valuesFromRecord(kind, record) {
   const r = record ?? {};
   const values = emptyValues(kind);
   if (CITATION_LISTS[kind].some((l) => l.key === 'citations')) values.citations = citationValues(r.sources);
+  // The item id as it is on the record: the field accepts a URL, and what
+  // comes back out of it is what was stored, so a save that changed nothing
+  // writes the same bytes.
+  if (FIELDS[kind].some((f) => f.key === 'wikidata')) values.wikidata = r.wikidata ?? '';
 
   if (kind === 'event') {
     const when = isObject(r.when) ? r.when : {};
@@ -530,6 +578,13 @@ export function valuesFromRecord(kind, record) {
 // checking, and only signing the record answers it.
 const ENVELOPE_KEYS = Object.freeze(['schema', 'id', 'kind', 'status', 'supersededBy', 'aliases', 'authors', 'license', 'created', 'revised', 'review']);
 
+// The identity fields no form writes. They are read off Wikidata by the
+// import, so a save through the contribution form or the review dashboard
+// carries them across untouched rather than dropping them — a field the
+// editor cannot see is a field the editor must not delete. `wikidata` is not
+// here: it is a field of its own, and buildRecord writes what was typed.
+const IDENTITY_KEYS = Object.freeze(['wikipedia', 'sitelinks']);
+
 // Rebuild `built` in the key order of `original`, recursively, so that a save
 // that changed nothing produces the same bytes. Keys the original does not
 // have go last, in the order buildRecord wrote them.
@@ -549,7 +604,7 @@ function orderLike(built, original) {
 // values, the envelope from what was already on disk.
 export function applyValues(kind, record, values) {
   const built = buildRecord(kind, values, {});
-  for (const key of ENVELOPE_KEYS) {
+  for (const key of [...ENVELOPE_KEYS, ...IDENTITY_KEYS]) {
     if (Object.hasOwn(record ?? {}, key)) built[key] = record[key];
   }
   // A place's point carries a label, which buildRecord sets from the display
