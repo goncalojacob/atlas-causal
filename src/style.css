@@ -533,3 +533,55 @@ svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align:
 .contrib .submit-row { margin-top: 1rem; }
 .contrib .submit { font-size: 1rem; padding: 0.4rem 0.9rem; }
 .contrib .submit-note { color: var(--ink-soft); margin: 0.4rem 0 0; }
+
+/* --- the review dashboard (review.html) -------------------------------- */
+/* Not part of the atlas: a maintainer's page, unlinked, and the only one
+   with two working columns — the queue stays put while a record is read. */
+
+.review-page { max-width: none; }
+.review-page .narrow { max-width: 46rem; }
+.dashboard-mount { margin-top: 1.5rem; }
+.review { display: grid; grid-template-columns: minmax(16rem, 22rem) minmax(0, 1fr); gap: 1.5rem; align-items: start; }
+
+.queue { position: sticky; top: 1rem; max-height: calc(100vh - 2rem); overflow: auto; border: 1px solid var(--line); background: var(--paper); padding: 0.75rem; }
+.queue .progress { margin: 0 0 0.5rem; font-family: var(--font); font-size: 0.95rem; }
+.queue .progress.good { color: var(--cobalt); }
+.queue-search { width: 100%; padding: 0.3rem 0.4rem; border: 1px solid var(--line); background: var(--ground); color: var(--ink); font-family: var(--font-ui); }
+.queue-search:focus { outline: 2px solid var(--cobalt-soft); background: var(--paper); }
+.queue-filters { display: flex; flex-wrap: wrap; gap: 0.3rem; margin-top: 0.5rem; }
+.chip {
+  border: 1px solid var(--line); background: var(--ground); color: var(--ink-soft);
+  font-family: var(--font-ui); font-size: 0.78rem; padding: 0.1rem 0.45rem; border-radius: 999px; cursor: pointer;
+}
+.chip:hover { border-color: var(--cobalt-soft); color: var(--cobalt); }
+.chip.on { background: var(--cobalt); border-color: var(--cobalt); color: var(--paper); }
+.queue-kind { font-family: var(--font-ui); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-soft); margin: 0.9rem 0 0.2rem; }
+.queue-items { list-style: none; margin: 0; padding: 0; }
+.queue-item {
+  display: block; width: 100%; text-align: left; border: 0; border-left: 3px solid transparent;
+  background: none; color: var(--ink); font-family: var(--font-ui); font-size: 0.85rem;
+  padding: 0.25rem 0.4rem; cursor: pointer;
+}
+.queue-item:hover { background: var(--cobalt-faint); }
+.queue-item.current { border-left-color: var(--madder); background: var(--madder-faint); }
+.queue-item .queue-label { display: block; }
+.queue-item .queue-id { display: block; color: var(--ink-soft); font-size: 0.75rem; }
+.queue-item .flag, .record-flags {
+  display: inline-block; margin: 0.15rem 0.2rem 0 0; padding: 0 0.35rem;
+  border: 1px solid var(--madder); color: var(--madder); font-size: 0.7rem; border-radius: 2px;
+}
+
+.record { min-width: 0; }
+.record-head h2 { font-family: var(--font); font-weight: normal; color: var(--cobalt); margin: 0; }
+.record-id { color: var(--ink-soft); font-family: var(--font-ui); font-size: 0.8rem; margin: 0.1rem 0 0.4rem; }
+.review-note { border-left: 3px solid var(--madder); background: var(--madder-faint); margin: 0.4rem 0; padding: 0.4rem 0.6rem; font-family: var(--font); }
+.record-flags { border-style: dashed; }
+.record .editor { margin-top: 0.75rem; }
+.record .sign-box { margin-top: 1rem; }
+.record-actions { display: flex; align-items: baseline; gap: 0.75rem; margin-top: 1rem; }
+.save-note { color: var(--ink-soft); margin: 0.5rem 0 0; }
+
+@media (max-width: 900px) {
+  .review { grid-template-columns: 1fr; }
+  .queue { position: static; max-height: 22rem; }
+}

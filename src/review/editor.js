@@ -1,0 +1,281 @@
+// The editor half of the review dashboard: one record, every field the
+// contribution form has for its kind, validated against the atlas on every
+// keystroke. The field definitions are the form's own — FIELDS,
+// CITATION_LISTS, ACTOR_LISTS and STEP_LISTS in src/contribute/bundle.js —
+// so a field added for contributors appears here without being added twice.
+//
+// What this does not do is what tells it apart from the form: it never
+// invents an id, never searches for near-matches, and never writes the
+// envelope. It opens a record that exists, replaces the fields a person
+// edited, and hands back the record — `created`, `aliases`, `supersededBy`
+// and `authors` exactly as they were on disk (applyValues), because only
+// Sign and Retract may touch those.
+
+import { html } from '../util/dom.js';
+import {
+  FIELDS, CITATION_LISTS, ACTOR_LISTS, STEP_LISTS, valuesFromRecord, applyValues, validateBundle,
+} from '../contribute/bundle.js';
+
+// The error at /where/lon belongs to the longitude input, the one at
+// /sources/0/source to the citation list: walk up the path until a field
+// claims it. The same rule as the form's, and for the same reason — an error
+// nobody claims is shown against the record instead of being lost.
+export function claim(fields, path) {
+  let p = path ?? '';
+  for (;;) {
+    if (fields.has(p)) return fields.get(p);
+    const cut = p.lastIndexOf('/');
+    if (cut < 0) break;
+    p = p.slice(0, cut);
+  }
+  if (path) for (const [key, view] of fields) if (key.startsWith(`${path}/`)) return view;
+  return null;
+}
+
+// A blank required field says "required" rather than repeating the schema's
+// "none of the alternatives matched", which is true and useless.
+export function messageOf(error, view) {
+  if (view?.field?.required && view.input && view.input.value.trim() === '') return 'required';
+  const deeper = (error.alternatives ?? []).find((alt) => alt.some((e) => (e.path ?? '').length > (error.path ?? '').length));
+  if (deeper) return deeper.map((e) => e.message).join('; ');
+  return error.message;
+}
+
+// The lists a select offers, out of the topology alone. The form has to add
+// what is in the bundle being written; here everything a reference may point
+// at is already in the atlas.
+export function choicesFrom(topology) {
+  const active = (list) => (list ?? []).filter((r) => r?.status === 'active');
+  const byLabel = (a, b) => (a.label < b.label ? -1 : a.label > b.label ? 1 : 0);
+  const titleOf = (id) => (topology.events ?? []).find((e) => e.id === id)?.title ?? id;
+
+  const events = () => active(topology.events).map((e) => ({ value: e.id, label: e.title ?? e.id })).sort(byLabel);
+  const records = () => [
+    ...events(),
+    ...active(topology.edges).map((e) => ({ value: e.id, label: `${titleOf(e.from)} — ${e.type} → ${titleOf(e.to)}` })),
+  ];
+
+  return (name) => {
+    if (name === 'events') return [{ value: '', label: '— choose an event —' }, ...events()];
+    if (name === 'records') return [{ value: '', label: '— choose an event or a link —' }, ...records()];
+    if (name === 'sources') {
+      return [{ value: '', label: '— choose a source —' },
+        ...active(topology.sources).map((s) => ({ value: s.id, label: `${s.id} — ${s.title ?? ''}` })).sort((a, b) => (a.value < b.value ? -1 : 1))];
+    }
+    if (name === 'actors') {
+      return [{ value: '', label: '— choose an actor —' },
+        ...active(topology.actors).map((a) => ({ value: a.id, label: `${a.name ?? a.id} — ${a.actorType ?? ''}` })).sort(byLabel)];
+    }
+    if (name === 'places') {
+      return [{ value: '', label: '— no place: timeline only —' },
+        ...active(topology.places).map((p) => ({ value: p.id, label: p.name ?? p.id })).sort(byLabel)];
+    }
+    if (name === 'regions') {
+      return [{ value: '', label: '— derived from the place —' },
+        ...(topology.regions ?? []).map((r) => ({ value: r.id, label: r.label ?? r.id }))];
+    }
+    return [];
+  };
+}
+
+// record: the file as it is on disk. onChange is called after every edit,
+// with the validation result, so the page can enable or disable Save.
+export function createEditor({ record, topology, schemas, onChange = () => {} }) {
+  const kind = record.kind;
+  const values = valuesFromRecord(kind, record);
+  const fields = new Map();
+  const optionsFor = choicesFrom(topology);
+
+  const root = html('form', { class: `editor entry ${kind}`, autocomplete: 'off' });
+  root.addEventListener('submit', (event) => event.preventDefault());
+  const recordErrors = html('ul', { class: 'entry-errors', hidden: 'hidden' });
+  root.appendChild(recordErrors);
+
+  let sequence = 0;
+  const uid = (key) => `edit-${kind}-${key}-${(sequence += 1)}`;
+
+  function fill(select, name) {
+    const chosen = select.value;
+    select.textContent = '';
+    for (const option of optionsFor(name)) select.appendChild(html('option', { value: option.value }, option.label));
+    select.value = chosen;
+    // The id on the record is not among the choices — it points at something
+    // retracted, or at nothing. Say so rather than silently choosing another.
+    if (select.value !== chosen && chosen !== '') {
+      select.appendChild(html('option', { value: chosen }, `${chosen} — not an active record`));
+      select.value = chosen;
+    }
+  }
+
+  function renderField(field) {
+    const id = uid(field.key);
+    const wrap = html('div', { class: `field field-${field.key}` });
+    wrap.appendChild(html('label', { for: id }, field.required ? `${field.label} *` : field.label));
+
+    let input;
+    if (field.input === 'textarea') {
+      input = html('textarea', { id, rows: '6' });
+    } else if (field.input === 'select') {
+      input = html('select', { id });
+      if (field.optionsFrom) fill(input, field.optionsFrom);
+      else {
+        for (const option of field.options) {
+          const label = option === '' ? (field.required ? '— choose —' : '— none —') : option;
+          input.appendChild(html('option', { value: option }, label));
+        }
+      }
+    } else {
+      input = html('input', { type: 'text', id });
+    }
+    input.value = values[field.key] ?? '';
+    input.addEventListener('input', () => {
+      values[field.key] = input.value;
+      applyVisibility();
+      refresh();
+    });
+    wrap.appendChild(input);
+    if (field.hint) wrap.appendChild(html('p', { class: 'hint' }, field.hint));
+    const error = html('p', { class: 'field-error', hidden: 'hidden' });
+    wrap.appendChild(error);
+    fields.set(field.path, { wrap, input, error, field });
+    return wrap;
+  }
+
+  // The three repeatable lists are the same shape: a reference chosen from
+  // the atlas and a bit of text beside it. `text` names the second column's
+  // key, and the row is built once for all three.
+  function renderList(list, { optionsName, textKey, refKey, placeholder, hint, label }) {
+    const wrap = html('div', { class: 'field list' });
+    const head = html('div', { class: 'citations-head' });
+    head.appendChild(html('span', { class: 'citations-label' }, label));
+    const add = html('button', { type: 'button', class: 'link small' }, 'add');
+    head.appendChild(add);
+    wrap.appendChild(head);
+    if (hint) wrap.appendChild(html('p', { class: 'hint' }, hint));
+    const rows = html('ul', { class: 'citation-rows' });
+    wrap.appendChild(rows);
+    const error = html('p', { class: 'field-error', hidden: 'hidden' });
+    wrap.appendChild(error);
+
+    const addRowFor = (item) => {
+      const row = html('li', { class: 'citation-row' });
+      const select = html('select', { 'aria-label': label });
+      fill(select, optionsName);
+      select.value = item[refKey] ?? '';
+      // The value may not be among the options (a retracted reference): fill
+      // again so the row says so instead of showing the first choice.
+      if (select.value !== (item[refKey] ?? '')) fill(select, optionsName);
+      select.addEventListener('input', () => {
+        item[refKey] = select.value;
+        refresh();
+      });
+      const text = textKey === 'text'
+        ? html('textarea', { rows: '3', placeholder, 'aria-label': `${label} text` })
+        : html('input', { type: 'text', placeholder, 'aria-label': `${label} text` });
+      text.value = item[textKey] ?? '';
+      text.addEventListener('input', () => {
+        item[textKey] = text.value;
+        refresh();
+      });
+      const drop = html('button', { type: 'button', class: 'link small' }, 'remove');
+      drop.addEventListener('click', () => {
+        const at = values[list.key].indexOf(item);
+        if (at >= 0) values[list.key].splice(at, 1);
+        row.remove();
+        refresh();
+      });
+      row.append(select, text, drop);
+      rows.appendChild(row);
+    };
+
+    add.addEventListener('click', () => {
+      const item = { [refKey]: '', [textKey]: '' };
+      values[list.key].push(item);
+      addRowFor(item);
+      refresh();
+    });
+    for (const item of values[list.key]) addRowFor(item);
+    fields.set(list.path, { wrap, input: null, error, field: list });
+    return wrap;
+  }
+
+  function applyVisibility() {
+    for (const [, view] of fields) if (view.field.when) view.wrap.hidden = !view.field.when(values);
+  }
+
+  for (const field of FIELDS[kind]) root.appendChild(renderField(field));
+  for (const list of ACTOR_LISTS[kind]) {
+    root.appendChild(renderList(list, {
+      optionsName: 'actors', refKey: 'actor', textKey: 'role', label: list.label,
+      placeholder: 'role: leader, signatory, deposed',
+      hint: 'The actors of this event and what each did in it — not everyone alive at the time.',
+    }));
+  }
+  for (const list of STEP_LISTS[kind]) {
+    root.appendChild(renderList(list, {
+      optionsName: 'records', refKey: 'ref', textKey: 'text', label: `${list.label} *`,
+      placeholder: 'why this step follows',
+      hint: 'At least two, in the order they are read. The records walked are not changed by walking them.',
+    }));
+  }
+  for (const list of CITATION_LISTS[kind]) {
+    root.appendChild(renderList(list, {
+      optionsName: 'sources', refKey: 'source', textKey: 'locator', label: `${list.label} *`,
+      placeholder: 'locator: ch. 2, p. 41',
+    }));
+  }
+
+  // The record as the file would be after this edit: the envelope from disk,
+  // the body from the inputs.
+  function current() {
+    return applyValues(kind, record, values);
+  }
+
+  // Validation is the same validateBundle() the contribution form runs, so
+  // the server refuses nothing the dashboard called fine — and, because the
+  // record under edit shadows its own entry in the topology, an edge that
+  // already exists is judged as the atlas would be after the save, not as a
+  // duplicate of itself.
+  function refresh() {
+    const edited = current();
+    const result = validateBundle({ schema: 1, records: [edited] }, topology, schemas);
+
+    recordErrors.textContent = '';
+    recordErrors.hidden = true;
+    for (const [, view] of fields) {
+      view.error.textContent = '';
+      view.error.hidden = true;
+      view.wrap.classList.remove('has-error');
+    }
+    for (const error of result.errors) {
+      const view = claim(fields, error.path);
+      if (view && !view.wrap.hidden) {
+        const text = messageOf(error, view);
+        view.error.textContent = view.error.textContent ? `${view.error.textContent} ${text}` : text;
+        view.error.hidden = false;
+        view.wrap.classList.add('has-error');
+      } else {
+        recordErrors.appendChild(html('li', {}, `[rule ${error.rule}] ${error.message}`));
+        recordErrors.hidden = false;
+      }
+    }
+    onChange({ record: edited, result });
+    return { record: edited, result };
+  }
+
+  applyVisibility();
+  const first = refresh();
+
+  return {
+    root,
+    kind,
+    id: record.id,
+    values,
+    current,
+    refresh,
+    result: first.result,
+    focus() {
+      root.querySelector('input, textarea, select')?.focus();
+    },
+  };
+}

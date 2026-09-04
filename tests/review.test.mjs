@@ -15,6 +15,7 @@ import {
   normalizeReviewer, reviewerProblems, signRecord, retractRecord, retractionPlan, bundleOf,
 } from '../src/review/sign.js';
 import { endpointFor, putBundle, saveBundle } from '../src/review/save.js';
+import { claim, messageOf, choicesFrom } from '../src/review/editor.js';
 import { buildTopology, validate } from '../src/validate/core.js';
 import { createRegionDeriver } from '../src/util/geo.js';
 import { readRecords } from '../tools/lib/read.mjs';
@@ -238,4 +239,58 @@ test('the queue is every draft in data/, and the validator counts the same', asy
   // Nothing imported is ever in the queue: an import is not a draft.
   assert.ok(!queue.some((q) => q.kind === 'presence'));
   for (const item of queue) assert.ok(KIND_ORDER.includes(item.kind), item.kind);
+});
+
+// --- the editor's pure parts -----------------------------------------------
+// createEditor needs a DOM and is exercised by hand; these three decide what
+// it shows and what it offers, and they do not.
+
+test('an error finds the input that caused it, or the record', () => {
+  const view = (field) => ({ field, input: { value: '' }, wrap: {}, error: {} });
+  const fields = new Map([
+    ['/where/lon', view({ key: 'lon', required: true })],
+    ['/sources', view({ key: 'citations' })],
+    ['/title', view({ key: 'title', required: false })],
+  ]);
+  assert.equal(claim(fields, '/where/lon'), fields.get('/where/lon'));
+  // A citation's error belongs to the list it is in…
+  assert.equal(claim(fields, '/sources/0/source'), fields.get('/sources'));
+  // …an error on a subtree to the first field inside it…
+  assert.equal(claim(fields, '/where'), fields.get('/where/lon'));
+  // …and one nothing claims is the record's, not silently dropped.
+  assert.equal(claim(fields, '/actors/0/actor'), null);
+  assert.equal(claim(fields, ''), null);
+
+  assert.equal(messageOf({ message: 'x' }, fields.get('/where/lon')), 'required',
+    'a blank required field says so rather than repeating the schema');
+  assert.equal(messageOf({ message: 'x' }, fields.get('/title')), 'x');
+  const oneOf = {
+    path: '/when',
+    message: '0 of 2 alternatives matched',
+    alternatives: [[{ path: '/when', message: 'not this one' }], [{ path: '/when/start', message: 'a year is an integer' }]],
+  };
+  assert.equal(messageOf(oneOf, fields.get('/title')), 'a year is an integer');
+});
+
+test('the editor offers what is active in the atlas, and says when a reference is not', () => {
+  const topology = {
+    events: [
+      { id: 'b-event', title: 'Second', status: 'active' },
+      { id: 'a-event', title: 'First', status: 'active' },
+      { id: 'gone', title: 'Retracted', status: 'retracted' },
+    ],
+    edges: [{ id: 'a-event--b-event--caused', from: 'a-event', to: 'b-event', type: 'caused', status: 'active' }],
+    sources: [{ id: 'a-source', title: 'A work', status: 'active' }],
+    actors: [{ id: 'an-actor', name: 'Somebody', actorType: 'person', status: 'active' }],
+    places: [{ id: 'a-place', name: 'Somewhere', status: 'active' }],
+    regions: [{ id: 'europe', label: 'Europe' }],
+  };
+  const options = choicesFrom(topology);
+  assert.deepEqual(options('events').map((o) => o.value), ['', 'a-event', 'b-event'], 'by name, and a null choice first');
+  assert.ok(!options('events').some((o) => o.value === 'gone'), 'a retracted record is not offered');
+  assert.deepEqual(options('records').map((o) => o.label).slice(-1), ['First — caused → Second']);
+  assert.deepEqual(options('places').map((o) => o.value), ['', 'a-place']);
+  assert.deepEqual(options('regions').map((o) => o.value), ['', 'europe']);
+  assert.deepEqual(options('actors').map((o) => o.label), ['— choose an actor —', 'Somebody — person']);
+  assert.deepEqual(options('nothing'), []);
 });

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Review — Atlas causal</title>
+  <link rel="stylesheet" href="src/style.css">
+</head>
+<body class="page-body">
+  <header class="bar">
+    <h1><a href="index.html">Atlas causal</a></h1>
+    <p class="tagline">The review queue: every record drafted by the assistant, until a person has read it and signed it.</p>
+    <span id="fixtures-badge" class="fixtures-badge" hidden title="tests/fixtures/data: invented records for testing the interface">synthetic fixtures — not history</span>
+  </header>
+
+  <main class="page review-page">
+    <section class="prose narrow">
+      <p><strong>This page is a maintainer's tool, not part of the atlas.</strong> It is not
+      linked from the map, and it exists to retire one thing: the dated exception in
+      <code>CLAUDE.md</code> that let an assistant draft records so the interface could be built
+      against real material. Every one of those records carries an author entry saying it is an
+      unreviewed draft, and the queue on the left is exactly that list. Reading a record,
+      correcting what is wrong and signing it replaces the marker with your name.</p>
+
+      <p><strong>Saving needs the local server.</strong> Run <code>node tools/serve.mjs</code> and
+      open this page from <code>http://localhost:8000/review.html</code>: a save is validated
+      against the whole atlas before anything touches disk, the record file is rewritten and
+      <code>data/index/</code> is rebuilt. Opened any other way — under
+      <code>python3 -m http.server</code>, or on the published site, neither of which can write —
+      every save becomes a correction bundle on your clipboard and opens the correction issue
+      instead. Nothing is lost either way, and the public site never gains a backend.</p>
+
+      <p class="hint">Keys: <kbd>j</kbd> and <kbd>k</kbd> (or the arrows) walk the queue,
+      <kbd>ctrl</kbd>+<kbd>s</kbd> saves, <kbd>ctrl</kbd>+<kbd>enter</kbd> signs.</p>
+    </section>
+
+    <div id="dashboard" class="dashboard-mount"></div>
+  </main>
+
+  <script type="module" src="src/review/main.js"></script>
+</body>
+</html>

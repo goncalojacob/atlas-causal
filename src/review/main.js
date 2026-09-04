@@ -1,0 +1,386 @@
+// Bootstrap for review.html: the queue on the left, one record open on the
+// right, and the two ways a save can go. Load, wire, nothing else — the
+// decisions are in queue.js, sign.js, save.js and editor.js, all of them
+// under test without a DOM.
+//
+// This page is not linked from the atlas and is not for readers. It exists to
+// retire the exception in CLAUDE.md: every record the assistant drafted is
+// unreviewed until a person reads it, corrects it and signs it, and the queue
+// is empty when that is done.
+
+import { esc } from '../util/esc.js';
+import { html } from '../util/dom.js';
+import { loadSchemas } from '../validate/schemas.js';
+import {
+  buildQueue, groupByKind, flagCounts, filterQueue, progressOf, isDraft,
+} from './queue.js';
+import { signRecord, retractRecord, retractionPlan, reviewerProblems, normalizeReviewer, bundleOf } from './sign.js';
+import { saveBundle } from './save.js';
+import { createEditor } from './editor.js';
+
+const REVIEWER_KEY = 'atlas.reviewer';
+const params = new URLSearchParams(window.location.search);
+const fixtures = params.get('fixtures') === '1';
+const dataRoot = fixtures ? 'tests/fixtures/data/' : 'data/';
+const mount = document.getElementById('dashboard');
+
+function today() {
+  return new Date().toISOString().slice(0, 10);
+}
+
+async function getJson(url, init) {
+  const response = await fetch(url, init);
+  if (!response.ok) throw new Error(`${url}: ${response.status}`);
+  return response.json();
+}
+
+function readReviewer() {
+  try {
+    const stored = JSON.parse(window.localStorage.getItem(REVIEWER_KEY) ?? 'null');
+    return { name: stored?.name ?? '', github: stored?.github ?? '' };
+  } catch {
+    return { name: '', github: '' };
+  }
+}
+
+function writeReviewer(reviewer) {
+  try {
+    window.localStorage.setItem(REVIEWER_KEY, JSON.stringify(reviewer));
+  } catch {
+    // A browser that refuses storage still reviews; it only retypes the name.
+  }
+}
+
+try {
+  const manifest = await getJson(`${dataRoot}index/manifest.json`, { cache: 'no-store' });
+  const [topologyIndex, sourcesIndex, review, schemas] = await Promise.all([
+    getJson(`${dataRoot}${manifest.files.topology}`),
+    getJson(`${dataRoot}${manifest.files.sources}`),
+    getJson(`${dataRoot}${manifest.files.review}`),
+    loadSchemas({ root: 'schema/' }),
+  ]);
+
+  document.getElementById('fixtures-badge').hidden = !fixtures;
+  render({
+    topology: {
+      events: topologyIndex.events ?? [],
+      edges: topologyIndex.edges ?? [],
+      actors: topologyIndex.actors ?? [],
+      places: topologyIndex.places ?? [],
+      relations: topologyIndex.relations ?? [],
+      narratives: topologyIndex.narratives ?? [],
+      presences: topologyIndex.presences ?? [],
+      sources: sourcesIndex.sources ?? [],
+      regions: manifest.regions ?? [],
+    },
+    review,
+    schemas,
+  });
+} catch (error) {
+  mount.innerHTML = `<p class="field-error"><code>${esc(error.message)}</code></p>
+    <p>The dashboard needs the atlas index. Serve the repository root
+    (<code>node tools/serve.mjs</code>, which can also write what you sign) and make sure
+    <code>data/index/</code> exists (<code>node tools/build-index.mjs</code>).</p>`;
+  throw error;
+}
+
+function render({ topology, review, schemas }) {
+  // The queue as the index left it. Signing removes an entry from this list;
+  // reloading the page rebuilds it from the index the save rewrote.
+  let digests = (review.records ?? []).filter(isDraft);
+  let queue = buildQueue(digests, review);
+  const filters = { kind: null, flag: null, text: '' };
+  let open = null;
+  let editor = null;
+  // The validation of what is in the inputs right now: the editor reports it
+  // on every keystroke, and Save and Sign hang on it.
+  let result = null;
+
+  mount.textContent = '';
+  const layout = html('div', { class: 'review' });
+
+  // --- the queue -----------------------------------------------------------
+  const side = html('aside', { class: 'queue' });
+  const progressEl = html('p', { class: 'progress' });
+  const search = html('input', { type: 'search', class: 'queue-search', 'aria-label': 'Search the queue', placeholder: 'id or name' });
+  const kindRow = html('div', { class: 'queue-filters' });
+  const flagRow = html('div', { class: 'queue-filters' });
+  const listEl = html('div', { class: 'queue-list' });
+  side.append(progressEl, search, kindRow, flagRow, listEl);
+
+  // --- the record ----------------------------------------------------------
+  // `contrib` is not decoration here: the editor is the contribution
+  // form's fields, so it is styled by the contribution form's rules.
+  const main = html('section', { class: 'record contrib' });
+  const headEl = html('div', { class: 'record-head' });
+  const editorMount = html('div', { class: 'editor-mount' });
+  const noteEl = html('p', { class: 'save-note', role: 'status' });
+
+  const reviewer = readReviewer();
+  const nameInput = html('input', { type: 'text', id: 'reviewer-name', autocomplete: 'name' });
+  const handleInput = html('input', { type: 'text', id: 'reviewer-github', autocomplete: 'off', placeholder: 'octocat' });
+  nameInput.value = reviewer.name;
+  handleInput.value = reviewer.github;
+  const signBox = html('fieldset', { class: 'sign-box' });
+  signBox.appendChild(html('legend', {}, 'Reviewed by'));
+  const nameField = html('div', { class: 'field' });
+  nameField.append(html('label', { for: 'reviewer-name' }, 'Your name *'), nameInput);
+  const handleField = html('div', { class: 'field' });
+  handleField.append(html('label', { for: 'reviewer-github' }, 'GitHub handle'), handleInput);
+  const reviewerError = html('p', { class: 'field-error', hidden: 'hidden' });
+  signBox.append(nameField, handleField, reviewerError);
+
+  const saveButton = html('button', { type: 'button', class: 'submit' }, 'Save');
+  const signButton = html('button', { type: 'button', class: 'submit' }, 'Sign');
+  const retractButton = html('button', { type: 'button', class: 'link' }, 'Retract');
+  const actions = html('div', { class: 'record-actions' });
+  actions.append(saveButton, signButton, retractButton);
+
+  main.append(headEl, editorMount, signBox, actions, noteEl);
+  layout.append(side, main);
+  mount.appendChild(layout);
+
+  for (const input of [nameInput, handleInput]) {
+    input.addEventListener('input', () => {
+      writeReviewer({ name: nameInput.value, github: handleInput.value });
+      paintReviewer();
+    });
+  }
+
+  function paintReviewer() {
+    const problems = reviewerProblems({ name: nameInput.value, github: handleInput.value });
+    reviewerError.textContent = problems.join('; ');
+    reviewerError.hidden = problems.length === 0;
+    signButton.disabled = !open || problems.length > 0 || !editorIsValid();
+    return problems.length === 0;
+  }
+
+  function editorIsValid() {
+    return Boolean(editor && result?.ok);
+  }
+
+  // --- painting the queue --------------------------------------------------
+  function visible() {
+    return filterQueue(queue, filters);
+  }
+
+  function paintProgress() {
+    const progress = progressOf(digests, { total: review.total ?? null });
+    progressEl.textContent = progress.remaining === 0
+      ? `Nothing left: all ${progress.total} records carry a person's name.`
+      : `${progress.remaining} of ${progress.total} records still unreviewed — ${progress.byKind.map((k) => `${k.count} ${k.kind}`).join(', ')}.`;
+  }
+
+  function chip(label, active, onPick) {
+    const button = html('button', { type: 'button', class: `chip${active ? ' on' : ''}` }, label);
+    button.addEventListener('click', onPick);
+    return button;
+  }
+
+  function paintFilters() {
+    kindRow.textContent = '';
+    kindRow.appendChild(chip(`all (${queue.length})`, filters.kind === null, () => {
+      filters.kind = null;
+      paintQueue();
+    }));
+    for (const group of groupByKind(queue)) {
+      kindRow.appendChild(chip(`${group.kind} (${group.count})`, filters.kind === group.kind, () => {
+        filters.kind = filters.kind === group.kind ? null : group.kind;
+        paintQueue();
+      }));
+    }
+    flagRow.textContent = '';
+    for (const { flag, count } of flagCounts(queue)) {
+      flagRow.appendChild(chip(`${flag} (${count})`, filters.flag === flag, () => {
+        filters.flag = filters.flag === flag ? null : flag;
+        paintQueue();
+      }));
+    }
+  }
+
+  function paintQueue() {
+    paintProgress();
+    paintFilters();
+    listEl.textContent = '';
+    const rows = visible();
+    if (!rows.length) {
+      listEl.appendChild(html('p', { class: 'hint' }, queue.length ? 'Nothing matches these filters.' : 'The queue is empty.'));
+      return;
+    }
+    for (const group of groupByKind(rows)) {
+      listEl.appendChild(html('h3', { class: 'queue-kind' }, `${group.kind} — ${group.count}`));
+      const ul = html('ul', { class: 'queue-items' });
+      for (const item of group.items) {
+        const li = html('li', {});
+        const button = html('button', {
+          type: 'button',
+          class: `queue-item${open && open.id === item.id ? ' current' : ''}`,
+        });
+        button.appendChild(html('span', { class: 'queue-label' }, item.label));
+        button.appendChild(html('span', { class: 'queue-id' }, item.id));
+        for (const flag of item.flags) button.appendChild(html('span', { class: 'flag' }, flag));
+        button.addEventListener('click', () => openRecord(item));
+        li.appendChild(button);
+        ul.appendChild(li);
+      }
+      listEl.appendChild(ul);
+    }
+  }
+
+  // --- one record ----------------------------------------------------------
+  async function openRecord(item) {
+    open = item;
+    noteEl.textContent = '';
+    headEl.textContent = '';
+    editorMount.textContent = '';
+    editor = null;
+    result = null;
+    paintQueue();
+    headEl.append(
+      html('h2', {}, item.label),
+      html('p', { class: 'record-id' }, `${item.kind} · ${item.id}`),
+    );
+    if (item.note) headEl.appendChild(html('p', { class: 'review-note' }, item.note));
+    if (item.flags.length) headEl.appendChild(html('p', { class: 'record-flags' }, item.flags.join(' · ')));
+
+    let record;
+    try {
+      record = await getJson(`${dataRoot}${item.kind}s/${encodeURIComponent(item.id)}.json`, { cache: 'no-store' });
+    } catch (error) {
+      editorMount.appendChild(html('p', { class: 'field-error' }, error.message));
+      return;
+    }
+    editor = createEditor({
+      record,
+      topology,
+      schemas,
+      onChange: (state) => {
+        result = state.result;
+        saveButton.disabled = !result.ok;
+        paintReviewer();
+      },
+    });
+    editorMount.appendChild(editor.root);
+    result = editor.result;
+    saveButton.disabled = !result.ok;
+    paintReviewer();
+    editor.focus();
+  }
+
+  function step(delta) {
+    const rows = visible();
+    if (!rows.length) return;
+    const at = rows.findIndex((r) => open && r.id === open.id);
+    const next = rows[Math.min(rows.length - 1, Math.max(0, (at < 0 ? 0 : at + delta)))];
+    if (next) openRecord(next);
+  }
+
+  // The record is gone from the queue only once it is on disk with a name on
+  // it: the bundle path leaves it here, because nothing has been written yet.
+  function forget(ids) {
+    digests = digests.filter((d) => !ids.includes(d.id));
+    queue = buildQueue(digests, review);
+    open = null;
+    headEl.textContent = '';
+    editorMount.textContent = '';
+    editor = null;
+    result = null;
+    paintQueue();
+  }
+
+  function say(outcome, what) {
+    if (outcome.mode === 'saved') {
+      noteEl.textContent = `${what}: ${outcome.written.map((w) => w.path).join(', ')} written and the index rebuilt.`;
+    } else if (outcome.mode === 'refused') {
+      noteEl.textContent = `Nothing was written. ${outcome.message}`;
+    } else {
+      noteEl.textContent = [
+        outcome.copied ? 'No write endpoint here, so the bundle is on your clipboard.' : 'No write endpoint here, and the clipboard refused: copy the bundle from the box.',
+        outcome.prefilled ? 'The correction issue opened with it filled in.' : 'Paste it into the correction issue that just opened.',
+      ].join(' ');
+    }
+  }
+
+  async function send(records, what) {
+    const primary = records[0];
+    noteEl.textContent = 'Saving…';
+    const outcome = await saveBundle(bundleOf(records), primary, { title: `Review: ${primary.id}` });
+    say(outcome, what);
+    return outcome;
+  }
+
+  saveButton.addEventListener('click', async () => {
+    if (!editorIsValid()) return;
+    await send([editor.current()], 'Saved');
+  });
+
+  signButton.addEventListener('click', async () => {
+    if (!editorIsValid() || !paintReviewer()) return;
+    const who = normalizeReviewer({ name: nameInput.value, github: handleInput.value });
+    const signed = signRecord(editor.current(), who, { today: today() });
+    const outcome = await send([signed], `Signed by ${who.name}`);
+    if (outcome.mode === 'saved') forget([signed.id]);
+  });
+
+  retractButton.addEventListener('click', async () => {
+    if (!editor) return;
+    const record = editor.current();
+    const plan = retractionPlan(record, topology);
+    if (plan.blockers.length) {
+      noteEl.textContent = `This cannot be retracted while ${plan.blockers.map((b) => `${b.id} ${b.why}`).join(', ')}. Correct those records first.`;
+      return;
+    }
+    const carried = plan.retract.map((r) => `${r.kind} ${r.id}`);
+    const question = carried.length
+      ? `Retract ${record.id} and, with it, ${carried.join(', ')}?`
+      : `Retract ${record.id}?`;
+    if (!window.confirm(question)) return;
+    // The cascade is fetched whole: the topology carries a projection, and a
+    // projection is not a record that may be written back.
+    const others = [];
+    for (const item of plan.retract) {
+      others.push(retractRecord(await getJson(`${dataRoot}${item.kind}s/${encodeURIComponent(item.id)}.json`, { cache: 'no-store' }), { today: today() }));
+    }
+    const outcome = await send([retractRecord(record, { today: today() }), ...others], 'Retracted');
+    if (outcome.mode === 'saved') forget([record.id, ...plan.retract.map((r) => r.id)]);
+  });
+
+  search.addEventListener('input', () => {
+    filters.text = search.value;
+    paintQueue();
+  });
+
+  // Keyboard: the queue is walked without the mouse, and the two writes have
+  // the shortcuts a person would guess. Never while typing in a field.
+  window.addEventListener('keydown', (event) => {
+    const typing = event.target instanceof HTMLElement
+      && ['INPUT', 'TEXTAREA', 'SELECT'].includes(event.target.tagName);
+    if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === 's') {
+      event.preventDefault();
+      saveButton.click();
+      return;
+    }
+    if ((event.ctrlKey || event.metaKey) && event.key === 'Enter') {
+      event.preventDefault();
+      signButton.click();
+      return;
+    }
+    if (typing || event.ctrlKey || event.metaKey || event.altKey) return;
+    if (event.key === 'j' || event.key === 'ArrowDown') {
+      event.preventDefault();
+      step(1);
+    } else if (event.key === 'k' || event.key === 'ArrowUp') {
+      event.preventDefault();
+      step(-1);
+    }
+  });
+
+  paintQueue();
+  saveButton.disabled = true;
+  signButton.disabled = true;
+  // The queue is grouped in kind order; the first record of the first group
+  // is the one a reviewer would open anyway.
+  const first = visible()[0];
+  if (first) openRecord(first);
+  else progressEl.classList.add('good');
+}
