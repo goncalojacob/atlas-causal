@@ -6,7 +6,36 @@ session ends. `ARCHITECTURE.md` is the target; this file is the position.
 
 ## Last updated
 
-2026-09-04, after M15 (`docs/m15-brief.md`): a record can now say **where else
+2026-09-04, after M16 (`docs/m16-brief.md`): the atlas has a **Wikidata
+import**, written and tested but **not run** — this sandbox has no network and
+the first real execution is the Action. `tools/import/wikidata.mjs`, zero
+dependencies, three modes: `--reconcile` matches records already here against
+items, `--import` creates records for the items a file names, `--candidates`
+writes a list of proposals and touches nothing under `data/`. Its fetch layer
+is injected, so `node --test` runs it against recorded-shape fixtures under
+`tests/fixtures/wikidata/`; the real one names itself in a User-Agent, goes
+one request at a time with `maxlag`, backs off on 429 and 503, and stops at a
+**call budget** rather than hammering somebody else's servers. On a record
+that already exists the import is **additive per field**: `wikidata`,
+`wikipedia` and `sitelinks` where they are absent, never a change, never a
+touch on `summary`/`title`/`when`/`place`/`actors`/`sources`, and **no
+`authors` entry** for enriching — the rule is `tools/import/identity.mjs` and
+`cshapes.mjs` obeys it too, so an identifier added between two runs survives
+the next. It **never writes an edge**. Which Wikidata class becomes which kind
+of record is **data, not code**: `data/imports/wikidata-seeds.json` →
+`classes`, and an item of a class nobody has decided about is refused and
+listed. A cut-off run resumes from `data/imports/wikidata-state.json`, one
+cursor per mode, batches of 25.
+`.github/workflows/import-wikidata.yml` triggers on a push to `import/**` (a
+dispatch would resolve on `main`, which has no workflows), takes its mode from
+the branch name through `env`, validates and tests and indexes before every
+commit, restores `data/` on failure, and commits to that branch and **never to
+`m0`**. Wikipedia leads are cached under `tools/import/cache/wikipedia/` with
+their revision and a link to the history that credits the authors — outside
+`data/`, schema-checked all the same, and removed by `deploy.yml` before the
+site is uploaded.
+
+Before that, 2026-09-04, after M15 (`docs/m15-brief.md`): a record can now say **where else
 the same thing is catalogued**, and a reviewer can say **which of its sources
 they have actually opened**. Three optional fields — `wikidata`, `wikipedia`
 (language → article title), `sitelinks` — on `event`, `actor` and `place`,
@@ -52,16 +81,19 @@ correction bundle for the issue path, and the public site gains no backend.
 
 ## Phase
 
-**M0 to M15 built, plus the map usability work, on branch `m0`, pull
+**M0 to M16 built, plus the map usability work, on branch `m0`, pull
 request #1 open against `main`.** M13 was the last milestone in the original
 run protocol's order; M14 ran after it from `docs/m14-brief.md` on the
 `brief-m14` side branch, and M15 from `docs/m15-brief.md`, which arrived on
 `brief-m15` together with `docs/review-2026-09-04-plan.md`, the amended
-`docs/run-protocol.md` and the briefs for **M16, M17 and M18** — the Wikidata
-import tool and its Action, the reconciliation and the longer summaries, and
-the candidate list the owner ticks. Those three are queued and not started. M8 changed no structure
+`docs/run-protocol.md` and the briefs for **M16, M17 and M18**. M16 is built:
+the import tool and its Action exist and are tested, and **the tool has not
+been run** — there is no network here, and the Action on an `import/**`
+branch is where it first meets the live service. **M17** (reconciliation and
+the longer summaries) and **M18** (the candidate list the owner ticks) are
+queued and not started. M8 changed no structure
 and wrote no revision, as its brief allows.
-`ARCHITECTURE.md` **revision 15** is the specification; its opening note says what changed and why (revision 4
+`ARCHITECTURE.md` **revision 16** is the specification; its opening note says what changed and why (revision 4
 added the `actor` kind; revision 5 added `cluster.js`, `weight` in the
 index and `prominence` as a reserved override; revision 6 added the
 `presence` kind, the CC BY-NC-SA licence and its one exception, and moved
@@ -76,7 +108,9 @@ source card, the bibliography page and the horizon, and put `source` and
 `horizon` in the state; revision 11 added the `relation` kind, rule 19 and
 the relations on the actor card; revision 12 added the `narrative` kind, rule
 20, and reading as a mode — `narrative` and `step` in the state, with the
-selection, the chain and the window derived from them; revision 13 added the
+selection, the chain and the window derived from them; revision 16 added the Wikidata
+import, its Action, the two further shapes under `data/imports/` and the
+lead cache that is deliberately not data; revision 13 added the
 `review` block to the envelope, the review index, `review.html`, and the two
 amendments the dashboard needed — the local write server that is never
 deployed, and the one path where `authors` is written without the Action;
@@ -1418,6 +1452,61 @@ object. Every later card gets a file.
     dismissed teaches people to dismiss it; the count is on the queue row,
     on the open record and in the validator's output, which is three places
     it cannot be missed and none where it stops anybody.
+101. **The seeds file ships empty.** `data/imports/wikidata-seeds.json` has
+    no items, no queries and an empty class table. The brief's example names
+    an item id; writing that or any other into the repository would be
+    asserting what a `Q…` number is, and this sandbox cannot check. What the
+    atlas should draw from is the owner's decision and M18 is where it is
+    proposed. The tool says so and does nothing when the file is empty.
+102. **Which Wikidata class means what is a table in the seeds file, not a
+    map in the code.** The brief says actors get `actorType` from `P31`
+    (human → person, country → polity, organisation → institution). Doing
+    that in code means writing class item ids into `tools/`, which is both a
+    factual claim nobody reviews and exactly the thing revision 7 moved out
+    of code for CShapes. The table is `classes` in the seeds file, an item of
+    an absent class is refused and listed with its labels, and the empty
+    table refuses everything — which is the honest state until somebody
+    fills it in.
+103. **Two schemas the brief did not name.**
+    `schema/v1/import-state.json` for the cursor, because the cursor lives
+    under `data/imports/` and everything there is validated, and
+    `schema/v1/wikipedia-lead.json` for the cache envelope, which the brief
+    asks `validate.mjs` to check but does not give a file. Both are tool-side.
+104. **A batch is walked places, then actors, then events.** The brief does
+    not say. An event whose location item is in the same batch would
+    otherwise be refused for a place record that was about to exist one
+    iteration later.
+105. **An event's location does not become a place record.** The import
+    points an event at a place the atlas already has, and where there is
+    none the event is **placeless with a lane** rather than the occasion for
+    a place nobody asked for. The lane comes from the event's own point, then
+    from the point of what it says it happened at or in, then from its
+    country; where none of those reaches a lane the event is refused. This is
+    what "nothing may leave `build-index.mjs` unable to run" comes to in
+    practice.
+106. **The fixtures have the shape of recorded responses and none of their
+    content.** The brief says recorded; there is no network here to record
+    from. Every item in `tests/fixtures/wikidata/` is a `Q9…` id Wikidata
+    does not use, with an invented label, and the README in that directory
+    says so and says what it costs: the fixtures cannot catch a wrong belief
+    about what the live service returns. The Action is where that is found
+    out, on a branch, with `data/` restored on failure.
+107. **A place derived from its own point is written with `region: null`.**
+    The brief says the import sets `region` from `P17` where no lane derives.
+    Where one *does* derive, writing it would be pinning a derived value into
+    a record — the override exists for the case the derivation cannot answer,
+    and only that case gets it.
+108. **An empty seeds file is a warning, not an error.** A file waiting for
+    somebody to decide what to fetch is its ordinary state before M18, and
+    failing the validator on it would fail every commit until then.
+109. **The Action's loop is capped at 40 batches and runs the tests inside
+    it.** The brief says commit per batch, validating and testing first. 40
+    batches of 25 is 1000 items, past which the job would hit its 90 minutes
+    anyway; the cap makes the stop deliberate rather than a timeout, and the
+    cursor means the next push continues.
+110. **The candidate list defaults to `docs/wikidata-candidates.md`.** M18
+    names its own file with `--to`; the tool needed a default that does not
+    pretend to belong to a milestone that has not run.
 
 ## Dates to verify
 
@@ -1786,6 +1875,18 @@ fixtures and the three static pages — sixteen assertions, all passing:
   `node tools/import/cshapes.mjs --source <file> --report`. Splitting one is
   an entry in `data/imports/cshapes-actors.json` and a re-run of the import;
   never a hand-edited presence.
+- **What the Wikidata import is pointed at**:
+  `data/imports/wikidata-seeds.json` — items, queries and the table saying
+  which Wikidata class becomes which kind of record. It ships **empty**: what
+  this atlas should draw from is the owner's decision, and M18 is where it is
+  proposed. `data/imports/wikidata-state.json` is the cursor a cut-off run
+  leaves behind, one entry per mode, written by the tool and not by hand.
+- **The Wikidata import has never been run.** There is no network in the
+  sandbox the milestones are built in. It runs in
+  `.github/workflows/import-wikidata.yml`, triggered by pushing a branch
+  called `import/reconcile-<date>`, `import/candidates-<date>` or
+  `import/run-<date>` from `m0`; the job commits to that branch, and a run
+  fast-forward-merges it back. Nothing it writes reaches `m0` any other way.
 - The CShapes source file is **not in the repository** (7.6 MB, and not
   ours to redistribute). `data/geo/LICENSE` and the header of
   `tools/import/cshapes.mjs` say exactly where it came from and what its
