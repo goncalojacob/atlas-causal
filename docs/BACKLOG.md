@@ -47,6 +47,19 @@ the assistant. Scheduled work lives in `docs/*-brief.md`; the position in
 - Natural Earth's continent assignment (Russia → Europe, Turkey → Asia,
   Greenland → Americas): keep, or redraw the lane polygons.
 
+## Reading
+
+- **A full page per record.** The map and the timeline show a summary; a
+  reader should be able to open a full entry — an extensive, structured
+  text on the event, actor or place, with sections and citations, written
+  by contributors from any sources, not a redirect to Wikipedia. This is
+  where information that lives in several sources gets written down at
+  length. Needs a long-text field on the record (a safe subset of Markdown,
+  escaped like everything else), a route or page per record, "Read the
+  full entry" from every card, the field in the form and the dashboard,
+  and the same citation-verification treatment as the summary. Owner's
+  request, 4 September 2026.
+
 ## Publishing
 
 - Public visibility and GitHub Pages (needs the repository public on the
