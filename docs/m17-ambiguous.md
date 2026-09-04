@@ -174,3 +174,161 @@ nothing on Wikidata is called "Humberto Delgado murdered by the PIDE".
 `event` · searched for **Humberto Delgado's presidential candidacy**
 
 nothing on Wikidata is called "Humberto Delgado's presidential candidacy".
+
+## eanes-elected-1976
+
+`event` · searched for **Ramalho Eanes elected president**
+
+nothing on Wikidata is called "Ramalho Eanes elected president".
+
+## east-timor-independence-2002
+
+`event` · searched for **Independence of East Timor**
+
+nothing on Wikidata is called "Independence of East Timor".
+
+## east-timor-invasion-1975
+
+`event` · searched for **Indonesia invades East Timor**
+
+nothing on Wikidata is called "Indonesia invades East Timor".
+
+## eec-accession-1986
+
+`event` · searched for **Portugal joins the EEC**
+
+nothing on Wikidata is called "Portugal joins the EEC".
+
+## eec-application-1977
+
+`event` · searched for **Portugal applies to join the EEC**
+
+nothing on Wikidata is called "Portugal applies to join the EEC".
+
+## euro-2016-final
+
+`event` · searched for **Portugal wins the European Championship**
+
+nothing on Wikidata is called "Portugal wins the European Championship".
+
+## euro-adoption-1999
+
+`event` · searched for **Portugal adopts the euro**
+
+nothing on Wikidata is called "Portugal adopts the euro".
+
+## expo-98
+
+`event` · 1998 · searched for **Expo 98**
+
+2 item(s) were read and each failed a test.
+
+- [`Q1139414`](https://www.wikidata.org/wiki/Q1139414) **Expo '98** — 1998 World's Fair in Lisbon, Portugal — 1998 — Q172754
+  - none of its classes (Q172754) is in data/imports/wikidata-seeds.json → classes
+- [`Q55351315`](https://www.wikidata.org/wiki/Q55351315) **(no label)** — exhibition — 1998 — Q29023906
+  - none of its classes (Q29023906) is in data/imports/wikidata-seeds.json → classes
+
+## exposicao-mundo-portugues-1940
+
+`event` · searched for **Exhibition of the Portuguese World**
+
+nothing on Wikidata is called "Exhibition of the Portuguese World".
+
+## fiftieth-anniversary-25-april-2024
+
+`event` · searched for **Fifty years of 25 April**
+
+nothing on Wikidata is called "Fifty years of 25 April".
+
+## geringonca-2015
+
+`event` · searched for **The PS minority government of 2015**
+
+nothing on Wikidata is called "The PS minority government of 2015".
+
+## germany-declares-war-1916
+
+`event` · searched for **Germany declares war on Portugal**
+
+nothing on Wikidata is called "Germany declares war on Portugal".
+
+## goa-annexed-1961
+
+`event` · searched for **India annexes Goa, Daman and Diu**
+
+nothing on Wikidata is called "India annexes Goa, Daman and Diu".
+
+## government-falls-2025
+
+`event` · searched for **The government loses a confidence vote**
+
+nothing on Wikidata is called "The government loses a confidence vote".
+
+## guinea-bissau-declares-independence-1973
+
+`event` · searched for **PAIGC declares the independence of Guinea-Bissau**
+
+nothing on Wikidata is called "PAIGC declares the independence of Guinea-Bissau".
+
+## guinea-war-begins-1963
+
+`event` · searched for **Beginning of the war in Guinea**
+
+nothing on Wikidata is called "Beginning of the war in Guinea".
+
+## iberian-blackout-2025
+
+`event` · searched for **The Iberian blackout**
+
+nothing on Wikidata is called "The Iberian blackout".
+
+## imf-agreement-1978
+
+`event` · searched for **First stabilisation agreement with the IMF**
+
+nothing on Wikidata is called "First stabilisation agreement with the IMF".
+
+## imf-agreement-1983
+
+`event` · searched for **Second stabilisation agreement with the IMF**
+
+nothing on Wikidata is called "Second stabilisation agreement with the IMF".
+
+## law-of-separation-1911
+
+`event` · 1911 · searched for **Law of Separation of Church and State**
+
+1 item(s) were read and each failed a test.
+
+- [`Q10316960`](https://www.wikidata.org/wiki/Q10316960) **Law of Separation of Church and State** — Portuguese anticlerical law passed in 20 April 1911 — no date — Q820655
+  - none of its classes (Q820655) is in data/imports/wikidata-seeds.json → classes
+
+## legiao-portuguesa-founded-1936
+
+`event` · searched for **Foundation of the Portuguese Legion**
+
+nothing on Wikidata is called "Foundation of the Portuguese Legion".
+
+## legislative-election-1976
+
+`event` · searched for **First legislative election under the constitution**
+
+nothing on Wikidata is called "First legislative election under the constitution".
+
+## legislative-election-2015
+
+`event` · searched for **Legislative election of 2015**
+
+nothing on Wikidata is called "Legislative election of 2015".
+
+## legislative-election-2019
+
+`event` · searched for **Legislative election of 2019**
+
+nothing on Wikidata is called "Legislative election of 2019".
+
+## legislative-election-2022
+
+`event` · searched for **Legislative election of 2022**
+
+nothing on Wikidata is called "Legislative election of 2022".
