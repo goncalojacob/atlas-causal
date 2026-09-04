@@ -12,7 +12,7 @@
 // broken repository and CI never takes screenshots.
 
 import { spawn } from 'node:child_process';
-import { existsSync } from 'node:fs';
+import { existsSync, readdirSync } from 'node:fs';
 import { mkdir } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
@@ -22,9 +22,21 @@ export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '
 export const SCREENS = path.join(ROOT, 'docs', 'screens');
 const DEFAULT_PORT = 8123;
 
+// A browser cache keeps one directory per build — chromium-1194, and the
+// next one tomorrow — so the versioned ones are looked up rather than
+// written down. Newest first, by the number in the name.
+function cachedChromium(root = process.env.PLAYWRIGHT_BROWSERS_PATH || '/opt/pw-browsers') {
+  if (!root || !existsSync(root)) return [];
+  return readdirSync(root)
+    .filter((name) => /^chromium(_headless_shell)?-\d+$/.test(name))
+    .sort((a, b) => Number(b.replace(/\D+/g, '')) - Number(a.replace(/\D+/g, '')))
+    .flatMap((name) => [`${root}/${name}/chrome-linux/chrome`, `${root}/${name}/chrome-linux/headless_shell`]);
+}
+
 const CANDIDATES = [
   process.env.CHROME,
   '/opt/pw-browsers/chromium/chrome-linux/chrome',
+  ...cachedChromium(),
   '/usr/bin/chromium',
   '/usr/bin/chromium-browser',
   '/usr/bin/google-chrome',
