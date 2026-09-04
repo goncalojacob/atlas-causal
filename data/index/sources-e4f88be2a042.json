@@ -9530,7 +9530,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 115,
+      "citationCount": 140,
       "citations": [
         {
           "dissent": false,
@@ -9912,6 +9912,12 @@
         },
         {
           "dissent": false,
+          "id": "1980-azores-islands-earthquake",
+          "kind": "event",
+          "locator": "Q3306615"
+        },
+        {
+          "dissent": false,
           "id": "1980-portuguese-legislative-election",
           "kind": "event",
           "locator": "Q606275"
@@ -9933,6 +9939,54 @@
           "id": "1983-portuguese-legislative-election",
           "kind": "event",
           "locator": "Q597504"
+        },
+        {
+          "dissent": false,
+          "id": "1983-turkish-embassy-attack-in-lisbon",
+          "kind": "event",
+          "locator": "Q349875"
+        },
+        {
+          "dissent": false,
+          "id": "1985-portuguese-legislative-election",
+          "kind": "event",
+          "locator": "Q371408"
+        },
+        {
+          "dissent": false,
+          "id": "1985-portuguese-local-elections",
+          "kind": "event",
+          "locator": "Q7232778"
+        },
+        {
+          "dissent": false,
+          "id": "1986-portuguese-presidential-election",
+          "kind": "event",
+          "locator": "Q3586628"
+        },
+        {
+          "dissent": false,
+          "id": "1987-european-parliament-election-in-portugal",
+          "kind": "event",
+          "locator": "Q2404857"
+        },
+        {
+          "dissent": false,
+          "id": "1987-portuguese-legislative-election",
+          "kind": "event",
+          "locator": "Q1343967"
+        },
+        {
+          "dissent": false,
+          "id": "1989-european-parliament-election-in-portugal",
+          "kind": "event",
+          "locator": "Q2405083"
+        },
+        {
+          "dissent": false,
+          "id": "1989-portuguese-local-elections",
+          "kind": "event",
+          "locator": "Q24541619"
         },
         {
           "dissent": false,
@@ -9960,6 +10014,12 @@
         },
         {
           "dissent": false,
+          "id": "assalto-ao-banco-nacional-ultramarino-da-malveira-em-6-de-outubro-de-1980",
+          "kind": "event",
+          "locator": "Q139913681"
+        },
+        {
+          "dissent": false,
           "id": "assalto-ao-banco-pinto-e-sottomayor-de-lisboa-em-soure",
           "kind": "event",
           "locator": "Q138782318"
@@ -9969,6 +10029,24 @@
           "id": "assalto-ao-banco-pinto-e-sottomayor-em-albufeira-em-17-de-agosto-de-1976",
           "kind": "event",
           "locator": "Q117321949"
+        },
+        {
+          "dissent": false,
+          "id": "assassination-attempt-on-fernando-da-costa-rolo",
+          "kind": "event",
+          "locator": "Q115635121"
+        },
+        {
+          "dissent": false,
+          "id": "assassination-attempt-on-john-paul-ii-1982",
+          "kind": "event",
+          "locator": "Q9386425"
+        },
+        {
+          "dissent": false,
+          "id": "assassination-of-erkut-akbay",
+          "kind": "event",
+          "locator": "Q4808506"
         },
         {
           "dissent": false,
@@ -9984,9 +10062,33 @@
         },
         {
           "dissent": false,
+          "id": "assassinato-de-rogerio-canha-e-sa",
+          "kind": "event",
+          "locator": "Q138783119"
+        },
+        {
+          "dissent": false,
           "id": "assault-on-banco-totta-e-acores-on-avenida-da-republica-in-lisbon-on-may-21-1976",
           "kind": "event",
           "locator": "Q117311793"
+        },
+        {
+          "dissent": false,
+          "id": "assault-on-sintra-s-finance-department-by-the-prp-br-on-25-02-1980",
+          "kind": "event",
+          "locator": "Q115187238"
+        },
+        {
+          "dissent": false,
+          "id": "assault-on-tabaqueira-by-the-prp-br-on-january-31-1980",
+          "kind": "event",
+          "locator": "Q115691683"
+        },
+        {
+          "dissent": false,
+          "id": "assault-on-the-grupo-8-cash-van-in-lisbon-carried-out-by-the-fp-25-which-yielded-108-thousand-contos-on-february-7-1984",
+          "kind": "event",
+          "locator": "Q115779750"
         },
         {
           "dissent": false,
@@ -10032,6 +10134,18 @@
         },
         {
           "dissent": false,
+          "id": "chiado-fire",
+          "kind": "event",
+          "locator": "Q10301908"
+        },
+        {
+          "dissent": false,
+          "id": "desastre-ambiental-de-almograve",
+          "kind": "event",
+          "locator": "Q112726955"
+        },
+        {
+          "dissent": false,
           "id": "eleicoes-legislativas-regionais-na-madeira-em-1976",
           "kind": "event",
           "locator": "Q10271597"
@@ -10050,6 +10164,12 @@
         },
         {
           "dissent": false,
+          "id": "eleicoes-legislativas-regionais-na-madeira-em-1988",
+          "kind": "event",
+          "locator": "Q10271600"
+        },
+        {
+          "dissent": false,
           "id": "eleicoes-legislativas-regionais-nos-acores-em-1980",
           "kind": "event",
           "locator": "Q10271607"
@@ -10059,6 +10179,12 @@
           "id": "eleicoes-legislativas-regionais-nos-acores-em-1984",
           "kind": "event",
           "locator": "Q16144649"
+        },
+        {
+          "dissent": false,
+          "id": "eleicoes-legislativas-regionais-nos-acores-em-1988",
+          "kind": "event",
+          "locator": "Q10271609"
         },
         {
           "dissent": false,
@@ -10113,6 +10239,12 @@
           "id": "mueda-massacre",
           "kind": "event",
           "locator": "Q10327164"
+        },
+        {
+          "dissent": false,
+          "id": "murder-of-delfim-de-almeida-fernandes-by-the-prp-br",
+          "kind": "event",
+          "locator": "Q115210882"
         },
         {
           "dissent": false,
@@ -10188,6 +10320,12 @@
         },
         {
           "dissent": false,
+          "id": "robbery-of-banco-fonsecas-burnay-in-povoa-de-santo-adriao-on-october-13-1981",
+          "kind": "event",
+          "locator": "Q111788515"
+        },
+        {
+          "dissent": false,
           "id": "robbery-of-banco-totta-and-azores-in-mira-de-aire-on-october-15-1975",
           "kind": "event",
           "locator": "Q116465304"
@@ -10200,9 +10338,21 @@
         },
         {
           "dissent": false,
+          "id": "robbery-of-the-totta-acores-bank-in-malveira-on-6-october-1980",
+          "kind": "event",
+          "locator": "Q115636352"
+        },
+        {
+          "dissent": false,
           "id": "treaty-establishing-the-european-stability-mechanism",
           "kind": "event",
           "locator": "Q15991234"
+        },
+        {
+          "dissent": false,
+          "id": "treaty-of-accession-1985",
+          "kind": "event",
+          "locator": "Q9360737"
         },
         {
           "dissent": false,

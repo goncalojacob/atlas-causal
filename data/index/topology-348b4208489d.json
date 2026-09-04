@@ -7312,6 +7312,28 @@
     {
       "actors": [],
       "aliases": [],
+      "id": "1980-azores-islands-earthquake",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1980 Azores Islands earthquake",
+      "weight": 0,
+      "when": {
+        "date": "1980-01-01",
+        "end": 1980,
+        "start": 1980
+      },
+      "wikidata": "Q3306615",
+      "wikipedia": {
+        "en": "1980 Azores Islands earthquake",
+        "pt": "Sismo dos Açores de 1980"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
       "id": "1980-portuguese-legislative-election",
       "place": null,
       "region": "europe",
@@ -7395,6 +7417,182 @@
       "wikipedia": {
         "en": "1983 Portuguese legislative election",
         "pt": "Eleições legislativas portuguesas de 1983"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1983-turkish-embassy-attack-in-lisbon",
+      "place": "lisbon",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1983 Turkish embassy attack in Lisbon",
+      "weight": 0,
+      "when": {
+        "date": "1983-07-27",
+        "end": 1983,
+        "start": 1983
+      },
+      "wikidata": "Q349875",
+      "wikipedia": {
+        "en": "1983 Turkish embassy attack in Lisbon",
+        "pt": "Ataque à Embaixada da Turquia em Lisboa"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1985-portuguese-legislative-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1985 Portuguese legislative election",
+      "weight": 0,
+      "when": {
+        "date": "1985-10-06",
+        "end": 1985,
+        "start": 1985
+      },
+      "wikidata": "Q371408",
+      "wikipedia": {
+        "en": "1985 Portuguese legislative election",
+        "pt": "Eleições legislativas portuguesas de 1985"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1985-portuguese-local-elections",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1985 Portuguese local elections",
+      "weight": 0,
+      "when": {
+        "date": "1985-12-15",
+        "end": 1985,
+        "start": 1985
+      },
+      "wikidata": "Q7232778",
+      "wikipedia": {
+        "en": "1985 Portuguese local elections",
+        "pt": "Eleições autárquicas portuguesas de 1985"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1986-portuguese-presidential-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1986 Portuguese presidential election",
+      "weight": 0,
+      "when": {
+        "date": "1986-01-26",
+        "end": 1986,
+        "start": 1986
+      },
+      "wikidata": "Q3586628",
+      "wikipedia": {
+        "en": "1986 Portuguese presidential election",
+        "pt": "Eleições presidenciais portuguesas de 1986"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1987-european-parliament-election-in-portugal",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1987 European Parliament election in Portugal",
+      "weight": 0,
+      "when": {
+        "date": "1987-07-19",
+        "end": 1987,
+        "start": 1987
+      },
+      "wikidata": "Q2404857",
+      "wikipedia": {
+        "en": "1987 European Parliament election in Portugal",
+        "pt": "Eleições europeias de 1987 (Portugal)"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1987-portuguese-legislative-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1987 Portuguese legislative election",
+      "weight": 0,
+      "when": {
+        "date": "1987-07-19",
+        "end": 1987,
+        "start": 1987
+      },
+      "wikidata": "Q1343967",
+      "wikipedia": {
+        "en": "1987 Portuguese legislative election",
+        "pt": "Eleições legislativas portuguesas de 1987"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1989-european-parliament-election-in-portugal",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1989 European Parliament election in Portugal",
+      "weight": 0,
+      "when": {
+        "date": "1989-06-18",
+        "end": 1989,
+        "start": 1989
+      },
+      "wikidata": "Q2405083",
+      "wikipedia": {
+        "en": "1989 European Parliament election in Portugal",
+        "pt": "Eleições europeias de 1989 (Portugal)"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1989-portuguese-local-elections",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1989 Portuguese local elections",
+      "weight": 0,
+      "when": {
+        "date": "1989-12-17",
+        "end": 1989,
+        "start": 1989
+      },
+      "wikidata": "Q24541619",
+      "wikipedia": {
+        "en": "1989 Portuguese local elections",
+        "pt": "Eleições autárquicas portuguesas de 1989"
       }
     },
     {
@@ -7618,6 +7816,24 @@
     {
       "actors": [],
       "aliases": [],
+      "id": "assalto-ao-banco-nacional-ultramarino-da-malveira-em-6-de-outubro-de-1980",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Assalto ao Banco Nacional Ultramarino, da Malveira, em 6 de outubro de 1980",
+      "weight": 0,
+      "when": {
+        "date": "1980-10-06",
+        "end": 1980,
+        "start": 1980
+      },
+      "wikidata": "Q139913681"
+    },
+    {
+      "actors": [],
+      "aliases": [],
       "id": "assalto-ao-banco-pinto-e-sottomayor-de-lisboa-em-soure",
       "place": null,
       "region": "europe",
@@ -7650,6 +7866,64 @@
         "start": 1976
       },
       "wikidata": "Q117321949"
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "assassination-attempt-on-fernando-da-costa-rolo",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "assassination attempt on Fernando da Costa Rolo",
+      "weight": 0,
+      "when": {
+        "date": "1981-03-19",
+        "end": 1981,
+        "start": 1981
+      },
+      "wikidata": "Q115635121"
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "assassination-attempt-on-john-paul-ii-1982",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Assassination attempt on John Paul II (1982)",
+      "weight": 0,
+      "when": {
+        "date": "1982-05-12",
+        "end": 1982,
+        "start": 1982
+      },
+      "wikidata": "Q9386425"
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "assassination-of-erkut-akbay",
+      "place": "lisbon",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "assassination of Erkut Akbay",
+      "weight": 0,
+      "when": {
+        "date": "1982-06-07",
+        "end": 1982,
+        "start": 1982
+      },
+      "wikidata": "Q4808506",
+      "wikipedia": {
+        "en": "Assassination of Erkut Akbay",
+        "pt": "Assassinato de Erkut Akbay"
+      }
     },
     {
       "actors": [],
@@ -7690,6 +7964,24 @@
     {
       "actors": [],
       "aliases": [],
+      "id": "assassinato-de-rogerio-canha-e-sa",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Assassinato de Rogério Canha e Sá",
+      "weight": 0,
+      "when": {
+        "date": "1984-05-29",
+        "end": 1984,
+        "start": 1984
+      },
+      "wikidata": "Q138783119"
+    },
+    {
+      "actors": [],
+      "aliases": [],
       "id": "assault-on-banco-totta-e-acores-on-avenida-da-republica-in-lisbon-on-may-21-1976",
       "place": "lisbon",
       "region": "europe",
@@ -7704,6 +7996,60 @@
         "start": 1976
       },
       "wikidata": "Q117311793"
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "assault-on-sintra-s-finance-department-by-the-prp-br-on-25-02-1980",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Assault on Sintra's Finance Department, by the PRP-BR on 25-02-1980",
+      "weight": 0,
+      "when": {
+        "date": "1980-02-25",
+        "end": 1980,
+        "start": 1980
+      },
+      "wikidata": "Q115187238"
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "assault-on-tabaqueira-by-the-prp-br-on-january-31-1980",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Assault on Tabaqueira, by the PRP-BR, on January 31, 1980",
+      "weight": 0,
+      "when": {
+        "date": "1980-01-31",
+        "end": 1980,
+        "start": 1980
+      },
+      "wikidata": "Q115691683"
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "assault-on-the-grupo-8-cash-van-in-lisbon-carried-out-by-the-fp-25-which-yielded-108-thousand-contos-on-february-7-1984",
+      "place": "lisbon",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Assault on the Grupo 8 cash van, in Lisbon, carried out by the FP-25, which yielded 108 thousand contos, on February 7, 1984",
+      "weight": 0,
+      "when": {
+        "date": "1984-02-07",
+        "end": 1984,
+        "start": 1984
+      },
+      "wikidata": "Q115779750"
     },
     {
       "actors": [],
@@ -8123,6 +8469,27 @@
       }
     },
     {
+      "actors": [],
+      "aliases": [],
+      "id": "chiado-fire",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Chiado Fire",
+      "weight": 0,
+      "when": {
+        "date": "1988-08-25",
+        "end": 1988,
+        "start": 1988
+      },
+      "wikidata": "Q10301908",
+      "wikipedia": {
+        "pt": "Incêndio do Chiado"
+      }
+    },
+    {
       "actors": [
         {
           "actor": "mario-soares",
@@ -8492,6 +8859,27 @@
       }
     },
     {
+      "actors": [],
+      "aliases": [],
+      "id": "desastre-ambiental-de-almograve",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Desastre ambiental de Almograve",
+      "weight": 0,
+      "when": {
+        "date": "1989-07-14",
+        "end": 1989,
+        "start": 1989
+      },
+      "wikidata": "Q112726955",
+      "wikipedia": {
+        "pt": "Desastre ambiental de Almograve"
+      }
+    },
+    {
       "actors": [
         {
           "actor": "ramalho-eanes",
@@ -8712,6 +9100,27 @@
     {
       "actors": [],
       "aliases": [],
+      "id": "eleicoes-legislativas-regionais-na-madeira-em-1988",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "eleições legislativas regionais na Madeira em 1988",
+      "weight": 0,
+      "when": {
+        "date": "1988-10-09",
+        "end": 1988,
+        "start": 1988
+      },
+      "wikidata": "Q10271600",
+      "wikipedia": {
+        "pt": "Eleições legislativas regionais na Madeira em 1988"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
       "id": "eleicoes-legislativas-regionais-nos-acores-em-1980",
       "place": null,
       "region": "europe",
@@ -8749,6 +9158,27 @@
       "wikidata": "Q16144649",
       "wikipedia": {
         "pt": "Eleições legislativas regionais nos Açores em 1984"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "eleicoes-legislativas-regionais-nos-acores-em-1988",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "eleições legislativas regionais nos Açores em 1988",
+      "weight": 0,
+      "when": {
+        "date": "1988-10-09",
+        "end": 1988,
+        "start": 1988
+      },
+      "wikidata": "Q10271609",
+      "wikipedia": {
+        "pt": "Eleições legislativas regionais nos Açores em 1988"
       }
     },
     {
@@ -9838,6 +10268,24 @@
     {
       "actors": [],
       "aliases": [],
+      "id": "murder-of-delfim-de-almeida-fernandes-by-the-prp-br",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Murder of Delfim de Almeida Fernandes, by the PRP-BR",
+      "weight": 0,
+      "when": {
+        "date": "1980-02-25",
+        "end": 1980,
+        "start": 1980
+      },
+      "wikidata": "Q115210882"
+    },
+    {
+      "actors": [],
+      "aliases": [],
       "id": "murder-of-jorge-augusto-de-carvalho-porto-judiciary-police-officer",
       "place": null,
       "region": "europe",
@@ -10344,6 +10792,24 @@
     {
       "actors": [],
       "aliases": [],
+      "id": "robbery-of-banco-fonsecas-burnay-in-povoa-de-santo-adriao-on-october-13-1981",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Robbery of Banco Fonsecas & Burnay, in Póvoa de Santo Adrião, on October 13, 1981",
+      "weight": 0,
+      "when": {
+        "date": "1981-10-13",
+        "end": 1981,
+        "start": 1981
+      },
+      "wikidata": "Q111788515"
+    },
+    {
+      "actors": [],
+      "aliases": [],
       "id": "robbery-of-banco-totta-and-azores-in-mira-de-aire-on-october-15-1975",
       "place": null,
       "region": "europe",
@@ -10376,6 +10842,24 @@
         "start": 1977
       },
       "wikidata": "Q115539271"
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "robbery-of-the-totta-acores-bank-in-malveira-on-6-october-1980",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Robbery of the Totta & Açores Bank in Malveira, on 6 October 1980",
+      "weight": 0,
+      "when": {
+        "date": "1980-10-06",
+        "end": 1980,
+        "start": 1980
+      },
+      "wikidata": "Q115636352"
     },
     {
       "actors": [
@@ -10594,6 +11078,27 @@
       "wikidata": "Q15991234",
       "wikipedia": {
         "en": "Treaty establishing the European Stability Mechanism"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "treaty-of-accession-1985",
+      "place": "lisbon",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Treaty of Accession 1985",
+      "weight": 0,
+      "when": {
+        "date": "1985-06-12",
+        "end": 1985,
+        "start": 1985
+      },
+      "wikidata": "Q9360737",
+      "wikipedia": {
+        "en": "Treaty of Accession 1985"
       }
     },
     {

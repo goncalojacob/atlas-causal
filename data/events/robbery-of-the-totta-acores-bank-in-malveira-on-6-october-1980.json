@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "robbery-of-the-totta-acores-bank-in-malveira-on-6-october-1980",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q115636352",
+  "sitelinks": 0,
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q115636352"
+    }
+  ],
+  "title": "Robbery of the Totta & Açores Bank in Malveira, on 6 October 1980",
+  "summary": "Wikidata item Q115636352, imported by tools/import/wikidata.mjs. The item's own description reads \"Robbery carried out by the Popular Forces of 25 April, yielding 2,854,822 escudos, during which three people were killed\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1980,
+    "end": 1980,
+    "date": "1980-10-06"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}

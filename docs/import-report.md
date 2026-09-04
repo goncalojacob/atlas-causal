@@ -110,3 +110,31 @@ created event eleicoes-legislativas-regionais-nos-acores-em-1984 from Q16144649
 created event eleicoes-legislativas-regionais-na-madeira-em-1984 from Q10271599
 12 Wikipedia lead(s) cached under tools/import/cache/wikipedia
 25 created, 0 enriched, 0 refused, 0 ambiguous
+import: 25 item(s) this batch, 107 left after it, 27 call(s) spent
+created event 1985-portuguese-legislative-election from Q371408
+created event 1985-portuguese-local-elections from Q7232778
+created event 1986-portuguese-presidential-election from Q3586628
+created event 1987-european-parliament-election-in-portugal from Q2404857
+created event 1987-portuguese-legislative-election from Q1343967
+created event eleicoes-legislativas-regionais-na-madeira-em-1988 from Q10271600
+created event eleicoes-legislativas-regionais-nos-acores-em-1988 from Q10271609
+created event 1989-european-parliament-election-in-portugal from Q2405083
+created event 1989-portuguese-local-elections from Q24541619
+created event treaty-of-accession-1985 from Q9360737
+created event 1980-azores-islands-earthquake from Q3306615
+created event assault-on-tabaqueira-by-the-prp-br-on-january-31-1980 from Q115691683
+created event murder-of-delfim-de-almeida-fernandes-by-the-prp-br from Q115210882
+created event assault-on-sintra-s-finance-department-by-the-prp-br-on-25-02-1980 from Q115187238
+created event robbery-of-the-totta-acores-bank-in-malveira-on-6-october-1980 from Q115636352
+created event assalto-ao-banco-nacional-ultramarino-da-malveira-em-6-de-outubro-de-1980 from Q139913681
+created event assassination-attempt-on-fernando-da-costa-rolo from Q115635121
+created event robbery-of-banco-fonsecas-burnay-in-povoa-de-santo-adriao-on-october-13-1981 from Q111788515
+created event assassination-attempt-on-john-paul-ii-1982 from Q9386425
+created event assassination-of-erkut-akbay from Q4808506
+created event 1983-turkish-embassy-attack-in-lisbon from Q349875
+created event assault-on-the-grupo-8-cash-van-in-lisbon-carried-out-by-the-fp-25-which-yielded-108-thousand-contos-on-february-7-1984 from Q115779750
+created event assassinato-de-rogerio-canha-e-sa from Q138783119
+created event chiado-fire from Q10301908
+created event desastre-ambiental-de-almograve from Q112726955
+25 Wikipedia lead(s) cached under tools/import/cache/wikipedia
+25 created, 0 enriched, 0 refused, 0 ambiguous

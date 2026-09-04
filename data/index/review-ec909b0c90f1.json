@@ -6037,7 +6037,7 @@
     }
   ],
   "schema": 1,
-  "total": 685,
+  "total": 710,
   "warnings": [
     {
       "id": "1890-portuguese-legislative-election",
@@ -6418,6 +6418,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "1980-azores-islands-earthquake",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
       "id": "1980-portuguese-legislative-election",
       "kind": "event",
       "message": "event has no edges",
@@ -6437,6 +6443,54 @@
     },
     {
       "id": "1983-portuguese-legislative-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1983-turkish-embassy-attack-in-lisbon",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1985-portuguese-legislative-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1985-portuguese-local-elections",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1986-portuguese-presidential-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1987-european-parliament-election-in-portugal",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1987-portuguese-legislative-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1989-european-parliament-election-in-portugal",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1989-portuguese-local-elections",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"
@@ -6466,6 +6520,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "assalto-ao-banco-nacional-ultramarino-da-malveira-em-6-de-outubro-de-1980",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
       "id": "assalto-ao-banco-pinto-e-sottomayor-de-lisboa-em-soure",
       "kind": "event",
       "message": "event has no edges",
@@ -6473,6 +6533,24 @@
     },
     {
       "id": "assalto-ao-banco-pinto-e-sottomayor-em-albufeira-em-17-de-agosto-de-1976",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "assassination-attempt-on-fernando-da-costa-rolo",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "assassination-attempt-on-john-paul-ii-1982",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "assassination-of-erkut-akbay",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"
@@ -6490,7 +6568,31 @@
       "rule": "degree-zero"
     },
     {
+      "id": "assassinato-de-rogerio-canha-e-sa",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
       "id": "assault-on-banco-totta-e-acores-on-avenida-da-republica-in-lisbon-on-may-21-1976",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "assault-on-sintra-s-finance-department-by-the-prp-br-on-25-02-1980",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "assault-on-tabaqueira-by-the-prp-br-on-january-31-1980",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "assault-on-the-grupo-8-cash-van-in-lisbon-carried-out-by-the-fp-25-which-yielded-108-thousand-contos-on-february-7-1984",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"
@@ -6538,6 +6640,18 @@
       "rule": "degree-zero"
     },
     {
+      "id": "chiado-fire",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "desastre-ambiental-de-almograve",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
       "id": "eleicoes-legislativas-regionais-na-madeira-em-1976",
       "kind": "event",
       "message": "event has no edges",
@@ -6556,6 +6670,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "eleicoes-legislativas-regionais-na-madeira-em-1988",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
       "id": "eleicoes-legislativas-regionais-nos-acores-em-1980",
       "kind": "event",
       "message": "event has no edges",
@@ -6563,6 +6683,12 @@
     },
     {
       "id": "eleicoes-legislativas-regionais-nos-acores-em-1984",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "eleicoes-legislativas-regionais-nos-acores-em-1988",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"
@@ -6623,6 +6749,12 @@
     },
     {
       "id": "mueda-massacre",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "murder-of-delfim-de-almeida-fernandes-by-the-prp-br",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"
@@ -6700,6 +6832,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "robbery-of-banco-fonsecas-burnay-in-povoa-de-santo-adriao-on-october-13-1981",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
       "id": "robbery-of-banco-totta-and-azores-in-mira-de-aire-on-october-15-1975",
       "kind": "event",
       "message": "event has no edges",
@@ -6712,6 +6850,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "robbery-of-the-totta-acores-bank-in-malveira-on-6-october-1980",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
       "id": "saint-denis",
       "kind": "place",
       "message": "place is referenced by no event",
@@ -6719,6 +6863,12 @@
     },
     {
       "id": "treaty-establishing-the-european-stability-mechanism",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "treaty-of-accession-1985",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"

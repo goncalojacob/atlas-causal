@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "robbery-of-banco-fonsecas-burnay-in-povoa-de-santo-adriao-on-october-13-1981",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q111788515",
+  "sitelinks": 0,
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q111788515"
+    }
+  ],
+  "title": "Robbery of Banco Fonsecas & Burnay, in Póvoa de Santo Adrião, on October 13, 1981",
+  "summary": "Wikidata item Q111788515, imported by tools/import/wikidata.mjs. The item's own description reads \"robbery carried out by 6 elements of the Forças Populares 25 de Abril, where 2,443,855$90 was stolen, and having been shot in the heart, a popular man, Fernando de Abreu\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1981,
+    "end": 1981,
+    "date": "1981-10-13"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}

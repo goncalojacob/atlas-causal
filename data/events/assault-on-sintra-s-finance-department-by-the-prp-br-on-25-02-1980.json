@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "assault-on-sintra-s-finance-department-by-the-prp-br-on-25-02-1980",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q115187238",
+  "sitelinks": 0,
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q115187238"
+    }
+  ],
+  "title": "Assault on Sintra's Finance Department, by the PRP-BR on 25-02-1980",
+  "summary": "Wikidata item Q115187238, imported by tools/import/wikidata.mjs. The item's own description reads \"Robbery in Sintra, Portugal\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1980,
+    "end": 1980,
+    "date": "1980-02-25"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "assault-on-tabaqueira-by-the-prp-br-on-january-31-1980",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q115691683",
+  "sitelinks": 0,
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q115691683"
+    }
+  ],
+  "title": "Assault on Tabaqueira, by the PRP-BR, on January 31, 1980",
+  "summary": "Wikidata item Q115691683, imported by tools/import/wikidata.mjs. The item's own description reads \"robbery carried out by 5 members of the PRP-BR, with 2,100,000$00 stolen, destined to pay the salaries of part of its 1000 employees\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1980,
+    "end": 1980,
+    "date": "1980-01-31"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}

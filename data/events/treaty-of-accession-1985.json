@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "treaty-of-accession-1985",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q9360737",
+  "sitelinks": 9,
+  "wikipedia": {
+    "en": "Treaty of Accession 1985"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q9360737"
+    }
+  ],
+  "title": "Treaty of Accession 1985",
+  "summary": "Wikidata item Q9360737, imported by tools/import/wikidata.mjs. The item's own description reads \"1985 treaty of Accession to the European Union\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1985,
+    "end": 1985,
+    "date": "1985-06-12"
+  },
+  "place": "lisbon",
+  "region": null,
+  "actors": []
+}

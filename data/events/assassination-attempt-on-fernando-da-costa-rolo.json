@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "assassination-attempt-on-fernando-da-costa-rolo",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q115635121",
+  "sitelinks": 0,
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q115635121"
+    }
+  ],
+  "title": "assassination attempt on Fernando da Costa Rolo",
+  "summary": "Wikidata item Q115635121, imported by tools/import/wikidata.mjs. The item's own description reads \"attack perpetrated by the Popular Forces 25 de Abril, in Malveira, in March 1981\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1981,
+    "end": 1981,
+    "date": "1981-03-19"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}
