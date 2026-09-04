@@ -1838,24 +1838,20 @@ fixtures and the three static pages — sixteen assertions, all passing:
 
 - Repo: `~/atlas-causal`, branch `m0`.
 - Pull request #1: https://github.com/goncalojacob/atlas-causal/pull/1 — its
-  body is about **60.6 KB** against GitHub's 64 KB limit. Each milestone that
-  adds a section pays for it by cutting an older one to a summary that points
-  here: M8 cut M5's, M11 cut M7's, M12 cut M9's, M13 cut M10's, M14 cut
-  M11's, M15 cut M12's. The next section added has to cut another: M15's
-  section cost 5.1 KB against the 5.1 KB M12's cut saved, so the body is
-  **60,217 of GitHub's 65,536 characters** and the 5.3 KB left is one more
-  section and no margin. M13's is the longest still written out in full, and
-  M8's and M14's are next. A `#### Checks for Mn` heading contains the string
-  `## Checks`, so an insertion anchored on the top-level section has to
-  search for `\n## Checks\n` and assert what it found. Editing the
-  body from a run means sending the whole 60 KB back, which is more text than
-  a session can retype faithfully: M12 rebuilt it from the copy the read
-  returned and sent it with `curl` and `$GITHUB_TOKEN` rather than through the
-  GitHub tool, which takes the body as an argument. M13 did the same, and
-  never held the body in a shell argument either: read to a file, edited by a
-  script, sent as `--data-binary @patch.json`. M14 did the same again, and the
-  script asserts the result is under 64 KB and still contains its new headings
-  before it is sent.
+  body is **59,580 of GitHub's 65,536 characters** after M16. Each milestone
+  that adds a section pays for it by cutting an older one to a summary that
+  points here: M8 cut M5's, M11 cut M7's, M12 cut M9's, M13 cut M10's, M14
+  cut M11's, M15 cut M12's, M16 cut M13's — which was the longest still
+  written out, and paid for M16's 4.9 KB with 6.7 KB, so there is room for
+  one more section and a little margin. M8's and M14's are the longest left.
+  A `#### Checks for Mn` heading contains the string `## Checks`, so an
+  insertion anchored on the top-level section has to search for
+  `\n## Checks\n` and assert it found exactly one. Editing the body from a
+  run means sending the whole 60 KB back, which is more text than a session
+  can retype faithfully: read it to a file with `curl` and `$GITHUB_TOKEN`,
+  edit it with a script that asserts the result is under 64 KB and still
+  carries its new and its old headings, and PATCH it as
+  `--data-binary @patch.json`. Never hold the body in a shell argument.
 - Architecture page (artifact, now **behind** the repo file — revision 2;
   `ARCHITECTURE.md` is the source of truth):
   https://claude.ai/code/artifact/b3940d66-ad98-4de9-9bfd-aff8c77e6f36
@@ -1933,3 +1929,4 @@ M15 started 2026-09-04T09:30:40Z by scheduled
 M15 done
 
 M16 started 2026-09-04T10:20:57Z by shepherd
+M16 done
