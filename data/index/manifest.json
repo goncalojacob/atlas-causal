@@ -1,7 +1,7 @@
 {
   "counts": {
     "actors": 326,
-    "edges": 124,
+    "edges": 131,
     "events": 326,
     "narratives": 1,
     "places": 25,
@@ -11,9 +11,9 @@
     "sources": 34
   },
   "files": {
-    "review": "index/review-8097d34750c8.json",
-    "sources": "index/sources-2a74de213c27.json",
-    "topology": "index/topology-12ed5877d4e3.json"
+    "review": "index/review-3db064bd3daf.json",
+    "sources": "index/sources-553b194613be.json",
+    "topology": "index/topology-b4c5e5bae629.json"
   },
   "land": [
     {
@@ -81,6 +81,7 @@
   "roles": [
     "abolished",
     "acceded",
+    "acceding state",
     "administered",
     "admitted",
     "admitting body",
@@ -91,12 +92,15 @@
     "appointed",
     "as anp, took all 150 seats",
     "author",
+    "backed the losing candidate",
     "backer",
     "belligerent",
     "beneficiary",
     "borrower",
     "broke up the opposition campaign",
     "called the election as his opening",
+    "came first and formed a minority government",
+    "came first and led the government",
     "candidate",
     "claimed responsibility",
     "coalition party",
@@ -130,6 +134,7 @@
     "incumbent",
     "invader",
     "invoked",
+    "junior partner in the bloco central",
     "king in whose name it was called",
     "king, killed in the attack",
     "largest party, 62 seats",
@@ -164,6 +169,8 @@
     "president",
     "president under whom it was held",
     "prime minister",
+    "prime minister from june 1983",
+    "prime minister from november 1985",
     "re-elected",
     "re-elected for a second term",
     "re-elected unopposed for a fourth term",
@@ -186,6 +193,8 @@
     "supporter",
     "supporting party",
     "target",
+    "the communities being joined",
+    "the parliament being elected to",
     "the regime being constituted",
     "the regime filling its own presidency",
     "the regime restored by the may rising",

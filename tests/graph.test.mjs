@@ -151,7 +151,7 @@ test('each result carries the first step of its path and whether any step is dis
 test('25 April, horizon 2011, on the repository dataset', async () => {
   const adj = await adjacencyIn(path.join(ROOT, 'data'));
   const list = reachableBy(adj, 'carnation-revolution-1974', 2011);
-  assert.equal(list.length, 29);
+  assert.equal(list.length, 30);
   assert.equal(list.filter((r) => r.depth === 1).length, 8);
   // Every one of them has begun by the horizon, and none of them is the
   // event itself.

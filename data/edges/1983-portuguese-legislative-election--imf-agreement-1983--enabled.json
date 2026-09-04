@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "1983-portuguese-legislative-election--imf-agreement-1983--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    },
+    {
+      "source": "reis-2013-portuguese-slump",
+      "locator": null
+    }
+  ],
+  "from": "1983-portuguese-legislative-election",
+  "to": "imf-agreement-1983",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "A Fund programme is a political act before it is a technical one: it needs a government able to survive the devaluation and the restriction it commits to. The two years before this election had produced neither — the alliance was breaking up and the payments position was deteriorating through it. The Bloco Central took office in June 1983 with the two largest parties inside it and went to the Fund in the autumn, which is the arrangement that made the programme possible and also the arrangement that made it survivable. Whether the recession that followed was worth it is argued about; that this government is what allowed the agreement to be signed is not.",
+  "dispute": null
+}

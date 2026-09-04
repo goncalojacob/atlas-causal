@@ -5426,6 +5426,56 @@
     },
     {
       "aliases": [],
+      "confidence": "probable",
+      "from": "1980-portuguese-legislative-election",
+      "id": "1980-portuguese-legislative-election--constitutional-revision-1982--enabled",
+      "status": "active",
+      "supersededBy": null,
+      "to": "constitutional-revision-1982",
+      "type": "enabled"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "1980-portuguese-presidential-election",
+      "id": "1980-portuguese-presidential-election--constitutional-revision-1982--reacted-to",
+      "status": "active",
+      "supersededBy": null,
+      "to": "constitutional-revision-1982",
+      "type": "reacted-to"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "1983-portuguese-legislative-election",
+      "id": "1983-portuguese-legislative-election--imf-agreement-1983--enabled",
+      "status": "active",
+      "supersededBy": null,
+      "to": "imf-agreement-1983",
+      "type": "enabled"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "1983-portuguese-legislative-election",
+      "id": "1983-portuguese-legislative-election--treaty-of-accession-1985--enabled",
+      "status": "active",
+      "supersededBy": null,
+      "to": "treaty-of-accession-1985",
+      "type": "enabled"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "1985-portuguese-legislative-election",
+      "id": "1985-portuguese-legislative-election--cavaco-absolute-majority-1987--enabled",
+      "status": "active",
+      "supersededBy": null,
+      "to": "cavaco-absolute-majority-1987",
+      "type": "enabled"
+    },
+    {
+      "aliases": [],
       "confidence": "consensus",
       "from": "25-november-1975",
       "id": "25-november-1975--constitution-1976--enabled",
@@ -5942,6 +5992,16 @@
       "status": "active",
       "supersededBy": null,
       "to": "hat-nipah-and-same-massacres",
+      "type": "enabled"
+    },
+    {
+      "aliases": [],
+      "confidence": "consensus",
+      "from": "eec-accession-1986",
+      "id": "eec-accession-1986--1987-european-parliament-election-in-portugal--enabled",
+      "status": "active",
+      "supersededBy": null,
+      "to": "1987-european-parliament-election-in-portugal",
       "type": "enabled"
     },
     {
@@ -6492,6 +6552,16 @@
       "status": "active",
       "supersededBy": null,
       "to": "coup-attempt-11-march-1975",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "consensus",
+      "from": "treaty-of-accession-1985",
+      "id": "treaty-of-accession-1985--eec-accession-1986--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "eec-accession-1986",
       "type": "precondition-of"
     },
     {
@@ -8085,7 +8155,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "1980 Azores Islands earthquake",
       "weight": 0,
@@ -8101,7 +8171,20 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "psd",
+          "role": "led the winning alliance"
+        },
+        {
+          "actor": "cds-pp",
+          "role": "partner in the winning alliance"
+        },
+        {
+          "actor": "third-portuguese-republic",
+          "role": "the state holding the election"
+        }
+      ],
       "aliases": [],
       "id": "1980-portuguese-legislative-election",
       "place": null,
@@ -8110,7 +8193,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "1980 Portuguese legislative election",
-      "weight": 0,
+      "weight": 4,
       "when": {
         "date": "1980-10-05",
         "end": 1980,
@@ -8123,7 +8206,20 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "ramalho-eanes",
+          "role": "re-elected"
+        },
+        {
+          "actor": "psd",
+          "role": "backed the losing candidate"
+        },
+        {
+          "actor": "cds-pp",
+          "role": "backed the losing candidate"
+        }
+      ],
       "aliases": [],
       "id": "1980-portuguese-presidential-election",
       "place": null,
@@ -8132,7 +8228,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "1980 Portuguese presidential election",
-      "weight": 0,
+      "weight": 4,
       "when": {
         "date": "1980-12-07",
         "end": 1980,
@@ -8151,7 +8247,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "1982 Portuguese local elections",
       "weight": 0,
@@ -8167,7 +8263,20 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "partido-socialista",
+          "role": "came first and led the government"
+        },
+        {
+          "actor": "psd",
+          "role": "junior partner in the Bloco Central"
+        },
+        {
+          "actor": "mario-soares",
+          "role": "prime minister from June 1983"
+        }
+      ],
       "aliases": [],
       "id": "1983-portuguese-legislative-election",
       "place": null,
@@ -8176,7 +8285,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "1983 Portuguese legislative election",
-      "weight": 0,
+      "weight": 5,
       "when": {
         "date": "1983-04-25",
         "end": 1983,
@@ -8195,7 +8304,7 @@
       "place": "lisbon",
       "region": "europe",
       "regionMethod": "inside",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "1983 Turkish embassy attack in Lisbon",
       "weight": 0,
@@ -8211,7 +8320,20 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "psd",
+          "role": "came first and formed a minority government"
+        },
+        {
+          "actor": "cavaco-silva",
+          "role": "prime minister from November 1985"
+        },
+        {
+          "actor": "partido-socialista",
+          "role": "lost office"
+        }
+      ],
       "aliases": [],
       "id": "1985-portuguese-legislative-election",
       "place": null,
@@ -8220,7 +8342,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "1985 Portuguese legislative election",
-      "weight": 0,
+      "weight": 4,
       "when": {
         "date": "1985-10-06",
         "end": 1985,
@@ -8239,7 +8361,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "1985 Portuguese local elections",
       "weight": 0,
@@ -8261,8 +8383,8 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
-      "supersededBy": null,
+      "status": "merged",
+      "supersededBy": "soares-elected-president-1986",
       "title": "1986 Portuguese presidential election",
       "weight": 0,
       "when": {
@@ -8277,7 +8399,16 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "third-portuguese-republic",
+          "role": "the state holding the election"
+        },
+        {
+          "actor": "european-economic-community",
+          "role": "the parliament being elected to"
+        }
+      ],
       "aliases": [],
       "id": "1987-european-parliament-election-in-portugal",
       "place": null,
@@ -8286,7 +8417,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "1987 European Parliament election in Portugal",
-      "weight": 0,
+      "weight": 3,
       "when": {
         "date": "1987-07-19",
         "end": 1987,
@@ -8305,8 +8436,8 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
-      "supersededBy": null,
+      "status": "merged",
+      "supersededBy": "cavaco-absolute-majority-1987",
       "title": "1987 Portuguese legislative election",
       "weight": 0,
       "when": {
@@ -8327,7 +8458,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "1989 European Parliament election in Portugal",
       "weight": 0,
@@ -8349,7 +8480,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "1989 Portuguese local elections",
       "weight": 0,
@@ -10474,7 +10605,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "Assalto ao Banco Nacional Ultramarino, da Malveira, em 6 de outubro de 1980",
       "weight": 0,
@@ -10528,7 +10659,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "assassination attempt on Fernando da Costa Rolo",
       "weight": 0,
@@ -10546,7 +10677,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "Assassination attempt on John Paul II (1982)",
       "weight": 0,
@@ -10564,7 +10695,7 @@
       "place": "lisbon",
       "region": "europe",
       "regionMethod": "inside",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "assassination of Erkut Akbay",
       "weight": 0,
@@ -10622,7 +10753,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "Assassinato de Rogério Canha e Sá",
       "weight": 0,
@@ -10658,7 +10789,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "Assault on Sintra's Finance Department, by the PRP-BR on 25-02-1980",
       "weight": 0,
@@ -10676,7 +10807,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "Assault on Tabaqueira, by the PRP-BR, on January 31, 1980",
       "weight": 0,
@@ -10694,7 +10825,7 @@
       "place": "lisbon",
       "region": "europe",
       "regionMethod": "inside",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "Assault on the Grupo 8 cash van, in Lisbon, carried out by the FP-25, which yielded 108 thousand contos, on February 7, 1984",
       "weight": 0,
@@ -11114,7 +11245,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Cavaco Silva's absolute majority",
-      "weight": 3,
+      "weight": 4,
       "when": {
         "calendar": "gregorian",
         "date": "1987-07-19",
@@ -11129,7 +11260,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "Chiado Fire",
       "weight": 0,
@@ -11317,7 +11448,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "The revision that abolishes the Council of the Revolution",
-      "weight": 7,
+      "weight": 9,
       "when": {
         "calendar": "gregorian",
         "date": "1982-09-30",
@@ -11581,7 +11712,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "Desastre ambiental de Almograve",
       "weight": 0,
@@ -11711,7 +11842,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Portugal joins the EEC",
-      "weight": 11,
+      "weight": 13,
       "when": {
         "calendar": "gregorian",
         "date": "1986-01-01",
@@ -11787,7 +11918,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "eleições legislativas regionais na Madeira em 1980",
       "weight": 0,
@@ -11808,7 +11939,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "eleições legislativas regionais na Madeira em 1984",
       "weight": 0,
@@ -11829,7 +11960,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "eleições legislativas regionais na Madeira em 1988",
       "weight": 0,
@@ -11871,7 +12002,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "eleições legislativas regionais nos Açores em 1980",
       "weight": 0,
@@ -11892,7 +12023,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "eleições legislativas regionais nos Açores em 1984",
       "weight": 0,
@@ -11913,7 +12044,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "eleições legislativas regionais nos Açores em 1988",
       "weight": 0,
@@ -12508,7 +12639,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Second stabilisation agreement with the IMF",
-      "weight": 5,
+      "weight": 6,
       "when": {
         "calendar": "gregorian",
         "date": "1983-09",
@@ -13192,7 +13323,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "Murder of Delfim de Almeida Fernandes, by the PRP-BR",
       "weight": 0,
@@ -13839,7 +13970,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "Robbery of Banco Fonsecas & Burnay, in Póvoa de Santo Adrião, on October 13, 1981",
       "weight": 0,
@@ -13893,7 +14024,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "Robbery of the Totta & Açores Bank in Malveira, on 6 October 1980",
       "weight": 0,
@@ -14186,16 +14317,29 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "third-portuguese-republic",
+          "role": "acceding state"
+        },
+        {
+          "actor": "european-economic-community",
+          "role": "the Communities being joined"
+        },
+        {
+          "actor": "mario-soares",
+          "role": "signed as prime minister"
+        }
+      ],
       "aliases": [],
       "id": "treaty-of-accession-1985",
       "place": "lisbon",
       "region": "europe",
-      "regionMethod": "inside",
+      "regionMethod": "override",
       "status": "active",
       "supersededBy": null,
       "title": "Treaty of Accession 1985",
-      "weight": 0,
+      "weight": 5,
       "when": {
         "date": "1985-06-12",
         "end": 1985,

@@ -9,14 +9,19 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "summary-drafted"
     ]
   },
   "wikidata": "Q371408",
@@ -27,12 +32,28 @@
   },
   "sources": [
     {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1985 Portuguese legislative election\", revision 1372481943"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Eleições legislativas portuguesas de 1985\", revision 72812035"
+    },
+    {
       "source": "wikidata",
-      "locator": "Q371408"
+      "locator": null
     }
   ],
   "title": "1985 Portuguese legislative election",
-  "summary": "Wikidata item Q371408, imported by tools/import/wikidata.mjs. The item's own description reads \"election\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "An early election was held on 6 October 1985 after the Bloco Central broke: Aníbal Cavaco Silva, newly elected leader of the Social Democrats and a critic of the arrangement, pulled his party out and Mário Soares resigned. The Social Democrats came first without a majority and Cavaco Silva formed a minority government; the Democratic Renewal Party, founded around Ramalho Eanes, entered the Assembly as the fourth force and took enough of the vote to make any majority impossible. It is in the atlas as the government whose fall by censure motion in 1987 produced the first absolute majority of the democratic period.",
   "when": {
     "start": 1985,
     "end": 1985,
@@ -40,5 +61,18 @@
   },
   "place": null,
   "region": "europe",
-  "actors": []
+  "actors": [
+    {
+      "actor": "psd",
+      "role": "came first and formed a minority government"
+    },
+    {
+      "actor": "cavaco-silva",
+      "role": "prime minister from November 1985"
+    },
+    {
+      "actor": "partido-socialista",
+      "role": "lost office"
+    }
+  ]
 }

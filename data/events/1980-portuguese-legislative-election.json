@@ -9,14 +9,19 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "summary-drafted"
     ]
   },
   "wikidata": "Q606275",
@@ -27,12 +32,28 @@
   },
   "sources": [
     {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1980 Portuguese legislative election\", revision 1372482157"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Eleições legislativas portuguesas de 1980\", revision 71194426"
+    },
+    {
       "source": "wikidata",
-      "locator": "Q606275"
+      "locator": null
     }
   ],
   "title": "1980 Portuguese legislative election",
-  "summary": "Wikidata item Q606275, imported by tools/import/wikidata.mjs. The item's own description reads \"election\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "A legislative election was held on 5 October 1980, ten months after the last one, because the December 1979 ballot had only filled out the legislature elected in 1976, which the constitution ran to 14 October 1980. The Democratic Alliance won again and Francisco Sá Carneiro stayed in office; he was killed in the Camarate air crash two months later, on 4 December, and Francisco Pinto Balsemão took the government. It is in the atlas as the majority that carried the constitutional revision of 1982 — the first legislature of the new regime to run its full course, and the one that removed the military tutelage from the constitution.",
   "when": {
     "start": 1980,
     "end": 1980,
@@ -40,5 +61,18 @@
   },
   "place": null,
   "region": "europe",
-  "actors": []
+  "actors": [
+    {
+      "actor": "psd",
+      "role": "led the winning alliance"
+    },
+    {
+      "actor": "cds-pp",
+      "role": "partner in the winning alliance"
+    },
+    {
+      "actor": "third-portuguese-republic",
+      "role": "the state holding the election"
+    }
+  ]
 }

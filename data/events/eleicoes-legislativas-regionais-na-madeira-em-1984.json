@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "eleicoes-legislativas-regionais-na-madeira-em-1984",
   "kind": "event",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,11 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "m22-retracted"
+    ],
+    "note": "Retracted in M22: the Madeiran regional election of 14 October 1984, won again by the Social Democrats under Alberto João Jardim. The atlas keeps the first exercise of an institution and the ballot at which it became a cycle, and retracts the routine repetitions after them; the third Madeiran regional election is one. The only link available is the constitutional one the earlier records already carry. Revisit if a consequence is written."
   },
   "wikidata": "Q10271599",
   "sitelinks": 2,

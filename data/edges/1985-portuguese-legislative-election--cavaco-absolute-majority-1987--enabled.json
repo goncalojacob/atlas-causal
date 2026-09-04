@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "1985-portuguese-legislative-election--cavaco-absolute-majority-1987--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    }
+  ],
+  "from": "1985-portuguese-legislative-election",
+  "to": "cavaco-absolute-majority-1987",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The absolute majority of 1987 was not won from opposition: it was won by a government already in office, twenty-one months old, brought down by a censure motion the voters were then asked to judge. This election is what put that government there and what made it a minority — four parties in the Assembly and a fifth, the PRD, holding enough seats to deny anyone a majority. The atlas argues the sequence rather than an inevitability: without a minority Cavaco government there is no censure motion, and without the censure motion there is no election in July 1987 for a majority to be won at.",
+  "dispute": null
+}

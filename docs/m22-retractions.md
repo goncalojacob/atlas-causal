@@ -92,3 +92,85 @@ asserts the date, the two places and the fact of the killings and explicitly
 refuses to assert who carried them out. Its one edge argues the circumstance —
 the war opened by the invasion of December 1975 — and not the hand. A reviewer
 who cannot establish the rest should retract it.
+
+---
+
+## 1980s — 25 of 33 retracted, 2 merged, 6 wired
+
+Three groups, and one principle stated here because it governs the rest of
+the file.
+
+**The principle: an institution is wired at its foundation, not at every
+repetition.** The atlas keeps the first local election under the constitution
+of 1976 and the second, at which local power stopped being a novelty and
+became a cycle; it keeps the first regional assemblies of the Azores and of
+Madeira; it keeps the first European election. It retracts the repetitions
+after them. The alternative was an edge reading "the constitution of 1976
+created elected local government" attached to twelve ballots between 1982 and
+2025, which is one argument filed twelve times, and filing it twelve times to
+keep twelve records is the thing the brief forbids. A repetition comes back
+the moment a particular consequence is written for it.
+
+Retracted under that principle: `1982-portuguese-local-elections`,
+`1985-portuguese-local-elections`, `1989-portuguese-local-elections`,
+`1989-european-parliament-election-in-portugal`,
+`eleicoes-legislativas-regionais-nos-acores-em-1980`, `-1984`, `-1988`,
+`eleicoes-legislativas-regionais-na-madeira-em-1980`, `-1984`, `-1988`.
+The Madeiran one of 1980 is the first win of Alberto João Jardim, who held
+the regional government until 2015; that is a reason to write him an actor
+record and an event of his own, not a reason to keep a ballot the atlas can
+say nothing further about.
+
+**The armed far left, nine more records**, on the same reasoning as the 1970s:
+raids on Tabaqueira and on the Sintra finance department and the killing of
+Delfim de Almeida Fernandes in early 1980, two Malveira bank robberies on
+6 October 1980 that may well be one raid entered twice, the attempt on
+Fernando da Costa Rolo in 1981, the Póvoa de Santo Adrião robbery of 1981,
+the FP-25's cash-van raid of February 1984 and the killing of Rogério Canha e
+Sá in May 1984. The atlas holds no PRP-BR, no FP-25 and no trials, so none of
+them has anything to attach to.
+
+**Four events with no reachable consequence.**
+
+- `1980-azores-islands-earthquake` — 1 January 1980, magnitude about 7
+  between Terceira and São Jorge, 73 dead and more than 400 injured, the
+  housing of three islands wrecked. This is the largest thing retracted in
+  the decade. What the atlas would need is the reconstruction, or the seismic
+  rules that followed, or the regional government's part in either; it holds
+  none of the three, and wiring the earthquake to the regional election nine
+  months later would be an invention.
+- `chiado-fire` — 25 August 1988, from the Grandella store. Its consequence
+  is the reconstruction Álvaro Siza directed over the following two decades,
+  which is not in the atlas. Write that and the fire comes back.
+- `desastre-ambiental-de-almograve` — the oil spill of 14 July 1989 from an
+  accident at the port of Sines. The atlas holds nothing about Sines, the
+  refinery complex or environmental regulation.
+- `assassination-attempt-on-john-paul-ii-1982` — Fátima, 12 May 1982, a year
+  and a day after Saint Peter's Square. The atlas holds nothing about the
+  Church in Portugal after 1974, and the papal visit it interrupted is not a
+  record here either.
+
+**Two Armenian attacks**, `assassination-of-erkut-akbay` (7 June 1982) and
+`1983-turkish-embassy-attack-in-lisbon` (27 July 1983, seven dead). They
+belong to one campaign against Turkish diplomatic targets in Europe, and the
+atlas holds nothing of that campaign. The only relation between the two is
+that they were part of it, and "part of the same campaign" is not one of the
+five edge types. Inventing `inspired` between them would be a guess about
+motive dressed as an argument.
+
+### Merged, not retracted
+
+- `1986-portuguese-presidential-election` → `soares-elected-president-1986`
+- `1987-portuguese-legislative-election` → `cavaco-absolute-majority-1987`
+
+### Wired
+
+`1980-portuguese-legislative-election`, `1980-portuguese-presidential-election`,
+`1983-portuguese-legislative-election`, `treaty-of-accession-1985`,
+`1985-portuguese-legislative-election`,
+`1987-european-parliament-election-in-portugal` — seven edges between them,
+and the chain they make is the decade's argument: the alliance of 1979 and
+1980 takes the constitution back from the military in 1982, cannot take the
+presidency, breaks; the Bloco Central of 1983 signs with the Fund and with
+the Communities; the minority of 1985 falls by censure and becomes the
+majority of 1987, which is where the atlas already was.

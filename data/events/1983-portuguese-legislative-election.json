@@ -9,14 +9,19 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "summary-drafted"
     ]
   },
   "wikidata": "Q597504",
@@ -27,12 +32,28 @@
   },
   "sources": [
     {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1983 Portuguese legislative election\", revision 1372482000"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Eleições legislativas portuguesas de 1983\", revision 72170884"
+    },
+    {
       "source": "wikidata",
-      "locator": "Q597504"
+      "locator": null
     }
   ],
   "title": "1983 Portuguese legislative election",
-  "summary": "Wikidata item Q597504, imported by tools/import/wikidata.mjs. The item's own description reads \"election\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "An early election was held on 25 April 1983 after the Democratic Alliance came apart under Pinto Balsemão. The Socialists came first without a majority and the Social Democrats second, and the two governed together in what was called the Bloco Central, with Mário Soares as prime minister from June 1983. That government did the two things the atlas holds from the middle of the decade: it went to the International Monetary Fund in the autumn of 1983 with the country's payments in crisis, and it finished the accession negotiation with the European Communities, signing at the Jerónimos in June 1985. It is in the atlas as the point at which the two parties that had spent seven years against each other governed together, and paid for it at the next election.",
   "when": {
     "start": 1983,
     "end": 1983,
@@ -40,5 +61,18 @@
   },
   "place": null,
   "region": "europe",
-  "actors": []
+  "actors": [
+    {
+      "actor": "partido-socialista",
+      "role": "came first and led the government"
+    },
+    {
+      "actor": "psd",
+      "role": "junior partner in the Bloco Central"
+    },
+    {
+      "actor": "mario-soares",
+      "role": "prime minister from June 1983"
+    }
+  ]
 }

@@ -9,14 +9,19 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "summary-drafted"
     ]
   },
   "wikidata": "Q3069005",
@@ -27,12 +32,28 @@
   },
   "sources": [
     {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1980 Portuguese presidential election\", revision 1371810635"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Eleições presidenciais portuguesas de 1980\", revision 71840117"
+    },
+    {
       "source": "wikidata",
-      "locator": "Q3069005"
+      "locator": null
     }
   ],
   "title": "1980 Portuguese presidential election",
-  "summary": "Wikidata item Q3069005, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The second direct presidential election of the new regime was held on 7 December 1980, three days after Francisco Sá Carneiro died in the Camarate air crash. Ramalho Eanes was re-elected in a single round against General Soares Carneiro, the candidate the Democratic Alliance had put up against him. The date was set by the decree that approved the constitution, which ran the first presidential term to three months after the end of the first legislature. It is in the atlas because the alliance that held the Assembly could not take the presidency with it, and the constitutional revision it carried two years later has to be read against that.",
   "when": {
     "start": 1980,
     "end": 1980,
@@ -40,5 +61,18 @@
   },
   "place": null,
   "region": "europe",
-  "actors": []
+  "actors": [
+    {
+      "actor": "ramalho-eanes",
+      "role": "re-elected"
+    },
+    {
+      "actor": "psd",
+      "role": "backed the losing candidate"
+    },
+    {
+      "actor": "cds-pp",
+      "role": "backed the losing candidate"
+    }
+  ]
 }

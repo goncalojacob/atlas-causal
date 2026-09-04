@@ -2,8 +2,8 @@
   "schema": 1,
   "id": "1987-portuguese-legislative-election",
   "kind": "event",
-  "status": "active",
-  "supersededBy": null,
+  "status": "merged",
+  "supersededBy": "cavaco-absolute-majority-1987",
   "aliases": [],
   "authors": [
     {
@@ -13,11 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "m22-merged"
+    ],
+    "note": "Merged in M22 into cavaco-absolute-majority-1987, which is the same event: the early election of 19 July 1987, at which the Social Democrats won the first absolute majority of the democratic period. This record keeps the Wikidata id the import brought and names its survivor rather than becoming an anonymous tombstone."
   },
   "wikidata": "Q1343967",
   "sitelinks": 9,

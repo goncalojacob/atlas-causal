@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "1980-portuguese-legislative-election--constitutional-revision-1982--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    }
+  ],
+  "from": "1980-portuguese-legislative-election",
+  "to": "constitutional-revision-1982",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The revision of 1982 was voted by the Assembly this election returned, and it needed two thirds of it. The Democratic Alliance had made abolishing the Council of the Revolution its purpose before it had a majority; what the ballot of 5 October 1980 gave it was a full four-year legislature in which to negotiate the two thirds with the Socialists rather than a remnant term running out in weeks. The atlas keeps this edge and the one from the election of December 1979 apart because they argue different things: 1979 put the alliance in a position to demand the revision, 1980 gave it the time to get it.",
+  "dispute": null
+}
