@@ -18,7 +18,7 @@ async function defaultFetchJson(url, init) {
 }
 
 // Pure assembly from already-loaded pieces; loadAtlas() does the fetching.
-export function createAtlas({ manifest, topology, sources, land = null, dataRoot = 'data/', fetchJson = defaultFetchJson }) {
+export function createAtlas({ manifest, topology, sources, land = null, palette = null, dataRoot = 'data/', fetchJson = defaultFetchJson }) {
   const events = new Map(topology.events.map((e) => [e.id, e]));
   const edges = new Map(topology.edges.map((e) => [e.id, e]));
   const sourceMap = new Map(sources.map((s) => [s.id, s]));
@@ -193,6 +193,14 @@ export function createAtlas({ manifest, topology, sources, land = null, dataRoot
   const territoryYear = (year) => (year === null || presenceCoverage === null ? year : Math.min(year, presenceCoverage.to));
   const shardForYear = (year) => presenceShards.find((s) => year >= s.from && year <= s.to) ?? null;
 
+  // Which of the eight hues an actor's territory is drawn in. Generated
+  // offline by tools/build-palette.mjs from the borders themselves, so it is
+  // a property of the map and not of the polity; null for an actor the
+  // palette has not been rebuilt for, and for every dataset that has no
+  // palette at all.
+  const hues = new Map(Object.entries(palette?.actors ?? {}));
+  const hueOfActor = (id) => (hues.has(id) ? hues.get(id) : null);
+
   const geometry = new Map();
   const geometryLoading = new Map();
   // Synchronous: what is already in hand, so a render never waits.
@@ -232,6 +240,7 @@ export function createAtlas({ manifest, topology, sources, land = null, dataRoot
     dependenciesOf,
     presenceShards,
     presenceCoverage,
+    hueOfActor,
     territoryYear,
     shardForYear,
     loadedGeometry,
@@ -283,5 +292,9 @@ export async function loadAtlas({ dataRoot = 'data/', landFile = null, fetchJson
   ]);
   const landPath = landFile === false ? null : landFile ?? (manifest.land?.[0] ? `${dataRoot}${manifest.land[0].file}` : null);
   const land = landPath ? await fetchJson(landPath) : null;
-  return createAtlas({ manifest, topology, sources: sourcesIndex.sources, land, dataRoot, fetchJson });
+  // The palette is tiny — one number per actor — and the map wants it on the
+  // first frame it draws territories in, so it comes with the topology rather
+  // than with the shard whose outlines it colours.
+  const palette = manifest.palette ? await fetchJson(`${dataRoot}${manifest.palette}`) : null;
+  return createAtlas({ manifest, topology, sources: sourcesIndex.sources, land, palette, dataRoot, fetchJson });
 }

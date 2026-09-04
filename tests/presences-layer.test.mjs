@@ -7,7 +7,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import path from 'node:path';
-import { presenceTitle, presenceClasses } from '../src/map/layers/presences.js';
+import { presenceTitle, presenceClasses, hueActorOf } from '../src/map/layers/presences.js';
 import { loadAtlas } from '../src/data.js';
 import { ROOT } from './helpers.mjs';
 
@@ -31,14 +31,37 @@ test('classes separate its own ground from somebody\'s, and mark the selection',
   const own = { actor: 'a', dependencyOf: null, confidence: 'consensus', id: 'a-1' };
   const colony = { actor: 'b', dependencyOf: 'a', confidence: 'consensus', id: 'b-1' };
   const none = { actorId: null, dependencyIds: new Set() };
-  assert.equal(presenceClasses(own, none), 'presence sovereign');
-  assert.equal(presenceClasses(colony, none), 'presence dependency');
-  assert.equal(presenceClasses({ ...own, confidence: 'disputed' }, none), 'presence sovereign disputed');
+  assert.equal(presenceClasses(own, none), 'presence sovereign unhued');
+  assert.equal(presenceClasses(colony, none), 'presence dependency unhued');
+  assert.equal(presenceClasses({ ...own, confidence: 'disputed' }, none), 'presence sovereign unhued disputed');
   // Selecting an actor fills its own ground and the ground it held.
   const selected = { actorId: 'a', dependencyIds: new Set(['b-1']) };
-  assert.equal(presenceClasses(own, selected), 'presence sovereign of-actor');
-  assert.equal(presenceClasses(colony, selected), 'presence dependency of-actor');
-  assert.equal(presenceClasses(colony, { actorId: 'c', dependencyIds: new Set() }), 'presence dependency');
+  assert.equal(presenceClasses(own, selected), 'presence sovereign unhued of-actor');
+  assert.equal(presenceClasses(colony, selected), 'presence dependency unhued of-actor');
+  assert.equal(presenceClasses(colony, { actorId: 'c', dependencyIds: new Set() }), 'presence dependency unhued');
+});
+
+test('a dependency is drawn in its owner\'s hue, not its own', () => {
+  const own = { actor: 'a', dependencyOf: null, confidence: 'consensus', id: 'a-1' };
+  const colony = { actor: 'b', dependencyOf: 'a', confidence: 'consensus', id: 'b-1' };
+  // Danzig's case: held by nobody who is an actor here. It was already drawn
+  // as its own ground, and it keeps its own hue to match.
+  const mandate = { actor: 'b', dependencyOf: null, dependencyKind: 'mandate', confidence: 'consensus', id: 'b-2' };
+  const hueOf = (id) => ({ a: 3, b: 6 })[id] ?? null;
+  const ctx = { actorId: null, dependencyIds: new Set(), hueOf };
+  assert.equal(hueActorOf(colony), 'a');
+  assert.equal(hueActorOf(mandate), 'b');
+  assert.equal(presenceClasses(own, ctx), 'presence sovereign hue-3');
+  assert.equal(presenceClasses(colony, ctx), 'presence dependency hue-3', "the owner's hue");
+  assert.equal(presenceClasses(mandate, ctx), 'presence sovereign hue-6');
+  // An actor the palette has never been rebuilt for keeps the old wash.
+  assert.equal(presenceClasses({ ...own, actor: 'z' }, ctx), 'presence sovereign unhued');
+});
+
+test('the palette reaches the atlas as one hue per actor', async () => {
+  const a = await atlas();
+  assert.equal(a.hueOfActor('fixture-polity-three'), 0);
+  assert.equal(a.hueOfActor('nobody'), null, 'an actor with no territory has no hue');
 });
 
 test('data.js loads a shard by year and caches it', async () => {

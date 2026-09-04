@@ -16,6 +16,7 @@
     "topology": "index/topology-138a9774e9ed.json"
   },
   "land": [],
+  "palette": "geo/palette.json",
   "presenceShards": [
     {
       "file": "geo/presences/1100-1199.json",

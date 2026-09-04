@@ -8,6 +8,10 @@ import path from 'node:path';
 
 export const KIND_DIRS = Object.freeze({ event: 'events', edge: 'edges', source: 'sources', actor: 'actors', presence: 'presences', place: 'places', relation: 'relations', narrative: 'narratives' });
 export const PRESENCE_GEO_DIR = 'geo/presences';
+// Which of the eight territory hues each actor is drawn in; written by
+// tools/build-palette.mjs, named in the manifest so the site fetches it only
+// where it exists.
+export const PALETTE_FILE = 'geo/palette.json';
 export const IMPORTS_DIR = 'imports';
 
 async function readJson(file) {
@@ -140,6 +144,12 @@ export async function readPresenceShards(dataDir, { keys = false } = {}) {
     shards.push(shard);
   }
   return shards.sort((a, b) => a.from - b.from || a.to - b.to);
+}
+
+// The palette's file name when it is there, null when it is not: a dataset
+// with no presences has nothing to colour and the manifest says nothing.
+export function paletteFile(dataDir) {
+  return existsSync(path.join(dataDir, ...PALETTE_FILE.split('/'))) ? PALETTE_FILE : null;
 }
 
 // Land files are listed in the manifest by epoch. Only the present exists;

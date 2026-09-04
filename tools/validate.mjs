@@ -15,6 +15,7 @@ import { createValidator } from '../src/validate/schema.js';
 import { createRegionDeriver, NEAREST_TOLERANCE } from '../src/util/geo.js';
 import { readSchemaFiles, readRecords, readRegions, readRegionPolygons, readPresenceShards, readImportMaps, readCachedLeads, DEFAULT_IMPORT_KIND, KIND_DIRS } from './lib/read.mjs';
 import { buildIndex, readIndex, compareIndex } from './build-index.mjs';
+import { buildPalette, readPalette, comparePalette, PALETTE_FILE } from './build-palette.mjs';
 import { countDrafts } from '../src/review/queue.js';
 import { countCitations } from '../src/review/citations.js';
 
@@ -252,6 +253,12 @@ export async function runValidation(dataDir = DEFAULT_DATA, { index = false } = 
   }
 
   if (index) {
+    // The palette first: the manifest names it, so an unbuilt palette would
+    // otherwise be reported as a stale index and send whoever reads the
+    // message to the wrong tool.
+    for (const p of comparePalette(await readPalette(dataDir), await buildPalette(dataDir))) {
+      errors.push({ rule: 16, id: null, file: PALETTE_FILE, path: '', message: `data/${PALETTE_FILE} is not what build-palette.mjs produces (${p}); run node tools/build-palette.mjs` });
+    }
     const built = await buildIndex(dataDir);
     const existing = await readIndex(dataDir);
     for (const p of compareIndex(existing, built)) {

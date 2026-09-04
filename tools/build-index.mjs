@@ -16,7 +16,7 @@ import { buildTopology, byId, rolesInUse } from '../src/validate/core.js';
 import { checkRules } from '../src/validate/rules.js';
 import { createRegionDeriver } from '../src/util/geo.js';
 import { digestOf, isDraft } from '../src/review/queue.js';
-import { readRecords, readRegions, readRegionPolygons, readLandFiles, readPresenceShards } from './lib/read.mjs';
+import { readRecords, readRegions, readRegionPolygons, readLandFiles, readPresenceShards, paletteFile } from './lib/read.mjs';
 
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 export const DEFAULT_DATA = path.join(ROOT, 'data');
@@ -111,6 +111,10 @@ export async function buildIndex(dataDir = DEFAULT_DATA) {
     // The territory shards, in year order. The site loads the one that
     // covers the year on the slider and nothing else.
     presenceShards,
+    // The hue each actor's territory is drawn in, when there is a palette to
+    // draw from: written by tools/build-palette.mjs, not by this tool, and
+    // named here so the site fetches it in one request with the rest.
+    palette: paletteFile(dataDir),
   });
 
   const unresolved = topology.events.filter((e) => e.status === 'active' && e.place && !e.region);

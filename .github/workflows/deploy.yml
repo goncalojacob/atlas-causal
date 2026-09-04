@@ -37,16 +37,21 @@ jobs:
         run: node tools/validate.mjs
       - name: Tests
         run: node --test
+      # The palette before the index: the manifest names the palette file, so
+      # building them the other way round would write a manifest for a file
+      # that is about to change.
+      - name: Build the territory palette
+        run: node tools/build-palette.mjs
       - name: Build the index
         run: node tools/build-index.mjs
-      - name: Assert the index is what the builder produces
+      - name: Assert both are what the builders produce
         run: node tools/validate.mjs --index --quiet
-      - name: Commit the index if it changed
+      - name: Commit the index and the palette if they changed
         run: |
-          if [ -n "$(git status --porcelain -- data/index)" ]; then
+          if [ -n "$(git status --porcelain -- data/index data/geo/palette.json)" ]; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add data/index
+            git add data/index data/geo/palette.json
             git commit -m "chore: regenerate data/index"
             git push
           else

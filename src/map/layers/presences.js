@@ -7,14 +7,23 @@
 // stack four Angolas on each other. The far end is the year the reader has
 // dragged to, and the timeline's band says which year that is.
 //
-// Honesty in the drawing, not a legend of forty hues. Everything is cobalt
-// on white: an independent state is a thin line and a very faint fill; a
-// dependency is a lighter line and a slightly stronger fill, so the eye
-// separates "its own" from "somebody's" without being told which sovereign
-// by colour; a presence whose confidence is `disputed` is dashed, which is
-// what a disputed edge already looks like on this map. Who was where is
-// answered by hovering and by clicking, which is the only honest way when
-// two hundred polities share one palette.
+// Colour, and what it does and does not say. Since M19 a state is filled
+// with one of eight muted hues and outlined in the same hue darkened; a
+// dependency is filled with the lighter tint OF ITS OWNER and outlined
+// dotted, so Portugal, Angola-before-1975 and Goa read as one family and
+// Belgian Congo reads as another; a presence whose confidence is `disputed`
+// is dashed, which is what a disputed edge already looks like on this map.
+//
+// The hue means "not the same as the one beside it" and nothing else. Which
+// actor gets which is a graph colouring over the borders themselves
+// (tools/build-palette.mjs → data/geo/palette.json), so there is no legend
+// by hue and there is not going to be one: who was where is still answered by
+// hovering and by clicking, which is the only honest answer when two hundred
+// polities share eight colours. about.html says this in prose.
+//
+// What colour must not do is take the top of the hierarchy. The selected
+// actor is cobalt over everything — drawn last as well as loudest — and the
+// walked chain stays madder above that, so territory colour sits under both.
 
 import { svg, svgTitle } from '../../util/dom.js';
 import { geometryPath } from './land.js';
@@ -38,9 +47,19 @@ export function presenceTitle(presence, { nameOf }) {
   return `${who}${held ? ` — ${held}` : ''} · ${when}${presence.confidence === 'disputed' ? ' · disputed' : ''}`;
 }
 
-export function presenceClasses(presence, { actorId, dependencyIds }) {
+// Whose hue a presence is drawn in: its owner's when it is somebody's, its
+// own otherwise. The same rule the palette was built with, and it has to be
+// the same rule or a dependency would be filled with a hue chosen for a
+// border it does not have.
+export const hueActorOf = (presence) => presence.dependencyOf ?? presence.actor;
+
+export function presenceClasses(presence, { actorId, dependencyIds, hueOf = () => null }) {
+  const hue = hueOf(hueActorOf(presence));
   return ['presence',
     presence.dependencyOf ? 'dependency' : 'sovereign',
+    // No hue at all is a territory the palette has never been rebuilt for:
+    // it keeps the old cobalt wash rather than disappearing.
+    hue === null ? 'unhued' : `hue-${hue}`,
     presence.confidence === 'disputed' ? 'disputed' : '',
     presence.actor === actorId || dependencyIds.has(presence.id) ? 'of-actor' : '',
   ].filter(Boolean).join(' ');
@@ -60,6 +79,7 @@ export function createPresencesLayer(group, projection, { onSelect, atlas }) {
   });
 
   const nameOf = (id) => atlas.actors.get(id)?.name ?? null;
+  const hueOf = (id) => atlas.hueOfActor(id);
 
   return {
     // year: astronomical, the window's far end; clamped by the atlas to the
@@ -94,19 +114,23 @@ export function createPresencesLayer(group, projection, { onSelect, atlas }) {
       const dependencyIds = new Set(
         actorId ? (atlas.dependenciesOf.get(actorId) ?? []).map((p) => p.id) : [],
       );
+      const isOfActor = (p) => p.actor === actorId || dependencyIds.has(p.id);
       const key = `${shard.file}|${actorId ?? ''}|${visible.map((p) => p.id).join(',')}`;
       if (key === signature) return { drawn: visible.length, pending: false };
       signature = key;
 
       group.replaceChildren();
-      for (const presence of visible) {
+      // The selected actor's ground last, so its cobalt is over every hue
+      // rather than under whichever territory happens to sort after it.
+      const order = [...visible].sort((a, b) => Number(isOfActor(a)) - Number(isOfActor(b)));
+      for (const presence of order) {
         const outline = outlines.get(presence.geometry.key);
         if (!outline) continue;
         const d = geometryPath(outline, projection.project);
         if (!d) continue;
         group.appendChild(svg('path', {
           d,
-          class: presenceClasses(presence, { actorId, dependencyIds }),
+          class: presenceClasses(presence, { actorId, dependencyIds, hueOf }),
           'fill-rule': 'evenodd',
           'data-actor': presence.actor,
           'data-presence': presence.id,

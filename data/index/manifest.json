@@ -23,6 +23,7 @@
       "to": null
     }
   ],
+  "palette": "geo/palette.json",
   "presenceShards": [
     {
       "file": "geo/presences/1886-1913.json",
