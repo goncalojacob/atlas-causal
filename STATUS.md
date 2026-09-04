@@ -6,7 +6,72 @@ session ends. `ARCHITECTURE.md` is the target; this file is the position.
 
 ## Last updated
 
-2026-09-04, after M18 (`docs/m18-brief.md`): there is a **list for the owner
+2026-09-04, after M19 (`docs/m19-brief.md`): **the atlas has a look.** Two
+things changed and they are not the same thing.
+
+**Colour on the map.** A territory is no longer a cobalt wash like every other
+territory: there are **eight muted hues**, tokens in `src/style.css` like every
+colour here, with a lighter tint of each for dependencies. Which actor gets
+which is **generated, not authored**: `tools/build-palette.mjs` rasterises the
+boundaries of every presence shard onto a quarter-degree grid, works out who
+touches whom in each period — weighted by how much border they share — and
+colours that graph so that **no two neighbours are ever alike**, writing
+`data/geo/palette.json`, one small integer per actor. `validate.mjs --index`
+checks it for freshness exactly as it checks the index, and the manifest names
+it so the site fetches it with the topology. The hue belongs to the **actor**,
+so a territory keeps its colour as the years pass, and a **dependency is drawn
+in its owner's tint**, which is what makes Portugal, Angola-before-1975 and Goa
+one family and Belgian Congo another. On this dataset — 189 hue-holding actors,
+656 adjacencies, a maximum degree of 86 — the colouring comes out with **no
+conflicts at all** and 15 to 26 actors per hue. The hues sit **under** the
+hierarchy of emphasis, which is now a decision in `ARCHITECTURE.md` rather than
+a habit: the selected actor is cobalt over every hue (and drawn last), the
+walked chain is madder over that.
+
+**A styled interface.** Two self-hosted typefaces under the OFL —
+**EB Garamond** for what the atlas says, a revival of a roman cut in the 1540s,
+inside the period this project exists to describe, and **Public Sans** for what
+the interface says — in `src/fonts/` with their licences and a README saying
+which file came from which commit of which repository. No CDN: 528 KB of woff2
+served from here, against the 4.4 MB of outlines the map already loads. With
+them a **type scale** in rem (the root font size is no longer a fixed 14px, so
+a reader who has set their browser to 20px gets a bigger atlas), a spacing
+scale, tabular figures on everything compared down a column, and one focus
+ring. The **masthead** has three zones — who this is, what you are looking
+through, where else you can go — and carries the one azulejo touch in the
+interface: a tile band of diamonds along its lower edge, drawn as an SVG mask
+so the shape is SVG, the colour is a token, and all five pages share one copy.
+The **panel** is a stack of cards made of space and rules rather than boxes,
+with a dispute marked twice so a list of consequences shows its disagreements
+without being read, citations set as footnotes, and the actor card's relations
+and territory as two-column tables. The **timeline** draws an event of one day
+as a filled mark rather than a six-pixel empty ring, quietens the stack counts
+under the marks they annotate, and gives the band's three labels a line each.
+The **graph** carries a key to the five line patterns, drawn with the same CSS
+rules as the lines so the two cannot drift apart.
+
+**Contrast is a test now**, not an intention: `tests/contrast.test.mjs` holds
+every pair of ink and ground against WCAG AA, every line against 3:1, and the
+cobalt of a mark against each of the eight washes it can be drawn over. Two
+tokens moved to pass it — `--ink-soft` was 4.33:1 on the ground a search result
+is highlighted with, and `--cobalt-soft` was 2.93:1 on paper while drawing the
+graph's edges. No dark mode.
+
+**Screenshots**, taken by `tools/screens.mjs` — which drives a headless browser
+through its own command line and serves the repository from `tools/serve.mjs`,
+because Puppeteer is an npm package and this repository does not have those:
+
+- `docs/screens/m19-map-1911.png` — the colonial world in eight hues, no two
+  neighbours alike.
+- `docs/screens/m19-map-1975.png` — the same actors keeping their hues after
+  independence.
+- `docs/screens/m19-map-angola.png` — Angola selected, filled cobalt over its
+  hue, with its territory table on the card.
+- `docs/screens/m19-event-card.png` — the panel: title, prose, consequences.
+- `docs/screens/m19-graph.png` — the graph and the key to the five patterns.
+- `docs/screens/m19-about.png` — a reading page on the same tokens.
+
+Before that, 2026-09-04, after M18 (`docs/m18-brief.md`): there is a **list for the owner
 to tick**. `data/imports/wikidata-seeds.json` now carries **126 queries**, one
 per type per decade — elections, coups and uprisings, treaties, referendums,
 massacres, legislation, independences, disasters, battles and wars, over the
@@ -128,7 +193,7 @@ correction bundle for the issue path, and the public site gains no backend.
 
 ## Phase
 
-**M0 to M18 built, plus the map usability work, on branch `m0`, pull
+**M0 to M19 built, plus the map usability work, on branch `m0`, pull
 request #1 open against `main`.** M13 was the last milestone in the original
 run protocol's order; M14 ran after it from `docs/m14-brief.md` on the
 `brief-m14` side branch, and M15 from `docs/m15-brief.md`, which arrived on
@@ -141,11 +206,12 @@ Action's commits back into `m0`; the reconcile cursor in
 second reconcile pass would do nothing until the cursor is cleared or new
 records are written. **M18** wrote the 126 queries into the seeds
 file, ran them on `import/candidates-2026-09-04c` and merged the result:
-`docs/m18-candidates.md`, 250 candidates for the owner to tick. **The chain
-stops there.** M19 (`docs/m19-brief.md`, on the branch `brief-m19`) imports
-what is ticked, and nothing is ticked yet. M8 changed no structure
+`docs/m18-candidates.md`, 250 candidates for the owner to tick. **Nothing is
+ticked yet**, and importing what is ticked is still waiting on the owner —
+M19 turned out to be something else entirely: `docs/m19-brief.md`, which
+arrived on the branch `brief-m19`, is **the look**, and it is built. M8 changed no structure
 and wrote no revision, as its brief allows.
-`ARCHITECTURE.md` **revision 16** is the specification; its opening note says what changed and why (revision 4
+`ARCHITECTURE.md` **revision 17** is the specification; its opening note says what changed and why (revision 4
 added the `actor` kind; revision 5 added `cluster.js`, `weight` in the
 index and `prominence` as a reserved override; revision 6 added the
 `presence` kind, the CC BY-NC-SA licence and its one exception, and moved
@@ -170,7 +236,9 @@ revision 14 made a lane a grouping with four values and no grouping as the
 default, added `lanes.js`, `lens.js` and `grouping.js`, and put `focus`,
 `group` and `lanes` in the state; revision 15 added the three identity
 fields, rules 21 and 22, the per-citation verification flags, `wikipedia.js`
-and `review/citations.js`).
+and `review/citations.js`; revision 17 added the territory palette and its
+tool, the two self-hosted typefaces as assets, and the hierarchy of emphasis
+as a decision).
 The M5 brief asks for revision 5; the map work had already taken that
 number.
 
@@ -1641,6 +1709,77 @@ object. Every later card gets a file.
     "In the atlas" reads item identifiers, and 79 of the 80 events here
     carry none — M17 could not match them. The top of the page says to check
     a familiar title before ticking it.
+125. **The greedy colouring breaks ties by the least-used hue, and a settling
+    pass follows it.** The brief asks for "a greedy graph colouring with a
+    stable order (actor id)", and that is what runs; what the brief does not
+    say is which free hue to take when several are free. Plain first-fit put
+    **72 of 189 actors in the first hue and 3 in the last** — a map that looks
+    like it has three colours — so the tie-break is the hue used least so far,
+    then the lowest index. Greedy alone then left the **United Kingdom sharing
+    with ten neighbours at once**, because by the time the ids reach it every
+    hue is spoken for; a settling pass asks every actor again, in id order,
+    whether some hue shares less border than the one it has, and moves it when
+    the answer is yes, for at most eight rounds and only on strict
+    improvement. With both, the atlas's own borders come out with **no
+    conflicts and 15 to 26 actors per hue**.
+126. **Adjacency carries a weight — how much border two territories share —
+    and the colouring minimises shared border rather than counting
+    neighbours.** The brief says to spill "to the closest available hue" when
+    eight is not enough. Eight cannot always be enough here: an empire is
+    drawn in one hue wherever it reaches, so the United Kingdom of 1911 is a
+    neighbour of a quarter of the world and no eighth of a palette is free of
+    it. Something has to share, and the honest choice is the shortest border
+    rather than the fewest neighbours — sharing with Lesotho is a better
+    picture than sharing with Portugal in Africa.
+127. **The palette is `dependencyOf ?? actor`, so an actor that is only ever
+    somebody's dependency has no entry in the file.** It never needs one: it
+    is drawn in its owner's tint, and the renderer looks the hue up by the
+    same rule the tool coloured by. The file therefore names 189 actors, not
+    the 252 that hold territory.
+128. **The eight hues alternate in lightness (0.825 and 0.745), not only in
+    hue angle.** The brief asks for "eight muted hues … low saturation,
+    mid-light", which is what the first attempt was: one lightness, eight
+    angles, the two closest washes 0.036 apart in OKLab. That is over the
+    threshold for a large flat field and under it for a country — Portugal
+    and Spain share the longest border on this map and read as one colour at
+    the size Portugal is drawn. Alternating the lightness doubles the smallest
+    separation to 0.060 without leaving the family. The tokens are also listed
+    in the order whose smallest step from one to the next is largest, because
+    the colouring hands out the least-used hue and so works through them
+    roughly in order.
+129. **The manifest names the palette file, and the palette must be built
+    before the index.** The alternative was a fetch that 404s on a dataset
+    with no palette. `deploy.yml` runs the two tools in that order and commits
+    both; `validate.mjs --index` reports the palette first, so an unbuilt
+    palette does not read as a stale index and send somebody to the wrong
+    tool.
+130. **Two colour tokens moved.** `--ink-soft` from `#5c6577` to `#535b6b` and
+    `--cobalt-soft` from `#7f97c9` to `#798fbf`, both to clear WCAG AA where
+    they are actually drawn. The brief asks for the contrast to be checked and
+    documented; it did not anticipate that the existing palette would fail.
+131. **The root font size is no longer fixed at 14px.** A type scale in rem
+    over a `font-size: 14px` root is a scale that ignores the reader's own
+    setting. `html` is `100%` now and the interface is `0.9375rem`, so
+    everything is a little larger than it was and grows with the browser's
+    own font size.
+132. **The serif ships in two files, not three: no bold Garamond.** Nothing in
+    the design sets a serif in bold — headings are large and normal-weight,
+    which is what the azulejo direction wants — and a weight nothing uses
+    would be 240 KB nobody downloads.
+133. **Three files outside `style.css` changed for the look.**
+    `lanes.js` now says whether a bar was widened to the minimum, so the
+    timeline can draw an instant as a mark rather than as an empty ring;
+    `timeline.js` gives the band's three labels a line each and draws one year
+    label when the window is one year wide; `panel/actor.js` wraps a row's
+    trailing metadata so that relations and territory can be tables. The brief
+    allows "small markup where needed" and these are that.
+134. **Two tools nobody asked for.** `tools/lib/colour.mjs` (sRGB ⇄ OKLab,
+    perceptual distance, WCAG contrast — tool- and test-side only, because
+    nothing in the browser computes a colour) and `tools/screens.mjs`, which
+    takes the brief's screenshots by driving a headless browser through its
+    own command line. Both exist so that the two claims this milestone makes —
+    "no two of these are confusable" and "this is what it looks like" — are
+    reproducible rather than asserted.
 
 ## Dates to verify
 
@@ -1997,7 +2136,9 @@ fixtures and the three static pages — sixteen assertions, all passing:
   branch, so that writing it did not disturb the running chain, and was
   copied onto `m0` by the run that built it; `docs/m15-brief.md` and the
   briefs for M16, M17 and M18 arrived the same way on `brief-m15`, with
-  `docs/review-2026-09-04-plan.md` and the amended run protocol; the adversarial review is `docs/review-2026-09-01.md`
+  `docs/review-2026-09-04-plan.md` and the amended run protocol;
+  `docs/m19-brief.md` arrived on `brief-m19` and was copied onto `m0` by the
+  run that built it; the adversarial review is `docs/review-2026-09-01.md`
   and the plan review `docs/review-2026-09-03-plan.md`. The run protocol the
   overnight runs follow is `docs/run-protocol.md`.
 - **Which CShapes entities could be split into a colony and a successor
@@ -2072,3 +2213,4 @@ M18 started 2026-09-04T12:23:01Z by shepherd
 M18 done
 
 M19 started 2026-09-04T15:25:36Z by scheduled
+M19 done
