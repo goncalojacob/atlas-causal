@@ -92,6 +92,7 @@ src/graph.js               consequences, ancestors, convergence, shortest paths 
 src/horizon.js             pure: what the selected event had led to by a year, and the set the views light
 src/narrative.js           pure: what a step of a narrative is about, the chain at it, the window it needs;  narrative-mode.js  applies that to the store and remembers what reading replaced
 src/citation.js            pure: a source as a citation, its identifiers as links, the bibliography's order
+src/wikipedia.js           pure: which article a record's identity offers, and the URL it becomes
 src/cluster.js             pure: which marks overlap at this zoom; the timeline uses it in one dimension
 src/search.js              pure: titles, every name of an actor or a place, and a source's title and creators, folded and ranked;  search-box.js  the input and the keys
 src/map/projection.js      lon/lat ⇄ SVG (equirectangular); the only file a projection change touches
@@ -106,7 +107,7 @@ src/sources/main.js        bootstrap for sources.html;  bibliography.js  the lis
 src/contribute/bundle.js   the pure half of the form: fields, bundle assembly, duplicate search
 src/contribute/form.js     the form itself; submit.js copies the bundle and opens the issue
 src/contribute/main.js     bootstrap for contribute.html
-src/review/queue.js        pure: what is still unreviewed, with the validator's warnings against each;  sign.js  the signature, the retraction and what it carries;  save.js  which of the two paths a save takes
+src/review/queue.js        pure: what is still unreviewed, with the validator's warnings against each;  sign.js  the signature, the retraction and what it carries;  save.js  which of the two paths a save takes;  citations.js  which citations somebody has checked against the source
 src/review/editor.js       one record in the contribution form's own fields, validated on every keystroke;  main.js  bootstrap for review.html
 src/validate/schema.js     JSON Schema subset validator; fails closed on unknown keywords
 src/validate/rules.js      cross-record invariants 2–19 and the warnings; pure
@@ -187,6 +188,21 @@ An edge is a small historiographical argument, so `explanation` and `sources`
 are required. Five edge types exist (`caused`, `enabled`, `reacted-to`,
 `precondition-of`, `inspired`) specifically so everything does not collapse into
 plain causation. Do not add a generic type.
+
+An event, an actor and a place may carry **identity fields** — `wikidata`,
+`wikipedia` (language → article title) and `sitelinks` — all optional, all
+additive, and written by the import rather than by hand; the contribution
+form derives only `wikidata`, from a pasted Wikidata URL, and the review
+dashboard shows all three read-only. They are identifiers and never evidence:
+the card offers "Read more on Wikipedia" as a way *out* of the atlas, and
+everything the atlas asserts stays in the record. **`sitelinks` feeds
+nothing** — not the map, not `weight`, not `prominence`. An edge may not be
+`consensus` when every supporting citation is a Wikipedia record (rule 22).
+
+A record's `review` block may also say which of its citations somebody has
+opened and checked against the source (`review.citations`). That is a **flag
+and not a gate**: it is counted by the validator, shown in the queue and on
+the open record, and Sign warns about it and signs anyway.
 
 `confidence` separates consensus from debate. The interface shows the
 difference. Presenting a disputed link as fact is the worst mistake this project

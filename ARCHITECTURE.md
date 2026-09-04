@@ -4,8 +4,74 @@ What the Atlas causal is meant to become, structurally. `CLAUDE.md` has the
 rules, `CONTEXT.md` the reasoning, `STATUS.md` where we are right now. This
 file is the target: the shape every milestone builds toward.
 
-Revision 14, 4 September 2026. Sections marked ● exist in v1; things marked ○
+Revision 15, 4 September 2026. Sections marked ● exist in v1; things marked ○
 are reserved by a line in this file only — no folder, no schema, no code.
+
+**What revision 15 changed, and why.** Three optional fields on a record, one
+optional block inside another, and two rules. No new kind, nothing removed,
+and nothing that was drawn before is drawn differently.
+
+*A record may say where else the same thing is catalogued.* `wikidata`
+(`^Q[1-9][0-9]*$`), `wikipedia` (language code → article title) and
+`sitelinks` (an integer), all optional, on `event`, `actor` and `place` —
+the three kinds that are about a thing in the world. An edge and a narrative
+are arguments *about* things, and nobody else's database has an item for
+them. The fields are **additive and import-written**: M16's tool writes them
+where they are absent and never over a value, the contribution form derives
+`wikidata` alone from a pasted Wikidata URL, and the review dashboard shows
+all three read-only, because a wrong item is corrected on Wikidata and
+re-imported rather than typed in here. A record that has never been near the
+import looks exactly as it did before they existed — no key, no null.
+
+*They are identifiers and never evidence.* What the atlas asserts is in the
+record; this only says where to find the same thing elsewhere, so that a
+machine can find a record again and a reader can go and read somebody else's
+account. The card offers **"Read more on Wikipedia"** in the reader's
+language when there is an article in it, else English, else the first there
+is, always saying which — `src/wikipedia.js`, pure, and the language is
+checked against a pattern before it becomes a hostname. The titles join the
+search as further names, and the label stays the atlas's own. **`sitelinks`
+feeds nothing**: not `prominence`, whose reservation below stands, and not
+`weight`. It is a stored fact for an editorial decision nobody has taken,
+and storing it is cheaper than fetching it again when they do — which is
+also why it is the one of the three the topology does not carry.
+
+*Rule 21* is what only the set of records can say: one item is claimed by at
+most one record **of a kind** (two kinds may claim it, because a polity and
+the place it is named after are two records and the atlas does not decide
+they are one thing); a `wikipedia` title stands only beside the item it
+belongs to, a title with nothing behind it being a guess about which article
+is meant; and a language key is a language code. *Rule 22* is what the
+citation list can say: an edge may not be `consensus` when **every**
+supporting citation is a Wikipedia record. An encyclopedia reports
+scholarship rather than being it. `WIKIPEDIA_SOURCES` in `rules.js` is that
+list, and adding an edition adds a line to it, exactly as adding an import
+adds one to `IMPORT_AUTHORS`. Deliberately not folded into rule 9: that rule
+asks whether two authors are independent and this one asks what kind of
+thing was cited.
+
+*A citation can be checked, and that is a flag rather than a gate.*
+`review.citations` maps a cited source's id to `{ verified: { by, on } }`.
+Whether the record's text is right and whether each book says what the record
+says it says are two acts, often days apart, so the second is recorded per
+citation instead of being folded into the signature. The dashboard lists
+every source the open record rests on with a way to the work itself and a box
+that stamps the tick; the queue says how many are unchecked; the validator
+prints the count across the dataset; **Sign warns and signs anyway**, because
+a reviewer who has read the record and not yet got hold of the book is
+further along than nobody having read it at all. Rule 3 checks that a key
+names a source the record actually cites — a flag left behind by a citation
+that was edited away would otherwise count as checked for ever — and signing
+clears the block with the rest of `review`. `place`, `source` and `region`
+cite nothing and are untouched by all of it.
+
+*Three source records exist for the imports to cite*: `wikidata` (a
+`dataset`) and `wikipedia-en` / `wikipedia-pt` (`web`, with **identical**
+`creators`, which is what keeps rule 9 from counting two editions as two
+independent authorities). All three are CC BY-SA 4.0 *as records*; the CC0 of
+Wikidata's data and the CC BY-SA of Wikipedia's text are stated on the
+records and at the head of `data/LICENSE`, which also says that nothing here
+holds Wikipedia prose — only titles, which are names and not the article.
 
 **What revision 14 changed, and why.** Nothing in the data model. Two ideas
 the interface had been confusing with others, separated and given a file
@@ -531,9 +597,17 @@ later as `i18n` overlays; the base never changes.
   Action or derived from git at index time. The one exception is signing a
   record in `review.html` through `tools/serve.mjs`, on the maintainer's own
   machine (revision 13).
-- `review`: optional, `{ "flags": ["date"], "note": "…" }`. What still wants
-  checking on this record and why — its own standing, never a claim about the
-  world. `review.html` filters on the flags; signing removes the block.
+- `review`: optional, `{ "flags": ["date"], "note": "…", "citations": {…} }`.
+  What still wants checking on this record and why — its own standing, never a
+  claim about the world. `review.html` filters on the flags; signing removes
+  the block. `citations` maps a **cited source's id** to
+  `{ "verified": { "by", "on" } }`: which of the works this record names a
+  person has opened and checked against, which is a different act from
+  signing and often a later one. Rule 3 checks the key is a source the record
+  cites. It is a flag and not a gate — the validator counts what is
+  unchecked, the queue and the dashboard show it, Sign warns and signs.
+- `wikidata`, `wikipedia`, `sitelinks`: optional, on `event`, `actor` and
+  `place` only, and described under Identity below.
 - `license`: enum `CC-BY-SA-4.0 | CC-BY-NC-SA-4.0 | PD | CC0-1.0 | ODbL-1.0`,
   validated per directory. `data/events|edges|sources` → `CC-BY-SA-4.0` only.
   `data/presences/` may also be `CC-BY-NC-SA-4.0`, because a presence is
@@ -603,6 +677,32 @@ than a historiographical argument, so rule 6 exempts it as it does `source`
 and `region` records. Its `sources` may be empty all the same, for the place
 whose location is itself argued over. A place is *not* a territory: what
 ground an actor held is a presence, with an outline and dates.
+
+### Identity ● — where else the same thing is catalogued
+
+```json
+"wikidata": "Q186496",
+"wikipedia": { "en": "Carnation Revolution", "pt": "Revolução dos Cravos" },
+"sitelinks": 62
+```
+
+Three optional fields on the three kinds that are about a thing in the world:
+`event`, `actor`, `place`. An edge and a narrative are arguments *about*
+things and have no item. They are **identifiers and never evidence** — what
+the atlas asserts is in the record, and this says only where to find the same
+thing elsewhere — and they are **additive**: the import (`M16`) writes them
+where they are absent and never over a value, the contribution form derives
+`wikidata` from a pasted Wikidata URL and refuses to guess one from a
+Wikipedia title, and the review dashboard shows all three read-only. A record
+the import has not touched carries none of the keys.
+
+`wikipedia` is allowed only beside `wikidata` and its keys are language codes
+(rule 21), because the code becomes a hostname in the link the card offers.
+`sitelinks` **feeds nothing** — not `prominence`, not `weight`, not the map,
+not the search — and is stored because the editorial decision it is evidence
+for has not been taken. The topology carries `wikidata` (rule 21's uniqueness
+has to hold against the whole atlas) and `wikipedia` (the card offers the
+link without a fetch); `sitelinks` stays out of it.
 
 ### Event ●
 
@@ -930,6 +1030,8 @@ layout, and the graph view is built the first time it is asked for.
 | `graph.js` | Consequences, ancestors, convergence, the tree of shortest paths outward and what an event led to by a year. Pure functions over adjacency; results ordered by type, then confidence, or by path length then year. | The DOM. |
 | `horizon.js` | Puts the traversal and the horizon year together: the list the panel draws and the `Map<id, depth>` the map, the graph view and the timeline fade by. Empty unless a year was chosen. | The DOM, and which view is asking. |
 | `citation.js` | One source → the citation as a line, its identifiers as link targets, the order a bibliography sorts in, the grouping of its citers. Escapes nothing: the caller does. | Where it will be drawn. |
+| `wikipedia.js` | Which article a record's identity offers and the URL it becomes: the reader's language, then English, then the first there is, with the language checked before it becomes a hostname; and the titles as further search names. Pure, escapes nothing. | That the atlas has its own text, and where the link will be drawn. |
+| `review/citations.js` | The per-citation verification flags: the rows the dashboard draws, what is still unchecked, the count across a dataset, and a tick set or taken back without mutating anything. Pure. | The DOM, and whether anybody is going to sign. |
 | `map/projection.js` | lon/lat → SVG coordinates and back. | Everything else. |
 | `cluster.js` | Groups points that overlap at the current zoom, picks each group's representative by `weight`, says which groups no zoom could part and where a group comes apart. Pure, and used in two dimensions by the map and in one by the timeline. | The DOM, the projection, what a point means. |
 | `util/window.js` | Resolves a null bound against the data's extent, says what overlaps the window, and owns the "map at Y" rule. Pure. | The DOM, and which view is asking. |
@@ -999,7 +1101,8 @@ Errors:
 2. `id` matches the slug regex, is unique across all kinds and all aliases,
    and equals the file name. Aliases are unique across ids and aliases.
 3. Every reference resolves — `from`, `to`, `sources[].source`,
-   `dispute.sources[].source`, `supersededBy`, `region`.
+   `dispute.sources[].source`, `supersededBy`, `region`, and every key of
+   `review.citations`, which names a source the record itself cites.
 4. Arrow of time on the lenient bound: `from.start.min ≤ to.start.max`
    (astronomical).
 5. The edge graph is a DAG; same-year ties broken by `date` where present.
@@ -1042,6 +1145,15 @@ Errors:
     `window` whose years are years and which opens before it closes. Whether
     a `ref` resolves to an event or an edge is rule 3; whether an active
     narrative walks only active records is rule 11.
+21. A record's identity holds together: `wikidata` is claimed by at most one
+    record of a kind (two kinds may claim one item); `wikipedia` stands only
+    beside a `wikidata`, and its keys are language codes; and only `event`,
+    `actor` and `place` carry any of the three at all.
+22. An edge is not `consensus` when **every** supporting citation is a
+    Wikipedia record (`WIKIPEDIA_SOURCES` in `rules.js`). An encyclopedia
+    reports the scholarship rather than being it. Separate from rule 9 on
+    purpose: 9 asks whether two authors are independent, 22 asks what kind of
+    thing was cited.
 
 `data/imports/` is not records and has no rule number. `tools/validate.mjs`
 checks it against `schema/v1/import-map.json` and then checks what a shape
@@ -1098,7 +1210,9 @@ from two sources of which either may be the wrong one.
 | Source pages and the bibliography ● | built in M10: `citations` and `citationCount` in the sources index, `?source=`, `sources.html` | the citers are the index's, so a narrative kind joins the grouping by appearing in `CITER_ORDER` and nothing else changes |
 | The horizon ● | built in M10: `shortestPaths`/`pathTo`/`reachableBy` in `graph.js`, `horizon.js`, `?horizon=` | the year is a bound on `start.min`, so a bucketed deep-time scale changes nothing here; the reachable set is a `Map<id, depth>` and a view that wants five bands instead of three changes one function |
 | The lens and the grouping ● | built in M14: `src/lanes.js`, `src/lens.js`, `src/grouping.js`, `focus`/`group`/`lanes` in the state, the bands of `graph-view/layout.js` | a fifth grouping is one case in `lanesFor` and one option in the picker; the cap and the "Other" lane are one constant each; `region` returning as the default is one value in `defaultState()` |
-| Editorial emphasis on the map | a `prominence` field on the event record; `cluster.js` reads `prominence ?? weight` | ○ reserved by this line: derived `weight` in the index is the only measure now, and it is mechanical |
+| Identity and the link out ● | built in M15: `wikidata`/`wikipedia`/`sitelinks` on three kinds, rules 21 and 22, `src/wikipedia.js`, the link on three cards, the titles in the search, the three Wikimedia source records | the fields are additive and import-written, so a second catalogue is three more optional keys and one more `identityOf`; `sitelinks` is stored and read by nothing, waiting for the decision it is evidence for |
+| Checking a citation ● | built in M15: `review.citations`, the dashboard's boxes, the queue's count, the validator's line | keyed by the source id rather than by position, so editing the citation list does not move anybody's ticks; a flag and not a gate, so making it one later is one line in Sign |
+| Editorial emphasis on the map | a `prominence` field on the event record; `cluster.js` reads `prominence ?? weight` | ○ reserved by this line: derived `weight` in the index is the only measure now, and it is mechanical. `sitelinks` is **not** it: how many encyclopedias wrote about something is not this atlas's judgement of it |
 
 ## Scale, for the record
 
