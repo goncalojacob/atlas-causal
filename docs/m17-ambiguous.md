@@ -332,3 +332,171 @@ nothing on Wikidata is called "Legislative election of 2019".
 `event` · searched for **Legislative election of 2022**
 
 nothing on Wikidata is called "Legislative election of 2022".
+
+## legislative-election-2024
+
+`event` · searched for **Legislative election of 2024**
+
+nothing on Wikidata is called "Legislative election of 2024".
+
+## legislative-election-2025
+
+`event` · searched for **Legislative election of 2025**
+
+nothing on Wikidata is called "Legislative election of 2025".
+
+## macau-handover-1999
+
+`event` · 1999 · searched for **Handover of Macau**
+
+1 item(s) were read and each failed a test.
+
+- [`Q847839`](https://www.wikidata.org/wiki/Q847839) **transfer of sovereignty over Macau** — transfer of sovereignty over Macau from Portugal to China — 1999 — Q25929224
+  - none of its classes (Q25929224) is in data/imports/wikidata-seeds.json → classes
+
+## marcelo-elected-president-2016
+
+`event` · searched for **Marcelo Rebelo de Sousa elected president**
+
+nothing on Wikidata is called "Marcelo Rebelo de Sousa elected president".
+
+## marcelo-reelected-2021
+
+`event` · searched for **Marcelo Rebelo de Sousa re-elected**
+
+nothing on Wikidata is called "Marcelo Rebelo de Sousa re-elected".
+
+## monarchy-of-the-north-1919
+
+`event` · searched for **The Monarchy of the North**
+
+nothing on Wikidata is called "The Monarchy of the North".
+
+## montenegro-government-2024
+
+`event` · searched for **The Montenegro government takes office**
+
+nothing on Wikidata is called "The Montenegro government takes office".
+
+## mozambique-war-begins-1964
+
+`event` · searched for **Beginning of the war in Mozambique**
+
+nothing on Wikidata is called "Beginning of the war in Mozambique".
+
+## nationalisations-1975
+
+`event` · searched for **Nationalisation of banks and insurance**
+
+nothing on Wikidata is called "Nationalisation of banks and insurance".
+
+## nato-founding-1949
+
+`event` · searched for **Portugal signs the North Atlantic Treaty**
+
+nothing on Wikidata is called "Portugal signs the North Atlantic Treaty".
+
+## noite-sangrenta-1921
+
+`event` · 1921 · searched for **Noite Sangrenta**
+
+2 item(s) were read and each failed a test.
+
+- [`Q10337226`](https://www.wikidata.org/wiki/Q10337226) **Noite Sangrenta** — TV show aired since 2010 — 2010– — Q1259759
+  - none of its classes (Q1259759) is in data/imports/wikidata-seeds.json → classes
+- [`Q641898`](https://www.wikidata.org/wiki/Q641898) **Bloody Night** — name by which the radical revolt that took place in Lisbon — 1921 — Q124734, Q9026907
+  - none of its classes (Q124734, Q9026907) is in data/imports/wikidata-seeds.json → classes
+
+## october-fires-2017
+
+`event` · searched for **The fires of October 2017**
+
+nothing on Wikidata is called "The fires of October 2017".
+
+## pedrogao-grande-fires-2017
+
+`event` · searched for **The Pedrógão Grande fires**
+
+nothing on Wikidata is called "The Pedrógão Grande fires".
+
+## pimenta-de-castro-government-1915
+
+`event` · searched for **Pimenta de Castro's authoritarian government**
+
+nothing on Wikidata is called "Pimenta de Castro's authoritarian government".
+
+## portugal-backs-franco-1936
+
+`event` · searched for **Portugal supports the Nationalists in the Spanish Civil War**
+
+nothing on Wikidata is called "Portugal supports the Nationalists in the Spanish Civil War".
+
+## portugal-e-o-futuro-1974
+
+`event` · searched for **Publication of Portugal e o Futuro**
+
+nothing on Wikidata is called "Publication of Portugal e o Futuro".
+
+## republic-proclaimed-1910
+
+`event` · 1910 · searched for **Proclamation of the Republic**
+
+8 item(s) were read and each failed a test.
+
+- [`Q35784675`](https://www.wikidata.org/wiki/Q35784675) **Proclamation of the Republic** — painting by Benedito Calixto — 1893– — Q3305213
+  - none of its classes (Q3305213) is in data/imports/wikidata-seeds.json → classes
+- [`Q2294549`](https://www.wikidata.org/wiki/Q2294549) **Proclamation of the Republic** — November 1889 historical event in Brazil — 1889 — Q3449092, Q7995869
+  - none of its classes (Q3449092, Q7995869) is in data/imports/wikidata-seeds.json → classes
+- [`Q779851`](https://www.wikidata.org/wiki/Q779851) **Proclamation of the republic in Germany** — proclamation — 1918 — Q1572600
+  - none of its classes (Q1572600) is in data/imports/wikidata-seeds.json → classes
+
+## revolt-14-may-1915
+
+`event` · searched for **The revolt of 14 May restores the Democrats**
+
+nothing on Wikidata is called "The revolt of 14 May restores the Democrats".
+
+## salazar-finance-minister-1928
+
+`event` · searched for **Salazar becomes Minister of Finance**
+
+nothing on Wikidata is called "Salazar becomes Minister of Finance".
+
+## salazar-president-of-council-1932
+
+`event` · searched for **Salazar becomes President of the Council**
+
+nothing on Wikidata is called "Salazar becomes President of the Council".
+
+## santa-maria-hijacking-1961
+
+`event` · searched for **The seizure of the liner Santa Maria**
+
+nothing on Wikidata is called "The seizure of the liner Santa Maria".
+
+## sidonio-pais-assassinated-1918
+
+`event` · 1918 · searched for **Assassination of Sidónio Pais**
+
+1 item(s) were read and each failed a test.
+
+- [`Q23020255`](https://www.wikidata.org/wiki/Q23020255) **assassination of Sidónio Pais** — 1918 murder in Lisbon, Portugal — 1918 — Q3882219
+  - none of its classes (Q3882219) is in data/imports/wikidata-seeds.json → classes
+
+## sidonio-pais-coup-1917
+
+`event` · searched for **Sidónio Pais's coup**
+
+nothing on Wikidata is called "Sidónio Pais's coup".
+
+## soares-elected-president-1986
+
+`event` · searched for **Mário Soares elected president**
+
+nothing on Wikidata is called "Mário Soares elected president".
+
+## spinola-resigns-1974
+
+`event` · searched for **Spínola resigns the presidency**
+
+nothing on Wikidata is called "Spínola resigns the presidency".
