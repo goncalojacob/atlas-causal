@@ -579,8 +579,27 @@ test('the candidate list is grouped by period, counted, and lists an item once',
   assert.match(page, /^## 1980s — 1 candidate\(s\), 0 already in the atlas$/m);
   assert.match(page, /^## no period — 1 candidate\(s\), 0 already in the atlas$/m);
   assert.match(page, /4 candidate\(s\) over 3 period\(s\), of which 1 already/);
+  assert.doesNotMatch(page, /did not answer/, 'a run where every query answered says nothing about failures');
   assert.match(page, /\| \[`Q1`\]\(https:\/\/www\.wikidata\.org\/wiki\/Q1\) \| A \| — \| — \| — \| — \| yes \|/,
     'a record the atlas already has says so');
+});
+
+test('a query the service refuses is named on the page, not silently missing', async () => {
+  const { dir } = await scratch({
+    queries: [
+      { name: 'answers', period: '1970s', sparql: 'SELECT ?item WHERE { }' },
+      { name: 'times-out', period: '1970s', sparql: 'SELECT ?item WHERE { }' },
+    ],
+    items: [],
+  });
+  const { fetcher } = await fixtureFetcher({ before: (url, n) => (n === 2 ? new HttpError(500, url) : null), fetcher: { retries: 1 } });
+  const { report } = await runCandidatesMode(dir, { fetcher, today: '2026-09-04' });
+  assert.deepEqual(report.refused.map((r) => r.qid), ['times-out']);
+
+  const page = candidatesMarkdown(report.rows, { generated: '2026-09-04', refused: report.refused });
+  assert.match(page, /^## Queries the service did not answer$/m);
+  assert.match(page, /^- `times-out`: 500$/m, 'the query is named and the URL is not repeated');
+  assert.match(page, /that period's count is\s+short by that much/);
 });
 
 test('the report says what happened, including what it would not decide', async () => {
