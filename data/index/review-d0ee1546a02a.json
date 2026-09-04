@@ -219,6 +219,114 @@
         }
       ],
       "cites": [
+        "wheeler-1978-republican-portugal",
+        "meneses-2004-portugal-1914-1926",
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "1921-portuguese-legislative-election",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted",
+          "m22-reinstated"
+        ],
+        "note": "Retracted in M21 under the two-edge rule and reinstated in M22 under the rule the owner set on 4 September 2026: one honest edge, in either direction, is enough to keep an event. The M21 note said this record had exactly one, and named it; the edge M22 wrote is that one."
+      },
+      "status": "active",
+      "title": "1921 Portuguese legislative election"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wheeler-1978-republican-portugal",
+        "meneses-2004-portugal-1914-1926"
+      ],
+      "from": "1921-portuguese-legislative-election",
+      "id": "1921-portuguese-legislative-election--noite-sangrenta-1921--precondition-of",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "noite-sangrenta-1921",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wheeler-1978-republican-portugal",
+        "meneses-2004-portugal-1914-1926",
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "1925-portuguese-legislative-election",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted",
+          "m22-reinstated"
+        ],
+        "note": "Retracted in M21 under the two-edge rule and reinstated in M22 under the rule the owner set on 4 September 2026: one honest edge, in either direction, is enough to keep an event. The M21 note said this record had exactly one, and named it; the edge M22 wrote is that one."
+      },
+      "status": "active",
+      "title": "1925 Portuguese legislative election"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wheeler-1978-republican-portugal",
+        "meneses-2004-portugal-1914-1926"
+      ],
+      "from": "1925-portuguese-legislative-election",
+      "id": "1925-portuguese-legislative-election--coup-28-may-1926--precondition-of",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "coup-28-may-1926",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "rosas-1994-estado-novo",
         "meneses-2009-salazar",
         "wikipedia-en",
@@ -398,6 +506,57 @@
         }
       ],
       "cites": [
+        "macqueen-1997-decolonization",
+        "wikipedia-en",
+        "wikidata"
+      ],
+      "id": "1957-guinean-territorial-assembly-election",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted",
+          "m22-reinstated"
+        ],
+        "note": "Retracted in M21 both as outside the atlas — this is French Guinea, Conakry and not Bissau — and for having only one edge. The second reason is gone under the rule of 4 September 2026, and the first was never quite right: the atlas already keeps the referendum of 1958 for the same Portuguese reason. The other four Conakry records the import caught stay retracted, having no edge at all."
+      },
+      "status": "active",
+      "title": "1957 Guinean Territorial Assembly election"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "macqueen-1997-decolonization"
+      ],
+      "from": "1957-guinean-territorial-assembly-election",
+      "id": "1957-guinean-territorial-assembly-election--guinean-constitutional-referendum-1958--caused",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "guinean-constitutional-referendum-1958",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "rosas-1994-estado-novo",
         "ramos-2009-historia-de-portugal",
         "wikipedia-en",
@@ -503,6 +662,60 @@
       ],
       "from": "1969-portuguese-legislative-election",
       "id": "1969-portuguese-legislative-election--carnation-revolution-1974--precondition-of",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "carnation-revolution-1974",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "rosas-1994-estado-novo",
+        "macqueen-1997-decolonization",
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "1972-portuguese-presidential-election",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted",
+          "m22-reinstated"
+        ],
+        "note": "Retracted in M21 under the two-edge rule and reinstated in M22 under the rule the owner set on 4 September 2026: one honest edge, in either direction, is enough to keep an event. The M21 note said this record had exactly one, and named it; the edge M22 wrote is that one."
+      },
+      "status": "active",
+      "title": "1972 Portuguese presidential election"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "rosas-1994-estado-novo",
+        "macqueen-1997-decolonization"
+      ],
+      "from": "1972-portuguese-presidential-election",
+      "id": "1972-portuguese-presidential-election--carnation-revolution-1974--precondition-of",
       "kind": "edge",
       "review": {
         "flags": [
@@ -2557,6 +2770,58 @@
         "note": "The birth or founding year, and the end where there is one, were written from memory."
       },
       "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "macqueen-1997-decolonization",
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "batepa-massacre",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted",
+          "m22-reinstated"
+        ],
+        "note": "Retracted in M21 because the atlas then held no other São Toméan record at all. M22 wired the election of July 1975, which gave the massacre somewhere to reach, and reinstated it under the one-edge rule of 4 September 2026. The death toll is disputed and the record says so rather than choosing."
+      },
+      "status": "active",
+      "title": "Batepá massacre"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "macqueen-1997-decolonization"
+      ],
+      "from": "batepa-massacre",
+      "id": "batepa-massacre--1975-sao-tomean-legislative-election--inspired",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "1975-sao-tomean-legislative-election",
+      "type": "inspired"
     },
     {
       "authors": [
@@ -7025,6 +7290,57 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "macqueen-1997-decolonization",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "mueda-massacre",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted",
+          "m22-reinstated"
+        ],
+        "note": "Retracted in M21 under the two-edge rule and reinstated in M22 under the rule the owner set on 4 September 2026: one honest edge, in either direction, is enough to keep an event. The M21 note said this record had exactly one, and named it; the edge M22 wrote is that one."
+      },
+      "status": "active",
+      "title": "Mueda massacre"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "macqueen-1997-decolonization"
+      ],
+      "from": "mueda-massacre",
+      "id": "mueda-massacre--mozambique-war-begins-1964--caused",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "mozambique-war-begins-1964",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -8803,6 +9119,59 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal",
+        "meneses-2004-portugal-1914-1926",
+        "wikipedia-en",
+        "wikidata"
+      ],
+      "id": "treaty-of-windsor",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted",
+          "m22-reinstated"
+        ],
+        "note": "Retracted in M21 under the two-edge rule and reinstated in M22 under the rule the owner set on 4 September 2026: one honest edge, in either direction, is enough to keep an event. The M21 note said this record had exactly one, and named it; the edge M22 wrote is that one."
+      },
+      "status": "active",
+      "title": "Treaty of Windsor"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal",
+        "meneses-2004-portugal-1914-1926"
+      ],
+      "from": "treaty-of-windsor",
+      "id": "treaty-of-windsor--germany-declares-war-1916--precondition-of",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "germany-declares-war-1916",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -9148,7 +9517,7 @@
     }
   ],
   "schema": 1,
-  "total": 891,
+  "total": 898,
   "warnings": [
     {
       "id": "iberian-blackout-2025",

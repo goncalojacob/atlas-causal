@@ -2,12 +2,16 @@
   "schema": 1,
   "id": "mueda-massacre",
   "kind": "event",
-  "status": "retracted",
+  "status": "active",
   "supersededBy": null,
   "aliases": [],
   "authors": [
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
       "github": null
     }
   ],
@@ -17,9 +21,10 @@
   "review": {
     "flags": [
       "imported-facts",
-      "m21-retracted"
+      "summary-drafted",
+      "m22-reinstated"
     ],
-    "note": "Retracted in M21, and the second-worst loss of the run after Batepá. On 16 June 1960 Portuguese troops fired on a crowd at Mueda, on the Makonde plateau, at the end of the long attempt to petition the administration rather than fight it; it is the standard opening episode of the Mozambican armed struggle. One edge can be argued from it, to the war of 1964, and only one: the atlas holds no Mozambican record before 1964 and none of FRELIMO’s founding, so there is nothing else here for it to reach."
+    "note": "Retracted in M21 under the two-edge rule and reinstated in M22 under the rule the owner set on 4 September 2026: one honest edge, in either direction, is enough to keep an event. The M21 note said this record had exactly one, and named it; the edge M22 wrote is that one."
   },
   "wikidata": "Q10327164",
   "sitelinks": 3,
@@ -28,12 +33,20 @@
   },
   "sources": [
     {
+      "source": "macqueen-1997-decolonization",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Massacre de Mueda\", revision 65265066"
+    },
+    {
       "source": "wikidata",
-      "locator": "Q10327164"
+      "locator": null
     }
   ],
   "title": "Mueda massacre",
-  "summary": "Wikidata item Q10327164, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "On 16 June 1960 Portuguese troops fired on a crowd gathered at the administrative post at Mueda, on the Makonde plateau in northern Mozambique, where Makonde leaders had come to put the case for their cooperative movement and against forced cultivation. The number killed is disputed and the accounts of what was said before the shooting differ. It is in the atlas as the last episode of the attempt to petition the colonial administration rather than fight it, and as the event FRELIMO placed at the head of its own history of the war it opened four years later.",
   "when": {
     "start": 1960,
     "end": 1960,
@@ -41,5 +54,10 @@
   },
   "place": null,
   "region": "africa",
-  "actors": []
+  "actors": [
+    {
+      "actor": "estado-novo",
+      "role": "colonial power whose troops fired"
+    }
+  ]
 }

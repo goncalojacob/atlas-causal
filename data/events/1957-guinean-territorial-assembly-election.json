@@ -2,12 +2,16 @@
   "schema": 1,
   "id": "1957-guinean-territorial-assembly-election",
   "kind": "event",
-  "status": "retracted",
+  "status": "active",
   "supersededBy": null,
   "aliases": [],
   "authors": [
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
       "github": null
     }
   ],
@@ -17,9 +21,10 @@
   "review": {
     "flags": [
       "imported-facts",
-      "m21-retracted"
+      "summary-drafted",
+      "m22-reinstated"
     ],
-    "note": "Retracted in M21 as outside the atlas: French Guinea again, 31 March 1957, Sékou Touré’s PDG-RDA winning 56 of 60 seats. It is genuinely the reason Guinea voted No in 1958, and if the atlas ever holds French West African decolonisation properly this is where that chain starts. It has no second edge here, and the 1958 referendum carries the Portuguese consequence on its own."
+    "note": "Retracted in M21 both as outside the atlas — this is French Guinea, Conakry and not Bissau — and for having only one edge. The second reason is gone under the rule of 4 September 2026, and the first was never quite right: the atlas already keeps the referendum of 1958 for the same Portuguese reason. The other four Conakry records the import caught stay retracted, having no edge at all."
   },
   "wikidata": "Q1285560",
   "sitelinks": 3,
@@ -28,12 +33,20 @@
   },
   "sources": [
     {
+      "source": "macqueen-1997-decolonization",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1957 Guinean Territorial Assembly election\", revision 1367762808"
+    },
+    {
       "source": "wikidata",
-      "locator": "Q1285560"
+      "locator": null
     }
   ],
   "title": "1957 Guinean Territorial Assembly election",
-  "summary": "Wikidata item Q1285560, imported by tools/import/wikidata.mjs. The item's own description reads \"election\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "Elections to the Territorial Assembly of French Guinea on 31 March 1957, the first under the loi-cadre that gave the French African territories elected governments of their own, gave Sékou Touré's Democratic Party of Guinea 56 of the 60 seats on a turnout of about sixty per cent. It made him the head of a territorial government and the only interlocutor France had in Conakry. It is in the atlas for what he did with that position eighteen months later: Guinea was the one territory to vote No to de Gaulle's community in September 1958, took its independence at once, and became the rear base without which the PAIGC's war in Portuguese Guinea is hard to imagine.",
   "when": {
     "start": 1957,
     "end": 1957,
@@ -41,5 +54,10 @@
   },
   "place": null,
   "region": "africa",
-  "actors": []
+  "actors": [
+    {
+      "actor": "sekou-toure",
+      "role": "won the territorial government"
+    }
+  ]
 }

@@ -417,3 +417,46 @@ happened, and the edge somebody will want — from the killing and the riots to
 the vote of May 2025 — is an interpretation of an election rather than a fact
 about one. It is retracted for want of an atlas to attach it to, not for want
 of importance, and it should be among the first records rewritten.
+
+---
+
+## The M21 reinstatements
+
+The rule change of 4 September 2026 applies backwards as well as forwards, so
+M22 went through the fifty-nine events M21 retracted and reinstated the ones
+whose own retraction note named a single argued edge. Seven came back. Each
+carries an `m22-reinstated` flag and a note saying what happened, and the edge
+each was given is the edge M21 said it had.
+
+- `batepa-massacre` — 3 February 1953, the killing of forros on São Tomé.
+  M21's reason was not the two-edge rule at all: the atlas held no other São
+  Toméan record of any date, so there was nothing for it to reach. M22's own
+  1970s commit fixed that by wiring the election of July 1975, and the
+  massacre now runs to it as `inspired` — twenty-two years is too long for
+  causation, and what Batepá furnished was the grievance the movement that
+  took the islands dated itself from.
+- `mueda-massacre` — 16 June 1960, to the opening of the Mozambican war in
+  1964, `caused`. The argument FRELIMO itself made: after Mueda nobody in the
+  north argued for petitioning again.
+- `treaty-of-windsor` — the secret declaration of 14 October 1899, to
+  Portugal's entry into the First World War, `precondition-of`.
+- `1921-portuguese-legislative-election` — to the Noite Sangrenta,
+  `precondition-of`: the election made the government the column killed.
+- `1925-portuguese-legislative-election` — to the coup of 28 May 1926,
+  `precondition-of`: the last multi-party parliament for fifty years, and what
+  the coup swept away.
+- `1972-portuguese-presidential-election` — to 25 April, `precondition-of`:
+  Tomás's third term fixed until 1979 the man who would dismiss Caetano if he
+  moved on the war.
+- `1957-guinean-territorial-assembly-election` — to the Guinean referendum of
+  1958, `caused`. M21 gave two reasons for this one, that it had a single edge
+  and that it was outside the atlas; the first is gone and the second was
+  never quite right, since the atlas already keeps the 1958 referendum for the
+  same Portuguese reason. The other four Conakry records stay retracted,
+  having no edge at all.
+
+Fifty-two of M21's fifty-nine retractions stand. The ones most often named in
+its own notes as regrettable — the rotativismo elections, the single-list
+elections of the Estado Novo, the three bomb attacks of March 1973, the
+unidentifiable items — have no argued edge in either direction, and the rule
+change does not reach them.

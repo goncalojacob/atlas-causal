@@ -2,12 +2,16 @@
   "schema": 1,
   "id": "treaty-of-windsor",
   "kind": "event",
-  "status": "retracted",
+  "status": "active",
   "supersededBy": null,
   "aliases": [],
   "authors": [
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
       "github": null
     }
   ],
@@ -17,9 +21,10 @@
   "review": {
     "flags": [
       "imported-facts",
-      "m21-retracted"
+      "summary-drafted",
+      "m22-reinstated"
     ],
-    "note": "Retracted in M21: the secret Anglo-Portuguese declaration of 14 October 1899 — Britain reaffirming its guarantee of the Portuguese colonies, Portugal closing Lourenço Marques to arms for the Transvaal — is genuinely significant. But only one consequence can be argued for it from this bibliography, Portugal’s belligerence of 1916, and a second edge would rest on the same argument. Worth reviving once the 1890 Ultimatum is in the atlas."
+    "note": "Retracted in M21 under the two-edge rule and reinstated in M22 under the rule the owner set on 4 September 2026: one honest edge, in either direction, is enough to keep an event. The M21 note said this record had exactly one, and named it; the edge M22 wrote is that one."
   },
   "wikidata": "Q2518953",
   "sitelinks": 6,
@@ -28,12 +33,24 @@
   },
   "sources": [
     {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    },
+    {
+      "source": "meneses-2004-portugal-1914-1926",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Windsor (1899)\", revision 1370935059"
+    },
+    {
       "source": "wikidata",
-      "locator": "Q2518953"
+      "locator": null
     }
   ],
   "title": "Treaty of Windsor",
-  "summary": "Wikidata item Q2518953, imported by tools/import/wikidata.mjs. The item's own description reads \"1899 treaty between the United Kingdom and Portugal\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "A secret Anglo-Portuguese declaration was signed in London on 14 October 1899 by Lord Salisbury and the Marquis of Soveral, and is called the Treaty of Windsor after the alliance of 1386 that it reaffirmed. Britain restated its guarantee of Portugal's colonies; Portugal undertook to close Lourenço Marques to arms and men bound for the Transvaal, days before the South African war began. It was signed a year after Britain and Germany had secretly agreed how they would divide those same colonies if Portugal defaulted on its debts, which is what makes the declaration a purchase as much as a guarantee. It is in the atlas as the last renewal of the alliance before the alliance was called on, in 1914.",
   "when": {
     "start": 1899,
     "end": 1899

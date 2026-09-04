@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "1925-portuguese-legislative-election--coup-28-may-1926--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wheeler-1978-republican-portugal",
+      "locator": null
+    },
+    {
+      "source": "meneses-2004-portugal-1914-1926",
+      "locator": null
+    }
+  ],
+  "from": "1925-portuguese-legislative-election",
+  "to": "coup-28-may-1926",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "A coup needs something to overthrow, and what 28 May 1926 overthrew was this parliament and the government drawn from it. The edge claims no more than that and deliberately not the more interesting thing — that the ballot of November 1925 caused the coup — because the case against the Republic was made on fifteen years of instability rather than on this result. What makes the election worth a record is what the coup then did with it: the Chamber elected in 1925 was the last chosen from more than one list for half a century, and everything the atlas holds between here and 1975 is the working out of that.",
+  "dispute": null
+}

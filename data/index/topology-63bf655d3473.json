@@ -5337,6 +5337,26 @@
     {
       "aliases": [],
       "confidence": "probable",
+      "from": "1921-portuguese-legislative-election",
+      "id": "1921-portuguese-legislative-election--noite-sangrenta-1921--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "noite-sangrenta-1921",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "1925-portuguese-legislative-election",
+      "id": "1925-portuguese-legislative-election--coup-28-may-1926--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "coup-28-may-1926",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
       "from": "1928-portuguese-presidential-election",
       "id": "1928-portuguese-presidential-election--salazar-finance-minister-1928--enabled",
       "status": "active",
@@ -5377,6 +5397,16 @@
     {
       "aliases": [],
       "confidence": "probable",
+      "from": "1957-guinean-territorial-assembly-election",
+      "id": "1957-guinean-territorial-assembly-election--guinean-constitutional-referendum-1958--caused",
+      "status": "active",
+      "supersededBy": null,
+      "to": "guinean-constitutional-referendum-1958",
+      "type": "caused"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
       "from": "1965-portuguese-presidential-election",
       "id": "1965-portuguese-presidential-election--caetano-succeeds-salazar-1968--enabled",
       "status": "active",
@@ -5399,6 +5429,16 @@
       "confidence": "probable",
       "from": "1969-portuguese-legislative-election",
       "id": "1969-portuguese-legislative-election--carnation-revolution-1974--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "carnation-revolution-1974",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "1972-portuguese-presidential-election",
+      "id": "1972-portuguese-presidential-election--carnation-revolution-1974--precondition-of",
       "status": "active",
       "supersededBy": null,
       "to": "carnation-revolution-1974",
@@ -5733,6 +5773,16 @@
       "supersededBy": null,
       "to": "nato-founding-1949",
       "type": "enabled"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "batepa-massacre",
+      "id": "batepa-massacre--1975-sao-tomean-legislative-election--inspired",
+      "status": "active",
+      "supersededBy": null,
+      "to": "1975-sao-tomean-legislative-election",
+      "type": "inspired"
     },
     {
       "aliases": [],
@@ -6557,6 +6607,16 @@
     {
       "aliases": [],
       "confidence": "probable",
+      "from": "mueda-massacre",
+      "id": "mueda-massacre--mozambique-war-begins-1964--caused",
+      "status": "active",
+      "supersededBy": null,
+      "to": "mozambique-war-begins-1964",
+      "type": "caused"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
       "from": "nationalisations-1975",
       "id": "nationalisations-1975--25-november-1975--reacted-to",
       "status": "active",
@@ -6762,6 +6822,16 @@
       "status": "active",
       "supersededBy": null,
       "to": "eec-accession-1986",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "treaty-of-windsor",
+      "id": "treaty-of-windsor--germany-declares-war-1916--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "germany-declares-war-1916",
       "type": "precondition-of"
     },
     {
@@ -7278,16 +7348,21 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "first-portuguese-republic",
+          "role": "the regime holding the election"
+        }
+      ],
       "aliases": [],
       "id": "1921-portuguese-legislative-election",
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "retracted",
+      "status": "active",
       "supersededBy": null,
       "title": "1921 Portuguese legislative election",
-      "weight": 0,
+      "weight": 2,
       "when": {
         "date": "1921-07-10",
         "end": 1921,
@@ -7344,16 +7419,25 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "first-portuguese-republic",
+          "role": "the regime holding the election"
+        },
+        {
+          "actor": "partido-democratico",
+          "role": "won the largest share"
+        }
+      ],
       "aliases": [],
       "id": "1925-portuguese-legislative-election",
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "retracted",
+      "status": "active",
       "supersededBy": null,
       "title": "1925 Portuguese legislative election",
-      "weight": 0,
+      "weight": 3,
       "when": {
         "date": "1925-11-08",
         "end": 1925,
@@ -7711,16 +7795,21 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "sekou-toure",
+          "role": "won the territorial government"
+        }
+      ],
       "aliases": [],
       "id": "1957-guinean-territorial-assembly-election",
       "place": null,
       "region": "africa",
       "regionMethod": "override",
-      "status": "retracted",
+      "status": "active",
       "supersededBy": null,
       "title": "1957 Guinean Territorial Assembly election",
-      "weight": 0,
+      "weight": 2,
       "when": {
         "date": "1957-03-31",
         "end": 1957,
@@ -8001,16 +8090,25 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "americo-tomas",
+          "role": "returned for a third term"
+        },
+        {
+          "actor": "estado-novo",
+          "role": "the regime filling its own presidency"
+        }
+      ],
       "aliases": [],
       "id": "1972-portuguese-presidential-election",
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "retracted",
+      "status": "active",
       "supersededBy": null,
       "title": "1972 Portuguese presidential election",
-      "weight": 0,
+      "weight": 3,
       "when": {
         "date": "1972-07-25",
         "end": 1972,
@@ -8148,7 +8246,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "1975 São Toméan legislative election",
-      "weight": 4,
+      "weight": 5,
       "when": {
         "end": 1975,
         "start": 1975
@@ -11268,16 +11366,21 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "estado-novo",
+          "role": "colonial administration responsible"
+        }
+      ],
       "aliases": [],
       "id": "batepa-massacre",
       "place": null,
       "region": "africa",
       "regionMethod": "override",
-      "status": "retracted",
+      "status": "active",
       "supersededBy": null,
       "title": "Batepá massacre",
-      "weight": 0,
+      "weight": 2,
       "when": {
         "date": "1953-02-03",
         "end": 1953,
@@ -11561,7 +11664,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "25 April",
-      "weight": 21,
+      "weight": 22,
       "when": {
         "calendar": "gregorian",
         "date": "1974-04-25",
@@ -11857,7 +11960,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Coup of 28 May",
-      "weight": 11,
+      "weight": 12,
       "when": {
         "calendar": "gregorian",
         "date": "1926-05-28",
@@ -12668,7 +12771,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Germany declares war on Portugal",
-      "weight": 5,
+      "weight": 6,
       "when": {
         "calendar": "gregorian",
         "date": "1916-03-09",
@@ -12819,7 +12922,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "1958 Guinean constitutional referendum",
-      "weight": 3,
+      "weight": 4,
       "when": {
         "calendar": "gregorian",
         "date": "1958-09-28",
@@ -13630,7 +13733,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Beginning of the war in Mozambique",
-      "weight": 6,
+      "weight": 7,
       "when": {
         "calendar": "gregorian",
         "date": "1964-09-25",
@@ -13639,16 +13742,21 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "estado-novo",
+          "role": "colonial power whose troops fired"
+        }
+      ],
       "aliases": [],
       "id": "mueda-massacre",
       "place": null,
       "region": "africa",
       "regionMethod": "override",
-      "status": "retracted",
+      "status": "active",
       "supersededBy": null,
       "title": "Mueda massacre",
-      "weight": 0,
+      "weight": 2,
       "when": {
         "date": "1960-06-16",
         "end": 1960,
@@ -13826,7 +13934,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Noite Sangrenta",
-      "weight": 3,
+      "weight": 4,
       "when": {
         "calendar": "gregorian",
         "date": "1921-10-19",
@@ -14766,10 +14874,10 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "retracted",
+      "status": "active",
       "supersededBy": null,
       "title": "Treaty of Windsor",
-      "weight": 0,
+      "weight": 1,
       "when": {
         "end": 1899,
         "start": 1899

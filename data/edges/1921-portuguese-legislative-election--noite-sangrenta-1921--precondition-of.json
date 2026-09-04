@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "1921-portuguese-legislative-election--noite-sangrenta-1921--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wheeler-1978-republican-portugal",
+      "locator": null
+    },
+    {
+      "source": "meneses-2004-portugal-1914-1926",
+      "locator": null
+    }
+  ],
+  "from": "1921-portuguese-legislative-election",
+  "to": "noite-sangrenta-1921",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The men killed on the night of 19 October were the government and its friends, and this election is what made them the government. The Republican Liberals had assembled themselves to take the chamber from the Democrats and had succeeded in July; the column that went through Lisbon in October was made of the Democrats' own constituency in the armed forces and the arsenals, acting against a ministry it took to be restoring the men of the monarchy. The edge is `precondition-of` and not `caused`: what the election produced was the target, and what produced the killing was the politics of the barracks.",
+  "dispute": null
+}

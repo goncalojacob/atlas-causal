@@ -2,12 +2,16 @@
   "schema": 1,
   "id": "1921-portuguese-legislative-election",
   "kind": "event",
-  "status": "retracted",
+  "status": "active",
   "supersededBy": null,
   "aliases": [],
   "authors": [
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
       "github": null
     }
   ],
@@ -17,9 +21,10 @@
   "review": {
     "flags": [
       "imported-facts",
-      "m21-retracted"
+      "summary-drafted",
+      "m22-reinstated"
     ],
-    "note": "Retracted in M21: 10 July 1921, the Republican Liberals largest with 79 of 163 seats. It has one good argument out of it — the government it produced was the one murdered in the Noite Sangrenta three months later — but only that one, and nothing argued leads in. The massacre itself is already in the atlas and carries that story better than the ballot does."
+    "note": "Retracted in M21 under the two-edge rule and reinstated in M22 under the rule the owner set on 4 September 2026: one honest edge, in either direction, is enough to keep an event. The M21 note said this record had exactly one, and named it; the edge M22 wrote is that one."
   },
   "wikidata": "Q7232751",
   "sitelinks": 3,
@@ -29,12 +34,28 @@
   },
   "sources": [
     {
+      "source": "wheeler-1978-republican-portugal",
+      "locator": null
+    },
+    {
+      "source": "meneses-2004-portugal-1914-1926",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1921 Portuguese legislative election\", revision 1286452947"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Eleições legislativas portuguesas de 1921\", revision 72524740"
+    },
+    {
       "source": "wikidata",
-      "locator": "Q7232751"
+      "locator": null
     }
   ],
   "title": "1921 Portuguese legislative election",
-  "summary": "Wikidata item Q7232751, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The election of 10 July 1921 returned the Republican Liberal Party, formed months earlier by the merger of the Republican Union with the Evolutionists, as the largest in a parliament of 163 deputies with 79 of them, against a Democratic Party that had held the chamber for most of the Republic's life. The government it produced, under António Granjo, was three months old when a column of sailors and soldiers went through Lisbon on the night of 19 October and killed him and five others. It is in the atlas as the ballot behind the Noite Sangrenta: the last attempt of the First Republic to govern from a majority other than the Democrats', ended by murder rather than by a vote.",
   "when": {
     "start": 1921,
     "end": 1921,
@@ -42,5 +63,10 @@
   },
   "place": null,
   "region": "europe",
-  "actors": []
+  "actors": [
+    {
+      "actor": "first-portuguese-republic",
+      "role": "the regime holding the election"
+    }
+  ]
 }

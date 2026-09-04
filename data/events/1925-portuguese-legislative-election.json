@@ -2,12 +2,16 @@
   "schema": 1,
   "id": "1925-portuguese-legislative-election",
   "kind": "event",
-  "status": "retracted",
+  "status": "active",
   "supersededBy": null,
   "aliases": [],
   "authors": [
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
       "github": null
     }
   ],
@@ -17,9 +21,10 @@
   "review": {
     "flags": [
       "imported-facts",
-      "m21-retracted"
+      "summary-drafted",
+      "m22-reinstated"
     ],
-    "note": "Retracted in M21, and the most regrettable retraction of the decade: 8 November 1925 was the last multi-party election in Portugal until the Constituent Assembly of 1975. One argument runs out of it — the parliament it returned is the one 28 May 1926 swept away — but nothing argued runs in, and a single edge does not meet the bar. Its significance is a fact about the fifty years after it, not a consequence of it."
+    "note": "Retracted in M21 under the two-edge rule and reinstated in M22 under the rule the owner set on 4 September 2026: one honest edge, in either direction, is enough to keep an event. The M21 note said this record had exactly one, and named it; the edge M22 wrote is that one."
   },
   "wikidata": "Q10271595",
   "sitelinks": 3,
@@ -29,12 +34,28 @@
   },
   "sources": [
     {
+      "source": "wheeler-1978-republican-portugal",
+      "locator": null
+    },
+    {
+      "source": "meneses-2004-portugal-1914-1926",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1925 Portuguese legislative election\", revision 1309774511"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Eleições legislativas portuguesas de 1925\", revision 72461616"
+    },
+    {
       "source": "wikidata",
-      "locator": "Q10271595"
+      "locator": null
     }
   ],
   "title": "1925 Portuguese legislative election",
-  "summary": "Wikidata item Q10271595, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The election of 8 November 1925 gave the Democratic Party 83 of the 163 seats in the Chamber and 39 of the 70 in the Senate, under the incomplete-list system that reserved part of each circle to the minorities. It was the last election held under the constitution of 1911 and the last multi-party election in Portugal until the Constituent Assembly of April 1975 — fifty years, to within six months. The parliament it returned lasted six months: the column that left Braga on 28 May 1926 dissolved it, and nothing elected replaced it until 1934, when a single list did. It is in the atlas as the parliament the coup swept away.",
   "when": {
     "start": 1925,
     "end": 1925,
@@ -42,5 +63,14 @@
   },
   "place": null,
   "region": "europe",
-  "actors": []
+  "actors": [
+    {
+      "actor": "first-portuguese-republic",
+      "role": "the regime holding the election"
+    },
+    {
+      "actor": "partido-democratico",
+      "role": "won the largest share"
+    }
+  ]
 }
