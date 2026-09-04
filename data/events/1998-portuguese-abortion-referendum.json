@@ -9,15 +9,22 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "summary-drafted",
+      "date"
+    ],
+    "note": "The import took 8 June 1998 from the Wikidata item; both cached Wikipedia leads give 28 June, and M22 corrected the record to the 28th. A reviewer should confirm the day against the Diário da República before signing, and the Wikidata item is worth correcting upstream."
   },
   "wikidata": "Q2105455",
   "sitelinks": 4,
@@ -27,18 +34,40 @@
   },
   "sources": [
     {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-teixeira-2019-political-institutions",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1998 Portuguese abortion referendum\", revision 1356123279"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Referendo à despenalização do aborto em Portugal (1998)\", revision 70878983"
+    },
+    {
       "source": "wikidata",
-      "locator": "Q2105455"
+      "locator": null
     }
   ],
   "title": "1998 Portuguese abortion referendum",
-  "summary": "Wikidata item Q2105455, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The first referendum held in Portugal under the constitution asked on 28 June 1998 whether abortion on the woman's request up to ten weeks should cease to be a crime. The no won by about fifty-one to forty-nine, and turnout was under a third, so the result was not binding on the Assembly; the law that had prompted the referendum was dropped and the criminal provision stayed as it was. It is in the atlas as the first use of an instrument the constitutional revision of 1989 had created, as a question the party system could not settle inside the Assembly, and because the same question was put again nine years later and answered the other way.",
   "when": {
     "start": 1998,
     "end": 1998,
-    "date": "1998-06-08"
+    "date": "1998-06-28",
+    "calendar": "gregorian"
   },
   "place": null,
   "region": "europe",
-  "actors": []
+  "actors": [
+    {
+      "actor": "third-portuguese-republic",
+      "role": "the state putting the question"
+    }
+  ]
 }

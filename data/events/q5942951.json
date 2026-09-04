@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "q5942951",
   "kind": "event",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,11 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "m22-retracted"
+    ],
+    "note": "Retracted in M22: the import brought this item with no label in English or Portuguese, no description and no article in any language — nothing but the date 9 July 1998 and a European region. Nothing can be said about it, so nothing can be argued from it. The date is the day of the Faial earthquake, which the import also brought separately; whether they are the same thing cannot be established from the item."
   },
   "wikidata": "Q5942951",
   "sitelinks": 1,

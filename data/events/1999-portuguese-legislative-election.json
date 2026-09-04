@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "1999-portuguese-legislative-election",
   "kind": "event",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,11 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "m22-retracted"
+    ],
+    "note": "Retracted in M22: the election of 10 October 1999, at which the Socialists were returned one seat short of an absolute majority. The atlas can argue nothing from it: the euro was joined nine months before it, Macau was handed over under terms fixed in 1987, and the government it produced resigned in December 2001 after a local election the atlas does not hold. Revisit with the resignation of 2001, which is the missing record."
   },
   "wikidata": "Q2053121",
   "sitelinks": 9,

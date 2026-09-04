@@ -1024,6 +1024,213 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-2003-contemporary-portugal",
+        "telo-2007-historia-contemporanea",
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "1991-portuguese-legislative-election",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "1991 Portuguese legislative election"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-2003-contemporary-portugal",
+        "telo-2007-historia-contemporanea"
+      ],
+      "from": "1991-portuguese-legislative-election",
+      "id": "1991-portuguese-legislative-election--expo-98--enabled",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "expo-98",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-2003-contemporary-portugal",
+        "telo-2007-historia-contemporanea",
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "1995-portuguese-legislative-election",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "1995 Portuguese legislative election"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-2003-contemporary-portugal",
+        "telo-2007-historia-contemporanea"
+      ],
+      "from": "1995-portuguese-legislative-election",
+      "id": "1995-portuguese-legislative-election--euro-adoption-1999--enabled",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "euro-adoption-1999",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-2003-contemporary-portugal",
+        "telo-2007-historia-contemporanea"
+      ],
+      "from": "1995-portuguese-legislative-election",
+      "id": "1995-portuguese-legislative-election--portuguese-regionalisation-referendum-1998--caused",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "portuguese-regionalisation-referendum-1998",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-2003-contemporary-portugal",
+        "costa-pinto-teixeira-2019-political-institutions",
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "1998-portuguese-abortion-referendum",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted",
+          "date"
+        ],
+        "note": "The import took 8 June 1998 from the Wikidata item; both cached Wikipedia leads give 28 June, and M22 corrected the record to the 28th. A reviewer should confirm the day against the Diário da República before signing, and the Wikidata item is worth correcting upstream."
+      },
+      "status": "active",
+      "title": "1998 Portuguese abortion referendum"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "wikipedia-en",
+        "wikidata"
+      ],
+      "id": "1999-macanese-chief-executive-election",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "1999 Macanese Chief Executive election"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea"
+      ],
+      "from": "1999-macanese-chief-executive-election",
+      "id": "1999-macanese-chief-executive-election--macau-handover-1999--precondition-of",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "macau-handover-1999",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -6840,6 +7047,35 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-2003-contemporary-portugal",
+        "costa-pinto-teixeira-2019-political-institutions",
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "portuguese-regionalisation-referendum-1998",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "Portuguese regionalisation referendum, 1998"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -8123,94 +8359,10 @@
     }
   ],
   "schema": 1,
-  "total": 871,
+  "total": 875,
   "warnings": [
     {
-      "id": "1991-portuguese-legislative-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "1991-portuguese-presidential-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "1993-portuguese-local-elections",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "1994-european-parliament-election-in-portugal",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "1995-portuguese-legislative-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "1996-azorean-regional-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "1996-madeiran-regional-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "1996-portuguese-presidential-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "1997-portuguese-local-elections",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "1998-azores-islands-earthquake",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
       "id": "1998-portuguese-abortion-referendum",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "1999-european-parliament-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "1999-european-parliament-election-in-portugal",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "1999-macanese-chief-executive-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "1999-portuguese-legislative-election",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"
@@ -8672,18 +8824,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "eleicoes-legislativas-regionais-na-madeira-em-1992",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "eleicoes-legislativas-regionais-nos-acores-em-1992",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
       "id": "espirito-santo-bank-of-campolide-robbery",
       "kind": "event",
       "message": "event has no edges",
@@ -8708,18 +8848,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "lisbon-protocol",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "lisbon-recognition-convention",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
       "id": "monchique-fire",
       "kind": "event",
       "message": "event has no edges",
@@ -8739,24 +8867,6 @@
     },
     {
       "id": "portuguese-european-constitution-referendum",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "portuguese-language-orthographic-agreement-of-1990",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "portuguese-regionalisation-referendum-1998",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "q5942951",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"

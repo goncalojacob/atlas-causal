@@ -9,14 +9,19 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "summary-drafted"
     ]
   },
   "wikidata": "Q55719546",
@@ -26,18 +31,31 @@
   },
   "sources": [
     {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1999 Macanese Chief Executive election\", revision 1291601838"
+    },
+    {
       "source": "wikidata",
-      "locator": "Q55719546"
+      "locator": null
     }
   ],
   "title": "1999 Macanese Chief Executive election",
-  "summary": "Wikidata item Q55719546, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "A selection committee of two hundred chose Edmund Ho as the first Chief Executive of the Macau Special Administrative Region on 15 May 1999, seven months before the transfer of administration to China. It was a contested ballot, the only one in the office's history so far, and it filled the post the Sino-Portuguese joint declaration of 1987 had created for the day Portuguese administration ended. It is in the atlas as the last constitutional act of the Portuguese period in Macau, and as the point at which the successor administration existed before the predecessor had gone.",
   "when": {
     "start": 1999,
     "end": 1999,
     "date": "1999-05-15"
   },
-  "place": null,
-  "region": "europe",
-  "actors": []
+  "place": "macau",
+  "region": null,
+  "actors": [
+    {
+      "actor": "china",
+      "role": "the successor sovereign"
+    }
+  ]
 }

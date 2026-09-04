@@ -9,14 +9,19 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "summary-drafted"
     ]
   },
   "wikidata": "Q7232796",
@@ -27,12 +32,28 @@
   },
   "sources": [
     {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-teixeira-2019-political-institutions",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1998 Portuguese regionalisation referendum\", revision 1361503309"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Referendo sobre a regionalização em Portugal (1998)\", revision 72826511"
+    },
+    {
       "source": "wikidata",
-      "locator": "Q7232796"
+      "locator": null
     }
   ],
   "title": "Portuguese regionalisation referendum, 1998",
-  "summary": "Wikidata item Q7232796, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "On 8 November 1998 voters were asked two questions: whether administrative regions should be created at all, and whether they approved of the particular region drawn for the area where they were voting. Both were rejected by wide margins, on a turnout of about a half. The regions had been in the constitution since 1976 and in the Socialist programme since before the 1995 election; the Social Democrats campaigned against them, and the second question — which asked each voter about their own region and so invited each to dislike the map — is generally held to have been fatal. It is in the atlas because the answer has held: no government since has proposed regionalisation, and the map of Portuguese administration is still the one the referendum refused to change.",
   "when": {
     "start": 1998,
     "end": 1998,
@@ -40,5 +61,18 @@
   },
   "place": null,
   "region": "europe",
-  "actors": []
+  "actors": [
+    {
+      "actor": "third-portuguese-republic",
+      "role": "the state putting the question"
+    },
+    {
+      "actor": "partido-socialista",
+      "role": "proposed the regions"
+    },
+    {
+      "actor": "psd",
+      "role": "campaigned against"
+    }
+  ]
 }

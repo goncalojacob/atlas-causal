@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "1996-azorean-regional-election",
   "kind": "event",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,11 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "m22-retracted"
+    ],
+    "note": "Retracted in M22: the Azorean regional election of 13 October 1996, at which the Socialists took the region from the Social Democrats and Carlos César began sixteen years in the regional government. It is the first alternation in either autonomous region and so not merely a repetition — but the atlas holds nothing the result can be argued to have changed, and an alternation with no consequence recorded is still an event with no honest edge. Worth writing back with the regional government itself."
   },
   "wikidata": "Q4832856",
   "sitelinks": 3,

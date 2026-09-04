@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "1995-portuguese-legislative-election--euro-adoption-1999--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    }
+  ],
+  "from": "1995-portuguese-legislative-election",
+  "to": "euro-adoption-1999",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "Joining the single currency in the first wave meant hitting the Maastricht numbers on deficit, debt, inflation and rates in the reference year 1997, and then defending the decision politically. The government this election produced made that its central commitment and was in office for exactly the years the test covered. The atlas argues the political condition and not the arithmetic: the convergence had been under way since 1992 under the previous majority, and what changed in 1995 was not the direction but that the party that had opposed the Maastricht ratification now owned the target.",
+  "dispute": null
+}

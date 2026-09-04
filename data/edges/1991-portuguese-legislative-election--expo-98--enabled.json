@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "1991-portuguese-legislative-election--expo-98--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    }
+  ],
+  "from": "1991-portuguese-legislative-election",
+  "to": "expo-98",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "A world exposition is a decade-long commitment of public money made by whoever holds the government when the bid is decided. Lisbon's bid was won in June 1992, eight months into the majority this election returned, and the site, the bridge, the metro extension and the expropriations along the eastern riverfront were all committed by that government before it lost office in 1995. Expo 98 opened under a different party, and this edge argues the decision rather than the opening: what the election settled was that there would be a government able to sign for it.",
+  "dispute": null
+}

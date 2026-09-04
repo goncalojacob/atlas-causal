@@ -174,3 +174,70 @@ and the chain they make is the decade's argument: the alliance of 1979 and
 presidency, breaks; the Bloco Central of 1983 signs with the Fund and with
 the Communities; the minority of 1985 falls by censure and becomes the
 majority of 1987, which is where the atlas already was.
+
+---
+
+## 1990s — 17 of 22 retracted, none merged, 5 wired
+
+The highest retraction rate of the run so far, and the decade where the shape
+of what the import brought stops being about the armed left and starts being
+about repetition and about Lisbon as a venue.
+
+**Repetitions, seven records**, under the principle stated for the 1980s: the
+local elections of 1993 and 1997, the European elections of 1994 and 1999,
+and the regional elections of the Azores and Madeira in 1992 and of Madeira in
+1996.
+
+**Two ballots that are not repetitions and are retracted anyway**, because
+the atlas holds nothing they can be argued to have changed.
+
+- `1996-azorean-regional-election` — the first alternation in either
+  autonomous region, the Socialists taking the Azores and Carlos César
+  beginning sixteen years in the regional government. An alternation with no
+  recorded consequence is still an event with no honest edge.
+- `1999-portuguese-legislative-election` — a Socialist government returned one
+  seat short of a majority. The euro was joined nine months before it, Macau
+  was handed over on terms fixed in 1987, and the government it made resigned
+  in December 2001 after a local election the atlas does not hold. That
+  resignation is the missing record; write it and this election comes back.
+
+**Two presidential elections**, `1991-portuguese-presidential-election`
+(Soares re-elected in the first round) and `1996-portuguese-presidential-election`
+(Sampaio elected). The first changed neither the holder nor the powers. The
+second began ten years that matter — the dissolution of 2004 above all — none
+of which the atlas holds. Sampaio's is the retraction in this decade most
+likely to be reversed.
+
+**Two disasters and one blank.** `1998-azores-islands-earthquake`, off Faial
+on 9 July, magnitude 6.1: as with 1980, nothing in the atlas turns on it, and
+the cached lead is entirely about the tectonics of the Pedro Miguel graben.
+`q5942951` came in with the same date, 9 July 1998, a European region and no
+label at all — whether it is the same earthquake cannot be established from
+the item, and either way nothing can be argued from a record with no name.
+
+**Three treaties signed in Lisbon.** `lisbon-protocol` (the START I successor
+states, 23 May 1992), `lisbon-recognition-convention` (Council of Europe and
+UNESCO on higher-education qualifications, 11 April 1997) and
+`1999-european-parliament-election` (the Union-wide ballot, as distinct from
+the Portuguese one). Lisbon was the venue and Portugal the host, and neither
+is a causal part of the thing. A treaty signed here belongs to the history of
+what it settles.
+
+`portuguese-language-orthographic-agreement-of-1990` is the exception in that
+group and the hardest retraction of the decade. It is Portuguese history and
+it is contested to this day; it is retracted because the atlas holds no CPLP,
+no language policy and no record of the agreement's long entry into force, so
+there is nothing for it to reach. It is among the best candidates in the whole
+run for being written back in.
+
+### Wired
+
+`1991-portuguese-legislative-election` (to Expo 98, by way of the bid won in
+June 1992), `1995-portuguese-legislative-election` (to the euro and to the
+regionalisation referendum it called), `1998-portuguese-abortion-referendum`,
+`portuguese-regionalisation-referendum-1998` and
+`1999-macanese-chief-executive-election` (to the handover). Five edges.
+
+The abortion referendum also carries a correction: the import dated it
+8 June 1998 from the Wikidata item, both cached leads give 28 June, and the
+record now says the 28th with a `date` flag on it.

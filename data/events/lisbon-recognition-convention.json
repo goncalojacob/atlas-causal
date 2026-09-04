@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "lisbon-recognition-convention",
   "kind": "event",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,11 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "m22-retracted"
+    ],
+    "note": "Retracted in M22: the Council of Europe and UNESCO convention of 11 April 1997 on the recognition of higher-education qualifications in the European region. Lisbon was the venue and Portugal was the host, and neither is a causal part of the thing. The atlas is about Portugal, and a treaty that happens to be signed here belongs to the history of what it settles; there is nothing in the atlas for it to attach to in either direction."
   },
   "wikidata": "Q1546127",
   "sitelinks": 11,

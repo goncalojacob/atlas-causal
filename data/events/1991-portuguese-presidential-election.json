@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "1991-portuguese-presidential-election",
   "kind": "event",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,11 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "m22-retracted"
+    ],
+    "note": "Retracted in M22: the presidential election of 13 January 1991, at which Mário Soares was re-elected in the first round with about seventy per cent. The atlas holds his election of 1986 and the office's part in the revision of 1982; a re-election that changed neither the holder nor the powers has nothing here to attach to in either direction."
   },
   "wikidata": "Q3586629",
   "sitelinks": 7,

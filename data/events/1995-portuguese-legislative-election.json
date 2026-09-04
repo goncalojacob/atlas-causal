@@ -9,14 +9,19 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "summary-drafted"
     ]
   },
   "wikidata": "Q1511117",
@@ -27,12 +32,28 @@
   },
   "sources": [
     {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1995 Portuguese legislative election\", revision 1372483449"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Eleições legislativas portuguesas de 1995\", revision 72180486"
+    },
+    {
       "source": "wikidata",
-      "locator": "Q1511117"
+      "locator": null
     }
   ],
   "title": "1995 Portuguese legislative election",
-  "summary": "Wikidata item Q1511117, imported by tools/import/wikidata.mjs. The item's own description reads \"election\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The election of 1 October 1995 ended ten years of Social Democrat government and brought the Socialists to office under António Guterres, four seats short of a majority. The government it made is the one that took Portugal into the first wave of the single currency in 1999, opened Expo 98 on the riverfront its predecessor had committed to, and put two questions to referendum in 1998 — the decriminalisation of abortion in June and the creation of administrative regions in November — losing both. It is in the atlas as the government of the convergence years, and as the point at which the referendum, written into the constitution in 1989, was first used.",
   "when": {
     "start": 1995,
     "end": 1995,
@@ -40,5 +61,14 @@
   },
   "place": null,
   "region": "europe",
-  "actors": []
+  "actors": [
+    {
+      "actor": "partido-socialista",
+      "role": "won and formed a minority government"
+    },
+    {
+      "actor": "psd",
+      "role": "lost office after ten years"
+    }
+  ]
 }

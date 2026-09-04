@@ -1,7 +1,7 @@
 {
   "counts": {
     "actors": 326,
-    "edges": 131,
+    "edges": 135,
     "events": 326,
     "narratives": 1,
     "places": 25,
@@ -11,9 +11,9 @@
     "sources": 34
   },
   "files": {
-    "review": "index/review-3db064bd3daf.json",
-    "sources": "index/sources-553b194613be.json",
-    "topology": "index/topology-b4c5e5bae629.json"
+    "review": "index/review-9ae70dad8953.json",
+    "sources": "index/sources-8a669ac384f0.json",
+    "topology": "index/topology-83816529f660.json"
   },
   "land": [
     {
@@ -101,6 +101,7 @@
     "called the election as his opening",
     "came first and formed a minority government",
     "came first and led the government",
+    "campaigned against",
     "candidate",
     "claimed responsibility",
     "coalition party",
@@ -131,6 +132,7 @@
     "heir apparent, killed in the attack",
     "held every seat of the electing assembly",
     "host",
+    "in opposition",
     "incumbent",
     "invader",
     "invoked",
@@ -145,6 +147,7 @@
     "legislator",
     "lender",
     "lost office",
+    "lost office after ten years",
     "movement",
     "nationalised it",
     "negotiated and signed for portugal",
@@ -171,6 +174,7 @@
     "prime minister",
     "prime minister from june 1983",
     "prime minister from november 1985",
+    "proposed the regions",
     "re-elected",
     "re-elected for a second term",
     "re-elected unopposed for a fourth term",
@@ -205,6 +209,8 @@
     "the state constituting local power",
     "the state creating the region",
     "the state holding the election",
+    "the state putting the question",
+    "the successor sovereign",
     "took all 130 seats",
     "victim",
     "winner",
@@ -212,6 +218,8 @@
     "won 106 of 163 seats in the chamber",
     "won 229 of 234 seats",
     "won a majority of the new assembly",
+    "won a second absolute majority",
+    "won and formed a minority government",
     "younger son, succeeded to the throne"
   ],
   "schema": 1

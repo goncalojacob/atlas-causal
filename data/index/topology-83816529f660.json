@@ -5476,6 +5476,46 @@
     },
     {
       "aliases": [],
+      "confidence": "probable",
+      "from": "1991-portuguese-legislative-election",
+      "id": "1991-portuguese-legislative-election--expo-98--enabled",
+      "status": "active",
+      "supersededBy": null,
+      "to": "expo-98",
+      "type": "enabled"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "1995-portuguese-legislative-election",
+      "id": "1995-portuguese-legislative-election--euro-adoption-1999--enabled",
+      "status": "active",
+      "supersededBy": null,
+      "to": "euro-adoption-1999",
+      "type": "enabled"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "1995-portuguese-legislative-election",
+      "id": "1995-portuguese-legislative-election--portuguese-regionalisation-referendum-1998--caused",
+      "status": "active",
+      "supersededBy": null,
+      "to": "portuguese-regionalisation-referendum-1998",
+      "type": "caused"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "1999-macanese-chief-executive-election",
+      "id": "1999-macanese-chief-executive-election--macau-handover-1999--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "macau-handover-1999",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
       "confidence": "consensus",
       "from": "25-november-1975",
       "id": "25-november-1975--constitution-1976--enabled",
@@ -8496,7 +8536,20 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "psd",
+          "role": "won a second absolute majority"
+        },
+        {
+          "actor": "cavaco-silva",
+          "role": "prime minister"
+        },
+        {
+          "actor": "partido-socialista",
+          "role": "in opposition"
+        }
+      ],
       "aliases": [],
       "id": "1991-portuguese-legislative-election",
       "place": null,
@@ -8505,7 +8558,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "1991 Portuguese legislative election",
-      "weight": 0,
+      "weight": 4,
       "when": {
         "date": "1991-10-06",
         "end": 1991,
@@ -8524,7 +8577,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "1991 Portuguese presidential election",
       "weight": 0,
@@ -8546,7 +8599,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "1993 Portuguese local elections",
       "weight": 0,
@@ -8568,7 +8621,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "1994 European Parliament election in Portugal",
       "weight": 0,
@@ -8584,7 +8637,16 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "partido-socialista",
+          "role": "won and formed a minority government"
+        },
+        {
+          "actor": "psd",
+          "role": "lost office after ten years"
+        }
+      ],
       "aliases": [],
       "id": "1995-portuguese-legislative-election",
       "place": null,
@@ -8593,7 +8655,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "1995 Portuguese legislative election",
-      "weight": 0,
+      "weight": 4,
       "when": {
         "date": "1995-10-01",
         "end": 1995,
@@ -8612,7 +8674,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "1996 Azorean regional election",
       "weight": 0,
@@ -8634,7 +8696,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "1996 Madeiran regional election",
       "weight": 0,
@@ -8656,7 +8718,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "1996 Portuguese presidential election",
       "weight": 0,
@@ -8678,7 +8740,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "1997 Portuguese local elections",
       "weight": 0,
@@ -8700,7 +8762,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "1998 Azores Islands earthquake",
       "weight": 0,
@@ -8714,7 +8776,12 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "third-portuguese-republic",
+          "role": "the state putting the question"
+        }
+      ],
       "aliases": [],
       "id": "1998-portuguese-abortion-referendum",
       "place": null,
@@ -8723,9 +8790,10 @@
       "status": "active",
       "supersededBy": null,
       "title": "1998 Portuguese abortion referendum",
-      "weight": 0,
+      "weight": 1,
       "when": {
-        "date": "1998-06-08",
+        "calendar": "gregorian",
+        "date": "1998-06-28",
         "end": 1998,
         "start": 1998
       },
@@ -8742,7 +8810,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "1999 European Parliament election",
       "weight": 0,
@@ -8763,7 +8831,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "1999 European Parliament election in Portugal",
       "weight": 0,
@@ -8779,16 +8847,21 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "china",
+          "role": "the successor sovereign"
+        }
+      ],
       "aliases": [],
       "id": "1999-macanese-chief-executive-election",
-      "place": null,
-      "region": "europe",
-      "regionMethod": "override",
+      "place": "macau",
+      "region": "asia",
+      "regionMethod": "nearest",
       "status": "active",
       "supersededBy": null,
       "title": "1999 Macanese Chief Executive election",
-      "weight": 0,
+      "weight": 2,
       "when": {
         "date": "1999-05-15",
         "end": 1999,
@@ -8806,7 +8879,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "1999 Portuguese legislative election",
       "weight": 0,
@@ -11981,7 +12054,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "eleições legislativas regionais na Madeira em 1992",
       "weight": 0,
@@ -12065,7 +12138,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "eleições legislativas regionais nos Açores em 1992",
       "weight": 0,
@@ -12156,7 +12229,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Portugal adopts the euro",
-      "weight": 3,
+      "weight": 4,
       "when": {
         "calendar": "gregorian",
         "date": "1999-01-01",
@@ -12179,7 +12252,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Expo 98",
-      "weight": 2,
+      "weight": 3,
       "when": {
         "calendar": "gregorian",
         "date": "1998-05-22",
@@ -12988,7 +13061,7 @@
       "place": "lisbon",
       "region": "europe",
       "regionMethod": "inside",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "Lisbon Protocol",
       "weight": 0,
@@ -13010,7 +13083,7 @@
       "place": "lisbon",
       "region": "europe",
       "regionMethod": "inside",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "Lisbon Recognition Convention",
       "weight": 0,
@@ -13083,7 +13156,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Handover of Macau",
-      "weight": 2,
+      "weight": 3,
       "when": {
         "calendar": "gregorian",
         "date": "1999-12-20",
@@ -13703,7 +13776,7 @@
       "place": "lisbon",
       "region": "europe",
       "regionMethod": "inside",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "Portuguese Language Orthographic Agreement of 1990",
       "weight": 0,
@@ -13719,7 +13792,20 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "third-portuguese-republic",
+          "role": "the state putting the question"
+        },
+        {
+          "actor": "partido-socialista",
+          "role": "proposed the regions"
+        },
+        {
+          "actor": "psd",
+          "role": "campaigned against"
+        }
+      ],
       "aliases": [],
       "id": "portuguese-regionalisation-referendum-1998",
       "place": null,
@@ -13728,7 +13814,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Portuguese regionalisation referendum, 1998",
-      "weight": 0,
+      "weight": 4,
       "when": {
         "date": "1998-11-08",
         "end": 1998,
@@ -13853,7 +13939,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "Q5942951",
       "weight": 0,
