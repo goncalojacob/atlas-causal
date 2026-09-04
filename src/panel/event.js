@@ -7,6 +7,7 @@
 import { esc } from '../util/esc.js';
 import { consequences, convergence } from '../graph.js';
 import { formatInterval, formatYear, defaultCalendar } from '../util/dates.js';
+import { laneExplain } from '../lanes.js';
 import { horizonHtml } from './horizon.js';
 
 export const TYPE_LABEL = Object.freeze({
@@ -119,6 +120,22 @@ function whereHtml(ctx, event) {
   return ` · <span class="where">${name} <span class="muted">(${esc(where.precision)})</span></span>`;
 }
 
+// Where this event is drawn, and by what rule. An event is in exactly one
+// lane and the rule that picked it is mechanical, so it can be stated: a
+// rule the reader cannot see is a rule they cannot check.
+function drawnHtml(ctx, event, state) {
+  const lanes = ctx.lanes(state);
+  const { lane, reason, others } = laneExplain(event, lanes, state.group, ctx.atlas);
+  if (!lane) {
+    return `<p class="drawn muted">Drawn in a packed row: with no grouping the timeline fits the bars
+      where they go and the graph has no bands.</p>`;
+  }
+  const also = others.length
+    ? ` Also involves ${others.map((o) => esc(o.label)).join(', ')}.`
+    : '';
+  return `<p class="drawn muted">Drawn in the <strong>${esc(lane.label)}</strong> lane${reason ? ` (${esc(reason)})` : ''}.${also}</p>`;
+}
+
 export function renderEventCard(ctx, { container, event, found, state, mine }) {
   const { atlas } = ctx;
   const chainEdges = state.chain.map((id) => atlas.edges.get(id)).filter(Boolean);
@@ -151,6 +168,7 @@ export function renderEventCard(ctx, { container, event, found, state, mine }) {
         · <span class="lane">${esc(ctx.laneLabel(event.region))}</span>
         <button type="button" class="link small" data-action="year" data-year="${esc(ctx.startYear(event))}">map at ${esc(formatYear(ctx.startYear(event)))}</button>
       </p>
+      ${drawnHtml(ctx, event, state)}
     </header>
     <section class="summary" data-slot="summary"><p class="muted">Loading…</p></section>
     ${actorsHtml(ctx, event, highlightedActor?.id ?? null)}

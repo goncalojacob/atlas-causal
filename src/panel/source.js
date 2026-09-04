@@ -122,6 +122,7 @@ export function sourceCardHtml(ctx, source) {
         ${source.year ? ` · <span class="when">${esc(source.year)}</span>` : ''}
         · <span class="source-type">${esc(TYPE_HINT[source.type] ?? source.type)}</span>
         <button type="button" class="link small" data-action="clear-source">close</button>
+        ${ctx.lensControl('source', source.id)}
       </p>
       ${source.publisher ? `<p class="muted">${esc(source.publisher)}</p>` : ''}
       ${identifiersHtml(source)}

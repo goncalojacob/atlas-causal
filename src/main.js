@@ -9,6 +9,7 @@ import { createGraphView } from './graph-view/graph-view.js';
 import { createTimeline } from './timeline.js';
 import { createPanel } from './panel/panel.js';
 import { createSearchBox } from './search-box.js';
+import { createGrouping } from './grouping.js';
 import { createReadingMode, openingState } from './narrative-mode.js';
 import { bindNarrativeKeys } from './panel/narrative.js';
 import { esc } from './util/esc.js';
@@ -42,6 +43,7 @@ try {
   createMap(document.getElementById('map'), { atlas, state, onCluster: (cluster) => panel.showCluster(cluster) });
   createTimeline(document.getElementById('timeline'), { atlas, state, onCluster: (cluster) => panel.showCluster(cluster) });
   createSearchBox(document.getElementById('search'), { atlas, state });
+  createGrouping(document.getElementById('grouping'), { atlas, state });
   bindNarrativeKeys(document, { atlas, state });
   document.getElementById('narratives-button').addEventListener('click', () => panel.showNarratives());
 

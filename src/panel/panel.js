@@ -8,7 +8,9 @@
 
 import { esc } from '../util/esc.js';
 import { formatInterval, bounds, isValidYear } from '../util/dates.js';
-import { windowAt } from '../util/window.js';
+import { windowAt, resolveWindow } from '../util/window.js';
+import { formatFocus, lensSet } from '../lens.js';
+import { lanesFor } from '../lanes.js';
 import { shortestPaths, pathTo } from '../graph.js';
 import { identifiers } from '../citation.js';
 import { renderEventCard } from './event.js';
@@ -51,6 +53,15 @@ export function createPanel(container, { atlas, state, fixtures = false }) {
         break;
       case 'clear-source':
         state.set({ source: null });
+        break;
+      // The lens. Not a selection and never clears one: "show only these"
+      // says which events there are, and what the reader had open stays
+      // open — the card is how they got here.
+      case 'focus':
+        state.set({ focus: el.dataset.focus });
+        break;
+      case 'clear-focus':
+        state.set({ focus: null });
         break;
       // An edge has no card of its own: opening one from a source's list
       // walks that single step, which names both ends and loads the argument.
@@ -186,11 +197,30 @@ export function createPanel(container, { atlas, state, fixtures = false }) {
     return found && found.kind === 'actor' ? found.record : null;
   }
 
+  // "Show only these" / "show everything", on the card of whatever the lens
+  // can be about. The card asks for it rather than being handed the state,
+  // so a card's signature says what it draws and not how the header works.
+  function lensControl(kind, id) {
+    const focus = formatFocus(kind, id);
+    return state.get().focus === focus
+      ? '<button type="button" class="link small lens-control on" data-action="clear-focus">show everything</button>'
+      : `<button type="button" class="link small lens-control" data-action="focus" data-focus="${esc(focus)}">show only these</button>`;
+  }
+
+  // The lanes of the current grouping, so the event card can say where the
+  // event is drawn and why. The same call the timeline and the graph make.
+  function lanes(s) {
+    if (s.group === 'none') return [];
+    return lanesFor(s.group, atlas, resolveWindow(s, atlas.extent), lensSet(atlas, s), s.lanes);
+  }
+
   // Everything a card is given. No card reaches for the container, the state
   // or the token on its own.
   const ctx = {
     atlas,
     laneLabel,
+    lensControl,
+    lanes,
     startYear,
     citationsHtml,
     edgeTextHtml,

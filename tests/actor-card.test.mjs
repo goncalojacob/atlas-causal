@@ -31,6 +31,7 @@ function context(atlas) {
     atlas,
     eventLink: (event) => `<button type="button" class="link" data-action="select" data-id="${esc(event.id)}">${esc(event.title)}</button>`,
     laneLabel: (region) => region ?? '',
+    lensControl: (kind, id) => `<button type="button" class="link small lens-control" data-action="focus" data-focus="${kind}:${id}">show only these</button>`,
   };
 }
 
@@ -108,4 +109,12 @@ test('nothing from a relation reaches the card unescaped', async () => {
   assert.doesNotMatch(html, /<script>/);
   assert.doesNotMatch(html, /<img/);
   assert.match(html, /&lt;script&gt;/);
+});
+
+// The lens is offered where the record is read: an actor's card is the way
+// into "show only these events" and out of it again.
+test('the actor card carries the lens control', async () => {
+  const atlas = await fixtureAtlas();
+  const html = actorCardHtml(context(atlas), atlas.actors.get('fixture-actor-one'));
+  assert.match(html, /data-action="focus" data-focus="actor:fixture-actor-one"/);
 });

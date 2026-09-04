@@ -14,6 +14,7 @@ import { DEEPEST_ZOOM } from '../cluster.js';
 import { resolveWindow } from '../util/window.js';
 import { horizonSet } from '../horizon.js';
 import { narrativeSet } from '../narrative.js';
+import { lensSet } from '../lens.js';
 
 const WIDTH = 960;
 const HEIGHT = 540;
@@ -209,32 +210,45 @@ export function createMap(container, { atlas, state, onCluster = null }) {
     // border is a state of affairs at a moment, an event is an interval.
     const timeWindow = resolveWindow(s, atlas.extent);
 
-    const chainEdges = s.chain.map((id) => atlas.edges.get(id)).filter(Boolean);
+    // The lens removes rather than dims, and it removes from everything: the
+    // marks, the lines of the chain, the actor's emphasis and the horizon's
+    // reachable set alike. Anything kept out of the filter and let back in
+    // through one of those would be an event the lens says is not there,
+    // drawn.
+    const lens = lensSet(atlas, s);
+    const kept = (id) => !lens || lens.has(id);
+    const keep = (set) => (set && lens ? new Set([...set].filter(kept)) : set);
+
+    const chainEdges = s.chain.map((id) => atlas.edges.get(id))
+      .filter((e) => e && kept(e.from) && kept(e.to));
     const pathIds = new Set(chainEdges.flatMap((e) => [e.from, e.to]));
-    if (s.selected) pathIds.add(s.selected);
-    const consequenceEdges = s.selected ? (atlas.adjacency.out.get(s.selected) ?? []) : [];
+    if (s.selected && kept(s.selected)) pathIds.add(s.selected);
+    const consequenceEdges = (s.selected ? (atlas.adjacency.out.get(s.selected) ?? []) : [])
+      .filter((e) => kept(e.from) && kept(e.to));
     // Through resolve(), so a former id in the URL highlights the same
     // actor the panel is showing.
     const actor = s.actor ? atlas.resolve(s.actor) : null;
-    const actorIds = actor && actor.kind === 'actor'
+    const actorIds = keep(actor && actor.kind === 'actor'
       ? new Set((atlas.eventsByActor.get(actor.id) ?? []).map((a) => a.event.id))
-      : null;
+      : null);
     // Drawn before the marks so the marks are appended over them, and only
     // when the layer is on: an off layer costs no fetch.
     if (s.layers.includes('territories')) {
       presences.render({ year: timeWindow ? timeWindow.to : null, actorId: actor && actor.kind === 'actor' ? actor.id : null, onReady: () => render(state.get()) });
     }
+    const reachable = horizonSet(atlas, s);
     const result = events.render({
-      events: atlas.activeEvents,
+      events: lens ? atlas.activeEvents.filter((e) => lens.has(e.id)) : atlas.activeEvents,
       window: timeWindow,
       selected: s.selected,
       pathIds,
       actorIds,
       // The whole walk, when one is open: where the narrative is going, not
-      // only where the reader has got to (narrative.js).
+      // only where the reader has got to (narrative.js). A narrative
+      // suspends the lens, so there is nothing to filter out of it.
       narrativeIds: narrativeSet(atlas, s),
       // Empty unless the reader has chosen a horizon year (horizon.js).
-      reachable: horizonSet(atlas, s),
+      reachable: lens ? new Map([...reachable].filter(([id]) => lens.has(id))) : reachable,
       chainEdges,
       consequenceEdges,
       eventById: atlas.events,

@@ -32,6 +32,7 @@ function context(atlas) {
   return {
     atlas,
     eventLink: (event) => `<button type="button" class="link" data-action="select" data-id="${esc(event.id)}">${esc(event.title)}</button>`,
+    lensControl: (kind, id) => `<button type="button" class="link small lens-control" data-action="focus" data-focus="${esc(kind)}:${esc(id)}">show only these</button>`,
   };
 }
 
@@ -95,4 +96,11 @@ test('nothing from a record reaches the card unescaped', async () => {
   // A url that is not http(s) is shown as text and never as a link.
   assert.doesNotMatch(html, /href="javascript/);
   assert.match(html, /unsafe-url/);
+});
+
+test('the source card carries the lens control', async () => {
+  const atlas = await repositoryAtlas();
+  const source = [...atlas.sources.values()][0];
+  const html = sourceCardHtml(context(atlas), source);
+  assert.match(html, new RegExp(`data-action="focus" data-focus="source:${source.id}"`));
 });

@@ -54,6 +54,7 @@ function placeCardHtml(ctx, place, state) {
           <span class="muted">(${esc(place.where.precision)})</span></span>
         · <span class="lane">${esc(ctx.laneLabel(place.region))}</span>
         <button type="button" class="link small" data-action="clear-place">close</button>
+        ${ctx.lensControl('place', place.id)}
       </p>
       ${variants.length ? `<p class="also-known muted">also: ${variants.map((n) => esc(n)).join(' · ')}</p>` : ''}
     </header>

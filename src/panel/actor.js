@@ -1,5 +1,8 @@
 // The actor's card: type, dates, seat, summary, the territory the map draws
-// for it, and the events it appears in with the role it played in each. An
+// for it, and the events it appears in with the role it played in each.
+// "Show only these" is the lens — the other views hold this actor's events
+// and nothing else — and is not the same as the highlight above it, which
+// leaves everything drawn and emphasises some of it. An
 // actor is never on the timeline on its own — it is reached through its
 // events and read alongside them — so a selected event wins the panel and
 // this is what the panel falls back to.
@@ -121,6 +124,7 @@ export function actorCardHtml(ctx, actor) {
         <span class="actor-type">${esc(ACTOR_TYPE_LABEL[actor.actorType] ?? actor.actorType)}</span>
         · <span class="when">${esc(formatInterval(actor.when))}</span>
         <button type="button" class="link small" data-action="clear-actor">stop highlighting</button>
+        ${ctx.lensControl('actor', actor.id)}
       </p>
       ${variants.length ? `<p class="also-known muted">also: ${variants.map((n) => esc(n)).join(' · ')}</p>` : ''}
     </header>

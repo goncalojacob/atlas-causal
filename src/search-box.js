@@ -5,11 +5,18 @@
 // Choosing an event that is outside the window widens the window to include
 // it, the same way "map at 1911" in the panel does — otherwise the atlas
 // would select a record and then not draw it.
+//
+// A lens does not narrow the search. What is outside it is still found and
+// still listed, and is marked as being outside: a reader who has asked for
+// Salazar's events and then searches for something else has asked a
+// question, and answering "nothing by that name" when the record is right
+// there would be a lie the lens told on the atlas's behalf.
 
 import { esc } from './util/esc.js';
 import { buildSearchIndex, search, flatten } from './search.js';
 import { formatInterval } from './util/dates.js';
 import { windowAt } from './util/window.js';
+import { lensFor, lensSet } from './lens.js';
 
 const LIMIT = 8;
 
@@ -30,6 +37,27 @@ export function createSearchBox(container, { atlas, state }) {
   let result = { groups: [], total: 0 };
   let items = [];
   let active = -1;
+
+  // Whether a result reaches anything the lens keeps. An event is in it or
+  // it is not; an actor, a place or a source is outside only when *none* of
+  // the events it would open is shown, since opening it inside a lens is
+  // still a useful thing to do.
+  function outside(item) {
+    const lens = lensSet(atlas, state.get());
+    if (!lens) return false;
+    if (item.kind === 'event') return !lens.has(item.id);
+    if (item.kind === 'actor') {
+      return !(atlas.eventsByActor.get(item.id) ?? []).some((a) => lens.has(a.event.id));
+    }
+    if (item.kind === 'place') {
+      return !(atlas.eventsByPlace.get(item.id) ?? []).some((e) => lens.has(e.id));
+    }
+    // A source's own lens, intersected with the one that is on: which of the
+    // events this book touches are still drawn.
+    const reached = lensFor(`source:${item.id}`, atlas);
+    for (const id of reached ?? []) if (lens.has(id)) return false;
+    return true;
+  }
 
   const close = () => {
     list.hidden = true;
@@ -56,10 +84,12 @@ export function createSearchBox(container, { atlas, state }) {
         const when = item.when ? formatInterval(item.when) : '';
         const also = item.variants?.length ? `<span class="muted">${esc(item.variants.slice(0, 2).join(' · '))}</span>` : '';
         const id = `search-option-${i}`;
-        const row = `<li class="search-option" role="option" id="${id}" data-index="${i}" data-kind="${esc(item.kind)}" data-id="${esc(item.id)}" aria-selected="false">
+        const out = outside(item);
+        const row = `<li class="search-option${out ? ' outside-lens' : ''}" role="option" id="${id}" data-index="${i}" data-kind="${esc(item.kind)}" data-id="${esc(item.id)}" aria-selected="false">
           <span class="search-label">${esc(item.label)}</span>
           <span class="when">${esc(when)}</span>
           ${item.detail ? `<span class="muted">${esc(item.detail)}</span>` : ''}${also}
+          ${out ? '<span class="badge outside">outside the lens</span>' : ''}
         </li>`;
         i += 1;
         return row;
