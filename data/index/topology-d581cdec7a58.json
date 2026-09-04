@@ -368,7 +368,11 @@
         "end": null,
         "start": 1846
       },
-      "wikidata": "Q378372"
+      "wikidata": "Q378372",
+      "wikipedia": {
+        "en": "Banco de Portugal",
+        "pt": "Banco de Portugal"
+      }
     },
     {
       "actorType": "institution",
@@ -8465,7 +8469,11 @@
         "lon": 13.4,
         "precision": "city"
       },
-      "wikidata": "Q64"
+      "wikidata": "Q64",
+      "wikipedia": {
+        "en": "Berlin",
+        "pt": "Berlim"
+      }
     },
     {
       "aliases": [],
@@ -8640,7 +8648,11 @@
         "lon": -9.14,
         "precision": "city"
       },
-      "wikidata": "Q597"
+      "wikidata": "Q597",
+      "wikipedia": {
+        "en": "Lisbon",
+        "pt": "Lisboa"
+      }
     },
     {
       "aliases": [],
@@ -8659,7 +8671,11 @@
         "lon": 13.23,
         "precision": "city"
       },
-      "wikidata": "Q3897"
+      "wikidata": "Q3897",
+      "wikipedia": {
+        "en": "Luanda",
+        "pt": "Luanda"
+      }
     },
     {
       "aliases": [],
@@ -8678,7 +8694,11 @@
         "lon": 113.54,
         "precision": "city"
       },
-      "wikidata": "Q14773"
+      "wikidata": "Q14773",
+      "wikipedia": {
+        "en": "Macau",
+        "pt": "Macau"
+      }
     },
     {
       "aliases": [],
@@ -8715,7 +8735,11 @@
         "lon": -73.97,
         "precision": "city"
       },
-      "wikidata": "Q60"
+      "wikidata": "Q60",
+      "wikipedia": {
+        "en": "New York City",
+        "pt": "Nova Iorque"
+      }
     },
     {
       "aliases": [],
@@ -8775,7 +8799,11 @@
         "lon": -8.14,
         "precision": "region"
       },
-      "wikidata": "Q1013094"
+      "wikidata": "Q1013094",
+      "wikipedia": {
+        "en": "Pedrógão Grande",
+        "pt": "Pedrógão Grande"
+      }
     },
     {
       "aliases": [],
@@ -8794,7 +8822,11 @@
         "lon": -8.61,
         "precision": "city"
       },
-      "wikidata": "Q36433"
+      "wikidata": "Q36433",
+      "wikipedia": {
+        "en": "Porto",
+        "pt": "Porto"
+      }
     },
     {
       "aliases": [],
