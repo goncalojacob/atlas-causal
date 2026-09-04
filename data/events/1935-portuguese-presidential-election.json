@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "1935-portuguese-presidential-election",
   "kind": "event",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,11 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "m21-retracted"
+    ],
+    "note": "Retracted in M21: 17 February 1935, Óscar Carmona unopposed and re-elected, the first presidential election of the Estado Novo. The office and the man are both already in the atlas by way of the election of 1928, which is the one that did something. This one confirmed an arrangement rather than making it."
   },
   "wikidata": "Q18166737",
   "sitelinks": 4,

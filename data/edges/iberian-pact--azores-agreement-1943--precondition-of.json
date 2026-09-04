@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "iberian-pact--azores-agreement-1943--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    },
+    {
+      "source": "meneses-2009-salazar",
+      "locator": null
+    }
+  ],
+  "from": "iberian-pact",
+  "to": "azores-agreement-1943",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Leasing bases in the Azores to Britain in August 1943 was the largest risk Salazar took in the war: it broke the appearance of neutrality in front of a Germany that had been standing on the Pyrenees since the previous November. He could take it because the peninsula behind him was closed. The pact of 1939, its protocol of 1940 and the Iberian bloc of 1942 had made Spain a neutral that would neither march nor be marched through, and without that the islands would have been a hostage rather than a card. The claim is about what made the concession survivable, not about what made Britain ask for it.",
+  "dispute": null
+}

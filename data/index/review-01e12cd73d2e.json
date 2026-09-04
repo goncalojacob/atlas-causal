@@ -3494,6 +3494,58 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "rosas-1994-estado-novo",
+        "meneses-2009-salazar",
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "iberian-pact",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "The Iberian Pact"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "rosas-1994-estado-novo",
+        "meneses-2009-salazar"
+      ],
+      "from": "iberian-pact",
+      "id": "iberian-pact--azores-agreement-1943--precondition-of",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "azores-agreement-1943",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -5454,6 +5506,29 @@
       ],
       "cites": [
         "rosas-1994-estado-novo",
+        "meneses-2009-salazar"
+      ],
+      "from": "portugal-backs-franco-1936",
+      "id": "portugal-backs-franco-1936--iberian-pact--caused",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "iberian-pact",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "rosas-1994-estado-novo",
         "costa-pinto-2003-contemporary-portugal"
       ],
       "from": "portugal-backs-franco-1936",
@@ -6654,26 +6729,8 @@
     }
   ],
   "schema": 1,
-  "total": 835,
+  "total": 837,
   "warnings": [
-    {
-      "id": "1934-portuguese-legislative-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "1935-portuguese-presidential-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "1938-portuguese-legislative-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
     {
       "id": "1942-portuguese-legislative-election",
       "kind": "event",
@@ -7719,12 +7776,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "iberian-pact",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
       "id": "killing-of-odair-moniz",
       "kind": "event",
       "message": "event has no edges",
@@ -7780,12 +7831,6 @@
     },
     {
       "id": "murder-of-jose-manuel-placido",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "portuguese-constitutional-referendum-1933",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"

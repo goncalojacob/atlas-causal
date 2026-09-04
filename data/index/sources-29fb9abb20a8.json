@@ -7981,7 +7981,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 13,
+      "citationCount": 16,
       "citations": [
         {
           "dissent": false,
@@ -8015,6 +8015,18 @@
         },
         {
           "dissent": false,
+          "id": "iberian-pact--azores-agreement-1943--precondition-of",
+          "kind": "edge",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "portugal-backs-franco-1936--iberian-pact--caused",
+          "kind": "edge",
+          "locator": null
+        },
+        {
+          "dissent": false,
           "id": "salazar-finance-minister-1928--salazar-president-of-council-1932--caused",
           "kind": "edge",
           "locator": null
@@ -8040,6 +8052,12 @@
         {
           "dissent": false,
           "id": "delgado-candidacy-1958",
+          "kind": "event",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "iberian-pact",
           "kind": "event",
           "locator": null
         },
@@ -8640,7 +8658,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 42,
+      "citationCount": 45,
       "citations": [
         {
           "dissent": false,
@@ -8752,6 +8770,18 @@
         },
         {
           "dissent": false,
+          "id": "iberian-pact--azores-agreement-1943--precondition-of",
+          "kind": "edge",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "portugal-backs-franco-1936--iberian-pact--caused",
+          "kind": "edge",
+          "locator": null
+        },
+        {
+          "dissent": false,
           "id": "portugal-backs-franco-1936--legiao-portuguesa-founded-1936--caused",
           "kind": "edge",
           "locator": null
@@ -8837,6 +8867,12 @@
         {
           "dissent": false,
           "id": "exposicao-mundo-portugues-1940",
+          "kind": "event",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "iberian-pact",
           "kind": "event",
           "locator": null
         },
@@ -9776,7 +9812,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 218,
+      "citationCount": 214,
       "citations": [
         {
           "dissent": false,
@@ -9807,24 +9843,6 @@
           "id": "1928-portuguese-presidential-election",
           "kind": "event",
           "locator": "Q18167373"
-        },
-        {
-          "dissent": false,
-          "id": "1934-portuguese-legislative-election",
-          "kind": "event",
-          "locator": "Q7232754"
-        },
-        {
-          "dissent": false,
-          "id": "1935-portuguese-presidential-election",
-          "kind": "event",
-          "locator": "Q18166737"
-        },
-        {
-          "dissent": false,
-          "id": "1938-portuguese-legislative-election",
-          "kind": "event",
-          "locator": "Q7232755"
         },
         {
           "dissent": false,
@@ -10938,12 +10956,6 @@
         },
         {
           "dissent": false,
-          "id": "portuguese-constitutional-referendum-1933",
-          "kind": "event",
-          "locator": "Q7232706"
-        },
-        {
-          "dissent": false,
           "id": "portuguese-european-constitution-referendum",
           "kind": "event",
           "locator": "Q3454893"
@@ -11117,7 +11129,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 6,
+      "citationCount": 7,
       "citations": [
         {
           "dissent": false,
@@ -11148,6 +11160,12 @@
           "id": "1928-portuguese-presidential-election",
           "kind": "event",
           "locator": "\"1928 Portuguese presidential election\", revision 1348300118"
+        },
+        {
+          "dissent": false,
+          "id": "iberian-pact",
+          "kind": "event",
+          "locator": "\"Iberian Pact\", revision 1368371149"
         },
         {
           "dissent": false,
@@ -11186,7 +11204,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 8,
+      "citationCount": 9,
       "citations": [
         {
           "dissent": false,
@@ -11229,6 +11247,12 @@
           "id": "1928-portuguese-presidential-election",
           "kind": "event",
           "locator": "\"Eleições presidenciais portuguesas de 1928\", revision 71716338"
+        },
+        {
+          "dissent": false,
+          "id": "iberian-pact",
+          "kind": "event",
+          "locator": "\"Tratado de Amizade e Não Agressão Luso-Espanhol\", revision 68716502"
         },
         {
           "dissent": false,

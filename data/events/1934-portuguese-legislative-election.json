@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "1934-portuguese-legislative-election",
   "kind": "event",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,11 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "m21-retracted"
+    ],
+    "note": "Retracted in M21: 16 December 1934, the first election under the 1933 constitution and the first since 1925. The National Union was the only party permitted to stand, took all 100 seats on a single national list, and three of them went to women. It is the template for forty years of Estado Novo elections, which is a fact about the regime rather than a consequence of this ballot; nothing argued leads out of it."
   },
   "wikidata": "Q7232754",
   "sitelinks": 5,

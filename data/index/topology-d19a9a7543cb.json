@@ -5828,6 +5828,16 @@
     {
       "aliases": [],
       "confidence": "probable",
+      "from": "iberian-pact",
+      "id": "iberian-pact--azores-agreement-1943--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "azores-agreement-1943",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
       "from": "imf-agreement-1978",
       "id": "imf-agreement-1978--imf-agreement-1983--precondition-of",
       "status": "active",
@@ -6023,6 +6033,16 @@
       "status": "active",
       "supersededBy": null,
       "to": "revolt-14-may-1915",
+      "type": "caused"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "portugal-backs-franco-1936",
+      "id": "portugal-backs-franco-1936--iberian-pact--caused",
+      "status": "active",
+      "supersededBy": null,
+      "to": "iberian-pact",
       "type": "caused"
     },
     {
@@ -6839,7 +6859,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "1934 Portuguese legislative election",
       "weight": 0,
@@ -6861,7 +6881,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "1935 Portuguese presidential election",
       "weight": 0,
@@ -6883,7 +6903,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "1938 Portuguese legislative election",
       "weight": 0,
@@ -10322,7 +10342,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Anglo-Portuguese agreement on Azores bases",
-      "weight": 3,
+      "weight": 4,
       "when": {
         "calendar": "gregorian",
         "date": "1943-08-17",
@@ -11940,7 +11960,16 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "salazar",
+          "role": "negotiated and signed for Portugal"
+        },
+        {
+          "actor": "estado-novo",
+          "role": "the regime whose foreign policy it set"
+        }
+      ],
       "aliases": [],
       "id": "iberian-pact",
       "place": "lisbon",
@@ -11948,10 +11977,11 @@
       "regionMethod": "inside",
       "status": "active",
       "supersededBy": null,
-      "title": "Iberian Pact",
-      "weight": 0,
+      "title": "The Iberian Pact",
+      "weight": 4,
       "when": {
-        "date": "1939-03-18",
+        "calendar": "gregorian",
+        "date": "1939-03-17",
         "end": 1939,
         "start": 1939
       },
@@ -12970,7 +13000,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Portugal supports the Nationalists in the Spanish Civil War",
-      "weight": 4,
+      "weight": 5,
       "when": {
         "calendar": "gregorian",
         "date": "1936-07",
@@ -13016,8 +13046,8 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
-      "supersededBy": null,
+      "status": "merged",
+      "supersededBy": "constitution-1933",
       "title": "Portuguese constitutional referendum, 1933",
       "weight": 0,
       "when": {

@@ -155,3 +155,31 @@ identify. Only the presidential election of 1928 stays.
 Wired instead: `1928-portuguese-presidential-election`, which sits exactly
 between the coup of 1926 and Salazar's arrival at the finance ministry and
 had been missing from the chain.
+
+## 1930s — 3 retracted, 1 merged, 1 wired
+
+- `1934-portuguese-legislative-election` — 16 December 1934, the first
+  election under the 1933 constitution and the first since 1925: the National
+  Union alone on a single national list, all 100 seats, three of them women.
+  It is the template for forty years of Estado Novo elections, which is a
+  fact about the regime rather than a consequence of this ballot.
+- `1935-portuguese-presidential-election` — 17 February 1935, Carmona
+  unopposed. The election of 1928 is the one that did something.
+- `1938-portuguese-legislative-election` — 30 October 1938, single list
+  again.
+
+**Merged, not retracted:**
+
+- `portuguese-constitutional-referendum-1933` → **`constitution-1933`**. They
+  are the same event: the atlas already dates the Constitution of 1933 to the
+  plebiscite of 19 March and its summary describes that vote, abstentions
+  counted as approval included. The record therefore names its survivor in
+  `supersededBy` rather than becoming an anonymous tombstone. It keeps the
+  Wikidata id and the two Wikipedia links the import brought with it;
+  `constitution-1933` carries no identity of its own, and whether an item
+  about the *referendum* is the right identity for a record about the
+  *constitution* is a question for a reviewer, not something this run should
+  decide by copying an id across.
+
+Wired instead: `iberian-pact`, with the intervention in Spain running into it
+and the Azores agreement of 1943 running out.

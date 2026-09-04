@@ -9,14 +9,19 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "summary-drafted"
     ]
   },
   "wikidata": "Q884821",
@@ -27,18 +32,44 @@
   },
   "sources": [
     {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    },
+    {
+      "source": "meneses-2009-salazar",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Iberian Pact\", revision 1368371149"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Tratado de Amizade e Não Agressão Luso-Espanhol\", revision 68716502"
+    },
+    {
       "source": "wikidata",
       "locator": "Q884821"
     }
   ],
-  "title": "Iberian Pact",
-  "summary": "Wikidata item Q884821, imported by tools/import/wikidata.mjs. The item's own description reads \"1939 pact between Spain and Portugal\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "title": "The Iberian Pact",
+  "summary": "Salazar and the Spanish ambassador Nicolás Franco — the victor’s brother — signed the Treaty of Friendship and Non-Aggression in Lisbon on 17 March 1939, a fortnight before the Spanish Civil War formally ended and with its outcome already settled; it was ratified on the 25th. The two states recognised each other’s frontiers, undertook not to help an aggressor against the other, and bound themselves to consult before acting. What three years of support for the Nationalist side had been for was substantially this: a Spain with no claim on Portugal and no intention of letting anybody else cross it. An additional protocol signed in Lisbon in July 1940 reaffirmed peninsular neutrality once the war had begun, and the arrangement held through the years when Spanish sympathies ran to the Axis and Portuguese ones to Britain. It is in the atlas because Portuguese neutrality in the Second World War, and everything Salazar was later able to trade on it, rested here.",
   "when": {
     "start": 1939,
     "end": 1939,
-    "date": "1939-03-18"
+    "date": "1939-03-17",
+    "calendar": "gregorian"
   },
   "place": "lisbon",
   "region": null,
-  "actors": []
+  "actors": [
+    {
+      "actor": "salazar",
+      "role": "negotiated and signed for Portugal"
+    },
+    {
+      "actor": "estado-novo",
+      "role": "the regime whose foreign policy it set"
+    }
+  ]
 }

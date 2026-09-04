@@ -1,7 +1,7 @@
 {
   "counts": {
     "actors": 319,
-    "edges": 102,
+    "edges": 104,
     "events": 326,
     "narratives": 1,
     "places": 25,
@@ -11,9 +11,9 @@
     "sources": 34
   },
   "files": {
-    "review": "index/review-9dfc9d14e7cb.json",
-    "sources": "index/sources-94f74e7aaa85.json",
-    "topology": "index/topology-c55d395f9edb.json"
+    "review": "index/review-01e12cd73d2e.json",
+    "sources": "index/sources-29fb9abb20a8.json",
+    "topology": "index/topology-d19a9a7543cb.json"
   },
   "land": [
     {
@@ -132,6 +132,7 @@
     "lender",
     "movement",
     "nationalised it",
+    "negotiated and signed for portugal",
     "negotiator",
     "opponent",
     "opposition leader",
@@ -166,6 +167,7 @@
     "the regime being constituted",
     "the regime restored by the may rising",
     "the regime seeking a constitutional form",
+    "the regime whose foreign policy it set",
     "the regime whose office was filled",
     "victim",
     "winner",
