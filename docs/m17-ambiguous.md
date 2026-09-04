@@ -45,11 +45,30 @@ nothing on Wikidata is called "Independence of Angola".
 
 nothing on Wikidata is called "Beginning of the war in Angola".
 
+## armed-forces-movement
+
+`actor` · searched for **Armed Forces Movement**
+
+nothing on Wikidata is called "Armed Forces Movement".
+
 ## azores-agreement-1943
 
 `event` · searched for **Anglo-Portuguese agreement on Azores bases**
 
 nothing on Wikidata is called "Anglo-Portuguese agreement on Azores bases".
+
+## banco-de-portugal
+
+`actor` · 1846– · searched for **Banco de Portugal**
+
+3 item(s) were read and each failed a test.
+
+- [`Q378372`](https://www.wikidata.org/wiki/Q378372) **Banco de Portugal** — central bank — 1846– — Q66344
+  - none of its classes (Q66344) is in data/imports/wikidata-seeds.json → classes
+- [`Q54470465`](https://www.wikidata.org/wiki/Q54470465) **Edifício do Banco de Portugal no Porto** — bank in Porto — no date — Q18761864, Q210272
+  - none of its classes (Q18761864, Q210272) is in data/imports/wikidata-seeds.json → classes
+- [`Q76947343`](https://www.wikidata.org/wiki/Q76947343) **Edifício do Banco de Portugal em Braga** — building in Portugal — no date — Q41176, Q210272
+  - none of its classes (Q41176, Q210272) is in data/imports/wikidata-seeds.json → classes
 
 ## bes-resolution-2014
 
@@ -145,6 +164,12 @@ nothing on Wikidata is called "The revision that abolishes the Council of the Re
 
 nothing on Wikidata is called "António Costa resigns".
 
+## council-of-the-revolution
+
+`actor` · searched for **Council of the Revolution**
+
+nothing on Wikidata is called "Council of the Revolution".
+
 ## coup-28-may-1926
 
 `event` · searched for **Coup of 28 May**
@@ -216,6 +241,45 @@ nothing on Wikidata is called "Portugal wins the European Championship".
 `event` · searched for **Portugal adopts the euro**
 
 nothing on Wikidata is called "Portugal adopts the euro".
+
+## european-central-bank
+
+`actor` · 1998– · searched for **European Central Bank**
+
+7 item(s) were read and each failed a test.
+
+- [`Q8901`](https://www.wikidata.org/wiki/Q8901) **European Central Bank** — central bank of the European Union and the eurozone — 1998– — Q66344, Q748720
+  - none of its classes (Q66344, Q748720) is in data/imports/wikidata-seeds.json → classes
+- [`Q76161279`](https://www.wikidata.org/wiki/Q76161279) **European Central Bank 2014 data breach** — no date — Q1172486
+  - none of its classes (Q1172486) is in data/imports/wikidata-seeds.json → classes
+- [`Q57916434`](https://www.wikidata.org/wiki/Q57916434) **European Central Bank** — no date — Q13442814
+  - none of its classes (Q13442814) is in data/imports/wikidata-seeds.json → classes
+
+## european-commission
+
+`actor` · 1958– · searched for **European Commission**
+
+10 item(s) were read and each failed a test.
+
+- [`Q8880`](https://www.wikidata.org/wiki/Q8880) **European Commission** — executive branch of the European Union — 1958– — Q748720, Q35798
+  - none of its classes (Q748720, Q35798) is in data/imports/wikidata-seeds.json → classes
+- [`Q2661677`](https://www.wikidata.org/wiki/Q2661677) **European Commissioner** — member of the European Commission; like a government minister — no date — Q294414
+  - none of its classes (Q294414) is in data/imports/wikidata-seeds.json → classes
+- [`Q1780211`](https://www.wikidata.org/wiki/Q1780211) **European Commissioner for Trade** — Member of the EU Commission — 1958– — Q4164871
+  - none of its classes (Q4164871) is in data/imports/wikidata-seeds.json → classes
+
+## european-economic-community
+
+`actor` · 1957–1993 · searched for **European Economic Community**
+
+10 item(s) were read and each failed a test.
+
+- [`Q52847`](https://www.wikidata.org/wiki/Q52847) **European Economic Community** — 1958–2009 organisation for economic integration, under the EU from 1993 — 1958–2009 — Q43229
+  - its classes make it a institution, not a polity
+- [`Q140127115`](https://www.wikidata.org/wiki/Q140127115) **EUROPEAN ECONOMIC COMMUNITY** — book chapter in Regional Cooperation, Organizations and Problems (1983) — no date — Q1980247
+  - none of its classes (Q1980247) is in data/imports/wikidata-seeds.json → classes
+- [`Q16024983`](https://www.wikidata.org/wiki/Q16024983) **European Economic Community–German Democratic Republic border** — no date — Q133346
+  - none of its classes (Q133346) is in data/imports/wikidata-seeds.json → classes
 
 ## expo-98
 
@@ -500,3 +564,33 @@ nothing on Wikidata is called "Mário Soares elected president".
 `event` · searched for **Spínola resigns the presidency**
 
 nothing on Wikidata is called "Spínola resigns the presidency".
+
+## troika-bailout-2011
+
+`event` · searched for **Request for financial assistance**
+
+nothing on Wikidata is called "Request for financial assistance".
+
+## troika-programme-ends-2014
+
+`event` · searched for **Exit from the adjustment programme**
+
+nothing on Wikidata is called "Exit from the adjustment programme".
+
+## un-admission-1955
+
+`event` · searched for **Portugal admitted to the United Nations**
+
+nothing on Wikidata is called "Portugal admitted to the United Nations".
+
+## wiriyamu-massacre-1972
+
+`event` · searched for **The Wiriyamu massacre**
+
+nothing on Wikidata is called "The Wiriyamu massacre".
+
+## world-youth-day-2023
+
+`event` · searched for **World Youth Day in Lisbon**
+
+nothing on Wikidata is called "World Youth Day in Lisbon".
