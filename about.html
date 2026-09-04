@@ -206,13 +206,33 @@
       <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="license noreferrer">CC BY-NC-SA 4.0</a>,
       which is <strong>not</strong> the licence of the rest of the data. Coordinates have been
       simplified for size; every date, status, sovereign and capital is the dataset's own.</p>
-      <p>What the styles mean: a <strong>thin line over a faint wash</strong> is a state holding
-      its own ground; a <strong>lighter line over a stronger wash</strong> is a dependency —
-      colony, protectorate, mandate or occupied territory — and hovering it names both the
-      territory and whoever held it; a <strong>dashed outline</strong> means the presence itself
-      is disputed, the same as a dashed link. There is no colour per country on purpose: two
-      hundred polities share one palette, so who was where is answered by hovering and by
-      clicking, which opens the actor and fills in everything it held.</p>
+      <p>What the styles mean: a <strong>state holding its own ground</strong> is a solid wash
+      with a thin outline in the same colour darkened; a <strong>dependency</strong> — colony,
+      protectorate, mandate or occupied territory — is the <em>lighter tint of whoever held
+      it</em>, outlined dotted, so an empire and its possessions read as one family and hovering
+      names both; a <strong>dashed outline</strong> means the presence itself is disputed, the
+      same as a dashed link.</p>
+
+      <h3>What the colours mean, and what they do not</h3>
+      <p>There are <strong>eight</strong> of them, and <strong>there is no legend</strong>. A hue
+      here says one thing only: <em>this is not the same territory as the one beside it</em>. It
+      does not say which polity, what kind of state, whose empire, or how large — two hundred
+      polities share eight colours, so a legend would be a lie four times over. Who was where is
+      answered by hovering a territory and by clicking it, which opens the actor's card and fills
+      in everything it held.</p>
+      <p>Which actor gets which hue is not somebody's taste and is not stored on the records. It
+      is computed from the borders themselves: <code>tools/build-palette.mjs</code> works out who
+      touches whom in every period the outlines cover and colours that graph so that no two
+      neighbours are ever alike, writing the result to <code>data/geo/palette.json</code>. The hue
+      belongs to the <strong>actor</strong>, so a territory keeps its colour as the years pass —
+      Angola is the same colour in 1975 as in 2019, and before 1975 it is Portugal's colour
+      lightened, because that is what it was. Where eight is not enough — an empire that borders a
+      quarter of the world cannot be told from every one of its neighbours — the file records who
+      it had to share with rather than hiding it.</p>
+      <p>The colours sit <em>under</em> the two that matter more. The actor you have selected is
+      filled in <strong>cobalt</strong> over every hue, and the path you have
+      walked is drawn in madder over that. Territory colour is the ground; those two are the
+      argument.</p>
       <p>A border on this map is still a modern idea imposed on the past. It is drawn here only
       for a period that had such borders and a source that dates every change of them; earlier
       periods will need diffuse zones rather than outlines, which is what the
@@ -239,7 +259,8 @@
 
       <h2>Licences</h2>
 
-      <p>Four, because one licence cannot honestly cover code, prose and two imported datasets.</p>
+      <p>Several, because one licence cannot honestly cover code, prose, two imported datasets
+      and two typefaces.</p>
 
       <ul>
         <li><strong>The code</strong> — everything under <code>src/</code>, <code>tools/</code>
@@ -272,6 +293,13 @@
         whoever wrote them — <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license noreferrer">CC BY-SA 4.0</a>,
         the same licence, and removed before the site is published. The head of
         <code>data/LICENSE</code> says all of this again.</li>
+        <li><strong>The two typefaces</strong> — <a href="https://github.com/octaviopardo/EBGaramond12" rel="noreferrer">EB Garamond</a>
+        for what the atlas says and <a href="https://public-sans.digital.gov/" rel="noreferrer">Public Sans</a>
+        for what the interface says — are under the
+        <a href="https://openfontlicense.org/" rel="license noreferrer">SIL Open Font License 1.1</a>,
+        which is neither the MIT of the code nor the CC BY-SA of the records. The files are in
+        <code>src/fonts/</code> with their licences beside them and are served from this site
+        rather than from a font CDN, so opening a page tells nobody but the host that you did.</li>
       </ul>
 
       <h3>Why this cannot be changed later</h3>

@@ -48,13 +48,22 @@
   --paper: #ffffff;
   --land: #e6ecf5;
   --cobalt: #1f3f8f;
-  --cobalt-soft: #7f97c9;
+  --cobalt-soft: #798fbf;
   --cobalt-faint: #d5deef;
   --madder: #a8323e;
   --madder-faint: #f3dfe1;
   --ink: #1c2230;
-  --ink-soft: #5c6577;
+  --ink-soft: #535b6b;
   --line: #c6d1e4;
+
+  /* Two of these moved in M19, for contrast and not for taste. --ink-soft
+     was #5c6577, which is 4.33:1 on --cobalt-faint — under AA — and
+     cobalt-faint is what a search result and a queue row are highlighted
+     with; it is now 5.05:1 there and 6.84:1 on paper. --cobalt-soft was
+     #7f97c9, which is 2.93:1 on paper, under the 3:1 that WCAG asks of a
+     line somebody has to see: it is now 3.22:1, and it draws the graph's
+     edges. tests/contrast.test.mjs holds the whole table and fails if any
+     of it slips. */
 
   /* The eight territory hues. Which actor gets which is data —
      data/geo/palette.json, from tools/build-palette.mjs — and hue means
@@ -153,6 +162,10 @@ body {
 }
 
 button { font: inherit; }
+
+/* Checkboxes and the like are the browser's, and this is the one line that
+   makes them the atlas's: the tick is cobalt like every other "this is on". */
+input, select, textarea { accent-color: var(--cobalt); }
 
 /* One focus ring, everywhere, and it is visible. :focus-visible so that a
    mouse click does not leave a ring behind but the keyboard always does. */
