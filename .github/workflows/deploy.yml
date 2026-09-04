@@ -52,6 +52,12 @@ jobs:
           else
             echo "index unchanged"
           fi
+      # The cached Wikipedia leads are somebody else's text, kept so a
+      # drafting run can read the same revision twice. They are not part of
+      # the site and publishing them would be republishing Wikipedia, so they
+      # never reach the artifact (docs/review-2026-09-04-plan.md, finding 18).
+      - name: Keep the import cache out of the site
+        run: rm -rf tools/import/cache
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

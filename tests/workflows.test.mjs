@@ -47,6 +47,37 @@ test('no workflow interpolates anything into a shell command', async () => {
   }
 });
 
+// Not a YAML parser — this repository ships none and will not — but the
+// mistakes that actually get made in a workflow file are a tab, an odd
+// indent, or a block scalar whose body is level with its key, and each of
+// those is findable without one. A file that passes this and still does not
+// parse fails on the runner, loudly, on a branch nobody has merged.
+test('every workflow file is indented like YAML', async () => {
+  for (const name of await readdir(WORKFLOWS)) {
+    const lines = (await read(WORKFLOWS, name)).split('\n');
+    let block = null;
+    lines.forEach((line, i) => {
+      const at = `${name}:${i + 1}`;
+      assert.ok(!line.includes('\t'), `${at} has a tab in it`);
+      if (line.trim() === '') return;
+      const indent = line.length - line.trimStart().length;
+      assert.equal(indent % 2, 0, `${at} is indented by ${indent}`);
+      if (block !== null) {
+        if (indent > block) return;
+        block = null;
+      }
+      if (/^\s*(- )?[A-Za-z_][\w.-]*:\s*[|>][-+]?\s*$/.test(line)) {
+        block = indent;
+        const body = lines[i + 1] ?? '';
+        assert.ok(body.length - body.trimStart().length > indent, `${at} opens a block whose body is not indented under it`);
+        return;
+      }
+      // Outside a block, a line is a key, a list item, or a comment.
+      assert.match(line.trim(), /^(#|- |[A-Za-z_'"][^:]*:|[A-Za-z_][\w.-]*:)/, `${at} is neither a key, a list item nor a comment`);
+    });
+  }
+});
+
 test('contribution.yml runs only on the maintainer label, with the scoped PAT', async () => {
   const text = await read(WORKFLOWS, 'contribution.yml');
   assert.match(text, /on:\s*\n\s*issues:\s*\n\s*types:\s*\[labeled\]/);
@@ -81,6 +112,43 @@ test('the index is owned by main, and pull requests never carry it', async () =>
   // Two jobs would deploy a checkout that does not carry the index it built.
   const jobs = deploy.slice(deploy.indexOf('\njobs:'));
   assert.deepEqual(jobs.match(/^ {2}[a-z-]+:$/gm), ['  deploy:']);
+});
+
+test('the import Action runs only on import branches and never on m0', async () => {
+  const text = await read(WORKFLOWS, 'import-wikidata.yml');
+  // A dispatch would resolve on the default branch, which has no workflows
+  // (docs/review-2026-09-04-plan.md, finding 1), so the trigger is the push.
+  assert.match(text, /on:\s*\n\s*push:\s*\n\s*branches:\s*\n\s*- 'import\/\*\*'/);
+  // The header explains why it is not a dispatch, so the check is on the
+  // triggers rather than on the word appearing in the file at all.
+  assert.doesNotMatch(text.slice(text.indexOf('\non:')), /workflow_dispatch/);
+  // The branch names the mode; anything else stops the job rather than
+  // guessing which of three things somebody meant.
+  for (const mode of ['reconcile', 'candidates', 'run']) {
+    assert.match(text, new RegExp(`import/${mode}-\\*\\)`), `${mode} is a branch prefix the job understands`);
+  }
+  assert.match(text, /does not name a mode/);
+  // Nothing is pushed that has not validated, and a failure puts data/ back.
+  const order = ['wikidata.mjs', 'tools/validate.mjs', 'node --test', 'build-index.mjs', 'git commit', 'git push'];
+  let at = -1;
+  for (const step of order) {
+    const next = text.indexOf(step, at + 1);
+    assert.ok(next > at, `${step} comes after everything before it in the batch loop`);
+    at = next;
+  }
+  assert.match(text, /git checkout -- data\//);
+  assert.match(text, /timeout-minutes: 90/);
+  // The branch it pushes to is the one it was triggered by, and never m0.
+  assert.doesNotMatch(text, /push origin m0/);
+  assert.match(text, /HEAD:\$BRANCH/);
+  assert.match(text, /import: done/);
+});
+
+test('the site never carries the cached Wikipedia leads', async () => {
+  const deploy = await read(WORKFLOWS, 'deploy.yml');
+  const remove = deploy.indexOf('rm -rf tools/import/cache');
+  const upload = deploy.indexOf('upload-pages-artifact');
+  assert.ok(remove !== -1 && remove < upload, 'the cache is removed before the artifact is built');
 });
 
 test('both issue templates take a bundle and require the licence grant', async () => {

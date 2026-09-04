@@ -1,0 +1,91 @@
+# The one place tools/import/wikidata.mjs runs against the live service.
+#
+# It triggers on a push to an `import/**` branch rather than on
+# workflow_dispatch, because a dispatch resolves the workflow on the default
+# branch and `main` carries no workflows yet (docs/review-2026-09-04-plan.md,
+# finding 1). A run that wants an import pushes `import/<mode>-<date>` from
+# `m0`, waits for the last commit here, and fast-forward-merges the branch
+# back — that merge is the run's own commit, and this job never touches `m0`.
+#
+# The mode comes from the branch name: import/reconcile-…, import/candidates-…
+# or import/run-… . Nothing is interpolated into a shell command: the branch
+# name is somebody's string and reaches the script through env, like every
+# other value in this repository's workflows.
+name: import-wikidata
+
+on:
+  push:
+    branches:
+      - 'import/**'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: import-wikidata
+  cancel-in-progress: false
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+
+      - name: Read the mode from the branch name
+        id: mode
+        env:
+          BRANCH: ${{ github.ref_name }}
+        run: |
+          case "$BRANCH" in
+            import/reconcile-*) mode=reconcile ;;
+            import/candidates-*) mode=candidates ;;
+            import/run-*) mode=import ;;
+            *)
+              echo "::error::$BRANCH does not name a mode; use import/reconcile-…, import/candidates-… or import/run-…"
+              exit 1
+              ;;
+          esac
+          echo "mode=$mode" >> "$GITHUB_OUTPUT"
+          echo "running $mode"
+
+      - name: Import, one batch at a time, committing each
+        env:
+          MODE: ${{ steps.mode.outputs.mode }}
+          BRANCH: ${{ github.ref_name }}
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # Every batch is validated and indexed before it is committed, and a
+          # failure restores data/ rather than leaving half an import in the
+          # tree for the next batch to build on.
+          fail() {
+            echo "::error::$1"
+            git checkout -- data/ || true
+            exit 1
+          }
+          for batch in $(seq 1 40); do
+            node "tools/import/wikidata.mjs" "--$MODE" || fail "the import failed on batch $batch"
+            node tools/validate.mjs || fail "the tree does not validate after batch $batch"
+            node --test || fail "the tests do not pass after batch $batch"
+            node tools/build-index.mjs || fail "the index cannot be built after batch $batch"
+            if [ -z "$(git status --porcelain)" ]; then
+              echo "batch $batch changed nothing; the walk is finished"
+              break
+            fi
+            git add -A
+            git commit -m "import: $MODE batch $batch"
+            git push origin "HEAD:$BRANCH"
+            # candidates writes one file and has no cursor: one pass is all.
+            if [ "$MODE" = "candidates" ]; then break; fi
+          done
+
+      - name: Say the run is finished
+        run: |
+          set -euo pipefail
+          git commit --allow-empty -m "import: done"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
