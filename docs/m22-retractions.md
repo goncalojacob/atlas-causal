@@ -236,7 +236,9 @@ run for being written back in.
 June 1992), `1995-portuguese-legislative-election` (to the euro and to the
 regionalisation referendum it called), `1998-portuguese-abortion-referendum`,
 `portuguese-regionalisation-referendum-1998` and
-`1999-macanese-chief-executive-election` (to the handover). Five edges.
+`1999-macanese-chief-executive-election` (to the handover). Four edges — the
+abortion referendum's own edge, from 1998 to 2007, was written in the 2000s
+commit with the record it points at.
 
 The abortion referendum also carries a correction: the import dated it
 8 June 1998 from the Wikidata item, both cached leads give 28 June, and the

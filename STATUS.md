@@ -6,7 +6,109 @@ session ends. `ARCHITECTURE.md` is the target; this file is the position.
 
 ## Last updated
 
-2026-09-04, after M21 (`docs/m21-brief.md`): **the imported events before
+2026-09-04, after M22 (`docs/m22-brief.md`): **the imported events from 1975
+on have been read one at a time, most of them are gone, and seven of M21's
+retractions are back.**
+
+M22 ran under a **rule change the owner made on 4 September at 21:30Z**, which
+overrides both its brief and M21's: *one honest edge, in either direction, is
+enough to keep an event; only an event with no honest edge at all is
+retracted; and no edge is ever written in order to keep an event.* The bar is
+therefore the second clause, not a count.
+
+Of the **170 imported events starting in 1975 or later**, 35 are wired, 122
+are retracted and 13 are merged into records the atlas already held — a
+**retraction rate of 72%**. As in M21 the rate is high for a reason visible in
+the data: **102 of the 170 are ballots**, most of them repetitions of an
+institution the atlas already wires at its foundation, and a further 21 are
+actions of the armed far left that have nothing here to attach to. Every
+retraction carries its reason on the record in `review.note` as well as in
+`docs/m22-retractions.md`.
+
+Per decade — wired, retracted, merged, edges written, actors created:
+
+| decade | wired | retracted | merged | edges | actors |
+|--------|-------|-----------|--------|-------|--------|
+| 1970s  | 9     | 14        | 3      | 9     | 2      |
+| 1980s  | 6     | 26        | 2      | 7     | 0      |
+| 1990s  | 5     | 17        | 0      | 4     | 0      |
+| 2000s  | 5     | 21        | 0      | 5     | 0      |
+| 2010s  | 4     | 24        | 4      | 5     | 0      |
+| 2020s  | 6     | 20        | 4      | 6     | 0      |
+| **all**| **35**| **122**   | **13** | **36**| **2**  |
+
+Plus the **reinstatement pass**: seven of M21's fifty-nine retractions came
+back with the single edge M21's own note said each had — Batepá, Mueda, the
+Treaty of Windsor of 1899, the elections of 1921, 1925 and 1972, and the
+Conakry territorial election of 1957 — for **7 more edges**. Fifty-two of
+M21's retractions stand.
+
+The **43 edges** M22 wrote are **35 `probable` and 8 `consensus`**, and again
+no `disputed`, for M21's reason: no link was found that qualified historians
+disagree about, and where a *fact* is disputed — the tolls at Batepá and
+Mueda — the record says so instead. All five types are used: 17 `enabled`,
+11 `caused`, 11 `precondition-of`, 3 `reacted-to`, 1 `inspired`.
+
+**What was wired** is four chains and some singles. The institutions the
+constitution of 1976 created — the two regional assemblies, local government —
+each wired to it at their foundation. The parliamentary chain of the 1980s:
+the Democratic Alliance takes the constitution back from the military in 1982,
+cannot take the presidency, breaks; the Bloco Central signs with the Fund and
+with the Communities; the minority of 1985 becomes the majority of 1987. The
+best of the four, the 2000s: a local election brings down a government in
+December 2001, the early election of 2002 follows, Barroso leaves for
+Brussels, the president dismisses his successor, the majority of 2005 holds
+the abortion referendum it promised, and 2007 answers 1998 the other way. And
+the road to November 2015: the defeat of June 2011 forces a Socialist
+leadership ballot, the leader it produces is the incumbent the open primary of
+2014 unseats, and the leader that primary produces reads October 2015 as a
+majority.
+
+**Four findings**, at length in `docs/m22-retractions.md`:
+
+1. **An institution is wired at its foundation, not at every exercise of it.**
+   Fifty-five of the 122 retractions are repetitions — local, regional and
+   European ballots after the first two of each, and fifteen of those are
+   single-municipality ballots the import brought beside the national election
+   of the same day. The alternative was one
+   argument ("the constitution of 1976 created elected local government")
+   filed twelve times, which is what the brief forbids. The test is not
+   whether a ballot repeats but whether anything follows from it, and where
+   something does the record stays: the local election of 2001, and the three
+   Madeiran elections of 2023, 2024 and 2025.
+2. **Lisbon as a venue is not a causal fact.** Eight records are treaties,
+   Union acts or alliance operations whose only Portuguese content is where
+   they were signed or who sent a contingent — the START I protocol, the
+   Lisbon recognition convention, the Treaty of Lisbon itself, the telecoms
+   package, the ESM treaty, the Union-wide European elections of 1999 and
+   2024, and the Afghanistan training mission. The record the atlas is missing is the
+   Portuguese presidency of 2007, not the treaty.
+3. **The armed far left is a hole in the atlas, not a set of unimportant
+   events.** Twenty-one records — bank robberies and killings by the PRP-BR, the
+   Brigadas Revolucionárias and the FP-25 between 1975 and 1984 — are
+   retracted for one reason: the atlas holds none of the organisations, none
+   of the trials, and no event for the turn to armed action after 25 November
+   1975. Write those three and most of the twenty become evidence.
+4. **Disasters without a recorded response are the largest honest loss.**
+   Fifteen — the Azorean earthquakes of 1980 and 1998 and the Cape São
+   Vicente one of 2009, the Chiado fire, the Almograve spill, the fire
+   seasons of 2016 and 2024, Monchique, the remains of Hurricane Leslie, the
+   quarry collapse at Borba, the Legionella outbreak of 2014, Xylella, the
+   Madeira fires of 2024, the European drought of 2022 and the Lisbon floods
+   of December 2022. The atlas holds the fires of
+   2017 and wires them to the reform they produced; for none of these does it
+   hold a response, an inquiry or a rule.
+
+**Three corrections to imported data**, each flagged on the record: the
+abortion referendum of 1998 was dated 8 June by the import and both cached
+leads say 28 June; the killing at the Sacavém pottery works was imported as
+2022 and the item's own description says 6 December 1982, which moves it into
+the armed far left of the 1980s; and the Social Democrat leadership ballot of
+27 November 2021 was filed under a 2022 id and title, so the title, the date
+and the summary now say 2021 and the record carries an `id-mismatch` flag
+against an id that cannot be changed.
+
+Before that, 2026-09-04, after M21 (`docs/m21-brief.md`): **the imported events before
 1975 have been read one at a time, and most of them are gone.**
 
 Of the **76 imported events starting before 1975**, 13 are wired, 59 are
@@ -2062,6 +2164,48 @@ object. Every later card gets a file.
     actor record was written by hand. The states left out are in the prose.
     **Still a question for the owner**, and it costs more with every run.
 
+160. **M22 corrected three values the import had written**, which no run had
+    done before. `tools/import/identity.mjs` forbids the *import* from
+    changing a value; it says nothing about a person or a run correcting one
+    afterwards, and leaving a wrong date on a record because a tool wrote it
+    would be the wrong reading of that rule. The three are the abortion
+    referendum of 1998 (8 June → 28 June, against both cached leads), the
+    killing at the Sacavém pottery works (2022 → 1982, against the Wikidata
+    item's own description) and the title of the Social Democrat leadership
+    ballot of 27 November 2021 (filed as 2022). Each carries a flag — `date`,
+    `date`, `id-mismatch` — and the reason in `review.note`. The two Wikidata
+    items are worth correcting upstream.
+161. **The repetition principle, and what it is not.** M22 wires an
+    institution at its foundation and at the ballot where it became a cycle,
+    and retracts the routine repetitions after them, rather than attaching one
+    argument — "the constitution of 1976 created elected local government" —
+    to twelve ballots. The principle is stated at length in
+    `docs/m22-retractions.md`. It is **not** a rule that repetitions are
+    unimportant: the test is whether anything in the atlas follows, and where
+    something does the record stays. Two cases prove it — the local election
+    of December 2001, which brought down a government, and the three Madeiran
+    regional elections of 2023, 2024 and 2025, which caused each other.
+162. **The venue rule.** A treaty signed in Lisbon belongs to the history of
+    what it settles. Eight records were retracted under it, the Treaty of
+    Lisbon included, and that one will be argued with: it carries the city's
+    name and was signed during a Portuguese presidency. The answer is that the
+    missing record is the presidency of 2007, not the treaty — **a question
+    for the owner** if the line is drawn in the wrong place.
+163. **The reinstatement pass covered only what M21 itself named.** M22 read
+    the fifty-nine M21 retractions and reinstated the seven whose own
+    `review.note` identified a single argued edge, using that edge. It did not
+    re-argue the other fifty-two from scratch. Batepá is the one that came
+    back for a different reason — M21 retracted it for want of any São Toméan
+    record, and M22's own 1970s commit created one — which means **M21's first
+    finding is half-resolved**: Batepá and Mueda are wired, and the rest of the
+    pre-war African gap is exactly where it was.
+164. **Two new review flags.** `facts-thin` marks a record wired on less
+    material than the atlas would like — the Timorese massacres of January
+    1976, the two pandemic records — and says in its note what a reviewer must
+    establish before signing. `id-mismatch` marks a record whose immutable id
+    disagrees with its own content. Neither is in a closed vocabulary because
+    there is not one; `build-index.mjs` reports the set in use.
+
 ## Dates to verify
 
 Everything below was written from memory and is where the owner's review
@@ -2510,3 +2654,5 @@ M21 started 2026-09-04T21:01:06Z by scheduled
 M21 done
 
 M22 started 2026-09-04T22:23:00Z by shepherd
+
+M22 done
