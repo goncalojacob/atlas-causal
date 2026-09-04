@@ -5971,6 +5971,48 @@
       }
     },
     {
+      "actors": [],
+      "aliases": [],
+      "id": "1952-guinean-territorial-assembly-election",
+      "place": null,
+      "region": "africa",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1952 Guinean Territorial Assembly election",
+      "weight": 0,
+      "when": {
+        "date": "1952-03-30",
+        "end": 1952,
+        "start": 1952
+      },
+      "wikidata": "Q22090902",
+      "wikipedia": {
+        "en": "1952 Guinean Territorial Assembly election"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1957-guinean-territorial-assembly-election",
+      "place": null,
+      "region": "africa",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1957 Guinean Territorial Assembly election",
+      "weight": 0,
+      "when": {
+        "date": "1957-03-31",
+        "end": 1957,
+        "start": 1957
+      },
+      "wikidata": "Q1285560",
+      "wikipedia": {
+        "en": "1957 Guinean Territorial Assembly election"
+      }
+    },
+    {
       "actors": [
         {
           "actor": "ramalho-eanes",
@@ -7268,6 +7310,28 @@
       }
     },
     {
+      "actors": [],
+      "aliases": [],
+      "id": "iberian-pact",
+      "place": "lisbon",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Iberian Pact",
+      "weight": 0,
+      "when": {
+        "date": "1939-03-18",
+        "end": 1939,
+        "start": 1939
+      },
+      "wikidata": "Q884821",
+      "wikipedia": {
+        "en": "Iberian Pact",
+        "pt": "Tratado de Amizade e Não Agressão Luso-Espanhol"
+      }
+    },
+    {
       "actors": [
         {
           "actor": "imf",
@@ -8067,6 +8131,27 @@
         "date": "1974-02-22",
         "end": 1974,
         "start": 1974
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "portuguese-language-orthographic-agreement-of-1945",
+      "place": null,
+      "region": "americas",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Portuguese Language Orthographic Agreement of 1945",
+      "weight": 0,
+      "when": {
+        "date": "1945-10-06",
+        "end": 1945,
+        "start": 1945
+      },
+      "wikidata": "Q9581238",
+      "wikipedia": {
+        "pt": "Acordo Ortográfico de 1945"
       }
     },
     {

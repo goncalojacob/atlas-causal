@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "portuguese-language-orthographic-agreement-of-1945",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q9581238",
+  "sitelinks": 1,
+  "wikipedia": {
+    "pt": "Acordo Ortográfico de 1945"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q9581238"
+    }
+  ],
+  "title": "Portuguese Language Orthographic Agreement of 1945",
+  "summary": "Wikidata item Q9581238, imported by tools/import/wikidata.mjs. The item's own description reads \"convenção ortográfica da língua portuguesa\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1945,
+    "end": 1945,
+    "date": "1945-10-06"
+  },
+  "place": null,
+  "region": "americas",
+  "actors": []
+}

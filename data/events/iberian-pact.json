@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "iberian-pact",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q884821",
+  "sitelinks": 10,
+  "wikipedia": {
+    "en": "Iberian Pact",
+    "pt": "Tratado de Amizade e Não Agressão Luso-Espanhol"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q884821"
+    }
+  ],
+  "title": "Iberian Pact",
+  "summary": "Wikidata item Q884821, imported by tools/import/wikidata.mjs. The item's own description reads \"1939 pact between Spain and Portugal\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1939,
+    "end": 1939,
+    "date": "1939-03-18"
+  },
+  "place": "lisbon",
+  "region": null,
+  "actors": []
+}

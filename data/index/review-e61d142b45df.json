@@ -6037,10 +6037,22 @@
     }
   ],
   "schema": 1,
-  "total": 574,
+  "total": 578,
   "warnings": [
     {
       "id": "1911-portuguese-presidential-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1952-guinean-territorial-assembly-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1957-guinean-territorial-assembly-election",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"
@@ -6058,7 +6070,19 @@
       "rule": "degree-zero"
     },
     {
+      "id": "iberian-pact",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
       "id": "may-1915-portuguese-presidential-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "portuguese-language-orthographic-agreement-of-1945",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"

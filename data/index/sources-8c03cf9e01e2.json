@@ -9530,7 +9530,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 4,
+      "citationCount": 8,
       "citations": [
         {
           "dissent": false,
@@ -9540,15 +9540,39 @@
         },
         {
           "dissent": false,
+          "id": "1952-guinean-territorial-assembly-election",
+          "kind": "event",
+          "locator": "Q22090902"
+        },
+        {
+          "dissent": false,
+          "id": "1957-guinean-territorial-assembly-election",
+          "kind": "event",
+          "locator": "Q1285560"
+        },
+        {
+          "dissent": false,
           "id": "august-1915-portuguese-presidential-election",
           "kind": "event",
           "locator": "Q97516196"
         },
         {
           "dissent": false,
+          "id": "iberian-pact",
+          "kind": "event",
+          "locator": "Q884821"
+        },
+        {
+          "dissent": false,
           "id": "may-1915-portuguese-presidential-election",
           "kind": "event",
           "locator": "Q97516248"
+        },
+        {
+          "dissent": false,
+          "id": "portuguese-language-orthographic-agreement-of-1945",
+          "kind": "event",
+          "locator": "Q9581238"
         },
         {
           "dissent": false,
