@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "q5942951",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q5942951",
+  "sitelinks": 1,
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5942951"
+    }
+  ],
+  "title": "Q5942951",
+  "summary": "Wikidata item Q5942951, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1998,
+    "end": 1998,
+    "date": "1998-07-09"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}

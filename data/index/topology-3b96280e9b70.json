@@ -7598,6 +7598,442 @@
     {
       "actors": [],
       "aliases": [],
+      "id": "1991-portuguese-legislative-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1991 Portuguese legislative election",
+      "weight": 0,
+      "when": {
+        "date": "1991-10-06",
+        "end": 1991,
+        "start": 1991
+      },
+      "wikidata": "Q2053113",
+      "wikipedia": {
+        "en": "1991 Portuguese legislative election",
+        "pt": "Eleições legislativas portuguesas de 1991"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1991-portuguese-presidential-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1991 Portuguese presidential election",
+      "weight": 0,
+      "when": {
+        "date": "1991-01-13",
+        "end": 1991,
+        "start": 1991
+      },
+      "wikidata": "Q3586629",
+      "wikipedia": {
+        "en": "1991 Portuguese presidential election",
+        "pt": "Eleições presidenciais portuguesas de 1991"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1993-portuguese-local-elections",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1993 Portuguese local elections",
+      "weight": 0,
+      "when": {
+        "date": "1993-12-12",
+        "end": 1993,
+        "start": 1993
+      },
+      "wikidata": "Q25421711",
+      "wikipedia": {
+        "en": "1993 Portuguese local elections",
+        "pt": "Eleições autárquicas portuguesas de 1993"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1994-european-parliament-election-in-portugal",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1994 European Parliament election in Portugal",
+      "weight": 0,
+      "when": {
+        "date": "1994-06-12",
+        "end": 1994,
+        "start": 1994
+      },
+      "wikidata": "Q3066311",
+      "wikipedia": {
+        "en": "1994 European Parliament election in Portugal",
+        "pt": "Eleições europeias de 1994 (Portugal)"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1995-portuguese-legislative-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1995 Portuguese legislative election",
+      "weight": 0,
+      "when": {
+        "date": "1995-10-01",
+        "end": 1995,
+        "start": 1995
+      },
+      "wikidata": "Q1511117",
+      "wikipedia": {
+        "en": "1995 Portuguese legislative election",
+        "pt": "Eleições legislativas portuguesas de 1995"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1996-azorean-regional-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1996 Azorean regional election",
+      "weight": 0,
+      "when": {
+        "date": "1996-10-13",
+        "end": 1996,
+        "start": 1996
+      },
+      "wikidata": "Q4832856",
+      "wikipedia": {
+        "en": "1996 Azorean regional election",
+        "pt": "Eleições legislativas regionais nos Açores em 1996"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1996-madeiran-regional-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1996 Madeiran regional election",
+      "weight": 0,
+      "when": {
+        "date": "1996-10-13",
+        "end": 1996,
+        "start": 1996
+      },
+      "wikidata": "Q10271601",
+      "wikipedia": {
+        "en": "1996 Madeiran regional election",
+        "pt": "Eleições legislativas regionais na Madeira em 1996"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1996-portuguese-presidential-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1996 Portuguese presidential election",
+      "weight": 0,
+      "when": {
+        "date": "1996-01-14",
+        "end": 1996,
+        "start": 1996
+      },
+      "wikidata": "Q3066523",
+      "wikipedia": {
+        "en": "1996 Portuguese presidential election",
+        "pt": "Eleições presidenciais portuguesas de 1996"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1997-portuguese-local-elections",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1997 Portuguese local elections",
+      "weight": 0,
+      "when": {
+        "date": "1997-12-14",
+        "end": 1997,
+        "start": 1997
+      },
+      "wikidata": "Q25421741",
+      "wikipedia": {
+        "en": "1997 Portuguese local elections",
+        "pt": "Eleições autárquicas portuguesas de 1997"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1998-azores-islands-earthquake",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1998 Azores Islands earthquake",
+      "weight": 0,
+      "when": {
+        "end": 1998,
+        "start": 1998
+      },
+      "wikidata": "Q108485945",
+      "wikipedia": {
+        "en": "1998 Azores Islands earthquake"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1998-portuguese-abortion-referendum",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1998 Portuguese abortion referendum",
+      "weight": 0,
+      "when": {
+        "date": "1998-06-08",
+        "end": 1998,
+        "start": 1998
+      },
+      "wikidata": "Q2105455",
+      "wikipedia": {
+        "en": "1998 Portuguese abortion referendum",
+        "pt": "Referendo à despenalização do aborto em Portugal (1998)"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1999-european-parliament-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1999 European Parliament election",
+      "weight": 0,
+      "when": {
+        "end": 1999,
+        "start": 1999
+      },
+      "wikidata": "Q1851815",
+      "wikipedia": {
+        "en": "1999 European Parliament election",
+        "pt": "Eleições parlamentares europeias de 1999"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1999-european-parliament-election-in-portugal",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1999 European Parliament election in Portugal",
+      "weight": 0,
+      "when": {
+        "date": "1999-06-13",
+        "end": 1999,
+        "start": 1999
+      },
+      "wikidata": "Q2404815",
+      "wikipedia": {
+        "en": "1999 European Parliament election in Portugal",
+        "pt": "Eleições europeias de 1999 (Portugal)"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1999-macanese-chief-executive-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1999 Macanese Chief Executive election",
+      "weight": 0,
+      "when": {
+        "date": "1999-05-15",
+        "end": 1999,
+        "start": 1999
+      },
+      "wikidata": "Q55719546",
+      "wikipedia": {
+        "en": "1999 Macanese Chief Executive election"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1999-portuguese-legislative-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1999 Portuguese legislative election",
+      "weight": 0,
+      "when": {
+        "date": "1999-10-10",
+        "end": 1999,
+        "start": 1999
+      },
+      "wikidata": "Q2053121",
+      "wikipedia": {
+        "en": "1999 Portuguese legislative election",
+        "pt": "Eleições legislativas portuguesas de 1999"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "2000-azorean-regional-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "2000 Azorean regional election",
+      "weight": 0,
+      "when": {
+        "date": "2000-10-15",
+        "end": 2000,
+        "start": 2000
+      },
+      "wikidata": "Q4832854",
+      "wikipedia": {
+        "en": "2000 Azorean regional election",
+        "pt": "Eleições legislativas regionais nos Açores em 2000"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "2000-madeiran-regional-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "2000 Madeiran regional election",
+      "weight": 0,
+      "when": {
+        "date": "2000-10-15",
+        "end": 2000,
+        "start": 2000
+      },
+      "wikidata": "Q10271603",
+      "wikipedia": {
+        "en": "2000 Madeiran regional election",
+        "pt": "Eleições legislativas regionais na Madeira em 2000"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "2001-portuguese-local-elections",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "2001 Portuguese local elections",
+      "weight": 0,
+      "when": {
+        "date": "2001-12-16",
+        "end": 2001,
+        "start": 2001
+      },
+      "wikidata": "Q18471358",
+      "wikipedia": {
+        "en": "2001 Portuguese local elections",
+        "pt": "Eleições autárquicas portuguesas de 2001"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "2001-portuguese-presidential-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "2001 Portuguese presidential election",
+      "weight": 0,
+      "when": {
+        "date": "2001-01-14",
+        "end": 2001,
+        "start": 2001
+      },
+      "wikidata": "Q3131667",
+      "wikipedia": {
+        "en": "2001 Portuguese presidential election",
+        "pt": "Eleições presidenciais portuguesas de 2001"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "2002-portuguese-legislative-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "2002 Portuguese legislative election",
+      "weight": 0,
+      "when": {
+        "date": "2002-03-17",
+        "end": 2002,
+        "start": 2002
+      },
+      "wikidata": "Q2053133",
+      "wikipedia": {
+        "en": "2002 Portuguese legislative election",
+        "pt": "Eleições legislativas portuguesas de 2002"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
       "id": "2011-portuguese-socialist-party-leadership-election",
       "place": null,
       "region": "europe",
@@ -9121,6 +9557,27 @@
     {
       "actors": [],
       "aliases": [],
+      "id": "eleicoes-legislativas-regionais-na-madeira-em-1992",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "eleições legislativas regionais na Madeira em 1992",
+      "weight": 0,
+      "when": {
+        "date": "1992-10-11",
+        "end": 1992,
+        "start": 1992
+      },
+      "wikidata": "Q10271602",
+      "wikipedia": {
+        "pt": "Eleições legislativas regionais na Madeira em 1992"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
       "id": "eleicoes-legislativas-regionais-nos-acores-em-1980",
       "place": null,
       "region": "europe",
@@ -9179,6 +9636,27 @@
       "wikidata": "Q10271609",
       "wikipedia": {
         "pt": "Eleições legislativas regionais nos Açores em 1988"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "eleicoes-legislativas-regionais-nos-acores-em-1992",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "eleições legislativas regionais nos Açores em 1992",
+      "weight": 0,
+      "when": {
+        "date": "1992-10-11",
+        "end": 1992,
+        "start": 1992
+      },
+      "wikidata": "Q10271611",
+      "wikipedia": {
+        "pt": "Eleições legislativas regionais nos Açores em 1992"
       }
     },
     {
@@ -10020,6 +10498,28 @@
     {
       "actors": [],
       "aliases": [],
+      "id": "lisbon-recognition-convention",
+      "place": "lisbon",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Lisbon Recognition Convention",
+      "weight": 0,
+      "when": {
+        "date": "1997-04-11",
+        "end": 1997,
+        "start": 1997
+      },
+      "wikidata": "Q1546127",
+      "wikipedia": {
+        "en": "Lisbon Recognition Convention",
+        "pt": "Convenção de Reconhecimento de Lisboa"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
       "id": "lisbon-regicide",
       "place": "lisbon",
       "region": "europe",
@@ -10610,6 +11110,28 @@
     {
       "actors": [],
       "aliases": [],
+      "id": "portuguese-regionalisation-referendum-1998",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Portuguese regionalisation referendum, 1998",
+      "weight": 0,
+      "when": {
+        "date": "1998-11-08",
+        "end": 1998,
+        "start": 1998
+      },
+      "wikidata": "Q7232796",
+      "wikipedia": {
+        "en": "1998 Portuguese regionalisation referendum",
+        "pt": "Referendo sobre a regionalização em Portugal (1998)"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
       "id": "q11077889",
       "place": "macau",
       "region": "asia",
@@ -10712,6 +11234,24 @@
         "start": 1977
       },
       "wikidata": "Q5941661"
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "q5942951",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Q5942951",
+      "weight": 0,
+      "when": {
+        "date": "1998-07-09",
+        "end": 1998,
+        "start": 1998
+      },
+      "wikidata": "Q5942951"
     },
     {
       "actors": [

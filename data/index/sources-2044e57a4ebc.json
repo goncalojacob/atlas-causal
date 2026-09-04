@@ -9530,7 +9530,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 140,
+      "citationCount": 165,
       "citations": [
         {
           "dissent": false,
@@ -9990,6 +9990,126 @@
         },
         {
           "dissent": false,
+          "id": "1991-portuguese-legislative-election",
+          "kind": "event",
+          "locator": "Q2053113"
+        },
+        {
+          "dissent": false,
+          "id": "1991-portuguese-presidential-election",
+          "kind": "event",
+          "locator": "Q3586629"
+        },
+        {
+          "dissent": false,
+          "id": "1993-portuguese-local-elections",
+          "kind": "event",
+          "locator": "Q25421711"
+        },
+        {
+          "dissent": false,
+          "id": "1994-european-parliament-election-in-portugal",
+          "kind": "event",
+          "locator": "Q3066311"
+        },
+        {
+          "dissent": false,
+          "id": "1995-portuguese-legislative-election",
+          "kind": "event",
+          "locator": "Q1511117"
+        },
+        {
+          "dissent": false,
+          "id": "1996-azorean-regional-election",
+          "kind": "event",
+          "locator": "Q4832856"
+        },
+        {
+          "dissent": false,
+          "id": "1996-madeiran-regional-election",
+          "kind": "event",
+          "locator": "Q10271601"
+        },
+        {
+          "dissent": false,
+          "id": "1996-portuguese-presidential-election",
+          "kind": "event",
+          "locator": "Q3066523"
+        },
+        {
+          "dissent": false,
+          "id": "1997-portuguese-local-elections",
+          "kind": "event",
+          "locator": "Q25421741"
+        },
+        {
+          "dissent": false,
+          "id": "1998-azores-islands-earthquake",
+          "kind": "event",
+          "locator": "Q108485945"
+        },
+        {
+          "dissent": false,
+          "id": "1998-portuguese-abortion-referendum",
+          "kind": "event",
+          "locator": "Q2105455"
+        },
+        {
+          "dissent": false,
+          "id": "1999-european-parliament-election",
+          "kind": "event",
+          "locator": "Q1851815"
+        },
+        {
+          "dissent": false,
+          "id": "1999-european-parliament-election-in-portugal",
+          "kind": "event",
+          "locator": "Q2404815"
+        },
+        {
+          "dissent": false,
+          "id": "1999-macanese-chief-executive-election",
+          "kind": "event",
+          "locator": "Q55719546"
+        },
+        {
+          "dissent": false,
+          "id": "1999-portuguese-legislative-election",
+          "kind": "event",
+          "locator": "Q2053121"
+        },
+        {
+          "dissent": false,
+          "id": "2000-azorean-regional-election",
+          "kind": "event",
+          "locator": "Q4832854"
+        },
+        {
+          "dissent": false,
+          "id": "2000-madeiran-regional-election",
+          "kind": "event",
+          "locator": "Q10271603"
+        },
+        {
+          "dissent": false,
+          "id": "2001-portuguese-local-elections",
+          "kind": "event",
+          "locator": "Q18471358"
+        },
+        {
+          "dissent": false,
+          "id": "2001-portuguese-presidential-election",
+          "kind": "event",
+          "locator": "Q3131667"
+        },
+        {
+          "dissent": false,
+          "id": "2002-portuguese-legislative-election",
+          "kind": "event",
+          "locator": "Q2053133"
+        },
+        {
+          "dissent": false,
           "id": "2011-portuguese-socialist-party-leadership-election",
           "kind": "event",
           "locator": "Q125030453"
@@ -10170,6 +10290,12 @@
         },
         {
           "dissent": false,
+          "id": "eleicoes-legislativas-regionais-na-madeira-em-1992",
+          "kind": "event",
+          "locator": "Q10271602"
+        },
+        {
+          "dissent": false,
           "id": "eleicoes-legislativas-regionais-nos-acores-em-1980",
           "kind": "event",
           "locator": "Q10271607"
@@ -10185,6 +10311,12 @@
           "id": "eleicoes-legislativas-regionais-nos-acores-em-1988",
           "kind": "event",
           "locator": "Q10271609"
+        },
+        {
+          "dissent": false,
+          "id": "eleicoes-legislativas-regionais-nos-acores-em-1992",
+          "kind": "event",
+          "locator": "Q10271611"
         },
         {
           "dissent": false,
@@ -10221,6 +10353,12 @@
           "id": "lisbon-protocol",
           "kind": "event",
           "locator": "Q4263317"
+        },
+        {
+          "dissent": false,
+          "id": "lisbon-recognition-convention",
+          "kind": "event",
+          "locator": "Q1546127"
         },
         {
           "dissent": false,
@@ -10278,6 +10416,12 @@
         },
         {
           "dissent": false,
+          "id": "portuguese-regionalisation-referendum-1998",
+          "kind": "event",
+          "locator": "Q7232796"
+        },
+        {
+          "dissent": false,
           "id": "q11077889",
           "kind": "event",
           "locator": "Q11077889"
@@ -10311,6 +10455,12 @@
           "id": "q5941661",
           "kind": "event",
           "locator": "Q5941661"
+        },
+        {
+          "dissent": false,
+          "id": "q5942951",
+          "kind": "event",
+          "locator": "Q5942951"
         },
         {
           "dissent": false,

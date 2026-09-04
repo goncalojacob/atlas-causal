@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "1991-portuguese-presidential-election",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q3586629",
+  "sitelinks": 7,
+  "wikipedia": {
+    "en": "1991 Portuguese presidential election",
+    "pt": "Eleições presidenciais portuguesas de 1991"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3586629"
+    }
+  ],
+  "title": "1991 Portuguese presidential election",
+  "summary": "Wikidata item Q3586629, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1991,
+    "end": 1991,
+    "date": "1991-01-13"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}

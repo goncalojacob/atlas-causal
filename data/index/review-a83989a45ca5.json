@@ -6037,7 +6037,7 @@
     }
   ],
   "schema": 1,
-  "total": 710,
+  "total": 735,
   "warnings": [
     {
       "id": "1890-portuguese-legislative-election",
@@ -6496,6 +6496,126 @@
       "rule": "degree-zero"
     },
     {
+      "id": "1991-portuguese-legislative-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1991-portuguese-presidential-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1993-portuguese-local-elections",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1994-european-parliament-election-in-portugal",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1995-portuguese-legislative-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1996-azorean-regional-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1996-madeiran-regional-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1996-portuguese-presidential-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1997-portuguese-local-elections",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1998-azores-islands-earthquake",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1998-portuguese-abortion-referendum",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1999-european-parliament-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1999-european-parliament-election-in-portugal",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1999-macanese-chief-executive-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1999-portuguese-legislative-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "2000-azorean-regional-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "2000-madeiran-regional-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "2001-portuguese-local-elections",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "2001-portuguese-presidential-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "2002-portuguese-legislative-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
       "id": "2011-portuguese-socialist-party-leadership-election",
       "kind": "event",
       "message": "event has no edges",
@@ -6676,6 +6796,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "eleicoes-legislativas-regionais-na-madeira-em-1992",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
       "id": "eleicoes-legislativas-regionais-nos-acores-em-1980",
       "kind": "event",
       "message": "event has no edges",
@@ -6689,6 +6815,12 @@
     },
     {
       "id": "eleicoes-legislativas-regionais-nos-acores-em-1988",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "eleicoes-legislativas-regionais-nos-acores-em-1992",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"
@@ -6731,6 +6863,12 @@
     },
     {
       "id": "lisbon-protocol",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "lisbon-recognition-convention",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"
@@ -6790,6 +6928,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "portuguese-regionalisation-referendum-1998",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
       "id": "q11077889",
       "kind": "event",
       "message": "event has no edges",
@@ -6821,6 +6965,12 @@
     },
     {
       "id": "q5941661",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "q5942951",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"

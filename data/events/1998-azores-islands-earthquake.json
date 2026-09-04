@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "1998-azores-islands-earthquake",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q108485945",
+  "sitelinks": 3,
+  "wikipedia": {
+    "en": "1998 Azores Islands earthquake"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q108485945"
+    }
+  ],
+  "title": "1998 Azores Islands earthquake",
+  "summary": "Wikidata item Q108485945, imported by tools/import/wikidata.mjs. The item's own description reads \"earthquake on Azores Islands, Portugal\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1998,
+    "end": 1998
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}

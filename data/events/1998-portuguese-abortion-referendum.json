@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "1998-portuguese-abortion-referendum",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q2105455",
+  "sitelinks": 4,
+  "wikipedia": {
+    "en": "1998 Portuguese abortion referendum",
+    "pt": "Referendo à despenalização do aborto em Portugal (1998)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2105455"
+    }
+  ],
+  "title": "1998 Portuguese abortion referendum",
+  "summary": "Wikidata item Q2105455, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1998,
+    "end": 1998,
+    "date": "1998-06-08"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}

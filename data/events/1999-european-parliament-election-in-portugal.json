@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "1999-european-parliament-election-in-portugal",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q2404815",
+  "sitelinks": 8,
+  "wikipedia": {
+    "en": "1999 European Parliament election in Portugal",
+    "pt": "Eleições europeias de 1999 (Portugal)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2404815"
+    }
+  ],
+  "title": "1999 European Parliament election in Portugal",
+  "summary": "Wikidata item Q2404815, imported by tools/import/wikidata.mjs. The item's own description reads \"European elections\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1999,
+    "end": 1999,
+    "date": "1999-06-13"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}

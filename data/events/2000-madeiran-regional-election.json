@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "2000-madeiran-regional-election",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q10271603",
+  "sitelinks": 3,
+  "wikipedia": {
+    "en": "2000 Madeiran regional election",
+    "pt": "Eleições legislativas regionais na Madeira em 2000"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q10271603"
+    }
+  ],
+  "title": "2000 Madeiran regional election",
+  "summary": "Wikidata item Q10271603, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2000,
+    "end": 2000,
+    "date": "2000-10-15"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}

@@ -138,3 +138,31 @@ created event chiado-fire from Q10301908
 created event desastre-ambiental-de-almograve from Q112726955
 25 Wikipedia lead(s) cached under tools/import/cache/wikipedia
 25 created, 0 enriched, 0 refused, 0 ambiguous
+import: 25 item(s) this batch, 82 left after it, 46 call(s) spent
+created event 1991-portuguese-presidential-election from Q3586629
+created event 1991-portuguese-legislative-election from Q2053113
+created event eleicoes-legislativas-regionais-na-madeira-em-1992 from Q10271602
+created event eleicoes-legislativas-regionais-nos-acores-em-1992 from Q10271611
+created event 1993-portuguese-local-elections from Q25421711
+created event 1994-european-parliament-election-in-portugal from Q3066311
+created event 1995-portuguese-legislative-election from Q1511117
+created event 1996-portuguese-presidential-election from Q3066523
+created event 1996-azorean-regional-election from Q4832856
+created event 1996-madeiran-regional-election from Q10271601
+created event 1997-portuguese-local-elections from Q25421741
+created event 1999-european-parliament-election from Q1851815
+created event 1999-macanese-chief-executive-election from Q55719546
+created event 1999-european-parliament-election-in-portugal from Q2404815
+created event 1999-portuguese-legislative-election from Q2053121
+created event lisbon-recognition-convention from Q1546127
+created event 1998-portuguese-abortion-referendum from Q2105455
+created event portuguese-regionalisation-referendum-1998 from Q7232796
+created event 1998-azores-islands-earthquake from Q108485945
+created event q5942951 from Q5942951
+created event 2000-azorean-regional-election from Q4832854
+created event 2000-madeiran-regional-election from Q10271603
+created event 2001-portuguese-presidential-election from Q3131667
+created event 2001-portuguese-local-elections from Q18471358
+created event 2002-portuguese-legislative-election from Q2053133
+44 Wikipedia lead(s) cached under tools/import/cache/wikipedia
+25 created, 0 enriched, 0 refused, 0 ambiguous

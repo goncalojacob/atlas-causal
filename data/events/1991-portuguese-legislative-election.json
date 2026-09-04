@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "1991-portuguese-legislative-election",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q2053113",
+  "sitelinks": 9,
+  "wikipedia": {
+    "en": "1991 Portuguese legislative election",
+    "pt": "Eleições legislativas portuguesas de 1991"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2053113"
+    }
+  ],
+  "title": "1991 Portuguese legislative election",
+  "summary": "Wikidata item Q2053113, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1991,
+    "end": 1991,
+    "date": "1991-10-06"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}
