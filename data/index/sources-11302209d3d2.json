@@ -9530,7 +9530,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 14,
+      "citationCount": 16,
       "citations": [
         {
           "dissent": false,
@@ -9549,6 +9549,18 @@
           "id": "1957-guinean-territorial-assembly-election",
           "kind": "event",
           "locator": "Q1285560"
+        },
+        {
+          "dissent": false,
+          "id": "2011-portuguese-socialist-party-leadership-election",
+          "kind": "event",
+          "locator": "Q125030453"
+        },
+        {
+          "dissent": false,
+          "id": "2014-portuguese-socialist-party-prime-ministerial-primary",
+          "kind": "event",
+          "locator": "Q18389393"
         },
         {
           "dissent": false,

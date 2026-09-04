@@ -6037,7 +6037,7 @@
     }
   ],
   "schema": 1,
-  "total": 584,
+  "total": 586,
   "warnings": [
     {
       "id": "1911-portuguese-presidential-election",
@@ -6053,6 +6053,18 @@
     },
     {
       "id": "1957-guinean-territorial-assembly-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "2011-portuguese-socialist-party-leadership-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "2014-portuguese-socialist-party-prime-ministerial-primary",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"

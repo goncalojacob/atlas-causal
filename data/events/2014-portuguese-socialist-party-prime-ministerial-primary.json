@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "2014-portuguese-socialist-party-prime-ministerial-primary",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q18389393",
+  "sitelinks": 2,
+  "wikipedia": {
+    "en": "2014 Portuguese Socialist Party prime ministerial primary",
+    "pt": "Eleições primárias do Partido Socialista em 2014"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q18389393"
+    }
+  ],
+  "title": "2014 Portuguese Socialist Party prime ministerial primary",
+  "summary": "Wikidata item Q18389393, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2014,
+    "end": 2014,
+    "date": "2014-09-28"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}

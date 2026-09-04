@@ -6013,6 +6013,49 @@
       }
     },
     {
+      "actors": [],
+      "aliases": [],
+      "id": "2011-portuguese-socialist-party-leadership-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "2011 Portuguese Socialist Party leadership election",
+      "weight": 0,
+      "when": {
+        "date": "2011-07-22",
+        "end": 2011,
+        "start": 2011
+      },
+      "wikidata": "Q125030453",
+      "wikipedia": {
+        "en": "July 2011 Portuguese Socialist Party leadership election"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "2014-portuguese-socialist-party-prime-ministerial-primary",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "2014 Portuguese Socialist Party prime ministerial primary",
+      "weight": 0,
+      "when": {
+        "date": "2014-09-28",
+        "end": 2014,
+        "start": 2014
+      },
+      "wikidata": "Q18389393",
+      "wikipedia": {
+        "en": "2014 Portuguese Socialist Party prime ministerial primary",
+        "pt": "Eleições primárias do Partido Socialista em 2014"
+      }
+    },
+    {
       "actors": [
         {
           "actor": "ramalho-eanes",

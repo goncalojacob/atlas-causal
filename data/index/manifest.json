@@ -2,7 +2,7 @@
   "counts": {
     "actors": 311,
     "edges": 91,
-    "events": 94,
+    "events": 96,
     "narratives": 1,
     "places": 25,
     "presences": 710,
@@ -11,9 +11,9 @@
     "sources": 34
   },
   "files": {
-    "review": "index/review-8a8ef32709ad.json",
-    "sources": "index/sources-a5c5bbbf9cd1.json",
-    "topology": "index/topology-cebd6324673c.json"
+    "review": "index/review-dd8d4ed4761b.json",
+    "sources": "index/sources-11302209d3d2.json",
+    "topology": "index/topology-8e4c7face030.json"
   },
   "land": [
     {
