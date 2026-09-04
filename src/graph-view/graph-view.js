@@ -20,6 +20,8 @@ import { overlaps, resolveWindow } from '../util/window.js';
 import { convergence } from '../graph.js';
 import { horizonSet, horizonBand } from '../horizon.js';
 import { narrativeSet } from '../narrative.js';
+import { lensSet } from '../lens.js';
+import { lanesFor } from '../lanes.js';
 import { layoutGraph } from './layout.js';
 
 // Sizes in SVG units at k = 1; divided by k when drawn, so a node keeps its
@@ -33,6 +35,8 @@ const HEAD_LENGTH = 7;
 const HEAD_WIDTH = 4.5;
 const LABEL_SIZE = 11;
 const LABEL_CHARS = 28;
+// What fits in the left gutter a band label is written in.
+const BAND_LABEL_CHARS = 12;
 // Below this zoom only the heaviest nodes on screen are named; at or above
 // it every node on screen is, which at sixty events is all of them.
 const LABEL_ALL_ZOOM = 2;
@@ -50,8 +54,8 @@ function textNode(text, attrs) {
   return el;
 }
 
-function shorten(text) {
-  return text.length > LABEL_CHARS ? `${text.slice(0, LABEL_CHARS - 1).trimEnd()}…` : text;
+function shorten(text, chars = LABEL_CHARS) {
+  return text.length > chars ? `${text.slice(0, chars - 1).trimEnd()}…` : text;
 }
 
 // Weight decides size only within a small range: the graph is about the
@@ -68,17 +72,14 @@ function classes(...list) {
 }
 
 export function createGraphView(container, { atlas, state }) {
-  const laid = layoutGraph({
-    events: atlas.activeEvents,
-    edges: [...atlas.edges.values()].filter((e) => e.status === 'active'),
-    regions: atlas.regions,
-    extent: atlas.extent,
-  });
-  const weights = {
-    min: Math.min(...laid.nodes.map((n) => n.weight), 0),
-    max: Math.max(...laid.nodes.map((n) => n.weight), 0),
-  };
-  const nodeById = new Map(laid.nodes.map((n) => [n.id, n]));
+  // The arrangement depends on which events are shown and what the bands
+  // are, and both of those change under the reader: it is rebuilt when they
+  // do and kept when they do not, so panning, selecting and walking a chain
+  // never move a node.
+  let laid = null;
+  let weights = { min: 0, max: 0 };
+  let nodeById = new Map();
+  let arrangedFor = null;
 
   const viewport = svg('g', { class: 'viewport' });
   const bandsGroup = svg('g', { class: 'layer layer-bands' });
@@ -88,26 +89,67 @@ export function createGraphView(container, { atlas, state }) {
   const labelsGroup = svg('g', { class: 'layer layer-labels' });
   viewport.append(bandsGroup, windowGroup, edgesGroup, nodesGroup, labelsGroup);
   const root = svg('svg', {
-    viewBox: `0 0 ${laid.width} ${laid.height}`,
     class: 'graph',
     role: 'img',
     'aria-label': 'The graph of events and the links between them',
   }, [viewport]);
 
-  // The bands and the axis never change: they are the frame the reader
-  // keeps their bearings by, so they are drawn once.
-  for (const band of laid.bands) {
-    bandsGroup.appendChild(svg('rect', {
-      x: 0, y: band.y0, width: laid.width, height: band.y1 - band.y0,
-      class: classes('band', band.even ? 'even' : 'odd'),
-    }));
-    bandsGroup.appendChild(textNode(band.label, { x: 8, y: band.y0 + 15, class: 'band-label' }));
+  // The lanes the bands are, and the events there are to draw. Both are
+  // asked of the same two files the timeline asks (lanes.js, lens.js), so
+  // the two pictures cannot disagree about either.
+  function arrangement(s) {
+    const lens = lensSet(atlas, s);
+    const events = lens ? atlas.activeEvents.filter((e) => lens.has(e.id)) : atlas.activeEvents;
+    const window = resolveWindow(s, atlas.extent);
+    const lanes = s.group === 'none' ? [] : lanesFor(s.group, atlas, window, lens, s.lanes);
+    return { events, lanes, key: `${s.focus ?? ''}|${s.group}|${lanes.map((l) => l.id).join(',')}` };
   }
-  for (const tick of laid.scale.ticks(10)) {
-    const x = laid.scale.x(tick.value);
-    bandsGroup.appendChild(svg('line', { x1: x, y1: laid.bands[0]?.y0 ?? 0, x2: x, y2: laid.height, class: 'tick' }));
-    bandsGroup.appendChild(textNode(tick.label, { x, y: 16, class: 'tick-label', 'text-anchor': 'middle' }));
+
+  // The frame the reader keeps their bearings by: the bands and the year
+  // axis. Redrawn only when the arrangement is.
+  function drawFrame() {
+    bandsGroup.replaceChildren();
+    for (const band of laid.bands) {
+      if (band.hidden) continue;
+      bandsGroup.appendChild(svg('rect', {
+        x: 0, y: band.y0, width: laid.width, height: band.y1 - band.y0,
+        class: classes('band', band.even ? 'even' : 'odd'),
+      }));
+      // A band is a lane now, and an actor's name is longer than a region's:
+      // the label is cut to the gutter and the whole of it is in the title.
+      const label = textNode(shorten(band.label, BAND_LABEL_CHARS), { x: 8, y: band.y0 + 15, class: 'band-label' });
+      label.appendChild(svgTitle(band.label));
+      bandsGroup.appendChild(label);
+    }
+    for (const tick of laid.scale.ticks(10)) {
+      const x = laid.scale.x(tick.value);
+      bandsGroup.appendChild(svg('line', { x1: x, y1: laid.bands[0]?.y0 ?? 0, x2: x, y2: laid.height, class: 'tick' }));
+      bandsGroup.appendChild(textNode(tick.label, { x, y: 16, class: 'tick-label', 'text-anchor': 'middle' }));
+    }
   }
+
+  function arrange(s) {
+    const { events, lanes, key } = arrangement(s);
+    if (key === arrangedFor) return false;
+    arrangedFor = key;
+    const ids = new Set(events.map((e) => e.id));
+    laid = layoutGraph({
+      events,
+      // An edge with one end removed by the lens has nothing to join.
+      edges: [...atlas.edges.values()].filter((e) => e.status === 'active' && ids.has(e.from) && ids.has(e.to)),
+      lanes,
+      extent: atlas.extent,
+    });
+    weights = {
+      min: Math.min(...laid.nodes.map((n) => n.weight), 0),
+      max: Math.max(...laid.nodes.map((n) => n.weight), 0),
+    };
+    nodeById = new Map(laid.nodes.map((n) => [n.id, n]));
+    root.setAttribute('viewBox', `0 0 ${laid.width} ${laid.height}`);
+    drawFrame();
+    return true;
+  }
+  arrange(state.get());
 
   // Pan and zoom, as the map has them. Not in the state: the URL carries
   // what the reader is looking at, not how far they scrolled.
@@ -223,6 +265,7 @@ export function createGraphView(container, { atlas, state }) {
   container.append(root);
 
   function render(s) {
+    arrange(s);
     const timeWindow = resolveWindow(s, atlas.extent);
     const chainEdges = s.chain.map((id) => atlas.edges.get(id)).filter(Boolean);
     const pathIds = new Set(chainEdges.flatMap((e) => [e.from, e.to]));

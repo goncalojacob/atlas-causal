@@ -8,11 +8,17 @@
 // and lie about time, which is the one thing this atlas may not do.
 //
 // y is free, and is spent on two things. First, one horizontal band per
-// region, so a continent stays in one place and the eye can follow it.
+// lane — a region, an actor, a place, whatever the grouping says (lanes.js,
+// M14) — so that a group stays in one place and the eye can follow it.
 // Second, inside a band, the events of the same year are spread apart and
 // ordered by a barycentre pass — each node pulled towards the average
 // height of the events it is linked to — so that edges come out short and
 // cross each other less often.
+//
+// With no grouping there are no bands at all: one full-height field and the
+// barycentre free to place a node wherever the links want it. That is the
+// arrangement with the fewest crossings and the fewest claims, which is why
+// it is the default.
 //
 // The sweeps are not trusted blindly: the arrangement of every sweep is
 // counted, and the one with the fewest crossings wins, the naive order
@@ -21,9 +27,18 @@
 
 import { extent } from '../util/dates.js';
 import { createLinearScale } from '../timeline-scale.js';
+import { laneOf } from '../lanes.js';
 
 export const WIDTH = 960;
 export const BAND_HEIGHT = 96;
+// How tall the one bandless field is, in bands: the picture keeps the height
+// it had with five regions, so switching the grouping off does not resize
+// the view under the reader.
+const BANDLESS_BANDS = 5;
+// Thirteen bands at a region's height would be a picture four screens tall.
+// Past five, a band gives up height until it reaches the least a node and
+// its label can be read in.
+const MIN_BAND_HEIGHT = 54;
 // Room over the bands for the year axis.
 export const AXIS_HEIGHT = 26;
 // The left gutter carries the band labels; the right one keeps the last
@@ -89,23 +104,36 @@ function resolveColumn(ids, positions, weights) {
   return out;
 }
 
-// events: active events with a region and a `when`. edges: active edges
-// between them. regions: the lane list, in order. dataExtent: the atlas's
+// events: the events to draw, with a `when`. edges: active edges between
+// them. lanes: what lanes.js gave for the current grouping, in order, each
+// with its members — empty for no grouping at all. dataExtent: the atlas's
 // own { min, max } in astronomical years.
-export function layoutGraph({ events, edges, regions, extent: dataExtent, width = WIDTH }) {
-  const bands = regions.map((region, i) => ({
-    id: region.id,
-    label: region.label,
-    y0: AXIS_HEIGHT + i * BAND_HEIGHT,
-    y1: AXIS_HEIGHT + (i + 1) * BAND_HEIGHT,
-    even: i % 2 === 0,
-  }));
-  const height = AXIS_HEIGHT + Math.max(bands.length, 1) * BAND_HEIGHT;
+export function layoutGraph({ events, edges, lanes = [], extent: dataExtent, width = WIDTH }) {
+  // No grouping is one unnamed field the whole height of the picture, and
+  // `hidden` is how the drawing knows not to paint a band or a label for it.
+  const bandHeight = lanes.length > BANDLESS_BANDS
+    ? Math.max(MIN_BAND_HEIGHT, (BANDLESS_BANDS * BAND_HEIGHT) / lanes.length)
+    : BAND_HEIGHT;
+  const pad = Math.min(BAND_PAD, bandHeight * 0.15);
+  const bands = lanes.length === 0
+    ? [{
+      id: null, label: '', hidden: true, even: true,
+      y0: AXIS_HEIGHT, y1: AXIS_HEIGHT + BANDLESS_BANDS * BAND_HEIGHT,
+    }]
+    : lanes.map((lane, i) => ({
+      id: lane.id,
+      label: lane.label,
+      hidden: false,
+      y0: AXIS_HEIGHT + i * bandHeight,
+      y1: AXIS_HEIGHT + (i + 1) * bandHeight,
+      even: i % 2 === 0,
+    }));
+  const height = bands[bands.length - 1].y1;
   const scale = createLinearScale({ domain: domainOf(dataExtent), range: [GUTTER_LEFT, width - GUTTER_RIGHT] });
 
-  // An event whose region is not a lane would have nowhere to go. The
-  // validator derives one for every event, so this is a guard, not a case:
-  // it lands in the last band rather than disappearing from the picture.
+  // An event with no lane would have nowhere to go. lanes.js gives every
+  // shown event one, so this is a guard, not a case: it lands in the last
+  // band rather than disappearing from the picture.
   const bandOf = new Map(bands.map((b) => [b.id, b]));
   const fallback = bands[bands.length - 1] ?? null;
   const list = [...events].sort((a, b) => byId(a.id, b.id));
@@ -113,7 +141,7 @@ export function layoutGraph({ events, edges, regions, extent: dataExtent, width 
   const nodes = new Map();
   const columns = new Map();
   for (const event of list) {
-    const band = bandOf.get(event.region) ?? fallback;
+    const band = (lanes.length === 0 ? bands[0] : bandOf.get(laneOf(event, lanes)?.id)) ?? fallback;
     if (!band) continue;
     const year = extent(event.when).min;
     const node = { id: event.id, event, band, year, x: scale.x(year), weight: event.weight ?? 0, y: 0 };
@@ -165,8 +193,8 @@ export function layoutGraph({ events, edges, regions, extent: dataExtent, width 
     const xy = new Map();
     for (const [id, node] of nodes) {
       const p = positions.get(id) ?? 0.5;
-      const usable = node.band.y1 - node.band.y0 - 2 * BAND_PAD;
-      xy.set(id, { x: node.x, y: node.band.y0 + BAND_PAD + p * usable });
+      const usable = node.band.y1 - node.band.y0 - 2 * pad;
+      xy.set(id, { x: node.x, y: node.band.y0 + pad + p * usable });
     }
     return xy;
   };
@@ -226,7 +254,7 @@ export function layoutGraph({ events, edges, regions, extent: dataExtent, width 
     .map((node) => ({
       id: node.id,
       event: node.event,
-      region: node.band.id,
+      lane: node.band.id,
       year: node.year,
       weight: node.weight,
       x: xy.get(node.id).x,
