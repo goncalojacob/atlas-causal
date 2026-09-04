@@ -26,7 +26,12 @@ test('every record the table names exists, is a draft, and carries the block', a
     // Flagging a record a person has already signed would be telling them to
     // look again at what they have read.
     assert.ok(isDraft(record), `${item.id} is not a draft`);
-    assert.deepEqual(record.review?.flags, item.flags, item.id);
+    // What the table put there has to still be there — but it need not be all
+    // that is there. M20 added `wikidata-assigned-by-assistant` to the records
+    // it matched by judgment, and some of those already carried a seeded flag.
+    for (const flag of item.flags) {
+      assert.ok(record.review?.flags?.includes(flag), `${item.id}: lost the flag ${flag}`);
+    }
     assert.equal(typeof record.review?.note, 'string');
     assert.ok(record.review.note.length <= 500, `${item.id}: the note is over the schema's cap`);
     for (const flag of item.flags) assert.match(flag, FLAG, item.id);
