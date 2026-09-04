@@ -31,7 +31,19 @@ where the sections apply:
    Consequences.
 4. **The chain as a breadcrumb** at the top of the panel while walking:
    the events walked so far, each a link, the current one last.
-5. Disputes stay impossible to miss: a disputed edge shows its mark in
+5. **Back.** The owner's case: from an event, click an actor, and want the
+   event again without searching. Today `state.js` writes every change
+   with `replaceState`, so the browser's Back leaves the atlas. Change the
+   rule: a change of *what is open* — `selected`, `actor`, `place`,
+   `source`, `narrative` or `step` — pushes a history entry; a change of
+   the view only — pan, zoom, band, layers, grouping, lens — replaces, as
+   now. The panel's head gets a **Back** link naming what it returns to
+   ("← Carnation Revolution"), which is `history.back()`, and a Forward
+   twin when there is somewhere to go; `popstate` already restores the
+   store from the URL, so both buttons and the browser's own do the same
+   thing. Test the push/replace rule in `state.js` as a pure decision on
+   the patch.
+6. Disputes stay impossible to miss: a disputed edge shows its mark in
    the collapsed header's count ("Consequences (3, 1 disputed)") and in
    the row.
 
@@ -45,7 +57,9 @@ click away, and the counts say what is there before opening.
 card"). Done when: an event card renders head, summary and the collapsed
 sections with correct counts (assert against the topology for
 `carnation-revolution-1974`: consequences, causes, sources); walking a
-chain opens Consequences and shows the breadcrumb; the choice persists
+chain opens Consequences and shows the breadcrumb; opening an actor from an
+event and pressing Back shows the event again, and the browser's Back does
+the same; the choice persists
 across a reload; the existing panel tests and headless checks pass with
 the new structure (update selectors where the brief changes them, and say
 which); validator and tests green; `STATUS.md` with the literal line
