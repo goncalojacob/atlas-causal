@@ -8712,6 +8712,11 @@
         "lat": 15.49,
         "lon": 73.83,
         "precision": "city"
+      },
+      "wikidata": "Q214681",
+      "wikipedia": {
+        "en": "Panaji",
+        "pt": "Pangim"
       }
     },
     {
@@ -8802,6 +8807,11 @@
         "lat": 48.94,
         "lon": 2.36,
         "precision": "city"
+      },
+      "wikidata": "Q47045",
+      "wikipedia": {
+        "en": "Saint-Denis, Réunion",
+        "pt": "São Dinis (Reunião)"
       }
     },
     {
@@ -8856,6 +8866,10 @@
         "lat": 38.9,
         "lon": -77.04,
         "precision": "city"
+      },
+      "wikidata": "Q1018557",
+      "wikipedia": {
+        "en": "Washington, West Sussex"
       }
     }
   ],

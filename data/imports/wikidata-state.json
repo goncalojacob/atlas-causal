@@ -5,22 +5,7 @@
   "runs": {
     "reconcile": {
       "updated": "2026-09-04",
-      "pending": [
-        "lisbon",
-        "luanda",
-        "macau",
-        "near-villanueva-del-fresno",
-        "new-york",
-        "panaji",
-        "parque-das-nacoes",
-        "pedrogao-grande",
-        "porto",
-        "recife",
-        "saint-denis",
-        "tete-district",
-        "tite",
-        "washington"
-      ],
+      "pending": [],
       "done": [
         "25-november-1975",
         "alvor-agreement-1975",
@@ -171,7 +156,21 @@
         "conakry",
         "dili",
         "flanders",
-        "lajes"
+        "lajes",
+        "lisbon",
+        "luanda",
+        "macau",
+        "near-villanueva-del-fresno",
+        "new-york",
+        "panaji",
+        "parque-das-nacoes",
+        "pedrogao-grande",
+        "porto",
+        "recife",
+        "saint-denis",
+        "tete-district",
+        "tite",
+        "washington"
       ]
     }
   }

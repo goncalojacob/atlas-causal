@@ -513,6 +513,45 @@ nothing on Wikidata is called "Legislative election of 2024".
 
 nothing on Wikidata is called "Legislative election of 2025".
 
+## lisbon
+
+`place` · searched for **Lisbon**
+
+10 item(s) were read and each failed a test.
+
+- [`Q597`](https://www.wikidata.org/wiki/Q597) **Lisbon** — municipality and capital city of Portugal — no date — Q15647906, Q108178728, Q129676344
+  - none of its classes (Q15647906, Q108178728, Q129676344) is in data/imports/wikidata-seeds.json → classes
+- [`Q37567902`](https://www.wikidata.org/wiki/Q37567902) **Lisbon** — family name — no date — Q101352
+  - none of its classes (Q101352) is in data/imports/wikidata-seeds.json → classes
+- [`Q207199`](https://www.wikidata.org/wiki/Q207199) **Lisbon** — district of Portugal — no date — Q3032141, Q192611
+  - none of its classes (Q3032141, Q192611) is in data/imports/wikidata-seeds.json → classes
+
+## luanda
+
+`place` · searched for **Luanda**
+
+2 items passed every test, so no single one of them is certain.
+
+- [`Q3897`](https://www.wikidata.org/wiki/Q3897) **Luanda** — capital of Angola — 1575– — Q515, Q2264924, Q1549591, Q108178728
+  - nothing rejected it — and neither did anything single it out
+- [`Q214221`](https://www.wikidata.org/wiki/Q214221) **Lunda Norte Province** — province of Angola — no date — Q329028
+  - none of its classes (Q329028) is in data/imports/wikidata-seeds.json → classes
+- [`Q190066`](https://www.wikidata.org/wiki/Q190066) **Luanda Province** — Province in Angola — no date — Q329028
+  - none of its classes (Q329028) is in data/imports/wikidata-seeds.json → classes
+
+## macau
+
+`place` · searched for **Macau**
+
+2 items passed every test, so no single one of them is certain.
+
+- [`Q1004486`](https://www.wikidata.org/wiki/Q1004486) **Macau** — commune in Gironde, France — no date — Q484170
+  - none of its classes (Q484170) is in data/imports/wikidata-seeds.json → classes
+- [`Q14773`](https://www.wikidata.org/wiki/Q14773) **Macau** — city and special administrative region of China — 1999– — Q779415, Q133442, Q1549591, Q486972, Q1200957, Q161243, Q125470455
+  - nothing rejected it — and neither did anything single it out
+- [`Q91246196`](https://www.wikidata.org/wiki/Q91246196) **Macau** — family name — no date — Q101352
+  - none of its classes (Q101352) is in data/imports/wikidata-seeds.json → classes
+
 ## macau-handover-1999
 
 `event` · 1999 · searched for **Handover of Macau**
@@ -577,6 +616,25 @@ nothing on Wikidata is called "Nationalisation of banks and insurance".
 
 nothing on Wikidata is called "Portugal signs the North Atlantic Treaty".
 
+## near-villanueva-del-fresno
+
+`place` · searched for **near Villanueva del Fresno, Spain**
+
+nothing on Wikidata is called "near Villanueva del Fresno, Spain".
+
+## new-york
+
+`place` · searched for **New York**
+
+10 item(s) were read and each failed a test.
+
+- [`Q1384`](https://www.wikidata.org/wiki/Q1384) **New York** — state of the United States of America — 1788– — Q35657
+  - none of its classes (Q35657) is in data/imports/wikidata-seeds.json → classes
+- [`Q60`](https://www.wikidata.org/wiki/Q60) **New York City** — most populous city in the United States — 1624– — Q208511, Q2264924, Q1093829, Q515, Q1549591, Q51929311, Q15063611, Q200250, Q174844
+  - no name of the record matches a label or alias of the item
+- [`Q1507987`](https://www.wikidata.org/wiki/Q1507987) **New York** — American magazine on life, culture, politics, and style, focusing on New York City — 1968– — Q41298, Q35127
+  - none of its classes (Q41298, Q35127) is in data/imports/wikidata-seeds.json → classes
+
 ## noite-sangrenta-1921
 
 `event` · 1921 · searched for **Noite Sangrenta**
@@ -593,6 +651,12 @@ nothing on Wikidata is called "Portugal signs the North Atlantic Treaty".
 `event` · searched for **The fires of October 2017**
 
 nothing on Wikidata is called "The fires of October 2017".
+
+## parque-das-nacoes
+
+`place` · searched for **Parque das Nações, Lisbon**
+
+nothing on Wikidata is called "Parque das Nações, Lisbon".
 
 ## partido-democratico
 
@@ -618,6 +682,19 @@ nothing on Wikidata is called "The fires of October 2017".
 - [`Q3295407`](https://www.wikidata.org/wiki/Q3295407) **Communist Party (Reconstructed)** — defunct Portuguese political party — 1981– — Q7278
   - its dates are more than 1 year from the record's
 
+## pedrogao-grande
+
+`place` · searched for **Pedrógão Grande**
+
+3 item(s) were read and each failed a test.
+
+- [`Q1013094`](https://www.wikidata.org/wiki/Q1013094) **Pedrógão Grande** — municipality of Portugal — no date — Q13217644
+  - none of its classes (Q13217644) is in data/imports/wikidata-seeds.json → classes
+- [`Q2451672`](https://www.wikidata.org/wiki/Q2451672) **Pedrógão Grande** — civil parish in Pedrógão Grande — no date — Q1131296
+  - none of its classes (Q1131296) is in data/imports/wikidata-seeds.json → classes
+- [`Q133867480`](https://www.wikidata.org/wiki/Q133867480) **Pedrógão Grande** — vila portuguesa sede do Município de Pedrógão Grande — no date — Q19833170
+  - none of its classes (Q19833170) is in data/imports/wikidata-seeds.json → classes
+
 ## pedrogao-grande-fires-2017
 
 `event` · searched for **The Pedrógão Grande fires**
@@ -629,6 +706,19 @@ nothing on Wikidata is called "The Pedrógão Grande fires".
 `event` · searched for **Pimenta de Castro's authoritarian government**
 
 nothing on Wikidata is called "Pimenta de Castro's authoritarian government".
+
+## porto
+
+`place` · searched for **Porto**
+
+2 items passed every test, so no single one of them is certain.
+
+- [`Q36433`](https://www.wikidata.org/wiki/Q36433) **Porto** — municipality in Portugal — no date — Q13217644, Q1549591
+  - nothing rejected it — and neither did anything single it out
+- [`Q37482660`](https://www.wikidata.org/wiki/Q37482660) **Porto** — family name — no date — Q101352, Q17143070
+  - none of its classes (Q101352, Q17143070) is in data/imports/wikidata-seeds.json → classes
+- [`Q40269`](https://www.wikidata.org/wiki/Q40269) **Porto Alegre** — municipality of Rio Grande do Sul state, Brazil — 1772– — Q3184121, Q2264924, Q1549591
+  - no name of the record matches a label or alias of the item
 
 ## portugal-backs-franco-1936
 
@@ -667,6 +757,12 @@ nothing on Wikidata is called "Publication of Portugal e o Futuro".
   - none of its classes (Q2095) is in data/imports/wikidata-seeds.json → classes
 - [`Q96741829`](https://www.wikidata.org/wiki/Q96741829) **pide** — Turkish flatbread dish — no date — Q2095
   - none of its classes (Q2095) is in data/imports/wikidata-seeds.json → classes
+
+## recife
+
+`place` · searched for **Recife, at the end of the voyage**
+
+nothing on Wikidata is called "Recife, at the end of the voyage".
 
 ## republic-proclaimed-1910
 
@@ -732,6 +828,12 @@ nothing on Wikidata is called "Mário Soares elected president".
 
 nothing on Wikidata is called "Spínola resigns the presidency".
 
+## tete-district
+
+`place` · searched for **Tete district, Mozambique**
+
+nothing on Wikidata is called "Tete district, Mozambique".
+
 ## third-portuguese-republic
 
 `actor` · 1974– · searched for **Third Portuguese Republic**
@@ -740,6 +842,19 @@ nothing on Wikidata is called "Spínola resigns the presidency".
 
 - [`Q1259200`](https://www.wikidata.org/wiki/Q1259200) **Third Portuguese Republic** — period in the history of Portugal since the Carnation Revolution on 25 April 1974 — 1974– — Q7270
   - none of its classes (Q7270) is in data/imports/wikidata-seeds.json → classes
+
+## tite
+
+`place` · searched for **Tite**
+
+10 item(s) were read and each failed a test.
+
+- [`Q40652`](https://www.wikidata.org/wiki/Q40652) **Tite** — Brazilian football manager — no date — Q5
+  - it is a actor here, not a place
+- [`Q21510234`](https://www.wikidata.org/wiki/Q21510234) **Tite** — family name — no date — Q101352
+  - none of its classes (Q101352) is in data/imports/wikidata-seeds.json → classes
+- [`Q12491536`](https://www.wikidata.org/wiki/Q12491536) **Keumala** — district in Pidie Regency, Aceh Province, Indonesia — no date — Q3700011
+  - none of its classes (Q3700011) is in data/imports/wikidata-seeds.json → classes
 
 ## troika-bailout-2011
 
