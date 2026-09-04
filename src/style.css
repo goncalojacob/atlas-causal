@@ -646,7 +646,11 @@ svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align:
   color: var(--ink-soft); margin: var(--space-4) 0 var(--space-1); font-weight: 600;
 }
 /* The card's own title opens the panel: no rule over it, and nothing above
-   it to be separated from. */
+   it to be separated from. The same for whatever a card happens to begin
+   with, which for the empty state is a plain section. */
+.panel > *:first-child > h2:first-child, .panel > h2:first-child {
+  margin-top: 0; padding-top: 0; border-top: 0;
+}
 .panel .event-head h2, .panel .actor-head h2, .panel .place-head h2,
 .panel .source-head h2, .panel .narrative-head h2, .panel .cluster-list h2 {
   font-size: var(--text-xl); margin-top: 0; padding-top: 0; border-top: 0; line-height: var(--leading-tight);

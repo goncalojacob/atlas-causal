@@ -57,14 +57,16 @@ function territoryHtml(ctx, actor) {
     // dependency, whose it was, the capital — is a second line under them, so
     // that a dozen periods read as a table and not as a dozen paragraphs.
     return `<li class="actor-row">
-      <span class="row-what">${name || `<span class="muted">its own ground</span>`}</span>
+      <span class="row-what">${name}</span>
       <span class="when">${esc(formatInterval(presence.when))}</span>
       <button type="button" class="link small row-go" data-action="year" data-year="${esc(bounds(presence.when.start).min)}">map at ${esc(formatYear(bounds(presence.when.start).min))}</button>
       ${kind || sovereign || presence.capital ? `<span class="row-meta">${kind}${sovereign}
         ${presence.capital ? `<span class="muted">${esc(presence.capital.label)}</span>` : ''}</span>` : ''}
     </li>`;
   };
-  const ownRows = own.map((p) => row(p, ''));
+  // The actor's own name in the first column rather than an empty cell: a
+  // table with a blank first column is a list of dates nobody can scan.
+  const ownRows = own.map((p) => row(p, `<span class="muted">${esc(actor.name)}</span>`));
   const heldRows = held.map((p) => row(
     p,
     `<button type="button" class="link" data-action="actor" data-id="${esc(p.actor)}">${esc(ctx.atlas.actors.get(p.actor)?.name ?? p.actor)}</button> `,
