@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "1969-portugal-earthquake",
   "kind": "event",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,11 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "m21-retracted"
+    ],
+    "note": "Retracted in M21: the earthquake of 28 February 1969, epicentre in the Atlantic south-west of Cape St Vincent, felt across Portugal, southern Spain and northern Morocco, the largest to strike the country since 1755; thirteen people died. Note that the leads disagree about its size, English Wikipedia giving magnitude 7.8 and Portuguese 8. A disaster with no consequence the atlas holds."
   },
   "wikidata": "Q3510571",
   "sitelinks": 7,

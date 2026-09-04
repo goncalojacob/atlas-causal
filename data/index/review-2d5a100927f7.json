@@ -390,6 +390,110 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "rosas-1994-estado-novo",
+        "ramos-2009-historia-de-portugal",
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "1965-portuguese-presidential-election",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "1965 Portuguese presidential election"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "rosas-1994-estado-novo",
+        "ramos-2009-historia-de-portugal"
+      ],
+      "from": "1965-portuguese-presidential-election",
+      "id": "1965-portuguese-presidential-election--caetano-succeeds-salazar-1968--enabled",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "caetano-succeeds-salazar-1968",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "maxwell-1995-making-of-portuguese-democracy",
+        "rosas-1994-estado-novo",
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "1969-portuguese-legislative-election",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "1969 Portuguese legislative election"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "maxwell-1995-making-of-portuguese-democracy",
+        "rosas-1994-estado-novo"
+      ],
+      "from": "1969-portuguese-legislative-election",
+      "id": "1969-portuguese-legislative-election--carnation-revolution-1974--precondition-of",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "carnation-revolution-1974",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -545,6 +649,31 @@
       "status": "active",
       "to": "angola-independence-1975",
       "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "rosas-1994-estado-novo",
+        "ramos-2009-historia-de-portugal"
+      ],
+      "id": "americo-tomas",
+      "kind": "actor",
+      "names": [
+        "Américo Tomás",
+        "Américo Thomaz",
+        "Américo Deus Rodrigues Tomás"
+      ],
+      "review": {
+        "flags": [
+          "actor-drafted"
+        ]
+      },
+      "status": "active"
     },
     {
       "authors": [
@@ -1312,6 +1441,29 @@
         }
       ],
       "cites": [
+        "maxwell-1995-making-of-portuguese-democracy",
+        "rosas-1994-estado-novo"
+      ],
+      "from": "caetano-succeeds-salazar-1968",
+      "id": "caetano-succeeds-salazar-1968--1969-portuguese-legislative-election--caused",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "1969-portuguese-legislative-election",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "rosas-1994-estado-novo",
         "costa-pinto-2003-contemporary-portugal"
       ],
@@ -2062,6 +2214,29 @@
       },
       "status": "active",
       "title": "The revision that ends direct presidential elections"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "rosas-1994-estado-novo",
+        "ramos-2009-historia-de-portugal"
+      ],
+      "from": "constitutional-revision-1959",
+      "id": "constitutional-revision-1959--1965-portuguese-presidential-election--caused",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "1965-portuguese-presidential-election",
+      "type": "caused"
     },
     {
       "authors": [
@@ -7026,62 +7201,8 @@
     }
   ],
   "schema": 1,
-  "total": 846,
+  "total": 851,
   "warnings": [
-    {
-      "id": "1961-guinean-presidential-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "1961-portuguese-legislative-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "1963-guinean-legislative-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "1964-rosais-earthquake",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "1965-portuguese-legislative-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "1965-portuguese-presidential-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "1967-portugal-floods",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "1969-portugal-earthquake",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "1969-portuguese-legislative-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
     {
       "id": "1972-portuguese-presidential-election",
       "kind": "event",
@@ -7851,12 +7972,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "assault-on-the-santa-maria-steamship",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
       "id": "bomb-attack-by-the-revolutionary-brigades-on-the-quartel-mestre-general-building-in-lisbon-portugal",
       "kind": "event",
       "message": "event has no edges",
@@ -8013,12 +8128,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "mueda-massacre",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
       "id": "murder-of-delfim-de-almeida-fernandes-by-the-prp-br",
       "kind": "event",
       "message": "event has no edges",
@@ -8068,12 +8177,6 @@
     },
     {
       "id": "q1454657",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "q2115000",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"

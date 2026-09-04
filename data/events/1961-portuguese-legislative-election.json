@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "1961-portuguese-legislative-election",
   "kind": "event",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,11 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "m21-retracted"
+    ],
+    "note": "Retracted in M21: 12 November 1961, the first election after the colonial war began. The Democratic Opposition put up lists and then withdrew, saying the minimum conditions for an election did not exist, and the National Union took all 130 seats. The context is the whole of its interest, and context is not a consequence."
   },
   "wikidata": "Q7232766",
   "sitelinks": 4,

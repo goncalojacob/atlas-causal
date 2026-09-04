@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "q2115000",
   "kind": "event",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,11 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "m21-retracted"
+    ],
+    "note": "Retracted in M21 as unidentifiable, like q11077889 before it. No label, no description, no cached lead in either language: the record is titled with its own Wikidata id. All the import recovered was a year, 1968, and a region, Africa. That is not enough to write anything about, and guessing what the item probably is would be exactly the thing this project does not do."
   },
   "wikidata": "Q2115000",
   "sitelinks": 2,

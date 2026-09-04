@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "mueda-massacre",
   "kind": "event",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,11 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "m21-retracted"
+    ],
+    "note": "Retracted in M21, and the second-worst loss of the run after Batepá. On 16 June 1960 Portuguese troops fired on a crowd at Mueda, on the Makonde plateau, at the end of the long attempt to petition the administration rather than fight it; it is the standard opening episode of the Mozambican armed struggle. One edge can be argued from it, to the war of 1964, and only one: the atlas holds no Mozambican record before 1964 and none of FRELIMO’s founding, so there is nothing else here for it to reach."
   },
   "wikidata": "Q10327164",
   "sitelinks": 3,

@@ -1,7 +1,7 @@
 {
   "counts": {
-    "actors": 323,
-    "edges": 109,
+    "actors": 324,
+    "edges": 113,
     "events": 326,
     "narratives": 1,
     "places": 25,
@@ -11,9 +11,9 @@
     "sources": 34
   },
   "files": {
-    "review": "index/review-83b2fc20bc30.json",
-    "sources": "index/sources-370f6b1844cc.json",
-    "topology": "index/topology-2a7a83af36e9.json"
+    "review": "index/review-2d5a100927f7.json",
+    "sources": "index/sources-073cd2bc6fd9.json",
+    "topology": "index/topology-463f63b09667.json"
   },
   "land": [
     {
@@ -95,6 +95,7 @@
     "beneficiary",
     "borrower",
     "broke up the opposition campaign",
+    "called the election as his opening",
     "candidate",
     "claimed responsibility",
     "coalition party",
@@ -121,6 +122,7 @@
     "head of state",
     "head of the government the attack targeted",
     "heir apparent, killed in the attack",
+    "held every seat of the electing assembly",
     "host",
     "incumbent",
     "invader",
@@ -153,8 +155,10 @@
     "perpetrator",
     "planner",
     "president",
+    "president under whom it was held",
     "prime minister",
     "re-elected",
+    "re-elected for a second term",
     "re-elected unopposed for a fourth term",
     "removed",
     "replaced",
@@ -172,10 +176,12 @@
     "supporting party",
     "target",
     "the regime being constituted",
+    "the regime filling its own presidency",
     "the regime restored by the may rising",
     "the regime seeking a constitutional form",
     "the regime whose foreign policy it set",
     "the regime whose office was filled",
+    "took all 130 seats",
     "victim",
     "winner",
     "withdrew",

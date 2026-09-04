@@ -9,14 +9,19 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "summary-drafted"
     ]
   },
   "wikidata": "Q7232769",
@@ -27,18 +32,48 @@
   },
   "sources": [
     {
+      "source": "maxwell-1995-making-of-portuguese-democracy",
+      "locator": null
+    },
+    {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1969 Portuguese legislative election\", revision 1352375747"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Eleições legislativas portuguesas de 1969\", revision 71768468"
+    },
+    {
       "source": "wikidata",
       "locator": "Q7232769"
     }
   ],
   "title": "1969 Portuguese legislative election",
-  "summary": "Wikidata item Q7232769, imported by tools/import/wikidata.mjs. The item's own description reads \"Portuguese elections in 1969\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The first election after Salazar was held on 26 October 1969, in the atmosphere of controlled opening Portugal called the Marcelist spring. Marcelo Caetano let three opposition lists stand — the CDE on the left, the CEUD of the democratic socialists and a monarchist committee — and loosened the censorship enough for them to campaign. The National Union then took all 130 seats: 980,000 votes against 133,000 for every opposition list together, under a majoritarian system in plurinominal circles which would have returned the opposition nothing even had it polled far better. The censorship came back within months, and the liberal deputies elected on Caetano’s own side of the National Union had given up and left by 1973. It is in the atlas as the last time the regime asked to be judged by voters.",
   "when": {
     "start": 1969,
     "end": 1969,
-    "date": "1969-10-26"
+    "date": "1969-10-26",
+    "calendar": "gregorian"
   },
   "place": null,
   "region": "europe",
-  "actors": []
+  "actors": [
+    {
+      "actor": "marcelo-caetano",
+      "role": "called the election as his opening"
+    },
+    {
+      "actor": "uniao-nacional",
+      "role": "took all 130 seats"
+    },
+    {
+      "actor": "americo-tomas",
+      "role": "president under whom it was held"
+    }
+  ]
 }

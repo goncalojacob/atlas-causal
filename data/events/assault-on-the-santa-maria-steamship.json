@@ -2,8 +2,8 @@
   "schema": 1,
   "id": "assault-on-the-santa-maria-steamship",
   "kind": "event",
-  "status": "active",
-  "supersededBy": null,
+  "status": "merged",
+  "supersededBy": "santa-maria-hijacking-1961",
   "aliases": [],
   "authors": [
     {
@@ -13,11 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "m21-merged"
+    ],
+    "note": "Merged in M21 into santa-maria-hijacking-1961, which is the same event: the seizure of the liner on 22 January 1961 by Henrique Galvão and Camilo Mortágua, which the atlas already holds and wires. This record keeps the Wikidata id the import brought and names its survivor rather than becoming an anonymous tombstone."
   },
   "wikidata": "Q111584941",
   "sitelinks": 0,

@@ -119,6 +119,23 @@
     {
       "actorType": "person",
       "aliases": [],
+      "id": "americo-tomas",
+      "name": "Américo Tomás",
+      "names": [
+        "Américo Tomás",
+        "Américo Thomaz",
+        "Américo Deus Rodrigues Tomás"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": 1987,
+        "start": 1894
+      }
+    },
+    {
+      "actorType": "person",
+      "aliases": [],
       "id": "amilcar-cabral",
       "name": "Amílcar Cabral",
       "names": [
@@ -5325,6 +5342,26 @@
     },
     {
       "aliases": [],
+      "confidence": "probable",
+      "from": "1965-portuguese-presidential-election",
+      "id": "1965-portuguese-presidential-election--caetano-succeeds-salazar-1968--enabled",
+      "status": "active",
+      "supersededBy": null,
+      "to": "caetano-succeeds-salazar-1968",
+      "type": "enabled"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "1969-portuguese-legislative-election",
+      "id": "1969-portuguese-legislative-election--carnation-revolution-1974--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "carnation-revolution-1974",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
       "confidence": "consensus",
       "from": "25-november-1975",
       "id": "25-november-1975--constitution-1976--enabled",
@@ -5441,6 +5478,16 @@
       "status": "active",
       "supersededBy": null,
       "to": "guinea-bissau-declares-independence-1973",
+      "type": "caused"
+    },
+    {
+      "aliases": [],
+      "confidence": "consensus",
+      "from": "caetano-succeeds-salazar-1968",
+      "id": "caetano-succeeds-salazar-1968--1969-portuguese-legislative-election--caused",
+      "status": "active",
+      "supersededBy": null,
+      "to": "1969-portuguese-legislative-election",
       "type": "caused"
     },
     {
@@ -5632,6 +5679,16 @@
       "supersededBy": null,
       "to": "legislative-election-1976",
       "type": "enabled"
+    },
+    {
+      "aliases": [],
+      "confidence": "consensus",
+      "from": "constitutional-revision-1959",
+      "id": "constitutional-revision-1959--1965-portuguese-presidential-election--caused",
+      "status": "active",
+      "supersededBy": null,
+      "to": "1965-portuguese-presidential-election",
+      "type": "caused"
     },
     {
       "aliases": [],
@@ -7311,7 +7368,7 @@
       "place": null,
       "region": "africa",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "1961 Guinean presidential election",
       "weight": 0,
@@ -7332,7 +7389,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "1961 Portuguese legislative election",
       "weight": 0,
@@ -7354,7 +7411,7 @@
       "place": null,
       "region": "africa",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "1963 Guinean legislative election",
       "weight": 0,
@@ -7375,7 +7432,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "1964 Rosais earthquake",
       "weight": 0,
@@ -7397,7 +7454,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "1965 Portuguese legislative election",
       "weight": 0,
@@ -7413,7 +7470,20 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "americo-tomas",
+          "role": "re-elected for a second term"
+        },
+        {
+          "actor": "estado-novo",
+          "role": "the regime filling its own presidency"
+        },
+        {
+          "actor": "uniao-nacional",
+          "role": "held every seat of the electing assembly"
+        }
+      ],
       "aliases": [],
       "id": "1965-portuguese-presidential-election",
       "place": null,
@@ -7422,8 +7492,9 @@
       "status": "active",
       "supersededBy": null,
       "title": "1965 Portuguese presidential election",
-      "weight": 0,
+      "weight": 5,
       "when": {
+        "calendar": "gregorian",
         "date": "1965-07-25",
         "end": 1965,
         "start": 1965
@@ -7441,7 +7512,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "1967 Portugal floods",
       "weight": 0,
@@ -7464,7 +7535,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "1969 Portugal earthquake",
       "weight": 0,
@@ -7480,7 +7551,20 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "marcelo-caetano",
+          "role": "called the election as his opening"
+        },
+        {
+          "actor": "uniao-nacional",
+          "role": "took all 130 seats"
+        },
+        {
+          "actor": "americo-tomas",
+          "role": "president under whom it was held"
+        }
+      ],
       "aliases": [],
       "id": "1969-portuguese-legislative-election",
       "place": null,
@@ -7489,8 +7573,9 @@
       "status": "active",
       "supersededBy": null,
       "title": "1969 Portuguese legislative election",
-      "weight": 0,
+      "weight": 5,
       "when": {
+        "calendar": "gregorian",
         "date": "1969-10-26",
         "end": 1969,
         "start": 1969
@@ -10415,8 +10500,8 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
-      "supersededBy": null,
+      "status": "merged",
+      "supersededBy": "santa-maria-hijacking-1961",
       "title": "Assault on the Santa Maria steamship",
       "weight": 0,
       "when": {
@@ -10747,7 +10832,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Marcelo Caetano succeeds Salazar",
-      "weight": 4,
+      "weight": 6,
       "when": {
         "calendar": "gregorian",
         "date": "1968-09-27",
@@ -10790,7 +10875,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "25 April",
-      "weight": 18,
+      "weight": 19,
       "when": {
         "calendar": "gregorian",
         "date": "1974-04-25",
@@ -10989,7 +11074,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "The revision that ends direct presidential elections",
-      "weight": 4,
+      "weight": 5,
       "when": {
         "calendar": "gregorian",
         "date": "1959-08",
@@ -12860,7 +12945,7 @@
       "place": null,
       "region": "africa",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "Mueda massacre",
       "weight": 0,
@@ -13340,7 +13425,7 @@
       "place": null,
       "region": "africa",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "Q2115000",
       "weight": 0,

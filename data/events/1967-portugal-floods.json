@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "1967-portugal-floods",
   "kind": "event",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,11 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "m21-retracted"
+    ],
+    "note": "Retracted in M21, with regret: the floods of the night of 25 to 26 November 1967 killed between 500 and 700 people around Lisbon and destroyed some 20,000 houses, the worst disaster in the region since 1755, and the regime censored the scale of it. The relief effort became a school for opposition organising, which is the consequence worth drawing — but the atlas holds no record of that organising, and the floods cannot be wired to 1974 without inventing the steps between."
   },
   "wikidata": "Q48876710",
   "sitelinks": 2,

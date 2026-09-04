@@ -257,3 +257,50 @@ different mechanisms — a rear base that lets a war be launched, and an exile
 that leaves a leadership open to being killed. A reviewer who disagrees
 should retract it; the reasoning is here so that the disagreement can be
 had.
+
+## 1960s — 9 retracted, 1 merged, 2 wired
+
+- `mueda-massacre` — **the second-worst loss of the run, after Batepá.** On 16
+  June 1960 Portuguese troops fired on a crowd at Mueda on the Makonde
+  plateau, at the end of the long attempt to petition the administration
+  rather than fight it; it is the standard opening episode of the Mozambican
+  armed struggle. Exactly one edge can be argued from it, to the war of 1964,
+  and one is not two. The atlas holds no Mozambican record before 1964 and
+  nothing of FRELIMO's founding, so there is nothing else for it to reach.
+  Together with Batepá this is the run's structural finding: **the atlas's
+  African spine begins with the three wars, and events before them have
+  nothing to attach to.**
+- `1961-guinean-presidential-election`, `1963-guinean-legislative-election` —
+  French Guinea again.
+- `1961-portuguese-legislative-election` — 12 November 1961, the first
+  election after the war began; the opposition withdrew saying the minimum
+  conditions did not exist. The context is the whole of its interest, and
+  context is not a consequence.
+- `1964-rosais-earthquake` — February 1964; most of the housing in western
+  São Jorge destroyed, about 5,000 people evacuated.
+- `1965-portuguese-legislative-election` — 7 November 1965; the presidential
+  election of the same year is the one that did something.
+- `1967-portugal-floods` — **retracted with regret.** Between 500 and 700
+  dead around Lisbon on the night of 25–26 November 1967, some 20,000 houses
+  destroyed, the worst disaster in the region since 1755, and the regime
+  censored the scale of it. The relief effort became a school for opposition
+  organising and that is the consequence worth drawing — but the atlas holds
+  no record of that organising, and the floods cannot be wired to 1974
+  without inventing every step between.
+- `q2115000` — **unidentifiable**, like `q11077889`. No label, no
+  description, no lead in either language. All the import recovered was a
+  year, 1968, and a region, Africa.
+- `1969-portugal-earthquake` — 28 February 1969, the largest since 1755,
+  thirteen dead. The leads also disagree about its size: 7.8 in English, 8 in
+  Portuguese.
+
+**Merged, not retracted:**
+
+- `assault-on-the-santa-maria-steamship` → **`santa-maria-hijacking-1961`**.
+  The same seizure of the same liner by Galvão and Mortágua on 22 January
+  1961.
+
+Wired instead: `1965-portuguese-presidential-election` and
+`1969-portuguese-legislative-election` — the first presidential election with
+no electorate in it, which is the 1959 revision working as designed, and the
+last election the regime asked to be judged by.

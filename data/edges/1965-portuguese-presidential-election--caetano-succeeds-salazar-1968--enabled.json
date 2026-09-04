@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "1965-portuguese-presidential-election--caetano-succeeds-salazar-1968--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    },
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    }
+  ],
+  "from": "1965-portuguese-presidential-election",
+  "to": "caetano-succeeds-salazar-1968",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "Under the 1933 constitution the president appointed and dismissed the head of government, and that was very nearly the whole of what the office could do. When Salazar was disabled by a stroke in September 1968 the decision was Tomás’s alone, and he made it: Caetano, rather than a hardliner or a caretaker, and made without consulting the man being replaced. The 1965 election is what put him there with a term running to 1972 and no one able to remove him.",
+  "dispute": null
+}
