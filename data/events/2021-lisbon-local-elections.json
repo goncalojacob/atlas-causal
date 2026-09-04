@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "2021-lisbon-local-elections",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q106544440",
+  "sitelinks": 2,
+  "wikipedia": {
+    "en": "2021 Lisbon local election",
+    "pt": "Eleições autárquicas de 2021 em Lisboa"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q106544440"
+    }
+  ],
+  "title": "2021 Lisbon local elections",
+  "summary": "Wikidata item Q106544440, imported by tools/import/wikidata.mjs. The item's own description reads \"um  evento eleitoral em Lisboa 2021\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2021,
+    "end": 2021,
+    "date": "2021-09-26"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}

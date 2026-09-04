@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "2022-portuguese-social-democratic-party-leadership-election-q111182017",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q111182017",
+  "sitelinks": 3,
+  "wikipedia": {
+    "en": "2022 Portuguese Social Democratic Party leadership election",
+    "pt": "Eleições diretas do Partido Social Democrata (Portugal) de 2022"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q111182017"
+    }
+  ],
+  "title": "2022 Portuguese Social Democratic Party leadership election",
+  "summary": "Wikidata item Q111182017, imported by tools/import/wikidata.mjs. The item's own description reads \"will be held in 2022, no later than July 2022\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2022,
+    "end": 2022,
+    "date": "2022-05-28"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}

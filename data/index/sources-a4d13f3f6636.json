@@ -9530,7 +9530,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 214,
+      "citationCount": 239,
       "citations": [
         {
           "dissent": false,
@@ -10356,6 +10356,150 @@
         },
         {
           "dissent": false,
+          "id": "2020-azorean-regional-election",
+          "kind": "event",
+          "locator": "Q39060523"
+        },
+        {
+          "dissent": false,
+          "id": "2020-portuguese-social-democratic-party-leadership-election",
+          "kind": "event",
+          "locator": "Q83094746"
+        },
+        {
+          "dissent": false,
+          "id": "2021-lisbon-local-elections",
+          "kind": "event",
+          "locator": "Q106544440"
+        },
+        {
+          "dissent": false,
+          "id": "2021-porto-local-elections",
+          "kind": "event",
+          "locator": "Q108691293"
+        },
+        {
+          "dissent": false,
+          "id": "2021-portuguese-local-elections",
+          "kind": "event",
+          "locator": "Q96370956"
+        },
+        {
+          "dissent": false,
+          "id": "2021-portuguese-presidential-election",
+          "kind": "event",
+          "locator": "Q48861733"
+        },
+        {
+          "dissent": false,
+          "id": "2022-portuguese-legislative-election",
+          "kind": "event",
+          "locator": "Q84081925"
+        },
+        {
+          "dissent": false,
+          "id": "2022-portuguese-social-democratic-party-leadership-election",
+          "kind": "event",
+          "locator": "Q108542274"
+        },
+        {
+          "dissent": false,
+          "id": "2022-portuguese-social-democratic-party-leadership-election-q111182017",
+          "kind": "event",
+          "locator": "Q111182017"
+        },
+        {
+          "dissent": false,
+          "id": "2023-madeiran-regional-election",
+          "kind": "event",
+          "locator": "Q97356966"
+        },
+        {
+          "dissent": false,
+          "id": "2024-azorean-regional-election",
+          "kind": "event",
+          "locator": "Q104876829"
+        },
+        {
+          "dissent": false,
+          "id": "2024-european-parliament-election",
+          "kind": "event",
+          "locator": "Q70253009"
+        },
+        {
+          "dissent": false,
+          "id": "2024-european-parliament-election-in-portugal",
+          "kind": "event",
+          "locator": "Q114422643"
+        },
+        {
+          "dissent": false,
+          "id": "2024-madeiran-regional-election",
+          "kind": "event",
+          "locator": "Q123685068"
+        },
+        {
+          "dissent": false,
+          "id": "2024-portuguese-legislative-election",
+          "kind": "event",
+          "locator": "Q111181270"
+        },
+        {
+          "dissent": false,
+          "id": "2025-amadora-local-elections",
+          "kind": "event",
+          "locator": "Q135509723"
+        },
+        {
+          "dissent": false,
+          "id": "2025-lisbon-local-election",
+          "kind": "event",
+          "locator": "Q131926909"
+        },
+        {
+          "dissent": false,
+          "id": "2025-madeiran-regional-election",
+          "kind": "event",
+          "locator": "Q126708649"
+        },
+        {
+          "dissent": false,
+          "id": "2025-porto-local-election",
+          "kind": "event",
+          "locator": "Q131933411"
+        },
+        {
+          "dissent": false,
+          "id": "2025-portuguese-legislative-election",
+          "kind": "event",
+          "locator": "Q125201429"
+        },
+        {
+          "dissent": false,
+          "id": "2025-portuguese-local-elections",
+          "kind": "event",
+          "locator": "Q120913144"
+        },
+        {
+          "dissent": false,
+          "id": "2025-setubal-local-elections",
+          "kind": "event",
+          "locator": "Q135509611"
+        },
+        {
+          "dissent": false,
+          "id": "2025-sintra-local-elections",
+          "kind": "event",
+          "locator": "Q135509724"
+        },
+        {
+          "dissent": false,
+          "id": "2025-viseu-local-elections",
+          "kind": "event",
+          "locator": "Q135509797"
+        },
+        {
+          "dissent": false,
           "id": "april-1906-portuguese-legislative-election",
           "kind": "event",
           "locator": "Q7232771"
@@ -10731,6 +10875,12 @@
           "id": "q5942951",
           "kind": "event",
           "locator": "Q5942951"
+        },
+        {
+          "dissent": false,
+          "id": "resolute-support-mission",
+          "kind": "event",
+          "locator": "Q18651204"
         },
         {
           "dissent": false,

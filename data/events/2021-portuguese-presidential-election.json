@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "2021-portuguese-presidential-election",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q48861733",
+  "sitelinks": 17,
+  "wikipedia": {
+    "en": "2021 Portuguese presidential election",
+    "pt": "Eleições presidenciais portuguesas de 2021"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q48861733"
+    }
+  ],
+  "title": "2021 Portuguese presidential election",
+  "summary": "Wikidata item Q48861733, imported by tools/import/wikidata.mjs. The item's own description reads \"presidential election\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2021,
+    "end": 2021,
+    "date": "2021-01-24"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}

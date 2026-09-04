@@ -8929,6 +8929,536 @@
       }
     },
     {
+      "actors": [],
+      "aliases": [],
+      "id": "2020-azorean-regional-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "2020 Azorean regional election",
+      "weight": 0,
+      "when": {
+        "date": "2020-10-25",
+        "end": 2020,
+        "start": 2020
+      },
+      "wikidata": "Q39060523",
+      "wikipedia": {
+        "en": "2020 Azorean regional election",
+        "pt": "Eleições legislativas regionais nos Açores em 2020"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "2020-portuguese-social-democratic-party-leadership-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "2020 Portuguese Social Democratic Party leadership election",
+      "weight": 0,
+      "when": {
+        "date": "2020-01-11",
+        "end": 2020,
+        "endDate": "2020-01-18",
+        "start": 2020
+      },
+      "wikidata": "Q83094746",
+      "wikipedia": {
+        "en": "2020 Portuguese Social Democratic Party leadership election",
+        "pt": "Eleições diretas do Partido Social Democrata (Portugal) de 2020"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "2021-lisbon-local-elections",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "2021 Lisbon local elections",
+      "weight": 0,
+      "when": {
+        "date": "2021-09-26",
+        "end": 2021,
+        "start": 2021
+      },
+      "wikidata": "Q106544440",
+      "wikipedia": {
+        "en": "2021 Lisbon local election",
+        "pt": "Eleições autárquicas de 2021 em Lisboa"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "2021-porto-local-elections",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "2021 Porto local elections",
+      "weight": 0,
+      "when": {
+        "date": "2021-09-26",
+        "end": 2021,
+        "start": 2021
+      },
+      "wikidata": "Q108691293",
+      "wikipedia": {
+        "en": "2021 Porto local election",
+        "pt": "Eleições autárquicas de 2021 no Porto"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "2021-portuguese-local-elections",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "2021 Portuguese local elections",
+      "weight": 0,
+      "when": {
+        "date": "2021-09-26",
+        "end": 2021,
+        "start": 2021
+      },
+      "wikidata": "Q96370956",
+      "wikipedia": {
+        "en": "2021 Portuguese local elections",
+        "pt": "Eleições autárquicas portuguesas de 2021"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "2021-portuguese-presidential-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "2021 Portuguese presidential election",
+      "weight": 0,
+      "when": {
+        "date": "2021-01-24",
+        "end": 2021,
+        "start": 2021
+      },
+      "wikidata": "Q48861733",
+      "wikipedia": {
+        "en": "2021 Portuguese presidential election",
+        "pt": "Eleições presidenciais portuguesas de 2021"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "2022-portuguese-legislative-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "2022 Portuguese legislative election",
+      "weight": 0,
+      "when": {
+        "date": "2022-01-30",
+        "end": 2022,
+        "start": 2022
+      },
+      "wikidata": "Q84081925",
+      "wikipedia": {
+        "en": "2022 Portuguese legislative election",
+        "pt": "Eleições legislativas portuguesas de 2022"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "2022-portuguese-social-democratic-party-leadership-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "2022 Portuguese Social Democratic Party leadership election",
+      "weight": 0,
+      "when": {
+        "date": "2021-11-27",
+        "end": 2021,
+        "start": 2021
+      },
+      "wikidata": "Q108542274",
+      "wikipedia": {
+        "en": "2021 Portuguese Social Democratic Party leadership election",
+        "pt": "Eleições diretas do Partido Social Democrata (Portugal) de 2021"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "2022-portuguese-social-democratic-party-leadership-election-q111182017",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "2022 Portuguese Social Democratic Party leadership election",
+      "weight": 0,
+      "when": {
+        "date": "2022-05-28",
+        "end": 2022,
+        "start": 2022
+      },
+      "wikidata": "Q111182017",
+      "wikipedia": {
+        "en": "2022 Portuguese Social Democratic Party leadership election",
+        "pt": "Eleições diretas do Partido Social Democrata (Portugal) de 2022"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "2023-madeiran-regional-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "2023 Madeiran regional election",
+      "weight": 0,
+      "when": {
+        "date": "2023-09-24",
+        "end": 2023,
+        "start": 2023
+      },
+      "wikidata": "Q97356966",
+      "wikipedia": {
+        "en": "2023 Madeiran regional election",
+        "pt": "Eleições legislativas regionais na Madeira em 2023"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "2024-azorean-regional-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "2024 Azorean regional election",
+      "weight": 0,
+      "when": {
+        "date": "2024-02-04",
+        "end": 2024,
+        "start": 2024
+      },
+      "wikidata": "Q104876829",
+      "wikipedia": {
+        "en": "2024 Azorean regional election",
+        "pt": "Eleições legislativas regionais nos Açores em 2024"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "2024-european-parliament-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "2024 European Parliament election",
+      "weight": 0,
+      "when": {
+        "date": "2024-06",
+        "end": 2024,
+        "endDate": "2024-06-09",
+        "start": 2024
+      },
+      "wikidata": "Q70253009",
+      "wikipedia": {
+        "en": "2024 European Parliament election",
+        "pt": "Eleições europeias de 2024"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "2024-european-parliament-election-in-portugal",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "2024 European Parliament election in Portugal",
+      "weight": 0,
+      "when": {
+        "date": "2024-06-09",
+        "end": 2024,
+        "start": 2024
+      },
+      "wikidata": "Q114422643",
+      "wikipedia": {
+        "en": "2024 European Parliament election in Portugal",
+        "pt": "Eleições europeias de 2024 (Portugal)"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "2024-madeiran-regional-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "2024 Madeiran regional election",
+      "weight": 0,
+      "when": {
+        "date": "2024-05-26",
+        "end": 2024,
+        "start": 2024
+      },
+      "wikidata": "Q123685068",
+      "wikipedia": {
+        "en": "2024 Madeiran regional election",
+        "pt": "Eleições legislativas regionais na Madeira em 2024"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "2024-portuguese-legislative-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "2024 Portuguese legislative election",
+      "weight": 0,
+      "when": {
+        "date": "2024-03-10",
+        "end": 2024,
+        "start": 2024
+      },
+      "wikidata": "Q111181270",
+      "wikipedia": {
+        "en": "2024 Portuguese legislative election",
+        "pt": "Eleições legislativas portuguesas de 2024"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "2025-amadora-local-elections",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "2025 Amadora local elections",
+      "weight": 0,
+      "when": {
+        "date": "2025-10-12",
+        "end": 2025,
+        "start": 2025
+      },
+      "wikidata": "Q135509723",
+      "wikipedia": {
+        "en": "2025 Amadora local election",
+        "pt": "Eleições autárquicas de 2025 na Amadora"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "2025-lisbon-local-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "2025 Lisbon local election",
+      "weight": 0,
+      "when": {
+        "date": "2025-10-12",
+        "end": 2025,
+        "start": 2025
+      },
+      "wikidata": "Q131926909",
+      "wikipedia": {
+        "en": "2025 Lisbon local election",
+        "pt": "Eleições autárquicas de 2025 em Lisboa"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "2025-madeiran-regional-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "2025 Madeiran regional election",
+      "weight": 0,
+      "when": {
+        "date": "2025-03-23",
+        "end": 2025,
+        "start": 2025
+      },
+      "wikidata": "Q126708649",
+      "wikipedia": {
+        "en": "2025 Madeiran regional election",
+        "pt": "Eleições legislativas regionais na Madeira em 2025"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "2025-porto-local-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "2025 Porto local election",
+      "weight": 0,
+      "when": {
+        "date": "2025-10-12",
+        "end": 2025,
+        "start": 2025
+      },
+      "wikidata": "Q131933411",
+      "wikipedia": {
+        "en": "2025 Porto local election",
+        "pt": "Eleições autárquicas de 2025 no Porto"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "2025-portuguese-legislative-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "2025 Portuguese legislative election",
+      "weight": 0,
+      "when": {
+        "date": "2025-05-18",
+        "end": 2025,
+        "start": 2025
+      },
+      "wikidata": "Q125201429",
+      "wikipedia": {
+        "en": "2025 Portuguese legislative election",
+        "pt": "Eleições legislativas portuguesas de 2025"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "2025-portuguese-local-elections",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "2025 Portuguese local elections",
+      "weight": 0,
+      "when": {
+        "date": "2025-10-12",
+        "end": 2025,
+        "start": 2025
+      },
+      "wikidata": "Q120913144",
+      "wikipedia": {
+        "en": "2025 Portuguese local elections",
+        "pt": "Eleições autárquicas portuguesas de 2025"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "2025-setubal-local-elections",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "2025 Setúbal local elections",
+      "weight": 0,
+      "when": {
+        "date": "2025-10-12",
+        "end": 2025,
+        "start": 2025
+      },
+      "wikidata": "Q135509611",
+      "wikipedia": {
+        "en": "2025 Setúbal local election",
+        "pt": "Eleições autárquicas de 2025 em Setúbal"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "2025-sintra-local-elections",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "2025 Sintra local elections",
+      "weight": 0,
+      "when": {
+        "date": "2025-10-12",
+        "end": 2025,
+        "start": 2025
+      },
+      "wikidata": "Q135509724",
+      "wikipedia": {
+        "en": "2025 Sintra local election",
+        "pt": "Eleições autárquicas de 2025 em Sintra"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "2025-viseu-local-elections",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "2025 Viseu local elections",
+      "weight": 0,
+      "when": {
+        "date": "2025-10-12",
+        "end": 2025,
+        "start": 2025
+      },
+      "wikidata": "Q135509797",
+      "wikipedia": {
+        "en": "2025 Viseu local election",
+        "pt": "Eleições autárquicas de 2025 em Viseu"
+      }
+    },
+    {
       "actors": [
         {
           "actor": "ramalho-eanes",
@@ -12263,6 +12793,29 @@
         "date": "1910-10-05",
         "end": 1910,
         "start": 1910
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "resolute-support-mission",
+      "place": null,
+      "region": "asia",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Resolute Support Mission",
+      "weight": 0,
+      "when": {
+        "date": "2014-12-28",
+        "end": 2021,
+        "endDate": "2021-07-12",
+        "start": 2014
+      },
+      "wikidata": "Q18651204",
+      "wikipedia": {
+        "en": "Resolute Support Mission",
+        "pt": "Missão Apoio Resoluto"
       }
     },
     {

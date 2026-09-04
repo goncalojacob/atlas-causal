@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "2025-porto-local-election",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q131933411",
+  "sitelinks": 2,
+  "wikipedia": {
+    "en": "2025 Porto local election",
+    "pt": "Eleições autárquicas de 2025 no Porto"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q131933411"
+    }
+  ],
+  "title": "2025 Porto local election",
+  "summary": "Wikidata item Q131933411, imported by tools/import/wikidata.mjs. The item's own description reads \"Portuguese municipal election\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2025,
+    "end": 2025,
+    "date": "2025-10-12"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}

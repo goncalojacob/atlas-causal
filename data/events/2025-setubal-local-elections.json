@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "2025-setubal-local-elections",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q135509611",
+  "sitelinks": 2,
+  "wikipedia": {
+    "en": "2025 Setúbal local election",
+    "pt": "Eleições autárquicas de 2025 em Setúbal"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q135509611"
+    }
+  ],
+  "title": "2025 Setúbal local elections",
+  "summary": "Wikidata item Q135509611, imported by tools/import/wikidata.mjs. The item's own description reads \"Portuguese local election\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2025,
+    "end": 2025,
+    "date": "2025-10-12"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}

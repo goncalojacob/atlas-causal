@@ -222,3 +222,31 @@ created event tragedia-de-borba from Q61000290
 created event covid-19-pandemic from Q81068910
 46 Wikipedia lead(s) cached under tools/import/cache/wikipedia
 25 created, 0 enriched, 0 refused, 0 ambiguous
+import: 25 item(s) this batch, 7 left after it, 52 call(s) spent
+created event resolute-support-mission from Q18651204
+created event 2020-portuguese-social-democratic-party-leadership-election from Q83094746
+created event 2020-azorean-regional-election from Q39060523
+created event 2021-portuguese-presidential-election from Q48861733
+created event 2021-portuguese-local-elections from Q96370956
+created event 2021-lisbon-local-elections from Q106544440
+created event 2021-porto-local-elections from Q108691293
+created event 2022-portuguese-social-democratic-party-leadership-election from Q108542274
+created event 2022-portuguese-legislative-election from Q84081925
+created event 2022-portuguese-social-democratic-party-leadership-election-q111182017 from Q111182017
+created event 2023-madeiran-regional-election from Q97356966
+created event 2024-azorean-regional-election from Q104876829
+created event 2024-portuguese-legislative-election from Q111181270
+created event 2024-madeiran-regional-election from Q123685068
+created event 2024-european-parliament-election from Q70253009
+created event 2024-european-parliament-election-in-portugal from Q114422643
+created event 2025-madeiran-regional-election from Q126708649
+created event 2025-portuguese-legislative-election from Q125201429
+created event 2025-portuguese-local-elections from Q120913144
+created event 2025-lisbon-local-election from Q131926909
+created event 2025-porto-local-election from Q131933411
+created event 2025-setubal-local-elections from Q135509611
+created event 2025-amadora-local-elections from Q135509723
+created event 2025-sintra-local-elections from Q135509724
+created event 2025-viseu-local-elections from Q135509797
+50 Wikipedia lead(s) cached under tools/import/cache/wikipedia
+25 created, 0 enriched, 0 refused, 0 ambiguous

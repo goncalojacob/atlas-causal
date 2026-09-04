@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "2021-porto-local-elections",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q108691293",
+  "sitelinks": 2,
+  "wikipedia": {
+    "en": "2021 Porto local election",
+    "pt": "Eleições autárquicas de 2021 no Porto"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q108691293"
+    }
+  ],
+  "title": "2021 Porto local elections",
+  "summary": "Wikidata item Q108691293, imported by tools/import/wikidata.mjs. The item's own description reads \"Portuguese municipal election\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2021,
+    "end": 2021,
+    "date": "2021-09-26"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}

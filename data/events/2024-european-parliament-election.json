@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "2024-european-parliament-election",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q70253009",
+  "sitelinks": 40,
+  "wikipedia": {
+    "en": "2024 European Parliament election",
+    "pt": "Eleições europeias de 2024"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q70253009"
+    }
+  ],
+  "title": "2024 European Parliament election",
+  "summary": "Wikidata item Q70253009, imported by tools/import/wikidata.mjs. The item's own description reads \"2024 election to the European Parliament\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2024,
+    "end": 2024,
+    "date": "2024-06",
+    "endDate": "2024-06-09"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}
