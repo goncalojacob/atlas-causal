@@ -16,7 +16,7 @@ import {
   classify, intervalFor, slug, foldName, idFor, namesFor, identityOf,
   mergeIdentity, ENRICHABLE, matchesFor, nameMatches, datesMatch, laneFor,
   placeRecord, actorRecord, eventRecord, leadRecord, importedSummary,
-  nextBatch, advance, emptyState, itemIndex, candidatesMarkdown, reportLines,
+  nextBatch, advance, emptyState, itemIndex, candidatesMarkdown, ambiguousMarkdown, reportLines,
   runImportMode, runReconcileMode, runCandidatesMode,
   IMPORT_AUTHOR, IMPORTED_FLAG, USER_AGENT, SOURCE_ID, MAXLAG, BATCH,
 } from '../tools/import/wikidata.mjs';
@@ -473,6 +473,51 @@ test('--reconcile writes the certain match only, and lists the rest', async () =
   assert.equal(written.wikidata, 'Q9000001');
   assert.equal(written.summary, record.summary);
   assert.equal((await readJson(path.join(dir, 'events', 'unrelated.json'))).wikidata, undefined);
+});
+
+test('--reconcile leaves the records an import wrote alone', async () => {
+  const { dir, cacheDir } = await scratch();
+  const imported = {
+    schema: 1, id: 'northland', kind: 'actor', status: 'active', supersededBy: null, aliases: [],
+    authors: [{ name: 'CShapes 2.0 import (tools/import/cshapes.mjs)', github: null }],
+    license: 'CC-BY-NC-SA-4.0', created: '2026-01-01', revised: null,
+    sources: [{ source: 'cshapes', locator: null }], actorType: 'polity', names: ['Northland'],
+    summary: 'A territory the import wrote.', when: { start: 1974, end: 1974 }, where: null,
+  };
+  await writeFile(path.join(dir, 'actors', 'northland.json'), JSON.stringify(imported, null, 2), 'utf8');
+
+  const { fetcher } = await fixtureFetcher();
+  const { report } = await runReconcileMode(dir, { fetcher, today: '2026-09-04', cacheDir });
+  assert.deepEqual(report.batch, [], 'decision 23: the imported polities are not matched in this pass');
+  assert.equal(fetcher.calls, 0, 'and nothing is asked of Wikidata on their behalf');
+});
+
+test('what the pass would not decide is a page a person can act on', async () => {
+  const { dir, cacheDir } = await scratch();
+  const record = {
+    schema: 1, id: 'unmatched', kind: 'event', status: 'active', supersededBy: null, aliases: [],
+    authors: [{ name: 'A Person', github: null }], license: 'CC-BY-SA-4.0', created: '2026-01-01', revised: null,
+    sources: [{ source: 's', locator: null }], title: 'Nothing By That Name', summary: 'A person wrote this.',
+    when: { start: 1974, end: 1974 }, place: null, region: 'testland', actors: [],
+  };
+  await writeFile(path.join(dir, 'events', 'unmatched.json'), JSON.stringify(record, null, 2), 'utf8');
+
+  const { fetcher } = await fixtureFetcher();
+  const { report } = await runReconcileMode(dir, { fetcher, today: '2026-09-04', cacheDir });
+  const row = report.ambiguous.find((a) => a.id === 'unmatched');
+  assert.ok(row.considered.length > 0 && row.considered.length <= 3, 'the top three, no more');
+  assert.ok(row.considered.every((c) => c.why), 'every candidate says why it was not the one');
+
+  const page = ambiguousMarkdown(report.ambiguous, { generated: '2026-09-04' });
+  assert.match(page, /^## unmatched$/m);
+  assert.match(page, /- \[`Q9000001`\]\(https:\/\/www\.wikidata\.org\/wiki\/Q9000001\)/);
+  assert.match(page, /1974/, 'the dates are on the page, so a person need not open the item');
+
+  // Written once per batch: the second batch keeps the first batch's sections.
+  const merged = ambiguousMarkdown([{ id: 'later', kind: 'place', term: 'Elsewhere', why: 'nothing on Wikidata is called "Elsewhere"' }], { generated: '2026-09-04', previous: page });
+  assert.match(merged, /^## unmatched$/m);
+  assert.match(merged, /^## later$/m);
+  assert.equal(merged.match(/^## /gm).length, 2, 'one section per record, however many runs wrote it');
 });
 
 test('--reconcile refuses to run when the seeds file has not allowed it', async () => {

@@ -42,6 +42,7 @@ import { existsSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { createRegionDeriver } from '../../src/util/geo.js';
+import { IMPORT_AUTHORS } from '../../src/validate/rules.js';
 import { mergeIdentity } from './identity.mjs';
 import { readRecords, readRegionPolygons } from '../lib/read.mjs';
 
@@ -69,6 +70,13 @@ export const SEEDS_FILE = 'imports/wikidata-seeds.json';
 export const STATE_FILE = 'imports/wikidata-state.json';
 export const LEAD_CACHE = path.join('tools', 'import', 'cache', 'wikipedia');
 export const CANDIDATES_FILE = path.join('docs', 'wikidata-candidates.md');
+// Where --reconcile leaves everything it would not decide. A person reads it
+// and either matches the record by hand or extends the class table; the tool
+// never resolves an ambiguity by picking the first candidate.
+export const AMBIGUOUS_FILE = path.join('docs', 'm17-ambiguous.md');
+// How many of the search's answers the list shows per record. Three is what
+// somebody can read down a page of; the rest are counted, not printed.
+export const AMBIGUOUS_SHOWN = 3;
 
 export const API = 'https://www.wikidata.org/w/api.php';
 export const SPARQL = 'https://query.wikidata.org/sparql';
@@ -540,6 +548,14 @@ export function leadRecord({ qid, lang, title, revid, fetched, text }) {
   };
 }
 
+// Every automated writer this repository has, in one list, so that "a record
+// somebody wrote" is a question with one answer. IMPORT_AUTHORS is the
+// validator's own list — the licence exception — and this import's author is
+// the other name on it.
+export const AUTOMATED_AUTHORS = Object.freeze([...IMPORT_AUTHORS, IMPORT_AUTHOR.name]);
+
+export const handWritten = (record) => !(record?.authors ?? []).some((a) => AUTOMATED_AUTHORS.includes(a?.name));
+
 // --- the additive rule ------------------------------------------------------
 
 // The rule itself is in identity.mjs, because cshapes.mjs obeys it too; it is
@@ -901,11 +917,15 @@ export async function runReconcileMode(dataDir, { fetcher, today, batchSize = BA
 
   const entries = await existingRecords(dataDir);
   // Records that are ours to match: hand-written, no identifier yet. A record
-  // an import wrote already carries the item it came from.
+  // an import wrote is not — the Wikidata import's own records already carry
+  // the item they came from, and the CShapes polities are out of this pass by
+  // decision 23 of docs/review-2026-09-04-plan.md: 250 territories matched by
+  // name against a search nobody has read is exactly the bulk guess this
+  // milestone is meant to avoid.
   const wanted = entries
     .filter((e) => kinds.includes(e.record?.kind))
     .filter((e) => typeof e.record?.wikidata !== 'string')
-    .filter((e) => !(e.record?.authors ?? []).some((a) => a?.name === IMPORT_AUTHOR.name))
+    .filter((e) => handWritten(e.record))
     .map((e) => e.record.id);
 
   const state = await readState(dataDir);
@@ -920,22 +940,32 @@ export async function runReconcileMode(dataDir, { fetcher, today, batchSize = BA
     const entry = byId.get(id);
     if (!entry) continue;
     const record = entry.record;
+    const kind = record.kind;
     const term = (record.names ?? [])[0] ?? record.title;
     if (!term) {
-      report.ambiguous.push({ id, why: 'the record has no name to search for' });
+      report.ambiguous.push({ id, kind, why: 'the record has no name to search for' });
       continue;
     }
     const found = await fetcher.get(searchUrl(term));
     const qids = (found?.search ?? []).map((s) => s.id).filter(Boolean);
     if (!qids.length) {
-      report.ambiguous.push({ id, why: `nothing on Wikidata is called "${term}"` });
+      report.ambiguous.push({ id, kind, term, why: `nothing on Wikidata is called "${term}"` });
       continue;
     }
     const entities = await fetchEntities(fetcher, qids.slice(0, batchSize));
     const reads = Object.values(entities).filter((e) => !isMissing(e)).map(readEntity);
     const { certain, candidates, rejected } = matchesFor(record, reads, seeds.classes);
     if (!certain) {
-      report.ambiguous.push({ id, term, candidates: candidates.map((c) => c.qid), rejected });
+      report.ambiguous.push({
+        id,
+        kind,
+        term,
+        when: record.when ?? null,
+        candidates: candidates.map((c) => c.qid),
+        considered: considered(reads, rejected, { kind }),
+        searched: reads.length,
+        rejected,
+      });
       continue;
     }
     const merged = mergeIdentity(record, identityOf(certain));
@@ -950,6 +980,87 @@ export async function runReconcileMode(dataDir, { fetcher, today, batchSize = BA
   const next = advance(state, 'reconcile', { batch, pending, done, today });
   await writeState(dataDir, next);
   return { report, failed: [], written, state: next };
+}
+
+// The few candidates a person is shown for a record the tool would not
+// decide: what they were called, when they were, what classes they carry and
+// why each was thrown out. Everything needed to say "this one" without
+// opening Wikidata, and the link for when that is not enough.
+export function considered(reads, rejected = [], { kind = null, shown = AMBIGUOUS_SHOWN } = {}) {
+  const why = new Map(rejected.map((line) => {
+    const at = String(line).indexOf(': ');
+    return at === -1 ? [String(line), String(line)] : [String(line).slice(0, at), String(line).slice(at + 2)];
+  }));
+  return reads.slice(0, shown).map((read) => ({
+    qid: read.qid,
+    label: read.labels.en ?? read.labels.pt ?? null,
+    description: read.descriptions.en ?? read.descriptions.pt ?? null,
+    when: kind ? intervalFor(kind, read.times) : null,
+    classes: read.classes,
+    why: why.get(read.qid) ?? 'nothing rejected it — and neither did anything single it out',
+  }));
+}
+
+const years = (when) => {
+  if (!when || !Number.isInteger(when.start)) return 'no date';
+  if (when.end === null || when.end === undefined) return `${when.start}–`;
+  return when.start === when.end ? `${when.start}` : `${when.start}–${when.end}`;
+};
+
+function ambiguousSection(row) {
+  const lines = [`## ${row.id}`, ''];
+  const dated = row.when ? ` · ${years(row.when)}` : '';
+  lines.push(`\`${row.kind ?? 'record'}\`${dated} · searched for **${row.term ?? '(nothing to search for)'}**`);
+  lines.push('');
+  if (row.why) {
+    lines.push(`${row.why}.`);
+  } else {
+    lines.push(row.candidates?.length
+      ? `${row.candidates.length} items passed every test, so no single one of them is certain.`
+      : `${row.searched ?? 0} item(s) were read and each failed a test.`);
+    lines.push('');
+    for (const c of row.considered ?? []) {
+      const label = c.label ?? '(no label)';
+      const description = c.description ? ` — ${c.description}` : '';
+      const classes = c.classes?.length ? c.classes.join(', ') : 'no P31';
+      lines.push(`- [\`${c.qid}\`](https://www.wikidata.org/wiki/${c.qid}) **${label}**${description} — ${years(c.when)} — ${classes}`);
+      lines.push(`  - ${c.why}`);
+    }
+  }
+  return `${lines.join('\n')}\n`;
+}
+
+// Sections keyed by record id, so that the file survives being written once
+// per batch: the Action runs the tool again for every 25 records, and a page
+// that replaced itself each time would end up holding the last batch alone.
+function parseSections(text) {
+  return String(text ?? '').split(/^## /m).slice(1).map((part) => {
+    const id = part.split('\n', 1)[0].trim();
+    return [id, `## ${part.replace(/\s+$/, '')}\n`];
+  });
+}
+
+export function ambiguousMarkdown(rows, { generated, previous = '', seedsFile = SEEDS_FILE } = {}) {
+  const sections = new Map(parseSections(previous));
+  for (const row of rows) sections.set(row.id, ambiguousSection(row));
+  const ids = [...sections.keys()].sort();
+  return `# Wikidata reconcile — what the import would not decide
+
+Written by \`node tools/import/wikidata.mjs --reconcile\`, last on ${generated},
+one section per hand-written record the pass could not match **with
+certainty**: an exact diacritic-insensitive name match, a class consistent
+with the record's kind, dates within a year, and exactly one candidate left.
+Most records are here and that is the design — a mechanical match is the only
+kind an import is allowed to make, and everything else is somebody's judgement.
+
+Nothing here has been written onto any record. Two things can be done with a
+section: match it by hand (put the item id in the record's \`wikidata\`, and a
+later pass fills the rest in), or, where the reason given is a class nobody
+has decided about, add that class to \`data/${seedsFile}\` → \`classes\` and run
+the pass again. The list is regenerated per batch and keyed by record id, so
+an id appears once however many times the tool has run.
+
+${ids.map((id) => sections.get(id)).join('\n')}`;
 }
 
 // --candidates: run the seeds' queries and write a list. Nothing under data/
@@ -1095,6 +1206,15 @@ async function main(argv) {
     await writeFile(file, candidatesMarkdown(result.report.rows, { generated: today }), 'utf8');
     console.log(`${result.report.rows.length} candidate(s) written to ${path.relative(ROOT, file)}; nothing under data/ was touched`);
     return 0;
+  }
+  if (mode === 'reconcile') {
+    const file = to ?? path.join(ROOT, AMBIGUOUS_FILE);
+    const previous = existsSync(file) ? await readFile(file, 'utf8') : '';
+    if (result.report.ambiguous.length || previous) {
+      await mkdir(path.dirname(file), { recursive: true });
+      await writeFile(file, ambiguousMarkdown(result.report.ambiguous, { generated: today, previous }), 'utf8');
+      console.log(`${result.report.ambiguous.length} record(s) left for a person in ${path.relative(ROOT, file)}`);
+    }
   }
   for (const line of reportLines(result.report, mode)) console.log(line);
   return 0;
