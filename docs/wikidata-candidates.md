@@ -8,14 +8,25 @@ leave the rest alone. Untick is the default, and a row nobody ticks is a
 record that is never created. Nothing else on a row is meant to be edited by
 hand; the import reads the ticks and nothing else.
 
-230 candidate(s) over 14 period(s), of which 0 already
+250 candidate(s) over 14 period(s), of which 0 already
 have a record here. An item that two queries return is listed once, under the
 first of them.
 
 The queries are in `data/imports/wikidata-seeds.json`; changing what is proposed is an edit
 to that file and another run, never an edit here.
 
-## 1890s — 1 candidate(s), 0 already in the atlas
+## 1890s — 7 candidate(s), 0 already in the atlas
+
+### elections-1890s — 6
+
+| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
+| :--: | --- | --- | --- | --- | --- | --: | :--: |
+| [ ] | [`Q7232736`](https://www.wikidata.org/wiki/Q7232736) | 1890 Portuguese legislative election | — | 1890-01-01 | legislative election | 2 | — |
+| [ ] | [`Q7232737`](https://www.wikidata.org/wiki/Q7232737) | 1892 Portuguese legislative election | — | 1892-01-01 | legislative election | 2 | — |
+| [ ] | [`Q7232738`](https://www.wikidata.org/wiki/Q7232738) | 1894 Portuguese legislative election | — | 1894-01-01 | legislative election | 2 | — |
+| [ ] | [`Q7232739`](https://www.wikidata.org/wiki/Q7232739) | 1895 Portuguese legislative election | — | 1895-01-01 | legislative election | 2 | — |
+| [ ] | [`Q7232740`](https://www.wikidata.org/wiki/Q7232740) | 1897 Portuguese legislative election | — | 1897-01-01 | legislative election | 3 | — |
+| [ ] | [`Q7232743`](https://www.wikidata.org/wiki/Q7232743) | 1899 Portuguese legislative election | — | 1899-01-01 | legislative election | 2 | — |
 
 ### treaties-and-agreements-1890s — 1
 
@@ -61,7 +72,7 @@ to that file and another run, never an edit here.
 | [ ] | [`Q7232750`](https://www.wikidata.org/wiki/Q7232750) | 1919 Portuguese legislative election | eleições legislativas portuguesas de 1919 | 1919-05-11 | Portuguese legislative election | 5 | — |
 | [ ] | [`Q21872497`](https://www.wikidata.org/wiki/Q21872497) | 1919 Portuguese presidential election | eleições presidenciais portuguesas de 1919 | 1919-12-06 | Portuguese presidential election | 2 | — |
 
-## 1920s — 9 candidate(s), 0 already in the atlas
+## 1920s — 10 candidate(s), 0 already in the atlas
 
 ### elections-1920s — 6
 
@@ -73,6 +84,12 @@ to that file and another run, never an edit here.
 | [ ] | [`Q10271595`](https://www.wikidata.org/wiki/Q10271595) | 1925 Portuguese legislative election | eleições legislativas portuguesas de 1925 | 1925-11-08 | Portuguese legislative election | 3 | — |
 | [ ] | [`Q21714331`](https://www.wikidata.org/wiki/Q21714331) | 1925 Portuguese presidential election | eleições presidenciais portuguesas de 1925 | 1925-12-11 | Portuguese presidential election | 2 | — |
 | [ ] | [`Q18167373`](https://www.wikidata.org/wiki/Q18167373) | 1928 Portuguese presidential election | eleições presidenciais portuguesas de 1928 | 1928-03-25 | Portuguese presidential election | 4 | — |
+
+### treaties-and-agreements-1920s — 1
+
+| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
+| :--: | --- | --- | --- | --- | --- | --: | :--: |
+| [ ] | [`Q2659185`](https://www.wikidata.org/wiki/Q2659185) | Nine-Power Treaty | Tratado das Nove Potências | 1922-02-06 | ennead | 20 | — |
 
 ### massacres-1920s — 1
 
@@ -182,7 +199,7 @@ to that file and another run, never an edit here.
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q111584941`](https://www.wikidata.org/wiki/Q111584941) | Assault on the Santa Maria steamship | Assalto ao paquete Santa Maria | 1961-01-22 | assault | 0 | — |
+| [ ] | [`Q111584941`](https://www.wikidata.org/wiki/Q111584941) | Assault on the Santa Maria steamship | Assalto ao paquete Santa Maria | 1961-01-22 | murder | 0 | — |
 | [ ] | [`Q10261580`](https://www.wikidata.org/wiki/Q10261580) | 1964 Rosais earthquake | Crise sísmica dos Rosais | 1964-02-15 | earthquake | 4 | — |
 | [ ] | [`Q48876710`](https://www.wikidata.org/wiki/Q48876710) | 1967 Portugal floods | Cheias de 1967 na região de Lisboa | 1967-11-25 | natural disaster | 2 | — |
 | [ ] | [`Q3510571`](https://www.wikidata.org/wiki/Q3510571) | 1969 Portugal earthquake | Sismo de Portugal de 1969 | 1969-02-28 | earthquake | 7 | — |
@@ -296,7 +313,27 @@ to that file and another run, never an edit here.
 | [ ] | [`Q10301908`](https://www.wikidata.org/wiki/Q10301908) | Chiado Fire | Incêndio do Chiado | 1988-08-25 | conflagration | 2 | — |
 | [ ] | [`Q112726955`](https://www.wikidata.org/wiki/Q112726955) | — | Desastre ambiental de Almograve | 1989-07-14 | oil spill | 1 | — |
 
-## 1990s — 9 candidate(s), 0 already in the atlas
+## 1990s — 22 candidate(s), 0 already in the atlas
+
+### elections-1990s — 15
+
+| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
+| :--: | --- | --- | --- | --- | --- | --: | :--: |
+| [ ] | [`Q3586629`](https://www.wikidata.org/wiki/Q3586629) | 1991 Portuguese presidential election | eleições presidenciais portuguesas de 1991 | 1991-01-13 | Portuguese presidential election | 7 | — |
+| [ ] | [`Q2053113`](https://www.wikidata.org/wiki/Q2053113) | 1991 Portuguese legislative election | eleições legislativas portuguesas de 1991 | 1991-10-06 | Portuguese legislative election | 10 | — |
+| [ ] | [`Q10271602`](https://www.wikidata.org/wiki/Q10271602) | — | eleições legislativas regionais na Madeira em 1992 | 1992-10-11 | parliamentary election in Madeira | 2 | — |
+| [ ] | [`Q10271611`](https://www.wikidata.org/wiki/Q10271611) | — | eleições legislativas regionais nos Açores em 1992 | 1992-10-11 | parliamentary election in the Azores | 2 | — |
+| [ ] | [`Q25421711`](https://www.wikidata.org/wiki/Q25421711) | 1993 Portuguese local elections | eleições autárquicas portuguesas de 1993 | 1993-12-12 | Portuguese local elections | 2 | — |
+| [ ] | [`Q3066311`](https://www.wikidata.org/wiki/Q3066311) | 1994 European Parliament election in Portugal | eleições parlamentares europeias de 1994 em Portugal | 1994-06-12 | European Parliament election | 8 | — |
+| [ ] | [`Q1511117`](https://www.wikidata.org/wiki/Q1511117) | 1995 Portuguese legislative election | eleições legislativas portuguesas de 1995 | 1995-10-01 | Portuguese legislative election | 10 | — |
+| [ ] | [`Q3066523`](https://www.wikidata.org/wiki/Q3066523) | 1996 Portuguese presidential election | eleições presidenciais portuguesas de 1996 | 1996-01-14 | Portuguese presidential election | 7 | — |
+| [ ] | [`Q4832856`](https://www.wikidata.org/wiki/Q4832856) | 1996 Azorean regional election | eleições legislativas regionais nos Açores em 1996 | 1996-10-13 | parliamentary election in the Azores | 3 | — |
+| [ ] | [`Q10271601`](https://www.wikidata.org/wiki/Q10271601) | 1996 Madeiran regional election | eleições legislativas regionais na Madeira em 1996 | 1996-10-13 | parliamentary election in Madeira | 3 | — |
+| [ ] | [`Q25421741`](https://www.wikidata.org/wiki/Q25421741) | 1997 Portuguese local elections | eleições autárquicas portuguesas de 1997 | 1997-12-14 | Portuguese local elections | 2 | — |
+| [ ] | [`Q1851815`](https://www.wikidata.org/wiki/Q1851815) | 1999 European Parliament election | eleições parlamentares europeias de 1999 | 1999-01-01 | European Parliament election | 20 | — |
+| [ ] | [`Q55719546`](https://www.wikidata.org/wiki/Q55719546) | 1999 Macanese Chief Executive election | — | 1999-05-15 | Macanese Chief Executive election | 4 | — |
+| [ ] | [`Q2404815`](https://www.wikidata.org/wiki/Q2404815) | 1999 European Parliament election in Portugal | eleições parlamentares europeias de 1999 em Portugal | 1999-06-13 | European Parliament election | 8 | — |
+| [ ] | [`Q2053121`](https://www.wikidata.org/wiki/Q2053121) | 1999 Portuguese legislative election | eleições legislativas portuguesas de 1999 | 1999-10-10 | Portuguese legislative election | 10 | — |
 
 ### treaties-and-agreements-1990s — 3
 
@@ -319,13 +356,6 @@ to that file and another run, never an edit here.
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
 | [ ] | [`Q108485945`](https://www.wikidata.org/wiki/Q108485945) | 1998 Azores Islands earthquake | — | 1998-01-01 | earthquake | 3 | — |
 | [ ] | [`Q5942951`](https://www.wikidata.org/wiki/Q5942951) | — | — | 1998-07-09 | earthquake | 1 | — |
-
-### battles-and-wars-1990s — 2
-
-| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
-| :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q160774`](https://www.wikidata.org/wiki/Q160774) | Operation Deliberate Force | Bombardeios da Organização do Tratado do Atlântico Norte na Bósnia em 1995 | 1995-08-30 | airstrike | 36 | — |
-| [ ] | [`Q190029`](https://www.wikidata.org/wiki/Q190029) | Kosovo War | Guerra do Kosovo | 1998-02-01 | war | 73 | — |
 
 ## 2000s — 27 candidate(s), 0 already in the atlas
 
@@ -384,7 +414,7 @@ to that file and another run, never an edit here.
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q545449`](https://www.wikidata.org/wiki/Q545449) | Iraq War | Guerra do Iraque | 2003-03-20 | invasion | 110 | — |
+| [ ] | [`Q545449`](https://www.wikidata.org/wiki/Q545449) | Iraq War | Guerra do Iraque | 2003-03-20 | war | 110 | — |
 
 ## 2010s — 32 candidate(s), 0 already in the atlas
 
@@ -490,43 +520,33 @@ returned is missing from the period it belongs to, and that period's count is
 short by that much. Wikidata's query service gives a query sixty seconds and
 refuses it after that; running `--candidates` again asks all of them again.
 
-- `elections-1890s`: 502
-- `coups-and-uprisings-1890s`: 502
-- `legislation-1890s`: 504
+- `coups-and-uprisings-1890s`: 504
 - `independences-1890s`: 504
 - `battles-and-wars-1890s`: 504
 - `coups-and-uprisings-1900s`: 504
-- `legislation-1900s`: 502
+- `legislation-1900s`: 504
 - `independences-1900s`: 504
 - `battles-and-wars-1900s`: 504
 - `coups-and-uprisings-1910s`: 504
 - `legislation-1910s`: 504
+- `independences-1910s`: 504
 - `battles-and-wars-1910s`: 504
-- `coups-and-uprisings-1920s`: 502
-- `treaties-and-agreements-1920s`: 502
+- `coups-and-uprisings-1920s`: 504
 - `legislation-1920s`: 504
-- `independences-1920s`: 504
-- `battles-and-wars-1920s`: 504
 - `coups-and-uprisings-1930s`: 504
 - `legislation-1930s`: 504
 - `independences-1930s`: 504
-- `battles-and-wars-1930s`: 504
 - `coups-and-uprisings-1940s`: 504
-- `legislation-1940s`: 504
 - `independences-1940s`: 504
 - `battles-and-wars-1940s`: 504
-- `coups-and-uprisings-1950s`: 502
+- `coups-and-uprisings-1950s`: 504
 - `legislation-1950s`: 504
-- `independences-1950s`: 502
 - `battles-and-wars-1950s`: 504
 - `coups-and-uprisings-1960s`: 504
 - `legislation-1960s`: 504
 - `battles-and-wars-1960s`: 504
 - `coups-and-uprisings-1970s`: 504
-- `legislation-1970s`: 502
-- `independences-1970s`: 504
+- `legislation-1970s`: 504
 - `battles-and-wars-1970s`: 504
-- `legislation-1980s`: 504
-- `independences-1980s`: 502
-- `elections-1990s`: 502
-- `coups-and-uprisings-1990s`: 502
+- `legislation-1990s`: 504
+- `battles-and-wars-1990s`: 504
