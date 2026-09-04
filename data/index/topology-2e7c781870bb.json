@@ -8468,6 +8468,28 @@
     {
       "actors": [],
       "aliases": [],
+      "id": "treaty-of-friendship-and-cooperation-between-spain-and-portugal",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Treaty of Friendship and Cooperation between Spain and Portugal",
+      "weight": 0,
+      "when": {
+        "date": "1977-11-22",
+        "end": 1977,
+        "start": 1977
+      },
+      "wikidata": "Q6151921",
+      "wikipedia": {
+        "en": "Treaty of Friendship and Cooperation between Spain and Portugal",
+        "pt": "Tratado de Amizade e Cooperação entre Portugal e Espanha (1977)"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
       "id": "treaty-of-windsor",
       "place": null,
       "region": "europe",

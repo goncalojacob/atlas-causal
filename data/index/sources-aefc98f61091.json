@@ -9530,7 +9530,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 11,
+      "citationCount": 12,
       "citations": [
         {
           "dissent": false,
@@ -9591,6 +9591,12 @@
           "id": "q2115000",
           "kind": "event",
           "locator": "Q2115000"
+        },
+        {
+          "dissent": false,
+          "id": "treaty-of-friendship-and-cooperation-between-spain-and-portugal",
+          "kind": "event",
+          "locator": "Q6151921"
         },
         {
           "dissent": false,

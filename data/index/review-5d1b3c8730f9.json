@@ -6037,7 +6037,7 @@
     }
   ],
   "schema": 1,
-  "total": 581,
+  "total": 582,
   "warnings": [
     {
       "id": "1911-portuguese-presidential-election",
@@ -6110,6 +6110,12 @@
       "kind": "place",
       "message": "place is referenced by no event",
       "rule": "place-unused"
+    },
+    {
+      "id": "treaty-of-friendship-and-cooperation-between-spain-and-portugal",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
     },
     {
       "id": "treaty-of-windsor",
