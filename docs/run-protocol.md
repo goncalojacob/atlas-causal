@@ -70,3 +70,17 @@ was pushed. Stop when done; never start the next milestone.
 M6 → M7 → M9 → M8 → M10 → M11 → M12 → M13. M9 (places) runs before M8
 (more events) so that no event is ever written with coordinates and then
 migrated hours later.
+
+## Amendments, 4 September 2026
+
+- **An import branch this run itself pushed is not another agent.** A run
+  may push a branch `import/<name>` from `m0`, wait for the Action to
+  commit to that branch, and then `git merge --ff-only` it into `m0`; that
+  merge is the run's own commit. The Action never pushes to `m0`.
+- **The shepherd's order today** is 14, 15, 16, 17, 18, complete at
+  `M18 done`; its gate instant is 2026-09-04T09:00:00Z. The routine, not
+  this file, is what runs; this file records what it does.
+- **`grep` can print nothing in the sandbox** where it should match; use
+  `awk` or `sed -n` for checks a brief relies on.
+- **Daytime runs today** supersede "builds after 18:00" in `STATUS.md`,
+  at the owner's request of 4 September.
