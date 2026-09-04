@@ -6,7 +6,32 @@ session ends. `ARCHITECTURE.md` is the target; this file is the position.
 
 ## Last updated
 
-2026-09-04, after M16 (`docs/m16-brief.md`): the atlas has a **Wikidata
+2026-09-04, after M17 (`docs/m17-brief.md`): the import has now **been run**,
+and the summaries are no longer one line each. The reconcile pass went out on
+the branch `import/reconcile-2026-09-04` and matched the atlas's hand-written
+records against Wikidata: **51 of 164 records matched with certainty** — 44 of
+the 59 hand-written actors, 6 of the 25 places, 1 of the 80 events — and each
+match got `wikidata`, `wikipedia` and `sitelinks` written and nothing else.
+The 250 CShapes polities were **not** matched, by decision 23 of the review.
+The other **113 records are in `docs/m17-ambiguous.md`**, one section each,
+with the top three candidates, their labels, dates and classes, and the reason
+each was thrown out; that is the expected shape of the result, because
+"certain" here means an exact diacritic-insensitive name match *and* a class
+consistent with the kind *and* dates within a year *and* exactly one candidate
+left. Events match worst: their titles are things like "25 April" and "The
+Alvor Agreement", which no search resolves. 99 Wikipedia leads were cached
+under `tools/import/cache/wikipedia/`. The first run of the Action failed on
+its own output — it indexed *after* it tested, and the suite checks the index
+against the tree — which is fixed in the workflow and in the workflow test.
+Then, under the dated exception in `CLAUDE.md`, **71 summaries were rewritten**
+to three to six sentences: what happened, when and where, who was in it, and
+what it is doing in the atlas, hedged where the accounts differ. Skipped, as
+the brief requires: every record carrying a `review` block, everything not
+carrying the assistant-draft marker, and the two events whose summaries carry
+the owner's decision of 3 September. Every replaced text is kept, before and
+after, in **`docs/m17-summaries.md`**.
+
+Before that, 2026-09-04, after M16 (`docs/m16-brief.md`): the atlas has a **Wikidata
 import**, written and tested but **not run** — this sandbox has no network and
 the first real execution is the Action. `tools/import/wikidata.mjs`, zero
 dependencies, three modes: `--reconcile` matches records already here against
@@ -81,17 +106,19 @@ correction bundle for the issue path, and the public site gains no backend.
 
 ## Phase
 
-**M0 to M16 built, plus the map usability work, on branch `m0`, pull
+**M0 to M17 built, plus the map usability work, on branch `m0`, pull
 request #1 open against `main`.** M13 was the last milestone in the original
 run protocol's order; M14 ran after it from `docs/m14-brief.md` on the
 `brief-m14` side branch, and M15 from `docs/m15-brief.md`, which arrived on
 `brief-m15` together with `docs/review-2026-09-04-plan.md`, the amended
 `docs/run-protocol.md` and the briefs for **M16, M17 and M18**. M16 is built:
-the import tool and its Action exist and are tested, and **the tool has not
-been run** — there is no network here, and the Action on an `import/**`
-branch is where it first meets the live service. **M17** (reconciliation and
-the longer summaries) and **M18** (the candidate list the owner ticks) are
-queued and not started. M8 changed no structure
+the import tool and its Action exist and are tested. M17 ran it for the first
+time, on the branch `import/reconcile-2026-09-04`, and fast-forward-merged the
+Action's commits back into `m0`; the reconcile cursor in
+`data/imports/wikidata-state.json` has walked every hand-written record, so a
+second reconcile pass would do nothing until the cursor is cleared or new
+records are written. **M18** (the candidate list the owner ticks) is queued and
+not started, and it needs queries in the seeds file, which still has none. M8 changed no structure
 and wrote no revision, as its brief allows.
 `ARCHITECTURE.md` **revision 16** is the specification; its opening note says what changed and why (revision 4
 added the `actor` kind; revision 5 added `cluster.js`, `weight` in the
@@ -1507,6 +1534,48 @@ object. Every later card gets a file.
 110. **The candidate list defaults to `docs/wikidata-candidates.md`.** M18
     names its own file with `--to`; the tool needed a default that does not
     pretend to belong to a milestone that has not run.
+111. **The class table was filled in, which the brief did not ask for.** M17
+    step 1 says to write the seeds file with `reconcile: true` and no items,
+    and says nothing about `classes`. But `classify()` knows only what that
+    table says: with it empty every candidate is rejected as unclassified,
+    no match can ever be certain, and the pass would have produced a list of
+    164 ambiguities and nothing else. The table added is deliberately short —
+    26 classes I am confident of, an `event`/`actor`/`place` each with its
+    label — so that an item of any other class is still refused and listed
+    for the owner rather than guessed at. Extending it is an edit to
+    `data/imports/wikidata-seeds.json` and another pass; the reasons in
+    `docs/m17-ambiguous.md` name the classes that were missing.
+112. **The reconcile pass skips every automated author, not only its own.**
+    It filtered on the Wikidata import's author entry, which would have
+    matched all 252 CShapes polities by name against a search nobody had
+    read — the bulk guess decision 23 of the review rules out. The filter is
+    now `handWritten()` over `IMPORT_AUTHORS` plus the import's own name, so
+    "a record somebody wrote" has one answer in this repository.
+113. **The ambiguous list is written by the tool, not by hand.** The brief
+    says everything else "goes to `docs/m17-ambiguous.md`", and the tool had
+    only a printed report that scrolls past in a runner's log. It now writes
+    the page itself, keyed by record id and merged with what is already
+    there, because the Action runs the tool once per batch of 25 and a page
+    that replaced itself would have kept the last batch alone.
+114. **The Action indexes before it checks, not after.** The M16 brief's
+    order — tool, validate, tests, index, commit — fails on its own output:
+    the suite runs `validate.mjs --index` against the repository, so a batch
+    that had written a record left a stale `data/index/` and rule 16 failed.
+    The first real run died there. The loop now runs the tool, rebuilds the
+    index, validates with `--index`, then tests, which is what the commit
+    would actually contain.
+115. **No summary cites a Wikipedia lead.** The brief allows the cached lead
+    as a source where one was fetched. The 71 rewritten summaries were
+    written from the sources each record already cites; the leads were read
+    as a check on dates and names and not drafted from, so no record gained
+    a citation and nothing here rests on Wikipedia. The leads are on disk if
+    a later pass wants them.
+116. **`revised` is left alone on a rewritten record.** `revised` is what
+    signing a record in `review.html` sets, and a rewritten draft has not
+    been reviewed by anybody: setting it would have moved 71 records towards
+    looking checked when what changed is that the draft got longer.
+117. **59 hand-written actors, not "about 61".** The brief's estimate; the
+    count on disk is 59, against 80 events and 25 places.
 
 ## Dates to verify
 
