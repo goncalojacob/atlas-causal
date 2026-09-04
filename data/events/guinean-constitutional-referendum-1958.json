@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "guinean-constitutional-referendum-1958",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q5616514",
+  "sitelinks": 2,
+  "wikipedia": {
+    "en": "1958 Guinean constitutional referendum"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5616514"
+    }
+  ],
+  "title": "Guinean constitutional referendum, 1958",
+  "summary": "Wikidata item Q5616514, imported by tools/import/wikidata.mjs. The item's own description reads \"a referendum which enabled Guinea to accept or deny the French Constitution in 1958.\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1958,
+    "end": 1958,
+    "date": "1958-09-28"
+  },
+  "place": null,
+  "region": "africa",
+  "actors": []
+}

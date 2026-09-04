@@ -9530,7 +9530,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 42,
+      "citationCount": 66,
       "citations": [
         {
           "dissent": false,
@@ -9672,15 +9672,135 @@
         },
         {
           "dissent": false,
+          "id": "1925-portuguese-legislative-election",
+          "kind": "event",
+          "locator": "Q10271595"
+        },
+        {
+          "dissent": false,
+          "id": "1925-portuguese-presidential-election",
+          "kind": "event",
+          "locator": "Q21714331"
+        },
+        {
+          "dissent": false,
+          "id": "1926-horta-earthquake",
+          "kind": "event",
+          "locator": "Q10372022"
+        },
+        {
+          "dissent": false,
+          "id": "1928-portuguese-presidential-election",
+          "kind": "event",
+          "locator": "Q18167373"
+        },
+        {
+          "dissent": false,
+          "id": "1934-portuguese-legislative-election",
+          "kind": "event",
+          "locator": "Q7232754"
+        },
+        {
+          "dissent": false,
+          "id": "1935-portuguese-presidential-election",
+          "kind": "event",
+          "locator": "Q18166737"
+        },
+        {
+          "dissent": false,
+          "id": "1938-portuguese-legislative-election",
+          "kind": "event",
+          "locator": "Q7232755"
+        },
+        {
+          "dissent": false,
+          "id": "1942-portuguese-legislative-election",
+          "kind": "event",
+          "locator": "Q7232757"
+        },
+        {
+          "dissent": false,
+          "id": "1942-portuguese-presidential-election",
+          "kind": "event",
+          "locator": "Q18166741"
+        },
+        {
+          "dissent": false,
+          "id": "1945-portuguese-legislative-election",
+          "kind": "event",
+          "locator": "Q7232758"
+        },
+        {
+          "dissent": false,
+          "id": "1949-portuguese-legislative-election",
+          "kind": "event",
+          "locator": "Q7232761"
+        },
+        {
+          "dissent": false,
+          "id": "1949-portuguese-presidential-election",
+          "kind": "event",
+          "locator": "Q3277291"
+        },
+        {
+          "dissent": false,
+          "id": "1951-portuguese-presidential-election",
+          "kind": "event",
+          "locator": "Q18166749"
+        },
+        {
+          "dissent": false,
           "id": "1952-guinean-territorial-assembly-election",
           "kind": "event",
           "locator": "Q22090902"
         },
         {
           "dissent": false,
+          "id": "1953-portuguese-legislative-election",
+          "kind": "event",
+          "locator": "Q7232759"
+        },
+        {
+          "dissent": false,
           "id": "1957-guinean-territorial-assembly-election",
           "kind": "event",
           "locator": "Q1285560"
+        },
+        {
+          "dissent": false,
+          "id": "1957-portuguese-legislative-election",
+          "kind": "event",
+          "locator": "Q7232763"
+        },
+        {
+          "dissent": false,
+          "id": "1958-portuguese-presidential-election",
+          "kind": "event",
+          "locator": "Q3741753"
+        },
+        {
+          "dissent": false,
+          "id": "1961-guinean-presidential-election",
+          "kind": "event",
+          "locator": "Q2114993"
+        },
+        {
+          "dissent": false,
+          "id": "1961-portuguese-legislative-election",
+          "kind": "event",
+          "locator": "Q7232766"
+        },
+        {
+          "dissent": false,
+          "id": "1963-guinean-legislative-election",
+          "kind": "event",
+          "locator": "Q5616525"
+        },
+        {
+          "dissent": false,
+          "id": "1965-portuguese-presidential-election",
+          "kind": "event",
+          "locator": "Q16153770"
         },
         {
           "dissent": false,
@@ -9714,9 +9834,21 @@
         },
         {
           "dissent": false,
+          "id": "batepa-massacre",
+          "kind": "event",
+          "locator": "Q1851212"
+        },
+        {
+          "dissent": false,
           "id": "geneva-act-of-the-lisbon-agreement-on-appellations-of-origin-and-geographical-indications",
           "kind": "event",
           "locator": "Q4263323"
+        },
+        {
+          "dissent": false,
+          "id": "guinean-constitutional-referendum-1958",
+          "kind": "event",
+          "locator": "Q5616514"
         },
         {
           "dissent": false,
@@ -9744,6 +9876,12 @@
         },
         {
           "dissent": false,
+          "id": "portuguese-constitutional-referendum-1933",
+          "kind": "event",
+          "locator": "Q7232706"
+        },
+        {
+          "dissent": false,
           "id": "portuguese-language-orthographic-agreement-of-1945",
           "kind": "event",
           "locator": "Q9581238"
@@ -9753,6 +9891,12 @@
           "id": "portuguese-language-orthographic-agreement-of-1990",
           "kind": "event",
           "locator": "Q1113432"
+        },
+        {
+          "dissent": false,
+          "id": "q11077889",
+          "kind": "event",
+          "locator": "Q11077889"
         },
         {
           "dissent": false,

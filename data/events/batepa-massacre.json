@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "batepa-massacre",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q1851212",
+  "sitelinks": 14,
+  "wikipedia": {
+    "en": "Batepá massacre",
+    "pt": "Massacre de Batepá"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1851212"
+    }
+  ],
+  "title": "Batepá massacre",
+  "summary": "Wikidata item Q1851212, imported by tools/import/wikidata.mjs. The item's own description reads \"1953 uprising and massacre in São Tomé\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1953,
+    "end": 1953,
+    "date": "1953-02-03"
+  },
+  "place": null,
+  "region": "africa",
+  "actors": []
+}

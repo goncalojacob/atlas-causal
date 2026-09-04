@@ -6441,6 +6441,292 @@
     {
       "actors": [],
       "aliases": [],
+      "id": "1925-portuguese-legislative-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1925 Portuguese legislative election",
+      "weight": 0,
+      "when": {
+        "date": "1925-11-08",
+        "end": 1925,
+        "start": 1925
+      },
+      "wikidata": "Q10271595",
+      "wikipedia": {
+        "en": "1925 Portuguese legislative election",
+        "pt": "Eleições legislativas portuguesas de 1925"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1925-portuguese-presidential-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1925 Portuguese presidential election",
+      "weight": 0,
+      "when": {
+        "date": "1925-12-11",
+        "end": 1925,
+        "start": 1925
+      },
+      "wikidata": "Q21714331",
+      "wikipedia": {
+        "en": "1925 Portuguese presidential election",
+        "pt": "Eleições presidenciais portuguesas de 1925"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1926-horta-earthquake",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1926 Horta earthquake",
+      "weight": 0,
+      "when": {
+        "date": "1926-08-31",
+        "end": 1926,
+        "start": 1926
+      },
+      "wikidata": "Q10372022",
+      "wikipedia": {
+        "en": "1926 Horta earthquake",
+        "pt": "Sismo da Horta de 1926"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1928-portuguese-presidential-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1928 Portuguese presidential election",
+      "weight": 0,
+      "when": {
+        "date": "1928-03-25",
+        "end": 1928,
+        "start": 1928
+      },
+      "wikidata": "Q18167373",
+      "wikipedia": {
+        "en": "1928 Portuguese presidential election",
+        "pt": "Eleições presidenciais portuguesas de 1928"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1934-portuguese-legislative-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1934 Portuguese legislative election",
+      "weight": 0,
+      "when": {
+        "date": "1934-12-16",
+        "end": 1934,
+        "start": 1934
+      },
+      "wikidata": "Q7232754",
+      "wikipedia": {
+        "en": "1934 Portuguese legislative election",
+        "pt": "Eleições legislativas portuguesas de 1934"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1935-portuguese-presidential-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1935 Portuguese presidential election",
+      "weight": 0,
+      "when": {
+        "date": "1935-02-17",
+        "end": 1935,
+        "start": 1935
+      },
+      "wikidata": "Q18166737",
+      "wikipedia": {
+        "en": "1935 Portuguese presidential election",
+        "pt": "Eleições presidenciais portuguesas de 1935"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1938-portuguese-legislative-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1938 Portuguese legislative election",
+      "weight": 0,
+      "when": {
+        "date": "1938-10-30",
+        "end": 1938,
+        "start": 1938
+      },
+      "wikidata": "Q7232755",
+      "wikipedia": {
+        "en": "1938 Portuguese legislative election",
+        "pt": "Eleições legislativas portuguesas de 1938"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1942-portuguese-legislative-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1942 Portuguese legislative election",
+      "weight": 0,
+      "when": {
+        "date": "1942-11-01",
+        "end": 1942,
+        "start": 1942
+      },
+      "wikidata": "Q7232757",
+      "wikipedia": {
+        "en": "1942 Portuguese legislative election",
+        "pt": "Eleições legislativas portuguesas de 1942"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1942-portuguese-presidential-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1942 Portuguese presidential election",
+      "weight": 0,
+      "when": {
+        "date": "1942-02-08",
+        "end": 1942,
+        "start": 1942
+      },
+      "wikidata": "Q18166741",
+      "wikipedia": {
+        "en": "1942 Portuguese presidential election",
+        "pt": "Eleições presidenciais portuguesas de 1942"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1945-portuguese-legislative-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1945 Portuguese legislative election",
+      "weight": 0,
+      "when": {
+        "date": "1945-11-18",
+        "end": 1945,
+        "start": 1945
+      },
+      "wikidata": "Q7232758",
+      "wikipedia": {
+        "en": "1945 Portuguese legislative election",
+        "pt": "Eleições legislativas portuguesas de 1945"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1949-portuguese-legislative-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1949 Portuguese legislative election",
+      "weight": 0,
+      "when": {
+        "date": "1949-11-13",
+        "end": 1949,
+        "start": 1949
+      },
+      "wikidata": "Q7232761",
+      "wikipedia": {
+        "en": "1949 Portuguese legislative election",
+        "pt": "Eleições legislativas portuguesas de 1949"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1949-portuguese-presidential-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1949 Portuguese presidential election",
+      "weight": 0,
+      "when": {
+        "date": "1949-02-13",
+        "end": 1949,
+        "start": 1949
+      },
+      "wikidata": "Q3277291",
+      "wikipedia": {
+        "en": "1949 Portuguese presidential election",
+        "pt": "Eleições presidenciais portuguesas de 1949"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1951-portuguese-presidential-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1951 Portuguese presidential election",
+      "weight": 0,
+      "when": {
+        "date": "1951-07-22",
+        "end": 1951,
+        "start": 1951
+      },
+      "wikidata": "Q18166749",
+      "wikipedia": {
+        "en": "1951 Portuguese presidential election",
+        "pt": "Eleições presidenciais portuguesas de 1951"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
       "id": "1952-guinean-territorial-assembly-election",
       "place": null,
       "region": "africa",
@@ -6462,6 +6748,28 @@
     {
       "actors": [],
       "aliases": [],
+      "id": "1953-portuguese-legislative-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1953 Portuguese legislative election",
+      "weight": 0,
+      "when": {
+        "date": "1953-11-08",
+        "end": 1953,
+        "start": 1953
+      },
+      "wikidata": "Q7232759",
+      "wikipedia": {
+        "en": "1953 Portuguese legislative election",
+        "pt": "Eleições legislativas portuguesas de 1953"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
       "id": "1957-guinean-territorial-assembly-election",
       "place": null,
       "region": "africa",
@@ -6478,6 +6786,136 @@
       "wikidata": "Q1285560",
       "wikipedia": {
         "en": "1957 Guinean Territorial Assembly election"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1957-portuguese-legislative-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1957 Portuguese legislative election",
+      "weight": 0,
+      "when": {
+        "date": "1957-11-03",
+        "end": 1957,
+        "start": 1957
+      },
+      "wikidata": "Q7232763",
+      "wikipedia": {
+        "en": "1957 Portuguese legislative election",
+        "pt": "Eleições legislativas portuguesas de 1957"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1958-portuguese-presidential-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1958 Portuguese presidential election",
+      "weight": 0,
+      "when": {
+        "date": "1958-06-08",
+        "end": 1958,
+        "start": 1958
+      },
+      "wikidata": "Q3741753",
+      "wikipedia": {
+        "en": "1958 Portuguese presidential election",
+        "pt": "Eleições presidenciais portuguesas de 1958"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1961-guinean-presidential-election",
+      "place": null,
+      "region": "africa",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1961 Guinean presidential election",
+      "weight": 0,
+      "when": {
+        "date": "1961-01-15",
+        "end": 1961,
+        "start": 1961
+      },
+      "wikidata": "Q2114993",
+      "wikipedia": {
+        "en": "1961 Guinean presidential election"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1961-portuguese-legislative-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1961 Portuguese legislative election",
+      "weight": 0,
+      "when": {
+        "date": "1961-11-12",
+        "end": 1961,
+        "start": 1961
+      },
+      "wikidata": "Q7232766",
+      "wikipedia": {
+        "en": "1961 Portuguese legislative election",
+        "pt": "Eleições legislativas portuguesas de 1961"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1963-guinean-legislative-election",
+      "place": null,
+      "region": "africa",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1963 Guinean legislative election",
+      "weight": 0,
+      "when": {
+        "date": "1963-09-28",
+        "end": 1963,
+        "start": 1963
+      },
+      "wikidata": "Q5616525",
+      "wikipedia": {
+        "en": "1963 Guinean parliamentary election"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1965-portuguese-presidential-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1965 Portuguese presidential election",
+      "weight": 0,
+      "when": {
+        "date": "1965-07-25",
+        "end": 1965,
+        "start": 1965
+      },
+      "wikidata": "Q16153770",
+      "wikipedia": {
+        "en": "1965 Portuguese presidential election",
+        "pt": "Eleições presidenciais portuguesas de 1965"
       }
     },
     {
@@ -6748,6 +7186,28 @@
         "date": "1943-08-17",
         "end": 1943,
         "start": 1943
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "batepa-massacre",
+      "place": null,
+      "region": "africa",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Batepá massacre",
+      "weight": 0,
+      "when": {
+        "date": "1953-02-03",
+        "end": 1953,
+        "start": 1953
+      },
+      "wikidata": "Q1851212",
+      "wikipedia": {
+        "en": "Batepá massacre",
+        "pt": "Massacre de Batepá"
       }
     },
     {
@@ -7868,6 +8328,27 @@
     {
       "actors": [],
       "aliases": [],
+      "id": "guinean-constitutional-referendum-1958",
+      "place": null,
+      "region": "africa",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Guinean constitutional referendum, 1958",
+      "weight": 0,
+      "when": {
+        "date": "1958-09-28",
+        "end": 1958,
+        "start": 1958
+      },
+      "wikidata": "Q5616514",
+      "wikipedia": {
+        "en": "1958 Guinean constitutional referendum"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
       "id": "iberian-blackout-2025",
       "place": "lisbon",
       "region": "europe",
@@ -8754,6 +9235,28 @@
     {
       "actors": [],
       "aliases": [],
+      "id": "portuguese-constitutional-referendum-1933",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Portuguese constitutional referendum, 1933",
+      "weight": 0,
+      "when": {
+        "date": "1933-03-19",
+        "end": 1933,
+        "start": 1933
+      },
+      "wikidata": "Q7232706",
+      "wikipedia": {
+        "en": "1933 Portuguese constitutional referendum",
+        "pt": "Referendo constitucional em Portugal (1933)"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
       "id": "portuguese-language-orthographic-agreement-of-1945",
       "place": null,
       "region": "americas",
@@ -8793,6 +9296,24 @@
         "en": "Portuguese-Language Orthographic Agreement of 1990",
         "pt": "Acordo Ortográfico de 1990"
       }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "q11077889",
+      "place": "macau",
+      "region": "asia",
+      "regionMethod": "nearest",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Q11077889",
+      "weight": 0,
+      "when": {
+        "date": "1922-05-28",
+        "end": 1922,
+        "start": 1922
+      },
+      "wikidata": "Q11077889"
     },
     {
       "actors": [],

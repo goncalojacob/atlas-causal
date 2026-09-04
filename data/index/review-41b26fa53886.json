@@ -6037,7 +6037,7 @@
     }
   ],
   "schema": 1,
-  "total": 612,
+  "total": 636,
   "warnings": [
     {
       "id": "1890-portuguese-legislative-election",
@@ -6178,13 +6178,133 @@
       "rule": "degree-zero"
     },
     {
+      "id": "1925-portuguese-legislative-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1925-portuguese-presidential-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1926-horta-earthquake",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1928-portuguese-presidential-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1934-portuguese-legislative-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1935-portuguese-presidential-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1938-portuguese-legislative-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1942-portuguese-legislative-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1942-portuguese-presidential-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1945-portuguese-legislative-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1949-portuguese-legislative-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1949-portuguese-presidential-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1951-portuguese-presidential-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
       "id": "1952-guinean-territorial-assembly-election",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"
     },
     {
+      "id": "1953-portuguese-legislative-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
       "id": "1957-guinean-territorial-assembly-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1957-portuguese-legislative-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1958-portuguese-presidential-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1961-guinean-presidential-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1961-portuguese-legislative-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1963-guinean-legislative-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1965-portuguese-presidential-election",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"
@@ -6220,7 +6340,19 @@
       "rule": "degree-zero"
     },
     {
+      "id": "batepa-massacre",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
       "id": "geneva-act-of-the-lisbon-agreement-on-appellations-of-origin-and-geographical-indications",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "guinean-constitutional-referendum-1958",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"
@@ -6256,6 +6388,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "portuguese-constitutional-referendum-1933",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
       "id": "portuguese-language-orthographic-agreement-of-1945",
       "kind": "event",
       "message": "event has no edges",
@@ -6263,6 +6401,12 @@
     },
     {
       "id": "portuguese-language-orthographic-agreement-of-1990",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "q11077889",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"
