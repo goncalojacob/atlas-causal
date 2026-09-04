@@ -450,6 +450,31 @@ test('--import enriches a record that already carries the item, and writes nothi
   assert.deepEqual(await readdir(path.join(dir, 'events')), ['the-rising.json']);
 });
 
+test('--import enriches a record whose item the class table cannot type', async () => {
+  // Q9000004's class is in no table, so an item of that class can never be
+  // turned into a record. It can still be an identifier somebody wrote by
+  // hand, and then the record says what kind of thing it is.
+  const { dir, cacheDir } = await scratch({ items: ['Q9000004'] });
+  const before = {
+    schema: 1, id: 'the-institute', kind: 'actor', status: 'active', supersededBy: null, aliases: [],
+    authors: [{ name: 'A Person', github: null }], license: 'CC-BY-SA-4.0', created: '2026-01-01',
+    revised: null, wikidata: 'Q9000004', sources: [{ source: 's', locator: null }],
+    actorType: 'institution', names: ['The Institute'], summary: 'A person wrote this.',
+    when: { start: 1974, end: null }, where: null,
+  };
+  await writeFile(path.join(dir, 'actors', 'the-institute.json'), JSON.stringify(before, null, 2), 'utf8');
+
+  const { fetcher } = await fixtureFetcher();
+  const { report } = await runImportMode(dir, { fetcher, today: '2026-09-04', cacheDir, deriveRegion });
+  assert.deepEqual(report.created, []);
+  assert.deepEqual(report.refused, [], 'the class table is not asked about an item a record already carries');
+  assert.equal(report.enriched.length, 1);
+  assert.equal(report.enriched[0].id, 'the-institute');
+  const after = await readJson(path.join(dir, 'actors', 'the-institute.json'));
+  assert.equal(after.wikidata, 'Q9000004');
+  assert.deepEqual(after.names, before.names);
+});
+
 test('--reconcile writes the certain match only, and lists the rest', async () => {
   const { dir, cacheDir } = await scratch();
   const record = {

@@ -761,6 +761,10 @@ export async function fetchLeads(fetcher, read, { cacheDir, today, force = false
 
 // --- the modes --------------------------------------------------------------
 
+// Places before actors before events, so an event can point at a place the
+// same batch created rather than being refused for a record about to exist.
+export const KINDS = Object.freeze(['place', 'actor', 'event']);
+
 // Everything the run did, in the shape the report prints and the tests read.
 function emptyReport() {
   return { created: [], enriched: [], refused: [], unclassified: new Map(), ambiguous: [], leads: [], calls: 0, batch: [], remaining: 0 };
@@ -812,6 +816,17 @@ export async function runImportMode(dataDir, { fetcher, today, batchSize = BATCH
       continue;
     }
     const read = readEntity(entity);
+    // A record here already carries this item, so somebody has already decided
+    // what kind of thing it is and the class table has nothing to add: an item
+    // is classified to type a record that does not exist yet, not to be told
+    // what an existing one is. Without this an identifier written by hand —
+    // the ones M20 decided by judgment — could never be enriched, because the
+    // reason it was not matched mechanically is usually the class.
+    const known = KINDS.find((kind) => byItem.has(`${kind}:${qid}`));
+    if (known) {
+      work.push({ qid, read, classified: { kind: known } });
+      continue;
+    }
     const classified = classify(read, seeds.classes);
     if (!classified.kind) {
       for (const cls of read.classes) {
@@ -824,8 +839,7 @@ export async function runImportMode(dataDir, { fetcher, today, batchSize = BATCH
     }
     work.push({ qid, read, classified });
   }
-  const ORDER = { place: 0, actor: 1, event: 2 };
-  work.sort((a, b) => ORDER[a.classified.kind] - ORDER[b.classified.kind]);
+  work.sort((a, b) => KINDS.indexOf(a.classified.kind) - KINDS.indexOf(b.classified.kind));
 
   for (const { qid, read, classified } of work) {
     const existing = byItem.get(`${classified.kind}:${qid}`);
