@@ -8,6 +8,9 @@
 // edits what is wrong and signs it. The queue is that list, and the project
 // is done with the exception when the queue is empty.
 
+import { citedSources } from '../validate/rules.js';
+import { citationsOf, unverified } from './citations.js';
+
 export const DRAFT_AUTHOR = 'Claude (assistant draft, unreviewed)';
 
 // The order the queue is grouped in: the things an argument rests on first,
@@ -26,11 +29,16 @@ export function isDraft(record) {
 // files: `data/index/review-<hash>.json` carries one of these per draft.
 // Exactly the fields the list and its filters read — everything else waits
 // until a record is opened, and is then fetched whole.
-export const DIGEST_KEYS = Object.freeze(['kind', 'id', 'status', 'authors', 'review', 'title', 'names', 'from', 'to', 'type', 'isbn', 'doi']);
+// `cites` is the one key here that is not copied off the record: it is the
+// ids of the sources the record rests on, written out because a digest
+// carries no prose and so has no dispute block to read them out of.
+export const DIGEST_KEYS = Object.freeze(['kind', 'id', 'status', 'authors', 'review', 'title', 'names', 'from', 'to', 'type', 'isbn', 'doi', 'cites']);
 
 export function digestOf(record) {
   const digest = {};
   for (const key of DIGEST_KEYS) if (Object.hasOwn(record ?? {}, key)) digest[key] = record[key];
+  const cites = citedSources(record);
+  if (cites.length) digest.cites = cites;
   return digest;
 }
 
@@ -88,6 +96,10 @@ export function buildQueue(records, { warnings = [] } = {}) {
       status: record.status,
       flags: flagsOf(record, byId),
       note: record.review?.note ?? null,
+      // Not a flag: a flag is a thing to look at, and this is a count of
+      // what is left to do on a record already open.
+      unverified: unverified(record).length,
+      citations: citationsOf(record).length,
     }))
     .sort((a, b) => kindRank(a.kind) - kindRank(b.kind) || (a.id < b.id ? -1 : a.id > b.id ? 1 : 0));
 }

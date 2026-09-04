@@ -15,6 +15,8 @@ import { html } from '../util/dom.js';
 import {
   FIELDS, CITATION_LISTS, ACTOR_LISTS, STEP_LISTS, valuesFromRecord, applyValues, validateBundle,
 } from '../contribute/bundle.js';
+import { identifiers, citationText } from '../citation.js';
+import { citationRows, setVerified, clearVerified } from './citations.js';
 
 // The error at /where/lon belongs to the longitude input, the one at
 // /sources/0/source to the citation list: walk up the path until a field
@@ -106,11 +108,17 @@ export function identityBlock(record) {
 
 // record: the file as it is on disk. onChange is called after every edit,
 // with the validation result, so the page can enable or disable Save.
-export function createEditor({ record, topology, schemas, onChange = () => {} }) {
+export function createEditor({
+  record, topology, schemas, onChange = () => {}, reviewer = () => ({ name: '' }), today = null,
+}) {
   const kind = record.kind;
   const values = valuesFromRecord(kind, record);
   const fields = new Map();
   const optionsFor = choicesFrom(topology);
+  // The record the save starts from. Only its `review` block ever differs
+  // from what was opened: the body is always what is in the inputs, so a tick
+  // and an edit cannot drift apart.
+  let opened = record;
 
   const root = html('form', { class: `editor entry ${kind}`, autocomplete: 'off' });
   root.addEventListener('submit', (event) => event.preventDefault());
@@ -257,10 +265,75 @@ export function createEditor({ record, topology, schemas, onChange = () => {} })
     }));
   }
 
+  // Whether each source says what this record says it says. One line per
+  // source the record rests on, with a way to the work itself, and a box that
+  // records who checked it and when. A flag, never a gate: nothing here
+  // disables Save or Sign, and a citation nobody has opened is counted rather
+  // than forbidden.
+  const verifyBox = CITATION_LISTS[kind].length ? html('div', { class: 'field verify' }) : null;
+  const verifyRows = verifyBox ? html('ul', { class: 'verify-rows' }) : null;
+  const verifyNote = verifyBox ? html('p', { class: 'hint' }) : null;
+  if (verifyBox) {
+    verifyBox.appendChild(html('span', { class: 'citations-label' }, 'Checked against the source'));
+    verifyBox.append(verifyRows, verifyNote);
+    root.appendChild(verifyBox);
+  }
+
+  function sourceOf(id) {
+    return (topology.sources ?? []).find((s) => s.id === id) ?? null;
+  }
+
+  function paintVerify() {
+    if (!verifyBox) return;
+    const rows = citationRows(current());
+    verifyRows.textContent = '';
+    verifyBox.hidden = rows.length === 0;
+    const open = rows.filter((row) => row.verified === null).length;
+    verifyNote.textContent = open === 0
+      ? 'Every source this record names has been opened and checked.'
+      : `${open} of ${rows.length} not opened yet. Sign warns about them; it does not stop you.`;
+    for (const row of rows) {
+      const item = html('li', { class: `verify-row${row.verified ? ' done' : ''}` });
+      const box = html('input', { type: 'checkbox', id: uid(`verify-${row.source}`) });
+      box.checked = Boolean(row.verified);
+      // A tick has to say who ticked it: without a name there is nothing to
+      // record, so the box waits for the reviewer's name to be typed.
+      box.disabled = String(reviewer()?.name ?? '').trim() === '';
+      box.addEventListener('change', () => {
+        const now = current();
+        opened = withReview(box.checked
+          ? setVerified(now, row.source, reviewer(), { today })
+          : clearVerified(now, row.source));
+        refresh();
+      });
+      const source = sourceOf(row.source);
+      const label = html('label', { for: box.id }, source ? citationText(source) : row.source);
+      item.append(box, label);
+      for (const { label: text, href } of source ? identifiers(source) : []) {
+        item.appendChild(href
+          ? html('a', { href, rel: 'noopener', target: '_blank', class: 'identifier' }, text)
+          : html('span', { class: 'identifier muted' }, text));
+      }
+      if (row.verified) {
+        item.appendChild(html('span', { class: 'muted' }, `${row.verified.by}, ${row.verified.on}`));
+      }
+      verifyRows.appendChild(item);
+    }
+  }
+
   // The record as the file would be after this edit: the envelope from disk,
   // the body from the inputs.
   function current() {
-    return applyValues(kind, record, values);
+    return applyValues(kind, opened, values);
+  }
+
+  // A tick is a statement about the review, not about the record's body, so
+  // it changes the review block and nothing else.
+  function withReview(next) {
+    const out = { ...record };
+    if (Object.hasOwn(next, 'review')) out.review = next.review;
+    else delete out.review;
+    return out;
   }
 
   // Validation is the same validateBundle() the contribution form runs, so
@@ -291,6 +364,7 @@ export function createEditor({ record, topology, schemas, onChange = () => {} })
         recordErrors.hidden = false;
       }
     }
+    paintVerify();
     onChange({ record: edited, result });
     return { record: edited, result };
   }
@@ -305,6 +379,7 @@ export function createEditor({ record, topology, schemas, onChange = () => {} })
     values,
     current,
     refresh,
+    paintVerify,
     result: first.result,
     focus() {
       root.querySelector('input, textarea, select')?.focus();

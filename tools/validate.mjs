@@ -16,6 +16,7 @@ import { createRegionDeriver, NEAREST_TOLERANCE } from '../src/util/geo.js';
 import { readSchemaFiles, readRecords, readRegions, readRegionPolygons, readPresenceShards, readImportMaps, KIND_DIRS } from './lib/read.mjs';
 import { buildIndex, readIndex, compareIndex } from './build-index.mjs';
 import { countDrafts } from '../src/review/queue.js';
+import { countCitations } from '../src/review/citations.js';
 
 export const IMPORT_MAP_SCHEMA = 'v1/import-map.json';
 
@@ -186,11 +187,18 @@ export async function runValidation(dataDir = DEFAULT_DATA, { index = false } = 
   return {
     errors,
     warnings,
-    // How much of the assistant-draft exception in CLAUDE.md is still
-    // standing. It is not an error — the dataset is allowed to be there —
-    // but it is the number the review dashboard exists to bring to zero,
-    // so the validator that runs on every commit is where it is counted.
-    counts: { records: records.length, regions: regions.length, unreviewed: countDrafts(records) },
+    // How much of the assistant-draft exception is still standing, and how
+    // much of the dataset nobody has checked against the sources it names.
+    // Neither is an error: the first is allowed to be there and the second is
+    // work in progress, and both are numbers the review dashboard exists to
+    // bring to zero, so the validator that runs on every commit is where they
+    // are counted.
+    counts: {
+      records: records.length,
+      regions: regions.length,
+      unreviewed: countDrafts(records),
+      ...countCitations(records),
+    },
   };
 }
 
@@ -228,6 +236,7 @@ async function main(argv) {
   if (!quiet) for (const w of warnings) console.log(formatItem('warning', w));
   console.log(`${counts.records} records, ${counts.regions} regions: ${errors.length} error(s), ${warnings.length} warning(s)`);
   if (counts.unreviewed) console.log(`${counts.unreviewed} record(s) still carry the assistant-draft marker: open review.html`);
+  console.log(`${counts.unverified} of ${counts.citations} citation(s) not yet checked against the source`);
   return errors.length ? 1 : 0;
 }
 

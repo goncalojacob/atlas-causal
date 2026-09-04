@@ -16,6 +16,7 @@ import {
 } from './queue.js';
 import { signRecord, retractRecord, retractionPlan, reviewerProblems, normalizeReviewer, bundleOf } from './sign.js';
 import { saveBundle } from './save.js';
+import { unverified } from './citations.js';
 import { createEditor } from './editor.js';
 
 const REVIEWER_KEY = 'atlas.reviewer';
@@ -135,13 +136,17 @@ function render({ topology, review, schemas }) {
   const reviewerError = html('p', { class: 'field-error', hidden: 'hidden' });
   signBox.append(nameField, handleField, reviewerError);
 
+  // Sign warns about citations nobody has opened and never stops the
+  // signature: a reviewer who has read the record and not yet got hold of the
+  // book is further along than nobody having read it at all.
+  const citationWarning = html('p', { class: 'notice citations', hidden: 'hidden' });
   const saveButton = html('button', { type: 'button', class: 'submit' }, 'Save');
   const signButton = html('button', { type: 'button', class: 'submit' }, 'Sign');
   const retractButton = html('button', { type: 'button', class: 'link' }, 'Retract');
   const actions = html('div', { class: 'record-actions' });
   actions.append(saveButton, signButton, retractButton);
 
-  main.append(headEl, editorMount, signBox, actions, noteEl, bundleBox);
+  main.append(headEl, editorMount, signBox, citationWarning, actions, noteEl, bundleBox);
   layout.append(side, main);
   mount.appendChild(layout);
 
@@ -157,7 +162,18 @@ function render({ topology, review, schemas }) {
     reviewerError.textContent = problems.join('; ');
     reviewerError.hidden = problems.length === 0;
     signButton.disabled = !open || problems.length > 0 || !editorIsValid();
+    // The boxes need a name to write into the record, so they come alive as
+    // soon as there is one.
+    editor?.paintVerify();
+    paintCitationWarning();
     return problems.length === 0;
+  }
+
+  function paintCitationWarning() {
+    const open = editor ? unverified(editor.current()) : [];
+    citationWarning.hidden = open.length === 0;
+    const one = open.length === 1;
+    citationWarning.textContent = open.length === 0 ? '' : `${open.length} citation${one ? '' : 's'} on this record ${one ? 'has' : 'have'} not been checked against the source: ${open.join(', ')}. Signing is allowed; the count stays in the validator.`;
   }
 
   function editorIsValid() {
@@ -224,6 +240,7 @@ function render({ topology, review, schemas }) {
         button.appendChild(html('span', { class: 'queue-label' }, item.label));
         button.appendChild(html('span', { class: 'queue-id' }, item.id));
         for (const flag of item.flags) button.appendChild(html('span', { class: 'flag' }, flag));
+        if (item.unverified) button.appendChild(html('span', { class: 'unverified' }, `${item.unverified} citation${item.unverified === 1 ? '' : 's'} unverified`));
         button.addEventListener('click', () => openRecord(item));
         li.appendChild(button);
         ul.appendChild(li);
@@ -259,6 +276,8 @@ function render({ topology, review, schemas }) {
       record,
       topology,
       schemas,
+      today: today(),
+      reviewer: () => normalizeReviewer({ name: nameInput.value, github: handleInput.value }),
       onChange: (state) => {
         result = state.result;
         saveButton.disabled = !result.ok;

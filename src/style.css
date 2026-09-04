@@ -551,6 +551,17 @@ svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align:
 .contrib input:focus, .contrib textarea:focus, .contrib select:focus { outline: 2px solid var(--cobalt-soft); background: var(--paper); }
 .contrib .field.has-error input, .contrib .field.has-error textarea, .contrib .field.has-error select { border-color: var(--madder); }
 .contrib .hint { color: var(--ink-soft); font-size: 0.8rem; margin: 0.15rem 0 0; }
+/* What the import claimed, and what a person has checked against the book.
+   Neither is editable prose: one is read-only and the other is a tick. */
+.contrib .identity-rows, .contrib .verify-rows { list-style: none; padding: 0; margin: 0.3rem 0 0; }
+.contrib .identity-rows li, .contrib .verify-row { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.4rem; padding: 0.25rem 0; border-top: 1px solid var(--line); }
+.contrib .identity-rows .lang { text-transform: uppercase; letter-spacing: 0.04em; font-size: 0.75rem; color: var(--ink-soft); }
+.contrib .verify-row label { display: inline; text-transform: none; letter-spacing: 0; font-size: 0.9rem; color: var(--ink); }
+.contrib .verify-row.done label { color: var(--ink-soft); }
+.contrib .verify-row .identifier { font-size: 0.8rem; }
+.contrib input[readonly] { background: var(--ground); color: var(--ink-soft); }
+.queue-item .unverified { font-size: 0.75rem; color: var(--ink-soft); }
+.notice.citations { border-left: 3px solid var(--madder); background: var(--madder-faint); padding: 0.4rem 0.6rem; margin: 0.5rem 0; font-size: 0.85rem; }
 .contrib .field-error { color: var(--madder); font-size: 0.85rem; margin: 0.2rem 0 0; }
 .contrib .entry-errors { list-style: none; padding: 0.4rem 0.6rem; margin: 0.5rem 0 0; color: var(--madder); background: var(--madder-faint); }
 
