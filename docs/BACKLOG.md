@@ -60,6 +60,25 @@ the assistant. Scheduled work lives in `docs/*-brief.md`; the position in
   and the same citation-verification treatment as the summary. Owner's
   request, 4 September 2026.
 
+## Look
+
+- **Colour on the map, and a more styled interface.** Owner's request,
+  4 September 2026. Today the territories are cobalt outlines on white
+  (a decision taken in M5 to avoid "a rainbow of forty hues") and the
+  whole interface is blue lines. The owner wants each country or
+  territory to have its own colour and the interface to carry more
+  visual identity. What a design pass has to solve rather than decorate:
+  a limited palette of tints assigned so that neighbouring territories
+  differ and a territory keeps its colour as the years pass (a stable
+  map-colouring, not per-year random), still inside the azulejo tokens or
+  an extension of them; the selected actor and the walked chain must stay
+  the loudest things on screen (cobalt and madder), so territory colour
+  has to be quieter than both; dependencies tied to their owner's hue;
+  the graph view's five edge types and the timeline lanes given the same
+  treatment; typography and spacing revisited with the same care. A
+  visual-identity brief, reviewed before it runs; every colour stays a
+  token in `style.css`.
+
 ## Publishing
 
 - Public visibility and GitHub Pages (needs the repository public on the
