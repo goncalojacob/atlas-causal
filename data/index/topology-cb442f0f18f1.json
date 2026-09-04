@@ -8451,6 +8451,155 @@
     {
       "actors": [],
       "aliases": [],
+      "id": "2012-azorean-regional-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "2012 Azorean regional election",
+      "weight": 0,
+      "when": {
+        "date": "2012-10-14",
+        "end": 2012,
+        "start": 2012
+      },
+      "wikidata": "Q967262",
+      "wikipedia": {
+        "en": "2012 Azorean regional election",
+        "pt": "Eleições legislativas regionais nos Açores em 2012"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "2013-20-olive-quick-decline-syndrome-outbreak",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "2013–20 olive quick decline syndrome outbreak",
+      "weight": 0,
+      "when": {
+        "end": null,
+        "start": 2013
+      },
+      "wikidata": "Q90536205"
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "2013-lisbon-local-elections",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "2013 Lisbon local elections",
+      "weight": 0,
+      "when": {
+        "date": "2013-09-29",
+        "end": 2013,
+        "start": 2013
+      },
+      "wikidata": "Q25443201",
+      "wikipedia": {
+        "en": "2013 Lisbon local election",
+        "pt": "Eleições autárquicas de 2013 em Lisboa"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "2013-porto-local-election",
+      "place": "porto",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "2013 Porto local election",
+      "weight": 0,
+      "when": {
+        "date": "2013-09-29",
+        "end": 2013,
+        "start": 2013
+      },
+      "wikidata": "Q25443212",
+      "wikipedia": {
+        "en": "2013 Porto local election",
+        "pt": "Eleições autárquicas de 2013 no Porto"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "2013-portuguese-local-elections",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "2013 Portuguese local elections",
+      "weight": 0,
+      "when": {
+        "date": "2013-09-29",
+        "end": 2013,
+        "start": 2013
+      },
+      "wikidata": "Q10271413",
+      "wikipedia": {
+        "en": "2013 Portuguese local elections",
+        "pt": "Eleições autárquicas portuguesas de 2013"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "2014-european-parliament-election-in-portugal",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "2014 European Parliament election in Portugal",
+      "weight": 0,
+      "when": {
+        "date": "2014-05-25",
+        "end": 2014,
+        "start": 2014
+      },
+      "wikidata": "Q15411498",
+      "wikipedia": {
+        "en": "2014 European Parliament election in Portugal",
+        "pt": "Eleições europeias de 2014 (Portugal)"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "2014-legionella-outbreak-in-portugal",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "2014 Legionella outbreak in Portugal",
+      "weight": 0,
+      "when": {
+        "date": "2014-11-07",
+        "end": 2014,
+        "start": 2014
+      },
+      "wikidata": "Q18529916",
+      "wikipedia": {
+        "en": "2014 Portugal legionellosis outbreak",
+        "pt": "Surto de Legionella em Portugal de 2014"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
       "id": "2014-portuguese-socialist-party-prime-ministerial-primary",
       "place": null,
       "region": "europe",
@@ -8468,6 +8617,315 @@
       "wikipedia": {
         "en": "2014 Portuguese Socialist Party prime ministerial primary",
         "pt": "Eleições primárias do Partido Socialista em 2014"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "2015-madeiran-regional-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "2015 Madeiran regional election",
+      "weight": 0,
+      "when": {
+        "date": "2015-03-29",
+        "end": 2015,
+        "start": 2015
+      },
+      "wikidata": "Q17510556",
+      "wikipedia": {
+        "en": "2015 Madeiran regional election",
+        "pt": "Eleições legislativas regionais na Madeira em 2015"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "2015-portuguese-legislative-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "2015 Portuguese legislative election",
+      "weight": 0,
+      "when": {
+        "date": "2015-10-04",
+        "end": 2015,
+        "start": 2015
+      },
+      "wikidata": "Q17016934",
+      "wikipedia": {
+        "en": "2015 Portuguese legislative election",
+        "pt": "Eleições legislativas portuguesas de 2015"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "2016-azorean-regional-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "2016 Azorean regional election",
+      "weight": 0,
+      "when": {
+        "date": "2016-10-16",
+        "end": 2016,
+        "start": 2016
+      },
+      "wikidata": "Q20311823",
+      "wikipedia": {
+        "en": "2016 Azorean regional election",
+        "pt": "Eleições legislativas regionais nos Açores em 2016"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "2016-portugal-wildfires",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "2016 Portugal wildfires",
+      "weight": 0,
+      "when": {
+        "date": "2016-08",
+        "end": 2016,
+        "start": 2016
+      },
+      "wikidata": "Q26252770",
+      "wikipedia": {
+        "en": "2016 Portugal wildfires",
+        "pt": "Incêndios na ilha da Madeira em agosto de 2016"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "2016-portuguese-presidential-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "2016 Portuguese presidential election",
+      "weight": 0,
+      "when": {
+        "date": "2016-01-24",
+        "end": 2016,
+        "start": 2016
+      },
+      "wikidata": "Q17514691",
+      "wikipedia": {
+        "en": "2016 Portuguese presidential election",
+        "pt": "Eleições presidenciais portuguesas de 2016"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "2016-portuguese-social-democratic-party-leadership-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "2016 Portuguese Social Democratic Party leadership election",
+      "weight": 0,
+      "when": {
+        "date": "2016-03-05",
+        "end": 2016,
+        "start": 2016
+      },
+      "wikidata": "Q110079930",
+      "wikipedia": {
+        "en": "2016 Portuguese Social Democratic Party leadership election",
+        "pt": "Eleições diretas do Partido Social Democrata (Portugal) de 2016"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "2017-lisbon-local-elections",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "2017 Lisbon local elections",
+      "weight": 0,
+      "when": {
+        "date": "2017-10-01",
+        "end": 2017,
+        "start": 2017
+      },
+      "wikidata": "Q48871688",
+      "wikipedia": {
+        "en": "2017 Lisbon local election",
+        "pt": "Eleições autárquicas de 2017 em Lisboa"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "2017-pedrogao-grande-wildfire",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "2017 Pedrógão Grande Wildfire",
+      "weight": 0,
+      "when": {
+        "date": "2017-06-17",
+        "end": 2017,
+        "endDate": "2017-06-24",
+        "start": 2017
+      },
+      "wikidata": "Q30327722",
+      "wikipedia": {
+        "en": "June 2017 Portugal wildfires",
+        "pt": "Incêndio florestal de Pedrógão Grande em 2017"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "2017-porto-local-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "2017 Porto local election",
+      "weight": 0,
+      "when": {
+        "date": "2017-10-01",
+        "end": 2017,
+        "start": 2017
+      },
+      "wikidata": "Q48871696",
+      "wikipedia": {
+        "en": "2017 Porto local election",
+        "pt": "Eleições autárquicas de 2017 no Porto"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "2017-portuguese-local-elections",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "2017 Portuguese local elections",
+      "weight": 0,
+      "when": {
+        "date": "2017-10-01",
+        "end": 2017,
+        "start": 2017
+      },
+      "wikidata": "Q27922078",
+      "wikipedia": {
+        "en": "2017 Portuguese local elections",
+        "pt": "Eleições autárquicas portuguesas de 2017"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "2018-portuguese-social-democratic-party-leadership-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "2018 Portuguese Social Democratic Party leadership election",
+      "weight": 0,
+      "when": {
+        "date": "2018-01-13",
+        "end": 2018,
+        "start": 2018
+      },
+      "wikidata": "Q85871536",
+      "wikipedia": {
+        "en": "2018 Portuguese Social Democratic Party leadership election",
+        "pt": "Eleições diretas do Partido Social Democrata (Portugal) de 2018"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "2019-european-parliament-election-in-portugal",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "2019 European Parliament election in Portugal",
+      "weight": 0,
+      "when": {
+        "date": "2019-05-26",
+        "end": 2019,
+        "start": 2019
+      },
+      "wikidata": "Q56192519",
+      "wikipedia": {
+        "en": "2019 European Parliament election in Portugal",
+        "pt": "Eleições europeias de 2019 (Portugal)"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "2019-madeiran-regional-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "2019 Madeiran regional election",
+      "weight": 0,
+      "when": {
+        "date": "2019-09-22",
+        "end": 2019,
+        "start": 2019
+      },
+      "wikidata": "Q30634252",
+      "wikipedia": {
+        "en": "2019 Madeiran regional election",
+        "pt": "Eleições legislativas regionais na Madeira em 2019"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "2019-portuguese-legislative-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "2019 Portuguese legislative election",
+      "weight": 0,
+      "when": {
+        "date": "2019-10-06",
+        "end": 2019,
+        "start": 2019
+      },
+      "wikidata": "Q25041164",
+      "wikipedia": {
+        "en": "2019 Portuguese legislative election",
+        "pt": "Eleições legislativas portuguesas de 2019"
       }
     },
     {
@@ -9601,6 +10059,28 @@
       }
     },
     {
+      "actors": [],
+      "aliases": [],
+      "id": "covid-19-pandemic",
+      "place": null,
+      "region": "asia",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "COVID-19 pandemic",
+      "weight": 0,
+      "when": {
+        "date": "2019-11-15",
+        "end": null,
+        "start": 2019
+      },
+      "wikidata": "Q81068910",
+      "wikipedia": {
+        "en": "COVID-19 pandemic",
+        "pt": "Pandemia de COVID-19"
+      }
+    },
+    {
       "actors": [
         {
           "actor": "marcelo-rebelo-de-sousa",
@@ -10480,6 +10960,29 @@
     {
       "actors": [],
       "aliases": [],
+      "id": "hurricane-leslie",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Hurricane Leslie",
+      "weight": 0,
+      "when": {
+        "date": "2018-09-23",
+        "end": 2018,
+        "endDate": "2018-10-16",
+        "start": 2018
+      },
+      "wikidata": "Q57243792",
+      "wikipedia": {
+        "en": "Hurricane Leslie (2018)",
+        "pt": "Furacão Leslie (2018)"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
       "id": "iberian-blackout-2025",
       "place": "lisbon",
       "region": "europe",
@@ -11094,6 +11597,28 @@
         "date": "1919-01-19",
         "end": 1919,
         "start": 1919
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "monchique-fire",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Monchique Fire",
+      "weight": 0,
+      "when": {
+        "date": "2018-08-03",
+        "end": 2018,
+        "endDate": "2018-08-10",
+        "start": 2018
+      },
+      "wikidata": "Q56351504",
+      "wikipedia": {
+        "pt": "Incêndio de Monchique de 2018"
       }
     },
     {
@@ -12098,6 +12623,27 @@
       "wikidata": "Q1536157",
       "wikipedia": {
         "en": "Telecoms Package"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "tragedia-de-borba",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Tragédia de Borba",
+      "weight": 0,
+      "when": {
+        "date": "2018-11-19",
+        "end": 2018,
+        "start": 2018
+      },
+      "wikidata": "Q61000290",
+      "wikipedia": {
+        "pt": "Tragédia de Borba"
       }
     },
     {

@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "2017-portuguese-local-elections",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q27922078",
+  "sitelinks": 3,
+  "wikipedia": {
+    "en": "2017 Portuguese local elections",
+    "pt": "Eleições autárquicas portuguesas de 2017"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q27922078"
+    }
+  ],
+  "title": "2017 Portuguese local elections",
+  "summary": "Wikidata item Q27922078, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2017,
+    "end": 2017,
+    "date": "2017-10-01"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}

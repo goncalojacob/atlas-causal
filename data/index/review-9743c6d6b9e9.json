@@ -6037,7 +6037,7 @@
     }
   ],
   "schema": 1,
-  "total": 759,
+  "total": 784,
   "warnings": [
     {
       "id": "1890-portuguese-legislative-election",
@@ -6730,7 +6730,133 @@
       "rule": "degree-zero"
     },
     {
+      "id": "2012-azorean-regional-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "2013-20-olive-quick-decline-syndrome-outbreak",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "2013-lisbon-local-elections",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "2013-porto-local-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "2013-portuguese-local-elections",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "2014-european-parliament-election-in-portugal",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "2014-legionella-outbreak-in-portugal",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
       "id": "2014-portuguese-socialist-party-prime-ministerial-primary",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "2015-madeiran-regional-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "2015-portuguese-legislative-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "2016-azorean-regional-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "2016-portugal-wildfires",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "2016-portuguese-presidential-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "2016-portuguese-social-democratic-party-leadership-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "2017-lisbon-local-elections",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "2017-pedrogao-grande-wildfire",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "2017-porto-local-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "2017-portuguese-local-elections",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "2018-portuguese-social-democratic-party-leadership-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "2019-european-parliament-election-in-portugal",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "2019-madeiran-regional-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "2019-portuguese-legislative-election",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"
@@ -6874,6 +7000,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "covid-19-pandemic",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
       "id": "desastre-ambiental-de-almograve",
       "kind": "event",
       "message": "event has no edges",
@@ -6964,6 +7096,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "hurricane-leslie",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
       "id": "iberian-blackout-2025",
       "kind": "event",
       "message": "event has no edges",
@@ -6995,6 +7133,12 @@
     },
     {
       "id": "may-1915-portuguese-presidential-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "monchique-fire",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"
@@ -7145,6 +7289,12 @@
     },
     {
       "id": "telecoms-package",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "tragedia-de-borba",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"

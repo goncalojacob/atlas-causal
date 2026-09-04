@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "hurricane-leslie",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q57243792",
+  "sitelinks": 15,
+  "wikipedia": {
+    "en": "Hurricane Leslie (2018)",
+    "pt": "Furacão Leslie (2018)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q57243792"
+    }
+  ],
+  "title": "Hurricane Leslie",
+  "summary": "Wikidata item Q57243792, imported by tools/import/wikidata.mjs. The item's own description reads \"Category 1 Atlantic hurricane in 2018\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2018,
+    "end": 2018,
+    "date": "2018-09-23",
+    "endDate": "2018-10-16"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}

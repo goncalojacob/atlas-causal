@@ -194,3 +194,31 @@ created event 2011-madeiran-regional-election from Q1389069
 refused Q545449: no place record for its location and no lane reachable from its point; a placeless event must carry a region
 45 Wikipedia lead(s) cached under tools/import/cache/wikipedia
 24 created, 0 enriched, 1 refused, 0 ambiguous
+import: 25 item(s) this batch, 32 left after it, 48 call(s) spent
+created event 2012-azorean-regional-election from Q967262
+created event 2013-portuguese-local-elections from Q10271413
+created event 2013-lisbon-local-elections from Q25443201
+created event 2013-porto-local-election from Q25443212
+created event 2014-european-parliament-election-in-portugal from Q15411498
+created event 2015-madeiran-regional-election from Q17510556
+created event 2015-portuguese-legislative-election from Q17016934
+created event 2016-portuguese-presidential-election from Q17514691
+created event 2016-portuguese-social-democratic-party-leadership-election from Q110079930
+created event 2016-azorean-regional-election from Q20311823
+created event 2017-portuguese-local-elections from Q27922078
+created event 2017-lisbon-local-elections from Q48871688
+created event 2017-porto-local-election from Q48871696
+created event 2018-portuguese-social-democratic-party-leadership-election from Q85871536
+created event 2019-european-parliament-election-in-portugal from Q56192519
+created event 2019-madeiran-regional-election from Q30634252
+created event 2019-portuguese-legislative-election from Q25041164
+created event 2013-20-olive-quick-decline-syndrome-outbreak from Q90536205
+created event 2014-legionella-outbreak-in-portugal from Q18529916
+created event 2016-portugal-wildfires from Q26252770
+created event 2017-pedrogao-grande-wildfire from Q30327722
+created event monchique-fire from Q56351504
+created event hurricane-leslie from Q57243792
+created event tragedia-de-borba from Q61000290
+created event covid-19-pandemic from Q81068910
+46 Wikipedia lead(s) cached under tools/import/cache/wikipedia
+25 created, 0 enriched, 0 refused, 0 ambiguous

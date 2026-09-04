@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "2019-european-parliament-election-in-portugal",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q56192519",
+  "sitelinks": 11,
+  "wikipedia": {
+    "en": "2019 European Parliament election in Portugal",
+    "pt": "Eleições europeias de 2019 (Portugal)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q56192519"
+    }
+  ],
+  "title": "2019 European Parliament election in Portugal",
+  "summary": "Wikidata item Q56192519, imported by tools/import/wikidata.mjs. The item's own description reads \"2019 election of members of the European parliament for Portugal\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2019,
+    "end": 2019,
+    "date": "2019-05-26"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}

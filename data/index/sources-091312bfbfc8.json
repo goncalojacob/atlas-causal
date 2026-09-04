@@ -9530,7 +9530,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 189,
+      "citationCount": 214,
       "citations": [
         {
           "dissent": false,
@@ -10224,9 +10224,135 @@
         },
         {
           "dissent": false,
+          "id": "2012-azorean-regional-election",
+          "kind": "event",
+          "locator": "Q967262"
+        },
+        {
+          "dissent": false,
+          "id": "2013-20-olive-quick-decline-syndrome-outbreak",
+          "kind": "event",
+          "locator": "Q90536205"
+        },
+        {
+          "dissent": false,
+          "id": "2013-lisbon-local-elections",
+          "kind": "event",
+          "locator": "Q25443201"
+        },
+        {
+          "dissent": false,
+          "id": "2013-porto-local-election",
+          "kind": "event",
+          "locator": "Q25443212"
+        },
+        {
+          "dissent": false,
+          "id": "2013-portuguese-local-elections",
+          "kind": "event",
+          "locator": "Q10271413"
+        },
+        {
+          "dissent": false,
+          "id": "2014-european-parliament-election-in-portugal",
+          "kind": "event",
+          "locator": "Q15411498"
+        },
+        {
+          "dissent": false,
+          "id": "2014-legionella-outbreak-in-portugal",
+          "kind": "event",
+          "locator": "Q18529916"
+        },
+        {
+          "dissent": false,
           "id": "2014-portuguese-socialist-party-prime-ministerial-primary",
           "kind": "event",
           "locator": "Q18389393"
+        },
+        {
+          "dissent": false,
+          "id": "2015-madeiran-regional-election",
+          "kind": "event",
+          "locator": "Q17510556"
+        },
+        {
+          "dissent": false,
+          "id": "2015-portuguese-legislative-election",
+          "kind": "event",
+          "locator": "Q17016934"
+        },
+        {
+          "dissent": false,
+          "id": "2016-azorean-regional-election",
+          "kind": "event",
+          "locator": "Q20311823"
+        },
+        {
+          "dissent": false,
+          "id": "2016-portugal-wildfires",
+          "kind": "event",
+          "locator": "Q26252770"
+        },
+        {
+          "dissent": false,
+          "id": "2016-portuguese-presidential-election",
+          "kind": "event",
+          "locator": "Q17514691"
+        },
+        {
+          "dissent": false,
+          "id": "2016-portuguese-social-democratic-party-leadership-election",
+          "kind": "event",
+          "locator": "Q110079930"
+        },
+        {
+          "dissent": false,
+          "id": "2017-lisbon-local-elections",
+          "kind": "event",
+          "locator": "Q48871688"
+        },
+        {
+          "dissent": false,
+          "id": "2017-pedrogao-grande-wildfire",
+          "kind": "event",
+          "locator": "Q30327722"
+        },
+        {
+          "dissent": false,
+          "id": "2017-porto-local-election",
+          "kind": "event",
+          "locator": "Q48871696"
+        },
+        {
+          "dissent": false,
+          "id": "2017-portuguese-local-elections",
+          "kind": "event",
+          "locator": "Q27922078"
+        },
+        {
+          "dissent": false,
+          "id": "2018-portuguese-social-democratic-party-leadership-election",
+          "kind": "event",
+          "locator": "Q85871536"
+        },
+        {
+          "dissent": false,
+          "id": "2019-european-parliament-election-in-portugal",
+          "kind": "event",
+          "locator": "Q56192519"
+        },
+        {
+          "dissent": false,
+          "id": "2019-madeiran-regional-election",
+          "kind": "event",
+          "locator": "Q30634252"
+        },
+        {
+          "dissent": false,
+          "id": "2019-portuguese-legislative-election",
+          "kind": "event",
+          "locator": "Q25041164"
         },
         {
           "dissent": false,
@@ -10368,6 +10494,12 @@
         },
         {
           "dissent": false,
+          "id": "covid-19-pandemic",
+          "kind": "event",
+          "locator": "Q81068910"
+        },
+        {
+          "dissent": false,
           "id": "desastre-ambiental-de-almograve",
           "kind": "event",
           "locator": "Q112726955"
@@ -10458,6 +10590,12 @@
         },
         {
           "dissent": false,
+          "id": "hurricane-leslie",
+          "kind": "event",
+          "locator": "Q57243792"
+        },
+        {
+          "dissent": false,
           "id": "iberian-pact",
           "kind": "event",
           "locator": "Q884821"
@@ -10485,6 +10623,12 @@
           "id": "may-1915-portuguese-presidential-election",
           "kind": "event",
           "locator": "Q97516248"
+        },
+        {
+          "dissent": false,
+          "id": "monchique-fire",
+          "kind": "event",
+          "locator": "Q56351504"
         },
         {
           "dissent": false,
@@ -10629,6 +10773,12 @@
           "id": "telecoms-package",
           "kind": "event",
           "locator": "Q1536157"
+        },
+        {
+          "dissent": false,
+          "id": "tragedia-de-borba",
+          "kind": "event",
+          "locator": "Q61000290"
         },
         {
           "dissent": false,

@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "2017-porto-local-election",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q48871696",
+  "sitelinks": 2,
+  "wikipedia": {
+    "en": "2017 Porto local election",
+    "pt": "Eleições autárquicas de 2017 no Porto"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q48871696"
+    }
+  ],
+  "title": "2017 Porto local election",
+  "summary": "Wikidata item Q48871696, imported by tools/import/wikidata.mjs. The item's own description reads \"Portuguese municipal election\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2017,
+    "end": 2017,
+    "date": "2017-10-01"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}
