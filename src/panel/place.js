@@ -57,6 +57,7 @@ function placeCardHtml(ctx, place, state) {
         ${ctx.lensControl('place', place.id)}
       </p>
       ${variants.length ? `<p class="also-known muted">also: ${variants.map((n) => esc(n)).join(' · ')}</p>` : ''}
+      ${ctx.entryLink('place', place.id)}
       ${ctx.wikipediaHtml(place)}
     </header>
     <section class="summary" data-slot="place-summary"></section>

@@ -1033,3 +1033,118 @@ svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align:
   .review { grid-template-columns: 1fr; }
   .queue { position: static; max-height: 22rem; }
 }
+
+/* The full entry (entry.html). The reading pages' sheet, with the long text
+   set the way the panel's prose is and a table of contents beside nothing:
+   a column, because an entry is read top to bottom and a sidebar would have
+   the reader's eye leaving the text to find out where it is. */
+.entry .entry-kind {
+  margin: 0; font-family: var(--font-ui); font-size: var(--text-xs);
+  text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-soft);
+}
+.entry h1 {
+  font-family: var(--font); font-weight: normal; font-size: var(--text-2xl); color: var(--cobalt);
+  line-height: var(--leading-tight); margin: var(--space-1) 0 var(--space-2);
+}
+.entry .meta, .entry .also-known {
+  font-family: var(--font-ui); font-size: var(--text-sm); color: var(--ink-soft); margin: 0 0 var(--space-2);
+}
+.entry .meta a { color: var(--cobalt); }
+.entry .entry-back { margin: var(--space-2) 0; font-family: var(--font-ui); font-size: var(--text-sm); }
+.entry .wikipedia { margin: 0 0 var(--space-2); font-family: var(--font-ui); font-size: var(--text-sm); }
+.entry .entry-summary {
+  margin: var(--space-4) 0; padding-left: var(--space-3); border-left: 3px solid var(--cobalt-faint);
+}
+.entry .entry-summary p { margin: 0; font-size: var(--text-md); }
+.entry .count { color: var(--ink-soft); font-size: var(--text-sm); font-variant-numeric: tabular-nums; }
+.entry .notice {
+  border: 1px solid var(--line); background: var(--ground); border-radius: var(--radius);
+  padding: var(--space-2) var(--space-3); margin: 0 0 var(--space-3); font-family: var(--font-ui); font-size: var(--text-sm);
+}
+.entry .notice.status { border-color: var(--madder); background: var(--madder-faint); }
+
+/* The table of contents. Small, in the interface face, and never mistaken
+   for the entry's own first list. */
+.entry-toc {
+  margin: var(--space-5) 0 var(--space-4); padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--line); border-radius: var(--radius); background: var(--ground);
+}
+.entry-toc h2 {
+  font-family: var(--font-ui); font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.08em;
+  color: var(--ink-soft); margin: 0 0 var(--space-1); padding: 0; border: 0;
+}
+.entry-toc ul { list-style: none; padding: 0; margin: 0; }
+.entry-toc li { font-family: var(--font-ui); font-size: var(--text-sm); line-height: var(--leading); }
+.entry-toc li.level-3 { padding-left: var(--space-4); }
+
+/* The entry itself. Line length is the sheet's; the marks and the record
+   links are the two things the eye has to be able to tell apart from the
+   prose without the prose becoming a page of blue. */
+.entry-body blockquote {
+  margin: var(--space-4) 0; padding-left: var(--space-4); border-left: 2px solid var(--cobalt-faint);
+  color: var(--ink-soft);
+}
+.entry-body ul, .entry-body ol { padding-left: var(--space-5); }
+.entry-body li { margin: var(--space-1) 0; }
+.entry-body .record-link { text-decoration-style: dotted; }
+.entry-body .cite-mark { text-decoration: none; font-family: var(--font-ui); }
+.entry-body .cite-mark sup { font-size: var(--text-xs); }
+.entry-body .cite-mark.unresolved {
+  color: var(--madder); border-bottom: 1px dashed var(--madder); font-family: var(--font-ui); font-size: var(--text-sm);
+}
+.entry-body.empty p { color: var(--ink-soft); }
+
+/* Chips: the actors of an event, read as a row of names rather than a table,
+   because "who is in it" is a shorter question than "what did each do". */
+.entry .chips { display: flex; flex-wrap: wrap; gap: var(--space-2); margin: 0; }
+.entry .chip {
+  display: inline-flex; align-items: baseline; gap: 0.35rem;
+  padding: 0.1rem var(--space-2); border: 1px solid var(--line); border-radius: var(--radius);
+  background: var(--paper); font-family: var(--font-ui); font-size: var(--text-sm); text-decoration: none;
+  color: var(--cobalt);
+}
+.entry .chip:hover { background: var(--cobalt-faint); }
+.entry .chip .role { color: var(--ink-soft); font-size: var(--text-xs); }
+
+.entry .entry-list { list-style: none; padding: 0; margin: 0; }
+.entry .entry-list li {
+  padding: var(--space-1) 0; border-top: 1px solid var(--line);
+  font-family: var(--font-ui); font-size: var(--text-base);
+}
+.entry .entry-list li:first-child { border-top: 0; }
+.entry .entry-list .when, .entry .entry-list .role, .entry .entry-list .muted {
+  color: var(--ink-soft); font-size: var(--text-sm);
+}
+.entry .entry-relations h3 {
+  font-family: var(--font-ui); font-size: var(--text-sm); color: var(--ink-soft);
+  text-transform: uppercase; letter-spacing: 0.06em; margin: var(--space-4) 0 var(--space-1);
+}
+
+/* The citation list, with the number the entry's marks aim at hanging in the
+   margin: a bibliography, and the other end of every mark above it. */
+.entry .citations { list-style: none; padding: 0; margin: 0; }
+.entry .citation {
+  padding: var(--space-2) 0 var(--space-2) 2rem; text-indent: -2rem;
+  border-top: 1px solid var(--line); font-family: var(--font); font-size: var(--text-base);
+}
+.entry .citation:first-child { border-top: 0; }
+.entry .citation:target { background: var(--cobalt-faint); }
+.entry .citation .cite-number { font-family: var(--font-ui); font-size: var(--text-sm); color: var(--ink-soft); }
+.entry .citation .identifiers, .entry .citation .locator {
+  color: var(--ink-soft); font-size: var(--text-sm); font-family: var(--font-ui);
+}
+.entry .citation .identifiers { display: block; text-indent: 0; }
+.entry .citation.missing, .entry .unsafe-url { color: var(--madder); }
+
+/* The way from a search result to a page of its own. Small and at the end of
+   the row: the row itself still chooses the record inside the atlas, which is
+   what a reader searching for something usually wants. */
+.search-entry {
+  margin-left: auto; color: var(--cobalt); font-size: var(--text-xs); font-family: var(--font-ui);
+  text-decoration: none; white-space: nowrap;
+}
+.search-entry:hover { text-decoration: underline; }
+
+/* "Read the full entry", on every card that can have one. */
+.panel .entry-link { margin: var(--space-1) 0; font-family: var(--font-ui); font-size: var(--text-sm); }
+.panel .entry-link a { color: var(--cobalt); }

@@ -33,6 +33,7 @@ function context(atlas) {
     eventLink: (event) => `<button type="button" class="link" data-action="select" data-id="${esc(event.id)}">${esc(event.title)}</button>`,
     laneLabel: (region) => region ?? '',
     lensControl: (kind, id) => `<button type="button" class="link small lens-control" data-action="focus" data-focus="${kind}:${id}">show only these</button>`,
+    entryLink: (kind, id) => `<p class="entry-link"><a href="entry.html?id=${esc(id)}">Read the full entry →</a></p>`,
     wikipediaHtml: (record) => {
       const article = articleFor(record, ['pt']);
       return article ? `<p class="wikipedia"><a href="${esc(article.href)}" rel="noopener" target="_blank">Read more on Wikipedia</a></p>` : '';

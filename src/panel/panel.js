@@ -21,6 +21,7 @@ import { renderSourceCard } from './source.js';
 import { clusterHtml } from './cluster.js';
 import { narrativeListHtml, partOfHtml, renderNarrativeCard } from './narrative.js';
 import { readingNarrative } from '../narrative.js';
+import { createLinks, ENTRY_KINDS } from '../entry/entry.js';
 
 // What the reader asked their browser for, in order. Read once: the cards
 // use it to choose which Wikipedia edition to offer, and a list that changed
@@ -31,6 +32,7 @@ function readerLanguages() {
 
 export function createPanel(container, { atlas, state, fixtures = false, languages = readerLanguages() }) {
   let token = 0;
+  const links = createLinks({ fixtures });
   const laneLabel = (id) => atlas.regions.find((r) => r.id === id)?.label ?? id ?? '—';
   const startYear = (event) => bounds(event.when.start).min;
 
@@ -227,6 +229,16 @@ export function createPanel(container, { atlas, state, fixtures = false, languag
       <span class="muted">${esc(article.title)} · ${esc(article.lang)}</span></p>`;
   }
 
+  // The way out of the card and onto a page of its own. Offered on every
+  // record that can have an entry, written or not: a card that only linked to
+  // entries that exist would hide from the reader that the long form is a
+  // thing this atlas has, and the page itself is where the invitation to
+  // write one belongs.
+  function entryLink(kind, id) {
+    if (!ENTRY_KINDS.includes(kind)) return '';
+    return `<p class="entry-link"><a href="${esc(links.entry(kind, id))}">Read the full entry →</a></p>`;
+  }
+
   // The lanes of the current grouping, so the event card can say where the
   // event is drawn and why. The same call the timeline and the graph make.
   function lanes(s) {
@@ -245,6 +257,7 @@ export function createPanel(container, { atlas, state, fixtures = false, languag
     citationsHtml,
     edgeTextHtml,
     wikipediaHtml,
+    entryLink,
     partOfHtml: (id) => partOfHtml(ctx, id),
     eventLink,
     highlightedActor,

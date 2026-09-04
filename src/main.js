@@ -42,7 +42,7 @@ try {
   const panel = createPanel(panelEl, { atlas, state, fixtures });
   createMap(document.getElementById('map'), { atlas, state, onCluster: (cluster) => panel.showCluster(cluster) });
   createTimeline(document.getElementById('timeline'), { atlas, state, onCluster: (cluster) => panel.showCluster(cluster) });
-  createSearchBox(document.getElementById('search'), { atlas, state });
+  createSearchBox(document.getElementById('search'), { atlas, state, fixtures });
   createGrouping(document.getElementById('grouping'), { atlas, state });
   bindNarrativeKeys(document, { atlas, state });
   document.getElementById('narratives-button').addEventListener('click', () => panel.showNarratives());

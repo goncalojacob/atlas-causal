@@ -16,7 +16,7 @@ import { ACTOR_TYPE_LABEL } from './event.js';
 // which is the whole reason the card groups by type *and* direction.
 // `allied-with` is symmetric and is the one type whose two directions are one
 // group.
-const RELATION_LABEL = Object.freeze({
+export const RELATION_LABEL = Object.freeze({
   'regime-of': { out: 'Regime of', in: 'Regimes' },
   succeeded: { out: 'Succeeded by', in: 'Successor of' },
   'member-of': { out: 'Member of', in: 'Members' },
@@ -27,7 +27,7 @@ const RELATION_LABEL = Object.freeze({
 
 // The order the groups are drawn in: what this actor is, then what it was
 // made of, then who ran it, then who it stood beside.
-const RELATION_ORDER = Object.freeze([
+export const RELATION_ORDER = Object.freeze([
   'regime-of:out', 'regime-of:in', 'succeeded:out', 'succeeded:in',
   'part-of:out', 'part-of:in', 'member-of:out', 'member-of:in',
   'led:out', 'led:in', 'allied-with:out',
@@ -133,6 +133,7 @@ export function actorCardHtml(ctx, actor) {
         ${ctx.lensControl('actor', actor.id)}
       </p>
       ${variants.length ? `<p class="also-known muted">also: ${variants.map((n) => esc(n)).join(' · ')}</p>` : ''}
+      ${ctx.entryLink('actor', actor.id)}
       ${ctx.wikipediaHtml(actor)}
     </header>
     <section class="summary" data-slot="actor-summary"><p class="muted">Loading…</p></section>

@@ -17,12 +17,14 @@ import { buildSearchIndex, search, flatten } from './search.js';
 import { formatInterval } from './util/dates.js';
 import { windowAt } from './util/window.js';
 import { lensFor, lensSet } from './lens.js';
+import { ENTRY_KINDS, createLinks } from './entry/entry.js';
 
 const LIMIT = 8;
 
 const KIND_LABEL = Object.freeze({ event: 'Events', actor: 'Actors', place: 'Places', source: 'Sources' });
 
-export function createSearchBox(container, { atlas, state }) {
+export function createSearchBox(container, { atlas, state, fixtures = false }) {
+  const links = createLinks({ fixtures });
   const entries = buildSearchIndex({
     events: atlas.activeEvents,
     actors: [...atlas.actors.values()],
@@ -90,6 +92,7 @@ export function createSearchBox(container, { atlas, state }) {
           <span class="when">${esc(when)}</span>
           ${item.detail ? `<span class="muted">${esc(item.detail)}</span>` : ''}${also}
           ${out ? '<span class="badge outside">outside the lens</span>' : ''}
+          ${ENTRY_KINDS.includes(item.kind) ? `<a class="search-entry" href="${esc(links.entry(item.kind, item.id))}" tabindex="-1" title="Read the full entry, on a page of its own">entry ↗</a>` : ''}
         </li>`;
         i += 1;
         return row;
@@ -182,6 +185,9 @@ export function createSearchBox(container, { atlas, state }) {
   list.addEventListener('mousedown', (e) => {
     // mousedown, not click: the blur that a click would fire first closes the
     // list out from under it.
+    // The one link in a row goes to a page of its own; everything else in it
+    // chooses the record inside the atlas.
+    if (e.target.closest('a')) return;
     const option = e.target.closest('[role="option"]');
     if (!option) return;
     e.preventDefault();
