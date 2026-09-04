@@ -1666,18 +1666,21 @@ fixtures and the three static pages — sixteen assertions, all passing:
 
 - Repo: `~/atlas-causal`, branch `m0`.
 - Pull request #1: https://github.com/goncalojacob/atlas-causal/pull/1 — its
-  body is about **58 KB** against GitHub's 64 KB limit. Each milestone that
+  body is about **60.6 KB** against GitHub's 64 KB limit. Each milestone that
   adds a section pays for it by cutting an older one to a summary that points
-  here: M8 cut M5's, M11 cut M7's, M12 cut M9's, M13 cut M10's. The next
-  section added has to cut another, and more of it: M13's section and its
-  checks cost more than M10's cut saved. M11's and M12's are the longest
-  still written out in full. Editing the
-  body from a run means sending the whole 56 KB back, which is more text than
+  here: M8 cut M5's, M11 cut M7's, M12 cut M9's, M13 cut M10's, M14 cut
+  M11's. The next section added has to cut another, and more of it: M14's
+  section and its checks cost 5.6 KB against the 3.3 KB M11's cut saved, and
+  there are 3.4 KB left. M12's and M13's are the longest still written out in
+  full. Editing the
+  body from a run means sending the whole 60 KB back, which is more text than
   a session can retype faithfully: M12 rebuilt it from the copy the read
   returned and sent it with `curl` and `$GITHUB_TOKEN` rather than through the
   GitHub tool, which takes the body as an argument. M13 did the same, and
   never held the body in a shell argument either: read to a file, edited by a
-  script, sent as `--data-binary @patch.json`.
+  script, sent as `--data-binary @patch.json`. M14 did the same again, and the
+  script asserts the result is under 64 KB and still contains its new headings
+  before it is sent.
 - Architecture page (artifact, now **behind** the repo file — revision 2;
   `ARCHITECTURE.md` is the source of truth):
   https://claude.ai/code/artifact/b3940d66-ad98-4de9-9bfd-aff8c77e6f36
@@ -1733,3 +1736,5 @@ M13 started 2026-09-04T02:21:01Z by shepherd
 M13 done
 
 M14 started 2026-09-04T09:00:57Z by scheduled
+
+M14 done
