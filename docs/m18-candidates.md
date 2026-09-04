@@ -15,7 +15,29 @@ first of them.
 The queries are in `data/imports/wikidata-seeds.json`; changing what is proposed is an edit
 to that file and another run, never an edit here.
 
+**About 120 for the first batch.** That is the cap the M18 brief sets on what
+M19 imports and draws edges for, so ticking everything is not the aim.
+
+**Four things to know before ticking.**
+
+1. **"In the atlas" means the item, not the event.** The column says yes only
+   where a record here already carries that Wikidata item. 51 records do,
+   after the reconcile pass of M17, and one of them is an event; the other 79
+   events were written by hand and could not be matched to an item, so an
+   event this atlas already has will show as absent. Check the title before
+   ticking a row that looks familiar.
+2. **A query returns at most 200 items per decade.** Where a period is at
+   that number, what is here is the earliest 200 and the rest was cut.
+3. **The note under each period** says what that period's queries could not
+   see, and which of them the service refused. The notes are the one part of
+   this page written by hand after it was generated.
+4. **Regenerating does not overwrite this file.** `--candidates` writes
+   `docs/wikidata-candidates.md`; this is a copy of one run under the name
+   the brief gives it, so a later run cannot take the ticks with it.
+
 ## 1890s — 7 candidate(s), 0 already in the atlas
+
+**What this period cannot show.** The place set names present-day countries, and this is the decade where that costs most: an item whose country is a colonial-era entity rather than Angola or Mozambique is outside every query here. The service answered `referendums`, `massacres`, `legislation` and `disasters` with nothing at all. It refused `coups-and-uprisings`, `independences` and `battles-and-wars`, so the count above is short by whatever those queries would have returned.
 
 ### elections-1890s — 6
 
@@ -35,6 +57,8 @@ to that file and another run, never an edit here.
 | [ ] | [`Q2518953`](https://www.wikidata.org/wiki/Q2518953) | Treaty of Windsor | Tratado de Windsor | 1899-01-01 | treaty | 6 | — |
 
 ## 1900s — 8 candidate(s), 0 already in the atlas
+
+**What this period cannot show.** A change of government, a dynastic crisis or a colonial campaign is of no queried type unless Wikidata happens to type it as one of the nine. The service answered `treaties-and-agreements`, `referendums` and `massacres` with nothing at all. It refused `coups-and-uprisings`, `legislation`, `independences` and `battles-and-wars`, so the count above is short by whatever those queries would have returned.
 
 ### elections-1900s — 7
 
@@ -56,6 +80,8 @@ to that file and another run, never an edit here.
 
 ## 1910s — 11 candidate(s), 0 already in the atlas
 
+**What this period cannot show.** A cabinet falling is not an event of any of the nine types. Only what is typed as a coup, a rebellion or a revolution answers that query, so a republic that changed government often will look quiet here. The service answered `treaties-and-agreements`, `referendums`, `massacres` and `disasters` with nothing at all. It refused `coups-and-uprisings`, `legislation`, `independences` and `battles-and-wars`, so the count above is short by whatever those queries would have returned.
+
 ### elections-1910s — 11
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
@@ -73,6 +99,8 @@ to that file and another run, never an edit here.
 | [ ] | [`Q21872497`](https://www.wikidata.org/wiki/Q21872497) | 1919 Portuguese presidential election | eleições presidenciais portuguesas de 1919 | 1919-12-06 | Portuguese presidential election | 2 | — |
 
 ## 1920s — 10 candidate(s), 0 already in the atlas
+
+**What this period cannot show.** Same as the decade before it: what answers is what Wikidata has typed, and a government that fell without being called a coup is invisible. The service answered `referendums`, `independences` and `battles-and-wars` with nothing at all. It refused `coups-and-uprisings` and `legislation`, so the count above is short by whatever those queries would have returned.
 
 ### elections-1920s — 6
 
@@ -106,6 +134,8 @@ to that file and another run, never an edit here.
 
 ## 1930s — 5 candidate(s), 0 already in the atlas
 
+**What this period cannot show.** Legislation is asked for as statutes and constitutions only. Any other legislative instrument — the ordinary form most rules take — is missed by construction. The service answered `massacres`, `disasters` and `battles-and-wars` with nothing at all. It refused `coups-and-uprisings`, `legislation` and `independences`, so the count above is short by whatever those queries would have returned.
+
 ### elections-1930s — 3
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
@@ -128,6 +158,8 @@ to that file and another run, never an edit here.
 
 ## 1940s — 6 candidate(s), 0 already in the atlas
 
+**What this period cannot show.** A wartime agreement answers only if Wikidata types it as a treaty; an exchange of notes or a lease that a historian would call an agreement is not that. The service answered `referendums`, `massacres`, `legislation` and `disasters` with nothing at all. It refused `coups-and-uprisings`, `independences` and `battles-and-wars`, so the count above is short by whatever those queries would have returned.
+
 ### elections-1940s — 5
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
@@ -145,6 +177,8 @@ to that file and another run, never an edit here.
 | [ ] | [`Q9581238`](https://www.wikidata.org/wiki/Q9581238) | Portuguese Language Orthographic Agreement of 1945 | Acordo Ortográfico de 1945 | 1945-10-06 | reforms of Portuguese orthography | 1 | — |
 
 ## 1950s — 9 candidate(s), 0 already in the atlas
+
+**What this period cannot show.** Joining an international organisation is not one of the nine types, and shows up here only where a treaty item exists for it. The service answered `independences` and `disasters` with nothing at all. It refused `coups-and-uprisings`, `legislation` and `battles-and-wars`, so the count above is short by whatever those queries would have returned.
 
 ### elections-1950s — 6
 
@@ -177,6 +211,8 @@ to that file and another run, never an edit here.
 
 ## 1960s — 12 candidate(s), 0 already in the atlas
 
+**What this period cannot show.** A colonial campaign answers only where it is typed as a battle, a military operation or a war; and a long war is one item with one start date, so it falls in the decade it began and in no other. The service answered `treaties-and-agreements`, `referendums` and `independences` with nothing at all. It refused `coups-and-uprisings`, `legislation` and `battles-and-wars`, so the count above is short by whatever those queries would have returned.
+
 ### elections-1960s — 7
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
@@ -205,6 +241,8 @@ to that file and another run, never an edit here.
 | [ ] | [`Q3510571`](https://www.wikidata.org/wiki/Q3510571) | 1969 Portugal earthquake | Sismo de Portugal de 1969 | 1969-02-28 | earthquake | 7 | — |
 
 ## 1970s — 37 candidate(s), 0 already in the atlas
+
+**What this period cannot show.** The overseas territories are in the place set for the whole of this decade, so an event in one of them after its independence is listed here and would not be in the decades after. A war that began in the 1960s is not in this period at all. The service answered `referendums` and `independences` with nothing at all. It refused `coups-and-uprisings`, `legislation` and `battles-and-wars`, so the count above is short by whatever those queries would have returned.
 
 ### elections-1970s — 16
 
@@ -265,6 +303,8 @@ to that file and another run, never an edit here.
 
 ## 1980s — 33 candidate(s), 0 already in the atlas
 
+**What this period cannot show.** From here the place set is Portugal, with Macau to the end of the 1990s. An event in a former territory is outside every query in this and every later period. The service answered `coups-and-uprisings`, `referendums`, `massacres`, `legislation`, `independences` and `battles-and-wars` with nothing at all.
+
 ### elections-1980s — 17
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
@@ -315,6 +355,8 @@ to that file and another run, never an edit here.
 
 ## 1990s — 22 candidate(s), 0 already in the atlas
 
+**What this period cannot show.** The last period in which Macau is in the place set; an event there after 1999 is outside the queries. The service answered `coups-and-uprisings`, `massacres` and `independences` with nothing at all. It refused `legislation` and `battles-and-wars`, so the count above is short by whatever those queries would have returned.
+
 ### elections-1990s — 15
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
@@ -358,6 +400,8 @@ to that file and another run, never an edit here.
 | [ ] | [`Q5942951`](https://www.wikidata.org/wiki/Q5942951) | — | — | 1998-07-09 | earthquake | 1 | — |
 
 ## 2000s — 27 candidate(s), 0 already in the atlas
+
+**What this period cannot show.** Portugal alone. An election answers only with an article in two languages, which is what keeps the per-district items out and may also drop a small vote nobody has written about twice. The service answered `coups-and-uprisings`, `massacres` and `independences` with nothing at all.
 
 ### elections-2000s — 19
 
@@ -418,6 +462,8 @@ to that file and another run, never an edit here.
 
 ## 2010s — 32 candidate(s), 0 already in the atlas
 
+**What this period cannot show.** Portugal alone, and the same two-language line on elections. The service answered `coups-and-uprisings`, `referendums`, `massacres`, `legislation` and `independences` with nothing at all.
+
 ### elections-2010s — 22
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
@@ -471,6 +517,8 @@ to that file and another run, never an edit here.
 | [ ] | [`Q18651204`](https://www.wikidata.org/wiki/Q18651204) | Resolute Support Mission | Missão Apoio Resoluto | 2014-12-28 | NATO operation | 28 | — |
 
 ## 2020s — 31 candidate(s), 0 already in the atlas
+
+**What this period cannot show.** Portugal alone, and the period runs to the end of 2025 rather than to the end of the decade. The service answered `coups-and-uprisings`, `treaties-and-agreements`, `referendums`, `massacres`, `legislation`, `independences` and `battles-and-wars` with nothing at all.
 
 ### elections-2020s — 24
 
