@@ -124,6 +124,33 @@
       tombstone that still resolves the old link, pointing at whatever supersedes it: a URL
       someone shared keeps working.</p>
 
+      <h3>The lens: one record's events, and nothing else</h3>
+      <p>The card of an <strong>actor</strong>, a <strong>place</strong> or a <strong>source</strong>
+      offers <strong>show only these</strong>. It puts a lens on the whole atlas: the map, the graph
+      and the timeline then hold the events that record is involved in and nothing else, with the
+      links between two of them still drawn. This is not the same as selecting: selecting emphasises
+      and leaves everything else in view, and the lens <em>removes</em>. The header says which lens
+      is on and is the way out of it, and the address bar carries it — <code>?focus=actor:salazar</code>
+      — so a lens can be sent in a link. The window of time, the path you have walked and the
+      question about a year all keep working inside it. Search is not narrowed: a record the lens
+      does not keep is still found, listed, and marked as outside.</p>
+
+      <h3>What the lanes are</h3>
+      <p>The timeline's lanes and the graph's bands are one thing — a <strong>grouping</strong> of
+      events — and it is a choice, next to Map | Graph in the header. The default is
+      <strong>no grouping</strong>: the timeline packs the bars into as many unlabelled rows as it
+      takes for none of them to overlap, and the graph drops its bands. The other three are one lane
+      per <strong>actor</strong>, per <strong>place</strong> and per <strong>region</strong>. For
+      actors and places the lanes are the twelve with the most events in the window, plus
+      <strong>Other</strong>, and the picker lets you choose your own and put them in your own order;
+      the choice is in the link (<code>?group=actor&amp;lanes=salazar,paigc</code>).</p>
+      <p>An event is drawn in <strong>exactly one lane</strong>, never repeated across them: an event
+      with four actors is one event, and drawing it four times would turn a count of events into a
+      count of participations without saying so. Which lane is decided mechanically — the heaviest of
+      its actors among the lanes on screen, that is, the one with the most events in the window — and
+      the event's card always says which lane it is in, by what rule, and what else it involves. A
+      rule you cannot see is a rule you cannot check.</p>
+
       <h3>The graph view</h3>
       <p>The <strong>Graph</strong> button in the header replaces the map with a third drawing of
       the same records: every event a node, every link a line, so the whole web can be seen at
@@ -131,7 +158,8 @@
       search, the same window of time, the same link in the address bar — drawn another way.</p>
       <p><strong>Left to right is the year</strong>, on the same scale the timeline keeps, so the
       arrow of time is visible and nothing is ever placed by simulated physics. Down the page,
-      one faint band per continent, and inside a band the events of a year are spread apart and
+      one faint band per lane — whatever the grouping says, and no bands at all without one —
+      and inside a band the events of a year are spread apart and
       ordered so that the lines between them come out short and cross each other as little as
       possible. The window of time is the shaded band across the picture: what falls outside it
       fades rather than leaving, so the web is always all there. Drag to move, scroll to zoom,

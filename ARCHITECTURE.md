@@ -4,8 +4,51 @@ What the Atlas causal is meant to become, structurally. `CLAUDE.md` has the
 rules, `CONTEXT.md` the reasoning, `STATUS.md` where we are right now. This
 file is the target: the shape every milestone builds toward.
 
-Revision 13, 4 September 2026. Sections marked ● exist in v1; things marked ○
+Revision 14, 4 September 2026. Sections marked ● exist in v1; things marked ○
 are reserved by a line in this file only — no folder, no schema, no code.
+
+**What revision 14 changed, and why.** Nothing in the data model. Two ideas
+the interface had been confusing with others, separated and given a file
+each.
+
+*A lane is a grouping, and there are four of them.* The timeline's lanes and
+the graph view's bands were both "one per region", written twice. They are
+one thing now — `src/lanes.js`, pure and tested — and which grouping is a
+choice in the state: `none`, `actor`, `place`, `region`. **The default is
+`none`**, which has no named lanes at all: the timeline packs the bars into
+as many unlabelled rows as it takes for none of them to overlap at the
+current width, and the graph drops its bands and lets the barycentre place a
+node wherever its links want it. That is the arrangement that makes the
+fewest claims about the data, which is why a visitor sees it first. `region`
+may well come back as the default when the data is world-scale and a
+continent is again the most useful thing to say; the choice is one value in
+the state, not a rewrite.
+
+*An event is drawn in exactly one lane.* An event with four actors is one
+event, and drawing it in four lanes would turn a count of events into a count
+of participations without saying so. The rule is mechanical — the heaviest of
+its actors among the lanes on screen, "heaviest" being the actor with the
+most events in the window, the same number that ordered the lanes — and the
+event card **states it**, with what else the event involves. A rule the
+reader cannot see is a rule they cannot check. The lanes themselves are the
+twelve with the most events in the window plus "Other", or exactly the
+reader's own `lanes` list in the reader's own order. The **window decides
+which lanes there are and never which events are in them**: a bar outside the
+band is drawn faded, and a lane it had been counted out of would leave it
+nowhere to be drawn.
+
+*Filtering is not grouping, and neither is selecting.* `?focus=actor:salazar`
+is a **lens**: the three views hold only the events that record is involved
+in — an actor in `actors[]`, a place equal, a source cited by the event or by
+an edge at it — and everything else is **removed**, not dimmed. Dimming is
+what selection does, and if both faded neither would mean anything. The lens
+is offered on the actor, place and source cards, said in the header, and
+carried in the URL. It never narrows the search: a record outside it is still
+found and listed, and marked as outside, because answering "nothing by that
+name" about a record that is right there would be a lie. **Reading a
+narrative suspends the lens**: reading is a mode, and a step that vanished
+because a lens was left on would be the atlas hiding the thing it was asked
+to show.
 
 **What revision 13 changed, and why.** The dataset the interface was built
 against is a draft nobody has read, and this revision is the machinery for
@@ -377,7 +420,10 @@ atlas-causal/
 │
 ├── src/
 │   ├── main.js                   ● bootstrap only: load, wire views
-│   ├── state.js                  ● { from, to, view, selected, source, place, actor, chain, horizon, layers, narrative, step } ⇄ URL; data-free
+│   ├── state.js                  ● { from, to, view, focus, group, lanes, selected, source, place, actor, chain, horizon, layers, narrative, step } ⇄ URL; data-free
+│   ├── lanes.js                  ● pure: what the lanes are in each of the four groupings, which one an event is in, and the packing for `none`
+│   ├── lens.js                   ● pure: the events a focus keeps; removed from every view, not dimmed
+│   ├── grouping.js               ● the picker in the header, and the badge that says which lens is on
 │   ├── narrative.js              ● pure: what a step is about, the chain at it, how far the window opens; narrative-mode.js applies it to the store
 │   ├── data.js                   ● manifest → topology (whole) → record text on demand; lookup tables, adjacency of events by edge and of actors by relation, events by actor and by place, an event's point through its place
 │   ├── graph.js                  ● consequences, ancestors, convergence, shortest paths outward and what an event led to by a year; pure functions over adjacency
@@ -391,9 +437,9 @@ atlas-causal/
 │   │   ├── map.js                ● SVG scaffold, pan/zoom, click into a cluster
 │   │   └── layers/land.js  presences.js  events.js   ●
 │   ├── graph-view/
-│   │   ├── layout.js             ● pure: topology + regions → coordinates; x is the year, y is bands and a barycentre pass
+│   │   ├── layout.js             ● pure: events + edges + lanes → coordinates; x is the year, y is bands and a barycentre pass
 │   │   └── graph-view.js         ● the SVG: nodes, the five edge types, the window as a shade, pan/zoom, nearest-centre clicks
-│   ├── timeline.js               ● one lane per region; the window as a band with two handles; bars stack
+│   ├── timeline.js               ● the lanes lanes.js gives, or packed unlabelled rows; the window as a band with two handles; bars stack
 │   ├── timeline-scale.js         ● linear now; the scale is injected
 │   ├── panel/panel.js            ● the shell: the container, the clicks, the load token, what every card shares
 │   ├── panel/event.js  source.js  place.js  actor.js  cluster.js   ● one card each
@@ -862,9 +908,12 @@ what it is part of however the walk happens to reach it.
 ## Site modules
 
 Vanilla ES modules, no framework, no build. Each module has one job;
-`main.js` only wires them. State is one object, `{ from, to, view, selected,
-source, place, actor, chain, horizon, layers }`, mirrored to the URL so every
-view is a shareable link. `horizon` is the exception that proves the rule: it
+`main.js` only wires them. State is one object, `{ from, to, view, focus,
+group, lanes, selected, source, place, actor, chain, horizon, layers }`,
+mirrored to the URL so every
+view is a shareable link. `focus` is the lens and `group`/`lanes` are what
+the lanes are: how the atlas is drawn rather than what is selected in it, and
+in the link for the reason `view` is. `horizon` is the exception that proves the rule: it
 is written only when a reader chose a year, because its default — the
 window's far end — would lengthen every shared link and answer a question
 nobody asked. `layers` is `land`, `territories`, `events`; a layer switched off costs
@@ -874,6 +923,9 @@ layout, and the graph view is built the first time it is asked for.
 | Module | Job | Must not know |
 |---|---|---|
 | `state.js` | Owns the state object; parses and writes the URL; notifies views. | Anything about SVG or data files. |
+| `lanes.js` | What a lane is, in all four groupings: which lanes the window offers, which twelve of them are drawn, which single lane each event belongs in and why, and — with no grouping — the packing of the bars into rows that do not overlap. Pure. | The DOM, the state, and which of the two pictures is asking. |
+| `lens.js` | The set of events a focus keeps — an actor's, a place's, a source's — and what the header calls it. Pure. | The DOM, and that a narrative suspends it, which is one line of state it is given. |
+| `grouping.js` | The picker beside Map \| Graph: the grouping as a select, the lanes as checkboxes with up/down and a filter box, keyboard first; and the badge that says which lens is on. Writes `group`, `lanes` and `focus` and nothing else. | What a lane is, and how anything is drawn. |
 | `data.js` | Reads the manifest, loads the topology whole, fetches record text on demand, resolves aliases and `supersededBy` for every kind, builds adjacency — of events through edges and of actors through relations, each relation listed from both ends — the events of each actor, and each actor's presences and dependencies; loads and caches one geometry shard per year. | How things are drawn. |
 | `graph.js` | Consequences, ancestors, convergence, the tree of shortest paths outward and what an event led to by a year. Pure functions over adjacency; results ordered by type, then confidence, or by path length then year. | The DOM. |
 | `horizon.js` | Puts the traversal and the horizon year together: the list the panel draws and the `Map<id, depth>` the map, the graph view and the timeline fade by. Empty unless a year was chosen. | The DOM, and which view is asking. |
@@ -884,9 +936,9 @@ layout, and the graph view is built the first time it is asked for.
 | `search.js` + `search-box.js` | Folds and ranks event titles and every one of an actor's names — prefix, then word start, then substring — and draws the result as a combobox. | Anything about the map or the timeline; choosing is a state change. |
 | `map/layers/*` | One layer per thing drawn, in a fixed order: coastlines, then territories, then marks, so an event sits on top of the state it happened in. Renders only records in the visible window. A stack of marks is drawn as one, with a count, and opened by a click. | Each other. |
 | `map/layers/presences.js` | The territories of the window's far end: a thin line for a state, a lighter one over a stronger wash for a dependency, dashed when disputed. Hover names it and its sovereign; click selects the actor. No colour per polity — two hundred of them share one palette. | Which shard the year is in, or how one is fetched. |
-| `graph-view/layout.js` | Topology, regions and the data's extent → the coordinates of every node and every edge, plus the bands. x is the year on the whole extent; y is a barycentre pass inside the band of the region. Deterministic — ties by id then weight, neighbour lists sorted — and self-checking: it counts crossings and keeps the best arrangement it saw, the plain order included. | The DOM, the state, what is selected, what is in the window. |
+| `graph-view/layout.js` | Events, edges, the lanes and the data's extent → the coordinates of every node and every edge, plus the bands. x is the year on the whole extent; y is a barycentre pass inside the band of the lane, or over the whole field when there are no lanes. Deterministic — ties by id then weight, neighbour lists sorted — and self-checking: it counts crossings and keeps the best arrangement it saw, the plain order included. | The DOM, the state, what is selected, what is in the window. |
 | `graph-view/graph-view.js` | Draws what the layout gives it: the bands and the year axis once, then the nodes, the five edge types by pattern and weight, the window as a shade, the walked chain in madder and the convergence branches filled in. Pan and zoom; a click is resolved to the nearest node centre within reach; clicking a consequence of the open event walks the chain. | Where a node goes, and how the panel renders anything. |
-| `timeline.js` + `timeline-scale.js` | Lanes from `regions.json`; the scale is injected; the window drawn over them as a band with two handles, which is the atlas's only time control. Bars that would overlap stack, and only within the window, so narrowing the band splits them without moving the scale. | Which regions exist. |
+| `timeline.js` + `timeline-scale.js` | Lanes from `lanes.js`, or its packed rows when there is no grouping; the scale is injected; the window drawn over them as a band with two handles, which is the atlas's only time control. Bars that would overlap stack, and only within the window, so narrowing the band splits them without moving the scale. | Which regions exist. |
 | `panel/` | The shell plus one file per card. Detail, consequences, the horizon, convergence, supporting and dissenting citations shown apart, confidence and status shown as such; an event's actors with their roles, a source's card with everything that cites it, an actor's card with its relations grouped by type and direction, a place's card, and the members of a cluster. | Traversal logic. |
 | `sources/` | `sources.html`: the manifest and the sources index, and the bibliography as markup. Nothing else — the topology is twenty times the size and lists no books. | The topology, the map, the panel. |
 | `validate/core.js` | `validate(records, topology)`: schema subset + cross-record rules, pure. Needs the topology to check references, so the form loads it too. | `fs`. |
@@ -1045,6 +1097,7 @@ from two sources of which either may be the wrong one.
 | Tens of thousands of records | render only the visible window; topology stays whole | hashed, immutable index files; manifest uncached |
 | Source pages and the bibliography ● | built in M10: `citations` and `citationCount` in the sources index, `?source=`, `sources.html` | the citers are the index's, so a narrative kind joins the grouping by appearing in `CITER_ORDER` and nothing else changes |
 | The horizon ● | built in M10: `shortestPaths`/`pathTo`/`reachableBy` in `graph.js`, `horizon.js`, `?horizon=` | the year is a bound on `start.min`, so a bucketed deep-time scale changes nothing here; the reachable set is a `Map<id, depth>` and a view that wants five bands instead of three changes one function |
+| The lens and the grouping ● | built in M14: `src/lanes.js`, `src/lens.js`, `src/grouping.js`, `focus`/`group`/`lanes` in the state, the bands of `graph-view/layout.js` | a fifth grouping is one case in `lanesFor` and one option in the picker; the cap and the "Other" lane are one constant each; `region` returning as the default is one value in `defaultState()` |
 | Editorial emphasis on the map | a `prominence` field on the event record; `cluster.js` reads `prominence ?? weight` | ○ reserved by this line: derived `weight` in the index is the only measure now, and it is mechanical |
 
 ## Scale, for the record
@@ -1073,6 +1126,7 @@ the fix is rendering only the visible window, not a map library.
 | M10 | Source pages and the bibliography — `citations` in the sources index, the source card, `sources.html`, sources in the search — and "what did this lead to by year X?": `shortestPaths`, `reachableBy`, the panel's horizon and the reachable set lit on all three views. | Clicking a citation opens the source card with every one of its citers; the bibliography lists every source with its count; `?selected=carnation-revolution-1974&horizon=2011` lists the 23 events downstream by then and choosing the constitution walks the three-step path to it. |
 | M11 | Relations between actors — `schema/v1/relation.json`, rule 19, the topology's `relations`, the actor card in both directions, the form, `new-record.mjs relation`, and the relations the test dataset implies. | Relations validate; `?actor=portugal` lists its four regimes; `?actor=salazar` says what he led; tests green. |
 | M13 | The review dashboard: `review.html`, `src/review/`, the `review` envelope block, the review index, `tools/serve.mjs` and its write endpoint. | The queue lists every assistant-drafted record; editing and saving rewrites the file and the index; signing removes it from the queue and puts the reviewer on the record; without the server the same action yields a correction bundle. |
+| M14 | The lens and the grouping: `src/lens.js`, `src/lanes.js`, `src/grouping.js`, `focus`/`group`/`lanes` in the state and the URL, the packed rows on the timeline, the bands of the graph taken from the same lanes, the rule stated on the event card. | The default URL packs the timeline into rows with no overlapping bars and draws the graph without bands; `?group=actor` gives twelve lanes plus "Other" by count; `?group=actor&lanes=…` gives exactly those; `?focus=actor:salazar` draws only that actor's events in all three views; the picker round-trips through the URL. |
 | — | **Opening contributions to strangers**: timing not yet decided (see `STATUS.md`). `CONTEXT.md` argues for waiting until the schema has survived the 1580–1640 test and a few hundred of the owner's own records. | — |
 
 ## Decisions taken
@@ -1169,6 +1223,25 @@ On 3 September 2026, in the building of M11:
 - **Rule 19's endpoint table is part of the model**, not a convention: what
   may stand at each end of each type is checked, so "a person is a regime of
   a state" cannot be filed.
+
+On 3 September 2026, by the owner, and built in M14:
+
+- **The timeline's lanes and the graph's bands are one thing**, a grouping of
+  events, and it is a choice: `none`, `actor`, `place`, `region`. `regions.json`
+  is read only in the `region` case; everything else asks `lanes.js`.
+- **No grouping is the default.** The layout does the work — packed rows on
+  the timeline, no bands in the graph — because it is the arrangement that
+  claims least about the data. `region` may return as the default when the
+  data is world-scale.
+- **An event is drawn in exactly one lane**, by a rule the interface states on
+  the event's card: the heaviest of its actors among the lanes shown. Never
+  duplicated across lanes.
+- **The lanes are the top twelve in the window, plus "Other"**, unless the
+  reader gives an explicit ordered list. The window decides which lanes exist,
+  never which events are in them.
+- **Filtering is separate from grouping and from selection.** A lens
+  (`?focus=`) removes; a selection dims; a grouping arranges. Three things,
+  three mechanisms, and no view where two of them look alike.
 
 Open: when contributions open to strangers; whether the role vocabulary
 closes, and to what; which of the 89 remaining CShapes codes want splitting.
