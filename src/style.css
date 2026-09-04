@@ -410,6 +410,11 @@ svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align:
 .panel .actor-head h2 { font-size: 1.5rem; margin-top: 0; }
 .panel .actor-type { text-transform: uppercase; letter-spacing: 0.04em; font-size: 0.8rem; }
 .panel .also-known { margin: 0.2rem 0 0; font-size: 0.9rem; }
+/* The way out to somebody else's account of the same thing. Set apart from
+   the card's own text: what the atlas says is the summary below it. */
+.panel .wikipedia { margin: 0.35rem 0 0; font-size: 0.9rem; }
+.panel .wikipedia a { color: var(--cobalt); }
+.panel .wikipedia .muted { margin-left: 0.4rem; font-size: 0.85rem; }
 .panel .actor-rows { list-style: none; padding: 0; margin: 0; }
 .panel .actor-row { padding: 0.3rem 0; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.4rem; }
 .panel .actor-row.highlighted { border-left: 3px solid var(--cobalt); padding-left: 0.5rem; }

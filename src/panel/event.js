@@ -169,6 +169,7 @@ export function renderEventCard(ctx, { container, event, found, state, mine }) {
         <button type="button" class="link small" data-action="year" data-year="${esc(ctx.startYear(event))}">map at ${esc(formatYear(ctx.startYear(event)))}</button>
       </p>
       ${drawnHtml(ctx, event, state)}
+      ${ctx.wikipediaHtml(event)}
     </header>
     <section class="summary" data-slot="summary"><p class="muted">Loading…</p></section>
     ${actorsHtml(ctx, event, highlightedActor?.id ?? null)}

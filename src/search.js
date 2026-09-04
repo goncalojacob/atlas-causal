@@ -13,6 +13,7 @@
 // thing the atlas deliberately keeps out of it (ARCHITECTURE.md, "Scale").
 
 import { extent } from './util/dates.js';
+import { articleTitles } from './wikipedia.js';
 
 // Diacritic-insensitive and case-insensitive: "Amilcar" finds "Amílcar", and
 // a reader who cannot type ç is not locked out of their own history.
@@ -30,7 +31,10 @@ export function rank(term, query) {
   return /[\s(«"'\-–—/]/.test(term[at - 1]) ? 1 : 2;
 }
 
-// One entry per record: everything it can be found by, folded once.
+// One entry per record: everything it can be found by, folded once. A record
+// the import has given Wikipedia titles is findable by them too — somebody
+// who knows a thing by the name the encyclopedia gives it should not be told
+// there is nothing by that name — and the label stays the atlas's own.
 export function buildSearchIndex({ events = [], actors = [], places = [], sources = [] } = {}) {
   const entries = [];
   for (const event of events) {
@@ -42,7 +46,7 @@ export function buildSearchIndex({ events = [], actors = [], places = [], source
       detail: null,
       when: event.when,
       weight: event.weight ?? 0,
-      terms: [fold(event.title)],
+      terms: [fold(event.title), ...articleTitles(event).map(fold)],
     });
   }
   for (const actor of actors) {
@@ -57,7 +61,7 @@ export function buildSearchIndex({ events = [], actors = [], places = [], source
       // The variants are what makes "PIDE" and "DGS" one record.
       variants: names.slice(1),
       weight: 0,
-      terms: names.map(fold),
+      terms: [...names, ...articleTitles(actor)].map(fold),
     });
   }
   for (const place of places) {
@@ -71,7 +75,7 @@ export function buildSearchIndex({ events = [], actors = [], places = [], source
       when: null,
       variants: names.slice(1),
       weight: 0,
-      terms: names.map(fold),
+      terms: [...names, ...articleTitles(place)].map(fold),
     });
   }
   for (const source of sources) {

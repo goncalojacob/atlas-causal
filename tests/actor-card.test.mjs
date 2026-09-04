@@ -10,6 +10,7 @@ import path from 'node:path';
 import { readFile } from 'node:fs/promises';
 import { createAtlas } from '../src/data.js';
 import { actorCardHtml } from '../src/panel/actor.js';
+import { articleFor } from '../src/wikipedia.js';
 import { esc } from '../src/util/esc.js';
 import { FIXTURE_DATA, ROOT } from './helpers.mjs';
 
@@ -32,6 +33,10 @@ function context(atlas) {
     eventLink: (event) => `<button type="button" class="link" data-action="select" data-id="${esc(event.id)}">${esc(event.title)}</button>`,
     laneLabel: (region) => region ?? '',
     lensControl: (kind, id) => `<button type="button" class="link small lens-control" data-action="focus" data-focus="${kind}:${id}">show only these</button>`,
+    wikipediaHtml: (record) => {
+      const article = articleFor(record, ['pt']);
+      return article ? `<p class="wikipedia"><a href="${esc(article.href)}" rel="noopener" target="_blank">Read more on Wikipedia</a></p>` : '';
+    },
   };
 }
 

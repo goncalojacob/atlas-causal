@@ -127,6 +127,7 @@ export function actorCardHtml(ctx, actor) {
         ${ctx.lensControl('actor', actor.id)}
       </p>
       ${variants.length ? `<p class="also-known muted">also: ${variants.map((n) => esc(n)).join(' · ')}</p>` : ''}
+      ${ctx.wikipediaHtml(actor)}
     </header>
     <section class="summary" data-slot="actor-summary"><p class="muted">Loading…</p></section>
     ${relationsHtml(ctx, actor)}

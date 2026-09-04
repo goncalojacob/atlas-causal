@@ -6,8 +6,9 @@
 // themselves are one file each: event.js, source.js, place.js, actor.js,
 // cluster.js. Which one is shown is decided in render() and nowhere else.
 
-import { esc } from '../util/esc.js';
+import { esc, safeUrl } from '../util/esc.js';
 import { formatInterval, bounds, isValidYear } from '../util/dates.js';
+import { articleFor } from '../wikipedia.js';
 import { windowAt, resolveWindow } from '../util/window.js';
 import { formatFocus, lensSet } from '../lens.js';
 import { lanesFor } from '../lanes.js';
@@ -21,7 +22,14 @@ import { clusterHtml } from './cluster.js';
 import { narrativeListHtml, partOfHtml, renderNarrativeCard } from './narrative.js';
 import { readingNarrative } from '../narrative.js';
 
-export function createPanel(container, { atlas, state, fixtures = false }) {
+// What the reader asked their browser for, in order. Read once: the cards
+// use it to choose which Wikipedia edition to offer, and a list that changed
+// under them mid-session would make one card disagree with the next.
+function readerLanguages() {
+  return typeof navigator === 'object' && Array.isArray(navigator?.languages) ? [...navigator.languages] : [];
+}
+
+export function createPanel(container, { atlas, state, fixtures = false, languages = readerLanguages() }) {
   let token = 0;
   const laneLabel = (id) => atlas.regions.find((r) => r.id === id)?.label ?? id ?? '—';
   const startYear = (event) => bounds(event.when.start).min;
@@ -207,6 +215,18 @@ export function createPanel(container, { atlas, state, fixtures = false }) {
       : `<button type="button" class="link small lens-control" data-action="focus" data-focus="${esc(focus)}">show only these</button>`;
   }
 
+  // The way out to somebody else's account of the same thing. It is offered
+  // and labelled as external: the atlas's own text is the summary above it,
+  // and the two are never run together. Only a record the import has given a
+  // title has one, so most cards show nothing here at all.
+  function wikipediaHtml(record) {
+    const article = articleFor(record, languages);
+    const href = article ? safeUrl(article.href) : null;
+    if (!href) return '';
+    return `<p class="wikipedia"><a href="${esc(href)}" rel="noopener" target="_blank">Read more on Wikipedia</a>
+      <span class="muted">${esc(article.title)} · ${esc(article.lang)}</span></p>`;
+  }
+
   // The lanes of the current grouping, so the event card can say where the
   // event is drawn and why. The same call the timeline and the graph make.
   function lanes(s) {
@@ -224,6 +244,7 @@ export function createPanel(container, { atlas, state, fixtures = false }) {
     startYear,
     citationsHtml,
     edgeTextHtml,
+    wikipediaHtml,
     partOfHtml: (id) => partOfHtml(ctx, id),
     eventLink,
     highlightedActor,

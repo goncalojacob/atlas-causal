@@ -78,7 +78,10 @@ test('rule 21: two kinds may claim the same item, because they are two things', 
 });
 
 test('rule 21: a Wikipedia title without an item is refused', async () => {
-  const r = await run((fx) => { fx.byId['fixture-event-a'].wikipedia = { en: 'Fixture article A' }; });
+  const r = await run((fx) => {
+    delete fx.byId['fixture-event-a'].wikidata;
+    fx.byId['fixture-event-a'].wikipedia = { en: 'Fixture article A' };
+  });
   const hits = rulesHit(r, 21);
   assert.equal(hits.length, 1, messages(r));
   assert.equal(hits[0].path, '/wikipedia');
