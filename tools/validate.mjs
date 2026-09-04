@@ -15,6 +15,7 @@ import { createValidator } from '../src/validate/schema.js';
 import { createRegionDeriver, NEAREST_TOLERANCE } from '../src/util/geo.js';
 import { readSchemaFiles, readRecords, readRegions, readRegionPolygons, readPresenceShards, readImportMaps, KIND_DIRS } from './lib/read.mjs';
 import { buildIndex, readIndex, compareIndex } from './build-index.mjs';
+import { countDrafts } from '../src/review/queue.js';
 
 export const IMPORT_MAP_SCHEMA = 'v1/import-map.json';
 
@@ -182,7 +183,15 @@ export async function runValidation(dataDir = DEFAULT_DATA, { index = false } = 
     }
   }
 
-  return { errors, warnings, counts: { records: records.length, regions: regions.length } };
+  return {
+    errors,
+    warnings,
+    // How much of the assistant-draft exception in CLAUDE.md is still
+    // standing. It is not an error — the dataset is allowed to be there —
+    // but it is the number the review dashboard exists to bring to zero,
+    // so the validator that runs on every commit is where it is counted.
+    counts: { records: records.length, regions: regions.length, unreviewed: countDrafts(records) },
+  };
 }
 
 function formatItem(kind, item) {
@@ -218,6 +227,7 @@ async function main(argv) {
   for (const e of errors) console.error(formatItem('error', e));
   if (!quiet) for (const w of warnings) console.log(formatItem('warning', w));
   console.log(`${counts.records} records, ${counts.regions} regions: ${errors.length} error(s), ${warnings.length} warning(s)`);
+  if (counts.unreviewed) console.log(`${counts.unreviewed} record(s) still carry the assistant-draft marker: open review.html`);
   return errors.length ? 1 : 0;
 }
 
