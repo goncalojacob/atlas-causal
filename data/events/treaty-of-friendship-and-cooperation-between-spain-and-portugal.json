@@ -9,14 +9,19 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "summary-drafted"
     ]
   },
   "wikidata": "Q6151921",
@@ -27,12 +32,28 @@
   },
   "sources": [
     {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Friendship and Cooperation between Spain and Portugal\", revision 1223766457"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Tratado de Amizade e Cooperação entre Portugal e Espanha (1977)\", revision 66016588"
+    },
+    {
       "source": "wikidata",
-      "locator": "Q6151921"
+      "locator": null
     }
   ],
   "title": "Treaty of Friendship and Cooperation between Spain and Portugal",
-  "summary": "Wikidata item Q6151921, imported by tools/import/wikidata.mjs. The item's own description reads \"1977 treaty between Spain and Portugal\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "Mário Soares and Adolfo Suárez signed a Treaty of Friendship and Cooperation between Portugal and Spain on 22 November 1977; Portugal ratified it on 17 April 1978 and Spain on 25 April. It replaced the Iberian Pact of 1939, the treaty of friendship and non-aggression by which Salazar and Franco had kept each other's regimes safe and the peninsula out of the world war. Both states were by then within three years of the end of their dictatorships, and both had applied to join the European Communities that same year — Portugal in March, Spain in July. It is in the atlas as the point at which the Iberian relation stopped being an arrangement between two regimes and became one between two states, and it was itself replaced by a further treaty in 2021.",
   "when": {
     "start": 1977,
     "end": 1977,
@@ -40,5 +61,14 @@
   },
   "place": null,
   "region": "europe",
-  "actors": []
+  "actors": [
+    {
+      "actor": "third-portuguese-republic",
+      "role": "signatory"
+    },
+    {
+      "actor": "mario-soares",
+      "role": "signed as prime minister"
+    }
+  ]
 }

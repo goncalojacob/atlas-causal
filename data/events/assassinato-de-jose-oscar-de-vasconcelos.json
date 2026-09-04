@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "assassinato-de-jose-oscar-de-vasconcelos",
   "kind": "event",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,11 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "m22-retracted"
+    ],
+    "note": "Retracted in M22: the killing of José Óscar de Vasconcelos on 18 April 1976, for which the import brought a date and a name and no description at all. The atlas holds no record of the armed far left — not the PRP-BR, not the FP-25, not the trials — so there is nothing for an action of theirs to attach to in either direction, and any edge would be invented. Revisit once the organisations themselves are here."
   },
   "wikidata": "Q139223832",
   "sitelinks": 0,

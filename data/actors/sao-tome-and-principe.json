@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "sao-tome-and-principe",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "actor-drafted"
+    ]
+  },
+  "where": null,
+  "sources": [
+    {
+      "source": "macqueen-1997-decolonization",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    }
+  ],
+  "actorType": "polity",
+  "names": [
+    "São Tomé and Príncipe",
+    "São Tomé e Príncipe",
+    "Democratic Republic of São Tomé and Príncipe"
+  ],
+  "summary": "The two islands in the Gulf of Guinea were claimed for Portugal in the 1470s, worked as sugar and then as cocoa plantations, and became a state on 12 July 1975, the last of the African territories to leave. They are the smallest of the five and the one where the transfer of power was least contested: no war was fought there, and the single movement Lisbon recognised took the state from an assembly elected four days earlier.",
+  "when": {
+    "start": 1975,
+    "end": null
+  }
+}

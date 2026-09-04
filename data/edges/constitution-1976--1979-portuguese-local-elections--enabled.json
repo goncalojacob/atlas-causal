@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "constitution-1976--1979-portuguese-local-elections--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    }
+  ],
+  "from": "constitution-1976",
+  "to": "1979-portuguese-local-elections",
+  "type": "enabled",
+  "confidence": "consensus",
+  "explanation": "The clause that created elected local government in 1976 is what this ballot exercises, and the atlas wires it separately from the first exercise of that clause because the second time is when the thing became an institution rather than an act of foundation. The mandates run four years and the calendar is the constitution's, not the government's: 1979 falls a fortnight after a legislative election it had nothing to do with, and no local election since has been called by anybody.",
+  "dispute": null
+}

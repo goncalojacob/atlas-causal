@@ -9,14 +9,19 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "summary-drafted"
     ]
   },
   "wikidata": "Q10271597",
@@ -26,12 +31,24 @@
   },
   "sources": [
     {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Eleições legislativas regionais na Madeira em 1976\", revision 70848422"
+    },
+    {
       "source": "wikidata",
-      "locator": "Q10271597"
+      "locator": null
     }
   ],
   "title": "eleições legislativas regionais na Madeira em 1976",
-  "summary": "Wikidata item Q10271597, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "Madeira elected the first Legislative Assembly of its autonomous region on 27 June 1976, the same day as the Azores and as the presidential election. The Popular Democratic Party won a majority. The seat had been made three months earlier by the constitution, which gave both Atlantic archipelagos political autonomy — a statute, an elected assembly and a government of their own — rather than the district administration they had had under the Estado Novo. It is in the atlas as the beginning of a regional politics that has run on its own clock ever since, and which in Madeira produced the longest single tenure of the democratic period.",
   "when": {
     "start": 1976,
     "end": 1976,
@@ -39,5 +56,14 @@
   },
   "place": null,
   "region": "europe",
-  "actors": []
+  "actors": [
+    {
+      "actor": "psd",
+      "role": "won a majority of the new assembly"
+    },
+    {
+      "actor": "third-portuguese-republic",
+      "role": "the state creating the region"
+    }
+  ]
 }

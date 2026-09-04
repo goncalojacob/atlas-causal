@@ -9,14 +9,19 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "summary-drafted"
     ]
   },
   "wikidata": "Q1579644",
@@ -27,12 +32,28 @@
   },
   "sources": [
     {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1979 Portuguese legislative election\", revision 1371827641"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Eleições legislativas portuguesas de 1979\", revision 72177876"
+    },
+    {
       "source": "wikidata",
-      "locator": "Q1579644"
+      "locator": null
     }
   ],
   "title": "1979 Portuguese legislative election",
-  "summary": "Wikidata item Q1579644, imported by tools/import/wikidata.mjs. The item's own description reads \"election\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "An early legislative election was held on 2 December 1979 and returned 250 deputies, thirteen fewer than in 1976. The Democratic Alliance — the Social Democrats, the CDS and the monarchists of the PPM, assembled by Francisco Sá Carneiro — won an absolute majority, and Sá Carneiro formed a government the following January. It was the first parliamentary majority the country had voted for directly, after three and a half years of minority cabinets and of governments named by the president, and because the ballot only filled out the legislature elected in 1976 the alliance had to go back to the country in October 1980, where it won again. It is in the atlas as the end of the unstable half of the decade and the beginning of the majority that negotiated the constitutional revision of 1982.",
   "when": {
     "start": 1979,
     "end": 1979,
@@ -40,5 +61,18 @@
   },
   "place": null,
   "region": "europe",
-  "actors": []
+  "actors": [
+    {
+      "actor": "psd",
+      "role": "led the winning alliance"
+    },
+    {
+      "actor": "cds-pp",
+      "role": "partner in the winning alliance"
+    },
+    {
+      "actor": "partido-socialista",
+      "role": "lost office"
+    }
+  ]
 }

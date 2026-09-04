@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "mozambique-war-begins-1964--1977-mozambican-general-election--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "macqueen-1997-decolonization",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    }
+  ],
+  "from": "mozambique-war-begins-1964",
+  "to": "1977-mozambican-general-election",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The war that opened at Chai in September 1964 is what made FRELIMO the government of Mozambique. It fought the Portuguese state for ten years; it was recognised at Lusaka in 1974 as the only party Lisbon would negotiate the transfer with, without a ballot being held to establish that; and it took the state whole at independence in June 1975. The election of 1977 is that state asking to be confirmed by a single list. The monopoly on the paper is the war's monopoly on the nationalist movement carried into government — which is also why the atlas can wire this ballot at all, where it retracted the colonial elections of the same country before 1974.",
+  "dispute": null
+}

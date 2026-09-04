@@ -9,14 +9,19 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "summary-drafted"
     ]
   },
   "wikidata": "Q4832852",
@@ -27,12 +32,28 @@
   },
   "sources": [
     {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1976 Azorean regional election\", revision 1360996913"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Eleições legislativas regionais nos Açores em 1976\", revision 70826498"
+    },
+    {
       "source": "wikidata",
-      "locator": "Q4832852"
+      "locator": null
     }
   ],
   "title": "1976 Azorean regional election",
-  "summary": "Wikidata item Q4832852, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The first Legislative Assembly of the Autonomous Region of the Azores was elected on 27 June 1976, the same day as the presidential election on the mainland. The Popular Democratic Party won a majority under João Bosco Mota Amaral, who went on to lead the regional government for two decades. The assembly existed at all because the constitution approved that April had given the Azores and Madeira political autonomy with assemblies and governments of their own, in place of the districts the Estado Novo had administered from Lisbon. It is in the atlas as the point at which that settlement was first put to voters, in the archipelago whose autonomist movement had been the loudest of the two in 1975.",
   "when": {
     "start": 1976,
     "end": 1976,
@@ -40,5 +61,14 @@
   },
   "place": null,
   "region": "europe",
-  "actors": []
+  "actors": [
+    {
+      "actor": "psd",
+      "role": "won a majority of the new assembly"
+    },
+    {
+      "actor": "third-portuguese-republic",
+      "role": "the state creating the region"
+    }
+  ]
 }

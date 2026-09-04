@@ -1,7 +1,7 @@
 {
   "counts": {
-    "actors": 324,
-    "edges": 115,
+    "actors": 326,
+    "edges": 124,
     "events": 326,
     "narratives": 1,
     "places": 25,
@@ -11,9 +11,9 @@
     "sources": 34
   },
   "files": {
-    "review": "index/review-81aff325bcae.json",
-    "sources": "index/sources-048bd6ac5096.json",
-    "topology": "index/topology-7ab5a1a6a710.json"
+    "review": "index/review-8097d34750c8.json",
+    "sources": "index/sources-2a74de213c27.json",
+    "topology": "index/topology-12ed5877d4e3.json"
   },
   "land": [
     {
@@ -105,6 +105,7 @@
     "created",
     "declared it",
     "defeated",
+    "departing colonial power",
     "deposed",
     "discredited",
     "dispossessed",
@@ -135,12 +136,15 @@
     "leader",
     "leader of the winning party",
     "led the campaign for a no vote",
+    "led the winning alliance",
     "legislator",
     "lender",
+    "lost office",
     "movement",
     "nationalised it",
     "negotiated and signed for portugal",
     "negotiator",
+    "occupying power",
     "opponent",
     "opposition candidate, withdrew",
     "opposition front, withdrew before the poll",
@@ -151,6 +155,7 @@
     "outgoing head of government",
     "outgoing party",
     "outgoing president",
+    "partner in the winning alliance",
     "party leader",
     "party of origin",
     "patron",
@@ -170,7 +175,10 @@
     "restored",
     "sheltered and armed the gunmen",
     "signatory",
+    "signed as prime minister",
     "sole candidate, elected president",
+    "sole legal party",
+    "sole legal party and sole list",
     "sole party, took all 120 seats",
     "stood clandestinely inside the cde lists",
     "successor",
@@ -184,12 +192,17 @@
     "the regime seeking a constitutional form",
     "the regime whose foreign policy it set",
     "the regime whose office was filled",
+    "the state being founded",
+    "the state constituting local power",
+    "the state creating the region",
+    "the state holding the election",
     "took all 130 seats",
     "victim",
     "winner",
     "withdrew",
     "won 106 of 163 seats in the chamber",
     "won 229 of 234 seats",
+    "won a majority of the new assembly",
     "younger son, succeeded to the throne"
   ],
   "schema": 1

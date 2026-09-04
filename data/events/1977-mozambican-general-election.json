@@ -9,14 +9,19 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "summary-drafted"
     ]
   },
   "wikidata": "Q1731920",
@@ -26,12 +31,24 @@
   },
   "sources": [
     {
+      "source": "macqueen-1997-decolonization",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1977 Mozambican general election\", revision 1364484209"
+    },
+    {
       "source": "wikidata",
-      "locator": "Q1731920"
+      "locator": null
     }
   ],
   "title": "1977 Mozambican general election",
-  "summary": "Wikidata item Q1731920, imported by tools/import/wikidata.mjs. The item's own description reads \"First Elections of the Republic of Mozambique\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "Mozambique held its first elections after independence in 1977, with FRELIMO as the only legal party. The movement had fought the Portuguese state from 1964, been recognised at Lusaka in September 1974 as the party Portugal would hand over to, and taken the state at independence on 25 June 1975; its third congress, in February 1977, had just declared it a Marxist-Leninist vanguard party. The ballot returned a People's Assembly from lists the party controlled. It is in the atlas as the form independence took in the largest of the African territories, and as the far end of the chain that begins with the attack at Chai in 1964.",
   "when": {
     "start": 1977,
     "end": 1977,
@@ -39,5 +56,10 @@
   },
   "place": null,
   "region": "africa",
-  "actors": []
+  "actors": [
+    {
+      "actor": "frelimo",
+      "role": "sole legal party"
+    }
+  ]
 }

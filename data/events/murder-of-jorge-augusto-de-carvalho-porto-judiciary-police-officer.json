@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "murder-of-jorge-augusto-de-carvalho-porto-judiciary-police-officer",
   "kind": "event",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,11 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "m22-retracted"
+    ],
+    "note": "Retracted in M22: the killing of a Judiciary Police officer, Jorge Augusto de Carvalho, by the Brigadas Revolucionárias in Porto on 21 March 1978. The atlas holds no record of the armed far left — not the PRP-BR, not the FP-25, not the trials — so there is nothing for an action of theirs to attach to in either direction, and any edge would be invented. Revisit once the organisations themselves are here."
   },
   "wikidata": "Q112073029",
   "sitelinks": 0,

@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "constitution-1976--1976-azorean-regional-election--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    }
+  ],
+  "from": "constitution-1976",
+  "to": "1976-azorean-regional-election",
+  "type": "enabled",
+  "confidence": "consensus",
+  "explanation": "Autonomy for the Atlantic archipelagos is written into the constitution of 2 April 1976: the Azores and Madeira are autonomous regions with statutes of their own, a legislative assembly elected by their voters and a regional government answering to it. Nothing of the kind had existed under the Estado Novo, which ran the islands as districts. The assembly elected on 27 June is that clause taking physical form eleven weeks after the constitution came into force, and the date of the ballot — the same day as the presidential election — is itself the state hurrying to fill the institutions it had just created.",
+  "dispute": null
+}

@@ -3012,6 +3012,23 @@
       }
     },
     {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "mlstp",
+      "name": "MLSTP",
+      "names": [
+        "MLSTP",
+        "Movimento de Libertação de São Tomé e Príncipe",
+        "Movement for the Liberation of São Tomé and Príncipe"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 1972
+      }
+    },
+    {
       "actorType": "polity",
       "aliases": [],
       "id": "moldova",
@@ -4168,6 +4185,23 @@
       "wikipedia": {
         "en": "António de Oliveira Salazar",
         "pt": "António de Oliveira Salazar"
+      }
+    },
+    {
+      "actorType": "polity",
+      "aliases": [],
+      "id": "sao-tome-and-principe",
+      "name": "São Tomé and Príncipe",
+      "names": [
+        "São Tomé and Príncipe",
+        "São Tomé e Príncipe",
+        "Democratic Republic of São Tomé and Príncipe"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 1975
       }
     },
     {
@@ -5382,6 +5416,16 @@
     },
     {
       "aliases": [],
+      "confidence": "probable",
+      "from": "1979-portuguese-legislative-election",
+      "id": "1979-portuguese-legislative-election--constitutional-revision-1982--enabled",
+      "status": "active",
+      "supersededBy": null,
+      "to": "constitutional-revision-1982",
+      "type": "enabled"
+    },
+    {
+      "aliases": [],
       "confidence": "consensus",
       "from": "25-november-1975",
       "id": "25-november-1975--constitution-1976--enabled",
@@ -5519,6 +5563,16 @@
       "supersededBy": null,
       "to": "carnation-revolution-1974",
       "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "consensus",
+      "from": "carnation-revolution-1974",
+      "id": "carnation-revolution-1974--1975-sao-tomean-legislative-election--enabled",
+      "status": "active",
+      "supersededBy": null,
+      "to": "1975-sao-tomean-legislative-election",
+      "type": "enabled"
     },
     {
       "aliases": [],
@@ -5662,6 +5716,36 @@
     },
     {
       "aliases": [],
+      "confidence": "consensus",
+      "from": "constitution-1976",
+      "id": "constitution-1976--1976-azorean-regional-election--enabled",
+      "status": "active",
+      "supersededBy": null,
+      "to": "1976-azorean-regional-election",
+      "type": "enabled"
+    },
+    {
+      "aliases": [],
+      "confidence": "consensus",
+      "from": "constitution-1976",
+      "id": "constitution-1976--1976-portuguese-local-elections--enabled",
+      "status": "active",
+      "supersededBy": null,
+      "to": "1976-portuguese-local-elections",
+      "type": "enabled"
+    },
+    {
+      "aliases": [],
+      "confidence": "consensus",
+      "from": "constitution-1976",
+      "id": "constitution-1976--1979-portuguese-local-elections--enabled",
+      "status": "active",
+      "supersededBy": null,
+      "to": "1979-portuguese-local-elections",
+      "type": "enabled"
+    },
+    {
+      "aliases": [],
       "confidence": "probable",
       "from": "constitution-1976",
       "id": "constitution-1976--constitutional-revision-1982--precondition-of",
@@ -5688,6 +5772,16 @@
       "status": "active",
       "supersededBy": null,
       "to": "eec-application-1977",
+      "type": "enabled"
+    },
+    {
+      "aliases": [],
+      "confidence": "consensus",
+      "from": "constitution-1976",
+      "id": "constitution-1976--eleicoes-legislativas-regionais-na-madeira-em-1976--enabled",
+      "status": "active",
+      "supersededBy": null,
+      "to": "eleicoes-legislativas-regionais-na-madeira-em-1976",
       "type": "enabled"
     },
     {
@@ -5839,6 +5933,16 @@
       "supersededBy": null,
       "to": "east-timor-independence-2002",
       "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "east-timor-invasion-1975",
+      "id": "east-timor-invasion-1975--hat-nipah-and-same-massacres--enabled",
+      "status": "active",
+      "supersededBy": null,
+      "to": "hat-nipah-and-same-massacres",
+      "type": "enabled"
     },
     {
       "aliases": [],
@@ -6033,6 +6137,16 @@
     {
       "aliases": [],
       "confidence": "probable",
+      "from": "iberian-pact",
+      "id": "iberian-pact--treaty-of-friendship-and-cooperation-between-spain-and-portugal--reacted-to",
+      "status": "active",
+      "supersededBy": null,
+      "to": "treaty-of-friendship-and-cooperation-between-spain-and-portugal",
+      "type": "reacted-to"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
       "from": "imf-agreement-1978",
       "id": "imf-agreement-1978--imf-agreement-1983--precondition-of",
       "status": "active",
@@ -6159,6 +6273,16 @@
       "supersededBy": null,
       "to": "government-falls-2025",
       "type": "caused"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "mozambique-war-begins-1964",
+      "id": "mozambique-war-begins-1964--1977-mozambican-general-election--enabled",
+      "status": "active",
+      "supersededBy": null,
+      "to": "1977-mozambican-general-election",
+      "type": "enabled"
     },
     {
       "aliases": [],
@@ -7716,8 +7840,8 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
-      "supersededBy": null,
+      "status": "merged",
+      "supersededBy": "constituent-assembly-election-1975",
       "title": "1975 Portuguese Constituent Assembly election",
       "weight": 0,
       "when": {
@@ -7732,7 +7856,20 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "mlstp",
+          "role": "sole legal party and sole list"
+        },
+        {
+          "actor": "sao-tome-and-principe",
+          "role": "the state being founded"
+        },
+        {
+          "actor": "third-portuguese-republic",
+          "role": "departing colonial power"
+        }
+      ],
       "aliases": [],
       "id": "1975-sao-tomean-legislative-election",
       "place": null,
@@ -7741,7 +7878,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "1975 São Toméan legislative election",
-      "weight": 0,
+      "weight": 4,
       "when": {
         "end": 1975,
         "start": 1975
@@ -7752,7 +7889,16 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "psd",
+          "role": "won a majority of the new assembly"
+        },
+        {
+          "actor": "third-portuguese-republic",
+          "role": "the state creating the region"
+        }
+      ],
       "aliases": [],
       "id": "1976-azorean-regional-election",
       "place": null,
@@ -7761,7 +7907,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "1976 Azorean regional election",
-      "weight": 0,
+      "weight": 3,
       "when": {
         "date": "1976-06-27",
         "end": 1976,
@@ -7780,8 +7926,8 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
-      "supersededBy": null,
+      "status": "merged",
+      "supersededBy": "legislative-election-1976",
       "title": "1976 Portuguese legislative election",
       "weight": 0,
       "when": {
@@ -7796,7 +7942,12 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "third-portuguese-republic",
+          "role": "the state constituting local power"
+        }
+      ],
       "aliases": [],
       "id": "1976-portuguese-local-elections",
       "place": null,
@@ -7805,7 +7956,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "1976 Portuguese local elections",
-      "weight": 0,
+      "weight": 2,
       "when": {
         "date": "1976-12-12",
         "end": 1976,
@@ -7824,8 +7975,8 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
-      "supersededBy": null,
+      "status": "merged",
+      "supersededBy": "eanes-elected-1976",
       "title": "1976 Portuguese presidential election",
       "weight": 0,
       "when": {
@@ -7840,7 +7991,12 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "frelimo",
+          "role": "sole legal party"
+        }
+      ],
       "aliases": [],
       "id": "1977-mozambican-general-election",
       "place": null,
@@ -7849,7 +8005,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "1977 Mozambican general election",
-      "weight": 0,
+      "weight": 2,
       "when": {
         "date": "1977-09-25",
         "end": 1977,
@@ -7861,7 +8017,20 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "psd",
+          "role": "led the winning alliance"
+        },
+        {
+          "actor": "cds-pp",
+          "role": "partner in the winning alliance"
+        },
+        {
+          "actor": "partido-socialista",
+          "role": "lost office"
+        }
+      ],
       "aliases": [],
       "id": "1979-portuguese-legislative-election",
       "place": null,
@@ -7870,7 +8039,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "1979 Portuguese legislative election",
-      "weight": 0,
+      "weight": 4,
       "when": {
         "date": "1979-12-02",
         "end": 1979,
@@ -7883,7 +8052,12 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "third-portuguese-republic",
+          "role": "the state holding the election"
+        }
+      ],
       "aliases": [],
       "id": "1979-portuguese-local-elections",
       "place": null,
@@ -7892,7 +8066,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "1979 Portuguese local elections",
-      "weight": 0,
+      "weight": 2,
       "when": {
         "date": "1979-12-16",
         "end": 1979,
@@ -10282,7 +10456,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "Assalto ao Banco de Angola, na Damaia, em 21 de Outubro de 1975",
       "weight": 0,
@@ -10318,7 +10492,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "Assalto ao Banco Pinto e Sottomayor de Lisboa, em Soure",
       "weight": 0,
@@ -10336,7 +10510,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "Assalto ao Banco Pinto e Sottomayor, em Albufeira, em 17 de Agosto de 1976",
       "weight": 0,
@@ -10412,7 +10586,7 @@
       "place": "porto",
       "region": "europe",
       "regionMethod": "inside",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "Assassination of José Ferreira da Rocha, by the PRP-BR",
       "weight": 0,
@@ -10430,7 +10604,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "Assassinato de José Óscar de Vasconcelos",
       "weight": 0,
@@ -10466,7 +10640,7 @@
       "place": "lisbon",
       "region": "europe",
       "regionMethod": "inside",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "Assault on Banco Totta e Açores, on Avenida da República, in Lisbon, on May 21, 1976",
       "weight": 0,
@@ -10913,7 +11087,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "25 April",
-      "weight": 20,
+      "weight": 21,
       "when": {
         "calendar": "gregorian",
         "date": "1974-04-25",
@@ -11081,7 +11255,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Constitution of 1976",
-      "weight": 8,
+      "weight": 12,
       "when": {
         "calendar": "gregorian",
         "date": "1976-04-02",
@@ -11143,7 +11317,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "The revision that abolishes the Council of the Revolution",
-      "weight": 6,
+      "weight": 7,
       "when": {
         "calendar": "gregorian",
         "date": "1982-09-30",
@@ -11502,7 +11676,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Indonesia invades East Timor",
-      "weight": 5,
+      "weight": 6,
       "when": {
         "calendar": "gregorian",
         "date": "1975-12-07",
@@ -11577,7 +11751,16 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "psd",
+          "role": "won a majority of the new assembly"
+        },
+        {
+          "actor": "third-portuguese-republic",
+          "role": "the state creating the region"
+        }
+      ],
       "aliases": [],
       "id": "eleicoes-legislativas-regionais-na-madeira-em-1976",
       "place": null,
@@ -11586,7 +11769,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "eleições legislativas regionais na Madeira em 1976",
-      "weight": 0,
+      "weight": 3,
       "when": {
         "date": "1976-06-27",
         "end": 1976,
@@ -12175,7 +12358,12 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "indonesia",
+          "role": "occupying power"
+        }
+      ],
       "aliases": [],
       "id": "hat-nipah-and-same-massacres",
       "place": null,
@@ -12184,7 +12372,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Hat Nipah and Same massacres",
-      "weight": 0,
+      "weight": 2,
       "when": {
         "date": "1976-01-27",
         "end": 1976,
@@ -12253,7 +12441,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "The Iberian Pact",
-      "weight": 4,
+      "weight": 5,
       "when": {
         "calendar": "gregorian",
         "date": "1939-03-17",
@@ -12968,7 +13156,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Beginning of the war in Mozambique",
-      "weight": 5,
+      "weight": 6,
       "when": {
         "calendar": "gregorian",
         "date": "1964-09-25",
@@ -13062,7 +13250,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "Murder of Jorge Augusto de Carvalho, Porto Judiciary Police officer",
       "weight": 0,
@@ -13080,7 +13268,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "Murder of Jose Manuel Placido",
       "weight": 0,
@@ -13480,7 +13668,7 @@
       "place": null,
       "region": "asia",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "Q55499125",
       "weight": 0,
@@ -13498,7 +13686,7 @@
       "place": null,
       "region": "asia",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "Q55499135",
       "weight": 0,
@@ -13516,7 +13704,7 @@
       "place": null,
       "region": "asia",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "Q5941661",
       "weight": 0,
@@ -13633,7 +13821,7 @@
       "place": "porto",
       "region": "europe",
       "regionMethod": "inside",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "Robbery of Banco Borges & Irmão, in Monte dos Burgos, Porto, November 4, 1977",
       "weight": 0,
@@ -13669,7 +13857,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "Robbery of Banco Totta and Azores, in Mira de Aire, on October 15, 1975",
       "weight": 0,
@@ -13687,7 +13875,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "Robbery of Banco Totta e Açores, in Seia, on February 1, 1977",
       "weight": 0,
@@ -14019,7 +14207,16 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "third-portuguese-republic",
+          "role": "signatory"
+        },
+        {
+          "actor": "mario-soares",
+          "role": "signed as prime minister"
+        }
+      ],
       "aliases": [],
       "id": "treaty-of-friendship-and-cooperation-between-spain-and-portugal",
       "place": null,
@@ -14028,7 +14225,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Treaty of Friendship and Cooperation between Spain and Portugal",
-      "weight": 0,
+      "weight": 3,
       "when": {
         "date": "1977-11-22",
         "end": 1977,

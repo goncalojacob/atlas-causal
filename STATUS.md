@@ -2038,6 +2038,30 @@ object. Every later card gets a file.
     (Batepá: about 1,032 São Toméan sources, about 200 Portuguese) are in the
     prose for the same reason.
 
+157. **M22 works under a rule the owner set after M21 shipped.** On
+    4 September 2026 the two-edge rule of the M21 and M22 briefs was replaced:
+    one honest edge, in either direction, is enough to keep an event; only an
+    event with no honest edge at all is retracted; and no edge is ever written
+    in order to keep an event. M22 applies it to 1975 and after, and
+    reinstates the M21 retractions that had one honest edge. Both briefs still
+    say "two"; this line is what overrides them.
+158. **Two dataset-dependent test counts moved, and nothing was relaxed.**
+    `tests/graph.test.mjs` and `tests/horizon.test.mjs` assert what 25 April
+    had led to by 2011 against the repository's own records, not a fixture:
+    23 became 29 and the direct consequences 7 became 8, because the 1970s
+    commit wired six events into that cone. The assertions are as strict as
+    they were; the dataset under them grew. Any run that wires an event
+    descending from 25 April before 2011 will move them again.
+159. **M22 keeps deviation 153's practice: no record references a
+    CC BY-NC-SA actor.** The natural counterparties for four of the 1970s
+    events were `portugal`, `spain`, `mozambique` and `east-timor`, all
+    created by the CShapes import under the non-commercial licence. Rather
+    than start a practice the owner has not ruled on, the São Tomé election
+    and the 1977 treaty name `third-portuguese-republic`, the Mozambican
+    election names FRELIMO alone and the Timor massacres name Indonesia, whose
+    actor record was written by hand. The states left out are in the prose.
+    **Still a question for the owner**, and it costs more with every run.
+
 ## Dates to verify
 
 Everything below was written from memory and is where the owner's review

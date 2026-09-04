@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "constitution-1976--1976-portuguese-local-elections--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    }
+  ],
+  "from": "constitution-1976",
+  "to": "1976-portuguese-local-elections",
+  "type": "enabled",
+  "confidence": "consensus",
+  "explanation": "The constitution of 1976 makes local government an elected power of the state rather than an arm of the administration: freguesia, município and region are autarquias locais with their own organs, chosen by their own voters. The Estado Novo had appointed presidents of chambers, and the revolutionary period had run municipalities through administrative commissions named from the centre. The ballot of 12 December 1976 is the first time the constitutional clause was exercised, and everything the atlas holds under local elections after it descends from that clause and not from any of them.",
+  "dispute": null
+}
