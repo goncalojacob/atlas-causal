@@ -187,7 +187,17 @@ export function barBox(event, scale, { width = null, openEnd = null, minBar = 6 
     ? (openEnd === null ? (width ?? x0) : scale.x(openEnd))
     : scale.x(x.max);
   const span = x1 - x0;
-  return { x: x0 - (span < minBar ? minBar / 2 : 0), width: Math.max(span, minBar), ongoing: x.max === null };
+  // `instant` is a fact about the drawing and not about the record: an event
+  // whose interval is narrower than the smallest bar the timeline can draw
+  // has been widened to be visible at all, and it is drawn as a mark rather
+  // than as a bar so that a six-pixel rounded rectangle does not read as a
+  // little empty ring.
+  return {
+    x: x0 - (span < minBar ? minBar / 2 : 0),
+    width: Math.max(span, minBar),
+    ongoing: x.max === null,
+    instant: span < minBar,
+  };
 }
 
 // Events into as many rows as it takes for no two bars to overlap at this

@@ -71,6 +71,25 @@ function classes(...list) {
   return list.filter(Boolean).join(' ');
 }
 
+// The key to the five line patterns, in the corner of the view that uses
+// them. Drawn with the very same classes the edges are drawn with, so the
+// key cannot come to disagree with the picture; about.html carries the same
+// six lines for the same reason. Outside the SVG, so panning and zooming
+// leave it where it is.
+export function edgeKey() {
+  const box = document.createElement('div');
+  box.className = 'graph-key';
+  const line = (type, extra = '') => `<svg class="graph key-line" viewBox="0 0 62 12" aria-hidden="true">
+      <line class="edge type-${type} ${extra}" x1="1" y1="6" x2="50" y2="6"/>
+      <polygon class="edge-head type-${type}" points="60,6 50,3 50,9"/></svg>`;
+  box.innerHTML = `<h2>Links</h2><dl class="edge-key">
+    ${['caused', 'enabled', 'reacted-to', 'precondition-of', 'inspired']
+      .map((type) => `<dt>${line(type)}</dt><dd>${type}</dd>`).join('')}
+    <dt>${line('caused', 'disputed')}</dt><dd>any type, disputed</dd>
+  </dl>`;
+  return box;
+}
+
 export function createGraphView(container, { atlas, state }) {
   // The arrangement depends on which events are shown and what the bands
   // are, and both of those change under the reader: it is rebuilt when they
@@ -263,6 +282,7 @@ export function createGraphView(container, { atlas, state }) {
   }
 
   container.append(root);
+  container.append(edgeKey());
 
   function render(s) {
     arrange(s);

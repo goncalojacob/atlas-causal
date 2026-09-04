@@ -53,11 +53,15 @@ function territoryHtml(ctx, actor) {
     const sovereign = presence.dependencyOf && presence.dependencyOf !== actor.id
       ? ` <span class="muted">of</span> <button type="button" class="link" data-action="actor" data-id="${esc(presence.dependencyOf)}">${esc(ctx.atlas.actors.get(presence.dependencyOf)?.name ?? presence.dependencyOf)}</button>`
       : '';
+    // Three cells: what, when, and the way in. Everything else — the kind of
+    // dependency, whose it was, the capital — is a second line under them, so
+    // that a dozen periods read as a table and not as a dozen paragraphs.
     return `<li class="actor-row">
-      ${name}<span class="when">${esc(formatInterval(presence.when))}</span>
-      ${kind}${sovereign}
-      ${presence.capital ? `<span class="muted">${esc(presence.capital.label)}</span>` : ''}
-      <button type="button" class="link small" data-action="year" data-year="${esc(bounds(presence.when.start).min)}">map at ${esc(formatYear(bounds(presence.when.start).min))}</button>
+      <span class="row-what">${name || `<span class="muted">its own ground</span>`}</span>
+      <span class="when">${esc(formatInterval(presence.when))}</span>
+      <button type="button" class="link small row-go" data-action="year" data-year="${esc(bounds(presence.when.start).min)}">map at ${esc(formatYear(bounds(presence.when.start).min))}</button>
+      ${kind || sovereign || presence.capital ? `<span class="row-meta">${kind}${sovereign}
+        ${presence.capital ? `<span class="muted">${esc(presence.capital.label)}</span>` : ''}</span>` : ''}
     </li>`;
   };
   const ownRows = own.map((p) => row(p, ''));
@@ -94,9 +98,9 @@ function relationsHtml(ctx, actor) {
     if (!rows) continue;
     const [type, direction] = key.split(':');
     const items = rows.map(({ relation, other }) => `<li class="actor-row">
-      <button type="button" class="link" data-action="actor" data-id="${esc(other)}">${esc(ctx.atlas.actors.get(other)?.name ?? other)}</button>
+      <span class="row-what"><button type="button" class="link" data-action="actor" data-id="${esc(other)}">${esc(ctx.atlas.actors.get(other)?.name ?? other)}</button></span>
       <span class="when">${esc(formatInterval(relation.when))}</span>
-      ${relation.note ? `<span class="muted">${esc(relation.note)}</span>` : ''}
+      ${relation.note ? `<span class="row-meta muted">${esc(relation.note)}</span>` : ''}
     </li>`);
     sections.push(`<h3>${esc(RELATION_LABEL[type][direction])}</h3><ul class="actor-rows">${items.join('')}</ul>`);
   }

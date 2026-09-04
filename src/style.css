@@ -2,6 +2,47 @@
    path being followed. Every colour is a token here; nothing else in the
    codebase names a hex value. */
 
+/* The two typefaces, served from this repository and from nowhere else: no
+   CDN, no Google Fonts, nobody else told which reader opened which page.
+   src/fonts/README.md says what they are, where each file came from and
+   which licence it carries.
+
+   EB Garamond for anything the atlas says — titles, summaries, the argument
+   under a link — because it is a revival of a roman cut in the 1540s, inside
+   the period this project exists to describe. Public Sans for anything the
+   interface says — labels, axes, counts, controls — because a humanist
+   old-style at eleven pixels on a timeline axis is unreadable and a
+   grotesque is not.
+
+   `swap`: the text is readable in the fallback while 425 KB of Garamond
+   arrives, and the fallbacks are metrically close enough that the reflow is
+   not a lurch. */
+@font-face {
+  font-family: "EB Garamond";
+  src: url("fonts/EBGaramond-Regular.woff2") format("woff2");
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "EB Garamond";
+  src: url("fonts/EBGaramond-Italic.woff2") format("woff2");
+  font-weight: 400; font-style: italic; font-display: swap;
+}
+@font-face {
+  font-family: "Public Sans";
+  src: url("fonts/PublicSans-Regular.woff2") format("woff2");
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Public Sans";
+  src: url("fonts/PublicSans-Italic.woff2") format("woff2");
+  font-weight: 400; font-style: italic; font-display: swap;
+}
+@font-face {
+  font-family: "Public Sans";
+  src: url("fonts/PublicSans-SemiBold.woff2") format("woff2");
+  font-weight: 600; font-style: normal; font-display: swap;
+}
+
 :root {
   --ground: #f4f7fb;
   --paper: #ffffff;
@@ -46,45 +87,154 @@
   --terr-7: #c2b3ef;  --terr-7-tint: #d7cdf9;  --terr-7-line: #6f5aa1;
   --terr-8: #e7a8c8;  --terr-8-tint: #f4c4dc;  --terr-8-line: #954c75;
 
-  --font: "Georgia", "Times New Roman", serif;
-  --font-ui: system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font: "EB Garamond", Georgia, "Times New Roman", serif;
+  --font-ui: "Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  /* The type scale. Seven sizes and no others, on a ratio near 1.2, in rem
+     so that a reader who has set their browser to 20px gets a bigger atlas
+     rather than the same one. Nothing outside this block names a font-size
+     in pixels except the SVG text the views draw, which is measured in the
+     same user units as the geometry beside it and cannot be in rem. */
+  --text-xs: 0.6875rem;    /* 11px: badges, axis labels, an aside on a row */
+  --text-sm: 0.8125rem;    /* 13px: meta, hints, counts */
+  --text-base: 0.9375rem;  /* 15px: the interface */
+  --text-md: 1.0625rem;    /* 17px: prose, set in the serif */
+  --text-lg: 1.25rem;      /* 20px: a section head */
+  --text-xl: 1.5rem;       /* 24px: a card's title */
+  --text-2xl: 1.9375rem;   /* 31px: the masthead */
+  --leading-tight: 1.25;
+  --leading: 1.5;
+  --leading-prose: 1.62;
+  /* A caps-and-tracking label; used often enough to be one decision. */
+  --label: var(--text-xs);
+  --tracking-label: 0.08em;
+
+  /* Spacing, on the same footing as the type: hierarchy in this panel is
+     made of space and rules rather than of boxes inside boxes. */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2.25rem;
+  /* Where a paragraph is allowed to stop. Around 68 characters of Garamond,
+     which is the width a line stops being followable at. */
+  --measure: 34rem;
+
+  --radius: 3px;
+  --focus-width: 2px;
 }
 
 * { box-sizing: border-box; }
 
-html, body {
+html {
+  /* Not a pixel size: 100% is whatever the reader has told their browser
+     they can read, and every size above is relative to it. */
+  font-size: 100%;
+  height: 100%;
+}
+
+body {
   margin: 0;
   height: 100%;
+  /* The atlas fills the viewport: masthead, then the three views. A column
+     rather than the old calc() against a header of a known height, which the
+     masthead stopped being the moment it could wrap. */
+  display: flex;
+  flex-direction: column;
   background: var(--ground);
   color: var(--ink);
   font-family: var(--font-ui);
-  font-size: 14px;
-  line-height: 1.45;
+  font-size: var(--text-base);
+  line-height: var(--leading);
+  /* Dates, counts and years line up in a column everywhere, which is most of
+     what the interface is made of; the serif prose turns it off again. */
+  font-variant-numeric: tabular-nums;
 }
 
 button { font: inherit; }
 
+/* One focus ring, everywhere, and it is visible. :focus-visible so that a
+   mouse click does not leave a ring behind but the keyboard always does. */
+:focus-visible {
+  outline: var(--focus-width) solid var(--cobalt);
+  outline-offset: 1px;
+}
+
+/* Nothing moves for a reader who has asked for less motion. The map's zoom
+   already checks this in JavaScript, because it animates a transform frame by
+   frame; this covers everything CSS does. */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* --- the masthead ----------------------------------------------------- */
+
+/* Every page wears the same bar, and it carries the one azulejo touch in the
+   whole interface: a tile band along its lower edge instead of a hairline.
+   Drawn as a mask rather than as an image or as markup, so the shape is SVG,
+   the colour is a token like every other colour, and the five pages share one
+   copy of it instead of pasting the same twenty lines into each. It is a
+   band, not a wallpaper: eight pixels, once, at the join. */
 .bar {
   display: flex;
   align-items: baseline;
-  gap: 1rem;
-  padding: 0.5rem 1rem;
-  border-bottom: 1px solid var(--line);
+  gap: var(--space-4);
+  padding: var(--space-3) var(--space-4) calc(var(--space-3) + 8px);
   background: var(--paper);
+  position: relative;
 }
-.bar h1 { margin: 0; font-family: var(--font); font-size: 1.25rem; color: var(--cobalt); font-weight: normal; }
-.bar .tagline { margin: 0; color: var(--ink-soft); flex: 1; }
-.bar .layers { display: flex; gap: 0.75rem; color: var(--ink-soft); }
+.bar::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  height: 8px;
+  background-color: var(--cobalt-soft);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='8' viewBox='0 0 18 8'%3E%3Cpath d='M9 0.8 13.4 4 9 7.2 4.6 4Z'/%3E%3Crect y='7.4' width='18' height='0.6'/%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='8' viewBox='0 0 18 8'%3E%3Cpath d='M9 0.8 13.4 4 9 7.2 4.6 4Z'/%3E%3Crect y='7.4' width='18' height='0.6'/%3E%3C/svg%3E");
+  -webkit-mask-size: 18px 8px;
+  mask-size: 18px 8px;
+  -webkit-mask-repeat: repeat-x;
+  mask-repeat: repeat-x;
+  opacity: 0.55;
+  pointer-events: none;
+}
+.bar h1 {
+  margin: 0; font-family: var(--font); font-size: var(--text-2xl); color: var(--cobalt);
+  font-weight: normal; line-height: var(--leading-tight); letter-spacing: 0.005em;
+}
+.bar .tagline { margin: 0; color: var(--ink-soft); flex: 1; font-size: var(--text-sm); }
+.bar .layers { display: flex; gap: var(--space-3); color: var(--ink-soft); font-size: var(--text-sm); }
+.bar .layers label { display: inline-flex; align-items: center; gap: 0.3em; }
+
+/* The atlas's own masthead: name, then the controls that change what is
+   drawn, then the ways out. On a narrow screen the three zones stack in that
+   order, which is also their order of importance. */
+.masthead { flex-wrap: wrap; align-items: flex-end; row-gap: var(--space-2); }
+/* The name and what the atlas is for, stacked: the tagline belongs under the
+   title the way a subtitle does, not beside it competing for the same line. */
+.masthead-name { flex: 0 0 auto; max-width: 30ch; }
+.masthead-name .tagline { margin-top: 0.1em; line-height: var(--leading-tight); }
+.masthead-tools { display: flex; align-items: center; gap: var(--space-3); flex-wrap: wrap; flex: 1; }
+.masthead-links { display: flex; align-items: baseline; gap: var(--space-3); margin-left: auto; }
 /* Map | Graph. Two ways of drawing the same records, so the control is a
    pair of buttons and not a menu of unrelated things. */
 .bar .views { display: flex; }
 .bar .views button {
   border: 1px solid var(--cobalt); background: var(--paper); color: var(--cobalt);
-  padding: 0.15rem 0.6rem; cursor: pointer; font: inherit;
+  padding: 0.2rem 0.7rem; cursor: pointer; font: inherit; font-size: var(--text-sm);
+  letter-spacing: 0.01em;
 }
-.bar .views button:first-child { border-radius: 3px 0 0 3px; }
-.bar .views button:last-child { border-radius: 0 3px 3px 0; border-left: 0; }
-.bar .views button[aria-pressed="true"] { background: var(--cobalt); color: var(--paper); }
+.bar .views button:first-child { border-radius: var(--radius) 0 0 var(--radius); }
+.bar .views button:last-child { border-radius: 0 var(--radius) var(--radius) 0; border-left: 0; }
+.bar .views button:hover { background: var(--cobalt-faint); }
+.bar .views button[aria-pressed="true"] { background: var(--cobalt); color: var(--paper); font-weight: 600; }
+.bar .views button[aria-pressed="true"]:hover { background: var(--cobalt); }
 
 /* The grouping picker and the lens badge. The panel is absolutely
    positioned, like the search results, so the header does not grow when it
@@ -92,45 +242,45 @@ button { font: inherit; }
 .bar .grouping { position: relative; display: flex; align-items: baseline; gap: 0.5rem; }
 .grouping-button {
   border: 1px solid var(--line); background: var(--paper); color: var(--cobalt);
-  padding: 0.15rem 0.6rem; border-radius: 3px; cursor: pointer;
+  padding: 0.2rem 0.7rem; border-radius: var(--radius); cursor: pointer; font-size: var(--text-sm);
 }
-.grouping-button:focus-visible { outline: 2px solid var(--cobalt); outline-offset: 1px; }
+.grouping-button:hover { border-color: var(--cobalt-soft); background: var(--cobalt-faint); }
 .grouping-button[aria-expanded="true"] { border-color: var(--cobalt); }
 .grouping-panel {
   position: absolute; z-index: 5; top: calc(100% + 4px); left: 0;
   width: 30ch; max-height: 60vh; overflow-y: auto; padding: 0.5rem 0.6rem;
-  background: var(--paper); border: 1px solid var(--line); border-radius: 3px;
+  background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius);
   box-shadow: 0 2px 8px var(--cobalt-faint);
 }
-.grouping-panel .hint { margin: 0.4rem 0; color: var(--ink-soft); font-size: 0.85rem; }
+.grouping-panel .hint { margin: 0.4rem 0; color: var(--ink-soft); font-size: var(--text-sm); }
 .grouping-choice { display: block; color: var(--ink-soft); }
 .grouping-choice select { font: inherit; margin-left: 0.3rem; }
-.grouping-search { font: inherit; width: 100%; padding: 0.2rem 0.4rem; border: 1px solid var(--line); border-radius: 3px; }
+.grouping-search { font: inherit; width: 100%; padding: 0.2rem 0.4rem; border: 1px solid var(--line); border-radius: var(--radius); }
 .grouping-lanes { list-style: none; margin: 0.4rem 0; padding: 0; }
 .grouping-lane { display: flex; align-items: baseline; gap: 0.3rem; padding: 0.1rem 0; }
 .grouping-lane label { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .grouping-lane.on { color: var(--cobalt); }
-.grouping-lane .count { color: var(--ink-soft); font-size: 0.8rem; }
+.grouping-lane .count { color: var(--ink-soft); font-size: var(--text-sm); }
 .grouping-lane button[disabled] { opacity: 0.3; cursor: default; }
 /* The lens, said in the header: what is on and the way out of it. Cobalt,
    never madder — madder is the path being walked and nothing else. */
 .lens-badge {
   display: inline-flex; align-items: baseline; gap: 0.35rem;
-  padding: 0.1rem 0.5rem; border: 1px solid var(--cobalt); border-radius: 3px;
+  padding: 0.1rem 0.5rem; border: 1px solid var(--cobalt); border-radius: var(--radius);
   background: var(--cobalt-faint); color: var(--cobalt);
 }
-.lens-badge .lens-kind { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em; }
+.lens-badge .lens-kind { font-size: var(--text-xs); text-transform: uppercase; letter-spacing: var(--tracking-label); }
 .lens-badge .lens-name { max-width: 22ch; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .lens-control.on { font-weight: 600; }
 /* A search result the lens does not keep: still listed, plainly marked, and
    still choosable — the lens narrows what is drawn, never what is found. */
 .search-option.outside-lens .search-label { color: var(--ink-soft); }
 .search-option .badge.outside {
-  font-size: 0.7rem; padding: 0 0.3rem; border: 1px solid var(--line);
+  font-size: var(--text-xs); padding: 0 0.3rem; border: 1px solid var(--line);
   border-radius: 2px; color: var(--ink-soft);
 }
 /* Where an event is drawn, and why: the rule stated on the card. */
-.drawn { margin: 0.25rem 0 0; font-size: 0.85rem; }
+.drawn { margin: 0.25rem 0 0; font-size: var(--text-sm); }
 
 /* Search: an input in the header and its results under it. The list is
    absolutely positioned so the header does not grow as you type. */
@@ -140,36 +290,40 @@ button { font: inherit; }
 }
 .search { position: relative; }
 .search-input {
-  font: inherit; width: 22ch; padding: 0.2rem 0.5rem;
-  border: 1px solid var(--line); border-radius: 3px;
+  font: inherit; font-size: var(--text-sm); width: 24ch; padding: 0.25rem 0.55rem;
+  border: 1px solid var(--line); border-radius: var(--radius);
   background: var(--paper); color: var(--ink);
 }
-.search-input:focus { outline: 2px solid var(--cobalt); outline-offset: 1px; }
+.search-input:hover { border-color: var(--cobalt-soft); }
+.search-input:focus { outline: var(--focus-width) solid var(--cobalt); outline-offset: 1px; }
 .search-results {
   position: absolute; z-index: 5; top: calc(100% + 4px); left: 0;
   min-width: 30ch; max-width: 48ch; max-height: 60vh; overflow-y: auto;
   margin: 0; padding: 0.25rem 0; list-style: none;
-  background: var(--paper); border: 1px solid var(--line); border-radius: 3px;
+  background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius);
   box-shadow: 0 2px 8px var(--cobalt-faint);
 }
 .search-group {
-  padding: 0.25rem 0.6rem; font-size: 0.75rem; text-transform: uppercase;
-  letter-spacing: 0.04em; color: var(--ink-soft);
+  padding: 0.25rem 0.6rem; font-size: var(--text-xs); text-transform: uppercase;
+  letter-spacing: var(--tracking-label); color: var(--ink-soft);
 }
 .search-option { padding: 0.25rem 0.6rem; cursor: pointer; display: flex; gap: 0.4rem; align-items: baseline; flex-wrap: wrap; }
 .search-option.active { background: var(--cobalt-faint); }
 .search-option .search-label { color: var(--ink); }
-.search-option .when { color: var(--ink-soft); font-size: 0.85rem; }
+.search-option .when { color: var(--ink-soft); font-size: var(--text-sm); }
 .search-empty { padding: 0.35rem 0.6rem; color: var(--ink-soft); }
-kbd { font-family: var(--font-ui); font-size: 0.9em; padding: 0 0.3em; border: 1px solid var(--line); border-radius: 3px; background: var(--ground); }
-.bar-link { color: var(--cobalt); }
-button.bar-link { background: none; border: 0; padding: 0; font: inherit; text-decoration: underline; cursor: pointer; }
+kbd { font-family: var(--font-ui); font-size: 0.9em; padding: 0 0.3em; border: 1px solid var(--line); border-radius: var(--radius); background: var(--ground); }
+.bar-link { color: var(--cobalt); font-size: var(--text-sm); text-underline-offset: 0.18em; }
+button.bar-link { background: none; border: 0; padding: 0; font: inherit; font-size: var(--text-sm); text-decoration: underline; cursor: pointer; }
+.bar-link:hover { color: var(--ink); }
 .fixtures-badge {
   padding: 0.1rem 0.5rem;
   border: 1px solid var(--madder);
   color: var(--madder);
-  border-radius: 3px;
-  font-size: 0.8rem;
+  border-radius: var(--radius);
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-label);
 }
 
 .layout {
@@ -177,7 +331,8 @@ button.bar-link { background: none; border: 0; padding: 0; font: inherit; text-d
   grid-template-columns: minmax(0, 2fr) minmax(300px, 1fr);
   grid-template-rows: minmax(0, 1fr) auto;
   grid-template-areas: "map panel" "timeline timeline";
-  height: calc(100% - 3rem);
+  flex: 1 1 auto;
+  min-height: 0;
 }
 .map-area { grid-area: map; position: relative; min-height: 0; background: var(--ground); }
 /* The graph view takes the map's slot; one of the two is hidden at a time. */
@@ -195,7 +350,7 @@ button.bar-link { background: none; border: 0; padding: 0; font: inherit; text-d
     grid-template-columns: 1fr;
     grid-template-rows: 50vh auto auto;
     grid-template-areas: "map" "timeline" "panel";
-    height: auto;
+    flex: 0 0 auto;
   }
   .panel { border-left: 0; border-top: 1px solid var(--line); }
 }
@@ -363,20 +518,43 @@ button.bar-link { background: none; border: 0; padding: 0; font: inherit; text-d
 .graph .node.in-horizon.mid { opacity: 0.72; }
 .graph .node.in-horizon.far { opacity: 0.45; }
 .graph .node.in-horizon.on-path, .graph .node.in-horizon.selected { opacity: 1; }
-.graph .node-label { fill: var(--ink); paint-order: stroke; stroke: var(--paper); stroke-width: 3; pointer-events: none; }
+.graph .node-label { fill: var(--ink); font-family: var(--font-ui); paint-order: stroke; stroke: var(--paper); stroke-width: 3; pointer-events: none; }
 .graph .node-label.selected { fill: var(--madder); font-weight: 600; }
-/* The key in about.html is drawn with the same rules as the lines it
-   explains, so the two cannot drift apart. */
+/* The key — in the corner of the graph, and again in about.html — is drawn
+   with the same rules as the lines it explains, so the two cannot drift
+   apart. */
 svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align: middle; cursor: default; }
-.edge-key { display: grid; grid-template-columns: auto 1fr; gap: 0.35rem 0.75rem; align-items: center; margin: 0.5rem 0; }
+.edge-key { display: grid; grid-template-columns: auto 1fr; gap: var(--space-1) var(--space-3); align-items: center; margin: var(--space-2) 0; }
 .edge-key dt, .edge-key dd { margin: 0; }
+
+/* The key over the graph itself: small, in the corner, and out of the way of
+   the pointer. It says what the five patterns mean, which is the one thing
+   the picture cannot say about itself. */
+.graph-key {
+  position: absolute; left: var(--space-3); bottom: var(--space-3);
+  padding: var(--space-2) var(--space-3);
+  background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius);
+  box-shadow: 0 1px 4px var(--cobalt-faint);
+  font-size: var(--text-xs); color: var(--ink-soft); pointer-events: none;
+}
+.graph-key h2 {
+  margin: 0 0 var(--space-1); font-size: var(--label); font-weight: 600;
+  text-transform: uppercase; letter-spacing: var(--tracking-label); color: var(--ink-soft);
+}
+.graph-key .edge-key { margin: 0; gap: 0.15rem var(--space-2); }
+.graph-key svg.key-line { width: 46px; }
 
 /* --- timeline -------------------------------------------------------- */
 
-.timeline { display: block; font-family: var(--font-ui); }
+.timeline { display: block; font-family: var(--font-ui); font-variant-numeric: tabular-nums; }
+/* The alternating ground behind the rows: quiet enough to be felt rather
+   than seen, because it is there to keep the eye on one row and not to
+   divide the drawing into stripes. */
 .timeline .lane.even { fill: var(--paper); }
 .timeline .lane.odd { fill: var(--ground); }
-.timeline .lane-label { fill: var(--ink-soft); font-size: 12px; }
+.timeline .lane-label {
+  fill: var(--ink-soft); font-size: 11px; letter-spacing: 0.03em;
+}
 /* The catch-all lane is a lane like the others and says so quietly: it is
    where the rule put what none of the chosen lanes claimed. */
 .timeline .lane-label.other { font-style: italic; }
@@ -384,6 +562,11 @@ svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align:
 .timeline .tick-label { fill: var(--ink-soft); font-size: 11px; }
 .timeline .bar { fill: var(--cobalt-faint); stroke: var(--cobalt); stroke-width: 1; cursor: pointer; }
 .timeline .bar:hover { fill: var(--cobalt-soft); }
+/* An event of one day is six pixels wide on a century-long axis. Hollow, it
+   reads as a small empty ring; filled, it reads as a mark, which is what it
+   is. The states below still say what it is a mark of. */
+.timeline .bar.instant { fill: var(--cobalt-soft); }
+.timeline .bar.instant:hover { fill: var(--cobalt); }
 .timeline .bar.ongoing { stroke-dasharray: 3 3; }
 .timeline .bar.of-narrative { stroke: var(--cobalt); stroke-width: 2; stroke-dasharray: 3 2; }
 .timeline .bar.of-actor { fill: var(--cobalt-soft); stroke: var(--cobalt); stroke-width: 2; }
@@ -392,9 +575,17 @@ svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align:
 .timeline .bar-label { fill: var(--ink); font-size: 11px; pointer-events: none; }
 .timeline .bar-label.selected { fill: var(--madder); font-weight: 600; }
 /* A stack of bars drawn as one, and a count beside it: the same idiom as the
-   map's clusters, so one reading serves both. */
+   map's clusters, so one reading serves both. The count is set in the
+   interface face at the interface's small size, not in whatever the SVG
+   inherited. */
 .timeline .bar.stack { stroke-width: 2.5; }
-.timeline .cluster-count { fill: var(--cobalt); font-weight: 600; pointer-events: none; }
+/* The count is an annotation on the mark, not a second mark: quieter than
+   the bar it belongs to, or a row of "+2"s is what the eye reads first. */
+.timeline .cluster-count, .map .cluster-count {
+  fill: var(--cobalt-soft); font-family: var(--font-ui); font-weight: 600;
+  font-variant-numeric: tabular-nums; letter-spacing: 0.01em; pointer-events: none;
+}
+.map .cluster-count { fill: var(--cobalt); }
 /* Outside the band: still there, still clickable, plainly not in the window. */
 .timeline .bar.faded { opacity: 0.28; }
 .timeline .cluster-count.faded { opacity: 0.35; }
@@ -406,81 +597,163 @@ svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align:
 .timeline .bar.in-horizon.on-path, .timeline .bar.in-horizon.selected { opacity: 1; }
 
 /* The window of time: a shaded band under the bars, a handle at each end
-   over them. The band is the only time control the atlas has. */
-.timeline .window-band { fill: var(--cobalt); opacity: 0.06; cursor: grab; }
+   over them. The band is the only time control the atlas has, so it is drawn
+   as a control — the handles are solid cobalt bars with a visible grip, not
+   a tint of the shading, and the keyboard focus is the atlas's own ring
+   rather than the browser's. */
+.timeline .window-band { fill: var(--cobalt); opacity: 0.07; cursor: grab; }
+.timeline .window-band:hover { opacity: 0.11; }
 .timeline .window-band:active { cursor: grabbing; }
-.timeline .window-handle { fill: var(--cobalt); opacity: 0.5; cursor: ew-resize; }
-.timeline .window-handle:hover { opacity: 0.75; }
-.timeline .window-handle:focus { outline: none; opacity: 0.9; stroke: var(--madder); stroke-width: 2; }
+.timeline .window-handle { fill: var(--cobalt); opacity: 0.62; cursor: ew-resize; }
+.timeline .window-handle:hover { opacity: 0.85; }
+.timeline .window-handle:focus { outline: none; opacity: 1; stroke: var(--madder); stroke-width: 2; }
 .timeline .window-year { fill: var(--cobalt); font-size: 11px; font-weight: 600; pointer-events: none; }
-.timeline .window-marker { fill: var(--ink-soft); font-size: 10.5px; pointer-events: none; }
+/* What year the borders on the map are from. Its own line at the top right:
+   a note about the whole drawing, not about either handle. */
+.timeline .window-marker { fill: var(--ink-soft); font-size: 10.5px; font-style: italic; pointer-events: none; }
 
 /* --- panel ----------------------------------------------------------- */
 
-.panel h2 { font-family: var(--font); font-weight: normal; font-size: 1.15rem; color: var(--cobalt); margin: 1.25rem 0 0.4rem; }
-.panel h3 { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--ink-soft); margin: 0.75rem 0 0.25rem; }
-.panel .event-head h2 { font-size: 1.5rem; margin-top: 0; }
-.panel .meta { color: var(--ink-soft); margin: 0; }
-.panel .count { color: var(--ink-soft); font-size: 0.85rem; }
-.panel .muted { color: var(--ink-soft); }
-.panel .hint { color: var(--ink-soft); font-size: 0.85rem; margin: 0 0 0.5rem; }
-.panel .when { color: var(--ink-soft); }
-.panel .notice { padding: 0.5rem 0.75rem; border-left: 3px solid var(--cobalt-soft); background: var(--ground); margin: 0 0 0.75rem; }
-.panel .notice.disputed { border-color: var(--madder); background: var(--madder-faint); }
-.panel .summary p, .panel .explanation { font-family: var(--font); font-size: 1rem; }
+/* The panel is a stack of cards, and the hierarchy in it is made of space and
+   rules rather than of boxes: a box inside a box inside a box is what the
+   contribution form looks like, and this is meant to read like a page. Four
+   levels and no more — the card's title, a section head in the serif, a
+   small caps-and-tracking label, and the row. */
 
-.panel .link { background: none; border: 0; padding: 0; color: var(--cobalt); text-decoration: underline; cursor: pointer; text-align: left; }
-.panel .link.small { font-size: 0.8rem; margin-left: 0.5rem; }
+.panel { padding: var(--space-4) var(--space-4) var(--space-6); }
+.panel > * { max-width: var(--measure); }
+.panel h2 {
+  font-family: var(--font); font-weight: normal; font-size: var(--text-lg); color: var(--cobalt);
+  margin: var(--space-5) 0 var(--space-2); padding-top: var(--space-3);
+  border-top: 1px solid var(--line);
+  display: flex; align-items: baseline; gap: var(--space-2);
+}
+.panel h3 {
+  font-size: var(--label); text-transform: uppercase; letter-spacing: var(--tracking-label);
+  color: var(--ink-soft); margin: var(--space-4) 0 var(--space-1); font-weight: 600;
+}
+/* The card's own title opens the panel: no rule over it, and nothing above
+   it to be separated from. */
+.panel .event-head h2, .panel .actor-head h2, .panel .place-head h2,
+.panel .source-head h2, .panel .narrative-head h2, .panel .cluster-list h2 {
+  font-size: var(--text-xl); margin-top: 0; padding-top: 0; border-top: 0; line-height: var(--leading-tight);
+}
+.panel .meta { color: var(--ink-soft); margin: 0; font-size: var(--text-sm); }
+.panel .count { color: var(--ink-soft); font-size: var(--text-sm); font-variant-numeric: tabular-nums; }
+.panel .muted { color: var(--ink-soft); }
+.panel .hint { color: var(--ink-soft); font-size: var(--text-sm); margin: 0 0 var(--space-2); }
+.panel .when { color: var(--ink-soft); font-variant-numeric: tabular-nums; }
+/* An aside the card sets apart: what the reader is looking at and why. */
+.panel .notice {
+  padding: var(--space-2) var(--space-3); border-left: 3px solid var(--cobalt-soft);
+  background: var(--ground); margin: 0 0 var(--space-3); font-size: var(--text-sm);
+}
+.panel .notice.disputed { border-color: var(--madder); background: var(--madder-faint); }
+/* Prose is the serif and stops at a readable measure; it is also the one
+   place proportional figures are wanted, because they are being read as
+   words rather than compared down a column. */
+.panel .summary p, .panel .explanation {
+  font-family: var(--font); font-size: var(--text-md); line-height: var(--leading-prose);
+  font-variant-numeric: proportional-nums;
+}
+
+.panel .link { background: none; border: 0; padding: 0; color: var(--cobalt); text-decoration: underline; text-underline-offset: 0.15em; cursor: pointer; text-align: left; font: inherit; }
+.panel .link:hover { color: var(--ink); }
+.panel .link.small { font-size: var(--text-sm); margin-left: var(--space-2); }
 .panel button:not(.link) {
   border: 1px solid var(--cobalt); background: var(--paper); color: var(--cobalt);
-  padding: 0.2rem 0.6rem; border-radius: 3px; cursor: pointer;
+  padding: 0.25rem 0.7rem; border-radius: var(--radius); cursor: pointer; font-size: var(--text-sm);
 }
 .panel button:not(.link):hover { background: var(--cobalt-faint); }
+.panel button:not(.link):disabled, .panel button:not(.link)[disabled] {
+  border-color: var(--line); color: var(--ink-soft); background: var(--ground); cursor: not-allowed;
+}
 .panel .follow { text-align: left; }
 
-.panel .badge {
-  display: inline-block; padding: 0 0.4rem; border-radius: 3px; font-size: 0.75rem;
-  border: 1px solid var(--cobalt-soft); color: var(--cobalt);
+/* Confidence, designed. Three states that have to be tellable apart in a
+   list of forty rows: consensus is solid, probable is outlined, and disputed
+   is dashed and madder and says the word — the atlas's worst possible
+   failure is a contested link that looks settled. */
+.panel .badge, .prose .badge {
+  display: inline-block; padding: 0 0.45em; border-radius: var(--radius);
+  font-size: var(--text-xs); font-family: var(--font-ui); line-height: 1.7;
+  letter-spacing: var(--tracking-label); text-transform: uppercase;
+  border: 1px solid var(--cobalt-soft); color: var(--cobalt); white-space: nowrap;
 }
-.panel .badge.consensus { background: var(--cobalt); color: var(--paper); border-color: var(--cobalt); }
-.panel .badge.probable { background: var(--paper); }
-.panel .badge.disputed { border-style: dashed; border-color: var(--madder); color: var(--madder); }
-.panel .badge.status { border-color: var(--madder); color: var(--madder); }
+.panel .badge.consensus, .prose .badge.consensus { background: var(--cobalt); color: var(--paper); border-color: var(--cobalt); }
+.panel .badge.probable, .prose .badge.probable { background: var(--paper); }
+.panel .badge.disputed, .prose .badge.disputed { border-style: dashed; border-color: var(--madder); color: var(--madder); background: var(--madder-faint); }
+.panel .badge.status, .prose .badge.status { border-color: var(--madder); color: var(--madder); }
 
 .panel .edges, .panel .steps, .panel .citations { list-style: none; padding: 0; margin: 0; }
-.panel .edge-row { padding: 0.4rem 0; border-top: 1px solid var(--line); }
-.panel .edge-row.disputed .edge-head { border-left: 3px dashed var(--madder); padding-left: 0.5rem; }
-.panel .edge-head { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem; }
+.panel .edge-row { padding: var(--space-2) 0; border-top: 1px solid var(--line); }
+.panel .edge-row:first-child { border-top: 0; }
+/* A disputed link is marked twice — the dashed rule down its left and the
+   ground behind it — so that scanning a list of consequences shows the
+   disagreements without reading a word. */
+.panel .edge-row.disputed {
+  background: var(--madder-faint); border-left: 3px dashed var(--madder);
+  padding-left: var(--space-2); margin-left: calc(-1 * var(--space-2));
+}
+.panel .edge-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--space-2); }
 .panel .arrow { color: var(--ink-soft); font-style: italic; }
-.panel .via, .panel .depth { color: var(--ink-soft); font-size: 0.85rem; }
-.panel details { margin-top: 0.25rem; }
-.panel summary { cursor: pointer; color: var(--ink-soft); font-size: 0.85rem; }
-.panel .dispute { border-left: 3px dashed var(--madder); padding-left: 0.75rem; margin-top: 0.5rem; }
-.panel .last-step.disputed { border-left: 3px solid var(--madder); padding-left: 0.75rem; }
+.panel .via, .panel .depth { color: var(--ink-soft); font-size: var(--text-sm); }
+.panel details { margin-top: var(--space-1); }
+.panel summary { cursor: pointer; color: var(--ink-soft); font-size: var(--text-sm); }
+.panel summary:hover { color: var(--cobalt); }
+.panel .dispute { border-left: 3px dashed var(--madder); padding-left: var(--space-3); margin-top: var(--space-2); }
+.panel .last-step.disputed { border-left: 3px solid var(--madder); padding-left: var(--space-3); }
 
-.panel .steps .step { padding: 0.2rem 0 0.2rem 1rem; border-left: 2px solid var(--madder); }
+/* The walked path: one madder rule down the whole list, which is the same
+   accent the map and the graph draw it in. */
+.panel .steps .step { padding: var(--space-1) 0 var(--space-1) var(--space-4); border-left: 2px solid var(--madder); }
 .panel .steps .step.start { border-left-color: var(--madder); }
 .panel .steps .step.disputed .arrow { color: var(--madder); }
-.panel .actions { margin: 0.5rem 0 0; display: flex; gap: 0.5rem; }
+.panel .actions { margin: var(--space-3) 0 0; display: flex; gap: var(--space-2); }
 
-.panel .citation { padding: 0.3rem 0; border-top: 1px dotted var(--line); font-size: 0.9rem; }
-.panel .citation .identifiers { color: var(--ink-soft); font-size: 0.85rem; display: block; }
+/* A citation is set the way a footnote is: serif, hanging, and the
+   identifiers underneath rather than in the middle of the sentence. */
+.panel .citation {
+  padding: var(--space-2) 0; border-top: 1px dotted var(--line);
+  font-family: var(--font); font-size: var(--text-base); line-height: var(--leading);
+  padding-left: 1.25rem; text-indent: -1.25rem;
+}
+.panel .citation:first-child { border-top: 0; }
+.panel .citation .identifiers { color: var(--ink-soft); font-size: var(--text-sm); display: block; text-indent: 0; font-family: var(--font-ui); }
 .panel .citation.missing, .panel .unsafe-url { color: var(--madder); }
-.panel code { font-size: 0.85em; background: var(--ground); padding: 0 0.25rem; }
+.panel code { font-size: 0.85em; background: var(--ground); padding: 0 0.25rem; border-radius: 2px; }
 
 /* --- actors ---------------------------------------------------------- */
 
-.panel .actor-head h2 { font-size: 1.5rem; margin-top: 0; }
-.panel .actor-type { text-transform: uppercase; letter-spacing: 0.04em; font-size: 0.8rem; }
-.panel .also-known { margin: 0.2rem 0 0; font-size: 0.9rem; }
+.panel .actor-type, .panel .source-type {
+  text-transform: uppercase; letter-spacing: var(--tracking-label); font-size: var(--label);
+  color: var(--ink-soft);
+}
+.panel .also-known { margin: var(--space-1) 0 0; font-size: var(--text-sm); color: var(--ink-soft); }
 /* The way out to somebody else's account of the same thing. Set apart from
    the card's own text: what the atlas says is the summary below it. */
-.panel .wikipedia { margin: 0.35rem 0 0; font-size: 0.9rem; }
+.panel .wikipedia { margin: var(--space-2) 0 0; font-size: var(--text-sm); }
 .panel .wikipedia a { color: var(--cobalt); }
-.panel .wikipedia .muted { margin-left: 0.4rem; font-size: 0.85rem; }
+.panel .wikipedia .muted { margin-left: var(--space-2); }
+
+/* Relations and territory as tables. Two columns — what, and when — with
+   anything further on a quiet second line under them, so a dozen periods
+   scan down the dates instead of being read one paragraph at a time. */
 .panel .actor-rows { list-style: none; padding: 0; margin: 0; }
-.panel .actor-row { padding: 0.3rem 0; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.4rem; }
-.panel .actor-row.highlighted { border-left: 3px solid var(--cobalt); padding-left: 0.5rem; }
+.panel .actor-row {
+  display: grid; grid-template-columns: minmax(0, 1fr) auto;
+  column-gap: var(--space-3); align-items: baseline;
+  padding: var(--space-1) 0; border-top: 1px solid var(--line);
+}
+.panel .actor-row:first-child { border-top: 0; }
+.panel .actor-row .row-what { min-width: 0; }
+.panel .actor-row .when { white-space: nowrap; font-size: var(--text-sm); }
+.panel .actor-row .row-go { grid-column: 2; justify-self: end; margin-left: 0; }
+.panel .actor-row .row-meta {
+  grid-column: 1 / -1; font-size: var(--text-sm); color: var(--ink-soft);
+  display: flex; flex-wrap: wrap; gap: var(--space-2); align-items: baseline;
+}
+.panel .actor-row.highlighted { border-left: 3px solid var(--cobalt); padding-left: var(--space-2); margin-left: calc(-1 * var(--space-2)); }
 .panel .role { color: var(--ink-soft); font-style: italic; }
 .panel .notice.actor { border-color: var(--cobalt); }
 .panel .notice.narrative { border-color: var(--cobalt); }
@@ -488,23 +761,20 @@ svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align:
 /* Narratives: the list, and one being read. The step's own words are set in
    the serif the summaries use; everything around them stays interface. */
 .panel .narrative-rows { list-style: none; padding: 0; margin: 0; }
-.panel .narrative-row { padding: 0.4rem 0; border-top: 1px solid var(--line); }
-.panel .narrative-row .title { font-size: 1rem; }
-.panel .narrative-row .summary { font-family: var(--font); margin: 0.2rem 0 0; color: var(--ink-soft); }
-.panel .narrative-head h2 { font-size: 1.5rem; margin: 0; }
-.panel .step-text p { font-family: var(--font); font-size: 1.05rem; }
-.panel .step-record { border-left: 3px solid var(--cobalt-faint); padding-left: 0.75rem; }
+.panel .narrative-row { padding: var(--space-2) 0; border-top: 1px solid var(--line); }
+.panel .narrative-row .title { font-size: var(--text-base); }
+.panel .narrative-row .summary { font-family: var(--font); margin: var(--space-1) 0 0; color: var(--ink-soft); }
+.panel .step-text p { font-family: var(--font); font-size: var(--text-md); line-height: var(--leading-prose); font-variant-numeric: proportional-nums; }
+.panel .step-record { border-left: 3px solid var(--cobalt-faint); padding-left: var(--space-3); }
 .panel .narrative-walk .steps { list-style: none; padding: 0; margin: 0; }
-.panel .narrative-walk .step { padding: 0.2rem 0; border-left: 3px solid var(--cobalt-faint); padding-left: 0.5rem; }
+.panel .narrative-walk .step { padding: var(--space-1) 0; border-left: 3px solid var(--cobalt-faint); padding-left: var(--space-2); }
 .panel .narrative-walk .step.walked { border-color: var(--cobalt-soft); }
 .panel .narrative-walk .step.current { border-color: var(--madder); }
-.panel .part-of .narrative-row { display: flex; flex-wrap: wrap; gap: 0.4rem; align-items: baseline; }
-.panel .cluster-list h2 { margin-top: 0; }
+.panel .part-of .narrative-row { display: flex; flex-wrap: wrap; gap: var(--space-2); align-items: baseline; }
 .panel .cluster-list .when { min-width: 4ch; display: inline-block; }
 
 /* --- places ---------------------------------------------------------- */
 
-.panel .place-head h2 { font-size: 1.5rem; margin-top: 0; }
 .panel .place-events .when { min-width: 4ch; display: inline-block; }
 /* An event outside the window is faded here for the same reason it is faded
    on the map: a place's history does not stop at the edge of the band. */
@@ -512,83 +782,89 @@ svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align:
 
 /* --- the horizon: what did this lead to by year X? -------------------- */
 
-.panel .horizon summary { font-family: var(--font); font-size: 1.15rem; color: var(--cobalt); }
+.panel .horizon summary { font-family: var(--font); font-size: var(--text-lg); color: var(--cobalt); }
 .panel .horizon summary strong { font-weight: normal; }
-.panel .horizon details { margin-top: 1.25rem; }
-.panel .horizon-control { display: flex; align-items: baseline; gap: 0.5rem; margin: 0.5rem 0 0.25rem; }
-.panel .horizon-control label { color: var(--ink-soft); font-size: 0.85rem; }
+.panel .horizon details { margin-top: var(--space-5); padding-top: var(--space-3); border-top: 1px solid var(--line); }
+.panel .horizon-control { display: flex; align-items: baseline; gap: var(--space-2); margin: var(--space-2) 0 var(--space-1); }
+.panel .horizon-control label { color: var(--ink-soft); font-size: var(--text-sm); }
 .panel .horizon-control input {
-  width: 7ch; font: inherit; padding: 0.1rem 0.3rem;
-  border: 1px solid var(--line); background: var(--paper); color: var(--ink);
+  width: 7ch; font: inherit; font-size: var(--text-sm); padding: 0.15rem 0.35rem;
+  border: 1px solid var(--line); border-radius: var(--radius); background: var(--paper); color: var(--ink);
+  font-variant-numeric: tabular-nums;
 }
-.panel .horizon-control input:focus { outline: 2px solid var(--cobalt); outline-offset: 1px; }
 .panel .horizon-row .when { min-width: 4ch; display: inline-block; }
-.panel .horizon-row.disputed { border-left: 3px dashed var(--madder); padding-left: 0.5rem; }
+.panel .horizon-row.disputed { border-left: 3px dashed var(--madder); padding-left: var(--space-2); }
 
 /* --- sources --------------------------------------------------------- */
 
-.panel .source-head h2 { font-size: 1.4rem; margin-top: 0; font-style: italic; }
-.panel .source-type { text-transform: uppercase; letter-spacing: 0.04em; font-size: 0.8rem; }
+.panel .source-head h2 { font-style: italic; }
 .panel .creators { color: var(--ink-soft); }
 .panel .identifiers a { color: var(--cobalt); }
-.panel .source-head .identifiers { margin: 0.3rem 0 0; font-size: 0.85rem; }
+.panel .source-head .identifiers { margin: var(--space-1) 0 0; font-size: var(--text-sm); }
 /* The citation as a running line, the way it would be typed in a footnote:
    what a reader copies out of the atlas and into their own notes. */
 .panel .citation-full {
-  font-family: var(--font); font-size: 0.9rem; color: var(--ink-soft);
-  border-left: 3px solid var(--cobalt-soft); padding-left: 0.75rem; margin: 0.75rem 0 0;
+  font-family: var(--font); font-size: var(--text-md); line-height: var(--leading-prose); color: var(--ink-soft);
+  border-left: 3px solid var(--cobalt-soft); padding-left: var(--space-3); margin: var(--space-3) 0 0;
 }
-.panel .citers .locator { color: var(--ink-soft); font-size: 0.85rem; }
+.panel .citers .locator { color: var(--ink-soft); font-size: var(--text-sm); }
 /* The title inside a citation is the door to the source's own card; it reads
    as part of the citation, not as a button on top of one. */
 .panel .link.cite { font-style: normal; }
 
 /* --- reading pages: contribute.html, about.html ----------------------- */
 
-.page-body { height: auto; }
+/* The same tokens, the same scale, the same masthead: about.html and
+   sources.html are the atlas in prose and must not look like another site. */
+.page-body { display: block; height: auto; }
 .page-body .bar h1 a { color: inherit; text-decoration: none; }
+/* A sheet, not a column of text on the ground: the reading pages are the
+   atlas in prose and they are set the way the panel's cards are. */
 .page {
-  max-width: 46rem;
-  margin: 0 auto;
-  padding: 1rem 1rem 4rem;
+  max-width: 42rem;
+  margin: var(--space-5) auto var(--space-6);
+  padding: var(--space-5) var(--space-5) var(--space-6);
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
 }
-.prose h2 { font-family: var(--font); font-weight: normal; font-size: 1.4rem; color: var(--cobalt); margin: 1.5rem 0 0.5rem; }
-.prose h3 { font-family: var(--font); font-weight: normal; font-size: 1.1rem; color: var(--cobalt); margin: 1.25rem 0 0.4rem; }
-.prose p, .prose li, .prose dd { font-family: var(--font); font-size: 1rem; }
-.prose p.hint, .prose .hint { font-family: var(--font-ui); }
-.prose a { color: var(--cobalt); }
-.prose code { font-size: 0.85em; background: var(--paper); padding: 0 0.25rem; border: 1px solid var(--line); }
-.prose .levels dt { margin-top: 0.6rem; }
-.prose .levels dd { margin: 0.15rem 0 0 1.5rem; }
-.prose .badge {
-  display: inline-block; padding: 0 0.4rem; border-radius: 3px; font-size: 0.75rem;
-  font-family: var(--font-ui); border: 1px solid var(--cobalt-soft); color: var(--cobalt);
+.prose h2 {
+  font-family: var(--font); font-weight: normal; font-size: var(--text-xl); color: var(--cobalt);
+  margin: var(--space-6) 0 var(--space-2); padding-top: var(--space-3); border-top: 1px solid var(--line);
 }
-.prose .badge.consensus { background: var(--cobalt); color: var(--paper); border-color: var(--cobalt); }
-.prose .badge.probable { background: var(--paper); }
-.prose .badge.disputed { border-style: dashed; border-color: var(--madder); color: var(--madder); }
-.prose .footnote { color: var(--ink-soft); font-size: 0.85rem; }
+.prose h2:first-child { margin-top: 0; padding-top: 0; border-top: 0; }
+.prose h3 { font-family: var(--font); font-weight: normal; font-size: var(--text-lg); color: var(--cobalt); margin: var(--space-5) 0 var(--space-1); }
+.prose p, .prose li, .prose dd {
+  font-family: var(--font); font-size: var(--text-md); line-height: var(--leading-prose);
+  font-variant-numeric: proportional-nums;
+}
+.prose p.hint, .prose .hint { font-family: var(--font-ui); font-size: var(--text-sm); }
+.prose a { color: var(--cobalt); text-underline-offset: 0.15em; }
+.prose a:hover { color: var(--ink); }
+.prose code { font-size: 0.85em; background: var(--ground); padding: 0 0.25rem; border: 1px solid var(--line); border-radius: 2px; }
+.prose .levels dt { margin-top: var(--space-2); }
+.prose .levels dd { margin: var(--space-1) 0 0 var(--space-5); }
+.prose .footnote { color: var(--ink-soft); font-size: var(--text-sm); }
 .prose .muted { color: var(--ink-soft); }
-.prose .badge.status { border-color: var(--madder); color: var(--madder); }
 
 /* The bibliography on sources.html. A hanging indent, because that is what a
    bibliography looks like and the eye finds the author by it. */
-.bib-summary { color: var(--ink-soft); font-size: 0.9rem; }
-.bib-list { list-style: none; padding: 0; margin: 1rem 0 0; }
+.bib-summary { color: var(--ink-soft); font-size: var(--text-sm); }
+.bib-list { list-style: none; padding: 0; margin: var(--space-4) 0 0; }
 .bib-entry {
-  padding: 0.6rem 0; border-top: 1px solid var(--line);
+  padding: var(--space-3) 0; border-top: 1px solid var(--line);
   padding-left: 1.5rem; text-indent: -1.5rem;
 }
 .bib-entry.inactive { opacity: 0.6; }
-.bib-citation { margin: 0; font-family: var(--font); }
+.bib-citation { margin: 0; font-family: var(--font); font-size: var(--text-md); line-height: var(--leading-prose); }
 .bib-citation a { text-decoration: none; }
 .bib-citation a:hover { text-decoration: underline; }
 .bib-meta {
-  margin: 0.15rem 0 0; text-indent: 0; color: var(--ink-soft);
-  font-family: var(--font-ui); font-size: 0.85rem;
+  margin: var(--space-1) 0 0; text-indent: 0; color: var(--ink-soft);
+  font-family: var(--font-ui); font-size: var(--text-sm);
 }
-.bib-type { text-transform: uppercase; letter-spacing: 0.04em; font-size: 0.75rem; }
-.bib-count { color: var(--cobalt); }
+.bib-type { text-transform: uppercase; letter-spacing: var(--tracking-label); font-size: var(--label); }
+.bib-count { color: var(--cobalt); font-variant-numeric: tabular-nums; }
 .bib-meta .unsafe-url { color: var(--madder); }
 
 /* --- the contribution form -------------------------------------------- */
@@ -601,31 +877,31 @@ svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align:
   margin: 0 0 1rem;
 }
 .contrib legend, .contrib .entry-head h3 {
-  font-family: var(--font); font-weight: normal; font-size: 1.1rem; color: var(--cobalt); margin: 0;
+  font-family: var(--font); font-weight: normal; font-size: var(--text-lg); color: var(--cobalt); margin: 0;
 }
 .contrib .entry-head { display: flex; align-items: baseline; justify-content: space-between; }
 .contrib .field { margin-top: 0.75rem; }
-.contrib label, .contrib .citations-label { display: block; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--ink-soft); }
+.contrib label, .contrib .citations-label { display: block; font-size: var(--text-sm); text-transform: uppercase; letter-spacing: var(--tracking-label); color: var(--ink-soft); }
 .contrib input[type="text"], .contrib textarea, .contrib select {
   width: 100%; font: inherit; padding: 0.3rem 0.4rem;
   border: 1px solid var(--line); background: var(--ground); color: var(--ink); border-radius: 2px;
 }
-.contrib textarea { font-family: var(--font); font-size: 1rem; resize: vertical; }
-.contrib input:focus, .contrib textarea:focus, .contrib select:focus { outline: 2px solid var(--cobalt-soft); background: var(--paper); }
+.contrib textarea { font-family: var(--font); font-size: var(--text-md); resize: vertical; }
+.contrib input:focus, .contrib textarea:focus, .contrib select:focus { outline: var(--focus-width) solid var(--cobalt); background: var(--paper); }
 .contrib .field.has-error input, .contrib .field.has-error textarea, .contrib .field.has-error select { border-color: var(--madder); }
-.contrib .hint { color: var(--ink-soft); font-size: 0.8rem; margin: 0.15rem 0 0; }
+.contrib .hint { color: var(--ink-soft); font-size: var(--text-sm); margin: 0.15rem 0 0; }
 /* What the import claimed, and what a person has checked against the book.
    Neither is editable prose: one is read-only and the other is a tick. */
 .contrib .identity-rows, .contrib .verify-rows { list-style: none; padding: 0; margin: 0.3rem 0 0; }
 .contrib .identity-rows li, .contrib .verify-row { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.4rem; padding: 0.25rem 0; border-top: 1px solid var(--line); }
-.contrib .identity-rows .lang { text-transform: uppercase; letter-spacing: 0.04em; font-size: 0.75rem; color: var(--ink-soft); }
-.contrib .verify-row label { display: inline; text-transform: none; letter-spacing: 0; font-size: 0.9rem; color: var(--ink); }
+.contrib .identity-rows .lang { text-transform: uppercase; letter-spacing: var(--tracking-label); font-size: var(--text-xs); color: var(--ink-soft); }
+.contrib .verify-row label { display: inline; text-transform: none; letter-spacing: 0; font-size: var(--text-sm); color: var(--ink); }
 .contrib .verify-row.done label { color: var(--ink-soft); }
-.contrib .verify-row .identifier { font-size: 0.8rem; }
+.contrib .verify-row .identifier { font-size: var(--text-sm); }
 .contrib input[readonly] { background: var(--ground); color: var(--ink-soft); }
-.queue-item .unverified { font-size: 0.75rem; color: var(--ink-soft); }
-.notice.citations { border-left: 3px solid var(--madder); background: var(--madder-faint); padding: 0.4rem 0.6rem; margin: 0.5rem 0; font-size: 0.85rem; }
-.contrib .field-error { color: var(--madder); font-size: 0.85rem; margin: 0.2rem 0 0; }
+.queue-item .unverified { font-size: var(--text-xs); color: var(--ink-soft); }
+.notice.citations { border-left: 3px solid var(--madder); background: var(--madder-faint); padding: 0.4rem 0.6rem; margin: 0.5rem 0; font-size: var(--text-sm); }
+.contrib .field-error { color: var(--madder); font-size: var(--text-sm); margin: 0.2rem 0 0; }
 .contrib .entry-errors { list-style: none; padding: 0.4rem 0.6rem; margin: 0.5rem 0 0; color: var(--madder); background: var(--madder-faint); }
 
 .contrib .citations-head { display: flex; align-items: baseline; gap: 0.5rem; }
@@ -637,17 +913,17 @@ svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align:
 .contrib .similar { border-left: 3px solid var(--madder); background: var(--madder-faint); padding: 0.5rem 0.75rem; margin-top: 0.5rem; }
 .contrib .similar p { margin: 0 0 0.25rem; }
 .contrib .similar ul { margin: 0 0 0.4rem; padding-left: 1.2rem; }
-.contrib .acknowledge { display: flex; gap: 0.4rem; align-items: baseline; text-transform: none; letter-spacing: 0; font-size: 0.9rem; color: var(--ink); }
+.contrib .acknowledge { display: flex; gap: 0.4rem; align-items: baseline; text-transform: none; letter-spacing: 0; font-size: var(--text-sm); color: var(--ink); }
 .contrib .acknowledge input { width: auto; }
 
 .contrib button {
   border: 1px solid var(--cobalt); background: var(--paper); color: var(--cobalt);
-  padding: 0.2rem 0.6rem; border-radius: 3px; cursor: pointer;
+  padding: 0.2rem 0.6rem; border-radius: var(--radius); cursor: pointer;
 }
 .contrib button:hover { background: var(--cobalt-faint); }
 .contrib button[disabled] { border-color: var(--line); color: var(--ink-soft); cursor: not-allowed; background: var(--ground); }
 .contrib button.link { background: none; border: 0; padding: 0; color: var(--cobalt); text-decoration: underline; }
-.contrib button.link.small { font-size: 0.8rem; }
+.contrib button.link.small { font-size: var(--text-sm); }
 .contrib .add-row { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem; }
 /* A step of a narrative is a paragraph, not a word: the row stacks rather
    than squeezing a textarea between two controls. */
@@ -655,16 +931,16 @@ svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align:
 .contrib .step-row textarea { grid-column: 1 / -1; width: 100%; }
 
 .contrib .report { margin: 1rem 0; }
-.contrib .report .summary { font-family: var(--font); font-size: 1rem; margin: 0.4rem 0 0; }
+.contrib .report .summary { font-family: var(--font); font-size: var(--text-md); margin: 0.4rem 0 0; }
 .contrib .report .summary.bad { color: var(--madder); }
-.contrib .report .warning { color: var(--ink-soft); font-size: 0.85rem; margin: 0.15rem 0; }
-.contrib .bundle-preview summary { cursor: pointer; color: var(--ink-soft); font-size: 0.85rem; }
+.contrib .report .warning { color: var(--ink-soft); font-size: var(--text-sm); margin: 0.15rem 0; }
+.contrib .bundle-preview summary { cursor: pointer; color: var(--ink-soft); font-size: var(--text-sm); }
 .contrib .preview {
   max-height: 22rem; overflow: auto; background: var(--paper);
-  border: 1px solid var(--line); padding: 0.5rem; font-size: 0.8rem; margin: 0.4rem 0 0;
+  border: 1px solid var(--line); padding: 0.5rem; font-size: var(--text-sm); margin: 0.4rem 0 0;
 }
 .contrib .submit-row { margin-top: 1rem; }
-.contrib .submit { font-size: 1rem; padding: 0.4rem 0.9rem; }
+.contrib .submit { font-size: var(--text-md); padding: 0.4rem 0.9rem; }
 .contrib .submit-note { color: var(--ink-soft); margin: 0.4rem 0 0; }
 
 /* --- the review dashboard (review.html) -------------------------------- */
@@ -677,36 +953,36 @@ svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align:
 .review { display: grid; grid-template-columns: minmax(16rem, 22rem) minmax(0, 1fr); gap: 1.5rem; align-items: start; }
 
 .queue { position: sticky; top: 1rem; max-height: calc(100vh - 2rem); overflow: auto; border: 1px solid var(--line); background: var(--paper); padding: 0.75rem; }
-.queue .progress { margin: 0 0 0.5rem; font-family: var(--font); font-size: 0.95rem; }
+.queue .progress { margin: 0 0 0.5rem; font-family: var(--font); font-size: var(--text-base); }
 .queue .progress.good { color: var(--cobalt); }
 .queue-search { width: 100%; padding: 0.3rem 0.4rem; border: 1px solid var(--line); background: var(--ground); color: var(--ink); font-family: var(--font-ui); }
-.queue-search:focus { outline: 2px solid var(--cobalt-soft); background: var(--paper); }
+.queue-search:focus { outline: var(--focus-width) solid var(--cobalt); background: var(--paper); }
 .queue-filters { display: flex; flex-wrap: wrap; gap: 0.3rem; margin-top: 0.5rem; }
 .chip {
   border: 1px solid var(--line); background: var(--ground); color: var(--ink-soft);
-  font-family: var(--font-ui); font-size: 0.78rem; padding: 0.1rem 0.45rem; border-radius: 999px; cursor: pointer;
+  font-family: var(--font-ui); font-size: var(--text-xs); padding: 0.1rem 0.45rem; border-radius: 999px; cursor: pointer;
 }
 .chip:hover { border-color: var(--cobalt-soft); color: var(--cobalt); }
 .chip.on { background: var(--cobalt); border-color: var(--cobalt); color: var(--paper); }
-.queue-kind { font-family: var(--font-ui); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-soft); margin: 0.9rem 0 0.2rem; }
+.queue-kind { font-family: var(--font-ui); font-size: var(--text-xs); text-transform: uppercase; letter-spacing: var(--tracking-label); color: var(--ink-soft); margin: 0.9rem 0 0.2rem; }
 .queue-items { list-style: none; margin: 0; padding: 0; }
 .queue-item {
   display: block; width: 100%; text-align: left; border: 0; border-left: 3px solid transparent;
-  background: none; color: var(--ink); font-family: var(--font-ui); font-size: 0.85rem;
+  background: none; color: var(--ink); font-family: var(--font-ui); font-size: var(--text-sm);
   padding: 0.25rem 0.4rem; cursor: pointer;
 }
 .queue-item:hover { background: var(--cobalt-faint); }
 .queue-item.current { border-left-color: var(--madder); background: var(--madder-faint); }
 .queue-item .queue-label { display: block; }
-.queue-item .queue-id { display: block; color: var(--ink-soft); font-size: 0.75rem; }
+.queue-item .queue-id { display: block; color: var(--ink-soft); font-size: var(--text-xs); }
 .queue-item .flag, .record-flags {
   display: inline-block; margin: 0.15rem 0.2rem 0 0; padding: 0 0.35rem;
-  border: 1px solid var(--madder); color: var(--madder); font-size: 0.7rem; border-radius: 2px;
+  border: 1px solid var(--madder); color: var(--madder); font-size: var(--text-xs); border-radius: 2px;
 }
 
 .record { min-width: 0; }
 .record-head h2 { font-family: var(--font); font-weight: normal; color: var(--cobalt); margin: 0; }
-.record-id { color: var(--ink-soft); font-family: var(--font-ui); font-size: 0.8rem; margin: 0.1rem 0 0.4rem; }
+.record-id { color: var(--ink-soft); font-family: var(--font-ui); font-size: var(--text-sm); margin: 0.1rem 0 0.4rem; }
 .review-note { border-left: 3px solid var(--madder); background: var(--madder-faint); margin: 0.4rem 0; padding: 0.4rem 0.6rem; font-family: var(--font); }
 .record-flags { border-style: dashed; }
 .record .editor { margin-top: 0.75rem; }

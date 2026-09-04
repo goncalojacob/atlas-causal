@@ -45,9 +45,11 @@ const MAX_ROWS = 20;
 // long bar.
 const ROW_GAP = 4;
 const LABEL_WIDTH = 120;
-// Room above the lanes for the tick labels and, over them, the one line the
-// band says about the borders it is showing.
-const MARKER_HEIGHT = 17;
+// Room above the lanes for three lines that must not sit on top of one
+// another: what the map's borders are dated to, then the two years the
+// window's handles are at, then the axis's own ticks. They used to share one
+// line, and a window as wide as the data drew "1911" over "1911 of 1911".
+const MARKER_HEIGHT = 32;
 const AXIS_HEIGHT = MARKER_HEIGHT + 26;
 const PADDING = 0.04;
 // Two bars whose middles are closer than this are drawn as one. In pixels of
@@ -227,6 +229,7 @@ export function createTimeline(container, { atlas, state, createScale = createLi
 
     const bar = (item, { count = 0, key = null } = {}) => {
       const classes = ['bar',
+        item.instant ? 'instant' : '',
         item.ongoing ? 'ongoing' : '',
         item.inside ? '' : 'faded',
         count ? 'stack' : '',
@@ -371,6 +374,7 @@ export function createTimeline(container, { atlas, state, createScale = createLi
     for (const { item, i } of deferred) {
       const y = barTop(i);
       const classes = ['bar',
+        item.instant ? 'instant' : '',
         item.ongoing ? 'ongoing' : '',
         item.inside ? '' : 'faded',
         item.depth === null ? '' : `in-horizon ${horizonBand(item.depth)}`,
@@ -416,7 +420,7 @@ export function createTimeline(container, { atlas, state, createScale = createLi
       }, [svgTitle(`${kind === 'from' ? 'Start' : 'End'} of the window — ${formatYear(fromAstronomical(year))}`)]);
       out.push(handle);
       const label = svg('text', {
-        x: kind === 'from' ? x - 4 : x + 4, y: MARKER_HEIGHT - 5,
+        x: kind === 'from' ? x - 6 : x + 6, y: MARKER_HEIGHT - 6,
         class: 'window-year', 'text-anchor': kind === 'from' ? 'end' : 'start',
       });
       label.textContent = formatYear(fromAstronomical(year));
@@ -424,9 +428,11 @@ export function createTimeline(container, { atlas, state, createScale = createLi
     }
     if (s.layers.includes('territories') && atlas.presenceCoverage) {
       const shown = atlas.territoryYear(to);
-      const x = scale.x(to);
+      // On its own line, at the right edge rather than beside the handle:
+      // it is a note about the whole map, not about that year, and beside
+      // the handle it collided with the handle's own label.
       const text = svg('text', {
-        x: Math.min(x + 34, width - 8), y: MARKER_HEIGHT - 5, class: 'window-marker', 'text-anchor': 'end',
+        x: width - 8, y: 12, class: 'window-marker', 'text-anchor': 'end',
       });
       text.textContent = to > atlas.presenceCoverage.to
         ? `borders as of ${formatYear(fromAstronomical(shown))}, the latest the source covers`
