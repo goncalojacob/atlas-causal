@@ -9,15 +9,22 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "summary-drafted",
+      "facts-thin"
+    ],
+    "note": "The bibliography holds nothing on the pandemic: this record and its edge stand on the two cached Wikipedia leads and the Wikidata item alone, which is why the edge is `probable` and not `consensus` (rule 22 would forbid consensus here in any case). A reviewer should add a source before signing."
   },
   "wikidata": "Q81068910",
   "sitelinks": 170,
@@ -27,12 +34,20 @@
   },
   "sources": [
     {
+      "source": "wikipedia-en",
+      "locator": "\"COVID-19 pandemic\", revision 1373210817"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Pandemia de COVID-19\", revision 72622783"
+    },
+    {
       "source": "wikidata",
-      "locator": "Q81068910"
+      "locator": null
     }
   ],
   "title": "COVID-19 pandemic",
-  "summary": "Wikidata item Q81068910, imported by tools/import/wikidata.mjs. The item's own description reads \"pandemic caused by SARS-CoV-2 (2019–2023)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "An outbreak of a new coronavirus disease in Wuhan at the end of 2019 spread through Asia and then worldwide in the first months of 2020. The World Health Organization declared a public health emergency of international concern on 30 January 2020 and called it a pandemic on 11 March; it ended the emergency in May 2023. It is in the atlas as the origin of a chain that reaches Portugal in March 2020 and produces the first state of emergency under the constitution of 1976 — the only event here that begins outside Europe and changes the Portuguese state directly.",
   "when": {
     "start": 2019,
     "end": null,

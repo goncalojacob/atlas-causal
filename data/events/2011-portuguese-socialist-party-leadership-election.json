@@ -9,14 +9,19 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "summary-drafted"
     ]
   },
   "wikidata": "Q125030453",
@@ -26,12 +31,20 @@
   },
   "sources": [
     {
+      "source": "costa-pinto-teixeira-2019-political-institutions",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"July 2011 Portuguese Socialist Party leadership election\", revision 1360451493"
+    },
+    {
       "source": "wikidata",
-      "locator": "Q125030453"
+      "locator": null
     }
   ],
   "title": "2011 Portuguese Socialist Party leadership election",
-  "summary": "Wikidata item Q125030453, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The Socialists chose a new secretary-general on 22 and 23 July 2011, José Sócrates having resigned the leadership after the June defeat. António José Seguro won, and led the party through the three years of the adjustment programme from an opposition that had signed the memorandum and could not campaign against all of it. It is in the atlas as the first link of the chain that ends at the government of November 2015: Seguro's leadership is what António Costa challenged in the primary of 2014, and the challenge was about exactly that position.",
   "when": {
     "start": 2011,
     "end": 2011,
@@ -39,5 +52,10 @@
   },
   "place": null,
   "region": "europe",
-  "actors": []
+  "actors": [
+    {
+      "actor": "partido-socialista",
+      "role": "chose a new secretary-general"
+    }
+  ]
 }

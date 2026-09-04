@@ -1,7 +1,7 @@
 {
   "counts": {
     "actors": 326,
-    "edges": 140,
+    "edges": 145,
     "events": 326,
     "narratives": 1,
     "places": 25,
@@ -11,9 +11,9 @@
     "sources": 34
   },
   "files": {
-    "review": "index/review-4afb55f56895.json",
-    "sources": "index/sources-e6018fcf4829.json",
-    "topology": "index/topology-d007f3a3420a.json"
+    "review": "index/review-b892d9964272.json",
+    "sources": "index/sources-34f45a7b03cf.json",
+    "topology": "index/topology-dbf7577d247e.json"
   },
   "land": [
     {
@@ -104,6 +104,7 @@
     "came first and led the government",
     "campaigned against",
     "candidate",
+    "chose a new secretary-general",
     "claimed responsibility",
     "coalition party",
     "commander",
@@ -132,6 +133,7 @@
     "head of the government the attack targeted",
     "heir apparent, killed in the attack",
     "held every seat of the electing assembly",
+    "held the primary",
     "host",
     "in opposition",
     "incumbent",
@@ -224,6 +226,8 @@
     "won a majority of the new assembly",
     "won a second absolute majority",
     "won and formed a minority government",
+    "won and led the coalition government",
+    "won it and took the leadership",
     "won its first absolute majority",
     "won lisbon and porto",
     "younger son, succeeded to the throne"

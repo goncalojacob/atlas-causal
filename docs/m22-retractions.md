@@ -301,3 +301,65 @@ The local election of 2001 is the answer to a doubt the 1980s section raised:
 a repetition stops being a repetition the moment something follows from it,
 and this is the only local election in the democratic period to bring down a
 national government.
+
+---
+
+## 2010s — 24 of 32 retracted, 4 merged, 4 wired
+
+The four merged are events the atlas already held under its own ids: the
+legislative elections of 2015 and 2019, the presidential election of 2016 and
+the Pedrógão Grande fire.
+
+The four wired make the decade's two chains. One is short — the election of
+June 2011 is the mandate the adjustment programme was carried out under, and
+it reaches the exit of May 2014. The other is the run's second-best find: the
+defeat of June 2011 forces the Socialist leadership ballot of July, the leader
+it produces is the incumbent the open primary of September 2014 was called
+against, and the leader that primary produces is the one who read the
+arithmetic of October 2015 as a majority. The atlas already held the
+government of November 2015; what it did not hold was why the answer in 2015
+differed from the answer any previous Socialist leader would have given.
+
+**Repetitions, twelve records.** Local elections of 2013 and 2017; European
+elections of 2014 and 2019; Azorean regional elections of 2012 and 2016;
+Madeiran of 2011 and 2019; and the four single-municipality ballots of Lisbon
+and Porto in 2013 and 2017. `2015-madeiran-regional-election` is not a
+repetition — it is the first Madeiran election since 1976 without Alberto João
+Jardim on the ballot — and it is retracted anyway, because the atlas holds
+neither Jardim nor the regional government for the end of a thirty-seven-year
+tenure to attach to.
+
+**Two party leadership elections retracted, two kept.** The Social Democrat
+ballots of 2016 and of January 2018, which chose Rui Rio, end nowhere the
+atlas holds. The Socialist ballots of 2011 and 2014 are kept because the chain
+they start ends at a government the atlas already had. That is the whole of
+the distinction, and it is a statement about the atlas's coverage rather than
+about the parties.
+
+**Two acts of a group of states.** `treaty-establishing-the-european-stability-mechanism`
+(2 February 2012) — Portugal signed it and was financed by the earlier
+facilities, not by it — and `resolute-support-mission`, the NATO training
+mission in Afghanistan to which Portugal sent a contingent. Same rule as the
+Treaty of Lisbon.
+
+**Six disasters with no recorded consequence.** The fire season of 2016 and
+the Madeira fires that reached Funchal; the Monchique fire of 2018; the
+remains of Hurricane Leslie in October 2018; the quarry collapse at Borba;
+the Legionella outbreak at Vila Franca de Xira in 2014, one of the largest
+recorded anywhere; and the spread of Xylella through southern European olive
+groves. The atlas holds the fires of 2017 and wires them to the reform they
+produced; it holds nothing of the response to any of these six. This is the
+largest single class of retraction in M22 after the armed left and the routine
+ballots, and the one where the gap is most clearly in the atlas rather than in
+the events.
+
+### Wired
+
+`2011-portuguese-legislative-election`, `2011-portuguese-socialist-party-leadership-election`,
+`2014-portuguese-socialist-party-prime-ministerial-primary`, `covid-19-pandemic`.
+Five edges.
+
+`covid-19-pandemic` carries a `facts-thin` flag: the bibliography holds
+nothing on the pandemic, so the record and its edge stand on two cached
+Wikipedia leads and the Wikidata item. Rule 22 would forbid `consensus` there
+in any case.

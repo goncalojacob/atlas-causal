@@ -2,8 +2,8 @@
   "schema": 1,
   "id": "2017-pedrogao-grande-wildfire",
   "kind": "event",
-  "status": "active",
-  "supersededBy": null,
+  "status": "merged",
+  "supersededBy": "pedrogao-grande-fires-2017",
   "aliases": [],
   "authors": [
     {
@@ -13,11 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "m22-merged"
+    ],
+    "note": "Merged in M22 into pedrogao-grande-fires-2017, which is the same event: the fire that began near Pedrógão Grande on 17 June 2017 and killed 66 people. This record keeps the Wikidata id the import brought and names its survivor rather than becoming an anonymous tombstone."
   },
   "wikidata": "Q30327722",
   "sitelinks": 29,

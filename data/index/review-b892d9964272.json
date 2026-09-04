@@ -1490,6 +1490,179 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-teixeira-2019-political-institutions",
+        "imf-2016-portugal-ex-post-evaluation",
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "2011-portuguese-legislative-election",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "2011 Portuguese legislative election"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-teixeira-2019-political-institutions"
+      ],
+      "from": "2011-portuguese-legislative-election",
+      "id": "2011-portuguese-legislative-election--2011-portuguese-socialist-party-leadership-election--caused",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "2011-portuguese-socialist-party-leadership-election",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-teixeira-2019-political-institutions",
+        "imf-2016-portugal-ex-post-evaluation"
+      ],
+      "from": "2011-portuguese-legislative-election",
+      "id": "2011-portuguese-legislative-election--troika-programme-ends-2014--enabled",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "troika-programme-ends-2014",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-teixeira-2019-political-institutions",
+        "wikipedia-en",
+        "wikidata"
+      ],
+      "id": "2011-portuguese-socialist-party-leadership-election",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "2011 Portuguese Socialist Party leadership election"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-teixeira-2019-political-institutions"
+      ],
+      "from": "2011-portuguese-socialist-party-leadership-election",
+      "id": "2011-portuguese-socialist-party-leadership-election--2014-portuguese-socialist-party-prime-ministerial-primary--precondition-of",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "2014-portuguese-socialist-party-prime-ministerial-primary",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-teixeira-2019-political-institutions",
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "2014-portuguese-socialist-party-prime-ministerial-primary",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "2014 Portuguese Socialist Party prime ministerial primary"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-teixeira-2019-political-institutions"
+      ],
+      "from": "2014-portuguese-socialist-party-prime-ministerial-primary",
+      "id": "2014-portuguese-socialist-party-prime-ministerial-primary--geringonca-2015--enabled",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "geringonca-2015",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -3631,6 +3804,57 @@
       "kind": "edge",
       "status": "active",
       "to": "nationalisations-1975",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "covid-19-pandemic",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted",
+          "facts-thin"
+        ],
+        "note": "The bibliography holds nothing on the pandemic: this record and its edge stand on the two cached Wikipedia leads and the Wikidata item alone, which is why the edge is `probable` and not `consensus` (rule 22 would forbid consensus here in any case). A reviewer should add a source before signing."
+      },
+      "status": "active",
+      "title": "COVID-19 pandemic"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "from": "covid-19-pandemic",
+      "id": "covid-19-pandemic--covid-19-pandemic-in-europe--caused",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "covid-19-pandemic-in-europe",
       "type": "caused"
     },
     {
@@ -8618,164 +8842,8 @@
     }
   ],
   "schema": 1,
-  "total": 880,
+  "total": 885,
   "warnings": [
-    {
-      "id": "2011-madeiran-regional-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2011-portuguese-legislative-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2011-portuguese-presidential-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2011-portuguese-socialist-party-leadership-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2012-azorean-regional-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2013-20-olive-quick-decline-syndrome-outbreak",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2013-lisbon-local-elections",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2013-porto-local-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2013-portuguese-local-elections",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2014-european-parliament-election-in-portugal",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2014-legionella-outbreak-in-portugal",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2014-portuguese-socialist-party-prime-ministerial-primary",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2015-madeiran-regional-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2015-portuguese-legislative-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2016-azorean-regional-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2016-portugal-wildfires",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2016-portuguese-presidential-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2016-portuguese-social-democratic-party-leadership-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2017-lisbon-local-elections",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2017-pedrogao-grande-wildfire",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2017-porto-local-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2017-portuguese-local-elections",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2018-portuguese-social-democratic-party-leadership-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2019-european-parliament-election-in-portugal",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2019-madeiran-regional-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2019-portuguese-legislative-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
     {
       "id": "2020-azorean-regional-election",
       "kind": "event",
@@ -8939,25 +9007,7 @@
       "rule": "degree-zero"
     },
     {
-      "id": "covid-19-pandemic",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "covid-19-pandemic-in-europe",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
       "id": "december-2022-floods-in-portugal",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "hurricane-leslie",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"
@@ -8975,19 +9025,7 @@
       "rule": "degree-zero"
     },
     {
-      "id": "monchique-fire",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
       "id": "murder-of-diamantino-monteiro-pereira",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "resolute-support-mission",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"
@@ -8997,18 +9035,6 @@
       "kind": "place",
       "message": "place is referenced by no event",
       "rule": "place-unused"
-    },
-    {
-      "id": "tragedia-de-borba",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "treaty-establishing-the-european-stability-mechanism",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
     },
     {
       "id": "uefa-2016-final",

@@ -9,14 +9,19 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "summary-drafted"
     ]
   },
   "wikidata": "Q18389393",
@@ -27,12 +32,24 @@
   },
   "sources": [
     {
+      "source": "costa-pinto-teixeira-2019-political-institutions",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"2014 Portuguese Socialist Party prime ministerial primary\", revision 1360457304"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Eleições primárias do Partido Socialista em 2014\", revision 71709746"
+    },
+    {
       "source": "wikidata",
-      "locator": "Q18389393"
+      "locator": null
     }
   ],
   "title": "2014 Portuguese Socialist Party prime ministerial primary",
-  "summary": "Wikidata item Q18389393, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "On 28 September 2014 the Socialists held the first open primary in Portuguese politics — a ballot any voter could register for, not only party members — to choose the candidate for prime minister at the coming election. António Costa, then mayor of Lisbon, beat the incumbent secretary-general António José Seguro by about sixty-eight per cent to thirty-two, and took the leadership of the party with the candidacy. It is in the atlas because the change of leader is what changed the answer: Costa read the 2015 result as an arithmetic of the chamber rather than a ranking of lists, and the government of November 2015 followed from that reading.",
   "when": {
     "start": 2014,
     "end": 2014,
@@ -40,5 +57,14 @@
   },
   "place": null,
   "region": "europe",
-  "actors": []
+  "actors": [
+    {
+      "actor": "partido-socialista",
+      "role": "held the primary"
+    },
+    {
+      "actor": "antonio-costa",
+      "role": "won it and took the leadership"
+    }
+  ]
 }

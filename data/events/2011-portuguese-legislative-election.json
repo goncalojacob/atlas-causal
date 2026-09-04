@@ -9,14 +9,19 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "summary-drafted"
     ]
   },
   "wikidata": "Q1457926",
@@ -27,12 +32,28 @@
   },
   "sources": [
     {
+      "source": "costa-pinto-teixeira-2019-political-institutions",
+      "locator": null
+    },
+    {
+      "source": "imf-2016-portugal-ex-post-evaluation",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"2011 Portuguese legislative election\", revision 1372702329"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Eleições legislativas portuguesas de 2011\", revision 71998335"
+    },
+    {
       "source": "wikidata",
-      "locator": "Q1457926"
+      "locator": null
     }
   ],
   "title": "2011 Portuguese legislative election",
-  "summary": "Wikidata item Q1457926, imported by tools/import/wikidata.mjs. The item's own description reads \"election in Portugal\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The early election of 5 June 2011 was held six weeks after the request for external assistance and under a memorandum the two largest opposition parties had already signed. The Social Democrats won it under Pedro Passos Coelho, took seventeen of the twenty districts and formed a coalition with the CDS holding about 56 per cent of the seats; turnout was under sixty per cent. The government it produced carried the three-year programme to its end in May 2014, and everything the adjustment did — the tax rises of 2013, the cuts the Constitutional Court struck down, the emigration — was done by it. It is in the atlas as the mandate the adjustment was carried out under.",
   "when": {
     "start": 2011,
     "end": 2011,
@@ -40,5 +61,22 @@
   },
   "place": null,
   "region": "europe",
-  "actors": []
+  "actors": [
+    {
+      "actor": "psd",
+      "role": "won and led the coalition government"
+    },
+    {
+      "actor": "cds-pp",
+      "role": "junior partner"
+    },
+    {
+      "actor": "pedro-passos-coelho",
+      "role": "prime minister"
+    },
+    {
+      "actor": "partido-socialista",
+      "role": "lost office"
+    }
+  ]
 }

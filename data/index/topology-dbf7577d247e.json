@@ -5566,6 +5566,46 @@
     },
     {
       "aliases": [],
+      "confidence": "probable",
+      "from": "2011-portuguese-legislative-election",
+      "id": "2011-portuguese-legislative-election--2011-portuguese-socialist-party-leadership-election--caused",
+      "status": "active",
+      "supersededBy": null,
+      "to": "2011-portuguese-socialist-party-leadership-election",
+      "type": "caused"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "2011-portuguese-legislative-election",
+      "id": "2011-portuguese-legislative-election--troika-programme-ends-2014--enabled",
+      "status": "active",
+      "supersededBy": null,
+      "to": "troika-programme-ends-2014",
+      "type": "enabled"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "2011-portuguese-socialist-party-leadership-election",
+      "id": "2011-portuguese-socialist-party-leadership-election--2014-portuguese-socialist-party-prime-ministerial-primary--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "2014-portuguese-socialist-party-prime-ministerial-primary",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "2014-portuguese-socialist-party-prime-ministerial-primary",
+      "id": "2014-portuguese-socialist-party-prime-ministerial-primary--geringonca-2015--enabled",
+      "status": "active",
+      "supersededBy": null,
+      "to": "geringonca-2015",
+      "type": "enabled"
+    },
+    {
+      "aliases": [],
       "confidence": "consensus",
       "from": "25-november-1975",
       "id": "25-november-1975--constitution-1976--enabled",
@@ -6012,6 +6052,16 @@
       "status": "active",
       "supersededBy": null,
       "to": "nationalisations-1975",
+      "type": "caused"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "covid-19-pandemic",
+      "id": "covid-19-pandemic--covid-19-pandemic-in-europe--caused",
+      "status": "active",
+      "supersededBy": null,
+      "to": "covid-19-pandemic-in-europe",
       "type": "caused"
     },
     {
@@ -9440,7 +9490,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "2011 Madeiran regional election",
       "weight": 0,
@@ -9456,7 +9506,24 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "psd",
+          "role": "won and led the coalition government"
+        },
+        {
+          "actor": "cds-pp",
+          "role": "junior partner"
+        },
+        {
+          "actor": "pedro-passos-coelho",
+          "role": "prime minister"
+        },
+        {
+          "actor": "partido-socialista",
+          "role": "lost office"
+        }
+      ],
       "aliases": [],
       "id": "2011-portuguese-legislative-election",
       "place": null,
@@ -9465,7 +9532,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "2011 Portuguese legislative election",
-      "weight": 0,
+      "weight": 6,
       "when": {
         "date": "2011-06-05",
         "end": 2011,
@@ -9484,7 +9551,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "2011 Portuguese presidential election",
       "weight": 0,
@@ -9500,7 +9567,12 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "partido-socialista",
+          "role": "chose a new secretary-general"
+        }
+      ],
       "aliases": [],
       "id": "2011-portuguese-socialist-party-leadership-election",
       "place": null,
@@ -9509,7 +9581,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "2011 Portuguese Socialist Party leadership election",
-      "weight": 0,
+      "weight": 3,
       "when": {
         "date": "2011-07-22",
         "end": 2011,
@@ -9527,7 +9599,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "2012 Azorean regional election",
       "weight": 0,
@@ -9549,7 +9621,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "2013–20 olive quick decline syndrome outbreak",
       "weight": 0,
@@ -9566,7 +9638,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "2013 Lisbon local elections",
       "weight": 0,
@@ -9588,7 +9660,7 @@
       "place": "porto",
       "region": "europe",
       "regionMethod": "inside",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "2013 Porto local election",
       "weight": 0,
@@ -9610,7 +9682,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "2013 Portuguese local elections",
       "weight": 0,
@@ -9632,7 +9704,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "2014 European Parliament election in Portugal",
       "weight": 0,
@@ -9654,7 +9726,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "2014 Legionella outbreak in Portugal",
       "weight": 0,
@@ -9670,7 +9742,16 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "partido-socialista",
+          "role": "held the primary"
+        },
+        {
+          "actor": "antonio-costa",
+          "role": "won it and took the leadership"
+        }
+      ],
       "aliases": [],
       "id": "2014-portuguese-socialist-party-prime-ministerial-primary",
       "place": null,
@@ -9679,7 +9760,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "2014 Portuguese Socialist Party prime ministerial primary",
-      "weight": 0,
+      "weight": 4,
       "when": {
         "date": "2014-09-28",
         "end": 2014,
@@ -9698,7 +9779,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "2015 Madeiran regional election",
       "weight": 0,
@@ -9720,8 +9801,8 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
-      "supersededBy": null,
+      "status": "merged",
+      "supersededBy": "legislative-election-2015",
       "title": "2015 Portuguese legislative election",
       "weight": 0,
       "when": {
@@ -9742,7 +9823,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "2016 Azorean regional election",
       "weight": 0,
@@ -9764,7 +9845,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "2016 Portugal wildfires",
       "weight": 0,
@@ -9786,8 +9867,8 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
-      "supersededBy": null,
+      "status": "merged",
+      "supersededBy": "marcelo-elected-president-2016",
       "title": "2016 Portuguese presidential election",
       "weight": 0,
       "when": {
@@ -9808,7 +9889,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "2016 Portuguese Social Democratic Party leadership election",
       "weight": 0,
@@ -9830,7 +9911,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "2017 Lisbon local elections",
       "weight": 0,
@@ -9852,8 +9933,8 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
-      "supersededBy": null,
+      "status": "merged",
+      "supersededBy": "pedrogao-grande-fires-2017",
       "title": "2017 Pedrógão Grande Wildfire",
       "weight": 0,
       "when": {
@@ -9875,7 +9956,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "2017 Porto local election",
       "weight": 0,
@@ -9897,7 +9978,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "2017 Portuguese local elections",
       "weight": 0,
@@ -9919,7 +10000,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "2018 Portuguese Social Democratic Party leadership election",
       "weight": 0,
@@ -9941,7 +10022,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "2019 European Parliament election in Portugal",
       "weight": 0,
@@ -9963,7 +10044,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "2019 Madeiran regional election",
       "weight": 0,
@@ -9985,8 +10066,8 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
-      "supersededBy": null,
+      "status": "merged",
+      "supersededBy": "legislative-election-2019",
       "title": "2019 Portuguese legislative election",
       "weight": 0,
       "when": {
@@ -11735,7 +11816,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "COVID-19 pandemic",
-      "weight": 0,
+      "weight": 1,
       "when": {
         "date": "2019-11-15",
         "end": null,
@@ -11757,7 +11838,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "COVID-19 pandemic in Europe",
-      "weight": 0,
+      "weight": 1,
       "when": {
         "date": "2020-01-24",
         "end": null,
@@ -12470,7 +12551,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "The PS minority government of 2015",
-      "weight": 9,
+      "weight": 10,
       "when": {
         "calendar": "gregorian",
         "date": "2015-11-26",
@@ -12691,7 +12772,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "Hurricane Leslie",
       "weight": 0,
@@ -13386,7 +13467,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "Monchique Fire",
       "weight": 0,
@@ -14083,7 +14164,7 @@
       "place": null,
       "region": "asia",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "Resolute Support Mission",
       "weight": 0,
@@ -14466,7 +14547,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "Tragédia de Borba",
       "weight": 0,
@@ -14487,7 +14568,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "Treaty Establishing the European Stability Mechanism",
       "weight": 0,
@@ -14670,7 +14751,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Exit from the adjustment programme",
-      "weight": 7,
+      "weight": 8,
       "when": {
         "calendar": "gregorian",
         "date": "2014-05-17",

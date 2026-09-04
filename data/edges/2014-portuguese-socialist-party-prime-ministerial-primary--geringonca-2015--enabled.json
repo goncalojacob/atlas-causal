@@ -1,0 +1,34 @@
+{
+  "schema": 1,
+  "id": "2014-portuguese-socialist-party-prime-ministerial-primary--geringonca-2015--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "costa-pinto-teixeira-2019-political-institutions",
+      "locator": null
+    }
+  ],
+  "from": "2014-portuguese-socialist-party-prime-ministerial-primary",
+  "to": "geringonca-2015",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The arithmetic of October 2015 was there whoever led the Socialists: the PS, the Bloco, the PCP and the Greens held a majority of the seats between them. What was not there in any previous parliament was a Socialist leader willing to govern on written agreements with the two parties to his left, and to argue in public that the largest list does not automatically govern. Costa had said so during the primary and won it saying so. The edge argues the disposition and not the numbers, which is why it is `enabled` and why the atlas keeps the primary as an event at all.",
+  "dispute": null
+}

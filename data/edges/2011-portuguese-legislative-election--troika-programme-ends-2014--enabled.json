@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "2011-portuguese-legislative-election--troika-programme-ends-2014--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "costa-pinto-teixeira-2019-political-institutions",
+      "locator": null
+    },
+    {
+      "source": "imf-2016-portugal-ex-post-evaluation",
+      "locator": null
+    }
+  ],
+  "from": "2011-portuguese-legislative-election",
+  "to": "troika-programme-ends-2014",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "A three-year adjustment programme has to be carried by a government that survives it, and Portugal's was: the coalition elected in June 2011 was still in office in May 2014 and it left the programme without the precautionary credit line, which was its own decision and not the lenders'. The atlas argues the political condition rather than the economics. The memorandum was signed by a caretaker government of a party that then lost; what this election supplied was a majority that had campaigned on carrying it out and had four years to do so.",
+  "dispute": null
+}

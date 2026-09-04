@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "treaty-establishing-the-european-stability-mechanism",
   "kind": "event",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,11 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "m22-retracted"
+    ],
+    "note": "Retracted in M22: the treaty signed by the euro-area states on 2 February 2012 creating the permanent rescue fund, which succeeded the temporary facilities. Portugal signed it and its own programme was financed by the earlier ones, not by this. As with the Treaty of Lisbon, it is an act of a group of states rather than of Portugal, and keeping it would mean inventing a particular Portuguese part in it."
   },
   "wikidata": "Q15991234",
   "sitelinks": 5,

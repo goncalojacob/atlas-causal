@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "resolute-support-mission",
   "kind": "event",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,11 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "m22-retracted"
+    ],
+    "note": "Retracted in M22: the NATO training mission in Afghanistan, from January 2015 to 2021, to which Portugal contributed a small contingent. It is an act of the alliance and not of Portugal, and the atlas holds nothing of the Portuguese armed forces after 1974 for a contribution to attach to."
   },
   "wikidata": "Q18651204",
   "sitelinks": 26,
