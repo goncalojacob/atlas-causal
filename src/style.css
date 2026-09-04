@@ -1148,3 +1148,30 @@ svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align:
 /* "Read the full entry", on every card that can have one. */
 .panel .entry-link { margin: var(--space-1) 0; font-family: var(--font-ui); font-size: var(--text-sm); }
 .panel .entry-link a { color: var(--cobalt); }
+
+/* The live preview of a full entry, under the textarea it is typed into: the
+   contribution form and the dashboard's editor draw the same block. */
+.entry-preview {
+  margin: var(--space-2) 0 0; padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--line); border-radius: var(--radius); background: var(--ground);
+}
+.preview-label {
+  margin: 0 0 var(--space-1); font-family: var(--font-ui); font-size: var(--text-xs);
+  text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-soft);
+}
+.preview-body { font-family: var(--font); font-size: var(--text-base); line-height: var(--leading-prose); }
+.preview-body h2, .preview-body h3 {
+  font-family: var(--font); font-weight: normal; color: var(--cobalt);
+  font-size: var(--text-lg); margin: var(--space-3) 0 var(--space-1); padding: 0; border: 0;
+}
+.preview-body h3 { font-size: var(--text-base); }
+.preview-body p { margin: var(--space-2) 0; }
+.preview-notes { list-style: none; padding: 0; margin: var(--space-2) 0 0; }
+.preview-notes li {
+  font-family: var(--font-ui); font-size: var(--text-sm); color: var(--madder);
+  padding: 0.1rem 0 0.1rem var(--space-3); border-left: 2px solid var(--madder);
+}
+.queue-item .has-entry {
+  display: inline-block; margin: 0.15rem 0.2rem 0 0; padding: 0 0.35rem;
+  border: 1px solid var(--cobalt); color: var(--cobalt); font-size: var(--text-xs); border-radius: 2px;
+}

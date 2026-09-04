@@ -14,6 +14,7 @@ import {
   FIELDS, CITATION_LISTS, ACTOR_LISTS, STEP_LISTS, emptyValues, buildBundle, slugify, findSimilar, validateBundle,
 } from './bundle.js';
 import { submitBundle } from './submit.js';
+import { previewHtml } from '../entry/preview.js';
 
 const KIND_LABEL = Object.freeze({
   event: 'Event', edge: 'Edge', source: 'Source', actor: 'Actor', place: 'Place', relation: 'Relation',
@@ -217,7 +218,7 @@ export function createForm(container, { topology, schemas, template, fixtures = 
   // --- entries -----------------------------------------------------------
   function addEntry(kind, values = emptyValues(kind)) {
     sequence += 1;
-    const entry = { key: `e${sequence}`, kind, values, idTouched: false, acknowledged: false, fields: new Map() };
+    const entry = { key: `e${sequence}`, kind, values, idTouched: false, acknowledged: false, fields: new Map(), previews: [] };
     entries.push(entry);
     entriesEl.appendChild(renderEntry(entry));
     refreshOptions();
@@ -307,6 +308,17 @@ export function createForm(container, { topology, schemas, template, fixtures = 
     });
     wrap.appendChild(input);
     if (field.hint) wrap.appendChild(html('p', { class: 'hint' }, field.hint));
+    // The long form is a syntax, small as it is, and a contributor who cannot
+    // see what a citation mark or a record link did will guess. The preview
+    // is redrawn by refresh(), so editing a citation row re-checks the marks.
+    if (field.body) {
+      const preview = html('div', { class: 'entry-preview' });
+      preview.appendChild(html('p', { class: 'preview-label' }, 'What the entry will look like'));
+      const slot = html('div', { class: 'preview-slot entry' });
+      preview.appendChild(slot);
+      wrap.appendChild(preview);
+      entry.previews.push({ slot, field });
+    }
     const error = html('p', { class: 'field-error', hidden: 'hidden' });
     wrap.appendChild(error);
     entry.fields.set(field.path, { wrap, input, error, field });
@@ -527,6 +539,32 @@ export function createForm(container, { topology, schemas, template, fixtures = 
     return buildBundle(entries.map((e) => ({ kind: e.kind, values: e.values })), { author: state.author, today: today() });
   }
 
+  // The ids the topology holds, by kind, built once: a preview redrawn on
+  // every keystroke cannot walk a thousand records each time.
+  const idCache = new Map();
+  const KIND_LIST = Object.freeze({ event: 'events', actor: 'actors', place: 'places', source: 'sources' });
+  function idsOfKind(kind) {
+    if (!idCache.has(kind)) {
+      idCache.set(kind, new Set((topology[KIND_LIST[kind]] ?? []).map((r) => r.id)));
+    }
+    return idCache.get(kind);
+  }
+
+  // The entry as it will be read, under the field it is typed into. `cited`
+  // is the citation rows as they stand right now, so a mark is checked
+  // against what the contributor has actually cited; `known` is the topology
+  // plus the records in this bundle, since a contribution may link to an
+  // event it is adding in the same breath.
+  function drawPreviews(entry) {
+    if (entry.previews.length === 0) return;
+    const cited = new Set((entry.values.citations ?? []).map((c) => c?.source).filter(Boolean));
+    const inBundle = new Set(entries.map((e) => `${e.kind}:${e.values.id ?? ''}`));
+    const known = (kind, id) => inBundle.has(`${kind}:${id}`) || idsOfKind(kind).has(id);
+    for (const { slot, field } of entry.previews) {
+      slot.innerHTML = previewHtml(entry.values[field.key], { cited, known });
+    }
+  }
+
   function refresh() {
     const bundle = currentBundle();
     const result = validateBundle(bundle, topology, schemas);
@@ -589,6 +627,8 @@ export function createForm(container, { topology, schemas, template, fixtures = 
       entries.length === 0 ? 'Add a source, then the event it supports.'
         : count === 0 ? 'The bundle validates against the records already in the atlas.'
           : `${count} problem${count === 1 ? '' : 's'} to fix before this can be filed.`));
+
+    for (const entry of entries) drawPreviews(entry);
 
     previewEl.textContent = JSON.stringify(bundle, null, 2);
     const ready = result.ok && acknowledged;

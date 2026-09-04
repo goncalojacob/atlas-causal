@@ -241,6 +241,10 @@ function render({ topology, review, schemas }) {
         button.appendChild(html('span', { class: 'queue-id' }, item.id));
         for (const flag of item.flags) button.appendChild(html('span', { class: 'flag' }, flag));
         if (item.unverified) button.appendChild(html('span', { class: 'unverified' }, `${item.unverified} citation${item.unverified === 1 ? '' : 's'} unverified`));
+        // Which records have a full entry written. Not a flag — nothing here
+        // is wrong — but the one thing the queue can say about how much of a
+        // record exists beyond the sentence on its card.
+        if (item.body) button.appendChild(html('span', { class: 'has-entry' }, 'full entry'));
         button.addEventListener('click', () => openRecord(item));
         li.appendChild(button);
         ul.appendChild(li);

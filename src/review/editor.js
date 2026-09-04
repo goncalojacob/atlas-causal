@@ -17,6 +17,7 @@ import {
 } from '../contribute/bundle.js';
 import { identifiers, citationText } from '../citation.js';
 import { citationRows, setVerified, clearVerified } from './citations.js';
+import { previewHtml } from '../entry/preview.js';
 
 // The error at /where/lon belongs to the longitude input, the one at
 // /sources/0/source to the citation list: walk up the path until a field
@@ -114,7 +115,16 @@ export function createEditor({
   const kind = record.kind;
   const values = valuesFromRecord(kind, record);
   const fields = new Map();
+  const previews = [];
   const optionsFor = choicesFrom(topology);
+  // The ids the topology holds, by kind, built once: the preview is redrawn
+  // on every keystroke and cannot walk a thousand records each time.
+  const idCache = new Map();
+  const KIND_LIST = Object.freeze({ event: 'events', actor: 'actors', place: 'places', source: 'sources' });
+  const idsOfKind = (k) => {
+    if (!idCache.has(k)) idCache.set(k, new Set((topology[KIND_LIST[k]] ?? []).map((r) => r.id)));
+    return idCache.get(k);
+  };
   // The record the save starts from. Only its `review` block ever differs
   // from what was opened: the body is always what is in the inputs, so a tick
   // and an edit cannot drift apart.
@@ -173,6 +183,16 @@ export function createEditor({
     });
     wrap.appendChild(input);
     if (field.hint) wrap.appendChild(html('p', { class: 'hint' }, field.hint));
+    // The same preview the contribution form shows, from the same renderer:
+    // a reviewer editing an entry sees what a reader will see.
+    if (field.body) {
+      const preview = html('div', { class: 'entry-preview' });
+      preview.appendChild(html('p', { class: 'preview-label' }, 'What the entry will look like'));
+      const slot = html('div', { class: 'preview-slot entry' });
+      preview.appendChild(slot);
+      wrap.appendChild(preview);
+      previews.push({ slot, field });
+    }
     const error = html('p', { class: 'field-error', hidden: 'hidden' });
     wrap.appendChild(error);
     fields.set(field.path, { wrap, input, error, field });
@@ -341,6 +361,18 @@ export function createEditor({
   // record under edit shadows its own entry in the topology, an edge that
   // already exists is judged as the atlas would be after the save, not as a
   // duplicate of itself.
+  // The entry as a reader will see it, checked against the citation rows as
+  // they stand: a mark whose source the reviewer has just removed is marked
+  // here before the validator says the same thing at /body.
+  function drawPreviews() {
+    if (previews.length === 0) return;
+    const cited = new Set((values.citations ?? []).map((c) => c?.source).filter(Boolean));
+    const known = (k, id) => idsOfKind(k).has(id);
+    for (const { slot, field } of previews) {
+      slot.innerHTML = previewHtml(values[field.key], { cited, known });
+    }
+  }
+
   function refresh() {
     const edited = current();
     const result = validateBundle({ schema: 1, records: [edited] }, topology, schemas);
@@ -365,6 +397,7 @@ export function createEditor({
       }
     }
     paintVerify();
+    drawPreviews();
     onChange({ record: edited, result });
     return { record: edited, result };
   }
