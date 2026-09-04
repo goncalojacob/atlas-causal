@@ -211,6 +211,58 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "rosas-1994-estado-novo",
+        "meneses-2009-salazar",
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "1928-portuguese-presidential-election",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "1928 Portuguese presidential election"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "rosas-1994-estado-novo",
+        "meneses-2009-salazar"
+      ],
+      "from": "1928-portuguese-presidential-election",
+      "id": "1928-portuguese-presidential-election--salazar-finance-minister-1928--enabled",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "salazar-finance-minister-1928",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -2074,6 +2126,29 @@
       "kind": "event",
       "status": "active",
       "title": "Coup of 28 May"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "rosas-1994-estado-novo",
+        "meneses-2009-salazar"
+      ],
+      "from": "coup-28-may-1926",
+      "id": "coup-28-may-1926--1928-portuguese-presidential-election--caused",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "1928-portuguese-presidential-election",
+      "type": "caused"
     },
     {
       "authors": [
@@ -4914,6 +4989,30 @@
         }
       ],
       "cites": [
+        "rosas-1994-estado-novo",
+        "meneses-2009-salazar"
+      ],
+      "id": "oscar-carmona",
+      "kind": "actor",
+      "names": [
+        "Óscar Carmona",
+        "António Óscar de Fragoso Carmona"
+      ],
+      "review": {
+        "flags": [
+          "actor-drafted"
+        ]
+      },
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "maxwell-1995-making-of-portuguese-democracy",
         "telo-2007-historia-contemporanea"
       ],
@@ -6555,50 +6654,8 @@
     }
   ],
   "schema": 1,
-  "total": 832,
+  "total": 835,
   "warnings": [
-    {
-      "id": "1921-portuguese-legislative-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "1922-portuguese-legislative-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "1923-portuguese-presidential-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "1925-portuguese-legislative-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "1925-portuguese-presidential-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "1926-horta-earthquake",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "1928-portuguese-presidential-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
     {
       "id": "1934-portuguese-legislative-election",
       "kind": "event",
@@ -7753,12 +7810,6 @@
     },
     {
       "id": "portuguese-regionalisation-referendum-1998",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "q11077889",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"

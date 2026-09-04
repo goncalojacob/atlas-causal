@@ -3437,6 +3437,22 @@
     {
       "actorType": "person",
       "aliases": [],
+      "id": "oscar-carmona",
+      "name": "Óscar Carmona",
+      "names": [
+        "Óscar Carmona",
+        "António Óscar de Fragoso Carmona"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": 1951,
+        "start": 1869
+      }
+    },
+    {
+      "actorType": "person",
+      "aliases": [],
       "id": "otelo-saraiva-de-carvalho",
       "name": "Otelo Saraiva de Carvalho",
       "names": [
@@ -5201,6 +5217,16 @@
     },
     {
       "aliases": [],
+      "confidence": "probable",
+      "from": "1928-portuguese-presidential-election",
+      "id": "1928-portuguese-presidential-election--salazar-finance-minister-1928--enabled",
+      "status": "active",
+      "supersededBy": null,
+      "to": "salazar-finance-minister-1928",
+      "type": "enabled"
+    },
+    {
+      "aliases": [],
       "confidence": "consensus",
       "from": "25-november-1975",
       "id": "25-november-1975--constitution-1976--enabled",
@@ -5537,6 +5563,16 @@
       "status": "active",
       "supersededBy": null,
       "to": "legislative-election-2024",
+      "type": "caused"
+    },
+    {
+      "aliases": [],
+      "confidence": "consensus",
+      "from": "coup-28-may-1926",
+      "id": "coup-28-may-1926--1928-portuguese-presidential-election--caused",
+      "status": "active",
+      "supersededBy": null,
+      "to": "1928-portuguese-presidential-election",
       "type": "caused"
     },
     {
@@ -6639,7 +6675,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "1921 Portuguese legislative election",
       "weight": 0,
@@ -6661,7 +6697,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "1922 Portuguese legislative election",
       "weight": 0,
@@ -6683,7 +6719,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "1923 Portuguese presidential election",
       "weight": 0,
@@ -6705,7 +6741,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "1925 Portuguese legislative election",
       "weight": 0,
@@ -6727,7 +6763,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "1925 Portuguese presidential election",
       "weight": 0,
@@ -6749,7 +6785,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "1926 Horta earthquake",
       "weight": 0,
@@ -6765,7 +6801,16 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "oscar-carmona",
+          "role": "sole candidate, elected president"
+        },
+        {
+          "actor": "military-dictatorship",
+          "role": "the regime seeking a constitutional form"
+        }
+      ],
       "aliases": [],
       "id": "1928-portuguese-presidential-election",
       "place": null,
@@ -6774,8 +6819,9 @@
       "status": "active",
       "supersededBy": null,
       "title": "1928 Portuguese presidential election",
-      "weight": 0,
+      "weight": 4,
       "when": {
+        "calendar": "gregorian",
         "date": "1928-03-25",
         "end": 1928,
         "start": 1928
@@ -10874,7 +10920,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Coup of 28 May",
-      "weight": 10,
+      "weight": 11,
       "when": {
         "calendar": "gregorian",
         "date": "1926-05-28",
@@ -13077,7 +13123,7 @@
       "place": "macau",
       "region": "asia",
       "regionMethod": "nearest",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "Q11077889",
       "weight": 0,
@@ -13384,7 +13430,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Salazar becomes Minister of Finance",
-      "weight": 4,
+      "weight": 5,
       "when": {
         "calendar": "gregorian",
         "date": "1928-04-27",

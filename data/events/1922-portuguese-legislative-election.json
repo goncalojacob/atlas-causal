@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "1922-portuguese-legislative-election",
   "kind": "event",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,11 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "m21-retracted"
+    ],
+    "note": "Retracted in M21: 29 January 1922, less than a year after the last election, the Democrats largest with 74 of 163 seats. The reason it was held — the Noite Sangrenta had destroyed the government of July 1921 — is already in the atlas under its own name. Nothing argued leads out of the election itself; the next thing the atlas holds is the coup of 1926, four years and several governments later."
   },
   "wikidata": "Q7232752",
   "sitelinks": 3,

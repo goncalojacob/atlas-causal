@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "oscar-carmona",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "actor-drafted"
+    ]
+  },
+  "where": null,
+  "sources": [
+    {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    },
+    {
+      "source": "meneses-2009-salazar",
+      "locator": null
+    }
+  ],
+  "actorType": "person",
+  "names": [
+    "Óscar Carmona",
+    "António Óscar de Fragoso Carmona"
+  ],
+  "summary": "Óscar Carmona (1869–1951) was the general who emerged on top of the Military Dictatorship after the coup of May 1926, took the headship of state that November, and had it confirmed by an election without an opponent in March 1928. He appointed the government that brought Salazar to the finance ministry a month later, and he was re-elected in 1935, 1942 and 1949 as the Estado Novo’s single candidate, dying in office in 1951. The presidency he held for twenty-five years began as the dictatorship’s claim to legitimacy and ended as the one constitutional office that could in principle have dismissed Salazar and never did. He is in the atlas as the cover under which the dictatorship became a regime.",
+  "when": {
+    "start": 1869,
+    "end": 1951
+  }
+}

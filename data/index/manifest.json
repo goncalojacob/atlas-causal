@@ -1,7 +1,7 @@
 {
   "counts": {
-    "actors": 318,
-    "edges": 100,
+    "actors": 319,
+    "edges": 102,
     "events": 326,
     "narratives": 1,
     "places": 25,
@@ -11,9 +11,9 @@
     "sources": 34
   },
   "files": {
-    "review": "index/review-8a47bd342b49.json",
-    "sources": "index/sources-5db852b59c03.json",
-    "topology": "index/topology-8d9ce8328e8e.json"
+    "review": "index/review-9dfc9d14e7cb.json",
+    "sources": "index/sources-94f74e7aaa85.json",
+    "topology": "index/topology-c55d395f9edb.json"
   },
   "land": [
     {
@@ -157,6 +157,7 @@
     "restored",
     "sheltered and armed the gunmen",
     "signatory",
+    "sole candidate, elected president",
     "successor",
     "superseded",
     "supporter",
@@ -164,6 +165,7 @@
     "target",
     "the regime being constituted",
     "the regime restored by the may rising",
+    "the regime seeking a constitutional form",
     "the regime whose office was filled",
     "victim",
     "winner",

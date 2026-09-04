@@ -120,3 +120,38 @@ Wired instead: `1911-portuguese-constituent-national-assembly-election`,
 `1915-portuguese-legislative-election` — the chain from the revolution
 through the constitution to the presidency that broke the parliamentary
 Republic in 1915, and the majority that took the country into the war.
+
+## 1920s — 7 of 8 retracted
+
+The First Republic's last elections, one earthquake, and one item nobody can
+identify. Only the presidential election of 1928 stays.
+
+- `1921-portuguese-legislative-election` — 10 July 1921. One argument runs out
+  of it, to the Noite Sangrenta that murdered the government it produced, and
+  none runs in.
+- `1922-portuguese-legislative-election` — 29 January 1922. The reason it was
+  held is already in the atlas as the Noite Sangrenta.
+- `1923-portuguese-presidential-election` — 6 August 1923; Teixeira Gomes
+  elected in absentia.
+- `1925-portuguese-legislative-election` — 8 November 1925. **The most
+  regrettable retraction of the decade**: the last multi-party election in
+  Portugal until 1975. One edge runs out of it — the parliament it returned
+  is the one 28 May 1926 swept away — and none runs in. Its significance is a
+  fact about the fifty years that followed, not a consequence of it.
+- `1925-portuguese-presidential-election` — 11 December 1925; Bernardino
+  Machado returned for what turned out to be five months.
+- `1926-horta-earthquake` — 31 August 1926, Faial: nine dead, 4,138 buildings
+  destroyed or damaged. A real event, and nothing in the atlas follows from
+  it. The brief names disasters without consequence as an expected
+  retraction.
+- `q11077889` — **retracted as unidentifiable.** The import got no label, no
+  description and no cached lead; the record is titled with its own Wikidata
+  id. It holds a date and a place, 28 May 1922 at Macau, which point strongly
+  at the shooting of Chinese demonstrators and the strike that followed.
+  Pointing is not knowing. The atlas does not write a record on an inference
+  about what an item probably is, so this one is a tombstone with its
+  coordinates on it, waiting for somebody with the article in front of them.
+
+Wired instead: `1928-portuguese-presidential-election`, which sits exactly
+between the coup of 1926 and Salazar's arrival at the finance ministry and
+had been missing from the chain.

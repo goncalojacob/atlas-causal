@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "coup-28-may-1926--1928-portuguese-presidential-election--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    },
+    {
+      "source": "meneses-2009-salazar",
+      "locator": null
+    }
+  ],
+  "from": "coup-28-may-1926",
+  "to": "1928-portuguese-presidential-election",
+  "type": "caused",
+  "confidence": "consensus",
+  "explanation": "The Military Dictatorship had governed for close to two years with no title but the one it took in May 1926, and its search for a form ran through the presidency. The election of 25 March 1928 was held under its own rules, with no opponent on the ballot, and it changed no ruler: it gave the ruler already in place a constitutional description of himself.",
+  "dispute": null
+}

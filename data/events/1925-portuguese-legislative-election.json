@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "1925-portuguese-legislative-election",
   "kind": "event",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,11 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "m21-retracted"
+    ],
+    "note": "Retracted in M21, and the most regrettable retraction of the decade: 8 November 1925 was the last multi-party election in Portugal until the Constituent Assembly of 1975. One argument runs out of it — the parliament it returned is the one 28 May 1926 swept away — but nothing argued runs in, and a single edge does not meet the bar. Its significance is a fact about the fifty years after it, not a consequence of it."
   },
   "wikidata": "Q10271595",
   "sitelinks": 3,

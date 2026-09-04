@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "1928-portuguese-presidential-election--salazar-finance-minister-1928--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    },
+    {
+      "source": "meneses-2009-salazar",
+      "locator": null
+    }
+  ],
+  "from": "1928-portuguese-presidential-election",
+  "to": "salazar-finance-minister-1928",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "This edge is deliberately narrower than the one the atlas already carries from the coup. What drove the dictatorship to Salazar’s terms was its own financial failure, and that argument is made there. What the March election added was the authority to concede them: the appointment of April 1928 was made by a government formed under a president confirmed a month earlier by a national vote, and the veto Salazar demanded bound every other ministry, which a junta improvising its own legitimacy was in no position to promise. The claim is about the terms and who could grant them, not about why he was wanted.",
+  "dispute": null
+}

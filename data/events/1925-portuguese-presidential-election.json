@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "1925-portuguese-presidential-election",
   "kind": "event",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,11 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "m21-retracted"
+    ],
+    "note": "Retracted in M21: the Congress met on 11 December 1925, the day after Teixeira Gomes resigned, and returned Bernardino Machado to the presidency for what turned out to be five months. The coup that ended it is in the atlas; the election that preceded it decides nothing the atlas holds."
   },
   "wikidata": "Q21714331",
   "sitelinks": 2,
