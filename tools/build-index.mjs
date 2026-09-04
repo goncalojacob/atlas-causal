@@ -12,13 +12,15 @@ import { mkdir, readdir, readFile, unlink, writeFile } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
-import { buildTopology, rolesInUse } from '../src/validate/core.js';
+import { buildTopology, byId, rolesInUse } from '../src/validate/core.js';
+import { checkRules } from '../src/validate/rules.js';
 import { createRegionDeriver } from '../src/util/geo.js';
+import { digestOf, isDraft } from '../src/review/queue.js';
 import { readRecords, readRegions, readRegionPolygons, readLandFiles, readPresenceShards } from './lib/read.mjs';
 
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 export const DEFAULT_DATA = path.join(ROOT, 'data');
-const HASHED = /^(topology|sources)-[0-9a-f]{12}\.json$/;
+const HASHED = /^(topology|sources|review)-[0-9a-f]{12}\.json$/;
 
 // Deep copy with keys sorted by UTF-16 code unit (Array.prototype.sort's
 // default), never by locale.
@@ -67,8 +69,25 @@ export async function buildIndex(dataDir = DEFAULT_DATA) {
     narratives: topology.narratives,
   });
   const sourcesText = serialize({ schema: 1, sources: topology.sources });
+
+  // What review.html needs and the topology does not carry: which records
+  // still have nobody's name on them, and what the rules say about each. The
+  // browser cannot read data/ record by record — 1200 files — and the
+  // topology drops `authors`, so the digests are written here, where every
+  // record is already in hand. Warnings come from the same checkRules() the
+  // CLI runs, so the dashboard shows the validator's opinion rather than a
+  // second implementation of it.
+  const reviewText = serialize({
+    schema: 1,
+    total: records.filter((r) => r.kind !== 'presence').length,
+    records: records.filter(isDraft).map(digestOf).sort(byId),
+    warnings: checkRules(records, topology).warnings
+      .map((w) => ({ id: w.id, kind: w.kind, rule: w.rule, message: w.message }))
+      .sort((a, b) => byId(a, b) || (a.rule < b.rule ? -1 : a.rule > b.rule ? 1 : 0)),
+  });
   const topologyName = `topology-${hashOf(topologyText)}.json`;
   const sourcesName = `sources-${hashOf(sourcesText)}.json`;
+  const reviewName = `review-${hashOf(reviewText)}.json`;
   const manifest = serialize({
     schema: 1,
     counts: {
@@ -82,7 +101,7 @@ export async function buildIndex(dataDir = DEFAULT_DATA) {
       narratives: topology.narratives.length,
       regions: topology.regions.length,
     },
-    files: { topology: `index/${topologyName}`, sources: `index/${sourcesName}` },
+    files: { topology: `index/${topologyName}`, sources: `index/${sourcesName}`, review: `index/${reviewName}` },
     regions: topology.regions,
     // What people actually wrote in `role`, normalised. The vocabulary is
     // open on purpose; this is the evidence for closing it later.
@@ -96,7 +115,9 @@ export async function buildIndex(dataDir = DEFAULT_DATA) {
 
   const unresolved = topology.events.filter((e) => e.status === 'active' && e.place && !e.region);
   return {
-    files: { 'manifest.json': manifest, [topologyName]: topologyText, [sourcesName]: sourcesText },
+    files: {
+      'manifest.json': manifest, [topologyName]: topologyText, [sourcesName]: sourcesText, [reviewName]: reviewText,
+    },
     topology,
     unresolved,
   };

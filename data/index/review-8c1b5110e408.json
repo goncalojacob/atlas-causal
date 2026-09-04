@@ -1,0 +1,4377 @@
+{
+  "records": [
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "25-november-1975",
+      "kind": "event",
+      "status": "active",
+      "title": "25 November"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "25-november-1975",
+      "id": "25-november-1975--constitution-1976--enabled",
+      "kind": "edge",
+      "status": "active",
+      "to": "constitution-1976",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "25-november-1975",
+      "id": "25-november-1975--eanes-elected-1976--caused",
+      "kind": "edge",
+      "status": "active",
+      "to": "eanes-elected-1976",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "afonso-costa",
+      "kind": "actor",
+      "names": [
+        "Afonso Costa",
+        "Afonso Augusto da Costa"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "alvaro-cunhal",
+      "kind": "actor",
+      "names": [
+        "Álvaro Cunhal"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "alvaro-cunhal",
+      "id": "alvaro-cunhal--pcp--led",
+      "kind": "relation",
+      "status": "active",
+      "to": "pcp",
+      "type": "led"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "alvor",
+      "kind": "place",
+      "names": [
+        "Alvor, Algarve"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "alvor-agreement-1975",
+      "kind": "event",
+      "status": "active",
+      "title": "The Alvor Agreement"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "alvor-agreement-1975",
+      "id": "alvor-agreement-1975--angola-independence-1975--enabled",
+      "kind": "edge",
+      "status": "active",
+      "to": "angola-independence-1975",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "amilcar-cabral",
+      "kind": "actor",
+      "names": [
+        "Amílcar Cabral",
+        "Abel Djassi"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "amilcar-cabral",
+      "id": "amilcar-cabral--paigc--led",
+      "kind": "relation",
+      "status": "active",
+      "to": "paigc",
+      "type": "led"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "andre-ventura",
+      "kind": "actor",
+      "names": [
+        "André Ventura",
+        "André Claro Amaral Ventura"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "andre-ventura",
+      "id": "andre-ventura--chega--led",
+      "kind": "relation",
+      "status": "active",
+      "to": "chega",
+      "type": "led"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "andre-ventura",
+      "id": "andre-ventura--chega--member-of",
+      "kind": "relation",
+      "status": "active",
+      "to": "chega",
+      "type": "member-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "angola-independence-1975",
+      "kind": "event",
+      "status": "active",
+      "title": "Independence of Angola"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "angola-war-begins-1961",
+      "kind": "event",
+      "status": "active",
+      "title": "Beginning of the war in Angola"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "angola-war-begins-1961",
+      "id": "angola-war-begins-1961--botelho-moniz-coup-attempt-1961--caused",
+      "kind": "edge",
+      "status": "active",
+      "to": "botelho-moniz-coup-attempt-1961",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "angola-war-begins-1961",
+      "id": "angola-war-begins-1961--carnation-revolution-1974--caused",
+      "kind": "edge",
+      "status": "active",
+      "to": "carnation-revolution-1974",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "angola-war-begins-1961",
+      "id": "angola-war-begins-1961--goa-annexed-1961--enabled",
+      "kind": "edge",
+      "status": "active",
+      "to": "goa-annexed-1961",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "angola-war-begins-1961",
+      "id": "angola-war-begins-1961--guinea-war-begins-1963--inspired",
+      "kind": "edge",
+      "status": "active",
+      "to": "guinea-war-begins-1963",
+      "type": "inspired"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "angola-war-begins-1961",
+      "id": "angola-war-begins-1961--mozambique-war-begins-1964--inspired",
+      "kind": "edge",
+      "status": "active",
+      "to": "mozambique-war-begins-1964",
+      "type": "inspired"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "antonio-costa",
+      "kind": "actor",
+      "names": [
+        "António Costa",
+        "António Luís Santos da Costa"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "antonio-costa",
+      "id": "antonio-costa--partido-socialista--led",
+      "kind": "relation",
+      "status": "active",
+      "to": "partido-socialista",
+      "type": "led"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "antonio-costa",
+      "id": "antonio-costa--partido-socialista--member-of",
+      "kind": "relation",
+      "status": "active",
+      "to": "partido-socialista",
+      "type": "member-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "antonio-de-spinola",
+      "kind": "actor",
+      "names": [
+        "António de Spínola",
+        "General Spínola"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "doi": null,
+      "id": "ar-2024-fiftieth-anniversary",
+      "isbn": null,
+      "kind": "source",
+      "status": "active",
+      "title": "Solemn session for the fiftieth anniversary of 25 April",
+      "type": "primary"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "doi": null,
+      "id": "ar-2025-confidence-vote",
+      "isbn": null,
+      "kind": "source",
+      "status": "active",
+      "title": "Rejection of the motion of confidence tabled by the XXIV Constitutional Government",
+      "type": "primary"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "armed-forces-movement",
+      "kind": "actor",
+      "names": [
+        "Armed Forces Movement",
+        "Movimento das Forças Armadas",
+        "MFA",
+        "Movimento dos Capitães"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "azores-agreement-1943",
+      "kind": "event",
+      "status": "active",
+      "title": "Anglo-Portuguese agreement on Azores bases"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "azores-agreement-1943",
+      "id": "azores-agreement-1943--nato-founding-1949--enabled",
+      "kind": "edge",
+      "status": "active",
+      "to": "nato-founding-1949",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "banco-de-portugal",
+      "kind": "actor",
+      "names": [
+        "Banco de Portugal",
+        "Bank of Portugal"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "doi": null,
+      "id": "banco-de-portugal-2014-bes-resolution",
+      "isbn": null,
+      "kind": "source",
+      "status": "active",
+      "title": "Resolution measure applied to Banco Espírito Santo, S.A.",
+      "type": "primary"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "banco-espirito-santo",
+      "kind": "actor",
+      "names": [
+        "Banco Espírito Santo",
+        "BES"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "battle-of-the-lys-1918",
+      "kind": "event",
+      "status": "active",
+      "title": "Battle of the Lys"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "battle-of-the-lys-1918",
+      "id": "battle-of-the-lys-1918--coup-28-may-1926--precondition-of",
+      "kind": "edge",
+      "status": "active",
+      "to": "coup-28-may-1926",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "belem",
+      "kind": "place",
+      "names": [
+        "Belém, Lisbon"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "berlin",
+      "kind": "place",
+      "names": [
+        "Berlin"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "bes-resolution-2014",
+      "kind": "event",
+      "status": "active",
+      "title": "Resolution of Banco Espírito Santo"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "bloco-de-esquerda",
+      "kind": "actor",
+      "names": [
+        "Bloco de Esquerda",
+        "BE",
+        "Left Bloc"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "boe",
+      "kind": "place",
+      "names": [
+        "Boé"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "botelho-moniz-coup-attempt-1961",
+      "kind": "event",
+      "status": "active",
+      "title": "Botelho Moniz's failed move against Salazar"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "bpn-nationalisation-2008",
+      "kind": "event",
+      "status": "active",
+      "title": "Nationalisation of the Banco Português de Negócios"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "bpn-nationalisation-2008",
+      "id": "bpn-nationalisation-2008--troika-bailout-2011--precondition-of",
+      "kind": "edge",
+      "status": "active",
+      "to": "troika-bailout-2011",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "braga",
+      "kind": "place",
+      "names": [
+        "Braga"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "british-india",
+      "id": "british-india--republic-of-india--succeeded",
+      "kind": "relation",
+      "status": "active",
+      "to": "republic-of-india",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "cabral-assassinated-1973",
+      "kind": "event",
+      "status": "active",
+      "title": "Assassination of Amílcar Cabral"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "cabral-assassinated-1973",
+      "id": "cabral-assassinated-1973--guinea-bissau-declares-independence-1973--caused",
+      "kind": "edge",
+      "status": "active",
+      "to": "guinea-bissau-declares-independence-1973",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "caetano-succeeds-salazar-1968",
+      "kind": "event",
+      "status": "active",
+      "title": "Marcelo Caetano succeeds Salazar"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "caetano-succeeds-salazar-1968",
+      "id": "caetano-succeeds-salazar-1968--carnation-revolution-1974--precondition-of",
+      "kind": "edge",
+      "status": "active",
+      "to": "carnation-revolution-1974",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "carnation-revolution-1974",
+      "kind": "event",
+      "status": "active",
+      "title": "25 April"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "carnation-revolution-1974",
+      "id": "carnation-revolution-1974--alvor-agreement-1975--caused",
+      "kind": "edge",
+      "status": "active",
+      "to": "alvor-agreement-1975",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "carnation-revolution-1974",
+      "id": "carnation-revolution-1974--angola-independence-1975--caused",
+      "kind": "edge",
+      "status": "active",
+      "to": "angola-independence-1975",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "carnation-revolution-1974",
+      "id": "carnation-revolution-1974--constituent-assembly-election-1975--caused",
+      "kind": "edge",
+      "status": "active",
+      "to": "constituent-assembly-election-1975",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "carnation-revolution-1974",
+      "id": "carnation-revolution-1974--east-timor-invasion-1975--enabled",
+      "kind": "edge",
+      "status": "active",
+      "to": "east-timor-invasion-1975",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "carnation-revolution-1974",
+      "id": "carnation-revolution-1974--fiftieth-anniversary-25-april-2024--caused",
+      "kind": "edge",
+      "status": "active",
+      "to": "fiftieth-anniversary-25-april-2024",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "carnation-revolution-1974",
+      "id": "carnation-revolution-1974--macau-handover-1999--precondition-of",
+      "kind": "edge",
+      "status": "active",
+      "to": "macau-handover-1999",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "carnation-revolution-1974",
+      "id": "carnation-revolution-1974--nationalisations-1975--enabled",
+      "kind": "edge",
+      "status": "active",
+      "to": "nationalisations-1975",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "carnation-revolution-1974",
+      "id": "carnation-revolution-1974--spinola-resigns-1974--precondition-of",
+      "kind": "edge",
+      "status": "active",
+      "to": "spinola-resigns-1974",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "cavaco-absolute-majority-1987",
+      "kind": "event",
+      "status": "active",
+      "title": "Cavaco Silva's absolute majority"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "cavaco-silva",
+      "kind": "actor",
+      "names": [
+        "Aníbal Cavaco Silva",
+        "Cavaco Silva"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "cavaco-silva",
+      "id": "cavaco-silva--psd--led",
+      "kind": "relation",
+      "status": "active",
+      "to": "psd",
+      "type": "led"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "cds-pp",
+      "kind": "actor",
+      "names": [
+        "CDS - Partido Popular",
+        "CDS-PP",
+        "Centro Democrático Social"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "central-portugal",
+      "kind": "place",
+      "names": [
+        "Central Portugal",
+        "Portugal central"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "chai",
+      "kind": "place",
+      "names": [
+        "Chai, Cabo Delgado"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "chega",
+      "kind": "actor",
+      "names": [
+        "Chega"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "doi": null,
+      "id": "cne-legislative-2015",
+      "isbn": null,
+      "kind": "source",
+      "status": "active",
+      "title": "Official results, legislative election of 2015-10-04",
+      "type": "primary"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "doi": null,
+      "id": "cne-legislative-2019",
+      "isbn": null,
+      "kind": "source",
+      "status": "active",
+      "title": "Official results, legislative election of 2019-10-06",
+      "type": "primary"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "doi": null,
+      "id": "cne-legislative-2022",
+      "isbn": null,
+      "kind": "source",
+      "status": "active",
+      "title": "Official results, legislative election of 2022-01-30",
+      "type": "primary"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "doi": null,
+      "id": "cne-legislative-2024",
+      "isbn": null,
+      "kind": "source",
+      "status": "active",
+      "title": "Official results, legislative election of 2024-03-10",
+      "type": "primary"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "doi": null,
+      "id": "cne-legislative-2025",
+      "isbn": null,
+      "kind": "source",
+      "status": "active",
+      "title": "Official results, legislative election of 2025-05-18",
+      "type": "primary"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "doi": null,
+      "id": "cne-presidential-2016",
+      "isbn": null,
+      "kind": "source",
+      "status": "active",
+      "title": "Official results, presidential election of 2016-01-24",
+      "type": "primary"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "doi": null,
+      "id": "cne-presidential-2021",
+      "isbn": null,
+      "kind": "source",
+      "status": "active",
+      "title": "Official results, presidential election of 2021-01-24",
+      "type": "primary"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "conakry",
+      "kind": "place",
+      "names": [
+        "Conakry"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "constituent-assembly-election-1975",
+      "kind": "event",
+      "status": "active",
+      "title": "Constituent Assembly election"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "constituent-assembly-election-1975",
+      "id": "constituent-assembly-election-1975--25-november-1975--enabled",
+      "kind": "edge",
+      "status": "active",
+      "to": "25-november-1975",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "constitution-1911",
+      "kind": "event",
+      "status": "active",
+      "title": "Constitution of 1911"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "constitution-1911",
+      "id": "constitution-1911--pimenta-de-castro-government-1915--precondition-of",
+      "kind": "edge",
+      "status": "active",
+      "to": "pimenta-de-castro-government-1915",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "constitution-1911",
+      "id": "constitution-1911--sidonio-pais-coup-1917--reacted-to",
+      "kind": "edge",
+      "status": "active",
+      "to": "sidonio-pais-coup-1917",
+      "type": "reacted-to"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "constitution-1933",
+      "kind": "event",
+      "status": "active",
+      "title": "Constitution of 1933"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "constitution-1933",
+      "id": "constitution-1933--exposicao-mundo-portugues-1940--enabled",
+      "kind": "edge",
+      "status": "active",
+      "to": "exposicao-mundo-portugues-1940",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "constitution-1933",
+      "id": "constitution-1933--portugal-backs-franco-1936--enabled",
+      "kind": "edge",
+      "status": "active",
+      "to": "portugal-backs-franco-1936",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "constitution-1976",
+      "kind": "event",
+      "status": "active",
+      "title": "Constitution of 1976"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "constitution-1976",
+      "id": "constitution-1976--constitutional-revision-1982--precondition-of",
+      "kind": "edge",
+      "status": "active",
+      "to": "constitutional-revision-1982",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "constitution-1976",
+      "id": "constitution-1976--eanes-elected-1976--enabled",
+      "kind": "edge",
+      "status": "active",
+      "to": "eanes-elected-1976",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "constitution-1976",
+      "id": "constitution-1976--eec-application-1977--enabled",
+      "kind": "edge",
+      "status": "active",
+      "to": "eec-application-1977",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "constitution-1976",
+      "id": "constitution-1976--legislative-election-1976--enabled",
+      "kind": "edge",
+      "status": "active",
+      "to": "legislative-election-1976",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "constitutional-revision-1959",
+      "kind": "event",
+      "status": "active",
+      "title": "The revision that ends direct presidential elections"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "constitutional-revision-1982",
+      "kind": "event",
+      "status": "active",
+      "title": "The revision that abolishes the Council of the Revolution"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "constitutional-revision-1982",
+      "id": "constitutional-revision-1982--eec-accession-1986--precondition-of",
+      "kind": "edge",
+      "status": "active",
+      "to": "eec-accession-1986",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "constitutional-revision-1982",
+      "id": "constitutional-revision-1982--soares-elected-president-1986--precondition-of",
+      "kind": "edge",
+      "status": "active",
+      "to": "soares-elected-president-1986",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "doi": null,
+      "id": "costa-pinto-2003-contemporary-portugal",
+      "isbn": null,
+      "kind": "source",
+      "status": "active",
+      "title": "Contemporary Portugal: Politics, Society and Culture",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "doi": null,
+      "id": "costa-pinto-teixeira-2019-political-institutions",
+      "isbn": null,
+      "kind": "source",
+      "status": "active",
+      "title": "Political Institutions and Democracy in Portugal: Assessing the Impact of the Eurocrisis",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "costa-resigns-2023",
+      "kind": "event",
+      "status": "active",
+      "title": "António Costa resigns"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "costa-resigns-2023",
+      "id": "costa-resigns-2023--legislative-election-2024--caused",
+      "kind": "edge",
+      "status": "active",
+      "to": "legislative-election-2024",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "council-of-the-revolution",
+      "kind": "actor",
+      "names": [
+        "Council of the Revolution",
+        "Conselho da Revolução"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "council-of-the-revolution",
+      "id": "council-of-the-revolution--third-portuguese-republic--part-of",
+      "kind": "relation",
+      "status": "active",
+      "to": "third-portuguese-republic",
+      "type": "part-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "coup-28-may-1926",
+      "kind": "event",
+      "status": "active",
+      "title": "Coup of 28 May"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "coup-28-may-1926",
+      "id": "coup-28-may-1926--constitution-1933--precondition-of",
+      "kind": "edge",
+      "status": "active",
+      "to": "constitution-1933",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "coup-28-may-1926",
+      "id": "coup-28-may-1926--salazar-finance-minister-1928--enabled",
+      "kind": "edge",
+      "status": "active",
+      "to": "salazar-finance-minister-1928",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "coup-attempt-11-march-1975",
+      "kind": "event",
+      "status": "active",
+      "title": "The failed coup of 11 March"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "coup-attempt-11-march-1975",
+      "id": "coup-attempt-11-march-1975--nationalisations-1975--caused",
+      "kind": "edge",
+      "status": "active",
+      "to": "nationalisations-1975",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "covid-state-of-emergency-2020",
+      "kind": "event",
+      "status": "active",
+      "title": "First state of emergency of the pandemic"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "covid-state-of-emergency-2020",
+      "id": "covid-state-of-emergency-2020--marcelo-reelected-2021--precondition-of",
+      "kind": "edge",
+      "status": "active",
+      "to": "marcelo-reelected-2021",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "covid-state-of-emergency-2020",
+      "id": "covid-state-of-emergency-2020--world-youth-day-2023--caused",
+      "kind": "edge",
+      "status": "active",
+      "to": "world-youth-day-2023",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "doi": null,
+      "id": "cti-2017-2018-fires",
+      "isbn": null,
+      "kind": "source",
+      "status": "active",
+      "title": "Reports on the forest fires of June and October 2017",
+      "type": "primary"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "delgado-assassinated-1965",
+      "kind": "event",
+      "status": "active",
+      "title": "Humberto Delgado murdered by the PIDE"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "delgado-candidacy-1958",
+      "kind": "event",
+      "status": "active",
+      "title": "Humberto Delgado's presidential candidacy"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "delgado-candidacy-1958",
+      "id": "delgado-candidacy-1958--constitutional-revision-1959--caused",
+      "kind": "edge",
+      "status": "active",
+      "to": "constitutional-revision-1959",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "delgado-candidacy-1958",
+      "id": "delgado-candidacy-1958--delgado-assassinated-1965--caused",
+      "kind": "edge",
+      "status": "active",
+      "to": "delgado-assassinated-1965",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "delgado-candidacy-1958",
+      "id": "delgado-candidacy-1958--santa-maria-hijacking-1961--inspired",
+      "kind": "edge",
+      "status": "active",
+      "to": "santa-maria-hijacking-1961",
+      "type": "inspired"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "dili",
+      "kind": "place",
+      "names": [
+        "Dili"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "doi": null,
+      "id": "dre-2020-state-of-emergency",
+      "isbn": null,
+      "kind": "source",
+      "status": "active",
+      "title": "Declaration and renewals of the state of emergency, March to May 2020",
+      "type": "primary"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "doi": null,
+      "id": "dre-government-appointments-2015-2024",
+      "isbn": null,
+      "kind": "source",
+      "status": "active",
+      "title": "Appointment of the XXI and XXIV Constitutional Governments",
+      "type": "primary"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "dutch-east-indies",
+      "id": "dutch-east-indies--indonesia--succeeded",
+      "kind": "relation",
+      "status": "active",
+      "to": "indonesia",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "eanes-elected-1976",
+      "kind": "event",
+      "status": "active",
+      "title": "Ramalho Eanes elected president"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "east-timor-independence-2002",
+      "kind": "event",
+      "status": "active",
+      "title": "Independence of East Timor"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "east-timor-invasion-1975",
+      "kind": "event",
+      "status": "active",
+      "title": "Indonesia invades East Timor"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "east-timor-invasion-1975",
+      "id": "east-timor-invasion-1975--east-timor-independence-2002--precondition-of",
+      "kind": "edge",
+      "status": "active",
+      "to": "east-timor-independence-2002",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "eduardo-mondlane",
+      "kind": "actor",
+      "names": [
+        "Eduardo Mondlane",
+        "Eduardo Chivambo Mondlane"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "eduardo-mondlane",
+      "id": "eduardo-mondlane--frelimo--led",
+      "kind": "relation",
+      "status": "active",
+      "to": "frelimo",
+      "type": "led"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "eec-accession-1986",
+      "kind": "event",
+      "status": "active",
+      "title": "Portugal joins the EEC"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "eec-accession-1986",
+      "id": "eec-accession-1986--cavaco-absolute-majority-1987--enabled",
+      "kind": "edge",
+      "status": "active",
+      "to": "cavaco-absolute-majority-1987",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "eec-accession-1986",
+      "id": "eec-accession-1986--euro-adoption-1999--precondition-of",
+      "kind": "edge",
+      "status": "active",
+      "to": "euro-adoption-1999",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "eec-accession-1986",
+      "id": "eec-accession-1986--expo-98--enabled",
+      "kind": "edge",
+      "status": "active",
+      "to": "expo-98",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "eec-accession-1986",
+      "id": "eec-accession-1986--troika-bailout-2011--precondition-of",
+      "kind": "edge",
+      "status": "active",
+      "to": "troika-bailout-2011",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "eec-application-1977",
+      "kind": "event",
+      "status": "active",
+      "title": "Portugal applies to join the EEC"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "eec-application-1977",
+      "id": "eec-application-1977--eec-accession-1986--caused",
+      "kind": "edge",
+      "status": "active",
+      "to": "eec-accession-1986",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "estado-novo",
+      "kind": "actor",
+      "names": [
+        "Estado Novo",
+        "New State",
+        "Second Portuguese Republic"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "estado-novo",
+      "id": "estado-novo--nato--allied-with",
+      "kind": "relation",
+      "status": "active",
+      "to": "nato",
+      "type": "allied-with"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "estado-novo",
+      "id": "estado-novo--portugal--regime-of",
+      "kind": "relation",
+      "status": "active",
+      "to": "portugal",
+      "type": "regime-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "euro-2016-final",
+      "kind": "event",
+      "status": "active",
+      "title": "Portugal wins the European Championship"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "euro-adoption-1999",
+      "kind": "event",
+      "status": "active",
+      "title": "Portugal adopts the euro"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "euro-adoption-1999",
+      "id": "euro-adoption-1999--troika-bailout-2011--precondition-of",
+      "kind": "edge",
+      "status": "active",
+      "to": "troika-bailout-2011",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "european-central-bank",
+      "kind": "actor",
+      "names": [
+        "European Central Bank",
+        "ECB",
+        "Banco Central Europeu",
+        "BCE"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "european-commission",
+      "kind": "actor",
+      "names": [
+        "European Commission",
+        "Comissão Europeia"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "european-economic-community",
+      "kind": "actor",
+      "names": [
+        "European Economic Community",
+        "EEC",
+        "Comunidade Económica Europeia",
+        "CEE",
+        "Common Market"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "expo-98",
+      "kind": "event",
+      "status": "active",
+      "title": "Expo 98"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "exposicao-mundo-portugues-1940",
+      "kind": "event",
+      "status": "active",
+      "title": "Exhibition of the Portuguese World"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "fiftieth-anniversary-25-april-2024",
+      "kind": "event",
+      "status": "active",
+      "title": "Fifty years of 25 April"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "first-portuguese-republic",
+      "kind": "actor",
+      "names": [
+        "First Portuguese Republic",
+        "Primeira República Portuguesa"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "first-portuguese-republic",
+      "id": "first-portuguese-republic--portugal--regime-of",
+      "kind": "relation",
+      "status": "active",
+      "to": "portugal",
+      "type": "regime-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "flanders",
+      "kind": "place",
+      "names": [
+        "Flanders, near Laventie"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "fnla",
+      "kind": "actor",
+      "names": [
+        "FNLA",
+        "Frente Nacional de Libertação de Angola",
+        "National Front for the Liberation of Angola"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "frelimo",
+      "kind": "actor",
+      "names": [
+        "FRELIMO",
+        "Frente de Libertação de Moçambique",
+        "Mozambique Liberation Front"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "fretilin",
+      "kind": "actor",
+      "names": [
+        "FRETILIN",
+        "Frente Revolucionária de Timor-Leste Independente",
+        "Revolutionary Front for an Independent East Timor"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "geringonca-2015",
+      "kind": "event",
+      "status": "active",
+      "title": "The PS minority government of 2015"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "geringonca-2015",
+      "id": "geringonca-2015--legislative-election-2019--precondition-of",
+      "kind": "edge",
+      "status": "active",
+      "to": "legislative-election-2019",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "geringonca-2015",
+      "id": "geringonca-2015--legislative-election-2022--precondition-of",
+      "kind": "edge",
+      "status": "active",
+      "to": "legislative-election-2022",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "geringonca-2015",
+      "id": "geringonca-2015--marcelo-elected-president-2016--precondition-of",
+      "kind": "edge",
+      "status": "active",
+      "to": "marcelo-elected-president-2016",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "germany-declares-war-1916",
+      "kind": "event",
+      "status": "active",
+      "title": "Germany declares war on Portugal"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "germany-declares-war-1916",
+      "id": "germany-declares-war-1916--battle-of-the-lys-1918--caused",
+      "kind": "edge",
+      "status": "active",
+      "to": "battle-of-the-lys-1918",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "germany-declares-war-1916",
+      "id": "germany-declares-war-1916--sidonio-pais-coup-1917--caused",
+      "kind": "edge",
+      "status": "active",
+      "to": "sidonio-pais-coup-1917",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "goa-annexed-1961",
+      "kind": "event",
+      "status": "active",
+      "title": "India annexes Goa, Daman and Diu"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "gomes-da-costa",
+      "kind": "actor",
+      "names": [
+        "Gomes da Costa",
+        "Manuel de Oliveira Gomes da Costa"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "government-falls-2025",
+      "kind": "event",
+      "status": "active",
+      "title": "The government loses a confidence vote"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "government-falls-2025",
+      "id": "government-falls-2025--legislative-election-2025--caused",
+      "kind": "edge",
+      "status": "active",
+      "to": "legislative-election-2025",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "guinea-bissau-declares-independence-1973",
+      "kind": "event",
+      "status": "active",
+      "title": "PAIGC declares the independence of Guinea-Bissau"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "guinea-bissau-declares-independence-1973",
+      "id": "guinea-bissau-declares-independence-1973--portugal-e-o-futuro-1974--caused",
+      "kind": "edge",
+      "status": "active",
+      "to": "portugal-e-o-futuro-1974",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "guinea-war-begins-1963",
+      "kind": "event",
+      "status": "active",
+      "title": "Beginning of the war in Guinea"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "guinea-war-begins-1963",
+      "id": "guinea-war-begins-1963--cabral-assassinated-1973--precondition-of",
+      "kind": "edge",
+      "status": "active",
+      "to": "cabral-assassinated-1973",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "guinea-war-begins-1963",
+      "id": "guinea-war-begins-1963--carnation-revolution-1974--caused",
+      "kind": "edge",
+      "status": "active",
+      "to": "carnation-revolution-1974",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "guinea-war-begins-1963",
+      "id": "guinea-war-begins-1963--guinea-bissau-declares-independence-1973--caused",
+      "kind": "edge",
+      "status": "active",
+      "to": "guinea-bissau-declares-independence-1973",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "henrique-galvao",
+      "kind": "actor",
+      "names": [
+        "Henrique Galvão"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "doi": null,
+      "id": "holy-see-2023-world-youth-day",
+      "isbn": null,
+      "kind": "source",
+      "status": "active",
+      "title": "World Youth Day, Lisbon 2023",
+      "type": "primary"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "how-the-colonial-war-ended-the-regime",
+      "kind": "narrative",
+      "status": "active",
+      "title": "How the colonial war ended the regime"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "humberto-delgado",
+      "kind": "actor",
+      "names": [
+        "Humberto Delgado",
+        "Humberto da Silva Delgado",
+        "the Fearless General",
+        "General Sem Medo"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "iberian-blackout-2025",
+      "kind": "event",
+      "status": "active",
+      "title": "The Iberian blackout"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "imf",
+      "kind": "actor",
+      "names": [
+        "International Monetary Fund",
+        "IMF",
+        "Fundo Monetário Internacional",
+        "FMI"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "doi": null,
+      "id": "imf-2016-portugal-ex-post-evaluation",
+      "isbn": null,
+      "kind": "source",
+      "status": "active",
+      "title": "Portugal: Ex Post Evaluation of Exceptional Access under the 2011 Extended Arrangement",
+      "type": "article"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "imf-agreement-1978",
+      "kind": "event",
+      "status": "active",
+      "title": "First stabilisation agreement with the IMF"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "imf-agreement-1978",
+      "id": "imf-agreement-1978--imf-agreement-1983--precondition-of",
+      "kind": "edge",
+      "status": "active",
+      "to": "imf-agreement-1983",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "imf-agreement-1983",
+      "kind": "event",
+      "status": "active",
+      "title": "Second stabilisation agreement with the IMF"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "imf-agreement-1983",
+      "id": "imf-agreement-1983--eec-accession-1986--precondition-of",
+      "kind": "edge",
+      "status": "active",
+      "to": "eec-accession-1986",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "indonesia",
+      "kind": "actor",
+      "names": [
+        "Indonesia",
+        "Republic of Indonesia",
+        "República da Indonésia"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "jawaharlal-nehru",
+      "kind": "actor",
+      "names": [
+        "Jawaharlal Nehru"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "lajes",
+      "kind": "place",
+      "names": [
+        "Lajes, Terceira"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "law-of-separation-1911",
+      "kind": "event",
+      "status": "active",
+      "title": "Law of Separation of Church and State"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "law-of-separation-1911",
+      "id": "law-of-separation-1911--coup-28-may-1926--precondition-of",
+      "kind": "edge",
+      "status": "active",
+      "to": "coup-28-may-1926",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "legiao-portuguesa",
+      "kind": "actor",
+      "names": [
+        "Portuguese Legion",
+        "Legião Portuguesa"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "legiao-portuguesa",
+      "id": "legiao-portuguesa--estado-novo--part-of",
+      "kind": "relation",
+      "status": "active",
+      "to": "estado-novo",
+      "type": "part-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "legiao-portuguesa-founded-1936",
+      "kind": "event",
+      "status": "active",
+      "title": "Foundation of the Portuguese Legion"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "legislative-election-1976",
+      "kind": "event",
+      "status": "active",
+      "title": "First legislative election under the constitution"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "legislative-election-1976",
+      "id": "legislative-election-1976--eec-application-1977--precondition-of",
+      "kind": "edge",
+      "status": "active",
+      "to": "eec-application-1977",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "legislative-election-2015",
+      "kind": "event",
+      "status": "active",
+      "title": "Legislative election of 2015"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "legislative-election-2015",
+      "id": "legislative-election-2015--geringonca-2015--enabled",
+      "kind": "edge",
+      "status": "active",
+      "to": "geringonca-2015",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "legislative-election-2019",
+      "kind": "event",
+      "status": "active",
+      "title": "Legislative election of 2019"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "legislative-election-2019",
+      "id": "legislative-election-2019--legislative-election-2022--caused",
+      "kind": "edge",
+      "status": "active",
+      "to": "legislative-election-2022",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "legislative-election-2022",
+      "kind": "event",
+      "status": "active",
+      "title": "Legislative election of 2022"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "legislative-election-2022",
+      "id": "legislative-election-2022--costa-resigns-2023--precondition-of",
+      "kind": "edge",
+      "status": "active",
+      "to": "costa-resigns-2023",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "legislative-election-2022",
+      "id": "legislative-election-2022--legislative-election-2024--caused",
+      "kind": "edge",
+      "status": "active",
+      "to": "legislative-election-2024",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "legislative-election-2024",
+      "kind": "event",
+      "status": "active",
+      "title": "Legislative election of 2024"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "legislative-election-2024",
+      "id": "legislative-election-2024--montenegro-government-2024--caused",
+      "kind": "edge",
+      "status": "active",
+      "to": "montenegro-government-2024",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "legislative-election-2025",
+      "kind": "event",
+      "status": "active",
+      "title": "Legislative election of 2025"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "lisbon",
+      "kind": "place",
+      "names": [
+        "Lisbon"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "luanda",
+      "kind": "place",
+      "names": [
+        "Luanda"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "luis-montenegro",
+      "kind": "actor",
+      "names": [
+        "Luís Montenegro",
+        "Luís Filipe Montenegro"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "luis-montenegro",
+      "id": "luis-montenegro--psd--led",
+      "kind": "relation",
+      "status": "active",
+      "to": "psd",
+      "type": "led"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "luis-montenegro",
+      "id": "luis-montenegro--psd--member-of",
+      "kind": "relation",
+      "status": "active",
+      "to": "psd",
+      "type": "member-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "macau",
+      "kind": "place",
+      "names": [
+        "Macau"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "macau-handover-1999",
+      "kind": "event",
+      "status": "active",
+      "title": "Handover of Macau"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "doi": null,
+      "id": "macqueen-1997-decolonization",
+      "isbn": null,
+      "kind": "source",
+      "status": "active",
+      "title": "The Decolonization of Portuguese Africa: Metropolitan Revolution and the Dissolution of Empire",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "manuel-ii",
+      "kind": "actor",
+      "names": [
+        "Manuel II",
+        "D. Manuel II",
+        "Manuel II of Portugal"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "marcelo-caetano",
+      "kind": "actor",
+      "names": [
+        "Marcelo Caetano",
+        "Marcello Caetano"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "marcelo-caetano",
+      "id": "marcelo-caetano--estado-novo--led",
+      "kind": "relation",
+      "status": "active",
+      "to": "estado-novo",
+      "type": "led"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "marcelo-elected-president-2016",
+      "kind": "event",
+      "status": "active",
+      "title": "Marcelo Rebelo de Sousa elected president"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "marcelo-rebelo-de-sousa",
+      "kind": "actor",
+      "names": [
+        "Marcelo Rebelo de Sousa",
+        "Marcelo"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "marcelo-rebelo-de-sousa",
+      "id": "marcelo-rebelo-de-sousa--psd--led",
+      "kind": "relation",
+      "status": "active",
+      "to": "psd",
+      "type": "led"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "marcelo-rebelo-de-sousa",
+      "id": "marcelo-rebelo-de-sousa--psd--member-of",
+      "kind": "relation",
+      "status": "active",
+      "to": "psd",
+      "type": "member-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "marcelo-reelected-2021",
+      "kind": "event",
+      "status": "active",
+      "title": "Marcelo Rebelo de Sousa re-elected"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "mario-soares",
+      "kind": "actor",
+      "names": [
+        "Mário Soares",
+        "Mário Alberto Nobre Lopes Soares"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "mario-soares",
+      "id": "mario-soares--partido-socialista--led",
+      "kind": "relation",
+      "status": "active",
+      "to": "partido-socialista",
+      "type": "led"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "doi": null,
+      "id": "maxwell-1995-making-of-portuguese-democracy",
+      "isbn": null,
+      "kind": "source",
+      "status": "active",
+      "title": "The Making of Portuguese Democracy",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "doi": null,
+      "id": "meneses-2004-portugal-1914-1926",
+      "isbn": null,
+      "kind": "source",
+      "status": "active",
+      "title": "Portugal 1914–1926: From the First World War to Military Dictatorship",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "doi": null,
+      "id": "meneses-2009-salazar",
+      "isbn": null,
+      "kind": "source",
+      "status": "active",
+      "title": "Salazar: A Political Biography",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "military-dictatorship",
+      "kind": "actor",
+      "names": [
+        "Military Dictatorship",
+        "Ditadura Militar",
+        "Ditadura Nacional"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "military-dictatorship",
+      "id": "military-dictatorship--portugal--regime-of",
+      "kind": "relation",
+      "status": "active",
+      "to": "portugal",
+      "type": "regime-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "monarchy-of-the-north-1919",
+      "kind": "event",
+      "status": "active",
+      "title": "The Monarchy of the North"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "monarchy-of-the-north-1919",
+      "id": "monarchy-of-the-north-1919--coup-28-may-1926--precondition-of",
+      "kind": "edge",
+      "status": "active",
+      "to": "coup-28-may-1926",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "montenegro-government-2024",
+      "kind": "event",
+      "status": "active",
+      "title": "The Montenegro government takes office"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "montenegro-government-2024",
+      "id": "montenegro-government-2024--government-falls-2025--caused",
+      "kind": "edge",
+      "status": "active",
+      "to": "government-falls-2025",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "mozambique-war-begins-1964",
+      "kind": "event",
+      "status": "active",
+      "title": "Beginning of the war in Mozambique"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "mozambique-war-begins-1964",
+      "id": "mozambique-war-begins-1964--wiriyamu-massacre-1972--precondition-of",
+      "kind": "edge",
+      "status": "active",
+      "to": "wiriyamu-massacre-1972",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "mpla",
+      "kind": "actor",
+      "names": [
+        "MPLA",
+        "Movimento Popular de Libertação de Angola",
+        "People's Movement for the Liberation of Angola"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "nationalisations-1975",
+      "kind": "event",
+      "status": "active",
+      "title": "Nationalisation of banks and insurance"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "nationalisations-1975",
+      "id": "nationalisations-1975--25-november-1975--reacted-to",
+      "kind": "edge",
+      "status": "active",
+      "to": "25-november-1975",
+      "type": "reacted-to"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "nationalisations-1975",
+      "id": "nationalisations-1975--imf-agreement-1978--precondition-of",
+      "kind": "edge",
+      "status": "active",
+      "to": "imf-agreement-1978",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "nato",
+      "kind": "actor",
+      "names": [
+        "NATO",
+        "North Atlantic Treaty Organization",
+        "OTAN",
+        "Organização do Tratado do Atlântico Norte"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "nato-founding-1949",
+      "kind": "event",
+      "status": "active",
+      "title": "Portugal signs the North Atlantic Treaty"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "nato-founding-1949",
+      "id": "nato-founding-1949--un-admission-1955--enabled",
+      "kind": "edge",
+      "status": "active",
+      "to": "un-admission-1955",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "near-villanueva-del-fresno",
+      "kind": "place",
+      "names": [
+        "near Villanueva del Fresno, Spain"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "new-york",
+      "kind": "place",
+      "names": [
+        "New York"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "noite-sangrenta-1921",
+      "kind": "event",
+      "status": "active",
+      "title": "Noite Sangrenta"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "noite-sangrenta-1921",
+      "id": "noite-sangrenta-1921--coup-28-may-1926--precondition-of",
+      "kind": "edge",
+      "status": "active",
+      "to": "coup-28-may-1926",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "novo-banco",
+      "kind": "actor",
+      "names": [
+        "Novo Banco"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "october-fires-2017",
+      "kind": "event",
+      "status": "active",
+      "title": "The fires of October 2017"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "otelo-saraiva-de-carvalho",
+      "kind": "actor",
+      "names": [
+        "Otelo Saraiva de Carvalho",
+        "Otelo"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "paigc",
+      "kind": "actor",
+      "names": [
+        "PAIGC",
+        "Partido Africano para a Independência da Guiné e Cabo Verde",
+        "African Party for the Independence of Guinea and Cape Verde"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "paiva-couceiro",
+      "kind": "actor",
+      "names": [
+        "Henrique Mitchell de Paiva Couceiro",
+        "Paiva Couceiro"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "panaji",
+      "kind": "place",
+      "names": [
+        "Panaji"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "parque-das-nacoes",
+      "kind": "place",
+      "names": [
+        "Parque das Nações, Lisbon"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "partido-democratico",
+      "kind": "actor",
+      "names": [
+        "Democratic Party",
+        "Partido Democrático",
+        "Partido Republicano Português"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "partido-socialista",
+      "kind": "actor",
+      "names": [
+        "Partido Socialista",
+        "PS",
+        "Socialist Party"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "pcp",
+      "kind": "actor",
+      "names": [
+        "Partido Comunista Português",
+        "PCP",
+        "Portuguese Communist Party"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "pedro-passos-coelho",
+      "kind": "actor",
+      "names": [
+        "Pedro Passos Coelho",
+        "Pedro Manuel Mamede Passos Coelho"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "pedro-passos-coelho",
+      "id": "pedro-passos-coelho--psd--led",
+      "kind": "relation",
+      "status": "active",
+      "to": "psd",
+      "type": "led"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "pedro-passos-coelho",
+      "id": "pedro-passos-coelho--psd--member-of",
+      "kind": "relation",
+      "status": "active",
+      "to": "psd",
+      "type": "member-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "pedrogao-grande",
+      "kind": "place",
+      "names": [
+        "Pedrógão Grande"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "pedrogao-grande-fires-2017",
+      "kind": "event",
+      "status": "active",
+      "title": "The Pedrógão Grande fires"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "pedrogao-grande-fires-2017",
+      "id": "pedrogao-grande-fires-2017--october-fires-2017--precondition-of",
+      "kind": "edge",
+      "status": "active",
+      "to": "october-fires-2017",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "doi": null,
+      "id": "pgr-2023-operation-influencer",
+      "isbn": null,
+      "kind": "source",
+      "status": "active",
+      "title": "Communiqué on the searches of 7 November 2023",
+      "type": "primary"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "pimenta-de-castro",
+      "kind": "actor",
+      "names": [
+        "Joaquim Pereira Pimenta de Castro",
+        "Pimenta de Castro"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "pimenta-de-castro-government-1915",
+      "kind": "event",
+      "status": "active",
+      "title": "Pimenta de Castro's authoritarian government"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "pimenta-de-castro-government-1915",
+      "id": "pimenta-de-castro-government-1915--revolt-14-may-1915--caused",
+      "kind": "edge",
+      "status": "active",
+      "to": "revolt-14-may-1915",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "porto",
+      "kind": "place",
+      "names": [
+        "Porto"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "portugal-backs-franco-1936",
+      "kind": "event",
+      "status": "active",
+      "title": "Portugal supports the Nationalists in the Spanish Civil War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "portugal-backs-franco-1936",
+      "id": "portugal-backs-franco-1936--legiao-portuguesa-founded-1936--caused",
+      "kind": "edge",
+      "status": "active",
+      "to": "legiao-portuguesa-founded-1936",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "portugal-e-o-futuro-1974",
+      "kind": "event",
+      "status": "active",
+      "title": "Publication of Portugal e o Futuro"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "portugal-e-o-futuro-1974",
+      "id": "portugal-e-o-futuro-1974--carnation-revolution-1974--enabled",
+      "kind": "edge",
+      "status": "active",
+      "to": "carnation-revolution-1974",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "portuguese-expeditionary-corps",
+      "kind": "actor",
+      "names": [
+        "Portuguese Expeditionary Corps",
+        "Corpo Expedicionário Português",
+        "CEP"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "psd",
+      "kind": "actor",
+      "names": [
+        "Partido Social Democrata",
+        "PSD",
+        "Partido Popular Democrático",
+        "PPD"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "pvde-pide-dgs",
+      "kind": "actor",
+      "names": [
+        "PIDE",
+        "Polícia Internacional e de Defesa do Estado",
+        "PVDE",
+        "Polícia de Vigilância e Defesa do Estado",
+        "DGS",
+        "Direcção-Geral de Segurança"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "pvde-pide-dgs",
+      "id": "pvde-pide-dgs--estado-novo--part-of",
+      "kind": "relation",
+      "status": "active",
+      "to": "estado-novo",
+      "type": "part-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "ramalho-eanes",
+      "kind": "actor",
+      "names": [
+        "Ramalho Eanes",
+        "António dos Santos Ramalho Eanes"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "doi": null,
+      "id": "ramos-2009-historia-de-portugal",
+      "isbn": null,
+      "kind": "source",
+      "status": "active",
+      "title": "História de Portugal",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "recife",
+      "kind": "place",
+      "names": [
+        "Recife, at the end of the voyage"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "doi": null,
+      "id": "reis-2013-portuguese-slump",
+      "isbn": null,
+      "kind": "source",
+      "status": "active",
+      "title": "The Portuguese Slump and Crash and the Euro Crisis. Brookings Papers on Economic Activity, Spring 2013",
+      "type": "article"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "doi": null,
+      "id": "ren-2025-blackout",
+      "isbn": null,
+      "kind": "source",
+      "status": "active",
+      "title": "The supply interruption of 28 April 2025",
+      "type": "primary"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "republic-of-india",
+      "kind": "actor",
+      "names": [
+        "Republic of India",
+        "India",
+        "Índia"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "republic-proclaimed-1910",
+      "kind": "event",
+      "status": "active",
+      "title": "Proclamation of the Republic"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "republic-proclaimed-1910",
+      "id": "republic-proclaimed-1910--constitution-1911--caused",
+      "kind": "edge",
+      "status": "active",
+      "to": "constitution-1911",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "republic-proclaimed-1910",
+      "id": "republic-proclaimed-1910--law-of-separation-1911--caused",
+      "kind": "edge",
+      "status": "active",
+      "to": "law-of-separation-1911",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "revolt-14-may-1915",
+      "kind": "event",
+      "status": "active",
+      "title": "The revolt of 14 May restores the Democrats"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "revolt-14-may-1915",
+      "id": "revolt-14-may-1915--sidonio-pais-coup-1917--precondition-of",
+      "kind": "edge",
+      "status": "active",
+      "to": "sidonio-pais-coup-1917",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "ricardo-salgado",
+      "kind": "actor",
+      "names": [
+        "Ricardo Salgado",
+        "Ricardo Espírito Santo Silva Salgado"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "doi": null,
+      "id": "rosas-1994-estado-novo",
+      "isbn": null,
+      "kind": "source",
+      "status": "active",
+      "title": "O Estado Novo (1926–1974). História de Portugal, vol. 7 (dir. José Mattoso)",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "doi": null,
+      "id": "rosas-2012-salazar-e-o-poder",
+      "isbn": null,
+      "kind": "source",
+      "status": "active",
+      "title": "Salazar e o Poder: A Arte de Saber Durar",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "saint-denis",
+      "kind": "place",
+      "names": [
+        "Saint-Denis"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "salazar",
+      "kind": "actor",
+      "names": [
+        "António de Oliveira Salazar",
+        "Salazar"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "salazar",
+      "id": "salazar--estado-novo--led",
+      "kind": "relation",
+      "status": "active",
+      "to": "estado-novo",
+      "type": "led"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "salazar-finance-minister-1928",
+      "kind": "event",
+      "status": "active",
+      "title": "Salazar becomes Minister of Finance"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "salazar-finance-minister-1928",
+      "id": "salazar-finance-minister-1928--salazar-president-of-council-1932--caused",
+      "kind": "edge",
+      "status": "active",
+      "to": "salazar-president-of-council-1932",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "salazar-president-of-council-1932",
+      "kind": "event",
+      "status": "active",
+      "title": "Salazar becomes President of the Council"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "salazar-president-of-council-1932",
+      "id": "salazar-president-of-council-1932--constitution-1933--caused",
+      "kind": "edge",
+      "status": "active",
+      "to": "constitution-1933",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "santa-maria-hijacking-1961",
+      "kind": "event",
+      "status": "active",
+      "title": "The seizure of the liner Santa Maria"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "santa-maria-hijacking-1961",
+      "id": "santa-maria-hijacking-1961--angola-war-begins-1961--enabled",
+      "kind": "edge",
+      "status": "active",
+      "to": "angola-war-begins-1961",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "sidonio-pais",
+      "kind": "actor",
+      "names": [
+        "Sidónio Pais",
+        "Sidónio Bernardino Cardoso da Silva Pais"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "sidonio-pais-assassinated-1918",
+      "kind": "event",
+      "status": "active",
+      "title": "Assassination of Sidónio Pais"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "sidonio-pais-assassinated-1918",
+      "id": "sidonio-pais-assassinated-1918--monarchy-of-the-north-1919--enabled",
+      "kind": "edge",
+      "status": "active",
+      "to": "monarchy-of-the-north-1919",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "sidonio-pais-assassinated-1918",
+      "id": "sidonio-pais-assassinated-1918--noite-sangrenta-1921--precondition-of",
+      "kind": "edge",
+      "status": "active",
+      "to": "noite-sangrenta-1921",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "sidonio-pais-coup-1917",
+      "kind": "event",
+      "status": "active",
+      "title": "Sidónio Pais's coup"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "soares-elected-president-1986",
+      "kind": "event",
+      "status": "active",
+      "title": "Mário Soares elected president"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "spinola-resigns-1974",
+      "kind": "event",
+      "status": "active",
+      "title": "Spínola resigns the presidency"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "spinola-resigns-1974",
+      "id": "spinola-resigns-1974--coup-attempt-11-march-1975--precondition-of",
+      "kind": "edge",
+      "status": "active",
+      "to": "coup-attempt-11-march-1975",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "doi": null,
+      "id": "telo-2007-historia-contemporanea",
+      "isbn": null,
+      "kind": "source",
+      "status": "active",
+      "title": "História Contemporânea de Portugal: do 25 de Abril à Actualidade",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "tete-district",
+      "kind": "place",
+      "names": [
+        "Tete district, Mozambique"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "third-portuguese-republic",
+      "kind": "actor",
+      "names": [
+        "Third Portuguese Republic",
+        "Terceira República Portuguesa"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "third-portuguese-republic",
+      "id": "third-portuguese-republic--european-economic-community--allied-with",
+      "kind": "relation",
+      "status": "active",
+      "to": "european-economic-community",
+      "type": "allied-with"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "third-portuguese-republic",
+      "id": "third-portuguese-republic--portugal--regime-of",
+      "kind": "relation",
+      "status": "active",
+      "to": "portugal",
+      "type": "regime-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "tite",
+      "kind": "place",
+      "names": [
+        "Tite"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "troika-bailout-2011",
+      "kind": "event",
+      "status": "active",
+      "title": "Request for financial assistance"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "troika-bailout-2011",
+      "id": "troika-bailout-2011--bes-resolution-2014--precondition-of",
+      "kind": "edge",
+      "status": "active",
+      "to": "bes-resolution-2014",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "troika-bailout-2011",
+      "id": "troika-bailout-2011--troika-programme-ends-2014--caused",
+      "kind": "edge",
+      "status": "active",
+      "to": "troika-programme-ends-2014",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "troika-programme-ends-2014",
+      "kind": "event",
+      "status": "active",
+      "title": "Exit from the adjustment programme"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "troika-programme-ends-2014",
+      "id": "troika-programme-ends-2014--legislative-election-2015--precondition-of",
+      "kind": "edge",
+      "status": "active",
+      "to": "legislative-election-2015",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "doi": null,
+      "id": "uefa-2016-final",
+      "isbn": null,
+      "kind": "source",
+      "status": "active",
+      "title": "Match report, final of the 2016 European Championship",
+      "type": "primary"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "un-admission-1955",
+      "kind": "event",
+      "status": "active",
+      "title": "Portugal admitted to the United Nations"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "from": "un-admission-1955",
+      "id": "un-admission-1955--angola-war-begins-1961--precondition-of",
+      "kind": "edge",
+      "status": "active",
+      "to": "angola-war-begins-1961",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "unita",
+      "kind": "actor",
+      "names": [
+        "UNITA",
+        "União Nacional para a Independência Total de Angola",
+        "National Union for the Total Independence of Angola"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "united-nations",
+      "kind": "actor",
+      "names": [
+        "United Nations",
+        "UN",
+        "Organização das Nações Unidas",
+        "ONU"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "vasco-goncalves",
+      "kind": "actor",
+      "names": [
+        "Vasco Gonçalves",
+        "Vasco dos Santos Gonçalves"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "washington",
+      "kind": "place",
+      "names": [
+        "Washington"
+      ],
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "doi": null,
+      "id": "wheeler-1978-republican-portugal",
+      "isbn": null,
+      "kind": "source",
+      "status": "active",
+      "title": "Republican Portugal: A Political History, 1910–1926",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "wiriyamu-massacre-1972",
+      "kind": "event",
+      "status": "active",
+      "title": "The Wiriyamu massacre"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "world-youth-day-2023",
+      "kind": "event",
+      "status": "active",
+      "title": "World Youth Day in Lisbon"
+    }
+  ],
+  "schema": 1,
+  "total": 567,
+  "warnings": [
+    {
+      "id": "euro-2016-final",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "iberian-blackout-2025",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    }
+  ]
+}

@@ -9,7 +9,7 @@ import assert from 'node:assert/strict';
 import path from 'node:path';
 import {
   DRAFT_AUTHOR, KIND_ORDER, NO_IDENTIFIER, isDraft, countDrafts, labelOf, warningsById, flagsOf,
-  buildQueue, groupByKind, flagCounts, filterQueue, progressOf,
+  buildQueue, groupByKind, flagCounts, filterQueue, progressOf, digestOf,
 } from '../src/review/queue.js';
 import {
   normalizeReviewer, reviewerProblems, signRecord, retractRecord, retractionPlan, bundleOf,
@@ -69,6 +69,17 @@ test('the queue carries the validator\'s own warnings, in kind order', () => {
 
   const progress = progressOf(records);
   assert.deepEqual(progress, { total: 4, remaining: 3, reviewed: 1, byKind: [{ kind: 'source', count: 1 }, { kind: 'event', count: 1 }, { kind: 'edge', count: 1 }] });
+
+  // The dashboard holds only the drafts — the digests in data/index/ — so the
+  // number of records there are is told to it rather than counted.
+  assert.deepEqual(progressOf(records.filter(isDraft), { total: 4 }), progress);
+});
+
+test('a digest carries what the queue reads and no prose', () => {
+  const record = draft({ id: 'fixture-event-digest', title: 'A title', summary: 'Prose the list never shows.', when: { start: 1500 } });
+  const digest = digestOf(record);
+  assert.deepEqual(Object.keys(digest).sort(), ['authors', 'id', 'kind', 'status', 'title']);
+  assert.deepEqual(buildQueue([digest]), buildQueue([record]));
 });
 
 test('a record may ask for itself to be looked at', () => {

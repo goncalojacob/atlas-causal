@@ -22,6 +22,18 @@ export function isDraft(record) {
   return (record?.authors ?? []).some((a) => a?.name === DRAFT_AUTHOR);
 }
 
+// The queue is built in the browser, which has the index and not the record
+// files: `data/index/review-<hash>.json` carries one of these per draft.
+// Exactly the fields the list and its filters read — everything else waits
+// until a record is opened, and is then fetched whole.
+export const DIGEST_KEYS = Object.freeze(['kind', 'id', 'status', 'authors', 'review', 'title', 'names', 'from', 'to', 'type', 'isbn', 'doi']);
+
+export function digestOf(record) {
+  const digest = {};
+  for (const key of DIGEST_KEYS) if (Object.hasOwn(record ?? {}, key)) digest[key] = record[key];
+  return digest;
+}
+
 export function countDrafts(records) {
   return (records ?? []).filter(isDraft).length;
 }
@@ -110,10 +122,14 @@ export function filterQueue(queue, { kind = null, flag = null, text = '' } = {})
 }
 
 // How much is left, by kind and in total. `reviewed` counts what a person
-// has already signed, so the page can say what the work has moved.
-export function progressOf(records) {
+// has already signed, so the page can say what the work has moved. `total`
+// is given when the caller holds only the drafts — the dashboard reads the
+// digests, not the whole of data/ — and is the number of reviewable records
+// there are, presences excluded.
+export function progressOf(records, { total = null } = {}) {
   const all = (records ?? []).filter((r) => r?.kind !== 'presence');
   const remaining = all.filter(isDraft);
   const byKind = groupByKind(buildQueue(remaining)).map((g) => ({ kind: g.kind, count: g.count }));
-  return { total: all.length, remaining: remaining.length, reviewed: all.length - remaining.length, byKind };
+  const size = total ?? all.length;
+  return { total: size, remaining: remaining.length, reviewed: size - remaining.length, byKind };
 }

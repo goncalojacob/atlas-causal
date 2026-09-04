@@ -6,6 +6,9 @@ import path from 'node:path';
 import { canonical, serialize, buildIndex, writeIndex, readIndex, compareIndex } from '../tools/build-index.mjs';
 import { runValidation } from '../tools/validate.mjs';
 import { buildTopology, eventWeights } from '../src/validate/core.js';
+import { checkRules } from '../src/validate/rules.js';
+import { buildQueue, isDraft, DIGEST_KEYS } from '../src/review/queue.js';
+import { readRecords, readRegions } from '../tools/lib/read.mjs';
 import { FIXTURE_DATA, ROOT, fixtures } from './helpers.mjs';
 
 async function tempCopyOfFixtures() {
@@ -61,6 +64,32 @@ test('manifest names the hashed files, counts, lanes and land', async () => {
   assert.equal(byId['fixture-event-o'].regionMethod, 'override');
   assert.equal(Object.hasOwn(byId['fixture-event-a'], 'summary'), false, 'text stays out of the index');
   assert.deepEqual(built.unresolved, []);
+});
+
+// The dashboard's queue is this file: the browser has no way to read a
+// thousand record files, and the topology drops `authors`.
+test('the review index lists the drafts, the count and the warnings', async () => {
+  const built = await buildIndex(path.join(ROOT, 'data'));
+  const manifest = JSON.parse(built.files['manifest.json']);
+  assert.match(manifest.files.review, /^index\/review-[0-9a-f]{12}\.json$/);
+  const review = JSON.parse(built.files[path.basename(manifest.files.review)]);
+  const { entries } = await readRecords(path.join(ROOT, 'data'));
+  const records = entries.map((e) => e.record);
+  const regions = await readRegions(path.join(ROOT, 'data'));
+  const drafts = records.filter(isDraft);
+  // The number the page reports is the validator's own, not a second count.
+  assert.equal(review.records.length, drafts.length);
+  assert.deepEqual(review.records.map((r) => r.id).sort(), drafts.map((r) => r.id).sort());
+  assert.equal(review.total, records.filter((r) => r.kind !== 'presence').length);
+  const rules = checkRules(records, buildTopology(records, regions));
+  assert.deepEqual(review.warnings.map((w) => w.id).sort(), rules.warnings.map((w) => w.id).sort());
+  // A digest carries what the list reads and nothing else: no prose, no
+  // sources, no geometry — those arrive when a record is opened.
+  for (const digest of review.records) {
+    assert.ok(DIGEST_KEYS.includes('kind'));
+    for (const key of Object.keys(digest)) assert.ok(DIGEST_KEYS.includes(key), `${digest.id} carries ${key}`);
+  }
+  assert.deepEqual(buildQueue(review.records, review).length, drafts.length);
 });
 
 test('weight counts active edges in and out plus the actors named', async () => {
