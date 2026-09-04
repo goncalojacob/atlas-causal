@@ -1,7 +1,7 @@
 {
   "counts": {
-    "actors": 316,
-    "edges": 94,
+    "actors": 318,
+    "edges": 100,
     "events": 326,
     "narratives": 1,
     "places": 25,
@@ -11,9 +11,9 @@
     "sources": 34
   },
   "files": {
-    "review": "index/review-12a39c870bff.json",
-    "sources": "index/sources-7b75ddc1daa0.json",
-    "topology": "index/topology-e25c6a0e0999.json"
+    "review": "index/review-8a47bd342b49.json",
+    "sources": "index/sources-5db852b59c03.json",
+    "topology": "index/topology-8d9ce8328e8e.json"
   },
   "land": [
     {
@@ -107,6 +107,7 @@
     "dispossessed",
     "divided",
     "elected",
+    "elected first president",
     "excluded",
     "executive chairman",
     "figurehead",
@@ -126,6 +127,7 @@
     "king, killed in the attack",
     "largest party, 62 seats",
     "leader",
+    "leader of the winning party",
     "legislator",
     "lender",
     "movement",
@@ -160,9 +162,14 @@
     "supporter",
     "supporting party",
     "target",
+    "the regime being constituted",
+    "the regime restored by the may rising",
+    "the regime whose office was filled",
     "victim",
     "winner",
     "withdrew",
+    "won 106 of 163 seats in the chamber",
+    "won 229 of 234 seats",
     "younger son, succeeded to the throne"
   ],
   "schema": 1

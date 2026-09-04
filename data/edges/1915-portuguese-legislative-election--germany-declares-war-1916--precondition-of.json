@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "1915-portuguese-legislative-election--germany-declares-war-1916--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "meneses-2004-portugal-1914-1926",
+      "locator": null
+    },
+    {
+      "source": "wheeler-1978-republican-portugal",
+      "locator": null
+    }
+  ],
+  "from": "1915-portuguese-legislative-election",
+  "to": "germany-declares-war-1916",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Intervention was Democratic policy and it was contested: much of the army, the Evolutionists in part, and most of the country outside Lisbon had no wish to be in the war. The majority returned in June 1915 is what made the policy executable — it was a Democratic government that requisitioned the seventy-odd German ships in Portuguese harbours in February 1916 at Britain’s request, and the German declaration followed a fortnight later. The claim is not that the election caused the declaration, but that the government which provoked it could not have been formed without the June result.",
+  "dispute": null
+}

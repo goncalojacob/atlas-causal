@@ -9,14 +9,19 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "summary-drafted"
     ]
   },
   "wikidata": "Q97516175",
@@ -27,18 +32,44 @@
   },
   "sources": [
     {
+      "source": "wheeler-1978-republican-portugal",
+      "locator": null
+    },
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1911 Portuguese presidential election\", revision 1276453192"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Eleições presidenciais portuguesas de 1911\", revision 71618872"
+    },
+    {
       "source": "wikidata",
       "locator": "Q97516175"
     }
   ],
   "title": "1911 Portuguese presidential election",
-  "summary": "Wikidata item Q97516175, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "On 24 August 1911, three days after promulgating the constitution, the Constituent Assembly sitting as the Congress of the Republic elected Manuel de Arriaga the first president of the Portuguese Republic, for a term of four years. The constitution had put the choice in parliament’s hands rather than the electorate’s and had left the office deliberately weak — no government of its own, no popular mandate — but it kept the power to appoint and dismiss ministers. Arriaga used that power in January 1915 to dismiss the Democratic government and call General Pimenta de Castro, who then ruled without the Chamber: the first time the Republic’s own constitution was turned against its parliamentary majority. He resigned in May 1915, twelve days after the rising that undid the experiment. It is in the atlas because the presidency it filled is where the First Republic’s crises were settled, and mostly by force.",
   "when": {
     "start": 1911,
     "end": 1911,
-    "date": "1911-08-24"
+    "date": "1911-08-24",
+    "calendar": "gregorian"
   },
   "place": null,
   "region": "europe",
-  "actors": []
+  "actors": [
+    {
+      "actor": "manuel-de-arriaga",
+      "role": "elected first president"
+    },
+    {
+      "actor": "first-portuguese-republic",
+      "role": "the regime whose office was filled"
+    }
+  ]
 }

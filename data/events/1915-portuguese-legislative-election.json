@@ -9,14 +9,19 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "summary-drafted"
     ]
   },
   "wikidata": "Q7232749",
@@ -27,18 +32,48 @@
   },
   "sources": [
     {
+      "source": "meneses-2004-portugal-1914-1926",
+      "locator": null
+    },
+    {
+      "source": "wheeler-1978-republican-portugal",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1915 Portuguese legislative election\", revision 1304350333"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Eleições legislativas portuguesas de 1915\", revision 71337049"
+    },
+    {
       "source": "wikidata",
       "locator": "Q7232749"
     }
   ],
   "title": "1915 Portuguese legislative election",
-  "summary": "Wikidata item Q7232749, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "Portugal voted on 13 June 1915, a month after the rising of 14 May had thrown out Pimenta de Castro’s government and restored the parliamentary Republic by force. The Democratic Party won 106 of the 163 seats in the Chamber and 45 of the 69 in the Senate, the clearest majority any party held under the 1911 constitution. That majority was also the parliamentary base of intervention: the Democrats were the party that wanted Portugal in the war on Britain’s side, and it was a Democratic government that requisitioned the German ships lying in Portuguese harbours in February 1916, which brought the German declaration of war a fortnight afterwards. It is in the atlas for that consequence rather than for the count.",
   "when": {
     "start": 1915,
     "end": 1915,
-    "date": "1915-06-13"
+    "date": "1915-06-13",
+    "calendar": "gregorian"
   },
   "place": null,
   "region": "europe",
-  "actors": []
+  "actors": [
+    {
+      "actor": "partido-democratico",
+      "role": "won 106 of 163 seats in the Chamber"
+    },
+    {
+      "actor": "afonso-costa",
+      "role": "leader of the winning party"
+    },
+    {
+      "actor": "first-portuguese-republic",
+      "role": "the regime restored by the May rising"
+    }
+  ]
 }

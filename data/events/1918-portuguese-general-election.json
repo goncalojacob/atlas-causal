@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "1918-portuguese-general-election",
   "kind": "event",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,11 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "m21-retracted"
+    ],
+    "note": "Retracted in M21: the plebiscitary election of 28 April 1918 that ratified Sidónio Pais’s regime, boycotted by the Democrats, the Evolutionists and the Republican Union, who between them had won over 90% of the seats in 1915. Genuinely notable, and it sits between two events the atlas already holds — the coup of December 1917 and the assassination of December 1918. But every edge out of it would be this assistant’s construction rather than an argument found in the bibliography."
   },
   "wikidata": "Q7232714",
   "sitelinks": 6,

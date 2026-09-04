@@ -7804,7 +7804,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 20,
+      "citationCount": 24,
       "citations": [
         {
           "dissent": false,
@@ -7850,6 +7850,18 @@
         },
         {
           "dissent": false,
+          "id": "1911-portuguese-presidential-election--pimenta-de-castro-government-1915--enabled",
+          "kind": "edge",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "1915-portuguese-legislative-election--germany-declares-war-1916--precondition-of",
+          "kind": "edge",
+          "locator": null
+        },
+        {
+          "dissent": false,
           "id": "battle-of-the-lys-1918--coup-28-may-1926--precondition-of",
           "kind": "edge",
           "locator": null
@@ -7882,6 +7894,18 @@
           "dissent": false,
           "id": "pimenta-de-castro-government-1915--revolt-14-may-1915--caused",
           "kind": "edge",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "revolt-14-may-1915--1915-portuguese-legislative-election--caused",
+          "kind": "edge",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "1915-portuguese-legislative-election",
+          "kind": "event",
           "locator": null
         },
         {
@@ -8095,7 +8119,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 40,
+      "citationCount": 47,
       "citations": [
         {
           "dissent": false,
@@ -8153,6 +8177,12 @@
         },
         {
           "dissent": false,
+          "id": "manuel-de-arriaga",
+          "kind": "actor",
+          "locator": null
+        },
+        {
+          "dissent": false,
           "id": "manuel-ii",
           "kind": "actor",
           "locator": null
@@ -8172,6 +8202,12 @@
         {
           "dissent": false,
           "id": "paiva-couceiro",
+          "kind": "actor",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "partido-republicano-portugues",
           "kind": "actor",
           "locator": null
         },
@@ -8206,6 +8242,12 @@
           "locator": null
         },
         {
+          "dissent": false,
+          "id": "1911-portuguese-constituent-national-assembly-election--constitution-1911--caused",
+          "kind": "edge",
+          "locator": null
+        },
+        {
           "dissent": true,
           "id": "battle-of-the-lys-1918--coup-28-may-1926--precondition-of",
           "kind": "edge",
@@ -8214,6 +8256,12 @@
         {
           "dissent": true,
           "id": "cabral-assassinated-1973--guinea-bissau-declares-independence-1973--caused",
+          "kind": "edge",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "constitution-1911--1911-portuguese-presidential-election--enabled",
           "kind": "edge",
           "locator": null
         },
@@ -8255,6 +8303,12 @@
         },
         {
           "dissent": false,
+          "id": "republic-proclaimed-1910--1911-portuguese-constituent-national-assembly-election--caused",
+          "kind": "edge",
+          "locator": null
+        },
+        {
+          "dissent": false,
           "id": "republic-proclaimed-1910--constitution-1911--caused",
           "kind": "edge",
           "locator": null
@@ -8274,6 +8328,18 @@
         {
           "dissent": false,
           "id": "1908-portuguese-legislative-election",
+          "kind": "event",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "1911-portuguese-constituent-national-assembly-election",
+          "kind": "event",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "1911-portuguese-presidential-election",
           "kind": "event",
           "locator": null
         },
@@ -9365,7 +9431,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 33,
+      "citationCount": 44,
       "citations": [
         {
           "dissent": false,
@@ -9376,6 +9442,12 @@
         {
           "dissent": false,
           "id": "first-portuguese-republic",
+          "kind": "actor",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "manuel-de-arriaga",
           "kind": "actor",
           "locator": null
         },
@@ -9399,6 +9471,12 @@
         },
         {
           "dissent": false,
+          "id": "partido-republicano-portugues",
+          "kind": "actor",
+          "locator": null
+        },
+        {
+          "dissent": false,
           "id": "pimenta-de-castro",
           "kind": "actor",
           "locator": null
@@ -9416,8 +9494,32 @@
           "locator": null
         },
         {
+          "dissent": false,
+          "id": "1911-portuguese-constituent-national-assembly-election--constitution-1911--caused",
+          "kind": "edge",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "1911-portuguese-presidential-election--pimenta-de-castro-government-1915--enabled",
+          "kind": "edge",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "1915-portuguese-legislative-election--germany-declares-war-1916--precondition-of",
+          "kind": "edge",
+          "locator": null
+        },
+        {
           "dissent": true,
           "id": "battle-of-the-lys-1918--coup-28-may-1926--precondition-of",
+          "kind": "edge",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "constitution-1911--1911-portuguese-presidential-election--enabled",
           "kind": "edge",
           "locator": null
         },
@@ -9471,6 +9573,12 @@
         },
         {
           "dissent": false,
+          "id": "republic-proclaimed-1910--1911-portuguese-constituent-national-assembly-election--caused",
+          "kind": "edge",
+          "locator": null
+        },
+        {
+          "dissent": false,
           "id": "republic-proclaimed-1910--constitution-1911--caused",
           "kind": "edge",
           "locator": null
@@ -9478,6 +9586,12 @@
         {
           "dissent": false,
           "id": "republic-proclaimed-1910--law-of-separation-1911--caused",
+          "kind": "edge",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "revolt-14-may-1915--1915-portuguese-legislative-election--caused",
           "kind": "edge",
           "locator": null
         },
@@ -9497,6 +9611,24 @@
           "dissent": false,
           "id": "sidonio-pais-assassinated-1918--noite-sangrenta-1921--precondition-of",
           "kind": "edge",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "1911-portuguese-constituent-national-assembly-election",
+          "kind": "event",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "1911-portuguese-presidential-election",
+          "kind": "event",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "1915-portuguese-legislative-election",
+          "kind": "event",
           "locator": null
         },
         {
@@ -9596,19 +9728,13 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 233,
+      "citationCount": 225,
       "citations": [
         {
           "dissent": false,
           "id": "1908-portuguese-legislative-election",
           "kind": "event",
           "locator": "Q7232747"
-        },
-        {
-          "dissent": false,
-          "id": "1910-portuguese-legislative-election",
-          "kind": "event",
-          "locator": "Q7232748"
         },
         {
           "dissent": false,
@@ -9624,39 +9750,9 @@
         },
         {
           "dissent": false,
-          "id": "1913-portuguese-legislative-election",
-          "kind": "event",
-          "locator": "Q28679597"
-        },
-        {
-          "dissent": false,
           "id": "1915-portuguese-legislative-election",
           "kind": "event",
           "locator": "Q7232749"
-        },
-        {
-          "dissent": false,
-          "id": "1918-portuguese-general-election",
-          "kind": "event",
-          "locator": "Q7232714"
-        },
-        {
-          "dissent": false,
-          "id": "1918-portuguese-presidential-election",
-          "kind": "event",
-          "locator": "Q21872940"
-        },
-        {
-          "dissent": false,
-          "id": "1919-portuguese-legislative-election",
-          "kind": "event",
-          "locator": "Q7232750"
-        },
-        {
-          "dissent": false,
-          "id": "1919-portuguese-presidential-election",
-          "kind": "event",
-          "locator": "Q21872497"
         },
         {
           "dissent": false,
@@ -10614,12 +10710,6 @@
         },
         {
           "dissent": false,
-          "id": "august-1915-portuguese-presidential-election",
-          "kind": "event",
-          "locator": "Q97516196"
-        },
-        {
-          "dissent": false,
           "id": "batepa-massacre",
           "kind": "event",
           "locator": "Q1851212"
@@ -10791,12 +10881,6 @@
           "id": "lisbon-regicide",
           "kind": "event",
           "locator": "Q2665185"
-        },
-        {
-          "dissent": false,
-          "id": "may-1915-portuguese-presidential-election",
-          "kind": "event",
-          "locator": "Q97516248"
         },
         {
           "dissent": false,
@@ -11027,13 +11111,31 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 2,
+      "citationCount": 5,
       "citations": [
         {
           "dissent": false,
           "id": "1908-portuguese-legislative-election",
           "kind": "event",
           "locator": "\"1908 Portuguese legislative election\", revision 1277160529"
+        },
+        {
+          "dissent": false,
+          "id": "1911-portuguese-constituent-national-assembly-election",
+          "kind": "event",
+          "locator": "\"1911 Portuguese National Constituent Assembly election\", revision 1366576929"
+        },
+        {
+          "dissent": false,
+          "id": "1911-portuguese-presidential-election",
+          "kind": "event",
+          "locator": "\"1911 Portuguese presidential election\", revision 1276453192"
+        },
+        {
+          "dissent": false,
+          "id": "1915-portuguese-legislative-election",
+          "kind": "event",
+          "locator": "\"1915 Portuguese legislative election\", revision 1304350333"
         },
         {
           "dissent": false,
@@ -11072,7 +11174,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 4,
+      "citationCount": 7,
       "citations": [
         {
           "dissent": false,
@@ -11091,6 +11193,24 @@
           "id": "1908-portuguese-legislative-election",
           "kind": "event",
           "locator": "\"Eleições legislativas portuguesas de 1908\", revision 66807862"
+        },
+        {
+          "dissent": false,
+          "id": "1911-portuguese-constituent-national-assembly-election",
+          "kind": "event",
+          "locator": "\"Eleições legislativas portuguesas de 1911\", revision 71425359"
+        },
+        {
+          "dissent": false,
+          "id": "1911-portuguese-presidential-election",
+          "kind": "event",
+          "locator": "\"Eleições presidenciais portuguesas de 1911\", revision 71618872"
+        },
+        {
+          "dissent": false,
+          "id": "1915-portuguese-legislative-election",
+          "kind": "event",
+          "locator": "\"Eleições legislativas portuguesas de 1915\", revision 71337049"
         },
         {
           "dissent": false,

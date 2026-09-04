@@ -55,6 +55,162 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wheeler-1978-republican-portugal",
+        "ramos-2009-historia-de-portugal",
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "1911-portuguese-constituent-national-assembly-election",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "1911 Constituent Assembly election"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wheeler-1978-republican-portugal",
+        "ramos-2009-historia-de-portugal"
+      ],
+      "from": "1911-portuguese-constituent-national-assembly-election",
+      "id": "1911-portuguese-constituent-national-assembly-election--constitution-1911--caused",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "constitution-1911",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wheeler-1978-republican-portugal",
+        "ramos-2009-historia-de-portugal",
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "1911-portuguese-presidential-election",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "1911 Portuguese presidential election"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wheeler-1978-republican-portugal",
+        "meneses-2004-portugal-1914-1926"
+      ],
+      "from": "1911-portuguese-presidential-election",
+      "id": "1911-portuguese-presidential-election--pimenta-de-castro-government-1915--enabled",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "pimenta-de-castro-government-1915",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "meneses-2004-portugal-1914-1926",
+        "wheeler-1978-republican-portugal",
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "1915-portuguese-legislative-election",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "1915 Portuguese legislative election"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "meneses-2004-portugal-1914-1926",
+        "wheeler-1978-republican-portugal"
+      ],
+      "from": "1915-portuguese-legislative-election",
+      "id": "1915-portuguese-legislative-election--germany-declares-war-1916--precondition-of",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "germany-declares-war-1916",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -1511,6 +1667,29 @@
       "kind": "event",
       "status": "active",
       "title": "Constitution of 1911"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wheeler-1978-republican-portugal",
+        "ramos-2009-historia-de-portugal"
+      ],
+      "from": "constitution-1911",
+      "id": "constitution-1911--1911-portuguese-presidential-election--enabled",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "1911-portuguese-presidential-election",
+      "type": "enabled"
     },
     {
       "authors": [
@@ -4041,6 +4220,30 @@
         }
       ],
       "cites": [
+        "wheeler-1978-republican-portugal",
+        "ramos-2009-historia-de-portugal"
+      ],
+      "id": "manuel-de-arriaga",
+      "kind": "actor",
+      "names": [
+        "Manuel de Arriaga",
+        "Manuel José de Arriaga Brum da Silveira e Peyrelongue"
+      ],
+      "review": {
+        "flags": [
+          "actor-drafted"
+        ]
+      },
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "ramos-2009-historia-de-portugal",
         "wheeler-1978-republican-portugal"
       ],
@@ -4829,6 +5032,31 @@
         }
       ],
       "cites": [
+        "wheeler-1978-republican-portugal",
+        "ramos-2009-historia-de-portugal"
+      ],
+      "id": "partido-republicano-portugues",
+      "kind": "actor",
+      "names": [
+        "Portuguese Republican Party",
+        "Partido Republicano Português",
+        "PRP"
+      ],
+      "review": {
+        "flags": [
+          "actor-drafted"
+        ]
+      },
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "costa-pinto-teixeira-2019-political-institutions",
         "telo-2007-historia-contemporanea"
       ],
@@ -5423,6 +5651,29 @@
         "ramos-2009-historia-de-portugal"
       ],
       "from": "republic-proclaimed-1910",
+      "id": "republic-proclaimed-1910--1911-portuguese-constituent-national-assembly-election--caused",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "1911-portuguese-constituent-national-assembly-election",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wheeler-1978-republican-portugal",
+        "ramos-2009-historia-de-portugal"
+      ],
+      "from": "republic-proclaimed-1910",
       "id": "republic-proclaimed-1910--constitution-1911--caused",
       "kind": "edge",
       "status": "active",
@@ -5462,6 +5713,29 @@
       "kind": "event",
       "status": "active",
       "title": "The revolt of 14 May restores the Democrats"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wheeler-1978-republican-portugal",
+        "meneses-2004-portugal-1914-1926"
+      ],
+      "from": "revolt-14-may-1915",
+      "id": "revolt-14-may-1915--1915-portuguese-legislative-election--caused",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "1915-portuguese-legislative-election",
+      "type": "caused"
     },
     {
       "authors": [
@@ -6281,62 +6555,8 @@
     }
   ],
   "schema": 1,
-  "total": 824,
+  "total": 832,
   "warnings": [
-    {
-      "id": "1910-portuguese-legislative-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "1911-portuguese-constituent-national-assembly-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "1911-portuguese-presidential-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "1913-portuguese-legislative-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "1915-portuguese-legislative-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "1918-portuguese-general-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "1918-portuguese-presidential-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "1919-portuguese-legislative-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "1919-portuguese-presidential-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
     {
       "id": "1921-portuguese-legislative-election",
       "kind": "event",
@@ -7292,12 +7512,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "august-1915-portuguese-presidential-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
       "id": "batepa-massacre",
       "kind": "event",
       "message": "event has no edges",
@@ -7467,12 +7681,6 @@
     },
     {
       "id": "lisbon-recognition-convention",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "may-1915-portuguese-presidential-election",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"

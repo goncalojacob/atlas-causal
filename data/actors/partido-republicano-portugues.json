@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "partido-republicano-portugues",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "actor-drafted"
+    ]
+  },
+  "where": null,
+  "sources": [
+    {
+      "source": "wheeler-1978-republican-portugal",
+      "locator": null
+    },
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    }
+  ],
+  "actorType": "institution",
+  "names": [
+    "Portuguese Republican Party",
+    "Partido Republicano Português",
+    "PRP"
+  ],
+  "summary": "The Portuguese Republican Party, founded in 1876, was the whole of organised republicanism under the monarchy and made the revolution of October 1910. It won 229 of the 234 seats of the Constituent Assembly in May 1911, and then broke apart over the constitution it had just written: by 1912 it had split into the Democrats around Afonso Costa, the Evolutionists and the Unionists. The atlas holds this record and `partido-democratico` separately on purpose — the Democrats kept the PRP’s legal name after the split, so the same name belongs to both, but the party that won everything in 1911 and the party that fought the elections of 1913 onwards are not the same organisation. It is in the atlas as the body whose unanimity in 1911 and fracture in 1912 set the shape of the First Republic.",
+  "when": {
+    "start": 1876,
+    "end": 1912
+  }
+}

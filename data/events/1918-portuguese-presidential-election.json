@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "1918-portuguese-presidential-election",
   "kind": "event",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,11 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "m21-retracted"
+    ],
+    "note": "Retracted in M21: the Congress met on 16 December 1918, two days after Sidónio Pais was shot, to fill out what remained of Bernardino Machado’s term. The killing that caused it is already in the atlas, and nothing argued leads out of the election itself: the presidency that came of it lasted until October 1919 and decided nothing the atlas holds."
   },
   "wikidata": "Q21872940",
   "sitelinks": 3,

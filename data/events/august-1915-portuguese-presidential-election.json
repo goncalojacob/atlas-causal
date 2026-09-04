@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "august-1915-portuguese-presidential-election",
   "kind": "event",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,11 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "m21-retracted"
+    ],
+    "note": "Retracted in M21: the Congress elected a president on 6 August 1915, two months before the previous term expired, as article 38 of the 1911 constitution required. The cached leads give the mechanism and no more. Nothing that follows in the atlas can be argued to follow from this election rather than from the war and the Democratic majority, both of which are here already."
   },
   "wikidata": "Q97516196",
   "sitelinks": 2,

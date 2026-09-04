@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "1913-portuguese-legislative-election",
   "kind": "event",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,11 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "m21-retracted"
+    ],
+    "note": "Retracted in M21: a partial election, 16 November 1913, for 37 of the 153 seats, and the first held under the 1911 constitution; the Democrats took 33 of the 37. It confirmed a dominance the atlas already shows by other means, and no consequence of this particular by-election round can be argued from the bibliography here."
   },
   "wikidata": "Q28679597",
   "sitelinks": 2,

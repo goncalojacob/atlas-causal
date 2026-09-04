@@ -2819,6 +2819,22 @@
     {
       "actorType": "person",
       "aliases": [],
+      "id": "manuel-de-arriaga",
+      "name": "Manuel de Arriaga",
+      "names": [
+        "Manuel de Arriaga",
+        "Manuel José de Arriaga Brum da Silveira e Peyrelongue"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": 1917,
+        "start": 1840
+      }
+    },
+    {
+      "actorType": "person",
+      "aliases": [],
       "id": "manuel-ii",
       "name": "Manuel II",
       "names": [
@@ -3602,6 +3618,23 @@
       "when": {
         "end": 1926,
         "start": 1912
+      }
+    },
+    {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "partido-republicano-portugues",
+      "name": "Portuguese Republican Party",
+      "names": [
+        "Portuguese Republican Party",
+        "Partido Republicano Português",
+        "PRP"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": 1912,
+        "start": 1876
       }
     },
     {
@@ -5139,6 +5172,36 @@
     {
       "aliases": [],
       "confidence": "consensus",
+      "from": "1911-portuguese-constituent-national-assembly-election",
+      "id": "1911-portuguese-constituent-national-assembly-election--constitution-1911--caused",
+      "status": "active",
+      "supersededBy": null,
+      "to": "constitution-1911",
+      "type": "caused"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "1911-portuguese-presidential-election",
+      "id": "1911-portuguese-presidential-election--pimenta-de-castro-government-1915--enabled",
+      "status": "active",
+      "supersededBy": null,
+      "to": "pimenta-de-castro-government-1915",
+      "type": "enabled"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "1915-portuguese-legislative-election",
+      "id": "1915-portuguese-legislative-election--germany-declares-war-1916--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "germany-declares-war-1916",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "consensus",
       "from": "25-november-1975",
       "id": "25-november-1975--constitution-1976--enabled",
       "status": "active",
@@ -5354,6 +5417,16 @@
       "status": "active",
       "supersededBy": null,
       "to": "25-november-1975",
+      "type": "enabled"
+    },
+    {
+      "aliases": [],
+      "confidence": "consensus",
+      "from": "constitution-1911",
+      "id": "constitution-1911--1911-portuguese-presidential-election--enabled",
+      "status": "active",
+      "supersededBy": null,
+      "to": "1911-portuguese-presidential-election",
       "type": "enabled"
     },
     {
@@ -5940,6 +6013,16 @@
       "aliases": [],
       "confidence": "consensus",
       "from": "republic-proclaimed-1910",
+      "id": "republic-proclaimed-1910--1911-portuguese-constituent-national-assembly-election--caused",
+      "status": "active",
+      "supersededBy": null,
+      "to": "1911-portuguese-constituent-national-assembly-election",
+      "type": "caused"
+    },
+    {
+      "aliases": [],
+      "confidence": "consensus",
+      "from": "republic-proclaimed-1910",
       "id": "republic-proclaimed-1910--constitution-1911--caused",
       "status": "active",
       "supersededBy": null,
@@ -5954,6 +6037,16 @@
       "status": "active",
       "supersededBy": null,
       "to": "law-of-separation-1911",
+      "type": "caused"
+    },
+    {
+      "aliases": [],
+      "confidence": "consensus",
+      "from": "revolt-14-may-1915",
+      "id": "revolt-14-may-1915--1915-portuguese-legislative-election--caused",
+      "status": "active",
+      "supersededBy": null,
+      "to": "1915-portuguese-legislative-election",
       "type": "caused"
     },
     {
@@ -6314,7 +6407,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "1910 Portuguese legislative election",
       "weight": 0,
@@ -6330,7 +6423,16 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "partido-republicano-portugues",
+          "role": "won 229 of 234 seats"
+        },
+        {
+          "actor": "first-portuguese-republic",
+          "role": "the regime being constituted"
+        }
+      ],
       "aliases": [],
       "id": "1911-portuguese-constituent-national-assembly-election",
       "place": null,
@@ -6338,9 +6440,10 @@
       "regionMethod": "override",
       "status": "active",
       "supersededBy": null,
-      "title": "1911 Portuguese Constituent National Assembly election",
-      "weight": 0,
+      "title": "1911 Constituent Assembly election",
+      "weight": 4,
       "when": {
+        "calendar": "gregorian",
         "date": "1911-05-28",
         "end": 1911,
         "start": 1911
@@ -6352,7 +6455,16 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "manuel-de-arriaga",
+          "role": "elected first president"
+        },
+        {
+          "actor": "first-portuguese-republic",
+          "role": "the regime whose office was filled"
+        }
+      ],
       "aliases": [],
       "id": "1911-portuguese-presidential-election",
       "place": null,
@@ -6361,8 +6473,9 @@
       "status": "active",
       "supersededBy": null,
       "title": "1911 Portuguese presidential election",
-      "weight": 0,
+      "weight": 4,
       "when": {
+        "calendar": "gregorian",
         "date": "1911-08-24",
         "end": 1911,
         "start": 1911
@@ -6380,7 +6493,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "1913 Portuguese legislative election",
       "weight": 0,
@@ -6396,7 +6509,20 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "partido-democratico",
+          "role": "won 106 of 163 seats in the Chamber"
+        },
+        {
+          "actor": "afonso-costa",
+          "role": "leader of the winning party"
+        },
+        {
+          "actor": "first-portuguese-republic",
+          "role": "the regime restored by the May rising"
+        }
+      ],
       "aliases": [],
       "id": "1915-portuguese-legislative-election",
       "place": null,
@@ -6405,8 +6531,9 @@
       "status": "active",
       "supersededBy": null,
       "title": "1915 Portuguese legislative election",
-      "weight": 0,
+      "weight": 5,
       "when": {
+        "calendar": "gregorian",
         "date": "1915-06-13",
         "end": 1915,
         "start": 1915
@@ -6424,7 +6551,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "1918 Portuguese general election",
       "weight": 0,
@@ -6446,7 +6573,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "1918 Portuguese presidential election",
       "weight": 0,
@@ -6468,7 +6595,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "1919 Portuguese legislative election",
       "weight": 0,
@@ -6490,7 +6617,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "1919 Portuguese presidential election",
       "weight": 0,
@@ -10115,7 +10242,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "August 1915 Portuguese presidential election",
       "weight": 0,
@@ -10557,7 +10684,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Constitution of 1911",
-      "weight": 5,
+      "weight": 7,
       "when": {
         "calendar": "gregorian",
         "date": "1911-08-21",
@@ -11549,7 +11676,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Germany declares war on Portugal",
-      "weight": 4,
+      "weight": 5,
       "when": {
         "calendar": "gregorian",
         "date": "1916-03-09",
@@ -12364,7 +12491,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "May 1915 Portuguese presidential election",
       "weight": 0,
@@ -12770,7 +12897,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Pimenta de Castro's authoritarian government",
-      "weight": 5,
+      "weight": 6,
       "when": {
         "calendar": "gregorian",
         "date": "1915-01",
@@ -13086,7 +13213,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Proclamation of the Republic",
-      "weight": 6,
+      "weight": 7,
       "when": {
         "calendar": "gregorian",
         "date": "1910-10-05",
@@ -13140,7 +13267,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "The revolt of 14 May restores the Democrats",
-      "weight": 5,
+      "weight": 6,
       "when": {
         "calendar": "gregorian",
         "date": "1915-05-14",
