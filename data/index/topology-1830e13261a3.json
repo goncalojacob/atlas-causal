@@ -3548,6 +3548,11 @@
       "when": {
         "end": null,
         "start": 1964
+      },
+      "wikidata": "Q57615",
+      "wikipedia": {
+        "en": "Pedro Passos Coelho",
+        "pt": "Pedro Passos Coelho"
       }
     },
     {
@@ -3609,6 +3614,11 @@
       "when": {
         "end": 1918,
         "start": 1846
+      },
+      "wikidata": "Q305493",
+      "wikipedia": {
+        "en": "Joaquim Pimenta de Castro",
+        "pt": "Joaquim Pimenta de Castro"
       }
     },
     {
@@ -3674,6 +3684,11 @@
       "when": {
         "end": null,
         "start": 1974
+      },
+      "wikidata": "Q595575",
+      "wikipedia": {
+        "en": "Social Democratic Party (Portugal)",
+        "pt": "Partido Social Democrata (Portugal)"
       }
     },
     {
@@ -3755,6 +3770,11 @@
       "when": {
         "end": null,
         "start": 1935
+      },
+      "wikidata": "Q60114",
+      "wikipedia": {
+        "en": "António Ramalho Eanes",
+        "pt": "António Ramalho Eanes"
       }
     },
     {
@@ -3772,6 +3792,11 @@
       "when": {
         "end": null,
         "start": 1947
+      },
+      "wikidata": "Q668",
+      "wikipedia": {
+        "en": "India",
+        "pt": "Índia"
       }
     },
     {
@@ -3803,6 +3828,11 @@
       "when": {
         "end": null,
         "start": 1944
+      },
+      "wikidata": "Q15267277",
+      "wikipedia": {
+        "en": "Ricardo Salgado",
+        "pt": "Ricardo Salgado"
       }
     },
     {
@@ -3894,6 +3924,11 @@
       "when": {
         "end": 1970,
         "start": 1889
+      },
+      "wikidata": "Q151394",
+      "wikipedia": {
+        "en": "António de Oliveira Salazar",
+        "pt": "António de Oliveira Salazar"
       }
     },
     {
@@ -3985,6 +4020,11 @@
       "when": {
         "end": 1918,
         "start": 1872
+      },
+      "wikidata": "Q356691",
+      "wikipedia": {
+        "en": "Sidónio Pais",
+        "pt": "Sidónio Pais"
       }
     },
     {
@@ -4603,6 +4643,11 @@
       "when": {
         "end": null,
         "start": 1966
+      },
+      "wikidata": "Q28699",
+      "wikipedia": {
+        "en": "UNITA",
+        "pt": "União Nacional para a Independência Total de Angola"
       }
     },
     {
@@ -4651,6 +4696,11 @@
       "when": {
         "end": null,
         "start": 1945
+      },
+      "wikidata": "Q1065",
+      "wikipedia": {
+        "en": "United Nations",
+        "pt": "Organização das Nações Unidas"
       }
     },
     {
@@ -4712,6 +4762,11 @@
       "when": {
         "end": 2005,
         "start": 1921
+      },
+      "wikidata": "Q712532",
+      "wikipedia": {
+        "en": "Vasco Gonçalves",
+        "pt": "Vasco Gonçalves"
       }
     },
     {
@@ -8429,7 +8484,8 @@
         "lat": 41.55,
         "lon": -8.42,
         "precision": "city"
-      }
+      },
+      "wikidata": "Q3344946"
     },
     {
       "aliases": [],
@@ -8484,6 +8540,11 @@
         "lat": 9.51,
         "lon": -13.68,
         "precision": "city"
+      },
+      "wikidata": "Q3733",
+      "wikipedia": {
+        "en": "Conakry",
+        "pt": "Conacri"
       }
     },
     {
@@ -8502,6 +8563,11 @@
         "lat": -8.56,
         "lon": 125.57,
         "precision": "city"
+      },
+      "wikidata": "Q9310",
+      "wikipedia": {
+        "en": "Dili",
+        "pt": "Díli"
       }
     },
     {

@@ -27,6 +27,12 @@ an id appears once however many times the tool has run.
 - [`Q57350843`](https://www.wikidata.org/wiki/Q57350843) **November 25, 2019** — date — 2019 — Q47150325, Q3020, Q51203179, Q51156592
   - none of its classes (Q47150325, Q3020, Q51203179, Q51156592) is in data/imports/wikidata-seeds.json → classes
 
+## alvor
+
+`place` · searched for **Alvor, Algarve**
+
+nothing on Wikidata is called "Alvor, Algarve".
+
 ## alvor-agreement-1975
 
 `event` · searched for **The Alvor Agreement**
@@ -70,11 +76,43 @@ nothing on Wikidata is called "Anglo-Portuguese agreement on Azores bases".
 - [`Q76947343`](https://www.wikidata.org/wiki/Q76947343) **Edifício do Banco de Portugal em Braga** — building in Portugal — no date — Q41176, Q210272
   - none of its classes (Q41176, Q210272) is in data/imports/wikidata-seeds.json → classes
 
+## belem
+
+`place` · searched for **Belém, Lisbon**
+
+nothing on Wikidata is called "Belém, Lisbon".
+
+## berlin
+
+`place` · searched for **Berlin**
+
+10 item(s) were read and each failed a test.
+
+- [`Q64`](https://www.wikidata.org/wiki/Q64) **Berlin** — federated state, capital and largest city of Germany — 1244– — Q1901835, Q200250, Q1307779, Q15974307, Q42744322, Q133442, Q114401982, Q51929311, Q1221156, Q257391, Q707813, Q67123843, Q67123843
+  - none of its classes (Q1901835, Q200250, Q1307779, Q15974307, Q42744322, Q133442, Q114401982, Q51929311, Q1221156, Q257391, Q707813, Q67123843, Q67123843) is in data/imports/wikidata-seeds.json → classes
+- [`Q2660845`](https://www.wikidata.org/wiki/Q2660845) **Berlin** — family name — no date — Q101352
+  - none of its classes (Q101352) is in data/imports/wikidata-seeds.json → classes
+- [`Q821199`](https://www.wikidata.org/wiki/Q821199) **Berlin** — town in Hartford County, Connecticut, United States — 1785– — Q15127012
+  - none of its classes (Q15127012) is in data/imports/wikidata-seeds.json → classes
+
 ## bes-resolution-2014
 
 `event` · searched for **Resolution of Banco Espírito Santo**
 
 nothing on Wikidata is called "Resolution of Banco Espírito Santo".
+
+## boe
+
+`place` · searched for **Boé**
+
+10 item(s) were read and each failed a test.
+
+- [`Q627217`](https://www.wikidata.org/wiki/Q627217) **Boé** — commune in Lot-et-Garonne, France — no date — Q484170
+  - none of its classes (Q484170) is in data/imports/wikidata-seeds.json → classes
+- [`Q66`](https://www.wikidata.org/wiki/Q66) **Boeing** — American global aerospace and defense corporation — 1916– — Q891723, Q936518, Q2995256
+  - none of its classes (Q891723, Q936518, Q2995256) is in data/imports/wikidata-seeds.json → classes
+- [`Q16858108`](https://www.wikidata.org/wiki/Q16858108) **Boe** — family name — no date — Q101352
+  - none of its classes (Q101352) is in data/imports/wikidata-seeds.json → classes
 
 ## botelho-moniz-coup-attempt-1961
 
@@ -118,6 +156,21 @@ nothing on Wikidata is called "Marcelo Caetano succeeds Salazar".
 `event` · searched for **Cavaco Silva's absolute majority**
 
 nothing on Wikidata is called "Cavaco Silva's absolute majority".
+
+## central-portugal
+
+`place` · searched for **Central Portugal**
+
+1 item(s) were read and each failed a test.
+
+- [`Q27569`](https://www.wikidata.org/wiki/Q27569) **Centro region** — NUTS II designated region of Portugal — no date — Q3455656
+  - none of its classes (Q3455656) is in data/imports/wikidata-seeds.json → classes
+
+## chai
+
+`place` · searched for **Chai, Cabo Delgado**
+
+nothing on Wikidata is called "Chai, Cabo Delgado".
 
 ## constituent-assembly-election-1975
 
@@ -304,6 +357,12 @@ nothing on Wikidata is called "Exhibition of the Portuguese World".
 
 nothing on Wikidata is called "Fifty years of 25 April".
 
+## flanders
+
+`place` · searched for **Flanders, near Laventie**
+
+nothing on Wikidata is called "Flanders, near Laventie".
+
 ## fnla
 
 `actor` · 1962– · searched for **FNLA**
@@ -383,6 +442,12 @@ nothing on Wikidata is called "First stabilisation agreement with the IMF".
 `event` · searched for **Second stabilisation agreement with the IMF**
 
 nothing on Wikidata is called "Second stabilisation agreement with the IMF".
+
+## lajes
+
+`place` · searched for **Lajes, Terceira**
+
+nothing on Wikidata is called "Lajes, Terceira".
 
 ## law-of-separation-1911
 
@@ -577,6 +642,32 @@ nothing on Wikidata is called "Portugal supports the Nationalists in the Spanish
 
 nothing on Wikidata is called "Publication of Portugal e o Futuro".
 
+## portuguese-expeditionary-corps
+
+`actor` · 1916–1919 · searched for **Portuguese Expeditionary Corps**
+
+3 item(s) were read and each failed a test.
+
+- [`Q1634975`](https://www.wikidata.org/wiki/Q1634975) **Portuguese Expeditionary Corps** — contingente militar português que participou na I Guerra Mundial — 1917–1918 — Q176799
+  - none of its classes (Q176799) is in data/imports/wikidata-seeds.json → classes
+- [`Q16057505`](https://www.wikidata.org/wiki/Q16057505) **2nd Division** — Portuguese Expeditionary Corps division — no date — Q176799
+  - none of its classes (Q176799) is in data/imports/wikidata-seeds.json → classes
+- [`Q16057168`](https://www.wikidata.org/wiki/Q16057168) **1st Division** — Portuguese Expeditionary Corps infantry division — no date — Q176799
+  - none of its classes (Q176799) is in data/imports/wikidata-seeds.json → classes
+
+## pvde-pide-dgs
+
+`actor` · 1933–1974 · searched for **PIDE**
+
+10 item(s) were read and each failed a test.
+
+- [`Q958917`](https://www.wikidata.org/wiki/Q958917) **PIDE** — Portuguese secret police that existed during the Estado Novo regime of António de Oliveira Salazar — 1945–1969 — Q214183, Q2101516
+  - none of its classes (Q214183, Q2101516) is in data/imports/wikidata-seeds.json → classes
+- [`Q4815005`](https://www.wikidata.org/wiki/Q4815005) **pide** — Turkish oven-baked flatbread — no date — Q2095
+  - none of its classes (Q2095) is in data/imports/wikidata-seeds.json → classes
+- [`Q96741829`](https://www.wikidata.org/wiki/Q96741829) **pide** — Turkish flatbread dish — no date — Q2095
+  - none of its classes (Q2095) is in data/imports/wikidata-seeds.json → classes
+
 ## republic-proclaimed-1910
 
 `event` · 1910 · searched for **Proclamation of the Republic**
@@ -640,6 +731,15 @@ nothing on Wikidata is called "Mário Soares elected president".
 `event` · searched for **Spínola resigns the presidency**
 
 nothing on Wikidata is called "Spínola resigns the presidency".
+
+## third-portuguese-republic
+
+`actor` · 1974– · searched for **Third Portuguese Republic**
+
+1 item(s) were read and each failed a test.
+
+- [`Q1259200`](https://www.wikidata.org/wiki/Q1259200) **Third Portuguese Republic** — period in the history of Portugal since the Carnation Revolution on 25 April 1974 — 1974– — Q7270
+  - none of its classes (Q7270) is in data/imports/wikidata-seeds.json → classes
 
 ## troika-bailout-2011
 
