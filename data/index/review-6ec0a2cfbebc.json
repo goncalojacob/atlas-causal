@@ -6037,10 +6037,28 @@
     }
   ],
   "schema": 1,
-  "total": 570,
+  "total": 574,
   "warnings": [
     {
+      "id": "1911-portuguese-presidential-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "august-1915-portuguese-presidential-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
       "id": "iberian-blackout-2025",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "may-1915-portuguese-presidential-election",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"
@@ -6052,13 +6070,13 @@
       "rule": "place-unused"
     },
     {
-      "id": "uefa-2016-final",
-      "kind": "source",
-      "message": "source is cited by nothing under validation",
-      "rule": "no-citers"
+      "id": "treaty-of-windsor",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
     },
     {
-      "id": "wikidata",
+      "id": "uefa-2016-final",
       "kind": "source",
       "message": "source is cited by nothing under validation",
       "rule": "no-citers"

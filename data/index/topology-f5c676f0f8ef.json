@@ -5949,6 +5949,28 @@
   ],
   "events": [
     {
+      "actors": [],
+      "aliases": [],
+      "id": "1911-portuguese-presidential-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1911 Portuguese presidential election",
+      "weight": 0,
+      "when": {
+        "date": "1911-08-24",
+        "end": 1911,
+        "start": 1911
+      },
+      "wikidata": "Q97516175",
+      "wikipedia": {
+        "en": "1911 Portuguese presidential election",
+        "pt": "Eleições presidenciais portuguesas de 1911"
+      }
+    },
+    {
       "actors": [
         {
           "actor": "ramalho-eanes",
@@ -6082,6 +6104,28 @@
         "date": "1961-02-04",
         "end": 1961,
         "start": 1961
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "august-1915-portuguese-presidential-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "August 1915 Portuguese presidential election",
+      "weight": 0,
+      "when": {
+        "date": "1915-08-06",
+        "end": 1915,
+        "start": 1915
+      },
+      "wikidata": "Q97516196",
+      "wikipedia": {
+        "en": "August 1915 Portuguese presidential election",
+        "pt": "Eleições presidenciais portuguesas de Agosto de 1915"
       }
     },
     {
@@ -7684,6 +7728,28 @@
       }
     },
     {
+      "actors": [],
+      "aliases": [],
+      "id": "may-1915-portuguese-presidential-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "May 1915 Portuguese presidential election",
+      "weight": 0,
+      "when": {
+        "date": "1915-05-29",
+        "end": 1915,
+        "start": 1915
+      },
+      "wikidata": "Q97516248",
+      "wikipedia": {
+        "en": "May 1915 Portuguese presidential election",
+        "pt": "Eleições presidenciais portuguesas de Maio de 1915"
+      }
+    },
+    {
       "actors": [
         {
           "actor": "paiva-couceiro",
@@ -8257,6 +8323,26 @@
         "date": "1974-09-30",
         "end": 1974,
         "start": 1974
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "treaty-of-windsor",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Treaty of Windsor",
+      "weight": 0,
+      "when": {
+        "end": 1899,
+        "start": 1899
+      },
+      "wikidata": "Q2518953",
+      "wikipedia": {
+        "en": "Treaty of Windsor (1899)"
       }
     },
     {

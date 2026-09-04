@@ -9530,8 +9530,33 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 0,
-      "citations": [],
+      "citationCount": 4,
+      "citations": [
+        {
+          "dissent": false,
+          "id": "1911-portuguese-presidential-election",
+          "kind": "event",
+          "locator": "Q97516175"
+        },
+        {
+          "dissent": false,
+          "id": "august-1915-portuguese-presidential-election",
+          "kind": "event",
+          "locator": "Q97516196"
+        },
+        {
+          "dissent": false,
+          "id": "may-1915-portuguese-presidential-election",
+          "kind": "event",
+          "locator": "Q97516248"
+        },
+        {
+          "dissent": false,
+          "id": "treaty-of-windsor",
+          "kind": "event",
+          "locator": "Q2518953"
+        }
+      ],
       "created": "2026-09-04",
       "creators": [
         "Wikidata contributors"
