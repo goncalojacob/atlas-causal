@@ -6,7 +6,21 @@ session ends. `ARCHITECTURE.md` is the target; this file is the position.
 
 ## Last updated
 
-2026-09-04, after M13 (`docs/m13-brief.md`): the test dataset can now be
+2026-09-04, after M14 (`docs/m14-brief.md`): two ideas the interface had been
+confusing with others were separated and given a file each. **A lane is a
+grouping** — `none`, `actor`, `place`, `region` — and `src/lanes.js` is the
+one file that decides what a lane is, read by the timeline and by the graph
+layout alike. The **default is no grouping**: the timeline packs the 80
+events into 10 unlabelled rows with nothing overlapping, and the graph drops
+its bands. An event is drawn in **exactly one** lane, by the heaviest of its
+actors among the lanes shown, and the event card states the rule. **A lens**
+(`?focus=actor:salazar`) removes everything else from all three views, where
+a selection dims; it is offered on the actor, place and source cards, said in
+the header, and does not narrow the search — what falls outside is listed and
+marked. The picker beside Map | Graph is a select, a filter box and a list of
+lanes with checkboxes and up/down, keyboard first.
+
+Before that, 2026-09-04, after M13 (`docs/m13-brief.md`): the test dataset can now be
 read. **`review.html`** lists every record still carrying the assistant-draft
 marker — 314 of them, the number the validator prints — lets a person edit it
 in the contribution form's own fields, and **signs** it: the draft marker is
@@ -19,11 +33,12 @@ correction bundle for the issue path, and the public site gains no backend.
 
 ## Phase
 
-**M0 to M13 built, plus the map usability work, on branch `m0`, pull
+**M0 to M14 built, plus the map usability work, on branch `m0`, pull
 request #1 open against `main`.** M13 was the last milestone in the run
-protocol's order: nothing is queued behind it. M8 changed no structure and
-wrote no revision, as its brief allows.
-`ARCHITECTURE.md` **revision 13** is the specification; its opening note says what changed and why (revision 4
+protocol's order and M14 ran after it, from `docs/m14-brief.md` on the
+`brief-m14` side branch; nothing is queued behind it. M8 changed no structure
+and wrote no revision, as its brief allows.
+`ARCHITECTURE.md` **revision 14** is the specification; its opening note says what changed and why (revision 4
 added the `actor` kind; revision 5 added `cluster.js`, `weight` in the
 index and `prominence` as a reserved override; revision 6 added the
 `presence` kind, the CC BY-NC-SA licence and its one exception, and moved
@@ -41,7 +56,10 @@ the relations on the actor card; revision 12 added the `narrative` kind, rule
 selection, the chain and the window derived from them; revision 13 added the
 `review` block to the envelope, the review index, `review.html`, and the two
 amendments the dashboard needed — the local write server that is never
-deployed, and the one path where `authors` is written without the Action).
+deployed, and the one path where `authors` is written without the Action;
+revision 14 made a lane a grouping with four values and no grouping as the
+default, added `lanes.js`, `lens.js` and `grouping.js`, and put `focus`,
+`group` and `lanes` in the state).
 The M5 brief asks for revision 5; the map work had already taken that
 number.
 
@@ -1293,6 +1311,52 @@ object. Every later card gets a file.
     that was cut off, plus a push inside the last ninety minutes, is what the
     hourly check reads as `ACTIVE` — but the window between the first commit
     and the claim was unprotected.
+87. **Reading a narrative suspends the lens.** The brief does not say what a
+    lens should do while a narrative is open, and the two answers are not
+    equal: a walk whose steps had been removed by a filter left on from
+    earlier would be the atlas hiding the thing it was asked to show. So
+    `lensSet()` returns null while `state.narrative` is set. `group` and
+    `lanes` are *not* suspended — the lanes only arrange what is drawn — but
+    neither is written to the URL in reading mode, which was already true of
+    everything except the narrative and the step.
+88. **The packing has a cap of twenty rows**, past which rows are shared and
+    the existing stacking draws the overlap as one bar with a count. The
+    brief says "as many rows as needed"; on this dataset ten are needed at
+    960px and thirteen at 700px, so the cap is never reached. It exists
+    because "as many as needed" is unbounded in principle and a timeline
+    forty rows tall would be a page, not a picture.
+89. **A packed row is shorter than a named lane** — 22px against 34px —
+    because it carries no label, and `.timeline-area` gained
+    `max-height: 45vh` and a vertical scrollbar. Ten rows at a lane's height
+    would have pushed the map off the screen. The `ResizeObserver` now
+    ignores anything but a change of width, since the drawing's own height
+    feeds back into the container's.
+90. **The graph's bands give up height past five lanes**, down to a floor of
+    54px, rather than drawing a picture thirteen bands tall. The brief is
+    silent on it; five regions were the only case before M14 and twelve
+    actor lanes at a region's height would be four screens.
+91. **A source's lens includes its dissenting citations.** M10 keeps
+    `dissent` apart so a book arguing against a link is never listed as
+    evidence for it; the lens is not a list of evidence but the question
+    "what does this source touch", and an edge that cites a book to
+    disagree with it is still an edge that rests on the book. The source
+    card's separation is untouched.
+92. **The picker and the lens badge are one module**, `grouping.js`. The
+    brief asks for a picker; the badge is the header's account of the lens,
+    it is four lines, and it belongs beside the control that is its
+    neighbour on screen. The "show only these" control reaches the cards
+    through `ctx.lensControl(kind, id)` rather than by changing three card
+    signatures the tests already call.
+93. **`layoutGraph` returns `lane` where it returned `region`.** The bands
+    are lanes now and the field said something that was no longer true.
+    Nothing outside the layout and its test read it.
+94. **`lanes.js` exports more than the three functions the brief names.**
+    `availableLanes` is what the picker draws and what the automatic twelve
+    are taken from — one list, so the picker cannot offer an order the atlas
+    does not use; `laneExplain` is the rule in words for the event card;
+    `barBox` is the bar geometry, exported so the packing and the drawing
+    cannot disagree by a pixel; `rowLanes` is the packing as lanes, so the
+    timeline draws one kind of thing and not two.
 
 ## Dates to verify
 
@@ -1406,6 +1470,40 @@ not membership dates at all (deviation 73). The two alliances are
   `region` precision, not a village.
 - `european-economic-community` is closed at 1993 (Maastricht). Whether
   the record should instead be open and renamed is an editorial choice.
+
+Verified in headless Chromium for **M14**, against the real dataset — thirty
+assertions, every one passing, and no console error on any page:
+
+- **The default**: the timeline draws all **80** events as **10** unlabelled
+  packed rows at 1280px, with **0** overlapping bars; the graph draws **80**
+  nodes and **no** bands.
+- `?group=actor`: **13** lanes, the twelfth followed by **Other**, counts
+  21, 16, 14, 11, 9, 8, 8, 7, 7, 6, 6, 6 — ordered, and every one of the 80
+  events still drawn once.
+- `?group=actor&lanes=salazar,paigc`: exactly **3** lanes, in the order
+  given, Other last. `?group=place`: **13**. `?group=region`: the same
+  **5** — Europe, Africa, Asia, Americas, Oceania — as before M14.
+- `?focus=actor:salazar` draws **14** events on the timeline, **14** on the
+  map and **14** in the graph, and the graph's node ids are exactly
+  `eventsByActor.get('salazar')`. `?focus=place:lisbon` draws **54**, which
+  is `eventsByPlace.get('lisbon')`.
+- **The picker round-trips**: choosing a grouping writes `?group=actor`;
+  unticking a lane writes the eleven that are left as `lanes=…`; ArrowUp on
+  a row moves that lane in the list and in the drawing; the resulting URL
+  opened cold gives the same lanes in the same order; "back to the automatic
+  twelve" returns to `?group=actor` and thirteen lanes.
+- **The event card states its lane**: "Drawn in the Estado Novo lane
+  (heaviest of its actors). Also involves Armed Forces Movement, Otelo
+  Saraiva de Carvalho, Marcelo Caetano, António de Spínola, Third Portuguese
+  Republic." — and says it is in a packed row when there is no grouping.
+- **The lens from the card**: "show only these" on Salazar's card writes
+  `?focus=actor:salazar`, the header badge names him, the timeline follows.
+  Searching "estado" inside that lens still lists PIDE and marks it
+  **outside the lens**.
+- `?fixtures=1`, the narrative at step 3, `about.html`, `sources.html`,
+  `contribute.html` and `review.html` all load clean; a narrative opened
+  with a lens on draws all 80 events, because reading suspends the lens
+  (deviation 87).
 
 Verified in headless Chromium for **M12**, against the real dataset, the
 fixtures and the form — every assertion passing:
@@ -1587,7 +1685,9 @@ fixtures and the three static pages — sixteen assertions, all passing:
   (and a copy under `-mnt-c-Users-gonca` pointing here).
 - Build briefs: `docs/m0-brief.md`, `docs/m2-brief.md`, `docs/m4-brief.md`,
   `docs/map-brief.md`, `docs/m5-brief.md`, `docs/m6-brief.md` and the M7–M13
-  briefs beside them; the adversarial review is `docs/review-2026-09-01.md`
+  briefs beside them — `docs/m14-brief.md` arrived on the `brief-m14` side
+  branch, so that writing it did not disturb the running chain, and was
+  copied onto `m0` by the run that built it; the adversarial review is `docs/review-2026-09-01.md`
   and the plan review `docs/review-2026-09-03-plan.md`. The run protocol the
   overnight runs follow is `docs/run-protocol.md`.
 - **Which CShapes entities could be split into a colony and a successor
