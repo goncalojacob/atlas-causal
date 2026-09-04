@@ -357,3 +357,20 @@ unclassified class Q7232773: add it to data/imports/wikidata-seeds.json → clas
 unclassified class Q10271596: add it to data/imports/wikidata-seeds.json → classes or the 3 item(s) in it stay refused
 unclassified class Q1128324: add it to data/imports/wikidata-seeds.json → classes or the 2 item(s) in it stay refused
 0 created, 0 enriched, 25 refused, 0 ambiguous
+import: 7 item(s) this batch, 0 left after it, 2 call(s) spent
+refused Q86458103: none of its classes (Q12184) is in data/imports/wikidata-seeds.json → classes
+refused Q113394119: none of its classes (Q43059, Q216227) is in data/imports/wikidata-seeds.json → classes
+refused Q115460814: none of its classes (Q132821) is in data/imports/wikidata-seeds.json → classes
+refused Q115707122: none of its classes (Q8068) is in data/imports/wikidata-seeds.json → classes
+refused Q129462983: none of its classes (Q169950) is in data/imports/wikidata-seeds.json → classes
+refused Q130324056: none of its classes (Q107434304) is in data/imports/wikidata-seeds.json → classes
+refused Q130648555: none of its classes (Q111986723) is in data/imports/wikidata-seeds.json → classes
+unclassified class Q12184: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q43059: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q216227: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q132821: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q8068: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q169950: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q107434304: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q111986723: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+0 created, 0 enriched, 7 refused, 0 ambiguous
