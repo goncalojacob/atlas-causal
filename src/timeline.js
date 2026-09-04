@@ -1,7 +1,12 @@
-// One lane per region, events as bars, and the window of time drawn over
-// them as a band with a handle at each end. The scale is injected
-// (timeline-scale.js) so deep time can swap it. Knows the lane list only
-// through the manifest it is given.
+// Lanes, events as bars, and the window of time drawn over them as a band
+// with a handle at each end. The scale is injected (timeline-scale.js) so
+// deep time can swap it.
+//
+// What a lane *is* is not decided here any more (M14): lanes.js is asked,
+// and the graph view asks the same file, so the two pictures cannot disagree
+// about which lane an event belongs in. Without a grouping — the default —
+// there are no named lanes at all: the bars are packed into as many
+// unlabelled rows as it takes for none of them to overlap at this width.
 //
 // The lanes stay on the whole extent of the data whatever the window is.
 // Zooming them to the window was tried on paper and rejected: a handle at
@@ -20,12 +25,25 @@
 import { svg, svgTitle } from './util/dom.js';
 import { createLinearScale } from './timeline-scale.js';
 import { clusterPoints } from './cluster.js';
-import { extent, fromAstronomical, formatYear } from './util/dates.js';
+import { fromAstronomical, formatYear } from './util/dates.js';
 import { resolveWindow, overlaps, windowAt, decadeOf } from './util/window.js';
 import { horizonBand, horizonSet } from './horizon.js';
 import { narrativeSet } from './narrative.js';
+import { lensSet } from './lens.js';
+import { lanesFor, rowLanes, laneOf, barBox } from './lanes.js';
 
 const LANE_HEIGHT = 34;
+// A packed row carries no label, so it needs only the height of a bar and
+// the air around it; ten rows of a named lane's height would push the map
+// off the screen.
+const ROW_HEIGHT = 22;
+// Past this the rows share and stacking draws the overlap as one bar with a
+// count, which is what the timeline did before packing existed.
+const MAX_ROWS = 20;
+// The gap the packing leaves between two bars in one row. Wider than the
+// hairline that would technically not overlap: two bars touching read as one
+// long bar.
+const ROW_GAP = 4;
 const LABEL_WIDTH = 120;
 // Room above the lanes for the tick labels and, over them, the one line the
 // band says about the borders it is showing.
@@ -42,8 +60,12 @@ export function createTimeline(container, { atlas, state, createScale = createLi
   const root = svg('svg', { class: 'timeline', role: 'group', 'aria-label': 'Timeline and the window of time' });
   container.appendChild(root);
 
-  const lanes = atlas.regions;
-  const height = AXIS_HEIGHT + Math.max(lanes.length, 1) * LANE_HEIGHT;
+  // The lanes, their height and the height of the drawing are all decided by
+  // the grouping, and the grouping changes under the reader: they are read
+  // at every render and not once at build.
+  let lanes = [];
+  let laneHeight = LANE_HEIGHT;
+  let height = AXIS_HEIGHT + LANE_HEIGHT;
 
   const domain = atlas.extent
     ? [atlas.extent.min - (atlas.extent.max - atlas.extent.min) * PADDING - 1, atlas.extent.max + (atlas.extent.max - atlas.extent.min) * PADDING + 1]
@@ -54,9 +76,13 @@ export function createTimeline(container, { atlas, state, createScale = createLi
   // What the last render drew, so a click on a stack can be answered with the
   // cluster itself rather than an id the caller would have to look up.
   let drawn = new Map();
+  // The width and the scale first, because the packing needs the scale to
+  // know what overlaps; the height only once the lanes are known.
   const measure = () => {
     width = Math.max(container.clientWidth || 960, 320);
     scale = createScale({ domain, range: [LABEL_WIDTH, width - 12] });
+  };
+  const resize = () => {
     root.setAttribute('viewBox', `0 0 ${width} ${height}`);
     root.setAttribute('width', width);
     root.setAttribute('height', height);
@@ -170,16 +196,19 @@ export function createTimeline(container, { atlas, state, createScale = createLi
 
   // --- drawing ------------------------------------------------------------
 
+  // The height of a bar and where it sits in its lane, from the lane's own
+  // height: a packed row is shorter than a named lane because it has no label
+  // to make room for.
+  const barHeight = () => Math.max(8, laneHeight - 16);
+  const barTop = (i) => AXIS_HEIGHT + i * laneHeight + (laneHeight - barHeight()) / 2;
+
   function laneBars(root_, lane, i, events, s, window, actorIds, narrativeIds, pathIds, reachable) {
-    const y = AXIS_HEIGHT + i * LANE_HEIGHT + 8;
-    const barHeight = LANE_HEIGHT - 16;
-    const geometry = (event) => {
-      const x = extent(event.when);
-      const x0 = scale.x(x.min);
-      const x1 = scale.x(x.max ?? domain[1]);
-      const w = Math.max(x1 - x0, 6);
-      return { x: x0 - (x1 - x0 < 6 ? 3 : 0), width: w, ongoing: x.max === null };
-    };
+    const y = barTop(i);
+    const height_ = barHeight();
+    // barBox is lanes.js's, and it is the geometry the packing itself used:
+    // a row packed on one geometry and drawn on another would overlap
+    // exactly where it promised not to.
+    const geometry = (event) => barBox(event, scale, { openEnd: domain[1] });
 
     const alone = [];
     const groups = { inside: [], outside: [] };
@@ -211,11 +240,11 @@ export function createTimeline(container, { atlas, state, createScale = createLi
         ? `${item.event.title} — and ${count} more here`
         : item.inside ? item.event.title : `${item.event.title} — outside the window`;
       const data = key === null ? { 'data-id': item.id } : { 'data-cluster': key };
-      const el = svg('rect', { x: item.x, y, width: item.width, height: barHeight, rx: 3, class: classes, ...data }, [svgTitle(title)]);
+      const el = svg('rect', { x: item.x, y, width: item.width, height: height_, rx: 3, class: classes, ...data }, [svgTitle(title)]);
       root_.appendChild(el);
       if (count) {
         const badge = svg('text', {
-          x: item.x + item.width + 3, y: y + barHeight / 2, class: `cluster-count ${item.inside ? '' : 'faded'}`.trim(),
+          x: item.x + item.width + 3, y: y + height_ / 2, class: `cluster-count ${item.inside ? '' : 'faded'}`.trim(),
           'dominant-baseline': 'middle', 'font-size': BADGE_SIZE, 'data-cluster': key,
         });
         badge.textContent = `+${count}`;
@@ -266,6 +295,10 @@ export function createTimeline(container, { atlas, state, createScale = createLi
     root.replaceChildren();
     drawn = new Map();
     const window = resolveWindow(s, atlas.extent);
+    // The lens removes rather than dims: an event outside it is not drawn
+    // faded, it is not drawn (lens.js).
+    const lens = lensSet(atlas, s);
+    const shown = lens ? atlas.activeEvents.filter((e) => lens.has(e.id)) : atlas.activeEvents;
     const pathIds = new Set(s.chain.flatMap((id) => {
       const edge = atlas.edges.get(id);
       return edge ? [edge.from, edge.to] : [];
@@ -284,11 +317,31 @@ export function createTimeline(container, { atlas, state, createScale = createLi
     // far out it is. Empty unless the reader chose a year (horizon.js).
     const reachable = horizonSet(atlas, s);
 
+    // The lanes, from the one file that decides what a lane is. Packing keeps
+    // the walked path and the events of one place together where a row has
+    // the room, so a reader following a chain finds its steps near each
+    // other instead of scattered down the rows.
+    if (s.group === 'none') {
+      lanes = rowLanes(shown, scale, width, {
+        openEnd: domain[1],
+        gap: ROW_GAP,
+        maxRows: MAX_ROWS,
+        affinity: (event) => (pathIds.has(event.id) ? 'chain' : event.place ?? null),
+      });
+      laneHeight = ROW_HEIGHT;
+    } else {
+      lanes = lanesFor(s.group, atlas, window, lens, s.lanes);
+      laneHeight = LANE_HEIGHT;
+    }
+    height = AXIS_HEIGHT + Math.max(lanes.length, 1) * laneHeight;
+    resize();
+
     lanes.forEach((lane, i) => {
-      const y = AXIS_HEIGHT + i * LANE_HEIGHT;
-      root.appendChild(svg('rect', { x: 0, y, width, height: LANE_HEIGHT, class: `lane ${i % 2 ? 'odd' : 'even'}` }));
-      const label = svg('text', { x: 10, y: y + LANE_HEIGHT / 2, class: 'lane-label', 'dominant-baseline': 'middle' });
-      label.textContent = lane.label;
+      const y = AXIS_HEIGHT + i * laneHeight;
+      root.appendChild(svg('rect', { x: 0, y, width, height: laneHeight, class: `lane ${i % 2 ? 'odd' : 'even'}` }));
+      if (!lane.label) return;
+      const label = svg('text', { x: 10, y: y + laneHeight / 2, class: `lane-label ${lane.other ? 'other' : ''}`.trim(), 'dominant-baseline': 'middle' }, [svgTitle(lane.label)]);
+      label.textContent = lane.label.length > 16 ? `${lane.label.slice(0, 15).trimEnd()}…` : lane.label;
       root.appendChild(label);
     });
 
@@ -305,8 +358,9 @@ export function createTimeline(container, { atlas, state, createScale = createLi
     if (window) root.appendChild(bandShade(window));
 
     const byLane = new Map(lanes.map((lane) => [lane.id, []]));
-    for (const event of atlas.activeEvents) {
-      if (byLane.has(event.region)) byLane.get(event.region).push(event);
+    for (const event of shown) {
+      const lane = laneOf(event, lanes);
+      if (lane) byLane.get(lane.id).push(event);
     }
     const deferred = [];
     lanes.forEach((lane, i) => {
@@ -315,7 +369,7 @@ export function createTimeline(container, { atlas, state, createScale = createLi
       }
     });
     for (const { item, i } of deferred) {
-      const y = AXIS_HEIGHT + i * LANE_HEIGHT + 8;
+      const y = barTop(i);
       const classes = ['bar',
         item.ongoing ? 'ongoing' : '',
         item.inside ? '' : 'faded',
@@ -325,9 +379,9 @@ export function createTimeline(container, { atlas, state, createScale = createLi
         item.onPath ? 'on-path' : '',
         item.selected ? 'selected' : '',
       ].filter(Boolean).join(' ');
-      root.appendChild(svg('rect', { x: item.x, y, width: item.width, height: LANE_HEIGHT - 16, rx: 3, class: classes, 'data-id': item.id }, [svgTitle(item.event.title)]));
+      root.appendChild(svg('rect', { x: item.x, y, width: item.width, height: barHeight(), rx: 3, class: classes, 'data-id': item.id }, [svgTitle(item.event.title)]));
       if (item.selected || item.onPath) {
-        const text = svg('text', { x: item.x + item.width + 4, y: y + (LANE_HEIGHT - 16) / 2, class: `bar-label ${item.selected ? 'selected' : ''}`, 'dominant-baseline': 'middle' });
+        const text = svg('text', { x: item.x + item.width + 4, y: y + barHeight() / 2, class: `bar-label ${item.selected ? 'selected' : ''}`, 'dominant-baseline': 'middle' });
         text.textContent = item.event.title;
         root.appendChild(text);
       }
@@ -384,8 +438,18 @@ export function createTimeline(container, { atlas, state, createScale = createLi
     return out;
   }
 
+  // Only a change of width is worth redrawing for. The packed rows make the
+  // drawing taller, which makes the container taller, which the observer
+  // would report as a resize: without this guard a scrollbar appearing could
+  // set the two of them chasing each other.
   if (typeof ResizeObserver !== 'undefined') {
-    new ResizeObserver(() => render(state.get())).observe(container);
+    let lastWidth = -1;
+    new ResizeObserver(() => {
+      const now = container.clientWidth;
+      if (now === lastWidth) return;
+      lastWidth = now;
+      render(state.get());
+    }).observe(container);
   }
   state.subscribe(render);
   render(state.get());

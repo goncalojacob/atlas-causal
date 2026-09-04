@@ -105,7 +105,12 @@ button.bar-link { background: none; border: 0; padding: 0; font: inherit; text-d
 /* The graph view takes the map's slot; one of the two is hidden at a time. */
 .graph-area { grid-area: map; position: relative; min-height: 0; background: var(--ground); }
 .panel { grid-area: panel; overflow: auto; padding: 1rem; border-left: 1px solid var(--line); background: var(--paper); }
-.timeline-area { grid-area: timeline; border-top: 1px solid var(--line); background: var(--paper); overflow-x: auto; }
+/* Packed rows make the timeline as tall as the data needs, so it is capped
+   and scrolls rather than pushing the map off the screen. */
+.timeline-area {
+  grid-area: timeline; border-top: 1px solid var(--line); background: var(--paper);
+  overflow: auto; max-height: 45vh;
+}
 
 @media (max-width: 800px) {
   .layout {
@@ -263,6 +268,9 @@ svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align:
 .timeline .lane.even { fill: var(--paper); }
 .timeline .lane.odd { fill: var(--ground); }
 .timeline .lane-label { fill: var(--ink-soft); font-size: 12px; }
+/* The catch-all lane is a lane like the others and says so quietly: it is
+   where the rule put what none of the chosen lanes claimed. */
+.timeline .lane-label.other { font-style: italic; }
 .timeline .tick { stroke: var(--line); stroke-width: 1; }
 .timeline .tick-label { fill: var(--ink-soft); font-size: 11px; }
 .timeline .bar { fill: var(--cobalt-faint); stroke: var(--cobalt); stroke-width: 1; cursor: pointer; }
