@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "lisbon-protocol",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q4263317",
+  "sitelinks": 16,
+  "wikipedia": {
+    "en": "Lisbon Protocol",
+    "pt": "Protocolo de Lisboa"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4263317"
+    }
+  ],
+  "title": "Lisbon Protocol",
+  "summary": "Wikidata item Q4263317, imported by tools/import/wikidata.mjs. The item's own description reads \"an agreement by Russia, Belarus, Ukraine, and Kazakhstan that nuclear weapons of the former Soviet Union on the soil of those states would be destroyed or transferred to the control of Russia\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1992,
+    "end": 1992,
+    "date": "1992-05-23"
+  },
+  "place": "lisbon",
+  "region": null,
+  "actors": []
+}

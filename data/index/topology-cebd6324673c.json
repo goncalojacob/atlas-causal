@@ -7727,6 +7727,28 @@
       }
     },
     {
+      "actors": [],
+      "aliases": [],
+      "id": "lisbon-protocol",
+      "place": "lisbon",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Lisbon Protocol",
+      "weight": 0,
+      "when": {
+        "date": "1992-05-23",
+        "end": 1992,
+        "start": 1992
+      },
+      "wikidata": "Q4263317",
+      "wikipedia": {
+        "en": "Lisbon Protocol",
+        "pt": "Protocolo de Lisboa"
+      }
+    },
+    {
       "actors": [
         {
           "actor": "third-portuguese-republic",
@@ -8173,6 +8195,28 @@
       "wikidata": "Q9581238",
       "wikipedia": {
         "pt": "Acordo Ortográfico de 1945"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "portuguese-language-orthographic-agreement-of-1990",
+      "place": "lisbon",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Portuguese Language Orthographic Agreement of 1990",
+      "weight": 0,
+      "when": {
+        "date": "1990-12-16",
+        "end": 1990,
+        "start": 1990
+      },
+      "wikidata": "Q1113432",
+      "wikipedia": {
+        "en": "Portuguese-Language Orthographic Agreement of 1990",
+        "pt": "Acordo Ortográfico de 1990"
       }
     },
     {

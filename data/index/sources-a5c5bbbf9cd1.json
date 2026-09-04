@@ -9530,7 +9530,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 12,
+      "citationCount": 14,
       "citations": [
         {
           "dissent": false,
@@ -9570,6 +9570,12 @@
         },
         {
           "dissent": false,
+          "id": "lisbon-protocol",
+          "kind": "event",
+          "locator": "Q4263317"
+        },
+        {
+          "dissent": false,
           "id": "may-1915-portuguese-presidential-election",
           "kind": "event",
           "locator": "Q97516248"
@@ -9579,6 +9585,12 @@
           "id": "portuguese-language-orthographic-agreement-of-1945",
           "kind": "event",
           "locator": "Q9581238"
+        },
+        {
+          "dissent": false,
+          "id": "portuguese-language-orthographic-agreement-of-1990",
+          "kind": "event",
+          "locator": "Q1113432"
         },
         {
           "dissent": false,
