@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "batepa-massacre",
   "kind": "event",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,11 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "m21-retracted"
+    ],
+    "note": "Retracted in M21, and the most regrettable retraction of the run. On 3 February 1953 the colonial administration and Portuguese landowners on São Tomé killed forros in numbers still disputed — São Toméan sources say about 1,032, Portuguese ones about 200 — after the governor blamed unrest over forced labour on a communist conspiracy never shown to exist. Retracted for one reason: the atlas holds no other São Toméan record before 1975, so there is nothing here for it to argue with."
   },
   "wikidata": "Q1851212",
   "sitelinks": 14,

@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "sekou-toure",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "actor-drafted"
+    ]
+  },
+  "where": null,
+  "sources": [
+    {
+      "source": "macqueen-1997-decolonization",
+      "locator": null
+    }
+  ],
+  "actorType": "person",
+  "names": [
+    "Ahmed Sékou Touré",
+    "Sékou Touré"
+  ],
+  "summary": "Ahmed Sékou Touré (1922–1984) was the trade unionist who led the Democratic Party of Guinea and, in September 1958, the campaign that made French Guinea the only territory of the French Union to reject de Gaulle’s constitution. He governed the independent state from October 1958 until his death, increasingly by police and prison. He is in this atlas for one thing: he gave the PAIGC a capital. Conakry was the headquarters, the training ground and the arms route of Amílcar Cabral’s movement through the eleven years of the war in Portuguese Guinea, and it was in Conakry that Cabral was killed.",
+  "when": {
+    "start": 1922,
+    "end": 1984
+  }
+}

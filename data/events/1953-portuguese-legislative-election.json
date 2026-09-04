@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "1953-portuguese-legislative-election",
   "kind": "event",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,11 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "m21-retracted"
+    ],
+    "note": "Retracted in M21: 8 November 1953, the National Union taking all 120 seats; the Democratic Opposition stood in several circles and got 10.1% in Lisbon, 11.8% in Porto and 8.7% in Angola. A single-party election with no consequence that can be argued from the bibliography here."
   },
   "wikidata": "Q7232759",
   "sitelinks": 4,

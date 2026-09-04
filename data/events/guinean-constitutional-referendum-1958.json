@@ -9,14 +9,19 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "summary-drafted"
     ]
   },
   "wikidata": "Q5616514",
@@ -26,18 +31,32 @@
   },
   "sources": [
     {
+      "source": "macqueen-1997-decolonization",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1958 Guinean constitutional referendum\", revision 1368429741"
+    },
+    {
       "source": "wikidata",
       "locator": "Q5616514"
     }
   ],
-  "title": "Guinean constitutional referendum, 1958",
-  "summary": "Wikidata item Q5616514, imported by tools/import/wikidata.mjs. The item's own description reads \"a referendum which enabled Guinea to accept or deny the French Constitution in 1958.\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "title": "1958 Guinean constitutional referendum",
+  "summary": "On 28 September 1958 French Guinea voted in the referendum de Gaulle had put to the whole French Union on his new constitution, and was the only territory in it to vote No. Sékou Touré’s Democratic Party had campaigned for rejection, and Guinea took independence on 2 October rather than a place in the French Community, with French administration and French money withdrawn almost at once. What this has to do with Portugal lies across a border: independent Conakry became the headquarters, the sanctuary and the supply route of the PAIGC, and it was from there that Amílcar Cabral’s movement opened the war in Portuguese Guinea in 1963 and ran it for the eleven years until independence. It is in the atlas for that consequence and for nothing about French constitutional law.",
   "when": {
     "start": 1958,
     "end": 1958,
-    "date": "1958-09-28"
+    "date": "1958-09-28",
+    "calendar": "gregorian"
   },
   "place": null,
   "region": "africa",
-  "actors": []
+  "actors": [
+    {
+      "actor": "sekou-toure",
+      "role": "led the campaign for a No vote"
+    }
+  ]
 }

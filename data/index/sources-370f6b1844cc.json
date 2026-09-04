@@ -7240,7 +7240,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 46,
+      "citationCount": 50,
       "citations": [
         {
           "dissent": false,
@@ -7311,6 +7311,12 @@
         {
           "dissent": false,
           "id": "republic-of-india",
+          "kind": "actor",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "sekou-toure",
           "kind": "actor",
           "locator": null
         },
@@ -7412,6 +7418,18 @@
         },
         {
           "dissent": false,
+          "id": "guinean-constitutional-referendum-1958--cabral-assassinated-1973--precondition-of",
+          "kind": "edge",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "guinean-constitutional-referendum-1958--guinea-war-begins-1963--enabled",
+          "kind": "edge",
+          "locator": null
+        },
+        {
+          "dissent": false,
           "id": "mozambique-war-begins-1964--wiriyamu-massacre-1972--precondition-of",
           "kind": "edge",
           "locator": null
@@ -7479,6 +7497,12 @@
         {
           "dissent": false,
           "id": "guinea-war-begins-1963",
+          "kind": "event",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "guinean-constitutional-referendum-1958",
           "kind": "event",
           "locator": null
         },
@@ -9908,7 +9932,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 210,
+      "citationCount": 202,
       "citations": [
         {
           "dissent": false,
@@ -9951,42 +9975,6 @@
           "id": "1949-portuguese-presidential-election",
           "kind": "event",
           "locator": "Q3277291"
-        },
-        {
-          "dissent": false,
-          "id": "1951-portuguese-presidential-election",
-          "kind": "event",
-          "locator": "Q18166749"
-        },
-        {
-          "dissent": false,
-          "id": "1952-guinean-territorial-assembly-election",
-          "kind": "event",
-          "locator": "Q22090902"
-        },
-        {
-          "dissent": false,
-          "id": "1953-portuguese-legislative-election",
-          "kind": "event",
-          "locator": "Q7232759"
-        },
-        {
-          "dissent": false,
-          "id": "1957-guinean-territorial-assembly-election",
-          "kind": "event",
-          "locator": "Q1285560"
-        },
-        {
-          "dissent": false,
-          "id": "1957-portuguese-legislative-election",
-          "kind": "event",
-          "locator": "Q7232763"
-        },
-        {
-          "dissent": false,
-          "id": "1958-portuguese-presidential-election",
-          "kind": "event",
-          "locator": "Q3741753"
         },
         {
           "dissent": false,
@@ -10818,12 +10806,6 @@
         },
         {
           "dissent": false,
-          "id": "batepa-massacre",
-          "kind": "event",
-          "locator": "Q1851212"
-        },
-        {
-          "dissent": false,
           "id": "bomb-attack-by-the-revolutionary-brigades-on-the-quartel-mestre-general-building-in-lisbon-portugal",
           "kind": "event",
           "locator": "Q112157664"
@@ -10935,12 +10917,6 @@
           "id": "espirito-santo-bank-of-campolide-robbery",
           "kind": "event",
           "locator": "Q111918021"
-        },
-        {
-          "dissent": false,
-          "id": "geneva-act-of-the-lisbon-agreement-on-appellations-of-origin-and-geographical-indications",
-          "kind": "event",
-          "locator": "Q4263323"
         },
         {
           "dissent": false,
@@ -11201,7 +11177,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 9,
+      "citationCount": 10,
       "citations": [
         {
           "dissent": false,
@@ -11244,6 +11220,12 @@
           "id": "1949-portuguese-presidential-election",
           "kind": "event",
           "locator": "\"1949 Portuguese presidential election\", revision 1323415397"
+        },
+        {
+          "dissent": false,
+          "id": "guinean-constitutional-referendum-1958",
+          "kind": "event",
+          "locator": "\"1958 Guinean constitutional referendum\", revision 1368429741"
         },
         {
           "dissent": false,

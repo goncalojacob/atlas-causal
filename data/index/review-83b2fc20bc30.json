@@ -3528,6 +3528,77 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "macqueen-1997-decolonization",
+        "wikipedia-en",
+        "wikidata"
+      ],
+      "id": "guinean-constitutional-referendum-1958",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "1958 Guinean constitutional referendum"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "macqueen-1997-decolonization"
+      ],
+      "from": "guinean-constitutional-referendum-1958",
+      "id": "guinean-constitutional-referendum-1958--cabral-assassinated-1973--precondition-of",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "cabral-assassinated-1973",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "macqueen-1997-decolonization"
+      ],
+      "from": "guinean-constitutional-referendum-1958",
+      "id": "guinean-constitutional-referendum-1958--guinea-war-begins-1963--enabled",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "guinea-war-begins-1963",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -6330,6 +6401,29 @@
         }
       ],
       "cites": [
+        "macqueen-1997-decolonization"
+      ],
+      "id": "sekou-toure",
+      "kind": "actor",
+      "names": [
+        "Ahmed Sékou Touré",
+        "Sékou Touré"
+      ],
+      "review": {
+        "flags": [
+          "actor-drafted"
+        ]
+      },
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "wheeler-1978-republican-portugal",
         "meneses-2004-portugal-1914-1926"
       ],
@@ -6932,44 +7026,8 @@
     }
   ],
   "schema": 1,
-  "total": 843,
+  "total": 846,
   "warnings": [
-    {
-      "id": "1951-portuguese-presidential-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "1952-guinean-territorial-assembly-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "1953-portuguese-legislative-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "1957-guinean-territorial-assembly-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "1957-portuguese-legislative-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "1958-portuguese-presidential-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
     {
       "id": "1961-guinean-presidential-election",
       "kind": "event",
@@ -7799,12 +7857,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "batepa-massacre",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
       "id": "bomb-attack-by-the-revolutionary-brigades-on-the-quartel-mestre-general-building-in-lisbon-portugal",
       "kind": "event",
       "message": "event has no edges",
@@ -7914,18 +7966,6 @@
     },
     {
       "id": "espirito-santo-bank-of-campolide-robbery",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "geneva-act-of-the-lisbon-agreement-on-appellations-of-origin-and-geographical-indications",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "guinean-constitutional-referendum-1958",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"

@@ -206,3 +206,54 @@ Wired instead: `1945-portuguese-legislative-election` and
 `delgado-candidacy-1958`, which had three edges out of it and none into it —
 the atlas could say what Delgado's campaign caused but not where it came
 from.
+
+## 1950s — 7 retracted, 1 merged, 1 wired
+
+Three of the retractions are not Portuguese at all. The import's class
+queries caught **French** Guinea — Conakry, not Bissau — and there are six of
+these across the 1950s, 60s and 70s.
+
+- `1951-portuguese-presidential-election` — 22 July 1951, five years early
+  because Carmona had died in April.
+- `1952-guinean-territorial-assembly-election` — 30 March 1952, French
+  Guinea. The cached lead is one sentence giving a date.
+- `1953-portuguese-legislative-election` — 8 November 1953; the opposition
+  stood and took 10.1% in Lisbon, 11.8% in Porto, 8.7% in Angola.
+- `batepa-massacre` — **the most regrettable retraction of the whole run.**
+  On 3 February 1953 the colonial administration and Portuguese landowners on
+  São Tomé killed forros in numbers still disputed: São Toméan sources say
+  about 1,032, Portuguese ones about 200. The governor had blamed unrest over
+  forced labour on a communist conspiracy that was never shown to exist. It
+  is retracted for one reason and it is not a judgement on the event: the
+  atlas holds no other São Toméan record before 1975, so there is nothing
+  here for Batepá to argue with. **The atlas needs São Tomé.** This is the
+  clearest gap the run found.
+- `1957-guinean-territorial-assembly-election` — 31 March 1957, Sékou Touré's
+  PDG-RDA taking 56 of 60 seats. It is genuinely why Guinea voted No the
+  following year, and if French West African decolonisation is ever
+  represented properly this is where that chain starts.
+- `1957-portuguese-legislative-election` — all 120 seats again, **and the
+  leads disagree about the date**: English Wikipedia says 3 November,
+  Portuguese Wikipedia 4 November.
+- `geneva-act-of-the-lisbon-agreement-…` — the Lisbon Agreement on
+  appellations of origin, 31 October 1958. Note that the record's title and
+  its cached lead are not about the same instrument. Either way it is in
+  Lisbon by venue only.
+
+**Merged, not retracted:**
+
+- `1958-portuguese-presidential-election` → **`delgado-candidacy-1958`**. The
+  atlas already holds the election of 8 June 1958 — Delgado against Américo
+  Tomás, the disbelieved count, the revision that followed.
+
+Wired instead: `guinean-constitutional-referendum-1958`, which is kept
+although it is French, because independent Conakry is where the PAIGC lived
+for the next fifteen years. A word on consistency: `treaty-of-windsor` was
+retracted above for having only one argument behind two possible edges, and
+this record is kept although both its edges start from the same fact, the
+sanctuary. The difference is that the bibliography here contains a book
+written about precisely this question (MacQueen), and the two edges assert
+different mechanisms — a rear base that lets a war be launched, and an exile
+that leaves a leadership open to being killed. A reviewer who disagrees
+should retract it; the reasoning is here so that the disagreement can be
+had.

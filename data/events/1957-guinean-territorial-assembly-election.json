@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "1957-guinean-territorial-assembly-election",
   "kind": "event",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,11 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "m21-retracted"
+    ],
+    "note": "Retracted in M21 as outside the atlas: French Guinea again, 31 March 1957, Sékou Touré’s PDG-RDA winning 56 of 60 seats. It is genuinely the reason Guinea voted No in 1958, and if the atlas ever holds French West African decolonisation properly this is where that chain starts. It has no second edge here, and the 1958 referendum carries the Portuguese consequence on its own."
   },
   "wikidata": "Q1285560",
   "sitelinks": 3,

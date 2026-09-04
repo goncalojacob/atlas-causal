@@ -4184,6 +4184,22 @@
       }
     },
     {
+      "actorType": "person",
+      "aliases": [],
+      "id": "sekou-toure",
+      "name": "Ahmed Sékou Touré",
+      "names": [
+        "Ahmed Sékou Touré",
+        "Sékou Touré"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": 1984,
+        "start": 1922
+      }
+    },
+    {
       "actorType": "polity",
       "aliases": [],
       "id": "selangore",
@@ -5910,6 +5926,26 @@
     {
       "aliases": [],
       "confidence": "probable",
+      "from": "guinean-constitutional-referendum-1958",
+      "id": "guinean-constitutional-referendum-1958--cabral-assassinated-1973--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "cabral-assassinated-1973",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "guinean-constitutional-referendum-1958",
+      "id": "guinean-constitutional-referendum-1958--guinea-war-begins-1963--enabled",
+      "status": "active",
+      "supersededBy": null,
+      "to": "guinea-war-begins-1963",
+      "type": "enabled"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
       "from": "iberian-pact",
       "id": "iberian-pact--azores-agreement-1943--precondition-of",
       "status": "active",
@@ -7145,7 +7181,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "1951 Portuguese presidential election",
       "weight": 0,
@@ -7167,7 +7203,7 @@
       "place": null,
       "region": "africa",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "1952 Guinean Territorial Assembly election",
       "weight": 0,
@@ -7188,7 +7224,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "1953 Portuguese legislative election",
       "weight": 0,
@@ -7210,7 +7246,7 @@
       "place": null,
       "region": "africa",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "1957 Guinean Territorial Assembly election",
       "weight": 0,
@@ -7231,7 +7267,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "1957 Portuguese legislative election",
       "weight": 0,
@@ -7253,8 +7289,8 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
-      "supersededBy": null,
+      "status": "merged",
+      "supersededBy": "delgado-candidacy-1958",
       "title": "1958 Portuguese presidential election",
       "weight": 0,
       "when": {
@@ -10467,7 +10503,7 @@
       "place": null,
       "region": "africa",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "Batepá massacre",
       "weight": 0,
@@ -10680,7 +10716,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Assassination of Amílcar Cabral",
-      "weight": 5,
+      "weight": 6,
       "when": {
         "calendar": "gregorian",
         "date": "1973-01-20",
@@ -11780,7 +11816,7 @@
       "place": "lisbon",
       "region": "europe",
       "regionMethod": "inside",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "Geneva Act of the Lisbon Agreement on Appellations of Origin and Geographical Indications",
       "weight": 0,
@@ -11980,7 +12016,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Beginning of the war in Guinea",
-      "weight": 7,
+      "weight": 8,
       "when": {
         "calendar": "gregorian",
         "date": "1963-01-23",
@@ -11989,7 +12025,12 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "sekou-toure",
+          "role": "led the campaign for a No vote"
+        }
+      ],
       "aliases": [],
       "id": "guinean-constitutional-referendum-1958",
       "place": null,
@@ -11997,9 +12038,10 @@
       "regionMethod": "override",
       "status": "active",
       "supersededBy": null,
-      "title": "Guinean constitutional referendum, 1958",
-      "weight": 0,
+      "title": "1958 Guinean constitutional referendum",
+      "weight": 3,
       "when": {
+        "calendar": "gregorian",
         "date": "1958-09-28",
         "end": 1958,
         "start": 1958
