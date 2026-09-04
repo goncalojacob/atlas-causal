@@ -6,24 +6,24 @@ session ends. `ARCHITECTURE.md` is the target; this file is the position.
 
 ## Last updated
 
-2026-09-03, after M12 (`docs/m12-brief.md`): the graph can be *told*. The
-**`narrative` kind** is a signed walk through records that are already here —
-an ordered list of steps, each naming one event or one edge and carrying the
-narrator's own paragraph on why that step follows — and it changes nothing it
-walks. Reading one is the first **mode** in this interface:
-`?narrative=<id>&step=<n>` is the whole of the URL, and the selection, the
-chain and the window are derived from the step, so the map, the graph and the
-timeline follow the walk without knowing what a narrative is. One example was
-drafted under the same exception as the rest of the test dataset — twelve
-steps from Luanda in 1961 to 25 November 1975 — and it is assistant-written
-and unread by a person, like everything else in `data/`.
+2026-09-04, after M13 (`docs/m13-brief.md`): the test dataset can now be
+read. **`review.html`** lists every record still carrying the assistant-draft
+marker — 314 of them, the number the validator prints — lets a person edit it
+in the contribution form's own fields, and **signs** it: the draft marker is
+replaced by the reviewer, `revised` is set, and the record leaves the queue.
+Saving needs a writer, so `tools/serve.mjs` serves the repository and adds one
+write endpoint on `127.0.0.1`; opened without it the same action becomes a
+correction bundle for the issue path, and the public site gains no backend.
+`STATUS.md`'s "Dates to verify" is now also data: 95 records carry a
+`review: { flags, note }` block saying what has not been checked.
 
 ## Phase
 
-**M0 to M12 built, plus the map usability work, on branch `m0`, pull
-request #1 open against `main`.** M13 is next in the order the run protocol
-sets. M8 changed no structure and wrote no revision, as its brief allows.
-`ARCHITECTURE.md` **revision 12** is the specification; its opening note says what changed and why (revision 4
+**M0 to M13 built, plus the map usability work, on branch `m0`, pull
+request #1 open against `main`.** M13 was the last milestone in the run
+protocol's order: nothing is queued behind it. M8 changed no structure and
+wrote no revision, as its brief allows.
+`ARCHITECTURE.md` **revision 13** is the specification; its opening note says what changed and why (revision 4
 added the `actor` kind; revision 5 added `cluster.js`, `weight` in the
 index and `prominence` as a reserved override; revision 6 added the
 `presence` kind, the CC BY-NC-SA licence and its one exception, and moved
@@ -38,7 +38,10 @@ source card, the bibliography page and the horizon, and put `source` and
 `horizon` in the state; revision 11 added the `relation` kind, rule 19 and
 the relations on the actor card; revision 12 added the `narrative` kind, rule
 20, and reading as a mode — `narrative` and `step` in the state, with the
-selection, the chain and the window derived from them).
+selection, the chain and the window derived from them; revision 13 added the
+`review` block to the envelope, the review index, `review.html`, and the two
+amendments the dashboard needed — the local write server that is never
+deployed, and the one path where `authors` is written without the Action).
 The M5 brief asks for revision 5; the map work had already taken that
 number.
 
@@ -67,7 +70,7 @@ import" below. Which actor each of them belongs to is
 table in the tool.
 
 What exists and passes (`node tools/validate.mjs --index`: **0 errors, 2
-warnings**, both `degree-zero` and both intended; `node --test`: 275 tests):
+warnings**, both `degree-zero` and both intended; `node --test`: 331 tests):
 
 - **M0.** Licences (`LICENSE` MIT, `data/LICENSE` CC BY-SA 4.0,
   `data/geo/LICENSE` Natural Earth); `.nvmrc` = 22; `schema/common/` and
@@ -329,6 +332,49 @@ warnings**, both `degree-zero` and both intended; `node --test`: 275 tests):
   and unread by a person. It is an argument, not a record of facts, and the
   right answer to it is a second narrative rather than a correction.
 
+- **M13.** **The review dashboard, and the exception it exists to retire.**
+  `review.html` — a maintainer's page, unlinked from the atlas — lists every
+  record whose `authors` carries the draft marker, grouped by kind, with the
+  **validator's own warnings** as filters rather than a second implementation
+  of the rules, a search, and how many of the 567 reviewable records are
+  still unread. Opening one shows every field the contribution form has for
+  that kind: `FIELDS`, `CITATION_LISTS`, `ACTOR_LISTS` and `STEP_LISTS` are
+  **imported from `src/contribute/bundle.js`**, so a field added for
+  contributors appears here without being added twice, and the record is
+  validated against the topology on every keystroke by the same
+  `validateBundle()` the form runs (deviation 82 on why the renderer is not
+  shared too). **Sign** replaces the draft marker with the reviewer, sets
+  `revised` and clears the review block; **Retract** sets `status:
+  retracted` and carries with it the edges and narratives that cannot outlive
+  the record, refusing instead of cascading where the records that point at
+  it would have to be rewritten (an actor, a place, a source). `j`/`k` walk
+  the queue, `ctrl`+`s` saves, `ctrl`+`enter` signs.
+  **The envelope gained `review: { flags, note }`**, optional on every kind:
+  what still wants checking on this record, and never a claim about the
+  world. `tools/seed-review-flags.mjs` put `STATUS.md`'s "Dates to verify"
+  onto **95 records** once — `date`, `figures`, `claim`, `place` — from a
+  hand-written table the test checks against `data/` (deviation 84).
+  **The index gained a third hashed file**, `review-<hash>.json`: a digest of
+  each draft, the number of reviewable records, and the validator's warnings.
+  A browser cannot read 1,278 record files and the topology drops `authors`,
+  so without it the dashboard would be blind or would reimplement the rules
+  (deviation 83).
+  **`tools/serve.mjs`** is the writer, and the whole of the amendment to "no
+  backend": Node only, zero dependencies, `127.0.0.1` only, no CORS headers
+  and no `OPTIONS`, a `Host` that must be this machine, any foreign `Origin`
+  refused, `application/json` required, and the kind and id judged against
+  `KIND_DIRS` and the kind's pattern **before a path is built**. A save is a
+  bundle validated as a unit against what is on disk; nothing is written
+  unless it passes, and `data/index/` is rebuilt after. It is never deployed.
+  Without it — under `python3 -m http.server`, or on the published site —
+  every save becomes a correction bundle on the clipboard, shown on the page
+  as well, and opens the correction issue.
+  `valuesFromRecord()` and `applyValues()` in `bundle.js` are the form's
+  inverse: the test asserts they compose to the identity **byte for byte on
+  every record in `data/`**, so a review that changed one summary cannot
+  rewrite half the file. Making that hold turned up two fields the form never
+  had — an event's `endDate` and a relation's exact date (deviation 85).
+
 ### The CShapes import
 
 Source: **CShapes 2.0** (Schvitz, Girardin, Rüegger, Weidmann, Cederman &
@@ -539,7 +585,12 @@ overnight runs and the hourly shepherd keep off each other's toes on `m0`.
    deploy job commits the regenerated index.
 3. **Owner: review and merge PR #1**
    (https://github.com/goncalojacob/atlas-causal/pull/1).
-4. **Owner: review the test dataset before anything is public.** Every
+4. **Owner: review the test dataset before anything is public.** This is now
+   a page rather than a chore with no shape: `node tools/serve.mjs`, then
+   `http://localhost:8000/review.html`, which lists the 314 records still
+   carrying the draft marker, opens each in the form's own fields and signs
+   it with your name. `node tools/validate.mjs` prints how many are left, and
+   the queue is empty when the exception in `CLAUDE.md` is retired. Every
    date, coordinate, name, role, explanation and confidence was written by
    the assistant from memory. "Dates to verify" below lists what is least
    certain, and **every date of the 2014–2025 batch is in it**. The two
@@ -1207,10 +1258,53 @@ object. Every later card gets a file.
     same shape with a textarea and a list of events *and* links. The one thing
     it does not do is reorder rows; that is in `docs/BACKLOG.md`.
 
+82. **The dashboard renders the form's fields with its own renderer.** The
+    brief says not to fork the field *definitions*, and they are imported —
+    `FIELDS`, `CITATION_LISTS`, `ACTOR_LISTS`, `STEP_LISTS`, so a field cannot
+    exist in one place and not the other. The rendering code is a second,
+    smaller implementation: extracting `form.js`'s would have been the better
+    shape, and there is no DOM test in this project that would have caught a
+    regression in the contribution form overnight. `src/review/editor.js` is
+    about 250 lines and does four things fewer than the form's — no id
+    derivation, no duplicate search, no add/remove of records, no submit.
+    Sharing the renderer is in `docs/BACKLOG.md`, to be done with a DOM test
+    under it.
+83. **The queue comes from the index, not from `data/`.** A third hashed file,
+    `review-<hash>.json`, carries a digest of each draft (the twelve fields the
+    list reads), the number of reviewable records and the validator's
+    warnings. The alternative was 1,278 fetches from the browser, or
+    reimplementing the rules there; the topology cannot serve because it drops
+    `authors`. `build-index.mjs` therefore runs `checkRules()`, which it did
+    not before.
+84. **The seeding covers what `STATUS.md` names by id, and no more.** The
+    "three new places whose coordinates are approximate" are named only as a
+    count, so only `central-portugal`, which the same paragraph names, carries
+    a `place` flag; the other two are not identifiable from the text and were
+    left alone rather than guessed at. Every relation is flagged, because the
+    same paragraph says every date of them wants checking.
+85. **Two fields the contribution form never had**, found by making the
+    round-trip byte-identical: an event's `when.endDate` and a relation's
+    `when.date`, both in the interval schema and both in use in `data/`. They
+    are now in `FIELDS`, which means contributors get them too.
+86. **This run did not claim M13 before working on it.** The protocol's step 2
+    says to append `M13 started … by shepherd`, commit it alone and push
+    before continuing; this run went straight to the work and wrote the claim
+    line with this section. Nothing collided — the stale claim from the run
+    that was cut off, plus a push inside the last ninety minutes, is what the
+    hourly check reads as `ACTIVE` — but the window between the first commit
+    and the claim was unprotected.
+
 ## Dates to verify
 
 Everything below was written from memory and is where the owner's review
 should look first. The record's own summary says so in the worst cases.
+
+**This list is now also data.** `tools/seed-review-flags.mjs` put it onto 95
+records as `review: { flags, note }` — 93 `date`, 4 `figures`, 4 `claim`, 3
+`place` — so `review.html` can filter by it. The prose below stays: it is
+where a reviewer reads *why*, and it is what the table in that tool was
+written from. The two do not update each other, so a correction here that
+changes what wants checking has to be made on the record as well.
 
 **Events, dates the assistant is least sure of:**
 
@@ -1476,8 +1570,9 @@ fixtures and the three static pages — sixteen assertions, all passing:
 - Pull request #1: https://github.com/goncalojacob/atlas-causal/pull/1 — its
   body is about **56 KB** against GitHub's 64 KB limit. Each milestone that
   adds a section pays for it by cutting an older one to a summary that points
-  here: M8 cut M5's, M11 cut M7's, M12 cut M9's. **M13 has to cut one too**,
-  and M10's is the longest of the ones still written out in full. Editing the
+  here: M8 cut M5's, M11 cut M7's, M12 cut M9's, M13 cut M10's. The next
+  section added has to cut another; M11's and M12's are the longest still
+  written out in full. Editing the
   body from a run means sending the whole 56 KB back, which is more text than
   a session can retype faithfully: M12 rebuilt it from the copy the read
   returned and sent it with `curl` and `$GITHUB_TOKEN` rather than through the
@@ -1530,3 +1625,6 @@ M12 started 2026-09-03T23:21:25Z by shepherd
 M12 done
 
 M13 started 2026-09-04T00:21:17Z by shepherd
+
+M13 started 2026-09-04T02:21:01Z by shepherd
+M13 done

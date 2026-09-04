@@ -36,6 +36,13 @@ the assistant. Scheduled work lives in `docs/*-brief.md`; the position in
   M12; this is the one thing it does not do.)
 - A narrative's own page in the list, so several accounts of the same period
   can be read side by side rather than one at a time.
+- **One renderer for the contribution form and the review editor.** They
+  share the field definitions and not the code that draws them (deviation 82
+  in `STATUS.md`). Extracting `form.js`'s entry renderer is the right shape;
+  do it with a DOM test under the form first, because nothing in the test
+  suite would catch a regression there today.
+- A record's history on the review dashboard: what a signature changed, read
+  from git, so a reviewer can see what the draft said before they fixed it.
 - Presences' `capital` as a reference to a place record once places exist.
 - Natural Earth's continent assignment (Russia → Europe, Turkey → Asia,
   Greenland → Americas): keep, or redraw the lane polygons.
