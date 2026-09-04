@@ -7098,6 +7098,27 @@
       }
     },
     {
+      "actors": [],
+      "aliases": [],
+      "id": "geneva-act-of-the-lisbon-agreement-on-appellations-of-origin-and-geographical-indications",
+      "place": "lisbon",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Geneva Act of the Lisbon Agreement on Appellations of Origin and Geographical Indications",
+      "weight": 0,
+      "when": {
+        "date": "1958-10-31",
+        "end": 1958,
+        "start": 1958
+      },
+      "wikidata": "Q4263323",
+      "wikipedia": {
+        "en": "Lisbon Agreement for the Protection of Appellations of Origin and their International Registration"
+      }
+    },
+    {
       "actors": [
         {
           "actor": "antonio-costa",
@@ -8153,6 +8174,40 @@
       "wikipedia": {
         "pt": "Acordo Ortográfico de 1945"
       }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "q1454657",
+      "place": null,
+      "region": "africa",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Q1454657",
+      "weight": 0,
+      "when": {
+        "end": 1974,
+        "start": 1974
+      },
+      "wikidata": "Q1454657"
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "q2115000",
+      "place": null,
+      "region": "africa",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Q2115000",
+      "weight": 0,
+      "when": {
+        "end": 1968,
+        "start": 1968
+      },
+      "wikidata": "Q2115000"
     },
     {
       "actors": [

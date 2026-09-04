@@ -6037,7 +6037,7 @@
     }
   ],
   "schema": 1,
-  "total": 578,
+  "total": 581,
   "warnings": [
     {
       "id": "1911-portuguese-presidential-election",
@@ -6064,6 +6064,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "geneva-act-of-the-lisbon-agreement-on-appellations-of-origin-and-geographical-indications",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
       "id": "iberian-blackout-2025",
       "kind": "event",
       "message": "event has no edges",
@@ -6083,6 +6089,18 @@
     },
     {
       "id": "portuguese-language-orthographic-agreement-of-1945",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "q1454657",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "q2115000",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"

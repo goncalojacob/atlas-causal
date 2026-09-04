@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "geneva-act-of-the-lisbon-agreement-on-appellations-of-origin-and-geographical-indications",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q4263323",
+  "sitelinks": 9,
+  "wikipedia": {
+    "en": "Lisbon Agreement for the Protection of Appellations of Origin and their International Registration"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4263323"
+    }
+  ],
+  "title": "Geneva Act of the Lisbon Agreement on Appellations of Origin and Geographical Indications",
+  "summary": "Wikidata item Q4263323, imported by tools/import/wikidata.mjs. The item's own description reads \"treaty\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1958,
+    "end": 1958,
+    "date": "1958-10-31"
+  },
+  "place": "lisbon",
+  "region": null,
+  "actors": []
+}
