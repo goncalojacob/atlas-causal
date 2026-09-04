@@ -29,6 +29,7 @@
     "license": { "$ref": "../common/provenance.json#/properties/license" },
     "created": { "$ref": "../common/provenance.json#/properties/created" },
     "revised": { "$ref": "../common/provenance.json#/properties/revised" },
+    "review": { "$ref": "../common/provenance.json#/properties/review" },
     "sources": {
       "description": "Supporting citations. Dissenting ones go in dispute.sources, kept apart so the panel can show which is which.",
       "$ref": "../common/provenance.json#/properties/sources"

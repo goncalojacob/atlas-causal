@@ -526,7 +526,9 @@ export function valuesFromRecord(kind, record) {
 // `supersededBy` and `authors` carry the record's history, `status` is
 // Retract's to change and `revised` Sign's, and the id is immutable once
 // merged — everything that points at this record points at that string.
-const ENVELOPE_KEYS = Object.freeze(['schema', 'id', 'kind', 'status', 'supersededBy', 'aliases', 'authors', 'license', 'created', 'revised']);
+// `review` is on the list for the same reason: it says what still wants
+// checking, and only signing the record answers it.
+const ENVELOPE_KEYS = Object.freeze(['schema', 'id', 'kind', 'status', 'supersededBy', 'aliases', 'authors', 'license', 'created', 'revised', 'review']);
 
 // Rebuild `built` in the key order of `original`, recursively, so that a save
 // that changed nothing produces the same bytes. Keys the original does not

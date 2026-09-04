@@ -66,6 +66,24 @@
         { "$ref": "#/properties/created" }
       ]
     },
+    "review": {
+      "description": "What a reviewer should look at before signing this record, and why. Optional, and written by whoever drafted it; the review dashboard shows it as a filter and Sign removes it. Never a claim about the world — only about how much the record has been checked.",
+      "type": "object",
+      "required": ["flags"],
+      "additionalProperties": false,
+      "properties": {
+        "flags": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1, "maxLength": 40, "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" }
+        },
+        "note": {
+          "oneOf": [
+            { "type": "null" },
+            { "type": "string", "minLength": 1, "maxLength": 500 }
+          ]
+        }
+      }
+    },
     "sources": {
       "description": "Citations. A citation points at a source record by id, with an optional locator (page, chapter, folio).",
       "type": "array",

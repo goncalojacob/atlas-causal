@@ -17,6 +17,7 @@
     "license": { "$ref": "../common/provenance.json#/properties/license" },
     "created": { "$ref": "../common/provenance.json#/properties/created" },
     "revised": { "$ref": "../common/provenance.json#/properties/revised" },
+    "review": { "$ref": "../common/provenance.json#/properties/review" },
     "sources": { "$ref": "../common/provenance.json#/properties/sources" },
     "title": { "type": "string", "minLength": 1, "maxLength": 200 },
     "summary": {

@@ -17,6 +17,7 @@
     "license": { "$ref": "../common/provenance.json#/properties/license" },
     "created": { "$ref": "../common/provenance.json#/properties/created" },
     "revised": { "$ref": "../common/provenance.json#/properties/revised" },
+    "review": { "$ref": "../common/provenance.json#/properties/review" },
     "sources": { "$ref": "../common/provenance.json#/properties/sources" },
     "actor": {
       "description": "The actor that held the territory. Must resolve to an active actor (rule 17).",

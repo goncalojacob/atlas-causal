@@ -17,6 +17,7 @@
     "license": { "$ref": "../common/provenance.json#/properties/license" },
     "created": { "$ref": "../common/provenance.json#/properties/created" },
     "revised": { "$ref": "../common/provenance.json#/properties/revised" },
+    "review": { "$ref": "../common/provenance.json#/properties/review" },
     "type": {
       "type": "string",
       "enum": ["book", "chapter", "article", "thesis", "primary", "dataset", "web"]

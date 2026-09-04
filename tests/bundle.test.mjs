@@ -376,3 +376,13 @@ test('an edit replaces the field and leaves the envelope alone', async () => {
   const renamed = applyValues('event', record, { ...values, id: 'fixture-event-renamed' });
   assert.equal(renamed.id, record.id);
 });
+
+// What the draft asks to have looked at is the envelope's, not the editor's:
+// correcting a summary does not answer the question the flag asks, and only
+// Sign takes it off (src/review/sign.js).
+test('an edit keeps the review block a draft carries', async () => {
+  const { byId } = await fixtures();
+  const record = { ...byId['fixture-event-a'], review: { flags: ['date'], note: 'the day is a guess' } };
+  const back = applyValues('event', record, { ...valuesFromRecord('event', record), summary: 'Edited in a test.' });
+  assert.deepEqual(back.review, record.review);
+});

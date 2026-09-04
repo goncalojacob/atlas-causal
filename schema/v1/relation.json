@@ -29,6 +29,7 @@
     "license": { "$ref": "../common/provenance.json#/properties/license" },
     "created": { "$ref": "../common/provenance.json#/properties/created" },
     "revised": { "$ref": "../common/provenance.json#/properties/revised" },
+    "review": { "$ref": "../common/provenance.json#/properties/review" },
     "sources": {
       "description": "A relation is an assertion about two actors, so it cites at least one source, as an edge does (rule 6).",
       "$ref": "../common/provenance.json#/properties/sources"
