@@ -8,6 +8,9 @@ test('parse and format round trip', () => {
     from: 1200,
     to: 1250,
     view: 'graph',
+    focus: null,
+    group: 'none',
+    lanes: [],
     selected: 'fixture-event-t',
     source: 'fixture-source-one',
     place: 'fixture-place-one',
@@ -94,7 +97,8 @@ test('the store merges patches and notifies', () => {
   store.set({ to: 1220 });
   assert.deepEqual(seen, [1210, 1210]);
   assert.deepEqual(store.get(), {
-    from: null, to: 1220, view: 'map', selected: 'fixture-event-a', source: null,
+    from: null, to: 1220, view: 'map', focus: null, group: 'none', lanes: [],
+    selected: 'fixture-event-a', source: null,
     place: null, actor: null, chain: [], horizon: null, layers: ['land', 'territories', 'events'],
     narrative: null, step: 0,
   });
@@ -157,4 +161,49 @@ test('a decade is the ten years around a year, floored', () => {
   assert.deepEqual(decadeOf(1975), { from: 1970, to: 1979 });
   assert.deepEqual(decadeOf(1970), { from: 1970, to: 1979 });
   assert.deepEqual(decadeOf(-5), { from: -10, to: -1 });
+});
+
+// The lens and the grouping: how the atlas is drawn, not what is selected in
+// it, and both in the link for the same reason the view is.
+test('a lens travels in the URL, readably, and only in one of three kinds', () => {
+  assert.equal(formatState({ ...defaultState(), focus: 'actor:salazar' }), '?focus=actor:salazar');
+  assert.equal(parseState('?focus=actor:salazar').focus, 'actor:salazar');
+  assert.equal(parseState('?focus=place:santa-comba-dao').focus, 'place:santa-comba-dao');
+  assert.equal(parseState('?focus=source:russell-2000-henry').focus, 'source:russell-2000-henry');
+  assert.equal(parseState('?focus=' + encodeURIComponent('actor:salazar')).focus, 'actor:salazar');
+  for (const bad of ['event:x', 'actor:', 'actor', ':x', 'actor:../secret', 'actor:Salazar', 'narrative:x']) {
+    assert.equal(parseState(`?focus=${encodeURIComponent(bad)}`).focus, null, bad);
+  }
+  assert.equal(formatState({ ...defaultState(), focus: null }), '');
+});
+
+test('the grouping travels in the URL, and only when it is not the default', () => {
+  assert.equal(formatState({ ...defaultState(), group: 'none' }), '', 'no grouping is the default');
+  assert.equal(formatState({ ...defaultState(), group: 'actor' }), '?group=actor');
+  assert.equal(parseState('?group=place').group, 'place');
+  assert.equal(parseState('?group=region').group, 'region');
+  assert.equal(parseState('?group=continent').group, 'none', 'an unknown grouping falls back');
+  assert.equal(parseState('').group, 'none');
+});
+
+test('an explicit lane list keeps the reader\'s order and needs a grouping', () => {
+  assert.deepEqual(parseState('?group=actor&lanes=salazar,paigc').lanes, ['salazar', 'paigc']);
+  assert.deepEqual(parseState('?lanes=paigc,salazar,paigc').lanes, ['paigc', 'salazar'], 'once each');
+  assert.deepEqual(parseState('?lanes=../secret,salazar').lanes, ['salazar']);
+  assert.deepEqual(parseState('').lanes, []);
+  assert.equal(
+    formatState({ ...defaultState(), group: 'actor', lanes: ['salazar', 'paigc'] }),
+    '?group=actor&lanes=salazar,paigc',
+  );
+  assert.equal(
+    formatState({ ...defaultState(), group: 'none', lanes: ['salazar'] }),
+    '',
+    'a lane list without a grouping is an instruction with no addressee',
+  );
+});
+
+test('the whole of a lens and a grouping round-trips', () => {
+  const url = '?from=1960&to=1975&view=graph&focus=actor:salazar&group=actor&lanes=salazar,pide';
+  const parsed = parseState(url);
+  assert.equal(formatState(parsed), url);
 });

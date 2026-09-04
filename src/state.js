@@ -1,5 +1,5 @@
-// One state object, { from, to, view, selected, source, place, actor, chain,
-// horizon, layers, narrative, step },
+// One state object, { from, to, view, focus, group, lanes, selected, source,
+// place, actor, chain, horizon, layers, narrative, step },
 // mirrored to
 // the URL query string so every view is a shareable link. Knows nothing
 // about SVG or data files. The pure parse/format pair is separate from the
@@ -22,6 +22,18 @@
 // opens the actor's card. Which card the panel shows is a precedence —
 // `selected` over `source` over `place` over `actor` — so opening an event
 // from a place's list does not throw the place away.
+//
+// `focus` is the lens — `actor:salazar`, `place:lisbon`, `source:<id>` — and
+// it is not a selection: it says which events exist for the three views at
+// all, where a selection says which of them the reader is holding. One
+// removes, the other dims, and a state that ran them together could say
+// neither.
+//
+// `group` is what the timeline's lanes and the graph's bands are — `none`,
+// `actor`, `place`, `region` — and `lanes` is the reader's own ordered list
+// of them, empty for the automatic twelve. Both are how the atlas is drawn
+// rather than what is selected in it, and both are in the URL for the same
+// reason `view` is: a link should open on the picture it was sent from.
 //
 // `horizon` is the year of the question "what did this lead to by then?".
 // Null means the window's far end, which is the default and is deliberately
@@ -47,12 +59,18 @@ const EDGE_ID = /^[a-z0-9]+(-[a-z0-9]+)*--[a-z0-9]+(-[a-z0-9]+)*--(caused|enable
 const RELATION_ID = /^[a-z0-9]+(-[a-z0-9]+)*--[a-z0-9]+(-[a-z0-9]+)*--(regime-of|succeeded|member-of|part-of|led|allied-with)$/;
 export const LAYERS = Object.freeze(['land', 'territories', 'events']);
 export const VIEWS = Object.freeze(['map', 'graph']);
+// The three kinds a lens can be about, and the four groupings. Written out
+// here rather than imported, because this file stays free of the data and of
+// everything that reads it — as the two id patterns above are.
+const FOCUS = /^(actor|place|source):[a-z0-9]+(-[a-z0-9]+)*$/;
+export const GROUPS = Object.freeze(['none', 'actor', 'place', 'region']);
 // Query parameters that are not state but must survive a state write.
 const PASSTHROUGH = Object.freeze(['fixtures']);
 
 export function defaultState() {
   return {
-    from: null, to: null, view: 'map', selected: null, source: null, place: null,
+    from: null, to: null, view: 'map', focus: null, group: 'none', lanes: [],
+    selected: null, source: null, place: null,
     actor: null, chain: [], horizon: null, layers: [...LAYERS], narrative: null, step: 0,
   };
 }
@@ -61,7 +79,9 @@ export function defaultState() {
 // step drops the rest of the chain, since later steps depend on it.
 export function parseState(search, defaults = defaultState()) {
   const params = new URLSearchParams(search);
-  const state = { ...defaults, chain: [...defaults.chain], layers: [...defaults.layers] };
+  const state = {
+    ...defaults, chain: [...defaults.chain], layers: [...defaults.layers], lanes: [...defaults.lanes],
+  };
   const year = (key) => {
     const value = Number(params.get(key));
     return isValidYear(value) ? value : null;
@@ -110,6 +130,18 @@ export function parseState(search, defaults = defaultState()) {
     const step = Number(params.get('step'));
     state.step = Number.isInteger(step) && step >= 0 ? step : 0;
   }
+  if (params.has('focus') && FOCUS.test(params.get('focus'))) state.focus = params.get('focus');
+  if (params.has('group') && GROUPS.includes(params.get('group'))) state.group = params.get('group');
+  // An explicit lane list is the reader's order, so duplicates are dropped
+  // rather than sorted away; whether an id names a record at all is decided
+  // by lanes.js, which has the data this file deliberately does not.
+  if (params.has('lanes')) {
+    const lanes = [];
+    for (const id of params.get('lanes').split(',').filter(Boolean)) {
+      if (SLUG.test(id) && !lanes.includes(id)) lanes.push(id);
+    }
+    state.lanes = lanes;
+  }
   if (params.has('view') && VIEWS.includes(params.get('view'))) state.view = params.get('view');
   if (params.has('layers')) {
     state.layers = params.get('layers').split(',').filter((l) => LAYERS.includes(l));
@@ -126,12 +158,17 @@ export function formatState(state, search = '') {
   if (state.narrative) {
     params.set('narrative', state.narrative);
     params.set('step', String(state.step ?? 0));
-    const reading = params.toString().replace(/%2C/g, ',').replace(/%2D/g, '-');
+    const reading = params.toString().replace(/%2C/g, ',').replace(/%2D/g, '-').replace(/%3A/g, ':');
     return reading ? `?${reading}` : '';
   }
   if (state.from !== null) params.set('from', String(state.from));
   if (state.to !== null) params.set('to', String(state.to));
   if (state.view && state.view !== 'map') params.set('view', state.view);
+  if (state.focus) params.set('focus', state.focus);
+  if (state.group && state.group !== 'none') params.set('group', state.group);
+  // A lane list without a grouping to belong to would be an instruction with
+  // no addressee, and `none` has no lanes to order.
+  if (state.lanes?.length && state.group && state.group !== 'none') params.set('lanes', state.lanes.join(','));
   if (state.selected) params.set('selected', state.selected);
   if (state.source) params.set('source', state.source);
   if (state.place) params.set('place', state.place);
@@ -141,7 +178,7 @@ export function formatState(state, search = '') {
   if (state.layers.length !== LAYERS.length || state.layers.some((l, i) => l !== LAYERS[i])) {
     params.set('layers', state.layers.join(','));
   }
-  const text = params.toString().replace(/%2C/g, ',').replace(/%2D/g, '-');
+  const text = params.toString().replace(/%2C/g, ',').replace(/%2D/g, '-').replace(/%3A/g, ':');
   return text ? `?${text}` : '';
 }
 
