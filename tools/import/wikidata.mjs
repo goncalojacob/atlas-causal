@@ -1321,7 +1321,10 @@ async function main(argv) {
   }
   const lines = reportLines(result.report, mode);
   for (const line of lines) console.log(line);
-  if (reportTo) await appendReport(reportTo, lines);
+  // A batch with nothing in it says nothing: the Action stops its loop when a
+  // batch changes no file, and a report that grows on every empty pass would
+  // keep it walking to the end of the seq.
+  if (reportTo && result.report.batch.length) await appendReport(reportTo, lines);
   return 0;
 }
 

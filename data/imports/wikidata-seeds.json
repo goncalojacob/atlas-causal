@@ -1086,106 +1086,70 @@
     }
   ],
   "classes": {
-    "Q1190554": {
-      "kind": "event",
-      "label": "occurrence"
-    },
-    "Q1656682": {
-      "kind": "event",
-      "label": "event"
-    },
-    "Q13418847": {
-      "kind": "event",
-      "label": "historical event"
+    "Q5": {
+      "kind": "actor",
+      "actorType": "person",
+      "label": "human"
     },
     "Q198": {
       "kind": "event",
       "label": "war"
     },
-    "Q178561": {
-      "kind": "event",
-      "label": "battle"
+    "Q515": {
+      "kind": "place",
+      "label": "city"
     },
-    "Q45382": {
-      "kind": "event",
-      "label": "coup d'état"
+    "Q532": {
+      "kind": "place",
+      "label": "village"
     },
-    "Q40231": {
-      "kind": "event",
-      "label": "election"
+    "Q3957": {
+      "kind": "place",
+      "label": "town"
     },
-    "Q131569": {
-      "kind": "event",
-      "label": "treaty"
-    },
-    "Q5": {
-      "kind": "actor",
-      "actorType": "person",
-      "label": "human"
+    "Q5119": {
+      "kind": "place",
+      "label": "capital city"
     },
     "Q6256": {
       "kind": "actor",
       "actorType": "polity",
       "label": "country"
     },
-    "Q3624078": {
-      "kind": "actor",
-      "actorType": "polity",
-      "label": "sovereign state"
-    },
-    "Q3024240": {
-      "kind": "actor",
-      "actorType": "polity",
-      "label": "historical country"
-    },
     "Q7275": {
       "kind": "actor",
       "actorType": "polity",
       "label": "state"
-    },
-    "Q43229": {
-      "kind": "actor",
-      "actorType": "institution",
-      "label": "organization"
     },
     "Q7278": {
       "kind": "actor",
       "actorType": "institution",
       "label": "political party"
     },
-    "Q484652": {
-      "kind": "actor",
-      "actorType": "institution",
-      "label": "international organization"
+    "Q7944": {
+      "kind": "event",
+      "label": "earthquake",
+      "note": "Added in M20 from the import report, where 8 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
     },
-    "Q4830453": {
-      "kind": "actor",
-      "actorType": "institution",
-      "label": "business"
+    "Q8065": {
+      "kind": "event",
+      "label": "earthquake",
+      "note": "Added in M20 from the import report, where 6 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
     },
-    "Q515": {
-      "kind": "place",
-      "label": "city"
+    "Q8068": {
+      "kind": "event",
+      "label": "natural disaster",
+      "note": "Added in M20 from the import report, where 2 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
     },
-    "Q1549591": {
-      "kind": "place",
-      "label": "big city"
+    "Q11122": {
+      "kind": "event",
+      "label": "treaty of the European Union",
+      "note": "Added in M20 from the import report, where 1 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
     },
-    "Q3957": {
-      "kind": "place",
-      "label": "town"
-    },
-    "Q532": {
-      "kind": "place",
-      "label": "village"
-    },
-    "Q486972": {
-      "kind": "place",
-      "label": "human settlement"
-    },
-    "Q5119": {
-      "kind": "place",
-      "label": "capital city"
+    "Q12184": {
+      "kind": "event",
+      "label": "pandemic",
+      "note": "Added in M20 from the import report, where 2 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
     },
     "Q15284": {
       "kind": "place",
@@ -1194,6 +1158,337 @@
     "Q23442": {
       "kind": "place",
       "label": "island"
+    },
+    "Q40231": {
+      "kind": "event",
+      "label": "election"
+    },
+    "Q43059": {
+      "kind": "event",
+      "label": "drought",
+      "note": "Added in M20 from the import report, where 1 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
+    },
+    "Q43109": {
+      "kind": "event",
+      "label": "referendum",
+      "note": "Added in M20 from the import report, where 1 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
+    },
+    "Q43229": {
+      "kind": "actor",
+      "actorType": "institution",
+      "label": "organization"
+    },
+    "Q44512": {
+      "kind": "event",
+      "label": "epidemic",
+      "note": "Added in M20 from the import report, where 2 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
+    },
+    "Q45382": {
+      "kind": "event",
+      "label": "coup d'état"
+    },
+    "Q53706": {
+      "kind": "event",
+      "label": "robbery",
+      "note": "Added in M20 from the import report, where 1 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
+    },
+    "Q81672": {
+      "kind": "event",
+      "label": "attempted murder",
+      "note": "Added in M20 from the import report, where 1 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
+    },
+    "Q131569": {
+      "kind": "event",
+      "label": "treaty"
+    },
+    "Q132821": {
+      "kind": "event",
+      "label": "murder",
+      "note": "Added in M20 from the import report, where 8 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
+    },
+    "Q168983": {
+      "kind": "event",
+      "label": "conflagration",
+      "note": "Added in M20 from the import report, where 1 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
+    },
+    "Q169950": {
+      "kind": "event",
+      "label": "wildfire",
+      "note": "Added in M20 from the import report, where 3 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
+    },
+    "Q178561": {
+      "kind": "event",
+      "label": "battle"
+    },
+    "Q216227": {
+      "kind": "event",
+      "label": "drought",
+      "note": "Added in M20 from the import report, where 1 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
+    },
+    "Q220187": {
+      "kind": "event",
+      "label": "oil spill",
+      "note": "Added in M20 from the import report, where 1 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
+    },
+    "Q365680": {
+      "kind": "event",
+      "label": "assault",
+      "note": "Added in M20 from the import report, where 1 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
+    },
+    "Q484652": {
+      "kind": "actor",
+      "actorType": "institution",
+      "label": "international organization"
+    },
+    "Q486972": {
+      "kind": "place",
+      "label": "human settlement"
+    },
+    "Q806824": {
+      "kind": "event",
+      "label": "bank robbery",
+      "note": "Added in M20 from the import report, where 10 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
+    },
+    "Q814924": {
+      "kind": "event",
+      "label": "Treaty of Accession to the EU",
+      "note": "Added in M20 from the import report, where 1 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
+    },
+    "Q858439": {
+      "kind": "event",
+      "label": "presidential election",
+      "note": "Added in M20 from the import report, where 1 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
+    },
+    "Q860333": {
+      "kind": "event",
+      "label": "natural disaster",
+      "note": "Added in M20 from the import report, where 1 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
+    },
+    "Q891854": {
+      "kind": "event",
+      "label": "bomb attack",
+      "note": "Added in M20 from the import report, where 1 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
+    },
+    "Q1128324": {
+      "kind": "event",
+      "label": "European Parliament election",
+      "note": "Added in M20 from the import report, where 11 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
+    },
+    "Q1139665": {
+      "kind": "event",
+      "label": "political murder",
+      "note": "Added in M20 from the import report, where 1 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
+    },
+    "Q1190554": {
+      "kind": "event",
+      "label": "occurrence"
+    },
+    "Q1475448": {
+      "kind": "event",
+      "label": "regicide",
+      "note": "Added in M20 from the import report, where 1 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
+    },
+    "Q1549591": {
+      "kind": "place",
+      "label": "big city"
+    },
+    "Q1656682": {
+      "kind": "event",
+      "label": "event"
+    },
+    "Q2223653": {
+      "kind": "event",
+      "label": "terrorist attack",
+      "note": "Added in M20 from the import report, where 4 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
+    },
+    "Q2235325": {
+      "kind": "event",
+      "label": "oil spill",
+      "note": "Added in M20 from the import report, where 1 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
+    },
+    "Q2334719": {
+      "kind": "event",
+      "label": "bank robbery",
+      "note": "Added in M20 from the import report, where 1 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
+    },
+    "Q2515494": {
+      "kind": "event",
+      "label": "constitutional referendum",
+      "note": "Added in M20 from the import report, where 2 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
+    },
+    "Q2618461": {
+      "kind": "event",
+      "label": "legislative election",
+      "note": "Added in M20 from the import report, where 8 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
+    },
+    "Q2911369": {
+      "kind": "event",
+      "label": "murder",
+      "note": "Added in M20 from the import report, where 1 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
+    },
+    "Q3024240": {
+      "kind": "actor",
+      "actorType": "polity",
+      "label": "historical country"
+    },
+    "Q3199915": {
+      "kind": "event",
+      "label": "massacre",
+      "note": "Added in M20 from the import report, where 7 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
+    },
+    "Q3241045": {
+      "kind": "event",
+      "label": "pandemic",
+      "note": "Added in M20 from the import report, where 1 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
+    },
+    "Q3454916": {
+      "kind": "event",
+      "label": "untyped in the candidate list",
+      "note": "Added in M20 from the import report, where 3 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
+    },
+    "Q3587380": {
+      "kind": "event",
+      "label": "Portuguese presidential election",
+      "note": "Added in M20 from the import report, where 22 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
+    },
+    "Q3624078": {
+      "kind": "actor",
+      "actorType": "polity",
+      "label": "sovereign state"
+    },
+    "Q3839081": {
+      "kind": "event",
+      "label": "earthquake",
+      "note": "Added in M20 from the import report, where 4 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
+    },
+    "Q4676786": {
+      "kind": "event",
+      "label": "deliberate murder",
+      "note": "Added in M20 from the import report, where 1 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
+    },
+    "Q4830453": {
+      "kind": "actor",
+      "actorType": "institution",
+      "label": "business"
+    },
+    "Q5510053": {
+      "kind": "event",
+      "label": "murder",
+      "note": "Added in M20 from the import report, where 1 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
+    },
+    "Q5711091": {
+      "kind": "event",
+      "label": "armed robbery",
+      "note": "Added in M20 from the import report, where 2 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
+    },
+    "Q6508670": {
+      "kind": "event",
+      "label": "leadership election",
+      "note": "Added in M20 from the import report, where 5 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
+    },
+    "Q7232773": {
+      "kind": "event",
+      "label": "Portuguese legislative election",
+      "note": "Added in M20 from the import report, where 45 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
+    },
+    "Q9557810": {
+      "kind": "event",
+      "label": "bilateral treaty",
+      "note": "Added in M20 from the import report, where 1 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
+    },
+    "Q10271409": {
+      "kind": "event",
+      "label": "Portuguese local elections",
+      "note": "Added in M20 from the import report, where 29 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
+    },
+    "Q10271596": {
+      "kind": "event",
+      "label": "parliamentary election in Madeira",
+      "note": "Added in M20 from the import report, where 15 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
+    },
+    "Q10271606": {
+      "kind": "event",
+      "label": "parliamentary election in the Azores",
+      "note": "Added in M20 from the import report, where 13 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
+    },
+    "Q12367307": {
+      "kind": "event",
+      "label": "pandemic",
+      "note": "Added in M20 from the import report, where 1 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
+    },
+    "Q13418847": {
+      "kind": "event",
+      "label": "historical event"
+    },
+    "Q16567729": {
+      "kind": "event",
+      "label": "Council of Europe treaty",
+      "note": "Added in M20 from the import report, where 1 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
+    },
+    "Q17037962": {
+      "kind": "event",
+      "label": "off-year election to the European Parliament",
+      "note": "Added in M20 from the import report, where 1 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
+    },
+    "Q17076801": {
+      "kind": "event",
+      "label": "pandemic",
+      "note": "Added in M20 from the import report, where 1 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
+    },
+    "Q19803127": {
+      "kind": "event",
+      "label": "Macanese Chief Executive election",
+      "note": "Added in M20 from the import report, where 1 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
+    },
+    "Q22342178": {
+      "kind": "event",
+      "label": "Mozambican general election",
+      "note": "Added in M20 from the import report, where 1 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
+    },
+    "Q22669480": {
+      "kind": "event",
+      "label": "Guinean legislative election",
+      "note": "Added in M20 from the import report, where 2 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
+    },
+    "Q22669625": {
+      "kind": "event",
+      "label": "Cape Verdean parliamentary election",
+      "note": "Added in M20 from the import report, where 1 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
+    },
+    "Q22669632": {
+      "kind": "event",
+      "label": "São Tomé and Príncipe legislative election",
+      "note": "Added in M20 from the import report, where 1 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
+    },
+    "Q27865981": {
+      "kind": "event",
+      "label": "legislative package of the European Union",
+      "note": "Added in M20 from the import report, where 1 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
+    },
+    "Q34439356": {
+      "kind": "event",
+      "label": "hurricane",
+      "note": "Added in M20 from the import report, where 1 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
+    },
+    "Q102100590": {
+      "kind": "event",
+      "label": "NATO operation",
+      "note": "Added in M20 from the import report, where 1 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
+    },
+    "Q107434304": {
+      "kind": "event",
+      "label": "forest fire",
+      "note": "Added in M20 from the import report, where 1 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
+    },
+    "Q111986723": {
+      "kind": "event",
+      "label": "shot dead by law enforcement officers",
+      "note": "Added in M20 from the import report, where 1 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
+    },
+    "Q126723767": {
+      "kind": "event",
+      "label": "project of referendum",
+      "note": "Added in M20 from the import report, where 1 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
     }
   },
   "reconcile": true
