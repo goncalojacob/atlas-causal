@@ -304,6 +304,19 @@ nothing on Wikidata is called "Exhibition of the Portuguese World".
 
 nothing on Wikidata is called "Fifty years of 25 April".
 
+## fnla
+
+`actor` · 1962– · searched for **FNLA**
+
+9 item(s) were read and each failed a test.
+
+- [`Q907051`](https://www.wikidata.org/wiki/Q907051) **National Liberation Front of Angola** — political party — 1954– — Q7278
+  - its dates are more than 1 year from the record's
+- [`Q23405928`](https://www.wikidata.org/wiki/Q23405928) **FnlA protein involved in UDP-L-FucpNAc biosynthesis (a nucleotide sugar precursor for antigen-O biosynthesis) FP1288** — microbial gene found in Flavobacterium psychrophilum JIP02/86 — no date — Q7187
+  - none of its classes (Q7187) is in data/imports/wikidata-seeds.json → classes
+- [`Q23437879`](https://www.wikidata.org/wiki/Q23437879) **UDP-N-acetylglucosamine 4,6-dehydratase VF_0191** — microbial protein found in Aliivibrio fischeri ES114 — no date — Q8054
+  - none of its classes (Q8054) is in data/imports/wikidata-seeds.json → classes
+
 ## geringonca-2015
 
 `event` · searched for **The PS minority government of 2015**
@@ -346,6 +359,19 @@ nothing on Wikidata is called "Beginning of the war in Guinea".
 
 nothing on Wikidata is called "The Iberian blackout".
 
+## imf
+
+`actor` · 1945– · searched for **International Monetary Fund**
+
+10 item(s) were read and each failed a test.
+
+- [`Q7804`](https://www.wikidata.org/wiki/Q7804) **International Monetary Fund** — international financial institution — 1944– — Q1345691, Q15925165
+  - none of its classes (Q1345691, Q15925165) is in data/imports/wikidata-seeds.json → classes
+- [`Q129162560`](https://www.wikidata.org/wiki/Q129162560) **International Monetary Fund** — no date — Q43109
+  - none of its classes (Q43109) is in data/imports/wikidata-seeds.json → classes
+- [`Q20054152`](https://www.wikidata.org/wiki/Q20054152) **Managing Director of the International Monetary Fund** — Chief Executive of the IMF — 1946– — Q4164871
+  - none of its classes (Q4164871) is in data/imports/wikidata-seeds.json → classes
+
 ## imf-agreement-1978
 
 `event` · searched for **First stabilisation agreement with the IMF**
@@ -366,6 +392,19 @@ nothing on Wikidata is called "Second stabilisation agreement with the IMF".
 
 - [`Q10316960`](https://www.wikidata.org/wiki/Q10316960) **Law of Separation of Church and State** — Portuguese anticlerical law passed in 20 April 1911 — no date — Q820655
   - none of its classes (Q820655) is in data/imports/wikidata-seeds.json → classes
+
+## legiao-portuguesa
+
+`actor` · 1936–1974 · searched for **Portuguese Legion**
+
+3 item(s) were read and each failed a test.
+
+- [`Q2405862`](https://www.wikidata.org/wiki/Q2405862) **Portuguese Legion** — Portuguese paramilitary organization under the Second Portuguese Republic — 1936–1974 — Q153936
+  - none of its classes (Q153936) is in data/imports/wikidata-seeds.json → classes
+- [`Q3270228`](https://www.wikidata.org/wiki/Q3270228) **Portuguese Legion** — military unit — 1807– — Q176799, Q93479232
+  - none of its classes (Q176799, Q93479232) is in data/imports/wikidata-seeds.json → classes
+- [`Q7232656`](https://www.wikidata.org/wiki/Q7232656) **Portuguese Legion** — Wikimedia disambiguation page — no date — Q4167410
+  - none of its classes (Q4167410) is in data/imports/wikidata-seeds.json → classes
 
 ## legiao-portuguesa-founded-1936
 
@@ -430,6 +469,19 @@ nothing on Wikidata is called "Marcelo Rebelo de Sousa elected president".
 
 nothing on Wikidata is called "Marcelo Rebelo de Sousa re-elected".
 
+## military-dictatorship
+
+`actor` · 1926–1933 · searched for **Military Dictatorship**
+
+10 item(s) were read and each failed a test.
+
+- [`Q49896`](https://www.wikidata.org/wiki/Q49896) **military dictatorship** — form of dictatorial military rule — no date — Q1307214
+  - none of its classes (Q1307214) is in data/imports/wikidata-seeds.json → classes
+- [`Q1370527`](https://www.wikidata.org/wiki/Q1370527) **Brazilian military government (1964–1985)** — 1964-1985 military regime in Brazil — 1964–1985 — Q7188, Q1197588, Q317, Q11514315
+  - none of its classes (Q7188, Q1197588, Q317, Q11514315) is in data/imports/wikidata-seeds.json → classes
+- [`Q2886342`](https://www.wikidata.org/wiki/Q2886342) **Military Junta of Chile** — Military dictatorship of Chile (1973–90) — 1973–1990 — Q25424534, Q17633149
+  - none of its classes (Q25424534, Q17633149) is in data/imports/wikidata-seeds.json → classes
+
 ## monarchy-of-the-north-1919
 
 `event` · searched for **The Monarchy of the North**
@@ -476,6 +528,30 @@ nothing on Wikidata is called "Portugal signs the North Atlantic Treaty".
 `event` · searched for **The fires of October 2017**
 
 nothing on Wikidata is called "The fires of October 2017".
+
+## partido-democratico
+
+`actor` · 1912–1926 · searched for **Democratic Party**
+
+10 item(s) were read and each failed a test.
+
+- [`Q29552`](https://www.wikidata.org/wiki/Q29552) **Democratic Party** — American political party — 1828– — Q7278
+  - its dates are more than 1 year from the record's
+- [`Q4157645`](https://www.wikidata.org/wiki/Q4157645) **Democratic Party** — political party in Uganda — 1954– — Q7278
+  - its dates are more than 1 year from the record's
+- [`Q47729`](https://www.wikidata.org/wiki/Q47729) **Democratic Party** — Italian social-democratic political party — 2007– — Q7278
+  - its dates are more than 1 year from the record's
+
+## pcp
+
+`actor` · 1921– · searched for **Partido Comunista Português**
+
+2 item(s) were read and each failed a test.
+
+- [`Q769829`](https://www.wikidata.org/wiki/Q769829) **Portuguese Communist Party** — political party in Portugal — 1921– — Q233591
+  - none of its classes (Q233591) is in data/imports/wikidata-seeds.json → classes
+- [`Q3295407`](https://www.wikidata.org/wiki/Q3295407) **Communist Party (Reconstructed)** — defunct Portuguese political party — 1981– — Q7278
+  - its dates are more than 1 year from the record's
 
 ## pedrogao-grande-fires-2017
 
