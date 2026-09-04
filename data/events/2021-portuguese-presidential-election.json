@@ -2,8 +2,8 @@
   "schema": 1,
   "id": "2021-portuguese-presidential-election",
   "kind": "event",
-  "status": "active",
-  "supersededBy": null,
+  "status": "merged",
+  "supersededBy": "marcelo-reelected-2021",
   "aliases": [],
   "authors": [
     {
@@ -13,11 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "m22-merged"
+    ],
+    "note": "Merged in M22 into marcelo-reelected-2021, which is the same event: the presidential election of 24 January 2021, at which Marcelo Rebelo de Sousa was re-elected in the first round. This record keeps the Wikidata id the import brought and names its survivor rather than becoming an anonymous tombstone."
   },
   "wikidata": "Q48861733",
   "sitelinks": 17,

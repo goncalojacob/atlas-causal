@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "december-2022-floods-in-portugal",
   "kind": "event",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,11 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "m22-retracted"
+    ],
+    "note": "Retracted in M22: the floods of 13 December 2022 in and around Lisbon. The atlas holds nothing it can be argued to have changed — no record of the response, the inquiry or the rules that followed — and the disasters it does hold, the fires of 2017, are wired to each other and to the reform they produced. A disaster with no recorded consequence has no honest edge."
   },
   "wikidata": "Q115707122",
   "sitelinks": 0,

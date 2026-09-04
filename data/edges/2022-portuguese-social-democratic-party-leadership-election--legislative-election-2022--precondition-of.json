@@ -1,0 +1,34 @@
+{
+  "schema": 1,
+  "id": "2022-portuguese-social-democratic-party-leadership-election--legislative-election-2022--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "costa-pinto-teixeira-2019-political-institutions",
+      "locator": null
+    }
+  ],
+  "from": "2022-portuguese-social-democratic-party-leadership-election",
+  "to": "legislative-election-2022",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The ballot of 27 November was brought forward by a week for a reason: the president had dissolved the Assembly on 5 November and the party needed a candidate for prime minister before the campaign. That is what this election chose — not only a leader for the next two years but the name at the head of the largest opposition list on 30 January. The edge is `precondition-of` because the legislative election was already called when this one was held: what the party settled was who would fight it, not that it would happen.",
+  "dispute": null
+}

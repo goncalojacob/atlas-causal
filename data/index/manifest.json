@@ -1,7 +1,7 @@
 {
   "counts": {
     "actors": 326,
-    "edges": 145,
+    "edges": 151,
     "events": 326,
     "narratives": 1,
     "places": 25,
@@ -11,9 +11,9 @@
     "sources": 34
   },
   "files": {
-    "review": "index/review-b892d9964272.json",
-    "sources": "index/sources-34f45a7b03cf.json",
-    "topology": "index/topology-dbf7577d247e.json"
+    "review": "index/review-65f3ca6567ac.json",
+    "sources": "index/sources-f887649cdfad.json",
+    "topology": "index/topology-a16bb1e9414a.json"
   },
   "land": [
     {
@@ -104,7 +104,9 @@
     "came first and led the government",
     "campaigned against",
     "candidate",
+    "chose a new leader",
     "chose a new secretary-general",
+    "chose its leader and candidate for prime minister",
     "claimed responsibility",
     "coalition party",
     "commander",
@@ -147,6 +149,7 @@
     "leader",
     "leader of the winning party",
     "led the campaign for a no vote",
+    "led the minority government that was censured",
     "led the winning alliance",
     "legislator",
     "lender",
@@ -189,6 +192,7 @@
     "resolution authority",
     "resolved",
     "restored",
+    "returned to the regional government without a majority",
     "returned without a majority",
     "sheltered and armed the gunmen",
     "signatory",
@@ -230,6 +234,7 @@
     "won it and took the leadership",
     "won its first absolute majority",
     "won lisbon and porto",
+    "won the leadership",
     "younger son, succeeded to the throne"
   ],
   "schema": 1

@@ -9,14 +9,19 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "summary-drafted"
     ]
   },
   "wikidata": "Q126708649",
@@ -27,12 +32,24 @@
   },
   "sources": [
     {
+      "source": "costa-pinto-teixeira-2019-political-institutions",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"2025 Madeiran regional election\", revision 1363880650"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Eleições legislativas regionais na Madeira em 2025\", revision 71818596"
+    },
+    {
       "source": "wikidata",
-      "locator": "Q126708649"
+      "locator": null
     }
   ],
   "title": "2025 Madeiran regional election",
-  "summary": "Wikidata item Q126708649, imported by tools/import/wikidata.mjs. The item's own description reads \"Portuguese regional election\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The third Madeiran regional election in eighteen months was held on 23 March 2025, after a motion of censure against Miguel Albuquerque's minority government was approved in December 2024 and the assembly was dissolved in January. It is in the atlas as the end of that sequence, and because the sequence is the clearest case the atlas holds of what a regional assembly without a majority does: three ballots, one leader under investigation, and a region governed by resigned or censured cabinets for the better part of two years.",
   "when": {
     "start": 2025,
     "end": 2025,
@@ -40,5 +57,10 @@
   },
   "place": null,
   "region": "europe",
-  "actors": []
+  "actors": [
+    {
+      "actor": "psd",
+      "role": "led the minority government that was censured"
+    }
+  ]
 }

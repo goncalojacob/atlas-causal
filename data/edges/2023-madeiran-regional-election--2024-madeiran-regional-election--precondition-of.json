@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "2023-madeiran-regional-election--2024-madeiran-regional-election--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "costa-pinto-teixeira-2019-political-institutions",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Eleições legislativas regionais na Madeira em 2024\", revision 71818912"
+    }
+  ],
+  "from": "2023-madeiran-regional-election",
+  "to": "2024-madeiran-regional-election",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The snap election of May 2024 was caused by a corruption investigation and a resignation, not by the ballot of September 2023. What the 2023 ballot fixed was when it could happen: the constitution forbids the president from dissolving a legislative assembly within six months of its election, so between Albuquerque's resignation on 5 February and the dissolution on 27 March nothing could be done, and a region governed by a resigned cabinet waited seven weeks for a clock to run out. The edge argues that constraint, which is why it is `precondition-of`.",
+  "dispute": null
+}

@@ -363,3 +363,57 @@ Five edges.
 nothing on the pandemic, so the record and its edge stand on two cached
 Wikipedia leads and the Wikidata item. Rule 22 would forbid `consensus` there
 in any case.
+
+---
+
+## 2020s — 20 of 30 retracted, 4 merged, 6 wired
+
+Thirty and not thirty-one, because `murder-of-diamantino-monteiro-pereira`
+left the decade: the Wikidata item's own description dates the killing of the
+Sacavém pottery works' administrator to 6 December 1982 and the import entered
+it as 2022. M22 corrected the year, which moves the record into the armed far
+left of the 1980s and retracts it there for the same reason as the rest of
+that series. The 1980s therefore hold 34 imported events and 26 retractions
+rather than the 33 and 25 counted in the section above.
+
+The four merged are the presidential election of 2021 and the legislative
+elections of 2022, 2024 and 2025, all of which the atlas already held.
+
+The six wired make two chains and one link.
+
+- **The link**: `covid-19-pandemic-in-europe`, between the outbreak in Wuhan
+  and the state of emergency of 18 March 2020. What closed Portugal was an
+  epidemic already inside Europe and inside Spain, and the atlas now says so
+  in three records rather than asserting it in one summary.
+- **The Social Democrat chain**: the leadership ballot of 27 November 2021,
+  which chose the candidate for the election of January 2022; the defeat at
+  that election, which caused the leadership ballot of 28 May 2022; and Luís
+  Montenegro, whom that ballot chose and who formed the government of April
+  2024. Three records, one of them corrected — the import filed the November
+  2021 ballot under a 2022 id and title, and the id is immutable, so the
+  record carries an `id-mismatch` flag and a title, date and summary that all
+  say 2021.
+- **The Madeiran chain**: three regional elections in eighteen months —
+  September 2023, May 2024, March 2025 — a president of the regional
+  government named as a suspect and resigning, a six-month constitutional bar
+  that left a resigned cabinet in place for seven weeks, a second election
+  that changed nothing, a motion of censure in December 2024 and a third
+  election. These are the regional elections the repetition principle keeps,
+  and they show what the principle actually tests: not whether a ballot is a
+  repetition, but whether anything follows from it.
+
+**Retracted, twenty.** Five repetitions (the local elections of 2021 and 2025,
+the European election of 2024, the Azorean elections of 2020 and 2024); eight
+single-municipality ballots — Lisbon and Porto in 2021 and 2025, and Amadora,
+Setúbal, Sintra and Viseu in 2025; the Social Democrat leadership election of
+January 2020, which nothing in the atlas follows from; the Union-wide European
+election of 2024; four disasters (the Madeira fires of August 2024, the
+mainland fires of September 2024, the European drought of 2022 and the Lisbon
+floods of December 2022); and the killing of Odair Moniz.
+
+That last is the hardest retraction in the decade. The atlas holds nothing
+about immigration, about policing or about the neighbourhoods where it
+happened, and the edge somebody will want — from the killing and the riots to
+the vote of May 2025 — is an interpretation of an election rather than a fact
+about one. It is retracted for want of an atlas to attach it to, not for want
+of importance, and it should be among the first records rewritten.

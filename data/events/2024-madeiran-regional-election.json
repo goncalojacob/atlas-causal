@@ -9,14 +9,19 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "summary-drafted"
     ]
   },
   "wikidata": "Q123685068",
@@ -27,12 +32,24 @@
   },
   "sources": [
     {
+      "source": "costa-pinto-teixeira-2019-political-institutions",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"2024 Madeiran regional election\", revision 1363880288"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Eleições legislativas regionais na Madeira em 2024\", revision 71818912"
+    },
+    {
       "source": "wikidata",
-      "locator": "Q123685068"
+      "locator": null
     }
   ],
   "title": "2024 Madeiran regional election",
-  "summary": "Wikidata item Q123685068, imported by tools/import/wikidata.mjs. The item's own description reads \"Portuguese regional election\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "A snap regional election was held in Madeira on 26 May 2024, more than three years before the legislature was due to end, after Miguel Albuquerque resigned as president of the regional government on 5 February, having been named a suspect in a corruption investigation. The Social Democrats came first again and again without a majority, and Albuquerque returned to office. In December the assembly approved a motion of censure against him, and a third election followed in March 2025. It is in the atlas as the middle of the only sequence of three elections in eighteen months anywhere in the Portuguese system.",
   "when": {
     "start": 2024,
     "end": 2024,
@@ -40,5 +57,10 @@
   },
   "place": null,
   "region": "europe",
-  "actors": []
+  "actors": [
+    {
+      "actor": "psd",
+      "role": "returned to the regional government without a majority"
+    }
+  ]
 }

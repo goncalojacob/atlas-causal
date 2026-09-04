@@ -1663,6 +1663,238 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-teixeira-2019-political-institutions",
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "2022-portuguese-social-democratic-party-leadership-election",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted",
+          "id-mismatch"
+        ],
+        "note": "The import filed the ballot of 27 November 2021 under the id and title of a 2022 election; both cached leads and the Wikidata item date it to 2021, and M22 corrected the title. The id is immutable once written, so it stays wrong: a reader following the id will find a record whose title, date and summary all say 2021."
+      },
+      "status": "active",
+      "title": "2021 Portuguese Social Democratic Party leadership election"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-teixeira-2019-political-institutions"
+      ],
+      "from": "2022-portuguese-social-democratic-party-leadership-election",
+      "id": "2022-portuguese-social-democratic-party-leadership-election--legislative-election-2022--precondition-of",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "legislative-election-2022",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-teixeira-2019-political-institutions",
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "2022-portuguese-social-democratic-party-leadership-election-q111182017",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "2022 Portuguese Social Democratic Party leadership election"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-teixeira-2019-political-institutions"
+      ],
+      "from": "2022-portuguese-social-democratic-party-leadership-election-q111182017",
+      "id": "2022-portuguese-social-democratic-party-leadership-election-q111182017--montenegro-government-2024--precondition-of",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "montenegro-government-2024",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-teixeira-2019-political-institutions",
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "2023-madeiran-regional-election",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "2023 Madeiran regional election"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-teixeira-2019-political-institutions",
+        "wikipedia-pt"
+      ],
+      "from": "2023-madeiran-regional-election",
+      "id": "2023-madeiran-regional-election--2024-madeiran-regional-election--precondition-of",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "2024-madeiran-regional-election",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-teixeira-2019-political-institutions",
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "2024-madeiran-regional-election",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "2024 Madeiran regional election"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-teixeira-2019-political-institutions",
+        "wikipedia-en"
+      ],
+      "from": "2024-madeiran-regional-election",
+      "id": "2024-madeiran-regional-election--2025-madeiran-regional-election--caused",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "2025-madeiran-regional-election",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-teixeira-2019-political-institutions",
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "2025-madeiran-regional-election",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "2025 Madeiran regional election"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -3861,6 +4093,58 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "covid-19-pandemic-in-europe",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted",
+          "facts-thin"
+        ],
+        "note": "As with the pandemic record itself: the bibliography holds nothing on COVID-19, so this record and its edges stand on the cached Wikipedia leads and the Wikidata item. A reviewer should add a source before signing."
+      },
+      "status": "active",
+      "title": "COVID-19 pandemic in Europe"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "dre-2020-state-of-emergency",
+        "wikipedia-en"
+      ],
+      "from": "covid-19-pandemic-in-europe",
+      "id": "covid-19-pandemic-in-europe--covid-state-of-emergency-2020--caused",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "covid-state-of-emergency-2020",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -5810,6 +6094,28 @@
       },
       "status": "active",
       "title": "Legislative election of 2022"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-teixeira-2019-political-institutions"
+      ],
+      "from": "legislative-election-2022",
+      "id": "legislative-election-2022--2022-portuguese-social-democratic-party-leadership-election-q111182017--caused",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "2022-portuguese-social-democratic-party-leadership-election-q111182017",
+      "type": "caused"
     },
     {
       "authors": [
@@ -8842,190 +9148,10 @@
     }
   ],
   "schema": 1,
-  "total": 885,
+  "total": 891,
   "warnings": [
     {
-      "id": "2020-azorean-regional-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2020-portuguese-social-democratic-party-leadership-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2021-lisbon-local-elections",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2021-porto-local-elections",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2021-portuguese-local-elections",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2021-portuguese-presidential-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2022-european-drought",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2022-portuguese-legislative-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2022-portuguese-social-democratic-party-leadership-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2022-portuguese-social-democratic-party-leadership-election-q111182017",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2023-madeiran-regional-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2024-azorean-regional-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2024-european-parliament-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2024-european-parliament-election-in-portugal",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2024-madeira-wildfires",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2024-madeiran-regional-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2024-portugal-wildfires",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2024-portuguese-legislative-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2025-amadora-local-elections",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2025-lisbon-local-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2025-madeiran-regional-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2025-porto-local-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2025-portuguese-legislative-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2025-portuguese-local-elections",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2025-setubal-local-elections",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2025-sintra-local-elections",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2025-viseu-local-elections",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "december-2022-floods-in-portugal",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
       "id": "iberian-blackout-2025",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "killing-of-odair-moniz",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "murder-of-diamantino-monteiro-pereira",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"

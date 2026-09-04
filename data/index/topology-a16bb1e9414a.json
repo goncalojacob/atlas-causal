@@ -5606,6 +5606,46 @@
     },
     {
       "aliases": [],
+      "confidence": "probable",
+      "from": "2022-portuguese-social-democratic-party-leadership-election",
+      "id": "2022-portuguese-social-democratic-party-leadership-election--legislative-election-2022--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "legislative-election-2022",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "2022-portuguese-social-democratic-party-leadership-election-q111182017",
+      "id": "2022-portuguese-social-democratic-party-leadership-election-q111182017--montenegro-government-2024--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "montenegro-government-2024",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "2023-madeiran-regional-election",
+      "id": "2023-madeiran-regional-election--2024-madeiran-regional-election--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "2024-madeiran-regional-election",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "2024-madeiran-regional-election",
+      "id": "2024-madeiran-regional-election--2025-madeiran-regional-election--caused",
+      "status": "active",
+      "supersededBy": null,
+      "to": "2025-madeiran-regional-election",
+      "type": "caused"
+    },
+    {
+      "aliases": [],
       "confidence": "consensus",
       "from": "25-november-1975",
       "id": "25-november-1975--constitution-1976--enabled",
@@ -6067,6 +6107,16 @@
     {
       "aliases": [],
       "confidence": "probable",
+      "from": "covid-19-pandemic-in-europe",
+      "id": "covid-19-pandemic-in-europe--covid-state-of-emergency-2020--caused",
+      "status": "active",
+      "supersededBy": null,
+      "to": "covid-state-of-emergency-2020",
+      "type": "caused"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
       "from": "covid-state-of-emergency-2020",
       "id": "covid-state-of-emergency-2020--marcelo-reelected-2021--precondition-of",
       "status": "active",
@@ -6402,6 +6452,16 @@
       "status": "active",
       "supersededBy": null,
       "to": "legislative-election-2022",
+      "type": "caused"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "legislative-election-2022",
+      "id": "legislative-election-2022--2022-portuguese-social-democratic-party-leadership-election-q111182017--caused",
+      "status": "active",
+      "supersededBy": null,
+      "to": "2022-portuguese-social-democratic-party-leadership-election-q111182017",
       "type": "caused"
     },
     {
@@ -10088,7 +10148,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "2020 Azorean regional election",
       "weight": 0,
@@ -10110,7 +10170,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "2020 Portuguese Social Democratic Party leadership election",
       "weight": 0,
@@ -10133,7 +10193,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "2021 Lisbon local elections",
       "weight": 0,
@@ -10155,7 +10215,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "2021 Porto local elections",
       "weight": 0,
@@ -10177,7 +10237,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "2021 Portuguese local elections",
       "weight": 0,
@@ -10199,8 +10259,8 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
-      "supersededBy": null,
+      "status": "merged",
+      "supersededBy": "marcelo-reelected-2021",
       "title": "2021 Portuguese presidential election",
       "weight": 0,
       "when": {
@@ -10221,7 +10281,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "2022 European drought",
       "weight": 0,
@@ -10241,8 +10301,8 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
-      "supersededBy": null,
+      "status": "merged",
+      "supersededBy": "legislative-election-2022",
       "title": "2022 Portuguese legislative election",
       "weight": 0,
       "when": {
@@ -10257,7 +10317,12 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "psd",
+          "role": "chose its leader and candidate for prime minister"
+        }
+      ],
       "aliases": [],
       "id": "2022-portuguese-social-democratic-party-leadership-election",
       "place": null,
@@ -10265,9 +10330,10 @@
       "regionMethod": "override",
       "status": "active",
       "supersededBy": null,
-      "title": "2022 Portuguese Social Democratic Party leadership election",
-      "weight": 0,
+      "title": "2021 Portuguese Social Democratic Party leadership election",
+      "weight": 2,
       "when": {
+        "calendar": "gregorian",
         "date": "2021-11-27",
         "end": 2021,
         "start": 2021
@@ -10279,7 +10345,16 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "psd",
+          "role": "chose a new leader"
+        },
+        {
+          "actor": "luis-montenegro",
+          "role": "won the leadership"
+        }
+      ],
       "aliases": [],
       "id": "2022-portuguese-social-democratic-party-leadership-election-q111182017",
       "place": null,
@@ -10288,7 +10363,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "2022 Portuguese Social Democratic Party leadership election",
-      "weight": 0,
+      "weight": 4,
       "when": {
         "date": "2022-05-28",
         "end": 2022,
@@ -10301,7 +10376,12 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "psd",
+          "role": "returned to the regional government without a majority"
+        }
+      ],
       "aliases": [],
       "id": "2023-madeiran-regional-election",
       "place": null,
@@ -10310,7 +10390,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "2023 Madeiran regional election",
-      "weight": 0,
+      "weight": 2,
       "when": {
         "date": "2023-09-24",
         "end": 2023,
@@ -10329,7 +10409,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "2024 Azorean regional election",
       "weight": 0,
@@ -10351,7 +10431,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "2024 European Parliament election",
       "weight": 0,
@@ -10374,7 +10454,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "2024 European Parliament election in Portugal",
       "weight": 0,
@@ -10396,7 +10476,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "2024 Madeira wildfires",
       "weight": 0,
@@ -10412,7 +10492,12 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "psd",
+          "role": "returned to the regional government without a majority"
+        }
+      ],
       "aliases": [],
       "id": "2024-madeiran-regional-election",
       "place": null,
@@ -10421,7 +10506,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "2024 Madeiran regional election",
-      "weight": 0,
+      "weight": 3,
       "when": {
         "date": "2024-05-26",
         "end": 2024,
@@ -10440,7 +10525,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "2024 Portugal wildfires",
       "weight": 0,
@@ -10463,8 +10548,8 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
-      "supersededBy": null,
+      "status": "merged",
+      "supersededBy": "legislative-election-2024",
       "title": "2024 Portuguese legislative election",
       "weight": 0,
       "when": {
@@ -10485,7 +10570,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "2025 Amadora local elections",
       "weight": 0,
@@ -10507,7 +10592,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "2025 Lisbon local election",
       "weight": 0,
@@ -10523,7 +10608,12 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "psd",
+          "role": "led the minority government that was censured"
+        }
+      ],
       "aliases": [],
       "id": "2025-madeiran-regional-election",
       "place": null,
@@ -10532,7 +10622,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "2025 Madeiran regional election",
-      "weight": 0,
+      "weight": 2,
       "when": {
         "date": "2025-03-23",
         "end": 2025,
@@ -10551,7 +10641,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "2025 Porto local election",
       "weight": 0,
@@ -10573,8 +10663,8 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
-      "supersededBy": null,
+      "status": "merged",
+      "supersededBy": "legislative-election-2025",
       "title": "2025 Portuguese legislative election",
       "weight": 0,
       "when": {
@@ -10595,7 +10685,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "2025 Portuguese local elections",
       "weight": 0,
@@ -10617,7 +10707,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "2025 Setúbal local elections",
       "weight": 0,
@@ -10639,7 +10729,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "2025 Sintra local elections",
       "weight": 0,
@@ -10661,7 +10751,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "2025 Viseu local elections",
       "weight": 0,
@@ -11838,7 +11928,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "COVID-19 pandemic in Europe",
-      "weight": 1,
+      "weight": 2,
       "when": {
         "date": "2020-01-24",
         "end": null,
@@ -11869,7 +11959,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "First state of emergency of the pandemic",
-      "weight": 4,
+      "weight": 5,
       "when": {
         "calendar": "gregorian",
         "date": "2020-03-18",
@@ -11885,7 +11975,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "December 2022 floods in Portugal",
       "weight": 0,
@@ -12907,7 +12997,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "killing of Odair Moniz",
       "weight": 0,
@@ -13140,7 +13230,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Legislative election of 2022",
-      "weight": 10,
+      "weight": 12,
       "when": {
         "calendar": "gregorian",
         "date": "2022-01-30",
@@ -13509,7 +13599,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "The Montenegro government takes office",
-      "weight": 6,
+      "weight": 7,
       "when": {
         "calendar": "gregorian",
         "date": "2024-04-02",
@@ -13594,14 +13684,14 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "murder of Diamantino Monteiro Pereira",
       "weight": 0,
       "when": {
-        "date": "2022-12-06",
-        "end": 2022,
-        "start": 2022
+        "date": "1982-12-06",
+        "end": 1982,
+        "start": 1982
       },
       "wikidata": "Q115460814"
     },

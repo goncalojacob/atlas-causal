@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "killing-of-odair-moniz",
   "kind": "event",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,11 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "m22-retracted"
+    ],
+    "note": "Retracted in M22: the death of Odair Moniz, shot by a PSP officer during a chase at Cova da Moura on 21 October 2024, and the riots across six municipalities that followed. The atlas holds nothing about immigration, about policing or about these neighbourhoods, and the one edge somebody will want to draw — to the vote of May 2025 — is an interpretation of an election, not a fact about it. Retracted for want of an atlas to attach it to, not for want of importance."
   },
   "wikidata": "Q130648555",
   "sitelinks": 3,

@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "2024-madeiran-regional-election--2025-madeiran-regional-election--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "costa-pinto-teixeira-2019-political-institutions",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"2025 Madeiran regional election\", revision 1363880650"
+    }
+  ],
+  "from": "2024-madeiran-regional-election",
+  "to": "2025-madeiran-regional-election",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The ballot of May 2024 returned the same party, the same leader and the same absence of a majority as the one eight months before it, in an assembly where the opposition had by then decided it would not tolerate him. The motion of censure approved in December is what the result made available and what the parties used; the dissolution and the election of 23 March 2025 followed within three months. An election that changes nothing in a chamber that has stopped supporting the government is a cause of the next election, and that is what this edge says.",
+  "dispute": null
+}

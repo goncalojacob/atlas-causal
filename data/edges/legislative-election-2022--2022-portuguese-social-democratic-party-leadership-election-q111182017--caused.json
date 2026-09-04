@@ -1,0 +1,34 @@
+{
+  "schema": 1,
+  "id": "legislative-election-2022--2022-portuguese-social-democratic-party-leadership-election-q111182017--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "costa-pinto-teixeira-2019-political-institutions",
+      "locator": null
+    }
+  ],
+  "from": "legislative-election-2022",
+  "to": "2022-portuguese-social-democratic-party-leadership-election-q111182017",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "Rio had led the party into two legislative elections and lost both, the second to the first absolute majority any party had won since 2005, and he did not stand again. The leadership ballot of 28 May follows from that defeat as directly as the Socialist ballot of July 2011 followed from theirs: the contest existed because the leader who had just lost would not be the leader at the next election.",
+  "dispute": null
+}
