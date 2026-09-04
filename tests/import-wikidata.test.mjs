@@ -529,7 +529,7 @@ test('--reconcile refuses to run when the seeds file has not allowed it', async 
 
 test('--candidates writes a list and touches nothing under data/', async () => {
   const { dir } = await scratch({
-    queries: [{ name: 'northfield', sparql: 'SELECT ?item WHERE { }' }],
+    queries: [{ name: 'northfield', period: '1970s', sparql: 'SELECT ?item WHERE { }' }],
     items: [],
   });
   const beforeEvents = await readdir(path.join(dir, 'events'));
@@ -539,10 +539,48 @@ test('--candidates writes a list and touches nothing under data/', async () => {
   assert.deepEqual(await readdir(path.join(dir, 'events')), beforeEvents);
   assert.equal(await readdir(path.join(dir, 'imports')).then((f) => f.includes('wikidata-state.json')), false);
 
+  // Cada coluna que o dono precisa de ver está na linha, e não no item.
+  const [first, second] = report.rows;
+  assert.deepEqual(
+    { period: first.period, label: first.label, labelPt: first.labelPt, date: first.date, type: first.type, sitelinks: first.sitelinks },
+    { period: '1970s', label: 'Northfield Rising', labelPt: 'Levantamento de Northfield', date: '1974-04-25', type: 'invented uprising', sitelinks: 12 },
+  );
+  assert.deepEqual([second.labelPt, second.date, second.type, second.sitelinks], [null, null, null, null]);
+
   const page = candidatesMarkdown(report.rows, { generated: '2026-09-04' });
-  assert.match(page, /## northfield/);
-  assert.match(page, /- \[ \] \[`Q9000001`\]/, 'every row is a box for a person to tick');
-  assert.match(page, /tick what belongs in this/);
+  assert.match(page, /^## 1970s — 2 candidate\(s\), 0 already in the atlas$/m);
+  assert.match(page, /^### northfield — 2$/m);
+  assert.match(page, /^\| keep \| item \| label \(en\) \| label \(pt\) \| date \| type \| sitelinks \| in the atlas \|$/m);
+  assert.match(page, /\| \[ \] \| \[`Q9000001`\]\(https:\/\/www\.wikidata\.org\/wiki\/Q9000001\) \| Northfield Rising \| Levantamento de Northfield \| 1974-04-25 \| invented uprising \| 12 \| — \|/);
+  assert.match(page, /Undated Assembly \\\| Second Session/, 'a bar in a label does not become a column');
+  assert.match(page, /Put an `x` between/);
+});
+
+test('the candidate list is grouped by period, counted, and lists an item once', async () => {
+  const { dir } = await scratch({
+    queries: [
+      { name: 'coups', period: '1970s', sparql: 'SELECT ?item WHERE { }' },
+      { name: 'battles', period: '1970s', sparql: 'SELECT ?item WHERE { }' },
+    ],
+    items: [],
+  });
+  const { fetcher } = await fixtureFetcher();
+  const { report } = await runCandidatesMode(dir, { fetcher, today: '2026-09-04' });
+  assert.deepEqual(report.rows.map((r) => `${r.query}:${r.qid}`), ['coups:Q9000001', 'coups:Q9000007'],
+    'the second query returns the same items and adds nothing');
+
+  const page = candidatesMarkdown([
+    { query: 'coups', period: '1970s', qid: 'Q1', label: 'A', known: true },
+    { query: 'coups', period: '1970s', qid: 'Q2', label: 'B', known: false },
+    { query: 'elections', period: '1980s', qid: 'Q3', label: 'C', known: false },
+    { query: 'stray', period: null, qid: 'Q4', label: 'D', known: false },
+  ], { generated: '2026-09-04' });
+  assert.match(page, /^## 1970s — 2 candidate\(s\), 1 already in the atlas$/m);
+  assert.match(page, /^## 1980s — 1 candidate\(s\), 0 already in the atlas$/m);
+  assert.match(page, /^## no period — 1 candidate\(s\), 0 already in the atlas$/m);
+  assert.match(page, /4 candidate\(s\) over 3 period\(s\), of which 1 already/);
+  assert.match(page, /\| \[`Q1`\]\(https:\/\/www\.wikidata\.org\/wiki\/Q1\) \| A \| — \| — \| — \| — \| yes \|/,
+    'a record the atlas already has says so');
 });
 
 test('the report says what happened, including what it would not decide', async () => {

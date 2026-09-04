@@ -23,4 +23,4 @@ built to fail loudly and restore `data/` rather than commit something odd.
 | `entities.json` | `wbgetentities` for the six synthetic items, one of each case the import has to handle |
 | `search.json` | `wbsearchentities` for a name with two plausible items behind it |
 | `summary-en.json` | the REST summary of one article, the shape the lead cache is built from |
-| `sparql.json` | a SPARQL `SELECT ?item ?itemLabel ?itemDescription` result, the shape `--candidates` reads |
+| `sparql.json` | a SPARQL `SELECT ?item ?itemLabel ?labelPt ?itemDescription ?date ?typeLabel ?sitelinks` result, the shape `--candidates` reads: one row with everything bound, one with only a label, one that is not an item at all |

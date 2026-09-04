@@ -36,10 +36,16 @@
         "additionalProperties": false,
         "properties": {
           "name": {
-            "description": "A slug naming the query, unique in the file: it is what the candidate list is grouped by.",
+            "description": "A slug naming the query, unique in the file: within a period it is what the candidate list is grouped by, and it is what the report names when a query fails.",
             "type": "string",
             "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
             "maxLength": 120
+          },
+          "period": {
+            "description": "Which stretch of time the query asks about, as a person would name it — \"1970s\". The candidate list is grouped by it and counted per group, because a list of a thousand rows in one heap is not something anybody ticks. Absent means the query is not about a period; those rows are grouped together at the end.",
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 40
           },
           "sparql": {
             "description": "The query itself, exactly as it is sent. Written by a person and readable in the diff, so what the atlas asked for is reviewable.",
