@@ -6,7 +6,29 @@ session ends. `ARCHITECTURE.md` is the target; this file is the position.
 
 ## Last updated
 
-2026-09-04, after M17 (`docs/m17-brief.md`): the import has now **been run**,
+2026-09-04, after M18 (`docs/m18-brief.md`): there is a **list for the owner
+to tick**. `data/imports/wikidata-seeds.json` now carries **126 queries**, one
+per type per decade — elections, coups and uprisings, treaties, referendums,
+massacres, legislation, independences, disasters, battles and wars, over the
+fourteen decades from 1890 to 2025 — each restricted by country, location or
+participant to Portugal and, up to the independences, the territories it
+administered, with Macau to 1999. The Action ran them on
+`import/candidates-2026-09-04c` and the result is **`docs/m18-candidates.md`:
+250 candidates over 14 periods**, a table per type per period with a box to
+tick, both labels, the date, the class, the sitelink count and whether a
+record here already carries that item. Nothing under `data/` was written.
+**Thirty of the 126 queries were refused** by the query service for taking
+more than its sixty seconds — every `coups-and-uprisings`, every
+`legislation`, most `battles-and-wars`, five `independences` — and they are
+named on the page, so a period whose interesting half is missing says so
+rather than reading as though Wikidata had nothing. Each period also carries
+a hand-written note on what its queries could not see. Four runs were needed
+to get there: the first returned 1163 candidates of which 866 were one
+municipality's share of a national election, the second and the fourth were
+worse than the third, and the third is the one on disk. **The owner ticks
+about 120 rows; M19 imports what is ticked.**
+
+Before that, 2026-09-04, after M17 (`docs/m17-brief.md`): the import has now **been run**,
 and the summaries are no longer one line each. The reconcile pass went out on
 the branch `import/reconcile-2026-09-04` and matched the atlas's hand-written
 records against Wikidata: **51 of 164 records matched with certainty** — 44 of
@@ -106,7 +128,7 @@ correction bundle for the issue path, and the public site gains no backend.
 
 ## Phase
 
-**M0 to M17 built, plus the map usability work, on branch `m0`, pull
+**M0 to M18 built, plus the map usability work, on branch `m0`, pull
 request #1 open against `main`.** M13 was the last milestone in the original
 run protocol's order; M14 ran after it from `docs/m14-brief.md` on the
 `brief-m14` side branch, and M15 from `docs/m15-brief.md`, which arrived on
@@ -117,8 +139,11 @@ time, on the branch `import/reconcile-2026-09-04`, and fast-forward-merged the
 Action's commits back into `m0`; the reconcile cursor in
 `data/imports/wikidata-state.json` has walked every hand-written record, so a
 second reconcile pass would do nothing until the cursor is cleared or new
-records are written. **M18** (the candidate list the owner ticks) is queued and
-not started, and it needs queries in the seeds file, which still has none. M8 changed no structure
+records are written. **M18** wrote the 126 queries into the seeds
+file, ran them on `import/candidates-2026-09-04c` and merged the result:
+`docs/m18-candidates.md`, 250 candidates for the owner to tick. **The chain
+stops there.** M19 (`docs/m19-brief.md`, on the branch `brief-m19`) imports
+what is ticked, and nothing is ticked yet. M8 changed no structure
 and wrote no revision, as its brief allows.
 `ARCHITECTURE.md` **revision 16** is the specification; its opening note says what changed and why (revision 4
 added the `actor` kind; revision 5 added `cluster.js`, `weight` in the
@@ -1576,6 +1601,46 @@ object. Every later card gets a file.
     looking checked when what changed is that the draft got longer.
 117. **59 hand-written actors, not "about 61".** The brief's estimate; the
     count on disk is 59, against 80 events and 25 places.
+118. **The candidate list is a table, not a list of bullets.** The M16 tool
+    wrote one bullet per item with its label and description. The M18 brief
+    asks for the item, both labels, the date, the type, the sitelink count
+    and whether a record exists, grouped by period — which is a table with a
+    column to fill, so `candidatesMarkdown` writes one, and a query says
+    which period it belongs to through a new optional `period` in
+    `schema/v1/import-seeds.json`.
+119. **The file is a copy under the brief's name, not the tool's output
+    path.** Deviation 110 said M18 would name its own file with `--to`, but
+    the Action takes its arguments from the branch name and has nowhere to
+    pass one. `--candidates` still writes `docs/wikidata-candidates.md`; the
+    run's output was renamed to `docs/m18-candidates.md` on `m0`. That is
+    better than the plan: the owner's ticks live in a file no later run
+    writes to.
+120. **The queries were run four times, and the third is the one kept.** The
+    first flooded the list with per-district election items — 866 of 1163
+    rows — the second and fourth were refused by the query service more
+    often than the third. `data/imports/wikidata-seeds.json` and
+    `docs/m18-candidates.md` were both put back to the third run's state, so
+    the file and its output are one thing and its product. The two rejected
+    shapes are in the history with their reasons.
+121. **Thirty queries have no answer, and the page says so.** The query
+    service allows sixty seconds and refused 30 of the 126 — the four types
+    whose class sets are broad. `--candidates` printed nothing about a
+    refusal, so a period could read as empty when it was unasked; it now
+    lists them on the page and in the log. Extending the list means making
+    those four cheaper, or asking for one class at a time.
+122. **The elections queries ask for two language editions.** Wikidata has an
+    item per district and per municipality for recent legislative elections
+    and no property separates them from the national vote. The line is
+    crude, it drops a real election nobody wrote about twice, and it is what
+    makes the list tickable; each query's note says so.
+123. **The per-period notes are written by hand into a generated file.** The
+    brief's step 3 asks for them and no generator can write them. They sit
+    under each period's heading, and the top of the page says which part of
+    it is hand-written.
+124. **The list says 0 records already exist, which is true and misleading.**
+    "In the atlas" reads item identifiers, and 79 of the 80 events here
+    carry none — M17 could not match them. The top of the page says to check
+    a familiar title before ticking it.
 
 ## Dates to verify
 
