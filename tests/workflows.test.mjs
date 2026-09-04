@@ -129,7 +129,10 @@ test('the import Action runs only on import branches and never on m0', async () 
   }
   assert.match(text, /does not name a mode/);
   // Nothing is pushed that has not validated, and a failure puts data/ back.
-  const order = ['wikidata.mjs', 'tools/validate.mjs', 'node --test', 'build-index.mjs', 'git commit', 'git push'];
+  // The index is rebuilt before the tree is checked, because the suite the
+  // job runs checks the index against the tree: an import that wrote a record
+  // and left data/index/ behind fails rule 16 on its own output.
+  const order = ['wikidata.mjs', 'build-index.mjs', 'tools/validate.mjs --index', 'node --test', 'git commit', 'git push'];
   let at = -1;
   for (const step of order) {
     const next = text.indexOf(step, at + 1);

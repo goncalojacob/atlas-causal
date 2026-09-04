@@ -60,9 +60,13 @@ jobs:
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          # Every batch is validated and indexed before it is committed, and a
+          # Every batch is indexed and validated before it is committed, and a
           # failure restores data/ rather than leaving half an import in the
-          # tree for the next batch to build on.
+          # tree for the next batch to build on. The index is rebuilt first
+          # because the test suite runs `validate.mjs --index` against the
+          # repository: a batch that wrote a record and left data/index/
+          # describing the tree before it fails rule 16, which is the index
+          # being stale and not the import being wrong.
           fail() {
             echo "::error::$1"
             git checkout -- data/ || true
@@ -70,9 +74,9 @@ jobs:
           }
           for batch in $(seq 1 40); do
             node "tools/import/wikidata.mjs" "--$MODE" || fail "the import failed on batch $batch"
-            node tools/validate.mjs || fail "the tree does not validate after batch $batch"
-            node --test || fail "the tests do not pass after batch $batch"
             node tools/build-index.mjs || fail "the index cannot be built after batch $batch"
+            node tools/validate.mjs --index || fail "the tree does not validate after batch $batch"
+            node --test || fail "the tests do not pass after batch $batch"
             if [ -z "$(git status --porcelain)" ]; then
               echo "batch $batch changed nothing; the walk is finished"
               break
