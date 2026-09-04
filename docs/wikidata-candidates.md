@@ -8,7 +8,7 @@ leave the rest alone. Untick is the default, and a row nobody ticks is a
 record that is never created. Nothing else on a row is meant to be edited by
 hand; the import reads the ticks and nothing else.
 
-1163 candidate(s) over 14 period(s), of which 0 already
+1047 candidate(s) over 14 period(s), of which 0 already
 have a record here. An item that two queries return is listed once, under the
 first of them.
 
@@ -98,7 +98,7 @@ to that file and another run, never an edit here.
 | [ ] | [`Q2998926`](https://www.wikidata.org/wiki/Q2998926) | 1915 Portuguese coup d'état | Revolta de 14 de Maio de 1915 | 1915-05-14 | coup d'état | 4 | — |
 | [ ] | [`Q25428964`](https://www.wikidata.org/wiki/Q25428964) | December 1917 coup d'état | Golpe de Estado de Dezembro de 1917 | 1917-12-05 | coup d'état | 5 | — |
 | [ ] | [`Q4412123`](https://www.wikidata.org/wiki/Q4412123) | Monarchy of the North | Monarquia do Norte | 1919-01-19 | rebellion | 12 | — |
-| [ ] | [`Q30904810`](https://www.wikidata.org/wiki/Q30904810) | Battle of Monsanto | tomada de Monsanto | 1919-01-22 | battle | 1 | — |
+| [ ] | [`Q30904810`](https://www.wikidata.org/wiki/Q30904810) | Battle of Monsanto | tomada de Monsanto | 1919-01-22 | attempted coup d'état | 1 | — |
 
 ### battles-and-wars-1910s — 3
 
@@ -108,7 +108,18 @@ to that file and another run, never an edit here.
 | [ ] | [`Q131632166`](https://www.wikidata.org/wiki/Q131632166) | Naulila Incident | — | 1914-10-19 | battle | 1 | — |
 | [ ] | [`Q2888580`](https://www.wikidata.org/wiki/Q2888580) | Battle of Funchal | — | 1916-12-03 | naval battle | 4 | — |
 
-## 1920s — 5 candidate(s), 0 already in the atlas
+## 1920s — 11 candidate(s), 0 already in the atlas
+
+### elections-1920s — 6
+
+| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
+| :--: | --- | --- | --- | --- | --- | --: | :--: |
+| [ ] | [`Q7232751`](https://www.wikidata.org/wiki/Q7232751) | 1921 Portuguese legislative election | eleições legislativas portuguesas de 1921 | 1921-07-10 | Portuguese legislative election | 3 | — |
+| [ ] | [`Q7232752`](https://www.wikidata.org/wiki/Q7232752) | 1922 Portuguese legislative election | eleições legislativas portuguesas de 1922 | 1922-01-29 | Portuguese legislative election | 3 | — |
+| [ ] | [`Q21714338`](https://www.wikidata.org/wiki/Q21714338) | 1923 Portuguese presidential election | eleições presidenciais portuguesas de 1923 | 1923-08-06 | Portuguese presidential election | 3 | — |
+| [ ] | [`Q10271595`](https://www.wikidata.org/wiki/Q10271595) | 1925 Portuguese legislative election | eleições legislativas portuguesas de 1925 | 1925-11-08 | Portuguese legislative election | 3 | — |
+| [ ] | [`Q21714331`](https://www.wikidata.org/wiki/Q21714331) | 1925 Portuguese presidential election | eleições presidenciais portuguesas de 1925 | 1925-12-11 | Portuguese presidential election | 2 | — |
+| [ ] | [`Q18167373`](https://www.wikidata.org/wiki/Q18167373) | 1928 Portuguese presidential election | eleições presidenciais portuguesas de 1928 | 1928-03-25 | Portuguese presidential election | 4 | — |
 
 ### coups-and-uprisings-1920s — 2
 
@@ -121,7 +132,7 @@ to that file and another run, never an edit here.
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q2659185`](https://www.wikidata.org/wiki/Q2659185) | Nine-Power Treaty | Tratado das Nove Potências | 1922-02-06 | ennead | 20 | — |
+| [ ] | [`Q2659185`](https://www.wikidata.org/wiki/Q2659185) | Nine-Power Treaty | Tratado das Nove Potências | 1922-02-06 | treaty | 20 | — |
 
 ### massacres-1920s — 1
 
@@ -169,17 +180,7 @@ to that file and another run, never an edit here.
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
 | [ ] | [`Q18245126`](https://www.wikidata.org/wiki/Q18245126) | Constitution of Portugal of 1933 | Constituição portuguesa de 1933 | 1933-01-01 | constitution | 6 | — |
 
-## 1940s — 10 candidate(s), 0 already in the atlas
-
-### elections-1940s — 5
-
-| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
-| :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q18166741`](https://www.wikidata.org/wiki/Q18166741) | 1942 Portuguese presidential election | Eleições presidenciais portuguesas de 1942 | 1942-02-08 | Portuguese presidential election | 4 | — |
-| [ ] | [`Q7232757`](https://www.wikidata.org/wiki/Q7232757) | 1942 Portuguese legislative election | eleições legislativas portuguesas de 1942 | 1942-11-01 | Portuguese legislative election | 4 | — |
-| [ ] | [`Q7232758`](https://www.wikidata.org/wiki/Q7232758) | 1945 Portuguese legislative election | eleições legislativas portuguesas de 1945 | 1945-11-18 | Portuguese legislative election | 4 | — |
-| [ ] | [`Q3277291`](https://www.wikidata.org/wiki/Q3277291) | 1949 Portuguese presidential election | Eleições presidenciais portuguesas de 1949 | 1949-02-13 | Portuguese presidential election | 6 | — |
-| [ ] | [`Q7232761`](https://www.wikidata.org/wiki/Q7232761) | 1949 Portuguese legislative election | eleições legislativas portuguesas de 1949 | 1949-11-13 | Portuguese legislative election | 4 | — |
+## 1940s — 5 candidate(s), 0 already in the atlas
 
 ### coups-and-uprisings-1940s — 1
 
@@ -244,8 +245,8 @@ to that file and another run, never an edit here.
 | [ ] | [`Q5616525`](https://www.wikidata.org/wiki/Q5616525) | 1963 Guinean legislative election | — | 1963-09-28 | Guinean legislative election | 2 | — |
 | [ ] | [`Q16153770`](https://www.wikidata.org/wiki/Q16153770) | 1965 Portuguese presidential election | Eleições presidenciais portuguesas de 1965 | 1965-07-25 | Portuguese presidential election | 4 | — |
 | [ ] | [`Q7232768`](https://www.wikidata.org/wiki/Q7232768) | 1965 Portuguese legislative election | eleições legislativas portuguesas de 1965 | 1965-11-07 | Portuguese legislative election | 4 | — |
-| [ ] | [`Q5616516`](https://www.wikidata.org/wiki/Q5616516) | 1968 Guinean general election | — | 1968-01-01 | Guinean legislative election | 1 | — |
 | [ ] | [`Q2115000`](https://www.wikidata.org/wiki/Q2115000) | — | — | 1968-01-01 | public election | 2 | — |
+| [ ] | [`Q5616516`](https://www.wikidata.org/wiki/Q5616516) | 1968 Guinean general election | — | 1968-01-01 | Guinean legislative election | 1 | — |
 | [ ] | [`Q7232769`](https://www.wikidata.org/wiki/Q7232769) | 1969 Portuguese legislative election | eleições legislativas portuguesas de 1969 | 1969-10-26 | Portuguese legislative election | 5 | — |
 
 ### coups-and-uprisings-1960s — 1
@@ -266,8 +267,8 @@ to that file and another run, never an edit here.
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
 | [ ] | [`Q111584941`](https://www.wikidata.org/wiki/Q111584941) | Assault on the Santa Maria steamship | Assalto ao paquete Santa Maria | 1961-01-22 | murder | 0 | — |
 | [ ] | [`Q10261580`](https://www.wikidata.org/wiki/Q10261580) | 1964 Rosais earthquake | Crise sísmica dos Rosais | 1964-02-15 | earthquake | 4 | — |
-| [ ] | [`Q48876710`](https://www.wikidata.org/wiki/Q48876710) | 1967 Portugal floods | Cheias de 1967 na região de Lisboa | 1967-11-25 | natural disaster | 2 | — |
-| [ ] | [`Q3510571`](https://www.wikidata.org/wiki/Q3510571) | 1969 Portugal earthquake | Sismo de Portugal de 1969 | 1969-02-28 | natural disaster | 7 | — |
+| [ ] | [`Q48876710`](https://www.wikidata.org/wiki/Q48876710) | 1967 Portugal floods | Cheias de 1967 na região de Lisboa | 1967-11-25 | flood | 2 | — |
+| [ ] | [`Q3510571`](https://www.wikidata.org/wiki/Q3510571) | 1969 Portugal earthquake | Sismo de Portugal de 1969 | 1969-02-28 | earthquake | 7 | — |
 
 ### battles-and-wars-1960s — 5
 
@@ -277,114 +278,9 @@ to that file and another run, never an edit here.
 | [ ] | [`Q609836`](https://www.wikidata.org/wiki/Q609836) | Portuguese Colonial War | Guerra Colonial Portuguesa | 1961-02-04 | war | 38 | — |
 | [ ] | [`Q1780216`](https://www.wikidata.org/wiki/Q1780216) | Angolan War of Independence | Guerra de Independência de Angola | 1961-02-04 | war of national liberation | 37 | — |
 | [ ] | [`Q133277846`](https://www.wikidata.org/wiki/Q133277846) | Attacks on northern Angola in 1961 | Ataques ao norte de Angola em 1961 | 1961-03-15 | frontal assault | 2 | — |
-| [ ] | [`Q2002270`](https://www.wikidata.org/wiki/Q2002270) | Mozambican War of Independence | Guerra da Independência de Moçambique | 1964-09-25 | war of national liberation | 36 | — |
+| [ ] | [`Q2002270`](https://www.wikidata.org/wiki/Q2002270) | Mozambican War of Independence | Guerra da Independência de Moçambique | 1964-09-25 | guerrilla warfare | 36 | — |
 
-## 1970s — 144 candidate(s), 0 already in the atlas
-
-### elections-1970s — 100
-
-| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
-| :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q16153777`](https://www.wikidata.org/wiki/Q16153777) | 1972 Portuguese presidential election | Eleições presidenciais portuguesas de 1972 | 1972-07-25 | Portuguese presidential election | 5 | — |
-| [ ] | [`Q18160604`](https://www.wikidata.org/wiki/Q18160604) | 1973 Angolan Legislative Assembly election | — | 1973-01-01 | legislative election | 2 | — |
-| [ ] | [`Q7232770`](https://www.wikidata.org/wiki/Q7232770) | 1973 Portuguese legislative election | eleições legislativas portuguesas de 1973 | 1973-10-28 | Portuguese legislative election | 4 | — |
-| [ ] | [`Q1454657`](https://www.wikidata.org/wiki/Q1454657) | — | — | 1974-01-01 | public election | 2 | — |
-| [ ] | [`Q5616517`](https://www.wikidata.org/wiki/Q5616517) | 1974 Guinean general election | — | 1974-12-27 | Guinean legislative election | 2 | — |
-| [ ] | [`Q7665728`](https://www.wikidata.org/wiki/Q7665728) | 1975 São Toméan legislative election | — | 1975-01-01 | São Tomé and Príncipe legislative election | 3 | — |
-| [ ] | [`Q3179037`](https://www.wikidata.org/wiki/Q3179037) | 1975 Portuguese Constituent Assembly election | eleições para a Assembleia Constituinte Portuguesa de 1975 | 1975-04-25 | Portuguese legislative election | 10 | — |
-| [ ] | [`Q3586973`](https://www.wikidata.org/wiki/Q3586973) | 1975 Cape Verdean parliamentary election | — | 1975-06-30 | Cape Verdean parliamentary election | 4 | — |
-| [ ] | [`Q30932643`](https://www.wikidata.org/wiki/Q30932643) | — | eleições legislativas portuguesas de 1976 no distrito de Beja | 1976-01-01 | Portuguese legislative election | 1 | — |
-| [ ] | [`Q30932649`](https://www.wikidata.org/wiki/Q30932649) | — | eleições legislativas portuguesas de 1976 no distrito de Aveiro | 1976-01-01 | Portuguese legislative election | 1 | — |
-| [ ] | [`Q30932662`](https://www.wikidata.org/wiki/Q30932662) | — | eleições legislativas portuguesas de 1976 no distrito de Braga | 1976-01-01 | Portuguese legislative election | 1 | — |
-| [ ] | [`Q30932714`](https://www.wikidata.org/wiki/Q30932714) | — | eleições legislativas portuguesas de 1976 no distrito de Bragança | 1976-01-01 | Portuguese legislative election | 1 | — |
-| [ ] | [`Q30932730`](https://www.wikidata.org/wiki/Q30932730) | — | eleições legislativas portuguesas de 1976 no distrito de Castelo Branco | 1976-01-01 | Portuguese legislative election | 1 | — |
-| [ ] | [`Q30932735`](https://www.wikidata.org/wiki/Q30932735) | — | eleições legislativas portuguesas de 1976 no distrito de Coimbra | 1976-01-01 | Portuguese legislative election | 1 | — |
-| [ ] | [`Q30932742`](https://www.wikidata.org/wiki/Q30932742) | — | eleições legislativas portuguesas de 1976 no distrito de Évora | 1976-01-01 | Portuguese legislative election | 1 | — |
-| [ ] | [`Q30932747`](https://www.wikidata.org/wiki/Q30932747) | — | eleições legislativas portuguesas de 1976 no distrito de Faro | 1976-01-01 | Portuguese legislative election | 1 | — |
-| [ ] | [`Q30932765`](https://www.wikidata.org/wiki/Q30932765) | — | eleições legislativas portuguesas de 1976 no distrito da Guarda | 1976-01-01 | Portuguese legislative election | 1 | — |
-| [ ] | [`Q30932790`](https://www.wikidata.org/wiki/Q30932790) | — | eleições legislativas portuguesas de 1976 no distrito de Lisboa | 1976-01-01 | Portuguese legislative election | 1 | — |
-| [ ] | [`Q30932794`](https://www.wikidata.org/wiki/Q30932794) | — | eleições legislativas portuguesas de 1976 no distrito de Leiria | 1976-01-01 | Portuguese legislative election | 1 | — |
-| [ ] | [`Q30932810`](https://www.wikidata.org/wiki/Q30932810) | — | eleições legislativas portuguesas de 1976 no distrito de Portalegre | 1976-01-01 | Portuguese legislative election | 1 | — |
-| [ ] | [`Q30932818`](https://www.wikidata.org/wiki/Q30932818) | — | eleições legislativas portuguesas de 1976 no distrito de Santarém | 1976-01-01 | Portuguese legislative election | 1 | — |
-| [ ] | [`Q30932817`](https://www.wikidata.org/wiki/Q30932817) | — | eleições legislativas portuguesas de 1976 no distrito do Porto | 1976-01-01 | Portuguese legislative election | 1 | — |
-| [ ] | [`Q30932827`](https://www.wikidata.org/wiki/Q30932827) | — | eleições legislativas portuguesas de 1976 no distrito de Setúbal | 1976-01-01 | Portuguese legislative election | 1 | — |
-| [ ] | [`Q30932841`](https://www.wikidata.org/wiki/Q30932841) | — | eleições legislativas portuguesas de 1976 no distrito de Viana do Castelo | 1976-01-01 | Portuguese legislative election | 1 | — |
-| [ ] | [`Q30932844`](https://www.wikidata.org/wiki/Q30932844) | — | eleições legislativas portuguesas de 1976 no distrito de Vila Real | 1976-01-01 | Portuguese legislative election | 1 | — |
-| [ ] | [`Q30932889`](https://www.wikidata.org/wiki/Q30932889) | — | eleições legislativas portuguesas de 1976 nos Açores | 1976-01-01 | Portuguese legislative election | 1 | — |
-| [ ] | [`Q30932905`](https://www.wikidata.org/wiki/Q30932905) | — | eleições legislativas portuguesas de 1976 na Madeira | 1976-01-01 | Portuguese legislative election | 1 | — |
-| [ ] | [`Q1933123`](https://www.wikidata.org/wiki/Q1933123) | 1976 Portuguese legislative election | eleições legislativas portuguesas de 1976 | 1976-04-25 | Portuguese legislative election | 10 | — |
-| [ ] | [`Q30932880`](https://www.wikidata.org/wiki/Q30932880) | — | eleições legislativas de 1976 no distrito de Viseu | 1976-04-25 | Portuguese legislative election | 1 | — |
-| [ ] | [`Q1329844`](https://www.wikidata.org/wiki/Q1329844) | 1976 Portuguese presidential election | eleições presidenciais portuguesas de 1976 | 1976-06-27 | Portuguese presidential election | 7 | — |
-| [ ] | [`Q4832852`](https://www.wikidata.org/wiki/Q4832852) | 1976 Azorean regional election | eleições legislativas regionais nos Açores em 1976 | 1976-06-27 | parliamentary election in the Azores | 4 | — |
-| [ ] | [`Q10271597`](https://www.wikidata.org/wiki/Q10271597) | — | eleições legislativas regionais na Madeira em 1976 | 1976-06-27 | parliamentary election in Madeira | 2 | — |
-| [ ] | [`Q7232774`](https://www.wikidata.org/wiki/Q7232774) | 1976 Portuguese local elections | eleições autárquicas portuguesas de 1976 | 1976-12-12 | Portuguese local elections | 3 | — |
-| [ ] | [`Q25430179`](https://www.wikidata.org/wiki/Q25430179) | — | eleições autárquicas de 1976 no distrito de Aveiro | 1976-12-12 | Portuguese local elections | 1 | — |
-| [ ] | [`Q25430186`](https://www.wikidata.org/wiki/Q25430186) | — | eleições autárquicas de 1976 no distrito de Beja | 1976-12-12 | Portuguese local elections | 1 | — |
-| [ ] | [`Q25430315`](https://www.wikidata.org/wiki/Q25430315) | — | eleições autárquicas de 1976 no distrito de Braga | 1976-12-12 | Portuguese local elections | 1 | — |
-| [ ] | [`Q25430313`](https://www.wikidata.org/wiki/Q25430313) | — | eleições autárquicas de 1976 no distrito de Bragança | 1976-12-12 | Portuguese local elections | 1 | — |
-| [ ] | [`Q25430426`](https://www.wikidata.org/wiki/Q25430426) | — | eleições autárquicas de 1976 no distrito de Castelo Branco | 1976-12-12 | Portuguese local elections | 1 | — |
-| [ ] | [`Q25430436`](https://www.wikidata.org/wiki/Q25430436) | — | eleições autárquicas de 1976 no distrito de Coimbra | 1976-12-12 | Portuguese local elections | 1 | — |
-| [ ] | [`Q25430443`](https://www.wikidata.org/wiki/Q25430443) | — | eleições autárquicas de 1976 no distrito de Évora | 1976-12-12 | Portuguese local elections | 1 | — |
-| [ ] | [`Q25430447`](https://www.wikidata.org/wiki/Q25430447) | — | eleições autárquicas de 1976 no distrito de Faro | 1976-12-12 | Portuguese local elections | 1 | — |
-| [ ] | [`Q25430468`](https://www.wikidata.org/wiki/Q25430468) | — | eleições autárquicas de 1976 no distrito da Guarda | 1976-12-12 | Portuguese local elections | 1 | — |
-| [ ] | [`Q25430478`](https://www.wikidata.org/wiki/Q25430478) | Portuguese local elections of 1976 in the Lisbon district | eleições autárquicas de 1976 no distrito de Lisboa | 1976-12-12 | Portuguese local elections | 1 | — |
-| [ ] | [`Q25430477`](https://www.wikidata.org/wiki/Q25430477) | — | eleições autárquicas de 1976 no distrito de Leiria | 1976-12-12 | Portuguese local elections | 1 | — |
-| [ ] | [`Q25430487`](https://www.wikidata.org/wiki/Q25430487) | — | eleições autárquicas de 1976 no distrito de Portalegre | 1976-12-12 | Portuguese local elections | 1 | — |
-| [ ] | [`Q25430495`](https://www.wikidata.org/wiki/Q25430495) | — | eleições autárquicas de 1976 no distrito do Porto | 1976-12-12 | Portuguese local elections | 1 | — |
-| [ ] | [`Q25430556`](https://www.wikidata.org/wiki/Q25430556) | — | eleições autárquicas de 1976 no distrito de Santarém | 1976-12-12 | Portuguese local elections | 1 | — |
-| [ ] | [`Q25430560`](https://www.wikidata.org/wiki/Q25430560) | — | eleições autárquicas de 1976 no distrito de Setúbal | 1976-12-12 | Portuguese local elections | 1 | — |
-| [ ] | [`Q25430582`](https://www.wikidata.org/wiki/Q25430582) | — | eleições autárquicas de 1976 no distrito de Viana do Castelo | 1976-12-12 | Portuguese local elections | 1 | — |
-| [ ] | [`Q25430583`](https://www.wikidata.org/wiki/Q25430583) | — | eleições autárquicas de 1976 no distrito de Vila Real | 1976-12-12 | Portuguese local elections | 1 | — |
-| [ ] | [`Q25430727`](https://www.wikidata.org/wiki/Q25430727) | — | eleições autárquicas de 1976 no distrito de Viseu | 1976-12-12 | Portuguese local elections | 1 | — |
-| [ ] | [`Q25430734`](https://www.wikidata.org/wiki/Q25430734) | — | eleições autárquicas de 1976 nos Açores | 1976-12-12 | Portuguese local elections | 1 | — |
-| [ ] | [`Q25430737`](https://www.wikidata.org/wiki/Q25430737) | — | eleições autárquicas de 1976 na Madeira | 1976-12-12 | Portuguese local elections | 1 | — |
-| [ ] | [`Q65163450`](https://www.wikidata.org/wiki/Q65163450) | — | eleições autárquicas de 1976 em Setúbal | 1976-12-12 | Portuguese local elections | 1 | — |
-| [ ] | [`Q106634599`](https://www.wikidata.org/wiki/Q106634599) | 1976 Lisbon local elections | eleições autárquicas de 1976 em Lisboa | 1976-12-12 | Portuguese local elections | 0 | — |
-| [ ] | [`Q1731920`](https://www.wikidata.org/wiki/Q1731920) | 1977 Mozambican general election | — | 1977-09-25 | Mozambican general election | 4 | — |
-| [ ] | [`Q30932913`](https://www.wikidata.org/wiki/Q30932913) | — | eleições legislativas portuguesas de 1979 no distrito de Aveiro | 1979-01-01 | Portuguese legislative election | 1 | — |
-| [ ] | [`Q30932917`](https://www.wikidata.org/wiki/Q30932917) | — | eleições legislativas portuguesas de 1979 no distrito de Beja | 1979-01-01 | Portuguese legislative election | 1 | — |
-| [ ] | [`Q30932924`](https://www.wikidata.org/wiki/Q30932924) | — | eleições legislativas portuguesas de 1979 no distrito de Braga | 1979-01-01 | Portuguese legislative election | 1 | — |
-| [ ] | [`Q30933003`](https://www.wikidata.org/wiki/Q30933003) | — | eleições legislativas portuguesas de 1979 no distrito de Bragança | 1979-01-01 | Portuguese legislative election | 1 | — |
-| [ ] | [`Q30933006`](https://www.wikidata.org/wiki/Q30933006) | — | eleições legislativas portuguesas de 1979 no distrito de Castelo Branco | 1979-01-01 | Portuguese legislative election | 1 | — |
-| [ ] | [`Q30933080`](https://www.wikidata.org/wiki/Q30933080) | — | eleições legislativas portuguesas de 1979 no distrito de Coimbra | 1979-01-01 | Portuguese legislative election | 1 | — |
-| [ ] | [`Q30933096`](https://www.wikidata.org/wiki/Q30933096) | — | eleições legislativas portuguesas de 1979 no distrito de Évora | 1979-01-01 | Portuguese legislative election | 1 | — |
-| [ ] | [`Q30933116`](https://www.wikidata.org/wiki/Q30933116) | — | eleições legislativas portuguesas de 1979 no distrito de Faro | 1979-01-01 | Portuguese legislative election | 1 | — |
-| [ ] | [`Q30933339`](https://www.wikidata.org/wiki/Q30933339) | — | eleições legislativas portuguesas de 1979 no distrito da Guarda | 1979-01-01 | Portuguese legislative election | 1 | — |
-| [ ] | [`Q30933340`](https://www.wikidata.org/wiki/Q30933340) | — | eleições legislativas portuguesas de 1979 no distrito de Leiria | 1979-01-01 | Portuguese legislative election | 1 | — |
-| [ ] | [`Q30933345`](https://www.wikidata.org/wiki/Q30933345) | — | eleições legislativas portuguesas de 1979 no distrito de Lisboa | 1979-01-01 | Portuguese legislative election | 1 | — |
-| [ ] | [`Q30933373`](https://www.wikidata.org/wiki/Q30933373) | — | eleições legislativas portuguesas de 1979 no distrito de Portalegre | 1979-01-01 | Portuguese legislative election | 1 | — |
-| [ ] | [`Q30933438`](https://www.wikidata.org/wiki/Q30933438) | — | eleições legislativas portuguesas de 1979 no distrito do Porto | 1979-01-01 | Portuguese legislative election | 1 | — |
-| [ ] | [`Q30933451`](https://www.wikidata.org/wiki/Q30933451) | — | eleições legislativas portuguesas de 1979 no distrito de Santarém | 1979-01-01 | Portuguese legislative election | 1 | — |
-| [ ] | [`Q30933463`](https://www.wikidata.org/wiki/Q30933463) | — | eleições legislativas portuguesas de 1979 no distrito de Setúbal | 1979-01-01 | Portuguese legislative election | 1 | — |
-| [ ] | [`Q30933490`](https://www.wikidata.org/wiki/Q30933490) | — | eleições legislativas portuguesas de 1979 no distrito de Viana do Castelo | 1979-01-01 | Portuguese legislative election | 1 | — |
-| [ ] | [`Q30933491`](https://www.wikidata.org/wiki/Q30933491) | — | eleições legislativas portuguesas de 1979 nos Açores | 1979-01-01 | Portuguese legislative election | 1 | — |
-| [ ] | [`Q30933488`](https://www.wikidata.org/wiki/Q30933488) | — | eleições legislativas de 1979 no distrito de Viseu | 1979-01-01 | Portuguese legislative election | 1 | — |
-| [ ] | [`Q30933492`](https://www.wikidata.org/wiki/Q30933492) | — | eleições legislativas portuguesas de 1979 no distrito de Vila Real | 1979-01-01 | Portuguese legislative election | 1 | — |
-| [ ] | [`Q30933500`](https://www.wikidata.org/wiki/Q30933500) | — | eleições legislativas portuguesas de 1979 na Madeira | 1979-01-01 | Portuguese legislative election | 1 | — |
-| [ ] | [`Q1579644`](https://www.wikidata.org/wiki/Q1579644) | 1979 Portuguese legislative election | eleições legislativas portuguesas de 1979 | 1979-12-02 | Portuguese legislative election | 9 | — |
-| [ ] | [`Q7232776`](https://www.wikidata.org/wiki/Q7232776) | 1979 Portuguese local elections | eleições autárquicas portuguesas de 1979 | 1979-12-16 | Portuguese local elections | 2 | — |
-| [ ] | [`Q25430736`](https://www.wikidata.org/wiki/Q25430736) | — | eleições autárquicas de 1979 no distrito de Aveiro | 1979-12-16 | Portuguese local elections | 1 | — |
-| [ ] | [`Q25430748`](https://www.wikidata.org/wiki/Q25430748) | — | eleições autárquicas de 1979 no distrito de Beja | 1979-12-16 | Portuguese local elections | 1 | — |
-| [ ] | [`Q25430753`](https://www.wikidata.org/wiki/Q25430753) | — | eleições autárquicas de 1979 no distrito de Braga | 1979-12-16 | Portuguese local elections | 1 | — |
-| [ ] | [`Q25430758`](https://www.wikidata.org/wiki/Q25430758) | — | eleições autárquicas de 1979 no distrito de Bragança | 1979-12-16 | Portuguese local elections | 1 | — |
-| [ ] | [`Q25430818`](https://www.wikidata.org/wiki/Q25430818) | — | eleições autárquicas portuguesas de 1979 no distrito de Castelo Branco | 1979-12-16 | Portuguese local elections | 1 | — |
-| [ ] | [`Q25430817`](https://www.wikidata.org/wiki/Q25430817) | — | eleições autárquicas portuguesas de 1979 no distrito de Coimbra | 1979-12-16 | Portuguese local elections | 1 | — |
-| [ ] | [`Q25430838`](https://www.wikidata.org/wiki/Q25430838) | — | eleições autárquicas de 1979 no distrito de Évora | 1979-12-16 | Portuguese local elections | 1 | — |
-| [ ] | [`Q25430914`](https://www.wikidata.org/wiki/Q25430914) | — | eleições autárquicas portuguesas de 1979 no distrito de Faro | 1979-12-16 | Portuguese local elections | 1 | — |
-| [ ] | [`Q25430931`](https://www.wikidata.org/wiki/Q25430931) | — | eleições autárquicas portuguesas de 1979 no distrito de Leiria | 1979-12-16 | Portuguese local elections | 1 | — |
-| [ ] | [`Q25430932`](https://www.wikidata.org/wiki/Q25430932) | — | eleições autárquicas de 1979 no distrito da Guarda | 1979-12-16 | Portuguese local elections | 1 | — |
-| [ ] | [`Q25430936`](https://www.wikidata.org/wiki/Q25430936) | Portuguese local elections of 1979 in the Lisbon district | eleições autárquicas de 1979 no distrito de Lisboa | 1979-12-16 | Portuguese local elections | 1 | — |
-| [ ] | [`Q25430958`](https://www.wikidata.org/wiki/Q25430958) | — | eleições autárquicas de 1979 no distrito de Portalegre | 1979-12-16 | Portuguese local elections | 1 | — |
-| [ ] | [`Q25430965`](https://www.wikidata.org/wiki/Q25430965) | — | eleições autárquicas portuguesas de 1979 no distrito do Porto | 1979-12-16 | Portuguese local elections | 1 | — |
-| [ ] | [`Q25439736`](https://www.wikidata.org/wiki/Q25439736) | — | eleições autárquicas portuguesas de 1979 no distrito de Santarém | 1979-12-16 | Portuguese local elections | 1 | — |
-| [ ] | [`Q25439754`](https://www.wikidata.org/wiki/Q25439754) | — | eleições autárquicas portuguesas de 1979 no distrito de Setúbal | 1979-12-16 | Portuguese local elections | 1 | — |
-| [ ] | [`Q25439768`](https://www.wikidata.org/wiki/Q25439768) | — | eleições autárquicas portuguesas de 1979 no distrito de Viana do Castelo | 1979-12-16 | Portuguese local elections | 1 | — |
-| [ ] | [`Q25439805`](https://www.wikidata.org/wiki/Q25439805) | — | eleições autárquicas portuguesas de 1979 no distrito de Vila Real | 1979-12-16 | Portuguese local elections | 1 | — |
-| [ ] | [`Q25439823`](https://www.wikidata.org/wiki/Q25439823) | — | eleições autárquicas portuguesas de 1979 no distrito de Viseu | 1979-12-16 | Portuguese local elections | 1 | — |
-| [ ] | [`Q25439841`](https://www.wikidata.org/wiki/Q25439841) | — | eleições autárquicas portuguesas de 1979 nos Açores | 1979-12-16 | Portuguese local elections | 1 | — |
-| [ ] | [`Q25439848`](https://www.wikidata.org/wiki/Q25439848) | — | eleições autárquicas portuguesas de 1979 na Madeira | 1979-12-16 | Portuguese local elections | 1 | — |
-| [ ] | [`Q106634573`](https://www.wikidata.org/wiki/Q106634573) | 1979 Lisbon local elections | eleições autárquicas de 1979 em Lisboa | 1979-12-16 | Portuguese local elections | 0 | — |
-| [ ] | [`Q108180217`](https://www.wikidata.org/wiki/Q108180217) | — | eleições autárquicas de 1979 em Setúbal | 1979-12-16 | Portuguese local elections | 1 | — |
+## 1970s — 27 candidate(s), 0 already in the atlas
 
 ### coups-and-uprisings-1970s — 5
 
@@ -438,28 +334,6 @@ to that file and another run, never an edit here.
 | [ ] | [`Q112073029`](https://www.wikidata.org/wiki/Q112073029) | Murder of Jorge Augusto de Carvalho, Porto Judiciary Police officer | Assassínio de Jorge Augusto de Carvalho, agente da Polícia Judiciária do Porto | 1978-03-21 | deliberate murder | 0 | — |
 | [ ] | [`Q109529478`](https://www.wikidata.org/wiki/Q109529478) | Murder of Jose Manuel Placido | Assassinato de José Manuel Plácido | 1979-11-15 | murder | 0 | — |
 
-### battles-and-wars-1970s — 17
-
-| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
-| :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q770372`](https://www.wikidata.org/wiki/Q770372) | Operation Green Sea | Operação Mar Verde | 1970-11-22 | military operation | 19 | — |
-| [ ] | [`Q10341141`](https://www.wikidata.org/wiki/Q10341141) | Operation Penada | Operação Penada | 1972-04-01 | military operation | 2 | — |
-| [ ] | [`Q111796666`](https://www.wikidata.org/wiki/Q111796666) | — | cerco ao Quartel do Carmo | 1974-04-25 | military operation | 0 | — |
-| [ ] | [`Q1511663`](https://www.wikidata.org/wiki/Q1511663) | Cuban intervention in Angola | Operação Carlota | 1975-01-01 | military operation | 17 | — |
-| [ ] | [`Q97381399`](https://www.wikidata.org/wiki/Q97381399) | East Timorese civil war | — | 1975-08-11 | civil war | 3 | — |
-| [ ] | [`Q7097499`](https://www.wikidata.org/wiki/Q7097499) | Operation Savannah | Operação Savana | 1975-10-14 | military operation | 6 | — |
-| [ ] | [`Q12055176`](https://www.wikidata.org/wiki/Q12055176) | Angolan Civil War | Guerra Civil Angolana | 1975-11-11 | civil war | 49 | — |
-| [ ] | [`Q63696838`](https://www.wikidata.org/wiki/Q63696838) | Battle of Dili | — | 1975-12-07 | battle | 3 | — |
-| [ ] | [`Q2665403`](https://www.wikidata.org/wiki/Q2665403) | Indonesian occupation of East Timor | Ocupação de Timor-Leste pela Indonésia | 1975-12-07 | military occupation | 20 | — |
-| [ ] | [`Q2583734`](https://www.wikidata.org/wiki/Q2583734) | Indonesian invasion of East Timor | Invasão indonésia de Timor-Leste | 1975-12-07 | invasion | 24 | — |
-| [ ] | [`Q97241785`](https://www.wikidata.org/wiki/Q97241785) | Battle of Baucau | — | 1975-12-09 | battle | 0 | — |
-| [ ] | [`Q2890915`](https://www.wikidata.org/wiki/Q2890915) | Battle of Bridge 14 | Batalha da Ponte 14 | 1975-12-11 | battle | 3 | — |
-| [ ] | [`Q61368740`](https://www.wikidata.org/wiki/Q61368740) | Battle of Lospalos | — | 1976-02-02 | battle | 0 | — |
-| [ ] | [`Q7097530`](https://www.wikidata.org/wiki/Q7097530) | Operation Seiljag | Operação Seiljag | 1976-11-01 | military operation | 4 | — |
-| [ ] | [`Q657661`](https://www.wikidata.org/wiki/Q657661) | Mozambican Civil War | Guerra Civil Moçambicana | 1977-05-30 | civil war | 34 | — |
-| [ ] | [`Q133865028`](https://www.wikidata.org/wiki/Q133865028) | Operation Cahaya | — | 1978-04-06 | military operation | 1 | — |
-| [ ] | [`Q1662504`](https://www.wikidata.org/wiki/Q1662504) | Operation Reindeer | Operação Rena | 1978-05-04 | military operation | 4 | — |
-
 ## 1980s — 176 candidate(s), 0 already in the atlas
 
 ### elections-1980s — 160
@@ -490,6 +364,7 @@ to that file and another run, never an edit here.
 | [ ] | [`Q10271598`](https://www.wikidata.org/wiki/Q10271598) | — | eleições legislativas regionais na Madeira em 1980 | 1980-10-05 | parliamentary election in Madeira | 2 | — |
 | [ ] | [`Q10271607`](https://www.wikidata.org/wiki/Q10271607) | — | eleições legislativas regionais nos Açores em 1980 | 1980-10-05 | parliamentary election in the Azores | 2 | — |
 | [ ] | [`Q3069005`](https://www.wikidata.org/wiki/Q3069005) | 1980 Portuguese presidential election | eleições presidenciais portuguesas de 1980 | 1980-12-07 | Portuguese presidential election | 6 | — |
+| [ ] | [`Q106634556`](https://www.wikidata.org/wiki/Q106634556) | 1982 Lisbon local elections | eleições autárquicas de 1982 em Lisboa | 1982-12-12 | Portuguese local elections | 0 | — |
 | [ ] | [`Q7232777`](https://www.wikidata.org/wiki/Q7232777) | 1982 Portuguese local elections | eleições autárquicas portuguesas de 1982 | 1982-12-12 | Portuguese local elections | 2 | — |
 | [ ] | [`Q25439849`](https://www.wikidata.org/wiki/Q25439849) | — | eleições autárquicas portuguesas de 1982 no distrito de Aveiro | 1982-12-12 | Portuguese local elections | 1 | — |
 | [ ] | [`Q25439870`](https://www.wikidata.org/wiki/Q25439870) | — | eleições autárquicas de 1982 no distrito de Beja | 1982-12-12 | Portuguese local elections | 1 | — |
@@ -511,7 +386,6 @@ to that file and another run, never an edit here.
 | [ ] | [`Q25440162`](https://www.wikidata.org/wiki/Q25440162) | — | eleições autárquicas portuguesas de 1982 no distrito de Viseu | 1982-12-12 | Portuguese local elections | 1 | — |
 | [ ] | [`Q25440226`](https://www.wikidata.org/wiki/Q25440226) | — | eleições autárquicas portuguesas de 1982 nos Açores | 1982-12-12 | Portuguese local elections | 1 | — |
 | [ ] | [`Q25440225`](https://www.wikidata.org/wiki/Q25440225) | — | eleições autárquicas portuguesas de 1982 na Madeira | 1982-12-12 | Portuguese local elections | 1 | — |
-| [ ] | [`Q106634556`](https://www.wikidata.org/wiki/Q106634556) | 1982 Lisbon local elections | eleições autárquicas de 1982 em Lisboa | 1982-12-12 | Portuguese local elections | 0 | — |
 | [ ] | [`Q30933859`](https://www.wikidata.org/wiki/Q30933859) | — | eleições legislativas portuguesas de 1983 no distrito de Braga | 1983-01-01 | Portuguese legislative election | 1 | — |
 | [ ] | [`Q30933866`](https://www.wikidata.org/wiki/Q30933866) | — | eleições legislativas portuguesas de 1983 no distrito de Bragança | 1983-01-01 | Portuguese legislative election | 1 | — |
 | [ ] | [`Q30933876`](https://www.wikidata.org/wiki/Q30933876) | — | eleições legislativas portuguesas de 1983 no distrito de Castelo Branco | 1983-01-01 | Portuguese legislative election | 1 | — |
@@ -556,6 +430,7 @@ to that file and another run, never an edit here.
 | [ ] | [`Q30934585`](https://www.wikidata.org/wiki/Q30934585) | — | eleições legislativas portuguesas de 1985 nos Açores | 1985-01-01 | Portuguese legislative election | 1 | — |
 | [ ] | [`Q30934648`](https://www.wikidata.org/wiki/Q30934648) | — | eleições legislativas portuguesas de 1985 na Madeira | 1985-01-01 | Portuguese legislative election | 1 | — |
 | [ ] | [`Q371408`](https://www.wikidata.org/wiki/Q371408) | 1985 Portuguese legislative election | eleições legislativas portuguesas de 1985 | 1985-10-06 | Portuguese legislative election | 9 | — |
+| [ ] | [`Q106634541`](https://www.wikidata.org/wiki/Q106634541) | 1985 Lisbon local elections | eleições autárquicas de 1985 em Lisboa | 1985-12-15 | Portuguese local elections | 0 | — |
 | [ ] | [`Q7232778`](https://www.wikidata.org/wiki/Q7232778) | 1985 Portuguese local elections | eleições autárquicas portuguesas de 1985 | 1985-12-15 | Portuguese local elections | 2 | — |
 | [ ] | [`Q25440239`](https://www.wikidata.org/wiki/Q25440239) | — | eleições autárquicas portuguesas de 1985 no distrito de Aveiro | 1985-12-15 | Portuguese local elections | 1 | — |
 | [ ] | [`Q25440254`](https://www.wikidata.org/wiki/Q25440254) | — | eleições autárquicas portuguesas de 1985 no distrito de Braga | 1985-12-15 | Portuguese local elections | 1 | — |
@@ -577,7 +452,6 @@ to that file and another run, never an edit here.
 | [ ] | [`Q25440819`](https://www.wikidata.org/wiki/Q25440819) | — | eleições autárquicas portuguesas de 1985 no distrito de Viseu | 1985-12-15 | Portuguese local elections | 1 | — |
 | [ ] | [`Q25440959`](https://www.wikidata.org/wiki/Q25440959) | — | eleições autárquicas portuguesas de 1985 na Madeira | 1985-12-15 | Portuguese local elections | 1 | — |
 | [ ] | [`Q25440956`](https://www.wikidata.org/wiki/Q25440956) | — | eleições autárquicas de 1985 nos Açores | 1985-12-15 | Portuguese local elections | 1 | — |
-| [ ] | [`Q106634541`](https://www.wikidata.org/wiki/Q106634541) | 1985 Lisbon local elections | eleições autárquicas de 1985 em Lisboa | 1985-12-15 | Portuguese local elections | 0 | — |
 | [ ] | [`Q3586628`](https://www.wikidata.org/wiki/Q3586628) | 1986 Portuguese presidential election | eleições presidenciais portuguesas de 1986 | 1986-01-26 | Portuguese presidential election | 7 | — |
 | [ ] | [`Q30934651`](https://www.wikidata.org/wiki/Q30934651) | — | eleições legislativas portuguesas de 1987 no distrito de Aveiro | 1987-01-01 | Portuguese legislative election | 1 | — |
 | [ ] | [`Q30934656`](https://www.wikidata.org/wiki/Q30934656) | — | eleições legislativas portuguesas de 1987 no distrito de Beja | 1987-01-01 | Portuguese legislative election | 1 | — |
@@ -600,10 +474,11 @@ to that file and another run, never an edit here.
 | [ ] | [`Q30934854`](https://www.wikidata.org/wiki/Q30934854) | — | eleições legislativas portuguesas de 1987 nos Açores | 1987-01-01 | Portuguese legislative election | 1 | — |
 | [ ] | [`Q30934857`](https://www.wikidata.org/wiki/Q30934857) | — | eleições legislativas portuguesas de 1987 na Madeira | 1987-01-01 | Portuguese legislative election | 1 | — |
 | [ ] | [`Q1343967`](https://www.wikidata.org/wiki/Q1343967) | 1987 Portuguese legislative election | eleições legislativas portuguesas de 1987 | 1987-07-19 | Portuguese legislative election | 10 | — |
-| [ ] | [`Q2404857`](https://www.wikidata.org/wiki/Q2404857) | 1987 European Parliament election in Portugal | eleições parlamentares europeias de 1987 em Portugal | 1987-07-19 | European Parliament election | 8 | — |
+| [ ] | [`Q2404857`](https://www.wikidata.org/wiki/Q2404857) | 1987 European Parliament election in Portugal | eleições parlamentares europeias de 1987 em Portugal | 1987-07-19 | off-year election to the European Parliament | 8 | — |
 | [ ] | [`Q10271600`](https://www.wikidata.org/wiki/Q10271600) | — | eleições legislativas regionais na Madeira em 1988 | 1988-10-09 | parliamentary election in Madeira | 2 | — |
 | [ ] | [`Q10271609`](https://www.wikidata.org/wiki/Q10271609) | — | eleições legislativas regionais nos Açores em 1988 | 1988-10-09 | parliamentary election in the Azores | 2 | — |
 | [ ] | [`Q2405083`](https://www.wikidata.org/wiki/Q2405083) | 1989 European Parliament election in Portugal | eleições parlamentares europeias de 1989 em Portugal | 1989-06-18 | European Parliament election | 8 | — |
+| [ ] | [`Q106634523`](https://www.wikidata.org/wiki/Q106634523) | 1989 Lisbon local elections | eleições autárquicas de 1989 em Lisboa | 1989-12-17 | Portuguese local elections | 1 | — |
 | [ ] | [`Q25441039`](https://www.wikidata.org/wiki/Q25441039) | — | eleições autárquicas de 1989 no distrito de Leiria | 1989-12-17 | Portuguese local elections | 1 | — |
 | [ ] | [`Q25441047`](https://www.wikidata.org/wiki/Q25441047) | Portuguese local elections of 1989 in the Lisbon district | eleições autárquicas de 1989 no distrito de Lisboa | 1989-12-17 | Portuguese local elections | 1 | — |
 | [ ] | [`Q25441050`](https://www.wikidata.org/wiki/Q25441050) | — | eleições autárquicas de 1989 no distrito de Portalegre | 1989-12-17 | Portuguese local elections | 1 | — |
@@ -625,7 +500,6 @@ to that file and another run, never an edit here.
 | [ ] | [`Q25441004`](https://www.wikidata.org/wiki/Q25441004) | — | eleições autárquicas portuguesas de 1989 no distrito de Évora | 1989-12-17 | Portuguese local elections | 1 | — |
 | [ ] | [`Q25441031`](https://www.wikidata.org/wiki/Q25441031) | — | eleições autárquicas de 1989 no distrito de Faro | 1989-12-17 | Portuguese local elections | 1 | — |
 | [ ] | [`Q25441032`](https://www.wikidata.org/wiki/Q25441032) | — | eleições autárquicas de 1989 no distrito da Guarda | 1989-12-17 | Portuguese local elections | 1 | — |
-| [ ] | [`Q106634523`](https://www.wikidata.org/wiki/Q106634523) | 1989 Lisbon local elections | eleições autárquicas de 1989 em Lisboa | 1989-12-17 | Portuguese local elections | 1 | — |
 
 ### treaties-and-agreements-1980s — 1
 
@@ -637,7 +511,7 @@ to that file and another run, never an edit here.
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q3306615`](https://www.wikidata.org/wiki/Q3306615) | 1980 Azores Islands earthquake | Sismo da Terceira de 1980 | 1980-01-01 | earthquake | 8 | — |
+| [ ] | [`Q3306615`](https://www.wikidata.org/wiki/Q3306615) | 1980 Azores Islands earthquake | Sismo da Terceira de 1980 | 1980-01-01 | natural disaster | 8 | — |
 | [ ] | [`Q115691683`](https://www.wikidata.org/wiki/Q115691683) | Assault on Tabaqueira, by the PRP-BR, on January 31, 1980 | assalto feito à Tabaqueira, pelo PRP-BR, em 31 de janeiro de 1980 | 1980-01-31 | armed robbery | 0 | — |
 | [ ] | [`Q115210882`](https://www.wikidata.org/wiki/Q115210882) | Murder of Delfim de Almeida Fernandes, by the PRP-BR | Assassínio de Delfim de Almeida Fernandes, pelo PRP-BR | 1980-02-25 | murder | 0 | — |
 | [ ] | [`Q115187238`](https://www.wikidata.org/wiki/Q115187238) | Assault on Sintra's Finance Department, by the PRP-BR on 25-02-1980 | Assalto à Repartição de Finanças de Sintra, feito pelo PRP-BR, em 25-02-1980 | 1980-02-25 | assault | 0 | — |
@@ -764,7 +638,6 @@ to that file and another run, never an edit here.
 | [ ] | [`Q30935522`](https://www.wikidata.org/wiki/Q30935522) | — | eleições legislativas portuguesas de 1999 no distrito de Viseu | 1999-01-01 | Portuguese legislative election | 1 | — |
 | [ ] | [`Q30935537`](https://www.wikidata.org/wiki/Q30935537) | — | eleições legislativas portuguesas de 1999 nos Açores | 1999-01-01 | Portuguese legislative election | 1 | — |
 | [ ] | [`Q30935546`](https://www.wikidata.org/wiki/Q30935546) | — | eleições legislativas portuguesas de 1999 na Madeira | 1999-01-01 | Portuguese legislative election | 1 | — |
-| [ ] | [`Q1851815`](https://www.wikidata.org/wiki/Q1851815) | 1999 European Parliament election | eleições parlamentares europeias de 1999 | 1999-01-01 | European Parliament election | 20 | — |
 | [ ] | [`Q30935383`](https://www.wikidata.org/wiki/Q30935383) | — | eleições legislativas portuguesas de 1999 no distrito de Aveiro | 1999-01-01 | Portuguese legislative election | 1 | — |
 | [ ] | [`Q30935387`](https://www.wikidata.org/wiki/Q30935387) | — | eleições legislativas portuguesas de 1999 no distrito de Bragança | 1999-01-01 | Portuguese legislative election | 1 | — |
 | [ ] | [`Q30935385`](https://www.wikidata.org/wiki/Q30935385) | — | eleições legislativas portuguesas de 1999 no distrito de Braga | 1999-01-01 | Portuguese legislative election | 1 | — |
@@ -772,6 +645,7 @@ to that file and another run, never an edit here.
 | [ ] | [`Q30935401`](https://www.wikidata.org/wiki/Q30935401) | — | eleições legislativas portuguesas de 1999 no distrito de Castelo Branco | 1999-01-01 | Portuguese legislative election | 1 | — |
 | [ ] | [`Q30935406`](https://www.wikidata.org/wiki/Q30935406) | — | eleições legislativas portuguesas de 1999 no distrito de Coimbra | 1999-01-01 | Portuguese legislative election | 1 | — |
 | [ ] | [`Q30935414`](https://www.wikidata.org/wiki/Q30935414) | — | eleições legislativas portuguesas de 1999 no distrito de Évora | 1999-01-01 | Portuguese legislative election | 1 | — |
+| [ ] | [`Q1851815`](https://www.wikidata.org/wiki/Q1851815) | 1999 European Parliament election | eleições parlamentares europeias de 1999 | 1999-01-01 | European Parliament election | 20 | — |
 | [ ] | [`Q55719546`](https://www.wikidata.org/wiki/Q55719546) | 1999 Macanese Chief Executive election | — | 1999-05-15 | Macanese Chief Executive election | 4 | — |
 | [ ] | [`Q2404815`](https://www.wikidata.org/wiki/Q2404815) | 1999 European Parliament election in Portugal | eleições parlamentares europeias de 1999 em Portugal | 1999-06-13 | European Parliament election | 8 | — |
 | [ ] | [`Q2053121`](https://www.wikidata.org/wiki/Q2053121) | 1999 Portuguese legislative election | eleições legislativas portuguesas de 1999 | 1999-10-10 | Portuguese legislative election | 10 | — |
@@ -979,6 +853,31 @@ to that file and another run, never an edit here.
 | [ ] | [`Q48867355`](https://www.wikidata.org/wiki/Q48867355) | — | eleições legislativas de 2009 na Amadora | 2009-01-01 | public election | 1 | — |
 | [ ] | [`Q48867373`](https://www.wikidata.org/wiki/Q48867373) | — | eleições legislativas de 2009 em Sintra | 2009-01-01 | public election | 1 | — |
 | [ ] | [`Q48867376`](https://www.wikidata.org/wiki/Q48867376) | — | eleições legislativas de 2009 em Vila Franca de Xira | 2009-01-01 | public election | 1 | — |
+| [ ] | [`Q61056512`](https://www.wikidata.org/wiki/Q61056512) | — | Eleições europeias de 2009 em Barcelos | 2009-01-01 | public election | 1 | — |
+| [ ] | [`Q65171207`](https://www.wikidata.org/wiki/Q65171207) | — | Eleições europeias de 2009 em Cascais | 2009-01-01 | public election | 1 | — |
+| [ ] | [`Q65171210`](https://www.wikidata.org/wiki/Q65171210) | — | Eleições europeias de 2009 em Coimbra | 2009-01-01 | public election | 1 | — |
+| [ ] | [`Q65171214`](https://www.wikidata.org/wiki/Q65171214) | — | Eleições europeias de 2009 em Loures | 2009-01-01 | public election | 1 | — |
+| [ ] | [`Q65171212`](https://www.wikidata.org/wiki/Q65171212) | — | Eleições europeias de 2009 em Leiria | 2009-01-01 | public election | 1 | — |
+| [ ] | [`Q65171218`](https://www.wikidata.org/wiki/Q65171218) | — | Eleições europeias de 2009 em Oeiras | 2009-01-01 | public election | 1 | — |
+| [ ] | [`Q65171216`](https://www.wikidata.org/wiki/Q65171216) | — | Eleições europeias de 2009 em Odivelas | 2009-01-01 | public election | 1 | — |
+| [ ] | [`Q65171223`](https://www.wikidata.org/wiki/Q65171223) | — | Eleições europeias de 2009 em Sintra | 2009-01-01 | public election | 1 | — |
+| [ ] | [`Q65171221`](https://www.wikidata.org/wiki/Q65171221) | — | Eleições europeias de 2009 em Santa Maria da Feira | 2009-01-01 | public election | 1 | — |
+| [ ] | [`Q65171227`](https://www.wikidata.org/wiki/Q65171227) | — | Eleições europeias de 2009 em Vila Nova de Gaia | 2009-01-01 | public election | 1 | — |
+| [ ] | [`Q65171225`](https://www.wikidata.org/wiki/Q65171225) | — | Eleições europeias de 2009 em Vila Franca de Xira | 2009-01-01 | public election | 1 | — |
+| [ ] | [`Q65171230`](https://www.wikidata.org/wiki/Q65171230) | — | Eleições europeias de 2009 na Maia | 2009-01-01 | public election | 1 | — |
+| [ ] | [`Q65171598`](https://www.wikidata.org/wiki/Q65171598) | — | Eleições europeias de 2009 em Almada | 2009-01-01 | public election | 1 | — |
+| [ ] | [`Q65171603`](https://www.wikidata.org/wiki/Q65171603) | — | Eleições europeias de 2009 em Guimarães | 2009-01-01 | public election | 1 | — |
+| [ ] | [`Q65171600`](https://www.wikidata.org/wiki/Q65171600) | — | Eleições europeias de 2009 em Gondomar | 2009-01-01 | public election | 1 | — |
+| [ ] | [`Q65171607`](https://www.wikidata.org/wiki/Q65171607) | — | Eleições europeias de 2009 em Setúbal | 2009-01-01 | public election | 1 | — |
+| [ ] | [`Q65171605`](https://www.wikidata.org/wiki/Q65171605) | — | Eleições europeias de 2009 em Matosinhos | 2009-01-01 | public election | 1 | — |
+| [ ] | [`Q65171610`](https://www.wikidata.org/wiki/Q65171610) | — | Eleições europeias de 2009 em Vila Nova de Famalicão | 2009-01-01 | public election | 1 | — |
+| [ ] | [`Q65171615`](https://www.wikidata.org/wiki/Q65171615) | — | Eleições europeias de 2009 no Seixal | 2009-01-01 | public election | 1 | — |
+| [ ] | [`Q65171613`](https://www.wikidata.org/wiki/Q65171613) | — | Eleições europeias de 2009 no Porto | 2009-01-01 | public election | 1 | — |
+| [ ] | [`Q65171860`](https://www.wikidata.org/wiki/Q65171860) | — | Eleições europeias de 2009 em Braga | 2009-01-01 | public election | 1 | — |
+| [ ] | [`Q65174782`](https://www.wikidata.org/wiki/Q65174782) | — | Eleições europeias de 2009 em Lisboa | 2009-01-01 | public election | 1 | — |
+| [ ] | [`Q65174788`](https://www.wikidata.org/wiki/Q65174788) | — | Eleições europeias de 2009 no Funchal | 2009-01-01 | public election | 1 | — |
+| [ ] | [`Q86737598`](https://www.wikidata.org/wiki/Q86737598) | — | Eleições europeias de 2009 em Beja | 2009-01-01 | public election | 1 | — |
+| [ ] | [`Q86737625`](https://www.wikidata.org/wiki/Q86737625) | — | Eleições legislativas de 2009 em Beja | 2009-01-01 | public election | 1 | — |
 | [ ] | [`Q30936202`](https://www.wikidata.org/wiki/Q30936202) | — | eleições legislativas portuguesas de 2009 no distrito de Aveiro | 2009-01-01 | Portuguese legislative election | 1 | — |
 | [ ] | [`Q30936207`](https://www.wikidata.org/wiki/Q30936207) | — | eleições legislativas portuguesas de 2009 no distrito de Beja | 2009-01-01 | Portuguese legislative election | 1 | — |
 | [ ] | [`Q30936228`](https://www.wikidata.org/wiki/Q30936228) | — | eleições legislativas portuguesas de 2009 no distrito de Braga | 2009-01-01 | Portuguese legislative election | 1 | — |
@@ -986,31 +885,6 @@ to that file and another run, never an edit here.
 | [ ] | [`Q30936247`](https://www.wikidata.org/wiki/Q30936247) | — | eleições legislativas portuguesas de 2009 no distrito de Castelo Branco | 2009-01-01 | Portuguese legislative election | 1 | — |
 | [ ] | [`Q30936251`](https://www.wikidata.org/wiki/Q30936251) | — | eleições legislativas portuguesas de 2009 no distrito de Évora | 2009-01-01 | Portuguese legislative election | 1 | — |
 | [ ] | [`Q30936249`](https://www.wikidata.org/wiki/Q30936249) | — | eleições legislativas portuguesas de 2009 no distrito de Coimbra | 2009-01-01 | Portuguese legislative election | 1 | — |
-| [ ] | [`Q30936265`](https://www.wikidata.org/wiki/Q30936265) | — | eleições legislativas portuguesas de 2009 no distrito de Faro | 2009-01-01 | Portuguese legislative election | 1 | — |
-| [ ] | [`Q30936270`](https://www.wikidata.org/wiki/Q30936270) | — | eleições legislativas portuguesas de 2009 no distrito da Guarda | 2009-01-01 | Portuguese legislative election | 1 | — |
-| [ ] | [`Q30936328`](https://www.wikidata.org/wiki/Q30936328) | — | eleições legislativas portuguesas de 2009 no distrito de Leiria | 2009-01-01 | Portuguese legislative election | 1 | — |
-| [ ] | [`Q30936334`](https://www.wikidata.org/wiki/Q30936334) | — | eleições legislativas portuguesas de 2009 no distrito de Lisboa | 2009-01-01 | Portuguese legislative election | 1 | — |
-| [ ] | [`Q30936345`](https://www.wikidata.org/wiki/Q30936345) | — | eleições legislativas portuguesas de 2009 no distrito de Portalegre | 2009-01-01 | Portuguese legislative election | 1 | — |
-| [ ] | [`Q30936372`](https://www.wikidata.org/wiki/Q30936372) | — | eleições legislativas portuguesas de 2009 no distrito do Porto | 2009-01-01 | Portuguese legislative election | 1 | — |
-| [ ] | [`Q30936384`](https://www.wikidata.org/wiki/Q30936384) | — | eleições legislativas portuguesas de 2009 no distrito de Santarém | 2009-01-01 | Portuguese legislative election | 1 | — |
-| [ ] | [`Q30936395`](https://www.wikidata.org/wiki/Q30936395) | — | eleições legislativas portuguesas de 2009 no distrito de Setúbal | 2009-01-01 | Portuguese legislative election | 1 | — |
-| [ ] | [`Q30936406`](https://www.wikidata.org/wiki/Q30936406) | — | eleições legislativas portuguesas de 2009 no distrito de Viana do Castelo | 2009-01-01 | Portuguese legislative election | 1 | — |
-| [ ] | [`Q30936411`](https://www.wikidata.org/wiki/Q30936411) | — | eleições legislativas portuguesas de 2009 no distrito de Vila Real | 2009-01-01 | Portuguese legislative election | 1 | — |
-| [ ] | [`Q30936415`](https://www.wikidata.org/wiki/Q30936415) | — | eleições legislativas portuguesas de 2009 no distrito de Viseu | 2009-01-01 | Portuguese legislative election | 1 | — |
-| [ ] | [`Q30936447`](https://www.wikidata.org/wiki/Q30936447) | — | eleições legislativas portuguesas de 2009 na Madeira | 2009-01-01 | Portuguese legislative election | 1 | — |
-| [ ] | [`Q30936445`](https://www.wikidata.org/wiki/Q30936445) | — | eleições legislativas portuguesas de 2009 nos Açores | 2009-01-01 | Portuguese legislative election | 1 | — |
-| [ ] | [`Q48867222`](https://www.wikidata.org/wiki/Q48867222) | — | eleições legislativas de 2009 em Almada | 2009-01-01 | Portuguese legislative election | 1 | — |
-| [ ] | [`Q48867230`](https://www.wikidata.org/wiki/Q48867230) | — | eleições legislativas de 2009 no Seixal | 2009-01-01 | Portuguese legislative election | 1 | — |
-| [ ] | [`Q48867245`](https://www.wikidata.org/wiki/Q48867245) | — | eleições legislativas de 2009 em Coimbra | 2009-01-01 | Portuguese legislative election | 1 | — |
-| [ ] | [`Q48867263`](https://www.wikidata.org/wiki/Q48867263) | — | eleições legislativas de 2009 em Guimarães | 2009-01-01 | Portuguese legislative election | 1 | — |
-| [ ] | [`Q48867283`](https://www.wikidata.org/wiki/Q48867283) | — | eleições legislativas de 2009 em Barcelos | 2009-01-01 | Portuguese legislative election | 1 | — |
-| [ ] | [`Q48867340`](https://www.wikidata.org/wiki/Q48867340) | — | eleições legislativas de 2009 em Matosinhos | 2009-01-01 | Portuguese legislative election | 1 | — |
-| [ ] | [`Q48867351`](https://www.wikidata.org/wiki/Q48867351) | — | eleições legislativas de 2009 em Vila Nova de Gaia | 2009-01-01 | Portuguese legislative election | 1 | — |
-| [ ] | [`Q48867358`](https://www.wikidata.org/wiki/Q48867358) | — | eleições legislativas de 2009 em Cascais | 2009-01-01 | Portuguese legislative election | 1 | — |
-| [ ] | [`Q48867361`](https://www.wikidata.org/wiki/Q48867361) | — | eleições legislativas de 2009 em Loures | 2009-01-01 | Portuguese legislative election | 1 | — |
-| [ ] | [`Q48867365`](https://www.wikidata.org/wiki/Q48867365) | — | eleições legislativas de 2009 em Odivelas | 2009-01-01 | Portuguese legislative election | 1 | — |
-| [ ] | [`Q48867369`](https://www.wikidata.org/wiki/Q48867369) | — | eleições legislativas de 2009 em Oeiras | 2009-01-01 | Portuguese legislative election | 1 | — |
-| [ ] | [`Q61056512`](https://www.wikidata.org/wiki/Q61056512) | — | Eleições europeias de 2009 em Barcelos | 2009-01-01 | public election | 1 | — |
 
 ### treaties-and-agreements-2000s — 1
 
@@ -1043,7 +917,7 @@ to that file and another run, never an edit here.
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q545449`](https://www.wikidata.org/wiki/Q545449) | Iraq War | Guerra do Iraque | 2003-03-20 | military campaign | 110 | — |
+| [ ] | [`Q545449`](https://www.wikidata.org/wiki/Q545449) | Iraq War | Guerra do Iraque | 2003-03-20 | military operation | 110 | — |
 
 ## 2010s — 210 candidate(s), 0 already in the atlas
 
@@ -1051,14 +925,6 @@ to that file and another run, never an edit here.
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q48867173`](https://www.wikidata.org/wiki/Q48867173) | — | eleições legislativas de 2011 na Amadora | 2011-01-01 | public election | 1 | — |
-| [ ] | [`Q48867190`](https://www.wikidata.org/wiki/Q48867190) | — | eleições legislativas de 2011 em Leiria | 2011-01-01 | public election | 1 | — |
-| [ ] | [`Q48867193`](https://www.wikidata.org/wiki/Q48867193) | — | eleições legislativas de 2011 em Loures | 2011-01-01 | public election | 1 | — |
-| [ ] | [`Q48867197`](https://www.wikidata.org/wiki/Q48867197) | 2011 legislative elections in Odivelas | eleições legislativas de 2011 em Odivelas | 2011-01-01 | public election | 1 | — |
-| [ ] | [`Q48867200`](https://www.wikidata.org/wiki/Q48867200) | — | eleições legislativas de 2011 em Oeiras | 2011-01-01 | public election | 1 | — |
-| [ ] | [`Q48867207`](https://www.wikidata.org/wiki/Q48867207) | — | eleições legislativas de 2011 em Vila Franca de Xira | 2011-01-01 | public election | 1 | — |
-| [ ] | [`Q48867204`](https://www.wikidata.org/wiki/Q48867204) | — | eleições legislativas de 2011 em Sintra | 2011-01-01 | public election | 1 | — |
-| [ ] | [`Q48867211`](https://www.wikidata.org/wiki/Q48867211) | — | eleições legislativas de 2011 no Funchal | 2011-01-01 | public election | 1 | — |
 | [ ] | [`Q48867053`](https://www.wikidata.org/wiki/Q48867053) | — | eleições legislativas de 2011 em Barcelos | 2011-01-01 | public election | 1 | — |
 | [ ] | [`Q48867060`](https://www.wikidata.org/wiki/Q48867060) | — | eleições legislativas de 2011 em Braga | 2011-01-01 | public election | 1 | — |
 | [ ] | [`Q48867069`](https://www.wikidata.org/wiki/Q48867069) | — | eleições legislativas de 2011 em Guimarães | 2011-01-01 | public election | 1 | — |
@@ -1070,6 +936,14 @@ to that file and another run, never an edit here.
 | [ ] | [`Q48867163`](https://www.wikidata.org/wiki/Q48867163) | — | eleições legislativas de 2011 em Setúbal | 2011-01-01 | public election | 1 | — |
 | [ ] | [`Q48867167`](https://www.wikidata.org/wiki/Q48867167) | — | eleições legislativas de 2011 em Santa Maria da Feira | 2011-01-01 | public election | 1 | — |
 | [ ] | [`Q48867171`](https://www.wikidata.org/wiki/Q48867171) | — | eleições legislativas de 2011 em Coimbra | 2011-01-01 | public election | 1 | — |
+| [ ] | [`Q48867173`](https://www.wikidata.org/wiki/Q48867173) | — | eleições legislativas de 2011 na Amadora | 2011-01-01 | public election | 1 | — |
+| [ ] | [`Q48867190`](https://www.wikidata.org/wiki/Q48867190) | — | eleições legislativas de 2011 em Leiria | 2011-01-01 | public election | 1 | — |
+| [ ] | [`Q48867193`](https://www.wikidata.org/wiki/Q48867193) | — | eleições legislativas de 2011 em Loures | 2011-01-01 | public election | 1 | — |
+| [ ] | [`Q48867197`](https://www.wikidata.org/wiki/Q48867197) | 2011 legislative elections in Odivelas | eleições legislativas de 2011 em Odivelas | 2011-01-01 | public election | 1 | — |
+| [ ] | [`Q48867200`](https://www.wikidata.org/wiki/Q48867200) | — | eleições legislativas de 2011 em Oeiras | 2011-01-01 | public election | 1 | — |
+| [ ] | [`Q48867207`](https://www.wikidata.org/wiki/Q48867207) | — | eleições legislativas de 2011 em Vila Franca de Xira | 2011-01-01 | public election | 1 | — |
+| [ ] | [`Q48867204`](https://www.wikidata.org/wiki/Q48867204) | — | eleições legislativas de 2011 em Sintra | 2011-01-01 | public election | 1 | — |
+| [ ] | [`Q48867211`](https://www.wikidata.org/wiki/Q48867211) | — | eleições legislativas de 2011 no Funchal | 2011-01-01 | public election | 1 | — |
 | [ ] | [`Q30936451`](https://www.wikidata.org/wiki/Q30936451) | — | eleições legislativas portuguesas de 2011 no distrito de Aveiro | 2011-01-01 | Portuguese legislative election | 1 | — |
 | [ ] | [`Q30936473`](https://www.wikidata.org/wiki/Q30936473) | — | eleições legislativas portuguesas de 2011 no distrito de Beja | 2011-01-01 | Portuguese legislative election | 1 | — |
 | [ ] | [`Q30936486`](https://www.wikidata.org/wiki/Q30936486) | — | eleições legislativas portuguesas de 2011 no distrito de Braga | 2011-01-01 | Portuguese legislative election | 1 | — |
@@ -1121,24 +995,6 @@ to that file and another run, never an edit here.
 | [ ] | [`Q125030453`](https://www.wikidata.org/wiki/Q125030453) | 2011 Portuguese Socialist Party leadership election | Eleição no Partido Socialista para Secretário-Geral em 2011 | 2011-07-22 | public election | 2 | — |
 | [ ] | [`Q1389069`](https://www.wikidata.org/wiki/Q1389069) | 2011 Madeiran regional election | eleições legislativas regionais na Madeira em 2011 | 2011-10-09 | parliamentary election in Madeira | 4 | — |
 | [ ] | [`Q967262`](https://www.wikidata.org/wiki/Q967262) | 2012 Azorean regional election | eleições legislativas regionais nos Açores em 2012 | 2012-10-14 | parliamentary election in the Azores | 3 | — |
-| [ ] | [`Q25443187`](https://www.wikidata.org/wiki/Q25443187) | — | eleições autárquicas de 2013 em Barcelos | 2013-09-29 | Portuguese local elections | 1 | — |
-| [ ] | [`Q25443190`](https://www.wikidata.org/wiki/Q25443190) | 2013 Braga local elections | eleições autárquicas de 2013 em Braga | 2013-09-29 | Portuguese local elections | 1 | — |
-| [ ] | [`Q25443192`](https://www.wikidata.org/wiki/Q25443192) | — | eleições autárquicas de 2013 na Amadora | 2013-09-29 | Portuguese local elections | 1 | — |
-| [ ] | [`Q25443196`](https://www.wikidata.org/wiki/Q25443196) | — | eleições autárquicas de 2013 em Loures | 2013-09-29 | Portuguese local elections | 1 | — |
-| [ ] | [`Q25443202`](https://www.wikidata.org/wiki/Q25443202) | — | eleições autárquicas de 2013 em Leiria | 2013-09-29 | Portuguese local elections | 1 | — |
-| [ ] | [`Q25443201`](https://www.wikidata.org/wiki/Q25443201) | 2013 Lisbon local elections | eleições autárquicas de 2013 em Lisboa | 2013-09-29 | Portuguese local elections | 2 | — |
-| [ ] | [`Q25443210`](https://www.wikidata.org/wiki/Q25443210) | — | eleições autárquicas de 2013 em Setúbal | 2013-09-29 | Portuguese local elections | 1 | — |
-| [ ] | [`Q25443215`](https://www.wikidata.org/wiki/Q25443215) | — | eleições autárquicas de 2013 em Sintra | 2013-09-29 | Portuguese local elections | 1 | — |
-| [ ] | [`Q25443212`](https://www.wikidata.org/wiki/Q25443212) | 2013 Porto local election | eleições autárquicas de 2013 no Porto | 2013-09-29 | Portuguese local elections | 2 | — |
-| [ ] | [`Q25443213`](https://www.wikidata.org/wiki/Q25443213) | — | eleições autárquicas de 2013 em Coimbra | 2013-09-29 | Portuguese local elections | 1 | — |
-| [ ] | [`Q25443235`](https://www.wikidata.org/wiki/Q25443235) | — | eleições autárquicas de 2013 em Vila Nova de Famalicão | 2013-09-29 | Portuguese local elections | 1 | — |
-| [ ] | [`Q25443237`](https://www.wikidata.org/wiki/Q25443237) | — | eleições autárquicas de 2013 em Guimarães | 2013-09-29 | Portuguese local elections | 1 | — |
-| [ ] | [`Q25443254`](https://www.wikidata.org/wiki/Q25443254) | — | eleições autárquicas de 2013 em Vila Nova de Gaia | 2013-09-29 | Portuguese local elections | 1 | — |
-| [ ] | [`Q25443259`](https://www.wikidata.org/wiki/Q25443259) | — | eleições autárquicas de 2013 em Gondomar | 2013-09-29 | Portuguese local elections | 1 | — |
-| [ ] | [`Q28680159`](https://www.wikidata.org/wiki/Q28680159) | — | eleições autárquicas de 2013 em Matosinhos | 2013-09-29 | Portuguese local elections | 1 | — |
-| [ ] | [`Q28680162`](https://www.wikidata.org/wiki/Q28680162) | — | eleições autárquicas de 2013 no Funchal | 2013-09-29 | Portuguese local elections | 1 | — |
-| [ ] | [`Q28680163`](https://www.wikidata.org/wiki/Q28680163) | — | eleições autárquicas de 2013 em Vila Franca de Xira | 2013-09-29 | Portuguese local elections | 1 | — |
-| [ ] | [`Q28680160`](https://www.wikidata.org/wiki/Q28680160) | — | eleições autárquicas de 2013 em Oeiras | 2013-09-29 | Portuguese local elections | 1 | — |
 | [ ] | [`Q10271413`](https://www.wikidata.org/wiki/Q10271413) | 2013 Portuguese local elections | eleições autárquicas portuguesas de 2013 | 2013-09-29 | Portuguese local elections | 6 | — |
 | [ ] | [`Q18471348`](https://www.wikidata.org/wiki/Q18471348) | — | eleições autárquicas de 2013 no distrito de Faro | 2013-09-29 | Portuguese local elections | 1 | — |
 | [ ] | [`Q18471365`](https://www.wikidata.org/wiki/Q18471365) | — | eleições autárquicas de 2013 no distrito de Aveiro | 2013-09-29 | Portuguese local elections | 1 | — |
@@ -1160,6 +1016,24 @@ to that file and another run, never an edit here.
 | [ ] | [`Q25430162`](https://www.wikidata.org/wiki/Q25430162) | — | eleições autárquicas de 2013 no distrito de Viseu | 2013-09-29 | Portuguese local elections | 1 | — |
 | [ ] | [`Q25430163`](https://www.wikidata.org/wiki/Q25430163) | — | eleições autárquicas de 2013 nos Açores | 2013-09-29 | Portuguese local elections | 1 | — |
 | [ ] | [`Q25430177`](https://www.wikidata.org/wiki/Q25430177) | — | eleições autárquicas de 2013 na Madeira | 2013-09-29 | Portuguese local elections | 1 | — |
+| [ ] | [`Q25443187`](https://www.wikidata.org/wiki/Q25443187) | — | eleições autárquicas de 2013 em Barcelos | 2013-09-29 | Portuguese local elections | 1 | — |
+| [ ] | [`Q25443190`](https://www.wikidata.org/wiki/Q25443190) | 2013 Braga local elections | eleições autárquicas de 2013 em Braga | 2013-09-29 | Portuguese local elections | 1 | — |
+| [ ] | [`Q25443192`](https://www.wikidata.org/wiki/Q25443192) | — | eleições autárquicas de 2013 na Amadora | 2013-09-29 | Portuguese local elections | 1 | — |
+| [ ] | [`Q25443196`](https://www.wikidata.org/wiki/Q25443196) | — | eleições autárquicas de 2013 em Loures | 2013-09-29 | Portuguese local elections | 1 | — |
+| [ ] | [`Q25443202`](https://www.wikidata.org/wiki/Q25443202) | — | eleições autárquicas de 2013 em Leiria | 2013-09-29 | Portuguese local elections | 1 | — |
+| [ ] | [`Q25443201`](https://www.wikidata.org/wiki/Q25443201) | 2013 Lisbon local elections | eleições autárquicas de 2013 em Lisboa | 2013-09-29 | Portuguese local elections | 2 | — |
+| [ ] | [`Q25443210`](https://www.wikidata.org/wiki/Q25443210) | — | eleições autárquicas de 2013 em Setúbal | 2013-09-29 | Portuguese local elections | 1 | — |
+| [ ] | [`Q25443215`](https://www.wikidata.org/wiki/Q25443215) | — | eleições autárquicas de 2013 em Sintra | 2013-09-29 | Portuguese local elections | 1 | — |
+| [ ] | [`Q25443212`](https://www.wikidata.org/wiki/Q25443212) | 2013 Porto local election | eleições autárquicas de 2013 no Porto | 2013-09-29 | Portuguese local elections | 2 | — |
+| [ ] | [`Q25443213`](https://www.wikidata.org/wiki/Q25443213) | — | eleições autárquicas de 2013 em Coimbra | 2013-09-29 | Portuguese local elections | 1 | — |
+| [ ] | [`Q25443235`](https://www.wikidata.org/wiki/Q25443235) | — | eleições autárquicas de 2013 em Vila Nova de Famalicão | 2013-09-29 | Portuguese local elections | 1 | — |
+| [ ] | [`Q25443237`](https://www.wikidata.org/wiki/Q25443237) | — | eleições autárquicas de 2013 em Guimarães | 2013-09-29 | Portuguese local elections | 1 | — |
+| [ ] | [`Q25443254`](https://www.wikidata.org/wiki/Q25443254) | — | eleições autárquicas de 2013 em Vila Nova de Gaia | 2013-09-29 | Portuguese local elections | 1 | — |
+| [ ] | [`Q25443259`](https://www.wikidata.org/wiki/Q25443259) | — | eleições autárquicas de 2013 em Gondomar | 2013-09-29 | Portuguese local elections | 1 | — |
+| [ ] | [`Q28680159`](https://www.wikidata.org/wiki/Q28680159) | — | eleições autárquicas de 2013 em Matosinhos | 2013-09-29 | Portuguese local elections | 1 | — |
+| [ ] | [`Q28680162`](https://www.wikidata.org/wiki/Q28680162) | — | eleições autárquicas de 2013 no Funchal | 2013-09-29 | Portuguese local elections | 1 | — |
+| [ ] | [`Q28680163`](https://www.wikidata.org/wiki/Q28680163) | — | eleições autárquicas de 2013 em Vila Franca de Xira | 2013-09-29 | Portuguese local elections | 1 | — |
+| [ ] | [`Q28680160`](https://www.wikidata.org/wiki/Q28680160) | — | eleições autárquicas de 2013 em Oeiras | 2013-09-29 | Portuguese local elections | 1 | — |
 | [ ] | [`Q48866618`](https://www.wikidata.org/wiki/Q48866618) | — | eleições autárquicas de 2013 em Santa Maria da Feira | 2013-09-29 | Portuguese local elections | 1 | — |
 | [ ] | [`Q48866642`](https://www.wikidata.org/wiki/Q48866642) | — | eleições autárquicas de 2013 em Cascais | 2013-09-29 | Portuguese local elections | 1 | — |
 | [ ] | [`Q48866656`](https://www.wikidata.org/wiki/Q48866656) | — | eleições autárquicas de 2013 em Odivelas | 2013-09-29 | Portuguese local elections | 1 | — |
@@ -1232,6 +1106,9 @@ to that file and another run, never an edit here.
 | [ ] | [`Q30931418`](https://www.wikidata.org/wiki/Q30931418) | — | eleições legislativas portuguesas de 2015 nos Açores | 2015-01-01 | public election | 1 | — |
 | [ ] | [`Q30931419`](https://www.wikidata.org/wiki/Q30931419) | — | eleições legislativas portuguesas de 2015 na Madeira | 2015-01-01 | public election | 1 | — |
 | [ ] | [`Q30931448`](https://www.wikidata.org/wiki/Q30931448) | — | eleições legislativas portuguesas de 2015 no Estrangeiro | 2015-01-01 | public election | 1 | — |
+| [ ] | [`Q48867001`](https://www.wikidata.org/wiki/Q48867001) | — | eleições legislativas de 2015 em Barcelos | 2015-01-01 | public election | 1 | — |
+| [ ] | [`Q48867016`](https://www.wikidata.org/wiki/Q48867016) | — | eleições legislativas de 2015 em Braga | 2015-01-01 | public election | 1 | — |
+| [ ] | [`Q48867020`](https://www.wikidata.org/wiki/Q48867020) | — | eleições legislativas de 2015 em Guimarães | 2015-01-01 | public election | 1 | — |
 | [ ] | [`Q48867381`](https://www.wikidata.org/wiki/Q48867381) | — | eleições legislativas de 2015 no Funchal | 2015-01-01 | public election | 1 | — |
 | [ ] | [`Q48867402`](https://www.wikidata.org/wiki/Q48867402) | — | eleições legislativas de 2015 em Leiria | 2015-01-01 | public election | 1 | — |
 | [ ] | [`Q48867405`](https://www.wikidata.org/wiki/Q48867405) | — | eleições legislativas de 2015 em Coimbra | 2015-01-01 | public election | 1 | — |
@@ -1248,9 +1125,6 @@ to that file and another run, never an edit here.
 | [ ] | [`Q51883072`](https://www.wikidata.org/wiki/Q51883072) | — | Eleições legislativas de 2015 em Vila Franca de Xira | 2015-01-01 | public election | 1 | — |
 | [ ] | [`Q51883073`](https://www.wikidata.org/wiki/Q51883073) | — | Eleições legislativas de 2015 em Oeiras | 2015-01-01 | public election | 1 | — |
 | [ ] | [`Q51883078`](https://www.wikidata.org/wiki/Q51883078) | — | Eleições legislativas de 2015 em Gondomar | 2015-01-01 | public election | 1 | — |
-| [ ] | [`Q51883079`](https://www.wikidata.org/wiki/Q51883079) | — | Eleições legislativas de 2015 na Maia | 2015-01-01 | public election | 1 | — |
-| [ ] | [`Q51883076`](https://www.wikidata.org/wiki/Q51883076) | — | Eleições legislativas de 2015 em Setúbal | 2015-01-01 | public election | 1 | — |
-| [ ] | [`Q48867001`](https://www.wikidata.org/wiki/Q48867001) | — | eleições legislativas de 2015 em Barcelos | 2015-01-01 | public election | 1 | — |
 
 ### treaties-and-agreements-2010s — 1
 
@@ -1387,8 +1261,6 @@ to that file and another run, never an edit here.
 | [ ] | [`Q108691152`](https://www.wikidata.org/wiki/Q108691152) | 2021 Vale de Cambra local elections | eleições autárquicas de 2021 em Vale de Cambra | 2021-09-26 | Portuguese local elections | 0 | — |
 | [ ] | [`Q108691158`](https://www.wikidata.org/wiki/Q108691158) | 2021 Vila Nova de Famalicão local elections | eleições autárquicas de 2021 em Vila Nova de Famalicão | 2021-09-26 | Portuguese local elections | 1 | — |
 | [ ] | [`Q108691159`](https://www.wikidata.org/wiki/Q108691159) | 2021 Mogadouro local elections | eleições autárquicas de 2021 em Mogadouro | 2021-09-26 | Portuguese local elections | 0 | — |
-| [ ] | [`Q108691280`](https://www.wikidata.org/wiki/Q108691280) | 2021 Vila Franca de Xira local elections | eleições autárquicas de 2021 em Vila Franca de Xira | 2021-09-26 | Portuguese local elections | 1 | — |
-| [ ] | [`Q108691281`](https://www.wikidata.org/wiki/Q108691281) | 2021 Felgueiras local elections | eleições autárquicas de 2021 em Felgueiras | 2021-09-26 | Portuguese local elections | 0 | — |
 | [ ] | [`Q108691156`](https://www.wikidata.org/wiki/Q108691156) | 2021 Celorico da Beira local elections | eleições autárquicas de 2021 em Celorico da Beira | 2021-09-26 | Portuguese local elections | 0 | — |
 | [ ] | [`Q108691157`](https://www.wikidata.org/wiki/Q108691157) | 2021 Soure local elections | eleições autárquicas de 2021 em Soure | 2021-09-26 | Portuguese local elections | 0 | — |
 | [ ] | [`Q108691163`](https://www.wikidata.org/wiki/Q108691163) | 2021 Loulé local elections | eleições autárquicas de 2021 em Loulé | 2021-09-26 | Portuguese local elections | 0 | — |
@@ -1483,6 +1355,8 @@ to that file and another run, never an edit here.
 | [ ] | [`Q108691274`](https://www.wikidata.org/wiki/Q108691274) | 2021 Santana local elections | eleições autárquicas de 2021 em Santana | 2021-09-26 | Portuguese local elections | 0 | — |
 | [ ] | [`Q108691272`](https://www.wikidata.org/wiki/Q108691272) | 2021 Arraiolos local elections | eleições autárquicas de 2021 em Arraiolos | 2021-09-26 | Portuguese local elections | 0 | — |
 | [ ] | [`Q108691273`](https://www.wikidata.org/wiki/Q108691273) | 2021 Guarda local elections | eleições autárquicas de 2021 na Guarda | 2021-09-26 | Portuguese local elections | 1 | — |
+| [ ] | [`Q108691278`](https://www.wikidata.org/wiki/Q108691278) | 2021 Cinfães local elections | eleições autárquicas de 2021 em Cinfães | 2021-09-26 | Portuguese local elections | 0 | — |
+| [ ] | [`Q108691276`](https://www.wikidata.org/wiki/Q108691276) | 2021 Matosinhos local elections | eleições autárquicas de 2021 em Matosinhos | 2021-09-26 | Portuguese local elections | 1 | — |
 
 ### disasters-2020s — 7
 
