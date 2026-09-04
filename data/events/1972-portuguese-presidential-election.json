@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "1972-portuguese-presidential-election",
   "kind": "event",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,11 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "m21-retracted"
+    ],
+    "note": "Retracted in M21: 25 July 1972, Américo Tomás returned unopposed by the National Assembly for a third seven-year term that would have run to 1979. The mechanism — a presidency filled with no electorate in it — is already wired on the election of 1965, and repeating that argument against a second target would be padding. The one thing this election adds, that Tomás’s survival tied Caetano to the war, is a single edge and one is not two."
   },
   "wikidata": "Q16153777",
   "sitelinks": 5,

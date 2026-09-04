@@ -304,3 +304,77 @@ Wired instead: `1965-portuguese-presidential-election` and
 `1969-portuguese-legislative-election` — the first presidential election with
 no electorate in it, which is the 1959 revision working as designed, and the
 last election the regime asked to be judged by.
+
+## 1970s to 1974 — 8 retracted, 1 merged, 1 wired
+
+- `equality-statute-between-brazil-and-portugal` — the Convention on Equality
+  of Rights and Duties, Brasília, 7 September 1971. A real and durable
+  instrument; the atlas holds almost nothing of the Brazilian relationship
+  after 1822 for it to touch.
+- `1972-portuguese-presidential-election` — 25 July 1972, Tomás returned
+  unopposed by the Assembly for a term that would have run to 1979. The
+  mechanism is already wired on 1965 and repeating one argument against a
+  second target is padding. The one thing this election adds — that Tomás's
+  survival tied Caetano to the war — is a single edge.
+- `1973-angolan-legislative-assembly-election` — 19 to 27 March 1973, the
+  first and only Legislative Assembly election in Portuguese Angola. Worth a
+  reviewer's attention: a settler assembly a year before the regime fell, and
+  a one-sentence lead.
+- **The three Revolutionary Brigades bomb attacks** of 9 and 10 March 1973 —
+  `…quartel-mestre-general…`, `…recruitment-and-mobilization-district-n-1…`,
+  `…army-mechanographic-services…`. No cached lead in either language for any
+  of them; all the import recovered beyond the titles was a Wikidata
+  description reading "attack perpetrated on March 9, 1973". Three records
+  written out of three one-line descriptions would be invention rather than
+  record.
+- `1974-guinean-general-election` — 27 December 1974, French Guinea; the
+  sixth and last of the Conakry records.
+- `q1454657` — **unidentifiable**, the third after `q11077889` and
+  `q2115000`. A year, 1974, and a region, Africa.
+
+**Merged, not retracted:**
+
+- `wiriyamu-massacre` → **`wiriyamu-massacre-1972`**. The same killing of the
+  same village in Tete province in December 1972, Operation Marosca.
+
+Wired instead: `1973-portuguese-legislative-election`, the last election of
+the Estado Novo, which the opposition refused after testing the opening in
+1969.
+
+---
+
+## What the run found
+
+76 imported events start before 1975. **13 are wired, 59 retracted and 4
+merged** — a retraction rate of 83%, well above the 20% the brief sets as the
+floor below which edges are being invented. The rate is high because of what
+the import caught: 49 of the 76 are elections, most of them either
+*rotativismo* ballots the crown arranged or single-list ballots the Estado
+Novo held, and an election that changed nothing is the clearest case the
+brief describes.
+
+Three findings worth the owner's attention, in order of size:
+
+1. **The atlas's African spine begins with the three wars.** Batepá (1953)
+   and Mueda (1960) are both major events, both have exactly one arguable
+   edge, and both were retracted for it. The atlas holds no São Toméan record
+   before 1975 and no Mozambican one before 1964 — not FRELIMO's founding,
+   not the cotton regime, not Pidjiguiti. Adding a handful of pre-war African
+   records would let several of these retractions be reversed.
+
+2. **Six of the retractions are not Portuguese at all.** The import's class
+   queries caught French Guinea — Conakry, not Bissau — in 1952, 1957, 1958,
+   1961, 1963 and 1974. Only the constitutional referendum of 1958 was kept,
+   and only because independent Conakry is where the PAIGC lived.
+
+3. **Three records cannot be identified at all**: `q11077889`, `q2115000`
+   and `q1454657` carry no label, no description and no lead in either
+   language, and are titled with their own Wikidata ids. One of them points
+   hard at a real event — 28 May 1922 at Macau — and the atlas still declines
+   to write it, because pointing is not knowing.
+
+Four date and magnitude disagreements between the two Wikipedias were found
+and recorded on the records rather than resolved: the 1919 presidential
+election (6 December in English, 6 August in Portuguese), the 1957
+legislative election (3 versus 4 November), and the 1969 earthquake
+(magnitude 7.8 versus 8).

@@ -5354,7 +5354,27 @@
       "aliases": [],
       "confidence": "probable",
       "from": "1969-portuguese-legislative-election",
+      "id": "1969-portuguese-legislative-election--1973-portuguese-legislative-election--reacted-to",
+      "status": "active",
+      "supersededBy": null,
+      "to": "1973-portuguese-legislative-election",
+      "type": "reacted-to"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "1969-portuguese-legislative-election",
       "id": "1969-portuguese-legislative-election--carnation-revolution-1974--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "carnation-revolution-1974",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "1973-portuguese-legislative-election",
+      "id": "1973-portuguese-legislative-election--carnation-revolution-1974--precondition-of",
       "status": "active",
       "supersededBy": null,
       "to": "carnation-revolution-1974",
@@ -7573,7 +7593,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "1969 Portuguese legislative election",
-      "weight": 5,
+      "weight": 6,
       "when": {
         "calendar": "gregorian",
         "date": "1969-10-26",
@@ -7593,7 +7613,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "1972 Portuguese presidential election",
       "weight": 0,
@@ -7615,7 +7635,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "1973 Angolan Legislative Assembly election",
       "weight": 0,
@@ -7629,7 +7649,24 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "uniao-nacional",
+          "role": "as ANP, took all 150 seats"
+        },
+        {
+          "actor": "marcelo-caetano",
+          "role": "head of government"
+        },
+        {
+          "actor": "americo-tomas",
+          "role": "president under whom it was held"
+        },
+        {
+          "actor": "pcp",
+          "role": "stood clandestinely inside the CDE lists"
+        }
+      ],
       "aliases": [],
       "id": "1973-portuguese-legislative-election",
       "place": null,
@@ -7638,8 +7675,9 @@
       "status": "active",
       "supersededBy": null,
       "title": "1973 Portuguese legislative election",
-      "weight": 0,
+      "weight": 6,
       "when": {
+        "calendar": "gregorian",
         "date": "1973-10-28",
         "end": 1973,
         "start": 1973
@@ -7657,7 +7695,7 @@
       "place": null,
       "region": "africa",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "1974 Guinean general election",
       "weight": 0,
@@ -10681,7 +10719,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "Bomb attack by the Revolutionary Brigades on the Quartel-Mestre-General building, in Lisbon, Portugal",
       "weight": 0,
@@ -10699,7 +10737,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "Bomb attack by the Revolutionary Brigades on the Recruitment and Mobilization District nº 1 (DRM 1)",
       "weight": 0,
@@ -10717,7 +10755,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "Bomb attack on the Army Mechanographic Services, in Lisbon, Portugal",
       "weight": 0,
@@ -10875,7 +10913,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "25 April",
-      "weight": 19,
+      "weight": 20,
       "when": {
         "calendar": "gregorian",
         "date": "1974-04-25",
@@ -11734,7 +11772,7 @@
       "place": null,
       "region": "americas",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "Equality Statute between Brazil and Portugal",
       "weight": 0,
@@ -13408,7 +13446,7 @@
       "place": null,
       "region": "africa",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "Q1454657",
       "weight": 0,
@@ -14152,8 +14190,8 @@
       "place": null,
       "region": "africa",
       "regionMethod": "override",
-      "status": "active",
-      "supersededBy": null,
+      "status": "merged",
+      "supersededBy": "wiriyamu-massacre-1972",
       "title": "Wiriyamu Massacre",
       "weight": 0,
       "when": {

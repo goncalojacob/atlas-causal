@@ -479,7 +479,82 @@
         "rosas-1994-estado-novo"
       ],
       "from": "1969-portuguese-legislative-election",
+      "id": "1969-portuguese-legislative-election--1973-portuguese-legislative-election--reacted-to",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "1973-portuguese-legislative-election",
+      "type": "reacted-to"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "maxwell-1995-making-of-portuguese-democracy",
+        "rosas-1994-estado-novo"
+      ],
+      "from": "1969-portuguese-legislative-election",
       "id": "1969-portuguese-legislative-election--carnation-revolution-1974--precondition-of",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "carnation-revolution-1974",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "maxwell-1995-making-of-portuguese-democracy",
+        "rosas-1994-estado-novo",
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "1973-portuguese-legislative-election",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "1973 Portuguese legislative election"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "maxwell-1995-making-of-portuguese-democracy",
+        "rosas-1994-estado-novo"
+      ],
+      "from": "1973-portuguese-legislative-election",
+      "id": "1973-portuguese-legislative-election--carnation-revolution-1974--precondition-of",
       "kind": "edge",
       "review": {
         "flags": [
@@ -7201,32 +7276,8 @@
     }
   ],
   "schema": 1,
-  "total": 851,
+  "total": 853,
   "warnings": [
-    {
-      "id": "1972-portuguese-presidential-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "1973-angolan-legislative-assembly-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "1973-portuguese-legislative-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "1974-guinean-general-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
     {
       "id": "1975-portuguese-constituent-assembly-election",
       "kind": "event",
@@ -7972,24 +8023,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "bomb-attack-by-the-revolutionary-brigades-on-the-quartel-mestre-general-building-in-lisbon-portugal",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "bomb-attack-by-the-revolutionary-brigades-on-the-recruitment-and-mobilization-district-n-1-drm-1",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "bomb-attack-on-the-army-mechanographic-services-in-lisbon-portugal",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
       "id": "chiado-fire",
       "kind": "event",
       "message": "event has no edges",
@@ -8069,12 +8102,6 @@
     },
     {
       "id": "eleicoes-legislativas-regionais-nos-acores-em-1992",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "equality-statute-between-brazil-and-portugal",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"
@@ -8171,12 +8198,6 @@
     },
     {
       "id": "portuguese-regionalisation-referendum-1998",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "q1454657",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"
@@ -8294,12 +8315,6 @@
       "kind": "source",
       "message": "source is cited by nothing under validation",
       "rule": "no-citers"
-    },
-    {
-      "id": "wiriyamu-massacre",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
     }
   ]
 }

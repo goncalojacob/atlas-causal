@@ -1,7 +1,7 @@
 {
   "counts": {
     "actors": 324,
-    "edges": 113,
+    "edges": 115,
     "events": 326,
     "narratives": 1,
     "places": 25,
@@ -11,9 +11,9 @@
     "sources": 34
   },
   "files": {
-    "review": "index/review-2d5a100927f7.json",
-    "sources": "index/sources-073cd2bc6fd9.json",
-    "topology": "index/topology-463f63b09667.json"
+    "review": "index/review-81aff325bcae.json",
+    "sources": "index/sources-048bd6ac5096.json",
+    "topology": "index/topology-7ab5a1a6a710.json"
   },
   "land": [
     {
@@ -89,6 +89,7 @@
     "annexed it",
     "applicant",
     "appointed",
+    "as anp, took all 150 seats",
     "author",
     "backer",
     "belligerent",
@@ -119,6 +120,7 @@
     "founding member",
     "governing party",
     "government",
+    "head of government",
     "head of state",
     "head of the government the attack targeted",
     "heir apparent, killed in the attack",
@@ -170,6 +172,7 @@
     "signatory",
     "sole candidate, elected president",
     "sole party, took all 120 seats",
+    "stood clandestinely inside the cde lists",
     "successor",
     "superseded",
     "supporter",

@@ -9,14 +9,19 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "summary-drafted"
     ]
   },
   "wikidata": "Q7232770",
@@ -27,18 +32,52 @@
   },
   "sources": [
     {
+      "source": "maxwell-1995-making-of-portuguese-democracy",
+      "locator": null
+    },
+    {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1973 Portuguese legislative election\", revision 1303988821"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Eleições legislativas portuguesas de 1973\", revision 68128942"
+    },
+    {
       "source": "wikidata",
       "locator": "Q7232770"
     }
   ],
   "title": "1973 Portuguese legislative election",
-  "summary": "Wikidata item Q7232770, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The last election of the Estado Novo was held on 28 October 1973, five months before the regime fell. The Democratic Opposition — organised as district CDE committees, which is where the clandestine Communists and Socialists and a good deal else stood together — put up lists and then withdrew, saying as it had in 1961 that the conditions for a free election did not exist. Acção Nacional Popular, the National Union under the name Caetano had given it, took all 150 seats. The Assembly elected that October sat from 15 November and was dissolved by the Armed Forces Movement on 26 April 1974. It is in the atlas as the point at which the regime finished demonstrating that it would not be changed by anybody voting.",
   "when": {
     "start": 1973,
     "end": 1973,
-    "date": "1973-10-28"
+    "date": "1973-10-28",
+    "calendar": "gregorian"
   },
   "place": null,
   "region": "europe",
-  "actors": []
+  "actors": [
+    {
+      "actor": "uniao-nacional",
+      "role": "as ANP, took all 150 seats"
+    },
+    {
+      "actor": "marcelo-caetano",
+      "role": "head of government"
+    },
+    {
+      "actor": "americo-tomas",
+      "role": "president under whom it was held"
+    },
+    {
+      "actor": "pcp",
+      "role": "stood clandestinely inside the CDE lists"
+    }
+  ]
 }

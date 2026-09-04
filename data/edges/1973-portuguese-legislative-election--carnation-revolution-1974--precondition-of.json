@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "1973-portuguese-legislative-election--carnation-revolution-1974--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "maxwell-1995-making-of-portuguese-democracy",
+      "locator": null
+    },
+    {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    }
+  ],
+  "from": "1973-portuguese-legislative-election",
+  "to": "carnation-revolution-1974",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "This is narrower than the edge the atlas now carries from 1969, which is about the civilian road closing. What October 1973 added was finality and timing. The last Assembly of the Estado Novo was seated in November; the captains had begun meeting that September over a decree on seniority, and through the winter their grievance acquired a political programme and then a plan. After that autumn nobody in uniform had to be persuaded that the Assembly was not where the war would be ended. The claim is about how tight the sequence is, not that the election produced the coup.",
+  "dispute": null
+}
