@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "murder-of-joana-cipriano",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q264468",
+  "sitelinks": 7,
+  "wikipedia": {
+    "en": "Murder of Joana Cipriano",
+    "pt": "Caso Joana Cipriano"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q264468"
+    }
+  ],
+  "title": "murder of Joana Cipriano",
+  "summary": "Wikidata item Q264468, imported by tools/import/wikidata.mjs. The item's own description reads \"Portuguese murder case\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2004,
+    "end": 2004,
+    "date": "2004-09-12"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}

@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "2009-portuguese-legislative-election",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q1228693",
+  "sitelinks": 13,
+  "wikipedia": {
+    "en": "2009 Portuguese legislative election",
+    "pt": "Eleições legislativas portuguesas de 2009"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1228693"
+    }
+  ],
+  "title": "2009 Portuguese legislative election",
+  "summary": "Wikidata item Q1228693, imported by tools/import/wikidata.mjs. The item's own description reads \"election in Portugal\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2009,
+    "end": 2009,
+    "date": "2009-09-27"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}

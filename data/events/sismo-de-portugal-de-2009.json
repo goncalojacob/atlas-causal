@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "sismo-de-portugal-de-2009",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q6143030",
+  "sitelinks": 3,
+  "wikipedia": {
+    "pt": "Sismo de Portugal de 2009"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q6143030"
+    }
+  ],
+  "title": "Sismo de Portugal de 2009",
+  "summary": "Wikidata item Q6143030, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2009,
+    "end": 2009,
+    "date": "2009-12-17"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}

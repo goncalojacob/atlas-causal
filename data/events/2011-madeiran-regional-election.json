@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "2011-madeiran-regional-election",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q1389069",
+  "sitelinks": 4,
+  "wikipedia": {
+    "en": "2011 Madeiran regional election",
+    "pt": "Eleições legislativas regionais na Madeira em 2011"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1389069"
+    }
+  ],
+  "title": "2011 Madeiran regional election",
+  "summary": "Wikidata item Q1389069, imported by tools/import/wikidata.mjs. The item's own description reads \"election\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2011,
+    "end": 2011,
+    "date": "2011-10-09"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}

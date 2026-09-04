@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "2011-portuguese-presidential-election",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q1576195",
+  "sitelinks": 12,
+  "wikipedia": {
+    "en": "2011 Portuguese presidential election",
+    "pt": "Eleições presidenciais portuguesas de 2011"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1576195"
+    }
+  ],
+  "title": "2011 Portuguese presidential election",
+  "summary": "Wikidata item Q1576195, imported by tools/import/wikidata.mjs. The item's own description reads \"election\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2011,
+    "end": 2011,
+    "date": "2011-01-23"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}

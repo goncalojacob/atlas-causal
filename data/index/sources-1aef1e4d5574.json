@@ -9530,7 +9530,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 165,
+      "citationCount": 189,
       "citations": [
         {
           "dissent": false,
@@ -10110,6 +10110,114 @@
         },
         {
           "dissent": false,
+          "id": "2004-azorean-regional-election",
+          "kind": "event",
+          "locator": "Q10271610"
+        },
+        {
+          "dissent": false,
+          "id": "2004-european-parliament-election-in-portugal",
+          "kind": "event",
+          "locator": "Q959901"
+        },
+        {
+          "dissent": false,
+          "id": "2004-madeiran-regional-election",
+          "kind": "event",
+          "locator": "Q10271604"
+        },
+        {
+          "dissent": false,
+          "id": "2005-portuguese-legislative-election",
+          "kind": "event",
+          "locator": "Q2031494"
+        },
+        {
+          "dissent": false,
+          "id": "2005-portuguese-local-elections",
+          "kind": "event",
+          "locator": "Q7232780"
+        },
+        {
+          "dissent": false,
+          "id": "2006-portuguese-presidential-election",
+          "kind": "event",
+          "locator": "Q2715397"
+        },
+        {
+          "dissent": false,
+          "id": "2007-lisbon-local-elections",
+          "kind": "event",
+          "locator": "Q61000371"
+        },
+        {
+          "dissent": false,
+          "id": "2007-madeiran-regional-election",
+          "kind": "event",
+          "locator": "Q10271605"
+        },
+        {
+          "dissent": false,
+          "id": "2007-portuguese-abortion-referendum",
+          "kind": "event",
+          "locator": "Q250247"
+        },
+        {
+          "dissent": false,
+          "id": "2008-azorean-regional-election",
+          "kind": "event",
+          "locator": "Q10271612"
+        },
+        {
+          "dissent": false,
+          "id": "2009-european-parliament-election-in-portugal",
+          "kind": "event",
+          "locator": "Q788057"
+        },
+        {
+          "dissent": false,
+          "id": "2009-lisbon-local-elections",
+          "kind": "event",
+          "locator": "Q48866852"
+        },
+        {
+          "dissent": false,
+          "id": "2009-porto-local-election",
+          "kind": "event",
+          "locator": "Q48866840"
+        },
+        {
+          "dissent": false,
+          "id": "2009-portuguese-legislative-election",
+          "kind": "event",
+          "locator": "Q1228693"
+        },
+        {
+          "dissent": false,
+          "id": "2009-portuguese-local-elections",
+          "kind": "event",
+          "locator": "Q15727888"
+        },
+        {
+          "dissent": false,
+          "id": "2011-madeiran-regional-election",
+          "kind": "event",
+          "locator": "Q1389069"
+        },
+        {
+          "dissent": false,
+          "id": "2011-portuguese-legislative-election",
+          "kind": "event",
+          "locator": "Q1457926"
+        },
+        {
+          "dissent": false,
+          "id": "2011-portuguese-presidential-election",
+          "kind": "event",
+          "locator": "Q1576195"
+        },
+        {
+          "dissent": false,
           "id": "2011-portuguese-socialist-party-leadership-election",
           "kind": "event",
           "locator": "Q125030453"
@@ -10326,6 +10434,12 @@
         },
         {
           "dissent": false,
+          "id": "espirito-santo-bank-of-campolide-robbery",
+          "kind": "event",
+          "locator": "Q111918021"
+        },
+        {
+          "dissent": false,
           "id": "geneva-act-of-the-lisbon-agreement-on-appellations-of-origin-and-geographical-indications",
           "kind": "event",
           "locator": "Q4263323"
@@ -10386,6 +10500,12 @@
         },
         {
           "dissent": false,
+          "id": "murder-of-joana-cipriano",
+          "kind": "event",
+          "locator": "Q264468"
+        },
+        {
+          "dissent": false,
           "id": "murder-of-jorge-augusto-de-carvalho-porto-judiciary-police-officer",
           "kind": "event",
           "locator": "Q112073029"
@@ -10401,6 +10521,12 @@
           "id": "portuguese-constitutional-referendum-1933",
           "kind": "event",
           "locator": "Q7232706"
+        },
+        {
+          "dissent": false,
+          "id": "portuguese-european-constitution-referendum",
+          "kind": "event",
+          "locator": "Q3454893"
         },
         {
           "dissent": false,
@@ -10494,6 +10620,18 @@
         },
         {
           "dissent": false,
+          "id": "sismo-de-portugal-de-2009",
+          "kind": "event",
+          "locator": "Q6143030"
+        },
+        {
+          "dissent": false,
+          "id": "telecoms-package",
+          "kind": "event",
+          "locator": "Q1536157"
+        },
+        {
+          "dissent": false,
           "id": "treaty-establishing-the-european-stability-mechanism",
           "kind": "event",
           "locator": "Q15991234"
@@ -10509,6 +10647,12 @@
           "id": "treaty-of-friendship-and-cooperation-between-spain-and-portugal",
           "kind": "event",
           "locator": "Q6151921"
+        },
+        {
+          "dissent": false,
+          "id": "treaty-of-lisbon",
+          "kind": "event",
+          "locator": "Q52843"
         },
         {
           "dissent": false,

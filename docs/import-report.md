@@ -166,3 +166,31 @@ created event 2001-portuguese-local-elections from Q18471358
 created event 2002-portuguese-legislative-election from Q2053133
 44 Wikipedia lead(s) cached under tools/import/cache/wikipedia
 25 created, 0 enriched, 0 refused, 0 ambiguous
+import: 25 item(s) this batch, 57 left after it, 47 call(s) spent
+created event 2004-european-parliament-election-in-portugal from Q959901
+created event 2004-madeiran-regional-election from Q10271604
+created event 2004-azorean-regional-election from Q10271610
+created event 2005-portuguese-legislative-election from Q2031494
+created event 2005-portuguese-local-elections from Q7232780
+created event 2006-portuguese-presidential-election from Q2715397
+created event 2007-madeiran-regional-election from Q10271605
+created event 2007-lisbon-local-elections from Q61000371
+created event 2008-azorean-regional-election from Q10271612
+created event 2009-european-parliament-election-in-portugal from Q788057
+created event 2009-portuguese-legislative-election from Q1228693
+created event 2009-portuguese-local-elections from Q15727888
+created event 2009-porto-local-election from Q48866840
+created event 2009-lisbon-local-elections from Q48866852
+created event treaty-of-lisbon from Q52843
+created event portuguese-european-constitution-referendum from Q3454893
+created event 2007-portuguese-abortion-referendum from Q250247
+created event telecoms-package from Q1536157
+created event murder-of-joana-cipriano from Q264468
+created event espirito-santo-bank-of-campolide-robbery from Q111918021
+created event sismo-de-portugal-de-2009 from Q6143030
+created event 2011-portuguese-presidential-election from Q1576195
+created event 2011-portuguese-legislative-election from Q1457926
+created event 2011-madeiran-regional-election from Q1389069
+refused Q545449: no place record for its location and no lane reachable from its point; a placeless event must carry a region
+45 Wikipedia lead(s) cached under tools/import/cache/wikipedia
+24 created, 0 enriched, 1 refused, 0 ambiguous

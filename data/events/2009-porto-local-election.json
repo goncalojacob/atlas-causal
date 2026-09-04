@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "2009-porto-local-election",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q48866840",
+  "sitelinks": 2,
+  "wikipedia": {
+    "en": "2009 Porto local election",
+    "pt": "Eleições autárquicas de 2009 no Porto"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q48866840"
+    }
+  ],
+  "title": "2009 Porto local election",
+  "summary": "Wikidata item Q48866840, imported by tools/import/wikidata.mjs. The item's own description reads \"Portuguese municipal election\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2009,
+    "end": 2009,
+    "date": "2009-10-11"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}
