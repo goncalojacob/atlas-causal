@@ -6,7 +6,26 @@ session ends. `ARCHITECTURE.md` is the target; this file is the position.
 
 ## Last updated
 
-2026-09-04, after M14 (`docs/m14-brief.md`): two ideas the interface had been
+2026-09-04, after M15 (`docs/m15-brief.md`): a record can now say **where else
+the same thing is catalogued**, and a reviewer can say **which of its sources
+they have actually opened**. Three optional fields — `wikidata`, `wikipedia`
+(language → article title), `sitelinks` — on `event`, `actor` and `place`,
+additive and written by the import that M16 builds; the contribution form
+derives only the item id, from a pasted Wikidata URL, and the review dashboard
+shows all three read-only. They are **identifiers and never evidence**: the
+card offers "Read more on Wikipedia" in the reader's language as a way *out*
+of the atlas, the titles join the search as further names, and **`sitelinks`
+feeds nothing** — not the map, not `weight`, not `prominence`. Rule 21 keeps
+one item to one record of a kind; **rule 22** refuses `consensus` to an edge
+whose every supporting citation is a Wikipedia record. `review.citations`
+records who checked a citation against the source and when: the dashboard
+lists every source the open record rests on with a box each, the queue counts
+what is unchecked, the validator prints **1411 of 1411** still unchecked, and
+**Sign warns and signs anyway**. Three source records — `wikidata`,
+`wikipedia-en`, `wikipedia-pt`, the last two with identical `creators` — exist
+for the import to cite.
+
+Before that, 2026-09-04, after M14 (`docs/m14-brief.md`): two ideas the interface had been
 confusing with others were separated and given a file each. **A lane is a
 grouping** — `none`, `actor`, `place`, `region` — and `src/lanes.js` is the
 one file that decides what a lane is, read by the timeline and by the graph
@@ -33,12 +52,16 @@ correction bundle for the issue path, and the public site gains no backend.
 
 ## Phase
 
-**M0 to M14 built, plus the map usability work, on branch `m0`, pull
-request #1 open against `main`.** M13 was the last milestone in the run
-protocol's order and M14 ran after it, from `docs/m14-brief.md` on the
-`brief-m14` side branch; nothing is queued behind it. M8 changed no structure
+**M0 to M15 built, plus the map usability work, on branch `m0`, pull
+request #1 open against `main`.** M13 was the last milestone in the original
+run protocol's order; M14 ran after it from `docs/m14-brief.md` on the
+`brief-m14` side branch, and M15 from `docs/m15-brief.md`, which arrived on
+`brief-m15` together with `docs/review-2026-09-04-plan.md`, the amended
+`docs/run-protocol.md` and the briefs for **M16, M17 and M18** — the Wikidata
+import tool and its Action, the reconciliation and the longer summaries, and
+the candidate list the owner ticks. Those three are queued and not started. M8 changed no structure
 and wrote no revision, as its brief allows.
-`ARCHITECTURE.md` **revision 14** is the specification; its opening note says what changed and why (revision 4
+`ARCHITECTURE.md` **revision 15** is the specification; its opening note says what changed and why (revision 4
 added the `actor` kind; revision 5 added `cluster.js`, `weight` in the
 index and `prominence` as a reserved override; revision 6 added the
 `presence` kind, the CC BY-NC-SA licence and its one exception, and moved
@@ -59,7 +82,9 @@ amendments the dashboard needed — the local write server that is never
 deployed, and the one path where `authors` is written without the Action;
 revision 14 made a lane a grouping with four values and no grouping as the
 default, added `lanes.js`, `lens.js` and `grouping.js`, and put `focus`,
-`group` and `lanes` in the state).
+`group` and `lanes` in the state; revision 15 added the three identity
+fields, rules 21 and 22, the per-citation verification flags, `wikipedia.js`
+and `review/citations.js`).
 The M5 brief asks for revision 5; the map work had already taken that
 number.
 
@@ -1357,6 +1382,42 @@ object. Every later card gets a file.
     `barBox` is the bar geometry, exported so the packing and the drawing
     cannot disagree by a pixel; `rowLanes` is the packing as lanes, so the
     timeline draws one kind of thing and not two.
+95. **"Reject a `wikipedia` without `wikidata`" is a rule, not a schema
+    keyword.** The brief's "Done when" asks the schemas to reject it. The
+    validator's keyword subset has no `dependentRequired` and fails closed on
+    anything outside it (deviation 4's reasoning), so the check is rule 21,
+    with the failing fixture the brief asks for. Everything else about the
+    three fields is in the schemas.
+96. **The citation flags are keyed by the cited source's id**, which the
+    brief offers as the alternative to the citation's index. An index moves
+    the moment somebody adds or removes a citation, and every tick under it
+    would then be about a different book without anything having been said.
+    An id does not move, and rule 3 checks that the key names a source the
+    record actually cites — a flag orphaned by an edit is an error rather
+    than a verification nobody made. A source cited twice in one record is
+    one book to go and read, so it is one row.
+97. **`wikidata` is a field of the contribution form; `wikipedia` and
+    `sitelinks` are preserved keys.** The brief allows either. The item id is
+    the one of the three a person may write — the form derives it from a
+    pasted URL — so it lives in `FIELDS`, marked `identity` so the review
+    dashboard renders it read-only; the two the import alone writes cross a
+    save through `IDENTITY_KEYS` beside `ENVELOPE_KEYS` and are shown, also
+    read-only, in a small block of their own.
+98. **The review index's digest gained a derived key, `cites`.** The queue
+    says how many citations a record still has unchecked, and the browser
+    builds the queue from digests. A digest carries no prose and therefore no
+    `dispute` block to read the dissenting citations out of, so the ids are
+    written out at build time instead of the prose being carried in.
+99. **The three Wikimedia source records carry the assistant-draft marker**,
+    so the review queue is **317** rather than 314. They were written by the
+    assistant, and the marker means exactly that; attributing them to the
+    owner would be false. They are bibliographic records and not historical
+    claims, so signing them is a minute's work rather than a reading.
+100. **Sign's warning is a line beside the button, not a dialog.** The brief
+    says it warns and does not block. A confirm dialog that is always
+    dismissed teaches people to dismiss it; the count is on the queue row,
+    on the open record and in the validator's output, which is three places
+    it cannot be missed and none where it stops anybody.
 
 ## Dates to verify
 
@@ -1470,6 +1531,28 @@ not membership dates at all (deviation 73). The two alliances are
   `region` precision, not a village.
 - `european-economic-community` is closed at 1993 (Maastricht). Whether
   the record should instead be open and renamed is an editorial choice.
+
+Verified in headless Chromium for **M15**, driving the pages over the
+DevTools protocol, with no console error on any page:
+
+- Against `?fixtures=1`, where one event, one actor and one place were given
+  a synthetic identity: **all three cards** show "Read more on Wikipedia" —
+  `.../wiki/Fixture_article_A`, `.../wiki/Fixture_Actor_One` and, for the
+  place, `https://pt.wikipedia.org/wiki/Lugar_de_fixture_A`, which is the
+  fallback working, since that record has no English title. Typing
+  `Lugar de fixture` into the search box finds the place, listed under its
+  own name and not the article's.
+- Against the **real** dataset, `review.html`: a queue row reads
+  **"2 citations unverified"**; opening `afonso-costa` lists its two sources
+  with their identifiers as links and the note "2 of 2 not opened yet. Sign
+  warns about them; it does not stop you."; the boxes are **disabled until a
+  reviewer's name is typed**, since a tick has to say who ticked it; ticking
+  one stamps **"A Reviewer, 2026-09-04"** on the row, leaves the warning
+  naming the one that is left, and **Save stays enabled** throughout. A
+  `source` record opens with no verification list at all, having nothing to
+  check.
+- `about.html` renders with the new section in place and five licence
+  bullets.
 
 Verified in headless Chromium for **M14**, against the real dataset — thirty
 assertions, every one passing, and no console error on any page:
@@ -1690,7 +1773,9 @@ fixtures and the three static pages — sixteen assertions, all passing:
   `docs/map-brief.md`, `docs/m5-brief.md`, `docs/m6-brief.md` and the M7–M13
   briefs beside them — `docs/m14-brief.md` arrived on the `brief-m14` side
   branch, so that writing it did not disturb the running chain, and was
-  copied onto `m0` by the run that built it; the adversarial review is `docs/review-2026-09-01.md`
+  copied onto `m0` by the run that built it; `docs/m15-brief.md` and the
+  briefs for M16, M17 and M18 arrived the same way on `brief-m15`, with
+  `docs/review-2026-09-04-plan.md` and the amended run protocol; the adversarial review is `docs/review-2026-09-01.md`
   and the plan review `docs/review-2026-09-03-plan.md`. The run protocol the
   overnight runs follow is `docs/run-protocol.md`.
 - **Which CShapes entities could be split into a colony and a successor
