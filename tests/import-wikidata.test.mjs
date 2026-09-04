@@ -16,7 +16,7 @@ import {
   classify, intervalFor, slug, foldName, idFor, namesFor, identityOf,
   mergeIdentity, ENRICHABLE, matchesFor, nameMatches, datesMatch, laneFor,
   placeRecord, actorRecord, eventRecord, leadRecord, importedSummary,
-  nextBatch, advance, emptyState, itemIndex, candidatesMarkdown, ambiguousMarkdown, reportLines,
+  nextBatch, advance, emptyState, itemIndex, candidatesMarkdown, ambiguousMarkdown, reportLines, appendReport,
   runImportMode, runReconcileMode, runCandidatesMode,
   IMPORT_AUTHOR, IMPORTED_FLAG, USER_AGENT, SOURCE_ID, MAXLAG, BATCH,
 } from '../tools/import/wikidata.mjs';
@@ -649,4 +649,17 @@ test('itemIndex finds the records that already carry an item, per kind', () => {
   assert.equal(index.get('event:Q1'), 'a');
   assert.equal(index.get('place:Q1'), 'b');
   assert.equal(index.size, 2);
+});
+
+test('the report can be appended to a file, batch after batch', async () => {
+  // One process per batch, so the file a person reads is the concatenation of
+  // them all — and it exists because the run that pushed the branch cannot
+  // read the Action's log.
+  const dir = await mkdtemp(path.join(tmpdir(), 'atlas-report-'));
+  const file = path.join(dir, 'nested', 'import-report.md');
+  await appendReport(file, ['import: batch 1', 'created event a from Q1']);
+  await appendReport(file, ['import: batch 2', 'refused Q2: because']);
+  assert.deepEqual((await readFile(file, 'utf8')).trim().split('\n'), [
+    'import: batch 1', 'created event a from Q1', 'import: batch 2', 'refused Q2: because',
+  ]);
 });

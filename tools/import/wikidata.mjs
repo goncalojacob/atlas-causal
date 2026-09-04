@@ -6,6 +6,10 @@
 //   node tools/import/wikidata.mjs --import      [--data <dir>] [--batch 25] [--budget 400]
 //   node tools/import/wikidata.mjs --candidates  [--to docs/m18-candidates.md]
 //
+// Any of them takes --report <file>, which appends what the run did to that
+// file as well as printing it. The Action commits it, because a job's log is
+// not something the run that pushed the branch can read back.
+//
 // This sandbox has no network and neither does the site: the one place this
 // tool runs for real is .github/workflows/import-wikidata.yml, on a runner,
 // on a branch called import/…. Everything here is therefore written around an
@@ -37,7 +41,7 @@
 // (deploy.yml removes it before the Pages upload) and is checked against
 // schema/v1/wikipedia-lead.json like everything else.
 
-import { mkdir, readdir, readFile, writeFile } from 'node:fs/promises';
+import { appendFile, mkdir, readdir, readFile, writeFile } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
@@ -1236,6 +1240,14 @@ export function reportLines(report, mode) {
   return lines;
 }
 
+// The same lines, appended to a file. A run is one process per batch, so the
+// report a person reads is the concatenation of them all; and the Action's log
+// is not somewhere a cloud run can read from, which is the reason this exists.
+export async function appendReport(file, lines) {
+  await mkdir(path.dirname(file), { recursive: true });
+  await appendFile(file, `${lines.join('\n')}\n`, 'utf8');
+}
+
 // --- CLI --------------------------------------------------------------------
 
 async function main(argv) {
@@ -1244,6 +1256,7 @@ async function main(argv) {
   let batchSize = BATCH;
   let budget = CALL_BUDGET;
   let to = null;
+  let reportTo = null;
   for (let i = 0; i < argv.length; i += 1) {
     const arg = argv[i];
     if (arg.startsWith('--') && MODES.includes(arg.slice(2))) {
@@ -1256,13 +1269,14 @@ async function main(argv) {
     else if (arg === '--batch') batchSize = Number(argv[++i]);
     else if (arg === '--budget') budget = Number(argv[++i]);
     else if (arg === '--to') to = path.resolve(argv[++i]);
+    else if (arg === '--report') reportTo = path.resolve(argv[++i]);
     else {
       console.error(`unknown argument ${arg}`);
       return 2;
     }
   }
   if (!mode) {
-    console.error('usage: node tools/import/wikidata.mjs --reconcile|--import|--candidates [--data <dir>] [--batch 25] [--budget 400] [--to <file>]');
+    console.error('usage: node tools/import/wikidata.mjs --reconcile|--import|--candidates [--data <dir>] [--batch 25] [--budget 400] [--to <file>] [--report <file>]');
     return 2;
   }
   if (!Number.isInteger(batchSize) || batchSize < 1 || !Number.isInteger(budget) || budget < 1) {
@@ -1293,6 +1307,7 @@ async function main(argv) {
     await writeFile(file, candidatesMarkdown(result.report.rows, { generated: today, refused: result.report.refused }), 'utf8');
     console.log(`${result.report.rows.length} candidate(s) written to ${path.relative(ROOT, file)}; nothing under data/ was touched`);
     for (const r of result.report.refused) console.log(`no answer for ${r.qid}: ${r.why}`);
+    if (reportTo) await appendReport(reportTo, [`candidates: ${result.report.rows.length} row(s)`]);
     return 0;
   }
   if (mode === 'reconcile') {
@@ -1304,7 +1319,9 @@ async function main(argv) {
       console.log(`${result.report.ambiguous.length} record(s) left for a person in ${path.relative(ROOT, file)}`);
     }
   }
-  for (const line of reportLines(result.report, mode)) console.log(line);
+  const lines = reportLines(result.report, mode);
+  for (const line of lines) console.log(line);
+  if (reportTo) await appendReport(reportTo, lines);
   return 0;
 }
 

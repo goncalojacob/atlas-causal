@@ -72,8 +72,14 @@ jobs:
             git checkout -- data/ || true
             exit 1
           }
+          # The report each batch appends to, committed with the batch. A job's
+          # log is not something the run that pushed this branch can read back,
+          # and what an import refused — and which classes it could not type —
+          # is the half of the report somebody acts on. It describes this run
+          # only, so it starts empty, and a failure leaves it behind on purpose.
+          : > docs/import-report.md
           for batch in $(seq 1 40); do
-            node "tools/import/wikidata.mjs" "--$MODE" || fail "the import failed on batch $batch"
+            node "tools/import/wikidata.mjs" "--$MODE" --report docs/import-report.md || fail "the import failed on batch $batch"
             node tools/build-index.mjs || fail "the index cannot be built after batch $batch"
             node tools/validate.mjs --index || fail "the tree does not validate after batch $batch"
             node --test || fail "the tests do not pass after batch $batch"
