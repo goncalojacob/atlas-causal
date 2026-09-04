@@ -29,16 +29,28 @@ export function isDraft(record) {
 // files: `data/index/review-<hash>.json` carries one of these per draft.
 // Exactly the fields the list and its filters read — everything else waits
 // until a record is opened, and is then fetched whole.
-// `cites` is the one key here that is not copied off the record: it is the
-// ids of the sources the record rests on, written out because a digest
-// carries no prose and so has no dispute block to read them out of.
-export const DIGEST_KEYS = Object.freeze(['kind', 'id', 'status', 'authors', 'review', 'title', 'names', 'from', 'to', 'type', 'isbn', 'doi', 'cites']);
+// `cites` and `entry` are the two keys here that are not copied off the
+// record: the first is the ids of the sources the record rests on, written
+// out because a digest carries no prose and so has no dispute block to read
+// them out of, and the second says whether the full entry has been written,
+// for the same reason — the entry is the longest prose there is.
+export const DIGEST_KEYS = Object.freeze(['kind', 'id', 'status', 'authors', 'review', 'title', 'names', 'from', 'to', 'type', 'isbn', 'doi', 'cites', 'entry']);
+
+// True of a record whose full entry has been written, and of the digest that
+// stands for one: on a record it is the prose itself, on a digest the `entry`
+// flag, because a digest carries no prose. The same question, either way.
+export function hasBody(record) {
+  if (record?.entry === true) return true;
+  return typeof record?.body === 'string' && record.body.trim() !== '';
+}
 
 export function digestOf(record) {
   const digest = {};
   for (const key of DIGEST_KEYS) if (Object.hasOwn(record ?? {}, key)) digest[key] = record[key];
   const cites = citedSources(record);
   if (cites.length) digest.cites = cites;
+  // Whether the full entry has been written, never the entry itself.
+  if (hasBody(record)) digest.entry = true;
   return digest;
 }
 
@@ -100,6 +112,9 @@ export function buildQueue(records, { warnings = [] } = {}) {
       // what is left to do on a record already open.
       unverified: unverified(record).length,
       citations: citationsOf(record).length,
+      // Not a flag either: whether the long form exists is a fact about how
+      // much of the record has been written, not a thing to go and check.
+      body: hasBody(record),
     }))
     .sort((a, b) => kindRank(a.kind) - kindRank(b.kind) || (a.id < b.id ? -1 : a.id > b.id ? 1 : 0));
 }

@@ -121,6 +121,13 @@
       "type": "object",
       "additionalProperties": { "type": "string", "minLength": 1, "maxLength": 300 }
     },
+    "body": {
+      "description": "The full entry: an extensive text about this event, actor or place, written by a person in the safe Markdown subset src/markdown.js renders (paragraphs, ## and ### headings, emphasis, lists, block quotes, links to records by id and to http(s) URLs, and citation marks [^source-id] that must resolve to this record's own sources — rule 23). No raw HTML and no images. Optional: the summary is what the cards show and this is the long form, so a record without one carries no key at all.",
+      "oneOf": [
+        { "type": "null" },
+        { "type": "string", "minLength": 1, "maxLength": 200000 }
+      ]
+    },
     "sitelinks": {
       "description": "How many language editions have an article for the item. A stored fact for an editorial decision nobody has taken: it feeds neither prominence nor weight, and the map's measure stays the derived weight (ARCHITECTURE.md).",
       "type": "integer",

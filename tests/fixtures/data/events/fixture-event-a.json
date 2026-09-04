@@ -28,6 +28,7 @@
   ],
   "title": "Fixture event A",
   "summary": "Synthetic record used by the test suite. It is not history and describes nothing that happened.",
+  "body": "## What the fixture is for\n\nThis body exercises the entry renderer end to end. It is synthetic and\ndescribes nothing that happened, like every other fixture record.\n\nIt names a place ([Fixture place A](place:fixture-place-a)), an actor\n([Fixture Actor One](actor:fixture-actor-one)) and another event\n([Fixture event B](event:fixture-event-b)), and it cites the one source\nthis record rests on[^fixture-source-1 p. 12].\n\n### The constructs\n\n- *emphasis* and **strong emphasis**\n- a list item that cites the same work again[^fixture-source-1]\n- a link out to the web: [an example](https://example.org/fixture)\n\n> A block quotation, which is one of the constructs the subset allows.\n\nRaw HTML such as <b>this</b> is shown as the characters that were typed,\nand never as markup.",
   "when": {
     "start": 1200,
     "end": 1200,

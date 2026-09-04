@@ -333,3 +333,48 @@ test('an invalid schema set refuses to validate anything (rule 1 of the schema i
   assert.equal(r.errors.length, 1);
   assert.equal(r.errors[0].kind, 'schema');
 });
+
+test('rule 23: a full entry cites what the record cites, and links where records are', async () => {
+  // The fixture event already carries a body naming its one source and three
+  // records that exist; it is the passing case.
+  assert.equal(rulesHit(await run(), 23).length, 0);
+
+  // A mark naming a work the record does not cite is a footnote to nothing.
+  const uncited = await run((fx) => {
+    fx.byId['fixture-event-a'].body += ' And a mark to nowhere[^fixture-source-4].';
+  });
+  const marks = rulesHit(uncited, 23);
+  assert.equal(marks.length, 1, messages(uncited));
+  assert.equal(marks[0].path, '/body');
+  assert.match(marks[0].message, /fixture-source-4/);
+
+  // Repeated, it is still one error: the mistake is the source, not the mark.
+  const twice = await run((fx) => {
+    fx.byId['fixture-event-a'].body += ' Once[^fixture-source-4] and again[^fixture-source-4].';
+  });
+  assert.equal(rulesHit(twice, 23).length, 1);
+
+  // A link by id must resolve, and to a record of the kind it names.
+  const dangling = await run((fx) => {
+    fx.byId['fixture-event-a'].body += ' See [nothing](event:fixture-event-ghost).';
+  });
+  assert.equal(rulesHit(dangling, 23).length, 1);
+  assert.match(rulesHit(dangling, 23)[0].message, /is not an event record/);
+  const wrongKind = await run((fx) => {
+    fx.byId['fixture-event-a'].body += ' See [a place that is an event](place:fixture-event-b).';
+  });
+  assert.match(rulesHit(wrongKind, 23)[0].message, /is not a place record/);
+
+  // An actor and a place carry entries under the same rule; an edge cannot
+  // carry one at all, which is the schema's business rather than this rule's.
+  const onActor = await run((fx) => {
+    fx.byId['fixture-actor-one'].body = 'An entry citing nothing it rests on[^fixture-source-4].';
+  });
+  assert.equal(rulesHit(onActor, 23).length, 1);
+  assert.equal(rulesHit(onActor, 23)[0].kind, 'actor');
+  const onEdge = await run((fx) => {
+    fx.byId['fixture-event-b--fixture-event-d--enabled'].body = 'text';
+  });
+  assert.equal(rulesHit(onEdge, 23).length, 0);
+  assert.ok(onEdge.errors.some((e) => e.rule === 1 && e.id === 'fixture-event-b--fixture-event-d--enabled'));
+});

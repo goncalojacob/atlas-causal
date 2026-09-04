@@ -21,6 +21,7 @@
     "wikidata": { "$ref": "../common/provenance.json#/properties/wikidata" },
     "wikipedia": { "$ref": "../common/provenance.json#/properties/wikipedia" },
     "sitelinks": { "$ref": "../common/provenance.json#/properties/sitelinks" },
+    "body": { "$ref": "../common/provenance.json#/properties/body" },
     "sources": { "$ref": "../common/provenance.json#/properties/sources" },
     "names": {
       "description": "The display name first, then variants: \"Lisbon\", \"Lisboa\".",

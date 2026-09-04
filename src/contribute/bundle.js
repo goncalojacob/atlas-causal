@@ -43,6 +43,18 @@ const WIKIDATA_FIELD = Object.freeze({
   hint: 'optional: paste the item\'s Wikidata URL and the Q-number is taken from it. An identifier, never a source — the argument stays in the record',
 });
 
+// The long form, on the three kinds that have an entry page. It is the one
+// textarea with a preview beside it: the subset is small but it is a syntax,
+// and a contributor who cannot see what a citation mark did will guess.
+const BODY_FIELD = Object.freeze({
+  key: 'body',
+  label: 'Full entry',
+  input: 'textarea',
+  path: '/body',
+  body: true,
+  hint: 'optional, and the long form of this record: paragraphs, ## and ### headings, *emphasis*, - lists, > quotations, [text](event:some-id) into the atlas, [text](https://…) out of it, and [^source-id p. 12] for a work this record already cites. No HTML, no images',
+});
+
 // Field descriptors. `path` is the JSON pointer the validator reports for
 // that field, which is how an error finds its way back to the input that
 // caused it. `optionsFrom` is filled at render time from the topology.
@@ -60,6 +72,7 @@ export const FIELDS = Object.freeze({
     { key: 'endDate', label: 'Exact end date', input: 'text', path: '/when/endDate', hint: 'only for something that ran between two known days, in the same shape and calendar as the exact date' },
     { key: 'place', label: 'Place', input: 'select', optionsFrom: 'places', path: '/place', hint: 'a place record, chosen by name; add one below if it is not there yet. Leave it empty for a long process with no honest point' },
     { key: 'region', label: 'Timeline lane', input: 'select', optionsFrom: 'regions', path: '/region', hint: 'derived from the place; set it only when the derivation would be wrong, and always when there is no place' },
+    BODY_FIELD,
     WIKIDATA_FIELD,
   ]),
   place: Object.freeze([
@@ -70,6 +83,7 @@ export const FIELDS = Object.freeze({
     { key: 'precision', label: 'Precision', input: 'select', options: PRECISION, path: '/where/precision' },
     { key: 'region', label: 'Timeline lane', input: 'select', optionsFrom: 'regions', path: '/region', hint: 'derived from the coordinates; set it only when the derivation would be wrong' },
     { key: 'summary', label: 'Summary', input: 'textarea', path: '/summary', hint: 'optional, and written by you when it is there' },
+    BODY_FIELD,
     WIKIDATA_FIELD,
   ]),
   edge: Object.freeze([
@@ -91,6 +105,7 @@ export const FIELDS = Object.freeze({
     { key: 'lon', label: 'Longitude', input: 'text', path: '/where/lon', hint: 'WGS84, east positive' },
     { key: 'lat', label: 'Latitude', input: 'text', path: '/where/lat', hint: 'WGS84, north positive' },
     { key: 'precision', label: 'Precision', input: 'select', options: PRECISION, path: '/where/precision' },
+    BODY_FIELD,
     WIKIDATA_FIELD,
   ]),
   relation: Object.freeze([
@@ -287,6 +302,16 @@ function withIdentity(record, values) {
   return record;
 }
 
+// The full entry, on the three kinds that have a page. An empty field writes
+// no key at all — for the same reason an absent identity writes none — so a
+// record whose long form nobody has written looks exactly as it did before
+// the field existed, and a save that changed nothing changes no bytes.
+function withBody(record, values) {
+  const body = trimmed(values.body);
+  if (body !== '') record.body = body;
+  return record;
+}
+
 export function buildRecord(kind, values, context = {}) {
   const v = values ?? {};
   if (kind === 'event') {
@@ -295,7 +320,7 @@ export function buildRecord(kind, values, context = {}) {
     if (trimmed(v.date) !== '') when.date = trimmed(v.date);
     if (trimmed(v.calendar) !== '') when.calendar = trimmed(v.calendar);
     if (trimmed(v.endDate) !== '') when.endDate = trimmed(v.endDate);
-    return withIdentity({
+    return withBody(withIdentity({
       ...envelope('event', trimmed(v.id), context),
       sources: citationsOf(v.citations),
       title: trimmed(v.title),
@@ -304,12 +329,12 @@ export function buildRecord(kind, values, context = {}) {
       place: orNull(v.place),
       region: orNull(v.region),
       actors: actorsOf(v.actors),
-    }, v);
+    }, v), v);
   }
 
   if (kind === 'place') {
     const names = trimmed(v.names).split(';').map((s) => s.trim()).filter(Boolean);
-    return withIdentity({
+    return withBody(withIdentity({
       ...envelope('place', trimmed(v.id), context),
       sources: [],
       names,
@@ -318,13 +343,13 @@ export function buildRecord(kind, values, context = {}) {
       where: { lon: parseNumber(v.lon), lat: parseNumber(v.lat), precision: trimmed(v.precision) || 'city', label: names[0] ?? '' },
       region: orNull(v.region),
       summary: orNull(v.summary),
-    }, v);
+    }, v), v);
   }
 
   if (kind === 'actor') {
     const start = parseBound(v.start);
     const hasPlace = [v.lon, v.lat, v.label].some((x) => trimmed(x) !== '');
-    return withIdentity({
+    return withBody(withIdentity({
       ...envelope('actor', trimmed(v.id), context),
       sources: citationsOf(v.citations),
       actorType: trimmed(v.actorType),
@@ -334,7 +359,7 @@ export function buildRecord(kind, values, context = {}) {
       where: hasPlace
         ? { lon: parseNumber(v.lon), lat: parseNumber(v.lat), precision: trimmed(v.precision) || 'city', label: trimmed(v.label) }
         : null,
-    }, v);
+    }, v), v);
   }
 
   if (kind === 'edge') {
@@ -455,6 +480,9 @@ export function valuesFromRecord(kind, record) {
   // comes back out of it is what was stored, so a save that changed nothing
   // writes the same bytes.
   if (FIELDS[kind].some((f) => f.key === 'wikidata')) values.wikidata = r.wikidata ?? '';
+  // The long form as it is on the record, so that opening an entry in the
+  // dashboard and saving it unchanged writes the same bytes.
+  if (FIELDS[kind].some((f) => f.key === 'body')) values.body = r.body ?? '';
 
   if (kind === 'event') {
     const when = isObject(r.when) ? r.when : {};
@@ -621,6 +649,10 @@ export function applyValues(kind, record, values) {
   if (kind === 'edge' && !Object.hasOwn(built, 'dispute') && record?.dispute === null) {
     built.dispute = null;
   }
+  // An entry nobody has written is an absent key, and an explicit null says
+  // the same thing: whichever the record on disk has is what it keeps until
+  // somebody actually writes the entry.
+  if (!Object.hasOwn(built, 'body') && record?.body === null) built.body = null;
   return orderLike(built, record ?? {});
 }
 

@@ -431,3 +431,33 @@ test('an edit keeps the review block a draft carries', async () => {
   const back = applyValues('event', record, { ...valuesFromRecord('event', record), summary: 'Edited in a test.' });
   assert.deepEqual(back.review, record.review);
 });
+
+test('the full entry is a field on the three kinds that have a page, and an empty one writes no key', async () => {
+  for (const kind of ['event', 'actor', 'place']) {
+    assert.ok(FIELDS[kind].some((f) => f.key === 'body' && f.input === 'textarea'), kind);
+  }
+  for (const kind of ['edge', 'relation', 'narrative', 'source']) {
+    assert.equal(FIELDS[kind].some((f) => f.key === 'body'), false, kind);
+  }
+  const values = { ...emptyValues('place'), id: 'fixture-place-new', names: 'Fixture place NEW', lon: '1', lat: '2' };
+  assert.equal(Object.hasOwn(buildRecord('place', values, CONTEXT), 'body'), false);
+  assert.equal(Object.hasOwn(buildRecord('place', { ...values, body: '   ' }, CONTEXT), 'body'), false);
+  const written = buildRecord('place', { ...values, body: '## A heading\n\nAnd a paragraph.' }, CONTEXT);
+  assert.equal(written.body, '## A heading\n\nAnd a paragraph.');
+  // And back out again, unchanged.
+  assert.equal(valuesFromRecord('place', written).body, written.body);
+  assert.equal(valuesFromRecord('place', buildRecord('place', values, CONTEXT)).body, '');
+});
+
+test('an entry survives a save through the dashboard, and an absent one stays absent', async () => {
+  const { byId } = await fixtures();
+  const withEntry = byId['fixture-event-a'];
+  assert.equal(typeof withEntry.body, 'string');
+  assert.deepEqual(applyValues('event', withEntry, valuesFromRecord('event', withEntry)), withEntry);
+  const without = byId['fixture-event-b'];
+  assert.equal(Object.hasOwn(applyValues('event', without, valuesFromRecord('event', without)), 'body'), false);
+  // An explicit null is what tools/new-record.mjs may write; a save keeps it
+  // rather than churning it into an absent key.
+  const explicit = { ...without, body: null };
+  assert.equal(applyValues('event', explicit, valuesFromRecord('event', explicit)).body, null);
+});

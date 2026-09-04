@@ -10,6 +10,7 @@
 // entries were validated when they were merged.
 
 import { isValidYear, astronomicalBounds, defaultCalendar } from '../util/dates.js';
+import { bodyCitations, bodyLinks } from '../markdown.js';
 
 // An interval as two astronomical bounds for overlap tests: an open end
 // (`end: null`, ongoing) reaches forward without limit.
@@ -57,6 +58,10 @@ export const ACYCLIC_RELATION_TYPES = Object.freeze(['regime-of', 'succeeded']);
 // actor and a place are, and an edge and a narrative are not — those are
 // arguments about things, and nobody else's database has an item for them.
 export const IDENTITY_KINDS = Object.freeze(['event', 'actor', 'place']);
+// The kinds a full entry can be written about, which are the same three and
+// for the same reason: a page is about a thing in the world. An edge and a
+// narrative are already prose about records, and their prose is the record.
+export const BODY_KINDS = Object.freeze(['event', 'actor', 'place']);
 export const WIKIDATA_ID = /^Q[1-9][0-9]*$/;
 // A Wikipedia language edition as Wikipedia itself writes it: "en", "pt",
 // "pt-br", "zh-hans". It is checked because it becomes a hostname.
@@ -812,6 +817,32 @@ export function checkRules(records, topology = {}) {
     const cited = (r.sources ?? []).map((c) => c?.source).filter((id) => typeof id === 'string');
     if (cited.length && cited.every((id) => WIKIPEDIA_SOURCES.includes(id))) {
       error(22, r, '/sources', 'consensus cannot rest on Wikipedia alone: cite the scholarship the article rests on, or mark the link probable');
+    }
+  }
+
+  // --- rule 23: what a full entry may say ---------------------------------
+  // A body is prose with two kinds of reference in it, and neither can be
+  // checked by a schema. A citation mark stands for a work the record rests
+  // on, so it must name one the record actually cites: a mark pointing at a
+  // book nowhere in `sources` is a footnote to nothing, and the reader would
+  // have no way to reach the work. A link by id must resolve to a record of
+  // the kind it names, for the reason rule 3 exists — a link that goes
+  // nowhere is worse than no link, because it looks like a way through.
+  for (const r of own) {
+    if (!BODY_KINDS.includes(r.kind) || typeof r.body !== 'string' || r.body === '') continue;
+    const cited = new Set(citedSources(r));
+    const seen = new Set();
+    for (const { source } of bodyCitations(r.body)) {
+      if (cited.has(source) || seen.has(source)) continue;
+      seen.add(source);
+      error(23, r, '/body', `the entry cites "${source}", which is not among this record's sources`);
+    }
+    const missing = new Set();
+    for (const { kind, id } of bodyLinks(r.body)) {
+      const key = `${kind}:${id}`;
+      if (lookup(id, kind) || missing.has(key)) continue;
+      missing.add(key);
+      error(23, r, '/body', `the entry links to "${id}", which is not ${kind === 'event' || kind === 'actor' ? 'an' : 'a'} ${kind} record`);
     }
   }
 
