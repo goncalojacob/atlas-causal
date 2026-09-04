@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "robbery-of-banco-totta-and-azores-in-mira-de-aire-on-october-15-1975",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q116465304",
+  "sitelinks": 0,
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q116465304"
+    }
+  ],
+  "title": "Robbery of Banco Totta and Azores, in Mira de Aire, on October 15, 1975",
+  "summary": "Wikidata item Q116465304, imported by tools/import/wikidata.mjs. The item's own description reads \"Assault carried out by elements of the PRP-BR, with 1300 contos stolen\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1975,
+    "end": 1975,
+    "date": "1975-10-15"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}

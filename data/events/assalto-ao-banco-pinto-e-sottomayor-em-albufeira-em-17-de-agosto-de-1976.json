@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "assalto-ao-banco-pinto-e-sottomayor-em-albufeira-em-17-de-agosto-de-1976",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q117321949",
+  "sitelinks": 0,
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q117321949"
+    }
+  ],
+  "title": "Assalto ao Banco Pinto e Sottomayor, em Albufeira, em 17 de Agosto de 1976",
+  "summary": "Wikidata item Q117321949, imported by tools/import/wikidata.mjs. The item's own description reads \"assalto feito por elementos das Brigadas Revolucionárias, tendo rendido 2.970.000$00\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1976,
+    "end": 1976,
+    "date": "1976-08-17"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}

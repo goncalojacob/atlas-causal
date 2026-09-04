@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "eleicoes-legislativas-regionais-nos-acores-em-1984",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q16144649",
+  "sitelinks": 2,
+  "wikipedia": {
+    "pt": "Eleições legislativas regionais nos Açores em 1984"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q16144649"
+    }
+  ],
+  "title": "eleições legislativas regionais nos Açores em 1984",
+  "summary": "Wikidata item Q16144649, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1984,
+    "end": 1984,
+    "date": "1984-10-14"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}

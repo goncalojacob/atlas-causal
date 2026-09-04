@@ -9530,7 +9530,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 90,
+      "citationCount": 115,
       "citations": [
         {
           "dissent": false,
@@ -9912,6 +9912,30 @@
         },
         {
           "dissent": false,
+          "id": "1980-portuguese-legislative-election",
+          "kind": "event",
+          "locator": "Q606275"
+        },
+        {
+          "dissent": false,
+          "id": "1980-portuguese-presidential-election",
+          "kind": "event",
+          "locator": "Q3069005"
+        },
+        {
+          "dissent": false,
+          "id": "1982-portuguese-local-elections",
+          "kind": "event",
+          "locator": "Q7232777"
+        },
+        {
+          "dissent": false,
+          "id": "1983-portuguese-legislative-election",
+          "kind": "event",
+          "locator": "Q597504"
+        },
+        {
+          "dissent": false,
           "id": "2011-portuguese-socialist-party-leadership-election",
           "kind": "event",
           "locator": "Q125030453"
@@ -9927,6 +9951,42 @@
           "id": "april-1906-portuguese-legislative-election",
           "kind": "event",
           "locator": "Q7232771"
+        },
+        {
+          "dissent": false,
+          "id": "assalto-ao-banco-de-angola-na-damaia-em-21-de-outubro-de-1975",
+          "kind": "event",
+          "locator": "Q110585299"
+        },
+        {
+          "dissent": false,
+          "id": "assalto-ao-banco-pinto-e-sottomayor-de-lisboa-em-soure",
+          "kind": "event",
+          "locator": "Q138782318"
+        },
+        {
+          "dissent": false,
+          "id": "assalto-ao-banco-pinto-e-sottomayor-em-albufeira-em-17-de-agosto-de-1976",
+          "kind": "event",
+          "locator": "Q117321949"
+        },
+        {
+          "dissent": false,
+          "id": "assassination-of-jose-ferreira-da-rocha-by-the-prp-br",
+          "kind": "event",
+          "locator": "Q115473111"
+        },
+        {
+          "dissent": false,
+          "id": "assassinato-de-jose-oscar-de-vasconcelos",
+          "kind": "event",
+          "locator": "Q139223832"
+        },
+        {
+          "dissent": false,
+          "id": "assault-on-banco-totta-e-acores-on-avenida-da-republica-in-lisbon-on-may-21-1976",
+          "kind": "event",
+          "locator": "Q117311793"
         },
         {
           "dissent": false,
@@ -9954,9 +10014,51 @@
         },
         {
           "dissent": false,
+          "id": "bomb-attack-by-the-revolutionary-brigades-on-the-quartel-mestre-general-building-in-lisbon-portugal",
+          "kind": "event",
+          "locator": "Q112157664"
+        },
+        {
+          "dissent": false,
+          "id": "bomb-attack-by-the-revolutionary-brigades-on-the-recruitment-and-mobilization-district-n-1-drm-1",
+          "kind": "event",
+          "locator": "Q112154773"
+        },
+        {
+          "dissent": false,
+          "id": "bomb-attack-on-the-army-mechanographic-services-in-lisbon-portugal",
+          "kind": "event",
+          "locator": "Q112154101"
+        },
+        {
+          "dissent": false,
           "id": "eleicoes-legislativas-regionais-na-madeira-em-1976",
           "kind": "event",
           "locator": "Q10271597"
+        },
+        {
+          "dissent": false,
+          "id": "eleicoes-legislativas-regionais-na-madeira-em-1980",
+          "kind": "event",
+          "locator": "Q10271598"
+        },
+        {
+          "dissent": false,
+          "id": "eleicoes-legislativas-regionais-na-madeira-em-1984",
+          "kind": "event",
+          "locator": "Q10271599"
+        },
+        {
+          "dissent": false,
+          "id": "eleicoes-legislativas-regionais-nos-acores-em-1980",
+          "kind": "event",
+          "locator": "Q10271607"
+        },
+        {
+          "dissent": false,
+          "id": "eleicoes-legislativas-regionais-nos-acores-em-1984",
+          "kind": "event",
+          "locator": "Q16144649"
         },
         {
           "dissent": false,
@@ -9975,6 +10077,12 @@
           "id": "guinean-constitutional-referendum-1958",
           "kind": "event",
           "locator": "Q5616514"
+        },
+        {
+          "dissent": false,
+          "id": "hat-nipah-and-same-massacres",
+          "kind": "event",
+          "locator": "Q131364064"
         },
         {
           "dissent": false,
@@ -10005,6 +10113,18 @@
           "id": "mueda-massacre",
           "kind": "event",
           "locator": "Q10327164"
+        },
+        {
+          "dissent": false,
+          "id": "murder-of-jorge-augusto-de-carvalho-porto-judiciary-police-officer",
+          "kind": "event",
+          "locator": "Q112073029"
+        },
+        {
+          "dissent": false,
+          "id": "murder-of-jose-manuel-placido",
+          "kind": "event",
+          "locator": "Q109529478"
         },
         {
           "dissent": false,
@@ -10047,6 +10167,36 @@
           "id": "q55499125",
           "kind": "event",
           "locator": "Q55499125"
+        },
+        {
+          "dissent": false,
+          "id": "q55499135",
+          "kind": "event",
+          "locator": "Q55499135"
+        },
+        {
+          "dissent": false,
+          "id": "q5941661",
+          "kind": "event",
+          "locator": "Q5941661"
+        },
+        {
+          "dissent": false,
+          "id": "robbery-of-banco-borges-irmao-in-monte-dos-burgos-porto-november-4-1977",
+          "kind": "event",
+          "locator": "Q117768823"
+        },
+        {
+          "dissent": false,
+          "id": "robbery-of-banco-totta-and-azores-in-mira-de-aire-on-october-15-1975",
+          "kind": "event",
+          "locator": "Q116465304"
+        },
+        {
+          "dissent": false,
+          "id": "robbery-of-banco-totta-e-acores-in-seia-on-february-1-1977",
+          "kind": "event",
+          "locator": "Q115539271"
         },
         {
           "dissent": false,

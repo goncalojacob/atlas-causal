@@ -6037,7 +6037,7 @@
     }
   ],
   "schema": 1,
-  "total": 660,
+  "total": 685,
   "warnings": [
     {
       "id": "1890-portuguese-legislative-election",
@@ -6418,6 +6418,30 @@
       "rule": "degree-zero"
     },
     {
+      "id": "1980-portuguese-legislative-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1980-portuguese-presidential-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1982-portuguese-local-elections",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1983-portuguese-legislative-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
       "id": "2011-portuguese-socialist-party-leadership-election",
       "kind": "event",
       "message": "event has no edges",
@@ -6431,6 +6455,42 @@
     },
     {
       "id": "april-1906-portuguese-legislative-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "assalto-ao-banco-de-angola-na-damaia-em-21-de-outubro-de-1975",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "assalto-ao-banco-pinto-e-sottomayor-de-lisboa-em-soure",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "assalto-ao-banco-pinto-e-sottomayor-em-albufeira-em-17-de-agosto-de-1976",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "assassination-of-jose-ferreira-da-rocha-by-the-prp-br",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "assassinato-de-jose-oscar-de-vasconcelos",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "assault-on-banco-totta-e-acores-on-avenida-da-republica-in-lisbon-on-may-21-1976",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"
@@ -6460,7 +6520,49 @@
       "rule": "degree-zero"
     },
     {
+      "id": "bomb-attack-by-the-revolutionary-brigades-on-the-quartel-mestre-general-building-in-lisbon-portugal",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "bomb-attack-by-the-revolutionary-brigades-on-the-recruitment-and-mobilization-district-n-1-drm-1",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "bomb-attack-on-the-army-mechanographic-services-in-lisbon-portugal",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
       "id": "eleicoes-legislativas-regionais-na-madeira-em-1976",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "eleicoes-legislativas-regionais-na-madeira-em-1980",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "eleicoes-legislativas-regionais-na-madeira-em-1984",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "eleicoes-legislativas-regionais-nos-acores-em-1980",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "eleicoes-legislativas-regionais-nos-acores-em-1984",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"
@@ -6479,6 +6581,12 @@
     },
     {
       "id": "guinean-constitutional-referendum-1958",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "hat-nipah-and-same-massacres",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"
@@ -6515,6 +6623,18 @@
     },
     {
       "id": "mueda-massacre",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "murder-of-jorge-augusto-de-carvalho-porto-judiciary-police-officer",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "murder-of-jose-manuel-placido",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"
@@ -6557,6 +6677,36 @@
     },
     {
       "id": "q55499125",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "q55499135",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "q5941661",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "robbery-of-banco-borges-irmao-in-monte-dos-burgos-porto-november-4-1977",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "robbery-of-banco-totta-and-azores-in-mira-de-aire-on-october-15-1975",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "robbery-of-banco-totta-e-acores-in-seia-on-february-1-1977",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"

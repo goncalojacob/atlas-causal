@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "murder-of-jorge-augusto-de-carvalho-porto-judiciary-police-officer",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q112073029",
+  "sitelinks": 0,
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q112073029"
+    }
+  ],
+  "title": "Murder of Jorge Augusto de Carvalho, Porto Judiciary Police officer",
+  "summary": "Wikidata item Q112073029, imported by tools/import/wikidata.mjs. The item's own description reads \"murder arried out by the Revolutionary Brigades of the PRP on 21 March 1978, in Porto\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1978,
+    "end": 1978,
+    "date": "1978-03-21"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}

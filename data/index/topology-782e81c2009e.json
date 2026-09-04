@@ -7312,6 +7312,94 @@
     {
       "actors": [],
       "aliases": [],
+      "id": "1980-portuguese-legislative-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1980 Portuguese legislative election",
+      "weight": 0,
+      "when": {
+        "date": "1980-10-05",
+        "end": 1980,
+        "start": 1980
+      },
+      "wikidata": "Q606275",
+      "wikipedia": {
+        "en": "1980 Portuguese legislative election",
+        "pt": "Eleições legislativas portuguesas de 1980"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1980-portuguese-presidential-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1980 Portuguese presidential election",
+      "weight": 0,
+      "when": {
+        "date": "1980-12-07",
+        "end": 1980,
+        "start": 1980
+      },
+      "wikidata": "Q3069005",
+      "wikipedia": {
+        "en": "1980 Portuguese presidential election",
+        "pt": "Eleições presidenciais portuguesas de 1980"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1982-portuguese-local-elections",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1982 Portuguese local elections",
+      "weight": 0,
+      "when": {
+        "date": "1982-12-12",
+        "end": 1982,
+        "start": 1982
+      },
+      "wikidata": "Q7232777",
+      "wikipedia": {
+        "en": "1982 Portuguese local elections",
+        "pt": "Eleições autárquicas portuguesas de 1982"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1983-portuguese-legislative-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1983 Portuguese legislative election",
+      "weight": 0,
+      "when": {
+        "date": "1983-04-25",
+        "end": 1983,
+        "start": 1983
+      },
+      "wikidata": "Q597504",
+      "wikipedia": {
+        "en": "1983 Portuguese legislative election",
+        "pt": "Eleições legislativas portuguesas de 1983"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
       "id": "2011-portuguese-socialist-party-leadership-election",
       "place": null,
       "region": "europe",
@@ -7512,6 +7600,114 @@
     {
       "actors": [],
       "aliases": [],
+      "id": "assalto-ao-banco-de-angola-na-damaia-em-21-de-outubro-de-1975",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Assalto ao Banco de Angola, na Damaia, em 21 de Outubro de 1975",
+      "weight": 0,
+      "when": {
+        "date": "1975-10-21",
+        "end": 1975,
+        "start": 1975
+      },
+      "wikidata": "Q110585299"
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "assalto-ao-banco-pinto-e-sottomayor-de-lisboa-em-soure",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Assalto ao Banco Pinto e Sottomayor de Lisboa, em Soure",
+      "weight": 0,
+      "when": {
+        "date": "1977-02-08",
+        "end": 1977,
+        "start": 1977
+      },
+      "wikidata": "Q138782318"
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "assalto-ao-banco-pinto-e-sottomayor-em-albufeira-em-17-de-agosto-de-1976",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Assalto ao Banco Pinto e Sottomayor, em Albufeira, em 17 de Agosto de 1976",
+      "weight": 0,
+      "when": {
+        "date": "1976-08-17",
+        "end": 1976,
+        "start": 1976
+      },
+      "wikidata": "Q117321949"
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "assassination-of-jose-ferreira-da-rocha-by-the-prp-br",
+      "place": "porto",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Assassination of José Ferreira da Rocha, by the PRP-BR",
+      "weight": 0,
+      "when": {
+        "date": "1976-03-17",
+        "end": 1976,
+        "start": 1976
+      },
+      "wikidata": "Q115473111"
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "assassinato-de-jose-oscar-de-vasconcelos",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Assassinato de José Óscar de Vasconcelos",
+      "weight": 0,
+      "when": {
+        "date": "1976-04-18",
+        "end": 1976,
+        "start": 1976
+      },
+      "wikidata": "Q139223832"
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "assault-on-banco-totta-e-acores-on-avenida-da-republica-in-lisbon-on-may-21-1976",
+      "place": "lisbon",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Assault on Banco Totta e Açores, on Avenida da República, in Lisbon, on May 21, 1976",
+      "weight": 0,
+      "when": {
+        "date": "1976-05-21",
+        "end": 1976,
+        "start": 1976
+      },
+      "wikidata": "Q117311793"
+    },
+    {
+      "actors": [],
+      "aliases": [],
       "id": "assault-on-the-santa-maria-steamship",
       "place": null,
       "region": "europe",
@@ -7689,6 +7885,60 @@
         "end": 2014,
         "start": 2014
       }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "bomb-attack-by-the-revolutionary-brigades-on-the-quartel-mestre-general-building-in-lisbon-portugal",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Bomb attack by the Revolutionary Brigades on the Quartel-Mestre-General building, in Lisbon, Portugal",
+      "weight": 0,
+      "when": {
+        "date": "1973-03-09",
+        "end": 1973,
+        "start": 1973
+      },
+      "wikidata": "Q112157664"
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "bomb-attack-by-the-revolutionary-brigades-on-the-recruitment-and-mobilization-district-n-1-drm-1",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Bomb attack by the Revolutionary Brigades on the Recruitment and Mobilization District nº 1 (DRM 1)",
+      "weight": 0,
+      "when": {
+        "date": "1973-03-09",
+        "end": 1973,
+        "start": 1973
+      },
+      "wikidata": "Q112154773"
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "bomb-attack-on-the-army-mechanographic-services-in-lisbon-portugal",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Bomb attack on the Army Mechanographic Services, in Lisbon, Portugal",
+      "weight": 0,
+      "when": {
+        "date": "1973-03-10",
+        "end": 1973,
+        "start": 1973
+      },
+      "wikidata": "Q112154101"
     },
     {
       "actors": [
@@ -8420,6 +8670,90 @@
     {
       "actors": [],
       "aliases": [],
+      "id": "eleicoes-legislativas-regionais-na-madeira-em-1980",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "eleições legislativas regionais na Madeira em 1980",
+      "weight": 0,
+      "when": {
+        "date": "1980-10-05",
+        "end": 1980,
+        "start": 1980
+      },
+      "wikidata": "Q10271598",
+      "wikipedia": {
+        "pt": "Eleições legislativas regionais na Madeira em 1980"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "eleicoes-legislativas-regionais-na-madeira-em-1984",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "eleições legislativas regionais na Madeira em 1984",
+      "weight": 0,
+      "when": {
+        "date": "1984-10-14",
+        "end": 1984,
+        "start": 1984
+      },
+      "wikidata": "Q10271599",
+      "wikipedia": {
+        "pt": "Eleições legislativas regionais na Madeira em 1984"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "eleicoes-legislativas-regionais-nos-acores-em-1980",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "eleições legislativas regionais nos Açores em 1980",
+      "weight": 0,
+      "when": {
+        "date": "1980-10-05",
+        "end": 1980,
+        "start": 1980
+      },
+      "wikidata": "Q10271607",
+      "wikipedia": {
+        "pt": "Eleições legislativas regionais nos Açores em 1980"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "eleicoes-legislativas-regionais-nos-acores-em-1984",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "eleições legislativas regionais nos Açores em 1984",
+      "weight": 0,
+      "when": {
+        "date": "1984-10-14",
+        "end": 1984,
+        "start": 1984
+      },
+      "wikidata": "Q16144649",
+      "wikipedia": {
+        "pt": "Eleições legislativas regionais nos Açores em 1984"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
       "id": "equality-statute-between-brazil-and-portugal",
       "place": null,
       "region": "americas",
@@ -8797,6 +9131,25 @@
       "wikipedia": {
         "en": "1958 Guinean constitutional referendum"
       }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "hat-nipah-and-same-massacres",
+      "place": null,
+      "region": "asia",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Hat Nipah and Same massacres",
+      "weight": 0,
+      "when": {
+        "date": "1976-01-27",
+        "end": 1976,
+        "endDate": "1976-01-29",
+        "start": 1976
+      },
+      "wikidata": "Q131364064"
     },
     {
       "actors": [],
@@ -9483,6 +9836,42 @@
       }
     },
     {
+      "actors": [],
+      "aliases": [],
+      "id": "murder-of-jorge-augusto-de-carvalho-porto-judiciary-police-officer",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Murder of Jorge Augusto de Carvalho, Porto Judiciary Police officer",
+      "weight": 0,
+      "when": {
+        "date": "1978-03-21",
+        "end": 1978,
+        "start": 1978
+      },
+      "wikidata": "Q112073029"
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "murder-of-jose-manuel-placido",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Murder of Jose Manuel Placido",
+      "weight": 0,
+      "when": {
+        "date": "1979-11-15",
+        "end": 1979,
+        "start": 1979
+      },
+      "wikidata": "Q109529478"
+    },
+    {
       "actors": [
         {
           "actor": "vasco-goncalves",
@@ -9841,6 +10230,42 @@
       "wikidata": "Q55499125"
     },
     {
+      "actors": [],
+      "aliases": [],
+      "id": "q55499135",
+      "place": null,
+      "region": "asia",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Q55499135",
+      "weight": 0,
+      "when": {
+        "date": "1975-09-01",
+        "end": 1975,
+        "start": 1975
+      },
+      "wikidata": "Q55499135"
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "q5941661",
+      "place": null,
+      "region": "asia",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Q5941661",
+      "weight": 0,
+      "when": {
+        "date": "1977-08-27",
+        "end": 1977,
+        "start": 1977
+      },
+      "wikidata": "Q5941661"
+    },
+    {
       "actors": [
         {
           "actor": "manuel-ii",
@@ -9897,6 +10322,60 @@
         "end": 1915,
         "start": 1915
       }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "robbery-of-banco-borges-irmao-in-monte-dos-burgos-porto-november-4-1977",
+      "place": "porto",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Robbery of Banco Borges & Irmão, in Monte dos Burgos, Porto, November 4, 1977",
+      "weight": 0,
+      "when": {
+        "date": "1977-11-04",
+        "end": 1977,
+        "start": 1977
+      },
+      "wikidata": "Q117768823"
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "robbery-of-banco-totta-and-azores-in-mira-de-aire-on-october-15-1975",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Robbery of Banco Totta and Azores, in Mira de Aire, on October 15, 1975",
+      "weight": 0,
+      "when": {
+        "date": "1975-10-15",
+        "end": 1975,
+        "start": 1975
+      },
+      "wikidata": "Q116465304"
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "robbery-of-banco-totta-e-acores-in-seia-on-february-1-1977",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Robbery of Banco Totta e Açores, in Seia, on February 1, 1977",
+      "weight": 0,
+      "when": {
+        "date": "1977-02-01",
+        "end": 1977,
+        "start": 1977
+      },
+      "wikidata": "Q115539271"
     },
     {
       "actors": [

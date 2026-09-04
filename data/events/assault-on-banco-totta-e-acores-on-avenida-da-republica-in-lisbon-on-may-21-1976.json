@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "assault-on-banco-totta-e-acores-on-avenida-da-republica-in-lisbon-on-may-21-1976",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q117311793",
+  "sitelinks": 0,
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q117311793"
+    }
+  ],
+  "title": "Assault on Banco Totta e Açores, on Avenida da República, in Lisbon, on May 21, 1976",
+  "summary": "Wikidata item Q117311793, imported by tools/import/wikidata.mjs. The item's own description reads \"robbery carried out by 5 members of the PRP-BR, with 1 536 000$00 being stolen\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1976,
+    "end": 1976,
+    "date": "1976-05-21"
+  },
+  "place": "lisbon",
+  "region": null,
+  "actors": []
+}

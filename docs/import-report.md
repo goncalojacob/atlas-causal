@@ -82,3 +82,31 @@ created event q55499125 from Q55499125
 refused Q3586973: no place record for its location and no lane reachable from its point; a placeless event must carry a region
 38 Wikipedia lead(s) cached under tools/import/cache/wikipedia
 24 created, 0 enriched, 1 refused, 0 ambiguous
+import: 25 item(s) this batch, 132 left after it, 14 call(s) spent
+created event q55499135 from Q55499135
+created event hat-nipah-and-same-massacres from Q131364064
+created event bomb-attack-by-the-revolutionary-brigades-on-the-recruitment-and-mobilization-district-n-1-drm-1 from Q112154773
+created event bomb-attack-by-the-revolutionary-brigades-on-the-quartel-mestre-general-building-in-lisbon-portugal from Q112157664
+created event bomb-attack-on-the-army-mechanographic-services-in-lisbon-portugal from Q112154101
+created event robbery-of-banco-totta-and-azores-in-mira-de-aire-on-october-15-1975 from Q116465304
+created event assalto-ao-banco-de-angola-na-damaia-em-21-de-outubro-de-1975 from Q110585299
+created event assassination-of-jose-ferreira-da-rocha-by-the-prp-br from Q115473111
+created event assassinato-de-jose-oscar-de-vasconcelos from Q139223832
+created event assault-on-banco-totta-e-acores-on-avenida-da-republica-in-lisbon-on-may-21-1976 from Q117311793
+created event assalto-ao-banco-pinto-e-sottomayor-em-albufeira-em-17-de-agosto-de-1976 from Q117321949
+created event robbery-of-banco-totta-e-acores-in-seia-on-february-1-1977 from Q115539271
+created event assalto-ao-banco-pinto-e-sottomayor-de-lisboa-em-soure from Q138782318
+created event q5941661 from Q5941661
+created event robbery-of-banco-borges-irmao-in-monte-dos-burgos-porto-november-4-1977 from Q117768823
+created event murder-of-jorge-augusto-de-carvalho-porto-judiciary-police-officer from Q112073029
+created event murder-of-jose-manuel-placido from Q109529478
+created event eleicoes-legislativas-regionais-nos-acores-em-1980 from Q10271607
+created event 1980-portuguese-legislative-election from Q606275
+created event eleicoes-legislativas-regionais-na-madeira-em-1980 from Q10271598
+created event 1980-portuguese-presidential-election from Q3069005
+created event 1982-portuguese-local-elections from Q7232777
+created event 1983-portuguese-legislative-election from Q597504
+created event eleicoes-legislativas-regionais-nos-acores-em-1984 from Q16144649
+created event eleicoes-legislativas-regionais-na-madeira-em-1984 from Q10271599
+12 Wikipedia lead(s) cached under tools/import/cache/wikipedia
+25 created, 0 enriched, 0 refused, 0 ambiguous
