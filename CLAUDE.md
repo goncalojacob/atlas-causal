@@ -37,6 +37,9 @@ These are not preferences. Ask before breaking any of them.
   Extended by the owner on 2026-09-03 to the same period's places, relations
   between actors and one example narrative drafted on 3–4 September 2026, all
   carrying the same draft marker and queued for the review dashboard.
+  `review.html` is where the exception is retired, one record at a time: it
+  lists everything still carrying the marker, and signing a record replaces
+  the marker with the reviewer. `node tools/validate.mjs` prints what is left.
 
 ## Commands
 
@@ -47,8 +50,10 @@ node tools/build-index.mjs         # regenerate data/index/ after touching data/
 node tools/build-regions.mjs       # regenerate data/geo/ from Natural Earth; rarely
 node tools/import/cshapes.mjs --source cshapes_2_gw.topojson [--report]  # territories, 1886-2019; rarely
 node tools/new-record.mjs event|edge|source|actor|place|relation|narrative …   # scaffold a record; the text is yours to write
+node tools/seed-review-flags.mjs   # STATUS.md's "Dates to verify" onto the records as review flags; once
 node --test                        # every test under tests/ (Node 22 takes no directory argument)
 python3 -m http.server 8000        # then http://localhost:8000/ — add ?fixtures=1 for the synthetic graph
+node tools/serve.mjs               # the same, plus the one write endpoint review.html saves through; loopback only, never deployed
 ```
 
 Run the validator after any change to `data/`. It must pass before you say a
@@ -78,6 +83,7 @@ index.html                 the atlas; no build step, plain ES modules
 contribute.html            the contribution form; not linked from the atlas while contributions are closed
 about.html                 what it is, how to read confidence and a dispute, the licences
 sources.html               the bibliography, generated from the sources index at render
+review.html                the review queue; a maintainer's page, unlinked, and the only one that can write
 README.md  CONTRIBUTING.md for people reading the repository
 src/main.js                bootstrap only: load, wire views; ?fixtures=1 reads tests/fixtures/data/
 src/state.js               { from, to, view, selected, source, place, actor, chain, horizon, layers, narrative, step } ⇄ URL; a null bound is "as far as the data goes"
@@ -100,6 +106,8 @@ src/sources/main.js        bootstrap for sources.html;  bibliography.js  the lis
 src/contribute/bundle.js   the pure half of the form: fields, bundle assembly, duplicate search
 src/contribute/form.js     the form itself; submit.js copies the bundle and opens the issue
 src/contribute/main.js     bootstrap for contribute.html
+src/review/queue.js        pure: what is still unreviewed, with the validator's warnings against each;  sign.js  the signature, the retraction and what it carries;  save.js  which of the two paths a save takes
+src/review/editor.js       one record in the contribution form's own fields, validated on every keystroke;  main.js  bootstrap for review.html
 src/validate/schema.js     JSON Schema subset validator; fails closed on unknown keywords
 src/validate/rules.js      cross-record invariants 2–19 and the warnings; pure
 src/validate/core.js       validate(records, topology, schemas); buildTopology
@@ -114,6 +122,8 @@ tools/build-index.mjs      deterministic index: manifest + hashed topology and s
 tools/build-regions.mjs    Natural Earth → data/geo/
 tools/new-record.mjs       scaffold a record of any written kind; --new-place writes an event and its place at once
 tools/migrate-places.mjs   one-time: every event's `where` → a place record; kept as documentation
+tools/seed-review-flags.mjs  one-time: STATUS.md's "Dates to verify" onto the records as review flags
+tools/serve.mjs            the local server: the repository, plus PUT /__records/<kind>/<id>; 127.0.0.1 only, never deployed
 tools/bundle-to-files.mjs  issue body → data/<kind>s/<id>.json; ids slug-checked before any path
 tools/lookup-sources.mjs   what the catalogues say a DOI or ISBN names; a review aid, never a gate
 tools/import/cshapes.mjs   CShapes 2.0 → actors, presences, geometry shards; topojson.mjs and simplify.mjs are its pure halves
