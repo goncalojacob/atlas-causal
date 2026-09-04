@@ -6,11 +6,17 @@
 // rather than the form.
 
 // Schemas of things the form never builds and the atlas never loads, checked
-// by tools/validate.mjs only. v1/import-map.json describes data/imports/:
-// how a source's entities become actors. It is not a record — no envelope, no
-// kind — and fetching it in the browser would only make the page slower.
+// by tools/validate.mjs only. Three of them describe data/imports/ — how a
+// source's entities become actors, which items an import is pointed at, and
+// where a cut-off run stopped — and the fourth describes the Wikipedia leads
+// cached under tools/import/cache/, which are not even in data/. None is a
+// record and fetching any of them in the browser would only make the page
+// slower.
 export const TOOL_SIDE = Object.freeze([
   'v1/import-map.json',
+  'v1/import-seeds.json',
+  'v1/import-state.json',
+  'v1/wikipedia-lead.json',
 ]);
 
 export const SCHEMA_FILES = Object.freeze([

@@ -54,10 +54,20 @@ export async function readRecords(dataDir) {
   return { entries, problems };
 }
 
-// The import maps under data/imports/: how a source's entities become actors
-// of this atlas. Not records — no envelope, no kind, and the browser never
-// reads them — so they are read here and checked by tools/validate.mjs only.
-// A file that is not valid JSON is reported rather than thrown, like a record.
+// What the directory held when there was only one kind of file in it: a map
+// from a source's entity codes to actors of this atlas. A file that does not
+// name its kind is still one of those, so nothing that predates the seeds
+// file has to be rewritten to keep validating.
+export const DEFAULT_IMPORT_KIND = 'import-map';
+
+// Everything under data/imports/: how a source's entities become actors
+// (`import-map`), which items an import is pointed at (`import-seeds`), and
+// where a cut-off run stopped (`import-state`). None of them is a record — no
+// envelope, no node of the graph, and the browser never reads them — so they
+// are read here and checked by tools/validate.mjs only. The `kind` field is
+// what says which is which, because the file name is a contributor's choice
+// and validating by name would be validating by convention. A file that is
+// not valid JSON is reported rather than thrown, like a record.
 export async function readImportMaps(dataDir) {
   const dir = path.join(dataDir, IMPORTS_DIR);
   const maps = [];
@@ -67,12 +77,33 @@ export async function readImportMaps(dataDir) {
     if (!name.endsWith('.json')) continue;
     const file = `${IMPORTS_DIR}/${name}`;
     try {
-      maps.push({ file, name: name.slice(0, -'.json'.length), map: await readJson(path.join(dir, name)) });
+      const map = await readJson(path.join(dir, name));
+      const kind = typeof map?.kind === 'string' ? map.kind : DEFAULT_IMPORT_KIND;
+      maps.push({ file, name: name.slice(0, -'.json'.length), kind, map });
     } catch (e) {
       problems.push({ file, message: `not valid JSON: ${e.message}` });
     }
   }
   return { maps, problems };
+}
+
+// The Wikipedia leads an import has cached, under tools/import/cache/wikipedia/.
+// Outside data/ on purpose — they are somebody else's text, not records — but
+// still checked by tools/validate.mjs, because a cached quotation with no
+// revision behind it is worse than no cache at all.
+export async function readCachedLeads(cacheDir) {
+  const leads = [];
+  const problems = [];
+  if (!existsSync(cacheDir)) return { leads, problems };
+  for (const name of (await readdir(cacheDir)).sort()) {
+    if (!name.endsWith('.json')) continue;
+    try {
+      leads.push({ file: name, lead: await readJson(path.join(cacheDir, name)) });
+    } catch (e) {
+      problems.push({ file: name, message: `not valid JSON: ${e.message}` });
+    }
+  }
+  return { leads, problems };
 }
 
 export async function readRegions(dataDir) {

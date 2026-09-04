@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "v1/import-seeds.json",
+  "title": "Import seeds",
+  "description": "What an import is pointed at: the items to fetch and the queries that find more of them. Like an import map it is not a record — no provenance envelope, no kind of node — and the browser never reads it; unlike an import map it says nothing about what the result means, only where to look. It is contributor-editable through the ordinary pull-request path, which is the point: which corner of Wikidata this atlas draws from is an editorial decision and belongs in a file somebody can argue with, not in the tool. tools/validate.mjs checks it; whether an item or a query exists at all is checked at import time, against the source.",
+  "type": "object",
+  "required": ["schema", "kind", "source"],
+  "additionalProperties": false,
+  "properties": {
+    "schema": { "const": 1 },
+    "kind": {
+      "description": "What kind of file this is. data/imports/ holds more than one, and tools/lib/read.mjs dispatches on this rather than on the file name.",
+      "const": "import-seeds"
+    },
+    "source": {
+      "description": "The id of the source record the import cites, so a seeds file cannot be pointed at the wrong catalogue by accident.",
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "maxLength": 120
+    },
+    "items": {
+      "description": "Items named one by one, in the source's own identifier — for Wikidata, Q followed by digits. The list is what --import walks.",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^Q[1-9][0-9]*$",
+        "maxLength": 20
+      }
+    },
+    "queries": {
+      "description": "Searches that find items nobody has listed by hand. Run by --candidates, which writes a list for a person to tick and nothing under data/: a query is a way of proposing records, never of creating them.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "sparql"],
+        "additionalProperties": false,
+        "properties": {
+          "name": {
+            "description": "A slug naming the query, unique in the file: it is what the candidate list is grouped by.",
+            "type": "string",
+            "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+            "maxLength": 120
+          },
+          "sparql": {
+            "description": "The query itself, exactly as it is sent. Written by a person and readable in the diff, so what the atlas asked for is reviewable.",
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4000
+          },
+          "note": {
+            "description": "Why this query is here, for whoever reads the file next.",
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 600
+          }
+        }
+      }
+    },
+    "reconcile": {
+      "description": "Whether --reconcile may match this atlas's existing hand-written records against the source. Off by default: matching writes identifiers onto records somebody wrote.",
+      "type": "boolean"
+    }
+  }
+}

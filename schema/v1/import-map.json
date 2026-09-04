@@ -8,6 +8,10 @@
   "additionalProperties": false,
   "properties": {
     "schema": { "const": 1 },
+    "kind": {
+      "description": "Optional and only ever \"import-map\". data/imports/ holds more than one kind of file now, and tools/lib/read.mjs dispatches on this field; a file that does not say is read as a map, which is what the directory held before there was anything else.",
+      "const": "import-map"
+    },
     "source": {
       "description": "The id of the source record the import cites, so a map cannot be pointed at the wrong dataset by accident.",
       "type": "string",

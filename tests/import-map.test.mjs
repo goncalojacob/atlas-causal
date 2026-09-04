@@ -7,7 +7,7 @@ import assert from 'node:assert/strict';
 import { createValidator } from '../src/validate/schema.js';
 import { TOOL_SIDE } from '../src/validate/schemas.js';
 import { checkImportMap, IMPORT_MAP_SCHEMA } from '../tools/validate.mjs';
-import { readImportMaps } from '../tools/lib/read.mjs';
+import { readImportMaps, DEFAULT_IMPORT_KIND } from '../tools/lib/read.mjs';
 import { schemas, ROOT } from './helpers.mjs';
 import path from 'node:path';
 
@@ -23,16 +23,18 @@ test('the import-map schema is tool-side and validates the repository map', asyn
   assert.ok(TOOL_SIDE.includes(IMPORT_MAP_SCHEMA));
   const { maps, problems } = await readImportMaps(DATA);
   assert.deepEqual(problems, []);
-  assert.equal(maps.length, 1);
-  assert.equal(maps[0].file, 'imports/cshapes-actors.json');
+  // The directory holds other kinds now; a map is the ones that say so, or
+  // say nothing, and the seeds file is not one of them.
+  const found = maps.filter((m) => m.kind === DEFAULT_IMPORT_KIND);
+  assert.deepEqual(found.map((m) => m.file), ['imports/cshapes-actors.json']);
   const v = await validator();
-  assert.deepEqual(v.validate(IMPORT_MAP_SCHEMA, maps[0].map), []);
-  assert.deepEqual(checkImportMap(maps[0].file, maps[0].map), []);
+  assert.deepEqual(v.validate(IMPORT_MAP_SCHEMA, found[0].map), []);
+  assert.deepEqual(checkImportMap(found[0].file, found[0].map), []);
 });
 
 test('the repository map carries the two splits the milestone asked for', async () => {
   const { maps } = await readImportMaps(DATA);
-  const { entries } = maps[0].map;
+  const { entries } = maps.find((m) => m.file === 'imports/cshapes-actors.json').map;
   assert.equal(entries['750'].actor, 'british-india');
   assert.deepEqual(entries['750'].splits.map((s) => [s.from, s.actor]), [['1947-08-15', 'republic-of-india']]);
   assert.equal(entries['850'].actor, 'dutch-east-indies');

@@ -13,12 +13,23 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 import { validate, buildTopology } from '../src/validate/core.js';
 import { createValidator } from '../src/validate/schema.js';
 import { createRegionDeriver, NEAREST_TOLERANCE } from '../src/util/geo.js';
-import { readSchemaFiles, readRecords, readRegions, readRegionPolygons, readPresenceShards, readImportMaps, KIND_DIRS } from './lib/read.mjs';
+import { readSchemaFiles, readRecords, readRegions, readRegionPolygons, readPresenceShards, readImportMaps, readCachedLeads, DEFAULT_IMPORT_KIND, KIND_DIRS } from './lib/read.mjs';
 import { buildIndex, readIndex, compareIndex } from './build-index.mjs';
 import { countDrafts } from '../src/review/queue.js';
 import { countCitations } from '../src/review/citations.js';
 
 export const IMPORT_MAP_SCHEMA = 'v1/import-map.json';
+export const LEAD_SCHEMA = 'v1/wikipedia-lead.json';
+
+// Which schema each kind of file under data/imports/ is held to. A kind that
+// is not in here is an error rather than a file nobody checks: the directory
+// is contributor-editable, and an unchecked file in it would be a hole in the
+// only thing that stands between a pull request and the data.
+export const IMPORT_SCHEMAS = Object.freeze({
+  [DEFAULT_IMPORT_KIND]: IMPORT_MAP_SCHEMA,
+  'import-seeds': 'v1/import-seeds.json',
+  'import-state': 'v1/import-state.json',
+});
 
 // An import map is not a record and has no rules file: what holds it together
 // is here. The schema has already said the shape is right; these are the
@@ -65,7 +76,38 @@ export function checkImportMap(file, map) {
   return problems.map((p) => ({ ...p, file }));
 }
 
+// The same for a seeds file: the shape has been checked, and what is left is
+// what a shape cannot say. Uniqueness above all — the keyword subset has no
+// uniqueItems, and an item listed twice would be fetched twice and counted
+// twice against the call budget.
+export function checkImportSeeds(file, seeds) {
+  const problems = [];
+  const say = (path, message) => problems.push({ path, message, file });
+  const seen = new Set();
+  (seeds?.items ?? []).forEach((qid, i) => {
+    if (seen.has(qid)) say(`/items/${i}`, `${qid} is listed twice`);
+    seen.add(qid);
+  });
+  const names = new Set();
+  (seeds?.queries ?? []).forEach((query, i) => {
+    if (names.has(query?.name)) say(`/queries/${i}/name`, `"${query.name}" names two queries; the candidate list is grouped by it`);
+    names.add(query?.name);
+  });
+  return problems;
+}
+
+// Not an error: a seeds file with nothing in it yet is the ordinary state of
+// one waiting for somebody to decide what this atlas should draw from, and
+// the import says the same thing and does nothing.
+export function seedsAreEmpty(seeds) {
+  return !(seeds?.items ?? []).length && !(seeds?.queries ?? []).length;
+}
+
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+// Where the Wikipedia leads live, relative to the repository root rather than
+// to --data: they are not data, and a run against a scratch directory must
+// not pick up the real cache or miss it.
+export const LEAD_CACHE = 'tools/import/cache/wikipedia';
 const SCHEMA_DIR = path.join(ROOT, 'schema');
 const DEFAULT_DATA = path.join(ROOT, 'data');
 
@@ -155,24 +197,50 @@ export async function runValidation(dataDir = DEFAULT_DATA, { index = false } = 
     }
   }
 
-  // The import maps: schema first, then the things a shape cannot say. They
-  // are not records, so they are not in `entries` and no rule number owns
-  // them.
+  // Everything under data/imports/: the right schema for the file's kind
+  // first, then the things a shape cannot say. They are not records, so they
+  // are not in `entries` and no rule number owns them.
   const { maps, problems: mapProblems } = await readImportMaps(dataDir);
-  for (const p of mapProblems) errors.push({ rule: 'import-map', id: null, file: p.file, path: '', message: p.message });
+  for (const p of mapProblems) errors.push({ rule: 'import', id: null, file: p.file, path: '', message: p.message });
+  const validator = createValidator(schemas);
   if (maps.length) {
-    const validator = createValidator(schemas);
     const sourceIds = new Set(records.filter((r) => r?.kind === 'source').map((r) => r.id));
-    for (const { file, map } of maps) {
-      for (const e of validator.validate(IMPORT_MAP_SCHEMA, map)) {
-        errors.push({ rule: 'import-map', id: null, file, path: e.path, message: e.message, alternatives: e.alternatives });
+    for (const { file, kind, map } of maps) {
+      const schema = IMPORT_SCHEMAS[kind];
+      if (!schema) {
+        errors.push({ rule: 'import', id: null, file, path: '/kind', message: `"${kind}" is not a kind of file data/imports/ holds (${Object.keys(IMPORT_SCHEMAS).join(', ')})` });
+        continue;
       }
-      for (const p of checkImportMap(file, map)) {
-        errors.push({ rule: 'import-map', id: null, file, path: p.path, message: p.message });
+      for (const e of validator.validate(schema, map)) {
+        errors.push({ rule: kind, id: null, file, path: e.path, message: e.message, alternatives: e.alternatives });
+      }
+      const checks = kind === 'import-seeds' ? checkImportSeeds(file, map) : kind === DEFAULT_IMPORT_KIND ? checkImportMap(file, map) : [];
+      for (const p of checks) {
+        errors.push({ rule: kind, id: null, file, path: p.path, message: p.message });
       }
       if (typeof map?.source === 'string' && sourceIds.size && !sourceIds.has(map.source)) {
-        warnings.push({ rule: 'import-map', id: null, file, path: '/source', message: `no source record "${map.source}"; the import writes one, so this is expected only before it has run` });
+        warnings.push({ rule: kind, id: null, file, path: '/source', message: `no source record "${map.source}"; the import writes one, so this is expected only before it has run` });
       }
+      if (kind === 'import-seeds' && seedsAreEmpty(map)) {
+        warnings.push({ rule: kind, id: null, file, path: '', message: 'neither items nor queries: the import has nothing to fetch until somebody decides what it should draw from' });
+      }
+    }
+  }
+
+  // The cached Wikipedia leads. They are not under data/ and are never
+  // published, but they are quotations of somebody else's writing and a
+  // quotation with no revision behind it cannot be checked by anyone, so the
+  // envelope is held to its schema like everything else.
+  const cacheDir = path.join(ROOT, ...LEAD_CACHE.split('/'));
+  const { leads, problems: leadProblems } = await readCachedLeads(cacheDir);
+  for (const p of leadProblems) errors.push({ rule: 'lead-cache', id: null, file: `${LEAD_CACHE}/${p.file}`, path: '', message: p.message });
+  for (const { file, lead } of leads) {
+    for (const e of validator.validate(LEAD_SCHEMA, lead)) {
+      errors.push({ rule: 'lead-cache', id: null, file: `${LEAD_CACHE}/${file}`, path: e.path, message: e.message, alternatives: e.alternatives });
+    }
+    const expected = `${lead?.qid}.${lead?.lang}.json`;
+    if (typeof lead?.qid === 'string' && typeof lead?.lang === 'string' && file !== expected) {
+      errors.push({ rule: 'lead-cache', id: null, file: `${LEAD_CACHE}/${file}`, path: '', message: `holds ${lead.qid} in ${lead.lang} and should be called ${expected}` });
     }
   }
 
