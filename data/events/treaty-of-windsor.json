@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "treaty-of-windsor",
   "kind": "event",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,11 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "m21-retracted"
+    ],
+    "note": "Retracted in M21: the secret Anglo-Portuguese declaration of 14 October 1899 — Britain reaffirming its guarantee of the Portuguese colonies, Portugal closing Lourenço Marques to arms for the Transvaal — is genuinely significant. But only one consequence can be argued for it from this bibliography, Portugal’s belligerence of 1916, and a second edge would rest on the same argument. Worth reviving once the 1890 Ultimatum is in the atlas."
   },
   "wikidata": "Q2518953",
   "sitelinks": 6,
