@@ -88,6 +88,13 @@ export function checkImportSeeds(file, seeds) {
     if (seen.has(qid)) say(`/items/${i}`, `${qid} is listed twice`);
     seen.add(qid);
   });
+  for (const [qid, entry] of Object.entries(seeds?.classes ?? {})) {
+    if (!/^Q[1-9][0-9]*$/.test(qid)) say(`/classes/${qid}`, `"${qid}" is not an item of the source`);
+    // The shape cannot make one property depend on another: an actor class
+    // with no actorType would create actors of no type at all.
+    if (entry?.kind === 'actor' && !entry?.actorType) say(`/classes/${qid}`, 'an actor class has to say which actorType its items become');
+    if (entry?.kind !== 'actor' && entry?.actorType) say(`/classes/${qid}`, `actorType means nothing on a ${entry?.kind} class`);
+  }
   const names = new Set();
   (seeds?.queries ?? []).forEach((query, i) => {
     if (names.has(query?.name)) say(`/queries/${i}/name`, `"${query.name}" names two queries; the candidate list is grouped by it`);

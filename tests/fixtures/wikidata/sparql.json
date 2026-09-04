@@ -1,0 +1,19 @@
+{
+  "head": { "vars": ["item", "itemLabel", "itemDescription"] },
+  "results": {
+    "bindings": [
+      {
+        "item": { "type": "uri", "value": "http://www.wikidata.org/entity/Q9000001" },
+        "itemLabel": { "xml:lang": "en", "type": "literal", "value": "Northfield Rising" },
+        "itemDescription": { "xml:lang": "en", "type": "literal", "value": "an invented uprising, used only to test an import" }
+      },
+      {
+        "item": { "type": "uri", "value": "http://www.wikidata.org/entity/Q9000007" },
+        "itemLabel": { "xml:lang": "en", "type": "literal", "value": "Undated Assembly" }
+      },
+      {
+        "item": { "type": "uri", "value": "http://www.wikidata.org/entity/statement/not-an-item" }
+      }
+    ]
+  }
+}

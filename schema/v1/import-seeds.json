@@ -56,6 +56,37 @@
         }
       }
     },
+    "classes": {
+      "description": "What a class of the source means here, keyed by the source's identifier for it: which kind of record an item of that class becomes, and for actors which actorType. It is deliberately data and not code. Whether \"battle\" is an event of this atlas and whether a political party is an institution or a people are editorial decisions, and a table in a file somebody can argue with in a pull request is the only honest place for them. An item whose classes are all absent from here is refused and listed with its labels, never guessed at.",
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["kind"],
+        "additionalProperties": false,
+        "properties": {
+          "kind": {
+            "type": "string",
+            "enum": ["event", "actor", "place"]
+          },
+          "actorType": {
+            "description": "Required when kind is actor and meaningless otherwise; the import refuses an actor class that does not say which.",
+            "type": "string",
+            "enum": ["person", "polity", "institution", "people"]
+          },
+          "label": {
+            "description": "What the source calls the class, copied in by the report so the file reads as something other than a list of numbers. Never used for matching.",
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200
+          },
+          "note": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 600
+          }
+        }
+      }
+    },
     "reconcile": {
       "description": "Whether --reconcile may match this atlas's existing hand-written records against the source. Off by default: matching writes identifiers onto records somebody wrote.",
       "type": "boolean"

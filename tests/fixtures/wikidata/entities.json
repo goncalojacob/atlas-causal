@@ -1,0 +1,99 @@
+{
+  "entities": {
+    "Q9000001": {
+      "type": "item",
+      "id": "Q9000001",
+      "labels": { "en": { "language": "en", "value": "Northfield Rising" }, "pt": { "language": "pt", "value": "Levantamento de Northfield" } },
+      "descriptions": { "en": { "language": "en", "value": "an invented uprising, used only to test an import" } },
+      "aliases": { "en": [{ "language": "en", "value": "Rising of Northfield" }] },
+      "claims": {
+        "P31": [{ "mainsnak": { "snaktype": "value", "property": "P31", "datavalue": { "type": "wikibase-entityid", "value": { "entity-type": "item", "id": "Q9100001" } } }, "rank": "normal" }],
+        "P585": [{ "mainsnak": { "snaktype": "value", "property": "P585", "datavalue": { "type": "time", "value": { "time": "+1974-04-25T00:00:00Z", "precision": 11, "calendarmodel": "http://www.wikidata.org/entity/Q1985727" } } }, "rank": "normal" }],
+        "P276": [{ "mainsnak": { "snaktype": "value", "property": "P276", "datavalue": { "type": "wikibase-entityid", "value": { "entity-type": "item", "id": "Q9000003" } } }, "rank": "normal" }],
+        "P710": [{ "mainsnak": { "snaktype": "value", "property": "P710", "datavalue": { "type": "wikibase-entityid", "value": { "entity-type": "item", "id": "Q9000002" } } }, "rank": "normal" }]
+      },
+      "sitelinks": {
+        "enwiki": { "site": "enwiki", "title": "Northfield Rising" },
+        "ptwiki": { "site": "ptwiki", "title": "Levantamento de Northfield" },
+        "frwiki": { "site": "frwiki", "title": "Soulèvement de Northfield" },
+        "commonswiki": { "site": "commonswiki", "title": "Category:Northfield Rising" }
+      }
+    },
+    "Q9000002": {
+      "type": "item",
+      "id": "Q9000002",
+      "labels": { "en": { "language": "en", "value": "Ada Northfield" } },
+      "descriptions": { "en": { "language": "en", "value": "an invented person" } },
+      "aliases": {},
+      "claims": {
+        "P31": [{ "mainsnak": { "snaktype": "value", "property": "P31", "datavalue": { "type": "wikibase-entityid", "value": { "entity-type": "item", "id": "Q9100002" } } }, "rank": "normal" }],
+        "P569": [{ "mainsnak": { "snaktype": "value", "property": "P569", "datavalue": { "type": "time", "value": { "time": "+1900-03-02T00:00:00Z", "precision": 11 } } }, "rank": "normal" }],
+        "P570": [{ "mainsnak": { "snaktype": "value", "property": "P570", "datavalue": { "type": "time", "value": { "time": "+1970-00-00T00:00:00Z", "precision": 9 } } }, "rank": "normal" }]
+      },
+      "sitelinks": { "enwiki": { "site": "enwiki", "title": "Ada Northfield" } }
+    },
+    "Q9000003": {
+      "type": "item",
+      "id": "Q9000003",
+      "labels": { "en": { "language": "en", "value": "Northfield" }, "pt": { "language": "pt", "value": "Campo do Norte" } },
+      "descriptions": { "en": { "language": "en", "value": "an invented town" } },
+      "aliases": {},
+      "claims": {
+        "P31": [{ "mainsnak": { "snaktype": "value", "property": "P31", "datavalue": { "type": "wikibase-entityid", "value": { "entity-type": "item", "id": "Q9100003" } } }, "rank": "normal" }],
+        "P625": [{ "mainsnak": { "snaktype": "value", "property": "P625", "datavalue": { "type": "globecoordinate", "value": { "latitude": 10, "longitude": 10, "precision": 0.0001, "globe": "http://www.wikidata.org/entity/Q2" } } }, "rank": "normal" }],
+        "P17": [{ "mainsnak": { "snaktype": "value", "property": "P17", "datavalue": { "type": "wikibase-entityid", "value": { "entity-type": "item", "id": "Q9000006" } } }, "rank": "normal" }]
+      },
+      "sitelinks": { "enwiki": { "site": "enwiki", "title": "Northfield" } }
+    },
+    "Q9000004": {
+      "type": "item",
+      "id": "Q9000004",
+      "labels": { "en": { "language": "en", "value": "Northfield Sonata" } },
+      "descriptions": { "en": { "language": "en", "value": "an invented piece of music, of a class this atlas has no opinion about" } },
+      "aliases": {},
+      "claims": {
+        "P31": [{ "mainsnak": { "snaktype": "value", "property": "P31", "datavalue": { "type": "wikibase-entityid", "value": { "entity-type": "item", "id": "Q9100009" } } }, "rank": "normal" }]
+      },
+      "sitelinks": {}
+    },
+    "Q9000005": {
+      "type": "item",
+      "id": "Q9000005",
+      "labels": { "en": { "language": "en", "value": "Far Rock" } },
+      "descriptions": { "en": { "language": "en", "value": "an invented place too far from any lane to be placed by its own point" } },
+      "aliases": {},
+      "claims": {
+        "P31": [{ "mainsnak": { "snaktype": "value", "property": "P31", "datavalue": { "type": "wikibase-entityid", "value": { "entity-type": "item", "id": "Q9100003" } } }, "rank": "normal" }],
+        "P625": [{ "mainsnak": { "snaktype": "value", "property": "P625", "datavalue": { "type": "globecoordinate", "value": { "latitude": -60, "longitude": -140, "precision": 0.01, "globe": "http://www.wikidata.org/entity/Q2" } } }, "rank": "normal" }],
+        "P17": [{ "mainsnak": { "snaktype": "value", "property": "P17", "datavalue": { "type": "wikibase-entityid", "value": { "entity-type": "item", "id": "Q9000006" } } }, "rank": "normal" }]
+      },
+      "sitelinks": {}
+    },
+    "Q9000006": {
+      "type": "item",
+      "id": "Q9000006",
+      "labels": { "en": { "language": "en", "value": "Republic of Northfield" } },
+      "descriptions": { "en": { "language": "en", "value": "an invented country" } },
+      "aliases": {},
+      "claims": {
+        "P31": [{ "mainsnak": { "snaktype": "value", "property": "P31", "datavalue": { "type": "wikibase-entityid", "value": { "entity-type": "item", "id": "Q9100004" } } }, "rank": "normal" }],
+        "P571": [{ "mainsnak": { "snaktype": "value", "property": "P571", "datavalue": { "type": "time", "value": { "time": "+1822-00-00T00:00:00Z", "precision": 9 } } }, "rank": "normal" }],
+        "P625": [{ "mainsnak": { "snaktype": "value", "property": "P625", "datavalue": { "type": "globecoordinate", "value": { "latitude": 12, "longitude": 12, "precision": 0.1, "globe": "http://www.wikidata.org/entity/Q2" } } }, "rank": "normal" }]
+      },
+      "sitelinks": { "enwiki": { "site": "enwiki", "title": "Republic of Northfield" } }
+    },
+    "Q9000007": {
+      "type": "item",
+      "id": "Q9000007",
+      "labels": { "en": { "language": "en", "value": "Undated Assembly" } },
+      "descriptions": {},
+      "aliases": {},
+      "claims": {
+        "P31": [{ "mainsnak": { "snaktype": "value", "property": "P31", "datavalue": { "type": "wikibase-entityid", "value": { "entity-type": "item", "id": "Q9100001" } } }, "rank": "normal" }]
+      },
+      "sitelinks": {}
+    },
+    "Q9000008": { "id": "Q9000008", "missing": "" }
+  },
+  "success": 1
+}
