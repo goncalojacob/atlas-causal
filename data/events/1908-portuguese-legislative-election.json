@@ -9,14 +9,19 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "summary-drafted"
     ]
   },
   "wikidata": "Q7232747",
@@ -27,12 +32,24 @@
   },
   "sources": [
     {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1908 Portuguese legislative election\", revision 1277160529"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Eleições legislativas portuguesas de 1908\", revision 66807862"
+    },
+    {
       "source": "wikidata",
       "locator": "Q7232747"
     }
   ],
   "title": "1908 Portuguese legislative election",
-  "summary": "Wikidata item Q7232747, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "Portugal elected the 157 deputies of the Chamber on 5 April 1908, nine weeks after the regicide and the fall of João Franco’s government, in the first ballot of what contemporaries called the acalmação — the attempt to put the constitutional forms back after a year of rule by decree. By then both parties of the rotation had split, and the result was the most divided Chamber in decades: the Regenerators returned largest with 62 seats of 157 and nothing like a majority, and the republicans returned a small group of their own. No stable government could be formed from it, and the monarchy spent its last two and a half years in ministries that lasted months each. It is in the atlas for that deadlock rather than for the result.",
   "when": {
     "start": 1908,
     "end": 1908,
@@ -40,5 +57,18 @@
   },
   "place": null,
   "region": "europe",
-  "actors": []
+  "actors": [
+    {
+      "actor": "regenerator-party",
+      "role": "largest party, 62 seats"
+    },
+    {
+      "actor": "manuel-ii",
+      "role": "king in whose name it was called"
+    },
+    {
+      "actor": "joao-franco",
+      "role": "outgoing head of government"
+    }
+  ]
 }

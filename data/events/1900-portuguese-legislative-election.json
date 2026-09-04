@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "1900-portuguese-legislative-election",
   "kind": "event",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,11 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "m21-retracted"
+    ],
+    "note": "Retracted in M21: a routine election of the rotativismo, the arranged alternation of Regenerators and Progressives under the constitutional monarchy. Held 25 November 1900; the Regenerators won 104 seats. The cached lead gives the date and the seat count and nothing more, and no consequence of this particular ballot can be argued from the bibliography here. It could not be wired without inventing the argument."
   },
   "wikidata": "Q7232742",
   "sitelinks": 3,

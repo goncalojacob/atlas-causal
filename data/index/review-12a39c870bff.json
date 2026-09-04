@@ -4,6 +4,57 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal",
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "1908-portuguese-legislative-election",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "1908 Portuguese legislative election"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal",
+        "wikipedia-pt"
+      ],
+      "from": "1908-portuguese-legislative-election",
+      "id": "1908-portuguese-legislative-election--republic-proclaimed-1910--precondition-of",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "republic-proclaimed-1910",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -935,6 +986,55 @@
       "status": "active",
       "to": "carnation-revolution-1974",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal"
+      ],
+      "id": "carbonaria",
+      "kind": "actor",
+      "names": [
+        "Carbonária",
+        "Carbonária Portuguesa",
+        "Portuguese Carbonária"
+      ],
+      "review": {
+        "flags": [
+          "actor-drafted"
+        ]
+      },
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal"
+      ],
+      "id": "carlos-i",
+      "kind": "actor",
+      "names": [
+        "Carlos I",
+        "D. Carlos I",
+        "Carlos I of Portugal",
+        "Carlos I de Portugal"
+      ],
+      "review": {
+        "flags": [
+          "actor-drafted"
+        ]
+      },
+      "status": "active"
     },
     {
       "authors": [
@@ -3300,6 +3400,29 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "cites": [
+        "ramos-2009-historia-de-portugal"
+      ],
+      "id": "joao-franco",
+      "kind": "actor",
+      "names": [
+        "João Franco",
+        "João Franco Castelo-Branco"
+      ],
+      "review": {
+        "flags": [
+          "actor-drafted"
+        ]
+      },
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
       "id": "lajes",
       "kind": "place",
       "names": [
@@ -3673,6 +3796,80 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal",
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "lisbon-regicide",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "The Lisbon Regicide"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal",
+        "wikipedia-pt"
+      ],
+      "from": "lisbon-regicide",
+      "id": "lisbon-regicide--1908-portuguese-legislative-election--caused",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "1908-portuguese-legislative-election",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal",
+        "wheeler-1978-republican-portugal"
+      ],
+      "from": "lisbon-regicide",
+      "id": "lisbon-regicide--republic-proclaimed-1910--enabled",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "republic-proclaimed-1910",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -3684,6 +3881,30 @@
       "review": {
         "flags": [
           "wikidata-assigned-by-assistant"
+        ]
+      },
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal"
+      ],
+      "id": "luis-filipe",
+      "kind": "actor",
+      "names": [
+        "Luís Filipe",
+        "Luís Filipe, Prince Royal of Portugal",
+        "Luís Filipe de Bragança"
+      ],
+      "review": {
+        "flags": [
+          "actor-drafted"
         ]
       },
       "status": "active"
@@ -5108,6 +5329,29 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "cites": [
+        "ramos-2009-historia-de-portugal"
+      ],
+      "id": "regenerator-party",
+      "kind": "actor",
+      "names": [
+        "Regenerator Party",
+        "Partido Regenerador"
+      ],
+      "review": {
+        "flags": [
+          "actor-drafted"
+        ]
+      },
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
       "doi": null,
       "id": "reis-2013-portuguese-slump",
       "isbn": null,
@@ -6037,38 +6281,8 @@
     }
   ],
   "schema": 1,
-  "total": 816,
+  "total": 824,
   "warnings": [
-    {
-      "id": "1900-portuguese-legislative-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "1901-portuguese-legislative-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "1904-portuguese-legislative-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "1905-portuguese-legislative-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "1908-portuguese-legislative-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
     {
       "id": "1910-portuguese-legislative-election",
       "kind": "event",
@@ -6988,12 +7202,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "april-1906-portuguese-legislative-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
       "id": "assalto-ao-banco-de-angola-na-damaia-em-21-de-outubro-de-1975",
       "kind": "event",
       "message": "event has no edges",
@@ -7079,12 +7287,6 @@
     },
     {
       "id": "assault-on-the-santa-maria-steamship",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "august-1906-portuguese-legislative-election",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"
@@ -7265,12 +7467,6 @@
     },
     {
       "id": "lisbon-recognition-convention",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "lisbon-regicide",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"
@@ -7481,18 +7677,6 @@
     },
     {
       "id": "uefa-2016-final",
-      "kind": "source",
-      "message": "source is cited by nothing under validation",
-      "rule": "no-citers"
-    },
-    {
-      "id": "wikipedia-en",
-      "kind": "source",
-      "message": "source is cited by nothing under validation",
-      "rule": "no-citers"
-    },
-    {
-      "id": "wikipedia-pt",
       "kind": "source",
       "message": "source is cited by nothing under validation",
       "rule": "no-citers"

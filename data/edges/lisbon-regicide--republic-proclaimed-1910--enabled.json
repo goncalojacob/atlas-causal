@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "lisbon-regicide--republic-proclaimed-1910--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    },
+    {
+      "source": "wheeler-1978-republican-portugal",
+      "locator": null
+    }
+  ],
+  "from": "lisbon-regicide",
+  "to": "republic-proclaimed-1910",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The killing took away the king who had backed the dictatorship and the heir who had been trained to succeed him, and left the throne to an eighteen-year-old with no standing of his own. What the monarchy lost was not a battle but the capacity to have one fought for it: its defenders spent the next thirty-two months in ministries too short-lived to govern, while the republican movement had been shown that the regime could be struck at directly and survived the striking. The revolution of October 1910 was made against a dynasty that had already been broken in the Terreiro do Paço.",
+  "dispute": null
+}

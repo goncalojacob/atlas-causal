@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "carlos-i",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "actor-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    }
+  ],
+  "actorType": "person",
+  "names": [
+    "Carlos I",
+    "D. Carlos I",
+    "Carlos I of Portugal",
+    "Carlos I de Portugal"
+  ],
+  "summary": "Carlos I (1863–1908) was king of Portugal from 1889. His reign opened with the British Ultimatum of 1890, which forced Portugal out of the territory between Angola and Mozambique and cost the crown much of its standing, and it ran on through two declarations of bankruptcy and the slow exhaustion of the rotation of parties. In 1906 he called João Franco to govern and in 1907 consented to his dissolving parliament and ruling by decree, which made the crown a party to the dictatorship rather than an arbiter above it. He and his heir were shot dead in Lisbon on 1 February 1908. He is in the atlas as the last Portuguese king who governed as well as reigned.",
+  "when": {
+    "start": 1863,
+    "end": 1908
+  },
+  "where": null
+}

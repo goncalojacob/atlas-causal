@@ -824,6 +824,47 @@
       }
     },
     {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "carbonaria",
+      "name": "Carbonária",
+      "names": [
+        "Carbonária",
+        "Carbonária Portuguesa",
+        "Portuguese Carbonária"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": {
+          "max": 1914,
+          "min": 1910
+        },
+        "start": {
+          "max": 1900,
+          "min": 1896
+        }
+      }
+    },
+    {
+      "actorType": "person",
+      "aliases": [],
+      "id": "carlos-i",
+      "name": "Carlos I",
+      "names": [
+        "Carlos I",
+        "D. Carlos I",
+        "Carlos I of Portugal",
+        "Carlos I de Portugal"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": 1908,
+        "start": 1863
+      }
+    },
+    {
       "actorType": "person",
       "aliases": [],
       "id": "cavaco-silva",
@@ -2281,6 +2322,22 @@
       }
     },
     {
+      "actorType": "person",
+      "aliases": [],
+      "id": "joao-franco",
+      "name": "João Franco",
+      "names": [
+        "João Franco",
+        "João Franco Castelo-Branco"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": 1929,
+        "start": 1855
+      }
+    },
+    {
       "actorType": "polity",
       "aliases": [],
       "id": "jordan",
@@ -2599,6 +2656,23 @@
       "when": {
         "end": null,
         "start": 1918
+      }
+    },
+    {
+      "actorType": "person",
+      "aliases": [],
+      "id": "luis-filipe",
+      "name": "Luís Filipe",
+      "names": [
+        "Luís Filipe",
+        "Luís Filipe, Prince Royal of Portugal",
+        "Luís Filipe de Bragança"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": 1908,
+        "start": 1887
       }
     },
     {
@@ -3828,6 +3902,22 @@
       }
     },
     {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "regenerator-party",
+      "name": "Regenerator Party",
+      "names": [
+        "Regenerator Party",
+        "Partido Regenerador"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": 1910,
+        "start": 1868
+      }
+    },
+    {
       "actorType": "polity",
       "aliases": [],
       "id": "republic-of-india",
@@ -5038,6 +5128,16 @@
   "edges": [
     {
       "aliases": [],
+      "confidence": "probable",
+      "from": "1908-portuguese-legislative-election",
+      "id": "1908-portuguese-legislative-election--republic-proclaimed-1910--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "republic-proclaimed-1910",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
       "confidence": "consensus",
       "from": "25-november-1975",
       "id": "25-november-1975--constitution-1976--enabled",
@@ -5708,6 +5808,26 @@
     },
     {
       "aliases": [],
+      "confidence": "probable",
+      "from": "lisbon-regicide",
+      "id": "lisbon-regicide--1908-portuguese-legislative-election--caused",
+      "status": "active",
+      "supersededBy": null,
+      "to": "1908-portuguese-legislative-election",
+      "type": "caused"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "lisbon-regicide",
+      "id": "lisbon-regicide--republic-proclaimed-1910--enabled",
+      "status": "active",
+      "supersededBy": null,
+      "to": "republic-proclaimed-1910",
+      "type": "enabled"
+    },
+    {
+      "aliases": [],
       "confidence": "disputed",
       "from": "monarchy-of-the-north-1919",
       "id": "monarchy-of-the-north-1919--coup-28-may-1926--precondition-of",
@@ -6075,7 +6195,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "1900 Portuguese legislative election",
       "weight": 0,
@@ -6096,7 +6216,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "1901 Portuguese legislative election",
       "weight": 0,
@@ -6117,7 +6237,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "1904 Portuguese legislative election",
       "weight": 0,
@@ -6138,7 +6258,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "1905 Portuguese legislative election",
       "weight": 0,
@@ -6153,7 +6273,20 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "regenerator-party",
+          "role": "largest party, 62 seats"
+        },
+        {
+          "actor": "manuel-ii",
+          "role": "king in whose name it was called"
+        },
+        {
+          "actor": "joao-franco",
+          "role": "outgoing head of government"
+        }
+      ],
       "aliases": [],
       "id": "1908-portuguese-legislative-election",
       "place": null,
@@ -6162,7 +6295,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "1908 Portuguese legislative election",
-      "weight": 0,
+      "weight": 5,
       "when": {
         "date": "1908-04-05",
         "end": 1908,
@@ -9666,7 +9799,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "April 1906 Portuguese legislative election",
       "weight": 0,
@@ -9961,7 +10094,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "August 1906 Portuguese legislative election",
       "weight": 0,
@@ -12096,7 +12229,28 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "carlos-i",
+          "role": "king, killed in the attack"
+        },
+        {
+          "actor": "luis-filipe",
+          "role": "heir apparent, killed in the attack"
+        },
+        {
+          "actor": "manuel-ii",
+          "role": "younger son, succeeded to the throne"
+        },
+        {
+          "actor": "joao-franco",
+          "role": "head of the government the attack targeted"
+        },
+        {
+          "actor": "carbonaria",
+          "role": "sheltered and armed the gunmen"
+        }
+      ],
       "aliases": [],
       "id": "lisbon-regicide",
       "place": "lisbon",
@@ -12104,8 +12258,8 @@
       "regionMethod": "inside",
       "status": "active",
       "supersededBy": null,
-      "title": "Lisbon Regicide",
-      "weight": 0,
+      "title": "The Lisbon Regicide",
+      "weight": 7,
       "when": {
         "date": "1908-02-01",
         "end": 1908,
@@ -12932,7 +13086,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Proclamation of the Republic",
-      "weight": 4,
+      "weight": 6,
       "when": {
         "calendar": "gregorian",
         "date": "1910-10-05",

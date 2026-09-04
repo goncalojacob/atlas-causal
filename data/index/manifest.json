@@ -1,7 +1,7 @@
 {
   "counts": {
-    "actors": 311,
-    "edges": 91,
+    "actors": 316,
+    "edges": 94,
     "events": 326,
     "narratives": 1,
     "places": 25,
@@ -11,9 +11,9 @@
     "sources": 34
   },
   "files": {
-    "review": "index/review-282b06f8a8f4.json",
-    "sources": "index/sources-b90b4d7c9b33.json",
-    "topology": "index/topology-bec25dc389d9.json"
+    "review": "index/review-12a39c870bff.json",
+    "sources": "index/sources-7b75ddc1daa0.json",
+    "topology": "index/topology-e25c6a0e0999.json"
   },
   "land": [
     {
@@ -116,10 +116,15 @@
     "governing party",
     "government",
     "head of state",
+    "head of the government the attack targeted",
+    "heir apparent, killed in the attack",
     "host",
     "incumbent",
     "invader",
     "invoked",
+    "king in whose name it was called",
+    "king, killed in the attack",
+    "largest party, 62 seats",
     "leader",
     "legislator",
     "lender",
@@ -131,6 +136,7 @@
     "opposition party",
     "organiser",
     "outgoing",
+    "outgoing head of government",
     "outgoing party",
     "outgoing president",
     "party leader",
@@ -147,6 +153,7 @@
     "resolution authority",
     "resolved",
     "restored",
+    "sheltered and armed the gunmen",
     "signatory",
     "successor",
     "superseded",
@@ -155,7 +162,8 @@
     "target",
     "victim",
     "winner",
-    "withdrew"
+    "withdrew",
+    "younger son, succeeded to the throne"
   ],
   "schema": 1
 }

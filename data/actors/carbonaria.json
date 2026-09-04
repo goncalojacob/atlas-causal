@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "carbonaria",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "actor-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    }
+  ],
+  "actorType": "institution",
+  "names": [
+    "Carbonária",
+    "Carbonária Portuguesa",
+    "Portuguese Carbonária"
+  ],
+  "summary": "The Carbonária was a secret society, organised in cells on the Italian model, that became the armed arm of Portuguese republicanism in the last years of the monarchy. Its members supplied and sheltered the gunmen who killed Carlos I and his heir in 1908 and provided much of the street force of the revolution of October 1910. Its founding and its dissolution are both loosely dated in the literature, which is why the interval here is a range rather than a pair of years. It is in the atlas because the republican movement acted through it before it acted through a parliament.",
+  "when": {
+    "start": {
+      "min": 1896,
+      "max": 1900
+    },
+    "end": {
+      "min": 1910,
+      "max": 1914
+    }
+  },
+  "where": null
+}

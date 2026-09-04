@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "regenerator-party",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "actor-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    }
+  ],
+  "actorType": "institution",
+  "names": [
+    "Regenerator Party",
+    "Partido Regenerador"
+  ],
+  "summary": "The Regenerator Party was one of the two parties of the rotativismo, alternating in government with the Progressives by arrangement under the constitutional monarchy from the 1870s. Elections were made by whichever of them held the ministry of the interior, which is why its seat counts move between eighty and a hundred and fifteen without much reference to opinion. It split repeatedly after 1901 and was largest but far short of a majority in the last two elections of the monarchy. It ended with the monarchy in 1910. It is in the atlas as one half of the machine whose exhaustion is the political story of these decades.",
+  "when": {
+    "start": 1868,
+    "end": 1910
+  },
+  "where": null
+}

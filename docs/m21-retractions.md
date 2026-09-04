@@ -51,3 +51,27 @@ And one that is not an election:
   but only one, and a second edge would have rested on the same argument
   twice. The atlas needs the British Ultimatum of 1890 and the seizure of
   German ships of February 1916 before this record can carry its own weight.
+
+## 1900s — 6 of 8 retracted
+
+The same six-in-a-row problem: six more elections of the rotativismo, none
+of which can be shown to have changed anything the atlas holds. The two that
+stay are the ones the decade turns on.
+
+- `1900-portuguese-legislative-election` — 25 November 1900, Regenerators,
+  104 seats.
+- `1901-portuguese-legislative-election` — 6 October 1901, Regenerators, 100
+  seats; the third election in three years.
+- `1904-portuguese-legislative-election` — 26 June 1904, Regenerators, 100
+  seats.
+- `1905-portuguese-legislative-election` — 12 December 1905, Progressives,
+  109 seats.
+- `april-1906-portuguese-legislative-election` — 29 April 1906, Regenerators,
+  104 seats; the one republican elected refused his seat, alleging fraud.
+- `august-1906-portuguese-legislative-election` — 19 August 1906, the second
+  that year; no majority for the first time in decades. This is the most
+  interesting of the six — it is where the rotation stops producing
+  governments — but the argument that matters runs through João Franco's
+  ministry and his dissolution of 1907, and the atlas holds neither.
+
+Wired instead: `lisbon-regicide` and `1908-portuguese-legislative-election`.

@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "1908-portuguese-legislative-election--republic-proclaimed-1910--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Eleições legislativas portuguesas de 1908\", revision 66807862"
+    }
+  ],
+  "from": "1908-portuguese-legislative-election",
+  "to": "republic-proclaimed-1910",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Chamber returned in April 1908 was the most fragmented the monarchy had produced: both parties of the rotation had split, no group held a majority, and the ministries drawn from it lasted months each. The claim here is deliberately narrow. The election did not cause the revolution, and no historian argues that it did; it produced the parliamentary deadlock the revolution happened inside, and against which republican propaganda that the regime could no longer govern itself was simply accurate.",
+  "dispute": null
+}

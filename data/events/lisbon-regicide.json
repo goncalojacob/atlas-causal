@@ -9,14 +9,19 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "summary-drafted"
     ]
   },
   "wikidata": "Q2665185",
@@ -27,12 +32,24 @@
   },
   "sources": [
     {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Lisbon Regicide\", revision 1366493733"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Regicídio de 1908\", revision 70413642"
+    },
+    {
       "source": "wikidata",
       "locator": "Q2665185"
     }
   ],
-  "title": "Lisbon Regicide",
-  "summary": "Wikidata item Q2665185, imported by tools/import/wikidata.mjs. The item's own description reads \"February 1908 murder of the king and crown prince of Portugal\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "title": "The Lisbon Regicide",
+  "summary": "On 1 February 1908 King Carlos I and his heir Luís Filipe were shot dead in an open carriage crossing the Terreiro do Paço in Lisbon. The gunmen came from the republican fringe and were sheltered and armed by members of the Carbonária, and what they meant to end was the government of João Franco, who had dissolved parliament the previous May and was ruling by decree with the king’s consent. Franco’s government did not survive the killing. Carlos’s younger son came to the throne as Manuel II, eighteen years old and without preparation, and the ministries that followed tried to return the country to constitutional forms. The monarchy lasted another thirty-two months and never recovered the authority it lost in the square. It is in the atlas as the point at which the crisis of the constitutional monarchy stopped being parliamentary.",
   "when": {
     "start": 1908,
     "end": 1908,
@@ -40,5 +57,26 @@
   },
   "place": "lisbon",
   "region": null,
-  "actors": []
+  "actors": [
+    {
+      "actor": "carlos-i",
+      "role": "king, killed in the attack"
+    },
+    {
+      "actor": "luis-filipe",
+      "role": "heir apparent, killed in the attack"
+    },
+    {
+      "actor": "manuel-ii",
+      "role": "younger son, succeeded to the throne"
+    },
+    {
+      "actor": "joao-franco",
+      "role": "head of the government the attack targeted"
+    },
+    {
+      "actor": "carbonaria",
+      "role": "sheltered and armed the gunmen"
+    }
+  ]
 }
