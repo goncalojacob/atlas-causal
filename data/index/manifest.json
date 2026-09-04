@@ -1,7 +1,7 @@
 {
   "counts": {
-    "actors": 319,
-    "edges": 104,
+    "actors": 322,
+    "edges": 107,
     "events": 326,
     "narratives": 1,
     "places": 25,
@@ -11,9 +11,9 @@
     "sources": 34
   },
   "files": {
-    "review": "index/review-01e12cd73d2e.json",
-    "sources": "index/sources-29fb9abb20a8.json",
-    "topology": "index/topology-d19a9a7543cb.json"
+    "review": "index/review-c5518cfd85a0.json",
+    "sources": "index/sources-2cfbe559369b.json",
+    "topology": "index/topology-59beb13b6833.json"
   },
   "land": [
     {
@@ -94,6 +94,7 @@
     "belligerent",
     "beneficiary",
     "borrower",
+    "broke up the opposition campaign",
     "candidate",
     "claimed responsibility",
     "coalition party",
@@ -105,6 +106,7 @@
     "deposed",
     "discredited",
     "dispossessed",
+    "dissolved the assembly and set the terms",
     "divided",
     "elected",
     "elected first president",
@@ -135,6 +137,8 @@
     "negotiated and signed for portugal",
     "negotiator",
     "opponent",
+    "opposition candidate, withdrew",
+    "opposition front, withdrew before the poll",
     "opposition leader",
     "opposition party",
     "organiser",
@@ -150,6 +154,7 @@
     "president",
     "prime minister",
     "re-elected",
+    "re-elected unopposed for a fourth term",
     "removed",
     "replaced",
     "resigned",
@@ -159,6 +164,7 @@
     "sheltered and armed the gunmen",
     "signatory",
     "sole candidate, elected president",
+    "sole party, took all 120 seats",
     "successor",
     "superseded",
     "supporter",

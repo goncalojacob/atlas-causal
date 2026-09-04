@@ -183,3 +183,26 @@ had been missing from the chain.
 
 Wired instead: `iberian-pact`, with the intervention in Spain running into it
 and the Azores agreement of 1943 running out.
+
+## 1940s — 4 of 6 retracted
+
+- `1942-portuguese-legislative-election` — 1 November 1942, the last election
+  on a single national list.
+- `1942-portuguese-presidential-election` — 8 February 1942, Carmona
+  unopposed, third term.
+- `1949-portuguese-legislative-election` — 13 November 1949, nine months after
+  the presidential campaign that is wired; the opposition withdrew late
+  again. It repeats the manoeuvre without adding to it.
+- `portuguese-language-orthographic-agreement-of-1945` — signed in Lisbon on
+  6 October 1945 between the Academia das Ciências and the Academia
+  Brasileira de Letras, and setting the spelling of Portuguese for every
+  Portuguese territory. The interesting part is that Brazil never ratified it
+  and repealed its own approving decree in 1955 — but the agreement that
+  eventually settled that, in 1990, is not in the atlas, and nothing here
+  follows from this one.
+
+Wired instead: `1945-portuguese-legislative-election` and
+`1949-portuguese-presidential-election`. Both now run into
+`delgado-candidacy-1958`, which had three edges out of it and none into it —
+the atlas could say what Delgado's campaign caused but not where it came
+from.

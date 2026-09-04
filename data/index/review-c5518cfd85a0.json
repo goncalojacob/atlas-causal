@@ -263,6 +263,133 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "rosas-1994-estado-novo",
+        "costa-pinto-2003-contemporary-portugal",
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "1945-portuguese-legislative-election",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "1945 Portuguese legislative election"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "rosas-1994-estado-novo",
+        "ramos-2009-historia-de-portugal"
+      ],
+      "from": "1945-portuguese-legislative-election",
+      "id": "1945-portuguese-legislative-election--1949-portuguese-presidential-election--inspired",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "1949-portuguese-presidential-election",
+      "type": "inspired"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "rosas-1994-estado-novo",
+        "costa-pinto-2003-contemporary-portugal"
+      ],
+      "from": "1945-portuguese-legislative-election",
+      "id": "1945-portuguese-legislative-election--delgado-candidacy-1958--precondition-of",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "delgado-candidacy-1958",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "rosas-1994-estado-novo",
+        "ramos-2009-historia-de-portugal",
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "1949-portuguese-presidential-election",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "1949 Portuguese presidential election"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "rosas-1994-estado-novo",
+        "ramos-2009-historia-de-portugal"
+      ],
+      "from": "1949-portuguese-presidential-election",
+      "id": "1949-portuguese-presidential-election--delgado-candidacy-1958--inspired",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "delgado-candidacy-1958",
+      "type": "inspired"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -4818,6 +4945,31 @@
         }
       ],
       "cites": [
+        "rosas-1994-estado-novo",
+        "costa-pinto-2003-contemporary-portugal"
+      ],
+      "id": "mud",
+      "kind": "actor",
+      "names": [
+        "Movement of Democratic Unity",
+        "Movimento de Unidade Democrática",
+        "MUD"
+      ],
+      "review": {
+        "flags": [
+          "actor-drafted"
+        ]
+      },
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "maxwell-1995-making-of-portuguese-democracy",
         "telo-2007-historia-contemporanea"
       ],
@@ -4986,6 +5138,30 @@
       "status": "active",
       "to": "coup-28-may-1926",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "rosas-1994-estado-novo",
+        "ramos-2009-historia-de-portugal"
+      ],
+      "id": "norton-de-matos",
+      "kind": "actor",
+      "names": [
+        "José Norton de Matos",
+        "Norton de Matos"
+      ],
+      "review": {
+        "flags": [
+          "actor-drafted"
+        ]
+      },
+      "status": "active"
     },
     {
       "authors": [
@@ -6554,6 +6730,33 @@
         }
       ],
       "cites": [
+        "rosas-1994-estado-novo",
+        "costa-pinto-2003-contemporary-portugal"
+      ],
+      "id": "uniao-nacional",
+      "kind": "actor",
+      "names": [
+        "National Union",
+        "União Nacional",
+        "UN",
+        "Acção Nacional Popular",
+        "ANP"
+      ],
+      "review": {
+        "flags": [
+          "actor-drafted"
+        ]
+      },
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "macqueen-1997-decolonization"
       ],
       "id": "unita",
@@ -6729,38 +6932,8 @@
     }
   ],
   "schema": 1,
-  "total": 837,
+  "total": 843,
   "warnings": [
-    {
-      "id": "1942-portuguese-legislative-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "1942-portuguese-presidential-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "1945-portuguese-legislative-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "1949-portuguese-legislative-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "1949-portuguese-presidential-election",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
     {
       "id": "1951-portuguese-presidential-election",
       "kind": "event",
@@ -7837,12 +8010,6 @@
     },
     {
       "id": "portuguese-european-constitution-referendum",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "portuguese-language-orthographic-agreement-of-1945",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"

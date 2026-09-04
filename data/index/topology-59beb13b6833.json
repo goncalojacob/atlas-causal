@@ -3092,6 +3092,23 @@
       }
     },
     {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "mud",
+      "name": "Movement of Democratic Unity",
+      "names": [
+        "Movement of Democratic Unity",
+        "Movimento de Unidade Democrática",
+        "MUD"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": 1948,
+        "start": 1945
+      }
+    },
+    {
       "actorType": "polity",
       "aliases": [],
       "id": "myanmar-burma",
@@ -3352,6 +3369,22 @@
       "when": {
         "end": 1911,
         "start": 1900
+      }
+    },
+    {
+      "actorType": "person",
+      "aliases": [],
+      "id": "norton-de-matos",
+      "name": "José Norton de Matos",
+      "names": [
+        "José Norton de Matos",
+        "Norton de Matos"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": 1955,
+        "start": 1867
       }
     },
     {
@@ -4825,6 +4858,25 @@
     {
       "actorType": "institution",
       "aliases": [],
+      "id": "uniao-nacional",
+      "name": "National Union",
+      "names": [
+        "National Union",
+        "União Nacional",
+        "UN",
+        "Acção Nacional Popular",
+        "ANP"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": 1974,
+        "start": 1930
+      }
+    },
+    {
+      "actorType": "institution",
+      "aliases": [],
       "id": "unita",
       "name": "UNITA",
       "names": [
@@ -5224,6 +5276,36 @@
       "supersededBy": null,
       "to": "salazar-finance-minister-1928",
       "type": "enabled"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "1945-portuguese-legislative-election",
+      "id": "1945-portuguese-legislative-election--1949-portuguese-presidential-election--inspired",
+      "status": "active",
+      "supersededBy": null,
+      "to": "1949-portuguese-presidential-election",
+      "type": "inspired"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "1945-portuguese-legislative-election",
+      "id": "1945-portuguese-legislative-election--delgado-candidacy-1958--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "delgado-candidacy-1958",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "1949-portuguese-presidential-election",
+      "id": "1949-portuguese-presidential-election--delgado-candidacy-1958--inspired",
+      "status": "active",
+      "supersededBy": null,
+      "to": "delgado-candidacy-1958",
+      "type": "inspired"
     },
     {
       "aliases": [],
@@ -6925,7 +7007,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "1942 Portuguese legislative election",
       "weight": 0,
@@ -6947,7 +7029,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "1942 Portuguese presidential election",
       "weight": 0,
@@ -6963,7 +7045,20 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "salazar",
+          "role": "dissolved the Assembly and set the terms"
+        },
+        {
+          "actor": "uniao-nacional",
+          "role": "sole party, took all 120 seats"
+        },
+        {
+          "actor": "mud",
+          "role": "opposition front, withdrew before the poll"
+        }
+      ],
       "aliases": [],
       "id": "1945-portuguese-legislative-election",
       "place": null,
@@ -6972,8 +7067,9 @@
       "status": "active",
       "supersededBy": null,
       "title": "1945 Portuguese legislative election",
-      "weight": 0,
+      "weight": 5,
       "when": {
+        "calendar": "gregorian",
         "date": "1945-11-18",
         "end": 1945,
         "start": 1945
@@ -6991,7 +7087,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "1949 Portuguese legislative election",
       "weight": 0,
@@ -7007,7 +7103,20 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "norton-de-matos",
+          "role": "opposition candidate, withdrew"
+        },
+        {
+          "actor": "oscar-carmona",
+          "role": "re-elected unopposed for a fourth term"
+        },
+        {
+          "actor": "pvde-pide-dgs",
+          "role": "broke up the opposition campaign"
+        }
+      ],
       "aliases": [],
       "id": "1949-portuguese-presidential-election",
       "place": null,
@@ -7016,8 +7125,9 @@
       "status": "active",
       "supersededBy": null,
       "title": "1949 Portuguese presidential election",
-      "weight": 0,
+      "weight": 5,
       "when": {
+        "calendar": "gregorian",
         "date": "1949-02-13",
         "end": 1949,
         "start": 1949
@@ -11123,7 +11233,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Humberto Delgado's presidential candidacy",
-      "weight": 6,
+      "weight": 8,
       "when": {
         "calendar": "gregorian",
         "date": "1958-06-08",
@@ -13088,7 +13198,7 @@
       "place": null,
       "region": "americas",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "Portuguese Language Orthographic Agreement of 1945",
       "weight": 0,

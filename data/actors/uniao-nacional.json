@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "uniao-nacional",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "actor-drafted"
+    ]
+  },
+  "where": null,
+  "sources": [
+    {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    }
+  ],
+  "actorType": "institution",
+  "names": [
+    "National Union",
+    "União Nacional",
+    "UN",
+    "Acção Nacional Popular",
+    "ANP"
+  ],
+  "summary": "The National Union was founded in 1930 as the Estado Novo’s single party, and was designed to be less than one: not a movement that had conquered the state but an administrative frame the state ran candidates through, deliberately without the mass character of the parties Salazar was careful not to imitate. It was the only organisation allowed to contest an election between 1934 and 1974, and it won every seat in every one of them. Marcelo Caetano renamed it Acção Nacional Popular in 1970 in the hope of making it a vehicle for a controlled opening, and it disappeared with the regime in 1974. It is in the atlas as the thing that stood where a party system had been.",
+  "when": {
+    "start": 1930,
+    "end": 1974
+  }
+}

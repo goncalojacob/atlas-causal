@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "mud",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "actor-drafted"
+    ]
+  },
+  "where": null,
+  "sources": [
+    {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    }
+  ],
+  "actorType": "institution",
+  "names": [
+    "Movement of Democratic Unity",
+    "Movimento de Unidade Democrática",
+    "MUD"
+  ],
+  "summary": "The Movement of Democratic Unity was formed in October 1945, in the few weeks the regime allowed opposition candidates to organise for that November’s election, and was the first legal anti-regime organisation in Portugal since 1926. It put republicans, socialists and the illegal Communist Party into a single front, which is what made it valuable to the opposition and intolerable to the regime. It withdrew from the election it had been formed to contest, was harassed continuously afterwards and was outlawed in 1948. It is in the atlas because the people who found each other inside it ran the opposition’s campaigns for the next thirty years.",
+  "when": {
+    "start": 1945,
+    "end": 1948
+  }
+}

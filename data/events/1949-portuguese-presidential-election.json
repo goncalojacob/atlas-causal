@@ -9,14 +9,19 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "summary-drafted"
     ]
   },
   "wikidata": "Q3277291",
@@ -27,18 +32,48 @@
   },
   "sources": [
     {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    },
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1949 Portuguese presidential election\", revision 1323415397"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Eleições presidenciais portuguesas de 1949\", revision 71716344"
+    },
+    {
       "source": "wikidata",
       "locator": "Q3277291"
     }
   ],
   "title": "1949 Portuguese presidential election",
-  "summary": "Wikidata item Q3277291, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "Óscar Carmona stood for a fourth term on 13 February 1949 and was elected for the fourth time without an opponent — though not, this time, without a challenger. General José Norton de Matos, once high commissioner of Angola, had been campaigning since the previous year as the candidate of the democratic opposition and drew crowds nobody in the regime had budgeted for. His committees were arrested, his meetings broken up and his access to the press closed, while the electoral rolls and the count stayed where they had always been; he withdrew on the eve of the vote, saying no honest election was possible. It was the manoeuvre of 1945 run a second time, and it would be run once more, against Humberto Delgado, in 1958. It is in the atlas as the middle of the three attempts to turn the regime’s own elections against it.",
   "when": {
     "start": 1949,
     "end": 1949,
-    "date": "1949-02-13"
+    "date": "1949-02-13",
+    "calendar": "gregorian"
   },
   "place": null,
   "region": "europe",
-  "actors": []
+  "actors": [
+    {
+      "actor": "norton-de-matos",
+      "role": "opposition candidate, withdrew"
+    },
+    {
+      "actor": "oscar-carmona",
+      "role": "re-elected unopposed for a fourth term"
+    },
+    {
+      "actor": "pvde-pide-dgs",
+      "role": "broke up the opposition campaign"
+    }
+  ]
 }

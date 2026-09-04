@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "portuguese-language-orthographic-agreement-of-1945",
   "kind": "event",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,11 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "m21-retracted"
+    ],
+    "note": "Retracted in M21: the orthographic convention signed in Lisbon on 6 October 1945 between the Academia das Ciências and the Academia Brasileira de Letras, which set the spelling of Portuguese for all Portuguese territories. Brazil never ratified it and repealed its own approving decree in 1955, which is the interesting part — but the agreement that eventually resolved that, in 1990, is not in the atlas, and nothing here follows from this one."
   },
   "wikidata": "Q9581238",
   "sitelinks": 1,

@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "1942-portuguese-legislative-election",
   "kind": "event",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,11 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "m21-retracted"
+    ],
+    "note": "Retracted in M21: 1 November 1942, the last election on a single national list; the National Union alone, all 100 seats, 86.6% of the vote. A single-list election under a one-party state, with no consequence that can be argued from the bibliography here."
   },
   "wikidata": "Q7232757",
   "sitelinks": 4,
