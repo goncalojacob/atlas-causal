@@ -42,6 +42,7 @@ import { existsSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { createRegionDeriver } from '../../src/util/geo.js';
+import { mergeIdentity } from './identity.mjs';
 import { readRecords, readRegionPolygons } from '../lib/read.mjs';
 
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..');
@@ -541,45 +542,9 @@ export function leadRecord({ qid, lang, title, revid, fetched, text }) {
 
 // --- the additive rule ------------------------------------------------------
 
-// The whole of what an import may do to a record somebody else wrote: fill in
-// an identity field that is not there. Never a change, never a removal, never
-// a field outside this list, and never an `authors` entry.
-export const ENRICHABLE = Object.freeze(['wikidata', 'wikipedia', 'sitelinks']);
-
-const isEmpty = (value) => value === undefined || value === null
-  || (typeof value === 'string' && value.trim() === '')
-  || (Array.isArray(value) && value.length === 0)
-  || (typeof value === 'object' && !Array.isArray(value) && Object.keys(value).length === 0);
-
-// → { record, added, kept }. `record` is a new object when anything was
-// added and the same one when nothing was, so a caller can write only what
-// changed.
-export function mergeIdentity(record, identity) {
-  const added = [];
-  const kept = [];
-  const out = { ...record };
-  for (const field of ENRICHABLE) {
-    if (!Object.hasOwn(identity, field)) continue;
-    if (!isEmpty(record?.[field])) {
-      kept.push(field);
-      continue;
-    }
-    out[field] = identity[field];
-    added.push(field);
-  }
-  if (!added.length) return { record, added, kept };
-  // Written where the schemas list them — after the envelope, before
-  // `sources` — so a record the import touches reads like one the form wrote
-  // and the diff is the fields and not a reshuffle.
-  const result = {};
-  for (const key of Object.keys(record)) {
-    if (ENRICHABLE.includes(key)) continue;
-    if (key === 'sources') for (const field of ENRICHABLE) if (Object.hasOwn(out, field)) result[field] = out[field];
-    result[key] = out[key];
-  }
-  for (const field of ENRICHABLE) if (Object.hasOwn(out, field) && !Object.hasOwn(result, field)) result[field] = out[field];
-  return { record: result, added, kept };
-}
+// The rule itself is in identity.mjs, because cshapes.mjs obeys it too; it is
+// re-exported here so that the tool's whole surface is one import.
+export { ENRICHABLE, mergeIdentity, identityOnDisk } from './identity.mjs';
 
 // --- matching (used in earnest by M17) --------------------------------------
 

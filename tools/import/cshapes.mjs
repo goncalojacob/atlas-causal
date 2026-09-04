@@ -28,6 +28,7 @@ import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { decodeCollection } from './topojson.mjs';
 import { simplifyArc, pruneGeometry } from './simplify.mjs';
+import { identityOnDisk, mergeIdentity } from './identity.mjs';
 
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..');
 export const DEFAULT_DATA = path.join(ROOT, 'data');
@@ -578,8 +579,13 @@ export async function runImport(sourceFile, dataDir = DEFAULT_DATA, { today = ne
         failed.push(`data/${dirName}/${file} was not written by the import; give ${rec.id} an entry in data/${MAP_FILE} or rename it rather than overwriting somebody's record`);
         continue;
       }
+      const previous = surveyed.owned.get(file);
       const created = createdOf(surveyed, rec.id, today);
-      writes.push({ file: path.join(dir, file), text: asText({ ...rec, created }) });
+      // A Wikidata id somebody added between two runs of this import is not
+      // this import's to throw away, any more than `created` is: an actor it
+      // owns keeps the identity fields it already carries.
+      const { record } = mergeIdentity({ ...rec, created }, identityOnDisk(previous));
+      writes.push({ file: path.join(dir, file), text: asText(record) });
     }
   };
   claim(actorsDir, 'actors', actorSurvey, plan.actors);

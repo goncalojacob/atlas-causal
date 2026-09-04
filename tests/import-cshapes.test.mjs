@@ -406,3 +406,38 @@ test('a file the import owns but no longer produces is removed', async () => {
   assert.deepEqual(again.removed.map((f) => f.split(path.sep).join('/')).sort(),
     ['geo/presences/1700-1800.json', 'presences/gone-1900.json']);
 });
+
+test('an identifier added between runs survives the next one', async () => {
+  const { dir, file } = await scratch();
+  await runImport(file, dir, { today: '2026-09-02' });
+
+  // Somebody signs an actor the import owns with the item it is about. The
+  // import rewrites that record on every run; the identifier is not its to
+  // throw away, any more than `created` is (docs/review-2026-09-04-plan.md,
+  // finding 11).
+  const actorFile = path.join(dir, 'actors', 'eastland.json');
+  const before = JSON.parse(await readFile(actorFile, 'utf8'));
+  await writeFile(actorFile, JSON.stringify({
+    ...before,
+    wikidata: 'Q9000006',
+    wikipedia: { en: 'Eastland' },
+    sitelinks: 4,
+  }, null, 2), 'utf8');
+
+  const again = await runImport(file, dir, { today: '2026-09-03' });
+  assert.deepEqual(again.failed, []);
+  const after = JSON.parse(await readFile(actorFile, 'utf8'));
+  assert.equal(after.wikidata, 'Q9000006');
+  assert.deepEqual(after.wikipedia, { en: 'Eastland' });
+  assert.equal(after.sitelinks, 4);
+  assert.equal(after.created, '2026-09-02', 'and the first-written date still survives too');
+  // They are written where the schema lists them, not appended at the end.
+  const keys = Object.keys(after);
+  assert.ok(keys.indexOf('wikidata') < keys.indexOf('sources'));
+  assert.ok(keys.indexOf('revised') < keys.indexOf('wikidata'));
+
+  // An actor the import creates fresh carries none of them: an import that
+  // has not been told an identifier does not invent one.
+  const fresh = JSON.parse(await readFile(path.join(dir, 'actors', 'westland-republic.json'), 'utf8'));
+  assert.equal(Object.hasOwn(fresh, 'wikidata'), false);
+});
