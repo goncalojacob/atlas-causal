@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "euro-2016-final",
   "kind": "event",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,12 +13,12 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-03",
-  "revised": null,
+  "revised": "2026-09-04",
   "review": {
     "flags": [
       "date"
     ],
-    "note": "Filed in a run that could not reach a source: no date on this record has been checked against one."
+    "note": "Filed in a run that could not reach a source: no date on this record has been checked against one. Retracted by the owner on 2026-09-04: no consequence in the atlas."
   },
   "sources": [
     {

@@ -2406,9 +2406,9 @@
         "flags": [
           "date"
         ],
-        "note": "Filed in a run that could not reach a source: no date on this record has been checked against one."
+        "note": "Filed in a run that could not reach a source: no date on this record has been checked against one. Retracted by the owner on 2026-09-04: no consequence in the atlas."
       },
-      "status": "active",
+      "status": "retracted",
       "title": "Portugal wins the European Championship"
     },
     {
@@ -5953,16 +5953,22 @@
   "total": 570,
   "warnings": [
     {
-      "id": "euro-2016-final",
+      "id": "iberian-blackout-2025",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"
     },
     {
-      "id": "iberian-blackout-2025",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
+      "id": "saint-denis",
+      "kind": "place",
+      "message": "place is referenced by no event",
+      "rule": "place-unused"
+    },
+    {
+      "id": "uefa-2016-final",
+      "kind": "source",
+      "message": "source is cited by nothing under validation",
+      "rule": "no-citers"
     },
     {
       "id": "wikidata",
