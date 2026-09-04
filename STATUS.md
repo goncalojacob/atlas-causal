@@ -6,8 +6,85 @@ session ends. `ARCHITECTURE.md` is the target; this file is the position.
 
 ## Last updated
 
-2026-09-04, after M20 (`docs/m20-brief.md`): **the ambiguous matches are
-decided and the ticked candidates are in.** Three things happened.
+2026-09-04, after M21 (`docs/m21-brief.md`): **the imported events before
+1975 have been read one at a time, and most of them are gone.**
+
+Of the **76 imported events starting before 1975**, 13 are wired, 59 are
+retracted and 4 are merged into records the atlas already held — a
+**retraction rate of 83%**, against the 20% the brief names as the floor
+below which edges are being invented. That is high, and it is high for a
+reason that is visible in the data rather than in the judgement: **49 of the
+76 are elections.** Most are either *rotativismo* ballots the crown arranged
+between two parties or single-list ballots the Estado Novo held against
+nobody, and an election that changed nothing is the first case the brief
+names. Every retraction carries its reason on the record in `review.note` as
+well as in `docs/m21-retractions.md`, so the review dashboard shows it
+without the file.
+
+Per decade — wired, retracted, merged, edges written, actors created:
+
+| decade | wired | retracted | merged | edges | actors |
+|--------|-------|-----------|--------|-------|--------|
+| 1890s  | 0     | 7         | 0      | 0     | 0      |
+| 1900s  | 2     | 6         | 0      | 3     | 5      |
+| 1910s  | 3     | 8         | 0      | 6     | 2      |
+| 1920s  | 1     | 7         | 0      | 2     | 1      |
+| 1930s  | 1     | 3         | 1      | 2     | 0      |
+| 1940s  | 2     | 4         | 0      | 3     | 3      |
+| 1950s  | 1     | 7         | 1      | 2     | 1      |
+| 1960s  | 2     | 9         | 1      | 4     | 1      |
+| 1970s  | 1     | 8         | 1      | 2     | 0      |
+| **all**| **13**| **59**    | **4**  | **24**| **13** |
+
+The 24 edges are **17 `probable` and 7 `consensus`**, and no `disputed`: the
+run found no link where qualified historians disagree about the link itself,
+which is what that value is for, and marking something disputed to look
+careful would be the same fault as marking something consensus to look
+certain. All five edge types are used — 8 `caused`, 7 `precondition-of`, 6
+`enabled`, 2 `inspired`, 1 `reacted-to`. Every one carries
+`review.flags: ["edge-drafted"]`; the 13 new actors carry `actor-drafted`
+and the 13 rewritten summaries `summary-drafted`, which is how the counts in
+this table were computed rather than remembered.
+
+**What was wired** is one continuous argument, which is the point: the
+regicide of 1908 and the election it forced; the Constituent Assembly of
+1911, the constitution, the presidency, and the use Arriaga made of it in
+1915; the Democratic majority that took the country into the war; Carmona's
+election of 1928, which was the missing link between the coup of 1926 and
+Salazar's arrival at the finance ministry a month later; the Iberian Pact;
+the opposition's electoral road of 1945 and 1949, both of which now run into
+`delgado-candidacy-1958` — a record that had three edges out of it and none
+in, so the atlas could say what Delgado's campaign caused but not where it
+came from; the presidency made safe in 1965; the last opening in 1969 and
+the last election in 1973.
+
+**Three findings the run did not go looking for**, all in
+`docs/m21-retractions.md` at length:
+
+1. **The atlas's African spine begins with the three wars.** Batepá (1953)
+   and Mueda (1960) are both major events, both have exactly one arguable
+   edge, and both were retracted for it, because the atlas holds no São
+   Toméan record before 1975 and no Mozambican one before 1964. A handful of
+   pre-war African records would reverse several of these retractions. This
+   is the clearest gap in the dataset.
+2. **Six retracted records are not Portuguese at all.** The import's class
+   queries caught *French* Guinea — Conakry, not Bissau — six times. Only the
+   constitutional referendum of September 1958 was kept, and only because
+   independent Conakry became the PAIGC's base, its arms route and the place
+   Cabral was killed.
+3. **Three records cannot be identified**: `q11077889`, `q2115000` and
+   `q1454657` have no label, no description and no lead in either language.
+   One of them points hard at a real event, 28 May 1922 at Macau, and was
+   still retracted rather than guessed at.
+
+Four disagreements between the two Wikipedias were found and **recorded
+rather than resolved**: the 1919 presidential election's date (6 December in
+English, 6 August in Portuguese), the 1957 legislative election's (3 versus
+4 November), and the 1969 earthquake's magnitude (7.8 versus 8).
+
+Before that, 2026-09-04, after M20 (`docs/m20-brief.md`): **the ambiguous
+matches are decided and the ticked candidates are in.** Three things
+happened.
 
 **The 113 records the reconcile pass would not match are resolved**, by
 judgment, on the owner's instruction of 4 September — *"solve the ambiguous
@@ -1891,6 +1968,75 @@ object. Every later card gets a file.
     `q2115000` — because those items carry no label in English or Portuguese.
     Their summaries say so. They are records waiting for a title, not
     records with a wrong one.
+148. **A retracted event keeps the import's summary; it does not get a
+    drafted one.** The M21 brief lists "summaries and actors done" alongside
+    "wired or retracted", and the reading taken here is that a summary is for
+    a record that stays. Writing three to six sentences of drafted history
+    onto 59 tombstones would add exactly the kind of unreviewed claim
+    `CLAUDE.md`'s exception is meant to keep scarce, and the import summary
+    already says, correctly, that nothing in the record is this atlas's
+    account of anything. The reason it was retracted goes in `review.note`
+    instead.
+149. **Four duplicates were `merged`, not `retracted`.** The brief knows two
+    outcomes; rule 11 knows three, and for a record the atlas already holds
+    under another id `merged` with `supersededBy` is the true one — it names
+    the survivor instead of leaving a tombstone that points nowhere. The four
+    are `portuguese-constitutional-referendum-1933` →`constitution-1933`,
+    `1958-portuguese-presidential-election` → `delgado-candidacy-1958`,
+    `assault-on-the-santa-maria-steamship` → `santa-maria-hijacking-1961`,
+    and `wiriyamu-massacre` → `wiriyamu-massacre-1972`. They are listed in
+    `docs/m21-retractions.md` with the retractions, and counted apart.
+150. **Each merged record keeps the Wikidata id and Wikipedia links the
+    import brought, and none of them was copied onto the survivor.**
+    `constitution-1933` still carries no identity of its own. Whether an item
+    about the *referendum* of 19 March 1933 is the right identity for a
+    record about the *constitution* is a judgement, and M20's rule — no id
+    written that the pass did not print — is about not making that kind of
+    judgement quietly. It is a question for `review.html`.
+151. **Wired events were given an exact `date` where the leads gave one.**
+    The import only ever had the year, and three of the M21 edges run between
+    two events inside a single year (the regicide and the election of April
+    1908; the constitution and the presidential election of August 1911),
+    which rule 4 can only order if both ends carry a date. No date was added
+    that a cached lead did not state.
+152. **New actors carry `where: null` explicitly.** Not a judgement about
+    geography — `tests/bundle.test.mjs` requires every record to be byte
+    identical to its own round-trip through the contribution form, and the
+    form writes the key. Found by the test, which is what it is for.
+153. **No M21 record references the CC BY-NC-SA actors the CShapes import
+    created.** `spain`, `guinea` and the rest exist and would have been the
+    natural counterparties for the Iberian Pact and the Guinean referendum,
+    but no hand-written event has ever referenced one, and starting that
+    practice touches the licence boundary `CLAUDE.md` draws hardest. So the
+    Iberian Pact names Salazar and the Estado Novo and puts Spain in prose,
+    and the Guinean referendum names Sékou Touré alone. **This is a question
+    for the owner**: referencing an id copies no NC-SA text, and if it is
+    allowed, several M21 events would be better for it.
+154. **`partido-democratico` was kept off the 1908 election and a separate
+    `partido-republicano-portugues` created.** The validator caught the
+    anachronism — the atlas dates the Democratic Party from the split of
+    1912 — and rather than widen that record's dates backwards, M21 wrote the
+    party that actually won 229 of 234 seats in 1911 and dissolved into three
+    in 1912. Both records name "Partido Republicano Português", because the
+    Democrats kept the legal name; the summaries say why there are two.
+155. **`treaty-of-windsor` was retracted and
+    `guinean-constitutional-referendum-1958` kept, on a distinction worth
+    stating.** Both had one fact behind two possible edges. Windsor's two
+    would both have asserted that the Anglo-Portuguese alliance was live,
+    against two different targets, with no book in the bibliography written
+    about the alliance. The referendum's two assert different mechanisms — a
+    rear base that lets a war be launched, an exile that leaves a leadership
+    open to being killed — and MacQueen 1997 is about precisely that
+    question. A reviewer who thinks the line was drawn in the wrong place has
+    the reasoning in `docs/m21-retractions.md` to argue with.
+156. **No edge was marked `disputed`.** The value is for a link qualified
+    historians disagree about, and the run found none it could name a
+    disagreement over without inventing the disagreement. Where sources
+    conflict about a *fact* rather than a link — three dates and one
+    magnitude — the conflict is recorded on the record and the record is
+    retracted or annotated, not marked disputed. Disputes about death tolls
+    (Batepá: about 1,032 São Toméan sources, about 200 Portuguese) are in the
+    prose for the same reason.
 
 ## Dates to verify
 
@@ -2336,3 +2482,5 @@ M20 started 2026-09-04T19:45:49Z by scheduled
 M20 done
 
 M21 started 2026-09-04T21:01:06Z by scheduled
+
+M21 done
