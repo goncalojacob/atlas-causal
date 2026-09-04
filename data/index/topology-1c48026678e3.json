@@ -1398,7 +1398,11 @@
         "end": null,
         "start": 1998
       },
-      "wikidata": "Q8901"
+      "wikidata": "Q8901",
+      "wikipedia": {
+        "en": "European Central Bank",
+        "pt": "Banco Central Europeu"
+      }
     },
     {
       "actorType": "institution",
@@ -1415,7 +1419,11 @@
         "end": null,
         "start": 1958
       },
-      "wikidata": "Q8880"
+      "wikidata": "Q8880",
+      "wikipedia": {
+        "en": "European Commission",
+        "pt": "Comissão Europeia"
+      }
     },
     {
       "actorType": "polity",
@@ -1435,7 +1443,11 @@
         "end": 1993,
         "start": 1957
       },
-      "wikidata": "Q52847"
+      "wikidata": "Q52847",
+      "wikipedia": {
+        "en": "European Economic Community",
+        "pt": "Comunidade Económica Europeia"
+      }
     },
     {
       "actorType": "polity",
@@ -1549,7 +1561,11 @@
         "end": null,
         "start": 1962
       },
-      "wikidata": "Q907051"
+      "wikidata": "Q907051",
+      "wikipedia": {
+        "en": "National Liberation Front of Angola",
+        "pt": "Frente Nacional de Libertação de Angola"
+      }
     },
     {
       "actorType": "polity",
@@ -2066,7 +2082,11 @@
         "end": null,
         "start": 1945
       },
-      "wikidata": "Q7804"
+      "wikidata": "Q7804",
+      "wikipedia": {
+        "en": "International Monetary Fund",
+        "pt": "Fundo Monetário Internacional"
+      }
     },
     {
       "actorType": "polity",
@@ -2515,7 +2535,11 @@
         "end": 1974,
         "start": 1936
       },
-      "wikidata": "Q2405862"
+      "wikidata": "Q2405862",
+      "wikipedia": {
+        "en": "Legião Portuguesa (Estado Novo)",
+        "pt": "Legião Portuguesa (Estado Novo)"
+      }
     },
     {
       "actorType": "polity",
