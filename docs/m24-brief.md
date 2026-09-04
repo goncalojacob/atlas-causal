@@ -1,4 +1,4 @@
-# Build brief — M24: the timeline follows the map, and five interface fixes
+# Build brief — M24: the timeline follows the map, and six interface fixes
 
 Written 4 September 2026, evening. Runs after M23. Read: `CLAUDE.md`,
 `STATUS.md`, `ARCHITECTURE.md`, `docs/run-protocol.md`, `docs/m2-brief.md`,
@@ -18,7 +18,7 @@ graph view ignores it (it has no viewport of its own) and says so. Pure
 function `inView(event, bbox, places)` tested; the map's transform → bbox
 conversion tested through the projection.
 
-## Part 2 — five fixes the owner asked for
+## Part 2 — six fixes the owner asked for
 
 1. **Layer toggles only in map view.** The coastlines, territories and
    events checkboxes are hidden while the graph is shown, and come back
@@ -40,6 +40,12 @@ conversion tested through the projection.
    line asking what is wrong), and **"Export this view"** on the map and
    the graph: the current SVG serialised with the tokens inlined as
    computed colours, offered as a `.svg` download.
+6. **Resizable panes.** The edges between the map or graph, the timeline
+   and the panel can be dragged to resize them (pointer events, a visible
+   grab handle, keyboard arrows on the handle); the map and the graph
+   redraw on resize; the sizes are remembered in `localStorage`, never in
+   the URL; a double-click on a handle restores the default; the phone
+   layout, when it exists, ignores them.
 
 ## Docs and done when
 
@@ -50,5 +56,6 @@ the count); the toggles vanish in graph view; the wheel over the timeline
 changes `from`/`to` in the URL; `?group=actor` shows six lanes plus
 Other; a click on the sea with an event selected clears the URL's
 `selected`; the discuss link and the export exist on the cards and the
-views; validator and tests green; `STATUS.md` with the literal line
+views; dragging the timeline's edge changes its height and the height
+survives a reload; validator and tests green; `STATUS.md` with the literal line
 `M24 done`; an "M24" section on PR #1.
