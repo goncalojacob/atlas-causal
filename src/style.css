@@ -70,31 +70,47 @@
      "not the same as the one next to it", never "this kind of state": there
      is no legend by colour and about.html says why.
 
-     Chosen in OKLCH rather than by eye, so the family holds together: every
-     fill is L 0.80 C 0.085, every dependency tint L 0.87 C 0.062, every
-     outline L 0.52 C 0.11, and only the hue angle moves — 40°, 80°, 122°,
-     160°, 202°, 241°, 296°, 347°. The angles are not evenly spaced: they were
-     spread to maximise the smallest difference between any two, once each
-     fill is composited at the opacity it is actually drawn with over the land
-     token, and they stay 22° clear of cobalt (264°) and madder (19°), which
-     are the two colours the map must never confuse a territory with.
+     Chosen in OKLCH rather than by eye, so the family holds together and the
+     difference between any two is a measured quantity rather than an
+     opinion. Eight hue angles — 40°, 80°, 122°, 160°, 202°, 241°, 296°,
+     347° — spread to maximise the smallest difference between any two once
+     each fill is composited at the opacity it is actually drawn with over
+     the land token, and kept 22° clear of cobalt (264°) and madder (19°),
+     which are the two colours the map must never confuse a territory with.
+     Chroma is one number for all eight (0.088 for a fill, 0.055 for a
+     dependency tint, 0.105 for an outline), and lightness ALTERNATES around
+     the circle — 0.825 and 0.745 — because two neighbouring hues at one
+     lightness are two pale washes a small country cannot carry the
+     difference between. Alternating it doubles the smallest separation
+     without leaving the family: Portugal and Spain share the longest border
+     on this map, and at one lightness they were 0.036 apart and read as one
+     colour at the size Portugal is drawn.
 
-     What that buys, in OKLab distance between the drawn washes: 0.036 between
-     the two closest fills and 0.026 between the two closest tints, both above
-     the ~0.02 at which a large field stops being tellable from its neighbour;
-     0.47 from cobalt and 0.37 from madder, so the selected actor and the
-     walked chain still own the loudest marks on the screen; 0.10 from the
-     land token, so a territory is visible on empty ground. The outlines are
-     dark enough to carry a border on their own: 5.07:1 against paper at
-     worst, above AA for text and well above the 3:1 non-text minimum. */
-  --terr-1: #eeac94;  --terr-1-tint: #f9c7b6;  --terr-1-line: #9d5035;
-  --terr-2: #dbb87e;  --terr-2-tint: #ead0a7;  --terr-2-line: #8a6000;
-  --terr-3: #b4c789;  --terr-3-tint: #cddbae;  --terr-3-line: #5e721f;
-  --terr-4: #8dcfab;  --terr-4-tint: #b2e1c6;  --terr-4-line: #177c52;
-  --terr-5: #77ced5;  --terr-5-tint: #a4e1e6;  --terr-5-line: #007b84;
-  --terr-6: #8cc5f0;  --terr-6-tint: #b1dafa;  --terr-6-line: #1b70a2;
-  --terr-7: #c2b3ef;  --terr-7-tint: #d7cdf9;  --terr-7-line: #6f5aa1;
-  --terr-8: #e7a8c8;  --terr-8-tint: #f4c4dc;  --terr-8-line: #954c75;
+     What that buys, in OKLab distance between the washes as drawn: 0.060
+     between the two closest fills and 0.049 between the two closest tints,
+     against the ~0.02 at which a large flat field stops being tellable from
+     its neighbour; 0.43 from cobalt and 0.34 from madder, so the selected
+     actor and the walked chain still own the loudest marks on the screen;
+     0.087 from the land token, so a territory is visible on empty ground.
+     A mark keeps 5.4:1 over the worst wash, its label 8.9:1 and the walked
+     chain 3.7:1; the outlines are dark enough to be borders on their own, at
+     4.6:1 against paper at worst. tests/palette.test.mjs and
+     tests/contrast.test.mjs check all of it and fail when a token slips.
+
+     The tokens are not listed in order round the circle. The colouring hands
+     out the least-used hue among those free, so it works through them
+     roughly in order and two territories next to each other in this list are
+     often next to each other on the map; the order below is the one whose
+     smallest step from each token to the next is largest — 0.107, nearly
+     twice the worst pair anywhere in the palette. */
+  --terr-1: #f8b39b;  --terr-1-tint: #fed1c1;  --terr-1-line: #a3593f;
+  --terr-2: #7cd7de;  --terr-2-tint: #b2e8ec;  --terr-2-line: #00818a;
+  --terr-3: #caa66b;  --terr-3-tint: #d5bf9b;  --terr-3-line: #785100;
+  --terr-4: #cabbf9;  --terr-4-tint: #dfd6fe;  --terr-4-line: #7662a6;
+  --terr-5: #79be99;  --terr-5-tint: #a4ceb6;  --terr-5-line: #016b44;
+  --terr-6: #d696b7;  --terr-6-tint: #deb5c9;  --terr-6-line: #823e65;
+  --terr-7: #bccf8f;  --terr-7-tint: #d6e3bb;  --terr-7-line: #66792d;
+  --terr-8: #78b4df;  --terr-8-tint: #a3c8e3;  --terr-8-line: #095f8e;
 
   --font: "EB Garamond", Georgia, "Times New Roman", serif;
   --font-ui: "Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -417,6 +433,9 @@ button.bar-link { background: none; border: 0; padding: 0; font: inherit; font-s
 .map .presence.dependency.of-actor { stroke-dasharray: 1 2; }
 .map .presence.of-actor.disputed { stroke-dasharray: 4 3; }
 
+/* A mark is white with a cobalt ring wherever it lands, which is what keeps
+   it above eight coloured washes without competing with the two colours that
+   carry emphasis. */
 .map .mark { fill: var(--paper); stroke: var(--cobalt); stroke-width: 1.5; vector-effect: non-scaling-stroke; cursor: pointer; }
 .map .mark:hover { fill: var(--cobalt-faint); }
 /* The events of the selected actor. Cobalt and heavier, never madder:
@@ -432,9 +451,12 @@ button.bar-link { background: none; border: 0; padding: 0; font: inherit; font-s
    close still lands on it. */
 .map .hit { fill: transparent; stroke: none; cursor: pointer; }
 /* A stack of marks drawn as one. Heavier ring and a count beside it: the
-   reader has to be able to tell a cluster from a single event. */
-.map .mark.cluster { fill: var(--cobalt-faint); stroke: var(--cobalt); stroke-width: 2.5; }
-.map .mark.cluster:hover { fill: var(--cobalt-soft); }
+   reader has to be able to tell a cluster from a single event. Filled with
+   paper and not with a tint of cobalt, since the hues arrived: a pale blue
+   disc over a pale blue territory is a disc that disappears, and white is the
+   one fill none of the eight washes can be confused with. */
+.map .mark.cluster { fill: var(--paper); stroke: var(--cobalt); stroke-width: 2.5; }
+.map .mark.cluster:hover { fill: var(--cobalt-faint); }
 .map .cluster-count { fill: var(--cobalt); font-family: var(--font-ui); font-weight: 600; pointer-events: none; }
 .map .mark-label { fill: var(--ink); font-family: var(--font-ui); paint-order: stroke; stroke: var(--paper); stroke-width: 3; pointer-events: none; }
 /* A coincident cluster opened: members on rings, each on a leg back to the

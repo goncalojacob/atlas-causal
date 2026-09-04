@@ -407,6 +407,10 @@ export function createTimeline(container, { atlas, state, createScale = createLi
   function bandHandles({ from, to }, s) {
     const out = [];
     const ends = [['from', from], ['to', to]];
+    // A window one year wide has both handles on the same pixel, and two
+    // labels either side of it read as "1911 1911" — a range, which is what
+    // the reader has just narrowed away from. One label, centred, instead.
+    const single = from === to;
     for (const [kind, year] of ends) {
       const x = scale.x(year);
       const handle = svg('rect', {
@@ -419,9 +423,10 @@ export function createTimeline(container, { atlas, state, createScale = createLi
         'aria-valuetext': formatYear(fromAstronomical(year)),
       }, [svgTitle(`${kind === 'from' ? 'Start' : 'End'} of the window — ${formatYear(fromAstronomical(year))}`)]);
       out.push(handle);
+      if (single && kind === 'from') continue;
       const label = svg('text', {
-        x: kind === 'from' ? x - 6 : x + 6, y: MARKER_HEIGHT - 6,
-        class: 'window-year', 'text-anchor': kind === 'from' ? 'end' : 'start',
+        x: single ? x : kind === 'from' ? x - 6 : x + 6, y: MARKER_HEIGHT - 6,
+        class: 'window-year', 'text-anchor': single ? 'middle' : kind === 'from' ? 'end' : 'start',
       });
       label.textContent = formatYear(fromAstronomical(year));
       out.push(label);

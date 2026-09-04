@@ -27,7 +27,7 @@ const hues = [...Array(HUES).keys()].map((i) => i + 1);
 // The opacities the map draws these at; style.css is where they live and this
 // is the one place that has to know them as numbers.
 const FILL = 0.62;
-const DEPENDENCY = 0.7;
+const DEPENDENCY = 0.70;
 
 const pairs = (list) => list.flatMap((a, i) => list.slice(i + 1).map((b) => [a, b, i]));
 
@@ -43,13 +43,16 @@ test('no two territory hues collapse into each other where they are drawn', () =
   const fills = hues.map((i) => over(token(`--terr-${i}`), FILL, land));
   const tints = hues.map((i) => over(token(`--terr-${i}-tint`), DEPENDENCY, land));
   // 0.02 in OKLab is roughly where two large flat fields stop being tellable
-  // apart. The fills clear it twice over; the tints are lighter by design and
-  // carry their owner's outline as well, so they are held to the threshold.
-  for (const [a, b, i] of pairs(fills)) assert.ok(distance(a, b) > 0.03, `fills ${i} and ${fills.indexOf(b)}: ${distance(a, b)}`);
-  for (const [a, b] of pairs(tints)) assert.ok(distance(a, b) > 0.02, `tints: ${distance(a, b)}`);
+  // apart, and a country is not a large flat field: Portugal is nine pixels
+  // wide on a world map beside a Spain twelve times its size. The thresholds
+  // here are what the alternating lightness bought — comfortably over twice
+  // the just-noticeable difference — and they are asserted so that a later
+  // hand cannot quietly give it back.
+  for (const [a, b, i] of pairs(fills)) assert.ok(distance(a, b) > 0.05, `fills ${i} and ${fills.indexOf(b)}: ${distance(a, b)}`);
+  for (const [a, b] of pairs(tints)) assert.ok(distance(a, b) > 0.04, `tints: ${distance(a, b)}`);
   // And each is visible against empty land at all.
-  for (const fill of fills) assert.ok(distance(fill, land) > 0.05);
-  for (const tint of tints) assert.ok(distance(tint, land) > 0.02);
+  for (const fill of fills) assert.ok(distance(fill, land) > 0.06);
+  for (const tint of tints) assert.ok(distance(tint, land) > 0.03);
 });
 
 test('no territory hue can be taken for the selection or for the walked path', () => {
