@@ -6,8 +6,43 @@ session ends. `ARCHITECTURE.md` is the target; this file is the position.
 
 ## Last updated
 
-2026-09-04, after M19 (`docs/m19-brief.md`): **the atlas has a look.** Two
-things changed and they are not the same thing.
+2026-09-04, after M20 (`docs/m20-brief.md`): **the ambiguous matches are
+decided and the ticked candidates are in.** Three things happened.
+
+**The 113 records the reconcile pass would not match are resolved**, by
+judgment, on the owner's instruction of 4 September — *"solve the ambiguous
+issues yourself, for now this is a demo, I'll review later."* 23 of them now
+carry a `wikidata` id chosen from the candidates the pass printed; 9 had
+candidates and none of them was the record; 81 had no candidate to judge,
+because the search was given a title the atlas composed ("Beginning of the war
+in Angola") rather than a label any item carries. Every match carries
+`review.flags: ["wikidata-assigned-by-assistant"]`, which is how `review.html`
+finds them, and every decision has a line of reasoning in
+`docs/m20-ambiguous-resolved.md`. **No id was written that the pass did not
+print** — the Carnation Revolution's item certainly exists and its record is
+still empty, because filling it in from memory is the one thing this project
+does not do. The import then fetched titles for all 23 and **every one came
+back the intended subject**, which is the only independent check there was.
+
+**All 250 candidate rows are ticked**, over the M18 brief's cap of about 120,
+at the owner's instruction — *"go for all the M18 candidates"* — knowingly,
+for the demo. **246 events were created** and 3 refused. The atlas holds
+**326 events** where it held 80.
+
+**The import needed three runs, and the second one was the interesting one.**
+The first created 17 events out of 249: Wikidata types these items with narrow
+classes — "Portuguese legislative election", "bank robbery", "earthquake" —
+and the seeds file's class table named the wide ones. The table's own rule is
+that an unnamed class is refused and listed, never guessed at, so the fix was
+to name them; but the list is printed to an Action log, which the run that
+pushed the branch cannot read. So `--report <file>` now appends what a run did
+to a file the Action commits, run `b` walked the 232 refusals and wrote down
+the 59 classes, and run `c` created the records. **No edges were written**:
+that is M21 and M22, and until then the 246 new events are `degree-zero`
+warnings — 247 of them, counting the one that was already there.
+
+Before that, 2026-09-04, after M19 (`docs/m19-brief.md`): **the atlas has a
+look.** Two things changed and they are not the same thing.
 
 **Colour on the map.** A territory is no longer a cobalt wash like every other
 territory: there are **eight muted hues**, tokens in `src/style.css` like every
@@ -193,7 +228,7 @@ correction bundle for the issue path, and the public site gains no backend.
 
 ## Phase
 
-**M0 to M19 built, plus the map usability work, on branch `m0`, pull
+**M0 to M20 built, plus the map usability work, on branch `m0`, pull
 request #1 open against `main`.** M13 was the last milestone in the original
 run protocol's order; M14 ran after it from `docs/m14-brief.md` on the
 `brief-m14` side branch, and M15 from `docs/m15-brief.md`, which arrived on
@@ -206,9 +241,11 @@ Action's commits back into `m0`; the reconcile cursor in
 second reconcile pass would do nothing until the cursor is cleared or new
 records are written. **M18** wrote the 126 queries into the seeds
 file, ran them on `import/candidates-2026-09-04c` and merged the result:
-`docs/m18-candidates.md`, 250 candidates for the owner to tick. **Nothing is
-ticked yet**, and importing what is ticked is still waiting on the owner —
-M19 turned out to be something else entirely: `docs/m19-brief.md`, which
+`docs/m18-candidates.md`, 250 candidates for the owner to tick. **M20 ticked
+all 250**, on the owner's instruction, and imported them over three branches —
+`import/run-2026-09-04`, `…-04b` and `…-04c` — so the import cursor has now
+walked all 323 items the seeds file names and a fourth run would do nothing
+until it is rewound. M19 turned out to be something else entirely: `docs/m19-brief.md`, which
 arrived on the branch `brief-m19`, is **the look**, and it is built. M8 changed no structure
 and wrote no revision, as its brief allows.
 `ARCHITECTURE.md` **revision 17** is the specification; its opening note says what changed and why (revision 4
@@ -1781,6 +1818,80 @@ object. Every later card gets a file.
     "no two of these are confusable" and "this is what it looks like" — are
     reproducible rather than asserted.
 
+135. **The 81 records with no candidate were left unmatched, not searched
+    for again.** The brief says to decide "which candidate is the record's
+    item, or none"; for these the pass printed none, because it searched the
+    title the atlas wrote rather than a label. Deciding them needs another
+    reconcile pass on Portuguese labels and aliases, not a judgment call, and
+    writing an id from memory is the failure mode the whole design is built
+    against. They are listed in `docs/m20-ambiguous-resolved.md` with what
+    was searched for.
+136. **`central-portugal` was left unmatched although a candidate fitted.**
+    Q27569, the Centro NUTS II region, is a real administrative area; that
+    record is a point somebody invented to stand for the belt of the Centre
+    *and* the North that burned in 2017, and its own `place` flag says so.
+    Matching it would assert a boundary the record refuses.
+137. **`pvde-pide-dgs` carries Q958917, the PIDE item, for an actor that is
+    three institutions here.** The record deliberately holds PVDE, PIDE and
+    DGS as one actor under three successive names, and Wikidata's item is the
+    middle name's, dated 1945–1969. It is the closest true thing; the
+    decisions file says so, and the owner may want it split or left empty.
+138. **One test was relaxed.** `tests/seed-review-flags.test.mjs` asserted
+    that a seeded record's flags are *exactly* what the table put there. A
+    record may pick up a flag from somewhere else — this milestone added
+    `wikidata-assigned-by-assistant` to seven records that already carried a
+    seeded one — so it now asserts that the table's flags are still present.
+139. **`--import` no longer classifies an item a record already carries.**
+    The mode looked the item up in the class table before looking for a
+    record holding it, so an identifier written by hand could never be
+    enriched: the reason a record was not matched mechanically is usually
+    that its class is in nobody's table. 17 of the 23 ids decided here were
+    in exactly that position. Classification types a record that does not
+    exist yet; where one exists it has already said what kind of thing it is.
+140. **The import took three Action runs, not one.** The first
+    (`import/run-2026-09-04`) created 17 events of 249 and enriched the 23,
+    refusing 232 for unnamed classes. The second (`…-04b`) created nothing:
+    it existed to write the refusals down. The third (`…-04c`) created the
+    remaining 229. The brief allows one resume on a `b` branch after a
+    failure; nothing failed, and this is a third run beyond what it
+    anticipated.
+141. **`--report <file>` and one line of the Action.** A run in the sandbox
+    cannot read an Action's log — the log download host is refused by the
+    session proxy — so what an import refused was unreadable from here. The
+    tool now appends its report to a file and the workflow passes
+    `docs/import-report.md`, truncated at the start of each job and committed
+    with each batch. It is a file nobody asked for, and without it the 232
+    refusals could not even have been *named* in this document.
+142. **A batch with no items appends nothing to the report.** Found the hard
+    way: the Action stops its loop when a batch changes no file, and a report
+    that grew on every empty pass kept run `b` walking to the end of its
+    `seq 1 40`. Fixed before run `c`.
+143. **The import cursor was rewound twice, by hand.** `advance()` marks a
+    refused item done, so re-reading the 232 meant editing
+    `data/imports/wikidata-state.json` to drop from `done` every item that
+    produced no record — the 91 that did were left alone so no call was spent
+    on them twice.
+144. **59 classes were added to the seeds table, all mapped to `event`.**
+    Their labels are what the candidate list called the items refused under
+    each, **not the class's own label**, which no run has read: the report
+    gives an id and a count, not a name. Every entry carries a `note` saying
+    so. The kinds are not in doubt — legislative elections, presidential
+    elections, earthquakes, massacres, murders, bank robberies, referendums,
+    treaties — but the labels are inferred and the owner should read them.
+145. **Three candidates were refused for want of a lane**, not a class:
+    Q2659185, Q3586973 and Q545449 name a location with no coordinate the
+    index can reach and no place record here, and a placeless event must
+    carry a region. They are the whole of the gap between 249 ticked and 246
+    created.
+146. **230 of the 246 new events are placeless**, carrying a region and no
+    `place`; the other 16 point at a place record this atlas already had. The
+    import creates no place for an event, by M16's design — a place record
+    nobody asked for is a record nobody wrote.
+147. **Two imported events are named after their item** — `q1454657` and
+    `q2115000` — because those items carry no label in English or Portuguese.
+    Their summaries say so. They are records waiting for a title, not
+    records with a wrong one.
+
 ## Dates to verify
 
 Everything below was written from memory and is where the owner's review
@@ -2148,11 +2259,17 @@ fixtures and the three static pages — sixteen assertions, all passing:
   never a hand-edited presence.
 - **What the Wikidata import is pointed at**:
   `data/imports/wikidata-seeds.json` — items, queries and the table saying
-  which Wikidata class becomes which kind of record. It ships **empty**: what
-  this atlas should draw from is the owner's decision, and M18 is where it is
-  proposed. `data/imports/wikidata-state.json` is the cursor a cut-off run
-  leaves behind, one entry per mode, written by the tool and not by hand.
-- **The Wikidata import has never been run.** There is no network in the
+  which Wikidata class becomes which kind of record. After M20 it names 323
+  items (the 74 records already carrying an id, then the 249 ticked
+  candidates the atlas did not hold) and 84 classes, 59 of them added from
+  the import's own report. `data/imports/wikidata-state.json` is the cursor
+  a cut-off run leaves behind, one entry per mode, written by the tool —
+  M20 rewound it by hand twice, to re-read what a run had refused.
+- **What the last import run did**: `docs/import-report.md`, written by
+  `--report` and committed by the Action batch by batch. It describes that
+  run only — the job truncates it at the start — and it exists because the
+  cloud run that pushes an `import/` branch cannot read the job's log.
+- **The Wikidata import runs only on a runner.** There is no network in the
   sandbox the milestones are built in. It runs in
   `.github/workflows/import-wikidata.yml`, triggered by pushing a branch
   called `import/reconcile-<date>`, `import/candidates-<date>` or
@@ -2216,3 +2333,4 @@ M19 started 2026-09-04T15:25:36Z by scheduled
 M19 done
 
 M20 started 2026-09-04T19:45:49Z by scheduled
+M20 done
