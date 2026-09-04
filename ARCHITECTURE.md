@@ -4,8 +4,53 @@ What the Atlas causal is meant to become, structurally. `CLAUDE.md` has the
 rules, `CONTEXT.md` the reasoning, `STATUS.md` where we are right now. This
 file is the target: the shape every milestone builds toward.
 
-Revision 17, 4 September 2026. Sections marked ● exist in v1; things marked ○
+Revision 18, 4 September 2026. Sections marked ● exist in v1; things marked ○
 are reserved by a line in this file only — no folder, no schema, no code.
+
+**What revision 18 changed, and why.** One optional field on the three kinds
+that are about a thing in the world, one page, one renderer, and one rule.
+
+*A record may carry its own long form.* `body`, optional, on `event`, `actor`
+and `place`: an extensive text about the record, written by a person, in a
+**closed Markdown subset**. It is not a second summary. `summary` is what a
+card shows while a reader is following links through the graph — a sentence or
+two — and `body` is the thing they open when they want to read about the
+record rather than traverse it. It is optional and **absent by default**: an
+empty field writes no key at all, so a record nobody has written an entry for
+looks exactly as it did before the field existed, which is the same rule the
+identity fields follow and for the same reason.
+
+*The subset is closed because the data is untrusted.* `src/markdown.js` is
+pure, has no DOM, and renders paragraphs, `##`/`###` headings, emphasis,
+lists, block quotes, links to records by id (`event:`, `actor:`, `place:`,
+`source:`) and to `http(s)` URLs, and citation marks `[^source-id]` /
+`[^source-id p. 12]`. Everything else — raw HTML, images, any other scheme —
+comes out as the characters somebody typed, escaped like every other string
+from `data/`. There is no configuration turning any of that on: a renderer
+with a permissive mode is a renderer whose permissive mode will one day be
+reached by a contribution. The same function runs in Node for the validator
+and in the browser for the page and the two previews, so what a contributor is
+shown while writing is what a reader is shown afterwards.
+
+*`entry.html?id=<record id>` is one page for all three kinds*, because a
+reader who opens an event, an actor or a place wants the same things about
+each: what it is, when it was, what it touches, the text, and where all of it
+came from. Every link on it is an `<a href>` and never a button with a
+`data-action` — a page's links are the browser's, they open in a new tab and
+they can be copied — and a record with no entry gets a page that says so and
+asks for one, because most records will have no entry for a long time and a
+missing page would read as a broken atlas. The citations are resolved and
+listed at the foot, numbered in the order the entry first names each work, so
+a mark leads to the work and the work leads to its card.
+
+*Rule 23 is what only the whole record can say.* A citation mark must name a
+source the record itself cites — a mark to an uncited work is a footnote to
+nothing, and the reader would have nowhere to arrive — and a link by id must
+resolve to a record of the kind it names, for the reason rule 3 exists. Both
+are reported at `/body`, because a body is prose and has no finer path than
+itself. The review digest gains **`entry`**, a boolean and never the prose:
+the queue can then say which records have a full entry without the index
+carrying the longest text in the atlas.
 
 **What revision 17 changed, and why.** Nothing in the data model, again. One
 generated file, one tool that writes it, two typefaces, and one rule about
@@ -552,6 +597,7 @@ atlas-causal/
 ├── contribute.html               ● the contribution form
 ├── about.html                    ● licence, how to read confidence, why relicensing is impossible
 ├── sources.html                  ● the bibliography, generated at render from the sources index
+├── entry.html                    ● one record's full entry; ?id=<id>, for an event, an actor or a place
 ├── review.html                   ● the review queue; a maintainer's page, unlinked, the only one that writes
 ├── CLAUDE.md  CONTEXT.md         ● rules / reasoning
 ├── ARCHITECTURE.md  STATUS.md    ● this file / where we are
@@ -603,6 +649,7 @@ atlas-causal/
 │   ├── graph.js                  ● consequences, ancestors, convergence, shortest paths outward and what an event led to by a year; pure functions over adjacency
 │   ├── horizon.js                ● pure: the traversal and the horizon year put together; what the panel lists and the views light
 │   ├── citation.js               ● pure: a source as a citation, its identifiers as links, a bibliography's order
+│   ├── markdown.js               ● pure: the closed Markdown subset a `body` is written in; everything outside it comes out as text
 │   ├── cluster.js                ● pure: which marks overlap at this zoom, which of them no zoom can part; the timeline uses it in one dimension
 │   ├── search.js                 ● pure: titles and every one of an actor's names, folded and ranked
 │   ├── search-box.js             ● the input, the list and the keys
@@ -619,6 +666,10 @@ atlas-causal/
 │   ├── panel/event.js  source.js  place.js  actor.js  cluster.js   ● one card each
 │   ├── panel/horizon.js          ● the "what did this lead to by year X?" section of the event card
 │   ├── sources/main.js  bibliography.js   ● the bibliography page: bootstrap, and the list as markup
+│   ├── entry/
+│   │   ├── entry.js              ● pure: topology + a fetched record → the full entry page, as markup
+│   │   ├── preview.js            ● pure: the live preview under the textarea, drawn by the form and the dashboard alike
+│   │   └── main.js               ● the page: resolve ?id=, fetch the record, assign
 │   ├── contribute/
 │   │   ├── form.js               ● inputs → bundle; searches titles and aliases before allowing a new event; actors chosen by name
 │   │   ├── bundle.js             ● the field definitions, buildRecord and its inverse valuesFromRecord/applyValues, validateBundle
@@ -793,6 +844,26 @@ than a historiographical argument, so rule 6 exempts it as it does `source`
 and `region` records. Its `sources` may be empty all the same, for the place
 whose location is itself argued over. A place is *not* a territory: what
 ground an actor held is a presence, with an outline and dates.
+
+### The full entry ● — `body`
+
+```json
+"body": "## The voyage\n\nThe fleet sailed in August[^russell-2000-henry p. 112], under\n[the king](actor:john-i-of-portugal).\n"
+```
+
+Optional, on `event`, `actor` and `place` — the three kinds that are about a
+thing in the world, which is what somebody reads a page about. Written by a
+person in the subset `src/markdown.js` renders and nothing else: no raw HTML,
+no images, no scheme but `http(s)` and the four record kinds. `summary` stays
+what the cards show; this is the long form, read at `entry.html?id=<id>`. A
+record without one carries **no key**, not a null.
+
+Citation marks are `[^source-id]` or `[^source-id locator]` and must name a
+source in the record's own `sources[]` (rule 23); links by id must resolve to
+a record of the kind they name (rule 23). The topology does not carry `body` —
+it carries the refs and not a word of the prose, as it never carried
+`summary` — and `data/index/review-<hash>.json` carries only `entry: true`,
+so the dashboard can say which records have one.
 
 ### Identity ● — where else the same thing is catalogued
 

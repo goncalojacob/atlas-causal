@@ -264,6 +264,82 @@ Notes that catch people out:
   the outside. Two narratives may cross the same period and disagree, and both
   stand: that is the point of them, and it is why yours is signed.
 
+## Writing a full entry
+
+A summary is a sentence or two, and it is what the cards show. An **entry** is
+the long form: `entry.html?id=<record id>` is a page about one event, actor or
+place, with everything the atlas knows about it and an extensive text you
+write. It lives in the optional `body` field on those three kinds, and there
+is a field for it in the contribution form and in the review dashboard, with a
+preview beside it.
+
+An entry is written by a person from sources they cite, like everything else
+here. It may be as long as it needs to be, it may disagree with other accounts
+as long as it says who holds them, and it must not be somebody else's prose:
+quote a paragraph if you need to, in a block quotation with a citation, and
+write the rest yourself. Wikipedia is a place to start reading and not a place
+to copy from — its text is CC BY-SA too, but an entry that is a rewritten
+article is not this atlas's account of anything.
+
+### The subset
+
+`body` is Markdown, but a small closed one, rendered by `src/markdown.js`.
+Anything outside it is shown as the characters you typed rather than as
+markup, and the preview says so while you write. What there is:
+
+```
+## A section, and ### a subsection
+
+A paragraph. Lines that follow each other are one paragraph; a blank line
+starts the next. *Emphasis*, _also emphasis_, and **strong emphasis**.
+
+- a bullet
+- another, which may run onto
+  a second line
+
+1. a numbered point
+2. another
+
+> A quotation, which may run over several lines and hold paragraphs
+> of its own.
+
+Links: [into the atlas](event:conquest-of-ceuta-1415), and the same for
+[actor:](actor:some-actor), [place:](place:some-place) and
+[source:](source:some-source); [out to the web](https://example.org/), which
+must be http or https.
+
+Citation marks: [^some-source-id] and [^some-source-id p. 12].
+```
+
+And what there is not: **no raw HTML** (`<b>bold</b>` is the six characters
+`<b>` and the rest, not a bold word), **no images**, no tables, no code
+blocks, no footnotes other than the citation marks, and no link to anything
+that is not a record id or an http(s) address. A heading is `##` or `###`; the
+page owns the title above them.
+
+### The citation marks
+
+`[^some-source-id]` is a footnote to a work, and the id must name a source
+**this record already cites** — a mark to anything else is an error (rule 23),
+because a reader following it would have nowhere to arrive. So the order of
+work is: add the source to the record's citations, then write the mark. A
+locator goes inside the brackets after the id, exactly as it would in the
+citation: `[^maxwell-1995-making p. 112]`.
+
+The marks are numbered on the page in the order the entry first names each
+work, and each one links to that work in the entry's own source list, where
+every locator you used is gathered. A work the record cites but the entry
+never marks is still listed there: the record rests on it either way.
+
+### Links between entries
+
+`[the conquest](event:conquest-of-ceuta-1415)` becomes a link to that
+record's own entry page. The id must resolve to a record of the kind you
+named, or the validator refuses it (rule 23, again): a link that goes nowhere
+is worse than no link, because it looks like a way through. Use them for the
+things an entry actually leans on — the actor it keeps naming, the event it is
+a consequence of — and not for every proper noun.
+
 ## Territories, and the licence they carry
 
 `data/presences/` says who held which ground and when, and

@@ -240,6 +240,26 @@
       the coordinates of the place each event happened at rather than stored on the record, so
       that redrawing the lanes never means rewriting the records.</p>
 
+      <h3>The full entry</h3>
+      <p>What a card shows is a summary: a sentence or two, enough to know what the record is
+      while you are following links through the graph. Under it, on every event, actor and place,
+      is <em>Read the full entry</em> — a page of its own, at
+      <code>entry.html?id=…</code>, with the record's dates and place, the actors in it, the
+      relations it stands in, the narratives that walk through it, everything it rests on, and an
+      extensive text about it.</p>
+      <p>That text is written by a person, from sources they cite, and it is not a redirect to
+      somebody else's encyclopedia. Most records have no entry yet and their pages say so and
+      ask for one: the atlas is a graph first, and the long form arrives record by record as
+      people write it.</p>
+      <p>An entry is written in a deliberately small Markdown — paragraphs, two levels of
+      heading, emphasis, lists, quotations, links to other records and to the web, and citation
+      marks like <code>[^some-source p. 12]</code> that must name a work the record already
+      cites. There is no raw HTML in it and there are no images: everything under
+      <code>data/</code> is somebody's contribution, and a page that let one of them write markup
+      would be a page that let one of them write anything. The marks are numbered on the page in
+      the order the entry names each work, and every one of them leads down to that work in the
+      entry's own list of sources.</p>
+
       <h3>The link to Wikipedia, and what it is not</h3>
       <p>An event, an actor or a place may carry the identifier of the Wikidata item for the
       same thing, and the titles of the Wikipedia articles about it. Where there is a title, the
