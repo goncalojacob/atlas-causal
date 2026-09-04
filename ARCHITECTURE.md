@@ -4,8 +4,71 @@ What the Atlas causal is meant to become, structurally. `CLAUDE.md` has the
 rules, `CONTEXT.md` the reasoning, `STATUS.md` where we are right now. This
 file is the target: the shape every milestone builds toward.
 
-Revision 15, 4 September 2026. Sections marked ● exist in v1; things marked ○
+Revision 16, 4 September 2026. Sections marked ● exist in v1; things marked ○
 are reserved by a line in this file only — no folder, no schema, no code.
+
+**What revision 16 changed, and why.** Nothing in the data model at all. One
+tool, one workflow, two more shapes under `data/imports/`, and a directory
+that is deliberately not data.
+
+*The import is a tool, and what it may do is narrow on purpose.*
+`tools/import/wikidata.mjs`, zero dependencies like everything else, in three
+modes: `--reconcile` matches records that are already here against items,
+`--import` creates records for the items a file names, `--candidates` writes
+a list of proposals and touches nothing under `data/`. It never writes an
+**edge** — a causal link is an argument and a person makes it — and on a
+record that already exists it is **additive per field**: it writes
+`wikidata`, `wikipedia` and `sitelinks` only where they are absent, never
+modifies a non-empty value of any field, never touches `summary`, `title`,
+`when`, `place`, `actors` or `sources`, and adds **no `authors` entry** for
+enriching, because putting an import's name on somebody's record for having
+filled in an identifier would be claiming their work. The rule is in
+`tools/import/identity.mjs` rather than in either import, and `cshapes.mjs`
+obeys it too: an identifier added between two runs of that import survives
+the next one, the way `created` does. Records the import *creates* carry
+`authors: [{ name: "Wikidata import (tools/import/wikidata.mjs)" }]`,
+`review.flags: ["imported-facts"]`, and a summary that quotes the item's own
+description and says it is not this atlas's account of anything.
+
+*What an item means here is data, not code.* Which Wikidata class becomes an
+event of this atlas, and which makes an actor a person rather than an
+institution, is an editorial decision, so it lives in
+`data/imports/wikidata-seeds.json` → `classes` and is argued with in a pull
+request. An item whose classes are not in that table is **refused and listed
+with its labels**; nothing is guessed. The same file names the `items` the
+import walks and the `queries` that propose more of them, and
+`schema/v1/import-seeds.json` is its shape. This is the same principle
+revision 7 applied to `cshapes-actors.json`, and it is now the rule for every
+import rather than a thing one of them happened to do.
+
+*A cut-off run has somewhere to resume from.* `data/imports/wikidata-state.json`
+(`schema/v1/import-state.json`) holds one cursor per mode — what is pending,
+what is done, when it was last written — and the tool walks in batches of 25,
+each batch leaving the tree validating. A job that dies halfway has lost at
+most one batch, which matters because the only machine with network access is
+a GitHub runner on a job with a wall-clock limit. `data/imports/` now holds
+three kinds of file and `tools/lib/read.mjs` dispatches on the file's `kind`;
+a file that names no kind is a map, which is what the directory held before
+there was anything else.
+
+*The one job with a network runs on a branch of its own.*
+`.github/workflows/import-wikidata.yml` triggers on a **push to `import/**`**
+and never on `workflow_dispatch`, which would resolve the workflow on the
+default branch, where no workflows live. The branch name carries the mode
+(`import/reconcile-…`, `import/candidates-…`, `import/run-…`) and reaches the
+script through `env`, never through `${{ }}` in a `run:`. Every batch is
+validated, tested and indexed **before** it is committed, a failure restores
+`data/` and exits, and the job commits to its own branch and never to `m0` —
+the merge back is the run's own commit, which is what keeps two writers off
+one branch.
+
+*Cached Wikipedia leads are not data.* `tools/import/cache/wikipedia/<QID>.<lang>.json`
+keeps an article's opening paragraphs with the revision they came from, the
+licence, and a link to the history where the attribution actually lives. It
+is outside `data/`, is never a record, is checked against
+`schema/v1/wikipedia-lead.json` by `tools/validate.mjs` all the same, and
+`deploy.yml` removes it before the Pages upload: publishing it would be
+republishing Wikipedia. `data/LICENSE` and `about.html` say what it is.
 
 **What revision 15 changed, and why.** Three optional fields on a record, one
 optional block inside another, and two rules. No new kind, nothing removed,
@@ -466,7 +529,9 @@ atlas-causal/
 │   ├── relations/<id>.json       ● a dated, typed link between two actors; id from--to--type
 │   ├── narratives/<id>.json      ● a signed walk through records already here; ordered steps of { ref, text }
 │   ├── presences/<id>.json       ● who held which ground, and when; CC BY-NC-SA when imported
-│   ├── imports/<source>.json     ● which actor a source's entity becomes; not a record, tool-side only
+│   ├── imports/<source>.json     ● import-map: which actor a source's entity becomes; not a record, tool-side only
+│   ├── imports/wikidata-seeds.json  ● import-seeds: the items, queries and class table the Wikidata import is pointed at
+│   ├── imports/wikidata-state.json  ● import-state: where a cut-off import stopped, one cursor per mode; WRITTEN by the tool
 │   ├── regions.json              ● timeline lanes: id, label, order
 │   ├── geo/
 │   │   ├── LICENSE               ● per-source: Natural Earth = public domain, CShapes = CC BY-NC-SA 4.0
@@ -481,7 +546,8 @@ atlas-causal/
 │
 ├── schema/
 │   ├── v1/event.json  edge.json  source.json  actor.json  place.json  relation.json  narrative.json  presence.json  region.json  bundle.json  ●
-│   ├── v1/import-map.json        ● the shape of data/imports/; checked by tools/validate.mjs only
+│   ├── v1/import-map.json  import-seeds.json  import-state.json  ● the three shapes of data/imports/, dispatched on the file's `kind`; checked by tools/validate.mjs only
+│   ├── v1/wikipedia-lead.json    ● the envelope of a cached article lead under tools/import/cache/; not data, checked anyway
 │   └── common/interval.json  place.json  provenance.json  confidence.json  ●
 │
 ├── src/
@@ -537,7 +603,10 @@ atlas-causal/
 │   ├── migrate-places.mjs        ● one-time: every event's `where` → a place record it points at; kept as documentation
 │   ├── seed-review-flags.mjs     ● one-time: STATUS.md's "Dates to verify" onto the records as review flags; kept as documentation
 │   ├── serve.mjs                 ● local only, never deployed: the repository + PUT /__records/<kind>/<id> on 127.0.0.1
-│   └── import/topojson.mjs  simplify.mjs  cshapes.mjs   ● offline, zero-dependency import of borders over time
+│   ├── import/topojson.mjs  simplify.mjs  cshapes.mjs   ● offline, zero-dependency import of borders over time
+│   ├── import/wikidata.mjs       ● identifiers and records from Wikidata; injectable fetch layer, three modes, additive
+│   ├── import/identity.mjs       ● the additive rule itself, obeyed by both imports
+│   └── import/cache/wikipedia/   ● GENERATED: article leads with their revision; never published, never data
 │
 ├── tests/                        ● node --test, zero deps: schema subset, rules, graph, dates, projection, build-index determinism
 │
@@ -548,7 +617,8 @@ atlas-causal/
     ├── workflows/
     │   ├── validate.yml          ● on PR: validator + tests; never touches data/index/
     │   ├── contribution.yml      ● on label "accepted" (maintainer-only): bundle → validate → branch → PR, using a scoped PAT
-    │   └── deploy.yml            ● on push to main, one job: build-index → commit if changed → upload → deploy from the same checkout
+    │   ├── deploy.yml            ● on push to main, one job: build-index → commit if changed → drop the import cache → upload → deploy from the same checkout
+    │   └── import-wikidata.yml   ● on push to import/**: the only job with a network; mode from the branch name, commits to that branch and never to m0
     ├── CODEOWNERS                ● data/ and .github/ → owner
     └── PULL_REQUEST_TEMPLATE.md  ● the review checklist
 ```
@@ -1156,13 +1226,23 @@ Errors:
     thing was cited.
 
 `data/imports/` is not records and has no rule number. `tools/validate.mjs`
-checks it against `schema/v1/import-map.json` and then checks what a shape
-cannot say: the keys are entity codes of the source, a split's dates are real
-and strictly increasing, a split's actor is neither the entry's own nor
-another split's, and a name is not listed twice. Whether a code exists in the
-source at all is checked when the import runs, which is the only place that
-can know, and whether a split date is a boundary the source draws is checked
-there too.
+picks the schema from the file's `kind` — `import-map`, `import-seeds` or
+`import-state`, and a file that names none is a map — and then checks what a
+shape cannot say. For a map: the keys are entity codes of the source, a
+split's dates are real and strictly increasing, a split's actor is neither
+the entry's own nor another split's, and a name is not listed twice. For a
+seeds file: no item and no query name is listed twice, a class key is an
+item of the source, and an actor class says which `actorType` its items
+become — the keyword subset has no `uniqueItems` and no conditional, so
+these are the checks a shape cannot make rather than ones it declined to.
+A seeds file with nothing in it warns and never fails: waiting for somebody
+to decide what the atlas should draw from is its ordinary state. Whether a
+code or an item exists in the source at all is checked when the import runs,
+which is the only place that can know, and whether a split date is a
+boundary the source draws is checked there too. The cached leads under
+`tools/import/cache/wikipedia/` are checked the same way, against
+`schema/v1/wikipedia-lead.json`, with the file name held to the item and
+language inside it.
 
 A relation is reached by rules 2, 3, 6, 11, 12 and 15 as well: its id is
 derived from its fields like an edge's, both ends resolve to actor records, it

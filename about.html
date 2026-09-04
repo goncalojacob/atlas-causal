@@ -229,7 +229,7 @@
       <p>That link is a way out of the atlas, not part of it. Everything the atlas asserts is in
       the record: the summary, the argument on each link, the confidence, the sources. Nothing
       here is written from an encyclopedia and nothing here is checked against one, and no
-      article's text is stored — only its title, which is a name. The identifier exists so that
+      article's text is in any record — only its title, which is a name. The identifier exists so that
       a record can be found again by a machine and so that a reader who wants somebody else's
       account can go and get it; it is never counted as evidence. An encyclopedia reports
       scholarship rather than being it, so a link that cites nothing but Wikipedia cannot be
@@ -266,8 +266,12 @@
         <a href="https://www.wikidata.org/" rel="noreferrer">Wikidata</a>, whose data is
         released under <a href="https://creativecommons.org/publicdomain/zero/1.0/" rel="license noreferrer">CC0 1.0</a>.
         They stay CC BY-SA 4.0 as part of the record they sit on, which CC0 allows. No
-        Wikipedia prose is stored anywhere here, so nothing turns on Wikipedia's own CC BY-SA;
-        the head of <code>data/LICENSE</code> says all of this again.</li>
+        Wikipedia prose reaches this site or any record: the one place the repository keeps any
+        is <code>tools/import/cache/</code>, where the import stores an article's opening
+        paragraphs with the revision they came from and a link to the history that credits
+        whoever wrote them — <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license noreferrer">CC BY-SA 4.0</a>,
+        the same licence, and removed before the site is published. The head of
+        <code>data/LICENSE</code> says all of this again.</li>
       </ul>
 
       <h3>Why this cannot be changed later</h3>

@@ -338,6 +338,53 @@ node tools/import/cshapes.mjs --source cshapes_2_gw.topojson --report
 node tools/build-index.mjs
 ```
 
+## Proposing what the Wikidata import should draw from
+
+The atlas can take identifiers and skeleton records from
+[Wikidata](https://www.wikidata.org/), and what it takes is decided in a file
+rather than in the tool: `data/imports/wikidata-seeds.json`. Proposing
+something is an ordinary pull request against it.
+
+```json
+{
+  "schema": 1,
+  "kind": "import-seeds",
+  "source": "wikidata",
+  "items": ["Q192914"],
+  "queries": [{ "name": "elections-1890-1899", "sparql": "SELECT ?item WHERE { … }", "note": "why" }],
+  "classes": { "Q5": { "kind": "actor", "actorType": "person", "label": "human" } },
+  "reconcile": true
+}
+```
+
+- **`items`** are items to fetch by hand-picked id. The import creates a
+  record for each one it can and refuses the rest, loudly.
+- **`queries`** are searches that *propose* items. They create nothing: the
+  `--candidates` mode writes a list with a box on every row, and only the
+  rows somebody ticks are ever imported. A query is a way of suggesting
+  records, never of making them.
+- **`classes`** is the part that matters most. It says which Wikidata class
+  becomes which kind of record here — and for an actor, which `actorType`.
+  Nothing is inferred: an item whose classes are absent from this table is
+  refused and listed with its labels, for a person to decide. Whether a
+  battle is an event of this atlas, and whether a political party is an
+  institution or a people, are editorial questions and this is where they
+  are argued.
+- **`reconcile`** allows the matching pass, which writes identifiers onto
+  records people have already written. It is off unless the file says so.
+
+What the import may then do to an existing record is deliberately small: it
+fills in `wikidata`, `wikipedia` and `sitelinks` where they are **absent**,
+and nothing else. It never changes a value, never touches your summary, your
+dates or your citations, never writes an edge, and never puts its name in
+your `authors`. Records it creates are marked `imported-facts` and carry a
+placeholder summary that says so; replacing that with a real account is what
+`review.html` is for.
+
+`node tools/validate.mjs` checks the file. The import itself runs in a GitHub
+Action on a branch called `import/…`, because it is the only thing in this
+repository that needs a network.
+
 ## Working on the code
 
 ```bash

@@ -17,6 +17,16 @@ Third-party material these records point at
     rather than reproducing it. Nothing under data/ is derived from
     Wikipedia's prose. https://en.wikipedia.org/ · https://pt.wikipedia.org/
 
+    One place in this repository does hold Wikipedia prose, and it is not
+    under data/: tools/import/cache/wikipedia/<item>.<lang>.json, where the
+    import keeps an article's opening paragraphs so that a later run can
+    read the same text twice and a reviewer can check what was read. Each
+    cached file carries the licence (CC BY-SA 4.0), the revision the text
+    came from, and a link to the article's history, which is where the
+    attribution the licence asks for actually lives — the list of everyone
+    who wrote it. The cache is never published: the deploy job removes it
+    before the site is uploaded, and nothing in it is copied into a record.
+
   Geometry is licensed separately, file by file: see data/geo/LICENSE. The
   CC BY-NC-SA material described there is NOT covered by this licence and is
   never merged into a record under this one.
