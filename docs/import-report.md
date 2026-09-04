@@ -250,3 +250,13 @@ created event 2025-sintra-local-elections from Q135509724
 created event 2025-viseu-local-elections from Q135509797
 50 Wikipedia lead(s) cached under tools/import/cache/wikipedia
 25 created, 0 enriched, 0 refused, 0 ambiguous
+import: 7 item(s) this batch, 0 left after it, 11 call(s) spent
+created event covid-19-pandemic-in-europe from Q86458103
+created event 2022-european-drought from Q113394119
+created event murder-of-diamantino-monteiro-pereira from Q115460814
+created event december-2022-floods-in-portugal from Q115707122
+created event 2024-madeira-wildfires from Q129462983
+created event 2024-portugal-wildfires from Q130324056
+created event killing-of-odair-moniz from Q130648555
+9 Wikipedia lead(s) cached under tools/import/cache/wikipedia
+7 created, 0 enriched, 0 refused, 0 ambiguous

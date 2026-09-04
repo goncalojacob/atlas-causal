@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "covid-19-pandemic-in-europe",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q86458103",
+  "sitelinks": 28,
+  "wikipedia": {
+    "en": "COVID-19 pandemic in Europe",
+    "pt": "Pandemia de COVID-19 na Europa"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q86458103"
+    }
+  ],
+  "title": "COVID-19 pandemic in Europe",
+  "summary": "Wikidata item Q86458103, imported by tools/import/wikidata.mjs. The item's own description reads \"ongoing coronavirus pandemic in Europe\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2020,
+    "end": null,
+    "date": "2020-01-24"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}

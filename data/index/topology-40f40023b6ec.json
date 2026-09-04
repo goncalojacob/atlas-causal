@@ -9064,6 +9064,26 @@
     {
       "actors": [],
       "aliases": [],
+      "id": "2022-european-drought",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "2022 European drought",
+      "weight": 0,
+      "when": {
+        "end": 2022,
+        "start": 2022
+      },
+      "wikidata": "Q113394119",
+      "wikipedia": {
+        "en": "2022 European drought"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
       "id": "2022-portuguese-legislative-election",
       "place": null,
       "region": "europe",
@@ -9219,6 +9239,28 @@
     {
       "actors": [],
       "aliases": [],
+      "id": "2024-madeira-wildfires",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "2024 Madeira wildfires",
+      "weight": 0,
+      "when": {
+        "date": "2024-08-14",
+        "end": null,
+        "start": 2024
+      },
+      "wikidata": "Q129462983",
+      "wikipedia": {
+        "en": "2024 Madeira wildfires",
+        "pt": "Incêndios na ilha da Madeira em agosto de 2024"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
       "id": "2024-madeiran-regional-election",
       "place": null,
       "region": "europe",
@@ -9236,6 +9278,29 @@
       "wikipedia": {
         "en": "2024 Madeiran regional election",
         "pt": "Eleições legislativas regionais na Madeira em 2024"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "2024-portugal-wildfires",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "2024 Portugal wildfires",
+      "weight": 0,
+      "when": {
+        "date": "2024-09-15",
+        "end": 2024,
+        "endDate": "2024-09-20",
+        "start": 2024
+      },
+      "wikidata": "Q130324056",
+      "wikipedia": {
+        "en": "2024 Portugal wildfires",
+        "pt": "Incêndios florestais de Portugal em 2024"
       }
     },
     {
@@ -10611,6 +10676,28 @@
       }
     },
     {
+      "actors": [],
+      "aliases": [],
+      "id": "covid-19-pandemic-in-europe",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "COVID-19 pandemic in Europe",
+      "weight": 0,
+      "when": {
+        "date": "2020-01-24",
+        "end": null,
+        "start": 2020
+      },
+      "wikidata": "Q86458103",
+      "wikipedia": {
+        "en": "COVID-19 pandemic in Europe",
+        "pt": "Pandemia de COVID-19 na Europa"
+      }
+    },
+    {
       "actors": [
         {
           "actor": "marcelo-rebelo-de-sousa",
@@ -10637,6 +10724,24 @@
         "endDate": "2020-05-02",
         "start": 2020
       }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "december-2022-floods-in-portugal",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "December 2022 floods in Portugal",
+      "weight": 0,
+      "when": {
+        "date": "2022-12-13",
+        "end": 2022,
+        "start": 2022
+      },
+      "wikidata": "Q115707122"
     },
     {
       "actors": [
@@ -11613,6 +11718,28 @@
       }
     },
     {
+      "actors": [],
+      "aliases": [],
+      "id": "killing-of-odair-moniz",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "killing of Odair Moniz",
+      "weight": 0,
+      "when": {
+        "date": "2024-10-21",
+        "end": 2024,
+        "start": 2024
+      },
+      "wikidata": "Q130648555",
+      "wikipedia": {
+        "en": "Killing of Odair Moniz",
+        "pt": "Morte de Odair Moniz"
+      }
+    },
+    {
       "actors": [
         {
           "actor": "afonso-costa",
@@ -12255,6 +12382,24 @@
         "start": 1980
       },
       "wikidata": "Q115210882"
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "murder-of-diamantino-monteiro-pereira",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "murder of Diamantino Monteiro Pereira",
+      "weight": 0,
+      "when": {
+        "date": "2022-12-06",
+        "end": 2022,
+        "start": 2022
+      },
+      "wikidata": "Q115460814"
     },
     {
       "actors": [],

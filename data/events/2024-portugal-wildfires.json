@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "2024-portugal-wildfires",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q130324056",
+  "sitelinks": 3,
+  "wikipedia": {
+    "en": "2024 Portugal wildfires",
+    "pt": "Incêndios florestais de Portugal em 2024"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q130324056"
+    }
+  ],
+  "title": "2024 Portugal wildfires",
+  "summary": "Wikidata item Q130324056, imported by tools/import/wikidata.mjs. The item's own description reads \"Wildfires in Portugal during September 2024\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2024,
+    "end": 2024,
+    "date": "2024-09-15",
+    "endDate": "2024-09-20"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}

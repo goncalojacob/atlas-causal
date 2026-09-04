@@ -9530,7 +9530,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 239,
+      "citationCount": 246,
       "citations": [
         {
           "dissent": false,
@@ -10392,6 +10392,12 @@
         },
         {
           "dissent": false,
+          "id": "2022-european-drought",
+          "kind": "event",
+          "locator": "Q113394119"
+        },
+        {
+          "dissent": false,
           "id": "2022-portuguese-legislative-election",
           "kind": "event",
           "locator": "Q84081925"
@@ -10434,9 +10440,21 @@
         },
         {
           "dissent": false,
+          "id": "2024-madeira-wildfires",
+          "kind": "event",
+          "locator": "Q129462983"
+        },
+        {
+          "dissent": false,
           "id": "2024-madeiran-regional-election",
           "kind": "event",
           "locator": "Q123685068"
+        },
+        {
+          "dissent": false,
+          "id": "2024-portugal-wildfires",
+          "kind": "event",
+          "locator": "Q130324056"
         },
         {
           "dissent": false,
@@ -10644,6 +10662,18 @@
         },
         {
           "dissent": false,
+          "id": "covid-19-pandemic-in-europe",
+          "kind": "event",
+          "locator": "Q86458103"
+        },
+        {
+          "dissent": false,
+          "id": "december-2022-floods-in-portugal",
+          "kind": "event",
+          "locator": "Q115707122"
+        },
+        {
+          "dissent": false,
           "id": "desastre-ambiental-de-almograve",
           "kind": "event",
           "locator": "Q112726955"
@@ -10746,6 +10776,12 @@
         },
         {
           "dissent": false,
+          "id": "killing-of-odair-moniz",
+          "kind": "event",
+          "locator": "Q130648555"
+        },
+        {
+          "dissent": false,
           "id": "lisbon-protocol",
           "kind": "event",
           "locator": "Q4263317"
@@ -10785,6 +10821,12 @@
           "id": "murder-of-delfim-de-almeida-fernandes-by-the-prp-br",
           "kind": "event",
           "locator": "Q115210882"
+        },
+        {
+          "dissent": false,
+          "id": "murder-of-diamantino-monteiro-pereira",
+          "kind": "event",
+          "locator": "Q115460814"
         },
         {
           "dissent": false,

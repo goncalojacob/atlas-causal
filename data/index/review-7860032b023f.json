@@ -6037,7 +6037,7 @@
     }
   ],
   "schema": 1,
-  "total": 809,
+  "total": 816,
   "warnings": [
     {
       "id": "1890-portuguese-legislative-election",
@@ -6898,6 +6898,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "2022-european-drought",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
       "id": "2022-portuguese-legislative-election",
       "kind": "event",
       "message": "event has no edges",
@@ -6940,7 +6946,19 @@
       "rule": "degree-zero"
     },
     {
+      "id": "2024-madeira-wildfires",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
       "id": "2024-madeiran-regional-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "2024-portugal-wildfires",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"
@@ -7150,6 +7168,18 @@
       "rule": "degree-zero"
     },
     {
+      "id": "covid-19-pandemic-in-europe",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "december-2022-floods-in-portugal",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
       "id": "desastre-ambiental-de-almograve",
       "kind": "event",
       "message": "event has no edges",
@@ -7258,6 +7288,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "killing-of-odair-moniz",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
       "id": "lisbon-protocol",
       "kind": "event",
       "message": "event has no edges",
@@ -7295,6 +7331,12 @@
     },
     {
       "id": "murder-of-delfim-de-almeida-fernandes-by-the-prp-br",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "murder-of-diamantino-monteiro-pereira",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"

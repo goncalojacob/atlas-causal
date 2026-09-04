@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "murder-of-diamantino-monteiro-pereira",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q115460814",
+  "sitelinks": 0,
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q115460814"
+    }
+  ],
+  "title": "murder of Diamantino Monteiro Pereira",
+  "summary": "Wikidata item Q115460814, imported by tools/import/wikidata.mjs. The item's own description reads \"murder of the administrator of the Sacavém Loiça Factory on December 6, 1982\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2022,
+    "end": 2022,
+    "date": "2022-12-06"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}
