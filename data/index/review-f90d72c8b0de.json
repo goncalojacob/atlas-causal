@@ -6037,10 +6037,142 @@
     }
   ],
   "schema": 1,
-  "total": 587,
+  "total": 612,
   "warnings": [
     {
+      "id": "1890-portuguese-legislative-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1892-portuguese-legislative-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1894-portuguese-legislative-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1895-portuguese-legislative-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1897-portuguese-legislative-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1899-portuguese-legislative-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1900-portuguese-legislative-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1901-portuguese-legislative-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1904-portuguese-legislative-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1905-portuguese-legislative-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1908-portuguese-legislative-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1910-portuguese-legislative-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1911-portuguese-constituent-national-assembly-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
       "id": "1911-portuguese-presidential-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1913-portuguese-legislative-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1915-portuguese-legislative-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1918-portuguese-general-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1918-portuguese-presidential-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1919-portuguese-legislative-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1919-portuguese-presidential-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1921-portuguese-legislative-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1922-portuguese-legislative-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1923-portuguese-presidential-election",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"
@@ -6065,6 +6197,18 @@
     },
     {
       "id": "2014-portuguese-socialist-party-prime-ministerial-primary",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "april-1906-portuguese-legislative-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "august-1906-portuguese-legislative-election",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"
@@ -6095,6 +6239,12 @@
     },
     {
       "id": "lisbon-protocol",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "lisbon-regicide",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "august-1906-portuguese-legislative-election",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q7232772",
+  "sitelinks": 2,
+  "wikipedia": {
+    "en": "August 1906 Portuguese legislative election"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7232772"
+    }
+  ],
+  "title": "August 1906 Portuguese legislative election",
+  "summary": "Wikidata item Q7232772, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1906,
+    "end": 1906,
+    "date": "1906-08-19"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}

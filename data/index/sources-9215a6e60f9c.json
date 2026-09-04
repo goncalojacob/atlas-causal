@@ -9530,13 +9530,145 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 17,
+      "citationCount": 42,
       "citations": [
+        {
+          "dissent": false,
+          "id": "1890-portuguese-legislative-election",
+          "kind": "event",
+          "locator": "Q7232736"
+        },
+        {
+          "dissent": false,
+          "id": "1892-portuguese-legislative-election",
+          "kind": "event",
+          "locator": "Q7232737"
+        },
+        {
+          "dissent": false,
+          "id": "1894-portuguese-legislative-election",
+          "kind": "event",
+          "locator": "Q7232738"
+        },
+        {
+          "dissent": false,
+          "id": "1895-portuguese-legislative-election",
+          "kind": "event",
+          "locator": "Q7232739"
+        },
+        {
+          "dissent": false,
+          "id": "1897-portuguese-legislative-election",
+          "kind": "event",
+          "locator": "Q7232740"
+        },
+        {
+          "dissent": false,
+          "id": "1899-portuguese-legislative-election",
+          "kind": "event",
+          "locator": "Q7232743"
+        },
+        {
+          "dissent": false,
+          "id": "1900-portuguese-legislative-election",
+          "kind": "event",
+          "locator": "Q7232742"
+        },
+        {
+          "dissent": false,
+          "id": "1901-portuguese-legislative-election",
+          "kind": "event",
+          "locator": "Q7232744"
+        },
+        {
+          "dissent": false,
+          "id": "1904-portuguese-legislative-election",
+          "kind": "event",
+          "locator": "Q7232745"
+        },
+        {
+          "dissent": false,
+          "id": "1905-portuguese-legislative-election",
+          "kind": "event",
+          "locator": "Q7232746"
+        },
+        {
+          "dissent": false,
+          "id": "1908-portuguese-legislative-election",
+          "kind": "event",
+          "locator": "Q7232747"
+        },
+        {
+          "dissent": false,
+          "id": "1910-portuguese-legislative-election",
+          "kind": "event",
+          "locator": "Q7232748"
+        },
+        {
+          "dissent": false,
+          "id": "1911-portuguese-constituent-national-assembly-election",
+          "kind": "event",
+          "locator": "Q7232627"
+        },
         {
           "dissent": false,
           "id": "1911-portuguese-presidential-election",
           "kind": "event",
           "locator": "Q97516175"
+        },
+        {
+          "dissent": false,
+          "id": "1913-portuguese-legislative-election",
+          "kind": "event",
+          "locator": "Q28679597"
+        },
+        {
+          "dissent": false,
+          "id": "1915-portuguese-legislative-election",
+          "kind": "event",
+          "locator": "Q7232749"
+        },
+        {
+          "dissent": false,
+          "id": "1918-portuguese-general-election",
+          "kind": "event",
+          "locator": "Q7232714"
+        },
+        {
+          "dissent": false,
+          "id": "1918-portuguese-presidential-election",
+          "kind": "event",
+          "locator": "Q21872940"
+        },
+        {
+          "dissent": false,
+          "id": "1919-portuguese-legislative-election",
+          "kind": "event",
+          "locator": "Q7232750"
+        },
+        {
+          "dissent": false,
+          "id": "1919-portuguese-presidential-election",
+          "kind": "event",
+          "locator": "Q21872497"
+        },
+        {
+          "dissent": false,
+          "id": "1921-portuguese-legislative-election",
+          "kind": "event",
+          "locator": "Q7232751"
+        },
+        {
+          "dissent": false,
+          "id": "1922-portuguese-legislative-election",
+          "kind": "event",
+          "locator": "Q7232752"
+        },
+        {
+          "dissent": false,
+          "id": "1923-portuguese-presidential-election",
+          "kind": "event",
+          "locator": "Q21714338"
         },
         {
           "dissent": false,
@@ -9564,6 +9696,18 @@
         },
         {
           "dissent": false,
+          "id": "april-1906-portuguese-legislative-election",
+          "kind": "event",
+          "locator": "Q7232771"
+        },
+        {
+          "dissent": false,
+          "id": "august-1906-portuguese-legislative-election",
+          "kind": "event",
+          "locator": "Q7232772"
+        },
+        {
+          "dissent": false,
           "id": "august-1915-portuguese-presidential-election",
           "kind": "event",
           "locator": "Q97516196"
@@ -9585,6 +9729,12 @@
           "id": "lisbon-protocol",
           "kind": "event",
           "locator": "Q4263317"
+        },
+        {
+          "dissent": false,
+          "id": "lisbon-regicide",
+          "kind": "event",
+          "locator": "Q2665185"
         },
         {
           "dissent": false,

@@ -5951,6 +5951,276 @@
     {
       "actors": [],
       "aliases": [],
+      "id": "1890-portuguese-legislative-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1890 Portuguese legislative election",
+      "weight": 0,
+      "when": {
+        "end": 1890,
+        "start": 1890
+      },
+      "wikidata": "Q7232736",
+      "wikipedia": {
+        "en": "1890 Portuguese legislative election"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1892-portuguese-legislative-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1892 Portuguese legislative election",
+      "weight": 0,
+      "when": {
+        "end": 1892,
+        "start": 1892
+      },
+      "wikidata": "Q7232737",
+      "wikipedia": {
+        "en": "1892 Portuguese legislative election"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1894-portuguese-legislative-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1894 Portuguese legislative election",
+      "weight": 0,
+      "when": {
+        "end": 1894,
+        "start": 1894
+      },
+      "wikidata": "Q7232738",
+      "wikipedia": {
+        "en": "1894 Portuguese legislative election"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1895-portuguese-legislative-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1895 Portuguese legislative election",
+      "weight": 0,
+      "when": {
+        "end": 1895,
+        "start": 1895
+      },
+      "wikidata": "Q7232739",
+      "wikipedia": {
+        "en": "1895 Portuguese legislative election"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1897-portuguese-legislative-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1897 Portuguese legislative election",
+      "weight": 0,
+      "when": {
+        "end": 1897,
+        "start": 1897
+      },
+      "wikidata": "Q7232740",
+      "wikipedia": {
+        "en": "1897 Portuguese legislative election"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1899-portuguese-legislative-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1899 Portuguese legislative election",
+      "weight": 0,
+      "when": {
+        "end": 1899,
+        "start": 1899
+      },
+      "wikidata": "Q7232743",
+      "wikipedia": {
+        "en": "1899 Portuguese legislative election"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1900-portuguese-legislative-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1900 Portuguese legislative election",
+      "weight": 0,
+      "when": {
+        "date": "1900-11-25",
+        "end": 1900,
+        "start": 1900
+      },
+      "wikidata": "Q7232742",
+      "wikipedia": {
+        "en": "1900 Portuguese legislative election"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1901-portuguese-legislative-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1901 Portuguese legislative election",
+      "weight": 0,
+      "when": {
+        "date": "1901-10-06",
+        "end": 1901,
+        "start": 1901
+      },
+      "wikidata": "Q7232744",
+      "wikipedia": {
+        "en": "1901 Portuguese legislative election"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1904-portuguese-legislative-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1904 Portuguese legislative election",
+      "weight": 0,
+      "when": {
+        "date": "1904-06-26",
+        "end": 1904,
+        "start": 1904
+      },
+      "wikidata": "Q7232745",
+      "wikipedia": {
+        "en": "1904 Portuguese legislative election"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1905-portuguese-legislative-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1905 Portuguese legislative election",
+      "weight": 0,
+      "when": {
+        "date": "1905-12-12",
+        "end": 1905,
+        "start": 1905
+      },
+      "wikidata": "Q7232746",
+      "wikipedia": {
+        "en": "1905 Portuguese legislative election"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1908-portuguese-legislative-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1908 Portuguese legislative election",
+      "weight": 0,
+      "when": {
+        "date": "1908-04-05",
+        "end": 1908,
+        "start": 1908
+      },
+      "wikidata": "Q7232747",
+      "wikipedia": {
+        "en": "1908 Portuguese legislative election",
+        "pt": "Eleições legislativas portuguesas de 1908"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1910-portuguese-legislative-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1910 Portuguese legislative election",
+      "weight": 0,
+      "when": {
+        "date": "1910-08-28",
+        "end": 1910,
+        "start": 1910
+      },
+      "wikidata": "Q7232748",
+      "wikipedia": {
+        "en": "1910 Portuguese legislative election",
+        "pt": "Eleições legislativas portuguesas de 1910"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1911-portuguese-constituent-national-assembly-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1911 Portuguese Constituent National Assembly election",
+      "weight": 0,
+      "when": {
+        "date": "1911-05-28",
+        "end": 1911,
+        "start": 1911
+      },
+      "wikidata": "Q7232627",
+      "wikipedia": {
+        "en": "1911 Portuguese National Constituent Assembly election",
+        "pt": "Eleições legislativas portuguesas de 1911"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
       "id": "1911-portuguese-presidential-election",
       "place": null,
       "region": "europe",
@@ -5968,6 +6238,204 @@
       "wikipedia": {
         "en": "1911 Portuguese presidential election",
         "pt": "Eleições presidenciais portuguesas de 1911"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1913-portuguese-legislative-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1913 Portuguese legislative election",
+      "weight": 0,
+      "when": {
+        "date": "1913-11-16",
+        "end": 1913,
+        "start": 1913
+      },
+      "wikidata": "Q28679597",
+      "wikipedia": {
+        "en": "1913 Portuguese legislative election",
+        "pt": "Eleições legislativas portuguesas de 1913"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1915-portuguese-legislative-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1915 Portuguese legislative election",
+      "weight": 0,
+      "when": {
+        "date": "1915-06-13",
+        "end": 1915,
+        "start": 1915
+      },
+      "wikidata": "Q7232749",
+      "wikipedia": {
+        "en": "1915 Portuguese legislative election",
+        "pt": "Eleições legislativas portuguesas de 1915"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1918-portuguese-general-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1918 Portuguese general election",
+      "weight": 0,
+      "when": {
+        "date": "1918-04-28",
+        "end": 1918,
+        "start": 1918
+      },
+      "wikidata": "Q7232714",
+      "wikipedia": {
+        "en": "1918 Portuguese general election",
+        "pt": "Eleições legislativas portuguesas de 1918"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1918-portuguese-presidential-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1918 Portuguese presidential election",
+      "weight": 0,
+      "when": {
+        "date": "1918-12-16",
+        "end": 1918,
+        "start": 1918
+      },
+      "wikidata": "Q21872940",
+      "wikipedia": {
+        "en": "1918 Portuguese presidential election",
+        "pt": "Eleições presidenciais portuguesas de Dezembro de 1918"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1919-portuguese-legislative-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1919 Portuguese legislative election",
+      "weight": 0,
+      "when": {
+        "date": "1919-05-11",
+        "end": 1919,
+        "start": 1919
+      },
+      "wikidata": "Q7232750",
+      "wikipedia": {
+        "en": "1919 Portuguese legislative election",
+        "pt": "Eleições legislativas portuguesas de 1919"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1919-portuguese-presidential-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1919 Portuguese presidential election",
+      "weight": 0,
+      "when": {
+        "date": "1919-12-06",
+        "end": 1919,
+        "start": 1919
+      },
+      "wikidata": "Q21872497",
+      "wikipedia": {
+        "en": "1919 Portuguese presidential election",
+        "pt": "Eleições presidenciais portuguesas de 1919"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1921-portuguese-legislative-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1921 Portuguese legislative election",
+      "weight": 0,
+      "when": {
+        "date": "1921-07-10",
+        "end": 1921,
+        "start": 1921
+      },
+      "wikidata": "Q7232751",
+      "wikipedia": {
+        "en": "1921 Portuguese legislative election",
+        "pt": "Eleições legislativas portuguesas de 1921"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1922-portuguese-legislative-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1922 Portuguese legislative election",
+      "weight": 0,
+      "when": {
+        "date": "1922-01-29",
+        "end": 1922,
+        "start": 1922
+      },
+      "wikidata": "Q7232752",
+      "wikipedia": {
+        "en": "1922 Portuguese legislative election",
+        "pt": "Eleições legislativas portuguesas de 1922"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1923-portuguese-presidential-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1923 Portuguese presidential election",
+      "weight": 0,
+      "when": {
+        "date": "1923-08-06",
+        "end": 1923,
+        "start": 1923
+      },
+      "wikidata": "Q21714338",
+      "wikipedia": {
+        "en": "1923 Portuguese presidential election",
+        "pt": "Eleições presidenciais portuguesas de 1923"
       }
     },
     {
@@ -6189,6 +6657,48 @@
         "date": "1961-02-04",
         "end": 1961,
         "start": 1961
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "april-1906-portuguese-legislative-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "April 1906 Portuguese legislative election",
+      "weight": 0,
+      "when": {
+        "date": "1906-04-29",
+        "end": 1906,
+        "start": 1906
+      },
+      "wikidata": "Q7232771",
+      "wikipedia": {
+        "en": "April 1906 Portuguese legislative election"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "august-1906-portuguese-legislative-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "August 1906 Portuguese legislative election",
+      "weight": 0,
+      "when": {
+        "date": "1906-08-19",
+        "end": 1906,
+        "start": 1906
+      },
+      "wikidata": "Q7232772",
+      "wikipedia": {
+        "en": "August 1906 Portuguese legislative election"
       }
     },
     {
@@ -7789,6 +8299,28 @@
       "wikipedia": {
         "en": "Lisbon Protocol",
         "pt": "Protocolo de Lisboa"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "lisbon-regicide",
+      "place": "lisbon",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Lisbon Regicide",
+      "weight": 0,
+      "when": {
+        "date": "1908-02-01",
+        "end": 1908,
+        "start": 1908
+      },
+      "wikidata": "Q2665185",
+      "wikipedia": {
+        "en": "Lisbon Regicide",
+        "pt": "Regicídio de 1908"
       }
     },
     {
