@@ -115,6 +115,11 @@ function render({ topology, review, schemas }) {
   const headEl = html('div', { class: 'record-head' });
   const editorMount = html('div', { class: 'editor-mount' });
   const noteEl = html('p', { class: 'save-note', role: 'status' });
+  // The bundle a save became when there was nothing to write it: the
+  // clipboard can refuse, and then this box is the only copy there is.
+  const bundleBox = html('details', { class: 'bundle-preview', hidden: 'hidden' });
+  const bundleText = html('pre', { class: 'preview' });
+  bundleBox.append(html('summary', {}, 'The bundle, as it would be filed'), bundleText);
 
   const reviewer = readReviewer();
   const nameInput = html('input', { type: 'text', id: 'reviewer-name', autocomplete: 'name' });
@@ -136,7 +141,7 @@ function render({ topology, review, schemas }) {
   const actions = html('div', { class: 'record-actions' });
   actions.append(saveButton, signButton, retractButton);
 
-  main.append(headEl, editorMount, signBox, actions, noteEl);
+  main.append(headEl, editorMount, signBox, actions, noteEl, bundleBox);
   layout.append(side, main);
   mount.appendChild(layout);
 
@@ -289,6 +294,9 @@ function render({ topology, review, schemas }) {
   }
 
   function say(outcome, what) {
+    bundleBox.hidden = outcome.mode !== 'bundle';
+    bundleText.textContent = outcome.mode === 'bundle' ? (outcome.text ?? '') : '';
+    if (outcome.mode === 'bundle' && !outcome.copied) bundleBox.open = true;
     if (outcome.mode === 'saved') {
       noteEl.textContent = `${what}: ${outcome.written.map((w) => w.path).join(', ')} written and the index rebuilt.`;
     } else if (outcome.mode === 'refused') {
