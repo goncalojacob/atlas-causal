@@ -6,11 +6,15 @@ import assert from 'node:assert/strict';
 import {
   FIELDS, CITATION_LISTS, ACTOR_LISTS, STEP_LISTS, emptyValues, slugify, parseBound, buildRecord, buildBundle,
   findSimilar, similarity, checkBundleShape, validateBundle, everythingCited,
+  valuesFromRecord, applyValues,
 } from '../src/contribute/bundle.js';
 import { buildTopology } from '../src/validate/core.js';
 import { createValidator } from '../src/validate/schema.js';
 import { createRegionDeriver } from '../src/util/geo.js';
-import { schemas, fixtures } from './helpers.mjs';
+import { readFile } from 'node:fs/promises';
+import path from 'node:path';
+import { readRecords } from '../tools/lib/read.mjs';
+import { schemas, fixtures, ROOT } from './helpers.mjs';
 
 const CONTEXT = { author: 'Fixture Contributor', today: '2026-09-01' };
 
@@ -324,4 +328,51 @@ test('the form builds a narrative out of rows, and a half window is no window', 
   }, CONTEXT);
   const bad = validateBundle({ schema: 1, records: [thin] }, topology, all);
   assert.deepEqual(bad.errors.map((e) => e.path), ['/steps/1/text']);
+});
+
+// --- reading a record back into the form -----------------------------------
+// The dashboard of M13 opens records that already exist. valuesFromRecord and
+// applyValues have to compose to the identity or a review that changed one
+// summary would rewrite half the file: this asserts it on the fixtures and on
+// every record in data/, bytes included.
+
+test('valuesFromRecord and applyValues round-trip the fixture records', async () => {
+  const { records } = await fixtures();
+  for (const record of records) {
+    if (!Object.hasOwn(FIELDS, record.kind)) continue;
+    const back = applyValues(record.kind, record, valuesFromRecord(record.kind, record));
+    assert.deepEqual(back, record, `${record.kind} ${record.id}`);
+  }
+});
+
+test('an unedited save of a record in data/ is byte identical', async () => {
+  const { entries, problems } = await readRecords(path.join(ROOT, 'data'));
+  assert.deepEqual(problems, []);
+  let seen = 0;
+  for (const { kind, file, record } of entries) {
+    if (!Object.hasOwn(FIELDS, kind)) continue;
+    const text = await readFile(path.join(ROOT, 'data', file), 'utf8');
+    const back = applyValues(kind, record, valuesFromRecord(kind, record));
+    assert.equal(`${JSON.stringify(back, null, 2)}\n`, text, `data/${file}`);
+    seen += 1;
+  }
+  assert.ok(seen > 0, 'no records read from data/');
+});
+
+test('an edit replaces the field and leaves the envelope alone', async () => {
+  const { byId } = await fixtures();
+  const record = byId['fixture-event-a'];
+  const values = valuesFromRecord('event', record);
+  values.summary = 'A different synthetic summary, written in a test.';
+  const back = applyValues('event', record, values);
+  assert.equal(back.summary, values.summary);
+  assert.equal(back.title, record.title);
+  assert.deepEqual(back.authors, record.authors);
+  assert.equal(back.created, record.created);
+  assert.equal(back.revised, record.revised);
+  assert.deepEqual(back.aliases, record.aliases);
+  assert.equal(back.supersededBy, record.supersededBy);
+  // The id is immutable once merged: everything that points here points at it.
+  const renamed = applyValues('event', record, { ...values, id: 'fixture-event-renamed' });
+  assert.equal(renamed.id, record.id);
 });

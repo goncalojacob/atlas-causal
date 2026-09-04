@@ -27,6 +27,7 @@ export const FIELDS = Object.freeze({
     { key: 'end', label: 'End year', input: 'text', path: '/when/end', hint: 'blank means the same year as the start; write "ongoing" for an interval with no end' },
     { key: 'date', label: 'Exact date', input: 'text', path: '/when/date', hint: 'display only, exactly as the source gives it: YYYY-MM-DD or YYYY-MM' },
     { key: 'calendar', label: 'Calendar', input: 'select', options: ['', 'julian', 'gregorian'], path: '/when/calendar', hint: 'of the exact date; Julian before 1582, Gregorian after, unless the source says otherwise' },
+    { key: 'endDate', label: 'Exact end date', input: 'text', path: '/when/endDate', hint: 'only for something that ran between two known days, in the same shape and calendar as the exact date' },
     { key: 'place', label: 'Place', input: 'select', optionsFrom: 'places', path: '/place', hint: 'a place record, chosen by name; add one below if it is not there yet. Leave it empty for a long process with no honest point' },
     { key: 'region', label: 'Timeline lane', input: 'select', optionsFrom: 'regions', path: '/region', hint: 'derived from the place; set it only when the derivation would be wrong, and always when there is no place' },
   ]),
@@ -65,6 +66,7 @@ export const FIELDS = Object.freeze({
     { key: 'type', label: 'Type', input: 'select', options: ['', ...RELATION_TYPES], path: '/type', required: true, hint: 'regime-of a state, succeeded by, member-of a body, part-of a body, led it, allied-with it' },
     { key: 'start', label: 'Start year', input: 'text', path: '/when/start', required: true, hint: 'the year the relation began; a range as 1400..1450' },
     { key: 'end', label: 'End year', input: 'text', path: '/when/end', hint: 'blank means the same year as the start; write "ongoing" for one that still holds' },
+    { key: 'date', label: 'Exact date', input: 'text', path: '/when/date', hint: 'display only, for a relation that began on a known day: YYYY-MM-DD or YYYY-MM' },
     { key: 'note', label: 'Note', input: 'text', path: '/note', hint: 'optional, short, and written by you: what the type and the dates cannot say' },
   ]),
   narrative: Object.freeze([
@@ -248,6 +250,7 @@ export function buildRecord(kind, values, context = {}) {
     const when = { start, end: parseEnd(v.end, start) };
     if (trimmed(v.date) !== '') when.date = trimmed(v.date);
     if (trimmed(v.calendar) !== '') when.calendar = trimmed(v.calendar);
+    if (trimmed(v.endDate) !== '') when.endDate = trimmed(v.endDate);
     return {
       ...envelope('event', trimmed(v.id), context),
       sources: citationsOf(v.citations),
@@ -314,13 +317,15 @@ export function buildRecord(kind, values, context = {}) {
     const to = trimmed(v.to);
     const type = trimmed(v.type);
     const start = parseBound(v.start);
+    const when = { start, end: parseEnd(v.end, start) };
+    if (trimmed(v.date) !== '') when.date = trimmed(v.date);
     return {
       ...envelope('relation', `${from}--${to}--${type}`, context),
       sources: citationsOf(v.citations),
       from,
       to,
       type,
-      when: { start, end: parseEnd(v.end, start) },
+      when,
       note: orNull(v.note),
     };
   }
@@ -365,6 +370,201 @@ export function buildRecord(kind, values, context = {}) {
 // entries: [{ kind, values }] in the order the contributor added them.
 export function buildBundle(entries, context = {}) {
   return { schema: 1, records: (entries ?? []).map((e) => buildRecord(e.kind, e.values, context)) };
+}
+
+// --- reading a record back into the form -----------------------------------
+// buildRecord runs one way, from what somebody typed to a record. The review
+// dashboard needs the other way: an existing record shown in the same inputs,
+// edited, and written back. Everything below is the inverse, and
+// tests/bundle.test.mjs asserts on every record in data/ that the two
+// compose to the identity — byte for byte, so that opening a record in the
+// dashboard and saving it unchanged does not touch the file.
+
+function boundText(bound) {
+  if (bound === null || bound === undefined) return '';
+  if (typeof bound === 'number') return String(bound);
+  if (isObject(bound) && typeof bound.min === 'number' && typeof bound.max === 'number') return `${bound.min}..${bound.max}`;
+  return String(bound);
+}
+
+// An end equal to the start is what a blank end field means, and a null end
+// is "ongoing": the shorthands the form offers are the shorthands it reads.
+function endText(end, start) {
+  if (end === null || end === undefined) return 'ongoing';
+  if (JSON.stringify(end) === JSON.stringify(start)) return '';
+  return boundText(end);
+}
+
+function numberText(value) {
+  return value === null || value === undefined ? '' : String(value);
+}
+
+function citationValues(list) {
+  return (Array.isArray(list) ? list : []).map((c) => ({ source: c?.source ?? '', locator: c?.locator ?? '' }));
+}
+
+export function valuesFromRecord(kind, record) {
+  const r = record ?? {};
+  const values = emptyValues(kind);
+  if (CITATION_LISTS[kind].some((l) => l.key === 'citations')) values.citations = citationValues(r.sources);
+
+  if (kind === 'event') {
+    const when = isObject(r.when) ? r.when : {};
+    return {
+      ...values,
+      id: r.id ?? '',
+      title: r.title ?? '',
+      summary: r.summary ?? '',
+      start: boundText(when.start),
+      end: endText(when.end, when.start),
+      date: when.date ?? '',
+      calendar: when.calendar ?? '',
+      endDate: when.endDate ?? '',
+      place: r.place ?? '',
+      region: r.region ?? '',
+      actors: (Array.isArray(r.actors) ? r.actors : []).map((a) => ({ actor: a?.actor ?? '', role: a?.role ?? '' })),
+    };
+  }
+
+  if (kind === 'place') {
+    const where = isObject(r.where) ? r.where : {};
+    return {
+      ...values,
+      id: r.id ?? '',
+      names: (r.names ?? []).join('; '),
+      lon: numberText(where.lon),
+      lat: numberText(where.lat),
+      precision: where.precision ?? '',
+      region: r.region ?? '',
+      summary: r.summary ?? '',
+    };
+  }
+
+  if (kind === 'actor') {
+    const when = isObject(r.when) ? r.when : {};
+    const where = isObject(r.where) ? r.where : {};
+    return {
+      ...values,
+      id: r.id ?? '',
+      names: (r.names ?? []).join('; '),
+      actorType: r.actorType ?? '',
+      summary: r.summary ?? '',
+      start: boundText(when.start),
+      end: endText(when.end, when.start),
+      label: where.label ?? '',
+      lon: numberText(where.lon),
+      lat: numberText(where.lat),
+      precision: where.precision ?? '',
+    };
+  }
+
+  if (kind === 'edge') {
+    const dispute = isObject(r.dispute) ? r.dispute : null;
+    return {
+      ...values,
+      id: r.id ?? '',
+      from: r.from ?? '',
+      to: r.to ?? '',
+      type: r.type ?? '',
+      confidence: r.confidence ?? '',
+      explanation: r.explanation ?? '',
+      disputeText: dispute?.text ?? '',
+      disputeCitations: citationValues(dispute?.sources),
+    };
+  }
+
+  if (kind === 'relation') {
+    const when = isObject(r.when) ? r.when : {};
+    return {
+      ...values,
+      id: r.id ?? '',
+      from: r.from ?? '',
+      to: r.to ?? '',
+      type: r.type ?? '',
+      start: boundText(when.start),
+      end: endText(when.end, when.start),
+      date: when.date ?? '',
+      note: r.note ?? '',
+    };
+  }
+
+  if (kind === 'narrative') {
+    const window = isObject(r.window) ? r.window : {};
+    return {
+      ...values,
+      id: r.id ?? '',
+      title: r.title ?? '',
+      summary: r.summary ?? '',
+      windowFrom: boundText(window.from),
+      windowTo: boundText(window.to),
+      steps: (Array.isArray(r.steps) ? r.steps : []).map((s) => ({ ref: s?.ref ?? '', text: s?.text ?? '' })),
+    };
+  }
+
+  if (kind === 'source') {
+    return {
+      ...values,
+      id: r.id ?? '',
+      type: r.type ?? '',
+      creators: (r.creators ?? []).join('; '),
+      title: r.title ?? '',
+      year: numberText(r.year),
+      publisher: r.publisher ?? '',
+      isbn: r.isbn ?? '',
+      doi: r.doi ?? '',
+      url: r.url ?? '',
+      accessed: r.accessed ?? '',
+      repository: r.repository ?? '',
+      reference: r.reference ?? '',
+    };
+  }
+
+  throw new Error(`kind must be event, edge, source, actor, place, relation or narrative, not "${kind}"`);
+}
+
+// The envelope is not the editor's to write. `created`, `aliases`,
+// `supersededBy` and `authors` carry the record's history, `status` is
+// Retract's to change and `revised` Sign's, and the id is immutable once
+// merged — everything that points at this record points at that string.
+const ENVELOPE_KEYS = Object.freeze(['schema', 'id', 'kind', 'status', 'supersededBy', 'aliases', 'authors', 'license', 'created', 'revised']);
+
+// Rebuild `built` in the key order of `original`, recursively, so that a save
+// that changed nothing produces the same bytes. Keys the original does not
+// have go last, in the order buildRecord wrote them.
+function orderLike(built, original) {
+  if (!isObject(built) || !isObject(original)) return built;
+  const out = {};
+  for (const key of Object.keys(original)) {
+    if (Object.hasOwn(built, key)) out[key] = orderLike(built[key], original[key]);
+  }
+  for (const key of Object.keys(built)) {
+    if (!Object.hasOwn(out, key)) out[key] = built[key];
+  }
+  return out;
+}
+
+// The original record with the edited fields replaced: the body from the form
+// values, the envelope from what was already on disk.
+export function applyValues(kind, record, values) {
+  const built = buildRecord(kind, values, {});
+  for (const key of ENVELOPE_KEYS) {
+    if (Object.hasOwn(record ?? {}, key)) built[key] = record[key];
+  }
+  // A place's point carries a label, which buildRecord sets from the display
+  // name because two fields for one thing would only let them disagree. An
+  // existing label that merely differs in case is still the record's own, so
+  // it is kept until the names themselves are edited.
+  if (kind === 'place' && isObject(record?.where) && isObject(built.where)
+    && (record.names ?? []).join(' ') === built.names.join(' ')) {
+    built.where.label = record.where.label;
+  }
+  // An edge that is not disputed has no dispute block, which the form leaves
+  // out and tools/new-record.mjs writes as an explicit null. Both are valid,
+  // and a review is not the place to churn one into the other.
+  if (kind === 'edge' && !Object.hasOwn(built, 'dispute') && record?.dispute === null) {
+    built.dispute = null;
+  }
+  return orderLike(built, record ?? {});
 }
 
 // --- duplicate search ------------------------------------------------------
