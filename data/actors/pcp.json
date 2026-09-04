@@ -16,10 +16,12 @@
   "revised": null,
   "review": {
     "flags": [
-      "date"
+      "date",
+      "wikidata-assigned-by-assistant"
     ],
     "note": "The birth or founding year, and the end where there is one, were written from memory."
   },
+  "wikidata": "Q769829",
   "sources": [
     {
       "source": "telo-2007-historia-contemporanea",

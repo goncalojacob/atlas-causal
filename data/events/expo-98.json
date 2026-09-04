@@ -16,10 +16,12 @@
   "revised": null,
   "review": {
     "flags": [
-      "date"
+      "date",
+      "wikidata-assigned-by-assistant"
     ],
     "note": "Written from memory, and STATUS.md lists it among the dates it is least sure of. Check the day, the month and the interval against a source before signing."
   },
+  "wikidata": "Q1139414",
   "sources": [
     {
       "source": "telo-2007-historia-contemporanea",

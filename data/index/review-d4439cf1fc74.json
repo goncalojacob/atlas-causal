@@ -595,7 +595,8 @@
       ],
       "review": {
         "flags": [
-          "date"
+          "date",
+          "wikidata-assigned-by-assistant"
         ],
         "note": "The birth or founding year, and the end where there is one, were written from memory."
       },
@@ -701,6 +702,11 @@
       "names": [
         "Berlin"
       ],
+      "review": {
+        "flags": [
+          "wikidata-assigned-by-assistant"
+        ]
+      },
       "status": "active"
     },
     {
@@ -2466,7 +2472,8 @@
       ],
       "review": {
         "flags": [
-          "date"
+          "date",
+          "wikidata-assigned-by-assistant"
         ],
         "note": "The birth or founding year, and the end where there is one, were written from memory."
       },
@@ -2491,7 +2498,8 @@
       ],
       "review": {
         "flags": [
-          "date"
+          "date",
+          "wikidata-assigned-by-assistant"
         ],
         "note": "The birth or founding year, and the end where there is one, were written from memory."
       },
@@ -2520,7 +2528,8 @@
       "review": {
         "flags": [
           "claim",
-          "date"
+          "date",
+          "wikidata-assigned-by-assistant"
         ],
         "note": "Closing this actor rather than renaming it is an editorial choice nobody has made deliberately; the closing year follows from it."
       },
@@ -2540,7 +2549,8 @@
       "kind": "event",
       "review": {
         "flags": [
-          "date"
+          "date",
+          "wikidata-assigned-by-assistant"
         ],
         "note": "Written from memory, and STATUS.md lists it among the dates it is least sure of. Check the day, the month and the interval against a source before signing."
       },
@@ -2667,7 +2677,8 @@
       ],
       "review": {
         "flags": [
-          "date"
+          "date",
+          "wikidata-assigned-by-assistant"
         ],
         "note": "A founding year from memory, and for the movements that were founded under another name it is also a question of which year the record should carry."
       },
@@ -3144,6 +3155,11 @@
         "Fundo Monetário Internacional",
         "FMI"
       ],
+      "review": {
+        "flags": [
+          "wikidata-assigned-by-assistant"
+        ]
+      },
       "status": "active"
     },
     {
@@ -3303,6 +3319,11 @@
       ],
       "id": "law-of-separation-1911",
       "kind": "event",
+      "review": {
+        "flags": [
+          "wikidata-assigned-by-assistant"
+        ]
+      },
       "status": "active",
       "title": "Law of Separation of Church and State"
     },
@@ -3341,6 +3362,11 @@
         "Portuguese Legion",
         "Legião Portuguesa"
       ],
+      "review": {
+        "flags": [
+          "wikidata-assigned-by-assistant"
+        ]
+      },
       "status": "active"
     },
     {
@@ -3636,6 +3662,11 @@
       "names": [
         "Lisbon"
       ],
+      "review": {
+        "flags": [
+          "wikidata-assigned-by-assistant"
+        ]
+      },
       "status": "active"
     },
     {
@@ -3650,6 +3681,11 @@
       "names": [
         "Luanda"
       ],
+      "review": {
+        "flags": [
+          "wikidata-assigned-by-assistant"
+        ]
+      },
       "status": "active"
     },
     {
@@ -3734,6 +3770,11 @@
       "names": [
         "Macau"
       ],
+      "review": {
+        "flags": [
+          "wikidata-assigned-by-assistant"
+        ]
+      },
       "status": "active"
     },
     {
@@ -3748,6 +3789,11 @@
       ],
       "id": "macau-handover-1999",
       "kind": "event",
+      "review": {
+        "flags": [
+          "wikidata-assigned-by-assistant"
+        ]
+      },
       "status": "active",
       "title": "Handover of Macau"
     },
@@ -4345,6 +4391,11 @@
       "names": [
         "New York"
       ],
+      "review": {
+        "flags": [
+          "wikidata-assigned-by-assistant"
+        ]
+      },
       "status": "active"
     },
     {
@@ -4359,6 +4410,11 @@
       ],
       "id": "noite-sangrenta-1921",
       "kind": "event",
+      "review": {
+        "flags": [
+          "wikidata-assigned-by-assistant"
+        ]
+      },
       "status": "active",
       "title": "Noite Sangrenta"
     },
@@ -4590,7 +4646,8 @@
       ],
       "review": {
         "flags": [
-          "date"
+          "date",
+          "wikidata-assigned-by-assistant"
         ],
         "note": "The birth or founding year, and the end where there is one, were written from memory."
       },
@@ -4679,6 +4736,11 @@
       "names": [
         "Pedrógão Grande"
       ],
+      "review": {
+        "flags": [
+          "wikidata-assigned-by-assistant"
+        ]
+      },
       "status": "active"
     },
     {
@@ -4812,6 +4874,11 @@
       "names": [
         "Porto"
       ],
+      "review": {
+        "flags": [
+          "wikidata-assigned-by-assistant"
+        ]
+      },
       "status": "active"
     },
     {
@@ -4900,6 +4967,11 @@
         "Corpo Expedicionário Português",
         "CEP"
       ],
+      "review": {
+        "flags": [
+          "wikidata-assigned-by-assistant"
+        ]
+      },
       "status": "active"
     },
     {
@@ -4950,6 +5022,11 @@
         "DGS",
         "Direcção-Geral de Segurança"
       ],
+      "review": {
+        "flags": [
+          "wikidata-assigned-by-assistant"
+        ]
+      },
       "status": "active"
     },
     {
@@ -5409,6 +5486,11 @@
       ],
       "id": "sidonio-pais-assassinated-1918",
       "kind": "event",
+      "review": {
+        "flags": [
+          "wikidata-assigned-by-assistant"
+        ]
+      },
       "status": "active",
       "title": "Assassination of Sidónio Pais"
     },
@@ -5564,6 +5646,11 @@
         "Third Portuguese Republic",
         "Terceira República Portuguesa"
       ],
+      "review": {
+        "flags": [
+          "wikidata-assigned-by-assistant"
+        ]
+      },
       "status": "active"
     },
     {

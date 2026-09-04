@@ -17,10 +17,12 @@
   "review": {
     "flags": [
       "claim",
-      "date"
+      "date",
+      "wikidata-assigned-by-assistant"
     ],
     "note": "Closing this actor rather than renaming it is an editorial choice nobody has made deliberately; the closing year follows from it."
   },
+  "wikidata": "Q52847",
   "sources": [
     {
       "source": "telo-2007-historia-contemporanea",
