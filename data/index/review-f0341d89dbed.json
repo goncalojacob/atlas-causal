@@ -6037,7 +6037,7 @@
     }
   ],
   "schema": 1,
-  "total": 586,
+  "total": 587,
   "warnings": [
     {
       "id": "1911-portuguese-presidential-election",
@@ -6134,6 +6134,12 @@
       "kind": "place",
       "message": "place is referenced by no event",
       "rule": "place-unused"
+    },
+    {
+      "id": "treaty-establishing-the-european-stability-mechanism",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
     },
     {
       "id": "treaty-of-friendship-and-cooperation-between-spain-and-portugal",

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "treaty-establishing-the-european-stability-mechanism",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q15991234",
+  "sitelinks": 5,
+  "wikipedia": {
+    "en": "Treaty establishing the European Stability Mechanism"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q15991234"
+    }
+  ],
+  "title": "Treaty Establishing the European Stability Mechanism",
+  "summary": "Wikidata item Q15991234, imported by tools/import/wikidata.mjs. The item's own description reads \"2012 Eurozone Treaty\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2012,
+    "end": 2012,
+    "date": "2012-02-02"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}

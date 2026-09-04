@@ -8555,6 +8555,27 @@
     {
       "actors": [],
       "aliases": [],
+      "id": "treaty-establishing-the-european-stability-mechanism",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Treaty Establishing the European Stability Mechanism",
+      "weight": 0,
+      "when": {
+        "date": "2012-02-02",
+        "end": 2012,
+        "start": 2012
+      },
+      "wikidata": "Q15991234",
+      "wikipedia": {
+        "en": "Treaty establishing the European Stability Mechanism"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
       "id": "treaty-of-friendship-and-cooperation-between-spain-and-portugal",
       "place": null,
       "region": "europe",
