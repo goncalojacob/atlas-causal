@@ -83,6 +83,22 @@ test('a digest carries what the queue reads and no prose', () => {
   assert.deepEqual(buildQueue([digest]), buildQueue([record]));
 });
 
+test('the queue says which records have a full entry, and the digest says it without the prose', () => {
+  const withEntry = draft({ id: 'fixture-event-entry', title: 'A title', body: '## A section\n\nA long text nobody wants in an index.' });
+  const without = draft({ id: 'fixture-event-plain', title: 'A title' });
+  assert.equal(buildQueue([withEntry])[0].body, true);
+  assert.equal(buildQueue([without])[0].body, false);
+  // The digest carries the answer and not the entry, and the queue built from
+  // it says the same thing as the queue built from the record.
+  const digest = digestOf(withEntry);
+  assert.equal(digest.entry, true);
+  assert.equal(JSON.stringify(digest).includes('A long text'), false);
+  assert.deepEqual(buildQueue([digest]), buildQueue([withEntry]));
+  assert.equal(Object.hasOwn(digestOf(without), 'entry'), false);
+  // Whitespace is not an entry.
+  assert.equal(buildQueue([draft({ id: 'fixture-event-blank', body: '   \n ' })])[0].body, false);
+});
+
 test('a record may ask for itself to be looked at', () => {
   const byId = warningsById([{ rule: 'degree-zero', id: 'fixture-draft' }]);
   assert.deepEqual(flagsOf(draft({ review: { flags: ['date'], note: 'the month is a guess' } }), byId), ['date', 'degree-zero']);

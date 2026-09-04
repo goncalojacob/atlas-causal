@@ -6,9 +6,34 @@ session ends. `ARCHITECTURE.md` is the target; this file is the position.
 
 ## Last updated
 
-2026-09-04, after M22 (`docs/m22-brief.md`): **the imported events from 1975
-on have been read one at a time, most of them are gone, and seven of M21's
-retractions are back.**
+2026-09-04, after M23 (`docs/m23-brief.md`): **a record can now have a full
+entry, and there is a page to read it on.**
+
+An optional `body` on `event`, `actor` and `place`, written in a closed
+Markdown subset that `src/markdown.js` renders — paragraphs, `##`/`###`
+headings, emphasis, lists, block quotes, links to records by id and to
+`http(s)` URLs, and citation marks `[^source-id p. 12]` that must name a work
+the record already cites. Everything outside the subset comes out as the
+characters somebody typed: **no raw HTML, no images, no other scheme**, and
+no permissive mode, because everything under `data/` is untrusted input.
+`entry.html?id=<id>` is one page for all three kinds — dates, place or seat,
+actors, relations, the summary, the rendered entry with a table of contents,
+the citations resolved and numbered, the narratives that walk it, and the way
+back to the atlas — and a record with no entry gets a page that says so and
+invites one. Every card and every search result offers **"Read the full
+entry"**. Rule 23 checks the marks and the links; the contribution form and
+the dashboard's editor draw the same preview from the same renderer.
+
+**No historical text was written.** Every `body` under `data/` is empty and
+the data is byte-for-byte what M22 left: 1,608 records, 0 errors, 3 warnings.
+The one entry that exists is synthetic, in `tests/fixtures/`, and exercises
+every construct of the subset and every refusal. 485 tests, two of them
+driving headless Chromium over `tools/serve.mjs`. `ARCHITECTURE.md` is at
+revision 18; deviations 165–169.
+
+Before that, 2026-09-04, after M22 (`docs/m22-brief.md`): **the imported
+events from 1975 on have been read one at a time, most of them are gone, and
+seven of M21's retractions are back.**
 
 M22 ran under a **rule change the owner made on 4 September at 21:30Z**, which
 overrides both its brief and M21's: *one honest edge, in either direction, is
@@ -407,7 +432,7 @@ correction bundle for the issue path, and the public site gains no backend.
 
 ## Phase
 
-**M0 to M20 built, plus the map usability work, on branch `m0`, pull
+**M0 to M23 built, plus the map usability work, on branch `m0`, pull
 request #1 open against `main`.** M13 was the last milestone in the original
 run protocol's order; M14 ran after it from `docs/m14-brief.md` on the
 `brief-m14` side branch, and M15 from `docs/m15-brief.md`, which arrived on
@@ -2206,6 +2231,44 @@ object. Every later card gets a file.
     disagrees with its own content. Neither is in a closed vocabulary because
     there is not one; `build-index.mjs` reports the set in use.
 
+165. **Rule 23 also checks the links, not only the citation marks.** The brief
+    names the marks as the rule ("a body citation to an uncited source is an
+    error") and says nothing about what happens when a `[text](event:some-id)`
+    goes nowhere. It is checked and reported the same way: a link that goes
+    nowhere is worse than no link, because it looks like a way through, and
+    rule 3 already exists for exactly this. Both are reported at `/body`,
+    because a body is prose and has no finer path than itself.
+
+166. **The review digest's flag is `entry`, not `body`.** `DIGEST_KEYS` is the
+    list of keys copied straight off the record, and a key named `body` would
+    have copied the longest prose in the atlas into the index. `entry: true`
+    is a name no record has, so the copy loop cannot pick it up, and
+    `hasBody()` answers the same question of a record and of the digest that
+    stands for it.
+
+167. **Record links are text in the two previews, not links.** The preview
+    sits inside a form with unsaved work in it, and a link that navigated away
+    would cost the contributor the draft. What they need to know is whether
+    the id resolves, and the notes under the preview say so in words —
+    against the topology *and* the records in the same bundle, since a
+    contribution may link to an event it is adding in the same breath.
+
+168. **`findChrome` now looks in a versioned browser cache.** The candidate
+    list held `/opt/pw-browsers/chromium/chrome-linux/chrome`, and a browser
+    cache keeps one directory per build (`chromium-1194`), so the headless
+    check the brief asks for would have skipped on the machine that has a
+    browser installed. `tools/screens.mjs` scans
+    `$PLAYWRIGHT_BROWSERS_PATH` for the versioned directories, newest first.
+    Nothing about the site changed; this is a tool finding what is there.
+
+169. **One fixture event gained a body; nothing under `data/` did.** The brief
+    says every `body` ships empty, and every record under `data/` does.
+    `tests/fixtures/data/events/fixture-event-a.json` carries a synthetic
+    entry that exercises every construct of the subset and every refusal, so
+    the page and the browser check have something real to render. It is
+    fixture text and describes nothing that happened, like the rest of that
+    directory.
+
 ## Dates to verify
 
 Everything below was written from memory and is where the owner's review
@@ -2536,12 +2599,15 @@ fixtures and the three static pages — sixteen assertions, all passing:
 
 - Repo: `~/atlas-causal`, branch `m0`.
 - Pull request #1: https://github.com/goncalojacob/atlas-causal/pull/1 — its
-  body is **59,640 of GitHub's 65,536 characters** after M17. Each milestone
+  body is **62,121 of GitHub's 65,536 bytes** after M23. Each milestone
   that adds a section pays for it by cutting an older one to a summary that
   points here: M8 cut M5's, M11 cut M7's, M12 cut M9's, M13 cut M10's, M14
-  cut M11's, M15 cut M12's, M16 cut M13's, M17 cut M14's — 4.5 KB freed
-  against M17's 4.2 KB, so the body is where it was and there is room for one
-  more section. M4's, M5's, M8's and M15's are the longest left written out.
+  cut M11's, M15 cut M12's, M16 cut M13's, M17 cut M14's. M22's section is
+  18.8 KB, far the largest, and left about 2.5 KB of headroom; **M23 cut two**
+  — M20's and M8's — to pay for its own 4.3 KB and leave 3.4 KB. The next
+  milestone has room for a short section only, and should cut M21's (5.0 KB)
+  or M22's before writing a long one. M4's, M6's and Map usability's are the
+  longest left written out.
   A `#### Checks for Mn` heading contains the string `## Checks`, so an
   insertion anchored on the top-level section has to search for
   `\n## Checks\n` and assert it found exactly one. Editing the body from a
@@ -2658,3 +2724,4 @@ M22 started 2026-09-04T22:23:00Z by shepherd
 M22 done
 
 M23 started 2026-09-04T23:21:03Z by shepherd
+M23 done
