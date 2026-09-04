@@ -1907,12 +1907,12 @@ fixtures and the three static pages — sixteen assertions, all passing:
 
 - Repo: `~/atlas-causal`, branch `m0`.
 - Pull request #1: https://github.com/goncalojacob/atlas-causal/pull/1 — its
-  body is **59,580 of GitHub's 65,536 characters** after M16. Each milestone
+  body is **59,640 of GitHub's 65,536 characters** after M17. Each milestone
   that adds a section pays for it by cutting an older one to a summary that
   points here: M8 cut M5's, M11 cut M7's, M12 cut M9's, M13 cut M10's, M14
-  cut M11's, M15 cut M12's, M16 cut M13's — which was the longest still
-  written out, and paid for M16's 4.9 KB with 6.7 KB, so there is room for
-  one more section and a little margin. M8's and M14's are the longest left.
+  cut M11's, M15 cut M12's, M16 cut M13's, M17 cut M14's — 4.5 KB freed
+  against M17's 4.2 KB, so the body is where it was and there is room for one
+  more section. M4's, M5's, M8's and M15's are the longest left written out.
   A `#### Checks for Mn` heading contains the string `## Checks`, so an
   insertion anchored on the top-level section has to search for
   `\n## Checks\n` and assert it found exactly one. Editing the body from a
@@ -2001,3 +2001,4 @@ M16 started 2026-09-04T10:20:57Z by shepherd
 M16 done
 
 M17 started 2026-09-04T11:23:24Z by shepherd
+M17 done
