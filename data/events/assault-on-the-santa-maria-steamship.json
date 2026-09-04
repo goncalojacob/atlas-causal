@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "assault-on-the-santa-maria-steamship",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q111584941",
+  "sitelinks": 0,
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q111584941"
+    }
+  ],
+  "title": "Assault on the Santa Maria steamship",
+  "summary": "Wikidata item Q111584941, imported by tools/import/wikidata.mjs. The item's own description reads \"robbery carried out on January 22, 1961, by Henrique Galvão and Camilo Mortágua\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1961,
+    "end": 1961,
+    "date": "1961-01-22"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}

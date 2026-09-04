@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "1974-guinean-general-election",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q5616517",
+  "sitelinks": 2,
+  "wikipedia": {
+    "en": "1974 Guinean general election"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5616517"
+    }
+  ],
+  "title": "1974 Guinean general election",
+  "summary": "Wikidata item Q5616517, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1974,
+    "end": 1974,
+    "date": "1974-12-27"
+  },
+  "place": null,
+  "region": "africa",
+  "actors": []
+}

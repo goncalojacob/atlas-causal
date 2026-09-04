@@ -54,3 +54,31 @@ created event 1965-portuguese-presidential-election from Q16153770
 refused Q2659185: no place record for its location and no lane reachable from its point; a placeless event must carry a region
 43 Wikipedia lead(s) cached under tools/import/cache/wikipedia
 24 created, 0 enriched, 1 refused, 0 ambiguous
+import: 25 item(s) this batch, 157 left after it, 40 call(s) spent
+created event 1965-portuguese-legislative-election from Q7232768
+created event 1969-portuguese-legislative-election from Q7232769
+created event mueda-massacre from Q10327164
+created event assault-on-the-santa-maria-steamship from Q111584941
+created event 1964-rosais-earthquake from Q10261580
+created event 1967-portugal-floods from Q48876710
+created event 1969-portugal-earthquake from Q3510571
+created event 1972-portuguese-presidential-election from Q16153777
+created event 1973-angolan-legislative-assembly-election from Q18160604
+created event 1973-portuguese-legislative-election from Q7232770
+created event 1974-guinean-general-election from Q5616517
+created event 1975-sao-tomean-legislative-election from Q7665728
+created event 1975-portuguese-constituent-assembly-election from Q3179037
+created event 1976-portuguese-legislative-election from Q1933123
+created event 1976-portuguese-presidential-election from Q1329844
+created event 1976-azorean-regional-election from Q4832852
+created event eleicoes-legislativas-regionais-na-madeira-em-1976 from Q10271597
+created event 1976-portuguese-local-elections from Q7232774
+created event 1977-mozambican-general-election from Q1731920
+created event 1979-portuguese-legislative-election from Q1579644
+created event 1979-portuguese-local-elections from Q7232776
+created event equality-statute-between-brazil-and-portugal from Q10275511
+created event wiriyamu-massacre from Q51750785
+created event q55499125 from Q55499125
+refused Q3586973: no place record for its location and no lane reachable from its point; a placeless event must carry a region
+38 Wikipedia lead(s) cached under tools/import/cache/wikipedia
+24 created, 0 enriched, 1 refused, 0 ambiguous

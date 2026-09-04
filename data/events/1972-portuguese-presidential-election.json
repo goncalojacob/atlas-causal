@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "1972-portuguese-presidential-election",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q16153777",
+  "sitelinks": 5,
+  "wikipedia": {
+    "en": "1972 Portuguese presidential election",
+    "pt": "Eleições presidenciais portuguesas de 1972"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q16153777"
+    }
+  ],
+  "title": "1972 Portuguese presidential election",
+  "summary": "Wikidata item Q16153777, imported by tools/import/wikidata.mjs. The item's own description reads \"Eleições presidenciais de candidato único do Estado Novo\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1972,
+    "end": 1972,
+    "date": "1972-07-25"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}

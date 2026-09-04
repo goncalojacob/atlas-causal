@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "eleicoes-legislativas-regionais-na-madeira-em-1976",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q10271597",
+  "sitelinks": 2,
+  "wikipedia": {
+    "pt": "Eleições legislativas regionais na Madeira em 1976"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q10271597"
+    }
+  ],
+  "title": "eleições legislativas regionais na Madeira em 1976",
+  "summary": "Wikidata item Q10271597, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1976,
+    "end": 1976,
+    "date": "1976-06-27"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}

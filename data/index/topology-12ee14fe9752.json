@@ -6899,6 +6899,50 @@
     {
       "actors": [],
       "aliases": [],
+      "id": "1964-rosais-earthquake",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1964 Rosais earthquake",
+      "weight": 0,
+      "when": {
+        "date": "1964-02-15",
+        "end": 1964,
+        "start": 1964
+      },
+      "wikidata": "Q10261580",
+      "wikipedia": {
+        "en": "1964 Rosais earthquake",
+        "pt": "Crise sísmica dos Rosais"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1965-portuguese-legislative-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1965 Portuguese legislative election",
+      "weight": 0,
+      "when": {
+        "date": "1965-11-07",
+        "end": 1965,
+        "start": 1965
+      },
+      "wikidata": "Q7232768",
+      "wikipedia": {
+        "en": "1965 Portuguese legislative election",
+        "pt": "Eleições legislativas portuguesas de 1965"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
       "id": "1965-portuguese-presidential-election",
       "place": null,
       "region": "europe",
@@ -6916,6 +6960,353 @@
       "wikipedia": {
         "en": "1965 Portuguese presidential election",
         "pt": "Eleições presidenciais portuguesas de 1965"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1967-portugal-floods",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1967 Portugal floods",
+      "weight": 0,
+      "when": {
+        "date": "1967-11-25",
+        "end": 1967,
+        "endDate": "1967-11-26",
+        "start": 1967
+      },
+      "wikidata": "Q48876710",
+      "wikipedia": {
+        "en": "1967 Portugal floods",
+        "pt": "Cheias de 1967 na região de Lisboa"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1969-portugal-earthquake",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1969 Portugal earthquake",
+      "weight": 0,
+      "when": {
+        "date": "1969-02-28",
+        "end": 1969,
+        "start": 1969
+      },
+      "wikidata": "Q3510571",
+      "wikipedia": {
+        "en": "1969 Portugal earthquake",
+        "pt": "Sismo de Portugal de 1969"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1969-portuguese-legislative-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1969 Portuguese legislative election",
+      "weight": 0,
+      "when": {
+        "date": "1969-10-26",
+        "end": 1969,
+        "start": 1969
+      },
+      "wikidata": "Q7232769",
+      "wikipedia": {
+        "en": "1969 Portuguese legislative election",
+        "pt": "Eleições legislativas portuguesas de 1969"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1972-portuguese-presidential-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1972 Portuguese presidential election",
+      "weight": 0,
+      "when": {
+        "date": "1972-07-25",
+        "end": 1972,
+        "start": 1972
+      },
+      "wikidata": "Q16153777",
+      "wikipedia": {
+        "en": "1972 Portuguese presidential election",
+        "pt": "Eleições presidenciais portuguesas de 1972"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1973-angolan-legislative-assembly-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1973 Angolan Legislative Assembly election",
+      "weight": 0,
+      "when": {
+        "end": 1973,
+        "start": 1973
+      },
+      "wikidata": "Q18160604",
+      "wikipedia": {
+        "en": "1973 Angolan Legislative Assembly election"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1973-portuguese-legislative-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1973 Portuguese legislative election",
+      "weight": 0,
+      "when": {
+        "date": "1973-10-28",
+        "end": 1973,
+        "start": 1973
+      },
+      "wikidata": "Q7232770",
+      "wikipedia": {
+        "en": "1973 Portuguese legislative election",
+        "pt": "Eleições legislativas portuguesas de 1973"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1974-guinean-general-election",
+      "place": null,
+      "region": "africa",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1974 Guinean general election",
+      "weight": 0,
+      "when": {
+        "date": "1974-12-27",
+        "end": 1974,
+        "start": 1974
+      },
+      "wikidata": "Q5616517",
+      "wikipedia": {
+        "en": "1974 Guinean general election"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1975-portuguese-constituent-assembly-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1975 Portuguese Constituent Assembly election",
+      "weight": 0,
+      "when": {
+        "date": "1975-04-25",
+        "end": 1975,
+        "start": 1975
+      },
+      "wikidata": "Q3179037",
+      "wikipedia": {
+        "en": "1975 Portuguese Constituent Assembly election",
+        "pt": "Eleições para a Assembleia Constituinte Portuguesa de 1975"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1975-sao-tomean-legislative-election",
+      "place": null,
+      "region": "africa",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1975 São Toméan legislative election",
+      "weight": 0,
+      "when": {
+        "end": 1975,
+        "start": 1975
+      },
+      "wikidata": "Q7665728",
+      "wikipedia": {
+        "en": "1975 São Toméan parliamentary election"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1976-azorean-regional-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1976 Azorean regional election",
+      "weight": 0,
+      "when": {
+        "date": "1976-06-27",
+        "end": 1976,
+        "start": 1976
+      },
+      "wikidata": "Q4832852",
+      "wikipedia": {
+        "en": "1976 Azorean regional election",
+        "pt": "Eleições legislativas regionais nos Açores em 1976"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1976-portuguese-legislative-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1976 Portuguese legislative election",
+      "weight": 0,
+      "when": {
+        "date": "1976-04-25",
+        "end": 1976,
+        "start": 1976
+      },
+      "wikidata": "Q1933123",
+      "wikipedia": {
+        "en": "1976 Portuguese legislative election",
+        "pt": "Eleições legislativas portuguesas de 1976"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1976-portuguese-local-elections",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1976 Portuguese local elections",
+      "weight": 0,
+      "when": {
+        "date": "1976-12-12",
+        "end": 1976,
+        "start": 1976
+      },
+      "wikidata": "Q7232774",
+      "wikipedia": {
+        "en": "1976 Portuguese local elections",
+        "pt": "Eleições autárquicas portuguesas de 1976"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1976-portuguese-presidential-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1976 Portuguese presidential election",
+      "weight": 0,
+      "when": {
+        "date": "1976-06-27",
+        "end": 1976,
+        "start": 1976
+      },
+      "wikidata": "Q1329844",
+      "wikipedia": {
+        "en": "1976 Portuguese presidential election",
+        "pt": "Eleições presidenciais portuguesas de 1976"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1977-mozambican-general-election",
+      "place": null,
+      "region": "africa",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1977 Mozambican general election",
+      "weight": 0,
+      "when": {
+        "date": "1977-09-25",
+        "end": 1977,
+        "start": 1977
+      },
+      "wikidata": "Q1731920",
+      "wikipedia": {
+        "en": "1977 Mozambican general election"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1979-portuguese-legislative-election",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1979 Portuguese legislative election",
+      "weight": 0,
+      "when": {
+        "date": "1979-12-02",
+        "end": 1979,
+        "start": 1979
+      },
+      "wikidata": "Q1579644",
+      "wikipedia": {
+        "en": "1979 Portuguese legislative election",
+        "pt": "Eleições legislativas portuguesas de 1979"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "1979-portuguese-local-elections",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "1979 Portuguese local elections",
+      "weight": 0,
+      "when": {
+        "date": "1979-12-16",
+        "end": 1979,
+        "start": 1979
+      },
+      "wikidata": "Q7232776",
+      "wikipedia": {
+        "en": "1979 Portuguese local elections",
+        "pt": "Eleições autárquicas portuguesas de 1979"
       }
     },
     {
@@ -7117,6 +7508,24 @@
       "wikipedia": {
         "en": "April 1906 Portuguese legislative election"
       }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "assault-on-the-santa-maria-steamship",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Assault on the Santa Maria steamship",
+      "weight": 0,
+      "when": {
+        "date": "1961-01-22",
+        "end": 1961,
+        "start": 1961
+      },
+      "wikidata": "Q111584941"
     },
     {
       "actors": [],
@@ -7985,6 +8394,49 @@
         "date": "1977-03-28",
         "end": 1977,
         "start": 1977
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "eleicoes-legislativas-regionais-na-madeira-em-1976",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "eleições legislativas regionais na Madeira em 1976",
+      "weight": 0,
+      "when": {
+        "date": "1976-06-27",
+        "end": 1976,
+        "start": 1976
+      },
+      "wikidata": "Q10271597",
+      "wikipedia": {
+        "pt": "Eleições legislativas regionais na Madeira em 1976"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "equality-statute-between-brazil-and-portugal",
+      "place": null,
+      "region": "americas",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Equality Statute between Brazil and Portugal",
+      "weight": 0,
+      "when": {
+        "date": "1971-09-07",
+        "end": 1971,
+        "start": 1971
+      },
+      "wikidata": "Q10275511",
+      "wikipedia": {
+        "en": "Equality Statute between Brazil and Portugal",
+        "pt": "Estatuto da Igualdade"
       }
     },
     {
@@ -9010,6 +9462,27 @@
       }
     },
     {
+      "actors": [],
+      "aliases": [],
+      "id": "mueda-massacre",
+      "place": null,
+      "region": "africa",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Mueda massacre",
+      "weight": 0,
+      "when": {
+        "date": "1960-06-16",
+        "end": 1960,
+        "start": 1960
+      },
+      "wikidata": "Q10327164",
+      "wikipedia": {
+        "pt": "Massacre de Mueda"
+      }
+    },
+    {
       "actors": [
         {
           "actor": "vasco-goncalves",
@@ -9348,6 +9821,24 @@
         "start": 1968
       },
       "wikidata": "Q2115000"
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "q55499125",
+      "place": null,
+      "region": "asia",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Q55499125",
+      "weight": 0,
+      "when": {
+        "date": "1975-08-31",
+        "end": 1975,
+        "start": 1975
+      },
+      "wikidata": "Q55499125"
     },
     {
       "actors": [
@@ -9767,6 +10258,28 @@
         "date": "1955-12-14",
         "end": 1955,
         "start": 1955
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "wiriyamu-massacre",
+      "place": null,
+      "region": "africa",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Wiriyamu Massacre",
+      "weight": 0,
+      "when": {
+        "date": "1972-12",
+        "end": 1972,
+        "start": 1972
+      },
+      "wikidata": "Q51750785",
+      "wikipedia": {
+        "en": "Wiriyamu Massacre",
+        "pt": "Massacre de Wiriyamu"
       }
     },
     {

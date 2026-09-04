@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "1977-mozambican-general-election",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q1731920",
+  "sitelinks": 4,
+  "wikipedia": {
+    "en": "1977 Mozambican general election"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1731920"
+    }
+  ],
+  "title": "1977 Mozambican general election",
+  "summary": "Wikidata item Q1731920, imported by tools/import/wikidata.mjs. The item's own description reads \"First Elections of the Republic of Mozambique\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1977,
+    "end": 1977,
+    "date": "1977-09-25"
+  },
+  "place": null,
+  "region": "africa",
+  "actors": []
+}

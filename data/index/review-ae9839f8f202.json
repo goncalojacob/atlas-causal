@@ -6037,7 +6037,7 @@
     }
   ],
   "schema": 1,
-  "total": 636,
+  "total": 660,
   "warnings": [
     {
       "id": "1890-portuguese-legislative-election",
@@ -6304,7 +6304,115 @@
       "rule": "degree-zero"
     },
     {
+      "id": "1964-rosais-earthquake",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1965-portuguese-legislative-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
       "id": "1965-portuguese-presidential-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1967-portugal-floods",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1969-portugal-earthquake",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1969-portuguese-legislative-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1972-portuguese-presidential-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1973-angolan-legislative-assembly-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1973-portuguese-legislative-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1974-guinean-general-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1975-portuguese-constituent-assembly-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1975-sao-tomean-legislative-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1976-azorean-regional-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1976-portuguese-legislative-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1976-portuguese-local-elections",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1976-portuguese-presidential-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1977-mozambican-general-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1979-portuguese-legislative-election",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1979-portuguese-local-elections",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"
@@ -6328,6 +6436,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "assault-on-the-santa-maria-steamship",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
       "id": "august-1906-portuguese-legislative-election",
       "kind": "event",
       "message": "event has no edges",
@@ -6341,6 +6455,18 @@
     },
     {
       "id": "batepa-massacre",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "eleicoes-legislativas-regionais-na-madeira-em-1976",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "equality-statute-between-brazil-and-portugal",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"
@@ -6388,6 +6514,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "mueda-massacre",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
       "id": "portuguese-constitutional-referendum-1933",
       "kind": "event",
       "message": "event has no edges",
@@ -6419,6 +6551,12 @@
     },
     {
       "id": "q2115000",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "q55499125",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"
@@ -6464,6 +6602,12 @@
       "kind": "source",
       "message": "source is cited by nothing under validation",
       "rule": "no-citers"
+    },
+    {
+      "id": "wiriyamu-massacre",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
     }
   ]
 }

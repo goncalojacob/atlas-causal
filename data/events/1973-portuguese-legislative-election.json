@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "1973-portuguese-legislative-election",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q7232770",
+  "sitelinks": 4,
+  "wikipedia": {
+    "en": "1973 Portuguese legislative election",
+    "pt": "Eleições legislativas portuguesas de 1973"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7232770"
+    }
+  ],
+  "title": "1973 Portuguese legislative election",
+  "summary": "Wikidata item Q7232770, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1973,
+    "end": 1973,
+    "date": "1973-10-28"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}

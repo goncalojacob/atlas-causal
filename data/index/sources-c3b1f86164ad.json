@@ -9530,7 +9530,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 66,
+      "citationCount": 90,
       "citations": [
         {
           "dissent": false,
@@ -9798,9 +9798,117 @@
         },
         {
           "dissent": false,
+          "id": "1964-rosais-earthquake",
+          "kind": "event",
+          "locator": "Q10261580"
+        },
+        {
+          "dissent": false,
+          "id": "1965-portuguese-legislative-election",
+          "kind": "event",
+          "locator": "Q7232768"
+        },
+        {
+          "dissent": false,
           "id": "1965-portuguese-presidential-election",
           "kind": "event",
           "locator": "Q16153770"
+        },
+        {
+          "dissent": false,
+          "id": "1967-portugal-floods",
+          "kind": "event",
+          "locator": "Q48876710"
+        },
+        {
+          "dissent": false,
+          "id": "1969-portugal-earthquake",
+          "kind": "event",
+          "locator": "Q3510571"
+        },
+        {
+          "dissent": false,
+          "id": "1969-portuguese-legislative-election",
+          "kind": "event",
+          "locator": "Q7232769"
+        },
+        {
+          "dissent": false,
+          "id": "1972-portuguese-presidential-election",
+          "kind": "event",
+          "locator": "Q16153777"
+        },
+        {
+          "dissent": false,
+          "id": "1973-angolan-legislative-assembly-election",
+          "kind": "event",
+          "locator": "Q18160604"
+        },
+        {
+          "dissent": false,
+          "id": "1973-portuguese-legislative-election",
+          "kind": "event",
+          "locator": "Q7232770"
+        },
+        {
+          "dissent": false,
+          "id": "1974-guinean-general-election",
+          "kind": "event",
+          "locator": "Q5616517"
+        },
+        {
+          "dissent": false,
+          "id": "1975-portuguese-constituent-assembly-election",
+          "kind": "event",
+          "locator": "Q3179037"
+        },
+        {
+          "dissent": false,
+          "id": "1975-sao-tomean-legislative-election",
+          "kind": "event",
+          "locator": "Q7665728"
+        },
+        {
+          "dissent": false,
+          "id": "1976-azorean-regional-election",
+          "kind": "event",
+          "locator": "Q4832852"
+        },
+        {
+          "dissent": false,
+          "id": "1976-portuguese-legislative-election",
+          "kind": "event",
+          "locator": "Q1933123"
+        },
+        {
+          "dissent": false,
+          "id": "1976-portuguese-local-elections",
+          "kind": "event",
+          "locator": "Q7232774"
+        },
+        {
+          "dissent": false,
+          "id": "1976-portuguese-presidential-election",
+          "kind": "event",
+          "locator": "Q1329844"
+        },
+        {
+          "dissent": false,
+          "id": "1977-mozambican-general-election",
+          "kind": "event",
+          "locator": "Q1731920"
+        },
+        {
+          "dissent": false,
+          "id": "1979-portuguese-legislative-election",
+          "kind": "event",
+          "locator": "Q1579644"
+        },
+        {
+          "dissent": false,
+          "id": "1979-portuguese-local-elections",
+          "kind": "event",
+          "locator": "Q7232776"
         },
         {
           "dissent": false,
@@ -9822,6 +9930,12 @@
         },
         {
           "dissent": false,
+          "id": "assault-on-the-santa-maria-steamship",
+          "kind": "event",
+          "locator": "Q111584941"
+        },
+        {
+          "dissent": false,
           "id": "august-1906-portuguese-legislative-election",
           "kind": "event",
           "locator": "Q7232772"
@@ -9837,6 +9951,18 @@
           "id": "batepa-massacre",
           "kind": "event",
           "locator": "Q1851212"
+        },
+        {
+          "dissent": false,
+          "id": "eleicoes-legislativas-regionais-na-madeira-em-1976",
+          "kind": "event",
+          "locator": "Q10271597"
+        },
+        {
+          "dissent": false,
+          "id": "equality-statute-between-brazil-and-portugal",
+          "kind": "event",
+          "locator": "Q10275511"
         },
         {
           "dissent": false,
@@ -9876,6 +10002,12 @@
         },
         {
           "dissent": false,
+          "id": "mueda-massacre",
+          "kind": "event",
+          "locator": "Q10327164"
+        },
+        {
+          "dissent": false,
           "id": "portuguese-constitutional-referendum-1933",
           "kind": "event",
           "locator": "Q7232706"
@@ -9912,6 +10044,12 @@
         },
         {
           "dissent": false,
+          "id": "q55499125",
+          "kind": "event",
+          "locator": "Q55499125"
+        },
+        {
+          "dissent": false,
           "id": "treaty-establishing-the-european-stability-mechanism",
           "kind": "event",
           "locator": "Q15991234"
@@ -9927,6 +10065,12 @@
           "id": "treaty-of-windsor",
           "kind": "event",
           "locator": "Q2518953"
+        },
+        {
+          "dissent": false,
+          "id": "wiriyamu-massacre",
+          "kind": "event",
+          "locator": "Q51750785"
         }
       ],
       "created": "2026-09-04",
