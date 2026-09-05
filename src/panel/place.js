@@ -12,6 +12,10 @@ import { formatYear } from '../util/dates.js';
 import { overlaps, resolveWindow } from '../util/window.js';
 import { sectionHtml, openSection } from './sections.js';
 
+// The section key of the list below, so panel.js can find it in the card it
+// is about to rewrite without spelling the string a second time.
+export const EVENTS_SECTION = 'events';
+
 // The actors that appear most often at this place. Ties break by name, so the
 // list is the same on every machine.
 const MOST = 6;
@@ -32,16 +36,34 @@ function actorsHere(ctx, events) {
     .slice(0, MOST);
 }
 
-export function placeCardHtml(ctx, place, state, { remembered = null } = {}) {
+// The place's own history, faded where it falls outside the band. The one
+// part of any card the window decides, so it is a function of its own: when
+// the band moves, panel.js rewrites this section rather than the card, and
+// the two have to be the same list or the rewrite would be a second version
+// of the rule (B12, A3).
+export function placeEventsSection(ctx, place, state) {
   const events = ctx.atlas.eventsByPlace.get(place.id) ?? [];
   const window = resolveWindow(state, ctx.atlas.extent);
-  const variants = (place.names ?? []).slice(1);
   const inside = events.filter((e) => overlaps(e.when, window)).length;
   const rows = events.map((event) => `<li class="actor-row ${overlaps(event.when, window) ? '' : 'faded'}">
     <span class="when">${esc(formatYear(ctx.startYear(event)))}</span>
     <button type="button" class="link" data-action="select" data-id="${esc(event.id)}">${esc(event.title)}</button>
     <span class="muted">${esc(ctx.laneLabel(event.region))}</span>
   </li>`);
+  return {
+    key: EVENTS_SECTION,
+    label: 'What happened here',
+    count: events.length,
+    hint: events.length
+      ? (inside === events.length ? 'All of them are inside the window.' : `${inside} of them ${inside === 1 ? 'is' : 'are'} inside the window; the rest are faded.`)
+      : '',
+    body: events.length ? `<ul class="actor-rows">${rows.join('')}</ul>` : '<p class="muted">No event happens here yet.</p>',
+  };
+}
+
+export function placeCardHtml(ctx, place, state, { remembered = null } = {}) {
+  const events = ctx.atlas.eventsByPlace.get(place.id) ?? [];
+  const variants = (place.names ?? []).slice(1);
   const actors = actorsHere(ctx, events).map(({ record, count }) => `<li class="actor-row">
     <button type="button" class="link" data-action="actor" data-id="${esc(record.id)}">${esc(record.name)}</button>
     <span class="count">${count} event${count === 1 ? '' : 's'} here</span>
@@ -49,15 +71,7 @@ export function placeCardHtml(ctx, place, state, { remembered = null } = {}) {
   // The same arrangement as the other cards (sections.js). "What happened
   // here" is what a place opens on: it is the place's own history, and there
   // are no consequences on this card to fall back to.
-  const sections = [{
-    key: 'events',
-    label: 'What happened here',
-    count: events.length,
-    hint: events.length
-      ? (inside === events.length ? 'All of them are inside the window.' : `${inside} of them ${inside === 1 ? 'is' : 'are'} inside the window; the rest are faded.`)
-      : '',
-    body: events.length ? `<ul class="actor-rows">${rows.join('')}</ul>` : '<p class="muted">No event happens here yet.</p>',
-  }];
+  const sections = [placeEventsSection(ctx, place, state)];
   if (actors.length) {
     sections.push({
       key: 'actors', label: 'Who turns up here', count: actors.length, body: `<ul class="actor-rows">${actors.join('')}</ul>`,

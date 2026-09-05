@@ -8,7 +8,26 @@
 
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { withBrowser, open, skip } from './browser.mjs';
+import { withBrowser, open, waitFor, skip } from './browser.mjs';
+
+// A real drag of one end of the time band: press on the handle, move across
+// the lanes, let go. The events are dispatched rather than synthesised at a
+// higher level because what is being tested is that the panel survives the
+// twenty state changes a drag makes, and the handlers that make them are the
+// timeline's own (timeline.js).
+const dragWindowTo = (kind, x) => `
+  const root = document.querySelector('#timeline svg');
+  const handle = root.querySelector('[data-window="${kind}"]');
+  const box = handle.getBoundingClientRect();
+  const y = box.top + box.height / 2;
+  const at = (clientX, type, target) => target.dispatchEvent(new PointerEvent(type, {
+    bubbles: true, clientX, clientY: y, pointerId: 1,
+  }));
+  const start = box.left + box.width / 2;
+  at(start, 'pointerdown', handle);
+  for (let i = 1; i <= 20; i += 1) at(start + ((${x} - start) * i) / 20, 'pointermove', root);
+  at(${x}, 'pointerup', root);
+  return true;`;
 
 // What the reader can see of the sections: which are there, and which is open.
 const SECTIONS = `return [...document.querySelectorAll(".panel .card-section")].map((s) => ({
@@ -194,5 +213,121 @@ test('a walk whose steps all stand is left alone and says nothing', { skip }, as
       { fixtures: '1', selected: 'fixture-event-b', chain: 'fixture-event-a--fixture-event-b--caused' },
     );
     assert.equal(await page.eval('return document.querySelectorAll(".panel .notice.status").length;'), 0);
+  });
+});
+
+// The card used to be rebuilt on every state change, so the reader could not
+// read an explanation and move the band at the same time: the first pointer
+// move closed the <details> under them (B12, A3). The card is now drawn again
+// only when its key changes — what is open, the chain, the horizon, the
+// window — and the window's own bits are written into the card that is there.
+test('a drag of the band leaves the open explanation open and moves the horizon', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await open(page, url('?selected=carnation-revolution-1974'));
+    await waitFor(page, 'return document.querySelectorAll("#timeline [data-window]").length === 3;', 'the band');
+
+    // Open the first "Why" in Consequences and wait for its text, so that
+    // what is being protected is a section with something in it.
+    await page.eval(`document.querySelector('.card-section[data-section="consequences"] details[data-edge] summary').click();
+      return true;`);
+    await waitFor(page, 'return Boolean(document.querySelector(\'.card-section[data-section="consequences"] details[data-edge] .explanation\'));', 'the explanation');
+
+    // Marks on the nodes themselves: a property does not survive innerHTML,
+    // so this says the card was touched up rather than built again.
+    const before = await page.eval(`document.querySelector('.panel .event-head h2').dataset.kept = 'yes';
+      document.querySelector('.card-section[data-section="consequences"] details[data-edge]').dataset.kept = 'yes';
+      return {
+        horizon: document.querySelector('.panel .horizon .count').textContent,
+        summary: document.querySelector('.panel .summary p').textContent.slice(0, 20),
+      };`);
+    assert.equal(before.horizon, '46');
+
+    await page.eval(dragWindowTo('to', 450));
+    await waitFor(page, 'return /to=/.test(location.search);', 'the window in the URL');
+
+    const after = await page.eval(`return {
+      head: document.querySelector('.panel .event-head h2').dataset.kept ?? null,
+      details: document.querySelector('.card-section[data-section="consequences"] details[data-edge]').dataset.kept ?? null,
+      open: document.querySelector('.card-section[data-section="consequences"] details[data-edge]').open,
+      explanation: Boolean(document.querySelector('.card-section[data-section="consequences"] details[data-edge] .explanation')),
+      horizon: document.querySelector('.panel .horizon .count').textContent,
+      asks: document.querySelector('.panel .horizon summary').textContent.replace(/\\s+/g, ' ').trim(),
+      summary: document.querySelector('.panel .summary p').textContent.slice(0, 20),
+      to: Number(new URLSearchParams(location.search).get('to')),
+    };`);
+    assert.equal(after.head, 'yes', 'the card was not rebuilt');
+    assert.equal(after.details, 'yes');
+    assert.equal(after.open, true, 'the explanation the reader was reading is still open');
+    assert.equal(after.explanation, true, 'and its text was not thrown away and re-fetched');
+    assert.equal(after.summary, before.summary);
+    // The one thing that did change: the horizon's default year is the far
+    // end of the band, so its question and its count followed the drag.
+    assert.ok(after.to < 2025 && after.to > 1400, `the band moved: to=${after.to}`);
+    assert.notEqual(after.horizon, before.horizon);
+    assert.equal(after.asks, `What did this lead to by ${after.to}? ${after.horizon}`);
+  });
+});
+
+// The map publishes the box it is looking at 180 ms after a zoom settles, and
+// that write used to replace a cluster's member list with "Pick an event"
+// about a second after the reader asked for it (A5, B12).
+test('a cluster’s list survives the bbox the zoom writes when it settles', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    // Nothing open: the panel is the intro, and the card the list must not be
+    // replaced by is what the atlas shows before anything is chosen.
+    await open(page, url(''), 'return Boolean(document.querySelector(".panel .intro"));');
+    await waitFor(page, 'return document.querySelectorAll("#map .mark.cluster.splittable").length > 0;', 'a cluster');
+
+    await page.eval(`document.querySelector('#map .mark.cluster.splittable')
+      .dispatchEvent(new MouseEvent('click', { bubbles: true }));
+      return true;`);
+    const members = await page.eval('return document.querySelectorAll(".panel .cluster-list .actor-row").length;');
+    assert.ok(members > 1, `the list has its members: ${members}`);
+
+    // The zoom animation, then the settle, then the write. Waiting on the
+    // URL rather than on a timer: the box is what used to wipe the list.
+    await waitFor(page, 'return /bbox=/.test(location.search);', 'the box the zoom published');
+    assert.equal(
+      await page.eval('return document.querySelectorAll(".panel .cluster-list .actor-row").length;'),
+      members,
+      'the list is still the list',
+    );
+    assert.equal(await page.eval('return document.querySelectorAll(".panel .intro").length;'), 0);
+
+    // And choosing a member still opens it, including the one the atlas may
+    // already have open: the list is not state, so nothing in the key says
+    // it is there, and the panel has to know it on its own.
+    const id = await page.eval('return document.querySelector(".panel .cluster-list [data-action=\'select\']").dataset.id;');
+    await page.eval('document.querySelector(".panel .cluster-list [data-action=\'select\']").click(); return true;');
+    await waitFor(page, 'return Boolean(document.querySelector(".panel .event-head h2"));', 'the card');
+    assert.equal(await page.eval('return new URLSearchParams(location.search).get("selected");'), id);
+  });
+});
+
+// A place's list is faded event by event against the band, and the count in
+// the hint says how many are inside it. Both follow the window without the
+// card being drawn again.
+test('a place’s faded rows follow the band without rebuilding the card', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await open(page, url('?place=lisbon'));
+    await waitFor(page, 'return document.querySelectorAll("#timeline [data-window]").length === 3;', 'the band');
+    const before = await page.eval(`document.querySelector('.panel .place-head h2').dataset.kept = 'yes';
+      return {
+        faded: document.querySelectorAll('.card-section[data-section="events"] .actor-row.faded').length,
+        hint: document.querySelector('.card-section[data-section="events"] .hint').textContent.trim(),
+      };`);
+    assert.equal(before.faded, 0, 'the whole span: nothing is outside it');
+    assert.match(before.hint, /All of them are inside the window\./);
+
+    await page.eval(dragWindowTo('to', 450));
+    await waitFor(page, 'return /to=/.test(location.search);', 'the window in the URL');
+    const after = await page.eval(`return {
+      head: document.querySelector('.panel .place-head h2').dataset.kept ?? null,
+      faded: document.querySelectorAll('.card-section[data-section="events"] .actor-row.faded').length,
+      hint: document.querySelector('.card-section[data-section="events"] .hint').textContent.trim(),
+    };`);
+    assert.equal(after.head, 'yes', 'the card was not rebuilt');
+    assert.ok(after.faded > 0, `the rows outside the band are faded: ${after.faded}`);
+    assert.match(after.hint, /inside the window; the rest are faded\./);
   });
 });

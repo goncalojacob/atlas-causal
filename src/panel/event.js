@@ -149,17 +149,23 @@ function whereHtml(ctx, event) {
 // Where this event is drawn, and by what rule. An event is in exactly one
 // lane and the rule that picked it is mechanical, so it can be stated: a
 // rule the reader cannot see is a rule they cannot check.
-function drawnHtml(ctx, event, state) {
+//
+// Which lane that is depends on the window — the heaviest of an event's
+// actors is counted inside the band (lanes.js) — so this is one of the two
+// bits of the event card the band moves. It carries a slot of its own
+// because panel.js writes it back into a card it is deliberately not
+// rebuilding (B12, A3).
+export function drawnHtml(ctx, event, state) {
   const lanes = ctx.lanes(state);
   const { lane, reason, others } = laneExplain(event, lanes, state.group, ctx.atlas);
   if (!lane) {
-    return `<p class="drawn muted">Drawn in a packed row: with no grouping the timeline fits the bars
+    return `<p class="drawn muted" data-slot="drawn">Drawn in a packed row: with no grouping the timeline fits the bars
       where they go and the graph has no bands.</p>`;
   }
   const also = others.length
     ? ` Also involves ${others.map((o) => esc(o.label)).join(', ')}.`
     : '';
-  return `<p class="drawn muted">Drawn in the <strong>${esc(lane.label)}</strong> lane${reason ? ` (${esc(reason)})` : ''}.${also}</p>`;
+  return `<p class="drawn muted" data-slot="drawn">Drawn in the <strong>${esc(lane.label)}</strong> lane${reason ? ` (${esc(reason)})` : ''}.${also}</p>`;
 }
 
 // Exported for the tests: there is no DOM in node --test, and the card is

@@ -80,6 +80,14 @@ export function countLabel(count, disputed = 0) {
 // A native <button> for the header, so Enter and Space work without this
 // file knowing a key exists, and aria-expanded/aria-controls so that a
 // screen reader is told what the button does and to what.
+// What goes inside a section's body. Its own function because a section can
+// be rewritten in place — a place's list of events is re-faded when the band
+// moves (panel.js) — and the hint has to be assembled the same way both
+// times or the rewrite would quietly drop it.
+export function sectionBodyHtml({ hint = '', body = '' }) {
+  return `${hint ? `<p class="hint">${esc(hint)}</p>` : ''}${body}`;
+}
+
 export function sectionHtml({
   key, label, count = null, disputed = 0, open = false, hint = '', body = '',
 }) {
@@ -92,7 +100,7 @@ export function sectionHtml({
       aria-expanded="${open ? 'true' : 'false'}"><span class="section-marker" aria-hidden="true"></span><span
       class="section-label">${esc(label)}</span>${counted}</button></h2>
     <div class="section-body" id="${esc(id)}" role="region" aria-labelledby="${esc(id)}-head"${open ? '' : ' hidden'}>
-      ${hint ? `<p class="hint">${esc(hint)}</p>` : ''}${body}
+      ${sectionBodyHtml({ hint, body })}
     </div>
   </section>`;
 }

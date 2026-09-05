@@ -10,21 +10,23 @@ import { esc, safeUrl } from '../util/esc.js';
 import { formatInterval, bounds, isValidYear } from '../util/dates.js';
 import { articleFor } from '../wikipedia.js';
 import { windowAt, resolveWindow } from '../util/window.js';
+import { OPENINGS } from '../state.js';
 import { formatFocus, lensSet } from '../lens.js';
 import { lanesFor } from '../lanes.js';
 import { shortestPaths, pathTo } from '../graph.js';
 import { chainEdges } from '../chain.js';
 import { identifiers, containerText } from '../citation.js';
-import { renderEventCard } from './event.js';
+import { renderEventCard, drawnHtml } from './event.js';
 import { renderActorCard } from './actor.js';
-import { renderPlaceCard } from './place.js';
+import { renderPlaceCard, placeEventsSection, EVENTS_SECTION } from './place.js';
 import { renderSourceCard } from './source.js';
 import { clusterHtml } from './cluster.js';
+import { horizonHtml } from './horizon.js';
 import { partOfHtml, renderNarrativeCard } from './narrative.js';
 import { readingNarrative } from '../narrative.js';
 import { createLinks, ENTRY_KINDS } from '../entry/entry.js';
 import { discussUrl } from '../share.js';
-import { toggleSection, readOpenSection } from './sections.js';
+import { toggleSection, readOpenSection, sectionBodyHtml } from './sections.js';
 
 // What the reader asked their browser for, in order. Read once: the cards
 // use it to choose which Wikipedia edition to offer, and a list that changed
@@ -43,6 +45,15 @@ export function createPanel(container, {
   walkWasCut = () => false,
 }) {
   let token = 0;
+  // Whether a cluster's member list is covering the card, and whether the
+  // notification arriving now was caused by a click inside the panel. Neither
+  // is state — a cluster's list is not in the URL and never was — and the
+  // pair is how choosing from that list the record that is *already* open
+  // puts its card back: nothing in the state changes, so nothing in the key
+  // can say so. It works because the store notifies synchronously, which is
+  // the half of its contract H1b deliberately did not touch.
+  let covered = false;
+  let asked = false;
   const links = createLinks({ fixtures });
   const laneLabel = (id) => atlas.regions.find((r) => r.id === id)?.label ?? id ?? '—';
   const startYear = (event) => bounds(event.when.start).min;
@@ -51,6 +62,7 @@ export function createPanel(container, {
     const el = e.target.closest('[data-action]');
     if (!el) return;
     const s = state.get();
+    asked = true;
     switch (el.dataset.action) {
       case 'select':
         // The actor stays selected: its events keep their emphasis while
@@ -172,6 +184,7 @@ export function createPanel(container, {
         break;
       default:
     }
+    asked = false;
   });
 
   // The horizon's year. On change rather than on input: a re-render per
@@ -376,7 +389,93 @@ export function createPanel(container, {
     container.innerHTML = `<section class="intro"><h2>Not found</h2><p>No ${esc(kind)} with id <code>${esc(id)}</code>.</p></section>`;
   }
 
+  // --- when the card is drawn again, and when it is only touched up -------
+  //
+  // The card used to be rebuilt on every state change, so a wheel notch over
+  // the timeline closed the explanation being read, and the `bbox` the map
+  // publishes 180 ms after a zoom replaced a cluster's member list with
+  // "Pick an event" (B12, A3, A5).
+  //
+  // The key is what the card is actually drawn from: what is *open*, the
+  // walked chain, the horizon year, and the window. Anything else — the pan,
+  // the zoom, the box, the lens, the layers, the grouping's own controls — is
+  // not a different card and does not rebuild one.
+  //
+  // The window is in the key and is still not a rebuild. It decides three
+  // small things — the horizon's default year and therefore its list, the
+  // lane an event is drawn in, which of a place's events are faded — and
+  // those are written into the card that is already there, so that moving
+  // the band under an open `<details>` leaves it open (review finding 7).
+  let drawnFor = null;
+
+  function keyOf(s) {
+    const window = resolveWindow(s, atlas.extent);
+    return {
+      card: OPENINGS.map((field) => s[field] ?? '').join('|'),
+      chain: s.chain.join(','),
+      horizon: s.horizon ?? null,
+      from: window ? window.from : null,
+      to: window ? window.to : null,
+    };
+  }
+
+  const sameCard = (a, b) => a.card === b.card && a.chain === b.chain && a.horizon === b.horizon;
+  const sameWindow = (a, b) => a.from === b.from && a.to === b.to;
+
+  // The window's own bits, put back into the card that is on screen. Each is
+  // looked for and skipped when it is not there: the same call serves an
+  // event's card, a place's, an actor's and a cluster's list, and only the
+  // first two have anything the window decides.
+  function updateWindow(s) {
+    const found = s.selected && !s.narrative ? atlas.resolve(s.selected) : null;
+    const event = found && found.kind === 'event' ? found.record : null;
+    if (event) {
+      const drawn = container.querySelector('[data-slot="drawn"]');
+      if (drawn) drawn.outerHTML = drawnHtml(ctx, event, s);
+      const horizon = container.querySelector('.horizon');
+      if (horizon) {
+        // The details and the year field are the reader's, not the state's:
+        // an open section that closed itself and a field that lost the
+        // caret would be the interruption this whole key exists to stop.
+        const details = horizon.querySelector('details');
+        const open = Boolean(details?.open);
+        const doc = container.ownerDocument;
+        const typing = Boolean(doc?.activeElement?.matches?.('[data-horizon]'))
+          && container.contains(doc.activeElement);
+        horizon.outerHTML = horizonHtml(ctx, { event, state: s });
+        const now = container.querySelector('.horizon details');
+        if (now && open) now.open = true;
+        if (typing) container.querySelector('[data-horizon]')?.focus();
+      }
+      return;
+    }
+    const place = s.place && !s.selected && !s.source && !s.narrative ? atlas.resolve(s.place) : null;
+    if (!place || place.kind !== 'place') return;
+    const body = container.querySelector(`.card-section[data-section="${EVENTS_SECTION}"] .section-body`);
+    if (body) body.innerHTML = sectionBodyHtml(placeEventsSection(ctx, place.record, s));
+  }
+
+  function onState(s) {
+    const next = keyOf(s);
+    // A cluster's list is covering the card and the reader has just clicked
+    // inside the panel: they chose one of the members, so the card comes
+    // back even when the record they chose is the one already open.
+    if (covered && asked) {
+      render(s);
+      return;
+    }
+    if (drawnFor && sameCard(drawnFor, next)) {
+      if (sameWindow(drawnFor, next)) return;
+      drawnFor = next;
+      updateWindow(s);
+      return;
+    }
+    render(s);
+  }
+
   function render(s) {
+    drawnFor = keyOf(s);
+    covered = false;
     token += 1;
     const mine = token;
     // Reading a narrative is a mode and wins the panel: everything else in
@@ -425,13 +524,17 @@ export function createPanel(container, {
     });
   }
 
-  // Cancels any record text still loading for the view being replaced.
+  // Cancels any record text still loading for the view being replaced. The
+  // key is left where the card put it: the list is not state, so the next
+  // change that really is a different card replaces it, and the zoom's own
+  // `bbox` write no longer does (A5).
   function showCluster(cluster) {
     token += 1;
+    covered = true;
     container.innerHTML = clusterHtml(ctx, cluster);
   }
 
-  state.subscribe(render);
+  state.subscribe(onState);
   render(state.get());
   return { render, showCluster };
 }
