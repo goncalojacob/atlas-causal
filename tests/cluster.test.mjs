@@ -5,7 +5,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import {
-  clusterPoints, spreadPositions, byWeightThenId,
+  clusterPoints, spreadPositions, byWeightThenId, mergeEdges,
   MERGE_DISTANCE, COINCIDENT_EPSILON, DEEPEST_ZOOM, SPREAD_RADIUS, SPREAD_GAP,
 } from '../src/cluster.js';
 
@@ -173,6 +173,98 @@ test('a spread gives every member its own place, far enough apart to click', () 
     assert.ok(many.filter((p) => p.ring === ring).length > 1, `ring ${ring} has more than one member`);
   }
   assert.equal(spreadPositions(4, { radius: 10, gap: 1 })[0].x.toFixed(6), '0.000000');
+});
+
+// What the reader is working with is never swallowed by a stack. Every view
+// promises it; since M25 the promise is kept in one place.
+test('a point held out of the grouping keeps a mark of its own', () => {
+  const clusters = clusterPoints(sample(), { k: 1, alone: new Set(['lisbon-a', 'braga']) });
+  const byId_ = byKey(clusters);
+  assert.deepEqual(idsOf(byId_['lisbon-a']), ['lisbon-a']);
+  assert.equal(byId_['lisbon-a'].count, 1);
+  assert.equal(byId_['lisbon-a'].alone, true);
+  assert.deepEqual(idsOf(byId_.braga), ['braga']);
+  // And it is not gathered into anybody else's cluster either: Lisbon is
+  // now b and c only, with alvor still in reach of it.
+  assert.deepEqual(idsOf(byId_['lisbon-b']).sort(), ['alvor', 'lisbon-b', 'lisbon-c']);
+  assert.equal(byId_['lisbon-b'].alone, false);
+  // Every point is still in exactly one cluster, and the counts still add up.
+  const ids = clusters.flatMap(idsOf);
+  assert.equal(ids.length, sample().length);
+  assert.equal(new Set(ids).size, ids.length);
+  assert.equal(clusters.reduce((n, c) => n + c.count, 0), sample().length);
+  // A solitary point is shaped exactly like a lone one, so nothing drawing
+  // it has to ask which it is.
+  const solo = byId_.braga;
+  assert.equal(solo.coincident, true);
+  assert.equal(solo.splittable, false);
+  assert.equal(solo.coreZoom, null);
+  // Holding everything out is a picture with no stacks at all.
+  const none = clusterPoints(sample(), { k: 1, alone: new Set(sample().map((p) => p.id)) });
+  assert.equal(none.length, sample().length);
+  assert.deepEqual(none.map((c) => c.count), none.map(() => 1));
+  // The default is unchanged: no set means no exceptions.
+  assert.deepEqual(clusterPoints(sample(), { k: 1 }).map((c) => c.alone), [false, false]);
+});
+
+test('holding points out does not depend on the order they arrive in', () => {
+  const alone = new Set(['lisbon-a', 'braga']);
+  const shape = (list) => clusterPoints(list, { k: 1, alone })
+    .map((c) => [c.key, idsOf(c).slice().sort(), c.alone]);
+  assert.deepEqual(shape(sample().reverse()), shape(sample()));
+  assert.deepEqual(shape([3, 0, 5, 1, 4, 2].map((i) => sample()[i])), shape(sample()));
+});
+
+// Once the points have merged, the links between them have to merge too.
+const link = (id, from, to, type = 'caused', confidence = 'consensus') => ({ id, from, to, type, confidence });
+
+test('links between two stacks merge into one, counted', () => {
+  const clusterOf = new Map([['a1', 'A'], ['a2', 'A'], ['b1', 'B'], ['b2', 'B'], ['c1', 'C']]);
+  const merged = mergeEdges([
+    link('e3', 'a1', 'b1'), link('e1', 'a2', 'b2', 'enabled'), link('e2', 'a1', 'b2'),
+    link('e4', 'a1', 'c1', 'inspired'),
+  ], clusterOf);
+  assert.deepEqual(merged.map((m) => m.key), ['A|B', 'A|C']);
+  const ab = merged[0];
+  assert.equal(ab.count, 3);
+  assert.deepEqual(ab.members.map((m) => m.id), ['e1', 'e2', 'e3'], 'members come back in id order');
+  assert.equal(ab.type, 'caused', 'the commonest type of the three');
+  assert.equal(ab.disputed, false);
+  assert.equal(merged[1].count, 1);
+  assert.equal(merged[1].type, 'inspired');
+});
+
+test('a merged link is disputed if any single member is', () => {
+  const clusterOf = new Map([['a1', 'A'], ['a2', 'A'], ['b1', 'B']]);
+  const [merged] = mergeEdges([
+    link('e1', 'a1', 'b1'), link('e2', 'a2', 'b1', 'caused', 'disputed'),
+  ], clusterOf);
+  assert.equal(merged.count, 2);
+  assert.equal(merged.disputed, true, 'one dispute is enough: the bundle is not settled');
+});
+
+test('a link inside one stack is not drawn, and direction is kept', () => {
+  const clusterOf = new Map([['a1', 'A'], ['a2', 'A'], ['b1', 'B']]);
+  assert.deepEqual(mergeEdges([link('e1', 'a1', 'a2')], clusterOf), []);
+  const both = mergeEdges([link('e1', 'a1', 'b1'), link('e2', 'b1', 'a2')], clusterOf);
+  assert.deepEqual(both.map((m) => m.key), ['A|B', 'B|A'], 'A→B and B→A are two links, not one');
+  // An end nobody knows is dropped rather than drawn from nowhere.
+  assert.deepEqual(mergeEdges([link('e1', 'a1', 'ghost')], clusterOf), []);
+  assert.deepEqual(mergeEdges([], clusterOf), []);
+});
+
+test('merging links does not depend on the order they arrive in', () => {
+  const clusterOf = new Map([['a1', 'A'], ['a2', 'A'], ['b1', 'B'], ['b2', 'B']]);
+  const links = [
+    link('e1', 'a1', 'b1', 'enabled'), link('e2', 'a2', 'b2', 'caused'),
+    link('e3', 'a1', 'b2', 'enabled'), link('e4', 'a2', 'b1', 'caused'),
+  ];
+  const shape = (list) => JSON.stringify(mergeEdges(list, clusterOf));
+  assert.equal(shape([...links].reverse()), shape(links));
+  assert.equal(shape([2, 0, 3, 1].map((i) => links[i])), shape(links));
+  // Two types tied two-all: the type's own name breaks it, so the picture
+  // does not depend on which link happened to be read first.
+  assert.equal(mergeEdges(links, clusterOf)[0].type, 'caused');
 });
 
 // The timeline uses the same function in one dimension: a lane is the same

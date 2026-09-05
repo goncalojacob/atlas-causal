@@ -56,12 +56,20 @@ export function byWeightThenId(a, b) {
 }
 
 // points: [{ id, x, y, weight, ...anything the caller wants back }].
+// `alone` is the set of ids that must keep a mark of their own — what the
+// reader is currently working with. Every view has such a set and every one
+// of them used to hold it out of the input and add the singletons back by
+// hand; passing it here instead means one pass, one ordering, and one place
+// where "a cluster never swallows the chain" is true.
 // Returns one cluster per group, heaviest seed first; every point is in
 // exactly one cluster.
-export function clusterPoints(points, { k = 1, distance = MERGE_DISTANCE, epsilon = COINCIDENT_EPSILON } = {}) {
+export function clusterPoints(points, {
+  k = 1, distance = MERGE_DISTANCE, epsilon = COINCIDENT_EPSILON, alone = null,
+} = {}) {
   const threshold = distance / Math.max(k, Number.EPSILON);
   const withinCluster = threshold * threshold;
   const withinEpsilon = epsilon * epsilon;
+  const solitary = alone ?? new Set();
   // Greedy, in seed order. O(n²) and honest about it: the dataset is in the
   // hundreds. At tens of thousands the fix is a grid index here, not a
   // different rule — the result would be the same clusters.
@@ -71,12 +79,18 @@ export function clusterPoints(points, { k = 1, distance = MERGE_DISTANCE, epsilo
   for (const seed of seeds) {
     if (taken.has(seed.id)) continue;
     taken.add(seed.id);
+    const solo = solitary.has(seed.id);
     const members = [seed];
-    for (const other of seeds) {
-      if (taken.has(other.id)) continue;
-      if (distanceSquared(seed, other) <= withinCluster) {
-        taken.add(other.id);
-        members.push(other);
+    // A solitary point neither gathers neighbours nor is gathered: the loop
+    // below skips it on both sides, so it comes out as its own cluster of
+    // one, which is exactly what a lone point produces anyway.
+    if (!solo) {
+      for (const other of seeds) {
+        if (taken.has(other.id) || solitary.has(other.id)) continue;
+        if (distanceSquared(seed, other) <= withinCluster) {
+          taken.add(other.id);
+          members.push(other);
+        }
       }
     }
     const coincident = members.every((m) => distanceSquared(seed, m) <= withinEpsilon);
@@ -104,6 +118,9 @@ export function clusterPoints(points, { k = 1, distance = MERGE_DISTANCE, epsilo
         y: members.reduce((sum, m) => sum + m.y, 0) / members.length,
       },
       coincident,
+      // Held out of the grouping on purpose, rather than merely alone
+      // because nothing was near it.
+      alone: solo,
       // Zooming in will eventually separate these; zooming into a
       // coincident cluster never would.
       splittable: members.length > 1 && !coincident,
@@ -112,6 +129,51 @@ export function clusterPoints(points, { k = 1, distance = MERGE_DISTANCE, epsilo
     });
   }
   return clusters;
+}
+
+// The other half of a level of detail: once the points have merged, the
+// links between them have to merge too, or a picture with forty nodes still
+// carries five hundred lines and nothing has been gained.
+//
+// links: [{ id, from, to, type, confidence, ...anything the caller wants
+// back }] — the endpoints named by point id. clusterOf: Map<point id,
+// cluster key>, which is what a caller builds from `clusterPoints` above.
+// A link whose ends are unknown is dropped, as a link with one end missing
+// already was; a link whose two ends are in the *same* cluster is dropped
+// too, because it would be drawn from a mark to itself and the members are
+// in the panel's list anyway.
+//
+// The merged link's type is the commonest among its members — ties by the
+// type's own name, so the answer does not depend on the order they arrived
+// in — and it is disputed if any single member is. Disputed wins over the
+// majority on purpose: a bundle of links one of which historians argue
+// about is a bundle the reader must not read as settled.
+export function mergeEdges(links, clusterOf) {
+  const groups = new Map();
+  for (const link of links) {
+    const from = clusterOf.get(link.from);
+    const to = clusterOf.get(link.to);
+    if (from === undefined || to === undefined || from === to) continue;
+    const key = `${from}|${to}`;
+    if (!groups.has(key)) groups.set(key, { key, from, to, members: [] });
+    groups.get(key).members.push(link);
+  }
+  return [...groups.values()]
+    .map((group) => {
+      const members = [...group.members].sort((a, b) => (a.id < b.id ? -1 : a.id > b.id ? 1 : 0));
+      const counts = new Map();
+      for (const member of members) counts.set(member.type, (counts.get(member.type) ?? 0) + 1);
+      const type = [...counts.entries()]
+        .sort((a, b) => b[1] - a[1] || (a[0] < b[0] ? -1 : 1))[0][0];
+      return {
+        ...group,
+        members,
+        count: members.length,
+        type,
+        disputed: members.some((m) => m.confidence === 'disputed'),
+      };
+    })
+    .sort((a, b) => (a.key < b.key ? -1 : a.key > b.key ? 1 : 0));
 }
 
 // Where the members of a coincident cluster go when it is spread open:
