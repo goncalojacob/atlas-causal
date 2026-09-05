@@ -6,7 +6,7 @@
 // end of it would have been a second, quieter answer to the same question.
 
 import { svg } from '../util/dom.js';
-import { fitBounds, WORLD, viewBbox, bboxTransform } from './projection.js';
+import { fitBounds, WORLD, viewBboxIn, bboxTransform } from './projection.js';
 import { createLandLayer } from './layers/land.js';
 import { createPresencesLayer } from './layers/presences.js';
 import { chainEdges } from '../chain.js';
@@ -104,14 +104,52 @@ export function createMap(container, { atlas, state, onCluster = null }) {
   const applyTransform = () => {
     viewport.setAttribute('transform', `translate(${transform.x} ${transform.y}) scale(${transform.k})`);
   };
+  // --- what the reader can actually see -----------------------------------
+  //
+  // The `<svg>` carries a viewBox and no preserveAspectRatio of its own, and
+  // CSS gives it the whole pane, so it is letterboxed: at a map area wider
+  // than 960 × 540's ratio the visible SVG units run from about −220 to about
+  // 1180, and a third of the picture lies outside the nominal box. Every
+  // number this file derives from the screen therefore goes through the
+  // element's own matrix, as the graph view already did (graph-view.js) —
+  // scaling by the bounding rectangle instead put the wheel's centre, the
+  // pan's speed, the labels and the published box all a long way out (health
+  // review A, finding 4).
+  const nominalBox = { x0: 0, y0: 0, x1: WIDTH, y1: HEIGHT };
+  const matrix = () => {
+    if (typeof DOMPoint !== 'function' || typeof root.getScreenCTM !== 'function') return null;
+    const ctm = root.getScreenCTM();
+    // Null before the element is laid out, and singular in a pane that has
+    // been collapsed to nothing; either way there is no picture to measure.
+    return ctm && ctm.a !== 0 && ctm.d !== 0 ? ctm.inverse() : null;
+  };
+  const clientToSvg = (inverse, clientX, clientY) => {
+    const p = new DOMPoint(clientX, clientY).matrixTransform(inverse);
+    return [p.x, p.y];
+  };
+  // The rectangle of SVG space the pane shows, in the units the transform is
+  // applied in. The nominal box when there is nothing to measure, which is
+  // what a test with no layout behind it gets.
+  const visibleBox = () => {
+    const inverse = matrix();
+    const rect = root.getBoundingClientRect?.();
+    if (!inverse || !rect || !rect.width || !rect.height) return nominalBox;
+    const [ax, ay] = clientToSvg(inverse, rect.left, rect.top);
+    const [bx, by] = clientToSvg(inverse, rect.right, rect.bottom);
+    return { x0: Math.min(ax, bx), y0: Math.min(ay, by), x1: Math.max(ax, bx), y1: Math.max(ay, by) };
+  };
   // The rectangle of projected space on screen: what the events layer needs
-  // to know which clusters are worth labelling.
-  const view = () => ({
-    x0: -transform.x / transform.k,
-    y0: -transform.y / transform.k,
-    x1: (WIDTH - transform.x) / transform.k,
-    y1: (HEIGHT - transform.y) / transform.k,
-  });
+  // to know which clusters are worth labelling. The visible rectangle, not the
+  // nominal one, so a label at the side of a wide pane is a candidate.
+  const view = () => {
+    const box = visibleBox();
+    return {
+      x0: (box.x0 - transform.x) / transform.k,
+      y0: (box.y0 - transform.y) / transform.k,
+      x1: (box.x1 - transform.x) / transform.k,
+      y1: (box.y1 - transform.y) / transform.k,
+    };
+  };
 
   // --- the box the timeline reads -----------------------------------------
   //
@@ -129,7 +167,7 @@ export function createMap(container, { atlas, state, onCluster = null }) {
   const sameBox = (a, b) => (a === b) || Boolean(a && b && a.every((v, i) => v === b[i]));
   const publishBbox = () => {
     settling = null;
-    const bbox = normalizeBbox(viewBbox(projection, transform, { width: WIDTH, height: HEIGHT }));
+    const bbox = normalizeBbox(viewBboxIn(projection, transform, visibleBox()));
     if (sameBox(bbox, state.get().bbox)) return;
     published = bbox;
     state.set({ bbox });
@@ -182,7 +220,10 @@ export function createMap(container, { atlas, state, onCluster = null }) {
     requestAnimationFrame(frame);
   }
   const toSvg = (e) => {
+    const inverse = matrix();
+    if (inverse) return clientToSvg(inverse, e.clientX, e.clientY);
     const rect = root.getBoundingClientRect();
+    if (!rect?.width || !rect?.height) return [0, 0];
     return [((e.clientX - rect.left) / rect.width) * WIDTH, ((e.clientY - rect.top) / rect.height) * HEIGHT];
   };
   let drag = null;
@@ -328,6 +369,23 @@ export function createMap(container, { atlas, state, onCluster = null }) {
     // A spread survives a re-render — the band moving, a selection — for as
     // long as its cluster is still there to be spread.
     if (spread && !result.spread) spread = null;
+  }
+
+  // A pane that changes size shows a different part of the world at the same
+  // transform, so the labels are chosen again and the box is written again —
+  // but only when there is a box in force. A resize is not a way of asking to
+  // narrow the timeline: a reader who has never moved the map should not find
+  // the lanes filtered because they widened their window.
+  if (typeof ResizeObserver !== 'undefined') {
+    let last = '';
+    new ResizeObserver(() => {
+      const rect = root.getBoundingClientRect();
+      const now = `${Math.round(rect.width)}x${Math.round(rect.height)}`;
+      if (now === last) return;
+      last = now;
+      render(state.get());
+      if (state.get().bbox) scheduleBbox();
+    }).observe(container);
   }
 
   // A link that names a box opens on it, before anything is drawn.

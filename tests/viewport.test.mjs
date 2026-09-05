@@ -4,7 +4,9 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { inView, containsPoint, pointOfEvent, eventsInView } from '../src/util/viewport.js';
-import { createProjection, fitBounds, viewBbox, bboxTransform, WORLD } from '../src/map/projection.js';
+import {
+  createProjection, fitBounds, viewBbox, viewBboxIn, bboxTransform, WORLD,
+} from '../src/map/projection.js';
 import { readFile } from 'node:fs/promises';
 import path from 'node:path';
 import { loadAtlas } from '../src/data.js';
@@ -53,6 +55,7 @@ test('the edges of the box are inside it, and a wrapped box is the strip it name
 // --- the transform, through the projection --------------------------------
 
 const SIZE = { width: 960, height: 540 };
+const { width: WIDTH, height: HEIGHT } = SIZE;
 
 test('at rest the box is what the projection was fitted to', () => {
   const projection = createProjection({ ...SIZE, center: [0, 0], scale: 960 / 360 });
@@ -76,6 +79,32 @@ test('zooming in narrows the box around the same centre', () => {
   // Panning right shows what is to the west of it.
   const panned = viewBbox(projection, { x: 100, y: 0, k: 1 }, SIZE);
   assert.ok(panned[0] < wide[0] && panned[2] < wide[2]);
+});
+
+// A pane wider than 960 × 540's ratio letterboxes the SVG: the reader sees
+// units to the left of 0 and to the right of 960, and the box computed from
+// the nominal rectangle describes the middle of the picture and calls it the
+// picture (health review A, finding 4). These are the numbers of that
+// example — a 959 × 368 map area, whose visible SVG x runs −220 … 1180.
+test('the box is the rectangle the pane really shows, not the nominal one', () => {
+  const projection = createProjection({ ...SIZE, center: [0, 0], scale: 960 / 360 });
+  const transform = { x: 0, y: 0, k: 1 };
+  // Fitted to the height, so 368 px of pane carry 540 units and 959 px carry
+  // 959 × 540 / 368 = 1407 of them, centred on the nominal box.
+  const shownWidth = (959 * HEIGHT) / 368;
+  const box = { x0: (WIDTH - shownWidth) / 2, y0: 0, x1: (WIDTH + shownWidth) / 2, y1: HEIGHT };
+  assert.ok(box.x0 < -200 && box.x1 > 1150, 'a third of the picture is outside the nominal box');
+
+  const nominal = viewBbox(projection, transform, SIZE);
+  const real = viewBboxIn(projection, transform, box);
+  assert.ok(real[0] < nominal[0] && real[2] > nominal[2], 'wider east and west');
+  assert.equal(real[1], nominal[1], 'and the same north and south, which is what fitting the height means');
+  assert.equal(real[3], nominal[3]);
+  // The width in degrees is the width of the strip the reader is looking at.
+  assert.ok(Math.abs((real[2] - real[0]) - (shownWidth / projection.scale)) < 1e-9);
+
+  // The nominal box is the same question asked of the rectangle 0 … 960.
+  assert.deepEqual(viewBboxIn(projection, transform, { x0: 0, y0: 0, x1: WIDTH, y1: HEIGHT }), nominal);
 });
 
 test('a box and the transform that shows it are each other\'s inverse', () => {

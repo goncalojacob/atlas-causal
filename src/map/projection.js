@@ -46,13 +46,27 @@ export const WORLD = Object.freeze([[-180, -90], [180, 90]]);
 // Robinson-style replacement would have to bring its own pair, and nothing
 // outside this file would notice.
 
-// The part of the world under a transform, as `[west, south, east, north]`.
-// The screen box is (0,0)–(width,height) in the same units the transform is
-// applied in, which is what the map's `viewBox` promises.
-export function viewBbox(projection, { x = 0, y = 0, k = 1 } = {}, { width, height }) {
-  const [west, north] = projection.unproject([-x / k, -y / k]);
-  const [east, south] = projection.unproject([(width - x) / k, (height - y) / k]);
+// The part of the world under a transform, as `[west, south, east, north]`,
+// for an arbitrary rectangle of the coordinate space the transform is applied
+// in — which is the SVG's own units, not its nominal box.
+//
+// The distinction is the whole point. An `<svg>` with a `viewBox` and no
+// `preserveAspectRatio` of its own is letterboxed inside the box CSS gives
+// it: at a map area wider than the viewBox's ratio the reader sees SVG units
+// well to the left of 0 and well to the right of `width`, and a box computed
+// from (0,0)–(width,height) describes the middle of the picture and calls it
+// the picture (health review A, finding 4). The map measures the rectangle it
+// really occupies through `getScreenCTM` and passes it here.
+export function viewBboxIn(projection, { x = 0, y = 0, k = 1 } = {}, { x0, y0, x1, y1 }) {
+  const [west, north] = projection.unproject([(x0 - x) / k, (y0 - y) / k]);
+  const [east, south] = projection.unproject([(x1 - x) / k, (y1 - y) / k]);
   return [west, south, east, north];
+}
+
+// The nominal box, which is what a caller with no element to measure — a
+// test, a projection question with no DOM behind it — is asking about.
+export function viewBbox(projection, transform, { width, height }) {
+  return viewBboxIn(projection, transform, { x0: 0, y0: 0, x1: width, y1: height });
 }
 
 // The transform that brings a box on screen, whole and centred. The zoom is
