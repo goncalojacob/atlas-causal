@@ -281,11 +281,23 @@ export function createGraphView(container, { atlas, state }) {
     else state.set({ selected: id, chain: [] });
   }
 
+  // The map's viewport narrows the timeline, and this view has no viewport of
+  // its own to be narrowed by: the graph is arranged by year and by band, and
+  // nothing in it is anywhere. Rather than filter it by a box that means
+  // nothing here, or leave the reader wondering why the lanes below are
+  // shorter than the picture above, it says so.
+  const note = document.createElement('p');
+  note.className = 'graph-note';
+  note.hidden = true;
+  note.textContent = 'The map is looking at part of the world. The graph has no viewport of its own, so it draws every event; the lanes below are narrowed to what the map can see.';
+
   container.append(root);
+  container.append(note);
   container.append(edgeKey());
 
   function render(s) {
     arrange(s);
+    note.hidden = !s.bbox;
     const timeWindow = resolveWindow(s, atlas.extent);
     const chainEdges = s.chain.map((id) => atlas.edges.get(id)).filter(Boolean);
     const pathIds = new Set(chainEdges.flatMap((e) => [e.from, e.to]));
