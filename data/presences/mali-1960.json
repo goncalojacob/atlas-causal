@@ -17,24 +17,24 @@
   "sources": [
     {
       "source": "cshapes-2-0",
-      "locator": "fid 236"
+      "locator": "fid 237"
     }
   ],
   "actor": "mali",
   "presenceType": "state",
-  "dependencyOf": "france",
-  "dependencyKind": "colony",
+  "dependencyOf": null,
+  "dependencyKind": null,
   "when": {
     "start": 1960,
-    "end": 1960,
-    "date": "1960-06-20",
-    "endDate": "1960-09-21"
+    "end": null,
+    "date": "1960-09-22"
   },
   "geometry": {
     "files": [
-      "geo/presences/1946-1974.json"
+      "geo/presences/1946-1974.json",
+      "geo/presences/1975-2019.json"
     ],
-    "key": "236"
+    "key": "237"
   },
   "capital": {
     "lon": -7.97491,

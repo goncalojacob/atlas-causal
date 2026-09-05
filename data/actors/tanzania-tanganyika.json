@@ -24,9 +24,9 @@
   "names": [
     "Tanzania (Tanganyika)"
   ],
-  "summary": "Entity 510 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 7 periods of territorial validity, from 1891 to where the dataset stops, in 2019. Its last capital in the dataset is Dodoma. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Entity 510 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 2 periods of territorial validity, from 1961 to where the dataset stops, in 2019. Its last capital in the dataset is Dodoma. The code is mapped onto more than one actor (data/imports/cshapes-actors.json); this record holds the periods from 1961-12-09. This record was written by the import from those fields and asserts nothing the dataset does not.",
   "when": {
-    "start": 1891,
+    "start": 1961,
     "end": null
   },
   "where": {

@@ -17,24 +17,24 @@
   "sources": [
     {
       "source": "cshapes-2-0",
-      "locator": "fid 404"
+      "locator": "fid 402"
     }
   ],
   "actor": "malawi",
   "presenceType": "state",
-  "dependencyOf": "united-kingdom",
-  "dependencyKind": "protectorate",
+  "dependencyOf": null,
+  "dependencyKind": null,
   "when": {
     "start": 1964,
-    "end": 1964,
-    "date": "1964-01-22",
-    "endDate": "1964-07-05"
+    "end": null,
+    "date": "1964-07-06"
   },
   "geometry": {
     "files": [
-      "geo/presences/1946-1974.json"
+      "geo/presences/1946-1974.json",
+      "geo/presences/1975-2019.json"
     ],
-    "key": "404"
+    "key": "402"
   },
   "capital": {
     "lon": 33.783329,

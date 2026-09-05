@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "algeria-under-france",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "gwcode 615"
+    }
+  ],
+  "actorType": "polity",
+  "names": [
+    "Algeria under France"
+  ],
+  "summary": "Entity 615 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 4 periods of territorial validity, from 1886 to 1962. The source calls it \"Algeria\"; the names on this record are the ones data/imports/cshapes-actors.json gives it. Its last capital in the dataset is Algiers. The code is mapped onto more than one actor (data/imports/cshapes-actors.json); this record holds the periods before the first cut. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "when": {
+    "start": 1886,
+    "end": 1962
+  },
+  "where": {
+    "lon": 3.050556,
+    "lat": 36.76305,
+    "precision": "city",
+    "label": "Algiers"
+  }
+}

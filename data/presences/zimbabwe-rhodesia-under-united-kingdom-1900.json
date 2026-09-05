@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "zimbabwe-rhodesia-under-united-kingdom-1900",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 399"
+    }
+  ],
+  "actor": "zimbabwe-rhodesia-under-united-kingdom",
+  "presenceType": "state",
+  "dependencyOf": "united-kingdom",
+  "dependencyKind": "colony",
+  "when": {
+    "start": 1900,
+    "end": 1953,
+    "date": "1900-01-29",
+    "endDate": "1953-07-31"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1886-1913.json",
+      "geo/presences/1914-1932.json",
+      "geo/presences/1933-1945.json",
+      "geo/presences/1946-1974.json"
+    ],
+    "key": "399"
+  },
+  "capital": {
+    "lon": 31.04472,
+    "lat": -17.81778,
+    "precision": "city",
+    "label": "Harare"
+  },
+  "confidence": "consensus"
+}

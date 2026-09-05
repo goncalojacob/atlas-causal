@@ -7,7 +7,7 @@ import again.
 CShapes gives some entities under one Gleditsch–Ward code for their whole
 life, dependency and independent state alike. This atlas can hold such a code
 as one actor or as two, and the mapping file decides which: a `splits` entry
-cuts the code's outlines by date into different actors. The 78 codes below
+cuts the code's outlines by date into different actors. The 34 codes below
 are the ones that file does **not** yet cut and that the source shows in both
 conditions — the list to work down, in batches, by editing it. Nothing here is
 a recommendation: which of them are two things and which are one is a
@@ -24,53 +24,9 @@ boundary CShapes itself draws or the import refuses it.
 | 265 | `german-democratic-republic` | German Democratic Republic | 2 | 1 (occupied) | 1949-10-05 | 1949-10-04 |
 | 340 | `serbia` | Serbia | 5 | 1 (occupied) | 1886-01-01 | 1918-11-30 |
 | 341 | `montenegro` | Montenegro | 4 | 1 (occupied) | 1886-01-01 | 1918-11-30 |
-| 402 | `cape-verde` | Cape Verde | 2 | 1 (colony) | 1975-07-05 | 1975-07-04 |
-| 404 | `guinea-bissau` | Guinea-Bissau | 4 | 3 (colony) | 1974-09-10 | 1974-09-09 |
-| 411 | `equatorial-guinea` | Equatorial Guinea | 3 | 2 (colony) | 1968-10-12 | 1968-10-11 |
-| 420 | `gambia` | Gambia | 2 | 1 (colony) | 1965-02-18 | 1965-02-17 |
-| 432 | `mali` | Mali | 9 | 8 (colony) | 1960-09-22 | 1960-09-21 |
-| 433 | `senegal` | Senegal | 2 | 1 (colony) | 1960-06-21 | 1959-04-03 |
-| 434 | `benin` | Benin | 4 | 3 (colony) | 1960-08-01 | 1960-07-31 |
-| 435 | `mauritania` | Mauritania | 9 | 6 (colony, protectorate) | 1960-11-28 | 1960-11-27 |
-| 436 | `niger` | Niger | 5 | 4 (colony) | 1960-08-03 | 1960-08-02 |
-| 437 | `cote-d-ivoire` | Cote D'Ivoire | 9 | 7 (colony, protectorate) | 1960-08-07 | 1960-08-06 |
-| 438 | `guinea` | Guinea | 2 | 1 (colony) | 1958-10-02 | 1958-10-01 |
-| 439 | `burkina-faso-upper-volta` | Burkina Faso (Upper Volta) | 3 | 2 (colony) | 1960-08-05 | 1960-08-04 |
-| 451 | `sierra-leone` | Sierra Leone | 4 | 3 (colony) | 1961-04-27 | 1961-04-26 |
-| 452 | `ghana` | Ghana | 5 | 4 (colony) | 1957-03-06 | 1957-03-05 |
-| 461 | `togo` | Togo | 2 | 1 (mandate) | 1960-04-27 | 1960-04-26 |
-| 471 | `cameroon` | Cameroon | 4 | 2 (mandate, occupied) | 1960-01-01 | 1959-12-31 |
-| 475 | `nigeria` | Nigeria | 3 | 1 (colony) | 1960-10-01 | 1960-09-30 |
-| 481 | `gabon` | Gabon | 6 | 5 (colony, protectorate) | 1960-08-17 | 1960-08-16 |
-| 482 | `central-african-republic` | Central African Republic | 4 | 3 (colony) | 1960-08-13 | 1960-08-12 |
-| 483 | `chad` | Chad | 5 | 4 (colony, occupied) | 1960-08-11 | 1960-08-10 |
-| 484 | `congo` | Congo | 7 | 6 (colony) | 1960-08-15 | 1960-08-14 |
-| 490 | `congo-democratic-republic-of-zaire` | Congo, Democratic Republic of (Zaire) | 7 | 6 (colony) | 1960-06-30 | 1960-06-29 |
-| 500 | `uganda` | Uganda | 6 | 5 (protectorate) | 1962-10-09 | 1962-10-08 |
-| 501 | `kenya` | Kenya | 11 | 10 (colony, protectorate) | 1963-12-12 | 1963-12-11 |
-| 510 | `tanzania-tanganyika` | Tanzania (Tanganyika) | 7 | 5 (colony, mandate, occupied) | 1961-12-09 | 1961-12-08 |
-| 511 | `zanzibar` | Zanzibar | 3 | 2 (occupied, protectorate) | 1963-12-19 | 1963-12-18 |
-| 522 | `djibouti` | Djibouti | 3 | 2 (colony) | 1977-06-27 | 1977-06-26 |
-| 531 | `eritrea` | Eritrea | 5 | 4 (colony, occupied) | 1993-05-24 | 1952-09-14 |
-| 540 | `angola` | Angola | 5 | 4 (colony) | 1975-11-11 | 1975-11-10 |
-| 541 | `mozambique` | Mozambique | 3 | 2 (colony) | 1975-06-25 | 1975-06-24 |
-| 551 | `zambia` | Zambia | 2 | 1 (colony) | 1964-01-22 | 1953-07-31 |
-| 552 | `zimbabwe-rhodesia` | Zimbabwe (Rhodesia) | 5 | 4 (colony) | 1965-11-11 | 1965-11-10 |
-| 553 | `malawi` | Malawi | 3 | 2 (protectorate) | 1964-07-06 | 1964-07-05 |
-| 565 | `namibia` | Namibia | 6 | 5 (colony, mandate, occupied) | 1990-03-21 | 1990-03-20 |
-| 570 | `lesotho` | Lesotho | 2 | 1 (colony) | 1966-10-04 | 1966-10-03 |
-| 571 | `botswana` | Botswana | 4 | 3 (protectorate) | 1966-09-30 | 1966-09-29 |
-| 572 | `swaziland-eswatini` | Swaziland (Eswatini) | 3 | 2 (colony) | 1968-09-06 | 1968-09-05 |
 | 580 | `madagascar-malagasy` | Madagascar (Malagasy) | 5 | 3 (colony) | 1886-01-01 | 1960-06-25 |
-| 581 | `comoros` | Comoros | 2 | 1 (colony) | 1975-07-06 | 1975-07-05 |
-| 590 | `mauritius` | Mauritius | 2 | 1 (colony) | 1968-03-12 | 1968-03-11 |
 | 600 | `morocco` | Morocco | 10 | 1 (protectorate) | 1886-01-01 | 1956-03-01 |
-| 615 | `algeria` | Algeria | 5 | 4 (colony) | 1962-07-05 | 1962-07-04 |
-| 616 | `tunisia` | Tunisia | 2 | 1 (protectorate) | 1956-01-01 | 1955-12-31 |
-| 620 | `libya` | Libya | 7 | 6 (colony, mandate, occupied) | 1951-12-24 | 1951-12-23 |
-| 625 | `sudan` | Sudan | 7 | 5 (colony) | 1956-01-01 | 1955-12-31 |
 | 645 | `iraq` | Iraq | 5 | 4 (mandate, occupied) | 1932-10-03 | 1932-10-02 |
-| 651 | `egypt` | Egypt | 7 | 3 (colony, protectorate) | 1922-02-28 | 1922-02-27 |
 | 652 | `syria` | Syria | 5 | 3 (mandate, occupied) | 1946-01-01 | 1945-12-31 |
 | 660 | `lebanon` | Lebanon | 3 | 2 (mandate, occupied) | 1944-11-22 | 1944-11-21 |
 | 663 | `jordan` | Jordan | 5 | 4 (mandate, occupied) | 1946-05-25 | 1946-05-24 |

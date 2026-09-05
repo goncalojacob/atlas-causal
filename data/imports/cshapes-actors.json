@@ -145,6 +145,578 @@
       ],
       "note": "CShapes holds 395 as a colony of Denmark to 1942-04-21; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had. Earlier than its first independent date, 1944-06-17: the occupation between the two (occupied 1942-04-22..1944-06-16) is the state's own record, not the colony's."
     },
+    "402": {
+      "actor": "cape-verde-under-portugal",
+      "names": [
+        "Cape Verde under Portugal"
+      ],
+      "splits": [
+        {
+          "from": "1975-07-05",
+          "actor": "cape-verde"
+        }
+      ],
+      "note": "CShapes holds 402 as a colony of Portugal to 1975-07-04; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
+    },
+    "404": {
+      "actor": "guinea-bissau-under-portugal",
+      "names": [
+        "Guinea-Bissau under Portugal"
+      ],
+      "splits": [
+        {
+          "from": "1974-09-10",
+          "actor": "guinea-bissau"
+        }
+      ],
+      "note": "CShapes holds 404 as a colony of Portugal to 1974-09-09; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
+    },
+    "411": {
+      "actor": "equatorial-guinea-under-spain",
+      "names": [
+        "Equatorial Guinea under Spain"
+      ],
+      "splits": [
+        {
+          "from": "1968-10-12",
+          "actor": "equatorial-guinea"
+        }
+      ],
+      "note": "CShapes holds 411 as a colony of Spain to 1968-10-11; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
+    },
+    "420": {
+      "actor": "gambia-under-united-kingdom",
+      "names": [
+        "Gambia under United Kingdom"
+      ],
+      "splits": [
+        {
+          "from": "1965-02-18",
+          "actor": "gambia"
+        }
+      ],
+      "note": "CShapes holds 420 as a colony of United Kingdom to 1965-02-17; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
+    },
+    "432": {
+      "actor": "mali-under-france",
+      "names": [
+        "Mali under France"
+      ],
+      "splits": [
+        {
+          "from": "1960-09-22",
+          "actor": "mali"
+        }
+      ],
+      "note": "CShapes holds 432 as a colony of France to 1960-09-21; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
+    },
+    "433": {
+      "actor": "senegal-under-france",
+      "names": [
+        "Senegal under France"
+      ],
+      "splits": [
+        {
+          "from": "1959-04-04",
+          "actor": "senegal"
+        }
+      ],
+      "note": "CShapes holds 433 as a colony of France to 1959-04-03; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had. Earlier than its first independent date, 1960-06-21: the source draws no boundary there, and this is the one it does draw."
+    },
+    "434": {
+      "actor": "benin-under-france",
+      "names": [
+        "Benin under France"
+      ],
+      "splits": [
+        {
+          "from": "1960-08-01",
+          "actor": "benin"
+        }
+      ],
+      "note": "CShapes holds 434 as a colony of France to 1960-07-31; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
+    },
+    "435": {
+      "actor": "mauritania-under-france",
+      "names": [
+        "Mauritania under France"
+      ],
+      "splits": [
+        {
+          "from": "1960-11-28",
+          "actor": "mauritania"
+        }
+      ],
+      "note": "CShapes holds 435 as a colony of France to 1960-11-27; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
+    },
+    "436": {
+      "actor": "niger-under-france",
+      "names": [
+        "Niger under France"
+      ],
+      "splits": [
+        {
+          "from": "1960-08-03",
+          "actor": "niger"
+        }
+      ],
+      "note": "CShapes holds 436 as a colony of France to 1960-08-02; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
+    },
+    "437": {
+      "actor": "cote-d-ivoire-under-france",
+      "names": [
+        "Cote D'Ivoire under France"
+      ],
+      "splits": [
+        {
+          "from": "1960-08-07",
+          "actor": "cote-d-ivoire"
+        }
+      ],
+      "note": "CShapes holds 437 as a colony of France to 1960-08-06; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
+    },
+    "438": {
+      "actor": "guinea-under-france",
+      "names": [
+        "Guinea under France"
+      ],
+      "splits": [
+        {
+          "from": "1958-10-02",
+          "actor": "guinea"
+        }
+      ],
+      "note": "CShapes holds 438 as a colony of France to 1958-10-01; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
+    },
+    "439": {
+      "actor": "burkina-faso-upper-volta-under-france",
+      "names": [
+        "Burkina Faso (Upper Volta) under France"
+      ],
+      "splits": [
+        {
+          "from": "1960-08-05",
+          "actor": "burkina-faso-upper-volta"
+        }
+      ],
+      "note": "CShapes holds 439 as a colony of France to 1960-08-04; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
+    },
+    "451": {
+      "actor": "sierra-leone-under-united-kingdom",
+      "names": [
+        "Sierra Leone under United Kingdom"
+      ],
+      "splits": [
+        {
+          "from": "1961-04-27",
+          "actor": "sierra-leone"
+        }
+      ],
+      "note": "CShapes holds 451 as a colony of United Kingdom to 1961-04-26; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
+    },
+    "452": {
+      "actor": "ghana-under-united-kingdom",
+      "names": [
+        "Ghana under United Kingdom"
+      ],
+      "splits": [
+        {
+          "from": "1957-03-06",
+          "actor": "ghana"
+        }
+      ],
+      "note": "CShapes holds 452 as a colony of United Kingdom to 1957-03-05; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
+    },
+    "461": {
+      "actor": "togo-under-france",
+      "names": [
+        "Togo under France"
+      ],
+      "splits": [
+        {
+          "from": "1960-04-27",
+          "actor": "togo"
+        }
+      ],
+      "note": "CShapes holds 461 as a mandate of France to 1960-04-26; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
+    },
+    "471": {
+      "actor": "cameroon-under-france",
+      "names": [
+        "Cameroon under France"
+      ],
+      "splits": [
+        {
+          "from": "1960-01-01",
+          "actor": "cameroon"
+        }
+      ],
+      "note": "CShapes holds 471 as a mandate of France to 1959-12-31; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
+    },
+    "475": {
+      "actor": "nigeria-under-united-kingdom",
+      "names": [
+        "Nigeria under United Kingdom"
+      ],
+      "splits": [
+        {
+          "from": "1960-10-01",
+          "actor": "nigeria"
+        }
+      ],
+      "note": "CShapes holds 475 as a colony of United Kingdom to 1960-09-30; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
+    },
+    "481": {
+      "actor": "gabon-under-france",
+      "names": [
+        "Gabon under France"
+      ],
+      "splits": [
+        {
+          "from": "1960-08-17",
+          "actor": "gabon"
+        }
+      ],
+      "note": "CShapes holds 481 as a colony of France to 1960-08-16; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
+    },
+    "482": {
+      "actor": "central-african-republic-under-france",
+      "names": [
+        "Central African Republic under France"
+      ],
+      "splits": [
+        {
+          "from": "1960-08-13",
+          "actor": "central-african-republic"
+        }
+      ],
+      "note": "CShapes holds 482 as a colony of France to 1960-08-12; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
+    },
+    "483": {
+      "actor": "chad-under-france",
+      "names": [
+        "Chad under France"
+      ],
+      "splits": [
+        {
+          "from": "1960-08-11",
+          "actor": "chad"
+        }
+      ],
+      "note": "CShapes holds 483 as a colony of France to 1960-08-10; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
+    },
+    "484": {
+      "actor": "congo-under-france",
+      "names": [
+        "Congo under France"
+      ],
+      "splits": [
+        {
+          "from": "1960-08-15",
+          "actor": "congo"
+        }
+      ],
+      "note": "CShapes holds 484 as a colony of France to 1960-08-14; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
+    },
+    "490": {
+      "actor": "congo-democratic-republic-of-zaire-under-belgium",
+      "names": [
+        "Congo, Democratic Republic of (Zaire) under Belgium"
+      ],
+      "splits": [
+        {
+          "from": "1960-06-30",
+          "actor": "congo-democratic-republic-of-zaire"
+        }
+      ],
+      "note": "CShapes holds 490 as a colony of Belgium to 1960-06-29; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
+    },
+    "500": {
+      "actor": "uganda-under-united-kingdom",
+      "names": [
+        "Uganda under United Kingdom"
+      ],
+      "splits": [
+        {
+          "from": "1962-10-09",
+          "actor": "uganda"
+        }
+      ],
+      "note": "CShapes holds 500 as a protectorate of United Kingdom to 1962-10-08; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
+    },
+    "501": {
+      "actor": "kenya-under-united-kingdom",
+      "names": [
+        "Kenya under United Kingdom"
+      ],
+      "splits": [
+        {
+          "from": "1963-12-12",
+          "actor": "kenya"
+        }
+      ],
+      "note": "CShapes holds 501 as a colony of United Kingdom to 1963-12-11; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
+    },
+    "510": {
+      "actor": "tanzania-tanganyika-under-united-kingdom",
+      "names": [
+        "Tanzania (Tanganyika) under United Kingdom"
+      ],
+      "splits": [
+        {
+          "from": "1961-12-09",
+          "actor": "tanzania-tanganyika"
+        }
+      ],
+      "note": "CShapes holds 510 as a mandate of United Kingdom to 1961-12-08; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had. The source gives the held period under more than one power (Germany (Prussia), then United Kingdom); the record is named for the one that held it longest (Germany (Prussia):26y, United Kingdom:45y)."
+    },
+    "511": {
+      "actor": "zanzibar-under-united-kingdom",
+      "names": [
+        "Zanzibar under United Kingdom"
+      ],
+      "splits": [
+        {
+          "from": "1963-12-19",
+          "actor": "zanzibar"
+        }
+      ],
+      "note": "CShapes holds 511 as a protectorate of United Kingdom to 1963-12-18; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
+    },
+    "522": {
+      "actor": "djibouti-under-france",
+      "names": [
+        "Djibouti under France"
+      ],
+      "splits": [
+        {
+          "from": "1977-06-27",
+          "actor": "djibouti"
+        }
+      ],
+      "note": "CShapes holds 522 as a colony of France to 1977-06-26; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
+    },
+    "531": {
+      "actor": "eritrea-under-italy-sardinia",
+      "names": [
+        "Eritrea under Italy/Sardinia"
+      ],
+      "splits": [
+        {
+          "from": "1941-05-19",
+          "actor": "eritrea"
+        }
+      ],
+      "note": "CShapes holds 531 as a colony of Italy/Sardinia to 1941-05-18; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had. Earlier than its first independent date, 1993-05-24: the occupation between the two (occupied 1941-05-19..1952-09-14) is the state's own record, not the colony's."
+    },
+    "540": {
+      "actor": "angola-under-portugal",
+      "names": [
+        "Angola under Portugal"
+      ],
+      "splits": [
+        {
+          "from": "1975-11-11",
+          "actor": "angola"
+        }
+      ],
+      "note": "CShapes holds 540 as a colony of Portugal to 1975-11-10; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
+    },
+    "541": {
+      "actor": "mozambique-under-portugal",
+      "names": [
+        "Mozambique under Portugal"
+      ],
+      "splits": [
+        {
+          "from": "1975-06-25",
+          "actor": "mozambique"
+        }
+      ],
+      "note": "CShapes holds 541 as a colony of Portugal to 1975-06-24; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
+    },
+    "551": {
+      "actor": "zambia-under-united-kingdom",
+      "names": [
+        "Zambia under United Kingdom"
+      ],
+      "splits": [
+        {
+          "from": "1953-08-01",
+          "actor": "zambia"
+        }
+      ],
+      "note": "CShapes holds 551 as a colony of United Kingdom to 1953-07-31; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had. Earlier than its first independent date, 1964-01-22: the source draws no boundary there, and this is the one it does draw."
+    },
+    "552": {
+      "actor": "zimbabwe-rhodesia-under-united-kingdom",
+      "names": [
+        "Zimbabwe (Rhodesia) under United Kingdom"
+      ],
+      "splits": [
+        {
+          "from": "1965-11-11",
+          "actor": "zimbabwe-rhodesia"
+        }
+      ],
+      "note": "CShapes holds 552 as a colony of United Kingdom to 1965-11-10; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
+    },
+    "553": {
+      "actor": "malawi-under-united-kingdom",
+      "names": [
+        "Malawi under United Kingdom"
+      ],
+      "splits": [
+        {
+          "from": "1964-07-06",
+          "actor": "malawi"
+        }
+      ],
+      "note": "CShapes holds 553 as a protectorate of United Kingdom to 1964-07-05; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
+    },
+    "565": {
+      "actor": "namibia-under-south-africa",
+      "names": [
+        "Namibia under South Africa"
+      ],
+      "splits": [
+        {
+          "from": "1990-03-21",
+          "actor": "namibia"
+        }
+      ],
+      "note": "CShapes holds 565 as a colony of South Africa to 1990-03-20; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had. The source gives the held period under more than one power (Germany (Prussia), then South Africa); the record is named for the one that held it longest (Germany (Prussia):30y, South Africa:75y)."
+    },
+    "570": {
+      "actor": "lesotho-under-united-kingdom",
+      "names": [
+        "Lesotho under United Kingdom"
+      ],
+      "splits": [
+        {
+          "from": "1966-10-04",
+          "actor": "lesotho"
+        }
+      ],
+      "note": "CShapes holds 570 as a colony of United Kingdom to 1966-10-03; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
+    },
+    "571": {
+      "actor": "botswana-under-united-kingdom",
+      "names": [
+        "Botswana under United Kingdom"
+      ],
+      "splits": [
+        {
+          "from": "1966-09-30",
+          "actor": "botswana"
+        }
+      ],
+      "note": "CShapes holds 571 as a protectorate of United Kingdom to 1966-09-29; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
+    },
+    "572": {
+      "actor": "swaziland-eswatini-under-united-kingdom",
+      "names": [
+        "Swaziland (Eswatini) under United Kingdom"
+      ],
+      "splits": [
+        {
+          "from": "1968-09-06",
+          "actor": "swaziland-eswatini"
+        }
+      ],
+      "note": "CShapes holds 572 as a colony of United Kingdom to 1968-09-05; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had. The source gives the held period under more than one power (Transvaal, then United Kingdom); the record is named for the one that held it longest (Transvaal:7y, United Kingdom:66y)."
+    },
+    "581": {
+      "actor": "comoros-under-france",
+      "names": [
+        "Comoros under France"
+      ],
+      "splits": [
+        {
+          "from": "1975-07-06",
+          "actor": "comoros"
+        }
+      ],
+      "note": "CShapes holds 581 as a colony of France to 1975-07-05; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
+    },
+    "590": {
+      "actor": "mauritius-under-united-kingdom",
+      "names": [
+        "Mauritius under United Kingdom"
+      ],
+      "splits": [
+        {
+          "from": "1968-03-12",
+          "actor": "mauritius"
+        }
+      ],
+      "note": "CShapes holds 590 as a colony of United Kingdom to 1968-03-11; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
+    },
+    "615": {
+      "actor": "algeria-under-france",
+      "names": [
+        "Algeria under France"
+      ],
+      "splits": [
+        {
+          "from": "1962-07-05",
+          "actor": "algeria"
+        }
+      ],
+      "note": "CShapes holds 615 as a colony of France to 1962-07-04; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
+    },
+    "616": {
+      "actor": "tunisia-under-france",
+      "names": [
+        "Tunisia under France"
+      ],
+      "splits": [
+        {
+          "from": "1956-01-01",
+          "actor": "tunisia"
+        }
+      ],
+      "note": "CShapes holds 616 as a protectorate of France to 1955-12-31; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
+    },
+    "620": {
+      "actor": "libya-under-italy-sardinia",
+      "names": [
+        "Libya under Italy/Sardinia"
+      ],
+      "splits": [
+        {
+          "from": "1951-12-24",
+          "actor": "libya"
+        }
+      ],
+      "note": "CShapes holds 620 as a mandate of United Kingdom to 1951-12-23; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had. The source gives the held period under more than one power (Italy/Sardinia, then United Kingdom); the record is named for the one that held it longest (Italy/Sardinia:31y, United Kingdom:9y)."
+    },
+    "625": {
+      "actor": "sudan-under-united-kingdom",
+      "names": [
+        "Sudan under United Kingdom"
+      ],
+      "splits": [
+        {
+          "from": "1956-01-01",
+          "actor": "sudan"
+        }
+      ],
+      "note": "CShapes holds 625 as a colony of United Kingdom to 1955-12-31; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
+    },
+    "651": {
+      "actor": "egypt-under-united-kingdom",
+      "names": [
+        "Egypt under United Kingdom"
+      ],
+      "splits": [
+        {
+          "from": "1922-02-28",
+          "actor": "egypt"
+        }
+      ],
+      "note": "CShapes holds 651 as a protectorate of United Kingdom to 1922-02-27; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
+    },
     "750": {
       "actor": "british-india",
       "names": [

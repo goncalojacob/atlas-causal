@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "uganda-under-united-kingdom-1926",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 342"
+    }
+  ],
+  "actor": "uganda-under-united-kingdom",
+  "presenceType": "state",
+  "dependencyOf": "united-kingdom",
+  "dependencyKind": "protectorate",
+  "when": {
+    "start": 1926,
+    "end": 1962,
+    "date": "1926-09-27",
+    "endDate": "1962-10-08"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1914-1932.json",
+      "geo/presences/1933-1945.json",
+      "geo/presences/1946-1974.json"
+    ],
+    "key": "342"
+  },
+  "capital": {
+    "lon": 32.565559,
+    "lat": 0.31556,
+    "precision": "city",
+    "label": "Kampala"
+  },
+  "confidence": "consensus"
+}

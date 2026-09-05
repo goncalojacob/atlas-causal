@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "namibia-under-south-africa-1920",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 416"
+    }
+  ],
+  "actor": "namibia-under-south-africa",
+  "presenceType": "state",
+  "dependencyOf": "south-africa",
+  "dependencyKind": "mandate",
+  "when": {
+    "start": 1920,
+    "end": 1966,
+    "date": "1920-12-17",
+    "endDate": "1966-10-26"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1914-1932.json",
+      "geo/presences/1933-1945.json",
+      "geo/presences/1946-1974.json"
+    ],
+    "key": "416"
+  },
+  "capital": {
+    "lon": 17.083611,
+    "lat": -22.57,
+    "precision": "city",
+    "label": "Windhoek"
+  },
+  "confidence": "consensus"
+}

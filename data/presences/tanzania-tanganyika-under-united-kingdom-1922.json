@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "tanzania-tanganyika-under-united-kingdom-1922",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 357"
+    }
+  ],
+  "actor": "tanzania-tanganyika-under-united-kingdom",
+  "presenceType": "state",
+  "dependencyOf": "united-kingdom",
+  "dependencyKind": "mandate",
+  "when": {
+    "start": 1922,
+    "end": 1961,
+    "date": "1922-07-20",
+    "endDate": "1961-12-08"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1914-1932.json",
+      "geo/presences/1933-1945.json",
+      "geo/presences/1946-1974.json"
+    ],
+    "key": "357"
+  },
+  "capital": {
+    "lon": 35.741901,
+    "lat": -6.173,
+    "precision": "city",
+    "label": "Dodoma"
+  },
+  "confidence": "consensus"
+}

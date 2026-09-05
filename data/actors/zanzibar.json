@@ -24,9 +24,9 @@
   "names": [
     "Zanzibar"
   ],
-  "summary": "Entity 511 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 3 periods of territorial validity, from 1890 to 1964. Its last capital in the dataset is Zanzibar City. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Entity 511 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1963 to 1964. Its last capital in the dataset is Zanzibar City. The code is mapped onto more than one actor (data/imports/cshapes-actors.json); this record holds the periods from 1963-12-19. This record was written by the import from those fields and asserts nothing the dataset does not.",
   "when": {
-    "start": 1890,
+    "start": 1963,
     "end": 1964
   },
   "where": {

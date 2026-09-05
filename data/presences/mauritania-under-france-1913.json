@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "mauritania-under-france-1913",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 252"
+    }
+  ],
+  "actor": "mauritania-under-france",
+  "presenceType": "state",
+  "dependencyOf": "france",
+  "dependencyKind": "protectorate",
+  "when": {
+    "start": 1913,
+    "end": 1920,
+    "date": "1913-04-23",
+    "endDate": "1920-01-11"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1886-1913.json",
+      "geo/presences/1914-1932.json"
+    ],
+    "key": "252"
+  },
+  "capital": {
+    "lon": -16.027356,
+    "lat": 18.11944,
+    "precision": "city",
+    "label": "Nouakchott"
+  },
+  "confidence": "consensus"
+}

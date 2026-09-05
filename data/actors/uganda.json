@@ -24,9 +24,9 @@
   "names": [
     "Uganda"
   ],
-  "summary": "Entity 500 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 6 periods of territorial validity, from 1894 to where the dataset stops, in 2019. Its last capital in the dataset is Kampala. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Entity 500 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1962 to where the dataset stops, in 2019. Its last capital in the dataset is Kampala. The code is mapped onto more than one actor (data/imports/cshapes-actors.json); this record holds the periods from 1962-10-09. This record was written by the import from those fields and asserts nothing the dataset does not.",
   "when": {
-    "start": 1894,
+    "start": 1962,
     "end": null
   },
   "where": {
