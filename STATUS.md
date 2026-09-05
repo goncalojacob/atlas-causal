@@ -6,7 +6,87 @@ session ends. `ARCHITECTURE.md` is the target; this file is the position.
 
 ## Last updated
 
-2026-09-05, after H1b (`docs/health/h1b-brief.md`), the health cycle's second
+2026-09-05, after H1c (`docs/health/h1c-brief.md`), the health cycle's third
+run: **the map measures the picture it is really showing, the world is not a
+box, and the two panes stop lying about their size.** Eight items, one commit
+each, and one more that fell out of the second. Code only; nothing under
+`data/` moved and `data/index/` was not rebuilt. 667 tests.
+
+**The map's arithmetic goes through the element's own matrix.** The `<svg>`
+carries a viewBox and no `preserveAspectRatio`, and CSS gives it the whole
+pane, so it is letterboxed: at 1440 × 900 the map area measured 959 × 368 and
+the visible SVG x ran −223 … 1183 — a third of the picture outside the
+nominal box. Scaling client coordinates by the bounding rectangle put the
+wheel's centre a couple of hundred units out, moved a pan at about two thirds
+of the cursor's speed, chose labels for the middle 68 % only, and published a
+box describing that same middle, so a mark visible at the side of the pane had
+no bar under it — exactly what `viewport.js` promises cannot happen (A4).
+`toSvg` goes through `getScreenCTM().inverse()` as the graph view already did,
+`view()` and the box come from the rectangle the pane really shows through the
+new `viewBboxIn`, and a resize republishes the box — but only when there is one
+in force, since widening a window is not a way of asking to narrow the lanes.
+
+**The world is not a box, and an event with no place answers with its
+region.** A pan wrote `bbox=-180,-90,180,90`, which said "the map is looking at
+part of the world" about the whole of it; and any box at all removed the
+fifty-one placeless long processes from the lanes — 86 of 137 in view for the
+whole world (B15). `normalizeBbox` answers null for the world, so the absence
+of a box is what "the world" means in one place and a pan cannot write it. And
+`inView` asks a placeless event for its region: the boxes are derived at load
+from `data/geo/regions.json` by `regionBounds`, never from the manifest, so
+`data/index/` does not change and two branches that both rebuilt it can still
+merge (deviations 199, 200).
+
+**The correction issue carries the record's address, not the reader's.**
+`location.href` whole — the box, the window, the horizon, every step of the
+walk — went into a public issue about one record (A33). `recordUrl` is the
+page plus the one parameter that opens the record, and that is what the issue
+says it was seen at.
+
+**A mark and a bar are controls.** Nothing in either pane could be reached
+from the keyboard: five focusable things between them, none of which opened a
+record (B11). Every mark and every bar carries `tabindex`, `role="button"`, an
+`aria-label` and answers Enter and Space; the lanes take one tab stop each and
+the arrows, Home and End walk along the lane, because twenty thousand rects
+must not be twenty thousand tab stops. Which bar holds the stop is remembered
+by what it names, so the redraw an opened record causes gives the focus back.
+
+**The sheet and the panes agree.** Reading a narrative on a phone, the sheet
+was raised at every arrow key — over the map, the graph and the timeline the
+card had just said to watch (A32). Nothing inside a narrative raises it now.
+And below the phone width the stored pane sizes are not applied at all, the
+two edges leave the tab order, and a drag or an arrow key on one does nothing;
+it held before only because the phone's media query happens not to name the
+two custom properties.
+
+**One `walkOrSelect`.** From the Carnation Revolution, a click on the Alvor
+mark threw the walk away on the map and on the timeline and appended the step
+in the graph — and the map had just drawn the consequence line it then refused
+to follow (B10). The rule is `walkPatch` in `chain.js`, pure, and all three
+views call it (deviation 201).
+
+**With nothing open there is no panel** (owner, 5 September). A third of the
+width said "Pick an event" beside the picture the reader came for. The column
+and its edge collapse and the view takes the room; opening anything brings
+them back at whatever width the reader had dragged the panel to, since that
+preference applies only while the panel is shown. The panel says whether it
+has a card rather than main.js reading it off the URL, because a cluster's
+list is what the panel is showing and is deliberately not state
+(deviations 202, 203).
+
+**And the timeline is laid out into its pane** (owner, 5 September). Its grid
+row was `auto`, so the pane grew with however many rows the packing made and
+was then capped at 45vh: in a short window the drawing was taller than the
+pane, the bottom row was cut, and nothing laid it out again when the window
+changed. The row is a length now, the lanes shrink to a floor — a named lane
+keeps room for its label, a packed row for a bar — and past that floor the
+pane scrolls rather than clipping. The drawing is never shorter than the pane
+either, so the band's handles run its whole height. Two things fell out of
+measuring it: `--timeline-max` had nothing left to cap, and a hidden
+`.timeline-note` had been keeping 29 pixels of the pane and its "show the
+world" pin the whole time (deviations 204, 205).
+
+Before that, H1b (`docs/health/h1b-brief.md`), the health cycle's second
 run: **the card is drawn again only when the card changes, the URL is written
 once a frame, and Back comes back to the picture.** Code only; nothing under
 `data/` moved and `data/index/` was not rebuilt. 616 tests.
@@ -1471,13 +1551,19 @@ overnight runs and the hourly shepherd keep off each other's toes on `m0`.
    which is the shortest card and the strongest claim that the summary is
    what to read first. `openSection` in `src/panel/sections.js` is the one
    function that decides it.
-18. **Next build: H1c** (`docs/health/h1c-brief.md`) — the map's pointer maths
-   through `getScreenCTM`, the `bbox` from the real visible rectangle, no
-   world box and placeless events in view by their region's box, `discuss`
-   with the record's URL only, marks and bars reachable from the keyboard,
-   the phone sheet and the panes agreeing, one shared `walkOrSelect`. Then
-   H2, on `m0`; H5a and H5b may run beside them on their own branches
-   (`docs/health-plan-2026-09-05.md`).
+18. **Next build: H2** (`docs/health-plan-2026-09-05.md`, milestone H2) — the
+   registry: `src/kinds.js` and `src/vocab.js` as leaf modules, with
+   `state.js`, `rules.js`, `lens.js`, `lanes.js`, `bundle.js`, `read.mjs`,
+   `new-record.mjs`, `bundle-to-files.mjs` and `wikidata.mjs` importing from
+   them; `src/emphasis.js` (`workingSet`) consumed by the three views;
+   consistency tests. No URL and no record changes. It has no brief yet.
+   Then H3a, after which the pages switch to the spine. H5b may run beside
+   it on its own branch, without committing `data/index/`.
+   H1c left two things for it to sweep up: `hasOpening` and `CARDS` moved to
+   `state.js` in this run and are re-exported from `phone.js`, which is the
+   kind of duplication H2 exists to end; and the region boxes are derived
+   from `data/geo/regions.json` in `src/util/geo.js` while the lane *ids* come
+   from the manifest, which is two files answering about regions.
 19. **Owner: say whether the map's note is the right place for a failed
    shard.** `.map-note`, top right of the map, only when a shard of borders
    will not load: "The territories could not be loaded; the borders drawn are
@@ -3056,6 +3142,53 @@ gave that to the map and the timeline, and M25 did not widen it.
      knowingly, is that two contribution pull requests can conflict on
      `data/index/`; `deploy.yml` still rebuilds it on `main`, so a conflict
      is resolved by taking either side and letting main settle it.
+199. **A region's box is one box, and Europe's is the whole northern strip.**
+     The brief says a placeless event is in view when its region's *bounding
+     box* intersects the viewport, and that is what was built. Because the
+     Russian Far East is in `europe`, that region's box runs −180 … 180 and
+     2 … 81 north, so 43 of the 51 placeless events are in view almost
+     wherever the map is looking. Kept literal on purpose: the box errs
+     towards leaving a process listed rather than hiding one, which is the
+     direction the defect was in. A box per polygon would tighten it a great
+     deal at the same cost; `regionBounds` in `src/util/geo.js` is the one
+     place that would change.
+200. **`data/geo/regions.json` was not already being fetched.** The brief
+     says it was; the browser had never read it — it is a build-time file,
+     used by `deriveRegion` and `build-index.mjs`. `loadAtlas` fetches it now,
+     alongside the topology, and reduces it to five boxes on arrival rather
+     than keeping the polygons. A failure leaves the boxes empty and the
+     placeless events out of a box as they were, rather than taking the atlas
+     down; and `regions: false` skips it on the entry page and the
+     contribution form, which have no viewport to be in or out of.
+201. **`walkOrSelect` is shared by the three views and not by the panel.**
+     The brief names the map, the timeline and the graph, and finding 10's
+     own recommendation added the panel. The panel's lists mean something
+     else: `follow` *is* its walk, and `select` — an event chosen from an
+     actor's or a place's list — is deliberately a fresh start, because the
+     reader is picking from a list of that record's events and not stepping
+     along a chain. Putting the rule there would have made those lists walk.
+202. **The panel that hides is not replaced by H7's intro card.** Item 7 says
+     the intro card is therefore a dismissible card over the view on first
+     visit; that card is H7's, and building it here would be building H7.
+     `introHtml()` is untouched and still renders "Pick an event" into the
+     panel — which is seen on a phone, where the sheet holds it, and never on
+     a desktop, where the column is collapsed. H7 has the card to write and
+     `introHtml` to remove.
+203. **The panel arrives and leaves at once rather than sliding.** Item 7
+     says it slides back in. A transition on `grid-template-columns` also
+     runs on the first paint, so the panel flashed open and shut on every
+     load; and every frame of it resizes the map pane, which the map's own
+     ResizeObserver answers with a full redraw — ten redraws for one opening.
+204. **A hidden `.timeline-note` was keeping 29 pixels of the pane, and its
+     pin.** Not in the brief, and found by measuring for item 8: the rule
+     sets `display: flex`, which beats the UA stylesheet's rule for
+     `[hidden]`, so the strip and its "show the world" button were on screen
+     the whole time the timeline was showing the whole world. Fixed here
+     because the item is about what height the drawing has.
+205. **`--timeline-max` is gone rather than kept.** It existed only to cap a
+     grid row that was `auto` and therefore grew with the packed rows. Item 8
+     makes that row a length, so there is nothing left to cap and nothing for
+     `panes.js` to lift; one custom property instead of two.
 
 ## Dates to verify
 
@@ -3540,3 +3673,4 @@ H5a started 2026-09-05T11:21:37Z by scheduled (branch h5)
 H5a done
 
 H1c started 2026-09-05T12:07:08Z by scheduled
+H1c done
