@@ -37,6 +37,15 @@ These are not preferences. Ask before breaking any of them.
   Extended by the owner on 2026-09-03 to the same period's places, relations
   between actors and one example narrative drafted on 3–4 September 2026, all
   carrying the same draft marker and queued for the review dashboard.
+  Extended by the owner on 2026-09-05, twice more, under the same marker
+  and the same review obligation: (a) to **events elsewhere in the world,
+  1890–2025, that a Portuguese record connects to** — the wars, crises,
+  treaties and movements the Portuguese events answer to — drafted with
+  their actors and edges as the Portuguese ones were (M40); and (b) to
+  **imported world events at scale** (M42), which carry `origin: wikidata`,
+  `review.flags: ["imported-facts"]` and a summary quoting the source's
+  description, exist to stress the platform, and are not this atlas's
+  account of anything until a person signs them.
   `review.html` is where the exception is retired, one record at a time: it
   lists everything still carrying the marker, and signing a record replaces
   the marker with the reviewer. `node tools/validate.mjs` prints what is left.
