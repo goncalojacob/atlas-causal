@@ -23,9 +23,13 @@ import { extent } from './util/dates.js';
 import { overlaps } from './util/window.js';
 
 export const GROUPS = Object.freeze(['none', 'actor', 'place', 'region']);
-// Twelve lanes is about what a screen holds while a lane still has a height
-// worth drawing a bar in; past that the picture is a list with gaps.
-export const LANE_CAP = 12;
+// Six lanes is about what a reader holds in their head at once, and about
+// what fits under the map while a lane still has a height worth drawing a
+// bar in. It was twelve until M24, and twelve was a list with gaps: the
+// seventh lane down was never looked at, and everything under it was noise
+// with a name. An explicit `lanes` list is still unlimited — a reader who
+// names ten actors has said they want ten.
+export const LANE_CAP = 6;
 export const OTHER_ID = 'other';
 
 const byId = (a, b) => (a < b ? -1 : a > b ? 1 : 0);
@@ -62,7 +66,7 @@ function labelOf(group, id, topology) {
 
 // Every lane the current window offers, with how many of the shown events
 // fall in it, heaviest first. This is the list the picker draws and the list
-// the automatic twelve are taken from — one function, so what the picker
+// the automatic six are taken from — one function, so what the picker
 // offers and what the atlas draws are the same order.
 export function availableLanes(group, topology, window = null, lens = null) {
   if (group !== 'actor' && group !== 'place') return [];
@@ -79,11 +83,11 @@ export function availableLanes(group, topology, window = null, lens = null) {
 
 // The lanes of a grouping, in order, with their members.
 //
-// `window` decides which lanes there are — the twelve with the most events
+// `window` decides which lanes there are — the six with the most events
 // inside the band — and never which events are in them: a bar outside the
 // window is drawn faded, and a lane it was counted out of would leave it
 // nowhere to be drawn. `chosen`, when given, is the reader's own ordered
-// list and replaces the automatic twelve; "Other" joins it only if something
+// list and replaces the automatic six; "Other" joins it only if something
 // falls outside.
 export function lanesFor(group, topology, window = null, lens = null, chosen = null) {
   const all = topology.activeEvents ?? [];

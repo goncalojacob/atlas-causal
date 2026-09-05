@@ -130,7 +130,7 @@ test('the region grouping is the lane list, in its own order, with no Other', ()
   assert.equal(laneExplain(t.activeEvents[0], lanes, 'region', t).reason, 'its region');
 });
 
-test('the automatic list is capped at twelve, plus Other', () => {
+test('the automatic list is capped at six, plus Other', () => {
   const events = [];
   const actors = new Map();
   for (let i = 0; i < 20; i += 1) {

@@ -1,5 +1,5 @@
 // One state object, { from, to, view, focus, group, lanes, selected, source,
-// place, actor, chain, horizon, layers, narrative, step },
+// place, actor, chain, horizon, layers, narrative, step, bbox },
 // mirrored to
 // the URL query string so every view is a shareable link. Knows nothing
 // about SVG or data files. The pure parse/format pair is separate from the
@@ -31,7 +31,7 @@
 //
 // `group` is what the timeline's lanes and the graph's bands are — `none`,
 // `actor`, `place`, `region` — and `lanes` is the reader's own ordered list
-// of them, empty for the automatic twelve. Both are how the atlas is drawn
+// of them, empty for the automatic six. Both are how the atlas is drawn
 // rather than what is selected in it, and both are in the URL for the same
 // reason `view` is: a link should open on the picture it was sent from.
 //

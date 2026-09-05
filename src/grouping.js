@@ -77,7 +77,7 @@ export function createGrouping(container, { atlas, state }) {
     const rest = available.filter((a) => !chosen.includes(a.id));
     const list = [
       ...chosen.map((id) => ({ ...byId.get(id), on: true })),
-      // Without an explicit list the automatic twelve are the ones ticked,
+      // Without an explicit list the automatic six are the ones ticked,
       // so opening the picker shows what is on screen rather than nothing.
       ...rest.map((a, i) => ({ ...a, on: chosen.length === 0 && i < LANE_CAP })),
     ];
@@ -98,7 +98,7 @@ export function createGrouping(container, { atlas, state }) {
         </select>
       </label>
       ${groupable ? `
-        <p class="hint">The twelve with the most events in the window, unless you choose.
+        <p class="hint">The six with the most events in the window, unless you choose.
           An event is drawn in one lane only: the heaviest of its ${s.group === 'actor' ? 'actors' : 'places'} among these.</p>
         ${showSearch ? `<input type="search" class="grouping-search" data-lane-search placeholder="Filter lanes" value="${esc(filter)}" autocomplete="off" spellcheck="false" aria-label="Filter lanes">` : ''}
         <ul class="grouping-lanes" role="list">
@@ -110,7 +110,7 @@ export function createGrouping(container, { atlas, state }) {
           </li>`).join('')}
         </ul>
         ${list.length === 0 ? '<p class="muted">Nothing in this window to group by.</p>' : ''}
-        <p class="actions"><button type="button" data-lanes-clear${s.lanes.length ? '' : ' disabled'}>Back to the automatic twelve</button></p>
+        <p class="actions"><button type="button" data-lanes-clear${s.lanes.length ? '' : ' disabled'}>Back to the automatic six</button></p>
       ` : '<p class="hint">Without a grouping the timeline packs the bars into rows and the graph drops its bands.</p>'}
     `;
     const search = panel.querySelector('[data-lane-search]');
@@ -121,8 +121,8 @@ export function createGrouping(container, { atlas, state }) {
   }
 
   // The explicit list the reader is editing. Empty means automatic, and the
-  // first tick or the first move has to turn the automatic twelve into a
-  // list before it can change it — otherwise unticking one of twelve
+  // first tick or the first move has to turn the automatic six into a
+  // list before it can change it — otherwise unticking one of six
   // lanes nobody had chosen would silently choose the other eleven wrong.
   function currentList(s) {
     if (s.lanes.length) return s.lanes.filter(Boolean);
