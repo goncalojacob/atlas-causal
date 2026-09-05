@@ -29,7 +29,7 @@ import { chainEdges as walkedEdges } from '../chain.js';
 import { horizonSet, horizonBand } from '../horizon.js';
 import { narrativeSet } from '../narrative.js';
 import { lensSet } from '../lens.js';
-import { lanesFor } from '../lanes.js';
+import { arrangementOf } from './arrangement.js';
 import { layoutGraph, stackLayout, MIN_ZOOM, MAX_ZOOM } from './layout.js';
 import { exportButton } from '../share.js';
 
@@ -136,17 +136,6 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
     'aria-label': 'The graph of events and the links between them',
   }, [viewport]);
 
-  // The lanes the bands are, and the events there are to draw. Both are
-  // asked of the same two files the timeline asks (lanes.js, lens.js), so
-  // the two pictures cannot disagree about either.
-  function arrangement(s) {
-    const lens = lensSet(atlas, s);
-    const events = lens ? atlas.activeEvents.filter((e) => lens.has(e.id)) : atlas.activeEvents;
-    const window = resolveWindow(s, atlas.extent);
-    const lanes = s.group === 'none' ? [] : lanesFor(s.group, atlas, window, lens, s.lanes);
-    return { events, lanes, key: `${s.focus ?? ''}|${s.group}|${lanes.map((l) => l.id).join(',')}` };
-  }
-
   // The frame the reader keeps their bearings by: the bands and the year
   // axis. Redrawn only when the arrangement is.
   function drawFrame() {
@@ -171,7 +160,7 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
   }
 
   function arrange(s) {
-    const { events, lanes, key } = arrangement(s);
+    const { events, lanes, key } = arrangementOf(atlas, s);
     if (key === arrangedFor) return false;
     arrangedFor = key;
     const ids = new Set(events.map((e) => e.id));
