@@ -18,14 +18,17 @@ import { identifiers, containerText } from '../citation.js';
 import { articleFor } from '../wikipedia.js';
 import { ACTOR_TYPE_LABEL } from '../panel/event.js';
 import { RELATION_LABEL, RELATION_ORDER } from '../panel/actor.js';
+import { kindsWhere, byKind } from '../kinds.js';
 
 // The kinds with a page. Anything else — an edge, a narrative, a source — is
 // read inside the atlas, and the page says so rather than pretending.
-export const ENTRY_KINDS = Object.freeze(['event', 'actor', 'place']);
+export const ENTRY_KINDS = kindsWhere('entryPage');
 
 // Which of the atlas's own parameters opens a record: the way back, and what
-// a link from one entry to the atlas means.
-const ATLAS_PARAM = Object.freeze({ event: 'selected', actor: 'actor', place: 'place', source: 'source', narrative: 'narrative' });
+// a link from one entry to the atlas means. A kind with no parameter of its
+// own — a relation, a presence — falls back to `selected` at the call sites
+// below, which is what a card with no URL has always done.
+const ATLAS_PARAM = byKind('urlParam');
 
 // The two link builders the page needs, with the fixture flag carried through
 // both: a reader who opened the synthetic dataset stays in it, and a link

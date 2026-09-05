@@ -15,6 +15,7 @@ import {
   EDGE_ID, EDGE_TYPE_IDS, RELATION_ID, RELATION_TYPE_IDS,
   RELATION_ENDPOINTS, ACYCLIC_RELATION_TYPES,
 } from '../vocab.js';
+import { kindsWhere, licensesOf } from '../kinds.js';
 
 // An interval as two astronomical bounds for overlap tests: an open end
 // (`end: null`, ongoing) reaches forward without limit.
@@ -43,11 +44,11 @@ export { EDGE_ID, RELATION_ID, RELATION_ENDPOINTS, ACYCLIC_RELATION_TYPES };
 // one: a Wikidata item is about a thing in the world, which an event, an
 // actor and a place are, and an edge and a narrative are not — those are
 // arguments about things, and nobody else's database has an item for them.
-export const IDENTITY_KINDS = Object.freeze(['event', 'actor', 'place']);
+export const IDENTITY_KINDS = kindsWhere('identity');
 // The kinds a full entry can be written about, which are the same three and
 // for the same reason: a page is about a thing in the world. An edge and a
 // narrative are already prose about records, and their prose is the record.
-export const BODY_KINDS = Object.freeze(['event', 'actor', 'place']);
+export const BODY_KINDS = kindsWhere('body');
 export const WIKIDATA_ID = /^Q[1-9][0-9]*$/;
 // A Wikipedia language edition as Wikipedia itself writes it: "en", "pt",
 // "pt-br", "zh-hans". It is checked because it becomes a hostname.
@@ -61,30 +62,16 @@ export const WIKIPEDIA_LANG = /^[a-z]{2,3}(-[a-z0-9]{2,8})*$/;
 export const WIKIPEDIA_SOURCES = Object.freeze(['wikipedia-en', 'wikipedia-pt']);
 export const PRESENCE_TYPES = Object.freeze(['state', 'polity', 'sphere-of-influence', 'archaeological-culture']);
 export const DEPENDENCY_KINDS = Object.freeze(['colony', 'protectorate', 'mandate', 'occupied']);
-export const ALLOWED_LICENSES = Object.freeze({
-  event: ['CC-BY-SA-4.0'],
-  edge: ['CC-BY-SA-4.0'],
-  source: ['CC-BY-SA-4.0'],
-  // An actor may be NC-SA only when an import created it: see IMPORT_AUTHORS.
-  actor: ['CC-BY-SA-4.0', 'CC-BY-NC-SA-4.0'],
-  // A presence is written from imported geometry more often than not, and
-  // that geometry's licence is not data/LICENSE's. A hand-made presence is
-  // CC BY-SA like every other record.
-  presence: ['CC-BY-SA-4.0', 'CC-BY-NC-SA-4.0'],
-  place: ['CC-BY-SA-4.0'],
-  // A relation is written by a person about two actors; nothing imports one,
-  // so there is no NC hole here.
-  relation: ['CC-BY-SA-4.0'],
-  // A narrative is prose about records that are already here, and it is
-  // signed: the same licence as everything else somebody wrote.
-  narrative: ['CC-BY-SA-4.0'],
-});
+// Which licences each kind may carry, from the registry — an actor and a
+// presence may be NC-SA because an import wrote them, and everything a person
+// writes is CC BY-SA like the rest of data/.
+export const ALLOWED_LICENSES = licensesOf();
 
 // A narrative walks events and edges and nothing else, so a step's ref is one
 // of two shapes. The edge id is tried first: an edge id also matches SLUG's
 // shape nowhere, but the two vocabularies are kept apart here for the same
-// reason RELATION_ID is written out — anything that turns a ref into a path
-// has to know which kind it is holding.
+// reason vocab.js builds the two patterns separately — anything that turns a
+// ref into a path has to know which kind it is holding.
 export function refKind(ref) {
   if (typeof ref !== 'string') return null;
   if (EDGE_ID.test(ref)) return 'edge';

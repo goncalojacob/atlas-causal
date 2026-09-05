@@ -6,8 +6,9 @@
 
 import { createValidator } from './schema.js';
 import { checkRules, normalizeRole } from './rules.js';
+import { KINDS } from '../kinds.js';
 
-export const KINDS = Object.freeze(['event', 'edge', 'source', 'actor', 'presence', 'place', 'relation', 'narrative']);
+export { KINDS };
 export const SCHEMA_VERSION = 1;
 
 function isObject(v) {

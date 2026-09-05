@@ -10,12 +10,15 @@
 
 import { citedSources } from '../validate/rules.js';
 import { citationsOf, unverified } from './citations.js';
+import { CONTRIBUTED_KINDS } from '../kinds.js';
 
 export const DRAFT_AUTHOR = 'Claude (assistant draft, unreviewed)';
 
 // The order the queue is grouped in: the things an argument rests on first,
-// then the arguments, then the walks through them.
-export const KIND_ORDER = Object.freeze(['source', 'place', 'actor', 'event', 'edge', 'relation', 'narrative']);
+// then the arguments, then the walks through them. It is the registry's list
+// of the kinds a person writes, which is the same order the contribution
+// form offers them in (kinds.js).
+export const KIND_ORDER = CONTRIBUTED_KINDS;
 
 // A source with neither an ISBN nor a DOI cannot be looked up mechanically,
 // which is exactly what a reviewer wants to know before reading it.

@@ -7,20 +7,13 @@
 // tested as plain data.
 
 import { safeUrl } from './util/esc.js';
+import { byKind, CITER_ORDER } from './kinds.js';
 
-export const CITER_LABEL = Object.freeze({
-  event: 'Events',
-  edge: 'Links',
-  actor: 'Actors',
-  relation: 'Relations between actors',
-  place: 'Places',
-  presence: 'Territories',
-  narrative: 'Narratives',
-});
-
-// The order the groups are shown in on a source's card. A kind the record
-// set does not have yet simply never appears.
-export const CITER_ORDER = Object.freeze(['event', 'edge', 'actor', 'relation', 'place', 'presence', 'narrative']);
+// What a source's card calls each group of records citing it, and the order
+// it draws them in: both the registry's (kinds.js), so a ninth kind that
+// cites sources cannot arrive without a name for its group.
+export const CITER_LABEL = byKind('citerLabel');
+export { CITER_ORDER };
 
 // The four things a work can be inside. A closed list, like the edge types
 // and for the same reason: "in something" would collapse an article in a

@@ -11,6 +11,7 @@
 import { validate } from '../validate/core.js';
 import { ACTOR_TYPES, EDGE_TYPES, RELATION_TYPES } from '../validate/rules.js';
 import { CONTAINER_KINDS } from '../citation.js';
+import { KIND, CONTRIBUTED_KINDS, listsOf } from '../kinds.js';
 
 export const CONFIDENCE = Object.freeze(['consensus', 'probable', 'disputed']);
 export const SOURCE_TYPES = Object.freeze(['book', 'chapter', 'article', 'thesis', 'primary', 'dataset', 'web']);
@@ -61,7 +62,7 @@ const BODY_FIELD = Object.freeze({
 // caused it. `optionsFrom` is filled at render time from the topology.
 // `identity` marks a field the review dashboard shows read-only: what a
 // record is catalogued as elsewhere is not corrected by editing this atlas.
-export const FIELDS = Object.freeze({
+const DESCRIPTORS = Object.freeze({
   event: Object.freeze([
     { key: 'title', label: 'Title', input: 'text', path: '/title', required: true },
     { key: 'id', label: 'Id', input: 'text', path: '/id', required: true, hint: 'lowercase words joined by hyphens; it becomes the file name and the permanent URL' },
@@ -149,52 +150,55 @@ export const FIELDS = Object.freeze({
   ]),
 });
 
-// Which citation lists a kind carries. Sources cite nothing (rule 6 exempts
-// them); a dispute's dissenting citations are kept apart from the
-// supporting ones so the panel can show which is which.
-export const CITATION_LISTS = Object.freeze({
-  event: [{ key: 'citations', label: 'Sources', path: '/sources' }],
-  edge: [
-    { key: 'citations', label: 'Supporting sources', path: '/sources' },
-    { key: 'disputeCitations', label: 'Dissenting sources', path: '/dispute/sources', when: (v) => v.confidence === 'disputed' },
-  ],
-  source: [],
-  actor: [{ key: 'citations', label: 'Sources', path: '/sources' }],
-  // A relation is an assertion about two actors, so it cites like an edge.
-  relation: [{ key: 'citations', label: 'Sources', path: '/sources' }],
-  // A narrative cites what it rests on beyond the records it walks.
-  narrative: [{ key: 'citations', label: 'Sources', path: '/sources' }],
-  // A place is a geographic fact, not an argument: rule 6 exempts it, and the
-  // form says so rather than asking for a citation nobody has.
-  place: [],
-});
+// The form's fields for each kind, in the order the registry names them.
+// The descriptors above carry the label, the hint and the JSON pointer an
+// error is reported at; `kinds.js` carries the list of names, so a field
+// added to a kind is added in one place and appears here or fails loudly.
+// Ordering by the registry rather than by the literal above is what makes
+// the registry load-bearing: a name it does not know is not drawn, and a
+// name it knows and the descriptors do not is a crash on load rather than a
+// field that quietly went missing from the form.
+function fieldsFromRegistry() {
+  const built = {};
+  // The kinds a person writes, and only those: a presence carries geometry
+  // and arrives through tools/import/, so the form has no fields for one and
+  // `Object.hasOwn(FIELDS, kind)` is how a caller asks whether this kind is
+  // the form's business at all.
+  for (const kind of CONTRIBUTED_KINDS) {
+    const byKey = new Map((DESCRIPTORS[kind] ?? []).map((f) => [f.key, f]));
+    const names = KIND[kind].fields;
+    for (const key of byKey.keys()) {
+      if (!names.includes(key)) throw new Error(`src/kinds.js: ${kind} has no field "${key}"`);
+    }
+    built[kind] = Object.freeze(names.map((key) => {
+      const field = byKey.get(key);
+      if (!field) throw new Error(`src/contribute/bundle.js: ${kind} has no descriptor for field "${key}"`);
+      return field;
+    }));
+  }
+  return Object.freeze(built);
+}
 
-// The actors of an event, each with the role it played in it. One list, on
-// one kind, but the same shape as a citation list: a repeatable row of a
-// reference and a bit of text.
-export const ACTOR_LISTS = Object.freeze({
-  event: [{ key: 'actors', label: 'Actors', path: '/actors' }],
-  edge: [],
-  source: [],
-  actor: [],
-  relation: [],
-  place: [],
-  narrative: [],
-});
+export const FIELDS = fieldsFromRegistry();
 
-// The steps of a narrative: the same repeatable shape again — a reference and
-// a bit of text — except that the reference is to an event *or* a link, and
-// the text is the narrator's own paragraph rather than a role. Order is the
-// order of the rows, which is the order of the walk.
-export const STEP_LISTS = Object.freeze({
-  narrative: [{ key: 'steps', label: 'Steps', path: '/steps' }],
-  event: [],
-  edge: [],
-  source: [],
-  actor: [],
-  relation: [],
-  place: [],
-});
+// What a caller is told when it hands one of these functions a kind the form
+// does not build. Written from the registry, so a ninth kind is named in the
+// message the day it has fields rather than the day somebody remembers.
+function unknownKind(kind) {
+  const known = CONTRIBUTED_KINDS;
+  const list = `${known.slice(0, -1).join(', ')} or ${known[known.length - 1]}`;
+  return `kind must be ${list}, not ${JSON.stringify(kind)}`;
+}
+
+// Which citation lists a kind carries, which actor lists, which step lists:
+// all three from the registry, where a kind's whole entry is written at once.
+// Sources cite nothing (rule 6 exempts them, as it exempts a place); a
+// dispute's dissenting citations are kept apart from the supporting ones so
+// the panel can show which is which; and the actors of an event and the steps
+// of a narrative are the same repeatable shape as a citation row.
+export const CITATION_LISTS = listsOf('citations');
+export const ACTOR_LISTS = listsOf('actors');
+export const STEP_LISTS = listsOf('steps');
 
 // --- ordered lists ---------------------------------------------------------
 // A narrative's steps are the one list whose order is part of what it says:
@@ -489,7 +493,7 @@ export function buildRecord(kind, values, context = {}) {
     }, v);
   }
 
-  throw new Error(`kind must be event, edge, source, actor, place, relation or narrative, not "${kind}"`);
+  throw new Error(`${unknownKind(kind)}`);
 }
 
 // entries: [{ kind, values }] in the order the contributor added them.
@@ -657,7 +661,7 @@ export function valuesFromRecord(kind, record) {
     };
   }
 
-  throw new Error(`kind must be event, edge, source, actor, place, relation or narrative, not "${kind}"`);
+  throw new Error(`${unknownKind(kind)}`);
 }
 
 // The envelope is not the editor's to write. `created`, `aliases`,

@@ -15,11 +15,13 @@
 // markup this file wrote.
 
 import { esc, safeUrl } from './util/esc.js';
+import { kindsWhere } from './kinds.js';
 
 // The kinds a body may link to by id. An edge and a narrative are arguments
 // about records rather than records a reader opens a page of, and a body that
-// wants to talk about one names the events at its ends.
-export const RECORD_LINK_KINDS = Object.freeze(['event', 'actor', 'place', 'source']);
+// wants to talk about one names the events at its ends; the registry says
+// which is which.
+export const RECORD_LINK_KINDS = kindsWhere('linkable');
 
 // The same slug every id in this repository has: a link target that is not
 // one is refused rather than turned into a path.

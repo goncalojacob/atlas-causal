@@ -16,24 +16,14 @@ import {
 import { reorderControls, refreshAll } from './reorder.js';
 import { submitBundle } from './submit.js';
 import { previewHtml } from '../entry/preview.js';
+import { byKind, CONTRIBUTED_KINDS } from '../kinds.js';
 
-const KIND_LABEL = Object.freeze({
-  event: 'Event', edge: 'Edge', source: 'Source', actor: 'Actor', place: 'Place', relation: 'Relation',
-  narrative: 'Narrative',
-});
-const KIND_HINT = Object.freeze({
-  event: 'One point in space and time, or a long process with an interval and no place.',
-  edge: 'One causal link, with the argument for it. The id is derived: from, to and type.',
-  source: 'A bibliography entry, cited by reference. Fifty records citing the same book cite one file.',
-  actor: 'A person, polity, institution or people. Actors are reached through their events, never listed on their own.',
-  place: 'Somewhere events happen, with its own coordinates. A place is a geographic fact, so it needs no source — the events that point at it still do.',
-  relation: 'A dated link between two actors — a regime of a state, a member of a party, who led a body. The id is derived: from, to and type.',
-  narrative: 'A signed walk through records that are already here: your account of them, in order, changing none of them. Where yours and somebody else\'s disagree, both stand.',
-});
-
-// The field whose text suggests the id, per kind. An actor's and a place's
-// display name is the first of its semicolon-separated names.
-const TITLE_KEY = Object.freeze({ event: 'title', actor: 'names', place: 'names', narrative: 'title' });
+// What each kind is called and the sentence under it, and the field whose
+// text suggests an id: the registry's, so a kind arrives with its name, its
+// explanation and its fields together (kinds.js).
+const KIND_LABEL = byKind('label');
+const KIND_HINT = byKind('hint');
+const TITLE_KEY = byKind('titleKey');
 
 let sequence = 0;
 
@@ -103,7 +93,7 @@ export function createForm(container, { topology, schemas, template, fixtures = 
 
   // --- add buttons -------------------------------------------------------
   const addRow = html('div', { class: 'add-row' });
-  for (const kind of ['source', 'event', 'edge', 'actor', 'place', 'relation', 'narrative']) {
+  for (const kind of CONTRIBUTED_KINDS) {
     const button = html('button', { type: 'button' }, `Add ${kind}`);
     button.addEventListener('click', () => {
       addEntry(kind);
