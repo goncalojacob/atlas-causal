@@ -20,15 +20,26 @@ nothing historical of its own.
 4. **Ranking as an ordering**: `shortestPaths` untouched; the horizon list
    and convergence ordered by a cost of confidence and type, convergence
    grouped by depth with counts; the walked chain unchanged.
-5. **The neighbourhood of an open actor or place** (owner, 5 September):
-   while an actor or a place is open and no lens is set, the graph draws
-   that record's events in full and their direct causes and consequences
-   in a dimmed tone, and nothing else; the timeline fades everything
-   outside the same set; the map keeps its marks but emphasises the same
-   set. A "Show everything" chip on the card restores the full picture
-   for that opening, and the existing lens (`?focus=actor:<id>`) remains
-   the explicit, shareable form of the narrowing. Built on `workingSet`
-   (H2), one depth of `subgraph` (item 6).
+5. **The lens takes any number of foci, of any kind** (owner, 5
+   September: "we should be able to choose parent events, actors,
+   timelines or others, or any number of these together, on the map, the
+   graph or the timeline, and it should focus on the events associated
+   with those, hiding what is in no way associated and showing direct
+   connections dimmed"). `?focus=` becomes a comma-separated list of
+   `kind:id` — `actor:`, `place:`, `source:`, `event:` (a parent, its
+   subtree; or any event, its neighbourhood), `region:`, `narrative:` —
+   and the window is the time focus it always was. The **focus set** is
+   the union of each focus's events; an "all of these" toggle makes it
+   the intersection, and the URL carries it (`&focusAll=1`). In every
+   view: events in the set drawn in full; their direct causes and
+   consequences dimmed; everything else hidden (the timeline may keep a
+   density strip). Each focus is a chip in the header with its own ×;
+   every card offers "Focus on this" which *adds* to the set, and "Focus
+   only on this" which replaces it; opening an actor or a place with no
+   lens set behaves as a one-focus lens on it (the neighbourhood view)
+   until the reader adds or clears. Built on `workingSet` (H2) and one
+   depth of `subgraph` (item 6); `lens.js` stays pure and tested for
+   union, intersection and each kind.
 6. **`subgraph(atlas, ids, depth)`** in `graph.js` returning events,
    edges, actors and relations with a bundled fetch of the explanations
    by period (`explanations-<period>-<hash>.json` emitted by the index);
@@ -40,4 +51,6 @@ the intro; "carnation" finds the revolution; `?actor=angola` lists events
 along `succeeded`; the horizon list's order is by the cost and the chain
 is unchanged (test); `subgraph` tested on the fixtures; with
 `?actor=portugal` the graph draws only Portugal's events and their direct
-neighbours, the latter dimmed (browser test); `H7 done`.
+neighbours, the latter dimmed; `?focus=actor:portugal,event:<a parent>`
+draws the union and `&focusAll=1` the intersection, on all three views
+(browser tests); `H7 done`.
