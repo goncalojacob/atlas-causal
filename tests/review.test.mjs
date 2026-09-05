@@ -12,7 +12,7 @@ import {
   buildQueue, groupByKind, flagCounts, filterQueue, progressOf, digestOf,
 } from '../src/review/queue.js';
 import {
-  normalizeReviewer, reviewerProblems, signRecord, retractRecord, retractionPlan, bundleOf,
+  normalizeReviewer, reviewerProblems, signRecord, retractRecord, retractionPlan, bundleOf, carriedReason,
 } from '../src/review/sign.js';
 import { endpointFor, putBundle, saveBundle } from '../src/review/save.js';
 import { claim, messageOf, choicesFrom } from '../src/review/editor.js';
@@ -129,11 +129,24 @@ test('signing replaces the draft marker with the person who read it', () => {
   const signed = signRecord(record, { name: 'A Reviewer', github: '@reviewer' }, { today: '2026-09-04' });
   assert.deepEqual(signed.authors, [{ name: 'A Reviewer', github: 'reviewer' }]);
   assert.equal(signed.revised, '2026-09-04');
-  assert.equal(Object.hasOwn(signed, 'review'), false, 'what was flagged has been looked at');
+  // The flags and the note are gone: what was asked for has been looked at.
+  // The status and the signature are what is left, and they say the record
+  // has been read rather than leaving an absent block to mean it (rule 28).
+  assert.deepEqual(signed.review, {
+    status: 'reviewed',
+    signedBy: [{ name: 'A Reviewer', github: 'reviewer', on: '2026-09-04' }],
+  });
   assert.deepEqual(record.authors, DRAFT, 'the original is untouched');
+  assert.deepEqual(record.review, { status: 'draft', flags: ['date'], note: 'check it' });
 
-  // Signing twice does not list the reviewer twice.
-  assert.deepEqual(signRecord(signed, { name: 'A Reviewer', github: 'reviewer' }, { today: '2026-09-05' }).authors, signed.authors);
+  // Signing twice does not list the reviewer twice, in either list.
+  const again = signRecord(signed, { name: 'A Reviewer', github: 'reviewer' }, { today: '2026-09-05' });
+  assert.deepEqual(again.authors, signed.authors);
+  assert.deepEqual(again.review.signedBy, signed.review.signedBy);
+  // A second person who reads it is added, not substituted: a record can be
+  // read by more than one.
+  const twice = signRecord(signed, { name: 'Another Reviewer', github: null }, { today: '2026-09-06' });
+  assert.deepEqual(twice.review.signedBy.map((s) => s.name), ['A Reviewer', 'Another Reviewer']);
 
   // A co-author who is not the draft marker stays.
   const shared = draft({ authors: [{ name: 'Someone Else', github: null }, ...DRAFT] });
@@ -160,9 +173,17 @@ test('retracting an event carries its edges and the narratives that walk them', 
   for (const item of plan.retract) assert.ok(item.kind === 'edge' || item.kind === 'narrative');
   assert.ok(!plan.retract.some((i) => i.id === event.id), 'the record itself is not in its own cascade');
 
-  const retracted = retractRecord({ kind: 'event', id: 'x', status: 'active', revised: null }, { today: '2026-09-04' });
+  const reason = 'A synthetic withdrawal, written in a test and about nothing.';
+  const retracted = retractRecord({ kind: 'event', id: 'x', status: 'active', revised: null }, { today: '2026-09-04', reason });
   assert.equal(retracted.status, 'retracted');
   assert.equal(retracted.revised, '2026-09-04');
+  assert.deepEqual(retracted.retraction, { on: '2026-09-04', reason });
+  // A retraction is an argument, so there is no writing one without it.
+  assert.throws(() => retractRecord({ kind: 'event', id: 'x' }, { today: '2026-09-04' }), /says why/);
+  assert.throws(() => retractRecord({ kind: 'event', id: 'x' }, { today: '2026-09-04', reason: '   ' }), /says why/);
+  // The cascade's records carry the fact that they follow, not an argument
+  // nobody made about them.
+  assert.match(carriedReason('x'), /^Retracted with x: /);
 });
 
 test('retracting an actor or a place is blocked, not cascaded', async () => {
@@ -189,15 +210,16 @@ test('a retraction that carries its edges validates as a bundle', async () => {
   const event = records.find((r) => r.kind === 'event' && r.status === 'active'
     && topology.edges.some((x) => x.status === 'active' && (x.from === r.id || x.to === r.id)));
   const plan = retractionPlan(event, topology);
+  const reason = 'A synthetic withdrawal, written in a test and about nothing.';
   const bundle = bundleOf([
-    retractRecord(event, { today: '2026-09-04' }),
-    ...plan.retract.map((i) => retractRecord(byId.get(i.id), { today: '2026-09-04' })),
+    retractRecord(event, { today: '2026-09-04', reason }),
+    ...plan.retract.map((i) => retractRecord(byId.get(i.id), { today: '2026-09-04', reason: carriedReason(event.id) })),
   ]);
   const { errors } = validate(bundle.records, topology, all);
   assert.deepEqual(errors, [], JSON.stringify(errors));
 
   // The same retraction without the cascade is exactly what rule 11 forbids.
-  const alone = validate([retractRecord(event, { today: '2026-09-04' })], topology, all);
+  const alone = validate([retractRecord(event, { today: '2026-09-04', reason })], topology, all);
   assert.ok(alone.errors.some((e) => e.rule === 11), 'an active edge to a retracted event is rule 11');
 });
 

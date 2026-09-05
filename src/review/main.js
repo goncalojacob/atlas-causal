@@ -15,7 +15,7 @@ import { loadSchemas } from '../validate/schemas.js';
 import {
   buildQueue, groupByKind, flagCounts, filterQueue, progressOf, isDraft,
 } from './queue.js';
-import { signRecord, retractRecord, retractionPlan, reviewerProblems, normalizeReviewer, bundleOf } from './sign.js';
+import { signRecord, retractRecord, retractionPlan, reviewerProblems, normalizeReviewer, bundleOf, carriedReason } from './sign.js';
 import { saveBundle, readStatus } from './save.js';
 import { unverified } from './citations.js';
 import { createEditor } from './editor.js';
@@ -425,13 +425,21 @@ function render({ topology, review, schemas, citersOf }) {
       ? `Retract ${record.id} and, with it, ${carried.join(', ')}?`
       : `Retract ${record.id}?`;
     if (!window.confirm(question)) return;
+    // Why, in the reviewer's own words. A retraction is an argument for
+    // withdrawing a record and it stays on the record for good (rule 27), so
+    // it is asked for before anything is written and a blank one stops here.
+    const reason = String(window.prompt(`Why is ${record.id} being retracted? This stays on the record.`) ?? '').trim();
+    if (!reason) {
+      noteEl.textContent = 'A retraction says why. Nothing was retracted.';
+      return;
+    }
     // The cascade is fetched whole: the topology carries a projection, and a
     // projection is not a record that may be written back.
     const others = [];
     for (const item of plan.retract) {
-      others.push(retractRecord(await getJson(`${dataRoot}${item.kind}s/${encodeURIComponent(item.id)}.json`, { cache: 'no-store' }), { today: today() }));
+      others.push(retractRecord(await getJson(`${dataRoot}${item.kind}s/${encodeURIComponent(item.id)}.json`, { cache: 'no-store' }), { today: today(), reason: carriedReason(record.id) }));
     }
-    const outcome = await send([retractRecord(record, { today: today() }), ...others], 'Retracted');
+    const outcome = await send([retractRecord(record, { today: today(), reason }), ...others], 'Retracted');
     if (outcome.mode === 'saved') forget([record.id, ...plan.retract.map((r) => r.id)]);
   });
 

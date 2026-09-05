@@ -28,6 +28,10 @@ import {
 import { KIND_DIRS as READ_KIND_DIRS } from '../tools/lib/read.mjs';
 import { SCHEMA_FILES, TOOL_SIDE } from '../src/validate/schemas.js';
 import { CARDS, OPENINGS } from '../src/state.js';
+import {
+  ORIGIN_TOOLS, IMPORT_TOOLS, NC_ORIGINS, REVIEW_STATUS,
+} from '../src/origin.js';
+import { ENRICHABLE, CREATOR_ONLY } from '../tools/import/identity.mjs';
 import { ROOT, SCHEMA_DIR } from './helpers.mjs';
 
 const schema = async (file) => JSON.parse(await readFile(path.join(SCHEMA_DIR, file), 'utf8'));
@@ -172,4 +176,29 @@ test('the vocabularies equal the enums in schema/**', async () => {
   assert.ok(!FOCUS.test('edge:a--b--caused'));
   assert.equal(GROUPS[0], 'none', 'the default grouping is first');
   assert.equal(new Set(GROUPS).size, GROUPS.length);
+});
+
+// --- src/origin.js against the schema, and against the additive rule --------
+
+test('the writers and the review statuses are the ones the schema names', async () => {
+  const provenance = await schema('common/provenance.json');
+  assert.deepEqual([...ORIGIN_TOOLS], provenance.properties.origin.properties.tool.enum);
+  assert.deepEqual(Object.values(REVIEW_STATUS), provenance.properties.review.properties.status.enum);
+  // The two narrower lists are subsets of the vocabulary, not a second one:
+  // an import that is not a writer, or an NC origin that is not an import,
+  // would be a licence hole nobody had opened on purpose.
+  for (const tool of IMPORT_TOOLS) assert.ok(ORIGIN_TOOLS.includes(tool), tool);
+  for (const tool of NC_ORIGINS) assert.ok(IMPORT_TOOLS.includes(tool), tool);
+});
+
+test('an enrichment pass can never be told to write what a creator writes', () => {
+  // Rule 29 in the one place it can be enforced rather than checked: `origin`
+  // answers "who wrote this record", so an import that fills in an identifier
+  // on somebody else's record must not come away owning it. The mistake this
+  // catches is a field added to ENRICHABLE without reading why it is short.
+  for (const field of ENRICHABLE) assert.ok(!CREATOR_ONLY.includes(field), `${field} is not an import's to write`);
+  assert.ok(CREATOR_ONLY.includes('origin'));
+  assert.ok(CREATOR_ONLY.includes('review'));
+  assert.ok(CREATOR_ONLY.includes('retraction'));
+  assert.ok(CREATOR_ONLY.includes('authors'));
 });

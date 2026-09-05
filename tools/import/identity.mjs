@@ -13,6 +13,23 @@
 
 export const ENRICHABLE = Object.freeze(['wikidata', 'wikipedia', 'sitelinks']);
 
+// What an enrichment pass may never write, whatever it is asked for. `origin`
+// heads the list and is the reason it exists: it answers "who wrote this
+// record", not "who has touched it" (rule 29), so an import that fills in an
+// identifier on somebody else's record must not come away owning it — which
+// is what it would mean once the licence hole, the review queue and the
+// import's own idea of what it may rewrite all read that field. `review` and
+// `retraction` are the reviewer's and the record's history; `authors` was
+// already forbidden in prose and is written down here instead.
+//
+// ENRICHABLE and this list may not intersect, which is a test rather than a
+// check at run time: the mistake this guards against is a field added to
+// ENRICHABLE by somebody who did not read this comment, and that is caught
+// once, when the tests run, and not on every record.
+export const CREATOR_ONLY = Object.freeze([
+  'schema', 'id', 'kind', 'status', 'origin', 'authors', 'license', 'created', 'review', 'retraction',
+]);
+
 // A gap, as opposed to a value. `sitelinks: 0` is a value — an item nobody
 // has written an article about — and is never overwritten.
 export function isEmpty(value) {

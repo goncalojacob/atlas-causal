@@ -4,7 +4,7 @@
 
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { checkRules, citedSources, WIKIPEDIA_SOURCES } from '../src/validate/rules.js';
+import { checkRules, citedSources, WIKIPEDIA_SOURCES, WRITER_NAMES } from '../src/validate/rules.js';
 import { validate, buildTopology } from '../src/validate/core.js';
 import { createRegionDeriver } from '../src/util/geo.js';
 import { fixtures, schemas, clone } from './helpers.mjs';
@@ -207,4 +207,65 @@ test('the schema holds the shape of a verification', async () => {
     event.review = { flags: [], citations: { [event.sources[0].source]: { checked: true } } };
   });
   assert.ok(rulesHit(r, 1).length >= 1, messages(r));
+});
+
+// --- rules 27, 28, 29: the envelope's conditional requirements --------------
+// Three fields whose meaning is a relation between fields, which is why they
+// are rules and not schema keywords.
+
+test('rule 27: a retraction and a tombstone stand or fall together', async () => {
+  const reason = { on: '2026-09-05', reason: 'A synthetic withdrawal, written in a test.' };
+  // Retracted and saying why: the shape every tombstone in data/ carries.
+  let r = await run((fx) => {
+    fx.byId['fixture-event-b'].status = 'retracted';
+    fx.byId['fixture-event-b'].retraction = { ...reason };
+  });
+  assert.equal(rulesHit(r, 27).length, 0, messages(r));
+
+  // Retracted and silent: the history has gone missing, which is what taking
+  // the reason out of `review.note` was meant to make impossible.
+  r = await run((fx) => { fx.byId['fixture-event-b'].status = 'retracted'; });
+  assert.equal(rulesHit(r, 27)[0].path, '/retraction');
+  assert.match(rulesHit(r, 27)[0].message, /says when it was withdrawn and why/);
+
+  // A retraction on a record that is not one says nothing true.
+  r = await run((fx) => { fx.byId['fixture-event-b'].retraction = { ...reason }; });
+  assert.match(rulesHit(r, 27)[0].message, /only a retracted record/);
+  r = await run((fx) => {
+    fx.byId['fixture-event-b'].status = 'merged';
+    fx.byId['fixture-event-b'].supersededBy = 'fixture-event-a';
+    fx.byId['fixture-event-b'].retraction = { ...reason };
+  });
+  assert.equal(rulesHit(r, 27).length, 1);
+});
+
+test('rule 28: a reviewed record names who signed it', async () => {
+  let r = await run((fx) => { fx.byId['fixture-event-a'].review = { status: 'reviewed' }; });
+  assert.equal(rulesHit(r, 28)[0].path, '/review/signedBy');
+  r = await run((fx) => { fx.byId['fixture-event-a'].review = { status: 'reviewed', signedBy: [] }; });
+  assert.equal(rulesHit(r, 28).length, 1, 'an empty list is nobody');
+  r = await run((fx) => {
+    fx.byId['fixture-event-a'].review = { status: 'reviewed', signedBy: [{ name: 'A Reviewer', github: 'reviewer', on: '2026-09-05' }] };
+  });
+  assert.equal(r.errors.length, 0, messages(r));
+  // `draft` claims nothing about a person, so it asks for nobody.
+  r = await run((fx) => { fx.byId['fixture-event-a'].review = { status: 'draft' }; });
+  assert.equal(r.errors.length, 0, messages(r));
+});
+
+test('rule 29: a record an automated writer made says so in origin', async () => {
+  let r = await run((fx) => {
+    fx.byId['fixture-event-a'].authors = [{ name: WRITER_NAMES[1], github: null }];
+  });
+  assert.equal(rulesHit(r, 29)[0].path, '/origin');
+  r = await run((fx) => {
+    fx.byId['fixture-event-a'].authors = [{ name: WRITER_NAMES[1], github: null }];
+    fx.byId['fixture-event-a'].origin = { tool: 'wikidata' };
+  });
+  assert.equal(rulesHit(r, 29).length, 0, messages(r));
+  // A person's record carries no origin at all, and that is what absent means.
+  r = await run((fx) => {
+    fx.byId['fixture-event-a'].authors = [{ name: 'A Person', github: null }];
+  });
+  assert.equal(rulesHit(r, 29).length, 0, messages(r));
 });

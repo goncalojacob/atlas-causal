@@ -14,6 +14,10 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-01-01",
   "revised": null,
+  "retraction": {
+    "on": "2026-01-01",
+    "reason": "Retracted by hand in the fixture tree, so that it carries a tombstone with its reason on it as rule 27 requires, and so that the chain has a retraction to take back and put again. Nothing here is a claim about anything."
+  },
   "sources": [
     {
       "source": "fixture-source-1",

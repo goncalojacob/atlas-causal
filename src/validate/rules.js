@@ -16,7 +16,7 @@ import {
   RELATION_ENDPOINTS, ACYCLIC_RELATION_TYPES,
 } from '../vocab.js';
 import { kindsWhere, licensesOf } from '../kinds.js';
-import { NC_ORIGINS, mayBeNonCommercial } from '../origin.js';
+import { NC_ORIGINS, REVIEW_STATUS, mayBeNonCommercial, originTool } from '../origin.js';
 
 // An interval as two astronomical bounds for overlap tests: an open end
 // (`end: null`, ongoing) reaches forward without limit.
@@ -61,6 +61,16 @@ export const WIKIPEDIA_LANG = /^[a-z]{2,3}(-[a-z0-9]{2,8})*$/;
 // import adds one to NC_ORIGINS in src/origin.js; nothing else can quietly
 // become an authority.
 export const WIKIPEDIA_SOURCES = Object.freeze(['wikipedia-en', 'wikipedia-pt']);
+// The names the three automated writers signed with before `origin` existed.
+// Nothing decides a licence, a review status or an import's ownership by
+// reading them any more — src/origin.js does all three. They survive here for
+// rule 29 alone, which asks a creator whether it wrote `origin`, and the day
+// the last of them leaves `authors` this list leaves with them.
+export const WRITER_NAMES = Object.freeze([
+  'CShapes 2.0 import (tools/import/cshapes.mjs)',
+  'Wikidata import (tools/import/wikidata.mjs)',
+  'Claude (assistant draft, unreviewed)',
+]);
 export const PRESENCE_TYPES = Object.freeze(['state', 'polity', 'sphere-of-influence', 'archaeological-culture']);
 export const DEPENDENCY_KINDS = Object.freeze(['colony', 'protectorate', 'mandate', 'occupied']);
 // Which licences each kind may carry, from the registry — an actor and a
@@ -1053,6 +1063,52 @@ export function checkRules(records, topology = {}, { universe: prebuilt = null }
       if (lookup(id, kind) || missing.has(key)) continue;
       missing.add(key);
       error(23, r, '/body', `the entry links to "${id}", which is not ${kind === 'event' || kind === 'actor' ? 'an' : 'a'} ${kind} record`);
+    }
+  }
+
+  // --- rules 27, 28, 29: the envelope's conditional requirements -----------
+  // Three fields whose meaning is a relation between fields, which no schema
+  // can state: a schema says a key is well formed, not that it belongs on
+  // this record.
+  for (const r of own) {
+    // 27. A tombstone says why it is one, and nothing else carries a
+    // retraction. The reason is the record's own history — Sign and Retract
+    // never delete it, which is the whole reason it left `review.note`
+    // (health review B, finding 16) — so a retraction with no record and a
+    // record with no retraction are both a history that has gone missing.
+    const retracted = r.status === 'retracted';
+    const hasRetraction = isObject(r.retraction);
+    if (retracted && !hasRetraction) {
+      error(27, r, '/retraction', 'a retracted record says when it was withdrawn and why');
+    }
+    if (!retracted && r.retraction !== undefined) {
+      error(27, r, '/retraction', `only a retracted record carries a retraction; this one is ${r.status}`);
+    }
+
+    // 28. `reviewed` is a claim that a person read this record, and a claim
+    // with nobody behind it is the thing the review dashboard exists to
+    // stop. `draft` needs nothing: it says only that nobody has.
+    if (isObject(r.review) && r.review.status === REVIEW_STATUS.reviewed) {
+      if (!Array.isArray(r.review.signedBy) || r.review.signedBy.length === 0) {
+        error(28, r, '/review/signedBy', 'a reviewed record names who signed it');
+      }
+    }
+
+    // 29. `origin` answers "who wrote this record", not "who has touched
+    // it": it is written once, by whatever created the record, and an
+    // enrichment pass that fills in a field on somebody else's record never
+    // sets it (tools/import/identity.mjs). The validator cannot see history,
+    // so what it checks is the half that shows in one record — a record an
+    // automated writer made carries one. Without it such a record falls
+    // silently out of the review queue and out of rule 12's licence hole,
+    // which is exactly the failure the move off author names was for.
+    //
+    // WRITER_NAMES is the only place left in the project where those author
+    // strings decide anything, and it decides nothing about the record: it
+    // asks a creator whether it wrote `origin`. It goes when the last of
+    // those names does.
+    if (originTool(r) === null && (r.authors ?? []).some((a) => WRITER_NAMES.includes(a?.name))) {
+      error(29, r, '/origin', 'a record an automated writer created says so in origin, so that nothing has to read authors to find out');
     }
   }
 

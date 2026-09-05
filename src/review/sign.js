@@ -8,6 +8,7 @@
 // correction-bundle path keeps the Action's attribution instead.
 
 import { DRAFT_AUTHOR } from './queue.js';
+import { REVIEW_STATUS } from '../origin.js';
 
 function isObject(v) {
   return v !== null && typeof v === 'object' && !Array.isArray(v);
@@ -32,27 +33,88 @@ export function reviewerProblems({ name, github } = {}) {
   return problems;
 }
 
+// What survives a review, and what it clears. `flags` and `note` are the
+// reviewer's to clear: they are the list of things somebody was asked to look
+// at, and looking at them is what signing means. `citations` is not — it is
+// the reviewer's own audit trail, made one book at a time and often on
+// another day, and Sign used to delete it a moment after they ticked it
+// (health review A, finding 7). It is carried through both acts below, and
+// through nothing else in the block.
+function reviewAfter(record, next) {
+  const citations = record?.review?.citations;
+  const kept = isObject(citations) && Object.keys(citations).length ? { citations } : {};
+  const review = { ...next, ...kept };
+  return Object.keys(review).length ? review : undefined;
+}
+
+// Where a key belongs in the envelope, so that a field written here lands
+// where the schemas declare it rather than at the end of the file. The same
+// order `src/validate/migrate.js` inserts by, and the same reason: a diff
+// should be the field and not a reshuffle.
+const ENVELOPE_ORDER = Object.freeze([
+  'schema', 'id', 'kind', 'status', 'supersededBy', 'aliases', 'authors',
+  'license', 'created', 'revised', 'origin', 'retraction', 'review',
+]);
+
+function inEnvelopeOrder(record) {
+  const rank = (key) => {
+    const at = ENVELOPE_ORDER.indexOf(key);
+    return at < 0 ? Infinity : at;
+  };
+  return Object.fromEntries(Object.entries(record)
+    .filter(([, value]) => value !== undefined)
+    .sort((a, b) => rank(a[0]) - rank(b[0])));
+}
+
 // The draft marker is replaced, not appended to: an unreviewed draft that a
 // person has read and corrected is that person's record. If the reviewer is
 // already an author the list is left alone.
+//
+// `review.status` becomes `reviewed` and the signature goes in `signedBy`
+// (rule 28). The two are not the same act as attribution: `authors` says who
+// wrote the record and is what the licence asks for, `signedBy` says who read
+// it and on what day, and a record can be read by more than one person.
 export function signRecord(record, reviewer, { today } = {}) {
   const who = normalizeReviewer(reviewer);
   const authors = (record.authors ?? []).filter((a) => a?.name !== DRAFT_AUTHOR);
   const already = authors.some((a) => (who.github && a?.github === who.github) || a?.name === who.name);
-  const signed = {
+  const on = today ?? record.revised;
+  const before = Array.isArray(record.review?.signedBy) ? record.review.signedBy : [];
+  const signedBy = before.some((s) => (who.github && s?.github === who.github) || s?.name === who.name)
+    ? before
+    : [...before, { ...who, on }];
+  return inEnvelopeOrder({
     ...record,
     authors: already ? authors : [...authors, who],
-    revised: today ?? record.revised,
-  };
-  // Whatever the draft asked to have looked at has now been looked at.
-  delete signed.review;
-  return signed;
+    revised: on,
+    review: reviewAfter(record, { status: REVIEW_STATUS.reviewed, signedBy }),
+  });
 }
 
-export function retractRecord(record, { today } = {}) {
-  const out = { ...record, status: 'retracted', revised: today ?? record.revised };
-  delete out.review;
-  return out;
+// A retraction is an argument — the case for withdrawing a record — so it is
+// written by a person like any other, and it goes in a field of its own that
+// nothing deletes. `review.note` could not promise that: signing a tombstone
+// took the only reason in the data for its being one (health review B,
+// finding 16), and rule 27 now holds the two together.
+export function retractRecord(record, { today, reason } = {}) {
+  const text = String(reason ?? '').trim();
+  if (!text) throw new Error('a retraction says why: nothing was written');
+  const on = today ?? record.revised;
+  return inEnvelopeOrder({
+    ...record,
+    status: 'retracted',
+    revised: on,
+    retraction: record.retraction ?? { on, reason: text },
+    review: reviewAfter(record, {}),
+  });
+}
+
+// What the cascade says on the records a retraction carries with it. They are
+// not withdrawn on their own merits — an active edge to a retracted event is
+// rule 11 and an active narrative walking one is the same — so the reason is
+// that fact and not a second argument somebody did not make.
+export function carriedReason(id) {
+  return `Retracted with ${id}: an active record cannot stand on a retracted one (rule 11), so this one follows it.`;
 }
 
 // Everything that would become invalid if this record were retracted, split

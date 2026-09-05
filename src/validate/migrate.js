@@ -210,9 +210,15 @@ export const MIGRATIONS = Object.freeze([
         : null;
       const reshape = sitelinks && typeof sitelinks.on === 'string';
 
+      // A block whose only content was the retraction says nothing now that
+      // the retraction has a field of its own, and an empty one says nothing
+      // an absent one does not — the same rule migration 3 applies to
+      // `citations`, and what makes the pair with `down` exact.
+      if (isObject(review) && !Object.keys(review).length) review = undefined;
+
       // A record that had no `review` block at all and has a status now needs
       // the key put in its place like any other addition.
-      if (review !== record.review && !Object.hasOwn(record, 'review')) additions.review = review;
+      if (review !== record.review && review !== undefined && !Object.hasOwn(record, 'review')) additions.review = review;
 
       if (!Object.keys(additions).length && review === record.review && !reshape) return record;
 
@@ -230,7 +236,7 @@ export const MIGRATIONS = Object.freeze([
       };
       for (const key of Object.keys(record)) {
         flush(rank(key));
-        if (key === 'review') out.review = review;
+        if (key === 'review') { if (review !== undefined) out.review = review; }
         else if (key === 'sitelinks' && reshape) out.sitelinks = sitelinks;
         else out[key] = record[key];
       }
@@ -270,7 +276,17 @@ export const MIGRATIONS = Object.freeze([
         delete review.status;
         if (hasRetraction) {
           const reason = record.retraction?.reason;
-          if (typeof reason === 'string') review.note = review.note ? `${review.note} ${reason}` : reason;
+          // Back into the note it came from — and only if `up` would read it
+          // out again, whole. `up` recognises the sentence M21 and M22 wrote
+          // and dates the retraction from `revised`; a retraction written
+          // since, in somebody's own words or on another day, has nowhere
+          // before this step to be put, and a reason silently demoted to a
+          // remark is the loss this field was created to prevent.
+          const on = record.revised ?? record.created;
+          if (typeof reason !== 'string' || !RETRACTION_TEXT.test(reason) || record.retraction?.on !== on) {
+            throw new Error(`migration 4 cannot take back "${record.id}": its retraction would not be read out of a note again`);
+          }
+          review.note = review.note ? `${review.note} ${reason}` : reason;
         }
         // An empty block says nothing an absent one does not, and a record
         // whose only `review` was the status `up` gave it had none before.

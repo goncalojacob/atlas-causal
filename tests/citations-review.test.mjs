@@ -8,6 +8,7 @@ import {
   citationsOf, citationRows, unverified, countCitations, setVerified, clearVerified,
 } from '../src/review/citations.js';
 import { buildQueue, digestOf, DIGEST_KEYS } from '../src/review/queue.js';
+import { signRecord, retractRecord } from '../src/review/sign.js';
 import { runValidation } from '../tools/validate.mjs';
 import { fixtures, clone, FIXTURE_DATA } from './helpers.mjs';
 
@@ -111,4 +112,35 @@ test('the validator counts the unchecked citations of the fixture dataset', asyn
   );
   assert.ok(counts.citations > 0);
   assert.ok(path.isAbsolute(FIXTURE_DATA));
+});
+
+// Health review A, finding 7. The dashboard's own flow is tick, then Sign,
+// and Sign deleted `review` whole — so the ticks a reviewer had just made
+// went with the flags, the validator's headline count could never fall
+// through the dashboard, and a signed record had no record of what had been
+// checked against the source. `flags` and `note` are the reviewer's to clear;
+// `citations` is their audit trail and survives both acts.
+test('signing and retracting keep the citation checks and clear the rest', async () => {
+  const { byId } = await fixtures();
+  const base = clone(byId['fixture-event-a']);
+  base.review = { status: 'draft', flags: ['date'], note: 'check the month' };
+  const ticked = setVerified(base, 'fixture-source-1', WHO, { today: TODAY });
+  assert.equal(unverified(ticked).length, 0);
+
+  const signed = signRecord(ticked, WHO, { today: TODAY });
+  assert.deepEqual(signed.review.citations, ticked.review.citations, 'the ticks survive the signature');
+  assert.equal(signed.review.status, 'reviewed');
+  assert.equal(Object.hasOwn(signed.review, 'flags'), false);
+  assert.equal(Object.hasOwn(signed.review, 'note'), false);
+  assert.equal(unverified(signed).length, 0, 'and the count the validator prints has fallen');
+
+  const retracted = retractRecord(ticked, { today: TODAY, reason: 'A synthetic withdrawal, written in a test.' });
+  assert.deepEqual(retracted.review.citations, ticked.review.citations);
+  assert.equal(Object.hasOwn(retracted.review, 'flags'), false);
+
+  // A record nobody ticked anything on ends with no block at all rather than
+  // an empty one: an absent `review` says what an empty one would.
+  const plain = clone(byId['fixture-event-b']);
+  plain.review = { status: 'draft', flags: ['date'] };
+  assert.equal(Object.hasOwn(retractRecord(plain, { today: TODAY, reason: 'A synthetic withdrawal.' }), 'review'), false);
 });
