@@ -4118,18 +4118,19 @@ fixtures and the three static pages — sixteen assertions, all passing:
 
 - Repo: `~/atlas-causal`, branch `m0`.
 - Pull request #1: https://github.com/goncalojacob/atlas-causal/pull/1 — its
-  body is **76,671 bytes** after H2. Each milestone that adds a section pays
+  body is **93,875 bytes** after H4a. Each milestone that adds a section pays
   for it by cutting an older one to a summary that points here: M8 cut M5's,
   M11 cut M7's, M12 cut M9's, M13 cut M10's, M14 cut M11's, M15 cut M12's,
-  M16 cut M13's, M17 cut M14's, M23 cut M20's and M8's, and M24 cut M21's.
+  M16 cut M13's, M17 cut M14's, M23 cut M20's and M8's, M24 cut M21's, and
+  H4a cut H1b's.
   **The 65,536-byte figure this note used to give is wrong**: H1a, H1b and
   H1c each added a section without cutting one, the body went past 65,536
   during them, and H2's own PATCH of 76,671 bytes was accepted with HTTP 200.
   Whatever the real cap is, it is not 64 KB — but nobody has found it, so
   keep paying for a new section by cutting an old one. The longest sections
-  now are **M28's (5.0 KB)**, **H1b's (5.5 KB)** and **M29's (3.0 KB)**; the
-  first two are the obvious next cuts, since `STATUS.md` carries their detail
-  in full. M4's, M6's and Map usability's are the longest left written out
+  now are **M28's (5.0 KB)** and **M29's (3.0 KB)**; M28's is the obvious next
+  cut, since `STATUS.md` carries its detail in full. H1b's, 5.5 KB and the
+  longest of them, is what H4a cut to pay for its own. M4's, M6's and Map usability's are the longest left written out
   from the early milestones.
   A `#### Checks for Mn` heading contains the string `## Checks`, so an
   insertion anchored on the top-level section has to search for
@@ -4296,3 +4297,5 @@ H3c started 2026-09-05T17:51:38Z by scheduled
 H3c done
 
 H4a started 2026-09-05T18:11:57Z by scheduled
+
+H4a done
