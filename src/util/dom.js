@@ -72,10 +72,16 @@ export function reuse(group) {
       apply(el, attrs);
       if (text !== null) {
         if (el.textContent !== text) el.textContent = text;
-      } else if (title !== null) {
+      } else {
         const first = el.firstChild;
-        if (first && first.tagName === 'title') {
-          if (first.textContent !== title) first.textContent = title;
+        const had = first && first.tagName === 'title' ? first : null;
+        if (title === null) {
+          // A tooltip from the last render, on an element that is not
+          // offering one now: it would say something about a record this is
+          // no longer standing for.
+          if (had) el.removeChild(had);
+        } else if (had) {
+          if (had.textContent !== title) had.textContent = title;
         } else {
           el.insertBefore(svgTitle(title), first ?? null);
         }

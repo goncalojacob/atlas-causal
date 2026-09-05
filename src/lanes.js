@@ -211,8 +211,10 @@ export function barBox(event, scale, { width = null, openEnd = null, minBar = 6 
 // A binary heap of row indices, ordered by the x each row ends at and then
 // by the index itself — the order the packing's own tie-break asks for. It is
 // written out rather than taken from a generic heap with a comparator
-// argument, because the comparison happens twenty million times in a large
-// pack and a call per comparison is most of what it costs.
+// argument: a large pack makes some hundreds of thousands of comparisons,
+// and a comparator passed in as an argument is a call at each of them, which
+// was the difference between this being slower than the walk it replaced and
+// being level with it at twenty rows.
 //
 // `ends` is the array the caller keeps the rows' ends in, so the heap holds
 // integers and never objects.
