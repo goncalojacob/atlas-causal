@@ -6,7 +6,9 @@
 // This page is not linked from the atlas and is not for readers. It exists to
 // retire the exception in CLAUDE.md: every record the assistant drafted is
 // unreviewed until a person reads it, corrects it and signs it, and the queue
-// is empty when that is done.
+// is empty when that is done. "Unreviewed" is `review.status: draft` — a fact
+// on the record and not a name in `authors` — so anything else that arrives
+// unread, a contribution or a later import, is in the same list.
 
 import { esc } from '../util/esc.js';
 import { html } from '../util/dom.js';

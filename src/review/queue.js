@@ -3,10 +3,18 @@
 // fetch — editor.js and main.js are the other halves.
 //
 // The exception in CLAUDE.md is the reason this file exists. The 20th- and
-// 21st-century records under data/ were drafted by the assistant and carry a
-// marker saying so; every one of them is unreviewed until a person reads it,
-// edits what is wrong and signs it. The queue is that list, and the project
-// is done with the exception when the queue is empty.
+// 21st-century records under data/ were drafted by the assistant; every one
+// of them is unreviewed until a person reads it, edits what is wrong and
+// signs it. The queue is that list, and the project is done with the
+// exception when the queue is empty.
+//
+// What puts a record in the list is `review.status: draft` and nothing else.
+// It was an author's name matched against a literal string until H5b, which
+// meant that every record a contribution or a later import created was
+// invisible to this page from the day it merged, and that renaming the
+// assistant would have emptied the queue without a record being read (health
+// review A, finding 8). Anything that says it has not been read is in the
+// list, whoever wrote it.
 
 import { citedSources } from '../validate/rules.js';
 import { citationsOf, unverified } from './citations.js';

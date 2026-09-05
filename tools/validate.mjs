@@ -337,7 +337,7 @@ async function main(argv) {
   for (const e of errors) console.error(formatItem('error', e));
   if (!quiet) for (const w of warnings) console.log(formatItem('warning', w));
   console.log(`${counts.records} records, ${counts.regions} regions: ${errors.length} error(s), ${warnings.length} warning(s)`);
-  if (counts.unreviewed) console.log(`${counts.unreviewed} record(s) still carry the assistant-draft marker: open review.html`);
+  if (counts.unreviewed) console.log(`${counts.unreviewed} record(s) nobody has read yet (review.status: draft): open review.html`);
   console.log(`${counts.unverified} of ${counts.citations} citation(s) not yet checked against the source`);
   return errors.length ? 1 : 0;
 }

@@ -18,9 +18,10 @@
       <p><strong>This page is a maintainer's tool, not part of the atlas.</strong> It is not
       linked from the map, and it exists to retire one thing: the dated exception in
       <code>CLAUDE.md</code> that let an assistant draft records so the interface could be built
-      against real material. Every one of those records carries an author entry saying it is an
-      unreviewed draft, and the queue on the left is exactly that list. Reading a record,
-      correcting what is wrong and signing it replaces the marker with your name.</p>
+      against real material. Every record nobody has read yet says so — <code>review.status</code> is
+      <code>draft</code> until somebody signs it — and the queue on the left is exactly that list,
+      whoever wrote the record. Reading one, correcting what is wrong and signing it puts your name
+      on it and the day you read it in <code>review.signedBy</code>.</p>
 
       <p><strong>Saving needs the local server.</strong> Run <code>node tools/serve.mjs</code> and
       open this page from <code>http://localhost:8000/review.html</code>: a save is validated
