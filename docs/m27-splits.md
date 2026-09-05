@@ -27,7 +27,7 @@ so. The state keeps the actor id it already had, so nothing that points at it
 has to move.
 
 The splits themselves are [`data/imports/cshapes-actors.json`](../data/imports/cshapes-actors.json);
-this page is the account of them. 55 codes split, 7 not split, in 3 of the four batches.
+this page is the account of them. 77 codes split, 12 not split, in 4 of the four batches.
 
 ## The Caribbean and the Americas
 
@@ -120,3 +120,40 @@ Not split:
 
 - **580** `madagascar-malagasy` — the source gives it its own ground first (from 1886-01-01) and only later as colony; the boundary a split would use is not its first independent date.
 - **600** `morocco` — the source gives it its own ground first (from 1886-01-01) and only later as protectorate; the boundary a split would use is not its first independent date.
+
+## Asia and the Pacific
+
+22 codes split.
+
+| Code | Colonial actor | State actor | From |
+|---|---|---|---|
+| 645 | `iraq-under-united-kingdom` | `iraq` | 1932-10-03 |
+| 652 | `syria-under-france` | `syria` | 1946-01-01 |
+| 660 | `lebanon-under-france` | `lebanon` | 1944-11-22 |
+| 663 | `jordan-under-united-kingdom` | `jordan` | 1946-05-25 |
+| 694 | `qatar-under-united-kingdom` | `qatar` | 1971-09-03 |
+| 696 | `united-arab-emirates-under-united-kingdom` | `united-arab-emirates` | 1971-12-02 |
+| 713 | `taiwan-under-japan` | `taiwan` | 1945-08-15 |
+| 760 | `bhutan-under-united-kingdom` | `bhutan` | 1949-01-01 |
+| 775 | `myanmar-burma-under-united-kingdom` | `myanmar-burma` | 1948-01-04 |
+| 780 | `sri-lanka-ceylon-under-united-kingdom` | `sri-lanka-ceylon` | 1948-02-04 |
+| 781 | `maldives-under-united-kingdom` | `maldives` | 1965-05-26 |
+| 811 | `cambodia-kampuchea-under-france` | `cambodia-kampuchea` | 1953-11-09 |
+| 812 | `laos-under-france` | `laos` | 1954-05-01 |
+| 820 | `malaysia-under-united-kingdom` | `malaysia` | 1957-08-31 |
+| 830 | `singapore-under-united-kingdom` | `singapore` | 1963-01-01 |
+| 835 | `brunei-under-united-kingdom` | `brunei` | 1984-01-01 |
+| 840 | `philippines-under-united-states-of-america` | `philippines` | 1946-07-04 |
+| 860 | `east-timor-under-portugal` | `east-timor` | 1976-07-17 |
+| 910 | `papua-new-guinea-under-australia` | `papua-new-guinea` | 1975-09-16 |
+| 920 | `new-zealand-under-united-kingdom` | `new-zealand` | 1907-09-01 |
+| 940 | `solomon-islands-under-united-kingdom` | `solomon-islands` | 1978-07-07 |
+| 950 | `fiji-under-united-kingdom` | `fiji` | 1970-10-10 |
+
+Not split:
+
+- **700** `afghanistan` — the source gives it its own ground first (from 1886-01-01) and only later as protectorate; the boundary a split would use is not its first independent date.
+- **730** `korea` — the source gives it its own ground first (from 1886-01-01) and only later as colony; the boundary a split would use is not its first independent date.
+- **731** `korea-people-s-republic-of` — the source holds it only as occupied, never as a colony, protectorate or mandate; an occupied state is the same actor.
+- **732** `korea-republic-of` — the source holds it only as occupied, never as a colony, protectorate or mandate; an occupied state is the same actor.
+- **815** `vietnam-annam-cochin-china-tonkin` — the source gives it its own ground first (from 1886-01-01) and only later as colony; the boundary a split would use is not its first independent date.

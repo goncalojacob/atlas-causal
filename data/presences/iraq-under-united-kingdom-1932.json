@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "iraq-under-united-kingdom-1932",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 487"
+    }
+  ],
+  "actor": "iraq-under-united-kingdom",
+  "presenceType": "state",
+  "dependencyOf": "united-kingdom",
+  "dependencyKind": "mandate",
+  "when": {
+    "start": 1932,
+    "end": 1932,
+    "date": "1932-09-23",
+    "endDate": "1932-10-02"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1914-1932.json"
+    ],
+    "key": "487"
+  },
+  "capital": {
+    "lon": 44.39389,
+    "lat": 33.33861,
+    "precision": "city",
+    "label": "Baghdad"
+  },
+  "confidence": "consensus"
+}

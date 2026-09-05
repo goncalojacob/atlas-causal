@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "brunei-under-united-kingdom-1888",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 628"
+    }
+  ],
+  "actor": "brunei-under-united-kingdom",
+  "presenceType": "state",
+  "dependencyOf": "united-kingdom",
+  "dependencyKind": "protectorate",
+  "when": {
+    "start": 1888,
+    "end": 1983,
+    "date": "1888-09-17",
+    "endDate": "1983-12-31"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1886-1913.json",
+      "geo/presences/1914-1932.json",
+      "geo/presences/1933-1945.json",
+      "geo/presences/1946-1974.json",
+      "geo/presences/1975-2019.json"
+    ],
+    "key": "628"
+  },
+  "capital": {
+    "lon": 114.933296,
+    "lat": 4.88333,
+    "precision": "city",
+    "label": "Bandar Seri Begawan"
+  },
+  "confidence": "consensus"
+}

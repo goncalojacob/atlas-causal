@@ -7,7 +7,7 @@ import again.
 CShapes gives some entities under one Gleditsch–Ward code for their whole
 life, dependency and independent state alike. This atlas can hold such a code
 as one actor or as two, and the mapping file decides which: a `splits` entry
-cuts the code's outlines by date into different actors. The 34 codes below
+cuts the code's outlines by date into different actors. The 12 codes below
 are the ones that file does **not** yet cut and that the source shows in both
 conditions — the list to work down, in batches, by editing it. Nothing here is
 a recommendation: which of them are two things and which are one is a
@@ -26,30 +26,8 @@ boundary CShapes itself draws or the import refuses it.
 | 341 | `montenegro` | Montenegro | 4 | 1 (occupied) | 1886-01-01 | 1918-11-30 |
 | 580 | `madagascar-malagasy` | Madagascar (Malagasy) | 5 | 3 (colony) | 1886-01-01 | 1960-06-25 |
 | 600 | `morocco` | Morocco | 10 | 1 (protectorate) | 1886-01-01 | 1956-03-01 |
-| 645 | `iraq` | Iraq | 5 | 4 (mandate, occupied) | 1932-10-03 | 1932-10-02 |
-| 652 | `syria` | Syria | 5 | 3 (mandate, occupied) | 1946-01-01 | 1945-12-31 |
-| 660 | `lebanon` | Lebanon | 3 | 2 (mandate, occupied) | 1944-11-22 | 1944-11-21 |
-| 663 | `jordan` | Jordan | 5 | 4 (mandate, occupied) | 1946-05-25 | 1946-05-24 |
-| 694 | `qatar` | Qatar | 2 | 1 (protectorate) | 1971-09-03 | 1971-09-02 |
-| 696 | `united-arab-emirates` | United Arab Emirates | 3 | 2 (protectorate) | 1971-12-02 | 1971-12-01 |
 | 700 | `afghanistan` | Afghanistan | 4 | 2 (protectorate) | 1886-01-01 | 1919-04-30 |
-| 713 | `taiwan` | Taiwan | 2 | 1 (colony) | 1949-12-08 | 1945-08-14 |
 | 730 | `korea` | Korea | 2 | 1 (colony) | 1886-01-01 | 1945-08-14 |
 | 731 | `korea-people-s-republic-of` | Korea, People's Republic of | 2 | 1 (occupied) | 1948-09-09 | 1948-09-08 |
 | 732 | `korea-republic-of` | Korea, Republic of | 2 | 1 (occupied) | 1948-08-15 | 1948-08-14 |
-| 760 | `bhutan` | Bhutan | 3 | 2 (protectorate) | 1949-01-01 | 1948-12-31 |
-| 775 | `myanmar-burma` | Myanmar (Burma) | 3 | 1 (colony) | 1948-01-04 | 1948-01-03 |
-| 780 | `sri-lanka-ceylon` | Sri Lanka (Ceylon) | 2 | 1 (colony) | 1948-02-04 | 1948-02-03 |
-| 781 | `maldives` | Maldives | 2 | 1 (protectorate) | 1965-05-26 | 1965-05-25 |
-| 811 | `cambodia-kampuchea` | Cambodia (Kampuchea) | 5 | 4 (colony) | 1953-11-09 | 1953-11-08 |
-| 812 | `laos` | Laos | 3 | 2 (colony) | 1954-05-01 | 1954-04-30 |
 | 815 | `vietnam-annam-cochin-china-tonkin` | Vietnam (Annam/Cochin China/Tonkin) | 4 | 2 (colony) | 1886-01-01 | 1954-04-30 |
-| 820 | `malaysia` | Malaysia | 4 | 1 (colony) | 1957-08-31 | 1957-08-30 |
-| 830 | `singapore` | Singapore | 2 | 1 (colony) | 1965-08-09 | 1962-12-31 |
-| 835 | `brunei` | Brunei | 2 | 1 (protectorate) | 1984-01-01 | 1983-12-31 |
-| 840 | `philippines` | Philippines | 5 | 2 (colony) | 1946-07-04 | 1946-07-03 |
-| 860 | `east-timor` | East Timor | 2 | 1 (colony) | 2002-05-20 | 1976-07-16 |
-| 910 | `papua-new-guinea` | Papua New Guinea | 2 | 1 (mandate) | 1975-09-16 | 1975-09-15 |
-| 920 | `new-zealand` | New Zealand | 2 | 1 (colony) | 1907-09-01 | 1907-08-31 |
-| 940 | `solomon-islands` | Solomon Islands | 4 | 3 (protectorate) | 1978-07-07 | 1978-07-06 |
-| 950 | `fiji` | Fiji | 2 | 1 (colony) | 1970-10-10 | 1970-10-09 |

@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "syria-under-france-1922",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 499"
+    }
+  ],
+  "actor": "syria-under-france",
+  "presenceType": "state",
+  "dependencyOf": "france",
+  "dependencyKind": "mandate",
+  "when": {
+    "start": 1922,
+    "end": 1945,
+    "date": "1922-12-02",
+    "endDate": "1945-12-31"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1914-1932.json",
+      "geo/presences/1933-1945.json"
+    ],
+    "key": "499"
+  },
+  "capital": {
+    "lon": 36.299999,
+    "lat": 33.5,
+    "precision": "city",
+    "label": "Damascus"
+  },
+  "confidence": "consensus"
+}

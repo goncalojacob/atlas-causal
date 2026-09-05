@@ -704,6 +704,19 @@
       ],
       "note": "CShapes holds 625 as a colony of United Kingdom to 1955-12-31; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
     },
+    "645": {
+      "actor": "iraq-under-united-kingdom",
+      "names": [
+        "Iraq under United Kingdom"
+      ],
+      "splits": [
+        {
+          "from": "1932-10-03",
+          "actor": "iraq"
+        }
+      ],
+      "note": "CShapes holds 645 as a mandate of United Kingdom to 1932-10-02; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
+    },
     "651": {
       "actor": "egypt-under-united-kingdom",
       "names": [
@@ -716,6 +729,84 @@
         }
       ],
       "note": "CShapes holds 651 as a protectorate of United Kingdom to 1922-02-27; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
+    },
+    "652": {
+      "actor": "syria-under-france",
+      "names": [
+        "Syria under France"
+      ],
+      "splits": [
+        {
+          "from": "1946-01-01",
+          "actor": "syria"
+        }
+      ],
+      "note": "CShapes holds 652 as a mandate of France to 1945-12-31; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
+    },
+    "660": {
+      "actor": "lebanon-under-france",
+      "names": [
+        "Lebanon under France"
+      ],
+      "splits": [
+        {
+          "from": "1944-11-22",
+          "actor": "lebanon"
+        }
+      ],
+      "note": "CShapes holds 660 as a mandate of France to 1944-11-21; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
+    },
+    "663": {
+      "actor": "jordan-under-united-kingdom",
+      "names": [
+        "Jordan under United Kingdom"
+      ],
+      "splits": [
+        {
+          "from": "1946-05-25",
+          "actor": "jordan"
+        }
+      ],
+      "note": "CShapes holds 663 as a mandate of United Kingdom to 1946-05-24; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
+    },
+    "694": {
+      "actor": "qatar-under-united-kingdom",
+      "names": [
+        "Qatar under United Kingdom"
+      ],
+      "splits": [
+        {
+          "from": "1971-09-03",
+          "actor": "qatar"
+        }
+      ],
+      "note": "CShapes holds 694 as a protectorate of United Kingdom to 1971-09-02; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
+    },
+    "696": {
+      "actor": "united-arab-emirates-under-united-kingdom",
+      "names": [
+        "United Arab Emirates under United Kingdom"
+      ],
+      "splits": [
+        {
+          "from": "1971-12-02",
+          "actor": "united-arab-emirates"
+        }
+      ],
+      "note": "CShapes holds 696 as a protectorate of United Kingdom to 1971-12-01; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
+    },
+    "713": {
+      "actor": "taiwan-under-japan",
+      "names": [
+        "Taiwan under Japan"
+      ],
+      "splits": [
+        {
+          "from": "1945-08-15",
+          "actor": "taiwan"
+        }
+      ],
+      "note": "CShapes holds 713 as a colony of Japan to 1945-08-14; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had. Earlier than its first independent date, 1949-12-08: the source draws no boundary there, and this is the one it does draw."
     },
     "750": {
       "actor": "british-india",
@@ -732,6 +823,136 @@
       ],
       "note": "One CShapes code carries both the dependency and the independent state. Splitting it gives each its own actor, so a presence never hangs off a record whose dates do not contain it."
     },
+    "760": {
+      "actor": "bhutan-under-united-kingdom",
+      "names": [
+        "Bhutan under United Kingdom"
+      ],
+      "splits": [
+        {
+          "from": "1949-01-01",
+          "actor": "bhutan"
+        }
+      ],
+      "note": "CShapes holds 760 as a protectorate of India to 1948-12-31; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had. The source gives the held period under more than one power (United Kingdom, then India); the record is named for the one that held it longest (United Kingdom:62y, India:1y)."
+    },
+    "775": {
+      "actor": "myanmar-burma-under-united-kingdom",
+      "names": [
+        "Myanmar (Burma) under United Kingdom"
+      ],
+      "splits": [
+        {
+          "from": "1948-01-04",
+          "actor": "myanmar-burma"
+        }
+      ],
+      "note": "CShapes holds 775 as a colony of United Kingdom to 1948-01-03; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
+    },
+    "780": {
+      "actor": "sri-lanka-ceylon-under-united-kingdom",
+      "names": [
+        "Sri Lanka (Ceylon) under United Kingdom"
+      ],
+      "splits": [
+        {
+          "from": "1948-02-04",
+          "actor": "sri-lanka-ceylon"
+        }
+      ],
+      "note": "CShapes holds 780 as a colony of United Kingdom to 1948-02-03; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
+    },
+    "781": {
+      "actor": "maldives-under-united-kingdom",
+      "names": [
+        "Maldives under United Kingdom"
+      ],
+      "splits": [
+        {
+          "from": "1965-05-26",
+          "actor": "maldives"
+        }
+      ],
+      "note": "CShapes holds 781 as a protectorate of United Kingdom to 1965-05-25; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
+    },
+    "811": {
+      "actor": "cambodia-kampuchea-under-france",
+      "names": [
+        "Cambodia (Kampuchea) under France"
+      ],
+      "splits": [
+        {
+          "from": "1953-11-09",
+          "actor": "cambodia-kampuchea"
+        }
+      ],
+      "note": "CShapes holds 811 as a colony of France to 1953-11-08; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
+    },
+    "812": {
+      "actor": "laos-under-france",
+      "names": [
+        "Laos under France"
+      ],
+      "splits": [
+        {
+          "from": "1954-05-01",
+          "actor": "laos"
+        }
+      ],
+      "note": "CShapes holds 812 as a colony of France to 1954-04-30; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
+    },
+    "820": {
+      "actor": "malaysia-under-united-kingdom",
+      "names": [
+        "Malaysia under United Kingdom"
+      ],
+      "splits": [
+        {
+          "from": "1957-08-31",
+          "actor": "malaysia"
+        }
+      ],
+      "note": "CShapes holds 820 as a colony of United Kingdom to 1957-08-30; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
+    },
+    "830": {
+      "actor": "singapore-under-united-kingdom",
+      "names": [
+        "Singapore under United Kingdom"
+      ],
+      "splits": [
+        {
+          "from": "1963-01-01",
+          "actor": "singapore"
+        }
+      ],
+      "note": "CShapes holds 830 as a colony of United Kingdom to 1962-12-31; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had. Earlier than its first independent date, 1965-08-09: the source draws no boundary there, and this is the one it does draw."
+    },
+    "835": {
+      "actor": "brunei-under-united-kingdom",
+      "names": [
+        "Brunei under United Kingdom"
+      ],
+      "splits": [
+        {
+          "from": "1984-01-01",
+          "actor": "brunei"
+        }
+      ],
+      "note": "CShapes holds 835 as a protectorate of United Kingdom to 1983-12-31; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
+    },
+    "840": {
+      "actor": "philippines-under-united-states-of-america",
+      "names": [
+        "Philippines under United States of America"
+      ],
+      "splits": [
+        {
+          "from": "1946-07-04",
+          "actor": "philippines"
+        }
+      ],
+      "note": "CShapes holds 840 as a colony of United States of America to 1946-07-03; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had. The source gives the held period under more than one power (Spain, then United States of America); the record is named for the one that held it longest (Spain:13y, United States of America:48y)."
+    },
     "850": {
       "actor": "dutch-east-indies",
       "names": [
@@ -746,6 +967,71 @@
         }
       ],
       "note": "As with 750: the dependency and the independent state under one code become two actors."
+    },
+    "860": {
+      "actor": "east-timor-under-portugal",
+      "names": [
+        "East Timor under Portugal"
+      ],
+      "splits": [
+        {
+          "from": "1976-07-17",
+          "actor": "east-timor"
+        }
+      ],
+      "note": "CShapes holds 860 as a colony of Portugal to 1976-07-16; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had. Earlier than its first independent date, 2002-05-20: the source draws no boundary there, and this is the one it does draw."
+    },
+    "910": {
+      "actor": "papua-new-guinea-under-australia",
+      "names": [
+        "Papua New Guinea under Australia"
+      ],
+      "splits": [
+        {
+          "from": "1975-09-16",
+          "actor": "papua-new-guinea"
+        }
+      ],
+      "note": "CShapes holds 910 as a mandate of Australia to 1975-09-15; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
+    },
+    "920": {
+      "actor": "new-zealand-under-united-kingdom",
+      "names": [
+        "New Zealand under United Kingdom"
+      ],
+      "splits": [
+        {
+          "from": "1907-09-01",
+          "actor": "new-zealand"
+        }
+      ],
+      "note": "CShapes holds 920 as a colony of United Kingdom to 1907-08-31; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
+    },
+    "940": {
+      "actor": "solomon-islands-under-united-kingdom",
+      "names": [
+        "Solomon Islands under United Kingdom"
+      ],
+      "splits": [
+        {
+          "from": "1978-07-07",
+          "actor": "solomon-islands"
+        }
+      ],
+      "note": "CShapes holds 940 as a protectorate of United Kingdom to 1978-07-06; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
+    },
+    "950": {
+      "actor": "fiji-under-united-kingdom",
+      "names": [
+        "Fiji under United Kingdom"
+      ],
+      "splits": [
+        {
+          "from": "1970-10-10",
+          "actor": "fiji"
+        }
+      ],
+      "note": "CShapes holds 950 as a colony of United Kingdom to 1970-10-09; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
     }
   }
 }

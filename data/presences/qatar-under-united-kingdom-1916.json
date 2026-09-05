@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "qatar-under-united-kingdom-1916",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 527"
+    }
+  ],
+  "actor": "qatar-under-united-kingdom",
+  "presenceType": "state",
+  "dependencyOf": "united-kingdom",
+  "dependencyKind": "protectorate",
+  "when": {
+    "start": 1916,
+    "end": 1971,
+    "date": "1916-11-03",
+    "endDate": "1971-09-02"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1914-1932.json",
+      "geo/presences/1933-1945.json",
+      "geo/presences/1946-1974.json"
+    ],
+    "key": "527"
+  },
+  "capital": {
+    "lon": 51.533329,
+    "lat": 25.28667,
+    "precision": "city",
+    "label": "Doha"
+  },
+  "confidence": "consensus"
+}
