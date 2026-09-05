@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "portugal--council-of-europe--allied-with",
+  "kind": "relation",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "date"
+    ],
+    "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source."
+  },
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    }
+  ],
+  "from": "portugal",
+  "to": "council-of-europe",
+  "type": "allied-with",
+  "when": {
+    "start": 1976,
+    "end": null
+  },
+  "note": "Admitted in September 1976, once the new constitution made Portugal eligible. Membership, not an alliance: rule 19 reserves member-of for persons."
+}

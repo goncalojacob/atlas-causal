@@ -84,11 +84,22 @@ test('the atlas\'s own cards: Portugal\'s four regimes and what Salazar led', as
   const ctx = context(atlas);
 
   const portugal = actorCardHtml(ctx, atlas.actors.get('portugal'));
-  assert.deepEqual(headings(portugal), ['Regimes']);
-  assert.match(portugal, /<h2>Relations <span class="count">4<\/span><\/h2>/);
+  // Since M29 the state's card carries its memberships of international
+  // bodies beside its regimes. They are `allied-with` and not `member-of`
+  // because rule 19 reserves `member-of` for a person at the `from` end; each
+  // row's note says that it records a membership.
+  assert.deepEqual(headings(portugal), ['Regimes', 'Allied with']);
+  assert.match(portugal, /<h2>Relations <span class="count">14<\/span><\/h2>/);
   for (const regime of ['first-portuguese-republic', 'military-dictatorship', 'estado-novo', 'third-portuguese-republic']) {
     assert.match(portugal, new RegExp(`data-action="actor" data-id="${regime}"`), regime);
   }
+  // The memberships are listed oldest first, which is what makes the section
+  // readable as a sequence rather than a set.
+  const memberships = ['league-of-nations', 'oeec', 'efta', 'imf', 'oecd',
+    'council-of-europe', 'european-union', 'schengen-area', 'cplp', 'eurozone'];
+  const positions = memberships.map((id) => portugal.indexOf(`data-id="${id}"`));
+  for (const [i, at] of positions.entries()) assert.notEqual(at, -1, memberships[i]);
+  assert.deepEqual(positions, [...positions].sort((a, b) => a - b), 'memberships in date order');
 
   const salazar = actorCardHtml(ctx, atlas.actors.get('salazar'));
   assert.deepEqual(headings(salazar), ['Led']);

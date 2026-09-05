@@ -5180,6 +5180,29 @@
         }
       ],
       "cites": [
+        "reis-2013-portuguese-slump"
+      ],
+      "from": "european-central-bank",
+      "id": "european-central-bank--european-union--part-of",
+      "kind": "relation",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source."
+      },
+      "status": "active",
+      "to": "european-union",
+      "type": "part-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "reis-2013-portuguese-slump",
         "imf-2016-portugal-ex-post-evaluation"
       ],
@@ -5197,6 +5220,29 @@
         "note": "The birth or founding year, and the end where there is one, were written from memory."
       },
       "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-teixeira-2019-political-institutions"
+      ],
+      "from": "european-commission",
+      "id": "european-commission--european-union--part-of",
+      "kind": "relation",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source."
+      },
+      "status": "active",
+      "to": "european-union",
+      "type": "part-of"
     },
     {
       "authors": [
@@ -5227,6 +5273,30 @@
         "note": "Closing this actor rather than renaming it is an editorial choice nobody has made deliberately; the closing year follows from it."
       },
       "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "costa-pinto-teixeira-2019-political-institutions"
+      ],
+      "from": "european-economic-community",
+      "id": "european-economic-community--european-union--succeeded",
+      "kind": "relation",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source."
+      },
+      "status": "active",
+      "to": "european-union",
+      "type": "succeeded"
     },
     {
       "authors": [
@@ -5284,6 +5354,29 @@
         "note": "The 1999 start and the count of eleven founding members were written from memory. How much of the Portuguese slump the currency caused is the open argument the summary points at, and the record takes no side in it."
       },
       "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "reis-2013-portuguese-slump"
+      ],
+      "from": "eurozone",
+      "id": "eurozone--european-union--part-of",
+      "kind": "relation",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source."
+      },
+      "status": "active",
+      "to": "european-union",
+      "type": "part-of"
     },
     {
       "authors": [
@@ -7812,6 +7905,29 @@
         }
       ],
       "cites": [
+        "ramos-2009-historia-de-portugal"
+      ],
+      "from": "oeec",
+      "id": "oeec--oecd--succeeded",
+      "kind": "relation",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source. Whether this is a succession or a renaming is the editorial decision argued in the OECD's summary."
+      },
+      "status": "active",
+      "to": "oecd",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "rosas-1994-estado-novo",
         "meneses-2009-salazar"
       ],
@@ -8251,6 +8367,244 @@
         ]
       },
       "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "costa-pinto-2003-contemporary-portugal"
+      ],
+      "from": "portugal",
+      "id": "portugal--council-of-europe--allied-with",
+      "kind": "relation",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source."
+      },
+      "status": "active",
+      "to": "council-of-europe",
+      "type": "allied-with"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "costa-pinto-2003-contemporary-portugal"
+      ],
+      "from": "portugal",
+      "id": "portugal--cplp--allied-with",
+      "kind": "relation",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source."
+      },
+      "status": "active",
+      "to": "cplp",
+      "type": "allied-with"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal",
+        "rosas-1994-estado-novo"
+      ],
+      "from": "portugal",
+      "id": "portugal--efta--allied-with",
+      "kind": "relation",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source."
+      },
+      "status": "active",
+      "to": "efta",
+      "type": "allied-with"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "costa-pinto-teixeira-2019-political-institutions"
+      ],
+      "from": "portugal",
+      "id": "portugal--european-union--allied-with",
+      "kind": "relation",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source."
+      },
+      "status": "active",
+      "to": "european-union",
+      "type": "allied-with"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "reis-2013-portuguese-slump",
+        "telo-2007-historia-contemporanea"
+      ],
+      "from": "portugal",
+      "id": "portugal--eurozone--allied-with",
+      "kind": "relation",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source."
+      },
+      "status": "active",
+      "to": "eurozone",
+      "type": "allied-with"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "reis-2013-portuguese-slump"
+      ],
+      "from": "portugal",
+      "id": "portugal--imf--allied-with",
+      "kind": "relation",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source. The 1961 accession is the least certain date in this batch, and the Bretton Woods institutions were joined together, which is worth checking as one fact."
+      },
+      "status": "active",
+      "to": "imf",
+      "type": "allied-with"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal",
+        "meneses-2004-portugal-1914-1926"
+      ],
+      "from": "portugal",
+      "id": "portugal--league-of-nations--allied-with",
+      "kind": "relation",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source."
+      },
+      "status": "active",
+      "to": "league-of-nations",
+      "type": "allied-with"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal"
+      ],
+      "from": "portugal",
+      "id": "portugal--oecd--allied-with",
+      "kind": "relation",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source."
+      },
+      "status": "active",
+      "to": "oecd",
+      "type": "allied-with"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal",
+        "rosas-1994-estado-novo"
+      ],
+      "from": "portugal",
+      "id": "portugal--oeec--allied-with",
+      "kind": "relation",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source."
+      },
+      "status": "active",
+      "to": "oeec",
+      "type": "allied-with"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea"
+      ],
+      "from": "portugal",
+      "id": "portugal--schengen-area--allied-with",
+      "kind": "relation",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source."
+      },
+      "status": "active",
+      "to": "schengen-area",
+      "type": "allied-with"
     },
     {
       "authors": [
@@ -9764,38 +10118,8 @@
     }
   ],
   "schema": 1,
-  "total": 984,
+  "total": 999,
   "warnings": [
-    {
-      "id": "council-of-europe",
-      "kind": "actor",
-      "message": "actor is referenced by no event and no relation, and holds no territory",
-      "rule": "actor-unused"
-    },
-    {
-      "id": "cplp",
-      "kind": "actor",
-      "message": "actor is referenced by no event and no relation, and holds no territory",
-      "rule": "actor-unused"
-    },
-    {
-      "id": "efta",
-      "kind": "actor",
-      "message": "actor is referenced by no event and no relation, and holds no territory",
-      "rule": "actor-unused"
-    },
-    {
-      "id": "european-union",
-      "kind": "actor",
-      "message": "actor is referenced by no event and no relation, and holds no territory",
-      "rule": "actor-unused"
-    },
-    {
-      "id": "eurozone",
-      "kind": "actor",
-      "message": "actor is referenced by no event and no relation, and holds no territory",
-      "rule": "actor-unused"
-    },
     {
       "id": "iberian-blackout-2025",
       "kind": "event",
@@ -9803,34 +10127,10 @@
       "rule": "degree-zero"
     },
     {
-      "id": "league-of-nations",
-      "kind": "actor",
-      "message": "actor is referenced by no event and no relation, and holds no territory",
-      "rule": "actor-unused"
-    },
-    {
-      "id": "oecd",
-      "kind": "actor",
-      "message": "actor is referenced by no event and no relation, and holds no territory",
-      "rule": "actor-unused"
-    },
-    {
-      "id": "oeec",
-      "kind": "actor",
-      "message": "actor is referenced by no event and no relation, and holds no territory",
-      "rule": "actor-unused"
-    },
-    {
       "id": "saint-denis",
       "kind": "place",
       "message": "place is referenced by no event",
       "rule": "place-unused"
-    },
-    {
-      "id": "schengen-area",
-      "kind": "actor",
-      "message": "actor is referenced by no event and no relation, and holds no territory",
-      "rule": "actor-unused"
     },
     {
       "id": "uefa-2016-final",

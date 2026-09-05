@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "european-economic-community--european-union--succeeded",
+  "kind": "relation",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "date"
+    ],
+    "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source."
+  },
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-teixeira-2019-political-institutions",
+      "locator": null
+    }
+  ],
+  "from": "european-economic-community",
+  "to": "european-union",
+  "type": "succeeded",
+  "when": {
+    "start": 1993,
+    "end": 1993
+  },
+  "note": "The Maastricht Treaty, in force 1 November 1993. Portugal's membership runs across the change without interruption."
+}

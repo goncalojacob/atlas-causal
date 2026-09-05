@@ -38196,6 +38196,62 @@
     },
     {
       "aliases": [],
+      "from": "european-central-bank",
+      "id": "european-central-bank--european-union--part-of",
+      "note": "An institution of the Union from 1998, and the monetary authority of the euro area from 1999.",
+      "status": "active",
+      "supersededBy": null,
+      "to": "european-union",
+      "type": "part-of",
+      "when": {
+        "end": null,
+        "start": 1998
+      }
+    },
+    {
+      "aliases": [],
+      "from": "european-commission",
+      "id": "european-commission--european-union--part-of",
+      "note": "The Union's executive, and before 1993 the Community's; this record starts where the Union does.",
+      "status": "active",
+      "supersededBy": null,
+      "to": "european-union",
+      "type": "part-of",
+      "when": {
+        "end": null,
+        "start": 1993
+      }
+    },
+    {
+      "aliases": [],
+      "from": "european-economic-community",
+      "id": "european-economic-community--european-union--succeeded",
+      "note": "The Maastricht Treaty, in force 1 November 1993. Portugal's membership runs across the change without interruption.",
+      "status": "active",
+      "supersededBy": null,
+      "to": "european-union",
+      "type": "succeeded",
+      "when": {
+        "end": 1993,
+        "start": 1993
+      }
+    },
+    {
+      "aliases": [],
+      "from": "eurozone",
+      "id": "eurozone--european-union--part-of",
+      "note": "The euro area is the subset of Union states that adopted the currency; it has no organs of its own.",
+      "status": "active",
+      "supersededBy": null,
+      "to": "european-union",
+      "type": "part-of",
+      "when": {
+        "end": null,
+        "start": 1999
+      }
+    },
+    {
+      "aliases": [],
       "from": "first-portuguese-republic",
       "id": "first-portuguese-republic--portugal--regime-of",
       "note": "From the revolution of 5 October 1910 to the coup of 28 May 1926.",
@@ -38322,6 +38378,20 @@
     },
     {
       "aliases": [],
+      "from": "oeec",
+      "id": "oeec--oecd--succeeded",
+      "note": "Reconstituted on 30 September 1961: the European members carried over and the United States and Canada joined as full members.",
+      "status": "active",
+      "supersededBy": null,
+      "to": "oecd",
+      "type": "succeeded",
+      "when": {
+        "end": 1961,
+        "start": 1961
+      }
+    },
+    {
+      "aliases": [],
       "from": "pedro-passos-coelho",
       "id": "pedro-passos-coelho--psd--led",
       "note": "Party leader, in government from 2011 to 2015. Both years want checking.",
@@ -38346,6 +38416,146 @@
       "when": {
         "end": null,
         "start": 2014
+      }
+    },
+    {
+      "aliases": [],
+      "from": "portugal",
+      "id": "portugal--council-of-europe--allied-with",
+      "note": "Admitted in September 1976, once the new constitution made Portugal eligible. Membership, not an alliance: rule 19 reserves member-of for persons.",
+      "status": "active",
+      "supersededBy": null,
+      "to": "council-of-europe",
+      "type": "allied-with",
+      "when": {
+        "end": null,
+        "start": 1976
+      }
+    },
+    {
+      "aliases": [],
+      "from": "portugal",
+      "id": "portugal--cplp--allied-with",
+      "note": "Founding member at Lisbon in July 1996. Membership, not an alliance: rule 19 reserves member-of for persons.",
+      "status": "active",
+      "supersededBy": null,
+      "to": "cplp",
+      "type": "allied-with",
+      "when": {
+        "end": null,
+        "start": 1996
+      }
+    },
+    {
+      "aliases": [],
+      "from": "portugal",
+      "id": "portugal--efta--allied-with",
+      "note": "Founding member in 1960; left on entering the European Communities in 1986. Membership, not an alliance: rule 19 reserves member-of for persons.",
+      "status": "active",
+      "supersededBy": null,
+      "to": "efta",
+      "type": "allied-with",
+      "when": {
+        "end": 1986,
+        "start": 1960
+      }
+    },
+    {
+      "aliases": [],
+      "from": "portugal",
+      "id": "portugal--european-union--allied-with",
+      "note": "Member state from 1993, continuous with the Community joined in 1986. Membership, not an alliance: rule 19 reserves member-of for persons.",
+      "status": "active",
+      "supersededBy": null,
+      "to": "european-union",
+      "type": "allied-with",
+      "when": {
+        "end": null,
+        "start": 1993
+      }
+    },
+    {
+      "aliases": [],
+      "from": "portugal",
+      "id": "portugal--eurozone--allied-with",
+      "note": "Among the eleven that entered the third stage of monetary union on 1 January 1999. Membership, not an alliance: rule 19 reserves member-of for persons.",
+      "status": "active",
+      "supersededBy": null,
+      "to": "eurozone",
+      "type": "allied-with",
+      "when": {
+        "end": null,
+        "start": 1999
+      }
+    },
+    {
+      "aliases": [],
+      "from": "portugal",
+      "id": "portugal--imf--allied-with",
+      "note": "Member since 1961, and a borrower in 1978, 1983 and 2011. Membership, not an alliance: rule 19 reserves member-of for persons.",
+      "status": "active",
+      "supersededBy": null,
+      "to": "imf",
+      "type": "allied-with",
+      "when": {
+        "end": null,
+        "start": 1961
+      }
+    },
+    {
+      "aliases": [],
+      "from": "portugal",
+      "id": "portugal--league-of-nations--allied-with",
+      "note": "Original member from 1920 until the League was wound up in 1946. Membership, not an alliance: rule 19 reserves member-of for persons.",
+      "status": "active",
+      "supersededBy": null,
+      "to": "league-of-nations",
+      "type": "allied-with",
+      "when": {
+        "end": 1946,
+        "start": 1920
+      }
+    },
+    {
+      "aliases": [],
+      "from": "portugal",
+      "id": "portugal--oecd--allied-with",
+      "note": "Founding member in 1961, carried over from the OEEC. Membership, not an alliance: rule 19 reserves member-of for persons.",
+      "status": "active",
+      "supersededBy": null,
+      "to": "oecd",
+      "type": "allied-with",
+      "when": {
+        "end": null,
+        "start": 1961
+      }
+    },
+    {
+      "aliases": [],
+      "from": "portugal",
+      "id": "portugal--oeec--allied-with",
+      "note": "Founding member in 1948, after first declining Marshall aid. Membership, not an alliance: rule 19 reserves member-of for persons.",
+      "status": "active",
+      "supersededBy": null,
+      "to": "oeec",
+      "type": "allied-with",
+      "when": {
+        "end": 1961,
+        "start": 1948
+      }
+    },
+    {
+      "aliases": [],
+      "from": "portugal",
+      "id": "portugal--schengen-area--allied-with",
+      "note": "Signed in 1991; in the area from its entry into force in March 1995. Membership, not an alliance: rule 19 reserves member-of for persons.",
+      "status": "active",
+      "supersededBy": null,
+      "to": "schengen-area",
+      "type": "allied-with",
+      "when": {
+        "end": null,
+        "start": 1995
       }
     },
     {

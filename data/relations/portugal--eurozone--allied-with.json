@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "portugal--eurozone--allied-with",
+  "kind": "relation",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "date"
+    ],
+    "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source."
+  },
+  "sources": [
+    {
+      "source": "reis-2013-portuguese-slump",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    }
+  ],
+  "from": "portugal",
+  "to": "eurozone",
+  "type": "allied-with",
+  "when": {
+    "start": 1999,
+    "end": null
+  },
+  "note": "Among the eleven that entered the third stage of monetary union on 1 January 1999. Membership, not an alliance: rule 19 reserves member-of for persons."
+}
