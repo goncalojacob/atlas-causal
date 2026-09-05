@@ -21,16 +21,22 @@ import { withBrowser, open, waitFor, skip } from './browser.mjs';
 // resting state (main.js).
 const ATLAS_READY = 'return document.querySelectorAll(".map .mark, .timeline .bar").length > 0;';
 
-// query, what says the page has finished loading its data.
+// query, what says the page has finished loading its data, and how many
+// times the page should ask for the spine. One for every page that needs the
+// graph at all; none for the bibliography, which has read the sources index
+// alone since M10 and needs nothing else — a page that started fetching
+// 791 KB to list books would be caught by the zero.
 const PAGES = [
-  ['index.html', ATLAS_READY],
-  ['entry.html?id=carnation-revolution-1974', 'return document.querySelectorAll(".entry-body").length > 0;'],
+  ['index.html', ATLAS_READY, 1],
+  ['entry.html?id=carnation-revolution-1974', 'return document.querySelectorAll(".entry-body").length > 0;', 1],
+  ['narratives.html', 'return document.querySelectorAll(".narrative-card").length > 0;', 1],
+  ['sources.html', 'return document.querySelectorAll(".bib-entry").length > 0;', 0],
 ];
 
 // Everything the page asked the network for, as the browser recorded it.
 const REQUESTS = 'return performance.getEntriesByType("resource").map((e) => e.name);';
 
-for (const [query, ready] of PAGES) {
+for (const [query, ready, spines] of PAGES) {
   test(`${query} loads the spine and never the topology`, { skip }, async () => {
     await withBrowser(async (page, url) => {
       await open(page, url(query), ready);
@@ -39,7 +45,7 @@ for (const [query, ready] of PAGES) {
       const requests = await page.eval(REQUESTS);
       const named = (part) => requests.filter((name) => name.includes(`/index/${part}`));
       assert.deepEqual(named('topology-'), [], `${query} asked for the topology`);
-      assert.equal(named('spine-').length, 1, `${query} asked for the spine once`);
+      assert.equal(named('spine-').length, spines, `${query} asked for the spine ${named('spine-').length} times`);
     });
   });
 }

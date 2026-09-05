@@ -1,5 +1,5 @@
-// Bootstrap for narratives.html: load the topology, draw the cards. The
-// bibliography needs one small index; this needs the topology, because a
+// Bootstrap for narratives.html: load the spine, draw the cards. The
+// bibliography needs one small index; this needs the graph, because a
 // narrative's period is the years of the records it walks and those live
 // there. Nothing that is only drawn is fetched — no coastlines, no
 // territories, no palette. ?fixtures=1 reads the synthetic dataset, as

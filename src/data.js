@@ -415,18 +415,19 @@ export async function loadSources({ dataRoot = 'data/', fetchJson = defaultFetch
 
 // The narratives and the records they walk. narratives.html cannot do what
 // the bibliography does and read one small index: a narrative's period is the
-// years of the events its steps arrive at, and those are in the topology.
-// So the topology, and nothing that is only drawn — no coastlines, no
-// territories, no palette, and no sources index either, since this page lists
-// no books.
+// years of the events its steps arrive at, and a step may name a link rather
+// than an event, so both are needed. Since H3b that is the spine, which
+// carries every step's title and every edge's ends — and nothing that is only
+// drawn: no coastlines, no territories, no palette, and no sources index
+// either, since this page lists no books.
 export async function loadNarratives({ dataRoot = 'data/', fetchJson = defaultFetchJson } = {}) {
-  const manifest = await fetchJson(`${dataRoot}index/manifest.json`, { cache: 'no-store' });
-  const topology = await fetchJson(`${dataRoot}${manifest.files.topology}`);
+  const { manifest, spine } = await loadSpine({ dataRoot, fetchJson });
+  const expanded = topologyFromSpine(spine);
   return {
     manifest,
-    narratives: topology.narratives ?? [],
-    events: new Map((topology.events ?? []).map((e) => [e.id, e])),
-    edges: new Map((topology.edges ?? []).map((e) => [e.id, e])),
+    narratives: expanded.narratives,
+    events: new Map(expanded.events.map((e) => [e.id, e])),
+    edges: new Map(expanded.edges.map((e) => [e.id, e])),
   };
 }
 
