@@ -803,6 +803,7 @@ atlas-causal/
 │   │   └── main.js               ● the page: resolve ?id=, fetch the record, assign
 │   ├── contribute/
 │   │   ├── form.js               ● inputs → bundle; searches titles and aliases before allowing a new event; actors chosen by name
+│   │   ├── reorder.js            ● one row of an ordered list moved up or down, with Alt+↑/↓; the form and the review editor share it
 │   │   ├── bundle.js             ● the field definitions, buildRecord and its inverse valuesFromRecord/applyValues, validateBundle
 │   │   └── submit.js             ● bundle → clipboard + issue template; URL prefill only under ~6 KB
 │   ├── review/
@@ -1326,6 +1327,15 @@ pass through a record, is built in `data.js`: an event is walked when a step
 names it *and* when a step names an edge that touches it, so an event card says
 what it is part of however the walk happens to reach it.
 
+The order of the steps is the walk, so a step in the wrong place is a
+different argument, and both places a narrative is edited — the contribution
+form and the review dashboard — let a row move up and down: two controls on
+the row, and Alt with an arrow from anywhere inside it, so a paragraph being
+typed can be moved without leaving the field. `contribute/reorder.js` moves
+the row itself rather than redrawing the list, and `moveItem` in
+`contribute/bundle.js` is the arithmetic, pure. Citations and an event's
+actors are sets rather than walks and have no such controls.
+
 ### Reserved ○
 
 - **Translation** — `data/i18n/<lang>/<id>.json` overlays text fields only
@@ -1405,6 +1415,7 @@ least 40 pixels; a link inside a sentence keeps the line it is set in.
 | `sources/` | `sources.html`: the manifest and the sources index, and the bibliography as markup. Nothing else — the topology is twenty times the size and lists no books. | The topology, the map, the panel. |
 | `validate/core.js` | `validate(records, topology)`: schema subset + cross-record rules, pure. Needs the topology to check references, so the form loads it too. | `fs`. |
 | `contribute/*` | Form → bundle → validation → clipboard + issue. | GitHub, beyond one URL in `submit.js`. |
+| `contribute/reorder.js` | Moving one row of an ordered list, in the form and in the review editor alike: the two controls, Alt with an arrow from anywhere in the row, and the ends that have nowhere to go. Moves the row rather than redrawing the list, so nothing half typed is lost. | Which list it is, and what a step means. |
 
 ## Contribution pipeline
 

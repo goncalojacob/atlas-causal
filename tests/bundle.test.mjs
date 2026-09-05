@@ -6,7 +6,7 @@ import assert from 'node:assert/strict';
 import {
   FIELDS, CITATION_LISTS, ACTOR_LISTS, STEP_LISTS, emptyValues, slugify, parseBound, buildRecord, buildBundle,
   findSimilar, similarity, checkBundleShape, validateBundle, everythingCited,
-  valuesFromRecord, applyValues, wikidataFrom,
+  valuesFromRecord, applyValues, wikidataFrom, canMove, moveItem,
 } from '../src/contribute/bundle.js';
 import { buildTopology } from '../src/validate/core.js';
 import { createValidator } from '../src/validate/schema.js';
@@ -447,6 +447,58 @@ test('the full entry is a field on the three kinds that have a page, and an empt
   // And back out again, unchanged.
   assert.equal(valuesFromRecord('place', written).body, written.body);
   assert.equal(valuesFromRecord('place', buildRecord('place', values, CONTEXT)).body, '');
+});
+
+test('a step moves up and down the list, and the ends have nowhere to go', () => {
+  const steps = [{ ref: 'a' }, { ref: 'b' }, { ref: 'c' }];
+  const ids = (list) => list.map((s) => s.ref).join('');
+
+  assert.equal(ids(moveItem(steps, 1, -1)), 'bac');
+  assert.equal(ids(moveItem(steps, 1, 1)), 'acb');
+  assert.equal(ids(moveItem(steps, 0, 1)), 'bac');
+  assert.equal(ids(moveItem(steps, 2, -1)), 'acb');
+  // The list it was given is not touched: the caller decides when to write.
+  assert.equal(ids(steps), 'abc');
+
+  // Off either end, and off the list altogether: the items come back in the
+  // order they were in, so no caller has to guard the ends.
+  assert.equal(ids(moveItem(steps, 0, -1)), 'abc');
+  assert.equal(ids(moveItem(steps, 2, 1)), 'abc');
+  assert.equal(ids(moveItem(steps, 7, -1)), 'abc');
+  assert.equal(ids(moveItem(steps, -1, 1)), 'abc');
+  assert.deepEqual(moveItem(undefined, 0, 1), []);
+  // A move of more than one place is the same operation.
+  assert.equal(ids(moveItem(steps, 0, 2)), 'bca');
+
+  assert.equal(canMove(steps, 0, -1), false, 'the first has nothing above it');
+  assert.equal(canMove(steps, 0, 1), true);
+  assert.equal(canMove(steps, 2, 1), false, 'the last has nothing below it');
+  assert.equal(canMove(steps, 2, -1), true);
+  assert.equal(canMove([{ ref: 'only' }], 0, 1), false, 'a list of one moves nowhere');
+  assert.equal(canMove(steps, 0, 0), false);
+  assert.equal(canMove([], 0, 1), false);
+});
+
+test('moving a step is what the narrative says, in the order the rows are in', async () => {
+  const { byId } = await fixtures();
+  const narrative = byId['fixture-narrative-one'];
+  const values = valuesFromRecord('narrative', narrative);
+  assert.ok(values.steps.length >= 2, 'the fixture narrative has steps to move');
+
+  const before = values.steps.map((s) => s.ref);
+  values.steps.splice(0, values.steps.length, ...moveItem(values.steps, 0, 1));
+  const moved = buildRecord('narrative', values, CONTEXT);
+  assert.deepEqual(moved.steps.map((s) => s.ref), [before[1], before[0], ...before.slice(2)]);
+  // The texts travel with the refs they belong to; a move is a reordering and
+  // never a rewrite.
+  assert.deepEqual(
+    moved.steps.map((s) => s.text),
+    [narrative.steps[1].text, narrative.steps[0].text, ...narrative.steps.slice(2).map((s) => s.text)],
+  );
+
+  // And back where it was: byte for byte the record on disk.
+  values.steps.splice(0, values.steps.length, ...moveItem(values.steps, 1, -1));
+  assert.deepEqual(applyValues('narrative', narrative, values), narrative);
 });
 
 test('a source names the work it is inside, and no container is written when it is not', async () => {

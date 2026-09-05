@@ -12,6 +12,7 @@
 // Sign and Retract may touch those.
 
 import { html } from '../util/dom.js';
+import { reorderControls, refreshAll } from '../contribute/reorder.js';
 import {
   FIELDS, CITATION_LISTS, ACTOR_LISTS, STEP_LISTS, valuesFromRecord, applyValues, validateBundle,
 } from '../contribute/bundle.js';
@@ -202,7 +203,11 @@ export function createEditor({
   // The three repeatable lists are the same shape: a reference chosen from
   // the atlas and a bit of text beside it. `text` names the second column's
   // key, and the row is built once for all three.
-  function renderList(list, { optionsName, textKey, refKey, placeholder, hint, label }) {
+  // `ordered` marks the one list whose order is part of what the record says:
+  // a narrative's steps are its walk, and a step in the wrong place is a
+  // different argument. Citations and actors are sets and get no controls.
+  function renderList(list, { optionsName, textKey, refKey, placeholder, hint, label, ordered = false }) {
+    const items = () => values[list.key];
     const wrap = html('div', { class: 'field list' });
     const head = html('div', { class: 'citations-head' });
     head.appendChild(html('span', { class: 'citations-label' }, label));
@@ -240,10 +245,14 @@ export function createEditor({
         const at = values[list.key].indexOf(item);
         if (at >= 0) values[list.key].splice(at, 1);
         row.remove();
+        if (ordered) refreshAll(rows, items);
         refresh();
       });
-      row.append(select, text, drop);
+      row.append(select, text);
+      if (ordered) row.appendChild(reorderControls({ rows, row, item, items, onMove: refresh }));
+      row.appendChild(drop);
       rows.appendChild(row);
+      if (ordered) refreshAll(rows, items);
     };
 
     add.addEventListener('click', () => {
@@ -274,8 +283,8 @@ export function createEditor({
   for (const list of STEP_LISTS[kind]) {
     root.appendChild(renderList(list, {
       optionsName: 'records', refKey: 'ref', textKey: 'text', label: `${list.label} *`,
-      placeholder: 'why this step follows',
-      hint: 'At least two, in the order they are read. The records walked are not changed by walking them.',
+      placeholder: 'why this step follows', ordered: true,
+      hint: 'At least two, in the order they are read — ↑ and ↓ move a step, and so does Alt with an arrow from anywhere in the row. The records walked are not changed by walking them.',
     }));
   }
   for (const list of CITATION_LISTS[kind]) {

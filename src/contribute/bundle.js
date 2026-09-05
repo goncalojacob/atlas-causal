@@ -196,6 +196,34 @@ export const STEP_LISTS = Object.freeze({
   place: [],
 });
 
+// --- ordered lists ---------------------------------------------------------
+// A narrative's steps are the one list whose order is part of what it says:
+// the walk is the order of the rows, and a step in the wrong place is a
+// different argument. Moving one is therefore an operation on the list and
+// not a matter of dragging a row about, and it is here, pure, so that
+// node --test holds it without a form.
+
+// Can the item at `at` move by `delta`? False off either end and false for a
+// list of one, which is what disables the buttons at the top and the bottom
+// rather than each caller working it out again.
+export function canMove(list, at, delta) {
+  if (!Array.isArray(list)) return false;
+  if (!Number.isInteger(at) || at < 0 || at >= list.length) return false;
+  const to = at + delta;
+  return Number.isInteger(to) && to >= 0 && to < list.length && to !== at;
+}
+
+// The list with one item moved, as a new array. A move that cannot be made
+// returns the list's own items unchanged, so a caller never has to guard the
+// ends: the buttons are disabled there and the keyboard simply does nothing.
+export function moveItem(list, at, delta) {
+  const items = Array.isArray(list) ? [...list] : [];
+  if (!canMove(items, at, delta)) return items;
+  const [moved] = items.splice(at, 1);
+  items.splice(at + delta, 0, moved);
+  return items;
+}
+
 function isObject(v) {
   return v !== null && typeof v === 'object' && !Array.isArray(v);
 }

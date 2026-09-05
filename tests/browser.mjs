@@ -159,8 +159,10 @@ export async function open(page, url, ready = 'return document.querySelectorAll(
     if (await page.eval(ready)) return;
     await new Promise((resolve) => { setTimeout(resolve, 50); });
   }
-  const dom = await page.eval('return document.getElementById("panel").textContent.slice(0, 400);');
-  assert.fail(`the page never became ready. The panel says: ${dom}`);
+  // Not the panel: these open review.html and contribute.html too, and a
+  // failure message that itself throws hides the failure it was reporting.
+  const dom = await page.eval('return (document.body.textContent || "").replace(/\\s+/g, " ").trim().slice(0, 400);');
+  assert.fail(`the page never became ready. It says: ${dom}`);
 }
 
 // One finger, down and up on the same point: what a reader does to a mark.

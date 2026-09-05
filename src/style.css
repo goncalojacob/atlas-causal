@@ -1230,8 +1230,15 @@ svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align:
 .contrib .add-row { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem; }
 /* A step of a narrative is a paragraph, not a word: the row stacks rather
    than squeezing a textarea between two controls. */
-.contrib .step-row { display: grid; grid-template-columns: 1fr auto; gap: 0.4rem; align-items: start; }
+.contrib .step-row { display: grid; grid-template-columns: 1fr auto auto; gap: 0.4rem; align-items: start; }
 .contrib .step-row textarea { grid-column: 1 / -1; width: 100%; }
+/* The order of the steps is the walk, so moving one is an edit and the
+   controls sit on the row it belongs to. Arrows and no words: two of them,
+   beside a remove that is already named. */
+.contrib .row-move { display: inline-flex; gap: 0.2rem; }
+.contrib .row-move button.link.small { font-size: var(--text-base); line-height: 1; padding: 0.15rem 0.35rem; text-decoration: none; }
+.contrib .row-move button.link.small:hover { color: var(--ink); }
+.contrib .row-move button.link.small[disabled] { opacity: 0.35; cursor: default; color: var(--ink-soft); }
 
 .contrib .report { margin: 1rem 0; }
 .contrib .report .summary { font-family: var(--font); font-size: var(--text-md); margin: 0.4rem 0 0; }

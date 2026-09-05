@@ -13,6 +13,7 @@ import { html } from '../util/dom.js';
 import {
   FIELDS, CITATION_LISTS, ACTOR_LISTS, STEP_LISTS, emptyValues, buildBundle, slugify, findSimilar, validateBundle,
 } from './bundle.js';
+import { reorderControls, refreshAll } from './reorder.js';
 import { submitBundle } from './submit.js';
 import { previewHtml } from '../entry/preview.js';
 
@@ -385,13 +386,16 @@ export function createForm(container, { topology, schemas, template, fixtures = 
   // name and the paragraph that says why this step follows. Removing a row
   // renumbers the walk, which is what a walk with a step taken out is.
   function renderSteps(entry, list) {
+    // The live array, asked for rather than captured: a row's controls outlive
+    // any one reference to it.
+    const items = () => entry.values[list.key];
     const wrap = html('div', { class: 'field steps' });
     const head = html('div', { class: 'citations-head' });
     head.appendChild(html('span', { class: 'citations-label' }, `${list.label} *`));
     const add = html('button', { type: 'button', class: 'link small' }, 'add');
     head.appendChild(add);
     wrap.appendChild(head);
-    wrap.appendChild(html('p', { class: 'hint' }, 'At least two, in the order they are read. The text is yours; the record it points at is the atlas\'s and is not changed by walking it.'));
+    wrap.appendChild(html('p', { class: 'hint' }, 'At least two, in the order they are read — ↑ and ↓ move a step, and so does Alt with an arrow from anywhere in the row. The text is yours; the record it points at is the atlas\'s and is not changed by walking it.'));
     const rows = html('ul', { class: 'citation-rows' });
     wrap.appendChild(rows);
     const error = html('p', { class: 'field-error', hidden: 'hidden' });
@@ -419,10 +423,12 @@ export function createForm(container, { topology, schemas, template, fixtures = 
         if (at >= 0) entry.values[list.key].splice(at, 1);
         for (const d of [...dynamic]) if (d.select === select) dynamic.delete(d);
         row.remove();
+        refreshAll(rows, items);
         refresh();
       });
-      row.append(select, text, drop);
+      row.append(select, text, reorderControls({ rows, row, item, items, onMove: refresh }), drop);
       rows.appendChild(row);
+      refreshAll(rows, items);
     };
 
     add.addEventListener('click', () => {
