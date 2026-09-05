@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "algerian-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q200790",
+  "sitelinks": 70,
+  "wikipedia": {
+    "en": "Algerian War",
+    "pt": "Guerra de Independência Argelina"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q200790"
+    }
+  ],
+  "title": "Algerian War",
+  "summary": "Wikidata item Q200790, imported by tools/import/wikidata.mjs. The item's own description reads \"war between France and the Algerian independence movement from 1954 to 1962\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1954,
+    "end": 1962,
+    "date": "1954-11-01",
+    "endDate": "1962-09-09"
+  },
+  "place": null,
+  "region": "africa",
+  "actors": []
+}

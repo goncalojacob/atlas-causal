@@ -26,3 +26,31 @@ refused Q178275: no place record for its location and no lane reachable from its
 refused Q165725: no place record for its location and no lane reachable from its point; a placeless event must carry a region
 46 Wikipedia lead(s) cached under tools/import/cache/wikipedia
 23 created, 0 enriched, 2 refused, 0 ambiguous
+import: 25 item(s) this batch, 13 left after it, 46 call(s) spent
+created event beer-hall-putsch from Q36749
+created event world-war-ii from Q362
+created event the-holocaust from Q2763
+created event spanish-civil-war from Q10859
+created event molotov-ribbentrop-pact from Q130796
+created event holodomor from Q165058
+created event charter-of-the-united-nations from Q171328
+created event warsaw-uprising from Q1402078
+created event vietnam-war from Q8740
+created event cuban-revolution from Q11264
+created event hungarian-revolution-of-1956 from Q164348
+created event algerian-war from Q200790
+created event cultural-revolution from Q8690
+created event international-covenant-on-civil-and-political-rights from Q392119
+created event iranian-revolution from Q126065
+created event ramsar-convention from Q170170
+created event convention-on-the-elimination-of-all-forms-of-discrimination-against-women from Q277072
+created event lebanese-civil-war from Q208484
+created event falklands-war from Q48249
+created event convention-on-the-rights-of-the-child from Q466087
+created event united-nations-convention-on-the-law-of-the-sea from Q216996
+created event velvet-revolution from Q182817
+refused Q8683: no place record for its location and no lane reachable from its point; a placeless event must carry a region
+refused Q191836: no place record for its location and no lane reachable from its point; a placeless event must carry a region
+refused Q47359: no place record for its location and no lane reachable from its point; a placeless event must carry a region
+44 Wikipedia lead(s) cached under tools/import/cache/wikipedia
+22 created, 0 enriched, 3 refused, 0 ambiguous

@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "international-covenant-on-civil-and-political-rights",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q392119",
+  "sitelinks": 54,
+  "wikipedia": {
+    "en": "International Covenant on Civil and Political Rights",
+    "pt": "Pacto Internacional dos Direitos Civis e Políticos"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q392119"
+    }
+  ],
+  "title": "International Covenant on Civil and Political Rights",
+  "summary": "Wikidata item Q392119, imported by tools/import/wikidata.mjs. The item's own description reads \"treaty adopted by United Nations General Assembly in 1966\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1966,
+    "end": 1966,
+    "date": "1966-12-16"
+  },
+  "place": "new-york",
+  "region": null,
+  "actors": []
+}

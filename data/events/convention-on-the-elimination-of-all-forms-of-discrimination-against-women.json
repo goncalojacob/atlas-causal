@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "convention-on-the-elimination-of-all-forms-of-discrimination-against-women",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q277072",
+  "sitelinks": 57,
+  "wikipedia": {
+    "en": "Convention on the Elimination of All Forms of Discrimination Against Women",
+    "pt": "Convenção sobre a Eliminação de Todas as Formas de Discriminação contra a Mulher"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q277072"
+    }
+  ],
+  "title": "Convention on the Elimination of All Forms of Discrimination against Women",
+  "summary": "Wikidata item Q277072, imported by tools/import/wikidata.mjs. The item's own description reads \"international bill of rights for women\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1979,
+    "end": 1979,
+    "date": "1979-12-18"
+  },
+  "place": "new-york",
+  "region": null,
+  "actors": []
+}

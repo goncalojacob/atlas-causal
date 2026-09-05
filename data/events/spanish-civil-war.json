@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "spanish-civil-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q10859",
+  "sitelinks": 118,
+  "wikipedia": {
+    "en": "Spanish Civil War",
+    "pt": "Guerra Civil Espanhola"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q10859"
+    }
+  ],
+  "title": "Spanish Civil War",
+  "summary": "Wikidata item Q10859, imported by tools/import/wikidata.mjs. The item's own description reads \"war between the Republicans and the Nationalists in Spain from 1936 to 1939\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1936,
+    "end": 1939,
+    "date": "1936-07-18",
+    "endDate": "1939-04-01"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}

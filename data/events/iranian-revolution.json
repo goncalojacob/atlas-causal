@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "iranian-revolution",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q126065",
+  "sitelinks": 94,
+  "wikipedia": {
+    "en": "Iranian Revolution",
+    "pt": "Revolução Iraniana"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q126065"
+    }
+  ],
+  "title": "Iranian Revolution",
+  "summary": "Wikidata item Q126065, imported by tools/import/wikidata.mjs. The item's own description reads \"1978–1979 revolution that overthrew the Iranian monarchy\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1978,
+    "end": 1979,
+    "date": "1978-01",
+    "endDate": "1979-02"
+  },
+  "place": null,
+  "region": "asia",
+  "actors": []
+}

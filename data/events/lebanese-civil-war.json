@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "lebanese-civil-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q208484",
+  "sitelinks": 61,
+  "wikipedia": {
+    "en": "Lebanese Civil War",
+    "pt": "Guerra Civil Libanesa"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q208484"
+    }
+  ],
+  "title": "Lebanese Civil War",
+  "summary": "Wikidata item Q208484, imported by tools/import/wikidata.mjs. The item's own description reads \"1975–1990 Civil War in Lebanon\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1975,
+    "end": 1990,
+    "date": "1975-04-13",
+    "endDate": "1990-10-13"
+  },
+  "place": null,
+  "region": "asia",
+  "actors": []
+}

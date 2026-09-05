@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "world-war-ii",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q362",
+  "sitelinks": 241,
+  "wikipedia": {
+    "en": "World War II",
+    "pt": "Segunda Guerra Mundial"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q362"
+    }
+  ],
+  "title": "World War II",
+  "summary": "Wikidata item Q362, imported by tools/import/wikidata.mjs. The item's own description reads \"1939–1945 global conflict\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1939,
+    "end": 1945,
+    "date": "1939-09-01",
+    "endDate": "1945-09-02"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}

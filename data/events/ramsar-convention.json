@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "ramsar-convention",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q170170",
+  "sitelinks": 75,
+  "wikipedia": {
+    "en": "Ramsar Convention",
+    "pt": "Convenção sobre as Zonas Húmidas de Importância Internacional"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q170170"
+    }
+  ],
+  "title": "Ramsar Convention",
+  "summary": "Wikidata item Q170170, imported by tools/import/wikidata.mjs. The item's own description reads \"international treaty for the conservation and sustainable utilization of wetlands\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1971,
+    "end": 1971,
+    "date": "1971-02-02"
+  },
+  "place": null,
+  "region": "asia",
+  "actors": []
+}

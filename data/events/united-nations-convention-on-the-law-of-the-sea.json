@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "united-nations-convention-on-the-law-of-the-sea",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q216996",
+  "sitelinks": 61,
+  "wikipedia": {
+    "en": "United Nations Convention on the Law of the Sea",
+    "pt": "Convenção das Nações Unidas sobre o Direito do Mar"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q216996"
+    }
+  ],
+  "title": "United Nations Convention on the Law of the Sea",
+  "summary": "Wikidata item Q216996, imported by tools/import/wikidata.mjs. The item's own description reads \"international maritime law\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1982,
+    "end": 1982,
+    "date": "1982-12-10"
+  },
+  "place": null,
+  "region": "americas",
+  "actors": []
+}

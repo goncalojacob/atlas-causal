@@ -10280,10 +10280,16 @@
     }
   ],
   "schema": 1,
-  "total": 1065,
+  "total": 1087,
   "warnings": [
     {
       "id": "2006-lebanon-war",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "algerian-war",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"
@@ -10325,6 +10331,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "beer-hall-putsch",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
       "id": "boxer-rebellion",
       "kind": "event",
       "message": "event has no edges",
@@ -10337,7 +10349,37 @@
       "rule": "degree-zero"
     },
     {
+      "id": "charter-of-the-united-nations",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
       "id": "chinese-civil-war",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "convention-on-the-elimination-of-all-forms-of-discrimination-against-women",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "convention-on-the-rights-of-the-child",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "cuban-revolution",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "cultural-revolution",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"
@@ -10356,6 +10398,12 @@
     },
     {
       "id": "european-convention-on-human-rights",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "falklands-war",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"
@@ -10397,6 +10445,18 @@
       "rule": "degree-zero"
     },
     {
+      "id": "holodomor",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "hungarian-revolution-of-1956",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
       "id": "iberian-blackout-2025",
       "kind": "event",
       "message": "event has no edges",
@@ -10410,6 +10470,18 @@
     },
     {
       "id": "indo-pakistani-war-of-1965",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "international-covenant-on-civil-and-political-rights",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "iranian-revolution",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"
@@ -10439,6 +10511,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "lebanese-civil-war",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
       "id": "maastricht-treaty",
       "kind": "event",
       "message": "event has no edges",
@@ -10446,6 +10524,12 @@
     },
     {
       "id": "mexican-revolution",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "molotov-ribbentrop-pact",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"
@@ -10476,6 +10560,12 @@
     },
     {
       "id": "potsdam-conference",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "ramsar-convention",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"
@@ -10547,7 +10637,19 @@
       "rule": "degree-zero"
     },
     {
+      "id": "spanish-civil-war",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
       "id": "srebrenica-massacre",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "the-holocaust",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"
@@ -10619,6 +10721,24 @@
       "rule": "no-citers"
     },
     {
+      "id": "united-nations-convention-on-the-law-of-the-sea",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "velvet-revolution",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "vietnam-war",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
       "id": "wall-street-crash-of-1929",
       "kind": "event",
       "message": "event has no edges",
@@ -10631,7 +10751,19 @@
       "rule": "degree-zero"
     },
     {
+      "id": "warsaw-uprising",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
       "id": "world-war-i",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "world-war-ii",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"

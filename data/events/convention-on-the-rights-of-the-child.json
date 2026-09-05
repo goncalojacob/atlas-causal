@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "convention-on-the-rights-of-the-child",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q466087",
+  "sitelinks": 75,
+  "wikipedia": {
+    "en": "Convention on the Rights of the Child",
+    "pt": "Convenção sobre os Direitos da Criança"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q466087"
+    }
+  ],
+  "title": "Convention on the Rights of the Child",
+  "summary": "Wikidata item Q466087, imported by tools/import/wikidata.mjs. The item's own description reads \"international treaty about the rights of children\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1989,
+    "end": 1989,
+    "date": "1989-11-20"
+  },
+  "place": "new-york",
+  "region": null,
+  "actors": []
+}

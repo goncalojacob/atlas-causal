@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "warsaw-uprising",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q1402078",
+  "sitelinks": 60,
+  "wikipedia": {
+    "en": "Warsaw Uprising",
+    "pt": "Revolta de Varsóvia"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1402078"
+    }
+  ],
+  "title": "Warsaw Uprising",
+  "summary": "Wikidata item Q1402078, imported by tools/import/wikidata.mjs. The item's own description reads \"major World War II operation by the Polish resistance Home Army\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1944,
+    "end": 1944,
+    "date": "1944-10-02",
+    "endDate": "1944-10-02"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}

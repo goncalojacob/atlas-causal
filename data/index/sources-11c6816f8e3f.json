@@ -11684,7 +11684,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 114,
+      "citationCount": 136,
       "citations": [
         {
           "dissent": false,
@@ -11946,6 +11946,12 @@
         },
         {
           "dissent": false,
+          "id": "algerian-war",
+          "kind": "event",
+          "locator": "Q200790"
+        },
+        {
+          "dissent": false,
           "id": "anglo-zanzibar-war",
           "kind": "event",
           "locator": "Q170850"
@@ -11988,6 +11994,12 @@
         },
         {
           "dissent": false,
+          "id": "beer-hall-putsch",
+          "kind": "event",
+          "locator": "Q36749"
+        },
+        {
+          "dissent": false,
           "id": "boxer-rebellion",
           "kind": "event",
           "locator": "Q150229"
@@ -12000,9 +12012,27 @@
         },
         {
           "dissent": false,
+          "id": "charter-of-the-united-nations",
+          "kind": "event",
+          "locator": "Q171328"
+        },
+        {
+          "dissent": false,
           "id": "chinese-civil-war",
           "kind": "event",
           "locator": "Q179975"
+        },
+        {
+          "dissent": false,
+          "id": "convention-on-the-elimination-of-all-forms-of-discrimination-against-women",
+          "kind": "event",
+          "locator": "Q277072"
+        },
+        {
+          "dissent": false,
+          "id": "convention-on-the-rights-of-the-child",
+          "kind": "event",
+          "locator": "Q466087"
         },
         {
           "dissent": false,
@@ -12015,6 +12045,18 @@
           "id": "covid-19-pandemic-in-europe",
           "kind": "event",
           "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "cuban-revolution",
+          "kind": "event",
+          "locator": "Q11264"
+        },
+        {
+          "dissent": false,
+          "id": "cultural-revolution",
+          "kind": "event",
+          "locator": "Q8690"
         },
         {
           "dissent": false,
@@ -12039,6 +12081,12 @@
           "id": "european-convention-on-human-rights",
           "kind": "event",
           "locator": "Q183191"
+        },
+        {
+          "dissent": false,
+          "id": "falklands-war",
+          "kind": "event",
+          "locator": "Q48249"
         },
         {
           "dissent": false,
@@ -12090,6 +12138,18 @@
         },
         {
           "dissent": false,
+          "id": "holodomor",
+          "kind": "event",
+          "locator": "Q165058"
+        },
+        {
+          "dissent": false,
+          "id": "hungarian-revolution-of-1956",
+          "kind": "event",
+          "locator": "Q164348"
+        },
+        {
+          "dissent": false,
           "id": "iberian-pact",
           "kind": "event",
           "locator": "Q884821"
@@ -12105,6 +12165,18 @@
           "id": "indo-pakistani-war-of-1965",
           "kind": "event",
           "locator": "Q233583"
+        },
+        {
+          "dissent": false,
+          "id": "international-covenant-on-civil-and-political-rights",
+          "kind": "event",
+          "locator": "Q392119"
+        },
+        {
+          "dissent": false,
+          "id": "iranian-revolution",
+          "kind": "event",
+          "locator": "Q126065"
         },
         {
           "dissent": false,
@@ -12132,6 +12204,12 @@
         },
         {
           "dissent": false,
+          "id": "lebanese-civil-war",
+          "kind": "event",
+          "locator": "Q208484"
+        },
+        {
+          "dissent": false,
           "id": "lisbon-regicide",
           "kind": "event",
           "locator": "Q2665185"
@@ -12147,6 +12225,12 @@
           "id": "mexican-revolution",
           "kind": "event",
           "locator": "Q214426"
+        },
+        {
+          "dissent": false,
+          "id": "molotov-ribbentrop-pact",
+          "kind": "event",
+          "locator": "Q130796"
         },
         {
           "dissent": false,
@@ -12189,6 +12273,12 @@
           "id": "potsdam-conference",
           "kind": "event",
           "locator": "Q151187"
+        },
+        {
+          "dissent": false,
+          "id": "ramsar-convention",
+          "kind": "event",
+          "locator": "Q170170"
         },
         {
           "dissent": false,
@@ -12252,9 +12342,21 @@
         },
         {
           "dissent": false,
+          "id": "spanish-civil-war",
+          "kind": "event",
+          "locator": "Q10859"
+        },
+        {
+          "dissent": false,
           "id": "srebrenica-massacre",
           "kind": "event",
           "locator": "Q170334"
+        },
+        {
+          "dissent": false,
+          "id": "the-holocaust",
+          "kind": "event",
+          "locator": "Q2763"
         },
         {
           "dissent": false,
@@ -12336,6 +12438,24 @@
         },
         {
           "dissent": false,
+          "id": "united-nations-convention-on-the-law-of-the-sea",
+          "kind": "event",
+          "locator": "Q216996"
+        },
+        {
+          "dissent": false,
+          "id": "velvet-revolution",
+          "kind": "event",
+          "locator": "Q182817"
+        },
+        {
+          "dissent": false,
+          "id": "vietnam-war",
+          "kind": "event",
+          "locator": "Q8740"
+        },
+        {
+          "dissent": false,
           "id": "wall-street-crash-of-1929",
           "kind": "event",
           "locator": "Q201684"
@@ -12348,9 +12468,21 @@
         },
         {
           "dissent": false,
+          "id": "warsaw-uprising",
+          "kind": "event",
+          "locator": "Q1402078"
+        },
+        {
+          "dissent": false,
           "id": "world-war-i",
           "kind": "event",
           "locator": "Q361"
+        },
+        {
+          "dissent": false,
+          "id": "world-war-ii",
+          "kind": "event",
+          "locator": "Q362"
         },
         {
           "dissent": false,

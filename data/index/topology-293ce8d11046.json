@@ -12260,6 +12260,29 @@
       }
     },
     {
+      "actors": [],
+      "aliases": [],
+      "id": "algerian-war",
+      "place": null,
+      "region": "africa",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Algerian War",
+      "weight": 0,
+      "when": {
+        "date": "1954-11-01",
+        "end": 1962,
+        "endDate": "1962-09-09",
+        "start": 1954
+      },
+      "wikidata": "Q200790",
+      "wikipedia": {
+        "en": "Algerian War",
+        "pt": "Guerra de Independência Argelina"
+      }
+    },
+    {
       "actors": [
         {
           "actor": "mpla",
@@ -12926,6 +12949,29 @@
       }
     },
     {
+      "actors": [],
+      "aliases": [],
+      "id": "beer-hall-putsch",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Beer Hall Putsch",
+      "weight": 0,
+      "when": {
+        "date": "1923-11-09",
+        "end": 1923,
+        "endDate": "1923-11-09",
+        "start": 1923
+      },
+      "wikidata": "Q36749",
+      "wikipedia": {
+        "en": "Beer Hall Putsch",
+        "pt": "Putsch da Cervejaria"
+      }
+    },
+    {
       "actors": [
         {
           "actor": "banco-de-portugal",
@@ -13245,6 +13291,28 @@
     {
       "actors": [],
       "aliases": [],
+      "id": "charter-of-the-united-nations",
+      "place": null,
+      "region": "americas",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Charter of the United Nations",
+      "weight": 0,
+      "when": {
+        "date": "1945-06-26",
+        "end": 1945,
+        "start": 1945
+      },
+      "wikidata": "Q171328",
+      "wikipedia": {
+        "en": "Charter of the United Nations",
+        "pt": "Carta das Nações Unidas"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
       "id": "chiado-fire",
       "place": null,
       "region": "europe",
@@ -13469,6 +13537,50 @@
       }
     },
     {
+      "actors": [],
+      "aliases": [],
+      "id": "convention-on-the-elimination-of-all-forms-of-discrimination-against-women",
+      "place": "new-york",
+      "region": "americas",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Convention on the Elimination of All Forms of Discrimination against Women",
+      "weight": 0,
+      "when": {
+        "date": "1979-12-18",
+        "end": 1979,
+        "start": 1979
+      },
+      "wikidata": "Q277072",
+      "wikipedia": {
+        "en": "Convention on the Elimination of All Forms of Discrimination Against Women",
+        "pt": "Convenção sobre a Eliminação de Todas as Formas de Discriminação contra a Mulher"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "convention-on-the-rights-of-the-child",
+      "place": "new-york",
+      "region": "americas",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Convention on the Rights of the Child",
+      "weight": 0,
+      "when": {
+        "date": "1989-11-20",
+        "end": 1989,
+        "start": 1989
+      },
+      "wikidata": "Q466087",
+      "wikipedia": {
+        "en": "Convention on the Rights of the Child",
+        "pt": "Convenção sobre os Direitos da Criança"
+      }
+    },
+    {
       "actors": [
         {
           "actor": "antonio-costa",
@@ -13666,6 +13778,51 @@
         "date": "1996-07-17",
         "end": 1996,
         "start": 1996
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "cuban-revolution",
+      "place": null,
+      "region": "americas",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Cuban Revolution",
+      "weight": 0,
+      "when": {
+        "date": "1959-01-01",
+        "end": 1959,
+        "start": 1959
+      },
+      "wikidata": "Q11264",
+      "wikipedia": {
+        "en": "Cuban Revolution",
+        "pt": "Revolução Cubana"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "cultural-revolution",
+      "place": null,
+      "region": "asia",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Cultural Revolution",
+      "weight": 0,
+      "when": {
+        "date": "1966-05-16",
+        "end": 1976,
+        "endDate": "1976-10-06",
+        "start": 1966
+      },
+      "wikidata": "Q8690",
+      "wikipedia": {
+        "en": "Cultural Revolution",
+        "pt": "Revolução Cultural Chinesa"
       }
     },
     {
@@ -14364,6 +14521,28 @@
     {
       "actors": [],
       "aliases": [],
+      "id": "falklands-war",
+      "place": null,
+      "region": "americas",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Falklands War",
+      "weight": 0,
+      "when": {
+        "end": 1982,
+        "endDate": "1982-06-14",
+        "start": 1982
+      },
+      "wikidata": "Q48249",
+      "wikipedia": {
+        "en": "Falklands War",
+        "pt": "Guerra das Malvinas"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
       "id": "february-revolution",
       "place": null,
       "region": "europe",
@@ -14791,6 +14970,49 @@
     {
       "actors": [],
       "aliases": [],
+      "id": "holodomor",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Holodomor",
+      "weight": 0,
+      "when": {
+        "end": 1933,
+        "start": 1932
+      },
+      "wikidata": "Q165058",
+      "wikipedia": {
+        "en": "Holodomor",
+        "pt": "Holodomor"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "hungarian-revolution-of-1956",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Hungarian Revolution of 1956",
+      "weight": 0,
+      "when": {
+        "end": 1956,
+        "endDate": "1956-11-10",
+        "start": 1956
+      },
+      "wikidata": "Q164348",
+      "wikipedia": {
+        "en": "Hungarian Revolution of 1956",
+        "pt": "Revolução Húngara de 1956"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
       "id": "hurricane-leslie",
       "place": null,
       "region": "europe",
@@ -14971,6 +15193,51 @@
     {
       "actors": [],
       "aliases": [],
+      "id": "international-covenant-on-civil-and-political-rights",
+      "place": "new-york",
+      "region": "americas",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "International Covenant on Civil and Political Rights",
+      "weight": 0,
+      "when": {
+        "date": "1966-12-16",
+        "end": 1966,
+        "start": 1966
+      },
+      "wikidata": "Q392119",
+      "wikipedia": {
+        "en": "International Covenant on Civil and Political Rights",
+        "pt": "Pacto Internacional dos Direitos Civis e Políticos"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "iranian-revolution",
+      "place": null,
+      "region": "asia",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Iranian Revolution",
+      "weight": 0,
+      "when": {
+        "date": "1978-01",
+        "end": 1979,
+        "endDate": "1979-02",
+        "start": 1978
+      },
+      "wikidata": "Q126065",
+      "wikipedia": {
+        "en": "Iranian Revolution",
+        "pt": "Revolução Iraniana"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
       "id": "iraq-war",
       "place": null,
       "region": "asia",
@@ -15110,6 +15377,29 @@
       "wikidata": "Q10316960",
       "wikipedia": {
         "pt": "Lei da Separação do Estado das Igrejas"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "lebanese-civil-war",
+      "place": null,
+      "region": "asia",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Lebanese Civil War",
+      "weight": 0,
+      "when": {
+        "date": "1975-04-13",
+        "end": 1990,
+        "endDate": "1990-10-13",
+        "start": 1975
+      },
+      "wikidata": "Q208484",
+      "wikipedia": {
+        "en": "Lebanese Civil War",
+        "pt": "Guerra Civil Libanesa"
       }
     },
     {
@@ -15631,6 +15921,29 @@
       "wikipedia": {
         "en": "Mexican Revolution",
         "pt": "Revolução Mexicana"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "molotov-ribbentrop-pact",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Molotov–Ribbentrop Pact",
+      "weight": 0,
+      "when": {
+        "date": "1939-08-23",
+        "end": 1941,
+        "endDate": "1941-06-22",
+        "start": 1939
+      },
+      "wikidata": "Q130796",
+      "wikipedia": {
+        "en": "Molotov–Ribbentrop Pact",
+        "pt": "Pacto Molotov-Ribbentrop"
       }
     },
     {
@@ -16452,6 +16765,28 @@
       "wikidata": "Q5942951"
     },
     {
+      "actors": [],
+      "aliases": [],
+      "id": "ramsar-convention",
+      "place": null,
+      "region": "asia",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Ramsar Convention",
+      "weight": 0,
+      "when": {
+        "date": "1971-02-02",
+        "end": 1971,
+        "start": 1971
+      },
+      "wikidata": "Q170170",
+      "wikipedia": {
+        "en": "Ramsar Convention",
+        "pt": "Convenção sobre as Zonas Húmidas de Importância Internacional"
+      }
+    },
+    {
       "actors": [
         {
           "actor": "manuel-ii",
@@ -17067,6 +17402,29 @@
       }
     },
     {
+      "actors": [],
+      "aliases": [],
+      "id": "spanish-civil-war",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Spanish Civil War",
+      "weight": 0,
+      "when": {
+        "date": "1936-07-18",
+        "end": 1939,
+        "endDate": "1939-04-01",
+        "start": 1936
+      },
+      "wikidata": "Q10859",
+      "wikipedia": {
+        "en": "Spanish Civil War",
+        "pt": "Guerra Civil Espanhola"
+      }
+    },
+    {
       "actors": [
         {
           "actor": "antonio-de-spinola",
@@ -17138,6 +17496,27 @@
       "wikidata": "Q1536157",
       "wikipedia": {
         "en": "Telecoms Package"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "the-holocaust",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "The Holocaust",
+      "weight": 0,
+      "when": {
+        "end": 1945,
+        "start": 1933
+      },
+      "wikidata": "Q2763",
+      "wikipedia": {
+        "en": "The Holocaust",
+        "pt": "Holocausto"
       }
     },
     {
@@ -17615,6 +17994,73 @@
     {
       "actors": [],
       "aliases": [],
+      "id": "united-nations-convention-on-the-law-of-the-sea",
+      "place": null,
+      "region": "americas",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "United Nations Convention on the Law of the Sea",
+      "weight": 0,
+      "when": {
+        "date": "1982-12-10",
+        "end": 1982,
+        "start": 1982
+      },
+      "wikidata": "Q216996",
+      "wikipedia": {
+        "en": "United Nations Convention on the Law of the Sea",
+        "pt": "Convenção das Nações Unidas sobre o Direito do Mar"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "velvet-revolution",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Velvet Revolution",
+      "weight": 0,
+      "when": {
+        "end": 1989,
+        "endDate": "1989-12-29",
+        "start": 1989
+      },
+      "wikidata": "Q182817",
+      "wikipedia": {
+        "en": "Velvet Revolution",
+        "pt": "Revolução de Veludo"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "vietnam-war",
+      "place": null,
+      "region": "asia",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Vietnam War",
+      "weight": 0,
+      "when": {
+        "date": "1955-11-01",
+        "end": 1975,
+        "endDate": "1975-04-30",
+        "start": 1955
+      },
+      "wikidata": "Q8740",
+      "wikipedia": {
+        "en": "Vietnam War",
+        "pt": "Guerra do Vietnã"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
       "id": "wall-street-crash-of-1929",
       "place": null,
       "region": "americas",
@@ -17655,6 +18101,29 @@
       "wikipedia": {
         "en": "War in Afghanistan (2001–2021)",
         "pt": "Guerra do Afeganistão (2001–2021)"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "warsaw-uprising",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Warsaw Uprising",
+      "weight": 0,
+      "when": {
+        "date": "1944-10-02",
+        "end": 1944,
+        "endDate": "1944-10-02",
+        "start": 1944
+      },
+      "wikidata": "Q1402078",
+      "wikipedia": {
+        "en": "Warsaw Uprising",
+        "pt": "Revolta de Varsóvia"
       }
     },
     {
@@ -17727,6 +18196,29 @@
       "wikipedia": {
         "en": "World War I",
         "pt": "Primeira Guerra Mundial"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "world-war-ii",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "World War II",
+      "weight": 0,
+      "when": {
+        "date": "1939-09-01",
+        "end": 1945,
+        "endDate": "1945-09-02",
+        "start": 1939
+      },
+      "wikidata": "Q362",
+      "wikipedia": {
+        "en": "World War II",
+        "pt": "Segunda Guerra Mundial"
       }
     },
     {

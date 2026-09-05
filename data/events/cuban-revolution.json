@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "cuban-revolution",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q11264",
+  "sitelinks": 85,
+  "wikipedia": {
+    "en": "Cuban Revolution",
+    "pt": "Revolução Cubana"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q11264"
+    }
+  ],
+  "title": "Cuban Revolution",
+  "summary": "Wikidata item Q11264, imported by tools/import/wikidata.mjs. The item's own description reads \"revolution in Cuba starting in 1953 culminating in 1959\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1959,
+    "end": 1959,
+    "date": "1959-01-01"
+  },
+  "place": null,
+  "region": "americas",
+  "actors": []
+}

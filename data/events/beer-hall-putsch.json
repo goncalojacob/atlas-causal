@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "beer-hall-putsch",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q36749",
+  "sitelinks": 64,
+  "wikipedia": {
+    "en": "Beer Hall Putsch",
+    "pt": "Putsch da Cervejaria"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q36749"
+    }
+  ],
+  "title": "Beer Hall Putsch",
+  "summary": "Wikidata item Q36749, imported by tools/import/wikidata.mjs. The item's own description reads \"attempted coup d'état in Weimar Republic\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1923,
+    "end": 1923,
+    "date": "1923-11-09",
+    "endDate": "1923-11-09"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}

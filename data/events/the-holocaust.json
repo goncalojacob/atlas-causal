@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "the-holocaust",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q2763",
+  "sitelinks": 173,
+  "wikipedia": {
+    "en": "The Holocaust",
+    "pt": "Holocausto"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2763"
+    }
+  ],
+  "title": "The Holocaust",
+  "summary": "Wikidata item Q2763, imported by tools/import/wikidata.mjs. The item's own description reads \"genocide of around 6 million Jews by Nazi Germany, other Axis powers and local collaborators in occupied territories\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1933,
+    "end": 1945
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}

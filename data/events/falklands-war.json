@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "falklands-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q48249",
+  "sitelinks": 88,
+  "wikipedia": {
+    "en": "Falklands War",
+    "pt": "Guerra das Malvinas"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q48249"
+    }
+  ],
+  "title": "Falklands War",
+  "summary": "Wikidata item Q48249, imported by tools/import/wikidata.mjs. The item's own description reads \"undeclared war between Argentina and the United Kingdom in 1982\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1982,
+    "end": 1982,
+    "endDate": "1982-06-14"
+  },
+  "place": null,
+  "region": "americas",
+  "actors": []
+}
