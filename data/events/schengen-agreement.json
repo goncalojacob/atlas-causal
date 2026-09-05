@@ -9,14 +9,19 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": null,
+  "revised": "2026-09-05",
   "review": {
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "summary-drafted"
     ]
   },
   "wikidata": "Q2822795",
@@ -27,12 +32,28 @@
   },
   "sources": [
     {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-teixeira-2019-political-institutions",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Schengen Agreement\", revision 1370029483"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Acordo de Schengen\", revision 68154239"
+    },
+    {
       "source": "wikidata",
       "locator": "Q2822795"
     }
   ],
   "title": "Schengen Agreement",
-  "summary": "Wikidata item Q2822795, imported by tools/import/wikidata.mjs. The item's own description reads \"treaty which led to the creation of Europe's Schengen Area, in which internal border checks have largely been abolished\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "Five of the ten members of the Community — France, West Germany, Belgium, the Netherlands and Luxembourg — signed an agreement on a boat moored at Schengen on 14 June 1985 to take the checks off their common borders. It was deliberately built outside the Community treaties, because the other five would not go that far, and the machinery that made it work arrived with the implementing convention of 1990: a common visa list, a shared database, and the rule that whoever holds a stretch of the outer frontier holds it for everybody. Portugal and Spain signed together in 1991 and the checks between them came off in 1995.",
   "when": {
     "start": 1985,
     "end": 1985,
@@ -40,5 +61,30 @@
   },
   "place": null,
   "region": "europe",
-  "actors": []
+  "actors": [
+    {
+      "actor": "schengen-area",
+      "role": "founder"
+    },
+    {
+      "actor": "france",
+      "role": "signatory"
+    },
+    {
+      "actor": "german-federal-republic",
+      "role": "signatory"
+    },
+    {
+      "actor": "belgium",
+      "role": "signatory"
+    },
+    {
+      "actor": "netherlands",
+      "role": "signatory"
+    },
+    {
+      "actor": "luxembourg",
+      "role": "signatory"
+    }
+  ]
 }

@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "united-nations-convention-on-the-law-of-the-sea",
   "kind": "event",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,11 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": null,
+  "revised": "2026-09-05",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "m40-retracted"
+    ],
+    "note": "Retracted in M40b: the law of the sea convention signed at Montego Bay in December 1982. Portugal is one of the states it matters most to — the exclusive economic zone, and the extended continental shelf claim filed in 2009 — and the atlas holds no record of any of that, so the convention has nothing here to be wired to. Expo 98 and its ocean theme are not a consequence of it. It would need the continental shelf claim, or the zone itself, as a record."
   },
   "wikidata": "Q216996",
   "sitelinks": 61,

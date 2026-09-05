@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "convention-on-the-rights-of-the-child",
   "kind": "event",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,11 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": null,
+  "revised": "2026-09-05",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "m40-retracted"
+    ],
+    "note": "Retracted in M40b: the convention on the rights of the child, adopted in November 1989 and the most widely ratified treaty there is. As with CEDAW, its lineage — the declaration of 1959 and the drafting group of the 1980s — is not in this atlas, and its Portuguese reach would be legislation on children, the family and schooling that no record here holds. The covenant of 1966 was kept because it is the direct binding successor of the Charter this atlas does hold."
   },
   "wikidata": "Q466087",
   "sitelinks": 75,
