@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "second-sino-japanese-war--chinese-civil-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Sino-Japanese War\", revision 1372437913"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Chinese Civil War\", revision 1372330605"
+    }
+  ],
+  "from": "second-sino-japanese-war",
+  "to": "chinese-civil-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The two Chinese parties had been at war with each other before Japan attacked and suspended it for the united front; the question is what eight years of Japanese war did to their relative strength. It destroyed the Nationalists' German-trained divisions in the first year, drove their government to the interior, and left it holding a ruined tax base and a currency that collapsed in 1947–48; the Communist bases in the north, fighting a guerrilla war behind the Japanese lines, came out of it with a mass organisation and a territory. The claim is about that reversal, not that Japan chose the winner.",
+  "dispute": null
+}

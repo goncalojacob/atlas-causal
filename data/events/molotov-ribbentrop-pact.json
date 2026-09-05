@@ -9,14 +9,19 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": null,
+  "revised": "2026-09-05",
   "review": {
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "summary-drafted"
     ]
   },
   "wikidata": "Q130796",
@@ -27,12 +32,20 @@
   },
   "sources": [
     {
+      "source": "wikipedia-en",
+      "locator": "\"Molotov–Ribbentrop Pact\", revision 1371767482"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Pacto Molotov-Ribbentrop\", revision 72134920"
+    },
+    {
       "source": "wikidata",
       "locator": "Q130796"
     }
   ],
   "title": "Molotov–Ribbentrop Pact",
-  "summary": "Wikidata item Q130796, imported by tools/import/wikidata.mjs. The item's own description reads \"1939 neutrality pact between Nazi Germany and the Soviet Union\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "Signed in Moscow on the night of 23 August 1939, the treaty of non-aggression between Germany and the Soviet Union carried a secret protocol dividing Poland, the Baltic states, Finland and Bessarabia into spheres of influence. It removed the last obstacle to the attack on Poland nine days later, and the Soviet Union took its share of the country on 17 September. It held until Germany invaded on 22 June 1941. Communist parties across Europe — the Portuguese among them — spent those twenty-two months explaining a pact with fascism, and the memory of that was still being used against them thirty years later.",
   "when": {
     "start": 1939,
     "end": 1941,
@@ -41,5 +54,18 @@
   },
   "place": null,
   "region": "europe",
-  "actors": []
+  "actors": [
+    {
+      "actor": "germany-prussia",
+      "role": "signatory"
+    },
+    {
+      "actor": "russia-soviet-union",
+      "role": "signatory"
+    },
+    {
+      "actor": "poland",
+      "role": "target"
+    }
+  ]
 }

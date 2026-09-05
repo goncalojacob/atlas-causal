@@ -9,14 +9,19 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": null,
+  "revised": "2026-09-05",
   "review": {
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "summary-drafted"
     ]
   },
   "wikidata": "Q2763",
@@ -27,17 +32,30 @@
   },
   "sources": [
     {
+      "source": "wikipedia-en",
+      "locator": "\"The Holocaust\", revision 1373403276"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Holocausto\", revision 72716958"
+    },
+    {
       "source": "wikidata",
       "locator": "Q2763"
     }
   ],
   "title": "The Holocaust",
-  "summary": "Wikidata item Q2763, imported by tools/import/wikidata.mjs. The item's own description reads \"genocide of around 6 million Jews by Nazi Germany, other Axis powers and local collaborators in occupied territories\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "Nazi Germany and its collaborators murdered about six million European Jews, some two thirds of the Jewish population of the continent: from 1941 by mass shootings behind the eastern front, and from 1942 in the gas chambers of Chełmno, Bełżec, Sobibór, Treblinka, Majdanek and Auschwitz-Birkenau. Romani people, Soviet prisoners of war, disabled people and political prisoners were killed in the same system. The record's interval opens in 1933 because that is when the persecution began, with exclusion, expropriation and emigration; the extermination is a decision of the war years. It is in the atlas as the event against which the post-war law of human rights was written.",
   "when": {
     "start": 1933,
     "end": 1945
   },
   "place": null,
   "region": "europe",
-  "actors": []
+  "actors": [
+    {
+      "actor": "germany-prussia",
+      "role": "perpetrator"
+    }
+  ]
 }

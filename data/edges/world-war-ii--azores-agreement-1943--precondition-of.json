@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "world-war-ii--azores-agreement-1943--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"World War II\", revision 1372726772"
+    }
+  ],
+  "from": "world-war-ii",
+  "to": "azores-agreement-1943",
+  "type": "precondition-of",
+  "confidence": "consensus",
+  "explanation": "The islands were wanted for one reason and at one moment: the mid-Atlantic gap that land-based aircraft could not cover was where the U-boats were sinking convoys, and by 1943 closing it had become the decisive problem of the Battle of the Atlantic. The alliance of 1373 supplied the form of the request rather than its content — Salazar could concede to an ally what he could not have conceded to a belligerent without abandoning neutrality — and Britain used it precisely because it let a neutral say yes. Telo and Rosas both read the agreement as the point where Portuguese neutrality became a way of joining the winning side without saying so.",
+  "dispute": null
+}
