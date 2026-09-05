@@ -560,6 +560,12 @@ button.bar-link { background: none; border: 0; padding: 0; font: inherit; font-s
 .graph .edge.type-precondition-of { stroke-width: var(--edge-precondition-of-width); stroke-dasharray: var(--edge-precondition-of); }
 .graph .edge.type-inspired { stroke-width: var(--edge-inspired-width); stroke-dasharray: var(--edge-inspired); }
 .graph .edge.disputed { stroke-dasharray: 5 4; opacity: 0.75; }
+/* A line carrying several links. After the type rules and at the same
+   specificity, so it is the one that decides the width; the dash pattern is
+   still the type's, because what the links are is not what merging changed.
+   The property is set on the element, so how thick "several" looks stays
+   here and only the count comes from the script. */
+.graph .edge.merged { stroke-width: var(--merged-width, 2); }
 .graph .edge.consequence, .graph .edge-head.consequence { stroke: var(--cobalt); }
 .graph .edge-head.consequence { fill: var(--cobalt); }
 /* The branches that fed the selected event from off the walked path: the
@@ -580,6 +586,20 @@ button.bar-link { background: none; border: 0; padding: 0; font: inherit; font-s
 .graph .node.selected { fill: var(--madder); stroke: var(--paper); stroke-width: 2; }
 .graph .node.faded { opacity: 0.28; }
 .graph .node.faded.selected, .graph .node.faded.on-path { opacity: 0.6; }
+/* A stack of nodes drawn as one, and the count beside it: read exactly as
+   the map's stacks and the timeline's, so one reading serves all three.
+   Filled with paper and ringed heavier, because the reader has to be able to
+   tell one event from many before reading the badge. */
+.graph .node.stack { fill: var(--paper); stroke: var(--cobalt); stroke-width: 2.5; }
+.graph .node.stack:hover { fill: var(--cobalt-faint); }
+/* A stack no zoom can part is not a promise of "zoom in": it opens the list
+   in the panel instead, and says so by not inviting the wheel. */
+.graph .node.stack.coincident { stroke-dasharray: 3 2; }
+.graph .cluster-count {
+  fill: var(--cobalt); font-family: var(--font-ui); font-weight: 600;
+  font-variant-numeric: tabular-nums; letter-spacing: 0.01em; pointer-events: none;
+}
+.graph .cluster-count.faded { opacity: 0.35; }
 /* The horizon, drawn the way the map draws it: see the note there. */
 .graph .node.in-horizon { fill: var(--cobalt-faint); stroke: var(--cobalt); stroke-width: 2; }
 .graph .node.in-horizon.near { opacity: 1; }

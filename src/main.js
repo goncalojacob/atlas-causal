@@ -57,7 +57,9 @@ try {
   let graph = null;
   const showView = (view) => {
     const graphOn = view === 'graph';
-    if (graphOn && !graph) graph = createGraphView(graphArea, { atlas, state });
+    if (graphOn && !graph) {
+      graph = createGraphView(graphArea, { atlas, state, onCluster: (cluster) => panel.showCluster(cluster) });
+    }
     mapArea.hidden = graphOn;
     graphArea.hidden = !graphOn;
     // The layer switches belong to the map: the graph has no coastlines.
