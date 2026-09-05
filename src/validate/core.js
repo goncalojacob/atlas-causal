@@ -47,8 +47,14 @@ export function validate(records, topology, schemas) {
       errors.push({ level: 'error', rule: 1, id: label, kind: null, path: '', message: 'a record is a JSON object' });
       return;
     }
-    if (record.schema !== SCHEMA_VERSION) {
-      errors.push({ level: 'error', rule: 1, id: label, kind: record.kind ?? null, path: '/schema', message: `unsupported schema version ${JSON.stringify(record.schema)}; this validator knows ${SCHEMA_VERSION}` });
+    // Up to SCHEMA_VERSION rather than exactly it: an older record is one the
+    // migration chain in migrate.js can still read, and refusing it would
+    // make every fork's records invalid the day this repository bumps the
+    // number (health review A, finding 25). A *newer* one is a record written
+    // by a version of the atlas this one does not know, and there is nothing
+    // honest to do with it but say so.
+    if (!Number.isInteger(record.schema) || record.schema < 1 || record.schema > SCHEMA_VERSION) {
+      errors.push({ level: 'error', rule: 1, id: label, kind: record.kind ?? null, path: '/schema', message: `unsupported schema version ${JSON.stringify(record.schema)}; this validator knows up to ${SCHEMA_VERSION}` });
       return;
     }
     if (!KINDS.includes(record.kind)) {
