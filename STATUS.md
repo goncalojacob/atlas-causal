@@ -6,7 +6,63 @@ session ends. `ARCHITECTURE.md` is the target; this file is the position.
 
 ## Last updated
 
-2026-09-05, after H1c (`docs/health/h1c-brief.md`), the health cycle's third
+2026-09-05, after H2 (`docs/health/h2-brief.md`), the health cycle's fourth
+run: **a kind, a type and a grouping are each written down once, and the
+three pictures agree about what the reader is holding.** Two leaf modules,
+one pure module over them, and the roughly thirty places that used to spell
+out what they say. Code
+only; nothing under `data/` moved and `data/index/` was not rebuilt. 678
+tests.
+
+**The registry is two leaf modules.** `src/kinds.js` carries one entry per
+record kind — the directory, the schema file, the licences, whether it takes
+identity fields and a body, its citation, actor and step lists, its form
+fields' names, its URL parameter and its labels — and `src/vocab.js` the
+closed vocabularies: the five edge types with their labels, the six relation
+types with both their directions, their endpoints and whether they are
+acyclic, the four groupings and the three lens kinds. Neither imports
+anything, which is what lets `state.js` import them: it kept its own copies
+of the two id patterns and of `GROUPS` "because this file stays free of the
+data", and a copy of a closed set drifts (A9, A28, B19). The two id patterns
+and the lens's are **built** from the type lists, so a sixth edge type
+cannot arrive with a label and no pattern.
+
+Derived from the registry now: `core.js`'s `KINDS`, `rules.js`'s
+`ALLOWED_LICENSES`, `IDENTITY_KINDS` and `BODY_KINDS`, `citation.js`'s
+`CITER_LABEL`, `markdown.js`'s `RECORD_LINK_KINDS`, `entry.js`'s
+`ENTRY_KINDS` and `ATLAS_PARAM`, `queue.js`'s `KIND_ORDER`, `bundle.js`'s
+three list families and the order of `FIELDS`, `form.js`'s labels, hints,
+title keys and its row of Add buttons, `read.mjs`'s `KIND_DIRS` and the
+Wikidata import's places-then-actors-then-events order. `FIELDS` is
+*assembled* by the registry rather than merely checked against it, so a
+descriptor the registry does not know throws on load (deviation 208).
+`validate/schemas.js` stays as it was and gains a check instead (207).
+
+**One answer to "what is the reader working with".** `src/emphasis.js` —
+`workingSet(atlas, state)` → the selection, the walked path, the direct
+consequences, the converging branches, the open actor's events, an open
+narrative's whole walk, the horizon's reachable map and the lens, as id
+sets, with the lens applied to every one of them. The map, the timeline and
+the graph each built that set by hand and each built it differently (A27):
+the graph added the convergence branches and the lens, the map added the
+consequence lines' ends, the timeline exempted only the walk from the
+viewport. Two things follow, both intended: a converging branch keeps its
+own mark on the map as it already did in the graph (211), and the
+timeline's viewport exemption is the whole working set, so an actor's
+events and a narrative's walk are no longer taken away by a box the reader
+panned elsewhere (212).
+
+**What a new kind touches now.** Add the entry, add `schema/v1/<kind>.json`
+and its line in `schemas.js`, add the `kind` enum in
+`schema/common/provenance.json`; then one projection in `buildTopology` and
+one card module. `ARCHITECTURE.md`'s extension-points table says so, with
+three more rows for a type, a grouping and a fourth view.
+`tests/registry.test.mjs` holds the registry to the schemas — the enums, the
+third part of each id pattern, the `kind` consts, the licences, the
+directory map in Node and in the browser — and `tests/emphasis.test.mjs`
+holds `workingSet` to the fixtures.
+
+Before that, H1c (`docs/health/h1c-brief.md`), the health cycle's third
 run: **the map measures the picture it is really showing, the world is not a
 box, and the two panes stop lying about their size.** Eight items, one commit
 each, and one more that fell out of the second. Code only; nothing under
@@ -1551,19 +1607,21 @@ overnight runs and the hourly shepherd keep off each other's toes on `m0`.
    which is the shortest card and the strongest claim that the summary is
    what to read first. `openSection` in `src/panel/sections.js` is the one
    function that decides it.
-18. **Next build: H2** (`docs/health-plan-2026-09-05.md`, milestone H2) — the
-   registry: `src/kinds.js` and `src/vocab.js` as leaf modules, with
-   `state.js`, `rules.js`, `lens.js`, `lanes.js`, `bundle.js`, `read.mjs`,
-   `new-record.mjs`, `bundle-to-files.mjs` and `wikidata.mjs` importing from
-   them; `src/emphasis.js` (`workingSet`) consumed by the three views;
-   consistency tests. No URL and no record changes. It has no brief yet.
-   Then H3a, after which the pages switch to the spine. H5b may run beside
-   it on its own branch, without committing `data/index/`.
-   H1c left two things for it to sweep up: `hasOpening` and `CARDS` moved to
-   `state.js` in this run and are re-exported from `phone.js`, which is the
-   kind of duplication H2 exists to end; and the region boxes are derived
-   from `data/geo/regions.json` in `src/util/geo.js` while the lane *ids* come
-   from the manifest, which is two files answering about regions.
+18. **Next build: H3a** (`docs/health-plan-2026-09-05.md`, milestone H3a) —
+   the spine beside the old topology: `build-index.mjs` emits the spine, the
+   period shards, the search shard, the citers files and the
+   `citationCount`s **in addition to** the topology, `data.js` can load
+   either, nothing switches yet, and the fixtures gain a record straddling a
+   period boundary. The plan asks for an Opus review of its brief before it
+   is built. Then H3b, where the pages switch over one commit each. H5b may
+   run beside it on its own branch, without committing `data/index/`.
+   H2 is done. Of the two things H1c left it: `hasOpening` and `CARDS` were
+   not a duplication — one definition in `state.js`, re-exported from
+   `phone.js`, which is the shape H2 adopted everywhere — and the registry
+   test now holds `CARDS` to the registry's `urlParam`s (deviation 214). The
+   other, region boxes derived from `data/geo/regions.json` while the lane
+   *ids* come from the manifest, is a question about which file answers
+   about regions and belongs to H3, where the index is being rebuilt.
 19. **Owner: say whether the map's note is the right place for a failed
    shard.** `.map-note`, top right of the map, only when a shard of borders
    will not load: "The territories could not be loaded; the borders drawn are
@@ -3189,6 +3247,73 @@ gave that to the map and the timeline, and M25 did not widen it.
      grid row that was `auto` and therefore grew with the packed rows. Item 8
      makes that row a length, so there is nothing left to cap and nothing for
      `panes.js` to lift; one custom property instead of two.
+206. **The labels and the orders went into `vocab.js` with the types, not
+     only the id patterns.** The brief says the module holds "the edge types
+     (label, order), the relation types (label, order, endpoint kinds)", so
+     `graph.js`'s `TYPE_ORDER`, `panel/event.js`'s `TYPE_LABEL`,
+     `panel/actor.js`'s `RELATION_LABEL` and `RELATION_ORDER` and the five
+     types the graph's key spelled out are now that one declaration. Those
+     four files are not on the brief's list of importers, but leaving a
+     label table beside a type list the module already owns would have left
+     exactly the drift the module exists to stop. The old names are still
+     exported from where they were, so nothing else moved.
+207. **`validate/schemas.js` keeps its list and gains a check.** Kept, as
+     finding 17 of the plan review requires: it also names the four
+     tool-side schema files, which belong to no kind, and its order is
+     tested against the disk. The registry test now asserts that every
+     kind's `schema` is in `SCHEMA_FILES` and that nothing under
+     `schema/v1/` declares a `kind` the registry has not heard of, which is
+     the half of "derived from the registry" that was actually worth having.
+208. **`FIELDS` is assembled by the registry rather than checked against
+     it.** The brief asks the registry to carry "its form fields' names",
+     which a test could have compared against `bundle.js`'s descriptors.
+     Instead `bundle.js` orders its descriptors *by* the registry's names
+     and throws on load if either side has one the other has not. A test
+     that can be ignored for an afternoon is weaker than a module that will
+     not load, and the field order in the form is now the registry's.
+209. **The registry does not carry the card module or the `buildTopology`
+     projection.** Finding 9's sketch lists `card` in the entry. A card is a
+     DOM module and a projection is a closure over the topology under
+     construction; naming either in a leaf module would either make it
+     import them — and stop it being a leaf — or reduce it to a string
+     nothing follows. `ARCHITECTURE.md`'s new row names them as the two
+     steps beyond the registry that adding a kind still takes.
+210. **The kinds the form builds are one list, read twice.**
+     `CONTRIBUTED_KINDS` is the review queue's `KIND_ORDER` and the row of
+     Add buttons in `contribute/form.js`, which were two hand-written lists
+     in the same order. It is written out rather than derived from the
+     registry's own order, because the queue's order is an argument — what
+     a claim rests on before the claim — and not the topology's; the test
+     holds it to being exactly the kinds that have form fields.
+211. **A converging branch now keeps its own mark on the map.** The map's
+     never-clustered set did not include the convergence query's answer and
+     the graph's did (finding 27 names this as one of the three
+     disagreements). `workingSet` has one answer, so the map has the
+     graph's: an answer to "what else fed this" hidden inside a cluster is
+     not an answer, which is the reasoning the graph already carried.
+212. **The timeline's viewport exemption is the whole working set.** It was
+     the walked path and the selection; it is now everything the reader is
+     holding, an open actor's events and an open narrative's walk included.
+     `util/viewport.js` promises that what the reader is holding is exempt
+     from the box, and those two were being taken away by a box the reader
+     had panned somewhere else. Same function, wider argument.
+213. **The lens is applied inside `workingSet`, for all three views.** The
+     map filtered every part of its set through the lens; the timeline and
+     the graph filtered their event lists instead and left the sets alone.
+     Nothing drawn changes — an event outside the lens was not in either
+     list to begin with — but the three cannot drift apart again, and the
+     rule ("a lens removes from everything") is now stated once, in code,
+     where the map only stated it in a comment.
+214. **`hasOpening` and `CARDS` were not a duplication to end.** H1c left
+     them for this run. They have one definition, in `state.js`, and
+     `phone.js` re-exports it — which is the shape H2 has adopted
+     everywhere else. What was worth adding is the assertion that `CARDS`
+     is exactly the set of `urlParam`s the registry declares, so a kind
+     that gains an address gains a slot the Back button pushes on. The
+     other thing H1c left — region boxes from `data/geo/regions.json`
+     against lane ids from the manifest — is a question about which file
+     answers about regions, not about a vocabulary with two definitions;
+     it belongs to H3, where the index is being rebuilt.
 
 ## Dates to verify
 
@@ -3678,3 +3803,4 @@ H1c done
 H2 started 2026-09-05T12:51:00Z by scheduled
 
 H2 started 2026-09-05T16:02:53Z by scheduled
+H2 done

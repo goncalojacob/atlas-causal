@@ -103,6 +103,9 @@ narratives.html            every narrative as a card, grouped by the centuries i
 review.html                the review queue; a maintainer's page, unlinked, and the only one that can write
 README.md  CONTRIBUTING.md for people reading the repository
 src/main.js                bootstrap only: load, wire views; ?fixtures=1 reads tests/fixtures/data/
+src/kinds.js               the record kinds: a leaf module, one entry per kind — directory, schema file, licences, identity and body, its citation, actor and step lists, its form fields' names, its URL parameter and its labels. Everything that used to list the kinds imports it
+src/vocab.js               the closed vocabularies: a leaf module with the edge types, the relation types, the groupings and the lens kinds, and the id patterns built from them. `state.js` imports it rather than copying it
+src/emphasis.js            pure: `workingSet(atlas, state)` — the selection, the walked path, the consequences, the converging branches, the open actor, an open narrative's walk, the horizon and the lens, as id sets, with the lens applied to all of them. The three views draw from it instead of each assembling it
 src/state.js               { from, to, view, selected, source, place, actor, chain, horizon, layers, narrative, step } ⇄ URL; a null bound is "as far as the data goes"
 src/data.js                manifest → topology (whole) → record text on demand; aliases, adjacency by edge and by relation, events by actor and by place, an event's point through its place, one geometry shard per year
 src/graph.js               consequences, ancestors, convergence, shortest paths outward; pure, ordered by type then confidence

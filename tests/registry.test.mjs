@@ -27,6 +27,7 @@ import {
 } from '../src/vocab.js';
 import { KIND_DIRS as READ_KIND_DIRS } from '../tools/lib/read.mjs';
 import { SCHEMA_FILES, TOOL_SIDE } from '../src/validate/schemas.js';
+import { CARDS, OPENINGS } from '../src/state.js';
 import { ROOT, SCHEMA_DIR } from './helpers.mjs';
 
 const schema = async (file) => JSON.parse(await readFile(path.join(SCHEMA_DIR, file), 'utf8'));
@@ -103,6 +104,14 @@ test('the registry equals the directory map, in Node and in the browser', async 
   // A citer group needs a name, and a name is only worth having on a kind
   // that cites.
   assert.deepEqual([...CITER_ORDER].sort(), Object.keys(byKind('citerLabel')).sort());
+
+  // The parameters that open a record are the registry's, and `state.js`'s
+  // CARDS is the same five: a kind that gains a URL of its own gains a slot
+  // the history pushes on, and the two must not part company. (H1c left this
+  // pair for H2; the answer is that the registry is where a kind says it has
+  // an address, and state.js says what that means for the Back button.)
+  assert.deepEqual([...CARDS].sort(), [...new Set(Object.values(byKind('urlParam')))].sort());
+  for (const key of CARDS) assert.ok(OPENINGS.includes(key), key);
 });
 
 test('the vocabularies equal the enums in schema/**', async () => {
