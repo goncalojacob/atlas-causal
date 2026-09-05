@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "boxer-rebellion--xinhai-revolution--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Boxer Rebellion\", revision 1372943833"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1911 Revolution\", revision 1373070054"
+    }
+  ],
+  "from": "boxer-rebellion",
+  "to": "xinhai-revolution",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The claim is narrow: the Boxer settlement did not make the revolution of 1911, but it made the ground it happened on. The court came out of 1901 owing an indemnity it could only pay by taxing the provinces harder, garrisoned by foreign troops, and visibly unable to protect the country it claimed the mandate to rule. The reforms it then attempted — new armies, provincial assemblies, the end of the examinations — created both the officers who mutinied at Wuchang and the assemblies that declared for the republic. No source here argues a direct link, and none is asserted.",
+  "dispute": null
+}

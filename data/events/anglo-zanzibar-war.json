@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "anglo-zanzibar-war",
   "kind": "event",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,11 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": null,
+  "revised": "2026-09-05",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "m40-retracted"
+    ],
+    "note": "Retracted in M40b: the shortest war on record, forty minutes on 27 August 1896 over who would succeed as Sultan of Zanzibar. The atlas holds no event in East Africa before 1953 and nothing about the British protectorate, so there is nothing the war can be argued to have changed here and nothing here that can be argued to have caused it. It would need a record of the 1890 protectorate agreement, or of the abolition of slavery in Zanzibar in 1897, before it had an honest edge."
   },
   "wikidata": "Q170850",
   "sitelinks": 73,
