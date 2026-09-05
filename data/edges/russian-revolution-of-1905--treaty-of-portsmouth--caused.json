@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "russian-revolution-of-1905--treaty-of-portsmouth--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Russian Revolution of 1905\", revision 1371938345"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Portsmouth\", revision 1369694651"
+    }
+  ],
+  "from": "russian-revolution-of-1905",
+  "to": "treaty-of-portsmouth",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "Russia opened negotiations at Portsmouth in August 1905 with the revolution seven months old, the Black Sea fleet mutinying and the countryside burning, and accepted terms — Korea, the Liaodong lease, southern Sakhalin — that a government secure at home would have gone on fighting rather than sign. The claim is that the revolution is why Russia settled in 1905 rather than in 1906, not that it is why Russia lost: Japan was near the end of its credit and Roosevelt was pressing both sides, and either would have brought the war to an end in time.",
+  "dispute": null
+}
