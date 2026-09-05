@@ -139,6 +139,37 @@ test('writeIndex removes stale hashed files and the result is fresh', async () =
   }
 });
 
+// The citers are a directory, so writeIndex has to create one, prune inside
+// it, and take away a whole directory the build no longer names — none of
+// which the flat index ever asked of it (h3a-brief, A6).
+test('writeIndex creates, prunes and removes a hashed directory', async () => {
+  const dir = await mkdtemp(path.join(tmpdir(), 'atlas-nested-'));
+  try {
+    const built = { files: { 'manifest.json': '{}\n', 'citers-aaaaaaaaaaaa/one.json': '[1]\n', 'citers-aaaaaaaaaaaa/two.json': '[2]\n' } };
+    await writeIndex(dir, built);
+    assert.deepEqual(await readIndex(dir), built.files);
+    assert.deepEqual(compareIndex(await readIndex(dir), built), []);
+
+    // A file inside the named directory that the build does not name.
+    await writeFile(path.join(dir, 'index', 'citers-aaaaaaaaaaaa', 'gone.json'), '[]\n');
+    assert.deepEqual(compareIndex(await readIndex(dir), built), ['stale citers-aaaaaaaaaaaa/gone.json']);
+    await writeIndex(dir, built);
+    assert.deepEqual(compareIndex(await readIndex(dir), built), []);
+
+    // And a whole directory from an earlier build, which is what a changed
+    // citation makes: the hash is over the directory, so the name changes.
+    const older = { files: { ...built.files } };
+    delete older.files['citers-aaaaaaaaaaaa/one.json'];
+    delete older.files['citers-aaaaaaaaaaaa/two.json'];
+    older.files['citers-bbbbbbbbbbbb/one.json'] = '[3]\n';
+    await writeIndex(dir, older);
+    assert.deepEqual(await readIndex(dir), older.files);
+    assert.deepEqual((await readdir(path.join(dir, 'index'))).sort(), ['citers-bbbbbbbbbbbb', 'manifest.json']);
+  } finally {
+    await rm(dir, { recursive: true, force: true });
+  }
+});
+
 test('the committed fixture index is fresh', async () => {
   const built = await buildIndex(FIXTURE_DATA);
   assert.deepEqual(compareIndex(await readIndex(FIXTURE_DATA), built), []);

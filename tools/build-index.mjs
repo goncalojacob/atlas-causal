@@ -8,7 +8,7 @@
 //   node tools/build-index.mjs [--data <dir>]
 
 import { createHash } from 'node:crypto';
-import { mkdir, readdir, readFile, unlink, writeFile } from 'node:fs/promises';
+import { mkdir, readdir, readFile, rmdir, unlink, writeFile } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
@@ -20,7 +20,13 @@ import { readRecords, readRegions, readRegionPolygons, readLandFiles, readPresen
 
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 export const DEFAULT_DATA = path.join(ROOT, 'data');
-const HASHED = /^(topology|sources|review)-[0-9a-f]{12}\.json$/;
+// The immutable files, named by content, and the one immutable *directory*:
+// the citers are a file per source, so a hash each would put a line per
+// source in a manifest that is fetched no-store on every page load, and
+// unhashed names would break the `immutable` convention the whole index is
+// served under (h3a-brief, A7). One hash over the directory buys both.
+const HASHED = /^(spine|search|sources|review|topology)-[0-9a-f]{12}\.json$/;
+const HASHED_DIR = /^citers-[0-9a-f]{12}$/;
 
 // Deep copy with keys sorted by UTF-16 code unit (Array.prototype.sort's
 // default), never by locale.
@@ -127,12 +133,22 @@ export async function buildIndex(dataDir = DEFAULT_DATA) {
   };
 }
 
+// One level deep, keyed by the path relative to data/index/, so that a citer
+// file is compared like any other: rule 16 is what stops a stale index
+// reaching the deploy, and a directory it could not see would be a hole in it.
 export async function readIndex(dataDir = DEFAULT_DATA) {
   const dir = path.join(dataDir, 'index');
   const files = {};
   if (!existsSync(dir)) return files;
-  for (const name of (await readdir(dir)).sort()) {
-    if (name === 'manifest.json' || HASHED.test(name)) files[name] = await readFile(path.join(dir, name), 'utf8');
+  for (const entry of (await readdir(dir, { withFileTypes: true })).sort((a, b) => (a.name < b.name ? -1 : a.name > b.name ? 1 : 0))) {
+    if (entry.isDirectory()) {
+      if (!HASHED_DIR.test(entry.name)) continue;
+      for (const name of (await readdir(path.join(dir, entry.name))).sort()) {
+        files[`${entry.name}/${name}`] = await readFile(path.join(dir, entry.name, name), 'utf8');
+      }
+    } else if (entry.name === 'manifest.json' || HASHED.test(entry.name)) {
+      files[entry.name] = await readFile(path.join(dir, entry.name), 'utf8');
+    }
   }
   return files;
 }
@@ -150,14 +166,29 @@ export function compareIndex(existing, built) {
   return problems;
 }
 
+// Everything the fresh build does not name goes, directories included: a
+// citer file for a source that has since lost its last citation would
+// otherwise sit there for ever, served `immutable` under a hash that no
+// longer describes it.
 export async function writeIndex(dataDir, built) {
   const dir = path.join(dataDir, 'index');
   await mkdir(dir, { recursive: true });
-  for (const name of await readdir(dir)) {
-    if (HASHED.test(name) && !Object.hasOwn(built.files, name)) await unlink(path.join(dir, name));
+  for (const entry of await readdir(dir, { withFileTypes: true })) {
+    const full = path.join(dir, entry.name);
+    if (entry.isDirectory()) {
+      if (!HASHED_DIR.test(entry.name)) continue;
+      for (const name of await readdir(full)) {
+        if (!Object.hasOwn(built.files, `${entry.name}/${name}`)) await unlink(path.join(full, name));
+      }
+      if ((await readdir(full)).length === 0) await rmdir(full);
+    } else if (HASHED.test(entry.name) && !Object.hasOwn(built.files, entry.name)) {
+      await unlink(full);
+    }
   }
   for (const [name, text] of Object.entries(built.files)) {
-    await writeFile(path.join(dir, name), text, 'utf8');
+    const file = path.join(dir, ...name.split('/'));
+    if (name.includes('/')) await mkdir(path.dirname(file), { recursive: true });
+    await writeFile(file, text, 'utf8');
   }
 }
 
