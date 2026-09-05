@@ -1392,8 +1392,9 @@ still resolves its own URL but is not part of the graph, and counting it
 would make the bibliography disagree with what the atlas draws.
 
 `manifest.json` — never cached — lists schema version, counts (events,
-edges, sources, actors, presences, regions), the hashed file names of the
-topology and sources indexes (served `immutable`), the set of `roles` in
+edges, sources, actors, presences, regions), the hashed names of the spine,
+the search shard, the citer directory and the topology, review and sources
+indexes (all served `immutable`), the set of `roles` in
 use, land files with their epochs, and the presence shards with their year
 ranges. The topology carries every presence **without its coordinates**, so
 an actor's territory over time is a list the panel draws without fetching
@@ -1414,6 +1415,58 @@ which event represents a cluster of overlapping marks and which clusters
 earn a label at high zoom. An editorial override is reserved as
 `prominence` in the extension-points table; until that exists, nobody can
 make a mark bigger except by giving it more edges and more actors.
+
+#### The spine, the search shard and the citers
+
+Since H3a-1 the build emits four things **beside** the topology, which is
+unchanged; the pages move over one at a time in H3b.
+
+| File | Read by | Carries |
+|---|---|---|
+| `spine-<hash>.json` | every page, whole | every record: `id`, `kind`, `status`, `aliases`, `supersededBy`, `wikidata`, `wikipedia`, and the per-kind fields below |
+| `search-<hash>.json` | the search box, contribute, review | per active record: `id`, `kind`, `label`, `detail`, `terms` (folded), `variants`, `weight`, `when`, `status` |
+| `citers-<hash>/<source-id>.json` | the source card, `retractionPlan` | the rows that cite that one source |
+| `sources-<hash>.json` | `sources.html`, the source card | every bibliographic field and `citationCount` |
+
+| Kind | And |
+|---|---|
+| event | `title`, `when` (verbatim), `place`, `region`, `weight`, `actors` as `[{ actor, role }]`, `citesCount` |
+| edge | `[from, to, type, confidence, status]` — five elements, the id synthesised as `from--to--type` on load |
+| actor | `name`, `names`, `actorType`, `when`, `citesCount` |
+| place | `name`, `names`, `where`, `region`, `citesCount` |
+| presence | `actor`, `when`, `geometry.key`, `dependencyOf`, `dependencyKind`, `capital`, `confidence` |
+| relation | `from`, `to`, `type`, `when`, `note` |
+| narrative | `title`, `summary`, `authors`, `window`, `steps` (refs only) |
+
+Four things the spine does **not** do. It never reduces `when` to a pair of
+years: fourteen readers want the object, two of them validator rules that run
+in the browser, and astronomical years are for arithmetic — `formatYear`
+takes historians' years and would print 1 BCE as "0". It carries no
+`regionMethod` and no `presenceType`, because nothing draws either. It holds
+no prose, not even a first sentence: every card fetches the record for its
+summary, and derived prose in the index is a leak. And **there are no period
+shards**: measured on this dataset the whole shard payload was 288.6 KB,
+less than one shard's own budget, while `eventsByActor`, an actor's capitals
+and a selected event are all unwindowed — so the split cost four cards and
+bought nothing. The mechanism is reserved here for a per-event field that is
+genuinely large, against a measurement.
+
+Two counts with two names, because they mean opposite things:
+**`citesCount`**, on an active event, actor or place in the spine, is how
+many citations that record *makes* — the number three cards print beside it.
+**`citationCount`**, on a source, is how many records cite it. A tombstone
+carries neither: it keeps `title`, `when`, `place`, `region`, `wikidata`,
+`status`, `supersededBy`, `aliases` and its kind's own label, which is what a
+retracted card's head and meta line are built from, and nothing else.
+
+The citers are one hashed **directory**, not a hashed file each: `manifest.json`
+is fetched `no-store` on every page load, and a line per source would be
+200 KB of it at twenty thousand sources, while unhashed names would break the
+`immutable` convention. The hash is over the concatenation of every citer
+file's bytes in id order and the directory is named once, as `files.citers`.
+A source nothing cites gets no file; its `citationCount` says so. `readIndex`
+walks `data/index/` one level deep and `writeIndex` removes any file or
+directory a fresh build does not name, so rule 16 covers the directory too.
 
 ### Narrative ●
 
@@ -1720,6 +1773,42 @@ Pages site soft-capped at 1 GB, 100 GB/month bandwidth, 10 deploys/hour.
 index at that size would be 5–15 MB, which is why text is not in the index.
 SVG holds 5,000 marks comfortably; at 50,000 with pan/zoom it stutters, and
 the fix is rendering only the visible window, not a map library.
+
+Health review B measured the running site on synthetic datasets: at 20,000
+events a page takes 33 MB of heap, 0.7 s per click and 2 s per wheel notch;
+at 100,000 the validator takes half an hour. The graph queries themselves —
+consequences, convergence, horizon — are fine at every size; the cost is in
+loading and drawing.
+
+**What H3a-1 measured**, on this dataset (329 events of which 137 active,
+161 edges, 412 actors, 710 presences, 34 sources), raw and gzipped:
+
+| File | Raw | Gzipped |
+|---|---|---|
+| `topology` (today's first paint) | 905.5 KB | 65.4 KB |
+| `sources`, with citer rows (today's first paint) | 328.8 KB | 22.7 KB |
+| `spine` | 791.4 KB | 61.0 KB |
+| `sources`, without citer rows (measured, not yet emitted) | 29.4 KB | 3.7 KB |
+| `search` | 217.7 KB | 22.4 KB |
+| `citers/`, 33 files | 255.7 KB | 18.4 KB |
+
+Once H3b has moved the pages over, first paint goes from 1,240 KB to 827 KB
+raw and from 88.1 KB to 64.7 KB gzipped — and gzipped is what Pages serves,
+so the saving over the wire is about 23 KB, not the 413 KB the raw numbers
+suggest. Per record the spine costs 694 B per active event, 368 B per
+tombstone, 342 B per actor, 539 B per presence and 124 B per edge tuple.
+
+Two things that should be said rather than dressed up. The plan projected a
+522 KB spine and a 2.5× improvement; the measured spine is 791.4 KB. And
+almost all of the saving is the citer rows leaving the sources index: the
+file every page loads **whole** goes from 905.5 KB to 791.4 KB, which is
+1.14×, so the wall this project runs into — the whole graph in memory,
+because convergence cannot be answered from a window — barely moves. The
+next real lever is the presences: 373.8 KB, 47 % of the spine, and nothing
+needs them until the territory layer draws. Whether they leave the
+whole-corpus set for a per-period presence index is H4a's question. The
+`citers/` directory is not first paint at all — it is fetched one source at
+a time, and `cshapes-2-0` alone is 127.3 KB of the 255.7 KB.
 
 ## Milestones
 
