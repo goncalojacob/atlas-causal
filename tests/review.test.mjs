@@ -15,7 +15,9 @@ import {
   normalizeReviewer, reviewerProblems, signRecord, retractRecord, retractionPlan, bundleOf, carriedReason,
 } from '../src/review/sign.js';
 import { endpointFor, putBundle, saveBundle } from '../src/review/save.js';
-import { claim, messageOf, choicesFrom } from '../src/review/editor.js';
+import { claim, messageOf, regionChoices } from '../src/review/editor.js';
+import { pickerIndex } from '../src/contribute/picker.js';
+import { search } from '../src/search.js';
 import { buildTopology, validate } from '../src/validate/core.js';
 import { createRegionDeriver } from '../src/util/geo.js';
 import { readRecords } from '../tools/lib/read.mjs';
@@ -325,22 +327,40 @@ test('an error finds the input that caused it, or the record', () => {
 test('the editor offers what is active in the atlas, and says when a reference is not', () => {
   const topology = {
     events: [
-      { id: 'b-event', title: 'Second', status: 'active' },
-      { id: 'a-event', title: 'First', status: 'active' },
-      { id: 'gone', title: 'Retracted', status: 'retracted' },
+      { id: 'b-event', title: 'Second', status: 'active', place: 'a-place', when: { start: 1911, end: 1911 } },
+      { id: 'a-event', title: 'First', status: 'active', when: { start: 1910, end: 1910 } },
+      { id: 'gone', title: 'Retracted second', status: 'retracted' },
     ],
     edges: [{ id: 'a-event--b-event--caused', from: 'a-event', to: 'b-event', type: 'caused', status: 'active' }],
     sources: [{ id: 'a-source', title: 'A work', status: 'active' }],
     actors: [{ id: 'an-actor', name: 'Somebody', actorType: 'person', status: 'active' }],
-    places: [{ id: 'a-place', name: 'Somewhere', status: 'active' }],
+    places: [{ id: 'a-place', name: 'Somewhere', names: ['Somewhere'], status: 'active' }],
     regions: [{ id: 'europe', label: 'Europe' }],
   };
-  const options = choicesFrom(topology);
-  assert.deepEqual(options('events').map((o) => o.value), ['', 'a-event', 'b-event'], 'by name, and a null choice first');
-  assert.ok(!options('events').some((o) => o.value === 'gone'), 'a retracted record is not offered');
-  assert.deepEqual(options('records').map((o) => o.label).slice(-1), ['First — caused → Second']);
-  assert.deepEqual(options('places').map((o) => o.value), ['', 'a-place']);
-  assert.deepEqual(options('regions').map((o) => o.value), ['', 'europe']);
-  assert.deepEqual(options('actors').map((o) => o.label), ['— choose an actor —', 'Somebody — person']);
-  assert.deepEqual(options('nothing'), []);
+  const index = pickerIndex({ topology });
+  const found = (name, query) => search(index.entriesOf(name), query).groups.flatMap((g) => g.items).map((i) => i.id);
+
+  assert.deepEqual(found('events', 'second'), ['b-event'], 'a retracted record is not offered');
+  assert.deepEqual(found('places', 'somewhere'), ['a-place']);
+  assert.deepEqual(found('actors', 'somebody'), ['an-actor']);
+  assert.deepEqual(found('sources', 'a work'), ['a-source']);
+  // A step points at an event or at the link between two, and a link is
+  // found by the events it runs between.
+  assert.deepEqual(found('records', 'first'), ['a-event', 'a-event--b-event--caused']);
+  assert.equal(index.find('records', 'a-event--b-event--caused').label, 'First — caused → Second');
+
+  // What is shown beside a hit: the years, the place, and how much of the
+  // atlas already hangs on the record.
+  assert.deepEqual(index.describe(index.find('events', 'b-event')), { when: '1911', place: 'Somewhere', degree: 1 });
+  // And what the record is already linked to, which is the other half of
+  // knowing whether it is the one meant.
+  assert.deepEqual(index.linksOf('event', 'b-event'), [{ way: 'in', type: 'caused', other: 'First' }]);
+  assert.deepEqual(index.linksOf('actor', 'an-actor'), []);
+
+  // A reference to something the atlas no longer has is not quietly swapped
+  // for something else: it is not found, and the picker says so.
+  assert.equal(index.find('events', 'gone'), null);
+
+  // The lanes are the one reference field that stays a `<select>`.
+  assert.deepEqual(regionChoices(topology).map((o) => o.value), ['', 'europe']);
 });

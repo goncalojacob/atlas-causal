@@ -13,6 +13,7 @@ import { createValidator } from '../validate/schema.js';
 import { ACTOR_TYPES, EDGE_TYPES, RELATION_TYPES, buildUniverse } from '../validate/rules.js';
 import { CONTAINER_KINDS } from '../citation.js';
 import { KIND, CONTRIBUTED_KINDS, listsOf } from '../kinds.js';
+import { articleTitles } from '../wikipedia.js';
 
 export const CONFIDENCE = Object.freeze(['consensus', 'probable', 'disputed']);
 export const SOURCE_TYPES = Object.freeze(['book', 'chapter', 'article', 'thesis', 'primary', 'dataset', 'web']);
@@ -732,8 +733,15 @@ export function applyValues(kind, record, values) {
 
 // --- duplicate search ------------------------------------------------------
 // Transliteration makes duplicate slugs a certainty (finding 5), so the form
-// searches titles, ids and former ids before allowing a new event. Cheap and
-// deterministic on purpose: this is a prompt to look, not a decision.
+// searches before allowing a new record. Cheap and deterministic on purpose:
+// this is a prompt to look, not a decision.
+//
+// It used to search events, and events only: a second Lisbon, a second
+// Salazar or a second edition of one book was not looked for at all, and the
+// one field that settles the question — the Wikidata item both records claim
+// — was not compared (health review A, finding 10; B, finding 6). Every kind
+// is compared now, over every name it can be known by, and an identifier two
+// records share is reported as certainty rather than as resemblance.
 
 const STOPWORDS = new Set(['the', 'of', 'a', 'an', 'and', 'in', 'on', 'at', 'to', 'for', 'by']);
 
@@ -750,39 +758,138 @@ export function words(text) {
   return normalizeText(text).split(' ').filter((w) => w !== '' && !STOPWORDS.has(w));
 }
 
-export function similarity(a, b) {
-  const na = normalizeText(a);
-  const nb = normalizeText(b);
-  if (na === '' || nb === '') return 0;
-  if (na === nb) return 1;
-  const A = new Set(words(a));
-  const B = new Set(words(b));
+
+// A name with the two things comparing it needs, computed once. The scan is
+// over every name of every record of one kind — twenty thousand of them —
+// and normalising both sides again for each pair is most of what that used
+// to cost.
+function readied(name) {
+  const text = normalizeText(name);
+  return { name, text, words: new Set(text.split(' ').filter((w) => w !== '' && !STOPWORDS.has(w))) };
+}
+
+function scoreOf(a, b) {
+  if (a.text === '' || b.text === '') return 0;
+  if (a.text === b.text) return 1;
   let shared = 0;
-  for (const w of A) if (B.has(w)) shared += 1;
-  const union = A.size + B.size - shared;
+  for (const w of a.words) if (b.words.has(w)) shared += 1;
+  const union = a.words.size + b.words.size - shared;
   const jaccard = union === 0 ? 0 : shared / union;
-  if (na.includes(nb) || nb.includes(na)) return Math.max(jaccard, 0.8);
+  // A name inside another name: "Melaka" and "Capture of Melaka" are worth
+  // looking at even where the word counts say otherwise.
+  if (a.text.includes(b.text) || b.text.includes(a.text)) return Math.max(jaccard, 0.8);
   return jaccard;
 }
 
-// candidates: [{ id, title, aliases }] — the topology's events and the ones
-// already in the bundle.
-export function findSimilar(title, candidates, { limit = 5, threshold = 0.34 } = {}) {
+export function similarity(a, b) {
+  return scoreOf(readied(a), readied(b));
+}
+
+// The identifiers that decide the question rather than raise it. Two records
+// claiming one Wikidata item are two records for one thing, whatever they are
+// called; the same goes for an ISBN and for a DOI, which is how the same
+// edition of one book gets entered twice. Folded so that "10.5555/X" and
+// "10.5555/x" are one DOI and a hyphenated ISBN is the ISBN.
+function identifiersOf(record) {
+  const out = [];
+  const text = (v) => (typeof v === 'string' ? v.trim() : '');
+  if (text(record.wikidata)) out.push({ what: 'Wikidata item', value: text(record.wikidata).toUpperCase() });
+  if (text(record.isbn)) out.push({ what: 'ISBN', value: text(record.isbn).replace(/[^0-9Xx]/g, '').toUpperCase() });
+  if (text(record.doi)) out.push({ what: 'DOI', value: text(record.doi).toLowerCase() });
+  return out;
+}
+
+// Everything one record can be recognised by: its title or its names, its
+// former ids, the titles the encyclopedia gives it, its own id, and its
+// identifiers. Built from a record — the atlas's, or one the form has just
+// assembled out of what is in the inputs — so both sides of a comparison are
+// read the same way.
+export function comparableOf(record) {
+  const r = record ?? {};
+  const names = [];
+  const push = (value) => {
+    if (typeof value === 'string' && value.trim() !== '' && !names.includes(value)) names.push(value);
+  };
+  push(r.title);
+  for (const n of Array.isArray(r.names) ? r.names : []) push(n);
+  for (const t of articleTitles(r)) push(t);
+  // The former ids, so typing the id a record used to have finds the record
+  // that owns it.
+  for (const a of Array.isArray(r.aliases) ? r.aliases : []) push(a);
+  const id = typeof r.id === 'string' ? r.id : '';
+  return {
+    id,
+    kind: r.kind ?? null,
+    label: names[0] ?? id,
+    terms: names.map(readied),
+    // The id, kept apart from the names. A name typed here is compared
+    // against the ids in the atlas as well, because a record's title and its
+    // slug drift — the 25 April revolution is filed under
+    // `carnation-revolution-1974` and titled "25 April", and somebody typing
+    // "Carnation Revolution" has to be told it is already here. Two *ids* are
+    // never compared with each other: every id is a slug of the title beside
+    // it, so that comparison is the titles again with the spaces taken out,
+    // and it says "similar" about half the atlas.
+    against: id === '' ? names.map(readied) : [...names.map(readied), readied(id)],
+    identifiers: identifiersOf(r),
+  };
+}
+
+// The atlas's records as comparables, by kind and built once: a form that
+// rebuilt this per keystroke would be doing the whole corpus's normalising
+// again for every letter. `local` — the records in the bundle being written
+// — is not in here, because it changes with every keystroke and is three
+// records long.
+export function comparableIndex(topology = {}) {
+  const byKind = new Map();
+  const add = (kind, list) => {
+    const rows = [];
+    for (const record of list ?? []) {
+      if (record?.status && record.status !== 'active') continue;
+      rows.push(comparableOf({ ...record, kind }));
+    }
+    byKind.set(kind, rows);
+  };
+  add('event', topology.events);
+  add('actor', topology.actors);
+  add('place', topology.places);
+  add('source', topology.sources);
+  add('narrative', topology.narratives);
+  return byKind;
+}
+
+// The near-matches for one record, most certain first. An edge and a
+// relation are not compared: their identity is their two ends and their type,
+// and rule 2 already refuses a second one under the same id.
+export const NO_DUPLICATES = Object.freeze(['edge', 'relation']);
+
+export function findDuplicates(subject, candidates, { limit = 5, threshold = 0.34 } = {}) {
+  if (!subject || NO_DUPLICATES.includes(subject.kind)) return [];
   const found = [];
   for (const c of candidates ?? []) {
+    if (c.id === subject.id) continue;
+    const same = subject.identifiers.find((i) => c.identifiers.some((j) => j.what === i.what && j.value === i.value));
+    if (same) {
+      found.push({ id: c.id, kind: c.kind, label: c.label, matched: same.value, why: `the same ${same.what}`, score: 1, certain: true });
+      continue;
+    }
     let score = 0;
     let matched = null;
-    for (const name of [c.title, c.id, ...(c.aliases ?? [])]) {
-      const s = similarity(title, name);
-      if (s > score) {
-        score = s;
-        matched = name;
+    for (const mine of subject.terms) {
+      for (const theirs of c.against) {
+        const s = scoreOf(mine, theirs);
+        if (s > score) {
+          score = s;
+          matched = theirs.name;
+        }
       }
     }
-    if (score >= threshold) found.push({ id: c.id, title: c.title ?? c.id, matched, score });
+    if (score >= threshold) {
+      found.push({ id: c.id, kind: c.kind, label: c.label, matched, why: 'a similar name', score, certain: false });
+    }
   }
   return found
-    .sort((a, b) => b.score - a.score || (a.id < b.id ? -1 : a.id > b.id ? 1 : 0))
+    .sort((a, b) => Number(b.certain) - Number(a.certain) || b.score - a.score || (a.id < b.id ? -1 : a.id > b.id ? 1 : 0))
     .slice(0, limit);
 }
 
@@ -830,11 +937,15 @@ export function validateBundle(bundle, topology, schemas, reuse = null) {
   return { errors, warnings, ok: errors.length === 0 && everythingCited(bundle) };
 }
 
-// What validateBundle can be handed instead of building it again. Built once
-// per page, from the atlas the page loaded; both halves are pure and neither
-// depends on the record under edit.
+// What validateBundle can be handed instead of building it again, and what
+// the duplicate search reads. Built once per page, from the atlas the page
+// loaded; all three are pure and none depends on the record under edit.
 export function preparedFor(topology, schemas) {
-  return { universe: buildUniverse(topology), validator: createValidator(schemas) };
+  return {
+    universe: buildUniverse(topology),
+    validator: createValidator(schemas),
+    comparables: comparableIndex(topology),
+  };
 }
 
 // Rule 6 says the same thing, but the submit control hangs on it, so it is

@@ -11,8 +11,10 @@
 
 import { html } from '../util/dom.js';
 import {
-  FIELDS, CITATION_LISTS, ACTOR_LISTS, STEP_LISTS, emptyValues, buildBundle, slugify, findSimilar, validateBundle, preparedFor,
+  FIELDS, CITATION_LISTS, ACTOR_LISTS, STEP_LISTS, emptyValues, buildBundle, slugify,
+  comparableOf, findDuplicates, NO_DUPLICATES, validateBundle, preparedFor,
 } from './bundle.js';
+import { createPicker, pickerIndex, kindsFor } from './picker.js';
 import { reorderControls, refreshAll } from './reorder.js';
 import { submitBundle } from './submit.js';
 import { previewHtml } from '../entry/preview.js';
@@ -53,19 +55,31 @@ function claim(fields, path) {
 // empty year is that none of the alternatives matched, which is true and
 // useless. Otherwise, when a oneOf failed, the alternative that got past the
 // first key is the one the contributor meant, so report what it objected to.
+// A picker's input holds the name that was typed, not the id that was
+// chosen, so "is this field empty" is a question for the picker.
+function isEmpty(view) {
+  if (view?.picker) return view.picker.value() === '';
+  return Boolean(view?.input) && view.input.value.trim() === '';
+}
+
 function messageOf(error, view) {
-  if (view?.field?.required && view.input && view.input.value.trim() === '') return 'required';
+  if (view?.field?.required && isEmpty(view)) return 'required';
   const deeper = (error.alternatives ?? []).find((alt) => alt.some((e) => (e.path ?? '').length > (error.path ?? '').length));
   if (deeper) return deeper.map((e) => e.message).join('; ');
   return error.message;
 }
 
-export function createForm(container, { topology, schemas, template, fixtures = false, prepared = null } = {}) {
+export function createForm(container, {
+  topology, schemas, template, fixtures = false, prepared = null, searchEntries = null, initial = null,
+} = {}) {
   // The indexed universe and the compiled schema set, once for the life of
   // the form rather than once per keystroke (health review B, finding 27).
   const reuse = prepared ?? preparedFor(topology, schemas);
+  // What every picker on the page searches, built once for the same reason.
+  // `searchEntries` is the shard the build folded; without one the index
+  // folds the topology itself, which is what the fixtures do.
+  const pickers = pickerIndex({ topology, entries: searchEntries });
   const entries = [];
-  const dynamic = new Set();
   const state = { author: '' };
 
   const root = html('div', { class: 'contrib' });
@@ -119,94 +133,47 @@ export function createForm(container, { topology, schemas, template, fixtures = 
   root.appendChild(submitRow);
   container.appendChild(root);
 
-  // --- options that depend on what exists --------------------------------
-  function eventChoices() {
-    const seen = new Map();
-    for (const e of topology.events ?? []) if (e.status === 'active') seen.set(e.id, e.title ?? e.id);
-    for (const entry of entries) {
-      if (entry.kind !== 'event') continue;
-      const id = (entry.values.id ?? '').trim();
-      if (id) seen.set(id, `${entry.values.title || id} — in this bundle`);
+  // --- the pickers --------------------------------------------------------
+  //
+  // The lane is the one reference field that stays a `<select>`: five
+  // regions, a closed list, and nothing to type at. Everything else points
+  // into a corpus and is a picker (picker.js).
+  function regionSelect(select) {
+    select.textContent = '';
+    select.appendChild(html('option', { value: '' }, '— derived from the place —'));
+    for (const region of topology.regions ?? []) {
+      select.appendChild(html('option', { value: region.id }, region.label ?? region.id));
     }
-    return [...seen].sort((a, b) => (a[1] < b[1] ? -1 : a[1] > b[1] ? 1 : 0)).map(([value, label]) => ({ value, label }));
   }
 
-  function sourceChoices() {
-    const seen = new Map();
-    for (const s of topology.sources ?? []) if (s.status === 'active') seen.set(s.id, `${s.id} — ${s.title ?? ''}`);
+  // The rows of this bundle a picker offers before the atlas's. A record
+  // being written here has no id until its title has one, which is exactly
+  // when it becomes referenceable.
+  function bundleRows(name) {
+    const kinds = kindsFor(name);
+    const rows = [];
     for (const entry of entries) {
-      if (entry.kind !== 'source') continue;
+      if (!kinds.includes(entry.kind)) continue;
       const id = (entry.values.id ?? '').trim();
-      if (id) seen.set(id, `${id} — in this bundle`);
-    }
-    return [...seen].sort((a, b) => (a[0] < b[0] ? -1 : 1)).map(([value, label]) => ({ value, label }));
-  }
-
-  function actorChoices() {
-    const seen = new Map();
-    for (const a of topology.actors ?? []) if (a.status === 'active') seen.set(a.id, `${a.name ?? a.id} — ${a.actorType ?? ''}`);
-    for (const entry of entries) {
-      if (entry.kind !== 'actor') continue;
-      const id = (entry.values.id ?? '').trim();
-      if (id) seen.set(id, `${(entry.values.names ?? '').split(';')[0].trim() || id} — in this bundle`);
-    }
-    return [...seen].sort((a, b) => (a[1] < b[1] ? -1 : a[1] > b[1] ? 1 : 0)).map(([value, label]) => ({ value, label }));
-  }
-
-  function placeChoices() {
-    const seen = new Map();
-    for (const p of topology.places ?? []) if (p.status === 'active') seen.set(p.id, p.name ?? p.id);
-    for (const entry of entries) {
-      if (entry.kind !== 'place') continue;
-      const id = (entry.values.id ?? '').trim();
-      if (id) seen.set(id, `${(entry.values.names ?? '').split(';')[0].trim() || id} — in this bundle`);
-    }
-    return [...seen].sort((a, b) => (a[1] < b[1] ? -1 : a[1] > b[1] ? 1 : 0)).map(([value, label]) => ({ value, label }));
-  }
-
-  // A step of a narrative points at an event or at a link, so the two are
-  // offered in one list, links after events and each named by its ends.
-  function recordChoices() {
-    const rows = eventChoices();
-    const titleOf = (id) => (topology.events ?? []).find((e) => e.id === id)?.title ?? id;
-    for (const edge of topology.edges ?? []) {
-      if (edge.status !== 'active') continue;
-      rows.push({ value: edge.id, label: `${titleOf(edge.from)} — ${edge.type} → ${titleOf(edge.to)}` });
+      if (!id) continue;
+      const titleKey = TITLE_KEY[entry.kind];
+      const written = titleKey ? String(entry.values[titleKey] ?? '').split(';')[0].trim() : '';
+      rows.push({ kind: entry.kind, id, label: written || id });
     }
     return rows;
   }
 
-  function regionChoices() {
-    return (topology.regions ?? []).map((r) => ({ value: r.id, label: r.label ?? r.id }));
-  }
-
-  function optionsFor(name) {
-    if (name === 'events') return [{ value: '', label: '— choose an event —' }, ...eventChoices()];
-    if (name === 'sources') return [{ value: '', label: '— choose a source —' }, ...sourceChoices()];
-    if (name === 'regions') return [{ value: '', label: '— derived from the place —' }, ...regionChoices()];
-    if (name === 'actors') return [{ value: '', label: '— choose an actor —' }, ...actorChoices()];
-    if (name === 'places') return [{ value: '', label: '— no place: timeline only —' }, ...placeChoices()];
-    if (name === 'records') return [{ value: '', label: '— choose an event or a link —' }, ...recordChoices()];
-    return [];
-  }
-
-  function fill(select, name) {
-    const chosen = select.value;
-    select.textContent = '';
-    for (const option of optionsFor(name)) {
-      select.appendChild(html('option', { value: option.value }, option.label));
-    }
-    select.value = chosen;
-    // The chosen id disappeared (its entry was removed or renamed): say so
-    // rather than silently selecting something else.
-    if (select.value !== chosen) {
-      select.appendChild(html('option', { value: chosen }, `${chosen} — no longer in the bundle`));
-      select.value = chosen;
-    }
-  }
-
-  function refreshOptions() {
-    for (const { select, name } of dynamic) fill(select, name);
+  function pickerFor(name, { value, label, id: domId, onChange }) {
+    return createPicker({
+      name,
+      index: pickers,
+      value,
+      label,
+      id: domId,
+      emptyLabel: name === 'places' ? 'no place: timeline only' : 'nothing chosen yet',
+      local: () => bundleRows(name),
+      onChange,
+    });
   }
 
   // --- entries -----------------------------------------------------------
@@ -215,16 +182,13 @@ export function createForm(container, { topology, schemas, template, fixtures = 
     const entry = { key: `e${sequence}`, kind, values, idTouched: false, acknowledged: false, fields: new Map(), previews: [] };
     entries.push(entry);
     entriesEl.appendChild(renderEntry(entry));
-    refreshOptions();
     return entry;
   }
 
   function removeEntry(entry) {
     const at = entries.indexOf(entry);
     if (at >= 0) entries.splice(at, 1);
-    for (const d of [...dynamic]) if (entry.node.contains(d.select)) dynamic.delete(d);
     entry.node.remove();
-    refreshOptions();
     refresh();
   }
 
@@ -242,7 +206,11 @@ export function createForm(container, { topology, schemas, template, fixtures = 
     entry.errorEl = html('ul', { class: 'entry-errors', hidden: 'hidden' });
     node.appendChild(entry.errorEl);
 
-    if (entry.kind === 'event') {
+    // Every kind that can be entered twice gets the near-match box: an actor,
+    // a place and a source are as easy to duplicate as an event, and were not
+    // looked for at all. An edge and a relation are their two ends and their
+    // type, and a second one under that id is rule 2's to refuse.
+    if (!NO_DUPLICATES.includes(entry.kind)) {
       entry.similarEl = html('div', { class: 'similar', hidden: 'hidden' });
       node.appendChild(entry.similarEl);
     }
@@ -260,15 +228,35 @@ export function createForm(container, { topology, schemas, template, fixtures = 
     const wrap = html('div', { class: `field field-${field.key}` });
     wrap.appendChild(html('label', { for: id }, field.required ? `${field.label} *` : field.label));
 
+    // A field that points into the atlas is a picker, and the picker's own
+    // input is the field's: an error at this path still lands on something a
+    // contributor can see and type into.
+    if (field.optionsFrom && field.optionsFrom !== 'regions') {
+      const picker = pickerFor(field.optionsFrom, {
+        value: entry.values[field.key] ?? '',
+        label: field.label,
+        id,
+        onChange: (chosen) => {
+          entry.values[field.key] = chosen;
+          applyVisibility(entry);
+          refresh();
+        },
+      });
+      wrap.appendChild(picker.root);
+      if (field.hint) wrap.appendChild(html('p', { class: 'hint' }, field.hint));
+      const pickerError = html('p', { class: 'field-error', hidden: 'hidden' });
+      wrap.appendChild(pickerError);
+      entry.fields.set(field.path, { wrap, input: picker.input, picker, error: pickerError, field });
+      return wrap;
+    }
+
     let input;
     if (field.input === 'textarea') {
       input = html('textarea', { id, rows: '4' });
     } else if (field.input === 'select') {
       input = html('select', { id });
-      if (field.optionsFrom) {
-        dynamic.add({ select: input, name: field.optionsFrom });
-        fill(input, field.optionsFrom);
-      } else {
+      if (field.optionsFrom) regionSelect(input);
+      else {
         for (const option of field.options) {
           const label = option === '' ? (field.required ? '— choose —' : '— none —') : option;
           input.appendChild(html('option', { value: option }, label));
@@ -297,7 +285,6 @@ export function createForm(container, { topology, schemas, template, fixtures = 
         if (idInput) idInput.value = entry.values.id;
       }
       applyVisibility(entry);
-      refreshOptions();
       refresh();
     });
     wrap.appendChild(input);
@@ -320,8 +307,8 @@ export function createForm(container, { topology, schemas, template, fixtures = 
   }
 
   // The actors of an event: a repeatable row of an actor and the role it
-  // played. The select is the search the brief asks for — it lists every
-  // active actor in the atlas and every actor in this bundle, by name.
+  // played. The actor is chosen with the picker, which is the search the
+  // brief asks for — the atlas's actors and this bundle's, by name.
   function renderActors(entry, list) {
     const wrap = html('div', { class: 'field actors' });
     const head = html('div', { class: 'citations-head' });
@@ -337,13 +324,13 @@ export function createForm(container, { topology, schemas, template, fixtures = 
 
     const addRowFor = (item) => {
       const row = html('li', { class: 'citation-row' });
-      const select = html('select', { 'aria-label': 'Actor' });
-      dynamic.add({ select, name: 'actors' });
-      fill(select, 'actors');
-      select.value = item.actor ?? '';
-      select.addEventListener('input', () => {
-        item.actor = select.value;
-        refresh();
+      const picker = pickerFor('actors', {
+        value: item.actor ?? '',
+        label: 'Actor',
+        onChange: (chosen) => {
+          item.actor = chosen;
+          refresh();
+        },
       });
       const role = html('input', { type: 'text', placeholder: 'role: leader, signatory, deposed', 'aria-label': 'Role' });
       role.value = item.role ?? '';
@@ -355,11 +342,10 @@ export function createForm(container, { topology, schemas, template, fixtures = 
       drop.addEventListener('click', () => {
         const at = entry.values[list.key].indexOf(item);
         if (at >= 0) entry.values[list.key].splice(at, 1);
-        for (const d of [...dynamic]) if (d.select === select) dynamic.delete(d);
         row.remove();
         refresh();
       });
-      row.append(select, role, drop);
+      row.append(picker.root, role, drop);
       rows.appendChild(row);
     };
 
@@ -396,13 +382,13 @@ export function createForm(container, { topology, schemas, template, fixtures = 
 
     const addRowFor = (item) => {
       const row = html('li', { class: 'citation-row step-row' });
-      const select = html('select', { 'aria-label': 'Event or link' });
-      dynamic.add({ select, name: 'records' });
-      fill(select, 'records');
-      select.value = item.ref ?? '';
-      select.addEventListener('input', () => {
-        item.ref = select.value;
-        refresh();
+      const picker = pickerFor('records', {
+        value: item.ref ?? '',
+        label: 'Event or link',
+        onChange: (chosen) => {
+          item.ref = chosen;
+          refresh();
+        },
       });
       const text = html('textarea', { rows: '3', placeholder: 'why this step follows, in your own words', 'aria-label': 'Step text' });
       text.value = item.text ?? '';
@@ -414,12 +400,11 @@ export function createForm(container, { topology, schemas, template, fixtures = 
       drop.addEventListener('click', () => {
         const at = entry.values[list.key].indexOf(item);
         if (at >= 0) entry.values[list.key].splice(at, 1);
-        for (const d of [...dynamic]) if (d.select === select) dynamic.delete(d);
         row.remove();
         refreshAll(rows, items);
         refresh();
       });
-      row.append(select, text, reorderControls({ rows, row, item, items, onMove: refresh }), drop);
+      row.append(picker.root, text, reorderControls({ rows, row, item, items, onMove: refresh }), drop);
       rows.appendChild(row);
       refreshAll(rows, items);
     };
@@ -450,13 +435,13 @@ export function createForm(container, { topology, schemas, template, fixtures = 
 
     const addRowFor = (citation) => {
       const row = html('li', { class: 'citation-row' });
-      const select = html('select', { 'aria-label': 'Source' });
-      dynamic.add({ select, name: 'sources' });
-      fill(select, 'sources');
-      select.value = citation.source ?? '';
-      select.addEventListener('input', () => {
-        citation.source = select.value;
-        refresh();
+      const picker = pickerFor('sources', {
+        value: citation.source ?? '',
+        label: 'Source',
+        onChange: (chosen) => {
+          citation.source = chosen;
+          refresh();
+        },
       });
       const locator = html('input', { type: 'text', placeholder: 'locator: ch. 2, p. 41', 'aria-label': 'Locator' });
       locator.value = citation.locator ?? '';
@@ -468,11 +453,10 @@ export function createForm(container, { topology, schemas, template, fixtures = 
       drop.addEventListener('click', () => {
         const at = entry.values[list.key].indexOf(citation);
         if (at >= 0) entry.values[list.key].splice(at, 1);
-        for (const d of [...dynamic]) if (d.select === select) dynamic.delete(d);
         row.remove();
         refresh();
       });
-      row.append(select, locator, drop);
+      row.append(picker.root, locator, drop);
       rows.appendChild(row);
     };
 
@@ -497,28 +481,35 @@ export function createForm(container, { topology, schemas, template, fixtures = 
   }
 
   // --- duplicates --------------------------------------------------------
-  function candidates(entry) {
-    const list = (topology.events ?? []).map((e) => ({ id: e.id, title: e.title, aliases: e.aliases ?? [] }));
-    for (const other of entries) {
-      if (other === entry || other.kind !== 'event') continue;
-      if ((other.values.id ?? '').trim()) list.push({ id: other.values.id.trim(), title: other.values.title, aliases: [] });
+  // The atlas's records of this kind, and the other records of this kind in
+  // the bundle: a contribution that adds Lisbon twice in one bundle is the
+  // same mistake as adding it beside the one that is already there.
+  function candidates(entry, built) {
+    const mine = [];
+    for (const [other, record] of built) {
+      if (other === entry || other.kind !== entry.kind) continue;
+      if ((record.id ?? '').trim()) mine.push(comparableOf(record));
     }
-    return list;
+    return [...(reuse.comparables?.get(entry.kind) ?? []), ...mine];
   }
 
-  function paintSimilar(entry) {
-    if (entry.kind !== 'event') return true;
-    const hits = findSimilar(entry.values.title || entry.values.id, candidates(entry));
+  function paintSimilar(entry, built) {
+    if (!entry.similarEl) return true;
+    const record = built.get(entry);
+    const hits = findDuplicates(comparableOf(record), candidates(entry, built));
     entry.similarEl.textContent = '';
     entry.similarEl.hidden = hits.length === 0;
     if (!hits.length) {
       entry.acknowledged = false;
       return true;
     }
-    entry.similarEl.appendChild(html('p', {}, 'Records with a similar name already exist. Adding a second record for the same thing is the one mistake nothing downstream can undo:'));
+    const certain = hits.some((hit) => hit.certain);
+    entry.similarEl.appendChild(html('p', {}, certain
+      ? 'A record already in the atlas carries one of the identifiers on this one. An identifier names an item, and two records for one item is the one mistake nothing downstream can undo:'
+      : `${KIND_LABEL[entry.kind]} records with a similar name already exist. Adding a second record for the same thing is the one mistake nothing downstream can undo:`));
     const ul = html('ul', {});
     for (const hit of hits) {
-      ul.appendChild(html('li', {}, `${hit.title || hit.id} (${hit.id})${hit.matched && hit.matched !== hit.title ? ` — matched on “${hit.matched}”` : ''}`));
+      ul.appendChild(html('li', {}, `${hit.label || hit.id} (${hit.id}) — ${hit.why}${hit.matched && hit.matched !== hit.label ? `: “${hit.matched}”` : ''}`));
     }
     entry.similarEl.appendChild(ul);
     const label = html('label', { class: 'acknowledge' });
@@ -528,7 +519,7 @@ export function createForm(container, { topology, schemas, template, fixtures = 
       entry.acknowledged = box.checked;
       refresh();
     });
-    label.append(box, document.createTextNode(' I looked: this is a different event from the ones above.'));
+    label.append(box, document.createTextNode(` I looked: this is a different ${entry.kind} from the ones above.`));
     entry.similarEl.appendChild(label);
     return entry.acknowledged;
   }
@@ -564,7 +555,53 @@ export function createForm(container, { topology, schemas, template, fixtures = 
     }
   }
 
-  function refresh() {
+  // The duplicate search runs a moment after the last key rather than on
+  // every one of them. It reads every record of the kind being written —
+  // twenty thousand of them, on the corpus this is built for — and a burst of
+  // typing, a paste or a held-down key is one scan and not eight (health
+  // review B, finding 6). The grace is the search box's, so the page has one
+  // number and not two. Submitting forces the scan first: a control that
+  // hangs on the answer cannot be pressed while the answer is in the air.
+  const GRACE = 120;
+  let pending = null;
+  let acknowledged = true;
+  let lastResult = { errors: [], warnings: [], ok: false };
+
+  function runDuplicates() {
+    if (pending !== null) {
+      clearTimeout(pending);
+      pending = null;
+    }
+    const records = currentBundle().records;
+    const built = new Map(entries.map((entry, i) => [entry, records[i]]));
+    let all = true;
+    for (const entry of entries) all = paintSimilar(entry, built) && all;
+    acknowledged = all;
+  }
+
+  function scheduleDuplicates() {
+    if (pending !== null) clearTimeout(pending);
+    pending = setTimeout(() => {
+      pending = null;
+      runDuplicates();
+      paintSubmit();
+    }, GRACE);
+  }
+
+  // Whether the bundle can be filed, said in the one place both halves reach:
+  // the validation, which is fresh, and the near-matches, which may be a
+  // moment behind.
+  function paintSubmit() {
+    const count = lastResult.errors.length;
+    const ready = lastResult.ok && acknowledged;
+    submitButton.disabled = !ready;
+    submitNote.textContent = ready
+      ? 'The bundle is copied to your clipboard and the issue opens with it filled in. A person reads it before anything is merged.'
+      : !acknowledged && count === 0 ? 'Confirm the near-matches above first.' : '';
+    return ready;
+  }
+
+  function refresh({ now = false } = {}) {
     const bundle = currentBundle();
     const result = validateBundle(bundle, topology, schemas, reuse);
     const byId = new Map();
@@ -609,8 +646,8 @@ export function createForm(container, { topology, schemas, template, fixtures = 
       }
     }
 
-    let acknowledged = true;
-    for (const entry of entries) acknowledged = paintSimilar(entry) && acknowledged;
+    if (now) runDuplicates();
+    else scheduleDuplicates();
 
     reportEl.textContent = '';
     if (loose.length) {
@@ -630,16 +667,13 @@ export function createForm(container, { topology, schemas, template, fixtures = 
     for (const entry of entries) drawPreviews(entry);
 
     previewEl.textContent = JSON.stringify(bundle, null, 2);
-    const ready = result.ok && acknowledged;
-    submitButton.disabled = !ready;
-    submitNote.textContent = ready
-      ? 'The bundle is copied to your clipboard and the issue opens with it filled in. A person reads it before anything is merged.'
-      : !acknowledged && count === 0 ? 'Confirm the near-matches above first.' : '';
+    lastResult = result;
+    const ready = paintSubmit();
     return { bundle, result, ready };
   }
 
   async function submit() {
-    const { bundle, ready } = refresh();
+    const { bundle, ready } = refresh({ now: true });
     if (!ready) return;
     const outcome = await submitBundle(bundle, { template });
     submitNote.textContent = [
@@ -650,9 +684,18 @@ export function createForm(container, { topology, schemas, template, fixtures = 
     ].join(' ');
   }
 
-  addEntry('source');
-  addEntry('event');
-  refresh();
+  // A blank form opens on the two entries a first contribution needs. One
+  // opened from "Edit this record" opens on that record instead, with its
+  // fields already in the inputs and its id in the box the id is typed into:
+  // a correction is the record as it should read, and the shortest way to
+  // write one is to start from how it reads now.
+  if (initial?.length) {
+    for (const { kind, values } of initial) addEntry(kind, values).idTouched = true;
+  } else {
+    addEntry('source');
+    addEntry('event');
+  }
+  refresh({ now: true });
   if (fixtures) root.classList.add('fixtures');
 
   return { root, entries, addEntry, refresh, currentBundle };

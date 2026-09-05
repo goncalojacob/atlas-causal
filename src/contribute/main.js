@@ -2,32 +2,80 @@
 // form. Same shape as src/main.js — load, wire, nothing else — and the same
 // ?fixtures=1 switch, so the form can be exercised before any record exists.
 //
-// The spine and not the search shard, for the pickers as well as for the
-// rules. The corrected spine carries every field either needs — an event's
-// `title` and `aliases` for the duplicate search, an actor's `name` and
-// `actorType`, a place's `name`, a source's `title` — and the form has the
-// whole file in hand anyway, because `checkRules` runs against the whole
-// universe of records and no shard can answer for it (STATUS.md, deviation
-// 223).
+// The spine, because `checkRules` runs against the whole universe of records
+// and no shard can answer for it (STATUS.md, deviation 223), and the search
+// shard beside it, because the pickers scan what the build already folded.
+// Neither replaces the other: the shard is names, the spine is records.
+//
+// `?edit=<kind>/<id>` opens the form on a record that exists — "Edit this
+// record", on every card — and the file is fetched here rather than in the
+// form, which knows nothing about the network.
 
-import { loadAtlas } from '../data.js';
+import { loadAtlas, loadSearchShard } from '../data.js';
 import { loadSchemas } from '../validate/schemas.js';
 import { createForm } from './form.js';
+import { valuesFromRecord } from './bundle.js';
 import { CONTRIBUTION_TEMPLATE, CORRECTION_TEMPLATE } from './submit.js';
+import { KIND_DIRS, CONTRIBUTED_KINDS } from '../kinds.js';
+import { SLUG, EDGE_ID, RELATION_ID } from '../validate/rules.js';
 import { esc } from '../util/esc.js';
 
 const params = new URLSearchParams(window.location.search);
 const fixtures = params.get('fixtures') === '1';
-const correction = params.get('correction') === '1';
+const dataRoot = fixtures ? 'tests/fixtures/data/' : 'data/';
 const mount = document.getElementById('form');
+
+// `<kind>/<id>`, and nothing else: the kind has to be one the form writes and
+// the id has to be an id of that kind. What comes out of this becomes a path
+// in a fetch, so it is checked with the validator's own patterns before it is
+// one and not after — the same three tools/bundle-to-files.mjs checks an
+// incoming id against, for the same reason.
+export function parseEdit(text) {
+  const at = String(text ?? '').indexOf('/');
+  if (at < 0) return null;
+  const kind = text.slice(0, at);
+  const id = text.slice(at + 1);
+  if (!CONTRIBUTED_KINDS.includes(kind)) return null;
+  const pattern = kind === 'edge' ? EDGE_ID : kind === 'relation' ? RELATION_ID : SLUG;
+  return pattern.test(id) ? { kind, id } : null;
+}
+
+const edit = parseEdit(params.get('edit'));
+// An edit is a correction whether or not the link said so: what it produces
+// is a record with an id that already exists, and that is what the correction
+// template accepts.
+const correction = params.get('correction') === '1' || edit !== null;
 
 try {
   const [atlas, schemas] = await Promise.all([
-    loadAtlas({ dataRoot: fixtures ? 'tests/fixtures/data/' : 'data/', landFile: false, regions: false }),
+    loadAtlas({ dataRoot, landFile: false, regions: false }),
     loadSchemas({ root: 'schema/' }),
   ]);
+  const searchEntries = await loadSearchShard({ dataRoot, manifest: atlas.manifest }).catch(() => null);
+
+  // The record being corrected, if the address named one. A record that
+  // cannot be read is not a blank form that silently forgets what was asked
+  // for: the page says which record it could not open.
+  let initial = null;
+  let missing = null;
+  if (edit) {
+    try {
+      const response = await fetch(`${dataRoot}${KIND_DIRS[edit.kind]}/${encodeURIComponent(edit.id)}.json`, { cache: 'no-store' });
+      if (!response.ok) throw new Error(`${response.status}`);
+      const record = await response.json();
+      initial = [{ kind: edit.kind, values: valuesFromRecord(edit.kind, record) }];
+    } catch {
+      missing = `${edit.kind}/${edit.id}`;
+    }
+  }
 
   document.getElementById('fixtures-badge').hidden = !fixtures;
+  if (missing) {
+    mount.appendChild(Object.assign(document.createElement('p'), {
+      className: 'field-error',
+      textContent: `${missing} could not be read; the form below is empty.`,
+    }));
+  }
 
   createForm(mount, {
     // Everything the form offers as a choice and everything a reference in
@@ -41,9 +89,12 @@ try {
       sources: [...atlas.sources.values()],
       actors: [...atlas.actors.values()],
       places: [...atlas.places.values()],
+      narratives: [...(atlas.narratives?.values() ?? [])],
       regions: atlas.regions,
     },
     schemas,
+    searchEntries,
+    initial,
     template: correction ? CORRECTION_TEMPLATE : CONTRIBUTION_TEMPLATE,
     fixtures,
   });

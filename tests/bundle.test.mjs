@@ -5,7 +5,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import {
   FIELDS, CITATION_LISTS, ACTOR_LISTS, STEP_LISTS, emptyValues, slugify, parseBound, buildRecord, buildBundle,
-  findSimilar, similarity, checkBundleShape, validateBundle, everythingCited,
+  comparableOf, comparableIndex, findDuplicates, similarity, checkBundleShape, validateBundle, everythingCited,
   valuesFromRecord, applyValues, wikidataFrom, canMove, moveItem,
 } from '../src/contribute/bundle.js';
 import { buildTopology } from '../src/validate/core.js';
@@ -238,21 +238,70 @@ test('checkBundleShape rejects anything that is not a bundle', () => {
 
 test('the duplicate search finds near-matches before a new event is allowed', () => {
   const candidates = [
-    { id: 'fixture-event-a', title: 'Fixture event A', aliases: ['fixture-event-alpha'] },
-    { id: 'fixture-event-b', title: 'Fixture event B', aliases: [] },
-    { id: 'fixture-event-melaka', title: 'Fixture capture of Melaka', aliases: [] },
-  ];
-  const hits = findSimilar('Fixture capture of Malacca', candidates);
-  assert.equal(hits[0].id, 'fixture-event-melaka');
+    { id: 'fixture-event-a', kind: 'event', title: 'Fixture event A', aliases: ['fixture-event-alpha'] },
+    { id: 'fixture-event-b', kind: 'event', title: 'Fixture event B', aliases: [] },
+    { id: 'fixture-event-melaka', kind: 'event', title: 'Fixture capture of Melaka', aliases: [] },
+  ].map(comparableOf);
+  const asked = (title) => findDuplicates(comparableOf({ id: 'new-one', kind: 'event', title }), candidates);
 
-  assert.equal(findSimilar('Fixture event A', candidates)[0].score, 1);
-  assert.equal(findSimilar('fixture event alpha', candidates)[0].id, 'fixture-event-a');
-  assert.deepEqual(findSimilar('Something entirely unrelated here', candidates), []);
-  assert.deepEqual(findSimilar('', candidates), []);
-  assert.equal(findSimilar('Fixture event', candidates, { limit: 1 }).length, 1);
+  assert.equal(asked('Fixture capture of Malacca')[0].id, 'fixture-event-melaka');
+  assert.equal(asked('Fixture event A')[0].score, 1);
+  assert.equal(asked('fixture event alpha')[0].id, 'fixture-event-a');
+  assert.deepEqual(asked('Something entirely unrelated here'), []);
+  assert.deepEqual(asked(''), []);
+  assert.equal(
+    findDuplicates(comparableOf({ id: 'new-one', kind: 'event', title: 'Fixture event' }), candidates, { limit: 1 }).length,
+    1,
+  );
+  // A record is never its own duplicate: a correction opens the record it is
+  // correcting and would otherwise be told it already exists.
+  assert.ok(findDuplicates(candidates[0], candidates).every((hit) => hit.id !== candidates[0].id));
 
   assert.equal(similarity('Fixture Event A', 'fixture  event   a'), 1);
   assert.equal(similarity('', 'anything'), 0);
+});
+
+test('the duplicate search covers every kind, and an identifier settles it', () => {
+  const index = comparableIndex({
+    events: [{ id: 'fixture-event-a', title: 'Fixture event A', status: 'active' }],
+    places: [
+      { id: 'fixture-place-lisbon', names: ['Lisbon', 'Lisboa'], status: 'active' },
+      { id: 'fixture-place-gone', names: ['Lisbon'], status: 'retracted' },
+    ],
+    actors: [{ id: 'fixture-actor-pide', names: ['PIDE', 'DGS'], wikidata: 'Q100', status: 'active' }],
+    sources: [{ id: 'fixture-source-1', title: 'A fixture book', isbn: '9780000000001', doi: null, status: 'active' }],
+  });
+
+  // A place typed under its other name: an actor, a place and a source were
+  // not compared at all before H6a (health review A, finding 10).
+  const lisboa = findDuplicates(comparableOf({ id: 'lisboa', kind: 'place', names: ['Lisboa'] }), index.get('place'));
+  assert.equal(lisboa.length, 1, 'the retracted namesake is not offered');
+  assert.equal(lisboa[0].id, 'fixture-place-lisbon');
+  assert.equal(lisboa[0].label, 'Lisbon');
+
+  const dgs = findDuplicates(comparableOf({ id: 'dgs', kind: 'actor', names: ['DGS'] }), index.get('actor'));
+  assert.equal(dgs[0].id, 'fixture-actor-pide');
+
+  // The Wikidata item is certainty, not resemblance: nothing in the name
+  // suggests the two are one, and the identifier says they are.
+  const item = findDuplicates(
+    comparableOf({ id: 'secret-police', kind: 'actor', names: ['Something else entirely'], wikidata: 'q100' }),
+    index.get('actor'),
+  );
+  assert.equal(item[0].id, 'fixture-actor-pide');
+  assert.equal(item[0].certain, true);
+  assert.equal(item[0].why, 'the same Wikidata item');
+
+  // The same book under another title, caught by its ISBN, hyphens and all.
+  const book = findDuplicates(
+    comparableOf({ id: 'other-2000-book', kind: 'source', title: 'Quite another title', isbn: '978-0-00-000000-1' }),
+    index.get('source'),
+  );
+  assert.equal(book[0].id, 'fixture-source-1');
+  assert.equal(book[0].why, 'the same ISBN');
+
+  // An edge is its two ends and its type; there is nothing to compare.
+  assert.deepEqual(findDuplicates(comparableOf({ id: 'a--b--caused', kind: 'edge' }), index.get('event')), []);
 });
 
 test('the form builds an actor, and puts actors with roles on an event', async () => {

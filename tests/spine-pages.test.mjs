@@ -118,20 +118,28 @@ test('a narrow window leaves stubs on the timeline and nothing on the map', { sk
 test('the form fills its pickers, finds a duplicate and validates, off the spine', { skip }, async () => {
   await withBrowser(async (page, url) => {
     await open(page, url('contribute.html'), 'return document.querySelectorAll(".add-row button").length > 0;');
+    // The place picker, typed into: the rows come off the search shard and
+    // what stands beside each one — the kind, and how many events happened
+    // there — comes off the spine. The `<select>` of every place this
+    // replaced is health review B, finding 6.
     const filled = await page.eval(`const add = [...document.querySelectorAll(".add-row button")].find((b) => b.textContent === "Add event");
       add.click();
       const card = document.querySelector("section.entry.event");
-      const select = (name) => card.querySelector(".field-" + name + " select");
+      const box = card.querySelector(".field-place .picker input");
+      box.value = "lis";
+      box.dispatchEvent(new Event("input", { bubbles: true }));
       return {
-        places: select("place") ? select("place").options.length : 0,
-        regions: select("region") ? select("region").options.length : 0,
+        rows: [...card.querySelectorAll(".field-place .picker-option")].map((li) => li.textContent.replace(/\\s+/g, " ").trim()),
+        regions: card.querySelectorAll(".field-region select option").length,
       };`);
-    assert.ok(filled.places > 20, `${filled.places} places offered`);
+    assert.ok(filled.rows.length > 0, 'the place picker answers off the shard');
+    assert.ok(filled.rows.some((t) => /Lisbon/.test(t)), filled.rows.join(' · '));
+    assert.ok(filled.rows.every((t) => /place/.test(t) && /links?$/.test(t)), filled.rows.join(' · '));
     assert.ok(filled.regions > 1, `${filled.regions} regions offered`);
 
     // A title that is already in the atlas, typed into a new event: the form
     // must say so before anything is filed. `aliases` and `title` are what
-    // findSimilar reads, and both are in the spine (h3a-brief, A9).
+    // the duplicate search reads, and both are in the spine (h3a-brief, A9).
     await page.eval(`const title = document.querySelector("section.entry.event .field-title input");
       title.value = "Carnation Revolution";
       title.dispatchEvent(new Event("input", { bubbles: true }));

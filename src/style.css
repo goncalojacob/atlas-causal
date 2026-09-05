@@ -1297,6 +1297,39 @@ svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align:
 .contrib .citation-row select { flex: 2; }
 .contrib .citation-row input { flex: 1; }
 
+/* The reference picker (src/contribute/picker.js). Same list, same keys and
+   the same cold white as the header's search box; the difference is what
+   stands beside each hit, which is what tells two records of one name
+   apart. The list is absolutely positioned so a form does not jump as it is
+   typed into. */
+.picker { position: relative; }
+.picker > input { width: 100%; }
+.picker-results {
+  position: absolute; z-index: 5; top: calc(100% + 2px); left: 0; right: 0;
+  max-height: 40vh; overflow-y: auto; margin: 0; padding: 0.25rem 0; list-style: none;
+  background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius);
+  box-shadow: 0 2px 8px var(--cobalt-faint);
+}
+.picker-option { padding: 0.25rem 0.6rem; cursor: pointer; display: flex; gap: 0.4rem; align-items: baseline; flex-wrap: wrap; }
+.picker-option.active { background: var(--cobalt-faint); }
+.picker-option .picker-label { color: var(--ink); }
+.picker-option .kind, .picker-option .when, .picker-option .muted, .picker-option .degree {
+  font-size: var(--text-sm); color: var(--ink-soft);
+}
+.picker-option .kind { font-size: var(--text-xs); text-transform: uppercase; letter-spacing: var(--tracking-label); }
+.picker-option .badge {
+  font-size: var(--text-xs); padding: 0 0.3rem; border: 1px solid var(--madder);
+  border-radius: 2px; color: var(--madder);
+}
+.picker-empty { padding: 0.35rem 0.6rem; color: var(--ink-soft); }
+.picker-chosen { margin: 0.15rem 0 0; font-size: var(--text-sm); color: var(--ink-soft); }
+.picker-chosen.unknown { color: var(--madder); }
+/* What the chosen record already connects to: the other half of "is this the
+   one I meant". */
+.picker-links { list-style: none; margin: 0.15rem 0 0; padding: 0; font-size: var(--text-sm); color: var(--ink-soft); }
+.picker-links li { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.contrib .citation-row .picker { flex: 2; }
+
 .contrib .similar { border-left: 3px solid var(--madder); background: var(--madder-faint); padding: 0.5rem 0.75rem; margin-top: 0.5rem; }
 .contrib .similar p { margin: 0 0 0.25rem; }
 .contrib .similar ul { margin: 0 0 0.4rem; padding-left: 1.2rem; }
@@ -1508,6 +1541,12 @@ svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align:
 .panel .discuss { margin: var(--space-1) 0; font-family: var(--font-ui); font-size: var(--text-xs); }
 .panel .discuss a { color: var(--ink-soft); }
 .panel .discuss a:hover { color: var(--madder); }
+/* Two ways to disagree on one line: the issue, and the record as it should
+   read. Separated so neither reads as the other's continuation. */
+.discuss .edit-record { margin-left: 0.6rem; }
+.entry .discuss { margin: var(--space-1) 0; font-family: var(--font-ui); font-size: var(--text-xs); }
+.entry .discuss a { color: var(--ink-soft); }
+.entry .discuss a:hover { color: var(--madder); }
 
 /* The live preview of a full entry, under the textarea it is typed into: the
    contribution form and the dashboard's editor draw the same block. */

@@ -22,6 +22,7 @@ import { saveBundle, readStatus } from './save.js';
 import { unverified } from './citations.js';
 import { createEditor } from './editor.js';
 import { preparedFor } from '../contribute/bundle.js';
+import { pickerIndex } from '../contribute/picker.js';
 
 const REVIEWER_KEY = 'atlas.reviewer';
 const params = new URLSearchParams(window.location.search);
@@ -58,11 +59,15 @@ function writeReviewer(reviewer) {
 
 try {
   const manifest = await getJson(`${dataRoot}index/manifest.json`, { cache: 'no-store' });
-  const [spine, sourcesIndex, review, schemas] = await Promise.all([
+  const [spine, sourcesIndex, review, schemas, searchEntries] = await Promise.all([
     getJson(`${dataRoot}${manifest.files.spine}`),
     getJson(`${dataRoot}${manifest.files.sources}`),
     getJson(`${dataRoot}${manifest.files.review}`),
     loadSchemas({ root: 'schema/' }),
+    // The search shard, which the pickers scan. Folded at build time, so a
+    // dashboard that has it does not fold the corpus again; a dashboard
+    // whose fetch fails builds the index from the spine instead.
+    getJson(`${dataRoot}${manifest.files.search}`).then((file) => file.entries ?? null).catch(() => null),
   ]);
   // The spine expanded back into the lists the editor and `checkRules` read.
   // The dashboard wants the records, not an atlas: nothing here is drawn on a
@@ -84,6 +89,7 @@ try {
     },
     review,
     schemas,
+    searchEntries,
     // Which records cite a source: not in the index every page loads, one
     // file per source since H3b. `retractionPlan` is the only thing on this
     // page that needs them, and only for the one source a reviewer is about
@@ -99,11 +105,15 @@ try {
   throw error;
 }
 
-function render({ topology, review, schemas, citersOf }) {
+function render({ topology, review, schemas, citersOf, searchEntries = null }) {
   // The atlas's half of validation, built once for the page: a reviewer
   // opens one record after another and every editor validates against the
   // same universe and the same schema set (health review A, finding 11).
   const prepared = preparedFor(topology, schemas);
+  // And the pickers' half: every reference field in every editor searches
+  // this one index, built once for the page rather than once per record
+  // opened (health review B, finding 6).
+  const pickers = pickerIndex({ topology, entries: searchEntries });
   // The queue as the index left it. Signing removes an entry from this list;
   // reloading the page rebuilds it from the index the save rewrote.
   let digests = (review.records ?? []).filter(isDraft);
@@ -299,6 +309,7 @@ function render({ topology, review, schemas, citersOf }) {
       topology,
       schemas,
       prepared,
+      pickers,
       today: today(),
       reviewer: () => normalizeReviewer({ name: nameInput.value, github: handleInput.value }),
       onChange: (state) => {

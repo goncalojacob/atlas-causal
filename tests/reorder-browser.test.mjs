@@ -21,9 +21,14 @@ const THREE_STEPS = `const add = [...document.querySelectorAll(".add-row button"
   const rows = [...steps.querySelectorAll(".step-row")];
   const refs = ["fixture-event-a", "fixture-event-b", "fixture-event-c"];
   rows.forEach((row, i) => {
-    const select = row.querySelector("select");
-    select.value = refs[i];
-    select.dispatchEvent(new Event("input", { bubbles: true }));
+    // The picker, driven the way a contributor drives it: the id pasted in,
+    // and the row it offers chosen. There is no select to set any more.
+    const box = row.querySelector(".picker input");
+    box.value = refs[i];
+    box.dispatchEvent(new Event("input", { bubbles: true }));
+    const option = row.querySelector('.picker-option[data-id="' + refs[i] + '"]');
+    if (!option) throw new Error("the picker did not offer " + refs[i]);
+    option.dispatchEvent(new MouseEvent("mousedown", { bubbles: true, cancelable: true }));
     const text = row.querySelector("textarea");
     text.value = "Step " + (i + 1) + ": a sentence long enough to be a step.";
     text.dispatchEvent(new Event("input", { bubbles: true }));
@@ -36,7 +41,7 @@ const ORDER = `const rows = [...document.querySelectorAll(".field.steps .step-ro
   const bundle = JSON.parse(document.querySelector(".preview").textContent || "{}");
   const narrative = (bundle.records ?? []).find((r) => r.kind === "narrative");
   return {
-    rows: rows.map((r) => r.querySelector("select").value),
+    rows: rows.map((r) => (r.querySelector(".picker-chosen").textContent.split(" · ")[1] || "").trim()),
     texts: rows.map((r) => r.querySelector("textarea").value.slice(0, 6)),
     filed: (narrative?.steps ?? []).map((s) => s.ref),
     filedTexts: (narrative?.steps ?? []).map((s) => s.text.slice(0, 6)),
@@ -104,7 +109,7 @@ test('Alt and an arrow move the step being written, without leaving the textarea
 
     // Alt+↑ on the row that is now first: nowhere to go.
     await page.eval(`const row = document.querySelectorAll(".step-row")[0];
-      row.querySelector("select").dispatchEvent(new KeyboardEvent("keydown", { key: "ArrowUp", altKey: true, bubbles: true, cancelable: true }));
+      row.querySelector(".picker input").dispatchEvent(new KeyboardEvent("keydown", { key: "ArrowUp", altKey: true, bubbles: true, cancelable: true }));
       return true;`);
     assert.deepEqual((await page.eval(ORDER)).rows, ['fixture-event-b', 'fixture-event-a', 'fixture-event-c']);
   });
@@ -142,7 +147,7 @@ test('the review dashboard moves a narrative\'s steps the same way', { skip }, a
     // this only reads the rows the editor built and moves two of them.
     const steps = () => page.eval(`return [...document.querySelectorAll(".field.list .citation-row")]
       .filter((r) => r.querySelector(".move-up"))
-      .map((r) => [r.querySelector("select").value, r.querySelector("textarea").value.slice(0, 24)]);`);
+      .map((r) => [(r.querySelector(".picker-chosen").textContent.split(" · ")[1] || "").trim(), r.querySelector("textarea").value.slice(0, 24)]);`);
     const before = await steps();
     assert.equal(before.length, 12, 'the narrative in data/ has twelve steps');
     assert.deepEqual(

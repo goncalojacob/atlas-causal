@@ -12,6 +12,7 @@
 // Sign and Retract may touch those.
 
 import { html } from '../util/dom.js';
+import { createPicker, pickerIndex } from '../contribute/picker.js';
 import { reorderControls, refreshAll } from '../contribute/reorder.js';
 import {
   FIELDS, CITATION_LISTS, ACTOR_LISTS, STEP_LISTS, valuesFromRecord, applyValues, validateBundle, preparedFor,
@@ -36,50 +37,31 @@ export function claim(fields, path) {
   return null;
 }
 
+// A picker's input holds the name that was typed, not the id that was
+// chosen, so whether the field is empty is a question for the picker.
+function isEmpty(view) {
+  if (view?.picker) return view.picker.value() === '';
+  return Boolean(view?.input) && view.input.value.trim() === '';
+}
+
 // A blank required field says "required" rather than repeating the schema's
 // "none of the alternatives matched", which is true and useless.
 export function messageOf(error, view) {
-  if (view?.field?.required && view.input && view.input.value.trim() === '') return 'required';
+  if (view?.field?.required && isEmpty(view)) return 'required';
   const deeper = (error.alternatives ?? []).find((alt) => alt.some((e) => (e.path ?? '').length > (error.path ?? '').length));
   if (deeper) return deeper.map((e) => e.message).join('; ');
   return error.message;
 }
 
-// The lists a select offers, out of the topology alone. The form has to add
-// what is in the bundle being written; here everything a reference may point
-// at is already in the atlas.
-export function choicesFrom(topology) {
-  const active = (list) => (list ?? []).filter((r) => r?.status === 'active');
-  const byLabel = (a, b) => (a.label < b.label ? -1 : a.label > b.label ? 1 : 0);
-  const titleOf = (id) => (topology.events ?? []).find((e) => e.id === id)?.title ?? id;
-
-  const events = () => active(topology.events).map((e) => ({ value: e.id, label: e.title ?? e.id })).sort(byLabel);
-  const records = () => [
-    ...events(),
-    ...active(topology.edges).map((e) => ({ value: e.id, label: `${titleOf(e.from)} — ${e.type} → ${titleOf(e.to)}` })),
-  ];
-
-  return (name) => {
-    if (name === 'events') return [{ value: '', label: '— choose an event —' }, ...events()];
-    if (name === 'records') return [{ value: '', label: '— choose an event or a link —' }, ...records()];
-    if (name === 'sources') {
-      return [{ value: '', label: '— choose a source —' },
-        ...active(topology.sources).map((s) => ({ value: s.id, label: `${s.id} — ${s.title ?? ''}` })).sort((a, b) => (a.value < b.value ? -1 : 1))];
-    }
-    if (name === 'actors') {
-      return [{ value: '', label: '— choose an actor —' },
-        ...active(topology.actors).map((a) => ({ value: a.id, label: `${a.name ?? a.id} — ${a.actorType ?? ''}` })).sort(byLabel)];
-    }
-    if (name === 'places') {
-      return [{ value: '', label: '— no place: timeline only —' },
-        ...active(topology.places).map((p) => ({ value: p.id, label: p.name ?? p.id })).sort(byLabel)];
-    }
-    if (name === 'regions') {
-      return [{ value: '', label: '— derived from the place —' },
-        ...(topology.regions ?? []).map((r) => ({ value: r.id, label: r.label ?? r.id }))];
-    }
-    return [];
-  };
+// The lanes, which are the one reference field that is a `<select>` here as
+// in the form: five regions, a closed list, nothing to type at. Every other
+// reference is a picker over the search index (src/contribute/picker.js).
+// The `<select>` of every event in the atlas that used to stand in its place
+// was 23,015 options across seven controls and 224 ms per keystroke at
+// twenty thousand events (health review B, finding 6).
+export function regionChoices(topology) {
+  return [{ value: '', label: '— derived from the place —' },
+    ...(topology.regions ?? []).map((r) => ({ value: r.id, label: r.label ?? r.id }))];
 }
 
 // What the import wrote about this record's identity, shown and not offered
@@ -111,16 +93,17 @@ export function identityBlock(record) {
 // record: the file as it is on disk. onChange is called after every edit,
 // with the validation result, so the page can enable or disable Save.
 export function createEditor({
-  record, topology, schemas, onChange = () => {}, reviewer = () => ({ name: '' }), today = null, prepared = null,
+  record, topology, schemas, onChange = () => {}, reviewer = () => ({ name: '' }), today = null,
+  prepared = null, pickers = null, searchEntries = null,
 }) {
   // Built once per editor, or handed in by the dashboard so that opening
   // one record after another does not rebuild the atlas's half each time.
   const reuse = prepared ?? preparedFor(topology, schemas);
+  const index = pickers ?? pickerIndex({ topology, entries: searchEntries });
   const kind = record.kind;
   const values = valuesFromRecord(kind, record);
   const fields = new Map();
   const previews = [];
-  const optionsFor = choicesFrom(topology);
   // The ids the topology holds, by kind, built once: the preview is redrawn
   // on every keystroke and cannot walk a thousand records each time.
   const idCache = new Map();
@@ -142,17 +125,18 @@ export function createEditor({
   let sequence = 0;
   const uid = (key) => `edit-${kind}-${key}-${(sequence += 1)}`;
 
-  function fill(select, name) {
-    const chosen = select.value;
-    select.textContent = '';
-    for (const option of optionsFor(name)) select.appendChild(html('option', { value: option.value }, option.label));
-    select.value = chosen;
-    // The id on the record is not among the choices — it points at something
-    // retracted, or at nothing. Say so rather than silently choosing another.
-    if (select.value !== chosen && chosen !== '') {
-      select.appendChild(html('option', { value: chosen }, `${chosen} — not an active record`));
-      select.value = chosen;
-    }
+  // The picker for one reference, wired to whatever holds the value: a field
+  // of the record, or one row of a repeatable list.
+  function pickerFor(name, { value, label, id: domId, onChange: chose }) {
+    return createPicker({
+      name,
+      index,
+      value,
+      label,
+      id: domId,
+      emptyLabel: name === 'places' ? 'no place: timeline only' : 'nothing chosen yet',
+      onChange: chose,
+    });
   }
 
   function renderField(field) {
@@ -160,13 +144,33 @@ export function createEditor({
     const wrap = html('div', { class: `field field-${field.key}` });
     wrap.appendChild(html('label', { for: id }, field.required ? `${field.label} *` : field.label));
 
+    if (field.optionsFrom && field.optionsFrom !== 'regions') {
+      const picker = pickerFor(field.optionsFrom, {
+        value: values[field.key] ?? '',
+        label: field.label,
+        id,
+        onChange: (chosen) => {
+          values[field.key] = chosen;
+          applyVisibility();
+          refresh();
+        },
+      });
+      wrap.appendChild(picker.root);
+      if (field.hint) wrap.appendChild(html('p', { class: 'hint' }, field.hint));
+      const pickerError = html('p', { class: 'field-error', hidden: 'hidden' });
+      wrap.appendChild(pickerError);
+      fields.set(field.path, { wrap, input: picker.input, picker, error: pickerError, field });
+      return wrap;
+    }
+
     let input;
     if (field.input === 'textarea') {
       input = html('textarea', { id, rows: '6' });
     } else if (field.input === 'select') {
       input = html('select', { id });
-      if (field.optionsFrom) fill(input, field.optionsFrom);
-      else {
+      if (field.optionsFrom) {
+        for (const option of regionChoices(topology)) input.appendChild(html('option', { value: option.value }, option.label));
+      } else {
         for (const option of field.options) {
           const label = option === '' ? (field.required ? '— choose —' : '— none —') : option;
           input.appendChild(html('option', { value: option }, label));
@@ -225,15 +229,16 @@ export function createEditor({
 
     const addRowFor = (item) => {
       const row = html('li', { class: 'citation-row' });
-      const select = html('select', { 'aria-label': label });
-      fill(select, optionsName);
-      select.value = item[refKey] ?? '';
-      // The value may not be among the options (a retracted reference): fill
-      // again so the row says so instead of showing the first choice.
-      if (select.value !== (item[refKey] ?? '')) fill(select, optionsName);
-      select.addEventListener('input', () => {
-        item[refKey] = select.value;
-        refresh();
+      // A reference the atlas no longer has — a retracted source, an event
+      // that became a tombstone — is shown as the id it is, said to be gone,
+      // and left alone: the picker never silently chooses something else.
+      const picker = pickerFor(optionsName, {
+        value: item[refKey] ?? '',
+        label,
+        onChange: (chosen) => {
+          item[refKey] = chosen;
+          refresh();
+        },
       });
       const text = textKey === 'text'
         ? html('textarea', { rows: '3', placeholder, 'aria-label': `${label} text` })
@@ -251,7 +256,7 @@ export function createEditor({
         if (ordered) refreshAll(rows, items);
         refresh();
       });
-      row.append(select, text);
+      row.append(picker.root, text);
       if (ordered) row.appendChild(reorderControls({ rows, row, item, items, onMove: refresh }));
       row.appendChild(drop);
       rows.appendChild(row);
