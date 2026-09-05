@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "assassination-of-john-f-kennedy",
   "kind": "event",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,11 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": null,
+  "revised": "2026-09-05",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "m40-retracted"
+    ],
+    "note": "Retracted in M40b: Kennedy shot in Dallas on 22 November 1963. The Portuguese link would be American policy on the African territories — the vote against Portugal in the Security Council in 1961, and the renewal of the Azores base agreement used against it — and the atlas holds no record of either, so there is nothing here the death can be argued to have changed. It would need the Azores lease of 1962 as a record before the change of American tone after 1963 could be argued rather than asserted."
   },
   "wikidata": "Q193484",
   "sitelinks": 59,
