@@ -453,6 +453,19 @@ the same period, each attributed, with the reader comparing them rather than a
 wiki resolving them. A narrative changes nothing it walks. It is prose beside
 the graph, and the graph does not know it is being walked.
 
+*And the way in is a page.* `narratives.html`, in the header beside the
+bibliography, is a card per account — title, narrator, the years it is about,
+how many steps, its own summary — **grouped by the centuries it crosses**,
+which is the arrangement `CONTEXT.md` asks for and a flat list cannot give:
+two accounts of the same years have to sit side by side to be read against
+each other. An account across a boundary is listed under both centuries, with
+its own full period on the card. The years are the years of the records the
+steps arrive at and never the `window` beside them — the window is what the
+atlas opens on, a choice about the picture — and a title opens the account at
+its first step. It replaced the list M12 put in the panel behind the header's
+narratives button, which was the same list without the arrangement and had no
+other way in (deviation 182).
+
 *Reading is a mode, and the URL says so.* `?narrative=<id>&step=<n>` is
 authoritative; `selected`, `chain`, `from` and `to` are **derived** from the
 step by `narrative.js` and deliberately not written to the address bar. A link
@@ -727,6 +740,7 @@ atlas-causal/
 ├── contribute.html               ● the contribution form
 ├── about.html                    ● licence, how to read confidence, why relicensing is impossible
 ├── sources.html                  ● the bibliography, generated at render from the sources index
+├── narratives.html               ● every narrative as a card, grouped by the centuries it crosses; generated at render from the topology
 ├── entry.html                    ● one record's full entry; ?id=<id>, for an event, an actor or a place
 ├── review.html                   ● the review queue; a maintainer's page, unlinked, the only one that writes
 ├── CLAUDE.md  CONTEXT.md         ● rules / reasoning
@@ -797,6 +811,7 @@ atlas-causal/
 │   ├── panel/event.js  source.js  place.js  actor.js  cluster.js   ● one card each
 │   ├── panel/horizon.js          ● the "what did this lead to by year X?" section of the event card
 │   ├── sources/main.js  bibliography.js   ● the bibliography page: bootstrap, and the list as markup
+│   ├── narratives/main.js  list.js   ● narratives.html: bootstrap, and the cards grouped by century as markup
 │   ├── entry/
 │   │   ├── entry.js              ● pure: topology + a fetched record → the full entry page, as markup
 │   │   ├── preview.js            ● pure: the live preview under the textarea, drawn by the form and the dashboard alike
@@ -1413,6 +1428,7 @@ least 40 pixels; a link inside a sentence keeps the line it is set in.
 | `panel/` | The shell plus one file per card. Every card is a head, a summary and collapsible sections with counts: consequences, causes, the other branches, the horizon inside the consequences, supporting and dissenting citations shown apart with their verification marks, confidence and status shown as such; an event's actors as chips in the head, the walked path as a breadcrumb above it, a source's card with everything that cites it, an actor's card with its relations grouped by type and direction, a place's card, and the members of a cluster. | Traversal logic. |
 | `panel/sections.js` | What a collapsible section is, for every card: the header with its count and its dispute mark, which one a card opens on given the arrival and the reader's remembered choice, and the toggle that closes the others. The choice is `localStorage`, never the URL. Pure but for the toggle. | What is inside a section, and which card is asking. |
 | `sources/` | `sources.html`: the manifest and the sources index, and the bibliography as markup. Nothing else — the topology is twenty times the size and lists no books. | The topology, the map, the panel. |
+| `narratives/` | `narratives.html`: a card per account — title, narrator, the years it is about, how many steps, its own summary — grouped by the centuries it crosses, so two accounts of the same years sit side by side. A period is the years of the records walked and not the `window` beside them; a title opens the account at its first step. It needs the topology, because those years live there. | The map, the panel, and how a narrative is read once it is opened. |
 | `validate/core.js` | `validate(records, topology)`: schema subset + cross-record rules, pure. Needs the topology to check references, so the form loads it too. | `fs`. |
 | `contribute/*` | Form → bundle → validation → clipboard + issue. | GitHub, beyond one URL in `submit.js`. |
 | `contribute/reorder.js` | Moving one row of an ordered list, in the form and in the review editor alike: the two controls, Alt with an arrow from anywhere in the row, and the ends that have nowhere to go. Moves the row rather than redrawing the list, so nothing half typed is lost. | Which list it is, and what a step means. |

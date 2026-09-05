@@ -89,6 +89,7 @@ index.html                 the atlas; no build step, plain ES modules
 contribute.html            the contribution form; not linked from the atlas while contributions are closed
 about.html                 what it is, how to read confidence and a dispute, the licences
 sources.html               the bibliography, generated from the sources index at render
+narratives.html            every narrative as a card, grouped by the centuries it crosses; generated from the topology at render
 review.html                the review queue; a maintainer's page, unlinked, and the only one that can write
 README.md  CONTRIBUTING.md for people reading the repository
 src/main.js                bootstrap only: load, wire views; ?fixtures=1 reads tests/fixtures/data/
@@ -110,6 +111,9 @@ src/timeline.js            one lane per region; the window as a band with two ha
 src/panel/panel.js         the shell: container, clicks, load token, what the cards share
 src/panel/event.js         one card each: event.js, source.js, place.js, actor.js, cluster.js, narrative.js;  horizon.js  the "led to by year X" section; the actor card also lists its relations, both ways round
 src/sources/main.js        bootstrap for sources.html;  bibliography.js  the list as markup, pure
+src/narratives/main.js     bootstrap for narratives.html;  list.js  the cards, grouped by the centuries each account crosses, pure
+src/phone.js               under 720px: what raises the panel's sheet over the view, what a drag of its grip ends as; the layout is one media query in style.css
+src/contribute/reorder.js  one row of an ordered list moved up or down, with Alt+arrow; the form and the review editor share it
 src/contribute/bundle.js   the pure half of the form: fields, bundle assembly, duplicate search
 src/contribute/form.js     the form itself; submit.js copies the bundle and opens the issue
 src/contribute/main.js     bootstrap for contribute.html

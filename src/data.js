@@ -296,6 +296,23 @@ export async function loadSources({ dataRoot = 'data/', fetchJson = defaultFetch
   return { manifest, sources: index.sources ?? [] };
 }
 
+// The narratives and the records they walk. narratives.html cannot do what
+// the bibliography does and read one small index: a narrative's period is the
+// years of the events its steps arrive at, and those are in the topology.
+// So the topology, and nothing that is only drawn — no coastlines, no
+// territories, no palette, and no sources index either, since this page lists
+// no books.
+export async function loadNarratives({ dataRoot = 'data/', fetchJson = defaultFetchJson } = {}) {
+  const manifest = await fetchJson(`${dataRoot}index/manifest.json`, { cache: 'no-store' });
+  const topology = await fetchJson(`${dataRoot}${manifest.files.topology}`);
+  return {
+    manifest,
+    narratives: topology.narratives ?? [],
+    events: new Map((topology.events ?? []).map((e) => [e.id, e])),
+    edges: new Map((topology.edges ?? []).map((e) => [e.id, e])),
+  };
+}
+
 // landFile overrides the manifest's land list; the fixture manifest has
 // none, and the site still wants coastlines under the synthetic marks.
 // `false` loads no coastlines at all: the contribution form needs the

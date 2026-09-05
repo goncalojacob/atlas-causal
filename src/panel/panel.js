@@ -19,7 +19,7 @@ import { renderActorCard } from './actor.js';
 import { renderPlaceCard } from './place.js';
 import { renderSourceCard } from './source.js';
 import { clusterHtml } from './cluster.js';
-import { narrativeListHtml, partOfHtml, renderNarrativeCard } from './narrative.js';
+import { partOfHtml, renderNarrativeCard } from './narrative.js';
 import { readingNarrative } from '../narrative.js';
 import { createLinks, ENTRY_KINDS } from '../entry/entry.js';
 import { discussUrl } from '../share.js';
@@ -424,14 +424,7 @@ export function createPanel(container, {
     container.innerHTML = clusterHtml(ctx, cluster);
   }
 
-  // The list of narratives is a way in, not a state: it is replaced by
-  // whatever the reader opens next, as a cluster's list is.
-  function showNarratives() {
-    token += 1;
-    container.innerHTML = narrativeListHtml(ctx);
-  }
-
   state.subscribe(render);
   render(state.get());
-  return { render, showCluster, showNarratives };
+  return { render, showCluster };
 }

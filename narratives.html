@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Narratives — Atlas causal</title>
+  <link rel="stylesheet" href="src/style.css">
+</head>
+<body class="page-body">
+  <header class="bar">
+    <h1><a href="index.html">Atlas causal</a></h1>
+    <p class="tagline">Signed walks through the graph, arranged by the years they are about.</p>
+    <span id="fixtures-badge" class="fixtures-badge" hidden title="tests/fixtures/data: invented records for testing the interface">synthetic fixtures — not history</span>
+    <a class="bar-link" href="sources.html">sources</a>
+    <a class="bar-link" href="about.html">about</a>
+  </header>
+
+  <main class="page">
+    <section class="prose">
+      <h2>Narratives</h2>
+
+      <p>A narrative is one person's account of records that are already in the atlas: an ordered
+      walk from one event or link to the next, with a paragraph at each step saying why that step
+      follows. It is signed, and it changes nothing it walks — the events, the links, the dates and
+      the confidences are the records' own, and an account that disagrees with another account
+      does not alter a single one of them.</p>
+
+      <p>They are arranged here by the centuries they cross, so that two accounts of the same
+      years sit side by side and can be read against each other. That is what narratives are for:
+      where two disagree about what mattered, both stand, and the reader compares. An account that
+      runs across a century boundary is listed under both.</p>
+
+      <p>A title opens the account inside the atlas at its first step. From there the map, the
+      graph and the timeline follow the walk, and leaving it puts the atlas back where it was.</p>
+
+      <div id="narratives"><p class="muted">Loading…</p></div>
+
+      <p class="footnote">This list is generated from the records every time the page is opened,
+      and a narrative's period is the years of the records it actually walks rather than anything
+      typed beside it. The records are
+      <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license noreferrer">CC BY-SA 4.0</a>.</p>
+    </section>
+  </main>
+  <script type="module" src="src/narratives/main.js"></script>
+</body>
+</html>

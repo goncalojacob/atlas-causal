@@ -51,8 +51,8 @@ try {
 
   // Under 720px the panel is a sheet over the view rather than a column
   // beside it. It raises itself when what is open changes, which covers every
-  // way into a record; a cluster and the list of narratives are shown by the
-  // panel directly and never reach the store, so they say so here.
+  // way into a record; a cluster's list is shown by the panel directly and
+  // never reaches the store, so it says so here.
   const phone = createPhone({
     state,
     sheet: document.getElementById('sheet'),
@@ -67,10 +67,6 @@ try {
   createSearchBox(document.getElementById('search'), { atlas, state, fixtures });
   createGrouping(document.getElementById('grouping'), { atlas, state });
   bindNarrativeKeys(document, { atlas, state });
-  document.getElementById('narratives-button').addEventListener('click', () => {
-    panel.showNarratives();
-    phone.open();
-  });
 
   // The graph view takes the map's slot behind the toggle. It is built the
   // first time it is asked for, not at load: a reader who never leaves the
@@ -82,7 +78,7 @@ try {
   const showView = (view) => {
     const graphOn = view === 'graph';
     if (graphOn && !graph) {
-      graph = createGraphView(graphArea, { atlas, state, onCluster: (cluster) => panel.showCluster(cluster) });
+      graph = createGraphView(graphArea, { atlas, state, onCluster: showCluster });
     }
     mapArea.hidden = graphOn;
     graphArea.hidden = !graphOn;

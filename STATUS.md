@@ -2670,6 +2670,50 @@ gave that to the map and the timeline, and M25 did not widen it.
        gained an assertion rather than only losing one: the memberships must
        appear in date order, which is the brief's "done when".
 
+182. **`narratives.html` replaced the panel's list of narratives, which is why
+     the header's narratives button is now a link.** The brief puts the new
+     page "in the atlas's header next to Sources and About", which is exactly
+     where M12's *narratives* button already was — the one that opened the
+     same list inside the panel. Keeping both would have meant two controls
+     called "narratives" side by side leading to two different lists of the
+     same thing, and the page is the better of the two: it says the period
+     each account is about, how long the walk is, and it arranges them, which
+     is what a reader choosing between accounts needs. So the button became
+     the link, and `narrativeListHtml` and `panel.showNarratives()` went with
+     it — the panel's list had no other way in and nothing else called them.
+     Nothing about reading a narrative changed: `?narrative=<id>&step=<n>` is
+     the same mode, the card is the same card, and it now carries a link back
+     to the list.
+
+183. **On a phone, a link inside a sentence is not forty pixels tall.** The
+     brief asks for hit targets of at least 40 px. Every control that is a
+     control — the sheet's grip, Options, Map | Graph, the search box, a
+     card's buttons and section headers, an actor chip, a layer switch — has
+     it. A citation's title, a crumb of the breadcrumb and "show only these"
+     do not: they are set inside a line of prose, and giving them a height of
+     their own would break the sentence they are part of. The alternative,
+     lifting them out of the prose into rows, is a different card and not a
+     bigger tap target, and the brief did not ask for one.
+
+184. **The phone breakpoint replaced the old 800 px rule rather than joining
+     it.** `style.css` already stacked the layout under 800 px. Two stacked
+     layouts — one that merely puts the panel under the map and one with the
+     sheet — would have been two things to keep true of the same panel, so
+     there is one, at the brief's 720. Between 720 and 800 the three panes
+     still fit side by side: the panel's minimum is 300 px and the map's is
+     320, which is 626 with the two handles.
+
+185. **A narrative's "first paragraph" on `narratives.html` is its summary.**
+     The brief asks a card for "title, narrator, period covered, number of
+     steps, first paragraph". The first paragraph of the *walk* is the first
+     step's text, and that is deliberately not in the index — the topology
+     carries a narrative's steps as refs and not a word of the prose (M12),
+     so a page listing twenty accounts would fetch twenty records to show
+     twenty opening lines. The summary is the narrative's own paragraph about
+     itself, is in the index, and is what a reader choosing between accounts
+     wants; the brief also says the page is "generated at render from the
+     index, like `sources.html`", which the other reading cannot be.
+
 ## Dates to verify
 
 Everything below was written from memory and is where the owner's review

@@ -1,4 +1,5 @@
-// Two cards and a pair of keys: the list of narratives, and one being read.
+// The card of a narrative being read, the "Part of" list on every other
+// card, and the pair of keys that move a step.
 //
 // Reading is a mode (narrative-mode.js). This file draws the step the reader
 // is at — the narrator's own words, then the record those words are about,
@@ -33,23 +34,6 @@ export function partOfHtml(ctx, id, { bare = false } = {}) {
   const inner = `<p class="hint">Narratives that walk through this record. A narrative is one person's account and changes nothing it walks.</p>
     <ul class="narrative-rows">${items.join('')}</ul>`;
   return bare ? inner : `<section class="part-of"><h2>Part of <span class="count">${list.length}</span></h2>${inner}</section>`;
-}
-
-export function narrativeListHtml(ctx) {
-  const list = ctx.atlas.activeNarratives ?? [];
-  if (list.length === 0) {
-    return `<section class="intro"><h2>Narratives</h2>
-      <p class="muted">None yet. A narrative is a signed walk through records that are already here — several may cross the same period and disagree, and the reader compares them.</p></section>`;
-  }
-  const items = list.map((n) => `<li class="narrative-row">
-    <button type="button" class="link title" data-action="narrative" data-id="${esc(n.id)}">${esc(n.title)}</button>
-    <span class="muted">${authorsLine(n)}</span>
-    <span class="count">${(n.steps ?? []).length} steps</span>
-    <p class="summary">${esc(n.summary)}</p>
-  </li>`);
-  return `<section class="narratives"><h2>Narratives <span class="count">${list.length}</span></h2>
-    <p class="hint">Each is one person's account, signed, and changes nothing it walks. Where two disagree, both stand.</p>
-    <ul class="narrative-rows">${items.join('')}</ul></section>`;
 }
 
 // One step: the record it is about, drawn as the panel draws that kind
@@ -93,6 +77,7 @@ export function renderNarrativeCard(ctx, { container, narrative, state, mine }) 
     <header class="narrative-head">
       <h2>${esc(narrative.title)}</h2>
       <p class="meta"><span class="muted">${authorsLine(narrative)}</span> · <span class="count">step ${index + 1} of ${total}</span></p>
+      <p class="entry-link"><a href="narratives.html">Every narrative, by the years it is about →</a></p>
       ${ctx.discussLink('narrative', narrative.id)}
     </header>
     <section class="step-text" data-slot="step-text"><p class="muted">Loading…</p></section>

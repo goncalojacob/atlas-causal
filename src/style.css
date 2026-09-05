@@ -1170,6 +1170,33 @@ svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align:
 .bib-count { color: var(--cobalt); font-variant-numeric: tabular-nums; }
 .bib-meta .unsafe-url { color: var(--madder); }
 
+/* The narratives page. A card per account under the heading of each century
+   it crosses: two accounts of the same years sit side by side, which is the
+   whole reason the page arranges them rather than listing them. */
+.narrative-period h2 { display: flex; align-items: baseline; gap: var(--space-2); }
+.narrative-period .count { color: var(--ink-soft); font-family: var(--font-ui); font-size: var(--text-sm); font-variant-numeric: tabular-nums; }
+.narrative-cards { list-style: none; padding: 0; margin: var(--space-3) 0 0; }
+.narrative-card {
+  padding: var(--space-3) 0; border-top: 1px solid var(--line);
+}
+.narrative-card:first-child { border-top: 0; padding-top: 0; }
+.narrative-card h3 {
+  font-family: var(--font); font-weight: normal; font-size: var(--text-lg);
+  margin: 0; line-height: var(--leading-tight);
+}
+.narrative-card h3 a { color: var(--cobalt); text-decoration: none; }
+.narrative-card h3 a:hover { text-decoration: underline; }
+/* Who wrote it, what years it is about, how long the walk is: one quiet line
+   in the interface face, set apart from the account's own prose below it. */
+.narrative-card .narrative-meta {
+  margin: var(--space-1) 0 0; font-family: var(--font-ui); font-size: var(--text-sm);
+  color: var(--ink-soft); font-variant-numeric: tabular-nums;
+}
+.narrative-card .narrative-summary {
+  margin: var(--space-2) 0 0; font-family: var(--font); font-size: var(--text-md);
+  line-height: var(--leading-prose); font-variant-numeric: proportional-nums;
+}
+
 /* --- the contribution form -------------------------------------------- */
 
 .contrib { margin-top: 1.5rem; }
