@@ -6,7 +6,86 @@ session ends. `ARCHITECTURE.md` is the target; this file is the position.
 
 ## Last updated
 
-2026-09-05, after H3c (`docs/health/h3c-brief.md`), the health cycle's
+2026-09-05, after H4a (`docs/health/h4a-brief.md`), the health cycle's
+ninth run: **the map's grouping is a grid, it runs once at rest, and only
+what is on screen is drawn.** Code only; no record under `data/` changed and
+`data/index/` was not rebuilt. 759 tests.
+
+**The clustering was O(n²) and is a uniform grid, with the same answer.**
+`clusterPoints` bucketed the points in cells strictly wider than the merge
+threshold and scans the 3×3 neighbourhood of each seed, dropping a point from
+its cell as it is taken. The rule did not change; what is looked at did. Four
+conditions make the two identical, and they are named in `src/cluster.js`
+because a later simplification could break any of them silently: cells
+strictly wider than the threshold, one globally sorted seed walk, the members
+re-sorted by `byWeightThenId` before `centre` and `weight` are reduced over
+them, and the exact `<=` predicate on every candidate the neighbourhood
+offers. `tests/cluster.test.mjs` keeps the implementation this replaced and
+holds the two to the same clusters, member order, centres and `coreZoom` over
+several thousand points at every zoom the map allows — with points held out,
+in one dimension, on the threshold itself and across zero. Removing the
+re-sort, or narrowing the cells, fails it.
+
+**The numbers, from `node tests/bench/run.mjs` on this machine, before and
+after.** The harness generates its world from a seed, so the two runs measure
+the same points; what is worth reading is the ratio, not the milliseconds.
+
+| `clusterPoints` | before | after | |
+|---|---|---|---|
+| 13 991 points, k=1 | 455 ms | 19.1 ms | 24× |
+| 13 991 points, k=8 | 1 350 ms | 15.2 ms | 89× |
+| 13 991 points, k=40 | 1 399 ms | 16.3 ms | 86× |
+| 70 014 points, k=1 | 9.7 s | 118 ms | 82× |
+| 70 014 points, k=8 | 86.8 s | 133 ms | 653× |
+| 70 014 points, k=40 | 93.7 s | 130 ms | 720× |
+
+One wheel notch at 20 000 synthetic events — the points projected, grouped
+and culled, which is everything the map recomputes when the zoom changes and
+nothing else has — went from **481 ms at k=1, 1 335 ms at k=4 and 1 454 ms at
+k=16** to **17.1, 16.7 and 17.3 ms**. The brief asked for under 50 ms and this
+is the worst case: it is the notch that crosses a zoom bucket and regroups.
+The rest hit the cache and do not group at all.
+
+**Once at rest, and per zoom bucket.** The 260 ms zoom animation redrew the
+layer on every one of its sixteen frames; it now moves the transform and
+nothing else, and draws once when it stops — a browser test counts the
+redraws through a `MutationObserver` and would have counted nineteen. The
+grouping is cached on the points, compared one by one rather than hashed, and
+on the zoom rounded down to one of sixteen buckets per octave. Rounding down
+is the safe direction: a bucket never splits what the true zoom keeps whole.
+The zoom a click on a splittable cluster asks for is exempt from the
+rounding, because that zoom was chosen to split (deviation 231 says why the
+exemption is not observable today and is kept anyway).
+
+**The clustered set is the same set; the drawing is culled.** Every placed
+event in the window is still grouped and every cluster is still registered,
+so the counts on the marks, what a click answers with and a spread the reader
+has opened all survive panning it off the edge and back. What the viewport
+decides is which marks reach the DOM: at 20 000 events, 123 of 567 clusters
+at k=1 and 425 of 1 725 at k=16.
+
+**The territories: an interval index, path strings kept, detail by zoom, and
+the first shard deferred.** `presencesAt` was a scan of all 710 presences per
+render; the set can only change where an interval begins or ends, so the
+answer is worked out once per segment and found by binary search — a sweep of
+the 134 years the outlines cover went from 3.63 ms to 0.09 ms, and the scan it
+replaced is kept in the tests and held to the same answer on every year that
+could differ, in both datasets. A path string is now kept by the outline, the
+detail and the projection it was made with, instead of being rebuilt whenever
+the year moves or an actor is selected. The outlines are simplified again in
+the browser at a tolerance chosen by zoom — 0.2° out at the world, 0.05°
+closer in, the shard as written past k=8 — which is why `simplify.mjs` moved
+to `src/util/simplify.js`, where a module the pages load may live;
+`tools/import/simplify.mjs` is the name the import knows it by (deviation
+230). And the first shard, 880 KB nobody has asked for, waits for a frame and
+a task rather than being fetched inside the map's first render.
+
+**What was not done, and why.** The timeline calls `clusterPoints` too, per
+lane, and is faster for the grid without being touched: H4c owns it and the
+window it clusters. Nothing under `src/graph-view/` or `src/timeline.js` was
+opened — H4b and H4c own those.
+
+Before that, H3c (`docs/health/h3c-brief.md`), the health cycle's
 eighth run: **the old topology file is gone, and the spine is the only
 graph the site has.** `build-index.mjs` stops serialising it, the loader
 loses the flag that chose between the two, every reader that still went to
@@ -3664,6 +3743,50 @@ gave that to the map and the timeline, and M25 did not widen it.
      working tree built before this run keeps a stale
      `data/index/topology-<hash>.json` that no tool reads, writes or
      compares; deleting it is the whole of the cleanup.
+
+230. **`simplify.mjs` moved to `src/util/simplify.js`; `tools/import/`
+     keeps the name.** The brief says the shards are simplified "by zoom at
+     load", and nothing under `data/` may change in this run, so the
+     simplification has to happen in the browser — which a module under
+     `tools/` cannot do, because it is not part of what a page may load and
+     the deploy allowlist H8 is going to write would not carry it. Copying
+     Douglas–Peucker into `src/` would have left two of it, and the second
+     would have been the one nobody tested. So the file moved and
+     `tools/import/simplify.mjs` is now four lines that re-export it, which
+     keeps `cshapes.mjs` and `tests/import-cshapes.test.mjs` reading exactly
+     what they read before. One new function, `simplifyGeometry`, is the
+     map's entry point: the import simplifies *arcs* before any polygon is
+     decoded, which is the better place and is not available to a caller
+     holding decoded rings.
+
+231. **The `coreZoom` exemption is kept although nothing today can see
+     it.** Finding 12 of the review of the health plan asks for buckets that
+     round down and for `coreZoom` to be exempt from them. Both are built.
+     But a bucket is one sixteenth of an octave, about 4.4 %, and
+     `SPLIT_MARGIN` — the room `coreZoom` leaves past the zoom a cluster
+     parts at — is 5 %: as the two constants stand, rounding a `coreZoom`
+     down would still split the stack, so removing the exemption breaks no
+     test. That is an accident of two numbers chosen for different reasons
+     and not something the map should rest on, so the exemption stays and a
+     test in `tests/cluster.test.mjs` writes the relation down — with a
+     coarser bucket, spelled out beside it, the click really would move the
+     map and change nothing. Changing either constant is now a decision.
+
+232. **The zoom animation no longer keeps the marks at their screen size.**
+     "During the zoom animation only the transform changes" is what both
+     reviews and the brief ask for, and a mark's radius is `r / k`, so the
+     marks, the badges and the labels now scale with the picture for the 260
+     ms the animation lasts and are put back at their size when it stops.
+     That is a visible change and it is the one the brief buys the frames
+     with; it reads as a zoom of the picture, which is what it is. The wheel
+     is not animated and is unaffected.
+
+233. **The events layer's `inView` became `onScreen`.** `src/util/viewport.js`
+     already exports an `inView`, which asks whether an *event* is inside a
+     box in degrees for the timeline. The map's predicate asks whether a
+     *mark* is inside a rectangle in projected units, and two exported
+     functions of the same name answering different questions is how a
+     wrong import gets written. The one that moved is the newer one.
 
 ## Dates to verify
 
