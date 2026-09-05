@@ -781,6 +781,42 @@ svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align:
   background: var(--ground); margin: 0 0 var(--space-3); font-size: var(--text-sm);
 }
 .panel .notice.disputed { border-color: var(--madder); background: var(--madder-faint); }
+/* A card's collapsible sections. The header is a button, so that Enter and
+   Space work without a keydown handler anywhere, but it is set exactly like
+   the section heads it replaced — the same serif, the same rule above, the
+   same count beside it — because a control that announces itself as a
+   control would make the card look like a form. What it does add is the
+   marker: a triangle that turns, which is the one thing that says a header
+   can be opened at all. */
+.panel .card-section > .section-head { margin: 0; padding: 0; border: 0; display: block; }
+.panel .section-toggle {
+  width: 100%; text-align: left; background: none; border: 0; border-top: 1px solid var(--line);
+  border-radius: 0; padding: var(--space-3) 0 var(--space-2); margin-top: var(--space-4);
+  display: flex; align-items: baseline; gap: var(--space-2); cursor: pointer;
+  font-family: var(--font); font-weight: normal; font-size: var(--text-lg); color: var(--cobalt);
+}
+.panel .section-toggle:hover { background: none; color: var(--ink); }
+.panel .section-toggle:hover .section-marker { border-left-color: var(--ink); }
+.panel .card-section:first-child .section-toggle { margin-top: 0; padding-top: 0; border-top: 0; }
+/* A triangle drawn from a border, so it costs no glyph and no file, and
+   turns a quarter when the section opens. */
+.panel .section-marker {
+  flex: none; width: 0; height: 0; align-self: center;
+  border-left: 6px solid var(--cobalt-soft);
+  border-top: 4px solid transparent; border-bottom: 4px solid transparent;
+  transition: transform 120ms ease;
+}
+.panel .card-section.open .section-marker { transform: rotate(90deg); }
+.panel .section-label { flex: 1; min-width: 0; }
+/* A count that carries a dispute is the whole reason the count is in the
+   header: a closed section still says there is an argument inside it. */
+.panel .section-toggle .count.disputed { color: var(--madder); }
+.panel .section-body { padding-bottom: var(--space-2); }
+/* Inside a section the head is already the level above, so the sub-headings
+   the cards write stay where they are and nothing gains a second rule. */
+.panel .section-body > h2 { margin-top: var(--space-4); }
+.panel .section-body > *:first-child { margin-top: 0; }
+
 /* Prose is the serif and stops at a readable measure; it is also the one
    place proportional figures are wanted, because they are being read as
    words rather than compared down a column. */
