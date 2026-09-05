@@ -8,6 +8,12 @@
 
 import { reachableBy } from './graph.js';
 import { resolveWindow, resolveHorizon, horizonIsOpen } from './util/window.js';
+import { keyedCache, SEP } from './util/memo.js';
+
+// How many of the answer the panel lists, and — the same number, deliberately
+// — how many of it are kept out of the stacks on the map and in the graph
+// (health review B, finding 22). A reader can only aim at what they can see.
+export const SHOWN = 40;
 
 // How far out a reachable event is, in three bands, because opacity in
 // twenty steps says nothing a reader can read. One step away is `near`, two
@@ -26,10 +32,22 @@ export function horizonYear(atlas, state) {
 
 // The answer, in full, for the panel: [{ event, depth, edges, first, last,
 // disputed }] ordered by path length then year. Empty without a selection.
+// Memoised on the adjacency, the event asked about and the year: the map,
+// the timeline, the graph view and the panel each ask, and each was walking
+// the whole downstream of the selected event for itself on every state
+// change — four breadth-first walks of the corpus per click (health review A,
+// finding 12; B, finding 22). Four answers are held per graph, least recently
+// used dropped first, so a reader nudging the year up and down does not hold
+// a hundred reachable sets alive.
+//
+// The list is shared and never copied, so nothing that reads it may sort it
+// or push to it. Nothing does: the panel slices, and the views count.
+const answered = keyedCache(4);
+
 export function horizonResults(atlas, state, id = state.selected) {
   const year = horizonYear(atlas, state);
   if (year === null || !id || !atlas.events.has(id)) return [];
-  return reachableBy(atlas.adjacency, id, year);
+  return answered(atlas.adjacency, `${id}${SEP}${year}`, () => reachableBy(atlas.adjacency, id, year));
 }
 
 // The same answer as a Map<event id, depth>, for whatever draws it — and

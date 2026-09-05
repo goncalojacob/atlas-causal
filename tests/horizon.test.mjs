@@ -95,3 +95,41 @@ test('an event that led to nothing by the year says so', async () => {
   assert.match(html, /Nothing this event leads to had begun by 1900/);
   assert.doesNotMatch(html, /horizon-walk/);
 });
+
+// --- what H4c changed: one walk per state change, and a path only when read
+
+test('the same question is answered once, and the answer is the same list', async () => {
+  const state = { ...defaultState(), selected: REVOLUTION, horizon: 2011 };
+  // A second state that says the same thing: the key is the event and the
+  // year, not the object the caller happens to be holding.
+  const again = { ...defaultState(), selected: REVOLUTION, horizon: 2011 };
+  const first = horizonResults(atlas, state);
+  assert.equal(horizonResults(atlas, again), first, 'the four askers share one list');
+  // And a different year is a different question, answered on its own.
+  const later = horizonResults(atlas, { ...state, horizon: 2025 });
+  assert.notEqual(later, first);
+  assert.ok(later.length > first.length);
+  // The memo is per graph. A second atlas built from the same records is a
+  // different adjacency and gets its own answer, with the same content.
+  const other = await atlasOf(dataDir);
+  const elsewhere = horizonResults(other, state);
+  assert.notEqual(elsewhere, first);
+  assert.deepEqual(elsewhere.map((r) => r.event.id), first.map((r) => r.event.id));
+});
+
+test('the path of a row is built when it is read and not before', async () => {
+  const state = { ...defaultState(), selected: REVOLUTION, horizon: 2025 };
+  const results = horizonResults(atlas, state);
+  const best = shortestPaths(atlas.adjacency, REVOLUTION);
+  for (const found of results) {
+    // Every one of the four derived fields is the walk up the tree, however
+    // many times it is asked for.
+    const edges = pathTo(best, found.event.id);
+    assert.deepEqual(found.edges.map((e) => e.id), edges.map((e) => e.id));
+    assert.equal(found.edges, found.edges, 'built once and kept');
+    assert.equal(found.first, edges[0] ?? null);
+    assert.equal(found.last, edges[edges.length - 1] ?? null);
+    assert.equal(found.disputed, edges.some((e) => e.confidence === 'disputed'));
+    assert.equal(found.edges.length, found.depth, 'the path is as long as the depth');
+  }
+});

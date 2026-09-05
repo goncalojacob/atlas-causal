@@ -27,7 +27,7 @@
 
 import { chainEdges } from './chain.js';
 import { convergence } from './graph.js';
-import { horizonSet } from './horizon.js';
+import { horizonSet, SHOWN } from './horizon.js';
 import { narrativeSet } from './narrative.js';
 import { lensSet } from './lens.js';
 
@@ -51,7 +51,30 @@ import { lensSet } from './lens.js';
 // map's viewport may never take away. `reachable` is deliberately not in it:
 // a reachable event is drawn wherever it falls, but forty of them in Lisbon
 // still join one cluster or they are forty circles on one point.
+// **Once per state change, not once per view.** The three views each asked
+// for this and each paid for the convergence query and the horizon's walk
+// again (health review A, finding 12; B, finding 22); the graph view had
+// already noticed and kept its own answer by the state it was given. The
+// store hands every subscriber the *same* state object and replaces it only
+// in `set`, so that object is the key: while it stands, the answer stands.
+// Weakly, so the state the reader has left takes its answer with it.
+//
+// It is a cache and not a memo of a pure function of two arguments: a state
+// mutated in place would keep the answer it had before, and nothing mutates
+// one — `state.js` replaces.
+const held = new WeakMap();
+
 export function workingSet(atlas, state) {
+  const found = held.get(state);
+  // The atlas is compared as well as the state, because a test builds several
+  // and could hand two of them one state literal.
+  if (found && found.atlas === atlas) return found.value;
+  const value = assemble(atlas, state);
+  held.set(state, { atlas, value });
+  return value;
+}
+
+function assemble(atlas, state) {
   const lens = lensSet(atlas, state);
   const kept = (id) => !lens || lens.has(id);
   const filter = (ids) => new Set([...ids].filter(kept));
@@ -119,6 +142,21 @@ export function heldSet(working, { lens = false, reachable = false } = {}) {
   // An answer to "what did this lead to by 2011" that the time band had
   // hidden would not be an answer, so the map keeps the reachable set drawn —
   // drawn is not the same as alone, and it says which it means.
-  if (reachable) for (const id of working.reachable.keys()) ids.add(id);
+  //
+  // **Capped at what the panel lists** (health review B, finding 22). With a
+  // horizon open on an early event the reachable set is most of the corpus,
+  // and holding all of it out of the stacks meant nothing stacked at all —
+  // fifty-six thousand marks on their own at a hundred thousand events. The
+  // answer is ordered by depth and then by year (graph.js), so the first
+  // `SHOWN` of it are exactly the rows the panel offers to walk to, and a
+  // reader cannot aim at the rest without opening them first.
+  if (reachable) {
+    let left = SHOWN;
+    for (const id of working.reachable.keys()) {
+      if (left <= 0) break;
+      ids.add(id);
+      left -= 1;
+    }
+  }
   return ids;
 }

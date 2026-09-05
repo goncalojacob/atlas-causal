@@ -23,6 +23,7 @@ import { rowLanes, laneOf, barBox } from '../../src/lanes.js';
 import { createLinearScale } from '../../src/timeline-scale.js';
 import { overlaps, withMargin } from '../../src/util/window.js';
 import { buildAdjacency, reachableBy, convergence } from '../../src/graph.js';
+import { horizonSet, horizonResults, SHOWN } from '../../src/horizon.js';
 import { buildSearchIndex, search } from '../../src/search.js';
 
 // --- the generator ---------------------------------------------------------
@@ -324,7 +325,9 @@ function benchQueries() {
   row('convergence, a late node', measure(() => {
     convergence(adjacency, events[events.length - 1].id, []);
   }), `→ ${converging.length} branches`);
-  // What the page pays today: three views and the panel, each asking again.
+  // What one state change costs when each asker walks the graph itself: the
+  // map, the timeline and the graph view for the working set, and the panel
+  // for the list it draws.
   row('one state change, four askers', measure(() => {
     for (let i = 0; i < 3; i += 1) {
       reachableBy(adjacency, heaviest.id, horizon);
@@ -332,6 +335,48 @@ function benchQueries() {
     }
     reachableBy(adjacency, heaviest.id, horizon);
   }), '');
+  // And what it costs through the two files the views actually go through,
+  // which is where H4c put the answers. The same four asks; the graph is
+  // walked once. The panel then reads the paths of the forty rows it lists,
+  // which is what `pathTo` being lazy leaves to pay for.
+  const fake = {
+    adjacency,
+    events: adjacency.events,
+    extent: { min: 1400, max: 1999 },
+  };
+  // A state change that opens a different record, or moves the horizon year:
+  // one walk, then three answers from the cache, then the panel's forty
+  // paths. Five years past the end of the data, so every one of them is the
+  // same answer and the cache — which holds four — has dropped each by the
+  // time it comes round again.
+  let n = 0;
+  row('a new selection, memoised', measure(() => {
+    const asked = { selected: heaviest.id, horizon: 1999 + (n % 5), from: null, to: null };
+    n += 1;
+    for (let i = 0; i < 3; i += 1) {
+      horizonSet(fake, asked);
+      convergence(adjacency, heaviest.id, []);
+    }
+    let read = 0;
+    for (const found of horizonResults(fake, asked).slice(0, SHOWN)) {
+      if (found.disputed || found.first) read += found.edges.length;
+    }
+    if (read < 0) throw new Error('unreachable');
+  }), '→ walked once, read forty');
+  const state = { selected: heaviest.id, horizon: 1999, from: null, to: null };
+  row('the same selection, memoised', measure(() => {
+    for (let i = 0; i < 3; i += 1) {
+      horizonSet(fake, state);
+      convergence(adjacency, heaviest.id, []);
+    }
+    // The panel's forty rows, whose paths are what the lazy `pathTo` still
+    // owes. Counted so the reads cannot be optimised away.
+    let read = 0;
+    for (const found of horizonResults(fake, state).slice(0, SHOWN)) {
+      if (found.disputed || found.first) read += found.edges.length;
+    }
+    if (read < 0) throw new Error('unreachable');
+  }), '→ answered once, then read');
 }
 
 // The search scan, per keystroke, on the main thread. The threshold the

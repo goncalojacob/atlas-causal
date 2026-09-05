@@ -174,3 +174,16 @@ test('25 April, horizon 2011, on the repository dataset', async () => {
   }
   assert.equal(at, 'constitution-1976');
 });
+
+test('the convergence query is answered once for the same target and walk', async () => {
+  const adj = await adjacencyIn(FIXTURE_DATA);
+  const first = convergence(adj, 'fixture-event-t', ['fixture-event-d']);
+  assert.equal(convergence(adj, 'fixture-event-t', ['fixture-event-d']), first, 'one answer, shared');
+  // A different walk excludes different branches and is a different question.
+  const other = convergence(adj, 'fixture-event-t', []);
+  assert.notEqual(other, first);
+  assert.ok(other.length >= first.length, 'excluding less reports at least as much');
+  // Nothing that reads the shared list may write to it, so it is the same
+  // list in the same order every time it is handed out.
+  assert.deepEqual(convergence(adj, 'fixture-event-t', []).map((b) => b.edge.id), other.map((b) => b.edge.id));
+});

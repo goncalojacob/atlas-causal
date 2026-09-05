@@ -10,6 +10,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { defaultState } from '../src/state.js';
 import { workingSet, heldSet } from '../src/emphasis.js';
+import { SHOWN } from '../src/horizon.js';
 import { atlasOf, FIXTURE_DATA } from './helpers.mjs';
 
 const fixtureAtlas = () => atlasOf(FIXTURE_DATA);
@@ -124,4 +125,43 @@ test('a lens with nothing else open is what the graph draws one node at a time',
   // not part of what they hold; the graph asks for it by name.
   assert.equal(heldSet(w).size, 0);
   assert.deepEqual(sorted(heldSet(w, { lens: true })), [A, B]);
+});
+
+// --- what H4c changed: one working set per state change, and a capped hold
+
+test('the three views share one answer, and a new state is a new one', async () => {
+  const atlas = await fixtureAtlas();
+  const state = { ...defaultState(), selected: A, chain: [A_TO_B] };
+  // The store hands every subscriber the same object; asking again with it
+  // must not walk the graph again.
+  assert.equal(workingSet(atlas, state), workingSet(atlas, state));
+  // A state that says the same thing in a different object is a different
+  // state as far as this is concerned: the store replaces rather than
+  // mutates, so a fresh object means something changed.
+  const again = { ...state };
+  assert.notEqual(workingSet(atlas, again), workingSet(atlas, state));
+  assert.deepEqual(sorted(workingSet(atlas, again).path), sorted(workingSet(atlas, state).path));
+  // A second atlas is a second answer, even given the same state object.
+  const other = await fixtureAtlas();
+  assert.notEqual(workingSet(other, state), workingSet(atlas, state));
+  assert.deepEqual(sorted(workingSet(other, state).selected), sorted(workingSet(atlas, state).selected));
+});
+
+test('what is held out of the stacks stops at what the panel lists', async () => {
+  const atlas = await fixtureAtlas();
+  const state = { ...defaultState(), selected: A, horizon: 3000 };
+  const w = workingSet(atlas, state);
+  assert.ok(w.reachable.size > 0, 'the fixtures reach somewhere');
+  const held = heldSet(w, { reachable: true });
+  // Every reachable event of the fixtures fits under the cap, so all of them
+  // are held: the cap is a ceiling and not a filter.
+  for (const id of w.reachable.keys()) assert.ok(held.has(id), id);
+  // The cap itself, on a reachable set longer than it. The order is the
+  // panel's — depth, then year, then id — so the first SHOWN of the Map are
+  // the rows a reader can actually aim at.
+  const many = new Map(Array.from({ length: SHOWN + 25 }, (_, i) => [`far-${String(i).padStart(3, '0')}`, 1]));
+  const capped = heldSet({ ...w, reachable: many, selected: new Set(), path: new Set(), consequences: new Set(), converging: new Set(), actor: null, narrative: null }, { reachable: true });
+  assert.equal(capped.size, SHOWN);
+  assert.ok(capped.has('far-000'));
+  assert.ok(!capped.has(`far-${String(SHOWN).padStart(3, '0')}`), 'past the cap it may be stacked');
 });

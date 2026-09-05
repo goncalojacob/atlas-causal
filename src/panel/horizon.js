@@ -15,12 +15,13 @@
 
 import { esc } from '../util/esc.js';
 import { formatYear, fromAstronomical } from '../util/dates.js';
-import { horizonResults, horizonYear } from '../horizon.js';
+import { horizonResults, horizonYear, SHOWN } from '../horizon.js';
 import { badge, TYPE_LABEL } from './event.js';
 
-// A list, not a listing: past this many the answer stops being readable and
-// the count in the summary is the honest figure.
-const SHOWN = 40;
+// A list, not a listing: past `SHOWN` the answer stops being readable and
+// the count in the summary is the honest figure. The number is horizon.js's,
+// because the same one decides how much of the answer the map and the graph
+// keep out of their stacks.
 
 function rowHtml(ctx, result) {
   const { event, first, depth, disputed } = result;

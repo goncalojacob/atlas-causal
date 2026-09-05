@@ -6,6 +6,7 @@
 
 import { extent } from './util/dates.js';
 import { EDGE_TYPE_IDS } from './vocab.js';
+import { keyedCache, SEP } from './util/memo.js';
 
 // The order an answer list is sorted in is the order the types are declared
 // in (vocab.js): the strongest claim first, the loosest last.
@@ -62,8 +63,11 @@ export function antecedents(adj, id) {
 function reach(adj, id, direction) {
   const seen = new Set();
   const queue = [id];
-  while (queue.length) {
-    const current = queue.shift();
+  // Read with a moving index rather than with `shift`, which copies the whole
+  // queue down by one on every pop and is what made a breadth-first walk of a
+  // large graph quadratic (health review A, finding 12).
+  for (let at = 0; at < queue.length; at += 1) {
+    const current = queue[at];
     for (const edge of adj[direction].get(current) ?? []) {
       const next = direction === 'out' ? edge.to : edge.from;
       if (seen.has(next) || next === id) continue;
@@ -158,22 +162,43 @@ export function pathTo(best, target) {
 //
 // Ordered by path length, then by year, then by id, which is the order the
 // question is asked in: what did this lead to first, and how soon.
+// **The path is reconstructed only when it is read.** `edges`, `first`,
+// `last` and `disputed` are all one walk up the tree, and at twenty thousand
+// events this list is four thousand rows of which the panel shows forty and
+// the three views read none: they light a mark by its depth and nothing else.
+// Building every path cost the sum of their lengths on every state change
+// (health review A, finding 12). The four are getters on one prototype per
+// call — one object, not one per row — and the walk each row needs is done
+// once and kept.
 export function reachableBy(adj, id, horizon) {
   const best = shortestPaths(adj, id);
+  const paths = new Map();
+  const pathOf = (target) => {
+    let edges = paths.get(target);
+    if (!edges) {
+      edges = pathTo(best, target);
+      paths.set(target, edges);
+    }
+    return edges;
+  };
+  const row = {
+    get edges() { return pathOf(this.event.id); },
+    get first() { return pathOf(this.event.id)[0] ?? null; },
+    get last() {
+      const edges = pathOf(this.event.id);
+      return edges[edges.length - 1] ?? null;
+    },
+    get disputed() { return pathOf(this.event.id).some((e) => e.confidence === 'disputed'); },
+  };
   const results = [];
   for (const [eventId, step] of best) {
     const event = adj.events.get(eventId);
     if (!event || event.status !== 'active') continue;
     if (startOf(event) > horizon) continue;
-    const edges = pathTo(best, eventId);
-    results.push({
-      event,
-      depth: step.depth,
-      edges,
-      first: edges[0] ?? null,
-      last: edges[edges.length - 1] ?? null,
-      disputed: edges.some((e) => e.confidence === 'disputed'),
-    });
+    const found = Object.create(row);
+    found.event = event;
+    found.depth = step.depth;
+    results.push(found);
   }
   results.sort((a, b) => a.depth - b.depth
     || startOf(a.event) - startOf(b.event)
@@ -191,13 +216,31 @@ export function reachableBy(adj, id, horizon) {
 // connected graph nearly every node descends from the oldest one
 // (CONTEXT.md). Traversal passes through path nodes, so a branch feeding
 // the middle of the path is reported too. Do not "simplify" this back.
+// Memoised on the adjacency, the target and the walked path, because the
+// graph view, the event card and the working set each ask it and each asked
+// it separately on every state change (health review A, finding 12). Four
+// answers are held per graph, least recently used dropped first: a reader
+// walking a chain back and forth is asking about two or three targets.
+const answered = keyedCache(4);
+
 export function convergence(adj, target, path = []) {
+  // The path is a list of ids and its order is the reader's walk, so it keys
+  // as it is; two states with the same branches in a different order miss the
+  // cache and are answered again, which costs a walk and never an error.
+  return answered(adj, `${target}${SEP}${path.join(SEP)}`, () => converging(adj, target, path));
+}
+
+function converging(adj, target, path) {
   const excluded = new Set([...path, target]);
   const seen = new Set([target]);
   const results = [];
-  const queue = [{ id: target, depth: 0 }];
-  while (queue.length) {
-    const { id, depth } = queue.shift();
+  const queue = [target];
+  const depths = [0];
+  // An index rather than `shift`, as in `reach` above: at a hundred thousand
+  // ancestors the copy per pop was the walk.
+  for (let at = 0; at < queue.length; at += 1) {
+    const id = queue[at];
+    const depth = depths[at];
     for (const edge of adj.in.get(id) ?? []) {
       const source = edge.from;
       if (seen.has(source)) continue;
@@ -205,7 +248,8 @@ export function convergence(adj, target, path = []) {
       if (!excluded.has(source)) {
         results.push({ event: adj.events.get(source), edge, to: adj.events.get(id), depth: depth + 1 });
       }
-      queue.push({ id: source, depth: depth + 1 });
+      queue.push(source);
+      depths.push(depth + 1);
     }
   }
   results.sort((a, b) => compareEdges(a.edge, b.edge) || a.depth - b.depth);
