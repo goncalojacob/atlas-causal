@@ -3645,14 +3645,19 @@ fixtures and the three static pages — sixteen assertions, all passing:
 
 - Repo: `~/atlas-causal`, branch `m0`.
 - Pull request #1: https://github.com/goncalojacob/atlas-causal/pull/1 — its
-  body is **61,190 of GitHub's 65,536 bytes** after M24. Each milestone
-  that adds a section pays for it by cutting an older one to a summary that
-  points here: M8 cut M5's, M11 cut M7's, M12 cut M9's, M13 cut M10's, M14
-  cut M11's, M15 cut M12's, M16 cut M13's, M17 cut M14's, M23 cut M20's and
-  M8's, and **M24 cut M21's** (5.0 KB down to 1.2 KB) to pay for its own
-  2.9 KB. That leaves **4.3 KB of headroom**. M22's section is 18.8 KB, far
-  the largest and the obvious next cut; M4's, M6's and Map usability's are the
-  longest left written out.
+  body is **76,671 bytes** after H2. Each milestone that adds a section pays
+  for it by cutting an older one to a summary that points here: M8 cut M5's,
+  M11 cut M7's, M12 cut M9's, M13 cut M10's, M14 cut M11's, M15 cut M12's,
+  M16 cut M13's, M17 cut M14's, M23 cut M20's and M8's, and M24 cut M21's.
+  **The 65,536-byte figure this note used to give is wrong**: H1a, H1b and
+  H1c each added a section without cutting one, the body went past 65,536
+  during them, and H2's own PATCH of 76,671 bytes was accepted with HTTP 200.
+  Whatever the real cap is, it is not 64 KB — but nobody has found it, so
+  keep paying for a new section by cutting an old one. The longest sections
+  now are **M28's (5.0 KB)**, **H1b's (5.5 KB)** and **M29's (3.0 KB)**; the
+  first two are the obvious next cuts, since `STATUS.md` carries their detail
+  in full. M4's, M6's and Map usability's are the longest left written out
+  from the early milestones.
   A `#### Checks for Mn` heading contains the string `## Checks`, so an
   insertion anchored on the top-level section has to search for
   `\n## Checks\n` and assert it found exactly one. Editing the body from a
