@@ -18,6 +18,8 @@
     "created": { "$ref": "../common/provenance.json#/properties/created" },
     "revised": { "$ref": "../common/provenance.json#/properties/revised" },
     "review": { "$ref": "../common/provenance.json#/properties/review" },
+    "origin": { "$ref": "../common/provenance.json#/properties/origin" },
+    "retraction": { "$ref": "../common/provenance.json#/properties/retraction" },
     "wikidata": { "$ref": "../common/provenance.json#/properties/wikidata" },
     "wikipedia": { "$ref": "../common/provenance.json#/properties/wikipedia" },
     "sitelinks": { "$ref": "../common/provenance.json#/properties/sitelinks" },

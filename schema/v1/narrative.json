@@ -26,6 +26,8 @@
     "created": { "$ref": "../common/provenance.json#/properties/created" },
     "revised": { "$ref": "../common/provenance.json#/properties/revised" },
     "review": { "$ref": "../common/provenance.json#/properties/review" },
+    "origin": { "$ref": "../common/provenance.json#/properties/origin" },
+    "retraction": { "$ref": "../common/provenance.json#/properties/retraction" },
     "sources": {
       "description": "What the narrative rests on beyond the records it walks — the account being told is itself an argument, so it cites like an edge does (rule 6).",
       "$ref": "../common/provenance.json#/properties/sources"

@@ -18,6 +18,8 @@
     "created": { "$ref": "../common/provenance.json#/properties/created" },
     "revised": { "$ref": "../common/provenance.json#/properties/revised" },
     "review": { "$ref": "../common/provenance.json#/properties/review" },
+    "origin": { "$ref": "../common/provenance.json#/properties/origin" },
+    "retraction": { "$ref": "../common/provenance.json#/properties/retraction" },
     "sources": { "$ref": "../common/provenance.json#/properties/sources" },
     "actor": {
       "description": "The actor that held the territory. Must resolve to an active actor (rule 17).",

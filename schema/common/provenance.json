@@ -66,12 +66,70 @@
         { "$ref": "#/properties/created" }
       ]
     },
-    "review": {
-      "description": "What a reviewer should look at before signing this record, and why. Optional, and written by whoever drafted it; the review dashboard shows it as a filter and Sign removes it. Never a claim about the world — only about how much the record has been checked.",
+    "origin": {
+      "description": "Which writer created this record. Written once, by whatever created it, and never by an enrichment pass that fills in a field on somebody else's record: `origin` answers \"who wrote this record\", not \"who has touched it\" (rule 29). Absent means a person wrote it by hand. This is what the licence exception, the review queue and the imports key on, instead of matching an author's name against a literal string (health review A, findings 22 and 24; review B, finding 31).",
       "type": "object",
-      "required": ["flags"],
+      "required": ["tool"],
       "additionalProperties": false,
       "properties": {
+        "tool": {
+          "description": "The writer. `cshapes` and `wikidata` are the two imports, `assistant` is the drafting exception in CLAUDE.md, `form` is the contribution pipeline. Closed, for the reason the edge types are: a writer nobody has decided about is a line added here.",
+          "type": "string",
+          "enum": ["cshapes", "wikidata", "assistant", "form"]
+        },
+        "run": {
+          "description": "Which run of that tool, where the tool has a name for one: a branch, a date, an input digest. Optional, and never load-bearing.",
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        }
+      }
+    },
+    "retraction": {
+      "description": "Why this record was retracted, and when. Present exactly on a retracted record (rule 27). It is the record's own history and nothing deletes it — signing a tombstone clears what the reviewer was asked to look at and leaves this alone, which is what `review.note` could not promise (health review B, finding 16).",
+      "type": "object",
+      "required": ["on", "reason"],
+      "additionalProperties": false,
+      "properties": {
+        "on": { "$ref": "#/properties/created" },
+        "reason": {
+          "description": "Written by a person, like an explanation: the argument for withdrawing the record, not a label.",
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 2000
+        }
+      }
+    },
+    "review": {
+      "description": "What a reviewer should look at before signing this record, and why, and whether anybody has. Optional, and written by whoever drafted it. `status` and `signedBy` are the record's standing; `flags` and `citations` are the reviewer's to clear. Never a claim about the world — only about how much the record has been checked.",
+      "type": "object",
+      "required": [],
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "description": "`draft` is a record no person has read; `reviewed` is one somebody has read and signed, and requires `signedBy` (rule 28). Absent means neither has been claimed. This is what \"unreviewed\" means, in place of an author's name matching a literal string (health review A, finding 8).",
+          "type": "string",
+          "enum": ["draft", "reviewed"]
+        },
+        "signedBy": {
+          "description": "Who signed this record and on what day. An array because a record can be read by more than one person; the reviewer is also added to `authors`, which is attribution — this is the act.",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["name", "github", "on"],
+            "additionalProperties": false,
+            "properties": {
+              "name": { "type": "string", "minLength": 1, "maxLength": 120 },
+              "github": {
+                "oneOf": [
+                  { "type": "null" },
+                  { "type": "string", "pattern": "^[A-Za-z0-9-]{1,39}$" }
+                ]
+              },
+              "on": { "$ref": "#/properties/created" }
+            }
+          }
+        },
         "flags": {
           "type": "array",
           "items": { "type": "string", "minLength": 1, "maxLength": 40, "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" }

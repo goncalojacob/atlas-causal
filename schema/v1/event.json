@@ -18,12 +18,19 @@
     "created": { "$ref": "../common/provenance.json#/properties/created" },
     "revised": { "$ref": "../common/provenance.json#/properties/revised" },
     "review": { "$ref": "../common/provenance.json#/properties/review" },
+    "origin": { "$ref": "../common/provenance.json#/properties/origin" },
+    "retraction": { "$ref": "../common/provenance.json#/properties/retraction" },
     "wikidata": { "$ref": "../common/provenance.json#/properties/wikidata" },
     "wikipedia": { "$ref": "../common/provenance.json#/properties/wikipedia" },
     "sitelinks": { "$ref": "../common/provenance.json#/properties/sitelinks" },
     "body": { "$ref": "../common/provenance.json#/properties/body" },
     "sources": { "$ref": "../common/provenance.json#/properties/sources" },
     "title": { "type": "string", "minLength": 1, "maxLength": 200 },
+    "names": {
+      "description": "What else this event is called: the common name where the title is the formal one, the name in another language, the name a source uses. Optional, unlike an actor's or a place's, because the title is already the display name and this list exists for search — an event nobody calls anything else carries no key at all. Shapes checked by rule 18, as the other two are.",
+      "type": "array",
+      "items": { "type": "string", "minLength": 1, "maxLength": 200 }
+    },
     "summary": {
       "description": "Written by a person.",
       "type": "string",
