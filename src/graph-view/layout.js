@@ -55,6 +55,11 @@ const DOMAIN_PADDING = 0.04;
 // A few is enough: with columns of two to five nodes the barycentre settles
 // almost immediately, and every sweep is paid for in crossing counts.
 const SWEEPS = 6;
+// How many sweeps in a row may bring no improvement before the rest are
+// given up. Two, and never a clock: a layout that stopped because the
+// machine was busy would draw a different picture on a slower one, and this
+// file's first promise is that the same records give the same picture.
+const PATIENCE = 2;
 // The furthest apart two nodes of one column are placed, as a fraction of
 // the band's usable height. A column of two should not span the whole band.
 const MAX_GAP = 0.3;
@@ -88,7 +93,12 @@ function domainOf(dataExtent) {
 
 // Do two segments cross? Proper intersection only: edges that merely share
 // an endpoint are the graph doing its job, not a crossing.
-function crosses(a, b) {
+//
+// Exported so a test can count the crossings of a finished drawing the slow
+// way — every pair, no pruning — and hold the sweep below to the same
+// number. A second implementation of the geometry would only be testing
+// itself.
+export function crosses(a, b) {
   if (a.from === b.from || a.from === b.to || a.to === b.from || a.to === b.to) return false;
   const side = (p, q, r) => Math.sign((q.x - p.x) * (r.y - p.y) - (q.y - p.y) * (r.x - p.x));
   const d1 = side(a.p1, a.p2, b.p1);
@@ -213,12 +223,60 @@ export function layoutGraph({ events, edges, lanes = [], extent: dataExtent, wid
     }
     return xy;
   };
+  // Every pair of segments, minus the pairs that cannot possibly cross.
+  //
+  // The count is the exact one: `crosses` decides a proper intersection, and
+  // a proper intersection is a point on both segments, so it lies in both
+  // bounding boxes. Two segments whose boxes miss each other are therefore
+  // never a crossing, and not testing them changes the answer by nothing.
+  // This is a prune, not another metric — an adjacent-layer inversion count
+  // would have been a different number about a different picture (review of
+  // the health plan, finding 13).
+  //
+  // The sweep is over x, which here is the year: segments are taken in the
+  // order their earlier end falls, and the ones whose later end is already
+  // behind the sweep are dropped. What is left in hand is exactly the set
+  // whose span overlaps the segment being tested, and a pair meets exactly
+  // once — when the later-starting of the two comes up.
   const countCrossings = (positions) => {
     const xy = absolute(positions);
-    const segments = drawnEdges.map((e) => ({ from: e.from, to: e.to, p1: xy.get(e.from), p2: xy.get(e.to) }));
+    const segments = drawnEdges.map((e) => {
+      const p1 = xy.get(e.from);
+      const p2 = xy.get(e.to);
+      return {
+        from: e.from,
+        to: e.to,
+        p1,
+        p2,
+        x0: Math.min(p1.x, p2.x),
+        x1: Math.max(p1.x, p2.x),
+        y0: Math.min(p1.y, p2.y),
+        y1: Math.max(p1.y, p2.y),
+      };
+    });
+    // By the near end, ties by id: the count does not depend on the order —
+    // it is a whole number over unordered pairs — but the work should, so
+    // that a slow run and a fast one do the same amount of it.
+    segments.sort((a, b) => a.x0 - b.x0 || byId(a.from, b.from) || byId(a.to, b.to));
     let count = 0;
-    for (let i = 0; i < segments.length; i += 1) {
-      for (let j = i + 1; j < segments.length; j += 1) if (crosses(segments[i], segments[j])) count += 1;
+    const active = [];
+    for (const segment of segments) {
+      let kept = 0;
+      for (let i = 0; i < active.length; i += 1) {
+        if (active[i].x1 >= segment.x0) {
+          active[kept] = active[i];
+          kept += 1;
+        }
+      }
+      active.length = kept;
+      for (let i = 0; i < kept; i += 1) {
+        const other = active[i];
+        // The bands make this worth doing: two segments that share a stretch
+        // of years but sit in different bands are most of the pairs left.
+        if (other.y0 > segment.y1 || segment.y0 > other.y1) continue;
+        if (crosses(other, segment)) count += 1;
+      }
+      active.push(segment);
     }
     return count;
   };
@@ -239,6 +297,10 @@ export function layoutGraph({ events, edges, lanes = [], extent: dataExtent, wid
   // the layers already moved in this sweep, as a layered drawing is
   // ordinarily built; a column is resolved the moment it is computed so
   // the next layer reads where its neighbours actually ended up.
+  // Sweeps that brought nothing, in a row. The stop is on the count and on
+  // nothing else: `PATIENCE` flat sweeps and the rest are not worth the
+  // counting. Two runs of the same records stop at the same sweep.
+  let flat = 0;
   for (let sweep = 0; sweep < SWEEPS; sweep += 1) {
     const forward = sweep % 2 === 0;
     const near = forward ? before : after;
@@ -261,6 +323,10 @@ export function layoutGraph({ events, edges, lanes = [], extent: dataExtent, wid
     if (crossings < bestCrossings) {
       bestCrossings = crossings;
       best = positions;
+      flat = 0;
+    } else {
+      flat += 1;
+      if (flat >= PATIENCE) break;
     }
   }
 

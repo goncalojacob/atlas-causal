@@ -2,13 +2,18 @@
 // same records give the same picture, the order the records arrive in
 // changes nothing, and the barycentre pass never leaves the drawing more
 // tangled than the plain order it started from.
+//
+// Since H4b the crossings are counted by a sweep over x that never looks at
+// a pair whose spans miss each other. That is a prune and not a second
+// metric, so there is a fourth thing to be predictable about: the number it
+// reports is the number every pair would have given.
 
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile, readdir } from 'node:fs/promises';
 import path from 'node:path';
 import {
-  layoutGraph, stackLayout, BAND_HEIGHT, AXIS_HEIGHT, STACK_DISTANCE, MAX_ZOOM,
+  layoutGraph, stackLayout, crosses, BAND_HEIGHT, AXIS_HEIGHT, STACK_DISTANCE, MAX_ZOOM,
 } from '../src/graph-view/layout.js';
 import { lanesFor } from '../src/lanes.js';
 import { expandSpine } from '../src/data.js';
@@ -63,6 +68,20 @@ const shape = (l) => JSON.stringify({
   nodes: l.nodes.map(({ id, x, y, lane, year, weight }) => ({ id, x, y, lane, year, weight })),
   edges: l.edges.map(({ id, x1, y1, x2, y2 }) => ({ id, x1, y1, x2, y2 })),
 });
+
+// The crossings of a finished drawing counted the slow way: every pair of
+// lines, through the layout's own predicate, so that what is being compared
+// is the pruning and not two readings of the same geometry.
+function naiveCount(l) {
+  const segments = l.edges.map((e) => ({
+    from: e.from, to: e.to, p1: { x: e.x1, y: e.y1 }, p2: { x: e.x2, y: e.y2 },
+  }));
+  let count = 0;
+  for (let i = 0; i < segments.length; i += 1) {
+    for (let j = i + 1; j < segments.length; j += 1) if (crosses(segments[i], segments[j])) count += 1;
+  }
+  return count;
+}
 
 // A deterministic shuffle: no randomness in a test that has to be able to
 // fail for a reason.
@@ -365,8 +384,9 @@ test('the whole atlas at the default zoom: fewer nodes than events, and they add
 // What the brief was written for: three hundred events and five hundred
 // links, which is a hairball at one node each. The atlas holds a hundred and
 // thirty-four, where the merging is real but modest; this says what the same
-// rule does at the density it exists for.
-test('at the density the level of detail is for, most of the picture merges', () => {
+// rule does at the density it exists for. Seeded by arithmetic rather than
+// by a generator, so it is the same three hundred every run.
+function dense() {
   const regions = [];
   const events = [];
   for (let i = 0; i < 6; i += 1) regions.push({ id: `r${i}`, label: `R${i}`, order: i });
@@ -380,9 +400,13 @@ test('at the density the level of detail is for, most of the picture merges', ()
     if (from.id !== to.id) edges.push(edge(from.id, to.id));
   }
   const byPair = new Map(edges.map((e) => [e.id, e]));
-  const l = layoutGraph({
-    events, edges: [...byPair.values()], lanes: regionLanes(events, regions), extent: { min: 1900, max: 1959 },
-  });
+  return {
+    events, edges: [...byPair.values()], regions, lanes: regionLanes(events, regions), extent: { min: 1900, max: 1959 },
+  };
+}
+
+test('at the density the level of detail is for, most of the picture merges', () => {
+  const l = layoutGraph(dense());
   const s = stackLayout(l, { k: 1 });
   assert.equal(s.nodes.reduce((n, c) => n + c.count, 0), 300);
   assert.ok(s.nodes.length < 300 * 0.55, `${s.nodes.length} of 300 nodes at the default zoom`);
@@ -390,4 +414,51 @@ test('at the density the level of detail is for, most of the picture merges', ()
   assert.ok(s.edges.filter((e) => e.count > 1).length > 50, 'and the lines that merged carry a count');
   assert.ok(stackLayout(l, { k: 2 }).nodes.length > s.nodes.length, 'and it comes apart on the way in');
   assert.equal(stackLayout(l, { k: MAX_ZOOM }).nodes.length, 300);
+});
+
+// --- the crossings are counted, not estimated (H4b) ----------------------
+//
+// The sweep skips the pairs whose bounding boxes miss each other. A proper
+// intersection is a point on both segments and therefore inside both boxes,
+// so those pairs were never crossings and the number must not move. If it
+// ever does, the prune has become a different metric and the promise this
+// file opens with — never more tangled than the plain order — is about
+// something else.
+
+test('the swept count is the count every pair would have given', () => {
+  for (const [what, l] of [
+    ['the sample', layoutGraph(laid())],
+    ['the sample with no bands', layoutGraph({ ...sample(), lanes: [] })],
+    ['the crowded sample', layoutGraph(crowd())],
+    ['three hundred events', layoutGraph(dense())],
+    ['three hundred with no bands', layoutGraph({ ...dense(), lanes: [] })],
+  ]) {
+    assert.equal(l.crossings, naiveCount(l), what);
+  }
+});
+
+test('the whole atlas is counted pair for pair too', async () => {
+  const t = await topology();
+  const regions = JSON.parse(await readFile(path.join(ROOT, 'data', 'regions.json'), 'utf8'));
+  const events = t.events.filter((e) => e.status === 'active');
+  const ids = new Set(events.map((e) => e.id));
+  const edges = t.edges.filter((e) => e.status === 'active' && ids.has(e.from) && ids.has(e.to));
+  const starts = events.map((e) => e.when.start);
+  const dataExtent = { min: Math.min(...starts), max: Math.max(...starts) };
+  const lanes = regionLanes(events, [...regions].sort((a, b) => a.order - b.order));
+  for (const [what, groups] of [['bandless', []], ['regions', lanes]]) {
+    const l = layoutGraph({ events, edges, lanes: groups, extent: dataExtent });
+    assert.equal(l.crossings, naiveCount(l), what);
+  }
+});
+
+// The sweeps stop when two of them in a row bring nothing, and that is the
+// only reason they stop: no clock, no budget, nothing the machine decides.
+// Two runs of the same records therefore stop at the same sweep and draw
+// the same picture, which is what the first test in this file asserts and
+// what this one says the reason for.
+test('the early stop is on the count and never on the clock', () => {
+  const l = layoutGraph(dense());
+  assert.equal(shape(layoutGraph(dense())), shape(l));
+  assert.ok(l.crossings <= l.naiveCrossings, `${l.crossings} against ${l.naiveCrossings}`);
 });

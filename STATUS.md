@@ -85,6 +85,23 @@ lane, and is faster for the grid without being touched: H4c owns it and the
 window it clusters. Nothing under `src/graph-view/` or `src/timeline.js` was
 opened — H4b and H4c own those.
 
+2026-09-05, after H4b (`docs/health/h4b-brief.md`), on the branch `h4b` off
+`m0` and in parallel with H4a: **the graph view's hot paths.** The crossing
+count is pruned by a sweep over x with bounding boxes and reports the same
+number every pair would have given; the sweeps stop after two in a row that
+bring nothing, on the count and never on a clock; `layoutGraph` and
+`stackLayout` run on the band, its margin and whatever the reader is holding
+beyond it, memoised on the arrangement key H1b fixed; and the measurement at
+20,000 events asked for a Worker, so there is one, with the synchronous path
+as the fallback and as the only path the tests take. `layoutGraph` with no
+bands, on this machine: **161 edges 109.8 → 45.5 ms, 5,000 edges 6.6 s →
+0.65 s, 30,000 edges 412.6 s → 4.5 s**, and a twenty-year band of a
+thousand-year corpus of 30,000 edges is 283 ms where the whole of it is
+15.7 s. The crossing counts are unchanged at every size — 130 of 201 on the
+atlas, 135,577 of 211,414 at 5,000, 563,335 of 768,548 at 30,000 — which is
+the point: this is a prune and not a second metric. 759 tests. Code only; no
+record under `data/` changed and `data/index/` was not rebuilt.
+
 Before that, H3c (`docs/health/h3c-brief.md`), the health cycle's
 eighth run: **the old topology file is gone, and the spine is the only
 graph the site has.** `build-index.mjs` stops serialising it, the loader
@@ -3788,6 +3805,80 @@ gave that to the map and the timeline, and M25 did not widen it.
      functions of the same name answering different questions is how a
      wrong import gets written. The one that moved is the newer one.
 
+### H4b, the graph view's hot paths
+
+234. **The band moves the nodes now, which H3b said it must not.**
+     `ARCHITECTURE.md`'s window section had the graph laying out the whole
+     arrangement and windowing only the drawing — "nodes that moved every
+     time the band did would be worse than nodes that come and go" — and
+     left restricting the layout to H4b, against a measurement. The
+     measurement is 6.6 s at 5,000 edges and 412.6 s at 30,000 to place
+     events most of which the frame then throws away, so it is restricted:
+     the arrangement is the window, the fifty-year margin and what the
+     reader is holding beyond it. What pays the reversal back is the cache
+     — six arrangements by key — so moving the band and moving it home
+     again gives the reader the picture they had rather than a new one.
+     Panning, zooming, selecting and walking still move nothing.
+235. **The brief says code only and two sentences of `ARCHITECTURE.md`
+     were changed anyway.** The passage above asserts the opposite of what
+     the code now does and names H4b as what would change it; leaving the
+     specification saying the wrong thing is worse than the edit. The tree
+     gained one line for `arrangement.js` (which H1b added without one) and
+     the three new files. Nothing else in that file was touched, and no
+     revision number was taken: the shape of the system did not change.
+236. **What the reader is holding enters the arrangement key as six state
+     fields, and only when something held is outside the band.** A key of
+     the held ids would be a string the length of the corpus built on every
+     render, and — worse — it would move every node in the picture each
+     time the reader selected an event, which is the one thing the
+     arrangement promises never to do. So `holdingKey` is `selected`,
+     `chain`, `actor`, `narrative`, `step` and `horizon`, appended only
+     when some held event falls past the margin. That is a conservative
+     superset of what the held set is derived from (the lens and the
+     grouping are already in the key), so it can over-invalidate and never
+     under-. With the default window, which is the whole extent, nothing is
+     ever outside and the key is exactly the one H1b fixed.
+237. **The Worker exists, because the number asked for it.** The brief
+     forbids one unless a frame is still over 100 ms at 20,000 synthetic
+     events after the prune and the window. It is 7.0 s, so:
+     `layout-worker.js` (a `type: 'module'` Worker), `layout-message.js`
+     (what crosses, both ways, pure) and `layout-runner.js` (which of the
+     two paths, and the fallback). Only ids, years, weights and lanes
+     cross; a lane's membership travels as one integer per event, the year
+     bounds travel as the record writes them because `toAstronomical`
+     moves a year before the era by one and would do it twice, and the
+     records are re-attached on this side. Nothing in the Worker fetches
+     anything, so neither the data root nor `?fixtures=1` can be got wrong
+     there (review of the health plan, finding 14). **The threshold is 600
+     events**, where `layoutGraph` reaches about a tenth of a second here;
+     below it no thread is ever started, which is every corpus this atlas
+     has held — 137 active events — and the reason nothing about the site
+     changes at today's size. The synchronous path is the fallback for an
+     absent thread, a thread that fails and a thread that goes away, and it
+     is the only path `node --test` takes.
+238. **`crosses` is exported.** The test that holds the swept count to the
+     count every pair would have given needs the predicate itself; a second
+     implementation of the geometry in the test would only have been
+     testing itself.
+239. **The stacking is filed under the layout's key, not the arrangement's
+     key.** While an arrangement too large for a frame is away, the picture
+     on screen is still the previous one, and a stacking of it filed under
+     the key being waited for would later be handed to a layout it was not
+     made from. `laidFor` is the key of what is actually in `laid`.
+240. **The numbers were measured with a scratch script, not with a bench in
+     the repository.** `tests/bench/run.mjs` and its seeded generator are
+     H4d's — seeded, never its own output, and deliberately not matching
+     `*.test.mjs` (review of the health plan, finding 26) — so H4b measured
+     with a script of that shape run outside the tree and left there,
+     rather than committing half a harness for H4d to inherit. The
+     generator is a linear congruential sequence, the same graph every run;
+     the sizes are the atlas itself through the spine (137 events, 161
+     edges) and synthetic graphs of 2,500/5,000, 15,000/30,000 and
+     20,000/40,000, each spread over two centuries with mostly-nearby links
+     forward in time. Anyone re-measuring will get different absolute
+     numbers on different hardware; the ratios are what the deviations
+     above lean on.
+
 ## Dates to verify
 
 Everything below was written from memory and is where the owner's review
@@ -4299,3 +4390,6 @@ H3c done
 H4a started 2026-09-05T18:11:57Z by scheduled
 
 H4a done
+
+H4b started 2026-09-05T18:11:54Z by scheduled (branch h4b)
+H4b done
