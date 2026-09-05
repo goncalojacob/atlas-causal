@@ -702,7 +702,7 @@ export function applyValues(kind, record, values) {
   // existing label that merely differs in case is still the record's own, so
   // it is kept until the names themselves are edited.
   if (kind === 'place' && isObject(record?.where) && isObject(built.where)
-    && (record.names ?? []).join(' ') === built.names.join(' ')) {
+    && (record.names ?? []).join('\u001f') === built.names.join('\u001f')) {
     built.where.label = record.where.label;
   }
   // An edge that is not disputed has no dispute block, which the form leaves

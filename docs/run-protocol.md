@@ -84,3 +84,14 @@ migrated hours later.
   `awk` or `sed -n` for checks a brief relies on.
 - **Daytime runs today** supersede "builds after 18:00" in `STATUS.md`,
   at the owner's request of 4 September.
+
+## Amendments, 5 September 2026
+
+- **`grep` prints nothing on a file that carries a control byte**, because it
+  reads the file as binary. That is what the amendment of 4 September was
+  seeing: `src/validate/rules.js`, `src/contribute/bundle.js` and
+  `tools/migrate-places.mjs` each held a literal NUL as a separator. H1a
+  replaced all three with U+001F, the unit separator, written as the escape
+  `\u001f`, and `site.test.mjs` now fails on any control byte under `src/`,
+  `tools/` or `tests/`. `awk` and `sed -n` remain the fallback for a file
+  outside those trees; `grep -a` reads one anyway.

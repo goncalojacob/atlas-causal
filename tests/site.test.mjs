@@ -12,12 +12,12 @@ import { ROOT } from './helpers.mjs';
 import { geometryPath } from '../src/map/layers/land.js';
 import { createProjection } from '../src/map/projection.js';
 
-async function walk(dir) {
+async function walk(dir, ext = '.js') {
   const out = [];
   for (const entry of await readdir(dir, { withFileTypes: true })) {
     const full = path.join(dir, entry.name);
-    if (entry.isDirectory()) out.push(...await walk(full));
-    else if (entry.name.endsWith('.js')) out.push(full);
+    if (entry.isDirectory()) out.push(...await walk(full, ext));
+    else if (entry.name.endsWith(ext)) out.push(full);
   }
   return out;
 }
@@ -67,6 +67,25 @@ test('no hex colour outside the tokens in style.css', async () => {
   assert.doesNotMatch(rest, /#[0-9a-f]{3,8}\b/i);
   const js = await Promise.all((await walk(path.join(ROOT, 'src'))).map((f) => readFile(f, 'utf8')));
   for (const text of js) assert.doesNotMatch(text, /['"]#[0-9a-f]{6}['"]/i);
+});
+
+// A control character written as a byte rather than as an escape makes the
+// whole file binary: grep reads it as nothing at all and prints nothing where
+// it should match, which is how one separator in rules.js cost a review an
+// afternoon. Every source file is text, and a separator is `\u001f`.
+test('no source file carries a control byte grep will not read', async () => {
+  const files = [
+    ...await walk(path.join(ROOT, 'src')),
+    ...await walk(path.join(ROOT, 'tools'), '.mjs'),
+    ...await walk(path.join(ROOT, 'tests'), '.mjs'),
+  ];
+  assert.ok(files.length >= 40);
+  for (const file of files) {
+    const bytes = await readFile(file);
+    // Tab, newline and carriage return are text; nothing else below space is.
+    const bad = bytes.findIndex((b) => b < 0x20 && b !== 0x09 && b !== 0x0a && b !== 0x0d);
+    assert.equal(bad, -1, `${path.relative(ROOT, file)} carries a control byte at ${bad}`);
+  }
 });
 
 test('geometryPath turns rings into closed subpaths', () => {

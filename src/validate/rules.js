@@ -445,7 +445,11 @@ export function checkRules(records, topology = {}) {
         if (!lookup(a.actor, 'actor')) error(14, r, `/actors/${i}/actor`, `"${a.actor}" is not an actor record`);
         const role = normalizeRole(a.role);
         if (role === '') error(14, r, `/actors/${i}/role`, 'a role says what the actor did in this event');
-        const key = `${a.actor} ${role}`;
+        // U+001F, the unit separator, and written as an escape: a literal
+        // NUL byte here made the whole file binary to grep, which reads it
+        // as nothing at all. Any character that cannot occur in an id or a
+        // role would do; this is the one that means "these are two fields".
+        const key = `${a.actor}\u001f${role}`;
         if (listed.has(key)) error(14, r, `/actors/${i}`, `"${a.actor}" is already listed in this event as "${role}"`);
         listed.add(key);
       });
