@@ -18,7 +18,11 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
   "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
   "review": {
+    "status": "draft",
     "flags": [
       "imported-facts",
       "summary-drafted",
@@ -27,7 +31,10 @@
     "note": "Retracted in M21 because the atlas then held no other São Toméan record at all. M22 wired the election of July 1975, which gave the massacre somewhere to reach, and reinstated it under the one-edge rule of 4 September 2026. The death toll is disputed and the record says so rather than choosing."
   },
   "wikidata": "Q1851212",
-  "sitelinks": 14,
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-09-04"
+  },
   "wikipedia": {
     "en": "Batepá massacre",
     "pt": "Massacre de Batepá"

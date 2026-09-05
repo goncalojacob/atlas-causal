@@ -18,7 +18,11 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
   "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
   "review": {
+    "status": "draft",
     "flags": [
       "imported-facts",
       "summary-drafted",
@@ -27,7 +31,10 @@
     "note": "Retracted in M21 both as outside the atlas — this is French Guinea, Conakry and not Bissau — and for having only one edge. The second reason is gone under the rule of 4 September 2026, and the first was never quite right: the atlas already keeps the referendum of 1958 for the same Portuguese reason. The other four Conakry records the import caught stay retracted, having no edge at all."
   },
   "wikidata": "Q1285560",
-  "sitelinks": 3,
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-09-04"
+  },
   "wikipedia": {
     "en": "1957 Guinean Territorial Assembly election"
   },

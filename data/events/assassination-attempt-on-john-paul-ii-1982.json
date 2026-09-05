@@ -14,15 +14,24 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
   "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M22: the attempt on John Paul II at Fátima on 12 May 1982, a year and a day after the attempt in Saint Peter's Square. The atlas holds nothing about the Church in Portugal after 1974 and nothing about Fátima, so there is nothing for it to attach to in either direction, and the papal visit it interrupted is not itself a record here."
+  },
   "review": {
     "flags": [
       "imported-facts",
       "m22-retracted"
-    ],
-    "note": "Retracted in M22: the attempt on John Paul II at Fátima on 12 May 1982, a year and a day after the attempt in Saint Peter's Square. The atlas holds nothing about the Church in Portugal after 1974 and nothing about Fátima, so there is nothing for it to attach to in either direction, and the papal visit it interrupted is not itself a record here."
+    ]
   },
   "wikidata": "Q9386425",
-  "sitelinks": 1,
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-09-04"
+  },
   "sources": [
     {
       "source": "wikidata",

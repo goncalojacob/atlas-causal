@@ -14,12 +14,21 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-02",
   "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
   "wikidata": "Q60114",
   "wikipedia": {
     "en": "António Ramalho Eanes",
     "pt": "António Ramalho Eanes"
   },
-  "sitelinks": 38,
+  "sitelinks": {
+    "count": 38,
+    "on": "2026-09-02"
+  },
   "sources": [
     {
       "source": "telo-2007-historia-contemporanea",

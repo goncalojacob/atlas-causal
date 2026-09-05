@@ -18,14 +18,21 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
   "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
   "review": {
+    "status": "draft",
     "flags": [
       "imported-facts",
       "summary-drafted"
     ]
   },
   "wikidata": "Q250247",
-  "sitelinks": 7,
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-09-04"
+  },
   "wikipedia": {
     "en": "2007 Portuguese abortion referendum",
     "pt": "Referendo à despenalização do aborto em Portugal (2007)"

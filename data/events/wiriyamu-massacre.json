@@ -14,6 +14,9 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
   "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
   "review": {
     "flags": [
       "imported-facts",
@@ -22,7 +25,10 @@
     "note": "Merged in M21 into wiriyamu-massacre-1972, which is the same event: the killing of the civilian population of Wiriyamu in Tete province by Portuguese troops in December 1972, Operation Marosca, which the atlas already holds and wires. This record keeps the Wikidata id and the two Wikipedia links the import brought, and names its survivor rather than becoming an anonymous tombstone."
   },
   "wikidata": "Q51750785",
-  "sitelinks": 9,
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-09-04"
+  },
   "wikipedia": {
     "en": "Wiriyamu Massacre",
     "pt": "Massacre de Wiriyamu"

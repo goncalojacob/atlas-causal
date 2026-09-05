@@ -14,7 +14,11 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-02",
   "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
   "review": {
+    "status": "draft",
     "flags": [
       "date"
     ],
@@ -25,7 +29,10 @@
     "en": "African Party for the Independence of Guinea and Cape Verde",
     "pt": "Partido Africano para a Independência da Guiné e Cabo Verde"
   },
-  "sitelinks": 35,
+  "sitelinks": {
+    "count": 35,
+    "on": "2026-09-02"
+  },
   "sources": [
     {
       "source": "macqueen-1997-decolonization",

@@ -14,7 +14,11 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-02",
   "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
   "review": {
+    "status": "draft",
     "flags": [
       "place"
     ],
@@ -25,7 +29,10 @@
     "en": "Eduardo Mondlane",
     "pt": "Eduardo Mondlane"
   },
-  "sitelinks": 29,
+  "sitelinks": {
+    "count": 29,
+    "on": "2026-09-02"
+  },
   "sources": [
     {
       "source": "macqueen-1997-decolonization",

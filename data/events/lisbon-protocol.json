@@ -14,15 +14,24 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
   "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M22: the protocol of 23 May 1992 by which Belarus, Kazakhstan, Russia and Ukraine were recognised as successors to the Soviet Union under START I. Lisbon was the venue and Portugal was the host, and neither is a causal part of the thing. The atlas is about Portugal, and a treaty that happens to be signed here belongs to the history of what it settles; there is nothing in the atlas for it to attach to in either direction."
+  },
   "review": {
     "flags": [
       "imported-facts",
       "m22-retracted"
-    ],
-    "note": "Retracted in M22: the protocol of 23 May 1992 by which Belarus, Kazakhstan, Russia and Ukraine were recognised as successors to the Soviet Union under START I. Lisbon was the venue and Portugal was the host, and neither is a causal part of the thing. The atlas is about Portugal, and a treaty that happens to be signed here belongs to the history of what it settles; there is nothing in the atlas for it to attach to in either direction."
+    ]
   },
   "wikidata": "Q4263317",
-  "sitelinks": 16,
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-09-04"
+  },
   "wikipedia": {
     "en": "Lisbon Protocol",
     "pt": "Protocolo de Lisboa"

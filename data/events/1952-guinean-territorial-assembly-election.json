@@ -14,15 +14,24 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
   "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M21 as outside the atlas: this is FRENCH Guinea — Conakry, not Bissau — and the import caught it on a class query rather than on any Portuguese connection. The cached lead is one sentence giving a date. The one thing French Guinea does for this atlas happens in 1958 and is wired there."
+  },
   "review": {
     "flags": [
       "imported-facts",
       "m21-retracted"
-    ],
-    "note": "Retracted in M21 as outside the atlas: this is FRENCH Guinea — Conakry, not Bissau — and the import caught it on a class query rather than on any Portuguese connection. The cached lead is one sentence giving a date. The one thing French Guinea does for this atlas happens in 1958 and is wired there."
+    ]
   },
   "wikidata": "Q22090902",
-  "sitelinks": 2,
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-09-04"
+  },
   "wikipedia": {
     "en": "1952 Guinean Territorial Assembly election"
   },

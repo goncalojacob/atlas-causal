@@ -14,15 +14,24 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
   "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M22: the European Parliament election of 25 May 2014 in Portugal. The atlas keeps the first exercise of an institution and the ballot at which it became a cycle, and retracts the routine repetitions after them; the seventh European election is one. The only link available is the constitutional one the earlier records already carry. Revisit if a consequence is written."
+  },
   "review": {
     "flags": [
       "imported-facts",
       "m22-retracted"
-    ],
-    "note": "Retracted in M22: the European Parliament election of 25 May 2014 in Portugal. The atlas keeps the first exercise of an institution and the ballot at which it became a cycle, and retracts the routine repetitions after them; the seventh European election is one. The only link available is the constitutional one the earlier records already carry. Revisit if a consequence is written."
+    ]
   },
   "wikidata": "Q15411498",
-  "sitelinks": 11,
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-09-04"
+  },
   "wikipedia": {
     "en": "2014 European Parliament election in Portugal",
     "pt": "Eleições europeias de 2014 (Portugal)"

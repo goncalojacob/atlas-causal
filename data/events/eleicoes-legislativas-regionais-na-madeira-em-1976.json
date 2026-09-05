@@ -18,14 +18,21 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
   "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
   "review": {
+    "status": "draft",
     "flags": [
       "imported-facts",
       "summary-drafted"
     ]
   },
   "wikidata": "Q10271597",
-  "sitelinks": 2,
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-09-04"
+  },
   "wikipedia": {
     "pt": "Eleições legislativas regionais na Madeira em 1976"
   },

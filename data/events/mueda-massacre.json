@@ -18,7 +18,11 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
   "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
   "review": {
+    "status": "draft",
     "flags": [
       "imported-facts",
       "summary-drafted",
@@ -27,7 +31,10 @@
     "note": "Retracted in M21 under the two-edge rule and reinstated in M22 under the rule the owner set on 4 September 2026: one honest edge, in either direction, is enough to keep an event. The M21 note said this record had exactly one, and named it; the edge M22 wrote is that one."
   },
   "wikidata": "Q10327164",
-  "sitelinks": 3,
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-09-04"
+  },
   "wikipedia": {
     "pt": "Massacre de Mueda"
   },

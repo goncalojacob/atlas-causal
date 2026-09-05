@@ -14,15 +14,24 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
   "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M22: the European Parliament election of June 1999 across the fifteen member states, as an event of the Union rather than of Portugal. The import brought both this and the Portuguese ballot of the same month as separate records; the Portuguese one is retracted as a routine repetition, and this one because the atlas has no lane for a Union-wide event and would have to invent Portugal's part in it to keep it."
+  },
   "review": {
     "flags": [
       "imported-facts",
       "m22-retracted"
-    ],
-    "note": "Retracted in M22: the European Parliament election of June 1999 across the fifteen member states, as an event of the Union rather than of Portugal. The import brought both this and the Portuguese ballot of the same month as separate records; the Portuguese one is retracted as a routine repetition, and this one because the atlas has no lane for a Union-wide event and would have to invent Portugal's part in it to keep it."
+    ]
   },
   "wikidata": "Q1851815",
-  "sitelinks": 20,
+  "sitelinks": {
+    "count": 20,
+    "on": "2026-09-04"
+  },
   "wikipedia": {
     "en": "1999 European Parliament election",
     "pt": "Eleições parlamentares europeias de 1999"

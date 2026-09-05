@@ -14,12 +14,21 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-02",
   "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
   "wikidata": "Q383401",
   "wikipedia": {
     "en": "Afonso Costa",
     "pt": "Afonso Costa"
   },
-  "sitelinks": 16,
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-09-02"
+  },
   "sources": [
     {
       "source": "wheeler-1978-republican-portugal",

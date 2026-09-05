@@ -18,7 +18,11 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
   "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
   "review": {
+    "status": "draft",
     "flags": [
       "imported-facts",
       "summary-drafted",
@@ -27,7 +31,10 @@
     "note": "The import took 8 June 1998 from the Wikidata item; both cached Wikipedia leads give 28 June, and M22 corrected the record to the 28th. A reviewer should confirm the day against the Diário da República before signing, and the Wikidata item is worth correcting upstream."
   },
   "wikidata": "Q2105455",
-  "sitelinks": 4,
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-09-04"
+  },
   "wikipedia": {
     "en": "1998 Portuguese abortion referendum",
     "pt": "Referendo à despenalização do aborto em Portugal (1998)"

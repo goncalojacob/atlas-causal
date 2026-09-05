@@ -14,15 +14,24 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
   "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M22: the oil spill of 14 July 1989, caused by an accident at the port of Sines, which fouled the Alentejo coast south of Sines and worst of all the beach at Almograve. The atlas holds nothing about Sines, about the refinery complex or about environmental regulation, so there is nothing for it to attach to in either direction."
+  },
   "review": {
     "flags": [
       "imported-facts",
       "m22-retracted"
-    ],
-    "note": "Retracted in M22: the oil spill of 14 July 1989, caused by an accident at the port of Sines, which fouled the Alentejo coast south of Sines and worst of all the beach at Almograve. The atlas holds nothing about Sines, about the refinery complex or about environmental regulation, so there is nothing for it to attach to in either direction."
+    ]
   },
   "wikidata": "Q112726955",
-  "sitelinks": 1,
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-09-04"
+  },
   "wikipedia": {
     "pt": "Desastre ambiental de Almograve"
   },

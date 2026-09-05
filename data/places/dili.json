@@ -14,12 +14,21 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-03",
   "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
   "wikidata": "Q9310",
   "wikipedia": {
     "en": "Dili",
     "pt": "Díli"
   },
-  "sitelinks": 145,
+  "sitelinks": {
+    "count": 145,
+    "on": "2026-09-03"
+  },
   "sources": [],
   "names": [
     "Dili"

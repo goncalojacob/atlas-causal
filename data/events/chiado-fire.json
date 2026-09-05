@@ -14,15 +14,24 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
   "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M22: the fire that began in the Grandella store on 25 August 1988 and destroyed a large part of the Chiado. Its consequence is the reconstruction Álvaro Siza directed over the following two decades, which the atlas does not hold; without that record there is nothing here for an edge to reach, and a link to anything else would be invented. Revisit when the reconstruction is written."
+  },
   "review": {
     "flags": [
       "imported-facts",
       "m22-retracted"
-    ],
-    "note": "Retracted in M22: the fire that began in the Grandella store on 25 August 1988 and destroyed a large part of the Chiado. Its consequence is the reconstruction Álvaro Siza directed over the following two decades, which the atlas does not hold; without that record there is nothing here for an edge to reach, and a link to anything else would be invented. Revisit when the reconstruction is written."
+    ]
   },
   "wikidata": "Q10301908",
-  "sitelinks": 2,
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-09-04"
+  },
   "wikipedia": {
     "pt": "Incêndio do Chiado"
   },

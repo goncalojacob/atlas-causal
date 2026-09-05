@@ -14,15 +14,24 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
   "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M22: the fires of September 2024 in the north and centre, the worst season since 2017. The atlas holds nothing it can be argued to have changed — no record of the response, the inquiry or the rules that followed — and the disasters it does hold, the fires of 2017, are wired to each other and to the reform they produced. A disaster with no recorded consequence has no honest edge."
+  },
   "review": {
     "flags": [
       "imported-facts",
       "m22-retracted"
-    ],
-    "note": "Retracted in M22: the fires of September 2024 in the north and centre, the worst season since 2017. The atlas holds nothing it can be argued to have changed — no record of the response, the inquiry or the rules that followed — and the disasters it does hold, the fires of 2017, are wired to each other and to the reform they produced. A disaster with no recorded consequence has no honest edge."
+    ]
   },
   "wikidata": "Q130324056",
-  "sitelinks": 3,
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-09-04"
+  },
   "wikipedia": {
     "en": "2024 Portugal wildfires",
     "pt": "Incêndios florestais de Portugal em 2024"

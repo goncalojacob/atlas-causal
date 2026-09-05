@@ -14,15 +14,24 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
   "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M21: 7 November 1965, all 130 seats to the National Union; the Democratic Opposition stood in Lisbon, Porto, Leiria, Viseu and Braga and took about a third of the vote in the two cities. The presidential election of the same year is the one that did something, and it is wired."
+  },
   "review": {
     "flags": [
       "imported-facts",
       "m21-retracted"
-    ],
-    "note": "Retracted in M21: 7 November 1965, all 130 seats to the National Union; the Democratic Opposition stood in Lisbon, Porto, Leiria, Viseu and Braga and took about a third of the vote in the two cities. The presidential election of the same year is the one that did something, and it is wired."
+    ]
   },
   "wikidata": "Q7232768",
-  "sitelinks": 4,
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-09-04"
+  },
   "wikipedia": {
     "en": "1965 Portuguese legislative election",
     "pt": "Eleições legislativas portuguesas de 1965"

@@ -14,15 +14,24 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
   "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M22: the earthquake of 17 December 2009 off Cape São Vicente, felt across the south of the country and without serious damage. As with the Azorean earthquakes of 1980 and 1998, the atlas holds nothing it can be argued to have changed."
+  },
   "review": {
     "flags": [
       "imported-facts",
       "m22-retracted"
-    ],
-    "note": "Retracted in M22: the earthquake of 17 December 2009 off Cape São Vicente, felt across the south of the country and without serious damage. As with the Azorean earthquakes of 1980 and 1998, the atlas holds nothing it can be argued to have changed."
+    ]
   },
   "wikidata": "Q6143030",
-  "sitelinks": 3,
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-09-04"
+  },
   "wikipedia": {
     "pt": "Sismo de Portugal de 2009"
   },

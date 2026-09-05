@@ -14,7 +14,11 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-02",
   "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
   "review": {
+    "status": "draft",
     "flags": [
       "wikidata-assigned-by-assistant"
     ]
@@ -24,7 +28,10 @@
     "en": "Handover of Macau",
     "pt": "Transferência da soberania de Macau"
   },
-  "sitelinks": 19,
+  "sitelinks": {
+    "count": 19,
+    "on": "2026-09-02"
+  },
   "sources": [
     {
       "source": "costa-pinto-2003-contemporary-portugal",

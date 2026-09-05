@@ -14,7 +14,11 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-02",
   "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
   "review": {
+    "status": "draft",
     "flags": [
       "date",
       "wikidata-assigned-by-assistant"
@@ -26,7 +30,10 @@
     "en": "Expo '98",
     "pt": "Exposição Mundial de 1998"
   },
-  "sitelinks": 23,
+  "sitelinks": {
+    "count": 23,
+    "on": "2026-09-02"
+  },
   "sources": [
     {
       "source": "telo-2007-historia-contemporanea",

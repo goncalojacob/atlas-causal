@@ -14,12 +14,21 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-02",
   "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
   "wikidata": "Q1606377",
   "wikipedia": {
     "en": "Henrique Galvão",
     "pt": "Henrique Galvão"
   },
-  "sitelinks": 10,
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-09-02"
+  },
   "sources": [
     {
       "source": "rosas-1994-estado-novo",

@@ -14,15 +14,24 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
   "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M22: the European Parliament election of 26 May 2019 in Portugal. The atlas keeps the first exercise of an institution and the ballot at which it became a cycle, and retracts the routine repetitions after them; the eighth European election is one. The only link available is the constitutional one the earlier records already carry. Revisit if a consequence is written."
+  },
   "review": {
     "flags": [
       "imported-facts",
       "m22-retracted"
-    ],
-    "note": "Retracted in M22: the European Parliament election of 26 May 2019 in Portugal. The atlas keeps the first exercise of an institution and the ballot at which it became a cycle, and retracts the routine repetitions after them; the eighth European election is one. The only link available is the constitutional one the earlier records already carry. Revisit if a consequence is written."
+    ]
   },
   "wikidata": "Q56192519",
-  "sitelinks": 11,
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-09-04"
+  },
   "wikipedia": {
     "en": "2019 European Parliament election in Portugal",
     "pt": "Eleições europeias de 2019 (Portugal)"

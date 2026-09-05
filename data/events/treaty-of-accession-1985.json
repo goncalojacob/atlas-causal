@@ -18,14 +18,21 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
   "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
   "review": {
+    "status": "draft",
     "flags": [
       "imported-facts",
       "summary-drafted"
     ]
   },
   "wikidata": "Q9360737",
-  "sitelinks": 9,
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-09-04"
+  },
   "wikipedia": {
     "en": "Treaty of Accession 1985"
   },

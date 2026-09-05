@@ -14,6 +14,9 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
   "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
   "review": {
     "flags": [
       "imported-facts",
@@ -22,7 +25,10 @@
     "note": "Merged in M21 into constitution-1933, which is the same event: the atlas already dates the Constitution of 1933 to the plebiscite of 19 March and its summary describes that vote, abstentions counted as approval and all. Rather than retract, this record names its survivor, and it keeps the Wikidata id and the two Wikipedia links the import brought — constitution-1933 carries no identity, and whether the referendum’s item is the right one for it is a question for review, not for this run."
   },
   "wikidata": "Q7232706",
-  "sitelinks": 5,
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-09-04"
+  },
   "wikipedia": {
     "en": "1933 Portuguese constitutional referendum",
     "pt": "Referendo constitucional em Portugal (1933)"

@@ -14,12 +14,21 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-02",
   "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
   "wikidata": "Q7184",
   "wikipedia": {
     "en": "NATO",
     "pt": "Organização do Tratado do Atlântico Norte"
   },
-  "sitelinks": 201,
+  "sitelinks": {
+    "count": 201,
+    "on": "2026-09-02"
+  },
   "sources": [
     {
       "source": "telo-2007-historia-contemporanea",

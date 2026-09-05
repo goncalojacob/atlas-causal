@@ -14,15 +14,24 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
   "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M22: the spread of Xylella fastidiosa through southern European olive groves from 2013, which reached Portugal in 2019. The atlas holds nothing it can be argued to have changed — no record of the response, the inquiry or the rules that followed — and the disasters it does hold, the fires of 2017, are wired to each other and to the reform they produced. A disaster with no recorded consequence has no honest edge."
+  },
   "review": {
     "flags": [
       "imported-facts",
       "m22-retracted"
-    ],
-    "note": "Retracted in M22: the spread of Xylella fastidiosa through southern European olive groves from 2013, which reached Portugal in 2019. The atlas holds nothing it can be argued to have changed — no record of the response, the inquiry or the rules that followed — and the disasters it does hold, the fires of 2017, are wired to each other and to the reform they produced. A disaster with no recorded consequence has no honest edge."
+    ]
   },
   "wikidata": "Q90536205",
-  "sitelinks": 0,
+  "sitelinks": {
+    "count": 0,
+    "on": "2026-09-04"
+  },
   "sources": [
     {
       "source": "wikidata",

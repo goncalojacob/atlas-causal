@@ -14,7 +14,11 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-02",
   "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
   "review": {
+    "status": "draft",
     "flags": [
       "date"
     ],
@@ -25,7 +29,10 @@
     "en": "Henrique Mitchell de Paiva Cabral Couceiro",
     "pt": "Paiva Couceiro"
   },
-  "sitelinks": 9,
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-09-02"
+  },
   "sources": [
     {
       "source": "wheeler-1978-republican-portugal",

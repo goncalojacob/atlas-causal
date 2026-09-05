@@ -14,15 +14,24 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
   "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M21: no cached lead in either language, and all the import recovered beyond the title was the Wikidata description, \"attack perpetrated on March 9, 1973\". This one names the Quartel-Mestre-General building in Lisbon. It is one of three such attacks the import caught on two consecutive days, which the atlas cannot tell apart or source. Three records out of three one-line descriptions would be invention, not record."
+  },
   "review": {
     "flags": [
       "imported-facts",
       "m21-retracted"
-    ],
-    "note": "Retracted in M21: no cached lead in either language, and all the import recovered beyond the title was the Wikidata description, \"attack perpetrated on March 9, 1973\". This one names the Quartel-Mestre-General building in Lisbon. It is one of three such attacks the import caught on two consecutive days, which the atlas cannot tell apart or source. Three records out of three one-line descriptions would be invention, not record."
+    ]
   },
   "wikidata": "Q112157664",
-  "sitelinks": 0,
+  "sitelinks": {
+    "count": 0,
+    "on": "2026-09-04"
+  },
   "sources": [
     {
       "source": "wikidata",

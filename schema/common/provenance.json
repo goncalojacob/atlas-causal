@@ -187,9 +187,14 @@
       ]
     },
     "sitelinks": {
-      "description": "How many language editions have an article for the item. A stored fact for an editorial decision nobody has taken: it feeds neither prominence nor weight, and the map's measure stays the derived weight (ARCHITECTURE.md).",
-      "type": "integer",
-      "minimum": 0
+      "description": "How many language editions have an article for the item, and the day that number was read. A count of somebody else's database changes without this record changing, so it is stored as a snapshot with its date rather than as a fact (health review A, finding 23b). A stored fact for an editorial decision nobody has taken: it feeds neither prominence nor weight, and the map's measure stays the derived weight (ARCHITECTURE.md).",
+      "type": "object",
+      "required": ["count", "on"],
+      "additionalProperties": false,
+      "properties": {
+        "count": { "type": "integer", "minimum": 0 },
+        "on": { "$ref": "#/properties/created" }
+      }
     },
     "sources": {
       "description": "Citations. A citation points at a source record by id, with an optional locator (page, chapter, folio).",

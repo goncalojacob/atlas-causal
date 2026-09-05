@@ -14,15 +14,24 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
   "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M22: the orthographic agreement signed in Lisbon on 16 December 1990 by the seven lusophone states, after ten years of negotiation between the academies of Lisbon and Rio. This one is genuinely Portuguese history and is retracted only because the atlas holds nothing of the field it belongs to: no CPLP, no language policy, no record of the agreement’s long and contested entry into force. Among the best candidates in M22 for being written back in."
+  },
   "review": {
     "flags": [
       "imported-facts",
       "m22-retracted"
-    ],
-    "note": "Retracted in M22: the orthographic agreement signed in Lisbon on 16 December 1990 by the seven lusophone states, after ten years of negotiation between the academies of Lisbon and Rio. This one is genuinely Portuguese history and is retracted only because the atlas holds nothing of the field it belongs to: no CPLP, no language policy, no record of the agreement’s long and contested entry into force. Among the best candidates in M22 for being written back in."
+    ]
   },
   "wikidata": "Q1113432",
-  "sitelinks": 12,
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-09-04"
+  },
   "wikipedia": {
     "en": "Portuguese-Language Orthographic Agreement of 1990",
     "pt": "Acordo Ortográfico de 1990"

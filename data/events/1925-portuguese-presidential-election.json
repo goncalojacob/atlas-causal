@@ -14,15 +14,24 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
   "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M21: the Congress met on 11 December 1925, the day after Teixeira Gomes resigned, and returned Bernardino Machado to the presidency for what turned out to be five months. The coup that ended it is in the atlas; the election that preceded it decides nothing the atlas holds."
+  },
   "review": {
     "flags": [
       "imported-facts",
       "m21-retracted"
-    ],
-    "note": "Retracted in M21: the Congress met on 11 December 1925, the day after Teixeira Gomes resigned, and returned Bernardino Machado to the presidency for what turned out to be five months. The coup that ended it is in the atlas; the election that preceded it decides nothing the atlas holds."
+    ]
   },
   "wikidata": "Q21714331",
-  "sitelinks": 2,
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-09-04"
+  },
   "wikipedia": {
     "en": "1925 Portuguese presidential election",
     "pt": "Eleições presidenciais portuguesas de 1925"

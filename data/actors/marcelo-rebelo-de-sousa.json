@@ -14,7 +14,11 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-03",
   "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
   "review": {
+    "status": "draft",
     "flags": [
       "date"
     ],
@@ -25,7 +29,10 @@
     "en": "Marcelo Rebelo de Sousa",
     "pt": "Marcelo Rebelo de Sousa"
   },
-  "sitelinks": 66,
+  "sitelinks": {
+    "count": 66,
+    "on": "2026-09-03"
+  },
   "sources": [
     {
       "source": "cne-presidential-2016",

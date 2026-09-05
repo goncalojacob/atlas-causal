@@ -14,15 +14,24 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
   "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M22: the storm of 13 and 14 October 2018, the remains of Hurricane Leslie, which crossed the centre of the country with the strongest winds since 1842. The atlas holds nothing it can be argued to have changed — no record of the response, the inquiry or the rules that followed — and the disasters it does hold, the fires of 2017, are wired to each other and to the reform they produced. A disaster with no recorded consequence has no honest edge."
+  },
   "review": {
     "flags": [
       "imported-facts",
       "m22-retracted"
-    ],
-    "note": "Retracted in M22: the storm of 13 and 14 October 2018, the remains of Hurricane Leslie, which crossed the centre of the country with the strongest winds since 1842. The atlas holds nothing it can be argued to have changed — no record of the response, the inquiry or the rules that followed — and the disasters it does hold, the fires of 2017, are wired to each other and to the reform they produced. A disaster with no recorded consequence has no honest edge."
+    ]
   },
   "wikidata": "Q57243792",
-  "sitelinks": 15,
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-09-04"
+  },
   "wikipedia": {
     "en": "Hurricane Leslie (2018)",
     "pt": "Furacão Leslie (2018)"

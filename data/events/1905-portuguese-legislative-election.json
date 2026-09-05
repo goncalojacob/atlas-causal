@@ -14,15 +14,24 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
   "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M21: a routine election of the rotativismo, the arranged alternation of Regenerators and Progressives under the constitutional monarchy. Held 12 December 1905; the Progressives won 109 seats. The cached lead gives the date and the seat count and nothing more, and no consequence of this particular ballot can be argued from the bibliography here. It could not be wired without inventing the argument."
+  },
   "review": {
     "flags": [
       "imported-facts",
       "m21-retracted"
-    ],
-    "note": "Retracted in M21: a routine election of the rotativismo, the arranged alternation of Regenerators and Progressives under the constitutional monarchy. Held 12 December 1905; the Progressives won 109 seats. The cached lead gives the date and the seat count and nothing more, and no consequence of this particular ballot can be argued from the bibliography here. It could not be wired without inventing the argument."
+    ]
   },
   "wikidata": "Q7232746",
-  "sitelinks": 2,
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-09-04"
+  },
   "wikipedia": {
     "en": "1905 Portuguese legislative election"
   },

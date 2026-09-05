@@ -14,15 +14,24 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
   "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M22: the earthquake of 1 January 1980 between Terceira and São Jorge, magnitude about 7, which killed 73 people and wrecked much of the housing of three islands. The atlas holds nothing it can be argued to have changed — no reconstruction, no part for the regional government in it, no seismic building rules — and an edge to that October’s regional elections would be an invention. The largest thing retracted in the 1980s and the one most worth writing back in."
+  },
   "review": {
     "flags": [
       "imported-facts",
       "m22-retracted"
-    ],
-    "note": "Retracted in M22: the earthquake of 1 January 1980 between Terceira and São Jorge, magnitude about 7, which killed 73 people and wrecked much of the housing of three islands. The atlas holds nothing it can be argued to have changed — no reconstruction, no part for the regional government in it, no seismic building rules — and an edge to that October’s regional elections would be an invention. The largest thing retracted in the 1980s and the one most worth writing back in."
+    ]
   },
   "wikidata": "Q3306615",
-  "sitelinks": 8,
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-09-04"
+  },
   "wikipedia": {
     "en": "1980 Azores Islands earthquake",
     "pt": "Sismo dos Açores de 1980"

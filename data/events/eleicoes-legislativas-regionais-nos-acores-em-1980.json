@@ -14,15 +14,24 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
   "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M22: the Azorean regional election of 5 October 1980, won again by the Social Democrats under João Bosco Mota Amaral. The atlas keeps the first exercise of an institution and the ballot at which it became a cycle, and retracts the routine repetitions after them; the second Azorean regional election is one. The only link available is the constitutional one the earlier records already carry. Revisit if a consequence is written."
+  },
   "review": {
     "flags": [
       "imported-facts",
       "m22-retracted"
-    ],
-    "note": "Retracted in M22: the Azorean regional election of 5 October 1980, won again by the Social Democrats under João Bosco Mota Amaral. The atlas keeps the first exercise of an institution and the ballot at which it became a cycle, and retracts the routine repetitions after them; the second Azorean regional election is one. The only link available is the constitutional one the earlier records already carry. Revisit if a consequence is written."
+    ]
   },
   "wikidata": "Q10271607",
-  "sitelinks": 2,
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-09-04"
+  },
   "wikipedia": {
     "pt": "Eleições legislativas regionais nos Açores em 1980"
   },

@@ -14,15 +14,24 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
   "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M21, and the cached leads disagree about its date: English Wikipedia says 6 December 1919, Portuguese Wikipedia says 6 August 1919. The disagreement is worth keeping — it is exactly the kind of thing review.html exists for — but it is not an argument, and no consequence of this election can be argued from the bibliography here. It elected the one president of the First Republic to serve a full term, 1919 to 1923."
+  },
   "review": {
     "flags": [
       "imported-facts",
       "m21-retracted"
-    ],
-    "note": "Retracted in M21, and the cached leads disagree about its date: English Wikipedia says 6 December 1919, Portuguese Wikipedia says 6 August 1919. The disagreement is worth keeping — it is exactly the kind of thing review.html exists for — but it is not an argument, and no consequence of this election can be argued from the bibliography here. It elected the one president of the First Republic to serve a full term, 1919 to 1923."
+    ]
   },
   "wikidata": "Q21872497",
-  "sitelinks": 2,
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-09-04"
+  },
   "wikipedia": {
     "en": "1919 Portuguese presidential election",
     "pt": "Eleições presidenciais portuguesas de 1919"

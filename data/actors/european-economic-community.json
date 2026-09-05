@@ -14,7 +14,11 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-02",
   "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
   "review": {
+    "status": "draft",
     "flags": [
       "claim",
       "date",
@@ -27,7 +31,10 @@
     "en": "European Economic Community",
     "pt": "Comunidade Económica Europeia"
   },
-  "sitelinks": 86,
+  "sitelinks": {
+    "count": 86,
+    "on": "2026-09-02"
+  },
   "sources": [
     {
       "source": "telo-2007-historia-contemporanea",

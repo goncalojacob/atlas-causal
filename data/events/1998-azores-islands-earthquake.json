@@ -14,15 +14,24 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
   "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M22: the earthquake of 9 July 1998 off Faial, magnitude 6.1, with a long aftershock sequence on the Pedro Miguel graben faults. As with the earthquake of 1980, the atlas holds nothing it can be argued to have changed — no reconstruction, no building rules, no part for the regional government — and the cached lead is entirely about the tectonics."
+  },
   "review": {
     "flags": [
       "imported-facts",
       "m22-retracted"
-    ],
-    "note": "Retracted in M22: the earthquake of 9 July 1998 off Faial, magnitude 6.1, with a long aftershock sequence on the Pedro Miguel graben faults. As with the earthquake of 1980, the atlas holds nothing it can be argued to have changed — no reconstruction, no building rules, no part for the regional government — and the cached lead is entirely about the tectonics."
+    ]
   },
   "wikidata": "Q108485945",
-  "sitelinks": 3,
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-09-04"
+  },
   "wikipedia": {
     "en": "1998 Azores Islands earthquake"
   },

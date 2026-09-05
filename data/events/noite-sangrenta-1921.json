@@ -14,7 +14,11 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-02",
   "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
   "review": {
+    "status": "draft",
     "flags": [
       "wikidata-assigned-by-assistant"
     ]
@@ -24,7 +28,10 @@
     "en": "Bloody Night (Lisbon, 1921)",
     "pt": "Noite Sangrenta"
   },
-  "sitelinks": 8,
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-09-02"
+  },
   "sources": [
     {
       "source": "wheeler-1978-republican-portugal",

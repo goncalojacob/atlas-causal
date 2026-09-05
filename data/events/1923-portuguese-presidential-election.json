@@ -14,15 +14,24 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
   "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M21: the Congress elected Manuel Teixeira Gomes president on 6 August 1923, in absentia. The cached leads give the mechanism and the absence and nothing else, and no consequence of this election can be argued from the bibliography here."
+  },
   "review": {
     "flags": [
       "imported-facts",
       "m21-retracted"
-    ],
-    "note": "Retracted in M21: the Congress elected Manuel Teixeira Gomes president on 6 August 1923, in absentia. The cached leads give the mechanism and the absence and nothing else, and no consequence of this election can be argued from the bibliography here."
+    ]
   },
   "wikidata": "Q21714338",
-  "sitelinks": 3,
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-09-04"
+  },
   "wikipedia": {
     "en": "1923 Portuguese presidential election",
     "pt": "Eleições presidenciais portuguesas de 1923"

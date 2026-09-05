@@ -14,6 +14,9 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
   "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
   "review": {
     "flags": [
       "imported-facts",
@@ -22,7 +25,10 @@
     "note": "Merged in M22 into legislative-election-2019, which is the same event: the election of 6 October 2019, at which the PS won more seats and still no majority, and Chega and Iniciativa Liberal each returned a first deputy. This record keeps the Wikidata id the import brought and names its survivor rather than becoming an anonymous tombstone."
   },
   "wikidata": "Q25041164",
-  "sitelinks": 12,
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-09-04"
+  },
   "wikipedia": {
     "en": "2019 Portuguese legislative election",
     "pt": "Eleições legislativas portuguesas de 2019"

@@ -50,14 +50,20 @@ test('every up is idempotent and leaves the record it was given alone', async ()
   }
 });
 
+// `down` inverts `up`, which is a statement about a record at the step
+// *before* the migration — not about one already past it. The fixtures come
+// back through `read.mjs` at the end of the chain, so each record is first
+// rolled back to the step its migration expects; a step that reshapes a
+// field, as 4 does, is otherwise asked to undo something it never did.
 test('every down undoes its own up', async () => {
   const { records } = await fixtures();
   for (const migration of MIGRATIONS) {
     if (!migration.down) continue;
     for (const record of records) {
-      const there = migration.up(clone(record));
+      const at = rollbackRecord(clone(record), { to: migration.version - 1 });
+      const there = migration.up(clone(at));
       const back = migration.down(clone(there));
-      assert.equal(json(back), json(record), `${migration.name} does not come back on ${record.id}`);
+      assert.equal(json(back), json(at), `${migration.name} does not come back on ${record.id}`);
     }
   }
 });
@@ -87,6 +93,82 @@ test('migration 2 is the box for the citation checks, and 3 takes it back off', 
   // A record with no `review` at all is left alone by both.
   const plain = { ...ENVELOPE, id: 'y' };
   assert.equal(migrateRecord(plain, { to: 2 }), plain);
+});
+
+// --- migration 4: the envelope H5b adds ------------------------------------
+// Every value here is read off the record: nothing in this step is written by
+// hand and nothing in it is a claim about the world. The strings are the ones
+// the repository actually wrote before `origin` existed.
+
+const DRAFT = { name: 'Claude (assistant draft, unreviewed)', github: null };
+const CSHAPES = { name: 'CShapes 2.0 import (tools/import/cshapes.mjs)', github: null };
+const WIKIDATA = { name: 'Wikidata import (tools/import/wikidata.mjs)', github: null };
+const at4 = (record) => migrateRecord(record, { from: 3, to: 4 });
+
+test('migration 4: origin is the writer that created the record, and nobody else', () => {
+  const base = { ...ENVELOPE, id: 'x', created: '2026-09-04' };
+  assert.deepEqual(at4({ ...base, authors: [CSHAPES] }).origin, { tool: 'cshapes' });
+  assert.deepEqual(at4({ ...base, authors: [DRAFT] }).origin, { tool: 'assistant' });
+  // The import created it; the assistant drafted a summary onto it later. The
+  // creator is the one that made the record, which is the first author.
+  assert.deepEqual(at4({ ...base, authors: [WIKIDATA, DRAFT] }).origin, { tool: 'wikidata' });
+  // A person wrote it: absent, not a tool nobody can name.
+  assert.equal(Object.hasOwn(at4({ ...base, authors: [{ name: 'A Person', github: null }] }), 'origin'), false);
+  // Written once. A record that already says who made it is not re-answered.
+  const signed = { ...base, authors: [CSHAPES], origin: { tool: 'form', run: 'issue-12' } };
+  assert.deepEqual(at4(signed).origin, { tool: 'form', run: 'issue-12' });
+});
+
+test('migration 4: the draft marker becomes review.status, and the queue is the same records', () => {
+  const base = { ...ENVELOPE, id: 'x', created: '2026-09-04' };
+  assert.deepEqual(at4({ ...base, authors: [DRAFT] }).review, { status: 'draft' });
+  assert.deepEqual(at4({ ...base, authors: [DRAFT], review: { flags: ['date'] } }).review, { status: 'draft', flags: ['date'] });
+  // No marker, no status: an imported record nobody drafted a word of is not
+  // in the queue today and is not put into it by a migration.
+  assert.equal(at4({ ...base, authors: [WIKIDATA], review: { flags: ['imported-facts'] } }).review.status, undefined);
+  // A status already there is the record's own.
+  const reviewed = { ...base, authors: [DRAFT], review: { status: 'reviewed', signedBy: [{ name: 'A Reviewer', github: null, on: '2026-09-05' }] } };
+  assert.equal(at4(reviewed).review.status, 'reviewed');
+});
+
+test('migration 4: the retraction leaves the note and becomes the record\'s own history', () => {
+  const base = {
+    ...ENVELOPE, id: 'x', status: 'retracted', created: '2026-09-03', revised: '2026-09-04', authors: [DRAFT],
+  };
+  const whole = at4({ ...base, review: { flags: ['m21-retracted'], note: 'Retracted in M21: it could not be wired.' } });
+  assert.deepEqual(whole.retraction, { on: '2026-09-04', reason: 'Retracted in M21: it could not be wired.' });
+  assert.equal(Object.hasOwn(whole.review, 'note'), false, 'the retraction is not left in two places');
+  assert.deepEqual(whole.review.flags, ['m21-retracted']);
+
+  // A note that says something else *before* the retraction keeps that half:
+  // a thing for a reviewer to look at is not history.
+  const both = at4({ ...base, review: { flags: ['date'], note: 'No date here has been checked. Retracted by the owner on 2026-09-04: no consequence.' } });
+  assert.deepEqual(both.retraction, { on: '2026-09-04', reason: 'Retracted by the owner on 2026-09-04: no consequence.' });
+  assert.equal(both.review.note, 'No date here has been checked.');
+
+  // An active record with a note about a past retraction is not a tombstone.
+  const active = at4({ ...base, status: 'active', review: { note: 'Retracted in M21 and reinstated in M22.' } });
+  assert.equal(Object.hasOwn(active, 'retraction'), false);
+  assert.equal(active.review.note, 'Retracted in M21 and reinstated in M22.');
+});
+
+test('migration 4: sitelinks carries the day the count was read, and comes back a number', () => {
+  const base = { ...ENVELOPE, id: 'x', created: '2026-09-03', revised: '2026-09-04', authors: [DRAFT] };
+  assert.deepEqual(at4({ ...base, sitelinks: 7 }).sitelinks, { count: 7, on: '2026-09-04' });
+  // Zero is a count, not a gap.
+  assert.deepEqual(at4({ ...base, sitelinks: 0 }).sitelinks, { count: 0, on: '2026-09-04' });
+  // Never revised: the day it was written is the day it was read.
+  assert.deepEqual(at4({ ...base, revised: null, sitelinks: 2 }).sitelinks, { count: 2, on: '2026-09-03' });
+  assert.equal(migrationAt(4).down({ ...base, sitelinks: { count: 7, on: '2026-09-04' } }).sitelinks, 7);
+});
+
+test('migration 4 refuses to take a signature back, because there is nowhere to put one', () => {
+  const signed = {
+    ...ENVELOPE, id: 'x', created: '2026-09-04', authors: [{ name: 'A Reviewer', github: null }],
+    review: { status: 'reviewed', signedBy: [{ name: 'A Reviewer', github: null, on: '2026-09-05' }] },
+  };
+  assert.throws(() => migrationAt(4).down(signed), /signed record has no shape before it/);
+  assert.throws(() => rollbackRecord(signed, { to: 3 }), /signed record has no shape before it/);
 });
 
 test('rollbackRecord walks back down the chain and refuses to go past a step that cannot', () => {

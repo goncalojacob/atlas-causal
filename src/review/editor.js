@@ -90,7 +90,7 @@ export function choicesFrom(topology) {
 // not touched looks exactly as it did before.
 export function identityBlock(record) {
   const titles = record?.wikipedia && typeof record.wikipedia === 'object' ? Object.entries(record.wikipedia) : [];
-  const count = Number.isInteger(record?.sitelinks) ? record.sitelinks : null;
+  const count = Number.isInteger(record?.sitelinks?.count) ? record.sitelinks.count : null;
   if (titles.length === 0 && count === null) return null;
   const wrap = html('div', { class: 'field identity' });
   wrap.appendChild(html('span', { class: 'citations-label' }, 'From the import'));

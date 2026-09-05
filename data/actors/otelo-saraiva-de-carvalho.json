@@ -14,12 +14,21 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-02",
   "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
   "wikidata": "Q1353499",
   "wikipedia": {
     "en": "Otelo Saraiva de Carvalho",
     "pt": "Otelo Saraiva de Carvalho"
   },
-  "sitelinks": 22,
+  "sitelinks": {
+    "count": 22,
+    "on": "2026-09-02"
+  },
   "sources": [
     {
       "source": "maxwell-1995-making-of-portuguese-democracy",

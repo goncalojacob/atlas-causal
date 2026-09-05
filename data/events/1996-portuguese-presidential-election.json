@@ -14,15 +14,24 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
   "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M22: the presidential election of 14 January 1996, won by Jorge Sampaio. Sampaio's ten years matter — the dissolution of 2004 above all — but the atlas holds no record of any of them, so the election that began them has nothing to attach to. This is a retraction that should be reversed as soon as the presidency of 1996 to 2006 is written."
+  },
   "review": {
     "flags": [
       "imported-facts",
       "m22-retracted"
-    ],
-    "note": "Retracted in M22: the presidential election of 14 January 1996, won by Jorge Sampaio. Sampaio's ten years matter — the dissolution of 2004 above all — but the atlas holds no record of any of them, so the election that began them has nothing to attach to. This is a retraction that should be reversed as soon as the presidency of 1996 to 2006 is written."
+    ]
   },
   "wikidata": "Q3066523",
-  "sitelinks": 7,
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-09-04"
+  },
   "wikipedia": {
     "en": "1996 Portuguese presidential election",
     "pt": "Eleições presidenciais portuguesas de 1996"

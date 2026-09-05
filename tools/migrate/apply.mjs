@@ -81,11 +81,22 @@ export async function apply(dataDir, { to = LATEST, dryRun = false, schemaDir = 
   // Validated before writing, and against the tree as it would be: a
   // migration is a change to every record at once, and there is no reviewing
   // that one file at a time afterwards.
+  //
+  // What is validated is the tree *as read.mjs will present it* — the records
+  // taken back to the end of the chain — and not the bytes about to be
+  // written. For the ordinary run, `--to` the chain's end, those are the same
+  // records. For a tree deliberately left at an earlier step they are not,
+  // and it is the forward one that matters: every tool reads through the
+  // chain, so the schemas a tree at step 2 has to satisfy are the ones its
+  // records satisfy after step 4, not before it. Validating the older bytes
+  // instead would make any migration that changes a shape — rather than only
+  // adding a key — unable to be rolled back at all (STATUS.md, deviation 245).
   const regions = await readRegions(dataDir);
   const polygons = await readRegionPolygons(dataDir);
   const schemas = await readSchemaFiles(schemaDir);
-  const topology = buildTopology(records, regions, { deriveRegion: createRegionDeriver(polygons) });
-  const { errors } = validate(records, topology, schemas);
+  const asRead = to === LATEST ? records : records.map((record) => migrateRecord(record));
+  const topology = buildTopology(asRead, regions, { deriveRegion: createRegionDeriver(polygons) });
+  const { errors } = validate(asRead, topology, schemas);
   if (errors.length) return { changes, problems, errors, written: 0 };
 
   if (!dryRun) {

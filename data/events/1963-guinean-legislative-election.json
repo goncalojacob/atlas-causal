@@ -14,15 +14,24 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
   "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M21 as outside the atlas: French Guinea, 28 September 1963, the PDG-RDA as sole legal party taking all 75 seats."
+  },
   "review": {
     "flags": [
       "imported-facts",
       "m21-retracted"
-    ],
-    "note": "Retracted in M21 as outside the atlas: French Guinea, 28 September 1963, the PDG-RDA as sole legal party taking all 75 seats."
+    ]
   },
   "wikidata": "Q5616525",
-  "sitelinks": 2,
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-09-04"
+  },
   "wikipedia": {
     "en": "1963 Guinean parliamentary election"
   },

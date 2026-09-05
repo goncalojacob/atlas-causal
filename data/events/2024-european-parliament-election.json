@@ -14,15 +14,24 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
   "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M22: the European Parliament election of June 2024 across the twenty-seven member states, which the import brought as a record of its own beside the Portuguese ballot of 9 June. It is an act of the Union rather than of Portugal, and the atlas has no lane for one; keeping it would mean inventing Portugal's particular part in it."
+  },
   "review": {
     "flags": [
       "imported-facts",
       "m22-retracted"
-    ],
-    "note": "Retracted in M22: the European Parliament election of June 2024 across the twenty-seven member states, which the import brought as a record of its own beside the Portuguese ballot of 9 June. It is an act of the Union rather than of Portugal, and the atlas has no lane for one; keeping it would mean inventing Portugal's particular part in it."
+    ]
   },
   "wikidata": "Q70253009",
-  "sitelinks": 40,
+  "sitelinks": {
+    "count": 40,
+    "on": "2026-09-04"
+  },
   "wikipedia": {
     "en": "2024 European Parliament election",
     "pt": "Eleições europeias de 2024"

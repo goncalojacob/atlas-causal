@@ -20,9 +20,15 @@
       "isbn": null,
       "kind": "source",
       "license": "CC-BY-SA-4.0",
+      "origin": {
+        "tool": "assistant"
+      },
       "publisher": null,
       "reference": "Diário da Assembleia da República, solemn session of 25 April 2024",
       "repository": "Assembleia da República",
+      "review": {
+        "status": "draft"
+      },
       "revised": null,
       "schema": 1,
       "status": "active",
@@ -51,9 +57,15 @@
       "isbn": null,
       "kind": "source",
       "license": "CC-BY-SA-4.0",
+      "origin": {
+        "tool": "assistant"
+      },
       "publisher": null,
       "reference": "Diário da Assembleia da República, sitting of 11 March 2025",
       "repository": "Assembleia da República",
+      "review": {
+        "status": "draft"
+      },
       "revised": null,
       "schema": 1,
       "status": "active",
@@ -82,9 +94,15 @@
       "isbn": null,
       "kind": "source",
       "license": "CC-BY-SA-4.0",
+      "origin": {
+        "tool": "assistant"
+      },
       "publisher": null,
       "reference": "deliberation of the Board of Directors of 3 August 2014",
       "repository": "Banco de Portugal",
+      "review": {
+        "status": "draft"
+      },
       "revised": null,
       "schema": 1,
       "status": "active",
@@ -113,9 +131,15 @@
       "isbn": null,
       "kind": "source",
       "license": "CC-BY-SA-4.0",
+      "origin": {
+        "tool": "assistant"
+      },
       "publisher": null,
       "reference": "official results, legislative election of 2015-10-04",
       "repository": "Comissão Nacional de Eleições",
+      "review": {
+        "status": "draft"
+      },
       "revised": null,
       "schema": 1,
       "status": "active",
@@ -144,9 +168,15 @@
       "isbn": null,
       "kind": "source",
       "license": "CC-BY-SA-4.0",
+      "origin": {
+        "tool": "assistant"
+      },
       "publisher": null,
       "reference": "official results, legislative election of 2019-10-06",
       "repository": "Comissão Nacional de Eleições",
+      "review": {
+        "status": "draft"
+      },
       "revised": null,
       "schema": 1,
       "status": "active",
@@ -175,9 +205,15 @@
       "isbn": null,
       "kind": "source",
       "license": "CC-BY-SA-4.0",
+      "origin": {
+        "tool": "assistant"
+      },
       "publisher": null,
       "reference": "official results, legislative election of 2022-01-30",
       "repository": "Comissão Nacional de Eleições",
+      "review": {
+        "status": "draft"
+      },
       "revised": null,
       "schema": 1,
       "status": "active",
@@ -206,9 +242,15 @@
       "isbn": null,
       "kind": "source",
       "license": "CC-BY-SA-4.0",
+      "origin": {
+        "tool": "assistant"
+      },
       "publisher": null,
       "reference": "official results, legislative election of 2024-03-10",
       "repository": "Comissão Nacional de Eleições",
+      "review": {
+        "status": "draft"
+      },
       "revised": null,
       "schema": 1,
       "status": "active",
@@ -237,9 +279,15 @@
       "isbn": null,
       "kind": "source",
       "license": "CC-BY-SA-4.0",
+      "origin": {
+        "tool": "assistant"
+      },
       "publisher": null,
       "reference": "official results, legislative election of 2025-05-18",
       "repository": "Comissão Nacional de Eleições",
+      "review": {
+        "status": "draft"
+      },
       "revised": null,
       "schema": 1,
       "status": "active",
@@ -268,9 +316,15 @@
       "isbn": null,
       "kind": "source",
       "license": "CC-BY-SA-4.0",
+      "origin": {
+        "tool": "assistant"
+      },
       "publisher": null,
       "reference": "official results, presidential election of 2016-01-24",
       "repository": "Comissão Nacional de Eleições",
+      "review": {
+        "status": "draft"
+      },
       "revised": null,
       "schema": 1,
       "status": "active",
@@ -299,9 +353,15 @@
       "isbn": null,
       "kind": "source",
       "license": "CC-BY-SA-4.0",
+      "origin": {
+        "tool": "assistant"
+      },
       "publisher": null,
       "reference": "official results, presidential election of 2021-01-24",
       "repository": "Comissão Nacional de Eleições",
+      "review": {
+        "status": "draft"
+      },
       "revised": null,
       "schema": 1,
       "status": "active",
@@ -330,9 +390,15 @@
       "isbn": null,
       "kind": "source",
       "license": "CC-BY-SA-4.0",
+      "origin": {
+        "tool": "assistant"
+      },
       "publisher": "Social Science Monographs / Columbia University Press",
       "reference": null,
       "repository": null,
+      "review": {
+        "status": "draft"
+      },
       "revised": null,
       "schema": 1,
       "status": "active",
@@ -362,9 +428,15 @@
       "isbn": null,
       "kind": "source",
       "license": "CC-BY-SA-4.0",
+      "origin": {
+        "tool": "assistant"
+      },
       "publisher": "Palgrave Macmillan",
       "reference": null,
       "repository": null,
+      "review": {
+        "status": "draft"
+      },
       "revised": null,
       "schema": 1,
       "status": "active",
@@ -398,6 +470,9 @@
       "isbn": null,
       "kind": "source",
       "license": "CC-BY-SA-4.0",
+      "origin": {
+        "tool": "cshapes"
+      },
       "publisher": "Journal of Conflict Resolution",
       "reference": null,
       "repository": null,
@@ -429,9 +504,15 @@
       "isbn": null,
       "kind": "source",
       "license": "CC-BY-SA-4.0",
+      "origin": {
+        "tool": "assistant"
+      },
       "publisher": null,
       "reference": "reports of the Comissão Técnica Independente on the fires of 17-24 June 2017 and of 15-16 October 2017",
       "repository": "Assembleia da República",
+      "review": {
+        "status": "draft"
+      },
       "revised": null,
       "schema": 1,
       "status": "active",
@@ -460,9 +541,15 @@
       "isbn": null,
       "kind": "source",
       "license": "CC-BY-SA-4.0",
+      "origin": {
+        "tool": "assistant"
+      },
       "publisher": null,
       "reference": "decrees of the President of the Republic declaring and renewing the state of emergency between 18 March and 2 May 2020",
       "repository": "Diário da República",
+      "review": {
+        "status": "draft"
+      },
       "revised": null,
       "schema": 1,
       "status": "active",
@@ -491,9 +578,15 @@
       "isbn": null,
       "kind": "source",
       "license": "CC-BY-SA-4.0",
+      "origin": {
+        "tool": "assistant"
+      },
       "publisher": null,
       "reference": "decrees of the President of the Republic appointing the XXI Constitutional Government (November 2015) and the XXIV Constitutional Government (April 2024)",
       "repository": "Diário da República",
+      "review": {
+        "status": "draft"
+      },
       "revised": null,
       "schema": 1,
       "status": "active",
@@ -522,9 +615,15 @@
       "isbn": null,
       "kind": "source",
       "license": "CC-BY-SA-4.0",
+      "origin": {
+        "tool": "assistant"
+      },
       "publisher": null,
       "reference": "designation of Lisbon on 27 January 2019 and the celebration of 1-6 August 2023",
       "repository": "Holy See Press Office",
+      "review": {
+        "status": "draft"
+      },
       "revised": null,
       "schema": 1,
       "status": "active",
@@ -553,9 +652,15 @@
       "isbn": null,
       "kind": "source",
       "license": "CC-BY-SA-4.0",
+      "origin": {
+        "tool": "assistant"
+      },
       "publisher": "International Monetary Fund",
       "reference": null,
       "repository": null,
+      "review": {
+        "status": "draft"
+      },
       "revised": null,
       "schema": 1,
       "status": "active",
@@ -584,9 +689,15 @@
       "isbn": null,
       "kind": "source",
       "license": "CC-BY-SA-4.0",
+      "origin": {
+        "tool": "assistant"
+      },
       "publisher": "Longman",
       "reference": null,
       "repository": null,
+      "review": {
+        "status": "draft"
+      },
       "revised": null,
       "schema": 1,
       "status": "active",
@@ -615,9 +726,15 @@
       "isbn": null,
       "kind": "source",
       "license": "CC-BY-SA-4.0",
+      "origin": {
+        "tool": "assistant"
+      },
       "publisher": "Cambridge University Press",
       "reference": null,
       "repository": null,
+      "review": {
+        "status": "draft"
+      },
       "revised": null,
       "schema": 1,
       "status": "active",
@@ -646,9 +763,15 @@
       "isbn": null,
       "kind": "source",
       "license": "CC-BY-SA-4.0",
+      "origin": {
+        "tool": "assistant"
+      },
       "publisher": "Bristol: HiPLAM",
       "reference": null,
       "repository": null,
+      "review": {
+        "status": "draft"
+      },
       "revised": null,
       "schema": 1,
       "status": "active",
@@ -677,9 +800,15 @@
       "isbn": null,
       "kind": "source",
       "license": "CC-BY-SA-4.0",
+      "origin": {
+        "tool": "assistant"
+      },
       "publisher": "Enigma Books",
       "reference": null,
       "repository": null,
+      "review": {
+        "status": "draft"
+      },
       "revised": null,
       "schema": 1,
       "status": "active",
@@ -708,9 +837,15 @@
       "isbn": null,
       "kind": "source",
       "license": "CC-BY-SA-4.0",
+      "origin": {
+        "tool": "assistant"
+      },
       "publisher": null,
       "reference": "communiqué of 7 November 2023",
       "repository": "Procuradoria-Geral da República",
+      "review": {
+        "status": "draft"
+      },
       "revised": null,
       "schema": 1,
       "status": "active",
@@ -741,9 +876,15 @@
       "isbn": null,
       "kind": "source",
       "license": "CC-BY-SA-4.0",
+      "origin": {
+        "tool": "assistant"
+      },
       "publisher": "A Esfera dos Livros",
       "reference": null,
       "repository": null,
+      "review": {
+        "status": "draft"
+      },
       "revised": null,
       "schema": 1,
       "status": "active",
@@ -772,9 +913,15 @@
       "isbn": null,
       "kind": "source",
       "license": "CC-BY-SA-4.0",
+      "origin": {
+        "tool": "assistant"
+      },
       "publisher": "Brookings Institution",
       "reference": null,
       "repository": null,
+      "review": {
+        "status": "draft"
+      },
       "revised": null,
       "schema": 1,
       "status": "active",
@@ -803,9 +950,15 @@
       "isbn": null,
       "kind": "source",
       "license": "CC-BY-SA-4.0",
+      "origin": {
+        "tool": "assistant"
+      },
       "publisher": null,
       "reference": "transmission system operator's records of the interruption of 28 April 2025 on the Iberian peninsula",
       "repository": "Redes Energéticas Nacionais",
+      "review": {
+        "status": "draft"
+      },
       "revised": null,
       "schema": 1,
       "status": "active",
@@ -834,9 +987,15 @@
       "isbn": null,
       "kind": "source",
       "license": "CC-BY-SA-4.0",
+      "origin": {
+        "tool": "assistant"
+      },
       "publisher": "Círculo de Leitores",
       "reference": null,
       "repository": null,
+      "review": {
+        "status": "draft"
+      },
       "revised": null,
       "schema": 1,
       "status": "active",
@@ -865,9 +1024,15 @@
       "isbn": null,
       "kind": "source",
       "license": "CC-BY-SA-4.0",
+      "origin": {
+        "tool": "assistant"
+      },
       "publisher": "Tinta-da-China",
       "reference": null,
       "repository": null,
+      "review": {
+        "status": "draft"
+      },
       "revised": null,
       "schema": 1,
       "status": "active",
@@ -896,9 +1061,15 @@
       "isbn": null,
       "kind": "source",
       "license": "CC-BY-SA-4.0",
+      "origin": {
+        "tool": "assistant"
+      },
       "publisher": "Presença",
       "reference": null,
       "repository": null,
+      "review": {
+        "status": "draft"
+      },
       "revised": null,
       "schema": 1,
       "status": "active",
@@ -927,9 +1098,15 @@
       "isbn": null,
       "kind": "source",
       "license": "CC-BY-SA-4.0",
+      "origin": {
+        "tool": "assistant"
+      },
       "publisher": null,
       "reference": "official match report, Saint-Denis, 10 July 2016",
       "repository": "Union of European Football Associations",
+      "review": {
+        "status": "draft"
+      },
       "revised": null,
       "schema": 1,
       "status": "active",
@@ -958,9 +1135,15 @@
       "isbn": null,
       "kind": "source",
       "license": "CC-BY-SA-4.0",
+      "origin": {
+        "tool": "assistant"
+      },
       "publisher": "University of Wisconsin Press",
       "reference": null,
       "repository": null,
+      "review": {
+        "status": "draft"
+      },
       "revised": null,
       "schema": 1,
       "status": "active",
@@ -989,9 +1172,15 @@
       "isbn": null,
       "kind": "source",
       "license": "CC-BY-SA-4.0",
+      "origin": {
+        "tool": "assistant"
+      },
       "publisher": "Wikimedia Foundation; the data is released under CC0 1.0",
       "reference": null,
       "repository": null,
+      "review": {
+        "status": "draft"
+      },
       "revised": null,
       "schema": 1,
       "status": "active",
@@ -1020,9 +1209,15 @@
       "isbn": null,
       "kind": "source",
       "license": "CC-BY-SA-4.0",
+      "origin": {
+        "tool": "assistant"
+      },
       "publisher": "Wikimedia Foundation; the text is licensed CC BY-SA 4.0",
       "reference": null,
       "repository": null,
+      "review": {
+        "status": "draft"
+      },
       "revised": null,
       "schema": 1,
       "status": "active",
@@ -1051,9 +1246,15 @@
       "isbn": null,
       "kind": "source",
       "license": "CC-BY-SA-4.0",
+      "origin": {
+        "tool": "assistant"
+      },
       "publisher": "Wikimedia Foundation; the text is licensed CC BY-SA 4.0",
       "reference": null,
       "repository": null,
+      "review": {
+        "status": "draft"
+      },
       "revised": null,
       "schema": 1,
       "status": "active",

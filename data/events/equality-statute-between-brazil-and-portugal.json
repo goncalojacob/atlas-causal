@@ -14,15 +14,24 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
   "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M21: the Convention on Equality of Rights and Duties, signed at Brasília on 7 September 1971, under which Portuguese in Brazil and Brazilians in Portugal hold the rights of nationals. A real and durable instrument, and nothing in this atlas follows from it — the atlas holds almost nothing of the Brazilian relationship after 1822."
+  },
   "review": {
     "flags": [
       "imported-facts",
       "m21-retracted"
-    ],
-    "note": "Retracted in M21: the Convention on Equality of Rights and Duties, signed at Brasília on 7 September 1971, under which Portuguese in Brazil and Brazilians in Portugal hold the rights of nationals. A real and durable instrument, and nothing in this atlas follows from it — the atlas holds almost nothing of the Brazilian relationship after 1822."
+    ]
   },
   "wikidata": "Q10275511",
-  "sitelinks": 4,
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-09-04"
+  },
   "wikipedia": {
     "en": "Equality Statute between Brazil and Portugal",
     "pt": "Estatuto da Igualdade"

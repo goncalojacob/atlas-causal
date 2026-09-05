@@ -18,7 +18,10 @@
   "wikipedia": {
     "pt": "Lugar de fixture A"
   },
-  "sitelinks": 1,
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-09-03"
+  },
   "sources": [],
   "names": [
     "Fixture place A"

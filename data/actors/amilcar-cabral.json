@@ -14,12 +14,21 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-02",
   "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
   "wikidata": "Q213416",
   "wikipedia": {
     "en": "Amílcar Cabral",
     "pt": "Amílcar Cabral"
   },
-  "sitelinks": 50,
+  "sitelinks": {
+    "count": 50,
+    "on": "2026-09-02"
+  },
   "sources": [
     {
       "source": "macqueen-1997-decolonization",

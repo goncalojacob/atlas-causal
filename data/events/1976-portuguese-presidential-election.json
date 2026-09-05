@@ -14,6 +14,9 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
   "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
   "review": {
     "flags": [
       "imported-facts",
@@ -22,7 +25,10 @@
     "note": "Merged in M22 into eanes-elected-1976, which is the same event: the presidential election of 27 June 1976, the first direct one since 1958 and the first ever under universal suffrage, won by Ramalho Eanes. This record keeps the Wikidata id the import brought and names its survivor rather than becoming an anonymous tombstone."
   },
   "wikidata": "Q1329844",
-  "sitelinks": 7,
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-09-04"
+  },
   "wikipedia": {
     "en": "1976 Portuguese presidential election",
     "pt": "Eleições presidenciais portuguesas de 1976"

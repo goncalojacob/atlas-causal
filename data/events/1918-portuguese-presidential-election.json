@@ -14,15 +14,24 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
   "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M21: the Congress met on 16 December 1918, two days after Sidónio Pais was shot, to fill out what remained of Bernardino Machado’s term. The killing that caused it is already in the atlas, and nothing argued leads out of the election itself: the presidency that came of it lasted until October 1919 and decided nothing the atlas holds."
+  },
   "review": {
     "flags": [
       "imported-facts",
       "m21-retracted"
-    ],
-    "note": "Retracted in M21: the Congress met on 16 December 1918, two days after Sidónio Pais was shot, to fill out what remained of Bernardino Machado’s term. The killing that caused it is already in the atlas, and nothing argued leads out of the election itself: the presidency that came of it lasted until October 1919 and decided nothing the atlas holds."
+    ]
   },
   "wikidata": "Q21872940",
-  "sitelinks": 3,
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-09-04"
+  },
   "wikipedia": {
     "en": "1918 Portuguese presidential election",
     "pt": "Eleições presidenciais portuguesas de Dezembro de 1918"

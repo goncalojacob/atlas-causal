@@ -14,15 +14,24 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
   "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M22: the election of 10 October 1999, at which the Socialists were returned one seat short of an absolute majority. The atlas can argue nothing from it: the euro was joined nine months before, Macau was handed over on terms fixed in 1987, and the government it made resigned after the local defeat of December 2001 — which the atlas now holds, wired to the election of 2002. What is still missing is the resignation itself; write that and this record has somewhere to go."
+  },
   "review": {
     "flags": [
       "imported-facts",
       "m22-retracted"
-    ],
-    "note": "Retracted in M22: the election of 10 October 1999, at which the Socialists were returned one seat short of an absolute majority. The atlas can argue nothing from it: the euro was joined nine months before, Macau was handed over on terms fixed in 1987, and the government it made resigned after the local defeat of December 2001 — which the atlas now holds, wired to the election of 2002. What is still missing is the resignation itself; write that and this record has somewhere to go."
+    ]
   },
   "wikidata": "Q2053121",
-  "sitelinks": 9,
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-09-04"
+  },
   "wikipedia": {
     "en": "1999 Portuguese legislative election",
     "pt": "Eleições legislativas portuguesas de 1999"

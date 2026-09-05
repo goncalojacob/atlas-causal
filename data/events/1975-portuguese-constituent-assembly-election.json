@@ -14,6 +14,9 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
   "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
   "review": {
     "flags": [
       "imported-facts",
@@ -22,7 +25,10 @@
     "note": "Merged in M22 into constituent-assembly-election-1975, which is the same event: the election of 25 April 1975 for the 250 members of the Constituent Assembly, the first free ballot with universal suffrage in Portuguese history, which the atlas already holds and wires. This record keeps the Wikidata id the import brought and names its survivor rather than becoming an anonymous tombstone."
   },
   "wikidata": "Q3179037",
-  "sitelinks": 9,
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-09-04"
+  },
   "wikipedia": {
     "en": "1975 Portuguese Constituent Assembly election",
     "pt": "Eleições para a Assembleia Constituinte Portuguesa de 1975"

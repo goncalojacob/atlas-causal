@@ -18,7 +18,11 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
   "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
   "review": {
+    "status": "draft",
     "flags": [
       "imported-facts",
       "summary-drafted",
@@ -27,7 +31,10 @@
     "note": "Wired in M22 on the strength of the date and the place alone. The import brought no Wikipedia lead for this item and the bibliography holds no work on the occupation of East Timor: a reviewer should establish who carried out the killings and on whose orders, or retract the record, before signing it."
   },
   "wikidata": "Q131364064",
-  "sitelinks": 1,
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-09-04"
+  },
   "sources": [
     {
       "source": "telo-2007-historia-contemporanea",

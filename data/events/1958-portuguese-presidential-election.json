@@ -14,6 +14,9 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
   "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
   "review": {
     "flags": [
       "imported-facts",
@@ -22,7 +25,10 @@
     "note": "Merged in M21 into delgado-candidacy-1958, which is the same event: the atlas already holds the presidential election of 8 June 1958, with Delgado against Américo Tomás, the disbelieved official count and the constitutional revision that followed. This record keeps the Wikidata id and the two Wikipedia links the import brought, and names its survivor rather than becoming an anonymous tombstone."
   },
   "wikidata": "Q3741753",
-  "sitelinks": 7,
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-09-04"
+  },
   "wikipedia": {
     "en": "1958 Portuguese presidential election",
     "pt": "Eleições presidenciais portuguesas de 1958"

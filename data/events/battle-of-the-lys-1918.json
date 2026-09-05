@@ -14,12 +14,21 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-02",
   "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
   "wikidata": "Q1088364",
   "wikipedia": {
     "en": "Battle of the Lys (1918)",
     "pt": "Batalha de La Lys (1918)"
   },
-  "sitelinks": 17,
+  "sitelinks": {
+    "count": 17,
+    "on": "2026-09-02"
+  },
   "sources": [
     {
       "source": "meneses-2004-portugal-1914-1926",

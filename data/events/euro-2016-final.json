@@ -14,11 +14,19 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-03",
   "revised": "2026-09-04",
+  "origin": {
+    "tool": "assistant"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted by the owner on 2026-09-04: no consequence in the atlas."
+  },
   "review": {
+    "status": "draft",
     "flags": [
       "date"
     ],
-    "note": "Filed in a run that could not reach a source: no date on this record has been checked against one. Retracted by the owner on 2026-09-04: no consequence in the atlas."
+    "note": "Filed in a run that could not reach a source: no date on this record has been checked against one."
   },
   "sources": [
     {

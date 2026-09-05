@@ -14,12 +14,21 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-02",
   "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
   "wikidata": "Q151394",
   "wikipedia": {
     "en": "António de Oliveira Salazar",
     "pt": "António de Oliveira Salazar"
   },
-  "sitelinks": 84,
+  "sitelinks": {
+    "count": 84,
+    "on": "2026-09-02"
+  },
   "sources": [
     {
       "source": "meneses-2009-salazar",

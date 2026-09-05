@@ -997,7 +997,7 @@ export function checkRules(records, topology = {}, { universe: prebuilt = null }
     const claimantsOf = (key) => merge(base.claimants.get(key), ours.claimants.get(key), (id) => id);
     for (const r of own) {
       const hasItem = typeof r.wikidata === 'string';
-      if ((hasItem || isObject(r.wikipedia) || Number.isInteger(r.sitelinks)) && !IDENTITY_KINDS.includes(r.kind)) {
+      if ((hasItem || isObject(r.wikipedia) || isObject(r.sitelinks)) && !IDENTITY_KINDS.includes(r.kind)) {
         error(21, r, '/wikidata', `a ${r.kind} has no Wikidata item: only ${IDENTITY_KINDS.join(', ')} records do`);
         continue;
       }

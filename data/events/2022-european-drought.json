@@ -14,15 +14,24 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
   "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M22: the European drought of 2022, which left most of the Portuguese mainland in severe or extreme drought through that summer. The atlas holds nothing it can be argued to have changed — no record of the response, the inquiry or the rules that followed — and the disasters it does hold, the fires of 2017, are wired to each other and to the reform they produced. A disaster with no recorded consequence has no honest edge."
+  },
   "review": {
     "flags": [
       "imported-facts",
       "m22-retracted"
-    ],
-    "note": "Retracted in M22: the European drought of 2022, which left most of the Portuguese mainland in severe or extreme drought through that summer. The atlas holds nothing it can be argued to have changed — no record of the response, the inquiry or the rules that followed — and the disasters it does hold, the fires of 2017, are wired to each other and to the reform they produced. A disaster with no recorded consequence has no honest edge."
+    ]
   },
   "wikidata": "Q113394119",
-  "sitelinks": 6,
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-09-04"
+  },
   "wikipedia": {
     "en": "2022 European drought"
   },

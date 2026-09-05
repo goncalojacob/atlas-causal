@@ -14,15 +14,24 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
   "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M21 as outside the atlas: French Guinea, 15 January 1961, Sékou Touré the only candidate. Conakry matters to this atlas for one thing, the sanctuary it gave the PAIGC, and that is wired on the referendum of 1958."
+  },
   "review": {
     "flags": [
       "imported-facts",
       "m21-retracted"
-    ],
-    "note": "Retracted in M21 as outside the atlas: French Guinea, 15 January 1961, Sékou Touré the only candidate. Conakry matters to this atlas for one thing, the sanctuary it gave the PAIGC, and that is wired on the referendum of 1958."
+    ]
   },
   "wikidata": "Q2114993",
-  "sitelinks": 4,
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-09-04"
+  },
   "wikipedia": {
     "en": "1961 Guinean presidential election"
   },

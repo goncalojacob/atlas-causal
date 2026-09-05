@@ -19,7 +19,10 @@
     "en": "Fixture article A",
     "pt": "Artigo de fixture A"
   },
-  "sitelinks": 2,
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-01-01"
+  },
   "sources": [
     {
       "source": "fixture-source-1",

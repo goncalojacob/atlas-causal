@@ -14,15 +14,24 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
   "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M22: the Social Democrat leadership election of 13 January 2018, at which Rui Rio was chosen. The atlas keeps a party's internal election where something in the atlas follows from it — the Socialist ballots of 2011 and 2014 are kept because the chain they start ends at the government of November 2015. This one ends nowhere the atlas holds. Revisit if the party's course under this leader is written."
+  },
   "review": {
     "flags": [
       "imported-facts",
       "m22-retracted"
-    ],
-    "note": "Retracted in M22: the Social Democrat leadership election of 13 January 2018, at which Rui Rio was chosen. The atlas keeps a party's internal election where something in the atlas follows from it — the Socialist ballots of 2011 and 2014 are kept because the chain they start ends at the government of November 2015. This one ends nowhere the atlas holds. Revisit if the party's course under this leader is written."
+    ]
   },
   "wikidata": "Q85871536",
-  "sitelinks": 2,
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-09-04"
+  },
   "wikipedia": {
     "en": "2018 Portuguese Social Democratic Party leadership election",
     "pt": "Eleições diretas do Partido Social Democrata (Portugal) de 2018"

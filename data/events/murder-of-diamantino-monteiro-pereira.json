@@ -14,16 +14,25 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
   "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M22: the killing of the administrator of the Sacavém pottery works, which the item's own description dates to 6 December 1982 and which the import entered as 2022. M22 corrected the year. It belongs with the armed far left of the 1980s, and it is retracted for the same reason as the rest of that series: the atlas holds neither the FP-25 nor the trials, so there is nothing for it to attach to in either direction."
+  },
   "review": {
     "flags": [
       "imported-facts",
       "m22-retracted",
       "date"
-    ],
-    "note": "Retracted in M22: the killing of the administrator of the Sacavém pottery works, which the item's own description dates to 6 December 1982 and which the import entered as 2022. M22 corrected the year. It belongs with the armed far left of the 1980s, and it is retracted for the same reason as the rest of that series: the atlas holds neither the FP-25 nor the trials, so there is nothing for it to attach to in either direction."
+    ]
   },
   "wikidata": "Q115460814",
-  "sitelinks": 0,
+  "sitelinks": {
+    "count": 0,
+    "on": "2026-09-04"
+  },
   "sources": [
     {
       "source": "wikidata",

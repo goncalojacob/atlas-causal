@@ -14,15 +14,24 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
   "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M22: the robbery of a Banco Espírito Santo branch at Campolide on 7 August 2008. The atlas holds the bank as an actor and holds its resolution in 2014, and neither has anything to do with a branch robbery; wiring one to the other would be a pun on the name rather than an argument."
+  },
   "review": {
     "flags": [
       "imported-facts",
       "m22-retracted"
-    ],
-    "note": "Retracted in M22: the robbery of a Banco Espírito Santo branch at Campolide on 7 August 2008. The atlas holds the bank as an actor and holds its resolution in 2014, and neither has anything to do with a branch robbery; wiring one to the other would be a pun on the name rather than an argument."
+    ]
   },
   "wikidata": "Q111918021",
-  "sitelinks": 2,
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-09-04"
+  },
   "wikipedia": {
     "en": "Espírito Santo Bank of Campolide robbery",
     "pt": "Assalto ao BES de Campolide"

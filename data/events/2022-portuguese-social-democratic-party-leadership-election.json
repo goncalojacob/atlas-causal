@@ -18,7 +18,11 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
   "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
   "review": {
+    "status": "draft",
     "flags": [
       "imported-facts",
       "summary-drafted",
@@ -27,7 +31,10 @@
     "note": "The import filed the ballot of 27 November 2021 under the id and title of a 2022 election; both cached leads and the Wikidata item date it to 2021, and M22 corrected the title. The id is immutable once written, so it stays wrong: a reader following the id will find a record whose title, date and summary all say 2021."
   },
   "wikidata": "Q108542274",
-  "sitelinks": 2,
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-09-04"
+  },
   "wikipedia": {
     "en": "2021 Portuguese Social Democratic Party leadership election",
     "pt": "Eleições diretas do Partido Social Democrata (Portugal) de 2021"

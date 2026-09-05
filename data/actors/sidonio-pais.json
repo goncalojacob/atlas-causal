@@ -14,12 +14,21 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-02",
   "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
   "wikidata": "Q356691",
   "wikipedia": {
     "en": "Sidónio Pais",
     "pt": "Sidónio Pais"
   },
-  "sitelinks": 32,
+  "sitelinks": {
+    "count": 32,
+    "on": "2026-09-02"
+  },
   "sources": [
     {
       "source": "wheeler-1978-republican-portugal",

@@ -18,7 +18,10 @@
   "wikipedia": {
     "en": "Fixture Actor One"
   },
-  "sitelinks": 1,
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-01-01"
+  },
   "sources": [
     {
       "source": "fixture-source-1",

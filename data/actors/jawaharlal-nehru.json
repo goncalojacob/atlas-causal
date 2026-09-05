@@ -14,12 +14,21 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-02",
   "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
   "wikidata": "Q1047",
   "wikipedia": {
     "en": "Jawaharlal Nehru",
     "pt": "Jawaharlal Nehru"
   },
-  "sitelinks": 154,
+  "sitelinks": {
+    "count": 154,
+    "on": "2026-09-02"
+  },
   "sources": [
     {
       "source": "macqueen-1997-decolonization",

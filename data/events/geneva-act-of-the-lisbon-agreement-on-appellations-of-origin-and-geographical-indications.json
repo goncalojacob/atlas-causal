@@ -14,15 +14,24 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
   "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M21: the Lisbon Agreement for the Protection of Appellations of Origin, signed at Lisbon on 31 October 1958 and administered since by WIPO. Note also that the record’s title and its cached lead are not about the same instrument — the title says the Geneva Act, the lead describes the 1958 agreement. Either way it is in Lisbon by venue only, and nothing in this atlas follows from it."
+  },
   "review": {
     "flags": [
       "imported-facts",
       "m21-retracted"
-    ],
-    "note": "Retracted in M21: the Lisbon Agreement for the Protection of Appellations of Origin, signed at Lisbon on 31 October 1958 and administered since by WIPO. Note also that the record’s title and its cached lead are not about the same instrument — the title says the Geneva Act, the lead describes the 1958 agreement. Either way it is in Lisbon by venue only, and nothing in this atlas follows from it."
+    ]
   },
   "wikidata": "Q4263323",
-  "sitelinks": 9,
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-09-04"
+  },
   "wikipedia": {
     "en": "Lisbon Agreement for the Protection of Appellations of Origin and their International Registration"
   },

@@ -14,15 +14,24 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
   "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M21: 1 November 1942, the last election on a single national list; the National Union alone, all 100 seats, 86.6% of the vote. A single-list election under a one-party state, with no consequence that can be argued from the bibliography here."
+  },
   "review": {
     "flags": [
       "imported-facts",
       "m21-retracted"
-    ],
-    "note": "Retracted in M21: 1 November 1942, the last election on a single national list; the National Union alone, all 100 seats, 86.6% of the vote. A single-list election under a one-party state, with no consequence that can be argued from the bibliography here."
+    ]
   },
   "wikidata": "Q7232757",
-  "sitelinks": 4,
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-09-04"
+  },
   "wikipedia": {
     "en": "1942 Portuguese legislative election",
     "pt": "Eleições legislativas portuguesas de 1942"

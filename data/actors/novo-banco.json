@@ -14,7 +14,11 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-03",
   "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
   "review": {
+    "status": "draft",
     "flags": [
       "date"
     ],
@@ -25,7 +29,10 @@
     "en": "Novo Banco",
     "pt": "Novo Banco"
   },
-  "sitelinks": 8,
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-09-03"
+  },
   "sources": [
     {
       "source": "banco-de-portugal-2014-bes-resolution",

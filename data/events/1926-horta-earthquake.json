@@ -14,15 +14,24 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
   "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M21: the earthquake of 8:42 on 31 August 1926 destroyed or damaged 4,138 buildings in Horta and the villages around it, on Faial in the Azores, and killed nine people. It is a real event and a bad one, and nothing in this atlas follows from it. The brief names disasters without consequence as an expected retraction and this is one."
+  },
   "review": {
     "flags": [
       "imported-facts",
       "m21-retracted"
-    ],
-    "note": "Retracted in M21: the earthquake of 8:42 on 31 August 1926 destroyed or damaged 4,138 buildings in Horta and the villages around it, on Faial in the Azores, and killed nine people. It is a real event and a bad one, and nothing in this atlas follows from it. The brief names disasters without consequence as an expected retraction and this is one."
+    ]
   },
   "wikidata": "Q10372022",
-  "sitelinks": 2,
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-09-04"
+  },
   "wikipedia": {
     "en": "1926 Horta earthquake",
     "pt": "Sismo da Horta de 1926"

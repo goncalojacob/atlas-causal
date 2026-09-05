@@ -14,15 +14,24 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
   "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M21: the election of 11 May 1919, the first after the sidonista interregnum, in which the three parties that had boycotted 1918 returned and the Democrats took 86 of 163 seats. The collapse of the República Nova that brought them back is already here. Nothing argued leads out: the next thing the atlas holds is the Noite Sangrenta of October 1921, and that is not this election’s doing."
+  },
   "review": {
     "flags": [
       "imported-facts",
       "m21-retracted"
-    ],
-    "note": "Retracted in M21: the election of 11 May 1919, the first after the sidonista interregnum, in which the three parties that had boycotted 1918 returned and the Democrats took 86 of 163 seats. The collapse of the República Nova that brought them back is already here. Nothing argued leads out: the next thing the atlas holds is the Noite Sangrenta of October 1921, and that is not this election’s doing."
+    ]
   },
   "wikidata": "Q7232750",
-  "sitelinks": 5,
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-09-04"
+  },
   "wikipedia": {
     "en": "1919 Portuguese legislative election",
     "pt": "Eleições legislativas portuguesas de 1919"

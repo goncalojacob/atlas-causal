@@ -14,15 +14,24 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
   "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M21: 13 November 1949, nine months after the presidential campaign that is wired. The Democratic Opposition withdrew late again, leaving lists only in Portalegre and Castelo Branco, and the National Union took all 120 seats. It repeats the manoeuvre of 1945 and 1949 without adding to it, and nothing argued leads out of it."
+  },
   "review": {
     "flags": [
       "imported-facts",
       "m21-retracted"
-    ],
-    "note": "Retracted in M21: 13 November 1949, nine months after the presidential campaign that is wired. The Democratic Opposition withdrew late again, leaving lists only in Portalegre and Castelo Branco, and the National Union took all 120 seats. It repeats the manoeuvre of 1945 and 1949 without adding to it, and nothing argued leads out of it."
+    ]
   },
   "wikidata": "Q7232761",
-  "sitelinks": 4,
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-09-04"
+  },
   "wikipedia": {
     "en": "1949 Portuguese legislative election",
     "pt": "Eleições legislativas portuguesas de 1949"

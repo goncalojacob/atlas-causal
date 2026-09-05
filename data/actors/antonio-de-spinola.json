@@ -14,12 +14,21 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-02",
   "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
   "wikidata": "Q336884",
   "wikipedia": {
     "en": "António de Spínola",
     "pt": "António de Spínola"
   },
-  "sitelinks": 36,
+  "sitelinks": {
+    "count": 36,
+    "on": "2026-09-02"
+  },
   "sources": [
     {
       "source": "maxwell-1995-making-of-portuguese-democracy",

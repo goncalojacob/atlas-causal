@@ -14,7 +14,11 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-02",
   "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
   "review": {
+    "status": "draft",
     "flags": [
       "date"
     ],
@@ -25,7 +29,10 @@
     "en": "Joaquim Pimenta de Castro",
     "pt": "Joaquim Pimenta de Castro"
   },
-  "sitelinks": 10,
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-09-02"
+  },
   "sources": [
     {
       "source": "wheeler-1978-republican-portugal",

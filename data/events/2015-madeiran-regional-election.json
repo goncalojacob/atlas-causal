@@ -14,15 +14,24 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
   "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M22: the Madeiran regional election of 29 March 2015, the first in the region since 1976 without Alberto João Jardim as the Social Democrats' candidate, won by Miguel Albuquerque. The end of a thirty-seven-year tenure is not a repetition, and it is retracted anyway: the atlas holds neither Jardim nor the regional government, so there is nothing here for the end of it to attach to."
+  },
   "review": {
     "flags": [
       "imported-facts",
       "m22-retracted"
-    ],
-    "note": "Retracted in M22: the Madeiran regional election of 29 March 2015, the first in the region since 1976 without Alberto João Jardim as the Social Democrats' candidate, won by Miguel Albuquerque. The end of a thirty-seven-year tenure is not a repetition, and it is retracted anyway: the atlas holds neither Jardim nor the regional government, so there is nothing here for the end of it to attach to."
+    ]
   },
   "wikidata": "Q17510556",
-  "sitelinks": 4,
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-09-04"
+  },
   "wikipedia": {
     "en": "2015 Madeiran regional election",
     "pt": "Eleições legislativas regionais na Madeira em 2015"

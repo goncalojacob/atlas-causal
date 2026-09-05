@@ -18,14 +18,21 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
   "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
   "review": {
+    "status": "draft",
     "flags": [
       "imported-facts",
       "summary-drafted"
     ]
   },
   "wikidata": "Q2404857",
-  "sitelinks": 8,
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-09-04"
+  },
   "wikipedia": {
     "en": "1987 European Parliament election in Portugal",
     "pt": "Eleições europeias de 1987 (Portugal)"

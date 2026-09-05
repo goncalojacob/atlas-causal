@@ -14,15 +14,24 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
   "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M21: a routine election of the rotativismo. Held 19 August 1906, the second that year; no party won a majority for the first time in decades, the Liberal Regenerators being largest with 65. No consequence of this particular ballot can be argued from the bibliography here, and it could not be wired without inventing one."
+  },
   "review": {
     "flags": [
       "imported-facts",
       "m21-retracted"
-    ],
-    "note": "Retracted in M21: a routine election of the rotativismo. Held 19 August 1906, the second that year; no party won a majority for the first time in decades, the Liberal Regenerators being largest with 65. No consequence of this particular ballot can be argued from the bibliography here, and it could not be wired without inventing one."
+    ]
   },
   "wikidata": "Q7232772",
-  "sitelinks": 2,
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-09-04"
+  },
   "wikipedia": {
     "en": "August 1906 Portuguese legislative election"
   },

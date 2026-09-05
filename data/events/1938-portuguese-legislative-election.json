@@ -14,15 +14,24 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
   "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M21: 30 October 1938, the National Union alone on the ballot again, all 100 seats, 649,028 votes of 773,033 registered. A single-list election under a one-party state, with no consequence that can be argued from the bibliography here."
+  },
   "review": {
     "flags": [
       "imported-facts",
       "m21-retracted"
-    ],
-    "note": "Retracted in M21: 30 October 1938, the National Union alone on the ballot again, all 100 seats, 649,028 votes of 773,033 registered. A single-list election under a one-party state, with no consequence that can be argued from the bibliography here."
+    ]
   },
   "wikidata": "Q7232755",
-  "sitelinks": 4,
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-09-04"
+  },
   "wikipedia": {
     "en": "1938 Portuguese legislative election",
     "pt": "Eleições legislativas portuguesas de 1938"

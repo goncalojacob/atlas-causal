@@ -14,6 +14,9 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
   "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
   "review": {
     "flags": [
       "imported-facts",
@@ -22,7 +25,10 @@
     "note": "Merged in M22 into marcelo-elected-president-2016, which is the same event: the presidential election of 24 January 2016, won in the first round by Marcelo Rebelo de Sousa. This record keeps the Wikidata id the import brought and names its survivor rather than becoming an anonymous tombstone."
   },
   "wikidata": "Q17514691",
-  "sitelinks": 13,
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-09-04"
+  },
   "wikipedia": {
     "en": "2016 Portuguese presidential election",
     "pt": "Eleições presidenciais portuguesas de 2016"

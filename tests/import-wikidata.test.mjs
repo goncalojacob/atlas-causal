@@ -209,13 +209,15 @@ test('names and ids are derived without inventing either', async () => {
   assert.equal(idFor(item, new Set()), 'northfield-rising');
   // A taken id is not quietly reused: two records would become one.
   assert.equal(idFor(item, new Set(['northfield-rising'])), 'northfield-rising-q9000001');
-  assert.deepEqual(identityOf(item), {
+  // The count carries the day it was read: it is a snapshot of somebody
+  // else's database, not a fact about the thing (health review A, 23b).
+  assert.deepEqual(identityOf(item, '2026-09-05'), {
     wikidata: 'Q9000001',
-    sitelinks: 3,
+    sitelinks: { count: 3, on: '2026-09-05' },
     wikipedia: { en: 'Northfield Rising', pt: 'Levantamento de Northfield' },
   });
   // An item with no article carries no `wikipedia` at all rather than {}.
-  assert.deepEqual(identityOf(await read('Q9000004')), { wikidata: 'Q9000004', sitelinks: 0 });
+  assert.deepEqual(identityOf(await read('Q9000004'), '2026-09-05'), { wikidata: 'Q9000004', sitelinks: { count: 0, on: '2026-09-05' } });
 });
 
 // --- the additive rule ------------------------------------------------------
@@ -446,7 +448,7 @@ test('--import enriches a record that already carries the item, and writes nothi
   assert.equal(after.summary, before.summary);
   assert.equal(after.title, before.title);
   assert.deepEqual(after.authors, [person]);
-  assert.equal(after.sitelinks, 3);
+  assert.deepEqual(after.sitelinks, { count: 3, on: '2026-09-04' });
   assert.deepEqual(await readdir(path.join(dir, 'events')), ['the-rising.json']);
 });
 

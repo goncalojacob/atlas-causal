@@ -14,12 +14,21 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-02",
   "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
   "wikidata": "Q57398",
   "wikipedia": {
     "en": "Aníbal Cavaco Silva",
     "pt": "Aníbal Cavaco Silva"
   },
-  "sitelinks": 70,
+  "sitelinks": {
+    "count": 70,
+    "on": "2026-09-02"
+  },
   "sources": [
     {
       "source": "telo-2007-historia-contemporanea",

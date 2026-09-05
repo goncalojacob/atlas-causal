@@ -14,7 +14,11 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-02",
   "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
   "review": {
+    "status": "draft",
     "flags": [
       "wikidata-assigned-by-assistant"
     ]
@@ -24,7 +28,10 @@
     "en": "Assassination of Sidónio Pais",
     "pt": "Assassinato de Sidónio Pais"
   },
-  "sitelinks": 3,
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-09-02"
+  },
   "sources": [
     {
       "source": "meneses-2004-portugal-1914-1926",

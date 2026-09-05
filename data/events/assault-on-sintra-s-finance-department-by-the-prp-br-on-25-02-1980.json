@@ -14,15 +14,24 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
   "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M22: an attack on the finance department at Sintra by the PRP-BR on 25 February 1980. The atlas holds no record of the armed far left — not the PRP-BR, not the FP-25, not the trials — so there is nothing for an action of theirs to attach to in either direction, and any edge would be invented. Revisit once the organisations themselves are here."
+  },
   "review": {
     "flags": [
       "imported-facts",
       "m22-retracted"
-    ],
-    "note": "Retracted in M22: an attack on the finance department at Sintra by the PRP-BR on 25 February 1980. The atlas holds no record of the armed far left — not the PRP-BR, not the FP-25, not the trials — so there is nothing for an action of theirs to attach to in either direction, and any edge would be invented. Revisit once the organisations themselves are here."
+    ]
   },
   "wikidata": "Q115187238",
-  "sitelinks": 0,
+  "sitelinks": {
+    "count": 0,
+    "on": "2026-09-04"
+  },
   "sources": [
     {
       "source": "wikidata",

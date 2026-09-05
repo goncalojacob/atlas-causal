@@ -14,6 +14,9 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-02",
   "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
   "type": "dataset",
   "creators": [
     "Guy Schvitz",

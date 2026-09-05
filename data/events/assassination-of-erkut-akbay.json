@@ -14,15 +14,24 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
   "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M22: the killing of Erkut Akbay, a Turkish administrative attaché, shot in his car outside his Lisbon home on 7 June 1982; his wife Nadide died of her wounds in January 1983. It belongs to the Armenian campaign against Turkish diplomatic targets in Europe, of which the atlas holds nothing, and the only relation between the two Lisbon attacks is that they were part of the same campaign — which is not one of the five edge types. Revisit if the campaign itself is ever written."
+  },
   "review": {
     "flags": [
       "imported-facts",
       "m22-retracted"
-    ],
-    "note": "Retracted in M22: the killing of Erkut Akbay, a Turkish administrative attaché, shot in his car outside his Lisbon home on 7 June 1982; his wife Nadide died of her wounds in January 1983. It belongs to the Armenian campaign against Turkish diplomatic targets in Europe, of which the atlas holds nothing, and the only relation between the two Lisbon attacks is that they were part of the same campaign — which is not one of the five edge types. Revisit if the campaign itself is ever written."
+    ]
   },
   "wikidata": "Q4808506",
-  "sitelinks": 6,
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-09-04"
+  },
   "wikipedia": {
     "en": "Assassination of Erkut Akbay",
     "pt": "Assassinato de Erkut Akbay"

@@ -14,15 +14,24 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
   "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M21: the Congress met on 29 May 1915 to elect a president for the remainder of Manuel de Arriaga’s term, three days after he resigned. It has a good incoming argument — the rising of 14 May brought the resignation about — but nothing argued leads out of it, and the two-edges bar wants one outgoing. What the interim presidency did was hold the ring until the June elections, which is sequence rather than consequence."
+  },
   "review": {
     "flags": [
       "imported-facts",
       "m21-retracted"
-    ],
-    "note": "Retracted in M21: the Congress met on 29 May 1915 to elect a president for the remainder of Manuel de Arriaga’s term, three days after he resigned. It has a good incoming argument — the rising of 14 May brought the resignation about — but nothing argued leads out of it, and the two-edges bar wants one outgoing. What the interim presidency did was hold the ring until the June elections, which is sequence rather than consequence."
+    ]
   },
   "wikidata": "Q97516248",
-  "sitelinks": 2,
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-09-04"
+  },
   "wikipedia": {
     "en": "May 1915 Portuguese presidential election",
     "pt": "Eleições presidenciais portuguesas de Maio de 1915"

@@ -14,7 +14,11 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-02",
   "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
   "review": {
+    "status": "draft",
     "flags": [
       "date"
     ],
@@ -25,7 +29,10 @@
     "en": "Fretilin",
     "pt": "Frente Revolucionária de Timor-Leste Independente"
   },
-  "sitelinks": 30,
+  "sitelinks": {
+    "count": 30,
+    "on": "2026-09-02"
+  },
   "sources": [
     {
       "source": "macqueen-1997-decolonization",

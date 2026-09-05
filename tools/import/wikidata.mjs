@@ -461,8 +461,12 @@ export function namesFor(read) {
 
 // --- the records ------------------------------------------------------------
 
-export function identityOf(read) {
-  const identity = { wikidata: read.qid, sitelinks: read.sitelinks };
+// `on` is the day the item was read. A sitelink count changes without this
+// record changing, so it is stored as a snapshot with its date rather than as
+// a fact — the same treatment the cached leads already get (health review A,
+// finding 23b).
+export function identityOf(read, on) {
+  const identity = { wikidata: read.qid, sitelinks: { count: read.sitelinks, on } };
   if (Object.keys(read.titles).length) identity.wikipedia = { ...read.titles };
   return identity;
 }
@@ -503,7 +507,7 @@ function envelope(id, kind, created, fields) {
 export function placeRecord(read, { id, created, region = null }) {
   const label = read.labels.en ?? read.labels.pt ?? read.qid;
   return envelope(id, 'place', created, {
-    ...identityOf(read),
+    ...identityOf(read, created),
     sources: [{ source: SOURCE_ID, locator: read.qid }],
     names: namesFor(read),
     where: { lon: read.point.lon, lat: read.point.lat, precision: 'point', label },
@@ -514,7 +518,7 @@ export function placeRecord(read, { id, created, region = null }) {
 
 export function actorRecord(read, { id, created, actorType, when }) {
   return envelope(id, 'actor', created, {
-    ...identityOf(read),
+    ...identityOf(read, created),
     sources: [{ source: SOURCE_ID, locator: read.qid }],
     actorType,
     names: namesFor(read),
@@ -526,7 +530,7 @@ export function actorRecord(read, { id, created, actorType, when }) {
 
 export function eventRecord(read, { id, created, when, place, region = null }) {
   return envelope(id, 'event', created, {
-    ...identityOf(read),
+    ...identityOf(read, created),
     sources: [{ source: SOURCE_ID, locator: read.qid }],
     title: read.labels.en ?? read.labels.pt ?? read.qid,
     summary: importedSummary(read),
@@ -853,7 +857,7 @@ export async function runImportMode(dataDir, { fetcher, today, batchSize = BATCH
     const existing = byItem.get(`${classified.kind}:${qid}`);
     if (existing) {
       const entry = entries.find((e) => e.record.id === existing);
-      const { record, added } = mergeIdentity(entry.record, identityOf(read));
+      const { record, added } = mergeIdentity(entry.record, identityOf(read, today));
       if (added.length) {
         written.push(await writeRecord(dataDir, path.dirname(entry.file), record));
         report.enriched.push({ id: existing, qid, added });
@@ -990,7 +994,7 @@ export async function runReconcileMode(dataDir, { fetcher, today, batchSize = BA
       });
       continue;
     }
-    const merged = mergeIdentity(record, identityOf(certain));
+    const merged = mergeIdentity(record, identityOf(certain, today));
     if (merged.added.length) {
       written.push(await writeRecord(dataDir, path.dirname(entry.file), merged.record));
       report.enriched.push({ id, qid: certain.qid, added: merged.added });

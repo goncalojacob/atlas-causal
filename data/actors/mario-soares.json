@@ -14,12 +14,21 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-02",
   "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
   "wikidata": "Q156781",
   "wikipedia": {
     "en": "Mário Soares",
     "pt": "Mário Soares"
   },
-  "sitelinks": 56,
+  "sitelinks": {
+    "count": 56,
+    "on": "2026-09-02"
+  },
   "sources": [
     {
       "source": "maxwell-1995-making-of-portuguese-democracy",

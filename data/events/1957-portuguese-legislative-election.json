@@ -14,15 +14,24 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
   "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M21: the National Union taking all 120 seats again. The cached leads disagree about the date — English Wikipedia says 3 November 1957, Portuguese Wikipedia says 4 November — which is recorded here because review.html exists for exactly that, and which is not an argument for keeping the record."
+  },
   "review": {
     "flags": [
       "imported-facts",
       "m21-retracted"
-    ],
-    "note": "Retracted in M21: the National Union taking all 120 seats again. The cached leads disagree about the date — English Wikipedia says 3 November 1957, Portuguese Wikipedia says 4 November — which is recorded here because review.html exists for exactly that, and which is not an argument for keeping the record."
+    ]
   },
   "wikidata": "Q7232763",
-  "sitelinks": 4,
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-09-04"
+  },
   "wikipedia": {
     "en": "1957 Portuguese legislative election",
     "pt": "Eleições legislativas portuguesas de 1957"

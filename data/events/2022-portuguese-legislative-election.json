@@ -14,6 +14,9 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
   "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
   "review": {
     "flags": [
       "imported-facts",
@@ -22,7 +25,10 @@
     "note": "Merged in M22 into legislative-election-2022, which is the same event: the early election of 30 January 2022, called after the budget for that year was voted down, at which the PS won an absolute majority. This record keeps the Wikidata id the import brought and names its survivor rather than becoming an anonymous tombstone."
   },
   "wikidata": "Q84081925",
-  "sitelinks": 20,
+  "sitelinks": {
+    "count": 20,
+    "on": "2026-09-04"
+  },
   "wikipedia": {
     "en": "2022 Portuguese legislative election",
     "pt": "Eleições legislativas portuguesas de 2022"

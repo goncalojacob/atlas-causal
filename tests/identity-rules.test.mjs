@@ -25,9 +25,9 @@ test('the schemas accept the three identity fields on an event, an actor and a p
   const r = await run((fx) => {
     fx.byId['fixture-event-a'].wikidata = 'Q11';
     fx.byId['fixture-event-a'].wikipedia = { en: 'Fixture article A', 'pt-br': 'Artigo de fixture A' };
-    fx.byId['fixture-event-a'].sitelinks = 0;
+    fx.byId['fixture-event-a'].sitelinks = { count: 0, on: '2026-09-05' };
     fx.byId['fixture-actor-one'].wikidata = 'Q12';
-    fx.byId['fixture-actor-one'].sitelinks = 7;
+    fx.byId['fixture-actor-one'].sitelinks = { count: 7, on: '2026-09-05' };
     fx.byId['fixture-place-a'].wikidata = 'Q13';
     fx.byId['fixture-place-a'].wikipedia = { pt: 'Lugar de fixture A' };
   });
@@ -44,9 +44,13 @@ test('the schema refuses a malformed item id, a non-string title and a negative 
     fx.byId['fixture-event-a'].wikipedia = { en: 42 };
   });
   assert.equal(rulesHit(r, 1)[0].path, '/wikipedia/en');
-  r = await run((fx) => { fx.byId['fixture-event-a'].sitelinks = -1; });
-  assert.equal(rulesHit(r, 1)[0].path, '/sitelinks');
-  r = await run((fx) => { fx.byId['fixture-event-a'].sitelinks = 1.5; });
+  r = await run((fx) => { fx.byId['fixture-event-a'].sitelinks = { count: -1, on: '2026-09-05' }; });
+  assert.equal(rulesHit(r, 1)[0].path, '/sitelinks/count');
+  r = await run((fx) => { fx.byId['fixture-event-a'].sitelinks = { count: 1.5, on: '2026-09-05' }; });
+  assert.equal(rulesHit(r, 1)[0].path, '/sitelinks/count');
+  // A count with no date is the shape the migration took away: it says a
+  // third party's number is a fact of this record's own (finding 23b).
+  r = await run((fx) => { fx.byId['fixture-event-a'].sitelinks = 3; });
   assert.equal(rulesHit(r, 1)[0].path, '/sitelinks');
   // An edge is an argument about things, not a thing: it has no item, and
   // the schema says so before rule 21 has to.

@@ -14,15 +14,24 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
   "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M22: the attack on the Turkish embassy in Lisbon on 27 July 1983, in which seven people died, five of them the attackers. It belongs to the Armenian campaign against Turkish diplomatic targets in Europe, of which the atlas holds nothing, and the only relation between the two Lisbon attacks is that they were part of the same campaign — which is not one of the five edge types. Revisit if the campaign itself is ever written."
+  },
   "review": {
     "flags": [
       "imported-facts",
       "m22-retracted"
-    ],
-    "note": "Retracted in M22: the attack on the Turkish embassy in Lisbon on 27 July 1983, in which seven people died, five of them the attackers. It belongs to the Armenian campaign against Turkish diplomatic targets in Europe, of which the atlas holds nothing, and the only relation between the two Lisbon attacks is that they were part of the same campaign — which is not one of the five edge types. Revisit if the campaign itself is ever written."
+    ]
   },
   "wikidata": "Q349875",
-  "sitelinks": 12,
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-09-04"
+  },
   "wikipedia": {
     "en": "1983 Turkish embassy attack in Lisbon",
     "pt": "Ataque à Embaixada da Turquia em Lisboa"

@@ -14,15 +14,24 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
   "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M22: the local elections of 1 October 2017. The atlas keeps the first exercise of an institution and the ballot at which it became a cycle, and retracts the routine repetitions after them; the eleventh local election is one. The only link available is the constitutional one the earlier records already carry. Revisit if a consequence is written."
+  },
   "review": {
     "flags": [
       "imported-facts",
       "m22-retracted"
-    ],
-    "note": "Retracted in M22: the local elections of 1 October 2017. The atlas keeps the first exercise of an institution and the ballot at which it became a cycle, and retracts the routine repetitions after them; the eleventh local election is one. The only link available is the constitutional one the earlier records already carry. Revisit if a consequence is written."
+    ]
   },
   "wikidata": "Q27922078",
-  "sitelinks": 3,
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-09-04"
+  },
   "wikipedia": {
     "en": "2017 Portuguese local elections",
     "pt": "Eleições autárquicas portuguesas de 2017"

@@ -14,15 +14,24 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
   "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M21: elections to a Legislative Assembly held in Portuguese Angola between 19 and 27 March 1973, the first and the only ones. That is genuinely interesting — the late-colonial attempt at a settler assembly, a year before the regime fell — and the cached lead is one sentence long. Nothing in the atlas follows from it, and the war it was meant to answer is already here."
+  },
   "review": {
     "flags": [
       "imported-facts",
       "m21-retracted"
-    ],
-    "note": "Retracted in M21: elections to a Legislative Assembly held in Portuguese Angola between 19 and 27 March 1973, the first and the only ones. That is genuinely interesting — the late-colonial attempt at a settler assembly, a year before the regime fell — and the cached lead is one sentence long. Nothing in the atlas follows from it, and the war it was meant to answer is already here."
+    ]
   },
   "wikidata": "Q18160604",
-  "sitelinks": 2,
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-09-04"
+  },
   "wikipedia": {
     "en": "1973 Angolan Legislative Assembly election"
   },
