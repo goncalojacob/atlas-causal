@@ -11,6 +11,7 @@
 
 import { esc } from '../util/esc.js';
 import { consequences, antecedents, convergence } from '../graph.js';
+import { chainEdges as walkedEdges } from '../chain.js';
 import { formatInterval, formatYear, defaultCalendar } from '../util/dates.js';
 import { laneExplain } from '../lanes.js';
 import { horizonHtml } from './horizon.js';
@@ -166,7 +167,7 @@ function drawnHtml(ctx, event, state) {
 // section this reader last had open, read from localStorage by panel.js.
 export function eventCardHtml(ctx, { event, found, state, remembered = null }) {
   const { atlas } = ctx;
-  const chainEdges = state.chain.map((id) => atlas.edges.get(id)).filter(Boolean);
+  const chainEdges = walkedEdges(atlas, state.chain);
   const pathIds = [...new Set([...chainEdges.flatMap((e) => [e.from, e.to]), event.id])];
   const lastEdge = chainEdges[chainEdges.length - 1] ?? null;
   const out = consequences(atlas.adjacency, event.id);
@@ -182,6 +183,13 @@ export function eventCardHtml(ctx, { event, found, state, remembered = null }) {
     ? `<p class="notice"><code>${esc(v.id)}</code> is a former id of this event.</p>`
     : `<p class="notice"><code>${esc(v.id)}</code> was merged into this event.</p>`));
   if (event.status !== 'active') notices.push(`<p class="notice status">This event is <strong>${esc(event.status)}</strong>; it has no active links.</p>`);
+  // The link this page was opened with named a step that has been withdrawn
+  // since; main.js cut the walk there. A path quietly shorter than the one
+  // that was shared is a different argument, so the card says so.
+  if (ctx.walkWasCut?.(state)) {
+    notices.push(`<p class="notice status">A step of the link you followed has been <strong>retracted</strong>.
+      The walk is drawn as far as that step, since what came after it followed from it.</p>`);
+  }
   if (lastEdge && lastEdge.confidence === 'disputed') {
     notices.push(`<p class="notice disputed">You arrived here through a <strong>disputed</strong> link.
       <button type="button" class="link" data-action="section" data-section="followed">Read the dispute</button> before going on.</p>`);
@@ -270,7 +278,7 @@ export function eventCardHtml(ctx, { event, found, state, remembered = null }) {
 
 export function renderEventCard(ctx, { container, event, found, state, mine, remembered = null }) {
   const { atlas } = ctx;
-  const chainEdges = state.chain.map((id) => atlas.edges.get(id)).filter(Boolean);
+  const chainEdges = walkedEdges(atlas, state.chain);
   const lastEdge = chainEdges[chainEdges.length - 1] ?? null;
   container.innerHTML = eventCardHtml(ctx, { event, found, state, remembered });
 

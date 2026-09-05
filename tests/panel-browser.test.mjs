@@ -159,3 +159,40 @@ test('moving the view is not an opening: Back does not undo a pan', { skip }, as
     assert.match(await page.eval('return location.search;'), /to=1974/);
   });
 });
+
+// A shared link naming a step that has been retracted since. The fixtures
+// carry one — no edge in `data/` is retracted yet, which is what makes this
+// latent rather than visible — so the whole path is exercised here: the walk
+// cut at load, the URL normalised to what is actually drawn, and the card
+// saying that the argument the reader was sent is not the one they have.
+test('a link whose walk names a retracted step is cut, and the card says so', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await open(page, url('?fixtures=1&selected=fixture-event-t&chain=fixture-event-e--fixture-event-t--inspired'),
+      'return Boolean(document.querySelector(".panel .event-head h2"));');
+
+    assert.deepEqual(
+      await page.eval('return Object.fromEntries(new URLSearchParams(location.search));'),
+      { fixtures: '1', selected: 'fixture-event-t' },
+      'the URL describes the walk that is drawn, not the one that was sent',
+    );
+    const notice = await page.eval('return document.querySelector(".panel .notice.status")?.textContent.replace(/\\s+/g, " ").trim() ?? null;');
+    assert.match(notice, /A step of the link you followed has been retracted\./);
+    assert.match(notice, /drawn as far as that step/);
+    // Cut, so there is no walk left and no breadcrumb over the card.
+    assert.equal(await page.eval('return document.querySelectorAll(".panel .breadcrumb").length;'), 0);
+  });
+});
+
+// The same link with its step still standing: nothing is cut and nothing is
+// said, so the notice is not something every shared walk now carries.
+test('a walk whose steps all stand is left alone and says nothing', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await open(page, url('?fixtures=1&selected=fixture-event-b&chain=fixture-event-a--fixture-event-b--caused'),
+      'return Boolean(document.querySelector(".panel .event-head h2"));');
+    assert.deepEqual(
+      await page.eval('return Object.fromEntries(new URLSearchParams(location.search));'),
+      { fixtures: '1', selected: 'fixture-event-b', chain: 'fixture-event-a--fixture-event-b--caused' },
+    );
+    assert.equal(await page.eval('return document.querySelectorAll(".panel .notice.status").length;'), 0);
+  });
+});

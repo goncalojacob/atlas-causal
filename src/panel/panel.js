@@ -13,6 +13,7 @@ import { windowAt, resolveWindow } from '../util/window.js';
 import { formatFocus, lensSet } from '../lens.js';
 import { lanesFor } from '../lanes.js';
 import { shortestPaths, pathTo } from '../graph.js';
+import { chainEdges } from '../chain.js';
 import { identifiers, containerText } from '../citation.js';
 import { renderEventCard } from './event.js';
 import { renderActorCard } from './actor.js';
@@ -35,6 +36,11 @@ function readerLanguages() {
 export function createPanel(container, {
   atlas, state, fixtures = false, languages = readerLanguages(),
   history = globalThis.history, storage = globalThis.localStorage,
+  // Whether the walk this page opened with was cut short by a step that has
+  // been retracted since the link was made. main.js decides it, because it is
+  // the only place that has seen the chain before it was cut; it stops being
+  // true as soon as the reader opens something else (chain.js).
+  walkWasCut = () => false,
 }) {
   let token = 0;
   const links = createLinks({ fixtures });
@@ -121,7 +127,7 @@ export function createPanel(container, {
       case 'chain-to': {
         const at = Number(el.dataset.step);
         if (!Number.isInteger(at) || at < 0 || at > s.chain.length) break;
-        const edges = s.chain.map((id) => atlas.edges.get(id)).filter(Boolean);
+        const edges = chainEdges(atlas, s.chain);
         const target = at === 0 ? edges[0]?.from : edges[at - 1]?.to;
         if (target) state.set({ chain: s.chain.slice(0, at), selected: target });
         break;
@@ -350,6 +356,7 @@ export function createPanel(container, {
     partOfHtml: (id, options) => partOfHtml(ctx, id, options),
     eventLink,
     highlightedActor,
+    walkWasCut,
     isCurrent: (mine) => mine === token,
   };
 

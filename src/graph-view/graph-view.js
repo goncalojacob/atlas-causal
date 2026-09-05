@@ -25,6 +25,7 @@ import { svg, svgTitle } from '../util/dom.js';
 import { formatInterval, formatYear } from '../util/dates.js';
 import { overlaps, resolveWindow } from '../util/window.js';
 import { convergence } from '../graph.js';
+import { chainEdges as walkedEdges } from '../chain.js';
 import { horizonSet, horizonBand } from '../horizon.js';
 import { narrativeSet } from '../narrative.js';
 import { lensSet } from '../lens.js';
@@ -356,7 +357,7 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
     arrange(s);
     note.hidden = !s.bbox;
     const timeWindow = resolveWindow(s, atlas.extent);
-    const chainEdges = s.chain.map((id) => atlas.edges.get(id)).filter(Boolean);
+    const chainEdges = walkedEdges(atlas, s.chain);
     const pathIds = new Set(chainEdges.flatMap((e) => [e.from, e.to]));
     if (s.selected) pathIds.add(s.selected);
     const chainEdgeIds = new Set(chainEdges.map((e) => e.id));

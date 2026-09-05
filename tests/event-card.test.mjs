@@ -177,6 +177,21 @@ test('the disputed notice opens the section that holds the argument', () => {
   assert.match(section(html, 'followed').block, /<span class="count disputed">1 disputed<\/span>/);
 });
 
+// A link somebody was sent can name a step the project has since withdrawn.
+// main.js cuts the walk there and tells the panel; the card is where the
+// reader is told, because a path quietly shorter than the one that was shared
+// is a different argument.
+test('a walk cut short by a retracted step says so on the card', () => {
+  const carnation = atlas.events.get('carnation-revolution-1974');
+  const quiet = eventCardHtml(context(atlas), { event: carnation, found, state: state() });
+  assert.equal(/has been <strong>retracted<\/strong>/.test(quiet), false, 'nothing to say by default');
+
+  const cut = eventCardHtml({ ...context(atlas), walkWasCut: () => true },
+    { event: carnation, found, state: state() });
+  assert.match(cut, /<p class="notice status">A step of the link you followed has been <strong>retracted<\/strong>\./);
+  assert.match(cut, /drawn as far as that step/);
+});
+
 test('nothing a record carries reaches the card unescaped', () => {
   const nasty = {
     id: 'x', title: '<img onerror="a">', when: { start: 1200, end: 1200 }, region: '<b>r</b>',

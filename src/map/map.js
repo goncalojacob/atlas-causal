@@ -9,6 +9,7 @@ import { svg } from '../util/dom.js';
 import { fitBounds, WORLD, viewBbox, bboxTransform } from './projection.js';
 import { createLandLayer } from './layers/land.js';
 import { createPresencesLayer } from './layers/presences.js';
+import { chainEdges } from '../chain.js';
 import { createEventsLayer } from './layers/events.js';
 import { DEEPEST_ZOOM } from '../cluster.js';
 import { resolveWindow } from '../util/window.js';
@@ -287,9 +288,9 @@ export function createMap(container, { atlas, state, onCluster = null }) {
     const kept = (id) => !lens || lens.has(id);
     const keep = (set) => (set && lens ? new Set([...set].filter(kept)) : set);
 
-    const chainEdges = s.chain.map((id) => atlas.edges.get(id))
-      .filter((e) => e && kept(e.from) && kept(e.to));
-    const pathIds = new Set(chainEdges.flatMap((e) => [e.from, e.to]));
+    const walked = chainEdges(atlas, s.chain)
+      .filter((e) => kept(e.from) && kept(e.to));
+    const pathIds = new Set(walked.flatMap((e) => [e.from, e.to]));
     if (s.selected && kept(s.selected)) pathIds.add(s.selected);
     const consequenceEdges = (s.selected ? (atlas.adjacency.out.get(s.selected) ?? []) : [])
       .filter((e) => kept(e.from) && kept(e.to));
@@ -317,7 +318,7 @@ export function createMap(container, { atlas, state, onCluster = null }) {
       narrativeIds: narrativeSet(atlas, s),
       // Empty unless the reader has chosen a horizon year (horizon.js).
       reachable: lens ? new Map([...reachable].filter(([id]) => lens.has(id))) : reachable,
-      chainEdges,
+      chainEdges: walked,
       consequenceEdges,
       eventById: atlas.events,
       k: transform.k,

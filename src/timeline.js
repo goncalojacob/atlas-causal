@@ -30,6 +30,7 @@ import { resolveWindow, overlaps, decadeOf, zoomWindow } from './util/window.js'
 import { horizonBand, horizonSet } from './horizon.js';
 import { narrativeSet } from './narrative.js';
 import { lensSet } from './lens.js';
+import { chainEdges } from './chain.js';
 import { lanesFor, rowLanes, laneOf, barBox } from './lanes.js';
 import { eventsInView } from './util/viewport.js';
 
@@ -352,10 +353,7 @@ export function createTimeline(container, { atlas, state, createScale = createLi
     // faded, it is not drawn (lens.js).
     const lens = lensSet(atlas, s);
     const inLens = lens ? atlas.activeEvents.filter((e) => lens.has(e.id)) : atlas.activeEvents;
-    const pathIds = new Set(s.chain.flatMap((id) => {
-      const edge = atlas.edges.get(id);
-      return edge ? [edge.from, edge.to] : [];
-    }));
+    const pathIds = new Set(chainEdges(atlas, s.chain).flatMap((e) => [e.from, e.to]));
     // And then the map's viewport, which composes with the lens rather than
     // replacing it: the lens says which events exist, the box says which of
     // them are on screen. What the reader is holding is exempt from the box

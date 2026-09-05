@@ -4,6 +4,7 @@
 
 import { loadAtlas } from './data.js';
 import { createState, parseState } from './state.js';
+import { chainEdges, retractedSteps } from './chain.js';
 import { createMap } from './map/map.js';
 import { createGraphView } from './graph-view/graph-view.js';
 import { createTimeline } from './timeline.js';
@@ -36,7 +37,20 @@ try {
   // `restore` is the same derivation applied on the browser's Back and
   // Forward: a popstate onto a narrative's URL is a step, and the selection,
   // the chain and the window have to be computed from it again.
-  const store = createState(openingState(atlas, parseState(window.location.search)), {
+  //
+  // A link somebody was sent can name a step the project has since withdrawn,
+  // and `?chain=` is checked for shape and never for status. The walk is cut
+  // at that step here, once, so the URL, the breadcrumb and the three
+  // pictures all describe the same argument; the panel is told, so that a
+  // reader handed a shorter walk than the one they were sent is not handed it
+  // silently (chain.js).
+  const opened = parseState(window.location.search);
+  const walk = chainEdges(atlas, opened.chain).map((edge) => edge.id);
+  const cut = retractedSteps(atlas, opened.chain) > 0;
+  const sameWalk = (s) => s.selected === opened.selected
+    && s.chain.length === walk.length && walk.every((id, i) => s.chain[i] === id);
+
+  const store = createState(openingState(atlas, { ...opened, chain: walk }), {
     window,
     restore: (s) => openingState(atlas, s),
   });
@@ -47,7 +61,9 @@ try {
 
   // The panel is built first because the map hands it the members of a
   // cluster of marks the reader clicks on.
-  const panel = createPanel(panelEl, { atlas, state, fixtures });
+  const panel = createPanel(panelEl, {
+    atlas, state, fixtures, walkWasCut: (s) => cut && sameWalk(s),
+  });
 
   // Under 720px the panel is a sheet over the view rather than a column
   // beside it. It raises itself when what is open changes, which covers every
