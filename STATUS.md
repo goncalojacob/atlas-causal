@@ -6,8 +6,57 @@ session ends. `ARCHITECTURE.md` is the target; this file is the position.
 
 ## Last updated
 
-2026-09-05, after M24 (`docs/m24-brief.md`): **the timeline follows the map,
-and six interface fixes the owner asked for.**
+2026-09-05, after M25 (`docs/m25-brief.md`): **the graph view has a level of
+detail: what is too close together to tell apart is one mark with a count.**
+
+Nodes of one band closer together than thirteen units at rest are drawn as
+one mark with a `+n` badge, and the links between two such marks are one
+line, heavier for how many it carries, in the commonest of their types and
+dashed as disputed if **any single one** of them is. Zooming in splits the
+stacks — the threshold is `D / k`, a screen constant, so they come apart on
+their own — and clicking one puts its members in the panel and goes to the
+zoom where it comes apart. Merging is **within a band and never across one**,
+because a lane is a claim about where a group of events belongs.
+
+The picture is two pure functions now, not one. `layoutGraph` places every
+event once and knows nothing of the zoom; `stackLayout` reads those
+coordinates and says what is drawn at a given `k`. That split is why a stack
+can open without the picture moving under the reader: **zooming changes which
+marks are drawn, never where a mark is.** `src/cluster.js` stays the one
+module that decides what merges, for all three pictures, and gained the two
+things the graph needed — `alone`, the set of ids that must keep a mark of
+their own, which every view used to hand-roll, and `mergeEdges`.
+
+What the reader is working with is never inside a stack: the open event, the
+walked chain, the consequences and the converging branches drawn at it, the
+lens's events, the horizon's reachable set, a narrative's steps, and the
+events of an open actor.
+
+**No historical text was written and nothing under `data/` changed**: 1,608
+records, 0 errors, 3 warnings, as M23 left it. 528 tests, four of them
+driving headless Chromium over `tools/serve.mjs`. `ARCHITECTURE.md` is at
+revision 20 and its reserved line on level of detail is built; deviations
+174–175 — the never-stacked set is wider than the brief's five, and "far
+fewer nodes than events" is not yet true of this atlas at 134 active events,
+for a reason the numbers below make plain.
+
+**The numbers, at the default zoom (k = 1) on the 134 active events.** With
+no grouping, which is what the atlas opens on: **113 marks**, 17 of them
+stacks, 21 events folded in, and 142 lines of 158. Grouped into the five
+regions, which is the arrangement that crowds a band: **83 marks**, 33 of
+them stacks, 51 events folded in, and 116 lines. The badges add back up to
+134 in both. At `k = 8`, the deepest zoom the view allows, every event has
+its own mark again. The reduction is real but modest, and honestly so: the
+brief was written for "three hundred nodes and five hundred edges", and 134
+events over 126 years is about one a year — not yet a hairball. The
+threshold was set by the same reasoning the map sets its own (a little under
+the distance at which two hit targets overlap) rather than tuned upward to
+earn an adjective; on a synthetic 300-event, 300-link picture at the density
+the feature exists for, the same rule draws **143 marks of 300** and 210
+lines, and the test asserts it there as well as here.
+
+Before that, 2026-09-05, after M24 (`docs/m24-brief.md`): **the timeline
+follows the map, and six interface fixes the owner asked for.**
 
 Pan or zoom the map and the lanes hold only the events placed on screen, with
 a line above them saying how many of how many are in view and a **show the
@@ -1118,6 +1167,15 @@ overnight runs and the hourly shepherd keep off each other's toes on `m0`.
    not linked from the atlas or from `about.html`; both pages say
    contributions are not open. Opening them is the owner's call (see the
    first open question).
+12. **Owner: say whether the graph should merge harder.** Open
+   `http://localhost:8000/?view=graph` and then `&group=region`. At rest the
+   first draws 113 marks for 134 events and the second 83; `STACK_DISTANCE`
+   in `src/graph-view/layout.js` is the one number that decides it, at 13
+   units, chosen so that two marks a reader can plainly aim at separately
+   are never drawn as one (deviation 175). Raising it folds more of the
+   picture and hides more behind a badge. It is a taste question and the
+   agent did not answer it; the same question about the map's own 16 is item
+   7.
 
 ## Open questions
 
@@ -2332,6 +2390,41 @@ object. Every later card gets a file.
     would have been a second, louder action nobody asked for, and the map's
     own double-click already does it.
 
+174. **The never-stacked set is eight things, not the brief's five.** M25's
+    brief names the selected event, the walked chain, the lens's events, the
+    horizon's reachable set and a narrative's steps. Three more were added,
+    for the reason the map has drawn them alone since M7: the far ends of the
+    consequence links drawn at the open event, the **converging branches**,
+    and the events of an open actor. The convergence query is the thing this
+    project is for, and an answer hidden inside a mark that does not say it is
+    an answer would be the atlas failing at it; the actor's events are
+    emphasised in cobalt on all three pictures and a stack cannot carry that
+    emphasis. Each is one line of the set built in `render`.
+
+175. **"Far fewer nodes than events" does not hold yet, and the constant was
+    not raised to make it.** The brief's done-when asks the default zoom to
+    draw far fewer nodes than events. On this atlas it draws 113 of 134 with
+    no grouping and 83 of 134 in region bands — fewer, not far fewer, because
+    134 events over 126 years is roughly one a year and the picture is not
+    dense enough to fold. `STACK_DISTANCE` is 13, derived as the map derives
+    its own 16 (a little under 2 × the hit radius, which here is 8), and
+    raising it to 20 or 30 would have bought the adjective by drawing as one
+    mark two events a reader can plainly aim at separately. The count is
+    asserted against the layout's output as the brief asks, both on the real
+    atlas and on a 300-event picture at the density the feature was written
+    for, where it draws 143 marks of 300. Nothing else in the done-when is
+    affected: the stacks split on one wheel step, the badges sum to the total,
+    merged lines carry their count and keep a dispute, a selection is never
+    stacked, and the layout test asserts determinism with stacks.
+
+Two notes that are not deviations. **No stack in the current data is
+coincident**: two nodes at the very same point would need the same year, the
+same band and the column resolver not to have spread them, which it always
+does, so every stack the atlas draws can be pulled apart by zooming and the
+panel-only path for one that cannot is a guard rather than a case. And the
+graph still does **not** clear the selection on a click on empty ground — M24
+gave that to the map and the timeline, and M25 did not widen it.
+
 ## Dates to verify
 
 Everything below was written from memory and is where the owner's review
@@ -2792,3 +2885,4 @@ M24 started 2026-09-05T00:20:55Z by shepherd
 M24 done
 
 M25 started 2026-09-05T01:06:07Z by scheduled
+M25 done
