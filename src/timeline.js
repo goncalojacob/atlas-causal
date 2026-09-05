@@ -211,6 +211,99 @@ export function createTimeline(container, { atlas, state, createScale = createLi
     }
   });
 
+  // --- the bars from the keyboard -----------------------------------------
+  //
+  // Nothing in the lanes could be reached from the keyboard: a <rect> is not
+  // a button, and there is no button to be had inside an <svg> (health review
+  // B, finding 11). Every bar is a control now, but Tab does not visit them
+  // one by one — twenty thousand rects would be twenty thousand stops. One
+  // bar per lane is in the tab order and the arrow keys move along the lane
+  // from there, which is the roving tabindex the finding asks for.
+  //
+  // Which bar that is, per lane, is remembered by what it names, so that
+  // redrawing the lanes does not send the focus back to the first bar.
+  const roving = new Map();
+  const keyOf = (el) => el.getAttribute('data-id') ?? `cluster:${el.getAttribute('data-cluster')}`;
+  const barControl = (laneId, label) => ({
+    'data-bar': '', 'data-lane': laneId, tabindex: '-1', role: 'button', 'aria-label': label,
+  });
+  // Matched in JavaScript rather than in a selector: a lane's id comes from
+  // the data and has no business being escaped into one.
+  const barsOf = (laneId) => [...root.querySelectorAll('[data-bar]')]
+    .filter((el) => el.getAttribute('data-lane') === laneId)
+    .sort((a, b) => Number(a.getAttribute('x')) - Number(b.getAttribute('x')));
+
+  const applyRoving = () => {
+    const byLane = new Map();
+    for (const el of root.querySelectorAll('[data-bar]')) {
+      const lane = el.getAttribute('data-lane');
+      if (!byLane.has(lane)) byLane.set(lane, []);
+      byLane.get(lane).push(el);
+    }
+    for (const [lane, list] of byLane) {
+      list.sort((a, b) => Number(a.getAttribute('x')) - Number(b.getAttribute('x')));
+      const wanted = roving.get(lane);
+      const chosen = list.find((el) => keyOf(el) === wanted) ?? list[0];
+      for (const el of list) el.setAttribute('tabindex', el === chosen ? '0' : '-1');
+      roving.set(lane, keyOf(chosen));
+    }
+    for (const lane of [...roving.keys()]) if (!byLane.has(lane)) roving.delete(lane);
+  };
+
+  const activate = (bar) => {
+    const id = bar.getAttribute('data-id');
+    if (id) {
+      state.set({ selected: id, chain: [] });
+      return;
+    }
+    const cluster = drawn.get(bar.getAttribute('data-cluster'));
+    if (cluster && onCluster) onCluster(cluster);
+  };
+
+  // The focused bar is drawn again on every state change, so what it names is
+  // remembered across the redraw and the focus given back to whatever stands
+  // for it now.
+  const focusedBar = () => {
+    const active = root.ownerDocument?.activeElement;
+    return active && root.contains(active) && active.hasAttribute?.('data-bar')
+      ? { lane: active.getAttribute('data-lane'), key: keyOf(active) } : null;
+  };
+  const restoreFocus = (was) => {
+    if (!was) return;
+    const bar = barsOf(was.lane).find((el) => keyOf(el) === was.key);
+    if (bar) bar.focus?.({ preventScroll: true });
+  };
+
+  const focusBar = (bar) => {
+    if (!bar) return;
+    const lane = bar.getAttribute('data-lane');
+    for (const el of barsOf(lane)) el.setAttribute('tabindex', el === bar ? '0' : '-1');
+    roving.set(lane, keyOf(bar));
+    bar.focus?.({ preventScroll: true });
+  };
+
+  root.addEventListener('keydown', (e) => {
+    const bar = e.target.closest?.('[data-bar]');
+    if (!bar) return;
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      activate(bar);
+      return;
+    }
+    const lane = barsOf(bar.getAttribute('data-lane'));
+    const at = lane.indexOf(bar);
+    const step = e.key === 'ArrowLeft' ? -1 : e.key === 'ArrowRight' ? 1 : 0;
+    if (step) {
+      e.preventDefault();
+      focusBar(lane[Math.min(lane.length - 1, Math.max(0, at + step))]);
+      return;
+    }
+    if (e.key === 'Home' || e.key === 'End') {
+      e.preventDefault();
+      focusBar(e.key === 'Home' ? lane[0] : lane[lane.length - 1]);
+    }
+  });
+
   root.addEventListener('click', (e) => {
     if (dragged) {
       dragged = false;
@@ -218,13 +311,8 @@ export function createTimeline(container, { atlas, state, createScale = createLi
     }
     const bar = e.target.closest('[data-id], [data-cluster]');
     if (bar) {
-      const id = bar.getAttribute('data-id');
-      if (id) {
-        state.set({ selected: id, chain: [] });
-        return;
-      }
-      const cluster = drawn.get(bar.getAttribute('data-cluster'));
-      if (cluster && onCluster) onCluster(cluster);
+      if (bar.hasAttribute('data-bar')) focusBar(bar);
+      activate(bar);
       return;
     }
     if (e.target.closest('[data-window]')) return;
@@ -294,7 +382,10 @@ export function createTimeline(container, { atlas, state, createScale = createLi
         ? `${item.event.title} — and ${count} more here`
         : item.inside ? item.event.title : `${item.event.title} — outside the window`;
       const data = key === null ? { 'data-id': item.id } : { 'data-cluster': key };
-      const el = svg('rect', { x: item.x, y, width: item.width, height: height_, rx: 3, class: classes, ...data }, [svgTitle(title)]);
+      const el = svg('rect', {
+        x: item.x, y, width: item.width, height: height_, rx: 3, class: classes, ...data,
+        ...barControl(lane.id, title),
+      }, [svgTitle(title)]);
       root_.appendChild(el);
       if (count) {
         const badge = svg('text', {
@@ -346,6 +437,7 @@ export function createTimeline(container, { atlas, state, createScale = createLi
 
   function render(s) {
     measure();
+    const wasFocused = focusedBar();
     root.replaceChildren();
     drawn = new Map();
     const window = resolveWindow(s, atlas.extent);
@@ -443,7 +535,10 @@ export function createTimeline(container, { atlas, state, createScale = createLi
         item.onPath ? 'on-path' : '',
         item.selected ? 'selected' : '',
       ].filter(Boolean).join(' ');
-      root.appendChild(svg('rect', { x: item.x, y, width: item.width, height: barHeight(), rx: 3, class: classes, 'data-id': item.id }, [svgTitle(item.event.title)]));
+      root.appendChild(svg('rect', {
+        x: item.x, y, width: item.width, height: barHeight(), rx: 3, class: classes, 'data-id': item.id,
+        ...barControl(lanes[i]?.id ?? '', item.event.title),
+      }, [svgTitle(item.event.title)]));
       if (item.selected || item.onPath) {
         const text = svg('text', { x: item.x + item.width + 4, y: y + barHeight() / 2, class: `bar-label ${item.selected ? 'selected' : ''}`, 'dominant-baseline': 'middle' });
         text.textContent = item.event.title;
@@ -452,6 +547,9 @@ export function createTimeline(container, { atlas, state, createScale = createLi
     }
 
     if (window) for (const el of bandHandles(window, s)) root.appendChild(el);
+
+    applyRoving();
+    restoreFocus(wasFocused);
   }
 
   function bandShade({ from, to }) {

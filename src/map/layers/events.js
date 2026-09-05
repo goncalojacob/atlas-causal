@@ -72,9 +72,7 @@ export function createEventsLayer(group, projection, { pointOf, onSelect, onClus
   // the members up from.
   let drawn = new Map();
 
-  group.addEventListener('click', (e) => {
-    const el = e.target.closest('[data-id], [data-cluster]');
-    if (!el) return;
+  const activate = (el) => {
     const id = el.getAttribute('data-id');
     if (id) {
       onSelect(id);
@@ -82,11 +80,46 @@ export function createEventsLayer(group, projection, { pointOf, onSelect, onClus
     }
     const cluster = drawn.get(el.getAttribute('data-cluster'));
     if (cluster && onCluster) onCluster(cluster);
+  };
+
+  group.addEventListener('click', (e) => {
+    const el = e.target.closest('[data-id], [data-cluster]');
+    if (el) activate(el);
+  });
+
+  // A mark is a control, so it answers Enter and Space. It is a <circle> and
+  // not a <button>, so neither is free: nothing on the map or the timeline
+  // could be reached from the keyboard at all, and the five focusable things
+  // in the two panes were the export button, the pin and the band's handles
+  // (health review B, finding 11).
+  group.addEventListener('keydown', (e) => {
+    if (e.key !== 'Enter' && e.key !== ' ') return;
+    const el = e.target.closest?.('[data-mark]');
+    if (!el) return;
+    e.preventDefault();
+    activate(el);
   });
 
   const place = (event) => {
     const where = pointOf(event);
     return where ? projection.project([where.lon, where.lat]) : null;
+  };
+
+  // What a mark is called in the DOM: the record it opens, or the cluster it
+  // stands for. Enough to find it again after the layer has been redrawn.
+  const keyOf = (el) => el.getAttribute('data-id') ?? `cluster:${el.getAttribute('data-cluster')}`;
+  const focusedKey = () => {
+    const active = group.ownerDocument?.activeElement;
+    return active && group.contains(active) && active.hasAttribute?.('data-mark') ? keyOf(active) : null;
+  };
+  const restoreFocus = (key) => {
+    if (key === null) return;
+    for (const el of group.querySelectorAll('[data-mark]')) {
+      if (keyOf(el) === key) {
+        el.focus?.({ preventScroll: true });
+        return;
+      }
+    }
   };
 
   // window: { from, to } astronomical, or null for "everything". k: current
@@ -98,6 +131,11 @@ export function createEventsLayer(group, projection, { pointOf, onSelect, onClus
       events, window: timeWindow = null, selected, pathIds, actorIds = null, narrativeIds = null, reachable = null,
       chainEdges, consequenceEdges, eventById, k = 1, view = null, spread = null,
     }) {
+      // Every mark is drawn again on every render, so a mark activated from
+      // the keyboard would take the focus back to the document with it. What
+      // was focused is remembered by what it names and given back at the end,
+      // when the new marks exist.
+      const focused = focusedKey();
       group.replaceChildren();
       drawn = new Map();
 
@@ -116,10 +154,17 @@ export function createEventsLayer(group, projection, { pointOf, onSelect, onClus
       // An invisible circle behind every mark, so a click that is merely
       // close still lands. Both carry the same data attribute; the handler
       // does not care which was hit.
+      // The visible mark is the control: it takes the focus, carries the name
+      // and answers the keys. The hit circle behind it is left unfocusable, or
+      // Tab would visit every mark twice and the focus ring would land on
+      // something that is not drawn.
       const appendMark = (target, { x, y, radius, classes, title, id = null, cluster = null }) => {
         const data = id === null ? { 'data-cluster': cluster } : { 'data-id': id };
         target.appendChild(svg('circle', { cx: x, cy: y, r: HIT_RADIUS / k, class: 'hit', ...data }));
-        const mark = svg('circle', { cx: x, cy: y, r: radius / k, class: classes, ...data }, [svgTitle(title)]);
+        const mark = svg('circle', {
+          cx: x, cy: y, r: radius / k, class: classes, ...data,
+          'data-mark': '', tabindex: '0', role: 'button', 'aria-label': title,
+        }, [svgTitle(title)]);
         target.appendChild(mark);
         return mark;
       };
@@ -209,6 +254,7 @@ export function createEventsLayer(group, projection, { pointOf, onSelect, onClus
 
       if (spreadCluster) drawSpread(spreadCluster);
       if (k >= LABEL_ZOOM) drawLabels(clusters);
+      restoreFocus(focused);
 
       // A coincident cluster opened: its members on rings around the common
       // point, each with its own mark and title, each on a thin leg back to
