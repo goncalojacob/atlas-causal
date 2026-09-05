@@ -46,7 +46,7 @@ import { existsSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { createRegionDeriver } from '../../src/util/geo.js';
-import { IMPORT_AUTHORS } from '../../src/validate/rules.js';
+import { handWritten, isReviewed } from '../../src/origin.js';
 import { IMPORT_KINDS } from '../../src/kinds.js';
 import { mergeIdentity } from './identity.mjs';
 import { readRecords, readRegionPolygons } from '../lib/read.mjs';
@@ -68,6 +68,9 @@ export const WIKIPEDIA_SOURCE = Object.freeze({ en: 'wikipedia-en', pt: 'wikiped
 export const LANGUAGES = Object.freeze(['en', 'pt']);
 
 export const IMPORT_AUTHOR = Object.freeze({ name: 'Wikidata import (tools/import/wikidata.mjs)', github: null });
+// Which writer this is, in the envelope's own vocabulary (src/origin.js).
+// `authors` is attribution; `origin` is what the imports and the queue read.
+export const ORIGIN_TOOL = 'wikidata';
 export const IMPORTED_FLAG = 'imported-facts';
 export const LICENSE = 'CC-BY-SA-4.0';
 
@@ -497,6 +500,10 @@ function envelope(id, kind, created, fields) {
     license: LICENSE,
     created,
     revised: null,
+    // Written by the creator and by nothing else: the enrichment pass, which
+    // fills in an identifier on somebody else's record, never sets it
+    // (rule 29). It is what says this record is the import's own.
+    origin: { tool: ORIGIN_TOOL },
     // Facts nobody has checked, marked as such. Sign clears the flag; until
     // then the queue counts the record and the dashboard shows why.
     review: { flags: [IMPORTED_FLAG] },
@@ -557,13 +564,11 @@ export function leadRecord({ qid, lang, title, revid, fetched, text }) {
   };
 }
 
-// Every automated writer this repository has, in one list, so that "a record
-// somebody wrote" is a question with one answer. IMPORT_AUTHORS is the
-// validator's own list — the licence exception — and this import's author is
-// the other name on it.
-export const AUTOMATED_AUTHORS = Object.freeze([...IMPORT_AUTHORS, IMPORT_AUTHOR.name]);
-
-export const handWritten = (record) => !(record?.authors ?? []).some((a) => AUTOMATED_AUTHORS.includes(a?.name));
+// "A record no import created", which is what the matching pass may write an
+// identifier onto. It reads `origin` now and not a list of author names
+// (health review A, finding 22): src/origin.js is where the writers are
+// named, and re-exported here so that the tool's whole surface is one import.
+export { handWritten };
 
 // --- the additive rule ------------------------------------------------------
 
@@ -779,11 +784,21 @@ export const KINDS = IMPORT_KINDS;
 
 // Everything the run did, in the shape the report prints and the tests read.
 function emptyReport() {
-  return { created: [], enriched: [], refused: [], unclassified: new Map(), ambiguous: [], leads: [], calls: 0, batch: [], remaining: 0 };
+  return { created: [], enriched: [], signed: [], refused: [], unclassified: new Map(), ambiguous: [], leads: [], calls: 0, batch: [], remaining: 0 };
 }
 
 function refuse(report, qid, why) {
   report.refused.push({ qid, why });
+}
+
+// A record a person has read and signed is finished, and the additive rule
+// stops at it: filling in an identifier would change a record somebody
+// vouched for without their knowing. Reported and skipped, never written
+// (plan decision 2; review of the health plan, finding 4).
+function skipSigned(report, record, qid) {
+  if (!isReviewed(record)) return false;
+  report.signed.push({ id: record.id, qid });
+  return true;
 }
 
 // --import: create records for the items the seeds name and that the atlas
@@ -857,6 +872,7 @@ export async function runImportMode(dataDir, { fetcher, today, batchSize = BATCH
     const existing = byItem.get(`${classified.kind}:${qid}`);
     if (existing) {
       const entry = entries.find((e) => e.record.id === existing);
+      if (skipSigned(report, entry.record, qid)) continue;
       const { record, added } = mergeIdentity(entry.record, identityOf(read, today));
       if (added.length) {
         written.push(await writeRecord(dataDir, path.dirname(entry.file), record));
@@ -952,6 +968,8 @@ export async function runReconcileMode(dataDir, { fetcher, today, batchSize = BA
     .filter((e) => kinds.includes(e.record?.kind))
     .filter((e) => typeof e.record?.wikidata !== 'string')
     .filter((e) => handWritten(e.record))
+    // And a record nobody has signed: see skipSigned.
+    .filter((e) => !isReviewed(e.record))
     .map((e) => e.record.id);
 
   const state = await readState(dataDir);
@@ -1237,6 +1255,7 @@ export function reportLines(report, mode) {
   lines.push(`${mode}: ${report.batch.length} item(s) this batch, ${report.remaining} left after it, ${report.calls} call(s) spent`);
   for (const c of report.created) lines.push(`created ${c.kind} ${c.id} from ${c.qid}${c.lane ? ` (lane ${c.lane})` : ''}`);
   for (const e of report.enriched) lines.push(`enriched ${e.id} from ${e.qid}: ${e.added.join(', ')}`);
+  for (const g of report.signed ?? []) lines.push(`left alone ${g.id}: reviewed and signed, so ${g.qid} was not written onto it`);
   for (const r of report.refused) lines.push(`refused ${r.qid}: ${r.why}`);
   for (const a of report.ambiguous) lines.push(`ambiguous ${a.id}: ${a.candidates?.length ? `${a.candidates.length} candidates (${a.candidates.join(', ')})` : a.why}`);
   for (const [qid, entry] of report.unclassified ?? []) {
@@ -1244,7 +1263,7 @@ export function reportLines(report, mode) {
   }
   const leads = report.leads.filter((l) => l.file).length;
   if (leads) lines.push(`${leads} Wikipedia lead(s) cached under ${LEAD_CACHE}`);
-  lines.push(`${report.created.length} created, ${report.enriched.length} enriched, ${report.refused.length} refused, ${report.ambiguous.length} ambiguous`);
+  lines.push(`${report.created.length} created, ${report.enriched.length} enriched, ${(report.signed ?? []).length} left alone, ${report.refused.length} refused, ${report.ambiguous.length} ambiguous`);
   return lines;
 }
 

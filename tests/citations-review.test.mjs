@@ -68,7 +68,7 @@ test('a tick needs a name and a source the record actually cites', async () => {
 test('the queue says how many citations a record still has unchecked', async () => {
   const { records, byId } = await fixtures();
   const event = clone(byId['fixture-event-a']);
-  event.authors = [{ name: 'Claude (assistant draft, unreviewed)', github: null }];
+  event.review = { status: 'draft' };
   let [item] = buildQueue([event]);
   assert.equal(item.citations, 1);
   assert.equal(item.unverified, 1);

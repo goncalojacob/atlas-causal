@@ -16,6 +16,7 @@ import {
   RELATION_ENDPOINTS, ACYCLIC_RELATION_TYPES,
 } from '../vocab.js';
 import { kindsWhere, licensesOf } from '../kinds.js';
+import { NC_ORIGINS, mayBeNonCommercial } from '../origin.js';
 
 // An interval as two astronomical bounds for overlap tests: an open end
 // (`end: null`, ongoing) reaches forward without limit.
@@ -57,8 +58,8 @@ export const WIKIPEDIA_LANG = /^[a-z]{2,3}(-[a-z0-9]{2,8})*$/;
 // consensus resting on these alone (rule 22): an encyclopedia reports what
 // the scholarship says, so an argument that cites nothing else has not shown
 // the scholarship. Adding an edition adds a line here, exactly as adding an
-// import adds one to IMPORT_AUTHORS; nothing else can quietly become an
-// authority.
+// import adds one to NC_ORIGINS in src/origin.js; nothing else can quietly
+// become an authority.
 export const WIKIPEDIA_SOURCES = Object.freeze(['wikipedia-en', 'wikipedia-pt']);
 export const PRESENCE_TYPES = Object.freeze(['state', 'polity', 'sphere-of-influence', 'archaeological-culture']);
 export const DEPENDENCY_KINDS = Object.freeze(['colony', 'protectorate', 'mandate', 'occupied']);
@@ -131,12 +132,6 @@ export function resolveId(id, universe, { aliases = aliasIndex(universe), merges
   }
   return null;
 }
-
-// The exception that keeps the NC-SA licence out of data/actors/ generally:
-// an actor record may carry it only when one of these wrote it. The list is
-// the set of imports allowed to create actors; adding an import adds a line
-// here, so nothing else can quietly relicense an actor.
-export const IMPORT_AUTHORS = Object.freeze(['CShapes 2.0 import (tools/import/cshapes.mjs)']);
 
 // Roles are free text until there is a reason for a closed vocabulary, so
 // "Leader", "leader " and "leader" are one role: this is the form they are
@@ -799,9 +794,8 @@ export function checkRules(records, topology = {}, { universe: prebuilt = null }
     }
     // data/actors/ is a CC BY-SA directory with one hole in it, and the hole
     // is exactly the actors an import creates for geometry it does not own.
-    if (r.kind === 'actor' && r.license === 'CC-BY-NC-SA-4.0'
-      && !(r.authors ?? []).some((a) => IMPORT_AUTHORS.includes(a?.name))) {
-      error(12, r, '/license', `an actor may be ${r.license} only when an import wrote it: ${IMPORT_AUTHORS.join(', ')}`);
+    if (r.kind === 'actor' && r.license === 'CC-BY-NC-SA-4.0' && !mayBeNonCommercial(r)) {
+      error(12, r, '/license', `an actor may be ${r.license} only when an import wrote it: origin.tool must be ${NC_ORIGINS.join(' or ')}`);
     }
     if (!Array.isArray(r.authors) || r.authors.length === 0) {
       error(12, r, '/authors', 'authors must name at least one contributor');

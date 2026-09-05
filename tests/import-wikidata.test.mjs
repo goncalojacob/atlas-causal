@@ -452,6 +452,33 @@ test('--import enriches a record that already carries the item, and writes nothi
   assert.deepEqual(await readdir(path.join(dir, 'events')), ['the-rising.json']);
 });
 
+// The additive rule stops at a signature. Filling an identifier in on a
+// record a person has read and signed would change what they vouched for
+// without their knowing, so the pass reports the record and writes nothing
+// (plan decision 2; review of the health plan, finding 4).
+test('--import leaves a signed record alone and says which one', async () => {
+  const { dir, cacheDir } = await scratch({ items: ['Q9000001'] });
+  const reviewer = { name: 'A Reviewer', github: 'reviewer' };
+  const before = {
+    schema: 1, id: 'the-rising', kind: 'event', status: 'active', supersededBy: null, aliases: [],
+    authors: [reviewer], license: 'CC-BY-SA-4.0', created: '2026-01-01', revised: '2026-09-05',
+    review: { status: 'reviewed', signedBy: [{ ...reviewer, on: '2026-09-05' }] },
+    wikidata: 'Q9000001', sources: [{ source: 's', locator: null }],
+    title: 'The Rising', summary: 'A person wrote this.', when: { start: 1974, end: 1974 },
+    place: null, region: 'testland', actors: [],
+  };
+  const text = `${JSON.stringify(before, null, 2)}\n`;
+  await writeFile(path.join(dir, 'events', 'the-rising.json'), text, 'utf8');
+
+  const { fetcher } = await fixtureFetcher();
+  const { report } = await runImportMode(dir, { fetcher, today: '2026-09-04', cacheDir, deriveRegion });
+  assert.deepEqual(report.enriched, []);
+  assert.deepEqual(report.created, [], 'and no second record for an item the atlas already has');
+  assert.deepEqual(report.signed, [{ id: 'the-rising', qid: 'Q9000001' }]);
+  assert.equal(await readFile(path.join(dir, 'events', 'the-rising.json'), 'utf8'), text, 'byte for byte');
+  assert.match(reportLines(report, 'import').join('\n'), /left alone the-rising: reviewed and signed/);
+});
+
 test('--import enriches a record whose item the class table cannot type', async () => {
   // Q9000004's class is in no table, so an item of that class can never be
   // turned into a record. It can still be an identifier somebody wrote by
@@ -638,7 +665,7 @@ test('the report says what happened, including what it would not decide', async 
   assert.match(text, /created event northfield-rising from Q9000001/);
   assert.match(text, /refused Q9000004/);
   assert.match(text, /unclassified class Q9100009/);
-  assert.match(text, /4 created, 0 enriched, 3 refused, 0 ambiguous/);
+  assert.match(text, /4 created, 0 enriched, 0 left alone, 3 refused, 0 ambiguous/);
 });
 
 test('itemIndex finds the records that already carry an item, per kind', () => {

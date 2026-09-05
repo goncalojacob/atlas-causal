@@ -11,8 +11,19 @@
 import { citedSources } from '../validate/rules.js';
 import { citationsOf, unverified } from './citations.js';
 import { CONTRIBUTED_KINDS } from '../kinds.js';
+import { isDraft } from '../origin.js';
 
+// What the assistant's drafts were signed with before `review.status`
+// existed. Sign still takes it off `authors` — the marker is attribution and
+// an unreviewed draft that a person has corrected is that person's record —
+// but nothing decides *whether* a record is unreviewed by reading it any
+// more: `review.status` does (health review A, finding 8).
 export const DRAFT_AUTHOR = 'Claude (assistant draft, unreviewed)';
+
+// Re-exported because the queue is where the rest of the project asks the
+// question, and the answer now lives in the leaf module beside the writer
+// vocabulary.
+export { isDraft };
 
 // The order the queue is grouped in: the things an argument rests on first,
 // then the arguments, then the walks through them. It is the registry's list
@@ -23,10 +34,6 @@ export const KIND_ORDER = CONTRIBUTED_KINDS;
 // A source with neither an ISBN nor a DOI cannot be looked up mechanically,
 // which is exactly what a reviewer wants to know before reading it.
 export const NO_IDENTIFIER = 'no-identifier';
-
-export function isDraft(record) {
-  return (record?.authors ?? []).some((a) => a?.name === DRAFT_AUTHOR);
-}
 
 // The queue is built in the browser, which has the index and not the record
 // files: `data/index/review-<hash>.json` carries one of these per draft.

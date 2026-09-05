@@ -23,16 +23,28 @@ import { schemas, fixtures, ROOT } from './helpers.mjs';
 
 const DRAFT = Object.freeze([{ name: DRAFT_AUTHOR, github: null }]);
 
+// The marker is still on `authors`, because that is attribution and Sign
+// still replaces it; what makes the record a draft is `review.status`.
 function draft(over) {
-  return { schema: 1, kind: 'event', id: 'fixture-draft', status: 'active', authors: DRAFT, ...over };
+  const { review, ...rest } = over ?? {};
+  return {
+    schema: 1, kind: 'event', id: 'fixture-draft', status: 'active', authors: DRAFT,
+    ...rest,
+    review: { status: 'draft', ...review },
+  };
 }
 
-test('a draft is an author entry, and nothing else', () => {
+test('a draft is a review status, and not a name in authors', () => {
   assert.ok(isDraft(draft()));
-  assert.ok(!isDraft(draft({ authors: [{ name: 'A Reviewer', github: 'reviewer' }] })));
+  // The marker gone and the status still there: the record is what the
+  // status says, not what the author list says (health review A, finding 8).
+  assert.ok(isDraft(draft({ authors: [{ name: 'A Reviewer', github: 'reviewer' }] })));
+  // The marker there and no status: an author name decides nothing now.
+  assert.ok(!isDraft({ authors: DRAFT }));
   assert.ok(!isDraft({ authors: [] }));
   assert.ok(!isDraft(undefined));
-  assert.equal(countDrafts([draft(), draft({ id: 'b' }), { authors: [] }]), 2);
+  assert.ok(!isDraft({ review: { status: 'reviewed' } }));
+  assert.equal(countDrafts([draft(), draft({ id: 'b' }), { authors: DRAFT }]), 2);
 });
 
 test('a record is named in the list by the thing it is', () => {
@@ -79,7 +91,7 @@ test('the queue carries the validator\'s own warnings, in kind order', () => {
 test('a digest carries what the queue reads and no prose', () => {
   const record = draft({ id: 'fixture-event-digest', title: 'A title', summary: 'Prose the list never shows.', when: { start: 1500 } });
   const digest = digestOf(record);
-  assert.deepEqual(Object.keys(digest).sort(), ['authors', 'id', 'kind', 'status', 'title']);
+  assert.deepEqual(Object.keys(digest).sort(), ['authors', 'id', 'kind', 'review', 'status', 'title']);
   assert.deepEqual(buildQueue([digest]), buildQueue([record]));
 });
 

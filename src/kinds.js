@@ -122,7 +122,8 @@ const KIND_ENTRIES = {
     schema: 'v1/actor.json',
     label: 'Actor',
     hint: 'A person, polity, institution or people. Actors are reached through their events, never listed on their own.',
-    // An actor may be NC-SA only when an import created it: see IMPORT_AUTHORS.
+    // An actor may be NC-SA only when an import created it: see NC_ORIGINS in
+    // src/origin.js.
     licenses: ['CC-BY-SA-4.0', 'CC-BY-NC-SA-4.0'],
     identity: true,
     body: true,

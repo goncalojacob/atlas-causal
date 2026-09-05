@@ -29,6 +29,7 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 import { decodeCollection } from './topojson.mjs';
 import { simplifyArc, pruneGeometry } from './simplify.mjs';
 import { identityOnDisk, mergeIdentity } from './identity.mjs';
+import { isReviewed, writtenBy } from '../../src/origin.js';
 
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..');
 export const DEFAULT_DATA = path.join(ROOT, 'data');
@@ -47,6 +48,10 @@ export const PACKAGE_VERSION = '2.0';
 export const DATA_END = '2019-12-31';
 
 export const IMPORT_AUTHOR = Object.freeze({ name: 'CShapes 2.0 import (tools/import/cshapes.mjs)', github: null });
+// Which writer this is, in the envelope's own vocabulary. `authors` is
+// attribution; `origin` is what the import, the licence rule and the review
+// queue read.
+export const ORIGIN_TOOL = 'cshapes';
 export const LICENSE = 'CC-BY-NC-SA-4.0';
 
 // Simplification: comparable in detail to the Natural Earth 110 m coastlines
@@ -182,6 +187,11 @@ function record(id, kind, fields, { created }) {
     license: LICENSE,
     created,
     revised: null,
+    // Written by the creator, and by nothing else: this is what says the
+    // record is the import's to rewrite, what lets rule 12 open the NC hole
+    // for it, and what a re-run reads to know its own records apart from
+    // somebody's (health review A, findings 22 and 24).
+    origin: { tool: ORIGIN_TOOL },
     ...fields,
   };
 }
@@ -200,6 +210,7 @@ export function sourceRecord({ created }) {
     license: 'CC-BY-SA-4.0',
     created,
     revised: null,
+    origin: { tool: ORIGIN_TOOL },
     type: 'dataset',
     creators: [
       'Guy Schvitz',
@@ -477,7 +488,13 @@ export function simplifyTopology(topology, { tolerance = TOLERANCE, decimals = D
     .map((f) => ({ properties: f.properties, geometry: pruneGeometry(f.geometry, { minArea }) }));
 }
 
-const ownedBy = (json) => Array.isArray(json?.authors) && json.authors.some((a) => a?.name === IMPORT_AUTHOR.name);
+// The import's own records, by what created them rather than by a name in
+// `authors` (health review A, finding 22). A record it does not own it never
+// overwrites — and a record it *does* own but that somebody has since read
+// and signed it does not overwrite either, because a re-run drops every field
+// outside ENRICHABLE and a signature is not one of them (review of the health
+// plan, finding 4).
+const ownedBy = (json) => writtenBy(json, ORIGIN_TOOL);
 
 async function readJson(file) {
   try {
@@ -487,17 +504,26 @@ async function readJson(file) {
   }
 }
 
-// Everything the import owns under a directory, and everything it does not.
+// Everything the import owns under a directory, everything it does not, and
+// the records it made that a person has since signed. The third set is the
+// point: a re-run rebuilds a record from the dataset and keeps only what
+// `identityOnDisk` carries forward, so rewriting a signed record would erase
+// the signature, the reviewer's corrections and their name — which is exactly
+// what an automated writer must never do (plan decision 2). It reports and
+// leaves the file alone instead.
 async function survey(dir) {
   const owned = new Map();
   const foreign = new Map();
-  if (!existsSync(dir)) return { owned, foreign };
+  const signed = new Map();
+  if (!existsSync(dir)) return { owned, foreign, signed };
   for (const name of (await readdir(dir)).sort()) {
     if (!name.endsWith('.json')) continue;
     const json = await readJson(path.join(dir, name));
-    (ownedBy(json) ? owned : foreign).set(name, json);
+    if (!ownedBy(json)) foreign.set(name, json);
+    else if (isReviewed(json)) signed.set(name, json);
+    else owned.set(name, json);
   }
-  return { owned, foreign };
+  return { owned, foreign, signed };
 }
 
 const asText = (value) => `${JSON.stringify(value, null, 2)}\n`;
@@ -579,6 +605,14 @@ export async function runImport(sourceFile, dataDir = DEFAULT_DATA, { today = ne
         failed.push(`data/${dirName}/${file} was not written by the import; give ${rec.id} an entry in data/${MAP_FILE} or rename it rather than overwriting somebody's record`);
         continue;
       }
+      // Signed: the import made it, a person has since read it, and from
+      // that moment it is theirs. Skipped and reported, not failed — a
+      // review that has begun should not stop the other 1039 territories
+      // from being brought up to date.
+      if (surveyed.signed.has(file)) {
+        notes.push(`note: data/${dirName}/${file} has been reviewed and signed; the import will not rewrite it`);
+        continue;
+      }
       const previous = surveyed.owned.get(file);
       const created = createdOf(surveyed, rec.id, today);
       // A Wikidata id somebody added between two runs of this import is not
@@ -594,6 +628,8 @@ export async function runImport(sourceFile, dataDir = DEFAULT_DATA, { today = ne
   const sourceCreated = ownedBy(sourceOnDisk) ? sourceOnDisk.created : sourceOnDisk ? null : today;
   if (sourceCreated === null) {
     failed.push(`data/sources/${SOURCE_ID}.json was not written by the import; the tool will not overwrite it`);
+  } else if (isReviewed(sourceOnDisk)) {
+    notes.push(`note: data/sources/${SOURCE_ID}.json has been reviewed and signed; the import will not rewrite it`);
   } else {
     writes.push({ file: path.join(dataDir, 'sources', `${SOURCE_ID}.json`), text: asText({ ...plan.source, created: sourceCreated }) });
   }

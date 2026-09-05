@@ -79,11 +79,26 @@ test('rule 11: a presence keeps a retired actor alive, and cannot use one', asyn
 test('rule 12: only an import may put the NC-SA licence on an actor', async () => {
   let r = await run((fx) => { fx.byId['fixture-polity-three'].license = 'CC-BY-NC-SA-4.0'; });
   assert.match(hit(r, 12)[0].message, /only when an import wrote it/);
+  // What opens the hole is `origin`, not a name in `authors`: a person named
+  // exactly like the import can no longer relicense an actor, and a rename of
+  // the import's own string no longer closes the hole under it (health review
+  // A, findings 22 and 24).
   r = await run((fx) => {
     fx.byId['fixture-polity-three'].license = 'CC-BY-NC-SA-4.0';
     fx.byId['fixture-polity-three'].authors = [{ name: 'CShapes 2.0 import (tools/import/cshapes.mjs)', github: null }];
   });
+  assert.equal(hit(r, 12).length, 1, 'an author name is not provenance');
+  r = await run((fx) => {
+    fx.byId['fixture-polity-three'].license = 'CC-BY-NC-SA-4.0';
+    fx.byId['fixture-polity-three'].origin = { tool: 'cshapes' };
+  });
   assert.equal(hit(r, 12).length, 0, messages(r));
+  // The other import writes CC BY-SA records; its origin does not open it.
+  r = await run((fx) => {
+    fx.byId['fixture-polity-three'].license = 'CC-BY-NC-SA-4.0';
+    fx.byId['fixture-polity-three'].origin = { tool: 'wikidata' };
+  });
+  assert.equal(hit(r, 12).length, 1);
   // A presence may carry it with no ceremony: that is what the directory is.
   r = await run((fx) => { fx.byId[P3].license = 'CC-BY-NC-SA-4.0'; });
   assert.equal(hit(r, 12).length, 0, messages(r));

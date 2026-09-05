@@ -10,7 +10,7 @@ import { tmpdir } from 'node:os';
 import path from 'node:path';
 import { decodeCollection, ringFrom, arcIndex, decodeArcs } from '../tools/import/topojson.mjs';
 import { douglasPeucker, quantize, simplifyArc, pruneGeometry, ringArea, keepRing, round } from '../tools/import/simplify.mjs';
-import { planImport, slug, yearOf, shardsTouched, shardFile, dayAfter, runImport, reportMarkdown, IMPORT_AUTHOR, SHARDS, DATA_END, MAP_FILE } from '../tools/import/cshapes.mjs';
+import { planImport, slug, yearOf, shardsTouched, shardFile, dayAfter, runImport, reportMarkdown, IMPORT_AUTHOR, ORIGIN_TOOL, SHARDS, DATA_END, MAP_FILE } from '../tools/import/cshapes.mjs';
 
 const SHARD_CUT = [{ from: 1886, to: 1913 }, { from: 1914, to: 1945 }, { from: 1946, to: 2019 }];
 
@@ -400,7 +400,7 @@ test('a file the import owns but no longer produces is removed', async () => {
   const { dir, file } = await scratch();
   await runImport(file, dir, { today: '2026-09-02' });
   await writeFile(path.join(dir, 'presences', 'gone-1900.json'),
-    JSON.stringify({ id: 'gone-1900', authors: [IMPORT_AUTHOR], created: '2026-09-02' }), 'utf8');
+    JSON.stringify({ id: 'gone-1900', authors: [IMPORT_AUTHOR], created: '2026-09-02', origin: { tool: ORIGIN_TOOL } }), 'utf8');
   await writeFile(path.join(dir, 'geo', 'presences', '1700-1800.json'), '{}', 'utf8');
   const again = await runImport(file, dir, { today: '2026-09-02' });
   assert.deepEqual(again.removed.map((f) => f.split(path.sep).join('/')).sort(),
@@ -421,7 +421,7 @@ test('an identifier added between runs survives the next one', async () => {
     ...before,
     wikidata: 'Q9000006',
     wikipedia: { en: 'Eastland' },
-    sitelinks: 4,
+    sitelinks: { count: 4, on: '2026-09-02' },
   }, null, 2), 'utf8');
 
   const again = await runImport(file, dir, { today: '2026-09-03' });
@@ -429,7 +429,7 @@ test('an identifier added between runs survives the next one', async () => {
   const after = JSON.parse(await readFile(actorFile, 'utf8'));
   assert.equal(after.wikidata, 'Q9000006');
   assert.deepEqual(after.wikipedia, { en: 'Eastland' });
-  assert.equal(after.sitelinks, 4);
+  assert.deepEqual(after.sitelinks, { count: 4, on: '2026-09-02' });
   assert.equal(after.created, '2026-09-02', 'and the first-written date still survives too');
   // They are written where the schema lists them, not appended at the end.
   const keys = Object.keys(after);
@@ -440,4 +440,38 @@ test('an identifier added between runs survives the next one', async () => {
   // has not been told an identifier does not invent one.
   const fresh = JSON.parse(await readFile(path.join(dir, 'actors', 'westland-republic.json'), 'utf8'));
   assert.equal(Object.hasOwn(fresh, 'wikidata'), false);
+});
+
+// The re-run test the licence move exists for. A CShapes re-run rebuilds an
+// actor from the dataset and carries forward only what `identityOnDisk` holds
+// — `created` and the three identity fields — so rewriting a record a person
+// has read and signed would erase the signature, their corrections and their
+// name in one pass (docs/review-2026-09-05-health-plan.md, finding 4; plan
+// decision 2). It leaves the file exactly as it found it and says so.
+test('a re-run leaves a signed actor alone, signature and all', async () => {
+  const { dir, file } = await scratch();
+  await runImport(file, dir, { today: '2026-09-02' });
+
+  const actorFile = path.join(dir, 'actors', 'eastland.json');
+  const imported = JSON.parse(await readFile(actorFile, 'utf8'));
+  assert.deepEqual(imported.origin, { tool: ORIGIN_TOOL }, 'the import says it made this one');
+
+  // Somebody reads it, corrects the summary and signs it.
+  const reviewer = { name: 'A Reviewer', github: 'reviewer' };
+  const signed = {
+    ...imported,
+    authors: [...imported.authors, reviewer],
+    revised: '2026-09-05',
+    summary: 'A summary a person wrote, which the dataset knows nothing about.',
+    review: { status: 'reviewed', signedBy: [{ ...reviewer, on: '2026-09-05' }] },
+  };
+  const text = `${JSON.stringify(signed, null, 2)}\n`;
+  await writeFile(actorFile, text, 'utf8');
+
+  const again = await runImport(file, dir, { today: '2030-01-01' });
+  assert.deepEqual(again.failed, [], 'one signed record does not stop the other territories');
+  assert.match(again.notes.join('\n'), /actors\/eastland\.json has been reviewed and signed/);
+  assert.equal(again.written.some((f) => f.endsWith(`eastland.json`)), false, 'and it is not among what was written');
+  assert.deepEqual(again.removed, [], 'nor is it treated as a record the import no longer produces');
+  assert.equal(await readFile(actorFile, 'utf8'), text, 'byte for byte as the reviewer left it');
 });
