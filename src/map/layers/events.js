@@ -30,6 +30,7 @@ const SELECTED_RADIUS = 7;
 const HIT_RADIUS = 10;
 const BADGE_SIZE = 10;
 const LABEL_SIZE = 11;
+const LABEL_HALO = 3; // the paper halo behind a label, in screen pixels
 // Labels would be noise on the whole world; they start once the reader has
 // zoomed to about a country, and only the heaviest clusters on screen get
 // one.
@@ -236,6 +237,9 @@ export function createEventsLayer(group, projection, { pointOf, onSelect, onClus
             class: 'mark-label spread-label',
             'text-anchor': right ? 'start' : 'end',
             'font-size': LABEL_SIZE / k,
+            // The halo is a stroke in user units: left alone it grows with
+            // the zoom and swallows the map.
+            'stroke-width': LABEL_HALO / k,
           }));
         });
       }
@@ -267,6 +271,7 @@ export function createEventsLayer(group, projection, { pointOf, onSelect, onClus
           placed.push(box);
           group.appendChild(textNode(text, {
             x, y: y + (LABEL_SIZE * 0.35) / k, class: 'mark-label', 'font-size': LABEL_SIZE / k,
+            'stroke-width': LABEL_HALO / k,
           }));
         }
       }

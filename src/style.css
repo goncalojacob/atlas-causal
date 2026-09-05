@@ -582,7 +582,7 @@ button.bar-link { background: none; border: 0; padding: 0; font: inherit; font-s
 .map .mark.cluster { fill: var(--paper); stroke: var(--cobalt); stroke-width: 2.5; }
 .map .mark.cluster:hover { fill: var(--cobalt-faint); }
 .map .cluster-count { fill: var(--cobalt); font-family: var(--font-ui); font-weight: 600; pointer-events: none; }
-.map .mark-label { fill: var(--ink); font-family: var(--font-ui); paint-order: stroke; stroke: var(--paper); stroke-width: 3; pointer-events: none; }
+.map .mark-label { fill: var(--ink); font-family: var(--font-ui); paint-order: stroke; stroke: var(--paper); stroke-width: 3; stroke-linejoin: round; pointer-events: none; } /* the width is overridden per zoom by the events layer */
 /* A coincident cluster opened: members on rings, each on a leg back to the
    point they all share. */
 .map .spread-hub { fill: var(--cobalt); stroke: none; }

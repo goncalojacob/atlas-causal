@@ -35,7 +35,15 @@ and `simplify.mjs`, then this file.
    and the initial view show the whole world with Asia in the middle;
    labels, clusters, chain lines and the export follow the projection
    through the one function; `?bbox=-10,36,-6,43` still fits Portugal.
-5. Docs: `ARCHITECTURE.md` (the projection's parameters and the seam),
+5. **Borders without the coast seam** (owner's screenshot, 5 September):
+   CShapes' coastline and Natural Earth's do not coincide, so zoomed in
+   every territory shows a double line along the shore. The import keeps
+   the TopoJSON arcs and marks each as *shared* (between two features) or
+   *outer*; the presence outlines are still closed polygons for the fill
+   and hit-testing, but the layer strokes **only the shared arcs** — the
+   inland borders — and the coast is Natural Earth's alone. The shard
+   format gains the arc list; `about.html` says so.
+6. Docs: `ARCHITECTURE.md` (the projection's parameters and the seam),
    `about.html` (why the map is centred where it is), `CLAUDE.md`'s line
    on `projection.js`.
 
