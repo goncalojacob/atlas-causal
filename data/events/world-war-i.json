@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "world-war-i",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q361",
+  "sitelinks": 227,
+  "wikipedia": {
+    "en": "World War I",
+    "pt": "Primeira Guerra Mundial"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q361"
+    }
+  ],
+  "title": "World War I",
+  "summary": "Wikidata item Q361, imported by tools/import/wikidata.mjs. The item's own description reads \"1914–1918 global conflict\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1914,
+    "end": 1918,
+    "date": "1914-07-28",
+    "endDate": "1918-11-11"
+  },
+  "place": null,
+  "region": "asia",
+  "actors": []
+}

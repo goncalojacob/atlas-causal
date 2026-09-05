@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "mexican-revolution",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q214426",
+  "sitelinks": 64,
+  "wikipedia": {
+    "en": "Mexican Revolution",
+    "pt": "Revolução Mexicana"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q214426"
+    }
+  ],
+  "title": "Mexican Revolution",
+  "summary": "Wikidata item Q214426, imported by tools/import/wikidata.mjs. The item's own description reads \"nationwide armed struggle in Mexico (1910–1920)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1910,
+    "end": 1920,
+    "date": "1910-11-20",
+    "endDate": "1920-05-21"
+  },
+  "place": null,
+  "region": "americas",
+  "actors": []
+}

@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "treaty-of-versailles",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q8736",
+  "sitelinks": 122,
+  "wikipedia": {
+    "en": "Treaty of Versailles",
+    "pt": "Tratado de Versalhes (1919)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q8736"
+    }
+  ],
+  "title": "Treaty of Versailles",
+  "summary": "Wikidata item Q8736, imported by tools/import/wikidata.mjs. The item's own description reads \"most important of the peace treaties of the First World War which ended the state of war between Germany and the Allied Powers\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1919,
+    "end": 1919,
+    "date": "1919-06-28"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}

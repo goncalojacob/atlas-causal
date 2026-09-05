@@ -12299,6 +12299,29 @@
       }
     },
     {
+      "actors": [],
+      "aliases": [],
+      "id": "anglo-zanzibar-war",
+      "place": null,
+      "region": "africa",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Anglo-Zanzibar War",
+      "weight": 0,
+      "when": {
+        "date": "1896-08-27",
+        "end": 1896,
+        "endDate": "1896-08-27",
+        "start": 1896
+      },
+      "wikidata": "Q170850",
+      "wikipedia": {
+        "en": "Anglo-Zanzibar War",
+        "pt": "Guerra Anglo–Zanzibari"
+      }
+    },
+    {
       "actors": [
         {
           "actor": "mpla",
@@ -12405,6 +12428,27 @@
       "wikidata": "Q7232771",
       "wikipedia": {
         "en": "April 1906 Portuguese legislative election"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "armenian-genocide",
+      "place": null,
+      "region": "asia",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Armenian Genocide",
+      "weight": 0,
+      "when": {
+        "end": 1923,
+        "start": 1915
+      },
+      "wikidata": "Q80034",
+      "wikipedia": {
+        "en": "Armenian genocide",
+        "pt": "Genocídio armênio"
       }
     },
     {
@@ -12998,6 +13042,29 @@
       }
     },
     {
+      "actors": [],
+      "aliases": [],
+      "id": "boxer-rebellion",
+      "place": null,
+      "region": "asia",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Boxer Rebellion",
+      "weight": 0,
+      "when": {
+        "date": "1899-08",
+        "end": 1901,
+        "endDate": "1901-09",
+        "start": 1899
+      },
+      "wikidata": "Q150229",
+      "wikipedia": {
+        "en": "Boxer Rebellion",
+        "pt": "Rebelião dos Boxers"
+      }
+    },
+    {
       "actors": [
         {
           "actor": "third-portuguese-republic",
@@ -13194,6 +13261,29 @@
       "wikidata": "Q10301908",
       "wikipedia": {
         "pt": "Incêndio do Chiado"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "chinese-civil-war",
+      "place": null,
+      "region": "asia",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Chinese Civil War",
+      "weight": 0,
+      "when": {
+        "date": "1946-03-31",
+        "end": 1950,
+        "endDate": "1950-05-01",
+        "start": 1946
+      },
+      "wikidata": "Q179975",
+      "wikipedia": {
+        "en": "Chinese Civil War",
+        "pt": "Guerra Civil Chinesa"
       }
     },
     {
@@ -14272,6 +14362,28 @@
       }
     },
     {
+      "actors": [],
+      "aliases": [],
+      "id": "february-revolution",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "February Revolution",
+      "weight": 0,
+      "when": {
+        "end": 1917,
+        "endDate": "1917-03-16",
+        "start": 1917
+      },
+      "wikidata": "Q101534",
+      "wikipedia": {
+        "en": "February Revolution",
+        "pt": "Revolução de Fevereiro"
+      }
+    },
+    {
       "actors": [
         {
           "actor": "marcelo-rebelo-de-sousa",
@@ -14523,6 +14635,28 @@
       }
     },
     {
+      "actors": [],
+      "aliases": [],
+      "id": "great-depression",
+      "place": null,
+      "region": "asia",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Great Depression",
+      "weight": 0,
+      "when": {
+        "date": "1929-10-29",
+        "end": 1941,
+        "start": 1929
+      },
+      "wikidata": "Q8698",
+      "wikipedia": {
+        "en": "Great Depression",
+        "pt": "Grande Depressão"
+      }
+    },
+    {
       "actors": [
         {
           "actor": "paigc",
@@ -14725,6 +14859,28 @@
       "wikipedia": {
         "en": "Iberian Pact",
         "pt": "Tratado de Amizade e Não Agressão Luso-Espanhol"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "ilinden-preobrazhenie-uprising",
+      "place": null,
+      "region": "asia",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Ilinden–Preobrazhenie Uprising",
+      "weight": 0,
+      "when": {
+        "end": 1903,
+        "endDate": "1903-10",
+        "start": 1903
+      },
+      "wikidata": "Q1145682",
+      "wikipedia": {
+        "en": "Ilinden–Preobrazhenie Uprising",
+        "pt": "Revolta de Ilinden-Preobrazhenie"
       }
     },
     {
@@ -15455,6 +15611,29 @@
       }
     },
     {
+      "actors": [],
+      "aliases": [],
+      "id": "mexican-revolution",
+      "place": null,
+      "region": "americas",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Mexican Revolution",
+      "weight": 0,
+      "when": {
+        "date": "1910-11-20",
+        "end": 1920,
+        "endDate": "1920-05-21",
+        "start": 1910
+      },
+      "wikidata": "Q214426",
+      "wikipedia": {
+        "en": "Mexican Revolution",
+        "pt": "Revolução Mexicana"
+      }
+    },
+    {
       "actors": [
         {
           "actor": "paiva-couceiro",
@@ -15828,6 +16007,29 @@
     {
       "actors": [],
       "aliases": [],
+      "id": "october-revolution",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "October Revolution",
+      "weight": 0,
+      "when": {
+        "date": "1917-10-25",
+        "end": 1917,
+        "endDate": "1917-10-26",
+        "start": 1917
+      },
+      "wikidata": "Q42976",
+      "wikipedia": {
+        "en": "October Revolution",
+        "pt": "Revolução de Outubro"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
       "id": "paris-agreement",
       "place": "new-york",
       "region": "americas",
@@ -15845,6 +16047,28 @@
       "wikipedia": {
         "en": "Paris Agreement",
         "pt": "Acordo de Paris (2015)"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "paris-peace-conference",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Paris Peace Conference",
+      "weight": 0,
+      "when": {
+        "end": 1920,
+        "endDate": "1920-01-21",
+        "start": 1919
+      },
+      "wikidata": "Q199820",
+      "wikipedia": {
+        "en": "Paris Peace Conference (1919–1920)",
+        "pt": "Conferência de Paz de Paris (1919–1920)"
       }
     },
     {
@@ -16401,6 +16625,73 @@
     {
       "actors": [],
       "aliases": [],
+      "id": "russian-civil-war",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Russian Civil War",
+      "weight": 0,
+      "when": {
+        "date": "1917-11-07",
+        "end": 1922,
+        "endDate": "1922-10-25",
+        "start": 1917
+      },
+      "wikidata": "Q79911",
+      "wikipedia": {
+        "en": "Russian Civil War",
+        "pt": "Guerra Civil Russa"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "russian-revolution",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Russian Revolution",
+      "weight": 0,
+      "when": {
+        "end": 1917,
+        "start": 1917
+      },
+      "wikidata": "Q8729",
+      "wikipedia": {
+        "en": "Russian Revolution",
+        "pt": "Revolução Russa de 1917"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "russian-revolution-of-1905",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Russian Revolution of 1905",
+      "weight": 0,
+      "when": {
+        "date": "1905-01-22",
+        "end": 1907,
+        "endDate": "1907-06-16",
+        "start": 1905
+      },
+      "wikidata": "Q184928",
+      "wikipedia": {
+        "en": "Russian Revolution of 1905",
+        "pt": "Revolução Russa de 1905"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
       "id": "russo-georgian-war",
       "place": null,
       "region": "asia",
@@ -16926,6 +17217,28 @@
       }
     },
     {
+      "actors": [],
+      "aliases": [],
+      "id": "treaty-of-brest-litovsk",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Treaty of Brest-Litovsk",
+      "weight": 0,
+      "when": {
+        "date": "1918-03-03",
+        "end": 1918,
+        "start": 1918
+      },
+      "wikidata": "Q122371",
+      "wikipedia": {
+        "en": "Treaty of Brest-Litovsk",
+        "pt": "Tratado de Brest-Litovski"
+      }
+    },
+    {
       "actors": [
         {
           "actor": "third-portuguese-republic",
@@ -16954,6 +17267,28 @@
       "wikipedia": {
         "en": "Treaty of Friendship and Cooperation between Spain and Portugal",
         "pt": "Tratado de Amizade e Cooperação entre Portugal e Espanha (1977)"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "treaty-of-lausanne",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Treaty of Lausanne",
+      "weight": 0,
+      "when": {
+        "date": "1923-07-24",
+        "end": 1923,
+        "start": 1923
+      },
+      "wikidata": "Q193258",
+      "wikipedia": {
+        "en": "Treaty of Lausanne",
+        "pt": "Tratado de Lausanne"
       }
     },
     {
@@ -17020,6 +17355,72 @@
       "wikipedia": {
         "en": "Treaty of Rome",
         "pt": "Tratado de Roma (1957)"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "treaty-of-sevres",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Treaty of Sèvres",
+      "weight": 0,
+      "when": {
+        "date": "1920-08-10",
+        "end": 1920,
+        "start": 1920
+      },
+      "wikidata": "Q182515",
+      "wikipedia": {
+        "en": "Treaty of Sèvres",
+        "pt": "Tratado de Sèvres"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "treaty-of-trianon",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Treaty of Trianon",
+      "weight": 0,
+      "when": {
+        "date": "1920-06-04",
+        "end": 1920,
+        "start": 1920
+      },
+      "wikidata": "Q181902",
+      "wikipedia": {
+        "en": "Treaty of Trianon",
+        "pt": "Tratado de Trianon"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "treaty-of-versailles",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Treaty of Versailles",
+      "weight": 0,
+      "when": {
+        "date": "1919-06-28",
+        "end": 1919,
+        "start": 1919
+      },
+      "wikidata": "Q8736",
+      "wikipedia": {
+        "en": "Treaty of Versailles",
+        "pt": "Tratado de Versalhes (1919)"
       }
     },
     {
@@ -17137,6 +17538,29 @@
     {
       "actors": [],
       "aliases": [],
+      "id": "turkish-war-of-independence",
+      "place": null,
+      "region": "asia",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Turkish War of Independence",
+      "weight": 0,
+      "when": {
+        "date": "1922-10-11",
+        "end": 1923,
+        "endDate": "1923-07-24",
+        "start": 1922
+      },
+      "wikidata": "Q234738",
+      "wikipedia": {
+        "en": "Turkish War of Independence",
+        "pt": "Guerra de Independência da Turquia"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
       "id": "twelve-day-war",
       "place": null,
       "region": "asia",
@@ -17186,6 +17610,28 @@
         "date": "1955-12-14",
         "end": 1955,
         "start": 1955
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "wall-street-crash-of-1929",
+      "place": null,
+      "region": "americas",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Wall Street crash of 1929",
+      "weight": 0,
+      "when": {
+        "end": 1929,
+        "endDate": "1929-10-29",
+        "start": 1929
+      },
+      "wikidata": "Q201684",
+      "wikipedia": {
+        "en": "Wall Street crash of 1929",
+        "pt": "Quinta-Feira Negra"
       }
     },
     {
@@ -17261,6 +17707,29 @@
       }
     },
     {
+      "actors": [],
+      "aliases": [],
+      "id": "world-war-i",
+      "place": null,
+      "region": "asia",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "World War I",
+      "weight": 0,
+      "when": {
+        "date": "1914-07-28",
+        "end": 1918,
+        "endDate": "1918-11-11",
+        "start": 1914
+      },
+      "wikidata": "Q361",
+      "wikipedia": {
+        "en": "World War I",
+        "pt": "Primeira Guerra Mundial"
+      }
+    },
+    {
       "actors": [
         {
           "actor": "antonio-costa",
@@ -17291,6 +17760,29 @@
     {
       "actors": [],
       "aliases": [],
+      "id": "xinhai-revolution",
+      "place": null,
+      "region": "asia",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Xinhai Revolution",
+      "weight": 0,
+      "when": {
+        "date": "1911-10-10",
+        "end": 1912,
+        "endDate": "1912-02-12",
+        "start": 1911
+      },
+      "wikidata": "Q190517",
+      "wikipedia": {
+        "en": "1911 Revolution",
+        "pt": "Revolução Xinhai"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
       "id": "yom-kippur-war",
       "place": null,
       "region": "africa",
@@ -17309,6 +17801,28 @@
       "wikipedia": {
         "en": "Yom Kippur War",
         "pt": "Guerra do Yom Kippur"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "young-turk-revolution-of-1908",
+      "place": null,
+      "region": "asia",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Young Turk Revolution of 1908",
+      "weight": 0,
+      "when": {
+        "date": "1908-07-24",
+        "end": 1908,
+        "start": 1908
+      },
+      "wikidata": "Q4298662",
+      "wikipedia": {
+        "en": "Young Turk Revolution",
+        "pt": "Revolução dos Jovens Turcos"
       }
     }
   ],

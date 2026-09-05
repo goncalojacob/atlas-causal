@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "russian-civil-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q79911",
+  "sitelinks": 97,
+  "wikipedia": {
+    "en": "Russian Civil War",
+    "pt": "Guerra Civil Russa"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q79911"
+    }
+  ],
+  "title": "Russian Civil War",
+  "summary": "Wikidata item Q79911, imported by tools/import/wikidata.mjs. The item's own description reads \"multi-sided civil war in the former Russian Empire, November 1917-October 1922\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1917,
+    "end": 1922,
+    "date": "1917-11-07",
+    "endDate": "1922-10-25"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}

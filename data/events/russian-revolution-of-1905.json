@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "russian-revolution-of-1905",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q184928",
+  "sitelinks": 66,
+  "wikipedia": {
+    "en": "Russian Revolution of 1905",
+    "pt": "Revolução Russa de 1905"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q184928"
+    }
+  ],
+  "title": "Russian Revolution of 1905",
+  "summary": "Wikidata item Q184928, imported by tools/import/wikidata.mjs. The item's own description reads \"wave of mass political and social unrest that spread through vast areas of the Russian Empire\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1905,
+    "end": 1907,
+    "date": "1905-01-22",
+    "endDate": "1907-06-16"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}

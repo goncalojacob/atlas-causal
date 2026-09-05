@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "paris-peace-conference",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q199820",
+  "sitelinks": 77,
+  "wikipedia": {
+    "en": "Paris Peace Conference (1919–1920)",
+    "pt": "Conferência de Paz de Paris (1919–1920)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q199820"
+    }
+  ],
+  "title": "Paris Peace Conference",
+  "summary": "Wikidata item Q199820, imported by tools/import/wikidata.mjs. The item's own description reads \"meeting of the Allied Powers after World War I\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1919,
+    "end": 1920,
+    "endDate": "1920-01-21"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}

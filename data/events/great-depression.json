@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "great-depression",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q8698",
+  "sitelinks": 124,
+  "wikipedia": {
+    "en": "Great Depression",
+    "pt": "Grande Depressão"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q8698"
+    }
+  ],
+  "title": "Great Depression",
+  "summary": "Wikidata item Q8698, imported by tools/import/wikidata.mjs. The item's own description reads \"worldwide economic depression (1929–1939)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1929,
+    "end": 1941,
+    "date": "1929-10-29"
+  },
+  "place": null,
+  "region": "asia",
+  "actors": []
+}

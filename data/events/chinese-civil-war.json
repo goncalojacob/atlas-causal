@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "chinese-civil-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q179975",
+  "sitelinks": 83,
+  "wikipedia": {
+    "en": "Chinese Civil War",
+    "pt": "Guerra Civil Chinesa"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q179975"
+    }
+  ],
+  "title": "Chinese Civil War",
+  "summary": "Wikidata item Q179975, imported by tools/import/wikidata.mjs. The item's own description reads \"The civil war between the government of the Republic of China and the Chinese Communist Party\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1946,
+    "end": 1950,
+    "date": "1946-03-31",
+    "endDate": "1950-05-01"
+  },
+  "place": null,
+  "region": "asia",
+  "actors": []
+}

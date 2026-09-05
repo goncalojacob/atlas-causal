@@ -10280,7 +10280,7 @@
     }
   ],
   "schema": 1,
-  "total": 1042,
+  "total": 1065,
   "warnings": [
     {
       "id": "2006-lebanon-war",
@@ -10289,7 +10289,19 @@
       "rule": "degree-zero"
     },
     {
+      "id": "anglo-zanzibar-war",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
       "id": "anti-comintern-pact",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "armenian-genocide",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"
@@ -10313,7 +10325,19 @@
       "rule": "degree-zero"
     },
     {
+      "id": "boxer-rebellion",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
       "id": "bucha-massacre",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "chinese-civil-war",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"
@@ -10337,6 +10361,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "february-revolution",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
       "id": "first-indochina-war",
       "kind": "event",
       "message": "event has no edges",
@@ -10355,6 +10385,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "great-depression",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
       "id": "gulf-war",
       "kind": "event",
       "message": "event has no edges",
@@ -10362,6 +10398,12 @@
     },
     {
       "id": "iberian-blackout-2025",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "ilinden-preobrazhenie-uprising",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"
@@ -10403,7 +10445,19 @@
       "rule": "degree-zero"
     },
     {
+      "id": "mexican-revolution",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
       "id": "munich-agreement",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "october-revolution",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"
@@ -10415,7 +10469,31 @@
       "rule": "degree-zero"
     },
     {
+      "id": "paris-peace-conference",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
       "id": "potsdam-conference",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "russian-civil-war",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "russian-revolution",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "russian-revolution-of-1905",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"
@@ -10475,6 +10553,18 @@
       "rule": "degree-zero"
     },
     {
+      "id": "treaty-of-brest-litovsk",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "treaty-of-lausanne",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
       "id": "treaty-of-portsmouth",
       "kind": "event",
       "message": "event has no edges",
@@ -10487,7 +10577,31 @@
       "rule": "degree-zero"
     },
     {
+      "id": "treaty-of-sevres",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "treaty-of-trianon",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "treaty-of-versailles",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
       "id": "treaty-on-the-non-proliferation-of-nuclear-weapons",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "turkish-war-of-independence",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"
@@ -10505,13 +10619,37 @@
       "rule": "no-citers"
     },
     {
+      "id": "wall-street-crash-of-1929",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
       "id": "war-in-afghanistan-2001-2021",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"
     },
     {
+      "id": "world-war-i",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "xinhai-revolution",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
       "id": "yom-kippur-war",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "young-turk-revolution-of-1908",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"

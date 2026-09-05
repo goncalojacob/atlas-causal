@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "russian-revolution",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q8729",
+  "sitelinks": 116,
+  "wikipedia": {
+    "en": "Russian Revolution",
+    "pt": "Revolução Russa de 1917"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q8729"
+    }
+  ],
+  "title": "Russian Revolution",
+  "summary": "Wikidata item Q8729, imported by tools/import/wikidata.mjs. The item's own description reads \"1917-1922 political change in Russia\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1917,
+    "end": 1917
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}

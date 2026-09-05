@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "turkish-war-of-independence",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q234738",
+  "sitelinks": 65,
+  "wikipedia": {
+    "en": "Turkish War of Independence",
+    "pt": "Guerra de Independência da Turquia"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q234738"
+    }
+  ],
+  "title": "Turkish War of Independence",
+  "summary": "Wikidata item Q234738, imported by tools/import/wikidata.mjs. The item's own description reads \"war fought between the Turkish National Movement and the Entente and their proxies\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1922,
+    "end": 1923,
+    "date": "1922-10-11",
+    "endDate": "1923-07-24"
+  },
+  "place": null,
+  "region": "asia",
+  "actors": []
+}

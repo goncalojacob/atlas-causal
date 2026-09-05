@@ -11684,7 +11684,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 91,
+      "citationCount": 114,
       "citations": [
         {
           "dissent": false,
@@ -11946,9 +11946,21 @@
         },
         {
           "dissent": false,
+          "id": "anglo-zanzibar-war",
+          "kind": "event",
+          "locator": "Q170850"
+        },
+        {
+          "dissent": false,
           "id": "anti-comintern-pact",
           "kind": "event",
           "locator": "Q152195"
+        },
+        {
+          "dissent": false,
+          "id": "armenian-genocide",
+          "kind": "event",
+          "locator": "Q80034"
         },
         {
           "dissent": false,
@@ -11976,9 +11988,21 @@
         },
         {
           "dissent": false,
+          "id": "boxer-rebellion",
+          "kind": "event",
+          "locator": "Q150229"
+        },
+        {
+          "dissent": false,
           "id": "bucha-massacre",
           "kind": "event",
           "locator": "Q111467700"
+        },
+        {
+          "dissent": false,
+          "id": "chinese-civil-war",
+          "kind": "event",
+          "locator": "Q179975"
         },
         {
           "dissent": false,
@@ -12018,6 +12042,12 @@
         },
         {
           "dissent": false,
+          "id": "february-revolution",
+          "kind": "event",
+          "locator": "Q101534"
+        },
+        {
+          "dissent": false,
           "id": "first-indochina-war",
           "kind": "event",
           "locator": "Q748780"
@@ -12033,6 +12063,12 @@
           "id": "gaza-war",
           "kind": "event",
           "locator": "Q122962941"
+        },
+        {
+          "dissent": false,
+          "id": "great-depression",
+          "kind": "event",
+          "locator": "Q8698"
         },
         {
           "dissent": false,
@@ -12057,6 +12093,12 @@
           "id": "iberian-pact",
           "kind": "event",
           "locator": "Q884821"
+        },
+        {
+          "dissent": false,
+          "id": "ilinden-preobrazhenie-uprising",
+          "kind": "event",
+          "locator": "Q1145682"
         },
         {
           "dissent": false,
@@ -12102,6 +12144,12 @@
         },
         {
           "dissent": false,
+          "id": "mexican-revolution",
+          "kind": "event",
+          "locator": "Q214426"
+        },
+        {
+          "dissent": false,
           "id": "mueda-massacre",
           "kind": "event",
           "locator": null
@@ -12114,9 +12162,21 @@
         },
         {
           "dissent": false,
+          "id": "october-revolution",
+          "kind": "event",
+          "locator": "Q42976"
+        },
+        {
+          "dissent": false,
           "id": "paris-agreement",
           "kind": "event",
           "locator": "Q21707860"
+        },
+        {
+          "dissent": false,
+          "id": "paris-peace-conference",
+          "kind": "event",
+          "locator": "Q199820"
         },
         {
           "dissent": false,
@@ -12129,6 +12189,24 @@
           "id": "potsdam-conference",
           "kind": "event",
           "locator": "Q151187"
+        },
+        {
+          "dissent": false,
+          "id": "russian-civil-war",
+          "kind": "event",
+          "locator": "Q79911"
+        },
+        {
+          "dissent": false,
+          "id": "russian-revolution",
+          "kind": "event",
+          "locator": "Q8729"
+        },
+        {
+          "dissent": false,
+          "id": "russian-revolution-of-1905",
+          "kind": "event",
+          "locator": "Q184928"
         },
         {
           "dissent": false,
@@ -12186,9 +12264,21 @@
         },
         {
           "dissent": false,
+          "id": "treaty-of-brest-litovsk",
+          "kind": "event",
+          "locator": "Q122371"
+        },
+        {
+          "dissent": false,
           "id": "treaty-of-friendship-and-cooperation-between-spain-and-portugal",
           "kind": "event",
           "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "treaty-of-lausanne",
+          "kind": "event",
+          "locator": "Q193258"
         },
         {
           "dissent": false,
@@ -12204,6 +12294,24 @@
         },
         {
           "dissent": false,
+          "id": "treaty-of-sevres",
+          "kind": "event",
+          "locator": "Q182515"
+        },
+        {
+          "dissent": false,
+          "id": "treaty-of-trianon",
+          "kind": "event",
+          "locator": "Q181902"
+        },
+        {
+          "dissent": false,
+          "id": "treaty-of-versailles",
+          "kind": "event",
+          "locator": "Q8736"
+        },
+        {
+          "dissent": false,
           "id": "treaty-of-windsor",
           "kind": "event",
           "locator": null
@@ -12216,9 +12324,21 @@
         },
         {
           "dissent": false,
+          "id": "turkish-war-of-independence",
+          "kind": "event",
+          "locator": "Q234738"
+        },
+        {
+          "dissent": false,
           "id": "twelve-day-war",
           "kind": "event",
           "locator": "Q134900605"
+        },
+        {
+          "dissent": false,
+          "id": "wall-street-crash-of-1929",
+          "kind": "event",
+          "locator": "Q201684"
         },
         {
           "dissent": false,
@@ -12228,9 +12348,27 @@
         },
         {
           "dissent": false,
+          "id": "world-war-i",
+          "kind": "event",
+          "locator": "Q361"
+        },
+        {
+          "dissent": false,
+          "id": "xinhai-revolution",
+          "kind": "event",
+          "locator": "Q190517"
+        },
+        {
+          "dissent": false,
           "id": "yom-kippur-war",
           "kind": "event",
           "locator": "Q49100"
+        },
+        {
+          "dissent": false,
+          "id": "young-turk-revolution-of-1908",
+          "kind": "event",
+          "locator": "Q4298662"
         }
       ],
       "created": "2026-09-04",
