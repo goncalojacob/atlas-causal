@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "russo-georgian-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q620735",
+  "sitelinks": 74,
+  "wikipedia": {
+    "en": "Russo-Georgian War",
+    "pt": "Guerra Russo-Georgiana"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q620735"
+    }
+  ],
+  "title": "Russo-Georgian War",
+  "summary": "Wikidata item Q620735, imported by tools/import/wikidata.mjs. The item's own description reads \"2008 Russian invasion of Georgia\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2008,
+    "end": 2008,
+    "date": "2008-08-08",
+    "endDate": "2008-08-12"
+  },
+  "place": null,
+  "region": "asia",
+  "actors": []
+}

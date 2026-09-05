@@ -11684,7 +11684,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 74,
+      "citationCount": 83,
       "citations": [
         {
           "dissent": false,
@@ -11880,6 +11880,12 @@
         },
         {
           "dissent": false,
+          "id": "2006-lebanon-war",
+          "kind": "event",
+          "locator": "Q49104"
+        },
+        {
+          "dissent": false,
           "id": "2007-portuguese-abortion-referendum",
           "kind": "event",
           "locator": null
@@ -11958,6 +11964,12 @@
         },
         {
           "dissent": false,
+          "id": "bangladesh-liberation-war",
+          "kind": "event",
+          "locator": "Q371394"
+        },
+        {
+          "dissent": false,
           "id": "batepa-massacre",
           "kind": "event",
           "locator": null
@@ -12003,6 +12015,12 @@
           "id": "guinean-constitutional-referendum-1958",
           "kind": "event",
           "locator": "Q5616514"
+        },
+        {
+          "dissent": false,
+          "id": "gulf-war",
+          "kind": "event",
+          "locator": "Q37643"
         },
         {
           "dissent": false,
@@ -12054,6 +12072,12 @@
         },
         {
           "dissent": false,
+          "id": "maastricht-treaty",
+          "kind": "event",
+          "locator": "Q11146"
+        },
+        {
+          "dissent": false,
           "id": "mueda-massacre",
           "kind": "event",
           "locator": null
@@ -12078,15 +12102,39 @@
         },
         {
           "dissent": false,
+          "id": "russo-georgian-war",
+          "kind": "event",
+          "locator": "Q620735"
+        },
+        {
+          "dissent": false,
+          "id": "schengen-agreement",
+          "kind": "event",
+          "locator": "Q2822795"
+        },
+        {
+          "dissent": false,
           "id": "second-boer-war",
           "kind": "event",
           "locator": "Q215112"
         },
         {
           "dissent": false,
+          "id": "second-chechen-war",
+          "kind": "event",
+          "locator": "Q120843"
+        },
+        {
+          "dissent": false,
           "id": "second-sino-japanese-war",
           "kind": "event",
           "locator": "Q170314"
+        },
+        {
+          "dissent": false,
+          "id": "srebrenica-massacre",
+          "kind": "event",
+          "locator": "Q170334"
         },
         {
           "dissent": false,
@@ -12123,6 +12171,12 @@
           "id": "treaty-on-the-non-proliferation-of-nuclear-weapons",
           "kind": "event",
           "locator": "Q186444"
+        },
+        {
+          "dissent": false,
+          "id": "war-in-afghanistan-2001-2021",
+          "kind": "event",
+          "locator": "Q182865"
         },
         {
           "dissent": false,

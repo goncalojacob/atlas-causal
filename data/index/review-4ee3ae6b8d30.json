@@ -10280,8 +10280,14 @@
     }
   ],
   "schema": 1,
-  "total": 1025,
+  "total": 1034,
   "warnings": [
+    {
+      "id": "2006-lebanon-war",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
     {
       "id": "anti-comintern-pact",
       "kind": "event",
@@ -10301,6 +10307,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "bangladesh-liberation-war",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
       "id": "eastern-front",
       "kind": "event",
       "message": "event has no edges",
@@ -10314,6 +10326,12 @@
     },
     {
       "id": "first-indochina-war",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "gulf-war",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"
@@ -10355,6 +10373,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "maastricht-treaty",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
       "id": "munich-agreement",
       "kind": "event",
       "message": "event has no edges",
@@ -10367,10 +10391,22 @@
       "rule": "degree-zero"
     },
     {
+      "id": "russo-georgian-war",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
       "id": "saint-denis",
       "kind": "place",
       "message": "place is referenced by no event",
       "rule": "place-unused"
+    },
+    {
+      "id": "schengen-agreement",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
     },
     {
       "id": "second-boer-war",
@@ -10379,7 +10415,19 @@
       "rule": "degree-zero"
     },
     {
+      "id": "second-chechen-war",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
       "id": "second-sino-japanese-war",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "srebrenica-massacre",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"
@@ -10407,6 +10455,12 @@
       "kind": "source",
       "message": "source is cited by nothing under validation",
       "rule": "no-citers"
+    },
+    {
+      "id": "war-in-afghanistan-2001-2021",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
     },
     {
       "id": "yom-kippur-war",

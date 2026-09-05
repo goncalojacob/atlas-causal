@@ -10748,6 +10748,28 @@
     {
       "actors": [],
       "aliases": [],
+      "id": "2006-lebanon-war",
+      "place": null,
+      "region": "asia",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "2006 Lebanon War",
+      "weight": 0,
+      "when": {
+        "end": 2006,
+        "endDate": "2006-08-14",
+        "start": 2006
+      },
+      "wikidata": "Q49104",
+      "wikipedia": {
+        "en": "2006 Lebanon War",
+        "pt": "Guerra do Líbano de 2006"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
       "id": "2006-portuguese-presidential-election",
       "place": null,
       "region": "europe",
@@ -12774,6 +12796,29 @@
       }
     },
     {
+      "actors": [],
+      "aliases": [],
+      "id": "bangladesh-liberation-war",
+      "place": null,
+      "region": "asia",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Bangladesh Liberation War",
+      "weight": 0,
+      "when": {
+        "date": "1971-03-26",
+        "end": 1971,
+        "endDate": "1971-12-16",
+        "start": 1971
+      },
+      "wikidata": "Q371394",
+      "wikipedia": {
+        "en": "Bangladesh Liberation War",
+        "pt": "Guerra de Independência de Bangladesh"
+      }
+    },
+    {
       "actors": [
         {
           "actor": "estado-novo",
@@ -14473,6 +14518,29 @@
       }
     },
     {
+      "actors": [],
+      "aliases": [],
+      "id": "gulf-war",
+      "place": null,
+      "region": "asia",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Gulf War",
+      "weight": 0,
+      "when": {
+        "date": "1990-08-02",
+        "end": 1991,
+        "endDate": "1991-02-28",
+        "start": 1990
+      },
+      "wikidata": "Q37643",
+      "wikipedia": {
+        "en": "Gulf War",
+        "pt": "Guerra do Golfo"
+      }
+    },
+    {
       "actors": [
         {
           "actor": "indonesia",
@@ -15164,6 +15232,28 @@
       "wikipedia": {
         "en": "Lisbon Regicide",
         "pt": "Regicídio de 1908"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "maastricht-treaty",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Maastricht Treaty",
+      "weight": 0,
+      "when": {
+        "date": "1992-02-07",
+        "end": 1992,
+        "start": 1992
+      },
+      "wikidata": "Q11146",
+      "wikipedia": {
+        "en": "Maastricht Treaty",
+        "pt": "Tratado de Maastricht"
       }
     },
     {
@@ -16197,6 +16287,29 @@
       "wikidata": "Q115636352"
     },
     {
+      "actors": [],
+      "aliases": [],
+      "id": "russo-georgian-war",
+      "place": null,
+      "region": "asia",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Russo-Georgian War",
+      "weight": 0,
+      "when": {
+        "date": "2008-08-08",
+        "end": 2008,
+        "endDate": "2008-08-12",
+        "start": 2008
+      },
+      "wikidata": "Q620735",
+      "wikipedia": {
+        "en": "Russo-Georgian War",
+        "pt": "Guerra Russo-Georgiana"
+      }
+    },
+    {
       "actors": [
         {
           "actor": "salazar",
@@ -16278,6 +16391,28 @@
       }
     },
     {
+      "actors": [],
+      "aliases": [],
+      "id": "schengen-agreement",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Schengen Agreement",
+      "weight": 0,
+      "when": {
+        "date": "1985-06-14",
+        "end": 1985,
+        "start": 1985
+      },
+      "wikidata": "Q2822795",
+      "wikipedia": {
+        "en": "Schengen Agreement",
+        "pt": "Acordo de Schengen"
+      }
+    },
+    {
       "actors": [
         {
           "actor": "portugal",
@@ -16329,6 +16464,29 @@
       "wikipedia": {
         "en": "Second Boer War",
         "pt": "Segunda Guerra dos Bôeres"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "second-chechen-war",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Second Chechen War",
+      "weight": 0,
+      "when": {
+        "date": "1999-08-26",
+        "end": 2009,
+        "endDate": "2009-04-16",
+        "start": 1999
+      },
+      "wikidata": "Q120843",
+      "wikipedia": {
+        "en": "Second Chechen War",
+        "pt": "Segunda Guerra da Chechênia"
       }
     },
     {
@@ -16490,6 +16648,29 @@
         "date": "1974-09-30",
         "end": 1974,
         "start": 1974
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "srebrenica-massacre",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Srebrenica massacre",
+      "weight": 0,
+      "when": {
+        "date": "1995-07",
+        "end": 1995,
+        "endDate": "1995-07-22",
+        "start": 1995
+      },
+      "wikidata": "Q170334",
+      "wikipedia": {
+        "en": "Srebrenica massacre",
+        "pt": "Massacre de Srebrenica"
       }
     },
     {
@@ -16826,6 +17007,29 @@
         "date": "1955-12-14",
         "end": 1955,
         "start": 1955
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "war-in-afghanistan-2001-2021",
+      "place": null,
+      "region": "asia",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "War in Afghanistan (2001–2021)",
+      "weight": 0,
+      "when": {
+        "date": "2001-10-07",
+        "end": 2021,
+        "endDate": "2021-08-30",
+        "start": 2001
+      },
+      "wikidata": "Q182865",
+      "wikipedia": {
+        "en": "War in Afghanistan (2001–2021)",
+        "pt": "Guerra do Afeganistão (2001–2021)"
       }
     },
     {
