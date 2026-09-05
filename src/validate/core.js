@@ -126,14 +126,24 @@ export function citationsBySource(records) {
     if (!out.has(sourceId)) out.set(sourceId, []);
     out.get(sourceId).push(entry);
   };
+  // A citation may name a source by an id the source used to have. The list
+  // is keyed by the id the source answers to now, so a rename does not empty
+  // the bibliography entry and the counts on the cards — which is where
+  // citationsOf in src/data.js reads them from (health review A, finding 20).
+  const standsFor = new Map();
+  for (const r of records) {
+    if (!isObject(r)) continue;
+    for (const alias of r.aliases ?? []) if (!standsFor.has(alias)) standsFor.set(alias, r.id);
+  }
+  const now = (id) => standsFor.get(id) ?? id;
   for (const r of records) {
     if (!isObject(r) || r.status !== 'active' || r.kind === 'source') continue;
     for (const c of r.sources ?? []) {
-      if (typeof c?.source === 'string') add(c.source, { kind: r.kind, id: r.id, locator: c.locator ?? null, dissent: false });
+      if (typeof c?.source === 'string') add(now(c.source), { kind: r.kind, id: r.id, locator: c.locator ?? null, dissent: false });
     }
     if (isObject(r.dispute)) {
       for (const c of r.dispute.sources ?? []) {
-        if (typeof c?.source === 'string') add(c.source, { kind: r.kind, id: r.id, locator: c.locator ?? null, dissent: true });
+        if (typeof c?.source === 'string') add(now(c.source), { kind: r.kind, id: r.id, locator: c.locator ?? null, dissent: true });
       }
     }
   }
