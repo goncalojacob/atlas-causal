@@ -24,6 +24,7 @@ const ATLAS_READY = 'return document.querySelectorAll(".map .mark, .timeline .ba
 // query, what says the page has finished loading its data.
 const PAGES = [
   ['index.html', ATLAS_READY],
+  ['entry.html?id=carnation-revolution-1974', 'return document.querySelectorAll(".entry-body").length > 0;'],
 ];
 
 // Everything the page asked the network for, as the browser recorded it.

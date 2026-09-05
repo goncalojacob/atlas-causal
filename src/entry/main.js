@@ -1,9 +1,10 @@
 // Bootstrap for entry.html: resolve ?id=, fetch the record, draw the page.
 //
-// It loads the topology because an entry is not only its own text — it names
-// the actors of an event, the relations of an actor, the narratives that walk
-// through it — and that is exactly what the topology is for. No coastlines:
-// nothing here is drawn on a map.
+// It loads the spine because an entry is not only its own text — it names the
+// actors of an event, the relations of an actor, the narratives that walk
+// through it — and the spine carries every one of those links. The record
+// file itself is fetched second, for the prose. No coastlines: nothing here
+// is drawn on a map.
 
 import { loadAtlas } from '../data.js';
 import { esc } from '../util/esc.js';
@@ -28,7 +29,7 @@ if (id === '') {
     <code>entry.html?id=…</code>. <a href="index.html">The atlas</a> links here from every card.</p></section>`;
 } else {
   try {
-    const atlas = await loadAtlas({ dataRoot: fixtures ? 'tests/fixtures/data/' : 'data/', landFile: false, regions: false });
+    const atlas = await loadAtlas({ dataRoot: fixtures ? 'tests/fixtures/data/' : 'data/', landFile: false, regions: false, spine: true });
     const found = atlas.resolve(id);
     if (!found) {
       setTitle('');
@@ -37,7 +38,7 @@ if (id === '') {
       setTitle('');
       slot.innerHTML = elsewhereHtml(found.kind, found.id, links);
     } else {
-      // The topology entry is enough for the title and the meta line, so the
+      // The spine entry is enough for the title and the meta line, so the
       // page has a head before the record file has arrived.
       setTitle(displayName(found.record));
       slot.innerHTML = '<p class="muted">Loading the entry…</p>';
