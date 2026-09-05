@@ -443,16 +443,27 @@ record still carrying the draft marker — the dozen fields a list needs and no
 prose — the number of reviewable records, and the validator's own warnings.
 The browser cannot read a thousand record files, and the spine drops
 `authors` because the atlas never shows them; without this file the dashboard
-would either be blind or reimplement the rules.
+would either be blind or reimplement the rules. **Since H6b it is a summary
+and one shard per kind**, plus a history file per record; see the index tree
+above.
 
 *`review.html` is a maintainer's page, unlinked from the atlas.* The queue on
-the left, one record open on the right in the contribution form's own fields —
+the left — **since H6b a list of any length with only the rows on screen in
+the DOM** (`src/review/list.js`, the row in `row.js`), read in four orders
+(flags, degree, oldest, kind) and narrowed by kind, by flag and by which
+writer made the record — one record open on the right in the contribution
+form's own fields —
 `FIELDS` and the three list definitions are imported, not copied — validated
 against the loaded graph on every keystroke by the same `validateBundle()`
 the form runs. Sign replaces the draft marker with the reviewer and sets
 `revised`; Retract sets `status: retracted` and, for an event or an edge,
 carries the edges and narratives that cannot outlive it, refusing instead of
 cascading where records would have to be rewritten rather than retracted.
+Beside the record since H6b: both ends of a link with their summaries and
+their standing, the record's history out of the repository's commits, an
+optional `review.claimedBy` that expires after a week and is never a lock,
+and — from the first keystroke — the fields that have changed since the
+draft.
 
 *The amendment to "no backend", and it is narrow.* Saving needs a writer, and
 the public site has none and keeps none. `tools/serve.mjs` is a **local
@@ -811,7 +822,9 @@ atlas-causal/
 │       ├── search-<hash>.json    ● what the search box scans, folded at build time: per active record {id,kind,label,detail,terms,variants,weight,when,status}; fetched beside the spine and never waited for
 │       ├── citers-<hash>/<source-id>.json  ● the records that cite that one source, with locator and dissent; one file, fetched when a reader opens the source
 │       ├── sources-<hash>.json   ● every source record with its bibliographic fields and `citationCount`; the rows themselves are the citer directory
-│       └── review-<hash>.json    ● a digest of every record still carrying the draft marker {kind,id,status,authors,review,and the field it is named by}, the number of reviewable records, and the validator's warnings
+│       ├── review-<hash>.json    ● the queue's summary: how many records are reviewable, how many are still drafts, and one line per kind — its count and its shard
+│       ├── review-<kind>-<hash>.json  ● one kind's drafts: a digest each {kind,id,status,authors,created,revised,review,origin,degree,and the field it is named by} and the validator's warnings about them; review.html fetches the kind it is showing
+│       └── history/<id>.json    ● what changed at each version of one record and when each signature was added, out of the repository's own commits; unhashed, fetched when a record is opened, compared by name and not by bytes (H6b)
 │
 ├── schema/
 │   ├── v1/event.json  edge.json  source.json  actor.json  place.json  relation.json  narrative.json  presence.json  region.json  bundle.json  ●
@@ -1539,6 +1552,19 @@ A source nothing cites gets no file; its `citationCount` says so. `readIndex`
 walks `data/index/` one level deep and `writeIndex` removes any file or
 directory a fresh build does not name, so rule 16 covers the directory too.
 
+`history/` is the one directory that is **not** hashed and the one thing rule
+16 compares by name rather than by bytes (H6b). Not hashed, because the
+dashboard fetches a history by the record's id and a hashed name would mean
+reading the manifest for each one. Not compared by bytes, because a history
+is derived from the repository's commits and not from `data/` alone, and the
+two builds rule 16 puts side by side do not always have the same commits to
+read: the deploy checks out one commit deep, and a build made before a change
+is committed cannot see the commit about to carry it. What keeps the file
+stable across that commit is that a version is identified by the record's own
+content — its `revised` and the fields that changed — and never by the commit
+that carried it. The names still have to match, so a record added or retired
+without a rebuild is caught.
+
 **The loader reads it, since H3a-2.** `loadSpine()` fetches the manifest
 `no-store` and the spine once — it is named by its own hash and served
 `immutable`, so a second call costs a manifest and no more, and a rejection
@@ -1954,7 +1980,19 @@ and gzipped as Pages serves it:
 | `sources-<hash>.json` | 29.4 KB | 3.7 KB | every page |
 | `search-<hash>.json` | 217.7 KB | 22.4 KB | no — fetched beside, never waited for |
 | `citers-<hash>/`, 33 files | 255.7 KB | 26.4 KB | no — one file, when a source is opened |
-| `review-<hash>.json` | 258.9 KB | 19.7 KB | `review.html` only |
+| `review-<hash>.json`, the summary | 0.8 KB | 0.3 KB | `review.html` only |
+| `review-<kind>-<hash>.json`, 7 files | 334.9 KB | 23.3 KB | `review.html`, the kind it is showing |
+| `history/`, 1,006 files | 345.7 KB | 178.7 KB | no — one file, when a record is opened |
+
+The two H6b added are counted differently from the rest of the table, and
+should be. The seven shards are 334.9 KB against the single file's 258.9 KB
+— seven envelopes instead of one, and three more fields per digest — but
+`review.html` fetches the summary and the kind it is showing, which is 0.8 KB
+plus one shard rather than all of it, and at twenty thousand drafts that is
+the difference between a megabyte and eleven. The histories are gzipped one
+file at a time here, because that is how they are served: 1,006 small files
+compress far worse each than they would together, and none of them is on the
+path to anything being drawn.
 
 So `index.html` costs **853.2 KB raw and 67.0 KB over the wire**, and
 `sources.html` 35.4 KB and 5.6 KB. Against the 1,240.5 KB / 90.0 KB it cost

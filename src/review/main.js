@@ -160,6 +160,11 @@ function render({ topology, summary, shardOf, historyOf, schemas, citersOf, sear
   // The record as the page fetched it, before this reviewer touched
   // anything: what the diff and the claim are written against.
   let drafted = null;
+  // Which open is the current one. Opening a record fetches it, its history
+  // and — for a link — both of its ends, so two clicks in quick succession
+  // are two of these running at once, and the slower one would otherwise
+  // paint its endpoints into the record the reviewer is now reading.
+  let opening = 0;
   // The validation of what is in the inputs right now: the editor reports it
   // on every keystroke, and Save and Sign hang on it.
   let result = null;
@@ -388,6 +393,8 @@ function render({ topology, summary, shardOf, historyOf, schemas, citersOf, sear
 
   // --- one record ----------------------------------------------------------
   async function openRecord(item) {
+    const token = (opening += 1);
+    const current = () => token === opening;
     open = item;
     noteEl.textContent = '';
     headEl.textContent = '';
@@ -419,11 +426,12 @@ function render({ topology, summary, shardOf, historyOf, schemas, citersOf, sear
       editorMount.appendChild(html('p', { class: 'field-error' }, error.message));
       return;
     }
+    if (!current()) return;
     // The record as it was fetched: what Sign diffs the inputs against.
     drafted = record;
     paintClaim();
-    if (record.kind === 'edge' || record.kind === 'relation') paintContext(record);
-    paintHistory(item.id);
+    if (record.kind === 'edge' || record.kind === 'relation') paintContext(record, current);
+    paintHistory(item.id, current);
     editor = createEditor({
       record,
       topology,
@@ -453,7 +461,7 @@ function render({ topology, summary, shardOf, historyOf, schemas, citersOf, sear
   // spine carries no summaries — it is what every page loads — so the two
   // records are fetched, and a fetch that fails leaves the id, which is what
   // the page had before.
-  async function paintContext(record) {
+  async function paintContext(record, current = () => true) {
     const ends = record.kind === 'edge'
       ? [['from', record.from, 'event'], ['to', record.to, 'event']]
       : [['from', record.from, 'actor'], ['to', record.to, 'actor']];
@@ -469,9 +477,11 @@ function render({ topology, summary, shardOf, historyOf, schemas, citersOf, sear
       try {
         end = await getJson(`${dataRoot}${kind}s/${encodeURIComponent(id)}.json`);
       } catch {
+        if (!current()) return;
         box.appendChild(html('p', { class: 'hint' }, 'this record could not be fetched'));
         continue;
       }
+      if (!current()) return;
       // The id stays: it is what the field holds and what a reviewer checks.
       box.insertBefore(html('h4', {}, labelOf({ ...end, kind })), box.querySelector('.context-id'));
       const marks = html('p', { class: 'context-marks' });
@@ -483,10 +493,11 @@ function render({ topology, summary, shardOf, historyOf, schemas, citersOf, sear
     }
   }
 
-  async function paintHistory(id) {
+  async function paintHistory(id, current = () => true) {
     const summaryEl = html('summary', {}, 'History');
     historyEl.appendChild(summaryEl);
     const history = await historyOf(id);
+    if (!current()) return;
     if (!history) {
       historyEl.appendChild(html('p', { class: 'hint' }, 'No history file for this record. Rebuild the index (node tools/build-index.mjs).'));
       return;
@@ -789,7 +800,11 @@ function render({ topology, summary, shardOf, historyOf, schemas, citersOf, sear
     // Otherwise the queue is in the order the sort chips say, and its first
     // row is the one a reviewer would open anyway.
     const opened = opening ?? rows[0];
-    if (opened) openRecord(opened);
+    // Unless a reviewer got there first: rows are drawn as each kind's shard
+    // arrives, so the list can be clicked before the last of them lands, and
+    // opening the queue's first record over the one somebody just chose would
+    // be the page taking the record away from them.
+    if (opened && !open) openRecord(opened);
     // After opening, because opening a record clears this line: an address
     // that names nothing is said out loud rather than silently ignored, and
     // what was opened instead is the queue's own first record.

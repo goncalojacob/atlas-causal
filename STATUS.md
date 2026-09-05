@@ -6,10 +6,50 @@ session ends. `ARCHITECTURE.md` is the target; this file is the position.
 
 ## Last updated
 
-2026-09-05, after H6a (`docs/health/h6a-brief.md`), the health cycle's
-thirteenth run, on `m0`: **a contributor can find a record among twenty
-thousand, and a correction starts from the record.** Code only; nothing under
-`data/` changed and `data/index/` was not rebuilt. 841 tests.
+2026-09-05, after H6b (`docs/health/h6b-brief.md`), the health cycle's
+fourteenth run, on `m0`: **the review queue is a list of any length, and a
+record comes with its history.** Code only; nothing under `data/` changed, and
+`data/index/` was rebuilt because the digests are reshaped. 851 tests.
+
+**The queue drew every row it had, and redrew every one of them per
+keystroke.** 30,543 rows in the DOM, 461 ms a key in the queue search and
+5.5 s to first paint at twenty thousand drafts, of which about fifteen rows
+are ever seen (health review B, finding 7). `src/review/list.js` makes the
+rows in the viewport and nothing else: the scroller is as tall as every row
+would be, one spacer holds that height, and the rows are placed inside it by
+arithmetic — `windowOf`, which is tested without a browser. **In Chromium at
+20 000 drafts: 36 ms to draw, 4.6 to 11.6 ms a keystroke, 23 rows in the
+DOM** (`tests/review-browser.test.mjs`). `node tests/bench/run.mjs list`
+measures the half that has no DOM: the model out of the shard 14.3 ms, a
+keystroke 0.64 to 7.6 ms, a chip 0.7 ms.
+
+**The digests are one file per kind, and a summary names them.** One file
+carried a digest of every draft — 265 KB today, 11.6 MB at twenty thousand —
+and the dashboard had to have all of it before it could draw fifteen rows.
+`review-<kind>-<hash>.json` is fetched when its kind is shown; the summary
+says how many drafts each kind has, so the page counts what is left without
+fetching a digest. Below two thousand drafts, which is the atlas today, every
+kind is still fetched at once and nothing about the page changes.
+
+**Four orders and three filters.** flags, degree, oldest and kind; a chip per
+flag and per `origin.tool`, with `by hand` for the records no writer made.
+The degree — how much of the atlas hangs on a record — is counted by the
+index build and rides in the digest, because a record cannot see it.
+
+**A record now comes with its history.** `data/index/history/<id>.json`: what
+changed at each version and when each signature was added, built from the
+repository's own commits where there are any (566 ms of the index build's
+1.4 s) and from the record's `created` and `revised` where there are none. A
+version is identified by the record's own content and never by the commit
+that carried it, so a build made before a change is committed agrees with one
+made after. A `git log` endpoint on `tools/serve.mjs` was refused, as A31
+asked: that server does one thing.
+
+**And the three things a reviewer had to leave the page for.** An edge shows
+both of its ends, with their summaries and their standing. `review.claimedBy`
+says who is reading a record, expires after a week and is never a lock.
+From the first keystroke, a box says which fields have changed since the
+draft — what the signature is about to put a name to.
 
 **The `<select>` of every record in the atlas is gone.** Every reference
 field in the contribution form and in the review editor was one — the events,
@@ -4477,6 +4517,128 @@ gave that to the map and the timeline, and M25 did not widen it.
      and the one number near it: the alternative is building both on page
      load, which would charge the same to a contributor who never touches a
      reference field.
+
+### H6b — the reviewer
+
+274. **The queue's shards are named in a summary file, not in the
+     manifest.** `manifest.json` is fetched `no-store` on every page load by
+     every page, and `review.html` is a page most readers never open; a line
+     per kind in it would be paid for by all of them. `files.review` names
+     one small summary — the totals and, per kind, its count and its shard —
+     and the shards are named inside it. It is the same reasoning as the
+     citer directory's single hash (deviation 216), reached the other way.
+
+275. **`data/index/history/` is unhashed, and rule 16 compares it by name
+     rather than by bytes.** Unhashed because the dashboard fetches a history
+     by the record's id, and a hashed name would mean reading the manifest
+     for each one. Compared by name because a history is derived from the
+     repository's commits and not from `data/` alone, and the two builds rule
+     16 puts side by side do not always have the same commits to read: the
+     deploy job checks out one commit deep, and a build made before a change
+     is committed cannot see the commit about to carry it. Comparing those
+     bytes would fail the gate on every push and say nothing true about the
+     data. What is still asserted is the set of names, so a record added or
+     retired without a rebuild is caught. It is the only file in the index
+     whose bytes are not held to a fresh build, and it is said out loud in
+     `compareIndex`, in `ARCHITECTURE.md` and here because it is a hole in
+     rule 16 rather than an exception to it.
+
+276. **A version's identity is the record's content, never the commit.** No
+     commit hash and no commit date is written into a history. The date of a
+     version is that version's own `revised`, and its substance is the set of
+     fields that changed; two commits that changed no field are one version.
+     That is what makes 275's name-only comparison survivable — the file is
+     the same on both sides of the commit that carries the change — and it
+     costs the reader the ability to go from a version to the commit. A
+     reviewer who wants that has `git log` on the file.
+
+277. **The index build got 566 ms slower on this dataset, and every save
+     pays it.** One `git log` and one `git cat-file --batch` over 2,729
+     record versions: 254 ms for the whole index without the histories, 566
+     with. The server answers a save before the rebuild and the dashboard
+     reads `/__status` (deviation 250), so what this lengthens is the
+     "rebuilding…" line and not the save. It is a full pass every time
+     because the alternative — rebuilding only the histories of the records
+     that changed — needs a record of what the last build saw, which is
+     state this project does not keep anywhere.
+
+278. **The list needs rows of one height, so the flags past the second are
+     counted rather than shown.** A row that measures itself cannot be
+     placed by arithmetic, and arithmetic is the whole reason the list is
+     cheap. So a row is two lines: the label, and the id with at most two
+     flags, the degree, the unchecked citations, the full-entry mark and the
+     claim beside it. The old rows listed every flag and let them wrap. The
+     count (`+2`) says how many are hidden, and opening the record shows all
+     of them, which is where a reviewer reads them anyway.
+
+279. **The kind headings inside the list are gone.** The queue was drawn as
+     one `<h3>` per kind with a list under it; a virtual list is one flat
+     sequence, and a heading that is a row of its own would have to be in the
+     model and counted in the arithmetic. The kind is on every row and the
+     chips above the list carry the counts, so nothing is lost but the
+     grouping, and `kind` is one of the four orders.
+
+280. **Above two thousand drafts the page opens on one kind.** Below it —
+     485 today — every shard is fetched at once, which is exactly what the
+     page did before. The threshold is a judgement and not a measurement:
+     eleven megabytes before the first row is drawn is the thing the shards
+     exist to stop, and a maintainer with a few hundred drafts should not
+     have to click a chip to see them. The `all` chip fetches the rest and
+     says so in its tooltip.
+
+281. **A claim is not a lock, and could not be.** Nothing refuses a save
+     because somebody else holds the claim. The records are a git repository
+     two people can edit on two machines with no server between them, and a
+     lock the only honest storage cannot enforce is a lie told to whoever
+     trusts it. What a claim buys is that the second reviewer sees the first
+     one's name before spending the evening, not after. It expires after a
+     week — a claim nobody released is the end of an evening, not a promise —
+     and Sign takes it off with the rest of what a reviewer was asked to look
+     at.
+
+282. **The diff is against the draft as fetched, not against what is on
+     disk.** A reviewer who leaves the page open while another save lands
+     will be shown a diff against what they were handed. The alternative is
+     re-fetching the record on every keystroke, and the record they are
+     editing is the one they were handed: a diff against something they never
+     saw would be worse than a stale one. A save refused by the server
+     because the atlas moved under it is caught where it already was.
+
+283. **The edge context fetches both endpoint records.** The spine carries
+     no summaries — it is what every page loads whole — so the two ends are
+     fetched when the edge is opened, one request each, and a failed fetch
+     leaves the id, which is what the page showed before. `relation` gets the
+     same treatment: it is the same shape of record and the same question.
+
+284. **The history and the diff share their arithmetic, in
+     `src/review/history.js`.** `changedFields` answers both "what did this
+     commit change" and "what has this reviewer changed", and the browser
+     cannot import a module that imports `node:child_process`. So the pure
+     half is under `src/` and `tools/lib/history.mjs` is the git plumbing
+     around it — which is also why the reviewer sees the same account of a
+     change in both places.
+
+285. **The row is its own module.** `src/review/row.js` exists because two
+     things draw a queue row: the dashboard, which puts a click on it, and
+     the browser benchmark, which measures what a screenful costs to make. A
+     row living only inside `main.js` could be measured only by a copy of
+     itself, and a copy is not what is being measured.
+
+286. **Opening a record is generation-guarded.** Opening one fetches the
+     record, its history and — for a link — both of its ends, so two clicks
+     in quick succession are two of those running at once. Before H6b there
+     was one fetch and the worst that could happen was an editor built for
+     the record that is no longer open; now the slower open would paint its
+     endpoints into the record the reviewer is reading, which is how a
+     reviewer would read one edge's summary under another's. Each open takes
+     a number and every continuation checks it is still the current one.
+
+287. **`tests/review-browser.test.mjs` runs against `data/`, not the
+     fixtures.** Every other browser test opens `?fixtures=1`. The fixtures
+     carry no draft at all, so the queue there is empty and there is nothing
+     to open, no edge to put in context and no history to show. The twenty
+     thousand rows the first test measures are made in the page, as the
+     picker's are.
 
 ## Dates to verify
 
