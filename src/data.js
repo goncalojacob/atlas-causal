@@ -6,11 +6,16 @@
 // The topology is always loaded whole because consequences, ancestors and
 // convergence need the whole graph; a window would make convergence return
 // a subset and present it as complete (ARCHITECTURE.md).
+//
+// Since H3a-2 the same atlas can be built from the spine — the smaller
+// projection the index emits beside the topology — through loadSpine() and
+// createAtlasFromSpine(). No page reads it yet; H3b moves them over.
 
 import { buildAdjacency } from './graph.js';
 import { narrativeEventIds } from './narrative.js';
 import { extent as intervalExtent } from './util/dates.js';
 import { regionBounds } from './util/geo.js';
+import { edgeId } from './vocab.js';
 
 async function defaultFetchJson(url, init) {
   const response = await fetch(url, init);
@@ -19,9 +24,15 @@ async function defaultFetchJson(url, init) {
 }
 
 // Pure assembly from already-loaded pieces; loadAtlas() does the fetching.
+//
+// `citesCount` says where "how many citations does this record make" comes
+// from. From the topology it is counted here, out of the citer rows the
+// sources index carries; from the spine it is already on the record, written
+// at build time (h3a-brief, A8) — which is what lets those rows leave the
+// index every page loads whole, in H3b.
 export function createAtlas({
   manifest, topology, sources, land = null, palette = null, regionBoxes = null,
-  dataRoot = 'data/', fetchJson = defaultFetchJson,
+  dataRoot = 'data/', fetchJson = defaultFetchJson, citesCount = false,
 }) {
   const events = new Map(topology.events.map((e) => [e.id, e]));
   const edges = new Map(topology.edges.map((e) => [e.id, e]));
@@ -50,7 +61,21 @@ export function createAtlas({
       citationsOf.get(key).push({ ...citation, source: source.id });
     }
   }
-  const citationCount = (kind, id) => (citationsOf.get(`${kind}:${id}`) ?? []).length;
+  // The same number, read off the record instead of counted, when the atlas
+  // was built from the spine. Only events, actors and places carry it — they
+  // are the three kinds a card prints it beside — and a tombstone carries
+  // none, which is 0 either way: a retracted record cites nothing.
+  const cites = new Map();
+  if (citesCount) {
+    for (const [kind, map] of kinds) {
+      for (const record of map.values()) {
+        if (typeof record.citesCount === 'number') cites.set(`${kind}:${record.id}`, record.citesCount);
+      }
+    }
+  }
+  const citationCount = citesCount
+    ? (kind, id) => cites.get(`${kind}:${id}`) ?? 0
+    : (kind, id) => (citationsOf.get(`${kind}:${id}`) ?? []).length;
 
   const find = (id) => {
     for (const [kind, map] of kinds) if (map.has(id)) return { id, kind, record: map.get(id) };
@@ -312,6 +337,70 @@ export function createAtlas({
     resolve,
     record,
   };
+}
+
+// ─── The spine ─────────────────────────────────────────────────────────────
+//
+// The same atlas out of the projection the index emits beside the topology
+// (ARCHITECTURE.md, "The spine, the search shard and the citers"). Nothing
+// above changes: the spine is expanded back into the shape createAtlas reads
+// and hands it the same sources index, so `graph.js`, `horizon.js`,
+// `lens.js` and the views cannot tell which file the atlas was built from.
+// That is the whole point — H3b moves the pages over one at a time, and a
+// page that behaved differently on the spine would make that migration a
+// rewrite instead of a switch.
+//
+// The spine differs from the topology in exactly three ways: an edge is a
+// tuple, `regionMethod` and `presenceType` are gone because nothing draws
+// them, and a record says how many citations it makes on itself.
+
+// Five slots when the id is `from--to--type` and the edge carries neither an
+// alias nor a merge hop; the whole object when it is not, because those two
+// feed the alias map and `resolve()`'s merge hop and cannot be said in five
+// slots. The loader takes either (h3a-brief, A2).
+function edgeFromSpine(entry) {
+  if (!Array.isArray(entry)) return { ...entry, id: entry.id ?? edgeId(entry) };
+  const [from, to, type, confidence, status] = entry;
+  return { id: edgeId({ from, to, type }), from, to, type, confidence, status, supersededBy: null, aliases: [] };
+}
+
+function topologyFromSpine(spine) {
+  return {
+    events: spine.events ?? [],
+    edges: (spine.edges ?? []).map(edgeFromSpine),
+    actors: spine.actors ?? [],
+    places: spine.places ?? [],
+    presences: spine.presences ?? [],
+    relations: spine.relations ?? [],
+    narratives: spine.narratives ?? [],
+  };
+}
+
+// Sources stay where they are: they are not in the spine, and `atlas.sources`
+// is the sources index exactly as it is today (A3).
+export function createAtlasFromSpine({ spine, ...rest }) {
+  return createAtlas({ ...rest, topology: topologyFromSpine(spine), citesCount: true });
+}
+
+// The spine is named by the manifest under a content hash and served
+// `immutable`, so it is fetched once and kept — while the manifest itself is
+// read `no-store` every time, which is how a new build is noticed at all.
+// Same discipline as loadGeometry: one request in flight per file, and a
+// rejection is not an answer, so the entry goes when the promise rejects and
+// the next call really is a new attempt rather than a cached failure.
+const spineCache = new Map();
+export async function loadSpine({ dataRoot = 'data/', fetchJson = defaultFetchJson } = {}) {
+  const manifest = await fetchJson(`${dataRoot}index/manifest.json`, { cache: 'no-store' });
+  const url = `${dataRoot}${manifest.files.spine}`;
+  if (!spineCache.has(url)) {
+    const pending = fetchJson(url).catch((error) => {
+      // Only if it is still this attempt's: a later one may have replaced it.
+      if (spineCache.get(url) === pending) spineCache.delete(url);
+      throw error;
+    });
+    spineCache.set(url, pending);
+  }
+  return { manifest, spine: await spineCache.get(url) };
 }
 
 // The sources index alone: the manifest names it, and it carries every

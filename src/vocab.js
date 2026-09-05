@@ -99,6 +99,16 @@ export const RELATION_TYPE_IDS = ids(RELATION_TYPES);
 // from the lists above and never written out again.
 export const EDGE_ID = new RegExp(`^(${SLUG_SOURCE})--(${SLUG_SOURCE})--(${alternation(EDGE_TYPES)})$`);
 export const RELATION_ID = new RegExp(`^(${SLUG_SOURCE})--(${SLUG_SOURCE})--(${alternation(RELATION_TYPES)})$`);
+
+// The other direction of `EDGE_ID`: the three parts it matches, joined. The
+// spine writes an edge as a tuple and lets the loader synthesise the id
+// (h3a-brief, A2), so the pattern and the synthesis have to be the same
+// sentence — which is why this lives beside it and not in the validator: a
+// page that reads the spine would otherwise import the whole of `core.js`
+// to build an id.
+export function edgeId(edge) {
+  return `${edge.from}--${edge.to}--${edge.type}`;
+}
 // "actor:salazar" — a lens kind and the id it is about.
 export const FOCUS = new RegExp(`^(${FOCUS_KINDS.join('|')}):(${SLUG_SOURCE})$`);
 

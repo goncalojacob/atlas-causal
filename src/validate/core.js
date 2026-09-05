@@ -7,8 +7,9 @@
 import { createValidator } from './schema.js';
 import { checkRules, normalizeRole } from './rules.js';
 import { KINDS } from '../kinds.js';
+import { edgeId } from '../vocab.js';
 
-export { KINDS };
+export { KINDS, edgeId };
 export const SCHEMA_VERSION = 1;
 
 function isObject(v) {
@@ -425,10 +426,7 @@ function envelopeOf(record, kind) {
 // what keeps a retracted argument out of consequences, convergence and the
 // shortest path (A2). An edge that carries an alias or a merge hop cannot be
 // said in five slots and is written whole instead; the loader takes either.
-export function edgeId(edge) {
-  return `${edge.from}--${edge.to}--${edge.type}`;
-}
-
+// `edgeId` itself is in `vocab.js`, beside the pattern it is the inverse of.
 function edgeInSpine(edge) {
   const named = edge.id === edgeId(edge);
   if (named && !edge.supersededBy && (edge.aliases ?? []).length === 0) {
