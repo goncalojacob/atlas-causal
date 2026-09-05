@@ -10,6 +10,7 @@
 
 import { validate } from '../validate/core.js';
 import { ACTOR_TYPES, EDGE_TYPES, RELATION_TYPES } from '../validate/rules.js';
+import { CONTAINER_KINDS } from '../citation.js';
 
 export const CONFIDENCE = Object.freeze(['consensus', 'probable', 'disputed']);
 export const SOURCE_TYPES = Object.freeze(['book', 'chapter', 'article', 'thesis', 'primary', 'dataset', 'web']);
@@ -130,6 +131,14 @@ export const FIELDS = Object.freeze({
     { key: 'creators', label: 'Authors of the work', input: 'text', path: '/creators', required: true, hint: 'as printed, separated by semicolons' },
     { key: 'title', label: 'Title', input: 'text', path: '/title', required: true },
     { key: 'year', label: 'Year', input: 'text', path: '/year' },
+    // The containing work. Five fields and one rule: leave the title empty
+    // and no container is written at all, which is what every source record
+    // written before these fields existed looks like.
+    { key: 'containerTitle', label: 'In', input: 'text', path: '/container/title', hint: 'the journal, the edited volume, the series or the site this work is inside; leave empty for a work that stands alone' },
+    { key: 'containerKind', label: 'And it is a', input: 'select', options: ['', ...CONTAINER_KINDS], path: '/container/kind', hint: 'required once you have named one: a chapter in an edited volume and an article in a journal are not cited alike' },
+    { key: 'volume', label: 'Volume', input: 'text', path: '/container/volume', hint: 'of the containing work; also the number in a series' },
+    { key: 'issue', label: 'Issue', input: 'text', path: '/container/issue' },
+    { key: 'pages', label: 'Pages', input: 'text', path: '/container/pages', hint: 'as printed: 45-67' },
     { key: 'publisher', label: 'Publisher', input: 'text', path: '/publisher' },
     { key: 'isbn', label: 'ISBN', input: 'text', path: '/isbn', hint: '10 or 13 digits, no hyphens' },
     { key: 'doi', label: 'DOI', input: 'text', path: '/doi', hint: '10.xxxx/…' },
@@ -312,6 +321,25 @@ function withBody(record, values) {
   return record;
 }
 
+// The containing work, on a source. Written only when the contributor named
+// one — an empty title writes no key at all, so a record that stands alone
+// looks exactly as it did before these fields existed and a save that changed
+// nothing changes no bytes. A title with no kind is written as it stands, so
+// the schema reports it at /container/kind and the form puts the message on
+// that field, rather than this function guessing which of the four it is.
+function withContainer(record, values) {
+  const named = ['containerTitle', 'containerKind', 'volume', 'issue', 'pages']
+    .some((key) => trimmed(values[key]) !== '');
+  if (!named) return record;
+  const container = { title: trimmed(values.containerTitle), kind: trimmed(values.containerKind) };
+  for (const [key, from] of [['volume', 'volume'], ['issue', 'issue'], ['pages', 'pages']]) {
+    const value = orNull(values[from]);
+    if (value !== null) container[key] = value;
+  }
+  record.container = container;
+  return record;
+}
+
 export function buildRecord(kind, values, context = {}) {
   const v = values ?? {};
   if (kind === 'event') {
@@ -417,7 +445,7 @@ export function buildRecord(kind, values, context = {}) {
 
   if (kind === 'source') {
     const year = parseNumber(v.year);
-    return {
+    return withContainer({
       ...envelope('source', trimmed(v.id), context),
       type: trimmed(v.type) || 'book',
       creators: trimmed(v.creators).split(';').map((s) => s.trim()).filter(Boolean),
@@ -430,7 +458,7 @@ export function buildRecord(kind, values, context = {}) {
       accessed: orNull(v.accessed),
       repository: orNull(v.repository),
       reference: orNull(v.reference),
-    };
+    }, v);
   }
 
   throw new Error(`kind must be event, edge, source, actor, place, relation or narrative, not "${kind}"`);
@@ -578,6 +606,7 @@ export function valuesFromRecord(kind, record) {
   }
 
   if (kind === 'source') {
+    const container = isObject(r.container) ? r.container : {};
     return {
       ...values,
       id: r.id ?? '',
@@ -585,6 +614,11 @@ export function valuesFromRecord(kind, record) {
       creators: (r.creators ?? []).join('; '),
       title: r.title ?? '',
       year: numberText(r.year),
+      containerTitle: container.title ?? '',
+      containerKind: container.kind ?? '',
+      volume: container.volume ?? '',
+      issue: container.issue ?? '',
+      pages: container.pages ?? '',
       publisher: r.publisher ?? '',
       isbn: r.isbn ?? '',
       doi: r.doi ?? '',
@@ -651,8 +685,12 @@ export function applyValues(kind, record, values) {
   }
   // An entry nobody has written is an absent key, and an explicit null says
   // the same thing: whichever the record on disk has is what it keeps until
-  // somebody actually writes the entry.
+  // somebody actually writes the entry. A source that stands alone is the
+  // same case: absent and null both mean no containing work.
   if (!Object.hasOwn(built, 'body') && record?.body === null) built.body = null;
+  if (kind === 'source' && !Object.hasOwn(built, 'container') && record?.container === null) {
+    built.container = null;
+  }
   return orderLike(built, record ?? {});
 }
 

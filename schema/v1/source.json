@@ -64,6 +64,43 @@
         { "$ref": "../common/provenance.json#/properties/created" }
       ]
     },
+    "container": {
+      "description": "The work this one is inside: the journal an article appeared in, the volume a chapter is a chapter of, the series a number belongs to, the site a page is on. Absent on a work that stands alone, which is what every source record written before M28 is. `volume`, `issue` and `pages` belong to the containing work and not to this one, which is why they are here and not beside `publisher`.",
+      "oneOf": [
+        { "type": "null" },
+        {
+          "type": "object",
+          "required": ["title", "kind"],
+          "additionalProperties": false,
+          "properties": {
+            "title": { "type": "string", "minLength": 1, "maxLength": 500 },
+            "kind": {
+              "type": "string",
+              "enum": ["journal", "edited-volume", "series", "website"]
+            },
+            "volume": {
+              "oneOf": [
+                { "type": "null" },
+                { "type": "string", "minLength": 1, "maxLength": 40 }
+              ]
+            },
+            "issue": {
+              "oneOf": [
+                { "type": "null" },
+                { "type": "string", "minLength": 1, "maxLength": 40 }
+              ]
+            },
+            "pages": {
+              "description": "As printed, the dash included: \"45-67\", \"45\", \"xii-xl\".",
+              "oneOf": [
+                { "type": "null" },
+                { "type": "string", "minLength": 1, "maxLength": 40 }
+              ]
+            }
+          }
+        }
+      ]
+    },
     "repository": {
       "description": "For primary sources: the archive or library holding the document.",
       "oneOf": [

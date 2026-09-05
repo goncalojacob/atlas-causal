@@ -1104,6 +1104,20 @@ closed vocabulary with a reason.
 - The Action resolves DOI/ISBN against a public API and comments the title
   it found beside the one submitted. Not a runtime dependency; a review aid.
 - Fifty records citing the same book cite one file.
+- **`container`, optional: the work this one is inside.**
+  `{ "title": "Journal of Portuguese History", "kind": "journal",
+  "volume": "12", "issue": "3", "pages": "45-67" }`, with `kind` one of
+  `journal | edited-volume | series | website` and the last three optional.
+  A closed list for the same reason the edge types are one: an article in a
+  journal and a chapter in an edited volume are not cited alike, and "in
+  something" would collapse them. The volume, the issue and the pages belong
+  to the *containing* work, which is why they are inside it and not beside
+  `publisher`. `containerText` in `src/citation.js` is the one place the
+  form is decided — "Journal of Portuguese History, 12(3), 45-67." for a
+  journal, "In The Cambridge History of Portugal, 45-67." for an edited
+  volume — and every citation in the atlas goes through it. A work that
+  stands alone carries no `container` key at all, which is what every source
+  record written before M28 is.
 
 ### Actor ● — who the events involve
 

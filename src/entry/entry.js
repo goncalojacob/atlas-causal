@@ -14,7 +14,7 @@
 import { esc, safeUrl } from '../util/esc.js';
 import { formatInterval } from '../util/dates.js';
 import { renderBody, tocHtml } from '../markdown.js';
-import { identifiers } from '../citation.js';
+import { identifiers, containerText } from '../citation.js';
 import { articleFor } from '../wikipedia.js';
 import { ACTOR_TYPE_LABEL } from '../panel/event.js';
 import { RELATION_LABEL, RELATION_ORDER } from '../panel/actor.js';
@@ -64,7 +64,8 @@ function citationHtml(source, { mark = null, locators = [], links = createLinks(
   return `<li class="citation" id="entry-cite-${esc(source.id)}">
     ${mark === null ? '' : `<span class="cite-number">[${esc(mark)}]</span>`}
     <span class="creators">${esc((source.creators ?? []).join(', '))}</span>${source.year ? ` (${esc(source.year)})` : ''}.
-    <a href="${esc(links.atlas('source', source.id))}"><em>${esc(source.title)}</em></a>${source.publisher ? `. ${esc(source.publisher)}` : ''}.
+    <a href="${esc(links.atlas('source', source.id))}"><em>${esc(source.title)}</em></a>.
+    ${containerText(source.container) ? `<span class="container">${esc(containerText(source.container))}</span>` : ''}${source.publisher ? ` ${esc(source.publisher)}.` : ''}
     ${locators.length ? `<span class="locator">${esc(locators.join('; '))}.</span>` : ''}
     <span class="identifiers">${ids.join(' · ')}</span>
     ${source.status !== 'active' ? `<span class="badge status">${esc(source.status)}</span>` : ''}

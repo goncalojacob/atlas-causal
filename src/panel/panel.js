@@ -13,7 +13,7 @@ import { windowAt, resolveWindow } from '../util/window.js';
 import { formatFocus, lensSet } from '../lens.js';
 import { lanesFor } from '../lanes.js';
 import { shortestPaths, pathTo } from '../graph.js';
-import { identifiers } from '../citation.js';
+import { identifiers, containerText } from '../citation.js';
 import { renderEventCard } from './event.js';
 import { renderActorCard } from './actor.js';
 import { renderPlaceCard } from './place.js';
@@ -223,7 +223,8 @@ export function createPanel(container, {
         : '<span class="unchecked" title="nobody has yet opened the source to check this citation">unchecked</span>';
       return `<li class="citation">
         <span class="creators">${esc((src.creators ?? []).join(', '))}</span>${src.year ? ` (${esc(src.year)})` : ''}.
-        <button type="button" class="link cite" data-action="source" data-id="${esc(src.id)}"><em>${esc(src.title)}</em></button>${src.publisher ? `. ${esc(src.publisher)}` : ''}.
+        <button type="button" class="link cite" data-action="source" data-id="${esc(src.id)}"><em>${esc(src.title)}</em></button>.
+        ${containerText(src.container) ? `<span class="container">${esc(containerText(src.container))}</span>` : ''}${src.publisher ? ` ${esc(src.publisher)}.` : ''}
         ${c.locator ? `<span class="locator">${esc(c.locator)}.</span>` : ''}
         <span class="identifiers">${ids.join(' · ')}</span>
         ${mark}

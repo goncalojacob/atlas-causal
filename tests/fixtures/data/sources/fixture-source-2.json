@@ -20,6 +20,13 @@
   ],
   "title": "Fixture source 2",
   "year": 2002,
+  "container": {
+    "title": "Fixture Journal of Nowhere",
+    "kind": "journal",
+    "volume": "12",
+    "issue": "3",
+    "pages": "45-67"
+  },
   "publisher": null,
   "isbn": null,
   "doi": "10.0000/fixture-2",

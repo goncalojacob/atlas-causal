@@ -238,6 +238,13 @@
           "locator": null
         }
       ],
+      "container": {
+        "issue": "3",
+        "kind": "journal",
+        "pages": "45-67",
+        "title": "Fixture Journal of Nowhere",
+        "volume": "12"
+      },
       "created": "2026-01-01",
       "creators": [
         "Fixture Author Two"

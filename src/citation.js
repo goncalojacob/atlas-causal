@@ -22,6 +22,33 @@ export const CITER_LABEL = Object.freeze({
 // set does not have yet simply never appears.
 export const CITER_ORDER = Object.freeze(['event', 'edge', 'actor', 'relation', 'place', 'presence', 'narrative']);
 
+// The four things a work can be inside. A closed list, like the edge types
+// and for the same reason: "in something" would collapse an article in a
+// journal and a chapter in a book into one shape, and they are not cited
+// alike.
+export const CONTAINER_KINDS = Object.freeze(['journal', 'edited-volume', 'series', 'website']);
+
+// The containing work, as the middle of a citation: everything between this
+// work's title and its publisher.
+//
+//   journal        "Journal of Portuguese History, 12(3), 45-67."
+//   edited-volume  "In The Cambridge History of Portugal, 45-67."
+//   series         "Documentos Ultramarinos, 4."
+//   website        "Arquivo.pt."
+//
+// One rule and not four: the volume and the issue read as "12(3)" wherever
+// both are there, the pages come last, and only an edited volume takes the
+// "In" that says this work is a part of that one. Empty when there is no
+// container, which is every source record written before M28.
+export function containerText(container) {
+  if (!container?.title) return '';
+  const parts = [container.kind === 'edited-volume' ? `In ${container.title}` : container.title];
+  if (container.volume) parts.push(container.issue ? `${container.volume}(${container.issue})` : `${container.volume}`);
+  else if (container.issue) parts.push(`(${container.issue})`);
+  if (container.pages) parts.push(container.pages);
+  return `${parts.join(', ')}.`;
+}
+
 // "Maxwell, K. (1995). The Making of Portuguese Democracy. Cambridge
 // University Press." — the citation as the record has it, in one string, for
 // a title attribute or a plain-text list. The card lays the same pieces out
@@ -32,6 +59,10 @@ export function citationText(source) {
   if (creators) parts.push(source.year ? `${creators} (${source.year}).` : `${creators}.`);
   else if (source.year) parts.push(`(${source.year}).`);
   parts.push(`${source.title}.`);
+  // After this work's title and before its publisher, which is where a
+  // reader looks for "and where did that appear?".
+  const inside = containerText(source.container);
+  if (inside) parts.push(inside);
   if (source.publisher) parts.push(`${source.publisher}.`);
   if (source.repository) parts.push(`${source.repository}${source.reference ? `, ${source.reference}` : ''}.`);
   return parts.join(' ');

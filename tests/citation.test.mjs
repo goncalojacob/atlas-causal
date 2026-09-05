@@ -7,7 +7,11 @@ import path from 'node:path';
 import { readFile } from 'node:fs/promises';
 import { buildIndex } from '../tools/build-index.mjs';
 import { buildTopology, citationsBySource } from '../src/validate/core.js';
-import { citationText, identifiers, compareSources, groupCiters, CITER_ORDER } from '../src/citation.js';
+import {
+  citationText, containerText, identifiers, compareSources, groupCiters,
+  CITER_ORDER, CONTAINER_KINDS,
+} from '../src/citation.js';
+import { bibliographyHtml } from '../src/sources/bibliography.js';
 import { FIXTURE_DATA, ROOT, fixtures } from './helpers.mjs';
 
 async function repositorySources() {
@@ -102,6 +106,69 @@ test('citationText and identifiers say what the record has and no more', () => {
   const archive = { id: 'b', creators: ['x'], title: 'A letter', repository: 'Torre do Tombo', reference: 'mç. 3' };
   assert.equal(citationText(archive), 'x. A letter. Torre do Tombo, mç. 3.');
   assert.deepEqual(identifiers(archive), [{ kind: 'repository', label: 'Torre do Tombo, mç. 3', href: null }]);
+});
+
+test('the four containing works, each in the form its kind is cited in', () => {
+  assert.deepEqual([...CONTAINER_KINDS], ['journal', 'edited-volume', 'series', 'website']);
+
+  // An article in a journal: the journal, the volume with the issue in
+  // brackets, then the pages.
+  assert.equal(
+    containerText({ title: 'Journal of Portuguese History', kind: 'journal', volume: '12', issue: '3', pages: '45-67' }),
+    'Journal of Portuguese History, 12(3), 45-67.',
+  );
+  // A chapter in an edited volume is a part of it, and only that kind says so.
+  assert.equal(
+    containerText({ title: 'The Cambridge History of Portugal', kind: 'edited-volume', pages: '45-67' }),
+    'In The Cambridge History of Portugal, 45-67.',
+  );
+  // A number in a series; a page on a site.
+  assert.equal(containerText({ title: 'Documentos Ultramarinos', kind: 'series', volume: '4' }), 'Documentos Ultramarinos, 4.');
+  assert.equal(containerText({ title: 'Arquivo.pt', kind: 'website' }), 'Arquivo.pt.');
+  // The parts that are missing are simply not said.
+  assert.equal(containerText({ title: 'Análise Social', kind: 'journal', issue: '211' }), 'Análise Social, (211).');
+  assert.equal(containerText({ title: 'Análise Social', kind: 'journal' }), 'Análise Social.');
+  // No container, and no half of one: nothing at all.
+  assert.equal(containerText(undefined), '');
+  assert.equal(containerText(null), '');
+  assert.equal(containerText({ kind: 'journal', volume: '12' }), '');
+});
+
+test('a container falls between this work\'s title and its publisher', () => {
+  const chapter = {
+    id: 'c', creators: ['Kenneth Maxwell'], year: 1995, title: 'The emergence of Portuguese democracy',
+    container: { title: 'The Cambridge History of Portugal', kind: 'edited-volume', pages: '45-67' },
+    publisher: 'Cambridge University Press',
+  };
+  assert.equal(
+    citationText(chapter),
+    'Kenneth Maxwell (1995). The emergence of Portuguese democracy. In The Cambridge History of Portugal, 45-67. Cambridge University Press.',
+  );
+  const article = {
+    id: 'a', creators: ['A. Author'], year: 2002, title: 'A paper',
+    container: { title: 'Journal of Portuguese History', kind: 'journal', volume: '12', issue: '3', pages: '45-67' },
+    publisher: null,
+  };
+  assert.equal(citationText(article), 'A. Author (2002). A paper. Journal of Portuguese History, 12(3), 45-67.');
+  // And a work that stands alone reads exactly as it did before the field
+  // existed, which is what every source record in data/ is.
+  const { container, ...alone } = article;
+  assert.equal(citationText(alone), 'A. Author (2002). A paper.');
+});
+
+test('the fixture article carries a container and the bibliography prints it', async () => {
+  const fx = await fixtures();
+  const source = fx.byId['fixture-source-2'];
+  assert.equal(source.container.kind, 'journal');
+  assert.equal(
+    citationText(source),
+    'Fixture Author Two (2002). Fixture source 2. Fixture Journal of Nowhere, 12(3), 45-67.',
+  );
+  // Through the built index, which is what sources.html actually reads.
+  const built = await buildIndex(FIXTURE_DATA);
+  const indexed = built.topology.sources.find((s) => s.id === 'fixture-source-2');
+  assert.deepEqual(indexed.container, source.container, 'the index carries it whole');
+  assert.match(bibliographyHtml(built.topology.sources), /Fixture Journal of Nowhere, 12\(3\), 45-67\./);
 });
 
 test('a bibliography is ordered by creator, year, title, id', () => {

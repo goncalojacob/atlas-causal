@@ -449,6 +449,56 @@ test('the full entry is a field on the three kinds that have a page, and an empt
   assert.equal(valuesFromRecord('place', buildRecord('place', values, CONTEXT)).body, '');
 });
 
+test('a source names the work it is inside, and no container is written when it is not', async () => {
+  // The five fields the form and the review editor both get, since both are
+  // built from FIELDS.
+  const keys = FIELDS.source.map((f) => f.key);
+  for (const key of ['containerTitle', 'containerKind', 'volume', 'issue', 'pages']) {
+    assert.ok(keys.includes(key), key);
+  }
+  assert.deepEqual(
+    FIELDS.source.find((f) => f.key === 'containerKind').options,
+    ['', 'journal', 'edited-volume', 'series', 'website'],
+  );
+
+  const base = { ...emptyValues('source'), id: 'fixture-source-new', type: 'article', creators: 'A. Author', title: 'A paper' };
+  // Nothing named: no key at all, so a work that stands alone looks exactly
+  // as it did before the field existed.
+  assert.equal(Object.hasOwn(buildRecord('source', base, CONTEXT), 'container'), false);
+  assert.equal(Object.hasOwn(buildRecord('source', { ...base, containerTitle: '  ' }, CONTEXT), 'container'), false);
+
+  const article = buildRecord('source', {
+    ...base, containerTitle: 'Journal of Portuguese History', containerKind: 'journal',
+    volume: '12', issue: '3', pages: '45-67',
+  }, CONTEXT);
+  assert.deepEqual(article.container, {
+    title: 'Journal of Portuguese History', kind: 'journal', volume: '12', issue: '3', pages: '45-67',
+  });
+  // The three optional parts are absent rather than null when nobody typed
+  // them, so a record carries only what it says.
+  const chapter = buildRecord('source', {
+    ...base, type: 'chapter', containerTitle: 'The Cambridge History of Portugal', containerKind: 'edited-volume',
+  }, CONTEXT);
+  assert.deepEqual(chapter.container, { title: 'The Cambridge History of Portugal', kind: 'edited-volume' });
+
+  // A named container with no kind is written as it stands, so the schema
+  // reports it at /container/kind and the form puts the message on the field
+  // rather than this guessing which of the four it is.
+  const guessed = buildRecord('source', { ...base, containerTitle: 'Somewhere' }, CONTEXT);
+  assert.equal(guessed.container.kind, '');
+  const v = createValidator(await schemas());
+  assert.deepEqual(v.validate('v1/source.json', article), []);
+  assert.deepEqual(v.validate('v1/source.json', chapter), []);
+  const problems = v.validate('v1/source.json', guessed);
+  assert.ok(problems.some((p) => p.path.startsWith('/container')), JSON.stringify(problems));
+
+  // And out through the form's fields again, unchanged.
+  assert.deepEqual(valuesFromRecord('source', article), { ...base, id: article.id, ...{
+    containerTitle: 'Journal of Portuguese History', containerKind: 'journal', volume: '12', issue: '3', pages: '45-67',
+  } });
+  assert.deepEqual(applyValues('source', article, valuesFromRecord('source', article)), article);
+});
+
 test('an entry survives a save through the dashboard, and an absent one stays absent', async () => {
   const { byId } = await fixtures();
   const withEntry = byId['fixture-event-a'];
