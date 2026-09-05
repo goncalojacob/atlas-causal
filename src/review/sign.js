@@ -63,6 +63,14 @@ export function retractRecord(record, { today } = {}) {
 // one. An actor, a place or a source is different — the records that point at
 // it would have to be rewritten, not retracted — so those come back as
 // blockers and the dashboard says so instead of cascading.
+//
+// `topology.citers` is the one thing this reads that the spine does not
+// carry: a source's citer rows, pre-fetched. A dashboard that has already
+// fetched `citers-<hash>/<id>.json` for the source in hand passes it here as
+// `{ <source id>: rows }` or a Map, and the plan answers off that file alone
+// — it reads `kind` and `id` and nothing else, which is what lets the rows
+// leave the sources index every page loads whole (h3a-brief, A7). Without it
+// the rows come from `topology.sources`, as they do today.
 export function retractionPlan(record, topology = {}) {
   const retract = [];
   const blockers = [];
@@ -75,6 +83,11 @@ export function retractionPlan(record, topology = {}) {
 
   const active = (list) => (list ?? []).filter((r) => r.status === 'active');
   const walkers = (id) => active(topology.narratives).filter((n) => (n.steps ?? []).some((s) => s?.ref === id));
+  // The one citer file, if a caller has it; otherwise the whole index.
+  const citerRows = (id, { citers, sources }) => {
+    if (citers) return (citers instanceof Map ? citers.get(id) : citers[id]) ?? [];
+    return active(sources).find((s) => s.id === id)?.citations ?? [];
+  };
 
   if (record.kind === 'event') {
     for (const edge of active(topology.edges)) {
@@ -101,10 +114,7 @@ export function retractionPlan(record, topology = {}) {
       if (e.place === record.id) blockers.push({ kind: 'event', id: e.id, why: 'happens here' });
     }
   } else if (record.kind === 'source') {
-    for (const s of active(topology.sources)) {
-      if (s.id !== record.id) continue;
-      for (const c of s.citations ?? []) blockers.push({ kind: c.kind, id: c.id, why: 'cites this source' });
-    }
+    for (const c of citerRows(record.id, topology)) blockers.push({ kind: c.kind, id: c.id, why: 'cites this source' });
   }
 
   retract.sort((a, b) => (a.id < b.id ? -1 : a.id > b.id ? 1 : 0));
