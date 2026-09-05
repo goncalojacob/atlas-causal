@@ -6,9 +6,17 @@
 // Null is the world: no box, no filtering, which is what the pin restores.
 //
 // An event has no coordinates of its own — its place holds the point — so the
-// places are passed in rather than reached for. An event whose place is
-// missing is *not* in view: the box is a question about where something is,
-// and a record that does not say where cannot answer it.
+// places are passed in rather than reached for.
+//
+// An event with no place answers with its region instead. Fifty-one of the
+// atlas's active events are long processes with no honest point, and they
+// used to leave the lanes the moment the map was touched — "86 of 137 events
+// in view" for the whole world (health review B, finding 15). A region's
+// bounding box is a coarse answer and deliberately a generous one: it is
+// better to leave a process listed while looking somewhere it barely reaches
+// than to hide it while looking straight at it. The boxes come from
+// `data/geo/regions.json`, derived at load (util/geo.js); an event with
+// neither a place nor a known region still cannot answer, and is not in view.
 
 export function containsPoint(bbox, point) {
   if (!bbox) return true;
@@ -33,9 +41,33 @@ export function pointOfEvent(event, places) {
   return place?.where ?? null;
 }
 
-export function inView(event, bbox, places) {
+// Do two boxes share any ground? `bbox` is the viewport's and may be written
+// wrapped, as containsPoint's is; a region's box comes from polygons and is
+// never inside out.
+export function boxesOverlap(bbox, box) {
   if (!bbox) return true;
-  return containsPoint(bbox, pointOfEvent(event, places));
+  if (!Array.isArray(box) || box.length !== 4 || box.some((v) => !Number.isFinite(v))) return false;
+  const [west, south, east, north] = bbox;
+  const [w, s, e, n] = box;
+  if (n < south || s > north) return false;
+  return west <= east
+    ? w <= east && e >= west
+    : w <= east || e >= west;
+}
+
+// `regions` is a Map of region id → box, or anything with a .get, or a plain
+// object of them; null when the caller has none, which is the old behaviour.
+export function regionBoxOf(event, regions) {
+  const id = typeof event?.region === 'string' ? event.region : null;
+  if (id === null || !regions) return null;
+  return (typeof regions.get === 'function' ? regions.get(id) : regions[id]) ?? null;
+}
+
+export function inView(event, bbox, places, regions = null) {
+  if (!bbox) return true;
+  const point = pointOfEvent(event, places);
+  if (point) return containsPoint(bbox, point);
+  return boxesOverlap(bbox, regionBoxOf(event, regions));
 }
 
 // The events the lanes draw while the map is looking at a box: what is
@@ -43,7 +75,7 @@ export function inView(event, bbox, places) {
 // event and the steps of the walked chain — a chain that runs off the edge of
 // the screen is still a chain, and a timeline that dropped its middle would
 // be telling the reader they had not walked it.
-export function eventsInView(events, bbox, places, { keep = null } = {}) {
+export function eventsInView(events, bbox, places, { keep = null, regions = null } = {}) {
   if (!bbox) return events;
-  return events.filter((event) => inView(event, bbox, places) || Boolean(keep?.has(event.id)));
+  return events.filter((event) => inView(event, bbox, places, regions) || Boolean(keep?.has(event.id)));
 }

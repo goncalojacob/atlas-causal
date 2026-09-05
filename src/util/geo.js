@@ -67,18 +67,51 @@ export function distanceToGeometry(point, geometry) {
   return best;
 }
 
-function bbox(geometry) {
+// `[west, south, east, north]` of a Polygon or a MultiPolygon, from the outer
+// rings: a hole is inside the outer ring by definition and cannot widen the
+// box. Null for a geometry with no ring at all rather than a box of
+// infinities, so a caller can tell "nowhere" from "everywhere".
+export function bbox(geometry) {
   const box = [Infinity, Infinity, -Infinity, -Infinity];
-  const polygons = geometry.type === 'Polygon' ? [geometry.coordinates] : geometry.coordinates;
+  const polygons = geometry?.type === 'Polygon' ? [geometry.coordinates]
+    : geometry?.type === 'MultiPolygon' ? geometry.coordinates : [];
   for (const polygon of polygons) {
-    for (const [x, y] of polygon[0]) {
+    for (const [x, y] of polygon?.[0] ?? []) {
       if (x < box[0]) box[0] = x;
       if (y < box[1]) box[1] = y;
       if (x > box[2]) box[2] = x;
       if (y > box[3]) box[3] = y;
     }
   }
-  return box;
+  return box.every(Number.isFinite) ? box : null;
+}
+
+// One box per region, from `data/geo/regions.json` — the same file the lane
+// derivation reads at index time, read again by the browser at load.
+//
+// Derived here and never written into `data/index/`: two branches that both
+// rebuilt the hashed index could not merge (review of the health plan,
+// finding 11), and a box in the manifest would be a derived fact stored
+// beside the records it was derived from.
+//
+// It is a box and not the polygon, which is coarse where a region wraps: the
+// Russian Far East puts `europe`'s box across the whole northern strip, so a
+// placeless European process is in view almost wherever the map is looking.
+// That errs towards showing a record rather than hiding one, which is the
+// direction this whole rule exists to correct.
+export function regionBounds(collection) {
+  const out = new Map();
+  for (const feature of collection?.features ?? []) {
+    const id = feature?.properties?.region;
+    if (typeof id !== 'string' || !feature.geometry) continue;
+    const box = bbox(feature.geometry);
+    if (!box) continue;
+    const held = out.get(id);
+    out.set(id, held
+      ? [Math.min(held[0], box[0]), Math.min(held[1], box[1]), Math.max(held[2], box[2]), Math.max(held[3], box[3])]
+      : box);
+  }
+  return out;
 }
 
 // polygons: a GeoJSON FeatureCollection whose features carry
@@ -87,7 +120,9 @@ function bbox(geometry) {
 export function createRegionDeriver(polygons, { tolerance = NEAREST_TOLERANCE } = {}) {
   const lanes = (polygons?.features ?? [])
     .filter((f) => f.geometry && f.properties && typeof f.properties.region === 'string')
-    .map((f) => ({ region: f.properties.region, geometry: f.geometry, box: bbox(f.geometry) }));
+    .map((f) => ({ region: f.properties.region, geometry: f.geometry, box: bbox(f.geometry) }))
+    // A feature with no ring has no box and no inside; it cannot answer.
+    .filter((lane) => lane.box);
 
   return function deriveRegion(where) {
     if (!where || typeof where.lon !== 'number' || typeof where.lat !== 'number') return null;

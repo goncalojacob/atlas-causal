@@ -10,6 +10,7 @@
 import { buildAdjacency } from './graph.js';
 import { narrativeEventIds } from './narrative.js';
 import { extent as intervalExtent } from './util/dates.js';
+import { regionBounds } from './util/geo.js';
 
 async function defaultFetchJson(url, init) {
   const response = await fetch(url, init);
@@ -18,7 +19,10 @@ async function defaultFetchJson(url, init) {
 }
 
 // Pure assembly from already-loaded pieces; loadAtlas() does the fetching.
-export function createAtlas({ manifest, topology, sources, land = null, palette = null, dataRoot = 'data/', fetchJson = defaultFetchJson }) {
+export function createAtlas({
+  manifest, topology, sources, land = null, palette = null, regionBoxes = null,
+  dataRoot = 'data/', fetchJson = defaultFetchJson,
+}) {
   const events = new Map(topology.events.map((e) => [e.id, e]));
   const edges = new Map(topology.edges.map((e) => [e.id, e]));
   const sourceMap = new Map(sources.map((s) => [s.id, s]));
@@ -268,6 +272,11 @@ export function createAtlas({ manifest, topology, sources, land = null, palette 
   return {
     manifest,
     regions: [...manifest.regions].sort((a, b) => a.order - b.order),
+    // One box per region, for the events with no place: derived from
+    // `data/geo/regions.json` at load and never from the index (util/geo.js).
+    // Empty when the file did not arrive, which puts those events back where
+    // they were rather than taking the atlas down with it.
+    regionBoxes: regionBoxes ?? new Map(),
     presences,
     presencesByActor,
     dependenciesOf,
@@ -348,5 +357,14 @@ export async function loadAtlas({ dataRoot = 'data/', landFile = null, fetchJson
   // first frame it draws territories in, so it comes with the topology rather
   // than with the shard whose outlines it colours.
   const palette = manifest.palette ? await fetchJson(`${dataRoot}${manifest.palette}`) : null;
-  return createAtlas({ manifest, topology, sources: sourcesIndex.sources, land, palette, dataRoot, fetchJson });
+  // The lane polygons, for the box of each region. A placeless event answers
+  // "am I in view" with its region, so the boxes have to be in hand before the
+  // first frame; a dataset without the file simply has none, and the events
+  // with no place stay out of a box as they were.
+  const regionBoxes = await fetchJson(`${dataRoot}geo/regions.json`)
+    .then((collection) => regionBounds(collection))
+    .catch(() => new Map());
+  return createAtlas({
+    manifest, topology, sources: sourcesIndex.sources, land, palette, regionBoxes, dataRoot, fetchJson,
+  });
 }

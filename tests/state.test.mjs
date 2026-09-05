@@ -246,6 +246,11 @@ test('a bbox that is not one is the world again', () => {
   assert.equal(parseState('?bbox=-10,36,-10,43').bbox, null, 'a box with no width is not a box');
   assert.equal(parseBbox('-10,43,-6,36')[1], 36, 'the ends the wrong way round are still a box');
   assert.deepEqual(parseBbox('-400,36,400,43'), [-180, 36, 180, 43], 'wider than the world is the world');
+  // And the world itself is not a box: it is the absence of one, which is what
+  // the timeline's pin restores (health review B, finding 15).
+  assert.equal(parseBbox('-180,-90,180,90'), null);
+  assert.equal(parseBbox('-400,-200,400,200'), null, 'and so is anything that contains it');
+  assert.equal(parseState('?bbox=-180,-90,180,90').bbox, null);
 });
 
 // The wheel over the timeline: the band narrows and widens around the year

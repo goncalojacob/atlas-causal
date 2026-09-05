@@ -3,7 +3,9 @@
 
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { inView, containsPoint, pointOfEvent, eventsInView } from '../src/util/viewport.js';
+import {
+  inView, containsPoint, pointOfEvent, eventsInView, boxesOverlap, regionBoxOf,
+} from '../src/util/viewport.js';
 import {
   createProjection, fitBounds, viewBbox, viewBboxIn, bboxTransform, WORLD,
 } from '../src/map/projection.js';
@@ -33,6 +35,41 @@ test('an event that does not say where is not in view', () => {
   assert.equal(inView(event('e', 'nowhere'), PORTUGAL, places), false, 'a place with no point');
   // But with no box there is nothing to be outside of.
   assert.equal(inView(event('c', null), null, places), true);
+});
+
+// --- an event with no place answers with its region -----------------------
+
+const REGIONS = new Map([['europe', [-11, 35, 40, 71]], ['asia', [26, -11, 146, 55]]]);
+const process = (id, region) => ({ id, place: null, region });
+
+test('two boxes overlap when they share ground, edges included', () => {
+  assert.equal(boxesOverlap(PORTUGAL, [-8, 38, 20, 50]), true);
+  assert.equal(boxesOverlap(PORTUGAL, [-6, 43, 20, 50]), true, 'touching at a corner is sharing it');
+  assert.equal(boxesOverlap(PORTUGAL, [0, 38, 20, 50]), false, 'east of it');
+  assert.equal(boxesOverlap(PORTUGAL, [-9, 10, -7, 20]), false, 'south of it');
+  // No box is the world; anything that is not a box is nowhere.
+  assert.equal(boxesOverlap(null, [0, 0, 1, 1]), true);
+  assert.equal(boxesOverlap(PORTUGAL, null), false);
+  assert.equal(boxesOverlap(PORTUGAL, [0, 0, 1]), false);
+  // A viewport written wrapped means the strip it names, as containsPoint does.
+  assert.equal(boxesOverlap([170, -10, -170, 10], [175, -5, 179, 5]), true);
+  assert.equal(boxesOverlap([170, -10, -170, 10], [-179, -5, -175, 5]), true);
+  assert.equal(boxesOverlap([170, -10, -170, 10], [0, -5, 10, 5]), false);
+});
+
+test('an event with no place is in view when its region\'s box is', () => {
+  assert.equal(inView(process('a', 'europe'), PORTUGAL, places, REGIONS), true);
+  assert.equal(inView(process('b', 'asia'), PORTUGAL, places, REGIONS), false);
+  // With no boxes in hand it is the old answer: a record that does not say
+  // where cannot answer the question.
+  assert.equal(inView(process('a', 'europe'), PORTUGAL, places), false);
+  assert.equal(inView(process('c', 'atlantis'), PORTUGAL, places, REGIONS), false, 'a region with no box');
+  assert.equal(inView(process('d', null), PORTUGAL, places, REGIONS), false, 'and no region at all');
+  // A place always wins: the point is the finer answer of the two.
+  assert.equal(inView({ id: 'e', place: 'goa', region: 'europe' }, PORTUGAL, places, REGIONS), false);
+  // The boxes may be a plain object, as the places may.
+  assert.equal(inView(process('a', 'europe'), PORTUGAL, places, { europe: [-11, 35, 40, 71] }), true);
+  assert.equal(regionBoxOf(process('a', 'europe'), null), null);
 });
 
 test('the places may be a plain object as well as a Map', () => {
@@ -162,4 +199,31 @@ test('a box over Portugal draws exactly the events placed in Portugal', async ()
   const kept = eventsInView(atlas.activeEvents, box, atlas.places, { keep: new Set([outside.id]) });
   assert.equal(kept.length, expected.length + 1);
   assert.ok(kept.some((e) => e.id === outside.id));
+});
+
+// The other half of the same assertion, on `data/`: the fifty-one active
+// events with no place used to leave the lanes the moment the map was
+// touched, and the box over Portugal is the case the reader meets first.
+test('the placeless events answer with the region boxes the atlas loaded', async () => {
+  const fetchJson = async (url) => JSON.parse(await readFile(path.join(ROOT, url.split('?')[0]), 'utf8'));
+  const atlas = await loadAtlas({ dataRoot: 'data/', fetchJson });
+  const box = [-10, 36, -6, 43];
+
+  assert.deepEqual([...atlas.regionBoxes.keys()].sort(), ['africa', 'americas', 'asia', 'europe', 'oceania']);
+  const placeless = atlas.activeEvents.filter((e) => !atlas.pointOf(e));
+  assert.ok(placeless.length > 0, 'the atlas has events with no place');
+  assert.ok(placeless.every((e) => atlas.regionBoxes.has(e.region)), 'and every one of them names a region');
+
+  const drawn = eventsInView(atlas.activeEvents, box, atlas.places, { regions: atlas.regionBoxes });
+  const withoutRegions = eventsInView(atlas.activeEvents, box, atlas.places);
+  assert.ok(drawn.length > withoutRegions.length, 'the boxes bring the placeless events back');
+  const european = placeless.filter((e) => e.region === 'europe');
+  assert.ok(european.length > 0);
+  for (const event of european) {
+    assert.ok(drawn.some((e) => e.id === event.id), `${event.id} is in view over Portugal`);
+  }
+  // And a box far from a region does not draw its processes: nothing here is
+  // in view of every box.
+  const pacific = eventsInView(atlas.activeEvents, [-150, -30, -120, -10], atlas.places, { regions: atlas.regionBoxes });
+  assert.ok(pacific.length < drawn.length);
 });

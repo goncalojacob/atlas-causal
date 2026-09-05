@@ -139,3 +139,49 @@ test('a click on a mark out in the letterbox selects it, and a pan follows the c
     );
   });
 });
+
+// --- the world is not a box, and a placeless event answers with its region --
+
+const TIMELINE = `return {
+  search: location.search,
+  filtered: !document.querySelector('.timeline-note').hidden,
+  note: document.querySelector('.timeline-note span').textContent,
+  bars: [...document.querySelectorAll('#timeline rect.bar[data-id]')]
+    .map((el) => el.getAttribute('data-id')).sort(),
+};`;
+
+// The eleven active fixture events. Ten of them have a place; fixture-event-f
+// is the long process with none, in fixture-lane-3, whose polygon covers
+// 10 … 40 east.
+const ACTIVE = [
+  'fixture-event-a', 'fixture-event-a2', 'fixture-event-b', 'fixture-event-c',
+  'fixture-event-d', 'fixture-event-e', 'fixture-event-f', 'fixture-event-g',
+  'fixture-event-h', 'fixture-event-o', 'fixture-event-t',
+];
+
+test('the whole world is no box at all, and the lanes carry every active event', { skip }, async () => {
+  await wide(async (page, url) => {
+    await open(page, url('?fixtures=1&bbox=-180,-90,180,90'), READY);
+    const shown = await page.eval(TIMELINE);
+    assert.equal(shown.search, '?fixtures=1', 'the world box does not survive being read');
+    assert.equal(shown.filtered, false, 'so the lanes are not filtered and the pin is not offered');
+    assert.deepEqual(shown.bars, ACTIVE);
+  });
+});
+
+test('an event with no place is in view when its region\'s box is', { skip }, async () => {
+  await wide(async (page, url) => {
+    // A box inside fixture-lane-3, which is where the placeless event is.
+    await open(page, url('?fixtures=1&bbox=15,0,35,40'), READY);
+    let shown = await page.eval(TIMELINE);
+    assert.equal(shown.filtered, true);
+    assert.equal(shown.note, '3 of 11 events in view');
+    assert.ok(shown.bars.includes('fixture-event-f'), 'the placeless process is in the lanes');
+
+    // And a box in fixture-lane-1, which is not.
+    await open(page, url('?fixtures=1&bbox=-40,20,-10,50'), READY);
+    shown = await page.eval(TIMELINE);
+    assert.equal(shown.note, '5 of 11 events in view');
+    assert.ok(!shown.bars.includes('fixture-event-f'), 'and out of them when the map is elsewhere');
+  });
+});

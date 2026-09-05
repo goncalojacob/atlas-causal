@@ -106,6 +106,13 @@ const clamp = (n, min, max) => Math.min(max, Math.max(min, n));
 // numbers or is inside out. A view wider than the world is clamped to the
 // world rather than refused: the map lets the reader zoom out past the
 // coastlines, and that view is still a view.
+//
+// And the world itself is not a box. `?bbox=-180,-90,180,90` said "the map is
+// looking at part of the world" about the whole of it: the lanes were
+// filtered, the note appeared, and every event with no place fell out
+// (health review B, finding 15). The absence of a box is what "the world"
+// means here — it is what the timeline's pin restores — so the one rule lives
+// in the one place a box is made, and a pan can no longer write it.
 export function normalizeBbox(box) {
   const n = Array.isArray(box) ? box.map(Number) : [];
   if (n.length !== 4 || n.some((v) => !Number.isFinite(v))) return null;
@@ -114,6 +121,7 @@ export function normalizeBbox(box) {
   const south = clamp(Math.min(n[1], n[3]), -90, 90);
   const north = clamp(Math.max(n[1], n[3]), -90, 90);
   if (west === east || south === north) return null;
+  if (west === -180 && east === 180 && south === -90 && north === 90) return null;
   return [round2(west), round2(south), round2(east), round2(north)];
 }
 

@@ -360,7 +360,7 @@ export function createTimeline(container, { atlas, state, createScale = createLi
     // and never from the lens (viewport.js).
     const held = new Set(pathIds);
     if (s.selected) held.add(s.selected);
-    const shown = eventsInView(inLens, s.bbox, atlas.places, { keep: held });
+    const shown = eventsInView(inLens, s.bbox, atlas.places, { keep: held, regions: atlas.regionBoxes });
     note.hidden = !s.bbox;
     if (s.bbox) {
       const n = shown.length;
