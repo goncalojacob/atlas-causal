@@ -45,6 +45,15 @@ test('two builds of the repository name and write exactly the same files', async
     assert.ok(Object.hasOwn(first.files, path.basename(manifest.files[key])), key);
   }
   assert.match(manifest.files.citers, /^index\/citers-[0-9a-f]{12}$/);
+  // The queue's shards are named in the summary and not in the manifest,
+  // which is fetched no-store on every page load and would otherwise carry a
+  // line per kind for a page most readers never open.
+  assert.equal(manifest.files.history, 'index/history');
+  const summary = JSON.parse(first.files[path.basename(manifest.files.review)]);
+  for (const { kind, file } of summary.kinds) {
+    assert.match(file, new RegExp(`^index/review-${kind}-[0-9a-f]{12}\\.json$`));
+    assert.ok(Object.hasOwn(first.files, path.basename(file)), file);
+  }
 });
 
 test('key order and file order in the source records do not change the bytes', async () => {
@@ -56,8 +65,12 @@ test('key order and file order in the source records do not change the bytes', a
       const shuffled = Object.fromEntries(Object.entries(record).reverse());
       await writeFile(path.join(events, name), JSON.stringify(shuffled));
     }
-    const shuffledBuild = await buildIndex(dir);
-    const reference = await buildIndex(FIXTURE_DATA);
+    // Without git on either side: a temporary copy is in no repository, so
+    // its histories would fall back to the records' own dates while the
+    // fixtures' come out of this one's commits. What this test is about is
+    // the record bytes.
+    const shuffledBuild = await buildIndex(dir, { git: false });
+    const reference = await buildIndex(FIXTURE_DATA, { git: false });
     assert.deepEqual(shuffledBuild.files, reference.files);
   } finally {
     await rm(dir, { recursive: true, force: true });
@@ -94,24 +107,52 @@ test('the review index lists the drafts, the count and the warnings', async () =
   const built = await buildIndex(path.join(ROOT, 'data'));
   const manifest = JSON.parse(built.files['manifest.json']);
   assert.match(manifest.files.review, /^index\/review-[0-9a-f]{12}\.json$/);
-  const review = JSON.parse(built.files[path.basename(manifest.files.review)]);
+  const summary = JSON.parse(built.files[path.basename(manifest.files.review)]);
   const { entries } = await readRecords(path.join(ROOT, 'data'));
   const records = entries.map((e) => e.record);
   const regions = await readRegions(path.join(ROOT, 'data'));
   const drafts = records.filter(isDraft);
   // The number the page reports is the validator's own, not a second count.
-  assert.equal(review.records.length, drafts.length);
-  assert.deepEqual(review.records.map((r) => r.id).sort(), drafts.map((r) => r.id).sort());
-  assert.equal(review.total, records.filter((r) => r.kind !== 'presence').length);
+  assert.equal(summary.drafts, drafts.length);
+  assert.equal(summary.total, records.filter((r) => r.kind !== 'presence').length);
+  assert.equal(summary.kinds.reduce((sum, k) => sum + k.count, 0), drafts.length);
+
+  // One file per kind, and between them every draft exactly once: the page
+  // fetches the kind it is showing and not eleven megabytes of the rest
+  // (health review B, finding 7).
+  const shards = summary.kinds.map((k) => JSON.parse(built.files[path.basename(k.file)]));
+  const digests = shards.flatMap((shard) => shard.records);
+  assert.deepEqual(digests.map((r) => r.id).sort(), drafts.map((r) => r.id).sort());
+  for (const [i, shard] of shards.entries()) {
+    assert.equal(shard.kind, summary.kinds[i].kind);
+    assert.equal(shard.records.length, summary.kinds[i].count);
+    assert.ok(shard.records.every((r) => r.kind === shard.kind), `${shard.kind} shard holds only its own kind`);
+  }
+
+  // A shard carries the warnings about its own drafts: what the list puts on
+  // a row, and nothing about records nobody is waiting on.
   const rules = checkRules(records, buildTopology(records, regions));
-  assert.deepEqual(review.warnings.map((w) => w.id).sort(), rules.warnings.map((w) => w.id).sort());
+  const draftIds = new Set(drafts.map((r) => r.id));
+  assert.deepEqual(
+    shards.flatMap((s) => s.warnings).map((w) => w.id).sort(),
+    rules.warnings.filter((w) => draftIds.has(w.id)).map((w) => w.id).sort(),
+  );
+
   // A digest carries what the list reads and nothing else: no prose, no
   // sources, no geometry — those arrive when a record is opened.
-  for (const digest of review.records) {
+  for (const digest of digests) {
     assert.ok(DIGEST_KEYS.includes('kind'));
     for (const key of Object.keys(digest)) assert.ok(DIGEST_KEYS.includes(key), `${digest.id} carries ${key}`);
   }
-  assert.deepEqual(buildQueue(review.records, review).length, drafts.length);
+  assert.deepEqual(buildQueue(digests, { warnings: shards.flatMap((s) => s.warnings) }).length, drafts.length);
+
+  // And one history file per reviewable record, which is what the dashboard
+  // fetches when it opens one.
+  const histories = Object.keys(built.files).filter((name) => name.startsWith('history/'));
+  assert.deepEqual(
+    histories.map((name) => name.slice('history/'.length, -'.json'.length)).sort(),
+    records.filter((r) => r.kind !== 'presence').map((r) => r.id).sort(),
+  );
 });
 
 test('weight counts active edges in and out plus the actors named', async () => {

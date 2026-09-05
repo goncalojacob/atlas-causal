@@ -1,0 +1,33 @@
+{
+  "from": "git",
+  "id": "euro-2016-final",
+  "kind": "event",
+  "schema": 1,
+  "versions": [
+    {
+      "first": true,
+      "on": "2026-09-03"
+    },
+    {
+      "fields": [
+        "review"
+      ],
+      "on": "2026-09-03"
+    },
+    {
+      "fields": [
+        "review",
+        "status"
+      ],
+      "on": "2026-09-04"
+    },
+    {
+      "fields": [
+        "origin",
+        "retraction",
+        "review"
+      ],
+      "on": "2026-09-04"
+    }
+  ]
+}

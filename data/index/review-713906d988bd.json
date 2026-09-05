@@ -1,0 +1,42 @@
+{
+  "drafts": 485,
+  "kinds": [
+    {
+      "count": 33,
+      "file": "index/review-source-1d6fb90083a3.json",
+      "kind": "source"
+    },
+    {
+      "count": 26,
+      "file": "index/review-place-91bb8323f659.json",
+      "kind": "place"
+    },
+    {
+      "count": 83,
+      "file": "index/review-actor-39cac0bc1c8c.json",
+      "kind": "actor"
+    },
+    {
+      "count": 138,
+      "file": "index/review-event-650518abf9bf.json",
+      "kind": "event"
+    },
+    {
+      "count": 161,
+      "file": "index/review-edge-929366b99340.json",
+      "kind": "edge"
+    },
+    {
+      "count": 43,
+      "file": "index/review-relation-451cbf467c63.json",
+      "kind": "relation"
+    },
+    {
+      "count": 1,
+      "file": "index/review-narrative-7de8aeba7f6f.json",
+      "kind": "narrative"
+    }
+  ],
+  "schema": 1,
+  "total": 1006
+}

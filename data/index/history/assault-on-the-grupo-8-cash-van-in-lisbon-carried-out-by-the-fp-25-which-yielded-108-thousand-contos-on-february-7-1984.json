@@ -1,0 +1,28 @@
+{
+  "from": "git",
+  "id": "assault-on-the-grupo-8-cash-van-in-lisbon-carried-out-by-the-fp-25-which-yielded-108-thousand-contos-on-february-7-1984",
+  "kind": "event",
+  "schema": 1,
+  "versions": [
+    {
+      "first": true,
+      "on": "2026-09-04"
+    },
+    {
+      "fields": [
+        "review",
+        "status"
+      ],
+      "on": "2026-09-04"
+    },
+    {
+      "fields": [
+        "origin",
+        "retraction",
+        "review",
+        "sitelinks"
+      ],
+      "on": "2026-09-04"
+    }
+  ]
+}

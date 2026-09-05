@@ -1,0 +1,40 @@
+{
+  "from": "git",
+  "id": "european-central-bank",
+  "kind": "actor",
+  "schema": 1,
+  "versions": [
+    {
+      "first": true,
+      "on": "2026-09-03"
+    },
+    {
+      "fields": [
+        "review"
+      ],
+      "on": "2026-09-03"
+    },
+    {
+      "fields": [
+        "review",
+        "wikidata"
+      ],
+      "on": "2026-09-03"
+    },
+    {
+      "fields": [
+        "sitelinks",
+        "wikipedia"
+      ],
+      "on": "2026-09-03"
+    },
+    {
+      "fields": [
+        "origin",
+        "review",
+        "sitelinks"
+      ],
+      "on": "2026-09-03"
+    }
+  ]
+}

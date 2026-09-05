@@ -1,0 +1,19 @@
+{
+  "from": "git",
+  "id": "guinea-bissau-declares-independence-1973--portugal-e-o-futuro-1974--caused",
+  "kind": "edge",
+  "schema": 1,
+  "versions": [
+    {
+      "first": true,
+      "on": "2026-09-02"
+    },
+    {
+      "fields": [
+        "origin",
+        "review"
+      ],
+      "on": "2026-09-02"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "from": "git",
+  "id": "2017-pedrogao-grande-wildfire",
+  "kind": "event",
+  "schema": 1,
+  "versions": [
+    {
+      "first": true,
+      "on": "2026-09-04"
+    },
+    {
+      "fields": [
+        "review",
+        "status",
+        "supersededBy"
+      ],
+      "on": "2026-09-04"
+    },
+    {
+      "fields": [
+        "origin",
+        "sitelinks"
+      ],
+      "on": "2026-09-04"
+    }
+  ]
+}

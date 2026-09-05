@@ -1,0 +1,40 @@
+{
+  "from": "git",
+  "id": "legiao-portuguesa",
+  "kind": "actor",
+  "schema": 1,
+  "versions": [
+    {
+      "first": true,
+      "on": "2026-09-02"
+    },
+    {
+      "fields": [
+        "summary"
+      ],
+      "on": "2026-09-02"
+    },
+    {
+      "fields": [
+        "review",
+        "wikidata"
+      ],
+      "on": "2026-09-02"
+    },
+    {
+      "fields": [
+        "sitelinks",
+        "wikipedia"
+      ],
+      "on": "2026-09-02"
+    },
+    {
+      "fields": [
+        "origin",
+        "review",
+        "sitelinks"
+      ],
+      "on": "2026-09-02"
+    }
+  ]
+}

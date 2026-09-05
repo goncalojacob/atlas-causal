@@ -1,0 +1,47 @@
+{
+  "from": "git",
+  "id": "battle-of-the-lys-1918",
+  "kind": "event",
+  "schema": 1,
+  "versions": [
+    {
+      "first": true,
+      "on": "2026-09-02"
+    },
+    {
+      "fields": [
+        "actors"
+      ],
+      "on": "2026-09-02"
+    },
+    {
+      "fields": [
+        "place",
+        "where"
+      ],
+      "on": "2026-09-02"
+    },
+    {
+      "fields": [
+        "sitelinks",
+        "wikidata",
+        "wikipedia"
+      ],
+      "on": "2026-09-02"
+    },
+    {
+      "fields": [
+        "summary"
+      ],
+      "on": "2026-09-02"
+    },
+    {
+      "fields": [
+        "origin",
+        "review",
+        "sitelinks"
+      ],
+      "on": "2026-09-02"
+    }
+  ]
+}

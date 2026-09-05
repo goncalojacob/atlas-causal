@@ -1,0 +1,27 @@
+{
+  "from": "git",
+  "id": "assault-on-the-santa-maria-steamship",
+  "kind": "event",
+  "schema": 1,
+  "versions": [
+    {
+      "first": true,
+      "on": "2026-09-04"
+    },
+    {
+      "fields": [
+        "review",
+        "status",
+        "supersededBy"
+      ],
+      "on": "2026-09-04"
+    },
+    {
+      "fields": [
+        "origin",
+        "sitelinks"
+      ],
+      "on": "2026-09-04"
+    }
+  ]
+}

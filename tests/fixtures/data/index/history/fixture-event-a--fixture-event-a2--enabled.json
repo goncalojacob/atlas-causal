@@ -1,0 +1,12 @@
+{
+  "from": "git",
+  "id": "fixture-event-a--fixture-event-a2--enabled",
+  "kind": "edge",
+  "schema": 1,
+  "versions": [
+    {
+      "first": true,
+      "on": "2026-01-01"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "from": "git",
+  "id": "fixture-place-a",
+  "kind": "place",
+  "schema": 1,
+  "versions": [
+    {
+      "first": true,
+      "on": "2026-09-03"
+    },
+    {
+      "fields": [
+        "sitelinks",
+        "wikidata",
+        "wikipedia"
+      ],
+      "on": "2026-09-03"
+    },
+    {
+      "fields": [
+        "sitelinks"
+      ],
+      "on": "2026-09-03"
+    }
+  ]
+}

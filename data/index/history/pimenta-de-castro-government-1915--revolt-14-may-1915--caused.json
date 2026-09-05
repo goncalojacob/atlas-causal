@@ -1,0 +1,19 @@
+{
+  "from": "git",
+  "id": "pimenta-de-castro-government-1915--revolt-14-may-1915--caused",
+  "kind": "edge",
+  "schema": 1,
+  "versions": [
+    {
+      "first": true,
+      "on": "2026-09-02"
+    },
+    {
+      "fields": [
+        "origin",
+        "review"
+      ],
+      "on": "2026-09-02"
+    }
+  ]
+}

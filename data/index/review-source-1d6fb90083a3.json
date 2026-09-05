@@ -1,0 +1,805 @@
+{
+  "kind": "source",
+  "records": [
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-03",
+      "degree": 2,
+      "doi": null,
+      "id": "ar-2024-fiftieth-anniversary",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Solemn session for the fiftieth anniversary of 25 April",
+      "type": "primary"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-03",
+      "degree": 3,
+      "doi": null,
+      "id": "ar-2025-confidence-vote",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Rejection of the motion of confidence tabled by the XXIV Constitutional Government",
+      "type": "primary"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-03",
+      "degree": 5,
+      "doi": null,
+      "id": "banco-de-portugal-2014-bes-resolution",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Resolution measure applied to Banco Espírito Santo, S.A.",
+      "type": "primary"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-03",
+      "degree": 5,
+      "doi": null,
+      "id": "cne-legislative-2015",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Official results, legislative election of 2015-10-04",
+      "type": "primary"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-03",
+      "degree": 6,
+      "doi": null,
+      "id": "cne-legislative-2019",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Official results, legislative election of 2019-10-06",
+      "type": "primary"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-03",
+      "degree": 4,
+      "doi": null,
+      "id": "cne-legislative-2022",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Official results, legislative election of 2022-01-30",
+      "type": "primary"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-03",
+      "degree": 9,
+      "doi": null,
+      "id": "cne-legislative-2024",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Official results, legislative election of 2024-03-10",
+      "type": "primary"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-03",
+      "degree": 2,
+      "doi": null,
+      "id": "cne-legislative-2025",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Official results, legislative election of 2025-05-18",
+      "type": "primary"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-03",
+      "degree": 4,
+      "doi": null,
+      "id": "cne-presidential-2016",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Official results, presidential election of 2016-01-24",
+      "type": "primary"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-03",
+      "degree": 2,
+      "doi": null,
+      "id": "cne-presidential-2021",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Official results, presidential election of 2021-01-24",
+      "type": "primary"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-02",
+      "degree": 71,
+      "doi": null,
+      "id": "costa-pinto-2003-contemporary-portugal",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Contemporary Portugal: Politics, Society and Culture",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-03",
+      "degree": 70,
+      "doi": null,
+      "id": "costa-pinto-teixeira-2019-political-institutions",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Political Institutions and Democracy in Portugal: Assessing the Impact of the Eurocrisis",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-03",
+      "degree": 3,
+      "doi": null,
+      "id": "cti-2017-2018-fires",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Reports on the forest fires of June and October 2017",
+      "type": "primary"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-03",
+      "degree": 4,
+      "doi": null,
+      "id": "dre-2020-state-of-emergency",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Declaration and renewals of the state of emergency, March to May 2020",
+      "type": "primary"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-03",
+      "degree": 3,
+      "doi": null,
+      "id": "dre-government-appointments-2015-2024",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Appointment of the XXI and XXIV Constitutional Governments",
+      "type": "primary"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-03",
+      "degree": 2,
+      "doi": null,
+      "id": "holy-see-2023-world-youth-day",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "World Youth Day, Lisbon 2023",
+      "type": "primary"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-03",
+      "degree": 16,
+      "doi": null,
+      "id": "imf-2016-portugal-ex-post-evaluation",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Portugal: Ex Post Evaluation of Exceptional Access under the 2011 Extended Arrangement",
+      "type": "article"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-02",
+      "degree": 64,
+      "doi": null,
+      "id": "macqueen-1997-decolonization",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "The Decolonization of Portuguese Africa: Metropolitan Revolution and the Dissolution of Empire",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-02",
+      "degree": 47,
+      "doi": null,
+      "id": "maxwell-1995-making-of-portuguese-democracy",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "The Making of Portuguese Democracy",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-02",
+      "degree": 32,
+      "doi": null,
+      "id": "meneses-2004-portugal-1914-1926",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Portugal 1914–1926: From the First World War to Military Dictatorship",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-02",
+      "degree": 16,
+      "doi": null,
+      "id": "meneses-2009-salazar",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Salazar: A Political Biography",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-03",
+      "degree": 3,
+      "doi": null,
+      "id": "pgr-2023-operation-influencer",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Communiqué on the searches of 7 November 2023",
+      "type": "primary"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-02",
+      "degree": 78,
+      "doi": null,
+      "id": "ramos-2009-historia-de-portugal",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "História de Portugal",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-02",
+      "degree": 25,
+      "doi": null,
+      "id": "reis-2013-portuguese-slump",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "The Portuguese Slump and Crash and the Euro Crisis. Brookings Papers on Economic Activity, Spring 2013",
+      "type": "article"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-03",
+      "degree": 1,
+      "doi": null,
+      "id": "ren-2025-blackout",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "The supply interruption of 28 April 2025",
+      "type": "primary"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-02",
+      "degree": 70,
+      "doi": null,
+      "id": "rosas-1994-estado-novo",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "O Estado Novo (1926–1974). História de Portugal, vol. 7 (dir. José Mattoso)",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-02",
+      "degree": 5,
+      "doi": null,
+      "id": "rosas-2012-salazar-e-o-poder",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Salazar e o Poder: A Arte de Saber Durar",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-02",
+      "degree": 133,
+      "doi": null,
+      "id": "telo-2007-historia-contemporanea",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "História Contemporânea de Portugal: do 25 de Abril à Actualidade",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-03",
+      "doi": null,
+      "id": "uefa-2016-final",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Match report, final of the 2016 European Championship",
+      "type": "primary"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-02",
+      "degree": 48,
+      "doi": null,
+      "id": "wheeler-1978-republican-portugal",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Republican Portugal: A Political History, 1910–1926",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-04",
+      "degree": 55,
+      "doi": null,
+      "id": "wikidata",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Wikidata",
+      "type": "dataset"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-04",
+      "degree": 55,
+      "doi": null,
+      "id": "wikipedia-en",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Wikipedia, English edition",
+      "type": "web"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-04",
+      "degree": 49,
+      "doi": null,
+      "id": "wikipedia-pt",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Wikipedia, Portuguese edition",
+      "type": "web"
+    }
+  ],
+  "schema": 1,
+  "warnings": [
+    {
+      "id": "uefa-2016-final",
+      "kind": "source",
+      "message": "source is cited by nothing under validation",
+      "rule": "no-citers"
+    }
+  ]
+}

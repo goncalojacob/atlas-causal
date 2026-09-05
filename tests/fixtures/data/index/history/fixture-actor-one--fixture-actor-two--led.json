@@ -1,0 +1,12 @@
+{
+  "from": "git",
+  "id": "fixture-actor-one--fixture-actor-two--led",
+  "kind": "relation",
+  "schema": 1,
+  "versions": [
+    {
+      "first": true,
+      "on": "2026-01-01"
+    }
+  ]
+}

@@ -16,10 +16,11 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 import { buildSpine, buildTopology, byId, citerFiles, rolesInUse } from '../src/validate/core.js';
 import { checkRules } from '../src/validate/rules.js';
 import { createRegionDeriver } from '../src/util/geo.js';
-import { digestOf, isDraft } from '../src/review/queue.js';
+import { degreesOf, digestOf, isDraft, KIND_ORDER } from '../src/review/queue.js';
 import { buildSearchIndex } from '../src/search.js';
 import { licensingTable } from '../src/licensing.js';
 import { readRecords, readRegions, readRegionPolygons, readLandFiles, readPresenceShards, paletteFile } from './lib/read.mjs';
+import { recordHistories, HISTORY_DIR } from './lib/history.mjs';
 
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 export const DEFAULT_DATA = path.join(ROOT, 'data');
@@ -28,7 +29,9 @@ export const DEFAULT_DATA = path.join(ROOT, 'data');
 // source in a manifest that is fetched no-store on every page load, and
 // unhashed names would break the `immutable` convention the whole index is
 // served under (h3a-brief, A7). One hash over the directory buys both.
-const HASHED = /^(spine|search|sources|review)-[0-9a-f]{12}\.json$/;
+// `review-<kind>-<hash>.json` is the queue's per-kind shard; the plain
+// `review-<hash>.json` beside it is the summary that names them (H6b).
+const HASHED = /^(?:spine|search|sources|review)-(?:[a-z]+-)?[0-9a-f]{12}\.json$/;
 const HASHED_DIR = /^citers-[0-9a-f]{12}$/;
 
 // Deep copy with keys sorted by UTF-16 code unit (Array.prototype.sort's
@@ -121,14 +124,52 @@ export async function buildIndex(dataDir = DEFAULT_DATA, prepared = {}) {
   // record is already in hand. Warnings come from the same checkRules() the
   // CLI runs, so the dashboard shows the validator's opinion rather than a
   // second implementation of it.
+  //
+  // One shard per kind since H6b, and a summary that names them. The single
+  // file carried a digest of every draft — 265 KB today, 11.6 MB at twenty
+  // thousand — and the dashboard had to have all of it before it could draw
+  // fifteen rows (health review B, finding 7). A reviewer works through one
+  // kind at a time and the queue was always grouped that way, so that is
+  // where the file divides.
+  const drafts = records.filter(isDraft);
+  const degrees = degreesOf(topology);
+  const warnings = (prepared.warnings ?? checkRules(records, topology).warnings)
+    .map((w) => ({ id: w.id, kind: w.kind, rule: w.rule, message: w.message }))
+    .sort((a, b) => byId(a, b) || (a.rule < b.rule ? -1 : a.rule > b.rule ? 1 : 0));
+  // A kind's shard carries the warnings about its own drafts and no others:
+  // the dashboard reads them to put flags on rows, and a warning about a
+  // record nobody is waiting on is weight with no reader.
+  const draftIds = new Set(drafts.map((r) => `${r.kind}:${r.id}`));
+  const shardKinds = [...new Set(drafts.map((r) => r.kind))]
+    .sort((a, b) => KIND_ORDER.indexOf(a) - KIND_ORDER.indexOf(b) || (a < b ? -1 : 1));
+  const shards = shardKinds.map((kind) => {
+    const text = serialize({
+      schema: 1,
+      kind,
+      records: drafts.filter((r) => r.kind === kind)
+        .map((r) => digestOf(r, { degree: degrees.get(`${r.kind}:${r.id}`) ?? 0 }))
+        .sort(byId),
+      warnings: warnings.filter((w) => draftIds.has(`${w.kind}:${w.id}`) && w.kind === kind),
+    });
+    const name = `review-${kind}-${hashOf(text)}.json`;
+    return { kind, name, text, count: drafts.filter((r) => r.kind === kind).length };
+  });
   const reviewText = serialize({
     schema: 1,
     total: records.filter((r) => r.kind !== 'presence').length,
-    records: records.filter(isDraft).map(digestOf).sort(byId),
-    warnings: (prepared.warnings ?? checkRules(records, topology).warnings)
-      .map((w) => ({ id: w.id, kind: w.kind, rule: w.rule, message: w.message }))
-      .sort((a, b) => byId(a, b) || (a.rule < b.rule ? -1 : a.rule > b.rule ? 1 : 0)),
+    drafts: drafts.length,
+    kinds: shards.map(({ kind, count, name }) => ({ kind, count, file: `index/${name}` })),
   });
+
+  // One file per record, under an unhashed directory: the dashboard fetches
+  // the history of the record a reviewer just opened, by its id, and a hashed
+  // name would mean reading the manifest for every one of them.
+  const { histories } = await recordHistories(
+    records.filter((r) => r.kind !== 'presence'),
+    { dataDir, git: prepared.git ?? true },
+  );
+  const historyEntries = histories.map((h) => [`${HISTORY_DIR}/${h.id}.json`, serialize(h)]);
+
   const spineName = `spine-${hashOf(spineText)}.json`;
   const searchName = `search-${hashOf(searchText)}.json`;
   const sourcesName = `sources-${hashOf(sourcesText)}.json`;
@@ -148,6 +189,7 @@ export async function buildIndex(dataDir = DEFAULT_DATA, prepared = {}) {
     },
     files: {
       citers: `index/${citersDir}`,
+      history: `index/${HISTORY_DIR}`,
       search: `index/${searchName}`,
       spine: `index/${spineName}`,
       sources: `index/${sourcesName}`,
@@ -182,7 +224,9 @@ export async function buildIndex(dataDir = DEFAULT_DATA, prepared = {}) {
       [spineName]: spineText,
       [sourcesName]: sourcesText,
       [reviewName]: reviewText,
+      ...Object.fromEntries(shards.map(({ name, text }) => [name, text])),
       ...Object.fromEntries(citerEntries),
+      ...Object.fromEntries(historyEntries),
     },
     topology,
     unresolved,
@@ -198,7 +242,7 @@ export async function readIndex(dataDir = DEFAULT_DATA) {
   if (!existsSync(dir)) return files;
   for (const entry of (await readdir(dir, { withFileTypes: true })).sort((a, b) => (a.name < b.name ? -1 : a.name > b.name ? 1 : 0))) {
     if (entry.isDirectory()) {
-      if (!HASHED_DIR.test(entry.name)) continue;
+      if (!HASHED_DIR.test(entry.name) && entry.name !== HISTORY_DIR) continue;
       for (const name of (await readdir(path.join(dir, entry.name))).sort()) {
         files[`${entry.name}/${name}`] = await readFile(path.join(dir, entry.name, name), 'utf8');
       }
@@ -210,11 +254,22 @@ export async function readIndex(dataDir = DEFAULT_DATA) {
 }
 
 // Differences between what is on disk and a fresh build: [] when fresh.
+//
+// Every file is compared byte for byte except the histories, which are
+// compared by name. A history is derived from the repository's own commits
+// and not from `data/` alone, and the two builds rule 16 puts side by side do
+// not always have the same commits to read: the deploy checks out one commit
+// deep, and a build made before a change is committed cannot see the commit
+// that is about to carry it. Comparing those bytes would fail the gate on
+// every push and say nothing true about the data. The names still have to
+// match, so a record added or retired without a rebuild is caught.
+const isHistory = (name) => name.startsWith(`${HISTORY_DIR}/`);
+
 export function compareIndex(existing, built) {
   const problems = [];
   for (const name of Object.keys(built.files)) {
     if (!Object.hasOwn(existing, name)) problems.push(`missing ${name}`);
-    else if (existing[name] !== built.files[name]) problems.push(`differs ${name}`);
+    else if (!isHistory(name) && existing[name] !== built.files[name]) problems.push(`differs ${name}`);
   }
   for (const name of Object.keys(existing)) {
     if (!Object.hasOwn(built.files, name)) problems.push(`stale ${name}`);
@@ -232,7 +287,7 @@ export async function writeIndex(dataDir, built) {
   for (const entry of await readdir(dir, { withFileTypes: true })) {
     const full = path.join(dir, entry.name);
     if (entry.isDirectory()) {
-      if (!HASHED_DIR.test(entry.name)) continue;
+      if (!HASHED_DIR.test(entry.name) && entry.name !== HISTORY_DIR) continue;
       for (const name of await readdir(full)) {
         if (!Object.hasOwn(built.files, `${entry.name}/${name}`)) await unlink(path.join(full, name));
       }

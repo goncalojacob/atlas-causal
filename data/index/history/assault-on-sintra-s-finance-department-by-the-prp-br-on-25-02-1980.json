@@ -1,0 +1,28 @@
+{
+  "from": "git",
+  "id": "assault-on-sintra-s-finance-department-by-the-prp-br-on-25-02-1980",
+  "kind": "event",
+  "schema": 1,
+  "versions": [
+    {
+      "first": true,
+      "on": "2026-09-04"
+    },
+    {
+      "fields": [
+        "review",
+        "status"
+      ],
+      "on": "2026-09-04"
+    },
+    {
+      "fields": [
+        "origin",
+        "retraction",
+        "review",
+        "sitelinks"
+      ],
+      "on": "2026-09-04"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "from": "git",
+  "id": "equatorial-guinea-under-spain",
+  "kind": "actor",
+  "schema": 1,
+  "versions": [
+    {
+      "first": true,
+      "on": "2026-09-05"
+    },
+    {
+      "fields": [
+        "origin"
+      ],
+      "on": "2026-09-05"
+    }
+  ]
+}

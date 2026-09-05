@@ -1,0 +1,18 @@
+{
+  "from": "git",
+  "id": "syria-under-france",
+  "kind": "actor",
+  "schema": 1,
+  "versions": [
+    {
+      "first": true,
+      "on": "2026-09-05"
+    },
+    {
+      "fields": [
+        "origin"
+      ],
+      "on": "2026-09-05"
+    }
+  ]
+}

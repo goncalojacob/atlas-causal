@@ -1,0 +1,4373 @@
+{
+  "kind": "edge",
+  "records": [
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal",
+        "wikipedia-pt"
+      ],
+      "created": "2026-09-04",
+      "from": "1908-portuguese-legislative-election",
+      "id": "1908-portuguese-legislative-election--republic-proclaimed-1910--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "republic-proclaimed-1910",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wheeler-1978-republican-portugal",
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-04",
+      "from": "1911-portuguese-constituent-national-assembly-election",
+      "id": "1911-portuguese-constituent-national-assembly-election--constitution-1911--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "constitution-1911",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wheeler-1978-republican-portugal",
+        "meneses-2004-portugal-1914-1926"
+      ],
+      "created": "2026-09-04",
+      "from": "1911-portuguese-presidential-election",
+      "id": "1911-portuguese-presidential-election--pimenta-de-castro-government-1915--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "pimenta-de-castro-government-1915",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "meneses-2004-portugal-1914-1926",
+        "wheeler-1978-republican-portugal"
+      ],
+      "created": "2026-09-04",
+      "from": "1915-portuguese-legislative-election",
+      "id": "1915-portuguese-legislative-election--germany-declares-war-1916--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "germany-declares-war-1916",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wheeler-1978-republican-portugal",
+        "meneses-2004-portugal-1914-1926"
+      ],
+      "created": "2026-09-04",
+      "from": "1921-portuguese-legislative-election",
+      "id": "1921-portuguese-legislative-election--noite-sangrenta-1921--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "noite-sangrenta-1921",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wheeler-1978-republican-portugal",
+        "meneses-2004-portugal-1914-1926"
+      ],
+      "created": "2026-09-04",
+      "from": "1925-portuguese-legislative-election",
+      "id": "1925-portuguese-legislative-election--coup-28-may-1926--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "coup-28-may-1926",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "rosas-1994-estado-novo",
+        "meneses-2009-salazar"
+      ],
+      "created": "2026-09-04",
+      "from": "1928-portuguese-presidential-election",
+      "id": "1928-portuguese-presidential-election--salazar-finance-minister-1928--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "salazar-finance-minister-1928",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "rosas-1994-estado-novo",
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-04",
+      "from": "1945-portuguese-legislative-election",
+      "id": "1945-portuguese-legislative-election--1949-portuguese-presidential-election--inspired",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "1949-portuguese-presidential-election",
+      "type": "inspired"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "rosas-1994-estado-novo",
+        "costa-pinto-2003-contemporary-portugal"
+      ],
+      "created": "2026-09-04",
+      "from": "1945-portuguese-legislative-election",
+      "id": "1945-portuguese-legislative-election--delgado-candidacy-1958--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "delgado-candidacy-1958",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "rosas-1994-estado-novo",
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-04",
+      "from": "1949-portuguese-presidential-election",
+      "id": "1949-portuguese-presidential-election--delgado-candidacy-1958--inspired",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "delgado-candidacy-1958",
+      "type": "inspired"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "macqueen-1997-decolonization"
+      ],
+      "created": "2026-09-04",
+      "from": "1957-guinean-territorial-assembly-election",
+      "id": "1957-guinean-territorial-assembly-election--guinean-constitutional-referendum-1958--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "guinean-constitutional-referendum-1958",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "rosas-1994-estado-novo",
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-04",
+      "from": "1965-portuguese-presidential-election",
+      "id": "1965-portuguese-presidential-election--caetano-succeeds-salazar-1968--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "caetano-succeeds-salazar-1968",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "maxwell-1995-making-of-portuguese-democracy",
+        "rosas-1994-estado-novo"
+      ],
+      "created": "2026-09-04",
+      "from": "1969-portuguese-legislative-election",
+      "id": "1969-portuguese-legislative-election--1973-portuguese-legislative-election--reacted-to",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "1973-portuguese-legislative-election",
+      "type": "reacted-to"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "maxwell-1995-making-of-portuguese-democracy",
+        "rosas-1994-estado-novo"
+      ],
+      "created": "2026-09-04",
+      "from": "1969-portuguese-legislative-election",
+      "id": "1969-portuguese-legislative-election--carnation-revolution-1974--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "carnation-revolution-1974",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "rosas-1994-estado-novo",
+        "macqueen-1997-decolonization"
+      ],
+      "created": "2026-09-04",
+      "from": "1972-portuguese-presidential-election",
+      "id": "1972-portuguese-presidential-election--carnation-revolution-1974--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "carnation-revolution-1974",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "maxwell-1995-making-of-portuguese-democracy",
+        "rosas-1994-estado-novo"
+      ],
+      "created": "2026-09-04",
+      "from": "1973-portuguese-legislative-election",
+      "id": "1973-portuguese-legislative-election--carnation-revolution-1974--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "carnation-revolution-1974",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-2003-contemporary-portugal",
+        "telo-2007-historia-contemporanea"
+      ],
+      "created": "2026-09-04",
+      "from": "1979-portuguese-legislative-election",
+      "id": "1979-portuguese-legislative-election--constitutional-revision-1982--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "constitutional-revision-1982",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-2003-contemporary-portugal",
+        "telo-2007-historia-contemporanea"
+      ],
+      "created": "2026-09-04",
+      "from": "1980-portuguese-legislative-election",
+      "id": "1980-portuguese-legislative-election--constitutional-revision-1982--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "constitutional-revision-1982",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-2003-contemporary-portugal",
+        "telo-2007-historia-contemporanea"
+      ],
+      "created": "2026-09-04",
+      "from": "1980-portuguese-presidential-election",
+      "id": "1980-portuguese-presidential-election--constitutional-revision-1982--reacted-to",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "constitutional-revision-1982",
+      "type": "reacted-to"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-2003-contemporary-portugal",
+        "reis-2013-portuguese-slump"
+      ],
+      "created": "2026-09-04",
+      "from": "1983-portuguese-legislative-election",
+      "id": "1983-portuguese-legislative-election--imf-agreement-1983--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "imf-agreement-1983",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-2003-contemporary-portugal",
+        "telo-2007-historia-contemporanea"
+      ],
+      "created": "2026-09-04",
+      "from": "1983-portuguese-legislative-election",
+      "id": "1983-portuguese-legislative-election--treaty-of-accession-1985--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "treaty-of-accession-1985",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-2003-contemporary-portugal",
+        "telo-2007-historia-contemporanea"
+      ],
+      "created": "2026-09-04",
+      "from": "1985-portuguese-legislative-election",
+      "id": "1985-portuguese-legislative-election--cavaco-absolute-majority-1987--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "cavaco-absolute-majority-1987",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-2003-contemporary-portugal",
+        "telo-2007-historia-contemporanea"
+      ],
+      "created": "2026-09-04",
+      "from": "1991-portuguese-legislative-election",
+      "id": "1991-portuguese-legislative-election--expo-98--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "expo-98",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-2003-contemporary-portugal",
+        "telo-2007-historia-contemporanea"
+      ],
+      "created": "2026-09-04",
+      "from": "1995-portuguese-legislative-election",
+      "id": "1995-portuguese-legislative-election--euro-adoption-1999--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "euro-adoption-1999",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-2003-contemporary-portugal",
+        "telo-2007-historia-contemporanea"
+      ],
+      "created": "2026-09-04",
+      "from": "1995-portuguese-legislative-election",
+      "id": "1995-portuguese-legislative-election--portuguese-regionalisation-referendum-1998--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "portuguese-regionalisation-referendum-1998",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-teixeira-2019-political-institutions"
+      ],
+      "created": "2026-09-04",
+      "from": "1998-portuguese-abortion-referendum",
+      "id": "1998-portuguese-abortion-referendum--2007-portuguese-abortion-referendum--reacted-to",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "2007-portuguese-abortion-referendum",
+      "type": "reacted-to"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea"
+      ],
+      "created": "2026-09-04",
+      "from": "1999-macanese-chief-executive-election",
+      "id": "1999-macanese-chief-executive-election--macau-handover-1999--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "macau-handover-1999",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-teixeira-2019-political-institutions",
+        "telo-2007-historia-contemporanea"
+      ],
+      "created": "2026-09-04",
+      "from": "2001-portuguese-local-elections",
+      "id": "2001-portuguese-local-elections--2002-portuguese-legislative-election--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "2002-portuguese-legislative-election",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-teixeira-2019-political-institutions",
+        "telo-2007-historia-contemporanea"
+      ],
+      "created": "2026-09-04",
+      "from": "2002-portuguese-legislative-election",
+      "id": "2002-portuguese-legislative-election--2005-portuguese-legislative-election--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "2005-portuguese-legislative-election",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-teixeira-2019-political-institutions",
+        "telo-2007-historia-contemporanea"
+      ],
+      "created": "2026-09-04",
+      "from": "2005-portuguese-legislative-election",
+      "id": "2005-portuguese-legislative-election--2007-portuguese-abortion-referendum--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "2007-portuguese-abortion-referendum",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-teixeira-2019-political-institutions",
+        "imf-2016-portugal-ex-post-evaluation"
+      ],
+      "created": "2026-09-04",
+      "from": "2009-portuguese-legislative-election",
+      "id": "2009-portuguese-legislative-election--troika-bailout-2011--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "troika-bailout-2011",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-teixeira-2019-political-institutions"
+      ],
+      "created": "2026-09-04",
+      "from": "2011-portuguese-legislative-election",
+      "id": "2011-portuguese-legislative-election--2011-portuguese-socialist-party-leadership-election--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "2011-portuguese-socialist-party-leadership-election",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-teixeira-2019-political-institutions",
+        "imf-2016-portugal-ex-post-evaluation"
+      ],
+      "created": "2026-09-04",
+      "from": "2011-portuguese-legislative-election",
+      "id": "2011-portuguese-legislative-election--troika-programme-ends-2014--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "troika-programme-ends-2014",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-teixeira-2019-political-institutions"
+      ],
+      "created": "2026-09-04",
+      "from": "2011-portuguese-socialist-party-leadership-election",
+      "id": "2011-portuguese-socialist-party-leadership-election--2014-portuguese-socialist-party-prime-ministerial-primary--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "2014-portuguese-socialist-party-prime-ministerial-primary",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-teixeira-2019-political-institutions"
+      ],
+      "created": "2026-09-04",
+      "from": "2014-portuguese-socialist-party-prime-ministerial-primary",
+      "id": "2014-portuguese-socialist-party-prime-ministerial-primary--geringonca-2015--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "geringonca-2015",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-teixeira-2019-political-institutions"
+      ],
+      "created": "2026-09-04",
+      "from": "2022-portuguese-social-democratic-party-leadership-election",
+      "id": "2022-portuguese-social-democratic-party-leadership-election--legislative-election-2022--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "legislative-election-2022",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-teixeira-2019-political-institutions"
+      ],
+      "created": "2026-09-04",
+      "from": "2022-portuguese-social-democratic-party-leadership-election-q111182017",
+      "id": "2022-portuguese-social-democratic-party-leadership-election-q111182017--montenegro-government-2024--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "montenegro-government-2024",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-teixeira-2019-political-institutions",
+        "wikipedia-pt"
+      ],
+      "created": "2026-09-04",
+      "from": "2023-madeiran-regional-election",
+      "id": "2023-madeiran-regional-election--2024-madeiran-regional-election--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "2024-madeiran-regional-election",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-teixeira-2019-political-institutions",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-04",
+      "from": "2024-madeiran-regional-election",
+      "id": "2024-madeiran-regional-election--2025-madeiran-regional-election--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "2025-madeiran-regional-election",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "maxwell-1995-making-of-portuguese-democracy",
+        "telo-2007-historia-contemporanea"
+      ],
+      "created": "2026-09-02",
+      "from": "25-november-1975",
+      "id": "25-november-1975--constitution-1976--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "constitution-1976",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea"
+      ],
+      "created": "2026-09-02",
+      "from": "25-november-1975",
+      "id": "25-november-1975--eanes-elected-1976--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "eanes-elected-1976",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "macqueen-1997-decolonization",
+        "maxwell-1995-making-of-portuguese-democracy"
+      ],
+      "created": "2026-09-02",
+      "degree": 1,
+      "from": "alvor-agreement-1975",
+      "id": "alvor-agreement-1975--angola-independence-1975--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "angola-independence-1975",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "costa-pinto-2003-contemporary-portugal"
+      ],
+      "created": "2026-09-05",
+      "from": "angola-independence-1975",
+      "id": "angola-independence-1975--cplp-founding-1996--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "note": "Drafted by the assistant under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "cplp-founding-1996",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "rosas-1994-estado-novo",
+        "macqueen-1997-decolonization"
+      ],
+      "created": "2026-09-02",
+      "from": "angola-war-begins-1961",
+      "id": "angola-war-begins-1961--botelho-moniz-coup-attempt-1961--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "botelho-moniz-coup-attempt-1961",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "maxwell-1995-making-of-portuguese-democracy",
+        "rosas-1994-estado-novo"
+      ],
+      "created": "2026-09-02",
+      "from": "angola-war-begins-1961",
+      "id": "angola-war-begins-1961--carnation-revolution-1974--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "carnation-revolution-1974",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "macqueen-1997-decolonization",
+        "costa-pinto-2003-contemporary-portugal"
+      ],
+      "created": "2026-09-02",
+      "from": "angola-war-begins-1961",
+      "id": "angola-war-begins-1961--goa-annexed-1961--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "goa-annexed-1961",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "macqueen-1997-decolonization"
+      ],
+      "created": "2026-09-02",
+      "degree": 1,
+      "from": "angola-war-begins-1961",
+      "id": "angola-war-begins-1961--guinea-war-begins-1963--inspired",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "guinea-war-begins-1963",
+      "type": "inspired"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "macqueen-1997-decolonization"
+      ],
+      "created": "2026-09-02",
+      "degree": 1,
+      "from": "angola-war-begins-1961",
+      "id": "angola-war-begins-1961--mozambique-war-begins-1964--inspired",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "mozambique-war-begins-1964",
+      "type": "inspired"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea"
+      ],
+      "created": "2026-09-02",
+      "from": "azores-agreement-1943",
+      "id": "azores-agreement-1943--nato-founding-1949--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "nato-founding-1949",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "macqueen-1997-decolonization"
+      ],
+      "created": "2026-09-04",
+      "from": "batepa-massacre",
+      "id": "batepa-massacre--1975-sao-tomean-legislative-election--inspired",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "1975-sao-tomean-legislative-election",
+      "type": "inspired"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "meneses-2004-portugal-1914-1926",
+        "wheeler-1978-republican-portugal",
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-02",
+      "from": "battle-of-the-lys-1918",
+      "id": "battle-of-the-lys-1918--coup-28-may-1926--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "coup-28-may-1926",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "reis-2013-portuguese-slump"
+      ],
+      "created": "2026-09-02",
+      "from": "bpn-nationalisation-2008",
+      "id": "bpn-nationalisation-2008--troika-bailout-2011--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "troika-bailout-2011",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "macqueen-1997-decolonization",
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-02",
+      "degree": 1,
+      "from": "cabral-assassinated-1973",
+      "id": "cabral-assassinated-1973--guinea-bissau-declares-independence-1973--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "guinea-bissau-declares-independence-1973",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "maxwell-1995-making-of-portuguese-democracy",
+        "rosas-1994-estado-novo"
+      ],
+      "created": "2026-09-04",
+      "from": "caetano-succeeds-salazar-1968",
+      "id": "caetano-succeeds-salazar-1968--1969-portuguese-legislative-election--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "1969-portuguese-legislative-election",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "rosas-1994-estado-novo",
+        "costa-pinto-2003-contemporary-portugal"
+      ],
+      "created": "2026-09-02",
+      "from": "caetano-succeeds-salazar-1968",
+      "id": "caetano-succeeds-salazar-1968--carnation-revolution-1974--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "carnation-revolution-1974",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "macqueen-1997-decolonization",
+        "telo-2007-historia-contemporanea"
+      ],
+      "created": "2026-09-04",
+      "from": "carnation-revolution-1974",
+      "id": "carnation-revolution-1974--1975-sao-tomean-legislative-election--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "1975-sao-tomean-legislative-election",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "maxwell-1995-making-of-portuguese-democracy",
+        "macqueen-1997-decolonization"
+      ],
+      "created": "2026-09-02",
+      "degree": 1,
+      "from": "carnation-revolution-1974",
+      "id": "carnation-revolution-1974--alvor-agreement-1975--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "alvor-agreement-1975",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "macqueen-1997-decolonization",
+        "maxwell-1995-making-of-portuguese-democracy"
+      ],
+      "created": "2026-09-02",
+      "from": "carnation-revolution-1974",
+      "id": "carnation-revolution-1974--angola-independence-1975--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "angola-independence-1975",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "maxwell-1995-making-of-portuguese-democracy",
+        "telo-2007-historia-contemporanea"
+      ],
+      "created": "2026-09-02",
+      "degree": 1,
+      "from": "carnation-revolution-1974",
+      "id": "carnation-revolution-1974--constituent-assembly-election-1975--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "constituent-assembly-election-1975",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "macqueen-1997-decolonization",
+        "maxwell-1995-making-of-portuguese-democracy"
+      ],
+      "created": "2026-09-02",
+      "from": "carnation-revolution-1974",
+      "id": "carnation-revolution-1974--east-timor-invasion-1975--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "east-timor-invasion-1975",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "maxwell-1995-making-of-portuguese-democracy",
+        "ar-2024-fiftieth-anniversary"
+      ],
+      "created": "2026-09-03",
+      "from": "carnation-revolution-1974",
+      "id": "carnation-revolution-1974--fiftieth-anniversary-25-april-2024--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "fiftieth-anniversary-25-april-2024",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-2003-contemporary-portugal"
+      ],
+      "created": "2026-09-02",
+      "from": "carnation-revolution-1974",
+      "id": "carnation-revolution-1974--macau-handover-1999--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "macau-handover-1999",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "maxwell-1995-making-of-portuguese-democracy",
+        "telo-2007-historia-contemporanea"
+      ],
+      "created": "2026-09-02",
+      "from": "carnation-revolution-1974",
+      "id": "carnation-revolution-1974--nationalisations-1975--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "nationalisations-1975",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "maxwell-1995-making-of-portuguese-democracy"
+      ],
+      "created": "2026-09-02",
+      "from": "carnation-revolution-1974",
+      "id": "carnation-revolution-1974--spinola-resigns-1974--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "spinola-resigns-1974",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "maxwell-1995-making-of-portuguese-democracy",
+        "telo-2007-historia-contemporanea"
+      ],
+      "created": "2026-09-02",
+      "degree": 1,
+      "from": "constituent-assembly-election-1975",
+      "id": "constituent-assembly-election-1975--25-november-1975--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "25-november-1975",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wheeler-1978-republican-portugal",
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-04",
+      "from": "constitution-1911",
+      "id": "constitution-1911--1911-portuguese-presidential-election--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "1911-portuguese-presidential-election",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wheeler-1978-republican-portugal"
+      ],
+      "created": "2026-09-02",
+      "from": "constitution-1911",
+      "id": "constitution-1911--pimenta-de-castro-government-1915--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "pimenta-de-castro-government-1915",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "meneses-2004-portugal-1914-1926"
+      ],
+      "created": "2026-09-02",
+      "from": "constitution-1911",
+      "id": "constitution-1911--sidonio-pais-coup-1917--reacted-to",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "sidonio-pais-coup-1917",
+      "type": "reacted-to"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "rosas-1994-estado-novo"
+      ],
+      "created": "2026-09-02",
+      "from": "constitution-1933",
+      "id": "constitution-1933--exposicao-mundo-portugues-1940--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "exposicao-mundo-portugues-1940",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "rosas-1994-estado-novo"
+      ],
+      "created": "2026-09-02",
+      "from": "constitution-1933",
+      "id": "constitution-1933--portugal-backs-franco-1936--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "portugal-backs-franco-1936",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal",
+        "telo-2007-historia-contemporanea"
+      ],
+      "created": "2026-09-04",
+      "from": "constitution-1976",
+      "id": "constitution-1976--1976-azorean-regional-election--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "1976-azorean-regional-election",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal",
+        "telo-2007-historia-contemporanea"
+      ],
+      "created": "2026-09-04",
+      "from": "constitution-1976",
+      "id": "constitution-1976--1976-portuguese-local-elections--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "1976-portuguese-local-elections",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal",
+        "telo-2007-historia-contemporanea"
+      ],
+      "created": "2026-09-04",
+      "from": "constitution-1976",
+      "id": "constitution-1976--1979-portuguese-local-elections--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "1979-portuguese-local-elections",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea"
+      ],
+      "created": "2026-09-02",
+      "from": "constitution-1976",
+      "id": "constitution-1976--constitutional-revision-1982--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "constitutional-revision-1982",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "costa-pinto-2003-contemporary-portugal"
+      ],
+      "created": "2026-09-02",
+      "from": "constitution-1976",
+      "id": "constitution-1976--eanes-elected-1976--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "eanes-elected-1976",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-2003-contemporary-portugal",
+        "telo-2007-historia-contemporanea"
+      ],
+      "created": "2026-09-02",
+      "from": "constitution-1976",
+      "id": "constitution-1976--eec-application-1977--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "eec-application-1977",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal",
+        "telo-2007-historia-contemporanea"
+      ],
+      "created": "2026-09-04",
+      "from": "constitution-1976",
+      "id": "constitution-1976--eleicoes-legislativas-regionais-na-madeira-em-1976--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "eleicoes-legislativas-regionais-na-madeira-em-1976",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "costa-pinto-2003-contemporary-portugal"
+      ],
+      "created": "2026-09-02",
+      "from": "constitution-1976",
+      "id": "constitution-1976--legislative-election-1976--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "legislative-election-1976",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "rosas-1994-estado-novo",
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-04",
+      "from": "constitutional-revision-1959",
+      "id": "constitutional-revision-1959--1965-portuguese-presidential-election--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "1965-portuguese-presidential-election",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-2003-contemporary-portugal"
+      ],
+      "created": "2026-09-02",
+      "from": "constitutional-revision-1982",
+      "id": "constitutional-revision-1982--eec-accession-1986--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "eec-accession-1986",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea"
+      ],
+      "created": "2026-09-02",
+      "from": "constitutional-revision-1982",
+      "id": "constitutional-revision-1982--soares-elected-president-1986--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "soares-elected-president-1986",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "pgr-2023-operation-influencer",
+        "cne-legislative-2024"
+      ],
+      "created": "2026-09-03",
+      "from": "costa-resigns-2023",
+      "id": "costa-resigns-2023--legislative-election-2024--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "legislative-election-2024",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "rosas-1994-estado-novo",
+        "meneses-2009-salazar"
+      ],
+      "created": "2026-09-04",
+      "from": "coup-28-may-1926",
+      "id": "coup-28-may-1926--1928-portuguese-presidential-election--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "1928-portuguese-presidential-election",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "rosas-1994-estado-novo",
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-02",
+      "from": "coup-28-may-1926",
+      "id": "coup-28-may-1926--constitution-1933--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "constitution-1933",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "meneses-2009-salazar",
+        "rosas-2012-salazar-e-o-poder"
+      ],
+      "created": "2026-09-02",
+      "from": "coup-28-may-1926",
+      "id": "coup-28-may-1926--salazar-finance-minister-1928--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "salazar-finance-minister-1928",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "maxwell-1995-making-of-portuguese-democracy",
+        "telo-2007-historia-contemporanea"
+      ],
+      "created": "2026-09-02",
+      "from": "coup-attempt-11-march-1975",
+      "id": "coup-attempt-11-march-1975--nationalisations-1975--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "nationalisations-1975",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-04",
+      "from": "covid-19-pandemic",
+      "id": "covid-19-pandemic--covid-19-pandemic-in-europe--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "covid-19-pandemic-in-europe",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "dre-2020-state-of-emergency",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-04",
+      "from": "covid-19-pandemic-in-europe",
+      "id": "covid-19-pandemic-in-europe--covid-state-of-emergency-2020--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "covid-state-of-emergency-2020",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "cne-presidential-2021",
+        "dre-2020-state-of-emergency"
+      ],
+      "created": "2026-09-03",
+      "from": "covid-state-of-emergency-2020",
+      "id": "covid-state-of-emergency-2020--marcelo-reelected-2021--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "marcelo-reelected-2021",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "holy-see-2023-world-youth-day",
+        "dre-2020-state-of-emergency"
+      ],
+      "created": "2026-09-03",
+      "from": "covid-state-of-emergency-2020",
+      "id": "covid-state-of-emergency-2020--world-youth-day-2023--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "world-youth-day-2023",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "rosas-1994-estado-novo",
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-02",
+      "from": "delgado-candidacy-1958",
+      "id": "delgado-candidacy-1958--constitutional-revision-1959--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "constitutional-revision-1959",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "rosas-1994-estado-novo"
+      ],
+      "created": "2026-09-02",
+      "from": "delgado-candidacy-1958",
+      "id": "delgado-candidacy-1958--delgado-assassinated-1965--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "delgado-assassinated-1965",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "macqueen-1997-decolonization"
+      ],
+      "created": "2026-09-02",
+      "from": "delgado-candidacy-1958",
+      "id": "delgado-candidacy-1958--santa-maria-hijacking-1961--inspired",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "santa-maria-hijacking-1961",
+      "type": "inspired"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "macqueen-1997-decolonization",
+        "costa-pinto-2003-contemporary-portugal"
+      ],
+      "created": "2026-09-02",
+      "from": "east-timor-invasion-1975",
+      "id": "east-timor-invasion-1975--east-timor-independence-2002--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "east-timor-independence-2002",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea"
+      ],
+      "created": "2026-09-04",
+      "from": "east-timor-invasion-1975",
+      "id": "east-timor-invasion-1975--hat-nipah-and-same-massacres--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "hat-nipah-and-same-massacres",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "costa-pinto-teixeira-2019-political-institutions"
+      ],
+      "created": "2026-09-04",
+      "from": "eec-accession-1986",
+      "id": "eec-accession-1986--1987-european-parliament-election-in-portugal--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "1987-european-parliament-election-in-portugal",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "costa-pinto-2003-contemporary-portugal"
+      ],
+      "created": "2026-09-02",
+      "from": "eec-accession-1986",
+      "id": "eec-accession-1986--cavaco-absolute-majority-1987--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "cavaco-absolute-majority-1987",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "reis-2013-portuguese-slump"
+      ],
+      "created": "2026-09-02",
+      "from": "eec-accession-1986",
+      "id": "eec-accession-1986--euro-adoption-1999--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "euro-adoption-1999",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea"
+      ],
+      "created": "2026-09-02",
+      "from": "eec-accession-1986",
+      "id": "eec-accession-1986--expo-98--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "expo-98",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "costa-pinto-teixeira-2019-political-institutions"
+      ],
+      "created": "2026-09-05",
+      "from": "eec-accession-1986",
+      "id": "eec-accession-1986--schengen-in-force-1995--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "note": "Drafted by the assistant under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "schengen-in-force-1995",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "reis-2013-portuguese-slump",
+        "telo-2007-historia-contemporanea"
+      ],
+      "created": "2026-09-02",
+      "from": "eec-accession-1986",
+      "id": "eec-accession-1986--troika-bailout-2011--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "troika-bailout-2011",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-2003-contemporary-portugal",
+        "telo-2007-historia-contemporanea"
+      ],
+      "created": "2026-09-02",
+      "from": "eec-application-1977",
+      "id": "eec-application-1977--eec-accession-1986--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "eec-accession-1986",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal",
+        "telo-2007-historia-contemporanea"
+      ],
+      "created": "2026-09-05",
+      "from": "efta-accession-1960",
+      "id": "efta-accession-1960--eec-application-1977--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "note": "Drafted by the assistant under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "eec-application-1977",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "reis-2013-portuguese-slump",
+        "telo-2007-historia-contemporanea"
+      ],
+      "created": "2026-09-02",
+      "from": "euro-adoption-1999",
+      "id": "euro-adoption-1999--troika-bailout-2011--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "troika-bailout-2011",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-teixeira-2019-political-institutions",
+        "imf-2016-portugal-ex-post-evaluation"
+      ],
+      "created": "2026-09-03",
+      "from": "geringonca-2015",
+      "id": "geringonca-2015--legislative-election-2019--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "legislative-election-2019",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "cne-legislative-2022",
+        "costa-pinto-teixeira-2019-political-institutions"
+      ],
+      "created": "2026-09-03",
+      "from": "geringonca-2015",
+      "id": "geringonca-2015--legislative-election-2022--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "legislative-election-2022",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "cne-presidential-2016",
+        "costa-pinto-teixeira-2019-political-institutions"
+      ],
+      "created": "2026-09-03",
+      "from": "geringonca-2015",
+      "id": "geringonca-2015--marcelo-elected-president-2016--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "marcelo-elected-president-2016",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "meneses-2004-portugal-1914-1926",
+        "wheeler-1978-republican-portugal"
+      ],
+      "created": "2026-09-02",
+      "from": "germany-declares-war-1916",
+      "id": "germany-declares-war-1916--battle-of-the-lys-1918--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-the-lys-1918",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "meneses-2004-portugal-1914-1926",
+        "wheeler-1978-republican-portugal"
+      ],
+      "created": "2026-09-02",
+      "from": "germany-declares-war-1916",
+      "id": "germany-declares-war-1916--sidonio-pais-coup-1917--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "sidonio-pais-coup-1917",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ar-2025-confidence-vote",
+        "cne-legislative-2025"
+      ],
+      "created": "2026-09-03",
+      "from": "government-falls-2025",
+      "id": "government-falls-2025--legislative-election-2025--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "legislative-election-2025",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "maxwell-1995-making-of-portuguese-democracy"
+      ],
+      "created": "2026-09-02",
+      "degree": 1,
+      "from": "guinea-bissau-declares-independence-1973",
+      "id": "guinea-bissau-declares-independence-1973--portugal-e-o-futuro-1974--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "portugal-e-o-futuro-1974",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "macqueen-1997-decolonization"
+      ],
+      "created": "2026-09-02",
+      "degree": 1,
+      "from": "guinea-war-begins-1963",
+      "id": "guinea-war-begins-1963--cabral-assassinated-1973--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "cabral-assassinated-1973",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "maxwell-1995-making-of-portuguese-democracy",
+        "macqueen-1997-decolonization"
+      ],
+      "created": "2026-09-02",
+      "from": "guinea-war-begins-1963",
+      "id": "guinea-war-begins-1963--carnation-revolution-1974--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "carnation-revolution-1974",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "macqueen-1997-decolonization",
+        "maxwell-1995-making-of-portuguese-democracy"
+      ],
+      "created": "2026-09-02",
+      "from": "guinea-war-begins-1963",
+      "id": "guinea-war-begins-1963--guinea-bissau-declares-independence-1973--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "guinea-bissau-declares-independence-1973",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "macqueen-1997-decolonization"
+      ],
+      "created": "2026-09-04",
+      "from": "guinean-constitutional-referendum-1958",
+      "id": "guinean-constitutional-referendum-1958--cabral-assassinated-1973--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "cabral-assassinated-1973",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "macqueen-1997-decolonization"
+      ],
+      "created": "2026-09-04",
+      "from": "guinean-constitutional-referendum-1958",
+      "id": "guinean-constitutional-referendum-1958--guinea-war-begins-1963--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "guinea-war-begins-1963",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "rosas-1994-estado-novo",
+        "meneses-2009-salazar"
+      ],
+      "created": "2026-09-04",
+      "from": "iberian-pact",
+      "id": "iberian-pact--azores-agreement-1943--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "azores-agreement-1943",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-04",
+      "from": "iberian-pact",
+      "id": "iberian-pact--treaty-of-friendship-and-cooperation-between-spain-and-portugal--reacted-to",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "treaty-of-friendship-and-cooperation-between-spain-and-portugal",
+      "type": "reacted-to"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "reis-2013-portuguese-slump"
+      ],
+      "created": "2026-09-02",
+      "from": "imf-agreement-1978",
+      "id": "imf-agreement-1978--imf-agreement-1983--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "imf-agreement-1983",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea"
+      ],
+      "created": "2026-09-02",
+      "from": "imf-agreement-1983",
+      "id": "imf-agreement-1983--eec-accession-1986--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "eec-accession-1986",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wheeler-1978-republican-portugal",
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-02",
+      "from": "law-of-separation-1911",
+      "id": "law-of-separation-1911--coup-28-may-1926--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "coup-28-may-1926",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea"
+      ],
+      "created": "2026-09-02",
+      "from": "legislative-election-1976",
+      "id": "legislative-election-1976--eec-application-1977--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "eec-application-1977",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "cne-legislative-2015",
+        "costa-pinto-teixeira-2019-political-institutions"
+      ],
+      "created": "2026-09-03",
+      "from": "legislative-election-2015",
+      "id": "legislative-election-2015--geringonca-2015--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "geringonca-2015",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "cne-legislative-2019",
+        "cne-legislative-2022"
+      ],
+      "created": "2026-09-03",
+      "from": "legislative-election-2019",
+      "id": "legislative-election-2019--legislative-election-2022--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "legislative-election-2022",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-teixeira-2019-political-institutions"
+      ],
+      "created": "2026-09-04",
+      "from": "legislative-election-2022",
+      "id": "legislative-election-2022--2022-portuguese-social-democratic-party-leadership-election-q111182017--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "2022-portuguese-social-democratic-party-leadership-election-q111182017",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "cne-legislative-2022",
+        "pgr-2023-operation-influencer"
+      ],
+      "created": "2026-09-03",
+      "from": "legislative-election-2022",
+      "id": "legislative-election-2022--costa-resigns-2023--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "costa-resigns-2023",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "cne-legislative-2024",
+        "costa-pinto-teixeira-2019-political-institutions"
+      ],
+      "created": "2026-09-03",
+      "from": "legislative-election-2022",
+      "id": "legislative-election-2022--legislative-election-2024--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "legislative-election-2024",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "cne-legislative-2024",
+        "dre-government-appointments-2015-2024"
+      ],
+      "created": "2026-09-03",
+      "from": "legislative-election-2024",
+      "id": "legislative-election-2024--montenegro-government-2024--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "montenegro-government-2024",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal",
+        "wikipedia-pt"
+      ],
+      "created": "2026-09-04",
+      "from": "lisbon-regicide",
+      "id": "lisbon-regicide--1908-portuguese-legislative-election--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "1908-portuguese-legislative-election",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal",
+        "wheeler-1978-republican-portugal"
+      ],
+      "created": "2026-09-04",
+      "from": "lisbon-regicide",
+      "id": "lisbon-regicide--republic-proclaimed-1910--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "republic-proclaimed-1910",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "meneses-2004-portugal-1914-1926",
+        "wheeler-1978-republican-portugal"
+      ],
+      "created": "2026-09-02",
+      "from": "monarchy-of-the-north-1919",
+      "id": "monarchy-of-the-north-1919--coup-28-may-1926--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "coup-28-may-1926",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ar-2025-confidence-vote"
+      ],
+      "created": "2026-09-03",
+      "from": "montenegro-government-2024",
+      "id": "montenegro-government-2024--government-falls-2025--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "government-falls-2025",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "macqueen-1997-decolonization",
+        "telo-2007-historia-contemporanea"
+      ],
+      "created": "2026-09-04",
+      "from": "mozambique-war-begins-1964",
+      "id": "mozambique-war-begins-1964--1977-mozambican-general-election--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "1977-mozambican-general-election",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "macqueen-1997-decolonization"
+      ],
+      "created": "2026-09-02",
+      "degree": 1,
+      "from": "mozambique-war-begins-1964",
+      "id": "mozambique-war-begins-1964--wiriyamu-massacre-1972--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "wiriyamu-massacre-1972",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "macqueen-1997-decolonization"
+      ],
+      "created": "2026-09-04",
+      "from": "mueda-massacre",
+      "id": "mueda-massacre--mozambique-war-begins-1964--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "mozambique-war-begins-1964",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "maxwell-1995-making-of-portuguese-democracy"
+      ],
+      "created": "2026-09-02",
+      "from": "nationalisations-1975",
+      "id": "nationalisations-1975--25-november-1975--reacted-to",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "25-november-1975",
+      "type": "reacted-to"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "reis-2013-portuguese-slump"
+      ],
+      "created": "2026-09-02",
+      "from": "nationalisations-1975",
+      "id": "nationalisations-1975--imf-agreement-1978--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "imf-agreement-1978",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "costa-pinto-2003-contemporary-portugal"
+      ],
+      "created": "2026-09-02",
+      "from": "nato-founding-1949",
+      "id": "nato-founding-1949--un-admission-1955--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "un-admission-1955",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wheeler-1978-republican-portugal",
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-02",
+      "from": "noite-sangrenta-1921",
+      "id": "noite-sangrenta-1921--coup-28-may-1926--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "coup-28-may-1926",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "cti-2017-2018-fires"
+      ],
+      "created": "2026-09-03",
+      "from": "pedrogao-grande-fires-2017",
+      "id": "pedrogao-grande-fires-2017--october-fires-2017--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "october-fires-2017",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wheeler-1978-republican-portugal",
+        "meneses-2004-portugal-1914-1926"
+      ],
+      "created": "2026-09-02",
+      "from": "pimenta-de-castro-government-1915",
+      "id": "pimenta-de-castro-government-1915--revolt-14-may-1915--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "revolt-14-may-1915",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "rosas-1994-estado-novo",
+        "meneses-2009-salazar"
+      ],
+      "created": "2026-09-04",
+      "from": "portugal-backs-franco-1936",
+      "id": "portugal-backs-franco-1936--iberian-pact--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "iberian-pact",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "rosas-1994-estado-novo",
+        "costa-pinto-2003-contemporary-portugal"
+      ],
+      "created": "2026-09-02",
+      "from": "portugal-backs-franco-1936",
+      "id": "portugal-backs-franco-1936--legiao-portuguesa-founded-1936--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "legiao-portuguesa-founded-1936",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "maxwell-1995-making-of-portuguese-democracy",
+        "rosas-1994-estado-novo"
+      ],
+      "created": "2026-09-02",
+      "degree": 1,
+      "from": "portugal-e-o-futuro-1974",
+      "id": "portugal-e-o-futuro-1974--carnation-revolution-1974--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "carnation-revolution-1974",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wheeler-1978-republican-portugal",
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-04",
+      "from": "republic-proclaimed-1910",
+      "id": "republic-proclaimed-1910--1911-portuguese-constituent-national-assembly-election--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "1911-portuguese-constituent-national-assembly-election",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wheeler-1978-republican-portugal",
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-02",
+      "from": "republic-proclaimed-1910",
+      "id": "republic-proclaimed-1910--constitution-1911--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "constitution-1911",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wheeler-1978-republican-portugal",
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-02",
+      "from": "republic-proclaimed-1910",
+      "id": "republic-proclaimed-1910--law-of-separation-1911--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "law-of-separation-1911",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wheeler-1978-republican-portugal",
+        "meneses-2004-portugal-1914-1926"
+      ],
+      "created": "2026-09-04",
+      "from": "revolt-14-may-1915",
+      "id": "revolt-14-may-1915--1915-portuguese-legislative-election--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "1915-portuguese-legislative-election",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wheeler-1978-republican-portugal"
+      ],
+      "created": "2026-09-02",
+      "from": "revolt-14-may-1915",
+      "id": "revolt-14-may-1915--sidonio-pais-coup-1917--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "sidonio-pais-coup-1917",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "meneses-2009-salazar",
+        "rosas-2012-salazar-e-o-poder"
+      ],
+      "created": "2026-09-02",
+      "from": "salazar-finance-minister-1928",
+      "id": "salazar-finance-minister-1928--salazar-president-of-council-1932--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "salazar-president-of-council-1932",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "rosas-1994-estado-novo",
+        "meneses-2009-salazar"
+      ],
+      "created": "2026-09-02",
+      "from": "salazar-president-of-council-1932",
+      "id": "salazar-president-of-council-1932--constitution-1933--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "constitution-1933",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "macqueen-1997-decolonization",
+        "rosas-1994-estado-novo"
+      ],
+      "created": "2026-09-02",
+      "from": "santa-maria-hijacking-1961",
+      "id": "santa-maria-hijacking-1961--angola-war-begins-1961--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "angola-war-begins-1961",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wheeler-1978-republican-portugal",
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-02",
+      "from": "sidonio-pais-assassinated-1918",
+      "id": "sidonio-pais-assassinated-1918--monarchy-of-the-north-1919--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "monarchy-of-the-north-1919",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wheeler-1978-republican-portugal"
+      ],
+      "created": "2026-09-02",
+      "from": "sidonio-pais-assassinated-1918",
+      "id": "sidonio-pais-assassinated-1918--noite-sangrenta-1921--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "noite-sangrenta-1921",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea"
+      ],
+      "created": "2026-09-02",
+      "from": "spinola-resigns-1974",
+      "id": "spinola-resigns-1974--coup-attempt-11-march-1975--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "coup-attempt-11-march-1975",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "costa-pinto-2003-contemporary-portugal"
+      ],
+      "created": "2026-09-04",
+      "from": "treaty-of-accession-1985",
+      "id": "treaty-of-accession-1985--eec-accession-1986--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "eec-accession-1986",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal",
+        "meneses-2004-portugal-1914-1926"
+      ],
+      "created": "2026-09-04",
+      "from": "treaty-of-windsor",
+      "id": "treaty-of-windsor--germany-declares-war-1916--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "germany-declares-war-1916",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "imf-2016-portugal-ex-post-evaluation",
+        "banco-de-portugal-2014-bes-resolution"
+      ],
+      "created": "2026-09-03",
+      "from": "troika-bailout-2011",
+      "id": "troika-bailout-2011--bes-resolution-2014--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "bes-resolution-2014",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "imf-2016-portugal-ex-post-evaluation",
+        "reis-2013-portuguese-slump"
+      ],
+      "created": "2026-09-03",
+      "from": "troika-bailout-2011",
+      "id": "troika-bailout-2011--troika-programme-ends-2014--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "troika-programme-ends-2014",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "imf-2016-portugal-ex-post-evaluation",
+        "cne-legislative-2015"
+      ],
+      "created": "2026-09-03",
+      "from": "troika-programme-ends-2014",
+      "id": "troika-programme-ends-2014--legislative-election-2015--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "legislative-election-2015",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "macqueen-1997-decolonization"
+      ],
+      "created": "2026-09-02",
+      "from": "un-admission-1955",
+      "id": "un-admission-1955--angola-war-begins-1961--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "angola-war-begins-1961",
+      "type": "precondition-of"
+    }
+  ],
+  "schema": 1,
+  "warnings": []
+}

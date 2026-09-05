@@ -1,0 +1,28 @@
+{
+  "from": "git",
+  "id": "eleicoes-legislativas-regionais-na-madeira-em-1984",
+  "kind": "event",
+  "schema": 1,
+  "versions": [
+    {
+      "first": true,
+      "on": "2026-09-04"
+    },
+    {
+      "fields": [
+        "review",
+        "status"
+      ],
+      "on": "2026-09-04"
+    },
+    {
+      "fields": [
+        "origin",
+        "retraction",
+        "review",
+        "sitelinks"
+      ],
+      "on": "2026-09-04"
+    }
+  ]
+}

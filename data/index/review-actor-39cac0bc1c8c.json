@@ -1,0 +1,2610 @@
+{
+  "kind": "actor",
+  "records": [
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wheeler-1978-republican-portugal",
+        "meneses-2004-portugal-1914-1926"
+      ],
+      "created": "2026-09-02",
+      "degree": 7,
+      "id": "afonso-costa",
+      "kind": "actor",
+      "names": [
+        "Afonso Costa",
+        "Afonso Augusto da Costa"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "maxwell-1995-making-of-portuguese-democracy",
+        "telo-2007-historia-contemporanea"
+      ],
+      "created": "2026-09-02",
+      "degree": 3,
+      "id": "alvaro-cunhal",
+      "kind": "actor",
+      "names": [
+        "Álvaro Cunhal"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "rosas-1994-estado-novo",
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-04",
+      "degree": 4,
+      "id": "americo-tomas",
+      "kind": "actor",
+      "names": [
+        "Américo Tomás",
+        "Américo Thomaz",
+        "Américo Deus Rodrigues Tomás"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "actor-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "macqueen-1997-decolonization",
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-02",
+      "degree": 3,
+      "id": "amilcar-cabral",
+      "kind": "actor",
+      "names": [
+        "Amílcar Cabral",
+        "Abel Djassi"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "cne-legislative-2019",
+        "cne-legislative-2024"
+      ],
+      "created": "2026-09-03",
+      "degree": 8,
+      "id": "andre-ventura",
+      "kind": "actor",
+      "names": [
+        "André Ventura",
+        "André Claro Amaral Ventura"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The birth or founding year, and the end where there is one, were written from memory.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-teixeira-2019-political-institutions",
+        "cne-legislative-2015"
+      ],
+      "created": "2026-09-03",
+      "degree": 12,
+      "id": "antonio-costa",
+      "kind": "actor",
+      "names": [
+        "António Costa",
+        "António Luís Santos da Costa"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The birth or founding year, and the end where there is one, were written from memory.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "maxwell-1995-making-of-portuguese-democracy",
+        "macqueen-1997-decolonization"
+      ],
+      "created": "2026-09-02",
+      "degree": 4,
+      "id": "antonio-de-spinola",
+      "kind": "actor",
+      "names": [
+        "António de Spínola",
+        "General Spínola"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "maxwell-1995-making-of-portuguese-democracy",
+        "telo-2007-historia-contemporanea"
+      ],
+      "created": "2026-09-02",
+      "degree": 6,
+      "id": "armed-forces-movement",
+      "kind": "actor",
+      "names": [
+        "Armed Forces Movement",
+        "Movimento das Forças Armadas",
+        "MFA",
+        "Movimento dos Capitães"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is a convention rather than a date in a document. Decide which it should be and say so in the summary.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal",
+        "reis-2013-portuguese-slump"
+      ],
+      "created": "2026-09-03",
+      "degree": 1,
+      "id": "banco-de-portugal",
+      "kind": "actor",
+      "names": [
+        "Banco de Portugal",
+        "Bank of Portugal"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date",
+          "wikidata-assigned-by-assistant"
+        ],
+        "note": "The birth or founding year, and the end where there is one, were written from memory.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "banco-de-portugal-2014-bes-resolution",
+        "imf-2016-portugal-ex-post-evaluation"
+      ],
+      "created": "2026-09-03",
+      "degree": 1,
+      "id": "banco-espirito-santo",
+      "kind": "actor",
+      "names": [
+        "Banco Espírito Santo",
+        "BES"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The birth or founding year, and the end where there is one, were written from memory.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-teixeira-2019-political-institutions",
+        "telo-2007-historia-contemporanea"
+      ],
+      "created": "2026-09-03",
+      "degree": 4,
+      "id": "bloco-de-esquerda",
+      "kind": "actor",
+      "names": [
+        "Bloco de Esquerda",
+        "BE",
+        "Left Bloc"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The birth or founding year, and the end where there is one, were written from memory.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-04",
+      "degree": 1,
+      "id": "carbonaria",
+      "kind": "actor",
+      "names": [
+        "Carbonária",
+        "Carbonária Portuguesa",
+        "Portuguese Carbonária"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "actor-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-04",
+      "degree": 1,
+      "id": "carlos-i",
+      "kind": "actor",
+      "names": [
+        "Carlos I",
+        "D. Carlos I",
+        "Carlos I of Portugal",
+        "Carlos I de Portugal"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "actor-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "reis-2013-portuguese-slump"
+      ],
+      "created": "2026-09-02",
+      "degree": 8,
+      "id": "cavaco-silva",
+      "kind": "actor",
+      "names": [
+        "Aníbal Cavaco Silva",
+        "Cavaco Silva"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-teixeira-2019-political-institutions",
+        "telo-2007-historia-contemporanea"
+      ],
+      "created": "2026-09-03",
+      "degree": 9,
+      "id": "cds-pp",
+      "kind": "actor",
+      "names": [
+        "CDS - Partido Popular",
+        "CDS-PP",
+        "Centro Democrático Social"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The birth or founding year, and the end where there is one, were written from memory.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "cne-legislative-2019",
+        "costa-pinto-teixeira-2019-political-institutions"
+      ],
+      "created": "2026-09-03",
+      "degree": 7,
+      "id": "chega",
+      "kind": "actor",
+      "names": [
+        "Chega"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The birth or founding year, and the end where there is one, were written from memory.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "costa-pinto-2003-contemporary-portugal"
+      ],
+      "created": "2026-09-05",
+      "degree": 1,
+      "id": "council-of-europe",
+      "kind": "actor",
+      "names": [
+        "Council of Europe",
+        "Conselho da Europa"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date",
+          "claim"
+        ],
+        "note": "The 1949 founding, the September 1976 admission and the claim that the Estado Novo could not have met the membership conditions were written from memory.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "costa-pinto-2003-contemporary-portugal"
+      ],
+      "created": "2026-09-02",
+      "degree": 3,
+      "id": "council-of-the-revolution",
+      "kind": "actor",
+      "names": [
+        "Council of the Revolution",
+        "Conselho da Revolução"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is a convention rather than a date in a document. Decide which it should be and say so in the summary.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "costa-pinto-2003-contemporary-portugal"
+      ],
+      "created": "2026-09-05",
+      "degree": 2,
+      "id": "cplp",
+      "kind": "actor",
+      "names": [
+        "Community of Portuguese Language Countries",
+        "CPLP",
+        "Comunidade dos Países de Língua Portuguesa"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date",
+          "claim"
+        ],
+        "note": "The July 1996 founding, the founding membership and the account of who drove the proposal were written from memory, not read in the cited works.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "macqueen-1997-decolonization"
+      ],
+      "created": "2026-09-02",
+      "degree": 2,
+      "id": "eduardo-mondlane",
+      "kind": "actor",
+      "names": [
+        "Eduardo Mondlane",
+        "Eduardo Chivambo Mondlane"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "place"
+        ],
+        "note": "The point on this record stands for a region or a seat it is not certain of. Check it, and drop it rather than keep a guess.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal",
+        "rosas-1994-estado-novo"
+      ],
+      "created": "2026-09-05",
+      "degree": 2,
+      "id": "efta",
+      "kind": "actor",
+      "names": [
+        "European Free Trade Association",
+        "EFTA",
+        "Associação Europeia de Comércio Livre"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date",
+          "claim"
+        ],
+        "note": "The 1960 convention, the special annex for Portugal and the share of 1960s industrial growth attributed to membership were written from memory, not read in the cited works.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "rosas-1994-estado-novo",
+        "costa-pinto-2003-contemporary-portugal"
+      ],
+      "created": "2026-09-02",
+      "degree": 33,
+      "id": "estado-novo",
+      "kind": "actor",
+      "names": [
+        "Estado Novo",
+        "New State",
+        "Second Portuguese Republic"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "reis-2013-portuguese-slump",
+        "imf-2016-portugal-ex-post-evaluation"
+      ],
+      "created": "2026-09-03",
+      "degree": 2,
+      "id": "european-central-bank",
+      "kind": "actor",
+      "names": [
+        "European Central Bank",
+        "ECB",
+        "Banco Central Europeu",
+        "BCE"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date",
+          "wikidata-assigned-by-assistant"
+        ],
+        "note": "The birth or founding year, and the end where there is one, were written from memory.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "reis-2013-portuguese-slump",
+        "imf-2016-portugal-ex-post-evaluation"
+      ],
+      "created": "2026-09-03",
+      "degree": 2,
+      "id": "european-commission",
+      "kind": "actor",
+      "names": [
+        "European Commission",
+        "Comissão Europeia"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date",
+          "wikidata-assigned-by-assistant"
+        ],
+        "note": "The birth or founding year, and the end where there is one, were written from memory.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "costa-pinto-2003-contemporary-portugal"
+      ],
+      "created": "2026-09-02",
+      "degree": 6,
+      "id": "european-economic-community",
+      "kind": "actor",
+      "names": [
+        "European Economic Community",
+        "EEC",
+        "Comunidade Económica Europeia",
+        "CEE",
+        "Common Market"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "claim",
+          "date",
+          "wikidata-assigned-by-assistant"
+        ],
+        "note": "Closing this actor rather than renaming it is an editorial choice nobody has made deliberately; the closing year follows from it.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "costa-pinto-teixeira-2019-political-institutions"
+      ],
+      "created": "2026-09-05",
+      "degree": 5,
+      "id": "european-union",
+      "kind": "actor",
+      "names": [
+        "European Union",
+        "EU",
+        "União Europeia",
+        "UE"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date",
+          "claim"
+        ],
+        "note": "The Maastricht dates were written from memory. Recording the Union as a polity rather than an institution is the drafter's decision: it is argued in the summary, and it is also what lets the succession from the Community validate, since rule 19 requires both ends of a succession to be the same kind of actor.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "reis-2013-portuguese-slump",
+        "costa-pinto-teixeira-2019-political-institutions"
+      ],
+      "created": "2026-09-05",
+      "degree": 2,
+      "id": "eurozone",
+      "kind": "actor",
+      "names": [
+        "Eurozone",
+        "Euro area",
+        "Economic and Monetary Union",
+        "Zona Euro",
+        "Área do Euro"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date",
+          "claim"
+        ],
+        "note": "The 1999 start and the count of eleven founding members were written from memory. How much of the Portuguese slump the currency caused is the open argument the summary points at, and the record takes no side in it.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wheeler-1978-republican-portugal",
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-02",
+      "degree": 14,
+      "id": "first-portuguese-republic",
+      "kind": "actor",
+      "names": [
+        "First Portuguese Republic",
+        "Primeira República Portuguesa"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "macqueen-1997-decolonization"
+      ],
+      "created": "2026-09-02",
+      "degree": 2,
+      "id": "fnla",
+      "kind": "actor",
+      "names": [
+        "FNLA",
+        "Frente Nacional de Libertação de Angola",
+        "National Front for the Liberation of Angola"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date",
+          "wikidata-assigned-by-assistant"
+        ],
+        "note": "A founding year from memory, and for the movements that were founded under another name it is also a question of which year the record should carry.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "macqueen-1997-decolonization"
+      ],
+      "created": "2026-09-02",
+      "degree": 4,
+      "id": "frelimo",
+      "kind": "actor",
+      "names": [
+        "FRELIMO",
+        "Frente de Libertação de Moçambique",
+        "Mozambique Liberation Front"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date",
+          "place"
+        ],
+        "note": "A founding year from memory, and for the movements that were founded under another name it is also a question of which year the record should carry. The point on this record stands for a region or a seat it is not certain of. Check it, and drop it rather than keep a guess.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "macqueen-1997-decolonization",
+        "telo-2007-historia-contemporanea"
+      ],
+      "created": "2026-09-02",
+      "degree": 2,
+      "id": "fretilin",
+      "kind": "actor",
+      "names": [
+        "FRETILIN",
+        "Frente Revolucionária de Timor-Leste Independente",
+        "Revolutionary Front for an Independent East Timor"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "A founding year from memory, and for the movements that were founded under another name it is also a question of which year the record should carry.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "meneses-2004-portugal-1914-1926",
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-02",
+      "degree": 2,
+      "id": "gomes-da-costa",
+      "kind": "actor",
+      "names": [
+        "Gomes da Costa",
+        "Manuel de Oliveira Gomes da Costa"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "STATUS.md names these as the least certain years of the twenty persons in the dataset.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "rosas-1994-estado-novo",
+        "macqueen-1997-decolonization"
+      ],
+      "created": "2026-09-02",
+      "degree": 1,
+      "id": "henrique-galvao",
+      "kind": "actor",
+      "names": [
+        "Henrique Galvão"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "rosas-1994-estado-novo",
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-02",
+      "degree": 3,
+      "id": "humberto-delgado",
+      "kind": "actor",
+      "names": [
+        "Humberto Delgado",
+        "Humberto da Silva Delgado",
+        "the Fearless General",
+        "General Sem Medo"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "reis-2013-portuguese-slump",
+        "telo-2007-historia-contemporanea"
+      ],
+      "created": "2026-09-02",
+      "degree": 5,
+      "id": "imf",
+      "kind": "actor",
+      "names": [
+        "International Monetary Fund",
+        "IMF",
+        "Fundo Monetário Internacional",
+        "FMI"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "wikidata-assigned-by-assistant"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "macqueen-1997-decolonization",
+        "telo-2007-historia-contemporanea"
+      ],
+      "created": "2026-09-02",
+      "degree": 9,
+      "id": "indonesia",
+      "kind": "actor",
+      "names": [
+        "Indonesia",
+        "Republic of Indonesia",
+        "República da Indonésia"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "macqueen-1997-decolonization",
+        "costa-pinto-2003-contemporary-portugal"
+      ],
+      "created": "2026-09-02",
+      "degree": 1,
+      "id": "jawaharlal-nehru",
+      "kind": "actor",
+      "names": [
+        "Jawaharlal Nehru"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-04",
+      "degree": 2,
+      "id": "joao-franco",
+      "kind": "actor",
+      "names": [
+        "João Franco",
+        "João Franco Castelo-Branco"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "actor-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal",
+        "meneses-2004-portugal-1914-1926"
+      ],
+      "created": "2026-09-05",
+      "degree": 1,
+      "id": "league-of-nations",
+      "kind": "actor",
+      "names": [
+        "League of Nations",
+        "Sociedade das Nações",
+        "SDN"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date",
+          "claim"
+        ],
+        "note": "The founding and closing years and the reading of what the intervention of 1916-18 bought were written from memory, not read in the cited works.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "rosas-1994-estado-novo",
+        "costa-pinto-2003-contemporary-portugal"
+      ],
+      "created": "2026-09-02",
+      "degree": 2,
+      "id": "legiao-portuguesa",
+      "kind": "actor",
+      "names": [
+        "Portuguese Legion",
+        "Legião Portuguesa"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "wikidata-assigned-by-assistant"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-04",
+      "degree": 1,
+      "id": "luis-filipe",
+      "kind": "actor",
+      "names": [
+        "Luís Filipe",
+        "Luís Filipe, Prince Royal of Portugal",
+        "Luís Filipe de Bragança"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "actor-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "cne-legislative-2024"
+      ],
+      "created": "2026-09-03",
+      "degree": 8,
+      "id": "luis-montenegro",
+      "kind": "actor",
+      "names": [
+        "Luís Montenegro",
+        "Luís Filipe Montenegro"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The birth or founding year, and the end where there is one, were written from memory.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wheeler-1978-republican-portugal",
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-04",
+      "degree": 1,
+      "id": "manuel-de-arriaga",
+      "kind": "actor",
+      "names": [
+        "Manuel de Arriaga",
+        "Manuel José de Arriaga Brum da Silveira e Peyrelongue"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "actor-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal",
+        "wheeler-1978-republican-portugal"
+      ],
+      "created": "2026-09-02",
+      "degree": 4,
+      "id": "manuel-ii",
+      "kind": "actor",
+      "names": [
+        "Manuel II",
+        "D. Manuel II",
+        "Manuel II of Portugal"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "rosas-1994-estado-novo",
+        "maxwell-1995-making-of-portuguese-democracy"
+      ],
+      "created": "2026-09-02",
+      "degree": 6,
+      "id": "marcelo-caetano",
+      "kind": "actor",
+      "names": [
+        "Marcelo Caetano",
+        "Marcello Caetano"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "cne-presidential-2016",
+        "costa-pinto-teixeira-2019-political-institutions"
+      ],
+      "created": "2026-09-03",
+      "degree": 9,
+      "id": "marcelo-rebelo-de-sousa",
+      "kind": "actor",
+      "names": [
+        "Marcelo Rebelo de Sousa",
+        "Marcelo"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The birth or founding year, and the end where there is one, were written from memory.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "maxwell-1995-making-of-portuguese-democracy",
+        "telo-2007-historia-contemporanea"
+      ],
+      "created": "2026-09-02",
+      "degree": 15,
+      "id": "mario-soares",
+      "kind": "actor",
+      "names": [
+        "Mário Soares",
+        "Mário Alberto Nobre Lopes Soares"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "rosas-1994-estado-novo",
+        "meneses-2004-portugal-1914-1926"
+      ],
+      "created": "2026-09-02",
+      "degree": 6,
+      "id": "military-dictatorship",
+      "kind": "actor",
+      "names": [
+        "Military Dictatorship",
+        "Ditadura Militar",
+        "Ditadura Nacional"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "macqueen-1997-decolonization",
+        "telo-2007-historia-contemporanea"
+      ],
+      "created": "2026-09-04",
+      "degree": 1,
+      "id": "mlstp",
+      "kind": "actor",
+      "names": [
+        "MLSTP",
+        "Movimento de Libertação de São Tomé e Príncipe",
+        "Movement for the Liberation of São Tomé and Príncipe"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "actor-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "macqueen-1997-decolonization",
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-02",
+      "degree": 3,
+      "id": "mpla",
+      "kind": "actor",
+      "names": [
+        "MPLA",
+        "Movimento Popular de Libertação de Angola",
+        "People's Movement for the Liberation of Angola"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "A founding year from memory, and for the movements that were founded under another name it is also a question of which year the record should carry.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "rosas-1994-estado-novo",
+        "costa-pinto-2003-contemporary-portugal"
+      ],
+      "created": "2026-09-04",
+      "degree": 1,
+      "id": "mud",
+      "kind": "actor",
+      "names": [
+        "Movement of Democratic Unity",
+        "Movimento de Unidade Democrática",
+        "MUD"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "actor-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "costa-pinto-2003-contemporary-portugal"
+      ],
+      "created": "2026-09-02",
+      "degree": 2,
+      "id": "nato",
+      "kind": "actor",
+      "names": [
+        "NATO",
+        "North Atlantic Treaty Organization",
+        "OTAN",
+        "Organização do Tratado do Atlântico Norte"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "rosas-1994-estado-novo",
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-04",
+      "degree": 1,
+      "id": "norton-de-matos",
+      "kind": "actor",
+      "names": [
+        "José Norton de Matos",
+        "Norton de Matos"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "actor-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "banco-de-portugal-2014-bes-resolution",
+        "imf-2016-portugal-ex-post-evaluation"
+      ],
+      "created": "2026-09-03",
+      "degree": 1,
+      "id": "novo-banco",
+      "kind": "actor",
+      "names": [
+        "Novo Banco"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The birth or founding year, and the end where there is one, were written from memory.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal",
+        "reis-2013-portuguese-slump"
+      ],
+      "created": "2026-09-05",
+      "degree": 2,
+      "id": "oecd",
+      "kind": "actor",
+      "names": [
+        "Organisation for Economic Co-operation and Development",
+        "OECD",
+        "Organização para a Cooperação e Desenvolvimento Económico",
+        "OCDE"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date",
+          "claim"
+        ],
+        "note": "The 1961 reconstitution and Portugal's passage into it as a founding member were written from memory. The editorial decision to keep the OEEC and the OECD as two actors is the drafter's and is argued in the summary.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal",
+        "rosas-1994-estado-novo"
+      ],
+      "created": "2026-09-05",
+      "degree": 2,
+      "id": "oeec",
+      "kind": "actor",
+      "names": [
+        "Organisation for European Economic Co-operation",
+        "OEEC",
+        "Organização Europeia de Cooperação Económica",
+        "OECE"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date",
+          "claim"
+        ],
+        "note": "That Portugal first declined Marshall aid and asked for it a year later is written from memory; the years of the organisation likewise. Neither has been read in the cited works.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "rosas-1994-estado-novo",
+        "meneses-2009-salazar"
+      ],
+      "created": "2026-09-04",
+      "degree": 2,
+      "id": "oscar-carmona",
+      "kind": "actor",
+      "names": [
+        "Óscar Carmona",
+        "António Óscar de Fragoso Carmona"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "actor-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "maxwell-1995-making-of-portuguese-democracy",
+        "telo-2007-historia-contemporanea"
+      ],
+      "created": "2026-09-02",
+      "degree": 3,
+      "id": "otelo-saraiva-de-carvalho",
+      "kind": "actor",
+      "names": [
+        "Otelo Saraiva de Carvalho",
+        "Otelo"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "macqueen-1997-decolonization",
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-02",
+      "degree": 4,
+      "id": "paigc",
+      "kind": "actor",
+      "names": [
+        "PAIGC",
+        "Partido Africano para a Independência da Guiné e Cabo Verde",
+        "African Party for the Independence of Guinea and Cape Verde"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "A founding year from memory, and for the movements that were founded under another name it is also a question of which year the record should carry.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wheeler-1978-republican-portugal",
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-02",
+      "degree": 1,
+      "id": "paiva-couceiro",
+      "kind": "actor",
+      "names": [
+        "Henrique Mitchell de Paiva Couceiro",
+        "Paiva Couceiro"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "STATUS.md names these as the least certain years of the twenty persons in the dataset.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wheeler-1978-republican-portugal",
+        "meneses-2004-portugal-1914-1926"
+      ],
+      "created": "2026-09-02",
+      "degree": 6,
+      "id": "partido-democratico",
+      "kind": "actor",
+      "names": [
+        "Democratic Party",
+        "Partido Democrático",
+        "Partido Republicano Português"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wheeler-1978-republican-portugal",
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-04",
+      "degree": 1,
+      "id": "partido-republicano-portugues",
+      "kind": "actor",
+      "names": [
+        "Portuguese Republican Party",
+        "Partido Republicano Português",
+        "PRP"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "actor-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-teixeira-2019-political-institutions",
+        "telo-2007-historia-contemporanea"
+      ],
+      "created": "2026-09-03",
+      "degree": 25,
+      "id": "partido-socialista",
+      "kind": "actor",
+      "names": [
+        "Partido Socialista",
+        "PS",
+        "Socialist Party"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The birth or founding year, and the end where there is one, were written from memory.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-03",
+      "degree": 6,
+      "id": "pcp",
+      "kind": "actor",
+      "names": [
+        "Partido Comunista Português",
+        "PCP",
+        "Portuguese Communist Party"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date",
+          "wikidata-assigned-by-assistant"
+        ],
+        "note": "The birth or founding year, and the end where there is one, were written from memory.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-teixeira-2019-political-institutions",
+        "imf-2016-portugal-ex-post-evaluation"
+      ],
+      "created": "2026-09-03",
+      "degree": 5,
+      "id": "pedro-passos-coelho",
+      "kind": "actor",
+      "names": [
+        "Pedro Passos Coelho",
+        "Pedro Manuel Mamede Passos Coelho"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The birth or founding year, and the end where there is one, were written from memory.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wheeler-1978-republican-portugal",
+        "meneses-2004-portugal-1914-1926"
+      ],
+      "created": "2026-09-02",
+      "degree": 2,
+      "id": "pimenta-de-castro",
+      "kind": "actor",
+      "names": [
+        "Joaquim Pereira Pimenta de Castro",
+        "Pimenta de Castro"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "STATUS.md names these as the least certain years of the twenty persons in the dataset.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "meneses-2004-portugal-1914-1926",
+        "wheeler-1978-republican-portugal"
+      ],
+      "created": "2026-09-02",
+      "degree": 1,
+      "id": "portuguese-expeditionary-corps",
+      "kind": "actor",
+      "names": [
+        "Portuguese Expeditionary Corps",
+        "Corpo Expedicionário Português",
+        "CEP"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "wikidata-assigned-by-assistant"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-teixeira-2019-political-institutions",
+        "telo-2007-historia-contemporanea"
+      ],
+      "created": "2026-09-03",
+      "degree": 34,
+      "id": "psd",
+      "kind": "actor",
+      "names": [
+        "Partido Social Democrata",
+        "PSD",
+        "Partido Popular Democrático",
+        "PPD"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The birth or founding year, and the end where there is one, were written from memory.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "rosas-1994-estado-novo",
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-02",
+      "degree": 4,
+      "id": "pvde-pide-dgs",
+      "kind": "actor",
+      "names": [
+        "PIDE",
+        "Polícia Internacional e de Defesa do Estado",
+        "PVDE",
+        "Polícia de Vigilância e Defesa do Estado",
+        "DGS",
+        "Direcção-Geral de Segurança"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "wikidata-assigned-by-assistant"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "maxwell-1995-making-of-portuguese-democracy"
+      ],
+      "created": "2026-09-02",
+      "degree": 5,
+      "id": "ramalho-eanes",
+      "kind": "actor",
+      "names": [
+        "Ramalho Eanes",
+        "António dos Santos Ramalho Eanes"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-04",
+      "degree": 1,
+      "id": "regenerator-party",
+      "kind": "actor",
+      "names": [
+        "Regenerator Party",
+        "Partido Regenerador"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "actor-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "macqueen-1997-decolonization",
+        "costa-pinto-2003-contemporary-portugal"
+      ],
+      "created": "2026-09-02",
+      "degree": 4,
+      "id": "republic-of-india",
+      "kind": "actor",
+      "names": [
+        "Republic of India",
+        "India",
+        "Índia"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "banco-de-portugal-2014-bes-resolution"
+      ],
+      "created": "2026-09-03",
+      "degree": 1,
+      "id": "ricardo-salgado",
+      "kind": "actor",
+      "names": [
+        "Ricardo Salgado",
+        "Ricardo Espírito Santo Silva Salgado"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The birth or founding year, and the end where there is one, were written from memory.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "meneses-2009-salazar",
+        "rosas-2012-salazar-e-o-poder"
+      ],
+      "created": "2026-09-02",
+      "degree": 17,
+      "id": "salazar",
+      "kind": "actor",
+      "names": [
+        "António de Oliveira Salazar",
+        "Salazar"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "macqueen-1997-decolonization",
+        "telo-2007-historia-contemporanea"
+      ],
+      "created": "2026-09-04",
+      "degree": 1,
+      "id": "sao-tome-and-principe",
+      "kind": "actor",
+      "names": [
+        "São Tomé and Príncipe",
+        "São Tomé e Príncipe",
+        "Democratic Republic of São Tomé and Príncipe"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "actor-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "costa-pinto-teixeira-2019-political-institutions"
+      ],
+      "created": "2026-09-05",
+      "degree": 2,
+      "id": "schengen-area",
+      "kind": "actor",
+      "names": [
+        "Schengen Area",
+        "Espaço Schengen",
+        "Schengen"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date",
+          "claim"
+        ],
+        "note": "The 1985 agreement, the 1990 convention, Portugal's 1991 signature and the March 1995 entry into force were written from memory, not read in the cited works.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "macqueen-1997-decolonization"
+      ],
+      "created": "2026-09-04",
+      "degree": 2,
+      "id": "sekou-toure",
+      "kind": "actor",
+      "names": [
+        "Ahmed Sékou Touré",
+        "Sékou Touré"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "actor-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wheeler-1978-republican-portugal",
+        "meneses-2004-portugal-1914-1926"
+      ],
+      "created": "2026-09-02",
+      "degree": 2,
+      "id": "sidonio-pais",
+      "kind": "actor",
+      "names": [
+        "Sidónio Pais",
+        "Sidónio Bernardino Cardoso da Silva Pais"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "costa-pinto-2003-contemporary-portugal"
+      ],
+      "created": "2026-09-02",
+      "degree": 33,
+      "id": "third-portuguese-republic",
+      "kind": "actor",
+      "names": [
+        "Third Portuguese Republic",
+        "Terceira República Portuguesa"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "wikidata-assigned-by-assistant"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "rosas-1994-estado-novo",
+        "costa-pinto-2003-contemporary-portugal"
+      ],
+      "created": "2026-09-04",
+      "degree": 4,
+      "id": "uniao-nacional",
+      "kind": "actor",
+      "names": [
+        "National Union",
+        "União Nacional",
+        "UN",
+        "Acção Nacional Popular",
+        "ANP"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "actor-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "macqueen-1997-decolonization"
+      ],
+      "created": "2026-09-02",
+      "degree": 2,
+      "id": "unita",
+      "kind": "actor",
+      "names": [
+        "UNITA",
+        "União Nacional para a Independência Total de Angola",
+        "National Union for the Total Independence of Angola"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "A founding year from memory, and for the movements that were founded under another name it is also a question of which year the record should carry.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "macqueen-1997-decolonization",
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-02",
+      "degree": 2,
+      "id": "united-nations",
+      "kind": "actor",
+      "names": [
+        "United Nations",
+        "UN",
+        "Organização das Nações Unidas",
+        "ONU"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "maxwell-1995-making-of-portuguese-democracy",
+        "telo-2007-historia-contemporanea"
+      ],
+      "created": "2026-09-02",
+      "degree": 2,
+      "id": "vasco-goncalves",
+      "kind": "actor",
+      "names": [
+        "Vasco Gonçalves",
+        "Vasco dos Santos Gonçalves"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    }
+  ],
+  "schema": 1,
+  "warnings": []
+}

@@ -130,6 +130,22 @@
             }
           }
         },
+        "claimedBy": {
+          "description": "Who is reading this record now, and the day they said so. Optional, and never a lock: nothing refuses a save because somebody else holds it, and the record files are a repository two people can edit with no server between them. It expires a week after `on` — a claim nobody released is the end of an evening, not a promise — and Sign takes it off.",
+          "type": "object",
+          "required": ["name", "github", "on"],
+          "additionalProperties": false,
+          "properties": {
+            "name": { "type": "string", "minLength": 1, "maxLength": 120 },
+            "github": {
+              "oneOf": [
+                { "type": "null" },
+                { "type": "string", "pattern": "^[A-Za-z0-9-]{1,39}$" }
+              ]
+            },
+            "on": { "$ref": "#/properties/created" }
+          }
+        },
         "flags": {
           "type": "array",
           "items": { "type": "string", "minLength": 1, "maxLength": 40, "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" }

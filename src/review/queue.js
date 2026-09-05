@@ -19,7 +19,8 @@
 import { citedSources } from '../validate/rules.js';
 import { citationsOf, unverified } from './citations.js';
 import { CONTRIBUTED_KINDS } from '../kinds.js';
-import { isDraft } from '../origin.js';
+import { isDraft, originTool } from '../origin.js';
+import { claimOf } from './claim.js';
 
 // What the assistant's drafts were signed with before `review.status`
 // existed. Sign still takes it off `authors` — the marker is attribution and
@@ -57,7 +58,11 @@ export const NO_IDENTIFIER = 'no-identifier';
 // `authors`, and the second is why a tombstone in the list is one — a digest
 // that carried neither would send the dashboard back to the record files for
 // the two questions it asks most.
-export const DIGEST_KEYS = Object.freeze(['kind', 'id', 'status', 'authors', 'review', 'origin', 'retraction', 'title', 'names', 'from', 'to', 'type', 'isbn', 'doi', 'cites', 'entry']);
+// `created`, `revised` and `degree` are the three the sort keys read: how
+// long a record has been waiting, and how much of the atlas hangs on it. The
+// first two are copied off the record; `degree` is not on any record and is
+// counted by the build (degreesOf, below).
+export const DIGEST_KEYS = Object.freeze(['kind', 'id', 'status', 'authors', 'created', 'revised', 'review', 'origin', 'retraction', 'title', 'names', 'from', 'to', 'type', 'isbn', 'doi', 'cites', 'entry', 'degree']);
 
 // True of a record whose full entry has been written, and of the digest that
 // stands for one: on a record it is the prose itself, on a digest the `entry`
@@ -67,14 +72,72 @@ export function hasBody(record) {
   return typeof record?.body === 'string' && record.body.trim() !== '';
 }
 
-export function digestOf(record) {
+export function digestOf(record, { degree = 0 } = {}) {
   const digest = {};
   for (const key of DIGEST_KEYS) if (Object.hasOwn(record ?? {}, key)) digest[key] = record[key];
   const cites = citedSources(record);
   if (cites.length) digest.cites = cites;
   // Whether the full entry has been written, never the entry itself.
   if (hasBody(record)) digest.entry = true;
+  // Counted against the whole atlas by whoever builds the digest, because a
+  // record cannot see how much hangs on it. Zero is left out: it is the
+  // common case and the absent key reads the same.
+  if (degree) digest.degree = degree;
   return digest;
+}
+
+// How much of the atlas already hangs on each record: the edges that touch an
+// event, the events that name an actor or happen at a place, the narratives
+// that walk a link, the records that cite a source. `Map<"kind:id", n>`, one
+// pass over the topology.
+//
+// It is the reference picker's own measure (src/contribute/picker.js), asked
+// here of every draft rather than of the eight rows of a typeahead, and it is
+// the queue's most useful order: an event forty edges hang on is a worse
+// place for an unread claim to sit than one that nothing points at.
+export function degreesOf(topology = {}) {
+  const degrees = new Map();
+  const bump = (kind, id, by = 1) => {
+    if (typeof id !== 'string' || id === '' || !by) return;
+    degrees.set(`${kind}:${id}`, (degrees.get(`${kind}:${id}`) ?? 0) + by);
+  };
+  const live = (r) => !r?.status || r.status === 'active';
+  for (const edge of topology.edges ?? []) {
+    if (!live(edge)) continue;
+    bump('event', edge.from);
+    bump('event', edge.to);
+  }
+  for (const event of topology.events ?? []) {
+    if (!live(event)) continue;
+    bump('place', event.place);
+    for (const a of event.actors ?? []) bump('actor', a?.actor);
+  }
+  for (const relation of topology.relations ?? []) {
+    if (!live(relation)) continue;
+    bump('actor', relation.from);
+    bump('actor', relation.to);
+  }
+  for (const presence of topology.presences ?? []) {
+    if (!live(presence)) continue;
+    bump('actor', presence.actor);
+  }
+  // A step points at an event or at the link between two, and the step says
+  // which only by which list the id is in; either way the narrative is one
+  // more thing that would have to be rewritten.
+  const edgeIds = new Set((topology.edges ?? []).map((e) => e?.id));
+  for (const narrative of topology.narratives ?? []) {
+    if (!live(narrative)) continue;
+    for (const step of narrative.steps ?? []) bump(edgeIds.has(step?.ref) ? 'edge' : 'event', step?.ref);
+  }
+  for (const source of topology.sources ?? []) {
+    bump('source', source.id, source.citationCount ?? (source.citations ?? []).length);
+  }
+  // A narrative's own degree is what it walks: nothing points at a narrative,
+  // and a walk of forty steps is a bigger thing to read than one of three.
+  for (const narrative of topology.narratives ?? []) {
+    if (live(narrative)) bump('narrative', narrative.id, (narrative.steps ?? []).length);
+  }
+  return degrees;
 }
 
 export function countDrafts(records) {
@@ -131,6 +194,12 @@ export function buildQueue(records, { warnings = [] } = {}) {
       status: record.status,
       flags: flagsOf(record, byId),
       note: record.review?.note ?? null,
+      // The three the sort keys read. `tool` is null where a person wrote the
+      // record, which is a filter of its own and not a missing value.
+      degree: Number(record.degree ?? 0),
+      revised: record.revised ?? record.created ?? null,
+      tool: originTool(record),
+      claim: claimOf(record),
       // Not a flag: a flag is a thing to look at, and this is a count of
       // what is left to do on a record already open.
       unverified: unverified(record).length,
@@ -161,14 +230,71 @@ export function flagCounts(queue) {
   return [...counts].sort((a, b) => b[1] - a[1] || (a[0] < b[0] ? -1 : 1)).map(([flag, count]) => ({ flag, count }));
 }
 
-export function filterQueue(queue, { kind = null, flag = null, text = '' } = {}) {
+// `tool` is `origin.tool` — which writer made the record — and the string
+// `'hand'` for the records no writer made. It is the other half of the queue
+// being defined by `review.status`: once every unread record is in the list,
+// whoever wrote it, "the import's rows" and "what people sent in" are two
+// piles a reviewer wants to work through separately (health review A,
+// finding 8).
+export const BY_HAND = 'hand';
+
+export function filterQueue(queue, { kind = null, flag = null, tool = null, text = '' } = {}) {
   const needle = String(text ?? '').trim().toLowerCase();
   return (queue ?? []).filter((item) => {
     if (kind && item.kind !== kind) return false;
     if (flag && !item.flags.includes(flag)) return false;
+    if (tool && (item.tool ?? BY_HAND) !== tool) return false;
     if (needle && !`${item.id} ${item.label}`.toLowerCase().includes(needle)) return false;
     return true;
   });
+}
+
+// Which writer wrote how much of the queue: the filter list, built from what
+// is there rather than from ORIGIN_TOOLS, so a writer with nothing waiting
+// has no chip.
+export function toolCounts(queue) {
+  const counts = new Map();
+  for (const item of queue ?? []) {
+    const tool = item.tool ?? BY_HAND;
+    counts.set(tool, (counts.get(tool) ?? 0) + 1);
+  }
+  return [...counts].sort((a, b) => b[1] - a[1] || (a[0] < b[0] ? -1 : 1)).map(([tool, count]) => ({ tool, count }));
+}
+
+// The four orders the list can be read in, and what each is for.
+//
+//   flags   what the validator and the drafter asked to have looked at,
+//           most first: the queue's own definition of "worst".
+//   degree  how much of the atlas hangs on the record, most first: an
+//           unread claim under forty edges is worse than one under none.
+//   age     longest unread first, by `revised`: what the queue has been
+//           carrying since before anybody was counting.
+//   kind    the registry's order, then id — what the queue always was, and
+//           the order a reviewer working through one kind wants.
+export const SORT_KEYS = Object.freeze(['flags', 'degree', 'age', 'kind']);
+export const SORT_LABELS = Object.freeze({
+  flags: 'flags', degree: 'degree', age: 'oldest', kind: 'kind',
+});
+
+const byId = (a, b) => (a.id < b.id ? -1 : a.id > b.id ? 1 : 0);
+
+// Never in place: the list is held once and read in four orders, and sorting
+// the held one would reorder what another view is drawing from.
+export function sortQueue(queue, key = 'kind') {
+  const rows = [...(queue ?? [])];
+  if (key === 'flags') {
+    return rows.sort((a, b) => b.flags.length - a.flags.length || b.degree - a.degree || byId(a, b));
+  }
+  if (key === 'degree') {
+    return rows.sort((a, b) => b.degree - a.degree || b.flags.length - a.flags.length || byId(a, b));
+  }
+  if (key === 'age') {
+    // A record with no date sorts oldest: it has been waiting since before
+    // the field existed, which is exactly as long as it looks.
+    const on = (item) => item.revised ?? '';
+    return rows.sort((a, b) => (on(a) < on(b) ? -1 : on(a) > on(b) ? 1 : 0) || byId(a, b));
+  }
+  return rows.sort((a, b) => kindRank(a.kind) - kindRank(b.kind) || byId(a, b));
 }
 
 // How much is left, by kind and in total. `reviewed` counts what a person
