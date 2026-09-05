@@ -137,3 +137,73 @@ test('the note takes no room while the timeline is showing the whole world', { s
     assert.ok(fit.lowestBar <= fit.svgHeight);
   }, { device: { width: 1280, height: 700, deviceScaleFactor: 1 } });
 });
+
+// --- the nodes are kept, not built again -----------------------------------
+//
+// The timeline emptied its whole <svg> and built it back on every state
+// change, so a click on a bar cost the browser every lane, every tick, every
+// bar and the band all over again (health review B, finding 23). Since H4c
+// each kind of element has a layer of its own and the layer hands its
+// children back to the next render; only the numbers on them change.
+//
+// This cannot be seen without a real layout and a real MutationObserver,
+// which is why it is here and not in the pure suite.
+test('a state change updates the bars in place and does not rebuild them', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await open(page, url(''), READY);
+    // Every element the timeline has drawn, watched for children coming and
+    // going. `subtree` so the layers themselves are covered.
+    // Elements only. A bar that now stands for a different event still has
+    // its own <title>, and the text inside that title is replaced — a text
+    // node coming and going is the label changing, not the drawing being
+    // rebuilt, and it is the element that costs layout.
+    await page.eval(`
+      window.__added = 0;
+      window.__removed = 0;
+      new MutationObserver((records) => {
+        for (const r of records) {
+          for (const n of r.addedNodes) if (n.nodeType === 1) window.__added += 1;
+          for (const n of r.removedNodes) if (n.nodeType === 1) window.__removed += 1;
+        }
+      }).observe(document.querySelector('#timeline svg.timeline'), { childList: true, subtree: true });
+      return true;`);
+    const before = await page.eval("return document.querySelectorAll('#timeline svg.timeline *').length;");
+
+    const first = await page.eval(`
+      const el = document.querySelector('#timeline rect.bar[data-id]');
+      return { id: el.getAttribute('data-id'), before: el.getAttribute('class') };`);
+    // Selecting a bar changes the class of that bar and of everything the
+    // selection emphasises, and nothing else about the picture.
+    await page.eval(`
+      document.querySelector('#timeline rect.bar[data-id="${first.id}"]').dispatchEvent(
+        new MouseEvent('click', { bubbles: true }));
+      return true;`);
+    await waitFor(
+      page,
+      `return document.querySelector('#timeline rect.bar[data-id="${first.id}"]')?.classList.contains('selected');`,
+      'the bar to be drawn as selected',
+    );
+    const churn = await page.eval('return { added: window.__added, removed: window.__removed };');
+    const after = await page.eval("return document.querySelectorAll('#timeline svg.timeline *').length;");
+    // A handful: the bar that was opened leaves the packed rows for the layer
+    // of what the reader is holding, and takes a title and a label with it.
+    // Before H4c every element in the drawing was removed and made again on
+    // every state change, which on this dataset is some hundreds and at
+    // twenty thousand events is tens of thousands.
+    assert.ok(before > 100, `the atlas drew something (${before} elements)`);
+    assert.ok(churn.removed < 10, `the drawing was not rebuilt (${churn.removed} of ${before} elements removed)`);
+    assert.ok(churn.added < 10, `nor built again (${churn.added} elements added)`);
+    assert.ok(Math.abs(after - before) < 10, `and it is the same drawing (${before} to ${after})`);
+
+    // And the layers are still the only children of the <svg>: nothing was
+    // appended to the root behind their backs.
+    const shape = await page.eval(`
+      const svg = document.querySelector('#timeline svg.timeline');
+      return {
+        children: [...svg.children].map((el) => el.getAttribute('class')),
+        strays: [...svg.children].filter((el) => el.tagName !== 'g').length,
+      };`);
+    assert.equal(shape.strays, 0, shape.children.join(' · '));
+    assert.ok(shape.children.includes('layer layer-bars'));
+  }, { device: { width: 1280, height: 900, deviceScaleFactor: 1 } });
+});

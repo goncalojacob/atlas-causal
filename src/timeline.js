@@ -22,7 +22,7 @@
 // event, the walked path, the events of the selected actor — is never
 // stacked.
 
-import { svg, svgTitle } from './util/dom.js';
+import { svg, reuse } from './util/dom.js';
 import { createLinearScale } from './timeline-scale.js';
 import { clusterPoints } from './cluster.js';
 import { fromAstronomical, formatYear } from './util/dates.js';
@@ -33,6 +33,7 @@ import { workingSet, heldSet } from './emphasis.js';
 import { walkOrSelect } from './chain.js';
 import { lanesFor, rowLanes, laneOf, barBox } from './lanes.js';
 import { eventsInView } from './util/viewport.js';
+import { densityPath } from './density.js';
 
 const LANE_HEIGHT = 34;
 // A packed row carries no label, so it needs only the height of a bar and
@@ -68,9 +69,13 @@ const BADGE_SIZE = 10;
 // The stub an event past the margin is drawn as: a tick on the floor of its
 // lane, faded, with no title and no click. It is not a bar — it says the
 // dataset carries on past what the reader is looking at, and nothing else
-// (ARCHITECTURE.md, "The window is what the views draw").
+// (ARCHITECTURE.md, "The window is what the views draw"). Where several fall
+// on one column they are drawn as one, as tall as their number asks up to
+// `STUB_TALLEST`: one path per row rather than one rect per event
+// (density.js).
 const STUB_WIDTH = 2;
 const STUB_HEIGHT = 3;
+const STUB_TALLEST = 9;
 
 export function createTimeline(container, { atlas, state, createScale = createLinearScale, onCluster = null }) {
   const root = svg('svg', { class: 'timeline', role: 'group', 'aria-label': 'Timeline and the window of time' });
@@ -116,6 +121,21 @@ export function createTimeline(container, { atlas, state, createScale = createLi
   // (owner, 5 September).
   let paneHeight = 0;
   let scale = null;
+  // The layers, made once and kept. Everything this file draws goes into one
+  // of them, in this order — which is the z-order, and the only place it is
+  // decided — and each layer hands its children back to the next render
+  // instead of being emptied and filled again (util/dom.js, `reuse`). One
+  // layer per kind of element, because a layer that alternated <rect> and
+  // <text> would swap one for the other on every render and keep nothing.
+  const layers = {};
+  for (const name of [
+    'lanes', 'laneLabels', 'ticks', 'tickLabels', 'band', 'strips',
+    'bars', 'badges', 'held', 'heldLabels', 'handles', 'handleLabels',
+  ]) {
+    layers[name] = svg('g', { class: `layer layer-${name}` });
+    root.appendChild(layers[name]);
+  }
+
   // What the last render drew, so a click on a stack can be answered with the
   // cluster itself rather than an id the caller would have to look up.
   let drawn = new Map();
@@ -366,7 +386,7 @@ export function createTimeline(container, { atlas, state, createScale = createLi
   const barHeight = () => Math.max(8, laneHeight - 16);
   const barTop = (i) => AXIS_HEIGHT + i * laneHeight + (laneHeight - barHeight()) / 2;
 
-  function laneBars(root_, lane, i, events, s, window, actorIds, narrativeIds, pathIds, reachable) {
+  function laneBars(bars, badges, lane, i, events, s, window, actorIds, narrativeIds, pathIds, reachable) {
     const y = barTop(i);
     const height_ = barHeight();
     // barBox is lanes.js's, and it is the geometry the packing itself used:
@@ -404,19 +424,21 @@ export function createTimeline(container, { atlas, state, createScale = createLi
       const title = count
         ? `${item.event.title} — and ${count} more here`
         : item.inside ? item.event.title : `${item.event.title} — outside the window`;
-      const data = key === null ? { 'data-id': item.id } : { 'data-cluster': key };
-      const el = svg('rect', {
+      // One of the two, never both: an element kept from the last render
+      // would otherwise still name the cluster it used to stand for. `reuse`
+      // drops an attribute it set before and is not given now.
+      const data = key === null
+        ? { 'data-id': item.id, 'data-cluster': null }
+        : { 'data-cluster': key, 'data-id': null };
+      const el = bars.take('rect', {
         x: item.x, y, width: item.width, height: height_, rx: 3, class: classes, ...data,
         ...barControl(lane.id, title),
-      }, [svgTitle(title)]);
-      root_.appendChild(el);
+      }, { title });
       if (count) {
-        const badge = svg('text', {
+        badges.take('text', {
           x: item.x + item.width + 3, y: y + height_ / 2, class: `cluster-count ${item.inside ? '' : 'faded'}`.trim(),
           'dominant-baseline': 'middle', 'font-size': BADGE_SIZE, 'data-cluster': key,
-        });
-        badge.textContent = `+${count}`;
-        root_.appendChild(badge);
+        }, { text: `+${count}` });
       }
       return el;
     };
@@ -476,7 +498,9 @@ export function createTimeline(container, { atlas, state, createScale = createLi
 
   function draw(s) {
     const wasFocused = focusedBar();
-    root.replaceChildren();
+    // Each layer hands its children out from the start again; whatever this
+    // render does not ask for is dropped by `done()` at the end.
+    const into = Object.fromEntries(Object.entries(layers).map(([name, g]) => [name, reuse(g)]));
     drawn = new Map();
     const window = resolveWindow(s, atlas.extent);
     // What is drawn as a bar at all: the band and one period either side of
@@ -557,47 +581,53 @@ export function createTimeline(container, { atlas, state, createScale = createLi
 
     lanes.forEach((lane, i) => {
       const y = AXIS_HEIGHT + i * laneHeight;
-      root.appendChild(svg('rect', { x: 0, y, width, height: laneHeight, class: `lane ${i % 2 ? 'odd' : 'even'}` }));
+      into.lanes.take('rect', { x: 0, y, width, height: laneHeight, class: `lane ${i % 2 ? 'odd' : 'even'}` });
       if (!lane.label) return;
-      const label = svg('text', { x: 10, y: y + laneHeight / 2, class: `lane-label ${lane.other ? 'other' : ''}`.trim(), 'dominant-baseline': 'middle' }, [svgTitle(lane.label)]);
-      label.textContent = lane.label.length > 16 ? `${lane.label.slice(0, 15).trimEnd()}…` : lane.label;
-      root.appendChild(label);
+      into.laneLabels.take('text', {
+        x: 10, y: y + laneHeight / 2, class: `lane-label ${lane.other ? 'other' : ''}`.trim(), 'dominant-baseline': 'middle',
+      }, { text: lane.label.length > 16 ? `${lane.label.slice(0, 15).trimEnd()}…` : lane.label });
     });
 
     for (const tick of scale.ticks(Math.max(4, Math.floor((width - LABEL_WIDTH) / 90)))) {
       const x = scale.x(tick.value);
-      root.appendChild(svg('line', { x1: x, y1: AXIS_HEIGHT - 6, x2: x, y2: height, class: 'tick' }));
-      const t = svg('text', { x, y: AXIS_HEIGHT - 10, class: 'tick-label', 'text-anchor': 'middle' });
-      t.textContent = tick.label;
-      root.appendChild(t);
+      into.ticks.take('line', { x1: x, y1: AXIS_HEIGHT - 6, x2: x, y2: height, class: 'tick' });
+      into.tickLabels.take('text', { x, y: AXIS_HEIGHT - 10, class: 'tick-label', 'text-anchor': 'middle' }, { text: tick.label });
     }
 
     // The band under the bars, its handles over them: the shading must not
     // hide a record, and a handle must always be grabbable.
-    if (window) root.appendChild(bandShade(window));
+    if (window) bandShade(into.band, window);
 
     const byLane = new Map(lanes.map((lane) => [lane.id, []]));
     for (const event of near) {
       const lane = laneOf(event, lanes);
       if (lane) byLane.get(lane.id).push(event);
     }
-    // The stubs first, under everything: a tick on the floor of the lane the
-    // event belongs to, or of the first row when there are no named lanes and
-    // the packing never gave it one. Not a control — no id, no title, no
-    // focus — because a two-pixel tick is not something to aim at.
-    for (const event of far) {
-      const lane = laneOf(event, lanes);
-      const i = lane ? lanes.indexOf(lane) : 0;
-      if (i < 0 || lanes.length === 0) continue;
-      root.appendChild(svg('rect', {
-        x: barBox(event, scale, { openEnd: domain[1] }).x,
-        y: barTop(i) + barHeight() - STUB_HEIGHT,
-        width: STUB_WIDTH, height: STUB_HEIGHT, class: 'bar stub faded', 'aria-hidden': 'true',
-      }));
+    // The strip first, under everything: one path per row, on the floor of
+    // the lane the events belong to, or of the first row when there are no
+    // named lanes and the packing never gave them one. Not a control — no
+    // id, no title, no focus — because a two-pixel tick is not something to
+    // aim at, and sixteen thousand of them were sixteen thousand nodes the
+    // browser rebuilt on every move of the band (density.js).
+    if (lanes.length > 0) {
+      const beyond = new Map();
+      for (const event of far) {
+        const lane = laneOf(event, lanes);
+        const i = lane ? lanes.indexOf(lane) : 0;
+        if (i < 0) continue;
+        if (!beyond.has(i)) beyond.set(i, []);
+        beyond.get(i).push(barBox(event, scale, { openEnd: domain[1] }).x);
+      }
+      // In row order, so a strip stays the same element from render to
+      // render and only its `d` changes.
+      for (const i of [...beyond.keys()].sort((a, b) => a - b)) {
+        const d = densityPath(beyond.get(i), { floor: barTop(i) + barHeight(), unit: STUB_WIDTH, min: STUB_HEIGHT, max: STUB_TALLEST });
+        if (d) into.strips.take('path', { d, class: 'bar stub faded', 'aria-hidden': 'true' });
+      }
     }
     const deferred = [];
     lanes.forEach((lane, i) => {
-      for (const item of laneBars(root, lane, i, byLane.get(lane.id), s, window, actorIds, narrativeIds, pathIds, reachable)) {
+      for (const item of laneBars(into.bars, into.badges, lane, i, byLane.get(lane.id), s, window, actorIds, narrativeIds, pathIds, reachable)) {
         deferred.push({ item, i });
       }
     });
@@ -613,27 +643,28 @@ export function createTimeline(container, { atlas, state, createScale = createLi
         item.onPath ? 'on-path' : '',
         item.selected ? 'selected' : '',
       ].filter(Boolean).join(' ');
-      root.appendChild(svg('rect', {
+      into.held.take('rect', {
         x: item.x, y, width: item.width, height: barHeight(), rx: 3, class: classes, 'data-id': item.id,
         ...barControl(lanes[i]?.id ?? '', item.event.title),
-      }, [svgTitle(item.event.title)]));
+      }, { title: item.event.title });
       if (item.selected || item.onPath) {
-        const text = svg('text', { x: item.x + item.width + 4, y: y + barHeight() / 2, class: `bar-label ${item.selected ? 'selected' : ''}`, 'dominant-baseline': 'middle' });
-        text.textContent = item.event.title;
-        root.appendChild(text);
+        into.heldLabels.take('text', {
+          x: item.x + item.width + 4, y: y + barHeight() / 2, class: `bar-label ${item.selected ? 'selected' : ''}`, 'dominant-baseline': 'middle',
+        }, { text: item.event.title });
       }
     }
 
-    if (window) for (const el of bandHandles(window, s)) root.appendChild(el);
+    if (window) bandHandles(into.handles, into.handleLabels, window, s);
 
+    for (const layer of Object.values(into)) layer.done();
     applyRoving();
     restoreFocus(wasFocused);
   }
 
-  function bandShade({ from, to }) {
+  function bandShade(into, { from, to }) {
     const x0 = scale.x(from);
     const x1 = scale.x(to);
-    return svg('rect', {
+    into.take('rect', {
       x: x0, y: MARKER_HEIGHT, width: Math.max(x1 - x0, 1), height: height - MARKER_HEIGHT,
       class: 'window-band', 'data-window': 'band',
       // Focusable, so the arrow keys slide the band as they nudge a handle;
@@ -644,14 +675,13 @@ export function createTimeline(container, { atlas, state, createScale = createLi
       'aria-valuemax': String(fromAstronomical(atlas.extent.max)),
       'aria-valuenow': String(fromAstronomical(from)),
       'aria-valuetext': `${formatYear(fromAstronomical(from))} to ${formatYear(fromAstronomical(to))}`,
-    }, [svgTitle('The window of time. Drag it or the ground to slide, drag an end to widen, the wheel to narrow, double-click a year to snap to its decade.')]);
+    }, { title: 'The window of time. Drag it or the ground to slide, drag an end to widen, the wheel to narrow, double-click a year to snap to its decade.' });
   }
 
   // The two handles, and the one line the far end says about the borders the
   // map is drawing — which is a different year from `to` whenever the window
   // runs past where the outlines stop.
-  function bandHandles({ from, to }, s) {
-    const out = [];
+  function bandHandles(into, labels, { from, to }, s) {
     const ends = [['from', from], ['to', to]];
     // A window one year wide has both handles on the same pixel, and two
     // labels either side of it read as "1911 1911" — a range, which is what
@@ -659,7 +689,7 @@ export function createTimeline(container, { atlas, state, createScale = createLi
     const single = from === to;
     for (const [kind, year] of ends) {
       const x = scale.x(year);
-      const handle = svg('rect', {
+      into.take('rect', {
         x: x - HANDLE_WIDTH / 2, y: MARKER_HEIGHT, width: HANDLE_WIDTH, height: height - MARKER_HEIGHT,
         class: `window-handle ${kind}`, 'data-window': kind, tabindex: '0', role: 'slider',
         'aria-label': kind === 'from' ? 'Start of the window' : 'End of the window',
@@ -667,32 +697,28 @@ export function createTimeline(container, { atlas, state, createScale = createLi
         'aria-valuemax': String(fromAstronomical(atlas.extent.max)),
         'aria-valuenow': String(fromAstronomical(year)),
         'aria-valuetext': formatYear(fromAstronomical(year)),
-      }, [svgTitle(`${kind === 'from' ? 'Start' : 'End'} of the window — ${formatYear(fromAstronomical(year))}`)]);
-      out.push(handle);
+      }, { title: `${kind === 'from' ? 'Start' : 'End'} of the window — ${formatYear(fromAstronomical(year))}` });
       if (single && kind === 'from') continue;
-      const label = svg('text', {
+      labels.take('text', {
         x: single ? x : kind === 'from' ? x - 6 : x + 6, y: MARKER_HEIGHT - 6,
         class: 'window-year', 'text-anchor': single ? 'middle' : kind === 'from' ? 'end' : 'start',
-      });
-      label.textContent = formatYear(fromAstronomical(year));
-      out.push(label);
+      }, { text: formatYear(fromAstronomical(year)) });
     }
     if (s.layers.includes('territories') && atlas.presenceCoverage) {
       const shown = atlas.territoryYear(to);
       // On its own line, at the right edge rather than beside the handle:
       // it is a note about the whole map, not about that year, and beside
       // the handle it collided with the handle's own label.
-      const text = svg('text', {
+      labels.take('text', {
         x: width - 8, y: 12, class: 'window-marker', 'text-anchor': 'end',
+      }, {
+        text: to > atlas.presenceCoverage.to
+          ? `borders as of ${formatYear(fromAstronomical(shown))}, the latest the source covers`
+          : to < atlas.presenceCoverage.from
+            ? `no borders before ${formatYear(fromAstronomical(atlas.presenceCoverage.from))} in this source`
+            : `borders as of ${formatYear(fromAstronomical(shown))}`,
       });
-      text.textContent = to > atlas.presenceCoverage.to
-        ? `borders as of ${formatYear(fromAstronomical(shown))}, the latest the source covers`
-        : to < atlas.presenceCoverage.from
-          ? `no borders before ${formatYear(fromAstronomical(atlas.presenceCoverage.from))} in this source`
-          : `borders as of ${formatYear(fromAstronomical(shown))}`;
-      out.push(text);
     }
-    return out;
   }
 
   // Both dimensions are worth redrawing for now: the width decides what the

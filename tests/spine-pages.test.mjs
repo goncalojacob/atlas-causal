@@ -95,12 +95,18 @@ test('a narrow window leaves stubs on the timeline and nothing on the map', { sk
     await open(page, url('index.html?from=2000&to=2025'), ATLAS_READY);
     const drawn = await page.eval(`return {
       stubs: document.querySelectorAll(".timeline .bar.stub").length,
+      rects: document.querySelectorAll("rect.bar.stub").length,
+      lanes: document.querySelectorAll(".timeline .lane").length,
       bars: document.querySelectorAll(".timeline .bar:not(.stub)").length,
       marks: document.querySelectorAll(".map .mark").length,
     };`);
     assert.ok(drawn.stubs > 0, 'the events past the margin are still shown as stubs');
     assert.ok(drawn.bars > 0, 'the events in the window and its margin are bars');
     assert.ok(drawn.marks > 0, 'the window has marks on the map');
+    // Since H4c the stub is one path per row and never one rect per event:
+    // the count is bounded by the lanes, however large the dataset gets.
+    assert.equal(drawn.rects, 0, 'no stub is a rect of its own any more');
+    assert.ok(drawn.stubs <= drawn.lanes, `${drawn.stubs} strips for ${drawn.lanes} lanes`);
   });
 });
 
