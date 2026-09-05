@@ -820,7 +820,7 @@ atlas-causal/
 │   ├── lens.js                   ● pure: the events a focus keeps; removed from every view, not dimmed
 │   ├── grouping.js               ● the picker in the header, and the badge that says which lens is on
 │   ├── narrative.js              ● pure: what a step is about, the chain at it, how far the window opens; narrative-mode.js applies it to the store
-│   ├── data.js                   ● manifest → topology (whole) → record text on demand; lookup tables, adjacency of events by edge and of actors by relation, events by actor and by place, an event's point through its place
+│   ├── data.js                   ● manifest → topology (whole), or the spine since H3a-2 → record text on demand; lookup tables, adjacency of events by edge and of actors by relation, events by actor and by place, an event's point through its place
 │   ├── graph.js                  ● consequences, ancestors, convergence, shortest paths outward and what an event led to by a year; pure functions over adjacency
 │   ├── horizon.js                ● pure: the traversal and the horizon year put together; what the panel lists and the views light
 │   ├── chain.js                  ● pure: the walked chain against the status of its steps; cut at the first that has been retracted, since the later ones were reached through it
@@ -1468,6 +1468,25 @@ A source nothing cites gets no file; its `citationCount` says so. `readIndex`
 walks `data/index/` one level deep and `writeIndex` removes any file or
 directory a fresh build does not name, so rule 16 covers the directory too.
 
+**The loader reads it, since H3a-2.** `loadSpine()` fetches the manifest
+`no-store` and the spine once — it is named by its own hash and served
+`immutable`, so a second call costs a manifest and no more, and a rejection
+is dropped rather than kept as the answer, exactly as `loadGeometry` does
+with a territory shard. `createAtlasFromSpine()` then yields the same atlas
+`createAtlas()` does: the edge tuple becomes an object again with its id
+synthesised as `from--to--type`, and `graph.js`, `horizon.js`, `lens.js` and
+the views cannot tell which file they are standing on. That is what makes
+H3b a switch rather than a rewrite, and it is held to by running the event,
+actor, place and source card suites, the entry page, the horizon and the
+graph queries once over each atlas.
+
+One thing an atlas from the spine cannot answer, because the spine does not
+carry it: which records cite a given source. `retractionPlan` takes them
+pre-fetched instead — `topology.citers`, the one citer file the dashboard
+already holds for the source in hand — and reads `kind` and `id` off the
+rows and nothing else. `loadAtlas`, `loadSources` and `loadNarratives` are
+unchanged, and no page reads the spine yet.
+
 ### Narrative ●
 
 `kind: narrative`. Title, summary, authors, own sources, and `steps`: an
@@ -1548,7 +1567,7 @@ least 40 pixels; a link inside a sentence keeps the line it is set in.
 | `lanes.js` | What a lane is, in all four groupings: which lanes the window offers, which six of them are drawn, which single lane each event belongs in and why, and — with no grouping — the packing of the bars into rows that do not overlap. Pure. | The DOM, the state, and which of the two pictures is asking. |
 | `lens.js` | The set of events a focus keeps — an actor's, a place's, a source's — and what the header calls it. Pure. | The DOM, and that a narrative suspends it, which is one line of state it is given. |
 | `grouping.js` | The picker beside Map \| Graph: the grouping as a select, the lanes as checkboxes with up/down and a filter box, keyboard first; and the badge that says which lens is on. Writes `group`, `lanes` and `focus` and nothing else. | What a lane is, and how anything is drawn. |
-| `data.js` | Reads the manifest, loads the topology whole, fetches record text on demand, resolves aliases and `supersededBy` for every kind, builds adjacency — of events through edges and of actors through relations, each relation listed from both ends — the events of each actor, and each actor's presences and dependencies; loads and caches one geometry shard per year. | How things are drawn. |
+| `data.js` | Reads the manifest, loads the topology whole — or the spine, through `loadSpine` and `createAtlasFromSpine`, which build the same atlas — fetches record text on demand, resolves aliases and `supersededBy` for every kind, builds adjacency — of events through edges and of actors through relations, each relation listed from both ends — the events of each actor, and each actor's presences and dependencies; loads and caches one geometry shard per year. | How things are drawn. |
 | `graph.js` | Consequences, ancestors, convergence, the tree of shortest paths outward and what an event led to by a year. Pure functions over adjacency; results ordered by type, then confidence, or by path length then year. | The DOM. |
 | `horizon.js` | Puts the traversal and the horizon year together: the list the panel draws and the `Map<id, depth>` the map, the graph view and the timeline fade by. Empty unless a year was chosen. | The DOM, and which view is asking. |
 | `citation.js` | One source → the citation as a line, its identifiers as link targets, the order a bibliography sorts in, the grouping of its citers. Escapes nothing: the caller does. | Where it will be drawn. |
@@ -1760,7 +1779,7 @@ from two sources of which either may be the wrong one.
 | Level of detail in the graph ● | built in M25: `alone` and `mergeEdges` in `src/cluster.js`, `stackLayout` in `src/graph-view/layout.js`, stacks and merged lines in `graph-view.js`, a `graph` case in `panel/cluster.js` | the threshold and the zoom limit are one constant each and live together, so a denser atlas is one number; the never-stacked set is one `Set` built in `render`, so a new thing the reader works with joins it in one line |
 | Editorial emphasis on the map | a `prominence` field on the event record; `cluster.js` reads `prominence ?? weight` | ○ reserved by this line: derived `weight` in the index is the only measure now, and it is mechanical. `sitelinks` is **not** it: how many encyclopedias wrote about something is not this atlas's judgement of it |
 | A ninth record kind ● | since H2: **add to the registry** (`src/kinds.js`), **add the schema file** (`schema/v1/<kind>.json` and its line in `validate/schemas.js`), **add the enum** (`kind` in `schema/common/provenance.json`), then one projection in `buildTopology` and one card module in `panel/` | the entry carries the directory, the schema file, the licences, identity and body, the citation, actor and step lists, the form fields' names, the URL parameter and the labels, and the lists the rest of the atlas used to keep are derived from it; `tests/registry.test.mjs` fails on a registry that has drifted from the schemas, which are the one copy that cannot be removed |
-| A sixth edge type or a seventh relation type ● | since H2: **add to the registry** (`src/vocab.js`, with its label and — for a relation — both directions, its endpoints and whether it is acyclic), **add the enum** (`schema/v1/edge.json` or `relation.json`, the `type` enum *and* the `id` pattern, plus `narrative.json`'s step pattern for an edge type), one `.type-*` rule in `style.css`, one line in `about.html` | the two id patterns, the graph's key, `graph.js`'s ordering, the panel cards' labels and rule 19's endpoint table are all built from the list, so the type arrives with them; the consistency test compares the list against the schemas' enums and against the third part of each id pattern |
+| A sixth edge type or a seventh relation type ● | since H2: **add to the registry** (`src/vocab.js`, with its label and — for a relation — both directions, its endpoints and whether it is acyclic), **add the enum** (`schema/v1/edge.json` or `relation.json`, the `type` enum *and* the `id` pattern, plus `narrative.json`'s step pattern for an edge type), one `.type-*` rule in `style.css`, one line in `about.html` | the two id patterns, the id `edgeId` synthesises for a spine tuple, the graph's key, `graph.js`'s ordering, the panel cards' labels and rule 19's endpoint table are all built from the list, so the type arrives with them; the consistency test compares the list against the schemas' enums and against the third part of each id pattern |
 | A fifth grouping or a fourth lens kind ● | since H2: `GROUPS` or `FOCUS_KINDS` in `src/vocab.js`, one case in `lanesFor` or in `lensFor`, one option in the picker | the focus pattern is built from `FOCUS_KINDS` and `state.js` imports it, so the URL grammar follows the vocabulary rather than a second copy of it |
 | A fourth view of the same state | one module, `VIEWS` in `src/vocab.js`, `main.js`'s switch, `index.html`, `style.css`, a `panel/cluster.js` case | since H2 it reads `workingSet(atlas, state)` from `src/emphasis.js` for what the reader is holding, rather than assembling that set a fourth time |
 
