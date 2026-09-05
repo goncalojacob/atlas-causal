@@ -1,6 +1,8 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { parseState, formatState, defaultState, createState } from '../src/state.js';
+import {
+  parseState, formatState, defaultState, createState, parseBbox, formatBbox,
+} from '../src/state.js';
 import { resolveWindow, overlaps, windowAt, decadeOf } from '../src/util/window.js';
 
 test('parse and format round trip', () => {
@@ -20,6 +22,7 @@ test('parse and format round trip', () => {
     layers: ['events'],
     narrative: null,
     step: 0,
+    bbox: null,
   };
   const search = formatState(state);
   assert.equal(search, '?from=1200&to=1250&view=graph&selected=fixture-event-t&source=fixture-source-one&place=fixture-place-one&actor=fixture-actor-one&chain=fixture-event-a--fixture-event-b--caused,fixture-event-b--fixture-event-d--enabled&horizon=1240&layers=events');
@@ -100,7 +103,7 @@ test('the store merges patches and notifies', () => {
     from: null, to: 1220, view: 'map', focus: null, group: 'none', lanes: [],
     selected: 'fixture-event-a', source: null,
     place: null, actor: null, chain: [], horizon: null, layers: ['land', 'territories', 'events'],
-    narrative: null, step: 0,
+    narrative: null, step: 0, bbox: null,
   });
 });
 
@@ -206,4 +209,23 @@ test('the whole of a lens and a grouping round-trips', () => {
   const url = '?from=1960&to=1975&view=graph&focus=actor:salazar&group=actor&lanes=salazar,pide';
   const parsed = parseState(url);
   assert.equal(formatState(parsed), url);
+});
+
+// The map's viewport, because the timeline reads it: a link sent from a
+// corner of the world must open on that corner.
+test('the bbox round-trips, rounded to two decimals', () => {
+  assert.deepEqual(parseState('?bbox=-10,36,-6,43').bbox, [-10, 36, -6, 43]);
+  assert.equal(formatState({ ...defaultState(), bbox: [-10, 36, -6, 43] }), '?bbox=-10,36,-6,43');
+  assert.equal(formatBbox([-9.1372, 36.00049, -6.5, 43.499]), '-9.14,36,-6.5,43.5');
+  assert.equal(formatState({ ...defaultState() }), '', 'no bbox is the world, and the world is the default');
+  const url = '?from=1400&to=1500&bbox=-25.5,32,-6,43';
+  assert.equal(formatState(parseState(url)), url);
+});
+
+test('a bbox that is not one is the world again', () => {
+  assert.equal(parseState('?bbox=-10,36,-6').bbox, null, 'three numbers are not a box');
+  assert.equal(parseState('?bbox=west,36,-6,43').bbox, null);
+  assert.equal(parseState('?bbox=-10,36,-10,43').bbox, null, 'a box with no width is not a box');
+  assert.equal(parseBbox('-10,43,-6,36')[1], 36, 'the ends the wrong way round are still a box');
+  assert.deepEqual(parseBbox('-400,36,400,43'), [-180, 36, 180, 43], 'wider than the world is the world');
 });

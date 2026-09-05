@@ -40,6 +40,16 @@
 // never written to the URL: only a year the reader chose is worth carrying
 // in a link, and only a chosen year lights the reachable set in the views.
 //
+// `bbox` is the part of the world the map is looking at, `[west, south,
+// east, north]`. It is the one piece of the map's pan and zoom that is
+// state, and it is state for one reason only: the timeline reads it, so that
+// panning to the Indian Ocean narrows the lanes to the events there. Which
+// means it has to be shareable, and a link that opened on the whole world
+// after being sent from a corner of it would be a different picture.
+//
+// Null is the world — not "the map is at rest", but "the timeline is not
+// filtered by the map at all", which is what the pin control restores.
+//
 // `narrative` and `step` are a mode rather than another dimension: while a
 // narrative is being read, the two of them are the whole of the URL, and the
 // selection, the chain and the window are derived from the step (narrative.js)
@@ -72,7 +82,35 @@ export function defaultState() {
     from: null, to: null, view: 'map', focus: null, group: 'none', lanes: [],
     selected: null, source: null, place: null,
     actor: null, chain: [], horizon: null, layers: [...LAYERS], narrative: null, step: 0,
+    bbox: null,
   };
+}
+
+// Two decimals is about a kilometre of longitude at these latitudes: finer
+// than any place record is placed, and short enough that the parameter stays
+// readable in a link somebody is about to paste into a message.
+const round2 = (n) => Number(n.toFixed(2));
+const clamp = (n, min, max) => Math.min(max, Math.max(min, n));
+
+// `[west, south, east, north]`, or null for anything that is not four
+// numbers or is inside out. A view wider than the world is clamped to the
+// world rather than refused: the map lets the reader zoom out past the
+// coastlines, and that view is still a view.
+export function parseBbox(text) {
+  const parts = String(text ?? '').split(',');
+  if (parts.length !== 4) return null;
+  const n = parts.map(Number);
+  if (n.some((v) => !Number.isFinite(v))) return null;
+  const west = clamp(Math.min(n[0], n[2]), -180, 180);
+  const east = clamp(Math.max(n[0], n[2]), -180, 180);
+  const south = clamp(Math.min(n[1], n[3]), -90, 90);
+  const north = clamp(Math.max(n[1], n[3]), -90, 90);
+  if (west === east || south === north) return null;
+  return [round2(west), round2(south), round2(east), round2(north)];
+}
+
+export function formatBbox(bbox) {
+  return bbox.map(round2).join(',');
 }
 
 // Garbage in the URL falls back to defaults field by field; a bad chain
@@ -142,6 +180,7 @@ export function parseState(search, defaults = defaultState()) {
     }
     state.lanes = lanes;
   }
+  if (params.has('bbox')) state.bbox = parseBbox(params.get('bbox'));
   if (params.has('view') && VIEWS.includes(params.get('view'))) state.view = params.get('view');
   if (params.has('layers')) {
     state.layers = params.get('layers').split(',').filter((l) => LAYERS.includes(l));
@@ -174,6 +213,7 @@ export function formatState(state, search = '') {
   if (state.place) params.set('place', state.place);
   if (state.actor) params.set('actor', state.actor);
   if (state.chain.length) params.set('chain', state.chain.join(','));
+  if (state.bbox) params.set('bbox', formatBbox(state.bbox));
   if (state.horizon !== null && state.horizon !== undefined) params.set('horizon', String(state.horizon));
   if (state.layers.length !== LAYERS.length || state.layers.some((l, i) => l !== LAYERS[i])) {
     params.set('layers', state.layers.join(','));
