@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "paris-agreement",
   "kind": "event",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,11 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": null,
+  "revised": "2026-09-05",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "m40-retracted"
+    ],
+    "note": "Retracted in M40b: the climate agreement of December 2015. The atlas holds no climate or energy record at all — the Kyoto Protocol was among the candidates the import refused for want of a lane, and the Portuguese fires of 2017 are wired to the reform they produced and not to any climate policy. There is nothing here the agreement can be argued to have changed and nothing here that produced it."
   },
   "wikidata": "Q21707860",
   "sitelinks": 75,

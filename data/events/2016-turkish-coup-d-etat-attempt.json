@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "2016-turkish-coup-d-etat-attempt",
   "kind": "event",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,11 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": null,
+  "revised": "2026-09-05",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "m40-retracted"
+    ],
+    "note": "Retracted in M40b: the failed coup of 15 July 2016 and the purges that followed it. The atlas holds nothing in Turkey between the treaty of Lausanne in 1923 and this night, so there is no record here the attempt can be argued to have changed and none that produced it, and no Portuguese link at all. It would need the Turkish republic's own history — the coups of 1960, 1971 and 1980 at least — before it had an honest edge."
   },
   "wikidata": "Q25906338",
   "sitelinks": 69,
