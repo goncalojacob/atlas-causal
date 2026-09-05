@@ -107,43 +107,43 @@ const startOf = (when) => {
 // query in, groups out. Groups are ordered by their own best match, not by a
 // fixed kind order: typing "sal" means Salazar the person, whose name begins
 // that way, before the events that merely mention him.
-// **A hit is not a copy of its entry, and its year is read once.** One letter
-// typed into a corpus of twenty thousand events matches nearly all of them,
-// and this used to spread every one into a new object and then sort the lot
-// through a comparator that parsed both intervals at each comparison — a
-// third of a second per keystroke, on the thread that draws (health review A,
-// finding 19). Nothing about the answer changes: the entry is carried by
-// reference, the year is worked out once per hit rather than fourteen times,
-// and only the handful of entries the limit actually returns are ever copied.
-// Whether a candidate stands ahead of a hit already held, under the order
-// above. Written out over primitives rather than over two objects, because
-// the candidate does not exist as an object yet: at one letter typed into a
-// corpus of twenty thousand, nearly every entry is a candidate and almost
-// none of them is kept. The year is parsed only if the comparison gets that
-// far, and a hit's own year is parsed once and kept on it.
-function yearOf(hit) {
-  if (hit.start === null) hit.start = startOf(hit.entry.when);
-  return hit.start;
-}
+//
+// **The best `limit` of each kind are held as the scan goes; the whole match
+// is never sorted.** One letter typed into a corpus of twenty thousand
+// matches nearly every entry, and this used to copy each match into a new
+// object, sort the lot, and parse both intervals at every comparison — to
+// show eight rows, a third of a second per keystroke on the thread that draws
+// (health review A, finding 19). The limit is spent group by group and no
+// group can ever give more than `limit` rows, so `limit` per kind is
+// everything the answer can use, and `tests/search.test.mjs` keeps the
+// sort-everything scan and holds the two to the same rows in the same order.
+//
+// `total` is still every match, because the count under the box is what says
+// how much the reader has not been shown.
 
+// Whether a candidate stands ahead of a hit already held, under the order
+// above. Over primitives rather than over two objects, because the candidate
+// is not an object yet: nearly every entry is a candidate and almost none is
+// kept, and the point of the change is not to allocate for the ones that are
+// not. `start` is only read once the first three have tied, so a candidate
+// that loses on rank never has its interval parsed.
 function ahead(rank_, matched, weight, start, id, other) {
   if (rank_ !== other.rank) return rank_ < other.rank;
   if (matched !== other.matched) return matched < other.matched;
   if (weight !== other.weight) return weight > other.weight;
-  const theirs = yearOf(other);
-  if (start !== theirs) return start < theirs;
+  if (start !== other.start) return start < other.start;
   return id < other.id;
+}
+
+// Whether the first three parts of the order already decide it, so that the
+// year can be left unparsed.
+function decided(rank_, matched, weight, other) {
+  return rank_ !== other.rank || matched !== other.matched || weight !== other.weight;
 }
 
 export function search(entries, query, { limit = 8 } = {}) {
   const folded = fold(query);
   if (folded.length === 0) return { groups: [], total: 0, query: '' };
-  // The best `limit` of each kind, in order, and how many there were. The
-  // whole list was sorted until H4c, which at one letter is twenty thousand
-  // objects allocated and sorted so that eight of them can be shown (health
-  // review A, finding 19). Since the limit is spent group by group and no
-  // group can ever give more than `limit` rows, holding `limit` per kind is
-  // holding everything the answer can use.
   const byKind = new Map();
   let total = 0;
   for (const entry of entries) {
@@ -164,17 +164,19 @@ export function search(entries, query, { limit = 8 } = {}) {
       byKind.set(entry.kind, list);
     }
     const weight = entry.weight ?? 0;
-    // Compared against the worst one held before anything is allocated, and
-    // its year is only parsed if rank, name length and weight all tie.
+    // Parsed only when it is needed: `null` until then, and a year of -1 is
+    // a year like any other.
     let start = null;
-    const worse = (other) => {
-      if (best !== other.rank || length !== other.matched || weight !== other.weight) {
-        return !ahead(best, length, weight, 0, entry.id, other);
+    if (list.length >= limit) {
+      // Against the worst one held, before anything is allocated.
+      const worst = list[list.length - 1];
+      if (decided(best, length, weight, worst)) {
+        if (!ahead(best, length, weight, 0, entry.id, worst)) continue;
+      } else {
+        start = startOf(entry.when);
+        if (!ahead(best, length, weight, start, entry.id, worst)) continue;
       }
-      if (start === null) start = startOf(entry.when);
-      return !ahead(best, length, weight, start, entry.id, other);
-    };
-    if (list.length >= limit && worse(list[list.length - 1])) continue;
+    }
     if (start === null) start = startOf(entry.when);
     const hit = { entry, id: entry.id, rank: best, matched: length, weight, start };
     let at = list.length;
