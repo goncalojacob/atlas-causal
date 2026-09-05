@@ -55,6 +55,14 @@
 // selection, the chain and the window are derived from the step (narrative.js)
 // and deliberately not written. A link to a narrative is a link to a place in
 // an argument, not a snapshot of somebody's screen.
+//
+// Two kinds of change, and the browser's Back is the reason: a change of
+// *what is open* — the event, the source, the place, the actor, the
+// narrative, the step — pushes a history entry, and a change of the view
+// only — pan, zoom, the window, the lanes, the layers, the lens — replaces
+// the one there is. Otherwise dragging the time band would fill Back with a
+// hundred frames of the same picture, and opening an actor from an event
+// would leave no way back to the event but searching for it again.
 
 import { isValidYear } from './util/dates.js';
 
@@ -224,34 +232,93 @@ export function formatState(state, search = '') {
   return text ? `?${text}` : '';
 }
 
-// The store. set() merges a patch, writes the URL (replaceState, so the
-// back button is not spammed by dragging the band) and notifies subscribers.
-export function createState(initial, { window: win = null } = {}) {
+// What is *open*: the record the reader is holding, in whichever of the five
+// slots holds it. A change to one of these is somewhere they can come back
+// from, so it pushes a history entry; a change of the view only — pan, zoom,
+// the window, the lanes, the layers, the lens — replaces the entry there is,
+// so that dragging the band does not fill the Back button with a hundred
+// frames of the same picture.
+export const OPENINGS = Object.freeze(['selected', 'source', 'place', 'actor', 'narrative', 'step']);
+
+// Pure, and on the patch: given what is being set and what stands now, does
+// this change push or replace? Setting a field to the value it already has is
+// not an opening — a click on the event already open must not add an entry
+// the reader would then have to press Back twice to get out of.
+export function pushes(patch, before = {}) {
+  return OPENINGS.some((key) => key in patch && patch[key] !== before[key]);
+}
+
+const opening = (state) => Object.fromEntries(OPENINGS.map((key) => [key, state[key] ?? null]));
+const sameOpening = (a, b) => OPENINGS.every((key) => a[key] === b[key]);
+// Long enough that Back always has somewhere to go in a session's reading,
+// short enough that the trail is not a second copy of the session.
+const TRAIL = 50;
+
+// The store. set() merges a patch, writes the URL — pushing when what is open
+// changed, replacing otherwise — and notifies subscribers.
+export function createState(initial, { window: win = null, restore = (s) => s } = {}) {
   let state = { ...defaultState(), ...initial };
   const listeners = new Set();
   const notify = () => {
     for (const fn of listeners) fn(state);
   };
-  const write = () => {
+  // The browser will not say what Back returns to, or whether Forward has
+  // anywhere to go: there is no way to read its stack. So the store keeps its
+  // own trail of the openings it pushed, and popstate walks it. A URL that
+  // lands on neither neighbour — one pasted in, one from before this page
+  // loaded — starts the trail again rather than guessing.
+  let trail = [opening(state)];
+  let at = 0;
+  const write = (push) => {
     if (!win) return;
     const url = `${win.location.pathname}${formatState(state, win.location.search)}`;
-    win.history.replaceState(null, '', url);
+    const here = `${win.location.pathname}${win.location.search}`;
+    // A push to the URL already showing would be an entry that goes nowhere.
+    if (push && url !== here) win.history.pushState(null, '', url);
+    else win.history.replaceState(null, '', url);
   };
   // A URL written before the window existed, or with garbage in it, is
   // normalised once at load: ?year=1975 becomes ?to=1975 in the address bar,
   // so what the reader copies is what the atlas is actually showing.
-  if (win && formatState(state, win.location.search) !== win.location.search) write();
+  if (win && formatState(state, win.location.search) !== win.location.search) write(false);
   if (win) {
     win.addEventListener('popstate', () => {
-      state = parseState(win.location.search, state);
+      // On a popstate the URL is the whole truth about what is open: those
+      // fields are taken from it and not inherited, or going back from an
+      // actor's card to the event's would leave the actor open and Back
+      // could only ever add. Everything else — the window, the lanes, the
+      // layers — still falls back to what stands, because a URL that does
+      // not name them is not asking for them to change. `restore` is where a
+      // narrative's derived selection is put back (narrative-mode.js).
+      const url = parseState(win.location.search);
+      state = restore({ ...parseState(win.location.search, state), ...opening(url), chain: url.chain });
+      const now = opening(state);
+      if (at > 0 && sameOpening(trail[at - 1], now)) at -= 1;
+      else if (at < trail.length - 1 && sameOpening(trail[at + 1], now)) at += 1;
+      else { trail = [now]; at = 0; }
       notify();
     });
   }
   return {
     get: () => state,
+    // What Back would return to and Forward go on to, as openings; null on
+    // either side when there is nowhere to go. The panel names them.
+    trail: () => ({
+      back: at > 0 ? trail[at - 1] : null,
+      forward: at < trail.length - 1 ? trail[at + 1] : null,
+    }),
     set(patch) {
+      const push = pushes(patch, state);
       state = { ...state, ...patch };
-      write();
+      write(push);
+      if (push) {
+        // Anything ahead of here was a future the reader has just replaced,
+        // which is what the browser's own stack does with it too.
+        trail = [...trail.slice(Math.max(0, at + 1 - TRAIL), at + 1), opening(state)];
+        at = trail.length - 1;
+      } else {
+        trail[at] = opening(state);
+      }
       notify();
     },
     subscribe(fn) {

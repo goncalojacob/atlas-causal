@@ -1,7 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import {
-  parseState, formatState, defaultState, createState, parseBbox, formatBbox,
+  parseState, formatState, defaultState, createState, parseBbox, formatBbox, pushes,
 } from '../src/state.js';
 import { resolveWindow, overlaps, windowAt, decadeOf, zoomWindow } from '../src/util/window.js';
 
@@ -256,4 +256,114 @@ test('the wheel never sticks at one year, and never passes the data', () => {
   assert.equal(widened.to - widened.from, 2, 'but a rounding that would stick is nudged');
   const capped = zoomWindow({ from: 1400, to: 1600 }, 1500, 5000, { whole: 300 });
   assert.equal(capped.to - capped.from, 300, 'and it never widens past the data');
+});
+
+// --- Back and Forward -----------------------------------------------------
+
+// A change of *what is open* is somewhere the reader can come back from, so
+// it pushes a history entry; a change of the view only replaces the one
+// there is, or dragging the time band would fill the Back button with a
+// hundred frames of the same picture.
+
+test('the push/replace rule, as a decision on the patch', () => {
+  const before = { ...defaultState(), selected: 'a', actor: null, step: 0 };
+  for (const patch of [{ selected: 'b' }, { actor: 'salazar' }, { place: 'lisbon' },
+    { source: 'maxwell-1995' }, { narrative: 'n' }, { step: 2 },
+    { selected: 'b', chain: ['a--b--caused'] }]) {
+    assert.equal(pushes(patch, before), true, JSON.stringify(patch));
+  }
+  for (const patch of [{ to: 1500 }, { from: 1400, to: 1500 }, { view: 'graph' },
+    { bbox: [1, 2, 3, 4] }, { group: 'region' }, { lanes: ['europe'] },
+    { layers: ['land'] }, { focus: 'actor:salazar' }, { horizon: 1600 },
+    { chain: [] }, {}]) {
+    assert.equal(pushes(patch, before), false, JSON.stringify(patch));
+  }
+  // Setting a field to what it already holds is not an opening: a click on
+  // the event already open must not add an entry to press Back twice out of.
+  assert.equal(pushes({ selected: 'a' }, before), false);
+  assert.equal(pushes({ step: 0 }, before), false);
+});
+
+// A window with just enough of one to hold a store: the two history calls
+// counted, and a location that follows what they wrote.
+function fakeWindow(search = '') {
+  const win = {
+    location: { pathname: '/', search },
+    listeners: {},
+    pushed: [],
+    replaced: [],
+    addEventListener(type, fn) { win.listeners[type] = fn; },
+    history: {
+      pushState(_s, _t, url) { win.pushed.push(url); win.location.search = url.slice(1); },
+      replaceState(_s, _t, url) { win.replaced.push(url); win.location.search = url.slice(1); },
+      // What the browser does on Back: restore the URL, then fire popstate.
+      go(entries, to) { win.location.search = entries[to]; win.listeners.popstate(); },
+    },
+  };
+  return win;
+}
+
+test('opening a record pushes; moving the view replaces', () => {
+  const win = fakeWindow();
+  const store = createState({}, { window: win });
+  store.set({ selected: 'carnation-revolution-1974' });
+  store.set({ to: 1975 });
+  store.set({ bbox: [-10, 36, -6, 42] });
+  store.set({ actor: 'salazar' });
+  assert.deepEqual(win.pushed, [
+    '/?selected=carnation-revolution-1974',
+    '/?to=1975&selected=carnation-revolution-1974&actor=salazar&bbox=-10,36,-6,42',
+  ]);
+  assert.equal(win.replaced.length, 2);
+});
+
+test('the store names what Back returns to and what Forward goes on to', () => {
+  const win = fakeWindow();
+  const store = createState({}, { window: win });
+  assert.deepEqual(store.trail(), { back: null, forward: null });
+
+  store.set({ selected: 'carnation-revolution-1974' });
+  assert.equal(store.trail().back.selected, null, 'back to the atlas with nothing open');
+  assert.equal(store.trail().forward, null);
+
+  store.set({ actor: 'salazar', selected: null });
+  assert.equal(store.trail().back.selected, 'carnation-revolution-1974');
+  assert.equal(store.trail().back.actor, null);
+
+  // The browser's Back: the URL comes back, popstate fires, the store walks
+  // its trail rather than guessing where it landed.
+  const entries = ['', '?selected=carnation-revolution-1974', '?actor=salazar'];
+  win.history.go(entries, 1);
+  assert.equal(store.get().selected, 'carnation-revolution-1974');
+  assert.equal(store.get().actor, null);
+  assert.equal(store.trail().forward.actor, 'salazar');
+  assert.equal(store.trail().back.selected, null);
+
+  win.history.go(entries, 2);
+  assert.equal(store.get().actor, 'salazar');
+  assert.equal(store.trail().forward, null);
+});
+
+test('a change of view after going back does not lose the way forward', () => {
+  const win = fakeWindow();
+  const store = createState({}, { window: win });
+  store.set({ selected: 'a' });
+  store.set({ selected: 'b' });
+  win.history.go(['', '?selected=a', '?selected=b'], 1);
+  store.set({ to: 1500 });
+  assert.equal(store.trail().forward.selected, 'b', 'panning is not a new opening');
+  // Opening something else is, and replaces the future as the browser does.
+  store.set({ selected: 'c' });
+  assert.equal(store.trail().forward, null);
+  assert.equal(store.trail().back.selected, 'a');
+});
+
+test('a URL that lands on neither neighbour starts the trail again', () => {
+  const win = fakeWindow();
+  const store = createState({}, { window: win });
+  store.set({ selected: 'a' });
+  win.location.search = '?selected=zzz';
+  win.listeners.popstate();
+  assert.deepEqual(store.trail(), { back: null, forward: null });
+  assert.equal(store.get().selected, 'zzz');
 });

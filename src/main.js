@@ -32,7 +32,13 @@ try {
   // view is ever built on a state the reading mode has not seen. Everything
   // downstream is given the wrapper, not the store: it is where the step
   // becomes a selection, a chain and a window (narrative-mode.js).
-  const store = createState(openingState(atlas, parseState(window.location.search)), { window });
+  // `restore` is the same derivation applied on the browser's Back and
+  // Forward: a popstate onto a narrative's URL is a step, and the selection,
+  // the chain and the window have to be computed from it again.
+  const store = createState(openingState(atlas, parseState(window.location.search)), {
+    window,
+    restore: (s) => openingState(atlas, s),
+  });
   const state = createReadingMode(store, atlas);
 
   document.getElementById('fixtures-badge').hidden = !fixtures;

@@ -71,5 +71,5 @@ export function createReadingMode(store, atlas) {
     return store.set(patch);
   }
 
-  return { get: store.get, subscribe: store.subscribe, set };
+  return { get: store.get, subscribe: store.subscribe, trail: store.trail, set };
 }
