@@ -10280,10 +10280,16 @@
     }
   ],
   "schema": 1,
-  "total": 1006,
+  "total": 1009,
   "warnings": [
     {
       "id": "iberian-blackout-2025",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "iraq-war",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"
@@ -10293,6 +10299,18 @@
       "kind": "place",
       "message": "place is referenced by no event",
       "rule": "place-unused"
+    },
+    {
+      "id": "second-boer-war",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "treaty-of-portsmouth",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
     },
     {
       "id": "uefa-2016-final",

@@ -14500,6 +14500,29 @@
     {
       "actors": [],
       "aliases": [],
+      "id": "iraq-war",
+      "place": null,
+      "region": "asia",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Iraq War",
+      "weight": 0,
+      "when": {
+        "date": "2003-03-20",
+        "end": 2011,
+        "endDate": "2011-12-15",
+        "start": 2003
+      },
+      "wikidata": "Q545449",
+      "wikipedia": {
+        "en": "Iraq War",
+        "pt": "Guerra do Iraque"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
       "id": "killing-of-odair-moniz",
       "place": null,
       "region": "europe",
@@ -16016,6 +16039,29 @@
       }
     },
     {
+      "actors": [],
+      "aliases": [],
+      "id": "second-boer-war",
+      "place": null,
+      "region": "africa",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Second Boer War",
+      "weight": 0,
+      "when": {
+        "date": "1899-10-11",
+        "end": 1902,
+        "endDate": "1902-05-31",
+        "start": 1899
+      },
+      "wikidata": "Q215112",
+      "wikipedia": {
+        "en": "Second Boer War",
+        "pt": "Segunda Guerra dos Bôeres"
+      }
+    },
+    {
       "actors": [
         {
           "actor": "sidonio-pais",
@@ -16300,6 +16346,28 @@
       "wikipedia": {
         "en": "Treaty of Lisbon",
         "pt": "Tratado de Lisboa (2007)"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "treaty-of-portsmouth",
+      "place": null,
+      "region": "americas",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Treaty of Portsmouth",
+      "weight": 0,
+      "when": {
+        "date": "1905-09-05",
+        "end": 1905,
+        "start": 1905
+      },
+      "wikidata": "Q548067",
+      "wikipedia": {
+        "en": "Treaty of Portsmouth",
+        "pt": "Tratado de Portsmouth"
       }
     },
     {

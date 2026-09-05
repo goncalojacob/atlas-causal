@@ -11684,7 +11684,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 55,
+      "citationCount": 58,
       "citations": [
         {
           "dissent": false,
@@ -11982,6 +11982,12 @@
         },
         {
           "dissent": false,
+          "id": "iraq-war",
+          "kind": "event",
+          "locator": "Q545449"
+        },
+        {
+          "dissent": false,
           "id": "lisbon-regicide",
           "kind": "event",
           "locator": "Q2665185"
@@ -12000,6 +12006,12 @@
         },
         {
           "dissent": false,
+          "id": "second-boer-war",
+          "kind": "event",
+          "locator": "Q215112"
+        },
+        {
+          "dissent": false,
           "id": "treaty-of-accession-1985",
           "kind": "event",
           "locator": null
@@ -12009,6 +12021,12 @@
           "id": "treaty-of-friendship-and-cooperation-between-spain-and-portugal",
           "kind": "event",
           "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "treaty-of-portsmouth",
+          "kind": "event",
+          "locator": "Q548067"
         },
         {
           "dissent": false,
