@@ -9,14 +9,19 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": null,
+  "revised": "2026-09-05",
   "review": {
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "summary-drafted"
     ]
   },
   "wikidata": "Q8698",
@@ -27,18 +32,47 @@
   },
   "sources": [
     {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    },
+    {
+      "source": "meneses-2009-salazar",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Great Depression\", revision 1371653684"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Grande Depressão\", revision 72860906"
+    },
+    {
       "source": "wikidata",
       "locator": "Q8698"
     }
   ],
   "title": "Great Depression",
-  "summary": "Wikidata item Q8698, imported by tools/import/wikidata.mjs. The item's own description reads \"worldwide economic depression (1929–1939)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The world slump of the 1930s began in the United States in 1929 and reached everywhere that traded or borrowed: industrial production and world trade fell by about a third, unemployment reached a quarter of the workforce in Germany and the United States, and the gold standard, the banking systems and the trading order of the previous century came apart together. Portugal was hit less hard than most — a poor, agricultural, lightly banked economy with little exposure to short-term foreign capital — and that comparative shelter is exactly what made the Depression matter politically here: the dictatorship's finance minister could point to balanced budgets and a stable escudo while the parliamentary states around him failed.",
   "when": {
     "start": 1929,
     "end": 1941,
     "date": "1929-10-29"
   },
   "place": null,
-  "region": "asia",
-  "actors": []
+  "region": "americas",
+  "actors": [
+    {
+      "actor": "united-states-of-america",
+      "role": "government"
+    },
+    {
+      "actor": "germany-prussia",
+      "role": "government"
+    },
+    {
+      "actor": "united-kingdom",
+      "role": "government"
+    }
+  ]
 }

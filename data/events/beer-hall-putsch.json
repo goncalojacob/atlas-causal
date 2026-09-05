@@ -9,14 +9,19 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": null,
+  "revised": "2026-09-05",
   "review": {
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "summary-drafted"
     ]
   },
   "wikidata": "Q36749",
@@ -27,12 +32,20 @@
   },
   "sources": [
     {
+      "source": "wikipedia-en",
+      "locator": "\"Beer Hall Putsch\", revision 1370735026"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Putsch da Cervejaria\", revision 72599133"
+    },
+    {
       "source": "wikidata",
       "locator": "Q36749"
     }
   ],
   "title": "Beer Hall Putsch",
-  "summary": "Wikidata item Q36749, imported by tools/import/wikidata.mjs. The item's own description reads \"attempted coup d'état in Weimar Republic\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "On the night of 8 November 1923 Hitler and the Kampfbund seized a political meeting in a Munich beer hall and declared a national revolution; the march on the Feldherrnhalle the next morning was stopped by police fire that killed sixteen of the marchers and four policemen. It failed completely, and it was the making of the party that attempted it: the trial gave Hitler a national platform, the sentence was five years of which he served nine months, and the lesson he drew — that power would have to be taken legally and then used — is the strategy of 1933. It is in the atlas as the point at which the Weimar Republic's most dangerous enemy learned how to beat it.",
   "when": {
     "start": 1923,
     "end": 1923,
@@ -41,5 +54,10 @@
   },
   "place": null,
   "region": "europe",
-  "actors": []
+  "actors": [
+    {
+      "actor": "germany-prussia",
+      "role": "government"
+    }
+  ]
 }

@@ -9,15 +9,22 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": null,
+  "revised": "2026-09-05",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "summary-drafted",
+      "date"
+    ],
+    "note": "The interval on this record is the imported item's and is too narrow: the campaigns against the Greek, French and Armenian forces, and the Ankara assembly that directed them, run from 1919, not from October 1922. A reviewer should widen the start before the record is signed."
   },
   "wikidata": "Q234738",
   "sitelinks": 65,
@@ -27,12 +34,20 @@
   },
   "sources": [
     {
+      "source": "wikipedia-en",
+      "locator": "\"Turkish War of Independence\", revision 1372145108"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Guerra de Independência da Turquia\", revision 72807000"
+    },
+    {
       "source": "wikidata",
       "locator": "Q234738"
     }
   ],
   "title": "Turkish War of Independence",
-  "summary": "Wikidata item Q234738, imported by tools/import/wikidata.mjs. The item's own description reads \"war fought between the Turkish National Movement and the Entente and their proxies\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "After the Ottoman defeat and the Allied occupation of Constantinople, a national movement under Mustafa Kemal set up a rival assembly at Ankara and fought the Greek army in western Anatolia, the French in Cilicia and the Armenian republic in the east. The Greek defeat in the summer of 1922 and the recapture of Smyrna ended it; the sultanate was abolished in November 1922, Lausanne recognised the new state in 1923, and the caliphate went the year after. It is in the atlas as the one case in which a defeated power of 1918 overturned its own peace treaty by force and had the revision accepted.",
   "when": {
     "start": 1922,
     "end": 1923,
@@ -41,5 +56,18 @@
   },
   "place": null,
   "region": "asia",
-  "actors": []
+  "actors": [
+    {
+      "actor": "turkey-ottoman-empire",
+      "role": "belligerent"
+    },
+    {
+      "actor": "greece",
+      "role": "belligerent"
+    },
+    {
+      "actor": "france",
+      "role": "belligerent"
+    }
+  ]
 }

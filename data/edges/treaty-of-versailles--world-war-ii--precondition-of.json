@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "treaty-of-versailles--world-war-ii--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Versailles\", revision 1371877530"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"World War II\", revision 1372726772"
+    }
+  ],
+  "from": "treaty-of-versailles",
+  "to": "world-war-ii",
+  "type": "precondition-of",
+  "confidence": "disputed",
+  "explanation": "The oldest reading of the interwar period makes the treaty the cause of the next war: a settlement harsh enough to embitter Germany and to give revisionist politics its programme, but not harsh enough to prevent Germany from acting on it, with the territorial clauses supplying every demand of the 1930s in order — the Rhineland, the Sudetenland, the corridor, Danzig. The atlas records the link because the demands of 1936 to 1939 really were the treaty's clauses read backwards; it records it as disputed because the step from that to causation is exactly what historians divide over.",
+  "dispute": {
+    "text": "Keynes in 1919 and A. J. P. Taylor in 1961 stand at the two ends of the older argument — a Carthaginian peace that wrecked the European economy, or a peace too mild to be worth resenting and irrelevant beside Hitler's own ambitions. Later work has largely refused both: the reparations actually paid were a small fraction of the nominal sum and were suspended in 1932, well before the war, and the fall of Weimar is now more often laid to the deflation of 1930–32 and the collapse of the party system than to the treaty. The atlas takes no side, and a reviewer should replace these citations with the works themselves.",
+    "sources": [
+      {
+        "source": "wikipedia-en",
+        "locator": "\"Treaty of Versailles\", revision 1371877530"
+      }
+    ]
+  }
+}
