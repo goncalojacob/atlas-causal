@@ -339,22 +339,31 @@ export function createState(initial, { window: win = null, restore = (s) => s } 
   if (win && formatState(state, win.location.search) !== win.location.search) writeNow(false);
   if (win) {
     win.addEventListener('popstate', () => {
-      // On a popstate the URL is the whole truth about what is open: those
-      // fields are taken from it and not inherited, or going back from an
-      // actor's card to the event's would leave the actor open and Back
-      // could only ever add. Everything else — the window, the lanes, the
-      // layers — still falls back to what stands, because a URL that does
-      // not name them is not asking for them to change. `restore` is where a
-      // narrative's derived selection is put back (narrative-mode.js).
+      // On a popstate the URL is the whole truth — not only about what is
+      // open, but about the picture. It used to be parsed with the live state
+      // as its defaults, so any field the entry did not name kept the value it
+      // had: Back to an event opened before the band was narrowed left the
+      // band narrow and the horizon field with it, Back to an entry made
+      // before a lens was applied left the lens on, and `view` was not
+      // restored at all, so the address bar stopped describing the screen
+      // (B14, A6). Nothing is lost by taking the defaults instead: a push
+      // writes every field that is not already its default.
+      //
+      // `restore` is where a narrative's derived selection, chain and window
+      // are computed again (narrative-mode.js). The write afterwards
+      // normalises the entry to what is now shown, so the next link the
+      // reader copies is the picture they are looking at — the rule this
+      // file opens with, which Back was the one thing breaking.
+      //
       // The entry the reader has just left is gone; a write still owed for it
       // would land on the one they arrived at.
       drop();
-      const url = parseState(win.location.search);
-      state = restore({ ...parseState(win.location.search, state), ...opening(url), chain: url.chain });
+      state = restore(parseState(win.location.search));
       const now = opening(state);
       if (at > 0 && sameOpening(trail[at - 1], now)) at -= 1;
       else if (at < trail.length - 1 && sameOpening(trail[at + 1], now)) at += 1;
       else { trail = [now]; at = 0; }
+      writeNow(false);
       notify();
     });
   }

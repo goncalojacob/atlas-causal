@@ -485,6 +485,53 @@ test('a change of view after going back does not lose the way forward', () => {
   assert.equal(store.trail().back.selected, 'a');
 });
 
+// Back used to restore what was open and nothing else: the popped URL was
+// parsed with the live state as its defaults, so the band, the lens, the
+// layers and the view stayed where the reader had just put them and the
+// address bar stopped describing the screen (B14, A6).
+test('Back restores the picture, not only what is open', () => {
+  const win = fakeWindow();
+  const store = createState({}, { window: win });
+  store.set({ selected: 'carnation-revolution-1974' });
+  store.set({ actor: 'movimento-das-forcas-armadas' });
+  // Then the reader narrows the band and puts a lens on, both on this entry.
+  store.set({ from: 1951, to: 1959, focus: 'actor:salazar', view: 'graph' });
+  win.frame();
+
+  const entries = ['', '?selected=carnation-revolution-1974', win.location.search];
+  win.history.go(entries, 1);
+  const back = store.get();
+  assert.equal(back.selected, 'carnation-revolution-1974');
+  assert.equal(back.actor, null);
+  assert.deepEqual([back.from, back.to], [null, null], 'the band the entry was made with');
+  assert.equal(back.focus, null, 'and no lens it never had');
+  assert.equal(back.view, 'map');
+  // And the entry is normalised to what is shown, so the link the reader
+  // copies now is the picture in front of them.
+  assert.equal(win.location.search, '?selected=carnation-revolution-1974');
+});
+
+// The reading-mode URL is two parameters and stays two: everything else in a
+// narrative is derived from the step (CLAUDE.md, review finding 22).
+test('a popstate onto a narrative derives the walk and writes nothing else', () => {
+  const win = fakeWindow('?narrative=fall-of-the-empire&step=2');
+  const store = createState(parseState(win.location.search), {
+    window: win,
+    // What narrative-mode's `openingState` does, in the small: the step is
+    // authoritative and the selection and the window come from it.
+    restore: (s) => (s.narrative ? { ...s, selected: `step-${s.step}`, from: 1960, to: 1980 } : s),
+  });
+  store.set({ selected: 'somewhere-else', narrative: null });
+  win.frame();
+
+  win.history.go(['?narrative=fall-of-the-empire&step=2', win.location.search], 0);
+  assert.equal(store.get().narrative, 'fall-of-the-empire');
+  assert.equal(store.get().step, 2);
+  assert.equal(store.get().selected, 'step-2', 'the walk was derived again');
+  assert.equal(win.location.search, '?narrative=fall-of-the-empire&step=2',
+    'and the derived selection and window stayed out of the address bar');
+});
+
 test('a URL that lands on neither neighbour starts the trail again', () => {
   const win = fakeWindow();
   const store = createState({}, { window: win });

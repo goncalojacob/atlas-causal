@@ -331,3 +331,47 @@ test('a place’s faded rows follow the band without rebuilding the card', { ski
     assert.match(after.hint, /inside the window; the rest are faded\./);
   });
 });
+
+// "Open an event, open an actor, narrow the band, Back": the address bar and
+// the band used to disagree from there on. The popped entry was parsed with
+// the live state as its defaults, so the band the reader had just dragged
+// stayed where it was and the link they copied gave the recipient a century
+// they had never been looking at (B14, A6).
+test('Back comes back to the picture, and the URL says so', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await open(page, url('?selected=carnation-revolution-1974'));
+    await page.eval('document.querySelector(\'.event-head .chip[data-id="estado-novo"]\').click(); return true;');
+    await waitFor(page, 'return Boolean(document.querySelector(".panel .actor-head h2"));', 'the actor');
+
+    // The band, narrowed on this second entry, and the graph instead of the
+    // map: both are the picture and neither is what is open.
+    await page.eval('document.querySelector(\'[data-view="graph"]\').click(); return true;');
+    await page.eval(dragWindowTo('from', 400));
+    await waitFor(page, 'return /from=/.test(location.search);', 'the band in the URL');
+    const narrowed = await page.eval(`return {
+      from: Number(new URLSearchParams(location.search).get('from')),
+      view: new URLSearchParams(location.search).get('view'),
+      whole: Number(document.querySelector('#timeline [data-window="band"]').getAttribute('aria-valuemin')),
+    };`);
+    assert.ok(narrowed.from > narrowed.whole, `the band was narrowed: from=${narrowed.from}`);
+    assert.equal(narrowed.view, 'graph');
+
+    await page.eval('history.back(); return true;');
+    await waitFor(page, 'return Boolean(document.querySelector(".panel .event-head h2"));', 'the event again');
+
+    const after = await page.eval(`const band = document.querySelector('#timeline [data-window="band"]');
+    return {
+      url: Object.fromEntries(new URLSearchParams(location.search)),
+      from: Number(document.querySelector('#timeline [data-window="from"]').getAttribute('aria-valuenow')),
+      whole: Number(band.getAttribute('aria-valuemin')),
+      graphShown: !document.getElementById('graph').hidden,
+      pressed: document.querySelector('[data-view="map"]').getAttribute('aria-pressed'),
+    };`);
+    // The entry was made before any of that, so the URL is the entry and the
+    // screen is the URL: no band, no view, and the actor closed.
+    assert.deepEqual(after.url, { selected: 'carnation-revolution-1974' });
+    assert.equal(after.graphShown, false, 'the map is back with the entry that had no view');
+    assert.equal(after.pressed, 'true');
+    assert.equal(after.from, after.whole, 'the band is the whole span again');
+  });
+});
