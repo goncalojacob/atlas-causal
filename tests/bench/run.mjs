@@ -206,7 +206,11 @@ async function measureAsync(fn, { budget = 4000, most = 3 } = {}) {
     runs.push(took);
     spent += took;
   }
-  return { best: Math.min(...runs), runs: runs.length };
+  // The first run as well as the best: the palette is memoised on the hash of
+  // its inputs, so a second build in one process is free and a cold one — the
+  // deploy job, every time — is not. Reporting only the best would report the
+  // number nobody gets.
+  return { best: Math.min(...runs), runs: runs.length, first: runs[0] };
 }
 
 async function benchRules() {
@@ -245,11 +249,15 @@ async function benchValidateIndex() {
   const pathMod = await import('node:path');
   const dir = await syntheticDataDir(TOOL_EVENTS);
   console.log(`validate --index — the job deploy.yml runs on every push and serve.mjs used to run on every Save`);
-  row(`${TOOL_EVENTS} events, no --index`, await measureAsync(() => runValidation(dir)));
-  row(`${TOOL_EVENTS} events, --index`, await measureAsync(() => runValidation(dir, { index: true })));
+  const cold = (result) => `→ first run ${ms(result.first)} ms`;
+  const plain = await measureAsync(() => runValidation(dir));
+  row(`${TOOL_EVENTS} events, no --index`, plain, cold(plain));
+  const indexed = await measureAsync(() => runValidation(dir, { index: true }));
+  row(`${TOOL_EVENTS} events, --index`, indexed, cold(indexed));
   const real = pathMod.join(TOOLS_ROOT, 'data');
   const { counts } = await runValidation(real);
-  row(`the real dataset (${counts.records} records), --index`, await measureAsync(() => runValidation(real, { index: true })));
+  const onReal = await measureAsync(() => runValidation(real, { index: true }));
+  row(`the real dataset (${counts.records} records), --index`, onReal, cold(onReal));
 }
 
 const CASES = {

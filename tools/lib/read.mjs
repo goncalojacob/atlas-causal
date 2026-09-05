@@ -3,6 +3,7 @@
 // runs in the browser against fetched files.
 
 import { readdir, readFile } from 'node:fs/promises';
+import { createHash } from 'node:crypto';
 import { existsSync } from 'node:fs';
 import path from 'node:path';
 import { migrateRecord } from '../../src/validate/migrate.js';
@@ -22,6 +23,25 @@ export const IMPORTS_DIR = 'imports';
 async function readJson(file) {
   const text = await readFile(file, 'utf8');
   return JSON.parse(text);
+}
+
+// How many files are in flight at once. One at a time is what made reading
+// data/ the slowest part of the validator and of the index build — twenty
+// thousand awaits in a row, each waiting for one file (health review B,
+// finding 5) — and all of them at once exhausts the descriptor table on a
+// directory this size. Sixty-four is well inside every default limit and
+// already saturates a local disk.
+export const READ_CONCURRENCY = 64;
+
+// map() over batches, in order: the answers come back in the order the items
+// were given, so nothing downstream has to sort.
+async function mapBounded(items, fn, limit = READ_CONCURRENCY) {
+  const out = new Array(items.length);
+  for (let i = 0; i < items.length; i += limit) {
+    const batch = await Promise.all(items.slice(i, i + limit).map((item, j) => fn(item, i + j)));
+    for (let j = 0; j < batch.length; j += 1) out[i + j] = batch[j];
+  }
+  return out;
 }
 
 // { 'common/interval.json': {...}, 'v1/event.json': {...}, ... }, keys always
@@ -55,16 +75,19 @@ export async function readRecords(dataDir, { migrate = true } = {}) {
   for (const [kind, sub] of Object.entries(KIND_DIRS)) {
     const dir = path.join(dataDir, sub);
     if (!existsSync(dir)) continue;
-    for (const name of (await readdir(dir)).sort()) {
-      if (!name.endsWith('.json')) continue;
-      const file = path.join(dir, name);
+    const names = (await readdir(dir)).sort().filter((name) => name.endsWith('.json'));
+    const read = await mapBounded(names, async (name) => {
       try {
-        const raw = await readJson(file);
-        entries.push({ kind, file: `${sub}/${name}`, record: migrate ? migrateRecord(raw) : raw });
+        return { raw: await readJson(path.join(dir, name)) };
       } catch (e) {
-        problems.push({ file: `${sub}/${name}`, message: `not valid JSON: ${e.message}` });
+        return { message: `not valid JSON: ${e.message}` };
       }
-    }
+    });
+    names.forEach((name, i) => {
+      const one = read[i];
+      if (one.message) problems.push({ file: `${sub}/${name}`, message: one.message });
+      else entries.push({ kind, file: `${sub}/${name}`, record: migrate ? migrateRecord(one.raw) : one.raw });
+    });
   }
   return { entries, problems };
 }
@@ -147,14 +170,35 @@ export async function readPresenceShards(dataDir, { keys = false } = {}) {
   for (const name of (await readdir(dir)).sort()) {
     const m = /^(-?\d+)-(-?\d+)\.json$/.exec(name);
     if (!m) continue;
-    const shard = { file: `${PRESENCE_GEO_DIR}/${name}`, from: Number(m[1]), to: Number(m[2]) };
-    if (keys) {
-      const collection = await readJson(path.join(dir, name));
-      shard.keys = new Set((collection.features ?? []).map((f) => f.id));
-    }
-    shards.push(shard);
+    shards.push({ file: `${PRESENCE_GEO_DIR}/${name}`, from: Number(m[1]), to: Number(m[2]) });
   }
-  return shards.sort((a, b) => a.from - b.from || a.to - b.to);
+  shards.sort((a, b) => a.from - b.from || a.to - b.to);
+  if (!keys) return shards;
+  const read = await readPresenceGeometry(dataDir, shards);
+  for (const shard of shards) shard.keys = read.get(shard.file)?.keys ?? new Set();
+  return shards;
+}
+
+// The shards read once, for the three readers that used to read them each:
+// the feature ids rule 17 checks against the records, the geometry the
+// palette rasterises, and a digest of the bytes, which is what says whether
+// the territories have moved since the palette was last built.
+//
+// Whoever holds the result holds every outline in memory, which is what
+// build-palette has always done; nothing else keeps it.
+export async function readPresenceGeometry(dataDir, shards) {
+  const out = new Map();
+  const read = await mapBounded(shards, async (shard) => {
+    const text = await readFile(path.join(dataDir, ...shard.file.split('/')), 'utf8');
+    const collection = JSON.parse(text);
+    return {
+      hash: createHash('sha256').update(text, 'utf8').digest('hex'),
+      keys: new Set((collection.features ?? []).map((f) => f.id)),
+      geometry: new Map((collection.features ?? []).map((f) => [String(f.id), f.geometry])),
+    };
+  });
+  shards.forEach((shard, i) => out.set(shard.file, read[i]));
+  return out;
 }
 
 // The palette's file name when it is there, null when it is not: a dataset

@@ -33,12 +33,13 @@
 
 import { writeFile } from 'node:fs/promises';
 import { readFile } from 'node:fs/promises';
+import { createHash } from 'node:crypto';
 import { existsSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { extent as intervalExtent } from '../src/util/dates.js';
 import { serialize } from './build-index.mjs';
-import { readRecords, readPresenceShards, PALETTE_FILE } from './lib/read.mjs';
+import { readRecords, readPresenceShards, readPresenceGeometry, PALETTE_FILE } from './lib/read.mjs';
 
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DEFAULT_DATA = path.join(ROOT, 'data');
@@ -229,31 +230,57 @@ function settle(neighbours, assigned, hues) {
   }
 }
 
-async function readShardGeometry(dataDir, shards) {
-  const geometry = new Map();
-  for (const shard of shards) {
-    const collection = JSON.parse(await readFile(path.join(dataDir, ...shard.file.split('/')), 'utf8'));
-    geometry.set(shard.file, new Map((collection.features ?? []).map((f) => [String(f.id), f.geometry])));
+// What the palette is a function of, and nothing else: the active presences
+// that hold ground, and the bytes of the shards their outlines are in. The
+// grid and the number of hues go in too, so changing either invalidates the
+// memo below rather than quietly reusing a file built to other rules.
+export function paletteInputHash(presences, read) {
+  const digest = createHash('sha256');
+  digest.update(`${HUES} ${GRID}\n`);
+  for (const p of [...presences].sort((a, b) => (a.id < b.id ? -1 : a.id > b.id ? 1 : 0))) {
+    digest.update(JSON.stringify([p.id, p.actor, p.dependencyOf ?? null, p.when, p.geometry?.key ?? null, p.geometry?.files ?? []]));
+    digest.update('\n');
   }
-  return geometry;
+  for (const file of [...read.keys()].sort()) digest.update(`${file} ${read.get(file).hash}\n`);
+  return digest.digest('hex');
 }
 
+// The last palette this process built and the inputs it was built from.
+// Rasterising every border onto the grid is the whole cost of this tool —
+// 1.3 s of the 2.1 s `validate --index` spends on the real dataset — and it
+// is spent again on every save the local server answers, where the
+// territories have not moved since the last one (health review B, finding 5).
+const memo = { hash: null, text: null };
+
 // The file's text, or null when there are no presences to colour at all.
-export async function buildPalette(dataDir = DEFAULT_DATA) {
-  const { entries, problems } = await readRecords(dataDir);
-  if (problems.length) throw new Error(problems.map((p) => `${p.file}: ${p.message}`).join('\n'));
-  const presences = entries.map((e) => e.record).filter((r) => r?.kind === 'presence' && r.status === 'active');
+// `prepared` is what a caller has already read: the records, the shard list
+// and the shards themselves, none of which this tool needs to read twice.
+export async function buildPalette(dataDir = DEFAULT_DATA, prepared = {}) {
+  let records = prepared.records ?? null;
+  if (!records) {
+    const { entries, problems } = await readRecords(dataDir);
+    if (problems.length) throw new Error(problems.map((p) => `${p.file}: ${p.message}`).join('\n'));
+    records = entries.map((e) => e.record);
+  }
+  const presences = records.filter((r) => r?.kind === 'presence' && r.status === 'active');
   if (!presences.length) return null;
-  const shards = await readPresenceShards(dataDir);
-  const neighbours = buildAdjacency(presences, await readShardGeometry(dataDir, shards));
+  const shards = prepared.shards ?? await readPresenceShards(dataDir);
+  const read = prepared.geometry ?? await readPresenceGeometry(dataDir, shards);
+  const hash = paletteInputHash(presences, read);
+  if (memo.hash === hash) return memo.text;
+  const geometry = new Map([...read].map(([file, one]) => [file, one.geometry]));
+  const neighbours = buildAdjacency(presences, geometry);
   const { assigned, spilled } = colour(neighbours);
-  return serialize({
+  const text = serialize({
     schema: 1,
     hues: HUES,
     grid: GRID,
     actors: Object.fromEntries([...assigned].sort(([a], [b]) => (a < b ? -1 : a > b ? 1 : 0))),
     spilled,
   });
+  memo.hash = hash;
+  memo.text = text;
+  return text;
 }
 
 // What the freshness check needs: the text on disk, or null when absent.
