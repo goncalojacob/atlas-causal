@@ -840,6 +840,8 @@ atlas-causal/
 │   │   └── layers/land.js  presences.js  events.js   ●
 │   ├── graph-view/
 │   │   ├── layout.js             ● pure: events + edges + lanes → coordinates; x is the year, y is bands and a barycentre pass
+│   │   ├── arrangement.js        ● pure: what is laid out — the band, the margin, what is held — and the key that says when again
+│   │   ├── layout-message.js  layout-worker.js  layout-runner.js   ● what crosses to a thread, the thread, and when one is worth it
 │   │   └── graph-view.js         ● the SVG: nodes, the five edge types, the window as a shade, pan/zoom, nearest-centre clicks
 │   ├── timeline.js               ● the lanes lanes.js gives, or packed unlabelled rows; the window as a band with two handles; bars stack
 │   ├── timeline-scale.js         ● linear now; the scale is injected
@@ -1559,10 +1561,18 @@ tick would be a step the reader could not follow.
 
 This is a visible change and it is deliberate (health review, finding 28):
 rendering only the band was rejected, and a stub or a density strip was the
-condition for windowing at all. The graph's **layout** is still over the
-whole arrangement — nodes that moved every time the band did would be worse
-than nodes that come and go — and only the drawing is windowed; restricting
-the layout is H4b's, against a measurement.
+condition for windowing at all.
+
+Since **H4b** the graph's **layout** is windowed too, against the
+measurement H3b left it waiting for: laying out the whole corpus to draw a
+decade of it cost 6.6 s at 5,000 edges and nearly seven minutes at 30,000.
+The arrangement is now the band, the margin, and whatever the reader is
+holding beyond it — the exemption above, which is why a walked chain that
+runs off the end of the band still has coordinates. Moving the band
+therefore moves the nodes, which is what H3b did not want; what pays for it
+is that the arrangements are kept by their key, so widening the band and
+narrowing it again gives the reader back the picture they had. Panning,
+zooming, selecting and walking still move nothing.
 
 #### Each view has a render key
 
