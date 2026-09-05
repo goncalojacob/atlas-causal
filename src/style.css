@@ -362,7 +362,11 @@ button.bar-link { background: none; border: 0; padding: 0; font: inherit; font-s
 .layout {
   display: grid;
   grid-template-columns: minmax(0, 1fr) var(--handle) var(--panel-width, minmax(300px, 33%));
-  grid-template-rows: minmax(0, 1fr) var(--handle) var(--timeline-height, auto);
+  /* A length and not `auto`: the timeline is as tall as its pane, and the
+     pane does not grow to hold however many rows the packing made. That is
+     what left the bottom row clipped in a short window — and it is what made
+     the drawing and the container chase each other's size. */
+  grid-template-rows: minmax(0, 1fr) var(--handle) var(--timeline-height, 30vh);
   grid-template-areas:
     "map      split-panel panel"
     "split-timeline split-timeline split-timeline"
@@ -375,14 +379,20 @@ button.bar-link { background: none; border: 0; padding: 0; font: inherit; font-s
 /* The graph view takes the map's slot; one of the two is hidden at a time. */
 .graph-area { grid-area: map; position: relative; min-height: 0; background: var(--ground); }
 .panel { grid-area: panel; overflow: auto; padding: 1rem; border-left: 1px solid var(--line); background: var(--paper); }
-/* Packed rows make the timeline as tall as the data needs, so it is capped
-   and scrolls rather than pushing the map off the screen. A reader who has
-   dragged the edge has said what they want instead, and panes.js lifts the
-   cap for them. */
+/* The pane is the height the grid row gives it, and the drawing is laid out
+   into that height (timeline.js). Past the point where a lane cannot be
+   squeezed any further the drawing is taller than the pane and this scrolls,
+   which is why `min-height: 0` is here: without it a grid item refuses to be
+   smaller than its content and the scroll would land on the page instead. */
 .timeline-area {
   grid-area: timeline; border-top: 1px solid var(--line); background: var(--paper);
-  overflow: auto; max-height: var(--timeline-max, 45vh);
+  overflow: auto; min-height: 0;
 }
+/* An `<svg>` is inline by default, so the line box under it added a
+   descender's worth of height the drawing knew nothing about — enough to make
+   the pane scroll by a few pixels when the lanes had just been laid out to
+   fit it exactly. */
+.timeline-area .timeline { display: block; }
 
 /* The edges themselves. Six pixels of ground with a grab line down the
    middle: enough to hit with a pointer, quiet enough not to read as a
@@ -459,7 +469,7 @@ body:not(.phone) .layout.panel-empty > .split-panel { display: none; }
   .split { display: none; }
   /* A fixed height, and its own scroll: the timeline is a strip under the
      view here, not a pane that grows with the rows it packs. */
-  .timeline-area { height: 100%; max-height: none; }
+  .timeline-area { height: 100%; }
 
   .sheet {
     display: flex; flex-direction: column;
@@ -795,6 +805,10 @@ svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align:
   background: var(--paper);
   font-family: var(--font-ui); font-size: var(--text-sm); color: var(--ink-soft);
 }
+/* `display: flex` above beats the UA stylesheet's rule for [hidden], so the
+   note kept its 29 pixels of the pane — and its pin — while the timeline was
+   showing the whole world and had nothing to say. */
+.timeline-note[hidden] { display: none; }
 .timeline-note .pin {
   background: none; border: 0; padding: 0; font: inherit;
   color: var(--cobalt); text-decoration: underline; text-underline-offset: 0.18em; cursor: pointer;

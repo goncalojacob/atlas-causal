@@ -68,14 +68,14 @@ test('a size is two custom properties, and a default is their absence', () => {
   applySizes(layout, { panel: 420, timeline: 260 });
   assert.equal(layout.props.get('--panel-width'), '420px');
   assert.equal(layout.props.get('--timeline-height'), '260px');
-  // The stylesheet caps the timeline so packed rows cannot push the map off
-  // the screen; a reader who has dragged the edge has said otherwise.
-  assert.equal(layout.props.get('--timeline-max'), 'none');
+  // Two properties and no third. The stylesheet used to cap the timeline's
+  // height because its row was `auto`; the row is a length now and the lanes
+  // are laid out into it (timeline.js).
+  assert.deepEqual([...layout.props.keys()].sort(), ['--panel-width', '--timeline-height']);
 
   applySizes(layout, { panel: null, timeline: null });
   assert.equal(layout.props.has('--panel-width'), false);
   assert.equal(layout.props.has('--timeline-height'), false);
-  assert.equal(layout.props.has('--timeline-max'), false, 'and the cap comes back with it');
 });
 
 // --- and none of it below the phone width ---------------------------------

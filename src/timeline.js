@@ -39,6 +39,12 @@ const LANE_HEIGHT = 34;
 // the air around it; ten rows of a named lane's height would push the map
 // off the screen.
 const ROW_HEIGHT = 22;
+// How far a lane and a row may be squeezed to fit the pane. A named lane has
+// to keep room for its label; a packed row only for a bar and a hair of air
+// around it. Past this the lanes stop shrinking and the pane scrolls, which
+// is the honest answer: a row two pixels high is not a row.
+const MIN_LANE_HEIGHT = 22;
+const MIN_ROW_HEIGHT = 14;
 // Past this the rows share and stacking draws the overlap as one bar with a
 // count, which is what the timeline did before packing existed.
 const MAX_ROWS = 20;
@@ -97,6 +103,12 @@ export function createTimeline(container, { atlas, state, createScale = createLi
     : [0, 1];
 
   let width = 0;
+  // The height the pane gives the drawing, minus whatever the note above it
+  // is taking. The timeline is as tall as its pane and no taller: the lanes
+  // are laid out into that height rather than the pane growing to hold them,
+  // which is what left the bottom row clipped whenever the window was short
+  // (owner, 5 September).
+  let paneHeight = 0;
   let scale = null;
   // What the last render drew, so a click on a stack can be answered with the
   // cluster itself rather than an id the caller would have to look up.
@@ -106,6 +118,9 @@ export function createTimeline(container, { atlas, state, createScale = createLi
   const measure = () => {
     width = Math.max(container.clientWidth || 960, 320);
     scale = createScale({ domain, range: [LABEL_WIDTH, width - 12] });
+    // The note is inside the pane and above the drawing, so it is the pane's
+    // height less the note's, and it is measured after `note.hidden` is set.
+    paneHeight = Math.max(0, (container.clientHeight || 0) - (note.hidden ? 0 : note.offsetHeight || 0));
   };
   const resize = () => {
     root.setAttribute('viewBox', `0 0 ${width} ${height}`);
@@ -438,7 +453,6 @@ export function createTimeline(container, { atlas, state, createScale = createLi
   }
 
   function render(s) {
-    measure();
     const wasFocused = focusedBar();
     root.replaceChildren();
     drawn = new Map();
@@ -460,6 +474,9 @@ export function createTimeline(container, { atlas, state, createScale = createLi
       const n = shown.length;
       noteText.textContent = `${n} of ${inLens.length} ${inLens.length === 1 ? 'event' : 'events'} in view`;
     }
+    // After the note, because it is above the drawing and takes some of the
+    // pane's height; before the lanes, because they are laid out into it.
+    measure();
     // A second emphasis, distinct from the path's: the events of the actor
     // whose card is open. Through resolve(), so a former id in the URL
     // highlights the same actor the panel is showing.
@@ -478,6 +495,8 @@ export function createTimeline(container, { atlas, state, createScale = createLi
     // the walked path and the events of one place together where a row has
     // the room, so a reader following a chain finds its steps near each
     // other instead of scattered down the rows.
+    let natural = ROW_HEIGHT;
+    let minimum = MIN_ROW_HEIGHT;
     if (s.group === 'none') {
       lanes = rowLanes(shown, scale, width, {
         openEnd: domain[1],
@@ -485,12 +504,21 @@ export function createTimeline(container, { atlas, state, createScale = createLi
         maxRows: MAX_ROWS,
         affinity: (event) => (pathIds.has(event.id) ? 'chain' : event.place ?? null),
       });
-      laneHeight = ROW_HEIGHT;
     } else {
       lanes = lanesFor(s.group, atlas, window, lens, s.lanes);
-      laneHeight = LANE_HEIGHT;
+      natural = LANE_HEIGHT;
+      minimum = MIN_LANE_HEIGHT;
     }
-    height = AXIS_HEIGHT + Math.max(lanes.length, 1) * laneHeight;
+    // The lanes are laid out into the height the pane has. They never grow
+    // past the height they want, and they shrink to fit down to a floor; past
+    // that the drawing is taller than the pane and the pane scrolls, which is
+    // better than a row two pixels high. The drawing is never shorter than
+    // the pane either, so the band and its handles run its whole height and
+    // there is no dead strip under the last lane.
+    const rows = Math.max(lanes.length, 1);
+    const room = Math.max(0, paneHeight - AXIS_HEIGHT);
+    laneHeight = room > 0 ? Math.max(minimum, Math.min(natural, room / rows)) : natural;
+    height = Math.max(AXIS_HEIGHT + rows * laneHeight, paneHeight);
     resize();
 
     lanes.forEach((lane, i) => {
@@ -619,16 +647,19 @@ export function createTimeline(container, { atlas, state, createScale = createLi
     return out;
   }
 
-  // Only a change of width is worth redrawing for. The packed rows make the
-  // drawing taller, which makes the container taller, which the observer
-  // would report as a resize: without this guard a scrollbar appearing could
-  // set the two of them chasing each other.
+  // Both dimensions are worth redrawing for now: the width decides what the
+  // packing can fit in a row, and the height decides how tall a lane is. The
+  // guard is still needed and still against the same thing — a redraw that
+  // changed the container's own size would set the two of them chasing each
+  // other — but the pane no longer grows with the drawing (the row is a
+  // length in the stylesheet, not `auto`), so the only loop left would be a
+  // scrollbar appearing, which the compare stops in one turn.
   if (typeof ResizeObserver !== 'undefined') {
-    let lastWidth = -1;
+    let last = '';
     new ResizeObserver(() => {
-      const now = container.clientWidth;
-      if (now === lastWidth) return;
-      lastWidth = now;
+      const now = `${container.clientWidth}x${container.clientHeight}`;
+      if (now === last) return;
+      last = now;
       render(state.get());
     }).observe(container);
   }

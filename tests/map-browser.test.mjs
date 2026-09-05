@@ -39,7 +39,6 @@ const panBy = (dx) => `
 const FREEZE_TIMELINE = `
   const layout = document.querySelector('.layout');
   layout.style.setProperty('--timeline-height', '160px');
-  layout.style.setProperty('--timeline-max', 'none');
   return true;`;
 
 // Every mark the reader can see, with where it is on the screen and where it

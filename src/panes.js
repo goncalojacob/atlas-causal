@@ -71,16 +71,12 @@ export function applySizes(layout, sizes) {
   if (!layout?.style) return;
   if (sizes.panel === null || sizes.panel === undefined) layout.style.removeProperty('--panel-width');
   else layout.style.setProperty('--panel-width', `${round(sizes.panel)}px`);
-  if (sizes.timeline === null || sizes.timeline === undefined) {
-    layout.style.removeProperty('--timeline-height');
-    layout.style.removeProperty('--timeline-max');
-  } else {
-    layout.style.setProperty('--timeline-height', `${round(sizes.timeline)}px`);
-    // The cap in the stylesheet is there so packed rows cannot push the map
-    // off the screen on their own. A reader who has dragged the edge has said
-    // what they want instead, so it goes.
-    layout.style.setProperty('--timeline-max', 'none');
-  }
+  // One property, not two. The stylesheet used to cap the timeline's height
+  // because the row was `auto` and the packed rows could push the map off the
+  // screen on their own; the row is a length now and the drawing is laid out
+  // into it (timeline.js), so there is nothing left to lift.
+  if (sizes.timeline === null || sizes.timeline === undefined) layout.style.removeProperty('--timeline-height');
+  else layout.style.setProperty('--timeline-height', `${round(sizes.timeline)}px`);
 }
 
 // --- the handles ----------------------------------------------------------
