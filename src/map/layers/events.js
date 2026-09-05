@@ -39,6 +39,17 @@ const LABEL_ZOOM = 4;
 const LABEL_LIMIT = 12;
 const LABEL_CHARS = 30;
 
+// Whether a point in projected space is on screen, with room around the
+// rectangle for a mark that is only half outside it. `view` null is a caller
+// with nothing to measure — a test, or a pane that has not been laid out —
+// and then everything is in view, which is what the layer did before there
+// was a rectangle to ask about.
+export function inView(x, y, view, margin = 0) {
+  if (!view) return true;
+  return x >= view.x0 - margin && x <= view.x1 + margin
+    && y >= view.y0 - margin && y <= view.y1 + margin;
+}
+
 function textNode(text, attrs) {
   const el = svg('text', attrs);
   el.textContent = text;
@@ -294,8 +305,7 @@ export function createEventsLayer(group, projection, { pointOf, onSelect, onClus
       // Greedy: a label that would land on one already placed is skipped
       // rather than nudged, so labels never drift away from their mark.
       function drawLabels(list) {
-        const inView = (c) => !view || (c.x >= view.x0 && c.x <= view.x1 && c.y >= view.y0 && c.y <= view.y1);
-        const candidates = list.filter(inView).sort(
+        const candidates = list.filter((c) => inView(c.x, c.y, view)).sort(
           (a, b) => b.weight - a.weight || (a.key < b.key ? -1 : a.key > b.key ? 1 : 0),
         );
         const placed = [];
