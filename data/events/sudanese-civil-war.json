@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "sudanese-civil-war",
   "kind": "event",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,11 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": null,
+  "revised": "2026-09-05",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "m40-retracted"
+    ],
+    "note": "Retracted in M40b: the war between the army and the Rapid Support Forces since April 2023. The atlas holds nothing in Sudan — not the Darfur war out of which the RSF came, not the revolution of 2019, not the secession of South Sudan — and there is no Portuguese link. It would need the Sudanese revolution, or Darfur, as a record before an honest edge could be written from either end."
   },
   "wikidata": "Q117716414",
   "sitelinks": 66,

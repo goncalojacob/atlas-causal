@@ -9,14 +9,19 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": null,
+  "revised": "2026-09-05",
   "review": {
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "summary-drafted"
     ]
   },
   "wikidata": "Q119860532",
@@ -27,12 +32,20 @@
   },
   "sources": [
     {
+      "source": "wikipedia-en",
+      "locator": "\"Wagner Group rebellion\", revision 1372812761"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Rebelião do Grupo Wagner\", revision 71778928"
+    },
+    {
       "source": "wikidata",
       "locator": "Q119860532"
     }
   ],
   "title": "Wagner Group rebellion",
-  "summary": "Wikidata item Q119860532, imported by tools/import/wikidata.mjs. The item's own description reads \"2023 uprising in Russia led by Yevgeny Prigozhin\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "On 23 June 2023 Yevgeny Prigozhin turned the Wagner Group around, took the southern military headquarters at Rostov-on-Don without a fight and sent a column up the road towards Moscow; it came within about two hundred kilometres before he accepted a settlement brokered by the president of Belarus and stood down. Nobody stopped him and almost nobody joined him. Prigozhin died two months later when his aircraft came apart over Tver. It is in the atlas as the one moment in which the Russian state's monopoly of force visibly failed, and as evidence of what the war had made possible inside Russia.",
   "when": {
     "start": 2023,
     "end": 2023,
@@ -41,5 +54,14 @@
   },
   "place": null,
   "region": "europe",
-  "actors": []
+  "actors": [
+    {
+      "actor": "wagner-group",
+      "role": "perpetrator"
+    },
+    {
+      "actor": "russia-soviet-union",
+      "role": "target"
+    }
+  ]
 }

@@ -9,15 +9,23 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": null,
+  "revised": "2026-09-05",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "summary-drafted",
+      "date",
+      "facts-thin"
+    ],
+    "note": "A very recent event, drafted from a single cached lead and no other source. Both the interval and the casualty figures should be checked against reporting before this record is signed."
   },
   "wikidata": "Q137612545",
   "sitelinks": 61,
@@ -27,12 +35,20 @@
   },
   "sources": [
     {
+      "source": "wikipedia-en",
+      "locator": "\"2025–2026 Iranian protests\", revision 1373363187"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Protestos no Irã (2025–2026)\", revision 72784810"
+    },
+    {
       "source": "wikidata",
       "locator": "Q137612545"
     }
   ],
   "title": "2025–2026 Iranian protests",
-  "summary": "Wikidata item Q137612545, imported by tools/import/wikidata.mjs. The item's own description reads \"2025–2026 protests against the Islamic Republic\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "Demonstrations began on 28 December 2025 amid a collapse of the rial, inflation and shortages, and spread to more than two hundred cities — reported as the largest rising in Iran since 1979. The response was live fire, ordered according to the accounts at the highest level, and thousands of protesters are reported killed. The record's end date, February 2026, is the imported item's and marks where the reporting the atlas has reaches, not necessarily where the events do.",
   "when": {
     "start": 2025,
     "end": 2026,
@@ -41,5 +57,10 @@
   },
   "place": null,
   "region": "asia",
-  "actors": []
+  "actors": [
+    {
+      "actor": "iran-persia",
+      "role": "government"
+    }
+  ]
 }

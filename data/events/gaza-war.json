@@ -9,14 +9,19 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": null,
+  "revised": "2026-09-05",
   "review": {
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "summary-drafted"
     ]
   },
   "wikidata": "Q122962941",
@@ -27,12 +32,20 @@
   },
   "sources": [
     {
+      "source": "wikipedia-en",
+      "locator": "\"Gaza war\", revision 1372809003"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Guerra de Gaza\", revision 72478904"
+    },
+    {
       "source": "wikidata",
       "locator": "Q122962941"
     }
   ],
   "title": "Gaza War",
-  "summary": "Wikidata item Q122962941, imported by tools/import/wikidata.mjs. The item's own description reads \"armed conflict around the Gaza Strip that started on 7 October 2023\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "Hamas led an attack out of the Gaza Strip on 7 October 2023 that killed about twelve hundred people in southern Israel and took two hundred and fifty hostages. Israel answered with a bombardment and ground campaign that has killed more than seventy thousand Palestinians by the Gaza health ministry's count, which studies published in The Lancet suggest is an undercount, and has displaced almost the whole population of the Strip more than once. United Nations bodies, human rights organisations and the International Association of Genocide Scholars have concluded that Israel's conduct amounts to genocide; Israel and the United States reject that. This atlas holds the war and that characterisation as two records, and marks the second as disputed.",
   "when": {
     "start": 2023,
     "end": null,
@@ -40,5 +53,14 @@
   },
   "place": null,
   "region": "asia",
-  "actors": []
+  "actors": [
+    {
+      "actor": "israel",
+      "role": "belligerent"
+    },
+    {
+      "actor": "hamas",
+      "role": "belligerent"
+    }
+  ]
 }
