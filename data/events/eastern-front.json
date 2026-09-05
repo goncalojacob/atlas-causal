@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "eastern-front",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q189266",
+  "sitelinks": 86,
+  "wikipedia": {
+    "en": "Eastern Front (World War II)",
+    "pt": "Frente Oriental (Segunda Guerra Mundial)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q189266"
+    }
+  ],
+  "title": "Eastern Front",
+  "summary": "Wikidata item Q189266, imported by tools/import/wikidata.mjs. The item's own description reads \"1941–1945 World War II theater\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1941,
+    "end": 1945,
+    "date": "1941-06-22",
+    "endDate": "1945-05-07"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}

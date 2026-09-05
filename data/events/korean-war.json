@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "korean-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q8663",
+  "sitelinks": 132,
+  "wikipedia": {
+    "en": "Korean War",
+    "pt": "Guerra da Coreia"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q8663"
+    }
+  ],
+  "title": "Korean War",
+  "summary": "Wikidata item Q8663, imported by tools/import/wikidata.mjs. The item's own description reads \"war between North and South Korea, 1950–1953\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1950,
+    "end": 1953,
+    "date": "1950-06-25",
+    "endDate": "1953-07-27"
+  },
+  "place": null,
+  "region": "asia",
+  "actors": []
+}

@@ -10280,7 +10280,7 @@
     }
   ],
   "schema": 1,
-  "total": 1014,
+  "total": 1025,
   "warnings": [
     {
       "id": "anti-comintern-pact",
@@ -10295,13 +10295,55 @@
       "rule": "degree-zero"
     },
     {
+      "id": "assassination-of-john-f-kennedy",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "eastern-front",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "european-convention-on-human-rights",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "first-indochina-war",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
       "id": "iberian-blackout-2025",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"
     },
     {
+      "id": "indo-pakistani-war-of-1965",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
       "id": "iraq-war",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "katyn-massacre",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "korean-war",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"
@@ -10314,6 +10356,12 @@
     },
     {
       "id": "munich-agreement",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "potsdam-conference",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"
@@ -10343,10 +10391,28 @@
       "rule": "degree-zero"
     },
     {
+      "id": "treaty-of-rome",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "treaty-on-the-non-proliferation-of-nuclear-weapons",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
       "id": "uefa-2016-final",
       "kind": "source",
       "message": "source is cited by nothing under validation",
       "rule": "no-citers"
+    },
+    {
+      "id": "yom-kippur-war",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
     }
   ]
 }

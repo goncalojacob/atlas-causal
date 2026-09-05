@@ -11684,7 +11684,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 63,
+      "citationCount": 74,
       "citations": [
         {
           "dissent": false,
@@ -11952,6 +11952,12 @@
         },
         {
           "dissent": false,
+          "id": "assassination-of-john-f-kennedy",
+          "kind": "event",
+          "locator": "Q193484"
+        },
+        {
+          "dissent": false,
           "id": "batepa-massacre",
           "kind": "event",
           "locator": null
@@ -11970,9 +11976,27 @@
         },
         {
           "dissent": false,
+          "id": "eastern-front",
+          "kind": "event",
+          "locator": "Q189266"
+        },
+        {
+          "dissent": false,
           "id": "eleicoes-legislativas-regionais-na-madeira-em-1976",
           "kind": "event",
           "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "european-convention-on-human-rights",
+          "kind": "event",
+          "locator": "Q183191"
+        },
+        {
+          "dissent": false,
+          "id": "first-indochina-war",
+          "kind": "event",
+          "locator": "Q748780"
         },
         {
           "dissent": false,
@@ -11994,9 +12018,27 @@
         },
         {
           "dissent": false,
+          "id": "indo-pakistani-war-of-1965",
+          "kind": "event",
+          "locator": "Q233583"
+        },
+        {
+          "dissent": false,
           "id": "iraq-war",
           "kind": "event",
           "locator": "Q545449"
+        },
+        {
+          "dissent": false,
+          "id": "katyn-massacre",
+          "kind": "event",
+          "locator": "Q134301"
+        },
+        {
+          "dissent": false,
+          "id": "korean-war",
+          "kind": "event",
+          "locator": "Q8663"
         },
         {
           "dissent": false,
@@ -12030,6 +12072,12 @@
         },
         {
           "dissent": false,
+          "id": "potsdam-conference",
+          "kind": "event",
+          "locator": "Q151187"
+        },
+        {
+          "dissent": false,
           "id": "second-boer-war",
           "kind": "event",
           "locator": "Q215112"
@@ -12060,9 +12108,27 @@
         },
         {
           "dissent": false,
+          "id": "treaty-of-rome",
+          "kind": "event",
+          "locator": "Q167457"
+        },
+        {
+          "dissent": false,
           "id": "treaty-of-windsor",
           "kind": "event",
           "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "treaty-on-the-non-proliferation-of-nuclear-weapons",
+          "kind": "event",
+          "locator": "Q186444"
+        },
+        {
+          "dissent": false,
+          "id": "yom-kippur-war",
+          "kind": "event",
+          "locator": "Q49100"
         }
       ],
       "created": "2026-09-04",

@@ -12540,6 +12540,28 @@
     {
       "actors": [],
       "aliases": [],
+      "id": "assassination-of-john-f-kennedy",
+      "place": null,
+      "region": "americas",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "assassination of John F. Kennedy",
+      "weight": 0,
+      "when": {
+        "date": "1963-11-22",
+        "end": 1963,
+        "start": 1963
+      },
+      "wikidata": "Q193484",
+      "wikipedia": {
+        "en": "Assassination of John F. Kennedy",
+        "pt": "Assassinato de John F. Kennedy"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
       "id": "assassination-of-jose-ferreira-da-rocha-by-the-prp-br",
       "place": "porto",
       "region": "europe",
@@ -13679,6 +13701,29 @@
       }
     },
     {
+      "actors": [],
+      "aliases": [],
+      "id": "eastern-front",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Eastern Front",
+      "weight": 0,
+      "when": {
+        "date": "1941-06-22",
+        "end": 1945,
+        "endDate": "1945-05-07",
+        "start": 1941
+      },
+      "wikidata": "Q189266",
+      "wikipedia": {
+        "en": "Eastern Front (World War II)",
+        "pt": "Frente Oriental (Segunda Guerra Mundial)"
+      }
+    },
+    {
       "actors": [
         {
           "actor": "european-economic-community",
@@ -14059,6 +14104,28 @@
       }
     },
     {
+      "actors": [],
+      "aliases": [],
+      "id": "european-convention-on-human-rights",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "European Convention on Human Rights",
+      "weight": 0,
+      "when": {
+        "date": "1950-11-04",
+        "end": 1950,
+        "start": 1950
+      },
+      "wikidata": "Q183191",
+      "wikipedia": {
+        "en": "European Convention on Human Rights",
+        "pt": "Convenção Europeia dos Direitos Humanos"
+      }
+    },
+    {
       "actors": [
         {
           "actor": "third-portuguese-republic",
@@ -14138,6 +14205,29 @@
         "date": "2024-04-25",
         "end": 2024,
         "start": 2024
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "first-indochina-war",
+      "place": null,
+      "region": "asia",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "First Indochina War",
+      "weight": 0,
+      "when": {
+        "date": "1946-12-19",
+        "end": 1954,
+        "endDate": "1954-08-01",
+        "start": 1946
+      },
+      "wikidata": "Q748780",
+      "wikipedia": {
+        "en": "First Indochina War",
+        "pt": "Primeira Guerra da Indochina"
       }
     },
     {
@@ -14544,6 +14634,29 @@
     {
       "actors": [],
       "aliases": [],
+      "id": "indo-pakistani-war-of-1965",
+      "place": null,
+      "region": "asia",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Indo-Pakistani War of 1965",
+      "weight": 0,
+      "when": {
+        "date": "1965-08",
+        "end": 1965,
+        "endDate": "1965-09-23",
+        "start": 1965
+      },
+      "wikidata": "Q233583",
+      "wikipedia": {
+        "en": "India–Pakistan war of 1965",
+        "pt": "Guerra Indo-Paquistanesa de 1965"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
       "id": "iraq-war",
       "place": null,
       "region": "asia",
@@ -14567,6 +14680,28 @@
     {
       "actors": [],
       "aliases": [],
+      "id": "katyn-massacre",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Katyn massacre",
+      "weight": 0,
+      "when": {
+        "end": 1940,
+        "endDate": "1940-05",
+        "start": 1940
+      },
+      "wikidata": "Q134301",
+      "wikipedia": {
+        "en": "Katyn massacre",
+        "pt": "Massacre de Katyn"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
       "id": "killing-of-odair-moniz",
       "place": null,
       "region": "europe",
@@ -14584,6 +14719,29 @@
       "wikipedia": {
         "en": "Killing of Odair Moniz",
         "pt": "Morte de Odair Moniz"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "korean-war",
+      "place": null,
+      "region": "asia",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Korean War",
+      "weight": 0,
+      "when": {
+        "date": "1950-06-25",
+        "end": 1953,
+        "endDate": "1953-07-27",
+        "start": 1950
+      },
+      "wikidata": "Q8663",
+      "wikipedia": {
+        "en": "Korean War",
+        "pt": "Guerra da Coreia"
       }
     },
     {
@@ -15723,6 +15881,29 @@
     {
       "actors": [],
       "aliases": [],
+      "id": "potsdam-conference",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Potsdam Conference",
+      "weight": 0,
+      "when": {
+        "date": "1945-07-17",
+        "end": 1945,
+        "endDate": "1945-08-02",
+        "start": 1945
+      },
+      "wikidata": "Q151187",
+      "wikipedia": {
+        "en": "Potsdam Conference",
+        "pt": "Conferência de Potsdam"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
       "id": "q11077889",
       "place": "macau",
       "region": "asia",
@@ -16485,6 +16666,28 @@
     {
       "actors": [],
       "aliases": [],
+      "id": "treaty-of-rome",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Treaty of Rome",
+      "weight": 0,
+      "when": {
+        "date": "1957-03-25",
+        "end": 1957,
+        "start": 1957
+      },
+      "wikidata": "Q167457",
+      "wikipedia": {
+        "en": "Treaty of Rome",
+        "pt": "Tratado de Roma (1957)"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
       "id": "treaty-of-windsor",
       "place": null,
       "region": "europe",
@@ -16500,6 +16703,28 @@
       "wikidata": "Q2518953",
       "wikipedia": {
         "en": "Treaty of Windsor (1899)"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "treaty-on-the-non-proliferation-of-nuclear-weapons",
+      "place": "new-york",
+      "region": "americas",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Treaty on the Non-Proliferation of Nuclear Weapons",
+      "weight": 0,
+      "when": {
+        "date": "1968-07-01",
+        "end": 1968,
+        "start": 1968
+      },
+      "wikidata": "Q186444",
+      "wikipedia": {
+        "en": "Treaty on the Non-Proliferation of Nuclear Weapons",
+        "pt": "Tratado de Não Proliferação de Armas Nucleares"
       }
     },
     {
@@ -16678,6 +16903,29 @@
         "end": 2023,
         "endDate": "2023-08-06",
         "start": 2023
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "yom-kippur-war",
+      "place": null,
+      "region": "africa",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Yom Kippur War",
+      "weight": 0,
+      "when": {
+        "date": "1973-10-06",
+        "end": 1973,
+        "endDate": "1973-10-26",
+        "start": 1973
+      },
+      "wikidata": "Q49100",
+      "wikipedia": {
+        "en": "Yom Kippur War",
+        "pt": "Guerra do Yom Kippur"
       }
     }
   ],
