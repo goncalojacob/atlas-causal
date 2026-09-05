@@ -23,7 +23,7 @@ const mount = document.getElementById('form');
 
 try {
   const [atlas, schemas] = await Promise.all([
-    loadAtlas({ dataRoot: fixtures ? 'tests/fixtures/data/' : 'data/', landFile: false, regions: false, spine: true }),
+    loadAtlas({ dataRoot: fixtures ? 'tests/fixtures/data/' : 'data/', landFile: false, regions: false }),
     loadSchemas({ root: 'schema/' }),
   ]);
 

@@ -24,13 +24,12 @@ const panelEl = document.getElementById('panel');
 const dataRoot = fixtures ? 'tests/fixtures/data/' : 'data/';
 
 try {
-  // The spine, not the topology: the same atlas out of the smaller of the two
-  // files the index emits (ARCHITECTURE.md, "The spine, the search shard and
-  // the citers"). Nothing below knows which it came from.
+  // The spine, whole: the graph file the index emits (ARCHITECTURE.md, "The
+  // spine, the search shard and the citers"). Nothing below knows the shape
+  // it arrived in.
   const atlas = await loadAtlas({
     dataRoot,
     landFile: fixtures ? 'data/geo/land-present.json' : null,
-    spine: true,
   });
   // Started here and never awaited: the search shard is not needed to draw
   // anything, and blocking the first frame on it would trade the whole of

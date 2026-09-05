@@ -1,15 +1,16 @@
-// Reads the manifest, loads the topology whole, fetches record text on
-// demand, resolves aliases and supersededBy, builds adjacency — of events
-// to events through edges, and of actors to the events they appear in.
-// Knows nothing about how things are drawn.
+// Reads the manifest, loads the spine whole, fetches record text on demand,
+// resolves aliases and supersededBy, builds adjacency — of events to events
+// through edges, and of actors to the events they appear in. Knows nothing
+// about how things are drawn.
 //
-// The topology is always loaded whole because consequences, ancestors and
+// The spine is always loaded whole because consequences, ancestors and
 // convergence need the whole graph; a window would make convergence return
 // a subset and present it as complete (ARCHITECTURE.md).
 //
-// Since H3a-2 the same atlas can be built from the spine — the smaller
-// projection the index emits beside the topology — through loadSpine() and
-// createAtlasFromSpine(). No page reads it yet; H3b moves them over.
+// The spine is the only graph file there is since H3c. `createAtlas` below
+// assembles the atlas out of the lists the spine expands into — the shape
+// `buildTopology` builds in memory and the index used to write out whole —
+// and `createAtlasFromSpine` is the expansion in front of it.
 
 import { buildAdjacency } from './graph.js';
 import { narrativeEventIds } from './narrative.js';
@@ -486,22 +487,21 @@ export async function loadSearchShard({ dataRoot = 'data/', manifest, fetchJson 
 // `false` loads no coastlines at all: the contribution form needs the
 // records and nothing that is only drawn.
 //
-// `spine: true` reads the spine in place of the topology, which is what
-// every page does since H3b: the same atlas out of a smaller file. The flag
-// exists because the pages moved over one at a time, and it goes when the
-// topology does (H3c).
+// The graph comes from the spine and from nowhere else since H3c. The flag
+// that chose between the two files existed only while the pages moved over
+// one at a time (H3b), and it went with the file it named.
 export async function loadAtlas({
-  dataRoot = 'data/', landFile = null, regions = true, fetchJson = defaultFetchJson, spine = false,
+  dataRoot = 'data/', landFile = null, regions = true, fetchJson = defaultFetchJson,
 } = {}) {
   const manifest = await fetchJson(`${dataRoot}index/manifest.json`, { cache: 'no-store' });
-  const [graph, sourcesIndex] = await Promise.all([
-    fetchJson(`${dataRoot}${spine ? manifest.files.spine : manifest.files.topology}`),
+  const [spine, sourcesIndex] = await Promise.all([
+    fetchJson(`${dataRoot}${manifest.files.spine}`),
     fetchJson(`${dataRoot}${manifest.files.sources}`),
   ]);
   const landPath = landFile === false ? null : landFile ?? (manifest.land?.[0] ? `${dataRoot}${manifest.land[0].file}` : null);
   const land = landPath ? await fetchJson(landPath) : null;
   // The palette is tiny — one number per actor — and the map wants it on the
-  // first frame it draws territories in, so it comes with the topology rather
+  // first frame it draws territories in, so it comes with the spine rather
   // than with the shard whose outlines it colours.
   const palette = manifest.palette ? await fetchJson(`${dataRoot}${manifest.palette}`) : null;
   // The lane polygons, for the box of each region. A placeless event answers
@@ -518,10 +518,7 @@ export async function loadAtlas({
       .then((collection) => regionBounds(collection))
       .catch(() => new Map())
     : new Map();
-  const pieces = {
-    manifest, sources: sourcesIndex.sources, land, palette, regionBoxes, dataRoot, fetchJson,
-  };
-  return spine
-    ? createAtlasFromSpine({ ...pieces, spine: graph })
-    : createAtlas({ ...pieces, topology: graph });
+  return createAtlasFromSpine({
+    manifest, spine, sources: sourcesIndex.sources, land, palette, regionBoxes, dataRoot, fetchJson,
+  });
 }
