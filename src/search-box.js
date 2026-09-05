@@ -25,14 +25,23 @@ const LIMIT = 8;
 
 const KIND_LABEL = Object.freeze({ event: 'Events', actor: 'Actors', place: 'Places', source: 'Sources' });
 
-export function createSearchBox(container, { atlas, state, fixtures = false }) {
+// `shard` is the search index the build already folded (h3a-brief, A9),
+// given as a promise: the box is wired at once and answers as soon as the
+// file lands, because nothing on the page is drawn out of it. A shard that
+// does not arrive is not a search box that never works — the same index is
+// built from the atlas instead, which is what every page did before H3b.
+export function createSearchBox(container, { atlas, state, fixtures = false, shard = null }) {
   const links = createLinks({ fixtures });
-  const entries = buildSearchIndex({
+  const fromAtlas = () => buildSearchIndex({
     events: atlas.activeEvents,
     actors: [...atlas.actors.values()],
     places: [...atlas.places.values()],
     sources: [...atlas.sources.values()],
   });
+  let entries = shard ? [] : fromAtlas();
+  if (shard) {
+    shard.then((list) => { entries = list.length ? list : fromAtlas(); }, () => { entries = fromAtlas(); });
+  }
   const input = container.querySelector('input[type="search"]');
   const list = container.querySelector('[data-slot="results"]');
   const status = container.querySelector('[data-slot="count"]');

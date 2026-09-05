@@ -23,7 +23,8 @@
 
 import { svg, svgTitle } from '../util/dom.js';
 import { formatInterval, formatYear } from '../util/dates.js';
-import { overlaps, resolveWindow } from '../util/window.js';
+import { overlaps, resolveWindow, withMargin } from '../util/window.js';
+import { renderKey } from '../render-key.js';
 import { convergence } from '../graph.js';
 import { EDGE_TYPE_IDS } from '../vocab.js';
 import { chainEdges as walkedEdges, walkOrSelect } from '../chain.js';
@@ -339,10 +340,34 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
   container.append(exportButton(root, 'graph'));
   container.append(edgeKey());
 
+  // --- when the graph is drawn again ---------------------------------------
+  //
+  // The whole state, plus the transform and the rectangle on screen — the
+  // zoom decides what is stacked and what is named, and neither is state
+  // (render-key.js). The arrangement has a key of its own above: this one
+  // says whether the picture has to be drawn, that one whether the nodes
+  // have to be laid out again.
+  let drawnFor = null;
+
   function render(s) {
-    arrange(s);
+    const box = view();
+    const key = renderKey(s, transform.x, transform.y, transform.k,
+      Math.round(box.x0), Math.round(box.y0), Math.round(box.x1), Math.round(box.y1));
+    // The arrangement first and always: it is what `laid` is, and a state
+    // that changes it changes the key too, so this only ever skips a draw
+    // of a picture that is already on screen.
+    if (arrange(s) === false && key === drawnFor) return;
+    drawnFor = key;
+    draw(s);
+  }
+
+  function draw(s) {
     note.hidden = !s.bbox;
     const timeWindow = resolveWindow(s, atlas.extent);
+    // One period either side of the band is as far out as the graph draws.
+    // Beyond it a node is not faded, it is not there: the timeline is where
+    // the reader sees that the dataset carries on (window.js).
+    const margin = withMargin(timeWindow);
     // What the reader is working with, from the one place that decides it
     // (emphasis.js): the same sets the map and the timeline draw, so a fourth
     // picture is a fourth reader of that function and not a fourth copy.
@@ -388,7 +413,19 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
     // a band the reader cannot read off.
     const alone = heldSet(working, { lens: true, reachable: true });
 
-    stacked = stackLayout(laid, { k, alone });
+    // What is drawn, out of what was laid out. The layout stays over the
+    // whole arrangement — nodes that moved every time the band did would be
+    // worse than nodes that come and go — and the window decides which of
+    // those coordinates are used. An edge with an end that is not drawn has
+    // nothing to join, so it goes with it.
+    const shown = laid.nodes.filter((n) => overlaps(n.event.when, margin) || alone.has(n.id));
+    const shownIds = new Set(shown.map((n) => n.id));
+    const visible = {
+      ...laid,
+      nodes: shown,
+      edges: laid.edges.filter((line) => shownIds.has(line.from) && shownIds.has(line.to)),
+    };
+    stacked = stackLayout(visible, { k, alone });
     // A stack is in the window if any event under it is, and in the horizon
     // at the band of its nearest member: the same rule the map's stacks
     // follow. Both are only ever asked of a stack of one in practice, since

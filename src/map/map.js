@@ -12,9 +12,10 @@ import { createPresencesLayer } from './layers/presences.js';
 import { chainEdges, walkOrSelect } from '../chain.js';
 import { createEventsLayer } from './layers/events.js';
 import { DEEPEST_ZOOM } from '../cluster.js';
-import { resolveWindow } from '../util/window.js';
+import { resolveWindow, withMargin } from '../util/window.js';
 import { workingSet, heldSet } from '../emphasis.js';
 import { normalizeBbox } from '../state.js';
+import { renderKey } from '../render-key.js';
 import { exportButton } from '../share.js';
 
 const WIDTH = 960;
@@ -313,13 +314,38 @@ export function createMap(container, { atlas, state, onCluster = null }) {
   container.append(territoriesNote);
   container.append(exportButton(root, 'map'));
 
-  function render(s) {
+  // --- when the map is drawn again ----------------------------------------
+  //
+  // The whole state, plus what the map holds outside it: the transform, the
+  // rectangle on screen, the spread, and a count of the territory shards
+  // that have arrived. That last one is not decoration — the presences layer
+  // asks for a redraw when a shard lands, and a key that could not see it
+  // would skip exactly that redraw and leave the borders undrawn for ever
+  // (render-key.js).
+  let drawnFor = null;
+  let shardsIn = 0;
+
+  function render(s, { force = false } = {}) {
+    const box = view();
+    const key = renderKey(s, transform.x, transform.y, transform.k, spread ?? '', shardsIn,
+      Math.round(box.x0), Math.round(box.y0), Math.round(box.x1), Math.round(box.y1));
+    if (!force && key === drawnFor) return;
+    drawnFor = key;
+    draw(s, box);
+  }
+
+  function draw(s, box) {
     landGroup.style.display = s.layers.includes('land') ? '' : 'none';
     presencesGroup.style.display = s.layers.includes('territories') ? '' : 'none';
     eventsGroup.style.display = s.layers.includes('events') ? '' : 'none';
     // Events by overlap with the window, territories by its far end: a
     // border is a state of affairs at a moment, an event is an interval.
     const timeWindow = resolveWindow(s, atlas.extent);
+    // And one period either side of it, which is as far out as the map draws
+    // at all. Inside the margin and outside the band a mark is faded; past
+    // the margin there is no mark, and the timeline is where the reader sees
+    // that the rest of the dataset is still there (window.js).
+    const margin = withMargin(timeWindow);
 
     // What the reader is working with, from the one place that decides it
     // (emphasis.js). The lens is applied to every part of it there: it
@@ -344,11 +370,16 @@ export function createMap(container, { atlas, state, onCluster = null }) {
     // Drawn before the marks so the marks are appended over them, and only
     // when the layer is on: an off layer costs no fetch.
     if (s.layers.includes('territories')) {
-      presences.render({ year: timeWindow ? timeWindow.to : null, actorId: actor && actor.kind === 'actor' ? actor.id : null, onReady: () => render(state.get()) });
+      presences.render({
+        year: timeWindow ? timeWindow.to : null,
+        actorId: actor && actor.kind === 'actor' ? actor.id : null,
+        onReady: () => { shardsIn += 1; render(state.get()); },
+      });
     }
     const result = events.render({
       events: lens ? atlas.activeEvents.filter((e) => lens.has(e.id)) : atlas.activeEvents,
       window: timeWindow,
+      margin,
       selected: s.selected,
       pathIds,
       actorIds: working.actor,
@@ -365,7 +396,7 @@ export function createMap(container, { atlas, state, onCluster = null }) {
       consequenceEdges,
       eventById: atlas.events,
       k: transform.k,
-      view: view(),
+      view: box,
       spread,
     });
     // A spread survives a re-render — the band moving, a selection — for as

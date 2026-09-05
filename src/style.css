@@ -855,6 +855,10 @@ svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align:
 .map .cluster-count { fill: var(--cobalt); }
 /* Outside the band: still there, still clickable, plainly not in the window. */
 .timeline .bar.faded { opacity: 0.28; }
+/* An event past the margin: a tick on the floor of its lane saying the
+   dataset carries on, not a bar. No stroke, no pointer — there is nothing to
+   aim at and nothing to open (timeline.js). */
+.timeline .bar.stub { fill: var(--cobalt); stroke: none; cursor: default; pointer-events: none; }
 .timeline .cluster-count.faded { opacity: 0.35; }
 /* The horizon, drawn the way the map draws it: see the note there. */
 .timeline .bar.in-horizon { fill: var(--cobalt-faint); stroke: var(--cobalt); stroke-width: 2; }

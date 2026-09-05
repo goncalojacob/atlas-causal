@@ -26,7 +26,8 @@ import { svg, svgTitle } from './util/dom.js';
 import { createLinearScale } from './timeline-scale.js';
 import { clusterPoints } from './cluster.js';
 import { fromAstronomical, formatYear } from './util/dates.js';
-import { resolveWindow, overlaps, decadeOf, zoomWindow } from './util/window.js';
+import { resolveWindow, overlaps, decadeOf, zoomWindow, withMargin } from './util/window.js';
+import { renderKey } from './render-key.js';
 import { horizonBand } from './horizon.js';
 import { workingSet, heldSet } from './emphasis.js';
 import { walkOrSelect } from './chain.js';
@@ -64,6 +65,12 @@ const PADDING = 0.04;
 const BAR_MERGE = 11;
 const HANDLE_WIDTH = 9;
 const BADGE_SIZE = 10;
+// The stub an event past the margin is drawn as: a tick on the floor of its
+// lane, faded, with no title and no click. It is not a bar — it says the
+// dataset carries on past what the reader is looking at, and nothing else
+// (ARCHITECTURE.md, "The window is what the views draw").
+const STUB_WIDTH = 2;
+const STUB_HEIGHT = 3;
 
 export function createTimeline(container, { atlas, state, createScale = createLinearScale, onCluster = null }) {
   const root = svg('svg', { class: 'timeline', role: 'group', 'aria-label': 'Timeline and the window of time' });
@@ -451,11 +458,32 @@ export function createTimeline(container, { atlas, state, createScale = createLi
     return alone;
   }
 
+  // --- when the lanes are drawn again --------------------------------------
+  //
+  // The whole state, plus the pane the lanes are laid out into: everything
+  // else this file draws from is derived from those two. The box the map
+  // publishes 180 ms after a zoom is in the state and does change the lanes,
+  // so it is in the key; the pan and the zoom themselves are not state and
+  // never reach here (render-key.js).
+  let drawnFor = null;
+
   function render(s) {
+    const key = renderKey(s, container.clientWidth || 0, container.clientHeight || 0);
+    if (key === drawnFor) return;
+    drawnFor = key;
+    draw(s);
+  }
+
+  function draw(s) {
     const wasFocused = focusedBar();
     root.replaceChildren();
     drawn = new Map();
     const window = resolveWindow(s, atlas.extent);
+    // What is drawn as a bar at all: the band and one period either side of
+    // it. Past that an event is a stub — it is still there, it is simply not
+    // what the reader is looking at, and packing, stacking and labelling a
+    // thousand of them was the cost the window exists to avoid.
+    const margin = withMargin(window);
     // What the reader is working with, from the one place that decides it
     // (emphasis.js). The lens removes rather than dims: an event outside it
     // is not drawn faded, it is not drawn (lens.js).
@@ -471,6 +499,15 @@ export function createTimeline(container, { atlas, state, createScale = createLi
     // an open narrative's walk were being taken away by a box the reader had
     // panned somewhere else.
     const shown = eventsInView(inLens, s.bbox, atlas.places, { keep: heldSet(working), regions: atlas.regionBoxes });
+    // The margin's two halves. What the reader is holding is a bar wherever
+    // it falls, as it is exempt from the box: a walk whose next step was a
+    // tick would be a walk the reader cannot follow.
+    const held = heldSet(working);
+    const near = [];
+    const far = [];
+    for (const event of shown) {
+      (overlaps(event.when, margin) || held.has(event.id) ? near : far).push(event);
+    }
     note.hidden = !s.bbox;
     if (s.bbox) {
       const n = shown.length;
@@ -495,7 +532,7 @@ export function createTimeline(container, { atlas, state, createScale = createLi
     let natural = ROW_HEIGHT;
     let minimum = MIN_ROW_HEIGHT;
     if (s.group === 'none') {
-      lanes = rowLanes(shown, scale, width, {
+      lanes = rowLanes(near, scale, width, {
         openEnd: domain[1],
         gap: ROW_GAP,
         maxRows: MAX_ROWS,
@@ -540,9 +577,23 @@ export function createTimeline(container, { atlas, state, createScale = createLi
     if (window) root.appendChild(bandShade(window));
 
     const byLane = new Map(lanes.map((lane) => [lane.id, []]));
-    for (const event of shown) {
+    for (const event of near) {
       const lane = laneOf(event, lanes);
       if (lane) byLane.get(lane.id).push(event);
+    }
+    // The stubs first, under everything: a tick on the floor of the lane the
+    // event belongs to, or of the first row when there are no named lanes and
+    // the packing never gave it one. Not a control — no id, no title, no
+    // focus — because a two-pixel tick is not something to aim at.
+    for (const event of far) {
+      const lane = laneOf(event, lanes);
+      const i = lane ? lanes.indexOf(lane) : 0;
+      if (i < 0 || lanes.length === 0) continue;
+      root.appendChild(svg('rect', {
+        x: barBox(event, scale, { openEnd: domain[1] }).x,
+        y: barTop(i) + barHeight() - STUB_HEIGHT,
+        width: STUB_WIDTH, height: STUB_HEIGHT, class: 'bar stub faded', 'aria-hidden': 'true',
+      }));
     }
     const deferred = [];
     lanes.forEach((lane, i) => {

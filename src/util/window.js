@@ -28,6 +28,31 @@ export function overlaps(when, window) {
   return x.min <= window.to && (x.max === null || x.max >= window.from);
 }
 
+// The margin the three views draw beyond the band, in years. Since H3b a
+// view draws the window and this much either side of it, and nothing further
+// out except what the reader is holding: a bar, a mark or a node that is
+// eight hundred years away from the band is not what the reader is looking
+// at, and drawing all of them was the whole of the cost the window was
+// supposed to save.
+//
+// Fifty years, because that is what a "period" would have been over the era
+// this dataset occupies: the index's shard table was to be before 1800,
+// 1800–1899, 1900–1949, 1950–1999, 2000 on, and the three that cover 1899 to
+// 2025 are fifty years each. The shards themselves were dropped (h3a-brief,
+// A4); the span they were to be cut on is still the right distance to look
+// past the edge of the band by. The timeline keeps a faded stub for what
+// falls beyond it, so the reader can see the rest of the dataset is there;
+// the map and the graph draw nothing (ARCHITECTURE.md, "The window is what
+// the views draw").
+export const MARGIN_YEARS = 50;
+
+// The window a view actually draws: the band plus one period at each end.
+// Null in, null out — no window at all is the whole of the data, and there
+// is nothing to widen.
+export function withMargin(window, years = MARGIN_YEARS) {
+  return window ? { from: window.from - years, to: window.to + years } : null;
+}
+
 // The year "what did this lead to by then?" is asked about: the reader's own
 // if they chose one, otherwise the window's far end. Astronomical, like
 // everything the traversal compares. Null only when there is no data at all.

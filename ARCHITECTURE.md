@@ -864,7 +864,8 @@ atlas-causal/
 │   │   ├── migrate.js            ● the migration chain: ordered { version, name, up, down }, pure, no fs, applied on read and by the writer
 │   │   └── core.js               ● validate(records, topology) — pure; runs in browser and Node
 │   ├── util/esc.js  dates.js     ● escaping; toAstronomical(), interval formatting, BCE/CE
-│   ├── util/window.js            ● pure: a null bound is the data's own; what overlaps the window; "map at Y"
+│   ├── util/window.js            ● pure: a null bound is the data's own; what overlaps the window; the margin the views draw beyond it; "map at Y"
+│   ├── render-key.js             ● pure: whether a view has to be drawn again — the whole state, plus what the view holds outside it
 │   ├── fonts/                    ● EB Garamond and Public Sans, woff2, self-hosted; OFL beside them, README.md says which file came from where
 │   └── style.css                 ● azulejo tokens, the eight territory hues, the type scale, the spacing scale
 │
@@ -1480,12 +1481,66 @@ H3b a switch rather than a rewrite, and it is held to by running the event,
 actor, place and source card suites, the entry page, the horizon and the
 graph queries once over each atlas.
 
+`loadAtlas({ spine: true })` is the switch itself: the same fetching — the
+manifest `no-store`, the sources index, the coastlines, the palette, the
+region boxes — reading `files.spine` in place of `files.topology`. The flag
+exists because the pages moved over one commit at a time in H3b, and it goes
+with the topology in H3c. `tests/spine-pages.test.mjs` asserts against a real
+browser's own record of its requests that no page asks for `topology-`.
+
 One thing an atlas from the spine cannot answer, because the spine does not
 carry it: which records cite a given source. `retractionPlan` takes them
 pre-fetched instead — `topology.citers`, the one citer file the dashboard
 already holds for the source in hand — and reads `kind` and `id` off the
-rows and nothing else. `loadAtlas`, `loadSources` and `loadNarratives` are
-unchanged, and no page reads the spine yet.
+rows and nothing else.
+
+#### The window is what the views draw — a change from revision 7
+
+Revision 7 made time a window and said the map "draws the events whose
+interval **overlaps** the window"; the timeline drew every event there was
+and greyed what fell outside the band. Since **H3b** all three views draw
+the window **plus one period at each end** — `MARGIN_YEARS` in
+`util/window.js`, fifty years, which is what a period would have been over
+the era this dataset occupies — and past that margin:
+
+- the **timeline** draws a **stub**: a two-pixel faded tick on the floor of
+  the event's lane, with no title, no focus and no click. The dataset
+  visibly carries on past the band; it is simply not what the reader is
+  looking at. Stubs are not packed, not stacked and not labelled, which is
+  the whole of the saving.
+- the **map** and the **graph** draw **nothing**. A mark and a node are
+  places to aim at, and there is no honest two-pixel version of either.
+
+What the reader is holding is exempt at every distance, on all three, as it
+already was of the window and of the map's box: the walked chain, the
+selection, the open actor's events, an open narrative's whole walk and the
+horizon's reachable set (`emphasis.js`). A step of a walk that had become a
+tick would be a step the reader could not follow.
+
+This is a visible change and it is deliberate (health review, finding 28):
+rendering only the band was rejected, and a stub or a density strip was the
+condition for windowing at all. The graph's **layout** is still over the
+whole arrangement — nodes that moved every time the band did would be worse
+than nodes that come and go — and only the drawing is windowed; restricting
+the layout is H4b's, against a measurement.
+
+#### Each view has a render key
+
+Since H3b the map, the timeline and the graph each hold the key of what they
+last drew and skip a render whose key is unchanged — the idea `panel.js` has
+had since H1b, in `render-key.js` so that the three cannot disagree about
+what a state change means. **The key is the whole state**, not the fields a
+view is known to read, plus what the view holds outside the state: the map's
+transform, spread and count of territory shards arrived; the timeline's
+measured pane; the graph's transform and rectangle on screen. The asymmetry
+is the reason — a key that misses an input leaves a stale picture on screen,
+a key that includes a field the view ignores costs a redraw that changes
+nothing. The store still notifies **synchronously** (health review,
+finding 23): the key is what stops the redundant work, not a frame's delay.
+
+The graph keeps its second, narrower key as well: `arrangementKey` says
+whether the nodes have to be laid out again, this one whether the picture
+has to be drawn.
 
 ### Narrative ●
 
@@ -1575,7 +1630,8 @@ least 40 pixels; a link inside a sentence keeps the line it is set in.
 | `review/citations.js` | The per-citation verification flags: the rows the dashboard draws, what is still unchecked, the count across a dataset, and a tick set or taken back without mutating anything. Pure. | The DOM, and whether anybody is going to sign. |
 | `map/projection.js` | lon/lat → SVG coordinates and back, and the pan/zoom transform ⇄ the box of world it shows. | Everything else. |
 | `cluster.js` | Groups points that overlap at the current zoom, picks each group's representative by `weight`, says which groups no zoom could part and where a group comes apart, keeps the ids it is told to hold out (`alone`) in groups of one, and merges the links between two groups into one counted link (`mergeEdges`). Pure, and used in two dimensions by the map and the graph and in one by the timeline. | The DOM, the projection, what a point means, why an id is held out. |
-| `util/window.js` | Resolves a null bound against the data's extent, says what overlaps the window, owns the "map at Y" rule and the wheel's narrowing of the band around a year. Pure. | The DOM, and which view is asking. |
+| `util/window.js` | Resolves a null bound against the data's extent, says what overlaps the window, owns the margin the views draw beyond it, the "map at Y" rule and the wheel's narrowing of the band around a year. Pure. | The DOM, and which view is asking. |
+| `render-key.js` | Whether a view has to be drawn again: the whole state flattened in a fixed order, plus whatever the view holds outside it. Pure — the three views compare it, `panel.js` keeps its own narrower one. | What a view draws, and why any field is in the state. |
 | `util/viewport.js` | What "in view" means: whether an event's place is inside a box, and which events the lanes draw while the map holds one — plus what the reader is holding, which no box removes. Pure. | The DOM, the projection, and how the box was arrived at. |
 | `share.js` | The two ways out of what is on screen: the correction issue about one record, and the view as a standalone SVG with the stylesheet and the computed tokens inlined. Pure but for one function that hands the browser a file. | What is on the card, and which view is asking beyond its name. |
 | `phone.js` | The atlas under 720 pixels: what raises the sheet over the view, what a drag of its grip ends as, and the three classes that put the layout in the stylesheet's hands. Nothing it decides is state. | How anything is arranged — that is one media query — and what is on the card. |

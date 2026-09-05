@@ -1,12 +1,13 @@
 // Event marks and the lines of the chain being followed. Renders the events
-// whose interval overlaps the window and that have a place; a process with no
-// honest point is timeline-only, not a dot in the ocean.
+// whose interval overlaps the window, or the period either side of it, and
+// that have a place; a process with no honest point is timeline-only, not a
+// dot in the ocean.
 //
 // What the reader is working with is drawn whether or not it is in the
 // window — the walked chain, the selected event, the events of the selected
 // actor — because a chain that vanished as the band moved would be worse
-// than a chain that greys. Those are given a `faded` class instead, and
-// nothing else outside the window is drawn at all.
+// than a chain that greys. Those are given a `faded` class instead, as is
+// anything in the margin; nothing beyond the margin is drawn at all.
 //
 // Marks that overlap are drawn as one, with a count of what is underneath.
 // Thirty-seven of the sixty records in the test dataset sit on the same
@@ -128,7 +129,7 @@ export function createEventsLayer(group, projection, { pointOf, onSelect, onClus
   // coincident cluster the reader has opened, or null.
   return {
     render({
-      events, window: timeWindow = null, selected, pathIds, actorIds = null, narrativeIds = null, reachable = null,
+      events, window: timeWindow = null, margin = null, selected, pathIds, actorIds = null, narrativeIds = null, reachable = null,
       alone: drawnAlone, kept, chainEdges, consequenceEdges, eventById, k = 1, view = null, spread = null,
     }) {
       // Every mark is drawn again on every render, so a mark activated from
@@ -188,7 +189,11 @@ export function createEventsLayer(group, projection, { pointOf, onSelect, onClus
         const p = place(event);
         if (!p) continue;
         const inWindow = overlaps(event.when, timeWindow);
-        if (!inWindow && !kept.has(event.id)) continue;
+        // Inside the band, or within the period either side of it, or held.
+        // Past the margin the map draws nothing at all: `margin` null is a
+        // caller that has not asked for one, and then the window alone
+        // decides, as it did before H3b.
+        if (!inWindow && !kept.has(event.id) && !(margin && overlaps(event.when, margin))) continue;
         visible.push({ event, x: p[0], y: p[1], faded: !inWindow });
       }
 

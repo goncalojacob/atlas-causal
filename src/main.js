@@ -2,7 +2,7 @@
 // instead of data/, so the interface can be seen working before any record
 // exists. Fixtures are synthetic and the page says so.
 
-import { loadAtlas } from './data.js';
+import { loadAtlas, loadSearchShard } from './data.js';
 import { createState, parseState } from './state.js';
 import { chainEdges, retractedSteps } from './chain.js';
 import { createMap } from './map/map.js';
@@ -20,12 +20,21 @@ import { esc } from './util/esc.js';
 const params = new URLSearchParams(window.location.search);
 const fixtures = params.get('fixtures') === '1';
 const panelEl = document.getElementById('panel');
+const dataRoot = fixtures ? 'tests/fixtures/data/' : 'data/';
 
 try {
+  // The spine, not the topology: the same atlas out of the smaller of the two
+  // files the index emits (ARCHITECTURE.md, "The spine, the search shard and
+  // the citers"). Nothing below knows which it came from.
   const atlas = await loadAtlas({
-    dataRoot: fixtures ? 'tests/fixtures/data/' : 'data/',
+    dataRoot,
     landFile: fixtures ? 'data/geo/land-present.json' : null,
+    spine: true,
   });
+  // Started here and never awaited: the search shard is not needed to draw
+  // anything, and blocking the first frame on it would trade the whole of
+  // what the spine just saved.
+  const shard = loadSearchShard({ dataRoot, manifest: atlas.manifest });
 
   // Nothing is filled in here: a window bound left null means "as far as the
   // data goes", and each view resolves it against the atlas it was given. An
@@ -107,7 +116,7 @@ try {
 
   map = createMap(document.getElementById('map'), { atlas, state, onCluster: showCluster });
   timeline = createTimeline(document.getElementById('timeline'), { atlas, state, onCluster: showCluster });
-  createSearchBox(document.getElementById('search'), { atlas, state, fixtures });
+  createSearchBox(document.getElementById('search'), { atlas, state, fixtures, shard });
   createGrouping(document.getElementById('grouping'), { atlas, state });
   bindNarrativeKeys(document, { atlas, state });
 

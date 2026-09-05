@@ -430,16 +430,30 @@ export async function loadNarratives({ dataRoot = 'data/', fetchJson = defaultFe
   };
 }
 
+// The search box's whole index, folded at build time rather than on every
+// page load (h3a-brief, A9). Not part of the atlas: it is fetched beside one
+// and never waited for, because nothing is drawn out of it and a reader has
+// not typed three letters by the time it lands.
+export async function loadSearchShard({ dataRoot = 'data/', manifest, fetchJson = defaultFetchJson }) {
+  const index = await fetchJson(`${dataRoot}${manifest.files.search}`);
+  return index.entries ?? [];
+}
+
 // landFile overrides the manifest's land list; the fixture manifest has
 // none, and the site still wants coastlines under the synthetic marks.
 // `false` loads no coastlines at all: the contribution form needs the
-// topology and nothing that is only drawn.
+// records and nothing that is only drawn.
+//
+// `spine: true` reads the spine in place of the topology, which is what
+// every page does since H3b: the same atlas out of a smaller file. The flag
+// exists because the pages moved over one at a time, and it goes when the
+// topology does (H3c).
 export async function loadAtlas({
-  dataRoot = 'data/', landFile = null, regions = true, fetchJson = defaultFetchJson,
+  dataRoot = 'data/', landFile = null, regions = true, fetchJson = defaultFetchJson, spine = false,
 } = {}) {
   const manifest = await fetchJson(`${dataRoot}index/manifest.json`, { cache: 'no-store' });
-  const [topology, sourcesIndex] = await Promise.all([
-    fetchJson(`${dataRoot}${manifest.files.topology}`),
+  const [graph, sourcesIndex] = await Promise.all([
+    fetchJson(`${dataRoot}${spine ? manifest.files.spine : manifest.files.topology}`),
     fetchJson(`${dataRoot}${manifest.files.sources}`),
   ]);
   const landPath = landFile === false ? null : landFile ?? (manifest.land?.[0] ? `${dataRoot}${manifest.land[0].file}` : null);
@@ -462,7 +476,10 @@ export async function loadAtlas({
       .then((collection) => regionBounds(collection))
       .catch(() => new Map())
     : new Map();
-  return createAtlas({
-    manifest, topology, sources: sourcesIndex.sources, land, palette, regionBoxes, dataRoot, fetchJson,
-  });
+  const pieces = {
+    manifest, sources: sourcesIndex.sources, land, palette, regionBoxes, dataRoot, fetchJson,
+  };
+  return spine
+    ? createAtlasFromSpine({ ...pieces, spine: graph })
+    : createAtlas({ ...pieces, topology: graph });
 }
