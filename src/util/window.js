@@ -45,6 +45,15 @@ export function horizonIsOpen(state) {
   return Boolean(state.selected) && state.horizon !== null && state.horizon !== undefined;
 }
 
+// Whether the window as it is written already holds a year. A null bound is
+// "as far as the data goes" and therefore holds everything on its side.
+// Historians' numbering, like the two ends themselves and like `windowAt`:
+// the order of the years is the same in both numberings, and only arithmetic
+// needs the astronomical one.
+export function containsYear(state, year) {
+  return (state.from === null || year >= state.from) && (state.to === null || year <= state.to);
+}
+
 // "Map at 1911", wherever it is offered: the far end goes to that year and
 // the near end comes with it if it was later. Never the other way round —
 // moving the far end backwards past the near one would silently empty the

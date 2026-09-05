@@ -4,7 +4,9 @@
 //
 // Choosing an event that is outside the window widens the window to include
 // it, the same way "map at 1911" in the panel does — otherwise the atlas
-// would select a record and then not draw it.
+// would select a record and then not draw it. An event the window already
+// holds moves nothing: the band is the reader's, and a search is a question
+// about a record rather than an instruction to look elsewhere.
 //
 // A lens does not narrow the search. What is outside it is still found and
 // still listed, and is marked as being outside: a reader who has asked for
@@ -15,7 +17,7 @@
 import { esc } from './util/esc.js';
 import { buildSearchIndex, search, flatten } from './search.js';
 import { formatInterval } from './util/dates.js';
-import { windowAt } from './util/window.js';
+import { containsYear, windowAt } from './util/window.js';
 import { lensFor, lensSet } from './lens.js';
 import { ENTRY_KINDS, createLinks } from './entry/entry.js';
 
@@ -128,11 +130,16 @@ export function createSearchBox(container, { atlas, state, fixtures = false }) {
     } else if (item.kind === 'source') {
       state.set({ source: item.id, selected: null, chain: [] });
     } else {
-      // Widen to include it, then select: the same rule as every other "map
-      // at Y" in the atlas.
+      // Widen to include it, then select — but only when it is not already
+      // in the window. Widening unasked is how the first thing a reader does
+      // used to end with 79 of 137 bars faded and the consequences they were
+      // about to follow drawn as outside the window: choosing a record is not
+      // asking for the band to move. "Map at Y" in the panel still moves it,
+      // and `windowAt` is still that control.
       const event = atlas.events.get(item.id);
       const year = event ? bounds(event) : null;
-      const moved = year === null ? {} : windowAt(state.get(), year);
+      const now = state.get();
+      const moved = year === null || containsYear(now, year) ? {} : windowAt(now, year);
       state.set({ ...moved, selected: item.id, chain: [] });
     }
     input.value = '';

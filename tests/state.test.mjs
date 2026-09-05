@@ -3,7 +3,9 @@ import assert from 'node:assert/strict';
 import {
   parseState, formatState, defaultState, createState, parseBbox, formatBbox, pushes,
 } from '../src/state.js';
-import { resolveWindow, overlaps, windowAt, decadeOf, zoomWindow } from '../src/util/window.js';
+import {
+  resolveWindow, overlaps, windowAt, containsYear, decadeOf, zoomWindow,
+} from '../src/util/window.js';
 
 test('parse and format round trip', () => {
   const state = {
@@ -158,6 +160,22 @@ test('"map at Y" takes the near end with it only when it was later', () => {
   assert.deepEqual(windowAt({ from: 1900, to: 2011 }, 1950), { from: 1900, to: 1950 });
   assert.deepEqual(windowAt({ from: 1960, to: 2011 }, 1950), { from: 1950, to: 1950 });
   assert.deepEqual(windowAt({ from: null, to: 2011 }, 1950), { from: null, to: 1950 });
+});
+
+// What the search box asks before it moves anything: a year the band already
+// holds is not a reason to move the band. An open end holds everything on its
+// side, which is what makes the empty URL — the whole span — move for nothing.
+test('a window holds a year, with a null bound open at that end', () => {
+  assert.equal(containsYear({ from: 1900, to: 2000 }, 1974), true);
+  assert.equal(containsYear({ from: 1900, to: 2000 }, 1900), true, 'the near end is inside');
+  assert.equal(containsYear({ from: 1900, to: 2000 }, 2000), true, 'the far end is inside');
+  assert.equal(containsYear({ from: 1900, to: 2000 }, 1899), false);
+  assert.equal(containsYear({ from: 1900, to: 2000 }, 2001), false);
+  assert.equal(containsYear({ from: null, to: null }, 1500), true, 'the whole span holds every year');
+  assert.equal(containsYear({ from: null, to: 1500 }, 1500), true);
+  assert.equal(containsYear({ from: null, to: 1500 }, 1501), false);
+  assert.equal(containsYear({ from: 1500, to: null }, 3000), true);
+  assert.equal(containsYear({ from: -100, to: 100 }, -50), true, "historians' numbering orders the same way");
 });
 
 test('a decade is the ten years around a year, floored', () => {
