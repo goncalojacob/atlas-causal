@@ -182,3 +182,48 @@ test('the graph pans by touch, and the timeline still scrolls under a finger', {
     );
   });
 });
+
+// Reading a narrative on a phone. The card's own text says the map, the graph
+// and the timeline follow the step — so the sheet must not cover them at
+// every arrow key, which is what it did (health review A, finding 32). The
+// grip is the control: once the reader has pushed the sheet down, it stays
+// down until they ask for it.
+test('stepping through a narrative leaves the sheet where the reader put it', { skip }, async () => {
+  await phone(async (page, url) => {
+    await open(
+      page,
+      url('?fixtures=1&narrative=fixture-narrative-one'),
+      'return Boolean(document.querySelector(".panel .narrative-head"));',
+    );
+    // Opening the narrative is opening something, so it comes up once.
+    await waitFor(page, AT_REST_UP, 'the sheet to be up on arrival');
+
+    const grip = await page.eval(`const box = document.getElementById("sheet-grip").getBoundingClientRect();
+      return { x: box.left + box.width / 2, y: box.top + box.height / 2 };`);
+    await tap(page, grip.x, grip.y);
+    await waitFor(page, AT_REST_DOWN, 'the sheet to go down');
+
+    // Three steps forward and one back, from the keyboard as the card says.
+    for (const key of ['ArrowRight', 'ArrowRight', 'ArrowRight', 'ArrowLeft']) {
+      const step = await page.eval('return new URLSearchParams(location.search).get("step") ?? "0";');
+      await page.eval(`document.body.dispatchEvent(new KeyboardEvent('keydown', {
+        key: ${JSON.stringify(key)}, bubbles: true, cancelable: true }));
+        return true;`);
+      await waitFor(
+        page,
+        `return (new URLSearchParams(location.search).get("step") ?? "0") !== ${JSON.stringify(step)};`,
+        `the step to move on ${key}`,
+      );
+      assert.equal(await page.eval(AT_REST_DOWN), true, `the sheet stayed down through ${key}`);
+    }
+    // The reader really did walk, and the map really did follow.
+    assert.equal(await page.eval('return new URLSearchParams(location.search).get("step");'), '2');
+    assert.ok(await page.eval('return document.querySelectorAll("#map .mark.of-narrative").length > 0;'));
+
+    // And the grip still brings it back.
+    const grip2 = await page.eval(`const box = document.getElementById("sheet-grip").getBoundingClientRect();
+      return { x: box.left + box.width / 2, y: box.top + box.height / 2 };`);
+    await tap(page, grip2.x, grip2.y);
+    await waitFor(page, AT_REST_UP, 'the sheet to come up again');
+  });
+});

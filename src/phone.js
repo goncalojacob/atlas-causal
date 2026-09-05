@@ -43,9 +43,18 @@ export function hasOpening(state = {}) {
 // The sheet comes up when what is open changes to something. Not on every
 // change of state: panning the map or dragging the band must not throw the
 // panel over the picture the reader is moving.
+//
+// And nothing inside a narrative raises it. A step is a position, not an
+// opening, and everything that moves with it — the selection, the walk, the
+// window — is derived from it (narrative-mode.js); the card's own text says
+// the map, the graph and the timeline follow the step, so throwing the sheet
+// over all three at every arrow key covered exactly what the reader was being
+// told to watch (health review A, finding 32). Opening the narrative raises
+// the sheet once; from there the grip is the control.
 export function raisesSheet(before = {}, after = {}) {
   if (!hasOpening(after)) return false;
-  return OPENINGS.some((key) => (before[key] ?? null) !== (after[key] ?? null));
+  if (after.narrative && before.narrative === after.narrative) return false;
+  return CARDS.some((key) => (before[key] ?? null) !== (after[key] ?? null));
 }
 
 // A drag of the grip, ended. `dy` is downward-positive, as clientY is.

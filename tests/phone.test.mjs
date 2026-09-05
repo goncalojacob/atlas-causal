@@ -27,8 +27,26 @@ test('the sheet comes up when what is open changes to something', () => {
   assert.equal(raisesSheet({ selected: null }, { selected: 'a' }), true);
   assert.equal(raisesSheet({ selected: 'a' }, { selected: 'b' }), true);
   assert.equal(raisesSheet({ selected: 'a', actor: null }, { selected: null, actor: 'portugal' }), true);
-  // Stepping through a narrative is a change of what is open.
-  assert.equal(raisesSheet({ narrative: 'n', step: 0 }, { narrative: 'n', step: 1 }), true);
+  // Opening a narrative is opening something, so the sheet comes up once.
+  assert.equal(raisesSheet({ narrative: null, step: 0 }, { narrative: 'n', step: 0 }), true);
+});
+
+// A step is not an opening on its own: it is a position inside the narrative
+// that is already open, and the narrative's own text says the map, the graph
+// and the timeline follow it. Raising the sheet at every arrow key covered
+// the three pictures the reader was being told to watch (health review A,
+// finding 32); from the first step on, the grip is the one control.
+test('and not for a step inside the narrative already open', () => {
+  assert.equal(raisesSheet({ narrative: 'n', step: 0 }, { narrative: 'n', step: 1 }), false);
+  assert.equal(raisesSheet({ narrative: 'n', step: 4 }, { narrative: 'n', step: 3 }), false);
+  // The selection, the walk and the window are derived from the step, so they
+  // move with it; none of that is a new thing to open.
+  assert.equal(raisesSheet(
+    { narrative: 'n', step: 0, selected: 'a' },
+    { narrative: 'n', step: 1, selected: 'b' },
+  ), false);
+  // Leaving one narrative for another is opening something.
+  assert.equal(raisesSheet({ narrative: 'n', step: 3 }, { narrative: 'm', step: 0 }), true);
 });
 
 test('and stays where it is for everything that is not an opening', () => {

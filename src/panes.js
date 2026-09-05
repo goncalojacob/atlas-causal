@@ -12,6 +12,8 @@
 // written — is separate from the pointer handling, so node --test holds the
 // arithmetic without a DOM.
 
+import { PHONE_QUERY } from './phone.js';
+
 export const STORAGE_KEY = 'atlas-causal.panes';
 // What must be left of each pane for it to be worth drawing at all. The
 // panel's minimum is a line of prose at the type scale's measure; the map's
@@ -92,14 +94,38 @@ export function createPanes(layout, {
   timelineHandle,
   storage = globalThis.localStorage,
   onResize = () => {},
+  media = globalThis.matchMedia ? globalThis.matchMedia(PHONE_QUERY) : null,
 } = {}) {
   let sizes = readSizes(storage);
-  applySizes(layout, sizes);
+
+  // Below the phone width there are no panes to size: the view and the
+  // timeline are stacked and the panel is a sheet, and the sheet's grip is
+  // the one control over how much of the screen it takes (phone.js). The two
+  // preferences used to ignore each other and rely on the media query never
+  // naming the properties (health review A, finding 32); now the sizes are
+  // not applied at all, the edges leave the tab order, and a drag or an arrow
+  // key on one does nothing. The stored size is untouched and comes back
+  // whole at the width it was chosen for.
+  const isPhone = () => Boolean(media?.matches);
+  const apply = () => {
+    applySizes(layout, isPhone() ? { panel: null, timeline: null } : sizes);
+    for (const handle of [panelHandle, timelineHandle]) {
+      if (!handle?.setAttribute) continue;
+      handle.setAttribute('tabindex', isPhone() ? '-1' : '0');
+      handle.setAttribute('aria-hidden', String(isPhone()));
+    }
+  };
+  apply();
+  media?.addEventListener?.('change', () => {
+    apply();
+    onResize(sizes);
+  });
 
   const box = () => layout.getBoundingClientRect();
   const set = (patch, { remember = true } = {}) => {
+    if (isPhone()) return;
     sizes = { ...sizes, ...patch };
-    applySizes(layout, sizes);
+    apply();
     if (remember) writeSizes(storage, sizes);
     onResize(sizes);
   };
@@ -114,6 +140,7 @@ export function createPanes(layout, {
     if (!handle) return;
     let pointerId = null;
     handle.addEventListener('pointerdown', (e) => {
+      if (isPhone()) return;
       pointerId = e.pointerId;
       try { handle.setPointerCapture(pointerId); } catch { /* no such pointer any more */ }
       handle.classList.add('dragging');
@@ -129,7 +156,7 @@ export function createPanes(layout, {
       try { handle.releasePointerCapture(pointerId); } catch { /* already released */ }
       pointerId = null;
       handle.classList.remove('dragging');
-      writeSizes(storage, sizes);
+      if (!isPhone()) writeSizes(storage, sizes);
     };
     handle.addEventListener('pointerup', end);
     handle.addEventListener('pointercancel', end);
@@ -137,6 +164,7 @@ export function createPanes(layout, {
     // the only way back to a default the reader never chose.
     handle.addEventListener('dblclick', () => set({ [key]: null }));
     handle.addEventListener('keydown', (e) => {
+      if (isPhone()) return;
       const step = e.shiftKey ? BIG_STEP : STEP;
       const towards = axis === 'x'
         ? { ArrowLeft: step, ArrowRight: -step }
