@@ -12,7 +12,7 @@ import { mkdir, readdir, readFile, rmdir, unlink, writeFile } from 'node:fs/prom
 import { existsSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
-import { buildSpine, buildTopology, byId, rolesInUse } from '../src/validate/core.js';
+import { buildSpine, buildTopology, byId, citerFiles, rolesInUse } from '../src/validate/core.js';
 import { checkRules } from '../src/validate/rules.js';
 import { createRegionDeriver } from '../src/util/geo.js';
 import { digestOf, isDraft } from '../src/review/queue.js';
@@ -79,6 +79,14 @@ export async function buildIndex(dataDir = DEFAULT_DATA) {
   const spineText = serialize(buildSpine(topology));
   const sourcesText = serialize({ schema: 1, sources: topology.sources });
 
+  // One hash over the whole directory rather than one per file: manifest.json
+  // is fetched no-store on every page load, and a line per source would be
+  // 200 KB of it at twenty thousand sources. The bytes are concatenated in id
+  // order, which is the order citerFiles returns them in (A7).
+  const citers = citerFiles(topology.sources).map((entry) => [`${entry.id}.json`, serialize({ schema: 1, ...entry })]);
+  const citersDir = `citers-${hashOf(citers.map(([, text]) => text).join(''))}`;
+  const citerEntries = citers.map(([name, text]) => [`${citersDir}/${name}`, text]);
+
   // What review.html needs and the topology does not carry: which records
   // still have nobody's name on them, and what the rules say about each. The
   // browser cannot read data/ record by record — 1200 files — and the
@@ -112,6 +120,7 @@ export async function buildIndex(dataDir = DEFAULT_DATA) {
       regions: topology.regions.length,
     },
     files: {
+      citers: `index/${citersDir}`,
       spine: `index/${spineName}`,
       topology: `index/${topologyName}`,
       sources: `index/${sourcesName}`,
@@ -140,6 +149,7 @@ export async function buildIndex(dataDir = DEFAULT_DATA) {
       [topologyName]: topologyText,
       [sourcesName]: sourcesText,
       [reviewName]: reviewText,
+      ...Object.fromEntries(citerEntries),
     },
     topology,
     unresolved,

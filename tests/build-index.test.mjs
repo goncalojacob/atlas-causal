@@ -125,10 +125,15 @@ test('writeIndex removes stale hashed files and the result is fresh', async () =
   try {
     await mkdir(path.join(dir, 'index'), { recursive: true });
     await writeFile(path.join(dir, 'index', 'topology-deadbeef0000.json'), '{}\n');
+    await mkdir(path.join(dir, 'index', 'citers-deadbeef0000'), { recursive: true });
+    await writeFile(path.join(dir, 'index', 'citers-deadbeef0000', 'fixture-source-a.json'), '[]\n');
     const built = await buildIndex(dir);
     await writeIndex(dir, built);
-    const names = (await readdir(path.join(dir, 'index'))).sort();
-    assert.deepEqual(names, Object.keys(built.files).sort());
+    // Keyed by the path relative to data/index/, so a citer file is named
+    // here exactly as it is in the build: `citers-<hash>/<source-id>.json`.
+    assert.deepEqual(Object.keys(await readIndex(dir)).sort(), Object.keys(built.files).sort());
+    assert.ok(Object.keys(built.files).some((name) => /^citers-[0-9a-f]{12}\/.+\.json$/.test(name)));
+    assert.deepEqual(await readdir(path.join(dir, 'index', 'citers-deadbeef0000')).catch(() => null), null, 'the stale directory is gone');
     assert.deepEqual(compareIndex(await readIndex(dir), built), []);
     await writeFile(path.join(dir, 'index', 'manifest.json'), '{}\n');
     assert.deepEqual(compareIndex(await readIndex(dir), built), ['differs manifest.json']);

@@ -179,6 +179,18 @@ export function citesCountByRecord(sources) {
   return counts;
 }
 
+// The other direction, as files: one per source that anything cites, in id
+// order. `cshapes-2-0` alone holds 1,041 of the 1,933 citations — about
+// 150 KB — and no page needs a citer list until a reader opens that one
+// source, which is why the rows leave the index every page loads whole
+// (h3a-brief, A7). A source nothing cites gets no file: its `citationCount`
+// is in the sources index, so a card knows there is nothing to fetch.
+export function citerFiles(sources) {
+  return (sources ?? [])
+    .filter((source) => (source.citations ?? []).length > 0)
+    .map((source) => ({ id: source.id, citations: source.citations }));
+}
+
 // The identity a record claims, for the topology. `wikidata` is carried
 // because rule 21's uniqueness has to hold against the whole atlas and not
 // only against the bundle in hand, and `wikipedia` because the card offers

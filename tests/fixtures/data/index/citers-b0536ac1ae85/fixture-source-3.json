@@ -1,0 +1,18 @@
+{
+  "citations": [
+    {
+      "dissent": false,
+      "id": "fixture-event-e--fixture-event-c--inspired",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": true,
+      "id": "fixture-event-g--fixture-event-t--caused",
+      "kind": "edge",
+      "locator": null
+    }
+  ],
+  "id": "fixture-source-3",
+  "schema": 1
+}

@@ -1,0 +1,336 @@
+{
+  "citations": [
+    {
+      "dissent": false,
+      "id": "2024-madeiran-regional-election--2025-madeiran-regional-election--caused",
+      "kind": "edge",
+      "locator": "\"2025 Madeiran regional election\", revision 1363880650"
+    },
+    {
+      "dissent": false,
+      "id": "covid-19-pandemic--covid-19-pandemic-in-europe--caused",
+      "kind": "edge",
+      "locator": "\"COVID-19 pandemic\", revision 1373210817"
+    },
+    {
+      "dissent": false,
+      "id": "covid-19-pandemic-in-europe--covid-state-of-emergency-2020--caused",
+      "kind": "edge",
+      "locator": "\"COVID-19 pandemic in Europe\", revision 1372462868"
+    },
+    {
+      "dissent": false,
+      "id": "1908-portuguese-legislative-election",
+      "kind": "event",
+      "locator": "\"1908 Portuguese legislative election\", revision 1277160529"
+    },
+    {
+      "dissent": false,
+      "id": "1911-portuguese-constituent-national-assembly-election",
+      "kind": "event",
+      "locator": "\"1911 Portuguese National Constituent Assembly election\", revision 1366576929"
+    },
+    {
+      "dissent": false,
+      "id": "1911-portuguese-presidential-election",
+      "kind": "event",
+      "locator": "\"1911 Portuguese presidential election\", revision 1276453192"
+    },
+    {
+      "dissent": false,
+      "id": "1915-portuguese-legislative-election",
+      "kind": "event",
+      "locator": "\"1915 Portuguese legislative election\", revision 1304350333"
+    },
+    {
+      "dissent": false,
+      "id": "1921-portuguese-legislative-election",
+      "kind": "event",
+      "locator": "\"1921 Portuguese legislative election\", revision 1286452947"
+    },
+    {
+      "dissent": false,
+      "id": "1925-portuguese-legislative-election",
+      "kind": "event",
+      "locator": "\"1925 Portuguese legislative election\", revision 1309774511"
+    },
+    {
+      "dissent": false,
+      "id": "1928-portuguese-presidential-election",
+      "kind": "event",
+      "locator": "\"1928 Portuguese presidential election\", revision 1348300118"
+    },
+    {
+      "dissent": false,
+      "id": "1945-portuguese-legislative-election",
+      "kind": "event",
+      "locator": "\"1945 Portuguese legislative election\", revision 1302540015"
+    },
+    {
+      "dissent": false,
+      "id": "1949-portuguese-presidential-election",
+      "kind": "event",
+      "locator": "\"1949 Portuguese presidential election\", revision 1323415397"
+    },
+    {
+      "dissent": false,
+      "id": "1957-guinean-territorial-assembly-election",
+      "kind": "event",
+      "locator": "\"1957 Guinean Territorial Assembly election\", revision 1367762808"
+    },
+    {
+      "dissent": false,
+      "id": "1965-portuguese-presidential-election",
+      "kind": "event",
+      "locator": "\"1965 Portuguese presidential election\", revision 1334103559"
+    },
+    {
+      "dissent": false,
+      "id": "1969-portuguese-legislative-election",
+      "kind": "event",
+      "locator": "\"1969 Portuguese legislative election\", revision 1352375747"
+    },
+    {
+      "dissent": false,
+      "id": "1972-portuguese-presidential-election",
+      "kind": "event",
+      "locator": "\"1972 Portuguese presidential election\", revision 1305366739"
+    },
+    {
+      "dissent": false,
+      "id": "1973-portuguese-legislative-election",
+      "kind": "event",
+      "locator": "\"1973 Portuguese legislative election\", revision 1303988821"
+    },
+    {
+      "dissent": false,
+      "id": "1975-sao-tomean-legislative-election",
+      "kind": "event",
+      "locator": "\"1975 São Toméan parliamentary election\", revision 1367760170"
+    },
+    {
+      "dissent": false,
+      "id": "1976-azorean-regional-election",
+      "kind": "event",
+      "locator": "\"1976 Azorean regional election\", revision 1360996913"
+    },
+    {
+      "dissent": false,
+      "id": "1976-portuguese-local-elections",
+      "kind": "event",
+      "locator": "\"1976 Portuguese local elections\", revision 1368844806"
+    },
+    {
+      "dissent": false,
+      "id": "1977-mozambican-general-election",
+      "kind": "event",
+      "locator": "\"1977 Mozambican general election\", revision 1364484209"
+    },
+    {
+      "dissent": false,
+      "id": "1979-portuguese-legislative-election",
+      "kind": "event",
+      "locator": "\"1979 Portuguese legislative election\", revision 1371827641"
+    },
+    {
+      "dissent": false,
+      "id": "1979-portuguese-local-elections",
+      "kind": "event",
+      "locator": "\"1979 Portuguese local elections\", revision 1355707462"
+    },
+    {
+      "dissent": false,
+      "id": "1980-portuguese-legislative-election",
+      "kind": "event",
+      "locator": "\"1980 Portuguese legislative election\", revision 1372482157"
+    },
+    {
+      "dissent": false,
+      "id": "1980-portuguese-presidential-election",
+      "kind": "event",
+      "locator": "\"1980 Portuguese presidential election\", revision 1371810635"
+    },
+    {
+      "dissent": false,
+      "id": "1983-portuguese-legislative-election",
+      "kind": "event",
+      "locator": "\"1983 Portuguese legislative election\", revision 1372482000"
+    },
+    {
+      "dissent": false,
+      "id": "1985-portuguese-legislative-election",
+      "kind": "event",
+      "locator": "\"1985 Portuguese legislative election\", revision 1372481943"
+    },
+    {
+      "dissent": false,
+      "id": "1987-european-parliament-election-in-portugal",
+      "kind": "event",
+      "locator": "\"1987 European Parliament election in Portugal\", revision 1355729527"
+    },
+    {
+      "dissent": false,
+      "id": "1991-portuguese-legislative-election",
+      "kind": "event",
+      "locator": "\"1991 Portuguese legislative election\", revision 1372483511"
+    },
+    {
+      "dissent": false,
+      "id": "1995-portuguese-legislative-election",
+      "kind": "event",
+      "locator": "\"1995 Portuguese legislative election\", revision 1372483449"
+    },
+    {
+      "dissent": false,
+      "id": "1998-portuguese-abortion-referendum",
+      "kind": "event",
+      "locator": "\"1998 Portuguese abortion referendum\", revision 1356123279"
+    },
+    {
+      "dissent": false,
+      "id": "1999-macanese-chief-executive-election",
+      "kind": "event",
+      "locator": "\"1999 Macanese Chief Executive election\", revision 1291601838"
+    },
+    {
+      "dissent": false,
+      "id": "2001-portuguese-local-elections",
+      "kind": "event",
+      "locator": "\"2001 Portuguese local elections\", revision 1361853776"
+    },
+    {
+      "dissent": false,
+      "id": "2002-portuguese-legislative-election",
+      "kind": "event",
+      "locator": "\"2002 Portuguese legislative election\", revision 1372484114"
+    },
+    {
+      "dissent": false,
+      "id": "2005-portuguese-legislative-election",
+      "kind": "event",
+      "locator": "\"2005 Portuguese legislative election\", revision 1368665672"
+    },
+    {
+      "dissent": false,
+      "id": "2007-portuguese-abortion-referendum",
+      "kind": "event",
+      "locator": "\"2007 Portuguese abortion referendum\", revision 1372123133"
+    },
+    {
+      "dissent": false,
+      "id": "2009-portuguese-legislative-election",
+      "kind": "event",
+      "locator": "\"2009 Portuguese legislative election\", revision 1369111843"
+    },
+    {
+      "dissent": false,
+      "id": "2011-portuguese-legislative-election",
+      "kind": "event",
+      "locator": "\"2011 Portuguese legislative election\", revision 1372702329"
+    },
+    {
+      "dissent": false,
+      "id": "2011-portuguese-socialist-party-leadership-election",
+      "kind": "event",
+      "locator": "\"July 2011 Portuguese Socialist Party leadership election\", revision 1360451493"
+    },
+    {
+      "dissent": false,
+      "id": "2014-portuguese-socialist-party-prime-ministerial-primary",
+      "kind": "event",
+      "locator": "\"2014 Portuguese Socialist Party prime ministerial primary\", revision 1360457304"
+    },
+    {
+      "dissent": false,
+      "id": "2022-portuguese-social-democratic-party-leadership-election",
+      "kind": "event",
+      "locator": "\"2021 Portuguese Social Democratic Party leadership election\", revision 1356491687"
+    },
+    {
+      "dissent": false,
+      "id": "2022-portuguese-social-democratic-party-leadership-election-q111182017",
+      "kind": "event",
+      "locator": "\"2022 Portuguese Social Democratic Party leadership election\", revision 1356984264"
+    },
+    {
+      "dissent": false,
+      "id": "2023-madeiran-regional-election",
+      "kind": "event",
+      "locator": "\"2023 Madeiran regional election\", revision 1363880021"
+    },
+    {
+      "dissent": false,
+      "id": "2024-madeiran-regional-election",
+      "kind": "event",
+      "locator": "\"2024 Madeiran regional election\", revision 1363880288"
+    },
+    {
+      "dissent": false,
+      "id": "2025-madeiran-regional-election",
+      "kind": "event",
+      "locator": "\"2025 Madeiran regional election\", revision 1363880650"
+    },
+    {
+      "dissent": false,
+      "id": "batepa-massacre",
+      "kind": "event",
+      "locator": "\"Batepá massacre\", revision 1366289250"
+    },
+    {
+      "dissent": false,
+      "id": "covid-19-pandemic",
+      "kind": "event",
+      "locator": "\"COVID-19 pandemic\", revision 1373210817"
+    },
+    {
+      "dissent": false,
+      "id": "covid-19-pandemic-in-europe",
+      "kind": "event",
+      "locator": "\"COVID-19 pandemic in Europe\", revision 1372462868"
+    },
+    {
+      "dissent": false,
+      "id": "guinean-constitutional-referendum-1958",
+      "kind": "event",
+      "locator": "\"1958 Guinean constitutional referendum\", revision 1368429741"
+    },
+    {
+      "dissent": false,
+      "id": "iberian-pact",
+      "kind": "event",
+      "locator": "\"Iberian Pact\", revision 1368371149"
+    },
+    {
+      "dissent": false,
+      "id": "lisbon-regicide",
+      "kind": "event",
+      "locator": "\"Lisbon Regicide\", revision 1366493733"
+    },
+    {
+      "dissent": false,
+      "id": "portuguese-regionalisation-referendum-1998",
+      "kind": "event",
+      "locator": "\"1998 Portuguese regionalisation referendum\", revision 1361503309"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-accession-1985",
+      "kind": "event",
+      "locator": "\"Treaty of Accession 1985\", revision 1287624946"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-friendship-and-cooperation-between-spain-and-portugal",
+      "kind": "event",
+      "locator": "\"Treaty of Friendship and Cooperation between Spain and Portugal\", revision 1223766457"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-windsor",
+      "kind": "event",
+      "locator": "\"Treaty of Windsor (1899)\", revision 1370935059"
+    }
+  ],
+  "id": "wikipedia-en",
+  "schema": 1
+}

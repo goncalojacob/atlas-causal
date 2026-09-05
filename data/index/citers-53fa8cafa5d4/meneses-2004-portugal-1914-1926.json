@@ -1,0 +1,198 @@
+{
+  "citations": [
+    {
+      "dissent": false,
+      "id": "afonso-costa",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "gomes-da-costa",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "league-of-nations",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "military-dictatorship",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "partido-democratico",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "pimenta-de-castro",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "portuguese-expeditionary-corps",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "sidonio-pais",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "1911-portuguese-presidential-election--pimenta-de-castro-government-1915--enabled",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "1915-portuguese-legislative-election--germany-declares-war-1916--precondition-of",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "1921-portuguese-legislative-election--noite-sangrenta-1921--precondition-of",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "1925-portuguese-legislative-election--coup-28-may-1926--precondition-of",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-the-lys-1918--coup-28-may-1926--precondition-of",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "constitution-1911--sidonio-pais-coup-1917--reacted-to",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "germany-declares-war-1916--battle-of-the-lys-1918--caused",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "germany-declares-war-1916--sidonio-pais-coup-1917--caused",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "monarchy-of-the-north-1919--coup-28-may-1926--precondition-of",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "pimenta-de-castro-government-1915--revolt-14-may-1915--caused",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "revolt-14-may-1915--1915-portuguese-legislative-election--caused",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-windsor--germany-declares-war-1916--precondition-of",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "1915-portuguese-legislative-election",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "1921-portuguese-legislative-election",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "1925-portuguese-legislative-election",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-the-lys-1918",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "germany-declares-war-1916",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "pimenta-de-castro-government-1915",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "revolt-14-may-1915",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "sidonio-pais-assassinated-1918",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "sidonio-pais-coup-1917",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-windsor",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "military-dictatorship--portugal--regime-of",
+      "kind": "relation",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "portugal--league-of-nations--allied-with",
+      "kind": "relation",
+      "locator": null
+    }
+  ],
+  "id": "meneses-2004-portugal-1914-1926",
+  "schema": 1
+}
