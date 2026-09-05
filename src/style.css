@@ -355,26 +355,57 @@ button.bar-link { background: none; border: 0; padding: 0; font: inherit; font-s
   letter-spacing: var(--tracking-label);
 }
 
+/* The two sizes a reader can drag are custom properties with the layout's own
+   values as their fallbacks, so panes.js sets two numbers and removes them
+   again for the default — and nothing here has to know a pixel it did not
+   choose. */
 .layout {
   display: grid;
-  grid-template-columns: minmax(0, 2fr) minmax(300px, 1fr);
-  grid-template-rows: minmax(0, 1fr) auto;
-  grid-template-areas: "map panel" "timeline timeline";
+  grid-template-columns: minmax(0, 1fr) var(--handle) var(--panel-width, minmax(300px, 33%));
+  grid-template-rows: minmax(0, 1fr) var(--handle) var(--timeline-height, auto);
+  grid-template-areas:
+    "map      split-panel panel"
+    "split-timeline split-timeline split-timeline"
+    "timeline timeline    timeline";
   flex: 1 1 auto;
   min-height: 0;
+  --handle: 6px;
 }
 .map-area { grid-area: map; position: relative; min-height: 0; background: var(--ground); }
 /* The graph view takes the map's slot; one of the two is hidden at a time. */
 .graph-area { grid-area: map; position: relative; min-height: 0; background: var(--ground); }
 .panel { grid-area: panel; overflow: auto; padding: 1rem; border-left: 1px solid var(--line); background: var(--paper); }
 /* Packed rows make the timeline as tall as the data needs, so it is capped
-   and scrolls rather than pushing the map off the screen. */
+   and scrolls rather than pushing the map off the screen. A reader who has
+   dragged the edge has said what they want instead, and panes.js lifts the
+   cap for them. */
 .timeline-area {
   grid-area: timeline; border-top: 1px solid var(--line); background: var(--paper);
-  overflow: auto; max-height: 45vh;
+  overflow: auto; max-height: var(--timeline-max, 45vh);
 }
 
+/* The edges themselves. Six pixels of ground with a grab line down the
+   middle: enough to hit with a pointer, quiet enough not to read as a
+   border. */
+.split {
+  background: var(--ground); border: 0; padding: 0;
+  position: relative; z-index: 2;
+}
+.split::after {
+  content: ""; position: absolute; inset: 0; margin: auto;
+  background: var(--line);
+}
+.split-panel { grid-area: split-panel; cursor: col-resize; }
+.split-panel::after { width: 1px; height: 2rem; }
+.split-timeline { grid-area: split-timeline; cursor: row-resize; }
+.split-timeline::after { height: 1px; width: 2rem; }
+.split:hover::after, .split:focus-visible::after, .split.dragging::after { background: var(--cobalt); }
+.split:focus-visible { outline: 2px solid var(--cobalt); outline-offset: -2px; }
+.split.dragging { background: var(--cobalt-faint); }
+
 @media (max-width: 800px) {
+  /* One column, and the sizes a reader chose on a desktop are not mentioned
+     here at all — which is how this layout ignores them. */
   .layout {
     grid-template-columns: 1fr;
     grid-template-rows: 50vh auto auto;
@@ -382,6 +413,8 @@ button.bar-link { background: none; border: 0; padding: 0; font: inherit; font-s
     flex: 0 0 auto;
   }
   .panel { border-left: 0; border-top: 1px solid var(--line); }
+  .split { display: none; }
+  .timeline-area { max-height: 45vh; }
 }
 
 /* --- map ------------------------------------------------------------- */

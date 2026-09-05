@@ -10,6 +10,7 @@ import { createTimeline } from './timeline.js';
 import { createPanel } from './panel/panel.js';
 import { createSearchBox } from './search-box.js';
 import { createGrouping } from './grouping.js';
+import { createPanes } from './panes.js';
 import { createReadingMode, openingState } from './narrative-mode.js';
 import { bindNarrativeKeys } from './panel/narrative.js';
 import { esc } from './util/esc.js';
@@ -40,8 +41,8 @@ try {
   // The panel is built first because the map hands it the members of a
   // cluster of marks the reader clicks on.
   const panel = createPanel(panelEl, { atlas, state, fixtures });
-  createMap(document.getElementById('map'), { atlas, state, onCluster: (cluster) => panel.showCluster(cluster) });
-  createTimeline(document.getElementById('timeline'), { atlas, state, onCluster: (cluster) => panel.showCluster(cluster) });
+  const map = createMap(document.getElementById('map'), { atlas, state, onCluster: (cluster) => panel.showCluster(cluster) });
+  const timeline = createTimeline(document.getElementById('timeline'), { atlas, state, onCluster: (cluster) => panel.showCluster(cluster) });
   createSearchBox(document.getElementById('search'), { atlas, state, fixtures });
   createGrouping(document.getElementById('grouping'), { atlas, state });
   bindNarrativeKeys(document, { atlas, state });
@@ -70,6 +71,20 @@ try {
   }
   state.subscribe((s) => showView(s.view));
   showView(state.get().view);
+
+  // The edges between the panes. The sizes are a preference and not state:
+  // they are remembered per reader in localStorage and never in the URL. The
+  // views are told to redraw, because each of them measures its own box.
+  createPanes(document.querySelector('.layout'), {
+    panelHandle: document.getElementById('split-panel'),
+    timelineHandle: document.getElementById('split-timeline'),
+    onResize: () => {
+      const s = state.get();
+      map.render(s);
+      timeline.render(s);
+      if (graph) graph.render(s);
+    },
+  });
 
   for (const box of document.querySelectorAll('input[data-layer]')) {
     box.checked = state.get().layers.includes(box.dataset.layer);

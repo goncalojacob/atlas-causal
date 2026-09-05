@@ -26,7 +26,7 @@ import { svg, svgTitle } from './util/dom.js';
 import { createLinearScale } from './timeline-scale.js';
 import { clusterPoints } from './cluster.js';
 import { fromAstronomical, formatYear } from './util/dates.js';
-import { resolveWindow, overlaps, decadeOf } from './util/window.js';
+import { resolveWindow, overlaps, decadeOf, zoomWindow } from './util/window.js';
 import { horizonBand, horizonSet } from './horizon.js';
 import { narrativeSet } from './narrative.js';
 import { lensSet } from './lens.js';
@@ -164,19 +164,8 @@ export function createTimeline(container, { atlas, state, createScale = createLi
     const { x, year } = yearAt(e.clientX);
     if (x < LABEL_WIDTH) return;
     e.preventDefault();
-    const window = resolveWindow(state.get(), atlas.extent);
-    const span = Math.max(window.to - window.from, 1);
     const whole = Math.max(atlas.extent.max - atlas.extent.min, 1);
-    let wanted = Math.round(span * Math.exp(e.deltaY * 0.0015));
-    // A one-year band multiplied by 1.15 rounds back to one year, and the
-    // wheel would do nothing at the narrow end for ever.
-    if (wanted === span) wanted = span + (e.deltaY > 0 ? 1 : -1);
-    wanted = Math.min(whole, Math.max(1, wanted));
-    // The year under the cursor keeps its place in the band, so the reader
-    // narrows onto what the pointer is over and not onto the middle.
-    const t = Math.min(1, Math.max(0, (year - window.from) / span));
-    const from = Math.round(year - t * wanted);
-    setWindow({ from, to: from + wanted });
+    setWindow(zoomWindow(resolveWindow(state.get(), atlas.extent), year, e.deltaY, { whole }));
   }, { passive: false });
   root.addEventListener('pointermove', (e) => {
     if (!drag) return;

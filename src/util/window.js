@@ -60,3 +60,24 @@ export function decadeOf(astronomicalYear) {
   const start = Math.floor(astronomicalYear / 10) * 10;
   return { from: start, to: start + 9 };
 }
+
+// The wheel over the timeline. Narrowing and widening the band around the
+// year under the cursor, in astronomical years, with the cursor's year
+// keeping its place inside the band — so the reader zooms onto what the
+// pointer is over and not onto the middle.
+//
+// `deltaY` is the browser's own, and the factor is the map's, so a wheel
+// answers at the same rate in both pictures. The result is the two ends, not
+// yet clamped to the data: what the extent allows is the caller's, which is
+// the same clamp every other move of the band goes through.
+export function zoomWindow(window, year, deltaY, { whole = Infinity } = {}) {
+  const span = Math.max(window.to - window.from, 1);
+  let wanted = Math.round(span * Math.exp(deltaY * 0.0015));
+  // A one-year band multiplied by 1.15 rounds back to one year, and the
+  // wheel would do nothing at the narrow end for ever.
+  if (wanted === span) wanted = span + (deltaY > 0 ? 1 : -1);
+  wanted = Math.min(whole, Math.max(1, wanted));
+  const t = Math.min(1, Math.max(0, (year - window.from) / span));
+  const from = Math.round(year - t * wanted);
+  return { from, to: from + wanted };
+}

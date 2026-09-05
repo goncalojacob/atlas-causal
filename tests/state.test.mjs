@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {
   parseState, formatState, defaultState, createState, parseBbox, formatBbox,
 } from '../src/state.js';
-import { resolveWindow, overlaps, windowAt, decadeOf } from '../src/util/window.js';
+import { resolveWindow, overlaps, windowAt, decadeOf, zoomWindow } from '../src/util/window.js';
 
 test('parse and format round trip', () => {
   const state = {
@@ -228,4 +228,32 @@ test('a bbox that is not one is the world again', () => {
   assert.equal(parseState('?bbox=-10,36,-10,43').bbox, null, 'a box with no width is not a box');
   assert.equal(parseBbox('-10,43,-6,36')[1], 36, 'the ends the wrong way round are still a box');
   assert.deepEqual(parseBbox('-400,36,400,43'), [-180, 36, 180, 43], 'wider than the world is the world');
+});
+
+// The wheel over the timeline: the band narrows and widens around the year
+// under the cursor, and the lanes never move (M6).
+test('the wheel narrows the band around the year the cursor is over', () => {
+  const window = { from: 1400, to: 1600 };
+  const whole = { whole: 600 };
+  const narrower = zoomWindow(window, 1500, -100, whole);
+  assert.ok(narrower.to - narrower.from < 200, 'wheel up narrows');
+  assert.equal((narrower.from + narrower.to) / 2, 1500, 'around the middle, when the cursor is at the middle');
+
+  const wider = zoomWindow(window, 1500, 100, whole);
+  assert.ok(wider.to - wider.from > 200, 'wheel down widens');
+
+  // The cursor's year keeps its place in the band: a quarter of the way in
+  // stays a quarter of the way in.
+  const off = zoomWindow(window, 1450, -100, whole);
+  const share = (1450 - off.from) / (off.to - off.from);
+  assert.ok(Math.abs(share - 0.25) < 0.02, `the year under the cursor holds its place (${share})`);
+});
+
+test('the wheel never sticks at one year, and never passes the data', () => {
+  const one = zoomWindow({ from: 1500, to: 1501 }, 1500, -100, { whole: 600 });
+  assert.equal(one.to - one.from, 1, 'a one-year band cannot narrow further');
+  const widened = zoomWindow({ from: 1500, to: 1501 }, 1500, 1, { whole: 600 });
+  assert.equal(widened.to - widened.from, 2, 'but a rounding that would stick is nudged');
+  const capped = zoomWindow({ from: 1400, to: 1600 }, 1500, 5000, { whole: 300 });
+  assert.equal(capped.to - capped.from, 300, 'and it never widens past the data');
 });

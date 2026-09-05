@@ -45,7 +45,13 @@
   <main class="layout">
     <section id="map" class="map-area" aria-label="Map"></section>
     <section id="graph" class="graph-area" aria-label="Graph" hidden></section>
+    <!-- The two edges the reader can drag. Separators, not decoration: they
+         take focus, they answer the arrow keys, and Home puts them back. -->
+    <div id="split-panel" class="split split-panel" role="separator" tabindex="0"
+         aria-orientation="vertical" aria-label="Resize the panel — arrow keys, Home to restore"></div>
     <aside id="panel" class="panel" aria-live="polite"></aside>
+    <div id="split-timeline" class="split split-timeline" role="separator" tabindex="0"
+         aria-orientation="horizontal" aria-label="Resize the timeline — arrow keys, Home to restore"></div>
     <section id="timeline" class="timeline-area" aria-label="Timeline"></section>
   </main>
   <script type="module" src="src/main.js"></script>
