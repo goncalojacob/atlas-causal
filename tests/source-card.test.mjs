@@ -8,25 +8,12 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import path from 'node:path';
-import { readFile } from 'node:fs/promises';
-import { createAtlas } from '../src/data.js';
 import { discussUrl } from '../src/share.js';
 import { sourceCardHtml } from '../src/panel/source.js';
 import { esc } from '../src/util/esc.js';
-import { ROOT } from './helpers.mjs';
+import { ATLAS_BUILDS, ROOT } from './helpers.mjs';
 
-async function repositoryAtlas() {
-  const dataDir = path.join(ROOT, 'data');
-  const read = async (rel) => JSON.parse(await readFile(path.join(dataDir, rel), 'utf8'));
-  const manifest = await read('index/manifest.json');
-  const [topology, sources] = await Promise.all([read(manifest.files.topology), read(manifest.files.sources)]);
-  return createAtlas({
-    manifest,
-    topology,
-    sources: sources.sources,
-    fetchJson: () => Promise.reject(new Error('the source card fetches nothing')),
-  });
-}
+const dataDir = path.join(ROOT, 'data');
 
 // The context panel.js hands every card, reduced to what this one uses.
 function context(atlas) {
@@ -40,72 +27,72 @@ function context(atlas) {
 
 const rowsIn = (html) => (html.match(/<li class="actor-row"/g) ?? []).length;
 
-test('a source card lists exactly as many citers as the index counts', async () => {
-  const atlas = await repositoryAtlas();
+// Every test twice: the card cannot tell whether it was handed an atlas
+// built from the topology or one built from the spine (A12). `atlas.sources`
+// is the same file either way — sources are not in the spine — but the
+// citers a row links back to are resolved through the atlas that is.
+for (const [label, buildAtlas] of ATLAS_BUILDS) {
+  const atlas = await buildAtlas(dataDir);
   const ctx = context(atlas);
-  assert.ok(atlas.sources.size > 0);
-  for (const source of atlas.sources.values()) {
-    const html = sourceCardHtml(ctx, source);
-    assert.equal(rowsIn(html), source.citationCount, `${source.id}: a citer the card could not draw`);
-    // A source nothing cites yet — the Wikimedia records are written before
-    // the import that will cite them — says so instead of counting to zero.
-    if (source.citationCount === 0) assert.match(html, /Nothing in the atlas cites this source yet/);
-    else assert.match(html, new RegExp(`What cites it <span class="count">${source.citationCount}</span>`));
-  }
-  // And the atlas really does have a source with a lot of them: the check
-  // above would pass on an empty bibliography.
-  const busiest = [...atlas.sources.values()].sort((a, b) => b.citationCount - a.citationCount)[0];
-  assert.ok(busiest.citationCount >= 10, `the busiest source has ${busiest.citationCount} citers`);
-});
 
-test('every kind of citer becomes a way back into the atlas', async () => {
-  const atlas = await repositoryAtlas();
-  const ctx = context(atlas);
-  const kinds = new Set();
-  for (const source of atlas.sources.values()) {
-    for (const c of source.citations) kinds.add(c.kind);
-  }
-  assert.ok(kinds.has('event') && kinds.has('edge') && kinds.has('actor'), [...kinds].join(', '));
-  const withEdge = [...atlas.sources.values()].find((s) => s.citations.some((c) => c.kind === 'edge'));
-  const html = sourceCardHtml(ctx, withEdge);
-  assert.match(html, /data-action="follow-edge" data-edge="/, 'an edge citer walks its own step');
-  const withActor = [...atlas.sources.values()].find((s) => s.citations.some((c) => c.kind === 'actor'));
-  assert.match(sourceCardHtml(ctx, withActor), /data-action="actor" data-id="/);
-  assert.match(html, /data-action="clear-source"/, 'and the card can be closed');
-});
-
-test('a dissenting citation is marked as one on the card', async () => {
-  const atlas = await repositoryAtlas();
-  const ctx = context(atlas);
-  const dissented = [...atlas.sources.values()].find((s) => s.citations.some((c) => c.dissent));
-  assert.ok(dissented, 'the dataset has at least one dispute');
-  assert.match(sourceCardHtml(ctx, dissented), /<span class="badge disputed">dissenting<\/span>/);
-});
-
-test('nothing from a record reaches the card unescaped', async () => {
-  const atlas = await repositoryAtlas();
-  const ctx = context(atlas);
-  const html = sourceCardHtml(ctx, {
-    id: 'nasty',
-    title: '<script>alert(1)</script>',
-    creators: ['<img onerror="x">'],
-    year: 1999,
-    type: 'book',
-    status: 'active',
-    url: 'javascript:alert(1)',
-    citations: [],
+  test(`a source card lists exactly as many citers as the index counts, over ${label}`, async () => {
+    assert.ok(atlas.sources.size > 0);
+    for (const source of atlas.sources.values()) {
+      const html = sourceCardHtml(ctx, source);
+      assert.equal(rowsIn(html), source.citationCount, `${source.id}: a citer the card could not draw`);
+      // A source nothing cites yet — the Wikimedia records are written before
+      // the import that will cite them — says so instead of counting to zero.
+      if (source.citationCount === 0) assert.match(html, /Nothing in the atlas cites this source yet/);
+      else assert.match(html, new RegExp(`What cites it <span class="count">${source.citationCount}</span>`));
+    }
+    // And the atlas really does have a source with a lot of them: the check
+    // above would pass on an empty bibliography.
+    const busiest = [...atlas.sources.values()].sort((a, b) => b.citationCount - a.citationCount)[0];
+    assert.ok(busiest.citationCount >= 10, `the busiest source has ${busiest.citationCount} citers`);
   });
-  assert.doesNotMatch(html, /<script>/);
-  assert.doesNotMatch(html, /<img/);
-  assert.match(html, /&lt;script&gt;/);
-  // A url that is not http(s) is shown as text and never as a link.
-  assert.doesNotMatch(html, /href="javascript/);
-  assert.match(html, /unsafe-url/);
-});
 
-test('the source card carries the lens control', async () => {
-  const atlas = await repositoryAtlas();
-  const source = [...atlas.sources.values()][0];
-  const html = sourceCardHtml(context(atlas), source);
-  assert.match(html, new RegExp(`data-action="focus" data-focus="source:${source.id}"`));
-});
+  test(`every kind of citer becomes a way back into the atlas, over ${label}`, async () => {
+    const kinds = new Set();
+    for (const source of atlas.sources.values()) {
+      for (const c of source.citations) kinds.add(c.kind);
+    }
+    assert.ok(kinds.has('event') && kinds.has('edge') && kinds.has('actor'), [...kinds].join(', '));
+    const withEdge = [...atlas.sources.values()].find((s) => s.citations.some((c) => c.kind === 'edge'));
+    const html = sourceCardHtml(ctx, withEdge);
+    assert.match(html, /data-action="follow-edge" data-edge="/, 'an edge citer walks its own step');
+    const withActor = [...atlas.sources.values()].find((s) => s.citations.some((c) => c.kind === 'actor'));
+    assert.match(sourceCardHtml(ctx, withActor), /data-action="actor" data-id="/);
+    assert.match(html, /data-action="clear-source"/, 'and the card can be closed');
+  });
+
+  test(`a dissenting citation is marked as one on the card, over ${label}`, async () => {
+    const dissented = [...atlas.sources.values()].find((s) => s.citations.some((c) => c.dissent));
+    assert.ok(dissented, 'the dataset has at least one dispute');
+    assert.match(sourceCardHtml(ctx, dissented), /<span class="badge disputed">dissenting<\/span>/);
+  });
+
+  test(`nothing from a record reaches the card unescaped, over ${label}`, async () => {
+    const html = sourceCardHtml(ctx, {
+      id: 'nasty',
+      title: '<script>alert(1)</script>',
+      creators: ['<img onerror="x">'],
+      year: 1999,
+      type: 'book',
+      status: 'active',
+      url: 'javascript:alert(1)',
+      citations: [],
+    });
+    assert.doesNotMatch(html, /<script>/);
+    assert.doesNotMatch(html, /<img/);
+    assert.match(html, /&lt;script&gt;/);
+    // A url that is not http(s) is shown as text and never as a link.
+    assert.doesNotMatch(html, /href="javascript/);
+    assert.match(html, /unsafe-url/);
+  });
+
+  test(`the source card carries the lens control, over ${label}`, async () => {
+    const source = [...atlas.sources.values()][0];
+    const html = sourceCardHtml(ctx, source);
+    assert.match(html, new RegExp(`data-action="focus" data-focus="source:${source.id}"`));
+  });
+}

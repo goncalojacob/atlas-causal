@@ -1,7 +1,9 @@
 // Shared test helpers. Zero dependencies; node --test.
 
 import path from 'node:path';
+import { readFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
+import { createAtlas, createAtlasFromSpine } from '../src/data.js';
 import { readSchemaFiles, readRecords, readRegions, readRegionPolygons } from '../tools/lib/read.mjs';
 
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -11,6 +13,45 @@ export const FIXTURE_DATA = path.join(ROOT, 'tests', 'fixtures', 'data');
 export function clone(value) {
   return JSON.parse(JSON.stringify(value));
 }
+
+// ─── The two ways to build an atlas ────────────────────────────────────────
+//
+// From the topology, as every page does today, and from the spine, as H3b
+// will. Every suite that builds a real atlas runs over both: the round trip
+// is then proved by the assertions those suites already make — every field a
+// card, a lane, a query or a rule reads — rather than by a hand-written list
+// of fields, which drifts (docs/health/h3a-brief.md, A12).
+//
+// The sources index is the same file on both paths; it is not in the spine.
+
+// A card fetches the record for its own text. Nothing here does, and a card
+// that started to would be asking the network in a unit test.
+const refuse = () => Promise.reject(new Error('the atlas fetches record text separately'));
+
+async function indexOf(dataDir) {
+  const read = async (rel) => JSON.parse(await readFile(path.join(dataDir, rel), 'utf8'));
+  const manifest = await read('index/manifest.json');
+  return { manifest, read };
+}
+
+export async function atlasFromTopology(dataDir, options = {}) {
+  const { manifest, read } = await indexOf(dataDir);
+  const [topology, sources] = await Promise.all([read(manifest.files.topology), read(manifest.files.sources)]);
+  return createAtlas({ manifest, topology, sources: sources.sources, fetchJson: refuse, ...options });
+}
+
+export async function atlasFromSpine(dataDir, options = {}) {
+  const { manifest, read } = await indexOf(dataDir);
+  const [spine, sources] = await Promise.all([read(manifest.files.spine), read(manifest.files.sources)]);
+  return createAtlasFromSpine({ manifest, spine, sources: sources.sources, fetchJson: refuse, ...options });
+}
+
+// `for (const [label, buildAtlas] of ATLAS_BUILDS)` — the label goes in the
+// test's name, so a failure says which of the two files it came from.
+export const ATLAS_BUILDS = Object.freeze([
+  Object.freeze(['the topology', atlasFromTopology]),
+  Object.freeze(['the spine', atlasFromSpine]),
+]);
 
 let schemaCache = null;
 export async function schemas() {
