@@ -2662,14 +2662,13 @@ fixtures and the three static pages — sixteen assertions, all passing:
 
 - Repo: `~/atlas-causal`, branch `m0`.
 - Pull request #1: https://github.com/goncalojacob/atlas-causal/pull/1 — its
-  body is **62,121 of GitHub's 65,536 bytes** after M23. Each milestone
+  body is **61,190 of GitHub's 65,536 bytes** after M24. Each milestone
   that adds a section pays for it by cutting an older one to a summary that
   points here: M8 cut M5's, M11 cut M7's, M12 cut M9's, M13 cut M10's, M14
-  cut M11's, M15 cut M12's, M16 cut M13's, M17 cut M14's. M22's section is
-  18.8 KB, far the largest, and left about 2.5 KB of headroom; **M23 cut two**
-  — M20's and M8's — to pay for its own 4.3 KB and leave 3.4 KB. The next
-  milestone has room for a short section only, and should cut M21's (5.0 KB)
-  or M22's before writing a long one. M4's, M6's and Map usability's are the
+  cut M11's, M15 cut M12's, M16 cut M13's, M17 cut M14's, M23 cut M20's and
+  M8's, and **M24 cut M21's** (5.0 KB down to 1.2 KB) to pay for its own
+  2.9 KB. That leaves **4.3 KB of headroom**. M22's section is 18.8 KB, far
+  the largest and the obvious next cut; M4's, M6's and Map usability's are the
   longest left written out.
   A `#### Checks for Mn` heading contains the string `## Checks`, so an
   insertion anchored on the top-level section has to search for
