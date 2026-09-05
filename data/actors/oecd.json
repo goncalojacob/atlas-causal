@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "oecd",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "date",
+      "claim"
+    ],
+    "note": "The 1961 reconstitution and Portugal's passage into it as a founding member were written from memory. The editorial decision to keep the OEEC and the OECD as two actors is the drafter's and is argued in the summary."
+  },
+  "sources": [
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    },
+    {
+      "source": "reis-2013-portuguese-slump",
+      "locator": null
+    }
+  ],
+  "actorType": "institution",
+  "names": [
+    "Organisation for Economic Co-operation and Development",
+    "OECD",
+    "Organização para a Cooperação e Desenvolvimento Económico",
+    "OCDE"
+  ],
+  "summary": "The organisation that replaced the OEEC in 1961, keeping its European members, adding the United States and Canada, and trading the administration of aid for the business of measuring its members against one another. Portugal passed into it as a founding member without having to decide anything, and for the sixty years since, the OECD's periodic surveys have been the standing external assessment of Portuguese economic policy — read closely by governments and quoted against them. Its statistics are also the reason Portuguese growth, schooling and productivity are normally discussed as a rank among rich countries rather than in absolute terms. It is a separate actor here from the OEEC rather than a renaming of it, because the membership and the purpose both changed; the atlas closes the European Economic Community at Maastricht for the same reason. It is in the atlas as the body through which Portugal has been continuously compared with the countries it wanted to resemble.",
+  "when": {
+    "start": 1961,
+    "end": null
+  },
+  "where": {
+    "lon": 2.35,
+    "lat": 48.85,
+    "precision": "city",
+    "label": "Paris"
+  }
+}

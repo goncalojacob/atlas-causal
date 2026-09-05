@@ -4156,6 +4156,32 @@
         "telo-2007-historia-contemporanea",
         "costa-pinto-2003-contemporary-portugal"
       ],
+      "id": "council-of-europe",
+      "kind": "actor",
+      "names": [
+        "Council of Europe",
+        "Conselho da Europa"
+      ],
+      "review": {
+        "flags": [
+          "date",
+          "claim"
+        ],
+        "note": "The 1949 founding, the September 1976 admission and the claim that the Estado Novo could not have met the membership conditions were written from memory."
+      },
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "costa-pinto-2003-contemporary-portugal"
+      ],
       "id": "council-of-the-revolution",
       "kind": "actor",
       "names": [
@@ -4463,6 +4489,33 @@
       "status": "active",
       "to": "world-youth-day-2023",
       "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "costa-pinto-2003-contemporary-portugal"
+      ],
+      "id": "cplp",
+      "kind": "actor",
+      "names": [
+        "Community of Portuguese Language Countries",
+        "CPLP",
+        "Comunidade dos Países de Língua Portuguesa"
+      ],
+      "review": {
+        "flags": [
+          "date",
+          "claim"
+        ],
+        "note": "The July 1996 founding, the founding membership and the account of who drove the proposal were written from memory, not read in the cited works."
+      },
+      "status": "active"
     },
     {
       "authors": [
@@ -4917,6 +4970,33 @@
       "authors": [
         {
           "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal",
+        "rosas-1994-estado-novo"
+      ],
+      "id": "efta",
+      "kind": "actor",
+      "names": [
+        "European Free Trade Association",
+        "EFTA",
+        "Associação Europeia de Comércio Livre"
+      ],
+      "review": {
+        "flags": [
+          "date",
+          "claim"
+        ],
+        "note": "The 1960 convention, the special annex for Portugal and the share of 1960s industrial growth attributed to membership were written from memory, not read in the cited works."
+      },
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
@@ -5145,6 +5225,63 @@
           "wikidata-assigned-by-assistant"
         ],
         "note": "Closing this actor rather than renaming it is an editorial choice nobody has made deliberately; the closing year follows from it."
+      },
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "costa-pinto-teixeira-2019-political-institutions"
+      ],
+      "id": "european-union",
+      "kind": "actor",
+      "names": [
+        "European Union",
+        "EU",
+        "União Europeia",
+        "UE"
+      ],
+      "review": {
+        "flags": [
+          "date",
+          "claim"
+        ],
+        "note": "The Maastricht dates were written from memory. Recording the Union as a polity rather than an institution is the drafter's decision: it is argued in the summary, and it is also what lets the succession from the Community validate, since rule 19 requires both ends of a succession to be the same kind of actor."
+      },
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "reis-2013-portuguese-slump",
+        "costa-pinto-teixeira-2019-political-institutions"
+      ],
+      "id": "eurozone",
+      "kind": "actor",
+      "names": [
+        "Eurozone",
+        "Euro area",
+        "Economic and Monetary Union",
+        "Zona Euro",
+        "Área do Euro"
+      ],
+      "review": {
+        "flags": [
+          "date",
+          "claim"
+        ],
+        "note": "The 1999 start and the count of eleven founding members were written from memory. How much of the Portuguese slump the currency caused is the open argument the summary points at, and the record takes no side in it."
       },
       "status": "active"
     },
@@ -6154,6 +6291,33 @@
       "status": "active",
       "to": "coup-28-may-1926",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal",
+        "meneses-2004-portugal-1914-1926"
+      ],
+      "id": "league-of-nations",
+      "kind": "actor",
+      "names": [
+        "League of Nations",
+        "Sociedade das Nações",
+        "SDN"
+      ],
+      "review": {
+        "flags": [
+          "date",
+          "claim"
+        ],
+        "note": "The founding and closing years and the reading of what the intervention of 1916-18 bought were written from memory, not read in the cited works."
+      },
+      "status": "active"
     },
     {
       "authors": [
@@ -7592,6 +7756,62 @@
         }
       ],
       "cites": [
+        "ramos-2009-historia-de-portugal",
+        "reis-2013-portuguese-slump"
+      ],
+      "id": "oecd",
+      "kind": "actor",
+      "names": [
+        "Organisation for Economic Co-operation and Development",
+        "OECD",
+        "Organização para a Cooperação e Desenvolvimento Económico",
+        "OCDE"
+      ],
+      "review": {
+        "flags": [
+          "date",
+          "claim"
+        ],
+        "note": "The 1961 reconstitution and Portugal's passage into it as a founding member were written from memory. The editorial decision to keep the OEEC and the OECD as two actors is the drafter's and is argued in the summary."
+      },
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal",
+        "rosas-1994-estado-novo"
+      ],
+      "id": "oeec",
+      "kind": "actor",
+      "names": [
+        "Organisation for European Economic Co-operation",
+        "OEEC",
+        "Organização Europeia de Cooperação Económica",
+        "OECE"
+      ],
+      "review": {
+        "flags": [
+          "date",
+          "claim"
+        ],
+        "note": "That Portugal first declined Marshall aid and asked for it a year later is written from memory; the years of the organisation likewise. Neither has been read in the cited works."
+      },
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "rosas-1994-estado-novo",
         "meneses-2009-salazar"
       ],
@@ -8759,6 +8979,33 @@
         }
       ],
       "cites": [
+        "telo-2007-historia-contemporanea",
+        "costa-pinto-teixeira-2019-political-institutions"
+      ],
+      "id": "schengen-area",
+      "kind": "actor",
+      "names": [
+        "Schengen Area",
+        "Espaço Schengen",
+        "Schengen"
+      ],
+      "review": {
+        "flags": [
+          "date",
+          "claim"
+        ],
+        "note": "The 1985 agreement, the 1990 convention, Portugal's 1991 signature and the March 1995 entry into force were written from memory, not read in the cited works."
+      },
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "macqueen-1997-decolonization"
       ],
       "id": "sekou-toure",
@@ -9517,8 +9764,38 @@
     }
   ],
   "schema": 1,
-  "total": 975,
+  "total": 984,
   "warnings": [
+    {
+      "id": "council-of-europe",
+      "kind": "actor",
+      "message": "actor is referenced by no event and no relation, and holds no territory",
+      "rule": "actor-unused"
+    },
+    {
+      "id": "cplp",
+      "kind": "actor",
+      "message": "actor is referenced by no event and no relation, and holds no territory",
+      "rule": "actor-unused"
+    },
+    {
+      "id": "efta",
+      "kind": "actor",
+      "message": "actor is referenced by no event and no relation, and holds no territory",
+      "rule": "actor-unused"
+    },
+    {
+      "id": "european-union",
+      "kind": "actor",
+      "message": "actor is referenced by no event and no relation, and holds no territory",
+      "rule": "actor-unused"
+    },
+    {
+      "id": "eurozone",
+      "kind": "actor",
+      "message": "actor is referenced by no event and no relation, and holds no territory",
+      "rule": "actor-unused"
+    },
     {
       "id": "iberian-blackout-2025",
       "kind": "event",
@@ -9526,10 +9803,34 @@
       "rule": "degree-zero"
     },
     {
+      "id": "league-of-nations",
+      "kind": "actor",
+      "message": "actor is referenced by no event and no relation, and holds no territory",
+      "rule": "actor-unused"
+    },
+    {
+      "id": "oecd",
+      "kind": "actor",
+      "message": "actor is referenced by no event and no relation, and holds no territory",
+      "rule": "actor-unused"
+    },
+    {
+      "id": "oeec",
+      "kind": "actor",
+      "message": "actor is referenced by no event and no relation, and holds no territory",
+      "rule": "actor-unused"
+    },
+    {
       "id": "saint-denis",
       "kind": "place",
       "message": "place is referenced by no event",
       "rule": "place-unused"
+    },
+    {
+      "id": "schengen-area",
+      "kind": "actor",
+      "message": "actor is referenced by no event and no relation, and holds no territory",
+      "rule": "actor-unused"
     },
     {
       "id": "uefa-2016-final",

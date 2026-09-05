@@ -1382,6 +1382,22 @@
     {
       "actorType": "institution",
       "aliases": [],
+      "id": "council-of-europe",
+      "name": "Council of Europe",
+      "names": [
+        "Council of Europe",
+        "Conselho da Europa"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 1949
+      }
+    },
+    {
+      "actorType": "institution",
+      "aliases": [],
       "id": "council-of-the-revolution",
       "name": "Council of the Revolution",
       "names": [
@@ -1393,6 +1409,23 @@
       "when": {
         "end": 1982,
         "start": 1975
+      }
+    },
+    {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "cplp",
+      "name": "Community of Portuguese Language Countries",
+      "names": [
+        "Community of Portuguese Language Countries",
+        "CPLP",
+        "Comunidade dos Países de Língua Portuguesa"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 1996
       }
     },
     {
@@ -1673,6 +1706,23 @@
       }
     },
     {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "efta",
+      "name": "European Free Trade Association",
+      "names": [
+        "European Free Trade Association",
+        "EFTA",
+        "Associação Europeia de Comércio Livre"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 1960
+      }
+    },
+    {
       "actorType": "polity",
       "aliases": [],
       "id": "egypt",
@@ -1895,6 +1945,43 @@
       "wikipedia": {
         "en": "European Economic Community",
         "pt": "Comunidade Económica Europeia"
+      }
+    },
+    {
+      "actorType": "polity",
+      "aliases": [],
+      "id": "european-union",
+      "name": "European Union",
+      "names": [
+        "European Union",
+        "EU",
+        "União Europeia",
+        "UE"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 1993
+      }
+    },
+    {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "eurozone",
+      "name": "Eurozone",
+      "names": [
+        "Eurozone",
+        "Euro area",
+        "Economic and Monetary Union",
+        "Zona Euro",
+        "Área do Euro"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 1999
       }
     },
     {
@@ -3165,6 +3252,23 @@
       }
     },
     {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "league-of-nations",
+      "name": "League of Nations",
+      "names": [
+        "League of Nations",
+        "Sociedade das Nações",
+        "SDN"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": 1946,
+        "start": 1920
+      }
+    },
+    {
       "actorType": "polity",
       "aliases": [],
       "id": "lebanon",
@@ -4282,6 +4386,42 @@
       }
     },
     {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "oecd",
+      "name": "Organisation for Economic Co-operation and Development",
+      "names": [
+        "Organisation for Economic Co-operation and Development",
+        "OECD",
+        "Organização para a Cooperação e Desenvolvimento Económico",
+        "OCDE"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 1961
+      }
+    },
+    {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "oeec",
+      "name": "Organisation for European Economic Co-operation",
+      "names": [
+        "Organisation for European Economic Co-operation",
+        "OEEC",
+        "Organização Europeia de Cooperação Económica",
+        "OECE"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": 1961,
+        "start": 1948
+      }
+    },
+    {
       "actorType": "polity",
       "aliases": [],
       "id": "oil-rivers-protectorate",
@@ -5102,6 +5242,23 @@
       "when": {
         "end": null,
         "start": 1932
+      }
+    },
+    {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "schengen-area",
+      "name": "Schengen Area",
+      "names": [
+        "Schengen Area",
+        "Espaço Schengen",
+        "Schengen"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 1995
       }
     },
     {

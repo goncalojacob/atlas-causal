@@ -592,11 +592,23 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 65,
+      "citationCount": 67,
       "citations": [
         {
           "dissent": false,
+          "id": "council-of-europe",
+          "kind": "actor",
+          "locator": null
+        },
+        {
+          "dissent": false,
           "id": "council-of-the-revolution",
+          "kind": "actor",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "cplp",
           "kind": "actor",
           "locator": null
         },
@@ -1015,7 +1027,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 62,
+      "citationCount": 65,
       "citations": [
         {
           "dissent": false,
@@ -1043,6 +1055,18 @@
         },
         {
           "dissent": false,
+          "id": "european-union",
+          "kind": "actor",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "eurozone",
+          "kind": "actor",
+          "locator": null
+        },
+        {
+          "dissent": false,
           "id": "marcelo-rebelo-de-sousa",
           "kind": "actor",
           "locator": null
@@ -1062,6 +1086,12 @@
         {
           "dissent": false,
           "id": "psd",
+          "kind": "actor",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "schengen-area",
           "kind": "actor",
           "locator": null
         },
@@ -8770,7 +8800,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 30,
+      "citationCount": 31,
       "citations": [
         {
           "dissent": false,
@@ -8781,6 +8811,12 @@
         {
           "dissent": false,
           "id": "gomes-da-costa",
+          "kind": "actor",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "league-of-nations",
           "kind": "actor",
           "locator": null
         },
@@ -9163,7 +9199,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 67,
+      "citationCount": 71,
       "citations": [
         {
           "dissent": false,
@@ -9197,6 +9233,12 @@
         },
         {
           "dissent": false,
+          "id": "efta",
+          "kind": "actor",
+          "locator": null
+        },
+        {
+          "dissent": false,
           "id": "first-portuguese-republic",
           "kind": "actor",
           "locator": null
@@ -9216,6 +9258,12 @@
         {
           "dissent": false,
           "id": "joao-franco",
+          "kind": "actor",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "league-of-nations",
           "kind": "actor",
           "locator": null
         },
@@ -9246,6 +9294,18 @@
         {
           "dissent": false,
           "id": "norton-de-matos",
+          "kind": "actor",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "oecd",
+          "kind": "actor",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "oeec",
           "kind": "actor",
           "locator": null
         },
@@ -9600,7 +9660,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 19,
+      "citationCount": 21,
       "citations": [
         {
           "dissent": false,
@@ -9628,7 +9688,19 @@
         },
         {
           "dissent": false,
+          "id": "eurozone",
+          "kind": "actor",
+          "locator": null
+        },
+        {
+          "dissent": false,
           "id": "imf",
+          "kind": "actor",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "oecd",
           "kind": "actor",
           "locator": null
         },
@@ -9786,11 +9858,17 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 65,
+      "citationCount": 67,
       "citations": [
         {
           "dissent": false,
           "id": "americo-tomas",
+          "kind": "actor",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "efta",
           "kind": "actor",
           "locator": null
         },
@@ -9839,6 +9917,12 @@
         {
           "dissent": false,
           "id": "norton-de-matos",
+          "kind": "actor",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "oeec",
           "kind": "actor",
           "locator": null
         },
@@ -10272,7 +10356,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 117,
+      "citationCount": 121,
       "citations": [
         {
           "dissent": false,
@@ -10306,13 +10390,31 @@
         },
         {
           "dissent": false,
+          "id": "council-of-europe",
+          "kind": "actor",
+          "locator": null
+        },
+        {
+          "dissent": false,
           "id": "council-of-the-revolution",
           "kind": "actor",
           "locator": null
         },
         {
           "dissent": false,
+          "id": "cplp",
+          "kind": "actor",
+          "locator": null
+        },
+        {
+          "dissent": false,
           "id": "european-economic-community",
+          "kind": "actor",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "european-union",
           "kind": "actor",
           "locator": null
         },
@@ -10385,6 +10487,12 @@
         {
           "dissent": false,
           "id": "sao-tome-and-principe",
+          "kind": "actor",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "schengen-area",
           "kind": "actor",
           "locator": null
         },

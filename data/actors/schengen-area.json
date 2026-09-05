@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "schengen-area",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "date",
+      "claim"
+    ],
+    "note": "The 1985 agreement, the 1990 convention, Portugal's 1991 signature and the March 1995 entry into force were written from memory, not read in the cited works."
+  },
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-teixeira-2019-political-institutions",
+      "locator": null
+    }
+  ],
+  "actorType": "institution",
+  "names": [
+    "Schengen Area",
+    "Espaço Schengen",
+    "Schengen"
+  ],
+  "summary": "The area within which the signatory states gave up checks at their common borders — agreed at Schengen in Luxembourg in 1985, given its convention in 1990, and in effect from 26 March 1995. Portugal signed in 1991 alongside Spain, and for Portugal the change was less about its own frontier than about the Spanish one, which stopped being a border in daily life for the first time since either country had one. The other half of the bargain is that the external frontier became a shared responsibility, so Portuguese airports and the Atlantic coast are policed on everyone's behalf and can be argued about by governments that are nowhere near them. It is not a body with organs and it is not co-extensive with the European Union — states outside the Union are in it and states inside the Union are not — and it is recorded here as an institution only because the atlas has no kind for an area governed by a convention.",
+  "when": {
+    "start": 1995,
+    "end": null
+  },
+  "where": {
+    "lon": 6.36,
+    "lat": 49.47,
+    "precision": "city",
+    "label": "Schengen"
+  }
+}
