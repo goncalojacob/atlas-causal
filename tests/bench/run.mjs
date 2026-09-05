@@ -19,6 +19,11 @@
 import { clusterPoints, DEEPEST_ZOOM } from '../../src/cluster.js';
 import { onScreen } from '../../src/map/layers/events.js';
 import { fitBounds, WORLD } from '../../src/map/projection.js';
+import { rowLanes, laneOf, barBox } from '../../src/lanes.js';
+import { createLinearScale } from '../../src/timeline-scale.js';
+import { overlaps, withMargin } from '../../src/util/window.js';
+import { buildAdjacency, reachableBy, convergence } from '../../src/graph.js';
+import { buildSearchIndex, search } from '../../src/search.js';
 
 // --- the generator ---------------------------------------------------------
 
@@ -57,15 +62,60 @@ export function syntheticEvents(count, { seed = 20260905, placed = 0.7, perPlace
     // A place is drawn with a square bias, so a few of them carry a stack and
     // most carry one or two: a uniform draw would make every point the same
     // depth and hide exactly the case the clustering exists for.
-    const where = random() < placed ? places[Math.floor(random() ** 2 * placeCount)] : null;
+    const at = random() < placed ? Math.floor(random() ** 2 * placeCount) : -1;
+    const where = at < 0 ? null : places[at];
     events.push({
       id: `e${String(i).padStart(6, '0')}`,
+      title: `Event ${i} of the synthetic corpus`,
+      status: 'active',
       weight: (i % 7) + 1,
       when: { start: 1400 + (i % 600), end: 1400 + (i % 600) },
       place: where,
+      // The place as an id as well as a point: the map projects the point and
+      // the timeline groups by the id, and they are the same place.
+      placeId: at < 0 ? null : `p${String(at).padStart(5, '0')}`,
     });
   }
   return events;
+}
+
+// A causal graph over those events, shaped like the atlas's: every edge
+// points forward in time, most events have one or two consequences, and a
+// few carry many — which is what makes one node's downstream large enough
+// for the horizon to cost anything.
+export function syntheticEdges(events, { seed = 15801415, perEvent = 1.5 } = {}) {
+  const random = seeded(seed);
+  const byYear = [...events].sort((a, b) => a.when.start - b.when.start
+    || (a.id < b.id ? -1 : a.id > b.id ? 1 : 0));
+  const types = ['causou', 'permitiu', 'reagiu-a', 'precondicao-de', 'inspirou'];
+  const confidences = ['consensus', 'probable', 'disputed'];
+  const edges = [];
+  for (let i = 0; i < byYear.length; i += 1) {
+    // A square bias again: the head of the list is where the branching is,
+    // so the reachable set from an early event is most of the corpus and
+    // from a late one is nothing.
+    const many = Math.floor(perEvent * 2 * random() ** 0.5) + (random() < perEvent % 1 ? 1 : 0);
+    for (let n = 0; n < many; n += 1) {
+      // Forward only, and mostly nearby: an event leads to what came soon
+      // after it far more often than to something four centuries later.
+      const ahead = 1 + Math.floor(random() ** 3 * (byYear.length - i - 1));
+      const to = byYear[i + ahead];
+      if (!to) continue;
+      const from = byYear[i];
+      const type = types[Math.floor(random() * types.length)];
+      edges.push({
+        id: `${from.id}--${to.id}--${type}`,
+        from: from.id,
+        to: to.id,
+        type,
+        confidence: confidences[Math.floor(random() * confidences.length)],
+        status: 'active',
+      });
+    }
+  }
+  // Ids are unique: the same pair under the same type twice is one edge.
+  const seen = new Set();
+  return edges.filter((e) => !seen.has(e.id) && (seen.add(e.id), true));
 }
 
 // The points the map clusters: an event's place projected, which is what
@@ -186,7 +236,138 @@ function benchPresences(atlas) {
   }), `→ ${years.length} years`);
 }
 
-const CASES = { cluster: benchCluster, notch: benchNotch, presences: benchPresences };
+// The timeline at 20 000 events: what one move of the band recomputes, with
+// the DOM left out because Node has none. Three spans, because the cost is
+// not in the corpus but in what falls inside the band and its margin — a
+// twenty-year window is a reader who has narrowed right down, six hundred is
+// the default window, which is everything.
+//
+// `count` beside each row is what the browser would then have to draw: the
+// bars inside the neighbourhood, and the ticks beyond it. The second number
+// is the one the density strip is for.
+function benchTimeline() {
+  console.log('the timeline at 20 000 events — one move of the band, without the DOM');
+  const events = syntheticEvents(20000, { seed: 20000905 });
+  const width = 1400;
+  const min = 1400;
+  const max = 1999;
+  const pad = (max - min) * 0.04;
+  const scale = createLinearScale({ domain: [min - pad - 1, max + pad + 1], range: [120, width - 12] });
+  const options = { openEnd: max + pad + 1, gap: 4, maxRows: 20 };
+  for (const span of [20, 100, 600]) {
+    const from = 1700;
+    const window = { from, to: from + span };
+    const margin = withMargin(window);
+    const near = events.filter((e) => overlaps(e.when, margin));
+    const far = events.length - near.length;
+    const affinity = (event) => event.placeId ?? null;
+    row(`packing, a ${span}-year band`, measure(() => {
+      rowLanes(near, scale, width, { ...options, affinity });
+    }), `→ ${near.length} bars, ${far} beyond`);
+
+    const lanes = rowLanes(near, scale, width, { ...options, affinity });
+    const byLane = new Map(lanes.map((lane) => [lane.id, []]));
+    for (const event of near) {
+      const lane = laneOf(event, lanes);
+      if (lane) byLane.get(lane.id).push(event);
+    }
+    row(`stacking, a ${span}-year band`, measure(() => {
+      for (const [, list] of byLane) {
+        clusterPoints(list.map((event) => {
+          const box = barBox(event, scale, { openEnd: options.openEnd });
+          return { id: event.id, x: box.x + box.width / 2, y: 0, weight: event.weight ?? 0 };
+        }), { k: 1, distance: 11, epsilon: 0 });
+      }
+    }), `→ ${lanes.length} rows`);
+
+    // The whole of it, which is what the wheel notch costs: the events
+    // filtered to the neighbourhood, packed into rows, filed into them and
+    // stacked. The brief asks for this under 100 ms.
+    row(`the notch, a ${span}-year band`, measure(() => {
+      const inside = events.filter((e) => overlaps(e.when, margin));
+      const rows_ = rowLanes(inside, scale, width, { ...options, affinity });
+      const lists = new Map(rows_.map((lane) => [lane.id, []]));
+      for (const event of inside) {
+        const lane = laneOf(event, rows_);
+        if (lane) lists.get(lane.id).push(event);
+      }
+      for (const [, list] of lists) {
+        clusterPoints(list.map((event) => {
+          const box = barBox(event, scale, { openEnd: options.openEnd });
+          return { id: event.id, x: box.x + box.width / 2, y: 0, weight: event.weight ?? 0 };
+        }), { k: 1, distance: 11, epsilon: 0 });
+      }
+    }), '');
+  }
+}
+
+// The two traversals the views ask for on every state change: what an event
+// led to by a year, and what else fed the event that is open. Both are
+// answered once per view today — the map, the timeline and the graph — and
+// the panel asks for a fourth and a fifth (health review A, finding 12).
+//
+// The heaviest node is chosen the way a reader chooses one: the earliest
+// event, which is the one with the whole corpus downstream of it.
+function benchQueries() {
+  console.log('the queries at 20 000 events — what one state change asks of the graph');
+  const events = syntheticEvents(20000, { seed: 20000905 });
+  const edges = syntheticEdges(events);
+  const adjacency = buildAdjacency(events, edges);
+  const heaviest = [...events].sort((a, b) => a.when.start - b.when.start
+    || (a.id < b.id ? -1 : 1))[0];
+  const horizon = 1999;
+  const reachable = reachableBy(adjacency, heaviest.id, horizon);
+  row('reachableBy, the heaviest node', measure(() => {
+    reachableBy(adjacency, heaviest.id, horizon);
+  }), `→ ${reachable.length} events, ${edges.length} edges`);
+  const converging = convergence(adjacency, events[events.length - 1].id, []);
+  row('convergence, a late node', measure(() => {
+    convergence(adjacency, events[events.length - 1].id, []);
+  }), `→ ${converging.length} branches`);
+  // What the page pays today: three views and the panel, each asking again.
+  row('one state change, four askers', measure(() => {
+    for (let i = 0; i < 3; i += 1) {
+      reachableBy(adjacency, heaviest.id, horizon);
+      convergence(adjacency, heaviest.id, []);
+    }
+    reachableBy(adjacency, heaviest.id, horizon);
+  }), '');
+}
+
+// The search scan, per keystroke, on the main thread. The threshold the
+// brief names is 50 ms at 20 000 events: past it the scan goes to a thread
+// of its own, and under it a Worker would cost more than it saves.
+function benchSearch() {
+  console.log('search — one keystroke, over a corpus of 20 000 events');
+  const events = syntheticEvents(20000, { seed: 20000905 });
+  // The shard is not events alone: an actor, a place and a source are each an
+  // entry, and an actor's variants are terms of their own. The proportions
+  // are this dataset's, scaled — one place per eight placed events, an actor
+  // per thirty events, a source per ten.
+  const places = [...new Set(events.map((e) => e.placeId).filter(Boolean))]
+    .map((id, i) => ({ id, name: `Place ${i}`, names: [`Place ${i}`, `Praça ${i}`], status: 'active' }));
+  const actors = Array.from({ length: Math.round(events.length / 30) }, (_, i) => ({
+    id: `a${i}`, name: `Actor ${i}`, names: [`Actor ${i}`, `A${i}`], actorType: 'state', status: 'active',
+  }));
+  const sources = Array.from({ length: Math.round(events.length / 10) }, (_, i) => ({
+    id: `s${i}`, title: `A source about the ${i}th thing`, creators: [`Author ${i}`], year: 1900, status: 'active',
+  }));
+  const entries = buildSearchIndex({ events, actors, places, sources });
+  for (const query of ['e', 'ev', 'event 1', 'zzz']) {
+    row(`the scan, "${query}"`, measure(() => {
+      search(entries, query, { limit: 8 });
+    }), `→ ${search(entries, query, { limit: 8 }).total} matches of ${entries.length}`);
+  }
+}
+
+const CASES = {
+  cluster: benchCluster,
+  notch: benchNotch,
+  presences: benchPresences,
+  timeline: benchTimeline,
+  queries: benchQueries,
+  search: benchSearch,
+};
 
 // The atlas off disk, for the cases that measure the real dataset rather than
 // a generated one. Built once, and only when a chosen case wants it.
