@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "efta-accession-1960--eec-application-1977--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "edge-drafted"
+    ],
+    "note": "Drafted by the assistant under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates."
+  },
+  "sources": [
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    }
+  ],
+  "from": "efta-accession-1960",
+  "to": "eec-application-1977",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The application of 1977 was a political act of the new democracy, but the economic ground it stood on had been laid seventeen years earlier. By then the Community was already Portugal's largest market, Portuguese industry had lived with scheduled tariff reduction for a generation, and the apparatus for negotiating access existed because the association had required one — as had the free trade agreement with the Community that followed in 1972. The link is a precondition and emphatically not a cause: the Estado Novo chose the association precisely so as not to have to join the Community, and would not have made the 1977 application. What is argued about is the weight — whether the association prepared Portugal for Europe or merely postponed the choice by seventeen years — which is why this is probable and not consensus."
+}

@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "oeec--oecd--succeeded",
+  "kind": "relation",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "date"
+    ],
+    "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source. Whether this is a succession or a renaming is the editorial decision argued in the OECD's summary."
+  },
+  "sources": [
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    }
+  ],
+  "from": "oeec",
+  "to": "oecd",
+  "type": "succeeded",
+  "when": {
+    "start": 1961,
+    "end": 1961
+  },
+  "note": "Reconstituted on 30 September 1961: the European members carried over and the United States and Canada joined as full members."
+}

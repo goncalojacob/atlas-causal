@@ -65,6 +65,17 @@ records, 0 errors, 3 warnings, as M25 left them. **559 tests**, ten of them
 in a real browser (four dumped, six driven). `ARCHITECTURE.md` is at revision
 21; deviations 177–180.
 
+**M29 (branch `m29`, `docs/m29-brief.md`): the international administrations
+are actors.** Nine of them — the League of Nations, the OEEC and the OECD,
+the Council of Europe, EFTA, the European Union, the Schengen Area, the CPLP
+and the eurozone — plus 15 relations (10 memberships from `portugal`, oldest
+first, and 5 between the bodies), 3 events the dataset lacked (EFTA 1960,
+Schengen 1995, the CPLP 1996), 3 edges and 1 place. Everything carries the
+draft marker and goes to `review.html`. **One thing needs the owner:** the
+memberships are recorded as `allied-with`, not `member-of`, because rule 19
+puts a *person* at the `from` end of `member-of` and a state therefore cannot
+be a member of anything. See the open question below and deviation 181.
+
 Before that, 2026-09-05, after M25 (`docs/m25-brief.md`): **the graph view
 has a level of detail: what is too close together to tell apart is one mark
 with a count.**
@@ -1337,6 +1348,25 @@ overnight runs and the hourly shepherd keep off each other's toes on `m0`.
   events need `region` set by hand; the validator says so when nothing is in
   reach, but not when the nearest guess is merely wrong — the owner should
   glance at `regionMethod: "nearest"` entries in the topology index.
+- **M29 found the seventh type M11 said to watch for: a state in a body.**
+  Rule 19 gives `member-of` a **person** at its `from` end, so
+  `portugal member-of european-union` is refused — and with it every one of
+  the ten memberships M29 was written to record. No kind was bent to get past
+  that, as the brief required. What M29 did instead was use `allied-with`,
+  which is what the dataset already does for the same fact
+  (`estado-novo--nato--allied-with`,
+  `third-portuguese-republic--european-economic-community--allied-with`), with
+  a `note` on every row saying on the card that it records a membership and
+  why the type is not the obvious one. **That is still a substitution, and the
+  rule above is that a missing type is reported and never replaced**, so it is
+  reported here. The honest fix is one of two: widen `member-of` to take a
+  `polity` at `from`, or add a seventh type — `member-state-of` — for a state
+  in a body, which is a different relation from a person joining a party and
+  should read differently on the card. Either is a line in
+  `RELATION_ENDPOINTS` or `RELATION_TYPES` in `src/validate/rules.js`, a label
+  in `src/panel/actor.js`, and a rename of the fifteen relation files. **Until
+  the owner decides, Portugal's card says "Allied with" over ten memberships,
+  which is the wrong word and the reason this is written down.**
 
 ## Deviations
 
@@ -2596,6 +2626,50 @@ gave that to the map and the timeline, and M25 did not widen it.
     ground it held through somebody else — where the brief names one section
     ("Territory"); the two became sub-headings inside it, counted together.
 
+181. **M29's memberships are `allied-with`, and four other calls it had to
+     make.** All five are the brief meeting a rule or a record that was
+     already there.
+     - **`member-of` could not carry a state in a body.** The brief asks for
+       "`member-of` relations from `portugal`" and rule 19 refuses every one
+       of them: its `from` end is a person. The brief's own instruction for a
+       rule 19 refusal is to bend no kind, list the case, and leave the
+       relation out — but the refusal here is total, not a matter of one
+       awkward pairing, and leaving them out would have emptied the milestone
+       and left the Union unrecorded beside an EEC membership that *is*
+       recorded. So the memberships are `allied-with`, as the two that
+       predate M29 already are, each with a note that says what it really is.
+       The type question is an open question above, where the owner can
+       settle it; nothing was restated as a different kind of actor.
+     - **The European Union is a `polity`, not the `institution` the brief
+       asks for.** `succeeded` requires both ends to be the same kind, and
+       the Community it succeeds was already a `polity`. Making the Union an
+       institution would have meant dropping the succession the brief
+       explicitly wants. The record argues the substantive case too — a
+       territory, an external border, a citizenship — rather than resting on
+       the rule.
+     - **The OEEC and the OECD are two actors joined by `succeeded`**, which
+       the brief left to this run to decide. Membership and purpose both
+       changed in 1961, and the atlas already closes the EEC at Maastricht
+       instead of renaming it. The reason is in the OECD's summary, as asked.
+     - **Four of the brief's eight candidate events already existed** —
+       `imf-agreement-1978`, `imf-agreement-1983`, `troika-bailout-2011` and
+       `euro-adoption-1999` — so only three were written. The **2002 cash
+       changeover was deliberately not written**: `euro-adoption-1999`
+       already states it, no work in the bibliography argues a consequence of
+       it for Portugal, and the only available edge would have been "1999
+       caused 2002", which asserts nothing. Under the one-edge rule an event
+       with no honest edge is not written at all. The WTO was not added
+       either: no event needed it, which is the condition the brief set.
+     - **Four test assertions were updated, and no `src/` file was touched.**
+       They pin counts of the live dataset that this milestone is meant to
+       change: Portugal's card headings and relation count in
+       `tests/actor-card.test.mjs`, and the 30-now-32 events reachable from
+       25 April by 2011 in `tests/graph.test.mjs` and
+       `tests/horizon.test.mjs` (Schengen 1995 and the CPLP 1996 are both
+       downstream of the revolution and before the horizon). The card test
+       gained an assertion rather than only losing one: the memberships must
+       appear in date order, which is the brief's "done when".
+
 ## Dates to verify
 
 Everything below was written from memory and is where the owner's review
@@ -3063,3 +3137,5 @@ M27 done
 
 M26 started 2026-09-05T01:28:21Z by scheduled
 M26 done
+M29 started 2026-09-05T01:29:00Z by scheduled (branch m29)
+M29 done

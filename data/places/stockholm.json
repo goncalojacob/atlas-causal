@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "stockholm",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "place"
+    ],
+    "note": "The coordinates are the city centre, written from memory; no cached lead exists for Stockholm, so the record carries no identity fields."
+  },
+  "sources": [],
+  "names": [
+    "Stockholm",
+    "Estocolmo"
+  ],
+  "where": {
+    "lon": 18.07,
+    "lat": 59.33,
+    "precision": "city",
+    "label": "Stockholm"
+  },
+  "region": null,
+  "summary": null
+}

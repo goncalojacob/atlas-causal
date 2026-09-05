@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "angola-independence-1975--cplp-founding-1996--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "edge-drafted"
+    ],
+    "note": "Drafted by the assistant under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates."
+  },
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    }
+  ],
+  "from": "angola-independence-1975",
+  "to": "cplp-founding-1996",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "A community of Portuguese-speaking states could not exist while five of its members were Portuguese territory. Angola stands here for the whole of 1974 and 1975: Guinea-Bissau, Mozambique, Cape Verde and São Tomé and Príncipe became states within the same two years, and the community founded in 1996 is made of them together with Portugal and Brazil. It is marked probable rather than consensus for two reasons. The first is that decolonisation made the body possible without making it at all likely — twenty-one years passed, and several attempts failed, before anyone founded it. The second is editorial: choosing Angola's independence as the anchor for five independences is this record's simplification, not a claim that Angola mattered more than the others."
+}

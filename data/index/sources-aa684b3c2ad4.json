@@ -592,11 +592,23 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 65,
+      "citationCount": 71,
       "citations": [
         {
           "dissent": false,
+          "id": "council-of-europe",
+          "kind": "actor",
+          "locator": null
+        },
+        {
+          "dissent": false,
           "id": "council-of-the-revolution",
+          "kind": "actor",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "cplp",
           "kind": "actor",
           "locator": null
         },
@@ -711,6 +723,12 @@
         {
           "dissent": false,
           "id": "1995-portuguese-legislative-election--portuguese-regionalisation-referendum-1998--caused",
+          "kind": "edge",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "angola-independence-1975--cplp-founding-1996--precondition-of",
           "kind": "edge",
           "locator": null
         },
@@ -866,6 +884,12 @@
         },
         {
           "dissent": false,
+          "id": "cplp-founding-1996",
+          "kind": "event",
+          "locator": null
+        },
+        {
+          "dissent": false,
           "id": "east-timor-independence-2002",
           "kind": "event",
           "locator": null
@@ -974,6 +998,18 @@
         },
         {
           "dissent": false,
+          "id": "portugal--council-of-europe--allied-with",
+          "kind": "relation",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "portugal--cplp--allied-with",
+          "kind": "relation",
+          "locator": null
+        },
+        {
+          "dissent": false,
           "id": "third-portuguese-republic--european-economic-community--allied-with",
           "kind": "relation",
           "locator": null
@@ -1015,7 +1051,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 62,
+      "citationCount": 70,
       "citations": [
         {
           "dissent": false,
@@ -1043,6 +1079,18 @@
         },
         {
           "dissent": false,
+          "id": "european-union",
+          "kind": "actor",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "eurozone",
+          "kind": "actor",
+          "locator": null
+        },
+        {
+          "dissent": false,
           "id": "marcelo-rebelo-de-sousa",
           "kind": "actor",
           "locator": null
@@ -1062,6 +1110,12 @@
         {
           "dissent": false,
           "id": "psd",
+          "kind": "actor",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "schengen-area",
           "kind": "actor",
           "locator": null
         },
@@ -1146,6 +1200,12 @@
         {
           "dissent": false,
           "id": "eec-accession-1986--1987-european-parliament-election-in-portugal--enabled",
+          "kind": "edge",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "eec-accession-1986--schengen-in-force-1995--precondition-of",
           "kind": "edge",
           "locator": null
         },
@@ -1337,6 +1397,12 @@
         },
         {
           "dissent": false,
+          "id": "schengen-in-force-1995",
+          "kind": "event",
+          "locator": null
+        },
+        {
+          "dissent": false,
           "id": "troika-programme-ends-2014",
           "kind": "event",
           "locator": null
@@ -1367,6 +1433,18 @@
         },
         {
           "dissent": false,
+          "id": "european-commission--european-union--part-of",
+          "kind": "relation",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "european-economic-community--european-union--succeeded",
+          "kind": "relation",
+          "locator": null
+        },
+        {
+          "dissent": false,
           "id": "marcelo-rebelo-de-sousa--psd--led",
           "kind": "relation",
           "locator": null
@@ -1386,6 +1464,12 @@
         {
           "dissent": false,
           "id": "pedro-passos-coelho--psd--member-of",
+          "kind": "relation",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "portugal--european-union--allied-with",
           "kind": "relation",
           "locator": null
         }
@@ -8770,7 +8854,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 30,
+      "citationCount": 32,
       "citations": [
         {
           "dissent": false,
@@ -8781,6 +8865,12 @@
         {
           "dissent": false,
           "id": "gomes-da-costa",
+          "kind": "actor",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "league-of-nations",
           "kind": "actor",
           "locator": null
         },
@@ -8949,6 +9039,12 @@
         {
           "dissent": false,
           "id": "military-dictatorship--portugal--regime-of",
+          "kind": "relation",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "portugal--league-of-nations--allied-with",
           "kind": "relation",
           "locator": null
         }
@@ -9163,7 +9259,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 67,
+      "citationCount": 78,
       "citations": [
         {
           "dissent": false,
@@ -9197,6 +9293,12 @@
         },
         {
           "dissent": false,
+          "id": "efta",
+          "kind": "actor",
+          "locator": null
+        },
+        {
+          "dissent": false,
           "id": "first-portuguese-republic",
           "kind": "actor",
           "locator": null
@@ -9216,6 +9318,12 @@
         {
           "dissent": false,
           "id": "joao-franco",
+          "kind": "actor",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "league-of-nations",
           "kind": "actor",
           "locator": null
         },
@@ -9246,6 +9354,18 @@
         {
           "dissent": false,
           "id": "norton-de-matos",
+          "kind": "actor",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "oecd",
+          "kind": "actor",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "oeec",
           "kind": "actor",
           "locator": null
         },
@@ -9383,6 +9503,12 @@
         },
         {
           "dissent": false,
+          "id": "efta-accession-1960--eec-application-1977--precondition-of",
+          "kind": "edge",
+          "locator": null
+        },
+        {
+          "dissent": false,
           "id": "iberian-pact--treaty-of-friendship-and-cooperation-between-spain-and-portugal--reacted-to",
           "kind": "edge",
           "locator": null
@@ -9509,6 +9635,12 @@
         },
         {
           "dissent": false,
+          "id": "efta-accession-1960",
+          "kind": "event",
+          "locator": null
+        },
+        {
+          "dissent": false,
           "id": "eleicoes-legislativas-regionais-na-madeira-em-1976",
           "kind": "event",
           "locator": null
@@ -9563,6 +9695,36 @@
         },
         {
           "dissent": false,
+          "id": "oeec--oecd--succeeded",
+          "kind": "relation",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "portugal--efta--allied-with",
+          "kind": "relation",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "portugal--league-of-nations--allied-with",
+          "kind": "relation",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "portugal--oecd--allied-with",
+          "kind": "relation",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "portugal--oeec--allied-with",
+          "kind": "relation",
+          "locator": null
+        },
+        {
+          "dissent": false,
           "id": "pvde-pide-dgs--estado-novo--part-of",
           "kind": "relation",
           "locator": null
@@ -9600,7 +9762,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 19,
+      "citationCount": 25,
       "citations": [
         {
           "dissent": false,
@@ -9628,7 +9790,19 @@
         },
         {
           "dissent": false,
+          "id": "eurozone",
+          "kind": "actor",
+          "locator": null
+        },
+        {
+          "dissent": false,
           "id": "imf",
+          "kind": "actor",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "oecd",
           "kind": "actor",
           "locator": null
         },
@@ -9715,6 +9889,30 @@
           "id": "troika-bailout-2011",
           "kind": "event",
           "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "european-central-bank--european-union--part-of",
+          "kind": "relation",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "eurozone--european-union--part-of",
+          "kind": "relation",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "portugal--eurozone--allied-with",
+          "kind": "relation",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "portugal--imf--allied-with",
+          "kind": "relation",
+          "locator": null
         }
       ],
       "created": "2026-09-02",
@@ -9786,11 +9984,17 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 65,
+      "citationCount": 70,
       "citations": [
         {
           "dissent": false,
           "id": "americo-tomas",
+          "kind": "actor",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "efta",
           "kind": "actor",
           "locator": null
         },
@@ -9839,6 +10043,12 @@
         {
           "dissent": false,
           "id": "norton-de-matos",
+          "kind": "actor",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "oeec",
           "kind": "actor",
           "locator": null
         },
@@ -10114,6 +10324,12 @@
         },
         {
           "dissent": false,
+          "id": "efta-accession-1960",
+          "kind": "event",
+          "locator": null
+        },
+        {
+          "dissent": false,
           "id": "exposicao-mundo-portugues-1940",
           "kind": "event",
           "locator": null
@@ -10169,6 +10385,18 @@
         {
           "dissent": false,
           "id": "military-dictatorship--portugal--regime-of",
+          "kind": "relation",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "portugal--efta--allied-with",
+          "kind": "relation",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "portugal--oeec--allied-with",
           "kind": "relation",
           "locator": null
         },
@@ -10272,7 +10500,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 117,
+      "citationCount": 133,
       "citations": [
         {
           "dissent": false,
@@ -10306,13 +10534,31 @@
         },
         {
           "dissent": false,
+          "id": "council-of-europe",
+          "kind": "actor",
+          "locator": null
+        },
+        {
+          "dissent": false,
           "id": "council-of-the-revolution",
           "kind": "actor",
           "locator": null
         },
         {
           "dissent": false,
+          "id": "cplp",
+          "kind": "actor",
+          "locator": null
+        },
+        {
+          "dissent": false,
           "id": "european-economic-community",
+          "kind": "actor",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "european-union",
           "kind": "actor",
           "locator": null
         },
@@ -10385,6 +10631,12 @@
         {
           "dissent": false,
           "id": "sao-tome-and-principe",
+          "kind": "actor",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "schengen-area",
           "kind": "actor",
           "locator": null
         },
@@ -10481,6 +10733,12 @@
         {
           "dissent": false,
           "id": "25-november-1975--eanes-elected-1976--caused",
+          "kind": "edge",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "angola-independence-1975--cplp-founding-1996--precondition-of",
           "kind": "edge",
           "locator": null
         },
@@ -10605,6 +10863,12 @@
           "locator": null
         },
         {
+          "dissent": false,
+          "id": "eec-accession-1986--schengen-in-force-1995--precondition-of",
+          "kind": "edge",
+          "locator": null
+        },
+        {
           "dissent": true,
           "id": "eec-accession-1986--troika-bailout-2011--precondition-of",
           "kind": "edge",
@@ -10613,6 +10877,12 @@
         {
           "dissent": false,
           "id": "eec-application-1977--eec-accession-1986--caused",
+          "kind": "edge",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "efta-accession-1960--eec-application-1977--precondition-of",
           "kind": "edge",
           "locator": null
         },
@@ -10828,6 +11098,12 @@
         },
         {
           "dissent": false,
+          "id": "cplp-founding-1996",
+          "kind": "event",
+          "locator": null
+        },
+        {
+          "dissent": false,
           "id": "eanes-elected-1976",
           "kind": "event",
           "locator": null
@@ -10900,6 +11176,12 @@
         },
         {
           "dissent": false,
+          "id": "schengen-in-force-1995",
+          "kind": "event",
+          "locator": null
+        },
+        {
+          "dissent": false,
           "id": "soares-elected-president-1986",
           "kind": "event",
           "locator": null
@@ -10960,7 +11242,49 @@
         },
         {
           "dissent": false,
+          "id": "european-economic-community--european-union--succeeded",
+          "kind": "relation",
+          "locator": null
+        },
+        {
+          "dissent": false,
           "id": "mario-soares--partido-socialista--led",
+          "kind": "relation",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "portugal--council-of-europe--allied-with",
+          "kind": "relation",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "portugal--cplp--allied-with",
+          "kind": "relation",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "portugal--european-union--allied-with",
+          "kind": "relation",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "portugal--eurozone--allied-with",
+          "kind": "relation",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "portugal--imf--allied-with",
+          "kind": "relation",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "portugal--schengen-area--allied-with",
           "kind": "relation",
           "locator": null
         },

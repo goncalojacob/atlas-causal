@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "league-of-nations",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "date",
+      "claim"
+    ],
+    "note": "The founding and closing years and the reading of what the intervention of 1916-18 bought were written from memory, not read in the cited works."
+  },
+  "sources": [
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    },
+    {
+      "source": "meneses-2004-portugal-1914-1926",
+      "locator": null
+    }
+  ],
+  "actorType": "institution",
+  "names": [
+    "League of Nations",
+    "Sociedade das Nações",
+    "SDN"
+  ],
+  "summary": "The first general organisation of states, founded by the peace treaties of 1919 and seated at Geneva. Portugal was an original member from 1920, and the seat was one of the things the First Republic had gone to war in France to be able to claim: it did not save the governments that made that decision, but it did place Portugal among the victor states while the German colonies were being redistributed around it. Under the Estado Novo the delegation kept attending while Salazar's foreign policy ran through Lisbon, London and Madrid rather than Geneva, and the League's failure over Ethiopia in 1935 and over Spain from 1936 hardened a scepticism about collective security that outlasted the organisation itself. It was already inert when the war came and was wound up formally in 1946. It is in the atlas as the first international body Portugal belonged to, and as one measure of what the intervention of 1916 to 1918 actually bought.",
+  "when": {
+    "start": 1920,
+    "end": 1946
+  },
+  "where": {
+    "lon": 6.14,
+    "lat": 46.21,
+    "precision": "city",
+    "label": "Geneva"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "efta",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "date",
+      "claim"
+    ],
+    "note": "The 1960 convention, the special annex for Portugal and the share of 1960s industrial growth attributed to membership were written from memory, not read in the cited works."
+  },
+  "sources": [
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    },
+    {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    }
+  ],
+  "actorType": "institution",
+  "names": [
+    "European Free Trade Association",
+    "EFTA",
+    "Associação Europeia de Comércio Livre"
+  ],
+  "summary": "The free trade association founded by the Stockholm Convention of 1960 among the western European states that stayed outside the Common Market. Portugal was a founding member and by a wide margin the poorest of them, and the convention carried a special annex allowing it to keep protection for industries it was still building and to lower its tariffs on a longer schedule than the others. Joining committed the Estado Novo, which had governed a deliberately closed economy for thirty years, to opening it by stages; most accounts of the industrial growth of the 1960s give the association some of the credit and then argue about how much. Portugal stayed a member until it entered the European Communities on 1 January 1986. It is in the atlas because it is where the choice between Europe and the empire first had to be made in economic terms rather than rhetorical ones.",
+  "when": {
+    "start": 1960,
+    "end": null
+  },
+  "where": {
+    "lon": 6.14,
+    "lat": 46.21,
+    "precision": "city",
+    "label": "Geneva"
+  }
+}

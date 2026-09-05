@@ -2428,6 +2428,30 @@
         }
       ],
       "cites": [
+        "telo-2007-historia-contemporanea",
+        "costa-pinto-2003-contemporary-portugal"
+      ],
+      "from": "angola-independence-1975",
+      "id": "angola-independence-1975--cplp-founding-1996--precondition-of",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "note": "Drafted by the assistant under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates."
+      },
+      "status": "active",
+      "to": "cplp-founding-1996",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "macqueen-1997-decolonization",
         "rosas-1994-estado-novo"
       ],
@@ -4156,6 +4180,32 @@
         "telo-2007-historia-contemporanea",
         "costa-pinto-2003-contemporary-portugal"
       ],
+      "id": "council-of-europe",
+      "kind": "actor",
+      "names": [
+        "Council of Europe",
+        "Conselho da Europa"
+      ],
+      "review": {
+        "flags": [
+          "date",
+          "claim"
+        ],
+        "note": "The 1949 founding, the September 1976 admission and the claim that the Estado Novo could not have met the membership conditions were written from memory."
+      },
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "costa-pinto-2003-contemporary-portugal"
+      ],
       "id": "council-of-the-revolution",
       "kind": "actor",
       "names": [
@@ -4463,6 +4513,56 @@
       "status": "active",
       "to": "world-youth-day-2023",
       "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "costa-pinto-2003-contemporary-portugal"
+      ],
+      "id": "cplp",
+      "kind": "actor",
+      "names": [
+        "Community of Portuguese Language Countries",
+        "CPLP",
+        "Comunidade dos Países de Língua Portuguesa"
+      ],
+      "review": {
+        "flags": [
+          "date",
+          "claim"
+        ],
+        "note": "The July 1996 founding, the founding membership and the account of who drove the proposal were written from memory, not read in the cited works."
+      },
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "costa-pinto-2003-contemporary-portugal"
+      ],
+      "id": "cplp-founding-1996",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "date",
+          "claim"
+        ],
+        "note": "The 17 July 1996 founding and the list of the seven founders were written from memory. So was the account of Brazilian rather than Portuguese diplomacy carrying the proposal, which is the claim in this record most in need of a source."
+      },
+      "status": "active",
+      "title": "The Community of Portuguese Language Countries is founded"
     },
     {
       "authors": [
@@ -4869,6 +4969,30 @@
         }
       ],
       "cites": [
+        "telo-2007-historia-contemporanea",
+        "costa-pinto-teixeira-2019-political-institutions"
+      ],
+      "from": "eec-accession-1986",
+      "id": "eec-accession-1986--schengen-in-force-1995--precondition-of",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "note": "Drafted by the assistant under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates."
+      },
+      "status": "active",
+      "to": "schengen-in-force-1995",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "reis-2013-portuguese-slump",
         "telo-2007-historia-contemporanea"
       ],
@@ -4912,6 +5036,80 @@
       "status": "active",
       "to": "eec-accession-1986",
       "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal",
+        "rosas-1994-estado-novo"
+      ],
+      "id": "efta",
+      "kind": "actor",
+      "names": [
+        "European Free Trade Association",
+        "EFTA",
+        "Associação Europeia de Comércio Livre"
+      ],
+      "review": {
+        "flags": [
+          "date",
+          "claim"
+        ],
+        "note": "The 1960 convention, the special annex for Portugal and the share of 1960s industrial growth attributed to membership were written from memory, not read in the cited works."
+      },
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal",
+        "rosas-1994-estado-novo"
+      ],
+      "id": "efta-accession-1960",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "date",
+          "claim"
+        ],
+        "note": "The 4 January signature, the 3 May entry into force and the special annex for Portugal were written from memory, not read in the cited works. So was the reading of why the regime preferred the association to the Common Market."
+      },
+      "status": "active",
+      "title": "Portugal joins the European Free Trade Association"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal",
+        "telo-2007-historia-contemporanea"
+      ],
+      "from": "efta-accession-1960",
+      "id": "efta-accession-1960--eec-application-1977--precondition-of",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "note": "Drafted by the assistant under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates."
+      },
+      "status": "active",
+      "to": "eec-application-1977",
+      "type": "precondition-of"
     },
     {
       "authors": [
@@ -5100,6 +5298,29 @@
         }
       ],
       "cites": [
+        "reis-2013-portuguese-slump"
+      ],
+      "from": "european-central-bank",
+      "id": "european-central-bank--european-union--part-of",
+      "kind": "relation",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source."
+      },
+      "status": "active",
+      "to": "european-union",
+      "type": "part-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "reis-2013-portuguese-slump",
         "imf-2016-portugal-ex-post-evaluation"
       ],
@@ -5117,6 +5338,29 @@
         "note": "The birth or founding year, and the end where there is one, were written from memory."
       },
       "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-teixeira-2019-political-institutions"
+      ],
+      "from": "european-commission",
+      "id": "european-commission--european-union--part-of",
+      "kind": "relation",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source."
+      },
+      "status": "active",
+      "to": "european-union",
+      "type": "part-of"
     },
     {
       "authors": [
@@ -5147,6 +5391,110 @@
         "note": "Closing this actor rather than renaming it is an editorial choice nobody has made deliberately; the closing year follows from it."
       },
       "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "costa-pinto-teixeira-2019-political-institutions"
+      ],
+      "from": "european-economic-community",
+      "id": "european-economic-community--european-union--succeeded",
+      "kind": "relation",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source."
+      },
+      "status": "active",
+      "to": "european-union",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "costa-pinto-teixeira-2019-political-institutions"
+      ],
+      "id": "european-union",
+      "kind": "actor",
+      "names": [
+        "European Union",
+        "EU",
+        "União Europeia",
+        "UE"
+      ],
+      "review": {
+        "flags": [
+          "date",
+          "claim"
+        ],
+        "note": "The Maastricht dates were written from memory. Recording the Union as a polity rather than an institution is the drafter's decision: it is argued in the summary, and it is also what lets the succession from the Community validate, since rule 19 requires both ends of a succession to be the same kind of actor."
+      },
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "reis-2013-portuguese-slump",
+        "costa-pinto-teixeira-2019-political-institutions"
+      ],
+      "id": "eurozone",
+      "kind": "actor",
+      "names": [
+        "Eurozone",
+        "Euro area",
+        "Economic and Monetary Union",
+        "Zona Euro",
+        "Área do Euro"
+      ],
+      "review": {
+        "flags": [
+          "date",
+          "claim"
+        ],
+        "note": "The 1999 start and the count of eleven founding members were written from memory. How much of the Portuguese slump the currency caused is the open argument the summary points at, and the record takes no side in it."
+      },
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "reis-2013-portuguese-slump"
+      ],
+      "from": "eurozone",
+      "id": "eurozone--european-union--part-of",
+      "kind": "relation",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source."
+      },
+      "status": "active",
+      "to": "european-union",
+      "type": "part-of"
     },
     {
       "authors": [
@@ -6154,6 +6502,33 @@
       "status": "active",
       "to": "coup-28-may-1926",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal",
+        "meneses-2004-portugal-1914-1926"
+      ],
+      "id": "league-of-nations",
+      "kind": "actor",
+      "names": [
+        "League of Nations",
+        "Sociedade das Nações",
+        "SDN"
+      ],
+      "review": {
+        "flags": [
+          "date",
+          "claim"
+        ],
+        "note": "The founding and closing years and the reading of what the intervention of 1916-18 bought were written from memory, not read in the cited works."
+      },
+      "status": "active"
     },
     {
       "authors": [
@@ -7592,6 +7967,85 @@
         }
       ],
       "cites": [
+        "ramos-2009-historia-de-portugal",
+        "reis-2013-portuguese-slump"
+      ],
+      "id": "oecd",
+      "kind": "actor",
+      "names": [
+        "Organisation for Economic Co-operation and Development",
+        "OECD",
+        "Organização para a Cooperação e Desenvolvimento Económico",
+        "OCDE"
+      ],
+      "review": {
+        "flags": [
+          "date",
+          "claim"
+        ],
+        "note": "The 1961 reconstitution and Portugal's passage into it as a founding member were written from memory. The editorial decision to keep the OEEC and the OECD as two actors is the drafter's and is argued in the summary."
+      },
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal",
+        "rosas-1994-estado-novo"
+      ],
+      "id": "oeec",
+      "kind": "actor",
+      "names": [
+        "Organisation for European Economic Co-operation",
+        "OEEC",
+        "Organização Europeia de Cooperação Económica",
+        "OECE"
+      ],
+      "review": {
+        "flags": [
+          "date",
+          "claim"
+        ],
+        "note": "That Portugal first declined Marshall aid and asked for it a year later is written from memory; the years of the organisation likewise. Neither has been read in the cited works."
+      },
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal"
+      ],
+      "from": "oeec",
+      "id": "oeec--oecd--succeeded",
+      "kind": "relation",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source. Whether this is a succession or a renaming is the editorial decision argued in the OECD's summary."
+      },
+      "status": "active",
+      "to": "oecd",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "rosas-1994-estado-novo",
         "meneses-2009-salazar"
       ],
@@ -8031,6 +8485,244 @@
         ]
       },
       "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "costa-pinto-2003-contemporary-portugal"
+      ],
+      "from": "portugal",
+      "id": "portugal--council-of-europe--allied-with",
+      "kind": "relation",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source."
+      },
+      "status": "active",
+      "to": "council-of-europe",
+      "type": "allied-with"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "costa-pinto-2003-contemporary-portugal"
+      ],
+      "from": "portugal",
+      "id": "portugal--cplp--allied-with",
+      "kind": "relation",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source."
+      },
+      "status": "active",
+      "to": "cplp",
+      "type": "allied-with"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal",
+        "rosas-1994-estado-novo"
+      ],
+      "from": "portugal",
+      "id": "portugal--efta--allied-with",
+      "kind": "relation",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source."
+      },
+      "status": "active",
+      "to": "efta",
+      "type": "allied-with"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "costa-pinto-teixeira-2019-political-institutions"
+      ],
+      "from": "portugal",
+      "id": "portugal--european-union--allied-with",
+      "kind": "relation",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source."
+      },
+      "status": "active",
+      "to": "european-union",
+      "type": "allied-with"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "reis-2013-portuguese-slump",
+        "telo-2007-historia-contemporanea"
+      ],
+      "from": "portugal",
+      "id": "portugal--eurozone--allied-with",
+      "kind": "relation",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source."
+      },
+      "status": "active",
+      "to": "eurozone",
+      "type": "allied-with"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "reis-2013-portuguese-slump"
+      ],
+      "from": "portugal",
+      "id": "portugal--imf--allied-with",
+      "kind": "relation",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source. The 1961 accession is the least certain date in this batch, and the Bretton Woods institutions were joined together, which is worth checking as one fact."
+      },
+      "status": "active",
+      "to": "imf",
+      "type": "allied-with"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal",
+        "meneses-2004-portugal-1914-1926"
+      ],
+      "from": "portugal",
+      "id": "portugal--league-of-nations--allied-with",
+      "kind": "relation",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source."
+      },
+      "status": "active",
+      "to": "league-of-nations",
+      "type": "allied-with"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal"
+      ],
+      "from": "portugal",
+      "id": "portugal--oecd--allied-with",
+      "kind": "relation",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source."
+      },
+      "status": "active",
+      "to": "oecd",
+      "type": "allied-with"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal",
+        "rosas-1994-estado-novo"
+      ],
+      "from": "portugal",
+      "id": "portugal--oeec--allied-with",
+      "kind": "relation",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source."
+      },
+      "status": "active",
+      "to": "oeec",
+      "type": "allied-with"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea"
+      ],
+      "from": "portugal",
+      "id": "portugal--schengen-area--allied-with",
+      "kind": "relation",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source."
+      },
+      "status": "active",
+      "to": "schengen-area",
+      "type": "allied-with"
     },
     {
       "authors": [
@@ -8759,6 +9451,56 @@
         }
       ],
       "cites": [
+        "telo-2007-historia-contemporanea",
+        "costa-pinto-teixeira-2019-political-institutions"
+      ],
+      "id": "schengen-area",
+      "kind": "actor",
+      "names": [
+        "Schengen Area",
+        "Espaço Schengen",
+        "Schengen"
+      ],
+      "review": {
+        "flags": [
+          "date",
+          "claim"
+        ],
+        "note": "The 1985 agreement, the 1990 convention, Portugal's 1991 signature and the March 1995 entry into force were written from memory, not read in the cited works."
+      },
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "costa-pinto-teixeira-2019-political-institutions"
+      ],
+      "id": "schengen-in-force-1995",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "date",
+          "claim"
+        ],
+        "note": "The June 1991 signature and the 26 March 1995 entry into force were written from memory, not read in the cited works, and so was the count of seven states in the first wave."
+      },
+      "status": "active",
+      "title": "Portugal enters the Schengen area"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "macqueen-1997-decolonization"
       ],
       "id": "sekou-toure",
@@ -8919,6 +9661,27 @@
       "status": "active",
       "to": "coup-attempt-11-march-1975",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "stockholm",
+      "kind": "place",
+      "names": [
+        "Stockholm",
+        "Estocolmo"
+      ],
+      "review": {
+        "flags": [
+          "place"
+        ],
+        "note": "The coordinates are the city centre, written from memory; no cached lead exists for Stockholm, so the record carries no identity fields."
+      },
+      "status": "active"
     },
     {
       "authors": [
@@ -9517,7 +10280,7 @@
     }
   ],
   "schema": 1,
-  "total": 975,
+  "total": 1006,
   "warnings": [
     {
       "id": "iberian-blackout-2025",

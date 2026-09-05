@@ -1382,6 +1382,22 @@
     {
       "actorType": "institution",
       "aliases": [],
+      "id": "council-of-europe",
+      "name": "Council of Europe",
+      "names": [
+        "Council of Europe",
+        "Conselho da Europa"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 1949
+      }
+    },
+    {
+      "actorType": "institution",
+      "aliases": [],
       "id": "council-of-the-revolution",
       "name": "Council of the Revolution",
       "names": [
@@ -1393,6 +1409,23 @@
       "when": {
         "end": 1982,
         "start": 1975
+      }
+    },
+    {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "cplp",
+      "name": "Community of Portuguese Language Countries",
+      "names": [
+        "Community of Portuguese Language Countries",
+        "CPLP",
+        "Comunidade dos Países de Língua Portuguesa"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 1996
       }
     },
     {
@@ -1673,6 +1706,23 @@
       }
     },
     {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "efta",
+      "name": "European Free Trade Association",
+      "names": [
+        "European Free Trade Association",
+        "EFTA",
+        "Associação Europeia de Comércio Livre"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 1960
+      }
+    },
+    {
       "actorType": "polity",
       "aliases": [],
       "id": "egypt",
@@ -1895,6 +1945,43 @@
       "wikipedia": {
         "en": "European Economic Community",
         "pt": "Comunidade Económica Europeia"
+      }
+    },
+    {
+      "actorType": "polity",
+      "aliases": [],
+      "id": "european-union",
+      "name": "European Union",
+      "names": [
+        "European Union",
+        "EU",
+        "União Europeia",
+        "UE"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 1993
+      }
+    },
+    {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "eurozone",
+      "name": "Eurozone",
+      "names": [
+        "Eurozone",
+        "Euro area",
+        "Economic and Monetary Union",
+        "Zona Euro",
+        "Área do Euro"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 1999
       }
     },
     {
@@ -3165,6 +3252,23 @@
       }
     },
     {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "league-of-nations",
+      "name": "League of Nations",
+      "names": [
+        "League of Nations",
+        "Sociedade das Nações",
+        "SDN"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": 1946,
+        "start": 1920
+      }
+    },
+    {
       "actorType": "polity",
       "aliases": [],
       "id": "lebanon",
@@ -4282,6 +4386,42 @@
       }
     },
     {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "oecd",
+      "name": "Organisation for Economic Co-operation and Development",
+      "names": [
+        "Organisation for Economic Co-operation and Development",
+        "OECD",
+        "Organização para a Cooperação e Desenvolvimento Económico",
+        "OCDE"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 1961
+      }
+    },
+    {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "oeec",
+      "name": "Organisation for European Economic Co-operation",
+      "names": [
+        "Organisation for European Economic Co-operation",
+        "OEEC",
+        "Organização Europeia de Cooperação Económica",
+        "OECE"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": 1961,
+        "start": 1948
+      }
+    },
+    {
       "actorType": "polity",
       "aliases": [],
       "id": "oil-rivers-protectorate",
@@ -5102,6 +5242,23 @@
       "when": {
         "end": null,
         "start": 1932
+      }
+    },
+    {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "schengen-area",
+      "name": "Schengen Area",
+      "names": [
+        "Schengen Area",
+        "Espaço Schengen",
+        "Schengen"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 1995
       }
     },
     {
@@ -6871,6 +7028,16 @@
     },
     {
       "aliases": [],
+      "confidence": "probable",
+      "from": "angola-independence-1975",
+      "id": "angola-independence-1975--cplp-founding-1996--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "cplp-founding-1996",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
       "confidence": "consensus",
       "from": "angola-war-begins-1961",
       "id": "angola-war-begins-1961--botelho-moniz-coup-attempt-1961--caused",
@@ -7431,6 +7598,16 @@
     },
     {
       "aliases": [],
+      "confidence": "consensus",
+      "from": "eec-accession-1986",
+      "id": "eec-accession-1986--schengen-in-force-1995--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "schengen-in-force-1995",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
       "confidence": "disputed",
       "from": "eec-accession-1986",
       "id": "eec-accession-1986--troika-bailout-2011--precondition-of",
@@ -7448,6 +7625,16 @@
       "supersededBy": null,
       "to": "eec-accession-1986",
       "type": "caused"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "efta-accession-1960",
+      "id": "efta-accession-1960--eec-application-1977--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "eec-application-1977",
+      "type": "precondition-of"
     },
     {
       "aliases": [],
@@ -12116,7 +12303,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Independence of Angola",
-      "weight": 6,
+      "weight": 7,
       "when": {
         "calendar": "gregorian",
         "date": "1975-11-11",
@@ -13227,6 +13414,37 @@
       }
     },
     {
+      "actors": [
+        {
+          "actor": "cplp",
+          "role": "founded"
+        },
+        {
+          "actor": "portugal",
+          "role": "founding member"
+        },
+        {
+          "actor": "third-portuguese-republic",
+          "role": "government"
+        }
+      ],
+      "aliases": [],
+      "id": "cplp-founding-1996",
+      "place": "lisbon",
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "The Community of Portuguese Language Countries is founded",
+      "weight": 4,
+      "when": {
+        "calendar": "gregorian",
+        "date": "1996-07-17",
+        "end": 1996,
+        "start": 1996
+      }
+    },
+    {
       "actors": [],
       "aliases": [],
       "id": "december-2022-floods-in-portugal",
@@ -13443,7 +13661,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Portugal joins the EEC",
-      "weight": 13,
+      "weight": 14,
       "when": {
         "calendar": "gregorian",
         "date": "1986-01-01",
@@ -13474,12 +13692,43 @@
       "status": "active",
       "supersededBy": null,
       "title": "Portugal applies to join the EEC",
-      "weight": 6,
+      "weight": 7,
       "when": {
         "calendar": "gregorian",
         "date": "1977-03-28",
         "end": 1977,
         "start": 1977
+      }
+    },
+    {
+      "actors": [
+        {
+          "actor": "efta",
+          "role": "founded"
+        },
+        {
+          "actor": "portugal",
+          "role": "founding member"
+        },
+        {
+          "actor": "estado-novo",
+          "role": "government"
+        }
+      ],
+      "aliases": [],
+      "id": "efta-accession-1960",
+      "place": "stockholm",
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Portugal joins the European Free Trade Association",
+      "weight": 4,
+      "when": {
+        "calendar": "gregorian",
+        "date": "1960-01-04",
+        "end": 1960,
+        "start": 1960
       }
     },
     {
@@ -15738,6 +15987,37 @@
     {
       "actors": [
         {
+          "actor": "portugal",
+          "role": "acceded"
+        },
+        {
+          "actor": "schengen-area",
+          "role": "admitting body"
+        },
+        {
+          "actor": "third-portuguese-republic",
+          "role": "government"
+        }
+      ],
+      "aliases": [],
+      "id": "schengen-in-force-1995",
+      "place": "lisbon",
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Portugal enters the Schengen area",
+      "weight": 4,
+      "when": {
+        "calendar": "gregorian",
+        "date": "1995-03-26",
+        "end": 1995,
+        "start": 1995
+      }
+    },
+    {
+      "actors": [
+        {
           "actor": "sidonio-pais",
           "role": "victim"
         }
@@ -16731,6 +17011,25 @@
       "wikipedia": {
         "en": "Saint-Denis, Réunion",
         "pt": "São Dinis (Reunião)"
+      }
+    },
+    {
+      "aliases": [],
+      "id": "stockholm",
+      "name": "Stockholm",
+      "names": [
+        "Stockholm",
+        "Estocolmo"
+      ],
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "where": {
+        "label": "Stockholm",
+        "lat": 59.33,
+        "lon": 18.07,
+        "precision": "city"
       }
     },
     {
@@ -38039,6 +38338,62 @@
     },
     {
       "aliases": [],
+      "from": "european-central-bank",
+      "id": "european-central-bank--european-union--part-of",
+      "note": "An institution of the Union from 1998, and the monetary authority of the euro area from 1999.",
+      "status": "active",
+      "supersededBy": null,
+      "to": "european-union",
+      "type": "part-of",
+      "when": {
+        "end": null,
+        "start": 1998
+      }
+    },
+    {
+      "aliases": [],
+      "from": "european-commission",
+      "id": "european-commission--european-union--part-of",
+      "note": "The Union's executive, and before 1993 the Community's; this record starts where the Union does.",
+      "status": "active",
+      "supersededBy": null,
+      "to": "european-union",
+      "type": "part-of",
+      "when": {
+        "end": null,
+        "start": 1993
+      }
+    },
+    {
+      "aliases": [],
+      "from": "european-economic-community",
+      "id": "european-economic-community--european-union--succeeded",
+      "note": "The Maastricht Treaty, in force 1 November 1993. Portugal's membership runs across the change without interruption.",
+      "status": "active",
+      "supersededBy": null,
+      "to": "european-union",
+      "type": "succeeded",
+      "when": {
+        "end": 1993,
+        "start": 1993
+      }
+    },
+    {
+      "aliases": [],
+      "from": "eurozone",
+      "id": "eurozone--european-union--part-of",
+      "note": "The euro area is the subset of Union states that adopted the currency; it has no organs of its own.",
+      "status": "active",
+      "supersededBy": null,
+      "to": "european-union",
+      "type": "part-of",
+      "when": {
+        "end": null,
+        "start": 1999
+      }
+    },
+    {
+      "aliases": [],
       "from": "first-portuguese-republic",
       "id": "first-portuguese-republic--portugal--regime-of",
       "note": "From the revolution of 5 October 1910 to the coup of 28 May 1926.",
@@ -38165,6 +38520,20 @@
     },
     {
       "aliases": [],
+      "from": "oeec",
+      "id": "oeec--oecd--succeeded",
+      "note": "Reconstituted on 30 September 1961: the European members carried over and the United States and Canada joined as full members.",
+      "status": "active",
+      "supersededBy": null,
+      "to": "oecd",
+      "type": "succeeded",
+      "when": {
+        "end": 1961,
+        "start": 1961
+      }
+    },
+    {
+      "aliases": [],
       "from": "pedro-passos-coelho",
       "id": "pedro-passos-coelho--psd--led",
       "note": "Party leader, in government from 2011 to 2015. Both years want checking.",
@@ -38189,6 +38558,146 @@
       "when": {
         "end": null,
         "start": 2014
+      }
+    },
+    {
+      "aliases": [],
+      "from": "portugal",
+      "id": "portugal--council-of-europe--allied-with",
+      "note": "Admitted in September 1976, once the new constitution made Portugal eligible. Membership, not an alliance: rule 19 reserves member-of for persons.",
+      "status": "active",
+      "supersededBy": null,
+      "to": "council-of-europe",
+      "type": "allied-with",
+      "when": {
+        "end": null,
+        "start": 1976
+      }
+    },
+    {
+      "aliases": [],
+      "from": "portugal",
+      "id": "portugal--cplp--allied-with",
+      "note": "Founding member at Lisbon in July 1996. Membership, not an alliance: rule 19 reserves member-of for persons.",
+      "status": "active",
+      "supersededBy": null,
+      "to": "cplp",
+      "type": "allied-with",
+      "when": {
+        "end": null,
+        "start": 1996
+      }
+    },
+    {
+      "aliases": [],
+      "from": "portugal",
+      "id": "portugal--efta--allied-with",
+      "note": "Founding member in 1960; left on entering the European Communities in 1986. Membership, not an alliance: rule 19 reserves member-of for persons.",
+      "status": "active",
+      "supersededBy": null,
+      "to": "efta",
+      "type": "allied-with",
+      "when": {
+        "end": 1986,
+        "start": 1960
+      }
+    },
+    {
+      "aliases": [],
+      "from": "portugal",
+      "id": "portugal--european-union--allied-with",
+      "note": "Member state from 1993, continuous with the Community joined in 1986. Membership, not an alliance: rule 19 reserves member-of for persons.",
+      "status": "active",
+      "supersededBy": null,
+      "to": "european-union",
+      "type": "allied-with",
+      "when": {
+        "end": null,
+        "start": 1993
+      }
+    },
+    {
+      "aliases": [],
+      "from": "portugal",
+      "id": "portugal--eurozone--allied-with",
+      "note": "Among the eleven that entered the third stage of monetary union on 1 January 1999. Membership, not an alliance: rule 19 reserves member-of for persons.",
+      "status": "active",
+      "supersededBy": null,
+      "to": "eurozone",
+      "type": "allied-with",
+      "when": {
+        "end": null,
+        "start": 1999
+      }
+    },
+    {
+      "aliases": [],
+      "from": "portugal",
+      "id": "portugal--imf--allied-with",
+      "note": "Member since 1961, and a borrower in 1978, 1983 and 2011. Membership, not an alliance: rule 19 reserves member-of for persons.",
+      "status": "active",
+      "supersededBy": null,
+      "to": "imf",
+      "type": "allied-with",
+      "when": {
+        "end": null,
+        "start": 1961
+      }
+    },
+    {
+      "aliases": [],
+      "from": "portugal",
+      "id": "portugal--league-of-nations--allied-with",
+      "note": "Original member from 1920 until the League was wound up in 1946. Membership, not an alliance: rule 19 reserves member-of for persons.",
+      "status": "active",
+      "supersededBy": null,
+      "to": "league-of-nations",
+      "type": "allied-with",
+      "when": {
+        "end": 1946,
+        "start": 1920
+      }
+    },
+    {
+      "aliases": [],
+      "from": "portugal",
+      "id": "portugal--oecd--allied-with",
+      "note": "Founding member in 1961, carried over from the OEEC. Membership, not an alliance: rule 19 reserves member-of for persons.",
+      "status": "active",
+      "supersededBy": null,
+      "to": "oecd",
+      "type": "allied-with",
+      "when": {
+        "end": null,
+        "start": 1961
+      }
+    },
+    {
+      "aliases": [],
+      "from": "portugal",
+      "id": "portugal--oeec--allied-with",
+      "note": "Founding member in 1948, after first declining Marshall aid. Membership, not an alliance: rule 19 reserves member-of for persons.",
+      "status": "active",
+      "supersededBy": null,
+      "to": "oeec",
+      "type": "allied-with",
+      "when": {
+        "end": 1961,
+        "start": 1948
+      }
+    },
+    {
+      "aliases": [],
+      "from": "portugal",
+      "id": "portugal--schengen-area--allied-with",
+      "note": "Signed in 1991; in the area from its entry into force in March 1995. Membership, not an alliance: rule 19 reserves member-of for persons.",
+      "status": "active",
+      "supersededBy": null,
+      "to": "schengen-area",
+      "type": "allied-with",
+      "when": {
+        "end": null,
+        "start": 1995
       }
     },
     {
