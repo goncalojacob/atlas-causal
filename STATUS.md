@@ -6,6 +6,21 @@ session ends. `ARCHITECTURE.md` is the target; this file is the position.
 
 ## Last updated
 
+**H5a, on the branch `h5`, in parallel with the health cycle on `m0`:
+aliases resolve everywhere, and there is a migration chain.** A reference, a
+narrative step and a `review.citations` key written against a record's former
+id all now name the record that stands for it now, through one helper —
+`resolveId(id, universe)` in `src/validate/rules.js`, answering what
+`resolve()` in `src/data.js` answers — so renaming a record is something the
+project can actually do. `src/validate/migrate.js` is the migration chain:
+ordered, pure, no `fs`, applied on read by `tools/lib/read.mjs` and to the
+files themselves by `tools/migrate/apply.mjs`, which validates the whole tree
+before it writes a byte. Three steps are in it — one additive, and a
+reversible pair that proves `up`, `down` and the writer and leaves the
+dataset byte for byte as it was. `schema` is read as "up to
+`SCHEMA_VERSION`", which stays 1. No record under `data/` changed in this
+run. Deviations 186–188.
+
 2026-09-05, after M28 (`docs/m28-brief.md`): **four things off the backlog —
 a phone layout, a container on sources, reordering a narrative's steps, and
 `narratives.html`.**
@@ -2803,6 +2818,37 @@ gave that to the map and the timeline, and M25 did not widen it.
      itself, is in the index, and is what a reader choosing between accounts
      wants; the brief also says the page is "generated at render from the
      index, like `sources.html`", which the other reading cannot be.
+
+186. **The alias resolution `citationsOf` needed went into `core.js`.** H5a's
+     brief names three call sites for the helper: rule 3, `narrativeSteps`
+     and `citationsOf`. The first is in `rules.js` and the second resolves
+     through `atlas.resolve()` in `narrative.js`, both of them this run's to
+     edit. `citationsOf` is built in `src/data.js`, which H1 owns on `m0`
+     while this branch runs — but the key a citer is filed under is decided
+     one step earlier, by `citationsBySource` in `src/validate/core.js`, and
+     resolving it there is what `citationsOf` reads. No edit to `data.js` was
+     needed and none was made. One line of it is still literal:
+     `narrativesByRef` notes an *edge* step under `step.ref` as written, so a
+     step naming an edge's former id is resolved everywhere except that one
+     reverse index. One edit, for whoever owns `data.js` next.
+
+187. **`lookup` in the rules stops at the alias and does not follow a merge.**
+     `resolveId` answers what `resolve()` in `data.js` answers — the alias
+     hop, then the merges — and that is what a `review.citations` key is
+     compared through. The rules that ask what a reference *names* pass
+     `merges: false`: an edge whose `from` is a merged event is about that
+     event, and following the merge would silently move the arrow of time
+     onto the successor's dates. The knob is one argument with the reason
+     written above it.
+
+188. **The gate's `--index` made the contribution Action rebuild the index.**
+     Item 4 of the brief holds any branch that changes `data/` to the index
+     it carries, and the pull request `contribution.yml` opens changes
+     `data/`. So it now runs `build-index.mjs` before it commits, as the
+     Wikidata import Action already did. The cost, which the review took
+     knowingly, is that two contribution pull requests can conflict on
+     `data/index/`; `deploy.yml` still rebuilds it on `main`, so a conflict
+     is resolved by taking either side and letting main settle it.
 
 ## Dates to verify
 
