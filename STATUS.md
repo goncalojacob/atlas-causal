@@ -6,8 +6,68 @@ session ends. `ARCHITECTURE.md` is the target; this file is the position.
 
 ## Last updated
 
-2026-09-05, after M25 (`docs/m25-brief.md`): **the graph view has a level of
-detail: what is too close together to tell apart is one mark with a count.**
+2026-09-05, after M26 (`docs/m26-brief.md`): **a card is a head, a summary
+and collapsible sections with counts, and the browser's Back comes back.**
+
+The owner's complaint was that a card showed everything at once — summary,
+who is in it, consequences, convergence, citations, narratives, horizon — and
+read badly. It is now progressive disclosure. The **head** is the title, one
+line of when and where and which lane, an event's actors as **chips** with
+the role on hover and in the `title`, and the quiet links out. Then the
+**summary** alone. Then one **collapsible section per question**, each header
+carrying its count: Consequences (with the horizon inside it), Causes, Other
+branches, Sources, Part of, and on an actor Relations and Territory. Nothing
+was removed — the counts say what is behind a header before it is opened.
+
+**The count is where a dispute is announced**: "Consequences (3, 1
+disputed)", so that a closed section never presents a disagreement as
+settled. **One section is open at a time** — the panel is a narrow column,
+and two open sections put the second a screenful below the first — and which
+one is a preference rather than state: `localStorage`, per reader, as the
+pane sizes are, never the URL. Which opens by itself follows the arrival:
+walking a chain opens Consequences, arriving from a source's card opens
+Sources, otherwise the reader's remembered choice. The header is a native
+`<button>`, which is where Enter and Space come from; `src/panel/sections.js`
+is the one module that decides all of it, for every card.
+
+**Convergence split in two.** *Causes* is the direct incoming links and is
+always there; *Other branches* is the convergence query and is drawn only
+while a path is being walked, because without one there is nothing to be
+other than. The query itself is untouched. **The walked path became a
+breadcrumb** above the card, each earlier step a link that returns to it and
+drops what came after.
+
+**Opening a record now pushes a history entry.** `state.js` wrote every
+change with `replaceState`, so the browser's Back left the atlas; the owner's
+case was clicking an actor from an event and wanting the event back without
+searching. A change of *what is open* — `selected`, `source`, `place`,
+`actor`, `narrative`, `step` — pushes; a change of the view only still
+replaces, or dragging the time band would fill Back with a hundred frames of
+one picture. The decision is a pure function on the patch. The browser will
+not say what Back returns to, so the store keeps its own trail of the
+openings it pushed and `popstate` walks it; the panel's head names the link
+("← 25 April") with a Forward twin, and both are `history.back()`/`forward()`,
+so they and the browser's own chrome do the same thing.
+
+Two things worth recording about how it is built. The **Sources count comes
+from the sources index** and not from the record being fetched (`data.js`
+gained `citationsOf`), so the header says how many before the text arrives —
+and a citation now carries its verification mark, saying "unchecked" where
+nobody has opened the source, which all 1,874 of them are. And the four
+done-whens that need a *driven* browser — a click, Enter and Space, the
+choice surviving a reload, Back after opening an actor — are tested by
+driving headless Chromium over its **DevTools protocol on Node 22's own
+`WebSocket`**: no Puppeteer, no Playwright, no npm, which is the repository's
+rule. `tests/panel-browser.test.mjs`.
+
+**No historical text was written and nothing under `data/` changed**: 1,685
+records, 0 errors, 3 warnings, as M25 left them. **559 tests**, ten of them
+in a real browser (four dumped, six driven). `ARCHITECTURE.md` is at revision
+21; deviations 177–180.
+
+Before that, 2026-09-05, after M25 (`docs/m25-brief.md`): **the graph view
+has a level of detail: what is too close together to tell apart is one mark
+with a count.**
 
 Nodes of one band closer together than thirteen units at rest are drawn as
 one mark with a `+n` badge, and the links between two such marks are one
@@ -1188,6 +1248,24 @@ overnight runs and the hourly shepherd keep off each other's toes on `m0`.
    picture and hides more behind a badge. It is a taste question and the
    agent did not answer it; the same question about the map's own 16 is item
    7.
+13. **Owner: say whether "unchecked" on every citation is right.** Every
+   citation on a card now carries its verification mark, and since none of
+   the 1,874 has been checked, every one of them reads "unchecked" in small
+   grey type. That is honest and it is also everywhere. The alternatives are
+   to show the mark only once a citation has been verified — invisible until
+   the review queue is worked through — or to move the count into the
+   Sources header the way disputes are counted ("Sources (2, 2 unchecked)").
+   The agent chose the loud, honest one and did not decide it for you; it is
+   two lines in `citationsHtml` in `src/panel/panel.js`.
+14. **Owner: look at a card and say whether a section should open on its
+   own at all.** `node tools/serve.mjs`, then
+   `http://localhost:8000/?selected=carnation-revolution-1974`. Today
+   Consequences opens by itself on a fresh reader, on the argument that
+   consequences are what this atlas is for. The other reading is that a card
+   should open entirely closed — head, summary, and six counted headers —
+   which is the shortest card and the strongest claim that the summary is
+   what to read first. `openSection` in `src/panel/sections.js` is the one
+   function that decides it.
 
 ## Open questions
 
@@ -2478,6 +2556,46 @@ gave that to the map and the timeline, and M25 did not widen it.
       made Bhutan a dependency of India and Libya of Britain, which the
       source's own dates contradict.
 
+
+177. **"The link you followed" is a sixth section, first in the order.** The
+    brief lists five and says nothing about what becomes of the last step's
+    argument — its explanation, its supporting sources and its dispute —
+    which the card carried as a block above the path. Dropping it would have
+    contradicted the brief's own "nothing is removed from the card", so it
+    became a collapsible section like the rest, with the disputed notice above
+    it turned into a button that opens it. The section's header says
+    "1 disputed" while closed, so a dispute is announced whether or not the
+    reader presses that button. The default-open rule is otherwise followed
+    literally: arriving through a disputed link still opens Consequences,
+    because that is what the brief says arriving by walking a chain does.
+
+178. **The breadcrumb marks only disputed steps.** The chain section it
+    replaces put a confidence badge on every step, and that is right in a
+    list; in a breadcrumb it is a row of badges nobody reads, which would
+    make the one that matters harder to see rather than easier. Each crumb
+    still carries its edge type in words, and a disputed step carries the
+    badge.
+
+179. **On a `popstate` what is *open* is taken from the URL rather than
+    inherited, and a `restore` hook re-derives a narrative's step.** Not in
+    the brief, and Back does not work without it: `popstate` called
+    `parseState(search, state)`, so a field the URL does not name kept its
+    current value, and going back from an actor's card to the event's left
+    the actor open — Back could only ever add. The six opening fields and the
+    chain now come from the URL alone; the window, the lanes and the layers
+    still fall back to what stands, because a URL that does not name them is
+    not asking for them to change. `restore` is `main.js` handing the store
+    `openingState`, the same derivation the load path already used, so that a
+    popstate onto a narrative's URL gets its selection and window back.
+
+180. **A card with no consequences opens on its own history, and Territory is
+    one section with two lists.** The brief's "otherwise Consequences" has no
+    meaning on an actor's or a place's card, which have none: they open on
+    "Where it appears" and "What happened here". And the actor card's
+    territory was two card-level headings — the ground it held itself, and the
+    ground it held through somebody else — where the brief names one section
+    ("Territory"); the two became sub-headings inside it, counted together.
+
 ## Dates to verify
 
 Everything below was written from memory and is where the owner's review
@@ -2944,3 +3062,4 @@ M27 started 2026-09-05T01:06:43Z by scheduled (branch m27)
 M27 done
 
 M26 started 2026-09-05T01:28:21Z by scheduled
+M26 done
