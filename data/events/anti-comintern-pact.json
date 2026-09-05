@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "anti-comintern-pact",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q152195",
+  "sitelinks": 61,
+  "wikipedia": {
+    "en": "Anti-Comintern Pact",
+    "pt": "Pacto Anticomintern"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q152195"
+    }
+  ],
+  "title": "Anti-Comintern Pact",
+  "summary": "Wikidata item Q152195, imported by tools/import/wikidata.mjs. The item's own description reads \"pact between Nazi Germany and Japan prior to World War II\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1936,
+    "end": 1936,
+    "date": "1936-11-25"
+  },
+  "place": "berlin",
+  "region": null,
+  "actors": []
+}

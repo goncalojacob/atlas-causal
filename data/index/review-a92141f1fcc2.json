@@ -10280,8 +10280,20 @@
     }
   ],
   "schema": 1,
-  "total": 1009,
+  "total": 1014,
   "warnings": [
+    {
+      "id": "anti-comintern-pact",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "assassination-of-archduke-franz-ferdinand",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
     {
       "id": "iberian-blackout-2025",
       "kind": "event",
@@ -10295,6 +10307,18 @@
       "rule": "degree-zero"
     },
     {
+      "id": "lateran-treaty",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "munich-agreement",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
       "id": "saint-denis",
       "kind": "place",
       "message": "place is referenced by no event",
@@ -10302,6 +10326,12 @@
     },
     {
       "id": "second-boer-war",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "second-sino-japanese-war",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"

@@ -11684,7 +11684,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 58,
+      "citationCount": 63,
       "citations": [
         {
           "dissent": false,
@@ -11940,6 +11940,18 @@
         },
         {
           "dissent": false,
+          "id": "anti-comintern-pact",
+          "kind": "event",
+          "locator": "Q152195"
+        },
+        {
+          "dissent": false,
+          "id": "assassination-of-archduke-franz-ferdinand",
+          "kind": "event",
+          "locator": "Q192050"
+        },
+        {
+          "dissent": false,
           "id": "batepa-massacre",
           "kind": "event",
           "locator": null
@@ -11988,6 +12000,12 @@
         },
         {
           "dissent": false,
+          "id": "lateran-treaty",
+          "kind": "event",
+          "locator": "Q193270"
+        },
+        {
+          "dissent": false,
           "id": "lisbon-regicide",
           "kind": "event",
           "locator": "Q2665185"
@@ -12000,6 +12018,12 @@
         },
         {
           "dissent": false,
+          "id": "munich-agreement",
+          "kind": "event",
+          "locator": "Q154255"
+        },
+        {
+          "dissent": false,
           "id": "portuguese-regionalisation-referendum-1998",
           "kind": "event",
           "locator": null
@@ -12009,6 +12033,12 @@
           "id": "second-boer-war",
           "kind": "event",
           "locator": "Q215112"
+        },
+        {
+          "dissent": false,
+          "id": "second-sino-japanese-war",
+          "kind": "event",
+          "locator": "Q170314"
         },
         {
           "dissent": false,

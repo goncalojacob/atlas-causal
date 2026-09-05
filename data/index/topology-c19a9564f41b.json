@@ -12345,6 +12345,28 @@
     {
       "actors": [],
       "aliases": [],
+      "id": "anti-comintern-pact",
+      "place": "berlin",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Anti-Comintern Pact",
+      "weight": 0,
+      "when": {
+        "date": "1936-11-25",
+        "end": 1936,
+        "start": 1936
+      },
+      "wikidata": "Q152195",
+      "wikipedia": {
+        "en": "Anti-Comintern Pact",
+        "pt": "Pacto Anticomintern"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
       "id": "april-1906-portuguese-legislative-election",
       "place": null,
       "region": "europe",
@@ -12470,6 +12492,28 @@
         "start": 1982
       },
       "wikidata": "Q9386425"
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "assassination-of-archduke-franz-ferdinand",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "assassination of Archduke Franz Ferdinand",
+      "weight": 0,
+      "when": {
+        "date": "1914-06-28",
+        "end": 1914,
+        "start": 1914
+      },
+      "wikidata": "Q192050",
+      "wikipedia": {
+        "en": "Assassination of Archduke Franz Ferdinand",
+        "pt": "Atentado de Sarajevo"
+      }
     },
     {
       "actors": [],
@@ -14543,6 +14587,29 @@
       }
     },
     {
+      "actors": [],
+      "aliases": [],
+      "id": "lateran-treaty",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Lateran Treaty",
+      "weight": 0,
+      "when": {
+        "date": "1929-02-11",
+        "end": 1985,
+        "endDate": "1985-06-03",
+        "start": 1929
+      },
+      "wikidata": "Q193270",
+      "wikipedia": {
+        "en": "Lateran Treaty",
+        "pt": "Tratado de Latrão"
+      }
+    },
+    {
       "actors": [
         {
           "actor": "afonso-costa",
@@ -15192,6 +15259,28 @@
       "wikidata": "Q10327164",
       "wikipedia": {
         "pt": "Massacre de Mueda"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "munich-agreement",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Munich agreement",
+      "weight": 0,
+      "when": {
+        "date": "1938-09-30",
+        "end": 1938,
+        "start": 1938
+      },
+      "wikidata": "Q154255",
+      "wikipedia": {
+        "en": "Munich Agreement",
+        "pt": "Acordo de Munique"
       }
     },
     {
@@ -16059,6 +16148,29 @@
       "wikipedia": {
         "en": "Second Boer War",
         "pt": "Segunda Guerra dos Bôeres"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "second-sino-japanese-war",
+      "place": null,
+      "region": "asia",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Second Sino-Japanese War",
+      "weight": 0,
+      "when": {
+        "date": "1937-07-07",
+        "end": 1945,
+        "endDate": "1945-09-09",
+        "start": 1937
+      },
+      "wikidata": "Q170314",
+      "wikipedia": {
+        "en": "Second Sino-Japanese War",
+        "pt": "Segunda Guerra Sino-Japonesa"
       }
     },
     {
