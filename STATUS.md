@@ -6,7 +6,69 @@ session ends. `ARCHITECTURE.md` is the target; this file is the position.
 
 ## Last updated
 
-2026-09-05, after H3a-2 (`docs/health/h3a-brief.md`, amendments A0–A14), the
+2026-09-05, after H3b (`docs/health/h3b-brief.md`), the health cycle's
+seventh run: **every page reads the spine, no page asks for the topology,
+and the citer rows have left the index every page loads whole.** One commit
+per page — the atlas, entry, narratives and sources, contribute, review —
+then `?v=` on every record fetch. Code only under `src/` and `tools/`;
+nothing under `data/` moved and `data/index/` was rebuilt by this run, which
+owns it. 790 tests.
+
+**What it costs to open the atlas now**, measured on this dataset, raw and
+gzipped as Pages serves it:
+
+| | Before | After |
+|---|---|---|
+| `index.html` first paint | 1,240.5 KB / 90.0 KB | **853.3 KB / 67.1 KB** |
+| `sources.html` first paint | 335.0 KB / 24.6 KB | **35.5 KB / 5.6 KB** |
+| the file every page loads whole | 905.5 KB | **817.8 KB** |
+
+1.45× less raw and 1.34× less over the wire on the atlas, and the
+bibliography is a tenth of what it was. Two things bought it, and they are
+not the same size: the spine in place of the topology is 88 KB raw and about
+4 KB gzipped, while the citer rows leaving `sources-<hash>.json` — 328.8 KB
+to 29.4 KB — is nearly all of the rest. **The wall this project actually runs
+into barely moves**: the whole graph is still loaded whole, because
+convergence cannot be answered from a window, and 817.8 KB is not 905.5 KB
+by enough to change what happens at 20k events. That was said in H3a-1 and it
+is still true; the next lever is the presences, 47 % of the spine, which is
+H4a's question.
+
+Beside the two files, on the pages that want them: the search shard
+(217.7 KB / 22.4 KB), fetched without blocking the first frame, and one
+citer file when a reader opens a source or asks for its lens.
+
+**The window is now what the views draw.** All three draw the band plus one
+period — fifty years, `MARGIN_YEARS` — at each end. Past that the timeline
+leaves a faded two-pixel stub on the floor of the lane, and the map and the
+graph draw nothing: a mark and a node are places to aim at, and there is no
+honest two-pixel version of either. What the reader is holding is exempt at
+any distance, as it already was of the window and of the map's box. This is a
+visible change and it is the one review finding 28 made the condition of
+windowing at all. The graph's *layout* is still over the whole arrangement —
+nodes that moved every time the band did would be worse than nodes that come
+and go — and only the drawing is windowed; H4b restricts the layout, against
+a measurement.
+
+**Each view has a render key** (`src/render-key.js`), the idea `panel.js` has
+had since H1b. The key is the **whole state**, not the fields a view is known
+to read, plus what the view holds outside it — the map's transform, spread
+and count of territory shards arrived; the timeline's measured pane; the
+graph's transform and rectangle. The asymmetry is the argument: a key that
+misses an input leaves a stale picture, a key that includes a field the view
+ignores costs a redraw that changes nothing. The store still notifies
+synchronously (finding 23).
+
+**Three readers had to learn to fetch** before the citer rows could go: the
+source card (its own file, the first 200 rows drawn and the rest a button
+away), a source lens (fetched by `main.js`, the views forced to redraw when
+it lands), and `retractionPlan` on `review.html` — which fetches the file
+before it asks and **refuses to retract at all** if that fetch fails, because
+an empty answer there would read as "nothing cites this book". Deviations
+223–226; the contribution form does not load the search shard (223) and the
+edge tuple is six elements now (226).
+
+Before that, H3a-2 (`docs/health/h3a-brief.md`, amendments A0–A14), the
 health cycle's sixth run: **the loader reads the spine, and the atlas it
 builds from it is the atlas the pages already have.** `loadSpine()` and
 `createAtlasFromSpine()` in `src/data.js`; no page calls either yet, which is
@@ -4016,3 +4078,4 @@ H3a-2 started 2026-09-05T16:51:20Z by scheduled
 H3a-2 done
 
 H3b started 2026-09-05T17:07:31Z by scheduled
+H3b done
