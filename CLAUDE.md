@@ -119,7 +119,7 @@ src/horizon.js             pure: what the selected event had led to by a year, a
 src/narrative.js           pure: what a step of a narrative is about, the chain at it, the window it needs;  narrative-mode.js  applies that to the store and remembers what reading replaced
 src/citation.js            pure: a source as a citation, its identifiers as links, the bibliography's order
 src/wikipedia.js           pure: which article a record's identity offers, and the URL it becomes
-src/cluster.js             pure: which marks overlap at this zoom; the timeline uses it in one dimension
+src/cluster.js             pure: which marks overlap at this zoom, over a grid; the timeline uses it in one dimension. zoomBucket() is how often the map is willing to ask
 src/search.js              pure: titles, every name of an actor or a place, and a source's title and creators, folded and ranked;  search-box.js  the input and the keys
 src/map/projection.js      lon/lat ⇄ SVG (equirectangular); the only file a projection change touches
 src/map/map.js             SVG scaffold, pan/zoom, click into a cluster
@@ -145,6 +145,7 @@ src/validate/core.js       validate(records, topology, schemas); buildTopology a
 src/validate/schemas.js    the schema file list, for the browser: it cannot scan a directory
 src/fonts/                 EB Garamond and Public Sans, self-hosted, SIL OFL; README.md says which file came from where
 src/util/dates.js          toAstronomical() and interval formatting; the only place years are compared
+src/util/simplify.js       Douglas-Peucker, quantization and ring pruning; the import simplifies the arcs with it and the map simplifies an outline again by zoom
 src/util/window.js         a null bound is the data's own; what overlaps the window; the "map at Y" rule
 src/util/geo.js            point-in-polygon and nearest-lane region derivation
 src/util/esc.js  dom.js    esc() and safeUrl(); SVG/HTML element helpers
@@ -158,7 +159,7 @@ tools/seed-review-flags.mjs  one-time: STATUS.md's "Dates to verify" onto the re
 tools/serve.mjs            the local server: the repository, plus PUT /__records/<kind>/<id>; 127.0.0.1 only, never deployed
 tools/bundle-to-files.mjs  issue body → data/<kind>s/<id>.json; ids slug-checked before any path
 tools/lookup-sources.mjs   what the catalogues say a DOI or ISBN names; a review aid, never a gate
-tools/import/cshapes.mjs   CShapes 2.0 → actors, presences, geometry shards; topojson.mjs and simplify.mjs are its pure halves
+tools/import/cshapes.mjs   CShapes 2.0 → actors, presences, geometry shards; topojson.mjs is its pure half and simplify.mjs the name it knows src/util/simplify.js by
 tools/import/wikidata.mjs  identifiers and records from Wikidata; injectable fetch layer, tested on fixtures, additive on disk
 tools/import/identity.mjs  the additive rule both imports obey: fill a gap, never change a value, never sign
 tools/import/cache/        GENERATED: Wikipedia leads with their revision; never published, never data, not under data/

@@ -886,7 +886,8 @@ atlas-causal/
 │   ├── migrate-places.mjs        ● one-time: every event's `where` → a place record it points at; kept as documentation
 │   ├── seed-review-flags.mjs     ● one-time: STATUS.md's "Dates to verify" onto the records as review flags; kept as documentation
 │   ├── serve.mjs                 ● local only, never deployed: the repository + PUT /__records/<kind>/<id> on 127.0.0.1
-│   ├── import/topojson.mjs  simplify.mjs  cshapes.mjs   ● offline, zero-dependency import of borders over time
+│   ├── import/topojson.mjs  cshapes.mjs               ● offline, zero-dependency import of borders over time
+│   ├── import/simplify.mjs                            ● the name the import knows src/util/simplify.js by
 │   ├── import/wikidata.mjs       ● identifiers and records from Wikidata; injectable fetch layer, three modes, additive
 │   ├── import/identity.mjs       ● the additive rule itself, obeyed by both imports
 │   └── import/cache/wikipedia/   ● GENERATED: article leads with their revision; never published, never data

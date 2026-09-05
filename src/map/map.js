@@ -69,6 +69,15 @@ export function createMap(container, { atlas, state, onCluster = null }) {
     atlas,
     onSelect: (id) => state.set({ actor: id, selected: null, chain: [] }),
     onFailed: (failed) => { territoriesNote.hidden = !failed; },
+    // The first shard of borders is 880 KB that nobody has asked for, and it
+    // was fetched inside the map's first render, ahead of the coastlines
+    // being painted (health review B, finding 24). A frame, then a task: the
+    // callback of requestAnimationFrame still runs before the paint it is
+    // for, so the timeout is what puts the request after it.
+    defer: (fn) => {
+      if (typeof requestAnimationFrame !== 'function' || typeof setTimeout !== 'function') return fn();
+      return requestAnimationFrame(() => setTimeout(fn, 0));
+    },
   });
   // A cluster of marks that zooming can pull apart is zoomed into; one whose
   // members share a point — Lisbon's thirty-seven — is spread open instead,
@@ -397,6 +406,9 @@ export function createMap(container, { atlas, state, onCluster = null }) {
         year: timeWindow ? timeWindow.to : null,
         actorId: actor && actor.kind === 'actor' ? actor.id : null,
         onReady: () => { shardsIn += 1; render(state.get()); },
+        // How much border detail is worth drawing: the whole world does not
+        // want a coastline to a tenth of a degree (presences.js).
+        k: transform.k,
       });
     }
     const result = events.render({

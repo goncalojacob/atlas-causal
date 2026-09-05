@@ -318,7 +318,9 @@ const SPLITTABLE = `return Boolean(document.querySelector('#map circle.mark.clus
 
 test('a click on a splittable cluster splits it, and the animation redraws once', { skip }, async () => {
   await wide(async (page, url) => {
-    await open(page, url(''), SPLITTABLE);
+    // Without the territories: a shard of borders arriving is a redraw of
+    // its own, and what is being counted here is the animation's.
+    await open(page, url('?layers=land,events'), SPLITTABLE);
     await page.eval(FREEZE_TIMELINE);
 
     // Count the times the layer is emptied and drawn again. Before H4a the
@@ -347,15 +349,54 @@ test('a click on a splittable cluster splits it, and the animation redraws once'
 
     // Past the animation and past the box settling behind it.
     await waitFor(page, 'return window.__redraws > 0;', 'the zoom to settle into a redraw');
-    await new Promise((resolve) => { setTimeout(resolve, 700); });
+    await new Promise((resolve) => { setTimeout(resolve, 900); });
 
+    // A handful: the render the animation ends on, the one the settled box
+    // asks for, the panel opening the cluster. Before H4a it was nineteen —
+    // one per frame of the 260 ms animation, each grouping every point on the
+    // map again — so what this is measuring is the difference between a few
+    // discrete redraws and one per frame, and not the exact few.
     const redraws = await page.eval('return window.__redraws;');
-    assert.ok(redraws <= 4, `the animation did not redraw per frame (${redraws} redraws)`);
+    assert.ok(redraws <= 8, `the animation did not redraw per frame (${redraws} redraws)`);
 
     // And the cluster really came apart: the zoom it asked for was used as
     // it was rather than rounded down to a bucket below it.
     const hidden = await page.eval(badgeOf(before.key));
     assert.ok(hidden < before.hidden,
       `the stack came apart at the zoom it named (+${before.hidden} → +${hidden})`);
+  });
+});
+
+// The territories are drawn at the detail the zoom is worth: 181 outlines at
+// full precision were being turned into path strings on every change of year,
+// and at the whole world most of those points land inside a pixel (health
+// review B, finding 24). Asked of the real dataset, which is the one with
+// borders in it.
+const TERRITORY_DETAIL = `
+  const paths = [...document.querySelectorAll('#map .layer-presences path')];
+  return {
+    drawn: paths.length,
+    points: paths.reduce((n, el) => n + (el.getAttribute('d').match(/[ML]/g) ?? []).length, 0),
+  };`;
+
+test('a border is drawn to the detail the zoom is worth, and no finer', { skip }, async () => {
+  await wide(async (page, url) => {
+    await open(page, url(''), 'return Boolean(document.querySelector("#map .layer-presences path"));');
+    await page.eval(FREEZE_TIMELINE);
+
+    const world = await page.eval(TERRITORY_DETAIL);
+    assert.ok(world.drawn > 10, `the world's borders are drawn (${world.drawn})`);
+
+    // In past the second rung of the ladder, where the shard is drawn as it
+    // was written.
+    await page.eval(wheelAt(0.5, 0.5, -1600));
+    await waitFor(page, `return document.querySelectorAll('#map .layer-presences path').length > 0
+      && [...document.querySelectorAll('#map .layer-presences path')]
+        .reduce((n, el) => n + el.getAttribute('d').length, 0) !== ${world.points};`, 'the borders to be redrawn');
+    const close = await page.eval(TERRITORY_DETAIL);
+    assert.ok(close.points > world.points,
+      `zoomed in there is more of the border (${close.points} points against ${world.points})`);
+    assert.ok(world.points < close.points * 0.9,
+      `and the world is drawn with a good deal less of it (${world.points} of ${close.points})`);
   });
 });

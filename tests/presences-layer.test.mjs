@@ -8,9 +8,11 @@ import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import path from 'node:path';
 import {
-  presenceTitle, presenceClasses, hueActorOf, createPresencesLayer,
+  presenceTitle, presenceClasses, hueActorOf, createPresencesLayer, detailFor,
 } from '../src/map/layers/presences.js';
 import { loadAtlas } from '../src/data.js';
+import { extent as intervalExtent } from '../src/util/dates.js';
+import { countPoints, simplifyGeometry } from '../src/util/simplify.js';
 import { ROOT } from './helpers.mjs';
 
 const fetchJson = async (url) => JSON.parse(await readFile(path.join(ROOT, url.split('?')[0]), 'utf8'));
@@ -146,4 +148,130 @@ test('a shard that will not load is said once, and unsaid when one arrives', asy
   layer.render({ year: 1150 });
   await settle();
   assert.deepEqual(said, [true, false], 'and taken back when the shard arrives');
+});
+
+// --- the interval index ----------------------------------------------------
+//
+// H4a put an interval index under `presencesAt`, which was a scan of every
+// presence on every render (health review B, finding 24). The scan it
+// replaced is kept here and the two are held to the same answer, year by
+// year, over both datasets — including the years either side of every
+// boundary, which is where an index built wrong goes wrong.
+
+function scanPresencesAt(presences, year) {
+  const chosen = new Map();
+  for (const presence of presences) {
+    const { min, max } = intervalExtent(presence.when);
+    if (year < min || (max !== null && year > max)) continue;
+    const standing = chosen.get(presence.actor);
+    if (!standing || intervalExtent(standing.when).min < min) chosen.set(presence.actor, presence);
+  }
+  return [...chosen.values()].sort((a, b) => (a.id < b.id ? -1 : a.id > b.id ? 1 : 0)).map((p) => p.id);
+}
+
+// Every year the answer can change in, and the years either side of it.
+function yearsWorthAsking(presences) {
+  const years = new Set();
+  for (const presence of presences) {
+    const { min, max } = intervalExtent(presence.when);
+    for (const year of [min, max]) {
+      if (year === null) continue;
+      for (const d of [-1, 0, 1]) years.add(year + d);
+    }
+  }
+  return [...years].sort((a, b) => a - b);
+}
+
+test('the index answers what the scan answered, on every year that can differ', async () => {
+  for (const [what, dataRoot] of [['the fixtures', 'tests/fixtures/data/'], ['the atlas', 'data/']]) {
+    const a = await loadAtlas({ dataRoot, fetchJson });
+    const all = [...a.presences.values()];
+    assert.ok(all.length > 0, `${what} has presences`);
+    const years = yearsWorthAsking(all);
+    assert.ok(years.length > 4, `${what}: ${years.length} years worth asking about`);
+    for (const year of years) {
+      // The clamp is the atlas's, and both sides of the comparison get it.
+      const clamped = a.territoryYear(year);
+      assert.deepEqual(a.presencesAt(year).map((p) => p.id), scanPresencesAt(all, clamped),
+        `${what}, ${year}`);
+    }
+    // And a year the index has never been asked about before, twice: the
+    // answer is kept between calls and it is not the same array, so a caller
+    // that sorts what it was given does not sort what the next one gets.
+    const [first, second] = [a.presencesAt(years[3]), a.presencesAt(years[3])];
+    assert.deepEqual(first, second);
+    assert.notEqual(first, second, 'a caller gets its own array');
+  }
+});
+
+// --- how much border detail is worth drawing -------------------------------
+
+test('the detail a zoom is worth goes down as the reader goes in, never up', () => {
+  const ladder = [1, 1.9, 2, 4, 7.9, 8, 20, 40].map((k) => detailFor(k).tolerance);
+  for (let i = 1; i < ladder.length; i += 1) {
+    assert.ok(ladder[i] <= ladder[i - 1], `k rung ${i}: ${ladder[i]} is not coarser than ${ladder[i - 1]}`);
+  }
+  assert.equal(detailFor(40).tolerance, 0, 'and at the deepest zoom the shard is drawn as it was written');
+  assert.ok(detailFor(1).tolerance > 0, 'while the whole world is not');
+});
+
+test('simplifying an outline takes points off it and leaves it an outline', () => {
+  // A ring with a great deal to say about very little: a hundred steps around
+  // a circle two degrees across.
+  const ring = [];
+  for (let i = 0; i <= 100; i += 1) {
+    const angle = (2 * Math.PI * i) / 100;
+    ring.push([Math.cos(angle), Math.sin(angle)]);
+  }
+  const geometry = { type: 'Polygon', coordinates: [ring] };
+  const taken = simplifyGeometry(geometry, { tolerance: detailFor(1).tolerance });
+  assert.ok(countPoints(taken) < countPoints(geometry), `${countPoints(taken)} of ${countPoints(geometry)} points`);
+  assert.ok(countPoints(taken) >= 4, 'and it is still a ring');
+  assert.equal(simplifyGeometry(geometry, { tolerance: 0 }), geometry, 'no tolerance is no simplification');
+  assert.equal(simplifyGeometry(null, { tolerance: 1 }), null);
+});
+
+// --- the first shard -------------------------------------------------------
+//
+// The borders are 880 KB nobody has asked for, and the first render fetched
+// them ahead of the coastlines being painted (health review B, finding 24).
+
+test('the first shard waits for the land, and the second does not', async () => {
+  const group = { addEventListener() {}, replaceChildren() {}, appendChild() {} };
+  const asked = [];
+  const waiting = [];
+  const loaded = new Map();
+  const stub = {
+    actors: new Map(),
+    hueOfActor: () => null,
+    territoryYear: (y) => y,
+    shardForYear: (y) => ({ file: `geo/presences/${y}.json`, from: y, to: y }),
+    loadedGeometry: (file) => loaded.get(file) ?? null,
+    loadGeometry: async (file) => {
+      asked.push(file);
+      loaded.set(file, new Map());
+      return loaded.get(file);
+    },
+    presencesAt: () => [],
+    dependenciesOf: new Map(),
+  };
+  const layer = createPresencesLayer(group, { project: () => [0, 0] }, {
+    atlas: stub, onSelect: () => {}, defer: (fn) => waiting.push(fn),
+  });
+  const settle = () => new Promise((resolve) => { setTimeout(resolve, 0); });
+
+  assert.deepEqual(layer.render({ year: 1150 }), { drawn: 0, pending: true, failed: false });
+  await settle();
+  assert.deepEqual(asked, [], 'nothing was fetched inside the render');
+  assert.equal(waiting.length, 1, 'it was handed to the caller to schedule');
+  waiting.pop()();
+  await settle();
+  assert.deepEqual(asked, ['geo/presences/1150.json']);
+
+  // The second shard is a reader who is already looking at borders and
+  // waiting for the next ones: it goes at once.
+  layer.render({ year: 1250 });
+  await settle();
+  assert.deepEqual(asked, ['geo/presences/1150.json', 'geo/presences/1250.json']);
+  assert.deepEqual(waiting, []);
 });

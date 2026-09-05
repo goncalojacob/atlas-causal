@@ -27,7 +27,28 @@
 
 import { svg, svgTitle } from '../../util/dom.js';
 import { geometryPath } from './land.js';
+import { simplifyGeometry } from '../../util/simplify.js';
 import { formatInterval } from '../../util/dates.js';
+
+// How much border detail is worth drawing, by how far the reader has zoomed,
+// in degrees. The shards are written at the import's own tolerance and this
+// only ever takes more off, never puts detail back: at the whole world a
+// border drawn to a fifth of a degree is drawn to about a pixel, and the map
+// was turning 181 outlines at full detail into path strings on every change
+// of year (health review B, finding 24).
+//
+// The ladder is coarse on purpose — three rungs, so a path string is computed
+// at most three times per outline for the whole of a session, and the reader
+// crosses a rung about once per two-fold zoom either side of a country.
+const DETAIL = Object.freeze([
+  { upTo: 2, tolerance: 0.2 },
+  { upTo: 8, tolerance: 0.05 },
+  { upTo: Infinity, tolerance: 0 },
+]);
+
+export function detailFor(k) {
+  return DETAIL.find((rung) => k < rung.upTo) ?? DETAIL[DETAIL.length - 1];
+}
 
 const DEPENDENCY_LABEL = Object.freeze({
   colony: 'colony of',
@@ -65,10 +86,42 @@ export function presenceClasses(presence, { actorId, dependencyIds, hueOf = () =
   ].filter(Boolean).join(' ');
 }
 
-export function createPresencesLayer(group, projection, { onSelect, atlas, onFailed = null }) {
+// `defer` is how the first shard's fetch is put off until the land has been
+// drawn: the coastlines are in hand when the map is built and the borders are
+// 880 KB that nobody asked for yet, and fetching them inside the first render
+// held the first picture up behind them (health review B, finding 24). The
+// default runs it where it stands, which is what a caller with no frames to
+// wait for — a test — means by it; map.js passes one that waits for a paint.
+export function createPresencesLayer(group, projection, {
+  onSelect, atlas, onFailed = null, defer = (fn) => fn(),
+}) {
   // What the last render drew, so moving the band inside one period does not
   // rebuild two hundred paths on every tick.
   let signature = null;
+  // Whether a shard has ever been asked for. Only the first fetch is deferred;
+  // by the second the reader is looking at borders and waiting for them.
+  let asked = false;
+
+  // Path strings, by the outline they were projected from and the detail they
+  // were taken down to. The projection is fixed for the life of a map, but it
+  // is in the key all the same: a projection change is the one thing that
+  // would make every one of these wrong, and a cache that cannot say which
+  // projection it holds is a cache that survives one.
+  const projectionKey = [
+    projection.width, projection.height, projection.scale, ...(projection.center ?? []),
+  ].join(':');
+  const paths = new Map();
+  function pathFor(file, key, outline, tolerance) {
+    const id = `${projectionKey}|${file}|${key}|${tolerance}`;
+    if (paths.has(id)) return paths.get(id);
+    const geometry = simplifyGeometry(outline, { tolerance });
+    // An outline simplification erased entirely keeps its full detail: a state
+    // that vanished from the map at one zoom and came back at the next would
+    // be the level of detail telling the reader something false.
+    const d = geometryPath(geometry ?? outline, projection.project);
+    paths.set(id, d);
+    return d;
+  }
   // Which render asked for a shard: an older fetch arriving late must not
   // draw over a newer year.
   let token = 0;
@@ -96,7 +149,7 @@ export function createPresencesLayer(group, projection, { onSelect, atlas, onFai
     // year: astronomical, the window's far end; clamped by the atlas to the
     // last year the outlines cover. actorId: the selected actor, whose
     // territory and whose dependencies' territory are filled in.
-    render({ year: requested, actorId = null, onReady = null }) {
+    render({ year: requested, actorId = null, onReady = null, k = 1 }) {
       const year = atlas.territoryYear(requested);
       if (year === null) {
         group.replaceChildren();
@@ -115,12 +168,17 @@ export function createPresencesLayer(group, projection, { onSelect, atlas, onFai
         // usually the same map, and a blank flash would be worse than a
         // frame of staleness.
         const mine = (token += 1);
-        atlas.loadGeometry(shard.file).then(() => {
+        const fetchIt = () => atlas.loadGeometry(shard.file).then(() => {
           report(false);
           if (mine === token && onReady) onReady();
         }, () => {
           report(true);
         });
+        if (asked) fetchIt();
+        else {
+          asked = true;
+          defer(fetchIt);
+        }
         return { drawn: 0, pending: true, failed };
       }
 
@@ -129,7 +187,10 @@ export function createPresencesLayer(group, projection, { onSelect, atlas, onFai
         actorId ? (atlas.dependenciesOf.get(actorId) ?? []).map((p) => p.id) : [],
       );
       const isOfActor = (p) => p.actor === actorId || dependencyIds.has(p.id);
-      const key = `${shard.file}|${actorId ?? ''}|${visible.map((p) => p.id).join(',')}`;
+      // The detail is part of what the layer drew, so crossing a rung of the
+      // ladder redraws and moving within one does not.
+      const { tolerance } = detailFor(k);
+      const key = `${shard.file}|${actorId ?? ''}|${tolerance}|${visible.map((p) => p.id).join(',')}`;
       if (key === signature) return { drawn: visible.length, pending: false, failed };
       signature = key;
 
@@ -140,7 +201,7 @@ export function createPresencesLayer(group, projection, { onSelect, atlas, onFai
       for (const presence of order) {
         const outline = outlines.get(presence.geometry.key);
         if (!outline) continue;
-        const d = geometryPath(outline, projection.project);
+        const d = pathFor(shard.file, presence.geometry.key, outline, tolerance);
         if (!d) continue;
         group.appendChild(svg('path', {
           d,

@@ -315,8 +315,7 @@ export function createAtlas({
   // Who held territory in a given year. One presence per actor: two of an
   // actor's presences can share the year a border moved in, because a year
   // is the finest bound the model has, and the later one is the one to draw.
-  function presencesAt(requested) {
-    const year = territoryYear(requested);
+  function standingAt(year) {
     const chosen = new Map();
     for (const presence of activePresences) {
       const { min, max } = intervalExtent(presence.when);
@@ -325,6 +324,52 @@ export function createAtlas({
       if (!standing || intervalExtent(standing.when).min < min) chosen.set(presence.actor, presence);
     }
     return [...chosen.values()].sort((a, b) => (a.id < b.id ? -1 : a.id > b.id ? 1 : 0));
+  }
+
+  // --- the interval index ------------------------------------------------
+  //
+  // That scan ran over every presence on every render — 710 of them, once per
+  // tick of the timeline's band (health review B, finding 24). What changes
+  // from one year to the next is not a presence but the *set* of them, and
+  // the set can only change in a year some interval begins in or the year
+  // after one ends in. Those years are the boundaries below; between two of
+  // them every year has the same answer, so the answer is worked out once and
+  // kept. A query is then a binary search over the boundaries.
+  //
+  // It is an index over the intervals and not a bucket per year on purpose:
+  // a presence may have no end at all, and a year domain with an open end has
+  // no last bucket.
+  const boundaries = [...new Set(activePresences.flatMap((presence) => {
+    const { min, max } = intervalExtent(presence.when);
+    return max === null ? [min] : [min, max + 1];
+  }))].sort((a, b) => a - b);
+  const standingIn = new Map();
+
+  // The last boundary at or below the year, or −1 for a year before the first
+  // border on the map.
+  function segmentOf(year) {
+    let low = 0;
+    let high = boundaries.length - 1;
+    let found = -1;
+    while (low <= high) {
+      const mid = (low + high) >> 1;
+      if (boundaries[mid] <= year) {
+        found = mid;
+        low = mid + 1;
+      } else high = mid - 1;
+    }
+    return found;
+  }
+
+  function presencesAt(requested) {
+    const year = territoryYear(requested);
+    // A caller with no window at all has asked about no year, and there are
+    // no borders in no year. The scan this replaced answered the same way.
+    const segment = year === null ? -1 : segmentOf(year);
+    if (segment < 0) return [];
+    if (!standingIn.has(segment)) standingIn.set(segment, standingAt(boundaries[segment]));
+    // A copy, because the caller before this had one of its own to sort.
+    return [...standingIn.get(segment)];
   }
 
   return {
