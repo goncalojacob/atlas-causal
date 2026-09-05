@@ -670,8 +670,11 @@ export function valuesFromRecord(kind, record) {
 // Retract's to change and `revised` Sign's, and the id is immutable once
 // merged — everything that points at this record points at that string.
 // `review` is on the list for the same reason: it says what still wants
-// checking, and only signing the record answers it.
-const ENVELOPE_KEYS = Object.freeze(['schema', 'id', 'kind', 'status', 'supersededBy', 'aliases', 'authors', 'license', 'created', 'revised', 'review']);
+// checking, and only signing the record answers it. `origin` is the writer
+// that created the record, which no later edit can change, and `retraction`
+// is the record's own history, which nothing deletes — an editor that could
+// drop either would be the hole this allowlist exists to close.
+const ENVELOPE_KEYS = Object.freeze(['schema', 'id', 'kind', 'status', 'supersededBy', 'aliases', 'authors', 'license', 'created', 'revised', 'review', 'origin', 'retraction']);
 
 // The identity fields no form writes. They are read off Wikidata by the
 // import, so a save through the contribution form or the review dashboard

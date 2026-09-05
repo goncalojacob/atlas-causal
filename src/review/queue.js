@@ -37,7 +37,12 @@ export function isDraft(record) {
 // out because a digest carries no prose and so has no dispute block to read
 // them out of, and the second says whether the full entry has been written,
 // for the same reason — the entry is the longest prose there is.
-export const DIGEST_KEYS = Object.freeze(['kind', 'id', 'status', 'authors', 'review', 'title', 'names', 'from', 'to', 'type', 'isbn', 'doi', 'cites', 'entry']);
+// `origin` and `retraction` ride here beside `review`: the first is what the
+// queue and the dashboard filter on once "unreviewed" stops being a name in
+// `authors`, and the second is why a tombstone in the list is one — a digest
+// that carried neither would send the dashboard back to the record files for
+// the two questions it asks most.
+export const DIGEST_KEYS = Object.freeze(['kind', 'id', 'status', 'authors', 'review', 'origin', 'retraction', 'title', 'names', 'from', 'to', 'type', 'isbn', 'doi', 'cites', 'entry']);
 
 // True of a record whose full entry has been written, and of the digest that
 // stands for one: on a record it is the prose itself, on a digest the `entry`
