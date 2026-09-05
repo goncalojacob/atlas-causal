@@ -3501,6 +3501,18 @@ gave that to the map and the timeline, and M25 did not widen it.
      empty until the file arrives and whatever is in the box is answered the
      moment it does. Found as a flaking browser test, which is what it would
      have been for a reader on a slow connection.
+226. **`?v=` is the day the file was written, not only `revised`.** The
+     brief says records are served with `?v=<revised>`. 80 of the 329 events
+     have never been corrected and carry `revised: null`, so a literal
+     reading would have left a quarter of the dataset with no version at
+     all — exactly the records a cache is most likely to be holding a stale
+     copy of. The index writes `revised ?? created`, under the name
+     `revised`, and a record with neither is asked for without a version as
+     every record was before this run. `revised` goes on the five kinds a
+     card fetches — event, edge, actor, place, narrative — and not on
+     presences and relations, which have no file anybody fetches: about
+     18 KB of spine not spent. The edge tuple is six elements now, not five
+     (A2), because an edge's argument is fetched like any other record.
 
 ## Dates to verify
 

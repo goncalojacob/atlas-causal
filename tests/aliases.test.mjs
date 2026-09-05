@@ -121,7 +121,7 @@ test('a citation by a source\'s former id is filed under the id the source answe
 });
 
 test('a narrative step by a former id opens the record it is about', async () => {
-  const fetchJson = async (url) => JSON.parse(await readFile(path.join(FIXTURE_DATA, '..', '..', '..', url), 'utf8'));
+  const fetchJson = async (url) => JSON.parse(await readFile(path.join(FIXTURE_DATA, '..', '..', '..', url.split('?')[0]), 'utf8'));
   const atlas = await loadAtlas({ dataRoot: 'tests/fixtures/data/', fetchJson });
 
   const step = resolveRef(atlas, 'fixture-event-b-old');

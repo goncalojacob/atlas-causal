@@ -6,12 +6,15 @@ import { createAtlas, loadAtlas } from '../src/data.js';
 import { FIXTURE_DATA } from './helpers.mjs';
 
 // A fetchJson over the fixture directory, so loadAtlas runs without a
-// browser and the on-demand record fetch can be observed.
+// browser and the on-demand record fetch can be observed. The query string
+// is dropped before the path is read, as every server does with one: since
+// H3b a record is asked for as `<id>.json?v=<revised>`, and the `?v=` is a
+// hint to the cache and not part of the file's name (data.js).
+const onDisk = (url) => path.join(FIXTURE_DATA, '..', '..', '..', url.split('?')[0]);
 const calls = [];
 async function fetchJson(url) {
   calls.push(url);
-  const file = path.join(FIXTURE_DATA, '..', '..', '..', url);
-  return JSON.parse(await readFile(file, 'utf8'));
+  return JSON.parse(await readFile(onDisk(url), 'utf8'));
 }
 
 test('loadAtlas reads the manifest, both indexes, and record text on demand', async () => {
@@ -30,7 +33,7 @@ test('loadAtlas reads the manifest, both indexes, and record text on demand', as
   assert.equal(record.summary.startsWith('Synthetic record'), true);
   await atlas.record('event', 'fixture-event-a');
   assert.equal(calls.length, before + 1, 'cached');
-  assert.equal(calls[before], 'tests/fixtures/data/events/fixture-event-a.json');
+  assert.match(calls[before], /^tests\/fixtures\/data\/events\/fixture-event-a\.json\?v=\d{4}-\d{2}-\d{2}$/);
 });
 
 test('resolve follows aliases and merged tombstones', async () => {
@@ -126,8 +129,8 @@ test('a record that failed to load is fetched again the next time it is asked fo
   let fail = true;
   const flaky = async (url) => {
     asked.push(url);
-    if (fail && url.endsWith('fixture-event-a.json')) throw new Error('offline');
-    return JSON.parse(await readFile(path.join(FIXTURE_DATA, '..', '..', '..', url), 'utf8'));
+    if (fail && url.includes('fixture-event-a.json')) throw new Error('offline');
+    return JSON.parse(await readFile(onDisk(url), 'utf8'));
   };
   const atlas = await loadAtlas({ dataRoot: 'tests/fixtures/data/', fetchJson: flaky });
 

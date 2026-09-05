@@ -25,10 +25,13 @@ const read = async (dir, rel) => JSON.parse(await readFile(path.join(dir, rel), 
 
 // A fetchJson over a directory, counting what it was asked for, so the
 // caching can be observed rather than assumed.
+// The query string goes before the path is read, as a server drops it: a
+// record is asked for as `<id>.json?v=<revised>` since H3b, and the `?v=` is
+// a hint to the cache rather than part of the file's name (data.js).
 function reader(dir, calls) {
   return async (url) => {
     calls.push(url);
-    return read(dir, url.replace(/^[a-z/-]*?(?=index\/|geo\/|events\/)/, ''));
+    return read(dir, url.split('?')[0].replace(/^[a-z/-]*?(?=index\/|geo\/|events\/)/, ''));
   };
 }
 
@@ -257,8 +260,10 @@ test('createAtlasFromSpine takes the pieces loadSpine hands it', async () => {
   assert.equal(atlas.activeEvents.length, 11);
   assert.equal(atlas.sources.size, 4);
   assert.deepEqual(atlas.extent, { min: 1200, max: 1300 });
-  // Record text is still fetched on demand and is not in any index file.
+  // Record text is still fetched on demand and is not in any index file —
+  // asked for with the day the record was last written, which the spine
+  // carries for exactly this (H3b).
   const record = await atlas.record('event', 'fixture-event-a');
   assert.equal(record.summary.startsWith('Synthetic record'), true);
-  assert.equal(calls.at(-1), 'tests/fixtures/data/events/fixture-event-a.json');
+  assert.match(calls.at(-1), /^tests\/fixtures\/data\/events\/fixture-event-a\.json\?v=\d{4}-\d{2}-\d{2}$/);
 });

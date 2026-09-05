@@ -167,3 +167,19 @@ test('the source card fetches its own citer file and draws the rows', { skip }, 
     await waitFor(page, 'return document.querySelectorAll(".panel .citers .actor-row").length > 200;', 'the rest of the rows');
   });
 });
+
+// A record file is served under its own name — `entry.html?id=` is the
+// address and a hashed name would break it — so `?v=<revised>` is what tells
+// a cache that a corrected record is a different file from the one it kept.
+test('a record is fetched with the day it was last revised', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await open(page, url('index.html?selected=carnation-revolution-1974'), 'return document.querySelectorAll(".panel .card-section").length > 0;');
+    await waitFor(page, 'return performance.getEntriesByType("resource").some((e) => e.name.includes("/events/carnation-revolution-1974.json"));', 'the record');
+    const asked = await page.eval(`return performance.getEntriesByType("resource")
+      .map((e) => e.name).filter((n) => n.includes("/data/events/") || n.includes("/data/edges/"));`);
+    assert.ok(asked.length > 0, 'the card fetched its record');
+    for (const name of asked) {
+      assert.match(name, /\.json\?v=\d{4}-\d{2}-\d{2}$/, name);
+    }
+  });
+});

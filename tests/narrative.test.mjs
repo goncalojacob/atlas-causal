@@ -16,7 +16,7 @@ import {
 import { FIXTURE_DATA } from './helpers.mjs';
 
 async function fetchJson(url) {
-  return JSON.parse(await readFile(path.join(FIXTURE_DATA, '..', '..', '..', url), 'utf8'));
+  return JSON.parse(await readFile(path.join(FIXTURE_DATA, '..', '..', '..', url.split('?')[0]), 'utf8'));
 }
 
 const atlasPromise = loadAtlas({ dataRoot: 'tests/fixtures/data/', fetchJson });

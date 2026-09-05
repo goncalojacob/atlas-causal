@@ -192,6 +192,18 @@ export function citerFiles(sources) {
     .map((source) => ({ id: source.id, citations: source.citations }));
 }
 
+// The day a record's file was last written, which is what a card asks for it
+// with: `?v=<revised>` is a hint to the browser's cache and never part of the
+// address, since `entry.html?id=` is the address and a hashed file name would
+// break it (H3b). `revised` is null on a record nobody has corrected yet, and
+// `created` is then the day the file was written; a record with neither is
+// asked for without a version, exactly as every record was before H3b. Only
+// the five kinds a card fetches carry it into the index.
+function versionOf(record) {
+  const day = record.revised ?? record.created ?? null;
+  return typeof day === 'string' ? day : null;
+}
+
 // The identity a record claims, for the topology. `wikidata` is carried
 // because rule 21's uniqueness has to hold against the whole atlas and not
 // only against the bundle in hand, and `wikipedia` because the card offers
@@ -242,6 +254,7 @@ export function buildTopology(records, regions, { deriveRegion } = {}) {
       id: r.id,
       name: (r.names ?? [])[0] ?? r.id,
       names: r.names ?? [],
+      revised: versionOf(r),
       where: isObject(r.where) ? r.where : null,
       ...laneOf(r, r.where, deriveRegion),
       ...identityOf(r),
@@ -263,6 +276,7 @@ export function buildTopology(records, regions, { deriveRegion } = {}) {
       events.push({
         id: r.id,
         title: r.title,
+        revised: versionOf(r),
         when: r.when,
         place: typeof r.place === 'string' ? r.place : null,
         region,
@@ -278,6 +292,7 @@ export function buildTopology(records, regions, { deriveRegion } = {}) {
         id: r.id,
         from: r.from,
         to: r.to,
+        revised: versionOf(r),
         type: r.type,
         confidence: r.confidence,
         status: r.status,
@@ -295,6 +310,7 @@ export function buildTopology(records, regions, { deriveRegion } = {}) {
         actorType: r.actorType,
         name: (r.names ?? [])[0] ?? r.id,
         names: r.names ?? [],
+        revised: versionOf(r),
         when: r.when,
         ...identityOf(r),
         status: r.status,
@@ -325,6 +341,7 @@ export function buildTopology(records, regions, { deriveRegion } = {}) {
       narratives.push({
         id: r.id,
         title: r.title,
+        revised: versionOf(r),
         summary: r.summary,
         authors: r.authors ?? [],
         window: isObject(r.window) ? r.window : null,
@@ -417,7 +434,7 @@ export function buildTopology(records, regions, { deriveRegion } = {}) {
 // the card's head and meta line are built from and nothing else (A10). The
 // label is kept whatever its kind calls it: a merged actor with no name
 // would give the panel nothing to say it was merged *from* (deviation 215).
-const TOMBSTONE_KEYS = new Set(['id', 'kind', 'status', 'supersededBy', 'aliases', 'wikidata', 'title', 'name', 'names', 'when', 'place', 'region']);
+const TOMBSTONE_KEYS = new Set(['id', 'kind', 'status', 'supersededBy', 'aliases', 'wikidata', 'title', 'name', 'names', 'when', 'place', 'region', 'revised']);
 
 function spineEntry(entry) {
   if (entry.status === 'active') return entry;
@@ -434,19 +451,23 @@ function envelopeOf(record, kind) {
 }
 
 // An edge id is `from--to--type` on every one of them, so the tuple carries
-// no id and the loader synthesises it. Five elements, not four: `status` is
-// what keeps a retracted argument out of consequences, convergence and the
-// shortest path (A2). An edge that carries an alias or a merge hop cannot be
-// said in five slots and is written whole instead; the loader takes either.
-// `edgeId` itself is in `vocab.js`, beside the pattern it is the inverse of.
+// no id and the loader synthesises it. Six elements: `status` is what keeps a
+// retracted argument out of consequences, convergence and the shortest path
+// (A2), and `revised` is what an edge's own file is asked for with, since
+// H3b serves every record `?v=<revised>` and the panel fetches an edge's
+// argument like any other record. An edge that carries an alias or a merge
+// hop cannot be said in six slots and is written whole instead; the loader
+// takes either. `edgeId` itself is in `vocab.js`, beside the pattern it is
+// the inverse of.
 function edgeInSpine(edge) {
   const named = edge.id === edgeId(edge);
   if (named && !edge.supersededBy && (edge.aliases ?? []).length === 0) {
-    return [edge.from, edge.to, edge.type, edge.confidence, edge.status];
+    return [edge.from, edge.to, edge.type, edge.confidence, edge.status, edge.revised ?? null];
   }
   const out = {
     from: edge.from, to: edge.to, type: edge.type, confidence: edge.confidence,
-    status: edge.status, supersededBy: edge.supersededBy ?? null, aliases: edge.aliases ?? [],
+    status: edge.status, revised: edge.revised ?? null,
+    supersededBy: edge.supersededBy ?? null, aliases: edge.aliases ?? [],
   };
   if (!named) out.id = edge.id;
   return out;
@@ -460,6 +481,7 @@ export function buildSpine(topology) {
     events: (topology.events ?? []).map((e) => spineEntry({
       ...envelopeOf(e, 'event'),
       title: e.title,
+      revised: e.revised ?? null,
       when: e.when,
       place: e.place,
       region: e.region,
@@ -471,6 +493,7 @@ export function buildSpine(topology) {
     actors: (topology.actors ?? []).map((a) => spineEntry({
       ...envelopeOf(a, 'actor'),
       name: a.name,
+      revised: a.revised ?? null,
       names: a.names ?? [],
       actorType: a.actorType,
       when: a.when,
@@ -479,6 +502,7 @@ export function buildSpine(topology) {
     places: (topology.places ?? []).map((p) => spineEntry({
       ...envelopeOf(p, 'place'),
       name: p.name,
+      revised: p.revised ?? null,
       names: p.names ?? [],
       where: p.where,
       region: p.region,
@@ -507,6 +531,7 @@ export function buildSpine(topology) {
     narratives: (topology.narratives ?? []).map((n) => spineEntry({
       ...envelopeOf(n, 'narrative'),
       title: n.title,
+      revised: n.revised ?? null,
       summary: n.summary,
       authors: n.authors ?? [],
       window: n.window ?? null,

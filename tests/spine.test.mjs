@@ -1,7 +1,7 @@
 // The spine: the projection of the topology every page will read whole once
 // H3b moves the pages over. Held here to the field table in
 // docs/health/h3a-brief.md (A3), to `when` carried verbatim (A1), to the
-// five-element edge tuple (A2) and to the tombstone list (A10) — over the
+// edge tuple (A2) and to the tombstone list (A10) — over the
 // fixtures and over the repository's own data, because the two disagree
 // about which shapes exist: only the fixtures hold a retracted edge, only
 // the repository holds a merged event.
@@ -39,15 +39,21 @@ async function atlasOf(dataDir) {
 }
 
 const ENVELOPE = ['id', 'kind', 'status', 'supersededBy', 'aliases'];
+// `revised` is on the five kinds a card fetches the record file of — the
+// four here plus the edge tuple's sixth slot — because that is what the file
+// is asked for with (`?v=`, H3b). A presence and a relation have no file
+// anybody fetches, so they do not carry it.
 const FIELDS = {
-  event: [...ENVELOPE, 'wikidata', 'wikipedia', 'title', 'when', 'place', 'region', 'weight', 'actors', 'citesCount'],
-  actor: [...ENVELOPE, 'wikidata', 'wikipedia', 'name', 'names', 'actorType', 'when', 'citesCount'],
-  place: [...ENVELOPE, 'wikidata', 'wikipedia', 'name', 'names', 'where', 'region', 'citesCount'],
+  event: [...ENVELOPE, 'wikidata', 'wikipedia', 'title', 'revised', 'when', 'place', 'region', 'weight', 'actors', 'citesCount'],
+  actor: [...ENVELOPE, 'wikidata', 'wikipedia', 'name', 'names', 'revised', 'actorType', 'when', 'citesCount'],
+  place: [...ENVELOPE, 'wikidata', 'wikipedia', 'name', 'names', 'revised', 'where', 'region', 'citesCount'],
   presence: [...ENVELOPE, 'wikidata', 'wikipedia', 'actor', 'when', 'geometry', 'dependencyOf', 'dependencyKind', 'capital', 'confidence'],
   relation: [...ENVELOPE, 'wikidata', 'wikipedia', 'from', 'to', 'type', 'when', 'note'],
-  narrative: [...ENVELOPE, 'wikidata', 'wikipedia', 'title', 'summary', 'authors', 'window', 'steps'],
+  narrative: [...ENVELOPE, 'wikidata', 'wikipedia', 'title', 'revised', 'summary', 'authors', 'window', 'steps'],
 };
-const TOMBSTONE = ['id', 'kind', 'status', 'supersededBy', 'aliases', 'wikidata', 'title', 'name', 'names', 'when', 'place', 'region'];
+// A tombstone is fetched like any other record — 175 retracted events reach
+// a card with their own fields — so it keeps `revised` too.
+const TOMBSTONE = ['id', 'kind', 'status', 'supersededBy', 'aliases', 'wikidata', 'title', 'name', 'names', 'when', 'place', 'region', 'revised'];
 
 // Against the registry, not against a list written twice: a ninth kind is
 // one entry in src/kinds.js, and it must not be able to arrive with nowhere
@@ -123,7 +129,7 @@ for (const [label, dir] of [['the fixtures', FIXTURE_DATA], ['the repository', D
     for (const [i, tuple] of spine.edges.entries()) {
       const edge = topology.edges[i];
       assert.ok(Array.isArray(tuple), `${edge.id} is not a tuple`);
-      assert.deepEqual(tuple, [edge.from, edge.to, edge.type, edge.confidence, edge.status]);
+      assert.deepEqual(tuple, [edge.from, edge.to, edge.type, edge.confidence, edge.status, edge.revised ?? null]);
       assert.equal(edgeId({ from: tuple[0], to: tuple[1], type: tuple[2] }), edge.id);
     }
   });
@@ -148,7 +154,7 @@ for (const [label, dir] of [['the fixtures', FIXTURE_DATA], ['the repository', D
   });
 }
 
-// A2 again: the two shapes that cannot be said in five slots. Neither exists
+// A2 again: the two shapes that cannot be said in six slots. Neither exists
 // in either dataset today — no edge has ever been renamed or merged — and
 // both are what keeps an old ?chain= URL opening, so they are made here.
 test('an edge with an alias or a merge hop is written whole', async () => {
@@ -158,7 +164,7 @@ test('an edge with an alias or a merge hop is written whole', async () => {
   const aliased = buildSpine({ ...topology, edges: [{ ...edge, aliases: ['fixture-old-edge-id'] }] });
   assert.deepEqual(aliased.edges[0], {
     from: edge.from, to: edge.to, type: edge.type, confidence: edge.confidence,
-    status: edge.status, supersededBy: null, aliases: ['fixture-old-edge-id'],
+    status: edge.status, revised: edge.revised ?? null, supersededBy: null, aliases: ['fixture-old-edge-id'],
   });
   const merged = buildSpine({ ...topology, edges: [{ ...edge, status: 'merged', supersededBy: 'a--b--caused' }] });
   assert.equal(merged.edges[0].supersededBy, 'a--b--caused');

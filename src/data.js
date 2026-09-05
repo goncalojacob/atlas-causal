@@ -139,11 +139,23 @@ export function createAtlas({
   // session: the card would say "Could not load the record text" and never
   // ask again, however many times the reader opened the record. So the entry
   // goes when the promise rejects, and the next attempt really is one.
+  //
+  // `?v=<revised>` since H3b: the day the record file was last written, off
+  // the index the page is already holding. A record file is served under its
+  // own name and has to be, because `entry.html?id=` is the address and a
+  // hashed name would break it — so the query string is what tells a cache
+  // that this is a different file from the one it kept. A record the index
+  // has no `revised` for is asked for without one, which is what it was
+  // before: the parameter is a hint to the cache and never part of the
+  // address (ARCHITECTURE.md, "Index and manifest").
+  const byKind = new Map(kinds);
   const cache = new Map();
   function record(kind, id) {
     const key = `${kind}/${id}`;
     if (!cache.has(key)) {
-      const pending = fetchJson(`${dataRoot}${kind}s/${encodeURIComponent(id)}.json`).catch((error) => {
+      const revised = byKind.get(kind)?.get(id)?.revised ?? null;
+      const version = typeof revised === 'string' ? `?v=${encodeURIComponent(revised)}` : '';
+      const pending = fetchJson(`${dataRoot}${kind}s/${encodeURIComponent(id)}.json${version}`).catch((error) => {
         // Only if it is still this attempt's: a later one may have replaced it.
         if (cache.get(key) === pending) cache.delete(key);
         throw error;
@@ -375,14 +387,18 @@ export function createAtlas({
 // tuple, `regionMethod` and `presenceType` are gone because nothing draws
 // them, and a record says how many citations it makes on itself.
 
-// Five slots when the id is `from--to--type` and the edge carries neither an
+// Six slots when the id is `from--to--type` and the edge carries neither an
 // alias nor a merge hop; the whole object when it is not, because those two
-// feed the alias map and `resolve()`'s merge hop and cannot be said in five
-// slots. The loader takes either (h3a-brief, A2).
+// feed the alias map and `resolve()`'s merge hop and cannot be said in six
+// slots. The loader takes either (h3a-brief, A2). The sixth is `revised`,
+// which is what the edge's own file is asked for with.
 function edgeFromSpine(entry) {
   if (!Array.isArray(entry)) return { ...entry, id: entry.id ?? edgeId(entry) };
-  const [from, to, type, confidence, status] = entry;
-  return { id: edgeId({ from, to, type }), from, to, type, confidence, status, supersededBy: null, aliases: [] };
+  const [from, to, type, confidence, status, revised = null] = entry;
+  return {
+    id: edgeId({ from, to, type }), from, to, type, confidence, status, revised,
+    supersededBy: null, aliases: [],
+  };
 }
 
 function topologyFromSpine(spine) {

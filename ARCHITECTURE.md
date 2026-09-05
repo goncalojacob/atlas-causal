@@ -1418,7 +1418,17 @@ consequences, ancestors and convergence need the whole graph; loading a
 window would make convergence return a subset and present it as complete —
 exactly the determinism the query exists to prevent. Record text
 (`summary`, `explanation`, `dispute`) is fetched on demand from the record
-file. `build-index.mjs` is deterministic: recursive key sort, code-unit
+file, **as `<id>.json?v=<revised>`** since H3b: an index file is named by a
+hash and served `immutable`, but a record file is served under its own name
+and has to be, because `entry.html?id=` is the address. The query string is
+what tells a cache that a corrected record is a different file from the one
+it kept; it is a hint to the cache and never part of the address, and a
+record the index has no date for is asked for without one. `revised` is the
+day the file was last written — the record's `revised`, or its `created`
+where nobody has corrected it yet — and it is in the index for the five kinds
+a card actually fetches: event, edge, actor, place, narrative. A presence and
+a relation have no file anybody fetches and do not carry it.
+`build-index.mjs` is deterministic: recursive key sort, code-unit
 string comparison, trailing newline, tested for byte-identical output.
 
 Every topology event also carries **`weight`**: the number of active edges
@@ -1444,13 +1454,13 @@ unchanged; the pages move over one at a time in H3b.
 
 | Kind | And |
 |---|---|
-| event | `title`, `when` (verbatim), `place`, `region`, `weight`, `actors` as `[{ actor, role }]`, `citesCount` |
-| edge | `[from, to, type, confidence, status]` — five elements, the id synthesised as `from--to--type` on load |
-| actor | `name`, `names`, `actorType`, `when`, `citesCount` |
-| place | `name`, `names`, `where`, `region`, `citesCount` |
+| event | `title`, `revised`, `when` (verbatim), `place`, `region`, `weight`, `actors` as `[{ actor, role }]`, `citesCount` |
+| edge | `[from, to, type, confidence, status, revised]` — six elements, the id synthesised as `from--to--type` on load |
+| actor | `name`, `names`, `revised`, `actorType`, `when`, `citesCount` |
+| place | `name`, `names`, `revised`, `where`, `region`, `citesCount` |
 | presence | `actor`, `when`, `geometry.key`, `dependencyOf`, `dependencyKind`, `capital`, `confidence` |
 | relation | `from`, `to`, `type`, `when`, `note` |
-| narrative | `title`, `summary`, `authors`, `window`, `steps` (refs only) |
+| narrative | `title`, `revised`, `summary`, `authors`, `window`, `steps` (refs only) |
 
 Four things the spine does **not** do. It never reduces `when` to a pair of
 years: fourteen readers want the object, two of them validator rules that run
@@ -1473,8 +1483,10 @@ that an atlas built from either answers alike once the citer rows the browser
 used to count are no longer in any file it holds. **`citationCount`**, on a
 source, is how many records cite it. A tombstone
 carries neither: it keeps `title`, `when`, `place`, `region`, `wikidata`,
-`status`, `supersededBy`, `aliases` and its kind's own label, which is what a
-retracted card's head and meta line are built from, and nothing else.
+`status`, `supersededBy`, `aliases`, `revised` and its kind's own label, which
+is what a retracted card's head and meta line are built from, plus what its
+own file is asked for with — 175 retracted events reach a card — and nothing
+else.
 
 The citers are one hashed **directory**, not a hashed file each: `manifest.json`
 is fetched `no-store` on every page load, and a line per source would be

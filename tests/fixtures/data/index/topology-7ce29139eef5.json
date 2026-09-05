@@ -10,6 +10,7 @@
         "Fixture Actor One",
         "Fixture the Elder"
       ],
+      "revised": "2026-01-01",
       "status": "active",
       "supersededBy": null,
       "when": {
@@ -31,6 +32,7 @@
         "Fixture Institution Two",
         "FIT"
       ],
+      "revised": "2026-01-01",
       "status": "active",
       "supersededBy": null,
       "when": {
@@ -47,6 +49,7 @@
       "names": [
         "Fixture Polity Four"
       ],
+      "revised": "2026-01-01",
       "status": "active",
       "supersededBy": null,
       "when": {
@@ -64,6 +67,7 @@
         "Fixture Polity Three",
         "FP3"
       ],
+      "revised": "2026-01-01",
       "status": "active",
       "supersededBy": null,
       "when": {
@@ -78,6 +82,7 @@
       "confidence": "probable",
       "from": "fixture-event-a",
       "id": "fixture-event-a--fixture-event-a2--enabled",
+      "revised": "2026-01-01",
       "status": "active",
       "supersededBy": null,
       "to": "fixture-event-a2",
@@ -88,6 +93,7 @@
       "confidence": "consensus",
       "from": "fixture-event-a",
       "id": "fixture-event-a--fixture-event-b--caused",
+      "revised": "2026-01-01",
       "status": "active",
       "supersededBy": null,
       "to": "fixture-event-b",
@@ -98,6 +104,7 @@
       "confidence": "probable",
       "from": "fixture-event-b",
       "id": "fixture-event-b--fixture-event-d--enabled",
+      "revised": "2026-01-01",
       "status": "active",
       "supersededBy": null,
       "to": "fixture-event-d",
@@ -108,6 +115,7 @@
       "confidence": "consensus",
       "from": "fixture-event-c",
       "id": "fixture-event-c--fixture-event-t--precondition-of",
+      "revised": "2026-01-01",
       "status": "active",
       "supersededBy": null,
       "to": "fixture-event-t",
@@ -118,6 +126,7 @@
       "confidence": "probable",
       "from": "fixture-event-d",
       "id": "fixture-event-d--fixture-event-t--caused",
+      "revised": "2026-01-01",
       "status": "active",
       "supersededBy": null,
       "to": "fixture-event-t",
@@ -128,6 +137,7 @@
       "confidence": "probable",
       "from": "fixture-event-e",
       "id": "fixture-event-e--fixture-event-c--inspired",
+      "revised": "2026-01-01",
       "status": "active",
       "supersededBy": null,
       "to": "fixture-event-c",
@@ -138,6 +148,7 @@
       "confidence": "probable",
       "from": "fixture-event-e",
       "id": "fixture-event-e--fixture-event-t--inspired",
+      "revised": "2026-01-01",
       "status": "retracted",
       "supersededBy": null,
       "to": "fixture-event-t",
@@ -148,6 +159,7 @@
       "confidence": "probable",
       "from": "fixture-event-f",
       "id": "fixture-event-f--fixture-event-t--reacted-to",
+      "revised": "2026-01-01",
       "status": "active",
       "supersededBy": null,
       "to": "fixture-event-t",
@@ -158,6 +170,7 @@
       "confidence": "disputed",
       "from": "fixture-event-g",
       "id": "fixture-event-g--fixture-event-t--caused",
+      "revised": "2026-01-01",
       "status": "active",
       "supersededBy": null,
       "to": "fixture-event-t",
@@ -168,6 +181,7 @@
       "confidence": "probable",
       "from": "fixture-event-o",
       "id": "fixture-event-o--fixture-event-e--enabled",
+      "revised": "2026-01-01",
       "status": "active",
       "supersededBy": null,
       "to": "fixture-event-e",
@@ -188,6 +202,7 @@
       "place": "fixture-place-a",
       "region": "fixture-lane-1",
       "regionMethod": "inside",
+      "revised": "2026-01-01",
       "status": "active",
       "supersededBy": null,
       "title": "Fixture event A",
@@ -211,6 +226,7 @@
       "place": "fixture-place-a2",
       "region": "fixture-lane-1",
       "regionMethod": "inside",
+      "revised": "2026-01-01",
       "status": "active",
       "supersededBy": null,
       "title": "Fixture event A2",
@@ -240,6 +256,7 @@
       "place": "fixture-place-b",
       "region": "fixture-lane-1",
       "regionMethod": "inside",
+      "revised": "2026-01-01",
       "status": "active",
       "supersededBy": null,
       "title": "Fixture event B",
@@ -257,6 +274,7 @@
       "place": "fixture-place-c",
       "region": "fixture-lane-2",
       "regionMethod": "inside",
+      "revised": "2026-01-01",
       "status": "active",
       "supersededBy": null,
       "title": "Fixture event C",
@@ -274,6 +292,7 @@
       "place": "fixture-place-d",
       "region": "fixture-lane-3",
       "regionMethod": "inside",
+      "revised": "2026-01-01",
       "status": "active",
       "supersededBy": null,
       "title": "Fixture event D",
@@ -291,6 +310,7 @@
       "place": "fixture-place-e",
       "region": "fixture-lane-2",
       "regionMethod": "inside",
+      "revised": "2026-01-01",
       "status": "active",
       "supersededBy": null,
       "title": "Fixture event E",
@@ -308,6 +328,7 @@
       "place": null,
       "region": "fixture-lane-3",
       "regionMethod": "override",
+      "revised": "2026-01-01",
       "status": "active",
       "supersededBy": null,
       "title": "Fixture event F",
@@ -325,6 +346,7 @@
       "place": "fixture-place-g",
       "region": "fixture-lane-1",
       "regionMethod": "inside",
+      "revised": "2026-01-01",
       "status": "active",
       "supersededBy": null,
       "title": "Fixture event G",
@@ -345,6 +367,7 @@
       "place": "fixture-place-h",
       "region": "fixture-lane-1",
       "regionMethod": "inside",
+      "revised": "2026-01-01",
       "status": "active",
       "supersededBy": null,
       "title": "Fixture event H",
@@ -362,6 +385,7 @@
       "place": "fixture-place-m",
       "region": "fixture-lane-1",
       "regionMethod": "nearest",
+      "revised": "2026-01-01",
       "status": "merged",
       "supersededBy": "fixture-event-b",
       "title": "Fixture event M",
@@ -379,6 +403,7 @@
       "place": "fixture-place-o",
       "region": "fixture-lane-2",
       "regionMethod": "override",
+      "revised": "2026-01-01",
       "status": "active",
       "supersededBy": null,
       "title": "Fixture event O",
@@ -401,6 +426,7 @@
       "place": "fixture-place-t",
       "region": "fixture-lane-3",
       "regionMethod": "inside",
+      "revised": "2026-01-01",
       "status": "active",
       "supersededBy": null,
       "title": "Fixture event T",
@@ -421,6 +447,7 @@
         }
       ],
       "id": "fixture-narrative-one",
+      "revised": "2026-01-01",
       "status": "active",
       "steps": [
         {
@@ -456,6 +483,7 @@
       ],
       "region": "fixture-lane-1",
       "regionMethod": "inside",
+      "revised": "2026-09-03",
       "status": "active",
       "supersededBy": null,
       "where": {
@@ -479,6 +507,7 @@
       ],
       "region": "fixture-lane-1",
       "regionMethod": "inside",
+      "revised": "2026-09-03",
       "status": "active",
       "supersededBy": null,
       "where": {
@@ -498,6 +527,7 @@
       ],
       "region": "fixture-lane-1",
       "regionMethod": "inside",
+      "revised": "2026-09-03",
       "status": "active",
       "supersededBy": null,
       "where": {
@@ -517,6 +547,7 @@
       ],
       "region": "fixture-lane-2",
       "regionMethod": "inside",
+      "revised": "2026-09-03",
       "status": "active",
       "supersededBy": null,
       "where": {
@@ -536,6 +567,7 @@
       ],
       "region": "fixture-lane-3",
       "regionMethod": "inside",
+      "revised": "2026-09-03",
       "status": "active",
       "supersededBy": null,
       "where": {
@@ -555,6 +587,7 @@
       ],
       "region": "fixture-lane-2",
       "regionMethod": "inside",
+      "revised": "2026-09-03",
       "status": "active",
       "supersededBy": null,
       "where": {
@@ -574,6 +607,7 @@
       ],
       "region": "fixture-lane-1",
       "regionMethod": "inside",
+      "revised": "2026-09-03",
       "status": "active",
       "supersededBy": null,
       "where": {
@@ -593,6 +627,7 @@
       ],
       "region": "fixture-lane-1",
       "regionMethod": "inside",
+      "revised": "2026-09-03",
       "status": "active",
       "supersededBy": null,
       "where": {
@@ -612,6 +647,7 @@
       ],
       "region": "fixture-lane-1",
       "regionMethod": "nearest",
+      "revised": "2026-09-03",
       "status": "active",
       "supersededBy": null,
       "where": {
@@ -631,6 +667,7 @@
       ],
       "region": "fixture-lane-2",
       "regionMethod": "override",
+      "revised": "2026-09-03",
       "status": "active",
       "supersededBy": null,
       "where": {
@@ -650,6 +687,7 @@
       ],
       "region": "fixture-lane-3",
       "regionMethod": "inside",
+      "revised": "2026-09-03",
       "status": "active",
       "supersededBy": null,
       "where": {
