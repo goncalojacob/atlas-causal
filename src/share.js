@@ -8,6 +8,8 @@
 // the repository. This is the drawing, at the moment it was looked at.
 
 import { REPOSITORY, CORRECTION_TEMPLATE } from './contribute/submit.js';
+import { CONTRIBUTED_KINDS } from './kinds.js';
+import { SLUG, EDGE_ID, RELATION_ID } from './validate/rules.js';
 
 // A correction issue about one record, opened on the template that carries
 // the licence grant — blank issues are off, and a grant is what makes a
@@ -26,6 +28,37 @@ export function discussUrl(kind, id, {
   lines.push('', 'What is wrong with it, and which source says otherwise?');
   params.set('notes', lines.join('\n'));
   return `${repository}/issues/new?${params.toString()}`;
+}
+
+// The other way to disagree with a record: not an issue about it, but the
+// record as it should read. The contribution form opens on this one's fields
+// — the same form a new record is written in, and the same bundle, because a
+// correction is a whole record with the id it already has (principle 5).
+//
+// Until H6a a correction had no form at all: `?correction=1` switched the
+// issue template and nothing loaded the record, so the one thing a reader
+// most often wants to fix — a date, a confidence, a sentence — meant opening
+// `data/<kind>s/<id>.json` by hand and pasting it (health review B, finding
+// 26). `kind/id` is the address, the same one the discussion issue carries.
+export function editUrl(kind, id, { base = 'contribute.html', fixtures = false } = {}) {
+  const params = new URLSearchParams({ correction: '1', edit: `${kind}/${id}` });
+  if (fixtures) params.set('fixtures', '1');
+  return `${base}?${params.toString()}`;
+}
+
+// The other end of editUrl: `<kind>/<id>`, and nothing else. The kind has to
+// be one the form writes and the id has to be an id of that kind, under the
+// validator's own patterns — the same three tools/bundle-to-files.mjs checks
+// an incoming id against, and for the same reason: what comes out of this
+// becomes a path in a fetch, so it is checked before it is one.
+export function parseEdit(text) {
+  const at = String(text ?? '').indexOf('/');
+  if (at < 0) return null;
+  const kind = text.slice(0, at);
+  const id = text.slice(at + 1);
+  if (!CONTRIBUTED_KINDS.includes(kind)) return null;
+  const pattern = kind === 'edge' ? EDGE_ID : kind === 'relation' ? RELATION_ID : SLUG;
+  return pattern.test(id) ? { kind, id } : null;
 }
 
 // Which state field opens a record of each kind. An edge has no card of its

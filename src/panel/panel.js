@@ -25,7 +25,7 @@ import { horizonHtml } from './horizon.js';
 import { partOfHtml, renderNarrativeCard } from './narrative.js';
 import { readingNarrative } from '../narrative.js';
 import { createLinks, ENTRY_KINDS } from '../entry/entry.js';
-import { discussUrl, recordUrl } from '../share.js';
+import { discussUrl, recordUrl, editUrl } from '../share.js';
 import { toggleSection, readOpenSection, sectionBodyHtml } from './sections.js';
 
 // What the reader asked their browser for, in order. Read once: the cards
@@ -320,11 +320,16 @@ export function createPanel(container, {
   // against it. It carries the record's own address and nothing else — the
   // reader's box, window, horizon and walked chain are not part of what is
   // wrong with the record, and a public issue is no place for them (share.js).
+  // Two ways to disagree, side by side. "Discuss" opens an issue about the
+  // record; "Edit" opens the contribution form on the record's own fields,
+  // which is the correction a reader can actually write (health review B,
+  // finding 26). The first leaves this site, the second does not.
   function discussLink(kind, id) {
     const page = typeof location === 'object'
       ? `${location.origin && location.origin !== 'null' ? location.origin : ''}${location.pathname}`
       : '';
-    return `<p class="discuss"><a href="${esc(discussUrl(kind, id, { url: recordUrl(kind, id, { base: page }) }))}" rel="noopener" target="_blank">Discuss this record</a></p>`;
+    return `<p class="discuss"><a href="${esc(discussUrl(kind, id, { url: recordUrl(kind, id, { base: page }) }))}" rel="noopener" target="_blank">Discuss this record</a>
+      <a class="edit-record" href="${esc(editUrl(kind, id, { fixtures }))}">Edit this record</a></p>`;
   }
 
   // What Back would return to, and Forward go on to, named. The browser will

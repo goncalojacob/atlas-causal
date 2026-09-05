@@ -16,29 +16,14 @@ import { loadSchemas } from '../validate/schemas.js';
 import { createForm } from './form.js';
 import { valuesFromRecord } from './bundle.js';
 import { CONTRIBUTION_TEMPLATE, CORRECTION_TEMPLATE } from './submit.js';
-import { KIND_DIRS, CONTRIBUTED_KINDS } from '../kinds.js';
-import { SLUG, EDGE_ID, RELATION_ID } from '../validate/rules.js';
+import { KIND_DIRS } from '../kinds.js';
+import { parseEdit } from '../share.js';
 import { esc } from '../util/esc.js';
 
 const params = new URLSearchParams(window.location.search);
 const fixtures = params.get('fixtures') === '1';
 const dataRoot = fixtures ? 'tests/fixtures/data/' : 'data/';
 const mount = document.getElementById('form');
-
-// `<kind>/<id>`, and nothing else: the kind has to be one the form writes and
-// the id has to be an id of that kind. What comes out of this becomes a path
-// in a fetch, so it is checked with the validator's own patterns before it is
-// one and not after — the same three tools/bundle-to-files.mjs checks an
-// incoming id against, for the same reason.
-export function parseEdit(text) {
-  const at = String(text ?? '').indexOf('/');
-  if (at < 0) return null;
-  const kind = text.slice(0, at);
-  const id = text.slice(at + 1);
-  if (!CONTRIBUTED_KINDS.includes(kind)) return null;
-  const pattern = kind === 'edge' ? EDGE_ID : kind === 'relation' ? RELATION_ID : SLUG;
-  return pattern.test(id) ? { kind, id } : null;
-}
 
 const edit = parseEdit(params.get('edit'));
 // An edit is a correction whether or not the link said so: what it produces

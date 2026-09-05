@@ -20,6 +20,7 @@ import { ACTOR_TYPE_LABEL } from '../panel/event.js';
 import { RELATION_LABEL, RELATION_ORDER } from '../panel/actor.js';
 import { kindsWhere, byKind } from '../kinds.js';
 import { attributionHtml } from '../licensing.js';
+import { editUrl } from '../share.js';
 
 // The kinds with a page. Anything else — an edge, a narrative, a source — is
 // read inside the atlas, and the page says so rather than pretending.
@@ -41,6 +42,10 @@ export function createLinks({ fixtures = false } = {}) {
       ? `entry.html?id=${encodeURIComponent(id)}${tail}`
       : `index.html?${ATLAS_PARAM[kind] ?? 'selected'}=${encodeURIComponent(id)}${tail}`),
     atlas: (kind, id) => `index.html?${ATLAS_PARAM[kind] ?? 'selected'}=${encodeURIComponent(id)}${tail}`,
+    // The contribution form, opened on this record's own fields. On the entry
+    // page as on every card: the reader who has just read the whole argument
+    // is the one most likely to have something to correct in it.
+    edit: (kind, id) => editUrl(kind, id, { fixtures }),
   };
 }
 
@@ -255,6 +260,7 @@ export function entryHtml(atlas, {
       ${metaHtml(atlas, links, kind, record, topologyEntry)}
       ${variants.length ? `<p class="also-known muted">also: ${variants.map((n) => esc(n)).join(' · ')}</p>` : ''}
       <p class="entry-back"><a href="${esc(links.atlas(kind, record.id))}">Open this on the map and the timeline →</a></p>
+      <p class="discuss"><a class="edit-record" href="${esc(links.edit(kind, record.id))}">Edit this record</a></p>
       ${wikipediaHtml(record, languages)}
     </header>
     ${record.summary ? `<section class="entry-summary"><p>${esc(record.summary)}</p></section>` : ''}

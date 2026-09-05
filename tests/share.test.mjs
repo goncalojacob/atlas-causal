@@ -1,10 +1,10 @@
-// The two ways out of what is on screen: the correction issue about one
-// record, and the view as a file.
+// The ways out of what is on screen: the correction issue about one record,
+// the form opened on that record, and the view as a file.
 
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import {
-  discussUrl, recordUrl, tokenNames, svgFile, exportName, sizeOf, collectTokens, exportSvg,
+  discussUrl, recordUrl, editUrl, parseEdit, tokenNames, svgFile, exportName, sizeOf, collectTokens, exportSvg,
 } from '../src/share.js';
 import { REPOSITORY } from '../src/contribute/submit.js';
 
@@ -140,4 +140,29 @@ test('exporting hands the browser a blob and a file name', async () => {
   const text = created[0].parts[0];
   assert.match(text, /--cobalt: #123456/);
   assert.match(text, /<circle r="3"\/>/);
+});
+
+test('the edit link opens the form on the record, and only on a record', () => {
+  const url = editUrl('event', 'carnation-revolution-1974');
+  assert.ok(url.startsWith('contribute.html?'));
+  const params = new URLSearchParams(url.split('?')[1]);
+  assert.equal(params.get('edit'), 'event/carnation-revolution-1974');
+  // A correction whether or not anything said so: what it produces is a
+  // record under an id that already exists.
+  assert.equal(params.get('correction'), '1');
+  assert.equal(new URLSearchParams(editUrl('place', 'lisbon', { fixtures: true }).split('?')[1]).get('fixtures'), '1');
+
+  // The other end. What comes back becomes a path in a fetch, so a kind the
+  // form does not write, an id that is not an id, and every way of writing a
+  // path are refused here rather than by the server.
+  assert.deepEqual(parseEdit('event/carnation-revolution-1974'), { kind: 'event', id: 'carnation-revolution-1974' });
+  assert.deepEqual(parseEdit('edge/a--b--caused'), { kind: 'edge', id: 'a--b--caused' });
+  assert.equal(parseEdit('edge/a--b--regime-of'), null, 'a relation type is not an edge type');
+  assert.deepEqual(parseEdit('relation/a--b--regime-of'), { kind: 'relation', id: 'a--b--regime-of' });
+  assert.equal(parseEdit('presence/anything'), null, 'a presence is not the form\'s to write');
+  assert.equal(parseEdit('event/../../.github/workflows/deploy.yml'), null);
+  assert.equal(parseEdit('event/Carnation'), null);
+  assert.equal(parseEdit('event/'), null);
+  assert.equal(parseEdit('carnation-revolution-1974'), null);
+  assert.equal(parseEdit(null), null);
 });
