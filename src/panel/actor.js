@@ -10,29 +10,15 @@
 import { esc } from '../util/esc.js';
 import { formatInterval, formatYear, bounds } from '../util/dates.js';
 import { ACTOR_TYPE_LABEL } from './event.js';
+import { RELATION_LABEL, RELATION_GROUP_ORDER } from '../vocab.js';
 import { sectionHtml, openSection } from './sections.js';
 
-// What a relation is called from each end. The same record reads two ways —
-// "Regime of Portugal" on the Estado Novo's card and "Regimes" on Portugal's —
-// which is the whole reason the card groups by type *and* direction.
-// `allied-with` is symmetric and is the one type whose two directions are one
-// group.
-export const RELATION_LABEL = Object.freeze({
-  'regime-of': { out: 'Regime of', in: 'Regimes' },
-  succeeded: { out: 'Succeeded by', in: 'Successor of' },
-  'member-of': { out: 'Member of', in: 'Members' },
-  'part-of': { out: 'Part of', in: 'Parts of it' },
-  led: { out: 'Led', in: 'Led by' },
-  'allied-with': { out: 'Allied with', in: 'Allied with' },
-});
-
-// The order the groups are drawn in: what this actor is, then what it was
-// made of, then who ran it, then who it stood beside.
-export const RELATION_ORDER = Object.freeze([
-  'regime-of:out', 'regime-of:in', 'succeeded:out', 'succeeded:in',
-  'part-of:out', 'part-of:in', 'member-of:out', 'member-of:in',
-  'led:out', 'led:in', 'allied-with:out',
-]);
+// What a relation is called from each end, and the order the groups are drawn
+// in: both from the one list of relation types (vocab.js), which is also
+// where rule 19's endpoints live, so a seventh type cannot arrive with an
+// endpoint rule and no label.
+export { RELATION_LABEL };
+export const RELATION_ORDER = RELATION_GROUP_ORDER;
 
 const DEPENDENCY_LABEL = Object.freeze({
   colony: 'colony',

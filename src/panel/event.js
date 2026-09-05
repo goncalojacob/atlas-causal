@@ -16,14 +16,10 @@ import { formatInterval, formatYear, defaultCalendar } from '../util/dates.js';
 import { laneExplain } from '../lanes.js';
 import { horizonHtml } from './horizon.js';
 import { sectionHtml, openSection } from './sections.js';
+import { EDGE_TYPE_LABEL } from '../vocab.js';
 
-export const TYPE_LABEL = Object.freeze({
-  caused: 'caused',
-  enabled: 'enabled',
-  'reacted-to': 'reacted to',
-  'precondition-of': 'precondition of',
-  inspired: 'inspired',
-});
+// What a card calls each edge type, from the one list of them (vocab.js).
+export const TYPE_LABEL = EDGE_TYPE_LABEL;
 
 export const ACTOR_TYPE_LABEL = Object.freeze({
   person: 'person',

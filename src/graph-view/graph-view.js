@@ -25,6 +25,7 @@ import { svg, svgTitle } from '../util/dom.js';
 import { formatInterval, formatYear } from '../util/dates.js';
 import { overlaps, resolveWindow } from '../util/window.js';
 import { convergence } from '../graph.js';
+import { EDGE_TYPE_IDS } from '../vocab.js';
 import { chainEdges as walkedEdges, walkOrSelect } from '../chain.js';
 import { horizonSet, horizonBand } from '../horizon.js';
 import { narrativeSet } from '../narrative.js';
@@ -104,7 +105,7 @@ export function edgeKey() {
       <line class="edge type-${type} ${extra}" x1="1" y1="6" x2="50" y2="6"/>
       <polygon class="edge-head type-${type}" points="60,6 50,3 50,9"/></svg>`;
   box.innerHTML = `<h2>Links</h2><dl class="edge-key">
-    ${['caused', 'enabled', 'reacted-to', 'precondition-of', 'inspired']
+    ${EDGE_TYPE_IDS
       .map((type) => `<dt>${line(type)}</dt><dd>${type}</dd>`).join('')}
     <dt>${line('caused', 'disputed')}</dt><dd>any type, disputed</dd>
   </dl>`;

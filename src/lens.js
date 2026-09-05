@@ -10,9 +10,12 @@
 // Pure: a focus and the loaded topology in, a set of event ids out. Nothing
 // here knows the DOM, and `lensSet()` is the one place that asks the state.
 
-const FOCUS = /^(actor|place|source):([a-z0-9]+(-[a-z0-9]+)*)$/;
+// The pattern and the three kinds are `vocab.js`'s, because `state.js` checks
+// the same parameter against the same closed set and two definitions of one
+// set drift (health review A, finding 28).
+import { FOCUS, FOCUS_KINDS } from './vocab.js';
 
-export const FOCUS_KINDS = Object.freeze(['actor', 'place', 'source']);
+export { FOCUS_KINDS };
 
 // "actor:salazar" → { kind: 'actor', id: 'salazar' }. Anything else is null,
 // including a focus on a kind that has no lens; the URL is untrusted input

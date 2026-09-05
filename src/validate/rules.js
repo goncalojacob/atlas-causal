@@ -11,6 +11,10 @@
 
 import { isValidYear, astronomicalBounds, defaultCalendar } from '../util/dates.js';
 import { bodyCitations, bodyLinks } from '../markdown.js';
+import {
+  EDGE_ID, EDGE_TYPE_IDS, RELATION_ID, RELATION_TYPE_IDS,
+  RELATION_ENDPOINTS, ACYCLIC_RELATION_TYPES,
+} from '../vocab.js';
 
 // An interval as two astronomical bounds for overlap tests: an open end
 // (`end: null`, ongoing) reaches forward without limit.
@@ -25,34 +29,16 @@ function span(when) {
 }
 
 export const SLUG = /^[a-z0-9]+(-[a-z0-9]+)*$/;
-export const EDGE_TYPES = Object.freeze(['caused', 'enabled', 'reacted-to', 'precondition-of', 'inspired']);
-export const EDGE_ID = /^([a-z0-9]+(?:-[a-z0-9]+)*)--([a-z0-9]+(?:-[a-z0-9]+)*)--(caused|enabled|reacted-to|precondition-of|inspired)$/;
 export const CONFIDENCE_ORDER = Object.freeze(['consensus', 'probable', 'disputed']);
 export const ACTOR_TYPES = Object.freeze(['person', 'polity', 'institution', 'people']);
-// A relation's id has the same three-part shape as an edge's and is not one:
-// its third part is a relation type, and the two vocabularies never meet.
-// Anything that turns an id into a path or a URL has to know which of the two
-// it is holding, so the pattern is written once, here.
-export const RELATION_TYPES = Object.freeze(['regime-of', 'succeeded', 'member-of', 'part-of', 'led', 'allied-with']);
-export const RELATION_ID = /^([a-z0-9]+(?:-[a-z0-9]+)*)--([a-z0-9]+(?:-[a-z0-9]+)*)--(regime-of|succeeded|member-of|part-of|led|allied-with)$/;
-// Which kind of actor may stand at each end (m11-brief, amendment). A person
-// is not a regime and a party is not a state, and the shape of the record
-// cannot say so: this table is what rule 19 checks.
-export const RELATION_ENDPOINTS = Object.freeze({
-  'regime-of': { from: ['polity'], to: ['polity'] },
-  // A colony and the state after it are two actors of the same kind; a
-  // ministry is not succeeded by a country.
-  succeeded: { from: ['polity', 'institution'], to: ['polity', 'institution'], sameKind: true },
-  'member-of': { from: ['person'], to: ['institution', 'polity'] },
-  'part-of': { from: ['institution'], to: ['institution', 'polity'] },
-  led: { from: ['person'], to: ['institution', 'polity'] },
-  'allied-with': { from: ['polity', 'institution'], to: ['polity', 'institution'] },
-});
-// The two types that describe a line of succession, and are therefore the two
-// that must not close on themselves. Each is acyclic on its own: a body may be
-// part of a state that is a regime of it in no sense, and mixing the types
-// would forbid arrangements that are merely unusual.
-export const ACYCLIC_RELATION_TYPES = Object.freeze(['regime-of', 'succeeded']);
+// The vocabularies and the two id patterns come from src/vocab.js, and the
+// kinds' licences and fields from src/kinds.js. They were written out here
+// and copied into `state.js`, `lanes.js`, `graph.js` and two panel cards
+// until H2; the names below are kept because the rules and their tests are
+// the oldest readers of them, but there is one definition now.
+export const EDGE_TYPES = EDGE_TYPE_IDS;
+export const RELATION_TYPES = RELATION_TYPE_IDS;
+export { EDGE_ID, RELATION_ID, RELATION_ENDPOINTS, ACYCLIC_RELATION_TYPES };
 // The identity a record may claim on Wikidata, and the kinds that may claim
 // one: a Wikidata item is about a thing in the world, which an event, an
 // actor and a place are, and an edge and a narrative are not — those are

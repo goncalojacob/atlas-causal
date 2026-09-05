@@ -67,23 +67,22 @@
 // would leave no way back to the event but searching for it again.
 
 import { isValidYear } from './util/dates.js';
-
-const SLUG = /^[a-z0-9]+(-[a-z0-9]+)*$/;
 // The chain is a list of edge ids (deviation 12), and an edge id names one of
 // the five types. A relation id has the same three-part shape and a type from
 // its own closed set: it links two actors and is not a step of a causal path,
 // so it is refused here by name rather than by falling through a loose
-// pattern. The two vocabularies are written out because this file stays free
-// of the data and of the rules that read it.
-const EDGE_ID = /^[a-z0-9]+(-[a-z0-9]+)*--[a-z0-9]+(-[a-z0-9]+)*--(caused|enabled|reacted-to|precondition-of|inspired)$/;
-const RELATION_ID = /^[a-z0-9]+(-[a-z0-9]+)*--[a-z0-9]+(-[a-z0-9]+)*--(regime-of|succeeded|member-of|part-of|led|allied-with)$/;
+// pattern.
+//
+// Both patterns, the lens's and the four groupings used to be written out
+// here, "because this file stays free of the data". They were copies, and
+// copies of a closed set drift (health review A, finding 28): `vocab.js` is
+// as free of the data as this file is — it imports nothing at all — so
+// importing it costs this file none of its independence.
+import { EDGE_ID, RELATION_ID, FOCUS, GROUPS, VIEWS } from './vocab.js';
+
+const SLUG = /^[a-z0-9]+(-[a-z0-9]+)*$/;
 export const LAYERS = Object.freeze(['land', 'territories', 'events']);
-export const VIEWS = Object.freeze(['map', 'graph']);
-// The three kinds a lens can be about, and the four groupings. Written out
-// here rather than imported, because this file stays free of the data and of
-// everything that reads it — as the two id patterns above are.
-const FOCUS = /^(actor|place|source):[a-z0-9]+(-[a-z0-9]+)*$/;
-export const GROUPS = Object.freeze(['none', 'actor', 'place', 'region']);
+export { GROUPS, VIEWS };
 // Query parameters that are not state but must survive a state write.
 const PASSTHROUGH = Object.freeze(['fixtures']);
 

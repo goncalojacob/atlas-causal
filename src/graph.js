@@ -5,8 +5,11 @@
 // on file order.
 
 import { extent } from './util/dates.js';
+import { EDGE_TYPE_IDS } from './vocab.js';
 
-export const TYPE_ORDER = Object.freeze(['caused', 'enabled', 'reacted-to', 'precondition-of', 'inspired']);
+// The order an answer list is sorted in is the order the types are declared
+// in (vocab.js): the strongest claim first, the loosest last.
+export const TYPE_ORDER = EDGE_TYPE_IDS;
 export const CONFIDENCE_ORDER = Object.freeze(['consensus', 'probable', 'disputed']);
 
 function rank(list, value) {

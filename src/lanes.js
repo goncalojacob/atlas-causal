@@ -21,8 +21,12 @@
 
 import { extent } from './util/dates.js';
 import { overlaps } from './util/window.js';
+// The four groupings are `vocab.js`'s: this file decides what a lane *is*,
+// and `state.js` decides what the URL may ask for, and the two used to
+// declare the list separately (health review B, finding 19).
+import { GROUPS } from './vocab.js';
 
-export const GROUPS = Object.freeze(['none', 'actor', 'place', 'region']);
+export { GROUPS };
 // Six lanes is about what a reader holds in their head at once, and about
 // what fits under the map while a lane still has a height worth drawing a
 // bar in. It was twelve until M24, and twelve was a list with gaps: the
