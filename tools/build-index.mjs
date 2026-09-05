@@ -16,6 +16,7 @@ import { buildSpine, buildTopology, byId, citerFiles, rolesInUse } from '../src/
 import { checkRules } from '../src/validate/rules.js';
 import { createRegionDeriver } from '../src/util/geo.js';
 import { digestOf, isDraft } from '../src/review/queue.js';
+import { buildSearchIndex } from '../src/search.js';
 import { readRecords, readRegions, readRegionPolygons, readLandFiles, readPresenceShards, paletteFile } from './lib/read.mjs';
 
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -87,6 +88,16 @@ export async function buildIndex(dataDir = DEFAULT_DATA) {
   const citersDir = `citers-${hashOf(citers.map(([, text]) => text).join(''))}`;
   const citerEntries = citers.map(([name, text]) => [`${citersDir}/${name}`, text]);
 
+  // What the search box scans, folded once here rather than on every page
+  // load. It is the search module's own index, frozen: buildSearchIndex is
+  // what the box builds from the topology today, so the shard cannot fall
+  // out of step with what the box expects to be handed (A9). The terms are
+  // the only precomputed thing in the index; the prose stays out (Scale).
+  const searchText = serialize({
+    schema: 1,
+    entries: buildSearchIndex(topology).map((entry) => ({ ...entry, status: 'active' })),
+  });
+
   // What review.html needs and the topology does not carry: which records
   // still have nobody's name on them, and what the rules say about each. The
   // browser cannot read data/ record by record — 1200 files — and the
@@ -104,6 +115,7 @@ export async function buildIndex(dataDir = DEFAULT_DATA) {
   });
   const topologyName = `topology-${hashOf(topologyText)}.json`;
   const spineName = `spine-${hashOf(spineText)}.json`;
+  const searchName = `search-${hashOf(searchText)}.json`;
   const sourcesName = `sources-${hashOf(sourcesText)}.json`;
   const reviewName = `review-${hashOf(reviewText)}.json`;
   const manifest = serialize({
@@ -121,6 +133,7 @@ export async function buildIndex(dataDir = DEFAULT_DATA) {
     },
     files: {
       citers: `index/${citersDir}`,
+      search: `index/${searchName}`,
       spine: `index/${spineName}`,
       topology: `index/${topologyName}`,
       sources: `index/${sourcesName}`,
@@ -145,6 +158,7 @@ export async function buildIndex(dataDir = DEFAULT_DATA) {
   return {
     files: {
       'manifest.json': manifest,
+      [searchName]: searchText,
       [spineName]: spineText,
       [topologyName]: topologyText,
       [sourcesName]: sourcesText,
