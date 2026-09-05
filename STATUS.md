@@ -464,6 +464,18 @@ correction bundle for the issue path, and the public site gains no backend.
 
 ## Phase
 
+**M27 is built on its own branch `m27`, off `m0`**, and is the CShapes
+colony/state splits worked down: `data/imports/cshapes-actors.json` now cuts
+**79** of the source's 252 codes, 77 of them added here, so that a colony and
+the state that followed it are two actors. **77 colonial actor records
+created**, 77 state records left with the ids every event, relation and
+presence already points at, and **200 of the 710 presences re-derived** onto
+the new actors. `docs/cshapes-entities.md` is down from 89 codes to **12** —
+seven the source only ever holds as occupied, five it gives their own ground
+first — and `docs/m27-splits.md` accounts for all 89. Nothing was written by
+hand into a presence, an outline or an imported actor: only the mapping file
+changed and the import was re-run.
+
 **M0 to M23 built, plus the map usability work, on branch `m0`, pull
 request #1 open against `main`.** M13 was the last milestone in the original
 run protocol's order; M14 ran after it from `docs/m14-brief.md` on the
@@ -2332,6 +2344,47 @@ object. Every later card gets a file.
     would have been a second, louder action nobody asked for, and the map's
     own double-click already does it.
 
+174. **M27 read "dependency" as colony, protectorate or mandate, and cut at
+    the end of the held period rather than at the first independent date.**
+    The brief's rule bolds *as a dependency* and names only **occupied** as
+    the condition that does not split, so a protectorate and a mandate split
+    like a colony; had it meant the literal status `colony` alone, twenty
+    codes — Tunisia, Uganda, Qatar, Togo, the four mandates of the Levant and
+    the rest — would have been covered by no bullet of the rule at all. Four
+    consequences, all of them reversible by editing the mapping file and
+    running the import again:
+
+    - The cut is `dayAfter` the **last** held period that is not an
+      occupation, not the *First independent* date the report prints. They are
+      the same date for 69 of the 77; where they differ it is because the
+      source draws no boundary at independence (Senegal 1959-04-04, Zambia
+      1953-08-01, Taiwan 1945-08-15, Singapore 1963-01-01, East Timor
+      1976-07-17) or because an occupation sits between the two, and an
+      occupied state is the same actor, so that occupation belongs to the
+      state's record: Cuba 1898-12-10 (not 1902-05-20), Iceland 1942-04-22
+      (not 1944-06-17), Eritrea 1941-05-19 (not 1993-05-24).
+    - An occupation *inside* the held period stays with the colonial actor —
+      Libya 1943–1949, Tanganyika 1916–1922, Namibia 1915–1920, Cameroon
+      1919–1922, Chad 1900–1920, the 1920 occupations of Iraq, Syria, Lebanon
+      and Jordan. Cutting there too would give the state actor a life in two
+      pieces, which the import's segments cannot hold.
+    - **The mapping schema was not extended.** The brief offers a `title` on a
+      split entry "if the tool cannot name a split actor from the source's own
+      fields"; `names` already carries exactly that, is documented for exactly
+      that in CONTRIBUTING, and is what entries 750 and 850 use, so a second
+      field for one job would have been the deviation. The id and the name are
+      composed mechanically — the code's slug, `under`, and the actor the
+      source's own `owner` code is on that day — because CShapes never gives a
+      held period a name of its own: it calls 452 "Ghana" in 1886 and in 2019
+      alike, and there is no Gold Coast in the file to take a name from.
+    - Where the source gives the held period under more than one power, the
+      record is named for the one that held it **longest**: Libya under
+      Italy/Sardinia, Bhutan under United Kingdom, the Philippines under the
+      United States, Tanganyika and Swaziland under the United Kingdom,
+      Namibia under South Africa. Naming them for the last holder would have
+      made Bhutan a dependency of India and Libya of Britain, which the
+      source's own dates contradict.
+
 ## Dates to verify
 
 Everything below was written from memory and is where the owner's review
@@ -2794,3 +2847,4 @@ M24 done
 M25 started 2026-09-05T01:06:07Z by scheduled
 
 M27 started 2026-09-05T01:06:43Z by scheduled (branch m27)
+M27 done
