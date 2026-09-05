@@ -4,8 +4,62 @@ What the Atlas causal is meant to become, structurally. `CLAUDE.md` has the
 rules, `CONTEXT.md` the reasoning, `STATUS.md` where we are right now. This
 file is the target: the shape every milestone builds toward.
 
-Revision 20, 5 September 2026. Sections marked ● exist in v1; things marked ○
+Revision 21, 5 September 2026. Sections marked ● exist in v1; things marked ○
 are reserved by a line in this file only — no folder, no schema, no code.
+
+**What revision 21 changed, and why.** Nothing in the data model. One new
+rule about the browser's history, and the panel's cards rearranged.
+
+*A card is a head, a summary and collapsible sections* ●. The owner's
+complaint was that a card showed everything at once — summary, actors,
+consequences, convergence, citations, narratives, horizon — and read badly.
+It is now progressive disclosure: a **head** (title, one line of when and
+where and which lane, an event's actors as chips with the role on hover and
+in the `title`, and the quiet links out), the **summary** alone, and then one
+**collapsible section per question**, each header carrying its count —
+Consequences, Causes, Other branches, Sources, Part of, and on an actor
+Relations and Territory. Nothing was removed: the counts say what is behind
+a header before it is opened, and one click gets there. `panel/sections.js`
+is the one module that decides it, for every card.
+
+The count is the point, and it is where a dispute is announced:
+"Consequences (3, 1 disputed)", so that a closed section never presents a
+disagreement as settled. **One section is open at a time** — the panel is a
+narrow column and two open sections put the second a screenful below the
+first — and which one is a *preference*, not state: it stays out of the URL
+and lives in `localStorage`, as the pane sizes do. Which opens by itself
+follows the arrival: walking a chain opens Consequences, arriving from a
+source's card opens Sources, otherwise the reader's remembered choice. The
+header is a native `<button>`, which is where Enter and Space come from.
+
+*Convergence splits in two.* **Causes** is the direct incoming links and is
+always there; **Other branches** is the convergence query's result and is
+drawn only while a path is being walked, because without one there is
+nothing to be other than. The query itself is unchanged.
+
+*The walked path is a breadcrumb* at the top of the panel, each earlier step
+a link that returns to it and drops what came after — the path is the
+argument being followed. Only a disputed step is marked in it; a badge on
+every crumb is a row nobody reads.
+
+*Opening a record pushes a history entry.* `state.js` used to write every
+change with `replaceState`, so the browser's Back left the atlas. Now a
+change of **what is open** — `selected`, `source`, `place`, `actor`,
+`narrative`, `step` — pushes, and a change of the **view** only — pan, zoom,
+the window, the lanes, the layers, the lens — replaces, or dragging the band
+would fill Back with a hundred frames of the same picture. The decision is
+one pure function on the patch. The browser will not say what Back returns
+to, so the store keeps its own trail of the openings it pushed and `popstate`
+walks it; the panel's head names the link ("← Carnation Revolution") with a
+Forward twin. On a popstate the URL is the whole truth about what is open —
+those fields are taken from it rather than inherited — and `restore` puts a
+narrative's derived selection back.
+
+*A citation carries its verification mark.* The flags were already on the
+record (`review.citations`, M15) and were only ever read by the dashboard;
+the panel now shows them, and says "unchecked" where nobody has opened the
+source. All 1,874 of them are, and an atlas that did not admit it would be
+claiming more than it can support.
 
 **What revision 20 changed, and why.** Nothing in the data model, nothing in
 the state. One reserved line became built, and one module grew two functions.
@@ -1284,9 +1338,18 @@ nobody asked. `layers` is `land`, `territories`, `events`; a layer switched off 
 no fetch. `view` is `map` or `graph`: the two share the same slot in the
 layout, and the graph view is built the first time it is asked for.
 
+The state divides once more, for the browser's Back: a change of **what is
+open** — `selected`, `source`, `place`, `actor`, `narrative`, `step` —
+pushes a history entry, and a change of the **view** only replaces the one
+there is. Two things are deliberately not state at all and live in
+`localStorage` instead, per reader and per browser: the pane sizes, and which
+section of a card is open. Neither says anything about what the atlas is
+showing, and a link is what somebody is looking at rather than how they have
+arranged their window.
+
 | Module | Job | Must not know |
 |---|---|---|
-| `state.js` | Owns the state object; parses and writes the URL; notifies views. | Anything about SVG or data files. |
+| `state.js` | Owns the state object; parses and writes the URL — pushing a history entry when *what is open* changed and replacing it when only the view moved; keeps the trail of those openings, because the browser will not say what Back returns to; notifies views. | Anything about SVG or data files, and what a record is called. |
 | `lanes.js` | What a lane is, in all four groupings: which lanes the window offers, which six of them are drawn, which single lane each event belongs in and why, and — with no grouping — the packing of the bars into rows that do not overlap. Pure. | The DOM, the state, and which of the two pictures is asking. |
 | `lens.js` | The set of events a focus keeps — an actor's, a place's, a source's — and what the header calls it. Pure. | The DOM, and that a narrative suspends it, which is one line of state it is given. |
 | `grouping.js` | The picker beside Map \| Graph: the grouping as a select, the lanes as checkboxes with up/down and a filter box, keyboard first; and the badge that says which lens is on. Writes `group`, `lanes` and `focus` and nothing else. | What a lane is, and how anything is drawn. |
@@ -1308,7 +1371,8 @@ layout, and the graph view is built the first time it is asked for.
 | `graph-view/layout.js` | Events, edges, the lanes and the data's extent → the coordinates of every node and every edge, plus the bands. x is the year on the whole extent; y is a barycentre pass inside the band of the lane, or over the whole field when there are no lanes. Deterministic — ties by id then weight, neighbour lists sorted — and self-checking: it counts crossings and keeps the best arrangement it saw, the plain order included. `stackLayout` is the second half: those coordinates and a zoom in, the marks and lines actually drawn out, merged within a band and never across one. | The DOM, the state, what is selected, what is in the window, why an id may not be stacked. |
 | `graph-view/graph-view.js` | Draws what the layout gives it: the bands and the year axis once, then the marks, the five edge types by pattern and weight, the window as a shade, the walked chain in madder and the convergence branches filled in. Decides the one thing the layout cannot — which events the reader is working with, and so may never be stacked. Pan and zoom; a click is resolved to the nearest mark centre within reach; clicking a consequence of the open event walks the chain, clicking a stack opens it. | Where a node goes, what merges with what, and how the panel renders anything. |
 | `timeline.js` + `timeline-scale.js` | Lanes from `lanes.js`, or its packed rows when there is no grouping; the scale is injected; the window drawn over them as a band with two handles, which is the atlas's only time control. Bars that would overlap stack, and only within the window, so narrowing the band splits them without moving the scale. | Which regions exist. |
-| `panel/` | The shell plus one file per card. Detail, consequences, the horizon, convergence, supporting and dissenting citations shown apart, confidence and status shown as such; an event's actors with their roles, a source's card with everything that cites it, an actor's card with its relations grouped by type and direction, a place's card, and the members of a cluster. | Traversal logic. |
+| `panel/` | The shell plus one file per card. Every card is a head, a summary and collapsible sections with counts: consequences, causes, the other branches, the horizon inside the consequences, supporting and dissenting citations shown apart with their verification marks, confidence and status shown as such; an event's actors as chips in the head, the walked path as a breadcrumb above it, a source's card with everything that cites it, an actor's card with its relations grouped by type and direction, a place's card, and the members of a cluster. | Traversal logic. |
+| `panel/sections.js` | What a collapsible section is, for every card: the header with its count and its dispute mark, which one a card opens on given the arrival and the reader's remembered choice, and the toggle that closes the others. The choice is `localStorage`, never the URL. Pure but for the toggle. | What is inside a section, and which card is asking. |
 | `sources/` | `sources.html`: the manifest and the sources index, and the bibliography as markup. Nothing else — the topology is twenty times the size and lists no books. | The topology, the map, the panel. |
 | `validate/core.js` | `validate(records, topology)`: schema subset + cross-record rules, pure. Needs the topology to check references, so the form loads it too. | `fs`. |
 | `contribute/*` | Form → bundle → validation → clipboard + issue. | GitHub, beyond one URL in `submit.js`. |
