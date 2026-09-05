@@ -6,7 +6,67 @@ session ends. `ARCHITECTURE.md` is the target; this file is the position.
 
 ## Last updated
 
-2026-09-05, after H3b (`docs/health/h3b-brief.md`), the health cycle's
+2026-09-05, after H3c (`docs/health/h3c-brief.md`), the health cycle's
+eighth run: **the old topology file is gone, and the spine is the only
+graph the site has.** `build-index.mjs` stops serialising it, the loader
+loses the flag that chose between the two, every reader that still went to
+it for a count or a layout goes to the spine, and `data/index/` was
+regenerated once. Code only; no record under `data/` changed. 745 tests.
+
+**Nothing a reader downloads changed, and that is the point.** The spine,
+the sources index, the search shard, the citer directory and the review
+index all came back byte-identical; only `manifest.json` moved, by the 52
+bytes of the line that named the file. First paint on `index.html` is
+853.2 KB raw and **67.0 KB over the wire**, and on `sources.html` 35.4 KB
+and 5.6 KB. What left is 950.9 KB of committed repository (19.1 KB more
+from the fixtures) and a second copy of the whole graph that the deploy
+job, the PR gate and every batch of the Wikidata import had been building,
+hashing and comparing on every run.
+
+| File | Raw | Gzipped | First paint |
+|---|---|---|---|
+| `manifest.json` | 6.1 KB | 1.9 KB | every page, `no-store` |
+| `spine-541d151a5892.json` | 817.8 KB | 61.4 KB | every page but `sources.html` |
+| `sources-49201adca694.json` | 29.4 KB | 3.7 KB | every page |
+| `search-d9d315255367.json` | 217.7 KB | 22.4 KB | no — fetched beside it |
+| `citers-53fa8cafa5d4/`, 33 files | 255.7 KB | 26.4 KB | no — one file, on demand |
+| `review-326d91357c8f.json` | 258.9 KB | 19.7 KB | `review.html` only |
+
+**The topology did not go away; its file did.** `buildTopology` still runs
+on every index build, because the spine is a projection of it and
+`checkRules` is checked against it — the contribution form and the review
+editor both validate an edit against a topology-shaped universe. What H3c
+removed is the second serialisation of it: 950.9 KB of JSON that carried
+the same graph unpicked, written beside the spine only while the pages
+moved over one at a time in H3b. Deviation 227 says why `citesCount` stayed
+on it.
+
+**The seven suites collapse back to one atlas.** From H3a-2 the event,
+actor, place and source card suites, the entry page, the horizon and the
+graph queries ran twice — once over each file — so that every assertion they
+already made was an assertion about the spine (A12). With one file left they
+run once, and 745 tests is 790 minus those 45. What the projection is still
+measured against is `buildTopology`'s own output, built in memory from the
+records: `tests/spine-loader.test.mjs` builds an atlas from each and compares
+the surface, the ids, the edges, `resolve` over every alias and merge hop,
+both citation counts and the search box's ordered answers. That is a real
+comparison, not a tautology — it is what would catch `buildSpine` dropping a
+record — and it is the reason the topology object keeps `citesCount`.
+
+**`tests/spine-pages.test.mjs` keeps half its promise and loses half.** It
+asserted, against a real browser's own record of its requests, that no page
+asked for `topology-` and that each asked for the spine exactly as often as
+it should. The first half has nothing left to catch, so it went; the second
+is what still says `sources.html` does not fetch 817.8 KB to list books.
+The browser suites run and pass here, so that is checked and not assumed.
+
+**Two documented things that were already stale got fixed in passing**, both
+contradicted by the index section rather than by this run: `ARCHITECTURE.md`
+still said the sources index carries `citations` (H3b moved them to the citer
+directory), and its extension-points table still called `search-<hash>.json`
+reserved and unnecessary (H3a-1 emits it).
+
+Before that, H3b (`docs/health/h3b-brief.md`), the health cycle's
 seventh run: **every page reads the spine, no page asks for the topology,
 and the citer rows have left the index every page loads whole.** One commit
 per page — the atlas, entry, narratives and sources, contribute, review —
@@ -3575,6 +3635,35 @@ gave that to the map and the timeline, and M25 did not widen it.
      presences and relations, which have no file anybody fetches: about
      18 KB of spine not spent. The edge tuple is six elements now, not five
      (A2), because an edge's argument is fetched like any other record.
+227. **The topology object stays; only its file goes.** The brief has
+     `build-index.mjs` and `validate/core.js` stop emitting
+     `topology-<hash>.json`, and `core.js`'s own comment said `citesCount`
+     "goes with the topology in H3c". `buildTopology` still runs on every
+     index build and still writes `citesCount`: the spine is a projection
+     of it, `checkRules` reads it — the contribution form and the review
+     editor validate an edit against a topology-shaped universe in the
+     browser — and it is what `tests/spine-loader.test.mjs` compares the
+     spine against, which is how a `buildSpine` that quietly dropped a
+     record would be caught. Removing the number would have made that
+     comparison assert 0 against 0 on every record. Nothing is serialised;
+     no file holds this shape.
+228. **`loadAtlas` keeps its name, and `createAtlas` stays exported.** The
+     brief allows keeping the name where it is cheaper for callers, and it
+     is: the flag went and the three pages did not. `createAtlas` is not a
+     second loader either — it is the assembly `createAtlasFromSpine`
+     delegates to once the spine's lists are expanded, and the tests that
+     build an atlas out of a hand-written universe or out of
+     `buildTopology`'s own output go through it.
+229. **`writeIndex` did not delete the topology files; this run did.** The
+     prune loop removes what a fresh build does not name *and* what `HASHED`
+     matches (deviation 218), so narrowing `HASHED` to
+     `spine|search|sources|review` left the two committed files unnameable
+     by the tool. Keeping `topology` in the pattern purely to prune them
+     would have kept the word in the code for ever and failed the brief's
+     `git grep`, so they were removed with `git rm` in the same commit. A
+     working tree built before this run keeps a stale
+     `data/index/topology-<hash>.json` that no tool reads, writes or
+     compares; deleting it is the whole of the cleanup.
 
 ## Dates to verify
 
