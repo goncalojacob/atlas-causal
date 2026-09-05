@@ -404,6 +404,8 @@ function benchSearch() {
     }), `→ ${search(entries, query, { limit: 8 }).total} matches of ${entries.length}`);
   }
 
+}
+
 // --- the tools -------------------------------------------------------------
 //
 // The three the health review timed and H4d is about: the cross-record rules
