@@ -25,7 +25,7 @@
 //     pattern BEFORE any path is built, exactly as bundle-to-files.mjs does
 //     it, so "../../.github/workflows/x.yml" is rejected as an id and never
 //     reaches the filesystem;
-//   - the bundle is validated as a unit against the topology on disk, and
+//   - the bundle is validated as a unit against the records on disk, and
 //     nothing is written unless it passes.
 
 import { createServer as createHttpServer } from 'node:http';
@@ -177,9 +177,11 @@ export async function saveBundle(bundle, { dataDir, schemaDir, target = null } =
   const polygons = await readRegionPolygons(dataDir);
   const deriveRegion = polygons ? createRegionDeriver(polygons) : undefined;
 
-  // The topology the rules are checked against is the one on disk: a record
-  // under validation shadows its own entry in it (checkRules builds the
-  // universe that way), so an edit is judged as the atlas would be after it.
+  // The topology the rules are checked against is built from the records on
+  // disk: a record under validation shadows its own entry in it (checkRules
+  // builds the universe that way), so an edit is judged as the atlas would
+  // be after it. No file holds this shape — build-index.mjs builds it the
+  // same way and writes only the spine it projects.
   const current = buildTopology(onDisk, regions, { deriveRegion });
   const schemas = await readSchemaFiles(schemaDir);
   const { errors, warnings } = validate(bundle.records, current, schemas);

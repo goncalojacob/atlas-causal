@@ -83,7 +83,7 @@ export function chromeArgs(chrome, { url, file, width, height }) {
   return [chrome, [
     '--headless', '--disable-gpu', '--no-sandbox', '--hide-scrollbars',
     `--window-size=${width},${height}`,
-    // Long enough for the topology, a geometry shard and two typefaces; the
+    // Long enough for the spine, a geometry shard and two typefaces; the
     // browser advances its own clock, so this is not a sleep.
     '--virtual-time-budget=20000',
     `--screenshot=${file}`,
