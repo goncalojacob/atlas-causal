@@ -27,10 +27,9 @@ import { createLinearScale } from './timeline-scale.js';
 import { clusterPoints } from './cluster.js';
 import { fromAstronomical, formatYear } from './util/dates.js';
 import { resolveWindow, overlaps, decadeOf, zoomWindow } from './util/window.js';
-import { horizonBand, horizonSet } from './horizon.js';
-import { narrativeSet } from './narrative.js';
-import { lensSet } from './lens.js';
-import { chainEdges, walkOrSelect } from './chain.js';
+import { horizonBand } from './horizon.js';
+import { workingSet, heldSet } from './emphasis.js';
+import { walkOrSelect } from './chain.js';
 import { lanesFor, rowLanes, laneOf, barBox } from './lanes.js';
 import { eventsInView } from './util/viewport.js';
 
@@ -457,18 +456,21 @@ export function createTimeline(container, { atlas, state, createScale = createLi
     root.replaceChildren();
     drawn = new Map();
     const window = resolveWindow(s, atlas.extent);
-    // The lens removes rather than dims: an event outside it is not drawn
-    // faded, it is not drawn (lens.js).
-    const lens = lensSet(atlas, s);
+    // What the reader is working with, from the one place that decides it
+    // (emphasis.js). The lens removes rather than dims: an event outside it
+    // is not drawn faded, it is not drawn (lens.js).
+    const working = workingSet(atlas, s);
+    const lens = working.lens;
     const inLens = lens ? atlas.activeEvents.filter((e) => lens.has(e.id)) : atlas.activeEvents;
-    const pathIds = new Set(chainEdges(atlas, s.chain).flatMap((e) => [e.from, e.to]));
+    const pathIds = new Set([...working.path, ...working.selected]);
     // And then the map's viewport, which composes with the lens rather than
     // replacing it: the lens says which events exist, the box says which of
     // them are on screen. What the reader is holding is exempt from the box
-    // and never from the lens (viewport.js).
-    const held = new Set(pathIds);
-    if (s.selected) held.add(s.selected);
-    const shown = eventsInView(inLens, s.bbox, atlas.places, { keep: held, regions: atlas.regionBoxes });
+    // and never from the lens (viewport.js) — and what the reader is holding
+    // is the whole working set now, not the walk alone: an actor's events and
+    // an open narrative's walk were being taken away by a box the reader had
+    // panned somewhere else.
+    const shown = eventsInView(inLens, s.bbox, atlas.places, { keep: heldSet(working), regions: atlas.regionBoxes });
     note.hidden = !s.bbox;
     if (s.bbox) {
       const n = shown.length;
@@ -478,18 +480,13 @@ export function createTimeline(container, { atlas, state, createScale = createLi
     // pane's height; before the lanes, because they are laid out into it.
     measure();
     // A second emphasis, distinct from the path's: the events of the actor
-    // whose card is open. Through resolve(), so a former id in the URL
-    // highlights the same actor the panel is showing.
-    const actor = s.actor ? atlas.resolve(s.actor) : null;
-    const actorIds = actor && actor.kind === 'actor'
-      ? new Set((atlas.eventsByActor.get(actor.id) ?? []).map((a) => a.event.id))
-      : null;
-    // The whole of an open narrative's walk, so the lanes show where it is
-    // going and not only the step reached.
-    const narrativeIds = narrativeSet(atlas, s);
-    // What the selected event had led to by the horizon year, faded by how
-    // far out it is. Empty unless the reader chose a year (horizon.js).
-    const reachable = horizonSet(atlas, s);
+    // whose card is open; the whole of an open narrative's walk, so the lanes
+    // show where it is going and not only the step reached; and what the
+    // selected event had led to by the horizon year, faded by how far out it
+    // is. All three are the working set's.
+    const actorIds = working.actor;
+    const narrativeIds = working.narrative;
+    const reachable = working.reachable;
 
     // The lanes, from the one file that decides what a lane is. Packing keeps
     // the walked path and the events of one place together where a row has

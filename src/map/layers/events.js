@@ -129,7 +129,7 @@ export function createEventsLayer(group, projection, { pointOf, onSelect, onClus
   return {
     render({
       events, window: timeWindow = null, selected, pathIds, actorIds = null, narrativeIds = null, reachable = null,
-      chainEdges, consequenceEdges, eventById, k = 1, view = null, spread = null,
+      alone: drawnAlone, kept, chainEdges, consequenceEdges, eventById, k = 1, view = null, spread = null,
     }) {
       // Every mark is drawn again on every render, so a mark activated from
       // the keyboard would take the focus back to the document with it. What
@@ -169,24 +169,19 @@ export function createEventsLayer(group, projection, { pointOf, onSelect, onClus
         return mark;
       };
 
-      // Everything the reader is currently working with keeps its own mark,
-      // in the window or out of it.
-      const drawnAlone = new Set([...chainEdges, ...consequenceEdges].flatMap((e) => [e.from, e.to]));
-      if (selected) drawnAlone.add(selected);
-      for (const id of pathIds) drawnAlone.add(id);
-      if (actorIds) for (const id of actorIds) drawnAlone.add(id);
-      // Where the walk is going is drawn mark by mark: a narrative swallowed
-      // by a cluster would be a walk the reader cannot see ahead of.
-      if (narrativeIds) for (const id of narrativeIds) drawnAlone.add(id);
-
-      // Drawn at all, in the window or out of it: what the reader is working
-      // with, plus the reachable set when a horizon is open — an answer to
-      // "what did this lead to by 2011" that the band had hidden would not be
-      // an answer. Kept is not the same as alone: a reachable event still
-      // joins a stack, or forty of them in Lisbon would be forty circles on
-      // one point.
-      const kept = new Set(drawnAlone);
-      if (reachable) for (const id of reachable.keys()) kept.add(id);
+      // `alone` is everything the reader is currently working with, which
+      // keeps its own mark in the window or out of it — a chain that vanished
+      // into a cluster would be worse than no cluster at all, and a walk
+      // swallowed by one is a walk the reader cannot see ahead of. `kept` is
+      // the wider set that is drawn at all: the same, plus the reachable set
+      // when a horizon is open, since an answer to "what did this lead to by
+      // 2011" that the band had hidden would not be an answer. Kept is not
+      // the same as alone — a reachable event still joins a cluster, or forty
+      // of them in Lisbon would be forty circles on one point.
+      //
+      // Both come from emphasis.js, because the timeline and the graph draw
+      // the same idea and the three used to assemble it differently (health
+      // review A, finding 27).
 
       const visible = [];
       for (const event of events) {

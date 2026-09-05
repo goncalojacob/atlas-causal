@@ -27,9 +27,8 @@ import { overlaps, resolveWindow } from '../util/window.js';
 import { convergence } from '../graph.js';
 import { EDGE_TYPE_IDS } from '../vocab.js';
 import { chainEdges as walkedEdges, walkOrSelect } from '../chain.js';
-import { horizonSet, horizonBand } from '../horizon.js';
-import { narrativeSet } from '../narrative.js';
-import { lensSet } from '../lens.js';
+import { horizonBand } from '../horizon.js';
+import { workingSet, heldSet } from '../emphasis.js';
 import { arrangementOf } from './arrangement.js';
 import { layoutGraph, stackLayout, MIN_ZOOM, MAX_ZOOM } from './layout.js';
 import { exportButton } from '../share.js';
@@ -344,37 +343,37 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
     arrange(s);
     note.hidden = !s.bbox;
     const timeWindow = resolveWindow(s, atlas.extent);
+    // What the reader is working with, from the one place that decides it
+    // (emphasis.js): the same sets the map and the timeline draw, so a fourth
+    // picture is a fourth reader of that function and not a fourth copy.
+    const working = workingSet(atlas, s);
     const chainEdges = walkedEdges(atlas, s.chain);
-    const pathIds = new Set(chainEdges.flatMap((e) => [e.from, e.to]));
-    if (s.selected) pathIds.add(s.selected);
+    const pathIds = new Set([...working.path, ...working.selected]);
     const chainEdgeIds = new Set(chainEdges.map((e) => e.id));
     const consequences = s.selected ? (atlas.adjacency.out.get(s.selected) ?? []) : [];
     const consequenceIds = new Set(consequences.map((e) => e.id));
 
-    // The other branches that fed the selected event, computed exactly as
-    // the panel computes them, so the picture and the list agree.
-    const converging = new Set();
+    // The other branches that fed the selected event; their *edges* are what
+    // this view draws, and emphasis.js has already answered which events they
+    // are, so the picture and the panel's list cannot disagree.
+    const converging = working.converging;
     const convergingEdges = new Set();
     if (s.selected && atlas.events.has(s.selected)) {
       for (const branch of convergence(atlas.adjacency, s.selected, [...pathIds])) {
-        converging.add(branch.event.id);
         convergingEdges.add(branch.edge.id);
       }
     }
 
     // The same lens the arrangement was built from; what it kept is drawn
     // one event to a node.
-    const lens = lensSet(atlas, s);
-    const actor = s.actor ? atlas.resolve(s.actor) : null;
-    const actorIds = actor && actor.kind === 'actor'
-      ? new Set((atlas.eventsByActor.get(actor.id) ?? []).map((a) => a.event.id))
-      : null;
+    const lens = working.lens;
+    const actorIds = working.actor;
     // The whole of an open narrative's walk: where it is going, not only
     // where the reader has got to.
-    const narrativeIds = narrativeSet(atlas, s);
+    const narrativeIds = working.narrative;
     // What the selected event had led to by the horizon year, faded by how
     // far out it is. Empty unless the reader chose a year (horizon.js).
-    const reachable = horizonSet(atlas, s);
+    const reachable = working.reachable;
 
     const inWindow = new Map(laid.nodes.map((n) => [n.id, overlaps(n.event.when, timeWindow)]));
     const k = transform.k;
@@ -384,20 +383,10 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
     // a chain that vanished into a stack would be worse than no stack at
     // all, and the answer to "what else fed this" cannot be inside a mark
     // that does not say so.
-    const alone = new Set();
-    if (s.selected) alone.add(s.selected);
-    for (const id of pathIds) alone.add(id);
-    for (const edge of [...chainEdges, ...consequences]) {
-      alone.add(edge.from);
-      alone.add(edge.to);
-    }
-    for (const id of converging) alone.add(id);
-    // A lens has already taken everything else away; what it kept is what
-    // the reader asked to see, one by one.
-    if (lens) for (const id of lens) alone.add(id);
-    for (const id of reachable.keys()) alone.add(id);
-    if (narrativeIds) for (const id of narrativeIds) alone.add(id);
-    if (actorIds) for (const id of actorIds) alone.add(id);
+    // The graph, unlike the map, never stacks the reachable set: the horizon
+    // is the answer this picture exists to draw, and a band inside a stack is
+    // a band the reader cannot read off.
+    const alone = heldSet(working, { lens: true, reachable: true });
 
     stacked = stackLayout(laid, { k, alone });
     // A stack is in the window if any event under it is, and in the horizon

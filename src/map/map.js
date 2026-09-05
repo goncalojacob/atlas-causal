@@ -13,9 +13,7 @@ import { chainEdges, walkOrSelect } from '../chain.js';
 import { createEventsLayer } from './layers/events.js';
 import { DEEPEST_ZOOM } from '../cluster.js';
 import { resolveWindow } from '../util/window.js';
-import { horizonSet } from '../horizon.js';
-import { narrativeSet } from '../narrative.js';
-import { lensSet } from '../lens.js';
+import { workingSet, heldSet } from '../emphasis.js';
 import { normalizeBbox } from '../state.js';
 import { exportButton } from '../share.js';
 
@@ -323,45 +321,46 @@ export function createMap(container, { atlas, state, onCluster = null }) {
     // border is a state of affairs at a moment, an event is an interval.
     const timeWindow = resolveWindow(s, atlas.extent);
 
-    // The lens removes rather than dims, and it removes from everything: the
-    // marks, the lines of the chain, the actor's emphasis and the horizon's
-    // reachable set alike. Anything kept out of the filter and let back in
-    // through one of those would be an event the lens says is not there,
-    // drawn.
-    const lens = lensSet(atlas, s);
+    // What the reader is working with, from the one place that decides it
+    // (emphasis.js). The lens is applied to every part of it there: it
+    // removes rather than dims, and it removes from the marks, the lines of
+    // the chain, the actor's emphasis and the horizon's reachable set alike.
+    const working = workingSet(atlas, s);
+    const lens = working.lens;
     const kept = (id) => !lens || lens.has(id);
-    const keep = (set) => (set && lens ? new Set([...set].filter(kept)) : set);
 
+    // The two lists of *edges*, which are lines and not marks: the ids of
+    // their ends are in the working set, the edge objects are needed here.
     const walked = chainEdges(atlas, s.chain)
       .filter((e) => kept(e.from) && kept(e.to));
-    const pathIds = new Set(walked.flatMap((e) => [e.from, e.to]));
-    if (s.selected && kept(s.selected)) pathIds.add(s.selected);
     const consequenceEdges = (s.selected ? (atlas.adjacency.out.get(s.selected) ?? []) : [])
       .filter((e) => kept(e.from) && kept(e.to));
+    // A selected event is on the path it is the head of, which is what makes
+    // its mark madder rather than merely ringed.
+    const pathIds = new Set([...working.path, ...working.selected]);
     // Through resolve(), so a former id in the URL highlights the same
     // actor the panel is showing.
     const actor = s.actor ? atlas.resolve(s.actor) : null;
-    const actorIds = keep(actor && actor.kind === 'actor'
-      ? new Set((atlas.eventsByActor.get(actor.id) ?? []).map((a) => a.event.id))
-      : null);
     // Drawn before the marks so the marks are appended over them, and only
     // when the layer is on: an off layer costs no fetch.
     if (s.layers.includes('territories')) {
       presences.render({ year: timeWindow ? timeWindow.to : null, actorId: actor && actor.kind === 'actor' ? actor.id : null, onReady: () => render(state.get()) });
     }
-    const reachable = horizonSet(atlas, s);
     const result = events.render({
       events: lens ? atlas.activeEvents.filter((e) => lens.has(e.id)) : atlas.activeEvents,
       window: timeWindow,
       selected: s.selected,
       pathIds,
-      actorIds,
+      actorIds: working.actor,
       // The whole walk, when one is open: where the narrative is going, not
-      // only where the reader has got to (narrative.js). A narrative
-      // suspends the lens, so there is nothing to filter out of it.
-      narrativeIds: narrativeSet(atlas, s),
+      // only where the reader has got to (narrative.js).
+      narrativeIds: working.narrative,
       // Empty unless the reader has chosen a horizon year (horizon.js).
-      reachable: lens ? new Map([...reachable].filter(([id]) => lens.has(id))) : reachable,
+      reachable: working.reachable,
+      // Everything the reader is holding keeps a mark of its own; the wider
+      // set is what is drawn at all, in the window or out of it.
+      alone: heldSet(working),
+      kept: heldSet(working, { reachable: true }),
       chainEdges: walked,
       consequenceEdges,
       eventById: atlas.events,
