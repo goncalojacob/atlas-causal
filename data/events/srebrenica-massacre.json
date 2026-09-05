@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "srebrenica-massacre",
   "kind": "event",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,11 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": null,
+  "revised": "2026-09-05",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "m40-retracted"
+    ],
+    "note": "Retracted in M40b: the killing of more than eight thousand Bosniak men and boys in July 1995, the first legally recognised genocide in Europe since 1945. The atlas holds nothing else in the Balkans after 1923 — no Bosnian war, no Dayton, no tribunal at The Hague, and the Yugoslav wars as a series were among the candidates the import refused for want of a lane. There is no Portuguese link. It would need the Bosnian war as a record before it had an honest edge."
   },
   "wikidata": "Q170334",
   "sitelinks": 69,
