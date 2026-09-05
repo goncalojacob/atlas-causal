@@ -348,9 +348,14 @@ a consequence of — and not for every proper noun.
 `tools/import/cshapes.mjs`, and both are **CC BY-NC-SA 4.0**, not the CC BY-SA
 4.0 of everything else under `data/`. So are the actor records the import
 created — they live in `data/actors/` beside the hand-written ones and are
-told apart by their `authors`, which name the import, and by their `license`.
-The validator enforces that: only an import listed in `IMPORT_AUTHORS`
-(`src/validate/rules.js`) may put the NC-SA licence on an actor.
+told apart by their `origin`, which names the import that made them, and by
+their `license`. The validator enforces that: only an import listed in
+`NC_ORIGINS` (`src/origin.js`) may put the NC-SA licence on an actor, and it
+reads `origin.tool` rather than a name in `authors`, so somebody named exactly
+like the import cannot relicense a record. Which licence covers which
+directory, and whom each asks to be named, is the table at the head of
+`data/LICENSE` and the `licenses` block of `data/index/manifest.json`; a card
+or an entry page showing NC material says so on the page.
 
 Practically, for a contributor: **do not copy anything out of a presence
 record, an imported actor record or a geometry shard into a record you are
@@ -452,10 +457,14 @@ something is an ordinary pull request against it.
 What the import may then do to an existing record is deliberately small: it
 fills in `wikidata`, `wikipedia` and `sitelinks` where they are **absent**,
 and nothing else. It never changes a value, never touches your summary, your
-dates or your citations, never writes an edge, and never puts its name in
-your `authors`. Records it creates are marked `imported-facts` and carry a
-placeholder summary that says so; replacing that with a real account is what
-`review.html` is for.
+dates or your citations, never writes an edge, never puts its name in your
+`authors`, and never claims your record's `origin` — that says who *wrote* a
+record, not who has touched it. **And once a record has been signed
+(`review.status: reviewed`) it stops there entirely**: it reports the record
+and writes nothing, because what you vouched for is not an automated writer's
+to change. Records it creates are marked `imported-facts`, carry
+`review.status: draft` and a placeholder summary that says so; replacing that
+with a real account is what `review.html` is for.
 
 `node tools/validate.mjs` checks the file. The import itself runs in a GitHub
 Action on a branch called `import/…`, because it is the only thing in this

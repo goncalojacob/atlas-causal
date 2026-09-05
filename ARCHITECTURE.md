@@ -321,7 +321,9 @@ and nothing that was drawn before is drawn differently.
 
 *A record may say where else the same thing is catalogued.* `wikidata`
 (`^Q[1-9][0-9]*$`), `wikipedia` (language code → article title) and
-`sitelinks` (an integer), all optional, on `event`, `actor` and `place` —
+`sitelinks` (`{ count, on }` — a count of somebody else's database with the
+day it was read, not a fact of the thing), all optional, on `event`, `actor`
+and `place` —
 the three kinds that are about a thing in the world. An edge and a narrative
 are arguments *about* things, and nobody else's database has an item for
 them. The fields are **additive and import-written**: M16's tool writes them
@@ -354,7 +356,7 @@ citation list can say: an edge may not be `consensus` when **every**
 supporting citation is a Wikipedia record. An encyclopedia reports
 scholarship rather than being it. `WIKIPEDIA_SOURCES` in `rules.js` is that
 list, and adding an edition adds a line to it, exactly as adding an import
-adds one to `IMPORT_AUTHORS`. Deliberately not folded into rule 9: that rule
+adds one to `NC_ORIGINS` in `src/origin.js`. Deliberately not folded into rule 9: that rule
 asks whether two authors are independent and this one asks what kind of
 thing was cited.
 
@@ -706,8 +708,8 @@ arrived under CC BY-NC-SA 4.0: a licence CC BY-SA cannot absorb in either
 direction. That is the whole reason the architecture kept imported geometry
 in its own directory from the start, and the isolation is now real rather
 than planned — a licence enum with a fourth value, a per-directory rule, and
-one named exception (`IMPORT_AUTHORS`) for the actor records an import has
-to create. Three things the data decided rather than this file: a presence
+one named exception (`NC_ORIGINS`, keyed on `origin.tool`) for the actor
+records an import has to create. Three things the data decided rather than this file: a presence
 carries `dependencyKind` beside `dependencyOf`, because how a territory was
 held is a different fact from by whom; `dependencyKind` may stand without a
 `dependencyOf`, because Danzig was a League of Nations mandate and the
@@ -960,15 +962,37 @@ later as `i18n` overlays; the base never changes.
   Action or derived from git at index time. The one exception is signing a
   record in `review.html` through `tools/serve.mjs`, on the maintainer's own
   machine (revision 13).
-- `review`: optional, `{ "flags": ["date"], "note": "…", "citations": {…} }`.
-  What still wants checking on this record and why — its own standing, never a
-  claim about the world. `review.html` filters on the flags; signing removes
-  the block. `citations` maps a **cited source's id** to
-  `{ "verified": { "by", "on" } }`: which of the works this record names a
-  person has opened and checked against, which is a different act from
-  signing and often a later one. Rule 3 checks the key is a source the record
-  cites. It is a flag and not a gate — the validator counts what is
-  unchecked, the queue and the dashboard show it, Sign warns and signs.
+- `origin`: optional, `{ "tool": "cshapes | wikidata | assistant | form",
+  "run": "…" }`. **Which writer created this record**, written once by
+  whatever created it and never by an enrichment pass that fills in a field on
+  somebody else's record (rule 29; `CREATOR_ONLY` in
+  `tools/import/identity.mjs`). Absent means a person wrote it by hand. It
+  exists because whether a record is reviewed, who is legally its author for
+  attribution, and which process wrote it are three facts, and all three used
+  to be inferred from `authors[].name` matching one of three literal strings:
+  a rename of any of them silently changed two of the three, and a person
+  named exactly like an import could relicense an actor (health review A,
+  findings 22 and 24; review B, 31). `src/origin.js` is the vocabulary and the
+  predicates; `authors` is attribution and nothing else.
+- `review`: optional, `{ "status": "draft", "signedBy": […], "flags": ["date"],
+  "note": "…", "citations": {…} }`. How far this record has been read — its own
+  standing, never a claim about the world. `status` is `draft` where nobody has
+  read it and `reviewed` where somebody has, and `reviewed` requires `signedBy`
+  (rule 28): **that, and not a name in `authors`, is what "unreviewed" means**,
+  so a contribution or a later import that arrives unread is in the same queue
+  (review A, finding 8). `flags` and `note` are the reviewer's to clear and
+  signing clears them. `citations` is not: it maps a **cited source's id** to
+  `{ "verified": { "by", "on" } }` — which of the works this record names a
+  person has opened and checked against, a different act from signing and often
+  a later one — and **Sign keeps it**, having deleted it a moment after the
+  reviewer ticked it until H5b (review A, finding 7). Rule 3 checks the key is
+  a source the record cites. It is a flag and not a gate — the validator counts
+  what is unchecked, the queue and the dashboard show it, Sign warns and signs.
+- `retraction`: `{ "on": "2026-09-04", "reason": "…" }`, present exactly on a
+  retracted record (rule 27). Why it was withdrawn, written by a person like
+  any other argument, and **nothing deletes it** — the reason lived in
+  `review.note` until H5b, where signing a tombstone erased the only account in
+  the data of its being one (review B, finding 16).
 - `wikidata`, `wikipedia`, `sitelinks`: optional, on `event`, `actor` and
   `place` only, and described under Identity below.
 - `license`: enum `CC-BY-SA-4.0 | CC-BY-NC-SA-4.0 | PD | CC0-1.0 | ODbL-1.0`,
@@ -976,11 +1000,15 @@ later as `i18n` overlays; the base never changes.
   `data/presences/` may also be `CC-BY-NC-SA-4.0`, because a presence is
   usually derived from imported geometry whose licence `data/LICENSE` cannot
   absorb. `data/actors/` may be `CC-BY-NC-SA-4.0` **only** for the actor
-  records an import creates: the exception is the list `IMPORT_AUTHORS` in
-  `rules.js`, one line per import allowed to create actors, and rule 12
-  checks the record's `authors` against it. Nothing else can quietly
-  relicense an actor, and nothing NC ever enters an event, an edge or a
-  source.
+  records an import creates: the exception is the list `NC_ORIGINS` in
+  `src/origin.js`, one line per import allowed to create actors, and rule 12
+  checks the record's `origin.tool` against it. Nothing else can quietly
+  relicense an actor — a person named exactly like an import no longer can —
+  and nothing NC ever enters an event, an edge or a source. Which licence
+  covers which directory, and whom each asks to be named, is
+  `src/licensing.js`, the `licenses` block of `data/index/manifest.json` and
+  the table at the head of `data/LICENSE`; an NC-derived card and entry page
+  carry the attribution line the licence asks for (review A, finding 24).
 - `sources`: **every node and every edge cites at least one**; only `source`,
   `region` and `place` records are exempt, being facts rather than arguments.
 - `schema`: which shape the record is written against. The validator accepts
@@ -1116,7 +1144,7 @@ so the dashboard can say which records have one.
 ```json
 "wikidata": "Q186496",
 "wikipedia": { "en": "Carnation Revolution", "pt": "Revolução dos Cravos" },
-"sitelinks": 62
+"sitelinks": { "count": 62, "on": "2026-09-04" }
 ```
 
 Three optional fields on the three kinds that are about a thing in the world:
@@ -1856,7 +1884,8 @@ present, are within WGS84, and neither needs a `region`, having no lane. A
 merged or retracted actor may not be referenced by an active event **or an
 active presence**, and an active presence may not name one. A presence's
 `actor` and `dependencyOf` resolve to actor records. And rule 12's licence
-check is per directory with exactly one hole in it: `IMPORT_AUTHORS`.
+check is per directory with exactly one hole in it: `NC_ORIGINS`, which is
+`origin.tool` and not a name in `authors`.
 
 Warnings: arrow of time fails the strict bound (`from.start.max ≤
 to.start.min`); an event with degree zero; a source with no citers; an actor
@@ -1875,7 +1904,7 @@ from two sources of which either may be the wrong one.
 | Whole world | `regions.json`, one polygon per new lane, more records | `region` derived from geometry, never stored on records |
 | Ancient / deep time | `timeline-scale.js`, `land-<epoch>` files, manifest | Interval with four bounds and `end: null`; single `toAstronomical()`; manifest lists land by epoch |
 | Territories ● | built in M5: `data/presences/`, `data/geo/presences/`, `schema/v1/presence.json`, rule 17, the spine's `presences`, `layers/presences.js`, `tools/import/` | `presenceType` still has three unused values for diffuse eras; `within: <presence-id>` additive on `where` is untouched |
-| Another geometry import | one file under `tools/import/`, one paragraph in `data/geo/LICENSE`, one line in `IMPORT_AUTHORS` | the licence enum and the per-directory rule; shards named `<from>-<to>.json` and listed in the manifest |
+| Another geometry import | one file under `tools/import/`, one paragraph in `data/geo/LICENSE`, one row in `src/licensing.js`, one line in `ORIGIN_TOOLS` and one in `NC_ORIGINS` | the licence enum and the per-directory rule; shards named `<from>-<to>.json` and listed in the manifest |
 | A window of time ● | built in M6: `{ from, to }` in `state.js`, `util/window.js`, the band in `timeline.js` | either bound may be null and the views resolve it, so a deeper scale changes `timeline-scale.js` and nothing else |
 | Places ● | built in M9: `data/places/`, `schema/v1/place.json`, rule 18, the spine's `places`, `place` on an event, the card and `?place=` | a place has a `summary` nobody has to write and an `aliases` list, so a place that turns out to be two can be split without breaking a URL; `tools/migrate-places.mjs` is kept as the record of how the coordinates moved |
 | Actors ● | built in M4: `data/actors/`, `schema/v1/actor.json`, rule 14, the spine's `actors`, the card and the highlight | roles still free text; the manifest's `roles` is the evidence for closing the vocabulary |
@@ -1889,7 +1918,7 @@ from two sources of which either may be the wrong one.
 | Source pages and the bibliography ● | built in M10: `citations` and `citationCount` in the sources index, `?source=`, `sources.html` | the citers are the index's, so a narrative kind joins the grouping by appearing in `CITER_ORDER` and nothing else changes |
 | The horizon ● | built in M10: `shortestPaths`/`pathTo`/`reachableBy` in `graph.js`, `horizon.js`, `?horizon=` | the year is a bound on `start.min`, so a bucketed deep-time scale changes nothing here; the reachable set is a `Map<id, depth>` and a view that wants five bands instead of three changes one function |
 | The lens and the grouping ● | built in M14: `src/lanes.js`, `src/lens.js`, `src/grouping.js`, `focus`/`group`/`lanes` in the state, the bands of `graph-view/layout.js` | a fifth grouping is one case in `lanesFor` and one option in the picker; the cap and the "Other" lane are one constant each; `region` returning as the default is one value in `defaultState()` |
-| Identity and the link out ● | built in M15: `wikidata`/`wikipedia`/`sitelinks` on three kinds, rules 21 and 22, `src/wikipedia.js`, the link on three cards, the titles in the search, the three Wikimedia source records | the fields are additive and import-written, so a second catalogue is three more optional keys and one more `identityOf`; `sitelinks` is stored and read by nothing, waiting for the decision it is evidence for |
+| Identity and the link out ● | built in M15: `wikidata`/`wikipedia`/`sitelinks` on three kinds, rules 21 and 22, `src/wikipedia.js`, the link on three cards, the titles in the search, the three Wikimedia source records | the fields are additive and import-written, so a second catalogue is three more optional keys and one more `identityOf`; `sitelinks` is stored and read by nothing, waiting for the decision it is evidence for, and carries the day it was read so that the decision is taken against a dated number |
 | Checking a citation ● | built in M15: `review.citations`, the dashboard's boxes, the queue's count, the validator's line | keyed by the source id rather than by position, so editing the citation list does not move anybody's ticks; a flag and not a gate, so making it one later is one line in Sign |
 | Level of detail in the graph ● | built in M25: `alone` and `mergeEdges` in `src/cluster.js`, `stackLayout` in `src/graph-view/layout.js`, stacks and merged lines in `graph-view.js`, a `graph` case in `panel/cluster.js` | the threshold and the zoom limit are one constant each and live together, so a denser atlas is one number; the never-stacked set is one `Set` built in `render`, so a new thing the reader works with joins it in one line |
 | Editorial emphasis on the map | a `prominence` field on the event record; `cluster.js` reads `prominence ?? weight` | ○ reserved by this line: derived `weight` in the index is the only measure now, and it is mechanical. `sitelinks` is **not** it: how many encyclopedias wrote about something is not this atlas's judgement of it |
@@ -2020,7 +2049,8 @@ On 2 September 2026, in the building of M5:
   into a CC BY-SA record, in either direction.
 - **`CC-BY-NC-SA-4.0` joins the licence enum**, allowed under
   `data/presences/` and — only for the actor records an import creates —
-  under `data/actors/`, with `IMPORT_AUTHORS` as the whole of the exception.
+  under `data/actors/`, with `NC_ORIGINS` as the whole of the exception
+  (`IMPORT_AUTHORS`, an author-name list, until H5b).
 - **`dependencyKind` is a field of its own**, beside `dependencyOf`: how a
   territory was held is a different fact from by whom, and one can be known
   without the other.
@@ -2100,5 +2130,31 @@ On 4 September 2026, by the owner, and built in M19:
   and controls, and the table lives in `tests/contrast.test.mjs`.
 - **Still no dark mode.**
 
+On 5 September 2026, in the building of H5b (the health cycle's envelope):
+
+- **`authors` is attribution and nothing else.** Whether a record has been
+  read, which process wrote it, and whom the licence asks to be named are
+  three facts and now three fields: `review.status` with `review.signedBy`,
+  `origin.tool`, and the table in `src/licensing.js`. All three were read off
+  one author name matched against a literal string, and a rename of any of
+  them changed two of the three without a record moving.
+- **`origin` is the creator's and nobody else's.** An enrichment pass fills in
+  a gap on somebody else's record and comes away owning nothing
+  (`CREATOR_ONLY` in `tools/import/identity.mjs`, rule 29).
+- **An import never rewrites a record a person has signed.** A CShapes re-run
+  rebuilds an actor from the dataset, so rewriting a signed one would erase
+  the signature and the reviewer's corrections together. It reports and
+  leaves the file alone; the run carries on.
+- **A retraction is a field, not a note.** `retraction: { on, reason }`,
+  present exactly on a tombstone, written by a person, deleted by nothing.
+- **Sign keeps the citation checks.** `flags` and `note` are the reviewer's to
+  clear; their audit trail is theirs to keep.
+- **A count of somebody else's database carries the day it was read.**
+  `sitelinks` is `{ count, on }`, and a lane a tool gave says so in
+  `regionNote` — both for the same reason: a snapshot stored as a fact is a
+  fact that quietly goes wrong.
+
 Open: when contributions open to strangers; whether the role vocabulary
-closes, and to what; which of the 89 remaining CShapes codes want splitting.
+closes, and to what; which of the 89 remaining CShapes codes want splitting;
+whether the licence enum shrinks to the three licences a directory accepts or
+rule 12 grows to the five it declares.

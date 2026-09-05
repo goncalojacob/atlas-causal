@@ -30,10 +30,12 @@ These are not preferences. Ask before breaking any of them.
   person. This one is not negotiable.
   One exception, decided by the owner on 2026-09-02: the 20th–21st century
   Portugal records under `data/` are a **test dataset drafted by the
-  assistant**. Each carries `authors: [{ "name": "Claude (assistant draft,
-  unreviewed)", "github": null }]`. They exist to exercise the model and the
-  interface, must be reviewed or rewritten by a person before the site goes
-  public, and are not a precedent for any other period.
+  assistant**. Each carries `origin: { "tool": "assistant" }`, which says who
+  wrote it, and `review: { "status": "draft" }`, which says nobody has read
+  it; the name in `authors` is attribution and decides nothing (H5b). They
+  exist to exercise the model and the interface, must be reviewed or rewritten
+  by a person before the site goes public, and are not a precedent for any
+  other period.
   Extended by the owner on 2026-09-03 to the same period's places, relations
   between actors and one example narrative drafted on 3–4 September 2026, all
   carrying the same draft marker and queued for the review dashboard.
@@ -42,13 +44,17 @@ These are not preferences. Ask before breaking any of them.
   1890–2025, that a Portuguese record connects to** — the wars, crises,
   treaties and movements the Portuguese events answer to — drafted with
   their actors and edges as the Portuguese ones were (M40); and (b) to
-  **imported world events at scale** (M42), which carry `origin: wikidata`,
-  `review.flags: ["imported-facts"]` and a summary quoting the source's
-  description, exist to stress the platform, and are not this atlas's
-  account of anything until a person signs them.
+  **imported world events at scale** (M42), which carry
+  `origin: { "tool": "wikidata" }`, `review.flags: ["imported-facts"]` and a
+  summary quoting the source's description, exist to stress the platform, and
+  are not this atlas's account of anything until a person signs them.
   `review.html` is where the exception is retired, one record at a time: it
-  lists everything still carrying the marker, and signing a record replaces
-  the marker with the reviewer. `node tools/validate.mjs` prints what is left.
+  lists everything whose `review.status` is `draft` — whoever wrote it, so a
+  contribution or a later import that arrives unread is in the same queue —
+  and signing puts the reviewer in `authors` and in `review.signedBy` and the
+  status at `reviewed`. `node tools/validate.mjs` prints what is left.
+  **An import never rewrites a record whose `review.status` is `reviewed`**:
+  it reports and leaves the file alone.
 
 ## Commands
 
@@ -109,6 +115,8 @@ narratives.html            every narrative as a card, grouped by the centuries i
 review.html                the review queue; a maintainer's page, unlinked, and the only one that can write
 README.md  CONTRIBUTING.md for people reading the repository
 src/main.js                bootstrap only: load, wire views; ?fixtures=1 reads tests/fixtures/data/
+src/origin.js              who wrote a record and how far it has been read: a leaf module with the two closed vocabularies — the writers `origin.tool` may name, the two `review.status` values — and the predicates the licence hole, the review queue and the two imports read instead of matching an author's name against a string
+src/licensing.js           which licence covers which directory, whom each asks to be named, and the one line an NC-derived card and entry page owe it. The manifest's `licenses` block and the table at the head of `data/LICENSE` are the same thing said twice more, and a test holds the three together
 src/kinds.js               the record kinds: a leaf module, one entry per kind — directory, schema file, licences, identity and body, its citation, actor and step lists, its form fields' names, its URL parameter and its labels. Everything that used to list the kinds imports it
 src/vocab.js               the closed vocabularies: a leaf module with the edge types, the relation types, the groupings and the lens kinds, and the id patterns built from them. `state.js` imports it rather than copying it
 src/emphasis.js            pure: `workingSet(atlas, state)` — the selection, the walked path, the consequences, the converging branches, the open actor, an open narrative's walk, the horizon and the lens, as id sets, with the lens applied to all of them. The three views draw from it instead of each assembling it
@@ -200,8 +208,12 @@ A **presence** says which ground an actor held and when, with an outline
 under `data/geo/presences/`. Territories were imported from CShapes 2.0 and
 carry **CC BY-NC-SA 4.0**, which `data/LICENSE` does not cover: never copy
 anything out of a presence, an imported actor record or a geometry shard
-into a CC BY-SA record. `IMPORT_AUTHORS` in `src/validate/rules.js` is the
-whole of that exception, and the validator enforces it.
+into a CC BY-SA record. `NC_ORIGINS` in `src/origin.js` is the whole of that
+exception — one line per import allowed to create actors, keyed on
+`origin.tool` and not on a name in `authors` — and the validator enforces it.
+Which licence covers which directory, and whom each asks to be named, is
+`src/licensing.js`, the manifest's `licenses` block and the table at the head
+of `data/LICENSE`; a card or an entry page carrying NC material says so.
 
 A **relation** is a dated, typed link between two *actors* — the link an edge
 cannot be, because an edge runs between events. `regime-of`, `succeeded`,
@@ -229,7 +241,10 @@ An event, an actor and a place may carry **identity fields** — `wikidata`,
 `wikipedia` (language → article title) and `sitelinks` — all optional, all
 additive, and written by the import rather than by hand; the contribution
 form derives only `wikidata`, from a pasted Wikidata URL, and the review
-dashboard shows all three read-only. They are identifiers and never evidence:
+dashboard shows all three read-only. `sitelinks` is `{ count, on }`: a count
+of somebody else's database changes without this record changing, so it is
+stored as a snapshot with the day it was read. They are identifiers and never
+evidence:
 the card offers "Read more on Wikipedia" as a way *out* of the atlas, and
 everything the atlas asserts stays in the record. **`sitelinks` feeds
 nothing** — not the map, not `weight`, not `prominence`. An edge may not be
@@ -253,7 +268,14 @@ on a branch called `import/…`, which commits to that branch and never to
 A record's `review` block may also say which of its citations somebody has
 opened and checked against the source (`review.citations`). That is a **flag
 and not a gate**: it is counted by the validator, shown in the queue and on
-the open record, and Sign warns about it and signs anyway.
+the open record, and Sign warns about it and signs anyway. `flags` and `note`
+are the reviewer's to clear and signing clears them; `citations` is their own
+audit trail and **Sign keeps it**.
+
+Why a record was withdrawn is `retraction: { on, reason }`, present exactly on
+a retracted record and deleted by nothing — it lived in `review.note` until
+H5b, where signing a tombstone erased the only account in the data of its
+being one. `review.html` asks for the reason before it writes anything.
 
 `confidence` separates consensus from debate. The interface shows the
 difference. Presenting a disputed link as fact is the worst mistake this project
