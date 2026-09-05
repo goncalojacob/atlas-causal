@@ -6,6 +6,132 @@ session ends. `ARCHITECTURE.md` is the target; this file is the position.
 
 ## Last updated
 
+2026-09-05, after H4c (`docs/health/h4c-brief.md`), the health cycle's
+eleventh run, on `m0` after H4a and H4b: **the timeline keeps its nodes,
+everything past the margin is one path per row, the two traversals are
+answered once per state change, and the search scan holds the best eight
+instead of sorting the whole match.** Code only; no record under `data/`
+changed and `data/index/` was not rebuilt. 794 tests.
+
+**The packing is a sweep, and the answer is the same bar for bar.**
+`packRows` looked at every row for every bar. The bars are already sorted by
+x, so a row that has room at one bar keeps it at the next: the rows now sit
+either in a heap ordered by the x they end at or in a bitset of the free
+ones, and each bar releases whatever the sweep has passed before it asks.
+First fit is then the lowest set bit; the affinity — the walked chain, or
+the same place — reads a short list of the rows carrying its key, and is not
+consulted at all when nothing is free, since a preference can only pick a
+free row; past the cap the emptiest row is the heap's top, ties going to the
+earliest row as the walk's strict `<` gave. `tests/lanes.test.mjs` keeps the
+walk this replaced and holds the two to the same row for every bar, at three
+caps, with and without the affinity. O(log rows) rather than O(rows): 1.45×
+at two hundred rows, and **level at the timeline's own cap of twenty**,
+which is deviation 242 — the guarantee is what was bought, not a number at
+this size.
+
+**The drawing is kept and updated, not emptied and rebuilt.** Every state
+change called `replaceChildren` on the whole `<svg>`. Each kind of element
+now has a layer of its own, made once, and a layer hands its children back
+to the next render (`reuse` in `util/dom.js`): the attributes that changed
+are set, the ones the render did not give are removed, and the tail is
+trimmed. A browser test watches the drawing through a `MutationObserver`
+across a selection and counts **five** elements added and five removed,
+where before it was every element in it — 319 on this dataset at a
+1960–1980 window, and tens of thousands at twenty thousand events. The
+text inside a `<title>` still changes when a bar comes to stand for another
+event; that is a text node and not a layout.
+
+**Everything past the margin is one path per row.** The stub was one
+two-pixel `<rect>` per event: at twenty thousand events and a twenty-year
+band, **16 007 of them**, none of which can be clicked, hovered or told
+apart. `density.js` turns a row's ticks into one `<path>` — the same two
+pixels wide, on the same floor, with the events on one column drawn as one
+column as tall as their number asks up to nine pixels. The scale is
+logarithmic and **absolute**, so two rows of the strip can be read against
+each other; a single far event still draws exactly the tick it drew before.
+At most one path per row, so twenty where there were sixteen thousand. This
+is a visible change and it is the one review finding 28 allowed for
+(deviation 243).
+
+**The horizon and the convergence query are answered once.** The map, the
+timeline and the graph view each asked `emphasis.js` for the working set,
+and the panel asked for the horizon's list and the convergence query again
+on top — four breadth-first walks of the corpus per click, each rebuilding
+the path of every reachable event whether or not anybody read one. Now:
+`horizon.js` is keyed by the adjacency, the event and the year; `graph.js`
+by the adjacency, the target and the walked path; `emphasis.js` keeps its
+answer against the state object the store hands every subscriber, so the
+three views share one; and `edges`, `first`, `last` and `disputed` are
+getters that walk the tree once, when read. The cache (`util/memo.js`) is
+weak on the graph and holds four answers per graph, least recently used
+first out. The breadth-first queues read by index rather than by `shift`.
+
+**What is held out of the stacks stops at the forty rows the panel lists.**
+With a horizon open on an early event the reachable set is most of the
+corpus, and holding all of it out of the stacks meant nothing stacked at all
+(health review B, finding 22). The answer is ordered by depth then year, so
+the first `SHOWN` of it are exactly the rows a reader is offered; `SHOWN` is
+`horizon.js`'s now and `panel/horizon.js` imports it.
+
+**The search scan holds the best eight per kind instead of sorting all of
+them.** One letter typed into a corpus of twenty thousand matches nearly
+every entry, and the scan copied each match into a new object, sorted the
+lot, and parsed both intervals at every comparison — to show eight rows. It
+now keeps at most `limit` per kind as it goes, allocates only for a
+candidate that beats the worst it is holding, and parses a year only when
+rank, name length and weight all tie. Since the limit is spent group by
+group and no group can give more than `limit` rows, that is everything the
+answer can use. `tests/search.test.mjs` keeps the sort-everything scan and
+holds the two to the same rows, groups and order over three seeded corpora
+and eight queries. The box also waits 120 ms before scanning, so a burst of
+typing is one scan, and Enter runs the pending one at once.
+
+**The numbers, from `node tests/bench/run.mjs` on this machine, before and
+after.** The generator is H4a's, extended with a causal graph and a place
+id; the ratio is what is worth reading, not the milliseconds.
+
+| the timeline at 20 000 events | before | after |
+|---|---|---|
+| one move of the band, a 20-year band | 6.97 ms | 6.90 ms |
+| one move of the band, a 100-year band | 11.8 ms | 11.4 ms |
+| one move of the band, a 600-year band | 19.1 ms | 19.4 ms |
+| elements drawn beyond the margin, 20-year band | 16 007 rects | **≤ 20 paths** |
+| elements rebuilt per state change | all of them | **5** |
+
+The brief asked for the wheel notch under 100 ms and the arithmetic was
+already there — H3b's window and margin had taken it down before this run.
+What H4c bought on the timeline is the DOM, which the bench cannot measure
+and the browser test can.
+
+| what one state change asks of the graph, 20 000 events | before | after |
+|---|---|---|
+| `reachableBy` on the heaviest node | 10.1 ms | **7.1 ms** |
+| four askers, each walking for itself | 39.6 ms | 27.5 ms |
+| one state change, a new selection | 39.6 ms | **10.0 ms** |
+| one state change, the selection unchanged | 39.6 ms | **2.1 ms** |
+
+A pan, a zoom, a lane change or the map's box arriving is the second row:
+nothing the traversal depends on moved, and the graph is not walked at all.
+
+| one keystroke, 24 411 entries | before | after |
+|---|---|---|
+| the scan, `"e"` — 23 744 matches | 456 ms | **1.9 ms** |
+| the scan, `"ev"` — 20 000 matches | 16.4 ms | **1.3 ms** |
+| the scan, `"event 1"` — 11 111 matches | 8.38 ms | **1.4 ms** |
+| the scan, `"zzz"` — no match | 0.83 ms | 0.99 ms |
+
+**There is no Worker for the search, and that is the brief's own
+condition** (deviation 241). The brief made one conditional on the scan
+passing 50 ms at 20k in the bench. Measured before the change it was 456 ms;
+after the algorithm it is 1.9 ms. The review of the health plan, finding 14,
+is the rule the condition was applying — algorithms first, a Worker only if
+a number still demands it — and no number does.
+
+**What was not done.** Nothing under `tools/` or `src/validate/` was opened:
+H4d owns them. The lanes' scale still stands on the whole extent of the data
+whatever the window is, as M6 decided and as the plan's review reaffirmed
+(finding 19).
+
 2026-09-05, after H4a (`docs/health/h4a-brief.md`), the health cycle's
 ninth run: **the map's grouping is a grid, it runs once at rest, and only
 what is on screen is drawn.** Code only; no record under `data/` changed and
@@ -3878,6 +4004,70 @@ gave that to the map and the timeline, and M25 did not widen it.
      forward in time. Anyone re-measuring will get different absolute
      numbers on different hardware; the ratios are what the deviations
      above lean on.
+
+241. **There is no Worker for the search, because the number stopped asking
+     for one.** The brief made a `type: 'module'` Worker with a synchronous
+     fallback conditional on the scan passing 50 ms at 20k in the bench.
+     Measured before H4c touched it, one letter cost 456 ms — well past the
+     threshold — but the review of the health plan, finding 14, is the rule
+     the condition was applying: algorithms first, a Worker only if a number
+     *still* demands it. Holding the best `limit` per kind instead of
+     sorting the whole match takes the same keystroke to 1.9 ms, so nothing
+     is offloaded, `?fixtures=1` and the relative fetch stay out of a second
+     thread, and the tested path is the only path. Should a later corpus put
+     the scan back over 50 ms, `graph-view/layout-runner.js` is the shape to
+     copy.
+
+242. **The sweep is level with the walk at the timeline's own cap, not
+     faster.** At twenty rows a walk of twenty array slots costs what a heap
+     pop, a heap push and a bitset read cost, and the first two versions of
+     the sweep were 15 % *slower* than what they replaced. It is level after
+     three changes — the free rows as a bitset rather than a second heap,
+     the top of the pending heap sunk in place rather than popped and pushed
+     back, and the affinity's key not looked up at all when nothing is free
+     — and 1.45× faster at two hundred rows, which is what `packRows` does
+     at its own default of no cap. The brief asked for the sweep and the
+     sweep is what the complexity guarantee needs; the honest number at
+     `MAX_ROWS` is a draw.
+
+243. **The stub is one path per row and no longer one rect per event, which
+     is a visible change.** Several far events landing on one two-pixel
+     column are now drawn as one column, taller. The review of the health
+     plan, finding 28, allowed for exactly this — "a faded stub or a density
+     strip" — and the brief asked for the strip; it is recorded because the
+     picture is different from H3b's and `ARCHITECTURE.md`'s section on the
+     window says so now. A lone far event is unchanged to the pixel.
+
+244. **`SHOWN` moved from `panel/horizon.js` to `horizon.js`.** Health
+     review B, finding 22, asks that what is held out of the stacks stop at
+     "the shown path plus the first `SHOWN` results", which makes one number
+     serve the panel's list and the map's and the graph's stacking. The
+     panel imports it rather than declaring its own, so the two cannot
+     drift; `emphasis.js` reads it for the cap. The cap is a ceiling and not
+     a filter — on this dataset every reachable event still fits under it.
+
+245. **The working set is cached against the state *object*, not memoised on
+     the state's value.** The store replaces rather than mutates (`state.js`
+     `set`), and hands every subscriber the same object, so identity is
+     exactly "while this state stands". A state mutated in place would keep
+     the answer it had before; nothing mutates one, and the cache is a
+     `WeakMap` so the state the reader has left takes its answer with it.
+     The graph view's own copy of this cache went in the same commit.
+
+246. **The `four askers` row of the bench measures the raw functions, and
+     the two rows beside it measure the files the views go through.** The
+     before-number in the table above comes from the first, since the
+     memoised entry points did not exist to measure; the after-numbers come
+     from the second, which is what a page actually pays. Both are printed,
+     so the comparison can be re-made either way.
+
+247. **A shared answer is shared, and nothing that reads one may write to
+     it.** `horizonResults` and `convergence` hand the same array to every
+     caller instead of building one each. Every caller today slices, counts
+     or iterates — `panel/horizon.js` slices, `emphasis.js` and
+     `graph-view.js` iterate, `panel/event.js` counts — and a caller that
+     sorted one in place would change what the other three see. It is said
+     in both files and in `util/memo.js`, because a test cannot catch it.
 
 ## Dates to verify
 

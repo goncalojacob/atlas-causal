@@ -831,6 +831,8 @@ atlas-causal/
 │   ├── citation.js               ● pure: a source as a citation, its identifiers as links, a bibliography's order
 │   ├── markdown.js               ● pure: the closed Markdown subset a `body` is written in; everything outside it comes out as text
 │   ├── cluster.js                ● pure: which marks overlap at this zoom, which of them no zoom can part, which are held out of the grouping, and how the links between two groups merge; the timeline uses it in one dimension and the graph in two
+│   ├── density.js                ● pure: everything past the margin as one path per row — two-pixel columns, as tall as the count they stand for
+│   ├── emphasis.js               ● what the reader is working with, once: the eight sets the three views draw from, kept per state change
 │   ├── search.js                 ● pure: titles and every one of an actor's names, folded and ranked
 │   ├── search-box.js             ● the input, the list and the keys
 │   ├── phone.js                  ● under 720px: what raises the panel's sheet, what a drag of its grip ends as; the layout itself is one media query
@@ -843,7 +845,7 @@ atlas-causal/
 │   │   ├── arrangement.js        ● pure: what is laid out — the band, the margin, what is held — and the key that says when again
 │   │   ├── layout-message.js  layout-worker.js  layout-runner.js   ● what crosses to a thread, the thread, and when one is worth it
 │   │   └── graph-view.js         ● the SVG: nodes, the five edge types, the window as a shade, pan/zoom, nearest-centre clicks
-│   ├── timeline.js               ● the lanes lanes.js gives, or packed unlabelled rows; the window as a band with two handles; bars stack
+│   ├── timeline.js               ● the lanes lanes.js gives, or packed unlabelled rows; the window as a band with two handles; bars stack; one layer per kind of element, kept from render to render
 │   ├── timeline-scale.js         ● linear now; the scale is injected
 │   ├── panel/panel.js            ● the shell: the container, the clicks, the load token, what every card shares
 │   ├── panel/event.js  source.js  place.js  actor.js  cluster.js   ● one card each
@@ -871,6 +873,7 @@ atlas-causal/
 │   │   └── core.js               ● validate(records, topology) — pure; runs in browser and Node
 │   ├── util/esc.js  dates.js     ● escaping; toAstronomical(), interval formatting, BCE/CE
 │   ├── util/window.js            ● pure: a null bound is the data's own; what overlaps the window; the margin the views draw beyond it; "map at Y"
+│   ├── util/memo.js              ● pure: an answer kept per graph and per key, weak on the graph and bounded within it; the horizon and the convergence query share it
 │   ├── render-key.js             ● pure: whether a view has to be drawn again — the whole state, plus what the view holds outside it
 │   ├── fonts/                    ● EB Garamond and Public Sans, woff2, self-hosted; OFL beside them, README.md says which file came from where
 │   └── style.css                 ● azulejo tokens, the eight territory hues, the type scale, the spacing scale
@@ -1550,7 +1553,12 @@ the era this dataset occupies — and past that margin:
   the event's lane, with no title, no focus and no click. The dataset
   visibly carries on past the band; it is simply not what the reader is
   looking at. Stubs are not packed, not stacked and not labelled, which is
-  the whole of the saving.
+  the whole of the saving. Since **H4c** they are also not one element
+  each: a row's ticks are one `<path>` (`density.js`), and several events
+  landing on one two-pixel column are drawn as one column, as tall as their
+  number asks up to nine pixels — an absolute scale, so two rows of the
+  strip can be read against each other. A single far event still draws the
+  tick it drew before, to the pixel.
 - the **map** and the **graph** draw **nothing**. A mark and a node are
   places to aim at, and there is no honest two-pixel version of either.
 
