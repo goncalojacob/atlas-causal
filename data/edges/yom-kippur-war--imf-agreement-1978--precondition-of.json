@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "yom-kippur-war--imf-agreement-1978--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Yom Kippur War\", revision 1373227342"
+    }
+  ],
+  "from": "yom-kippur-war",
+  "to": "imf-agreement-1978",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Portugal imported all of its oil, and the quadrupling of the price after October 1973 turned a current account that had been in surplus on emigrant remittances into a deficit that grew for four years. The revolution and decolonisation then removed the other supports at once — remittances fell as the European economies closed to migrant labour, the colonial trade ended, and half a million retornados arrived — so the crisis the Fund was called to in 1978 has more than one author. The claim here is that the oil shock is the first of them and the one that came from outside; the argument that the revolution's own economic policy did the rest is made on the Portuguese records.",
+  "dispute": null
+}

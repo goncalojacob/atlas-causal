@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "iranian-revolution--imf-agreement-1983--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Iranian Revolution\", revision 1373278840"
+    }
+  ],
+  "from": "iranian-revolution",
+  "to": "imf-agreement-1983",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The second oil shock is the revolution's: Iranian production collapsed through 1979 and the price of crude roughly doubled again, and the industrial world answered with the interest rates that produced the recession of 1980–82. Portugal met that with an economy that had not recovered from the first shock and a currency it was devaluing on a crawling peg, and the payments crisis of 1982–83 followed. As with 1978, the claim is that the external shock is one cause among several — the spending of the 1980 and 1981 governments is the other, and that argument belongs on the Portuguese records — and that this one came from Tehran.",
+  "dispute": null
+}
