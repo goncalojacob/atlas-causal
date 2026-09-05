@@ -105,3 +105,46 @@ test('the key reads membership rather than the lane ids, and the applied lens', 
     arrangementKey(state({ focus: null }), EVENTS, [], null),
   );
 });
+
+// --- the window is what is laid out (H4b) -------------------------------
+//
+// Until H4b the whole corpus was laid out and the window only decided which
+// of the coordinates were drawn, which meant paying for thirty thousand
+// events to look at a decade. The band and one period either side is now the
+// arrangement itself, and the band is therefore part of its key.
+
+test('the arrangement is the band and one period either side, and no more', () => {
+  // The whole extent: everything, as before.
+  assert.equal(arrangementOf(ATLAS, state({})).events.length, EVENTS.length);
+  // A band ending in 1900 reaches 1950 with the margin, and stops there.
+  const narrow = arrangementOf(ATLAS, state({ to: 1900 }));
+  assert.deepEqual(
+    narrow.events.map((e) => e.id).sort(),
+    ['early-0', 'early-1', 'early-2', 'early-3', 'early-4', 'late-0', 'shared'],
+  );
+  assert.notEqual(narrow.key, arrangementOf(ATLAS, state({})).key, 'moving the band moves the nodes');
+});
+
+test('what the reader is holding beyond the margin is laid out anyway', () => {
+  const narrow = state({ to: 1900, selected: 'late-3' });
+  const dropped = arrangementOf(ATLAS, narrow);
+  assert.ok(!dropped.events.some((e) => e.id === 'late-3'), 'nothing is holding it yet');
+  const held = arrangementOf(ATLAS, narrow, new Set(['late-3']));
+  assert.ok(held.events.some((e) => e.id === 'late-3'), 'a chain that ran off the band is still a chain');
+  assert.notEqual(held.key, dropped.key);
+});
+
+// The holding only enters the key when something held is outside the band.
+// Otherwise selecting an event would move every node in the picture, which
+// is what the test above about panning and walking says it must not.
+test('holding something inside the band is not part of the key', () => {
+  const a = arrangementOf(ATLAS, state({ selected: 'early-0' }), new Set(['early-0']));
+  const b = arrangementOf(ATLAS, state({ selected: 'shared', actor: 'beta' }), new Set(['shared', 'late-0']));
+  assert.equal(a.key, b.key);
+
+  // And when it is outside, two different holdings are two different keys.
+  const narrow = { to: 1900 };
+  const one = arrangementOf(ATLAS, state({ ...narrow, selected: 'late-3' }), new Set(['late-3']));
+  const two = arrangementOf(ATLAS, state({ ...narrow, selected: 'late-2' }), new Set(['late-2']));
+  assert.notEqual(one.key, two.key);
+});

@@ -23,14 +23,14 @@
 
 import { svg, svgTitle } from '../util/dom.js';
 import { formatInterval, formatYear } from '../util/dates.js';
-import { overlaps, resolveWindow, withMargin } from '../util/window.js';
+import { overlaps, resolveWindow } from '../util/window.js';
 import { renderKey } from '../render-key.js';
 import { convergence } from '../graph.js';
 import { EDGE_TYPE_IDS } from '../vocab.js';
 import { chainEdges as walkedEdges, walkOrSelect } from '../chain.js';
 import { horizonBand } from '../horizon.js';
 import { workingSet, heldSet } from '../emphasis.js';
-import { arrangementOf } from './arrangement.js';
+import { arrangementOf, holdingKey } from './arrangement.js';
 import { layoutGraph, stackLayout, MIN_ZOOM, MAX_ZOOM } from './layout.js';
 import { exportButton } from '../share.js';
 
@@ -69,6 +69,34 @@ const CLUSTER_ZOOM_STEP = 1.2;
 // the share of the data a window has to be under before it zooms at all.
 const FIT_ZOOM = 2;
 const FIT_SHARE = 0.6;
+// How many arrangements and how many stackings are kept. Small on purpose:
+// what these are for is the reader who narrows the band and widens it again,
+// or zooms in and back out, and finds the picture already there. Holding
+// every arrangement of a session would be holding the corpus several times
+// over (health review A, finding 2: cached per key, with a size cap).
+const LAYOUT_CACHE = 6;
+const STACK_CACHE = 12;
+
+// Least recently used, by insertion order, which a Map already keeps: a hit
+// is deleted and set again so it goes back to the young end.
+function createCache(limit) {
+  const entries = new Map();
+  return {
+    get(key) {
+      if (!entries.has(key)) return null;
+      const value = entries.get(key);
+      entries.delete(key);
+      entries.set(key, value);
+      return value;
+    },
+    set(key, value) {
+      entries.delete(key);
+      entries.set(key, value);
+      if (entries.size > limit) entries.delete(entries.keys().next().value);
+      return value;
+    },
+  };
+}
 
 function textNode(text, attrs) {
   const el = svg('text', attrs);
@@ -113,16 +141,48 @@ export function edgeKey() {
 }
 
 export function createGraphView(container, { atlas, state, onCluster = null }) {
-  // The arrangement depends on which events are shown and what the bands
-  // are, and both of those change under the reader: it is rebuilt when they
-  // do and kept when they do not, so panning, selecting and walking a chain
-  // never move a node.
+  // The arrangement depends on which events are shown, what the bands are and
+  // where the band of time is, and all three change under the reader: it is
+  // rebuilt when they do and kept when they do not, so panning, zooming,
+  // selecting and walking a chain never move a node.
   let laid = null;
   // What is actually drawn at the current zoom: the arrangement above, with
   // everything too close together to tell apart merged into one mark.
   let stacked = null;
   let weights = { min: 0, max: 0 };
   let arrangedFor = null;
+  // Both of the expensive answers are kept by their key rather than only for
+  // as long as the key holds still: a reader who widens the band and narrows
+  // it again, or zooms out and back in, gets the picture they had.
+  const arrangements = createCache(LAYOUT_CACHE);
+  const stackings = createCache(STACK_CACHE);
+
+  // The working set — what the reader is holding — is asked of emphasis.js
+  // once per state and not once per caller. It runs the convergence query,
+  // and the arrangement, the stacking and the drawing all need it.
+  let workingFor = null;
+  let workingIs = null;
+  const workingOf = (s) => {
+    if (s !== workingFor) {
+      workingFor = s;
+      workingIs = workingSet(atlas, s);
+    }
+    return workingIs;
+  };
+  // And what of it may never be swallowed by a stack, nor left without a
+  // place to stand when the band moves away from it. The graph, unlike the
+  // map, never stacks the reachable set: the horizon is the answer this
+  // picture exists to draw, and a band inside a stack is a band the reader
+  // cannot read off.
+  let aloneFor = null;
+  let aloneIs = null;
+  const alonesOf = (s) => {
+    if (s !== aloneFor) {
+      aloneFor = s;
+      aloneIs = heldSet(workingOf(s), { lens: true, reachable: true });
+    }
+    return aloneIs;
+  };
 
   const viewport = svg('g', { class: 'viewport' });
   const bandsGroup = svg('g', { class: 'layer layer-bands' });
@@ -161,24 +221,34 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
   }
 
   function arrange(s) {
-    const { events, lanes, key } = arrangementOf(atlas, s);
+    const { events, lanes, key } = arrangementOf(atlas, s, alonesOf(s));
     if (key === arrangedFor) return false;
     arrangedFor = key;
+    const entry = arrangements.get(key) ?? arrangements.set(key, arrangementFor(events, lanes));
+    laid = entry.layout;
+    weights = entry.weights;
+    root.setAttribute('viewBox', `0 0 ${laid.width} ${laid.height}`);
+    drawFrame();
+    return true;
+  }
+
+  function arrangementFor(events, lanes) {
     const ids = new Set(events.map((e) => e.id));
-    laid = layoutGraph({
+    const layout = layoutGraph({
       events,
-      // An edge with one end removed by the lens has nothing to join.
+      // An edge with one end removed by the lens, or with one end outside the
+      // band the arrangement covers, has nothing to join.
       edges: [...atlas.edges.values()].filter((e) => e.status === 'active' && ids.has(e.from) && ids.has(e.to)),
       lanes,
       extent: atlas.extent,
     });
-    weights = {
-      min: Math.min(...laid.nodes.map((n) => n.weight), 0),
-      max: Math.max(...laid.nodes.map((n) => n.weight), 0),
+    return {
+      layout,
+      weights: {
+        min: Math.min(...layout.nodes.map((n) => n.weight), 0),
+        max: Math.max(...layout.nodes.map((n) => n.weight), 0),
+      },
     };
-    root.setAttribute('viewBox', `0 0 ${laid.width} ${laid.height}`);
-    drawFrame();
-    return true;
   }
   arrange(state.get());
 
@@ -365,14 +435,15 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
   function draw(s) {
     note.hidden = !s.bbox;
     const timeWindow = resolveWindow(s, atlas.extent);
-    // One period either side of the band is as far out as the graph draws.
-    // Beyond it a node is not faded, it is not there: the timeline is where
-    // the reader sees that the dataset carries on (window.js).
-    const margin = withMargin(timeWindow);
+    // One period either side of the band is as far out as the graph draws,
+    // and since H4b as far out as it lays anything out: beyond it a node is
+    // not faded, it is not there, and the timeline is where the reader sees
+    // that the dataset carries on (window.js, arrangement.js).
     // What the reader is working with, from the one place that decides it
     // (emphasis.js): the same sets the map and the timeline draw, so a fourth
     // picture is a fourth reader of that function and not a fourth copy.
-    const working = workingSet(atlas, s);
+    // Once per state, because the arrangement had to ask for it too.
+    const working = workingOf(s);
     const chainEdges = walkedEdges(atlas, s.chain);
     const pathIds = new Set([...working.path, ...working.selected]);
     const chainEdgeIds = new Set(chainEdges.map((e) => e.id));
@@ -409,24 +480,20 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
     // a chain that vanished into a stack would be worse than no stack at
     // all, and the answer to "what else fed this" cannot be inside a mark
     // that does not say so.
-    // The graph, unlike the map, never stacks the reachable set: the horizon
-    // is the answer this picture exists to draw, and a band inside a stack is
-    // a band the reader cannot read off.
-    const alone = heldSet(working, { lens: true, reachable: true });
+    const alone = alonesOf(s);
 
-    // What is drawn, out of what was laid out. The layout stays over the
-    // whole arrangement — nodes that moved every time the band did would be
-    // worse than nodes that come and go — and the window decides which of
-    // those coordinates are used. An edge with an end that is not drawn has
-    // nothing to join, so it goes with it.
-    const shown = laid.nodes.filter((n) => overlaps(n.event.when, margin) || alone.has(n.id));
-    const shownIds = new Set(shown.map((n) => n.id));
-    const visible = {
-      ...laid,
-      nodes: shown,
-      edges: laid.edges.filter((line) => shownIds.has(line.from) && shownIds.has(line.to)),
-    };
-    stacked = stackLayout(visible, { k, alone });
+    // What is laid out is what is drawn: since H4b the arrangement covers the
+    // window, one period either side of it, and whatever the reader is
+    // holding beyond that (arrangement.js) — which is exactly the rule this
+    // line used to apply afterwards to a layout of the whole corpus. Moving
+    // the band therefore moves the nodes now, and the cache above is what
+    // gives the reader their picture back when they move it home again.
+    //
+    // The stacking is kept by the same three things it depends on: which
+    // arrangement, how far in, and what may not be swallowed. A wheel notch
+    // that returns to a zoom already seen redraws rather than re-clusters.
+    const stackKey = `${arrangedFor}|${k}|${holdingKey(s)}`;
+    stacked = stackings.get(stackKey) ?? stackings.set(stackKey, stackLayout(laid, { k, alone }));
     // A stack is in the window if any event under it is, and in the horizon
     // at the band of its nearest member: the same rule the map's stacks
     // follow. Both are only ever asked of a stack of one in practice, since
