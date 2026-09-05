@@ -39,6 +39,8 @@
 // Null means the window's far end, which is the default and is deliberately
 // never written to the URL: only a year the reader chose is worth carrying
 // in a link, and only a chosen year lights the reachable set in the views.
+// It belongs to the record it was asked about, so opening another one clears
+// it — a question asked of one event is not an answer about the next.
 //
 // `bbox` is the part of the world the map is looking at, `[west, south,
 // east, north]`. It is the one piece of the map's pan and zoom that is
@@ -309,7 +311,15 @@ export function createState(initial, { window: win = null, restore = (s) => s } 
     }),
     set(patch) {
       const push = pushes(patch, state);
-      state = { ...state, ...patch };
+      // The horizon is a question asked about the record that is open — "what
+      // did this lead to by 2000?" — so it belongs to that record and not to
+      // the atlas. Opening a different one leaves the question behind:
+      // otherwise a year asked about the war in Angola lights the downstream
+      // of every event clicked afterwards, and clicking the sea clears the
+      // selection but leaves `?horizon=2000` in the link. A patch that names
+      // `horizon` itself is the reader asking again and wins.
+      const leftBehind = 'selected' in patch && patch.selected !== state.selected && !('horizon' in patch);
+      state = { ...state, ...patch, ...(leftBehind ? { horizon: null } : {}) };
       write(push);
       if (push) {
         // Anything ahead of here was a future the reader has just replaced,

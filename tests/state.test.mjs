@@ -321,6 +321,43 @@ function fakeWindow(search = '') {
   return win;
 }
 
+// The horizon is a question about one record. It used to outlive the record
+// it was asked about: a year set on the war in Angola lit the downstream of
+// every event clicked afterwards, and a click on the sea left `?horizon=` in
+// a link that no longer had anything to be a horizon of.
+test('the horizon is left behind when another record is opened', () => {
+  const store = createState({ selected: 'fixture-event-a', horizon: 2000 });
+  store.set({ selected: 'fixture-event-b', chain: [] });
+  assert.equal(store.get().horizon, null);
+
+  // Clicking empty ground clears the selection, which is a change of what is
+  // open like any other.
+  const sea = createState({ selected: 'fixture-event-a', horizon: 2000 });
+  sea.set({ selected: null, chain: [] });
+  assert.equal(sea.get().horizon, null);
+
+  // Clicking the record already open is not opening another one, and neither
+  // is a change of the view: the reader is still asking the same question.
+  const same = createState({ selected: 'fixture-event-a', horizon: 2000 });
+  same.set({ selected: 'fixture-event-a', chain: [] });
+  same.set({ to: 1975 });
+  same.set({ actor: 'salazar' });
+  assert.equal(same.get().horizon, 2000);
+
+  // A patch that names the horizon itself is the reader asking about the
+  // record it opens, and wins: reading mode moves both at once.
+  const asked = createState({ selected: 'fixture-event-a', horizon: 2000 });
+  asked.set({ selected: 'fixture-event-b', horizon: 1990 });
+  assert.equal(asked.get().horizon, 1990);
+});
+
+test('a horizon left behind leaves the URL as well as the state', () => {
+  const win = fakeWindow();
+  const store = createState({ selected: 'fixture-event-a', horizon: 2000 }, { window: win });
+  store.set({ selected: 'fixture-event-b', chain: [] });
+  assert.equal(win.location.search, '?selected=fixture-event-b');
+});
+
 test('opening a record pushes; moving the view replaces', () => {
   const win = fakeWindow();
   const store = createState({}, { window: win });
