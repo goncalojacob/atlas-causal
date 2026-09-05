@@ -1,6 +1,14 @@
-// Bootstrap for contribute.html: load the topology and the schemas, wire the
+// Bootstrap for contribute.html: load the spine and the schemas, wire the
 // form. Same shape as src/main.js — load, wire, nothing else — and the same
 // ?fixtures=1 switch, so the form can be exercised before any record exists.
+//
+// The spine and not the search shard, for the pickers as well as for the
+// rules. The corrected spine carries every field either needs — an event's
+// `title` and `aliases` for the duplicate search, an actor's `name` and
+// `actorType`, a place's `name`, a source's `title` — and the form has the
+// whole file in hand anyway, because `checkRules` runs against the whole
+// universe of records and no shard can answer for it (STATUS.md, deviation
+// 223).
 
 import { loadAtlas } from '../data.js';
 import { loadSchemas } from '../validate/schemas.js';
@@ -15,7 +23,7 @@ const mount = document.getElementById('form');
 
 try {
   const [atlas, schemas] = await Promise.all([
-    loadAtlas({ dataRoot: fixtures ? 'tests/fixtures/data/' : 'data/', landFile: false, regions: false }),
+    loadAtlas({ dataRoot: fixtures ? 'tests/fixtures/data/' : 'data/', landFile: false, regions: false, spine: true }),
     loadSchemas({ root: 'schema/' }),
   ]);
 

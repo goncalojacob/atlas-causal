@@ -3464,6 +3464,20 @@ gave that to the map and the timeline, and M25 did not widen it.
      reader asked for. `citationsOf` on the spine path is still the sources
      index read backwards, and it is the one member that will empty when
      the citer rows leave that index in H3b — nothing reads it.
+223. **The contribution form does not load the search shard.** The H3b
+     brief gives contribute.html "the search shard for pickers and duplicate
+     search; the spine for validation". Amendment A9 overrides it, and
+     `search-shard.test.mjs` was written to say so: "findSimilar keeps its
+     three inputs — and all three are in the spine, so the form does not
+     need the shard as well". The form loads the spine whole in any case,
+     because `checkRules` runs against every record there is and no shard
+     can answer for it; the corrected spine (A3) carries `title`, `aliases`,
+     `name`, `actorType` and a source's `title`, which is every field a
+     picker or `findSimilar` reads. Loading the shard beside it would have
+     added 217.7 KB raw and 22.4 KB gzipped to that page for nothing —
+     making contribute.html *heavier* than it was on the topology, which is
+     the opposite of what this milestone is for. The atlas does load the
+     shard: there the box is the only reader and the fold is the saving.
 
 ## Dates to verify
 

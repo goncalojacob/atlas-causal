@@ -31,6 +31,7 @@ const PAGES = [
   ['entry.html?id=carnation-revolution-1974', 'return document.querySelectorAll(".entry-body").length > 0;', 1],
   ['narratives.html', 'return document.querySelectorAll(".narrative-card").length > 0;', 1],
   ['sources.html', 'return document.querySelectorAll(".bib-entry").length > 0;', 0],
+  ['contribute.html', 'return document.querySelectorAll(".contrib .entry-card, .contrib .field").length > 0;', 1],
 ];
 
 // Everything the page asked the network for, as the browser recorded it.
@@ -103,5 +104,42 @@ test('a narrow window leaves stubs on the timeline and nothing on the map', { sk
     assert.ok(drawn.stubs > 0, 'the events past the margin are still shown as stubs');
     assert.ok(drawn.bars > 0, 'the events in the window and its margin are bars');
     assert.ok(drawn.marks > 0, 'the window has marks on the map');
+  });
+});
+
+// The contribution form, on the spine and on the repository's own records:
+// the pickers are filled from it, the duplicate search finds a title that is
+// already there, and `checkRules` runs against the whole universe. All three
+// are what the form would lose first if a field had been dropped from the
+// projection.
+test('the form fills its pickers, finds a duplicate and validates, off the spine', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await open(page, url('contribute.html'), 'return document.querySelectorAll(".add-row button").length > 0;');
+    const filled = await page.eval(`const add = [...document.querySelectorAll(".add-row button")].find((b) => b.textContent === "Add event");
+      add.click();
+      const card = document.querySelector("section.entry.event");
+      const select = (name) => card.querySelector(".field-" + name + " select");
+      return {
+        places: select("place") ? select("place").options.length : 0,
+        regions: select("region") ? select("region").options.length : 0,
+      };`);
+    assert.ok(filled.places > 20, `${filled.places} places offered`);
+    assert.ok(filled.regions > 1, `${filled.regions} regions offered`);
+
+    // A title that is already in the atlas, typed into a new event: the form
+    // must say so before anything is filed. `aliases` and `title` are what
+    // findSimilar reads, and both are in the spine (h3a-brief, A9).
+    await page.eval(`const title = document.querySelector("section.entry.event .field-title input");
+      title.value = "Carnation Revolution";
+      title.dispatchEvent(new Event("input", { bubbles: true }));
+      return true;`);
+    await waitFor(page, 'return document.querySelectorAll("section.entry.event .similar li").length > 0;', 'the duplicate warning');
+    const similar = await page.eval('return [...document.querySelectorAll("section.entry.event .similar li")].map((li) => li.textContent);');
+    assert.ok(similar.some((t) => /carnation/i.test(t)), similar.join(' · '));
+
+    // And the rules, which are the reason the whole file is loaded: an event
+    // with no date fails rule 4 in the browser exactly as it does in the CLI.
+    const problems = await page.eval('return [...document.querySelectorAll(".entry-errors li")].map((e) => e.textContent).join(" ");');
+    assert.ok(problems.length > 0, 'a half-written event has something wrong with it');
   });
 });
