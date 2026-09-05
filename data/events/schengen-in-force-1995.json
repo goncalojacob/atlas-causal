@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "schengen-in-force-1995",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "date",
+      "claim"
+    ],
+    "note": "The June 1991 signature and the 26 March 1995 entry into force were written from memory, not read in the cited works, and so was the count of seven states in the first wave."
+  },
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-teixeira-2019-political-institutions",
+      "locator": null
+    }
+  ],
+  "title": "Portugal enters the Schengen area",
+  "summary": "Checks at Portugal's border with Spain ended on 26 March 1995, when the Schengen Convention took effect for the first states to apply it. Portugal and Spain had signed together in June 1991, five years after both acceded to the Communities, and for much the same reason: what the two countries had come to want from each other was worth more than a frontier both dictatorships had policed heavily and neither economy had needed. For Portugal the practical change was almost entirely about Spain, since it has no other land border — the oldest border in Europe stopped being one in daily life. The other half of the bargain was that Portuguese airports and the Atlantic coast became an external frontier held on everyone's behalf, which is where nearly all of the later Portuguese argument about Schengen has been. It is in the atlas because it is the point at which European membership stopped being a matter of treaties and became a matter of daily movement.",
+  "when": {
+    "start": 1995,
+    "end": 1995,
+    "date": "1995-03-26",
+    "calendar": "gregorian"
+  },
+  "place": "lisbon",
+  "region": "europe",
+  "actors": [
+    {
+      "actor": "portugal",
+      "role": "acceded"
+    },
+    {
+      "actor": "schengen-area",
+      "role": "admitting body"
+    },
+    {
+      "actor": "third-portuguese-republic",
+      "role": "government"
+    }
+  ]
+}

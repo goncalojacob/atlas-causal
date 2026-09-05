@@ -2428,6 +2428,30 @@
         }
       ],
       "cites": [
+        "telo-2007-historia-contemporanea",
+        "costa-pinto-2003-contemporary-portugal"
+      ],
+      "from": "angola-independence-1975",
+      "id": "angola-independence-1975--cplp-founding-1996--precondition-of",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "note": "Drafted by the assistant under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates."
+      },
+      "status": "active",
+      "to": "cplp-founding-1996",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "macqueen-1997-decolonization",
         "rosas-1994-estado-novo"
       ],
@@ -4524,6 +4548,29 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "costa-pinto-2003-contemporary-portugal"
+      ],
+      "id": "cplp-founding-1996",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "date",
+          "claim"
+        ],
+        "note": "The 17 July 1996 founding and the list of the seven founders were written from memory. So was the account of Brazilian rather than Portuguese diplomacy carrying the proposal, which is the claim in this record most in need of a source."
+      },
+      "status": "active",
+      "title": "The Community of Portuguese Language Countries is founded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
       "doi": null,
       "id": "cti-2017-2018-fires",
       "isbn": null,
@@ -4922,6 +4969,30 @@
         }
       ],
       "cites": [
+        "telo-2007-historia-contemporanea",
+        "costa-pinto-teixeira-2019-political-institutions"
+      ],
+      "from": "eec-accession-1986",
+      "id": "eec-accession-1986--schengen-in-force-1995--precondition-of",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "note": "Drafted by the assistant under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates."
+      },
+      "status": "active",
+      "to": "schengen-in-force-1995",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "reis-2013-portuguese-slump",
         "telo-2007-historia-contemporanea"
       ],
@@ -4992,6 +5063,53 @@
         "note": "The 1960 convention, the special annex for Portugal and the share of 1960s industrial growth attributed to membership were written from memory, not read in the cited works."
       },
       "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal",
+        "rosas-1994-estado-novo"
+      ],
+      "id": "efta-accession-1960",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "date",
+          "claim"
+        ],
+        "note": "The 4 January signature, the 3 May entry into force and the special annex for Portugal were written from memory, not read in the cited works. So was the reading of why the regime preferred the association to the Common Market."
+      },
+      "status": "active",
+      "title": "Portugal joins the European Free Trade Association"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal",
+        "telo-2007-historia-contemporanea"
+      ],
+      "from": "efta-accession-1960",
+      "id": "efta-accession-1960--eec-application-1977--precondition-of",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "note": "Drafted by the assistant under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates."
+      },
+      "status": "active",
+      "to": "eec-application-1977",
+      "type": "precondition-of"
     },
     {
       "authors": [
@@ -9360,6 +9478,29 @@
         }
       ],
       "cites": [
+        "telo-2007-historia-contemporanea",
+        "costa-pinto-teixeira-2019-political-institutions"
+      ],
+      "id": "schengen-in-force-1995",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "date",
+          "claim"
+        ],
+        "note": "The June 1991 signature and the 26 March 1995 entry into force were written from memory, not read in the cited works, and so was the count of seven states in the first wave."
+      },
+      "status": "active",
+      "title": "Portugal enters the Schengen area"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "macqueen-1997-decolonization"
       ],
       "id": "sekou-toure",
@@ -9520,6 +9661,27 @@
       "status": "active",
       "to": "coup-attempt-11-march-1975",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "id": "stockholm",
+      "kind": "place",
+      "names": [
+        "Stockholm",
+        "Estocolmo"
+      ],
+      "review": {
+        "flags": [
+          "place"
+        ],
+        "note": "The coordinates are the city centre, written from memory; no cached lead exists for Stockholm, so the record carries no identity fields."
+      },
+      "status": "active"
     },
     {
       "authors": [
@@ -10118,7 +10280,7 @@
     }
   ],
   "schema": 1,
-  "total": 999,
+  "total": 1006,
   "warnings": [
     {
       "id": "iberian-blackout-2025",

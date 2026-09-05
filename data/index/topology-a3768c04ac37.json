@@ -7028,6 +7028,16 @@
     },
     {
       "aliases": [],
+      "confidence": "probable",
+      "from": "angola-independence-1975",
+      "id": "angola-independence-1975--cplp-founding-1996--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "cplp-founding-1996",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
       "confidence": "consensus",
       "from": "angola-war-begins-1961",
       "id": "angola-war-begins-1961--botelho-moniz-coup-attempt-1961--caused",
@@ -7588,6 +7598,16 @@
     },
     {
       "aliases": [],
+      "confidence": "consensus",
+      "from": "eec-accession-1986",
+      "id": "eec-accession-1986--schengen-in-force-1995--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "schengen-in-force-1995",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
       "confidence": "disputed",
       "from": "eec-accession-1986",
       "id": "eec-accession-1986--troika-bailout-2011--precondition-of",
@@ -7605,6 +7625,16 @@
       "supersededBy": null,
       "to": "eec-accession-1986",
       "type": "caused"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "efta-accession-1960",
+      "id": "efta-accession-1960--eec-application-1977--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "eec-application-1977",
+      "type": "precondition-of"
     },
     {
       "aliases": [],
@@ -12273,7 +12303,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Independence of Angola",
-      "weight": 6,
+      "weight": 7,
       "when": {
         "calendar": "gregorian",
         "date": "1975-11-11",
@@ -13384,6 +13414,37 @@
       }
     },
     {
+      "actors": [
+        {
+          "actor": "cplp",
+          "role": "founded"
+        },
+        {
+          "actor": "portugal",
+          "role": "founding member"
+        },
+        {
+          "actor": "third-portuguese-republic",
+          "role": "government"
+        }
+      ],
+      "aliases": [],
+      "id": "cplp-founding-1996",
+      "place": "lisbon",
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "The Community of Portuguese Language Countries is founded",
+      "weight": 4,
+      "when": {
+        "calendar": "gregorian",
+        "date": "1996-07-17",
+        "end": 1996,
+        "start": 1996
+      }
+    },
+    {
       "actors": [],
       "aliases": [],
       "id": "december-2022-floods-in-portugal",
@@ -13600,7 +13661,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Portugal joins the EEC",
-      "weight": 13,
+      "weight": 14,
       "when": {
         "calendar": "gregorian",
         "date": "1986-01-01",
@@ -13631,12 +13692,43 @@
       "status": "active",
       "supersededBy": null,
       "title": "Portugal applies to join the EEC",
-      "weight": 6,
+      "weight": 7,
       "when": {
         "calendar": "gregorian",
         "date": "1977-03-28",
         "end": 1977,
         "start": 1977
+      }
+    },
+    {
+      "actors": [
+        {
+          "actor": "efta",
+          "role": "founded"
+        },
+        {
+          "actor": "portugal",
+          "role": "founding member"
+        },
+        {
+          "actor": "estado-novo",
+          "role": "government"
+        }
+      ],
+      "aliases": [],
+      "id": "efta-accession-1960",
+      "place": "stockholm",
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Portugal joins the European Free Trade Association",
+      "weight": 4,
+      "when": {
+        "calendar": "gregorian",
+        "date": "1960-01-04",
+        "end": 1960,
+        "start": 1960
       }
     },
     {
@@ -15895,6 +15987,37 @@
     {
       "actors": [
         {
+          "actor": "portugal",
+          "role": "acceded"
+        },
+        {
+          "actor": "schengen-area",
+          "role": "admitting body"
+        },
+        {
+          "actor": "third-portuguese-republic",
+          "role": "government"
+        }
+      ],
+      "aliases": [],
+      "id": "schengen-in-force-1995",
+      "place": "lisbon",
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Portugal enters the Schengen area",
+      "weight": 4,
+      "when": {
+        "calendar": "gregorian",
+        "date": "1995-03-26",
+        "end": 1995,
+        "start": 1995
+      }
+    },
+    {
+      "actors": [
+        {
           "actor": "sidonio-pais",
           "role": "victim"
         }
@@ -16888,6 +17011,25 @@
       "wikipedia": {
         "en": "Saint-Denis, Réunion",
         "pt": "São Dinis (Reunião)"
+      }
+    },
+    {
+      "aliases": [],
+      "id": "stockholm",
+      "name": "Stockholm",
+      "names": [
+        "Stockholm",
+        "Estocolmo"
+      ],
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "where": {
+        "label": "Stockholm",
+        "lat": 59.33,
+        "lon": 18.07,
+        "precision": "city"
       }
     },
     {

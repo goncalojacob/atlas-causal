@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "cplp-founding-1996",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "date",
+      "claim"
+    ],
+    "note": "The 17 July 1996 founding and the list of the seven founders were written from memory. So was the account of Brazilian rather than Portuguese diplomacy carrying the proposal, which is the claim in this record most in need of a source."
+  },
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    }
+  ],
+  "title": "The Community of Portuguese Language Countries is founded",
+  "summary": "Seven states — Portugal, Brazil, Angola, Cape Verde, Guinea-Bissau, Mozambique and São Tomé and Príncipe — founded the Community of Portuguese Language Countries at Lisbon on 17 July 1996; East Timor joined once it was independent. The idea had been proposed and dropped repeatedly since the 1980s, and what finally carried it was Brazilian diplomacy rather than Portuguese: a community convened from Lisbon would have looked too much like the thing the African members had fought to leave. That is the difficulty the body has never entirely escaped, and it is part of why what it does is modest — the orthographic agreement, election observation, occasional mediation, and a great deal of summitry. It is in the atlas because it is the institutional form of what replaced the empire, twenty-one years after the last of it ended.",
+  "when": {
+    "start": 1996,
+    "end": 1996,
+    "date": "1996-07-17",
+    "calendar": "gregorian"
+  },
+  "place": "lisbon",
+  "region": "europe",
+  "actors": [
+    {
+      "actor": "cplp",
+      "role": "founded"
+    },
+    {
+      "actor": "portugal",
+      "role": "founding member"
+    },
+    {
+      "actor": "third-portuguese-republic",
+      "role": "government"
+    }
+  ]
+}

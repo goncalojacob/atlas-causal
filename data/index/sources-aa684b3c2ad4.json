@@ -592,7 +592,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 69,
+      "citationCount": 71,
       "citations": [
         {
           "dissent": false,
@@ -723,6 +723,12 @@
         {
           "dissent": false,
           "id": "1995-portuguese-legislative-election--portuguese-regionalisation-referendum-1998--caused",
+          "kind": "edge",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "angola-independence-1975--cplp-founding-1996--precondition-of",
           "kind": "edge",
           "locator": null
         },
@@ -873,6 +879,12 @@
         {
           "dissent": false,
           "id": "constitutional-revision-1982",
+          "kind": "event",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "cplp-founding-1996",
           "kind": "event",
           "locator": null
         },
@@ -1039,7 +1051,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 68,
+      "citationCount": 70,
       "citations": [
         {
           "dissent": false,
@@ -1188,6 +1200,12 @@
         {
           "dissent": false,
           "id": "eec-accession-1986--1987-european-parliament-election-in-portugal--enabled",
+          "kind": "edge",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "eec-accession-1986--schengen-in-force-1995--precondition-of",
           "kind": "edge",
           "locator": null
         },
@@ -1374,6 +1392,12 @@
         {
           "dissent": false,
           "id": "portuguese-regionalisation-referendum-1998",
+          "kind": "event",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "schengen-in-force-1995",
           "kind": "event",
           "locator": null
         },
@@ -9235,7 +9259,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 76,
+      "citationCount": 78,
       "citations": [
         {
           "dissent": false,
@@ -9479,6 +9503,12 @@
         },
         {
           "dissent": false,
+          "id": "efta-accession-1960--eec-application-1977--precondition-of",
+          "kind": "edge",
+          "locator": null
+        },
+        {
+          "dissent": false,
           "id": "iberian-pact--treaty-of-friendship-and-cooperation-between-spain-and-portugal--reacted-to",
           "kind": "edge",
           "locator": null
@@ -9600,6 +9630,12 @@
         {
           "dissent": false,
           "id": "delgado-assassinated-1965",
+          "kind": "event",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "efta-accession-1960",
           "kind": "event",
           "locator": null
         },
@@ -9948,7 +9984,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 69,
+      "citationCount": 70,
       "citations": [
         {
           "dissent": false,
@@ -10288,6 +10324,12 @@
         },
         {
           "dissent": false,
+          "id": "efta-accession-1960",
+          "kind": "event",
+          "locator": null
+        },
+        {
+          "dissent": false,
           "id": "exposicao-mundo-portugues-1940",
           "kind": "event",
           "locator": null
@@ -10458,7 +10500,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 128,
+      "citationCount": 133,
       "citations": [
         {
           "dissent": false,
@@ -10696,6 +10738,12 @@
         },
         {
           "dissent": false,
+          "id": "angola-independence-1975--cplp-founding-1996--precondition-of",
+          "kind": "edge",
+          "locator": null
+        },
+        {
+          "dissent": false,
           "id": "azores-agreement-1943--nato-founding-1949--enabled",
           "kind": "edge",
           "locator": null
@@ -10815,6 +10863,12 @@
           "locator": null
         },
         {
+          "dissent": false,
+          "id": "eec-accession-1986--schengen-in-force-1995--precondition-of",
+          "kind": "edge",
+          "locator": null
+        },
+        {
           "dissent": true,
           "id": "eec-accession-1986--troika-bailout-2011--precondition-of",
           "kind": "edge",
@@ -10823,6 +10877,12 @@
         {
           "dissent": false,
           "id": "eec-application-1977--eec-accession-1986--caused",
+          "kind": "edge",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "efta-accession-1960--eec-application-1977--precondition-of",
           "kind": "edge",
           "locator": null
         },
@@ -11038,6 +11098,12 @@
         },
         {
           "dissent": false,
+          "id": "cplp-founding-1996",
+          "kind": "event",
+          "locator": null
+        },
+        {
+          "dissent": false,
           "id": "eanes-elected-1976",
           "kind": "event",
           "locator": null
@@ -11105,6 +11171,12 @@
         {
           "dissent": false,
           "id": "nato-founding-1949",
+          "kind": "event",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "schengen-in-force-1995",
           "kind": "event",
           "locator": null
         },

@@ -50,7 +50,8 @@ test('the reachable set is lit only when a year and an event were chosen', async
   assert.equal(horizonIsOpen({ ...defaultState(), selected: REVOLUTION, horizon: 2011 }), true);
   assert.equal(horizonSet(atlas, { ...defaultState(), selected: REVOLUTION }).size, 0);
   const open = horizonSet(atlas, { ...defaultState(), selected: REVOLUTION, horizon: 2011 });
-  assert.equal(open.size, 30);
+  // 30 until M29 added Schengen 1995 and the CPLP 1996 downstream of the revolution.
+  assert.equal(open.size, 32);
   assert.equal(open.get('constitution-1976'), 3);
   assert.equal(open.has(REVOLUTION), false, 'an event does not lead to itself');
   // An id that is not an event lights nothing rather than throwing.
@@ -72,9 +73,9 @@ test('the panel lists what graph.js found, and each line walks to it', async () 
   const event = atlas.events.get(REVOLUTION);
   const html = horizonHtml(ctx, { event, state });
   const results = horizonResults(atlas, state);
-  assert.equal(results.length, 30);
+  assert.equal(results.length, 32);
   assert.equal((html.match(/data-action="horizon-walk"/g) ?? []).length, results.length);
-  assert.match(html, /<summary>What did this lead to by <strong>2011<\/strong>\?\s*<span class="count">30<\/span>/);
+  assert.match(html, /<summary>What did this lead to by <strong>2011<\/strong>\?\s*<span class="count">32<\/span>/);
   assert.match(html, /<details open>/, 'a chosen year opens the section');
   assert.match(html, /data-action="clear-horizon"/);
   // The brief's own example: choosing the constitution walks the shortest
