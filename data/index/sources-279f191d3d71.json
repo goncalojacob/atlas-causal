@@ -11684,7 +11684,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 83,
+      "citationCount": 91,
       "citations": [
         {
           "dissent": false,
@@ -11976,6 +11976,12 @@
         },
         {
           "dissent": false,
+          "id": "bucha-massacre",
+          "kind": "event",
+          "locator": "Q111467700"
+        },
+        {
+          "dissent": false,
           "id": "covid-19-pandemic",
           "kind": "event",
           "locator": null
@@ -12000,6 +12006,12 @@
         },
         {
           "dissent": false,
+          "id": "euromaidan",
+          "kind": "event",
+          "locator": "Q15224558"
+        },
+        {
+          "dissent": false,
           "id": "european-convention-on-human-rights",
           "kind": "event",
           "locator": "Q183191"
@@ -12009,6 +12021,18 @@
           "id": "first-indochina-war",
           "kind": "event",
           "locator": "Q748780"
+        },
+        {
+          "dissent": false,
+          "id": "full-scale-russo-ukrainian-war",
+          "kind": "event",
+          "locator": "Q110999040"
+        },
+        {
+          "dissent": false,
+          "id": "gaza-war",
+          "kind": "event",
+          "locator": "Q122962941"
         },
         {
           "dissent": false,
@@ -12090,6 +12114,12 @@
         },
         {
           "dissent": false,
+          "id": "paris-agreement",
+          "kind": "event",
+          "locator": "Q21707860"
+        },
+        {
+          "dissent": false,
           "id": "portuguese-regionalisation-referendum-1998",
           "kind": "event",
           "locator": null
@@ -12108,6 +12138,12 @@
         },
         {
           "dissent": false,
+          "id": "russo-ukrainian-war",
+          "kind": "event",
+          "locator": "Q15860072"
+        },
+        {
+          "dissent": false,
           "id": "schengen-agreement",
           "kind": "event",
           "locator": "Q2822795"
@@ -12123,6 +12159,12 @@
           "id": "second-chechen-war",
           "kind": "event",
           "locator": "Q120843"
+        },
+        {
+          "dissent": false,
+          "id": "second-nagorno-karabakh-war",
+          "kind": "event",
+          "locator": "Q99659280"
         },
         {
           "dissent": false,
@@ -12171,6 +12213,12 @@
           "id": "treaty-on-the-non-proliferation-of-nuclear-weapons",
           "kind": "event",
           "locator": "Q186444"
+        },
+        {
+          "dissent": false,
+          "id": "twelve-day-war",
+          "kind": "event",
+          "locator": "Q134900605"
         },
         {
           "dissent": false,

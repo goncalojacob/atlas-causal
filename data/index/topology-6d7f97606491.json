@@ -13021,6 +13021,29 @@
       }
     },
     {
+      "actors": [],
+      "aliases": [],
+      "id": "bucha-massacre",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Bucha massacre",
+      "weight": 0,
+      "when": {
+        "date": "2022-03-31",
+        "end": 2022,
+        "endDate": "2022-03-31",
+        "start": 2022
+      },
+      "wikidata": "Q111467700",
+      "wikipedia": {
+        "en": "Bucha massacre",
+        "pt": "Massacre de Bucha"
+      }
+    },
+    {
       "actors": [
         {
           "actor": "amilcar-cabral",
@@ -14151,6 +14174,29 @@
     {
       "actors": [],
       "aliases": [],
+      "id": "euromaidan",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Euromaidan",
+      "weight": 0,
+      "when": {
+        "date": "2013-11-21",
+        "end": 2014,
+        "endDate": "2014-02-23",
+        "start": 2013
+      },
+      "wikidata": "Q15224558",
+      "wikipedia": {
+        "en": "Euromaidan",
+        "pt": "Euromaidan"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
       "id": "european-convention-on-human-rights",
       "place": null,
       "region": "europe",
@@ -14273,6 +14319,50 @@
       "wikipedia": {
         "en": "First Indochina War",
         "pt": "Primeira Guerra da Indochina"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "full-scale-russo-ukrainian-war",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "full-scale Russo-Ukrainian war",
+      "weight": 0,
+      "when": {
+        "date": "2022-02-24",
+        "end": null,
+        "start": 2022
+      },
+      "wikidata": "Q110999040",
+      "wikipedia": {
+        "en": "Russo-Ukrainian war (2022–present)",
+        "pt": "Invasão da Ucrânia pela Rússia (2022–presente)"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "gaza-war",
+      "place": null,
+      "region": "asia",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Gaza War",
+      "weight": 0,
+      "when": {
+        "date": "2023-10-07",
+        "end": null,
+        "start": 2023
+      },
+      "wikidata": "Q122962941",
+      "wikipedia": {
+        "en": "Gaza war",
+        "pt": "Guerra de Gaza"
       }
     },
     {
@@ -15736,6 +15826,28 @@
       }
     },
     {
+      "actors": [],
+      "aliases": [],
+      "id": "paris-agreement",
+      "place": "new-york",
+      "region": "americas",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Paris Agreement",
+      "weight": 0,
+      "when": {
+        "date": "2015-12-12",
+        "end": 2015,
+        "start": 2015
+      },
+      "wikidata": "Q21707860",
+      "wikipedia": {
+        "en": "Paris Agreement",
+        "pt": "Acordo de Paris (2015)"
+      }
+    },
+    {
       "actors": [
         {
           "actor": "antonio-costa",
@@ -16310,6 +16422,28 @@
       }
     },
     {
+      "actors": [],
+      "aliases": [],
+      "id": "russo-ukrainian-war",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Russo-Ukrainian war",
+      "weight": 0,
+      "when": {
+        "date": "2014-02-20",
+        "end": null,
+        "start": 2014
+      },
+      "wikidata": "Q15860072",
+      "wikipedia": {
+        "en": "Russo-Ukrainian war",
+        "pt": "Guerra Russo-Ucraniana"
+      }
+    },
+    {
       "actors": [
         {
           "actor": "salazar",
@@ -16487,6 +16621,28 @@
       "wikipedia": {
         "en": "Second Chechen War",
         "pt": "Segunda Guerra da Chechênia"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "second-nagorno-karabakh-war",
+      "place": null,
+      "region": "asia",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Second Nagorno-Karabakh War",
+      "weight": 0,
+      "when": {
+        "end": 2020,
+        "endDate": "2020-11-10",
+        "start": 2020
+      },
+      "wikidata": "Q99659280",
+      "wikipedia": {
+        "en": "Second Nagorno-Karabakh War",
+        "pt": "Segunda Guerra do Alto Carabaque"
       }
     },
     {
@@ -16976,6 +17132,29 @@
         "date": "2014-05-17",
         "end": 2014,
         "start": 2014
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "twelve-day-war",
+      "place": null,
+      "region": "asia",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Twelve-Day War",
+      "weight": 0,
+      "when": {
+        "date": "2025-06",
+        "end": 2025,
+        "endDate": "2025-06-24",
+        "start": 2025
+      },
+      "wikidata": "Q134900605",
+      "wikipedia": {
+        "en": "Twelve-Day War",
+        "pt": "Guerra dos Doze Dias"
       }
     },
     {

@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "bucha-massacre",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q111467700",
+  "sitelinks": 67,
+  "wikipedia": {
+    "en": "Bucha massacre",
+    "pt": "Massacre de Bucha"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q111467700"
+    }
+  ],
+  "title": "Bucha massacre",
+  "summary": "Wikidata item Q111467700, imported by tools/import/wikidata.mjs. The item's own description reads \"2022 killing of civilians in the Ukrainian city of Bucha by Russian military force\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2022,
+    "end": 2022,
+    "date": "2022-03-31",
+    "endDate": "2022-03-31"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}

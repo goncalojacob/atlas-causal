@@ -188,3 +188,43 @@ unclassified class Q766875: add it to data/imports/wikidata-seeds.json → class
 unclassified class Q114380: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
 18 Wikipedia lead(s) cached under tools/import/cache/wikipedia
 9 created, 0 enriched, 16 refused, 0 ambiguous
+import: 20 item(s) this batch, 0 left after it, 18 call(s) spent
+created event russo-ukrainian-war from Q15860072
+created event paris-agreement from Q21707860
+created event euromaidan from Q15224558
+created event full-scale-russo-ukrainian-war from Q110999040
+created event gaza-war from Q122962941
+created event twelve-day-war from Q134900605
+created event second-nagorno-karabakh-war from Q99659280
+created event bucha-massacre from Q111467700
+refused Q836386: none of its classes (Q10931) is in data/imports/wikidata-seeds.json → classes
+refused Q178810: none of its classes (Q8465, Q864113, Q5153967) is in data/imports/wikidata-seeds.json → classes
+refused Q33761: none of its classes (Q273120, Q124734, Q8465, Q10931) is in data/imports/wikidata-seeds.json → classes
+refused Q81545: none of its classes (Q8465, Q3119121) is in data/imports/wikidata-seeds.json → classes
+refused Q25906338: none of its classes (Q25906438) is in data/imports/wikidata-seeds.json → classes
+refused Q124086054: none of its classes (Q41397, Q617059) is in data/imports/wikidata-seeds.json → classes
+refused Q104705419: none of its classes (Q175331, Q104708121, Q25906438, Q1323212, Q124734, Q30314106) is in data/imports/wikidata-seeds.json → classes
+refused Q117716414: none of its classes (Q25906438, Q8465) is in data/imports/wikidata-seeds.json → classes
+refused Q119860532: none of its classes (Q511866, Q124734, Q350604, Q1415628, Q25906438) is in data/imports/wikidata-seeds.json → classes
+refused Q137612545: none of its classes (Q175331, Q124734, Q273120) is in data/imports/wikidata-seeds.json → classes
+refused Q185729: no place record for its location and no lane reachable from its point; a placeless event must carry a region
+refused Q101452: no place record for its location and no lane reachable from its point; a placeless event must carry a region
+unclassified class Q10931: add it to data/imports/wikidata-seeds.json → classes or the 2 item(s) in it stay refused
+unclassified class Q8465: add it to data/imports/wikidata-seeds.json → classes or the 4 item(s) in it stay refused
+unclassified class Q864113: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q5153967: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q273120: add it to data/imports/wikidata-seeds.json → classes or the 2 item(s) in it stay refused
+unclassified class Q124734: add it to data/imports/wikidata-seeds.json → classes or the 4 item(s) in it stay refused
+unclassified class Q3119121: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q25906438: add it to data/imports/wikidata-seeds.json → classes or the 4 item(s) in it stay refused
+unclassified class Q41397: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q617059: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q175331: add it to data/imports/wikidata-seeds.json → classes or the 2 item(s) in it stay refused
+unclassified class Q104708121: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q1323212: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q30314106: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q511866: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q350604: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q1415628: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+16 Wikipedia lead(s) cached under tools/import/cache/wikipedia
+8 created, 0 enriched, 12 refused, 0 ambiguous

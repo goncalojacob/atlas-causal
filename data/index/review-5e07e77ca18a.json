@@ -10280,7 +10280,7 @@
     }
   ],
   "schema": 1,
-  "total": 1034,
+  "total": 1042,
   "warnings": [
     {
       "id": "2006-lebanon-war",
@@ -10313,7 +10313,19 @@
       "rule": "degree-zero"
     },
     {
+      "id": "bucha-massacre",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
       "id": "eastern-front",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "euromaidan",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"
@@ -10326,6 +10338,18 @@
     },
     {
       "id": "first-indochina-war",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "full-scale-russo-ukrainian-war",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "gaza-war",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"
@@ -10385,6 +10409,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "paris-agreement",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
       "id": "potsdam-conference",
       "kind": "event",
       "message": "event has no edges",
@@ -10392,6 +10422,12 @@
     },
     {
       "id": "russo-georgian-war",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "russo-ukrainian-war",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"
@@ -10416,6 +10452,12 @@
     },
     {
       "id": "second-chechen-war",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "second-nagorno-karabakh-war",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"
@@ -10446,6 +10488,12 @@
     },
     {
       "id": "treaty-on-the-non-proliferation-of-nuclear-weapons",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "twelve-day-war",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"
