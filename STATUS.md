@@ -2792,3 +2792,5 @@ M24 started 2026-09-05T00:20:55Z by shepherd
 M24 done
 
 M25 started 2026-09-05T01:06:07Z by scheduled
+
+M27 started 2026-09-05T01:06:43Z by scheduled (branch m27)
