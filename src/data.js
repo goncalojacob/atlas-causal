@@ -85,10 +85,22 @@ export function createAtlas({ manifest, topology, sources, land = null, palette 
     }
   }
 
+  // The cache holds answers, and a rejection is not one. Keeping it would
+  // make one dropped request on a train the answer for the rest of the
+  // session: the card would say "Could not load the record text" and never
+  // ask again, however many times the reader opened the record. So the entry
+  // goes when the promise rejects, and the next attempt really is one.
   const cache = new Map();
   function record(kind, id) {
     const key = `${kind}/${id}`;
-    if (!cache.has(key)) cache.set(key, fetchJson(`${dataRoot}${kind}s/${encodeURIComponent(id)}.json`));
+    if (!cache.has(key)) {
+      const pending = fetchJson(`${dataRoot}${kind}s/${encodeURIComponent(id)}.json`).catch((error) => {
+        // Only if it is still this attempt's: a later one may have replaced it.
+        if (cache.get(key) === pending) cache.delete(key);
+        throw error;
+      });
+      cache.set(key, pending);
+    }
     return cache.get(key);
   }
 
@@ -222,11 +234,18 @@ export function createAtlas({ manifest, topology, sources, land = null, palette 
   function loadGeometry(file) {
     if (geometry.has(file)) return Promise.resolve(geometry.get(file));
     if (!geometryLoading.has(file)) {
-      geometryLoading.set(file, fetchJson(`${dataRoot}${file}`).then((collection) => {
+      // As with a record: a shard that failed is not a shard that is loading,
+      // and holding the rejection would leave the territories blank until the
+      // page was reloaded.
+      const pending = fetchJson(`${dataRoot}${file}`).then((collection) => {
         const byKey = new Map((collection.features ?? []).map((f) => [String(f.id), f.geometry]));
         geometry.set(file, byKey);
         return byKey;
-      }));
+      }).catch((error) => {
+        if (geometryLoading.get(file) === pending) geometryLoading.delete(file);
+        throw error;
+      });
+      geometryLoading.set(file, pending);
     }
     return geometryLoading.get(file);
   }

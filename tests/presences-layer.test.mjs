@@ -7,7 +7,9 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import path from 'node:path';
-import { presenceTitle, presenceClasses, hueActorOf } from '../src/map/layers/presences.js';
+import {
+  presenceTitle, presenceClasses, hueActorOf, createPresencesLayer,
+} from '../src/map/layers/presences.js';
 import { loadAtlas } from '../src/data.js';
 import { ROOT } from './helpers.mjs';
 
@@ -98,4 +100,50 @@ test('an actor\'s territory, and what it held, are in the topology already', asy
   assert.deepEqual(a.dependenciesOf.get('fixture-polity-three').map((p) => p.id),
     ['fixture-polity-four-1120', 'fixture-polity-four-1200']);
   assert.equal(a.dependenciesOf.get('fixture-polity-four'), undefined, 'it held nothing');
+});
+
+// A shard that will not load leaves the year before it on the screen, which
+// is usually the same picture and therefore says nothing at all. The layer
+// swallowed the rejection; now it reports it, once, and takes it back when a
+// shard finally arrives.
+test('a shard that will not load is said once, and unsaid when one arrives', async () => {
+  // No DOM in node --test, and the failing path never draws: the group is
+  // only listened to and emptied.
+  const group = { addEventListener() {}, replaceChildren() {}, appendChild() {} };
+  const said = [];
+  let fail = true;
+  const loaded = new Map();
+  const stub = {
+    actors: new Map(),
+    hueOfActor: () => null,
+    territoryYear: (y) => y,
+    shardForYear: () => ({ file: 'geo/presences/1100-1199.json', from: 1100, to: 1199 }),
+    loadedGeometry: (file) => loaded.get(file) ?? null,
+    loadGeometry: async (file) => {
+      if (fail) throw new Error('offline');
+      loaded.set(file, new Map());
+      return loaded.get(file);
+    },
+    presencesAt: () => [],
+    dependenciesOf: new Map(),
+  };
+  const layer = createPresencesLayer(group, { project: () => [0, 0] }, {
+    atlas: stub, onSelect: () => {}, onFailed: (failed) => said.push(failed),
+  });
+  const settle = () => new Promise((resolve) => { setTimeout(resolve, 0); });
+
+  layer.render({ year: 1150 });
+  await settle();
+  assert.deepEqual(said, [true]);
+
+  // A second failure is the same failure: the reader is told once.
+  layer.render({ year: 1150 });
+  await settle();
+  assert.deepEqual(said, [true], 'said once');
+  assert.equal(layer.render({ year: 1150 }).failed, true);
+
+  fail = false;
+  layer.render({ year: 1150 });
+  await settle();
+  assert.deepEqual(said, [true, false], 'and taken back when the shard arrives');
 });

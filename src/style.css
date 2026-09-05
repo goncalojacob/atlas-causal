@@ -744,6 +744,17 @@ svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align:
   pointer-events: none;
 }
 
+/* The same note on the map, and it says one thing: a shard of borders that
+   would not load. Madder, because it is not an explanation of the picture
+   but a warning that the picture is not the one that was asked for. */
+.map-note {
+  position: absolute; right: var(--space-3); top: var(--space-3); max-width: 22rem;
+  margin: 0; padding: var(--space-2) var(--space-3);
+  background: var(--paper); border: 1px solid var(--madder); border-radius: var(--radius);
+  font-family: var(--font-ui); font-size: var(--text-xs); color: var(--ink-soft);
+  pointer-events: none;
+}
+
 /* --- timeline -------------------------------------------------------- */
 
 /* pan-y and not none: a sideways drag is the band sliding, and a finger

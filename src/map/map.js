@@ -56,9 +56,19 @@ export function createMap(container, { atlas, state, onCluster = null }) {
   const root = svg('svg', { viewBox: `0 0 ${WIDTH} ${HEIGHT}`, class: 'map', role: 'img', 'aria-label': 'Map' }, [viewport]);
 
   const land = createLandLayer(landGroup, projection);
+  // A shard of borders that will not load leaves the map showing the year
+  // before it, which is usually the same picture and therefore says nothing.
+  // This is the one place it is said. It is not state and never reaches the
+  // URL: whether one request failed on this machine is not part of what the
+  // link describes.
+  const territoriesNote = document.createElement('p');
+  territoriesNote.className = 'map-note';
+  territoriesNote.hidden = true;
+  territoriesNote.textContent = 'The territories could not be loaded; the borders drawn are the last that arrived.';
   const presences = createPresencesLayer(presencesGroup, projection, {
     atlas,
     onSelect: (id) => state.set({ actor: id, selected: null, chain: [] }),
+    onFailed: (failed) => { territoriesNote.hidden = !failed; },
   });
   // A cluster of marks that zooming can pull apart is zoomed into; one whose
   // members share a point — Lisbon's thirty-seven — is spread open instead,
@@ -257,6 +267,7 @@ export function createMap(container, { atlas, state, onCluster = null }) {
   });
 
   container.append(root);
+  container.append(territoriesNote);
   container.append(exportButton(root, 'map'));
 
   function render(s) {

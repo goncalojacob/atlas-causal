@@ -65,13 +65,24 @@ export function presenceClasses(presence, { actorId, dependencyIds, hueOf = () =
   ].filter(Boolean).join(' ');
 }
 
-export function createPresencesLayer(group, projection, { onSelect, atlas }) {
+export function createPresencesLayer(group, projection, { onSelect, atlas, onFailed = null }) {
   // What the last render drew, so moving the band inside one period does not
   // rebuild two hundred paths on every tick.
   let signature = null;
   // Which render asked for a shard: an older fetch arriving late must not
   // draw over a newer year.
   let token = 0;
+  // Whether the last attempt at a shard failed. Nothing is cleared when one
+  // does — the year before it is usually the same map — so without a word the
+  // reader is looking at borders that are not the ones they asked for, and a
+  // dropped request on a train is indistinguishable from a century with no
+  // borders in it. Said once, and unsaid when a shard arrives.
+  let failed = false;
+  const report = (now) => {
+    if (now === failed) return;
+    failed = now;
+    if (onFailed) onFailed(now);
+  };
 
   group.addEventListener('click', (e) => {
     const el = e.target.closest('[data-actor]');
@@ -90,13 +101,13 @@ export function createPresencesLayer(group, projection, { onSelect, atlas }) {
       if (year === null) {
         group.replaceChildren();
         signature = null;
-        return { drawn: 0, pending: false };
+        return { drawn: 0, pending: false, failed };
       }
       const shard = atlas.shardForYear(year);
       if (!shard) {
         group.replaceChildren();
         signature = null;
-        return { drawn: 0, pending: false };
+        return { drawn: 0, pending: false, failed };
       }
       const outlines = atlas.loadedGeometry(shard.file);
       if (!outlines) {
@@ -105,9 +116,12 @@ export function createPresencesLayer(group, projection, { onSelect, atlas }) {
         // frame of staleness.
         const mine = (token += 1);
         atlas.loadGeometry(shard.file).then(() => {
+          report(false);
           if (mine === token && onReady) onReady();
-        }, () => {});
-        return { drawn: 0, pending: true };
+        }, () => {
+          report(true);
+        });
+        return { drawn: 0, pending: true, failed };
       }
 
       const visible = atlas.presencesAt(year);
@@ -116,7 +130,7 @@ export function createPresencesLayer(group, projection, { onSelect, atlas }) {
       );
       const isOfActor = (p) => p.actor === actorId || dependencyIds.has(p.id);
       const key = `${shard.file}|${actorId ?? ''}|${visible.map((p) => p.id).join(',')}`;
-      if (key === signature) return { drawn: visible.length, pending: false };
+      if (key === signature) return { drawn: visible.length, pending: false, failed };
       signature = key;
 
       group.replaceChildren();
@@ -136,7 +150,7 @@ export function createPresencesLayer(group, projection, { onSelect, atlas }) {
           'data-presence': presence.id,
         }, [svgTitle(presenceTitle(presence, { nameOf }))]));
       }
-      return { drawn: visible.length, pending: false };
+      return { drawn: visible.length, pending: false, failed };
     },
   };
 }

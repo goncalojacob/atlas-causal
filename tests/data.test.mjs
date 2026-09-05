@@ -117,3 +117,57 @@ test('an atlas with no outlines at all has no coverage and clamps nothing', () =
   assert.equal(atlas.presenceCoverage, null);
   assert.equal(atlas.territoryYear(1400), 1400);
 });
+
+// A cache holds answers, and a rejection is not one. One dropped request used
+// to be the answer for the rest of the session: the card said "Could not load
+// the record text" and never asked again, however often the record was opened.
+test('a record that failed to load is fetched again the next time it is asked for', async () => {
+  const asked = [];
+  let fail = true;
+  const flaky = async (url) => {
+    asked.push(url);
+    if (fail && url.endsWith('fixture-event-a.json')) throw new Error('offline');
+    return JSON.parse(await readFile(path.join(FIXTURE_DATA, '..', '..', '..', url), 'utf8'));
+  };
+  const atlas = await loadAtlas({ dataRoot: 'tests/fixtures/data/', fetchJson: flaky });
+
+  await assert.rejects(atlas.record('event', 'fixture-event-a'), /offline/);
+  const after = asked.length;
+  await assert.rejects(atlas.record('event', 'fixture-event-a'), /offline/,
+    'still failing, and still trying');
+  assert.equal(asked.length, after + 1, 'the rejection was not kept');
+
+  fail = false;
+  const record = await atlas.record('event', 'fixture-event-a');
+  assert.equal(record.id, 'fixture-event-a', 'the connection came back and so did the record');
+  // And once it has arrived it is cached, as it always was.
+  const settled = asked.length;
+  await atlas.record('event', 'fixture-event-a');
+  assert.equal(asked.length, settled);
+});
+
+test('a shard of outlines that failed to load is fetched again too', async () => {
+  const asked = [];
+  let fail = true;
+  const atlas = createAtlas({
+    manifest: { schema: 1, regions: [], land: [], files: {} },
+    topology: { events: [], edges: [] },
+    sources: [],
+    fetchJson: async (url) => {
+      asked.push(url);
+      if (fail) throw new Error('offline');
+      return { features: [{ id: 'k', geometry: { type: 'Point', coordinates: [0, 0] } }] };
+    },
+  });
+
+  await assert.rejects(atlas.loadGeometry('geo/shard.json'), /offline/);
+  await assert.rejects(atlas.loadGeometry('geo/shard.json'), /offline/);
+  assert.equal(asked.length, 2, 'the rejected shard was not kept as the one that is loading');
+
+  fail = false;
+  const outlines = await atlas.loadGeometry('geo/shard.json');
+  assert.equal(outlines.get('k').type, 'Point');
+  await atlas.loadGeometry('geo/shard.json');
+  assert.equal(asked.length, 3, 'and the shard that arrived is held');
+  assert.equal(atlas.loadedGeometry('geo/shard.json').size, 1);
+});
