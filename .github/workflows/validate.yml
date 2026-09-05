@@ -1,6 +1,10 @@
-# On every pull request: schemas, rules, tests. Never touches data/index/ —
-# freshness is asserted on main by deploy.yml, so two open PRs cannot
-# conflict on the index.
+# On every pull request: schemas, rules, tests. It never builds or commits
+# data/index/ — that is deploy.yml's on main, so two open pull requests cannot
+# conflict on the index. What it does do, when the pull request changes
+# anything under data/, is check that the index committed with it is the one
+# those records build: a change to the records or to the shape they are
+# written in invalidates the index, and finding that out at deploy time is
+# finding it out on main (docs/review-2026-09-05-health-plan.md, finding 16).
 name: validate
 
 on:
@@ -15,6 +19,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          # The base of the pull request has to be here to diff against it.
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version-file: .nvmrc
@@ -22,3 +29,17 @@ jobs:
         run: node tools/validate.mjs
       - name: Tests
         run: node --test
+      - name: Whether this pull request touches data/
+        id: data
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          touched=false
+          if [ -n "$BASE_SHA" ] && [ -n "$(git diff --name-only "$BASE_SHA" "$HEAD_SHA" -- data/)" ]; then
+            touched=true
+          fi
+          echo "touched=$touched" >> "$GITHUB_OUTPUT"
+      - name: The index committed with those records is the one they build
+        if: steps.data.outputs.touched == 'true'
+        run: node tools/validate.mjs --index

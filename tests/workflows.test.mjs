@@ -100,10 +100,21 @@ test('contribution.yml runs only on the maintainer label, with the scoped PAT', 
   assert.match(text, /continue-on-error: true/);
 });
 
-test('the index is owned by main, and pull requests never carry it', async () => {
+test('the index is built on main, and checked on a pull request that changes data/', async () => {
   const validate = await read(WORKFLOWS, 'validate.yml');
   assert.match(validate, /on:\s*\n\s*pull_request:/);
-  assert.doesNotMatch(validate, /build-index|--index/);
+  // Never built and never committed here: that is deploy.yml's, on main, so
+  // two open pull requests cannot conflict on the index.
+  assert.doesNotMatch(validate, /build-index/);
+  assert.doesNotMatch(validate, /git commit/);
+  // But checked, when the records it is an index of have changed. The step is
+  // conditional on that and on nothing else: a pull request that touches no
+  // record has no index to be stale (review of the health plan, finding 16).
+  assert.match(validate, /node tools\/validate\.mjs --index/);
+  assert.match(validate, /if: steps\.data\.outputs\.touched == 'true'/);
+  assert.match(validate, /git diff --name-only "\$BASE_SHA" "\$HEAD_SHA" -- data\//);
+  // The base commit is only there to diff against with the full history.
+  assert.match(validate, /fetch-depth: 0/);
   const deploy = await read(WORKFLOWS, 'deploy.yml');
   assert.match(deploy, /concurrency:\s*\n\s*group: deploy\s*\n\s*cancel-in-progress: false/);
   assert.match(deploy, /node tools\/build-index\.mjs/);
