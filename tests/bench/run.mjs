@@ -150,10 +150,62 @@ function benchNotch() {
   }
 }
 
-const CASES = { cluster: benchCluster, notch: benchNotch };
+// Who held ground in a year, over the atlas's own 710 presences. Both sides
+// are measured in the same run on the same machine: the scan H4a replaced,
+// written out here, and the interval index that replaced it. The layer asks
+// this once per render, so what the numbers describe is a tick of the
+// timeline's band.
+function benchPresences(atlas) {
+  console.log(`presencesAt — ${atlas.presences.size} presences, a sweep of the years the outlines cover`);
+  const { from, to } = atlas.presenceCoverage ?? { from: 1886, to: 2019 };
+  const years = [];
+  for (let year = from; year <= to; year += 1) years.push(year);
+  const all = [...atlas.presences.values()];
+
+  // The scan, as it was before H4a: every presence looked at, every year.
+  const scanAt = (year) => {
+    const chosen = new Map();
+    for (const presence of all) {
+      const start = presence.when.start;
+      const end = presence.when.end ?? null;
+      if (year < start || (end !== null && year > end)) continue;
+      const standing = chosen.get(presence.actor);
+      if (!standing || standing.when.start < start) chosen.set(presence.actor, presence);
+    }
+    return [...chosen.values()].sort((a, b) => (a.id < b.id ? -1 : a.id > b.id ? 1 : 0));
+  };
+
+  row('the scan, over every year once', measure(() => {
+    for (const year of years) scanAt(year);
+  }), `→ ${years.length} years`);
+  // The index warm, which is what a reader dragging the band back and forth
+  // over a century they have already seen is asking of it.
+  for (const year of years) atlas.presencesAt(year);
+  row('the index, over every year once', measure(() => {
+    for (const year of years) atlas.presencesAt(year);
+  }), `→ ${years.length} years`);
+}
+
+const CASES = { cluster: benchCluster, notch: benchNotch, presences: benchPresences };
+
+// The atlas off disk, for the cases that measure the real dataset rather than
+// a generated one. Built once, and only when a chosen case wants it.
+async function realAtlas() {
+  const { readFile } = await import('node:fs/promises');
+  const { fileURLToPath } = await import('node:url');
+  const path = await import('node:path');
+  const { loadAtlas } = await import('../../src/data.js');
+  const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..');
+  return loadAtlas({
+    dataRoot: 'data/',
+    fetchJson: async (url) => JSON.parse(await readFile(path.join(root, url.split('?')[0]), 'utf8')),
+  });
+}
+const NEEDS_ATLAS = new Set(['presences']);
 
 const wanted = process.argv.slice(2);
 const chosen = wanted.length ? wanted : Object.keys(CASES);
+const atlas = chosen.some((name) => NEEDS_ATLAS.has(name)) ? await realAtlas() : null;
 for (const name of chosen) {
   const run = CASES[name];
   if (!run) {
@@ -161,6 +213,6 @@ for (const name of chosen) {
     process.exitCode = 1;
     continue;
   }
-  run();
+  run(atlas);
   console.log('');
 }
