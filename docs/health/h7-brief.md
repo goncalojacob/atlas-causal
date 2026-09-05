@@ -7,9 +7,11 @@ Health cycle; after H5b and H3c. Read `docs/health-plan-2026-09-05.md`
 except the intro card's text, which quotes existing records and says
 nothing historical of its own.
 
-1. **The intro card** when nothing is open: the narratives, the heaviest
-   events by `weight`, one "follow the consequences" walkthrough, "start
-   here" opening the first narrative at step 1.
+1. **The intro card** on first visit, as a dismissible card over the
+   view (the panel is hidden when nothing is open since H1c): the
+   narratives, the heaviest events by `weight`, one "follow the
+   consequences" walkthrough, "start here" opening the first narrative at
+   step 1; a small "?" control brings it back.
 2. **Search over `names`** (H5b) and the summary's first sentence at low
    rank; years beside actors in results.
 3. **The actor card** shows predecessor and successor events along
