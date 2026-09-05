@@ -591,7 +591,10 @@ svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align:
 
 /* --- timeline -------------------------------------------------------- */
 
-.timeline { display: block; font-family: var(--font-ui); font-variant-numeric: tabular-nums; }
+/* pan-y and not none: a sideways drag is the band sliding, and a finger
+   moving up the screen still scrolls the timeline, which is taller than its
+   own area as soon as the rows pack. */
+.timeline { display: block; font-family: var(--font-ui); font-variant-numeric: tabular-nums; touch-action: pan-y; }
 /* What the lanes are showing, when they are not showing the world. Sticky,
    because the timeline scrolls under it and a note about the whole drawing
    must not scroll away from the drawing it is about. */

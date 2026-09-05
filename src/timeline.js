@@ -26,7 +26,7 @@ import { svg, svgTitle } from './util/dom.js';
 import { createLinearScale } from './timeline-scale.js';
 import { clusterPoints } from './cluster.js';
 import { fromAstronomical, formatYear } from './util/dates.js';
-import { resolveWindow, overlaps, windowAt, decadeOf } from './util/window.js';
+import { resolveWindow, overlaps, decadeOf } from './util/window.js';
 import { horizonBand, horizonSet } from './horizon.js';
 import { narrativeSet } from './narrative.js';
 import { lensSet } from './lens.js';
@@ -132,14 +132,52 @@ export function createTimeline(container, { atlas, state, createScale = createLi
   let dragged = false;
 
   root.addEventListener('pointerdown', (e) => {
+    if (!atlas.extent) return;
     const handle = e.target.closest('[data-window]');
-    if (!handle || !atlas.extent) return;
+    // The empty ground of the lanes is a drag surface too, and it slides the
+    // band as the band itself does: the gesture that pans the map sideways
+    // should move the window here, since time is the timeline's one
+    // dimension. A press on a bar or a stack is not a drag — it is how a
+    // record is opened.
+    const onGround = !handle
+      && !e.target.closest('[data-id], [data-cluster]')
+      && yearAt(e.clientX).x >= LABEL_WIDTH;
+    if (!handle && !onGround) return;
     const window = resolveWindow(state.get(), atlas.extent);
-    drag = { kind: handle.getAttribute('data-window'), origin: window, startYear: yearAt(e.clientX).year };
+    drag = {
+      kind: handle ? handle.getAttribute('data-window') : 'band',
+      origin: window,
+      startYear: yearAt(e.clientX).year,
+    };
     dragged = false;
     try { root.setPointerCapture(e.pointerId); } catch { /* no such pointer any more */ }
     e.preventDefault();
   });
+
+  // The wheel narrows or widens the band around the year under the cursor.
+  // The lanes themselves do not move: they stay on the whole extent of the
+  // data (M6), so "zooming" the timeline is a statement about the window and
+  // nothing else. The map's own factor, so both pictures answer a wheel at
+  // the same rate.
+  root.addEventListener('wheel', (e) => {
+    if (!atlas.extent) return;
+    const { x, year } = yearAt(e.clientX);
+    if (x < LABEL_WIDTH) return;
+    e.preventDefault();
+    const window = resolveWindow(state.get(), atlas.extent);
+    const span = Math.max(window.to - window.from, 1);
+    const whole = Math.max(atlas.extent.max - atlas.extent.min, 1);
+    let wanted = Math.round(span * Math.exp(e.deltaY * 0.0015));
+    // A one-year band multiplied by 1.15 rounds back to one year, and the
+    // wheel would do nothing at the narrow end for ever.
+    if (wanted === span) wanted = span + (e.deltaY > 0 ? 1 : -1);
+    wanted = Math.min(whole, Math.max(1, wanted));
+    // The year under the cursor keeps its place in the band, so the reader
+    // narrows onto what the pointer is over and not onto the middle.
+    const t = Math.min(1, Math.max(0, (year - window.from) / span));
+    const from = Math.round(year - t * wanted);
+    setWindow({ from, to: from + wanted });
+  }, { passive: false });
   root.addEventListener('pointermove', (e) => {
     if (!drag) return;
     const { year } = yearAt(e.clientX);
@@ -200,12 +238,13 @@ export function createTimeline(container, { atlas, state, createScale = createLi
       return;
     }
     if (e.target.closest('[data-window]')) return;
-    const { x, year } = yearAt(e.clientX);
-    if (x < LABEL_WIDTH || !atlas.extent) return;
-    // A click in the lanes means the same as "map at 1911" in the panel: the
-    // far end goes there and the near end comes with it if it was later.
-    const moved = windowAt(state.get(), fromAstronomical(clamp(year)));
-    state.set({ from: moved.from, to: moved.to });
+    // A click on the empty ground puts down what the reader was holding. It
+    // used to mean "map at that year"; the ground is a drag surface now
+    // (deviation 46), and a gesture that both moved time and dropped the
+    // walked chain would be two answers to one click. The year is still one
+    // double-click away, and "Map at 1911" is still on the card.
+    const s = state.get();
+    if (s.selected || s.chain.length) state.set({ selected: null, chain: [] });
   });
 
   // The band is a drag surface, but a double-click still means "that
@@ -431,8 +470,18 @@ export function createTimeline(container, { atlas, state, createScale = createLi
   function bandShade({ from, to }) {
     const x0 = scale.x(from);
     const x1 = scale.x(to);
-    return svg('rect', { x: x0, y: MARKER_HEIGHT, width: Math.max(x1 - x0, 1), height: height - MARKER_HEIGHT, class: 'window-band', 'data-window': 'band' },
-      [svgTitle('The window of time. Drag it to slide, drag an end to widen, double-click a year to snap to its decade.')]);
+    return svg('rect', {
+      x: x0, y: MARKER_HEIGHT, width: Math.max(x1 - x0, 1), height: height - MARKER_HEIGHT,
+      class: 'window-band', 'data-window': 'band',
+      // Focusable, so the arrow keys slide the band as they nudge a handle;
+      // the handles are the two ends of the same slider and say so.
+      tabindex: '0', role: 'slider',
+      'aria-label': 'The window of time',
+      'aria-valuemin': String(fromAstronomical(atlas.extent.min)),
+      'aria-valuemax': String(fromAstronomical(atlas.extent.max)),
+      'aria-valuenow': String(fromAstronomical(from)),
+      'aria-valuetext': `${formatYear(fromAstronomical(from))} to ${formatYear(fromAstronomical(to))}`,
+    }, [svgTitle('The window of time. Drag it or the ground to slide, drag an end to widen, the wheel to narrow, double-click a year to snap to its decade.')]);
   }
 
   // The two handles, and the one line the far end says about the borders the

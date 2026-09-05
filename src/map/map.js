@@ -227,6 +227,12 @@ export function createMap(container, { atlas, state, onCluster = null }) {
       spread = null;
       render(state.get());
     }
+    // And a click on the sea — no mark, no cluster, no territory — puts down
+    // what the reader was holding. Only the event and the path: the actor is
+    // a different question, and a click on a territory is how it is asked.
+    if (e.target.closest('[data-id], [data-cluster], [data-actor]')) return;
+    const s = state.get();
+    if (s.selected || s.chain.length) state.set({ selected: null, chain: [] });
   });
   root.addEventListener('wheel', (e) => {
     e.preventDefault();
