@@ -6,7 +6,54 @@ session ends. `ARCHITECTURE.md` is the target; this file is the position.
 
 ## Last updated
 
-2026-09-05, after H1a (`docs/health/h1a-brief.md`), the health cycle's first
+2026-09-05, after H1b (`docs/health/h1b-brief.md`), the health cycle's second
+run: **the card is drawn again only when the card changes, the URL is written
+once a frame, and Back comes back to the picture.** Code only; nothing under
+`data/` moved and `data/index/` was not rebuilt. 616 tests.
+
+**The panel has a render key.** It rebuilt `#panel` on every state change, so
+a wheel notch over the timeline closed the explanation being read and took the
+horizon field out from under the reader's fingers, and the box the map
+publishes 180 ms after a zoom replaced a cluster's list of members with "Pick
+an event" about a second after they asked for it (B12, A3, A5). The key is
+what the card is drawn from: what is open, the walked chain, the horizon and
+the resolved window. The window is in it and is still not a rebuild — it
+decides the horizon's default year and list, the lane the event is drawn in,
+and which of a place's rows are faded, and those three are written into the
+card that is already there (review finding 7). A cluster's list is not state,
+so nothing in the key can say it is showing; the panel knows on its own, which
+is how choosing from it the record already open still puts the card back.
+
+**A move of the view writes the URL once a frame.** A forty-step drag of the
+band was forty `history.replaceState` calls. Safari refuses more than a
+hundred in thirty seconds and throws, and the write runs before `notify`, so a
+two-second drag there left the store updated and the views not told (A3).
+Replace-type writes now book one animation frame and write whatever stands
+when it runs, which is also the band the reader stopped at; every history call
+is in a try. `notify` stays synchronous — the store's contract does not change
+and no test becomes a timing test (review finding 23).
+
+**Back comes back to the picture.** The popped URL was parsed with the live
+state as its defaults, so every field the entry did not name kept the value it
+had: open an event, open an actor, narrow the band, press Back, and the URL
+said `?selected=…` while the band was still where the drag had left it. `view`
+was not restored at all, so Back onto an entry made on the map left the graph
+on screen. The whole state now comes from the URL with `defaultState()` as its
+defaults — a push writes every non-default field, so nothing is lost — and the
+entry is written back normalised (B14, A6). Reading mode is untouched: the
+narrative URL is `narrative` and `step` (review finding 22).
+
+**And the graph's arrangement key was already stale in two ways.** It was
+`focus | group | lane ids`. Reading a narrative suspends the lens (lens.js),
+so entering one with a focus on left the key unchanged while the set of events
+had gone from one actor's to all of them; and which lane an event is drawn in
+is the heaviest of its actors weighed *inside the window*, so the same lanes in
+the same order can hold different events after the band moves. The key now
+reads the lens as applied and lane membership, and lives with the arrangement
+in `src/graph-view/arrangement.js`, pure, so `node --test` can hold it
+(review finding 14).
+
+Before that, H1a (`docs/health/h1a-brief.md`), the health cycle's first
 run: **four defects the two reviews of 5 September found in the reader's walk,
 and the byte that made a source file unreadable to `grep`.** Code only;
 nothing under `data/` moved and `data/index/` was not rebuilt.
@@ -1409,10 +1456,12 @@ overnight runs and the hourly shepherd keep off each other's toes on `m0`.
    which is the shortest card and the strongest claim that the summary is
    what to read first. `openSection` in `src/panel/sections.js` is the one
    function that decides it.
-18. **Next build: H1b** (`docs/health/h1b-brief.md`) — the panel's render key,
-   the URL writes coalesced to a frame, and `popstate` restoring the whole
-   state from the URL. Then H1c and H2, in that order, on `m0`; H5a and H5b
-   may run beside them on their own branches
+18. **Next build: H1c** (`docs/health/h1c-brief.md`) — the map's pointer maths
+   through `getScreenCTM`, the `bbox` from the real visible rectangle, no
+   world box and placeless events in view by their region's box, `discuss`
+   with the record's URL only, marks and bars reachable from the keyboard,
+   the phone sheet and the panes agreeing, one shared `walkOrSelect`. Then
+   H2, on `m0`; H5a and H5b may run beside them on their own branches
    (`docs/health-plan-2026-09-05.md`).
 19. **Owner: say whether the map's note is the right place for a failed
    shard.** `.map-note`, top right of the map, only when a shard of borders
@@ -2911,6 +2960,57 @@ gave that to the map and the timeline, and M25 did not widen it.
      finally arrives. It is not state and never reaches the URL: whether one
      request failed on this machine is not part of what a link describes.
 
+191. **The "map at" hints are not window-dependent, so there was nothing to
+     update in place.** The brief names three bits of the card the window
+     decides — the horizon year, the "map at" hints and the faded rows —
+     following review A's finding 3. "Map at 1911" is built from the record's
+     own start year (`event.js`, `actor.js`) and does not move when the band
+     does. The three that really do are the horizon's default year and
+     therefore its list and count, the `drawn` line (the lane an event is
+     drawn in is the heaviest of its actors weighed inside the window), and a
+     place's faded rows with the count in the hint above them. Those three
+     are what is written back into the card.
+
+192. **A cluster's list is remembered by the panel, not by the render key.**
+     The list is not state — clicking a stack of marks changes no URL — so
+     nothing in a key made of the state can say it is showing. Without
+     something the panel knows on its own, choosing from that list the record
+     that was *already* open would have produced no change in the state, and
+     therefore no render, and the reader would have clicked a row and watched
+     nothing happen. Two flags do it: one says a list is covering the card,
+     the other is true only while a click inside the panel is being handled.
+     It works because the store notifies synchronously, which is the half of
+     the store's contract H1b deliberately did not touch.
+
+193. **The load-time normalisation and the popstate write are not
+     coalesced.** Only writes that come from `set` are, because only those
+     can arrive sixty times a second. Normalising `?year=1975` to `?to=1975`
+     at load happens once and has nothing to be coalesced with, and the write
+     that follows a popstate has to land on the entry the reader has just
+     arrived at. A window with no `requestAnimationFrame` writes immediately;
+     that is only ever a test double, and the tests' own fake window has one,
+     so what they exercise is the coalescing and not the fallback.
+
+194. **A push flushes the owed write onto the entry it is leaving.** Not in
+     the brief, and coalescing without it would have made Back worse rather
+     than better: drag the band, then open a record, and the drag's write
+     would still be owed when the new entry was pushed, so the entry Back
+     returns to would describe the picture from *before* the drag. `set` now
+     hands `write` the state as it stood, and a push with a write owed writes
+     that state onto the current entry first.
+
+195. **On a popstate the window, the lanes and the layers come from the URL
+     too, which supersedes the second half of deviation 179.** That deviation
+     took the six opening fields and the chain from the URL and left
+     everything else falling back to what stands, on the reading that "a URL
+     that does not name a field is not asking for it to change". It is the
+     wrong reading for an entry the reader is returning *to*: a push writes
+     every field that is not already its default, so an entry that does not
+     name the window is an entry whose window was the whole span. Keeping the
+     live value was how Back could leave the address bar describing a picture
+     that is not on screen (B14, A6). What deviation 179 says about the
+     openings and about `restore` still stands.
+
 
 ## Dates to verify
 
@@ -3389,3 +3489,4 @@ H1a started 2026-09-05T11:21:38Z by scheduled
 H1a done
 
 H1b started 2026-09-05T11:42:53Z by scheduled
+H1b done
