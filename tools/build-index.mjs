@@ -12,7 +12,7 @@ import { mkdir, readdir, readFile, rmdir, unlink, writeFile } from 'node:fs/prom
 import { existsSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
-import { buildTopology, byId, rolesInUse } from '../src/validate/core.js';
+import { buildSpine, buildTopology, byId, rolesInUse } from '../src/validate/core.js';
 import { checkRules } from '../src/validate/rules.js';
 import { createRegionDeriver } from '../src/util/geo.js';
 import { digestOf, isDraft } from '../src/review/queue.js';
@@ -74,6 +74,9 @@ export async function buildIndex(dataDir = DEFAULT_DATA) {
     relations: topology.relations,
     narratives: topology.narratives,
   });
+  // Beside the topology, not instead of it: nothing reads the spine until
+  // H3b moves the pages over one at a time.
+  const spineText = serialize(buildSpine(topology));
   const sourcesText = serialize({ schema: 1, sources: topology.sources });
 
   // What review.html needs and the topology does not carry: which records
@@ -92,6 +95,7 @@ export async function buildIndex(dataDir = DEFAULT_DATA) {
       .sort((a, b) => byId(a, b) || (a.rule < b.rule ? -1 : a.rule > b.rule ? 1 : 0)),
   });
   const topologyName = `topology-${hashOf(topologyText)}.json`;
+  const spineName = `spine-${hashOf(spineText)}.json`;
   const sourcesName = `sources-${hashOf(sourcesText)}.json`;
   const reviewName = `review-${hashOf(reviewText)}.json`;
   const manifest = serialize({
@@ -107,7 +111,12 @@ export async function buildIndex(dataDir = DEFAULT_DATA) {
       narratives: topology.narratives.length,
       regions: topology.regions.length,
     },
-    files: { topology: `index/${topologyName}`, sources: `index/${sourcesName}`, review: `index/${reviewName}` },
+    files: {
+      spine: `index/${spineName}`,
+      topology: `index/${topologyName}`,
+      sources: `index/${sourcesName}`,
+      review: `index/${reviewName}`,
+    },
     regions: topology.regions,
     // What people actually wrote in `role`, normalised. The vocabulary is
     // open on purpose; this is the evidence for closing it later.
@@ -126,7 +135,11 @@ export async function buildIndex(dataDir = DEFAULT_DATA) {
   const unresolved = topology.events.filter((e) => e.status === 'active' && e.place && !e.region);
   return {
     files: {
-      'manifest.json': manifest, [topologyName]: topologyText, [sourcesName]: sourcesText, [reviewName]: reviewText,
+      'manifest.json': manifest,
+      [spineName]: spineText,
+      [topologyName]: topologyText,
+      [sourcesName]: sourcesText,
+      [reviewName]: reviewText,
     },
     topology,
     unresolved,

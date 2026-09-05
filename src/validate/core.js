@@ -163,6 +163,22 @@ export function citationsBySource(records) {
   return out;
 }
 
+// How many citations a record *makes*, read off the other direction. Two
+// counts have shared one name until now: this one, which three cards print
+// beside a record, and the number of records that cite a source, which the
+// bibliography prints. In the index they are `citesCount` on the record and
+// `citationCount` on the source (h3a-brief, A8).
+export function citesCountByRecord(sources) {
+  const counts = new Map();
+  for (const source of sources ?? []) {
+    for (const citation of source.citations ?? []) {
+      const key = `${citation.kind}:${citation.id}`;
+      counts.set(key, (counts.get(key) ?? 0) + 1);
+    }
+  }
+  return counts;
+}
+
 // The identity a record claims, for the topology. `wikidata` is carried
 // because rule 21's uniqueness has to hold against the whole atlas and not
 // only against the bundle in hand, and `wikipedia` because the card offers
@@ -354,5 +370,125 @@ export function buildTopology(records, regions, { deriveRegion } = {}) {
     relations,
     narratives,
     regions: [...(regions ?? [])].sort((a, b) => a.order - b.order || byId(a, b)),
+  };
+}
+
+// ─── The spine ──────────────────────────────────────────────────────────────
+//
+// A projection of the topology, not a second reading of the records: what
+// every page needs of every record whole, with the two fields nothing draws
+// (`regionMethod`, `presenceType`) and the citer rows left out. The topology
+// is emitted unchanged beside it; H3b is where the pages move over.
+//
+// `when` is carried verbatim, never reduced to a pair of years: fourteen
+// readers want the object — `whenOf` in rules.js reads `when.date` and
+// `when.calendar`, rule 4 reads the raw start bound, and lanes.js draws an
+// open-ended bar from `max === null`. Astronomical years are for arithmetic
+// and are never stored in place of the record's own numbering, which is why
+// there is no `start`/`end` pair here (h3a-brief, A1).
+
+// A tombstone still resolves its own URL and still reaches a card — 175
+// retracted events do — but it is not part of the graph, so it carries what
+// the card's head and meta line are built from and nothing else (A10). The
+// label is kept whatever its kind calls it: a merged actor with no name
+// would give the panel nothing to say it was merged *from* (deviation 215).
+const TOMBSTONE_KEYS = new Set(['id', 'kind', 'status', 'supersededBy', 'aliases', 'wikidata', 'title', 'name', 'names', 'when', 'place', 'region']);
+
+function spineEntry(entry) {
+  if (entry.status === 'active') return entry;
+  return Object.fromEntries(Object.entries(entry).filter(([key]) => TOMBSTONE_KEYS.has(key)));
+}
+
+// What every record carries, whatever its kind. `aliases` and `supersededBy`
+// are the merge hop `resolve()` walks, so they are here even when empty.
+function envelopeOf(record, kind) {
+  const out = { id: record.id, kind, status: record.status, supersededBy: record.supersededBy ?? null, aliases: record.aliases ?? [] };
+  if (typeof record.wikidata === 'string') out.wikidata = record.wikidata;
+  if (isObject(record.wikipedia)) out.wikipedia = record.wikipedia;
+  return out;
+}
+
+// An edge id is `from--to--type` on every one of them, so the tuple carries
+// no id and the loader synthesises it. Five elements, not four: `status` is
+// what keeps a retracted argument out of consequences, convergence and the
+// shortest path (A2). An edge that carries an alias or a merge hop cannot be
+// said in five slots and is written whole instead; the loader takes either.
+export function edgeId(edge) {
+  return `${edge.from}--${edge.to}--${edge.type}`;
+}
+
+function edgeInSpine(edge) {
+  const named = edge.id === edgeId(edge);
+  if (named && !edge.supersededBy && (edge.aliases ?? []).length === 0) {
+    return [edge.from, edge.to, edge.type, edge.confidence, edge.status];
+  }
+  const out = {
+    from: edge.from, to: edge.to, type: edge.type, confidence: edge.confidence,
+    status: edge.status, supersededBy: edge.supersededBy ?? null, aliases: edge.aliases ?? [],
+  };
+  if (!named) out.id = edge.id;
+  return out;
+}
+
+export function buildSpine(topology) {
+  const cites = citesCountByRecord(topology.sources);
+  const citesCount = (kind, id) => cites.get(`${kind}:${id}`) ?? 0;
+  return {
+    schema: 1,
+    events: (topology.events ?? []).map((e) => spineEntry({
+      ...envelopeOf(e, 'event'),
+      title: e.title,
+      when: e.when,
+      place: e.place,
+      region: e.region,
+      weight: e.weight,
+      actors: e.actors ?? [],
+      citesCount: citesCount('event', e.id),
+    })),
+    edges: (topology.edges ?? []).map(edgeInSpine),
+    actors: (topology.actors ?? []).map((a) => spineEntry({
+      ...envelopeOf(a, 'actor'),
+      name: a.name,
+      names: a.names ?? [],
+      actorType: a.actorType,
+      when: a.when,
+      citesCount: citesCount('actor', a.id),
+    })),
+    places: (topology.places ?? []).map((p) => spineEntry({
+      ...envelopeOf(p, 'place'),
+      name: p.name,
+      names: p.names ?? [],
+      where: p.where,
+      region: p.region,
+      citesCount: citesCount('place', p.id),
+    })),
+    // Only the key of the outline: the shard that holds it is chosen by year
+    // from the manifest, and `geometry.files` is read nowhere.
+    presences: (topology.presences ?? []).map((p) => spineEntry({
+      ...envelopeOf(p, 'presence'),
+      actor: p.actor,
+      when: p.when,
+      geometry: { key: p.geometry?.key ?? null },
+      dependencyOf: p.dependencyOf ?? null,
+      dependencyKind: p.dependencyKind ?? null,
+      capital: p.capital ?? null,
+      confidence: p.confidence,
+    })),
+    relations: (topology.relations ?? []).map((r) => spineEntry({
+      ...envelopeOf(r, 'relation'),
+      from: r.from,
+      to: r.to,
+      type: r.type,
+      when: r.when,
+      note: r.note ?? null,
+    })),
+    narratives: (topology.narratives ?? []).map((n) => spineEntry({
+      ...envelopeOf(n, 'narrative'),
+      title: n.title,
+      summary: n.summary,
+      authors: n.authors ?? [],
+      window: n.window ?? null,
+      steps: n.steps ?? [],
+    })),
   };
 }
