@@ -5,21 +5,27 @@
 // out of the rules pass: the rules assume the shapes the schema guarantees.
 
 import { createValidator } from './schema.js';
-import { checkRules, normalizeRole } from './rules.js';
+import { buildUniverse, checkRules, normalizeRole } from './rules.js';
 import { KINDS } from '../kinds.js';
 import { edgeId } from '../vocab.js';
 
-export { KINDS, edgeId };
+export { KINDS, edgeId, buildUniverse };
 export const SCHEMA_VERSION = 1;
 
 function isObject(v) {
   return v !== null && typeof v === 'object' && !Array.isArray(v);
 }
 
-export function validate(records, topology, schemas) {
+// `universe` and `validator` are the two things that depend on the topology
+// and the schema set rather than on the records in hand, and both are
+// expensive enough that a caller validating over and over against the same
+// atlas — the contribution form and the review editor, once per keystroke —
+// should build them once and hand them back in (health review A, finding 11;
+// B, finding 27). Nothing changes when they are left out.
+export function validate(records, topology, schemas, { universe = null, validator: given = null } = {}) {
   const errors = [];
   const warnings = [];
-  const validator = createValidator(schemas);
+  const validator = given ?? createValidator(schemas);
   if (validator.schemaErrors.length) {
     for (const e of validator.schemaErrors) {
       errors.push({ level: 'error', rule: 1, id: null, kind: 'schema', path: e.schema, message: e.message });
@@ -71,7 +77,7 @@ export function validate(records, topology, schemas) {
     passing.push(record);
   });
 
-  const rules = checkRules(passing, topology ?? {});
+  const rules = checkRules(passing, topology ?? {}, { universe });
   errors.push(...rules.errors);
   warnings.push(...rules.warnings);
   return { errors, warnings };
