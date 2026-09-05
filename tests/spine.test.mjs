@@ -11,6 +11,7 @@ import assert from 'node:assert/strict';
 import path from 'node:path';
 import { readFile } from 'node:fs/promises';
 import { buildSpine, buildTopology, edgeId } from '../src/validate/core.js';
+import { KINDS } from '../src/kinds.js';
 import { createAtlas } from '../src/data.js';
 import { buildIndex } from '../tools/build-index.mjs';
 import { readRecords, readRegions, readRegionPolygons } from '../tools/lib/read.mjs';
@@ -47,6 +48,15 @@ const FIELDS = {
   narrative: [...ENVELOPE, 'wikidata', 'wikipedia', 'title', 'summary', 'authors', 'window', 'steps'],
 };
 const TOMBSTONE = ['id', 'kind', 'status', 'supersededBy', 'aliases', 'wikidata', 'title', 'name', 'names', 'when', 'place', 'region'];
+
+// Against the registry, not against a list written twice: a ninth kind is
+// one entry in src/kinds.js, and it must not be able to arrive with nowhere
+// in the spine to go. `edge` is here as a tuple and `source` is deliberately
+// out — the sources index carries every bibliographic field and the spine
+// would only repeat it (A3).
+test('every kind the registry knows is in the spine, or is the one that is not', () => {
+  assert.deepEqual([...KINDS].sort(), [...Object.keys(FIELDS), 'edge', 'source'].sort());
+});
 
 for (const [label, dir] of [['the fixtures', FIXTURE_DATA], ['the repository', DATA]]) {
   test(`the spine carries the field table over ${label}, and nothing else`, async () => {
