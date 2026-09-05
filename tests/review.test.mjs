@@ -10,7 +10,15 @@ import path from 'node:path';
 import {
   DRAFT_AUTHOR, KIND_ORDER, NO_IDENTIFIER, isDraft, countDrafts, labelOf, warningsById, flagsOf,
   buildQueue, groupByKind, flagCounts, filterQueue, progressOf, digestOf,
+  degreesOf, sortQueue, toolCounts, BY_HAND,
 } from '../src/review/queue.js';
+import { windowOf, OVERSCAN } from '../src/review/list.js';
+import {
+  claimOf, claimState, claimDaysLeft, claimRecord, releaseClaim, CLAIM_DAYS,
+} from '../src/review/claim.js';
+import {
+  changedFields, versionsOf, versionsFromRevised, diffAgainst, shortly,
+} from '../src/review/history.js';
 import {
   normalizeReviewer, reviewerProblems, signRecord, retractRecord, retractionPlan, bundleOf, carriedReason,
 } from '../src/review/sign.js';
@@ -363,4 +371,164 @@ test('the editor offers what is active in the atlas, and says when a reference i
 
   // The lanes are the one reference field that stays a `<select>`.
   assert.deepEqual(regionChoices(topology).map((o) => o.value), ['', 'europe']);
+});
+
+// --- H6b: the list, the orders, the claim and the history -------------------
+
+test('the window is the rows on screen and a few either side, and nothing else', () => {
+  // Twenty thousand rows, a pane fifteen rows tall: what a virtual list must
+  // never do is ask for more than a screenful (health review B, finding 7).
+  const at = (scrollTop) => windowOf({ scrollTop, viewport: 540, rowHeight: 36, count: 20000 });
+  const top = at(0);
+  assert.equal(top.first, 0);
+  assert.ok(top.last <= 15 + OVERSCAN * 2 + 1, `${top.last} rows for a fifteen-row pane`);
+  assert.equal(top.height, 20000 * 36);
+
+  const middle = at(36 * 500);
+  assert.equal(middle.first, 500 - OVERSCAN);
+  assert.equal(middle.last - middle.first, top.last - top.first, 'the same number of rows, wherever it is');
+
+  // Scrolled past the end — which is what a browser reports for a moment
+  // after a filter shrinks the model — is the last screenful and not nothing.
+  const past = at(36 * 100000);
+  assert.equal(past.last, 20000);
+  assert.ok(past.first < 20000);
+
+  // An empty list asks for no rows at all.
+  assert.deepEqual(windowOf({ scrollTop: 0, viewport: 540, rowHeight: 36, count: 0 }), { first: 0, last: 0, height: 0 });
+});
+
+test('the queue can be read in four orders', () => {
+  const rows = [
+    { kind: 'edge', id: 'c', flags: ['a', 'b'], degree: 1, revised: '2026-03-01' },
+    { kind: 'event', id: 'a', flags: [], degree: 40, revised: '2026-01-01' },
+    { kind: 'event', id: 'b', flags: ['a'], degree: 2, revised: '2026-02-01' },
+  ];
+  assert.deepEqual(sortQueue(rows, 'flags').map((r) => r.id), ['c', 'b', 'a']);
+  assert.deepEqual(sortQueue(rows, 'degree').map((r) => r.id), ['a', 'b', 'c']);
+  assert.deepEqual(sortQueue(rows, 'age').map((r) => r.id), ['a', 'b', 'c']);
+  // The registry's order: events before edges, whatever the flags say.
+  assert.deepEqual(sortQueue(rows, 'kind').map((r) => r.id), ['a', 'b', 'c']);
+  // Never in place: the list is held once and read in four orders.
+  assert.deepEqual(rows.map((r) => r.id), ['c', 'a', 'b']);
+});
+
+test('the queue filters by the writer that made the record', () => {
+  const rows = [
+    { kind: 'event', id: 'a', flags: [], label: 'A', tool: 'wikidata' },
+    { kind: 'event', id: 'b', flags: [], label: 'B', tool: null },
+    { kind: 'event', id: 'c', flags: [], label: 'C', tool: 'form' },
+  ];
+  assert.deepEqual(toolCounts(rows), [
+    { tool: 'form', count: 1 }, { tool: BY_HAND, count: 1 }, { tool: 'wikidata', count: 1 },
+  ]);
+  assert.deepEqual(filterQueue(rows, { tool: 'wikidata' }).map((r) => r.id), ['a']);
+  // A record no writer made is a pile of its own, not a missing value.
+  assert.deepEqual(filterQueue(rows, { tool: BY_HAND }).map((r) => r.id), ['b']);
+  assert.deepEqual(filterQueue(rows, {}).map((r) => r.id), ['a', 'b', 'c']);
+});
+
+test('the degree is how much of the atlas hangs on a record', () => {
+  const topology = {
+    events: [
+      { id: 'e1', status: 'active', place: 'p1', actors: [{ actor: 'a1' }] },
+      { id: 'e2', status: 'active', place: 'p1' },
+      { id: 'gone', status: 'retracted', place: 'p1' },
+    ],
+    edges: [
+      { id: 'e1--e2--caused', from: 'e1', to: 'e2', status: 'active' },
+      { id: 'dead', from: 'e1', to: 'gone', status: 'retracted' },
+    ],
+    relations: [{ id: 'r1', from: 'a1', to: 'a2', status: 'active' }],
+    narratives: [{ id: 'n1', status: 'active', steps: [{ ref: 'e1' }, { ref: 'e1--e2--caused' }] }],
+    presences: [], sources: [{ id: 's1', citationCount: 3 }],
+  };
+  const degrees = degreesOf(topology);
+  // One edge and one narrative step.
+  assert.equal(degrees.get('event:e1'), 2);
+  assert.equal(degrees.get('event:e2'), 1);
+  // The retracted edge counts for nothing, and neither does the tombstone.
+  assert.equal(degrees.get('event:gone'), undefined);
+  assert.equal(degrees.get('place:p1'), 2);
+  assert.equal(degrees.get('actor:a1'), 2, 'named by an event and standing in a relation');
+  assert.equal(degrees.get('edge:e1--e2--caused'), 1, 'a narrative walks it');
+  assert.equal(degrees.get('narrative:n1'), 2, 'a walk of two steps');
+  assert.equal(degrees.get('source:s1'), 3);
+
+  // And it reaches the queue through the digest, which the record cannot
+  // carry: a record cannot see how much hangs on it.
+  const digest = digestOf({ kind: 'event', id: 'e1', review: { status: 'draft' } }, { degree: 2 });
+  assert.equal(digest.degree, 2);
+  assert.equal(Object.hasOwn(digestOf({ kind: 'event', id: 'x' }), 'degree'), false, 'zero is left out');
+  assert.equal(buildQueue([digest])[0].degree, 2);
+});
+
+test('a claim is a name, a day and a week', () => {
+  const claimed = claimRecord(draft(), { name: 'A Reviewer', github: 'reviewer' }, { today: '2026-09-05' });
+  assert.deepEqual(claimed.review.claimedBy, { name: 'A Reviewer', github: 'reviewer', on: '2026-09-05' });
+  // The draft status is not touched: claiming is not reading.
+  assert.equal(claimed.review.status, 'draft');
+  const claim = claimOf(claimed);
+  assert.equal(claimState(claim, '2026-09-05'), 'held');
+  assert.equal(claimState(claim, '2026-09-11'), 'held', 'the sixth day');
+  assert.equal(claimState(claim, '2026-09-12'), 'expired', `after ${CLAIM_DAYS} days it is free again`);
+  assert.equal(claimDaysLeft(claim, '2026-09-10'), 2);
+  assert.equal(claimDaysLeft(claim, '2026-09-30'), null);
+  // A claim with no day would stand for ever, which is the thing the week is
+  // there to stop.
+  assert.equal(claimState({ name: 'Nobody' }, '2026-09-05'), 'expired');
+  assert.equal(claimState(null, '2026-09-05'), null);
+  assert.equal(claimOf(draft()), null);
+
+  // Released, the key goes; signed, it goes with everything else the
+  // reviewer was asked to look at.
+  assert.equal(Object.hasOwn(releaseClaim(claimed).review ?? {}, 'claimedBy'), false);
+  const signed = signRecord(claimed, { name: 'A Reviewer', github: 'reviewer' }, { today: '2026-09-06' });
+  assert.equal(Object.hasOwn(signed.review, 'claimedBy'), false);
+  assert.throws(() => claimRecord(draft(), { name: '  ' }, { today: '2026-09-05' }), /says who/);
+});
+
+test('a history is the versions a record went through, and one is its content', () => {
+  const v1 = { id: 'x', kind: 'event', created: '2026-01-01', revised: '2026-01-01', title: 'First' };
+  const v2 = { ...v1, revised: '2026-02-01', title: 'Second', summary: 'A sentence.' };
+  const v3 = { ...v2, revised: '2026-03-01', review: { status: 'reviewed', signedBy: [{ name: 'A Reviewer', github: null, on: '2026-03-01' }] } };
+
+  assert.deepEqual(changedFields(v1, v2), ['summary', 'title']);
+  // `revised` is the version's own date and `schema` is the migration
+  // chain's, so neither is reported as a change somebody made.
+  assert.deepEqual(changedFields(v2, { ...v2, revised: '2027-01-01', schema: 9 }), []);
+
+  const versions = versionsOf([v1, v2, v3], v3);
+  assert.deepEqual(versions, [
+    { on: '2026-01-01', first: true },
+    { on: '2026-02-01', fields: ['summary', 'title'] },
+    { on: '2026-03-01', fields: ['review'], signedBy: [{ name: 'A Reviewer', github: null, on: '2026-03-01' }] },
+  ]);
+
+  // The working tree, when the last commit does not hold it. This is what
+  // keeps a build made before a commit and one made after it identical: once
+  // v4 is committed, it is the last state and produces the same entry.
+  const v4 = { ...v3, revised: '2026-04-01', title: 'Third' };
+  assert.deepEqual(versionsOf([v1, v2, v3], v4).at(-1), { on: '2026-04-01', fields: ['title'] });
+  assert.deepEqual(versionsOf([v1, v2, v3, v4], v4).at(-1), { on: '2026-04-01', fields: ['title'] });
+  // A commit that changed no field of the record is not a version.
+  assert.equal(versionsOf([v1, v2, { ...v2 }, v3], v3).length, 3);
+
+  // With no repository to read, the record's own two dates are all there is.
+  assert.deepEqual(versionsFromRevised(v2), [{ on: '2026-01-01', first: true }, { on: '2026-02-01', fields: [] }]);
+  assert.deepEqual(versionsFromRevised(v1), [{ on: '2026-01-01', first: true }]);
+});
+
+test('the diff Sign shows is the fields the reviewer changed, as one line each', () => {
+  const before = draft({ title: 'A draft', summary: 'x'.repeat(200), cites: ['a', 'b'] });
+  const after = { ...before, title: 'A corrected draft', cites: ['a'] };
+  const diff = diffAgainst(before, after);
+  assert.deepEqual(diff.map((d) => d.field), ['cites', 'title']);
+  assert.deepEqual(diff.find((d) => d.field === 'title'), { field: 'title', before: 'A draft', after: 'A corrected draft' });
+  assert.match(diff.find((d) => d.field === 'cites').after, /^1 × \[a\]/);
+  // Nothing changed is no diff at all, which is what hides the box.
+  assert.deepEqual(diffAgainst(before, { ...before }), []);
+  // Prose is cut rather than shown whole: the point is which fields moved.
+  assert.ok(shortly('y'.repeat(500)).length < 130);
+  assert.equal(shortly(undefined), '—');
 });

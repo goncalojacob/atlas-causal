@@ -26,6 +26,8 @@ import { buildAdjacency, reachableBy, convergence } from '../../src/graph.js';
 import { horizonSet, horizonResults, SHOWN } from '../../src/horizon.js';
 import { buildSearchIndex, search } from '../../src/search.js';
 import { pickerIndex } from '../../src/contribute/picker.js';
+import { buildQueue, filterQueue, sortQueue, flagCounts, toolCounts, degreesOf } from '../../src/review/queue.js';
+import { windowOf } from '../../src/review/list.js';
 
 // --- the generator ---------------------------------------------------------
 
@@ -440,6 +442,84 @@ function benchPicker() {
   }
 }
 
+
+// The review dashboard's list at twenty thousand drafts: what it costs to
+// build the model once, and what a keystroke in the search box costs after
+// that. The brief's thresholds are 500 ms and 50 ms.
+//
+// What is not here is the drawing, which is the half that used to be all of
+// the cost: every row of the queue was in the DOM and every one of them was
+// rebuilt per key — 30,543 rows and 461 ms (health review B, finding 7).
+// Only the rows in the window are made now, and how many that is comes out
+// of `windowOf` below; the drawing itself is measured in a real browser, in
+// tests/review-browser.test.mjs.
+function benchList() {
+  console.log('the review list — 20 000 drafts, the model and one keystroke');
+  const events = syntheticEvents(20000, { seed: 20000905 });
+  const edges = syntheticEdges(events);
+  const degrees = degreesOf({ events, edges, sources: [], actors: [], places: [], relations: [], narratives: [], presences: [] });
+  // The digests as the index writes them: a draft envelope, the fields the
+  // list reads, and the degree counted off the atlas.
+  const flags = ['imported-facts', 'contributed', 'no-identifier'];
+  const tools = ['wikidata', 'cshapes', 'form', null];
+  const digests = events.map((event, i) => ({
+    kind: 'event',
+    id: event.id,
+    title: event.title,
+    status: 'active',
+    created: `2026-0${(i % 9) + 1}-01`,
+    revised: `2026-0${(i % 9) + 1}-0${(i % 8) + 1}`,
+    degree: degrees.get(`event:${event.id}`) ?? 0,
+    ...(i % 3 === 0 ? { origin: { tool: tools[i % 4], on: '2026-09-01' } } : {}),
+    review: {
+      status: 'draft',
+      ...(i % 5 === 0 ? { flags: [flags[i % 3]] } : {}),
+      ...(i % 97 === 0 ? { claimedBy: { name: 'A Reviewer', github: null, on: '2026-09-05' } } : {}),
+    },
+  }));
+  // One warning per twentieth record, which is about the share the validator
+  // reports on the real dataset.
+  const warnings = digests.filter((_, i) => i % 20 === 0)
+    .map((d) => ({ id: d.id, kind: 'event', rule: 'degree-zero', message: 'event has no edges' }));
+
+  let queue = [];
+  row('the model, from the shard', measure(() => {
+    queue = buildQueue(digests, { warnings });
+  }), `→ ${digests.length} digests`);
+  row('the chips: flags and writers', measure(() => {
+    flagCounts(queue);
+    toolCounts(queue);
+  }), '');
+  // What the pane draws at rest: the filtered, ordered model and the window
+  // of rows the DOM has to hold.
+  const view = { scrollTop: 0, viewport: 540, rowHeight: 54 };
+  let shown = 0;
+  row('first paint: order and window', measure(() => {
+    const rows_ = sortQueue(filterQueue(queue, {}), 'kind');
+    shown = windowOf({ ...view, count: rows_.length }).last;
+  }), `→ ${shown} rows in the DOM, of ${queue.length}`);
+
+  // A keystroke: the model is filtered again, ordered again, and one
+  // screenful is made. Four letters, because the first narrows least.
+  for (const [text, key] of [['e', 'kind'], ['ev', 'flags'], ['event 1', 'degree'], ['event 1234', 'age']]) {
+    let count = 0;
+    row(`a keystroke, "${text}" by ${key}`, measure(() => {
+      const rows_ = sortQueue(filterQueue(queue, { text }), key);
+      count = rows_.length;
+      windowOf({ ...view, count });
+    }), `→ ${count} match`);
+  }
+  // And the two filters a chip sets, which do not go through the text scan.
+  row('a flag chip', measure(() => {
+    const rows_ = sortQueue(filterQueue(queue, { flag: 'contributed' }), 'flags');
+    windowOf({ ...view, count: rows_.length });
+  }), `→ ${filterQueue(queue, { flag: 'contributed' }).length} match`);
+  row('a writer chip', measure(() => {
+    const rows_ = sortQueue(filterQueue(queue, { tool: 'wikidata' }), 'degree');
+    windowOf({ ...view, count: rows_.length });
+  }), `→ ${filterQueue(queue, { tool: 'wikidata' }).length} match`);
+}
+
 // --- the tools -------------------------------------------------------------
 //
 // The three the health review timed and H4d is about: the cross-record rules
@@ -533,6 +613,7 @@ const CASES = {
   queries: benchQueries,
   search: benchSearch,
   picker: benchPicker,
+  list: benchList,
 
   rules: benchRules,
   'build-index': benchBuildIndex,

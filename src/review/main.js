@@ -15,16 +15,32 @@ import { html } from '../util/dom.js';
 import { expandSpine } from '../data.js';
 import { loadSchemas } from '../validate/schemas.js';
 import {
-  buildQueue, groupByKind, flagCounts, filterQueue, progressOf, isDraft, labelOf,
+  buildQueue, flagCounts, toolCounts, filterQueue, sortQueue, isDraft, labelOf,
+  SORT_KEYS, SORT_LABELS, BY_HAND,
 } from './queue.js';
+import { createList } from './list.js';
+import { queueRow as drawRow } from './row.js';
+import { claimOf, heldBy, claimDaysLeft, claimRecord, releaseClaim, CLAIM_DAYS } from './claim.js';
+import { diffAgainst } from './history.js';
 import { signRecord, retractRecord, retractionPlan, reviewerProblems, normalizeReviewer, bundleOf, carriedReason } from './sign.js';
 import { saveBundle, readStatus } from './save.js';
 import { unverified } from './citations.js';
 import { createEditor } from './editor.js';
 import { preparedFor } from '../contribute/bundle.js';
 import { pickerIndex } from '../contribute/picker.js';
+import { formatInterval } from '../util/dates.js';
 
 const REVIEWER_KEY = 'atlas.reviewer';
+// Every row is exactly this tall, in pixels. The list places rows by
+// arithmetic — see src/review/list.js — so this number and the stylesheet
+// have to agree, and the number is the one that decides: the row's height is
+// set on the element.
+const ROW_HEIGHT = 54;
+// Below this many drafts the page fetches every kind at once, which is what
+// it always did and what the atlas is today. Above it, it opens on one kind
+// and fetches the others when they are asked for: eleven megabytes of digests
+// before the first row is drawn is the thing the shards exist to stop.
+const EAGER_DRAFTS = 2000;
 const params = new URLSearchParams(window.location.search);
 const fixtures = params.get('fixtures') === '1';
 const dataRoot = fixtures ? 'tests/fixtures/data/' : 'data/';
@@ -59,9 +75,12 @@ function writeReviewer(reviewer) {
 
 try {
   const manifest = await getJson(`${dataRoot}index/manifest.json`, { cache: 'no-store' });
-  const [spine, sourcesIndex, review, schemas, searchEntries] = await Promise.all([
+  const [spine, sourcesIndex, summary, schemas, searchEntries] = await Promise.all([
     getJson(`${dataRoot}${manifest.files.spine}`),
     getJson(`${dataRoot}${manifest.files.sources}`),
+    // The queue's summary: how many drafts of each kind there are and which
+    // file holds them. The digests themselves are one file per kind and are
+    // fetched when a kind is shown (health review B, finding 7).
     getJson(`${dataRoot}${manifest.files.review}`),
     loadSchemas({ root: 'schema/' }),
     // The search shard, which the pickers scan. Folded at build time, so a
@@ -87,7 +106,17 @@ try {
       sources: sourcesIndex.sources ?? [],
       regions: manifest.regions ?? [],
     },
-    review,
+    summary,
+    // One kind's digests and the warnings about them.
+    shardOf: (kind) => {
+      const file = (summary.kinds ?? []).find((k) => k.kind === kind)?.file;
+      return file ? getJson(`${dataRoot}${file}`) : Promise.resolve({ records: [], warnings: [] });
+    },
+    // A record's history, written by the index build out of what git holds.
+    // Fetched when a record is opened and not before: there is one file per
+    // record and a dashboard reads a handful of them in an evening.
+    historyOf: (id) => getJson(`${dataRoot}${manifest.files.history}/${encodeURIComponent(id)}.json`)
+      .catch(() => null),
     schemas,
     searchEntries,
     // Which records cite a source: not in the index every page loads, one
@@ -105,7 +134,7 @@ try {
   throw error;
 }
 
-function render({ topology, review, schemas, citersOf, searchEntries = null }) {
+function render({ topology, summary, shardOf, historyOf, schemas, citersOf, searchEntries = null }) {
   // The atlas's half of validation, built once for the page: a reviewer
   // opens one record after another and every editor validates against the
   // same universe and the same schema set (health review A, finding 11).
@@ -114,13 +143,23 @@ function render({ topology, review, schemas, citersOf, searchEntries = null }) {
   // this one index, built once for the page rather than once per record
   // opened (health review B, finding 6).
   const pickers = pickerIndex({ topology, entries: searchEntries });
-  // The queue as the index left it. Signing removes an entry from this list;
-  // reloading the page rebuilds it from the index the save rewrote.
-  let digests = (review.records ?? []).filter(isDraft);
-  let queue = buildQueue(digests, review);
-  const filters = { kind: null, flag: null, text: '' };
+  // The queue, a kind at a time. Each kind's digests are one file, fetched
+  // the first time that kind is shown and kept; signing removes an entry from
+  // the list, and reloading the page rebuilds it from the index the save
+  // rewrote. What the summary says is what the page can count without
+  // fetching anything: how many drafts there are, and of what.
+  const shards = new Map();
+  const counts = new Map((summary.kinds ?? []).map((k) => [k.kind, k.count]));
+  let digests = [];
+  let warnings = [];
+  let queue = [];
+  const filters = { kind: null, flag: null, tool: null, text: '' };
+  let sortKey = 'kind';
   let open = null;
   let editor = null;
+  // The record as the page fetched it, before this reviewer touched
+  // anything: what the diff and the claim are written against.
+  let drafted = null;
   // The validation of what is in the inputs right now: the editor reports it
   // on every keystroke, and Save and Sign hang on it.
   let result = null;
@@ -132,17 +171,31 @@ function render({ topology, review, schemas, citersOf, searchEntries = null }) {
   const side = html('aside', { class: 'queue' });
   const progressEl = html('p', { class: 'progress' });
   const search = html('input', { type: 'search', class: 'queue-search', 'aria-label': 'Search the queue', placeholder: 'id or name' });
+  const sortRow = html('div', { class: 'queue-filters queue-sort' });
   const kindRow = html('div', { class: 'queue-filters' });
   const flagRow = html('div', { class: 'queue-filters' });
-  const listEl = html('div', { class: 'queue-list' });
-  side.append(progressEl, search, kindRow, flagRow, listEl);
+  const toolRow = html('div', { class: 'queue-filters' });
+  const countEl = html('p', { class: 'queue-count', role: 'status' });
+  const list = createList({ rowHeight: ROW_HEIGHT, render: queueRow });
+  side.append(progressEl, search, sortRow, kindRow, flagRow, toolRow, countEl, list.root);
 
   // --- the record ----------------------------------------------------------
   // `contrib` is not decoration here: the editor is the contribution
   // form's fields, so it is styled by the contribution form's rules.
   const main = html('section', { class: 'record contrib' });
   const headEl = html('div', { class: 'record-head' });
+  // An edge is two ends and a claim about what ran between them, and it was
+  // reviewed as two ids and a textarea: a reviewer could not see what either
+  // end said without leaving the page (health review B, finding 7). This is
+  // both endpoints, with their summaries and their standing.
+  const contextEl = html('div', { class: 'record-context' });
+  // Who has already read this record, and what changed when. Built by the
+  // index out of the repository's own commits.
+  const historyEl = html('details', { class: 'record-history' });
+  const claimEl = html('div', { class: 'record-claim' });
   const editorMount = html('div', { class: 'editor-mount' });
+  // What this reviewer has changed about the record they are about to sign.
+  const diffEl = html('details', { class: 'record-diff' });
   const noteEl = html('p', { class: 'save-note', role: 'status' });
   // The bundle a save became when there was nothing to write it: the
   // clipboard can refuse, and then this box is the only copy there is.
@@ -174,7 +227,7 @@ function render({ topology, review, schemas, citersOf, searchEntries = null }) {
   const actions = html('div', { class: 'record-actions' });
   actions.append(saveButton, signButton, retractButton);
 
-  main.append(headEl, editorMount, signBox, citationWarning, actions, noteEl, bundleBox);
+  main.append(headEl, contextEl, claimEl, historyEl, editorMount, diffEl, signBox, citationWarning, actions, noteEl, bundleBox);
   layout.append(side, main);
   mount.appendChild(layout);
 
@@ -208,36 +261,94 @@ function render({ topology, review, schemas, citersOf, searchEntries = null }) {
     return Boolean(editor && result?.ok);
   }
 
+  // --- the shards ----------------------------------------------------------
+  // A kind's digests, fetched once. Everything that paints waits on this and
+  // nothing else does any fetching.
+  async function load(kind) {
+    if (shards.has(kind)) return;
+    shards.set(kind, { records: [], warnings: [] });
+    try {
+      const shard = await shardOf(kind);
+      shards.set(kind, { records: (shard.records ?? []).filter(isDraft), warnings: shard.warnings ?? [] });
+    } catch (error) {
+      shards.delete(kind);
+      countEl.textContent = `The ${kind} queue could not be fetched: ${error.message}`;
+      return;
+    }
+    rebuild();
+  }
+
+  function rebuild() {
+    digests = [...shards.values()].flatMap((s) => s.records);
+    warnings = [...shards.values()].flatMap((s) => s.warnings);
+    queue = buildQueue(digests, { warnings });
+    paintQueue();
+  }
+
   // --- painting the queue --------------------------------------------------
-  function visible() {
-    return filterQueue(queue, filters);
+  // The model the list is handed: filtered, then ordered. Held between paints
+  // so that j and k, the list and the keyboard all step through one list.
+  let rows = [];
+
+  function refilter() {
+    rows = sortQueue(filterQueue(queue, filters), sortKey);
+    return rows;
   }
 
   function paintProgress() {
-    const progress = progressOf(digests, { total: review.total ?? null });
-    progressEl.textContent = progress.remaining === 0
-      ? `Nothing left: all ${progress.total} records carry a person's name.`
-      : `${progress.remaining} of ${progress.total} records still unreviewed — ${progress.byKind.map((k) => `${k.count} ${k.kind}`).join(', ')}.`;
+    // Off the summary, not off what has been fetched: the page can say how
+    // much is left without holding every digest, which is the point of the
+    // shards.
+    const remaining = [...counts.values()].reduce((sum, n) => sum + n, 0);
+    const total = summary.total ?? remaining;
+    const byKind = [...counts].filter(([, n]) => n > 0).map(([kind, n]) => `${n} ${kind}`);
+    progressEl.textContent = remaining === 0
+      ? `Nothing left: all ${total} records carry a person's name.`
+      : `${remaining} of ${total} records still unreviewed — ${byKind.join(', ')}.`;
   }
 
-  function chip(label, active, onPick) {
-    const button = html('button', { type: 'button', class: `chip${active ? ' on' : ''}` }, label);
+  function chip(label, active, onPick, { title = null } = {}) {
+    const button = html('button', { type: 'button', class: `chip${active ? ' on' : ''}`, ...(title ? { title } : {}) }, label);
     button.addEventListener('click', onPick);
     return button;
   }
 
   function paintFilters() {
-    kindRow.textContent = '';
-    kindRow.appendChild(chip(`all (${queue.length})`, filters.kind === null, () => {
-      filters.kind = null;
-      paintQueue();
-    }));
-    for (const group of groupByKind(queue)) {
-      kindRow.appendChild(chip(`${group.kind} (${group.count})`, filters.kind === group.kind, () => {
-        filters.kind = filters.kind === group.kind ? null : group.kind;
+    sortRow.textContent = '';
+    sortRow.appendChild(html('span', { class: 'queue-sort-label' }, 'by'));
+    for (const key of SORT_KEYS) {
+      sortRow.appendChild(chip(SORT_LABELS[key], sortKey === key, () => {
+        sortKey = key;
         paintQueue();
       }));
     }
+
+    // Every kind the summary knows about, whether or not its shard has been
+    // fetched: the counts are the summary's, and choosing one fetches it.
+    kindRow.textContent = '';
+    const loaded = [...counts.keys()].every((kind) => shards.has(kind));
+    kindRow.appendChild(chip(
+      `all (${[...counts.values()].reduce((sum, n) => sum + n, 0)})`,
+      filters.kind === null,
+      () => {
+        filters.kind = null;
+        for (const kind of counts.keys()) load(kind);
+        paintQueue();
+      },
+      { title: loaded ? null : 'fetches every kind’s digests' },
+    ));
+    for (const [kind, count] of counts) {
+      if (!count) continue;
+      kindRow.appendChild(chip(`${kind} (${count})`, filters.kind === kind, () => {
+        filters.kind = filters.kind === kind ? null : kind;
+        if (filters.kind) load(filters.kind);
+        paintQueue();
+      }));
+    }
+
+    // The flags and the writers are counted off what has been fetched, and
+    // say so when that is not everything: a chip claiming a number it cannot
+    // know would be worse than the sentence under it.
     flagRow.textContent = '';
     for (const { flag, count } of flagCounts(queue)) {
       flagRow.appendChild(chip(`${flag} (${count})`, filters.flag === flag, () => {
@@ -245,40 +356,34 @@ function render({ topology, review, schemas, citersOf, searchEntries = null }) {
         paintQueue();
       }));
     }
+    toolRow.textContent = '';
+    for (const { tool, count } of toolCounts(queue)) {
+      toolRow.appendChild(chip(`${tool === BY_HAND ? 'by hand' : tool} (${count})`, filters.tool === tool, () => {
+        filters.tool = filters.tool === tool ? null : tool;
+        paintQueue();
+      }));
+    }
+  }
+
+  // What the list draws for one row: the row itself is in row.js, so that
+  // what a browser measures is what the page draws, and this adds the one
+  // thing a benchmark has no use for.
+  function queueRow(item) {
+    const button = drawRow(item, { current: Boolean(open && open.id === item.id), today: today() });
+    button.addEventListener('click', () => openRecord(item));
+    return button;
   }
 
   function paintQueue() {
     paintProgress();
     paintFilters();
-    listEl.textContent = '';
-    const rows = visible();
-    if (!rows.length) {
-      listEl.appendChild(html('p', { class: 'hint' }, queue.length ? 'Nothing matches these filters.' : 'The queue is empty.'));
-      return;
-    }
-    for (const group of groupByKind(rows)) {
-      listEl.appendChild(html('h3', { class: 'queue-kind' }, `${group.kind} — ${group.count}`));
-      const ul = html('ul', { class: 'queue-items' });
-      for (const item of group.items) {
-        const li = html('li', {});
-        const button = html('button', {
-          type: 'button',
-          class: `queue-item${open && open.id === item.id ? ' current' : ''}`,
-        });
-        button.appendChild(html('span', { class: 'queue-label' }, item.label));
-        button.appendChild(html('span', { class: 'queue-id' }, item.id));
-        for (const flag of item.flags) button.appendChild(html('span', { class: 'flag' }, flag));
-        if (item.unverified) button.appendChild(html('span', { class: 'unverified' }, `${item.unverified} citation${item.unverified === 1 ? '' : 's'} unverified`));
-        // Which records have a full entry written. Not a flag — nothing here
-        // is wrong — but the one thing the queue can say about how much of a
-        // record exists beyond the sentence on its card.
-        if (item.body) button.appendChild(html('span', { class: 'has-entry' }, 'full entry'));
-        button.addEventListener('click', () => openRecord(item));
-        li.appendChild(button);
-        ul.appendChild(li);
-      }
-      listEl.appendChild(ul);
-    }
+    refilter();
+    list.setRows(rows, { keepScroll: true });
+    const missing = [...counts.keys()].filter((kind) => !shards.has(kind));
+    countEl.textContent = rows.length === 0 && missing.length
+      ? `Nothing fetched yet — choose a kind.`
+      : `${rows.length} shown${missing.length ? `, of the ${[...counts].filter(([k]) => shards.has(k)).map(([k]) => k).join(', ') || 'nothing'} fetched so far` : ''}.`;
+    list.setEmpty(rows.length ? null : html('p', { class: 'hint' }, queue.length ? 'Nothing matches these filters.' : 'The queue is empty.'));
   }
 
   // --- one record ----------------------------------------------------------
@@ -286,10 +391,20 @@ function render({ topology, review, schemas, citersOf, searchEntries = null }) {
     open = item;
     noteEl.textContent = '';
     headEl.textContent = '';
+    contextEl.textContent = '';
+    claimEl.textContent = '';
+    historyEl.textContent = '';
+    diffEl.textContent = '';
+    diffEl.hidden = true;
     editorMount.textContent = '';
     editor = null;
+    drafted = null;
     result = null;
-    paintQueue();
+    // The open record's row is marked, and it is usually not one of the rows
+    // in the DOM: the list is scrolled to it first, which is what makes it.
+    const at = rows.findIndex((r) => r.id === item.id);
+    if (at >= 0) list.scrollTo(at);
+    list.repaint();
     headEl.append(
       html('h2', {}, item.label),
       html('p', { class: 'record-id' }, `${item.kind} · ${item.id}`),
@@ -304,6 +419,11 @@ function render({ topology, review, schemas, citersOf, searchEntries = null }) {
       editorMount.appendChild(html('p', { class: 'field-error' }, error.message));
       return;
     }
+    // The record as it was fetched: what Sign diffs the inputs against.
+    drafted = record;
+    paintClaim();
+    if (record.kind === 'edge' || record.kind === 'relation') paintContext(record);
+    paintHistory(item.id);
     editor = createEditor({
       record,
       topology,
@@ -315,29 +435,166 @@ function render({ topology, review, schemas, citersOf, searchEntries = null }) {
       onChange: (state) => {
         result = state.result;
         saveButton.disabled = !result.ok;
+        paintDiff();
         paintReviewer();
       },
     });
     editorMount.appendChild(editor.root);
     result = editor.result;
     saveButton.disabled = !result.ok;
+    paintDiff();
     paintReviewer();
     editor.focus();
   }
 
+  // --- what is beside the record -------------------------------------------
+
+  // Both ends of a link, with what each says and whether it still stands. The
+  // spine carries no summaries — it is what every page loads — so the two
+  // records are fetched, and a fetch that fails leaves the id, which is what
+  // the page had before.
+  async function paintContext(record) {
+    const ends = record.kind === 'edge'
+      ? [['from', record.from, 'event'], ['to', record.to, 'event']]
+      : [['from', record.from, 'actor'], ['to', record.to, 'actor']];
+    contextEl.appendChild(html('h3', { class: 'context-head' }, `${record.type} — the two ends`));
+    const list_ = html('div', { class: 'context-ends' });
+    contextEl.appendChild(list_);
+    for (const [side, id, kind] of ends) {
+      const box = html('div', { class: `context-end ${side}` });
+      box.appendChild(html('p', { class: 'context-side' }, side === 'from' ? 'from' : 'to'));
+      box.appendChild(html('p', { class: 'context-id' }, id));
+      list_.appendChild(box);
+      let end = null;
+      try {
+        end = await getJson(`${dataRoot}${kind}s/${encodeURIComponent(id)}.json`);
+      } catch {
+        box.appendChild(html('p', { class: 'hint' }, 'this record could not be fetched'));
+        continue;
+      }
+      // The id stays: it is what the field holds and what a reviewer checks.
+      box.insertBefore(html('h4', {}, labelOf({ ...end, kind })), box.querySelector('.context-id'));
+      const marks = html('p', { class: 'context-marks' });
+      marks.appendChild(html('span', { class: `status ${end.status}` }, end.status));
+      if (isDraft(end)) marks.appendChild(html('span', { class: 'flag' }, 'unreviewed'));
+      if (end.when) marks.appendChild(html('span', { class: 'when' }, formatInterval(end.when)));
+      box.appendChild(marks);
+      if (end.summary) box.appendChild(html('p', { class: 'context-summary' }, end.summary));
+    }
+  }
+
+  async function paintHistory(id) {
+    const summaryEl = html('summary', {}, 'History');
+    historyEl.appendChild(summaryEl);
+    const history = await historyOf(id);
+    if (!history) {
+      historyEl.appendChild(html('p', { class: 'hint' }, 'No history file for this record. Rebuild the index (node tools/build-index.mjs).'));
+      return;
+    }
+    const versions = history.versions ?? [];
+    summaryEl.textContent = `History — ${versions.length} version${versions.length === 1 ? '' : 's'}`;
+    if (history.from !== 'git') {
+      historyEl.appendChild(html('p', { class: 'hint' }, 'Built from the record’s own dates: the index was made where the repository’s history could not be read, so what changed at each revision is not known.'));
+    }
+    const ul = html('ul', { class: 'history-list' });
+    // Newest first: what happened last is what a reviewer is deciding about.
+    for (const version of [...versions].reverse()) {
+      const li = html('li', {});
+      li.appendChild(html('span', { class: 'history-on' }, version.on ?? 'undated'));
+      li.appendChild(html('span', { class: 'history-what' }, version.first
+        ? 'written'
+        : (version.fields ?? []).length ? (version.fields ?? []).join(', ') : 'changed'));
+      for (const signature of version.signedBy ?? []) {
+        li.appendChild(html('span', { class: 'history-signed' }, `signed by ${signature.name}`));
+      }
+      ul.appendChild(li);
+    }
+    historyEl.appendChild(ul);
+  }
+
+  // What Sign is about to write that the draft does not say. Live: the
+  // editor reports every keystroke, and this is the answer to "what am I
+  // putting my name on that was not already there".
+  function paintDiff() {
+    if (!editor || !drafted) { diffEl.hidden = true; return; }
+    const changes = diffAgainst(drafted, editor.current());
+    diffEl.hidden = changes.length === 0;
+    if (!changes.length) return;
+    diffEl.textContent = '';
+    diffEl.appendChild(html('summary', {}, `${changes.length} field${changes.length === 1 ? '' : 's'} changed since the draft`));
+    const ul = html('ul', { class: 'diff-list' });
+    for (const change of changes) {
+      const li = html('li', {});
+      li.appendChild(html('span', { class: 'diff-field' }, change.field));
+      li.appendChild(html('span', { class: 'diff-before' }, change.before));
+      li.appendChild(html('span', { class: 'diff-after' }, change.after));
+      ul.appendChild(li);
+    }
+    diffEl.appendChild(ul);
+  }
+
+  // The claim: a name and a day on the record, so a second reviewer sees the
+  // first one before spending the evening on the same forty records. Never a
+  // lock — see src/review/claim.js — and it expires after a week.
+  function paintClaim() {
+    claimEl.textContent = '';
+    if (!drafted) return;
+    const held = heldBy(claimOf(drafted), today());
+    const who = normalizeReviewer({ name: nameInput.value, github: handleInput.value });
+    const mine = held && ((who.github && held.github === who.github) || held.name === who.name);
+    if (held) {
+      const left = claimDaysLeft(held, today());
+      claimEl.appendChild(html('p', { class: 'claim-held' },
+        `${mine ? 'You are' : `${held.name} is`} reading this — claimed ${held.on}, ${left} day${left === 1 ? '' : 's'} left.`));
+    }
+    const button = html('button', { type: 'button', class: 'link' }, held ? 'Release' : 'Claim');
+    button.disabled = Boolean(held && !mine);
+    if (held && !mine) button.title = 'the claim is somebody else’s; it expires on its own';
+    button.addEventListener('click', async () => {
+      if (!drafted) return;
+      if (!held && !who.name) {
+        noteEl.textContent = 'A claim says who is reading it: put your name in the box below first.';
+        return;
+      }
+      const next = held ? releaseClaim(drafted) : claimRecord(drafted, who, { today: today() });
+      const outcome = await send([next], held ? 'Released' : `Claimed for ${CLAIM_DAYS} days`);
+      if (outcome.mode === 'saved') {
+        drafted = next;
+        const row = queue.find((r) => r.id === next.id);
+        if (row) row.claim = next.review?.claimedBy ?? null;
+        paintClaim();
+        list.repaint();
+      }
+    });
+    claimEl.appendChild(button);
+  }
+
   function step(delta) {
-    const rows = visible();
     if (!rows.length) return;
     const at = rows.findIndex((r) => open && r.id === open.id);
-    const next = rows[Math.min(rows.length - 1, Math.max(0, (at < 0 ? 0 : at + delta)))];
-    if (next) openRecord(next);
+    const to = Math.min(rows.length - 1, Math.max(0, (at < 0 ? 0 : at + delta)));
+    const next = rows[to];
+    if (!next) return;
+    // The row stepped onto is usually not one of the rows in the DOM, which
+    // is the whole point of the list: it is scrolled to first, and the list
+    // makes it on the way.
+    list.scrollTo(to);
+    openRecord(next);
   }
 
   // The record is gone from the queue only once it is on disk with a name on
   // it: the bundle path leaves it here, because nothing has been written yet.
   function forget(ids) {
-    digests = digests.filter((d) => !ids.includes(d.id));
-    queue = buildQueue(digests, review);
+    for (const [kind, shard] of shards) {
+      const kept = shard.records.filter((d) => !ids.includes(d.id));
+      if (kept.length !== shard.records.length) {
+        counts.set(kind, Math.max(0, (counts.get(kind) ?? 0) - (shard.records.length - kept.length)));
+        shards.set(kind, { ...shard, records: kept });
+      }
+    }
+    digests = [...shards.values()].flatMap((s) => s.records);
+    warnings = [...shards.values()].flatMap((s) => s.warnings);
+    queue = buildQueue(digests, { warnings });
     open = null;
     headEl.textContent = '';
     editorMount.textContent = '';
@@ -499,29 +756,44 @@ function render({ topology, review, schemas, citersOf, searchEntries = null }) {
     if (queued) return queued;
     // By kind, because an edge out of the spine carries no `kind` of its own:
     // it is the list it is in that says what it is.
-    for (const [kind, list] of [
+    for (const [kind, records] of [
       ['event', topology.events], ['edge', topology.edges], ['actor', topology.actors],
       ['place', topology.places], ['relation', topology.relations],
       ['narrative', topology.narratives], ['source', topology.sources],
     ]) {
-      const record = (list ?? []).find((r) => r.id === id);
-      if (record) return { kind, id, label: labelOf({ ...record, kind }), status: record.status, flags: [], note: null };
+      const record = (records ?? []).find((r) => r.id === id);
+      if (record) {
+        return {
+          kind, id, label: labelOf({ ...record, kind }), status: record.status,
+          flags: [], note: null, degree: 0, revised: record.revised ?? null, tool: null, claim: null,
+        };
+      }
     }
     return null;
   }
 
+  // Which kinds are fetched before the first row is drawn. The whole queue
+  // where that is a few hundred digests, which is the atlas today and is what
+  // the page always did; one kind where it is not, and the rest when they are
+  // asked for.
+  const first = [...counts].find(([, n]) => n > 0)?.[0] ?? null;
+  const eager = (summary.drafts ?? 0) <= EAGER_DRAFTS ? [...counts.keys()] : [first].filter(Boolean);
+  if (eager.length === 1 && first) filters.kind = first;
+
   paintQueue();
   saveButton.disabled = true;
   signButton.disabled = true;
-  const wanted = params.get('open');
-  const opening = asked(wanted);
-  // Otherwise the queue is grouped in kind order, and the first record of the
-  // first group is the one a reviewer would open anyway.
-  const first = opening ?? visible()[0];
-  if (first) openRecord(first);
-  // After opening, because opening a record clears this line: an address that
-  // names nothing is said out loud rather than silently ignored, and what was
-  // opened instead is the queue's own first record.
-  if (wanted && !opening) noteEl.textContent = `Nothing here has the id ${wanted}.`;
-  else progressEl.classList.add('good');
+  Promise.all(eager.map(load)).then(() => {
+    const wanted = params.get('open');
+    const opening = asked(wanted);
+    // Otherwise the queue is in the order the sort chips say, and its first
+    // row is the one a reviewer would open anyway.
+    const opened = opening ?? rows[0];
+    if (opened) openRecord(opened);
+    // After opening, because opening a record clears this line: an address
+    // that names nothing is said out loud rather than silently ignored, and
+    // what was opened instead is the queue's own first record.
+    if (wanted && !opening) noteEl.textContent = `Nothing here has the id ${wanted}.`;
+    else progressEl.classList.add('good');
+  });
 }

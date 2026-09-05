@@ -1393,15 +1393,31 @@ svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align:
 .chip.on { background: var(--cobalt); border-color: var(--cobalt); color: var(--paper); }
 .queue-kind { font-family: var(--font-ui); font-size: var(--text-xs); text-transform: uppercase; letter-spacing: var(--tracking-label); color: var(--ink-soft); margin: 0.9rem 0 0.2rem; }
 .queue-items { list-style: none; margin: 0; padding: 0; }
+
+/* The virtual list. The scroller is the list itself and not the pane, the
+   spacer inside it is as tall as every row would be, and the rows are placed
+   inside that by src/review/list.js — which sets each row's top and height
+   in pixels, so nothing here may give a row a height of its own. */
+.queue-list { height: 26rem; overflow-y: auto; overflow-x: hidden; position: relative; margin-top: 0.4rem; border-top: 1px solid var(--line); }
+.vlist-spacer { position: relative; }
+.vlist-rows { position: absolute; inset: 0; }
+.queue-count { font-family: var(--font-ui); font-size: var(--text-xs); color: var(--ink-soft); margin: 0.5rem 0 0; }
+.queue-sort { align-items: baseline; }
+.queue-sort-label { font-family: var(--font-ui); font-size: var(--text-xs); color: var(--ink-soft); }
 .queue-item {
   display: block; width: 100%; text-align: left; border: 0; border-left: 3px solid transparent;
   background: none; color: var(--ink); font-family: var(--font-ui); font-size: var(--text-sm);
-  padding: 0.25rem 0.4rem; cursor: pointer;
+  padding: 0.25rem 0.4rem; cursor: pointer; overflow: hidden; box-sizing: border-box;
 }
+.queue-item .queue-marks { display: flex; flex-wrap: nowrap; gap: 0.3rem; align-items: baseline; overflow: hidden; }
+.queue-item .queue-marks > * { flex: 0 0 auto; }
+.queue-item .queue-marks .queue-id { flex: 0 1 auto; }
+.queue-item .degree, .queue-item .claimed { font-size: var(--text-xs); color: var(--ink-soft); white-space: nowrap; }
+.queue-item .claimed { color: var(--cobalt); }
 .queue-item:hover { background: var(--cobalt-faint); }
 .queue-item.current { border-left-color: var(--madder); background: var(--madder-faint); }
-.queue-item .queue-label { display: block; }
-.queue-item .queue-id { display: block; color: var(--ink-soft); font-size: var(--text-xs); }
+.queue-item .queue-label { display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.queue-item .queue-id { color: var(--ink-soft); font-size: var(--text-xs); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .queue-item .flag, .record-flags {
   display: inline-block; margin: 0.15rem 0.2rem 0 0; padding: 0 0.35rem;
   border: 1px solid var(--madder); color: var(--madder); font-size: var(--text-xs); border-radius: 2px;
@@ -1574,3 +1590,27 @@ svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align:
   display: inline-block; margin: 0.15rem 0.2rem 0 0; padding: 0 0.35rem;
   border: 1px solid var(--cobalt); color: var(--cobalt); font-size: var(--text-xs); border-radius: 2px;
 }
+
+/* H6b: what stands beside the record on review.html — both ends of a link,
+   the record's history, the claim, and the diff Sign is about to write. */
+.record-context { margin: 0.4rem 0; }
+.record-context .context-head { font-family: var(--font-ui); font-size: var(--text-xs); text-transform: uppercase; letter-spacing: var(--tracking-label); color: var(--ink-soft); margin: 0 0 0.3rem; }
+.context-ends { display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem; }
+.context-end { border: 1px solid var(--line); background: var(--paper); padding: 0.4rem 0.5rem; min-width: 0; }
+.context-end h4 { margin: 0; font-family: var(--font); font-weight: normal; color: var(--cobalt); font-size: var(--text-base); }
+.context-end .context-side { margin: 0 0 0.1rem; font-family: var(--font-ui); font-size: var(--text-xs); text-transform: uppercase; letter-spacing: var(--tracking-label); color: var(--ink-soft); }
+.context-end .context-id { margin: 0.1rem 0; font-family: var(--font-ui); font-size: var(--text-xs); color: var(--ink-soft); word-break: break-all; }
+.context-end .context-marks { margin: 0.2rem 0; display: flex; flex-wrap: wrap; gap: 0.3rem; font-family: var(--font-ui); font-size: var(--text-xs); }
+.context-end .context-marks .status { color: var(--ink-soft); }
+.context-end .context-marks .status.retracted { color: var(--madder); }
+.context-end .context-summary { margin: 0.2rem 0 0; font-family: var(--font); font-size: var(--text-sm); }
+.record-history, .record-diff { margin: 0.4rem 0; font-family: var(--font-ui); font-size: var(--text-sm); }
+.record-history summary, .record-diff summary { cursor: pointer; color: var(--ink-soft); }
+.history-list, .diff-list { list-style: none; margin: 0.3rem 0 0; padding: 0; }
+.history-list li, .diff-list li { display: flex; gap: 0.5rem; padding: 0.15rem 0; border-bottom: 1px solid var(--line); font-size: var(--text-xs); }
+.history-list .history-on, .diff-list .diff-field { flex: 0 0 8rem; color: var(--ink-soft); }
+.history-list .history-signed { color: var(--cobalt); }
+.diff-list .diff-before { flex: 1 1 0; min-width: 0; color: var(--ink-soft); text-decoration: line-through; overflow: hidden; text-overflow: ellipsis; }
+.diff-list .diff-after { flex: 1 1 0; min-width: 0; color: var(--madder); overflow: hidden; text-overflow: ellipsis; }
+.record-claim { display: flex; gap: 0.5rem; align-items: baseline; margin: 0.3rem 0; font-family: var(--font-ui); font-size: var(--text-sm); }
+.record-claim .claim-held { margin: 0; color: var(--cobalt); }
