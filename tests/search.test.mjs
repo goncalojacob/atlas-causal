@@ -4,6 +4,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { fold, rank, buildSearchIndex, search, flatten } from '../src/search.js';
+import { extent } from '../src/util/dates.js';
 
 const EVENTS = [
   { id: 'salazar-falls-1968', title: 'Marcelo Caetano succeeds Salazar', when: { start: 1968, end: 1968 }, weight: 4, status: 'active' },
@@ -113,4 +114,116 @@ test('an empty query returns nothing, and the limit is over the whole result', (
 test('the order is stable: rank, then the shorter name, then weight, then id', () => {
   const twice = [search(index, 'a'), search(index, 'a')];
   assert.deepEqual(flatten(twice[0]).map((i) => i.id), flatten(twice[1]).map((i) => i.id));
+});
+
+// --- the top of the list, against sorting the whole of it ------------------
+
+// The scan as it was before H4c: every match copied into an object, the lot
+// sorted, then the first eight taken. Kept here so the answer the box gives
+// can be held to it — the change was meant to be a change in what is looked
+// at and never in what is found.
+function sortEverything(entries, query, { limit = 8 } = {}) {
+  const folded = fold(query);
+  if (folded.length === 0) return { groups: [], total: 0, query: '' };
+  const startOf = (when) => {
+    try {
+      return extent(when).min;
+    } catch {
+      return 0;
+    }
+  };
+  const hits = [];
+  for (const entry of entries) {
+    let best = null;
+    for (const term of entry.terms) {
+      const r = rank(term, folded);
+      if (r !== null && (best === null || r < best.rank || (r === best.rank && term.length < best.length))) {
+        best = { rank: r, length: term.length };
+      }
+    }
+    if (best) hits.push({ ...entry, rank: best.rank, matched: best.length });
+  }
+  hits.sort((a, b) => a.rank - b.rank
+    || a.matched - b.matched
+    || b.weight - a.weight
+    || startOf(a.when) - startOf(b.when)
+    || (a.id < b.id ? -1 : a.id > b.id ? 1 : 0));
+  const byKind = new Map();
+  for (const hit of hits) {
+    if (!byKind.has(hit.kind)) byKind.set(hit.kind, []);
+    byKind.get(hit.kind).push(hit);
+  }
+  const groups = [...byKind.entries()]
+    .map(([kind, items]) => ({ kind, items }))
+    .sort((a, b) => a.items[0].rank - b.items[0].rank
+      || a.items[0].matched - b.items[0].matched
+      || (a.kind < b.kind ? -1 : 1));
+  const out = [];
+  let left = limit;
+  for (const group of groups) {
+    if (left <= 0) break;
+    const items = group.items.slice(0, left);
+    left -= items.length;
+    out.push({ kind: group.kind, items });
+  }
+  return { groups: out, total: hits.length, query: folded };
+}
+
+// Mulberry32, as the bench harness uses: the same corpus on every machine.
+function seeded(seed) {
+  let a = seed >>> 0;
+  return () => {
+    a = (a + 0x6d2b79f5) >>> 0;
+    let t = Math.imul(a ^ (a >>> 15), 1 | a);
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
+
+test('holding the best eight finds exactly what sorting all of them found', () => {
+  const words = ['angola', 'goa', 'lisboa', 'salazar', 'ceuta', 'diu', 'macau', 'brasil'];
+  for (const seed of [1415, 1498, 1580]) {
+    const random = seeded(seed);
+    const events = [];
+    const actors = [];
+    const places = [];
+    for (let i = 0; i < 1200; i += 1) {
+      const word = words[Math.floor(random() * words.length)];
+      const other = words[Math.floor(random() * words.length)];
+      const year = 1400 + Math.floor(random() * 500);
+      // Weights and years repeat on purpose: the order is only a total order
+      // because it falls through to the id, and this is where that matters.
+      events.push({
+        id: `e${String(i).padStart(4, '0')}`,
+        title: `${word} and ${other}`,
+        status: 'active',
+        when: { start: year, end: year },
+        weight: Math.floor(random() * 3),
+      });
+      if (i % 5 === 0) {
+        actors.push({ id: `a${i}`, name: `${other} ${word}`, names: [`${other} ${word}`, word], status: 'active' });
+        places.push({ id: `p${i}`, name: `${word}`, names: [`${word}`], status: 'active' });
+      }
+    }
+    const entries = buildSearchIndex({ events, actors, places });
+    for (const query of ['a', 'go', 'ang', 'lisboa', 'salazar', 'zzz', 'a and', 'ceuta and diu']) {
+      const fast = search(entries, query);
+      const slow = sortEverything(entries, query);
+      const where = `seed ${seed}, "${query}"`;
+      assert.equal(fast.total, slow.total, `${where}: the same number of matches`);
+      assert.deepEqual(
+        fast.groups.map((g) => [g.kind, g.items.map((i) => i.id)]),
+        slow.groups.map((g) => [g.kind, g.items.map((i) => i.id)]),
+        `${where}: the same rows, in the same groups, in the same order`,
+      );
+      assert.deepEqual(flatten(fast).map((i) => [i.id, i.rank, i.matched, i.label]),
+        flatten(slow).map((i) => [i.id, i.rank, i.matched, i.label]),
+        `${where}: and each row carries what it carried`);
+    }
+    // A limit larger than the default is answered the same way.
+    assert.deepEqual(
+      flatten(search(entries, 'a', { limit: 25 })).map((i) => i.id),
+      flatten(sortEverything(entries, 'a', { limit: 25 })).map((i) => i.id),
+    );
+  }
 });

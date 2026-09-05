@@ -107,30 +107,80 @@ const startOf = (when) => {
 // query in, groups out. Groups are ordered by their own best match, not by a
 // fixed kind order: typing "sal" means Salazar the person, whose name begins
 // that way, before the events that merely mention him.
+// **A hit is not a copy of its entry, and its year is read once.** One letter
+// typed into a corpus of twenty thousand events matches nearly all of them,
+// and this used to spread every one into a new object and then sort the lot
+// through a comparator that parsed both intervals at each comparison — a
+// third of a second per keystroke, on the thread that draws (health review A,
+// finding 19). Nothing about the answer changes: the entry is carried by
+// reference, the year is worked out once per hit rather than fourteen times,
+// and only the handful of entries the limit actually returns are ever copied.
+// Whether a candidate stands ahead of a hit already held, under the order
+// above. Written out over primitives rather than over two objects, because
+// the candidate does not exist as an object yet: at one letter typed into a
+// corpus of twenty thousand, nearly every entry is a candidate and almost
+// none of them is kept. The year is parsed only if the comparison gets that
+// far, and a hit's own year is parsed once and kept on it.
+function yearOf(hit) {
+  if (hit.start === null) hit.start = startOf(hit.entry.when);
+  return hit.start;
+}
+
+function ahead(rank_, matched, weight, start, id, other) {
+  if (rank_ !== other.rank) return rank_ < other.rank;
+  if (matched !== other.matched) return matched < other.matched;
+  if (weight !== other.weight) return weight > other.weight;
+  const theirs = yearOf(other);
+  if (start !== theirs) return start < theirs;
+  return id < other.id;
+}
+
 export function search(entries, query, { limit = 8 } = {}) {
   const folded = fold(query);
   if (folded.length === 0) return { groups: [], total: 0, query: '' };
-  const hits = [];
+  // The best `limit` of each kind, in order, and how many there were. The
+  // whole list was sorted until H4c, which at one letter is twenty thousand
+  // objects allocated and sorted so that eight of them can be shown (health
+  // review A, finding 19). Since the limit is spent group by group and no
+  // group can ever give more than `limit` rows, holding `limit` per kind is
+  // holding everything the answer can use.
+  const byKind = new Map();
+  let total = 0;
   for (const entry of entries) {
     let best = null;
+    let length = 0;
     for (const term of entry.terms) {
       const r = rank(term, folded);
-      if (r !== null && (best === null || r < best.rank || (r === best.rank && term.length < best.length))) {
-        best = { rank: r, length: term.length };
+      if (r !== null && (best === null || r < best || (r === best && term.length < length))) {
+        best = r;
+        length = term.length;
       }
     }
-    if (best) hits.push({ ...entry, rank: best.rank, matched: best.length });
-  }
-  hits.sort((a, b) => a.rank - b.rank
-    || a.matched - b.matched
-    || b.weight - a.weight
-    || startOf(a.when) - startOf(b.when)
-    || (a.id < b.id ? -1 : a.id > b.id ? 1 : 0));
-
-  const byKind = new Map();
-  for (const hit of hits) {
-    if (!byKind.has(hit.kind)) byKind.set(hit.kind, []);
-    byKind.get(hit.kind).push(hit);
+    if (best === null) continue;
+    total += 1;
+    let list = byKind.get(entry.kind);
+    if (!list) {
+      list = [];
+      byKind.set(entry.kind, list);
+    }
+    const weight = entry.weight ?? 0;
+    // Compared against the worst one held before anything is allocated, and
+    // its year is only parsed if rank, name length and weight all tie.
+    let start = null;
+    const worse = (other) => {
+      if (best !== other.rank || length !== other.matched || weight !== other.weight) {
+        return !ahead(best, length, weight, 0, entry.id, other);
+      }
+      if (start === null) start = startOf(entry.when);
+      return !ahead(best, length, weight, start, entry.id, other);
+    };
+    if (list.length >= limit && worse(list[list.length - 1])) continue;
+    if (start === null) start = startOf(entry.when);
+    const hit = { entry, id: entry.id, rank: best, matched: length, weight, start };
+    let at = list.length;
+    while (at > 0 && ahead(best, length, weight, start, entry.id, list[at - 1])) at -= 1;
+    list.splice(at, 0, hit);
+    if (list.length > limit) list.pop();
   }
   const groups = [...byKind.entries()]
     .map(([kind, items]) => ({ kind, items }))
@@ -140,15 +190,18 @@ export function search(entries, query, { limit = 8 } = {}) {
 
   // The limit is over the whole result, taken group by group in that order,
   // so a reader always sees the best match first however the groups fall.
+  // What comes back is the entry with its rank on it, as it always was; the
+  // copy happens here, where there are eight of them and not twenty thousand.
   const out = [];
   let left = limit;
   for (const group of groups) {
     if (left <= 0) break;
-    const items = group.items.slice(0, left);
+    const items = group.items.slice(0, left)
+      .map((hit) => ({ ...hit.entry, rank: hit.rank, matched: hit.matched }));
     left -= items.length;
     out.push({ kind: group.kind, items });
   }
-  return { groups: out, total: hits.length, query: folded };
+  return { groups: out, total, query: folded };
 }
 
 // The flat order the arrow keys walk, which is the order the groups are

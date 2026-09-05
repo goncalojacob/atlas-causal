@@ -67,3 +67,52 @@ test('choosing an event outside the window still widens it to include the event'
     });
   });
 });
+
+// --- one scan for a burst of typing ----------------------------------------
+//
+// The scan ran on every keystroke, over every entry in the index, on the
+// thread that draws (health review A, finding 19). It is fast now — the box
+// holds the best eight per kind rather than sorting the whole match — and it
+// also waits out a moment's grace, so a reader typing a word is answered once
+// and not once per letter. Both together are what keeps the box responsive at
+// twenty thousand records.
+test('typing a word in a burst draws the list once, and Enter does not wait', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await open(page, url(''), 'return document.querySelectorAll("#search-input").length > 0;');
+    await page.eval(`
+      window.__draws = 0;
+      new MutationObserver(() => { window.__draws += 1; })
+        .observe(document.querySelector('#search [data-slot="results"]'), { childList: true });
+      return true;`);
+
+    // Six keystrokes, as fast as the event loop will carry them.
+    await page.eval(`const box = document.getElementById("search-input");
+      for (const text of ["a", "ab", "abr", "abri", "abril", "25 abril"]) {
+        box.value = text;
+        box.dispatchEvent(new Event("input"));
+      }
+      return true;`);
+    await waitFor(page, 'return window.__draws > 0;', 'the list to be drawn');
+    await new Promise((resolve) => { setTimeout(resolve, 400); });
+    const draws = await page.eval('return window.__draws;');
+    assert.ok(draws <= 2, `six keystrokes drew the list ${draws} time(s)`);
+
+    // And what it settled on is the answer to the last of them, not to one
+    // of the letters on the way.
+    const shown = await page.eval('return document.getElementById("search-input").value;');
+    assert.equal(shown, '25 abril');
+
+    // Enter inside the grace still chooses: the scan the reader is waiting on
+    // runs at once rather than leaving them pressing Enter on an empty list.
+    await page.eval(`const box = document.getElementById("search-input");
+      box.value = "25 April";
+      box.dispatchEvent(new Event("input"));
+      box.dispatchEvent(new KeyboardEvent("keydown", { key: "Enter", bubbles: true, cancelable: true }));
+      return true;`);
+    await waitFor(
+      page,
+      'return new URLSearchParams(location.search).get("selected") === "carnation-revolution-1974";',
+      'Enter to have chosen 25 April without waiting the grace out',
+    );
+  });
+});

@@ -167,12 +167,31 @@ export function createSearchBox(container, { atlas, state, fixtures = false, sha
     return null;
   }
 
+  // The scan runs a moment after the last key rather than on every one of
+  // them (health review A, finding 19). It is fast enough now that a reader
+  // will not see the wait — a hundred and twenty milliseconds is under what
+  // it takes to reach for the next letter — and what it buys is that a burst
+  // of typing, a paste, or a held-down key is one scan and not eight. The
+  // grace is the same as the one a blur already waits out, so the box has one
+  // number and not two.
+  const GRACE = 120;
+  let pending = null;
+  const cancel = () => {
+    if (pending === null) return;
+    clearTimeout(pending);
+    pending = null;
+  };
   const run = () => {
+    cancel();
     if (entries === null) return;
     result = search(entries, input.value, { limit: LIMIT });
     draw();
   };
-  input.addEventListener('input', run);
+  const runSoon = () => {
+    cancel();
+    pending = setTimeout(run, GRACE);
+  };
+  input.addEventListener('input', runSoon);
 
   // The shard, when it arrives — or the atlas, if it never does. Either way
   // whatever is in the box is answered at once, so a reader who typed while
@@ -186,12 +205,17 @@ export function createSearchBox(container, { atlas, state, fixtures = false, sha
 
   input.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
+      cancel();
       input.value = '';
       result = { groups: [], total: 0, query: '' };
       list.innerHTML = '';
       close();
       return;
     }
+    // Enter is the reader saying they have finished typing, so the scan they
+    // are waiting on happens now: without this, a reader who types and hits
+    // Enter inside the grace would be pressing Enter on an empty list.
+    if (e.key === 'Enter' && pending !== null) run();
     if (items.length === 0) return;
     if (e.key === 'ArrowDown') {
       e.preventDefault();
@@ -224,8 +248,10 @@ export function createSearchBox(container, { atlas, state, fixtures = false, sha
   });
 
   input.addEventListener('blur', () => {
-    // A frame's grace, so a click on a result still lands.
-    setTimeout(close, 120);
+    // A frame's grace, so a click on a result still lands. A scan the reader
+    // has walked away from is dropped rather than drawn into a closed list.
+    cancel();
+    setTimeout(close, GRACE);
   });
   input.addEventListener('focus', () => {
     if (result.query && items.length) draw();
@@ -242,5 +268,8 @@ export function createSearchBox(container, { atlas, state, fixtures = false, sha
   };
   document.addEventListener('keydown', onKey);
 
-  return { close, search: (text) => { input.value = text; input.dispatchEvent(new Event('input')); } };
+  // `search` is for whatever drives the box from outside — a test, a link
+  // that arrives with a query — and answers at once rather than waiting the
+  // grace out: nothing is typing, so there is nothing to coalesce.
+  return { close, search: (text) => { input.value = text; run(); } };
 }
