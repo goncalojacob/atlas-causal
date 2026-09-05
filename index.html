@@ -16,7 +16,7 @@
       <h1>Atlas causal</h1>
       <p class="tagline">Pick an event, follow its consequences, see which other branches fed the same endpoint.</p>
     </div>
-    <div class="masthead-tools">
+    <div class="masthead-tools" id="masthead-tools">
       <div class="search" id="search" role="search">
         <input type="search" id="search-input" class="search-input" placeholder="Search events, actors, places, sources  /"
                autocomplete="off" spellcheck="false" role="combobox" aria-expanded="false"
@@ -28,6 +28,12 @@
         <button type="button" data-view="map" aria-pressed="true">Map</button>
         <button type="button" data-view="graph" aria-pressed="false">Graph</button>
       </div>
+      <!-- Only on a phone, where the grouping picker and the three layer
+           switches will not fit beside the search: one button in front of
+           both. The stylesheet shows it and hides them; nothing moves in the
+           DOM, so every module still finds the control it wired. -->
+      <button type="button" id="options-button" class="options-button" aria-expanded="false"
+              aria-controls="masthead-tools">Options</button>
       <div class="grouping" id="grouping" role="group" aria-label="Grouping and lens"></div>
       <div class="layers" role="group" aria-label="Layers">
         <label><input type="checkbox" data-layer="land" checked> coastlines</label>
@@ -49,7 +55,18 @@
          take focus, they answer the arrow keys, and Home puts them back. -->
     <div id="split-panel" class="split split-panel" role="separator" tabindex="0"
          aria-orientation="vertical" aria-label="Resize the panel — arrow keys, Home to restore"></div>
-    <aside id="panel" class="panel" aria-live="polite"></aside>
+    <!-- On a desktop this wrapper is `display: contents` and the panel is the
+         grid item it always was; on a phone it becomes the sheet that comes
+         up from the bottom edge, and the grip above the panel is what pushes
+         it back down. The grip is outside #panel because the panel's markup
+         is rewritten card by card and would take the handle with it. -->
+    <div id="sheet" class="sheet peek">
+      <button type="button" id="sheet-grip" class="sheet-grip" aria-controls="panel" aria-expanded="false">
+        <span class="sheet-grip-bar" aria-hidden="true"></span>
+        <span class="sheet-grip-label">Details</span>
+      </button>
+      <aside id="panel" class="panel" aria-live="polite"></aside>
+    </div>
     <div id="split-timeline" class="split split-timeline" role="separator" tabindex="0"
          aria-orientation="horizontal" aria-label="Resize the timeline — arrow keys, Home to restore"></div>
     <section id="timeline" class="timeline-area" aria-label="Timeline"></section>

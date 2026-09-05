@@ -783,6 +783,7 @@ atlas-causal/
 │   ├── cluster.js                ● pure: which marks overlap at this zoom, which of them no zoom can part, which are held out of the grouping, and how the links between two groups merge; the timeline uses it in one dimension and the graph in two
 │   ├── search.js                 ● pure: titles and every one of an actor's names, folded and ranked
 │   ├── search-box.js             ● the input, the list and the keys
+│   ├── phone.js                  ● under 720px: what raises the panel's sheet, what a drag of its grip ends as; the layout itself is one media query
 │   ├── map/
 │   │   ├── projection.js         ● lon/lat → SVG and back; the only file a projection change touches
 │   │   ├── map.js                ● SVG scaffold, pan/zoom, click into a cluster
@@ -1347,6 +1348,19 @@ section of a card is open. Neither says anything about what the atlas is
 showing, and a link is what somebody is looking at rather than how they have
 arranged their window.
 
+**Under 720 pixels the atlas stacks and nothing about the link changes.** The
+view takes the screen, the timeline is a fixed strip under it, and the panel
+becomes a sheet over both: up when a record is opened, down to a grip when it
+is in the way, dragged or tapped between the two. The search takes a line of
+its own; the grouping picker and the layer switches fold behind one Options
+button, without moving in the DOM. Whether the sheet is up, and whether the
+options are unfolded, are not state either — a phone and a desktop opening the
+same URL see the same records — and the pane sizes of M24 are ignored at this
+width because the media query that arranges it never mentions them. The one
+number is `PHONE_WIDTH` in `src/phone.js`, and the layout it switches on is
+one media query in `src/style.css`. Controls a thumb has to land on are at
+least 40 pixels; a link inside a sentence keeps the line it is set in.
+
 | Module | Job | Must not know |
 |---|---|---|
 | `state.js` | Owns the state object; parses and writes the URL — pushing a history entry when *what is open* changed and replacing it when only the view moved; keeps the trail of those openings, because the browser will not say what Back returns to; notifies views. | Anything about SVG or data files, and what a record is called. |
@@ -1364,6 +1378,7 @@ arranged their window.
 | `util/window.js` | Resolves a null bound against the data's extent, says what overlaps the window, owns the "map at Y" rule and the wheel's narrowing of the band around a year. Pure. | The DOM, and which view is asking. |
 | `util/viewport.js` | What "in view" means: whether an event's place is inside a box, and which events the lanes draw while the map holds one — plus what the reader is holding, which no box removes. Pure. | The DOM, the projection, and how the box was arrived at. |
 | `share.js` | The two ways out of what is on screen: the correction issue about one record, and the view as a standalone SVG with the stylesheet and the computed tokens inlined. Pure but for one function that hands the browser a file. | What is on the card, and which view is asking beyond its name. |
+| `phone.js` | The atlas under 720 pixels: what raises the sheet over the view, what a drag of its grip ends as, and the three classes that put the layout in the stylesheet's hands. Nothing it decides is state. | How anything is arranged — that is one media query — and what is on the card. |
 | `panes.js` | How wide the panes are: what a size may be, the two custom properties that are the grid's whole side of it, and the drag, the arrow keys and the double-click that set them. Remembered in `localStorage`, never in the URL. | What is drawn in any pane. |
 | `search.js` + `search-box.js` | Folds and ranks event titles and every one of an actor's names — prefix, then word start, then substring — and draws the result as a combobox. | Anything about the map or the timeline; choosing is a state change. |
 | `map/layers/*` | One layer per thing drawn, in a fixed order: coastlines, then territories, then marks, so an event sits on top of the state it happened in. Renders only records in the visible window. A stack of marks is drawn as one, with a count, and opened by a click. | Each other. |

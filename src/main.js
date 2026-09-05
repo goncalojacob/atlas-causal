@@ -11,6 +11,7 @@ import { createPanel } from './panel/panel.js';
 import { createSearchBox } from './search-box.js';
 import { createGrouping } from './grouping.js';
 import { createPanes } from './panes.js';
+import { createPhone } from './phone.js';
 import { createReadingMode, openingState } from './narrative-mode.js';
 import { bindNarrativeKeys } from './panel/narrative.js';
 import { esc } from './util/esc.js';
@@ -47,12 +48,29 @@ try {
   // The panel is built first because the map hands it the members of a
   // cluster of marks the reader clicks on.
   const panel = createPanel(panelEl, { atlas, state, fixtures });
-  const map = createMap(document.getElementById('map'), { atlas, state, onCluster: (cluster) => panel.showCluster(cluster) });
-  const timeline = createTimeline(document.getElementById('timeline'), { atlas, state, onCluster: (cluster) => panel.showCluster(cluster) });
+
+  // Under 720px the panel is a sheet over the view rather than a column
+  // beside it. It raises itself when what is open changes, which covers every
+  // way into a record; a cluster and the list of narratives are shown by the
+  // panel directly and never reach the store, so they say so here.
+  const phone = createPhone({
+    state,
+    sheet: document.getElementById('sheet'),
+    grip: document.getElementById('sheet-grip'),
+    tools: document.getElementById('masthead-tools'),
+    options: document.getElementById('options-button'),
+  });
+  const showCluster = (cluster) => { panel.showCluster(cluster); phone.open(); };
+
+  const map = createMap(document.getElementById('map'), { atlas, state, onCluster: showCluster });
+  const timeline = createTimeline(document.getElementById('timeline'), { atlas, state, onCluster: showCluster });
   createSearchBox(document.getElementById('search'), { atlas, state, fixtures });
   createGrouping(document.getElementById('grouping'), { atlas, state });
   bindNarrativeKeys(document, { atlas, state });
-  document.getElementById('narratives-button').addEventListener('click', () => panel.showNarratives());
+  document.getElementById('narratives-button').addEventListener('click', () => {
+    panel.showNarratives();
+    phone.open();
+  });
 
   // The graph view takes the map's slot behind the toggle. It is built the
   // first time it is asked for, not at load: a reader who never leaves the

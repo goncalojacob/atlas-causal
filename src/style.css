@@ -403,18 +403,109 @@ button.bar-link { background: none; border: 0; padding: 0; font: inherit; font-s
 .split:focus-visible { outline: 2px solid var(--cobalt); outline-offset: -2px; }
 .split.dragging { background: var(--cobalt-faint); }
 
-@media (max-width: 800px) {
-  /* One column, and the sizes a reader chose on a desktop are not mentioned
-     here at all — which is how this layout ignores them. */
+/* The sheet's wrapper is not a box on a desktop: `contents` takes it out of
+   the grid and leaves the panel the grid item it has always been. */
+.sheet { display: contents; }
+.sheet-grip, .options-button { display: none; }
+
+/* --- the phone ------------------------------------------------------- */
+
+/* Under 720px the three panes cannot stand side by side: the panel at the
+   type scale's measure and a map worth looking at do not both fit. So the
+   atlas stacks — the view, then the timeline at a fixed height — and the
+   panel becomes a sheet over them, up when a record is open and down to its
+   grip when it is in the way. src/phone.js says why none of it is state.
+
+   Not one size a reader dragged on a desktop is named below, which is how
+   this layout ignores the resizable panes of M24: --panel-width and
+   --timeline-height are set on .layout and nothing here reads them. */
+@media (max-width: 720px) {
+  /* What a thumb can hit, and how much of the screen the grip keeps for
+     itself at the bottom edge. */
+  :root { --touch: 40px; --sheet-grip: 44px; }
+
   .layout {
-    grid-template-columns: 1fr;
-    grid-template-rows: 50vh auto auto;
-    grid-template-areas: "map" "timeline" "panel";
-    flex: 0 0 auto;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: minmax(0, 1fr) var(--phone-timeline);
+    grid-template-areas: "map" "timeline";
+    /* The peeking grip sits over the bottom edge, so the layout keeps that
+       much clear: nothing is permanently underneath it. */
+    padding-bottom: var(--sheet-grip);
+    --phone-timeline: 8.5rem;
   }
-  .panel { border-left: 0; border-top: 1px solid var(--line); }
   .split { display: none; }
-  .timeline-area { max-height: 45vh; }
+  /* A fixed height, and its own scroll: the timeline is a strip under the
+     view here, not a pane that grows with the rows it packs. */
+  .timeline-area { height: 100%; max-height: none; }
+
+  .sheet {
+    display: flex; flex-direction: column;
+    position: fixed; z-index: 6; inset-inline: 0; bottom: 0;
+    height: min(68vh, 34rem);
+    background: var(--paper);
+    border-top: 1px solid var(--line);
+    border-radius: var(--radius) var(--radius) 0 0;
+    box-shadow: 0 -2px 12px var(--cobalt-faint);
+    /* Two lengths and no left or right: --sheet-base is where the state puts
+       it, --sheet-drag is the thumb, and a language written right to left
+       moves the sheet exactly as this one does. */
+    --sheet-base: 0px;
+    transform: translateY(calc(var(--sheet-base) + var(--sheet-drag, 0px)));
+    transition: transform 180ms ease;
+  }
+  .sheet.peek { --sheet-base: calc(100% - var(--sheet-grip)); }
+  .sheet.dragging { transition: none; }
+
+  .sheet-grip {
+    display: flex; align-items: center; justify-content: center; gap: var(--space-2);
+    flex: none; width: 100%; height: var(--sheet-grip);
+    border: 0; border-bottom: 1px solid var(--line); border-radius: inherit;
+    background: var(--paper); color: var(--ink-soft);
+    font-family: var(--font-ui); font-size: var(--text-sm); cursor: pointer;
+    /* The grip is dragged, so the browser's own scroll must not take the
+       gesture first. */
+    touch-action: none;
+  }
+  .sheet-grip:hover { color: var(--cobalt); }
+  .sheet-grip-bar { width: 2.5rem; height: 4px; border-radius: 2px; background: var(--line); }
+  .sheet-grip[aria-expanded="true"] .sheet-grip-bar { background: var(--cobalt-soft); }
+  .panel { border-left: 0; flex: 1 1 auto; min-height: 0; overflow: auto; }
+
+  /* The search is the widest thing a reader types into and gets its own
+     line; the two view buttons and the Options button share the next one. */
+  .masthead { padding-bottom: calc(var(--space-2) + 8px); }
+  /* The name and the tagline take the first line and wrap inside it: the
+     30ch column they are given on a desktop is wider than the screen. */
+  .masthead-name { flex: 1 1 100%; min-width: 0; max-width: none; }
+  .masthead-tools { gap: var(--space-2); }
+  .masthead-tools .search { flex: 1 0 100%; }
+  .masthead-tools .search-input { width: 100%; }
+  .options-button {
+    display: inline-block;
+    border: 1px solid var(--line); background: var(--paper); color: var(--cobalt);
+    border-radius: var(--radius); padding: 0 var(--space-3); cursor: pointer;
+    font-family: var(--font-ui); font-size: var(--text-sm);
+  }
+  .options-button[aria-expanded="true"] { border-color: var(--cobalt); background: var(--cobalt-faint); }
+  /* Behind the button until it is pressed. `:not([hidden])` so that the map's
+     own rule — the layer switches are gone in graph view — still wins. */
+  .masthead-tools .grouping, .masthead-tools .layers { display: none; }
+  .masthead-tools.options-open .grouping { display: flex; flex: 1 0 100%; }
+  .masthead-tools.options-open .layers:not([hidden]) { display: flex; flex: 1 0 100%; flex-wrap: wrap; }
+  .grouping-panel { width: min(30ch, calc(100vw - 2 * var(--space-4))); }
+
+  /* Forty pixels, everywhere a thumb has to land on a control of its own.
+     Not on a link inside a sentence — a citation's title, a crumb of the
+     breadcrumb — which is set in the line it belongs to and would break the
+     sentence if it were given a height of its own. */
+  .options-button, .bar .views button, .search-input,
+  .panel button:not(.link), .panel .section-toggle, .panel .chips .chip,
+  .bar .layers label, .grouping-button, .grouping-lane label {
+    min-height: var(--touch);
+  }
+  .bar .views button { padding-inline: var(--space-4); }
+  .panel .chips .chip { display: inline-flex; align-items: center; }
+  .panel .section-toggle { padding-block: var(--space-3); }
 }
 
 /* --- map ------------------------------------------------------------- */
