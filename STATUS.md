@@ -4393,3 +4393,5 @@ H4a done
 
 H4b started 2026-09-05T18:11:54Z by scheduled (branch h4b)
 H4b done
+
+H4d started 2026-09-05T18:57:51Z by scheduled (branch h4d)
