@@ -30,6 +30,23 @@ test('building twice from the same data is byte-identical', async () => {
   assert.deepEqual(Object.keys(first.files).sort(), Object.keys(second.files).sort());
 });
 
+// The whole index, not only the fixtures': the deploy asserts that main's
+// committed data/index/ equals a fresh build, so every file the build names
+// has to come out the same twice — the citer directory's name included,
+// which is a hash over the concatenation of its files' bytes.
+test('two builds of the repository name and write exactly the same files', async () => {
+  const first = await buildIndex(path.join(ROOT, 'data'));
+  const second = await buildIndex(path.join(ROOT, 'data'));
+  assert.deepEqual(Object.keys(first.files).sort(), Object.keys(second.files).sort());
+  for (const [name, text] of Object.entries(first.files)) assert.equal(text, second.files[name], name);
+  const manifest = JSON.parse(first.files['manifest.json']);
+  for (const key of ['spine', 'search', 'topology', 'sources', 'review']) {
+    assert.match(manifest.files[key], new RegExp(`^index/${key}-[0-9a-f]{12}\\.json$`), key);
+    assert.ok(Object.hasOwn(first.files, path.basename(manifest.files[key])), key);
+  }
+  assert.match(manifest.files.citers, /^index\/citers-[0-9a-f]{12}$/);
+});
+
 test('key order and file order in the source records do not change the bytes', async () => {
   const dir = await tempCopyOfFixtures();
   try {

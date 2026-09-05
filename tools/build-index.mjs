@@ -1,9 +1,10 @@
 #!/usr/bin/env node
-// Writes data/index/: manifest.json (never cached) plus topology-<hash>.json
-// and sources-<hash>.json (immutable, named by content). Deterministic by
-// construction — recursive key sort, code-unit comparison, two-space
-// indent, trailing newline — so the deploy job can assert that main's
-// committed index is byte-identical to a fresh build.
+// Writes data/index/: manifest.json (never cached) plus spine-, search-,
+// topology-, sources- and review-<hash>.json and the citers-<hash>/
+// directory (immutable, named by content). Deterministic by construction —
+// recursive key sort, code-unit comparison, two-space indent, trailing
+// newline — so the deploy job can assert that main's committed index is
+// byte-identical to a fresh build.
 //
 //   node tools/build-index.mjs [--data <dir>]
 
