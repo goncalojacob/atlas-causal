@@ -10,7 +10,7 @@ import { esc, safeUrl } from '../util/esc.js';
 import { formatInterval, bounds, isValidYear } from '../util/dates.js';
 import { articleFor } from '../wikipedia.js';
 import { windowAt, resolveWindow } from '../util/window.js';
-import { OPENINGS } from '../state.js';
+import { OPENINGS, hasOpening } from '../state.js';
 import { formatFocus, lensSet } from '../lens.js';
 import { lanesFor } from '../lanes.js';
 import { shortestPaths, pathTo } from '../graph.js';
@@ -43,6 +43,12 @@ export function createPanel(container, {
   // the only place that has seen the chain before it was cut; it stops being
   // true as soon as the reader opens something else (chain.js).
   walkWasCut = () => false,
+  // Told whether the panel has a card to show at all. With nothing open there
+  // is no column to keep: the layout collapses it and the view takes its width
+  // (main.js). A cluster's list is a card for this purpose — it is what the
+  // panel is showing — and it is not state, so it is said here and not read
+  // off the URL.
+  onCard = () => {},
 }) {
   let token = 0;
   // Whether a cluster's member list is covering the card, and whether the
@@ -479,6 +485,7 @@ export function createPanel(container, {
   function render(s) {
     drawnFor = keyOf(s);
     covered = false;
+    onCard(hasOpening(s));
     token += 1;
     const mine = token;
     // Reading a narrative is a mode and wins the panel: everything else in
@@ -534,6 +541,7 @@ export function createPanel(container, {
   function showCluster(cluster) {
     token += 1;
     covered = true;
+    onCard(true);
     container.innerHTML = clusterHtml(ctx, cluster);
   }
 

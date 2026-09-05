@@ -401,3 +401,76 @@ test('the discuss link carries the record\'s address and nothing the reader did'
     assert.equal(carried.pathname, '/');
   });
 });
+
+// --- the panel is not a column of "Pick an event" --------------------------
+
+const PANES = `const layout = document.querySelector('.layout');
+  const box = (el) => { const b = el.getBoundingClientRect(); return Math.round(b.width); };
+  return {
+    empty: layout.classList.contains('panel-empty'),
+    layout: box(layout),
+    panel: box(document.querySelector('.panel')),
+    map: box(document.getElementById('map')),
+    edge: box(document.getElementById('split-panel')),
+  };`;
+
+// With nothing open, a third of the width said "Pick an event" beside the
+// picture the reader had come for (owner, 5 September).
+test('with nothing open the panel is not there, and opening a record brings it back', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await open(page, url('?fixtures=1'), 'return Boolean(document.querySelector(".map .mark"));');
+
+    let panes = await page.eval(PANES);
+    assert.equal(panes.empty, true);
+    assert.equal(panes.panel, 0, 'no panel');
+    assert.equal(panes.edge, 0, 'and no edge to drag either');
+    assert.equal(panes.map, panes.layout, 'the map has the whole width');
+
+    // Opening a record brings the panel back, at the width the stylesheet or
+    // the reader gives it.
+    await page.eval(`const el = document.querySelector('#map circle.mark[data-id="fixture-event-b"]');
+      const b = el.getBoundingClientRect();
+      const at = { bubbles: true, clientX: b.left + b.width / 2, clientY: b.top + b.height / 2 };
+      el.dispatchEvent(new PointerEvent('pointerdown', { ...at, pointerId: 1 }));
+      el.dispatchEvent(new PointerEvent('pointerup', { ...at, pointerId: 1 }));
+      el.dispatchEvent(new MouseEvent('click', at));
+      return true;`);
+    await waitFor(page, 'return Boolean(document.querySelector(".panel .event-head h2"));', 'the card');
+
+    panes = await page.eval(PANES);
+    assert.equal(panes.empty, false);
+    assert.ok(panes.panel > 200, `the panel is back (${panes.panel}px)`);
+    assert.ok(panes.edge > 0, 'and so is its edge');
+    assert.equal(panes.map + panes.edge + panes.panel, panes.layout);
+
+    // A click on the sea puts the record down, and the panel goes with it.
+    await page.eval(`const root = document.querySelector('#map svg.map');
+      const b = root.getBoundingClientRect();
+      root.dispatchEvent(new MouseEvent('click', { bubbles: true, clientX: b.left + 4, clientY: b.bottom - 4 }));
+      return true;`);
+    await waitFor(page, 'return document.querySelector(".layout").classList.contains("panel-empty");', 'the panel to go again');
+    panes = await page.eval(PANES);
+    assert.equal(panes.map, panes.layout);
+  });
+});
+
+// A cluster's list is what the panel is showing, and it never reaches the
+// URL: the panel has to say so itself or the column would collapse under the
+// list the reader had just asked for.
+test('a cluster\'s list keeps the panel open although nothing is selected', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await open(page, url('?bbox=-10,38,-9,39'), 'return Boolean(document.querySelector(".map .mark.cluster"));');
+    assert.equal(await page.eval('return document.querySelector(".layout").classList.contains("panel-empty");'), true);
+
+    await page.eval(`const el = document.querySelector('#map circle.mark.cluster');
+      const b = el.getBoundingClientRect();
+      const at = { bubbles: true, clientX: b.left + b.width / 2, clientY: b.top + b.height / 2 };
+      el.dispatchEvent(new MouseEvent('click', at));
+      return true;`);
+    await waitFor(page, 'return Boolean(document.querySelector(".panel .cluster-list"));', 'the members of the cluster');
+    const panes = await page.eval(PANES);
+    assert.equal(panes.empty, false);
+    assert.ok(panes.panel > 200);
+    assert.equal(await page.eval('return new URLSearchParams(location.search).has("selected");'), false);
+  });
+});

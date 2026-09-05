@@ -20,7 +20,11 @@
 // block axis only, which is what a language written right to left would keep
 // (docs/i18n-design.md).
 
-import { OPENINGS } from './state.js';
+import { OPENINGS, CARDS, hasOpening } from './state.js';
+
+// Re-exported: what "a record is open" means is the state's question, and
+// this file is where the sheet's callers already look for it.
+export { hasOpening };
 
 // Around 720: two columns of the type scale's measure plus a map worth
 // looking at do not fit under it, and it is above every phone in portrait
@@ -31,14 +35,6 @@ export const PHONE_QUERY = `(max-width: ${PHONE_WIDTH}px)`;
 // How far the grip has to travel before the drag is read as a decision
 // rather than as a thumb resting on it.
 export const DRAG_THRESHOLD = 56;
-
-// Is a record open at all? `step` is not one of these on its own: it is a
-// position inside a narrative, and the narrative beside it is the opening.
-const CARDS = OPENINGS.filter((key) => key !== 'step');
-
-export function hasOpening(state = {}) {
-  return CARDS.some((key) => state[key]);
-}
 
 // The sheet comes up when what is open changes to something. Not on every
 // change of state: panning the map or dragging the band must not throw the

@@ -403,6 +403,29 @@ button.bar-link { background: none; border: 0; padding: 0; font: inherit; font-s
 .split:focus-visible { outline: 2px solid var(--cobalt); outline-offset: -2px; }
 .split.dragging { background: var(--cobalt-faint); }
 
+/* With nothing open there is no panel. A third of the width spent on "Pick an
+   event" beside the picture is a third of the width saying nothing, and the
+   picture is what a reader who has opened nothing came for. The column and
+   its edge collapse to nothing and the view takes the room; opening anything
+   brings them back, at whatever width the reader had dragged the panel to,
+   because that preference applies only while the panel is shown (owner,
+   5 September). main.js sets the class from what the panel has to show.
+
+   Not on a phone: there the panel is a sheet over the view and it is already
+   down to its grip when nothing is open (phone.js).
+
+   The change is not animated. A transition on `grid-template-columns` runs
+   on the first paint too — the panel would flash open and shut on every
+   load — and every frame of it resizes the map pane, which the map's own
+   ResizeObserver answers with a full redraw. The panel arrives at once. */
+body:not(.phone) .layout.panel-empty {
+  grid-template-columns: minmax(0, 1fr) 0 0;
+}
+/* The panel's parent is the sheet's wrapper, which is `display: contents`
+   here, so it is reached by descent and not as a child. */
+body:not(.phone) .layout.panel-empty .panel,
+body:not(.phone) .layout.panel-empty > .split-panel { display: none; }
+
 /* The sheet's wrapper is not a box on a desktop: `contents` takes it out of
    the grid and leaves the panel the grid item it has always been. */
 .sheet { display: contents; }

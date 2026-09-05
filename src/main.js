@@ -59,10 +59,37 @@ try {
   document.getElementById('fixtures-badge').hidden = !fixtures;
   document.body.classList.toggle('fixtures', fixtures);
 
+  // Every view measures its own box, so all three are told whenever the shape
+  // of the layout changes: an edge dragged, or the panel coming and going.
+  const layout = document.querySelector('.layout');
+  // Declared before the panel because the panel decides, on its first card,
+  // whether there is a panel at all, and that changes the width the map has.
+  let map = null;
+  let timeline = null;
+  let graph = null;
+  const remeasure = () => {
+    const s = state.get();
+    map?.render(s);
+    timeline?.render(s);
+    graph?.render(s);
+  };
+
   // The panel is built first because the map hands it the members of a
   // cluster of marks the reader clicks on.
+  //
+  // With nothing open there is no panel: a column of "Pick an event" beside
+  // the picture is a third of the width spent saying nothing, and the map is
+  // what a reader who has opened nothing is looking at. The pane collapses,
+  // the view takes its width, and opening anything brings it back — with
+  // whatever width the reader had dragged it to, since that preference
+  // applies only while the panel is shown (owner, 5 September).
   const panel = createPanel(panelEl, {
     atlas, state, fixtures, walkWasCut: (s) => cut && sameWalk(s),
+    onCard: (shown) => {
+      if (layout.classList.contains('panel-empty') === !shown) return;
+      layout.classList.toggle('panel-empty', !shown);
+      remeasure();
+    },
   });
 
   // Under 720px the panel is a sheet over the view rather than a column
@@ -78,8 +105,8 @@ try {
   });
   const showCluster = (cluster) => { panel.showCluster(cluster); phone.open(); };
 
-  const map = createMap(document.getElementById('map'), { atlas, state, onCluster: showCluster });
-  const timeline = createTimeline(document.getElementById('timeline'), { atlas, state, onCluster: showCluster });
+  map = createMap(document.getElementById('map'), { atlas, state, onCluster: showCluster });
+  timeline = createTimeline(document.getElementById('timeline'), { atlas, state, onCluster: showCluster });
   createSearchBox(document.getElementById('search'), { atlas, state, fixtures });
   createGrouping(document.getElementById('grouping'), { atlas, state });
   bindNarrativeKeys(document, { atlas, state });
@@ -90,7 +117,6 @@ try {
   const mapArea = document.getElementById('map');
   const graphArea = document.getElementById('graph');
   const layersGroup = document.querySelector('.bar .layers');
-  let graph = null;
   const showView = (view) => {
     const graphOn = view === 'graph';
     if (graphOn && !graph) {
@@ -113,15 +139,10 @@ try {
   // The edges between the panes. The sizes are a preference and not state:
   // they are remembered per reader in localStorage and never in the URL. The
   // views are told to redraw, because each of them measures its own box.
-  createPanes(document.querySelector('.layout'), {
+  createPanes(layout, {
     panelHandle: document.getElementById('split-panel'),
     timelineHandle: document.getElementById('split-timeline'),
-    onResize: () => {
-      const s = state.get();
-      map.render(s);
-      timeline.render(s);
-      if (graph) graph.render(s);
-    },
+    onResize: remeasure,
   });
 
   for (const box of document.querySelectorAll('input[data-layer]')) {

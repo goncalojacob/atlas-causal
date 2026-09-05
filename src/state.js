@@ -250,6 +250,16 @@ export function formatState(state, search = '') {
 // frames of the same picture.
 export const OPENINGS = Object.freeze(['selected', 'source', 'place', 'actor', 'narrative', 'step']);
 
+// The five of those that are a *card*. `step` is not one on its own: it is a
+// position inside a narrative, and the narrative beside it is the opening.
+export const CARDS = Object.freeze(OPENINGS.filter((key) => key !== 'step'));
+
+// Is a record open at all? The panel asks it to know whether it has anything
+// to show, and the phone asks it to know whether to raise the sheet.
+export function hasOpening(state = {}) {
+  return CARDS.some((key) => state[key]);
+}
+
 // Pure, and on the patch: given what is being set and what stands now, does
 // this change push or replace? Setting a field to the value it already has is
 // not an opening — a click on the event already open must not add an entry
