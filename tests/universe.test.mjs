@@ -71,6 +71,27 @@ test('validate() takes the universe and the validator ready-made', async () => {
   assert.equal(plain.errors.length, 0, say(plain).join('\n'));
 });
 
+test('the form\'s validateBundle says the same thing with the halves reused', async () => {
+  const { validateBundle, preparedFor } = await import('../src/contribute/bundle.js');
+  const { fx, topology } = await fixtureAtlas();
+  const files = await schemas();
+  const reuse = preparedFor(topology, files);
+  for (const record of fx.records.slice(0, 30)) {
+    const bundle = { schema: 1, records: [record] };
+    assert.deepEqual(
+      say(validateBundle(bundle, topology, files, reuse)),
+      say(validateBundle(bundle, topology, files)),
+      `${record.kind} ${record.id}`,
+    );
+  }
+  // And a broken one, so the agreement is not just two empty lists.
+  const broken = { ...clone(fx.byId['fixture-event-a']), summary: '' };
+  const bundle = { schema: 1, records: [broken] };
+  const withReuse = validateBundle(bundle, topology, files, reuse);
+  assert.ok(withReuse.errors.length > 0);
+  assert.deepEqual(say(withReuse), say(validateBundle(bundle, topology, files)));
+});
+
 test('rule 11 still finds every referrer of a tombstone', async () => {
   const { fx, topology } = await fixtureAtlas();
   const event = clone(fx.byId['fixture-event-a']);

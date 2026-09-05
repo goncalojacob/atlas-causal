@@ -11,7 +11,7 @@
 
 import { html } from '../util/dom.js';
 import {
-  FIELDS, CITATION_LISTS, ACTOR_LISTS, STEP_LISTS, emptyValues, buildBundle, slugify, findSimilar, validateBundle,
+  FIELDS, CITATION_LISTS, ACTOR_LISTS, STEP_LISTS, emptyValues, buildBundle, slugify, findSimilar, validateBundle, preparedFor,
 } from './bundle.js';
 import { reorderControls, refreshAll } from './reorder.js';
 import { submitBundle } from './submit.js';
@@ -60,7 +60,10 @@ function messageOf(error, view) {
   return error.message;
 }
 
-export function createForm(container, { topology, schemas, template, fixtures = false } = {}) {
+export function createForm(container, { topology, schemas, template, fixtures = false, prepared = null } = {}) {
+  // The indexed universe and the compiled schema set, once for the life of
+  // the form rather than once per keystroke (health review B, finding 27).
+  const reuse = prepared ?? preparedFor(topology, schemas);
   const entries = [];
   const dynamic = new Set();
   const state = { author: '' };
@@ -563,7 +566,7 @@ export function createForm(container, { topology, schemas, template, fixtures = 
 
   function refresh() {
     const bundle = currentBundle();
-    const result = validateBundle(bundle, topology, schemas);
+    const result = validateBundle(bundle, topology, schemas, reuse);
     const byId = new Map();
     bundle.records.forEach((record, i) => {
       if (!byId.has(record.id)) byId.set(record.id, entries[i]);

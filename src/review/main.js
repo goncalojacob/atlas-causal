@@ -19,6 +19,7 @@ import { signRecord, retractRecord, retractionPlan, reviewerProblems, normalizeR
 import { saveBundle } from './save.js';
 import { unverified } from './citations.js';
 import { createEditor } from './editor.js';
+import { preparedFor } from '../contribute/bundle.js';
 
 const REVIEWER_KEY = 'atlas.reviewer';
 const params = new URLSearchParams(window.location.search);
@@ -97,6 +98,10 @@ try {
 }
 
 function render({ topology, review, schemas, citersOf }) {
+  // The atlas's half of validation, built once for the page: a reviewer
+  // opens one record after another and every editor validates against the
+  // same universe and the same schema set (health review A, finding 11).
+  const prepared = preparedFor(topology, schemas);
   // The queue as the index left it. Signing removes an entry from this list;
   // reloading the page rebuilds it from the index the save rewrote.
   let digests = (review.records ?? []).filter(isDraft);
@@ -291,6 +296,7 @@ function render({ topology, review, schemas, citersOf }) {
       record,
       topology,
       schemas,
+      prepared,
       today: today(),
       reviewer: () => normalizeReviewer({ name: nameInput.value, github: handleInput.value }),
       onChange: (state) => {
