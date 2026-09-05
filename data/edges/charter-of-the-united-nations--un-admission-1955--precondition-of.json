@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "charter-of-the-united-nations--un-admission-1955--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Charter of the United Nations\", revision 1365430628"
+    }
+  ],
+  "from": "charter-of-the-united-nations",
+  "to": "un-admission-1955",
+  "type": "precondition-of",
+  "confidence": "consensus",
+  "explanation": "Article 4 makes admission a decision of the General Assembly on the recommendation of the Security Council, which means a permanent member can hold an applicant out indefinitely — and from 1946 both blocs did exactly that, so that membership became a currency rather than a status. Portugal, refused for nine years, entered in December 1955 in a package of sixteen states agreed between the blocs to clear the backlog. The design of the Charter is why the admission took the form of a bargain over a list rather than a judgement on Portugal, and it is also why what Portugal found inside was an Assembly majority it could not veto.",
+  "dispute": null
+}

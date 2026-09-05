@@ -9,15 +9,22 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": null,
+  "revised": "2026-09-05",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "summary-drafted",
+      "date"
+    ],
+    "note": "The interval on this record is the imported item's and covers the decisive phase only. The war between the Nationalists and the Communists opens in 1927 and is suspended for the Japanese war; a reviewer should decide whether the record is the whole war or the campaign of 1946–1949 and say so in the title."
   },
   "wikidata": "Q179975",
   "sitelinks": 83,
@@ -27,12 +34,20 @@
   },
   "sources": [
     {
+      "source": "wikipedia-en",
+      "locator": "\"Chinese Civil War\", revision 1372330605"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Guerra Civil Chinesa\", revision 72737609"
+    },
+    {
       "source": "wikidata",
       "locator": "Q179975"
     }
   ],
   "title": "Chinese Civil War",
-  "summary": "Wikidata item Q179975, imported by tools/import/wikidata.mjs. The item's own description reads \"The civil war between the government of the Republic of China and the Chinese Communist Party\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The war between the Nationalist government and the Chinese Communist Party resumed in 1946, after the Japanese surrender and the failure of American mediation, and was decided within three years: the Communist armies took Manchuria in 1948, crossed the Yangtze in 1949 and drove the Nationalist government to Taiwan. The People's Republic was proclaimed on 1 October 1949. Behind the campaigns lay a Nationalist state whose armies, tax base and currency had been consumed by eight years of Japanese war, and a Communist party that had spent those years building an administration in the countryside of the north.",
   "when": {
     "start": 1946,
     "end": 1950,
@@ -41,5 +56,14 @@
   },
   "place": null,
   "region": "asia",
-  "actors": []
+  "actors": [
+    {
+      "actor": "china",
+      "role": "belligerent"
+    },
+    {
+      "actor": "taiwan",
+      "role": "belligerent"
+    }
+  ]
 }

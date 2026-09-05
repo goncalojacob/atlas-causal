@@ -9,14 +9,19 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": null,
+  "revised": "2026-09-05",
   "review": {
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "summary-drafted"
     ]
   },
   "wikidata": "Q189266",
@@ -27,12 +32,20 @@
   },
   "sources": [
     {
+      "source": "wikipedia-en",
+      "locator": "\"Eastern Front (World War II)\", revision 1373107377"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Frente Oriental (Segunda Guerra Mundial)\", revision 71477173"
+    },
+    {
       "source": "wikidata",
       "locator": "Q189266"
     }
   ],
   "title": "Eastern Front",
-  "summary": "Wikidata item Q189266, imported by tools/import/wikidata.mjs. The item's own description reads \"1941–1945 World War II theater\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The German-Soviet war ran from the invasion of 22 June 1941 to the surrender in May 1945 and was where the Second World War in Europe was decided: some thirty million of the war's dead, the great majority of German losses, and by most counts over four fifths of the fighting. It was also a war of extermination by design — the commissar order, the starvation of Soviet prisoners, the shooting of Jews behind the lines by the Einsatzgruppen — and not a campaign that became one. Its shape at the end, with the Red Army in Berlin and in every capital east of it, is the fact every post-war settlement in Europe had to start from.",
   "when": {
     "start": 1941,
     "end": 1945,
@@ -41,5 +54,14 @@
   },
   "place": null,
   "region": "europe",
-  "actors": []
+  "actors": [
+    {
+      "actor": "germany-prussia",
+      "role": "belligerent"
+    },
+    {
+      "actor": "russia-soviet-union",
+      "role": "belligerent"
+    }
+  ]
 }

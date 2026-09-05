@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "first-indochina-war--algerian-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Indochina War\", revision 1373236226"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Algerian War\", revision 1373081356"
+    }
+  ],
+  "from": "first-indochina-war",
+  "to": "algerian-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Algerian insurrection opened on 1 November 1954, three months after the Geneva agreements and six after Dien Bien Phu, and the men who opened it said what the timing meant: a European army had been beaten in the field by a colonial one, and the French Republic had accepted the result. The claim is about the demonstration and the moment, not that Indochina produced the Algerian nationalist movement, which had its own history running back to the 1930s and to the massacres at Sétif in 1945. What Indochina supplied was the evidence that the thing could be done.",
+  "dispute": null
+}
