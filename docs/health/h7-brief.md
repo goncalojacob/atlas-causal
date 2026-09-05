@@ -20,7 +20,16 @@ nothing historical of its own.
 4. **Ranking as an ordering**: `shortestPaths` untouched; the horizon list
    and convergence ordered by a cost of confidence and type, convergence
    grouped by depth with counts; the walked chain unchanged.
-5. **`subgraph(atlas, ids, depth)`** in `graph.js` returning events,
+5. **The neighbourhood of an open actor or place** (owner, 5 September):
+   while an actor or a place is open and no lens is set, the graph draws
+   that record's events in full and their direct causes and consequences
+   in a dimmed tone, and nothing else; the timeline fades everything
+   outside the same set; the map keeps its marks but emphasises the same
+   set. A "Show everything" chip on the card restores the full picture
+   for that opening, and the existing lens (`?focus=actor:<id>`) remains
+   the explicit, shareable form of the narrowing. Built on `workingSet`
+   (H2), one depth of `subgraph` (item 6).
+6. **`subgraph(atlas, ids, depth)`** in `graph.js` returning events,
    edges, actors and relations with a bundled fetch of the explanations
    by period (`explanations-<period>-<hash>.json` emitted by the index);
    narrative steps may cite an actor, a relation or a presence (schema,
@@ -29,4 +38,6 @@ nothing historical of its own.
 Done when: a browser test opens the atlas with nothing selected and sees
 the intro; "carnation" finds the revolution; `?actor=angola` lists events
 along `succeeded`; the horizon list's order is by the cost and the chain
-is unchanged (test); `subgraph` tested on the fixtures; `H7 done`.
+is unchanged (test); `subgraph` tested on the fixtures; with
+`?actor=portugal` the graph draws only Portugal's events and their direct
+neighbours, the latter dimmed (browser test); `H7 done`.
