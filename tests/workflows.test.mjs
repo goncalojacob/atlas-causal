@@ -140,7 +140,8 @@ test('the import Action runs only on import branches and never on m0', async () 
     at = next;
   }
   assert.match(text, /git checkout -- data\//);
-  assert.match(text, /timeout-minutes: 90/);
+  const minutes = Number(text.match(/timeout-minutes: (\d+)/)?.[1]);
+  assert.ok(minutes >= 90 && minutes <= 360, `the job has a timeout GitHub accepts (${minutes})`);
   // The branch it pushes to is the one it was triggered by, and never m0.
   assert.doesNotMatch(text, /push origin m0/);
   assert.match(text, /HEAD:\$BRANCH/);

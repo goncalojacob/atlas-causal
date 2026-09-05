@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "katyn-massacre",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q134301",
+  "sitelinks": 73,
+  "wikipedia": {
+    "en": "Katyn massacre",
+    "pt": "Massacre de Katyn"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q134301"
+    }
+  ],
+  "title": "Katyn massacre",
+  "summary": "Wikidata item Q134301, imported by tools/import/wikidata.mjs. The item's own description reads \"Soviet massacre of Polish military officers and intelligentsia in 1940\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1940,
+    "end": 1940,
+    "endDate": "1940-05"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}

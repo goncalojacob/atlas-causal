@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "yom-kippur-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q49100",
+  "sitelinks": 88,
+  "wikipedia": {
+    "en": "Yom Kippur War",
+    "pt": "Guerra do Yom Kippur"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q49100"
+    }
+  ],
+  "title": "Yom Kippur War",
+  "summary": "Wikidata item Q49100, imported by tools/import/wikidata.mjs. The item's own description reads \"October 1973 war between Egypt and Syria at one side and Israel on the other side\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1973,
+    "end": 1973,
+    "date": "1973-10-06",
+    "endDate": "1973-10-26"
+  },
+  "place": null,
+  "region": "africa",
+  "actors": []
+}

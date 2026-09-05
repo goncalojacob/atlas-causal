@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "iraq-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q545449",
+  "sitelinks": 95,
+  "wikipedia": {
+    "en": "Iraq War",
+    "pt": "Guerra do Iraque"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q545449"
+    }
+  ],
+  "title": "Iraq War",
+  "summary": "Wikidata item Q545449, imported by tools/import/wikidata.mjs. The item's own description reads \"2003–2011 war after an American-led invasion\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2003,
+    "end": 2011,
+    "date": "2003-03-20",
+    "endDate": "2011-12-15"
+  },
+  "place": null,
+  "region": "asia",
+  "actors": []
+}

@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "european-convention-on-human-rights",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q183191",
+  "sitelinks": 67,
+  "wikipedia": {
+    "en": "European Convention on Human Rights",
+    "pt": "Convenção Europeia dos Direitos Humanos"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q183191"
+    }
+  ],
+  "title": "European Convention on Human Rights",
+  "summary": "Wikidata item Q183191, imported by tools/import/wikidata.mjs. The item's own description reads \"international treaty to protect human rights and fundamental freedoms in Europe\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1950,
+    "end": 1950,
+    "date": "1950-11-04"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}

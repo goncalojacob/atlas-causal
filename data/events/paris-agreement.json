@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "paris-agreement",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q21707860",
+  "sitelinks": 75,
+  "wikipedia": {
+    "en": "Paris Agreement",
+    "pt": "Acordo de Paris (2015)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q21707860"
+    }
+  ],
+  "title": "Paris Agreement",
+  "summary": "Wikidata item Q21707860, imported by tools/import/wikidata.mjs. The item's own description reads \"international agreement from 12 December 2015 within the United Nations Framework Convention on Climate Change (UNFCCC) dealing with greenhouse gas emissions mitigation, adaptation and finance starting in the year 2020\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2015,
+    "end": 2015,
+    "date": "2015-12-12"
+  },
+  "place": "new-york",
+  "region": null,
+  "actors": []
+}

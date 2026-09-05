@@ -11684,7 +11684,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 55,
+      "citationCount": 91,
       "citations": [
         {
           "dissent": false,
@@ -11880,6 +11880,12 @@
         },
         {
           "dissent": false,
+          "id": "2006-lebanon-war",
+          "kind": "event",
+          "locator": "Q49104"
+        },
+        {
+          "dissent": false,
           "id": "2007-portuguese-abortion-referendum",
           "kind": "event",
           "locator": null
@@ -11940,9 +11946,39 @@
         },
         {
           "dissent": false,
+          "id": "anti-comintern-pact",
+          "kind": "event",
+          "locator": "Q152195"
+        },
+        {
+          "dissent": false,
+          "id": "assassination-of-archduke-franz-ferdinand",
+          "kind": "event",
+          "locator": "Q192050"
+        },
+        {
+          "dissent": false,
+          "id": "assassination-of-john-f-kennedy",
+          "kind": "event",
+          "locator": "Q193484"
+        },
+        {
+          "dissent": false,
+          "id": "bangladesh-liberation-war",
+          "kind": "event",
+          "locator": "Q371394"
+        },
+        {
+          "dissent": false,
           "id": "batepa-massacre",
           "kind": "event",
           "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "bucha-massacre",
+          "kind": "event",
+          "locator": "Q111467700"
         },
         {
           "dissent": false,
@@ -11958,15 +11994,57 @@
         },
         {
           "dissent": false,
+          "id": "eastern-front",
+          "kind": "event",
+          "locator": "Q189266"
+        },
+        {
+          "dissent": false,
           "id": "eleicoes-legislativas-regionais-na-madeira-em-1976",
           "kind": "event",
           "locator": null
         },
         {
           "dissent": false,
+          "id": "euromaidan",
+          "kind": "event",
+          "locator": "Q15224558"
+        },
+        {
+          "dissent": false,
+          "id": "european-convention-on-human-rights",
+          "kind": "event",
+          "locator": "Q183191"
+        },
+        {
+          "dissent": false,
+          "id": "first-indochina-war",
+          "kind": "event",
+          "locator": "Q748780"
+        },
+        {
+          "dissent": false,
+          "id": "full-scale-russo-ukrainian-war",
+          "kind": "event",
+          "locator": "Q110999040"
+        },
+        {
+          "dissent": false,
+          "id": "gaza-war",
+          "kind": "event",
+          "locator": "Q122962941"
+        },
+        {
+          "dissent": false,
           "id": "guinean-constitutional-referendum-1958",
           "kind": "event",
           "locator": "Q5616514"
+        },
+        {
+          "dissent": false,
+          "id": "gulf-war",
+          "kind": "event",
+          "locator": "Q37643"
         },
         {
           "dissent": false,
@@ -11982,9 +12060,45 @@
         },
         {
           "dissent": false,
+          "id": "indo-pakistani-war-of-1965",
+          "kind": "event",
+          "locator": "Q233583"
+        },
+        {
+          "dissent": false,
+          "id": "iraq-war",
+          "kind": "event",
+          "locator": "Q545449"
+        },
+        {
+          "dissent": false,
+          "id": "katyn-massacre",
+          "kind": "event",
+          "locator": "Q134301"
+        },
+        {
+          "dissent": false,
+          "id": "korean-war",
+          "kind": "event",
+          "locator": "Q8663"
+        },
+        {
+          "dissent": false,
+          "id": "lateran-treaty",
+          "kind": "event",
+          "locator": "Q193270"
+        },
+        {
+          "dissent": false,
           "id": "lisbon-regicide",
           "kind": "event",
           "locator": "Q2665185"
+        },
+        {
+          "dissent": false,
+          "id": "maastricht-treaty",
+          "kind": "event",
+          "locator": "Q11146"
         },
         {
           "dissent": false,
@@ -11994,9 +12108,75 @@
         },
         {
           "dissent": false,
+          "id": "munich-agreement",
+          "kind": "event",
+          "locator": "Q154255"
+        },
+        {
+          "dissent": false,
+          "id": "paris-agreement",
+          "kind": "event",
+          "locator": "Q21707860"
+        },
+        {
+          "dissent": false,
           "id": "portuguese-regionalisation-referendum-1998",
           "kind": "event",
           "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "potsdam-conference",
+          "kind": "event",
+          "locator": "Q151187"
+        },
+        {
+          "dissent": false,
+          "id": "russo-georgian-war",
+          "kind": "event",
+          "locator": "Q620735"
+        },
+        {
+          "dissent": false,
+          "id": "russo-ukrainian-war",
+          "kind": "event",
+          "locator": "Q15860072"
+        },
+        {
+          "dissent": false,
+          "id": "schengen-agreement",
+          "kind": "event",
+          "locator": "Q2822795"
+        },
+        {
+          "dissent": false,
+          "id": "second-boer-war",
+          "kind": "event",
+          "locator": "Q215112"
+        },
+        {
+          "dissent": false,
+          "id": "second-chechen-war",
+          "kind": "event",
+          "locator": "Q120843"
+        },
+        {
+          "dissent": false,
+          "id": "second-nagorno-karabakh-war",
+          "kind": "event",
+          "locator": "Q99659280"
+        },
+        {
+          "dissent": false,
+          "id": "second-sino-japanese-war",
+          "kind": "event",
+          "locator": "Q170314"
+        },
+        {
+          "dissent": false,
+          "id": "srebrenica-massacre",
+          "kind": "event",
+          "locator": "Q170334"
         },
         {
           "dissent": false,
@@ -12012,9 +12192,45 @@
         },
         {
           "dissent": false,
+          "id": "treaty-of-portsmouth",
+          "kind": "event",
+          "locator": "Q548067"
+        },
+        {
+          "dissent": false,
+          "id": "treaty-of-rome",
+          "kind": "event",
+          "locator": "Q167457"
+        },
+        {
+          "dissent": false,
           "id": "treaty-of-windsor",
           "kind": "event",
           "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "treaty-on-the-non-proliferation-of-nuclear-weapons",
+          "kind": "event",
+          "locator": "Q186444"
+        },
+        {
+          "dissent": false,
+          "id": "twelve-day-war",
+          "kind": "event",
+          "locator": "Q134900605"
+        },
+        {
+          "dissent": false,
+          "id": "war-in-afghanistan-2001-2021",
+          "kind": "event",
+          "locator": "Q182865"
+        },
+        {
+          "dissent": false,
+          "id": "yom-kippur-war",
+          "kind": "event",
+          "locator": "Q49100"
         }
       ],
       "created": "2026-09-04",

@@ -10748,6 +10748,28 @@
     {
       "actors": [],
       "aliases": [],
+      "id": "2006-lebanon-war",
+      "place": null,
+      "region": "asia",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "2006 Lebanon War",
+      "weight": 0,
+      "when": {
+        "end": 2006,
+        "endDate": "2006-08-14",
+        "start": 2006
+      },
+      "wikidata": "Q49104",
+      "wikipedia": {
+        "en": "2006 Lebanon War",
+        "pt": "Guerra do Líbano de 2006"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
       "id": "2006-portuguese-presidential-election",
       "place": null,
       "region": "europe",
@@ -12345,6 +12367,28 @@
     {
       "actors": [],
       "aliases": [],
+      "id": "anti-comintern-pact",
+      "place": "berlin",
+      "region": "europe",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Anti-Comintern Pact",
+      "weight": 0,
+      "when": {
+        "date": "1936-11-25",
+        "end": 1936,
+        "start": 1936
+      },
+      "wikidata": "Q152195",
+      "wikipedia": {
+        "en": "Anti-Comintern Pact",
+        "pt": "Pacto Anticomintern"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
       "id": "april-1906-portuguese-legislative-election",
       "place": null,
       "region": "europe",
@@ -12474,6 +12518,28 @@
     {
       "actors": [],
       "aliases": [],
+      "id": "assassination-of-archduke-franz-ferdinand",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "assassination of Archduke Franz Ferdinand",
+      "weight": 0,
+      "when": {
+        "date": "1914-06-28",
+        "end": 1914,
+        "start": 1914
+      },
+      "wikidata": "Q192050",
+      "wikipedia": {
+        "en": "Assassination of Archduke Franz Ferdinand",
+        "pt": "Atentado de Sarajevo"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
       "id": "assassination-of-erkut-akbay",
       "place": "lisbon",
       "region": "europe",
@@ -12491,6 +12557,28 @@
       "wikipedia": {
         "en": "Assassination of Erkut Akbay",
         "pt": "Assassinato de Erkut Akbay"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "assassination-of-john-f-kennedy",
+      "place": null,
+      "region": "americas",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "assassination of John F. Kennedy",
+      "weight": 0,
+      "when": {
+        "date": "1963-11-22",
+        "end": 1963,
+        "start": 1963
+      },
+      "wikidata": "Q193484",
+      "wikipedia": {
+        "en": "Assassination of John F. Kennedy",
+        "pt": "Assassinato de John F. Kennedy"
       }
     },
     {
@@ -12708,6 +12796,29 @@
       }
     },
     {
+      "actors": [],
+      "aliases": [],
+      "id": "bangladesh-liberation-war",
+      "place": null,
+      "region": "asia",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Bangladesh Liberation War",
+      "weight": 0,
+      "when": {
+        "date": "1971-03-26",
+        "end": 1971,
+        "endDate": "1971-12-16",
+        "start": 1971
+      },
+      "wikidata": "Q371394",
+      "wikipedia": {
+        "en": "Bangladesh Liberation War",
+        "pt": "Guerra de Independência de Bangladesh"
+      }
+    },
+    {
       "actors": [
         {
           "actor": "estado-novo",
@@ -12907,6 +13018,29 @@
         "date": "2008-11-02",
         "end": 2008,
         "start": 2008
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "bucha-massacre",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Bucha massacre",
+      "weight": 0,
+      "when": {
+        "date": "2022-03-31",
+        "end": 2022,
+        "endDate": "2022-03-31",
+        "start": 2022
+      },
+      "wikidata": "Q111467700",
+      "wikipedia": {
+        "en": "Bucha massacre",
+        "pt": "Massacre de Bucha"
       }
     },
     {
@@ -13635,6 +13769,29 @@
       }
     },
     {
+      "actors": [],
+      "aliases": [],
+      "id": "eastern-front",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Eastern Front",
+      "weight": 0,
+      "when": {
+        "date": "1941-06-22",
+        "end": 1945,
+        "endDate": "1945-05-07",
+        "start": 1941
+      },
+      "wikidata": "Q189266",
+      "wikipedia": {
+        "en": "Eastern Front (World War II)",
+        "pt": "Frente Oriental (Segunda Guerra Mundial)"
+      }
+    },
+    {
       "actors": [
         {
           "actor": "european-economic-community",
@@ -14015,6 +14172,51 @@
       }
     },
     {
+      "actors": [],
+      "aliases": [],
+      "id": "euromaidan",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Euromaidan",
+      "weight": 0,
+      "when": {
+        "date": "2013-11-21",
+        "end": 2014,
+        "endDate": "2014-02-23",
+        "start": 2013
+      },
+      "wikidata": "Q15224558",
+      "wikipedia": {
+        "en": "Euromaidan",
+        "pt": "Euromaidan"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "european-convention-on-human-rights",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "European Convention on Human Rights",
+      "weight": 0,
+      "when": {
+        "date": "1950-11-04",
+        "end": 1950,
+        "start": 1950
+      },
+      "wikidata": "Q183191",
+      "wikipedia": {
+        "en": "European Convention on Human Rights",
+        "pt": "Convenção Europeia dos Direitos Humanos"
+      }
+    },
+    {
       "actors": [
         {
           "actor": "third-portuguese-republic",
@@ -14094,6 +14296,73 @@
         "date": "2024-04-25",
         "end": 2024,
         "start": 2024
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "first-indochina-war",
+      "place": null,
+      "region": "asia",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "First Indochina War",
+      "weight": 0,
+      "when": {
+        "date": "1946-12-19",
+        "end": 1954,
+        "endDate": "1954-08-01",
+        "start": 1946
+      },
+      "wikidata": "Q748780",
+      "wikipedia": {
+        "en": "First Indochina War",
+        "pt": "Primeira Guerra da Indochina"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "full-scale-russo-ukrainian-war",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "full-scale Russo-Ukrainian war",
+      "weight": 0,
+      "when": {
+        "date": "2022-02-24",
+        "end": null,
+        "start": 2022
+      },
+      "wikidata": "Q110999040",
+      "wikipedia": {
+        "en": "Russo-Ukrainian war (2022–present)",
+        "pt": "Invasão da Ucrânia pela Rússia (2022–presente)"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "gaza-war",
+      "place": null,
+      "region": "asia",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Gaza War",
+      "weight": 0,
+      "when": {
+        "date": "2023-10-07",
+        "end": null,
+        "start": 2023
+      },
+      "wikidata": "Q122962941",
+      "wikipedia": {
+        "en": "Gaza war",
+        "pt": "Guerra de Gaza"
       }
     },
     {
@@ -14339,6 +14608,29 @@
       }
     },
     {
+      "actors": [],
+      "aliases": [],
+      "id": "gulf-war",
+      "place": null,
+      "region": "asia",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Gulf War",
+      "weight": 0,
+      "when": {
+        "date": "1990-08-02",
+        "end": 1991,
+        "endDate": "1991-02-28",
+        "start": 1990
+      },
+      "wikidata": "Q37643",
+      "wikipedia": {
+        "en": "Gulf War",
+        "pt": "Guerra do Golfo"
+      }
+    },
+    {
       "actors": [
         {
           "actor": "indonesia",
@@ -14500,6 +14792,74 @@
     {
       "actors": [],
       "aliases": [],
+      "id": "indo-pakistani-war-of-1965",
+      "place": null,
+      "region": "asia",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Indo-Pakistani War of 1965",
+      "weight": 0,
+      "when": {
+        "date": "1965-08",
+        "end": 1965,
+        "endDate": "1965-09-23",
+        "start": 1965
+      },
+      "wikidata": "Q233583",
+      "wikipedia": {
+        "en": "India–Pakistan war of 1965",
+        "pt": "Guerra Indo-Paquistanesa de 1965"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "iraq-war",
+      "place": null,
+      "region": "asia",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Iraq War",
+      "weight": 0,
+      "when": {
+        "date": "2003-03-20",
+        "end": 2011,
+        "endDate": "2011-12-15",
+        "start": 2003
+      },
+      "wikidata": "Q545449",
+      "wikipedia": {
+        "en": "Iraq War",
+        "pt": "Guerra do Iraque"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "katyn-massacre",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Katyn massacre",
+      "weight": 0,
+      "when": {
+        "end": 1940,
+        "endDate": "1940-05",
+        "start": 1940
+      },
+      "wikidata": "Q134301",
+      "wikipedia": {
+        "en": "Katyn massacre",
+        "pt": "Massacre de Katyn"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
       "id": "killing-of-odair-moniz",
       "place": null,
       "region": "europe",
@@ -14517,6 +14877,52 @@
       "wikipedia": {
         "en": "Killing of Odair Moniz",
         "pt": "Morte de Odair Moniz"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "korean-war",
+      "place": null,
+      "region": "asia",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Korean War",
+      "weight": 0,
+      "when": {
+        "date": "1950-06-25",
+        "end": 1953,
+        "endDate": "1953-07-27",
+        "start": 1950
+      },
+      "wikidata": "Q8663",
+      "wikipedia": {
+        "en": "Korean War",
+        "pt": "Guerra da Coreia"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "lateran-treaty",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Lateran Treaty",
+      "weight": 0,
+      "when": {
+        "date": "1929-02-11",
+        "end": 1985,
+        "endDate": "1985-06-03",
+        "start": 1929
+      },
+      "wikidata": "Q193270",
+      "wikipedia": {
+        "en": "Lateran Treaty",
+        "pt": "Tratado de Latrão"
       }
     },
     {
@@ -14919,6 +15325,28 @@
       }
     },
     {
+      "actors": [],
+      "aliases": [],
+      "id": "maastricht-treaty",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Maastricht Treaty",
+      "weight": 0,
+      "when": {
+        "date": "1992-02-07",
+        "end": 1992,
+        "start": 1992
+      },
+      "wikidata": "Q11146",
+      "wikipedia": {
+        "en": "Maastricht Treaty",
+        "pt": "Tratado de Maastricht"
+      }
+    },
+    {
       "actors": [
         {
           "actor": "third-portuguese-republic",
@@ -15174,6 +15602,28 @@
     {
       "actors": [],
       "aliases": [],
+      "id": "munich-agreement",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Munich agreement",
+      "weight": 0,
+      "when": {
+        "date": "1938-09-30",
+        "end": 1938,
+        "start": 1938
+      },
+      "wikidata": "Q154255",
+      "wikipedia": {
+        "en": "Munich Agreement",
+        "pt": "Acordo de Munique"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
       "id": "murder-of-delfim-de-almeida-fernandes-by-the-prp-br",
       "place": null,
       "region": "europe",
@@ -15373,6 +15823,28 @@
         "end": 2017,
         "endDate": "2017-10-16",
         "start": 2017
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "paris-agreement",
+      "place": "new-york",
+      "region": "americas",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Paris Agreement",
+      "weight": 0,
+      "when": {
+        "date": "2015-12-12",
+        "end": 2015,
+        "start": 2015
+      },
+      "wikidata": "Q21707860",
+      "wikipedia": {
+        "en": "Paris Agreement",
+        "pt": "Acordo de Paris (2015)"
       }
     },
     {
@@ -15606,6 +16078,29 @@
       "wikipedia": {
         "en": "1998 Portuguese regionalisation referendum",
         "pt": "Referendo sobre a regionalização em Portugal (1998)"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "potsdam-conference",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Potsdam Conference",
+      "weight": 0,
+      "when": {
+        "date": "1945-07-17",
+        "end": 1945,
+        "endDate": "1945-08-02",
+        "start": 1945
+      },
+      "wikidata": "Q151187",
+      "wikipedia": {
+        "en": "Potsdam Conference",
+        "pt": "Conferência de Potsdam"
       }
     },
     {
@@ -15904,6 +16399,51 @@
       "wikidata": "Q115636352"
     },
     {
+      "actors": [],
+      "aliases": [],
+      "id": "russo-georgian-war",
+      "place": null,
+      "region": "asia",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Russo-Georgian War",
+      "weight": 0,
+      "when": {
+        "date": "2008-08-08",
+        "end": 2008,
+        "endDate": "2008-08-12",
+        "start": 2008
+      },
+      "wikidata": "Q620735",
+      "wikipedia": {
+        "en": "Russo-Georgian War",
+        "pt": "Guerra Russo-Georgiana"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "russo-ukrainian-war",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Russo-Ukrainian war",
+      "weight": 0,
+      "when": {
+        "date": "2014-02-20",
+        "end": null,
+        "start": 2014
+      },
+      "wikidata": "Q15860072",
+      "wikipedia": {
+        "en": "Russo-Ukrainian war",
+        "pt": "Guerra Russo-Ucraniana"
+      }
+    },
+    {
       "actors": [
         {
           "actor": "salazar",
@@ -15985,6 +16525,28 @@
       }
     },
     {
+      "actors": [],
+      "aliases": [],
+      "id": "schengen-agreement",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Schengen Agreement",
+      "weight": 0,
+      "when": {
+        "date": "1985-06-14",
+        "end": 1985,
+        "start": 1985
+      },
+      "wikidata": "Q2822795",
+      "wikipedia": {
+        "en": "Schengen Agreement",
+        "pt": "Acordo de Schengen"
+      }
+    },
+    {
       "actors": [
         {
           "actor": "portugal",
@@ -16013,6 +16575,97 @@
         "date": "1995-03-26",
         "end": 1995,
         "start": 1995
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "second-boer-war",
+      "place": null,
+      "region": "africa",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Second Boer War",
+      "weight": 0,
+      "when": {
+        "date": "1899-10-11",
+        "end": 1902,
+        "endDate": "1902-05-31",
+        "start": 1899
+      },
+      "wikidata": "Q215112",
+      "wikipedia": {
+        "en": "Second Boer War",
+        "pt": "Segunda Guerra dos Bôeres"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "second-chechen-war",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Second Chechen War",
+      "weight": 0,
+      "when": {
+        "date": "1999-08-26",
+        "end": 2009,
+        "endDate": "2009-04-16",
+        "start": 1999
+      },
+      "wikidata": "Q120843",
+      "wikipedia": {
+        "en": "Second Chechen War",
+        "pt": "Segunda Guerra da Chechênia"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "second-nagorno-karabakh-war",
+      "place": null,
+      "region": "asia",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Second Nagorno-Karabakh War",
+      "weight": 0,
+      "when": {
+        "end": 2020,
+        "endDate": "2020-11-10",
+        "start": 2020
+      },
+      "wikidata": "Q99659280",
+      "wikipedia": {
+        "en": "Second Nagorno-Karabakh War",
+        "pt": "Segunda Guerra do Alto Carabaque"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "second-sino-japanese-war",
+      "place": null,
+      "region": "asia",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Second Sino-Japanese War",
+      "weight": 0,
+      "when": {
+        "date": "1937-07-07",
+        "end": 1945,
+        "endDate": "1945-09-09",
+        "start": 1937
+      },
+      "wikidata": "Q170314",
+      "wikipedia": {
+        "en": "Second Sino-Japanese War",
+        "pt": "Segunda Guerra Sino-Japonesa"
       }
     },
     {
@@ -16151,6 +16804,29 @@
         "date": "1974-09-30",
         "end": 1974,
         "start": 1974
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "srebrenica-massacre",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Srebrenica massacre",
+      "weight": 0,
+      "when": {
+        "date": "1995-07",
+        "end": 1995,
+        "endDate": "1995-07-22",
+        "start": 1995
+      },
+      "wikidata": "Q170334",
+      "wikipedia": {
+        "en": "Srebrenica massacre",
+        "pt": "Massacre de Srebrenica"
       }
     },
     {
@@ -16305,6 +16981,50 @@
     {
       "actors": [],
       "aliases": [],
+      "id": "treaty-of-portsmouth",
+      "place": null,
+      "region": "americas",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Treaty of Portsmouth",
+      "weight": 0,
+      "when": {
+        "date": "1905-09-05",
+        "end": 1905,
+        "start": 1905
+      },
+      "wikidata": "Q548067",
+      "wikipedia": {
+        "en": "Treaty of Portsmouth",
+        "pt": "Tratado de Portsmouth"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "treaty-of-rome",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Treaty of Rome",
+      "weight": 0,
+      "when": {
+        "date": "1957-03-25",
+        "end": 1957,
+        "start": 1957
+      },
+      "wikidata": "Q167457",
+      "wikipedia": {
+        "en": "Treaty of Rome",
+        "pt": "Tratado de Roma (1957)"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
       "id": "treaty-of-windsor",
       "place": null,
       "region": "europe",
@@ -16320,6 +17040,28 @@
       "wikidata": "Q2518953",
       "wikipedia": {
         "en": "Treaty of Windsor (1899)"
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "treaty-on-the-non-proliferation-of-nuclear-weapons",
+      "place": "new-york",
+      "region": "americas",
+      "regionMethod": "inside",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Treaty on the Non-Proliferation of Nuclear Weapons",
+      "weight": 0,
+      "when": {
+        "date": "1968-07-01",
+        "end": 1968,
+        "start": 1968
+      },
+      "wikidata": "Q186444",
+      "wikipedia": {
+        "en": "Treaty on the Non-Proliferation of Nuclear Weapons",
+        "pt": "Tratado de Não Proliferação de Armas Nucleares"
       }
     },
     {
@@ -16393,6 +17135,29 @@
       }
     },
     {
+      "actors": [],
+      "aliases": [],
+      "id": "twelve-day-war",
+      "place": null,
+      "region": "asia",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Twelve-Day War",
+      "weight": 0,
+      "when": {
+        "date": "2025-06",
+        "end": 2025,
+        "endDate": "2025-06-24",
+        "start": 2025
+      },
+      "wikidata": "Q134900605",
+      "wikipedia": {
+        "en": "Twelve-Day War",
+        "pt": "Guerra dos Doze Dias"
+      }
+    },
+    {
       "actors": [
         {
           "actor": "united-nations",
@@ -16421,6 +17186,29 @@
         "date": "1955-12-14",
         "end": 1955,
         "start": 1955
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "war-in-afghanistan-2001-2021",
+      "place": null,
+      "region": "asia",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "War in Afghanistan (2001–2021)",
+      "weight": 0,
+      "when": {
+        "date": "2001-10-07",
+        "end": 2021,
+        "endDate": "2021-08-30",
+        "start": 2001
+      },
+      "wikidata": "Q182865",
+      "wikipedia": {
+        "en": "War in Afghanistan (2001–2021)",
+        "pt": "Guerra do Afeganistão (2001–2021)"
       }
     },
     {
@@ -16498,6 +17286,29 @@
         "end": 2023,
         "endDate": "2023-08-06",
         "start": 2023
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "yom-kippur-war",
+      "place": null,
+      "region": "africa",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "Yom Kippur War",
+      "weight": 0,
+      "when": {
+        "date": "1973-10-06",
+        "end": 1973,
+        "endDate": "1973-10-26",
+        "start": 1973
+      },
+      "wikidata": "Q49100",
+      "wikipedia": {
+        "en": "Yom Kippur War",
+        "pt": "Guerra do Yom Kippur"
       }
     }
   ],

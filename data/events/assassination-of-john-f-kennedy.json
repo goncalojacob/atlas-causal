@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "assassination-of-john-f-kennedy",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q193484",
+  "sitelinks": 59,
+  "wikipedia": {
+    "en": "Assassination of John F. Kennedy",
+    "pt": "Assassinato de John F. Kennedy"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q193484"
+    }
+  ],
+  "title": "assassination of John F. Kennedy",
+  "summary": "Wikidata item Q193484, imported by tools/import/wikidata.mjs. The item's own description reads \"1963 murder in Dallas, Texas, U.S\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1963,
+    "end": 1963,
+    "date": "1963-11-22"
+  },
+  "place": null,
+  "region": "americas",
+  "actors": []
+}

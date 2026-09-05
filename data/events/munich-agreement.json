@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "munich-agreement",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q154255",
+  "sitelinks": 75,
+  "wikipedia": {
+    "en": "Munich Agreement",
+    "pt": "Acordo de Munique"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q154255"
+    }
+  ],
+  "title": "Munich agreement",
+  "summary": "Wikidata item Q154255, imported by tools/import/wikidata.mjs. The item's own description reads \"1938 cession of German-speaking Czechoslovakia to the German Reich\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1938,
+    "end": 1938,
+    "date": "1938-09-30"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}
