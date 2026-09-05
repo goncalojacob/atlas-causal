@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "id": "cyprus-1914",
+  "id": "iceland-under-denmark-1918",
   "kind": "presence",
   "status": "active",
   "supersededBy": null,
@@ -12,37 +12,36 @@
     }
   ],
   "license": "CC-BY-NC-SA-4.0",
-  "created": "2026-09-02",
+  "created": "2026-09-05",
   "revised": null,
   "sources": [
     {
       "source": "cshapes-2-0",
-      "locator": "fid 146"
+      "locator": "fid 212"
     }
   ],
-  "actor": "cyprus",
+  "actor": "iceland-under-denmark",
   "presenceType": "state",
-  "dependencyOf": "united-kingdom",
+  "dependencyOf": "denmark",
   "dependencyKind": "colony",
   "when": {
-    "start": 1914,
-    "end": 1960,
-    "date": "1914-11-05",
-    "endDate": "1960-08-15"
+    "start": 1918,
+    "end": 1942,
+    "date": "1918-12-01",
+    "endDate": "1942-04-21"
   },
   "geometry": {
     "files": [
       "geo/presences/1914-1932.json",
-      "geo/presences/1933-1945.json",
-      "geo/presences/1946-1974.json"
+      "geo/presences/1933-1945.json"
     ],
-    "key": "146"
+    "key": "212"
   },
   "capital": {
-    "lon": 33.366661,
-    "lat": 35.16667,
+    "lon": -21.950001,
+    "lat": 64.15,
     "precision": "city",
-    "label": "Nicosia"
+    "label": "Reykjavik"
   },
   "confidence": "consensus"
 }

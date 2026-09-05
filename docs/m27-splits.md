@@ -27,7 +27,7 @@ so. The state keeps the actor id it already had, so nothing that points at it
 has to move.
 
 The splits themselves are [`data/imports/cshapes-actors.json`](../data/imports/cshapes-actors.json);
-this page is the account of them. 8 codes split, 1 not split, in 1 of the four batches.
+this page is the account of them. 11 codes split, 5 not split, in 2 of the four batches.
 
 ## The Caribbean and the Americas
 
@@ -47,3 +47,20 @@ this page is the account of them. 8 codes split, 1 not split, in 1 of the four b
 Not split:
 
 - **41** `haiti` — the source holds it only as occupied, never as a colony, protectorate or mandate; an occupied state is the same actor.
+
+## Europe
+
+3 codes split.
+
+| Code | Colonial actor | State actor | From |
+|---|---|---|---|
+| 338 | `malta-under-united-kingdom` | `malta` | 1964-09-21 |
+| 352 | `cyprus-under-united-kingdom` | `cyprus` | 1960-08-16 |
+| 395 | `iceland-under-denmark` | `iceland` | 1942-04-22 |
+
+Not split:
+
+- **260** `german-federal-republic` — the source holds it only as occupied, never as a colony, protectorate or mandate; an occupied state is the same actor.
+- **265** `german-democratic-republic` — the source holds it only as occupied, never as a colony, protectorate or mandate; an occupied state is the same actor.
+- **340** `serbia` — the source holds it only as occupied, never as a colony, protectorate or mandate; an occupied state is the same actor.
+- **341** `montenegro` — the source holds it only as occupied, never as a colony, protectorate or mandate; an occupied state is the same actor.

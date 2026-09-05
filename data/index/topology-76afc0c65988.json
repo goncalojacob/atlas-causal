@@ -1212,6 +1212,21 @@
       "supersededBy": null,
       "when": {
         "end": null,
+        "start": 1960
+      }
+    },
+    {
+      "actorType": "polity",
+      "aliases": [],
+      "id": "cyprus-under-united-kingdom",
+      "name": "Cyprus under United Kingdom",
+      "names": [
+        "Cyprus under United Kingdom"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": 1960,
         "start": 1914
       }
     },
@@ -2195,6 +2210,21 @@
       "supersededBy": null,
       "when": {
         "end": null,
+        "start": 1942
+      }
+    },
+    {
+      "actorType": "polity",
+      "aliases": [],
+      "id": "iceland-under-denmark",
+      "name": "Iceland under Denmark",
+      "names": [
+        "Iceland under Denmark"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": 1942,
         "start": 1886
       }
     },
@@ -2920,6 +2950,21 @@
       "supersededBy": null,
       "when": {
         "end": null,
+        "start": 1964
+      }
+    },
+    {
+      "actorType": "polity",
+      "aliases": [],
+      "id": "malta-under-united-kingdom",
+      "name": "Malta under United Kingdom",
+      "names": [
+        "Malta under United Kingdom"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": 1964,
         "start": 1886
       }
     },
@@ -20426,37 +20471,6 @@
         "precision": "city"
       },
       "confidence": "consensus",
-      "dependencyKind": "colony",
-      "dependencyOf": "united-kingdom",
-      "geometry": {
-        "files": [
-          "geo/presences/1914-1932.json",
-          "geo/presences/1933-1945.json",
-          "geo/presences/1946-1974.json"
-        ],
-        "key": "146"
-      },
-      "id": "cyprus-1914",
-      "presenceType": "state",
-      "status": "active",
-      "supersededBy": null,
-      "when": {
-        "date": "1914-11-05",
-        "end": 1960,
-        "endDate": "1960-08-15",
-        "start": 1914
-      }
-    },
-    {
-      "actor": "cyprus",
-      "aliases": [],
-      "capital": {
-        "label": "Nicosia",
-        "lat": 35.16667,
-        "lon": 33.366661,
-        "precision": "city"
-      },
-      "confidence": "consensus",
       "dependencyKind": null,
       "dependencyOf": null,
       "geometry": {
@@ -20474,6 +20488,37 @@
         "date": "1960-08-16",
         "end": null,
         "start": 1960
+      }
+    },
+    {
+      "actor": "cyprus-under-united-kingdom",
+      "aliases": [],
+      "capital": {
+        "label": "Nicosia",
+        "lat": 35.16667,
+        "lon": 33.366661,
+        "precision": "city"
+      },
+      "confidence": "consensus",
+      "dependencyKind": "colony",
+      "dependencyOf": "united-kingdom",
+      "geometry": {
+        "files": [
+          "geo/presences/1914-1932.json",
+          "geo/presences/1933-1945.json",
+          "geo/presences/1946-1974.json"
+        ],
+        "key": "146"
+      },
+      "id": "cyprus-under-united-kingdom-1914",
+      "presenceType": "state",
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "date": "1914-11-05",
+        "end": 1960,
+        "endDate": "1960-08-15",
+        "start": 1914
       }
     },
     {
@@ -24061,66 +24106,6 @@
         "precision": "city"
       },
       "confidence": "consensus",
-      "dependencyKind": "colony",
-      "dependencyOf": "denmark",
-      "geometry": {
-        "files": [
-          "geo/presences/1886-1913.json",
-          "geo/presences/1914-1932.json"
-        ],
-        "key": "211"
-      },
-      "id": "iceland-1886",
-      "presenceType": "state",
-      "status": "active",
-      "supersededBy": null,
-      "when": {
-        "date": "1886-01-01",
-        "end": 1918,
-        "endDate": "1918-11-30",
-        "start": 1886
-      }
-    },
-    {
-      "actor": "iceland",
-      "aliases": [],
-      "capital": {
-        "label": "Reykjavik",
-        "lat": 64.15,
-        "lon": -21.950001,
-        "precision": "city"
-      },
-      "confidence": "consensus",
-      "dependencyKind": "colony",
-      "dependencyOf": "denmark",
-      "geometry": {
-        "files": [
-          "geo/presences/1914-1932.json",
-          "geo/presences/1933-1945.json"
-        ],
-        "key": "212"
-      },
-      "id": "iceland-1918",
-      "presenceType": "state",
-      "status": "active",
-      "supersededBy": null,
-      "when": {
-        "date": "1918-12-01",
-        "end": 1942,
-        "endDate": "1942-04-21",
-        "start": 1918
-      }
-    },
-    {
-      "actor": "iceland",
-      "aliases": [],
-      "capital": {
-        "label": "Reykjavik",
-        "lat": 64.15,
-        "lon": -21.950001,
-        "precision": "city"
-      },
-      "confidence": "consensus",
       "dependencyKind": "occupied",
       "dependencyOf": "united-states-of-america",
       "geometry": {
@@ -24168,6 +24153,66 @@
         "date": "1944-06-17",
         "end": null,
         "start": 1944
+      }
+    },
+    {
+      "actor": "iceland-under-denmark",
+      "aliases": [],
+      "capital": {
+        "label": "Reykjavik",
+        "lat": 64.15,
+        "lon": -21.950001,
+        "precision": "city"
+      },
+      "confidence": "consensus",
+      "dependencyKind": "colony",
+      "dependencyOf": "denmark",
+      "geometry": {
+        "files": [
+          "geo/presences/1886-1913.json",
+          "geo/presences/1914-1932.json"
+        ],
+        "key": "211"
+      },
+      "id": "iceland-under-denmark-1886",
+      "presenceType": "state",
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "date": "1886-01-01",
+        "end": 1918,
+        "endDate": "1918-11-30",
+        "start": 1886
+      }
+    },
+    {
+      "actor": "iceland-under-denmark",
+      "aliases": [],
+      "capital": {
+        "label": "Reykjavik",
+        "lat": 64.15,
+        "lon": -21.950001,
+        "precision": "city"
+      },
+      "confidence": "consensus",
+      "dependencyKind": "colony",
+      "dependencyOf": "denmark",
+      "geometry": {
+        "files": [
+          "geo/presences/1914-1932.json",
+          "geo/presences/1933-1945.json"
+        ],
+        "key": "212"
+      },
+      "id": "iceland-under-denmark-1918",
+      "presenceType": "state",
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "date": "1918-12-01",
+        "end": 1942,
+        "endDate": "1942-04-21",
+        "start": 1918
       }
     },
     {
@@ -27486,38 +27531,6 @@
         "precision": "city"
       },
       "confidence": "consensus",
-      "dependencyKind": "colony",
-      "dependencyOf": "united-kingdom",
-      "geometry": {
-        "files": [
-          "geo/presences/1886-1913.json",
-          "geo/presences/1914-1932.json",
-          "geo/presences/1933-1945.json",
-          "geo/presences/1946-1974.json"
-        ],
-        "key": "119"
-      },
-      "id": "malta-1886",
-      "presenceType": "state",
-      "status": "active",
-      "supersededBy": null,
-      "when": {
-        "date": "1886-01-01",
-        "end": 1964,
-        "endDate": "1964-09-20",
-        "start": 1886
-      }
-    },
-    {
-      "actor": "malta",
-      "aliases": [],
-      "capital": {
-        "label": "Valletta",
-        "lat": 35.89972,
-        "lon": 14.51472,
-        "precision": "city"
-      },
-      "confidence": "consensus",
       "dependencyKind": null,
       "dependencyOf": null,
       "geometry": {
@@ -27535,6 +27548,38 @@
         "date": "1964-09-21",
         "end": null,
         "start": 1964
+      }
+    },
+    {
+      "actor": "malta-under-united-kingdom",
+      "aliases": [],
+      "capital": {
+        "label": "Valletta",
+        "lat": 35.89972,
+        "lon": 14.51472,
+        "precision": "city"
+      },
+      "confidence": "consensus",
+      "dependencyKind": "colony",
+      "dependencyOf": "united-kingdom",
+      "geometry": {
+        "files": [
+          "geo/presences/1886-1913.json",
+          "geo/presences/1914-1932.json",
+          "geo/presences/1933-1945.json",
+          "geo/presences/1946-1974.json"
+        ],
+        "key": "119"
+      },
+      "id": "malta-under-united-kingdom-1886",
+      "presenceType": "state",
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "date": "1886-01-01",
+        "end": 1964,
+        "endDate": "1964-09-20",
+        "start": 1886
       }
     },
     {

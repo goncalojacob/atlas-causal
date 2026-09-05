@@ -7,7 +7,7 @@ import again.
 CShapes gives some entities under one Gleditsch–Ward code for their whole
 life, dependency and independent state alike. This atlas can hold such a code
 as one actor or as two, and the mapping file decides which: a `splits` entry
-cuts the code's outlines by date into different actors. The 81 codes below
+cuts the code's outlines by date into different actors. The 78 codes below
 are the ones that file does **not** yet cut and that the source shows in both
 conditions — the list to work down, in batches, by editing it. Nothing here is
 a recommendation: which of them are two things and which are one is a
@@ -22,11 +22,8 @@ boundary CShapes itself draws or the import refuses it.
 | 41 | `haiti` | Haiti | 3 | 1 (occupied) | 1886-01-01 | 1934-08-14 |
 | 260 | `german-federal-republic` | German Federal Republic | 3 | 1 (occupied) | 1949-09-21 | 1949-09-20 |
 | 265 | `german-democratic-republic` | German Democratic Republic | 2 | 1 (occupied) | 1949-10-05 | 1949-10-04 |
-| 338 | `malta` | Malta | 2 | 1 (colony) | 1964-09-21 | 1964-09-20 |
 | 340 | `serbia` | Serbia | 5 | 1 (occupied) | 1886-01-01 | 1918-11-30 |
 | 341 | `montenegro` | Montenegro | 4 | 1 (occupied) | 1886-01-01 | 1918-11-30 |
-| 352 | `cyprus` | Cyprus | 2 | 1 (colony) | 1960-08-16 | 1960-08-15 |
-| 395 | `iceland` | Iceland | 4 | 3 (colony, occupied) | 1944-06-17 | 1944-06-16 |
 | 402 | `cape-verde` | Cape Verde | 2 | 1 (colony) | 1975-07-05 | 1975-07-04 |
 | 404 | `guinea-bissau` | Guinea-Bissau | 4 | 3 (colony) | 1974-09-10 | 1974-09-09 |
 | 411 | `equatorial-guinea` | Equatorial Guinea | 3 | 2 (colony) | 1968-10-12 | 1968-10-11 |

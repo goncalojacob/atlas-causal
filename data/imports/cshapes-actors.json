@@ -106,6 +106,45 @@
       ],
       "note": "CShapes holds 115 as a colony of Netherlands to 1975-11-24; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
     },
+    "338": {
+      "actor": "malta-under-united-kingdom",
+      "names": [
+        "Malta under United Kingdom"
+      ],
+      "splits": [
+        {
+          "from": "1964-09-21",
+          "actor": "malta"
+        }
+      ],
+      "note": "CShapes holds 338 as a colony of United Kingdom to 1964-09-20; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
+    },
+    "352": {
+      "actor": "cyprus-under-united-kingdom",
+      "names": [
+        "Cyprus under United Kingdom"
+      ],
+      "splits": [
+        {
+          "from": "1960-08-16",
+          "actor": "cyprus"
+        }
+      ],
+      "note": "CShapes holds 352 as a colony of United Kingdom to 1960-08-15; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
+    },
+    "395": {
+      "actor": "iceland-under-denmark",
+      "names": [
+        "Iceland under Denmark"
+      ],
+      "splits": [
+        {
+          "from": "1942-04-22",
+          "actor": "iceland"
+        }
+      ],
+      "note": "CShapes holds 395 as a colony of Denmark to 1942-04-21; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had. Earlier than its first independent date, 1944-06-17: the occupation between the two (occupied 1942-04-22..1944-06-16) is the state's own record, not the colony's."
+    },
     "750": {
       "actor": "british-india",
       "names": [

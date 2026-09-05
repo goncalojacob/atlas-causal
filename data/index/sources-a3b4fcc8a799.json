@@ -1421,7 +1421,7 @@
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
         }
       ],
-      "citationCount": 972,
+      "citationCount": 975,
       "citations": [
         {
           "dissent": false,
@@ -1773,6 +1773,12 @@
         },
         {
           "dissent": false,
+          "id": "cyprus-under-united-kingdom",
+          "kind": "actor",
+          "locator": "gwcode 352"
+        },
+        {
+          "dissent": false,
           "id": "czech-republic",
           "kind": "actor",
           "locator": "gwcode 316"
@@ -2061,6 +2067,12 @@
         },
         {
           "dissent": false,
+          "id": "iceland-under-denmark",
+          "kind": "actor",
+          "locator": "gwcode 395"
+        },
+        {
+          "dissent": false,
           "id": "inini",
           "kind": "actor",
           "locator": "gwcode 1201"
@@ -2290,6 +2302,12 @@
         {
           "dissent": false,
           "id": "malta",
+          "kind": "actor",
+          "locator": "gwcode 338"
+        },
+        {
+          "dissent": false,
+          "id": "malta-under-united-kingdom",
           "kind": "actor",
           "locator": "gwcode 338"
         },
@@ -3927,15 +3945,15 @@
         },
         {
           "dissent": false,
-          "id": "cyprus-1914",
-          "kind": "presence",
-          "locator": "fid 146"
-        },
-        {
-          "dissent": false,
           "id": "cyprus-1960",
           "kind": "presence",
           "locator": "fid 147"
+        },
+        {
+          "dissent": false,
+          "id": "cyprus-under-united-kingdom-1914",
+          "kind": "presence",
+          "locator": "fid 146"
         },
         {
           "dissent": false,
@@ -4659,18 +4677,6 @@
         },
         {
           "dissent": false,
-          "id": "iceland-1886",
-          "kind": "presence",
-          "locator": "fid 211"
-        },
-        {
-          "dissent": false,
-          "id": "iceland-1918",
-          "kind": "presence",
-          "locator": "fid 212"
-        },
-        {
-          "dissent": false,
           "id": "iceland-1942",
           "kind": "presence",
           "locator": "fid 214"
@@ -4680,6 +4686,18 @@
           "id": "iceland-1944",
           "kind": "presence",
           "locator": "fid 213"
+        },
+        {
+          "dissent": false,
+          "id": "iceland-under-denmark-1886",
+          "kind": "presence",
+          "locator": "fid 211"
+        },
+        {
+          "dissent": false,
+          "id": "iceland-under-denmark-1918",
+          "kind": "presence",
+          "locator": "fid 212"
         },
         {
           "dissent": false,
@@ -5355,15 +5373,15 @@
         },
         {
           "dissent": false,
-          "id": "malta-1886",
-          "kind": "presence",
-          "locator": "fid 119"
-        },
-        {
-          "dissent": false,
           "id": "malta-1964",
           "kind": "presence",
           "locator": "fid 120"
+        },
+        {
+          "dissent": false,
+          "id": "malta-under-united-kingdom-1886",
+          "kind": "presence",
+          "locator": "fid 119"
         },
         {
           "dissent": false,
