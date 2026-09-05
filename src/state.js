@@ -271,18 +271,72 @@ export function createState(initial, { window: win = null, restore = (s) => s } 
   // loaded — starts the trail again rather than guessing.
   let trail = [opening(state)];
   let at = 0;
-  const write = (push) => {
-    if (!win) return;
-    const url = `${win.location.pathname}${formatState(state, win.location.search)}`;
+  const writeNow = (push, snapshot = state) => {
+    const url = `${win.location.pathname}${formatState(snapshot, win.location.search)}`;
     const here = `${win.location.pathname}${win.location.search}`;
     // A push to the URL already showing would be an entry that goes nowhere.
-    if (push && url !== here) win.history.pushState(null, '', url);
-    else win.history.replaceState(null, '', url);
+    // The try is for Safari, which refuses more than a hundred history calls
+    // in thirty seconds and throws: the state stands either way, and a URL
+    // one frame out of date is a smaller failure than a store that stopped
+    // telling its views anything (A3).
+    try {
+      if (push && url !== here) win.history.pushState(null, '', url);
+      else win.history.replaceState(null, '', url);
+    } catch { /* the browser's own rate limit; the next write catches up */ }
+  };
+
+  // A replace-type write — a frame of a band drag, a wheel notch, a pan —
+  // happens at most once per animation frame. A forty-step drag of the `to`
+  // handle used to be forty `replaceState` calls, which is how Safari's limit
+  // is reached in two seconds; the frame is also where the drag's last move
+  // lands, so letting go leaves the address bar on the band the reader
+  // stopped at.
+  //
+  // `notify` is deliberately not deferred with it. The store's contract is
+  // that a `set` has been seen by the time it returns — the panel relies on
+  // it, and every test of a view would otherwise become a timing test
+  // (review finding 23).
+  //
+  // A window with no `requestAnimationFrame` writes immediately: the fallback
+  // is for the fakes the tests build, since a browser always has one.
+  const raf = typeof win?.requestAnimationFrame === 'function' ? win.requestAnimationFrame.bind(win) : null;
+  const unraf = typeof win?.cancelAnimationFrame === 'function' ? win.cancelAnimationFrame.bind(win) : null;
+  let frame = null;
+  let owed = false;
+  const drop = () => {
+    if (frame !== null && unraf) unraf(frame);
+    frame = null;
+    owed = false;
+  };
+  const write = (push, before = null) => {
+    if (!win) return;
+    if (!push) {
+      if (!raf) { writeNow(false); return; }
+      owed = true;
+      // A frame already booked writes whatever stands when it runs, which is
+      // the whole point: the moves in between never reach the address bar.
+      if (frame === null) {
+        frame = raf(() => {
+          frame = null;
+          if (owed) { owed = false; writeNow(false); }
+        });
+      }
+      return;
+    }
+    // A push with a frame still owed: the entry being left behind is the one
+    // that write was for, so it is written first. Otherwise Back would return
+    // to the picture from before the drag rather than the one the reader was
+    // looking at when they opened something.
+    if (owed && before) writeNow(false, before);
+    drop();
+    writeNow(true);
   };
   // A URL written before the window existed, or with garbage in it, is
   // normalised once at load: ?year=1975 becomes ?to=1975 in the address bar,
-  // so what the reader copies is what the atlas is actually showing.
-  if (win && formatState(state, win.location.search) !== win.location.search) write(false);
+  // so what the reader copies is what the atlas is actually showing. At once,
+  // not on a frame: it is not a move of the view and there is nothing for it
+  // to be coalesced with.
+  if (win && formatState(state, win.location.search) !== win.location.search) writeNow(false);
   if (win) {
     win.addEventListener('popstate', () => {
       // On a popstate the URL is the whole truth about what is open: those
@@ -292,6 +346,9 @@ export function createState(initial, { window: win = null, restore = (s) => s } 
       // layers — still falls back to what stands, because a URL that does
       // not name them is not asking for them to change. `restore` is where a
       // narrative's derived selection is put back (narrative-mode.js).
+      // The entry the reader has just left is gone; a write still owed for it
+      // would land on the one they arrived at.
+      drop();
       const url = parseState(win.location.search);
       state = restore({ ...parseState(win.location.search, state), ...opening(url), chain: url.chain });
       const now = opening(state);
@@ -319,8 +376,9 @@ export function createState(initial, { window: win = null, restore = (s) => s } 
       // selection but leaves `?horizon=2000` in the link. A patch that names
       // `horizon` itself is the reader asking again and wins.
       const leftBehind = 'selected' in patch && patch.selected !== state.selected && !('horizon' in patch);
+      const before = state;
       state = { ...state, ...patch, ...(leftBehind ? { horizon: null } : {}) };
-      write(push);
+      write(push, before);
       if (push) {
         // Anything ahead of here was a future the reader has just replaced,
         // which is what the browser's own stack does with it too.

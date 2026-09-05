@@ -303,14 +303,33 @@ test('the push/replace rule, as a decision on the patch', () => {
 });
 
 // A window with just enough of one to hold a store: the two history calls
-// counted, and a location that follows what they wrote.
+// counted, a location that follows what they wrote, and an animation frame
+// that runs when the test says so. The frame is the unit the store coalesces
+// replace-type writes into, so a fake without one would be a fake of the one
+// thing being tested; `frame()` is the browser deciding to paint.
 function fakeWindow(search = '') {
   const win = {
     location: { pathname: '/', search },
     listeners: {},
     pushed: [],
     replaced: [],
+    frames: new Map(),
+    nextFrame: 1,
     addEventListener(type, fn) { win.listeners[type] = fn; },
+    requestAnimationFrame(fn) {
+      const id = win.nextFrame;
+      win.nextFrame += 1;
+      win.frames.set(id, fn);
+      return id;
+    },
+    cancelAnimationFrame(id) { win.frames.delete(id); },
+    // Everything booked, in the order it was booked, once.
+    frame() {
+      const due = [...win.frames.values()];
+      win.frames.clear();
+      for (const fn of due) fn();
+      return due.length;
+    },
     history: {
       pushState(_s, _t, url) { win.pushed.push(url); win.location.search = url.slice(1); },
       replaceState(_s, _t, url) { win.replaced.push(url); win.location.search = url.slice(1); },
@@ -369,7 +388,60 @@ test('opening a record pushes; moving the view replaces', () => {
     '/?selected=carnation-revolution-1974',
     '/?to=1975&selected=carnation-revolution-1974&actor=salazar&bbox=-10,36,-6,42',
   ]);
+  // The two moves of the view are one write, and it is the entry the push
+  // leaves behind: the band and the box the reader had when they opened the
+  // actor, which is what Back has to come back to.
+  assert.deepEqual(win.replaced, ['/?to=1975&selected=carnation-revolution-1974&bbox=-10,36,-6,42']);
+});
+
+// One 40-step drag of the band used to be 40 `replaceState` calls and 40 full
+// panel rebuilds; Safari refuses more than a hundred in thirty seconds and
+// throws, and `write` runs before `notify`, so on Safari a two-second drag
+// left the store updated and the views not told (A3).
+test('replace-type writes are one per frame, and the frame writes what stands', () => {
+  const win = fakeWindow();
+  const store = createState({}, { window: win });
+  for (let year = 1900; year < 1940; year += 1) store.set({ to: year });
+  assert.deepEqual(win.replaced, [], 'nothing is written while the band is moving');
+  assert.equal(store.get().to, 1939, 'and the store is up to date all along');
+
+  assert.equal(win.frame(), 1, 'one frame was booked, not forty');
+  assert.deepEqual(win.replaced, ['/?to=1939'], 'and it wrote the band the reader stopped at');
+
+  // The next move books the next frame: coalescing is per frame, not once.
+  store.set({ to: 1950 });
+  win.frame();
+  assert.deepEqual(win.replaced, ['/?to=1939', '/?to=1950']);
+  assert.equal(win.frame(), 0, 'a frame with nothing owed writes nothing');
   assert.equal(win.replaced.length, 2);
+});
+
+// The contract the coalescing is not allowed to change: a set has been seen
+// by the time it returns (review finding 23).
+test('the store still notifies synchronously while a write is owed', () => {
+  const win = fakeWindow();
+  const store = createState({}, { window: win });
+  const seen = [];
+  store.subscribe((s) => seen.push(s.to));
+  store.set({ to: 1500 });
+  store.set({ to: 1600 });
+  assert.deepEqual(seen, [1500, 1600]);
+  assert.deepEqual(win.replaced, []);
+});
+
+// A browser that refuses the call is not a browser that loses the state.
+test('a history call the browser refuses is not the end of the session', () => {
+  const win = fakeWindow();
+  win.history.replaceState = () => { throw new Error('SecurityError'); };
+  const store = createState({}, { window: win });
+  const seen = [];
+  store.subscribe((s) => seen.push(s.to));
+  store.set({ to: 1500 });
+  win.frame();
+  store.set({ to: 1600 });
+  win.frame();
+  assert.deepEqual(seen, [1500, 1600], 'the views were told both times');
+  assert.equal(store.get().to, 1600);
 });
 
 test('the store names what Back returns to and what Forward goes on to', () => {
