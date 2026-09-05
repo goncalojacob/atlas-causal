@@ -229,9 +229,9 @@ export function createTimeline(container, { atlas, state, createScale = createLi
     if (e.target.closest('[data-window]')) return;
     // A click on the empty ground puts down what the reader was holding. It
     // used to mean "map at that year"; the ground is a drag surface now
-    // (deviation 46), and a gesture that both moved time and dropped the
-    // walked chain would be two answers to one click. The year is still one
-    // double-click away, and "Map at 1911" is still on the card.
+    // (STATUS.md, deviation 170), and a gesture that both moved time and
+    // dropped the walked chain would be two answers to one click. The year is
+    // still one double-click away, and "Map at 1911" is still on the card.
     const s = state.get();
     if (s.selected || s.chain.length) state.set({ selected: null, chain: [] });
   });

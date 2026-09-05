@@ -6,8 +6,40 @@ session ends. `ARCHITECTURE.md` is the target; this file is the position.
 
 ## Last updated
 
-2026-09-04, after M23 (`docs/m23-brief.md`): **a record can now have a full
-entry, and there is a page to read it on.**
+2026-09-05, after M24 (`docs/m24-brief.md`): **the timeline follows the map,
+and six interface fixes the owner asked for.**
+
+Pan or zoom the map and the lanes hold only the events placed on screen, with
+a line above them saying how many of how many are in view and a **show the
+world** that stops the filtering without moving the map. The visible area is
+`?bbox=west,south,east,north` in the URL, rounded to two decimals, so a view
+of one coast opens on that coast; `src/util/viewport.js` answers "is this
+event in this box" and `map/projection.js` owns both conversions between the
+pan/zoom transform and the box. The open event and the walked chain are never
+taken away by it. The graph has no viewport of its own, is not narrowed, and
+says so.
+
+The six fixes: the layer switches are hidden in the graph view; the wheel over
+the timeline narrows the window around the year under the cursor and its empty
+ground slides it, with the band now taking the arrow keys its handles took;
+the automatic lanes are **six plus Other**, not twelve; a click that hits no
+mark, cluster, bar, stack, territory or handle clears the selection and the
+chain, on both pictures, and a drag never does; every card offers **Discuss
+this record** (a correction issue carrying the address the reader was looking
+at) and the map and the graph offer **Export this view** (the drawing as a
+standalone SVG with the stylesheet and the computed tokens inlined); and the
+edges between the map, the timeline and the panel can be dragged, remembered
+per reader in `localStorage` and never in the URL, with a double-click or Home
+restoring the default and the phone layout ignoring both.
+
+**No historical text was written and nothing under `data/` changed**: 1,608
+records, 0 errors, 3 warnings, as M23 left it. 510 tests. `ARCHITECTURE.md` is
+at revision 19; deviations 170–173 — the timeline's old click-to-set-the-year
+is retired, the lens keeps removing under a box rather than being exempt from
+it, there is no pinch on touch, and the pin does not move the map.
+
+Before that, 2026-09-04, after M23 (`docs/m23-brief.md`): **a record can now
+have a full entry, and there is a page to read it on.**
 
 An optional `body` on `event`, `actor` and `place`, written in a closed
 Markdown subset that `src/markdown.js` renders — paragraphs, `##`/`###`
@@ -2269,6 +2301,37 @@ object. Every later card gets a file.
     fixture text and describes nothing that happened, like the rest of that
     directory.
 
+170. **The timeline's click-to-set-the-year is gone.** The brief asks for two
+    things that meet on the same pixel: a click on the empty ground of the
+    lanes now clears the selection and the walked chain (fix 4), and that
+    ground is a drag surface for the band (fix 2). A click that both moved
+    time and dropped what the reader was holding would be two answers to one
+    gesture, so the older of the two — "a click in the lanes means map at that
+    year" — was retired. The year is still one double-click away (it snaps to
+    the decade, as before) and "Map at 1911" is still on the event card.
+
+171. **Only the selection and the walked chain are exempt from the box.** The
+    brief says "the walked chain, the selected event and the lens always
+    kept", which can be read as "the lens's events are never filtered by the
+    box" — and under that reading the box would do nothing at all whenever a
+    lens was on. It is read here as the lens *keeps removing*: the lens says
+    which events exist, the box says which of them are on screen, and they
+    compose. What no box removes is the open event and the steps of the chain,
+    which is the part that would otherwise take a picture away from the reader
+    mid-walk.
+
+172. **No pinch on touch.** The brief asks for it "if it is cheap", and it is
+    not: a second pointer means tracking two, and the wheel, the drag and the
+    keyboard already reach every part of the band. A finger still scrolls the
+    timeline (`touch-action: pan-y`) and drags the band sideways.
+
+173. **The pin stops the filtering and does not move the map.** "Returns the
+    timeline to the world" is a statement about the lanes, so `show the world`
+    clears `bbox` and leaves the map where the reader put it; moving the map
+    again narrows the lanes again. Flying the map back to where it started
+    would have been a second, louder action nobody asked for, and the map's
+    own double-click already does it.
+
 ## Dates to verify
 
 Everything below was written from memory and is where the owner's review
@@ -2727,3 +2790,4 @@ M23 started 2026-09-04T23:21:03Z by shepherd
 M23 done
 
 M24 started 2026-09-05T00:20:55Z by shepherd
+M24 done
