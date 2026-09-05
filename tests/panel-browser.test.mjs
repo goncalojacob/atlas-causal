@@ -375,3 +375,29 @@ test('Back comes back to the picture, and the URL says so', { skip }, async () =
     assert.equal(after.from, after.whole, 'the band is the whole span again');
   });
 });
+
+// The correction issue used to carry `location.href` whole: the box, the
+// window, the horizon and every step of the walk went into a public issue
+// about one record (health review A, finding 33). It carries the record's own
+// address now, which is the only part of the URL the record is responsible
+// for. Driven, because the whole point is what `location` says at the time.
+test('the discuss link carries the record\'s address and nothing the reader did', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await open(page, url('?selected=carnation-revolution-1974&bbox=-10,36,-6,43&from=1900&to=1980&horizon=2000'));
+    // Walk a step, so there is a chain to leak.
+    await page.eval('document.querySelector(\'[data-action="follow"]\').click(); return true;');
+    await waitFor(page, 'return new URLSearchParams(location.search).has("chain");', 'a walked chain');
+
+    const link = await page.eval(`return {
+      href: document.querySelector('.panel .discuss a').href,
+      search: location.search,
+    };`);
+    assert.match(link.search, /chain=/, 'the reader really is holding one');
+    const notes = new URL(link.href).searchParams.get('notes');
+    const seen = notes.split('\n').find((line) => line.startsWith('Seen at: '));
+    assert.ok(seen, 'the issue says where the record was seen');
+    const carried = new URL(seen.slice('Seen at: '.length));
+    assert.deepEqual([...carried.searchParams.keys()], ['selected']);
+    assert.equal(carried.pathname, '/');
+  });
+});

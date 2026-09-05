@@ -4,7 +4,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import {
-  discussUrl, tokenNames, svgFile, exportName, sizeOf, collectTokens, exportSvg,
+  discussUrl, recordUrl, tokenNames, svgFile, exportName, sizeOf, collectTokens, exportSvg,
 } from '../src/share.js';
 import { REPOSITORY } from '../src/contribute/submit.js';
 
@@ -24,6 +24,33 @@ test('a record with nowhere to be seen still has an issue to open', () => {
   const notes = new URL(discussUrl('source', 'maxwell-1995')).searchParams.get('notes');
   assert.match(notes, /Record: `source\/maxwell-1995`/);
   assert.doesNotMatch(notes, /Seen at/);
+});
+
+test('a record\'s address is the page and the one parameter that opens it', () => {
+  const base = 'https://example.test/index.html';
+  assert.equal(recordUrl('event', 'carnation-revolution-1974', { base }), `${base}?selected=carnation-revolution-1974`);
+  assert.equal(recordUrl('source', 'maxwell-1995', { base }), `${base}?source=maxwell-1995`);
+  assert.equal(recordUrl('place', 'lisbon', { base }), `${base}?place=lisbon`);
+  assert.equal(recordUrl('actor', 'salazar', { base }), `${base}?actor=salazar`);
+  assert.equal(recordUrl('narrative', 'the-empire-unravels', { base }), `${base}?narrative=the-empire-unravels`);
+  // An edge is walked, not opened, so it has no address of its own; nor has a
+  // record with no id. Either way the page itself is still where it lives.
+  assert.equal(recordUrl('edge', 'a--b--caused', { base }), base);
+  assert.equal(recordUrl('event', null, { base }), base);
+  assert.equal(recordUrl('event', 'x'), '?selected=x');
+  assert.equal(recordUrl('edge', 'x'), null);
+});
+
+// The reader's own URL used to go into the issue whole, box, window, horizon
+// and walked chain included (health review A, finding 33).
+test('the issue carries the record\'s address, not the reader\'s', () => {
+  const notes = new URL(discussUrl('event', 'carnation-revolution-1974', {
+    url: recordUrl('event', 'carnation-revolution-1974', { base: 'https://example.test/index.html' }),
+  })).searchParams.get('notes');
+  assert.match(notes, /Seen at: https:\/\/example\.test\/index\.html\?selected=carnation-revolution-1974$/m);
+  for (const leak of ['bbox', 'chain', 'horizon', 'from=', 'to=']) {
+    assert.doesNotMatch(notes, new RegExp(leak), `${leak} does not travel`);
+  }
 });
 
 // --- the view as a file ---------------------------------------------------

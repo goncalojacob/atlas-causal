@@ -15,8 +15,8 @@ import { REPOSITORY, CORRECTION_TEMPLATE } from './contribute/submit.js';
 //
 // GitHub ignores `body` on a template that has fields, so what would have
 // been the body goes into `notes`, which is the field that asks what is
-// wrong. The URL carried is the one the reader is looking at, so the person
-// answering opens the same picture and not merely the same record.
+// wrong. The URL carried is the record's own address — `recordUrl` below —
+// and not the reader's.
 export function discussUrl(kind, id, {
   repository = REPOSITORY, template = CORRECTION_TEMPLATE, url = null,
 } = {}) {
@@ -26,6 +26,31 @@ export function discussUrl(kind, id, {
   lines.push('', 'What is wrong with it, and which source says otherwise?');
   params.set('notes', lines.join('\n'));
   return `${repository}/issues/new?${params.toString()}`;
+}
+
+// Which state field opens a record of each kind. An edge has no card of its
+// own — it is walked, not opened — so it has no address here.
+export const OPENING_OF = Object.freeze({
+  event: 'selected', source: 'source', place: 'place', actor: 'actor', narrative: 'narrative',
+});
+
+// The record's own address on the atlas: the page, and the one parameter that
+// opens it. Nothing of what the reader had done to get there.
+//
+// The correction issue used to carry `location.href` whole, which put the
+// box, the window, the horizon and every step of the walked chain into a
+// public issue about one record (health review A, finding 33). None of it
+// helps whoever answers, all of it grows without bound — fifteen steps is
+// about 1.5 KB of query, and GitHub's own limit is not far above — and the
+// moment anything about the reader ever reaches the URL it would be a leak.
+//
+// `base` is the page, without its query: `location.origin + location.pathname`
+// from the browser, and anything at all from a test. A kind with no opening
+// is the bare page, which is still where the record lives.
+export function recordUrl(kind, id, { base = '' } = {}) {
+  const key = OPENING_OF[kind];
+  if (!key || !id) return base || null;
+  return `${base}?${new URLSearchParams({ [key]: id })}`;
 }
 
 // --- the view as a file ----------------------------------------------------
