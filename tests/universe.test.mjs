@@ -177,3 +177,53 @@ test('a compiled pattern is the same judgement as a fresh one', async () => {
   assert.deepEqual(validator.validate('v1/region.json', record), errors);
   assert.deepEqual(validator.validate('v1/region.json', { ...record, id: 'a-slug' }), []);
 });
+
+// Rule 5, asked the way a page asks it. a → b → d → t is in the fixture set,
+// so an edge t → a closes a cycle through four events; the page walks
+// forward from the new edge's `to` instead of sweeping the whole graph, and
+// has to reach the same verdict, name the same events, and blame the edge
+// that was added rather than one that was already there.
+test('a new edge that closes a cycle is caught from its own end', async () => {
+  const { fx, topology } = await fixtureAtlas();
+  const universe = buildUniverse(topology);
+  const back = clone(fx.byId['fixture-event-d--fixture-event-t--caused']);
+  back.id = 'fixture-event-t--fixture-event-a--caused';
+  back.from = 'fixture-event-t';
+  back.to = 'fixture-event-a';
+
+  const incremental = checkRules([back], topology, { universe }).errors.filter((e) => e.rule === 5);
+  assert.equal(incremental.length, 1);
+  assert.equal(incremental[0].id, back.id, 'the edge under validation is the one blamed');
+  assert.equal(
+    incremental[0].message,
+    'the edge graph has a cycle through: fixture-event-a, fixture-event-b, fixture-event-d, fixture-event-t',
+  );
+  // The sweep, over the same atlas plus the same edge, refuses it too. It
+  // does not name the same events, and that is the one place the two paths
+  // differ: Kahn's ordering leaves stuck everything it could not reach past
+  // the cycle, so the CLI also names `fixture-event-a2`, which is downstream
+  // of the cycle and not on it. The walk names the cycle itself, which is
+  // what the contributor has to undo.
+  const swept = checkRules([...fx.records, back], topology).errors.filter((e) => e.rule === 5);
+  assert.equal(swept.length, 1);
+  const named = (e) => e.message.replace(/^.*: /, '').split(', ');
+  for (const id of named(incremental[0])) assert.ok(named(swept[0]).includes(id), `${id} is in both accounts`);
+  assert.deepEqual(named(swept[0]).filter((id) => !named(incremental[0]).includes(id)), ['fixture-event-a2']);
+
+  // An edge onto itself is a cycle of one, and the walk never leaves home.
+  const loop = { ...clone(back), id: 'fixture-event-a--fixture-event-a--caused', from: 'fixture-event-a', to: 'fixture-event-a' };
+  const alone = checkRules([loop], topology, { universe }).errors.filter((e) => e.rule === 5);
+  assert.equal(alone.length, 1);
+  assert.match(alone[0].message, /cycle through: fixture-event-a$/);
+
+  // The other direction is not a cycle: a → t is the way the graph already
+  // runs, and adding it again closes nothing.
+  const forward = { ...clone(back), id: 'fixture-event-a--fixture-event-t--caused', from: 'fixture-event-a', to: 'fixture-event-t' };
+  assert.deepEqual(checkRules([forward], topology, { universe }).errors.filter((e) => e.rule === 5), []);
+
+  // A retracted edge is not in the graph, so it cannot close one either.
+  assert.deepEqual(
+    checkRules([{ ...back, status: 'retracted' }], topology, { universe }).errors.filter((e) => e.rule === 5),
+    [],
+  );
+});

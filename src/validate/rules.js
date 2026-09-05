@@ -597,7 +597,56 @@ export function checkRules(records, topology = {}, { universe: prebuilt = null }
   }
 
   // --- rule 5: the active graph is a DAG ----------------------------------
-  {
+  //
+  // Two ways to ask it, and which one is right depends on who is asking.
+  //
+  // The CLI validates the whole atlas: every edge is under validation, there
+  // is nothing established to lean on, and the sweep below is the answer.
+  //
+  // A page validating one record against an atlas it has already loaded is a
+  // different question. That atlas passed rule 5 on the commit that wrote it
+  // — the validator gates every one — so it is a DAG, and a bundle can only
+  // close a cycle through an edge the bundle itself adds. Retracting an edge
+  // removes one and can close nothing. So each new active edge is asked one
+  // question, from its own end: is `from` already reachable from `to`? At
+  // twenty thousand events the sweep walked every active edge on every
+  // keystroke (health review B, finding 27); this walks what the new edge
+  // can actually reach, which in a graph of arguments is a handful of nodes.
+  //
+  // What it gives up is telling a page about a cycle that was already in the
+  // atlas before the contributor typed anything. That is not the page's
+  // question, and the commit that would have introduced one never passed.
+  if (base !== NO_UNIVERSE) {
+    const reaches = (start, goal) => {
+      const seen = new Set([start]);
+      const stack = [start];
+      const path = new Map([[start, null]]);
+      while (stack.length) {
+        const node = stack.pop();
+        for (const e of edgesTouching(node)) {
+          if (e.from !== node) continue;
+          const next = e.to;
+          if (seen.has(next)) continue;
+          seen.add(next);
+          path.set(next, node);
+          if (next === goal) {
+            const walked = [];
+            for (let at = goal; at !== null && at !== undefined; at = path.get(at)) walked.push(at);
+            return walked;
+          }
+          stack.push(next);
+        }
+      }
+      return null;
+    };
+    for (const e of ours.activeEdges ?? EMPTY) {
+      if (!lookup(e.from, 'event') || !lookup(e.to, 'event')) continue;
+      const through = e.from === e.to ? [e.from] : reaches(e.to, e.from);
+      if (through) {
+        error(5, e, '', `the edge graph has a cycle through: ${[...new Set(through)].sort().join(', ')}`);
+      }
+    }
+  } else {
     const nodes = new Set();
     const out = new Map();
     const indegree = new Map();
