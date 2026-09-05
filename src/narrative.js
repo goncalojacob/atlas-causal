@@ -13,13 +13,23 @@ import { bounds, toAstronomical } from './util/dates.js';
 // What a step points at, resolved against the atlas rather than by pattern:
 // the ids are the only authority on which is which, and a ref that resolves
 // to nothing is drawn as a gap rather than crashing the walk.
+//
+// Through resolve() when the id is not one the atlas answers to directly, for
+// the same reason readingNarrative does: a step written against a record's
+// former id is still about that record, and a rename is allowed. A walk that
+// broke the day somebody renamed one of the events in it would make renaming
+// unusable (health review A, finding 20).
 export function resolveRef(atlas, ref) {
-  if (typeof ref !== 'string') return { ref, kind: null, event: null, edge: null };
+  const gap = { ref, kind: null, event: null, edge: null };
+  if (typeof ref !== 'string') return gap;
   const edge = atlas.edges.get(ref);
   if (edge) return { ref, kind: 'edge', edge, event: atlas.events.get(edge.to) ?? null };
   const event = atlas.events.get(ref);
   if (event) return { ref, kind: 'event', edge: null, event };
-  return { ref, kind: null, event: null, edge: null };
+  const stood = atlas.resolve?.(ref) ?? null;
+  if (stood?.kind === 'edge') return { ref, kind: 'edge', edge: stood.record, event: atlas.events.get(stood.record.to) ?? null };
+  if (stood?.kind === 'event') return { ref, kind: 'event', edge: null, event: stood.record };
+  return gap;
 }
 
 export function narrativeSteps(atlas, narrative) {

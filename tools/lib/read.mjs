@@ -5,6 +5,7 @@
 import { readdir, readFile } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import path from 'node:path';
+import { migrateRecord } from '../../src/validate/migrate.js';
 
 export const KIND_DIRS = Object.freeze({ event: 'events', edge: 'edges', source: 'sources', actor: 'actors', presence: 'presences', place: 'places', relation: 'relations', narrative: 'narratives' });
 export const PRESENCE_GEO_DIR = 'geo/presences';
@@ -38,7 +39,13 @@ export async function readSchemaFiles(schemaDir) {
 // so the CLI can check id = file name. Files that are not valid JSON are
 // reported as problems rather than thrown, so one bad file does not hide the
 // rest.
-export async function readRecords(dataDir) {
+//
+// The migration chain is applied here, on the way in, so that the validator,
+// the index builder, the local server and the imports all see one shape and
+// none of them has to know which version of it is on disk (health review A,
+// finding 25). `migrate: false` is for the one caller that must see the bytes
+// as they are: tools/migrate/apply.mjs, which is what puts them there.
+export async function readRecords(dataDir, { migrate = true } = {}) {
   const entries = [];
   const problems = [];
   for (const [kind, sub] of Object.entries(KIND_DIRS)) {
@@ -48,8 +55,8 @@ export async function readRecords(dataDir) {
       if (!name.endsWith('.json')) continue;
       const file = path.join(dir, name);
       try {
-        const record = await readJson(file);
-        entries.push({ kind, file: `${sub}/${name}`, record });
+        const raw = await readJson(file);
+        entries.push({ kind, file: `${sub}/${name}`, record: migrate ? migrateRecord(raw) : raw });
       } catch (e) {
         problems.push({ file: `${sub}/${name}`, message: `not valid JSON: ${e.message}` });
       }

@@ -62,6 +62,7 @@ node tools/build-regions.mjs       # regenerate data/geo/ from Natural Earth; ra
 node tools/import/cshapes.mjs --source cshapes_2_gw.topojson [--report]  # territories, 1886-2019; rarely
 node tools/import/wikidata.mjs --reconcile|--import|--candidates   # NOT here: no network in this sandbox — it runs in the Action, on an import/** branch
 node tools/new-record.mjs event|edge|source|actor|place|relation|narrative …   # scaffold a record; the text is yours to write
+node tools/migrate/apply.mjs       # the migration chain of src/validate/migrate.js applied to data/; in the same commit as any migration that changes bytes
 node tools/seed-review-flags.mjs   # STATUS.md's "Dates to verify" onto the records as review flags; once
 node --test                        # every test under tests/ (Node 22 takes no directory argument)
 python3 -m http.server 8000        # then http://localhost:8000/ — add ?fixtures=1 for the synthetic graph
@@ -129,7 +130,8 @@ src/contribute/main.js     bootstrap for contribute.html
 src/review/queue.js        pure: what is still unreviewed, with the validator's warnings against each;  sign.js  the signature, the retraction and what it carries;  save.js  which of the two paths a save takes;  citations.js  which citations somebody has checked against the source
 src/review/editor.js       one record in the contribution form's own fields, validated on every keystroke;  main.js  bootstrap for review.html
 src/validate/schema.js     JSON Schema subset validator; fails closed on unknown keywords
-src/validate/rules.js      cross-record invariants 2–19 and the warnings; pure
+src/validate/rules.js      cross-record invariants 2–19 and the warnings; pure. `resolveId(id, universe)` is where a former id becomes the record it names, the way `resolve()` in data.js does
+src/validate/migrate.js    the migration chain: ordered { version, name, up, down }, pure, no fs; applied on read by tools/lib/read.mjs and to disk by tools/migrate/apply.mjs
 src/validate/core.js       validate(records, topology, schemas); buildTopology
 src/validate/schemas.js    the schema file list, for the browser: it cannot scan a directory
 src/fonts/                 EB Garamond and Public Sans, self-hosted, SIL OFL; README.md says which file came from where

@@ -110,6 +110,55 @@ export function refKind(ref) {
 // "this, and then that".
 export const MIN_NARRATIVE_STEPS = 2;
 
+// Former id → the id that stands for it now, over a universe of
+// Map<id, { kind, entry }>. Built once and passed to resolveId, because
+// resolving is asked once per reference and rebuilding this per call would be
+// quadratic in the atlas. Rule 2 keeps aliases unique across every id and
+// every other alias, so the first owner wins and there is never a second.
+export function aliasIndex(universe) {
+  const index = new Map();
+  for (const [id, u] of universe) {
+    for (const alias of u?.entry?.aliases ?? []) if (!index.has(alias)) index.set(alias, id);
+  }
+  return index;
+}
+
+// A merged record may stand for another that stands for a third; twenty hops
+// is far past anything real and stops a cycle the rules have not caught yet.
+const MAX_RESOLVE_HOPS = 20;
+
+// The one answer to "which record does this id name now", written once so that
+// a plain reference, a narrative step and a `review.citations` key cannot
+// disagree about it (health review A, finding 20: renaming a record broke
+// every narrative that walked it and every verification flag keyed by the old
+// id, and the validator reported it as a dangling reference instead of
+// resolving it). It is `resolve()` in src/data.js, over the validator's
+// universe rather than the loaded atlas: the alias hop first, then merges.
+//
+// `merges: false` stops at the alias. The rules that ask what a reference
+// *names* — the arrow of time, the DAG, the retraction cascade — mean the
+// record written there and not the one it was later merged into; following
+// the merge would move the arrow of time onto another event's dates without
+// anyone saying so.
+export function resolveId(id, universe, { aliases = aliasIndex(universe), merges = true } = {}) {
+  if (typeof id !== 'string') return null;
+  const via = [];
+  let current = aliases.get(id) ?? id;
+  if (current !== id) via.push({ id, reason: 'alias' });
+  for (let hops = 0; hops < MAX_RESOLVE_HOPS; hops += 1) {
+    const found = universe.get(current);
+    if (!found) return null;
+    const entry = found.entry ?? {};
+    if (merges && entry.status === 'merged' && typeof entry.supersededBy === 'string' && entry.supersededBy !== current) {
+      via.push({ id: current, reason: 'merged' });
+      current = entry.supersededBy;
+      continue;
+    }
+    return { id: current, kind: found.kind, entry: found.entry, own: found.own === true, via };
+  }
+  return null;
+}
+
 // The exception that keeps the NC-SA licence out of data/actors/ generally:
 // an actor record may carry it only when one of these wrote it. The list is
 // the set of imports allowed to create actors; adding an import adds a line
@@ -196,10 +245,17 @@ export function checkRules(records, topology = {}) {
   const own = records.filter((r) => universe.get(r.id)?.entry === r);
   const regionIds = new Set((topology.regions ?? []).map((r) => r.id));
 
+  // Every reference in the atlas resolves through the same helper, so a
+  // record renamed yesterday is still found by the id written against it
+  // last year. Merges are not followed here: see resolveId.
+  const aliases = aliasIndex(universe);
   const lookup = (id, kind) => {
-    const u = universe.get(id);
+    const u = resolveId(id, universe, { aliases, merges: false });
     return u && u.kind === kind ? u.entry : null;
   };
+  // What a reader's `resolve()` would open — the alias hop and then the
+  // merges — as a bare id, for comparing two references to the same thing.
+  const standsFor = (id) => resolveId(id, universe, { aliases })?.id ?? id;
   const activeEdges = [...universe.values()].filter((u) => u.kind === 'edge' && u.entry.status === 'active').map((u) => u.entry);
 
   // --- rule 2: ids and aliases --------------------------------------------
@@ -252,9 +308,13 @@ export function checkRules(records, topology = {}) {
     // this record — usually a citation that was edited away and left its
     // flag behind, which would then count as checked for ever.
     if (isObject(r.review?.citations)) {
-      const cited = new Set(citedSources(r));
+      // Both sides through the same resolution: a flag keyed by a source's
+      // former id is about the source the record cites today, and the day
+      // somebody renames a book is not the day a hundred checked citations
+      // become errors.
+      const cited = new Set(citedSources(r).map(standsFor));
       for (const key of Object.keys(r.review.citations)) {
-        if (!cited.has(key)) error(3, r, `/review/citations/${key}`, `"${key}" is not a source this record cites`);
+        if (!cited.has(standsFor(key))) error(3, r, `/review/citations/${key}`, `"${key}" is not a source this record cites`);
       }
     }
     if (r.supersededBy !== null && r.supersededBy !== undefined) {
@@ -322,8 +382,9 @@ export function checkRules(records, topology = {}) {
   const whenOf = (id) => {
     const e = lookup(id, 'event');
     if (!e || !isObject(e.when)) return null;
-    const u = universe.get(id);
-    if (u.own && !saneWhen.has(id)) return null;
+    // Through the alias, like the lookup above: a reference by a former id
+    // asks about the record that owns the alias, and its own years.
+    if (universe.get(e.id)?.own && !saneWhen.has(e.id)) return null;
     try {
       return {
         start: astronomicalBounds(e.when.start),

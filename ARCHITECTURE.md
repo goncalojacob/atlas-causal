@@ -860,7 +860,8 @@ atlas-causal/
 │   │   └── editor.js  main.js    ● one record in the form's own fields; the page around it
 │   ├── validate/
 │   │   ├── schema.js             ● JSON Schema subset, fails closed on unknown keywords
-│   │   ├── rules.js              ● cross-record rules (arrow of time, DAG, references, consensus, dispute…)
+│   │   ├── rules.js              ● cross-record rules (arrow of time, DAG, references, consensus, dispute…); resolveId() is where a former id becomes the record it names
+│   │   ├── migrate.js            ● the migration chain: ordered { version, name, up, down }, pure, no fs, applied on read and by the writer
 │   │   └── core.js               ● validate(records, topology) — pure; runs in browser and Node
 │   ├── util/esc.js  dates.js     ● escaping; toAstronomical(), interval formatting, BCE/CE
 │   ├── util/window.js            ● pure: a null bound is the data's own; what overlaps the window; "map at Y"
@@ -876,6 +877,7 @@ atlas-causal/
 │   ├── lib/colour.mjs            ● tool-side only: sRGB ⇄ OKLab, perceptual distance, WCAG contrast; nothing in src/ computes a colour
 │   ├── bundle-to-files.mjs       ● fenced JSON in an issue body → data/<kind>/<id>.json; slug-checked before any path
 │   ├── new-record.mjs            ● scaffold a record locally, of any of the six written kinds; --new-place writes the event and its place at once
+│   ├── migrate/apply.mjs         ● the chain of src/validate/migrate.js applied to the tree; idempotent, validated before writing, --to <version>
 │   ├── migrate-places.mjs        ● one-time: every event's `where` → a place record it points at; kept as documentation
 │   ├── seed-review-flags.mjs     ● one-time: STATUS.md's "Dates to verify" onto the records as review flags; kept as documentation
 │   ├── serve.mjs                 ● local only, never deployed: the repository + PUT /__records/<kind>/<id> on 127.0.0.1
@@ -931,8 +933,13 @@ later as `i18n` overlays; the base never changes.
 
 - `id`: `^[a-z0-9]+(-[a-z0-9]+)*$`, immutable once merged, equals the file
   name. Former ids go in `aliases`, which must be unique across all ids and
-  all other aliases; the index resolves them. `aliases` holds former ids
-  only; alternative names for search are a separate field, later.
+  all other aliases. Everything resolves them, through one helper — `resolve()`
+  in `src/data.js` for the site and `resolveId(id, universe)` in
+  `src/validate/rules.js` for the validator, which answers the same question
+  the same way: a reference, a narrative step and a `review.citations` key
+  written against a record's former id all name the record that stands for it
+  now. `aliases` holds former ids only; alternative names for search are a
+  separate field, later.
 - `status`: `active | merged | retracted`. A `merged` or `retracted` record
   must have no active edges and, if merged, a `supersededBy` that resolves.
   Nothing is ever deleted; a wrong record becomes a tombstone that still
@@ -965,6 +972,56 @@ later as `i18n` overlays; the base never changes.
   source.
 - `sources`: **every node and every edge cites at least one**; only `source`,
   `region` and `place` records are exempt, being facts rather than arguments.
+- `schema`: which shape the record is written against. The validator accepts
+  anything **up to** `SCHEMA_VERSION` and not only exactly it, because an
+  older record is one the migration chain can read; a newer one is a record
+  from a version of this atlas that does not exist here, and it is refused.
+
+### Migrations — how a shape changes
+
+`schema: 1` with nothing that could ever move it carries no information, and
+the day it does move, every record in the repository is rewritten in one
+commit and every fork's records are invalid the morning after (health review
+A of 5 September, finding 25). The convention is therefore written now, while
+there is little riding on it.
+
+`src/validate/migrate.js` is the whole of it: an **ordered array of
+`{ version, name, up(record), down(record) }`**, pure, with no `fs` anywhere
+in it so that the browser loads the same file the tools do. A migration's
+`version` is its place in that chain and **not** the record's `schema` —
+records say which shape they are written against, migrations say how far the
+tree has been brought, and most migrations, all three so far, are additive
+within one schema. `SCHEMA_VERSION` moves only for a change that makes a
+record genuinely unreadable by the validator before it.
+
+Three rules hold it together:
+
+- **Every `up` is idempotent.** Nothing on disk records how far a record has
+  come — a chain marker would be a field the schema does not have and a byte
+  in every file — so the chain is applied whole, every time.
+- **It is applied on read *and* on disk.** `tools/lib/read.mjs` runs it on
+  the way in, so the validator, the index builder, `serve.mjs` and the
+  imports all see one shape; `tools/migrate/apply.mjs` rewrites the tree, in
+  the same commit as any migration that changes bytes. A migration applied
+  only on read wedges `validate --index`, the deploy and the import loop; one
+  applied only on disk leaves every fork unreadable.
+- **`down` is the inverse, or `null`.** The writer refuses to roll back past
+  a step that has no `down` rather than writing a tree it cannot come back
+  from.
+
+`apply.mjs` writes nothing until every record has migrated *and* the whole
+tree has validated: a migration is a change to every record at once, and
+there is no reviewing that one file at a time afterwards. It never touches
+`data/index/` — rebuilding the index there would hide the fact that records
+had changed — so it prints `node tools/build-index.mjs` instead, and
+`validate.yml` runs `validate --index` on any pull request that touches
+`data/` to check that it was run.
+
+The chain today is `1 envelope-defaults` (additive: the envelope keys a
+fork's record may lack, a no-op on every record here), and the reversible
+pair `2 review-citations-explicit` / `3 review-citations-implicit`, which
+exists to prove `up`, `down` and the writer on a scratch copy of the fixtures
+and leaves the tree byte for byte as it was.
 
 ### Time — an interval, always
 
@@ -1520,8 +1577,12 @@ Errors:
 2. `id` matches the slug regex, is unique across all kinds and all aliases,
    and equals the file name. Aliases are unique across ids and aliases.
 3. Every reference resolves — `from`, `to`, `sources[].source`,
-   `dispute.sources[].source`, `supersededBy`, `region`, and every key of
-   `review.citations`, which names a source the record itself cites.
+   `dispute.sources[].source`, `supersededBy`, `region`, a narrative step's
+   `ref`, and every key of `review.citations`, which names a source the record
+   itself cites. **Through `aliases`**: a reference by a record's former id
+   resolves to the record that stands for it now, so that renaming a record
+   does not break every narrative that walks it and every citation check
+   keyed by its old id.
 4. Arrow of time on the lenient bound: `from.start.min ≤ to.start.max`
    (astronomical).
 5. The edge graph is a DAG; same-year ties broken by `date` where present.
@@ -1543,8 +1604,10 @@ Errors:
     different roles (compared lowercased and trimmed). An actor's `names`
     is non-empty, with no repeats.
 15. No year 0; `end` is `null` or ≥ `start`. Actors' intervals too.
-16. On `main` only: `data/index/` is byte-identical to what `build-index.mjs`
-    produces.
+16. On `main`, and on a pull request that changes anything under `data/`:
+    `data/index/` is byte-identical to what `build-index.mjs` produces. Not
+    on a pull request that changes no record, so that two of them can be open
+    without conflicting on the index.
 17. A presence holds together: a `dependencyOf` implies a `dependencyKind`
     (the reverse does not — see the Presence section); a presence is not a
     dependency of its own actor; `geometry.files` is non-empty; and one

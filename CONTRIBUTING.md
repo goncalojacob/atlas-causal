@@ -472,8 +472,32 @@ node tools/import/cshapes.mjs --source cshapes_2_gw.topojson   # territories; ra
 ```
 
 Both commands must pass before a pull request is ready. There are no runtime
-dependencies, no build step, no map library and no CDN, and pull requests never
-touch `data/index/` — `main` owns it.
+dependencies, no build step, no map library and no CDN. `data/index/` is
+generated and `main` owns it — a pull request that touches no record leaves it
+alone entirely, and one that changes a record rebuilds it in the same commits,
+because the gate then checks that the index is the one those records build.
+
+### When the shape of a record changes
+
+`schema: 1` is not frozen for ever, and a change to the shape every record is
+written in is a migration rather than an edit. They live in one file,
+`src/validate/migrate.js`: an ordered chain of `{ version, name, up, down }`,
+pure, applied on read by `tools/lib/read.mjs` so every tool sees one shape,
+and applied to the files themselves by:
+
+```bash
+node tools/migrate/apply.mjs [--to <version>] [--dry-run]
+```
+
+If you add a step to the chain: give it the next version number, make `up`
+idempotent (nothing on disk records how far a record has come, so the whole
+chain is applied every time), write `down` or set it to `null` if there is no
+way back, add a test, and — when it changes bytes — run `apply.mjs` and
+`build-index.mjs` in the **same commit** as the migration itself. A tree and
+the chain that describes it are never one commit apart.
+
+You will not normally need any of this: a new optional field is not a
+migration, it is a schema change plus records that do not carry it yet.
 
 ## For maintainers
 
