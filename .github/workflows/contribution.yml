@@ -62,10 +62,17 @@ jobs:
             node tools/bundle-to-files.mjs 2>&1 | tee "$RUNNER_TEMP/report.log"
           fi
 
+      # The pull request this opens changes data/, and validate.yml checks the
+      # index of any branch that does. The records were written a step ago, so
+      # the index they belong to is built here and committed with them; main
+      # rebuilds it on merge either way.
+      - name: Rebuild the index for the records just written
+        run: node tools/build-index.mjs
+
       - name: Validate the whole dataset
         run: |
           set -o pipefail
-          node tools/validate.mjs 2>&1 | tee -a "$RUNNER_TEMP/report.log"
+          node tools/validate.mjs --index 2>&1 | tee -a "$RUNNER_TEMP/report.log"
 
       - name: Tests
         run: node --test
