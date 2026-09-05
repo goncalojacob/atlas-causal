@@ -6,7 +6,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import {
   clusterPoints, spreadPositions, byWeightThenId, mergeEdges,
-  MERGE_DISTANCE, COINCIDENT_EPSILON, DEEPEST_ZOOM, SPREAD_RADIUS, SPREAD_GAP,
+  MERGE_DISTANCE, COINCIDENT_EPSILON, DEEPEST_ZOOM, SPREAD_RADIUS, SPREAD_GAP, SPLIT_MARGIN,
 } from '../src/cluster.js';
 
 const point = (id, x, y, weight = 0) => ({ id, x, y, weight });
@@ -265,6 +265,178 @@ test('merging links does not depend on the order they arrive in', () => {
   // Two types tied two-all: the type's own name breaks it, so the picture
   // does not depend on which link happened to be read first.
   assert.equal(mergeEdges(links, clusterOf)[0].type, 'caused');
+});
+
+// --- the grid against the pass it replaced ---------------------------------
+//
+// H4a put a uniform grid under `clusterPoints`. The rule did not change and
+// neither did the answer, and this is what says so: the implementation the
+// grid replaced, kept here verbatim, held to the same output over thousands
+// of points at every zoom the map allows.
+//
+// Verbatim matters. The moment this is rewritten to share anything with
+// `src/cluster.js` beyond the constants it is no longer a second opinion, and
+// the four conditions the grid rests on — cells wider than the threshold, one
+// globally sorted seed walk, the members re-sorted before they are reduced,
+// the exact predicate on every candidate — would each be free to rot.
+
+function greedyClusterPoints(points, {
+  k = 1, distance = MERGE_DISTANCE, epsilon = COINCIDENT_EPSILON, alone = null,
+} = {}) {
+  const distanceSquared = (a, b) => ((a.x - b.x) ** 2) + ((a.y - b.y) ** 2);
+  const threshold = distance / Math.max(k, Number.EPSILON);
+  const withinCluster = threshold * threshold;
+  const withinEpsilon = epsilon * epsilon;
+  const solitary = alone ?? new Set();
+  const seeds = [...points].sort(byWeightThenId);
+  const taken = new Set();
+  const clusters = [];
+  for (const seed of seeds) {
+    if (taken.has(seed.id)) continue;
+    taken.add(seed.id);
+    const solo = solitary.has(seed.id);
+    const members = [seed];
+    if (!solo) {
+      for (const other of seeds) {
+        if (taken.has(other.id) || solitary.has(other.id)) continue;
+        if (distanceSquared(seed, other) <= withinCluster) {
+          taken.add(other.id);
+          members.push(other);
+        }
+      }
+    }
+    const coincident = members.every((m) => distanceSquared(seed, m) <= withinEpsilon);
+    const separable = members.filter((m) => distanceSquared(seed, m) > withinEpsilon);
+    const nearestSeparable = separable.length
+      ? Math.sqrt(Math.min(...separable.map((m) => distanceSquared(seed, m))))
+      : null;
+    clusters.push({
+      key: seed.id,
+      representative: seed,
+      members,
+      count: members.length,
+      x: seed.x,
+      y: seed.y,
+      centre: {
+        x: members.reduce((sum, m) => sum + m.x, 0) / members.length,
+        y: members.reduce((sum, m) => sum + m.y, 0) / members.length,
+      },
+      coincident,
+      alone: solo,
+      splittable: members.length > 1 && !coincident,
+      coreZoom: nearestSeparable === null ? null : (distance / nearestSeparable) * SPLIT_MARGIN,
+      weight: members.reduce((sum, m) => sum + (m.weight ?? 0), 0),
+    });
+  }
+  return clusters;
+}
+
+// A seeded world, so a failure can be reproduced. Mulberry32, as in
+// tests/bench/run.mjs: what is wanted here is the same points twice, not
+// statistical quality.
+function seeded(seed) {
+  let a = seed >>> 0;
+  return () => {
+    a = (a + 0x6d2b79f5) >>> 0;
+    let t = Math.imul(a ^ (a >>> 15), 1 | a);
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
+
+// Points on a field the size of the projected world, most of them sharing a
+// place with another: a uniform cloud would never build the stacks the two
+// implementations have to agree about.
+function crowd(count, seed) {
+  const random = seeded(seed);
+  const places = [];
+  for (let i = 0; i < Math.max(1, Math.round(count / 8)); i += 1) {
+    places.push([random() * 960, random() * 540]);
+  }
+  const points = [];
+  for (let i = 0; i < count; i += 1) {
+    const [px, py] = places[Math.floor(random() ** 2 * places.length)];
+    // A little jitter on some of them, so the field has coincident stacks,
+    // separable stacks and lone points all at once.
+    const jitter = random() < 0.4 ? (random() - 0.5) * 30 : 0;
+    points.push({
+      id: `p${String(i).padStart(5, '0')}`, x: px + jitter, y: py + jitter * 0.5, weight: (i * 7) % 11,
+    });
+  }
+  return points;
+}
+
+// Everything the map and the timeline read off a cluster, in the order the
+// members are in: member order is what decides `centre`'s last bits and what
+// the panel lists.
+const fully = (clusters) => clusters.map((c) => ({
+  key: c.key,
+  members: c.members.map((m) => m.id),
+  count: c.count,
+  x: c.x,
+  y: c.y,
+  centre: c.centre,
+  coincident: c.coincident,
+  alone: c.alone,
+  splittable: c.splittable,
+  coreZoom: c.coreZoom,
+  weight: c.weight,
+}));
+
+test('the grid gives the greedy pass its own answer, members and centres included', () => {
+  for (const [count, seed] of [[3000, 415], [5000, 1580]]) {
+    const points = crowd(count, seed);
+    for (const k of [1, 2, 8, 17.5, DEEPEST_ZOOM]) {
+      assert.deepEqual(fully(clusterPoints(points, { k })), fully(greedyClusterPoints(points, { k })),
+        `${count} points at k=${k}`);
+    }
+  }
+});
+
+test('and it agrees with it about points held out, and about a lane', () => {
+  const points = crowd(3000, 1415);
+  // What the reader is working with: a scattering of ids across the field,
+  // some of them in stacks and some of them alone already.
+  const alone = new Set(points.filter((_, i) => i % 37 === 0).map((p) => p.id));
+  for (const k of [1, 4, DEEPEST_ZOOM]) {
+    assert.deepEqual(fully(clusterPoints(points, { k, alone })), fully(greedyClusterPoints(points, { k, alone })),
+      `held out at k=${k}`);
+  }
+  // The timeline's call: one dimension, its own distance, and no epsilon at
+  // all, which is the case where every member is separable.
+  const lane = points.map((p) => ({ ...p, y: 0 }));
+  for (const options of [{ k: 1, distance: 11, epsilon: 0 }, { k: 3, distance: 40, epsilon: 0 }]) {
+    assert.deepEqual(fully(clusterPoints(lane, options)), fully(greedyClusterPoints(lane, options)),
+      `a lane at ${JSON.stringify(options)}`);
+  }
+});
+
+test('the two agree on the edges of the rule as well as the middle', () => {
+  // A point exactly on the threshold, which is the case the `<=` decides and
+  // the one a grid cell's boundary could lose.
+  const onIt = [
+    point('a', 0, 0, 3), point('b', MERGE_DISTANCE, 0, 2), point('c', 0, MERGE_DISTANCE, 1),
+    point('d', MERGE_DISTANCE * Math.SQRT1_2, MERGE_DISTANCE * Math.SQRT1_2, 0),
+  ];
+  // A row of points one threshold apart, so every cell boundary in the grid
+  // has a point sitting on it.
+  const row = [];
+  for (let i = 0; i < 400; i += 1) row.push(point(`r${String(i).padStart(3, '0')}`, i * MERGE_DISTANCE, 0, i % 5));
+  // Negative coordinates: the map's projected space runs either side of zero
+  // and `Math.floor` of a negative quotient is where an index scheme goes
+  // wrong.
+  const across = [];
+  for (let i = -60; i < 60; i += 1) across.push(point(`n${i + 60}`, i * 5.5, -i * 3.25, (i + 60) % 7));
+  for (const [what, list] of [['on the threshold', onIt], ['a row of thresholds', row], ['across zero', across]]) {
+    for (const k of [1, 1.0001, 8, DEEPEST_ZOOM]) {
+      assert.deepEqual(fully(clusterPoints(list, { k })), fully(greedyClusterPoints(list, { k })), `${what} at k=${k}`);
+    }
+  }
+  // And the degenerate calls, where there is no threshold to divide space by.
+  for (const options of [{ k: 1, distance: 0 }, { k: Number.EPSILON }, { k: 1, distance: Infinity }]) {
+    assert.deepEqual(fully(clusterPoints(sample(), options)), fully(greedyClusterPoints(sample(), options)),
+      JSON.stringify(options));
+  }
 });
 
 // The timeline uses the same function in one dimension: a lane is the same

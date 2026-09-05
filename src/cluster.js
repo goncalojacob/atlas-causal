@@ -39,8 +39,19 @@ export const SPREAD_RADIUS = 46;
 export const SPREAD_GAP = 24;
 
 // A hair past the zoom at which a cluster comes apart, so the member that
-// was exactly on the threshold is on the far side of it.
-const SPLIT_MARGIN = 1.05;
+// was exactly on the threshold is on the far side of it. Exported for the
+// test that holds the grid to the greedy pass's own output: a reference
+// implementation has to be able to produce `coreZoom` too.
+export const SPLIT_MARGIN = 1.05;
+
+// The grid's cells are strictly wider than the merge threshold, which is the
+// first of the four conditions under which the grid gives the greedy pass's
+// own answer: two points within the threshold of each other cannot then be
+// more than one cell apart on either axis, so the 3×3 neighbourhood of a
+// seed's cell holds every candidate the full scan would have found. Equal
+// widths would do in exact arithmetic; a hair over covers the rounding of
+// `x / cell` at the far edge of a cell.
+const CELL_MARGIN = 1 + 2 ** -20;
 
 function distanceSquared(a, b) {
   const dx = a.x - b.x;
@@ -70,28 +81,80 @@ export function clusterPoints(points, {
   const withinCluster = threshold * threshold;
   const withinEpsilon = epsilon * epsilon;
   const solitary = alone ?? new Set();
-  // Greedy, in seed order. O(n²) and honest about it: the dataset is in the
-  // hundreds. At tens of thousands the fix is a grid index here, not a
-  // different rule — the result would be the same clusters.
+  // Greedy, in seed order, over a uniform grid. It was a double loop until
+  // H4a — O(n²), and at 14 000 points half a second per frame of the zoom
+  // animation (health review B, finding 2; A, finding 13). The grid changes
+  // what is *looked at*, never what is decided, and the four conditions that
+  // make that true are worth naming because a later simplification could
+  // break any of them without a test noticing:
+  //
+  //   1. cells strictly wider than the threshold, so the 3×3 neighbourhood
+  //      of a seed holds every candidate (CELL_MARGIN above);
+  //   2. one globally sorted walk of the seeds, not a walk per cell: which
+  //      point seeds a cluster is decided by `byWeightThenId` over the whole
+  //      set, and a per-cell order would hand a cell's own heaviest point a
+  //      cluster that belongs to a heavier neighbour;
+  //   3. the members re-sorted by `byWeightThenId` before `centre` and
+  //      `weight` are reduced over them, because the grid meets them in
+  //      cell order and floating-point addition is not associative — the
+  //      order they are summed in is part of the answer;
+  //   4. the exact `<=` predicate on every candidate the neighbourhood
+  //      offers. The grid narrows the candidates; it never decides one.
+  //
+  // `tests/cluster.test.mjs` keeps the old implementation and holds the two
+  // to the same output, member order and centres included.
   const seeds = [...points].sort(byWeightThenId);
   const taken = new Set();
   const clusters = [];
+  // A threshold that is zero, infinite or not a number at all leaves nothing
+  // to divide by; one bucket is then the whole grid, which is the double loop
+  // again and the right answer at the size such a call can only be.
+  const cell = threshold > 0 && Number.isFinite(threshold) ? threshold * CELL_MARGIN : null;
+  const cellOf = (p) => (cell === null ? '0,0' : `${Math.floor(p.x / cell)},${Math.floor(p.y / cell)}`);
+  const grid = new Map();
+  for (const p of seeds) {
+    const key = cellOf(p);
+    const bucket = grid.get(key);
+    if (bucket) bucket.push(p);
+    else grid.set(key, [p]);
+  }
   for (const seed of seeds) {
     if (taken.has(seed.id)) continue;
     taken.add(seed.id);
     const solo = solitary.has(seed.id);
     const members = [seed];
-    // A solitary point neither gathers neighbours nor is gathered: the loop
+    // A solitary point neither gathers neighbours nor is gathered: the scan
     // below skips it on both sides, so it comes out as its own cluster of
     // one, which is exactly what a lone point produces anyway.
     if (!solo) {
-      for (const other of seeds) {
-        if (taken.has(other.id) || solitary.has(other.id)) continue;
-        if (distanceSquared(seed, other) <= withinCluster) {
-          taken.add(other.id);
-          members.push(other);
+      const cx = cell === null ? 0 : Math.floor(seed.x / cell);
+      const cy = cell === null ? 0 : Math.floor(seed.y / cell);
+      for (let i = -1; i <= 1; i += 1) {
+        for (let j = -1; j <= 1; j += 1) {
+          const bucket = grid.get(`${cx + i},${cy + j}`);
+          if (!bucket) continue;
+          // A point that has been taken is dropped from its cell as it is
+          // passed, so the grid thins out as the walk goes on and no seed
+          // looks at a member of an earlier cluster twice.
+          let write = 0;
+          for (let n = 0; n < bucket.length; n += 1) {
+            const other = bucket[n];
+            if (taken.has(other.id)) continue;
+            bucket[write] = other;
+            write += 1;
+            if (solitary.has(other.id)) continue;
+            if (distanceSquared(seed, other) <= withinCluster) {
+              taken.add(other.id);
+              members.push(other);
+              write -= 1;
+            }
+          }
+          bucket.length = write;
         }
       }
+      // Condition 3: the reductions below are order-dependent in their last
+      // bits, and the order that is part of the answer is the seed order.
+      members.sort(byWeightThenId);
     }
     const coincident = members.every((m) => distanceSquared(seed, m) <= withinEpsilon);
     // The zoom at which everything that *can* leave this cluster has left,
