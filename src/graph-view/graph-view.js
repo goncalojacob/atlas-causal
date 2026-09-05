@@ -22,7 +22,7 @@ import { horizonSet, horizonBand } from '../horizon.js';
 import { narrativeSet } from '../narrative.js';
 import { lensSet } from '../lens.js';
 import { lanesFor } from '../lanes.js';
-import { layoutGraph } from './layout.js';
+import { layoutGraph, MIN_ZOOM, MAX_ZOOM } from './layout.js';
 import { exportButton } from '../share.js';
 
 // Sizes in SVG units at k = 1; divided by k when drawn, so a node keeps its
@@ -42,8 +42,6 @@ const BAND_LABEL_CHARS = 12;
 // it every node on screen is, which at sixty events is all of them.
 const LABEL_ALL_ZOOM = 2;
 const LABEL_LIMIT = 14;
-const MIN_ZOOM = 1;
-const MAX_ZOOM = 8;
 // As far as the first drawing will zoom to a narrow window on its own, and
 // the share of the data a window has to be under before it zooms at all.
 const FIT_ZOOM = 2;

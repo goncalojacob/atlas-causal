@@ -28,6 +28,7 @@
 import { extent } from '../util/dates.js';
 import { createLinearScale } from '../timeline-scale.js';
 import { laneOf } from '../lanes.js';
+import { clusterPoints, mergeEdges } from '../cluster.js';
 
 export const WIDTH = 960;
 export const BAND_HEIGHT = 96;
@@ -59,6 +60,20 @@ const SWEEPS = 6;
 const MAX_GAP = 0.3;
 // How close to the edge of a band a node may be pushed.
 const EDGE = 0.06;
+
+// How far the graph view zooms. The pair lives here rather than in
+// graph-view.js because the merging rule and the zoom limit are one
+// question, exactly as they are on the map (cluster.js): whether a stack can
+// ever be pulled apart depends on how far in the reader is allowed to go.
+export const MIN_ZOOM = 1;
+export const MAX_ZOOM = 8;
+// D for the graph: two nodes closer than this at k = 1 are drawn as one.
+// Derived the way the map derives its own — a little under the distance at
+// which two hit targets overlap, which here is 2 × HIT_RADIUS = 16 — and so
+// smaller than the map's 16, because a node in this picture is smaller than
+// a mark on that one. Below it two nodes cannot both be aimed at, which is
+// the honest moment to stop drawing them as two.
+export const STACK_DISTANCE = 13;
 
 // Sorting anything that feeds a floating-point sum: two runs given the same
 // records in a different order must produce the same numbers, and addition
@@ -274,4 +289,86 @@ export function layoutGraph({ events, edges, lanes = [], extent: dataExtent, wid
   }));
 
   return { width, height, bands, nodes: placed, edges: laid, scale, crossings: bestCrossings, naiveCrossings };
+}
+
+// The level of detail. `layoutGraph` above places every event once and knows
+// nothing of the zoom; this reads those coordinates and says what is drawn
+// at a given k — nodes closer than D / k merged into a stack, and the links
+// between two stacks merged into one line. That split is the whole reason a
+// stack can open without the picture moving under the reader: zooming
+// changes which marks are drawn, never where a mark is.
+//
+// Merging is within a band and never across one: a lane is a claim about
+// where a group of events belongs, and a mark straddling two of them would
+// be a claim the data does not make. With no grouping there is one band and
+// the rule is simply the whole picture.
+//
+// `alone` is the set of ids that must keep a node of their own — the
+// selection, the walked chain, and everything else the reader is currently
+// working with. cluster.js keeps that promise; this file only passes it on.
+export function stackLayout(layout, { k = 1, alone = null, distance = STACK_DISTANCE } = {}) {
+  const byLane = new Map();
+  for (const node of layout.nodes) {
+    const lane = node.lane ?? '';
+    if (!byLane.has(lane)) byLane.set(lane, []);
+    byLane.get(lane).push({ id: node.id, x: node.x, y: node.y, weight: node.weight, node });
+  }
+
+  const stacks = [];
+  for (const lane of [...byLane.keys()].sort(byId)) {
+    const clusters = clusterPoints(byLane.get(lane), {
+      k,
+      distance,
+      // Below this the deepest zoom the view allows would still draw them as
+      // one, so nothing is gained by promising the reader they can be parted.
+      epsilon: distance / MAX_ZOOM,
+      alone,
+    });
+    for (const cluster of clusters) {
+      // Chronological: a stack's list is read as a stretch of time, and the
+      // years are what the title and the panel say about it.
+      const members = cluster.members.map((m) => m.node)
+        .sort((a, b) => a.year - b.year || byId(a.id, b.id));
+      stacks.push({
+        key: cluster.key,
+        lane: cluster.representative.node.lane,
+        x: cluster.x,
+        y: cluster.y,
+        centre: cluster.centre,
+        representative: cluster.representative.node,
+        members,
+        count: cluster.count,
+        // The members' weights together, as on the map: what a stack is
+        // worth is what is inside it, and that is what decides a label.
+        weight: cluster.weight,
+        years: { min: members[0].year, max: members[members.length - 1].year },
+        coincident: cluster.coincident,
+        splittable: cluster.splittable,
+        coreZoom: cluster.coreZoom,
+        alone: cluster.alone,
+      });
+    }
+  }
+  stacks.sort((a, b) => a.x - b.x || byId(a.key, b.key));
+
+  const stackOf = new Map();
+  for (const stack of stacks) for (const member of stack.members) stackOf.set(member.id, stack.key);
+  const byKey = new Map(stacks.map((s) => [s.key, s]));
+  const edges = mergeEdges(
+    layout.edges.map((line) => ({
+      id: line.id,
+      from: line.from,
+      to: line.to,
+      type: line.edge.type,
+      confidence: line.edge.confidence,
+      edge: line.edge,
+    })),
+    stackOf,
+  ).map((merged) => {
+    const from = byKey.get(merged.from);
+    const to = byKey.get(merged.to);
+    return { ...merged, x1: from.x, y1: from.y, x2: to.x, y2: to.y };
+  });
+
+  return { k, nodes: stacks, edges, stackOf };
 }
