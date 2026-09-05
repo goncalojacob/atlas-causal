@@ -6,7 +6,21 @@ session ends. `ARCHITECTURE.md` is the target; this file is the position.
 
 ## Last updated
 
-On the branch `world`, 2026-09-05, after M40a (`docs/m40-brief.md`): **the
+On the branch `world`, 2026-09-05, after M40b (`docs/m40-brief.md`): **the
+imported world is written and wired.** Every one of M40a's 91 world events now
+has a drafted summary and its actors, or is retracted with its reason:
+**63 wired, 28 retracted** (31%), **55 edges**, of which **16 reach a record
+the atlas already held** — the Boer war to the declaration of Windsor, the
+Depression to Salazar's accession, the Spanish war to the Iberian Pact,
+Brest-Litovsk to the Lys, the Atlantic to the Azores, Rome to EFTA, Algeria to
+Angola, the two oil shocks to the two Fund programmes, Maastricht to the euro.
+Three edges are `disputed` and carry their dispute: Versailles to the second
+war, the crash to the Depression, and the Gaza war to the finding of genocide.
+Two actors were created, the Wagner Group and Hamas. `docs/m40-retractions.md`
+lists the 28 and says what the atlas would need for each. The rest of this
+section is `m0`'s and this paragraph does not touch it.
+
+Before that, on `world`, after M40a (`docs/m40-brief.md`): **the
 world Portugal answered to is imported.** 154 queries for 1890–2025 with no
 geographic restriction returned **1,873 candidates**; a rule, not a hand, kept
 **120** of them — the most sitelinks this atlas does not already hold, with a
@@ -2968,6 +2982,118 @@ gave that to the map and the timeline, and M25 did not widen it.
      never this run's own commit, and it is current: `--index` passes. Reverse
      by rebuilding it once on top of the merge into `m0`, exactly as planned.
 
+194. **M40b's counts, by decade.** Imported is M40a's 91; every one of them is
+     now wired or retracted. "Reaching a record already here" counts edges
+     with one end outside the 91 — that is, in the Portuguese dataset the
+     atlas already held.
+
+     | decade | imported | wired | retracted | edges | of those, reaching a record already here |
+     |---|---|---|---|---|---|
+     | 1890s | 3 | 2 | 1 | 2 | 1 |
+     | 1900s | 4 | 3 | 1 | 3 | 0 |
+     | 1910s | 12 | 10 | 2 | 11 | 2 |
+     | 1920s | 8 | 7 | 1 | 4 | 1 |
+     | 1930s | 8 | 6 | 2 | 7 | 3 |
+     | 1940s | 7 | 7 | 0 | 8 | 2 |
+     | 1950s | 7 | 6 | 1 | 4 | 3 |
+     | 1960s | 5 | 2 | 3 | 1 | 0 |
+     | 1970s | 6 | 4 | 2 | 4 | 2 |
+     | 1980s | 5 | 1 | 4 | 1 | 1 |
+     | 1990s | 5 | 2 | 3 | 2 | 1 |
+     | 2000s | 5 | 4 | 1 | 2 | 0 |
+     | 2010s | 6 | 2 | 4 | 2 | 0 |
+     | 2020s | 10 | 7 | 3 | 4 | 0 |
+     | **total** | **91** | **63** | **28** | **55** | **16** |
+
+     Edges are counted in the decade of the event they run *from*, which is
+     why the 1960s show one edge for two wired events: the Kashmir war's edge
+     runs to Bangladesh in 1971 and the covenant's incoming edge is counted in
+     the 1940s, with the Charter. By confidence the 55 are 44 `probable`,
+     8 `consensus` and 3 `disputed`; by type, 31 `precondition-of`,
+     16 `caused`, 6 `enabled` and 2 `reacted-to`. No edge is `inspired`:
+     nothing in this material could be argued to that type without guessing at
+     what somebody read. Two actors were created — `wagner-group` and `hamas`
+     — and no relations: no pair of actors in this material made one plain
+     that the atlas did not already hold.
+
+195. **The three decades that barely wire say something about the import, not
+     about the century.** The 1980s wire one event of five, the 2010s two of
+     six, the 1960s two of five. The cause is in `docs/m40-retractions.md`:
+     the import's rule kept the most-linked events the atlas did not hold, and
+     famous events lead to other famous events, most of which were not kept or
+     were refused for want of a lane. The atlas has the Velvet Revolution and
+     not the Wall, the second Chechen war and not the first, the second
+     Nagorno-Karabakh war and not the first, Libya and Syria and not the Arab
+     Spring, Afghanistan and not 11 September. **Eight of the 28 retractions
+     name one of the twenty-nine deviation 192 lists.** Importing those
+     twenty-nine — which needs the change to `tools/import/wikidata.mjs` that
+     deviation 192 leaves to the owner — would turn much of the retraction
+     list back into records with edges, and is the single highest-value thing
+     that could be done to this dataset next.
+
+196. **`role` is from `docs/roles-mapping.md`'s closed list of 31, and carries
+     no note.** The brief asks for the approved role "with a `note` where the
+     phrase says more", and there is nowhere to put one: the actor line in
+     `schema/v1/event.json` is `{ actor, role }` with `additionalProperties:
+     false`, and adding the field is M32b's job, not a data run's. So every
+     one of M40b's actor lines is a bare role from the list, and where the
+     phrase would have said more — which power was the occupier, which the
+     departing one — the summary says it instead. Eleven of the 31 are used,
+     and nothing outside the list: `belligerent` (87), `signatory` (54),
+     `government` (14), `negotiator` (9), `perpetrator` (6), `target` (4),
+     `supporter` (4), `institution` (3), `founder` (2), `invader` (1),
+     `occupier` (1).
+
+197. **A genocide record names the perpetrator and not the victims**, which is
+     the atlas's own precedent (`batepa-massacre`, `mueda-massacre`,
+     `hat-nipah-and-same-massacres` all name the responsible power alone). The
+     alternative was to create `people` actors — Armenians, Jews, Tutsi — with
+     a founding year, which is a claim about the origin of a people that
+     nothing here could source, and the first draft of `armenian-genocide`
+     tripped the `actor-outside-when` warning by reaching for the Republic of
+     Armenia of 1991 instead. The victims are named in the summaries.
+
+198. **The Gaza war and the Gaza genocide are kept as two records with one
+     `disputed` edge between them.** Merging them would take a side on a live
+     dispute in the direction of the framing chosen, and dropping either would
+     take it in the other. The edge `gaza-war--gaza-genocide--caused` exists
+     because a reader who finds both is owed the relation, and its `dispute`
+     block names who has found genocide (a UN special committee and commission
+     of inquiry, the IAGS, Amnesty, Human Rights Watch, the case before the
+     ICJ) and who rejects it and on what ground, and states what is not in
+     dispute at all. It is the only place in this run where an edge's
+     `confidence` is carrying a disagreement about a characterisation rather
+     than about a causal link, and a reviewer should decide whether that is a
+     use the field should have.
+
+199. **`region` was corrected on wired records where the import's derivation
+     was plainly wrong, and nowhere else.** The import takes a placeless
+     event's lane from a point it can reach, which put the First World War,
+     the Great Depression and the Boxer rebellion in the Asia lane and left
+     the Great Depression beside events in Manchuria. Each wired record's lane
+     was set to where the record itself says the thing happened; no retracted
+     record's lane was touched, and no `when` was changed anywhere. Three
+     wired records instead carry a `date` flag and a note asking a reviewer to
+     fix an interval this run would not decide alone: `turkish-war-of-
+     independence` (the item's interval opens in 1922 and the war opens in
+     1919), `warsaw-uprising` (the item's date is the surrender, not the
+     rising) and `chinese-civil-war` (the item covers 1946–49 and the war
+     opens in 1927).
+
+200. **`node --test` is green in the working tree and red on the branch as
+     pushed**, for exactly the reason deviation 193 gives. Two tests —
+     `tests/build-index.test.mjs` and `tests/validate-cli.test.mjs` — run
+     `validate.mjs --index`, and every commit of this run changes `data/` and
+     so stales the index. The index was rebuilt locally before each test
+     run and never staged, because the M40 brief forbids committing
+     `data/index/` on this branch; `git add` named `data/events`, `data/edges`
+     and `data/actors` explicitly and never `-A`. The gate this run actually
+     held to at every commit is `node tools/validate.mjs` without `--index`,
+     clean of errors, plus `node --test` green against a freshly built index.
+     The single index-rebuild commit on top of the merge into `m0`, which
+     deviation 193 already plans for, is what makes the branch green as
+     committed.
+
 
 ## Dates to verify
 
@@ -3453,3 +3579,4 @@ M40a resumed 2026-09-05T21:02:41Z by scheduled (branch world)
 M40a done
 
 M40b started 2026-09-05T21:22:14Z by scheduled (branch world)
+M40b done
