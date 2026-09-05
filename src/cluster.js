@@ -23,6 +23,27 @@ export const MERGE_DISTANCE = 16;
 // go. map.js imports this so the two cannot drift.
 export const DEEPEST_ZOOM = 40;
 
+// How much a zoom has to change before the grouping is worth doing over.
+// What decides the grouping is the threshold D / k, so what matters is the
+// ratio between two zooms and not the difference between them: the buckets
+// are equal fractions of an octave, sixteen of them, so no bucket covers more
+// than about 4.4 % of threshold either way.
+//
+// It rounds *down*, and that is the whole of the caller's safety. A bucket
+// below the true zoom uses a threshold a hair larger than the true one, so
+// the picture is at worst a bucket late in splitting a cluster; rounding up
+// would show a cluster already split at a zoom that does not part it, and the
+// reader would click a mark that is not there. `coreZoom` is exempt from all
+// of this — see `map.js`, and finding 12 of the review of the health plan.
+export const ZOOM_BUCKETS_PER_OCTAVE = 16;
+
+export function zoomBucket(k) {
+  // A zoom that is not a positive finite number is nothing to round: it is
+  // passed through so that whatever the caller meant by it still happens.
+  if (!(k > 0) || !Number.isFinite(k)) return k;
+  return 2 ** (Math.floor(Math.log2(k) * ZOOM_BUCKETS_PER_OCTAVE) / ZOOM_BUCKETS_PER_OCTAVE);
+}
+
 // Members closer together than this are coincident: D / DEEPEST_ZOOM is the
 // merge threshold at the deepest zoom, so nothing this close can be
 // separated by any zoom the map allows. Two records a kilometre apart in

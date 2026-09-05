@@ -17,7 +17,7 @@
 // The data is generated from a seed, so the two runs measure the same points.
 
 import { clusterPoints, DEEPEST_ZOOM } from '../../src/cluster.js';
-import { inView } from '../../src/map/layers/events.js';
+import { onScreen } from '../../src/map/layers/events.js';
 import { fitBounds, WORLD } from '../../src/map/projection.js';
 
 // --- the generator ---------------------------------------------------------
@@ -143,7 +143,7 @@ function benchNotch() {
     const result = measure(() => {
       const list = pointsOf(events, p);
       const clusters = clusterPoints(list, { k });
-      drawn = clusters.filter((c) => inView(c.x, c.y, view, 0)).length;
+      drawn = clusters.filter((c) => onScreen(c.x, c.y, view, 0)).length;
     });
     const total = clusterPoints(pointsOf(events, p), { k }).length;
     row(`k=${k}`, result, `→ ${total} clusters, ${drawn} in view`);

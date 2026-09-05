@@ -21,7 +21,9 @@
 import { svg, svgTitle } from '../../util/dom.js';
 import { extent } from '../../util/dates.js';
 import { overlaps } from '../../util/window.js';
-import { clusterPoints, spreadPositions, SPREAD_RADIUS, SPREAD_GAP } from '../../cluster.js';
+import {
+  clusterPoints, spreadPositions, zoomBucket, SPREAD_RADIUS, SPREAD_GAP,
+} from '../../cluster.js';
 import { horizonBand } from '../../horizon.js';
 
 // Sizes in SVG units at k = 1; every one of them is divided by k when drawn,
@@ -38,13 +40,19 @@ const LABEL_HALO = 3; // the paper halo behind a label, in screen pixels
 const LABEL_ZOOM = 4;
 const LABEL_LIMIT = 12;
 const LABEL_CHARS = 30;
+// How far outside the visible rectangle a mark still has to be drawn, in SVG
+// units at k = 1: its hit circle and the badge that sits above and to the
+// right of a cluster, so nothing half on screen is half missing. A label is
+// not in this number — a label whose own mark is off screen is not drawn at
+// all (drawLabels).
+const DRAW_MARGIN = HIT_RADIUS + BADGE_SIZE;
 
 // Whether a point in projected space is on screen, with room around the
 // rectangle for a mark that is only half outside it. `view` null is a caller
 // with nothing to measure — a test, or a pane that has not been laid out —
 // and then everything is in view, which is what the layer did before there
 // was a rectangle to ask about.
-export function inView(x, y, view, margin = 0) {
+export function onScreen(x, y, view, margin = 0) {
   if (!view) return true;
   return x >= view.x0 - margin && x <= view.x1 + margin
     && y >= view.y0 - margin && y <= view.y1 + margin;
@@ -83,6 +91,28 @@ export function createEventsLayer(group, projection, { pointOf, onSelect, onClus
   // the cluster itself rather than with an id the caller would have to look
   // the members up from.
   let drawn = new Map();
+
+  // The last grouping, and what it was of. Clustering is the expensive half
+  // of a render and it depends on far less than a render does: on the points,
+  // and on how far in the reader is. A selection, a hover, a horizon, a
+  // narrative step or a layer being switched off changes none of that, and
+  // used to pay for the grouping again anyway (health review A, finding 13).
+  //
+  // The points are compared one by one rather than hashed. It is the same
+  // O(n) the render is already doing and it cannot be wrong, where a hash
+  // that collided would leave the reader looking at a grouping of points that
+  // are no longer there.
+  let grouping = null;
+
+  const samePoints = (before, now) => {
+    if (before === null || before.length !== now.length) return false;
+    for (let i = 0; i < before.length; i += 1) {
+      const a = before[i];
+      const b = now[i];
+      if (a.id !== b.id || a.x !== b.x || a.y !== b.y || a.weight !== b.weight) return false;
+    }
+    return true;
+  };
 
   const activate = (el) => {
     const id = el.getAttribute('data-id');
@@ -142,6 +172,7 @@ export function createEventsLayer(group, projection, { pointOf, onSelect, onClus
     render({
       events, window: timeWindow = null, margin = null, selected, pathIds, actorIds = null, narrativeIds = null, reachable = null,
       alone: drawnAlone, kept, chainEdges, consequenceEdges, eventById, k = 1, view = null, spread = null,
+      exactZoom = false,
     }) {
       // Every mark is drawn again on every render, so a mark activated from
       // the keyboard would take the focus back to the document with it. What
@@ -209,17 +240,32 @@ export function createEventsLayer(group, projection, { pointOf, onSelect, onClus
       }
 
       const alone = visible.filter((v) => drawnAlone.has(v.event.id));
-      const clusters = clusterPoints(
-        visible.filter((v) => !drawnAlone.has(v.event.id))
-          .map((v) => ({ id: v.event.id, x: v.x, y: v.y, weight: v.event.weight ?? 0, event: v.event })),
-        { k },
-      );
+      const points = visible.filter((v) => !drawnAlone.has(v.event.id))
+        .map((v) => ({ id: v.event.id, x: v.x, y: v.y, weight: v.event.weight ?? 0, event: v.event }));
+      // The zoom the grouping is done at, which is not quite the zoom the
+      // picture is drawn at: rounded down to a bucket, so a wheel that moves
+      // the zoom by a percent does not regroup fourteen thousand points, and
+      // the animation between two zooms does not regroup them sixteen times.
+      // `exactZoom` is the caller saying this particular zoom was chosen to
+      // split a cluster, and a bucket below it would not (cluster.js).
+      const groupAt = exactZoom ? k : zoomBucket(k);
+      if (grouping === null || grouping.k !== groupAt || !samePoints(grouping.points, points)) {
+        grouping = { k: groupAt, points, clusters: clusterPoints(points, { k: groupAt }) };
+      }
+      const { clusters } = grouping;
+      // Every cluster is registered, whether or not it is drawn: the grouping
+      // covers the same set it always did, and a spread the reader has opened
+      // must survive them panning it off the edge and back (the health plan,
+      // decision 9). What the viewport culls is the drawing below.
       for (const cluster of clusters) drawn.set(cluster.key, cluster);
+      // A mark is worth putting in the DOM when it is on screen or nearly.
+      const drawable = (x, y) => onScreen(x, y, view, DRAW_MARGIN / k);
+      const shown = view ? clusters.filter((c) => drawable(c.x, c.y)) : clusters;
 
       const opened = spread ? drawn.get(spread) ?? null : null;
       const spreadCluster = opened && opened.coincident && opened.count > 1 ? opened : null;
 
-      for (const cluster of clusters) {
+      for (const cluster of shown) {
         const event = cluster.representative.event;
         if (cluster.count === 1) {
           appendMark(group, {
@@ -254,6 +300,9 @@ export function createEventsLayer(group, projection, { pointOf, onSelect, onClus
       let selectedMark = null;
       for (const { event, x, y, faded } of alone) {
         const isSelected = event.id === selected;
+        // The selected event keeps its mark wherever it is: it is what the
+        // panel is showing, and the map is where a reader looks for it.
+        if (!isSelected && !drawable(x, y)) continue;
         const mark = appendMark(group, {
           x, y, radius: isSelected ? SELECTED_RADIUS : MARK_RADIUS,
           title: faded ? `${event.title} — outside the window` : event.title, id: event.id,
@@ -264,7 +313,7 @@ export function createEventsLayer(group, projection, { pointOf, onSelect, onClus
       if (selectedMark) group.appendChild(selectedMark);
 
       if (spreadCluster) drawSpread(spreadCluster);
-      if (k >= LABEL_ZOOM) drawLabels(clusters);
+      if (k >= LABEL_ZOOM) drawLabels(shown);
       restoreFocus(focused);
 
       // A coincident cluster opened: its members on rings around the common
@@ -305,7 +354,7 @@ export function createEventsLayer(group, projection, { pointOf, onSelect, onClus
       // Greedy: a label that would land on one already placed is skipped
       // rather than nudged, so labels never drift away from their mark.
       function drawLabels(list) {
-        const candidates = list.filter((c) => inView(c.x, c.y, view)).sort(
+        const candidates = list.filter((c) => onScreen(c.x, c.y, view)).sort(
           (a, b) => b.weight - a.weight || (a.key < b.key ? -1 : a.key > b.key ? 1 : 0),
         );
         const placed = [];
@@ -332,7 +381,9 @@ export function createEventsLayer(group, projection, { pointOf, onSelect, onClus
         }
       }
 
-      return { clusters, spread: spreadCluster };
+      // `clusters` is the whole grouping — every placed event in the window,
+      // as it always was; `shown` is the part of it that reached the DOM.
+      return { clusters, shown, spread: spreadCluster };
     },
   };
 }

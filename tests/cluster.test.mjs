@@ -7,6 +7,7 @@ import assert from 'node:assert/strict';
 import {
   clusterPoints, spreadPositions, byWeightThenId, mergeEdges,
   MERGE_DISTANCE, COINCIDENT_EPSILON, DEEPEST_ZOOM, SPREAD_RADIUS, SPREAD_GAP, SPLIT_MARGIN,
+  zoomBucket, ZOOM_BUCKETS_PER_OCTAVE,
 } from '../src/cluster.js';
 
 const point = (id, x, y, weight = 0) => ({ id, x, y, weight });
@@ -265,6 +266,69 @@ test('merging links does not depend on the order they arrive in', () => {
   // Two types tied two-all: the type's own name breaks it, so the picture
   // does not depend on which link happened to be read first.
   assert.equal(mergeEdges(links, clusterOf)[0].type, 'caused');
+});
+
+// --- the zoom buckets ------------------------------------------------------
+//
+// What the map groups at is the bucket below the zoom it draws at, so a wheel
+// that moves the zoom by a percent does not group fourteen thousand points
+// again. Rounding down is the safe direction and the tests say so.
+
+test('a zoom bucket is never above the zoom it stands for, and never far below', () => {
+  for (const k of [1, 1.0001, 1.4, 2, 3.7, 8, 17.5, DEEPEST_ZOOM]) {
+    const bucket = zoomBucket(k);
+    assert.ok(bucket <= k, `k=${k}: the bucket (${bucket}) is not above the zoom`);
+    assert.ok(bucket > k / (2 ** (1 / ZOOM_BUCKETS_PER_OCTAVE)),
+      `k=${k}: the bucket (${bucket}) is within one bucket of it`);
+  }
+  assert.equal(zoomBucket(1), 1, 'the zoom the map opens at is its own bucket');
+  assert.equal(zoomBucket(2), 2, 'and so is every octave of it');
+  assert.equal(zoomBucket(4), 4);
+  // The same bucket twice is what the cache is for.
+  assert.equal(zoomBucket(1.01), zoomBucket(1.02));
+  assert.ok(zoomBucket(1.0) < zoomBucket(1.2), 'and a real move is a different one');
+});
+
+test('a bucket groups a hair more than the zoom does, never a hair less', () => {
+  // Two points a shade further apart than D at k = 2: at that zoom they are
+  // two clusters, and the bucket below it must not be the zoom that says so
+  // before it is true. Rounding up is what this forbids.
+  const gap = MERGE_DISTANCE / 2;
+  for (const k of [1.03, 1.9, 2.5, 6.1, 31]) {
+    const pair = [point('a', 0, 0, 2), point('b', (MERGE_DISTANCE / k) * 1.001, 0, 1)];
+    const atBucket = clusterPoints(pair, { k: zoomBucket(k) }).length;
+    const atZoom = clusterPoints(pair, { k }).length;
+    assert.ok(atBucket <= atZoom, `k=${k}: the bucket does not split what the zoom keeps whole`);
+  }
+  assert.equal(clusterPoints([point('a', 0, 0, 2), point('b', gap, 0, 1)], { k: zoomBucket(1.5) }).length, 1);
+  // A zoom that is not a number to round comes back as it is, so whatever the
+  // caller meant by it still happens.
+  for (const odd of [0, -1, NaN, Infinity]) assert.ok(Object.is(zoomBucket(odd), odd), String(odd));
+});
+
+test('a bucket is not what a click on a splittable cluster is answered at', () => {
+  // `coreZoom` is the zoom at which everything that can leave a cluster has
+  // left, with SPLIT_MARGIN of room past it. The map takes the reader to
+  // exactly that zoom and groups at exactly it (`exactZoom` in map.js), and
+  // this is why: at buckets any coarser, the zoom the click asked for would
+  // round to one that does not part the stack, and the click would move the
+  // map and change nothing.
+  const points = [
+    point('stack-a', 0, 0, 9), point('stack-b', 0, 0, 4), point('stack-c', 0, 0, 1),
+    point('near', 6, 0, 2),
+  ];
+  const [blob] = clusterPoints(points, { k: 1 });
+  assert.equal(blob.count, 4);
+  assert.ok(clusterPoints(points, { k: blob.coreZoom }).length > 1, 'at the zoom it names, it parts');
+  const perOctave = (k) => 2 ** Math.floor(Math.log2(k));
+  assert.equal(clusterPoints(points, { k: perOctave(blob.coreZoom) }).length, 1,
+    'and at a coarse enough bucket below it, it does not');
+  // As the two constants stand the buckets are finer than the margin, so
+  // today the rounding would happen to survive it. That is an accident of two
+  // numbers chosen for different reasons, and it is not what the map rests
+  // on; it is written down here so that changing either is a decision.
+  assert.ok(2 ** (1 / ZOOM_BUCKETS_PER_OCTAVE) < SPLIT_MARGIN,
+    `a bucket (${(2 ** (1 / ZOOM_BUCKETS_PER_OCTAVE)).toFixed(4)}) is finer than the split margin (${SPLIT_MARGIN})`);
 });
 
 // --- the grid against the pass it replaced ---------------------------------

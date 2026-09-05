@@ -232,3 +232,130 @@ test('a click on a consequence walks the chain on the map and on the timeline', 
     assert.equal(await page.eval(CHAIN), null);
   });
 });
+
+// --- what reaches the DOM, and how often -----------------------------------
+//
+// H4a: the grouping covers every placed event in the window as it always did,
+// and the *drawing* is culled to the rectangle on screen; and the zoom
+// animation moves the transform without redrawing anything (health review A,
+// finding 13; the health plan, decision 9).
+
+// One notch of the wheel, over a point in the pane. deltaY is negative for
+// a zoom in, and the map turns it into exp(-deltaY * 0.0015).
+const wheelAt = (fx, fy, deltaY) => `
+  const root = document.querySelector('#map svg.map');
+  const box = root.getBoundingClientRect();
+  root.dispatchEvent(new WheelEvent('wheel', {
+    bubbles: true, cancelable: true, deltaY: ${deltaY},
+    clientX: box.left + box.width * ${fx}, clientY: box.top + box.height * ${fy},
+  }));
+  return true;`;
+
+// Every mark in the DOM, in the SVG's own units, beside the rectangle the
+// pane really shows: the two together are what "culled to the viewport"
+// means, and neither can be read off the other.
+const MARKS_AND_BOX = `
+  const root = document.querySelector('#map svg.map');
+  const pane = root.getBoundingClientRect();
+  const inverse = root.getScreenCTM().inverse();
+  const corner = (x, y) => new DOMPoint(x, y).matrixTransform(inverse);
+  const a = corner(pane.left, pane.top);
+  const b = corner(pane.right, pane.bottom);
+  const t = document.querySelector('#map .viewport').getAttribute('transform') ?? '';
+  const [, tx, ty, k] = t.match(/translate\\(([-\\d.e]+) ([-\\d.e]+)\\) scale\\(([-\\d.e]+)\\)/) ?? [0, 0, 0, 1];
+  const marks = [...root.querySelectorAll('circle[data-mark]')].map((el) => ({
+    id: el.getAttribute('data-id'),
+    x: (Number(el.getAttribute('cx')) * Number(k)) + Number(tx),
+    y: (Number(el.getAttribute('cy')) * Number(k)) + Number(ty),
+  }));
+  return { marks, box: { x0: Math.min(a.x, b.x), y0: Math.min(a.y, b.y), x1: Math.max(a.x, b.x), y1: Math.max(a.y, b.y) }, k: Number(k) };`;
+
+test('zoomed in, only the marks on screen are in the DOM', { skip }, async () => {
+  await wide(async (page, url) => {
+    await open(page, url('?fixtures=1'), READY);
+    await page.eval(FREEZE_TIMELINE);
+
+    const before = await page.eval(MARKS_AND_BOX);
+    assert.equal(before.k, 1, 'the map opens at k = 1');
+    assert.ok(before.marks.length >= 8, `the whole world is drawn to begin with (${before.marks.length})`);
+
+    // In hard, over the left-hand third of the pane: the fixtures are spread
+    // across the world, so most of them are now nowhere near the screen.
+    await page.eval(wheelAt(0.3, 0.5, -1200));
+    await waitFor(page, 'return new URLSearchParams(location.search).has("bbox");', 'the box to be published');
+
+    const after = await page.eval(MARKS_AND_BOX);
+    assert.ok(after.k > 5, `the wheel zoomed in (k = ${after.k.toFixed(1)})`);
+    assert.ok(after.marks.length < before.marks.length,
+      `fewer marks reach the DOM (${after.marks.length} of ${before.marks.length})`);
+    // Everything still drawn is on screen, give or take a mark's own width:
+    // DRAW_MARGIN is 20 SVG units at k = 1, so 20 / k here.
+    const slack = 20 / after.k;
+    const stray = after.marks.filter((m) => m.x < after.box.x0 - slack || m.x > after.box.x1 + slack
+      || m.y < after.box.y0 - slack || m.y > after.box.y1 + slack);
+    assert.deepEqual(stray.map((m) => m.id), [], 'nothing off screen is drawn');
+    assert.ok(after.marks.length > 0, 'and something is still drawn');
+
+    // Nothing was lost, only left undrawn: the whole world comes back when
+    // the reader goes back out to it.
+    await page.eval(`document.querySelector('#map svg.map').dispatchEvent(
+      new MouseEvent('dblclick', { bubbles: true })); return true;`);
+    await waitFor(page, `return document.querySelectorAll('#map circle[data-mark]').length >= ${before.marks.length};`,
+      'the marks to come back');
+    const back = await page.eval(MARKS_AND_BOX);
+    assert.equal(back.k, 1);
+    assert.deepEqual(back.marks.map((m) => m.id).sort(), before.marks.map((m) => m.id).sort());
+  });
+});
+
+// A click on a splittable cluster is answered with the zoom at which it comes
+// apart, and that zoom is used as it was asked for rather than rounded down
+// to a bucket (review of the health plan, finding 12; cluster.test.mjs says
+// what a bucket would otherwise do to it). The fixtures have no two events
+// close enough to stack, so this is asked of the real dataset, where Lisbon
+// and its neighbours do.
+const SPLITTABLE = `return Boolean(document.querySelector('#map circle.mark.cluster.splittable[data-cluster]'));`;
+
+test('a click on a splittable cluster splits it, and the animation redraws once', { skip }, async () => {
+  await wide(async (page, url) => {
+    await open(page, url(''), SPLITTABLE);
+    await page.eval(FREEZE_TIMELINE);
+
+    // Count the times the layer is emptied and drawn again. Before H4a the
+    // 260 ms animation did it on every one of its frames.
+    await page.eval(`
+      window.__redraws = 0;
+      new MutationObserver((records) => {
+        for (const r of records) if (r.removedNodes.length) window.__redraws += 1;
+      }).observe(document.querySelector('#map .layer-events'), { childList: true });
+      return true;`);
+
+    // The badge is the count of what is underneath, so it is what says the
+    // stack came apart. A cluster does not always vanish when it splits: the
+    // members no zoom can part stay on it, under the same key, because the
+    // key is the representative's id.
+    const badgeOf = (key) => `
+      const el = document.querySelector('#map text.cluster-count[data-cluster="${key}"]');
+      return el ? Number(el.textContent.slice(1)) : 0;`;
+    const before = await page.eval(`
+      const el = document.querySelector('#map circle.mark.cluster.splittable[data-cluster]');
+      const key = el.getAttribute('data-cluster');
+      const badge = document.querySelector('#map text.cluster-count[data-cluster="' + key + '"]');
+      return { key, hidden: badge ? Number(badge.textContent.slice(1)) : 0 };`);
+    assert.ok(before.hidden > 0, `the cluster says how many are under it (+${before.hidden})`);
+    await page.eval(clickOn(`#map circle.mark.cluster.splittable[data-cluster="${before.key}"]`));
+
+    // Past the animation and past the box settling behind it.
+    await waitFor(page, 'return window.__redraws > 0;', 'the zoom to settle into a redraw');
+    await new Promise((resolve) => { setTimeout(resolve, 700); });
+
+    const redraws = await page.eval('return window.__redraws;');
+    assert.ok(redraws <= 4, `the animation did not redraw per frame (${redraws} redraws)`);
+
+    // And the cluster really came apart: the zoom it asked for was used as
+    // it was rather than rounded down to a bucket below it.
+    const hidden = await page.eval(badgeOf(before.key));
+    assert.ok(hidden < before.hidden,
+      `the stack came apart at the zoom it named (+${before.hidden} → +${hidden})`);
+  });
+});

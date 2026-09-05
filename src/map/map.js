@@ -89,6 +89,11 @@ export function createMap(container, { atlas, state, onCluster = null }) {
         // has left, so one click turns a blob over a capital into the stack
         // of records that really do share a point.
         const wanted = cluster.coreZoom ?? transform.k * CLUSTER_ZOOM_STEP;
+        // And that zoom is not rounded to a bucket. `coreZoom` is chosen so
+        // the cluster comes apart at exactly it; the bucket below it is a
+        // zoom that does not part them, and the click would do nothing but
+        // move the map (review of the health plan, finding 12).
+        exactZoom = cluster.coreZoom !== null;
         zoomTo(cluster.centre, Math.min(MAX_ZOOM, Math.max(wanted, transform.k * 1.2)));
       } else {
         spread = spread === cluster.key ? null : cluster.key;
@@ -103,6 +108,11 @@ export function createMap(container, { atlas, state, onCluster = null }) {
   let transform = { x: 0, y: 0, k: 1 };
   // The key of the coincident cluster the reader has opened, if any.
   let spread = null;
+  // Whether the zoom in force was chosen to split a cluster, in which case
+  // the grouping is done at exactly it rather than at the bucket below it
+  // (cluster.js, `zoomBucket`). Set when a splittable cluster is clicked and
+  // cleared by every other way the zoom can move.
+  let exactZoom = false;
   const applyTransform = () => {
     viewport.setAttribute('transform', `translate(${transform.x} ${transform.y}) scale(${transform.k})`);
   };
@@ -187,6 +197,7 @@ export function createMap(container, { atlas, state, onCluster = null }) {
   // instruction to fly the map back to the Atlantic.
   const fitTo = (bbox) => {
     published = bbox;
+    exactZoom = false;
     transform = bboxTransform(projection, bbox, { width: WIDTH, height: HEIGHT, minZoom: MIN_ZOOM, maxZoom: MAX_ZOOM });
     applyTransform();
   };
@@ -195,6 +206,13 @@ export function createMap(container, { atlas, state, onCluster = null }) {
 
   // Puts a point in the middle of the map at a given zoom. Animated, unless
   // the reader has asked for less motion, in which case it simply arrives.
+  //
+  // The animation moves the transform and nothing else. It used to redraw the
+  // whole layer on every one of its sixteen frames, which meant grouping
+  // every point sixteen times over 260 ms for a picture the reader is
+  // watching slide past (health review A, finding 13); what they see now is
+  // the same picture scaled, which is what a zoom looks like, and the marks
+  // are put back at their screen size when it stops.
   function zoomTo({ x, y }, k) {
     const target = { k, x: WIDTH / 2 - x * k, y: HEIGHT / 2 - y * k };
     if (reducedMotion() || typeof requestAnimationFrame !== 'function') {
@@ -215,9 +233,12 @@ export function createMap(container, { atlas, state, onCluster = null }) {
         k: from.k + (target.k - from.k) * eased,
       };
       applyTransform();
+      if (t < 1) {
+        requestAnimationFrame(frame);
+        return;
+      }
       render(state.get());
-      if (t < 1) requestAnimationFrame(frame);
-      else scheduleBbox();
+      scheduleBbox();
     };
     requestAnimationFrame(frame);
   }
@@ -298,6 +319,7 @@ export function createMap(container, { atlas, state, onCluster = null }) {
     transform = { k, x: x - (x - transform.x) * ratio, y: y - (y - transform.y) * ratio };
     // Zooming rearranges the clusters under the spread, so it closes.
     spread = null;
+    exactZoom = false;
     applyTransform();
     render(state.get());
     scheduleBbox();
@@ -305,6 +327,7 @@ export function createMap(container, { atlas, state, onCluster = null }) {
   root.addEventListener('dblclick', () => {
     transform = { x: 0, y: 0, k: 1 };
     spread = null;
+    exactZoom = false;
     applyTransform();
     render(state.get());
     scheduleBbox();
@@ -327,7 +350,7 @@ export function createMap(container, { atlas, state, onCluster = null }) {
 
   function render(s, { force = false } = {}) {
     const box = view();
-    const key = renderKey(s, transform.x, transform.y, transform.k, spread ?? '', shardsIn,
+    const key = renderKey(s, transform.x, transform.y, transform.k, spread ?? '', shardsIn, exactZoom,
       Math.round(box.x0), Math.round(box.y0), Math.round(box.x1), Math.round(box.y1));
     if (!force && key === drawnFor) return;
     drawnFor = key;
@@ -398,6 +421,7 @@ export function createMap(container, { atlas, state, onCluster = null }) {
       k: transform.k,
       view: box,
       spread,
+      exactZoom,
     });
     // A spread survives a re-render — the band moving, a selection — for as
     // long as its cluster is still there to be spread.

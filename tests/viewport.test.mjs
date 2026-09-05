@@ -6,6 +6,7 @@ import assert from 'node:assert/strict';
 import {
   inView, containsPoint, pointOfEvent, eventsInView, boxesOverlap, regionBoxOf,
 } from '../src/util/viewport.js';
+import { onScreen } from '../src/map/layers/events.js';
 import {
   createProjection, fitBounds, viewBbox, viewBboxIn, bboxTransform, WORLD,
 } from '../src/map/projection.js';
@@ -235,4 +236,28 @@ test('the placeless events answer with the region boxes the atlas loaded', async
   // in view of every box.
   const pacific = eventsInView(atlas.activeEvents, [-150, -30, -120, -10], atlas.places, { regions: atlas.regionBoxes });
   assert.ok(pacific.length < drawn.length);
+});
+
+// --- and the same question in projected units ------------------------------
+//
+// `inView` above is asked in degrees, of an event, by the timeline. The map
+// asks it of a mark, in the SVG units the pan/zoom transform is applied in,
+// to decide what is worth putting in the DOM at all: at twenty thousand
+// events the grouping is a few hundred marks and the reader can see a
+// hundred of them (health review A, finding 13; the health plan, decision 9).
+
+test('a mark is on screen when it is inside the rectangle, or nearly', () => {
+  const box = { x0: 100, y0: 50, x1: 300, y1: 250 };
+  assert.equal(onScreen(200, 150, box), true);
+  assert.equal(onScreen(100, 50, box), true, 'the corner is inside');
+  assert.equal(onScreen(300, 250, box), true, 'and so is the far one');
+  assert.equal(onScreen(99, 150, box), false);
+  assert.equal(onScreen(200, 251, box), false);
+  // A mark that is half outside is still half inside, so the margin keeps it.
+  assert.equal(onScreen(90, 150, box, 20), true);
+  assert.equal(onScreen(79, 150, box, 20), false);
+  // No rectangle to measure — a test, or a pane that has not been laid out —
+  // and everything is in view, which is what the layer did before there was
+  // one to ask about.
+  assert.equal(onScreen(-9999, 9999, null), true);
 });
