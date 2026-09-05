@@ -40,6 +40,13 @@
         { "$ref": "../common/provenance.json#/properties/id" }
       ]
     },
+    "regionNote": {
+      "description": "Why the lane on this record is an override rather than the derivation. Written only beside a `region`, and only by whatever set it: the import writes it because a placeless event or a place whose own point reaches no polygon has to be given a lane, and a lane given by a tool is not the same fact as one derived from a coordinate (health review A, finding 23a). A person writing an override says why here too, in a sentence.",
+      "oneOf": [
+        { "type": "null" },
+        { "type": "string", "minLength": 1, "maxLength": 300 }
+      ]
+    },
     "summary": {
       "description": "Optional, and written by a person when it is there: what this place is, in a sentence or two.",
       "oneOf": [

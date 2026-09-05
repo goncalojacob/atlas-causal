@@ -14,7 +14,7 @@ import {
   entitiesUrl, searchUrl, summaryUrl, sparqlUrl, articleUrl, historyUrl,
   readEntity, parseTime, claimPoint, countLanguageEditions, articleTitles,
   classify, intervalFor, slug, foldName, idFor, namesFor, identityOf,
-  mergeIdentity, ENRICHABLE, matchesFor, nameMatches, datesMatch, laneFor,
+  mergeIdentity, ENRICHABLE, matchesFor, nameMatches, datesMatch, laneFor, laneNote,
   placeRecord, actorRecord, eventRecord, leadRecord, importedSummary,
   nextBatch, advance, emptyState, itemIndex, candidatesMarkdown, ambiguousMarkdown, reportLines, appendReport,
   runImportMode, runReconcileMode, runCandidatesMode,
@@ -300,6 +300,10 @@ test('a lane comes from the point, then from the country, then not at all', asyn
   assert.equal(laneFor(far, { deriveRegion }).how, null, 'no country, no lane, refused');
   const viaCountry = laneFor(far, { deriveRegion, countryPoints: [{ qid: 'Q9000006', point: { lon: 12, lat: 12 } }] });
   assert.equal(viaCountry.region, 'testland');
+  // The note follows the lane: no lane, nothing to explain.
+  assert.equal(laneNote(laneFor(far, { deriveRegion })), null);
+  assert.match(laneNote(viaCountry), /reaches no lane polygon/);
+  assert.match(laneNote(viaCountry, { placeless: true }), /points at no place record/);
   assert.match(viaCountry.how, /Q9000006/);
 });
 
@@ -393,7 +397,13 @@ test('--import creates what it can, refuses the rest, and leaves a cursor', asyn
   assert.equal(event.region, null, 'a placed event takes its lane from the place, at index time');
   const place = await readJson(path.join(dir, 'places', 'far-rock.json'));
   assert.equal(place.region, 'testland');
-  assert.equal((await readJson(path.join(dir, 'places', 'northfield.json'))).region, null, 'a lane the index can derive is not overridden');
+  // A lane a tool gave says so on the record: a later change to the polygons
+  // moves the derived lanes and not this one, and nothing in the file said
+  // which it was holding (health review A, finding 23a).
+  assert.match(place.regionNote, /^Lane written by the Wikidata import \(from Q9000006, the country the item names\): its own point reaches no lane polygon\.$/);
+  const northfield = await readJson(path.join(dir, 'places', 'northfield.json'));
+  assert.equal(northfield.region, null, 'a lane the index can derive is not overridden');
+  assert.equal(northfield.regionNote, null, 'and a derived lane needs no note');
 
   // The lead cache: one file per item and language, named for both.
   assert.deepEqual((await readdir(path.join(cacheDir))).sort().slice(0, 2), ['Q9000001.en.json', 'Q9000001.pt.json']);

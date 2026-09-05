@@ -511,7 +511,7 @@ function envelope(id, kind, created, fields) {
   };
 }
 
-export function placeRecord(read, { id, created, region = null }) {
+export function placeRecord(read, { id, created, region = null, regionNote = null }) {
   const label = read.labels.en ?? read.labels.pt ?? read.qid;
   return envelope(id, 'place', created, {
     ...identityOf(read, created),
@@ -519,6 +519,7 @@ export function placeRecord(read, { id, created, region = null }) {
     names: namesFor(read),
     where: { lon: read.point.lon, lat: read.point.lat, precision: 'point', label },
     region,
+    regionNote: region ? regionNote : null,
     summary: importedSummary(read),
   });
 }
@@ -535,7 +536,7 @@ export function actorRecord(read, { id, created, actorType, when }) {
   });
 }
 
-export function eventRecord(read, { id, created, when, place, region = null }) {
+export function eventRecord(read, { id, created, when, place, region = null, regionNote = null }) {
   return envelope(id, 'event', created, {
     ...identityOf(read, created),
     sources: [{ source: SOURCE_ID, locator: read.qid }],
@@ -544,6 +545,7 @@ export function eventRecord(read, { id, created, when, place, region = null }) {
     when,
     place,
     region,
+    regionNote: region ? regionNote : null,
     // P710 names participants, and who took part is not the same question as
     // what they did in it: `role` is the argument and a person writes it.
     actors: [],
@@ -649,6 +651,18 @@ export function laneFor(point, { deriveRegion, countryPoints = [] } = {}) {
     if (derived) return { region: derived.region, how: `from ${country.qid}, the country the item names`, override: true };
   }
   return { region: null, how: null };
+}
+
+// Why a record carries a lane of its own rather than one derived from a
+// point. A lane a tool gave is not the same fact as one a coordinate gave,
+// and a later change to the polygons will move the derived ones and not these
+// (health review A, finding 23a), so the record says which it is holding.
+export function laneNote(lane, { placeless = false } = {}) {
+  if (!lane || lane.how === null) return null;
+  const why = placeless
+    ? 'this event points at no place record, so the timeline has nothing else to go on'
+    : 'its own point reaches no lane polygon';
+  return `Lane written by the Wikidata import (${lane.how}): ${why}.`;
 }
 
 // --- disk -------------------------------------------------------------------
@@ -893,7 +907,7 @@ export async function runImportMode(dataDir, { fetcher, today, batchSize = BATCH
         refuse(report, qid, 'no lane can be reached from its point or from the country it names; the index could not place it');
         continue;
       }
-      const record = placeRecord(read, { id, created: today, region: lane.region });
+      const record = placeRecord(read, { id, created: today, region: lane.region, regionNote: laneNote(lane) });
       written.push(await writeRecord(dataDir, 'places', record));
       taken.add(id);
       byItem.set(`place:${qid}`, id);
@@ -919,13 +933,14 @@ export async function runImportMode(dataDir, { fetcher, today, batchSize = BATCH
       // already a place of this atlas is placeless and takes a lane instead.
       const place = read.location.map((qid2) => byItem.get(`place:${qid2}`)).find(Boolean) ?? null;
       let region = null;
+      let lane = null;
       if (!place) {
         // Its own point if it has one, else the point of whatever it says it
         // happened at or in — a lane is a coarse enough thing that a
         // location's or a country's point answers it honestly.
         const elsewhere = read.location.concat(read.administrative, read.country).map(pointOf).filter(Boolean);
         const point = read.point ?? elsewhere[0]?.point ?? null;
-        const lane = point ? laneFor(point, { deriveRegion, countryPoints: elsewhere }) : { how: null };
+        lane = point ? laneFor(point, { deriveRegion, countryPoints: elsewhere }) : { how: null };
         // Placeless: the region is not an override but the only thing the
         // timeline has to go on, so it is written even where the point would
         // have derived it.
@@ -935,7 +950,7 @@ export async function runImportMode(dataDir, { fetcher, today, batchSize = BATCH
           continue;
         }
       }
-      const record = eventRecord(read, { id, created: today, when, place, region });
+      const record = eventRecord(read, { id, created: today, when, place, region, regionNote: laneNote(lane, { placeless: true }) });
       written.push(await writeRecord(dataDir, 'events', record));
       taken.add(id);
       report.created.push({ id, qid, kind: 'event', place });

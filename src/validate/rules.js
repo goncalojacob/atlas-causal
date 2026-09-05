@@ -700,6 +700,13 @@ export function checkRules(records, topology = {}, { universe: prebuilt = null }
 
   // --- rule 10: place and region ------------------------------------------
   for (const r of own) {
+    // A note about a lane, with no lane on the record, is a sentence about
+    // the derivation — and the derivation is the index's and not the
+    // record's. `regionNote` says why *this* record overrides it, so it
+    // stands or falls with the override (health review A, finding 23a).
+    if (typeof r.regionNote === 'string' && typeof r.region !== 'string') {
+      error(10, r, '/regionNote', 'a note about the lane belongs beside a lane this record sets; the derived one needs no note');
+    }
     // An event has no coordinates of its own any more: it names a place and
     // the place holds the point. What is left to check on an event is that a
     // placeless one says which lane it belongs to — an actor needs no lane,
