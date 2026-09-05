@@ -208,6 +208,61 @@ export function barBox(event, scale, { width = null, openEnd = null, minBar = 6 
   };
 }
 
+// A binary heap of row indices, ordered by the x each row ends at and then
+// by the index itself — the order the packing's own tie-break asks for. It is
+// written out rather than taken from a generic heap with a comparator
+// argument, because the comparison happens twenty million times in a large
+// pack and a call per comparison is most of what it costs.
+//
+// `ends` is the array the caller keeps the rows' ends in, so the heap holds
+// integers and never objects.
+function makeHeap(ends) {
+  const items = [];
+  // Smaller end first; the earlier row where two end together, which is what
+  // the first fit this replaced chose with a strict `<`.
+  const before = (a, b) => (ends[a] < ends[b] || (ends[a] === ends[b] && a < b));
+  return {
+    get size() { return items.length; },
+    peek: () => items[0],
+    push(value) {
+      let i = items.length;
+      items.push(value);
+      while (i > 0) {
+        const parent = (i - 1) >> 1;
+        if (!before(items[i], items[parent])) break;
+        const t = items[i]; items[i] = items[parent]; items[parent] = t;
+        i = parent;
+      }
+    },
+    // The top after its own end has been moved. Half the work of popping it
+    // and pushing it back, and it is the common case in a saturated pack:
+    // every bar past the cap goes to the emptiest row, which is this one.
+    sink() {
+      const n = items.length;
+      let i = 0;
+      for (;;) {
+        const left = i * 2 + 1;
+        if (left >= n) break;
+        const right = left + 1;
+        let small = before(items[left], items[i]) ? left : i;
+        if (right < n && before(items[right], items[small])) small = right;
+        if (small === i) break;
+        const t = items[i]; items[i] = items[small]; items[small] = t;
+        i = small;
+      }
+    },
+    pop() {
+      const top = items[0];
+      const last = items.pop();
+      if (items.length) {
+        items[0] = last;
+        this.sink();
+      }
+      return top;
+    },
+  };
+}
+
 // Events into as many rows as it takes for no two bars to overlap at this
 // width. First fit, left to right, with one preference: a row that already
 // holds something of the same affinity — the walked chain, or the same place
@@ -216,40 +271,126 @@ export function barBox(event, scale, { width = null, openEnd = null, minBar = 6 
 //
 // Deterministic: the input is sorted by x then by id, so two runs given the
 // same events in a different order pack them identically.
+//
+// **A sweep, not a scan** (health review B, finding 23). The rule is the one
+// above and the answer is the same bar for bar — `tests/lanes.test.mjs`
+// keeps the walk this replaced and holds the two to the same row for every
+// bar, at three caps, with and without the affinity. What changed in H4c is
+// only what is *looked at* to find the row.
+//
+// The items are walked left to right, so the x a row has to clear only ever
+// grows, and a row with room at one item still has room at the next. Every
+// row is therefore in exactly one of two places: *pending*, in a heap
+// ordered by the x it ends at, or *free*, as a bit in a bitset. Each item
+// first moves whatever the sweep has passed from the one to the other, and
+// then:
+//
+//   first fit    the lowest set bit of the bitset — one word per
+//                thirty-two rows, rather than a walk of every row;
+//   affinity     the earliest free row among those that carry the key, from
+//                a short list per key, and never consulted when nothing is
+//                free, since a preference can only pick a free row;
+//   past the cap the emptiest row, which is the pending heap's own top —
+//                ties to the earliest row, as the walk's strict `<` gave.
+//
+// The walk was O(rows) per bar. This is O(log rows), and measurably so past
+// about thirty rows; at the timeline's cap of twenty the two cost the same,
+// which is the point — nothing is paid for the guarantee.
 export function packRows(events, scale, width, {
   gap = 4, minBar = 6, openEnd = null, affinity = null, maxRows = Infinity,
 } = {}) {
   const items = events
     .map((event) => ({ id: event.id, event, ...barBox(event, scale, { width, openEnd, minBar }) }))
     .sort((a, b) => a.x - b.x || byId(a.id, b.id));
-  const rows = [];
   const assigned = new Map();
-  for (const item of items) {
-    const key = affinity ? affinity(item.event) : null;
-    let first = -1;
-    let preferred = -1;
-    for (let i = 0; i < rows.length; i += 1) {
-      if (rows[i].end + gap > item.x) continue;
-      if (first < 0) first = i;
-      if (key !== null && preferred < 0 && rows[i].keys.has(key)) preferred = i;
+  // A row is the x it ends at and nothing else, so the rows are one array of
+  // numbers: what is in a row is `assigned`, and which keys it carries is
+  // `carrying` the other way round.
+  const ends = [];
+  // Which rows are free, as a bitset: one bit per row, thirty-two rows to a
+  // word. It answers the three questions the packing asks — is this row free,
+  // take it, which is the lowest free one — in a few integer operations, and
+  // "the lowest" reads one word per thirty-two rows rather than walking them.
+  const words = [];
+  const isFree = (i) => (words[i >>> 5] & (1 << (i & 31))) !== 0;
+  const setFree = (i) => { words[i >>> 5] |= 1 << (i & 31); };
+  const takeFree = (i) => { words[i >>> 5] &= ~(1 << (i & 31)); };
+  const lowestFree = () => {
+    for (let w = 0; w < words.length; w += 1) {
+      if (words[w] === 0) continue;
+      // The lowest set bit isolated, then which bit it is.
+      return w * 32 + (31 - Math.clz32(words[w] & -words[w]));
     }
-    let index = preferred >= 0 ? preferred : first;
-    if (index < 0) {
-      if (rows.length < maxRows) {
-        rows.push({ end: -Infinity, keys: new Set() });
-        index = rows.length - 1;
-      } else {
-        // Past the cap the bars share a row and stacking draws them as one
-        // with a count, which is what the timeline did before packing
-        // existed. The emptiest row, so the overlap is as small as it can be.
-        index = rows.reduce((best, row, i) => (row.end < rows[best].end ? i : best), 0);
+    return -1;
+  };
+  // The rows the sweep has not passed yet, by the x they end at. Every row is
+  // either free or in here, never both and never neither.
+  const pending = makeHeap(ends);
+  // Which rows ever carried a key, in index order. A place, or the walked
+  // chain, lands in a handful of rows and not in all of them, which is why
+  // this is a short list per key and not a structure per row.
+  const carrying = new Map();
+
+  for (const item of items) {
+    // Everything the sweep has passed is free from here on: `item.x` only
+    // grows, so this is a release and never a re-test. Each row is released
+    // at most once per bar it took, so the whole of this loop over the whole
+    // pack is one pop per bar.
+    while (pending.size && ends[pending.peek()] + gap <= item.x) setFree(pending.pop());
+
+    // The lowest free row is what first fit means, and it is also what says
+    // whether the affinity has anything to choose among: a preference only
+    // ever picks a *free* row, so with none free there is nothing to look up
+    // and the key's own list is not even read. That matters — past the cap
+    // nothing is free for most of a dense pack, and a hash lookup per bar
+    // there would cost more than the walk this replaced.
+    const first = lowestFree();
+    const key = affinity ? affinity(item.event) : null;
+    let list = key === null ? undefined : carrying.get(key);
+    let index = -1;
+    if (first >= 0 && list) {
+      // In index order, so the first free one is the earliest row carrying
+      // the key — which is the row the walk's `preferred` found.
+      for (let i = 0; i < list.length; i += 1) {
+        if (isFree(list[i])) { index = list[i]; break; }
       }
     }
-    rows[index].end = Math.max(rows[index].end, item.x + item.width);
-    if (key !== null) rows[index].keys.add(key);
+    if (index < 0) index = first;
+    const end = item.x + item.width;
+    if (index < 0 && ends.length >= maxRows) {
+      // Past the cap the bars share a row and stacking draws them as one
+      // with a count, which is what the timeline did before packing existed.
+      // The emptiest row, so the overlap is as small as it can be — and with
+      // nothing free every row is pending, so the heap's top is exactly the
+      // row the walk's `reduce` would have found. It stays at the top's own
+      // place and sinks from there rather than leaving and coming back.
+      index = pending.peek();
+      if (end > ends[index]) ends[index] = end;
+      pending.sink();
+    } else {
+      if (index < 0) {
+        if (ends.length % 32 === 0) words.push(0);
+        ends.push(-Infinity);
+        index = ends.length - 1;
+      } else {
+        takeFree(index);
+      }
+      if (end > ends[index]) ends[index] = end;
+      pending.push(index);
+    }
+    if (key !== null) {
+      if (!list) {
+        list = [index];
+        carrying.set(key, list);
+      } else {
+        let at = list.length;
+        while (at > 0 && list[at - 1] > index) at -= 1;
+        if (list[at] !== index) list.splice(at, 0, index);
+      }
+    }
     assigned.set(item.id, index);
   }
-  return { rows: assigned, count: Math.max(rows.length, 1) };
+  return { rows: assigned, count: Math.max(ends.length, 1) };
 }
 
 // The packing as lanes, so the timeline draws one grouping and not two: an

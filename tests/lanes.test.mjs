@@ -251,3 +251,115 @@ test('the packing reads as lanes, unlabelled', () => {
   assert.deepEqual(all, ['a', 'b', 'c']);
   assert.equal(laneOf({ id: 'c' }, lanes).id, 'row-0', 'c is far enough from a to share its row');
 });
+
+// --- the sweep against the scan it replaced -------------------------------
+
+// The first fit as it was written before H4c: every row looked at, for every
+// event. It is kept here, and the sweep is held to it bar for bar, because
+// the packing's promise is a *picture* — which row each bar is in — and a
+// faster way of finding the row is only worth having if it finds the same
+// one. Removing the affinity's preference, or letting the cap pick a row
+// other than the emptiest, fails this.
+function scanRows(events, scale_, width, {
+  gap = 4, minBar = 6, openEnd = null, affinity = null, maxRows = Infinity,
+} = {}) {
+  const byIdent = (a, b) => (a < b ? -1 : a > b ? 1 : 0);
+  const items = events
+    .map((e) => ({ id: e.id, event: e, ...barBox(e, scale_, { width, openEnd, minBar }) }))
+    .sort((a, b) => a.x - b.x || byIdent(a.id, b.id));
+  const rows = [];
+  const assigned = new Map();
+  for (const item of items) {
+    const key = affinity ? affinity(item.event) : null;
+    let first = -1;
+    let preferred = -1;
+    for (let i = 0; i < rows.length; i += 1) {
+      if (rows[i].end + gap > item.x) continue;
+      if (first < 0) first = i;
+      if (key !== null && preferred < 0 && rows[i].keys.has(key)) preferred = i;
+    }
+    let index = preferred >= 0 ? preferred : first;
+    if (index < 0) {
+      if (rows.length < maxRows) {
+        rows.push({ end: -Infinity, keys: new Set() });
+        index = rows.length - 1;
+      } else {
+        index = rows.reduce((best, row, i) => (row.end < rows[best].end ? i : best), 0);
+      }
+    }
+    rows[index].end = Math.max(rows[index].end, item.x + item.width);
+    if (key !== null) rows[index].keys.add(key);
+    assigned.set(item.id, index);
+  }
+  return { rows: assigned, count: Math.max(rows.length, 1) };
+}
+
+// Mulberry32, as the bench harness uses: the same corpus on every machine.
+function seeded(seed) {
+  let a = seed >>> 0;
+  return () => {
+    a = (a + 0x6d2b79f5) >>> 0;
+    let t = Math.imul(a ^ (a >>> 15), 1 | a);
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
+
+test('the sweep packs exactly what the scan packed', () => {
+  const places = ['lisbon', 'porto', 'goa', 'luanda', 'bahia', null];
+  for (const seed of [1415, 1498, 1580, 20260905]) {
+    const random = seeded(seed);
+    const events = [];
+    for (let i = 0; i < 900; i += 1) {
+      const start = 1400 + Math.floor(random() * 180);
+      // A mix of instants and long processes, so bars of every width meet in
+      // one row and the gap decides more than the year does.
+      const long = random() < 0.25;
+      events.push(event(`e${String(i).padStart(4, '0')}`, {
+        start,
+        end: long ? start + Math.ceil(random() * 40) : start,
+        place: places[Math.floor(random() * places.length)],
+      }));
+    }
+    const affinity = (e) => e.place;
+    // Both caps: unbounded, where the rows are many and the sweep is worth
+    // having, and twenty, where the emptiest row has to be picked.
+    for (const maxRows of [Infinity, 20, 3]) {
+      for (const withAffinity of [false, true]) {
+        const options = { gap: 4, maxRows, affinity: withAffinity ? affinity : null };
+        const swept = packRows(events, scale, 1000, options);
+        const scanned = scanRows(events, scale, 1000, options);
+        const where = `seed ${seed}, maxRows ${maxRows}, affinity ${withAffinity}`;
+        assert.equal(swept.count, scanned.count, `${where}: the same number of rows`);
+        assert.deepEqual(
+          [...swept.rows.entries()].sort(),
+          [...scanned.rows.entries()].sort(),
+          `${where}: every bar in the row the scan gave it`,
+        );
+      }
+    }
+  }
+});
+
+test('the sweep still leaves no two bars overlapping, at a thousand events', () => {
+  const random = seeded(1572);
+  const events = [];
+  for (let i = 0; i < 1000; i += 1) {
+    const start = 1400 + Math.floor(random() * 400);
+    events.push(event(`e${String(i).padStart(4, '0')}`, { start, end: start + Math.floor(random() * 6) }));
+  }
+  const { rows, count } = packRows(events, scale, 1000, { gap: 4 });
+  assert.ok(count > 1);
+  const boxes = new Map(events.map((e) => [e.id, barBox(e, scale, {})]));
+  const byRow = new Map();
+  for (const [id, r] of rows) {
+    if (!byRow.has(r)) byRow.set(r, []);
+    byRow.get(r).push(boxes.get(id));
+  }
+  for (const [r, list] of byRow) {
+    list.sort((a, b) => a.x - b.x);
+    for (let i = 1; i < list.length; i += 1) {
+      assert.ok(list[i].x >= list[i - 1].x + list[i - 1].width + 4, `row ${r}: bar ${i} overlaps`);
+    }
+  }
+});
