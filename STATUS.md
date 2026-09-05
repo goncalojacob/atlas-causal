@@ -6,6 +6,79 @@ session ends. `ARCHITECTURE.md` is the target; this file is the position.
 
 ## Last updated
 
+2026-09-05, after H5b (`docs/health/h5b-brief.md`), the health cycle's
+twelfth run, on `m0`: **`authors` is attribution and nothing else.** Whether
+a record has been read, which process wrote it, and whom the licence asks to
+be named were three facts read off one author name matched against a literal
+string, in four places. They are three fields now, every record on disk
+carries them, and the four predicates read them. 1716 records rewritten once
+through the migration chain, `data/index/` rebuilt, 832 tests.
+
+**Migration 004 wrote the envelope, and wrote nothing.** Every value it put
+on a record it read off that record: `origin` from the writer named *first*
+in `authors` — the creator, since the assistant's later `summary-drafted`
+pass appends itself — `review.status: draft` from the draft marker,
+`retraction: { on, reason }` from the sentence M21 and M22 wrote into
+`review.note`, and `sitelinks` reshaped to `{ count, on }`. No historical
+text was written or changed anywhere in this run. 1040 records `cshapes`,
+246 `wikidata`, 430 `assistant`, none absent: nothing under `data/` was
+written by a person yet. 485 drafts, the same 485 as before, because the
+migration put the status exactly where the marker was and the queue was not
+to move on the day the definition did. 175 tombstones now carry their reason
+in a field nothing deletes; the one note that said something else *before*
+the retraction kept that half. Applied to disk with `apply.mjs` in the same
+commit, and verified against the tree itself — all 1716 records roll back to
+their pre-migration bytes and forward again to these.
+
+**The four predicates.** Rule 12's licence hole, the review queue's
+`isDraft`, the Wikidata import's `handWritten` and the CShapes import's
+`ownedBy` all read `src/origin.js` now: a leaf module beside `kinds.js` and
+`vocab.js` holding the writers a record's `origin.tool` may name, the two
+`review.status` values, and the questions asked of them, checked against the
+schema's own enums by test. A person named exactly like the CShapes import
+can no longer relicense an actor, and a contribution or a later import that
+arrives unread is in the review queue, which it was not before (health review
+A, finding 8).
+
+**An import never rewrites a record a person has signed.** A CShapes re-run
+rebuilds an actor from the dataset and carries forward only `created` and the
+three identity fields, so rewriting a signed record would erase the
+signature, the reviewer's corrections and their name in one pass (review of
+the health plan, finding 4). It skips the file, says so in the run's notes
+and carries on — one signed territory does not stop the other 1039 — and the
+removal pass never sees it. The Wikidata enrichment does the same and reports
+`left alone`. Two tests, one per import; the CShapes one asserts the file is
+byte for byte as the reviewer left it.
+
+**Rules 27, 28 and 29** are the three things no schema can say: a retraction
+is present exactly on a tombstone, `reviewed` names who signed it, and a
+record an automated writer made carries `origin`. The last is the half of
+"written once, by whatever created the record" that shows in a single record;
+the other half is `CREATOR_ONLY` in `tools/import/identity.mjs`, held disjoint
+from `ENRICHABLE` by test.
+
+**Sign keeps the citation checks.** The dashboard's flow is tick, then Sign,
+and Sign deleted `review` whole: the ticks a reviewer had just made went with
+the flags, and the validator's headline count could never fall through the
+dashboard (health review A, finding 7). `flags` and `note` are the reviewer's
+to clear; the audit trail is theirs to keep. Sign also writes `status` and
+`signedBy`, and Retract asks for the reason before it writes anything.
+
+**The licence boundary is readable by something other than a person.**
+`src/licensing.js` says which licence covers which directory and whom each
+asks to be named; the same table is in the manifest under `licenses` and at
+the head of `data/LICENSE`, and a test holds the three together and to rule
+12. An NC-derived actor card and entry page now carry the attribution line
+the licence asks for, which they never did (review A, finding 24).
+
+**What was not done.** `data/index/` and every record under `data/` were this
+run's to rewrite and nothing else touched them; the `world` branch was not
+looked at. Event `names` is held to a shape by rule 18 but the search does
+not fold it yet — that is the search shard's, and plan decision 5. The
+licence enum still allows `PD`, `CC0-1.0` and `ODbL-1.0`, which no directory
+accepts; shrinking the enum or growing rule 12 is the owner's call and is in
+`ARCHITECTURE.md`'s open list. Ten deviations, 255 to 264.
+
 2026-09-05, after H4c (`docs/health/h4c-brief.md`), the health cycle's
 eleventh run, on `m0` after H4a and H4b: **the timeline keeps its nodes,
 everything past the margin is one path per row, the two traversals are
@@ -4193,6 +4266,81 @@ gave that to the map and the timeline, and M25 did not widen it.
      same shape `/__status` returns, and `saveBundle()` called without a
      store — the one-shot path, which still waits — returns the file list as
      before.
+
+255. **`apply.mjs` validates the tree as `read.mjs` will present it, not the
+     bytes it is about to write.** For the ordinary run — the chain's end —
+     those are the same records and nothing changed. For `--to 2` they are
+     not, and it is the forward one that matters, since every tool reads
+     through the chain. Without this, migration 4 — the first step that
+     reshapes a field rather than adding a key — would have taken `--to`
+     down with it: a tree at step 2 carries `sitelinks` as a number, which
+     today's schema refuses, so the reversible pair 2/3 could never have
+     been written to disk again.
+256. **Migration 4's `down` refuses per record instead of the step being
+     marked irreversible.** `down: null` is the precedent (migration 1), and
+     it would have been honest — `review.status: reviewed`, `signedBy` and
+     `origin: { tool: 'form' }` have no shape before this step — but it
+     would also have ended `--to` for the whole chain. Instead `down`
+     inverts what `up` wrote and throws on what it did not: a signed record,
+     or a retraction whose reason or date `up` would not read out of a note
+     again. The pair is exact where it applies and refuses where it is not,
+     which is more than `null` would have said.
+257. **The `sitelinks` reshape landed with migration 004 and not with the
+     schema commit** the brief's checklist puts it in. Reshaping the key in
+     the schemas one commit before the records change it would leave the
+     tree failing its own schema for a commit, which the run protocol
+     forbids at every commit. The previous H5b attempt made the same call
+     for the same reason and said so in its commit message.
+258. **`handWritten` keeps the exact set of records it had, which is "no
+     import created this".** Read literally, `origin` says the assistant is
+     an automated writer and its drafts are not hand-written — but the
+     predicate's one caller is the Wikidata matching pass, and the
+     assistant's drafts are precisely the records with no identifier that
+     want one. It is `!importWritten`, which is byte for byte the set the
+     author-name version chose, and `src/origin.js` says why in the comment
+     rather than leaving the name to imply otherwise.
+259. **Rule 29 keeps the three old author strings, in `WRITER_NAMES`, for
+     that rule alone.** Nothing decides a licence, a review status or an
+     import's ownership by reading them any more. What the rule asks is
+     whether a creator wrote `origin` — because a machine-authored record
+     without it falls silently out of the queue and out of rule 12's hole,
+     which is the failure the whole move was for. The list goes when the
+     last of those names leaves `authors`.
+260. **Retract asks for a reason, which is a change to `review.html` the
+     brief did not name.** Rule 27 requires a retracted record to say why,
+     so the writer has to have one; a `window.prompt` before anything is
+     written, and a blank one stops. The records a retraction carries with
+     it get the mechanical reason (rule 11 made them follow) rather than an
+     argument nobody made about them.
+261. **`regionNote` is written from here and not migrated onto the 238
+     records that already carry an override.** The brief lists exactly four
+     things migration 004 does and this is not one of them. Every one of
+     those 238 was written by the Wikidata import, so the note could be
+     derived — but "which country's point it took the lane from" is not on
+     the record and would have to be guessed, and a guess is what this field
+     exists to replace.
+262. **Event `names` is held to a shape by rule 18 and not folded into the
+     search.** The schema shipped in this milestone's first commit said rule
+     18 checked it, and rule 18 looked at places only; that is now true. The
+     search half is plan decision 5 and belongs to the search shard — the
+     topology's event projection does not carry `names`, and widening it is
+     the spine's business and not this run's.
+263. **The licence enum still allows `PD`, `CC0-1.0` and `ODbL-1.0`, which
+     no directory accepts.** Health review A, finding 24, offers shrinking
+     the enum or growing rule 12, and which of the two is the owner's call.
+     `tests/licensing.test.mjs` asserts the direction that matters — every
+     licence a directory *does* accept is one the attribution table can
+     name — and the gap is in `ARCHITECTURE.md`'s open list.
+264. **Four fixture edits, none of them to make a test pass.** The fixture
+     tree was migrated to chain 4 like `data/`, because a tree a migration
+     behind is the thing the chain exists to prevent; the retracted fixture
+     edge gained a `retraction`, because rule 27 now requires one of every
+     tombstone and the fixture tree has to satisfy the rules; its reason is
+     phrased as M21's were so that the 2/3 round-trip through the writer is
+     still exact; and the counts in `migrate-apply.test.mjs` grew from one
+     changed file to four, which is the same assertion over a tree that now
+     gives migration 4 something to do. The byte-identity round-trip test in
+     `bundle.test.mjs` was not touched.
 
 ## Dates to verify
 

@@ -90,7 +90,7 @@ export async function apply(dataDir, { to = LATEST, dryRun = false, schemaDir = 
   // chain, so the schemas a tree at step 2 has to satisfy are the ones its
   // records satisfy after step 4, not before it. Validating the older bytes
   // instead would make any migration that changes a shape — rather than only
-  // adding a key — unable to be rolled back at all (STATUS.md, deviation 245).
+  // adding a key — unable to be rolled back at all (STATUS.md, deviation 255).
   const regions = await readRegions(dataDir);
   const polygons = await readRegionPolygons(dataDir);
   const schemas = await readSchemaFiles(schemaDir);
