@@ -2184,6 +2184,16 @@
       "label": "natural disaster",
       "note": "Added in M20 from the import report, where 2 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
     },
+    "Q8465": {
+      "kind": "event",
+      "label": "civil war",
+      "note": "Added in M40a from the import report, where 9 ticked world candidate(s) were refused under it. Every one of them is an event of a kind M40's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata: this sandbox has no network to read it with."
+    },
+    "Q10931": {
+      "kind": "event",
+      "label": "revolution / civil war",
+      "note": "Added in M40a from the import report, where 13 ticked world candidate(s) were refused under it. Every one of them is an event of a kind M40's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata: this sandbox has no network to read it with."
+    },
     "Q11122": {
       "kind": "event",
       "label": "treaty of the European Union",
@@ -2205,6 +2215,11 @@
     "Q40231": {
       "kind": "event",
       "label": "election"
+    },
+    "Q41397": {
+      "kind": "event",
+      "label": "genocide",
+      "note": "Added in M40a from the import report, where 5 ticked world candidate(s) were refused under it. Every one of them is an event of a kind M40's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata: this sandbox has no network to read it with."
     },
     "Q43059": {
       "kind": "event",
@@ -2240,6 +2255,21 @@
       "label": "attempted murder",
       "note": "Added in M20 from the import report, where 1 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
     },
+    "Q103495": {
+      "kind": "event",
+      "label": "historical period / world war",
+      "note": "Added in M40a from the import report, where 2 ticked world candidate(s) were refused under it. Every one of them is an event of a kind M40's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata: this sandbox has no network to read it with."
+    },
+    "Q114380": {
+      "kind": "event",
+      "label": "financial crisis",
+      "note": "Added in M40a from the import report, where 1 ticked world candidate(s) were refused under it. Every one of them is an event of a kind M40's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata: this sandbox has no network to read it with."
+    },
+    "Q124734": {
+      "kind": "event",
+      "label": "rebellion / civil war",
+      "note": "Added in M40a from the import report, where 7 ticked world candidate(s) were refused under it. Every one of them is an event of a kind M40's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata: this sandbox has no network to read it with."
+    },
     "Q131569": {
       "kind": "event",
       "label": "treaty"
@@ -2259,6 +2289,11 @@
       "label": "wildfire",
       "note": "Added in M20 from the import report, where 3 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
     },
+    "Q175331": {
+      "kind": "event",
+      "label": "rebellion",
+      "note": "Added in M40a from the import report, where 2 ticked world candidate(s) were refused under it. Every one of them is an event of a kind M40's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata: this sandbox has no network to read it with."
+    },
     "Q178561": {
       "kind": "event",
       "label": "battle"
@@ -2273,6 +2308,16 @@
       "label": "oil spill",
       "note": "Added in M20 from the import report, where 1 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
     },
+    "Q273120": {
+      "kind": "event",
+      "label": "civil war / rebellion",
+      "note": "Added in M40a from the import report, where 2 ticked world candidate(s) were refused under it. Every one of them is an event of a kind M40's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata: this sandbox has no network to read it with."
+    },
+    "Q350604": {
+      "kind": "event",
+      "label": "civil war / rebellion",
+      "note": "Added in M40a from the import report, where 2 ticked world candidate(s) were refused under it. Every one of them is an event of a kind M40's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata: this sandbox has no network to read it with."
+    },
     "Q365680": {
       "kind": "event",
       "label": "assault",
@@ -2286,6 +2331,11 @@
     "Q486972": {
       "kind": "place",
       "label": "human settlement"
+    },
+    "Q625298": {
+      "kind": "event",
+      "label": "peace treaty",
+      "note": "Added in M40a from the import report, where 5 ticked world candidate(s) were refused under it. Every one of them is an event of a kind M40's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata: this sandbox has no network to read it with."
     },
     "Q806824": {
       "kind": "event",
@@ -2307,10 +2357,25 @@
       "label": "natural disaster",
       "note": "Added in M20 from the import report, where 1 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
     },
+    "Q864113": {
+      "kind": "event",
+      "label": "proxy war / civil war",
+      "note": "Added in M40a from the import report, where 3 ticked world candidate(s) were refused under it. Every one of them is an event of a kind M40's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata: this sandbox has no network to read it with."
+    },
     "Q891854": {
       "kind": "event",
       "label": "bomb attack",
       "note": "Added in M20 from the import report, where 1 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
+    },
+    "Q1006311": {
+      "kind": "event",
+      "label": "war of national liberation",
+      "note": "Added in M40a from the import report, where 2 ticked world candidate(s) were refused under it. Every one of them is an event of a kind M40's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata: this sandbox has no network to read it with."
+    },
+    "Q1020018": {
+      "kind": "event",
+      "label": "stock market crash",
+      "note": "Added in M40a from the import report, where 1 ticked world candidate(s) were refused under it. Every one of them is an event of a kind M40's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata: this sandbox has no network to read it with."
     },
     "Q1128324": {
       "kind": "event",
@@ -2326,6 +2391,16 @@
       "kind": "event",
       "label": "occurrence"
     },
+    "Q1323212": {
+      "kind": "event",
+      "label": "insurgency / rebellion",
+      "note": "Added in M40a from the import report, where 2 ticked world candidate(s) were refused under it. Every one of them is an event of a kind M40's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata: this sandbox has no network to read it with."
+    },
+    "Q1412901": {
+      "kind": "event",
+      "label": "secret treaty",
+      "note": "Added in M40a from the import report, where 1 ticked world candidate(s) were refused under it. Every one of them is an event of a kind M40's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata: this sandbox has no network to read it with."
+    },
     "Q1475448": {
       "kind": "event",
       "label": "regicide",
@@ -2335,9 +2410,19 @@
       "kind": "place",
       "label": "big city"
     },
+    "Q1646218": {
+      "kind": "event",
+      "label": "international environmental agreement",
+      "note": "Added in M40a from the import report, where 1 ticked world candidate(s) were refused under it. Every one of them is an event of a kind M40's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata: this sandbox has no network to read it with."
+    },
     "Q1656682": {
       "kind": "event",
       "label": "event"
+    },
+    "Q1691434": {
+      "kind": "event",
+      "label": "United Nations treaty / international human rights instrument / multilateral treaty",
+      "note": "Added in M40a from the import report, where 4 ticked world candidate(s) were refused under it. Every one of them is an event of a kind M40's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata: this sandbox has no network to read it with."
     },
     "Q2223653": {
       "kind": "event",
@@ -2363,6 +2448,16 @@
       "kind": "event",
       "label": "legislative election",
       "note": "Added in M20 from the import report, where 8 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
+    },
+    "Q2659056": {
+      "kind": "event",
+      "label": "colonial war",
+      "note": "Added in M40a from the import report, where 1 ticked world candidate(s) were refused under it. Every one of them is an event of a kind M40's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata: this sandbox has no network to read it with."
+    },
+    "Q2723958": {
+      "kind": "event",
+      "label": "influenza pandemic",
+      "note": "Added in M40a from the import report, where 1 ticked world candidate(s) were refused under it. Every one of them is an event of a kind M40's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata: this sandbox has no network to read it with."
     },
     "Q2911369": {
       "kind": "event",
@@ -2414,6 +2509,11 @@
       "actorType": "institution",
       "label": "business"
     },
+    "Q5381350": {
+      "kind": "event",
+      "label": "environmental protocol",
+      "note": "Added in M40a from the import report, where 1 ticked world candidate(s) were refused under it. Every one of them is an event of a kind M40's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata: this sandbox has no network to read it with."
+    },
     "Q5510053": {
       "kind": "event",
       "label": "murder",
@@ -2429,10 +2529,25 @@
       "label": "leadership election",
       "note": "Added in M20 from the import report, where 5 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
     },
+    "Q6934728": {
+      "kind": "event",
+      "label": "peace treaty / multilateral treaty",
+      "note": "Added in M40a from the import report, where 4 ticked world candidate(s) were refused under it. Every one of them is an event of a kind M40's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata: this sandbox has no network to read it with."
+    },
+    "Q7157512": {
+      "kind": "event",
+      "label": "peace conference",
+      "note": "Added in M40a from the import report, where 1 ticked world candidate(s) were refused under it. Every one of them is an event of a kind M40's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata: this sandbox has no network to read it with."
+    },
     "Q7232773": {
       "kind": "event",
       "label": "Portuguese legislative election",
       "note": "Added in M20 from the import report, where 45 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
+    },
+    "Q7883019": {
+      "kind": "event",
+      "label": "undeclared war",
+      "note": "Added in M40a from the import report, where 1 ticked world candidate(s) were refused under it. Every one of them is an event of a kind M40's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata: this sandbox has no network to read it with."
     },
     "Q9557810": {
       "kind": "event",
@@ -2453,6 +2568,11 @@
       "kind": "event",
       "label": "parliamentary election in the Azores",
       "note": "Added in M20 from the import report, where 13 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
+    },
+    "Q11514315": {
+      "kind": "event",
+      "label": "historical period / economic crisis / world war / proxy war",
+      "note": "Added in M40a from the import report, where 4 ticked world candidate(s) were refused under it. Every one of them is an event of a kind M40's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata: this sandbox has no network to read it with."
     },
     "Q12367307": {
       "kind": "event",
@@ -2503,6 +2623,11 @@
       "label": "São Tomé and Príncipe legislative election",
       "note": "Added in M20 from the import report, where 1 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
     },
+    "Q25906438": {
+      "kind": "event",
+      "label": "attempted coup d'état / rebellion / civil war",
+      "note": "Added in M40a from the import report, where 5 ticked world candidate(s) were refused under it. Every one of them is an event of a kind M40's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata: this sandbox has no network to read it with."
+    },
     "Q27865981": {
       "kind": "event",
       "label": "legislative package of the European Union",
@@ -2513,10 +2638,20 @@
       "label": "hurricane",
       "note": "Added in M20 from the import report, where 1 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
     },
+    "Q47461344": {
+      "kind": "event",
+      "label": "constitutive treaty / United Nations treaty",
+      "note": "Added in M40a from the import report, where 2 ticked world candidate(s) were refused under it. Every one of them is an event of a kind M40's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata: this sandbox has no network to read it with."
+    },
     "Q102100590": {
       "kind": "event",
       "label": "NATO operation",
       "note": "Added in M20 from the import report, where 1 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
+    },
+    "Q104212151": {
+      "kind": "event",
+      "label": "series of wars",
+      "note": "Added in M40a from the import report, where 2 ticked world candidate(s) were refused under it. Every one of them is an event of a kind M40's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata: this sandbox has no network to read it with."
     },
     "Q107434304": {
       "kind": "event",
