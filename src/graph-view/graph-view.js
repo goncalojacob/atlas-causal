@@ -160,16 +160,11 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
 
   // The working set — what the reader is holding — is asked of emphasis.js
   // once per state and not once per caller. It runs the convergence query,
-  // and the arrangement, the stacking and the drawing all need it.
-  let workingFor = null;
-  let workingIs = null;
-  const workingOf = (s) => {
-    if (s !== workingFor) {
-      workingFor = s;
-      workingIs = workingSet(atlas, s);
-    }
-    return workingIs;
-  };
+  // and the arrangement, the stacking and the drawing all need it. The cache
+  // this view kept for itself moved into `emphasis.js` in H4c, where the map
+  // and the timeline share it: three views asking the same question of the
+  // same state now walk the graph once between them, not once each.
+  const workingOf = (s) => workingSet(atlas, s);
   // And what of it may never be swallowed by a stack, nor left without a
   // place to stand when the band moves away from it. The graph, unlike the
   // map, never stacks the reachable set: the horizon is the answer this
