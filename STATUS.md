@@ -38,8 +38,9 @@ index build and rides in the digest, because a record cannot see it.
 
 **A record now comes with its history.** `data/index/history/<id>.json`: what
 changed at each version and when each signature was added, built from the
-repository's own commits where there are any (566 ms of the index build's
-1.4 s) and from the record's `created` and `revised` where there are none. A
+repository's own commits where there are any — 312 ms of the index build's
+566 on this dataset, against 254 without them — and from the record's
+`created` and `revised` where there are none. A
 version is identified by the record's own content and never by the commit
 that carried it, so a build made before a change is committed agrees with one
 made after. A `git log` endpoint on `tools/serve.mjs` was refused, as A31
@@ -5173,3 +5174,4 @@ H6a started 2026-09-05T22:30:04Z by scheduled
 H6a done
 
 H6b started 2026-09-05T23:14:21Z by scheduled
+H6b done
