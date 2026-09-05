@@ -6,6 +6,17 @@ session ends. `ARCHITECTURE.md` is the target; this file is the position.
 
 ## Last updated
 
+On the branch `world`, 2026-09-05, after M40a (`docs/m40-brief.md`): **the
+world Portugal answered to is imported.** 154 queries for 1890–2025 with no
+geographic restriction returned **1,873 candidates**; a rule, not a hand, kept
+**120** of them — the most sitelinks this atlas does not already hold, with a
+floor of the six best of every decade from the 1890s to the 2020s — and the
+import created **91 events**, every one with `origin: wikidata`,
+`review.flags: ["imported-facts"]` and its Wikipedia lead cached. Twenty-nine
+were refused for want of a lane and are named below. No edges yet: that is
+M40b, and until then the 91 are `degree-zero` warnings. The rest of this
+section is `m0`'s and this paragraph does not touch it.
+
 2026-09-05, after H1a (`docs/health/h1a-brief.md`), the health cycle's first
 run: **four defects the two reviews of 5 September found in the reader's walk,
 and the byte that made a source file unreadable to `grep`.** Code only;
@@ -2911,6 +2922,52 @@ gave that to the map and the timeline, and M25 did not widen it.
      finally arrives. It is not state and never reaches the URL: whether one
      request failed on this machine is not part of what a link describes.
 
+191. **The world candidate list is `docs/wikidata-candidates.md`, not
+     `docs/m40-candidates.md`.** The M40 brief names the second file. The
+     Action runs `node tools/import/wikidata.mjs --candidates` with no `--to`,
+     so the tool wrote its own default, `CANDIDATES_FILE`; the workflow takes
+     the mode from the branch name and nothing else, and giving it a
+     per-milestone destination is a change to a file `m0` also carries. The
+     list is what the brief asked for and it is under the name the tool uses.
+     Reverse by passing `--to` from the workflow, once somebody wants the two
+     lists side by side.
+
+192. **Twenty-nine of the 120 ticked candidates are not imported, because a
+     placeless event has no lane.** An event that names no place record takes
+     its timeline lane from a point: its own `P625`, else the point of a
+     location, an administrative unit or a country it names. These 29 have
+     none the import can reach — a war fought across four countries carries no
+     coordinate, and a `P276` location's point is never fetched, because only
+     `P17`/`P131` are looked up for their points (and only 25 of those per
+     batch). So they are refused rather than given a lane by guess, which is
+     the tool obeying its own rule. They are: the Spanish–American, First
+     Sino-Japanese, Philippine–American, Russo-Japanese, First and Second
+     Balkan, Polish–Soviet, Winter, Six-Day, Soviet-Afghan, Iran–Iraq, First
+     Nagorno-Karabakh, First Chechen and Kosovo Wars; the Balkan Wars and the
+     Yugoslav Wars as series; the Cold War, the Arab Spring and the War on
+     Terrorism; the Entente Cordiale, the Sykes–Picot Agreement, the Antarctic
+     Treaty System, CITES, the Kyoto Protocol and the European Charter for
+     Regional or Minority Languages; HIV/AIDS, the 1918–1920 flu pandemic, the
+     2009 swine flu pandemic and the 2007–2008 financial crisis. Every one is
+     still ticked and still in the seeds file's `items`; they sit in the
+     import cursor's `done`, so a run that fixes this has to rewind them as
+     M40a rewound the 63 the class table unblocked. **This is the owner's
+     call**, because the fix is a change to `tools/import/wikidata.mjs` — read
+     a `P276` location's point, or let a placeless event take a region the
+     seeds file names — and not to any table. A war with no ground is a real
+     question for a map, not only a bug.
+
+193. **`data/index/` moves on `world`, because the Action commits it.** The
+     M40 brief says never to commit the index on this branch, so that the
+     merge into `m0` needs one index-rebuild commit rather than a conflict.
+     But `import-wikidata.yml` rebuilds and validates the index inside every
+     batch it commits, and `tests/validate-cli.test.mjs` runs
+     `validate.mjs --index` against the repository — so a merge that stripped
+     the index back would leave `node --test` red, which the run is also
+     required to keep green. The index on `world` is therefore the Action's,
+     never this run's own commit, and it is current: `--index` passes. Reverse
+     by rebuilding it once on top of the merge into `m0`, exactly as planned.
+
 
 ## Dates to verify
 
@@ -3393,3 +3450,4 @@ H1b started 2026-09-05T11:42:53Z by scheduled
 M40a started 2026-09-05T11:57:48Z by scheduled (branch world)
 M40a resumed 2026-09-05T19:48:38Z by scheduled (branch world)
 M40a resumed 2026-09-05T21:02:41Z by scheduled (branch world)
+M40a done
