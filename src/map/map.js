@@ -9,7 +9,7 @@ import { svg } from '../util/dom.js';
 import { fitBounds, WORLD, viewBboxIn, bboxTransform } from './projection.js';
 import { createLandLayer } from './layers/land.js';
 import { createPresencesLayer } from './layers/presences.js';
-import { chainEdges } from '../chain.js';
+import { chainEdges, walkOrSelect } from '../chain.js';
 import { createEventsLayer } from './layers/events.js';
 import { DEEPEST_ZOOM } from '../cluster.js';
 import { resolveWindow } from '../util/window.js';
@@ -78,7 +78,10 @@ export function createMap(container, { atlas, state, onCluster = null }) {
   // keyboard.
   const events = createEventsLayer(eventsGroup, projection, {
     pointOf: atlas.pointOf,
-    onSelect: (id) => state.set({ selected: id, chain: [] }),
+    // One rule for the three pictures: a click on a consequence of what is
+    // open follows that link, anything else starts afresh (chain.js). The map
+    // draws the consequence line and then refused to follow it.
+    onSelect: (id) => walkOrSelect(state, atlas, id),
     onCluster: (cluster) => {
       if (onCluster) onCluster(cluster);
       if (cluster.splittable) {

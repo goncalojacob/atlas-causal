@@ -25,7 +25,7 @@ import { svg, svgTitle } from '../util/dom.js';
 import { formatInterval, formatYear } from '../util/dates.js';
 import { overlaps, resolveWindow } from '../util/window.js';
 import { convergence } from '../graph.js';
-import { chainEdges as walkedEdges } from '../chain.js';
+import { chainEdges as walkedEdges, walkOrSelect } from '../chain.js';
 import { horizonSet, horizonBand } from '../horizon.js';
 import { narrativeSet } from '../narrative.js';
 import { lensSet } from '../lens.js';
@@ -318,14 +318,11 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
     zoomTo(stack.centre, Math.max(stack.coreZoom ?? 0, transform.k * CLUSTER_ZOOM_STEP));
   }
 
-  // Clicking on a consequence of the selected event walks the chain;
-  // clicking anywhere else starts afresh, as the map does.
-  function select(id) {
-    const s = state.get();
-    const step = s.selected ? (atlas.adjacency.out.get(s.selected) ?? []).find((edge) => edge.to === id) : null;
-    if (step) state.set({ chain: [...s.chain, step.id], selected: id });
-    else state.set({ selected: id, chain: [] });
-  }
+  // Clicking on a consequence of the selected event walks the chain; clicking
+  // anywhere else starts afresh. The rule was written here first and lives in
+  // chain.js now, so the map and the timeline answer the same click the same
+  // way (health review B, finding 10).
+  const select = (id) => walkOrSelect(state, atlas, id);
 
   // The map's viewport narrows the timeline, and this view has no viewport of
   // its own to be narrowed by: the graph is arranged by year and by band, and

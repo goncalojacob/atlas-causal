@@ -32,3 +32,29 @@ export function retractedSteps(atlas, chain) {
   if (stood === chain.length) return 0;
   return atlas.edges.has(chain[stood]) ? chain.length - stood : 0;
 }
+
+// --- one click, three pictures ---------------------------------------------
+//
+// Clicking a mark that is a consequence of the event already open means
+// "follow that link", and it means it wherever the reader is standing. The
+// graph knew this and the map and the timeline did not: a click on the Alvor
+// mark from the Carnation Revolution left `?selected=alvor-agreement-1975`
+// with the walk thrown away, while the same click in the graph appended the
+// step — and the map had just drawn the consequence line the reader was
+// following (health review B, finding 10).
+//
+// `walkPatch` is the rule, pure: the patch a click on `id` makes. Anything
+// that is not a step out of what is open starts afresh, which is what a click
+// on an unrelated mark has always meant.
+export function walkPatch(atlas, state, id) {
+  const chain = state.chain ?? [];
+  const step = state.selected
+    ? (atlas.adjacency.out.get(state.selected) ?? []).find((edge) => edge.to === id)
+    : null;
+  return step ? { selected: id, chain: [...chain, step.id] } : { selected: id, chain: [] };
+}
+
+// And the rule applied, which is what the three views call.
+export function walkOrSelect(state, atlas, id) {
+  state.set(walkPatch(atlas, state.get(), id));
+}

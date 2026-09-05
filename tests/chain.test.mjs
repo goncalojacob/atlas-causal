@@ -4,7 +4,7 @@
 
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { chainEdges, retractedSteps } from '../src/chain.js';
+import { chainEdges, retractedSteps, walkPatch, walkOrSelect } from '../src/chain.js';
 
 const edge = (id, status = 'active') => [id, { id, status, from: `${id}-from`, to: `${id}-to` }];
 const atlas = {
@@ -36,4 +36,51 @@ test('a step that names no edge at all is not a retraction', () => {
   assert.deepEqual(chainEdges(atlas, typo).map((e) => e.id), ['a--b--caused']);
   assert.equal(retractedSteps(atlas, typo), 0);
   assert.equal(retractedSteps(atlas, ['a--b--caused']), 0, 'nothing was dropped');
+});
+
+// --- one click, three pictures ---------------------------------------------
+//
+// A click on a mark that is a consequence of the event already open follows
+// that link. The graph did it and the map and the timeline threw the walk
+// away, while the map had just drawn the line the reader was following
+// (health review B, finding 10).
+
+const walkable = {
+  adjacency: {
+    out: new Map([
+      ['revolution', [{ id: 'revolution--alvor--caused', to: 'alvor' }, { id: 'revolution--elections--caused', to: 'elections' }]],
+      ['alvor', [{ id: 'alvor--war--caused', to: 'war' }]],
+    ]),
+  },
+};
+
+test('a consequence of what is open is a step; anything else starts afresh', () => {
+  assert.deepEqual(
+    walkPatch(walkable, { selected: 'revolution', chain: [] }, 'alvor'),
+    { selected: 'alvor', chain: ['revolution--alvor--caused'] },
+  );
+  // And the next one goes on the end of the walk so far.
+  assert.deepEqual(
+    walkPatch(walkable, { selected: 'alvor', chain: ['revolution--alvor--caused'] }, 'war'),
+    { selected: 'war', chain: ['revolution--alvor--caused', 'alvor--war--caused'] },
+  );
+  // An event that does not follow from what is open is a fresh start, walk
+  // and all: the chain is one argument and this is not part of it.
+  assert.deepEqual(
+    walkPatch(walkable, { selected: 'revolution', chain: ['x'] }, 'goa'),
+    { selected: 'goa', chain: [] },
+  );
+  // Nothing open, and a cause rather than a consequence: also a fresh start.
+  assert.deepEqual(walkPatch(walkable, { selected: null, chain: [] }, 'alvor'), { selected: 'alvor', chain: [] });
+  assert.deepEqual(walkPatch(walkable, { selected: 'alvor', chain: [] }, 'revolution'), { selected: 'revolution', chain: [] });
+  // A state with no chain at all is a state with an empty one.
+  assert.deepEqual(walkPatch(walkable, { selected: 'revolution' }, 'alvor'),
+    { selected: 'alvor', chain: ['revolution--alvor--caused'] });
+});
+
+test('walkOrSelect is that rule, applied to the store', () => {
+  const patches = [];
+  const store = { get: () => ({ selected: 'revolution', chain: [] }), set: (p) => patches.push(p) };
+  walkOrSelect(store, walkable, 'elections');
+  assert.deepEqual(patches, [{ selected: 'elections', chain: ['revolution--elections--caused'] }]);
 });

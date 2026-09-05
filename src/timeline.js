@@ -30,7 +30,7 @@ import { resolveWindow, overlaps, decadeOf, zoomWindow } from './util/window.js'
 import { horizonBand, horizonSet } from './horizon.js';
 import { narrativeSet } from './narrative.js';
 import { lensSet } from './lens.js';
-import { chainEdges } from './chain.js';
+import { chainEdges, walkOrSelect } from './chain.js';
 import { lanesFor, rowLanes, laneOf, barBox } from './lanes.js';
 import { eventsInView } from './util/viewport.js';
 
@@ -253,7 +253,9 @@ export function createTimeline(container, { atlas, state, createScale = createLi
   const activate = (bar) => {
     const id = bar.getAttribute('data-id');
     if (id) {
-      state.set({ selected: id, chain: [] });
+      // The same rule the map and the graph follow: a bar that is a
+      // consequence of what is open is a step of the walk (chain.js).
+      walkOrSelect(state, atlas, id);
       return;
     }
     const cluster = drawn.get(bar.getAttribute('data-cluster'));

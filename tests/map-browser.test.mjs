@@ -185,3 +185,51 @@ test('an event with no place is in view when its region\'s box is', { skip }, as
     assert.ok(!shown.bars.includes('fixture-event-f'), 'and out of them when the map is elsewhere');
   });
 });
+
+// --- one click, three pictures --------------------------------------------
+
+// A click through the real path: the layers listen for `click` and find the
+// mark under the pointer, so the event has to reach the element itself.
+const clickOn = (selector) => `
+  const el = document.querySelector(${JSON.stringify(selector)});
+  if (!el) throw new Error('nothing at ' + ${JSON.stringify(selector)});
+  const b = el.getBoundingClientRect();
+  const at = { bubbles: true, cancelable: true, clientX: b.left + b.width / 2, clientY: b.top + b.height / 2 };
+  el.dispatchEvent(new PointerEvent('pointerdown', { ...at, pointerId: 3 }));
+  el.dispatchEvent(new PointerEvent('pointerup', { ...at, pointerId: 3 }));
+  el.dispatchEvent(new MouseEvent('click', at));
+  return true;`;
+
+const CHAIN = 'return new URLSearchParams(location.search).get("chain");';
+
+// The map drew the consequence line and then refused to follow it: the same
+// click walked the chain in the graph and threw it away here (health review
+// B, finding 10).
+test('a click on a consequence walks the chain on the map and on the timeline', { skip }, async () => {
+  await wide(async (page, url) => {
+    await open(page, url('?fixtures=1&selected=fixture-event-a'), READY);
+
+    await page.eval(clickOn('#map circle.mark[data-id="fixture-event-b"]'));
+    await waitFor(page, CHAIN, 'the map click to append a step');
+    assert.equal(await page.eval(CHAIN), 'fixture-event-a--fixture-event-b--caused');
+    assert.equal(await page.eval('return new URLSearchParams(location.search).get("selected");'), 'fixture-event-b');
+
+    // And on again from the timeline, which followed the map's old rule.
+    await page.eval(clickOn('#timeline rect.bar[data-id="fixture-event-d"]'));
+    await waitFor(
+      page,
+      'return (new URLSearchParams(location.search).get("chain") ?? "").split(",").length === 2;',
+      'the timeline click to append the next step',
+    );
+    assert.equal(
+      await page.eval(CHAIN),
+      'fixture-event-a--fixture-event-b--caused,fixture-event-b--fixture-event-d--enabled',
+    );
+
+    // A mark that does not follow from what is open starts afresh, walk and
+    // all: the chain is one argument and this is not part of it.
+    await page.eval(clickOn('#map circle.mark[data-id="fixture-event-g"]'));
+    await waitFor(page, 'return new URLSearchParams(location.search).get("selected") === "fixture-event-g";', 'a fresh start');
+    assert.equal(await page.eval(CHAIN), null);
+  });
+});
