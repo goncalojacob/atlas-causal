@@ -6,7 +6,54 @@ session ends. `ARCHITECTURE.md` is the target; this file is the position.
 
 ## Last updated
 
-2026-09-05, after M28 (`docs/m28-brief.md`): **four things off the backlog —
+2026-09-05, after H1a (`docs/health/h1a-brief.md`), the health cycle's first
+run: **four defects the two reviews of 5 September found in the reader's walk,
+and the byte that made a source file unreadable to `grep`.** Code only;
+nothing under `data/` moved and `data/index/` was not rebuilt.
+
+**The band stays where the reader put it.** Choosing an event from the search
+box used to narrow the window to end at that event's year — 79 of 137 bars
+faded, and eight of the nine consequences the reader was about to follow drawn
+as outside the window, which is the first thing a curious person does. It now
+widens only when the year is outside: `containsYear` in `src/util/window.js`
+answers whether the band already holds a year, and a null bound is open at its
+end. `windowAt` is untouched, because "map at 1911" in the panel really is an
+instruction to move the far end (B8, and finding 6 of the plan's review).
+
+**The horizon belongs to the record it was asked about.** Nothing cleared it,
+so a year set on the war in Angola lit twelve marks downstream of whatever was
+clicked next, and a click on the sea cleared the selection while leaving
+`?horizon=2000` in the link. One rule in the store: a patch that moves
+`selected` to a different id and does not name `horizon` itself drops it. A
+click on the record already open, or a change of the window, the lens or the
+view, keeps it; reading mode, which moves both at once, wins (B9).
+
+**A failed fetch is no longer the answer for the rest of the session.**
+`record()` and `loadGeometry()` cached the promise, rejected or not, so one
+dropped request left an event reading "Could not load the record text" and a
+century of borders blank until the page was reloaded — reopening the record
+made no second attempt. Both drop the entry when the promise rejects, and only
+when it is still theirs. The territories layer swallowed the rejection
+outright, which was worse: nothing is cleared while a shard loads, so the
+reader was left looking at another year's borders with no way to know it. It
+reports the failure once, the map says so beside the picture in a
+`.map-note`, and it is unsaid when a shard arrives (B13, A14).
+
+**A shared walk is cut at a step that has been retracted since.**
+`atlas.edges` holds every edge the topology carries, tombstones included, and
+`?chain=` was checked for shape and never for status. `src/chain.js` is now
+the one place that rule lives; `main.js` cuts the walk once at load, so the
+URL, the breadcrumb and the three pictures describe the same argument, and the
+card says a step was withdrawn. No edge under `data/` is retracted yet — this
+was latent — but the fixtures carry one and the browser test walks it (B34).
+
+**And `grep` reads `src/validate/rules.js` again.** A literal NUL byte in a
+template string made the file binary; the run protocol's amendment of 4
+September had blamed the sandbox for it. Two other files held one for the same
+reason, all three are now U+001F written as an escape, and `site.test.mjs`
+fails on any control byte under `src/`, `tools/` or `tests/`.
+
+Before that, M28 (`docs/m28-brief.md`): **four things off the backlog —
 a phone layout, a container on sources, reordering a narrative's steps, and
 `narratives.html`.**
 
@@ -1362,6 +1409,18 @@ overnight runs and the hourly shepherd keep off each other's toes on `m0`.
    which is the shortest card and the strongest claim that the summary is
    what to read first. `openSection` in `src/panel/sections.js` is the one
    function that decides it.
+18. **Next build: H1b** (`docs/health/h1b-brief.md`) — the panel's render key,
+   the URL writes coalesced to a frame, and `popstate` restoring the whole
+   state from the URL. Then H1c and H2, in that order, on `m0`; H5a and H5b
+   may run beside them on their own branches
+   (`docs/health-plan-2026-09-05.md`).
+19. **Owner: say whether the map's note is the right place for a failed
+   shard.** `.map-note`, top right of the map, only when a shard of borders
+   will not load: "The territories could not be loaded; the borders drawn are
+   the last that arrived." It cannot be dismissed and it disappears by
+   itself when one arrives. The other reading is that a failed request
+   belongs in the panel with the record it broke, which would put it in front
+   of a reader who is not looking at the map at all.
 
 ## Open questions
 
@@ -2804,6 +2863,55 @@ gave that to the map and the timeline, and M25 did not widen it.
      wants; the brief also says the page is "generated at render from the
      index, like `sources.html`", which the other reading cannot be.
 
+186. **The walk is *cut* at a retracted step rather than filtered.** The brief
+     says "a shared chain is filtered to active edges". Lifting a withdrawn
+     step out of the middle of a walk leaves the steps after it hanging off
+     nothing: they were reached *through* it, and the breadcrumb would draw a
+     path nobody could have walked. So `chainEdges` stops at the first step
+     that does not stand, which is what `state.js` already does when a step
+     is not an edge id at all. Filtering and cutting differ only for a
+     retraction in the middle; for one at the end they are the same.
+
+187. **The cut happens at load, in `main.js`, and the panel is told through a
+     predicate.** Finding 34 names `main.js` "after the atlas loads" and the
+     brief offers "`src/state.js` or the panel's chain resolution" — but a
+     cut at parse time erases the evidence the panel is asked to report, and
+     a cut at render time only would leave `state.chain` longer than the walk
+     that is drawn, so `chain-to` and Back would index the wrong step. Both
+     halves are therefore needed: `main.js` cuts the state once, and hands
+     `createPanel` a `walkWasCut(state)` closure that answers true while that
+     same shortened walk and the record it opened on are still what is open.
+     Every view resolves through `chain.js` as well, so nothing draws a
+     retracted step even if one reaches the state another way.
+
+188. **`containsYear` is an export of `src/util/window.js`, not a private
+     function in the search box.** The brief puts item 1 in `src/search-box.js`
+     and says `windowAt` is not changed. `windowAt` is not changed. But "does
+     the band already hold this year" is the same kind of pure question as
+     everything else in that file, and in the search box it would have been
+     untestable without a browser; it is now ten lines of `state.test.mjs`
+     beside the `windowAt` case that still stands.
+
+189. **Three files carried a NUL byte, not the one the brief names.**
+     `src/contribute/bundle.js` and `tools/migrate-places.mjs` each used the
+     same separator for the same purpose, and each was equally unreadable to
+     `grep` — the whole point of item 5. Fixing one and leaving two would
+     have left the amendment of 4 September ("`grep` can print nothing in the
+     sandbox") true, and it is not a sandbox. `site.test.mjs` now fails on
+     any control byte under `src/`, `tools/` or `tests/`, so this cannot come
+     back quietly.
+
+190. **The territories failure is said on the map, not in the panel.** The
+     brief says `presences.js` "says once that territories failed". A layer
+     that writes prose into its own SVG would be the only one that does, and
+     the panel is a card about a record rather than a place for the state of
+     a request. The layer reports the failure through an `onFailed` callback,
+     `map.js` owns the sentence in a `.map-note` beside the picture — the
+     same shape as the graph's existing note — and it is unsaid when a shard
+     finally arrives. It is not state and never reaches the URL: whether one
+     request failed on this machine is not part of what a link describes.
+
+
 ## Dates to verify
 
 Everything below was written from memory and is where the owner's review
@@ -3278,3 +3386,4 @@ M28 started 2026-09-05T01:58:23Z by scheduled
 M28 done
 
 H1a started 2026-09-05T11:21:38Z by scheduled
+H1a done

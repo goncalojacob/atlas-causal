@@ -823,6 +823,7 @@ atlas-causal/
 │   ├── data.js                   ● manifest → topology (whole) → record text on demand; lookup tables, adjacency of events by edge and of actors by relation, events by actor and by place, an event's point through its place
 │   ├── graph.js                  ● consequences, ancestors, convergence, shortest paths outward and what an event led to by a year; pure functions over adjacency
 │   ├── horizon.js                ● pure: the traversal and the horizon year put together; what the panel lists and the views light
+│   ├── chain.js                  ● pure: the walked chain against the status of its steps; cut at the first that has been retracted, since the later ones were reached through it
 │   ├── citation.js               ● pure: a source as a citation, its identifiers as links, a bibliography's order
 │   ├── markdown.js               ● pure: the closed Markdown subset a `body` is written in; everything outside it comes out as text
 │   ├── cluster.js                ● pure: which marks overlap at this zoom, which of them no zoom can part, which are held out of the grouping, and how the links between two groups merge; the timeline uses it in one dimension and the graph in two
