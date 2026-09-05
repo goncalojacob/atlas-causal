@@ -25,6 +25,7 @@ import { overlaps, withMargin } from '../../src/util/window.js';
 import { buildAdjacency, reachableBy, convergence } from '../../src/graph.js';
 import { horizonSet, horizonResults, SHOWN } from '../../src/horizon.js';
 import { buildSearchIndex, search } from '../../src/search.js';
+import { pickerIndex } from '../../src/contribute/picker.js';
 
 // --- the generator ---------------------------------------------------------
 
@@ -406,6 +407,39 @@ function benchSearch() {
 
 }
 
+// The reference picker's keystroke, minus the drawing: the scan over one
+// kind's entries and the year, place and degree looked up for the eight rows
+// that come back. What this replaced was a `<select>` of every record in the
+// atlas, refilled per keystroke — 41,036 options and 1.16 s per key at this
+// size (health review B, finding 6). The drawing is the other half and is
+// measured where it happens, in tests/contribute-browser.test.mjs, which
+// holds the whole keystroke under 100 ms in a real browser.
+function benchPicker() {
+  console.log('the reference picker — one keystroke, over 20 000 events');
+  const events = syntheticEvents(20000, { seed: 20000905 });
+  const places = [...new Set(events.map((e) => e.placeId).filter(Boolean))]
+    .map((id, i) => ({ id, name: `Place ${i}`, names: [`Place ${i}`], status: 'active' }));
+  // One and a half edges per event, which is this dataset's own density: the
+  // degree beside a hit is counted off them.
+  const edges = syntheticEdges(events).map((e) => ({ ...e, status: 'active' }));
+  const index = pickerIndex({ topology: { events, edges, places, actors: [], sources: [] } });
+  // The first keystroke pays for the grouping and the degree table; the ones
+  // after it are what a contributor spends most of their typing on. Both are
+  // reported, because the first is the one a form is judged by.
+  const cold = pickerIndex({ topology: { events, edges, places, actors: [], sources: [] } });
+  const scan = (idx, query) => {
+    const rows = search(idx.entriesOf('events'), query, { limit: 8 }).groups.flatMap((g) => g.items);
+    for (const row of rows) idx.describe(row);
+    return rows.length;
+  };
+  const first = performance.now();
+  const found = scan(cold, 'e');
+  row('the first keystroke, indexes cold', { best: performance.now() - first, runs: 1 }, `→ ${found} rows`);
+  for (const query of ['e', 'ev', 'event 1']) {
+    row(`the scan and the rows, "${query}"`, measure(() => scan(index, query)), `→ ${search(index.entriesOf('events'), query, { limit: 8 }).total} matches`);
+  }
+}
+
 // --- the tools -------------------------------------------------------------
 //
 // The three the health review timed and H4d is about: the cross-record rules
@@ -498,6 +532,7 @@ const CASES = {
   timeline: benchTimeline,
   queries: benchQueries,
   search: benchSearch,
+  picker: benchPicker,
 
   rules: benchRules,
   'build-index': benchBuildIndex,

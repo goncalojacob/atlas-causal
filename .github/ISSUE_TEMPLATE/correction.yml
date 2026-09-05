@@ -11,14 +11,21 @@ body:
   - type: markdown
     attributes:
       value: |
-        Use this when a record already in the atlas is wrong. Load it from `data/<kind>s/<id>.json`,
-        change what is wrong, and paste the **whole record**, keeping its `id`: a correction that
-        changes the id creates a second record for the same thing, which is the one mistake nothing
-        downstream can undo.
+        Use this when a record already in the atlas is wrong. **Edit this record**, on the record's
+        own card and at the top of its entry page, opens the contribution form on its fields: change
+        the one that is wrong and the form produces the bundle below. Doing it by hand works too —
+        load `data/<kind>s/<id>.json`, change what is wrong, and paste the **whole record**.
+
+        Either way the `id` stays as it is: a correction that changes the id creates a second record
+        for the same thing, which is the one mistake nothing downstream can undo. The bundle is the
+        whole record and not a list of changed fields, because the contribution format is the
+        storage format (principle 5) — what changes is one field, what travels is the record.
 
         A wrong record is never deleted. If the record should not exist at all, say so in the notes
         and leave the fix to the reviewer: the record becomes a tombstone that still resolves old
-        links, rather than a hole in everyone's bookmarks.
+        links, rather than a hole in everyone's bookmarks. You do not have to work out what else
+        would have to go with it — a retraction accepted here carries the links into and out of the
+        record, and the walks through them, and says so on the pull request.
   - type: textarea
     id: bundle
     attributes:
