@@ -154,3 +154,28 @@ test('a second place under a name the atlas already has is caught in the form', 
     assert.match(label, /different place/);
   });
 });
+
+// The other end of the pipeline: the address a pull request body carries, so
+// that a maintainer reading a stranger's diff has one link to the page the
+// review actually happens on rather than a queue to find the record in
+// (health review A, finding 30).
+test('?open= opens the record the pull request names, not the first in the queue', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    const wanted = '1911-portuguese-constituent-national-assembly-election';
+    await open(page, url(`review.html?open=${wanted}`), 'return document.querySelectorAll(".editor").length > 0;');
+    assert.deepEqual(await page.eval(`return {
+      id: document.querySelector(".record-id").textContent,
+      title: document.querySelector(".editor .field-title input").value,
+      current: document.querySelector(".queue-item.current .queue-id")?.textContent ?? null,
+    };`), {
+      id: `event · ${wanted}`,
+      title: '1911 Constituent Assembly election',
+      current: wanted,
+    });
+
+    // An id that names nothing says so, and opens the queue's own first
+    // record rather than pretending the address was right.
+    await open(page, url('review.html?open=no-such-record-anywhere'), 'return document.querySelectorAll(".editor").length > 0;');
+    assert.match(await page.eval('return document.querySelector(".save-note")?.textContent ?? "";'), /no-such-record-anywhere/);
+  });
+});

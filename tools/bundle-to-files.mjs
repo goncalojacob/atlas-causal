@@ -26,6 +26,7 @@ import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { SLUG, EDGE_ID, RELATION_ID } from '../src/validate/rules.js';
 import { checkBundleShape } from '../src/contribute/bundle.js';
+import { inEnvelopeOrder } from '../src/validate/migrate.js';
 import { KIND_DIRS } from './lib/read.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -190,10 +191,37 @@ function opener(login, name) {
   return { name: (typeof name === 'string' && name.trim()) || login, github: login };
 }
 
+// The flag every contributed record carries into the review queue. A
+// maintainer filtering the dashboard by it sees exactly what arrived from
+// outside and has not been read yet.
+export const CONTRIBUTED = 'contributed';
+
+// What a contribution's `review` block says. Three things, and each of them
+// is a fact about how far the record has been read rather than a claim about
+// the world: nobody has read it (`draft`, which is what puts it in the
+// queue), it came from outside (`contributed`), and this is the issue it came
+// from. Before H6a it said none of them — the merged record was
+// indistinguishable from a maintainer's own, the queue never saw it, and the
+// pull request was the whole audit trail (health review A, finding 30).
+//
+// What a person did to the record before is kept: the citations they ticked
+// and the signatures they left are history, and history is not the Action's
+// to delete. `status` going back to `draft` is what says the record has
+// changed since and wants reading again.
+export function reviewFor(record, { existing = null, issue = null } = {}) {
+  const before = existing?.review;
+  const kept = before !== null && typeof before === 'object' && !Array.isArray(before) ? before : {};
+  const flags = [...new Set([...(Array.isArray(kept.flags) ? kept.flags : []), CONTRIBUTED])].sort();
+  const review = { ...kept, status: 'draft', flags };
+  review.note = issue === null ? kept.note ?? null : `issue #${issue}`;
+  if (review.note === null) delete review.note;
+  return review;
+}
+
 // Provenance is not the contributor's to assert (finding 9): the handle
 // comes from the issue opener and the dates from the clock. A correction
 // keeps the original authors and appends the person correcting it.
-export function applyProvenance(record, { author, today, existing = null }) {
+export function applyProvenance(record, { author, today, existing = null, issue = null }) {
   const incoming = Array.isArray(record.authors) ? record.authors : [];
   if (existing) {
     const previous = Array.isArray(existing.authors) ? existing.authors : [];
@@ -202,15 +230,73 @@ export function applyProvenance(record, { author, today, existing = null }) {
       : [...previous, opener(author, incoming[0]?.name)];
     record.created = typeof existing.created === 'string' ? existing.created : today;
     record.revised = today;
+    // `origin` is written once, by whatever created the record (rule 29): a
+    // correction is not the creation, so what the file already says stands.
+    if (existing.origin !== undefined) record.origin = existing.origin;
+    else delete record.origin;
   } else {
     record.authors = [opener(author, incoming[0]?.name)];
     record.created = today;
     record.revised = null;
+    // Which writer made this record: the contribution pipeline, which is what
+    // `form` names in the schema's own enum.
+    record.origin = { tool: 'form' };
   }
-  return record;
+  record.review = reviewFor(record, { existing, issue });
+  return inEnvelopeOrder(record);
 }
 
-export async function bundleToFiles(bundle, { dataDir = DEFAULT_DATA, author, today, correction = false } = {}) {
+// Rule 11's cascade, offered instead of enforced.
+//
+// A stranger's correction that says "this event is wrong, retract it" used to
+// bounce out of the Action with rule 11 errors about edges they never saw:
+// an active edge to a retracted event is invalid, and nothing told them so or
+// did anything about it (health review A, finding 29). `retractionPlan` is
+// what the review dashboard runs before it retracts; this runs the same
+// function over the same topology and writes the records the retraction
+// carries with it — the edges into and out of the event, the narratives that
+// walk them — each with the reason that says it followed rather than a
+// second argument nobody made.
+//
+// What it cannot carry, it reports. An actor, a place or a source that other
+// records point *at* would have to be rewritten rather than retracted, and
+// rewriting somebody's record is not a cascade: those come back as blockers,
+// the Action fails, and the plan is in the comment the failure leaves on the
+// issue.
+async function cascadeRetractions({ dataDir, retracted, today: on }) {
+  if (retracted.length === 0) return { written: [], blockers: [] };
+  const { readRecords, readRegions } = await import('./lib/read.mjs');
+  const { buildTopology } = await import('../src/validate/core.js');
+  const { retractionPlan, retractRecord, carriedReason } = await import('../src/review/sign.js');
+
+  const { entries } = await readRecords(dataDir);
+  const topology = buildTopology(entries.map((e) => e.record), await readRegions(dataDir));
+  const fileOf = new Map(entries.map((e) => [e.record.id, path.join(dataDir, e.file)]));
+
+  const written = [];
+  const blockers = [];
+  const done = new Set(retracted.map((r) => r.id));
+  for (const record of retracted) {
+    const plan = retractionPlan(record, topology);
+    for (const blocker of plan.blockers) blockers.push({ ...blocker, because: record.id });
+    for (const item of plan.retract) {
+      if (done.has(item.id)) continue;
+      done.add(item.id);
+      const file = fileOf.get(item.id);
+      if (!file) continue;
+      const before = JSON.parse(await readFile(file, 'utf8'));
+      if (before.status !== 'active') continue;
+      const after = retractRecord(before, { today: on, reason: carriedReason(record.id) });
+      await writeFile(file, `${JSON.stringify(after, null, 2)}\n`, 'utf8');
+      written.push({ path: `data/${KIND_DIRS[item.kind]}/${item.id}.json`, kind: item.kind, id: item.id, carried: record.id });
+    }
+  }
+  return { written, blockers };
+}
+
+export async function bundleToFiles(bundle, {
+  dataDir = DEFAULT_DATA, author, today, correction = false, issue = null,
+} = {}) {
   // GitHub's own rule: alphanumerics and single inner hyphens. Stricter
   // than the schema's pattern for `github` on purpose — this value reaches
   // a git author string in the workflow, and a login starting with a hyphen
@@ -235,14 +321,22 @@ export async function bundleToFiles(bundle, { dataDir = DEFAULT_DATA, author, to
   }
 
   const written = [];
+  // The records this correction turns into tombstones, and were not already:
+  // what the cascade is computed from, after the bundle itself is on disk.
+  const retracted = [];
   for (const item of planned) {
     const existing = item.exists ? JSON.parse(await readFile(item.file, 'utf8')) : null;
-    applyProvenance(item.record, { author, today, existing });
+    const record = applyProvenance(item.record, { author, today, existing, issue });
     await mkdir(item.directory, { recursive: true });
-    await writeFile(item.file, `${JSON.stringify(item.record, null, 2)}\n`, 'utf8');
-    written.push({ path: `data/${item.dir}/${item.id}.json`, kind: item.record.kind, id: item.id, replaced: item.exists });
+    await writeFile(item.file, `${JSON.stringify(record, null, 2)}\n`, 'utf8');
+    written.push({ path: `data/${item.dir}/${item.id}.json`, kind: record.kind, id: item.id, replaced: item.exists });
+    if (correction && record.status === 'retracted' && existing?.status === 'active') retracted.push(record);
   }
-  return written;
+
+  const cascade = correction
+    ? await cascadeRetractions({ dataDir, retracted, today })
+    : { written: [], blockers: [] };
+  return { written, cascade };
 }
 
 function today() {
@@ -262,14 +356,27 @@ async function main(argv) {
   }
   try {
     const bundle = extractBundle(process.env.ISSUE_BODY ?? '');
-    const written = await bundleToFiles(bundle, {
+    const issue = /^[0-9]{1,10}$/.test(process.env.ISSUE_NUMBER ?? '') ? Number(process.env.ISSUE_NUMBER) : null;
+    const { written, cascade } = await bundleToFiles(bundle, {
       dataDir,
       author: process.env.ISSUE_AUTHOR ?? '',
       today: today(),
       correction,
+      issue,
     });
     for (const item of written) console.log(`${item.replaced ? 'replaced' : 'wrote'} ${item.path}`);
     console.log(`${written.length} record(s) from the issue; now run node tools/validate.mjs`);
+    // The plan, either way: what the retraction carried with it, and what it
+    // could not. Both go to stdout, which the workflow tees into the pull
+    // request body on success and into the issue comment on failure.
+    for (const item of cascade.written) {
+      console.log(`retracted ${item.path} — it stands on ${item.carried} (rule 11)`);
+    }
+    if (cascade.blockers.length) {
+      console.error(`${cascade.blockers.length} record(s) point at something this correction retracts, and a retraction cannot carry them:`);
+      for (const b of cascade.blockers) console.error(`  ${b.kind} ${b.id} ${b.why} ${b.because}`);
+      fail('rewrite or retract those records in the same bundle, or leave the record active');
+    }
     return 0;
   } catch (error) {
     console.error(error instanceof BundleError ? error.message : `${error.name}: ${error.message}`);

@@ -9,6 +9,9 @@
 
 import { DRAFT_AUTHOR } from './queue.js';
 import { REVIEW_STATUS } from '../origin.js';
+// A field written here lands where the schemas declare it rather than at the
+// end of the file: a diff should be the field and not a reshuffle.
+import { inEnvelopeOrder } from '../validate/migrate.js';
 
 function isObject(v) {
   return v !== null && typeof v === 'object' && !Array.isArray(v);
@@ -45,25 +48,6 @@ function reviewAfter(record, next) {
   const kept = isObject(citations) && Object.keys(citations).length ? { citations } : {};
   const review = { ...next, ...kept };
   return Object.keys(review).length ? review : undefined;
-}
-
-// Where a key belongs in the envelope, so that a field written here lands
-// where the schemas declare it rather than at the end of the file. The same
-// order `src/validate/migrate.js` inserts by, and the same reason: a diff
-// should be the field and not a reshuffle.
-const ENVELOPE_ORDER = Object.freeze([
-  'schema', 'id', 'kind', 'status', 'supersededBy', 'aliases', 'authors',
-  'license', 'created', 'revised', 'origin', 'retraction', 'review',
-]);
-
-function inEnvelopeOrder(record) {
-  const rank = (key) => {
-    const at = ENVELOPE_ORDER.indexOf(key);
-    return at < 0 ? Infinity : at;
-  };
-  return Object.fromEntries(Object.entries(record)
-    .filter(([, value]) => value !== undefined)
-    .sort((a, b) => rank(a[0]) - rank(b[0])));
 }
 
 // The draft marker is replaced, not appended to: an unreviewed draft that a

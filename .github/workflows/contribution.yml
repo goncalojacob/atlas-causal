@@ -53,6 +53,10 @@ jobs:
         env:
           ISSUE_BODY: ${{ github.event.issue.body }}
           ISSUE_AUTHOR: ${{ github.event.issue.user.login }}
+          # The issue the records came from. It lands in every record's
+          # `review.note`, so a reviewer opening one in the dashboard sees
+          # where it came from without leaving the page.
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
           CORRECTION: ${{ contains(github.event.issue.labels.*.name, 'correction') }}
         run: |
           set -o pipefail
@@ -76,6 +80,17 @@ jobs:
 
       - name: Tests
         run: node --test
+
+      # Before the pull request and not after it. It used to run as a second
+      # comment once the request was already open, so the reviewer read the
+      # diff, then the identifiers, in two sittings (health review A, finding
+      # 30). Best effort, as it always was: a catalogue that is down is not a
+      # contribution that is wrong.
+      - name: Check the identifiers against the catalogues
+        continue-on-error: true
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+        run: node tools/lookup-sources.mjs > "$RUNNER_TEMP/identifiers.md" || true
 
       - name: Branch, commit and push
         env:
@@ -106,11 +121,26 @@ jobs:
             echo "Records from issue #${ISSUE_NUMBER}, opened by @${ISSUE_AUTHOR} and accepted by a maintainer."
             echo
             echo "Written by \`tools/bundle-to-files.mjs\`; \`tools/validate.mjs\` passed before this branch was pushed."
+            echo "Every record arrived flagged \`contributed\` and unread, so it is in the review queue."
             echo "The checklist below is the part no tool does."
+            echo
+            # Where each record is actually reviewed. The dashboard is a
+            # maintainer's page served from a checkout of this branch
+            # (\`node tools/serve.mjs\`), so what is useful here is the
+            # address inside it and not a link off this page.
+            echo "### Open in the review dashboard"
+            echo
+            git diff --name-only main... -- data | sed -n -E 's#^data/(events|edges|actors|places|sources|relations|narratives)/(.*)\.json$#\2#p' | while read -r id; do
+              echo "- \`review.html?open=${id}\`"
+            done
             echo
             echo '```'
             cat "$RUNNER_TEMP/report.log"
             echo '```'
+            if [ -s "$RUNNER_TEMP/identifiers.md" ]; then
+              echo
+              cat "$RUNNER_TEMP/identifiers.md"
+            fi
             echo
             echo "Closes #${ISSUE_NUMBER}"
           } > "$RUNNER_TEMP/pr-body.md"
@@ -134,19 +164,6 @@ jobs:
           } > "$RUNNER_TEMP/accepted.md"
           gh issue comment "$ISSUE_NUMBER" --body-file "$RUNNER_TEMP/accepted.md"
 
-      # A reading aid for the reviewer, never a gate: what the catalogues say
-      # the DOIs and ISBNs actually name. Failure here is not failure.
-      - name: Check the identifiers against the catalogues
-        continue-on-error: true
-        env:
-          GH_TOKEN: ${{ secrets.CONTRIBUTION_PAT }}
-          ISSUE_BODY: ${{ github.event.issue.body }}
-          PR_URL: ${{ steps.pr.outputs.url }}
-        run: |
-          node tools/lookup-sources.mjs > "$RUNNER_TEMP/identifiers.md"
-          if [ -s "$RUNNER_TEMP/identifiers.md" ]; then
-            gh pr comment "$PR_URL" --body-file "$RUNNER_TEMP/identifiers.md"
-          fi
 
       - name: Report the failure on the issue
         if: failure()

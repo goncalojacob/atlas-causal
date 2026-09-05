@@ -15,7 +15,7 @@ import { html } from '../util/dom.js';
 import { expandSpine } from '../data.js';
 import { loadSchemas } from '../validate/schemas.js';
 import {
-  buildQueue, groupByKind, flagCounts, filterQueue, progressOf, isDraft,
+  buildQueue, groupByKind, flagCounts, filterQueue, progressOf, isDraft, labelOf,
 } from './queue.js';
 import { signRecord, retractRecord, retractionPlan, reviewerProblems, normalizeReviewer, bundleOf, carriedReason } from './sign.js';
 import { saveBundle, readStatus } from './save.js';
@@ -486,12 +486,42 @@ function render({ topology, review, schemas, citersOf, searchEntries = null }) {
     }
   });
 
+  // `?open=<id>` opens one record by name. It is what the contribution
+  // pipeline puts in a pull request body: a maintainer reading the diff of a
+  // stranger's records has one link to the page the review actually happens
+  // on, instead of a queue to find the record in (health review A, finding
+  // 30). Any record, not only a queued one — a record somebody has already
+  // signed is still a record to open — and an id that names nothing says so
+  // rather than silently opening something else.
+  function asked(id) {
+    if (!id) return null;
+    const queued = queue.find((item) => item.id === id);
+    if (queued) return queued;
+    // By kind, because an edge out of the spine carries no `kind` of its own:
+    // it is the list it is in that says what it is.
+    for (const [kind, list] of [
+      ['event', topology.events], ['edge', topology.edges], ['actor', topology.actors],
+      ['place', topology.places], ['relation', topology.relations],
+      ['narrative', topology.narratives], ['source', topology.sources],
+    ]) {
+      const record = (list ?? []).find((r) => r.id === id);
+      if (record) return { kind, id, label: labelOf({ ...record, kind }), status: record.status, flags: [], note: null };
+    }
+    return null;
+  }
+
   paintQueue();
   saveButton.disabled = true;
   signButton.disabled = true;
-  // The queue is grouped in kind order; the first record of the first group
-  // is the one a reviewer would open anyway.
-  const first = visible()[0];
+  const wanted = params.get('open');
+  const opening = asked(wanted);
+  // Otherwise the queue is grouped in kind order, and the first record of the
+  // first group is the one a reviewer would open anyway.
+  const first = opening ?? visible()[0];
   if (first) openRecord(first);
+  // After opening, because opening a record clears this line: an address that
+  // names nothing is said out loud rather than silently ignored, and what was
+  // opened instead is the queue's own first record.
+  if (wanted && !opening) noteEl.textContent = `Nothing here has the id ${wanted}.`;
   else progressEl.classList.add('good');
 }

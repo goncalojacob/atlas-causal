@@ -120,7 +120,7 @@ test('unknown kinds and malformed bundles are refused', () => {
 
 test('records are written unchanged except for provenance', async () => {
   const dir = await scratch();
-  const written = await bundleToFiles({ schema: 1, records: [event('fixture-event-new')] }, { ...OPTIONS, dataDir: dir });
+  const { written } = await bundleToFiles({ schema: 1, records: [event('fixture-event-new')] }, { ...OPTIONS, dataDir: dir, issue: 41 });
   assert.deepEqual(written, [{ path: 'data/events/fixture-event-new.json', kind: 'event', id: 'fixture-event-new', replaced: false }]);
 
   const text = await readFile(path.join(dir, 'events', 'fixture-event-new.json'), 'utf8');
@@ -131,6 +131,17 @@ test('records are written unchanged except for provenance', async () => {
   assert.equal(record.revised, null);
   assert.equal(record.summary, 'A synthetic event, written for a test.');
   assert.equal(record.title, 'Fixture event new');
+  // A contribution lands unread, flagged as one, and says which issue it came
+  // from: the merged record used to be indistinguishable from a maintainer's
+  // own and the review queue never saw it (health review A, finding 30).
+  assert.deepEqual(record.review, { status: 'draft', flags: ['contributed'], note: 'issue #41' });
+  assert.deepEqual(record.origin, { tool: 'form' });
+  // And the envelope is in the order the schemas declare it, not with the
+  // new keys tacked on after the body.
+  assert.deepEqual(Object.keys(record).slice(0, 12), [
+    'schema', 'id', 'kind', 'status', 'supersededBy', 'aliases', 'authors',
+    'license', 'created', 'revised', 'origin', 'review',
+  ]);
 
   // A contributor who gave no name is attributed by their handle.
   const dir2 = await scratch();
@@ -155,7 +166,7 @@ test('an existing file is never overwritten outside correction mode', async () =
   );
   assert.equal(await readFile(path.join(dir, 'events', 'fixture-event-other.json'), 'utf8').then(() => 'written', () => 'absent'), 'absent');
 
-  const written = await bundleToFiles(bundle(), { ...OPTIONS, dataDir: dir, correction: true, today: '2026-09-03' });
+  const { written } = await bundleToFiles(bundle(), { ...OPTIONS, dataDir: dir, correction: true, today: '2026-09-03' });
   assert.equal(written[0].replaced, true);
   const corrected = JSON.parse(await readFile(file, 'utf8'));
   assert.equal(corrected.summary, 'A second synthetic summary.');
@@ -167,7 +178,7 @@ test('an existing file is never overwritten outside correction mode', async () =
 
   // Someone else correcting it is appended, not substituted.
   const third = await bundleToFiles(bundle(), { dataDir: dir, author: 'fixture-other', today: '2026-09-04', correction: true });
-  assert.equal(third[0].replaced, true);
+  assert.equal(third.written[0].replaced, true);
   assert.deepEqual(JSON.parse(await readFile(file, 'utf8')).authors, [
     { name: 'Fixture Contributor', github: 'fixture-opener' },
     { name: 'Fixture Contributor', github: 'fixture-other' },
@@ -253,7 +264,7 @@ test('an actor in a bundle is written to data/actors/', async () => {
     when: { start: 1300, end: null },
     where: null,
   };
-  const written = await bundleToFiles({ schema: 1, records: [actor] }, { ...OPTIONS, dataDir: dir });
+  const { written } = await bundleToFiles({ schema: 1, records: [actor] }, { ...OPTIONS, dataDir: dir });
   assert.deepEqual(written.map((w) => w.path), ['data/actors/fixture-actor-new.json']);
   const onDisk = JSON.parse(await readFile(path.join(dir, 'actors', 'fixture-actor-new.json'), 'utf8'));
   assert.deepEqual(onDisk.authors, [{ name: 'Fixture Contributor', github: 'fixture-opener' }]);
@@ -281,11 +292,106 @@ test('a place in a bundle is written to data/places/', async () => {
     region: null,
     summary: null,
   };
-  const written = await bundleToFiles({ schema: 1, records: [place] }, { ...OPTIONS, dataDir: dir });
+  const { written } = await bundleToFiles({ schema: 1, records: [place] }, { ...OPTIONS, dataDir: dir });
   assert.deepEqual(written.map((w) => w.path), ['data/places/fixture-place-new.json']);
   const onDisk = JSON.parse(await readFile(path.join(dir, 'places', 'fixture-place-new.json'), 'utf8'));
   assert.deepEqual(onDisk.authors, [{ name: 'Fixture Contributor', github: 'fixture-opener' }]);
   assert.deepEqual(onDisk.where, place.where);
   // A place id is a plain slug, so the same path checks apply as everywhere.
   assert.throws(() => checkBundle({ schema: 1, records: [{ ...place, id: '../events/x' }] }), /not a slug/);
+});
+
+// Rule 11's cascade, offered by the Action rather than enforced by the
+// validator after the fact. A correction that retracts an event leaves every
+// edge that touches it invalid; before H6a the Action wrote the tombstone and
+// then failed with rule 11 errors about edges the contributor never saw
+// (health review A, finding 29).
+async function atlasOnDisk() {
+  const dir = await scratch();
+  const write = async (sub, id, record) => writeFile(path.join(dir, sub, `${id}.json`), `${JSON.stringify(record, null, 2)}\n`, 'utf8');
+  await writeFile(path.join(dir, 'regions.json'), JSON.stringify([{ id: 'fixture-lane-1', label: 'Lane', order: 1 }]), 'utf8');
+  await write('sources', 'fixture-source-1', {
+    schema: 1, id: 'fixture-source-1', kind: 'source', status: 'active', supersededBy: null, aliases: [],
+    authors: [{ name: 'Fixture Contributor', github: null }], license: 'CC-BY-SA-4.0', created: '1970-01-01', revised: null,
+    type: 'book', creators: ['A Fixture Author'], title: 'A fixture work', year: 1900,
+  });
+  await write('events', 'fixture-event-one', event('fixture-event-one', { when: { start: 1300, end: 1300 } }));
+  await write('events', 'fixture-event-two', event('fixture-event-two', { when: { start: 1400, end: 1400 } }));
+  await write('edges', 'fixture-event-one--fixture-event-two--caused', {
+    schema: 1, id: 'fixture-event-one--fixture-event-two--caused', kind: 'edge', status: 'active',
+    supersededBy: null, aliases: [], authors: [{ name: 'Fixture Contributor', github: null }],
+    license: 'CC-BY-SA-4.0', created: '1970-01-01', revised: null,
+    from: 'fixture-event-one', to: 'fixture-event-two', type: 'caused', confidence: 'probable',
+    explanation: 'A synthetic argument, long enough to be a real explanation of a link.',
+    sources: [{ source: 'fixture-source-1', locator: null }],
+  });
+  return dir;
+}
+
+test('a correction that retracts an event carries its edges with it', async () => {
+  const dir = await atlasOnDisk();
+  const tombstone = event('fixture-event-one', {
+    status: 'retracted',
+    when: { start: 1300, end: 1300 },
+    retraction: { on: '2026-09-05', reason: 'A synthetic reason: this event turned out not to have happened.' },
+  });
+  const { written, cascade } = await bundleToFiles({ schema: 1, records: [tombstone] }, {
+    ...OPTIONS, dataDir: dir, correction: true, today: '2026-09-05', issue: 7,
+  });
+  assert.equal(written.length, 1);
+  assert.deepEqual(cascade.blockers, []);
+  assert.deepEqual(cascade.written, [{
+    path: 'data/edges/fixture-event-one--fixture-event-two--caused.json',
+    kind: 'edge',
+    id: 'fixture-event-one--fixture-event-two--caused',
+    carried: 'fixture-event-one',
+  }]);
+
+  // The edge is a tombstone, and the reason on it says it followed rather
+  // than making a second argument nobody wrote.
+  const edge = JSON.parse(await readFile(path.join(dir, 'edges', 'fixture-event-one--fixture-event-two--caused.json'), 'utf8'));
+  assert.equal(edge.status, 'retracted');
+  assert.equal(edge.retraction.on, '2026-09-05');
+  assert.match(edge.retraction.reason, /^Retracted with fixture-event-one: /);
+  // The contributor's record is not touched by the cascade: its own reason
+  // stands, and the review block is the contribution's.
+  const one = JSON.parse(await readFile(path.join(dir, 'events', 'fixture-event-one.json'), 'utf8'));
+  assert.match(one.retraction.reason, /turned out not to have happened/);
+  assert.deepEqual(one.review, { status: 'draft', flags: ['contributed'], note: 'issue #7' });
+
+  // The whole thing is idempotent: the same correction again finds the edge
+  // already retracted and carries nothing.
+  const again = await bundleToFiles({ schema: 1, records: [tombstone] }, {
+    ...OPTIONS, dataDir: dir, correction: true, today: '2026-09-06', issue: 7,
+  });
+  assert.deepEqual(again.cascade.written, [], 'an edge already retracted is not retracted again');
+});
+
+test('what a retraction cannot carry is reported instead', async () => {
+  const dir = await atlasOnDisk();
+  await writeFile(path.join(dir, 'actors', 'fixture-actor-one.json'), `${JSON.stringify({
+    schema: 1, id: 'fixture-actor-one', kind: 'actor', status: 'active', supersededBy: null, aliases: [],
+    authors: [{ name: 'Fixture Contributor', github: null }], license: 'CC-BY-SA-4.0', created: '1970-01-01', revised: null,
+    names: ['A fixture actor'], actorType: 'person', summary: 'A synthetic actor.',
+    when: { start: 1200, end: 1350 }, sources: [{ source: 'fixture-source-1', locator: null }],
+  }, null, 2)}\n`, 'utf8');
+  const two = event('fixture-event-two', { when: { start: 1400, end: 1400 }, actors: [{ actor: 'fixture-actor-one', role: 'leader' }] });
+  await writeFile(path.join(dir, 'events', 'fixture-event-two.json'), `${JSON.stringify(two, null, 2)}\n`, 'utf8');
+
+  const tombstone = {
+    schema: 1, id: 'fixture-actor-one', kind: 'actor', status: 'retracted', supersededBy: null, aliases: [],
+    authors: [{ name: 'Fixture Contributor', github: null }], license: 'CC-BY-SA-4.0', created: '1970-01-01', revised: null,
+    retraction: { on: '2026-09-05', reason: 'A synthetic reason: two records for one person.' },
+    names: ['A fixture actor'], actorType: 'person', summary: 'A synthetic actor.',
+    when: { start: 1200, end: 1350 }, sources: [{ source: 'fixture-source-1', locator: null }],
+  };
+  const { cascade } = await bundleToFiles({ schema: 1, records: [tombstone] }, {
+    ...OPTIONS, dataDir: dir, correction: true, today: '2026-09-05', issue: 8,
+  });
+  // An event that names the actor would have to be rewritten, not retracted,
+  // and rewriting somebody's record is not a cascade.
+  assert.deepEqual(cascade.written, []);
+  assert.deepEqual(cascade.blockers, [
+    { kind: 'event', id: 'fixture-event-two', why: 'names this actor', because: 'fixture-actor-one' },
+  ]);
 });

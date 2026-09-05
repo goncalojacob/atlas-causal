@@ -77,6 +77,18 @@ function rank(key) {
   return at < 0 ? Infinity : at;
 }
 
+// A record with its envelope keys where the schemas declare them, and
+// everything past the envelope in the order it was written. Exported because
+// three writers need it and each had its own copy of the list: a migration
+// inserting a key, Sign and Retract, and the Action that writes a
+// contribution's records. A key with no rank sorts after all of them, and a
+// key whose value is `undefined` is dropped rather than written as nothing.
+export function inEnvelopeOrder(record) {
+  return Object.fromEntries(Object.entries(record)
+    .filter(([, value]) => value !== undefined)
+    .sort((a, b) => rank(a[0]) - rank(b[0])));
+}
+
 export const MIGRATIONS = Object.freeze([
   {
     version: 1,
