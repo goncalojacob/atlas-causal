@@ -32,6 +32,7 @@ import { horizonBand } from '../horizon.js';
 import { workingSet, heldSet } from '../emphasis.js';
 import { arrangementOf, holdingKey } from './arrangement.js';
 import { layoutGraph, stackLayout, MIN_ZOOM, MAX_ZOOM } from './layout.js';
+import { createLayoutRunner } from './layout-runner.js';
 import { exportButton } from '../share.js';
 
 // Sizes in SVG units at k = 1; divided by k when drawn, so a node keeps its
@@ -197,6 +198,22 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
     'aria-label': 'The graph of events and the links between them',
   }, [viewport]);
 
+  // The one line the reader sees while a first arrangement too large to make
+  // here is being made elsewhere. Never shown at the sizes this atlas holds:
+  // below the runner's threshold the nodes are there before the frame is.
+  const waiting = document.createElement('p');
+  waiting.className = 'graph-note';
+  waiting.hidden = true;
+  waiting.textContent = 'Arranging the graph…';
+
+  // Which arrangement the coordinates in `laid` belong to, which is not
+  // always the one the reader has asked for: while a large one is being made
+  // the last picture stays on screen, and a stacking of it must not be filed
+  // under the key of a layout it was not made from.
+  let laidFor = null;
+  let fitted = false;
+  const runner = createLayoutRunner({ records: { events: atlas.events, edges: atlas.edges } });
+
   // The frame the reader keeps their bearings by: the bands and the year
   // axis. Redrawn only when the arrangement is.
   function drawFrame() {
@@ -220,28 +237,20 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
     }
   }
 
-  function arrange(s) {
-    const { events, lanes, key } = arrangementOf(atlas, s, alonesOf(s));
-    if (key === arrangedFor) return false;
-    arrangedFor = key;
-    const entry = arrangements.get(key) ?? arrangements.set(key, arrangementFor(events, lanes));
-    laid = entry.layout;
-    weights = entry.weights;
-    root.setAttribute('viewBox', `0 0 ${laid.width} ${laid.height}`);
-    drawFrame();
-    return true;
-  }
-
-  function arrangementFor(events, lanes) {
+  // What `layoutGraph` is given: the arrangement's events, and the edges with
+  // both ends in it. An edge with one end removed by the lens, or with one
+  // end outside the band the arrangement covers, has nothing to join.
+  function inputFor(events, lanes) {
     const ids = new Set(events.map((e) => e.id));
-    const layout = layoutGraph({
+    return {
       events,
-      // An edge with one end removed by the lens, or with one end outside the
-      // band the arrangement covers, has nothing to join.
       edges: [...atlas.edges.values()].filter((e) => e.status === 'active' && ids.has(e.from) && ids.has(e.to)),
       lanes,
       extent: atlas.extent,
-    });
+    };
+  }
+
+  function entryFor(layout) {
     return {
       layout,
       weights: {
@@ -249,6 +258,52 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
         max: Math.max(...layout.nodes.map((n) => n.weight), 0),
       },
     };
+  }
+
+  // The arrangement in hand becomes the one on screen.
+  function adopt(entry, key) {
+    laid = entry.layout;
+    laidFor = key;
+    weights = entry.weights;
+    waiting.hidden = true;
+    root.setAttribute('viewBox', `0 0 ${laid.width} ${laid.height}`);
+    drawFrame();
+    // The first picture there has ever been is the one the window is fitted
+    // to, whether it was made here or arrived from the runner's thread.
+    if (!fitted) {
+      fitted = true;
+      fitToWindow();
+    }
+  }
+
+  function arrange(s) {
+    const { events, lanes, key } = arrangementOf(atlas, s, alonesOf(s));
+    if (key === arrangedFor) return false;
+    arrangedFor = key;
+    const cached = arrangements.get(key);
+    if (cached) {
+      adopt(cached, key);
+      return true;
+    }
+    // Small enough to arrange here, which is every corpus this atlas has
+    // held so far and the only path `node --test` can reach (layout-runner).
+    if (!runner.offloads(events.length)) {
+      adopt(arrangements.set(key, entryFor(layoutGraph(inputFor(events, lanes)))), key);
+      return true;
+    }
+    // Otherwise the picture the reader already has stays on screen until the
+    // new one lands, and on the very first arrangement — when there is none —
+    // the frame says what it is doing rather than showing an empty field.
+    if (!laid) waiting.hidden = false;
+    runner.run(inputFor(events, lanes), (layout) => {
+      const entry = arrangements.set(key, entryFor(layout));
+      // The reader may have moved the band again while this was away. The
+      // arrangement is kept either way; it is simply not what is on screen.
+      if (arrangedFor !== key) return;
+      adopt(entry, key);
+      render(state.get(), { force: true });
+    });
+    return laid !== null;
   }
   arrange(state.get());
 
@@ -406,6 +461,7 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
   note.textContent = 'The map is looking at part of the world. The graph has no viewport of its own, so it draws every event; the lanes below are narrowed to what the map can see.';
 
   container.append(root);
+  container.append(waiting);
   container.append(note);
   container.append(exportButton(root, 'graph'));
   container.append(edgeKey());
@@ -420,13 +476,16 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
   let drawnFor = null;
 
   function render(s, { force = false } = {}) {
-    const box = view();
-    const key = renderKey(s, transform.x, transform.y, transform.k,
-      Math.round(box.x0), Math.round(box.y0), Math.round(box.x1), Math.round(box.y1));
     // The arrangement first and always: it is what `laid` is, and it is laid
     // out again whenever its own key moves, whatever this one says. Only the
     // drawing is skipped, and only of a picture already on screen.
     const arranged = arrange(s);
+    // And there is no picture at all until the first arrangement lands, which
+    // it does on this turn at every size this atlas has held (layout-runner).
+    if (!laid) return;
+    const box = view();
+    const key = renderKey(s, transform.x, transform.y, transform.k,
+      Math.round(box.x0), Math.round(box.y0), Math.round(box.x1), Math.round(box.y1));
     if (!force && !arranged && key === drawnFor) return;
     drawnFor = key;
     draw(s);
@@ -492,7 +551,7 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
     // The stacking is kept by the same three things it depends on: which
     // arrangement, how far in, and what may not be swallowed. A wheel notch
     // that returns to a zoom already seen redraws rather than re-clusters.
-    const stackKey = `${arrangedFor}|${k}|${holdingKey(s)}`;
+    const stackKey = `${laidFor}|${k}|${holdingKey(s)}`;
     stacked = stackings.get(stackKey) ?? stackings.set(stackKey, stackLayout(laid, { k, alone }));
     // A stack is in the window if any event under it is, and in the horizon
     // at the band of its nearest member: the same rule the map's stacks
@@ -680,9 +739,13 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
   // so the first drawing zooms to it. Capped: a window of two years filling
   // the width would push the outer bands off the screen, and the bands are
   // what the view is read against (STATUS.md, deviation 54).
-  const fitToWindow = () => {
+  //
+  // A declaration rather than a const, because `adopt` calls it on the first
+  // arrangement, and that may be an arrangement that arrives from elsewhere
+  // long after this line has been read.
+  function fitToWindow() {
     const timeWindow = resolveWindow(state.get(), atlas.extent);
-    if (!timeWindow) return;
+    if (!timeWindow || !laid) return;
     const x0 = laid.scale.x(timeWindow.from);
     const x1 = laid.scale.x(timeWindow.to);
     const span = Math.max(1, Math.abs(x1 - x0));
@@ -693,9 +756,8 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
     const k = Math.min(FIT_ZOOM, laid.width / span);
     transform = { k, x: laid.width / 2 - ((x0 + x1) / 2) * k, y: laid.height / 2 - (laid.height / 2) * k };
     applyTransform();
-  };
+  }
 
-  fitToWindow();
   state.subscribe(render);
   render(state.get());
   return { render, layout: laid, drawn: () => stacked };
