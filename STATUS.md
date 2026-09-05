@@ -6,6 +6,86 @@ session ends. `ARCHITECTURE.md` is the target; this file is the position.
 
 ## Last updated
 
+2026-09-05, after H6a (`docs/health/h6a-brief.md`), the health cycle's
+thirteenth run, on `m0`: **a contributor can find a record among twenty
+thousand, and a correction starts from the record.** Code only; nothing under
+`data/` changed and `data/index/` was not rebuilt. 841 tests.
+
+**The `<select>` of every record in the atlas is gone.** Every reference
+field in the contribution form and in the review editor was one — the events,
+the actors, the places, the sources, and the events *and* links a narrative
+step may point at — and every one of them was refilled on every keystroke:
+41,036 `<option>` elements and 1.16 s per key in the form at twenty thousand
+events, 23,015 across seven controls and 224 ms in the editor (health review
+B, finding 6; A, finding 10). It was unusable long before it was slow.
+Twenty thousand titles in alphabetical order, with no date, no place and no
+sign of what the record already connects to, is not a way to find "the 1911
+election" among nine elections.
+
+**`src/contribute/picker.js` is a typeahead over the search shard**, narrowed
+to the kind the field wants, with the search box's own keys — arrows, Home,
+End, Enter, Escape — and its own ranking. Beside each hit: the kind, the
+years, the place and the degree, which is how much of the atlas already hangs
+on the record. Under a choice: the id that will be written, and the links the
+record already has, in the shape a link is named in everywhere else. Rows
+being written in this bundle come first and are marked; an id pasted from a
+URL finds its record, which searching by name cannot, because a title and its
+slug drift — "25 April" is filed under `carnation-revolution-1974`.
+
+**In a browser, at twenty thousand events, three letters cost 48.5, 6.1 and
+4.3 ms.** The first pays for the by-kind grouping and the degree table, both
+built lazily and once for the page; `tests/contribute-browser.test.mjs` holds
+the whole keystroke — the scan, the lookups and the drawing — under the
+brief's hundred milliseconds, and picks the record with the arrow keys.
+`node tests/bench/run.mjs picker` measures the half that is not the drawing:
+81.3 ms cold, then 1.1–1.3 ms.
+
+**The duplicate search covers every kind, and an identifier settles it.** It
+compared event titles and nothing else, so a second Lisbon, a second Salazar
+or a second edition of one book passed unremarked, and the Wikidata item both
+records claim — the one field that decides the question — was never read
+(review A, finding 10). Names, other-language names, former ids, Wikipedia
+titles and the ids in the atlas are compared now, for every kind that can be
+entered twice; a shared `wikidata`, ISBN or DOI is reported as certainty
+rather than as resemblance. The scan runs a moment after the last key, so a
+burst of typing is one scan and not eight.
+
+**Rule 5 is asked from the new edge's end.** The DAG check swept every active
+edge in the atlas on every keystroke. A page has an atlas that passed rule 5
+on the commit that wrote it, and retracting an edge closes no cycle, so a
+bundle can only close one through an edge it adds: each new active edge is
+asked whether its `from` is already reachable from its `to`. One record
+against a prebuilt universe at twenty thousand events: **39.1 ms → 1.99 ms**,
+19.6×. The sweep stays for the CLI, which validates everything at once and
+has nothing established to lean on.
+
+**"Edit this record", on every card and every entry page.** A correction had
+no form: `?correction=1` switched the issue template and nothing loaded the
+record, so fixing a date meant opening `data/<kind>s/<id>.json` by hand
+(review B, finding 26). `contribute.html?edit=<kind>/<id>` opens the form on
+the record's own fields, its id in the id box and the correction template
+behind the submit button. The address is parsed with the validator's own
+patterns before it becomes a path in a fetch.
+
+**A contribution lands in the review queue.** The merged record used to be
+indistinguishable from a maintainer's own: no flag, no note, nothing in
+`review`, so the queue never saw it and the pull request was the whole audit
+trail (review A, finding 30). Every record the Action writes carries
+`review.status: draft`, the flag `contributed` and the issue it came from,
+and `origin: { tool: 'form' }` where it is new. The identifier check runs
+before the pull request and goes into its body; the body names
+`review.html?open=<id>` for every record, which the dashboard now answers for
+any record by id. And rule 11's cascade is offered rather than enforced after
+the fact: `--correction` runs the dashboard's own `retractionPlan`, writes
+the edges and narratives a retraction carries with it — each with the reason
+that says it followed — and reports what it cannot carry (finding 29).
+
+**What was not done.** Nothing under `data/` was written, `data/index/` is
+byte for byte what H5b left, and the `world` branch was not looked at.
+`CONTRIBUTING.md` still says contributions are closed and the relay that
+would take a bundle without a GitHub account is still the owner's decision
+(review B, finding 26). Nine deviations, 265 to 273.
+
 2026-09-05, after H5b (`docs/health/h5b-brief.md`), the health cycle's
 twelfth run, on `m0`: **`authors` is attribution and nothing else.** Whether
 a record has been read, which process wrote it, and whom the licence asks to
@@ -4341,6 +4421,62 @@ gave that to the map and the timeline, and M25 did not widen it.
      changed file to four, which is the same assertion over a tree that now
      gives migration 4 something to do. The byte-identity round-trip test in
      `bundle.test.mjs` was not touched.
+
+265. **The timeline lane stays a `<select>`.** The brief says the selects
+     go, and every reference field that points into a corpus is a picker
+     now. `region` is not one of those: five lanes, a closed list, and
+     nothing to type at. A typeahead over five options is worse than the
+     control it replaced, so the lane keeps a `<select>` in the form and in
+     the review editor, and `regionChoices` is what fills it.
+266. **The two accounts of a cycle name different records.** The CLI's
+     sweep is Kahn's ordering, and what it leaves stuck is the cycle plus
+     everything reachable only through it, so it names records that are not
+     on the cycle at all. The page's walk names the cycle itself, which is
+     what the contributor has to undo. `tests/universe.test.mjs` holds both
+     to the same verdict on the same bundle and states the difference.
+267. **The incremental rule 5 trusts the atlas it was handed.** It runs
+     only where a prebuilt universe was passed in — a page validating one
+     record against an atlas it loaded — and it assumes that atlas is a
+     DAG, which the validator gates on every commit. A cycle already in the
+     atlas is therefore not reported to the page. It is not the page's
+     question, and the commit that would have introduced one never passed.
+268. **The pull request body carries `review.html?open=<id>` as a path, not
+     as a link.** The dashboard is a maintainer's page served out of a
+     checkout (`node tools/serve.mjs`) and the repository has no canonical
+     dashboard host, so a hyperlink would have to invent one. The address
+     is in a code span, under a heading that says where to paste it. H8
+     puts a banner on `review.html` off localhost, and if the deployed
+     dashboard ever becomes the one people use, this becomes a link.
+269. **A typed name is compared against the atlas's ids; two ids never are.**
+     `carnation-revolution-1974` is titled "25 April", so a name typed into
+     the form has to be compared against ids as well as titles or the
+     duplicate is missed. Comparing one id with another is a different
+     thing — every id is a slug of the title beside it, so it is the two
+     titles again with the punctuation taken out, and it calls half the
+     atlas similar. `comparableOf` keeps the two lists apart for that.
+270. **A correction keeps the signatures and the citation ticks it found.**
+     `review.status` goes back to `draft`, which is what says the record has
+     changed and wants reading again, and `flags` gains `contributed`.
+     `signedBy` and `citations` are history — somebody did read the record,
+     on a day, and H5b's rule is that Sign's audit trail is the reviewer's
+     to keep. Rule 28 only asks for `signedBy` on a record claiming to be
+     reviewed, so a draft carrying one is a record that was read before.
+271. **`editUrl` and `parseEdit` live in `src/share.js`.** The address is
+     the panel's to write and `contribute/main.js`'s to read, and that file
+     is a page bootstrap that cannot be imported without a `window`. Both
+     halves of one address belong together and under test, which is where
+     the other two addresses this project hands out already are.
+272. **The envelope's key order is one list now, in `migrate.js`.** A
+     migration inserting a key, Sign and Retract, and the Action writing a
+     contribution's records each had their own copy. The third would have
+     been a third; `inEnvelopeOrder` is exported from the file that has to
+     define the order anyway.
+273. **The first keystroke in a picker costs about fifty milliseconds.**
+     It builds the by-kind grouping and the degree table, which every
+     keystroke after it reuses at four to six. Under the brief's hundred,
+     and the one number near it: the alternative is building both on page
+     load, which would charge the same to a contributor who never touches a
+     reference field.
 
 ## Dates to verify
 

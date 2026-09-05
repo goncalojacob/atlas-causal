@@ -280,9 +280,11 @@ export function createPicker({
     if (!links.length) return;
     linksEl.hidden = false;
     for (const link of links.slice(0, 6)) {
+      // The same shape a link is named in everywhere else — from, type, to —
+      // with "this" standing where the chosen record does.
       linksEl.appendChild(html('li', {}, link.way === 'out'
-        ? `${link.type} → ${link.other}`
-        : `← ${link.other} ${link.type} this`));
+        ? `this — ${link.type} → ${link.other}`
+        : `${link.other} — ${link.type} → this`));
     }
     if (links.length > 6) linksEl.appendChild(html('li', { class: 'muted' }, `and ${links.length - 6} more`));
   }
