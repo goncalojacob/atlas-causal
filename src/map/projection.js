@@ -37,3 +37,35 @@ export function fitBounds(bounds, { width, height, margin = 0.1 }) {
 }
 
 export const WORLD = Object.freeze([[-180, -90], [180, 90]]);
+
+// --- the viewport, both ways ----------------------------------------------
+//
+// The map pans and zooms with a transform over the projected plane, and the
+// timeline asks its question in degrees. These two turn one into the other,
+// and they live here because the conversion is the projection's own: a
+// Robinson-style replacement would have to bring its own pair, and nothing
+// outside this file would notice.
+
+// The part of the world under a transform, as `[west, south, east, north]`.
+// The screen box is (0,0)–(width,height) in the same units the transform is
+// applied in, which is what the map's `viewBox` promises.
+export function viewBbox(projection, { x = 0, y = 0, k = 1 } = {}, { width, height }) {
+  const [west, north] = projection.unproject([-x / k, -y / k]);
+  const [east, south] = projection.unproject([(width - x) / k, (height - y) / k]);
+  return [west, south, east, north];
+}
+
+// The transform that brings a box on screen, whole and centred. The zoom is
+// clamped by the caller's own limits, so a box smaller than the deepest zoom
+// is shown at that zoom around its middle rather than refused.
+export function bboxTransform(projection, bbox, { width, height, minZoom = 1, maxZoom = Infinity }) {
+  const [west, south, east, north] = bbox;
+  const [x0, y0] = projection.project([west, north]);
+  const [x1, y1] = projection.project([east, south]);
+  const spanX = Math.max(Math.abs(x1 - x0), 1e-9);
+  const spanY = Math.max(Math.abs(y1 - y0), 1e-9);
+  const k = Math.min(maxZoom, Math.max(minZoom, Math.min(width / spanX, height / spanY)));
+  const cx = (x0 + x1) / 2;
+  const cy = (y0 + y1) / 2;
+  return { k, x: width / 2 - cx * k, y: height / 2 - cy * k };
+}
