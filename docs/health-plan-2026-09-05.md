@@ -9,7 +9,7 @@ defects, portability and the pipeline (`docs/health-review-2026-09-05-A.md`,
 sections), B on scale, measured on synthetic datasets of 20 000 and
 100 000 events, the reader's walk and the contributor's path
 (`docs/health-review-2026-09-05-B.md`, 35 findings and a table). The two
-agree on the serious things. This plan folds both.
+agree on the serious things. This plan folds both, and was **revised at 13:00 Lisbon** after an independent Opus review of it (28 findings, `docs/review-2026-09-05-health-plan.md`).
 
 ## What the reviews say, in one paragraph each
 
@@ -56,133 +56,161 @@ whole repository.
 
 ## Decisions the plan takes (owner to confirm or overrule)
 
-1. **The index splits.** A compact *spine* (event id, start and end year,
-   place, region, weight, status; edges as `[from, to, type, confidence]`)
-   that the graph queries read whole, and *attribute shards by period*
-   (titles, actors, wikipedia) fetched for the window. Tombstones keep
-   id, status, `supersededBy` and aliases only. The sources index keeps
-   bibliographic fields and a `citationCount`; citers per source on
-   demand. This amends "topology whole" in `ARCHITECTURE.md`; the
-   convergence guarantee needs only the spine.
-2. **Envelope fields.** `origin: { tool, run? }` for machine writers and
-   `review.status: draft | reviewed` (signature carried in
-   `review.signedBy`), keyed by a migration; `IMPORT_AUTHORS`, `isDraft`
-   and the licence exception move onto them. Sign keeps
-   `review.citations` and never deletes a retraction's reason, which
-   moves to `retraction: { on, reason }`.
-3. **Ids stay derived** (from--to--type for edges and relations) because
-   they guarantee uniqueness and readability; a `tools/migrate/` chain
-   with a numbered, idempotent, validated migration per schema change is
-   the convention, `tools/migrate/001-rename.mjs` its first member, and
-   the validator accepts `schema ≤ SCHEMA_VERSION` running the chain on
-   read.
-4. **Generated pages are committed like the index**: `entry/<id>.html`,
-   `narratives.html` and `sources.html` prerendered by
-   `tools/build-index.mjs` from the same pure functions, the script only
-   enhancing. Still no bundler and still `python3 -m http.server` to run.
-5. **Events get `names`** (rule 18's shape), filled from Wikidata labels
-   by the import where they exist and by hand otherwise; search folds them
-   and the first sentence of the summary at low rank through a small
-   search shard emitted by the index.
-6. **Paths are weighted** by confidence and type in `shortestPaths`, and
-   convergence is grouped by depth with counts. The convergence
-   exclusion set is untouched.
-7. **A generated walk is a narrative without a signature**: `?walk=` in
-   reading mode resolved against `data/walks/` (generated, marked
-   `origin`, never signed) — the shape the Why mode (M35) and an
-   on-demand writer both produce.
-8. **`discuss` and `bbox`**: the discuss link carries the record's URL
-   only; the world box is never written; placeless events are in view
-   when their region's box intersects the viewport.
+1. **The index splits, but less than first written.** A *spine* read whole
+   by every page: for every record its id, kind, status, aliases,
+   `wikidata`; for events `title`, start and end year, `place`, `region`,
+   `weight`, `actors[].actor`, `citationCount`; for actors `name`,
+   `actorType`, `when`; for sources `creators`, `title`, `year`,
+   `citationCount`; for presences `actor`, `when`, `geometry.key`; edges
+   as `[from, to, type, confidence]` with the id synthesised on load
+   (derived ids are now load-bearing); tombstones keep `title`, `when`,
+   `wikidata`. Period *shards* carry what a card or a mark needs beyond
+   that: `wikipedia`, `actors[].role` and `note`, `regionMethod`,
+   `capital`, `presenceType`. Citer rows per source on demand;
+   `retractionPlan` takes a pre-fetched map. A search shard is emitted by
+   the index. The H3 brief carries a table of page × index file. This
+   amends "topology whole" in `ARCHITECTURE.md`; the convergence
+   guarantee needs only the spine.
+2. **Envelope fields.** `origin: { tool, run? }` written only by a
+   record's creator, never by an enrichment pass; `review.status: draft |
+   reviewed` with the signature in `review.signedBy`; `retraction: { on,
+   reason }` that nothing deletes; Sign keeps `review.citations`. The four
+   author-string predicates (rule 12, `isDraft`, the Wikidata import's
+   `handWritten`, the CShapes import's `ownedBy`) move onto them in one
+   commit, and **an import never rewrites a record that carries a human
+   signature**. Migration 001 is additive at `schema: 1`.
+3. **Ids stay derived**; `src/validate/migrate.js` is the pure, ordered
+   migration chain, applied by `tools/lib/read.mjs` and by the browser,
+   with `tools/migrate/apply.mjs` rewriting disk in the same commit as the
+   schema change, and a trivial reversible migration 002 proving the
+   chain. Narrative steps and `review.citations` keys resolve through
+   aliases (A20) before the first rename ships.
+4. **`entry.html?id=` stays the address.** `sources.html`,
+   `narratives.html` and the entries that carry a `body` are prerendered
+   by `tools/build-index.mjs` from the same pure functions and committed
+   like the index, the script only enhancing; the build prints the file
+   count and bytes. No bundler; `python3 -m http.server` still runs it.
+5. **Events get `names`** (rule 18's shape), from Wikidata labels where
+   the import has them and by hand otherwise; search folds them and the
+   first sentence of the summary at low rank through the search shard.
+6. **`shortestPaths` stays by hops.** Ranking by confidence and type is a
+   separate ordering of the answer lists (horizon, convergence grouped by
+   depth with counts); the walked chain never changes silently.
+7. **A generated walk never enters `data/`.** `?walk=` is reserved; a
+   generated path lives in the session only, with a provenance line on
+   the card. The directory question returns with the Why mode (M35).
+8. **`discuss` carries the record's URL only; the world box is never
+   written; placeless events are in view when their region's box, derived
+   at load from `data/geo/regions.json`, intersects the viewport.**
+9. **Unchanged by decision:** the timeline's scale stays as M6 decided;
+   `?chain=` stays a list of edge ids and there is no `?edge=`; the
+   reading-mode URL stays `narrative` and `step`; the store notifies
+   synchronously (URL writes coalesce to a frame); clustering covers the
+   same set as today and only drawing is culled; `sitelinks` becomes
+   `{ count, on }`; `?fixtures=1` stays on the deployed site
+   (`tests/fixtures/data/` allowlisted); the registry is code
+   (`src/kinds.js`, `src/vocab.js`, leaf modules), checked against the
+   schema enums by test.
 
-## Milestones, in order
+## Milestones, in order, one run each
 
-- **H1 — the interaction fixes.** B8 (`windowAt` is a no-op when the year
-  is inside the window), B9 (horizon cleared when the selection changes),
-  B10 (one `walkOrSelect` for map, timeline and graph), B12/A3/A5 (the
-  panel subscribes to openings only; URL writes for replace-type changes
-  debounced to a frame), B14/A6 (Back restores the whole state from the
-  URL and writes it), B15 (placeless events in view by region box; no
-  world box), A4 (pointer maths through `getScreenCTM`; `bbox` from the
-  real visible rectangle; `ResizeObserver`), B13/A14 (failed fetches not
-  cached), B34 (a shared chain filtered to active edges), A33, A34, A32
-  (phone sheet and panes), B11 (marks and bars keyboard-reachable). One
-  commit each, browser tests for each. Code only.
-- **H2 — the registry.** `src/kinds.js` (every per-kind list: directories,
-  schemas, licences, bundle branches, form fields, citation and actor
-  lists, identity and body kinds) and `src/vocab.js` (edge and relation
-  types with labels, order and endpoint rules; groups; focus kinds), from
-  which `state.js`, `rules.js`, `lens.js`, `lanes.js`, `bundle.js`,
-  `read.mjs`, `new-record.mjs` and `bundle-to-files.mjs` import; a test
-  that adding a fixture kind touches only the registry; `src/emphasis.js`
-  (`workingSet(atlas, state)`) consumed by the three views. Code only.
-- **H3 — the spine.** Decision 1: the index split, `data.js` loading the
-  spine whole and attribute shards for the window, views rendering only
-  what overlaps the window plus a margin and culling by viewport before
-  clustering, notification on the next frame with unchanged renders
-  skipped, tombstones stripped, sources split, citers on demand, records
-  served with `?v=<revised>`; `ARCHITECTURE.md`'s "Scale, for the record"
-  rewritten with B's table. **Opus review of the brief.**
-- **H4 — the hot paths.** Grid clustering with identical results (B2/A13),
-  clustering once at rest and per zoom bucket, in-view only; the layout's
-  crossing count by adjacent-layer inversion count with early stop, the
-  layout and `stackLayout` memoised and restricted to the window, in a
-  Worker past a threshold (B3/A2); horizon and convergence memoised
-  (B22/A12); timeline packing by sorted sweep, window only, DOM kept, a
-  density strip beyond the neighbourhood (B23/A18); validator indexes for
-  rules 11 and 17 and precompiled patterns (B4/A11); `validate --index`
-  doing the work once with bounded-concurrency reads and a hashed palette
-  (B5); `serve.mjs` answering after the write and rebuilding in the
-  background with a save queue (B32); search debounced and in a Worker,
-  the index shard when the scan passes 50 ms (B19/A19); presences by
-  interval index with cached paths and zoom simplification (B24). A
-  benchmark script under `tests/bench/` on the 20 000 synthetic set,
-  numbers in `STATUS.md`.
-- **H5 — the envelope.** Decisions 2 and 3: `origin`, `review.status`,
-  `retraction`, Sign keeping citations, `tools/migrate/` with the first
-  migration and the on-read chain, region provenance on imported places
-  (A23), `sitelinks` dropped or stored as `{ count, on }` (A23), licence
-  and attribution per directory in `data/LICENSE` and the manifest and
-  the attribution line on NC-derived cards (A24), `names` on events
-  (decision 5). Schema, validator, tools, dashboard, docs.
-- **H6 — the contributor and the reviewer.** A reference picker on
-  `search.js` for every reference field in the form and the editor
-  (kind, dates, place, degree, existing links; "in this bundle" first),
-  duplicate search for every kind including identifiers, validation of
-  the changed record against a universe built once with an incremental
-  cycle check (B6/A10/B27); "Edit this record" on every card prefilling
-  the form, field-level corrections (B26); contributions landing with
-  `review.flags: ['contributed']` and `review.note: 'issue #n'`, the PR
-  body linking `review.html?open=<id>`, the identifier check before the
-  PR, the retraction cascade offered by the Action (A29/A30); the
-  dashboard as a virtual list over digests sharded by kind, sort keys
-  (flags, degree, age), an edge-in-context view, a record's history and a
-  diff against the draft, an optional claim (B7/A31); "unreviewed" defined
-  by `review.status` (A8).
-- **H7 — the reader.** An intro card: the narratives, the heaviest events,
-  one walkthrough, "start here" (A17); search over `names` and summaries
-  (decision 5); predecessor and successor events on the actor card along
-  `succeeded`, years beside actors in search (B28); weighted paths and
-  grouped convergence (decision 6); `subgraph(atlas, ids, depth)` with a
-  bundled explanations fetch by period, narrative steps allowed to cite
-  an actor, a relation or a presence, `narrative.subgraph` for mechanical
-  checking, `?walk=` and `data/walks/` (decision 7; B18/A16) — the ground
-  the Why mode stands on; `?edge=` and the chain as event ids (B25).
+- **H1a — four one-line defects.** The search box widens only when the
+  year is outside the window (B8, at the call site; `windowAt` untouched);
+  `horizon` cleared when the selection changes (B9); failed fetches not
+  cached (B13/A14); a shared chain filtered to active edges (B34); the NUL
+  separator in `rules.js` replaced. Tests for each.
+- **H1b — render and URL.** A render key for the panel of openings +
+  `chain` + `horizon` + resolved window, window-dependent bits updated in
+  place, the cluster list surviving view-only changes (B12/A3/A5); URL
+  writes for replace-type changes coalesced to a frame, `notify`
+  synchronous; `popstate` restoring the whole state from the URL and
+  writing it, reading mode untouched (B14/A6); the graph's arrangement key
+  fixed for the narrative lens and lane membership. Browser tests.
+- **H1c — map maths and reach.** Pointer maths through `getScreenCTM`,
+  `bbox` from the real visible rectangle, `ResizeObserver` (A4); no world
+  box, placeless events in view by region box derived at load (B15);
+  `discuss` with the record's URL only (A33); marks and bars
+  keyboard-reachable (B11); the phone sheet and the panes agreeing (A32);
+  one shared `walkOrSelect` (B10).
+- **H2 — the registry.** `src/kinds.js` and `src/vocab.js` as leaf
+  modules; `state.js`, `rules.js`, `lens.js`, `lanes.js`, `bundle.js`,
+  `read.mjs`, `new-record.mjs`, `bundle-to-files.mjs`, `wikidata.mjs`
+  importing from them; `src/emphasis.js` (`workingSet`) consumed by the
+  three views; consistency tests (registry = schema enums; KINDS =
+  KIND_DIRS). No URL and no record changes.
+- **H3a — the spine beside the old topology.** `build-index.mjs` emits
+  the spine, the period shards, the search shard, the citers files and
+  `citationCount`s **in addition to** the topology; `data.js` can load
+  either; nothing switches; fixtures gain a record straddling a period
+  boundary. **Opus review of the brief.**
+- **H3b — the pages switch over**, one page per commit: the atlas, entry,
+  narratives, sources, contribute, review; views draw only the window's
+  events plus a margin with a faded stub beyond it; unchanged renders
+  skipped by explicit keys; tombstones stripped; records served with
+  `?v=`; `retractionPlan` on a pre-fetched map.
+- **H3c — the old topology removed**; `ARCHITECTURE.md`'s index section
+  and "Scale, for the record" rewritten with B's table.
+- **H4a — clustering and the map.** The grid under the four identity
+  conditions with a test against the greedy output including `centre`;
+  once at rest and per zoom bucket rounded down, `coreZoom` exempt;
+  presences by interval index with cached paths and zoom simplification.
+- **H4b — the graph.** Crossing count pruned by sweep line and bounding
+  boxes over the same predicate, deterministic early stop, layout and
+  `stackLayout` restricted to the window and memoised on the fixed key;
+  no Worker unless a measured number demands it.
+- **H4c — the timeline, the queries, search.** Sorted-sweep packing,
+  window only, DOM kept, a density strip beyond; horizon and convergence
+  memoised; search debounced, the index shard used past 50 ms.
+- **H4d — the tools.** Validator indexes for rules 11 and 17, precompiled
+  patterns; `validate --index` doing the work once with bounded reads and
+  a hashed palette; `serve.mjs` with a save queue, the topology patched in
+  memory, a background rebuild and `/__status`; `tests/bench/run.mjs`
+  with a seeded generator and numbers in `STATUS.md`.
+- **H5a — aliases and the migration chain.** A20's alias-resolving helper;
+  `src/validate/migrate.js`, `tools/migrate/apply.mjs`, migrations 001
+  (additive) and 002 (trivial, reversible); `--index` on the PR gate for
+  `data/` changes.
+- **H5b — the envelope.** `origin`, `review.status`/`signedBy`,
+  `retraction`, `names` on events, `sitelinks` as `{ count, on }`, region
+  provenance on imported places, licence and attribution per directory
+  and on NC-derived cards, following the checklist of review finding 15
+  (schemas → migration → `ENVELOPE_KEYS` → `DIGEST_KEYS` → the four
+  predicates → rules → docs); the byte-identity round-trip test is the
+  safety net and is never edited to pass.
+- **H6a — the contributor.** The reference picker on the search shard for
+  every reference field, duplicate search for every kind including
+  identifiers, validation of the changed record against a universe built
+  once with an incremental cycle check; "Edit this record" prefilling the
+  form; contributions landing flagged `contributed` with the issue number,
+  the PR body linking `review.html?open=<id>`, the identifier check before
+  the PR, the retraction cascade offered by the Action.
+- **H6b — the reviewer.** A virtual list over digests sharded by kind,
+  sort keys, an edge-in-context view, a generated per-record history file
+  and a diff against the draft, an optional claim, "unreviewed" defined by
+  `review.status`.
+- **H7 — the reader.** The intro card; search over `names` and summaries;
+  predecessor and successor events on the actor card along `succeeded`,
+  years beside actors in search; ranking as an ordering of the answer
+  lists, convergence grouped by depth; `subgraph(atlas, ids, depth)` with
+  a bundled explanations fetch by period; narrative steps allowed to cite
+  an actor, a relation or a presence; `?walk=` reserved.
 - **H8 — generated pages and the artifact.** Decision 4; the deploy
-  allowlist and a banner on `review.html` off localhost (A35/B29);
-  `STATUS.md` cut to a hundred lines with `docs/history/` (B35).
+  allowlist with `tests/fixtures/data/`; a banner on `review.html` off
+  localhost; `STATUS.md` cut to a hundred lines with `docs/history/`.
 
-H1 and H5 touch different files and may run in parallel on side branches;
-H2 before H3 because the spine is written against the registry; H4 after
-H3 because the hot paths are the spine's consumers; H6 and H7 after H5
-because both read the new envelope. A Fable review of the result after
-H8, and the cycle repeats if it says so. M30a–M38 follow the cycle and
-are rewritten against the registry and the spine.
+Order and parallelism: H1a → H1b → H1c → H2 on `m0`; H5a and H5b may run
+on a side branch in parallel with H1–H2 **without committing
+`data/index/`**, merged with one rebuild commit; H3a–c after H2 and the
+merge; H4a–d after H3c, two of them in parallel on side branches when they
+touch different files; H6a/b and H7 after H5b and H3c; H8 last. A Fable
+review of the result after H8, and the cycle repeats if it says so.
+M30a–M38 follow the cycle and are rewritten against the registry and the
+spine.
 
 ## Left out on purpose
 
 Anonymous contributions and everything about publishing (out of scope by
-the owner's decision); rewriting the timeline's lanes (M33 has it);
-offices, parents and the base map (M30–M38). B's finding 33 (roles) is
-M32; B's 18 and A's 16 are the Why mode's ground and go in H7 rather than
-M35 so that M35 builds on them.
+the owner's decision); the timeline's lanes following the window (M6's
+decision stands); `?edge=` and a shorter chain; offices, parents and the
+base map (M30–M38). B's finding 33 (roles) is M32; the Why mode (M35)
+stands on H7's `subgraph` and the session-only walk.
