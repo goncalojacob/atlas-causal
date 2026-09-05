@@ -924,6 +924,11 @@ svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align:
   background: var(--ground); margin: 0 0 var(--space-3); font-size: var(--text-sm);
 }
 .panel .notice.disputed { border-color: var(--madder); background: var(--madder-faint); }
+/* Whose material this is, where it is not the atlas's own. Quieter than a
+   dispute — it is a fact about the file and not about the argument — but it
+   is set apart, because the licence asks for it to be legible beside the
+   text it covers. */
+.panel .notice.licence, .entry .notice.licence { color: var(--ink-soft); font-family: var(--font-ui); }
 /* The path walked, as a breadcrumb at the top of the panel. One madder rule
    down its left, which is the accent the map and the graph draw the same
    path in, so the three pictures agree about what the reader is holding. */

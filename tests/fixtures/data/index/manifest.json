@@ -18,6 +18,131 @@
     "spine": "index/spine-09bb8989e3a5.json"
   },
   "land": [],
+  "licenses": {
+    "data/actors/": {
+      "attribution": [
+        {
+          "license": "CC-BY-NC-SA-4.0",
+          "name": "CShapes 2.0 — Schvitz, Girardin, Rüegger, Weidmann, Cederman and Gleditsch",
+          "source": "https://doi.org/10.1177/00220027211013563"
+        }
+      ],
+      "licenses": [
+        "CC-BY-SA-4.0",
+        "CC-BY-NC-SA-4.0"
+      ]
+    },
+    "data/edges/": {
+      "attribution": [],
+      "licenses": [
+        "CC-BY-SA-4.0"
+      ]
+    },
+    "data/events/": {
+      "attribution": [],
+      "licenses": [
+        "CC-BY-SA-4.0"
+      ]
+    },
+    "data/geo/land-present.json": {
+      "attribution": [
+        {
+          "license": "PD",
+          "name": "Natural Earth",
+          "source": "https://www.naturalearthdata.com/about/terms-of-use/"
+        }
+      ],
+      "licenses": [
+        "PD"
+      ]
+    },
+    "data/geo/palette.json": {
+      "attribution": [
+        {
+          "license": "CC-BY-NC-SA-4.0",
+          "name": "CShapes 2.0 — Schvitz, Girardin, Rüegger, Weidmann, Cederman and Gleditsch",
+          "source": "https://doi.org/10.1177/00220027211013563"
+        }
+      ],
+      "licenses": [
+        "CC-BY-NC-SA-4.0"
+      ]
+    },
+    "data/geo/presences/": {
+      "attribution": [
+        {
+          "license": "CC-BY-NC-SA-4.0",
+          "name": "CShapes 2.0 — Schvitz, Girardin, Rüegger, Weidmann, Cederman and Gleditsch",
+          "source": "https://doi.org/10.1177/00220027211013563"
+        }
+      ],
+      "licenses": [
+        "CC-BY-NC-SA-4.0"
+      ]
+    },
+    "data/geo/regions.json": {
+      "attribution": [
+        {
+          "license": "PD",
+          "name": "Natural Earth",
+          "source": "https://www.naturalearthdata.com/about/terms-of-use/"
+        }
+      ],
+      "licenses": [
+        "PD"
+      ]
+    },
+    "data/index/": {
+      "attribution": [
+        {
+          "license": "CC-BY-NC-SA-4.0",
+          "name": "CShapes 2.0 — Schvitz, Girardin, Rüegger, Weidmann, Cederman and Gleditsch",
+          "source": "https://doi.org/10.1177/00220027211013563"
+        }
+      ],
+      "licenses": [
+        "CC-BY-SA-4.0",
+        "CC-BY-NC-SA-4.0"
+      ]
+    },
+    "data/narratives/": {
+      "attribution": [],
+      "licenses": [
+        "CC-BY-SA-4.0"
+      ]
+    },
+    "data/places/": {
+      "attribution": [],
+      "licenses": [
+        "CC-BY-SA-4.0"
+      ]
+    },
+    "data/presences/": {
+      "attribution": [
+        {
+          "license": "CC-BY-NC-SA-4.0",
+          "name": "CShapes 2.0 — Schvitz, Girardin, Rüegger, Weidmann, Cederman and Gleditsch",
+          "source": "https://doi.org/10.1177/00220027211013563"
+        }
+      ],
+      "licenses": [
+        "CC-BY-SA-4.0",
+        "CC-BY-NC-SA-4.0"
+      ]
+    },
+    "data/relations/": {
+      "attribution": [],
+      "licenses": [
+        "CC-BY-SA-4.0"
+      ]
+    },
+    "data/sources/": {
+      "attribution": [],
+      "licenses": [
+        "CC-BY-SA-4.0"
+      ]
+    }
+  },
   "palette": "geo/palette.json",
   "presenceShards": [
     {

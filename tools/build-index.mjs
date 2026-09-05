@@ -18,6 +18,7 @@ import { checkRules } from '../src/validate/rules.js';
 import { createRegionDeriver } from '../src/util/geo.js';
 import { digestOf, isDraft } from '../src/review/queue.js';
 import { buildSearchIndex } from '../src/search.js';
+import { licensingTable } from '../src/licensing.js';
 import { readRecords, readRegions, readRegionPolygons, readLandFiles, readPresenceShards, paletteFile } from './lib/read.mjs';
 
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -165,6 +166,12 @@ export async function buildIndex(dataDir = DEFAULT_DATA, prepared = {}) {
     // draw from: written by tools/build-palette.mjs, not by this tool, and
     // named here so the site fetches it in one request with the rest.
     palette: paletteFile(dataDir),
+    // Which licence covers which directory, and whom each one asks to be
+    // named. `data/LICENSE` says all of it in prose; a reuser of these files
+    // could not read it out of them (health review A, finding 24), and the
+    // index itself carried no licence at all while projecting NC actors and
+    // presences into the same files as CC BY-SA records.
+    licenses: licensingTable(),
   });
 
   const unresolved = topology.events.filter((e) => e.status === 'active' && e.place && !e.region);

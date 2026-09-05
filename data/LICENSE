@@ -1,6 +1,42 @@
 Records under data/ are licensed CC BY-SA 4.0. The full text follows, and
 this notice is not part of it.
 
+Per directory, with the attribution each one asks for
+  The same table is in data/index/manifest.json under `licenses`, so that a
+  reuser of these files can read it out of them rather than out of this
+  notice; src/licensing.js is the one definition and tests/licensing.test.mjs
+  holds the three together.
+
+  data/events/  data/edges/  data/sources/  data/places/  data/relations/
+  data/narratives/
+    CC BY-SA 4.0. Written here. Attribution: the atlas causal contributors
+    named in each record's `authors`.
+
+  data/actors/
+    CC BY-SA 4.0, except the actors an import created for territory it does
+    not own, which are CC BY-NC-SA 4.0 and carry that in `license`. Rule 12
+    is what keeps the two apart, and it keys on `origin.tool`, not on a name
+    in `authors`. Attribution for the NC ones: CShapes 2.0 — Schvitz,
+    Girardin, Rüegger, Weidmann, Cederman and Gleditsch.
+
+  data/presences/
+    CC BY-NC-SA 4.0, all of it. Attribution as above.
+
+  data/geo/land-present.json, data/geo/regions.json
+    Public domain. Attribution: Natural Earth.
+
+  data/geo/presences/, data/geo/palette.json
+    CC BY-NC-SA 4.0. Attribution as above. See data/geo/LICENSE.
+
+  data/index/
+    Generated, and both at once: it projects NC actors and presences into the
+    same files as CC BY-SA records, so a reuser of the index is bound by both
+    licences. It is rebuilt from the records and holds no prose.
+
+  data/regions.json, data/imports/
+    CC BY-SA 4.0, like the records: they are this project's own editorial
+    decisions about lanes and about which entity is which actor.
+
 Third-party material these records point at
   Wikidata (data/sources/wikidata.json)
     The item ids, article titles and sitelink counts that records carry in

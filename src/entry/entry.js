@@ -19,6 +19,7 @@ import { articleFor } from '../wikipedia.js';
 import { ACTOR_TYPE_LABEL } from '../panel/event.js';
 import { RELATION_LABEL, RELATION_ORDER } from '../panel/actor.js';
 import { kindsWhere, byKind } from '../kinds.js';
+import { attributionHtml } from '../licensing.js';
 
 // The kinds with a page. Anything else — an edge, a narrative, a source — is
 // read inside the atlas, and the page says so rather than pretending.
@@ -237,6 +238,12 @@ export function entryHtml(atlas, {
     notices.push(`<p class="notice status">This record is <strong>${esc(record.status)}</strong>. It is kept
       so that links to it still resolve; what it says is no longer part of the atlas.</p>`);
   }
+  // What the licence asks to be said about somebody else's material, beside
+  // the material. An NC-licensed actor's summary used to be rendered on the
+  // same page as CC BY-SA text with nothing to tell them apart (health review
+  // A, finding 24).
+  const licence = attributionHtml(record);
+  if (licence) notices.push(licence);
   const variants = kind === 'event' ? [] : (record.names ?? []).slice(1);
   const entry = bodyHtml(atlas, links, record);
 

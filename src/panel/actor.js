@@ -12,6 +12,7 @@ import { formatInterval, formatYear, bounds } from '../util/dates.js';
 import { ACTOR_TYPE_LABEL } from './event.js';
 import { RELATION_LABEL, RELATION_GROUP_ORDER } from '../vocab.js';
 import { sectionHtml, openSection } from './sections.js';
+import { attributionHtml } from '../licensing.js';
 
 // What a relation is called from each end, and the order the groups are drawn
 // in: both from the one list of relation types (vocab.js), which is also
@@ -166,7 +167,13 @@ export function renderActorCard(ctx, { container, actor, mine, state = null, rem
     (rec) => {
       if (!ctx.isCurrent(mine)) return;
       const place = rec.where ? ` <span class="where">${esc(rec.where.label)}</span>` : '';
-      container.querySelector('[data-slot="actor-summary"]').innerHTML = `<p>${esc(rec.summary)}</p>${place ? `<p class="meta">${place}</p>` : ''}`;
+      // The licence line goes with the summary because that is the text it
+      // covers: an actor an import created carries the dataset's licence and
+      // not this atlas's, and the card said nothing about it (health review
+      // A, finding 24). It is rendered here rather than in the card's markup
+      // because the spine carries no `license` and this is where the record
+      // itself arrives.
+      container.querySelector('[data-slot="actor-summary"]').innerHTML = `${attributionHtml(rec)}<p>${esc(rec.summary)}</p>${place ? `<p class="meta">${place}</p>` : ''}`;
       container.querySelector('[data-slot="actor-sources"]').innerHTML = rec.sources?.length
         ? ctx.citationsHtml(rec.sources, '', rec)
         : '<p class="muted">This actor cites nothing yet.</p>';
