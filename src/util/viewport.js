@@ -37,3 +37,13 @@ export function inView(event, bbox, places) {
   if (!bbox) return true;
   return containsPoint(bbox, pointOfEvent(event, places));
 }
+
+// The events the lanes draw while the map is looking at a box: what is
+// inside it, plus whatever the reader is holding. `keep` is the selected
+// event and the steps of the walked chain — a chain that runs off the edge of
+// the screen is still a chain, and a timeline that dropped its middle would
+// be telling the reader they had not walked it.
+export function eventsInView(events, bbox, places, { keep = null } = {}) {
+  if (!bbox) return events;
+  return events.filter((event) => inView(event, bbox, places) || Boolean(keep?.has(event.id)));
+}

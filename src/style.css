@@ -582,6 +582,22 @@ svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align:
 /* --- timeline -------------------------------------------------------- */
 
 .timeline { display: block; font-family: var(--font-ui); font-variant-numeric: tabular-nums; }
+/* What the lanes are showing, when they are not showing the world. Sticky,
+   because the timeline scrolls under it and a note about the whole drawing
+   must not scroll away from the drawing it is about. */
+.timeline-note {
+  position: sticky; top: 0; z-index: 1;
+  display: flex; gap: var(--space-2); align-items: baseline;
+  margin: 0; padding: var(--space-1) var(--space-3);
+  border-bottom: 1px solid var(--line);
+  background: var(--paper);
+  font-family: var(--font-ui); font-size: var(--text-sm); color: var(--ink-soft);
+}
+.timeline-note .pin {
+  background: none; border: 0; padding: 0; font: inherit;
+  color: var(--cobalt); text-decoration: underline; text-underline-offset: 0.18em; cursor: pointer;
+}
+.timeline-note .pin:hover { color: var(--ink); }
 /* The alternating ground behind the rows: quiet enough to be felt rather
    than seen, because it is there to keep the eye on one row and not to
    divide the drawing into stripes. */

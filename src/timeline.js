@@ -31,6 +31,7 @@ import { horizonBand, horizonSet } from './horizon.js';
 import { narrativeSet } from './narrative.js';
 import { lensSet } from './lens.js';
 import { lanesFor, rowLanes, laneOf, barBox } from './lanes.js';
+import { eventsInView } from './util/viewport.js';
 
 const LANE_HEIGHT = 34;
 // A packed row carries no label, so it needs only the height of a bar and
@@ -60,6 +61,27 @@ const BADGE_SIZE = 10;
 
 export function createTimeline(container, { atlas, state, createScale = createLinearScale, onCluster = null }) {
   const root = svg('svg', { class: 'timeline', role: 'group', 'aria-label': 'Timeline and the window of time' });
+
+  // The one part of the timeline that is not drawn in SVG: the line saying
+  // the lanes are showing what the map is looking at rather than the world,
+  // and the pin that gives the world back. A button is a button — focus ring,
+  // keyboard, a name a screen reader can say — and none of that is free
+  // inside an <svg>.
+  const note = document.createElement('p');
+  note.className = 'timeline-note';
+  note.hidden = true;
+  const noteText = document.createElement('span');
+  const pin = document.createElement('button');
+  pin.type = 'button';
+  pin.className = 'pin';
+  pin.textContent = 'show the world';
+  pin.title = 'Draw every event again, wherever the map is looking';
+  // The pin says something about the lanes, not about the map: it stops the
+  // filtering and leaves the map where the reader put it. Moving the map
+  // again narrows the lanes again, which is the whole of the coupling.
+  pin.addEventListener('click', () => state.set({ bbox: null }));
+  note.append(noteText, pin);
+  container.appendChild(note);
   container.appendChild(root);
 
   // The lanes, their height and the height of the drawing are all decided by
@@ -301,11 +323,23 @@ export function createTimeline(container, { atlas, state, createScale = createLi
     // The lens removes rather than dims: an event outside it is not drawn
     // faded, it is not drawn (lens.js).
     const lens = lensSet(atlas, s);
-    const shown = lens ? atlas.activeEvents.filter((e) => lens.has(e.id)) : atlas.activeEvents;
+    const inLens = lens ? atlas.activeEvents.filter((e) => lens.has(e.id)) : atlas.activeEvents;
     const pathIds = new Set(s.chain.flatMap((id) => {
       const edge = atlas.edges.get(id);
       return edge ? [edge.from, edge.to] : [];
     }));
+    // And then the map's viewport, which composes with the lens rather than
+    // replacing it: the lens says which events exist, the box says which of
+    // them are on screen. What the reader is holding is exempt from the box
+    // and never from the lens (viewport.js).
+    const held = new Set(pathIds);
+    if (s.selected) held.add(s.selected);
+    const shown = eventsInView(inLens, s.bbox, atlas.places, { keep: held });
+    note.hidden = !s.bbox;
+    if (s.bbox) {
+      const n = shown.length;
+      noteText.textContent = `${n} of ${inLens.length} ${inLens.length === 1 ? 'event' : 'events'} in view`;
+    }
     // A second emphasis, distinct from the path's: the events of the actor
     // whose card is open. Through resolve(), so a former id in the URL
     // highlights the same actor the panel is showing.

@@ -3,8 +3,12 @@
 
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { inView, containsPoint, pointOfEvent } from '../src/util/viewport.js';
+import { inView, containsPoint, pointOfEvent, eventsInView } from '../src/util/viewport.js';
 import { createProjection, fitBounds, viewBbox, bboxTransform, WORLD } from '../src/map/projection.js';
+import { readFile } from 'node:fs/promises';
+import path from 'node:path';
+import { loadAtlas } from '../src/data.js';
+import { ROOT } from './helpers.mjs';
 
 const places = new Map([
   ['lisbon', { id: 'lisbon', where: { lon: -9.14, lat: 38.72 } }],
@@ -97,4 +101,36 @@ test('the zoom of a fit is clamped, and a tiny box is shown around its middle', 
   assert.ok(Math.abs((shown[1] + shown[3]) / 2 - 38.72) < 1e-9);
   // And a box larger than the world does not zoom out past the minimum.
   assert.equal(bboxTransform(projection, [-180, -90, 180, 90], { ...SIZE, minZoom: 1, maxZoom: 8 }).k, 1);
+});
+
+// --- the lanes under a box, on the real dataset ---------------------------
+//
+// The one assertion that is worth making against `data/` and not a fixture:
+// the timeline's filter must agree, event for event, with what the place
+// records themselves say, and a count computed here from the files is an
+// independent second opinion rather than a restatement of the filter.
+
+test('a box over Portugal draws exactly the events placed in Portugal', async () => {
+  const fetchJson = async (url) => JSON.parse(await readFile(path.join(ROOT, url.split('?')[0]), 'utf8'));
+  const atlas = await loadAtlas({ dataRoot: 'data/', fetchJson });
+  const box = [-10, 36, -6, 43];
+
+  const expected = atlas.activeEvents
+    .filter((event) => {
+      const where = atlas.places.get(event.place)?.where;
+      return where && where.lon >= -10 && where.lon <= -6 && where.lat >= 36 && where.lat <= 43;
+    })
+    .map((e) => e.id).sort();
+  const drawn = eventsInView(atlas.activeEvents, box, atlas.places).map((e) => e.id).sort();
+
+  assert.ok(expected.length > 0, 'the atlas has events in Portugal to draw');
+  assert.ok(expected.length < atlas.activeEvents.length, 'and events elsewhere, which the box leaves out');
+  assert.equal(drawn.length, expected.length);
+  assert.deepEqual(drawn, expected);
+
+  // And what the reader is holding survives the box wherever it happened.
+  const outside = atlas.activeEvents.find((e) => !expected.includes(e.id));
+  const kept = eventsInView(atlas.activeEvents, box, atlas.places, { keep: new Set([outside.id]) });
+  assert.equal(kept.length, expected.length + 1);
+  assert.ok(kept.some((e) => e.id === outside.id));
 });

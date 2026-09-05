@@ -96,17 +96,19 @@ const clamp = (n, min, max) => Math.min(max, Math.max(min, n));
 // numbers or is inside out. A view wider than the world is clamped to the
 // world rather than refused: the map lets the reader zoom out past the
 // coastlines, and that view is still a view.
-export function parseBbox(text) {
-  const parts = String(text ?? '').split(',');
-  if (parts.length !== 4) return null;
-  const n = parts.map(Number);
-  if (n.some((v) => !Number.isFinite(v))) return null;
+export function normalizeBbox(box) {
+  const n = Array.isArray(box) ? box.map(Number) : [];
+  if (n.length !== 4 || n.some((v) => !Number.isFinite(v))) return null;
   const west = clamp(Math.min(n[0], n[2]), -180, 180);
   const east = clamp(Math.max(n[0], n[2]), -180, 180);
   const south = clamp(Math.min(n[1], n[3]), -90, 90);
   const north = clamp(Math.max(n[1], n[3]), -90, 90);
   if (west === east || south === north) return null;
   return [round2(west), round2(south), round2(east), round2(north)];
+}
+
+export function parseBbox(text) {
+  return normalizeBbox(String(text ?? '').split(','));
 }
 
 export function formatBbox(bbox) {

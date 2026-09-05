@@ -6,7 +6,7 @@
 // end of it would have been a second, quieter answer to the same question.
 
 import { svg } from '../util/dom.js';
-import { fitBounds, WORLD } from './projection.js';
+import { fitBounds, WORLD, viewBbox, bboxTransform } from './projection.js';
 import { createLandLayer } from './layers/land.js';
 import { createPresencesLayer } from './layers/presences.js';
 import { createEventsLayer } from './layers/events.js';
@@ -15,6 +15,7 @@ import { resolveWindow } from '../util/window.js';
 import { horizonSet } from '../horizon.js';
 import { narrativeSet } from '../narrative.js';
 import { lensSet } from '../lens.js';
+import { normalizeBbox } from '../state.js';
 
 const WIDTH = 960;
 const HEIGHT = 540;
@@ -26,6 +27,11 @@ const MAX_ZOOM = DEEPEST_ZOOM;
 // would come apart; it gets a plain step in instead.
 const CLUSTER_ZOOM_STEP = 3;
 const ZOOM_DURATION = 260;
+// The pan and the wheel move the transform many times a second; the box in
+// the URL is written once they stop. Long enough that a drag across the
+// Atlantic is one write and one redrawn timeline, short enough that letting
+// go and looking down finds the lanes already narrowed.
+const BBOX_SETTLE = 180;
 
 // The box every placed event fits in. An event's coordinates are its place's:
 // pointOf resolves the one to the other.
@@ -95,6 +101,44 @@ export function createMap(container, { atlas, state, onCluster = null }) {
     y1: (HEIGHT - transform.y) / transform.k,
   });
 
+  // --- the box the timeline reads -----------------------------------------
+  //
+  // Pan and zoom are still not state; what the reader can *see* is. The box
+  // is written when the movement stops rather than on every frame, because a
+  // write redraws the lanes and rewrites the URL, and neither is worth doing
+  // sixty times a second.
+  //
+  // `published` is what this map last put in the state. Without it the map's
+  // own write would come back through the subscription as a box somebody
+  // else had asked for, and the map would refit itself to where it already
+  // was — once per pan, for ever.
+  let published = null;
+  let settling = null;
+  const sameBox = (a, b) => (a === b) || Boolean(a && b && a.every((v, i) => v === b[i]));
+  const publishBbox = () => {
+    settling = null;
+    const bbox = normalizeBbox(viewBbox(projection, transform, { width: WIDTH, height: HEIGHT }));
+    if (sameBox(bbox, state.get().bbox)) return;
+    published = bbox;
+    state.set({ bbox });
+  };
+  const scheduleBbox = () => {
+    if (typeof setTimeout !== 'function') return publishBbox();
+    if (settling) clearTimeout(settling);
+    settling = setTimeout(publishBbox, BBOX_SETTLE);
+    return undefined;
+  };
+
+  // A link that names a box opens on it. Only a box the map did not write
+  // itself moves it: clearing the box is the timeline's pin saying "show me
+  // everything again", which is a statement about the lanes and not an
+  // instruction to fly the map back to the Atlantic.
+  const fitTo = (bbox) => {
+    published = bbox;
+    transform = bboxTransform(projection, bbox, { width: WIDTH, height: HEIGHT, minZoom: MIN_ZOOM, maxZoom: MAX_ZOOM });
+    applyTransform();
+  };
+
   const reducedMotion = () => Boolean(window.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches);
 
   // Puts a point in the middle of the map at a given zoom. Animated, unless
@@ -105,6 +149,7 @@ export function createMap(container, { atlas, state, onCluster = null }) {
       transform = target;
       applyTransform();
       render(state.get());
+      scheduleBbox();
       return;
     }
     const from = { ...transform };
@@ -120,6 +165,7 @@ export function createMap(container, { atlas, state, onCluster = null }) {
       applyTransform();
       render(state.get());
       if (t < 1) requestAnimationFrame(frame);
+      else scheduleBbox();
     };
     requestAnimationFrame(frame);
   }
@@ -165,6 +211,7 @@ export function createMap(container, { atlas, state, onCluster = null }) {
     if (drag?.moved) capture('releasePointerCapture', drag.pointerId);
     dragged = drag?.moved ?? false;
     drag = null;
+    if (dragged) scheduleBbox();
   });
   root.addEventListener('click', (e) => {
     // A drag that ends on a mark must not select it. Cleared here, once the
@@ -192,12 +239,14 @@ export function createMap(container, { atlas, state, onCluster = null }) {
     spread = null;
     applyTransform();
     render(state.get());
+    scheduleBbox();
   }, { passive: false });
   root.addEventListener('dblclick', () => {
     transform = { x: 0, y: 0, k: 1 };
     spread = null;
     applyTransform();
     render(state.get());
+    scheduleBbox();
   });
 
   container.append(root);
@@ -261,7 +310,13 @@ export function createMap(container, { atlas, state, onCluster = null }) {
     if (spread && !result.spread) spread = null;
   }
 
-  state.subscribe(render);
+  // A link that names a box opens on it, before anything is drawn.
+  if (state.get().bbox) fitTo(state.get().bbox);
+
+  state.subscribe((s) => {
+    if (s.bbox && !sameBox(s.bbox, published)) fitTo(s.bbox);
+    render(s);
+  });
   render(state.get());
-  return { render };
+  return { render, root };
 }
