@@ -3742,6 +3742,19 @@ gave that to the map and the timeline, and M25 did not widen it.
      on screen is still the previous one, and a stacking of it filed under
      the key being waited for would later be handed to a layout it was not
      made from. `laidFor` is the key of what is actually in `laid`.
+236. **The numbers were measured with a scratch script, not with a bench in
+     the repository.** `tests/bench/run.mjs` and its seeded generator are
+     H4d's — seeded, never its own output, and deliberately not matching
+     `*.test.mjs` (review of the health plan, finding 26) — so H4b measured
+     with a script of that shape run outside the tree and left there,
+     rather than committing half a harness for H4d to inherit. The
+     generator is a linear congruential sequence, the same graph every run;
+     the sizes are the atlas itself through the spine (137 events, 161
+     edges) and synthetic graphs of 2,500/5,000, 15,000/30,000 and
+     20,000/40,000, each spread over two centuries with mostly-nearby links
+     forward in time. Anyone re-measuring will get different absolute
+     numbers on different hardware; the ratios are what the deviations
+     above lean on.
 
 ## Dates to verify
 
