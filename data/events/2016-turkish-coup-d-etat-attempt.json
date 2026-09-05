@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "2016-turkish-coup-d-etat-attempt",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q25906338",
+  "sitelinks": 69,
+  "wikipedia": {
+    "en": "2016 Turkish coup d'état attempt",
+    "pt": "Tentativa de golpe de Estado na Turquia em 2016"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q25906338"
+    }
+  ],
+  "title": "2016 Turkish coup d'état attempt",
+  "summary": "Wikidata item Q25906338, imported by tools/import/wikidata.mjs. The item's own description reads \"July 2016 attempted military junta coup in Turkey\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2016,
+    "end": 2016,
+    "date": "2016-07-16"
+  },
+  "place": null,
+  "region": "asia",
+  "actors": []
+}

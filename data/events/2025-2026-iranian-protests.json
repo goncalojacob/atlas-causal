@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "2025-2026-iranian-protests",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q137612545",
+  "sitelinks": 61,
+  "wikipedia": {
+    "en": "2025–2026 Iranian protests",
+    "pt": "Protestos no Irã (2025–2026)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q137612545"
+    }
+  ],
+  "title": "2025–2026 Iranian protests",
+  "summary": "Wikidata item Q137612545, imported by tools/import/wikidata.mjs. The item's own description reads \"2025–2026 protests against the Islamic Republic\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2025,
+    "end": 2026,
+    "date": "2025-12-28",
+    "endDate": "2026-02-28"
+  },
+  "place": null,
+  "region": "asia",
+  "actors": []
+}

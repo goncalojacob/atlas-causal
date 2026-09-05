@@ -10280,10 +10280,28 @@
     }
   ],
   "schema": 1,
-  "total": 1087,
+  "total": 1097,
   "warnings": [
     {
+      "id": "1994-genocide-against-tutsi",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
       "id": "2006-lebanon-war",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "2016-turkish-coup-d-etat-attempt",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "2025-2026-iranian-protests",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"
@@ -10427,6 +10445,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "gaza-genocide",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
       "id": "gaza-war",
       "kind": "event",
       "message": "event has no edges",
@@ -10493,6 +10517,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "january-6-united-states-capitol-attack",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
       "id": "katyn-massacre",
       "kind": "event",
       "message": "event has no edges",
@@ -10512,6 +10542,12 @@
     },
     {
       "id": "lebanese-civil-war",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "libyan-civil-war",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"
@@ -10542,6 +10578,12 @@
     },
     {
       "id": "october-revolution",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "orange-revolution",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"
@@ -10649,6 +10691,18 @@
       "rule": "degree-zero"
     },
     {
+      "id": "sudanese-civil-war",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "syrian-civil-war",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
       "id": "the-holocaust",
       "kind": "event",
       "message": "event has no edges",
@@ -10734,6 +10788,12 @@
     },
     {
       "id": "vietnam-war",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "wagner-group-rebellion",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"

@@ -11684,7 +11684,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 136,
+      "citationCount": 146,
       "citations": [
         {
           "dissent": false,
@@ -11844,6 +11844,12 @@
         },
         {
           "dissent": false,
+          "id": "1994-genocide-against-tutsi",
+          "kind": "event",
+          "locator": "Q131297"
+        },
+        {
+          "dissent": false,
           "id": "1995-portuguese-legislative-election",
           "kind": "event",
           "locator": null
@@ -11916,6 +11922,12 @@
         },
         {
           "dissent": false,
+          "id": "2016-turkish-coup-d-etat-attempt",
+          "kind": "event",
+          "locator": "Q25906338"
+        },
+        {
+          "dissent": false,
           "id": "2022-portuguese-social-democratic-party-leadership-election",
           "kind": "event",
           "locator": null
@@ -11937,6 +11949,12 @@
           "id": "2024-madeiran-regional-election",
           "kind": "event",
           "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "2025-2026-iranian-protests",
+          "kind": "event",
+          "locator": "Q137612545"
         },
         {
           "dissent": false,
@@ -12108,6 +12126,12 @@
         },
         {
           "dissent": false,
+          "id": "gaza-genocide",
+          "kind": "event",
+          "locator": "Q124086054"
+        },
+        {
+          "dissent": false,
           "id": "gaza-war",
           "kind": "event",
           "locator": "Q122962941"
@@ -12186,6 +12210,12 @@
         },
         {
           "dissent": false,
+          "id": "january-6-united-states-capitol-attack",
+          "kind": "event",
+          "locator": "Q104705419"
+        },
+        {
+          "dissent": false,
           "id": "katyn-massacre",
           "kind": "event",
           "locator": "Q134301"
@@ -12207,6 +12237,12 @@
           "id": "lebanese-civil-war",
           "kind": "event",
           "locator": "Q208484"
+        },
+        {
+          "dissent": false,
+          "id": "libyan-civil-war",
+          "kind": "event",
+          "locator": "Q81545"
         },
         {
           "dissent": false,
@@ -12249,6 +12285,12 @@
           "id": "october-revolution",
           "kind": "event",
           "locator": "Q42976"
+        },
+        {
+          "dissent": false,
+          "id": "orange-revolution",
+          "kind": "event",
+          "locator": "Q836386"
         },
         {
           "dissent": false,
@@ -12354,6 +12396,18 @@
         },
         {
           "dissent": false,
+          "id": "sudanese-civil-war",
+          "kind": "event",
+          "locator": "Q117716414"
+        },
+        {
+          "dissent": false,
+          "id": "syrian-civil-war",
+          "kind": "event",
+          "locator": "Q178810"
+        },
+        {
+          "dissent": false,
           "id": "the-holocaust",
           "kind": "event",
           "locator": "Q2763"
@@ -12453,6 +12507,12 @@
           "id": "vietnam-war",
           "kind": "event",
           "locator": "Q8740"
+        },
+        {
+          "dissent": false,
+          "id": "wagner-group-rebellion",
+          "kind": "event",
+          "locator": "Q119860532"
         },
         {
           "dissent": false,

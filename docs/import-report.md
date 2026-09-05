@@ -54,3 +54,19 @@ refused Q191836: no place record for its location and no lane reachable from its
 refused Q47359: no place record for its location and no lane reachable from its point; a placeless event must carry a region
 44 Wikipedia lead(s) cached under tools/import/cache/wikipedia
 22 created, 0 enriched, 3 refused, 0 ambiguous
+import: 13 item(s) this batch, 0 left after it, 22 call(s) spent
+created event 1994-genocide-against-tutsi from Q131297
+created event orange-revolution from Q836386
+created event syrian-civil-war from Q178810
+created event libyan-civil-war from Q81545
+created event 2016-turkish-coup-d-etat-attempt from Q25906338
+created event gaza-genocide from Q124086054
+created event january-6-united-states-capitol-attack from Q104705419
+created event sudanese-civil-war from Q117716414
+created event wagner-group-rebellion from Q119860532
+created event 2025-2026-iranian-protests from Q137612545
+refused Q242352: no place record for its location and no lane reachable from its point; a placeless event must carry a region
+refused Q896666: no place record for its location and no lane reachable from its point; a placeless event must carry a region
+refused Q33761: no place record for its location and no lane reachable from its point; a placeless event must carry a region
+20 Wikipedia lead(s) cached under tools/import/cache/wikipedia
+10 created, 0 enriched, 3 refused, 0 ambiguous
