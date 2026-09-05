@@ -47,6 +47,7 @@ import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { createRegionDeriver } from '../../src/util/geo.js';
 import { IMPORT_AUTHORS } from '../../src/validate/rules.js';
+import { IMPORT_KINDS } from '../../src/kinds.js';
 import { mergeIdentity } from './identity.mjs';
 import { readRecords, readRegionPolygons } from '../lib/read.mjs';
 
@@ -767,7 +768,10 @@ export async function fetchLeads(fetcher, read, { cacheDir, today, force = false
 
 // Places before actors before events, so an event can point at a place the
 // same batch created rather than being refused for a record about to exist.
-export const KINDS = Object.freeze(['place', 'actor', 'event']);
+// The order is the registry's `importOrder` (src/kinds.js), so a kind that
+// becomes importable joins this list by saying where it goes, not by being
+// remembered here.
+export const KINDS = IMPORT_KINDS;
 
 // Everything the run did, in the shape the report prints and the tests read.
 function emptyReport() {

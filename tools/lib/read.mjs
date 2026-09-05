@@ -6,8 +6,12 @@ import { readdir, readFile } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import path from 'node:path';
 import { migrateRecord } from '../../src/validate/migrate.js';
+// The directories are the registry's (src/kinds.js): the browser and the
+// tools read the same table, so a kind cannot have one directory in Node and
+// another in the atlas.
+import { KIND_DIRS, CONTRIBUTED_KINDS } from '../../src/kinds.js';
 
-export const KIND_DIRS = Object.freeze({ event: 'events', edge: 'edges', source: 'sources', actor: 'actors', presence: 'presences', place: 'places', relation: 'relations', narrative: 'narratives' });
+export { KIND_DIRS, CONTRIBUTED_KINDS };
 export const PRESENCE_GEO_DIR = 'geo/presences';
 // Which of the eight territory hues each actor is drawn in; written by
 // tools/build-palette.mjs, named in the manifest so the site fetches it only

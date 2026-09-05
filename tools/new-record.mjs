@@ -26,7 +26,7 @@ import { execFileSync } from 'node:child_process';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { ACTOR_TYPES, EDGE_TYPES, RELATION_TYPES, SLUG } from '../src/validate/rules.js';
-import { KIND_DIRS } from './lib/read.mjs';
+import { KIND_DIRS, CONTRIBUTED_KINDS } from './lib/read.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DEFAULT_DATA = path.join(ROOT, 'data');
@@ -235,7 +235,9 @@ export function scaffold(kind, positional, options) {
     };
   }
 
-  throw new Error(`kind must be event, edge, source, actor, place, relation or narrative, not "${kind}"`);
+  // The kinds a person writes, from the registry (src/kinds.js): a presence
+  // carries geometry and is imported, never scaffolded.
+  throw new Error(`kind must be ${CONTRIBUTED_KINDS.slice(0, -1).join(', ')} or ${CONTRIBUTED_KINDS[CONTRIBUTED_KINDS.length - 1]}, not ${JSON.stringify(kind)}`);
 }
 
 // One command may write two files: an event and the place it happens at, when
