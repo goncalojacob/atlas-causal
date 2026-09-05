@@ -269,3 +269,27 @@ test('rule 29: a record an automated writer made says so in origin', async () =>
   });
   assert.equal(rulesHit(r, 29).length, 0, messages(r));
 });
+
+// --- rule 18, the half about events ----------------------------------------
+
+test('rule 18: an event\'s other names are optional, and held to a shape', async () => {
+  // The list exists because the atlas could not be searched for its most
+  // famous event by its common name (health review B, finding 17). It is
+  // optional where a place's is required: the title is already the display
+  // name, so an event nobody calls anything else carries no key at all.
+  let r = await run((fx) => { fx.byId['fixture-event-a'].names = ['A Fixture Rising', 'O Levantamento']; });
+  assert.equal(rulesHit(r, 18).length, 0, messages(r));
+  r = await run(() => {});
+  assert.equal(rulesHit(r, 18).length, 0, 'no key at all is the ordinary case');
+
+  r = await run((fx) => { fx.byId['fixture-event-a'].names = []; });
+  assert.match(rulesHit(r, 18)[0].message, /carries no list, rather than an empty one/);
+  r = await run((fx) => { fx.byId['fixture-event-a'].names = ['A Fixture Rising', 'A Fixture Rising']; });
+  assert.equal(rulesHit(r, 18)[0].path, '/names/1');
+  // The title in the list would be a second hit for one record.
+  r = await run((fx) => {
+    const event = fx.byId['fixture-event-a'];
+    event.names = [event.title, 'O Levantamento'];
+  });
+  assert.match(rulesHit(r, 18)[0].message, /the title is already the display name/);
+});

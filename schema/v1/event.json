@@ -27,7 +27,7 @@
     "sources": { "$ref": "../common/provenance.json#/properties/sources" },
     "title": { "type": "string", "minLength": 1, "maxLength": 200 },
     "names": {
-      "description": "What else this event is called: the common name where the title is the formal one, the name in another language, the name a source uses. Optional, unlike an actor's or a place's, because the title is already the display name and this list exists for search — an event nobody calls anything else carries no key at all. Shapes checked by rule 18, as the other two are.",
+      "description": "What else this event is called: the common name where the title is the formal one, the name in another language, the name a source uses. Optional, unlike an actor's or a place's, because the title is already the display name and this list exists for search — an event nobody calls anything else carries no key at all. Held to a shape by rule 18, as the other two are: no empty list, no name twice, and never the title itself. Search does not fold it yet; that is the search shard's, and plan decision 5.",
       "type": "array",
       "items": { "type": "string", "minLength": 1, "maxLength": 200 }
     },

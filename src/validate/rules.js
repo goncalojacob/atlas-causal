@@ -893,18 +893,30 @@ export function checkRules(records, topology = {}, { universe: prebuilt = null }
     }
   }
 
-  // --- rule 18: places ----------------------------------------------------
+  // --- rule 18: places, and an event's other names ------------------------
   // The little a place has to hold together. Its point is required by the
   // schema and checked by rule 10; its lane is derived from that point, so a
   // place needs no region of its own. What is left is the name list, for the
   // same reason an actor's is a rule and not a keyword (deviation 22).
+  //
+  // An event's list is optional where a place's is required — the title is
+  // already its display name and this is what else the thing is called
+  // (health review B, finding 17: the atlas could not be searched for its
+  // most famous event by its common name) — but a list that is there is held
+  // to the same shape, because "twice the same name" is not a shape a schema
+  // can refuse and a duplicate would be a second hit for one record.
   for (const r of own) {
-    if (r.kind !== 'place') continue;
+    const optional = r.kind === 'event';
+    if (r.kind !== 'place' && !(optional && r.names !== undefined)) continue;
     const names = Array.isArray(r.names) ? r.names.filter((n) => typeof n === 'string' && n.trim() !== '') : [];
-    if (names.length === 0) error(18, r, '/names', 'a place has at least one name; the first is the display name');
+    if (names.length === 0 && !optional) error(18, r, '/names', 'a place has at least one name; the first is the display name');
+    if (names.length === 0 && optional) error(18, r, '/names', 'an event with no other names carries no list, rather than an empty one');
     names.forEach((name, i) => {
       if (names.indexOf(name) !== i) error(18, r, `/names/${i}`, `name "${name}" repeated`);
     });
+    if (optional && names.some((n) => n === r.title)) {
+      error(18, r, '/names', 'the title is already the display name; this list is what else the event is called');
+    }
   }
 
   // --- rule 19: relations between actors ----------------------------------
