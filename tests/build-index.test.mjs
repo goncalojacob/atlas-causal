@@ -40,7 +40,7 @@ test('two builds of the repository name and write exactly the same files', async
   assert.deepEqual(Object.keys(first.files).sort(), Object.keys(second.files).sort());
   for (const [name, text] of Object.entries(first.files)) assert.equal(text, second.files[name], name);
   const manifest = JSON.parse(first.files['manifest.json']);
-  for (const key of ['spine', 'search', 'topology', 'sources', 'review']) {
+  for (const key of ['spine', 'search', 'sources', 'review']) {
     assert.match(manifest.files[key], new RegExp(`^index/${key}-[0-9a-f]{12}\\.json$`), key);
     assert.ok(Object.hasOwn(first.files, path.basename(manifest.files[key])), key);
   }
@@ -69,22 +69,27 @@ test('manifest names the hashed files, counts, lanes and land', async () => {
   const manifest = JSON.parse(built.files['manifest.json']);
   assert.equal(manifest.schema, 1);
   assert.deepEqual(manifest.counts, { events: 12, edges: 10, sources: 4, actors: 4, presences: 3, places: 11, relations: 3, narratives: 1, regions: 3 });
-  assert.match(manifest.files.topology, /^index\/topology-[0-9a-f]{12}\.json$/);
+  assert.match(manifest.files.spine, /^index\/spine-[0-9a-f]{12}\.json$/);
   assert.match(manifest.files.sources, /^index\/sources-[0-9a-f]{12}\.json$/);
-  assert.ok(Object.hasOwn(built.files, path.basename(manifest.files.topology)));
+  assert.ok(Object.hasOwn(built.files, path.basename(manifest.files.spine)));
   assert.equal(manifest.regions[0].id, 'fixture-lane-1');
   assert.deepEqual(manifest.land, []);
-  const topology = JSON.parse(built.files[path.basename(manifest.files.topology)]);
-  const byId = Object.fromEntries(topology.events.map((e) => [e.id, e]));
+  // The lane an event is drawn in and how it was arrived at: derived here and
+  // carried into the spine, except `regionMethod`, which nothing draws and
+  // which the projection drops (h3a-brief, A3). So the lane is read off the
+  // file and the method off the build.
+  const spine = JSON.parse(built.files[path.basename(manifest.files.spine)]);
+  const byId = Object.fromEntries(spine.events.map((e) => [e.id, e]));
+  const builtBy = Object.fromEntries(built.topology.events.map((e) => [e.id, e]));
   assert.equal(byId['fixture-event-a'].region, 'fixture-lane-1');
-  assert.equal(byId['fixture-event-m'].regionMethod, 'nearest');
-  assert.equal(byId['fixture-event-o'].regionMethod, 'override');
+  assert.equal(builtBy['fixture-event-m'].regionMethod, 'nearest');
+  assert.equal(builtBy['fixture-event-o'].regionMethod, 'override');
   assert.equal(Object.hasOwn(byId['fixture-event-a'], 'summary'), false, 'text stays out of the index');
   assert.deepEqual(built.unresolved, []);
 });
 
 // The dashboard's queue is this file: the browser has no way to read a
-// thousand record files, and the topology drops `authors`.
+// thousand record files, and the spine drops `authors`.
 test('the review index lists the drafts, the count and the warnings', async () => {
   const built = await buildIndex(path.join(ROOT, 'data'));
   const manifest = JSON.parse(built.files['manifest.json']);
@@ -130,9 +135,11 @@ test('weight counts active edges in and out plus the actors named', async () => 
 test('weight is in the built index and does not change between builds', async () => {
   const first = await buildIndex(FIXTURE_DATA);
   const second = await buildIndex(FIXTURE_DATA);
-  const name = path.basename(JSON.parse(first.files['manifest.json']).files.topology);
-  const events = JSON.parse(first.files[name]).events;
-  assert.ok(events.every((e) => Number.isInteger(e.weight)), 'every event in the index carries a weight');
+  const name = path.basename(JSON.parse(first.files['manifest.json']).files.spine);
+  // A tombstone carries no weight in the spine: it is drawn nowhere, and the
+  // tombstone list is the five fields a card still needs (h3a-brief, A10).
+  const events = JSON.parse(first.files[name]).events.filter((e) => e.status === 'active');
+  assert.ok(events.every((e) => Number.isInteger(e.weight)), 'every active event in the index carries a weight');
   assert.ok(events.some((e) => e.weight > 0));
   assert.equal(first.files[name], second.files[name]);
 });
@@ -141,7 +148,7 @@ test('writeIndex removes stale hashed files and the result is fresh', async () =
   const dir = await tempCopyOfFixtures();
   try {
     await mkdir(path.join(dir, 'index'), { recursive: true });
-    await writeFile(path.join(dir, 'index', 'topology-deadbeef0000.json'), '{}\n');
+    await writeFile(path.join(dir, 'index', 'spine-deadbeef0000.json'), '{}\n');
     await mkdir(path.join(dir, 'index', 'citers-deadbeef0000'), { recursive: true });
     await writeFile(path.join(dir, 'index', 'citers-deadbeef0000', 'fixture-source-a.json'), '[]\n');
     const built = await buildIndex(dir);

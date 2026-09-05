@@ -1,42 +1,24 @@
-// The spine: the projection of the topology every page will read whole once
-// H3b moves the pages over. Held here to the field table in
-// docs/health/h3a-brief.md (A3), to `when` carried verbatim (A1), to the
-// edge tuple (A2) and to the tombstone list (A10) — over the
-// fixtures and over the repository's own data, because the two disagree
-// about which shapes exist: only the fixtures hold a retracted edge, only
-// the repository holds a merged event.
+// The spine: the projection of the in-memory topology that every page reads
+// whole, and since H3c the only graph file the index writes. Held here to
+// the field table in docs/health/h3a-brief.md (A3), to `when` carried
+// verbatim (A1), to the edge tuple (A2) and to the tombstone list (A10) —
+// over the fixtures and over the repository's own data, because the two
+// disagree about which shapes exist: only the fixtures hold a retracted
+// edge, only the repository holds a merged event.
 
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import path from 'node:path';
-import { readFile } from 'node:fs/promises';
 import { buildSpine, buildTopology, edgeId } from '../src/validate/core.js';
 import { KINDS } from '../src/kinds.js';
-import { createAtlas } from '../src/data.js';
 import { buildIndex } from '../tools/build-index.mjs';
-import { readRecords, readRegions, readRegionPolygons } from '../tools/lib/read.mjs';
-import { createRegionDeriver } from '../src/util/geo.js';
-import { FIXTURE_DATA, ROOT, fixtures } from './helpers.mjs';
+import { atlasFromTopology, FIXTURE_DATA, ROOT, fixtures, topologyOf } from './helpers.mjs';
 
 const DATA = path.join(ROOT, 'data');
 
-async function topologyOf(dataDir) {
-  const { entries, problems } = await readRecords(dataDir);
-  assert.deepEqual(problems, []);
-  const polygons = await readRegionPolygons(dataDir);
-  return buildTopology(entries.map((e) => e.record), await readRegions(dataDir), {
-    deriveRegion: polygons ? createRegionDeriver(polygons) : undefined,
-  });
-}
-
-// The atlas as the site builds it today, from the two files the manifest
-// names — the reference every count in the spine is checked against.
-async function atlasOf(dataDir) {
-  const read = async (rel) => JSON.parse(await readFile(path.join(dataDir, rel), 'utf8'));
-  const manifest = await read('index/manifest.json');
-  const [topology, sources] = await Promise.all([read(manifest.files.topology), read(manifest.files.sources)]);
-  return createAtlas({ manifest, topology, sources: sources.sources, fetchJson: () => Promise.reject(new Error('no fetch')) });
-}
+// The atlas over the in-memory build the spine is projected from — the
+// reference every count in the spine is checked against (helpers.mjs).
+const atlasOf = (dataDir) => atlasFromTopology(dataDir);
 
 const ENVELOPE = ['id', 'kind', 'status', 'supersededBy', 'aliases'];
 // `revised` is on the five kinds a card fetches the record file of — the
@@ -203,7 +185,11 @@ test('the spine is in the built index, named in the manifest, and stable', async
   const name = path.basename(manifest.files.spine);
   assert.ok(Object.hasOwn(first.files, name));
   assert.equal(first.files[name], second.files[name]);
-  // Beside the topology, not instead of it: nothing switches in this run.
-  assert.match(manifest.files.topology, /^index\/topology-[0-9a-f]{12}\.json$/);
-  assert.ok(Object.hasOwn(first.files, path.basename(manifest.files.topology)));
+  // And it is the only graph file: since H3c the index writes the projection
+  // and not the thing projected.
+  assert.deepEqual(
+    Object.keys(first.files).filter((f) => f.startsWith('topology')),
+    [],
+    'the index still writes a topology file',
+  );
 });

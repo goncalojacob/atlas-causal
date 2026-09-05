@@ -1,14 +1,11 @@
 // The pages on the spine (H3b): what each one actually fetches.
 //
-// The promise of the whole milestone is one sentence — no page loads the old
-// topology any more — and it is a promise about requests, not about code, so
-// it is asserted against the requests a real browser made. `performance`'s
-// resource timeline is the browser's own record of them; a page that fell
-// back to the topology for one card would be caught here and nowhere else.
-//
-// PAGES grows by one line per commit of H3b, and each line lands with the
-// page it names. A page is listed here only once it is fully working on the
-// spine.
+// It is a promise about requests, not about code, so it is asserted against
+// the requests a real browser made. `performance`'s resource timeline is the
+// browser's own record of them: a page that quietly fetched the whole graph
+// twice, or one that fetched it to list books, would be caught here and
+// nowhere else. Until H3c it also caught a page falling back to the old
+// graph file, which does not exist to fall back to any more.
 //
 // The driven browser is tests/browser.mjs; it says why it is built by hand.
 
@@ -39,14 +36,13 @@ const PAGES = [
 const REQUESTS = 'return performance.getEntriesByType("resource").map((e) => e.name);';
 
 for (const [query, ready, spines] of PAGES) {
-  test(`${query} loads the spine and never the topology`, { skip }, async () => {
+  test(`${query} asks for the spine exactly ${spines} time(s)`, { skip }, async () => {
     await withBrowser(async (page, url) => {
       await open(page, url(query), ready);
       // The index files are hashed and immutable, so a name is enough to tell
-      // them apart: `topology-` cannot appear in a spine's name or a record's.
+      // them apart: `spine-` cannot appear in a record's.
       const requests = await page.eval(REQUESTS);
       const named = (part) => requests.filter((name) => name.includes(`/index/${part}`));
-      assert.deepEqual(named('topology-'), [], `${query} asked for the topology`);
       assert.equal(named('spine-').length, spines, `${query} asked for the spine ${named('spine-').length} times`);
     });
   });

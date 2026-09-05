@@ -8,24 +8,11 @@
 
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import path from 'node:path';
-import { readFile } from 'node:fs/promises';
-import { createAtlas } from '../src/data.js';
 import { defaultState } from '../src/state.js';
 import { workingSet, heldSet } from '../src/emphasis.js';
-import { FIXTURE_DATA } from './helpers.mjs';
+import { atlasOf, FIXTURE_DATA } from './helpers.mjs';
 
-async function fixtureAtlas() {
-  const read = async (rel) => JSON.parse(await readFile(path.join(FIXTURE_DATA, rel), 'utf8'));
-  const manifest = await read('index/manifest.json');
-  const [topology, sources] = await Promise.all([read(manifest.files.topology), read(manifest.files.sources)]);
-  return createAtlas({
-    manifest,
-    topology,
-    sources: sources.sources,
-    fetchJson: () => Promise.reject(new Error('emphasis.js fetches nothing')),
-  });
-}
+const fixtureAtlas = () => atlasOf(FIXTURE_DATA);
 
 const A = 'fixture-event-a';
 const B = 'fixture-event-b';

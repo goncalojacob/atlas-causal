@@ -83,9 +83,9 @@ const badges = (graph) => [...graph.matchAll(/class="cluster-count[^"]*"[^>]*>\+
 // back up to.
 async function activeEvents() {
   const dir = path.join(ROOT, 'data', 'index');
-  const file = (await readdir(dir)).find((n) => n.startsWith('topology-'));
-  const t = JSON.parse(await readFile(path.join(dir, file), 'utf8'));
-  return t.events.filter((e) => e.status === 'active').length;
+  const file = (await readdir(dir)).find((n) => n.startsWith('spine-'));
+  const spine = JSON.parse(await readFile(path.join(dir, file), 'utf8'));
+  return spine.events.filter((e) => e.status === 'active').length;
 }
 
 test('at the default zoom the graph draws stacks, and they add up to the events', { skip }, async () => {

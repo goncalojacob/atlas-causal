@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // Writes data/index/: manifest.json (never cached) plus spine-, search-,
-// topology-, sources- and review-<hash>.json and the citers-<hash>/
-// directory (immutable, named by content). Deterministic by construction —
+// sources- and review-<hash>.json and the citers-<hash>/ directory
+// (immutable, named by content). Deterministic by construction —
 // recursive key sort, code-unit comparison, two-space indent, trailing
 // newline — so the deploy job can assert that main's committed index is
 // byte-identical to a fresh build.
@@ -27,7 +27,7 @@ export const DEFAULT_DATA = path.join(ROOT, 'data');
 // source in a manifest that is fetched no-store on every page load, and
 // unhashed names would break the `immutable` convention the whole index is
 // served under (h3a-brief, A7). One hash over the directory buys both.
-const HASHED = /^(spine|search|sources|review|topology)-[0-9a-f]{12}\.json$/;
+const HASHED = /^(spine|search|sources|review)-[0-9a-f]{12}\.json$/;
 const HASHED_DIR = /^citers-[0-9a-f]{12}$/;
 
 // Deep copy with keys sorted by UTF-16 code unit (Array.prototype.sort's
@@ -50,9 +50,10 @@ export function hashOf(text) {
   return createHash('sha256').update(text, 'utf8').digest('hex').slice(0, 12);
 }
 
-// Builds the index in memory. Returns the file map, the topology, and the
-// active events whose region could not be derived (a build with those is
-// not written: the timeline would have nowhere to put them).
+// Builds the index in memory. Returns the file map, the topology it was
+// built from — which is no longer written anywhere — and the active events
+// whose region could not be derived (a build with those is not written: the
+// timeline would have nowhere to put them).
 export async function buildIndex(dataDir = DEFAULT_DATA) {
   const { entries, problems } = await readRecords(dataDir);
   if (problems.length) {
@@ -66,18 +67,10 @@ export async function buildIndex(dataDir = DEFAULT_DATA) {
   const deriveRegion = polygons ? createRegionDeriver(polygons) : undefined;
   const topology = buildTopology(records, regions, { deriveRegion });
 
-  const topologyText = serialize({
-    schema: 1,
-    events: topology.events,
-    edges: topology.edges,
-    actors: topology.actors,
-    presences: topology.presences,
-    places: topology.places,
-    relations: topology.relations,
-    narratives: topology.narratives,
-  });
-  // Beside the topology, not instead of it: nothing reads the spine until
-  // H3b moves the pages over one at a time.
+  // The graph every page loads whole, and the only file that carries it.
+  // `topology` above stays in memory: it is what this projection is taken
+  // from and what the rules below are checked against, and the whole of it
+  // was written out beside the spine only while the pages moved over (H3b).
   const spineText = serialize(buildSpine(topology));
   // The sources index without its citer rows, since H3b: every bibliographic
   // field and `citationCount`, and the rows themselves in the citer directory
@@ -108,10 +101,10 @@ export async function buildIndex(dataDir = DEFAULT_DATA) {
     entries: buildSearchIndex(topology).map((entry) => ({ ...entry, status: 'active' })),
   });
 
-  // What review.html needs and the topology does not carry: which records
+  // What review.html needs and the spine does not carry: which records
   // still have nobody's name on them, and what the rules say about each. The
   // browser cannot read data/ record by record — 1200 files — and the
-  // topology drops `authors`, so the digests are written here, where every
+  // spine drops `authors`, so the digests are written here, where every
   // record is already in hand. Warnings come from the same checkRules() the
   // CLI runs, so the dashboard shows the validator's opinion rather than a
   // second implementation of it.
@@ -123,7 +116,6 @@ export async function buildIndex(dataDir = DEFAULT_DATA) {
       .map((w) => ({ id: w.id, kind: w.kind, rule: w.rule, message: w.message }))
       .sort((a, b) => byId(a, b) || (a.rule < b.rule ? -1 : a.rule > b.rule ? 1 : 0)),
   });
-  const topologyName = `topology-${hashOf(topologyText)}.json`;
   const spineName = `spine-${hashOf(spineText)}.json`;
   const searchName = `search-${hashOf(searchText)}.json`;
   const sourcesName = `sources-${hashOf(sourcesText)}.json`;
@@ -145,7 +137,6 @@ export async function buildIndex(dataDir = DEFAULT_DATA) {
       citers: `index/${citersDir}`,
       search: `index/${searchName}`,
       spine: `index/${spineName}`,
-      topology: `index/${topologyName}`,
       sources: `index/${sourcesName}`,
       review: `index/${reviewName}`,
     },
@@ -170,7 +161,6 @@ export async function buildIndex(dataDir = DEFAULT_DATA) {
       'manifest.json': manifest,
       [searchName]: searchText,
       [spineName]: spineText,
-      [topologyName]: topologyText,
       [sourcesName]: sourcesText,
       [reviewName]: reviewText,
       ...Object.fromEntries(citerEntries),
