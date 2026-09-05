@@ -391,13 +391,16 @@ export function createPanel(container, {
       }
       if (s.place) {
         const found = atlas.resolve(s.place);
-        if (found && found.kind === 'place') renderPlaceCard(ctx, { container, place: found.record, state: s, mine });
-        else notFound('place', s.place);
+        if (found && found.kind === 'place') {
+          renderPlaceCard(ctx, {
+            container, place: found.record, state: s, mine, remembered: readOpenSection(storage),
+          });
+        } else notFound('place', s.place);
         return;
       }
       if (s.actor) {
         const actor = highlightedActor(s);
-        if (actor) renderActorCard(ctx, { container, actor, mine });
+        if (actor) renderActorCard(ctx, { container, actor, mine, state: s, remembered: readOpenSection(storage) });
         else notFound('actor', s.actor);
         return;
       }

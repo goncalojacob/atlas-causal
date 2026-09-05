@@ -10,6 +10,7 @@
 import { esc } from '../util/esc.js';
 import { formatYear } from '../util/dates.js';
 import { overlaps, resolveWindow } from '../util/window.js';
+import { sectionHtml, openSection } from './sections.js';
 
 // The actors that appear most often at this place. Ties break by name, so the
 // list is the same on every machine.
@@ -31,7 +32,7 @@ function actorsHere(ctx, events) {
     .slice(0, MOST);
 }
 
-function placeCardHtml(ctx, place, state) {
+export function placeCardHtml(ctx, place, state, { remembered = null } = {}) {
   const events = ctx.atlas.eventsByPlace.get(place.id) ?? [];
   const window = resolveWindow(state, ctx.atlas.extent);
   const variants = (place.names ?? []).slice(1);
@@ -45,9 +46,38 @@ function placeCardHtml(ctx, place, state) {
     <button type="button" class="link" data-action="actor" data-id="${esc(record.id)}">${esc(record.name)}</button>
     <span class="count">${count} event${count === 1 ? '' : 's'} here</span>
   </li>`);
+  // The same arrangement as the other cards (sections.js). "What happened
+  // here" is what a place opens on: it is the place's own history, and there
+  // are no consequences on this card to fall back to.
+  const sections = [{
+    key: 'events',
+    label: 'What happened here',
+    count: events.length,
+    hint: events.length
+      ? (inside === events.length ? 'All of them are inside the window.' : `${inside} of them ${inside === 1 ? 'is' : 'are'} inside the window; the rest are faded.`)
+      : '',
+    body: events.length ? `<ul class="actor-rows">${rows.join('')}</ul>` : '<p class="muted">No event happens here yet.</p>',
+  }];
+  if (actors.length) {
+    sections.push({
+      key: 'actors', label: 'Who turns up here', count: actors.length, body: `<ul class="actor-rows">${actors.join('')}</ul>`,
+    });
+  }
+  sections.push({
+    key: 'sources',
+    label: 'Sources',
+    count: ctx.atlas.citationCount ? ctx.atlas.citationCount('place', place.id) : 0,
+    // A place is a geographic fact and is exempt from "every node cites a
+    // source" (M9), so most of these are empty and say so rather than
+    // waiting on a fetch that will bring nothing.
+    body: '<div data-slot="place-sources"><p class="muted">A place is a geographic fact and need cite nothing.</p></div>',
+  });
+  const open = openSection(sections.map((s) => s.key), { source: state.source, remembered });
+
   return `
     ${place.status !== 'active' ? `<p class="notice status">This place is <strong>${esc(place.status)}</strong>.</p>` : ''}
     <header class="place-head">
+      ${ctx.historyHtml()}
       <h2>${esc(place.name)}</h2>
       <p class="meta">
         <span class="where">${esc(place.where.lat.toFixed(2))}, ${esc(place.where.lon.toFixed(2))}
@@ -57,34 +87,23 @@ function placeCardHtml(ctx, place, state) {
         ${ctx.lensControl('place', place.id)}
       </p>
       ${variants.length ? `<p class="also-known muted">also: ${variants.map((n) => esc(n)).join(' · ')}</p>` : ''}
-      ${ctx.entryLink('place', place.id)}
-      ${ctx.discussLink('place', place.id)}
-      ${ctx.wikipediaHtml(place)}
+      <div class="head-links">${ctx.entryLink('place', place.id)}${ctx.wikipediaHtml(place)}${ctx.discussLink('place', place.id)}</div>
     </header>
     <section class="summary" data-slot="place-summary"></section>
-    <section class="place-events">
-      <h2>What happened here <span class="count">${events.length}</span></h2>
-      ${events.length
-    ? `<p class="hint">${inside === events.length ? 'All of them are inside the window.' : `${inside} of them ${inside === 1 ? 'is' : 'are'} inside the window; the rest are faded.`}</p>
-        <ul class="actor-rows">${rows.join('')}</ul>`
-    : '<p class="muted">No event happens here yet.</p>'}
-    </section>
-    ${actors.length ? `<section class="place-actors">
-      <h2>Who turns up here <span class="count">${actors.length}</span></h2>
-      <ul class="actor-rows">${actors.join('')}</ul>
-    </section>` : ''}
-    <section class="sources" data-slot="place-sources"></section>`;
+    ${sections.map((s) => sectionHtml({ ...s, open: s.key === open })).join('')}`;
 }
 
-export function renderPlaceCard(ctx, { container, place, state, mine }) {
-  container.innerHTML = placeCardHtml(ctx, place, state);
+export function renderPlaceCard(ctx, { container, place, state, mine, remembered = null }) {
+  container.innerHTML = placeCardHtml(ctx, place, state, { remembered });
   // A place needs no summary and usually has none, so the record is fetched
   // only for the text it might carry; nothing on the card waits for it.
   ctx.atlas.record('place', place.id).then(
     (rec) => {
       if (!ctx.isCurrent(mine)) return;
       if (rec.summary) container.querySelector('[data-slot="place-summary"]').innerHTML = `<p>${esc(rec.summary)}</p>`;
-      container.querySelector('[data-slot="place-sources"]').innerHTML = ctx.citationsHtml(rec.sources, 'Sources for this place');
+      if (rec.sources?.length) {
+        container.querySelector('[data-slot="place-sources"]').innerHTML = ctx.citationsHtml(rec.sources, '', rec);
+      }
     },
     () => {},
   );

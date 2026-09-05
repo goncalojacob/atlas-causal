@@ -10,6 +10,7 @@
 import { esc } from '../util/esc.js';
 import { formatInterval, formatYear, bounds } from '../util/dates.js';
 import { ACTOR_TYPE_LABEL } from './event.js';
+import { sectionHtml, openSection } from './sections.js';
 
 // What a relation is called from each end. The same record reads two ways —
 // "Regime of Portugal" on the Estado Novo's card and "Regimes" on Portugal's —
@@ -47,7 +48,7 @@ const DEPENDENCY_LABEL = Object.freeze({
 function territoryHtml(ctx, actor) {
   const own = ctx.atlas.presencesByActor.get(actor.id) ?? [];
   const held = ctx.atlas.dependenciesOf.get(actor.id) ?? [];
-  if (own.length === 0 && held.length === 0) return '';
+  if (own.length === 0 && held.length === 0) return null;
   const row = (presence, name) => {
     const kind = presence.dependencyKind ? `<span class="role">${esc(DEPENDENCY_LABEL[presence.dependencyKind] ?? presence.dependencyKind)}</span>` : '';
     const sovereign = presence.dependencyOf && presence.dependencyOf !== actor.id
@@ -71,13 +72,16 @@ function territoryHtml(ctx, actor) {
     p,
     `<button type="button" class="link" data-action="actor" data-id="${esc(p.actor)}">${esc(ctx.atlas.actors.get(p.actor)?.name ?? p.actor)}</button> `,
   ));
-  return `<section class="territory">
-    ${own.length ? `<h2>Territory shown on the map <span class="count">${own.length} period${own.length === 1 ? '' : 's'}</span></h2>
-      <p class="hint">The outline the map draws for this actor in a given year, and the capital the source names.</p>
-      <ul class="actor-rows">${ownRows.join('')}</ul>` : ''}
-    ${held.length ? `<h2>What it held <span class="count">${held.length}</span></h2>
-      <ul class="actor-rows">${heldRows.join('')}</ul>` : ''}
-  </section>`;
+  return {
+    count: own.length + held.length,
+    body: `<div class="territory">
+      ${own.length ? `<h3>Shown on the map <span class="count">${own.length} period${own.length === 1 ? '' : 's'}</span></h3>
+        <p class="hint">The outline the map draws for this actor in a given year, and the capital the source names.</p>
+        <ul class="actor-rows">${ownRows.join('')}</ul>` : ''}
+      ${held.length ? `<h3>What it held <span class="count">${held.length}</span></h3>
+        <ul class="actor-rows">${heldRows.join('')}</ul>` : ''}
+    </div>`,
+  };
 }
 
 // The relations this actor stands in, both ways round, grouped by type. Built
@@ -85,7 +89,7 @@ function territoryHtml(ctx, actor) {
 // many of them an actor has, the card costs no further request.
 function relationsHtml(ctx, actor) {
   const standing = ctx.atlas.relationsByActor.get(actor.id) ?? [];
-  if (standing.length === 0) return '';
+  if (standing.length === 0) return null;
   const groups = new Map();
   for (const { relation, direction, other } of standing) {
     // Symmetric: an alliance read from either end says the same thing, so
@@ -106,25 +110,56 @@ function relationsHtml(ctx, actor) {
     </li>`);
     sections.push(`<h3>${esc(RELATION_LABEL[type][direction])}</h3><ul class="actor-rows">${items.join('')}</ul>`);
   }
-  return `<section class="relations">
-    <h2>Relations <span class="count">${standing.length}</span></h2>
-    <p class="hint">Links between actors, not between events: who a body belonged to, who led it, what came after it.</p>
-    ${sections.join('')}
-  </section>`;
+  return {
+    count: standing.length,
+    hint: 'Links between actors, not between events: who a body belonged to, who led it, what came after it.',
+    body: `<div class="relations">${sections.join('')}</div>`,
+  };
 }
 
 // Exported for the tests: there is no DOM in node --test, and the card is
 // the string, exactly as the source card is.
-export function actorCardHtml(ctx, actor) {
+export function actorCardHtml(ctx, actor, { state = null, remembered = null } = {}) {
   const appearances = ctx.atlas.eventsByActor.get(actor.id) ?? [];
   const variants = (actor.names ?? []).slice(1);
+  const narratives = ctx.atlas.narrativesByRef?.get(actor.id) ?? [];
   const rows = appearances.map(({ event, role }) => `<li class="actor-row">
     ${ctx.eventLink(event)} <span class="role">${esc(role)}</span>
     <span class="muted">${esc(ctx.laneLabel(event.region))}</span>
   </li>`);
+  const relations = relationsHtml(ctx, actor);
+  const territory = territoryHtml(ctx, actor);
+
+  // The same arrangement the event card has (sections.js): the head and
+  // whatever text there is, then one collapsible section per question with
+  // its count in the header.
+  const sections = [{
+    key: 'appearances',
+    label: 'Where it appears',
+    count: appearances.length,
+    body: appearances.length ? `<ul class="actor-rows">${rows.join('')}</ul>` : '<p class="muted">No event records this actor yet.</p>',
+  }];
+  if (relations) sections.push({ key: 'relations', label: 'Relations', ...relations });
+  if (territory) sections.push({ key: 'territory', label: 'Territory', ...territory });
+  sections.push({
+    key: 'sources',
+    label: 'Sources',
+    count: ctx.atlas.citationCount ? ctx.atlas.citationCount('actor', actor.id) : 0,
+    body: '<div data-slot="actor-sources"><p class="muted">Loading…</p></div>',
+  });
+  if (narratives.length > 0) {
+    sections.push({ key: 'part-of', label: 'Part of', count: narratives.length, body: ctx.partOfHtml(actor.id, { bare: true }) });
+  }
+  // An actor's card has no consequences to fall back to, so "where it
+  // appears" is what it opens on: it is the actor's own history.
+  const open = openSection(sections.map((s) => s.key), {
+    source: state?.source ?? null, remembered,
+  });
+
   return `
     ${actor.status !== 'active' ? `<p class="notice status">This actor is <strong>${esc(actor.status)}</strong>.</p>` : ''}
     <header class="actor-head">
+      ${ctx.historyHtml()}
       <h2>${esc(actor.name)}</h2>
       <p class="meta">
         <span class="actor-type">${esc(ACTOR_TYPE_LABEL[actor.actorType] ?? actor.actorType)}</span>
@@ -133,28 +168,22 @@ export function actorCardHtml(ctx, actor) {
         ${ctx.lensControl('actor', actor.id)}
       </p>
       ${variants.length ? `<p class="also-known muted">also: ${variants.map((n) => esc(n)).join(' · ')}</p>` : ''}
-      ${ctx.entryLink('actor', actor.id)}
-      ${ctx.discussLink('actor', actor.id)}
-      ${ctx.wikipediaHtml(actor)}
+      <div class="head-links">${ctx.entryLink('actor', actor.id)}${ctx.wikipediaHtml(actor)}${ctx.discussLink('actor', actor.id)}</div>
     </header>
     <section class="summary" data-slot="actor-summary"><p class="muted">Loading…</p></section>
-    ${relationsHtml(ctx, actor)}
-    ${territoryHtml(ctx, actor)}
-    <section class="actor-events">
-      <h2>Where it appears <span class="count">${appearances.length}</span></h2>
-      ${appearances.length ? `<ul class="actor-rows">${rows.join('')}</ul>` : '<p class="muted">No event records this actor yet.</p>'}
-    </section>
-    <section class="sources" data-slot="actor-sources"></section>`;
+    ${sections.map((s) => sectionHtml({ ...s, open: s.key === open })).join('')}`;
 }
 
-export function renderActorCard(ctx, { container, actor, mine }) {
-  container.innerHTML = actorCardHtml(ctx, actor);
+export function renderActorCard(ctx, { container, actor, mine, state = null, remembered = null }) {
+  container.innerHTML = actorCardHtml(ctx, actor, { state, remembered });
   ctx.atlas.record('actor', actor.id).then(
     (rec) => {
       if (!ctx.isCurrent(mine)) return;
       const place = rec.where ? ` <span class="where">${esc(rec.where.label)}</span>` : '';
       container.querySelector('[data-slot="actor-summary"]').innerHTML = `<p>${esc(rec.summary)}</p>${place ? `<p class="meta">${place}</p>` : ''}`;
-      container.querySelector('[data-slot="actor-sources"]').innerHTML = ctx.citationsHtml(rec.sources, 'Sources for this actor');
+      container.querySelector('[data-slot="actor-sources"]').innerHTML = rec.sources?.length
+        ? ctx.citationsHtml(rec.sources, '', rec)
+        : '<p class="muted">This actor cites nothing yet.</p>';
     },
     () => {
       if (!ctx.isCurrent(mine)) return;

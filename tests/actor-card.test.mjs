@@ -31,6 +31,8 @@ async function fixtureAtlas() {
 function context(atlas) {
   return {
     atlas,
+    historyHtml: () => '',
+    partOfHtml: () => '<ul class="narrative-rows"></ul>',
     eventLink: (event) => `<button type="button" class="link" data-action="select" data-id="${esc(event.id)}">${esc(event.title)}</button>`,
     laneLabel: (region) => region ?? '',
     lensControl: (kind, id) => `<button type="button" class="link small lens-control" data-action="focus" data-focus="${kind}:${id}">show only these</button>`,
@@ -43,7 +45,14 @@ function context(atlas) {
   };
 }
 
-const headings = (html) => [...html.matchAll(/<h3>([^<]*)<\/h3>/g)].map((m) => m[1]);
+// The relation groups, by their headings. Since M26 the card's own headings
+// are the collapsible section heads (sections.js), so this reads the <h3>s of
+// the relations section alone — the territory section writes its own.
+const relationsBlock = (html) => html.match(/<section class="card-section(?: open)?" data-section="relations">[\s\S]*?<\/section>/)?.[0] ?? '';
+const headings = (html) => [...relationsBlock(html).matchAll(/<h3>([^<]*)<\/h3>/g)].map((m) => m[1]);
+// A section's header, as the reader sees it: its label and its count.
+const count = (html, key) => html
+  .match(new RegExp(`data-section="${key}"[\\s\\S]*?<span class="count[^"]*">([^<]*)</span>`))?.[1] ?? null;
 
 test('a relation is headed one way on one card and the other way on the other', async () => {
   const atlas = await fixtureAtlas();
@@ -65,14 +74,14 @@ test('two relations between the same pair are two groups, in a fixed order', asy
   const ctx = context(atlas);
   assert.deepEqual(headings(actorCardHtml(ctx, atlas.actors.get('fixture-actor-one'))), ['Member of', 'Led']);
   assert.deepEqual(headings(actorCardHtml(ctx, atlas.actors.get('fixture-actor-two'))), ['Members', 'Led by']);
-  assert.match(actorCardHtml(ctx, atlas.actors.get('fixture-actor-one')), /<h2>Relations <span class="count">2<\/span><\/h2>/);
+  assert.equal(count(actorCardHtml(ctx, atlas.actors.get('fixture-actor-one')), 'relations'), '2');
 });
 
 test('an actor in no relation has no relations section at all', async () => {
   const atlas = await fixtureAtlas();
   const ctx = context(atlas);
   const html = actorCardHtml(ctx, { ...atlas.actors.get('fixture-actor-one'), id: 'fixture-nobody' });
-  assert.doesNotMatch(html, /class="relations"/);
+  assert.doesNotMatch(html, /data-section="relations"/);
 });
 
 test('the atlas\'s own cards: Portugal\'s four regimes and what Salazar led', async () => {
@@ -85,7 +94,7 @@ test('the atlas\'s own cards: Portugal\'s four regimes and what Salazar led', as
 
   const portugal = actorCardHtml(ctx, atlas.actors.get('portugal'));
   assert.deepEqual(headings(portugal), ['Regimes']);
-  assert.match(portugal, /<h2>Relations <span class="count">4<\/span><\/h2>/);
+  assert.equal(count(portugal, 'relations'), '4');
   for (const regime of ['first-portuguese-republic', 'military-dictatorship', 'estado-novo', 'third-portuguese-republic']) {
     assert.match(portugal, new RegExp(`data-action="actor" data-id="${regime}"`), regime);
   }
@@ -125,4 +134,21 @@ test('the actor card carries the lens control', async () => {
   const atlas = await fixtureAtlas();
   const html = actorCardHtml(context(atlas), atlas.actors.get('fixture-actor-one'));
   assert.match(html, /data-action="focus" data-focus="actor:fixture-actor-one"/);
+});
+
+// M26: the card is a head and collapsible sections with counts, the same
+// arrangement the event card has. An actor has no consequences to fall back
+// to, so it opens on its own history.
+test('the actor card is sections with counts, opening on where it appears', async () => {
+  const atlas = await fixtureAtlas();
+  const ctx = context(atlas);
+  const html = actorCardHtml(ctx, atlas.actors.get('fixture-polity-three'));
+  const keys = [...html.matchAll(/<section class="card-section(?: open)?" data-section="([a-z-]+)">/g)].map((m) => m[1]);
+  assert.deepEqual(keys, ['appearances', 'relations', 'territory', 'sources']);
+  assert.match(html, /<section class="card-section open" data-section="appearances">/);
+  assert.equal(count(html, 'appearances'), String((atlas.eventsByActor.get('fixture-polity-three') ?? []).length));
+  assert.equal(count(html, 'sources'), String(atlas.citationCount('actor', 'fixture-polity-three')));
+  // The reader's own choice stands where the arrival says nothing.
+  const remembered = actorCardHtml(ctx, atlas.actors.get('fixture-polity-three'), { remembered: 'relations' });
+  assert.match(remembered, /<section class="card-section open" data-section="relations">/);
 });
