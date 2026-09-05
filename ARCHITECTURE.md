@@ -4,8 +4,39 @@ What the Atlas causal is meant to become, structurally. `CLAUDE.md` has the
 rules, `CONTEXT.md` the reasoning, `STATUS.md` where we are right now. This
 file is the target: the shape every milestone builds toward.
 
-Revision 21, 5 September 2026. Sections marked ● exist in v1; things marked ○
+Revision 22, 5 September 2026. Sections marked ● exist in v1; things marked ○
 are reserved by a line in this file only — no folder, no schema, no code.
+
+**What revision 22 changed, and why.** One optional field on the source
+record, one new page, and a layout for a screen the atlas did not have one
+for. Nothing about the state, and nothing in any link.
+
+*The atlas stacks on a phone* ●. Under 720 pixels the view takes the screen,
+the timeline is a fixed strip under it, and the panel is a **sheet** over
+both — up when a record is opened, down to its grip when it is in the way.
+The search takes a line; the grouping and the layer switches fold behind one
+Options button. Nothing about it is state, so a phone and a desktop opening
+the same URL see the same records, and the pane sizes of M24 are ignored
+because the media query never names them. `src/phone.js` decides what raises
+the sheet and what a drag of the grip ends as; everything else is one media
+query.
+
+*A source can say what work it is inside* ●. `container` — `{ title, kind }`
+with kind `journal | edited-volume | series | website`, plus the `volume`,
+`issue` and `pages` that belong to the containing work rather than to this
+one. A closed list for the reason the edge types are one. `containerText` in
+`citation.js` is the one place the form of it is decided, so the
+bibliography, the source card, an event's Sources section and the full
+entry's citation list cannot drift apart. Absent on a work that stands alone,
+which is every source record written before this revision.
+
+*Narratives have a page, and their steps can be reordered* ●.
+`narratives.html` groups every account by the centuries it crosses, so two
+accounts of the same years sit side by side — see the narratives section
+below. And because the order of a narrative's steps *is* its walk, both
+places one is edited let a row move: two controls and Alt with an arrow,
+from `contribute/reorder.js`, over the pure `moveItem` in
+`contribute/bundle.js`.
 
 **What revision 21 changed, and why.** Nothing in the data model. One new
 rule about the browser's history, and the panel's cards rearranged.

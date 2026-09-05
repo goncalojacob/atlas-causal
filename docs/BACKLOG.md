@@ -25,17 +25,18 @@ the assistant. Scheduled work lives in `docs/*-brief.md`; the position in
 
 - "Discuss this record" link to a GitHub issue per record, prefilled.
 - Export the current view (map, graph, timeline) as an image; it is SVG.
-- A layout that works on a phone: panel and timeline assume a wide screen.
+- ~~A layout that works on a phone~~ — built in M28: under 720 px the atlas
+  stacks and the panel is a sheet over the view.
 - Level of detail in the graph view past a few hundred events (the map's
   clustering idea along the time axis).
 - Close the roles vocabulary (62 in use; the manifest lists them).
-- A `container` field on sources (journal, edited volume).
-- Reordering the steps of a narrative in the contribution form: the rows are
-  added in the order of the walk and can be removed, but a step written in the
-  wrong place has to be removed and added again. (The form itself was built in
-  M12; this is the one thing it does not do.)
-- A narrative's own page in the list, so several accounts of the same period
-  can be read side by side rather than one at a time.
+- ~~A `container` field on sources (journal, edited volume)~~ — built in M28,
+  with `series` and `website` beside those two.
+- ~~Reordering the steps of a narrative in the contribution form~~ — built in
+  M28, in the review dashboard's editor too: two controls on the row, and Alt
+  with an arrow from anywhere in it.
+- ~~A narrative's own page in the list~~ — built in M28 as `narratives.html`,
+  grouped by the centuries each account crosses.
 - **One renderer for the contribution form and the review editor.** They
   share the field definitions and not the code that draws them (deviation 82
   in `STATUS.md`). Extracting `form.js`'s entry renderer is the right shape;

@@ -6,8 +6,69 @@ session ends. `ARCHITECTURE.md` is the target; this file is the position.
 
 ## Last updated
 
-2026-09-05, after M26 (`docs/m26-brief.md`): **a card is a head, a summary
-and collapsible sections with counts, and the browser's Back comes back.**
+2026-09-05, after M28 (`docs/m28-brief.md`): **four things off the backlog —
+a phone layout, a container on sources, reordering a narrative's steps, and
+`narratives.html`.**
+
+**The atlas works on a phone.** Under 720 pixels it stacks: the map or the
+graph takes the screen, the timeline is a fixed strip under it, and the panel
+is a **sheet** over both — it comes up when a record is opened and is pushed
+back down to a 44-pixel grip, by a drag or a tap, when it is in the way. The
+search takes a line of its own; the grouping picker and the three layer
+switches fold behind one **Options** button without moving in the DOM, so
+every module still finds the control it wired. Both views already panned under
+one finger and now there is a check that says so. **Nothing about it is
+state**: a phone and a desktop opening the same link see the same records, and
+the resizable panes of M24 are ignored because the media query that arranges
+this never names them. `src/phone.js` holds the two decisions — what raises
+the sheet, and what a drag of the grip ends as — and the layout is one media
+query. Hit targets are 40 pixels on every control that is a control;
+deviation 183 says why a link inside a sentence is not.
+
+**A source can say what work it is inside.** `container`: `{ title, kind }`
+with kind `journal | edited-volume | series | website`, plus the optional
+`volume`, `issue` and `pages`, which belong to the *containing* work and are
+therefore inside it rather than beside `publisher`. A closed list for the
+reason the edge types are one — an article in a journal and a chapter in an
+edited volume are not cited alike. `containerText` in `src/citation.js` is the
+one place the form is decided ("Journal of Portuguese History, 12(3), 45-67."
+and "In The Cambridge History of Portugal, 45-67."), and the bibliography, the
+source card, an event's Sources section and the full entry's citations all go
+through it. The contribution form and the review dashboard got the five fields
+from one `FIELDS` entry, as they get every other. **No record in `data/` was
+touched**: an empty title writes no key at all, and the byte-identical-save
+test over the whole dataset still passes. This answers the open question that
+had been waiting since M2.
+
+**A narrative's steps can be reordered.** The order of the steps is the walk,
+so a step in the wrong place is a different argument and moving one is an
+edit. Two controls on each row, disabled at the ends, and Alt with an arrow
+from anywhere in the row — including the textarea a paragraph is being typed
+into, where a plain arrow is still a cursor key. The row itself moves rather
+than the list being redrawn, so nothing half typed and no focus is lost.
+`moveItem` and `canMove` in `contribute/bundle.js` are the arithmetic, pure;
+`contribute/reorder.js` is the row. Citations and an event's actors are sets
+rather than walks and get no controls.
+
+**`narratives.html`.** A card per account — title, narrator, the years it is
+about, how many steps, its own paragraph — **grouped by the centuries it
+crosses**, so two accounts of the same years sit side by side and can be read
+against each other, which is what `CONTEXT.md` says narratives are for and
+what a flat list cannot show. An account across a boundary is listed under
+both. A period is the years of the records the steps arrive at, never the
+`window` beside them, and a title opens the account at its first step. It is
+in the header next to sources and about — which is where M12's *narratives*
+button was, and that button became this link: the panel's list was the same
+list without the arrangement and had no other way in (deviation 182).
+
+**No historical text was written and nothing under `data/` changed**: 1,716
+records, 0 errors, 3 warnings, as M29 left them. **588 tests**, nineteen of
+them in a real browser. `ARCHITECTURE.md` is at revision 22; deviations
+182–185.
+
+Before that, 2026-09-05, after M26 (`docs/m26-brief.md`): **a card is a head,
+a summary and collapsible sections with counts, and the browser's Back comes
+back.**
 
 The owner's complaint was that a card showed everything at once — summary,
 who is in it, consequences, convergence, citations, narratives, horizon — and
@@ -1268,7 +1329,31 @@ overnight runs and the hourly shepherd keep off each other's toes on `m0`.
    Sources header the way disputes are counted ("Sources (2, 2 unchecked)").
    The agent chose the loud, honest one and did not decide it for you; it is
    two lines in `citationsHtml` in `src/panel/panel.js`.
-14. **Owner: look at a card and say whether a section should open on its
+14. **Owner: open the atlas on an actual phone and say whether the sheet is
+   right.** `node tools/serve.mjs`, then this machine's address from the
+   handset. Three numbers decide how it feels, all at the top of the
+   `@media (max-width: 720px)` block in `src/style.css`: how tall the sheet is
+   when it is up (`min(68vh, 34rem)`), how much of it stays on screen when it
+   is down (`--sheet-grip`, 44 px), and how tall the timeline strip is
+   (`--phone-timeline`, 8.5rem). The breakpoint itself is `PHONE_WIDTH` in
+   `src/phone.js` and nowhere else. The one judgement the agent could not make
+   is whether the sheet should come up *whole* when you tap a mark, as it does,
+   or only part of the way so the mark you tapped stays visible.
+15. **Owner: say whether four kinds of container are enough.** A source can now
+   name the journal, edited volume, series or website it is inside. A newspaper
+   and a conference proceedings are the two that will come up next; each is one
+   entry in `CONTAINER_KINDS` in `src/citation.js`, one in the enum in
+   `schema/v1/source.json`, and a line in `containerText` only if it is cited
+   in a form the four do not already cover.
+16. **Owner: say whether the century is the right bucket for
+   `narratives.html`.** With one narrative the page is one heading; with twenty
+   it is the arrangement that decides whether two accounts of the same argument
+   are visibly about the same argument. `centuriesOf` and `groupByCentury` in
+   `src/narratives/list.js` are the two functions, and the alternatives are a
+   coarser bucket (an era, named by hand) or a finer one (a half-century),
+   neither of which the agent could choose without knowing what the finished
+   list looks like.
+17. **Owner: look at a card and say whether a section should open on its
    own at all.** `node tools/serve.mjs`, then
    `http://localhost:8000/?selected=carnation-revolution-1974`. Today
    Consequences opens by itself on a fresh reader, on the argument that
@@ -1326,9 +1411,14 @@ overnight runs and the hourly shepherd keep off each other's toes on `m0`.
 - When contributions open to strangers. `CONTEXT.md` argues: after the
   1580–1640 chain coheres and a few hundred of the owner's own records exist.
   Owner: "we'll decide later."
-- Source records have no field for the container of a chapter or article
-  (journal, edited volume). `locator` and the DOI cover locating it; the
-  owner decides whether a `container` field is wanted before records exist.
+- **Answered in M28: sources have a `container`.** The owner asked for it in
+  `docs/m28-brief.md` and M28 built it — `{ title, kind }` with kind
+  `journal | edited-volume | series | website`, plus `volume`, `issue` and
+  `pages`, optional throughout and absent on a work that stands alone. What
+  is still open is only whether the four kinds are the right four; a fifth
+  (a newspaper, a conference proceedings) is one entry in `CONTAINER_KINDS`
+  in `src/citation.js`, one in the schema's enum, and a line in
+  `containerText` if it is cited in a form the four do not already cover.
 - The Natural Earth `CONTINENT` attribute puts all of Russia in `europe`,
   Turkey and the Caucasus in `asia`, Greenland in `americas`. Overridable
   per record with `region`; acceptable for v1?
@@ -3185,3 +3275,4 @@ M29 started 2026-09-05T01:29:00Z by scheduled (branch m29)
 M29 done
 
 M28 started 2026-09-05T01:58:23Z by scheduled
+M28 done
