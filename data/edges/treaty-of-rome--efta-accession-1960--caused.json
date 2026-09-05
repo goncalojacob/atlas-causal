@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "treaty-of-rome--efta-accession-1960--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    },
+    {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Rome\", revision 1311520265"
+    }
+  ],
+  "from": "treaty-of-rome",
+  "to": "efta-accession-1960",
+  "type": "caused",
+  "confidence": "consensus",
+  "explanation": "The European Free Trade Association exists because the Common Market did: it was assembled in 1959–60 by the states outside the Six, on a British initiative, as a free trade area in industrial goods without a common tariff, common policies or supranational institutions — that is, as the arrangement the Six had refused. Portugal was in it because it could not be in the other one. The Stockholm Convention's annex G, which let Portugal keep protective tariffs and reduce them on a longer schedule than anybody else, is the measure of the distance, and joining was still the first binding commitment the Estado Novo made to open the economy.",
+  "dispute": null
+}

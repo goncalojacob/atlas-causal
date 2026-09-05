@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "hungarian-revolution-of-1956",
   "kind": "event",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,11 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": null,
+  "revised": "2026-09-05",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "m40-retracted"
+    ],
+    "note": "Retracted in M40b: the rising of October 1956 against the Hungarian government and the Soviet presence, crushed by the Red Army in a fortnight. The atlas holds no record of the eastern bloc's internal history — no Berlin 1953, no Prague 1968 — for it to connect to, and its clearest reach into Portugal, the crisis it caused in the western communist parties and so in the PCP, would need that crisis as a record here. Wiring it forward to 1989 across thirty-three years would be an invention."
   },
   "wikidata": "Q164348",
   "sitelinks": 77,

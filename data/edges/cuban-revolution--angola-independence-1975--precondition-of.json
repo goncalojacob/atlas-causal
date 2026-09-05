@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "cuban-revolution--angola-independence-1975--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "macqueen-1997-decolonization",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Cuban Revolution\", revision 1373305240"
+    }
+  ],
+  "from": "cuban-revolution",
+  "to": "angola-independence-1975",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Which of the three movements held Luanda at midnight on 11 November 1975 was settled in the field in the six weeks before it, and what settled it was the arrival of Cuban regular troops and artillery against the FNLA column from the north and the South African one from the south. The claim is narrow and it is about capacity: the government that could send an expeditionary force across the Atlantic on its own decision, and had a political reason to, is the one 1959 produced. Whether Havana acted on Moscow's instruction or ahead of it is disputed, and this edge does not settle it.",
+  "dispute": null
+}
