@@ -4,8 +4,38 @@ What the Atlas causal is meant to become, structurally. `CLAUDE.md` has the
 rules, `CONTEXT.md` the reasoning, `STATUS.md` where we are right now. This
 file is the target: the shape every milestone builds toward.
 
-Revision 19, 5 September 2026. Sections marked ● exist in v1; things marked ○
+Revision 20, 5 September 2026. Sections marked ● exist in v1; things marked ○
 are reserved by a line in this file only — no folder, no schema, no code.
+
+**What revision 20 changed, and why.** Nothing in the data model, nothing in
+the state. One reserved line became built, and one module grew two functions.
+
+*The graph view draws a level of detail* ●. It no longer draws one node per
+event unconditionally: nodes of one band that are closer together than a
+screen constant — `STACK_DISTANCE`, thirteen units at k = 1, a little under
+the distance at which two hit targets overlap — are drawn as one mark with a
+`+n` badge, and the links between two such marks are drawn as one line,
+heavier for how many it carries, in the commonest of their types and dashed
+as disputed if **any single one** of them is. Zooming in splits the stacks;
+clicking one puts its members in the panel and, when zooming can part it,
+goes to the zoom where it does. Merging is **within a band and never across
+one**, because a lane is a claim about where a group of events belongs.
+
+*The arrangement and the level of detail are two functions, not one.*
+`layoutGraph` places every event once and knows nothing of the zoom;
+`stackLayout` reads those coordinates and says what is drawn at a given `k`.
+That split is why a stack can open without the picture moving: zooming
+changes which marks are drawn, never where a mark is. Both are pure, both are
+tested for determinism, and the second is tested against the whole atlas as
+well as against the density the feature exists for.
+
+*`cluster.js` is the one module that decides what merges*, for all three
+pictures. It gained `alone` — the set of ids that must keep a mark of their
+own, which every view used to hand-roll — and `mergeEdges`, the other half of
+a level of detail. In the graph the never-stacked set is what the reader is
+working with: the selection, the walked chain, the consequences and
+converging branches drawn at it, the lens's events, the horizon's reachable
+set, a narrative's steps, and the selected actor's events.
 
 **What revision 19 changed, and why.** Nothing in the data model. One field
 in the state, one number halved, and one rule about what a click on nothing
@@ -525,12 +555,13 @@ top. Two adjacent years are about eight units apart at rest on this data, and
 a mark or its stroke covering a neighbour's centre would have made that
 neighbour unreachable until the reader zoomed.
 
-*Level of detail for the graph view is reserved, not built* ○. At thousands of
-nodes it will need the map's clustering idea applied along the time axis —
-events of a period drawn as one node with a count, opened by a click — and
-`cluster.js` is already the one-dimensional case of that. Sixty nodes do not
-need it and building it now would be guessing at the shape of a problem we
-have not got.
+*Level of detail for the graph view is built* ● (M25). The map's clustering
+idea along the time axis: events of one band and a stretch of time drawn as
+one node with a count, opened by a click, with the links between two such
+nodes merged and counted too. `cluster.js` was already the one-dimensional
+case of it and is now the shared one. The threshold is a screen constant, so
+zooming in splits the stacks on their own, and what the reader is working
+with is never inside one.
 
 *The state carries `view`*, `map` or `graph`, in the URL as `?view=graph`. It
 is state and not a preference: a link is meant to open on the picture the
@@ -695,7 +726,7 @@ atlas-causal/
 │   ├── horizon.js                ● pure: the traversal and the horizon year put together; what the panel lists and the views light
 │   ├── citation.js               ● pure: a source as a citation, its identifiers as links, a bibliography's order
 │   ├── markdown.js               ● pure: the closed Markdown subset a `body` is written in; everything outside it comes out as text
-│   ├── cluster.js                ● pure: which marks overlap at this zoom, which of them no zoom can part; the timeline uses it in one dimension
+│   ├── cluster.js                ● pure: which marks overlap at this zoom, which of them no zoom can part, which are held out of the grouping, and how the links between two groups merge; the timeline uses it in one dimension and the graph in two
 │   ├── search.js                 ● pure: titles and every one of an actor's names, folded and ranked
 │   ├── search-box.js             ● the input, the list and the keys
 │   ├── map/
@@ -765,10 +796,9 @@ atlas-causal/
     └── PULL_REQUEST_TEMPLATE.md  ● the review checklist
 ```
 
-Reserved, by this line only ○: `data/i18n/<lang>/`,
-`data/geo/land-<epoch>.json`, and level of detail for the graph view — the
-map's clustering idea along the time axis, for when the data outgrows sixty
-nodes.
+Reserved, by this line only ○: `data/i18n/<lang>/` and
+`data/geo/land-<epoch>.json`. Level of detail for the graph view was reserved
+here and is built (M25).
 Nothing named for AI-generated content exists anywhere in the tree; if that
 layer ever comes it gets its own design against the rules in `CONTEXT.md`.
 
@@ -1267,7 +1297,7 @@ layout, and the graph view is built the first time it is asked for.
 | `wikipedia.js` | Which article a record's identity offers and the URL it becomes: the reader's language, then English, then the first there is, with the language checked before it becomes a hostname; and the titles as further search names. Pure, escapes nothing. | That the atlas has its own text, and where the link will be drawn. |
 | `review/citations.js` | The per-citation verification flags: the rows the dashboard draws, what is still unchecked, the count across a dataset, and a tick set or taken back without mutating anything. Pure. | The DOM, and whether anybody is going to sign. |
 | `map/projection.js` | lon/lat → SVG coordinates and back, and the pan/zoom transform ⇄ the box of world it shows. | Everything else. |
-| `cluster.js` | Groups points that overlap at the current zoom, picks each group's representative by `weight`, says which groups no zoom could part and where a group comes apart. Pure, and used in two dimensions by the map and in one by the timeline. | The DOM, the projection, what a point means. |
+| `cluster.js` | Groups points that overlap at the current zoom, picks each group's representative by `weight`, says which groups no zoom could part and where a group comes apart, keeps the ids it is told to hold out (`alone`) in groups of one, and merges the links between two groups into one counted link (`mergeEdges`). Pure, and used in two dimensions by the map and the graph and in one by the timeline. | The DOM, the projection, what a point means, why an id is held out. |
 | `util/window.js` | Resolves a null bound against the data's extent, says what overlaps the window, owns the "map at Y" rule and the wheel's narrowing of the band around a year. Pure. | The DOM, and which view is asking. |
 | `util/viewport.js` | What "in view" means: whether an event's place is inside a box, and which events the lanes draw while the map holds one — plus what the reader is holding, which no box removes. Pure. | The DOM, the projection, and how the box was arrived at. |
 | `share.js` | The two ways out of what is on screen: the correction issue about one record, and the view as a standalone SVG with the stylesheet and the computed tokens inlined. Pure but for one function that hands the browser a file. | What is on the card, and which view is asking beyond its name. |
@@ -1275,8 +1305,8 @@ layout, and the graph view is built the first time it is asked for.
 | `search.js` + `search-box.js` | Folds and ranks event titles and every one of an actor's names — prefix, then word start, then substring — and draws the result as a combobox. | Anything about the map or the timeline; choosing is a state change. |
 | `map/layers/*` | One layer per thing drawn, in a fixed order: coastlines, then territories, then marks, so an event sits on top of the state it happened in. Renders only records in the visible window. A stack of marks is drawn as one, with a count, and opened by a click. | Each other. |
 | `map/layers/presences.js` | The territories of the window's far end: a thin line for a state, a lighter one over a stronger wash for a dependency, dashed when disputed. Hover names it and its sovereign; click selects the actor. No colour per polity — two hundred of them share one palette. | Which shard the year is in, or how one is fetched. |
-| `graph-view/layout.js` | Events, edges, the lanes and the data's extent → the coordinates of every node and every edge, plus the bands. x is the year on the whole extent; y is a barycentre pass inside the band of the lane, or over the whole field when there are no lanes. Deterministic — ties by id then weight, neighbour lists sorted — and self-checking: it counts crossings and keeps the best arrangement it saw, the plain order included. | The DOM, the state, what is selected, what is in the window. |
-| `graph-view/graph-view.js` | Draws what the layout gives it: the bands and the year axis once, then the nodes, the five edge types by pattern and weight, the window as a shade, the walked chain in madder and the convergence branches filled in. Pan and zoom; a click is resolved to the nearest node centre within reach; clicking a consequence of the open event walks the chain. | Where a node goes, and how the panel renders anything. |
+| `graph-view/layout.js` | Events, edges, the lanes and the data's extent → the coordinates of every node and every edge, plus the bands. x is the year on the whole extent; y is a barycentre pass inside the band of the lane, or over the whole field when there are no lanes. Deterministic — ties by id then weight, neighbour lists sorted — and self-checking: it counts crossings and keeps the best arrangement it saw, the plain order included. `stackLayout` is the second half: those coordinates and a zoom in, the marks and lines actually drawn out, merged within a band and never across one. | The DOM, the state, what is selected, what is in the window, why an id may not be stacked. |
+| `graph-view/graph-view.js` | Draws what the layout gives it: the bands and the year axis once, then the marks, the five edge types by pattern and weight, the window as a shade, the walked chain in madder and the convergence branches filled in. Decides the one thing the layout cannot — which events the reader is working with, and so may never be stacked. Pan and zoom; a click is resolved to the nearest mark centre within reach; clicking a consequence of the open event walks the chain, clicking a stack opens it. | Where a node goes, what merges with what, and how the panel renders anything. |
 | `timeline.js` + `timeline-scale.js` | Lanes from `lanes.js`, or its packed rows when there is no grouping; the scale is injected; the window drawn over them as a band with two handles, which is the atlas's only time control. Bars that would overlap stack, and only within the window, so narrowing the band splits them without moving the scale. | Which regions exist. |
 | `panel/` | The shell plus one file per card. Detail, consequences, the horizon, convergence, supporting and dissenting citations shown apart, confidence and status shown as such; an event's actors with their roles, a source's card with everything that cites it, an actor's card with its relations grouped by type and direction, a place's card, and the members of a cluster. | Traversal logic. |
 | `sources/` | `sources.html`: the manifest and the sources index, and the bibliography as markup. Nothing else — the topology is twenty times the size and lists no books. | The topology, the map, the panel. |
@@ -1459,6 +1489,7 @@ from two sources of which either may be the wrong one.
 | The lens and the grouping ● | built in M14: `src/lanes.js`, `src/lens.js`, `src/grouping.js`, `focus`/`group`/`lanes` in the state, the bands of `graph-view/layout.js` | a fifth grouping is one case in `lanesFor` and one option in the picker; the cap and the "Other" lane are one constant each; `region` returning as the default is one value in `defaultState()` |
 | Identity and the link out ● | built in M15: `wikidata`/`wikipedia`/`sitelinks` on three kinds, rules 21 and 22, `src/wikipedia.js`, the link on three cards, the titles in the search, the three Wikimedia source records | the fields are additive and import-written, so a second catalogue is three more optional keys and one more `identityOf`; `sitelinks` is stored and read by nothing, waiting for the decision it is evidence for |
 | Checking a citation ● | built in M15: `review.citations`, the dashboard's boxes, the queue's count, the validator's line | keyed by the source id rather than by position, so editing the citation list does not move anybody's ticks; a flag and not a gate, so making it one later is one line in Sign |
+| Level of detail in the graph ● | built in M25: `alone` and `mergeEdges` in `src/cluster.js`, `stackLayout` in `src/graph-view/layout.js`, stacks and merged lines in `graph-view.js`, a `graph` case in `panel/cluster.js` | the threshold and the zoom limit are one constant each and live together, so a denser atlas is one number; the never-stacked set is one `Set` built in `render`, so a new thing the reader works with joins it in one line |
 | Editorial emphasis on the map | a `prominence` field on the event record; `cluster.js` reads `prominence ?? weight` | ○ reserved by this line: derived `weight` in the index is the only measure now, and it is mechanical. `sitelinks` is **not** it: how many encyclopedias wrote about something is not this atlas's judgement of it |
 
 ## Scale, for the record
