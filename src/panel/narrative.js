@@ -19,16 +19,20 @@ function authorsLine(narrative) {
 // The narratives a record is part of, wherever a record is shown. Empty when
 // none passes through it, so nothing is said about a record that no one has
 // written about yet.
-export function partOfHtml(ctx, id) {
+// `bare` leaves off the section and its heading: on a card the list is drawn
+// inside a collapsible section that already carries the label and the count
+// (sections.js), and a second heading there would be the same words twice.
+// An edge has no card, so its explanation still asks for the whole thing.
+export function partOfHtml(ctx, id, { bare = false } = {}) {
   const list = ctx.atlas.narrativesByRef?.get(id) ?? [];
   if (list.length === 0) return '';
   const items = list.map((n) => `<li class="narrative-row">
     <button type="button" class="link" data-action="narrative" data-id="${esc(n.id)}">${esc(n.title)}</button>
     <span class="muted">${authorsLine(n)}</span>
   </li>`);
-  return `<section class="part-of"><h2>Part of <span class="count">${list.length}</span></h2>
-    <p class="hint">Narratives that walk through this record. A narrative is one person's account and changes nothing it walks.</p>
-    <ul class="narrative-rows">${items.join('')}</ul></section>`;
+  const inner = `<p class="hint">Narratives that walk through this record. A narrative is one person's account and changes nothing it walks.</p>
+    <ul class="narrative-rows">${items.join('')}</ul>`;
+  return bare ? inner : `<section class="part-of"><h2>Part of <span class="count">${list.length}</span></h2>${inner}</section>`;
 }
 
 export function narrativeListHtml(ctx) {

@@ -781,6 +781,50 @@ svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align:
   background: var(--ground); margin: 0 0 var(--space-3); font-size: var(--text-sm);
 }
 .panel .notice.disputed { border-color: var(--madder); background: var(--madder-faint); }
+/* The path walked, as a breadcrumb at the top of the panel. One madder rule
+   down its left, which is the accent the map and the graph draw the same
+   path in, so the three pictures agree about what the reader is holding. */
+.panel .breadcrumb { border-left: 2px solid var(--madder); padding-left: var(--space-3); margin-bottom: var(--space-3); }
+.panel .breadcrumb ol { list-style: none; margin: 0; padding: 0; font-size: var(--text-sm); }
+.panel .breadcrumb li { display: inline; }
+.panel .breadcrumb li + li::before { content: ' / '; color: var(--ink-soft); }
+.panel .breadcrumb .current { color: var(--ink); font-weight: 600; }
+.panel .breadcrumb .arrow { font-size: var(--text-xs); }
+.panel .breadcrumb .actions { margin-top: var(--space-2); }
+
+/* Back and Forward, above the card's title: the browser's own history, named
+   so the reader knows what they are going back to before they press it. */
+.panel .card-history { display: flex; gap: var(--space-3); margin: 0 0 var(--space-2); font-size: var(--text-sm); }
+.panel .card-history .link.small { margin-left: 0; }
+.panel .card-history .go-forward { margin-left: auto; }
+
+/* The actors of an event, as chips in the head. The role is on the title
+   attribute and comes out on hover or focus: six names have to fit on two
+   lines, and six names each trailing a role would be the paragraph this card
+   was rearranged to stop being. */
+.panel .chips { display: flex; flex-wrap: wrap; gap: var(--space-2); margin: var(--space-2) 0 0; }
+.panel .chips .chip {
+  border: 1px solid var(--line); background: var(--ground); color: var(--ink);
+  font-family: var(--font-ui); font-size: var(--text-sm); line-height: 1.6;
+  padding: 0.05rem 0.5rem; border-radius: 999px; cursor: pointer;
+}
+.panel .chips .chip:hover, .panel .chips .chip:focus-visible { background: var(--cobalt-faint); border-color: var(--cobalt-soft); color: var(--cobalt); }
+.panel .chips .chip.highlighted { border-color: var(--cobalt); color: var(--cobalt); }
+.panel .chips .chip .role { display: none; font-style: italic; color: var(--ink-soft); }
+.panel .chips .chip:hover .role, .panel .chips .chip:focus-visible .role { display: inline; }
+
+/* The quiet links out of a card: the full entry, somebody else's account,
+   and the way to disagree with the record. One line, at the foot of the
+   head, so the card's own text is what follows the title. */
+.panel .head-links { display: flex; flex-wrap: wrap; gap: var(--space-3); margin: var(--space-2) 0 0; font-size: var(--text-sm); }
+.panel .head-links > p { margin: 0; }
+
+/* A citation nobody has opened the source for says so, quietly. The atlas
+   has 1,874 of them and none checked; a mark that shouted would be 1,874
+   alarms, and no mark at all would be a claim it cannot support. */
+.panel .citation .unchecked { color: var(--ink-soft); font-size: var(--text-xs); font-family: var(--font-ui); }
+.panel .badge.verified { border-color: var(--cobalt); color: var(--cobalt); }
+
 /* A card's collapsible sections. The header is a button, so that Enter and
    Space work without a keydown handler anywhere, but it is set exactly like
    the section heads it replaced — the same serif, the same rule above, the

@@ -69,8 +69,11 @@ export function openSection(keys, { chain = [], source = null, remembered = null
 
 // "9", or "9, 1 disputed". A dispute is counted in the header rather than
 // only in the row, so that a closed section still says there is an argument
-// inside it.
+// inside it. A section of one thing has no count worth showing — the link the
+// reader followed to get here is one link — but it still says so when that
+// one thing is disputed.
 export function countLabel(count, disputed = 0) {
+  if (count === null || count === undefined) return disputed > 0 ? `${disputed} disputed` : '';
   return disputed > 0 ? `${count}, ${disputed} disputed` : String(count);
 }
 
@@ -81,9 +84,8 @@ export function sectionHtml({
   key, label, count = null, disputed = 0, open = false, hint = '', body = '',
 }) {
   const id = `card-section-${key}`;
-  const counted = count === null
-    ? ''
-    : `<span class="count${disputed > 0 ? ' disputed' : ''}">${esc(countLabel(count, disputed))}</span>`;
+  const text = countLabel(count, disputed);
+  const counted = text ? `<span class="count${disputed > 0 ? ' disputed' : ''}">${esc(text)}</span>` : '';
   return `<section class="card-section${open ? ' open' : ''}" data-section="${esc(key)}">
     <h2 class="section-head"><button type="button" class="section-toggle" data-action="section"
       data-section="${esc(key)}" id="${esc(id)}-head" aria-controls="${esc(id)}"

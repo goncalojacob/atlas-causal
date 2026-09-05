@@ -34,6 +34,20 @@ export function createAtlas({ manifest, topology, sources, land = null, palette 
     }
   }
 
+  // The bibliography read backwards: which sources cite a given record. The
+  // sources index already carries every citation from the other end (M10), so
+  // this costs one pass and no request — which is why a card can say how many
+  // sources a record has *before* fetching the record's own text.
+  const citationsOf = new Map();
+  for (const source of sourceMap.values()) {
+    for (const citation of source.citations ?? []) {
+      const key = `${citation.kind}:${citation.id}`;
+      if (!citationsOf.has(key)) citationsOf.set(key, []);
+      citationsOf.get(key).push({ ...citation, source: source.id });
+    }
+  }
+  const citationCount = (kind, id) => (citationsOf.get(`${kind}:${id}`) ?? []).length;
+
   const find = (id) => {
     for (const [kind, map] of kinds) if (map.has(id)) return { id, kind, record: map.get(id) };
     return null;
@@ -249,6 +263,8 @@ export function createAtlas({ manifest, topology, sources, land = null, palette 
     events,
     edges,
     sources: sourceMap,
+    citationsOf,
+    citationCount,
     actors,
     places,
     eventsByPlace,

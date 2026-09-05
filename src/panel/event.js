@@ -1,14 +1,20 @@
 // The event card: the record itself, the link that was followed to reach it,
-// the path walked, the consequences, and the other branches that fed the same
-// endpoint. Confidence and status are shown as such; a disputed link is never
-// walked through silently. Traversal logic lives in graph.js; this file only
-// asks it, and panel.js gives it everything shared in `ctx`.
+// the path walked, the consequences, the causes, and the other branches that
+// fed the same endpoint. Confidence and status are shown as such; a disputed
+// link is never walked through silently. Traversal logic lives in graph.js;
+// this file only asks it, and panel.js gives it everything shared in `ctx`.
+//
+// The card is a head, a summary, and then one collapsible section per
+// question, with the count in the header (sections.js). Nothing was removed
+// when it was arranged this way: everything is still on the card, one click
+// away, and the counts say what is behind each header before it is opened.
 
 import { esc } from '../util/esc.js';
-import { consequences, convergence } from '../graph.js';
+import { consequences, antecedents, convergence } from '../graph.js';
 import { formatInterval, formatYear, defaultCalendar } from '../util/dates.js';
 import { laneExplain } from '../lanes.js';
 import { horizonHtml } from './horizon.js';
+import { sectionHtml, openSection } from './sections.js';
 
 export const TYPE_LABEL = Object.freeze({
   caused: 'caused',
@@ -35,6 +41,8 @@ export function badge(confidence) {
   return `<span class="badge ${esc(confidence)}" title="${esc(CONFIDENCE_HINT[confidence] ?? '')}">${esc(confidence)}</span>`;
 }
 
+const disputedIn = (list) => list.filter(({ edge }) => edge.confidence === 'disputed').length;
+
 function whenLine(ctx, event) {
   const { when } = event;
   let text = formatInterval(when);
@@ -45,41 +53,74 @@ function whenLine(ctx, event) {
   return text;
 }
 
-function chainHtml(ctx, chainEdges) {
+// The path walked, as a breadcrumb at the top of the panel: where the reader
+// started, every event since, and the one they are on last. Each earlier step
+// is a link back to itself, which drops the rest of the path — the chain is
+// the argument being followed, so returning to its middle means the steps
+// after it were not taken.
+//
+// Only a disputed step is marked. A badge on every crumb would be a row of
+// badges nobody reads, and the point of marking one is that it stands out.
+function breadcrumbHtml(ctx, chainEdges, event) {
   if (chainEdges.length === 0) return '';
   const first = ctx.atlas.events.get(chainEdges[0].from);
-  const steps = chainEdges.map((edge) => {
+  const crumb = (title, at) => `<button type="button" class="link" data-action="chain-to" data-step="${esc(at)}">${esc(title)}</button>`;
+  const items = [`<li>${first ? crumb(first.title, 0) : esc(chainEdges[0].from)}</li>`];
+  chainEdges.forEach((edge, i) => {
     const to = ctx.atlas.events.get(edge.to);
-    return `<li class="step ${edge.confidence === 'disputed' ? 'disputed' : ''}">
-      <span class="arrow">${esc(TYPE_LABEL[edge.type] ?? edge.type)}</span> ${badge(edge.confidence)}
-      <span class="step-target">${to ? ctx.eventLink(to) : esc(edge.to)}</span>
+    const title = to?.title ?? edge.to;
+    const last = i === chainEdges.length - 1;
+    items.push(`<li${last ? ' aria-current="true"' : ''}>
+      <span class="arrow">${esc(TYPE_LABEL[edge.type] ?? edge.type)}</span>
+      ${edge.confidence === 'disputed' ? badge('disputed') : ''}
+      ${last ? `<span class="current">${esc(event.title ?? title)}</span>` : crumb(title, i + 1)}
+    </li>`);
+  });
+  return `<nav class="breadcrumb" aria-label="The path you walked">
+    <ol>${items.join('')}</ol>
+    <p class="actions"><button type="button" data-action="back">Step back</button>
+      <button type="button" data-action="clear">Clear the path</button></p>
+  </nav>`;
+}
+
+// The actors of one event as chips in the head, with what each did in it.
+// The role is on the chip's title attribute and shown on hover or focus:
+// six names have to fit on two lines, and six names each trailing a role
+// would be the paragraph this card was reorganised to stop being.
+function actorChipsHtml(ctx, event, highlighted) {
+  const listed = (event.actors ?? []).filter((a) => ctx.atlas.actors.has(a.actor));
+  if (listed.length === 0) return '';
+  const chips = listed.map(({ actor, role }) => {
+    const record = ctx.atlas.actors.get(actor);
+    const type = ACTOR_TYPE_LABEL[record.actorType] ?? record.actorType;
+    return `<button type="button" class="chip${actor === highlighted ? ' highlighted' : ''}" data-action="actor" data-id="${esc(actor)}" title="${esc(`${record.name} — ${role} (${type})`)}">${esc(record.name)}<span class="role"> · ${esc(role)}</span></button>`;
+  });
+  return `<p class="chips" aria-label="Who is in it">${chips.join(' ')}</p>`;
+}
+
+function edgeRowsHtml(list, { follow }) {
+  const items = list.map(({ edge, event }) => {
+    const title = `${esc(event?.title ?? (follow ? edge.to : edge.from))} <span class="when">${esc(event ? formatInterval(event.when) : '')}</span>`;
+    const open = follow
+      ? `<button type="button" class="follow" data-action="follow" data-edge="${esc(edge.id)}">${title} →</button>`
+      : `<button type="button" class="follow" data-action="select" data-id="${esc(edge.from)}">← ${title}</button>`;
+    return `<li class="edge-row ${esc(edge.confidence)}">
+      <div class="edge-head">
+        <span class="arrow">${esc(TYPE_LABEL[edge.type] ?? edge.type)}</span> ${badge(edge.confidence)}
+        ${open}
+      </div>
+      <details data-edge="${esc(edge.id)}"><summary>Why</summary><div data-slot="explanation"><p class="muted">Loading…</p></div></details>
     </li>`;
   });
-  return `<section class="chain">
-    <h2>The path you walked <span class="count">${chainEdges.length} step${chainEdges.length === 1 ? '' : 's'}</span></h2>
-    <ol class="steps"><li class="step start">${first ? ctx.eventLink(first) : esc(chainEdges[0].from)}</li>${steps.join('')}</ol>
-    <p class="actions"><button type="button" data-action="back">Step back</button> <button type="button" data-action="clear">Clear the path</button></p>
-  </section>`;
+  return `<ul class="edges">${items.join('')}</ul>`;
 }
 
-function consequencesHtml(list) {
-  if (list.length === 0) return '<section class="consequences"><h2>Consequences</h2><p class="muted">No outgoing links recorded.</p></section>';
-  const items = list.map(({ edge, event }) => `<li class="edge-row ${esc(edge.confidence)}">
-    <div class="edge-head">
-      <span class="arrow">${esc(TYPE_LABEL[edge.type] ?? edge.type)}</span> ${badge(edge.confidence)}
-      <button type="button" class="follow" data-action="follow" data-edge="${esc(edge.id)}">${esc(event.title)} <span class="when">${esc(formatInterval(event.when))}</span> →</button>
-    </div>
-    <details data-edge="${esc(edge.id)}"><summary>Why</summary><div data-slot="explanation"><p class="muted">Loading…</p></div></details>
-  </li>`);
-  return `<section class="consequences"><h2>Consequences <span class="count">${list.length}</span></h2><ul class="edges">${items.join('')}</ul></section>`;
-}
-
-function convergenceHtml(ctx, list, walked, selectedId) {
-  const heading = walked ? 'Other branches into this event' : 'What fed this event';
-  const hint = walked
-    ? 'Ancestors of this event that are not on the path you walked. Arriving one way does not mean that way explains it.'
-    : 'Every ancestor. Walk a path to see which branches are not the one you took.';
-  if (list.length === 0) return `<section class="convergence"><h2>${heading}</h2><p class="muted">${walked ? 'Nothing else fed this event.' : 'No incoming links recorded.'}</p></section>`;
+// The other ancestors of this event that are not on the path the reader
+// walked (graph.js). Shown only while a path is being walked, because
+// without one there is nothing to be "other" than — what fed the event
+// directly is the Causes section, and everything further up is reached by
+// walking.
+function branchesHtml(ctx, list, selectedId) {
   const items = list.map(({ event, edge, to, depth }) => `<li class="edge-row ${esc(edge.confidence)}">
     <div class="edge-head">
       ${ctx.eventLink(event)}
@@ -89,23 +130,7 @@ function convergenceHtml(ctx, list, walked, selectedId) {
     </div>
     <details data-edge="${esc(edge.id)}"><summary>Why</summary><div data-slot="explanation"><p class="muted">Loading…</p></div></details>
   </li>`);
-  return `<section class="convergence"><h2>${heading} <span class="count">${list.length}</span></h2><p class="hint">${hint}</p><ul class="edges">${items.join('')}</ul></section>`;
-}
-
-// The actors of one event, with what each did in it. Short by design: the
-// actors *of* the event, not everyone alive.
-function actorsHtml(ctx, event, highlighted) {
-  const listed = (event.actors ?? []).filter((a) => ctx.atlas.actors.has(a.actor));
-  if (listed.length === 0) return '';
-  const items = listed.map(({ actor, role }) => {
-    const record = ctx.atlas.actors.get(actor);
-    return `<li class="actor-row ${actor === highlighted ? 'highlighted' : ''}">
-      <button type="button" class="link" data-action="actor" data-id="${esc(actor)}">${esc(record.name)}</button>
-      <span class="role">${esc(role)}</span>
-      <span class="muted">${esc(ACTOR_TYPE_LABEL[record.actorType] ?? record.actorType)}</span>
-    </li>`;
-  });
-  return `<section class="actors"><h2>Who is in it <span class="count">${listed.length}</span></h2><ul class="actor-rows">${items.join('')}</ul></section>`;
+  return `<ul class="edges">${items.join('')}</ul>`;
 }
 
 // Where it happened: the place record, by name, and a way into its card. An
@@ -136,20 +161,30 @@ function drawnHtml(ctx, event, state) {
   return `<p class="drawn muted">Drawn in the <strong>${esc(lane.label)}</strong> lane${reason ? ` (${esc(reason)})` : ''}.${also}</p>`;
 }
 
-export function renderEventCard(ctx, { container, event, found, state, mine }) {
+// Exported for the tests: there is no DOM in node --test, and the card is
+// the string, as the actor's and the source's are. `remembered` is the
+// section this reader last had open, read from localStorage by panel.js.
+export function eventCardHtml(ctx, { event, found, state, remembered = null }) {
   const { atlas } = ctx;
   const chainEdges = state.chain.map((id) => atlas.edges.get(id)).filter(Boolean);
   const pathIds = [...new Set([...chainEdges.flatMap((e) => [e.from, e.to]), event.id])];
   const lastEdge = chainEdges[chainEdges.length - 1] ?? null;
   const out = consequences(atlas.adjacency, event.id);
-  const conv = convergence(atlas.adjacency, event.id, pathIds);
+  const into = antecedents(atlas.adjacency, event.id);
+  const conv = chainEdges.length > 0 ? convergence(atlas.adjacency, event.id, pathIds) : [];
+  const narratives = atlas.narrativesByRef?.get(event.id) ?? [];
+  // From the sources index, not from the record: the count has to be in the
+  // header at the moment the card is drawn, and the record's own text is
+  // still on its way (data.js).
+  const sourceCount = atlas.citationCount ? atlas.citationCount('event', event.id) : 0;
 
   const notices = found.via.map((v) => (v.reason === 'alias'
     ? `<p class="notice"><code>${esc(v.id)}</code> is a former id of this event.</p>`
     : `<p class="notice"><code>${esc(v.id)}</code> was merged into this event.</p>`));
   if (event.status !== 'active') notices.push(`<p class="notice status">This event is <strong>${esc(event.status)}</strong>; it has no active links.</p>`);
   if (lastEdge && lastEdge.confidence === 'disputed') {
-    notices.push('<p class="notice disputed">You arrived here through a <strong>disputed</strong> link. Read the dispute below before going on.</p>');
+    notices.push(`<p class="notice disputed">You arrived here through a <strong>disputed</strong> link.
+      <button type="button" class="link" data-action="section" data-section="followed">Read the dispute</button> before going on.</p>`);
   }
   const highlightedActor = ctx.highlightedActor(state);
   if (highlightedActor) {
@@ -158,9 +193,65 @@ export function renderEventCard(ctx, { container, event, found, state, mine }) {
       <button type="button" class="link small" data-action="clear-actor">stop</button></p>`);
   }
 
-  container.innerHTML = `
+  // The order the questions are asked in: how did I get here, what did it
+  // lead to, what led to it, what else led to it, what is it all resting on,
+  // who has written about it.
+  const sections = [];
+  if (lastEdge) {
+    sections.push({
+      key: 'followed',
+      label: 'The link you followed',
+      disputed: lastEdge.confidence === 'disputed' ? 1 : 0,
+      count: null,
+      body: `<p class="edge-head"><span class="arrow">${esc(atlas.events.get(lastEdge.from)?.title ?? lastEdge.from)} — ${esc(TYPE_LABEL[lastEdge.type] ?? lastEdge.type)} →</span> ${badge(lastEdge.confidence)}</p>
+        <div class="last-step ${lastEdge.confidence === 'disputed' ? 'disputed' : ''}" data-slot="last-step"><p class="muted">Loading…</p></div>`,
+    });
+  }
+  sections.push({
+    key: 'consequences',
+    label: 'Consequences',
+    count: out.length,
+    disputed: disputedIn(out),
+    body: (out.length
+      ? edgeRowsHtml(out, { follow: true })
+      : '<p class="muted">No outgoing links recorded.</p>')
+      + horizonHtml(ctx, { event, state }),
+  });
+  sections.push({
+    key: 'causes',
+    label: 'Causes',
+    count: into.length,
+    disputed: disputedIn(into),
+    hint: 'What led directly to this event. Walk one backwards to read its own causes.',
+    body: into.length ? edgeRowsHtml(into, { follow: false }) : '<p class="muted">No incoming links recorded.</p>',
+  });
+  if (chainEdges.length > 0) {
+    sections.push({
+      key: 'branches',
+      label: 'Other branches',
+      count: conv.length,
+      disputed: disputedIn(conv),
+      hint: 'Ancestors of this event that are not on the path you walked. Arriving one way does not mean that way explains it.',
+      body: conv.length ? branchesHtml(ctx, conv, event.id) : '<p class="muted">Nothing else fed this event.</p>',
+    });
+  }
+  sections.push({
+    key: 'sources',
+    label: 'Sources',
+    count: sourceCount,
+    body: '<div data-slot="sources"><p class="muted">Loading…</p></div>',
+  });
+  if (narratives.length > 0) {
+    sections.push({ key: 'part-of', label: 'Part of', count: narratives.length, body: ctx.partOfHtml(event.id, { bare: true }) });
+  }
+
+  const open = openSection(sections.map((s) => s.key), { chain: state.chain, source: state.source, remembered });
+
+  return `
+    ${breadcrumbHtml(ctx, chainEdges, event)}
     ${notices.join('')}
     <header class="event-head">
+      ${ctx.historyHtml()}
       <h2>${esc(event.title)}</h2>
       <p class="meta">
         <span class="when">${whenLine(ctx, event)}</span>
@@ -168,35 +259,34 @@ export function renderEventCard(ctx, { container, event, found, state, mine }) {
         · <span class="lane">${esc(ctx.laneLabel(event.region))}</span>
         <button type="button" class="link small" data-action="year" data-year="${esc(ctx.startYear(event))}">map at ${esc(formatYear(ctx.startYear(event)))}</button>
       </p>
+      ${actorChipsHtml(ctx, event, highlightedActor?.id ?? null)}
       ${drawnHtml(ctx, event, state)}
-      ${ctx.entryLink('event', event.id)}
-      ${ctx.discussLink('event', event.id)}
-      ${ctx.wikipediaHtml(event)}
+      <div class="head-links">${ctx.entryLink('event', event.id)}${ctx.wikipediaHtml(event)}${ctx.discussLink('event', event.id)}</div>
     </header>
     <section class="summary" data-slot="summary"><p class="muted">Loading…</p></section>
-    ${actorsHtml(ctx, event, highlightedActor?.id ?? null)}
-    ${lastEdge ? `<section class="last-step ${lastEdge.confidence === 'disputed' ? 'disputed' : ''}">
-      <h2>The link you followed</h2>
-      <p class="edge-head"><span class="arrow">${esc(atlas.events.get(lastEdge.from)?.title ?? lastEdge.from)} — ${esc(TYPE_LABEL[lastEdge.type] ?? lastEdge.type)} →</span> ${badge(lastEdge.confidence)}</p>
-      <div data-slot="last-step"><p class="muted">Loading…</p></div>
-    </section>` : ''}
-    ${chainHtml(ctx, chainEdges)}
-    ${consequencesHtml(out)}
-    ${horizonHtml(ctx, { event, state })}
-    ${convergenceHtml(ctx, conv, chainEdges.length > 0, event.id)}
-    ${ctx.partOfHtml(event.id)}
-    <section class="sources" data-slot="sources"></section>
+    ${sections.map((s) => sectionHtml({ ...s, open: s.key === open })).join('')}
   `;
+}
+
+export function renderEventCard(ctx, { container, event, found, state, mine, remembered = null }) {
+  const { atlas } = ctx;
+  const chainEdges = state.chain.map((id) => atlas.edges.get(id)).filter(Boolean);
+  const lastEdge = chainEdges[chainEdges.length - 1] ?? null;
+  container.innerHTML = eventCardHtml(ctx, { event, found, state, remembered });
 
   atlas.record('event', event.id).then(
     (rec) => {
       if (!ctx.isCurrent(mine)) return;
       container.querySelector('[data-slot="summary"]').innerHTML = `<p>${esc(rec.summary)}</p>`;
-      container.querySelector('[data-slot="sources"]').innerHTML = ctx.citationsHtml(rec.sources, 'Sources for this event');
+      // No sub-heading: the section's own header already says "Sources".
+      container.querySelector('[data-slot="sources"]').innerHTML = rec.sources?.length
+        ? ctx.citationsHtml(rec.sources, '', rec)
+        : '<p class="muted">This event cites nothing yet.</p>';
     },
     () => {
       if (!ctx.isCurrent(mine)) return;
       container.querySelector('[data-slot="summary"]').innerHTML = '<p class="muted">Could not load the record text.</p>';
+      container.querySelector('[data-slot="sources"]').innerHTML = '<p class="muted">Could not load the citations.</p>';
     },
   );
   if (lastEdge) {

@@ -51,6 +51,13 @@ test('the count says how many, and how many are disputed', () => {
   assert.equal(countLabel(9), '9');
   assert.equal(countLabel(0), '0');
   assert.equal(countLabel(3, 1), '3, 1 disputed');
+  // A section of one thing counts nothing — and still says so when that one
+  // thing is disputed.
+  assert.equal(countLabel(null), '');
+  assert.equal(countLabel(null, 1), '1 disputed');
+  assert.match(sectionHtml({ key: 'followed', label: 'The link you followed', count: null, disputed: 1 }),
+    /<span class="count disputed">1 disputed<\/span>/);
+  assert.doesNotMatch(sectionHtml({ key: 'followed', label: 'The link you followed', count: null }), /class="count/);
   const html = sectionHtml({ key: 'consequences', label: 'Consequences', count: 3, disputed: 1, open: false });
   assert.match(html, /<span class="count disputed">3, 1 disputed<\/span>/);
   assert.match(html, /aria-expanded="false"/);

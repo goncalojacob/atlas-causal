@@ -23,6 +23,7 @@ import { narrativeListHtml, partOfHtml, renderNarrativeCard } from './narrative.
 import { readingNarrative } from '../narrative.js';
 import { createLinks, ENTRY_KINDS } from '../entry/entry.js';
 import { discussUrl } from '../share.js';
+import { toggleSection, readOpenSection } from './sections.js';
 
 // What the reader asked their browser for, in order. Read once: the cards
 // use it to choose which Wikipedia edition to offer, and a list that changed
@@ -31,7 +32,10 @@ function readerLanguages() {
   return typeof navigator === 'object' && Array.isArray(navigator?.languages) ? [...navigator.languages] : [];
 }
 
-export function createPanel(container, { atlas, state, fixtures = false, languages = readerLanguages() }) {
+export function createPanel(container, {
+  atlas, state, fixtures = false, languages = readerLanguages(),
+  history = globalThis.history, storage = globalThis.localStorage,
+}) {
   let token = 0;
   const links = createLinks({ fixtures });
   const laneLabel = (id) => atlas.regions.find((r) => r.id === id)?.label ?? id ?? '—';
@@ -110,6 +114,35 @@ export function createPanel(container, { atlas, state, fixtures = false, languag
         state.set({ chain, selected: last ? last.to : first ? first.from : s.selected });
         break;
       }
+      // A crumb of the breadcrumb: step 0 is where the walk started, step n
+      // is the far end of the nth link. Returning to the middle of a path
+      // drops what came after it — the path is the argument being followed,
+      // and the steps beyond the one being re-read were not taken.
+      case 'chain-to': {
+        const at = Number(el.dataset.step);
+        if (!Number.isInteger(at) || at < 0 || at > s.chain.length) break;
+        const edges = s.chain.map((id) => atlas.edges.get(id)).filter(Boolean);
+        const target = at === 0 ? edges[0]?.from : edges[at - 1]?.to;
+        if (target) state.set({ chain: s.chain.slice(0, at), selected: target });
+        break;
+      }
+      // A section opening is not state: it says nothing about what the atlas
+      // is showing, so it never reaches the store or the URL. Done in the DOM
+      // rather than by re-rendering, because the summary and the citations
+      // were fetched and a re-render would ask for them again.
+      case 'section':
+        toggleSection(container, el.dataset.section, storage);
+        break;
+      // Back and Forward are the browser's own, and say so by being it: the
+      // store pushed a history entry when what is open changed (state.js),
+      // and popstate restores it, so these buttons and the browser's own
+      // chrome do exactly the same thing.
+      case 'history-back':
+        history?.back();
+        break;
+      case 'history-forward':
+        history?.forward();
+        break;
       case 'clear':
         state.set({ chain: [] });
         break;
@@ -165,30 +198,46 @@ export function createPanel(container, { atlas, state, fixtures = false, languag
   // line of small print — and the identifiers stay as links out to the work
   // itself. Formatting is citation.js, so this and the bibliography page
   // cannot drift apart.
-  function citationsHtml(citations, heading) {
+  //
+  // `record` is the record the citations were read from, when there is one:
+  // the verification flags live on it (`review.citations`), not in the
+  // bibliography, because they are a claim about this citation and not about
+  // the book. A citation nobody has opened the source for says so, quietly:
+  // an atlas whose citations were never checked and did not admit it would be
+  // making a stronger claim than it can support.
+  //
+  // A falsy heading leaves the sub-heading off, for the places where the
+  // section header above already says what the list is.
+  function citationsHtml(citations, heading, record = null) {
     if (!citations || citations.length === 0) return '';
+    const flags = record?.review?.citations ?? {};
     const items = citations.map((c) => {
       const src = atlas.sources.get(c.source);
       if (!src) return `<li class="citation missing">unknown source <code>${esc(c.source)}</code></li>`;
       const ids = identifiers(src).map(({ label, href }) => (href
         ? `<a href="${esc(href)}" rel="noopener" target="_blank">${esc(label)}</a>`
         : `<span class="unsafe-url">${esc(label)}</span>`));
+      const verified = flags[c.source]?.verified;
+      const mark = verified
+        ? `<span class="badge verified" title="${esc(`checked against the source by ${verified.by ?? 'a reviewer'}, ${verified.on ?? ''}`.trim())}">verified</span>`
+        : '<span class="unchecked" title="nobody has yet opened the source to check this citation">unchecked</span>';
       return `<li class="citation">
         <span class="creators">${esc((src.creators ?? []).join(', '))}</span>${src.year ? ` (${esc(src.year)})` : ''}.
         <button type="button" class="link cite" data-action="source" data-id="${esc(src.id)}"><em>${esc(src.title)}</em></button>${src.publisher ? `. ${esc(src.publisher)}` : ''}.
         ${c.locator ? `<span class="locator">${esc(c.locator)}.</span>` : ''}
         <span class="identifiers">${ids.join(' · ')}</span>
+        ${mark}
         ${src.status !== 'active' ? `<span class="badge status">${esc(src.status)}</span>` : ''}
       </li>`;
     });
-    return `<h3>${esc(heading)}</h3><ul class="citations">${items.join('')}</ul>`;
+    return `${heading ? `<h3>${esc(heading)}</h3>` : ''}<ul class="citations">${items.join('')}</ul>`;
   }
 
   function edgeTextHtml(edge) {
     const parts = [`<p class="explanation">${esc(edge.explanation)}</p>`];
-    parts.push(citationsHtml(edge.sources, 'Supporting sources'));
+    parts.push(citationsHtml(edge.sources, 'Supporting sources', edge));
     if (edge.dispute) {
-      parts.push(`<div class="dispute"><h3>The dispute</h3><p>${esc(edge.dispute.text)}</p>${citationsHtml(edge.dispute.sources, 'Dissenting sources')}</div>`);
+      parts.push(`<div class="dispute"><h3>The dispute</h3><p>${esc(edge.dispute.text)}</p>${citationsHtml(edge.dispute.sources, 'Dissenting sources', edge)}</div>`);
     }
     // A link is walked by narratives as an event is, and says so where its
     // argument is read: an edge has no card of its own to say it on.
@@ -249,6 +298,33 @@ export function createPanel(container, { atlas, state, fixtures = false, languag
     return `<p class="discuss"><a href="${esc(discussUrl(kind, id, { url: here }))}" rel="noopener" target="_blank">Discuss this record</a></p>`;
   }
 
+  // What Back would return to, and Forward go on to, named. The browser will
+  // not say — there is no way to read its stack — so the store keeps its own
+  // trail of the openings it pushed (state.js) and this resolves each one to
+  // the card it would show, by the precedence render() uses below. The point
+  // of naming it is the owner's own case: open an actor from an event, then
+  // want the event back without searching for it again.
+  function openingLabel(opening) {
+    if (!opening) return null;
+    if (opening.narrative) return atlas.narratives?.get(opening.narrative)?.title ?? opening.narrative;
+    if (opening.selected) return atlas.resolve(opening.selected)?.record?.title ?? opening.selected;
+    if (opening.source) return atlas.sources.get(opening.source)?.title ?? opening.source;
+    if (opening.place) return atlas.places.get(opening.place)?.name ?? opening.place;
+    if (opening.actor) return atlas.actors.get(opening.actor)?.name ?? opening.actor;
+    return 'the atlas';
+  }
+
+  function historyHtml() {
+    const trail = state.trail ? state.trail() : { back: null, forward: null };
+    const back = openingLabel(trail.back);
+    const forward = openingLabel(trail.forward);
+    if (!back && !forward) return '';
+    return `<p class="card-history">
+      ${back ? `<button type="button" class="link small go-back" data-action="history-back">← ${esc(back)}</button>` : ''}
+      ${forward ? `<button type="button" class="link small go-forward" data-action="history-forward">${esc(forward)} →</button>` : ''}
+    </p>`;
+  }
+
   // The lanes of the current grouping, so the event card can say where the
   // event is drawn and why. The same call the timeline and the graph make.
   function lanes(s) {
@@ -269,7 +345,8 @@ export function createPanel(container, { atlas, state, fixtures = false, languag
     wikipediaHtml,
     entryLink,
     discussLink,
-    partOfHtml: (id) => partOfHtml(ctx, id),
+    historyHtml,
+    partOfHtml: (id, options) => partOfHtml(ctx, id, options),
     eventLink,
     highlightedActor,
     isCurrent: (mine) => mine === token,
@@ -332,7 +409,9 @@ export function createPanel(container, { atlas, state, fixtures = false, languag
       notFound('event', s.selected);
       return;
     }
-    renderEventCard(ctx, { container, event: found.record, found, state: s, mine });
+    renderEventCard(ctx, {
+      container, event: found.record, found, state: s, mine, remembered: readOpenSection(storage),
+    });
   }
 
   // Cancels any record text still loading for the view being replaced.
