@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "october-revolution--treaty-of-brest-litovsk--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"October Revolution\", revision 1370630358"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Brest-Litovsk\", revision 1368334684"
+    }
+  ],
+  "from": "october-revolution",
+  "to": "treaty-of-brest-litovsk",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "Peace was the first of the three words the Bolsheviks took power on, and the Decree on Peace was passed by the Congress of Soviets the day after the Winter Palace fell. The government that signed at Brest-Litovsk in March 1918 signed because it had promised to and because it had no army left to refuse with: Trotsky's attempt to leave the war without signing collapsed when the Germans resumed their advance in February. No government of the old regime, and no Provisional Government, would have conceded Poland, the Baltic, Ukraine and Finland.",
+  "dispute": null
+}

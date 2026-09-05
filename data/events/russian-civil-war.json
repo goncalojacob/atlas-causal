@@ -9,14 +9,19 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": null,
+  "revised": "2026-09-05",
   "review": {
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "summary-drafted"
     ]
   },
   "wikidata": "Q79911",
@@ -27,12 +32,20 @@
   },
   "sources": [
     {
+      "source": "wikipedia-en",
+      "locator": "\"Russian Civil War\", revision 1372728974"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Guerra Civil Russa\", revision 72906861"
+    },
+    {
       "source": "wikidata",
       "locator": "Q79911"
     }
   ],
   "title": "Russian Civil War",
-  "summary": "Wikidata item Q79911, imported by tools/import/wikidata.mjs. The item's own description reads \"multi-sided civil war in the former Russian Empire, November 1917-October 1922\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "From 1917 to 1922 the Bolshevik government fought the officers' armies of the south and Siberia, the socialist and peasant risings of the Volga and Ukraine, the new states of the borderlands and the expeditionary forces of a dozen foreign powers. It was won by the Red Army, and won at a price that shaped everything after it: war communism, requisitioning, the Cheka, and a party that had learned to govern by emergency. The Soviet Union was constituted at the end of it, in December 1922. The atlas holds it as the war that made the Soviet state what it was, rather than as a sequel to October.",
   "when": {
     "start": 1917,
     "end": 1922,
@@ -41,5 +54,10 @@
   },
   "place": null,
   "region": "europe",
-  "actors": []
+  "actors": [
+    {
+      "actor": "russia-soviet-union",
+      "role": "belligerent"
+    }
+  ]
 }

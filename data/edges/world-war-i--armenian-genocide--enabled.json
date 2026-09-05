@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "world-war-i--armenian-genocide--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Armenian genocide\", revision 1367030542"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"World War I\", revision 1372979664"
+    }
+  ],
+  "from": "world-war-i",
+  "to": "armenian-genocide",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The deportations began in April 1915, five months after the Ottoman entry into the war and three months after the disaster at Sarikamish, and were carried out under wartime emergency powers, in a theatre closed to outside observation, against a population the Committee of Union and Progress had decided to treat as the Russian enemy's fifth column. The claim is that the war supplied the powers, the pretext and the cover, not that it produced the intention: the argument over when the Committee resolved on destruction rather than deportation is not settled by this edge.",
+  "dispute": null
+}

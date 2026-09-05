@@ -9,14 +9,19 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": null,
+  "revised": "2026-09-05",
   "review": {
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "summary-drafted"
     ]
   },
   "wikidata": "Q42976",
@@ -27,12 +32,20 @@
   },
   "sources": [
     {
+      "source": "wikipedia-en",
+      "locator": "\"October Revolution\", revision 1370630358"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Revolução de Outubro\", revision 71345414"
+    },
+    {
       "source": "wikidata",
       "locator": "Q42976"
     }
   ],
   "title": "October Revolution",
-  "summary": "Wikidata item Q42976, imported by tools/import/wikidata.mjs. The item's own description reads \"second of two 1917 revolutions in Russia\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "On the night of 25 October 1917 in the old calendar — 7 November in ours — Bolshevik forces under the Petrograd Soviet's Military Revolutionary Committee occupied the bridges, the telegraph and the Winter Palace, and the Second Congress of Soviets, meeting as they did so, declared that power had passed to itself. There was almost no fighting in Petrograd. What followed was not almost anything: the dissolution of the Constituent Assembly in January, a separate peace with Germany in March, and five years of civil war. It is in the atlas as the event from which the Soviet Union, and the communist parties of the rest of the century, are counted.",
   "when": {
     "start": 1917,
     "end": 1917,
@@ -41,5 +54,10 @@
   },
   "place": null,
   "region": "europe",
-  "actors": []
+  "actors": [
+    {
+      "actor": "russia-soviet-union",
+      "role": "government"
+    }
+  ]
 }

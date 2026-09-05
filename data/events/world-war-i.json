@@ -9,14 +9,19 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": null,
+  "revised": "2026-09-05",
   "review": {
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "summary-drafted"
     ]
   },
   "wikidata": "Q361",
@@ -27,12 +32,24 @@
   },
   "sources": [
     {
+      "source": "meneses-2004-portugal-1914-1926",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"World War I\", revision 1372979664"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Primeira Guerra Mundial\", revision 72915802"
+    },
+    {
       "source": "wikidata",
       "locator": "Q361"
     }
   ],
   "title": "World War I",
-  "summary": "Wikidata item Q361, imported by tools/import/wikidata.mjs. The item's own description reads \"1914–1918 global conflict\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The war of 1914–1918 set the Allies against the Central Powers, mobilised some seventy million men and killed between fifteen and twenty-two million people, soldiers and civilians together. It destroyed four empires — the German, the Austro-Hungarian, the Russian and the Ottoman — and left the map of Europe and the Middle East to be redrawn at Paris. Portugal entered it in March 1916, when Germany declared war after the requisition of German ships in the Tagus, and sent an expeditionary corps to Flanders; the war it obtained divided the First Republic more deeply than anything else the republic did, and the atlas holds it as the hinge of that regime's short life.",
   "when": {
     "start": 1914,
     "end": 1918,
@@ -40,6 +57,55 @@
     "endDate": "1918-11-11"
   },
   "place": null,
-  "region": "asia",
-  "actors": []
+  "region": "europe",
+  "actors": [
+    {
+      "actor": "germany-prussia",
+      "role": "belligerent"
+    },
+    {
+      "actor": "austria-hungary",
+      "role": "belligerent"
+    },
+    {
+      "actor": "turkey-ottoman-empire",
+      "role": "belligerent"
+    },
+    {
+      "actor": "bulgaria",
+      "role": "belligerent"
+    },
+    {
+      "actor": "france",
+      "role": "belligerent"
+    },
+    {
+      "actor": "united-kingdom",
+      "role": "belligerent"
+    },
+    {
+      "actor": "russia-soviet-union",
+      "role": "belligerent"
+    },
+    {
+      "actor": "italy-sardinia",
+      "role": "belligerent"
+    },
+    {
+      "actor": "serbia",
+      "role": "belligerent"
+    },
+    {
+      "actor": "united-states-of-america",
+      "role": "belligerent"
+    },
+    {
+      "actor": "japan",
+      "role": "belligerent"
+    },
+    {
+      "actor": "portugal",
+      "role": "belligerent"
+    }
+  ]
 }

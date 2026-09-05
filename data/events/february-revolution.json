@@ -9,14 +9,19 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": null,
+  "revised": "2026-09-05",
   "review": {
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "summary-drafted"
     ]
   },
   "wikidata": "Q101534",
@@ -27,12 +32,20 @@
   },
   "sources": [
     {
+      "source": "wikipedia-en",
+      "locator": "\"February Revolution\", revision 1370618162"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Revolução de Fevereiro\", revision 71841706"
+    },
+    {
       "source": "wikidata",
       "locator": "Q101534"
     }
   ],
   "title": "February Revolution",
-  "summary": "Wikidata item Q101534, imported by tools/import/wikidata.mjs. The item's own description reads \"first of two revolutions in Russia in 1917\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "Bread queues and a strike in Petrograd at the end of February 1917 became a revolution in a week when the garrison refused to fire and then joined the crowds; Nicholas II abdicated on 15 March and his brother declined the throne the next day. Power passed to a Provisional Government drawn from the Duma and, beside it, to the Petrograd Soviet of workers' and soldiers' deputies — the dual power that governed Russia until October. It is in the atlas as the end of three centuries of Romanov rule and as the eight months in which the question was not whether Russia would be a republic but which republic it would be.",
   "when": {
     "start": 1917,
     "end": 1917,
@@ -40,5 +53,10 @@
   },
   "place": null,
   "region": "europe",
-  "actors": []
+  "actors": [
+    {
+      "actor": "russia-soviet-union",
+      "role": "government"
+    }
+  ]
 }
