@@ -22,6 +22,7 @@ import { clusterHtml } from './cluster.js';
 import { narrativeListHtml, partOfHtml, renderNarrativeCard } from './narrative.js';
 import { readingNarrative } from '../narrative.js';
 import { createLinks, ENTRY_KINDS } from '../entry/entry.js';
+import { discussUrl } from '../share.js';
 
 // What the reader asked their browser for, in order. Read once: the cards
 // use it to choose which Wikipedia edition to offer, and a list that changed
@@ -239,6 +240,15 @@ export function createPanel(container, { atlas, state, fixtures = false, languag
     return `<p class="entry-link"><a href="${esc(links.entry(kind, id))}">Read the full entry →</a></p>`;
   }
 
+  // On every card, and on the cards of every kind: a record here is an
+  // argument somebody made, and the way to disagree with one is an issue
+  // against it. It carries the URL the reader is looking at, so that whoever
+  // answers opens the same picture and not merely the same record.
+  function discussLink(kind, id) {
+    const here = typeof location === 'object' ? location.href : null;
+    return `<p class="discuss"><a href="${esc(discussUrl(kind, id, { url: here }))}" rel="noopener" target="_blank">Discuss this record</a></p>`;
+  }
+
   // The lanes of the current grouping, so the event card can say where the
   // event is drawn and why. The same call the timeline and the graph make.
   function lanes(s) {
@@ -258,6 +268,7 @@ export function createPanel(container, { atlas, state, fixtures = false, languag
     edgeTextHtml,
     wikipediaHtml,
     entryLink,
+    discussLink,
     partOfHtml: (id) => partOfHtml(ctx, id),
     eventLink,
     highlightedActor,

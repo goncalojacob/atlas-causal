@@ -16,6 +16,7 @@ import { horizonSet } from '../horizon.js';
 import { narrativeSet } from '../narrative.js';
 import { lensSet } from '../lens.js';
 import { normalizeBbox } from '../state.js';
+import { exportButton } from '../share.js';
 
 const WIDTH = 960;
 const HEIGHT = 540;
@@ -256,6 +257,7 @@ export function createMap(container, { atlas, state, onCluster = null }) {
   });
 
   container.append(root);
+  container.append(exportButton(root, 'map'));
 
   function render(s) {
     landGroup.style.display = s.layers.includes('land') ? '' : 'none';

@@ -127,6 +127,7 @@ export function sourceCardHtml(ctx, source) {
       ${source.publisher ? `<p class="muted">${esc(source.publisher)}</p>` : ''}
       ${identifiersHtml(source)}
       ${source.accessed ? `<p class="muted">accessed ${esc(source.accessed)}</p>` : ''}
+      ${ctx.discussLink('source', source.id)}
     </header>
     <p class="citation-full">${esc(citationText(source))}</p>
     ${citersHtml(ctx, source)}`;

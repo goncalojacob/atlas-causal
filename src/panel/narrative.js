@@ -89,6 +89,7 @@ export function renderNarrativeCard(ctx, { container, narrative, state, mine }) 
     <header class="narrative-head">
       <h2>${esc(narrative.title)}</h2>
       <p class="meta"><span class="muted">${authorsLine(narrative)}</span> · <span class="count">step ${index + 1} of ${total}</span></p>
+      ${ctx.discussLink('narrative', narrative.id)}
     </header>
     <section class="step-text" data-slot="step-text"><p class="muted">Loading…</p></section>
     ${resolved ? stepRecordHtml(ctx, resolved) : ''}

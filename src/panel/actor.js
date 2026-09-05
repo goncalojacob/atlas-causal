@@ -134,6 +134,7 @@ export function actorCardHtml(ctx, actor) {
       </p>
       ${variants.length ? `<p class="also-known muted">also: ${variants.map((n) => esc(n)).join(' · ')}</p>` : ''}
       ${ctx.entryLink('actor', actor.id)}
+      ${ctx.discussLink('actor', actor.id)}
       ${ctx.wikipediaHtml(actor)}
     </header>
     <section class="summary" data-slot="actor-summary"><p class="muted">Loading…</p></section>

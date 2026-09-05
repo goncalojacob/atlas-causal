@@ -170,6 +170,7 @@ export function renderEventCard(ctx, { container, event, found, state, mine }) {
       </p>
       ${drawnHtml(ctx, event, state)}
       ${ctx.entryLink('event', event.id)}
+      ${ctx.discussLink('event', event.id)}
       ${ctx.wikipediaHtml(event)}
     </header>
     <section class="summary" data-slot="summary"><p class="muted">Loading…</p></section>

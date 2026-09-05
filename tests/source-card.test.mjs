@@ -10,6 +10,7 @@ import assert from 'node:assert/strict';
 import path from 'node:path';
 import { readFile } from 'node:fs/promises';
 import { createAtlas } from '../src/data.js';
+import { discussUrl } from '../src/share.js';
 import { sourceCardHtml } from '../src/panel/source.js';
 import { esc } from '../src/util/esc.js';
 import { ROOT } from './helpers.mjs';
@@ -33,6 +34,7 @@ function context(atlas) {
     atlas,
     eventLink: (event) => `<button type="button" class="link" data-action="select" data-id="${esc(event.id)}">${esc(event.title)}</button>`,
     lensControl: (kind, id) => `<button type="button" class="link small lens-control" data-action="focus" data-focus="${esc(kind)}:${esc(id)}">show only these</button>`,
+    discussLink: (kind, id) => `<p class="discuss"><a href="${esc(discussUrl(kind, id))}" rel="noopener" target="_blank">Discuss this record</a></p>`,
   };
 }
 

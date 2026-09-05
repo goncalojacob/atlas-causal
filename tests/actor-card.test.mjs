@@ -9,6 +9,7 @@ import assert from 'node:assert/strict';
 import path from 'node:path';
 import { readFile } from 'node:fs/promises';
 import { createAtlas } from '../src/data.js';
+import { discussUrl } from '../src/share.js';
 import { actorCardHtml } from '../src/panel/actor.js';
 import { articleFor } from '../src/wikipedia.js';
 import { esc } from '../src/util/esc.js';
@@ -34,6 +35,7 @@ function context(atlas) {
     laneLabel: (region) => region ?? '',
     lensControl: (kind, id) => `<button type="button" class="link small lens-control" data-action="focus" data-focus="${kind}:${id}">show only these</button>`,
     entryLink: (kind, id) => `<p class="entry-link"><a href="entry.html?id=${esc(id)}">Read the full entry →</a></p>`,
+    discussLink: (kind, id) => `<p class="discuss"><a href="${esc(discussUrl(kind, id))}" rel="noopener" target="_blank">Discuss this record</a></p>`,
     wikipediaHtml: (record) => {
       const article = articleFor(record, ['pt']);
       return article ? `<p class="wikipedia"><a href="${esc(article.href)}" rel="noopener" target="_blank">Read more on Wikipedia</a></p>` : '';

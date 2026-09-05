@@ -23,6 +23,7 @@ import { narrativeSet } from '../narrative.js';
 import { lensSet } from '../lens.js';
 import { lanesFor } from '../lanes.js';
 import { layoutGraph } from './layout.js';
+import { exportButton } from '../share.js';
 
 // Sizes in SVG units at k = 1; divided by k when drawn, so a node keeps its
 // size on screen at any zoom, as the map's marks do.
@@ -293,6 +294,7 @@ export function createGraphView(container, { atlas, state }) {
 
   container.append(root);
   container.append(note);
+  container.append(exportButton(root, 'graph'));
   container.append(edgeKey());
 
   function render(s) {
