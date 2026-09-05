@@ -349,14 +349,15 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
   // have to be laid out again.
   let drawnFor = null;
 
-  function render(s) {
+  function render(s, { force = false } = {}) {
     const box = view();
     const key = renderKey(s, transform.x, transform.y, transform.k,
       Math.round(box.x0), Math.round(box.y0), Math.round(box.x1), Math.round(box.y1));
-    // The arrangement first and always: it is what `laid` is, and a state
-    // that changes it changes the key too, so this only ever skips a draw
-    // of a picture that is already on screen.
-    if (arrange(s) === false && key === drawnFor) return;
+    // The arrangement first and always: it is what `laid` is, and it is laid
+    // out again whenever its own key moves, whatever this one says. Only the
+    // drawing is skipped, and only of a picture already on screen.
+    const arranged = arrange(s);
+    if (!force && !arranged && key === drawnFor) return;
     drawnFor = key;
     draw(s);
   }

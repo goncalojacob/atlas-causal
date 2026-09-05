@@ -14,6 +14,7 @@ import { createGrouping } from './grouping.js';
 import { createPanes } from './panes.js';
 import { createPhone } from './phone.js';
 import { createReadingMode, openingState } from './narrative-mode.js';
+import { parseFocus } from './lens.js';
 import { bindNarrativeKeys } from './panel/narrative.js';
 import { esc } from './util/esc.js';
 
@@ -76,11 +77,25 @@ try {
   let map = null;
   let timeline = null;
   let graph = null;
-  const remeasure = () => {
+  const remeasure = (options = {}) => {
     const s = state.get();
-    map?.render(s);
-    timeline?.render(s);
-    graph?.render(s);
+    map?.render(s, options);
+    timeline?.render(s, options);
+    graph?.render(s, options);
+  };
+
+  // A lens on a source is the one thing the three views draw that the atlas
+  // does not have in hand at load: which records cite a book is one file per
+  // source since H3b (lens.js). It is fetched when a focus asks for it, and
+  // the views are forced to redraw when it lands — nothing in the state has
+  // changed by then, so their own keys would say there is nothing to do.
+  const askedFor = new Set();
+  const fetchLensCiters = (s) => {
+    const focus = parseFocus(s.focus);
+    if (!focus || focus.kind !== 'source' || askedFor.has(focus.id)) return;
+    if (atlas.citersOf(focus.id)) return;
+    askedFor.add(focus.id);
+    atlas.loadCiters(focus.id).then(() => remeasure({ force: true }), () => {});
   };
 
   // The panel is built first because the map hands it the members of a
@@ -164,6 +179,9 @@ try {
   state.subscribe((s) => {
     for (const box of document.querySelectorAll('input[data-layer]')) box.checked = s.layers.includes(box.dataset.layer);
   });
+
+  state.subscribe(fetchLensCiters);
+  fetchLensCiters(state.get());
 } catch (error) {
   panelEl.innerHTML = `<section class="intro"><h2>Could not load the atlas</h2><p><code>${esc(error.message)}</code></p>
     <p>Serve the repository root (<code>python3 -m http.server 8000</code>) and make sure <code>data/index/</code> exists (<code>node tools/build-index.mjs</code>).</p></section>`;

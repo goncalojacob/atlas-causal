@@ -467,9 +467,9 @@ export function createTimeline(container, { atlas, state, createScale = createLi
   // never reach here (render-key.js).
   let drawnFor = null;
 
-  function render(s) {
+  function render(s, { force = false } = {}) {
     const key = renderKey(s, container.clientWidth || 0, container.clientHeight || 0);
-    if (key === drawnFor) return;
+    if (!force && key === drawnFor) return;
     drawnFor = key;
     draw(s);
   }

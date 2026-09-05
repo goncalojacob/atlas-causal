@@ -1,8 +1,9 @@
 // The citer directory: which records cite a given source, out of the index
 // every page loads whole and into one file per source, fetched when a reader
-// opens that source (docs/health/h3a-brief.md, A7). This run emits it; the
-// source card and `retractionPlan` move over in H3b, so the rows are still
-// in the sources index beside it (STATUS.md, deviation 216).
+// opens that source (docs/health/h3a-brief.md, A7). H3a-1 emitted it; H3b
+// taught the source card and `retractionPlan` to fetch it and took the rows
+// out of the sources index, which is where the whole of this milestone's
+// saving at first paint comes from.
 
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
@@ -42,7 +43,9 @@ for (const [label, dir] of [['the fixtures', FIXTURE_DATA], ['the repository', D
       assert.equal(file.id, source.id);
       assert.equal(file.schema, 1);
       assert.equal(file.citations.length, source.citationCount);
-      assert.deepEqual(file.citations, source.citations, `${source.id}: the same rows, in the same order`);
+      // And the rows are here and nowhere else: the sources index carries
+      // the count and never the list (A3).
+      assert.ok(!Object.hasOwn(source, 'citations'), `${source.id}: the sources index still carries its citer rows`);
     }
   });
 
@@ -83,19 +86,33 @@ test('a source nothing cites is left out, and one with rows is not', async () =>
 // else, so the one file for the source in hand answers it as completely as
 // the whole sources index does — which is what lets the rows leave the index
 // when H3b moves the card over.
-test('retractionPlan says the same off one citer file as off the whole index', async () => {
+// What the dashboard actually does since H3b: fetch the one citer file for
+// the source in hand and hand `retractionPlan` a map of it. The answer has to
+// be the whole answer — a book that cannot be retracted because six records
+// rest on it must still be refused when the rows come from one file — and it
+// is the only thing standing between a reviewer and a dangling reference.
+test('retractionPlan blocks on the citer file exactly as it did on the whole index', async () => {
   const { built, manifest, files } = await indexOf(DATA);
   const sources = JSON.parse(built.files[path.basename(manifest.files.sources)]).sources;
   const cited = sources.filter((s) => s.citationCount > 0);
   assert.ok(cited.length > 3);
   for (const source of cited) {
-    const whole = retractionPlan({ kind: 'source', id: source.id }, { sources });
-    // The map a card would have fetched: this source's file and no other.
     const prefetched = files.get(`${source.id}.json`);
-    const alone = retractionPlan({ kind: 'source', id: source.id }, {
-      sources: [{ id: prefetched.id, status: 'active', citations: prefetched.citations }],
+    const plan = retractionPlan({ kind: 'source', id: source.id }, {
+      sources,
+      citers: { [source.id]: prefetched.citations },
     });
-    assert.deepEqual(alone, whole, source.id);
-    assert.equal(alone.blockers.length, source.citationCount);
+    assert.equal(plan.blockers.length, source.citationCount, source.id);
+    assert.deepEqual(
+      plan.blockers.map((b) => `${b.kind}:${b.id}`).sort(),
+      prefetched.citations.map((c) => `${c.kind}:${c.id}`).sort(),
+      source.id,
+    );
+    assert.deepEqual(plan.retract, [], 'retracting a source carries nothing with it');
   }
+  // And the sources index alone, which is what the fallback reads, now says
+  // a cited source is cited by nothing — which is exactly why the dashboard
+  // fetches the file before it asks (review/main.js).
+  const busiest = cited.reduce((a, b) => (b.citationCount > a.citationCount ? b : a));
+  assert.deepEqual(retractionPlan({ kind: 'source', id: busiest.id }, { sources }).blockers, []);
 });

@@ -34,12 +34,18 @@ export function formatFocus(kind, id) {
 // events, the edges by id, the sources index by id — so the browser passes
 // the atlas and a test passes three literals.
 //
-// A source's lens is built from the citations the index already carries
-// (M10), including the dissenting ones: a book arguing *against* a link is
-// still a book this link rests an argument on, and "show me everything this
-// source touches" is the question the lens answers. Which citation is
-// evidence and which is dissent is the source card's business, not the
-// map's.
+// A source's lens is built from that source's citer rows, including the
+// dissenting ones: a book arguing *against* a link is still a book this link
+// rests an argument on, and "show me everything this source touches" is the
+// question the lens answers. Which citation is evidence and which is dissent
+// is the source card's business, not the map's.
+//
+// Since H3b those rows are one file per source, fetched when a reader opens
+// that source or asks for its lens (`atlas.citersOf`, `atlas.loadCiters`).
+// Between the request and the answer the lens is empty rather than absent: an
+// empty lens draws nothing and says so, where a null one would quietly draw
+// the whole atlas and call it the source's. Whoever sets the focus is what
+// asks for the file — `main.js` — and the views redraw when it lands.
 export function lensFor(focus, topology) {
   const parsed = parseFocus(focus);
   if (!parsed) return null;
@@ -60,7 +66,8 @@ export function lensFor(focus, topology) {
   // edge is at both of its ends.
   const active = new Set(events.map((e) => e.id));
   const source = topology.sources?.get(id) ?? null;
-  for (const citation of source?.citations ?? []) {
+  const rows = topology.citersOf?.(id) ?? source?.citations ?? [];
+  for (const citation of rows) {
     if (citation.kind === 'event') {
       if (active.has(citation.id)) ids.add(citation.id);
       continue;

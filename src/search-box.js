@@ -38,10 +38,11 @@ export function createSearchBox(container, { atlas, state, fixtures = false, sha
     places: [...atlas.places.values()],
     sources: [...atlas.sources.values()],
   });
-  let entries = shard ? [] : fromAtlas();
-  if (shard) {
-    shard.then((list) => { entries = list.length ? list : fromAtlas(); }, () => { entries = fromAtlas(); });
-  }
+  // Null until the shard lands: an empty list would answer "nothing by that
+  // name" about records that are right there, which is the one thing this box
+  // must never say (search.js). A query typed before then is held and run the
+  // moment the index exists.
+  let entries = shard ? null : fromAtlas();
   const input = container.querySelector('input[type="search"]');
   const list = container.querySelector('[data-slot="results"]');
   const status = container.querySelector('[data-slot="count"]');
@@ -166,10 +167,22 @@ export function createSearchBox(container, { atlas, state, fixtures = false, sha
     return null;
   }
 
-  input.addEventListener('input', () => {
+  const run = () => {
+    if (entries === null) return;
     result = search(entries, input.value, { limit: LIMIT });
     draw();
-  });
+  };
+  input.addEventListener('input', run);
+
+  // The shard, when it arrives — or the atlas, if it never does. Either way
+  // whatever is in the box is answered at once, so a reader who typed while
+  // it was in the air is not left looking at nothing.
+  if (shard) {
+    shard.then(
+      (list) => { entries = list.length ? list : fromAtlas(); },
+      () => { entries = fromAtlas(); },
+    ).then(() => { if (input.value) run(); });
+  }
 
   input.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {

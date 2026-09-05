@@ -1,7 +1,7 @@
 // Shared test helpers. Zero dependencies; node --test.
 
 import path from 'node:path';
-import { readFile } from 'node:fs/promises';
+import { readFile, readdir } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { createAtlas, createAtlasFromSpine } from '../src/data.js';
 import { readSchemaFiles, readRecords, readRegions, readRegionPolygons } from '../tools/lib/read.mjs';
@@ -34,16 +34,37 @@ async function indexOf(dataDir) {
   return { manifest, read };
 }
 
+// The citer directory off disk, whole. The browser fetches one file when a
+// reader opens one source; a test asserting about every source would
+// otherwise have to fetch, so the atlas is seeded with the lot (h3a-brief,
+// A7). What is proved by seeding is what a card does with the rows, not how
+// they arrived — `tests/citers.test.mjs` is where the fetching is held.
+export async function citersOnDisk(dataDir) {
+  const manifest = JSON.parse(await readFile(path.join(dataDir, 'index', 'manifest.json'), 'utf8'));
+  const dir = path.join(dataDir, manifest.files.citers);
+  const rows = new Map();
+  for (const name of (await readdir(dir)).sort()) {
+    if (!name.endsWith('.json')) continue;
+    const file = JSON.parse(await readFile(path.join(dir, name), 'utf8'));
+    rows.set(file.id, file.citations ?? []);
+  }
+  return rows;
+}
+
 export async function atlasFromTopology(dataDir, options = {}) {
   const { manifest, read } = await indexOf(dataDir);
-  const [topology, sources] = await Promise.all([read(manifest.files.topology), read(manifest.files.sources)]);
-  return createAtlas({ manifest, topology, sources: sources.sources, fetchJson: refuse, ...options });
+  const [topology, sources, citers] = await Promise.all([
+    read(manifest.files.topology), read(manifest.files.sources), citersOnDisk(dataDir),
+  ]);
+  return createAtlas({ manifest, topology, sources: sources.sources, citers, fetchJson: refuse, ...options });
 }
 
 export async function atlasFromSpine(dataDir, options = {}) {
   const { manifest, read } = await indexOf(dataDir);
-  const [spine, sources] = await Promise.all([read(manifest.files.spine), read(manifest.files.sources)]);
-  return createAtlasFromSpine({ manifest, spine, sources: sources.sources, fetchJson: refuse, ...options });
+  const [spine, sources, citers] = await Promise.all([
+    read(manifest.files.spine), read(manifest.files.sources), citersOnDisk(dataDir),
+  ]);
+  return createAtlasFromSpine({ manifest, spine, sources: sources.sources, citers, fetchJson: refuse, ...options });
 }
 
 // `for (const [label, buildAtlas] of ATLAS_BUILDS)` — the label goes in the

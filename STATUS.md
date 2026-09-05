@@ -3478,6 +3478,29 @@ gave that to the map and the timeline, and M25 did not widen it.
      making contribute.html *heavier* than it was on the topology, which is
      the opposite of what this milestone is for. The atlas does load the
      shard: there the box is the only reader and the fold is the saving.
+224. **The citer rows left the sources index in this commit, and the
+     topology gained `citesCount`.** Deviation 216 left the strip to "the
+     commit that teaches the card to fetch it", which is this one. Three
+     readers had to move first: the source card (which now fetches its own
+     citer file, draws the first 200 rows and offers the rest), a lens on a
+     source (fetched by `main.js` when the focus asks for it, the views
+     forced to redraw when it lands), and `retractionPlan` on `review.html`,
+     which fetches the one file before it asks and refuses to retract at all
+     if that fetch fails — an empty answer there would read as "nothing
+     cites this book". The fourth reader was `createAtlas` itself, which
+     counted `citationCount('event', id)` out of those rows: `citesCount` is
+     now written into the **topology** as well as the spine, so an atlas
+     built from either answers the same, and it goes with the topology in
+     H3c. `atlas.citationsOf` is gone; nothing read it (deviation 222).
+     Measured: the sources index 328.8 → 29.4 KB, the topology 905.5 →
+     922.6 KB for the field it will not keep, the spine unchanged.
+225. **The search box holds a query typed before the shard lands.** The
+     shard is fetched without blocking the first frame, so for a moment the
+     box has no index. Answering "nothing by that name" then would be the
+     lie the box exists not to tell, so the index is `null` rather than
+     empty until the file arrives and whatever is in the box is answered the
+     moment it does. Found as a flaking browser test, which is what it would
+     have been for a reader on a slow connection.
 
 ## Dates to verify
 

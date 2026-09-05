@@ -10,6 +10,7 @@
 
 import { esc } from '../util/esc.js';
 import { html } from '../util/dom.js';
+import { expandSpine } from '../data.js';
 import { loadSchemas } from '../validate/schemas.js';
 import {
   buildQueue, groupByKind, flagCounts, filterQueue, progressOf, isDraft,
@@ -54,28 +55,38 @@ function writeReviewer(reviewer) {
 
 try {
   const manifest = await getJson(`${dataRoot}index/manifest.json`, { cache: 'no-store' });
-  const [topologyIndex, sourcesIndex, review, schemas] = await Promise.all([
-    getJson(`${dataRoot}${manifest.files.topology}`),
+  const [spine, sourcesIndex, review, schemas] = await Promise.all([
+    getJson(`${dataRoot}${manifest.files.spine}`),
     getJson(`${dataRoot}${manifest.files.sources}`),
     getJson(`${dataRoot}${manifest.files.review}`),
     loadSchemas({ root: 'schema/' }),
   ]);
+  // The spine expanded back into the lists the editor and `checkRules` read.
+  // The dashboard wants the records, not an atlas: nothing here is drawn on a
+  // map, and every rule that runs in the browser runs against these arrays.
+  const expanded = expandSpine(spine);
 
   document.getElementById('fixtures-badge').hidden = !fixtures;
   render({
     topology: {
-      events: topologyIndex.events ?? [],
-      edges: topologyIndex.edges ?? [],
-      actors: topologyIndex.actors ?? [],
-      places: topologyIndex.places ?? [],
-      relations: topologyIndex.relations ?? [],
-      narratives: topologyIndex.narratives ?? [],
-      presences: topologyIndex.presences ?? [],
+      events: expanded.events,
+      edges: expanded.edges,
+      actors: expanded.actors,
+      places: expanded.places,
+      relations: expanded.relations,
+      narratives: expanded.narratives,
+      presences: expanded.presences,
       sources: sourcesIndex.sources ?? [],
       regions: manifest.regions ?? [],
     },
     review,
     schemas,
+    // Which records cite a source: not in the index every page loads, one
+    // file per source since H3b. `retractionPlan` is the only thing on this
+    // page that needs them, and only for the one source a reviewer is about
+    // to retract, so it is fetched at that moment and not before (A7).
+    citersOf: (id) => getJson(`${dataRoot}${manifest.files.citers}/${encodeURIComponent(id)}.json`)
+      .then((file) => file.citations ?? []),
   });
 } catch (error) {
   mount.innerHTML = `<p class="field-error"><code>${esc(error.message)}</code></p>
@@ -85,7 +96,7 @@ try {
   throw error;
 }
 
-function render({ topology, review, schemas }) {
+function render({ topology, review, schemas, citersOf }) {
   // The queue as the index left it. Signing removes an entry from this list;
   // reloading the page rebuilds it from the index the save rewrote.
   let digests = (review.records ?? []).filter(isDraft);
@@ -356,7 +367,22 @@ function render({ topology, review, schemas }) {
   retractButton.addEventListener('click', async () => {
     if (!editor) return;
     const record = editor.current();
-    const plan = retractionPlan(record, topology);
+    // A source's blockers are the records that cite it, and refusing to
+    // retract is the whole point of asking: a failed fetch must not read as
+    // "nothing cites this". The reviewer is told and nothing is written.
+    let citers = null;
+    if (record.kind === 'source') {
+      // The index says how many there are; a source nothing cites has no
+      // file at all, and asking for one would 404 (deviation 217).
+      const counted = (topology.sources ?? []).find((s) => s.id === record.id)?.citationCount ?? 0;
+      try {
+        citers = { [record.id]: counted > 0 ? await citersOf(record.id) : [] };
+      } catch (error) {
+        noteEl.textContent = `Cannot check what cites ${record.id}: ${error.message}. Nothing was retracted.`;
+        return;
+      }
+    }
+    const plan = retractionPlan(record, citers ? { ...topology, citers } : topology);
     if (plan.blockers.length) {
       noteEl.textContent = `This cannot be retracted while ${plan.blockers.map((b) => `${b.id} ${b.why}`).join(', ')}. Correct those records first.`;
       return;

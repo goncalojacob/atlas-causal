@@ -365,6 +365,18 @@ export function buildTopology(records, regions, { deriveRegion } = {}) {
     source.citations = citations.get(source.id) ?? [];
     source.citationCount = source.citations.length;
   }
+  // And the other number, on the records that make the citations: how many a
+  // record makes, written here rather than counted in the browser out of the
+  // citer rows. Since H3b those rows are not in the sources index at all —
+  // they are the citer directory, fetched for one source at a time — so a
+  // card that prints "3 sources" beside an event has to read it off the
+  // record. The spine carries the same field under the same name (A8); the
+  // topology carries it so that an atlas built from either answers alike,
+  // and it goes with the topology in H3c.
+  const cites = citesCountByRecord(sources);
+  for (const [kind, list] of [['event', events], ['actor', actors], ['place', places]]) {
+    for (const record of list) record.citesCount = cites.get(`${kind}:${record.id}`) ?? 0;
+  }
   events.sort(byId);
   edges.sort(byId);
   sources.sort(byId);

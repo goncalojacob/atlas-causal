@@ -24,15 +24,9 @@ async function defaultFetchJson(url, init) {
 }
 
 // Pure assembly from already-loaded pieces; loadAtlas() does the fetching.
-//
-// `citesCount` says where "how many citations does this record make" comes
-// from. From the topology it is counted here, out of the citer rows the
-// sources index carries; from the spine it is already on the record, written
-// at build time (h3a-brief, A8) — which is what lets those rows leave the
-// index every page loads whole, in H3b.
 export function createAtlas({
   manifest, topology, sources, land = null, palette = null, regionBoxes = null,
-  dataRoot = 'data/', fetchJson = defaultFetchJson, citesCount = false,
+  dataRoot = 'data/', fetchJson = defaultFetchJson, citers: seededCiters = null,
 }) {
   const events = new Map(topology.events.map((e) => [e.id, e]));
   const edges = new Map(topology.edges.map((e) => [e.id, e]));
@@ -49,33 +43,59 @@ export function createAtlas({
     }
   }
 
-  // The bibliography read backwards: which sources cite a given record. The
-  // sources index already carries every citation from the other end (M10), so
-  // this costs one pass and no request — which is why a card can say how many
-  // sources a record has *before* fetching the record's own text.
-  const citationsOf = new Map();
-  for (const source of sourceMap.values()) {
-    for (const citation of source.citations ?? []) {
-      const key = `${citation.kind}:${citation.id}`;
-      if (!citationsOf.has(key)) citationsOf.set(key, []);
-      citationsOf.get(key).push({ ...citation, source: source.id });
-    }
-  }
-  // The same number, read off the record instead of counted, when the atlas
-  // was built from the spine. Only events, actors and places carry it — they
+  // How many citations a record makes: read off the record, never counted
+  // here. It used to be a pass over the citer rows the sources index carried,
+  // and since H3b those rows are not in that index — one file per source in
+  // the citer directory, fetched when a card actually needs the list (A7).
+  // Both the spine and the topology write the number at build time under the
+  // name `citesCount` (A8). Only events, actors and places carry it — they
   // are the three kinds a card prints it beside — and a tombstone carries
   // none, which is 0 either way: a retracted record cites nothing.
   const cites = new Map();
-  if (citesCount) {
-    for (const [kind, map] of kinds) {
-      for (const record of map.values()) {
-        if (typeof record.citesCount === 'number') cites.set(`${kind}:${record.id}`, record.citesCount);
-      }
+  for (const [kind, map] of kinds) {
+    for (const record of map.values()) {
+      if (typeof record.citesCount === 'number') cites.set(`${kind}:${record.id}`, record.citesCount);
     }
   }
-  const citationCount = citesCount
-    ? (kind, id) => cites.get(`${kind}:${id}`) ?? 0
-    : (kind, id) => (citationsOf.get(`${kind}:${id}`) ?? []).length;
+  const citationCount = (kind, id) => cites.get(`${kind}:${id}`) ?? 0;
+
+  // The other direction, one source at a time: which records cite this book.
+  // Not in the atlas at load — 1,933 rows of which a reader looks at the ones
+  // under one source — so the card asks for the file and draws it when it
+  // arrives. `citersOf` is the synchronous half, for a caller that cannot
+  // wait: the rows if they are in hand, null if they are not, and the empty
+  // list without a request for a source nothing cites, which has no file
+  // (deviation 217). Same cache discipline as loadGeometry: one request in
+  // flight per source, and a rejection is not an answer.
+  // `citers` may be seeded with rows already in hand — a test that has read
+  // the directory off disk, and nothing else so far.
+  const citers = new Map(seededCiters ?? []);
+  const citersLoading = new Map();
+  const citersOf = (id) => {
+    if (citers.has(id)) return citers.get(id);
+    return (sourceMap.get(id)?.citationCount ?? 0) === 0 ? [] : null;
+  };
+  function loadCiters(id) {
+    const known = citersOf(id);
+    if (known) return Promise.resolve(known);
+    if (!citersLoading.has(id)) {
+      const dir = manifest?.files?.citers;
+      const pending = (dir
+        ? fetchJson(`${dataRoot}${dir}/${encodeURIComponent(id)}.json`)
+        : Promise.reject(new Error('the manifest names no citer directory')))
+        .then((file) => {
+          const rows = file.citations ?? [];
+          citers.set(id, rows);
+          return rows;
+        })
+        .catch((error) => {
+          if (citersLoading.get(id) === pending) citersLoading.delete(id);
+          throw error;
+        });
+      citersLoading.set(id, pending);
+    }
+    return citersLoading.get(id);
+  }
 
   const find = (id) => {
     for (const [kind, map] of kinds) if (map.has(id)) return { id, kind, record: map.get(id) };
@@ -316,7 +336,8 @@ export function createAtlas({
     events,
     edges,
     sources: sourceMap,
-    citationsOf,
+    citersOf,
+    loadCiters,
     citationCount,
     actors,
     places,
@@ -379,8 +400,12 @@ function topologyFromSpine(spine) {
 // Sources stay where they are: they are not in the spine, and `atlas.sources`
 // is the sources index exactly as it is today (A3).
 export function createAtlasFromSpine({ spine, ...rest }) {
-  return createAtlas({ ...rest, topology: topologyFromSpine(spine), citesCount: true });
+  return createAtlas({ ...rest, topology: topologyFromSpine(spine) });
 }
+
+// The spine expanded back into the shape a topology reader takes: the
+// dashboard and the narratives page want the lists, not an atlas.
+export { topologyFromSpine as expandSpine };
 
 // The spine is named by the manifest under a content hash and served
 // `immutable`, so it is fetched once and kept — while the manifest itself is

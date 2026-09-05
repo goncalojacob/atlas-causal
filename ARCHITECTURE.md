@@ -1383,14 +1383,27 @@ event with degree zero; a source with no citers.
 ### Index and manifest ● — generated
 
 The sources index carries every source record whole — it is small and it is
-all citation — plus, per source, **`citations`**: every active record that
-cites it as `{ kind, id, locator, dissent }`, and **`citationCount`**. That
-direction is the one nothing could answer without reading every record in the
-atlas, so a source's card and the bibliography on `sources.html` each cost
-one fetch and no more. `dissent` marks a citation made from an edge's
-`dispute.sources`. A tombstone cites nothing: a merged or retracted record
-still resolves its own URL but is not part of the graph, and counting it
-would make the bibliography disagree with what the atlas draws.
+all citation — plus **`citationCount`**: how many active records cite it.
+Which records those are is the **citer directory**, one file per source,
+fetched when a reader opens that source; until H3b the rows were in this
+index, and taking them out is where nearly all of this milestone's saving at
+first paint comes from (328.8 KB → 29.4 KB measured). That direction is the
+one nothing could answer without reading every record in the atlas, so the
+bibliography on `sources.html` costs one fetch and a source's card one more.
+`dissent` marks a citation made from an edge's `dispute.sources`. A tombstone
+cites nothing: a merged or retracted record still resolves its own URL but is
+not part of the graph, and counting it would make the bibliography disagree
+with what the atlas draws.
+
+**Two things must fetch before they can answer, and both do.** The source
+card asks for its own citer file and says it is loading until it lands,
+drawing the first 200 rows and offering the rest; a lens on a source
+(`?focus=source:…`) is the same rows, fetched by `main.js` when the focus
+asks for them, with the views forced to redraw when they arrive. And
+`retractionPlan` on a source: its blockers *are* the records that cite it, so
+`review.html` fetches that one file before it asks, and **refuses to retract
+at all** if the fetch fails — an empty answer there would read as "nothing
+cites this book" and let a reviewer break every record that rests on it.
 
 `manifest.json` — never cached — lists schema version, counts (events,
 edges, sources, actors, presences, regions), the hashed names of the spine,
@@ -1426,8 +1439,8 @@ unchanged; the pages move over one at a time in H3b.
 |---|---|---|
 | `spine-<hash>.json` | every page, whole | every record: `id`, `kind`, `status`, `aliases`, `supersededBy`, `wikidata`, `wikipedia`, and the per-kind fields below |
 | `search-<hash>.json` | the search box, contribute, review | per active record: `id`, `kind`, `label`, `detail`, `terms` (folded), `variants`, `weight`, `when`, `status` |
-| `citers-<hash>/<source-id>.json` | the source card, `retractionPlan` | the rows that cite that one source |
-| `sources-<hash>.json` | `sources.html`, the source card | every bibliographic field and `citationCount` |
+| `citers-<hash>/<source-id>.json` | the source card, a source lens, `retractionPlan` | the rows that cite that one source |
+| `sources-<hash>.json` | `sources.html`, the source card | every bibliographic field and `citationCount`, and no citer rows |
 
 | Kind | And |
 |---|---|
@@ -1453,9 +1466,12 @@ bought nothing. The mechanism is reserved here for a per-event field that is
 genuinely large, against a measurement.
 
 Two counts with two names, because they mean opposite things:
-**`citesCount`**, on an active event, actor or place in the spine, is how
-many citations that record *makes* — the number three cards print beside it.
-**`citationCount`**, on a source, is how many records cite it. A tombstone
+**`citesCount`**, on an active event, actor or place, is how many citations
+that record *makes* — the number three cards print beside it. It is written
+at build time into the spine and, since H3b, into the topology as well, so
+that an atlas built from either answers alike once the citer rows the browser
+used to count are no longer in any file it holds. **`citationCount`**, on a
+source, is how many records cite it. A tombstone
 carries neither: it keeps `title`, `when`, `place`, `region`, `wikidata`,
 `status`, `supersededBy`, `aliases` and its kind's own label, which is what a
 retracted card's head and meta line are built from, and nothing else.

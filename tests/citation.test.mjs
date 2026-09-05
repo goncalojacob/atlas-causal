@@ -21,6 +21,15 @@ async function repositorySources() {
   return index.sources;
 }
 
+// The citer rows, which since H3b are one file per source rather than a list
+// inside the sources index (h3a-brief, A7).
+async function repositoryCiters(id) {
+  const dir = path.join(ROOT, 'data', 'index');
+  const manifest = JSON.parse(await readFile(path.join(dir, 'manifest.json'), 'utf8'));
+  const file = path.join(ROOT, 'data', manifest.files.citers, `${id}.json`);
+  return JSON.parse(await readFile(file, 'utf8')).citations;
+}
+
 test('citationsBySource turns every record round to face its sources', async () => {
   const fx = await fixtures();
   const citations = citationsBySource(fx.records);
@@ -81,9 +90,14 @@ test('the repository sources index agrees with the records that cite it', async 
   const sources = await repositorySources();
   assert.ok(sources.length > 0);
   for (const source of sources) {
-    assert.ok(Array.isArray(source.citations), `${source.id} has no citers list`);
-    assert.equal(source.citationCount, source.citations.length, source.id);
-    for (const c of source.citations) assert.ok(CITER_ORDER.includes(c.kind), `${source.id} cited by unknown kind ${c.kind}`);
+    // The count in the index every page loads, and the rows in the one file
+    // a card fetches when a reader opens that source.
+    assert.ok(!Object.hasOwn(source, 'citations'), `${source.id} still carries its citer rows in the index`);
+    assert.equal(typeof source.citationCount, 'number', source.id);
+    if (source.citationCount === 0) continue;
+    const citations = await repositoryCiters(source.id);
+    assert.equal(source.citationCount, citations.length, source.id);
+    for (const c of citations) assert.ok(CITER_ORDER.includes(c.kind), `${source.id} cited by unknown kind ${c.kind}`);
   }
   assert.ok(sources.some((s) => s.citationCount >= 2));
 });

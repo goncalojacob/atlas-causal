@@ -4,10 +4,16 @@
 // source is written once and cited fifty times, and this is where those
 // fifty are visible.
 //
-// Nothing is fetched: the sources index carries the citers (M10), so opening
-// a citation costs no request. A dissenting citation — one an edge made from
-// its `dispute.sources` — is shown apart and marked, because a book that
-// argues against a link is not evidence for it.
+// The citer rows are one file per source since H3b, so opening a source
+// costs one request and the section says it is loading until it lands; the
+// sources index every page holds carries the count and no rows (A7). Long
+// lists are cut: `cshapes-2-0` alone cites 1,041 records, and a thousand rows
+// nobody scrolled to is a thousand rows the browser laid out — the first 200
+// are drawn and the rest are one button away.
+//
+// A dissenting citation — one an edge made from its `dispute.sources` — is
+// shown apart and marked, because a book that argues against a link is not
+// evidence for it.
 
 import { esc } from '../util/esc.js';
 import { formatInterval } from '../util/dates.js';
@@ -95,23 +101,38 @@ function citerRow(ctx, citation) {
   return `<li class="actor-row"><code>${esc(citation.id)}</code>${locator}${dissent}</li>`;
 }
 
-function citersHtml(ctx, source) {
-  const citations = source.citations ?? [];
-  if (citations.length === 0) {
-    return '<section class="citers"><h2>What cites it</h2><p class="muted">Nothing in the atlas cites this source yet.</p></section>';
+// How many rows are drawn before the reader has to ask for the rest (A7).
+export const CITER_LIMIT = 200;
+
+// `citations` is null while the file is on its way, and a list once it is
+// here. `all` is the reader having asked for the whole thing.
+export function citersHtml(ctx, source, citations, { all = false } = {}) {
+  const head = (extra = '') => `<section class="citers"><h2>What cites it${extra}</h2>`;
+  if (citations === null) {
+    return `${head()}<p class="muted">Loading what cites it…</p></section>`;
   }
-  const groups = groupCiters(citations).map((group) => {
+  if (citations.length === 0) {
+    return `${head()}<p class="muted">Nothing in the atlas cites this source yet.</p></section>`;
+  }
+  const shown = all ? citations : citations.slice(0, CITER_LIMIT);
+  const hidden = citations.length - shown.length;
+  const groups = groupCiters(shown).map((group) => {
     const rows = group.items.map((c) => citerRow(ctx, c)).filter(Boolean);
     if (rows.length === 0) return '';
     return `<h3>${esc(group.label)} <span class="count">${rows.length}</span></h3><ul class="actor-rows">${rows.join('')}</ul>`;
   }).join('');
-  return `<section class="citers">
-    <h2>What cites it <span class="count">${citations.length}</span></h2>
+  return `${head(` <span class="count">${citations.length}</span>`)}
     <p class="hint">Every record in the atlas that rests on this source, with the page or section each one names.</p>
-    ${groups}</section>`;
+    ${groups}
+    ${hidden > 0 ? `<p class="muted"><button type="button" class="link" data-action="all-citers">Show the remaining ${hidden}</button></p>` : ''}
+    </section>`;
 }
 
-export function sourceCardHtml(ctx, source) {
+// `citations` defaults to whatever the atlas already has for this source —
+// the rows if the file is in hand, the empty list if nothing cites it, null
+// while it is on its way — so a caller that is not the panel need not know
+// where they came from.
+export function sourceCardHtml(ctx, source, citations = ctx.atlas?.citersOf?.(source.id) ?? source.citations ?? null, options = {}) {
   const creators = (source.creators ?? []).join(', ');
   return `
     ${source.status !== 'active' ? `<p class="notice status">This source is <strong>${esc(source.status)}</strong>.</p>` : ''}
@@ -130,9 +151,35 @@ export function sourceCardHtml(ctx, source) {
       ${ctx.discussLink('source', source.id)}
     </header>
     <p class="citation-full">${esc(citationText(source))}</p>
-    ${citersHtml(ctx, source)}`;
+    ${citersHtml(ctx, source, citations, options)}`;
 }
 
+// The card, then the rows when they arrive. The section is replaced rather
+// than the whole card: the head, the citation and whatever the reader has
+// already got hold of stay where they are, which is the same discipline the
+// event card follows when its record text lands (panel/event.js).
 export function renderSourceCard(ctx, { container, source }) {
-  container.innerHTML = sourceCardHtml(ctx, source);
+  const { atlas } = ctx;
+  const swap = (rows, options) => {
+    const section = container.querySelector('.citers');
+    if (section) section.outerHTML = citersHtml(ctx, source, rows, options);
+    const more = container.querySelector('[data-action="all-citers"]');
+    if (more) more.addEventListener('click', () => swap(rows, { all: true }));
+  };
+  const known = atlas.citersOf ? atlas.citersOf(source.id) : source.citations ?? [];
+  container.innerHTML = sourceCardHtml(ctx, source, known);
+  if (known) {
+    swap(known, {});
+    return;
+  }
+  atlas.loadCiters(source.id).then(
+    (rows) => {
+      // The card may have been replaced while the file was in the air.
+      if (container.querySelector('.citers')) swap(rows, {});
+    },
+    () => {
+      const section = container.querySelector('.citers');
+      if (section) section.outerHTML = '<section class="citers"><h2>What cites it</h2><p class="muted">The list of what cites this source could not be loaded.</p></section>';
+    },
+  );
 }

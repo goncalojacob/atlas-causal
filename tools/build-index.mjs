@@ -79,7 +79,16 @@ export async function buildIndex(dataDir = DEFAULT_DATA) {
   // Beside the topology, not instead of it: nothing reads the spine until
   // H3b moves the pages over one at a time.
   const spineText = serialize(buildSpine(topology));
-  const sourcesText = serialize({ schema: 1, sources: topology.sources });
+  // The sources index without its citer rows, since H3b: every bibliographic
+  // field and `citationCount`, and the rows themselves in the citer directory
+  // below, fetched for one source at a time. This is the whole of the saving
+  // at first paint — 328.8 KB to 29.4 KB measured on this dataset — and it
+  // could only happen once the source card and `retractionPlan` knew how to
+  // fetch a citer file (h3a-brief, A3 and A7; STATUS.md, deviation 216).
+  const sourcesText = serialize({
+    schema: 1,
+    sources: topology.sources.map(({ citations, ...source }) => source),
+  });
 
   // One hash over the whole directory rather than one per file: manifest.json
   // is fetched no-store on every page load, and a line per source would be

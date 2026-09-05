@@ -179,33 +179,33 @@ for (const [label, dir] of DATASETS) {
 
 // A7: the dashboard fetches one citer file for the source in hand, and the
 // plan answers off that file alone — it reads `kind` and `id` and nothing
-// else. This is what lets the rows leave the sources index in H3b.
-test('retractionPlan reads a pre-fetched citers map as it reads the whole index', async () => {
+// else. Since H3b that file is the only place the rows are.
+test('retractionPlan reads a pre-fetched citers map, in either shape', async () => {
   const manifest = await read(DATA, 'index/manifest.json');
   const sources = (await read(DATA, manifest.files.sources)).sources;
   const cited = sources.filter((s) => s.citationCount > 0);
   assert.ok(cited.length > 3);
   for (const source of cited) {
     const file = await read(DATA, `${manifest.files.citers}/${source.id}.json`);
-    const whole = retractionPlan({ kind: 'source', id: source.id }, { sources });
     // The map a dashboard would hold: this source's rows and no others.
     const asMap = retractionPlan({ kind: 'source', id: source.id }, { citers: new Map([[source.id, file.citations]]) });
     const asObject = retractionPlan({ kind: 'source', id: source.id }, { citers: { [source.id]: file.citations } });
-    assert.deepEqual(asMap, whole, source.id);
-    assert.deepEqual(asObject, whole, source.id);
-    assert.equal(asMap.blockers.length, source.citationCount);
+    assert.deepEqual(asMap, asObject, source.id);
+    assert.equal(asMap.blockers.length, source.citationCount, source.id);
   }
 });
 
 // A source whose file was never fetched is not a source with no citers: an
-// empty map answers empty, which is why the card fetches before it asks.
-test('an empty citers map is an empty answer, and the index is the fallback', async () => {
+// empty map answers empty, and so does the sources index now that the rows
+// have left it. Both are why review/main.js fetches the file first and
+// refuses to retract at all when that fetch fails.
+test('a citers map that was never filled answers empty, index and all', async () => {
   const manifest = await read(DATA, 'index/manifest.json');
   const sources = (await read(DATA, manifest.files.sources)).sources;
   const busiest = [...sources].sort((a, b) => b.citationCount - a.citationCount)[0];
   assert.ok(busiest.citationCount > 100, 'one source carries most of the citations');
   assert.deepEqual(retractionPlan({ kind: 'source', id: busiest.id }, { citers: new Map() }), { retract: [], blockers: [] });
-  assert.equal(retractionPlan({ kind: 'source', id: busiest.id }, { sources }).blockers.length, busiest.citationCount);
+  assert.deepEqual(retractionPlan({ kind: 'source', id: busiest.id }, { sources }).blockers, []);
 });
 
 // ─── loadSpine ─────────────────────────────────────────────────────────────

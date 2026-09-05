@@ -1,0 +1,1067 @@
+{
+  "schema": 1,
+  "sources": [
+    {
+      "accessed": null,
+      "aliases": [],
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "citationCount": 2,
+      "created": "2026-09-03",
+      "creators": [
+        "Assembleia da República"
+      ],
+      "doi": null,
+      "id": "ar-2024-fiftieth-anniversary",
+      "isbn": null,
+      "kind": "source",
+      "license": "CC-BY-SA-4.0",
+      "publisher": null,
+      "reference": "Diário da Assembleia da República, solemn session of 25 April 2024",
+      "repository": "Assembleia da República",
+      "revised": null,
+      "schema": 1,
+      "status": "active",
+      "supersededBy": null,
+      "title": "Solemn session for the fiftieth anniversary of 25 April",
+      "type": "primary",
+      "url": null,
+      "year": 2024
+    },
+    {
+      "accessed": null,
+      "aliases": [],
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "citationCount": 3,
+      "created": "2026-09-03",
+      "creators": [
+        "Assembleia da República"
+      ],
+      "doi": null,
+      "id": "ar-2025-confidence-vote",
+      "isbn": null,
+      "kind": "source",
+      "license": "CC-BY-SA-4.0",
+      "publisher": null,
+      "reference": "Diário da Assembleia da República, sitting of 11 March 2025",
+      "repository": "Assembleia da República",
+      "revised": null,
+      "schema": 1,
+      "status": "active",
+      "supersededBy": null,
+      "title": "Rejection of the motion of confidence tabled by the XXIV Constitutional Government",
+      "type": "primary",
+      "url": null,
+      "year": 2025
+    },
+    {
+      "accessed": null,
+      "aliases": [],
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "citationCount": 5,
+      "created": "2026-09-03",
+      "creators": [
+        "Banco de Portugal"
+      ],
+      "doi": null,
+      "id": "banco-de-portugal-2014-bes-resolution",
+      "isbn": null,
+      "kind": "source",
+      "license": "CC-BY-SA-4.0",
+      "publisher": null,
+      "reference": "deliberation of the Board of Directors of 3 August 2014",
+      "repository": "Banco de Portugal",
+      "revised": null,
+      "schema": 1,
+      "status": "active",
+      "supersededBy": null,
+      "title": "Resolution measure applied to Banco Espírito Santo, S.A.",
+      "type": "primary",
+      "url": null,
+      "year": 2014
+    },
+    {
+      "accessed": null,
+      "aliases": [],
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "citationCount": 5,
+      "created": "2026-09-03",
+      "creators": [
+        "Comissão Nacional de Eleições"
+      ],
+      "doi": null,
+      "id": "cne-legislative-2015",
+      "isbn": null,
+      "kind": "source",
+      "license": "CC-BY-SA-4.0",
+      "publisher": null,
+      "reference": "official results, legislative election of 2015-10-04",
+      "repository": "Comissão Nacional de Eleições",
+      "revised": null,
+      "schema": 1,
+      "status": "active",
+      "supersededBy": null,
+      "title": "Official results, legislative election of 2015-10-04",
+      "type": "primary",
+      "url": null,
+      "year": 2015
+    },
+    {
+      "accessed": null,
+      "aliases": [],
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "citationCount": 6,
+      "created": "2026-09-03",
+      "creators": [
+        "Comissão Nacional de Eleições"
+      ],
+      "doi": null,
+      "id": "cne-legislative-2019",
+      "isbn": null,
+      "kind": "source",
+      "license": "CC-BY-SA-4.0",
+      "publisher": null,
+      "reference": "official results, legislative election of 2019-10-06",
+      "repository": "Comissão Nacional de Eleições",
+      "revised": null,
+      "schema": 1,
+      "status": "active",
+      "supersededBy": null,
+      "title": "Official results, legislative election of 2019-10-06",
+      "type": "primary",
+      "url": null,
+      "year": 2019
+    },
+    {
+      "accessed": null,
+      "aliases": [],
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "citationCount": 4,
+      "created": "2026-09-03",
+      "creators": [
+        "Comissão Nacional de Eleições"
+      ],
+      "doi": null,
+      "id": "cne-legislative-2022",
+      "isbn": null,
+      "kind": "source",
+      "license": "CC-BY-SA-4.0",
+      "publisher": null,
+      "reference": "official results, legislative election of 2022-01-30",
+      "repository": "Comissão Nacional de Eleições",
+      "revised": null,
+      "schema": 1,
+      "status": "active",
+      "supersededBy": null,
+      "title": "Official results, legislative election of 2022-01-30",
+      "type": "primary",
+      "url": null,
+      "year": 2022
+    },
+    {
+      "accessed": null,
+      "aliases": [],
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "citationCount": 9,
+      "created": "2026-09-03",
+      "creators": [
+        "Comissão Nacional de Eleições"
+      ],
+      "doi": null,
+      "id": "cne-legislative-2024",
+      "isbn": null,
+      "kind": "source",
+      "license": "CC-BY-SA-4.0",
+      "publisher": null,
+      "reference": "official results, legislative election of 2024-03-10",
+      "repository": "Comissão Nacional de Eleições",
+      "revised": null,
+      "schema": 1,
+      "status": "active",
+      "supersededBy": null,
+      "title": "Official results, legislative election of 2024-03-10",
+      "type": "primary",
+      "url": null,
+      "year": 2024
+    },
+    {
+      "accessed": null,
+      "aliases": [],
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "citationCount": 2,
+      "created": "2026-09-03",
+      "creators": [
+        "Comissão Nacional de Eleições"
+      ],
+      "doi": null,
+      "id": "cne-legislative-2025",
+      "isbn": null,
+      "kind": "source",
+      "license": "CC-BY-SA-4.0",
+      "publisher": null,
+      "reference": "official results, legislative election of 2025-05-18",
+      "repository": "Comissão Nacional de Eleições",
+      "revised": null,
+      "schema": 1,
+      "status": "active",
+      "supersededBy": null,
+      "title": "Official results, legislative election of 2025-05-18",
+      "type": "primary",
+      "url": null,
+      "year": 2025
+    },
+    {
+      "accessed": null,
+      "aliases": [],
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "citationCount": 4,
+      "created": "2026-09-03",
+      "creators": [
+        "Comissão Nacional de Eleições"
+      ],
+      "doi": null,
+      "id": "cne-presidential-2016",
+      "isbn": null,
+      "kind": "source",
+      "license": "CC-BY-SA-4.0",
+      "publisher": null,
+      "reference": "official results, presidential election of 2016-01-24",
+      "repository": "Comissão Nacional de Eleições",
+      "revised": null,
+      "schema": 1,
+      "status": "active",
+      "supersededBy": null,
+      "title": "Official results, presidential election of 2016-01-24",
+      "type": "primary",
+      "url": null,
+      "year": 2016
+    },
+    {
+      "accessed": null,
+      "aliases": [],
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "citationCount": 2,
+      "created": "2026-09-03",
+      "creators": [
+        "Comissão Nacional de Eleições"
+      ],
+      "doi": null,
+      "id": "cne-presidential-2021",
+      "isbn": null,
+      "kind": "source",
+      "license": "CC-BY-SA-4.0",
+      "publisher": null,
+      "reference": "official results, presidential election of 2021-01-24",
+      "repository": "Comissão Nacional de Eleições",
+      "revised": null,
+      "schema": 1,
+      "status": "active",
+      "supersededBy": null,
+      "title": "Official results, presidential election of 2021-01-24",
+      "type": "primary",
+      "url": null,
+      "year": 2021
+    },
+    {
+      "accessed": null,
+      "aliases": [],
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "citationCount": 71,
+      "created": "2026-09-02",
+      "creators": [
+        "António Costa Pinto"
+      ],
+      "doi": null,
+      "id": "costa-pinto-2003-contemporary-portugal",
+      "isbn": null,
+      "kind": "source",
+      "license": "CC-BY-SA-4.0",
+      "publisher": "Social Science Monographs / Columbia University Press",
+      "reference": null,
+      "repository": null,
+      "revised": null,
+      "schema": 1,
+      "status": "active",
+      "supersededBy": null,
+      "title": "Contemporary Portugal: Politics, Society and Culture",
+      "type": "book",
+      "url": "https://search.worldcat.org/search?q=Contemporary%20Portugal%3A%20Politics%2C%20Society%20and%20Culture%20Ant%C3%B3nio%20Costa%20Pinto",
+      "year": 2003
+    },
+    {
+      "accessed": null,
+      "aliases": [],
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "citationCount": 70,
+      "created": "2026-09-03",
+      "creators": [
+        "António Costa Pinto",
+        "Conceição Pequito Teixeira"
+      ],
+      "doi": null,
+      "id": "costa-pinto-teixeira-2019-political-institutions",
+      "isbn": null,
+      "kind": "source",
+      "license": "CC-BY-SA-4.0",
+      "publisher": "Palgrave Macmillan",
+      "reference": null,
+      "repository": null,
+      "revised": null,
+      "schema": 1,
+      "status": "active",
+      "supersededBy": null,
+      "title": "Political Institutions and Democracy in Portugal: Assessing the Impact of the Eurocrisis",
+      "type": "book",
+      "url": "https://search.worldcat.org/search?q=Political%20Institutions%20and%20Democracy%20in%20Portugal%3A%20Assessing%20the%20Impact%20of%20the%20Eurocrisis%20Ant%C3%B3nio%20Costa%20Pinto%20Concei%C3%A7%C3%A3o%20Pequito%20Teixeira",
+      "year": 2019
+    },
+    {
+      "accessed": null,
+      "aliases": [],
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "citationCount": 1041,
+      "created": "2026-09-02",
+      "creators": [
+        "Guy Schvitz",
+        "Luc Girardin",
+        "Seraina Rüegger",
+        "Nils B. Weidmann",
+        "Lars-Erik Cederman",
+        "Kristian Skrede Gleditsch"
+      ],
+      "doi": "10.1177/00220027211013563",
+      "id": "cshapes-2-0",
+      "isbn": null,
+      "kind": "source",
+      "license": "CC-BY-SA-4.0",
+      "publisher": "Journal of Conflict Resolution",
+      "reference": null,
+      "repository": null,
+      "revised": null,
+      "schema": 1,
+      "status": "active",
+      "supersededBy": null,
+      "title": "Mapping the International System, 1886-2019: The CShapes 2.0 Dataset",
+      "type": "dataset",
+      "url": "https://icr.ethz.ch/data/cshapes/",
+      "year": 2022
+    },
+    {
+      "accessed": null,
+      "aliases": [],
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "citationCount": 3,
+      "created": "2026-09-03",
+      "creators": [
+        "Comissão Técnica Independente"
+      ],
+      "doi": null,
+      "id": "cti-2017-2018-fires",
+      "isbn": null,
+      "kind": "source",
+      "license": "CC-BY-SA-4.0",
+      "publisher": null,
+      "reference": "reports of the Comissão Técnica Independente on the fires of 17-24 June 2017 and of 15-16 October 2017",
+      "repository": "Assembleia da República",
+      "revised": null,
+      "schema": 1,
+      "status": "active",
+      "supersededBy": null,
+      "title": "Reports on the forest fires of June and October 2017",
+      "type": "primary",
+      "url": null,
+      "year": 2018
+    },
+    {
+      "accessed": null,
+      "aliases": [],
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "citationCount": 4,
+      "created": "2026-09-03",
+      "creators": [
+        "Presidência da República"
+      ],
+      "doi": null,
+      "id": "dre-2020-state-of-emergency",
+      "isbn": null,
+      "kind": "source",
+      "license": "CC-BY-SA-4.0",
+      "publisher": null,
+      "reference": "decrees of the President of the Republic declaring and renewing the state of emergency between 18 March and 2 May 2020",
+      "repository": "Diário da República",
+      "revised": null,
+      "schema": 1,
+      "status": "active",
+      "supersededBy": null,
+      "title": "Declaration and renewals of the state of emergency, March to May 2020",
+      "type": "primary",
+      "url": null,
+      "year": 2020
+    },
+    {
+      "accessed": null,
+      "aliases": [],
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "citationCount": 3,
+      "created": "2026-09-03",
+      "creators": [
+        "Presidência da República"
+      ],
+      "doi": null,
+      "id": "dre-government-appointments-2015-2024",
+      "isbn": null,
+      "kind": "source",
+      "license": "CC-BY-SA-4.0",
+      "publisher": null,
+      "reference": "decrees of the President of the Republic appointing the XXI Constitutional Government (November 2015) and the XXIV Constitutional Government (April 2024)",
+      "repository": "Diário da República",
+      "revised": null,
+      "schema": 1,
+      "status": "active",
+      "supersededBy": null,
+      "title": "Appointment of the XXI and XXIV Constitutional Governments",
+      "type": "primary",
+      "url": null,
+      "year": null
+    },
+    {
+      "accessed": null,
+      "aliases": [],
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "citationCount": 2,
+      "created": "2026-09-03",
+      "creators": [
+        "Holy See Press Office"
+      ],
+      "doi": null,
+      "id": "holy-see-2023-world-youth-day",
+      "isbn": null,
+      "kind": "source",
+      "license": "CC-BY-SA-4.0",
+      "publisher": null,
+      "reference": "designation of Lisbon on 27 January 2019 and the celebration of 1-6 August 2023",
+      "repository": "Holy See Press Office",
+      "revised": null,
+      "schema": 1,
+      "status": "active",
+      "supersededBy": null,
+      "title": "World Youth Day, Lisbon 2023",
+      "type": "primary",
+      "url": null,
+      "year": 2023
+    },
+    {
+      "accessed": null,
+      "aliases": [],
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "citationCount": 16,
+      "created": "2026-09-03",
+      "creators": [
+        "International Monetary Fund"
+      ],
+      "doi": null,
+      "id": "imf-2016-portugal-ex-post-evaluation",
+      "isbn": null,
+      "kind": "source",
+      "license": "CC-BY-SA-4.0",
+      "publisher": "International Monetary Fund",
+      "reference": null,
+      "repository": null,
+      "revised": null,
+      "schema": 1,
+      "status": "active",
+      "supersededBy": null,
+      "title": "Portugal: Ex Post Evaluation of Exceptional Access under the 2011 Extended Arrangement",
+      "type": "article",
+      "url": "https://search.worldcat.org/search?q=Portugal%3A%20Ex%20Post%20Evaluation%20of%20Exceptional%20Access%20under%20the%202011%20Extended%20Arrangement%20International%20Monetary%20Fund",
+      "year": 2016
+    },
+    {
+      "accessed": null,
+      "aliases": [],
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "citationCount": 64,
+      "created": "2026-09-02",
+      "creators": [
+        "Norrie MacQueen"
+      ],
+      "doi": null,
+      "id": "macqueen-1997-decolonization",
+      "isbn": null,
+      "kind": "source",
+      "license": "CC-BY-SA-4.0",
+      "publisher": "Longman",
+      "reference": null,
+      "repository": null,
+      "revised": null,
+      "schema": 1,
+      "status": "active",
+      "supersededBy": null,
+      "title": "The Decolonization of Portuguese Africa: Metropolitan Revolution and the Dissolution of Empire",
+      "type": "book",
+      "url": "https://search.worldcat.org/search?q=The%20Decolonization%20of%20Portuguese%20Africa%3A%20Metropolitan%20Revolution%20and%20the%20Dissolution%20of%20Empire%20Norrie%20MacQueen",
+      "year": 1997
+    },
+    {
+      "accessed": null,
+      "aliases": [],
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "citationCount": 47,
+      "created": "2026-09-02",
+      "creators": [
+        "Kenneth Maxwell"
+      ],
+      "doi": null,
+      "id": "maxwell-1995-making-of-portuguese-democracy",
+      "isbn": null,
+      "kind": "source",
+      "license": "CC-BY-SA-4.0",
+      "publisher": "Cambridge University Press",
+      "reference": null,
+      "repository": null,
+      "revised": null,
+      "schema": 1,
+      "status": "active",
+      "supersededBy": null,
+      "title": "The Making of Portuguese Democracy",
+      "type": "book",
+      "url": "https://search.worldcat.org/search?q=The%20Making%20of%20Portuguese%20Democracy%20Kenneth%20Maxwell",
+      "year": 1995
+    },
+    {
+      "accessed": null,
+      "aliases": [],
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "citationCount": 32,
+      "created": "2026-09-02",
+      "creators": [
+        "Filipe Ribeiro de Meneses"
+      ],
+      "doi": null,
+      "id": "meneses-2004-portugal-1914-1926",
+      "isbn": null,
+      "kind": "source",
+      "license": "CC-BY-SA-4.0",
+      "publisher": "Bristol: HiPLAM",
+      "reference": null,
+      "repository": null,
+      "revised": null,
+      "schema": 1,
+      "status": "active",
+      "supersededBy": null,
+      "title": "Portugal 1914–1926: From the First World War to Military Dictatorship",
+      "type": "book",
+      "url": "https://search.worldcat.org/search?q=Portugal%201914%E2%80%931926%3A%20From%20the%20First%20World%20War%20to%20Military%20Dictatorship%20Filipe%20Ribeiro%20de%20Meneses",
+      "year": 2004
+    },
+    {
+      "accessed": null,
+      "aliases": [],
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "citationCount": 16,
+      "created": "2026-09-02",
+      "creators": [
+        "Filipe Ribeiro de Meneses"
+      ],
+      "doi": null,
+      "id": "meneses-2009-salazar",
+      "isbn": null,
+      "kind": "source",
+      "license": "CC-BY-SA-4.0",
+      "publisher": "Enigma Books",
+      "reference": null,
+      "repository": null,
+      "revised": null,
+      "schema": 1,
+      "status": "active",
+      "supersededBy": null,
+      "title": "Salazar: A Political Biography",
+      "type": "book",
+      "url": "https://search.worldcat.org/search?q=Salazar%3A%20A%20Political%20Biography%20Filipe%20Ribeiro%20de%20Meneses",
+      "year": 2009
+    },
+    {
+      "accessed": null,
+      "aliases": [],
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "citationCount": 3,
+      "created": "2026-09-03",
+      "creators": [
+        "Procuradoria-Geral da República"
+      ],
+      "doi": null,
+      "id": "pgr-2023-operation-influencer",
+      "isbn": null,
+      "kind": "source",
+      "license": "CC-BY-SA-4.0",
+      "publisher": null,
+      "reference": "communiqué of 7 November 2023",
+      "repository": "Procuradoria-Geral da República",
+      "revised": null,
+      "schema": 1,
+      "status": "active",
+      "supersededBy": null,
+      "title": "Communiqué on the searches of 7 November 2023",
+      "type": "primary",
+      "url": null,
+      "year": 2023
+    },
+    {
+      "accessed": null,
+      "aliases": [],
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "citationCount": 78,
+      "created": "2026-09-02",
+      "creators": [
+        "Rui Ramos",
+        "Bernardo Vasconcelos e Sousa",
+        "Nuno Gonçalo Monteiro"
+      ],
+      "doi": null,
+      "id": "ramos-2009-historia-de-portugal",
+      "isbn": null,
+      "kind": "source",
+      "license": "CC-BY-SA-4.0",
+      "publisher": "A Esfera dos Livros",
+      "reference": null,
+      "repository": null,
+      "revised": null,
+      "schema": 1,
+      "status": "active",
+      "supersededBy": null,
+      "title": "História de Portugal",
+      "type": "book",
+      "url": "https://search.worldcat.org/search?q=Hist%C3%B3ria%20de%20Portugal%20Rui%20Ramos",
+      "year": 2009
+    },
+    {
+      "accessed": null,
+      "aliases": [],
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "citationCount": 25,
+      "created": "2026-09-02",
+      "creators": [
+        "Ricardo Reis"
+      ],
+      "doi": null,
+      "id": "reis-2013-portuguese-slump",
+      "isbn": null,
+      "kind": "source",
+      "license": "CC-BY-SA-4.0",
+      "publisher": "Brookings Institution",
+      "reference": null,
+      "repository": null,
+      "revised": null,
+      "schema": 1,
+      "status": "active",
+      "supersededBy": null,
+      "title": "The Portuguese Slump and Crash and the Euro Crisis. Brookings Papers on Economic Activity, Spring 2013",
+      "type": "article",
+      "url": "https://search.worldcat.org/search?q=The%20Portuguese%20Slump%20and%20Crash%20and%20the%20Euro%20Crisis.%20Brookings%20Papers%20on%20Economic%20Activity%2C%20Spring%202013%20Ricardo%20Reis",
+      "year": 2013
+    },
+    {
+      "accessed": null,
+      "aliases": [],
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "citationCount": 1,
+      "created": "2026-09-03",
+      "creators": [
+        "Redes Energéticas Nacionais"
+      ],
+      "doi": null,
+      "id": "ren-2025-blackout",
+      "isbn": null,
+      "kind": "source",
+      "license": "CC-BY-SA-4.0",
+      "publisher": null,
+      "reference": "transmission system operator's records of the interruption of 28 April 2025 on the Iberian peninsula",
+      "repository": "Redes Energéticas Nacionais",
+      "revised": null,
+      "schema": 1,
+      "status": "active",
+      "supersededBy": null,
+      "title": "The supply interruption of 28 April 2025",
+      "type": "primary",
+      "url": null,
+      "year": 2025
+    },
+    {
+      "accessed": null,
+      "aliases": [],
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "citationCount": 70,
+      "created": "2026-09-02",
+      "creators": [
+        "Fernando Rosas"
+      ],
+      "doi": null,
+      "id": "rosas-1994-estado-novo",
+      "isbn": null,
+      "kind": "source",
+      "license": "CC-BY-SA-4.0",
+      "publisher": "Círculo de Leitores",
+      "reference": null,
+      "repository": null,
+      "revised": null,
+      "schema": 1,
+      "status": "active",
+      "supersededBy": null,
+      "title": "O Estado Novo (1926–1974). História de Portugal, vol. 7 (dir. José Mattoso)",
+      "type": "book",
+      "url": "https://search.worldcat.org/search?q=O%20Estado%20Novo%20(1926%E2%80%931974).%20Hist%C3%B3ria%20de%20Portugal%2C%20vol.%207%20(dir.%20Jos%C3%A9%20Mattoso)%20Fernando%20Rosas",
+      "year": 1994
+    },
+    {
+      "accessed": null,
+      "aliases": [],
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "citationCount": 5,
+      "created": "2026-09-02",
+      "creators": [
+        "Fernando Rosas"
+      ],
+      "doi": null,
+      "id": "rosas-2012-salazar-e-o-poder",
+      "isbn": null,
+      "kind": "source",
+      "license": "CC-BY-SA-4.0",
+      "publisher": "Tinta-da-China",
+      "reference": null,
+      "repository": null,
+      "revised": null,
+      "schema": 1,
+      "status": "active",
+      "supersededBy": null,
+      "title": "Salazar e o Poder: A Arte de Saber Durar",
+      "type": "book",
+      "url": "https://search.worldcat.org/search?q=Salazar%20e%20o%20Poder%3A%20A%20Arte%20de%20Saber%20Durar%20Fernando%20Rosas",
+      "year": 2012
+    },
+    {
+      "accessed": null,
+      "aliases": [],
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "citationCount": 133,
+      "created": "2026-09-02",
+      "creators": [
+        "António José Telo"
+      ],
+      "doi": null,
+      "id": "telo-2007-historia-contemporanea",
+      "isbn": null,
+      "kind": "source",
+      "license": "CC-BY-SA-4.0",
+      "publisher": "Presença",
+      "reference": null,
+      "repository": null,
+      "revised": null,
+      "schema": 1,
+      "status": "active",
+      "supersededBy": null,
+      "title": "História Contemporânea de Portugal: do 25 de Abril à Actualidade",
+      "type": "book",
+      "url": "https://search.worldcat.org/search?q=Hist%C3%B3ria%20Contempor%C3%A2nea%20de%20Portugal%3A%20do%2025%20de%20Abril%20%C3%A0%20Actualidade%20Ant%C3%B3nio%20Jos%C3%A9%20Telo",
+      "year": 2007
+    },
+    {
+      "accessed": null,
+      "aliases": [],
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "citationCount": 0,
+      "created": "2026-09-03",
+      "creators": [
+        "Union of European Football Associations"
+      ],
+      "doi": null,
+      "id": "uefa-2016-final",
+      "isbn": null,
+      "kind": "source",
+      "license": "CC-BY-SA-4.0",
+      "publisher": null,
+      "reference": "official match report, Saint-Denis, 10 July 2016",
+      "repository": "Union of European Football Associations",
+      "revised": null,
+      "schema": 1,
+      "status": "active",
+      "supersededBy": null,
+      "title": "Match report, final of the 2016 European Championship",
+      "type": "primary",
+      "url": null,
+      "year": 2016
+    },
+    {
+      "accessed": null,
+      "aliases": [],
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "citationCount": 48,
+      "created": "2026-09-02",
+      "creators": [
+        "Douglas L. Wheeler"
+      ],
+      "doi": null,
+      "id": "wheeler-1978-republican-portugal",
+      "isbn": null,
+      "kind": "source",
+      "license": "CC-BY-SA-4.0",
+      "publisher": "University of Wisconsin Press",
+      "reference": null,
+      "repository": null,
+      "revised": null,
+      "schema": 1,
+      "status": "active",
+      "supersededBy": null,
+      "title": "Republican Portugal: A Political History, 1910–1926",
+      "type": "book",
+      "url": "https://search.worldcat.org/search?q=Republican%20Portugal%3A%20A%20Political%20History%2C%201910%E2%80%931926%20Douglas%20L.%20Wheeler",
+      "year": 1978
+    },
+    {
+      "accessed": "2026-09-04",
+      "aliases": [],
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "citationCount": 55,
+      "created": "2026-09-04",
+      "creators": [
+        "Wikidata contributors"
+      ],
+      "doi": null,
+      "id": "wikidata",
+      "isbn": null,
+      "kind": "source",
+      "license": "CC-BY-SA-4.0",
+      "publisher": "Wikimedia Foundation; the data is released under CC0 1.0",
+      "reference": null,
+      "repository": null,
+      "revised": null,
+      "schema": 1,
+      "status": "active",
+      "supersededBy": null,
+      "title": "Wikidata",
+      "type": "dataset",
+      "url": "https://www.wikidata.org/",
+      "year": null
+    },
+    {
+      "accessed": "2026-09-04",
+      "aliases": [],
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "citationCount": 55,
+      "created": "2026-09-04",
+      "creators": [
+        "Wikipedia contributors"
+      ],
+      "doi": null,
+      "id": "wikipedia-en",
+      "isbn": null,
+      "kind": "source",
+      "license": "CC-BY-SA-4.0",
+      "publisher": "Wikimedia Foundation; the text is licensed CC BY-SA 4.0",
+      "reference": null,
+      "repository": null,
+      "revised": null,
+      "schema": 1,
+      "status": "active",
+      "supersededBy": null,
+      "title": "Wikipedia, English edition",
+      "type": "web",
+      "url": "https://en.wikipedia.org/",
+      "year": null
+    },
+    {
+      "accessed": "2026-09-04",
+      "aliases": [],
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "citationCount": 49,
+      "created": "2026-09-04",
+      "creators": [
+        "Wikipedia contributors"
+      ],
+      "doi": null,
+      "id": "wikipedia-pt",
+      "isbn": null,
+      "kind": "source",
+      "license": "CC-BY-SA-4.0",
+      "publisher": "Wikimedia Foundation; the text is licensed CC BY-SA 4.0",
+      "reference": null,
+      "repository": null,
+      "revised": null,
+      "schema": 1,
+      "status": "active",
+      "supersededBy": null,
+      "title": "Wikipedia, Portuguese edition",
+      "type": "web",
+      "url": "https://pt.wikipedia.org/",
+      "year": null
+    }
+  ]
+}

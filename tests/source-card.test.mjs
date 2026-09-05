@@ -9,7 +9,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import path from 'node:path';
 import { discussUrl } from '../src/share.js';
-import { sourceCardHtml } from '../src/panel/source.js';
+import { sourceCardHtml, CITER_LIMIT } from '../src/panel/source.js';
 import { esc } from '../src/util/esc.js';
 import { ATLAS_BUILDS, ROOT } from './helpers.mjs';
 
@@ -31,6 +31,10 @@ const rowsIn = (html) => (html.match(/<li class="actor-row"/g) ?? []).length;
 // built from the topology or one built from the spine (A12). `atlas.sources`
 // is the same file either way — sources are not in the spine — but the
 // citers a row links back to are resolved through the atlas that is.
+//
+// Since H3b the rows themselves are not in the sources index at all: they are
+// one file per source, seeded into the atlas here (helpers.mjs) as the card
+// would have fetched them, and read back through `atlas.citersOf`.
 for (const [label, buildAtlas] of ATLAS_BUILDS) {
   const atlas = await buildAtlas(dataDir);
   const ctx = context(atlas);
@@ -39,7 +43,14 @@ for (const [label, buildAtlas] of ATLAS_BUILDS) {
     assert.ok(atlas.sources.size > 0);
     for (const source of atlas.sources.values()) {
       const html = sourceCardHtml(ctx, source);
-      assert.equal(rowsIn(html), source.citationCount, `${source.id}: a citer the card could not draw`);
+      // Long lists are cut, and the card says how many it is holding back:
+      // cshapes-2-0 alone cites 1,041 records (A7).
+      const drawn = Math.min(source.citationCount, CITER_LIMIT);
+      assert.equal(rowsIn(html), drawn, `${source.id}: a citer the card could not draw`);
+      if (source.citationCount > CITER_LIMIT) {
+        assert.match(html, new RegExp(`Show the remaining ${source.citationCount - CITER_LIMIT}`));
+        assert.equal(rowsIn(sourceCardHtml(ctx, source, atlas.citersOf(source.id), { all: true })), source.citationCount);
+      }
       // A source nothing cites yet — the Wikimedia records are written before
       // the import that will cite them — says so instead of counting to zero.
       if (source.citationCount === 0) assert.match(html, /Nothing in the atlas cites this source yet/);
@@ -52,21 +63,22 @@ for (const [label, buildAtlas] of ATLAS_BUILDS) {
   });
 
   test(`every kind of citer becomes a way back into the atlas, over ${label}`, async () => {
+    const rowsOf = (source) => atlas.citersOf(source.id) ?? [];
     const kinds = new Set();
     for (const source of atlas.sources.values()) {
-      for (const c of source.citations) kinds.add(c.kind);
+      for (const c of rowsOf(source)) kinds.add(c.kind);
     }
     assert.ok(kinds.has('event') && kinds.has('edge') && kinds.has('actor'), [...kinds].join(', '));
-    const withEdge = [...atlas.sources.values()].find((s) => s.citations.some((c) => c.kind === 'edge'));
+    const withEdge = [...atlas.sources.values()].find((s) => rowsOf(s).some((c) => c.kind === 'edge'));
     const html = sourceCardHtml(ctx, withEdge);
     assert.match(html, /data-action="follow-edge" data-edge="/, 'an edge citer walks its own step');
-    const withActor = [...atlas.sources.values()].find((s) => s.citations.some((c) => c.kind === 'actor'));
+    const withActor = [...atlas.sources.values()].find((s) => rowsOf(s).some((c) => c.kind === 'actor'));
     assert.match(sourceCardHtml(ctx, withActor), /data-action="actor" data-id="/);
     assert.match(html, /data-action="clear-source"/, 'and the card can be closed');
   });
 
   test(`a dissenting citation is marked as one on the card, over ${label}`, async () => {
-    const dissented = [...atlas.sources.values()].find((s) => s.citations.some((c) => c.dissent));
+    const dissented = [...atlas.sources.values()].find((s) => (atlas.citersOf(s.id) ?? []).some((c) => c.dissent));
     assert.ok(dissented, 'the dataset has at least one dispute');
     assert.match(sourceCardHtml(ctx, dissented), /<span class="badge disputed">dissenting<\/span>/);
   });
@@ -80,8 +92,8 @@ for (const [label, buildAtlas] of ATLAS_BUILDS) {
       type: 'book',
       status: 'active',
       url: 'javascript:alert(1)',
-      citations: [],
-    });
+      citationCount: 0,
+    }, []);
     assert.doesNotMatch(html, /<script>/);
     assert.doesNotMatch(html, /<img/);
     assert.match(html, /&lt;script&gt;/);

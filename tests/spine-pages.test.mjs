@@ -31,7 +31,8 @@ const PAGES = [
   ['entry.html?id=carnation-revolution-1974', 'return document.querySelectorAll(".entry-body").length > 0;', 1],
   ['narratives.html', 'return document.querySelectorAll(".narrative-card").length > 0;', 1],
   ['sources.html', 'return document.querySelectorAll(".bib-entry").length > 0;', 0],
-  ['contribute.html', 'return document.querySelectorAll(".contrib .entry-card, .contrib .field").length > 0;', 1],
+  ['contribute.html', 'return document.querySelectorAll(".add-row button").length > 0;', 1],
+  ['review.html', 'return document.querySelectorAll(".queue-list .queue-item, .queue-list button").length > 0;', 1],
 ];
 
 // Everything the page asked the network for, as the browser recorded it.
@@ -141,5 +142,28 @@ test('the form fills its pickers, finds a duplicate and validates, off the spine
     // with no date fails rule 4 in the browser exactly as it does in the CLI.
     const problems = await page.eval('return [...document.querySelectorAll(".entry-errors li")].map((e) => e.textContent).join(" ");');
     assert.ok(problems.length > 0, 'a half-written event has something wrong with it');
+  });
+});
+
+// The source card's citers, which are not in any index a page loads whole
+// since H3b: opening a source costs one request for its own file, and the
+// card says it is loading until that file lands.
+test('the source card fetches its own citer file and draws the rows', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await open(page, url('index.html?source=cshapes-2-0'), 'return document.querySelectorAll(".panel .citers").length > 0;');
+    await waitFor(page, 'return document.querySelectorAll(".panel .citers .actor-row").length > 0;', 'the citer rows');
+    const card = await page.eval(`return {
+      rows: document.querySelectorAll(".panel .citers .actor-row").length,
+      count: Number((document.querySelector(".panel .citers .count") || {}).textContent || 0),
+      more: (document.querySelector('.panel [data-action="all-citers"]') || {}).textContent || "",
+      fetched: performance.getEntriesByType("resource").filter((e) => e.name.includes("/citers-")).length,
+    };`);
+    assert.equal(card.fetched, 1, 'one citer file, for the source that is open');
+    assert.ok(card.count > 1000, `the card says ${card.count} citers`);
+    // A7: the first 200 rows, and the rest one button away.
+    assert.equal(card.rows, 200);
+    assert.match(card.more, /Show the remaining \d+/);
+    await page.eval('return document.querySelector(\'.panel [data-action="all-citers"]\').click();');
+    await waitFor(page, 'return document.querySelectorAll(".panel .citers .actor-row").length > 200;', 'the rest of the rows');
   });
 });

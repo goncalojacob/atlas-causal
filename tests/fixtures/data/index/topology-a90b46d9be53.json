@@ -3,6 +3,7 @@
     {
       "actorType": "person",
       "aliases": [],
+      "citesCount": 1,
       "id": "fixture-actor-one",
       "name": "Fixture Actor One",
       "names": [
@@ -23,6 +24,7 @@
     {
       "actorType": "institution",
       "aliases": [],
+      "citesCount": 1,
       "id": "fixture-actor-two",
       "name": "Fixture Institution Two",
       "names": [
@@ -39,6 +41,7 @@
     {
       "actorType": "polity",
       "aliases": [],
+      "citesCount": 1,
       "id": "fixture-polity-four",
       "name": "Fixture Polity Four",
       "names": [
@@ -54,6 +57,7 @@
     {
       "actorType": "polity",
       "aliases": [],
+      "citesCount": 1,
       "id": "fixture-polity-three",
       "name": "Fixture Polity Three",
       "names": [
@@ -179,6 +183,7 @@
         }
       ],
       "aliases": [],
+      "citesCount": 1,
       "id": "fixture-event-a",
       "place": "fixture-place-a",
       "region": "fixture-lane-1",
@@ -201,6 +206,7 @@
     {
       "actors": [],
       "aliases": [],
+      "citesCount": 1,
       "id": "fixture-event-a2",
       "place": "fixture-place-a2",
       "region": "fixture-lane-1",
@@ -229,6 +235,7 @@
       "aliases": [
         "fixture-event-b-old"
       ],
+      "citesCount": 1,
       "id": "fixture-event-b",
       "place": "fixture-place-b",
       "region": "fixture-lane-1",
@@ -245,6 +252,7 @@
     {
       "actors": [],
       "aliases": [],
+      "citesCount": 1,
       "id": "fixture-event-c",
       "place": "fixture-place-c",
       "region": "fixture-lane-2",
@@ -261,6 +269,7 @@
     {
       "actors": [],
       "aliases": [],
+      "citesCount": 1,
       "id": "fixture-event-d",
       "place": "fixture-place-d",
       "region": "fixture-lane-3",
@@ -277,6 +286,7 @@
     {
       "actors": [],
       "aliases": [],
+      "citesCount": 1,
       "id": "fixture-event-e",
       "place": "fixture-place-e",
       "region": "fixture-lane-2",
@@ -293,6 +303,7 @@
     {
       "actors": [],
       "aliases": [],
+      "citesCount": 1,
       "id": "fixture-event-f",
       "place": null,
       "region": "fixture-lane-3",
@@ -309,6 +320,7 @@
     {
       "actors": [],
       "aliases": [],
+      "citesCount": 1,
       "id": "fixture-event-g",
       "place": "fixture-place-g",
       "region": "fixture-lane-1",
@@ -328,6 +340,7 @@
     {
       "actors": [],
       "aliases": [],
+      "citesCount": 1,
       "id": "fixture-event-h",
       "place": "fixture-place-h",
       "region": "fixture-lane-1",
@@ -344,6 +357,7 @@
     {
       "actors": [],
       "aliases": [],
+      "citesCount": 0,
       "id": "fixture-event-m",
       "place": "fixture-place-m",
       "region": "fixture-lane-1",
@@ -360,6 +374,7 @@
     {
       "actors": [],
       "aliases": [],
+      "citesCount": 1,
       "id": "fixture-event-o",
       "place": "fixture-place-o",
       "region": "fixture-lane-2",
@@ -381,6 +396,7 @@
         }
       ],
       "aliases": [],
+      "citesCount": 1,
       "id": "fixture-event-t",
       "place": "fixture-place-t",
       "region": "fixture-lane-3",
@@ -432,6 +448,7 @@
   "places": [
     {
       "aliases": [],
+      "citesCount": 0,
       "id": "fixture-place-a",
       "name": "Fixture place A",
       "names": [
@@ -454,6 +471,7 @@
     },
     {
       "aliases": [],
+      "citesCount": 0,
       "id": "fixture-place-a2",
       "name": "Fixture place A2",
       "names": [
@@ -472,6 +490,7 @@
     },
     {
       "aliases": [],
+      "citesCount": 0,
       "id": "fixture-place-b",
       "name": "Fixture place B",
       "names": [
@@ -490,6 +509,7 @@
     },
     {
       "aliases": [],
+      "citesCount": 0,
       "id": "fixture-place-c",
       "name": "Fixture place C",
       "names": [
@@ -508,6 +528,7 @@
     },
     {
       "aliases": [],
+      "citesCount": 0,
       "id": "fixture-place-d",
       "name": "Fixture place D",
       "names": [
@@ -526,6 +547,7 @@
     },
     {
       "aliases": [],
+      "citesCount": 0,
       "id": "fixture-place-e",
       "name": "Fixture place E",
       "names": [
@@ -544,6 +566,7 @@
     },
     {
       "aliases": [],
+      "citesCount": 0,
       "id": "fixture-place-g",
       "name": "Fixture place G",
       "names": [
@@ -562,6 +585,7 @@
     },
     {
       "aliases": [],
+      "citesCount": 0,
       "id": "fixture-place-h",
       "name": "Fixture place H",
       "names": [
@@ -580,6 +604,7 @@
     },
     {
       "aliases": [],
+      "citesCount": 0,
       "id": "fixture-place-m",
       "name": "Fixture place M",
       "names": [
@@ -598,6 +623,7 @@
     },
     {
       "aliases": [],
+      "citesCount": 0,
       "id": "fixture-place-o",
       "name": "Fixture place O",
       "names": [
@@ -616,6 +642,7 @@
     },
     {
       "aliases": [],
+      "citesCount": 0,
       "id": "fixture-place-t",
       "name": "Fixture place T",
       "names": [
