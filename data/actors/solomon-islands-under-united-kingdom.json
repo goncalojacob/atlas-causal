@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "solomon-islands-under-united-kingdom",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "gwcode 940"
+    }
+  ],
+  "actorType": "polity",
+  "names": [
+    "Solomon Islands under United Kingdom"
+  ],
+  "summary": "Entity 940 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 3 periods of territorial validity, from 1893 to 1978. The source calls it \"Solomon Islands\"; the names on this record are the ones data/imports/cshapes-actors.json gives it. Its last capital in the dataset is Honiara. The code is mapped onto more than one actor (data/imports/cshapes-actors.json); this record holds the periods before the first cut. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "when": {
+    "start": 1893,
+    "end": 1978
+  },
+  "where": {
+    "lon": 159.949997,
+    "lat": -9.43333,
+    "precision": "city",
+    "label": "Honiara"
+  }
+}

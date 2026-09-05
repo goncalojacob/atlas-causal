@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "libya-under-italy-sardinia-1943",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 465"
+    }
+  ],
+  "actor": "libya-under-italy-sardinia",
+  "presenceType": "state",
+  "dependencyOf": "united-kingdom",
+  "dependencyKind": "occupied",
+  "when": {
+    "start": 1943,
+    "end": 1949,
+    "date": "1943-05-13",
+    "endDate": "1949-11-20"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1933-1945.json",
+      "geo/presences/1946-1974.json"
+    ],
+    "key": "465"
+  },
+  "capital": {
+    "lon": 13.18,
+    "lat": 32.8925,
+    "precision": "city",
+    "label": "Tripoli"
+  },
+  "confidence": "consensus"
+}

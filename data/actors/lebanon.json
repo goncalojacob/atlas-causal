@@ -24,9 +24,9 @@
   "names": [
     "Lebanon"
   ],
-  "summary": "Entity 660 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 3 periods of territorial validity, from 1920 to where the dataset stops, in 2019. Its last capital in the dataset is Beirut. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Entity 660 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1944 to where the dataset stops, in 2019. Its last capital in the dataset is Beirut. The code is mapped onto more than one actor (data/imports/cshapes-actors.json); this record holds the periods from 1944-11-22. This record was written by the import from those fields and asserts nothing the dataset does not.",
   "when": {
-    "start": 1920,
+    "start": 1944,
     "end": null
   },
   "where": {

@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "cambodia-kampuchea-under-france-1893",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 596"
+    }
+  ],
+  "actor": "cambodia-kampuchea-under-france",
+  "presenceType": "state",
+  "dependencyOf": "france",
+  "dependencyKind": "colony",
+  "when": {
+    "start": 1893,
+    "end": 1904,
+    "date": "1893-10-03",
+    "endDate": "1904-02-17"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1886-1913.json"
+    ],
+    "key": "596"
+  },
+  "capital": {
+    "lon": 104.916702,
+    "lat": 11.55,
+    "precision": "city",
+    "label": "Phnom Penh"
+  },
+  "confidence": "consensus"
+}

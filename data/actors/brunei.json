@@ -24,9 +24,9 @@
   "names": [
     "Brunei"
   ],
-  "summary": "Entity 835 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 2 periods of territorial validity, from 1888 to where the dataset stops, in 2019. Its last capital in the dataset is Bandar Seri Begawan. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Entity 835 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1984 to where the dataset stops, in 2019. Its last capital in the dataset is Bandar Seri Begawan. The code is mapped onto more than one actor (data/imports/cshapes-actors.json); this record holds the periods from 1984-01-01. This record was written by the import from those fields and asserts nothing the dataset does not.",
   "when": {
-    "start": 1888,
+    "start": 1984,
     "end": null
   },
   "where": {

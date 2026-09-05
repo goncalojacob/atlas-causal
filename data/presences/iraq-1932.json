@@ -17,24 +17,26 @@
   "sources": [
     {
       "source": "cshapes-2-0",
-      "locator": "fid 487"
+      "locator": "fid 484"
     }
   ],
   "actor": "iraq",
   "presenceType": "state",
-  "dependencyOf": "united-kingdom",
-  "dependencyKind": "mandate",
+  "dependencyOf": null,
+  "dependencyKind": null,
   "when": {
     "start": 1932,
-    "end": 1932,
-    "date": "1932-09-23",
-    "endDate": "1932-10-02"
+    "end": null,
+    "date": "1932-10-03"
   },
   "geometry": {
     "files": [
-      "geo/presences/1914-1932.json"
+      "geo/presences/1914-1932.json",
+      "geo/presences/1933-1945.json",
+      "geo/presences/1946-1974.json",
+      "geo/presences/1975-2019.json"
     ],
-    "key": "487"
+    "key": "484"
   },
   "capital": {
     "lon": 44.39389,

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "malawi-under-united-kingdom-1891",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 403"
+    }
+  ],
+  "actor": "malawi-under-united-kingdom",
+  "presenceType": "state",
+  "dependencyOf": "united-kingdom",
+  "dependencyKind": "protectorate",
+  "when": {
+    "start": 1891,
+    "end": 1953,
+    "date": "1891-06-10",
+    "endDate": "1953-07-31"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1886-1913.json",
+      "geo/presences/1914-1932.json",
+      "geo/presences/1933-1945.json",
+      "geo/presences/1946-1974.json"
+    ],
+    "key": "403"
+  },
+  "capital": {
+    "lon": 33.783329,
+    "lat": -13.98333,
+    "precision": "city",
+    "label": "Lilongwe"
+  },
+  "confidence": "consensus"
+}
