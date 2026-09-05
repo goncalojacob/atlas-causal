@@ -16,7 +16,7 @@ import {
   buildQueue, groupByKind, flagCounts, filterQueue, progressOf, isDraft,
 } from './queue.js';
 import { signRecord, retractRecord, retractionPlan, reviewerProblems, normalizeReviewer, bundleOf } from './sign.js';
-import { saveBundle } from './save.js';
+import { saveBundle, readStatus } from './save.js';
 import { unverified } from './citations.js';
 import { createEditor } from './editor.js';
 import { preparedFor } from '../contribute/bundle.js';
@@ -333,12 +333,39 @@ function render({ topology, review, schemas, citersOf }) {
     paintQueue();
   }
 
+  // The server answers a save as soon as the record files are written and
+  // rebuilds data/index/ behind it, so the line the reviewer is reading says
+  // "rebuilding" until /__status says otherwise. One poll every half second,
+  // and it stops the moment another save writes a new line.
+  let indexWatch = 0;
+  function watchIndex(mine) {
+    const token = (indexWatch += 1);
+    const poll = async () => {
+      if (token !== indexWatch || noteEl.textContent !== mine) return;
+      const status = await readStatus();
+      if (token !== indexWatch || noteEl.textContent !== mine) return;
+      const state = status?.index?.state ?? null;
+      if (state === 'rebuilding') {
+        window.setTimeout(poll, 500);
+        return;
+      }
+      noteEl.textContent = state === 'failed'
+        ? `${mine.replace('The index is rebuilding…', '')}The index could not be rebuilt: ${status.index.message}`
+        : mine.replace('The index is rebuilding…', 'The index has been rebuilt.');
+    };
+    window.setTimeout(poll, 250);
+  }
+
   function say(outcome, what) {
     bundleBox.hidden = outcome.mode !== 'bundle';
     bundleText.textContent = outcome.mode === 'bundle' ? (outcome.text ?? '') : '';
     if (outcome.mode === 'bundle' && !outcome.copied) bundleBox.open = true;
     if (outcome.mode === 'saved') {
-      noteEl.textContent = `${what}: ${outcome.written.map((w) => w.path).join(', ')} written and the index rebuilt.`;
+      const files = outcome.written.map((w) => w.path).join(', ');
+      noteEl.textContent = outcome.indexing
+        ? `${what}: ${files} written. The index is rebuilding…`
+        : `${what}: ${files} written and the index rebuilt.`;
+      if (outcome.indexing) watchIndex(noteEl.textContent);
     } else if (outcome.mode === 'refused') {
       noteEl.textContent = `Nothing was written. ${outcome.message}`;
     } else {
