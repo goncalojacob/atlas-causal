@@ -1,12 +1,17 @@
-// The loader reading the spine: loadSpine() and createAtlasFromSpine(), the
-// second half of H3a (docs/health/h3a-brief.md, A0). The equivalence itself
-// is proved by the seven suites that now run twice — every field a card, a
-// lane, a query or a rule reads (A12) — so what is here is what those suites
-// cannot see: the surface A11 names, the edge tuple expanded back, the
+// The loader reading the spine: loadSpine() and createAtlasFromSpine(), from
+// the second half of H3a (docs/health/h3a-brief.md, A0). Every page reads it
+// since H3b and there is no other graph file since H3c.
+//
+// `topology` here is not a file: it is what `buildTopology` builds in memory
+// out of the records, which is what `buildSpine` projects and what the rules
+// read. Asserting the atlas built from the projection against the atlas built
+// from what was projected is what says the projection drops nothing a reader
+// wants — the seven card, page and query suites made the same point by
+// running twice while both files existed (A12), and they run once now.
+//
+// Beside that: the surface A11 names, the edge tuple expanded back, the
 // fetching discipline, and the two readers that do not go through an atlas at
 // all, search and `retractionPlan`.
-//
-// No page reads the spine yet. H3b moves them over one commit each.
 
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
@@ -16,7 +21,7 @@ import { createAtlasFromSpine, loadSpine } from '../src/data.js';
 import { buildSearchIndex, search, flatten } from '../src/search.js';
 import { retractionPlan } from '../src/review/sign.js';
 import { edgeId } from '../src/vocab.js';
-import { atlasFromSpine, atlasFromTopology, FIXTURE_DATA, ROOT } from './helpers.mjs';
+import { atlasFromTopology, atlasOf, FIXTURE_DATA, ROOT } from './helpers.mjs';
 
 const DATA = path.join(ROOT, 'data');
 const DATASETS = [['the fixtures', FIXTURE_DATA], ['the repository', DATA]];
@@ -52,7 +57,7 @@ const SURFACE = [
 
 for (const [label, dir] of DATASETS) {
   test(`the atlas built from the spine has every member a reader asks for, over ${label}`, async () => {
-    const spine = await atlasFromSpine(dir);
+    const spine = await atlasOf(dir);
     const topology = await atlasFromTopology(dir);
     for (const member of SURFACE) {
       assert.ok(member in spine, `missing ${member}`);
@@ -61,7 +66,7 @@ for (const [label, dir] of DATASETS) {
   });
 
   test(`the same records, the same ids, the same order, over ${label}`, async () => {
-    const spine = await atlasFromSpine(dir);
+    const spine = await atlasOf(dir);
     const topology = await atlasFromTopology(dir);
     for (const map of ['events', 'edges', 'actors', 'places', 'presences', 'relations', 'narratives', 'sources']) {
       assert.deepEqual([...spine[map].keys()], [...topology[map].keys()], map);
@@ -76,7 +81,7 @@ for (const [label, dir] of DATASETS) {
   // three parts `EDGE_ID` matches. An edge that carries an alias or a merge
   // hop is written whole in the spine and keeps the id it was given (A2).
   test(`every edge comes back with its id, its type, its confidence and its status, over ${label}`, async () => {
-    const spine = await atlasFromSpine(dir);
+    const spine = await atlasOf(dir);
     const topology = await atlasFromTopology(dir);
     assert.ok(topology.edges.size > 0);
     for (const [id, edge] of topology.edges) {
@@ -93,7 +98,7 @@ for (const [label, dir] of DATASETS) {
   // What keeps a retracted argument out of consequences and convergence: the
   // fifth slot. The fixtures hold one on purpose.
   test(`a retracted edge resolves and is not walkable, over ${label}`, async () => {
-    const spine = await atlasFromSpine(dir);
+    const spine = await atlasOf(dir);
     const topology = await atlasFromTopology(dir);
     const retracted = [...topology.edges.values()].filter((e) => e.status !== 'active');
     for (const edge of retracted) {
@@ -109,7 +114,7 @@ for (const [label, dir] of DATASETS) {
   // An old link still opens: `aliases` and `supersededBy` are in the spine on
   // every record, empty or not, because they are the hops `resolve()` walks.
   test(`resolve answers the same for every id, alias and tombstone, over ${label}`, async () => {
-    const spine = await atlasFromSpine(dir);
+    const spine = await atlasOf(dir);
     const topology = await atlasFromTopology(dir);
     const shape = (found) => (found ? [found.kind, found.record.id, found.via] : null);
     const ids = new Set();
@@ -132,7 +137,7 @@ for (const [label, dir] of DATASETS) {
   // read off the record on the other. A tombstone cites nothing, which is
   // zero either way.
   test(`citationCount says the same on both paths, over ${label}`, async () => {
-    const spine = await atlasFromSpine(dir);
+    const spine = await atlasOf(dir);
     const topology = await atlasFromTopology(dir);
     let counted = 0;
     for (const [kind, map] of [['event', 'events'], ['actor', 'actors'], ['place', 'places']]) {
@@ -149,7 +154,7 @@ for (const [label, dir] of DATASETS) {
   // topology does; this proves the *atlas* does, which is what the search box
   // is actually handed (search-box.js builds its index off the atlas).
   test(`the search box answers the same off either atlas, over ${label}`, async () => {
-    const spine = await atlasFromSpine(dir);
+    const spine = await atlasOf(dir);
     const topology = await atlasFromTopology(dir);
     const indexOf = (atlas) => buildSearchIndex({
       events: atlas.activeEvents,

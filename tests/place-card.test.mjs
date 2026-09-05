@@ -9,7 +9,7 @@ import path from 'node:path';
 import { placeCardHtml } from '../src/panel/place.js';
 import { esc } from '../src/util/esc.js';
 import { bounds } from '../src/util/dates.js';
-import { ATLAS_BUILDS, ROOT } from './helpers.mjs';
+import { atlasOf, ROOT } from './helpers.mjs';
 
 const dataDir = path.join(ROOT, 'data');
 
@@ -28,39 +28,37 @@ const keys = (html) => [...html.matchAll(/<section class="card-section(?: open)?
 const count = (html, key) => html
   .match(new RegExp(`data-section="${key}"[\\s\\S]*?<span class="count[^"]*">([^<]*)</span>`))?.[1] ?? null;
 
-// Every test twice: the card cannot tell whether it was handed an atlas
-// built from the topology or one built from the spine (A12).
-for (const [label, buildAtlas] of ATLAS_BUILDS) {
-  const atlas = await buildAtlas(dataDir);
-  const ctx = context(atlas);
+// The card cannot tell what the atlas it is handed was read out of, which is
+// why this suite ran twice between H3a-2 and H3c (A12). One file now.
+const atlas = await atlasOf(dataDir);
+const ctx = context(atlas);
 
-  test(`the place card is sections with counts, opening on what happened there, over ${label}`, () => {
-    const html = placeCardHtml(ctx, atlas.places.get('lisbon'), state());
-    assert.deepEqual(keys(html), ['events', 'actors', 'sources']);
-    assert.match(html, /<section class="card-section open" data-section="events">/);
-    assert.equal(count(html, 'events'), String((atlas.eventsByPlace.get('lisbon') ?? []).length));
-    // A place is a geographic fact and is exempt from "every node cites a
-    // source" (M9), so a zero here is the record being right, not missing.
-    assert.equal(count(html, 'sources'), String(atlas.citationCount('place', 'lisbon')));
-    assert.match(html, /A place is a geographic fact and need cite nothing\./);
-  });
+test('the place card is sections with counts, opening on what happened there', () => {
+  const html = placeCardHtml(ctx, atlas.places.get('lisbon'), state());
+  assert.deepEqual(keys(html), ['events', 'actors', 'sources']);
+  assert.match(html, /<section class="card-section open" data-section="events">/);
+  assert.equal(count(html, 'events'), String((atlas.eventsByPlace.get('lisbon') ?? []).length));
+  // A place is a geographic fact and is exempt from "every node cites a
+  // source" (M9), so a zero here is the record being right, not missing.
+  assert.equal(count(html, 'sources'), String(atlas.citationCount('place', 'lisbon')));
+  assert.match(html, /A place is a geographic fact and need cite nothing\./);
+});
 
-  test(`a place reached from a source card opens its sources, over ${label}`, () => {
-    const place = atlas.places.get('lisbon');
-    const fromSource = placeCardHtml(ctx, place, state({ source: 'maxwell-1995-making-of-portuguese-democracy' }));
-    assert.match(fromSource, /<section class="card-section open" data-section="sources">/);
-    const remembered = placeCardHtml(ctx, place, state(), { remembered: 'actors' });
-    assert.match(remembered, /<section class="card-section open" data-section="actors">/);
-  });
+test('a place reached from a source card opens its sources', () => {
+  const place = atlas.places.get('lisbon');
+  const fromSource = placeCardHtml(ctx, place, state({ source: 'maxwell-1995-making-of-portuguese-democracy' }));
+  assert.match(fromSource, /<section class="card-section open" data-section="sources">/);
+  const remembered = placeCardHtml(ctx, place, state(), { remembered: 'actors' });
+  assert.match(remembered, /<section class="card-section open" data-section="actors">/);
+});
 
-  test(`nothing a place carries reaches the card unescaped, over ${label}`, () => {
-    const nasty = {
-      id: 'x', name: '<img onerror="a">', names: ['<img onerror="a">', '<b>also</b>'],
-      where: { lon: 1, lat: 2, precision: 'city' }, region: 'europe', status: 'active',
-    };
-    const html = placeCardHtml({ ...ctx, atlas: { ...atlas, eventsByPlace: new Map() } }, nasty, state());
-    assert.doesNotMatch(html, /<img/);
-    assert.doesNotMatch(html, /<b>also<\/b>/);
-    assert.match(html, /&lt;img onerror=/);
-  });
-}
+test('nothing a place carries reaches the card unescaped', () => {
+  const nasty = {
+    id: 'x', name: '<img onerror="a">', names: ['<img onerror="a">', '<b>also</b>'],
+    where: { lon: 1, lat: 2, precision: 'city' }, region: 'europe', status: 'active',
+  };
+  const html = placeCardHtml({ ...ctx, atlas: { ...atlas, eventsByPlace: new Map() } }, nasty, state());
+  assert.doesNotMatch(html, /<img/);
+  assert.doesNotMatch(html, /<b>also<\/b>/);
+  assert.match(html, /&lt;img onerror=/);
+});

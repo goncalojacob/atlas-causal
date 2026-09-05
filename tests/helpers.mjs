@@ -4,6 +4,8 @@ import path from 'node:path';
 import { readFile, readdir } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { createAtlas, createAtlasFromSpine } from '../src/data.js';
+import { buildTopology } from '../src/validate/core.js';
+import { createRegionDeriver } from '../src/util/geo.js';
 import { readSchemaFiles, readRecords, readRegions, readRegionPolygons } from '../tools/lib/read.mjs';
 
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -14,15 +16,20 @@ export function clone(value) {
   return JSON.parse(JSON.stringify(value));
 }
 
-// ─── The two ways to build an atlas ────────────────────────────────────────
+// ─── The atlas ─────────────────────────────────────────────────────────────
 //
-// From the topology, as every page does today, and from the spine, as H3b
-// will. Every suite that builds a real atlas runs over both: the round trip
-// is then proved by the assertions those suites already make — every field a
-// card, a lane, a query or a rule reads — rather than by a hand-written list
-// of fields, which drifts (docs/health/h3a-brief.md, A12).
+// One way to build one since H3c: out of the spine, which is the only graph
+// file the index emits. Between H3a-2 and H3b every suite here ran twice, so
+// that the round trip was proved by the assertions those suites already
+// make rather than by a hand-written field list (h3a-brief, A12); the second
+// build went with the file it read.
 //
-// The sources index is the same file on both paths; it is not in the spine.
+// What the projection is still checked against is `buildTopology`'s own
+// output — `topologyOf` below — which is what `buildSpine` projects and what
+// the rules read. That is a shape the index builds in memory on every run
+// and no longer writes anywhere.
+//
+// The sources index is not in the spine; it is read beside it.
 
 // A card fetches the record for its own text. Nothing here does, and a card
 // that started to would be asking the network in a unit test.
@@ -51,15 +58,9 @@ export async function citersOnDisk(dataDir) {
   return rows;
 }
 
-export async function atlasFromTopology(dataDir, options = {}) {
-  const { manifest, read } = await indexOf(dataDir);
-  const [topology, sources, citers] = await Promise.all([
-    read(manifest.files.topology), read(manifest.files.sources), citersOnDisk(dataDir),
-  ]);
-  return createAtlas({ manifest, topology, sources: sources.sources, citers, fetchJson: refuse, ...options });
-}
-
-export async function atlasFromSpine(dataDir, options = {}) {
+// The atlas as the site builds it: the spine and the sources index the
+// manifest names, with the citer rows seeded.
+export async function atlasOf(dataDir, options = {}) {
   const { manifest, read } = await indexOf(dataDir);
   const [spine, sources, citers] = await Promise.all([
     read(manifest.files.spine), read(manifest.files.sources), citersOnDisk(dataDir),
@@ -67,12 +68,28 @@ export async function atlasFromSpine(dataDir, options = {}) {
   return createAtlasFromSpine({ manifest, spine, sources: sources.sources, citers, fetchJson: refuse, ...options });
 }
 
-// `for (const [label, buildAtlas] of ATLAS_BUILDS)` — the label goes in the
-// test's name, so a failure says which of the two files it came from.
-export const ATLAS_BUILDS = Object.freeze([
-  Object.freeze(['the topology', atlasFromTopology]),
-  Object.freeze(['the spine', atlasFromSpine]),
-]);
+// The in-memory build the spine is a projection of, read from the records
+// themselves: the reference an assertion about the projection is made
+// against. No file holds this shape.
+export async function topologyOf(dataDir) {
+  const { entries, problems } = await readRecords(dataDir);
+  if (problems.length) throw new Error(`record problems: ${JSON.stringify(problems)}`);
+  const polygons = await readRegionPolygons(dataDir);
+  return buildTopology(entries.map((e) => e.record), await readRegions(dataDir), {
+    deriveRegion: polygons ? createRegionDeriver(polygons) : undefined,
+  });
+}
+
+// An atlas over that in-memory build, for the same purpose. `createAtlas` is
+// the assembly `createAtlasFromSpine` delegates to once the spine's lists are
+// expanded, so this is the atlas with one step of the projection taken out.
+export async function atlasFromTopology(dataDir, options = {}) {
+  const { manifest, read } = await indexOf(dataDir);
+  const [topology, sources, citers] = await Promise.all([
+    topologyOf(dataDir), read(manifest.files.sources), citersOnDisk(dataDir),
+  ]);
+  return createAtlas({ manifest, topology, sources: sources.sources, citers, fetchJson: refuse, ...options });
+}
 
 let schemaCache = null;
 export async function schemas() {
