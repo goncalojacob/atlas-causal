@@ -1421,7 +1421,7 @@
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
         }
       ],
-      "citationCount": 964,
+      "citationCount": 972,
       "citations": [
         {
           "dissent": false,
@@ -1503,6 +1503,12 @@
         },
         {
           "dissent": false,
+          "id": "bahamas-under-united-kingdom",
+          "kind": "actor",
+          "locator": "gwcode 31"
+        },
+        {
+          "dissent": false,
           "id": "bahrain",
           "kind": "actor",
           "locator": "gwcode 692"
@@ -1521,6 +1527,12 @@
         },
         {
           "dissent": false,
+          "id": "barbados-under-united-kingdom",
+          "kind": "actor",
+          "locator": "gwcode 53"
+        },
+        {
+          "dissent": false,
           "id": "belarus-byelorussia",
           "kind": "actor",
           "locator": "gwcode 370"
@@ -1534,6 +1546,12 @@
         {
           "dissent": false,
           "id": "belize",
+          "kind": "actor",
+          "locator": "gwcode 80"
+        },
+        {
+          "dissent": false,
+          "id": "belize-under-united-kingdom",
           "kind": "actor",
           "locator": "gwcode 80"
         },
@@ -1738,6 +1756,12 @@
         {
           "dissent": false,
           "id": "cuba",
+          "kind": "actor",
+          "locator": "gwcode 40"
+        },
+        {
+          "dissent": false,
+          "id": "cuba-under-spain",
           "kind": "actor",
           "locator": "gwcode 40"
         },
@@ -1995,6 +2019,12 @@
         },
         {
           "dissent": false,
+          "id": "guyana-under-united-kingdom",
+          "kind": "actor",
+          "locator": "gwcode 110"
+        },
+        {
+          "dissent": false,
           "id": "haiti",
           "kind": "actor",
           "locator": "gwcode 41"
@@ -2074,6 +2104,12 @@
         {
           "dissent": false,
           "id": "jamaica",
+          "kind": "actor",
+          "locator": "gwcode 51"
+        },
+        {
+          "dissent": false,
+          "id": "jamaica-under-united-kingdom",
           "kind": "actor",
           "locator": "gwcode 51"
         },
@@ -2709,6 +2745,12 @@
         },
         {
           "dissent": false,
+          "id": "surinam-under-netherlands",
+          "kind": "actor",
+          "locator": "gwcode 115"
+        },
+        {
+          "dissent": false,
           "id": "swaziland-eswatini",
           "kind": "actor",
           "locator": "gwcode 572"
@@ -2782,6 +2824,12 @@
         {
           "dissent": false,
           "id": "trinidad-and-tobago",
+          "kind": "actor",
+          "locator": "gwcode 52"
+        },
+        {
+          "dissent": false,
+          "id": "trinidad-and-tobago-under-united-kingdom",
           "kind": "actor",
           "locator": "gwcode 52"
         },
@@ -3117,15 +3165,15 @@
         },
         {
           "dissent": false,
-          "id": "bahamas-1886",
-          "kind": "presence",
-          "locator": "fid 11"
-        },
-        {
-          "dissent": false,
           "id": "bahamas-1973",
           "kind": "presence",
           "locator": "fid 12"
+        },
+        {
+          "dissent": false,
+          "id": "bahamas-under-united-kingdom-1886",
+          "kind": "presence",
+          "locator": "fid 11"
         },
         {
           "dissent": false,
@@ -3141,15 +3189,15 @@
         },
         {
           "dissent": false,
-          "id": "barbados-1886",
-          "kind": "presence",
-          "locator": "fid 24"
-        },
-        {
-          "dissent": false,
           "id": "barbados-1966",
           "kind": "presence",
           "locator": "fid 25"
+        },
+        {
+          "dissent": false,
+          "id": "barbados-under-united-kingdom-1886",
+          "kind": "presence",
+          "locator": "fid 24"
         },
         {
           "dissent": false,
@@ -3165,21 +3213,21 @@
         },
         {
           "dissent": false,
-          "id": "belize-1886",
+          "id": "belize-1981",
+          "kind": "presence",
+          "locator": "fid 31"
+        },
+        {
+          "dissent": false,
+          "id": "belize-under-united-kingdom-1886",
           "kind": "presence",
           "locator": "fid 29"
         },
         {
           "dissent": false,
-          "id": "belize-1970",
+          "id": "belize-under-united-kingdom-1970",
           "kind": "presence",
           "locator": "fid 30"
-        },
-        {
-          "dissent": false,
-          "id": "belize-1981",
-          "kind": "presence",
-          "locator": "fid 31"
         },
         {
           "dissent": false,
@@ -3861,12 +3909,6 @@
         },
         {
           "dissent": false,
-          "id": "cuba-1886",
-          "kind": "presence",
-          "locator": "fid 13"
-        },
-        {
-          "dissent": false,
           "id": "cuba-1898",
           "kind": "presence",
           "locator": "fid 15"
@@ -3876,6 +3918,12 @@
           "id": "cuba-1902",
           "kind": "presence",
           "locator": "fid 14"
+        },
+        {
+          "dissent": false,
+          "id": "cuba-under-spain-1886",
+          "kind": "presence",
+          "locator": "fid 13"
         },
         {
           "dissent": false,
@@ -4527,15 +4575,15 @@
         },
         {
           "dissent": false,
-          "id": "guyana-1886",
-          "kind": "presence",
-          "locator": "fid 42"
-        },
-        {
-          "dissent": false,
           "id": "guyana-1966",
           "kind": "presence",
           "locator": "fid 43"
+        },
+        {
+          "dissent": false,
+          "id": "guyana-under-united-kingdom-1886",
+          "kind": "presence",
+          "locator": "fid 42"
         },
         {
           "dissent": false,
@@ -4779,15 +4827,15 @@
         },
         {
           "dissent": false,
-          "id": "jamaica-1886",
-          "kind": "presence",
-          "locator": "fid 20"
-        },
-        {
-          "dissent": false,
           "id": "jamaica-1962",
           "kind": "presence",
           "locator": "fid 21"
+        },
+        {
+          "dissent": false,
+          "id": "jamaica-under-united-kingdom-1886",
+          "kind": "presence",
+          "locator": "fid 20"
         },
         {
           "dissent": false,
@@ -6579,21 +6627,21 @@
         },
         {
           "dissent": false,
-          "id": "surinam-1886",
+          "id": "surinam-1975",
+          "kind": "presence",
+          "locator": "fid 46"
+        },
+        {
+          "dissent": false,
+          "id": "surinam-under-netherlands-1886",
           "kind": "presence",
           "locator": "fid 44"
         },
         {
           "dissent": false,
-          "id": "surinam-1954",
+          "id": "surinam-under-netherlands-1954",
           "kind": "presence",
           "locator": "fid 45"
-        },
-        {
-          "dissent": false,
-          "id": "surinam-1975",
-          "kind": "presence",
-          "locator": "fid 46"
         },
         {
           "dissent": false,
@@ -6789,15 +6837,15 @@
         },
         {
           "dissent": false,
-          "id": "trinidad-and-tobago-1886",
-          "kind": "presence",
-          "locator": "fid 22"
-        },
-        {
-          "dissent": false,
           "id": "trinidad-and-tobago-1962",
           "kind": "presence",
           "locator": "fid 23"
+        },
+        {
+          "dissent": false,
+          "id": "trinidad-and-tobago-under-united-kingdom-1886",
+          "kind": "presence",
+          "locator": "fid 22"
         },
         {
           "dissent": false,

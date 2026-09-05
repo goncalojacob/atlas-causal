@@ -2,9 +2,116 @@
   "schema": 1,
   "source": "cshapes-2-0",
   "entries": {
+    "31": {
+      "actor": "bahamas-under-united-kingdom",
+      "names": [
+        "Bahamas under United Kingdom"
+      ],
+      "splits": [
+        {
+          "from": "1973-07-10",
+          "actor": "bahamas"
+        }
+      ],
+      "note": "CShapes holds 31 as a colony of United Kingdom to 1973-07-09; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
+    },
+    "40": {
+      "actor": "cuba-under-spain",
+      "names": [
+        "Cuba under Spain"
+      ],
+      "splits": [
+        {
+          "from": "1898-12-10",
+          "actor": "cuba"
+        }
+      ],
+      "note": "CShapes holds 40 as a colony of Spain to 1898-12-09; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had. Earlier than its first independent date, 1902-05-20: the occupation between the two (occupied 1898-12-10..1902-05-19) is the state's own record, not the colony's."
+    },
+    "51": {
+      "actor": "jamaica-under-united-kingdom",
+      "names": [
+        "Jamaica under United Kingdom"
+      ],
+      "splits": [
+        {
+          "from": "1962-08-06",
+          "actor": "jamaica"
+        }
+      ],
+      "note": "CShapes holds 51 as a colony of United Kingdom to 1962-08-05; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
+    },
+    "52": {
+      "actor": "trinidad-and-tobago-under-united-kingdom",
+      "names": [
+        "Trinidad and Tobago under United Kingdom"
+      ],
+      "splits": [
+        {
+          "from": "1962-08-31",
+          "actor": "trinidad-and-tobago"
+        }
+      ],
+      "note": "CShapes holds 52 as a colony of United Kingdom to 1962-08-30; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
+    },
+    "53": {
+      "actor": "barbados-under-united-kingdom",
+      "names": [
+        "Barbados under United Kingdom"
+      ],
+      "splits": [
+        {
+          "from": "1966-11-30",
+          "actor": "barbados"
+        }
+      ],
+      "note": "CShapes holds 53 as a colony of United Kingdom to 1966-11-29; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
+    },
+    "80": {
+      "actor": "belize-under-united-kingdom",
+      "names": [
+        "Belize under United Kingdom"
+      ],
+      "splits": [
+        {
+          "from": "1981-09-21",
+          "actor": "belize"
+        }
+      ],
+      "note": "CShapes holds 80 as a colony of United Kingdom to 1981-09-20; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
+    },
+    "110": {
+      "actor": "guyana-under-united-kingdom",
+      "names": [
+        "Guyana under United Kingdom"
+      ],
+      "splits": [
+        {
+          "from": "1966-05-26",
+          "actor": "guyana"
+        }
+      ],
+      "note": "CShapes holds 110 as a colony of United Kingdom to 1966-05-25; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
+    },
+    "115": {
+      "actor": "surinam-under-netherlands",
+      "names": [
+        "Surinam under Netherlands"
+      ],
+      "splits": [
+        {
+          "from": "1975-11-25",
+          "actor": "surinam"
+        }
+      ],
+      "note": "CShapes holds 115 as a colony of Netherlands to 1975-11-24; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
+    },
     "750": {
       "actor": "british-india",
-      "names": ["British India", "India (British)"],
+      "names": [
+        "British India",
+        "India (British)"
+      ],
       "splits": [
         {
           "from": "1947-08-15",
@@ -16,7 +123,10 @@
     },
     "850": {
       "actor": "dutch-east-indies",
-      "names": ["Dutch East Indies", "Netherlands East Indies"],
+      "names": [
+        "Dutch East Indies",
+        "Netherlands East Indies"
+      ],
       "splits": [
         {
           "from": "1945-08-17",

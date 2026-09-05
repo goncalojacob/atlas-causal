@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "id": "belize-1886",
+  "id": "surinam-under-netherlands-1886",
   "kind": "presence",
   "status": "active",
   "supersededBy": null,
@@ -12,23 +12,23 @@
     }
   ],
   "license": "CC-BY-NC-SA-4.0",
-  "created": "2026-09-02",
+  "created": "2026-09-05",
   "revised": null,
   "sources": [
     {
       "source": "cshapes-2-0",
-      "locator": "fid 29"
+      "locator": "fid 44"
     }
   ],
-  "actor": "belize",
+  "actor": "surinam-under-netherlands",
   "presenceType": "state",
-  "dependencyOf": "united-kingdom",
+  "dependencyOf": "netherlands",
   "dependencyKind": "colony",
   "when": {
     "start": 1886,
-    "end": 1970,
+    "end": 1954,
     "date": "1886-01-01",
-    "endDate": "1970-08-02"
+    "endDate": "1954-12-14"
   },
   "geometry": {
     "files": [
@@ -37,13 +37,13 @@
       "geo/presences/1933-1945.json",
       "geo/presences/1946-1974.json"
     ],
-    "key": "29"
+    "key": "44"
   },
   "capital": {
-    "lon": -88.188374,
-    "lat": 17.49871,
+    "lon": -55.166672,
+    "lat": 5.83333,
     "precision": "city",
-    "label": "Belize City"
+    "label": "Paramaribo"
   },
   "confidence": "consensus"
 }

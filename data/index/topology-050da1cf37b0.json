@@ -352,6 +352,21 @@
       "supersededBy": null,
       "when": {
         "end": null,
+        "start": 1973
+      }
+    },
+    {
+      "actorType": "polity",
+      "aliases": [],
+      "id": "bahamas-under-united-kingdom",
+      "name": "Bahamas under United Kingdom",
+      "names": [
+        "Bahamas under United Kingdom"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": 1973,
         "start": 1886
       }
     },
@@ -439,6 +454,21 @@
       "supersededBy": null,
       "when": {
         "end": null,
+        "start": 1966
+      }
+    },
+    {
+      "actorType": "polity",
+      "aliases": [],
+      "id": "barbados-under-united-kingdom",
+      "name": "Barbados under United Kingdom",
+      "names": [
+        "Barbados under United Kingdom"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": 1966,
         "start": 1886
       }
     },
@@ -484,6 +514,21 @@
       "supersededBy": null,
       "when": {
         "end": null,
+        "start": 1981
+      }
+    },
+    {
+      "actorType": "polity",
+      "aliases": [],
+      "id": "belize-under-united-kingdom",
+      "name": "Belize under United Kingdom",
+      "names": [
+        "Belize under United Kingdom"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": 1981,
         "start": 1886
       }
     },
@@ -1137,6 +1182,21 @@
       "supersededBy": null,
       "when": {
         "end": null,
+        "start": 1898
+      }
+    },
+    {
+      "actorType": "polity",
+      "aliases": [],
+      "id": "cuba-under-spain",
+      "name": "Cuba under Spain",
+      "names": [
+        "Cuba under Spain"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": 1898,
         "start": 1886
       }
     },
@@ -1987,6 +2047,21 @@
       "supersededBy": null,
       "when": {
         "end": null,
+        "start": 1966
+      }
+    },
+    {
+      "actorType": "polity",
+      "aliases": [],
+      "id": "guyana-under-united-kingdom",
+      "name": "Guyana under United Kingdom",
+      "names": [
+        "Guyana under United Kingdom"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": 1966,
         "start": 1886
       }
     },
@@ -2285,6 +2360,21 @@
       "supersededBy": null,
       "when": {
         "end": null,
+        "start": 1962
+      }
+    },
+    {
+      "actorType": "polity",
+      "aliases": [],
+      "id": "jamaica-under-united-kingdom",
+      "name": "Jamaica under United Kingdom",
+      "names": [
+        "Jamaica under United Kingdom"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": 1962,
         "start": 1886
       }
     },
@@ -4613,6 +4703,21 @@
       "supersededBy": null,
       "when": {
         "end": null,
+        "start": 1975
+      }
+    },
+    {
+      "actorType": "polity",
+      "aliases": [],
+      "id": "surinam-under-netherlands",
+      "name": "Surinam under Netherlands",
+      "names": [
+        "Surinam under Netherlands"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": 1975,
         "start": 1886
       }
     },
@@ -4829,6 +4934,21 @@
       "supersededBy": null,
       "when": {
         "end": null,
+        "start": 1962
+      }
+    },
+    {
+      "actorType": "polity",
+      "aliases": [],
+      "id": "trinidad-and-tobago-under-united-kingdom",
+      "name": "Trinidad and Tobago under United Kingdom",
+      "names": [
+        "Trinidad and Tobago under United Kingdom"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": 1962,
         "start": 1886
       }
     },
@@ -16541,38 +16661,6 @@
         "precision": "city"
       },
       "confidence": "consensus",
-      "dependencyKind": "colony",
-      "dependencyOf": "united-kingdom",
-      "geometry": {
-        "files": [
-          "geo/presences/1886-1913.json",
-          "geo/presences/1914-1932.json",
-          "geo/presences/1933-1945.json",
-          "geo/presences/1946-1974.json"
-        ],
-        "key": "11"
-      },
-      "id": "bahamas-1886",
-      "presenceType": "state",
-      "status": "active",
-      "supersededBy": null,
-      "when": {
-        "date": "1886-01-01",
-        "end": 1973,
-        "endDate": "1973-07-09",
-        "start": 1886
-      }
-    },
-    {
-      "actor": "bahamas",
-      "aliases": [],
-      "capital": {
-        "label": "Nassau",
-        "lat": 25.07735,
-        "lon": -77.343003,
-        "precision": "city"
-      },
-      "confidence": "consensus",
       "dependencyKind": null,
       "dependencyOf": null,
       "geometry": {
@@ -16590,6 +16678,38 @@
         "date": "1973-07-10",
         "end": null,
         "start": 1973
+      }
+    },
+    {
+      "actor": "bahamas-under-united-kingdom",
+      "aliases": [],
+      "capital": {
+        "label": "Nassau",
+        "lat": 25.07735,
+        "lon": -77.343003,
+        "precision": "city"
+      },
+      "confidence": "consensus",
+      "dependencyKind": "colony",
+      "dependencyOf": "united-kingdom",
+      "geometry": {
+        "files": [
+          "geo/presences/1886-1913.json",
+          "geo/presences/1914-1932.json",
+          "geo/presences/1933-1945.json",
+          "geo/presences/1946-1974.json"
+        ],
+        "key": "11"
+      },
+      "id": "bahamas-under-united-kingdom-1886",
+      "presenceType": "state",
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "date": "1886-01-01",
+        "end": 1973,
+        "endDate": "1973-07-09",
+        "start": 1886
       }
     },
     {
@@ -16660,38 +16780,6 @@
         "precision": "city"
       },
       "confidence": "consensus",
-      "dependencyKind": "colony",
-      "dependencyOf": "united-kingdom",
-      "geometry": {
-        "files": [
-          "geo/presences/1886-1913.json",
-          "geo/presences/1914-1932.json",
-          "geo/presences/1933-1945.json",
-          "geo/presences/1946-1974.json"
-        ],
-        "key": "24"
-      },
-      "id": "barbados-1886",
-      "presenceType": "state",
-      "status": "active",
-      "supersededBy": null,
-      "when": {
-        "date": "1886-01-01",
-        "end": 1966,
-        "endDate": "1966-11-29",
-        "start": 1886
-      }
-    },
-    {
-      "actor": "barbados",
-      "aliases": [],
-      "capital": {
-        "label": "Bridgetown",
-        "lat": 13.1,
-        "lon": -59.616661,
-        "precision": "city"
-      },
-      "confidence": "consensus",
       "dependencyKind": null,
       "dependencyOf": null,
       "geometry": {
@@ -16709,6 +16797,38 @@
         "date": "1966-11-30",
         "end": null,
         "start": 1966
+      }
+    },
+    {
+      "actor": "barbados-under-united-kingdom",
+      "aliases": [],
+      "capital": {
+        "label": "Bridgetown",
+        "lat": 13.1,
+        "lon": -59.616661,
+        "precision": "city"
+      },
+      "confidence": "consensus",
+      "dependencyKind": "colony",
+      "dependencyOf": "united-kingdom",
+      "geometry": {
+        "files": [
+          "geo/presences/1886-1913.json",
+          "geo/presences/1914-1932.json",
+          "geo/presences/1933-1945.json",
+          "geo/presences/1946-1974.json"
+        ],
+        "key": "24"
+      },
+      "id": "barbados-under-united-kingdom-1886",
+      "presenceType": "state",
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "date": "1886-01-01",
+        "end": 1966,
+        "endDate": "1966-11-29",
+        "start": 1886
       }
     },
     {
@@ -16775,68 +16895,6 @@
       "actor": "belize",
       "aliases": [],
       "capital": {
-        "label": "Belize City",
-        "lat": 17.49871,
-        "lon": -88.188374,
-        "precision": "city"
-      },
-      "confidence": "consensus",
-      "dependencyKind": "colony",
-      "dependencyOf": "united-kingdom",
-      "geometry": {
-        "files": [
-          "geo/presences/1886-1913.json",
-          "geo/presences/1914-1932.json",
-          "geo/presences/1933-1945.json",
-          "geo/presences/1946-1974.json"
-        ],
-        "key": "29"
-      },
-      "id": "belize-1886",
-      "presenceType": "state",
-      "status": "active",
-      "supersededBy": null,
-      "when": {
-        "date": "1886-01-01",
-        "end": 1970,
-        "endDate": "1970-08-02",
-        "start": 1886
-      }
-    },
-    {
-      "actor": "belize",
-      "aliases": [],
-      "capital": {
-        "label": "Belmopan",
-        "lat": 17.25,
-        "lon": -88.76667,
-        "precision": "city"
-      },
-      "confidence": "consensus",
-      "dependencyKind": "colony",
-      "dependencyOf": "united-kingdom",
-      "geometry": {
-        "files": [
-          "geo/presences/1946-1974.json",
-          "geo/presences/1975-2019.json"
-        ],
-        "key": "30"
-      },
-      "id": "belize-1970",
-      "presenceType": "state",
-      "status": "active",
-      "supersededBy": null,
-      "when": {
-        "date": "1970-08-03",
-        "end": 1981,
-        "endDate": "1981-09-20",
-        "start": 1970
-      }
-    },
-    {
-      "actor": "belize",
-      "aliases": [],
-      "capital": {
         "label": "Belmopan",
         "lat": 17.25,
         "lon": -88.76667,
@@ -16859,6 +16917,68 @@
         "date": "1981-09-21",
         "end": null,
         "start": 1981
+      }
+    },
+    {
+      "actor": "belize-under-united-kingdom",
+      "aliases": [],
+      "capital": {
+        "label": "Belize City",
+        "lat": 17.49871,
+        "lon": -88.188374,
+        "precision": "city"
+      },
+      "confidence": "consensus",
+      "dependencyKind": "colony",
+      "dependencyOf": "united-kingdom",
+      "geometry": {
+        "files": [
+          "geo/presences/1886-1913.json",
+          "geo/presences/1914-1932.json",
+          "geo/presences/1933-1945.json",
+          "geo/presences/1946-1974.json"
+        ],
+        "key": "29"
+      },
+      "id": "belize-under-united-kingdom-1886",
+      "presenceType": "state",
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "date": "1886-01-01",
+        "end": 1970,
+        "endDate": "1970-08-02",
+        "start": 1886
+      }
+    },
+    {
+      "actor": "belize-under-united-kingdom",
+      "aliases": [],
+      "capital": {
+        "label": "Belmopan",
+        "lat": 17.25,
+        "lon": -88.76667,
+        "precision": "city"
+      },
+      "confidence": "consensus",
+      "dependencyKind": "colony",
+      "dependencyOf": "united-kingdom",
+      "geometry": {
+        "files": [
+          "geo/presences/1946-1974.json",
+          "geo/presences/1975-2019.json"
+        ],
+        "key": "30"
+      },
+      "id": "belize-under-united-kingdom-1970",
+      "presenceType": "state",
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "date": "1970-08-03",
+        "end": 1981,
+        "endDate": "1981-09-20",
+        "start": 1970
       }
     },
     {
@@ -20216,35 +20336,6 @@
         "precision": "city"
       },
       "confidence": "consensus",
-      "dependencyKind": "colony",
-      "dependencyOf": "spain",
-      "geometry": {
-        "files": [
-          "geo/presences/1886-1913.json"
-        ],
-        "key": "13"
-      },
-      "id": "cuba-1886",
-      "presenceType": "state",
-      "status": "active",
-      "supersededBy": null,
-      "when": {
-        "date": "1886-01-01",
-        "end": 1898,
-        "endDate": "1898-12-09",
-        "start": 1886
-      }
-    },
-    {
-      "actor": "cuba",
-      "aliases": [],
-      "capital": {
-        "label": "Havana",
-        "lat": 23.13194,
-        "lon": -82.364166,
-        "precision": "city"
-      },
-      "confidence": "consensus",
       "dependencyKind": "occupied",
       "dependencyOf": "united-states-of-america",
       "geometry": {
@@ -20294,6 +20385,35 @@
         "date": "1902-05-20",
         "end": null,
         "start": 1902
+      }
+    },
+    {
+      "actor": "cuba-under-spain",
+      "aliases": [],
+      "capital": {
+        "label": "Havana",
+        "lat": 23.13194,
+        "lon": -82.364166,
+        "precision": "city"
+      },
+      "confidence": "consensus",
+      "dependencyKind": "colony",
+      "dependencyOf": "spain",
+      "geometry": {
+        "files": [
+          "geo/presences/1886-1913.json"
+        ],
+        "key": "13"
+      },
+      "id": "cuba-under-spain-1886",
+      "presenceType": "state",
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "date": "1886-01-01",
+        "end": 1898,
+        "endDate": "1898-12-09",
+        "start": 1886
       }
     },
     {
@@ -23521,38 +23641,6 @@
         "precision": "city"
       },
       "confidence": "consensus",
-      "dependencyKind": "colony",
-      "dependencyOf": "united-kingdom",
-      "geometry": {
-        "files": [
-          "geo/presences/1886-1913.json",
-          "geo/presences/1914-1932.json",
-          "geo/presences/1933-1945.json",
-          "geo/presences/1946-1974.json"
-        ],
-        "key": "42"
-      },
-      "id": "guyana-1886",
-      "presenceType": "state",
-      "status": "active",
-      "supersededBy": null,
-      "when": {
-        "date": "1886-01-01",
-        "end": 1966,
-        "endDate": "1966-05-25",
-        "start": 1886
-      }
-    },
-    {
-      "actor": "guyana",
-      "aliases": [],
-      "capital": {
-        "label": "Georgetown",
-        "lat": 6.8,
-        "lon": -58.166672,
-        "precision": "city"
-      },
-      "confidence": "consensus",
       "dependencyKind": null,
       "dependencyOf": null,
       "geometry": {
@@ -23570,6 +23658,38 @@
         "date": "1966-05-26",
         "end": null,
         "start": 1966
+      }
+    },
+    {
+      "actor": "guyana-under-united-kingdom",
+      "aliases": [],
+      "capital": {
+        "label": "Georgetown",
+        "lat": 6.8,
+        "lon": -58.166672,
+        "precision": "city"
+      },
+      "confidence": "consensus",
+      "dependencyKind": "colony",
+      "dependencyOf": "united-kingdom",
+      "geometry": {
+        "files": [
+          "geo/presences/1886-1913.json",
+          "geo/presences/1914-1932.json",
+          "geo/presences/1933-1945.json",
+          "geo/presences/1946-1974.json"
+        ],
+        "key": "42"
+      },
+      "id": "guyana-under-united-kingdom-1886",
+      "presenceType": "state",
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "date": "1886-01-01",
+        "end": 1966,
+        "endDate": "1966-05-25",
+        "start": 1886
       }
     },
     {
@@ -24772,38 +24892,6 @@
         "precision": "city"
       },
       "confidence": "consensus",
-      "dependencyKind": "colony",
-      "dependencyOf": "united-kingdom",
-      "geometry": {
-        "files": [
-          "geo/presences/1886-1913.json",
-          "geo/presences/1914-1932.json",
-          "geo/presences/1933-1945.json",
-          "geo/presences/1946-1974.json"
-        ],
-        "key": "20"
-      },
-      "id": "jamaica-1886",
-      "presenceType": "state",
-      "status": "active",
-      "supersededBy": null,
-      "when": {
-        "date": "1886-01-01",
-        "end": 1962,
-        "endDate": "1962-08-05",
-        "start": 1886
-      }
-    },
-    {
-      "actor": "jamaica",
-      "aliases": [],
-      "capital": {
-        "label": "Kingston",
-        "lat": 18,
-        "lon": -76.800003,
-        "precision": "city"
-      },
-      "confidence": "consensus",
       "dependencyKind": null,
       "dependencyOf": null,
       "geometry": {
@@ -24821,6 +24909,38 @@
         "date": "1962-08-06",
         "end": null,
         "start": 1962
+      }
+    },
+    {
+      "actor": "jamaica-under-united-kingdom",
+      "aliases": [],
+      "capital": {
+        "label": "Kingston",
+        "lat": 18,
+        "lon": -76.800003,
+        "precision": "city"
+      },
+      "confidence": "consensus",
+      "dependencyKind": "colony",
+      "dependencyOf": "united-kingdom",
+      "geometry": {
+        "files": [
+          "geo/presences/1886-1913.json",
+          "geo/presences/1914-1932.json",
+          "geo/presences/1933-1945.json",
+          "geo/presences/1946-1974.json"
+        ],
+        "key": "20"
+      },
+      "id": "jamaica-under-united-kingdom-1886",
+      "presenceType": "state",
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "date": "1886-01-01",
+        "end": 1962,
+        "endDate": "1962-08-05",
+        "start": 1886
       }
     },
     {
@@ -33648,6 +33768,34 @@
         "precision": "city"
       },
       "confidence": "consensus",
+      "dependencyKind": null,
+      "dependencyOf": null,
+      "geometry": {
+        "files": [
+          "geo/presences/1975-2019.json"
+        ],
+        "key": "46"
+      },
+      "id": "surinam-1975",
+      "presenceType": "state",
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "date": "1975-11-25",
+        "end": null,
+        "start": 1975
+      }
+    },
+    {
+      "actor": "surinam-under-netherlands",
+      "aliases": [],
+      "capital": {
+        "label": "Paramaribo",
+        "lat": 5.83333,
+        "lon": -55.166672,
+        "precision": "city"
+      },
+      "confidence": "consensus",
       "dependencyKind": "colony",
       "dependencyOf": "netherlands",
       "geometry": {
@@ -33659,7 +33807,7 @@
         ],
         "key": "44"
       },
-      "id": "surinam-1886",
+      "id": "surinam-under-netherlands-1886",
       "presenceType": "state",
       "status": "active",
       "supersededBy": null,
@@ -33671,7 +33819,7 @@
       }
     },
     {
-      "actor": "surinam",
+      "actor": "surinam-under-netherlands",
       "aliases": [],
       "capital": {
         "label": "Paramaribo",
@@ -33689,7 +33837,7 @@
         ],
         "key": "45"
       },
-      "id": "surinam-1954",
+      "id": "surinam-under-netherlands-1954",
       "presenceType": "state",
       "status": "active",
       "supersededBy": null,
@@ -33698,34 +33846,6 @@
         "end": 1975,
         "endDate": "1975-11-24",
         "start": 1954
-      }
-    },
-    {
-      "actor": "surinam",
-      "aliases": [],
-      "capital": {
-        "label": "Paramaribo",
-        "lat": 5.83333,
-        "lon": -55.166672,
-        "precision": "city"
-      },
-      "confidence": "consensus",
-      "dependencyKind": null,
-      "dependencyOf": null,
-      "geometry": {
-        "files": [
-          "geo/presences/1975-2019.json"
-        ],
-        "key": "46"
-      },
-      "id": "surinam-1975",
-      "presenceType": "state",
-      "status": "active",
-      "supersededBy": null,
-      "when": {
-        "date": "1975-11-25",
-        "end": null,
-        "start": 1975
       }
     },
     {
@@ -34688,38 +34808,6 @@
         "precision": "city"
       },
       "confidence": "consensus",
-      "dependencyKind": "colony",
-      "dependencyOf": "united-kingdom",
-      "geometry": {
-        "files": [
-          "geo/presences/1886-1913.json",
-          "geo/presences/1914-1932.json",
-          "geo/presences/1933-1945.json",
-          "geo/presences/1946-1974.json"
-        ],
-        "key": "22"
-      },
-      "id": "trinidad-and-tobago-1886",
-      "presenceType": "state",
-      "status": "active",
-      "supersededBy": null,
-      "when": {
-        "date": "1886-01-01",
-        "end": 1962,
-        "endDate": "1962-08-30",
-        "start": 1886
-      }
-    },
-    {
-      "actor": "trinidad-and-tobago",
-      "aliases": [],
-      "capital": {
-        "label": "Port-of-Spain",
-        "lat": 10.65,
-        "lon": -61.51667,
-        "precision": "city"
-      },
-      "confidence": "consensus",
       "dependencyKind": null,
       "dependencyOf": null,
       "geometry": {
@@ -34737,6 +34825,38 @@
         "date": "1962-08-31",
         "end": null,
         "start": 1962
+      }
+    },
+    {
+      "actor": "trinidad-and-tobago-under-united-kingdom",
+      "aliases": [],
+      "capital": {
+        "label": "Port-of-Spain",
+        "lat": 10.65,
+        "lon": -61.51667,
+        "precision": "city"
+      },
+      "confidence": "consensus",
+      "dependencyKind": "colony",
+      "dependencyOf": "united-kingdom",
+      "geometry": {
+        "files": [
+          "geo/presences/1886-1913.json",
+          "geo/presences/1914-1932.json",
+          "geo/presences/1933-1945.json",
+          "geo/presences/1946-1974.json"
+        ],
+        "key": "22"
+      },
+      "id": "trinidad-and-tobago-under-united-kingdom-1886",
+      "presenceType": "state",
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "date": "1886-01-01",
+        "end": 1962,
+        "endDate": "1962-08-30",
+        "start": 1886
       }
     },
     {

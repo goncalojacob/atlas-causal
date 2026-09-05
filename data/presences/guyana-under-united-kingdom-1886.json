@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "id": "surinam-1954",
+  "id": "guyana-under-united-kingdom-1886",
   "kind": "presence",
   "status": "active",
   "supersededBy": null,
@@ -12,36 +12,38 @@
     }
   ],
   "license": "CC-BY-NC-SA-4.0",
-  "created": "2026-09-02",
+  "created": "2026-09-05",
   "revised": null,
   "sources": [
     {
       "source": "cshapes-2-0",
-      "locator": "fid 45"
+      "locator": "fid 42"
     }
   ],
-  "actor": "surinam",
+  "actor": "guyana-under-united-kingdom",
   "presenceType": "state",
-  "dependencyOf": "netherlands",
+  "dependencyOf": "united-kingdom",
   "dependencyKind": "colony",
   "when": {
-    "start": 1954,
-    "end": 1975,
-    "date": "1954-12-15",
-    "endDate": "1975-11-24"
+    "start": 1886,
+    "end": 1966,
+    "date": "1886-01-01",
+    "endDate": "1966-05-25"
   },
   "geometry": {
     "files": [
-      "geo/presences/1946-1974.json",
-      "geo/presences/1975-2019.json"
+      "geo/presences/1886-1913.json",
+      "geo/presences/1914-1932.json",
+      "geo/presences/1933-1945.json",
+      "geo/presences/1946-1974.json"
     ],
-    "key": "45"
+    "key": "42"
   },
   "capital": {
-    "lon": -55.166672,
-    "lat": 5.83333,
+    "lon": -58.166672,
+    "lat": 6.8,
     "precision": "city",
-    "label": "Paramaribo"
+    "label": "Georgetown"
   },
   "confidence": "consensus"
 }

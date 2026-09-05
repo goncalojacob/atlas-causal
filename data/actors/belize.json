@@ -24,9 +24,9 @@
   "names": [
     "Belize"
   ],
-  "summary": "Entity 80 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 3 periods of territorial validity, from 1886 to where the dataset stops, in 2019. Its last capital in the dataset is Belmopan. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Entity 80 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1981 to where the dataset stops, in 2019. Its last capital in the dataset is Belmopan. The code is mapped onto more than one actor (data/imports/cshapes-actors.json); this record holds the periods from 1981-09-21. This record was written by the import from those fields and asserts nothing the dataset does not.",
   "when": {
-    "start": 1886,
+    "start": 1981,
     "end": null
   },
   "where": {

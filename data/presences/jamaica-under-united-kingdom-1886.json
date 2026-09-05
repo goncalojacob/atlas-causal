@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "id": "jamaica-1886",
+  "id": "jamaica-under-united-kingdom-1886",
   "kind": "presence",
   "status": "active",
   "supersededBy": null,
@@ -12,7 +12,7 @@
     }
   ],
   "license": "CC-BY-NC-SA-4.0",
-  "created": "2026-09-02",
+  "created": "2026-09-05",
   "revised": null,
   "sources": [
     {
@@ -20,7 +20,7 @@
       "locator": "fid 20"
     }
   ],
-  "actor": "jamaica",
+  "actor": "jamaica-under-united-kingdom",
   "presenceType": "state",
   "dependencyOf": "united-kingdom",
   "dependencyKind": "colony",
