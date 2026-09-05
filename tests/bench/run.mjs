@@ -223,6 +223,7 @@ async function benchRules() {
   const regions = JSON.parse(await readFile(pathMod.join(ROOT, 'data', 'regions.json'), 'utf8'));
 
   console.log('checkRules — the cross-record rules alone, in memory');
+  let atlas = null;
   for (const share of [0, 0.4]) {
     const records = syntheticRecords(TOOL_EVENTS, { tombstones: share });
     // Built once and outside the measurement: the topology is what the
@@ -231,7 +232,17 @@ async function benchRules() {
     const result = measure(() => checkRules(records, topology), { budget: 2000, most: 3 });
     const { errors, warnings } = checkRules(records, topology);
     row(`${TOOL_EVENTS} events, ${Math.round(share * 100)} % tombstones`, result, `→ ${errors.length} errors, ${warnings.length} warnings`);
+    if (share === 0.4) atlas = { records, topology };
   }
+  // What the contribution form and the review editor do on every keystroke:
+  // one record judged against the whole atlas. The universe is prebuilt
+  // because a page builds it once (health review B, finding 27); the row
+  // above it is the same call without one, which is what a page used to pay.
+  const { buildUniverse } = await import('../../src/validate/rules.js');
+  const one = [atlas.records.find((r) => r.kind === 'edge')];
+  row('one record, universe built per call', measure(() => checkRules(one, atlas.topology)));
+  const universe = buildUniverse(atlas.topology);
+  row('one record, universe prebuilt', measure(() => checkRules(one, atlas.topology, { universe })));
 }
 
 async function benchBuildIndex() {

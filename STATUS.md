@@ -11,6 +11,66 @@ ninth run: **the map's grouping is a grid, it runs once at rest, and only
 what is on screen is drawn.** Code only; no record under `data/` changed and
 `data/index/` was not rebuilt. 759 tests.
 
+**H4d (branch `h4d`), the tools' hot paths.** Code only; no record under
+`data/` changed and `data/index/` was not rebuilt — it was checked
+byte-identical with `node tools/validate.mjs --index` and left where it was.
+The cross-record rules index the universe once per call instead of scanning
+it per tombstone, and a page that validates against one atlas over and over
+builds that index once and hands it back in; the schema validator keeps the
+RegExp for every pattern; `validate --index` reads the records, builds the
+topology and runs the rules once between the two halves of the job it used
+to do twice; and the local server keeps the atlas in memory, serialises its
+saves through a queue, answers as soon as the record files are written and
+rebuilds `data/index/` behind the answer, with `/__status` and the review
+dashboard saying so while it runs. **`checkRules` at 20 000 events with 40 %
+tombstones: 6 723 ms to 194 ms. `validate --index` on the real dataset,
+whole process: 2 358 ms to 1 603 ms.** 792 tests. The numbers either side
+are below, under "The tools, measured".
+
+### The tools, measured (H4d)
+
+`node tests/bench/run.mjs rules build-index validate`, on this machine,
+before the change and after it. The generator is seeded, so both runs
+measure the same atlas; the ratios are what is worth reading, not the
+milliseconds. 20 000 events with 40 % tombstones is the shape the health
+review found in the real data, and it is the share that made rule 11
+quadratic.
+
+| `checkRules`, in memory | before | after | |
+|---|---|---|---|
+| 20 000 events, 40 % tombstones | 6 723 ms | 194 ms | 35× |
+| 20 000 events, no tombstones | 344 ms | 351 ms | — |
+
+One keystroke — `validateBundle` of one edge against the whole 20 000-event
+atlas, which is what the contribution form and the review editor run on
+every key:
+
+| | ms |
+|---|---|
+| before | 30.8 |
+| after, with the universe and the schema set prepared once | 22.0 |
+| after, with nothing reused (deviation 242) | 41.0 |
+
+The tools off disk, on the same 20 000-event set:
+
+| | before | after | |
+|---|---|---|---|
+| `build-index` | 14 537 ms | 5 559 ms | 2.6× |
+| `validate`, no `--index` | 16 700 ms | 6 534 ms | 2.6× |
+| `validate --index` | 39 068 ms | 6 730 ms | 5.8× |
+
+And on the real dataset, 1 716 records:
+
+| | before | after | |
+|---|---|---|---|
+| `node tools/validate.mjs --index`, whole process | 2 358 ms | 1 603 ms | 1.5× |
+| `runValidation(--index)` in process, cold | 2 090 ms | 1 376 ms | 1.5× |
+| the same again in the same process | 2 090 ms | 398 ms | 5.3× |
+
+The last row is the one the local server lives on: the palette is memoised
+on the hash of its inputs, so the rebuild behind a save does not rasterise
+every border again when no territory has moved.
+
 **The clustering was O(n²) and is a uniform grid, with the same answer.**
 `clusterPoints` bucketed the points in cells strictly wider than the merge
 threshold and scans the 3×3 neighbourhood of each seed, dropping a point from
@@ -3879,6 +3939,71 @@ gave that to the map and the timeline, and M25 did not widen it.
      numbers on different hardware; the ratios are what the deviations
      above lean on.
 
+### H4d — the tools' hot paths
+
+241. **Rule 5's DAG check is still one pass over every active edge, per
+     call.** Finding 27's second half — ask incrementally whether the edges
+     under validation close a cycle, by walking forward from each new edge's
+     `to` looking for its `from` — was not built, for two reasons. In an
+     atlas where nearly every event descends from the oldest one (which is
+     exactly why the convergence query excludes only the walked path) that
+     walk reaches as much of the graph as the topological sort does, so it
+     is not reliably cheaper; and the error names the whole stuck set, which
+     only the full pass can produce, so a cycle found incrementally would
+     have to be re-found anyway. It is most of the 22 ms a keystroke costs
+     against a 20 000-event atlas, and it is the next thing to do here.
+242. **`checkRules` costs more per call than it did when nothing is reused,
+     and every caller that repeats one hands in a universe.** Building the
+     indexes is one pass over the topology and the records together, which
+     is what took the whole dataset with 40 % tombstones from 6 723 ms to
+     194 ms; for a single record against 20 000 with nothing reused it is
+     41 ms where the old scans were 31 ms. Nothing in the atlas is in that
+     case: the contribution form, the review editor and the local server all
+     hand in a universe built once, and there the same call is 22 ms.
+243. **The local server rebuilds the topology after each save rather than
+     patching it entry by entry.** An event's `weight` is a count over the
+     edges and a source's `citationCount` a count over everything, so a
+     patch that got either wrong would judge the next save against an atlas
+     that does not exist. Rebuilding is linear in the records and — this is
+     the point — no longer reads them from disk, which is what the brief's
+     "patched synchronously so the next validation is correct" is for: the
+     save after this one sees this one.
+244. **The palette is memoised in the process, not against anything on
+     disk.** "Compared by input hash and rebuilt only when the territories
+     changed" is a hash of the active presences and of the bytes of every
+     geometry shard, held for the life of the process. It cannot be a
+     comparison against a recorded hash without writing that hash into
+     `data/geo/palette.json` — a change to a data file, and to its shape —
+     or into a cache outside `data/`, which the deploy job would start cold
+     on every push in any case. So a one-shot `validate --index` still
+     colours the map once (1.3 s of its 1.6 s) and every build after the
+     first in one process is free, which is what the rebuild behind a save
+     needed.
+245. **A record under validation is looked at after the topology's rows, not
+     in their place, when a prebuilt universe is used.** Without one the
+     topology and the records are laid out as a single list and the order is
+     exactly what it was. With one, the base rows a record has replaced are
+     dropped and the record's own appended, so if a retracted actor is
+     referenced both by an event in the topology and by an event in the
+     bundle, the two messages swap places. Which messages are reported never
+     changes, and `tests/universe.test.mjs` holds the two paths to the same
+     list for every record in the fixture set.
+246. **The store does not notice an edit made to `data/` behind the
+     server's back.** It reads the records once and keeps them, so a `git
+     checkout` in another terminal is invisible until `reload()` or a
+     restart; `/__status` says when the store was loaded, so the answer to
+     "why is it validating against the old file" is one request away. The
+     server was always the only writer, it binds 127.0.0.1 and it never
+     ships; re-reading twelve hundred files on every keystroke's worth of
+     save was the price of noticing, and it is what finding 32 is about.
+247. **The save endpoint's `index` field is a state, not a list of files.**
+     `PUT /__records/…` used to answer with the names of every file the
+     rebuild had just written, which it can no longer know: it answers
+     before the rebuild. It now carries `{ state, since, message }`, the
+     same shape `/__status` returns, and `saveBundle()` called without a
+     store — the one-shot path, which still waits — returns the file list as
+     before.
+
 ## Dates to verify
 
 Everything below was written from memory and is where the owner's review
@@ -4395,3 +4520,5 @@ H4b started 2026-09-05T18:11:54Z by scheduled (branch h4b)
 H4b done
 
 H4d started 2026-09-05T18:57:51Z by scheduled (branch h4d)
+
+H4d done
