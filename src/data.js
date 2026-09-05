@@ -345,7 +345,9 @@ export async function loadNarratives({ dataRoot = 'data/', fetchJson = defaultFe
 // none, and the site still wants coastlines under the synthetic marks.
 // `false` loads no coastlines at all: the contribution form needs the
 // topology and nothing that is only drawn.
-export async function loadAtlas({ dataRoot = 'data/', landFile = null, fetchJson = defaultFetchJson } = {}) {
+export async function loadAtlas({
+  dataRoot = 'data/', landFile = null, regions = true, fetchJson = defaultFetchJson,
+} = {}) {
   const manifest = await fetchJson(`${dataRoot}index/manifest.json`, { cache: 'no-store' });
   const [topology, sourcesIndex] = await Promise.all([
     fetchJson(`${dataRoot}${manifest.files.topology}`),
@@ -361,9 +363,16 @@ export async function loadAtlas({ dataRoot = 'data/', landFile = null, fetchJson
   // "am I in view" with its region, so the boxes have to be in hand before the
   // first frame; a dataset without the file simply has none, and the events
   // with no place stay out of a box as they were.
-  const regionBoxes = await fetchJson(`${dataRoot}geo/regions.json`)
-    .then((collection) => regionBounds(collection))
-    .catch(() => new Map());
+  //
+  // `regions: false` for a page with no viewport to be in or out of — the
+  // entry page and the contribution form — because the polygons are a couple
+  // of hundred kilobytes and only the map ever asks the question. Reduced to
+  // one box per region the moment it arrives; the polygons are not kept.
+  const regionBoxes = regions
+    ? await fetchJson(`${dataRoot}geo/regions.json`)
+      .then((collection) => regionBounds(collection))
+      .catch(() => new Map())
+    : new Map();
   return createAtlas({
     manifest, topology, sources: sourcesIndex.sources, land, palette, regionBoxes, dataRoot, fetchJson,
   });

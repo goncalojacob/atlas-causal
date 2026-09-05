@@ -210,6 +210,15 @@ test('the placeless events answer with the region boxes the atlas loaded', async
   const box = [-10, 36, -6, 43];
 
   assert.deepEqual([...atlas.regionBoxes.keys()].sort(), ['africa', 'americas', 'asia', 'europe', 'oceania']);
+  // And a page with no viewport does not fetch a couple of hundred kilobytes
+  // of polygons to answer a question it never asks.
+  const asked = [];
+  await loadAtlas({
+    dataRoot: 'data/',
+    regions: false,
+    fetchJson: (url, init) => { asked.push(url); return fetchJson(url, init); },
+  });
+  assert.ok(!asked.some((url) => url.includes('geo/regions.json')));
   const placeless = atlas.activeEvents.filter((e) => !atlas.pointOf(e));
   assert.ok(placeless.length > 0, 'the atlas has events with no place');
   assert.ok(placeless.every((e) => atlas.regionBoxes.has(e.region)), 'and every one of them names a region');
