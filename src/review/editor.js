@@ -14,7 +14,7 @@
 import { html } from '../util/dom.js';
 import { reorderControls, refreshAll } from '../contribute/reorder.js';
 import {
-  FIELDS, CITATION_LISTS, ACTOR_LISTS, STEP_LISTS, valuesFromRecord, applyValues, validateBundle,
+  FIELDS, CITATION_LISTS, ACTOR_LISTS, STEP_LISTS, valuesFromRecord, applyValues, validateBundle, preparedFor,
 } from '../contribute/bundle.js';
 import { identifiers, citationText } from '../citation.js';
 import { citationRows, setVerified, clearVerified } from './citations.js';
@@ -111,8 +111,11 @@ export function identityBlock(record) {
 // record: the file as it is on disk. onChange is called after every edit,
 // with the validation result, so the page can enable or disable Save.
 export function createEditor({
-  record, topology, schemas, onChange = () => {}, reviewer = () => ({ name: '' }), today = null,
+  record, topology, schemas, onChange = () => {}, reviewer = () => ({ name: '' }), today = null, prepared = null,
 }) {
+  // Built once per editor, or handed in by the dashboard so that opening
+  // one record after another does not rebuild the atlas's half each time.
+  const reuse = prepared ?? preparedFor(topology, schemas);
   const kind = record.kind;
   const values = valuesFromRecord(kind, record);
   const fields = new Map();
@@ -384,7 +387,7 @@ export function createEditor({
 
   function refresh() {
     const edited = current();
-    const result = validateBundle({ schema: 1, records: [edited] }, topology, schemas);
+    const result = validateBundle({ schema: 1, records: [edited] }, topology, schemas, reuse);
 
     recordErrors.textContent = '';
     recordErrors.hidden = true;

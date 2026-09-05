@@ -30,19 +30,19 @@
 
 import { createServer as createHttpServer } from 'node:http';
 import { createReadStream } from 'node:fs';
-import { stat, writeFile, mkdir } from 'node:fs/promises';
+import { stat } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
-import { buildTopology, validate } from '../src/validate/core.js';
-import { createRegionDeriver } from '../src/util/geo.js';
 import { checkBundle } from './bundle-to-files.mjs';
-import { buildIndex, writeIndex } from './build-index.mjs';
-import { KIND_DIRS, readRecords, readRegions, readRegionPolygons, readSchemaFiles } from './lib/read.mjs';
+import { createStore, StoreError } from './lib/store.mjs';
+import { KIND_DIRS } from './lib/read.mjs';
 
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 export const DEFAULT_PORT = 8000;
 export const HOST = '127.0.0.1';
 export const WRITE_PREFIX = '/__records/';
+// Where the dashboard reads "the index is still rebuilding" from.
+export const STATUS_PATH = '/__status';
 // A bundle of two hundred records with prose in every one is still small.
 export const MAX_BODY = 4 * 1024 * 1024;
 
@@ -135,13 +135,9 @@ export function parseTarget(urlPath) {
   return { kind, id };
 }
 
-class SaveError extends Error {
-  constructor(status, message, detail = null) {
-    super(message);
-    this.status = status;
-    this.detail = detail;
-  }
-}
+// The store's error is this server's error: one class, so the handler at the
+// bottom answers a refusal from either with the same status and body.
+const SaveError = StoreError;
 
 // A single record is a bundle of one (the brief's amendment): the dashboard
 // sends a bundle so that retracting an event can retract its edges in the
@@ -155,66 +151,22 @@ export function asBundle(body) {
   throw new SaveError(400, 'the body must be a record or a bundle');
 }
 
-// Validates the bundle against what is on disk and, only if it passes,
-// writes the record files and rebuilds data/index/. Returns what it wrote.
-export async function saveBundle(bundle, { dataDir, schemaDir, target = null } = {}) {
+// Validates the bundle against the atlas the store holds and, only if it
+// passes, writes the record files. `store` is the server's, shared by every
+// request so the records stay loaded between saves; without one this reads
+// the atlas, saves, waits for data/index/ and throws the store away, which
+// is what a caller with no server does and what this function always did.
+export async function saveBundle(bundle, { dataDir, schemaDir, target = null, store = null, rebuild = null } = {}) {
   let checked;
   try {
     checked = checkBundle(bundle);
   } catch (e) {
     throw new SaveError(400, e.message);
   }
-  if (target && !checked.some((c) => c.record.kind === target.kind && c.id === target.id)) {
-    throw new SaveError(400, `the bundle contains no ${target.kind} "${target.id}": the URL names the record being saved`);
-  }
-
-  const { entries, problems } = await readRecords(dataDir);
-  if (problems.length) {
-    throw new SaveError(500, `data/ has files that are not valid JSON: ${problems.map((p) => p.file).join(', ')}`);
-  }
-  const onDisk = entries.map((e) => e.record);
-  const regions = await readRegions(dataDir);
-  const polygons = await readRegionPolygons(dataDir);
-  const deriveRegion = polygons ? createRegionDeriver(polygons) : undefined;
-
-  // The topology the rules are checked against is built from the records on
-  // disk: a record under validation shadows its own entry in it (checkRules
-  // builds the universe that way), so an edit is judged as the atlas would
-  // be after it. No file holds this shape — build-index.mjs builds it the
-  // same way and writes only the spine it projects.
-  const current = buildTopology(onDisk, regions, { deriveRegion });
-  const schemas = await readSchemaFiles(schemaDir);
-  const { errors, warnings } = validate(bundle.records, current, schemas);
-  if (errors.length) throw new SaveError(422, `${errors.length} problem(s): nothing was written`, { errors, warnings });
-
-  // An event whose lane cannot be derived would leave the timeline with
-  // nowhere to put it, and build-index refuses to write an index with one.
-  // Better to refuse the save than to leave the file saved and the index stale.
-  const merged = new Map(onDisk.map((r) => [r.id, r]));
-  for (const r of bundle.records) merged.set(r.id, r);
-  const next = buildTopology([...merged.values()], regions, { deriveRegion });
-  const unresolved = next.events.filter((e) => e.status === 'active' && e.place && !e.region);
-  if (unresolved.length) {
-    throw new SaveError(422, `no timeline lane for ${unresolved.map((e) => e.id).join(', ')}: set the lane on the place or on the event`, { errors: [], warnings });
-  }
-
-  const written = [];
-  for (const { record, dir, id } of checked) {
-    const directory = path.join(dataDir, dir);
-    const file = path.join(directory, `${path.basename(id)}.json`);
-    // checkBundle already proved the id is a bare name; this is the assertion
-    // that says so out loud, next to the only line that writes.
-    if (path.dirname(path.resolve(file)) !== path.resolve(directory)) {
-      throw new SaveError(400, `${id} would be written outside data/${dir}/`);
-    }
-    await mkdir(directory, { recursive: true });
-    await writeFile(file, `${JSON.stringify(record, null, 2)}\n`, 'utf8');
-    written.push({ path: `data/${dir}/${id}.json`, kind: record.kind, id });
-  }
-
-  const built = await buildIndex(dataDir);
-  await writeIndex(dataDir, built);
-  return { written, warnings, index: Object.keys(built.files).sort() };
+  const here = store ?? createStore({ dataDir, schemaDir });
+  const saved = await here.save(checked, bundle, { target, ...(rebuild === null ? {} : { rebuild }) });
+  if (store) return saved;
+  return { ...saved, index: await here.settled() };
 }
 
 // --- the server ------------------------------------------------------------
@@ -262,7 +214,11 @@ async function serveStatic(request, response, root) {
 }
 
 export function createServer({ root = ROOT, dataDir = path.join(ROOT, 'data'), schemaDir = path.join(ROOT, 'schema'), port = DEFAULT_PORT } = {}) {
-  return createHttpServer(async (request, response) => {
+  // One store for the life of the server: the records and the topology stay
+  // loaded between saves, and the queue inside it is what makes two saves
+  // that arrive together happen one after the other.
+  const store = createStore({ dataDir, schemaDir });
+  const server = createHttpServer(async (request, response) => {
     try {
       if (!hostAllowed(request.headers.host, port)) {
         return send(response, 403, 'this server answers only to localhost\n', { 'content-type': 'text/plain; charset=utf-8' });
@@ -271,6 +227,16 @@ export function createServer({ root = ROOT, dataDir = path.join(ROOT, 'data'), s
         return send(response, 403, 'foreign origin\n', { 'content-type': 'text/plain; charset=utf-8' });
       }
       const urlPath = new URL(request.url, 'http://localhost').pathname;
+
+      // What the dashboard asks after a save, and while one is in flight:
+      // the index is rebuilt behind the answer, so the page needs somewhere
+      // to read "not yet" from (review of the health plan, finding 27).
+      if (urlPath === STATUS_PATH) {
+        if (request.method !== 'GET' && request.method !== 'HEAD') {
+          return send(response, 405, 'GET and HEAD only\n', { 'content-type': 'text/plain; charset=utf-8', allow: 'GET, HEAD' });
+        }
+        return sendJson(response, 200, store.status());
+      }
 
       if (urlPath.startsWith(WRITE_PREFIX)) {
         // No OPTIONS handler and no CORS headers anywhere: a page on another
@@ -290,8 +256,11 @@ export function createServer({ root = ROOT, dataDir = path.join(ROOT, 'data'), s
         } catch (e) {
           return sendJson(response, 400, { ok: false, message: `the body is not JSON: ${e.message}` });
         }
-        const saved = await saveBundle(asBundle(body), { dataDir, schemaDir, target });
-        return sendJson(response, 200, { ok: true, ...saved });
+        // The answer goes back as soon as the record files are written; the
+        // index is rebuilt after it, and `index` here says so rather than
+        // listing files that do not exist yet.
+        const saved = await saveBundle(asBundle(body), { dataDir, schemaDir, target, store });
+        return sendJson(response, 200, { ok: true, ...saved, index: store.status().index });
       }
 
       if (request.method !== 'GET' && request.method !== 'HEAD') {
@@ -305,6 +274,10 @@ export function createServer({ root = ROOT, dataDir = path.join(ROOT, 'data'), s
       return sendJson(response, 500, { ok: false, message: `${error.name}: ${error.message}` });
     }
   });
+  // Reachable so that a test can wait for the index the server is writing
+  // behind an answer it has already given.
+  server.store = store;
+  return server;
 }
 
 async function main(argv) {

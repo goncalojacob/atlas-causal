@@ -9,7 +9,8 @@
 // data/<kind>s/<id>.json, unchanged.
 
 import { validate } from '../validate/core.js';
-import { ACTOR_TYPES, EDGE_TYPES, RELATION_TYPES } from '../validate/rules.js';
+import { createValidator } from '../validate/schema.js';
+import { ACTOR_TYPES, EDGE_TYPES, RELATION_TYPES, buildUniverse } from '../validate/rules.js';
 import { CONTAINER_KINDS } from '../citation.js';
 import { KIND, CONTRIBUTED_KINDS, listsOf } from '../kinds.js';
 
@@ -807,7 +808,13 @@ export function checkBundleShape(bundle) {
 // Runs the same validate() the CLI runs, against the topology the site
 // loaded, so references, arrow of time, consensus and dispute all fire in
 // the browser and the Action rejects nothing the form called fine.
-export function validateBundle(bundle, topology, schemas) {
+//
+// `reuse` is the two things that depend on the atlas and not on what is
+// being typed — the indexed universe and the compiled schema set. They used
+// to be rebuilt on every keystroke, which was 166 ms per key at twenty
+// thousand records (health review B, finding 27); `preparedFor` below builds
+// them once and the callers hold on to the result.
+export function validateBundle(bundle, topology, schemas, reuse = null) {
   const shape = checkBundleShape(bundle);
   if (shape.length) {
     return {
@@ -816,8 +823,15 @@ export function validateBundle(bundle, topology, schemas) {
       ok: false,
     };
   }
-  const { errors, warnings } = validate(bundle.records, topology, schemas);
+  const { errors, warnings } = validate(bundle.records, topology, schemas, reuse ?? {});
   return { errors, warnings, ok: errors.length === 0 && everythingCited(bundle) };
+}
+
+// What validateBundle can be handed instead of building it again. Built once
+// per page, from the atlas the page loaded; both halves are pure and neither
+// depends on the record under edit.
+export function preparedFor(topology, schemas) {
+  return { universe: buildUniverse(topology), validator: createValidator(schemas) };
 }
 
 // Rule 6 says the same thing, but the submit control hangs on it, so it is

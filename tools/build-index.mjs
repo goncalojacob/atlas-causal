@@ -54,18 +54,30 @@ export function hashOf(text) {
 // built from — which is no longer written anywhere — and the active events
 // whose region could not be derived (a build with those is not written: the
 // timeline would have nowhere to put them).
-export async function buildIndex(dataDir = DEFAULT_DATA) {
-  const { entries, problems } = await readRecords(dataDir);
-  if (problems.length) {
-    throw new Error(problems.map((p) => `${p.file}: ${p.message}`).join('\n'));
+export async function buildIndex(dataDir = DEFAULT_DATA, prepared = {}) {
+  let records = prepared.records ?? null;
+  if (!records) {
+    const { entries, problems } = await readRecords(dataDir);
+    if (problems.length) {
+      throw new Error(problems.map((p) => `${p.file}: ${p.message}`).join('\n'));
+    }
+    records = entries.map((e) => e.record);
   }
-  const records = entries.map((e) => e.record);
-  const regions = await readRegions(dataDir);
-  const polygons = await readRegionPolygons(dataDir);
+  const regions = prepared.regions ?? await readRegions(dataDir);
   const land = await readLandFiles(dataDir);
-  const presenceShards = await readPresenceShards(dataDir);
-  const deriveRegion = polygons ? createRegionDeriver(polygons) : undefined;
-  const topology = buildTopology(records, regions, { deriveRegion });
+  // Only the three fields the manifest names: a shard list read with its
+  // feature keys (which is how tools/validate.mjs reads it) carries a Set
+  // that would land in the file as an empty object.
+  const presenceShards = (prepared.presenceShards ?? await readPresenceShards(dataDir))
+    .map(({ file, from, to }) => ({ file, from, to }));
+  // The validator has already read all of this and built the topology from
+  // it; doing it again was the whole of the doubling `validate --index`
+  // measured (health review B, finding 5).
+  let topology = prepared.topology ?? null;
+  if (!topology) {
+    const polygons = prepared.polygons ?? await readRegionPolygons(dataDir);
+    topology = buildTopology(records, regions, { deriveRegion: polygons ? createRegionDeriver(polygons) : undefined });
+  }
 
   // The graph every page loads whole, and the only file that carries it.
   // `topology` above stays in memory: it is what this projection is taken
@@ -112,7 +124,7 @@ export async function buildIndex(dataDir = DEFAULT_DATA) {
     schema: 1,
     total: records.filter((r) => r.kind !== 'presence').length,
     records: records.filter(isDraft).map(digestOf).sort(byId),
-    warnings: checkRules(records, topology).warnings
+    warnings: (prepared.warnings ?? checkRules(records, topology).warnings)
       .map((w) => ({ id: w.id, kind: w.kind, rule: w.rule, message: w.message }))
       .sort((a, b) => byId(a, b) || (a.rule < b.rule ? -1 : a.rule > b.rule ? 1 : 0)),
   });

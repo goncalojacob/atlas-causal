@@ -184,7 +184,156 @@ export function citedSources(record) {
   return [...new Set(citations(record ?? {}).filter((id) => typeof id === 'string'))];
 }
 
-export function checkRules(records, topology = {}) {
+// ─── The universe, indexed ──────────────────────────────────────────────────
+//
+// Everything the rules ask of the atlas *around* the records under
+// validation, read as lookups rather than scanned. Two findings meet here.
+// Rule 11's inactive-record checks were a scan of every active edge per
+// tombstone and of the whole universe per retracted actor or place, and 40 %
+// of this dataset is already tombstones, which made them quadratic in the
+// thing that grows fastest (health review B, finding 4). And the browser's
+// form rebuilt all of this on every keystroke (finding 27; review A, finding
+// 11), which is why the indexes can be built once for a topology and handed
+// back in:
+//
+//     const universe = buildUniverse(topology);
+//     validate(bundle.records, topology, schemas, { universe });
+//
+// Nothing here decides anything: every index is a different way of reaching
+// the same entries, and the rules below are the only readers.
+
+const EMPTY = Object.freeze([]);
+
+function pushInto(map, key, value) {
+  if (typeof key !== 'string') return;
+  const list = map.get(key);
+  if (list) list.push(value);
+  else map.set(key, [value]);
+}
+
+// The indexes over one ordered list of rows ({ kind, entry, own }). Built
+// twice per call — once for the topology, once for the records under
+// validation — and the readers merge the two, so a record that shadows a
+// topology entry is looked at in its own place rather than in the entry's.
+//
+// A row is pushed at most once per key it can be reached by, because that is
+// what the rules used to report: an event naming one actor under two roles
+// is one referrer, not two.
+function indexEntries(rows) {
+  const activeEdges = [];
+  const edgesByEndpoint = new Map();
+  const actorReferrers = new Map();
+  const placeReferrers = new Map();
+  const presencesByOutline = new Map();
+  const relationsByType = new Map();
+  const claimants = new Map();
+  const creatorKeys = new Map();
+  const aliases = new Map();
+  const aliasOwners = new Map();
+  for (const row of rows) {
+    const { kind, entry } = row;
+    for (const alias of entry.aliases ?? []) {
+      if (!aliases.has(alias)) aliases.set(alias, entry.id);
+      pushInto(aliasOwners, alias, entry.id);
+    }
+    // Rule 21 asks about every record that claims an item, tombstones
+    // included: a retracted duplicate still holds the item it was created
+    // for. Rule 9 asks about a source whatever its status, because rule 11
+    // is what reports citing a retracted one.
+    if (typeof entry.wikidata === 'string') pushInto(claimants, `${kind} ${entry.wikidata}`, entry.id);
+    if (kind === 'source') creatorKeys.set(entry.id, new Set((entry.creators ?? []).map(nameKey).filter(Boolean)));
+    if (entry.status !== 'active') continue;
+    if (kind === 'edge') {
+      activeEdges.push(entry);
+      pushInto(edgesByEndpoint, entry.from, entry);
+      if (entry.to !== entry.from) pushInto(edgesByEndpoint, entry.to, entry);
+    } else if (kind === 'event') {
+      const seen = new Set();
+      for (const a of entry.actors ?? []) {
+        if (typeof a?.actor !== 'string' || seen.has(a.actor)) continue;
+        seen.add(a.actor);
+        pushInto(actorReferrers, a.actor, row);
+      }
+      pushInto(placeReferrers, entry.place, row);
+    } else if (kind === 'presence') {
+      pushInto(actorReferrers, entry.actor, row);
+      if (entry.dependencyOf !== entry.actor) pushInto(actorReferrers, entry.dependencyOf, row);
+      // Rule 17 asks whether one actor holds the same outline twice over
+      // overlapping years, so the pair it compares is (actor, outline) and
+      // nothing else has to be looked at.
+      pushInto(presencesByOutline, `${entry.actor}\u001f${String(entry.geometry?.key)}`, entry);
+    } else if (kind === 'relation') {
+      pushInto(actorReferrers, entry.from, row);
+      if (entry.to !== entry.from) pushInto(actorReferrers, entry.to, row);
+      pushInto(relationsByType, entry.type, entry);
+    }
+  }
+  return { activeEdges, edgesByEndpoint, actorReferrers, placeReferrers, presencesByOutline, relationsByType, claimants, creatorKeys, aliases, aliasOwners };
+}
+
+// The topology's entries as one ordered list, id → row, with `add` left open
+// so the records under validation can be laid over it in place.
+function collectRows(topology) {
+  const entries = new Map();
+  const rows = [];
+  const add = (kind, entry, own = false) => {
+    const seen = entries.get(entry.id);
+    // A later entry under an id already taken replaces it where it stands,
+    // which is what setting it on a Map used to do: the row keeps its
+    // position and the order the errors come out in does not move.
+    if (seen) {
+      seen.kind = kind;
+      seen.entry = entry;
+      seen.own = own;
+      return;
+    }
+    const row = { kind, entry, own };
+    entries.set(entry.id, row);
+    rows.push(row);
+  };
+  for (const e of topology.events ?? []) add('event', e);
+  for (const e of topology.edges ?? []) add('edge', e);
+  for (const s of topology.sources ?? []) add('source', s);
+  for (const a of topology.actors ?? []) add('actor', a);
+  for (const p of topology.presences ?? []) add('presence', p);
+  for (const p of topology.places ?? []) add('place', p);
+  for (const r of topology.relations ?? []) add('relation', r);
+  for (const n of topology.narratives ?? []) add('narrative', n);
+  return { entries, rows, add };
+}
+
+// The topology as the rules read it: the rows, the indexes and the lane ids.
+// Pure and reusable — hand the same object back to checkRules for as long as
+// the topology it came from has not changed.
+export function buildUniverse(topology = {}) {
+  const { entries, rows } = collectRows(topology);
+  return {
+    topology,
+    entries,
+    regionIds: new Set((topology.regions ?? []).map((r) => r.id)),
+    ...indexEntries(rows),
+  };
+}
+
+// The empty half, for the caller that has no prebuilt universe: the topology
+// and the records are then indexed together as one list, which is one pass
+// rather than two and is what the CLI does, where every topology entry is
+// under validation anyway.
+const NO_UNIVERSE = Object.freeze({
+  entries: new Map(),
+  aliases: new Map(),
+  aliasOwners: new Map(),
+  activeEdges: null,
+  edgesByEndpoint: new Map(),
+  actorReferrers: new Map(),
+  placeReferrers: new Map(),
+  presencesByOutline: new Map(),
+  relationsByType: new Map(),
+  claimants: new Map(),
+  creatorKeys: new Map(),
+});
+
+export function checkRules(records, topology = {}, { universe: prebuilt = null } = {}) {
   const errors = [];
   const warnings = [];
   const error = (rule, record, path, message) => {
@@ -195,16 +344,15 @@ export function checkRules(records, topology = {}) {
   };
 
   // --- the universe -------------------------------------------------------
-  const universe = new Map();
-  const add = (kind, entry, own) => universe.set(entry.id, { kind, entry, own });
-  for (const e of topology.events ?? []) add('event', e, false);
-  for (const e of topology.edges ?? []) add('edge', e, false);
-  for (const s of topology.sources ?? []) add('source', s, false);
-  for (const a of topology.actors ?? []) add('actor', a, false);
-  for (const p of topology.presences ?? []) add('presence', p, false);
-  for (const p of topology.places ?? []) add('place', p, false);
-  for (const r of topology.relations ?? []) add('relation', r, false);
-  for (const n of topology.narratives ?? []) add('narrative', n, false);
+  // A prebuilt universe is the topology's half already indexed, which is what
+  // a page validating against one atlas over and over hands back in. Without
+  // one there is nothing to reuse, so the topology and the records are laid
+  // out as a single list and indexed together — one pass, in the topology's
+  // own order.
+  const base = prebuilt && prebuilt.topology === topology ? prebuilt : NO_UNIVERSE;
+  const scratch = base === NO_UNIVERSE ? collectRows(topology) : null;
+  const ownEntries = scratch ? scratch.entries : new Map();
+  const ownRows = scratch ? scratch.rows : [];
 
   const ownIds = new Set();
   for (const r of records) {
@@ -213,15 +361,54 @@ export function checkRules(records, topology = {}) {
       continue;
     }
     ownIds.add(r.id);
-    add(r.kind, r, true);
+    if (scratch) scratch.add(r.kind, r, true);
+    else {
+      const row = { kind: r.kind, entry: r, own: true };
+      ownEntries.set(r.id, row);
+      ownRows.push(row);
+    }
   }
-  const own = records.filter((r) => universe.get(r.id)?.entry === r);
-  const regionIds = new Set((topology.regions ?? []).map((r) => r.id));
+  const ours = indexEntries(ownRows);
+  const universe = {
+    get: (id) => ownEntries.get(id) ?? base.entries.get(id),
+    has: (id) => ownEntries.has(id) || base.entries.has(id),
+  };
+  const own = records.filter((r) => ownEntries.get(r.id)?.entry === r);
+  const regionIds = base.regionIds ?? new Set((topology.regions ?? []).map((r) => r.id));
+
+  // A topology row whose id is under validation is not the atlas any more:
+  // the record under validation is. So every merged list drops those rows
+  // and appends the records' own, which is the one order this rewrite
+  // changed — a referrer that is itself under validation is now looked at
+  // after the topology's rather than in its place. It changes which of two
+  // messages about one record comes first and never which are reported.
+  const shadowing = ownIds.size > 0;
+  const merge = (theirs, mine, idOf) => {
+    if (!theirs) return mine ?? EMPTY;
+    const kept = shadowing ? theirs.filter((x) => !ownIds.has(idOf(x))) : theirs;
+    return mine ? kept.concat(mine) : kept;
+  };
+  const entryId = (x) => x.id;
+  const rowId = (x) => x.entry.id;
+  const edgesTouching = (id) => merge(base.edgesByEndpoint.get(id), ours.edgesByEndpoint.get(id), entryId);
+  const actorReferrers = (id) => merge(base.actorReferrers.get(id), ours.actorReferrers.get(id), rowId);
+  const placeReferrers = (id) => merge(base.placeReferrers.get(id), ours.placeReferrers.get(id), rowId);
+  const aliasOwnersOf = (alias) => merge(base.aliasOwners.get(alias), ours.aliasOwners.get(alias), (id) => id);
+  const activeEdges = merge(base.activeEdges, ours.activeEdges, entryId);
 
   // Every reference in the atlas resolves through the same helper, so a
   // record renamed yesterday is still found by the id written against it
-  // last year. Merges are not followed here: see resolveId.
-  const aliases = aliasIndex(universe);
+  // last year. Merges are not followed here: see resolveId. A record under
+  // validation owns its aliases outright; rule 2 is what stops two records
+  // claiming one, so the preference only ever decides an invalid case.
+  const aliases = {
+    get(alias) {
+      const mine = ours.aliases.get(alias);
+      if (mine !== undefined) return mine;
+      const theirs = base.aliases.get(alias);
+      return theirs !== undefined && !ownIds.has(theirs) ? theirs : undefined;
+    },
+  };
   const lookup = (id, kind) => {
     const u = resolveId(id, universe, { aliases, merges: false });
     return u && u.kind === kind ? u.entry : null;
@@ -229,16 +416,14 @@ export function checkRules(records, topology = {}) {
   // What a reader's `resolve()` would open — the alias hop and then the
   // merges — as a bare id, for comparing two references to the same thing.
   const standsFor = (id) => resolveId(id, universe, { aliases })?.id ?? id;
-  const activeEdges = [...universe.values()].filter((u) => u.kind === 'edge' && u.entry.status === 'active').map((u) => u.entry);
+  // A book's authors, folded, once per source rather than once per edge that
+  // cites it: rule 9 compares the sets of every consensus edge, and one book
+  // carries a thousand of those citations in this dataset.
+  const creatorKeysOf = (source) => ours.creatorKeys.get(source.id)
+    ?? base.creatorKeys.get(source.id)
+    ?? new Set((source.creators ?? []).map(nameKey).filter(Boolean));
 
   // --- rule 2: ids and aliases --------------------------------------------
-  const aliasOwners = new Map();
-  for (const [id, u] of universe) {
-    for (const alias of u.entry.aliases ?? []) {
-      if (!aliasOwners.has(alias)) aliasOwners.set(alias, []);
-      aliasOwners.get(alias).push(id);
-    }
-  }
   for (const r of own) {
     if (r.kind === 'edge' || r.kind === 'relation') {
       const m = (r.kind === 'edge' ? EDGE_ID : RELATION_ID).exec(r.id);
@@ -249,14 +434,14 @@ export function checkRules(records, topology = {}) {
     } else if (!SLUG.test(r.id)) {
       error(2, r, '/id', 'id must be a slug: lowercase letters, digits and single hyphens');
     }
-    const others = (aliasOwners.get(r.id) ?? []).filter((id) => id !== r.id);
+    const others = aliasOwnersOf(r.id).filter((id) => id !== r.id);
     if (others.length) {
       error(2, r, '/id', `id "${r.id}" is already an alias of ${others.join(', ')}`);
     }
     (r.aliases ?? []).forEach((alias, i) => {
       if (alias === r.id) error(2, r, `/aliases/${i}`, 'an alias cannot equal the record\'s own id');
       if (universe.has(alias)) error(2, r, `/aliases/${i}`, `alias "${alias}" is the id of another record`);
-      const owners = aliasOwners.get(alias).filter((id) => id !== r.id);
+      const owners = aliasOwnersOf(alias).filter((id) => id !== r.id);
       if (owners.length) error(2, r, `/aliases/${i}`, `alias "${alias}" is also an alias of ${owners.join(', ')}`);
       if ((r.aliases ?? []).indexOf(alias) !== i) error(2, r, `/aliases/${i}`, `alias "${alias}" repeated`);
     });
@@ -352,7 +537,7 @@ export function checkRules(records, topology = {}) {
       error(15, r, '/year', 'year must be a non-zero integer');
     }
   }
-  const whenOf = (id) => {
+  const readWhen = (id) => {
     const e = lookup(id, 'event');
     if (!e || !isObject(e.when)) return null;
     // Through the alias, like the lookup above: a reference by a former id
@@ -368,6 +553,15 @@ export function checkRules(records, topology = {}) {
     } catch {
       return null;
     }
+  };
+  // Memoised on the id as written: an event at one end of ten edges is
+  // resolved and its bounds converted once, not ten times.
+  const whenCache = new Map();
+  const whenOf = (id) => {
+    if (whenCache.has(id)) return whenCache.get(id);
+    const answer = readWhen(id);
+    whenCache.set(id, answer);
+    return answer;
   };
 
   // --- rule 4: arrow of time ----------------------------------------------
@@ -454,7 +648,7 @@ export function checkRules(records, topology = {}) {
       }
       if (r.confidence === 'consensus') {
         const cited = (r.sources ?? []).map((c) => lookup(c.source, 'source')).filter(Boolean);
-        const keys = cited.map((s) => new Set((s.creators ?? []).map(nameKey).filter(Boolean)));
+        const keys = cited.map(creatorKeysOf);
         let independent = false;
         for (let i = 0; i < keys.length && !independent; i += 1) {
           for (let j = i + 1; j < keys.length; j += 1) {
@@ -530,32 +724,23 @@ export function checkRules(records, topology = {}) {
     if (r.status === 'active' && r.supersededBy !== null && r.supersededBy !== undefined) {
       error(11, r, '/supersededBy', 'an active record is not superseded');
     }
+    // The three lookups that used to be scans. Every one of them asked "what
+    // still points at this tombstone", once per tombstone, over the whole
+    // atlas — which is quadratic in the share of the dataset that is
+    // retracted, and that share is 40 % (health review B, finding 4).
     if (r.kind === 'event' && r.status !== 'active') {
-      for (const e of activeEdges) {
-        if (e.from === r.id || e.to === r.id) {
-          error(11, r, '', `${r.status} event still has an active edge: ${e.id}`);
-        }
+      for (const e of edgesTouching(r.id)) {
+        error(11, r, '', `${r.status} event still has an active edge: ${e.id}`);
       }
     }
     if (r.kind === 'actor' && r.status !== 'active') {
-      for (const u of universe.values()) {
-        if (u.entry.status !== 'active') continue;
-        if (u.kind === 'event' && (u.entry.actors ?? []).some((a) => a?.actor === r.id)) {
-          error(11, r, '', `${r.status} actor is still referenced by the active event "${u.entry.id}"`);
-        }
-        if (u.kind === 'presence' && (u.entry.actor === r.id || u.entry.dependencyOf === r.id)) {
-          error(11, r, '', `${r.status} actor is still referenced by the active presence "${u.entry.id}"`);
-        }
-        if (u.kind === 'relation' && (u.entry.from === r.id || u.entry.to === r.id)) {
-          error(11, r, '', `${r.status} actor is still referenced by the active relation "${u.entry.id}"`);
-        }
+      for (const u of actorReferrers(r.id)) {
+        error(11, r, '', `${r.status} actor is still referenced by the active ${u.kind} "${u.entry.id}"`);
       }
     }
     if (r.kind === 'place' && r.status !== 'active') {
-      for (const u of universe.values()) {
-        if (u.kind === 'event' && u.entry.status === 'active' && u.entry.place === r.id) {
-          error(11, r, '', `${r.status} place is still referenced by the active event "${u.entry.id}"`);
-        }
+      for (const u of placeReferrers(r.id)) {
+        error(11, r, '', `${r.status} place is still referenced by the active event "${u.entry.id}"`);
       }
     }
     if (r.kind === 'event' && r.status === 'active' && typeof r.place === 'string') {
@@ -674,24 +859,24 @@ export function checkRules(records, topology = {}) {
     }
   }
   {
-    const byActor = new Map();
-    for (const u of universe.values()) {
-      if (u.kind !== 'presence' || u.entry.status !== 'active') continue;
-      if (!byActor.has(u.entry.actor)) byActor.set(u.entry.actor, []);
-      byActor.get(u.entry.actor).push(u.entry);
-    }
-    for (const list of byActor.values()) {
+    // Grouped by (actor, outline) rather than by actor alone: the pair this
+    // rule is about is two presences that put *the same* outline on one
+    // actor, so every other pair was compared and thrown away. Only the
+    // groups a record under validation is in are looked at, because the
+    // error is reported on the record under validation and nowhere else.
+    for (const [key, mine] of ours.presencesByOutline) {
+      const list = merge(base.presencesByOutline.get(key), mine, entryId);
+      const spans = list.map((p) => span(p.when));
       for (let i = 0; i < list.length; i += 1) {
         for (let j = i + 1; j < list.length; j += 1) {
           const a = list[i];
           const b = list[j];
-          if (!universe.get(a.id)?.own && !universe.get(b.id)?.own) continue;
-          if (a.geometry?.key !== b.geometry?.key) continue;
-          const sa = span(a.when);
-          const sb = span(b.when);
+          const own = ownIds.has(a.id) ? a : ownIds.has(b.id) ? b : null;
+          if (!own) continue;
+          const sa = spans[i];
+          const sb = spans[j];
           if (!sa || !sb || sa.to < sb.from || sb.to < sa.from) continue;
-          const culprit = universe.get(a.id)?.own ? a : b;
-          error(17, culprit, '/when', `"${a.id}" and "${b.id}" put the same outline on "${a.actor}" over overlapping years`);
+          error(17, own, '/when', `"${a.id}" and "${b.id}" put the same outline on "${a.actor}" over overlapping years`);
         }
       }
     }
@@ -746,9 +931,8 @@ export function checkRules(records, topology = {}) {
     const out = new Map();
     const nodes = new Set();
     const indegree = new Map();
-    for (const u of universe.values()) {
-      if (u.kind !== 'relation' || u.entry.status !== 'active' || u.entry.type !== type) continue;
-      const { from, to } = u.entry;
+    for (const entry of merge(base.relationsByType.get(type), ours.relationsByType.get(type), entryId)) {
+      const { from, to } = entry;
       nodes.add(from);
       nodes.add(to);
       if (!out.has(from)) out.set(from, []);
@@ -810,13 +994,7 @@ export function checkRules(records, topology = {}) {
   // and read the article. Two records of one kind claiming one item is the
   // mistake worth catching — it means one of them is a duplicate.
   {
-    const claimants = new Map();
-    for (const u of universe.values()) {
-      if (typeof u.entry.wikidata !== 'string') continue;
-      const key = `${u.kind} ${u.entry.wikidata}`;
-      if (!claimants.has(key)) claimants.set(key, []);
-      claimants.get(key).push(u.entry.id);
-    }
+    const claimantsOf = (key) => merge(base.claimants.get(key), ours.claimants.get(key), (id) => id);
     for (const r of own) {
       const hasItem = typeof r.wikidata === 'string';
       if ((hasItem || isObject(r.wikipedia) || Number.isInteger(r.sitelinks)) && !IDENTITY_KINDS.includes(r.kind)) {
@@ -824,7 +1002,7 @@ export function checkRules(records, topology = {}) {
         continue;
       }
       if (hasItem) {
-        const others = (claimants.get(`${r.kind} ${r.wikidata}`) ?? []).filter((id) => id !== r.id).sort();
+        const others = claimantsOf(`${r.kind} ${r.wikidata}`).filter((id) => id !== r.id).sort();
         if (others.length) {
           error(21, r, '/wikidata', `"${r.wikidata}" is already the Wikidata item of the ${r.kind} ${others.join(', ')}`);
         }
@@ -885,17 +1063,12 @@ export function checkRules(records, topology = {}) {
   }
 
   // --- warnings: degree zero, no citers -----------------------------------
-  const degree = new Map();
-  for (const e of activeEdges) {
-    degree.set(e.from, (degree.get(e.from) ?? 0) + 1);
-    degree.set(e.to, (degree.get(e.to) ?? 0) + 1);
-  }
   const cited = new Set();
   for (const r of own) {
     if (r.status === 'active') citations(r).forEach((id) => cited.add(id));
   }
   for (const r of own) {
-    if (r.kind === 'event' && r.status === 'active' && !degree.get(r.id)) {
+    if (r.kind === 'event' && r.status === 'active' && edgesTouching(r.id).length === 0) {
       warning('degree-zero', r, 'event has no edges');
     }
     if (r.kind === 'source' && r.status === 'active' && !cited.has(r.id)) {
@@ -906,42 +1079,16 @@ export function checkRules(records, topology = {}) {
   // An actor nothing references is the actor equivalent of degree zero, and
   // an event outside an actor's life is a warning rather than an error:
   // posthumous events are real, and so are institutions acting through
-  // their successors.
-  const referencedActors = new Map();
-  const noteActor = (id, entry) => {
-    if (!referencedActors.has(id)) referencedActors.set(id, []);
-    referencedActors.get(id).push(entry);
-  };
-  for (const u of universe.values()) {
-    if (u.entry.status !== 'active') continue;
-    if (u.kind === 'event') for (const a of u.entry.actors ?? []) noteActor(a?.actor, u.entry);
-    // An actor that holds a territory is used, even if no event names it:
-    // most of the world's polities are on the map long before this project
-    // has an event about them.
-    if (u.kind === 'presence') {
-      noteActor(u.entry.actor, u.entry);
-      if (u.entry.dependencyOf) noteActor(u.entry.dependencyOf, u.entry);
-    }
-    // An actor at either end of a relation is reachable from the other one's
-    // card, so it is used in the same sense a territory-holder is.
-    if (u.kind === 'relation') {
-      noteActor(u.entry.from, u.entry);
-      noteActor(u.entry.to, u.entry);
-    }
-  }
-  // A place nothing happened at is the place equivalent of degree zero. It is
-  // a warning and not an error: writing the place before the event it is for
-  // is a reasonable order to work in, and a place left behind by a retracted
-  // event is a fact about the world that has not stopped being true.
-  const usedPlaces = new Set();
-  for (const u of universe.values()) {
-    if (u.kind === 'event' && u.entry.status === 'active' && typeof u.entry.place === 'string') usedPlaces.add(u.entry.place);
-  }
+  // their successors. What counts as a reference is the same set rule 11
+  // asks about above — an active event that names it, an active presence
+  // whose ground it held or held over, an active relation at either end —
+  // so it is the same index and not a second walk of the universe. A place
+  // nothing happened at is the place equivalent, and the same again.
   for (const r of own) {
-    if (r.kind === 'place' && r.status === 'active' && !usedPlaces.has(r.id)) {
+    if (r.kind === 'place' && r.status === 'active' && placeReferrers(r.id).length === 0) {
       warning('place-unused', r, 'place is referenced by no event');
     }
-    if (r.kind === 'actor' && r.status === 'active' && !referencedActors.has(r.id)) {
+    if (r.kind === 'actor' && r.status === 'active' && actorReferrers(r.id).length === 0) {
       warning('actor-unused', r, 'actor is referenced by no event and no relation, and holds no territory');
     }
     // A relation whose years fall entirely outside an actor's own is a

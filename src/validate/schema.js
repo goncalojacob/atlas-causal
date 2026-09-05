@@ -77,7 +77,15 @@ function unescapePointer(seg) {
 
 // A ref is "<relative path>", "#<pointer>" or "<relative path>#<pointer>".
 // Refs never leave the schema set: there is no URL fetching, by design.
-export function resolveRef(files, fromFile, ref) {
+export function resolveRef(files, fromFile, ref, cache = null) {
+  if (cache) {
+    const key = `${fromFile} ${ref}`;
+    const seen = cache.get(key);
+    if (seen) return seen;
+    const found = resolveRef(files, fromFile, ref);
+    cache.set(key, found);
+    return found;
+  }
   const hash = ref.indexOf('#');
   const pathPart = hash < 0 ? ref : ref.slice(0, hash);
   const pointer = hash < 0 ? '' : ref.slice(hash + 1);
@@ -107,7 +115,7 @@ function schemaError(errors, file, pointer, message) {
   errors.push({ schema: `${file}#${pointer}`, message });
 }
 
-function checkSchema(node, file, pointer, files, errors) {
+function checkSchema(node, file, pointer, files, errors, patterns = null) {
   if (typeof node === 'boolean') return;
   if (!isPlainObject(node)) {
     schemaError(errors, file, pointer, 'a schema must be an object or a boolean');
@@ -143,11 +151,11 @@ function checkSchema(node, file, pointer, files, errors) {
           schemaError(errors, file, here, 'properties must be an object');
           break;
         }
-        for (const [name, sub] of Object.entries(value)) checkSchema(sub, file, `${here}/${name}`, files, errors);
+        for (const [name, sub] of Object.entries(value)) checkSchema(sub, file, `${here}/${name}`, files, errors, patterns);
         break;
       case 'additionalProperties':
       case 'items':
-        checkSchema(value, file, here, files, errors);
+        checkSchema(value, file, here, files, errors, patterns);
         break;
       case 'pattern':
         if (typeof value !== 'string') {
@@ -155,7 +163,13 @@ function checkSchema(node, file, pointer, files, errors) {
           break;
         }
         try {
-          new RegExp(value, 'u');
+          // Compiled here and kept: this walk already has to prove every
+          // pattern compiles, and compiling one per value checked was four
+          // fifths of the schema pass at twenty thousand records (health
+          // review A, finding 11). Keyed by the pattern text, so the same
+          // id pattern behind fifty $refs is one RegExp.
+          const compiled = new RegExp(value, 'u');
+          if (patterns && !patterns.has(value)) patterns.set(value, compiled);
         } catch (e) {
           schemaError(errors, file, here, `pattern does not compile: ${e.message}`);
         }
@@ -173,7 +187,7 @@ function checkSchema(node, file, pointer, files, errors) {
           schemaError(errors, file, here, 'oneOf must be a non-empty array');
           break;
         }
-        value.forEach((sub, i) => checkSchema(sub, file, `${here}/${i}`, files, errors));
+        value.forEach((sub, i) => checkSchema(sub, file, `${here}/${i}`, files, errors, patterns));
         break;
       case '$ref': {
         if (typeof value !== 'string') {
@@ -200,7 +214,10 @@ function fail(errors, path, keyword, message, extra) {
   errors.push({ path, keyword, message, ...extra });
 }
 
-function validateNode(schema, file, value, path, files, errors, refChain) {
+// `ctx` is what does not change between values: the schema files, the
+// patterns compiled once by checkSchema, and the $ref resolutions memoised
+// as they are asked for. It is built once per createValidator.
+function validateNode(schema, file, value, path, ctx, errors, refChain) {
   if (schema === true) return;
   if (schema === false) {
     fail(errors, path, 'false', 'no value is allowed here');
@@ -208,7 +225,7 @@ function validateNode(schema, file, value, path, files, errors, refChain) {
   }
 
   if (Object.hasOwn(schema, '$ref')) {
-    const target = resolveRef(files, file, schema.$ref);
+    const target = resolveRef(ctx.files, file, schema.$ref, ctx.refs);
     // Refs are checked at construction, so `error` here is unreachable unless
     // a caller bypassed createValidator.
     if (target.error) {
@@ -222,7 +239,7 @@ function validateNode(schema, file, value, path, files, errors, refChain) {
     }
     const next = new Set(refChain);
     next.add(key);
-    validateNode(target.node, target.file, value, path, files, errors, next);
+    validateNode(target.node, target.file, value, path, ctx, errors, next);
   }
 
   if (Object.hasOwn(schema, 'type')) {
@@ -250,8 +267,15 @@ function validateNode(schema, file, value, path, files, errors, refChain) {
     if (Object.hasOwn(schema, 'maxLength') && length > schema.maxLength) {
       fail(errors, path, 'maxLength', `must be at most ${schema.maxLength} characters`);
     }
-    if (Object.hasOwn(schema, 'pattern') && !new RegExp(schema.pattern, 'u').test(value)) {
-      fail(errors, path, 'pattern', `must match ${schema.pattern}`);
+    if (Object.hasOwn(schema, 'pattern')) {
+      // Compiled by checkSchema at construction; the fallback is for a
+      // pattern reached by a caller that bypassed createValidator.
+      let re = ctx.patterns.get(schema.pattern);
+      if (!re) {
+        re = new RegExp(schema.pattern, 'u');
+        ctx.patterns.set(schema.pattern, re);
+      }
+      if (!re.test(value)) fail(errors, path, 'pattern', `must match ${schema.pattern}`);
     }
   }
 
@@ -265,7 +289,7 @@ function validateNode(schema, file, value, path, files, errors, refChain) {
   }
 
   if (Array.isArray(value) && Object.hasOwn(schema, 'items')) {
-    value.forEach((item, i) => validateNode(schema.items, file, item, `${path}/${i}`, files, errors, new Set()));
+    value.forEach((item, i) => validateNode(schema.items, file, item, `${path}/${i}`, ctx, errors, new Set()));
   }
 
   if (isPlainObject(value)) {
@@ -277,7 +301,7 @@ function validateNode(schema, file, value, path, files, errors, refChain) {
     const props = Object.hasOwn(schema, 'properties') ? schema.properties : {};
     for (const [name, sub] of Object.entries(props)) {
       if (Object.hasOwn(value, name)) {
-        validateNode(sub, file, value[name], `${path}/${name}`, files, errors, new Set());
+        validateNode(sub, file, value[name], `${path}/${name}`, ctx, errors, new Set());
       }
     }
     if (Object.hasOwn(schema, 'additionalProperties')) {
@@ -286,7 +310,7 @@ function validateNode(schema, file, value, path, files, errors, refChain) {
         if (schema.additionalProperties === false) {
           fail(errors, `${path}/${name}`, 'additionalProperties', `unexpected property "${name}"`);
         } else {
-          validateNode(schema.additionalProperties, file, value[name], `${path}/${name}`, files, errors, new Set());
+          validateNode(schema.additionalProperties, file, value[name], `${path}/${name}`, ctx, errors, new Set());
         }
       }
     }
@@ -295,7 +319,7 @@ function validateNode(schema, file, value, path, files, errors, refChain) {
   if (Object.hasOwn(schema, 'oneOf')) {
     const attempts = schema.oneOf.map((sub) => {
       const subErrors = [];
-      validateNode(sub, file, value, path, files, subErrors, refChain);
+      validateNode(sub, file, value, path, ctx, subErrors, refChain);
       return subErrors;
     });
     const matched = attempts.filter((e) => e.length === 0).length;
@@ -314,9 +338,15 @@ function validateNode(schema, file, value, path, files, errors, refChain) {
 export function createValidator(files) {
   if (!isPlainObject(files)) throw new TypeError('createValidator expects an object of schema files');
   const schemaErrors = [];
+  // The two caches every validation shares. Both are filled by the walk
+  // below, which has to visit every keyword anyway; nothing is compiled or
+  // resolved twice for the life of the validator.
+  const patterns = new Map();
+  const refs = new Map();
   for (const [file, schema] of Object.entries(files)) {
-    checkSchema(schema, file, '', files, schemaErrors);
+    checkSchema(schema, file, '', files, schemaErrors, patterns);
   }
+  const ctx = { files, patterns, refs };
   return {
     schemaErrors,
     validate(file, value) {
@@ -325,7 +355,7 @@ export function createValidator(files) {
       }
       if (!Object.hasOwn(files, file)) throw new Error(`unknown schema file "${file}"`);
       const errors = [];
-      validateNode(files[file], file, value, '', files, errors, new Set());
+      validateNode(files[file], file, value, '', ctx, errors, new Set());
       return errors;
     },
   };

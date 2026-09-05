@@ -14,6 +14,7 @@
 import { submitBundle, CORRECTION_TEMPLATE } from '../contribute/submit.js';
 
 export const WRITE_PREFIX = '/__records/';
+export const STATUS_PATH = '/__status';
 
 export function endpointFor(kind, id) {
   return `${WRITE_PREFIX}${encodeURIComponent(kind)}/${encodeURIComponent(id)}`;
@@ -45,15 +46,36 @@ export async function putBundle(bundle, primary, { fetch: doFetch = globalThis.f
   return { available: true, ok: response.ok && body.ok !== false, status: response.status, body };
 }
 
+// What the server says about itself: `{ index: { state, since, message } }`,
+// where state is 'rebuilding' while data/index/ is being written behind an
+// answer already given. Unreachable is null and not an error — the page runs
+// under `python3 -m http.server` too, where there is no such endpoint.
+export async function readStatus({ fetch: doFetch = globalThis.fetch } = {}) {
+  try {
+    const response = await doFetch(STATUS_PATH, { headers: { accept: 'application/json' } });
+    if (!(response.headers?.get?.('content-type') ?? '').includes('application/json')) return null;
+    return await response.json();
+  } catch {
+    return null;
+  }
+}
+
 // The one call the dashboard makes. → { mode, ok, ... }:
-//   mode 'saved'     the file was written and data/index/ rebuilt
+//   mode 'saved'     the file was written; `indexing` says whether
+//                    data/index/ was still being rebuilt when we were told
 //   mode 'refused'   the server read it and the records do not validate
 //   mode 'bundle'    there is no server; the bundle is on the clipboard
 export async function saveBundle(bundle, primary, { fetch, submit = submitBundle, ...submitOptions } = {}) {
   const put = await putBundle(bundle, primary, { fetch });
   if (put.available) {
     return put.ok
-      ? { mode: 'saved', ok: true, written: put.body.written ?? [], warnings: put.body.warnings ?? [] }
+      ? {
+        mode: 'saved',
+        ok: true,
+        written: put.body.written ?? [],
+        warnings: put.body.warnings ?? [],
+        indexing: put.body.index?.state === 'rebuilding',
+      }
       : { mode: 'refused', ok: false, message: put.body.message ?? `the server answered ${put.status}`, errors: put.body.errors ?? [] };
   }
   const outcome = await submit(bundle, { template: CORRECTION_TEMPLATE, ...submitOptions });

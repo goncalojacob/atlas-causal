@@ -403,6 +403,90 @@ function benchSearch() {
       search(entries, query, { limit: 8 });
     }), `→ ${search(entries, query, { limit: 8 }).total} matches of ${entries.length}`);
   }
+
+// --- the tools -------------------------------------------------------------
+//
+// The three the health review timed and H4d is about: the cross-record rules
+// alone, the index build, and the validator with --index, which used to do
+// the whole job twice. The set is the seeded 20 000 events with 40 %
+// tombstones (tests/bench/dataset.mjs) — the share that makes rule 11's
+// inactive-record checks quadratic in the real data.
+const TOOL_EVENTS = Number(process.env.BENCH_EVENTS ?? 20000);
+
+// Same shape as measure(), for a case whose body has to await.
+async function measureAsync(fn, { budget = 4000, most = 3 } = {}) {
+  const runs = [];
+  let spent = 0;
+  while (runs.length < most && (runs.length === 0 || spent < budget)) {
+    const started = performance.now();
+    await fn();
+    const took = performance.now() - started;
+    runs.push(took);
+    spent += took;
+  }
+  // The first run as well as the best: the palette is memoised on the hash of
+  // its inputs, so a second build in one process is free and a cold one — the
+  // deploy job, every time — is not. Reporting only the best would report the
+  // number nobody gets.
+  return { best: Math.min(...runs), runs: runs.length, first: runs[0] };
+}
+
+async function benchRules() {
+  const { syntheticRecords } = await import('./dataset.mjs');
+  const { buildTopology } = await import('../../src/validate/core.js');
+  const { checkRules } = await import('../../src/validate/rules.js');
+  const { readFile } = await import('node:fs/promises');
+  const { ROOT } = await import('./dataset.mjs');
+  const pathMod = await import('node:path');
+  const regions = JSON.parse(await readFile(pathMod.join(ROOT, 'data', 'regions.json'), 'utf8'));
+
+  console.log('checkRules — the cross-record rules alone, in memory');
+  let atlas = null;
+  for (const share of [0, 0.4]) {
+    const records = syntheticRecords(TOOL_EVENTS, { tombstones: share });
+    // Built once and outside the measurement: the topology is what the
+    // rules are handed, not part of what they cost.
+    const topology = buildTopology(records, regions);
+    const result = measure(() => checkRules(records, topology), { budget: 2000, most: 3 });
+    const { errors, warnings } = checkRules(records, topology);
+    row(`${TOOL_EVENTS} events, ${Math.round(share * 100)} % tombstones`, result, `→ ${errors.length} errors, ${warnings.length} warnings`);
+    if (share === 0.4) atlas = { records, topology };
+  }
+  // What the contribution form and the review editor do on every keystroke:
+  // one record judged against the whole atlas. The universe is prebuilt
+  // because a page builds it once (health review B, finding 27); the row
+  // above it is the same call without one, which is what a page used to pay.
+  const { buildUniverse } = await import('../../src/validate/rules.js');
+  const one = [atlas.records.find((r) => r.kind === 'edge')];
+  row('one record, universe built per call', measure(() => checkRules(one, atlas.topology)));
+  const universe = buildUniverse(atlas.topology);
+  row('one record, universe prebuilt', measure(() => checkRules(one, atlas.topology, { universe })));
+}
+
+async function benchBuildIndex() {
+  const { syntheticDataDir } = await import('./dataset.mjs');
+  const { buildIndex } = await import('../../tools/build-index.mjs');
+  const dir = await syntheticDataDir(TOOL_EVENTS);
+  console.log(`build-index — ${TOOL_EVENTS} events with 40 % tombstones, off disk (${dir})`);
+  const built = await buildIndex(dir);
+  row('the whole index, in memory', await measureAsync(() => buildIndex(dir)), `→ ${Object.keys(built.files).length} files`);
+}
+
+async function benchValidateIndex() {
+  const { syntheticDataDir } = await import('./dataset.mjs');
+  const { runValidation, ROOT: TOOLS_ROOT } = await import('../../tools/validate.mjs');
+  const pathMod = await import('node:path');
+  const dir = await syntheticDataDir(TOOL_EVENTS);
+  console.log(`validate --index — the job deploy.yml runs on every push and serve.mjs used to run on every Save`);
+  const cold = (result) => `→ first run ${ms(result.first)} ms`;
+  const plain = await measureAsync(() => runValidation(dir));
+  row(`${TOOL_EVENTS} events, no --index`, plain, cold(plain));
+  const indexed = await measureAsync(() => runValidation(dir, { index: true }));
+  row(`${TOOL_EVENTS} events, --index`, indexed, cold(indexed));
+  const real = pathMod.join(TOOLS_ROOT, 'data');
+  const { counts } = await runValidation(real);
+  const onReal = await measureAsync(() => runValidation(real, { index: true }));
+  row(`the real dataset (${counts.records} records), --index`, onReal, cold(onReal));
 }
 
 const CASES = {
@@ -412,6 +496,10 @@ const CASES = {
   timeline: benchTimeline,
   queries: benchQueries,
   search: benchSearch,
+
+  rules: benchRules,
+  'build-index': benchBuildIndex,
+  validate: benchValidateIndex,
 };
 
 // The atlas off disk, for the cases that measure the real dataset rather than
@@ -439,6 +527,6 @@ for (const name of chosen) {
     process.exitCode = 1;
     continue;
   }
-  run(atlas);
+  await run(atlas);
   console.log('');
 }

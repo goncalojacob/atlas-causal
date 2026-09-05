@@ -13,7 +13,7 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 import { validate, buildTopology } from '../src/validate/core.js';
 import { createValidator } from '../src/validate/schema.js';
 import { createRegionDeriver, NEAREST_TOLERANCE } from '../src/util/geo.js';
-import { readSchemaFiles, readRecords, readRegions, readRegionPolygons, readPresenceShards, readImportMaps, readCachedLeads, DEFAULT_IMPORT_KIND, KIND_DIRS } from './lib/read.mjs';
+import { readSchemaFiles, readRecords, readRegions, readRegionPolygons, readPresenceShards, readPresenceGeometry, readImportMaps, readCachedLeads, DEFAULT_IMPORT_KIND, KIND_DIRS } from './lib/read.mjs';
 import { buildIndex, readIndex, compareIndex } from './build-index.mjs';
 import { buildPalette, readPalette, comparePalette, PALETTE_FILE } from './build-palette.mjs';
 import { countDrafts } from '../src/review/queue.js';
@@ -146,7 +146,11 @@ export async function runValidation(dataDir = DEFAULT_DATA, { index = false } = 
   const deriveRegion = polygons ? createRegionDeriver(polygons) : undefined;
   const topology = buildTopology(records, regions, { deriveRegion });
 
-  const result = validate(records, topology, schemas);
+  // One validator for the run: createValidator checks every schema file and
+  // compiles every pattern, and it was built twice — once inside validate()
+  // and once for the files under data/imports/ below.
+  const validator = createValidator(schemas);
+  const result = validate(records, topology, schemas, { validator });
   for (const e of result.errors) errors.push({ ...e, file: fileOf.get(e.id) ?? null });
   for (const w of result.warnings) warnings.push({ ...w, file: fileOf.get(w.id) ?? null });
 
@@ -172,9 +176,15 @@ export async function runValidation(dataDir = DEFAULT_DATA, { index = false } = 
   // Rule 17's half that needs the disk: the files a presence names exist,
   // hold its key, and between them cover every year the presence claims —
   // a shard missing from the middle would make a territory blink out.
+  //
+  // The shards are read once here and handed to the palette below, which
+  // used to read them all again: they are the largest files in the
+  // repository and there are ten of them.
+  const shards = topology.presences.length ? await readPresenceShards(dataDir) : [];
+  const geometry = shards.length ? await readPresenceGeometry(dataDir, shards) : new Map();
   if (topology.presences.length) {
-    const shards = await readPresenceShards(dataDir, { keys: true });
     const byFile = new Map(shards.map((s) => [s.file, s]));
+    const keysOf = (file) => geometry.get(file)?.keys ?? new Set();
     for (const p of topology.presences) {
       if (p.status !== 'active') continue;
       const files = Array.isArray(p.geometry?.files) ? p.geometry.files : [];
@@ -185,7 +195,7 @@ export async function runValidation(dataDir = DEFAULT_DATA, { index = false } = 
           errors.push({ rule: 17, id: p.id, file: fileOf.get(p.id) ?? null, path: '/geometry/files', message: `no such geometry shard: data/${file}` });
           continue;
         }
-        if (!shard.keys.has(p.geometry.key)) {
+        if (!keysOf(file).has(p.geometry.key)) {
           errors.push({ rule: 17, id: p.id, file: fileOf.get(p.id) ?? null, path: '/geometry/key', message: `data/${file} holds no feature "${p.geometry.key}"` });
           continue;
         }
@@ -210,7 +220,6 @@ export async function runValidation(dataDir = DEFAULT_DATA, { index = false } = 
   // are not in `entries` and no rule number owns them.
   const { maps, problems: mapProblems } = await readImportMaps(dataDir);
   for (const p of mapProblems) errors.push({ rule: 'import', id: null, file: p.file, path: '', message: p.message });
-  const validator = createValidator(schemas);
   if (maps.length) {
     const sourceIds = new Set(records.filter((r) => r?.kind === 'source').map((r) => r.id));
     for (const { file, kind, map } of maps) {
@@ -256,10 +265,21 @@ export async function runValidation(dataDir = DEFAULT_DATA, { index = false } = 
     // The palette first: the manifest names it, so an unbuilt palette would
     // otherwise be reported as a stale index and send whoever reads the
     // message to the wrong tool.
-    for (const p of comparePalette(await readPalette(dataDir), await buildPalette(dataDir))) {
+    const palette = await buildPalette(dataDir, { records, shards, geometry });
+    for (const p of comparePalette(await readPalette(dataDir), palette)) {
       errors.push({ rule: 16, id: null, file: PALETTE_FILE, path: '', message: `data/${PALETTE_FILE} is not what build-palette.mjs produces (${p}); run node tools/build-palette.mjs` });
     }
-    const built = await buildIndex(dataDir);
+    // Everything above is handed on rather than read and computed again:
+    // the records, the topology they were validated against, the shard list
+    // and — only when nothing failed, since the rules then ran over exactly
+    // these records — the warnings the review index is built from.
+    const built = await buildIndex(dataDir, {
+      records,
+      regions,
+      topology,
+      presenceShards: shards,
+      warnings: errors.length === 0 ? result.warnings : null,
+    });
     const existing = await readIndex(dataDir);
     for (const p of compareIndex(existing, built)) {
       errors.push({ rule: 16, id: null, file: `index/${p.split(' ')[1]}`, path: '', message: `data/index/ is not what build-index.mjs produces (${p}); run node tools/build-index.mjs` });

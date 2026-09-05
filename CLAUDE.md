@@ -156,7 +156,8 @@ tools/build-regions.mjs    Natural Earth → data/geo/
 tools/new-record.mjs       scaffold a record of any written kind; --new-place writes an event and its place at once
 tools/migrate-places.mjs   one-time: every event's `where` → a place record; kept as documentation
 tools/seed-review-flags.mjs  one-time: STATUS.md's "Dates to verify" onto the records as review flags
-tools/serve.mjs            the local server: the repository, plus PUT /__records/<kind>/<id>; 127.0.0.1 only, never deployed
+tools/serve.mjs            the local server: the repository, plus PUT /__records/<kind>/<id> and GET /__status; 127.0.0.1 only, never deployed
+tools/lib/store.mjs        the server's atlas between saves: the save queue, the topology patched as each save lands, the index rebuilt behind the answer
 tools/bundle-to-files.mjs  issue body → data/<kind>s/<id>.json; ids slug-checked before any path
 tools/lookup-sources.mjs   what the catalogues say a DOI or ISBN names; a review aid, never a gate
 tools/import/cshapes.mjs   CShapes 2.0 → actors, presences, geometry shards; topojson.mjs is its pure half and simplify.mjs the name it knows src/util/simplify.js by
