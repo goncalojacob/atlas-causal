@@ -16,7 +16,7 @@ import { createPicker, pickerIndex } from '../contribute/picker.js';
 import { reorderControls, refreshAll } from '../contribute/reorder.js';
 import {
   FIELDS, CITATION_LISTS, ACTOR_LISTS, STEP_LISTS, valuesFromRecord, applyValues, validateBundle, preparedFor,
-  isVocabulary, vocabularyChoices, roleChoices,
+  isVocabulary, vocabularyChoices, roleChoices, roleOptionsFor,
 } from '../contribute/bundle.js';
 import { identifiers, citationText } from '../citation.js';
 import { citationRows, setVerified, clearVerified } from './citations.js';
@@ -218,13 +218,16 @@ export function createEditor({
   // a narrative's steps are its walk, and a step in the wrong place is a
   // different argument. Citations and actors are sets and get no controls.
   // `extraKey` is the third column, which only the actors have: the free text
-  // beside the role, now that the role itself is a vocabulary. `suggestions`
-  // is that vocabulary, offered on the second column as a `<datalist>` and
-  // never enforced — a role outside the list is the warning `role-unknown`
-  // until M32b applies the mapping.
+  // beside the role, now that the role itself is a vocabulary. `choices` is
+  // that vocabulary, and where it is given the second column is a closed
+  // `<select>` and not a text box — a role outside `data/roles.json` is rule
+  // 25 since M32b-1. It is given for the actor list alone: a citation's
+  // locator and a narrative step's text stay free text, which is what they
+  // are. An empty list (a dataset with no vocabulary, checked against
+  // nothing) leaves the column free text too.
   function renderList(list, {
     optionsName, textKey, refKey, placeholder, hint, label, ordered = false,
-    extraKey = null, extraPlaceholder = '', suggestions = [],
+    extraKey = null, extraPlaceholder = '', choices = [],
   }) {
     const items = () => values[list.key];
     const wrap = html('div', { class: 'field list' });
@@ -234,12 +237,6 @@ export function createEditor({
     head.appendChild(add);
     wrap.appendChild(head);
     if (hint) wrap.appendChild(html('p', { class: 'hint' }, hint));
-    const suggestionsId = suggestions.length ? uid(`${list.key}-options`) : null;
-    if (suggestionsId) {
-      const datalist = html('datalist', { id: suggestionsId });
-      for (const value of suggestions) datalist.appendChild(html('option', { value }));
-      wrap.appendChild(datalist);
-    }
     const rows = html('ul', { class: 'citation-rows' });
     wrap.appendChild(rows);
     const error = html('p', { class: 'field-error', hidden: 'hidden' });
@@ -258,11 +255,22 @@ export function createEditor({
           refresh();
         },
       });
-      const text = textKey === 'text'
-        ? html('textarea', { rows: '3', placeholder, 'aria-label': `${label} text` })
-        : html('input', { type: 'text', placeholder, 'aria-label': `${label} text`, list: suggestionsId });
+      // The option's label goes in with `textContent` and its title with
+      // `setAttribute`, so record text is safe without `esc()`, which is for
+      // markup built as strings (src/util/dom.js, amendment A8).
+      let text;
+      if (choices.length) {
+        text = html('select', { 'aria-label': `${label} text` });
+        for (const choice of roleOptionsFor(choices, item[textKey])) {
+          text.appendChild(html('option', { value: choice.value, title: choice.title || null }, choice.label));
+        }
+      } else if (textKey === 'text') {
+        text = html('textarea', { rows: '3', placeholder, 'aria-label': `${label} text` });
+      } else {
+        text = html('input', { type: 'text', placeholder, 'aria-label': `${label} text` });
+      }
       text.value = item[textKey] ?? '';
-      text.addEventListener('input', () => {
+      text.addEventListener(choices.length ? 'change' : 'input', () => {
         item[textKey] = text.value;
         refresh();
       });
@@ -315,7 +323,7 @@ export function createEditor({
       optionsName: 'actors', refKey: 'actor', textKey: 'role', label: list.label,
       placeholder: 'role: leader, signatory, deposed',
       extraKey: 'note', extraPlaceholder: 'note: what the role cannot say',
-      suggestions: roleChoices(topology),
+      choices: roleChoices(topology),
       hint: 'The actors of this event and what each did in it — not everyone alive at the time. The role comes from the atlas\'s list; the note beside it is the reviewer\'s own.',
     }));
   }

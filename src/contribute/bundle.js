@@ -204,12 +204,41 @@ export function vocabularyChoices(name, topology) {
   ];
 }
 
-// The roles a contributor may write beside an actor, as a datalist: the list
-// closed on 5 September (plan decision 7) offered rather than enforced, since
-// a role outside it is the warning `role-unknown` and not an error until M32b
-// applies the mapping. Absent means no suggestions, never an empty vocabulary.
+// The roles a contributor may write beside an actor. The list closed on
+// 5 September (plan decision 7) and M32b-1 made a role outside it rule 25, an
+// error, so both writing pages draw it as a closed control and not as a
+// suggestion: what a contributor cannot say here is exactly what the
+// validator would refuse. The phrase the role cannot hold goes in the `note`
+// beside it, which is what the 163 free-text roles became.
+//
+// An empty first option so an unfilled row is still an unfilled row and
+// reports at `/actors/<i>/role`, and the description as the option's title,
+// which is the only place a writer is told what a role covers.
+//
+// Absent means an empty list and not an empty vocabulary: a dataset with no
+// `data/roles.json` is checked against nothing (M30a, amendment A8), so the
+// pages fall back to free text there rather than offering a choice of none.
 export function roleChoices(topology) {
-  return (topology?.rolesAllowed ?? []).map((row) => (typeof row === 'string' ? row : row.id));
+  const rows = topology?.rolesAllowed ?? [];
+  if (rows.length === 0) return [];
+  return [
+    { value: '', label: '— no role —', title: '' },
+    ...rows.map((row) => (typeof row === 'string'
+      ? { value: row, label: row, title: '' }
+      : { value: row.id, label: row.label ?? row.id, title: row.description ?? '' })),
+  ];
+}
+
+// A `<select>` set to a value it has no option for silently reports the empty
+// one, which would blank a role on a record that merely opened in the
+// dashboard. So a role the list does not have keeps an option of its own,
+// said to be outside the list: rule 25 is what refuses it, on a save, with a
+// message — not a control that drops it while nobody is looking. A tombstone
+// written before the list closed is the case this is for.
+export function roleOptionsFor(choices, value) {
+  if (choices.length === 0 || typeof value !== 'string' || value === '') return choices;
+  if (choices.some((choice) => choice.value === value)) return choices;
+  return [...choices, { value, label: `${value} — not in data/roles.json`, title: 'Written before the list closed, or by hand. Rule 25 refuses it on an active event.' }];
 }
 
 // The form's fields for each kind, in the order the registry names them.

@@ -15,7 +15,10 @@
 
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
+import { readFile } from 'node:fs/promises';
+import path from 'node:path';
 import { withBrowser, open, waitFor, skip } from './browser.mjs';
+import { ROOT } from './helpers.mjs';
 
 const QUEUE_READY = 'return document.querySelectorAll(".queue-item").length > 0;';
 
@@ -188,21 +191,38 @@ test('a reviewer can set an event\'s category, and the diff says so', { skip }, 
     await waitFor(page, 'return document.querySelector(".editor-mount .field-category select") !== null;', 'the editor');
     const drawn = await page.eval(`const root = document.querySelector('.editor-mount');
       const row = root.querySelector('.field.list .citation-row');
-      const role = row ? row.querySelector('input[aria-label$="text"]') : null;
+      const role = row ? row.querySelector('select[aria-label$="text"]') : null;
       return {
         kind: root.querySelector('.editor').className,
         parentIsPicker: Boolean(root.querySelector('.field-parent .picker')),
         scope: [...root.querySelectorAll('.field-scope option')].map((o) => o.value),
         category: root.querySelector('.field-category select').value,
         blank: root.querySelector('.field-category option').textContent,
-        roleSuggestions: role && role.list ? role.list.options.length : 0,
+        roleOptions: role ? [...role.options].map((o) => o.value) : null,
+        roleBlank: role ? role.options[0].textContent : null,
+        roleTitle: role ? role.options[1].getAttribute('title') : null,
+        roleIsFreeText: Boolean(row && row.querySelector('input[aria-label$="text"]')),
+        noteBox: row ? Boolean([...row.querySelectorAll('input[aria-label]')].find((i) => /note$/i.test(i.getAttribute('aria-label')))) : false,
+        // A citation's locator and a narrative step's text are free text and
+        // stay free text: the closed list is the actor list's alone.
+        freeTextColumns: [...root.querySelectorAll('.field.list input[aria-label$="text"], .field.list textarea[aria-label$="text"]')].map((i) => i.getAttribute('aria-label')),
       };`);
     assert.match(drawn.kind, /\bevent\b/, 'the queue opens on an event');
     assert.ok(drawn.parentIsPicker, 'Part of is a picker over the events');
     assert.deepEqual(drawn.scope, ['', 'regional', 'worldwide']);
     assert.equal(drawn.category, '', 'no record in data/ carries a category yet');
     assert.equal(drawn.blank, '— not said —');
-    assert.ok(drawn.roleSuggestions > 0, 'the roles are offered on the actor rows');
+    // M32b-1: the role is a closed list, since a role outside
+    // `data/roles.json` is rule 25 and the dashboard must not offer what the
+    // validator would refuse. The note beside it is where free text went.
+    const roles = JSON.parse(await readFile(path.join(ROOT, 'data', 'roles.json'), 'utf8'));
+    assert.deepEqual(drawn.roleOptions, ['', ...roles.map((r) => r.id)]);
+    assert.equal(drawn.roleBlank, '— no role —');
+    assert.equal(drawn.roleTitle, roles[0].description, 'what the role covers, from data/');
+    assert.equal(drawn.roleIsFreeText, false, 'a role cannot be typed here either');
+    assert.ok(drawn.noteBox, 'the note beside the role');
+    assert.ok(drawn.freeTextColumns.length > 0, 'a citation locator is still free text');
+    assert.ok(drawn.freeTextColumns.every((label) => !/^Actors/.test(label)), drawn.freeTextColumns.join(' | '));
 
     await page.eval(`const select = document.querySelector('.editor-mount .field-category select');
       select.value = 'revolution';

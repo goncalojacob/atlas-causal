@@ -13,7 +13,7 @@ import { html } from '../util/dom.js';
 import {
   FIELDS, CITATION_LISTS, ACTOR_LISTS, STEP_LISTS, emptyValues, buildBundle, slugify,
   comparableOf, findDuplicates, NO_DUPLICATES, validateBundle, preparedFor,
-  isVocabulary, vocabularyChoices, roleChoices,
+  isVocabulary, vocabularyChoices, roleChoices, roleOptionsFor,
 } from './bundle.js';
 import { createPicker, pickerIndex, kindsFor } from './picker.js';
 import { reorderControls, refreshAll } from './reorder.js';
@@ -319,17 +319,12 @@ export function createForm(container, {
     head.appendChild(add);
     wrap.appendChild(head);
     wrap.appendChild(html('p', { class: 'hint' }, 'The actors of this event and what each did in it — not everyone alive at the time. The role comes from the atlas\'s list; the note beside it is yours.'));
-    // Offered, not enforced: a role outside the list is the warning
-    // `role-unknown` until M32b applies the mapping, and a `<datalist>` on a
-    // text input is exactly that — suggestions over free text, and no
-    // suggestions at all where the dataset has no `data/roles.json`.
+    // A closed list and no longer a datalist: a role outside `data/roles.json`
+    // is rule 25 since M32b-1, so what cannot be chosen here is exactly what
+    // the validator would refuse. A dataset with no vocabulary is checked
+    // against nothing, and there the box stays free text — offering a choice
+    // of none would be the empty closed set amendment A8 rules out.
     const roles = roleChoices(topology);
-    const rolesId = `${entry.key}-${list.key}-roles`;
-    if (roles.length) {
-      const datalist = html('datalist', { id: rolesId });
-      for (const role of roles) datalist.appendChild(html('option', { value: role }));
-      wrap.appendChild(datalist);
-    }
     const rows = html('ul', { class: 'citation-rows' });
     wrap.appendChild(rows);
     const error = html('p', { class: 'field-error', hidden: 'hidden' });
@@ -345,11 +340,18 @@ export function createForm(container, {
           refresh();
         },
       });
-      const role = html('input', {
-        type: 'text', placeholder: 'role: leader, signatory, deposed', 'aria-label': 'Role', list: roles.length ? rolesId : null,
-      });
+      // The option's label is set with `textContent` and its title with
+      // `setAttribute`, so record text is safe without `esc()` — which is for
+      // markup built as strings and would print `&` to the reader here
+      // (src/util/dom.js, amendment A8).
+      const role = roles.length
+        ? html('select', { 'aria-label': 'Role' })
+        : html('input', { type: 'text', placeholder: 'role: leader, signatory, deposed', 'aria-label': 'Role' });
+      for (const choice of roleOptionsFor(roles, item.role)) {
+        role.appendChild(html('option', { value: choice.value, title: choice.title || null }, choice.label));
+      }
       role.value = item.role ?? '';
-      role.addEventListener('input', () => {
+      role.addEventListener(roles.length ? 'change' : 'input', () => {
         item.role = role.value;
         refresh();
       });

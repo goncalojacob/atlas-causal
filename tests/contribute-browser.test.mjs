@@ -388,19 +388,32 @@ test('the form writes an event\'s parent, reach, category and an actor\'s note',
     assert.equal(drawn.categoryLabels[0], '— not said —');
     assert.equal(drawn.categoryLabels[1], categories[0].label);
 
-    // The role is offered the atlas's 31 and not held to them: a `<datalist>`
-    // over a text input, because a role outside the list is a warning until
-    // M32b applies the mapping.
+    // M32b-1: the role is a closed list and no longer a suggestion, because a
+    // role outside `data/roles.json` is rule 25 and the form must not offer
+    // what the validator would refuse. The free text moved to the `note`
+    // beside it, which is what the 163 phrases in use became.
     await page.eval(`document.querySelector('section.entry.event .actors .link.small').click(); return true;`);
     await waitFor(page, `return document.querySelector('section.entry.event .actors .citation-row') !== null;`, 'the actor row');
     const roles = JSON.parse(await readFile(path.join(ROOT, 'data', 'roles.json'), 'utf8'));
     const row = await page.eval(`const r = document.querySelector('section.entry.event .actors .citation-row');
-      const inputs = [...r.querySelectorAll('input[aria-label]')].map((i) => i.getAttribute('aria-label'));
-      const role = r.querySelector('input[aria-label="Role"]');
-      const suggestions = role.list ? [...role.list.options].map((o) => o.value) : null;
-      return { inputs, suggestions };`);
-    assert.deepEqual(row.inputs, ['Actor', 'Role', 'Note'], 'a third column for the note');
-    assert.deepEqual(row.suggestions, roles.map((r) => r.id));
+      const role = r.querySelector('select[aria-label="Role"]');
+      return {
+        labels: [...r.querySelectorAll('input[aria-label], select[aria-label]')].map((i) => i.getAttribute('aria-label')),
+        tags: [...r.querySelectorAll('input[aria-label], select[aria-label]')].map((i) => i.tagName.toLowerCase()),
+        options: role ? [...role.options].map((o) => o.value) : null,
+        optionLabels: role ? [...role.options].map((o) => o.textContent) : null,
+        titles: role ? [...role.options].map((o) => o.getAttribute('title')) : null,
+        freeText: Boolean(r.querySelector('input[aria-label="Role"]')),
+      };`);
+    assert.deepEqual(row.labels, ['Actor', 'Role', 'Note'], 'a third column for the note');
+    assert.deepEqual(row.tags, ['input', 'select', 'input'], 'the role is a select and the note is not');
+    assert.equal(row.freeText, false, 'a role cannot be typed');
+    // Blank first, so an unfilled row is still unfilled and reports at
+    // /actors/0/role rather than quietly taking the first role in the file.
+    assert.deepEqual(row.options, ['', ...roles.map((r) => r.id)]);
+    assert.equal(row.optionLabels[0], '— no role —');
+    assert.equal(row.optionLabels[1], roles[0].label);
+    assert.equal(row.titles[1], roles[0].description, 'what the role covers, from data/');
 
     // And all four reach the bundle the contributor would file.
     await page.eval(`const card = document.querySelector('section.entry.event');
@@ -411,7 +424,9 @@ test('the form writes an event\'s parent, reach, category and an actor\'s note',
       set(card.querySelector('.field-scope select'), 'worldwide');
       set(card.querySelector('.field-category select'), 'war');
       const row = card.querySelector('.actors .citation-row');
-      set(row.querySelector('input[aria-label="Role"]'), 'leader');
+      const role = row.querySelector('select[aria-label="Role"]');
+      role.value = 'leader';
+      role.dispatchEvent(new Event('change', { bubbles: true }));
       set(row.querySelector('input[aria-label="Note"]'), 'a synthetic note');
       return true;`);
     await waitFor(page, `return /worldwide/.test(document.querySelector('.preview').textContent);`, 'the bundle');

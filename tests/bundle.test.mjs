@@ -7,7 +7,7 @@ import {
   FIELDS, CITATION_LISTS, ACTOR_LISTS, STEP_LISTS, emptyValues, slugify, parseBound, buildRecord, buildBundle,
   comparableOf, comparableIndex, findDuplicates, similarity, checkBundleShape, validateBundle, everythingCited,
   valuesFromRecord, applyValues, wikidataFrom, canMove, moveItem,
-  isVocabulary, vocabularyChoices, roleChoices,
+  isVocabulary, vocabularyChoices, roleChoices, roleOptionsFor,
 } from '../src/contribute/bundle.js';
 import { buildTopology } from '../src/validate/core.js';
 import { createValidator } from '../src/validate/schema.js';
@@ -517,15 +517,16 @@ test("an actor line's note is written when it is filled in and not otherwise", (
   );
 });
 
-// The two closed lists the form offers as a `<select>` and the one it offers
-// as suggestions, all three off the topology and all three absent-tolerant:
-// a dataset with no `data/categories.json` has no categories to choose, which
-// is the same thing that turns the check off on the CLI (M30a, A8).
+// The three closed lists the form offers as a `<select>` — the lanes, the
+// categories and, since M32b-1 made a role outside the list rule 25, the
+// roles — all off the topology and all absent-tolerant: a dataset with no
+// `data/categories.json` has no categories to choose, which is the same thing
+// that turns the check off on the CLI (M30a, A8).
 test('the vocabularies the form offers come off the topology, and absent means none', () => {
   const topology = {
     regions: [{ id: 'europe', label: 'Europe' }],
     categoriesAllowed: [{ id: 'war', label: 'War' }, { id: 'treaty' }],
-    rolesAllowed: [{ id: 'leader' }, { id: 'signatory' }],
+    rolesAllowed: [{ id: 'leader', label: 'Leader', description: 'Led it.' }, { id: 'signatory' }],
   };
   assert.ok(isVocabulary('regions') && isVocabulary('categories'));
   assert.equal(isVocabulary('events'), false, 'a corpus is a picker, not a select');
@@ -534,9 +535,30 @@ test('the vocabularies the form offers come off the topology, and absent means n
     { value: 'war', label: 'War' },
     { value: 'treaty', label: 'treaty' },
   ]);
-  assert.deepEqual(roleChoices(topology), ['leader', 'signatory']);
+  // A role carries its description as the option's title: it is the only
+  // place a writer is told what one covers.
+  assert.deepEqual(roleChoices(topology), [
+    { value: '', label: '— no role —', title: '' },
+    { value: 'leader', label: 'Leader', title: 'Led it.' },
+    { value: 'signatory', label: 'signatory', title: '' },
+  ]);
   assert.deepEqual(vocabularyChoices('categories', {}), [{ value: '', label: '— not said —' }]);
+  // Absent is an empty list and not a list of one blank: where there is no
+  // vocabulary the pages leave the box free text, because the validator is
+  // checking the role against nothing (A8).
   assert.deepEqual(roleChoices({}), []);
+
+  // A role the list does not have keeps an option of its own rather than
+  // being silently reported as the blank one — a tombstone written before the
+  // list closed opens in the dashboard without losing what it says.
+  const choices = roleChoices(topology);
+  assert.deepEqual(roleOptionsFor(choices, 'leader'), choices);
+  assert.deepEqual(roleOptionsFor(choices, '').length, choices.length);
+  const widened = roleOptionsFor(choices, 'king in whose name it was called');
+  assert.equal(widened.length, choices.length + 1);
+  assert.equal(widened.at(-1).value, 'king in whose name it was called');
+  assert.match(widened.at(-1).label, /not in data\/roles\.json/);
+  assert.deepEqual(roleOptionsFor([], 'anything'), []);
 });
 
 test('valuesFromRecord and applyValues round-trip the fixture records', async () => {
