@@ -325,7 +325,7 @@ test('the form builds a tenure and its office picker answers, and review.html op
     await waitFor(page, 'return document.querySelectorAll(".entry").length > 0;', 'the tenure entry');
     const labels = await page.eval(`return [...document.querySelectorAll('.entry label')]
       .map((l) => l.textContent.replace(/\\s+/g, ' ').trim());`);
-    assert.deepEqual(labels.slice(-6), ['Person *', 'Office *', 'Id *', 'Start year *', 'End year', 'Started by']);
+    assert.deepEqual(labels.slice(-7), ['Person *', 'Office *', 'Id *', 'Start year *', 'End year', 'Started by', 'Note']);
 
     // The office picker over the real dataset: the three Portuguese offices
     // are the only records it can offer, and it finds one by its title.

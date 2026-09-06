@@ -364,6 +364,10 @@ export function buildTopology(records, regions, { deriveRegion } = {}) {
         office: r.office,
         when: r.when,
         startedBy: r.startedBy ?? null,
+        // For the reason a relation's `note` is here: a tenure has no card of
+        // its own, so the office's strip draws every holder without fetching
+        // a record each, and the note is short by schema.
+        note: typeof r.note === 'string' ? r.note : null,
         status: r.status,
         supersededBy: r.supersededBy ?? null,
         aliases: r.aliases ?? [],
@@ -584,6 +588,7 @@ export function buildSpine(topology) {
       office: t.office,
       when: t.when,
       startedBy: t.startedBy ?? null,
+      note: t.note ?? null,
     })),
     narratives: (topology.narratives ?? []).map((n) => spineEntry({
       ...envelopeOf(n, 'narrative'),

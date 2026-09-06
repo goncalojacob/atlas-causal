@@ -35,7 +35,7 @@ const FIELDS = {
   // card may fetch the record; a tenure has no address of its own and does
   // not, the way a relation does not.
   office: [...ENVELOPE, 'wikidata', 'wikipedia', 'of', 'title', 'category', 'revised', 'when'],
-  tenure: [...ENVELOPE, 'wikidata', 'wikipedia', 'person', 'office', 'when', 'startedBy'],
+  tenure: [...ENVELOPE, 'wikidata', 'wikipedia', 'person', 'office', 'when', 'startedBy', 'note'],
   narrative: [...ENVELOPE, 'wikidata', 'wikipedia', 'title', 'revised', 'summary', 'authors', 'window', 'steps'],
 };
 // A tombstone is fetched like any other record — 175 retracted events reach

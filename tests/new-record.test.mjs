@@ -83,12 +83,15 @@ test('scaffolded records have the envelope and pass their schema; the text is le
   }).when, { start: 1834, end: null });
 
   const tenure = scaffold('tenure', ['fixture-holder-1976'], {
-    ...opts, person: 'fixture-actor-one', office: 'prime-minister-of-fixtures', start: '1976', end: '1978', startedBy: 'fixture-event-a',
+    ...opts, person: 'fixture-actor-one', office: 'prime-minister-of-fixtures', start: '1976', end: '1978', startedBy: 'fixture-event-a', note: 'Founding secretary-general.',
   });
   assert.equal(tenure.person, 'fixture-actor-one');
   assert.deepEqual(tenure.when, { start: 1976, end: 1978 });
   assert.equal(tenure.startedBy, 'fixture-event-a');
+  assert.equal(tenure.note, 'Founding secretary-general.');
   assert.deepEqual(v.validate('v1/tenure.json', tenure), []);
+  // Absent rather than guessed, exactly as a relation's is.
+  assert.equal(scaffold('tenure', ['unnoted'], { ...opts, person: 'p', office: 'o', start: '1976' }).note, null);
   assert.equal(scaffold('tenure', ['still-in-post'], {
     ...opts, person: 'p', office: 'o', start: '2024', end: 'null',
   }).when.end, null);

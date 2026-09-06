@@ -197,6 +197,7 @@ test('a built record carries the envelope and passes its schema', async () => {
     start: '1200',
     end: '',
     startedBy: '',
+    note: 'Held it through the two majorities.',
     citations: [{ source: 'fixture-source-1' }],
   }, CONTEXT);
   // A free slug and not from--to--type: one person may hold one office three
@@ -204,7 +205,11 @@ test('a built record carries the envelope and passes its schema', async () => {
   assert.equal(tenure.id, 'synthetic-tenure');
   assert.deepEqual(tenure.when, { start: 1200, end: 1200 });
   assert.equal(tenure.startedBy, null);
+  assert.equal(tenure.note, 'Held it through the two majorities.');
   assert.deepEqual(v.validate('v1/tenure.json', tenure), []);
+  // And back to the form's own fields, which is the pair the review editor
+  // opens a record in.
+  assert.equal(valuesFromRecord('tenure', tenure).note, 'Held it through the two majorities.');
 
   assert.throws(() => buildRecord('presence', {}, CONTEXT), /kind must be/);
 });

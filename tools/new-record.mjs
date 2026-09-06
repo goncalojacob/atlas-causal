@@ -17,7 +17,7 @@
 //        --category head-of-government [--start 1834 --end 1834 | --end null]
 //        [--summary "…"]
 //   node tools/new-record.mjs tenure <id> --person soares --office prime-minister-of-portugal
-//        --start 1976 [--end 1978 | --end null] [--startedBy <event id>] [--source <id>]
+//        --start 1976 [--end 1978 | --end null] [--startedBy <event id>] [--note "…"] [--source <id>]
 //   node tools/new-record.mjs narrative <id> --title "…" --step <event or edge id> (repeatable)
 //        [--from 1961 --to 1975]
 //   node tools/new-record.mjs source <id> --type book --title "…" --creators "A; B"
@@ -248,6 +248,7 @@ export function scaffold(kind, positional, options) {
       office: options.office,
       when: { start, end },
       startedBy: typeof options.startedBy === 'string' ? options.startedBy : null,
+      note: typeof options.note === 'string' ? options.note : null,
     };
   }
 

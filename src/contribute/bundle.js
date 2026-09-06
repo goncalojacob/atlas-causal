@@ -139,6 +139,7 @@ const DESCRIPTORS = Object.freeze({
     { key: 'start', label: 'Start year', input: 'text', path: '/when/start', required: true, hint: 'the year they took it; a range as 1400..1450' },
     { key: 'end', label: 'End year', input: 'text', path: '/when/end', hint: 'blank means the same year as the start; write "ongoing" for somebody still in post' },
     { key: 'startedBy', label: 'Started by', input: 'select', optionsFrom: 'events', path: '/startedBy', hint: 'optional: the election, the coup or the succession that began it' },
+    { key: 'note', label: 'Note', input: 'text', path: '/note', hint: 'optional, short, and written by you: what the office, the person and the dates cannot say' },
   ]),
   narrative: Object.freeze([
     { key: 'title', label: 'Title', input: 'text', path: '/title', required: true },
@@ -506,6 +507,7 @@ export function buildRecord(kind, values, context = {}) {
       office: trimmed(v.office),
       when: { start, end: parseEnd(v.end, start) },
       startedBy: orNull(v.startedBy),
+      note: orNull(v.note),
     };
   }
 
@@ -702,6 +704,7 @@ export function valuesFromRecord(kind, record) {
       start: boundText(when.start),
       end: endText(when.end, when.start),
       startedBy: r.startedBy ?? '',
+      note: r.note ?? '',
     };
   }
 

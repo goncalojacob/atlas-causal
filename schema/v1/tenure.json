@@ -42,6 +42,13 @@
         { "type": "null" },
         { "$ref": "../common/provenance.json#/properties/id" }
       ]
+    },
+    "note": {
+      "description": "Optional, short, and written by a person: what the office, the person and two dates cannot say — that they were the founding secretary-general, or that the end is the year they left on being elected President. Carried in the topology exactly as a relation's is, because a tenure has no card of its own and is drawn from the office's.",
+      "oneOf": [
+        { "type": "null" },
+        { "type": "string", "minLength": 1, "maxLength": 200 }
+      ]
     }
   }
 }

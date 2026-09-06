@@ -26,5 +26,6 @@
     "start": 1208,
     "end": 1220
   },
-  "startedBy": null
+  "startedBy": null,
+  "note": "Synthetic: a note, so that the field is carried into the topology and the spine by something."
 }

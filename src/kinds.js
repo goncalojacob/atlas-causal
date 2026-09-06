@@ -257,7 +257,7 @@ const KIND_ENTRIES = {
     citations: [{ key: 'citations', label: 'Sources', path: '/sources' }],
     actors: [],
     steps: [],
-    fields: ['person', 'office', 'id', 'start', 'end', 'startedBy'],
+    fields: ['person', 'office', 'id', 'start', 'end', 'startedBy', 'note'],
     importOrder: null,
   },
   narrative: {
