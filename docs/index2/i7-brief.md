@@ -157,3 +157,36 @@ run over it, the result asserted:
   literal line:
 
 `I7 done`
+
+## Amendments after review
+
+Written 6 September 2026 by an independent Fable reviewer of the plan and
+the nine briefs, against `origin/briefs-index2` at `ce81e35` and `origin/m0`
+at `8f51af7`, with the ten owner questions of section 5 answered as recommended
+and recorded here; the owner may overrule. **These override the body where
+they differ** (run protocol section 3). Line numbers are as of `8f51af7`; find the
+code by name after M30b.
+
+A0. **Gate and reading unchanged.** `tools/migrate/` holds `apply.mjs` and
+`led-to-tenures.mjs` (M30a-2); the new tool is `tools/migrate/ids.mjs`
+beside them and `CLAUDE.md` names it there.
+
+A1. **A renamed record keeps its history.** `tools/lib/history.mjs:70-81`
+filters `--diff-filter=AM` under git's default rename detection, so the
+rename commit is `R` and dropped, and `pathOf` (`:147`) looks up the new
+path only: a renamed record falls to `from: 'revised'`. `recordHistories`
+also asks for `<kind dir>/<alias>.json` for every alias of the record and
+merges those states before the current path's. A test on a scratch clone
+with two commits: the versions before the rename are still listed after it.
+
+A2. **Import-owned records are refused.** A record whose `origin.tool` is in
+`IMPORT_TOOLS` is not renamed; the tool prints that a territory or an
+imported item is corrected in `data/imports/` and by a re-run (`CLAUDE.md`,
+"Correcting a territory"). Reason: a CShapes actor's presences are
+`<actor>-<year>` and the next `--import` re-derives both from the map. A
+test per refusal.
+
+A3. **`data/imports/wikidata-seeds.json` is on the rewrite list** with
+`cshapes-actors.json`: its items may name atlas ids. Reading goes through
+`tools/lib/read.mjs` (`readImportMaps`); writing back is the tool's, with
+the same canonical serialisation the file has.

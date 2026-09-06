@@ -153,3 +153,40 @@ opening and not a lens.
   `Index cycle 2 done`.
 
 `I9 done`
+
+## Amendments after review
+
+Written 6 September 2026 by an independent Fable reviewer of the plan and
+the nine briefs, against `origin/briefs-index2` at `ce81e35` and `origin/m0`
+at `8f51af7`, with the ten owner questions of section 5 answered as recommended
+and recorded here; the owner may overrule. **These override the body where
+they differ** (run protocol section 3). Line numbers are as of `8f51af7`; find the
+code by name after M30b.
+
+A0. **Gate and reading unchanged**, with one name corrected: `rankByCost` is
+`src/horizon.js:65`, not `graph.js`.
+
+A1. **Nothing writes `?walk=`.** `state.js` keeps the parameter parsed and
+reserved exactly as today; this run adds no session id, no URL write and no
+consumer of the parameter. The producer (`src/walk.js`), the provenance
+object, the store's `setWalk(walk)` / `clearWalk()`, the chain drawn madder
+and the card's line are built and tested - the browser test sets a walk
+through the store - and the address of a generated walk is M35's decision
+(`?why=<id>`, whose inputs *are* the walk). A URL that means nothing in
+another session is a link the atlas would break; the producer is
+deterministic, so its address should be its inputs.
+
+A2. **Conditions are not placeless events.** `CONTRIBUTING.md` says an
+endpoint may be a condition - a process with no point and often no end -
+and that it is written like any other event; it does not cite the 229
+events with `place: null` as examples, because a placeless moment is not a
+condition.
+
+A3. **Done-when restated:** `src/walk.js` produces a walk from what
+`graph.js` answers, with provenance beside it; a walk set through the store
+is drawn as a chain and the card says the atlas assembled it; `?walk=`
+still parses and formats as today and nothing writes it; the three
+documents say what a condition endpoint is; `--index` byte-identical
+without a rebuild; `STATUS.md` says M35 has the producer, the provenance
+and the wording, and that the URL grammar is M35's; the literal lines
+`I9 done` and `Index cycle 2 done`.

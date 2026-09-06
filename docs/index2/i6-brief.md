@@ -151,3 +151,42 @@ of `src/timeline.js`.
 - `STATUS.md` carries the literal line:
 
 `I6 done`
+
+## Amendments after review
+
+Written 6 September 2026 by an independent Fable reviewer of the plan and
+the nine briefs, against `origin/briefs-index2` at `ce81e35` and `origin/m0`
+at `8f51af7`, with the ten owner questions of section 5 answered as recommended
+and recorded here; the owner may overrule. **These override the body where
+they differ** (run protocol section 3). Line numbers are as of `8f51af7`; find the
+code by name after M30b.
+
+A0. **Line numbers are as of `8f51af7`.** M30b-2 puts `collapse.js`
+between `layoutGraph` and `stackLayout` sharing the
+`${laidFor}|${k}|${holdingKey(s)}` cache (m30b-brief A7) and adds bracket
+and band layers to `timeline.js` under `reuse` (A9). Find the code by name;
+the stacking key includes whatever M30b-2 put in that cache; the timeline's
+new layers still hand their children back through `reuse` or
+`tests/timeline-browser.test.mjs:150-208` fails.
+
+A1. **Measure before diagnosing.** A wheel notch is x1.16
+(`graph-view.js:384`) and a bucket x1.044, so bucketing makes no
+consecutive notch a cache hit; the map's 12 ms is grid clustering plus a
+culled DOM. The run's first commit adds to the bench `stackLayout` on the
+**whole-window** arrangement at 10^4 (not the twenty-year band) and, in a
+browser at 10^4, the split of one notch between stacking and
+`replaceChildren`; both go in `STATUS.md` before anything is changed.
+
+A2. **Bucket anyway, and cull.** The key becomes
+`${laidFor}|${zoomBucket(k)}|${holdingKey(s)}` with the clicked-stack
+exemption as the body says; the cull skips a stack's node element outside
+the widened rectangle and keeps a line whenever either end is on screen;
+node elements are reused across notches rather than rebuilt where the
+existing `reuse` helper allows it. The target "ten notches under a second"
+is a `STATUS.md` number and never a test assertion.
+
+A3. **Names corrected:** `coreZoom` is a cluster field
+(`src/cluster.js:211`, `layout.js:413`), not an export; `tests/timeline.test.mjs`
+does not exist - the pure tests go in `tests/lanes.test.mjs` and a new
+`tests/timeline-rows.test.mjs` if the row rule wants a file of its own,
+named in `CLAUDE.md` if it is a module.

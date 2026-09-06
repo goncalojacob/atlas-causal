@@ -459,3 +459,68 @@ The presence outlines' shared borders at low zoom (§5.2.8, the owner's item 5,
 `review.note` and the smaller items §5.3 parks; the 1,040 records with no
 standing (a data backfill, on the owner's "Next" list); and the timeline's
 scale, which M6 decided and the health plan left out on purpose.
+
+## Amendments after review
+
+Written 6 September 2026 by an independent Fable reviewer of the plan and
+the nine briefs, against `origin/briefs-index2` at `ce81e35` and `origin/m0`
+at `8f51af7`, with the ten owner questions of section 5 answered as recommended
+and recorded here; the owner may overrule. **These override the body where
+they differ** (run protocol section 3). Line numbers are as of `8f51af7`; find the
+code by name after M30b.
+
+A0. **The measurements stand and were reproduced to the byte** (the
+per-kind split of the spine; 1,027 history files; 1,077 index files;
+`review-*` is ten files, not nine). Every brief keeps citing section 0.
+
+A1. **D2 reverses health-plan decision 8 and plan-review finding 11**, which
+put the region boxes at load rather than in the manifest because two
+branches rebuilding the hashed index could not merge. H9's R2/R12 took the
+index off every branch but `main`, so the reason is gone; the plan says so
+in D2. The polygons themselves stay reachable on demand for M30b-2's
+regional wash (I1 A4).
+
+A2. **D7 corrected:** `tools/lib/prerender.mjs` reads `atlas.sources`,
+`atlas.resolve`, the expanded events and edges (title, `when`) for
+`narrativesHtml`, and the whole atlas for `entryHtml`. Byte-identity of the
+pages therefore checks the whole projection, which is more than the plan
+claimed and is why the build keeps assembling the prerender atlas from
+`buildSpine(topology)` in memory after I4 (I4 A5).
+
+A3. **section 3 says two things it left out.** At 10^5 the core is ~10 MB raw by
+the plan's own projection - what the spine is at 2x10^4 today - so the
+cycle buys ~5x and the lever after it is outside "plain JSON, no build step"
+and is a new decision. And the search shard is a whole-corpus file every
+`index.html` parses (171 KB today, 2.75 MB at 10^4); it is excluded from
+the first-paint budget because it is never waited for, and I3 prints its
+bytes beside the core's so the next decision is taken against a number.
+
+A4. **section 5 is ten runs, not nine:** I4 splits into I4a (`index.html`,
+`entry.html`, the render keys, the panel, the shard pinning) and I4b
+(`contribute.html`, `review.html`, `narratives.html`, the spine removed,
+`ARCHITECTURE.md`, the browser measurements). `manifest.schema` goes to 5 in
+I4b. Owner question 7, answered: split.
+
+A5. **section 5 item 6:** strike "could run in parallel on a side branch" - run
+protocol section 1 forbids it. I6 runs after I5 on `m0`.
+
+A6. **section 6 risk 4 is wider than the joins.** The unwindowed readers also
+print titles and roles (the actor card, the place card, the entry pages),
+so the shards an open card, entry or lens needs are pinned outside the LRU
+cap (I3 A5) and `entry.html` fetches every century its lists span (I4 A3).
+
+A7. **section 7 gains four questions**, answered as recommended: 7 - I4 as two
+runs (yes); 8 - titles in the attribute shards this cycle, the search
+shard measured beside the core (yes); 9 - no `?walk=` written in I9, the
+address is M35's (yes); 10 - the rename tool refuses a record an import
+created (yes).
+
+A8. **The sharding key is one table, used three times:** `attributePeriod
+(kind, record, events)` beside `periodOfEdge` in `src/explanations.js` -
+event by `when.start`; edge by its `from` event's start (`periodOfEdge`);
+actor, relation, tenure, presence by `when.start` (null where `when` is
+null); office by `when.start` (null where null); narrative by
+`window.from`; place by kind, one shard; source by kind, one shard (I5
+only); a null key is the `null` shard. I3's attribute shards and I5's
+history shards both file by it; the explanation shards already do for
+edges.

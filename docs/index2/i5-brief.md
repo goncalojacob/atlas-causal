@@ -141,3 +141,28 @@ name the histories under their new names.
 - `STATUS.md` carries the literal line:
 
 `I5 done`
+
+## Amendments after review
+
+Written 6 September 2026 by an independent Fable reviewer of the plan and
+the nine briefs, against `origin/briefs-index2` at `ce81e35` and `origin/m0`
+at `8f51af7`, with the ten owner questions of section 5 answered as recommended
+and recorded here; the owner may overrule. **These override the body where
+they differ** (run protocol section 3). Line numbers are as of `8f51af7`; find the
+code by name after M30b.
+
+A0. **Gate and reading unchanged**, plus plan A8.
+
+A1. **The filing key is plan A8's table** through the same
+`attributePeriod`; edges by their `from` event's start (`periodOfEdge`),
+places and sources one shard per kind, a null key the `null` shard. As
+written every edge history - two thirds of the corpus at 10^4 - would land
+in `history-edge-null-<hash>.json`.
+
+A2. **Strike the deploy-allowlist line.** `deploy.yml:97` copies `data/.`
+whole and `tests/workflows.test.mjs:176-183` names no history line; there
+is nothing to edit and the run should not go looking.
+
+A3. **The special cases are two, not three:** `HISTORY_DIR` in `readIndex`
+(`build-index.mjs:339`) and `writeIndex` (`:382`); `compareIndex` has none.
+"1,054 files" in the body is H3c's count; today's is 1,077.

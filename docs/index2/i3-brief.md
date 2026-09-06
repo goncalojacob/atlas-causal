@@ -192,3 +192,64 @@ is a better outcome than H3a's.
 - `STATUS.md` carries the literal line:
 
 `I3 done`
+
+## Amendments after review
+
+Written 6 September 2026 by an independent Fable reviewer of the plan and
+the nine briefs, against `origin/briefs-index2` at `ce81e35` and `origin/m0`
+at `8f51af7`, with the ten owner questions of section 5 answered as recommended
+and recorded here; the owner may overrule. **These override the body where
+they differ** (run protocol section 3). Line numbers are as of `8f51af7`; find the
+code by name after M30b.
+
+A0. **Gate and reading unchanged**, plus plan A8 and I2's amendments.
+
+A1. **The filing key is plan A8's table**, implemented once as
+`attributePeriod(kind, record, events)` beside `periodOfEdge`; places are one
+shard `attributes-place-<hash>.json`, offices with `when: null` and anything
+else with a null key are the `null` shard. Without this every edge's
+`revised` and every place go into the always-fetched shard.
+
+A2. **`record()` waits for the record's own shard.** `src/data.js:218`
+reads `revised` to build `?v=`; with `revised` in the shards, `record(kind,
+id)` first awaits `loadAttributes` of the record's shard (one request,
+cached), then fetches the file with `?v=`. A test: a record asked for
+before its shard is still fetched with `?v=<revised>`.
+`tests/spine-pages.test.mjs:189-200` must stay green through I4.
+
+A3. **Cards draw nothing from a fallback.** `createAtlasFromCore`'s
+fallbacks (title -> id, `citesCount` -> 0, `when` -> bounds) are for the three
+views only; a card, an entry page and a search result row read a shard that
+has landed or show the "loading" line the source card shows for citers.
+`attributesLoaded(id)` decides, and the panel's key carries the shard
+count (I4).
+
+A4. **`HASHED` is given, not described:**
+`/^(?:(?:spine|search|sources|review|presences|core)-(?:[a-z]+-)?|(?:explanations|attributes)-(?:-?\d+--?\d+|null|[a-z]+)-)[0-9a-f]{12}\.json$/`
+or equivalent, with a test that every file the build names matches it and
+nothing a record could be named does.
+
+A5. **The LRU cap counts unpinned shards.** A shard an open card, an entry
+page or a lens needs is pinned while it is on screen and never evicted; the
+constant is four *unpinned* shards and the comment says why (h3a-brief A4:
+the cards are per-entity and not windowed). The LRU test adds: five pinned
+shards are all held.
+
+A6. **The report prints the search shard too**, beside the core and the
+attribute shards, and `STATUS.md` names it as the next whole-corpus file
+with its bytes on both datasets.
+
+A7. **The test is a surface plus per-record deep equality**, not
+"deep-equals an atlas": `tests/core-loader.test.mjs` asserts the `SURFACE`
+list, then for each Map the same keys in the same order and `deepEqual` of
+every value, then `extent`, `regions`, the adjacency's edge ids, and
+`consequences`, `ancestors`, `convergence`, `reachableBy` and
+`shortestPaths` on every active event from the core alone against the
+spine.
+
+A8. **Writer pages are whole-universe readers** and this run writes that
+into `ARCHITECTURE.md` beside the rule about joins: rule 21 (`wikidata`),
+`findSimilar` (title, aliases; `tests/search-shard.test.mjs:113`), rules 17
+and the referrer warnings (presences), and every rule comparing another
+record's `when` read fields that are not in the core, so `contribute.html`
+and `review.html` hold every attribute shard (I4b).

@@ -164,3 +164,57 @@ reaches `atlas.presencesAt` through `realAtlas()` and must now await
 - `STATUS.md` records the run and the numbers, and carries the literal line:
 
 `I1 done`
+
+## Amendments after review
+
+Written 6 September 2026 by an independent Fable reviewer of the plan and
+the nine briefs, against `origin/briefs-index2` at `ce81e35` and `origin/m0`
+at `8f51af7`, with the ten owner questions of section 5 answered as recommended
+and recorded here; the owner may overrule. **These override the body where
+they differ** (run protocol section 3). Line numbers are as of `8f51af7`; find the
+code by name after M30b.
+
+A0. **Gate and reading unchanged.** Check the gate commit for what M30b-2
+did with `data/geo/regions.json` (m30b-brief A8, the regional wash) before
+touching `loadAtlas`.
+
+A1. **`tests/helpers.mjs` is a hand table.** `atlasOf` builds every test
+atlas with `fetchJson: refuse`, so after this run `loadPresences()` rejects
+in every card, lens and query suite and `tests/spine-loader.test.mjs:71`
+fails on the run's own commit. `helpers.mjs` gains `presencesOnDisk(dataDir)`
+beside `citersOnDisk` and `atlasOf` seeds the atlas with it, exactly as the
+citers are seeded; `createAtlasFromSpine` takes the optional `presences` the
+body already names. `spine-loader.test.mjs` itself is edited at `SURFACE`
+only (which gains `loadPresences`).
+
+A2. **The two writer pages fetch the presence file.** `src/review/main.js:87`
+fetches the spine itself and hands `checkRules` a topology with
+`presences: expanded.presences`; rule 17 and the referrer warnings
+(`src/validate/rules.js:281-291`) read it. Both `review/main.js` and
+`src/contribute/main.js` fetch `manifest.files.presences` when the manifest
+names it, draw first, and rebuild the universe when it lands; a browser test
+asserts the review editor warns exactly what the CLI warns on an imported
+actor.
+
+A3. **The generation guard lives in the loaders.** One exported
+`assertGeneration(manifest)` in `src/data.js`, called by `loadAtlas`,
+`loadSpine`, `loadSources`, `loadNarratives` and `src/review/main.js`, never
+by `createAtlas` (tests hand it manifests by hand:
+`tests/data.test.mjs:93`, `tests/spine-loader.test.mjs:242`). The fixture
+manifest and every test manifest literal are bumped in the same commit.
+From this run on the graph file's inner `schema` is the manifest's number,
+so there is one number and not two.
+
+A4. **The lane polygons stay reachable, on demand.** `atlas.loadRegionPolygons()`
+- one request, cached, a rejection dropped - fetched only by whatever draws
+a large event's wash (M30b-2) when one is in the window, and by nothing at
+first paint. The browser test asserts no `geo/regions.json` request on the
+default window, and one request on a window that holds a `regional` fixture
+event if M30b-2 left one; if it left none, the second test is the unit test
+of the loader.
+
+A5. **The Done-when number, precisely.** The graph file alone (the spine
+without presences) under 290 KB raw; the whole first paint - manifest,
+spine, sources, land, palette - under 460 KB raw; both in `STATUS.md`
+against 542.9 and 949.6. `manifestValue.counts.presences` stays: a count is
+not a file.

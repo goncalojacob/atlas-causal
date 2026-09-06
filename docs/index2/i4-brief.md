@@ -166,3 +166,50 @@ down before:
 - `STATUS.md` carries the literal line:
 
 `I4 done`
+
+## Amendments after review
+
+Written 6 September 2026 by an independent Fable reviewer of the plan and
+the nine briefs, against `origin/briefs-index2` at `ce81e35` and `origin/m0`
+at `8f51af7`, with the ten owner questions of section 5 answered as recommended
+and recorded here; the owner may overrule. **These override the body where
+they differ** (run protocol section 3). Line numbers are as of `8f51af7`; find the
+code by name after M30b.
+
+A0. **Two runs.** I4a: `index.html`, `entry.html`, the three render keys,
+the panel key, the pinning; done line `I4a done`. I4b, gated on it:
+`contribute.html`, `review.html`, `narratives.html`, the spine no longer
+written, `ARCHITECTURE.md`, the measurements at 10^4; done lines `I4b done`
+then `I4 done`. `manifest.schema` becomes 5 in I4b.
+
+A1. **The gate on I3's numbers is unchanged**, with I3 A1-A8 applied.
+
+A2. **The writer pages hold every shard.** `contribute.html` and
+`review.html` load the core, draw, then fetch every attribute shard in year
+order and hold them pinned; `findSimilar` and `checkRules` run only once
+every shard is in, and until then the form and the editor print "still
+loading the corpus" beside the rule output rather than a verdict on half of
+it. The Done-when line "under 2.0 MB of index before they draw" stands;
+"and no shard" goes. The browser test asserts the form finds "Carnation
+Revolution" as a duplicate and the editor warns what the CLI warns.
+
+A3. **`entry.html` fetches the centuries its lists span.** `entryHtml` reads
+`eventsByActor`, `eventsByPlace`, `relationsByActor` and `narrativesByRef`;
+an actor's entry lists events across every century it was in. The page
+draws with the core and redraws as each shard lands; the request count
+asserted in the rewritten `tests/spine-pages.test.mjs` is "the core once, and
+one shard per century the record's lists span".
+
+A4. **Cards, not views, wait** (I3 A3): a card whose shard is in flight
+shows the loading line; a bar, a mark and a node are drawn unlabelled and
+labelled when the shard lands.
+
+A5. **The build keeps assembling the prerender atlas from
+`buildSpine(topology)` in memory** (`tools/build-index.mjs:294-309`), which
+is why `buildSpine` stays; the pages therefore stay byte-identical by
+construction and I3's `CORE union ATTRIBUTE = SPINE` test is what carries that
+to the files. `createAtlasFromSpine` and `expandSpine` stay for the build
+and the tests; `loadSpine` and `{ from: 'spine' }` go with the file.
+
+A6. **`review/main.js` fetches the core itself**, as it fetches the spine
+today (`:87`), through `assertGeneration`; it is not a `loadAtlas` caller.

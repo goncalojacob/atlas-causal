@@ -153,3 +153,53 @@ the allowed-key table in `tests/spine.test.mjs`; the fixture manifest's
 - `STATUS.md` records the run, and carries the literal line:
 
 `I2 done`
+
+## Amendments after review
+
+Written 6 September 2026 by an independent Fable reviewer of the plan and
+the nine briefs, against `origin/briefs-index2` at `ce81e35` and `origin/m0`
+at `8f51af7`, with the ten owner questions of section 5 answered as recommended
+and recorded here; the owner may overrule. **These override the body where
+they differ** (run protocol section 3). Line numbers are as of `8f51af7`; find the
+code by name after M30b.
+
+A0. **Gate and reading unchanged**, plus I1's amendments.
+
+A1. **The byte targets are the plan's two rows added together**, because
+this run drops no field: the built spine on the real data under **175 KB
+raw** and at 10^4 under **4.3 MB raw / 460 KB gzipped**. The 60 KB and
+2.0 MB figures are I3's core and I4's gate, not this run's.
+
+A2. **The nine literals become the oracle, not a deletion.** The first
+commit moves the object literals of `buildSpine`
+(`src/validate/core.js:668-755`) into `tests/spine.test.mjs` as
+`projectV1(topology)`, unchanged, tombstones through `spineEntry`; the
+round-trip test is `topologyFromSpine(buildSpine(t))` deep-equals
+`projectV1(t)` per kind, over the fixtures and the repository. "Deep-equals
+`t`" in the body is wrong: the topology carries `regionMethod`,
+`presenceType`, the sources and their citations, and trims nothing.
+
+A3. **`tests/spine-loader.test.mjs` is edited at one line**, `:227`, the
+generation number; nothing else in it changes. It is a surface test (keys,
+order, `extent`, `resolve`, `citationCount`, a search result) and A2 is the
+deep one.
+
+A4. **Vocabularies in the file, from three sources.** The decoder reads
+`spine.vocab` and never a copy. At build time a closed-in-code list comes
+from `src/vocab.js` / `src/kinds.js` in that order; a data-defined list
+(`region` from `regions.json`, an event's `category` from
+`categories.json`) in the data file's order; a value met in a record that is
+in no list is appended in first-seen order, which is deterministic because
+the records are in id order. An event's `category` is a vocabulary slot; a
+test round-trips a record with a category the file does not list.
+
+A5. **Absent and `null` are decided per slot.** `SPINE_COLUMNS` says for
+every slot what a trimmed or `null` slot decodes to - `null` for `place`,
+`supersededBy`, `note`, `startedBy`, `capital`, `dependencyOf`,
+`dependencyKind`, `when` on an office; **no key** for `parent`, `scope`,
+`category`, `subtreeWeight`, `wikidata`, `wikipedia` - so A2's oracle holds
+without the run discovering the rule by failing.
+
+A6. **Seventeen entries carry `supersededBy`** on the real data (the body
+says none); the merges list carries them and the whole-object edge of
+`edgeInSpine` folds into it, as the body says.

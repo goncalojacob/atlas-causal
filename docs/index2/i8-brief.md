@@ -193,3 +193,41 @@ the manifest's `licenses` block, which `licensingTable()` writes;
   of drafts now in the queue, and carries the literal line:
 
 `I8 done`
+
+## Amendments after review
+
+Written 6 September 2026 by an independent Fable reviewer of the plan and
+the nine briefs, against `origin/briefs-index2` at `ce81e35` and `origin/m0`
+at `8f51af7`, with the ten owner questions of section 5 answered as recommended
+and recorded here; the owner may overrule. **These override the body where
+they differ** (run protocol section 3). Line numbers are as of `8f51af7`; find the
+code by name after M30b.
+
+A0. **Gate and reading unchanged.**
+
+A1. **The relation's `when` is stated:** `{ start: <year of split.from>,
+end: <the same year>, date: "<split.from>" }` - a succession is a moment -
+checked against rule 15 before the first record is written. The count is
+checked, not assumed: `origin/m0` has 79 entries carrying `splits`.
+
+A2. **The entry's `note` is always copied** when there is one, verbatim,
+because it is where the split table says a cut is doubtful (Cuba: the split
+date is earlier than the state's independence). The reviewer may retract a
+draft relation and write a CC BY-SA one from another source; the brief's
+`STATUS.md` line says so.
+
+A3. **The three places the licence changes:** `KIND.relation.licenses`
+gains `'CC-BY-NC-SA-4.0'` (`src/kinds.js:196`); rule 12's clause `r.kind ===
+'actor'` (`src/validate/rules.js:926`) becomes "any kind whose licences
+include an NC licence, and only where `mayBeNonCommercial(r)`"; the table
+at the head of `data/LICENSE`. `licensingTable()` follows the registry and
+`tests/licensing.test.mjs` holds the three together. A relation has no
+card: the actor card and the entry page print the attribution line once
+when any relation they draw is NC-licensed.
+
+A4. **The `names` fill is a new helper**, not `namesFor` (which folds labels
+and article titles and not the item's aliases, `wikidata.mjs:460-470`):
+labels and aliases in `LANGUAGES` (`wikidata.mjs:68`, a constant), folded
+with `foldName`, deduplicated against `title` and each other, and **no
+`names` key written when the list is empty** - rule 18 refuses an empty
+list.
