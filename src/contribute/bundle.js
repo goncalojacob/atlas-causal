@@ -867,7 +867,19 @@ export function findDuplicates(subject, candidates, { limit = 5, threshold = 0.3
   if (!subject || NO_DUPLICATES.includes(subject.kind)) return [];
   const found = [];
   for (const c of candidates ?? []) {
-    if (c.id === subject.id) continue;
+    // **The one duplicate that is certain.** A record whose id is already in
+    // the atlas is not a near-match to be scored, it is that record: rule 2
+    // reads the bundle as a replacement of it. This was the one hit the
+    // search skipped — typing "Lisbon" as a new place listed Belém and Parque
+    // das Nações and not Lisbon itself, and the report then said the bundle
+    // validated (health review of 6 September, R20). It is reported first,
+    // and `replaces` is what says the form must not call it a near-match.
+    if (c.id === subject.id) {
+      found.push({
+        id: c.id, kind: c.kind, label: c.label, matched: c.label, why: 'the same id', score: 1, certain: true, replaces: true,
+      });
+      continue;
+    }
     const same = subject.identifiers.find((i) => c.identifiers.some((j) => j.what === i.what && j.value === i.value));
     if (same) {
       found.push({ id: c.id, kind: c.kind, label: c.label, matched: same.value, why: `the same ${same.what}`, score: 1, certain: true });
@@ -889,7 +901,10 @@ export function findDuplicates(subject, candidates, { limit = 5, threshold = 0.3
     }
   }
   return found
-    .sort((a, b) => Number(b.certain) - Number(a.certain) || b.score - a.score || (a.id < b.id ? -1 : a.id > b.id ? 1 : 0))
+    .sort((a, b) => Number(Boolean(b.replaces)) - Number(Boolean(a.replaces))
+      || Number(b.certain) - Number(a.certain)
+      || b.score - a.score
+      || (a.id < b.id ? -1 : a.id > b.id ? 1 : 0))
     .slice(0, limit);
 }
 

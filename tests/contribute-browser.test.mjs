@@ -169,6 +169,58 @@ test('a second place under a name the atlas already has is caught in the form', 
   });
 });
 
+// R20: the duplicate that is certain. Typing "Lisbon" as a new place derives
+// the id `lisbon`, which the atlas already has — and the form listed Belém and
+// Parque das Nações, skipped Lisbon itself, and said the bundle validated. A
+// stranger's "new place" was one unasked-for acknowledgement away from
+// overwriting the atlas's most-cited place.
+test('a new place under an id the atlas already has is named as a replacement', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await open(page, url('contribute.html'), FORM_READY);
+    // The place alone, filled in: a bundle with errors in it says how many,
+    // and what is asserted below is the sentence it prints when there are
+    // none left but the duplicate.
+    await page.eval(`for (const button of [...document.querySelectorAll(".entry button")].filter((b) => b.textContent === "remove")) button.click();
+      const add = [...document.querySelectorAll(".add-row button")].find((b) => b.textContent === "Add place");
+      add.click();
+      const type = (selector, value) => {
+        const el = document.querySelector(selector);
+        el.value = value;
+        el.dispatchEvent(new Event("input", { bubbles: true }));
+      };
+      type("section.entry.place .field-names input", "Lisbon");
+      type("section.entry.place .field-lon input", "-9.14");
+      type("section.entry.place .field-lat input", "38.72");
+      type("section.entry.place .field-summary textarea", "A synthetic entry typed by the test suite. It describes nothing that happened.");
+      type("#contributor-name", "A Contributor");
+      return true;`);
+    await waitFor(page, 'return document.querySelectorAll("section.entry.place .similar li").length > 0;', 'the near-match');
+
+    const said = await page.eval(`return {
+      id: document.querySelector("section.entry.place .field-id input")?.value
+        ?? JSON.parse(document.querySelector(".preview").textContent || "{}").records.find((r) => r.kind === "place")?.id,
+      lead: document.querySelector("section.entry.place .similar p").textContent.replace(/\\s+/g, " ").trim(),
+      rows: [...document.querySelectorAll("section.entry.place .similar li")].map((li) => li.textContent.replace(/\\s+/g, " ").trim()),
+      acknowledge: document.querySelector("section.entry.place .acknowledge").textContent,
+      summary: document.querySelector(".report .summary").textContent,
+      submit: document.querySelector(".submit button, button.submit, .actions button")?.disabled ?? null,
+    };`);
+    assert.equal(said.id, 'lisbon', 'the derived id is the one the atlas already has');
+    assert.match(said.lead, /This id already exists: filing this would replace/);
+    assert.ok(said.rows.some((t) => /\(lisbon\) — the same id/.test(t)), said.rows.join(' · '));
+    assert.match(said.acknowledge, /I mean to replace/);
+    // Never "the bundle validates" while that is on screen.
+    assert.doesNotMatch(said.summary, /The bundle validates/);
+    assert.match(said.summary, /match ones the atlas already has/);
+
+    // Acknowledged, it reads as a correction of that record and the summary
+    // comes back — the bundle really does validate, as a replacement.
+    await page.eval(`document.querySelector("section.entry.place .acknowledge input").click(); return true;`);
+    await waitFor(page, 'return /validates/.test(document.querySelector(".report .summary").textContent);',
+      'the summary once the replacement is acknowledged');
+  });
+});
+
 // The other end of the pipeline: the address a pull request body carries, so
 // that a maintainer reading a stranger's diff has one link to the page the
 // review actually happens on rather than a queue to find the record in

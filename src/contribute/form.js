@@ -503,10 +503,16 @@ export function createForm(container, {
       entry.acknowledged = false;
       return true;
     }
+    // A record under an id the atlas already has is a replacement of it and
+    // is said so, in those words: it is not a near-match somebody has to
+    // judge (health review of 6 September, R20).
+    const replaced = hits.find((hit) => hit.replaces);
     const certain = hits.some((hit) => hit.certain);
-    entry.similarEl.appendChild(html('p', {}, certain
-      ? 'A record already in the atlas carries one of the identifiers on this one. An identifier names an item, and two records for one item is the one mistake nothing downstream can undo:'
-      : `${KIND_LABEL[entry.kind]} records with a similar name already exist. Adding a second record for the same thing is the one mistake nothing downstream can undo:`));
+    entry.similarEl.appendChild(html('p', {}, replaced
+      ? `This id already exists: filing this would replace “${replaced.label || replaced.id}”. That is what a correction is; a new ${entry.kind} needs an id of its own.`
+      : certain
+        ? 'A record already in the atlas carries one of the identifiers on this one. An identifier names an item, and two records for one item is the one mistake nothing downstream can undo:'
+        : `${KIND_LABEL[entry.kind]} records with a similar name already exist. Adding a second record for the same thing is the one mistake nothing downstream can undo:`));
     const ul = html('ul', {});
     for (const hit of hits) {
       ul.appendChild(html('li', {}, `${hit.label || hit.id} (${hit.id}) — ${hit.why}${hit.matched && hit.matched !== hit.label ? `: “${hit.matched}”` : ''}`));
@@ -519,7 +525,9 @@ export function createForm(container, {
       entry.acknowledged = box.checked;
       refresh();
     });
-    label.append(box, document.createTextNode(` I looked: this is a different ${entry.kind} from the ones above.`));
+    label.append(box, document.createTextNode(replaced
+      ? ` I mean to replace “${replaced.label || replaced.id}”: this is a correction of it.`
+      : ` I looked: this is a different ${entry.kind} from the ones above.`));
     entry.similarEl.appendChild(label);
     return entry.acknowledged;
   }
@@ -566,6 +574,22 @@ export function createForm(container, {
   let pending = null;
   let acknowledged = true;
   let lastResult = { errors: [], warnings: [], ok: false };
+  let lastCount = 0;
+  let summaryEl = null;
+
+  // The one sentence at the foot of the report, painted from both halves:
+  // the validation, which is fresh, and the near-matches, which are a moment
+  // behind. It never says the bundle validates while a duplicate is waiting
+  // to be looked at — a stranger's "new place" under an id the atlas already
+  // has was told exactly that (health review of 6 September, R20).
+  function paintSummary() {
+    if (!summaryEl) return;
+    summaryEl.className = lastCount === 0 && acknowledged ? 'summary good' : 'summary bad';
+    summaryEl.textContent = entries.length === 0 ? 'Add a source, then the event it supports.'
+      : lastCount > 0 ? `${lastCount} problem${lastCount === 1 ? '' : 's'} to fix before this can be filed.`
+        : acknowledged ? 'The bundle validates against the records already in the atlas.'
+          : 'The records above match ones the atlas already has. Look at them before this can be filed.';
+  }
 
   function runDuplicates() {
     if (pending !== null) {
@@ -577,6 +601,7 @@ export function createForm(container, {
     let all = true;
     for (const entry of entries) all = paintSimilar(entry, built) && all;
     acknowledged = all;
+    paintSummary();
   }
 
   function scheduleDuplicates() {
@@ -658,11 +683,10 @@ export function createForm(container, {
     for (const warning of result.warnings) {
       reportEl.appendChild(html('p', { class: 'warning' }, `warning — ${warning.id ?? ''}: ${warning.message}`));
     }
-    const count = result.errors.length;
-    reportEl.appendChild(html('p', { class: count ? 'summary bad' : 'summary good' },
-      entries.length === 0 ? 'Add a source, then the event it supports.'
-        : count === 0 ? 'The bundle validates against the records already in the atlas.'
-          : `${count} problem${count === 1 ? '' : 's'} to fix before this can be filed.`));
+    lastCount = result.errors.length;
+    summaryEl = html('p', {});
+    reportEl.appendChild(summaryEl);
+    paintSummary();
 
     for (const entry of entries) drawPreviews(entry);
 

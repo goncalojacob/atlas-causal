@@ -253,9 +253,23 @@ test('the duplicate search finds near-matches before a new event is allowed', ()
     findDuplicates(comparableOf({ id: 'new-one', kind: 'event', title: 'Fixture event' }), candidates, { limit: 1 }).length,
     1,
   );
-  // A record is never its own duplicate: a correction opens the record it is
-  // correcting and would otherwise be told it already exists.
-  assert.ok(findDuplicates(candidates[0], candidates).every((hit) => hit.id !== candidates[0].id));
+  // R20: the id the atlas already has is the one duplicate that is certain,
+  // and it was the only one the search skipped — so a stranger's new place
+  // named "Lisbon" was filed as a replacement of Lisbon with nothing said.
+  // It is reported, first, and marked as what it is.
+  const own = findDuplicates(candidates[0], candidates);
+  assert.equal(own[0].id, candidates[0].id, 'the record under that id is named');
+  assert.equal(own[0].replaces, true);
+  assert.equal(own[0].certain, true);
+  assert.equal(own[0].why, 'the same id');
+  // And it outranks a mere resemblance, whatever the resemblance scores.
+  const both = findDuplicates(
+    comparableOf({ id: 'fixture-event-b', kind: 'event', title: 'Fixture event A' }),
+    candidates,
+  );
+  assert.equal(both[0].id, 'fixture-event-b');
+  assert.equal(both[0].replaces, true);
+  assert.ok(both.some((hit) => hit.id === 'fixture-event-a' && !hit.replaces), 'the near-match is still offered');
 
   assert.equal(similarity('Fixture Event A', 'fixture  event   a'), 1);
   assert.equal(similarity('', 'anything'), 0);
