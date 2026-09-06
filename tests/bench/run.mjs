@@ -16,6 +16,7 @@
 //
 // The data is generated from a seed, so the two runs measure the same points.
 
+import { pathToFileURL } from 'node:url';
 import { clusterPoints, DEEPEST_ZOOM } from '../../src/cluster.js';
 import { onScreen } from '../../src/map/layers/events.js';
 import { fitBounds, WORLD } from '../../src/map/projection.js';
@@ -23,6 +24,7 @@ import { rowLanes, laneOf, barBox } from '../../src/lanes.js';
 import { createLinearScale } from '../../src/timeline-scale.js';
 import { overlaps, withMargin } from '../../src/util/window.js';
 import { buildAdjacency, reachableBy, convergence } from '../../src/graph.js';
+import { layoutGraph, stackLayout } from '../../src/graph-view/layout.js';
 import { horizonSet, horizonResults, SHOWN } from '../../src/horizon.js';
 import { buildSearchIndex, search } from '../../src/search.js';
 import { pickerIndex } from '../../src/contribute/picker.js';
@@ -87,7 +89,12 @@ export function syntheticEvents(count, { seed = 20260905, placed = 0.7, perPlace
 // points forward in time, most events have one or two consequences, and a
 // few carry many — which is what makes one node's downstream large enough
 // for the horizon to cost anything.
-export function syntheticEdges(events, { seed = 15801415, perEvent = 1.5 } = {}) {
+// `reach` caps how far ahead a link may go, in events. The default reaches
+// anywhere later, which is what the queries want — a large downstream from an
+// early event. The graph's arrangement wants the other shape: a picture whose
+// links are local, which is what H4b measured against (deviation 240,
+// "mostly-nearby links forward in time"), and what `benchLayout` asks for.
+export function syntheticEdges(events, { seed = 15801415, perEvent = 1.5, reach = Infinity } = {}) {
   const random = seeded(seed);
   const byYear = [...events].sort((a, b) => a.when.start - b.when.start
     || (a.id < b.id ? -1 : a.id > b.id ? 1 : 0));
@@ -102,7 +109,8 @@ export function syntheticEdges(events, { seed = 15801415, perEvent = 1.5 } = {})
     for (let n = 0; n < many; n += 1) {
       // Forward only, and mostly nearby: an event leads to what came soon
       // after it far more often than to something four centuries later.
-      const ahead = 1 + Math.floor(random() ** 3 * (byYear.length - i - 1));
+      const far = Math.max(1, Math.min(reach, byYear.length - i - 1));
+      const ahead = 1 + Math.floor(random() ** 3 * far);
       const to = byYear[i + ahead];
       if (!to) continue;
       const from = byYear[i];
@@ -520,6 +528,77 @@ function benchList() {
   }), `→ ${filterQueue(queue, { tool: 'wikidata' }).length} match`);
 }
 
+// The graph's own arrangement, at the three sizes H4b reported. It measured
+// 109.8 → 45.5 ms on the atlas, 6.6 s → 0.65 s at 5 000 edges and 412.6 s →
+// 4.5 s at 30 000, and the crossing counts on both sides of the sweep — 130
+// of 201, 135 577 of 211 414, 563 335 of 768 548 — which are what say the
+// prune is a prune and not a second metric. None of it could be reproduced
+// from the repository: H4b measured with a scratch script left outside the
+// tree (deviation 240) and there was no `layout` case (health review of
+// 6 September, R4).
+//
+// The graph it measured against is described there and rebuilt here: events
+// spread over two centuries, two edges each, pointing forward and mostly
+// nearby — two hundred and fifty events ahead at the furthest. The crossing
+// counts come out within a tenth of H4b's at both sizes, which is what makes a
+// later run comparable; the milliseconds are this machine's, and no two
+// machines agree on those.
+function layoutCorpus(events, { edges: wanted, seed = 20260905 } = {}) {
+  const FROM = 1800;
+  const CENTURIES = 200;
+  const list = syntheticEvents(events, { seed })
+    .map((event, i) => ({ ...event, when: { start: FROM + (i % CENTURIES), end: FROM + (i % CENTURIES) } }));
+  return {
+    events: list,
+    edges: syntheticEdges(list, { perEvent: 2, reach: 250 }).slice(0, wanted),
+    lanes: [],
+    extent: { min: FROM, max: FROM + CENTURIES - 1 },
+  };
+}
+
+function benchLayout(atlas) {
+  console.log('layoutGraph — the arrangement (H4b: 45.5 ms at 161 edges, 0.65 s at 5 000, 4.5 s at 30 000)');
+
+  // The atlas itself, through the spine, which is the 161-edge row.
+  if (atlas) {
+    const events = atlas.activeEvents;
+    const edges = [...atlas.edges.values()].filter((e) => e.status === 'active');
+    const input = {
+      events, edges, lanes: [], extent: atlas.extent,
+    };
+    const laid = layoutGraph(input);
+    row(`the atlas (${events.length} events, ${edges.length} edges)`, measure(() => layoutGraph(input)),
+      `→ ${laid.crossings} of ${laid.naiveCrossings} crossings`);
+  }
+
+  for (const [events, edges] of [[2500, 5000], [15000, 30000]]) {
+    const input = layoutCorpus(events, { edges });
+    const laid = layoutGraph(input);
+    row(`${input.edges.length} edges over ${events} events`,
+      measure(() => layoutGraph(input), { budget: 2000, most: 3 }),
+      `→ ${laid.crossings} of ${laid.naiveCrossings} crossings`);
+  }
+
+  // And the band the reader is actually looking at, which is what H4b's
+  // restriction was for: twenty years of the same corpus, not the whole of it.
+  const whole = layoutCorpus(20000, { edges: 40000 });
+  const from = whole.extent.min + Math.round((whole.extent.max - whole.extent.min) / 2);
+  const band = whole.events.filter((e) => e.when.start >= from && e.when.start <= from + 20);
+  const inBand = new Set(band.map((e) => e.id));
+  const bandEdges = whole.edges.filter((e) => inBand.has(e.from) && inBand.has(e.to));
+  const banded = { ...whole, events: band, edges: bandEdges };
+  row(`a twenty-year band of ${whole.events.length} events`, measure(() => layoutGraph(banded), { budget: 2000, most: 3 }),
+    `→ ${band.length} events, ${bandEdges.length} edges`);
+
+  // The stacking on top of it, which is what the view redraws on every zoom.
+  const laidBand = layoutGraph(banded);
+  for (const k of [1, 4]) {
+    const stacked = stackLayout(laidBand, { k });
+    row(`stackLayout on that band, k=${k}`, measure(() => stackLayout(laidBand, { k })),
+      `→ ${stacked.nodes.length} marks for ${band.length} events`);
+  }
+}
+
 // --- the tools -------------------------------------------------------------
 //
 // The three the health review timed and H4d is about: the cross-record rules
@@ -579,20 +658,20 @@ async function benchRules() {
   row('one record, universe prebuilt', measure(() => checkRules(one, atlas.topology, { universe })));
 }
 
-async function benchBuildIndex() {
+async function benchBuildIndex(atlas, { dataset } = {}) {
   const { syntheticDataDir } = await import('./dataset.mjs');
   const { buildIndex } = await import('../../tools/build-index.mjs');
-  const dir = await syntheticDataDir(TOOL_EVENTS);
+  const dir = await syntheticDataDir(TOOL_EVENTS, { under: dataset });
   console.log(`build-index — ${TOOL_EVENTS} events with 40 % tombstones, off disk (${dir})`);
   const built = await buildIndex(dir);
   row('the whole index, in memory', await measureAsync(() => buildIndex(dir)), `→ ${Object.keys(built.files).length} files`);
 }
 
-async function benchValidateIndex() {
+async function benchValidateIndex(atlas, { dataset } = {}) {
   const { syntheticDataDir } = await import('./dataset.mjs');
   const { runValidation, ROOT: TOOLS_ROOT } = await import('../../tools/validate.mjs');
   const pathMod = await import('node:path');
-  const dir = await syntheticDataDir(TOOL_EVENTS);
+  const dir = await syntheticDataDir(TOOL_EVENTS, { under: dataset });
   console.log(`validate --index — the job deploy.yml runs on every push and serve.mjs used to run on every Save`);
   const cold = (result) => `→ first run ${ms(result.first)} ms`;
   const plain = await measureAsync(() => runValidation(dir));
@@ -607,6 +686,7 @@ async function benchValidateIndex() {
 
 const CASES = {
   cluster: benchCluster,
+  layout: benchLayout,
   notch: benchNotch,
   presences: benchPresences,
   timeline: benchTimeline,
@@ -633,18 +713,53 @@ async function realAtlas() {
     fetchJson: async (url) => JSON.parse(await readFile(path.join(root, url.split('?')[0]), 'utf8')),
   });
 }
-const NEEDS_ATLAS = new Set(['presences']);
+const NEEDS_ATLAS = new Set(['presences', 'layout']);
 
-const wanted = process.argv.slice(2);
-const chosen = wanted.length ? wanted : Object.keys(CASES);
-const atlas = chosen.some((name) => NEEDS_ATLAS.has(name)) ? await realAtlas() : null;
-for (const name of chosen) {
-  const run = CASES[name];
-  if (!run) {
-    console.error(`no such case: ${name} (have: ${Object.keys(CASES).join(', ')})`);
-    process.exitCode = 1;
-    continue;
+// The two cases that measure the tools over a tree want one on disk — 62 657
+// files
+// at 20 000 events — and where it is written is the caller's to say:
+// `--dataset <dir>`, or `ATLAS_BENCH_DATASET`. It used to be `os.tmpdir()`
+// with no option and nothing to remove it (health review of 6 September, R4).
+// Without one those cases say so and are skipped; the rest need no disk.
+export const NEEDS_DATASET = new Set(['build-index', 'validate']);
+
+export function parseArgs(argv) {
+  const names = [];
+  let dataset = process.env.ATLAS_BENCH_DATASET || null;
+  for (let i = 0; i < argv.length; i += 1) {
+    if (argv[i] === '--dataset') { dataset = argv[i + 1] ?? null; i += 1; continue; }
+    names.push(argv[i]);
   }
-  await run(atlas);
-  console.log('');
+  return { names, dataset };
+}
+
+export async function main(argv = []) {
+  const { names, dataset } = parseArgs(argv);
+  const chosen = names.length ? names : Object.keys(CASES);
+  const atlas = chosen.some((name) => NEEDS_ATLAS.has(name)) ? await realAtlas() : null;
+  let status = 0;
+  for (const name of chosen) {
+    const run = CASES[name];
+    if (!run) {
+      console.error(`no such case: ${name} (have: ${Object.keys(CASES).join(', ')})`);
+      status = 1;
+      continue;
+    }
+    if (NEEDS_DATASET.has(name) && !dataset) {
+      console.log(`${name} — skipped: it writes a synthetic atlas to disk. Say where:`);
+      console.log('  node tests/bench/run.mjs --dataset /some/scratch/dir');
+      console.log('');
+      continue;
+    }
+    await run(atlas, { dataset });
+    console.log('');
+  }
+  return status;
+}
+
+// Importing this file runs nothing. It used to run every case at module top
+// level, so `import { syntheticEvents } from './run.mjs'` cost a minute and a
+// half and 1.25 GB as a side effect (health review of 6 September, R4).
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+  process.exitCode = await main(process.argv.slice(2));
 }

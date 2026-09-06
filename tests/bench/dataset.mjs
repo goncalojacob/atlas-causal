@@ -20,7 +20,6 @@
 import { mkdir, writeFile, readFile, rm } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import path from 'node:path';
-import { tmpdir } from 'node:os';
 import { fileURLToPath } from 'node:url';
 import { KIND_DIRS } from '../../src/kinds.js';
 
@@ -188,9 +187,18 @@ export function syntheticRecords(events = 20000, { tombstones = 0.4, seed = 2026
 // per (count, share, seed) and kept: writing thirty thousand files takes
 // longer than any case that reads them, and a benchmark that spends its
 // time in mkdir measures mkdir.
+//
+// **`under` is required, and there is no default.** This wrote 62 657 files
+// into `os.tmpdir()` with no option and nothing to remove them (health review
+// of 6 September, R4); where the atlas lands is now the caller's decision —
+// `node tests/bench/run.mjs --dataset <dir>` — and so is removing it, which
+// is one `rm -r` on a directory they named.
 export async function syntheticDataDir(events = 20000, options = {}) {
-  const { tombstones = 0.4, seed = 20260905 } = options;
-  const dir = path.join(tmpdir(), `atlas-bench-${events}-${Math.round(tombstones * 100)}-${seed}`);
+  const { tombstones = 0.4, seed = 20260905, under = null } = options;
+  if (typeof under !== 'string' || under === '') {
+    throw new Error('syntheticDataDir needs `under`: the directory to write the synthetic atlas into (run.mjs --dataset <dir>)');
+  }
+  const dir = path.join(under, `atlas-bench-${events}-${Math.round(tombstones * 100)}-${seed}`);
   const stamp = path.join(dir, '.generated');
   const want = `${events} ${tombstones} ${seed}\n`;
   if (existsSync(stamp) && await readFile(stamp, 'utf8') === want) return dir;
