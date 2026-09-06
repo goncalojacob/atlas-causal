@@ -231,12 +231,15 @@ export function createAtlas({
   // appears in, chronologically, with the role each time. Only active
   // events, and only actors that resolve — a dangling reference is the
   // validator's business, not the panel's.
+  // The note beside the role travels with the row: it is on the line and not
+  // on the actor, so "as prime minister" belongs to this appearance and to no
+  // other. The spine carries it (M30a-3), so showing it costs no fetch.
   const eventsByActor = new Map();
   for (const event of activeEvents) {
-    for (const { actor, role } of event.actors ?? []) {
+    for (const { actor, role, note } of event.actors ?? []) {
       if (!actors.has(actor)) continue;
       if (!eventsByActor.has(actor)) eventsByActor.set(actor, []);
-      eventsByActor.get(actor).push({ event, role });
+      eventsByActor.get(actor).push({ event, role, note: typeof note === 'string' ? note : null });
     }
   }
   for (const list of eventsByActor.values()) {
@@ -283,6 +286,37 @@ export function createAtlas({
   for (const list of tenuresByOffice.values()) {
     list.sort((a, b) => intervalExtent(a.when).min - intervalExtent(b.when).min
       || (a.id < b.id ? -1 : a.id > b.id ? 1 : 0));
+  }
+
+  // Which offices belong to an actor, in title order: the actor's card draws
+  // one tenure strip per office and has no other way to find them, since an
+  // office points at its actor and not the other way round.
+  const officesByActor = new Map();
+  for (const office of offices.values()) {
+    if (office.status !== 'active' || !actors.has(office.of)) continue;
+    if (!officesByActor.has(office.of)) officesByActor.set(office.of, []);
+    officesByActor.get(office.of).push(office);
+  }
+  for (const list of officesByActor.values()) {
+    list.sort((a, b) => (a.title < b.title ? -1 : a.title > b.title ? 1 : 0)
+      || (a.id < b.id ? -1 : a.id > b.id ? 1 : 0));
+  }
+
+  // --- events inside events ------------------------------------------------
+  // The other direction of an event's `parent`: which events are inside this
+  // one, in the order they happened. `parent` is a display fact and never an
+  // argument (CLAUDE.md), so this is deliberately not in the adjacency —
+  // consequences, ancestors, convergence and the horizon never see it.
+  const childrenOf = new Map();
+  for (const event of activeEvents) {
+    const parent = typeof event.parent === 'string' ? event.parent : null;
+    if (!parent || !events.has(parent)) continue;
+    if (!childrenOf.has(parent)) childrenOf.set(parent, []);
+    childrenOf.get(parent).push(event.id);
+  }
+  for (const list of childrenOf.values()) {
+    list.sort((a, b) => intervalExtent(events.get(a).when).min - intervalExtent(events.get(b).when).min
+      || (a < b ? -1 : a > b ? 1 : 0));
   }
 
   // --- narratives ---------------------------------------------------------
@@ -494,8 +528,10 @@ export function createAtlas({
     relations,
     relationsByActor,
     offices,
+    officesByActor,
     tenures,
     tenuresByOffice,
+    childrenOf,
     narratives,
     activeNarratives,
     narrativesByRef,

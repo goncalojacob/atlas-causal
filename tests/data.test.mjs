@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import path from 'node:path';
 import { createAtlas, loadAtlas } from '../src/data.js';
-import { FIXTURE_DATA } from './helpers.mjs';
+import { FIXTURE_DATA, atlasOf } from './helpers.mjs';
 
 // A fetchJson over the fixture directory, so loadAtlas runs without a
 // browser and the on-demand record fetch can be observed. The query string
@@ -175,4 +175,46 @@ test('a shard of outlines that failed to load is fetched again too', async () =>
   await atlas.loadGeometry('geo/shard.json');
   assert.equal(asked.length, 3, 'and the shard that arrived is held');
   assert.equal(atlas.loadedGeometry('geo/shard.json').size, 1);
+});
+
+// --- the three joins M30b draws from -------------------------------------
+//
+// Each is the other direction of a field one record carries: an office points
+// at its actor, a child at its parent, an actor line at its role. Built once
+// in createAtlas, from the spine, so that no card costs a fetch to ask.
+
+test('officesByActor is the other direction of an office\'s `of`, in title order', async () => {
+  const atlas = await atlasOf(FIXTURE_DATA);
+  assert.deepEqual(
+    (atlas.officesByActor.get('fixture-polity-three') ?? []).map((o) => o.id),
+    ['fixture-office-one'],
+  );
+  assert.deepEqual(
+    (atlas.officesByActor.get('fixture-actor-two') ?? []).map((o) => o.id),
+    ['leadership-of-fixture-actor-two'],
+  );
+  assert.equal(atlas.officesByActor.get('fixture-actor-one'), undefined, 'holding an office is not owning one');
+});
+
+test('childrenOf lists an event\'s parts by start year, and never enters the adjacency', async () => {
+  const atlas = await atlasOf(FIXTURE_DATA);
+  // fixture-event-t is 1280 and fixture-event-h is 1290; both are inside
+  // fixture-event-f.
+  assert.deepEqual(atlas.childrenOf.get('fixture-event-f'), ['fixture-event-t', 'fixture-event-h']);
+  assert.equal(atlas.childrenOf.get('fixture-event-h'), undefined);
+  // `parent` is a display fact: the graph is what the edges say and nothing
+  // more (CLAUDE.md).
+  const out = atlas.adjacency.out.get('fixture-event-f') ?? [];
+  assert.equal(out.some((e) => e.to === 'fixture-event-t' && !atlas.edges.has(e.id)), false);
+  assert.equal((atlas.adjacency.in.get('fixture-event-t') ?? []).every((e) => atlas.edges.has(e.id)), true);
+});
+
+test('an actor\'s appearances carry the note beside the role', async () => {
+  const atlas = await atlasOf(FIXTURE_DATA);
+  const rows = atlas.eventsByActor.get('fixture-actor-two') ?? [];
+  assert.ok(rows.length > 1);
+  const noted = rows.filter((r) => r.note !== null);
+  assert.deepEqual(noted.map((r) => [r.event.id, r.role, r.note]),
+    [['fixture-event-t', 'signatory', 'signed it for the synthetic party']]);
+  assert.equal(rows.every((r) => 'note' in r), true, 'and a line without one says null');
 });
