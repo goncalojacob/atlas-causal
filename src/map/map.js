@@ -394,7 +394,11 @@ export function createMap(container, { atlas, state, onCluster = null }) {
   }
 
   function draw(s, box) {
-    landGroup.style.display = s.layers.includes('land') ? '' : 'none';
+    // The coastlines are not a switch any more (plan decision 14): they are
+    // the ground every other layer is read against, and a map without them
+    // is a scatter of dots. `land` is still in `LAYERS` so that an old link
+    // parses; nothing turns it off.
+    landGroup.style.display = '';
     presencesGroup.style.display = s.layers.includes('territories') ? '' : 'none';
     eventsGroup.style.display = s.layers.includes('events') ? '' : 'none';
     // The wash and the corner are the events layer said another way, so they

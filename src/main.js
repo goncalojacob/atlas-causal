@@ -148,6 +148,22 @@ try {
   const mapArea = document.getElementById('map');
   const graphArea = document.getElementById('graph');
   const layersGroup = document.querySelector('.bar .layers');
+  // The layer switches, built here rather than written into index.html. Two
+  // of the three `LAYERS` are switches: the coastlines are always drawn now
+  // (plan decision 14) and `land` has no row, though it is still a member so
+  // that an old `?layers=` link parses into the same three. The twelve
+  // category switches under "events" arrive with the glyphs (M32b brief, A2),
+  // out of `atlas.manifest.categoriesAllowed`, inside a collapsed `<details>`
+  // so the phone drawer keeps one hit target instead of fifteen — which is
+  // why the control is generated at all: a category's label is written in
+  // `data/categories.json`, and everything from `data/` is untrusted input.
+  const LAYER_ROWS = [
+    { id: 'territories', label: 'territories' },
+    { id: 'events', label: 'events' },
+  ];
+  layersGroup.innerHTML = LAYER_ROWS
+    .map(({ id, label }) => `<label><input type="checkbox" data-layer="${esc(id)}" checked> ${esc(label)}</label>`)
+    .join('');
   const showView = (view) => {
     const graphOn = view === 'graph';
     if (graphOn && !graph) {

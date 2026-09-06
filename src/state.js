@@ -91,7 +91,18 @@ import {
 } from './vocab.js';
 
 const SLUG = /^[a-z0-9]+(-[a-z0-9]+)*$/;
+// `land` is still one of the three, and it is no longer a switch: the
+// coastlines are always drawn (plan decision 14) and the checkbox is gone.
+// The name stays a member so that every `?layers=` link ever shared still
+// parses into the same three, and so that the default is the literal it
+// always was.
 export const LAYERS = Object.freeze(['land', 'territories', 'events']);
+// A category of events, off the closed list in `data/categories.json`:
+// `events:war`. Which categories exist is deliberately not known here — this
+// file holds none of the data — so a token is checked for shape only and a
+// name nobody recognises is dropped by whatever reads it, exactly as a lane
+// id is dropped by `lanes.js`. The bare `events` means every category.
+const EVENTS_LAYER = /^events:[a-z0-9]+(-[a-z0-9]+)*$/;
 export { GROUPS, VIEWS };
 // Query parameters that are not state but must survive a state write.
 const PASSTHROUGH = Object.freeze(['fixtures']);
@@ -235,7 +246,8 @@ export function parseState(search, defaults = defaultState()) {
   if (params.has('bbox')) state.bbox = parseBbox(params.get('bbox'));
   if (params.has('view') && VIEWS.includes(params.get('view'))) state.view = params.get('view');
   if (params.has('layers')) {
-    state.layers = params.get('layers').split(',').filter((l) => LAYERS.includes(l));
+    state.layers = params.get('layers').split(',')
+      .filter((l) => LAYERS.includes(l) || EVENTS_LAYER.test(l));
   }
   return state;
 }
@@ -273,6 +285,10 @@ export function formatState(state, search = '') {
   if (state.chain.length) params.set('chain', state.chain.join(','));
   if (state.bbox) params.set('bbox', formatBbox(state.bbox));
   if (state.horizon !== null && state.horizon !== undefined) params.set('horizon', String(state.horizon));
+  // The default is the three names in order and writes nothing. Anything else
+  // is written as it stands, category tokens included: turning one category
+  // off replaces `events` with one `events:<id>` per category still on, so
+  // what the reader did is always in the link they copy.
   if (state.layers.length !== LAYERS.length || state.layers.some((l, i) => l !== LAYERS[i])) {
     params.set('layers', state.layers.join(','));
   }

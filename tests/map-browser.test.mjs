@@ -466,3 +466,35 @@ test('a regional event is a wash over its lane, and its parts are still their ow
     assert.ok(wash.mark, 'an event inside a large one is still a mark of its own');
   });
 });
+
+// The coastline switch is gone and the coastlines are not (plan decision 14,
+// M30b A11/A12). The control is generated, so what is asserted here is the
+// generated thing: two switches, neither of them `land`, and a link that
+// names no `land` still drawing it.
+test('the coastlines have no switch and are always drawn', { skip }, async () => {
+  await wide(async (page, url) => {
+    await open(page, url('?fixtures=1'), READY);
+    const control = await page.eval(`
+      const boxes = [...document.querySelectorAll('.bar .layers input[data-layer]')];
+      return {
+        ids: boxes.map((b) => b.dataset.layer),
+        labels: boxes.map((b) => b.closest('label').textContent.trim()),
+        land: document.querySelector('#map .layer-land').getBoundingClientRect().width > 0,
+      };`);
+    assert.deepEqual(control.ids, ['territories', 'events'], 'no coastline switch');
+    assert.deepEqual(control.labels, ['territories', 'events']);
+    assert.ok(control.land, 'the coastlines are drawn');
+
+    // A link that turned them off before this milestone still parses, still
+    // turns the territories off, and now draws the coastlines anyway.
+    await open(page, url('?fixtures=1&layers=events'), READY);
+    const after = await page.eval(`return {
+      land: getComputedStyle(document.querySelector('#map .layer-land')).display,
+      territories: getComputedStyle(document.querySelector('#map .layer-presences')).display,
+      checked: [...document.querySelectorAll('.bar .layers input[data-layer]')].map((b) => b.checked),
+    };`);
+    assert.notEqual(after.land, 'none', 'the coastlines survive an old link that dropped them');
+    assert.equal(after.territories, 'none', 'and the rest of the link is obeyed');
+    assert.deepEqual(after.checked, [false, true]);
+  });
+});

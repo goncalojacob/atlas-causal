@@ -77,6 +77,32 @@ test('garbage falls back field by field; a bad chain step cuts the chain there',
   assert.equal(parseState('?from=0&to=1975').from, null);
 });
 
+// `?layers=` widened for the categories (M30b, A11) without breaking a link:
+// the three names still parse, `land` is still one of them and still the
+// default, and a category token is carried as it stands. Which categories
+// exist is not known here — `state.js` holds none of the data — so the token
+// is checked for shape and nothing else.
+test('?layers= carries a category of events, and the old three still parse', () => {
+  assert.deepEqual(parseState('?layers=land,territories,events').layers, ['land', 'territories', 'events']);
+  assert.deepEqual(parseState('?layers=land,events').layers, ['land', 'events']);
+  assert.deepEqual(
+    parseState('?layers=land,territories,events:war,events:treaty').layers,
+    ['land', 'territories', 'events:war', 'events:treaty'],
+  );
+  // Shape only, and the shape is a slug: nothing else gets through.
+  assert.deepEqual(parseState('?layers=events:War,events:,events:a--b,places:war').layers, []);
+  // A category nobody has heard of has an id's shape and is kept: whoever
+  // draws the toggles is what knows the list, not this file.
+  assert.deepEqual(parseState('?layers=events:invented-category').layers, ['events:invented-category']);
+});
+
+test('a category of events is written back into the link', () => {
+  const s = { ...defaultState(), layers: ['land', 'territories', 'events:war'] };
+  assert.equal(formatState(s), '?layers=land,territories,events:war');
+  // And the default three still write nothing at all.
+  assert.equal(formatState(defaultState()), '');
+});
+
 test('a relation id is not a step of the walked chain', () => {
   // A relation id has an edge id's shape and links two actors, so the chain —
   // which is a list of edge ids (deviation 12) — refuses it by name rather

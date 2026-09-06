@@ -35,11 +35,12 @@
       <button type="button" id="options-button" class="options-button" aria-expanded="false"
               aria-controls="masthead-tools">Options</button>
       <div class="grouping" id="grouping" role="group" aria-label="Grouping and lens"></div>
-      <div class="layers" role="group" aria-label="Layers">
-        <label><input type="checkbox" data-layer="land" checked> coastlines</label>
-        <label><input type="checkbox" data-layer="territories" checked> territories</label>
-        <label><input type="checkbox" data-layer="events" checked> events</label>
-      </div>
+      <!-- Filled by src/main.js: one switch per layer a reader may turn off,
+           and the coastlines are not one of them (plan decision 14). The
+           category switches to come are read out of data/categories.json,
+           which is data and therefore untrusted, so the whole control is
+           built rather than written here. -->
+      <div class="layers" id="layers" role="group" aria-label="Layers"></div>
     </div>
     <nav class="masthead-links" aria-label="Elsewhere">
       <span id="fixtures-badge" class="fixtures-badge" hidden title="tests/fixtures/data: invented records for testing the interface">synthetic fixtures — not history</span>
