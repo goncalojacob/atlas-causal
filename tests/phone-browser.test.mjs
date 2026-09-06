@@ -7,12 +7,20 @@
 
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { withBrowser, open, waitFor, tap, skip } from './browser.mjs';
+import {
+  withBrowser, open, waitFor, tap, seenIntro, skip,
+} from './browser.mjs';
 
 // An iPhone 12 in portrait, which is about the middle of what a phone is.
 const PHONE = { width: 390, height: 844, deviceScaleFactor: 3 };
 
-const phone = (fn) => withBrowser(fn, { device: PHONE, touch: true });
+// Every one of these is a reader who has been here before: the introduction
+// covers the view on a first visit with nothing open, and what is under test
+// here is the sheet.
+const phone = (fn) => withBrowser(async (page, url) => {
+  await seenIntro(page);
+  return fn(page, url);
+}, { device: PHONE, touch: true });
 
 // Where the sheet actually is on the screen, and how much of it is showing.
 // Read from the layout rather than from the class, so a broken transform is

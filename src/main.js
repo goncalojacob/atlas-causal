@@ -13,6 +13,7 @@ import { createSearchBox } from './search-box.js';
 import { createGrouping } from './grouping.js';
 import { createPanes } from './panes.js';
 import { createPhone } from './phone.js';
+import { createIntro } from './intro.js';
 import { createReadingMode, openingState } from './narrative-mode.js';
 import { parseFocus } from './lens.js';
 import { bindNarrativeKeys } from './panel/narrative.js';
@@ -131,6 +132,13 @@ try {
   map = createMap(document.getElementById('map'), { atlas, state, onCluster: showCluster });
   timeline = createTimeline(document.getElementById('timeline'), { atlas, state, onCluster: showCluster });
   createSearchBox(document.getElementById('search'), { atlas, state, fixtures, shard });
+  // First contact: the narratives, what most of the atlas hangs on, and what
+  // "follow the consequences" actually means here. Shown on a first visit
+  // with nothing open, and brought back by the "?" in the masthead
+  // (intro.js; health review A, finding 17).
+  createIntro(document.getElementById('intro'), {
+    atlas, state, toggle: document.getElementById('intro-button'),
+  });
   createGrouping(document.getElementById('grouping'), { atlas, state });
   bindNarrativeKeys(document, { atlas, state });
 

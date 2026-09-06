@@ -1177,6 +1177,62 @@ svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align:
 .panel .succession h3 { display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--space-2); }
 .panel .succession h3 + .actor-rows { margin-bottom: var(--space-3); }
 
+/* First contact (src/intro.js). Over the view rather than inside the panel,
+   because since H1c there is no panel when nothing is open — and nothing is
+   open on a first visit. Not a modal: the map is drawn underneath and the
+   card can be dismissed onto it, because what is behind it is the point. */
+.intro-overlay {
+  position: fixed; inset: 0; z-index: 20; overflow-y: auto;
+  display: flex; align-items: flex-start; justify-content: center;
+  padding: var(--space-4);
+  background: color-mix(in srgb, var(--ink) 28%, transparent);
+}
+/* `display: flex` on the class beats the browser's own `[hidden]` rule, and a
+   dismissed overlay that still covered the map would swallow every click on
+   it — which is exactly what it did until this line. */
+.intro-overlay[hidden] { display: none; }
+.intro-card {
+  position: relative; max-width: 46rem; width: 100%; margin: auto;
+  background: var(--paper); color: var(--ink);
+  border: 1px solid var(--cobalt); border-radius: var(--radius);
+  padding: var(--space-4) var(--space-4) var(--space-3);
+  box-shadow: 0 2px 16px color-mix(in srgb, var(--ink) 22%, transparent);
+}
+.intro-card h2 { margin: 0; color: var(--cobalt); font-size: var(--text-xl); }
+.intro-card h3 {
+  margin: var(--space-4) 0 var(--space-2); color: var(--cobalt);
+  font-family: var(--font-ui); font-size: var(--text-sm);
+  letter-spacing: var(--tracking-label); text-transform: uppercase;
+}
+.intro-card .intro-lead { margin: var(--space-2) 0; }
+.intro-card ul, .intro-card ol { margin: 0; padding-left: var(--space-4); }
+.intro-card ul { list-style: none; padding-left: 0; }
+.intro-card li { padding: 0.15rem 0; }
+.intro-card ol li { padding: 0.25rem 0; }
+.intro-card .when { color: var(--ink-soft); font-size: var(--text-sm); }
+.intro-card .intro-go {
+  font-family: var(--font); font-size: var(--text-lg); color: var(--cobalt);
+  background: none; border: 0; padding: 0; cursor: pointer; text-align: left;
+}
+.intro-card .intro-go:hover { text-decoration: underline; }
+.intro-card .intro-actions {
+  display: flex; align-items: baseline; gap: var(--space-3);
+  margin: var(--space-4) 0 0; padding-top: var(--space-3); border-top: 1px solid var(--line);
+}
+.intro-close {
+  position: absolute; top: var(--space-2); right: var(--space-2);
+  border: 0; background: none; color: var(--ink-soft);
+  font-size: var(--text-lg); line-height: 1; cursor: pointer; padding: 0.2rem 0.4rem;
+}
+.intro-close:hover { color: var(--madder); }
+.intro-button {
+  border: 1px solid var(--line); background: var(--paper); color: var(--cobalt);
+  border-radius: 50%; width: 1.6em; height: 1.6em; padding: 0; cursor: pointer;
+  font-family: var(--font-ui); font-size: var(--text-sm); line-height: 1;
+}
+.intro-button:hover { border-color: var(--cobalt); }
+
+
 /* --- the horizon: what did this lead to by year X? -------------------- */
 
 .panel .horizon summary { font-family: var(--font); font-size: var(--text-lg); color: var(--cobalt); }

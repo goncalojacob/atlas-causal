@@ -138,6 +138,17 @@ export async function withBrowser(fn, { device = null, touch = false } = {}) {
   }
 }
 
+// A reader who has been here before. The introduction covers the view on a
+// first visit and with nothing open (src/intro.js), which is exactly the state
+// most of these tests drive; this writes the same key the card writes when it
+// is dismissed, before any page script runs, on this and every later
+// navigation. A test that is *about* the introduction does not call it.
+export async function seenIntro(page) {
+  await page.send('Page.addScriptToEvaluateOnNewDocument', {
+    source: "try { localStorage.setItem('atlas-causal.intro', 'seen'); } catch {}",
+  });
+}
+
 // Poll the page until it says yes. Everything in the atlas arrives after the
 // load event — the topology, the land, a card's text — so nothing is ever
 // asserted on the strength of a timer.

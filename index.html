@@ -46,8 +46,15 @@
       <a class="bar-link" href="narratives.html">narratives</a>
       <a class="bar-link" href="sources.html">sources</a>
       <a class="bar-link" href="about.html">about</a>
+      <!-- Brings the introduction back. Small, last, and never in the way:
+           dismissing the card must not be a door closing (src/intro.js). -->
+      <button type="button" id="intro-button" class="intro-button" aria-controls="intro"
+              aria-expanded="false" title="What this is, and how to read it">?</button>
     </nav>
   </header>
+  <!-- Over the view and not inside the panel: since H1c there is no panel
+       when nothing is open, and nothing is open on a first visit. -->
+  <div id="intro" class="intro-overlay" hidden></div>
   <main class="layout">
     <section id="map" class="map-area" aria-label="Map"></section>
     <section id="graph" class="graph-area" aria-label="Graph" hidden></section>
