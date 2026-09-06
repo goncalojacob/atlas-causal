@@ -680,3 +680,29 @@ test('a place card draws the names it held, with the years each held them', { sk
     ]);
   });
 });
+
+// Item 2, the card half: `parent` is a display fact, so what a browser can
+// say is that the head names the whole and the sections list the parts.
+// Nothing in the repository's own data carries a parent yet; the fixtures do.
+test('the card names what an event is part of, and a parent lists its parts', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await open(page, url('?fixtures=1&selected=fixture-event-h'));
+    assert.equal(
+      await page.eval('return document.querySelector(".panel .part-of-event [data-action=\'select\']").dataset.id;'),
+      'fixture-event-f',
+    );
+
+    // And opening the whole from the part lists the parts in order.
+    await page.eval('document.querySelector(".panel .part-of-event [data-action=\'select\']").click();');
+    await waitFor(page, 'return Boolean(document.querySelector(\'.panel [data-section="parts"]\'));', 'the parts section');
+    const parts = await page.eval(`const s = document.querySelector('.panel [data-section="parts"]');
+      return {
+        count: s.querySelector('.count').textContent,
+        ids: [...s.querySelectorAll('[data-action="select"]')].map((b) => b.dataset.id),
+        partOf: Boolean(document.querySelector('.panel .part-of-event')),
+      };`);
+    assert.equal(parts.count, '2');
+    assert.deepEqual(parts.ids, ['fixture-event-t', 'fixture-event-h']);
+    assert.equal(parts.partOf, false, 'the parent is itself inside nothing');
+  });
+});

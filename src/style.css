@@ -1146,6 +1146,10 @@ svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align:
 }
 .panel .actor-row.highlighted { border-left: 3px solid var(--cobalt); padding-left: var(--space-2); margin-left: calc(-1 * var(--space-2)); }
 .panel .role { color: var(--ink-soft); font-style: italic; }
+/* What this event is inside. In the head and not among the sections, because
+   it is a fact about the record rather than one of the questions the card
+   answers: `parent` never enters the adjacency. */
+.panel .part-of-event { margin: var(--space-2) 0 0; font-size: var(--text-sm); color: var(--ink-soft); }
 /* The note beside a role: what this actor did in *this* event, on a line of
    its own under the row so that a phrase never pushes the lane off the end. */
 .panel .actor-row .row-note { grid-column: 1 / -1; font-size: var(--text-sm); }

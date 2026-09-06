@@ -152,6 +152,39 @@ function branchesHtml(ctx, list, selectedId) {
   </details>`).join('');
 }
 
+// The event this one is inside, where it names one. `parent` is a display
+// fact and never an argument (CLAUDE.md): it is not in the adjacency, so
+// nothing on this card below the head is different for it, and the reader is
+// told what the event is part of rather than shown a link that changes what
+// follows from what.
+function partOfEventHtml(ctx, event) {
+  const parent = typeof event.parent === 'string' ? ctx.atlas.events.get(event.parent) ?? null : null;
+  if (!parent) return '';
+  return `<p class="part-of-event">Part of
+    <button type="button" class="link" data-action="select" data-id="${esc(parent.id)}">${esc(parent.title)}</button>
+    <span class="when">${esc(formatInterval(parent.when))}</span></p>`;
+}
+
+// The other direction: the events inside this one, in the order they
+// happened. A list and not a walk — following a part is opening a record,
+// not taking a step of an argument — so the rows are the plain event link
+// every other list uses.
+function partsHtml(ctx, event) {
+  const children = ctx.atlas.childrenOf?.get(event.id) ?? [];
+  const rows = children.map((id) => ctx.atlas.events.get(id)).filter(Boolean).map((child) => `<li class="actor-row">
+    ${ctx.eventLink(child)}
+    <span class="muted">${child.region ? esc(ctx.laneLabel(child.region)) : 'no lane'}</span>
+  </li>`);
+  if (rows.length === 0) return null;
+  return {
+    key: 'parts',
+    label: 'Parts',
+    count: rows.length,
+    hint: 'The events inside this one. Being part of something is a fact about how the atlas files it, not a link: it changes no consequence and no cause.',
+    body: `<ul class="actor-rows">${rows.join('')}</ul>`,
+  };
+}
+
 // Where it happened: the place record, by name, and a way into its card. An
 // event with no place is timeline-only and says so.
 function whereHtml(ctx, event) {
@@ -257,6 +290,8 @@ export function eventCardHtml(ctx, { event, found, state, remembered = null }) {
     hint: 'What led directly to this event. Walk one backwards to read its own causes.',
     body: into.length ? edgeRowsHtml(into, { follow: false }) : '<p class="muted">No incoming links recorded.</p>',
   });
+  const parts = partsHtml(ctx, event);
+  if (parts) sections.push(parts);
   if (chainEdges.length > 0) {
     sections.push({
       key: 'branches',
@@ -292,6 +327,7 @@ export function eventCardHtml(ctx, { event, found, state, remembered = null }) {
         <button type="button" class="link small" data-action="year" data-year="${esc(ctx.startYear(event))}">map at ${esc(formatYear(ctx.startYear(event)))}</button>
         ${ctx.lensControl('event', event.id)}
       </p>
+      ${partOfEventHtml(ctx, event)}
       ${actorChipsHtml(ctx, event, highlightedActor?.id ?? null)}
       ${drawnHtml(ctx, event, state)}
       <div class="head-links">${ctx.entryLink('event', event.id)}${ctx.wikipediaHtml(event)}${ctx.discussLink('event', event.id)}</div>

@@ -100,3 +100,36 @@ test('an event with no region says "no lane" rather than an em dash', () => {
   assert.match(html, /<span class="lane">no lane<\/span>/);
   assert.doesNotMatch(html, /<span class="lane">—<\/span>/);
 });
+
+// --- an event inside an event --------------------------------------------
+//
+// `parent` is a display fact and never an argument: the card says what the
+// event is part of and lists what is inside it, and nothing about the
+// consequences, the causes or the convergence changes for either.
+
+test('a child says what it is part of, and a parent lists its parts in order', () => {
+  // fixture-event-t (1280) and fixture-event-h (1290) are both inside
+  // fixture-event-f.
+  const child = eventCardHtml(ctx, { event: atlas.events.get('fixture-event-h'), found: { via: [] }, state });
+  assert.match(child, /<p class="part-of-event">Part of\s*<button[^>]*data-action="select" data-id="fixture-event-f"/);
+  assert.doesNotMatch(child, /data-section="parts"/, 'a leaf has no parts');
+
+  const parent = eventCardHtml(ctx, { event: atlas.events.get('fixture-event-f'), found: { via: [] }, state });
+  assert.doesNotMatch(parent, /class="part-of-event"/, 'the parent is inside nothing');
+  const parts = parent.match(/data-section="parts"[\s\S]*?<\/section>/)?.[0] ?? '';
+  assert.deepEqual(
+    [...parts.matchAll(/data-action="select" data-id="([^"]+)"/g)].map((m) => m[1]),
+    ['fixture-event-t', 'fixture-event-h'],
+  );
+});
+
+test('being part of something changes no consequence and no cause', () => {
+  const parent = atlas.events.get('fixture-event-f');
+  // The parts are not consequences: what the card counts under Consequences
+  // is what the edges say, and `parent` is not an edge.
+  const out = (atlas.adjacency.out.get('fixture-event-f') ?? []).filter((e) => atlas.edges.get(e.id)?.status === 'active');
+  const html = eventCardHtml(ctx, { event: parent, found: { via: [] }, state });
+  const consequences = html.match(/data-section="consequences"[\s\S]*?<span class="count[^"]*">([^<]*)</)?.[1];
+  assert.equal(consequences, String(out.length));
+  assert.notEqual(atlas.childrenOf.get('fixture-event-f').length, 0);
+});
