@@ -10,7 +10,7 @@
 
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { withBrowser, open, waitFor, skip } from './browser.mjs';
+import { withBrowser, open, waitFor, watchErrors, errorsOn, skip } from './browser.mjs';
 
 const FORM_READY = 'return document.querySelectorAll(".add-row button").length > 0;';
 
@@ -304,5 +304,54 @@ test('?open= opens the record the pull request names, not the first in the queue
     // is an address that names nothing, and says so.
     await open(page, url(`review.html?open=place/${wanted}`), 'return document.querySelectorAll(".editor").length > 0;');
     assert.match(await page.eval('return document.querySelector(".save-note")?.textContent ?? "";'), new RegExp(`place/${wanted}`));
+  });
+});
+
+// A6: both new kinds have `fields` and join `CONTRIBUTED_KINDS`, so the form
+// offers them and the review editor opens them. That is the half of the
+// registry no unit test can reach: the descriptors are checked at module load
+// and the *pickers* are not — `optionsFrom: 'offices'` resolves through a
+// table in `picker.js`, and a name that table does not know is a field that
+// silently offers nothing.
+test('the form builds a tenure and its office picker answers, and review.html opens an office', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await watchErrors(page);
+    await open(page, url('contribute.html'), 'return document.querySelectorAll(".add-row button").length > 0;');
+    const buttons = await page.eval('return [...document.querySelectorAll(".add-row button")].map((b) => b.textContent.trim());');
+    assert.ok(buttons.includes('Add office'), buttons.join(' · '));
+    assert.ok(buttons.includes('Add tenure'), buttons.join(' · '));
+
+    await page.eval(`[...document.querySelectorAll('.add-row button')].find((b) => b.textContent.trim() === 'Add tenure').click();`);
+    await waitFor(page, 'return document.querySelectorAll(".entry").length > 0;', 'the tenure entry');
+    const labels = await page.eval(`return [...document.querySelectorAll('.entry label')]
+      .map((l) => l.textContent.replace(/\\s+/g, ' ').trim());`);
+    assert.deepEqual(labels.slice(-6), ['Person *', 'Office *', 'Id *', 'Start year *', 'End year', 'Started by']);
+
+    // The office picker over the real dataset: the three Portuguese offices
+    // are the only records it can offer, and it finds one by its title.
+    const typed = await page.eval(`const el = [...document.querySelectorAll('.entry input')]
+      .find((i) => /office/i.test(i.id + i.name + (i.dataset.field ?? '')));
+      if (!el) return false;
+      el.value = 'prime'; el.dispatchEvent(new Event('input', { bubbles: true }));
+      return true;`);
+    assert.ok(typed, 'the office field is a picker with an input');
+    await waitFor(page, `return [...document.querySelectorAll('.entry [role="option"], .entry li')]
+      .some((l) => /Prime Minister of Portugal/.test(l.textContent));`, 'the office the picker offers');
+
+    // And the other side of the same registry entry: the dashboard opens an
+    // office in the same editor every other kind is opened in.
+    await open(page, url('review.html?open=monarch-of-portugal'), 'return document.querySelectorAll(".editor").length > 0;');
+    assert.deepEqual(await page.eval(`return {
+      id: document.querySelector('.record-id').textContent,
+      title: document.querySelector('.editor .field-title input').value,
+      category: document.querySelector('.editor .field-category select').value,
+      current: document.querySelector('.queue-item.current .queue-id')?.textContent ?? null,
+    };`), {
+      id: 'office · monarch-of-portugal',
+      title: 'Monarch of Portugal',
+      category: 'head-of-state',
+      current: 'monarch-of-portugal',
+    });
+    assert.deepEqual(await errorsOn(page), []);
   });
 });
