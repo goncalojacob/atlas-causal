@@ -454,6 +454,12 @@ In full in the history file. The ones that decide something:
      header says to cut it when it grows, and H9's account is in
      `docs/health/h9-brief.md`, in the review it answers and in the git log.
      M30a-1's and M30a-2's paragraphs are kept.
+352. **The M30a-3 section is a comment on pull request #1, not a section of
+     its body.** The body is 133 kB of nine milestones' prose, the tool that
+     changes it takes the whole of it back at once, and retyping 900 lines of
+     another run's summary to add ten of my own risks changing what they said.
+     The section is posted verbatim as a comment, says so at the top, and a
+     maintainer editing the body can paste it in.
 
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
