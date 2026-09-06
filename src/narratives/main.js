@@ -24,6 +24,10 @@ const badge = document.getElementById('fixtures-badge');
 const prerendered = slot.dataset.prerendered === '1' && !fixtures;
 
 if (!prerendered) {
+  // Prerendered with the real records and about to be redrawn from the
+  // synthetic ones: clear it first, or the page shows the atlas's own
+  // narratives for as long as the fetch takes and then swaps them out.
+  if (slot.dataset.prerendered === '1') slot.innerHTML = '<p class="muted">Loading…</p>';
   try {
     const { narratives, events, edges } = await loadNarratives({ dataRoot: fixtures ? 'tests/fixtures/data/' : 'data/' });
     if (badge) badge.hidden = !fixtures;

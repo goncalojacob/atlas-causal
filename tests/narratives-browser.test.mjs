@@ -93,7 +93,11 @@ test('the atlas header, the bibliography and about all lead to the list', { skip
 
 test('the synthetic set puts one account under both centuries it crosses', { skip }, async () => {
   await withBrowser(async (page, url) => {
-    await open(page, url('narratives.html?fixtures=1'), READY);
+    // Not READY: since H8 the page is prerendered from the real records, so a
+    // `.narrative-card` is on screen before any script has run and would say
+    // the page is ready when it is showing the wrong dataset. The badge is
+    // the synthetic set's own signal and is raised by the same render.
+    await open(page, url('narratives.html?fixtures=1'), 'return !document.getElementById("fixtures-badge").hidden;');
     const seen = await page.eval(`return {
       badge: document.getElementById("fixtures-badge").hidden,
       periods: [...document.querySelectorAll(".narrative-period h2")].map((h) => h.firstChild.textContent.trim()),

@@ -20,6 +20,10 @@ const slot = document.getElementById('bibliography');
 const prerendered = slot.dataset.prerendered === '1' && !fixtures;
 
 if (!prerendered) {
+  // Prerendered with the real sources and about to be redrawn from the
+  // synthetic ones: clear it first, or the page shows the atlas's own
+  // bibliography for as long as the fetch takes and then swaps it out.
+  if (slot.dataset.prerendered === '1') slot.innerHTML = '<p class="muted">Loading…</p>';
   try {
     const { sources } = await loadSources({ dataRoot: fixtures ? 'tests/fixtures/data/' : 'data/' });
     slot.innerHTML = bibliographyHtml(sources);

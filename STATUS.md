@@ -97,9 +97,15 @@ In full in the history file. The ones that decide something:
      that instead, which is the stronger claim.
 303. **The blank lines between the milestone blocks are gone.** Every
      milestone line is kept, and the gate reads them with `grep -qxF`.
-304. **This file is 190 lines and not a hundred**: 86 of them are the
-     milestone lines the run protocol requires be kept in full and 26 are
+304. **This file is 196 lines and not a hundred**: 86 of them are the
+     milestone lines the run protocol requires be kept in full and 31 are
      this block. The four parts the brief names come to 76.
+305. **One browser test's readiness signal changed.** A prerendered page has
+     its cards on screen before any script runs, so "wait for a card" said
+     `narratives.html?fixtures=1` was ready while it was still showing the
+     real records; the fixtures badge is the signal now. The page also
+     clears the prerendered list before drawing the synthetic one, so the
+     two datasets are never briefly shown one after the other.
 
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
