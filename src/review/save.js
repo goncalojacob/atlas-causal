@@ -16,6 +16,24 @@ import { submitBundle, CORRECTION_TEMPLATE } from '../contribute/submit.js';
 export const WRITE_PREFIX = '/__records/';
 export const STATUS_PATH = '/__status';
 
+// Where the page is, which is not the same question as whether it can write:
+// `python3 -m http.server` on this machine is local and cannot write either.
+// It is asked so that the published copy can say what it is. review.html is
+// uploaded with the rest of the site — it is a page of this repository, and
+// dropping it from the artifact would hide it rather than explain it — and on
+// the public site it silently degrades to "copy a bundle", which is by design
+// and was unlabelled (health review A, finding 35).
+//
+// Pure, and a string in: a hostname is all it takes, and a test needs no
+// browser to try the cases that matter.
+export function isLocalHost(hostname) {
+  const name = String(hostname ?? '').toLowerCase().replace(/^\[|\]$/g, '');
+  if (name === '') return true; // file://, which has no host at all
+  if (name === 'localhost' || name.endsWith('.localhost')) return true;
+  if (name === '::1') return true;
+  return /^127\.\d{1,3}\.\d{1,3}\.\d{1,3}$/.test(name);
+}
+
 export function endpointFor(kind, id) {
   return `${WRITE_PREFIX}${encodeURIComponent(kind)}/${encodeURIComponent(id)}`;
 }

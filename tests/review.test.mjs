@@ -7,6 +7,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import path from 'node:path';
+import { readFile } from 'node:fs/promises';
 import {
   DRAFT_AUTHOR, KIND_ORDER, NO_IDENTIFIER, isDraft, countDrafts, labelOf, warningsById, flagsOf,
   buildQueue, groupByKind, flagCounts, filterQueue, progressOf, digestOf,
@@ -22,7 +23,7 @@ import {
 import {
   normalizeReviewer, reviewerProblems, signRecord, retractRecord, retractionPlan, bundleOf, carriedReason,
 } from '../src/review/sign.js';
-import { endpointFor, putBundle, saveBundle } from '../src/review/save.js';
+import { endpointFor, putBundle, saveBundle, isLocalHost } from '../src/review/save.js';
 import { claim, messageOf, regionChoices } from '../src/review/editor.js';
 import { pickerIndex } from '../src/contribute/picker.js';
 import { search } from '../src/search.js';
@@ -531,4 +532,27 @@ test('the diff Sign shows is the fields the reviewer changed, as one line each',
   // Prose is cut rather than shown whole: the point is which fields moved.
   assert.ok(shortly('y'.repeat(500)).length < 130);
   assert.equal(shortly(undefined), '—');
+});
+
+// H8: the page is published with the rest of the site — it is a page of this
+// repository, and dropping it from the artifact would hide it rather than
+// explain it — so the published copy says what it is (health review A,
+// finding 35). What the banner turns on is one pure predicate.
+test('the deployed banner is off on localhost and on wherever else the page is served', () => {
+  for (const host of ['localhost', 'LOCALHOST', '127.0.0.1', '127.1.2.3', '::1', '[::1]', 'atlas.localhost', '']) {
+    assert.equal(isLocalHost(host), true, `${host} is this machine`);
+  }
+  for (const host of ['goncalojacob.github.io', 'example.org', '192.168.1.10', '1270.0.0.1', 'localhost.example.org']) {
+    assert.equal(isLocalHost(host), false, `${host} is not this machine`);
+  }
+  assert.equal(isLocalHost(undefined), true, 'no host at all is file://, which is local');
+});
+
+test('review.html carries the banner, hidden, and the bootstrap is what shows it', async () => {
+  const html = await readFile(path.join(ROOT, 'review.html'), 'utf8');
+  assert.match(html, /<p id="deployed-banner" class="notice deployed" hidden>/);
+  assert.match(html, /correction bundle on your clipboard/);
+  assert.match(html, /node tools\/serve\.mjs/);
+  const main = await readFile(path.join(ROOT, 'src', 'review', 'main.js'), 'utf8');
+  assert.match(main, /if \(banner && !isLocalHost\(window\.location\.hostname\)\) banner\.hidden = false;/);
 });

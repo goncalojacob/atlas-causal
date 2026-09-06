@@ -23,7 +23,7 @@ import { queueRow as drawRow } from './row.js';
 import { claimOf, heldBy, claimDaysLeft, claimRecord, releaseClaim, CLAIM_DAYS } from './claim.js';
 import { diffAgainst } from './history.js';
 import { signRecord, retractRecord, retractionPlan, reviewerProblems, normalizeReviewer, bundleOf, carriedReason } from './sign.js';
-import { saveBundle, readStatus } from './save.js';
+import { saveBundle, readStatus, isLocalHost } from './save.js';
 import { unverified } from './citations.js';
 import { createEditor } from './editor.js';
 import { preparedFor } from '../contribute/bundle.js';
@@ -45,6 +45,13 @@ const params = new URLSearchParams(window.location.search);
 const fixtures = params.get('fixtures') === '1';
 const dataRoot = fixtures ? 'tests/fixtures/data/' : 'data/';
 const mount = document.getElementById('dashboard');
+
+// The banner is in the page and hidden; this is the one line that shows it.
+// Off localhost the queue still reads and the editor still validates — what
+// changes is where a save can go, and the page now says so before somebody
+// spends twenty minutes on a record (health review A, finding 35).
+const banner = document.getElementById('deployed-banner');
+if (banner && !isLocalHost(window.location.hostname)) banner.hidden = false;
 
 function today() {
   return new Date().toISOString().slice(0, 10);

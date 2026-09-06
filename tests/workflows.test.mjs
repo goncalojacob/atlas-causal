@@ -158,11 +158,42 @@ test('the import Action runs only on import branches and never on m0', async () 
   assert.match(text, /import: done/);
 });
 
-test('the site never carries the cached Wikipedia leads', async () => {
+// The artifact is an allowlist since H8 (health review A, finding 35; B,
+// finding 29). An exclusion list would have to be edited every time a
+// directory is added; this asserts the shape that cannot: a staged directory
+// is uploaded, and what is copied into it is named.
+test('the artifact is an allowlist and not the checkout', async () => {
   const deploy = await read(WORKFLOWS, 'deploy.yml');
-  const remove = deploy.indexOf('rm -rf tools/import/cache');
+  const assemble = deploy.indexOf('Assemble the site from the allowlist');
   const upload = deploy.indexOf('upload-pages-artifact');
-  assert.ok(remove !== -1 && remove < upload, 'the cache is removed before the artifact is built');
+  assert.ok(assemble !== -1 && assemble < upload, 'the site is assembled before it is uploaded');
+  assert.match(deploy, /path: _site$/m, 'the artifact is the staged directory');
+  assert.doesNotMatch(deploy, /^\s+path: \.$/m, 'the whole checkout is never the artifact');
+  const staged = deploy.slice(assemble, upload);
+  for (const line of [
+    /cp \.\/\*\.html CONTRIBUTING\.md _site\//,
+    /cp -r src _site\/src/,
+    /cp -r schema _site\/schema/,
+    /cp -r data\/\. _site\/data\//,
+    /rm -rf _site\/data\/imports/,
+    /cp -r tests\/fixtures\/data _site\/tests\/fixtures\/data/,
+    /if \[ -d entry \]; then cp -r entry _site\/entry; fi/,
+  ]) assert.match(staged, line, `the allowlist copies ${line}`);
+  // What must never be on the public site, and now cannot be: the
+  // maintainer's tools, the test suite, the plumbing, the notes — and the
+  // cached Wikipedia leads with them, which are somebody else's text
+  // (docs/review-2026-09-04-plan.md, finding 18).
+  for (const kept of ['tools', 'docs', '.github', 'data/imports']) {
+    assert.doesNotMatch(staged, new RegExp(`cp -r ${kept.replace('.', '\\.')} _site`), `${kept} is not copied into the artifact`);
+  }
+  assert.doesNotMatch(staged, /cp -r tests _site/, 'only the fixture data, never the suite');
+});
+
+test('the prerendered pages are committed on main like the index', async () => {
+  const deploy = await read(WORKFLOWS, 'deploy.yml');
+  const commit = deploy.slice(deploy.indexOf('Commit the index'), deploy.indexOf('Assemble the site'));
+  assert.match(commit, /git add data\/index data\/geo\/palette\.json sources\.html narratives\.html entry/);
+  assert.match(commit, /git status --porcelain -- data\/index data\/geo\/palette\.json sources\.html narratives\.html entry/);
 });
 
 test('both issue templates take a bundle and require the licence grant', async () => {
