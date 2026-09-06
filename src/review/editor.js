@@ -16,6 +16,7 @@ import { createPicker, pickerIndex } from '../contribute/picker.js';
 import { reorderControls, refreshAll } from '../contribute/reorder.js';
 import {
   FIELDS, CITATION_LISTS, ACTOR_LISTS, STEP_LISTS, valuesFromRecord, applyValues, validateBundle, preparedFor,
+  isVocabulary, vocabularyChoices, roleChoices,
 } from '../contribute/bundle.js';
 import { identifiers, citationText } from '../citation.js';
 import { citationRows, setVerified, clearVerified } from './citations.js';
@@ -53,15 +54,16 @@ export function messageOf(error, view) {
   return error.message;
 }
 
-// The lanes, which are the one reference field that is a `<select>` here as
-// in the form: five regions, a closed list, nothing to type at. Every other
+// The lanes, which are one of the two reference fields that are a `<select>`
+// here as in the form: a closed list, short, nothing to type at. Every other
 // reference is a picker over the search index (src/contribute/picker.js).
 // The `<select>` of every event in the atlas that used to stand in its place
 // was 23,015 options across seven controls and 224 ms per keystroke at
-// twenty thousand events (health review B, finding 6).
+// twenty thousand events (health review B, finding 6). The categories are the
+// other, and both lists come out of `bundle.js`, so the dashboard and the
+// form cannot offer two different ones.
 export function regionChoices(topology) {
-  return [{ value: '', label: '— derived from the place —' },
-    ...(topology.regions ?? []).map((r) => ({ value: r.id, label: r.label ?? r.id }))];
+  return vocabularyChoices('regions', topology);
 }
 
 // What the import wrote about this record's identity, shown and not offered
@@ -144,7 +146,7 @@ export function createEditor({
     const wrap = html('div', { class: `field field-${field.key}` });
     wrap.appendChild(html('label', { for: id }, field.required ? `${field.label} *` : field.label));
 
-    if (field.optionsFrom && field.optionsFrom !== 'regions') {
+    if (field.optionsFrom && !isVocabulary(field.optionsFrom)) {
       const picker = pickerFor(field.optionsFrom, {
         value: values[field.key] ?? '',
         label: field.label,
@@ -169,7 +171,9 @@ export function createEditor({
     } else if (field.input === 'select') {
       input = html('select', { id });
       if (field.optionsFrom) {
-        for (const option of regionChoices(topology)) input.appendChild(html('option', { value: option.value }, option.label));
+        for (const option of vocabularyChoices(field.optionsFrom, topology)) {
+          input.appendChild(html('option', { value: option.value }, option.label));
+        }
       } else {
         for (const option of field.options) {
           const label = option === '' ? (field.required ? '— choose —' : '— none —') : option;
@@ -213,7 +217,15 @@ export function createEditor({
   // `ordered` marks the one list whose order is part of what the record says:
   // a narrative's steps are its walk, and a step in the wrong place is a
   // different argument. Citations and actors are sets and get no controls.
-  function renderList(list, { optionsName, textKey, refKey, placeholder, hint, label, ordered = false }) {
+  // `extraKey` is the third column, which only the actors have: the free text
+  // beside the role, now that the role itself is a vocabulary. `suggestions`
+  // is that vocabulary, offered on the second column as a `<datalist>` and
+  // never enforced — a role outside the list is the warning `role-unknown`
+  // until M32b applies the mapping.
+  function renderList(list, {
+    optionsName, textKey, refKey, placeholder, hint, label, ordered = false,
+    extraKey = null, extraPlaceholder = '', suggestions = [],
+  }) {
     const items = () => values[list.key];
     const wrap = html('div', { class: 'field list' });
     const head = html('div', { class: 'citations-head' });
@@ -222,6 +234,12 @@ export function createEditor({
     head.appendChild(add);
     wrap.appendChild(head);
     if (hint) wrap.appendChild(html('p', { class: 'hint' }, hint));
+    const suggestionsId = suggestions.length ? uid(`${list.key}-options`) : null;
+    if (suggestionsId) {
+      const datalist = html('datalist', { id: suggestionsId });
+      for (const value of suggestions) datalist.appendChild(html('option', { value }));
+      wrap.appendChild(datalist);
+    }
     const rows = html('ul', { class: 'citation-rows' });
     wrap.appendChild(rows);
     const error = html('p', { class: 'field-error', hidden: 'hidden' });
@@ -242,12 +260,22 @@ export function createEditor({
       });
       const text = textKey === 'text'
         ? html('textarea', { rows: '3', placeholder, 'aria-label': `${label} text` })
-        : html('input', { type: 'text', placeholder, 'aria-label': `${label} text` });
+        : html('input', { type: 'text', placeholder, 'aria-label': `${label} text`, list: suggestionsId });
       text.value = item[textKey] ?? '';
       text.addEventListener('input', () => {
         item[textKey] = text.value;
         refresh();
       });
+      const extra = extraKey
+        ? html('input', { type: 'text', placeholder: extraPlaceholder, 'aria-label': `${label} note` })
+        : null;
+      if (extra) {
+        extra.value = item[extraKey] ?? '';
+        extra.addEventListener('input', () => {
+          item[extraKey] = extra.value;
+          refresh();
+        });
+      }
       const drop = html('button', { type: 'button', class: 'link small' }, 'remove');
       drop.addEventListener('click', () => {
         const at = values[list.key].indexOf(item);
@@ -257,6 +285,7 @@ export function createEditor({
         refresh();
       });
       row.append(picker.root, text);
+      if (extra) row.appendChild(extra);
       if (ordered) row.appendChild(reorderControls({ rows, row, item, items, onMove: refresh }));
       row.appendChild(drop);
       rows.appendChild(row);
@@ -264,7 +293,7 @@ export function createEditor({
     };
 
     add.addEventListener('click', () => {
-      const item = { [refKey]: '', [textKey]: '' };
+      const item = { [refKey]: '', [textKey]: '', ...(extraKey ? { [extraKey]: '' } : {}) };
       values[list.key].push(item);
       addRowFor(item);
       refresh();
@@ -285,7 +314,9 @@ export function createEditor({
     root.appendChild(renderList(list, {
       optionsName: 'actors', refKey: 'actor', textKey: 'role', label: list.label,
       placeholder: 'role: leader, signatory, deposed',
-      hint: 'The actors of this event and what each did in it — not everyone alive at the time.',
+      extraKey: 'note', extraPlaceholder: 'note: what the role cannot say',
+      suggestions: roleChoices(topology),
+      hint: 'The actors of this event and what each did in it — not everyone alive at the time. The role comes from the atlas\'s list; the note beside it is the reviewer\'s own.',
     }));
   }
   for (const list of STEP_LISTS[kind]) {

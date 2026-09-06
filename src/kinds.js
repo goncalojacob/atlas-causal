@@ -63,7 +63,7 @@ const KIND_ENTRIES = {
     citations: [{ key: 'citations', label: 'Sources', path: '/sources' }],
     actors: [{ key: 'actors', label: 'Actors', path: '/actors' }],
     steps: [],
-    fields: ['title', 'id', 'summary', 'start', 'end', 'date', 'calendar', 'endDate', 'place', 'region', 'body', 'wikidata'],
+    fields: ['title', 'id', 'summary', 'start', 'end', 'date', 'calendar', 'endDate', 'place', 'region', 'parent', 'scope', 'category', 'body', 'wikidata'],
     // Places before actors before events, so an event can point at a place
     // the same batch created rather than being refused for a record about to
     // exist.

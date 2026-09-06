@@ -13,6 +13,7 @@ import { html } from '../util/dom.js';
 import {
   FIELDS, CITATION_LISTS, ACTOR_LISTS, STEP_LISTS, emptyValues, buildBundle, slugify,
   comparableOf, findDuplicates, NO_DUPLICATES, validateBundle, preparedFor,
+  isVocabulary, vocabularyChoices, roleChoices,
 } from './bundle.js';
 import { createPicker, pickerIndex, kindsFor } from './picker.js';
 import { reorderControls, refreshAll } from './reorder.js';
@@ -135,14 +136,15 @@ export function createForm(container, {
 
   // --- the pickers --------------------------------------------------------
   //
-  // The lane is the one reference field that stays a `<select>`: five
-  // regions, a closed list, and nothing to type at. Everything else points
-  // into a corpus and is a picker (picker.js).
-  function regionSelect(select) {
+  // The lane and the category are the two reference fields that stay a
+  // `<select>`: closed lists, short, and nothing to type at. Everything else
+  // points into a corpus and is a picker (picker.js). Which vocabulary each
+  // one reads, and what its blank row says, is in bundle.js so that the
+  // review editor cannot come to offer a different list.
+  function vocabularySelect(select, name) {
     select.textContent = '';
-    select.appendChild(html('option', { value: '' }, '— derived from the place —'));
-    for (const region of topology.regions ?? []) {
-      select.appendChild(html('option', { value: region.id }, region.label ?? region.id));
+    for (const option of vocabularyChoices(name, topology)) {
+      select.appendChild(html('option', { value: option.value }, option.label));
     }
   }
 
@@ -231,7 +233,7 @@ export function createForm(container, {
     // A field that points into the atlas is a picker, and the picker's own
     // input is the field's: an error at this path still lands on something a
     // contributor can see and type into.
-    if (field.optionsFrom && field.optionsFrom !== 'regions') {
+    if (field.optionsFrom && !isVocabulary(field.optionsFrom)) {
       const picker = pickerFor(field.optionsFrom, {
         value: entry.values[field.key] ?? '',
         label: field.label,
@@ -255,7 +257,7 @@ export function createForm(container, {
       input = html('textarea', { id, rows: '4' });
     } else if (field.input === 'select') {
       input = html('select', { id });
-      if (field.optionsFrom) regionSelect(input);
+      if (field.optionsFrom) vocabularySelect(input, field.optionsFrom);
       else {
         for (const option of field.options) {
           const label = option === '' ? (field.required ? '— choose —' : '— none —') : option;
@@ -316,7 +318,18 @@ export function createForm(container, {
     const add = html('button', { type: 'button', class: 'link small' }, 'add');
     head.appendChild(add);
     wrap.appendChild(head);
-    wrap.appendChild(html('p', { class: 'hint' }, 'The actors of this event and what each did in it — not everyone alive at the time.'));
+    wrap.appendChild(html('p', { class: 'hint' }, 'The actors of this event and what each did in it — not everyone alive at the time. The role comes from the atlas\'s list; the note beside it is yours.'));
+    // Offered, not enforced: a role outside the list is the warning
+    // `role-unknown` until M32b applies the mapping, and a `<datalist>` on a
+    // text input is exactly that — suggestions over free text, and no
+    // suggestions at all where the dataset has no `data/roles.json`.
+    const roles = roleChoices(topology);
+    const rolesId = `${entry.key}-${list.key}-roles`;
+    if (roles.length) {
+      const datalist = html('datalist', { id: rolesId });
+      for (const role of roles) datalist.appendChild(html('option', { value: role }));
+      wrap.appendChild(datalist);
+    }
     const rows = html('ul', { class: 'citation-rows' });
     wrap.appendChild(rows);
     const error = html('p', { class: 'field-error', hidden: 'hidden' });
@@ -332,10 +345,21 @@ export function createForm(container, {
           refresh();
         },
       });
-      const role = html('input', { type: 'text', placeholder: 'role: leader, signatory, deposed', 'aria-label': 'Role' });
+      const role = html('input', {
+        type: 'text', placeholder: 'role: leader, signatory, deposed', 'aria-label': 'Role', list: roles.length ? rolesId : null,
+      });
       role.value = item.role ?? '';
       role.addEventListener('input', () => {
         item.role = role.value;
+        refresh();
+      });
+      // The phrase the role cannot hold — "president under whom it was held" —
+      // now that the role itself is a vocabulary (plan decision 7). Free text,
+      // optional, and an empty one writes no key at all.
+      const note = html('input', { type: 'text', placeholder: 'note: what the role cannot say', 'aria-label': 'Note' });
+      note.value = item.note ?? '';
+      note.addEventListener('input', () => {
+        item.note = note.value;
         refresh();
       });
       const drop = html('button', { type: 'button', class: 'link small' }, 'remove');
@@ -345,7 +369,7 @@ export function createForm(container, {
         row.remove();
         refresh();
       });
-      row.append(picker.root, role, drop);
+      row.append(picker.root, role, note, drop);
       rows.appendChild(row);
     };
 

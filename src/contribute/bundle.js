@@ -11,7 +11,7 @@
 import { validate } from '../validate/core.js';
 import { createValidator } from '../validate/schema.js';
 import { ACTOR_TYPES, EDGE_TYPES, WRITABLE_RELATION_TYPES as RELATION_TYPES, buildUniverse } from '../validate/rules.js';
-import { OFFICE_CATEGORY_IDS as OFFICE_CATEGORIES } from '../vocab.js';
+import { OFFICE_CATEGORY_IDS as OFFICE_CATEGORIES, EVENT_SCOPES } from '../vocab.js';
 import { CONTAINER_KINDS } from '../citation.js';
 import { KIND, CONTRIBUTED_KINDS, listsOf } from '../kinds.js';
 import { articleTitles } from '../wikipedia.js';
@@ -77,6 +77,9 @@ const DESCRIPTORS = Object.freeze({
     { key: 'endDate', label: 'Exact end date', input: 'text', path: '/when/endDate', hint: 'only for something that ran between two known days, in the same shape and calendar as the exact date' },
     { key: 'place', label: 'Place', input: 'select', optionsFrom: 'places', path: '/place', hint: 'a place record, chosen by name; add one below if it is not there yet. Leave it empty for a long process with no honest point' },
     { key: 'region', label: 'Timeline lane', input: 'select', optionsFrom: 'regions', path: '/region', hint: 'derived from the place; set it only when the derivation would be wrong, and always when there is no place' },
+    { key: 'parent', label: 'Part of', input: 'select', optionsFrom: 'events', path: '/parent', hint: 'optional: the larger event this one is inside — a battle inside a war, a decree inside a revolution. A display fact and never an argument: what caused what is an edge' },
+    { key: 'scope', label: 'Reach', input: 'select', options: ['', ...EVENT_SCOPES], path: '/scope', hint: 'leave it blank for an ordinary event. A claim about how wide the event was, not a way to make it look important: regional or worldwide is drawn as the ground smaller events stand on' },
+    { key: 'category', label: 'Category', input: 'select', optionsFrom: 'categories', path: '/category', hint: 'what kind of thing this was, from the atlas\'s closed list' },
     BODY_FIELD,
     WIKIDATA_FIELD,
   ]),
@@ -171,6 +174,43 @@ const DESCRIPTORS = Object.freeze({
     { key: 'reference', label: 'Reference', input: 'text', path: '/reference', hint: 'for a primary source: the shelfmark' },
   ]),
 });
+
+// The two reference fields that stay a `<select>` instead of becoming a
+// picker: five lanes and twelve categories, closed lists short enough to read
+// whole and with nothing to type at. Every other reference points into a
+// corpus and is a picker (picker.js). The list is pure and lives here so the
+// contribution form and the review editor cannot come to offer two different
+// ones, and the blank row is named per vocabulary, because "derived from the
+// place" and "nobody has said" are not the same absence.
+//
+// An absent vocabulary is an empty list and not a crash: a dataset with no
+// `data/categories.json` has no categories to choose, which is exactly what
+// makes the check absent on the CLI too (M30a, A8).
+const VOCABULARIES = Object.freeze({
+  regions: { key: 'regions', blank: '— derived from the place —' },
+  categories: { key: 'categoriesAllowed', blank: '— not said —' },
+});
+
+export function isVocabulary(name) {
+  return Object.hasOwn(VOCABULARIES, name);
+}
+
+export function vocabularyChoices(name, topology) {
+  const spec = VOCABULARIES[name];
+  if (!spec) return [];
+  return [
+    { value: '', label: spec.blank },
+    ...(topology?.[spec.key] ?? []).map((row) => ({ value: row.id, label: row.label ?? row.id })),
+  ];
+}
+
+// The roles a contributor may write beside an actor, as a datalist: the list
+// closed on 5 September (plan decision 7) offered rather than enforced, since
+// a role outside it is the warning `role-unknown` and not an error until M32b
+// applies the mapping. Absent means no suggestions, never an empty vocabulary.
+export function roleChoices(topology) {
+  return (topology?.rolesAllowed ?? []).map((row) => (typeof row === 'string' ? row : row.id));
+}
 
 // The form's fields for each kind, in the order the registry names them.
 // The descriptors above carry the label, the hint and the JSON pointer an
@@ -411,7 +451,7 @@ export function buildRecord(kind, values, context = {}) {
     if (trimmed(v.date) !== '') when.date = trimmed(v.date);
     if (trimmed(v.calendar) !== '') when.calendar = trimmed(v.calendar);
     if (trimmed(v.endDate) !== '') when.endDate = trimmed(v.endDate);
-    return withBody(withIdentity({
+    const event = {
       ...envelope('event', trimmed(v.id), context),
       sources: citationsOf(v.citations),
       title: trimmed(v.title),
@@ -419,8 +459,16 @@ export function buildRecord(kind, values, context = {}) {
       when,
       place: orNull(v.place),
       region: orNull(v.region),
-      actors: actorsOf(v.actors),
-    }, v), v);
+    };
+    // The three M30a added, written only where a person filled one in. An
+    // empty one writes no key at all, so the 137 events in `data/` — none of
+    // which carries any of them — are byte-identical after a save, and the
+    // schema's `null` is never invented for a field nobody answered.
+    if (trimmed(v.parent) !== '') event.parent = trimmed(v.parent);
+    if (trimmed(v.scope) !== '') event.scope = trimmed(v.scope);
+    if (trimmed(v.category) !== '') event.category = trimmed(v.category);
+    event.actors = actorsOf(v.actors);
+    return withBody(withIdentity(event, v), v);
   }
 
   if (kind === 'place') {
@@ -619,6 +667,9 @@ export function valuesFromRecord(kind, record) {
       endDate: when.endDate ?? '',
       place: r.place ?? '',
       region: r.region ?? '',
+      parent: r.parent ?? '',
+      scope: r.scope ?? '',
+      category: r.category ?? '',
       actors: (Array.isArray(r.actors) ? r.actors : []).map((a) => ({ actor: a?.actor ?? '', role: a?.role ?? '', note: a?.note ?? '' })),
     };
   }
@@ -775,13 +826,15 @@ const ENVELOPE_KEYS = Object.freeze(['schema', 'id', 'kind', 'status', 'supersed
 // here: it is a field of its own, and buildRecord writes what was typed.
 const IDENTITY_KEYS = Object.freeze(['wikipedia', 'sitelinks']);
 
-// The fields M30a-3 put in the schemas and M30b draws. The form has no input
-// for any of them yet, and a field the editor cannot see is a field the
-// editor must not delete — the same rule IDENTITY_KEYS exists for — so a save
-// through the form or the dashboard carries them across untouched. The day
-// M30b adds the inputs, each key moves from here into that kind's `fields`.
+// The fields M30a-3 put in the schemas and no form draws. A field the editor
+// cannot see is a field the editor must not delete — the same rule
+// IDENTITY_KEYS exists for — so a save through the form or the dashboard
+// carries them across untouched. The event's `parent`, `scope` and `category`
+// were here until M30b-3 drew their inputs and moved them into
+// `KIND.event.fields`; a place's former names are still nobody's to type,
+// because a dated name is a claim with its own years and belongs in an editor
+// of its own rather than in a text box (M38).
 const KEPT_KEYS = Object.freeze({
-  event: Object.freeze(['parent', 'scope', 'category']),
   place: Object.freeze(['historicalNames']),
 });
 

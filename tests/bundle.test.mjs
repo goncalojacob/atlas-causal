@@ -7,6 +7,7 @@ import {
   FIELDS, CITATION_LISTS, ACTOR_LISTS, STEP_LISTS, emptyValues, slugify, parseBound, buildRecord, buildBundle,
   comparableOf, comparableIndex, findDuplicates, similarity, checkBundleShape, validateBundle, everythingCited,
   valuesFromRecord, applyValues, wikidataFrom, canMove, moveItem,
+  isVocabulary, vocabularyChoices, roleChoices,
 } from '../src/contribute/bundle.js';
 import { buildTopology } from '../src/validate/core.js';
 import { createValidator } from '../src/validate/schema.js';
@@ -441,6 +442,86 @@ test('the form builds a narrative out of rows, and a half window is no window', 
 // applyValues have to compose to the identity or a review that changed one
 // summary would rewrite half the file: this asserts it on the fixtures and on
 // every record in data/, bytes included.
+
+// The three fields M30a-3 put in the schema and M30b-3 drew (A16). They were
+// carried across a save without an input (deviation 343); now they are the
+// form's, and the thing that must not change is what a record with none of
+// them writes — no key at all, so the 137 events in `data/` are byte-identical
+// after a save and the schema's `null` is never invented for an unanswered
+// field.
+test("an event's parent, reach and category are the form's now", async () => {
+  const v = createValidator(await schemas());
+  const plain = buildRecord('event', eventValues, CONTEXT);
+  for (const key of ['parent', 'scope', 'category']) {
+    assert.equal(Object.hasOwn(plain, key), false, `an empty ${key} writes no key`);
+  }
+  assert.deepEqual(v.validate('v1/event.json', plain), []);
+
+  const inside = buildRecord('event', {
+    ...eventValues, parent: 'fixture-event-f', scope: 'regional', category: 'war',
+  }, CONTEXT);
+  assert.equal(inside.parent, 'fixture-event-f');
+  assert.equal(inside.scope, 'regional');
+  assert.equal(inside.category, 'war');
+  assert.deepEqual(v.validate('v1/event.json', inside), []);
+  // Between the lane and the actors, which is the schema's own order.
+  assert.deepEqual(
+    Object.keys(inside).filter((k) => ['region', 'parent', 'scope', 'category', 'actors'].includes(k)),
+    ['region', 'parent', 'scope', 'category', 'actors'],
+  );
+
+  // And back: the editor reads what is on disk, and an absent field is the
+  // empty string the inputs hold.
+  const values = valuesFromRecord('event', inside);
+  assert.equal(values.parent, 'fixture-event-f');
+  assert.equal(values.scope, 'regional');
+  assert.equal(values.category, 'war');
+  const none = valuesFromRecord('event', plain);
+  assert.deepEqual([none.parent, none.scope, none.category], ['', '', '']);
+});
+
+// The note beside the role travelled in the values with no input drawn for it
+// (deviation 343); the form and the editor draw one now, and an empty one
+// still writes no key.
+test("an actor line's note is written when it is filled in and not otherwise", () => {
+  const record = buildRecord('event', {
+    ...eventValues,
+    actors: [
+      { actor: 'fixture-actor-one', role: 'leader', note: 'president under whom it was held' },
+      { actor: 'fixture-actor-two', role: 'signatory', note: '  ' },
+    ],
+  }, CONTEXT);
+  assert.deepEqual(record.actors, [
+    { actor: 'fixture-actor-one', role: 'leader', note: 'president under whom it was held' },
+    { actor: 'fixture-actor-two', role: 'signatory' },
+  ]);
+  assert.deepEqual(
+    valuesFromRecord('event', record).actors.map((a) => a.note),
+    ['president under whom it was held', ''],
+  );
+});
+
+// The two closed lists the form offers as a `<select>` and the one it offers
+// as suggestions, all three off the topology and all three absent-tolerant:
+// a dataset with no `data/categories.json` has no categories to choose, which
+// is the same thing that turns the check off on the CLI (M30a, A8).
+test('the vocabularies the form offers come off the topology, and absent means none', () => {
+  const topology = {
+    regions: [{ id: 'europe', label: 'Europe' }],
+    categoriesAllowed: [{ id: 'war', label: 'War' }, { id: 'treaty' }],
+    rolesAllowed: [{ id: 'leader' }, { id: 'signatory' }],
+  };
+  assert.ok(isVocabulary('regions') && isVocabulary('categories'));
+  assert.equal(isVocabulary('events'), false, 'a corpus is a picker, not a select');
+  assert.deepEqual(vocabularyChoices('categories', topology), [
+    { value: '', label: '— not said —' },
+    { value: 'war', label: 'War' },
+    { value: 'treaty', label: 'treaty' },
+  ]);
+  assert.deepEqual(roleChoices(topology), ['leader', 'signatory']);
+  assert.deepEqual(vocabularyChoices('categories', {}), [{ value: '', label: '— not said —' }]);
+  assert.deepEqual(roleChoices({}), []);
+});
 
 test('valuesFromRecord and applyValues round-trip the fixture records', async () => {
   const { records } = await fixtures();

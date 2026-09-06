@@ -10,7 +10,10 @@
 
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
+import { readFile } from 'node:fs/promises';
+import path from 'node:path';
 import { withBrowser, open, waitFor, watchErrors, errorsOn, skip } from './browser.mjs';
+import { ROOT } from './helpers.mjs';
 
 const FORM_READY = 'return document.querySelectorAll(".add-row button").length > 0;';
 
@@ -352,6 +355,74 @@ test('the form builds a tenure and its office picker answers, and review.html op
       category: 'head-of-state',
       current: 'monarch-of-portugal',
     });
+    assert.deepEqual(await errorsOn(page), []);
+  });
+});
+
+// A16: the three fields M30a-3 put in the schema, and the note beside a role.
+// They were carried across a save with no input to see them (deviation 343);
+// this is the run that draws them, and what is asserted is that the closed
+// lists come out of `data/` rather than out of the code.
+test('the form writes an event\'s parent, reach, category and an actor\'s note', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await watchErrors(page);
+    await open(page, url('contribute.html'), FORM_READY);
+    const drawn = await page.eval(`const card = document.querySelector('section.entry.event');
+      const options = (key) => [...card.querySelectorAll('.field-' + key + ' option')].map((o) => o.value);
+      return {
+        labels: [...card.querySelectorAll('label')].map((l) => l.textContent.replace(/\\s+/g, ' ').trim()),
+        parentIsPicker: Boolean(card.querySelector('.field-parent .picker')),
+        scope: options('scope'),
+        categories: options('category'),
+        categoryLabels: [...card.querySelectorAll('.field-category option')].map((o) => o.textContent),
+      };`);
+    assert.ok(drawn.labels.includes('Part of'), drawn.labels.join(' · '));
+    assert.ok(drawn.labels.includes('Reach'), drawn.labels.join(' · '));
+    assert.ok(drawn.labels.includes('Category'), drawn.labels.join(' · '));
+    assert.ok(drawn.parentIsPicker, 'the parent is chosen from the corpus, not from a select of every event');
+    assert.deepEqual(drawn.scope, ['', 'regional', 'worldwide']);
+    // The twelve of data/categories.json, blank first: the list is in data and
+    // adding one is an edit to that file (plan decision 13).
+    const categories = JSON.parse(await readFile(path.join(ROOT, 'data', 'categories.json'), 'utf8'));
+    assert.deepEqual(drawn.categories, ['', ...categories.map((c) => c.id)]);
+    assert.equal(drawn.categoryLabels[0], '— not said —');
+    assert.equal(drawn.categoryLabels[1], categories[0].label);
+
+    // The role is offered the atlas's 31 and not held to them: a `<datalist>`
+    // over a text input, because a role outside the list is a warning until
+    // M32b applies the mapping.
+    await page.eval(`document.querySelector('section.entry.event .actors .link.small').click(); return true;`);
+    await waitFor(page, `return document.querySelector('section.entry.event .actors .citation-row') !== null;`, 'the actor row');
+    const roles = JSON.parse(await readFile(path.join(ROOT, 'data', 'roles.json'), 'utf8'));
+    const row = await page.eval(`const r = document.querySelector('section.entry.event .actors .citation-row');
+      const inputs = [...r.querySelectorAll('input[aria-label]')].map((i) => i.getAttribute('aria-label'));
+      const role = r.querySelector('input[aria-label="Role"]');
+      const suggestions = role.list ? [...role.list.options].map((o) => o.value) : null;
+      return { inputs, suggestions };`);
+    assert.deepEqual(row.inputs, ['Actor', 'Role', 'Note'], 'a third column for the note');
+    assert.deepEqual(row.suggestions, roles.map((r) => r.id));
+
+    // And all four reach the bundle the contributor would file.
+    await page.eval(`const card = document.querySelector('section.entry.event');
+      const set = (el, value) => { el.value = value; el.dispatchEvent(new Event('input', { bubbles: true })); };
+      set(card.querySelector('.field-title input'), 'A synthetic event, written in a test');
+      set(card.querySelector('.field-start input'), '1500');
+      set(card.querySelector('.field-summary textarea'), 'Invented for a test of the form. Not history.');
+      set(card.querySelector('.field-scope select'), 'worldwide');
+      set(card.querySelector('.field-category select'), 'war');
+      const row = card.querySelector('.actors .citation-row');
+      set(row.querySelector('input[aria-label="Role"]'), 'leader');
+      set(row.querySelector('input[aria-label="Note"]'), 'a synthetic note');
+      return true;`);
+    await waitFor(page, `return /worldwide/.test(document.querySelector('.preview').textContent);`, 'the bundle');
+    const filed = await page.eval('return JSON.parse(document.querySelector(".preview").textContent || "{}");');
+    const event = filed.records.find((r) => r.kind === 'event');
+    assert.equal(event.scope, 'worldwide');
+    assert.equal(event.category, 'war');
+    // The actor row has no actor chosen, so it is not written at all — which
+    // is the rule that was there before the note existed.
+    assert.deepEqual(event.actors, []);
+    assert.equal(Object.hasOwn(event, 'parent'), false, 'nothing chosen writes no key');
     assert.deepEqual(await errorsOn(page), []);
   });
 });

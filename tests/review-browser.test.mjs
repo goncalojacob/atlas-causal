@@ -175,3 +175,45 @@ test('an edge is reviewed with both of its ends beside it', { skip }, async () =
     }
   });
 });
+
+// The other half of A16: the editor is generic over FIELDS, so the three
+// fields arrive here with the form's — and the point of them arriving is that
+// a reviewer can now change one, which until this run was a key the editor
+// carried across without being able to see it (deviation 343).
+test('a reviewer can set an event\'s category, and the diff says so', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    // Named, because the head of the queue is whichever record is oldest and
+    // need not be an event; this one is a draft the elections import wrote.
+    await open(page, url('review.html?open=1908-portuguese-legislative-election'), QUEUE_READY);
+    await waitFor(page, 'return document.querySelector(".editor-mount .field-category select") !== null;', 'the editor');
+    const drawn = await page.eval(`const root = document.querySelector('.editor-mount');
+      const row = root.querySelector('.field.list .citation-row');
+      const role = row ? row.querySelector('input[aria-label$="text"]') : null;
+      return {
+        kind: root.querySelector('.editor').className,
+        parentIsPicker: Boolean(root.querySelector('.field-parent .picker')),
+        scope: [...root.querySelectorAll('.field-scope option')].map((o) => o.value),
+        category: root.querySelector('.field-category select').value,
+        blank: root.querySelector('.field-category option').textContent,
+        roleSuggestions: role && role.list ? role.list.options.length : 0,
+      };`);
+    assert.match(drawn.kind, /\bevent\b/, 'the queue opens on an event');
+    assert.ok(drawn.parentIsPicker, 'Part of is a picker over the events');
+    assert.deepEqual(drawn.scope, ['', 'regional', 'worldwide']);
+    assert.equal(drawn.category, '', 'no record in data/ carries a category yet');
+    assert.equal(drawn.blank, '— not said —');
+    assert.ok(drawn.roleSuggestions > 0, 'the roles are offered on the actor rows');
+
+    await page.eval(`const select = document.querySelector('.editor-mount .field-category select');
+      select.value = 'revolution';
+      select.dispatchEvent(new Event('input', { bubbles: true }));
+      return true;`);
+    await waitFor(page, 'return document.querySelector(".record-diff").hidden === false;', 'the diff');
+    const diff = await page.eval(`return {
+      fields: [...document.querySelectorAll('.record-diff .diff-field')].map((el) => el.textContent),
+      after: [...document.querySelectorAll('.record-diff .diff-after')].map((el) => el.textContent),
+    };`);
+    assert.ok(diff.fields.some((t) => t.includes('category')), diff.fields.join(' | '));
+    assert.ok(diff.after.some((t) => t.includes('revolution')), diff.after.join(' | '));
+  });
+});
