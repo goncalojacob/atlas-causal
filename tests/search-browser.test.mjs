@@ -147,3 +147,38 @@ test('the box finds an event by its summary, below anything called that', { skip
     for (const text of years) assert.match(text, /\d{3,4}/, 'every actor row carries its years');
   });
 });
+
+// A15: an office is in the shard as of M30a-1 and the box could not open one
+// — every kind but the three named fell through to "select an event", which
+// put an office id in `?selected=` and drew "Not found".
+test('an office is findable and opens its own card, and no lens marks it outside', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    // A lens is on, so that the hint the box draws for what falls outside it
+    // is actually being asked about every row.
+    // Nothing is open, so there is no card to wait for: the box itself and a
+    // drawn timeline are what "ready" means here.
+    await open(page, url('?focus=actor:salazar'),
+      'return document.querySelectorAll("#search-input").length > 0 && Boolean(document.querySelector(".timeline-area svg"));');
+
+    await page.eval(type('prime minister'));
+    await waitFor(page, `return Boolean(document.querySelector('[role="option"][data-id="prime-minister-of-portugal"]'));`,
+      'the office to be offered');
+    const row = await page.eval(`const el = document.querySelector('[role="option"][data-id="prime-minister-of-portugal"]');
+      return {
+        kind: el.dataset.kind,
+        group: el.previousElementSibling?.classList.contains('search-group')
+          ? el.previousElementSibling.textContent.trim() : null,
+        outside: el.classList.contains('outside-lens'),
+      };`);
+    assert.equal(row.kind, 'office');
+    assert.equal(row.group, 'Offices', 'the kind has a heading of its own, not its raw name');
+    // A lens is about which events are drawn; an office is not one of them.
+    assert.equal(row.outside, false);
+
+    assert.equal(await page.eval(choose('prime-minister-of-portugal')), true);
+    await waitFor(page, 'return /office=prime-minister-of-portugal/.test(location.search);', 'the office in the URL');
+    await waitFor(page, 'return Boolean(document.querySelector(".panel .office-card"));', 'the office card');
+    assert.equal(await page.eval('return document.querySelector(".panel .office-card h2").textContent;'),
+      'Prime Minister of Portugal');
+  });
+});

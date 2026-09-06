@@ -23,7 +23,9 @@ import { ENTRY_KINDS, createLinks } from './entry/entry.js';
 
 const LIMIT = 8;
 
-const KIND_LABEL = Object.freeze({ event: 'Events', actor: 'Actors', place: 'Places', source: 'Sources' });
+const KIND_LABEL = Object.freeze({
+  event: 'Events', actor: 'Actors', place: 'Places', source: 'Sources', office: 'Offices',
+});
 
 // `shard` is the search index the build already folded (h3a-brief, A9),
 // given as a promise: the box is wired at once and answers as soon as the
@@ -37,6 +39,7 @@ export function createSearchBox(container, { atlas, state, fixtures = false, sha
     actors: [...atlas.actors.values()],
     places: [...atlas.places.values()],
     sources: [...atlas.sources.values()],
+    offices: [...atlas.offices.values()],
   });
   // Null until the shard lands: an empty list would answer "nothing by that
   // name" about records that are right there, which is the one thing this box
@@ -66,6 +69,10 @@ export function createSearchBox(container, { atlas, state, fixtures = false, sha
     if (item.kind === 'place') {
       return !(atlas.eventsByPlace.get(item.id) ?? []).some((e) => lens.has(e.id));
     }
+    // An office is left alone: a lens is about which events are drawn, and an
+    // office is a post rather than a set of them. Marking it "outside the
+    // lens" would be answering a question nobody asked of it.
+    if (item.kind === 'office') return false;
     // A source's own lens, intersected with the one that is on: which of the
     // events this book touches are still drawn.
     const reached = lensFor(`source:${item.id}`, atlas);
@@ -139,6 +146,8 @@ export function createSearchBox(container, { atlas, state, fixtures = false, sha
       state.set({ place: item.id, selected: null, chain: [] });
     } else if (item.kind === 'source') {
       state.set({ source: item.id, selected: null, chain: [] });
+    } else if (item.kind === 'office') {
+      state.set({ office: item.id, selected: null, chain: [] });
     } else {
       // Widen to include it, then select — but only when it is not already
       // in the window. Widening unasked is how the first thing a reader does
