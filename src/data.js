@@ -27,7 +27,7 @@ async function defaultFetchJson(url, init) {
 
 // Pure assembly from already-loaded pieces; loadAtlas() does the fetching.
 export function createAtlas({
-  manifest, topology, sources, land = null, palette = null, regionBoxes = null,
+  manifest, topology, sources, land = null, palette = null, regionBoxes = null, regionShapes = null,
   dataRoot = 'data/', fetchJson = defaultFetchJson, citers: seededCiters = null,
 }) {
   const events = new Map(topology.events.map((e) => [e.id, e]));
@@ -499,6 +499,12 @@ export function createAtlas({
     // Empty when the file did not arrive, which puts those events back where
     // they were rather than taking the atlas down with it.
     regionBoxes: regionBoxes ?? new Map(),
+    // And the polygons themselves, for the wash a regional event is drawn as
+    // (large.js, map/layers/regions.js). The boxes above were all this file
+    // kept until M30b-2 — a box is enough to answer "is a placeless event in
+    // view" and it is not enough to draw a lane on the map, which is a shape.
+    // Null on a page that did not ask for the file at all.
+    regionShapes: regionShapes ?? null,
     presences,
     presencesByActor,
     dependenciesOf,
@@ -685,14 +691,26 @@ export async function loadAtlas({
   //
   // `regions: false` for a page with no viewport to be in or out of — the
   // entry page and the contribution form — because the polygons are a couple
-  // of hundred kilobytes and only the map ever asks the question. Reduced to
-  // one box per region the moment it arrives; the polygons are not kept.
-  const regionBoxes = regions
-    ? await fetchJson(`${dataRoot}geo/regions.json`)
-      .then((collection) => regionBounds(collection))
-      .catch(() => new Map())
-    : new Map();
+  // of hundred kilobytes and only the map ever asks the question.
+  //
+  // The shapes are kept as well as the boxes since M30b-2: a regional event is
+  // washed over its lane's polygons, and a box is a rectangle across a whole
+  // northern strip where a region wraps (util/geo.js). It is the file that was
+  // already fetched and already parsed, held rather than dropped — and the
+  // health review's §5.4 names these 221 KB as the first thing a base-map
+  // budget should reclaim, which is where the two will be settled together.
+  const collection = regions
+    ? await fetchJson(`${dataRoot}geo/regions.json`).catch(() => null)
+    : null;
   return createAtlasFromSpine({
-    manifest, spine, sources: sourcesIndex.sources, land, palette, regionBoxes, dataRoot, fetchJson,
+    manifest,
+    spine,
+    sources: sourcesIndex.sources,
+    land,
+    palette,
+    regionBoxes: collection ? regionBounds(collection) : new Map(),
+    regionShapes: collection,
+    dataRoot,
+    fetchJson,
   });
 }

@@ -150,7 +150,7 @@ src/cluster.js             pure: which marks overlap at this zoom, over a grid; 
 src/search.js              pure: titles, every name of an actor or a place, and a source's title and creators, folded and ranked;  search-box.js  the input and the keys
 src/map/projection.js      lon/lat ⇄ SVG (equirectangular); the only file a projection change touches
 src/map/map.js             SVG scaffold, pan/zoom, click into a cluster
-src/map/layers/land.js     coastlines;  layers/presences.js  territories;  layers/events.js  marks, clusters and chain lines
+src/map/layers/land.js     coastlines;  layers/presences.js  territories;  layers/events.js  marks, clusters and chain lines;  layers/regions.js  the wash a large event is drawn as, over the polygons of its lane
 src/graph-view/layout.js   pure: where every node goes — x is the year, y is bands and a barycentre pass
 src/graph-view/graph-view.js  the graph drawn: nodes, the five edge types, the window shaded, pan/zoom
 src/graph-view/collapse.js pure: the semantic level of detail — an event's parts drawn inside it below a zoom, the endpoints of their links moved onto it and the links inside it dropped. Runs after the layout and before M25's geometric stacking, so no node ever moves for it

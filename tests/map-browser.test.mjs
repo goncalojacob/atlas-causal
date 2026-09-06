@@ -400,3 +400,69 @@ test('a border is drawn to the detail the zoom is worth, and no finer', { skip }
       `and the world is drawn with a good deal less of it (${world.points} of ${close.points})`);
   });
 });
+
+// --- what the map cannot draw as a mark ------------------------------------
+//
+// A8 and A10. Two of them: a regional event washes the polygons of its lane
+// rather than standing on a point it does not have, and the corner counts the
+// events of the window with no place at all.
+test('the map counts the events of the window it has no place for', { skip }, async () => {
+  await wide(async (page, url) => {
+    await open(page, url('?from=1960&to=1980'), READY);
+    await waitFor(page, 'return Boolean(document.querySelector(".map-corner .map-unplaced"));', 'the corner');
+
+    // The count is the atlas's own: active, kept by the lens, overlapping the
+    // window, and with no place — the same three filters the marks obey, plus
+    // the absence that keeps them off the map.
+    const seen = await page.eval(`
+      const text = document.querySelector('.map-corner .map-unplaced').textContent;
+      return { text, corner: document.querySelector('.map-corner').hidden };`);
+    assert.equal(seen.corner, false);
+    assert.match(seen.text, /^\d+ events in this window have no place; they are on the timeline\.$/);
+    const counted = Number(seen.text.match(/^(\d+)/)[1]);
+    assert.ok(counted > 0, 'the atlas has placeless events in the sixties');
+
+    // It is the corner opposite the failure note, and it is not that note.
+    const where = await page.eval(`
+      const pane = document.querySelector('.map-area').getBoundingClientRect();
+      const box = document.querySelector('.map-corner').getBoundingClientRect();
+      return { left: box.left - pane.left, bottom: pane.bottom - box.bottom };`);
+    assert.ok(where.left < 40 && where.bottom < 40, `bottom-left (${where.left}, ${where.bottom})`);
+
+    // A narrower window holds fewer of them, and a window with none prints
+    // nothing at all rather than a zero.
+    await open(page, url('?from=1974&to=1974'), READY);
+    await waitFor(page, 'return true;', 'the map to settle');
+    const narrow = await page.eval(`
+      const el = document.querySelector('.map-corner .map-unplaced');
+      return el ? Number(el.textContent.match(/^(\\d+)/)[1]) : 0;`);
+    assert.ok(narrow < counted, `${narrow} in one year against ${counted} in twenty`);
+  });
+});
+
+test('a regional event is a wash over its lane, and its parts are still their own marks', { skip }, async () => {
+  await wide(async (page, url) => {
+    // The fixtures' `fixture-event-f` is written `scope: regional` in
+    // `fixture-lane-3`; `data/` has no `scope` on anything yet.
+    await open(page, url('?fixtures=1'), READY);
+    await waitFor(page, 'return document.querySelectorAll("#map .layer-regions path").length > 0;', 'the wash');
+    const wash = await page.eval(`
+      const el = document.querySelector('#map .layer-regions path.region-wash');
+      const root = document.querySelector('#map svg.map');
+      const layers = [...root.querySelector('.viewport').children].map((g) => g.getAttribute('class'));
+      return {
+        region: el.getAttribute('data-region'),
+        title: el.querySelector('title').textContent,
+        count: document.querySelectorAll('#map .layer-regions path').length,
+        clickable: getComputedStyle(el).pointerEvents,
+        under: layers.indexOf('layer layer-regions') < layers.indexOf('layer layer-events'),
+        mark: Boolean(document.querySelector('#map circle.mark[data-id="fixture-event-t"]')),
+      };`);
+    assert.equal(wash.region, 'fixture-lane-3', 'the lane the event names');
+    assert.equal(wash.title, 'Fixture event F');
+    assert.equal(wash.count, 1, 'one wash for the one large event');
+    assert.equal(wash.clickable, 'none', 'a wash covers marks and territories and takes no click');
+    assert.ok(wash.under, 'and is drawn under them');
+    assert.ok(wash.mark, 'an event inside a large one is still a mark of its own');
+  });
+});

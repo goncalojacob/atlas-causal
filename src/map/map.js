@@ -8,12 +8,15 @@
 import { svg } from '../util/dom.js';
 import { fitBounds, WORLD, viewBboxIn, bboxTransform } from './projection.js';
 import { createLandLayer } from './layers/land.js';
+import { createRegionsLayer } from './layers/regions.js';
 import { createPresencesLayer } from './layers/presences.js';
 import { chainEdges, walkOrSelect } from '../chain.js';
 import { createEventsLayer } from './layers/events.js';
 import { DEEPEST_ZOOM } from '../cluster.js';
-import { resolveWindow, withMargin } from '../util/window.js';
+import { resolveWindow, withMargin, overlaps } from '../util/window.js';
 import { workingSet, heldSet } from '../emphasis.js';
+import { largeEventsIn } from '../large.js';
+import { esc } from '../util/esc.js';
 import { normalizeBbox } from '../state.js';
 import { renderKey } from '../render-key.js';
 import { exportButton } from '../share.js';
@@ -51,11 +54,16 @@ export function createMap(container, { atlas, state, onCluster = null }) {
   // Territories go between the coastlines and the marks: an event still sits
   // on top of the state it happened in.
   const presencesGroup = svg('g', { class: 'layer layer-presences' });
+  // And the wash a large event is drawn as goes over the territories and under
+  // the marks: it is a statement about the ground, and nothing it covers may
+  // stop being clickable (layers/regions.js).
+  const regionsGroup = svg('g', { class: 'layer layer-regions' });
   const eventsGroup = svg('g', { class: 'layer layer-events' });
-  viewport.append(landGroup, presencesGroup, eventsGroup);
+  viewport.append(landGroup, presencesGroup, regionsGroup, eventsGroup);
   const root = svg('svg', { viewBox: `0 0 ${WIDTH} ${HEIGHT}`, class: 'map', role: 'img', 'aria-label': 'Map' }, [viewport]);
 
   const land = createLandLayer(landGroup, projection);
+  const regionsLayer = createRegionsLayer(regionsGroup, projection, { shapes: atlas.regionShapes });
   // A shard of borders that will not load leaves the map showing the year
   // before it, which is usually the same picture and therefore says nothing.
   // This is the one place it is said. It is not state and never reaches the
@@ -342,8 +350,27 @@ export function createMap(container, { atlas, state, onCluster = null }) {
     scheduleBbox();
   });
 
+  // The bottom-left corner: what is in this window that the map has nowhere to
+  // put. Two lines, each absent when it has nothing to say — the events that
+  // span the whole map, named and openable, because a tint over the viewport
+  // would film over every coastline, territory and mark; and the count of the
+  // events with no place at all, which are on the timeline and nowhere here.
+  //
+  // Deliberately not `.map-note`: that one is at the top right, bordered in
+  // madder, and means "the picture is not the one you asked for". This is the
+  // picture saying what it is not drawing, which is a different thing and
+  // reads as one.
+  const corner = document.createElement('div');
+  corner.className = 'map-corner';
+  corner.hidden = true;
+  corner.addEventListener('click', (e) => {
+    const button = e.target.closest?.('[data-id]');
+    if (button) walkOrSelect(state, atlas, button.getAttribute('data-id'));
+  });
+
   container.append(root);
   container.append(territoriesNote);
+  container.append(corner);
   container.append(exportButton(root, 'map'));
 
   // --- when the map is drawn again ----------------------------------------
@@ -370,6 +397,11 @@ export function createMap(container, { atlas, state, onCluster = null }) {
     landGroup.style.display = s.layers.includes('land') ? '' : 'none';
     presencesGroup.style.display = s.layers.includes('territories') ? '' : 'none';
     eventsGroup.style.display = s.layers.includes('events') ? '' : 'none';
+    // The wash and the corner are the events layer said another way, so they
+    // go off with it: a tinted continent with no mark on it would be an event
+    // the reader has just switched off, still drawn.
+    const drawingEvents = s.layers.includes('events');
+    regionsGroup.style.display = drawingEvents ? '' : 'none';
     // Events by overlap with the window, territories by its far end: a
     // border is a state of affairs at a moment, an event is an interval.
     const timeWindow = resolveWindow(s, atlas.extent);
@@ -411,8 +443,26 @@ export function createMap(container, { atlas, state, onCluster = null }) {
         k: transform.k,
       });
     }
+    const drawn = lens ? atlas.activeEvents.filter((e) => lens.has(e.id)) : atlas.activeEvents;
+    // The large events of the window: a regional one washes the polygons of
+    // its lane, a worldwide one is named in the corner instead (large.js).
+    // Off the same list the marks are drawn from, so the lens applies to all
+    // three exactly as it applies to a mark.
+    const inWindow = drawn.filter((e) => overlaps(e.when, timeWindow));
+    const large = drawingEvents ? largeEventsIn(inWindow, atlas) : [];
+    regionsLayer.render(large
+      .filter((l) => l.scope === 'regional' && l.region)
+      .map((l) => ({ region: l.region, title: l.event.title })));
+    // And the events of this window the map has no point for at all. The same
+    // three filters the marks obey — active, kept by the lens, overlapping the
+    // window — and not the viewport's box: they are nowhere, so they are no
+    // more outside the box than in it.
+    drawCorner(
+      large.filter((l) => l.scope === 'worldwide'),
+      drawingEvents ? inWindow.filter((e) => !atlas.pointOf(e)).length : 0,
+    );
     const result = events.render({
-      events: lens ? atlas.activeEvents.filter((e) => lens.has(e.id)) : atlas.activeEvents,
+      events: drawn,
       window: timeWindow,
       margin,
       selected: s.selected,
@@ -441,6 +491,27 @@ export function createMap(container, { atlas, state, onCluster = null }) {
     // A spread survives a re-render — the band moving, a selection — for as
     // long as its cluster is still there to be spread.
     if (spread && !result.spread) spread = null;
+  }
+
+  // The two lines of the corner. Rewritten only when they change, because the
+  // map redraws on every pan and this is markup rather than an attribute.
+  // Everything from `data/` goes through `esc()`: a title is untrusted input
+  // here as everywhere else.
+  function drawCorner(worldwide, unplaced) {
+    const lines = [];
+    if (worldwide.length > 0) {
+      const named = worldwide.map(({ event }) => `<button type="button" class="link" data-id="${esc(event.id)}">${esc(event.title)}</button>`).join(', ');
+      lines.push(`<p class="map-worldwide">${worldwide.length} ${worldwide.length === 1 ? 'event' : 'events'} in this window
+        ${worldwide.length === 1 ? 'spans' : 'span'} the whole map: ${named}</p>`);
+    }
+    if (unplaced > 0) {
+      lines.push(unplaced === 1
+        ? '<p class="map-unplaced">1 event in this window has no place; it is on the timeline.</p>'
+        : `<p class="map-unplaced">${unplaced} events in this window have no place; they are on the timeline.</p>`);
+    }
+    const html = lines.join('');
+    if (corner.innerHTML !== html) corner.innerHTML = html;
+    corner.hidden = lines.length === 0;
   }
 
   // A pane that changes size shows a different part of the world at the same

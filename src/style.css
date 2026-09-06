@@ -813,6 +813,26 @@ svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align:
   pointer-events: none;
 }
 
+/* What the map is not drawing as a mark: the events of this window that span
+   the whole map, and the count of those with no place at all. The quiet
+   opposite of .map-note above — ink on paper with a plain line round it,
+   because nothing here is a warning, and at the other corner so the two are
+   never read as one block. */
+.map-corner {
+  position: absolute; left: var(--space-3); bottom: var(--space-3); max-width: 24rem;
+  margin: 0; padding: var(--space-2) var(--space-3);
+  background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius);
+  font-family: var(--font-ui); font-size: var(--text-xs); color: var(--ink-soft);
+}
+.map-corner p { margin: 0; }
+.map-corner p + p { margin-top: var(--space-1); }
+
+/* A large event over the ground it covers, in place of a mark it has no
+   honest point for (map/layers/regions.js). Faint enough that a coastline, a
+   territory and a mark are all still readable through it, and never a target:
+   the record is opened from its mark, its bar or the corner. */
+.map .region-wash { fill: var(--cobalt); opacity: 0.07; stroke: none; pointer-events: none; }
+
 /* --- timeline -------------------------------------------------------- */
 
 /* pan-y and not none: a sideways drag is the band sliding, and a finger
