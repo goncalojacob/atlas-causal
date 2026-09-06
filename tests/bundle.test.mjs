@@ -168,6 +168,44 @@ test('a built record carries the envelope and passes its schema', async () => {
   }, CONTEXT);
   assert.deepEqual(ongoing.when, { start: 1970, end: null });
 
+  const office = buildRecord('office', {
+    ...emptyValues('office'),
+    id: 'synthetic-office',
+    of: 'fixture-polity-three',
+    title: 'A Synthetic Post',
+    category: 'head-of-state',
+    start: '',
+    end: '',
+    summary: ' ',
+  }, CONTEXT);
+  // Both years blank is an office the atlas dates not at all — `when: null`,
+  // never a start of nothing — and an office cites nothing at all (A13).
+  assert.equal(office.when, null);
+  assert.deepEqual(office.sources, []);
+  assert.equal(office.summary, null);
+  assert.deepEqual(v.validate('v1/office.json', office), []);
+  const dated = buildRecord('office', {
+    ...emptyValues('office'), id: 'synthetic-office', of: 'a', title: 'T', category: 'other', start: '1834', end: 'ongoing',
+  }, CONTEXT);
+  assert.deepEqual(dated.when, { start: 1834, end: null });
+
+  const tenure = buildRecord('tenure', {
+    ...emptyValues('tenure'),
+    id: 'synthetic-tenure',
+    person: 'fixture-actor-one',
+    office: 'synthetic-office',
+    start: '1200',
+    end: '',
+    startedBy: '',
+    citations: [{ source: 'fixture-source-1' }],
+  }, CONTEXT);
+  // A free slug and not from--to--type: one person may hold one office three
+  // times (plan review, finding 1).
+  assert.equal(tenure.id, 'synthetic-tenure');
+  assert.deepEqual(tenure.when, { start: 1200, end: 1200 });
+  assert.equal(tenure.startedBy, null);
+  assert.deepEqual(v.validate('v1/tenure.json', tenure), []);
+
   assert.throws(() => buildRecord('presence', {}, CONTEXT), /kind must be/);
 });
 

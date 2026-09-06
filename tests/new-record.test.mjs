@@ -68,6 +68,30 @@ test('scaffolded records have the envelope and pass their schema; the text is le
   assert.deepEqual(place.where, { lon: 1, lat: 2, precision: 'city', label: 'Fixture Place' });
   assert.equal(place.region, 'fixture-lane-1');
   assert.deepEqual(v.validate('v1/place.json', place), []);
+
+  // An office is complete as scaffolded and cites nothing; an undated one
+  // carries `when: null` rather than a guessed year (amendment A13).
+  const office = scaffold('office', ['prime-minister-of-fixtures'], {
+    ...opts, source: [], of: 'fixture-polity-three', title: 'Prime Minister of Fixtures', category: 'head-of-government',
+  });
+  assert.equal(office.of, 'fixture-polity-three');
+  assert.equal(office.when, null);
+  assert.deepEqual(office.sources, []);
+  assert.deepEqual(v.validate('v1/office.json', office), []);
+  assert.deepEqual(scaffold('office', ['a-post'], {
+    ...opts, source: [], of: 'x', title: 'T', category: 'other', start: '1834', end: 'null',
+  }).when, { start: 1834, end: null });
+
+  const tenure = scaffold('tenure', ['fixture-holder-1976'], {
+    ...opts, person: 'fixture-actor-one', office: 'prime-minister-of-fixtures', start: '1976', end: '1978', startedBy: 'fixture-event-a',
+  });
+  assert.equal(tenure.person, 'fixture-actor-one');
+  assert.deepEqual(tenure.when, { start: 1976, end: 1978 });
+  assert.equal(tenure.startedBy, 'fixture-event-a');
+  assert.deepEqual(v.validate('v1/tenure.json', tenure), []);
+  assert.equal(scaffold('tenure', ['still-in-post'], {
+    ...opts, person: 'p', office: 'o', start: '2024', end: 'null',
+  }).when.end, null);
 });
 
 test('one command writes an event and the place it happens at', () => {
@@ -98,6 +122,13 @@ test('scaffold refuses bad input', () => {
   assert.throws(() => scaffold('place', ['x'], opts), /--lon and --lat/);
   assert.throws(() => scaffold('place', ['Bad Id'], { ...opts, lon: '1', lat: '2' }), /slug/);
   assert.throws(() => scaffold('event', ['fixture-x'], { ...opts, start: '1', place: 'Not A Slug' }), /--place/);
+  assert.throws(() => scaffold('office', ['x'], opts), /--of/);
+  assert.throws(() => scaffold('office', ['x'], { ...opts, of: 'a' }), /--category/);
+  assert.throws(() => scaffold('office', ['x'], { ...opts, of: 'a', category: 'sultanate' }), /--category/);
+  assert.throws(() => scaffold('office', ['Bad Id'], { ...opts, of: 'a', category: 'other' }), /slug/);
+  assert.throws(() => scaffold('tenure', ['x'], opts), /--person/);
+  assert.throws(() => scaffold('tenure', ['x'], { ...opts, person: 'p' }), /--office/);
+  assert.throws(() => scaffold('tenure', ['x'], { ...opts, person: 'p', office: 'o' }), /--start/);
 });
 
 // R10: a scaffolded record and an imported one both reach review.html.
@@ -111,6 +142,8 @@ test('a scaffolded record and an imported one are both in the review queue', asy
     ['edge', ['fixture-event-a', 'fixture-event-b', 'caused'], {}],
     ['actor', ['fixture-scaffold-queued-actor'], { type: 'person', names: 'A Person', start: '1900' }],
     ['place', ['fixture-scaffold-queued-place'], { lon: '0', lat: '0', names: 'Nowhere' }],
+    ['office', ['fixture-scaffold-queued-office'], { of: 'a', title: 'A Post', category: 'other' }],
+    ['tenure', ['fixture-scaffold-queued-tenure'], { person: 'p', office: 'o', start: '1976' }],
   ]) {
     const record = scaffold(kind, positional, { ...opts, ...extra });
     assert.deepEqual(record.review, { status: 'draft' }, `${kind} is a draft`);
