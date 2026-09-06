@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "mario-soares-president-1986",
+  "kind": "tenure",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-06",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "date"
+    ],
+    "note": "The interval was written from the assistant’s memory in M31-1 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked."
+  },
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    }
+  ],
+  "person": "mario-soares",
+  "office": "president-of-portugal",
+  "when": {
+    "start": 1986,
+    "end": 1996
+  },
+  "startedBy": "soares-elected-president-1986",
+  "note": "Two terms; re-elected in 1991."
+}

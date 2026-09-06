@@ -120,9 +120,12 @@ test("the atlas's own strip: Portugal's three posts, and the two prime ministers
   assert.match(section.body, /data-action="office" data-id="prime-minister-of-portugal"/);
   assert.match(section.body, /data-action="actor" data-id="salazar"/);
   assert.match(section.body, /data-action="actor" data-id="marcelo-caetano"/);
-  // Two of the three have no holder recorded, and say so rather than drawing
-  // an empty picture.
-  assert.equal((section.body.match(/No turn at this post is recorded yet\./g) ?? []).length, 2);
+  // Until M31-1 two of the three had no holder recorded and said so rather
+  // than drawing an empty picture. The crown and the presidency have their
+  // holders now, so nothing says it.
+  assert.equal((section.body.match(/No turn at this post is recorded yet\./g) ?? []).length, 0);
+  assert.match(section.body, /data-action="office" data-id="monarch-of-portugal"/);
+  assert.match(section.body, /data-action="office" data-id="president-of-portugal"/);
   // Portugal starts in 1886, the earliest record is 1899, and the strip is
   // held to what the atlas holds: it starts at the corpus and not at the
   // actor's own first year.

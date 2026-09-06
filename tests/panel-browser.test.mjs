@@ -647,8 +647,16 @@ test('the actor card draws one tenure strip per office, and a bar opens the hold
         empty: document.querySelectorAll('.panel .strip-empty').length,
       };`);
     assert.deepEqual(strip.offices, ['monarch-of-portugal', 'president-of-portugal', 'prime-minister-of-portugal']);
-    assert.deepEqual(strip.holders, ['salazar-prime-minister-1932', 'marcelo-caetano-prime-minister-1968']);
-    assert.equal(strip.empty, 2, 'the two posts with no holder say so');
+    // M31-1 filled the two head-of-state posts, so no strip says it is empty
+    // any more and the bars are clustered at this width: which of them
+    // survives the clustering is the strip's business and not this test's, so
+    // what is asserted is that every bar is a turn at one of the three posts
+    // and that the two prime ministers are still among them.
+    assert.equal(strip.empty, 0, 'every post has a holder now');
+    assert.ok(strip.holders.length > 3, `only ${strip.holders.length} bars`);
+    for (const id of strip.holders) assert.match(id, /-(monarch|president|prime-minister)-\d{4}$/, id);
+    assert.ok(strip.holders.includes('salazar-prime-minister-1932'), 'Salazar');
+    assert.ok(strip.holders.includes('marcelo-caetano-prime-minister-1968'), 'Caetano');
     // It fills whatever width the pane has and keeps the height it was drawn
     // at: that is the whole of "no card measures its container".
     assert.equal(strip.width, strip.pane);
@@ -659,7 +667,7 @@ test('the actor card draws one tenure strip per office, and a bar opens the hold
     // `click()` of its own — that is HTMLElement's — so the event is
     // dispatched, which is what a real click does anyway: the panel listens
     // on its container and the click bubbles out of the SVG to it.
-    await page.eval('document.querySelector(\'.panel .tenure-bar\').dispatchEvent(new MouseEvent("click", { bubbles: true }));');
+    await page.eval('document.querySelector(\'.panel .tenure-bar[data-tenure="salazar-prime-minister-1932"]\').dispatchEvent(new MouseEvent("click", { bubbles: true }));');
     await waitFor(page, 'return /actor=salazar/.test(location.search);', 'the holder in the URL');
   });
 });

@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "antonio-de-spinola-president-1974",
+  "kind": "tenure",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-06",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "date"
+    ],
+    "note": "The interval was written from the assistant’s memory in M31-1 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked."
+  },
+  "sources": [
+    {
+      "source": "maxwell-1995-making-of-portuguese-democracy",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    }
+  ],
+  "person": "antonio-de-spinola",
+  "office": "president-of-portugal",
+  "when": {
+    "start": 1974,
+    "end": 1974
+  },
+  "startedBy": "carnation-revolution-1974",
+  "note": "President from May 1974, after the revolution, until he resigned in September of that year."
+}

@@ -41,10 +41,18 @@ test('every record the table names exists, is a draft, and carries the block', a
     for (const flag of item.flags) assert.match(flag, FLAG, item.id);
   }
 
-  // Every one of them is flagged, and the note says which of the two cases it
-  // is — including the twelve tenures, which carried the note across.
+  // Every one of them is flagged and says in a note what a reviewer has to
+  // check. The seeding's own sentence is on every active relation — the ten
+  // M31-1 re-typed carried their review block across unchanged — and on the
+  // twelve tenures M30a-2 re-filed. A tenure written after the seeding says
+  // the same thing in its own words instead (M31-1 wrote twenty-four), so
+  // what is asked of a tenure here is the flag and a note of its own.
   for (const id of dated) {
-    assert.ok(byId.get(id).review.note.includes(RELATION_NOTE), id);
+    const record = byId.get(id);
+    assert.ok(record.review?.flags?.includes('date'), `${id}: not flagged`);
+    assert.equal(typeof record.review?.note, 'string');
+    assert.ok(record.review.note.length > 0, `${id}: an empty note`);
+    if (record.kind === 'relation') assert.ok(record.review.note.includes(RELATION_NOTE), id);
   }
 });
 
