@@ -13,43 +13,57 @@ hundred lines again, cut it the same way.
 
 ## Last updated
 
-2026-09-06, after H8 (`docs/health/h8-brief.md`), the health cycle's last run
-before the review of the result, on `m0`: **generated pages and the
-artifact.** Code only; nothing under `data/` changed and `data/index/` rebuilt
-byte-identical, because the prerendered pages are the site's own files and not
-index files. 921 tests.
+2026-09-06, after H9 (`docs/health/h9-brief.md`), the corrective run the
+closing review of the health cycle asked for, on `m0`: **the twelve things
+that were wrong.** Code only; no record under `data/` changed, and
+`data/index/` was regenerated for item 11 alone. 952 tests.
 
-**The pages are written by the build, from the functions the pages run.**
-`build-index.mjs` writes `sources.html`'s bibliography and `narratives.html`'s
-cards into those files, between marks they carry, and `entry/<id>.html` for
-every event, actor or place with a `body`; `tools/lib/prerender.mjs` is the
-pure half and calls `bibliographyHtml`, `narrativesHtml` and `entryHtml`
-themselves, so a prerendered page cannot say what the script would not have.
-The build prints the count and the bytes — 27,801 today, 24.0 KB of it the
-bibliography — and `validate --index` compares them byte for byte under rule
-16. **No record carries a `body` yet, so `entry/` is empty**; the fixture
-record that has one is what the tests build against, and a `curl` of it over
-`python3 -m http.server` returns the whole entry with no script involved.
-`entry.html?id=` is still the address; a prerendered page is a second, static
-rendering, canonical to it. The bootstraps leave a prerendered slot alone, so
-**narratives.html asks for the spine zero times** where it asked once.
+**Three of them were the atlas not working.** The graph's pan-and-zoom
+`transform` was declared below the first `arrange()`, so opening the graph
+from a narrative step or from any shared `?from=&to=&view=graph` link threw
+before it could be drawn — every graph test passed because the default window
+is too wide to reach the assignment. An open actor or place with no `?focus=`
+was a lens on itself, and 350 of the 412 actors are polities imported with
+their borders and no event, so the search's commonest answer opened a blank
+map and a blank timeline; an actor with no events is not a lens now, the card
+says why, and the lens nobody asked for never removes the selection, the
+walked chain or the selected event's consequences. And the three tools that
+create records — `new-record.mjs` and both imports — wrote no `review.status`,
+so nothing they made was ever in the review queue: they write `draft`, and the
+validator warns about the 1,040 records already there with neither a status
+nor a signature.
 
-**The artifact is an allowlist.** `deploy.yml` staged the whole checkout —
-`docs/`, `tools/`, `tests/`, every `*.test.mjs`, `.github/`, the import seeds
-— and now stages `_site` from a named list: the html files,
-`CONTRIBUTING.md`, `src/`, `schema/`, `data/` minus `imports/`, and
-`tests/fixtures/data/` so `?fixtures=1` still works. 27 MB of checkout, 20 MB
-of site. `review.html` is published with the rest and now says so off
-localhost: a banner that nothing here can write and that a save becomes a
-correction bundle. **And this file**, 5,345 lines and the first thing every
-session had to read, is the position now.
+**The deploy was committing degraded histories.** `build-index` derives a
+record's versions from `git log`; `deploy.yml` checked out one commit deep, so
+all 1,006 histories collapsed to one version each, said `from: "git"` about
+it, and were written over the full ones on every run — and `compareIndex`
+exempted `history/` from rule 16 for exactly that reason, which made the rule
+false by construction for 1,006 of the 1,054 index files. `fetch-depth: 0`;
+`recordHistories` refuses a shallow clone and falls back to `revised` in the
+file; the exemption is gone.
+
+**A contribution's pull request carries the records and nothing else.**
+`contribution.yml` built the index and validated it in its own checkout, then
+committed `data/` alone, so every bundle that touched a source failed the
+gate on the base branch's `sources.html`; and the hashed index it did commit
+would have conflicted with the next deploy. It commits the seven record
+directories, `validate.yml` asks for `--index` only where a pull request
+touched `data/index/`, and `deploy.yml`'s header says so.
+
+**And the spine lost its indentation.** 837,425 bytes → **539,033**, the
+search shard 252,053 → **169,652**; gzip already hid most of it (67.5 → 60.3
+KB and 34.6 → 32.3 KB) and `JSON.parse`, which every page runs on every
+device, never did. `CLAUDE.md`'s layout tree, a cycle behind at 28 unnamed
+modules, names every module under `src/` and `tools/`, and a test holds the
+two together.
 
 ## Next
 
 The owner's list in full is in the history file. Still waiting:
 
 1. The `CONTRIBUTION_PAT` secret, without which `contribution.yml` stops at
-   its first step; then one bundle end to end.
+   its first step; then one bundle end to end — which H9's item 5 changed the
+   shape of, and nothing has run since.
 2. Two settings the agent cannot make: `delete_branch_on_merge`, and
    Pages → Source: **GitHub Actions**, before the first merge to `main`.
 3. Review and merge PR #1; then the test dataset — `node tools/serve.mjs` →
@@ -59,6 +73,15 @@ The owner's list in full is in the history file. Still waiting:
    labels, the graph's `STACK_DISTANCE`, the territories' four numbers, the
    phone sheet, "unchecked" on every citation, the narratives' century
    bucket, whether a card section opens on its own, the map's failure note.
+6. **Overrule H9's two decisions if they are wrong.** The assistant took them
+   on the review's owner questions: an actor or place with no events is not a
+   lens (R8), and a contribution's pull request carries neither the index nor
+   the pages (R2/R12). Both are one commit to undo.
+7. **The 1,040 records with no standing.** The validator now warns about
+   every active record carrying neither `review.status` nor a signature —
+   the actors and presences the CShapes import wrote before it said `draft`.
+   Backfilling them is a data change, so H9 did not make it; until somebody
+   does, `node tools/validate.mjs` ends with a line counting them.
 
 ## Open questions
 
@@ -106,6 +129,82 @@ In full in the history file. The ones that decide something:
      real records; the fixtures badge is the signal now. The page also
      clears the prerendered list before drawing the synthetic one, so the
      two datasets are never briefly shown one after the other.
+
+### H9, the corrective run
+
+306. **The `unread` warning fires on 1,040 records, and the printer caps a
+     rule at twenty lines.** The brief asked for a warning on a record with
+     neither `review.status` nor a signature; every actor and presence the
+     CShapes import wrote before item 3 is one. Printing 1,040 lines would
+     have made `node tools/validate.mjs` — the command `CLAUDE.md` tells every
+     session to run — unreadable, so `warningLines` prints the first twenty of
+     a rule and then says how many more there are. The warnings themselves are
+     all still in the returned list, which is what the review index and the
+     tests read, and the totals line is unchanged.
+307. **The fixture records were left without a `review` block**, though the
+     brief allowed item 3 to write to them. Giving all 48 a `draft` status was
+     tried and reverted: migration 004 reconstructs `draft` from an author
+     named by the draft marker, so a hand-written draft cannot survive
+     `down` then `up`, and `tests/migrate.test.mjs`'s round trip — the safety
+     net under every migration — broke on the fixtures rather than on
+     anything H9 wrote. The corpus is one nobody has read, which is what the
+     new warning says about it; `rules.test.mjs` and `validate-cli.test.mjs`
+     count the warnings and were updated to say so.
+308. **`clearVerified` no longer drops the review block when a status is left
+     in it.** Not in the brief, and the same failure as R10: unticking the
+     last checked citation on a draft took `review` away whole, and with it
+     the record's place in the queue.
+309. **`new-record.mjs` writes no `origin`.** The brief asks for it "where the
+     creator is a tool"; a scaffold is run by a person, and stamping `origin`
+     from the tool that laid out the envelope would say the tool wrote the
+     record. Both imports already wrote theirs.
+310. **`contribution.yml` names the seven record directories** rather than
+     `git add data`. Nothing on that branch builds the index any more, so
+     `data` would have been the same thing today — and would silently start
+     carrying the index again the day something did.
+311. **The bench's `rules` case does not ask for `--dataset`.** It builds its
+     records in memory and writes nothing; only `build-index` and `validate`
+     need a corpus on disk.
+312. **The `layout` case reproduces H4b's crossing counts, not its
+     milliseconds.** The atlas row is exact (130 of 201); the synthetic rows
+     rebuild the graph deviation 240 describes — two centuries, two edges an
+     event, forward and within 250 events, which `syntheticEdges` gained a
+     `reach` option for — and land within a tenth of H4b's counts at both
+     sizes. The times are this machine's: 0.46 s and 3.9 s where H4b measured
+     0.65 s and 4.5 s.
+313. **The Claim browser test answers the save inside the page.** An earlier
+     run of it went through `tools/serve.mjs`, which really does write the
+     record and rebuild the index — a claim by "Ana Reviewer" landed in
+     `data/sources/ar-2024-fiftieth-anniversary.json` and was reverted. What
+     is being tested is which name the button reads, so the PUT is caught in
+     the page and goes no further.
+314. **R20's acknowledgement is asked of a correction too.** The form is not
+     told whether it was opened from `?edit=`, and being asked once to confirm
+     that a replacement is meant is the right question for a correction as
+     well; the wording says "I mean to replace X" rather than "this is a
+     different place".
+315. **Two tests were restaged rather than weakened**, both by a fix in this
+     run: the lens browser test clicked "Focus only on this" on a card that
+     R9's fix now redraws (so it opens the page again to find the control),
+     and `bundle.test.mjs`'s "a record is never its own duplicate" is the
+     assertion R20 reverses. Nothing else in the suite was edited to pass.
+316. **Item 1 hoisted `applyTransform` with `transform`.** The brief names the
+     `let`; the arrow function beside it is in the same dead zone and
+     `fitToWindow` calls it, so hoisting one without the other would have
+     moved the error rather than removed it.
+317. **The H5b sentence is annotated, not rewritten.** `docs/history/` is kept
+     verbatim, so the clause claiming an imported record reaches the queue —
+     R18's third — carries a bracketed note saying it was untrue when written
+     and what made it true.
+318. **Only the spine and the search shard are compact.** R5 also names the
+     explanation shards; the brief's item 11 names two files, and those two
+     are the ones every page parses whole.
+319. **The fixture histories needed no regeneration** (item 4). They already
+     matched a full-clone build, so removing the `history/` exemption from
+     rule 16 found nothing stale in either tree.
+320. **`data/index/` moved for item 11 only**: the spine, the search shard and
+     the manifest line naming them. Every other index file, the histories
+     included, came back byte-identical.
 
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
@@ -196,3 +295,4 @@ H7 done
 H8 started 2026-09-06T00:46:50Z by scheduled
 H8 done
 H9 started 2026-09-06T11:01:12Z by scheduled
+H9 done
