@@ -13,6 +13,33 @@ hundred lines again, cut it the same way.
 
 ## Last updated
 
+2026-09-06, after **M30b-1** (`docs/m30b-brief.md`, amendment A1: the first of
+M30b's three runs), on `m0`: **the records M30a wrote are reachable now.**
+`?office=` opens a real card — the actor the post belongs to, its category,
+and every turn at it in order, each row opening the person who held it — it
+closes on its own control, Back names it and Discuss and Edit carry its own
+address. An office is in the search box and opens from it, and a lens leaves
+it alone. The card of an actor that owns posts draws **one tenure strip per
+office**: holders as bars over the actor's own years, merged by
+`clusterPoints` at `k: 1` where they would overlap, a bar opening the holder.
+An event's card says what it is **part of** and a parent lists its parts, out
+of `atlas.childrenOf` — which is not in the adjacency, so no consequence, no
+cause and no convergence changed. A place lists the names it held with their
+years, an actor line's `note` is beside the role on both cards, and an event
+with no region says "no lane" rather than an em dash. No record under `data/`
+changed and nothing was rebuilt: `node tools/validate.mjs --index` is
+byte-identical. **1026 tests, none skipped**, with `CHROME` set. What M30b-2
+draws — the bracket, the collapse, the band and the wash, the subtree lens,
+the unplaced count — is untouched, and so is the form.
+
+**Five of A0's six gate checks were already true**, which is what M30a's own
+amendments promised. The sixth is not, and is not this run's: `parent`,
+`scope` and `category` are still absent from `KIND.event.fields`, where
+deviation 343 left them as `KEPT_KEYS` in `bundle.js`. A16 gives their
+descriptors to the run that draws the inputs, and `fieldsFromRegistry` throws
+at module load on a field with no descriptor, so writing the names here would
+have left `contribute.html` and `review.html` dead. **M30b-3 writes it.**
+
 2026-09-06, after **M30a-3** (`docs/m30a-brief.md`, amendment A19: the last of
 M30a's three runs), on `m0`: **an event can be part of another event, can say
 what kind of thing it was, and its roles are a vocabulary.** `parent` with
@@ -455,6 +482,45 @@ In full in the history file. The ones that decide something:
      `docs/health/h9-brief.md`, in the review it answers and in the git log.
      M30a-1's and M30a-2's paragraphs are kept.
 
+### M30b-1, the records a reader could not reach
+
+352. **The sixth gate check is the one thing M30a left, and it is M30b-3's.**
+     A0 asks this run to write what is missing of its six; five are there. The
+     sixth — `parent`, `scope` and `category` in `KIND.event.fields` with
+     descriptors in `bundle.js` — is A16's, which A1 gives to the run that
+     draws the inputs. `fieldsFromRegistry` throws at module load on a
+     registry field with no descriptor, so adding the three names without the
+     three descriptors would have turned `contribute.html` and `review.html`
+     into blank pages to satisfy a checklist. Reported at the gate and left
+     where deviation 343 put it.
+353. **The claim was taken over, not made fresh.** Six commits of M30b-1 —
+     the office card, the strip, the search branch, the three unread fields
+     and "Part of" — were already on `m0` under a claim of 14:31Z with no
+     `M30b-1 done` line behind them. Both of run protocol §2's conditions had
+     lapsed (the last push was 108 minutes old, the claim 150), so this run
+     appended its own claim line and continued from what was pushed. Nothing
+     that was there was written again.
+354. **Two of A3's four tables had no test, and that was the work left.** The
+     branch in `openingLabel` that names an office in the trail, and `office`
+     in `OPENING_OF`. Both fail quietly: the first shows "← the atlas" for a
+     card that has a title, the second puts the bare page into Discuss and
+     Edit instead of the office's own address. The rest of A3, A4, A5, A13,
+     A14, A15 and the card halves of items 1 and 2 were already in place and
+     already covered.
+355. **The actor card's appearance rows keep the em dash for an event with no
+     lane.** A14 names one line — the event card's, at `event.js:287` — and
+     that line and the new parts list both say "no lane". The rows on the
+     actor's card print the same `laneLabel` and still show the dash it
+     returns for nothing. No event in `data/` is in that state, so this is a
+     wording gap and not a wrong lane; widening A14 to a second card is the
+     owner's call.
+356. **The strip's height is a number in two files.** `STRIP_HEIGHT` is the
+     viewBox's, `24px` in `style.css` is the element's, and the two have to
+     agree or the bars are scaled vertically as well as horizontally — which
+     is the one thing `preserveAspectRatio="none"` must not do here. The
+     browser test asserts the rendered height, so a change to one without the
+     other fails rather than draws.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
@@ -554,3 +620,4 @@ M30a-3 done
 M30a done
 M30b-1 started 2026-09-06T14:31:33Z by scheduled
 M30b-1 started 2026-09-06T17:02:03Z by scheduled
+M30b-1 done
