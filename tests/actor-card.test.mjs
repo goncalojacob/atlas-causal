@@ -144,3 +144,78 @@ test('the actor card is sections with counts, opening on where it appears', asyn
   const remembered = actorCardHtml(ctx, atlas.actors.get('fixture-polity-three'), { remembered: 'relations' });
   assert.match(remembered, /<section class="card-section open" data-section="relations">/);
 });
+
+// ─── before and after, along `succeeded` ───────────────────────────────────
+//
+// The M27 splits made seventy-seven pairs like Angola: a state from 1975 and
+// the colony before it, with the same name in the search box and every event
+// filed under the colony, so the state's card opened with no appearances at
+// all (health review B, finding 28). A synthetic pair rather than a fixture
+// record: what is under test is the card, and the fixtures carry no
+// succession — the repository's own do, and the browser test opens one.
+function pair({ eventsBefore = 2, eventsAfter = 0 } = {}) {
+  const event = (id, year) => ({ id, title: id, when: { start: year, end: year }, region: 'europe', status: 'active' });
+  const before = Array.from({ length: eventsBefore }, (_, i) => event(`before-${i}`, 1960 + i));
+  const after = Array.from({ length: eventsAfter }, (_, i) => event(`after-${i}`, 1980 + i));
+  const relation = {
+    id: 'colony--state--succeeded', type: 'succeeded', from: 'colony', to: 'state',
+    when: { start: 1975, end: 1975 }, status: 'active', note: null,
+  };
+  return {
+    actors: new Map([
+      ['colony', { id: 'colony', name: 'The colony', actorType: 'polity', when: { start: 1886, end: 1975 }, names: ['The colony'], status: 'active' }],
+      ['state', { id: 'state', name: 'The state', actorType: 'polity', when: { start: 1975, end: null }, names: ['The state'], status: 'active' }],
+    ]),
+    eventsByActor: new Map([
+      ['colony', before.map((e) => ({ event: e, role: 'party' }))],
+      ['state', after.map((e) => ({ event: e, role: 'party' }))],
+    ]),
+    relationsByActor: new Map([
+      ['colony', [{ relation, direction: 'out', other: 'state' }]],
+      ['state', [{ relation, direction: 'in', other: 'colony' }]],
+    ]),
+    presencesByActor: new Map(),
+    dependenciesOf: new Map(),
+    narrativesByRef: new Map(),
+    citationCount: () => 0,
+    record: () => new Promise(() => {}),
+  };
+}
+
+const sectionOf = (html, key) => html
+  .match(new RegExp(`<section class="card-section(?: open)?" data-section="${key}">[\\s\\S]*?</section>`))?.[0] ?? '';
+
+test('an actor with no events of its own opens on what came before it', () => {
+  const atlas_ = pair();
+  const ctx = context(atlas_);
+  const html = actorCardHtml(ctx, atlas_.actors.get('state'));
+  assert.equal(count(html, 'appearances'), '0', 'the state itself records nothing');
+  assert.equal(count(html, 'succession'), '2', 'and its predecessor records two');
+  // The section the card opens on is the one with something in it.
+  assert.match(html, /<section class="card-section open" data-section="succession">/);
+  const block = sectionOf(html, 'succession');
+  assert.match(block, /<h3>Before /);
+  assert.doesNotMatch(block, /<h3>After /, 'nothing succeeded it');
+  assert.match(block, /data-action="actor" data-id="colony"/, 'and the predecessor is a way in');
+  for (const id of ['before-0', 'before-1']) {
+    assert.match(block, new RegExp(`data-action="select" data-id="${id}"`), `${id} is listed`);
+  }
+});
+
+test('the actor that holds the events says what came after it, and opens on its own', () => {
+  const atlas_ = pair({ eventsAfter: 1 });
+  const html = actorCardHtml(context(atlas_), atlas_.actors.get('colony'));
+  assert.equal(count(html, 'appearances'), '2');
+  assert.equal(count(html, 'succession'), '1', 'the successor records one');
+  assert.match(html, /<section class="card-section open" data-section="appearances">/);
+  const block = sectionOf(html, 'succession');
+  assert.match(block, /<h3>After /);
+  assert.doesNotMatch(block, /<h3>Before /, 'nothing preceded it');
+  assert.match(block, /data-action="select" data-id="after-0"/);
+});
+
+test('an actor that succeeds nothing has no such section at all', () => {
+  const ctx = context(atlas);
+  const html = actorCardHtml(ctx, atlas.actors.get('fixture-actor-one'));
+  assert.equal(sectionOf(html, 'succession'), '', 'nothing is said about a succession there is not');
+});

@@ -474,3 +474,36 @@ test('a cluster\'s list keeps the panel open although nothing is selected', { sk
     assert.equal(await page.eval('return new URLSearchParams(location.search).has("selected");'), false);
   });
 });
+
+// H7 item 3: the state actor that holds none of its own events says where
+// they are. `european-union` is this dataset's own case of the shape health
+// review B, finding 28 describes — zero appearances, four events under the
+// EEC it succeeded — and the card has to open on that rather than on an empty
+// list saying nothing happened.
+test('an actor with no events of its own opens on what came before it', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await open(page, url('?actor=european-union&from=1900&to=2030'));
+    await waitFor(page, 'return Boolean(document.querySelector(\'[data-section="succession"]\'));',
+      'the card to say what came before');
+
+    // Open, and open because it is the section with something in it.
+    assert.equal(
+      await page.eval('return document.querySelector(\'.card-section[data-section="succession"]\')?.classList.contains("open") ?? false;'),
+      true,
+    );
+    assert.equal(
+      await page.eval('return document.querySelector(\'[data-section="appearances"] .count\')?.textContent ?? null;'),
+      '0',
+      'the actor itself records nothing',
+    );
+    const listed = await page.eval(`return [...document.querySelectorAll('.succession [data-action="select"]')]
+      .map((el) => el.dataset.id);`);
+    assert.ok(listed.length >= 4, `only ${listed.length} events under what it succeeded`);
+
+    // And each one opens, which is the point: the card is a way into them.
+    const first = listed[0];
+    await page.eval(`document.querySelector('.succession [data-action="select"][data-id="${first}"]').click(); return true;`);
+    await waitFor(page, `return new URLSearchParams(location.search).get('selected') === '${first}';`,
+      'the event to open');
+  });
+});

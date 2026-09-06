@@ -1170,6 +1170,12 @@ svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align:
 /* An event outside the window is faded here for the same reason it is faded
    on the map: a place's history does not stop at the edge of the band. */
 .panel .actor-row.faded { opacity: 0.45; }
+/* Before and after, along `succeeded`: one heading per neighbour, with the
+   years the succession happened in and how many events it holds. The events
+   are that actor's and say so — an atlas that listed them under this one
+   would be saying the two were the same record. */
+.panel .succession h3 { display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--space-2); }
+.panel .succession h3 + .actor-rows { margin-bottom: var(--space-3); }
 
 /* --- the horizon: what did this lead to by year X? -------------------- */
 

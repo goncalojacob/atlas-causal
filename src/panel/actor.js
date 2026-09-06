@@ -104,6 +104,58 @@ function relationsHtml(ctx, actor) {
   };
 }
 
+// What came before this actor and what came after, along `succeeded`, with
+// **their** events.
+//
+// The M27 splits made seventy-seven pairs like Angola: a CShapes state from
+// 1975 and a colony before it, with the same name in the search box and every
+// event filed under the colony. `?actor=angola` then opened a card with no
+// appearances at all, which reads as "nothing happened here" and is the
+// opposite of what the atlas holds (health review B, finding 28). A reader who
+// has asked about a polity has asked about the thing it succeeded too.
+//
+// Only `succeeded`, and both ways round: "Before" is what this actor is the
+// successor of, "After" is what succeeded it. Not `regime-of` or `part-of` —
+// those are a body inside a state rather than the same ground under another
+// name, and rolling their events in here would say the two were one.
+function successionHtml(ctx, actor) {
+  const standing = (ctx.atlas.relationsByActor.get(actor.id) ?? [])
+    .filter(({ relation }) => relation.type === 'succeeded');
+  if (standing.length === 0) return null;
+  // `in` is "Successor of": the other actor came first. `out` is "Succeeded
+  // by": the other one came after.
+  const groups = [
+    { direction: 'in', label: 'Before', rows: standing.filter((r) => r.direction === 'in') },
+    { direction: 'out', label: 'After', rows: standing.filter((r) => r.direction === 'out') },
+  ].filter((g) => g.rows.length > 0);
+
+  let total = 0;
+  const sections = groups.map((group) => {
+    const parts = group.rows.map(({ relation, other }) => {
+      const name = ctx.atlas.actors.get(other)?.name ?? other;
+      const events = ctx.atlas.eventsByActor.get(other) ?? [];
+      total += events.length;
+      const rows = events.map(({ event, role }) => `<li class="actor-row">
+        ${ctx.eventLink(event)} <span class="role">${esc(role)}</span>
+        <span class="muted">${esc(ctx.laneLabel(event.region))}</span>
+      </li>`);
+      return `<h3>${esc(group.label)} <span class="when">${esc(formatInterval(relation.when))}</span>
+          <button type="button" class="link" data-action="actor" data-id="${esc(other)}">${esc(name)}</button>
+          <span class="count">${events.length} event${events.length === 1 ? '' : 's'}</span></h3>
+        ${events.length
+    ? `<ul class="actor-rows">${rows.join('')}</ul>`
+    : '<p class="muted">No event records that one either.</p>'}`;
+    });
+    return parts.join('');
+  });
+
+  return {
+    count: total,
+    hint: 'The same ground under another name. These events are filed under the actor that held it at the time, not under this one.',
+    body: `<div class="succession">${sections.join('')}</div>`,
+  };
+}
+
 // Exported for the tests: there is no DOM in node --test, and the card is
 // the string, exactly as the source card is.
 export function actorCardHtml(ctx, actor, { state = null, remembered = null } = {}) {
@@ -120,12 +172,21 @@ export function actorCardHtml(ctx, actor, { state = null, remembered = null } = 
   // The same arrangement the event card has (sections.js): the head and
   // whatever text there is, then one collapsible section per question with
   // its count in the header.
-  const sections = [{
+  const succession = successionHtml(ctx, actor);
+  const appearancesSection = {
     key: 'appearances',
     label: 'Where it appears',
     count: appearances.length,
     body: appearances.length ? `<ul class="actor-rows">${rows.join('')}</ul>` : '<p class="muted">No event records this actor yet.</p>',
-  }];
+  };
+  const successionSection = succession ? { key: 'succession', label: 'Before and after', ...succession } : null;
+  // With no appearances of its own, what came before is the first thing to
+  // show and the section the card opens on: `openSection` falls back to the
+  // first key, and a card that opened on an empty list to say "nothing
+  // happened here" is the whole of finding 28.
+  const sections = appearances.length === 0 && successionSection
+    ? [successionSection, appearancesSection]
+    : [appearancesSection, ...(successionSection ? [successionSection] : [])];
   if (relations) sections.push({ key: 'relations', label: 'Relations', ...relations });
   if (territory) sections.push({ key: 'territory', label: 'Territory', ...territory });
   sections.push({
