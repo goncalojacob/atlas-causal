@@ -1,5 +1,5 @@
 {
-  "from": "revised",
+  "from": "git",
   "id": "amilcar-cabral-paigc-1956",
   "kind": "tenure",
   "schema": 1,
@@ -7,10 +7,6 @@
     {
       "first": true,
       "on": "2026-09-03"
-    },
-    {
-      "fields": [],
-      "on": "2026-09-06"
     }
   ]
 }
