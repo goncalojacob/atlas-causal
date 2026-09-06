@@ -8,7 +8,7 @@
 // because a place's history does not stop at the edge of the band.
 
 import { esc } from '../util/esc.js';
-import { formatYear } from '../util/dates.js';
+import { formatYear, isValidYear } from '../util/dates.js';
 import { overlaps, resolveWindow } from '../util/window.js';
 import { sectionHtml, openSection } from './sections.js';
 
@@ -61,6 +61,26 @@ export function placeEventsSection(ctx, place, state) {
   };
 }
 
+// What the place was called when. A sibling of `names` and never a
+// replacement for it (plan decision 6): `names` is what the search box scans
+// and this is what the years say. One line per name, with the years it held —
+// "Lourenço Marques, 1895 – 1976" — and a name with no years at all is just a
+// name, because a record that does not date it is not dated by this card.
+//
+// Nothing here is derived: `from` and `to` are on the record or they are not,
+// and an open end reads as an open end.
+export function historicalNamesHtml(list) {
+  const year = (value) => (isValidYear(value) ? formatYear(value) : String(value));
+  const rows = (Array.isArray(list) ? list : []).filter((n) => typeof n?.name === 'string').map((n) => {
+    const from = n.from === null || n.from === undefined ? null : year(n.from);
+    const to = n.to === null || n.to === undefined ? null : year(n.to);
+    const when = from && to ? `${from} – ${to}` : from ? `from ${from}` : to ? `until ${to}` : '';
+    return `<li><span class="row-what">${esc(n.name)}</span> ${when ? `<span class="when">${esc(when)}</span>` : ''}</li>`;
+  });
+  if (rows.length === 0) return '';
+  return `<p class="also-known muted">called:</p><ul class="historical-names">${rows.join('')}</ul>`;
+}
+
 export function placeCardHtml(ctx, place, state, { remembered = null } = {}) {
   const events = ctx.atlas.eventsByPlace.get(place.id) ?? [];
   const variants = (place.names ?? []).slice(1);
@@ -102,6 +122,7 @@ export function placeCardHtml(ctx, place, state, { remembered = null } = {}) {
         ${ctx.lensControl('place', place.id)}
       </p>
       ${variants.length ? `<p class="also-known muted">also: ${variants.map((n) => esc(n)).join(' · ')}</p>` : ''}
+      <div data-slot="place-names"></div>
       <div class="head-links">${ctx.entryLink('place', place.id)}${ctx.wikipediaHtml(place)}${ctx.discussLink('place', place.id)}</div>
     </header>
     <section class="summary" data-slot="place-summary"></section>
@@ -116,6 +137,11 @@ export function renderPlaceCard(ctx, { container, place, state, mine, remembered
     (rec) => {
       if (!ctx.isCurrent(mine)) return;
       if (rec.summary) container.querySelector('[data-slot="place-summary"]').innerHTML = `<p>${esc(rec.summary)}</p>`;
+      // The dated names are on the record and not in the spine: nothing that
+      // is drawn at first paint reads them, so they arrive with the text.
+      // Dated labels on the base map itself are M38's.
+      const names = container.querySelector('[data-slot="place-names"]');
+      if (names) names.innerHTML = historicalNamesHtml(rec.historicalNames);
       if (rec.sources?.length) {
         container.querySelector('[data-slot="place-sources"]').innerHTML = ctx.citationsHtml(rec.sources, '', rec);
       }

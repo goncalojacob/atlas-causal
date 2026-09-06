@@ -87,10 +87,14 @@ function breadcrumbHtml(ctx, chainEdges, event) {
 function actorChipsHtml(ctx, event, highlighted) {
   const listed = (event.actors ?? []).filter((a) => ctx.atlas.actors.has(a.actor));
   if (listed.length === 0) return '';
-  const chips = listed.map(({ actor, role }) => {
+  const chips = listed.map(({ actor, role, note }) => {
     const record = ctx.atlas.actors.get(actor);
     const type = ACTOR_TYPE_LABEL[record.actorType] ?? record.actorType;
-    return `<button type="button" class="chip${actor === highlighted ? ' highlighted' : ''}" data-action="actor" data-id="${esc(actor)}" title="${esc(`${record.name} — ${role} (${type})`)}">${esc(record.name)}<span class="role"> · ${esc(role)}</span></button>`;
+    // The note beside the role goes in the title with it: it is the phrase
+    // that says what this actor did *here*, and the chip has room for a name
+    // and nothing else.
+    const did = note ? `${role}, ${note}` : role;
+    return `<button type="button" class="chip${actor === highlighted ? ' highlighted' : ''}" data-action="actor" data-id="${esc(actor)}" title="${esc(`${record.name} — ${did} (${type})`)}">${esc(record.name)}<span class="role"> · ${esc(role)}</span></button>`;
   });
   return `<p class="chips" aria-label="Who is in it">${chips.join(' ')}</p>`;
 }
@@ -284,7 +288,7 @@ export function eventCardHtml(ctx, { event, found, state, remembered = null }) {
       <p class="meta">
         <span class="when">${whenLine(ctx, event)}</span>
         ${whereHtml(ctx, event)}
-        · <span class="lane">${esc(ctx.laneLabel(event.region))}</span>
+        · <span class="lane">${event.region ? esc(ctx.laneLabel(event.region)) : 'no lane'}</span>
         <button type="button" class="link small" data-action="year" data-year="${esc(ctx.startYear(event))}">map at ${esc(formatYear(ctx.startYear(event)))}</button>
         ${ctx.lensControl('event', event.id)}
       </p>

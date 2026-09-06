@@ -663,3 +663,20 @@ test('the actor card draws one tenure strip per office, and a bar opens the hold
     await waitFor(page, 'return /actor=salazar/.test(location.search);', 'the holder in the URL');
   });
 });
+
+// A14: `historicalNames` is on the record and not in the spine, so the only
+// honest test of the place card drawing it is one that lets the fetch happen.
+// The fixture place carries two; nothing in the repository's own data does.
+test('a place card draws the names it held, with the years each held them', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await open(page, url('?fixtures=1&place=fixture-place-b'));
+    await waitFor(page, 'return Boolean(document.querySelector(".panel .historical-names"));',
+      'the dated names to arrive with the record');
+    const names = await page.eval(`return [...document.querySelectorAll('.panel .historical-names li')]
+      .map((li) => li.textContent.replace(/\\s+/g, ' ').trim());`);
+    assert.deepEqual(names, [
+      'Fixture Place B, as it was called until 1300',
+      'Fixture place B from 1300',
+    ]);
+  });
+});

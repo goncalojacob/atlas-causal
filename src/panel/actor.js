@@ -105,6 +105,18 @@ function relationsHtml(ctx, actor) {
   };
 }
 
+// One appearance: the event, what this actor did in it, the note beside that
+// role where the line carries one, and the lane it is drawn in. The note is
+// the line's and not the actor's — "as prime minister" belongs to this event
+// and to no other — which is why it is here and not in the head.
+function appearanceRow(ctx, { event, role, note }) {
+  return `<li class="actor-row">
+    ${ctx.eventLink(event)} <span class="role">${esc(role)}</span>
+    ${note ? `<span class="row-note muted">${esc(note)}</span>` : ''}
+    <span class="muted">${esc(ctx.laneLabel(event.region))}</span>
+  </li>`;
+}
+
 // What came before this actor and what came after, along `succeeded`, with
 // **their** events.
 //
@@ -136,10 +148,7 @@ function successionHtml(ctx, actor) {
       const name = ctx.atlas.actors.get(other)?.name ?? other;
       const events = ctx.atlas.eventsByActor.get(other) ?? [];
       total += events.length;
-      const rows = events.map(({ event, role }) => `<li class="actor-row">
-        ${ctx.eventLink(event)} <span class="role">${esc(role)}</span>
-        <span class="muted">${esc(ctx.laneLabel(event.region))}</span>
-      </li>`);
+      const rows = events.map((row) => appearanceRow(ctx, row));
       return `<h3>${esc(group.label)} <span class="when">${esc(formatInterval(relation.when))}</span>
           <button type="button" class="link" data-action="actor" data-id="${esc(other)}">${esc(name)}</button>
           <span class="count">${events.length} event${events.length === 1 ? '' : 's'}</span></h3>
@@ -163,10 +172,7 @@ export function actorCardHtml(ctx, actor, { state = null, remembered = null } = 
   const appearances = ctx.atlas.eventsByActor.get(actor.id) ?? [];
   const variants = (actor.names ?? []).slice(1);
   const narratives = ctx.atlas.narrativesByRef?.get(actor.id) ?? [];
-  const rows = appearances.map(({ event, role }) => `<li class="actor-row">
-    ${ctx.eventLink(event)} <span class="role">${esc(role)}</span>
-    <span class="muted">${esc(ctx.laneLabel(event.region))}</span>
-  </li>`);
+  const rows = appearances.map((row) => appearanceRow(ctx, row));
   const relations = relationsHtml(ctx, actor);
   const territory = territoryHtml(ctx, actor);
 
