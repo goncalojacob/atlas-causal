@@ -13,7 +13,7 @@ import { isValidYear, astronomicalBounds, defaultCalendar } from '../util/dates.
 import { bodyCitations, bodyLinks } from '../markdown.js';
 import {
   EDGE_ID, EDGE_TYPE_IDS, RELATION_ID, RELATION_TYPE_IDS,
-  RELATION_ENDPOINTS, ACYCLIC_RELATION_TYPES,
+  RELATION_ENDPOINTS, ACYCLIC_RELATION_TYPES, OFFICE_ENDPOINTS,
 } from '../vocab.js';
 import { kindsWhere, licensesOf } from '../kinds.js';
 import { NC_ORIGINS, REVIEW_STATUS, mayBeNonCommercial, originTool } from '../origin.js';
@@ -40,7 +40,7 @@ export const ACTOR_TYPES = Object.freeze(['person', 'polity', 'institution', 'pe
 // the oldest readers of them, but there is one definition now.
 export const EDGE_TYPES = EDGE_TYPE_IDS;
 export const RELATION_TYPES = RELATION_TYPE_IDS;
-export { EDGE_ID, RELATION_ID, RELATION_ENDPOINTS, ACYCLIC_RELATION_TYPES };
+export { EDGE_ID, RELATION_ID, RELATION_ENDPOINTS, ACYCLIC_RELATION_TYPES, OFFICE_ENDPOINTS };
 // The identity a record may claim on Wikidata, and the kinds that may claim
 // one: a Wikidata item is about a thing in the world, which an event, an
 // actor and a place are, and an edge and a narrative are not — those are
@@ -290,6 +290,17 @@ function indexEntries(rows) {
       pushInto(actorReferrers, entry.from, row);
       if (entry.to !== entry.from) pushInto(actorReferrers, entry.to, row);
       pushInto(relationsByType, entry.type, entry);
+    } else if (kind === 'office') {
+      // The actor whose office it is, so retracting that actor while an
+      // office of it still stands is rule 11 rather than a dangling `of`.
+      pushInto(actorReferrers, entry.of, row);
+    } else if (kind === 'tenure') {
+      // The person, for the same reason — and because `actor-unused` counts
+      // referrers: a person who is in the atlas only because they held an
+      // office is referred to by their tenures and by nothing else, and
+      // without this every one of M31's new holders would be reported as an
+      // actor nothing points at (amendment A7).
+      pushInto(actorReferrers, entry.person, row);
     }
   }
   return { activeEdges, edgesByEndpoint, actorReferrers, placeReferrers, presencesByOutline, relationsByType, claimants, creatorKeys, aliases, aliasOwners };
@@ -322,6 +333,8 @@ function collectRows(topology) {
   for (const p of topology.presences ?? []) add('presence', p);
   for (const p of topology.places ?? []) add('place', p);
   for (const r of topology.relations ?? []) add('relation', r);
+  for (const o of topology.offices ?? []) add('office', o);
+  for (const t of topology.tenures ?? []) add('tenure', t);
   for (const n of topology.narratives ?? []) add('narrative', n);
   return { entries, rows, add };
 }
@@ -520,6 +533,13 @@ export function checkRules(records, topology = {}, { universe: prebuilt = null }
         }
       });
     }
+    // The event that began a tenure. `person` and `office` are rule 26's, so
+    // that the whole of what holds a tenure together is read in one place;
+    // this one is here because it is the same question rule 3 asks of an
+    // event's `place` — does the reference name a record of the right kind.
+    if (r.kind === 'tenure' && typeof r.startedBy === 'string' && !lookup(r.startedBy, 'event')) {
+      error(3, r, '/startedBy', `"${r.startedBy}" is not an event record`);
+    }
     if (r.kind === 'presence') {
       if (!lookup(r.actor, 'actor')) error(3, r, '/actor', `"${r.actor}" is not an actor record`);
       if (r.dependencyOf !== null && r.dependencyOf !== undefined && !lookup(r.dependencyOf, 'actor')) {
@@ -544,10 +564,12 @@ export function checkRules(records, topology = {}, { universe: prebuilt = null }
     return a;
   };
   for (const r of own) {
-    // An actor's interval is birth–death or founding–dissolution and a
-    // presence's is how long the outline held; the same arithmetic, the same
-    // no-year-zero rule.
-    if ((r.kind === 'event' || r.kind === 'actor' || r.kind === 'presence' || r.kind === 'relation') && isObject(r.when)) {
+    // An actor's interval is birth–death or founding–dissolution, a
+    // presence's is how long the outline held, an office's how long the post
+    // existed and a tenure's how long one person held it: the same
+    // arithmetic, the same no-year-zero rule. An office may carry no interval
+    // at all (A13), and `isObject` is what lets that through.
+    if (['event', 'actor', 'presence', 'relation', 'office', 'tenure'].includes(r.kind) && isObject(r.when)) {
       const start = checkBound(r, '/when/start', r.when.start);
       const end = r.when.end === null ? null : checkBound(r, '/when/end', r.when.end);
       if (start && end && (end.min < start.min || end.max < start.max)) {
@@ -697,7 +719,10 @@ export function checkRules(records, topology = {}, { universe: prebuilt = null }
 
   // --- rules 6, 7, 8, 9, 14: per-record content ---------------------------
   for (const r of own) {
-    if (['event', 'edge', 'actor', 'presence', 'relation', 'narrative'].includes(r.kind)) {
+    // A tenure is here and an office is not: a tenure asserts that somebody
+    // held a post in these years, which is an argument, and an office is a
+    // fact about how an actor is arranged, which is not (amendment A13).
+    if (['event', 'edge', 'actor', 'presence', 'relation', 'tenure', 'narrative'].includes(r.kind)) {
       if (!Array.isArray(r.sources) || r.sources.length === 0) {
         error(6, r, '/sources', `every ${r.kind} cites at least one source`);
       }
@@ -831,6 +856,20 @@ export function checkRules(records, topology = {}, { universe: prebuilt = null }
         const actor = lookup(r[end], 'actor');
         if (actor && actor.status !== 'active') error(11, r, `/${end}`, `an active relation cannot reference the ${actor.status} actor "${actor.id}"`);
       }
+    }
+    // A tenure begun by a retracted event would point a reader at a tombstone
+    // as the reason a government changed. Retract the tenure too, or say
+    // which event it really was.
+    if (r.kind === 'tenure' && r.status === 'active') {
+      if (typeof r.startedBy === 'string') {
+        const ev = lookup(r.startedBy, 'event');
+        if (ev && ev.status !== 'active') error(11, r, '/startedBy', `an active tenure cannot be started by the ${ev.status} event "${ev.id}"`);
+      }
+      // The office the tenure is a turn at. There is no referrer index the
+      // other way round — an office is reached through its tenures and
+      // nothing else — so the tombstone is caught from this end.
+      const office = lookup(r.office, 'office');
+      if (office && office.status !== 'active') error(11, r, '/office', `an active tenure cannot be a turn at the ${office.status} office "${office.id}"`);
     }
     if (r.kind === 'presence' && r.status === 'active') {
       for (const field of ['actor', 'dependencyOf']) {
@@ -1043,6 +1082,53 @@ export function checkRules(records, topology = {}, { universe: prebuilt = null }
       const culprit = own.find((r) => r.kind === 'relation' && r.type === type && r.status === 'active'
         && stuck.includes(r.from) && stuck.includes(r.to)) ?? null;
       error(19, culprit, '', `"${type}" closes on itself through: ${stuck.join(', ')}`);
+    }
+  }
+
+  // --- rule 26: offices and tenures ---------------------------------------
+  // What holds an office and a tenure together, which neither schema can
+  // say. An office belongs to an actor, and which kind of actor that may be
+  // is decided by the category: a crown is a state's, a general
+  // secretaryship a party's (OFFICE_ENDPOINTS in vocab.js, beside
+  // RELATION_ENDPOINTS, for the same reason rule 19 reads its table from
+  // there). A tenure is one person's turn at one office, so the person is a
+  // person and the office is an office; and the years have to be years the
+  // office existed in, where the office says when it existed at all.
+  //
+  // What this rule deliberately does *not* say: that two tenures of one
+  // office may not overlap. A regency is not a mistake and a year is the
+  // finest bound this model has (plan decision 2).
+  for (const r of own) {
+    if (r.kind === 'office') {
+      const of = lookup(r.of, 'actor');
+      if (!of) {
+        error(26, r, '/of', `"${r.of}" is not an actor record`);
+      } else {
+        const allowed = OFFICE_ENDPOINTS[r.category];
+        if (allowed && !allowed.includes(of.actorType)) {
+          error(26, r, '/of', `a "${r.category}" office belongs to ${allowed.join(' or ')}, not to a ${of.actorType}`);
+        }
+      }
+      continue;
+    }
+    if (r.kind !== 'tenure') continue;
+    const person = lookup(r.person, 'actor');
+    if (!person) error(26, r, '/person', `"${r.person}" is not an actor record`);
+    else if (person.actorType !== 'person') error(26, r, '/person', `a tenure is held by a person, not by a ${person.actorType}`);
+    const office = lookup(r.office, 'office');
+    if (!office) {
+      error(26, r, '/office', `"${r.office}" is not an office record`);
+      continue;
+    }
+    // Skipped where the office has no interval: A13 writes the three
+    // Portuguese offices with `when: null` rather than dating the crown
+    // against an actor record that begins in 1886, and an absent interval is
+    // no claim to overlap with.
+    if (!isObject(office.when)) continue;
+    const held = span(r.when);
+    const existed = span(office.when);
+    if (held && existed && (held.to < existed.from || held.from > existed.to)) {
+      error(26, r, '/when', `a tenure runs while its office exists: "${office.id}" does not cover these years`);
     }
   }
 

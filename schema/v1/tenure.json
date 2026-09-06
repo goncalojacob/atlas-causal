@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "v1/tenure.json",
+  "title": "Tenure",
+  "description": "One person's turn at one office. A kind of its own and not a relation, because a relation's id is from--to--type and one person may hold one office three times (plan review, finding 1); the id is therefore a free slug, `soares-prime-minister-1976`. Two tenures of one office may overlap — a regency is not a mistake and a year is the finest bound this model has — so nothing here refuses that.",
+  "type": "object",
+  "required": ["schema", "id", "kind", "status", "supersededBy", "aliases", "authors", "license", "created", "revised", "sources", "person", "office", "when"],
+  "additionalProperties": false,
+  "properties": {
+    "schema": { "$ref": "../common/provenance.json#/properties/schema" },
+    "id": { "$ref": "../common/provenance.json#/properties/id" },
+    "kind": { "const": "tenure" },
+    "status": { "$ref": "../common/provenance.json#/properties/status" },
+    "supersededBy": { "$ref": "../common/provenance.json#/properties/supersededBy" },
+    "aliases": { "$ref": "../common/provenance.json#/properties/aliases" },
+    "authors": { "$ref": "../common/provenance.json#/properties/authors" },
+    "license": { "$ref": "../common/provenance.json#/properties/license" },
+    "created": { "$ref": "../common/provenance.json#/properties/created" },
+    "revised": { "$ref": "../common/provenance.json#/properties/revised" },
+    "review": { "$ref": "../common/provenance.json#/properties/review" },
+    "origin": { "$ref": "../common/provenance.json#/properties/origin" },
+    "retraction": { "$ref": "../common/provenance.json#/properties/retraction" },
+    "sources": {
+      "description": "A tenure asserts that this person held this office in these years, which is an argument like an edge's: it cites at least one source (rule 6).",
+      "$ref": "../common/provenance.json#/properties/sources"
+    },
+    "person": {
+      "description": "The actor who held the office. An actor of type person, and rule 26 says so — a party does not hold a presidency.",
+      "$ref": "../common/provenance.json#/properties/id"
+    },
+    "office": {
+      "description": "The office record this is a turn at (rule 26).",
+      "$ref": "../common/provenance.json#/properties/id"
+    },
+    "when": {
+      "description": "How long they held it. end: null means they still do. It must overlap the office's own interval where the office has one (rule 26).",
+      "$ref": "../common/interval.json"
+    },
+    "startedBy": {
+      "description": "Optional: the event that began this tenure — the election, the coup, the succession. It resolves to an event under rule 3 and may not name a tombstone (rule 11), and it is how a result that changed a government stays connected to the atlas without an invented edge (plan decision 3).",
+      "oneOf": [
+        { "type": "null" },
+        { "$ref": "../common/provenance.json#/properties/id" }
+      ]
+    }
+  }
+}

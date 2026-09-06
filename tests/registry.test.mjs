@@ -24,7 +24,7 @@ import {
   EDGE_TYPES, EDGE_TYPE_IDS, RELATION_TYPES, RELATION_TYPE_IDS,
   EDGE_ID, RELATION_ID, FOCUS, FOCUS_PARAM, FOCUS_NONE, GROUPS, FOCUS_KINDS,
   RELATION_ENDPOINTS, RELATION_GROUP_ORDER, ACYCLIC_RELATION_TYPES,
-  NARRATIVE_STEP_REF,
+  NARRATIVE_STEP_REF, OFFICE_CATEGORY_IDS, OFFICE_ENDPOINTS, OFFICE_CATEGORY_LABEL,
 } from '../src/vocab.js';
 import { KIND_DIRS as READ_KIND_DIRS } from '../tools/lib/read.mjs';
 import { SCHEMA_FILES, TOOL_SIDE } from '../src/validate/schemas.js';
@@ -172,6 +172,22 @@ test('the vocabularies equal the enums in schema/**', async () => {
   const actorTypes = new Set((await schema('v1/actor.json')).properties.actorType.enum);
   for (const [type, ends] of Object.entries(RELATION_ENDPOINTS)) {
     for (const at of [...ends.from, ...ends.to]) assert.ok(actorTypes.has(at), `${type}: ${at}`);
+  }
+
+  // The same pair for the offices: the categories are the schema's enum in
+  // the schema's order, and the actor type each category may belong to is an
+  // actor type the actor schema knows. Rule 26 reads that table, so a
+  // category spelled two ways here would be a rule that never fires
+  // (amendment A5).
+  const office = await schema('v1/office.json');
+  assert.deepEqual([...OFFICE_CATEGORY_IDS], office.properties.category.enum);
+  assert.deepEqual(Object.keys(OFFICE_ENDPOINTS).sort(), [...OFFICE_CATEGORY_IDS].sort());
+  for (const [category, allowed] of Object.entries(OFFICE_ENDPOINTS)) {
+    assert.ok(allowed.length > 0, category);
+    for (const at of allowed) assert.ok(actorTypes.has(at), `${category}: ${at}`);
+  }
+  for (const category of OFFICE_CATEGORY_IDS) {
+    assert.equal(typeof OFFICE_CATEGORY_LABEL[category], 'string', category);
   }
 
   // The lens's six kinds and its pattern accept exactly each other. Five of

@@ -62,7 +62,13 @@ export const NO_IDENTIFIER = 'no-identifier';
 // long a record has been waiting, and how much of the atlas hangs on it. The
 // first two are copied off the record; `degree` is not on any record and is
 // counted by the build (degreesOf, below).
-export const DIGEST_KEYS = Object.freeze(['kind', 'id', 'status', 'authors', 'created', 'revised', 'review', 'origin', 'retraction', 'title', 'names', 'from', 'to', 'type', 'isbn', 'doi', 'cites', 'entry', 'degree']);
+// `of`, `category`, `person` and `office` are the two new kinds' own ends,
+// which the list reads for the same reason it reads an edge's `from` and
+// `to`: a row that said only "tenure soares-prime-minister-1976" would send
+// the reviewer to the record files to find out whose turn it was. `parent` is
+// here for the event field M30a-3 adds, so the digest does not have to be
+// changed again in the run that writes it (amendment A18).
+export const DIGEST_KEYS = Object.freeze(['kind', 'id', 'status', 'authors', 'created', 'revised', 'review', 'origin', 'retraction', 'title', 'names', 'from', 'to', 'type', 'of', 'category', 'person', 'office', 'parent', 'isbn', 'doi', 'cites', 'entry', 'degree']);
 
 // True of a record whose full entry has been written, and of the digest that
 // stands for one: on a record it is the prose itself, on a digest the `entry`
@@ -149,6 +155,9 @@ export function countDrafts(records) {
 export function labelOf(record) {
   if (!record) return '';
   if (record.kind === 'edge' || record.kind === 'relation') return `${record.from} — ${record.type} → ${record.to}`;
+  // A tenure has no name of its own: it is one person at one office, and
+  // those two ids are the only honest label for it.
+  if (record.kind === 'tenure') return `${record.person} — ${record.office}`;
   if (record.kind === 'actor' || record.kind === 'place') return (record.names ?? [])[0] ?? record.id;
   return record.title ?? record.id;
 }

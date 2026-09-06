@@ -35,7 +35,7 @@ test('changing any one field changes the key', () => {
   const base = store().get();
   const changed = {
     from: 1900, to: 1950, view: 'graph', focus: 'actor:x', focusAll: true, group: 'actor', lanes: ['a'],
-    selected: 'e', source: 's', place: 'p', actor: 'a', chain: ['c'], horizon: 1970,
+    selected: 'e', source: 's', place: 'p', actor: 'a', office: 'o', chain: ['c'], horizon: 1970,
     layers: ['events'], narrative: 'n', step: 3, walk: 'w', bbox: [0, 1, 2, 3],
   };
   for (const [name, value] of Object.entries(changed)) {

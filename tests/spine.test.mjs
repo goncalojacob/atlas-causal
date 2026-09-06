@@ -31,6 +31,11 @@ const FIELDS = {
   place: [...ENVELOPE, 'wikidata', 'wikipedia', 'name', 'names', 'revised', 'where', 'region', 'citesCount'],
   presence: [...ENVELOPE, 'wikidata', 'wikipedia', 'actor', 'when', 'geometry', 'dependencyOf', 'dependencyKind', 'capital', 'confidence'],
   relation: [...ENVELOPE, 'wikidata', 'wikipedia', 'from', 'to', 'type', 'when', 'note'],
+  // An office carries `revised` because `?office=` is an address and the
+  // card may fetch the record; a tenure has no address of its own and does
+  // not, the way a relation does not.
+  office: [...ENVELOPE, 'wikidata', 'wikipedia', 'of', 'title', 'category', 'revised', 'when'],
+  tenure: [...ENVELOPE, 'wikidata', 'wikipedia', 'person', 'office', 'when', 'startedBy'],
   narrative: [...ENVELOPE, 'wikidata', 'wikipedia', 'title', 'revised', 'summary', 'authors', 'window', 'steps'],
 };
 // A tombstone is fetched like any other record — 175 retracted events reach

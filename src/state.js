@@ -16,12 +16,13 @@
 // view. It is state, not a preference: a link is meant to open on the
 // picture the person who sent it was looking at.
 //
-// `selected`, `source`, `place` and `actor` are dimensions of the same view,
-// not alternatives: an actor stays highlighted on the map and the timeline
-// while its events are read one after another, and `?actor=salazar` alone
-// opens the actor's card. Which card the panel shows is a precedence —
-// `selected` over `source` over `place` over `actor` — so opening an event
-// from a place's list does not throw the place away.
+// `selected`, `source`, `office`, `place` and `actor` are dimensions of the
+// same view, not alternatives: an actor stays highlighted on the map and the
+// timeline while its events are read one after another, and `?actor=salazar`
+// alone opens the actor's card. Which card the panel shows is a precedence —
+// `selected` over `source` over `office` over `place` over `actor` — so
+// opening an event from a place's list does not throw the place away, and an
+// office opened from the card of the actor it belongs to is what is shown.
 //
 // `focus` is the lens — a comma-separated list of `kind:id`, of any length and
 // of any of the six kinds (`actor`, `place`, `source`, `event`, `region`,
@@ -99,7 +100,7 @@ export function defaultState() {
   return {
     from: null, to: null, view: 'map', focus: null, focusAll: false, group: 'none', lanes: [],
     selected: null, source: null, place: null,
-    actor: null, chain: [], horizon: null, layers: [...LAYERS], narrative: null, step: 0,
+    actor: null, office: null, chain: [], horizon: null, layers: [...LAYERS], narrative: null, step: 0,
     walk: null,
     bbox: null,
   };
@@ -178,6 +179,13 @@ export function parseState(search, defaults = defaultState()) {
   if (params.has('actor')) {
     const id = params.get('actor');
     if (SLUG.test(id)) state.actor = id;
+  }
+  // An office record is a record like any other and was unreachable without
+  // an address of its own (plan review, finding 29). It is a card and not a
+  // lens: opening one says nothing about which events exist.
+  if (params.has('office')) {
+    const id = params.get('office');
+    if (SLUG.test(id)) state.office = id;
   }
   if (params.has('chain')) {
     const chain = [];
@@ -261,6 +269,7 @@ export function formatState(state, search = '') {
   if (state.source) params.set('source', state.source);
   if (state.place) params.set('place', state.place);
   if (state.actor) params.set('actor', state.actor);
+  if (state.office) params.set('office', state.office);
   if (state.chain.length) params.set('chain', state.chain.join(','));
   if (state.bbox) params.set('bbox', formatBbox(state.bbox));
   if (state.horizon !== null && state.horizon !== undefined) params.set('horizon', String(state.horizon));
@@ -277,9 +286,9 @@ export function formatState(state, search = '') {
 // the window, the lanes, the layers, the lens — replaces the entry there is,
 // so that dragging the band does not fill the Back button with a hundred
 // frames of the same picture.
-export const OPENINGS = Object.freeze(['selected', 'source', 'place', 'actor', 'narrative', 'step']);
+export const OPENINGS = Object.freeze(['selected', 'source', 'office', 'place', 'actor', 'narrative', 'step']);
 
-// The five of those that are a *card*. `step` is not one on its own: it is a
+// All of those but one are a *card*. `step` is not one on its own: it is a
 // position inside a narrative, and the narrative beside it is the opening.
 export const CARDS = Object.freeze(OPENINGS.filter((key) => key !== 'step'));
 

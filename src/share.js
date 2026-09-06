@@ -64,7 +64,7 @@ export function parseEdit(text) {
 // Which state field opens a record of each kind. An edge has no card of its
 // own — it is walked, not opened — so it has no address here.
 export const OPENING_OF = Object.freeze({
-  event: 'selected', source: 'source', place: 'place', actor: 'actor', narrative: 'narrative',
+  event: 'selected', source: 'source', place: 'place', actor: 'actor', office: 'office', narrative: 'narrative',
 });
 
 // The record's own address on the atlas: the page, and the one parameter that

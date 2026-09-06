@@ -16,7 +16,7 @@
     },
     "kind": {
       "type": "string",
-      "enum": ["event", "edge", "source", "actor", "presence", "place", "relation", "narrative"]
+      "enum": ["event", "edge", "source", "actor", "presence", "place", "relation", "office", "tenure", "narrative"]
     },
     "status": {
       "type": "string",

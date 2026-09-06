@@ -210,6 +210,56 @@ const KIND_ENTRIES = {
     fields: ['from', 'to', 'type', 'start', 'end', 'date', 'note'],
     importOrder: null,
   },
+  office: {
+    dir: 'offices',
+    schema: 'v1/office.json',
+    label: 'Office',
+    hint: 'A post that is held one person after another — a crown, a presidency, a party leadership. It belongs to an actor; who held it and for how long is a tenure.',
+    // Written by a person about an actor's own arrangements, like a relation:
+    // nothing imports one, so there is no NC hole here.
+    licenses: ['CC-BY-SA-4.0'],
+    // An office is a thing in the world and Wikidata has an item for one, the
+    // way it has an item for a person or a place — unlike an edge or a
+    // narrative, which are arguments about things.
+    identity: true,
+    body: false,
+    entryPage: false,
+    linkable: false,
+    urlParam: 'office',
+    titleKey: 'title',
+    // An office is a geographic-fact-shaped record rather than an argument:
+    // rule 6 exempts it as it exempts a place, so it cites nothing and is
+    // never a citer either.
+    citerLabel: null,
+    citations: [],
+    actors: [],
+    steps: [],
+    fields: ['title', 'id', 'of', 'category', 'start', 'end', 'summary', 'wikidata'],
+    importOrder: null,
+  },
+  tenure: {
+    dir: 'tenures',
+    schema: 'v1/tenure.json',
+    label: 'Tenure',
+    hint: 'One person\'s turn at one office, with the years and the sources for them. Two tenures of one office may overlap: a regency is not a mistake and a year is the finest bound this model has.',
+    licenses: ['CC-BY-SA-4.0'],
+    identity: false,
+    body: false,
+    entryPage: false,
+    linkable: false,
+    // A tenure has no URL of its own: it is read on the card of the office it
+    // is a turn at, the way a relation is read on the cards of its two ends.
+    urlParam: null,
+    titleKey: null,
+    citerLabel: 'Tenures',
+    // A tenure asserts that this person held this office in these years, so
+    // it cites like an edge or a relation.
+    citations: [{ key: 'citations', label: 'Sources', path: '/sources' }],
+    actors: [],
+    steps: [],
+    fields: ['person', 'office', 'id', 'start', 'end', 'startedBy'],
+    importOrder: null,
+  },
   narrative: {
     dir: 'narratives',
     schema: 'v1/narrative.json',
@@ -299,9 +349,9 @@ export const listsOf = (family) => Object.freeze(Object.fromEntries(KINDS.map((k
 // The order is not the registry's own, which follows the topology, so it is
 // written out; it is still one list, read by the form's buttons and by the
 // queue alike.
-export const CONTRIBUTED_KINDS = Object.freeze(['source', 'place', 'actor', 'event', 'edge', 'relation', 'narrative']);
+export const CONTRIBUTED_KINDS = Object.freeze(['source', 'place', 'actor', 'event', 'edge', 'relation', 'office', 'tenure', 'narrative']);
 
 // The order a source's card draws its citer groups in: what an argument is
 // made of before what walks through it. A kind the record set does not have
 // yet simply never appears.
-export const CITER_ORDER = Object.freeze(['event', 'edge', 'actor', 'relation', 'place', 'presence', 'narrative']);
+export const CITER_ORDER = Object.freeze(['event', 'edge', 'actor', 'relation', 'tenure', 'place', 'presence', 'narrative']);

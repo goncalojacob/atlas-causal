@@ -74,6 +74,8 @@ try {
       sources: [...atlas.sources.values()],
       actors: [...atlas.actors.values()],
       places: [...atlas.places.values()],
+      offices: [...(atlas.offices?.values() ?? [])],
+      tenures: [...(atlas.tenures?.values() ?? [])],
       narratives: [...(atlas.narratives?.values() ?? [])],
       regions: atlas.regions,
     },

@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "v1/office.json",
+  "title": "Office",
+  "description": "A post held by one person after another — a crown, a presidency, a party's general secretaryship, a command. It is a record and not code, so a sultanate, a doge or a chief is added by writing a file (plan decision 1). `of` is the actor whose office it is; which kind of actor that may be is decided by the category, in a table in src/vocab.js that rule 26 checks. Who held it and when is a tenure, never a field here.",
+  "type": "object",
+  "required": ["schema", "id", "kind", "status", "supersededBy", "aliases", "authors", "license", "created", "revised", "sources", "of", "title", "category", "when"],
+  "additionalProperties": false,
+  "properties": {
+    "schema": { "$ref": "../common/provenance.json#/properties/schema" },
+    "id": { "$ref": "../common/provenance.json#/properties/id" },
+    "kind": { "const": "office" },
+    "status": { "$ref": "../common/provenance.json#/properties/status" },
+    "supersededBy": { "$ref": "../common/provenance.json#/properties/supersededBy" },
+    "aliases": { "$ref": "../common/provenance.json#/properties/aliases" },
+    "authors": { "$ref": "../common/provenance.json#/properties/authors" },
+    "license": { "$ref": "../common/provenance.json#/properties/license" },
+    "created": { "$ref": "../common/provenance.json#/properties/created" },
+    "revised": { "$ref": "../common/provenance.json#/properties/revised" },
+    "review": { "$ref": "../common/provenance.json#/properties/review" },
+    "origin": { "$ref": "../common/provenance.json#/properties/origin" },
+    "retraction": { "$ref": "../common/provenance.json#/properties/retraction" },
+    "sources": {
+      "description": "An office is a fact about how an actor is arranged rather than an argument about the world, so rule 6 exempts it as it exempts a place: the list is written empty. The tenures that say who held it each cite at least one source.",
+      "$ref": "../common/provenance.json#/properties/sources"
+    },
+    "of": {
+      "description": "The actor whose office this is — the state, the party, the body. Which kind of actor may stand here is decided by the category (rule 26).",
+      "$ref": "../common/provenance.json#/properties/id"
+    },
+    "title": {
+      "description": "What the post is called, as its own actor calls it: \"King of Portugal\", \"Prime Minister\", \"Secretary-General\".",
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "category": {
+      "description": "What kind of post it is. Closed, and small on purpose: it decides which kind of actor may stand at `of`, and it is what an Offices grouping and an office strip are drawn by. A category nobody has decided about is reported in STATUS.md, never replaced by `other`.",
+      "type": "string",
+      "enum": ["head-of-state", "head-of-government", "legislature", "party-leadership", "military-command", "religious", "other"]
+    },
+    "when": {
+      "description": "How long the office itself existed, or null where the atlas asserts only that it exists and what its tenures were. Null is not a gap to be filled with a guess: dating the Portuguese crown against an actor record that begins in 1886 would be an invented claim (amendment A13). Rule 26's overlap check is skipped where this is null.",
+      "oneOf": [
+        { "type": "null" },
+        { "$ref": "../common/interval.json" }
+      ]
+    },
+    "summary": {
+      "description": "Optional, and written by a person when it is there: what the post is, in their own words.",
+      "oneOf": [
+        { "type": "null" },
+        { "type": "string", "minLength": 1, "maxLength": 2000 }
+      ]
+    },
+    "wikidata": { "$ref": "../common/provenance.json#/properties/wikidata" },
+    "wikipedia": { "$ref": "../common/provenance.json#/properties/wikipedia" },
+    "sitelinks": { "$ref": "../common/provenance.json#/properties/sitelinks" }
+  }
+}

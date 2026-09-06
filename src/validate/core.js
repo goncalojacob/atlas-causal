@@ -250,6 +250,8 @@ export function buildTopology(records, regions, { deriveRegion } = {}) {
   const presences = [];
   const places = [];
   const relations = [];
+  const offices = [];
+  const tenures = [];
   const narratives = [];
   // Places first: an event's lane is derived from the place it names, so the
   // places have to be resolved before any event is.
@@ -339,6 +341,33 @@ export function buildTopology(records, regions, { deriveRegion } = {}) {
         supersededBy: r.supersededBy ?? null,
         aliases: r.aliases ?? [],
       });
+    } else if (r.kind === 'office') {
+      // The whole record but its prose: an office has no card that fetches
+      // it, so the actor's card and the placeholder draw it out of the
+      // topology, the way a relation is drawn.
+      offices.push({
+        id: r.id,
+        of: r.of,
+        title: r.title,
+        category: r.category,
+        revised: versionOf(r),
+        when: isObject(r.when) ? r.when : null,
+        ...identityOf(r),
+        status: r.status,
+        supersededBy: r.supersededBy ?? null,
+        aliases: r.aliases ?? [],
+      });
+    } else if (r.kind === 'tenure') {
+      tenures.push({
+        id: r.id,
+        person: r.person,
+        office: r.office,
+        when: r.when,
+        startedBy: r.startedBy ?? null,
+        status: r.status,
+        supersededBy: r.supersededBy ?? null,
+        aliases: r.aliases ?? [],
+      });
     } else if (r.kind === 'narrative') {
       // Everything the list of narratives and the walk itself need, and not a
       // word of the steps: the titles, the summary and the authors are what a
@@ -407,6 +436,8 @@ export function buildTopology(records, regions, { deriveRegion } = {}) {
   presences.sort(byId);
   places.sort(byId);
   relations.sort(byId);
+  offices.sort(byId);
+  tenures.sort(byId);
   narratives.sort(byId);
   return {
     events,
@@ -416,6 +447,8 @@ export function buildTopology(records, regions, { deriveRegion } = {}) {
     presences,
     places,
     relations,
+    offices,
+    tenures,
     narratives,
     regions: [...(regions ?? [])].sort((a, b) => a.order - b.order || byId(a, b)),
   };
@@ -533,6 +566,24 @@ export function buildSpine(topology) {
       type: r.type,
       when: r.when,
       note: r.note ?? null,
+    })),
+    // An office and a tenure are read together — one strip per office with
+    // its holders as bars — so both come whole and neither is fetched by a
+    // card. They are small: a title, two ids and an interval each.
+    offices: (topology.offices ?? []).map((o) => spineEntry({
+      ...envelopeOf(o, 'office'),
+      of: o.of,
+      title: o.title,
+      category: o.category,
+      revised: o.revised ?? null,
+      when: o.when ?? null,
+    })),
+    tenures: (topology.tenures ?? []).map((t) => spineEntry({
+      ...envelopeOf(t, 'tenure'),
+      person: t.person,
+      office: t.office,
+      when: t.when,
+      startedBy: t.startedBy ?? null,
     })),
     narratives: (topology.narratives ?? []).map((n) => spineEntry({
       ...envelopeOf(n, 'narrative'),

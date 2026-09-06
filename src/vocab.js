@@ -74,6 +74,26 @@ export const RELATION_TYPES = Object.freeze([
   }),
 ]);
 
+// What kind of thing an office is, and — the part no schema can say — which
+// kind of actor may stand at its `of` end. A crown and a presidency are
+// offices of a state; a general secretaryship is an office of a party, which
+// is an institution here, and a command may be either (plan decision 1,
+// amendment A5).
+//
+// It is the same shape as `RELATION_ENDPOINTS` and lives beside it for the
+// same reason: rule 26 checks a record against this table, so a category
+// spelled two ways would be a rule that never fires. `label` is what a card
+// says; the order is the order the form offers them in and the schema's enum.
+export const OFFICE_CATEGORIES = Object.freeze([
+  Object.freeze({ id: 'head-of-state', label: 'Head of state', of: Object.freeze(['polity']) }),
+  Object.freeze({ id: 'head-of-government', label: 'Head of government', of: Object.freeze(['polity']) }),
+  Object.freeze({ id: 'legislature', label: 'Legislature', of: Object.freeze(['polity']) }),
+  Object.freeze({ id: 'party-leadership', label: 'Party leadership', of: Object.freeze(['polity', 'institution']) }),
+  Object.freeze({ id: 'military-command', label: 'Military command', of: Object.freeze(['polity', 'institution']) }),
+  Object.freeze({ id: 'religious', label: 'Religious', of: Object.freeze(['polity', 'institution']) }),
+  Object.freeze({ id: 'other', label: 'Other', of: Object.freeze(['polity', 'institution']) }),
+]);
+
 // The four groupings a reader can ask the lanes for. `none` is the default
 // and names no lanes at all: the arrangement that says least about the data,
 // and therefore the right first thing to show.
@@ -101,6 +121,7 @@ const alternation = (types) => types.map((t) => t.id).join('|');
 
 export const EDGE_TYPE_IDS = ids(EDGE_TYPES);
 export const RELATION_TYPE_IDS = ids(RELATION_TYPES);
+export const OFFICE_CATEGORY_IDS = ids(OFFICE_CATEGORIES);
 
 // A relation's id has the same three-part shape as an edge's and is not one:
 // its third part comes from the other vocabulary, and the two never meet.
@@ -140,6 +161,12 @@ export const RELATION_LABEL = Object.freeze(Object.fromEntries(
 
 export const RELATION_ENDPOINTS = labelMap(RELATION_TYPES, 'endpoints');
 export const ACYCLIC_RELATION_TYPES = Object.freeze(RELATION_TYPES.filter((t) => t.acyclic).map((t) => t.id));
+
+// { 'head-of-state': ['polity'], … } — the actor types an office of each
+// category may belong to (rule 26), and { 'head-of-state': 'Head of state' }
+// for the cards and the form.
+export const OFFICE_ENDPOINTS = labelMap(OFFICE_CATEGORIES, 'of');
+export const OFFICE_CATEGORY_LABEL = labelMap(OFFICE_CATEGORIES, 'label');
 
 // The order an actor's card draws its relation groups in: what this actor is,
 // then what it was made of, then who ran it, then who it stood beside. A

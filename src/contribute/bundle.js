@@ -11,6 +11,7 @@
 import { validate } from '../validate/core.js';
 import { createValidator } from '../validate/schema.js';
 import { ACTOR_TYPES, EDGE_TYPES, RELATION_TYPES, buildUniverse } from '../validate/rules.js';
+import { OFFICE_CATEGORY_IDS as OFFICE_CATEGORIES } from '../vocab.js';
 import { CONTAINER_KINDS } from '../citation.js';
 import { KIND, CONTRIBUTED_KINDS, listsOf } from '../kinds.js';
 import { articleTitles } from '../wikipedia.js';
@@ -120,6 +121,24 @@ const DESCRIPTORS = Object.freeze({
     { key: 'end', label: 'End year', input: 'text', path: '/when/end', hint: 'blank means the same year as the start; write "ongoing" for one that still holds' },
     { key: 'date', label: 'Exact date', input: 'text', path: '/when/date', hint: 'display only, for a relation that began on a known day: YYYY-MM-DD or YYYY-MM' },
     { key: 'note', label: 'Note', input: 'text', path: '/note', hint: 'optional, short, and written by you: what the type and the dates cannot say' },
+  ]),
+  office: Object.freeze([
+    { key: 'title', label: 'Title', input: 'text', path: '/title', required: true, hint: 'what the post is called, as its own actor calls it: King of Portugal, Prime Minister, Secretary-General' },
+    { key: 'id', label: 'Id', input: 'text', path: '/id', required: true, hint: 'lowercase words joined by hyphens; it becomes the file name and the permanent URL' },
+    { key: 'of', label: 'Of', input: 'select', optionsFrom: 'actors', path: '/of', required: true, hint: 'the actor whose office this is: the state, the party, the body' },
+    { key: 'category', label: 'Category', input: 'select', options: ['', ...OFFICE_CATEGORIES], path: '/category', required: true, hint: 'what kind of post it is; it also decides which kind of actor may stand at "Of"' },
+    { key: 'start', label: 'Start year', input: 'text', path: '/when/start', hint: 'the year the office itself was created; leave both years blank rather than guess one' },
+    { key: 'end', label: 'End year', input: 'text', path: '/when/end', hint: 'blank means the same year as the start; write "ongoing" for a post that still exists' },
+    { key: 'summary', label: 'Summary', input: 'textarea', path: '/summary', hint: 'optional, and written by you when it is there' },
+    WIKIDATA_FIELD,
+  ]),
+  tenure: Object.freeze([
+    { key: 'person', label: 'Person', input: 'select', optionsFrom: 'actors', path: '/person', required: true, hint: 'who held it; an actor of type person' },
+    { key: 'office', label: 'Office', input: 'select', optionsFrom: 'offices', path: '/office', required: true, hint: 'the post they held; add one above if it is not there yet' },
+    { key: 'id', label: 'Id', input: 'text', path: '/id', required: true, hint: 'lowercase words joined by hyphens, and one person may hold one office more than once: soares-prime-minister-1976' },
+    { key: 'start', label: 'Start year', input: 'text', path: '/when/start', required: true, hint: 'the year they took it; a range as 1400..1450' },
+    { key: 'end', label: 'End year', input: 'text', path: '/when/end', hint: 'blank means the same year as the start; write "ongoing" for somebody still in post' },
+    { key: 'startedBy', label: 'Started by', input: 'select', optionsFrom: 'events', path: '/startedBy', hint: 'optional: the election, the coup or the succession that began it' },
   ]),
   narrative: Object.freeze([
     { key: 'title', label: 'Title', input: 'text', path: '/title', required: true },
@@ -461,6 +480,35 @@ export function buildRecord(kind, values, context = {}) {
     };
   }
 
+  if (kind === 'office') {
+    const start = parseBound(v.start);
+    return withIdentity({
+      ...envelope('office', trimmed(v.id), context),
+      // An office does not cite: rule 6 exempts it as it exempts a place,
+      // and the list is written empty rather than left out.
+      sources: [],
+      of: trimmed(v.of),
+      title: trimmed(v.title),
+      category: trimmed(v.category),
+      // Both years blank is an office the atlas dates not at all, which is
+      // what the three Portuguese ones are (A13) — not a start of nothing.
+      when: start === '' ? null : { start, end: parseEnd(v.end, start) },
+      summary: orNull(v.summary),
+    }, v);
+  }
+
+  if (kind === 'tenure') {
+    const start = parseBound(v.start);
+    return {
+      ...envelope('tenure', trimmed(v.id), context),
+      sources: citationsOf(v.citations),
+      person: trimmed(v.person),
+      office: trimmed(v.office),
+      when: { start, end: parseEnd(v.end, start) },
+      startedBy: orNull(v.startedBy),
+    };
+  }
+
   if (kind === 'narrative') {
     const from = parseBound(v.windowFrom);
     const to = parseBound(v.windowTo);
@@ -623,6 +671,37 @@ export function valuesFromRecord(kind, record) {
       end: endText(when.end, when.start),
       date: when.date ?? '',
       note: r.note ?? '',
+    };
+  }
+
+  if (kind === 'office') {
+    const dated = isObject(r.when);
+    const when = dated ? r.when : {};
+    return {
+      ...values,
+      id: r.id ?? '',
+      title: r.title ?? '',
+      of: r.of ?? '',
+      category: r.category ?? '',
+      start: boundText(when.start),
+      // An undated office puts nothing in either field: `endText` reads an
+      // absent end as "ongoing", which would be a claim this record does not
+      // make and would not come back out as `when: null`.
+      end: dated ? endText(when.end, when.start) : '',
+      summary: r.summary ?? '',
+    };
+  }
+
+  if (kind === 'tenure') {
+    const when = isObject(r.when) ? r.when : {};
+    return {
+      ...values,
+      id: r.id ?? '',
+      person: r.person ?? '',
+      office: r.office ?? '',
+      start: boundText(when.start),
+      end: endText(when.end, when.start),
+      startedBy: r.startedBy ?? '',
     };
   }
 
@@ -854,6 +933,10 @@ export function comparableIndex(topology = {}) {
   add('actor', topology.actors);
   add('place', topology.places);
   add('source', topology.sources);
+  // An office is compared and a tenure is not: an office has a title
+  // somebody could file twice, and a tenure's identity is its person, its
+  // office and its years, which NO_DUPLICATES is for.
+  add('office', topology.offices);
   add('narrative', topology.narratives);
   return byKind;
 }
@@ -861,7 +944,7 @@ export function comparableIndex(topology = {}) {
 // The near-matches for one record, most certain first. An edge and a
 // relation are not compared: their identity is their two ends and their type,
 // and rule 2 already refuses a second one under the same id.
-export const NO_DUPLICATES = Object.freeze(['edge', 'relation']);
+export const NO_DUPLICATES = Object.freeze(['edge', 'relation', 'tenure']);
 
 export function findDuplicates(subject, candidates, { limit = 5, threshold = 0.34 } = {}) {
   if (!subject || NO_DUPLICATES.includes(subject.kind)) return [];
@@ -967,6 +1050,6 @@ export function preparedFor(topology, schemas) {
 // asserted here rather than inferred from an empty error list.
 export function everythingCited(bundle) {
   return (bundle?.records ?? [])
-    .filter((r) => r.kind === 'event' || r.kind === 'edge' || r.kind === 'actor' || r.kind === 'relation')
+    .filter((r) => ['event', 'edge', 'actor', 'relation', 'tenure'].includes(r.kind))
     .every((r) => Array.isArray(r.sources) && r.sources.length > 0);
 }

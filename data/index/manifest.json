@@ -4,11 +4,13 @@
     "edges": 161,
     "events": 329,
     "narratives": 1,
+    "offices": 0,
     "places": 26,
     "presences": 710,
     "regions": 5,
     "relations": 43,
-    "sources": 34
+    "sources": 34,
+    "tenures": 0
   },
   "explanationShards": [
     {
@@ -33,7 +35,7 @@
     "review": "index/review-713906d988bd.json",
     "search": "index/search-74e59167b77e.json",
     "sources": "index/sources-78108ff40e94.json",
-    "spine": "index/spine-19484d920a69.json"
+    "spine": "index/spine-a8e8a80c51b2.json"
   },
   "land": [
     {
@@ -136,6 +138,12 @@
         "CC-BY-SA-4.0"
       ]
     },
+    "data/offices/": {
+      "attribution": [],
+      "licenses": [
+        "CC-BY-SA-4.0"
+      ]
+    },
     "data/places/": {
       "attribution": [],
       "licenses": [
@@ -162,6 +170,12 @@
       ]
     },
     "data/sources/": {
+      "attribution": [],
+      "licenses": [
+        "CC-BY-SA-4.0"
+      ]
+    },
+    "data/tenures/": {
       "attribution": [],
       "licenses": [
         "CC-BY-SA-4.0"

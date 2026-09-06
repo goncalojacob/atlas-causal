@@ -20,6 +20,7 @@ test('parse and format round trip', () => {
     source: 'fixture-source-one',
     place: 'fixture-place-one',
     actor: 'fixture-actor-one',
+    office: 'fixture-office-one',
     chain: ['fixture-event-a--fixture-event-b--caused', 'fixture-event-b--fixture-event-d--enabled'],
     horizon: 1240,
     layers: ['events'],
@@ -29,7 +30,7 @@ test('parse and format round trip', () => {
     bbox: null,
   };
   const search = formatState(state);
-  assert.equal(search, '?from=1200&to=1250&view=graph&selected=fixture-event-t&source=fixture-source-one&place=fixture-place-one&actor=fixture-actor-one&chain=fixture-event-a--fixture-event-b--caused,fixture-event-b--fixture-event-d--enabled&horizon=1240&layers=events');
+  assert.equal(search, '?from=1200&to=1250&view=graph&selected=fixture-event-t&source=fixture-source-one&place=fixture-place-one&actor=fixture-actor-one&office=fixture-office-one&chain=fixture-event-a--fixture-event-b--caused,fixture-event-b--fixture-event-d--enabled&horizon=1240&layers=events');
   assert.deepEqual(parseState(search), state);
 });
 
@@ -106,7 +107,7 @@ test('the store merges patches and notifies', () => {
   assert.deepEqual(store.get(), {
     from: null, to: 1220, view: 'map', focus: null, focusAll: false, group: 'none', lanes: [],
     selected: 'fixture-event-a', source: null,
-    place: null, actor: null, chain: [], horizon: null, layers: ['land', 'territories', 'events'],
+    place: null, actor: null, office: null, chain: [], horizon: null, layers: ['land', 'territories', 'events'],
     narrative: null, step: 0, walk: null, bbox: null,
   });
 });

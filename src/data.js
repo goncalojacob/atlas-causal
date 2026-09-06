@@ -36,7 +36,12 @@ export function createAtlas({
   const actors = new Map((topology.actors ?? []).map((a) => [a.id, a]));
   const places = new Map((topology.places ?? []).map((p) => [p.id, p]));
   const narratives = new Map((topology.narratives ?? []).map((n) => [n.id, n]));
-  const kinds = [['event', events], ['edge', edges], ['source', sourceMap], ['actor', actors], ['place', places], ['narrative', narratives]];
+  const offices = new Map((topology.offices ?? []).map((o) => [o.id, o]));
+  // An office is a kind with an address — `?office=` opens one — so it is in
+  // the list `resolve()` and `record()` walk. A tenure is not addressed on
+  // its own and is here for the same reason a relation is not: it is read on
+  // the card of the office it is a turn at.
+  const kinds = [['event', events], ['edge', edges], ['source', sourceMap], ['actor', actors], ['place', places], ['office', offices], ['narrative', narratives]];
 
   const aliases = new Map();
   for (const [kind, map] of kinds) {
@@ -261,6 +266,25 @@ export function createAtlas({
       || (a.relation.id < b.relation.id ? -1 : a.relation.id > b.relation.id ? 1 : 0));
   }
 
+  // --- offices and tenures ------------------------------------------------
+  // An office belongs to an actor and is held by people one after another;
+  // the tenures are the strip drawn under it. Grouped here rather than in a
+  // card so that the office's own placeholder, the actor's card and, in M30b,
+  // the office strips all read one list. Sorted by start then id, so a strip
+  // is drawn in the order it happened.
+  const activeTenures = (topology.tenures ?? []).filter((t) => t.status === 'active');
+  const tenures = new Map(activeTenures.map((t) => [t.id, t]));
+  const tenuresByOffice = new Map();
+  for (const tenure of activeTenures) {
+    if (!offices.has(tenure.office)) continue;
+    if (!tenuresByOffice.has(tenure.office)) tenuresByOffice.set(tenure.office, []);
+    tenuresByOffice.get(tenure.office).push(tenure);
+  }
+  for (const list of tenuresByOffice.values()) {
+    list.sort((a, b) => intervalExtent(a.when).min - intervalExtent(b.when).min
+      || (a.id < b.id ? -1 : a.id > b.id ? 1 : 0));
+  }
+
   // --- narratives ---------------------------------------------------------
   // The other direction of a narrative's steps: which narratives pass through
   // a record, so an event's card and a link's argument can say what they are
@@ -469,6 +493,9 @@ export function createAtlas({
     eventsByActor,
     relations,
     relationsByActor,
+    offices,
+    tenures,
+    tenuresByOffice,
     narratives,
     activeNarratives,
     narrativesByRef,
@@ -519,6 +546,8 @@ function topologyFromSpine(spine) {
     places: spine.places ?? [],
     presences: spine.presences ?? [],
     relations: spine.relations ?? [],
+    offices: spine.offices ?? [],
+    tenures: spine.tenures ?? [],
     narratives: spine.narratives ?? [],
   };
 }

@@ -18,6 +18,8 @@
           { "$ref": "actor.json" },
           { "$ref": "place.json" },
           { "$ref": "relation.json" },
+          { "$ref": "office.json" },
+          { "$ref": "tenure.json" },
           { "$ref": "narrative.json" }
         ]
       }

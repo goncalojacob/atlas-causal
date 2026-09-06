@@ -107,7 +107,7 @@ jobs:
           # naming the record directories rather than `data` keeps it that way
           # if it ever is.
           git add data/sources data/places data/actors data/events data/edges \
-            data/relations data/narratives
+            data/relations data/offices data/tenures data/narratives
           git commit \
             --author="${ISSUE_AUTHOR} <${ISSUE_AUTHOR}@users.noreply.github.com>" \
             -m "data: records from issue #${ISSUE_NUMBER}" \
@@ -134,7 +134,7 @@ jobs:
             # address inside it and not a link off this page.
             echo "### Open in the review dashboard"
             echo
-            git diff --name-only main... -- data | sed -n -E 's#^data/(events|edges|actors|places|sources|relations|narratives)/(.*)\.json$#\2#p' | while read -r id; do
+            git diff --name-only main... -- data | sed -n -E 's#^data/(events|edges|actors|places|sources|relations|offices|tenures|narratives)/(.*)\.json$#\2#p' | while read -r id; do
               echo "- \`review.html?open=${id}\`"
             done
             echo

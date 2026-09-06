@@ -60,7 +60,7 @@ export function rank(term, query) {
 // the import has given Wikipedia titles is findable by them too — somebody
 // who knows a thing by the name the encyclopedia gives it should not be told
 // there is nothing by that name — and the label stays the atlas's own.
-export function buildSearchIndex({ events = [], actors = [], places = [], sources = [] } = {}) {
+export function buildSearchIndex({ events = [], actors = [], places = [], sources = [], offices = [] } = {}) {
   const entries = [];
   for (const event of events) {
     if (event.status && event.status !== 'active') continue;
@@ -113,6 +113,21 @@ export function buildSearchIndex({ events = [], actors = [], places = [], source
       variants: names.slice(1),
       weight: 0,
       terms: [...names, ...articleTitles(place)].map(fold),
+    });
+  }
+  // An office is findable and a tenure is not: "prime minister" is a thing a
+  // reader types, and a tenure has no name of its own — it is one person's
+  // turn at an office, and both of those are already in the shard (A7).
+  for (const office of offices) {
+    if (office.status && office.status !== 'active') continue;
+    entries.push({
+      kind: 'office',
+      id: office.id,
+      label: office.title,
+      detail: office.category ?? null,
+      when: office.when ?? null,
+      weight: 0,
+      terms: [fold(office.title), ...articleTitles(office).map(fold)],
     });
   }
   for (const source of sources) {

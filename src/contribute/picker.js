@@ -35,6 +35,7 @@ const KINDS_OF = Object.freeze({
   actors: ['actor'],
   places: ['place'],
   sources: ['source'],
+  offices: ['office'],
   records: ['event', 'edge'],
 });
 
@@ -61,6 +62,7 @@ export function pickerIndex({ topology = {}, entries = null } = {}) {
     actors: asArray(topology.actors),
     places: asArray(topology.places),
     sources: asArray(topology.sources),
+    offices: asArray(topology.offices),
   });
 
   // One pass, the first time anything asks: the entries by kind, the events

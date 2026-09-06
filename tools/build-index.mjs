@@ -227,6 +227,8 @@ export async function buildIndex(dataDir = DEFAULT_DATA, prepared = {}) {
       presences: topology.presences.length,
       places: topology.places.length,
       relations: topology.relations.length,
+      offices: topology.offices.length,
+      tenures: topology.tenures.length,
       narratives: topology.narratives.length,
       regions: topology.regions.length,
     },

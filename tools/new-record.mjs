@@ -13,6 +13,11 @@
 //        --start 1889 [--end 1970 | --end null] [--lon -8.1 --lat 40.5 --label "Santa Comba Dão"]
 //   node tools/new-record.mjs relation <from> <to> <type> --start 1933 [--end 1974 | --end null]
 //        [--note "…"]
+//   node tools/new-record.mjs office <id> --of portugal --title "Prime Minister"
+//        --category head-of-government [--start 1834 --end 1834 | --end null]
+//        [--summary "…"]
+//   node tools/new-record.mjs tenure <id> --person soares --office prime-minister-of-portugal
+//        --start 1976 [--end 1978 | --end null] [--startedBy <event id>] [--source <id>]
 //   node tools/new-record.mjs narrative <id> --title "…" --step <event or edge id> (repeatable)
 //        [--from 1961 --to 1975]
 //   node tools/new-record.mjs source <id> --type book --title "…" --creators "A; B"
@@ -26,6 +31,7 @@ import { execFileSync } from 'node:child_process';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { ACTOR_TYPES, EDGE_TYPES, RELATION_TYPES, SLUG } from '../src/validate/rules.js';
+import { OFFICE_CATEGORY_IDS as OFFICE_CATEGORIES } from '../src/vocab.js';
 import { KIND_DIRS, CONTRIBUTED_KINDS } from './lib/read.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -198,6 +204,50 @@ export function scaffold(kind, positional, options) {
       type,
       when: { start, end },
       note: typeof options.note === 'string' ? options.note : null,
+    };
+  }
+
+  if (kind === 'office') {
+    const [id] = positional;
+    if (!id || !SLUG.test(id)) throw new Error('office needs a slug id');
+    if (!options.of) throw new Error('office needs --of <actor id>');
+    if (!OFFICE_CATEGORIES.includes(options.category)) {
+      throw new Error(`office needs --category, one of ${OFFICE_CATEGORIES.join(', ')}`);
+    }
+    // An office that nobody has dated carries `when: null` rather than a
+    // guess: the atlas asserts that the post exists and what its tenures
+    // were, and nothing about when it began (amendment A13).
+    const start = int(options.start, 'start');
+    const end = options.end === 'null' ? null : (int(options.end, 'end') ?? start);
+    return {
+      ...envelope(id),
+      // Rule 6 exempts an office as it exempts a place: it is a fact about
+      // how an actor is arranged, not an argument about the world.
+      sources: [],
+      of: options.of,
+      title: options.title ?? '',
+      category: options.category,
+      when: start === undefined ? null : { start, end },
+      summary: typeof options.summary === 'string' ? options.summary : null,
+    };
+  }
+
+  if (kind === 'tenure') {
+    const [id] = positional;
+    if (!id || !SLUG.test(id)) throw new Error('tenure needs a slug id');
+    if (!options.person) throw new Error('tenure needs --person <actor id>');
+    if (!options.office) throw new Error('tenure needs --office <office id>');
+    const start = int(options.start, 'start');
+    if (start === undefined) throw new Error('tenure needs --start <year>');
+    // `--end null` is somebody still in post.
+    const end = options.end === 'null' ? null : (int(options.end, 'end') ?? start);
+    return {
+      ...envelope(id),
+      sources,
+      person: options.person,
+      office: options.office,
+      when: { start, end },
+      startedBy: typeof options.startedBy === 'string' ? options.startedBy : null,
     };
   }
 

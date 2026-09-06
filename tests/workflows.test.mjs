@@ -6,6 +6,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readdir, readFile } from 'node:fs/promises';
 import path from 'node:path';
+import { CONTRIBUTED_KINDS, KIND_DIRS } from '../src/kinds.js';
 import { ROOT } from './helpers.mjs';
 
 const WORKFLOWS = path.join(ROOT, '.github', 'workflows');
@@ -237,7 +238,11 @@ test('a contribution pull request carries the records and neither the index nor 
   const add = text.slice(text.indexOf('git add'), text.indexOf('git commit'));
   assert.doesNotMatch(add, /data\/index/);
   assert.doesNotMatch(add, /sources\.html|narratives\.html|entry/);
-  for (const dir of ['sources', 'places', 'actors', 'events', 'edges', 'relations', 'narratives']) {
+  // Every directory a person can write into, from the registry: a ninth and
+  // tenth kind added to `src/kinds.js` and not here would be records the
+  // form accepted and the branch left behind.
+  for (const kind of CONTRIBUTED_KINDS) {
+    const dir = KIND_DIRS[kind];
     assert.match(add, new RegExp(`data/${dir}\\b`), `the branch commits data/${dir}`);
   }
   // And deploy.yml's header says which branch owns them, in one place.

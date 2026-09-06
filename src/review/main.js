@@ -109,6 +109,8 @@ try {
       actors: expanded.actors,
       places: expanded.places,
       relations: expanded.relations,
+      offices: expanded.offices,
+      tenures: expanded.tenures,
       narratives: expanded.narratives,
       presences: expanded.presences,
       sources: sourcesIndex.sources ?? [],
@@ -797,6 +799,7 @@ function render({ topology, summary, shardOf, historyOf, schemas, citersOf, sear
     for (const [kind, records] of [
       ['event', topology.events], ['edge', topology.edges], ['actor', topology.actors],
       ['place', topology.places], ['relation', topology.relations],
+      ['office', topology.offices], ['tenure', topology.tenures],
       ['narrative', topology.narratives], ['source', topology.sources],
     ]) {
       if (named && named.kind !== kind) continue;

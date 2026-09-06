@@ -29,11 +29,13 @@ export const SCHEMA_FILES = Object.freeze([
   'v1/edge.json',
   'v1/event.json',
   'v1/narrative.json',
+  'v1/office.json',
   'v1/place.json',
   'v1/presence.json',
   'v1/region.json',
   'v1/relation.json',
   'v1/source.json',
+  'v1/tenure.json',
 ]);
 
 async function defaultFetchJson(url) {
