@@ -96,3 +96,30 @@ test('geometryPath turns rings into closed subpaths', () => {
   assert.equal((multi.match(/Z/g) ?? []).length, 2);
   assert.equal(geometryPath({ type: 'Point', coordinates: [0, 0] }, p.project), '');
 });
+
+// R19: `CLAUDE.md` is the file every session reads first, and its layout tree
+// was a cycle behind — 25 of about 90 modules unnamed, every one of them added
+// by the health cycle or the milestone before it. A tree that is only nearly
+// complete is worse than none: a module that is not in it reads as a module
+// that does not exist.
+test('CLAUDE.md\'s layout tree names every module under src/ and tools/', async () => {
+  const text = await readFile(path.join(ROOT, 'CLAUDE.md'), 'utf8');
+  const start = text.indexOf('## Layout');
+  const end = text.indexOf('## The data model');
+  assert.ok(start > 0 && end > start, 'the layout section is where it was');
+  const tree = text.slice(start, end);
+
+  const modules = [
+    ...await walk(path.join(ROOT, 'src'), '.js'),
+    ...await walk(path.join(ROOT, 'tools'), '.mjs'),
+  ].map((file) => path.relative(ROOT, file));
+
+  const unnamed = modules.filter((file) => {
+    const name = path.basename(file);
+    // By its own name, wherever the line puts it: several are named beside a
+    // sibling ("main.js bootstrap for review.html") rather than at the head of
+    // a line of their own, which is how the file has always read.
+    return !new RegExp(`(^|[\\s;/])${name.replace('.', '\\.')}`).test(tree);
+  });
+  assert.deepEqual(unnamed, [], `${unnamed.length} module(s) the tree does not name`);
+});

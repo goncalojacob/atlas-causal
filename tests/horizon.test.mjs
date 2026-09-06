@@ -5,6 +5,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import path from 'node:path';
+import { readFile } from 'node:fs/promises';
 import { defaultState } from '../src/state.js';
 import {
   horizonSet, horizonResults, horizonYear, horizonBand, rankByCost, RANKED,
@@ -210,4 +211,23 @@ test('convergence in tiers is the same branches, grouped by how far up', async (
     for (let i = 1; i < costs.length; i += 1) assert.ok(costs[i - 1] <= costs[i]);
   }
   assert.deepEqual(convergenceByDepth([]), []);
+});
+
+// R18: the hint said the list was ordered best-supported first, of the whole
+// list. `rankByCost` re-orders the first RANKED rows and leaves the rest in
+// the order they were found — which is the right trade (ranking a row costs
+// the walk that reconstructs its path) and was not what the card said.
+test('the hint says how much of the list is ranked, and only claims that much', async () => {
+  const state = { ...defaultState(), selected: REVOLUTION, horizon: 2011 };
+  const short = horizonHtml(ctx, { event: atlas.events.get(REVOLUTION), state });
+  assert.ok(horizonResults(atlas, state).length < RANKED, 'the atlas answers in fewer rows than the window');
+  assert.match(short, /Ordered\s+best-supported first/);
+  assert.doesNotMatch(short, /the first \d+ are ordered/i, 'with nothing unranked, nothing is said about it');
+
+  // Nothing in the atlas is longer than the window today, so what the longer
+  // sentence would say is asserted on the template itself rather than on a
+  // synthetic answer the card would have to be lied to about.
+  const source = await readFile(path.join(ROOT, 'src', 'panel', 'horizon.js'), 'utf8');
+  assert.match(source, /The first \$\{RANKED\} are ordered/, 'the card names the number when there is a rest');
+  assert.match(source, /the rest in the order they were found/);
 });

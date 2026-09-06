@@ -122,6 +122,18 @@ src/licensing.js           which licence covers which directory, whom each asks 
 src/kinds.js               the record kinds: a leaf module, one entry per kind — directory, schema file, licences, identity and body, its citation, actor and step lists, its form fields' names, its URL parameter and its labels. Everything that used to list the kinds imports it
 src/vocab.js               the closed vocabularies: a leaf module with the edge types, the relation types, the groupings and the lens kinds, and the id patterns built from them. `state.js` imports it rather than copying it
 src/emphasis.js            pure: `workingSet(atlas, state)` — the selection, the walked path, the consequences, the converging branches, the open actor, an open narrative's walk, the horizon and the lens, as id sets, with the lens applied to all of them. The three views draw from it instead of each assembling it
+src/lens.js                pure: which foci are on — the reader's `?focus=` list, or the record whose card is open as a lens of one — the events they reach, the one-hop ring drawn dimmed, and the four ways a control writes the parameter. An actor or place with no events is not a lens, and the implicit one never removes the selection, the chain or the consequences
+src/chain.js               pure: the walked chain as edges, where a withdrawal cut it, and how many steps it lost
+src/render-key.js          pure: whether two states draw the same picture, per view; the one place a view asks "has anything I draw changed?"
+src/grouping.js            pure: which band a record belongs to under each grouping, and the bands in order
+src/lanes.js               the one file that decides what a lane is: the region lanes, an actor's, a place's, and where a bar goes in one
+src/panes.js               which of the three views is on screen and how the panes divide, from the state
+src/share.js               a record's own address on the atlas and in the form, and `parseEdit` for `<kind>/<id>`; nothing of what the reader did to get there
+src/intro.js               the card over the view on a first visit, and the "?" that brings it back; the only thing in localStorage
+src/density.js             pure: the strip under the lanes — how many events fall in each column of the part of the window the bars do not reach
+src/explanations.js        the explanation shards by period: which one an edge's prose is in, fetched when a card asks for it
+src/markdown.js            pure: the subset an entry's body may use, its citations and its record links; raw HTML is shown as the characters typed
+src/timeline-scale.js      pure: years ⇄ pixels for the timeline, and the ticks a span asks for
 src/state.js               { from, to, view, selected, source, place, actor, chain, horizon, layers, narrative, step } ⇄ URL; a null bound is "as far as the data goes"
 src/data.js                manifest → the spine (whole) → record text on demand; aliases, adjacency by edge and by relation, events by actor and by place, an event's point through its place, one geometry shard per year
 src/graph.js               consequences, ancestors, convergence, shortest paths outward; pure, ordered by type then confidence
@@ -136,19 +148,29 @@ src/map/map.js             SVG scaffold, pan/zoom, click into a cluster
 src/map/layers/land.js     coastlines;  layers/presences.js  territories;  layers/events.js  marks, clusters and chain lines
 src/graph-view/layout.js   pure: where every node goes — x is the year, y is bands and a barycentre pass
 src/graph-view/graph-view.js  the graph drawn: nodes, the five edge types, the window shaded, pan/zoom
+src/graph-view/arrangement.js  pure: which events an arrangement is of — the band, its margin and whatever the reader is holding beyond it — and the key it is filed under
+src/graph-view/layout-runner.js  which of the two paths a layout takes, and the fallback: the Worker above 600 events, the synchronous call below it and whenever a thread is absent or fails
+src/graph-view/layout-worker.js  the layout on a thread of its own; it fetches nothing, so no data root can be got wrong there
+src/graph-view/layout-message.js  pure: what crosses to that thread and back — ids, years, weights and lanes, and no records
 src/timeline.js            one lane per region; the window as a band with two handles; bars stack
 src/panel/panel.js         the shell: container, clicks, load token, what the cards share
 src/panel/event.js         one card each: event.js, source.js, place.js, actor.js, cluster.js, narrative.js;  horizon.js  the "led to by year X" section; the actor card also lists its relations, both ways round
+src/panel/sections.js      the shape every card shares: a collapsible section per question, its count in the header, and which one opens
 entry/<id>.html            GENERATED: the static rendering of a record that carries a body, canonical to entry.html?id=
+src/entry/entry.js         pure: a record's full entry as markup, from the record and what it cites;  preview.js  the same prose as one paragraph, for a card;  main.js  bootstrap for entry.html
 src/sources/main.js        bootstrap for sources.html;  bibliography.js  the list as markup, pure
 src/narratives/main.js     bootstrap for narratives.html;  list.js  the cards, grouped by the centuries each account crosses, pure
 src/phone.js               under 720px: what raises the panel's sheet over the view, what a drag of its grip ends as; the layout is one media query in style.css
 src/contribute/reorder.js  one row of an ordered list moved up or down, with Alt+arrow; the form and the review editor share it
 src/contribute/bundle.js   the pure half of the form: fields, bundle assembly, duplicate search
+src/contribute/picker.js   the record picker: a scan over every record of a kind, ranked, with the kind, the years, the place and the degree beside each name
 src/contribute/form.js     the form itself; submit.js copies the bundle and opens the issue
 src/contribute/main.js     bootstrap for contribute.html
 src/review/queue.js        pure: what is still unreviewed, with the validator's warnings against each;  sign.js  the signature, the retraction and what it carries;  save.js  which of the two paths a save takes;  citations.js  which citations somebody has checked against the source
 src/review/editor.js       one record in the contribution form's own fields, validated on every keystroke;  main.js  bootstrap for review.html
+src/review/claim.js        pure: who is reading a record now, when the claim expires, and taking one or letting it go
+src/review/history.js      pure: a record's versions from its committed states, and the diff between two of them
+src/review/row.js          one row of the queue as markup;  list.js  the windowed list under it, which draws the rows on screen and not the queue
 src/validate/schema.js     JSON Schema subset validator; fails closed on unknown keywords
 src/validate/rules.js      cross-record invariants 2–19 and the warnings; pure. `resolveId(id, universe)` is where a former id becomes the record it names, the way `resolve()` in data.js does
 src/validate/migrate.js    the migration chain: ordered { version, name, up, down }, pure, no fs; applied on read by tools/lib/read.mjs and to disk by tools/migrate/apply.mjs
@@ -160,9 +182,14 @@ src/util/simplify.js       Douglas-Peucker, quantization and ring pruning; the i
 src/util/window.js         a null bound is the data's own; what overlaps the window; the "map at Y" rule
 src/util/geo.js            point-in-polygon and nearest-lane region derivation
 src/util/esc.js  dom.js    esc() and safeUrl(); SVG/HTML element helpers
+src/util/memo.js           the caches: keyed, weak on the object they are about, and cleared with it
+src/util/viewport.js       pure: which events a map box holds, with what the reader is holding exempt from it
 src/style.css              azulejo tokens; every colour is a variable here
 tools/validate.mjs         CLI over core, plus the disk-only checks and --index
 tools/build-index.mjs      deterministic index: manifest + the hashed spine, search shard, citer directory, sources and review files; and, since H8, the prerendered pages — lib/prerender.mjs is their pure half
+tools/lib/history.mjs      each record's versions, from the commits that touched its file; a shallow clone is refused and the file says `revised` instead
+tools/lib/colour.mjs       the eight hues a territory may be drawn in, and the assignment no two neighbours share
+tools/screens.mjs          the screenshots, through headless Chromium's own command line; it finds the browser, and tests/browser.mjs asks it where
 tools/build-regions.mjs    Natural Earth → data/geo/
 tools/new-record.mjs       scaffold a record of any written kind; --new-place writes an event and its place at once
 tools/migrate-places.mjs   one-time: every event's `where` → a place record; kept as documentation
