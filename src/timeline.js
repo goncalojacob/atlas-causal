@@ -32,6 +32,7 @@ import { horizonBand } from './horizon.js';
 import { workingSet, heldSet } from './emphasis.js';
 import { walkOrSelect } from './chain.js';
 import { lanesFor, rowLanes, laneOf, barBox } from './lanes.js';
+import { largeEventsIn, bracketsIn } from './large.js';
 import { eventsInView } from './util/viewport.js';
 import { densityPath } from './density.js';
 
@@ -129,8 +130,8 @@ export function createTimeline(container, { atlas, state, createScale = createLi
   // <text> would swap one for the other on every render and keep nothing.
   const layers = {};
   for (const name of [
-    'lanes', 'laneLabels', 'ticks', 'tickLabels', 'band', 'strips',
-    'bars', 'badges', 'held', 'heldLabels', 'handles', 'handleLabels',
+    'lanes', 'laneLabels', 'bands', 'bandLabels', 'ticks', 'tickLabels', 'band', 'strips',
+    'brackets', 'bars', 'badges', 'held', 'heldLabels', 'handles', 'handleLabels',
   ]) {
     layers[name] = svg('g', { class: `layer layer-${name}` });
     root.appendChild(layers[name]);
@@ -601,6 +602,27 @@ export function createTimeline(container, { atlas, state, createScale = createLi
       }, { text: lane.label.length > 16 ? `${lane.label.slice(0, 15).trimEnd()}…` : lane.label });
     });
 
+    // Large events, under everything: a band the whole height of the drawing
+    // rather than a bar in one lane, because a world war is the ground the
+    // other events stand on and not one of them (large.js). It has no handles
+    // and its title is on the axis, so it is never mistaken for the window
+    // band — the one band on this drawing a reader can take hold of. The bar
+    // stays: the band is not a control, and an event a reader could no longer
+    // open or reach with the keyboard would be an event the timeline had
+    // hidden.
+    if (window) {
+      for (const { event } of largeEventsIn(near.filter((e) => overlaps(e.when, window)), atlas)) {
+        const box = barBox(event, scale, { openEnd: domain[1] });
+        into.bands.take('rect', {
+          x: box.x, y: AXIS_HEIGHT, width: box.width, height: Math.max(0, height - AXIS_HEIGHT),
+          class: 'large-band', 'aria-hidden': 'true',
+        });
+        into.bandLabels.take('text', {
+          x: box.x + 4, y: AXIS_HEIGHT - 22, class: 'large-band-label',
+        }, { text: event.title.length > 28 ? `${event.title.slice(0, 27).trimEnd()}…` : event.title });
+      }
+    }
+
     for (const tick of scale.ticks(Math.max(4, Math.floor((width - LABEL_WIDTH) / 90)))) {
       const x = scale.x(tick.value);
       into.ticks.take('line', { x1: x, y1: AXIS_HEIGHT - 6, x2: x, y2: height, class: 'tick' });
@@ -638,6 +660,29 @@ export function createTimeline(container, { atlas, state, createScale = createLi
         if (d) into.strips.take('path', { d, class: 'bar stub faded', 'aria-hidden': 'true' });
       }
     }
+    // A parent over its parts: a thin rule along the top edge of the lane they
+    // share, spanning them (large.js). Only where they do share one — a parent
+    // whose parts cross lanes is a large event and has the band above instead
+    // — and only where the lanes are named, since with no grouping the rows
+    // are packed and there is no vertical room for it (health review §5.2.4).
+    // Not a control: what an event is part of is read on its card.
+    if (s.group !== 'none') {
+      for (const { event, lane, parts } of bracketsIn(near, lanes, atlas)) {
+        const i = lanes.indexOf(lane);
+        if (i < 0) continue;
+        const boxes = parts.map((part) => barBox(part, scale, { openEnd: domain[1] }));
+        const y = AXIS_HEIGHT + i * laneHeight + 2;
+        into.brackets.take('line', {
+          x1: Math.min(...boxes.map((b) => b.x)),
+          x2: Math.max(...boxes.map((b) => b.x + b.width)),
+          y1: y,
+          y2: y,
+          class: 'bracket',
+          'data-parent': event.id,
+        }, { title: `${event.title} — the ${parts.length} event${parts.length === 1 ? '' : 's'} inside it` });
+      }
+    }
+
     const deferred = [];
     lanes.forEach((lane, i) => {
       for (const item of laneBars(into.bars, into.badges, lane, i, byLane.get(lane.id), s, window, actorIds, narrativeIds, pathIds, reachable, working.lensNear)) {

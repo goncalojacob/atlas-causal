@@ -892,6 +892,17 @@ svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align:
 .timeline .bar.in-horizon.far { opacity: 0.45; }
 .timeline .bar.in-horizon.on-path, .timeline .bar.in-horizon.selected { opacity: 1; }
 
+/* A large event: a band the whole height of the drawing rather than a bar in
+   one lane (large.js). Faint, because it is the ground the other events stand
+   on and not a mark competing with them; and with no handle and no cursor of
+   its own, so the only band a reader tries to grab is the window's. */
+.timeline .large-band { fill: var(--cobalt-faint); opacity: 0.5; pointer-events: none; }
+.timeline .large-band-label { fill: var(--ink-soft); font-size: 11px; pointer-events: none; }
+/* A parent over its parts, on the top edge of the lane they share. A rule and
+   not a bracket with legs: at fourteen pixels a lane the legs would reach the
+   bars underneath and read as a box drawn round them. */
+.timeline .bracket { stroke: var(--cobalt-soft); stroke-width: 2; pointer-events: none; }
+
 /* The window of time: a shaded band under the bars, a handle at each end
    over them. The band is the only time control the atlas has, so it is drawn
    as a control — the handles are solid cobalt bars with a visible grip, not

@@ -207,3 +207,62 @@ test('a state change updates the bars in place and does not rebuild them', { ski
     assert.ok(shape.children.includes('layer layer-bars'));
   }, { device: { width: 1280, height: 900, deviceScaleFactor: 1 } });
 });
+
+// --- a large event, and a parent over its parts -----------------------------
+//
+// A8 and A9. `data/` holds no `scope` and no `parent` yet, so this is on the
+// fixtures, where `fixture-event-f` is written `scope: regional` and holds two
+// events that fall in two lanes — large twice over, which is the case the band
+// exists for.
+test('a large event is a band the height of the drawing, under the bars and with no handle', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    // Opened on the large event itself, which is the only way to be sure of a
+    // bar to compare the band against: two of the fixtures' events fall on the
+    // same year in that lane and are drawn as one stack otherwise.
+    await open(page, url('?fixtures=1&group=region&selected=fixture-event-f'), READY);
+    await waitFor(page, 'return document.querySelectorAll("#timeline .layer-bands rect").length > 0;', 'the band');
+
+    const band = await page.eval(`
+      const svg = document.querySelector('#timeline svg.timeline');
+      const el = svg.querySelector('.layer-bands rect.large-band');
+      const bar = svg.querySelector('rect[data-id="fixture-event-f"]');
+      const label = svg.querySelector('.layer-bandLabels text.large-band-label');
+      const layers = [...svg.children].map((g) => g.getAttribute('class'));
+      return {
+        x: Number(el.getAttribute('x')),
+        y: Number(el.getAttribute('y')),
+        width: Number(el.getAttribute('width')),
+        height: Number(el.getAttribute('height')),
+        svgHeight: Number(svg.getAttribute('height')),
+        handles: el.hasAttribute('data-window'),
+        bands: svg.querySelectorAll('.layer-bands rect').length,
+        barX: bar ? Number(bar.getAttribute('x')) : null,
+        label: label ? label.textContent : null,
+        labelY: label ? Number(label.getAttribute('y')) : null,
+        order: layers.indexOf('layer layer-bands') < layers.indexOf('layer layer-bars'),
+      };`);
+    assert.equal(band.bands, 1, 'one band, for the one large event on the fixtures');
+    assert.equal(band.handles, false, 'a large event is not something to drag');
+    // From the top of the lanes to the bottom of the drawing: the whole
+    // timeline, which is what makes it the ground rather than a bar.
+    assert.equal(band.y + band.height, band.svgHeight, 'it reaches the bottom');
+    assert.ok(band.y < 60 && band.y > 0, `it starts under the axis (${band.y})`);
+    assert.equal(band.label, 'Fixture event F', 'and says which event it is');
+    assert.ok(band.labelY < 40, 'on the axis, above the lanes');
+    assert.ok(band.order, 'and under the bars');
+    // The bar is still there. The band is not a control — no title, no click,
+    // no place in the roving tab order — so taking the bar away would leave
+    // the record unreachable on this view and unreachable from the keyboard.
+    assert.equal(band.barX, band.x, 'the bar is still drawn, at the same years');
+  }, { device: { width: 1280, height: 700, deviceScaleFactor: 1 } });
+});
+
+test('no bracket where the parts cross lanes, and none at all with no grouping', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    const brackets = 'return document.querySelectorAll("#timeline .layer-brackets line").length;';
+    await open(page, url('?fixtures=1&group=region'), READY);
+    assert.equal(await page.eval(brackets), 0, 'the fixtures\' one parent is a large event, and has the band');
+    await open(page, url('?fixtures=1'), READY);
+    assert.equal(await page.eval(brackets), 0, 'and with no grouping there are no lanes to draw one on');
+  }, { device: { width: 1280, height: 700, deviceScaleFactor: 1 } });
+});
