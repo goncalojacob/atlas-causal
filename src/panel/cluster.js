@@ -6,9 +6,33 @@
 // stack of marks, and the only way to see the whole stack at once.
 
 import { esc } from '../util/esc.js';
-import { formatYear } from '../util/dates.js';
+import { formatYear, formatInterval } from '../util/dates.js';
+
+// The turns under one bar of a tenure strip (office.js). Not events, so it is
+// its own list: a tenure has no card, and what a row opens is the person who
+// held the post.
+function tenureListHtml(ctx, cluster) {
+  const rows = cluster.members.map(({ tenure }) => {
+    const person = ctx.atlas.actors.get(tenure.person) ?? null;
+    const who = person
+      ? `<button type="button" class="link" data-action="actor" data-id="${esc(person.id)}">${esc(person.name)}</button>`
+      : esc(tenure.person);
+    return `<li class="actor-row tenure-row" data-tenure="${esc(tenure.id)}">
+      <span class="row-what">${who}</span>
+      <span class="when">${esc(formatInterval(tenure.when))}</span>
+    </li>`;
+  });
+  const title = cluster.office?.title ?? cluster.office?.id ?? '';
+  return `<section class="cluster-list">
+    <h2>${cluster.members.length} turn${cluster.members.length === 1 ? '' : 's'} here
+      <span class="count"><button type="button" class="link" data-action="office" data-id="${esc(cluster.office?.id ?? '')}">${esc(title)}</button></span></h2>
+    <p class="hint">The strip draws these as one bar at this width. Choose one here.</p>
+    <ul class="actor-rows">${rows.join('')}</ul>
+  </section>`;
+}
 
 export function clusterHtml(ctx, cluster) {
+  if (cluster.on === 'tenures') return tenureListHtml(ctx, cluster);
   const members = cluster.members
     .map((m) => m.event)
     .sort((a, b) => ctx.startYear(a) - ctx.startYear(b) || (a.id < b.id ? -1 : a.id > b.id ? 1 : 0));

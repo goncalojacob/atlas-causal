@@ -12,6 +12,7 @@ import { formatInterval, formatYear, bounds } from '../util/dates.js';
 import { ACTOR_TYPE_LABEL } from './event.js';
 import { RELATION_LABEL, RELATION_GROUP_ORDER } from '../vocab.js';
 import { sectionHtml, openSection } from './sections.js';
+import { officeStripsSection } from './office.js';
 import { attributionHtml } from '../licensing.js';
 
 // What a relation is called from each end, and the order the groups are drawn
@@ -188,6 +189,12 @@ export function actorCardHtml(ctx, actor, { state = null, remembered = null } = 
     ? [successionSection, appearancesSection]
     : [appearancesSection, ...(successionSection ? [successionSection] : [])];
   if (relations) sections.push({ key: 'relations', label: 'Relations', ...relations });
+  // The posts that belong to this actor, each as a strip of its holders
+  // (office.js). Between the relations and the territory because it is the
+  // same kind of question — what this body is made of — asked of its own
+  // offices rather than of its links.
+  const offices = officeStripsSection(ctx, actor);
+  if (offices) sections.push(offices);
   if (territory) sections.push({ key: 'territory', label: 'Territory', ...territory });
   sections.push({
     key: 'sources',

@@ -21,7 +21,7 @@ import { chainEdges } from '../chain.js';
 import { identifiers, containerText } from '../citation.js';
 import { renderEventCard, drawnHtml } from './event.js';
 import { renderActorCard } from './actor.js';
-import { renderOfficeCard } from './office.js';
+import { renderOfficeCard, tenureClusterAt } from './office.js';
 import { renderPlaceCard, placeEventsSection, EVENTS_SECTION } from './place.js';
 import { renderSourceCard } from './source.js';
 import { clusterHtml } from './cluster.js';
@@ -139,6 +139,26 @@ export function createPanel(container, {
       case 'clear-office':
         state.set({ office: null });
         break;
+      // A post named on the card of the actor it belongs to. It keeps the
+      // actor, as choosing a place does: an office outranks an actor in the
+      // precedence, so the card changes and the highlight stays, and the
+      // office's own card is the way back to it.
+      case 'office':
+        state.set({ office: el.dataset.id, selected: null, chain: [] });
+        break;
+      // A stack of turns under one bar of a tenure strip. The strip's own
+      // grouping is pure (office.js), so it is done again here from the
+      // office and the cluster's key rather than kept anywhere: what is under
+      // the bar is not state, exactly as a cluster on the map is not.
+      case 'tenure-cluster': {
+        const office = atlas.offices?.get(el.dataset.office) ?? null;
+        const actor = office ? atlas.actors.get(office.of) ?? null : null;
+        const cluster = office && actor
+          ? tenureClusterAt(atlas, actor, office, el.dataset.cluster)
+          : null;
+        if (cluster) showCluster(cluster);
+        break;
+      }
       case 'clear-actor':
         state.set({ actor: null });
         break;

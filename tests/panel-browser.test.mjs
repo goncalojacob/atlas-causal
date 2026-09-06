@@ -625,3 +625,41 @@ test('an office opens on a card that names the actor, the category and its holde
     await open(page, url('?office=no-such-office'), missing);
   });
 });
+
+// A5: the strip is drawn without measuring anything — an SVG a thousand units
+// across that throws its aspect ratio away — so what only a browser can say
+// is that it really does fill the pane and that a bar can be clicked.
+test('the actor card draws one tenure strip per office, and a bar opens the holder', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await open(page, url('?actor=portugal'));
+    // The section is collapsed like every other; open it the way a reader
+    // would, through its own header.
+    await page.eval('document.querySelector(\'.panel [data-action="section"][data-section="offices"]\').click();');
+    await waitFor(page, 'return document.querySelectorAll(".panel .office-row").length === 3;', 'three offices');
+    const strip = await page.eval(`const rows = [...document.querySelectorAll('.panel .office-row')];
+      const svg = document.querySelector('.panel .tenure-strip svg');
+      return {
+        offices: rows.map((r) => r.querySelector('[data-action="office"]').dataset.id),
+        holders: [...document.querySelectorAll('.panel .tenure-bar')].map((b) => b.dataset.tenure),
+        width: Math.round(svg.getBoundingClientRect().width),
+        height: Math.round(svg.getBoundingClientRect().height),
+        pane: Math.round(svg.parentElement.getBoundingClientRect().width),
+        empty: document.querySelectorAll('.panel .strip-empty').length,
+      };`);
+    assert.deepEqual(strip.offices, ['monarch-of-portugal', 'president-of-portugal', 'prime-minister-of-portugal']);
+    assert.deepEqual(strip.holders, ['salazar-prime-minister-1932', 'marcelo-caetano-prime-minister-1968']);
+    assert.equal(strip.empty, 2, 'the two posts with no holder say so');
+    // It fills whatever width the pane has and keeps the height it was drawn
+    // at: that is the whole of "no card measures its container".
+    assert.equal(strip.width, strip.pane);
+    assert.ok(strip.width > 100, `the strip is ${strip.width}px wide`);
+    assert.equal(strip.height, 24);
+
+    // And a bar is a way to the person, not to the tenure. A `<rect>` has no
+    // `click()` of its own — that is HTMLElement's — so the event is
+    // dispatched, which is what a real click does anyway: the panel listens
+    // on its container and the click bubbles out of the SVG to it.
+    await page.eval('document.querySelector(\'.panel .tenure-bar\').dispatchEvent(new MouseEvent("click", { bubbles: true }));');
+    await waitFor(page, 'return /actor=salazar/.test(location.search);', 'the holder in the URL');
+  });
+});

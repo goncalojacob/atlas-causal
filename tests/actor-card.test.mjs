@@ -148,7 +148,8 @@ test('the actor card is sections with counts, opening on where it appears', asyn
   const ctx = context(atlas);
   const html = actorCardHtml(ctx, atlas.actors.get('fixture-polity-three'));
   const keys = [...html.matchAll(/<section class="card-section(?: open)?" data-section="([a-z-]+)">/g)].map((m) => m[1]);
-  assert.deepEqual(keys, ['appearances', 'relations', 'territory', 'sources']);
+  // `offices` since M30b-1: the polity owns one post, so it gets one strip.
+  assert.deepEqual(keys, ['appearances', 'relations', 'offices', 'territory', 'sources']);
   assert.match(html, /<section class="card-section open" data-section="appearances">/);
   assert.equal(count(html, 'appearances'), String((atlas.eventsByActor.get('fixture-polity-three') ?? []).length));
   assert.equal(count(html, 'sources'), String(atlas.citationCount('actor', 'fixture-polity-three')));
