@@ -4,13 +4,13 @@
     "edges": 10,
     "events": 12,
     "narratives": 1,
-    "offices": 0,
+    "offices": 1,
     "places": 11,
     "presences": 3,
     "regions": 3,
     "relations": 3,
     "sources": 4,
-    "tenures": 0
+    "tenures": 3
   },
   "explanationShards": [
     {
@@ -20,12 +20,12 @@
     }
   ],
   "files": {
-    "citers": "index/citers-b0536ac1ae85",
+    "citers": "index/citers-cf0463a9f7cd",
     "history": "index/history",
-    "review": "index/review-6f7463071b4c.json",
-    "search": "index/search-5349c539aea4.json",
-    "sources": "index/sources-208084705a70.json",
-    "spine": "index/spine-8c7fd17d92e9.json"
+    "review": "index/review-50d7573f3366.json",
+    "search": "index/search-3d2b3a2f8d5c.json",
+    "sources": "index/sources-be024864c060.json",
+    "spine": "index/spine-0110369a00dd.json"
   },
   "land": [],
   "licenses": {

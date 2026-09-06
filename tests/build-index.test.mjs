@@ -116,7 +116,7 @@ test('manifest names the hashed files, counts, lanes and land', async () => {
   const built = await buildIndex(FIXTURE_DATA);
   const manifest = JSON.parse(built.files['manifest.json']);
   assert.equal(manifest.schema, 1);
-  assert.deepEqual(manifest.counts, { events: 12, edges: 10, sources: 4, actors: 4, presences: 3, places: 11, relations: 3, offices: 0, tenures: 0, narratives: 1, regions: 3 });
+  assert.deepEqual(manifest.counts, { events: 12, edges: 10, sources: 4, actors: 4, presences: 3, places: 11, relations: 3, offices: 1, tenures: 3, narratives: 1, regions: 3 });
   assert.match(manifest.files.spine, /^index\/spine-[0-9a-f]{12}\.json$/);
   assert.match(manifest.files.sources, /^index\/sources-[0-9a-f]{12}\.json$/);
   assert.ok(Object.hasOwn(built.files, path.basename(manifest.files.spine)));

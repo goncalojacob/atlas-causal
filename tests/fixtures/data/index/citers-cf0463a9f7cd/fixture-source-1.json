@@ -149,6 +149,12 @@
       "id": "fixture-polity-four--fixture-polity-three--regime-of",
       "kind": "relation",
       "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "fixture-tenure-one",
+      "kind": "tenure",
+      "locator": null
     }
   ],
   "id": "fixture-source-1",

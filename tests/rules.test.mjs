@@ -282,10 +282,12 @@ test('rule 11: a retired actor cannot be referenced by an active event', async (
   // A relation is a reference like any other: an active one naming a retired
   // actor is the same error from both ends.
   assert.ok(hits.some((e) => e.id === 'fixture-actor-one--fixture-actor-two--led' && e.path === '/from'), messages(r));
-  // Retired and unreferenced is fine — by no event and by no relation.
+  // Retired and unreferenced is fine — by no event, no relation and no
+  // tenure, the third kind of reference an actor can be named by.
   r = await run((fx) => {
     fx.byId['fixture-actor-one'].status = 'retracted';
     fx.records = fx.records.filter((rec) => rec.kind !== 'relation' || (rec.from !== 'fixture-actor-one' && rec.to !== 'fixture-actor-one'));
+    fx.records = fx.records.filter((rec) => rec.kind !== 'tenure' || rec.person !== 'fixture-actor-one');
     for (const rec of fx.records) {
       if (rec.kind === 'event') rec.actors = (rec.actors ?? []).filter((a) => a.actor !== 'fixture-actor-one');
     }

@@ -476,7 +476,7 @@ async function main(argv) {
   }
   await writeIndex(dataDir, built);
   const c = built.topology;
-  console.log(`index written to ${path.relative(process.cwd(), path.join(dataDir, 'index')) || '.'}: ${c.events.length} events, ${c.edges.length} edges, ${c.actors.length} actors, ${c.relations.length} relations, ${c.narratives.length} narratives, ${c.places.length} places, ${c.presences.length} presences, ${c.sources.length} sources`);
+  console.log(`index written to ${path.relative(process.cwd(), path.join(dataDir, 'index')) || '.'}: ${c.events.length} events, ${c.edges.length} edges, ${c.actors.length} actors, ${c.relations.length} relations, ${c.offices.length} offices, ${c.tenures.length} tenures, ${c.narratives.length} narratives, ${c.places.length} places, ${c.presences.length} presences, ${c.sources.length} sources`);
   if (siteDir) {
     await writeSite(siteDir, built.pages);
     const report = pageReport(built.pages);

@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "id": "fixture-tenure-one",
+  "kind": "tenure",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Fixture Author",
+      "github": "fixture-author"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-01-01",
+  "revised": null,
+  "sources": [
+    {
+      "source": "fixture-source-1",
+      "locator": null
+    }
+  ],
+  "person": "fixture-actor-one",
+  "office": "fixture-office-one",
+  "when": {
+    "start": 1200,
+    "end": 1210
+  },
+  "startedBy": "fixture-event-a"
+}

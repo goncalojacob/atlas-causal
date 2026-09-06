@@ -41,6 +41,12 @@
       "id": "fixture-actor-one--fixture-actor-two--member-of",
       "kind": "relation",
       "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "fixture-tenure-two",
+      "kind": "tenure",
+      "locator": null
     }
   ],
   "id": "fixture-source-2",

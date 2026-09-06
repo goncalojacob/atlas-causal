@@ -11,6 +11,12 @@
       "id": "fixture-event-g--fixture-event-t--caused",
       "kind": "edge",
       "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "fixture-tenure-three",
+      "kind": "tenure",
+      "locator": null
     }
   ],
   "id": "fixture-source-3",
