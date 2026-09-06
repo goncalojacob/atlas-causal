@@ -24,6 +24,7 @@ test('parse and format round trip', () => {
     layers: ['events'],
     narrative: null,
     step: 0,
+    walk: null,
     bbox: null,
   };
   const search = formatState(state);
@@ -105,7 +106,7 @@ test('the store merges patches and notifies', () => {
     from: null, to: 1220, view: 'map', focus: null, group: 'none', lanes: [],
     selected: 'fixture-event-a', source: null,
     place: null, actor: null, chain: [], horizon: null, layers: ['land', 'territories', 'events'],
-    narrative: null, step: 0, bbox: null,
+    narrative: null, step: 0, walk: null, bbox: null,
   });
 });
 
@@ -545,4 +546,24 @@ test('a URL that lands on neither neighbour starts the trail again', () => {
   win.listeners.popstate();
   assert.deepEqual(store.trail(), { back: null, forward: null });
   assert.equal(store.get().selected, 'zzz');
+});
+
+// A generated walk lives in the session and never in `data/`: a stitched path
+// is itself a claim, and an unsigned claim does not enter the corpus (plan
+// decision 7, review finding 8). H7 reserves the parameter — parsed so that it
+// survives a state write, and nothing derives anything from it yet.
+test('?walk= is reserved: parsed, carried, and never a record id it makes up', () => {
+  assert.equal(parseState('?walk=why-is-angola-poor').walk, 'why-is-angola-poor');
+  assert.equal(parseState('?walk=../secret').walk, null);
+  assert.equal(parseState('?walk=Not+A+Slug').walk, null);
+  assert.equal(parseState('').walk, null);
+  assert.equal(formatState({ ...defaultState(), walk: 'why-is-angola-poor' }), '?walk=why-is-angola-poor');
+  assert.equal(formatState({ ...defaultState() }), '');
+  // Reading mode keeps its two parameters and takes the walk with it: a
+  // generated path is read as a narrative is, and the derived selection, chain
+  // and window stay out of the address bar either way.
+  assert.equal(
+    formatState({ ...defaultState(), narrative: 'n', step: 2, walk: 'w', selected: 'e' }),
+    '?narrative=n&step=2&walk=w',
+  );
 });

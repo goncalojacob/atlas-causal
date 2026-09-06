@@ -39,6 +39,34 @@ test('a step resolves to the record it is about', async () => {
   assert.equal(resolveRef(atlas, 'nothing-here').kind, null);
 });
 
+// Since H7 a step may name an actor, a relation or a presence, so that a walk
+// can say "and this is the body that did it" without inventing an event for it
+// (health review B, finding 18). None of the three carries an event, so the
+// views draw nothing new and the chain breaks there — which is what a step
+// that is not a link already did.
+test('a step may name an actor, a relation or a presence, and none of them is an event', async () => {
+  const { atlas, narrative } = await walk();
+  const actor = resolveRef(atlas, 'fixture-actor-one');
+  assert.equal(actor.kind, 'actor');
+  assert.equal(actor.record.id, 'fixture-actor-one');
+  assert.equal(actor.event, null);
+
+  const relation = resolveRef(atlas, 'fixture-actor-one--fixture-actor-two--led');
+  assert.equal(relation.kind, 'relation');
+  assert.equal(relation.record.type, 'led');
+  assert.equal(relation.event, null);
+
+  const presence = resolveRef(atlas, 'fixture-polity-four-1120');
+  assert.equal(presence.kind, 'presence');
+  assert.equal(presence.record.actor, 'fixture-polity-four');
+  assert.equal(presence.event, null);
+
+  // And none of them puts an event into the walked set or into the chain.
+  const withActor = { ...narrative, steps: [{ ref: 'fixture-event-a' }, { ref: 'fixture-actor-one' }] };
+  assert.deepEqual([...narrativeEventIds(atlas, withActor)], ['fixture-event-a']);
+  assert.deepEqual(chainAt(atlas, withActor, 1), []);
+});
+
 test('the chain is the longest contiguous run of edges ending at the step', async () => {
   const { atlas, narrative } = await walk();
   // Step 0 is an event: a selection with nothing walked to reach it.

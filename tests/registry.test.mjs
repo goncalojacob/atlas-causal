@@ -24,6 +24,7 @@ import {
   EDGE_TYPES, EDGE_TYPE_IDS, RELATION_TYPES, RELATION_TYPE_IDS,
   EDGE_ID, RELATION_ID, FOCUS, GROUPS, FOCUS_KINDS,
   RELATION_ENDPOINTS, RELATION_GROUP_ORDER, ACYCLIC_RELATION_TYPES,
+  NARRATIVE_STEP_REF,
 } from '../src/vocab.js';
 import { KIND_DIRS as READ_KIND_DIRS } from '../tools/lib/read.mjs';
 import { SCHEMA_FILES, TOOL_SIDE } from '../src/validate/schemas.js';
@@ -130,8 +131,16 @@ test('the vocabularies equal the enums in schema/**', async () => {
   // out. Same types, in the same order, in all four places.
   assert.deepEqual(typesInPattern(edge.properties.id.pattern), [...EDGE_TYPE_IDS]);
   assert.deepEqual(typesInPattern(relation.properties.id.pattern), [...RELATION_TYPE_IDS]);
+  // A step's ref names an edge or, since H7, a relation, so its pattern
+  // carries both vocabularies — the edges first, in their own order, then the
+  // relations in theirs.
   const step = narrative.properties.steps.items.properties.ref.pattern;
-  assert.deepEqual(typesInPattern(step), [...EDGE_TYPE_IDS]);
+  assert.deepEqual(typesInPattern(step), [...EDGE_TYPE_IDS, ...RELATION_TYPE_IDS]);
+  assert.deepEqual(typesInPattern(NARRATIVE_STEP_REF.source), [...EDGE_TYPE_IDS, ...RELATION_TYPE_IDS]);
+  for (const type of [...EDGE_TYPE_IDS, ...RELATION_TYPE_IDS]) {
+    assert.ok(NARRATIVE_STEP_REF.test(`a--b--${type}`), type);
+    assert.ok(new RegExp(step).test(`a--b--${type}`), type);
+  }
 
   // And the built patterns accept exactly the ids the schemas' do.
   for (const type of EDGE_TYPE_IDS) {

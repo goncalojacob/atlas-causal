@@ -1,5 +1,5 @@
-// One state object, { from, to, view, focus, group, lanes, selected, source,
-// place, actor, chain, horizon, layers, narrative, step, bbox },
+// One state object, { from, to, view, focus, focusAll, group, lanes, selected,
+// source, place, actor, chain, horizon, layers, narrative, step, walk, bbox },
 // mirrored to
 // the URL query string so every view is a shareable link. Knows nothing
 // about SVG or data files. The pure parse/format pair is separate from the
@@ -91,6 +91,7 @@ export function defaultState() {
     from: null, to: null, view: 'map', focus: null, group: 'none', lanes: [],
     selected: null, source: null, place: null,
     actor: null, chain: [], horizon: null, layers: [...LAYERS], narrative: null, step: 0,
+    walk: null,
     bbox: null,
   };
 }
@@ -187,6 +188,16 @@ export function parseState(search, defaults = defaultState()) {
     const step = Number(params.get('step'));
     state.step = Number.isInteger(step) && step >= 0 ? step : 0;
   }
+  // Reserved, and parsed so that it survives a state write: a generated walk
+  // that the reader has not saved, held for the session only and never
+  // committed (plan decision 7, review finding 8). Nothing derives anything
+  // from it yet — the Why mode (M35) is what will — and it is deliberately
+  // *not* a directory under `data/`: a stitched path is itself a claim, and
+  // an unsigned claim does not enter the corpus.
+  if (params.has('walk')) {
+    const id = params.get('walk');
+    if (SLUG.test(id)) state.walk = id;
+  }
   if (params.has('focus') && FOCUS.test(params.get('focus'))) state.focus = params.get('focus');
   if (params.has('group') && GROUPS.includes(params.get('group'))) state.group = params.get('group');
   // An explicit lane list is the reader's order, so duplicates are dropped
@@ -216,12 +227,14 @@ export function formatState(state, search = '') {
   if (state.narrative) {
     params.set('narrative', state.narrative);
     params.set('step', String(state.step ?? 0));
+    if (state.walk) params.set('walk', state.walk);
     const reading = params.toString().replace(/%2C/g, ',').replace(/%2D/g, '-').replace(/%3A/g, ':');
     return reading ? `?${reading}` : '';
   }
   if (state.from !== null) params.set('from', String(state.from));
   if (state.to !== null) params.set('to', String(state.to));
   if (state.view && state.view !== 'map') params.set('view', state.view);
+  if (state.walk) params.set('walk', state.walk);
   if (state.focus) params.set('focus', state.focus);
   if (state.group && state.group !== 'none') params.set('group', state.group);
   // A lane list without a grouping to belong to would be an instruction with

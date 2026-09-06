@@ -78,16 +78,35 @@ export const DEPENDENCY_KINDS = Object.freeze(['colony', 'protectorate', 'mandat
 // writes is CC BY-SA like the rest of data/.
 export const ALLOWED_LICENSES = licensesOf();
 
-// A narrative walks events and edges and nothing else, so a step's ref is one
-// of two shapes. The edge id is tried first: an edge id also matches SLUG's
-// shape nowhere, but the two vocabularies are kept apart here for the same
-// reason vocab.js builds the two patterns separately — anything that turns a
-// ref into a path has to know which kind it is holding.
-export function refKind(ref) {
-  if (typeof ref !== 'string') return null;
-  if (EDGE_ID.test(ref)) return 'edge';
-  if (RELATION_ID.test(ref)) return null;
-  return SLUG.test(ref) ? 'event' : null;
+// The kinds a narrative step's ref may name (vocab.js). Two shapes and five
+// kinds: a three-part id is an edge or a relation, and the two vocabularies
+// are kept apart here for the same reason vocab.js builds the two patterns
+// separately — anything that turns a ref into a path has to know which kind it
+// is holding. A bare slug is an event, an actor or a presence, and the shape
+// cannot say which: only the atlas can, so this returns all three and the
+// caller looks each up in order. An event first, because that is what almost
+// every step is.
+//
+// Since H7 a walk may name an actor, a relation or a presence, so that a step
+// can say "and this is the body that did it" without inventing an event for
+// it (health review B, finding 18). A source and a place are still not kinds a
+// walk names: a narrative cites its books in `sources` like every other
+// record, and a place is where an event was, not a step of an argument.
+export function refKinds(ref) {
+  if (typeof ref !== 'string') return [];
+  if (EDGE_ID.test(ref)) return ['edge'];
+  if (RELATION_ID.test(ref)) return ['relation'];
+  return SLUG.test(ref) ? ['event', 'actor', 'presence'] : [];
+}
+
+// The record a step names, and which kind it turned out to be; null when the
+// ref names nothing in the universe. `lookup` is the rules' own resolver.
+export function walkedRef(ref, lookup) {
+  for (const kind of refKinds(ref)) {
+    const entry = lookup(ref, kind);
+    if (entry) return { kind, entry };
+  }
+  return null;
 }
 
 // A narrative is a walk, not a label: two steps is the fewest that can say
@@ -496,9 +515,8 @@ export function checkRules(records, topology = {}, { universe: prebuilt = null }
     }
     if (r.kind === 'narrative') {
       (Array.isArray(r.steps) ? r.steps : []).forEach((step, i) => {
-        const kind = refKind(step?.ref);
-        if (!kind || !lookup(step.ref, kind)) {
-          error(3, r, `/steps/${i}/ref`, `"${step?.ref}" is neither an event nor an edge`);
+        if (!walkedRef(step?.ref, lookup)) {
+          error(3, r, `/steps/${i}/ref`, `"${step?.ref}" is not an event, a link, an actor, a relation or a presence`);
         }
       });
     }
@@ -837,10 +855,9 @@ export function checkRules(records, topology = {}, { universe: prebuilt = null }
     // rewrite the step.
     if (r.kind === 'narrative' && r.status === 'active') {
       (Array.isArray(r.steps) ? r.steps : []).forEach((step, i) => {
-        const kind = refKind(step?.ref);
-        const walked = kind ? lookup(step.ref, kind) : null;
-        if (walked && walked.status !== 'active') {
-          error(11, r, `/steps/${i}/ref`, `an active narrative cannot walk the ${walked.status} ${kind} "${walked.id}"`);
+        const found = walkedRef(step?.ref, lookup);
+        if (found && found.entry.status !== 'active') {
+          error(11, r, `/steps/${i}/ref`, `an active narrative cannot walk the ${found.entry.status} ${found.kind} "${found.entry.id}"`);
         }
       });
     }

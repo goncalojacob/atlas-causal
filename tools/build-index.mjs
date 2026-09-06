@@ -18,6 +18,7 @@ import { checkRules } from '../src/validate/rules.js';
 import { createRegionDeriver } from '../src/util/geo.js';
 import { degreesOf, digestOf, isDraft, KIND_ORDER } from '../src/review/queue.js';
 import { buildSearchIndex } from '../src/search.js';
+import { explanationShards, shardName } from '../src/explanations.js';
 import { licensingTable } from '../src/licensing.js';
 import { readRecords, readRegions, readRegionPolygons, readLandFiles, readPresenceShards, paletteFile } from './lib/read.mjs';
 import { recordHistories, HISTORY_DIR } from './lib/history.mjs';
@@ -31,7 +32,9 @@ export const DEFAULT_DATA = path.join(ROOT, 'data');
 // served under (h3a-brief, A7). One hash over the directory buys both.
 // `review-<kind>-<hash>.json` is the queue's per-kind shard; the plain
 // `review-<hash>.json` beside it is the summary that names them (H6b).
-const HASHED = /^(?:spine|search|sources|review)-(?:[a-z]+-)?[0-9a-f]{12}\.json$/;
+// `explanations-<from>-<to>-<hash>.json` is the period shard of H7, whose
+// middle part is two years and may carry a minus sign.
+const HASHED = /^(?:(?:spine|search|sources|review)-(?:[a-z]+-)?|explanations--?\d+--?\d+-)[0-9a-f]{12}\.json$/;
 const HASHED_DIR = /^citers-[0-9a-f]{12}$/;
 
 // Deep copy with keys sorted by UTF-16 code unit (Array.prototype.sort's
@@ -116,6 +119,18 @@ export async function buildIndex(dataDir = DEFAULT_DATA, prepared = {}) {
     schema: 1,
     entries: buildSearchIndex(topology).map((entry) => ({ ...entry, status: 'active' })),
   });
+
+  // The links' arguments, sharded by period (src/explanations.js). Read off
+  // the records rather than off the topology, which drops `explanation`
+  // because nothing that draws a line needs it — and that is the point: this
+  // is for whatever reads a *path* and would otherwise fetch one file per
+  // step (health review B, finding 18).
+  const eventsById = new Map(topology.events.map((e) => [e.id, e]));
+  const explanations = explanationShards(records.filter((r) => r.kind === 'edge'), eventsById)
+    .map((shard) => {
+      const text = serialize({ schema: 1, ...shard });
+      return { from: shard.from, to: shard.to, name: shardName(shard, hashOf(text)), text };
+    });
 
   // What review.html needs and the spine does not carry: which records
   // still have nobody's name on them, and what the rules say about each. The
@@ -204,6 +219,9 @@ export async function buildIndex(dataDir = DEFAULT_DATA, prepared = {}) {
     // The territory shards, in year order. The site loads the one that
     // covers the year on the slider and nothing else.
     presenceShards,
+    // The links' arguments, in year order. Fetched in bulk by whatever reads
+    // a path — never at load, and never to draw anything.
+    explanationShards: explanations.map(({ from, to, name }) => ({ file: `index/${name}`, from, to })),
     // The hue each actor's territory is drawn in, when there is a palette to
     // draw from: written by tools/build-palette.mjs, not by this tool, and
     // named here so the site fetches it in one request with the rest.
@@ -225,6 +243,7 @@ export async function buildIndex(dataDir = DEFAULT_DATA, prepared = {}) {
       [sourcesName]: sourcesText,
       [reviewName]: reviewText,
       ...Object.fromEntries(shards.map(({ name, text }) => [name, text])),
+      ...Object.fromEntries(explanations.map(({ name, text }) => [name, text])),
       ...Object.fromEntries(citerEntries),
       ...Object.fromEntries(historyEntries),
     },

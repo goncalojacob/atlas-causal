@@ -11,6 +11,7 @@ import { esc } from '../util/esc.js';
 import { formatInterval } from '../util/dates.js';
 import { narrativeSteps, readingNarrative, clampStep } from '../narrative.js';
 import { TYPE_LABEL, badge } from './event.js';
+import { RELATION_LABEL } from '../vocab.js';
 
 function authorsLine(narrative) {
   const names = (narrative.authors ?? []).map((a) => a.name).filter(Boolean);
@@ -36,6 +37,21 @@ export function partOfHtml(ctx, id, { bare = false } = {}) {
   return bare ? inner : `<section class="part-of"><h2>Part of <span class="count">${list.length}</span></h2>${inner}</section>`;
 }
 
+// What the walk calls a step, one line, for the list at the foot of the card.
+// An edge is named by the event it arrives at, which is what it always was;
+// the three kinds H7 added are named by themselves, and a ref that resolves to
+// nothing is drawn as the ref, so a gap in a walk says which id it is a gap in.
+export function stepLabel(ctx, step) {
+  if (step.event) return step.event.title;
+  if (step.kind === 'actor') return step.record.name ?? step.ref;
+  if (step.kind === 'presence') return ctx.atlas.actors.get(step.record.actor)?.name ?? step.record.actor;
+  if (step.kind === 'relation') {
+    const name = (id) => ctx.atlas.actors.get(id)?.name ?? id;
+    return `${name(step.record.from)} — ${RELATION_LABEL[step.record.type]?.out ?? step.record.type} → ${name(step.record.to)}`;
+  }
+  return step.ref;
+}
+
 // One step: the record it is about, drawn as the panel draws that kind
 // elsewhere. The prose above it is the narrator's; this is the atlas's.
 function stepRecordHtml(ctx, resolved) {
@@ -58,6 +74,43 @@ function stepRecordHtml(ctx, resolved) {
       <div data-slot="step-record"><p class="muted">Loading…</p></div>
     </section>`;
   }
+  // Since H7 a step may name an actor, a relation or a presence. None of the
+  // three is an event, so the views draw nothing new for it and the card says
+  // what it is out of the topology alone: an actor's card and a relation's
+  // two ends are already in hand, and a presence carries no text at all.
+  if (resolved.kind === 'actor') {
+    const actor = resolved.record;
+    return `<section class="step-record">
+      <p class="edge-head">
+        <button type="button" class="link" data-action="actor" data-id="${esc(actor.id)}">${esc(actor.name ?? actor.id)}</button>
+        <span class="when">${esc(formatInterval(actor.when))}</span>
+      </p>
+      <p class="hint">An actor, not an event: this step is about who, not about what happened.</p>
+    </section>`;
+  }
+  if (resolved.kind === 'relation') {
+    const relation = resolved.record;
+    const name = (id) => esc(ctx.atlas.actors.get(id)?.name ?? id);
+    const label = RELATION_LABEL[relation.type]?.out ?? relation.type;
+    return `<section class="step-record">
+      <p class="edge-head"><span class="arrow">${name(relation.from)} — ${esc(label)} → ${name(relation.to)}</span>
+        <span class="when">${esc(formatInterval(relation.when))}</span></p>
+      ${relation.note ? `<p class="muted">${esc(relation.note)}</p>` : ''}
+      <p class="hint">A link between actors, not between events.</p>
+    </section>`;
+  }
+  if (resolved.kind === 'presence') {
+    const presence = resolved.record;
+    const held = esc(ctx.atlas.actors.get(presence.actor)?.name ?? presence.actor);
+    return `<section class="step-record">
+      <p class="edge-head">
+        <button type="button" class="link" data-action="actor" data-id="${esc(presence.actor)}">${held}</button>
+        <span class="when">${esc(formatInterval(presence.when))}</span>
+      </p>
+      ${presence.capital ? `<p class="muted">${esc(presence.capital.label)}</p>` : ''}
+      <p class="hint">Ground held, not an event: what the map draws for this actor in those years.</p>
+    </section>`;
+  }
   return `<section class="step-record"><p class="notice">This step names <code>${esc(resolved.ref)}</code>, which is not in the atlas.</p></section>`;
 }
 
@@ -68,7 +121,7 @@ export function renderNarrativeCard(ctx, { container, narrative, state, mine }) 
   const total = steps.length;
 
   const walk = steps.map((step, i) => `<li class="step ${i === index ? 'current' : ''} ${i < index ? 'walked' : ''}">
-    <button type="button" class="link" data-action="narrative-step" data-step="${i}">${esc(step.event?.title ?? step.ref)}</button>
+    <button type="button" class="link" data-action="narrative-step" data-step="${i}">${esc(stepLabel(ctx, step))}</button>
   </li>`);
 
   container.innerHTML = `

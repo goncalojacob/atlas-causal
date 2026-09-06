@@ -52,9 +52,9 @@
         "additionalProperties": false,
         "properties": {
           "ref": {
-            "description": "The record this step is about: an event id, or an edge id in its from--to--type shape. Nothing else — a narrative walks the graph and does not annotate sources or actors.",
+            "description": "The record this step is about: an event, an actor or a presence by its id, or an edge or a relation in its from--to--type shape. Not a source and not a place — a narrative walks the graph and cites its books in `sources` like every other record. Which kind a bare id names is decided by the atlas and never by this pattern; rule 3 is what checks that it names one at all.",
             "type": "string",
-            "pattern": "^[a-z0-9]+(-[a-z0-9]+)*(--[a-z0-9]+(-[a-z0-9]+)*--(caused|enabled|reacted-to|precondition-of|inspired))?$",
+            "pattern": "^[a-z0-9]+(-[a-z0-9]+)*(--[a-z0-9]+(-[a-z0-9]+)*--(caused|enabled|reacted-to|precondition-of|inspired|regime-of|succeeded|member-of|part-of|led|allied-with))?$",
             "maxLength": 260
           },
           "text": {

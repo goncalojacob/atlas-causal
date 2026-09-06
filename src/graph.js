@@ -206,6 +206,81 @@ export function reachableBy(adj, id, horizon) {
   return results;
 }
 
+// ─── a neighbourhood, whole ────────────────────────────────────────────────
+//
+// Everything within `depth` steps of a set of events, in both directions, with
+// the records that hang off it: the events, the edges *between* those events,
+// the actors those events name and the relations between those actors. One
+// answer rather than four walks, because the three things that want it —
+// the lens's dimmed ring (lens.js), the Why mode the plan reserves (M35) and
+// a narrative writer reading a path (health review B, finding 18) — each need
+// all four and none of them can assemble the set twice and be sure it is the
+// same set.
+//
+// `depth` is in hops over active edges and is symmetric: a cause two steps
+// back is as much part of the neighbourhood as a consequence two steps on.
+// Depth 0 is the seeds themselves, which is a real question — "the edges
+// among exactly these" — and not an empty answer.
+//
+// The atlas is the argument rather than the adjacency because actors and
+// relations are not in the adjacency; a test may hand it a literal with
+// `events` and `edges` and no adjacency at all, and one is built for it.
+// The real atlas always carries its own, so nothing is built per call there.
+function adjacencyOf(atlas) {
+  if (atlas.adjacency) return atlas.adjacency;
+  return buildAdjacency([...atlas.events.values()], [...atlas.edges.values()]);
+}
+
+const byStartThenId = (a, b) => startOf(a) - startOf(b)
+  || (a.id < b.id ? -1 : a.id > b.id ? 1 : 0);
+
+export function subgraph(atlas, ids, depth = 1) {
+  const adj = adjacencyOf(atlas);
+  const depths = new Map();
+  const queue = [];
+  for (const id of ids) {
+    const event = adj.events.get(id);
+    if (!event || event.status !== 'active' || depths.has(id)) continue;
+    depths.set(id, 0);
+    queue.push(id);
+  }
+  for (let at = 0; at < queue.length; at += 1) {
+    const id = queue[at];
+    const out = depths.get(id);
+    if (out >= depth) continue;
+    for (const direction of ['out', 'in']) {
+      for (const edge of adj[direction].get(id) ?? []) {
+        const next = direction === 'out' ? edge.to : edge.from;
+        if (depths.has(next)) continue;
+        depths.set(next, out + 1);
+        queue.push(next);
+      }
+    }
+  }
+
+  const events = [...depths.keys()].map((id) => adj.events.get(id)).sort(byStartThenId);
+  // Only the edges with both ends inside: an edge with one end outside is a
+  // line into nothing, and the reader was told the neighbourhood ends here.
+  const edges = [];
+  for (const id of depths.keys()) {
+    for (const edge of adj.out.get(id) ?? []) if (depths.has(edge.to)) edges.push(edge);
+  }
+  edges.sort(compareEdges);
+
+  const actorIds = new Set();
+  for (const event of events) {
+    for (const { actor } of event.actors ?? []) if (atlas.actors?.has(actor)) actorIds.add(actor);
+  }
+  const actors = [...actorIds].sort().map((id) => atlas.actors.get(id));
+  // A relation is in when both of its ends are: a line from an actor in the
+  // neighbourhood to one outside it says nothing about this neighbourhood.
+  const relations = [...(atlas.relations?.values() ?? [])]
+    .filter((r) => r.status === 'active' && actorIds.has(r.from) && actorIds.has(r.to))
+    .sort((a, b) => (a.id < b.id ? -1 : a.id > b.id ? 1 : 0));
+
+  return { events, edges, actors, relations, depths };
+}
+
 // The convergence query. Given the target and the path the user walked
 // (event ids, target included), every ancestor of the target that is not
 // on the walked path, each with the edge by which it feeds the way to the

@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import path from 'node:path';
 import {
   consequences, antecedents, ancestors, descendants, convergence,
-  compareEdges, shortestPaths, pathTo, reachableBy,
+  compareEdges, shortestPaths, pathTo, reachableBy, subgraph,
 } from '../src/graph.js';
 import { atlasOf, FIXTURE_DATA, ROOT } from './helpers.mjs';
 
@@ -186,4 +186,70 @@ test('the convergence query is answered once for the same target and walk', asyn
   // Nothing that reads the shared list may write to it, so it is the same
   // list in the same order every time it is handed out.
   assert.deepEqual(convergence(adj, 'fixture-event-t', []).map((b) => b.edge.id), other.map((b) => b.edge.id));
+});
+
+// ─── the neighbourhood, whole ──────────────────────────────────────────────
+
+test('subgraph is symmetric in depth and keeps only the edges with both ends in', async () => {
+  const atlas = await atlasOf(FIXTURE_DATA);
+  const zero = subgraph(atlas, ['fixture-event-b'], 0);
+  assert.deepEqual(zero.events.map((e) => e.id), ['fixture-event-b']);
+  assert.deepEqual(zero.edges, [], 'nothing joins one event to itself');
+
+  const one = subgraph(atlas, ['fixture-event-b'], 1);
+  // Both directions: a cause one step back is as much of the neighbourhood
+  // as a consequence one step on.
+  assert.deepEqual(one.events.map((e) => e.id).sort(), [
+    'fixture-event-a', 'fixture-event-b', 'fixture-event-d',
+  ]);
+  for (const edge of one.edges) {
+    const ids = new Set(one.events.map((e) => e.id));
+    assert.ok(ids.has(edge.from) && ids.has(edge.to), `${edge.id} has both ends inside`);
+  }
+  assert.deepEqual(one.depths.get('fixture-event-b'), 0);
+  assert.deepEqual(one.depths.get('fixture-event-a'), 1);
+
+  const two = subgraph(atlas, ['fixture-event-b'], 2);
+  assert.ok(two.events.length > one.events.length, 'a second hop reaches further');
+});
+
+test('subgraph walks no retracted edge and starts from no tombstone', async () => {
+  const atlas = await atlasOf(FIXTURE_DATA);
+  // e→t is retracted, so t is not one hop from e.
+  const from = subgraph(atlas, ['fixture-event-e'], 1);
+  assert.equal(from.events.some((e) => e.id === 'fixture-event-t'), false);
+  // A merged record is not an event a neighbourhood is asked about.
+  assert.deepEqual(subgraph(atlas, ['fixture-event-m'], 2).events, []);
+  assert.deepEqual(subgraph(atlas, ['nothing-by-that-name'], 2).events, []);
+});
+
+test('subgraph carries the actors of its events and the relations between them', async () => {
+  const atlas = await atlasOf(FIXTURE_DATA);
+  const found = subgraph(atlas, ['fixture-event-a', 'fixture-event-b'], 0);
+  assert.deepEqual(found.actors.map((a) => a.id), ['fixture-actor-one', 'fixture-actor-two']);
+  // Both ends inside, so the relations between those two are in; a relation
+  // to an actor the neighbourhood does not hold is not.
+  for (const relation of found.relations) {
+    assert.ok(found.actors.some((a) => a.id === relation.from));
+    assert.ok(found.actors.some((a) => a.id === relation.to));
+  }
+  assert.ok(found.relations.length >= 1, 'the fixture actors stand in relations');
+  const alone = subgraph(atlas, ['fixture-event-c'], 0);
+  assert.deepEqual(alone.actors, []);
+  assert.deepEqual(alone.relations, []);
+});
+
+test('subgraph takes a bare topology as well as an atlas', () => {
+  const events = new Map([
+    ['a', { id: 'a', status: 'active', when: { start: 1, end: 1 }, actors: [] }],
+    ['b', { id: 'b', status: 'active', when: { start: 2, end: 2 }, actors: [] }],
+  ]);
+  const edges = new Map([
+    ['a--b--caused', { id: 'a--b--caused', from: 'a', to: 'b', type: 'caused', confidence: 'consensus', status: 'active' }],
+  ]);
+  const found = subgraph({ events, edges }, ['a'], 1);
+  assert.deepEqual(found.events.map((e) => e.id), ['a', 'b']);
+  assert.deepEqual(found.edges.map((e) => e.id), ['a--b--caused']);
+  assert.deepEqual(found.actors, []);
+  assert.deepEqual(found.relations, []);
 });

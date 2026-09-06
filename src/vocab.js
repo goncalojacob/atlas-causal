@@ -135,6 +135,16 @@ export const RELATION_GROUP_ORDER = Object.freeze([
   return type.symmetric ? [`${id}:out`] : [`${id}:out`, `${id}:in`];
 }));
 
-// A narrative walks events and edges and nothing else, so a step's ref is one
-// of two shapes: an edge id, or the slug of an event.
-export const NARRATIVE_STEP_REF = new RegExp(`^${SLUG_SOURCE}(--${SLUG_SOURCE}--(${alternation(EDGE_TYPES)}))?$`);
+// What a narrative step may point at. Two shapes — a bare slug, or a
+// three-part id — and four kinds behind them, because a walk that could only
+// name an event or a link could not say "and this is the body that did it"
+// (health review B, finding 18; H7 item 6). A bare slug is an event, an actor
+// or a presence and which of the three is decided by the atlas, never by the
+// pattern: the ids are the only authority on that (narrative.js). A three-part
+// id is an edge or a relation, and those two vocabularies stay apart.
+export const NARRATIVE_STEP_REF = new RegExp(`^${SLUG_SOURCE}(--${SLUG_SOURCE}--(${alternation(EDGE_TYPES)}|${alternation(RELATION_TYPES)}))?$`);
+
+// The kinds a step's ref may name, in the order a bare slug is tried in: an
+// event first, because a walk is a walk over events and that is what almost
+// every step is.
+export const NARRATIVE_REF_KINDS = Object.freeze(['event', 'edge', 'actor', 'relation', 'presence']);

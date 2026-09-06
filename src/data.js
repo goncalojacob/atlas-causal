@@ -17,6 +17,7 @@ import { narrativeEventIds } from './narrative.js';
 import { extent as intervalExtent } from './util/dates.js';
 import { regionBounds } from './util/geo.js';
 import { edgeId } from './vocab.js';
+import { periodOfEdge } from './explanations.js';
 
 async function defaultFetchJson(url, init) {
   const response = await fetch(url, init);
@@ -96,6 +97,61 @@ export function createAtlas({
       citersLoading.set(id, pending);
     }
     return citersLoading.get(id);
+  }
+
+  // --- the links' arguments, in bulk ---------------------------------------
+  //
+  // One `<details>` at a time is the right shape for a reader opening one
+  // "Why" and the wrong one for anything that reads a path: `record('edge',
+  // id)` per step (health review B, finding 18). The index shards the
+  // explanations by period (explanations.js); this asks for the shards a set
+  // of edges falls in — a handful of requests however long the path — and
+  // answers with a map of the ones it was asked about.
+  //
+  // Same cache discipline as loadGeometry and the citers: one request in
+  // flight per file, and a rejection is not an answer. `explanationOf` is the
+  // synchronous half, for a caller that cannot wait: the text if it is in
+  // hand, null if it is not. Nothing on the page is drawn out of this, so
+  // nothing ever waits for it.
+  const explanationShardList = manifest?.explanationShards ?? [];
+  const explanations = new Map();
+  const explanationFiles = new Map();
+  const explanationOf = (id) => explanations.get(id) ?? null;
+  const shardForEdge = (id) => {
+    const edge = edges.get(id);
+    const period = edge ? periodOfEdge(edge, events) : null;
+    if (!period) return null;
+    return explanationShardList.find((s) => s.from === period.from && s.to === period.to) ?? null;
+  };
+  function loadExplanationFile(file) {
+    if (!explanationFiles.has(file)) {
+      const pending = fetchJson(`${dataRoot}${file}`).then((shard) => {
+        for (const [id, text] of Object.entries(shard.explanations ?? {})) explanations.set(id, text);
+        return shard;
+      }).catch((error) => {
+        if (explanationFiles.get(file) === pending) explanationFiles.delete(file);
+        throw error;
+      });
+      explanationFiles.set(file, pending);
+    }
+    return explanationFiles.get(file);
+  }
+  function loadExplanations(edgeIds) {
+    const files = new Set();
+    for (const id of edgeIds) {
+      if (explanations.has(id)) continue;
+      const shard = shardForEdge(id);
+      if (shard) files.add(shard.file);
+    }
+    // A shard that will not load leaves its edges without a text rather than
+    // taking the answer down with it: the caller gets what arrived, and the
+    // card's own `record('edge', id)` is still there behind every "Why".
+    return Promise.all([...files].map((file) => loadExplanationFile(file).catch(() => null)))
+      .then(() => {
+        const found = new Map();
+        for (const id of edgeIds) if (explanations.has(id)) found.set(id, explanations.get(id));
+        return found;
+      });
   }
 
   const find = (id) => {
@@ -220,8 +276,13 @@ export function createAtlas({
   };
   for (const narrative of activeNarratives) {
     for (const id of narrativeEventIds({ events, edges }, narrative)) noteNarrative(id, narrative);
+    // And the ref itself, for every kind that is not an event: a link, and
+    // since H7 an actor, a relation or a presence. "Part of" is drawn on the
+    // card of whatever a walk names, and an actor whose card said nothing
+    // about the narrative that walks it would be the atlas hiding its own
+    // arguments from the record they are about.
     for (const step of narrative.steps ?? []) {
-      if (edges.has(step.ref)) noteNarrative(step.ref, narrative);
+      if (typeof step?.ref === 'string' && !events.has(step.ref)) noteNarrative(step.ref, narrative);
     }
   }
 
@@ -397,6 +458,9 @@ export function createAtlas({
     citersOf,
     loadCiters,
     citationCount,
+    explanationShards: explanationShardList,
+    explanationOf,
+    loadExplanations,
     actors,
     places,
     eventsByPlace,

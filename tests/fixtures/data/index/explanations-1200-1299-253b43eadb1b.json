@@ -1,0 +1,16 @@
+{
+  "explanations": {
+    "fixture-event-a--fixture-event-a2--enabled": "Synthetic explanation used by the test suite. It argues nothing about the past; it only has to be long enough to count as an argument.",
+    "fixture-event-a--fixture-event-b--caused": "Synthetic explanation used by the test suite. It argues nothing about the past; it only has to be long enough to count as an argument.",
+    "fixture-event-b--fixture-event-d--enabled": "Synthetic explanation used by the test suite. It argues nothing about the past; it only has to be long enough to count as an argument.",
+    "fixture-event-c--fixture-event-t--precondition-of": "Synthetic explanation used by the test suite. It argues nothing about the past; it only has to be long enough to count as an argument.",
+    "fixture-event-d--fixture-event-t--caused": "Synthetic explanation used by the test suite. It argues nothing about the past; it only has to be long enough to count as an argument.",
+    "fixture-event-e--fixture-event-c--inspired": "Synthetic explanation used by the test suite. It argues nothing about the past; it only has to be long enough to count as an argument.",
+    "fixture-event-f--fixture-event-t--reacted-to": "Synthetic explanation used by the test suite. It argues nothing about the past; it only has to be long enough to count as an argument.",
+    "fixture-event-g--fixture-event-t--caused": "Synthetic explanation used by the test suite. It argues nothing about the past; it only has to be long enough to count as an argument.",
+    "fixture-event-o--fixture-event-e--enabled": "Synthetic explanation used by the test suite. It argues nothing about the past; it only has to be long enough to count as an argument."
+  },
+  "from": 1200,
+  "schema": 1,
+  "to": 1299
+}

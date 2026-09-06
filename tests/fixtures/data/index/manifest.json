@@ -10,6 +10,13 @@
     "relations": 3,
     "sources": 4
   },
+  "explanationShards": [
+    {
+      "file": "index/explanations-1200-1299-253b43eadb1b.json",
+      "from": 1200,
+      "to": 1299
+    }
+  ],
   "files": {
     "citers": "index/citers-b0536ac1ae85",
     "history": "index/history",

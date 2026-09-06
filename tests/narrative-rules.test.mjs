@@ -8,7 +8,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { validate, buildTopology } from '../src/validate/core.js';
 import { createRegionDeriver } from '../src/util/geo.js';
-import { refKind, MIN_NARRATIVE_STEPS } from '../src/validate/rules.js';
+import { refKinds, MIN_NARRATIVE_STEPS } from '../src/validate/rules.js';
 import { fixtures, schemas } from './helpers.mjs';
 
 const TEXT = 'A step of a synthetic narrative, long enough to be an argument rather than a label.';
@@ -51,14 +51,18 @@ test('a narrative over the fixture graph validates', async () => {
   assert.deepEqual(result.errors, [], messages(result));
 });
 
-test('refKind tells the two shapes apart and refuses everything else', () => {
-  assert.equal(refKind('fixture-event-a'), 'event');
-  assert.equal(refKind('a--b--caused'), 'edge');
-  // A relation is between actors: it is not a step of a walk through events.
-  assert.equal(refKind('estado-novo--portugal--regime-of'), null);
-  assert.equal(refKind('../../etc/passwd'), null);
-  assert.equal(refKind(''), null);
-  assert.equal(refKind(null), null);
+test('refKinds tells the two shapes apart and refuses everything else', () => {
+  // A bare slug is one of three kinds and the shape cannot say which: only
+  // the atlas can, so all three come back and the caller looks each up. An
+  // event first, because that is what almost every step is.
+  assert.deepEqual(refKinds('fixture-event-a'), ['event', 'actor', 'presence']);
+  assert.deepEqual(refKinds('a--b--caused'), ['edge']);
+  // A relation is between actors and is not a step of a *causal* path; since
+  // H7 a walk may still name one, so it is a kind and no longer nothing.
+  assert.deepEqual(refKinds('estado-novo--portugal--regime-of'), ['relation']);
+  assert.deepEqual(refKinds('../../etc/passwd'), []);
+  assert.deepEqual(refKinds(''), []);
+  assert.deepEqual(refKinds(null), []);
 });
 
 test('the topology carries the walk without a word of its prose', async () => {
@@ -134,4 +138,34 @@ test('rules 6 and 12: a narrative is cited and signed like everything else', asy
   assert.deepEqual(rulesHit(unsigned, 12).map((e) => e.path), ['/authors']);
   const licensed = await run({ license: 'CC-BY-NC-SA-4.0' });
   assert.deepEqual(rulesHit(licensed, 12).map((e) => e.path), ['/license']);
+});
+
+// ─── what a walk may name, since H7 ────────────────────────────────────────
+//
+// A walk that could only name an event or a link could not say "and this is
+// the body that did it" without inventing an event for it (health review B,
+// finding 18). Four kinds now, and the two that are still refused are refused
+// for reasons: a narrative cites its books in `sources` like every other
+// record, and a place is where an event was rather than a step of an argument.
+
+test('a walk may name an actor, a relation or a presence', async () => {
+  for (const ref of [
+    'fixture-actor-one',
+    'fixture-actor-one--fixture-actor-two--led',
+    'fixture-polity-four-1120',
+  ]) {
+    const result = await run({
+      steps: [{ ref: 'fixture-event-a', text: TEXT }, { ref, text: TEXT }],
+    });
+    assert.deepEqual(result.errors, [], `${ref}: ${messages(result)}`);
+  }
+});
+
+test('a walk still names nothing that is not a record, and no source or place', async () => {
+  for (const ref of ['fixture-source-1', 'fixture-place-a', 'nothing-by-that-name']) {
+    const result = await run({
+      steps: [{ ref: 'fixture-event-a', text: TEXT }, { ref, text: TEXT }],
+    });
+    assert.equal(rulesHit(result, 3).length, 1, `${ref} is not a step a walk may take`);
+  }
 });

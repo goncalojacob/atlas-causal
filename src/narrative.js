@@ -19,16 +19,36 @@ import { bounds, toAstronomical } from './util/dates.js';
 // former id is still about that record, and a rename is allowed. A walk that
 // broke the day somebody renamed one of the events in it would make renaming
 // unusable (health review A, finding 20).
+// Since H7 a step may also name an actor, a relation or a presence, so that a
+// walk can say "and this is the body that did it" without inventing an event
+// for it (health review B, finding 18). Those three carry no event of their
+// own: `event` stays null, the views draw nothing new for the step, and the
+// chain simply breaks there, which is what a step that is not a link already
+// did. The record itself is on `record`, whatever the kind, so a card can draw
+// it without knowing which of the five it is holding.
 export function resolveRef(atlas, ref) {
-  const gap = { ref, kind: null, event: null, edge: null };
+  const gap = {
+    ref, kind: null, event: null, edge: null, record: null,
+  };
   if (typeof ref !== 'string') return gap;
   const edge = atlas.edges.get(ref);
-  if (edge) return { ref, kind: 'edge', edge, event: atlas.events.get(edge.to) ?? null };
+  if (edge) return { ref, kind: 'edge', edge, event: atlas.events.get(edge.to) ?? null, record: edge };
   const event = atlas.events.get(ref);
-  if (event) return { ref, kind: 'event', edge: null, event };
+  if (event) return { ref, kind: 'event', edge: null, event, record: event };
+  const relation = atlas.relations?.get(ref) ?? null;
+  if (relation) return { ...gap, kind: 'relation', record: relation };
+  const actor = atlas.actors?.get(ref) ?? null;
+  if (actor) return { ...gap, kind: 'actor', record: actor };
+  const presence = atlas.presences?.get(ref) ?? null;
+  if (presence) return { ...gap, kind: 'presence', record: presence };
+  // Through resolve() last, so a step written against a record's former id is
+  // still about that record and a rename stays possible (A20). It answers for
+  // the kinds the atlas indexes by id; a relation and a presence are not among
+  // them and are looked up above.
   const stood = atlas.resolve?.(ref) ?? null;
-  if (stood?.kind === 'edge') return { ref, kind: 'edge', edge: stood.record, event: atlas.events.get(stood.record.to) ?? null };
-  if (stood?.kind === 'event') return { ref, kind: 'event', edge: null, event: stood.record };
+  if (stood?.kind === 'edge') return { ref, kind: 'edge', edge: stood.record, event: atlas.events.get(stood.record.to) ?? null, record: stood.record };
+  if (stood?.kind === 'event') return { ref, kind: 'event', edge: null, event: stood.record, record: stood.record };
+  if (stood?.kind === 'actor') return { ...gap, kind: 'actor', record: stood.record };
   return gap;
 }
 
