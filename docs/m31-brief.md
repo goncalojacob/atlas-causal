@@ -404,3 +404,190 @@ reports zero errors; `node tools/validate.mjs --index` is byte-identical;
 `node --test` is green with `CHROME` set; and `STATUS.md` carries the literal
 lines `M31-1 done`, `M31-2 done`, `M31-3 done` and then, on a line with
 nothing else on it, **`M31 done`**.
+
+## Amendments after review
+
+Written 6 September 2026 by an independent Opus reviewer of this brief, against
+`origin/m0` at `cd71524`. **These override the body where they differ** (run
+protocol §3). Where an amendment answers a question that is the owner's, it
+says so and states the recommendation the run follows until the owner
+overrules.
+
+**A0 — the gate, the reading, and the numbers to take from this file.** The
+gate line is the literal `M30b done` on `origin/m0`, unchanged. Read
+`docs/m30a-brief.md` and `docs/m30b-brief.md` **including their "Amendments
+after review"**, which are what those milestones delivered. Take the following
+measured numbers from here rather than re-deriving them: 1737 records, 0
+errors, 1157 warnings, of which 1040 are `unread`, 114 `role-unknown`, 1
+`degree-zero`, 1 `no-citers`, 1 `place-unused`, 0 `category-unknown` and 0
+`actor-unused`; 493 drafts; 1928 of 1928 citations unchecked; 329 event files,
+137 active, 175 retracted, 17 merged; 34 person actors, all active, split
+exactly as §4 says; nine offices, all `when: null`; twelve tenures; 43
+relations, twelve of them `allied-with`. The last deviation in `STATUS.md` when
+this was written is 351; M30b's runs will have added, so read the file.
+
+**A1 — this run writes no new `source` record.** Rule 13
+(`src/validate/rules.js:952-956`) refuses a `book`, `chapter`, `article`,
+`thesis` or `dataset` with no `isbn`, no `doi` and no `url`, and
+`tools/new-record.mjs` writes all three as `null`. §3's "written with every
+identifier `null` and they stay `null`" is therefore a record the validator
+rejects, and the only ways past it are to delete the source or to invent an
+identifier. Neither is acceptable. Every tenure and every new actor cites only
+ids already under `data/sources/`; the ten §3 names all exist, are all active
+and are all `type: "book"`. A claim no existing source plausibly covers is a
+claim this run does not write: the holder and the office go into `STATUS.md`
+under §2 rule 3 instead. §3's paragraph beginning "A new `source` record is
+written **only** where" is struck.
+
+**A2 — rule 19's `member-of` accepts a polity at the `to` end, so all ten are
+re-typed.** §6's sentence "each body must be an `institution`, or rule 19
+refuses it and the record is not one of the ten after all" is wrong:
+`src/vocab.js` gives `member-of` `endpoints: { from: ['person','polity','institution'], to: ['institution','polity'] }`,
+and `data/actors/european-union.json` is a `polity`. All ten of §6's ids are
+re-typed, `portugal--european-union--allied-with` →
+`portugal--european-union--member-of` included. The check the run runs before
+writing is against `RELATION_ENDPOINTS['member-of']` as that file actually
+reads it, never against a sentence in this brief.
+
+**A3 — how the ten are re-typed, exactly.** For each: write
+`data/relations/<from>--<to>--member-of.json` with `type: "member-of"` and the
+new id; carry `from`, `to`, `when`, `sources`, `review` (status, flags and
+note), `origin` and **`created`** across unchanged; set `revised` to the day of
+the run; put the old id in `aliases` (the relation schema's `aliases` items use
+that file's own three-part `id` pattern, so `portugal--cplp--allied-with` is a
+valid alias and rule 2 passes); delete the old file. The note is **not** a
+whole-string match: in all ten the sentence "Membership, not an alliance: rule
+19 reserves member-of for persons." is a trailing sentence after a
+record-specific clause. Remove that sentence and the space before it, keep
+everything else, and trim — `note` has `minLength: 1`, so a note that would
+come out empty means the record was not one of the ten. `estado-novo--nato--allied-with`
+and `third-portuguese-republic--european-economic-community--allied-with` are
+untouched and named in `STATUS.md` in one line each, undecided.
+
+**A4 — `tests/actor-card.test.mjs:88` moves in the same commit.**
+`assert.deepEqual(headings(portugal), ['Regimes', 'Allied with'])` becomes
+`['Regimes', 'Member of', 'Allied with']`: `RELATION_GROUP_ORDER` puts
+`member-of:out` before `allied-with:out`. The relation count at `:89` does not
+move. Recorded as a deviation.
+
+**A5 — `tests/office-card.test.mjs:93-100` moves in M31-2.** That test is named
+"the prime ministership of Portugal, and its two holders" and asserts
+`rows(html)` deepEqual `['salazar-prime-minister-1932', 'marcelo-caetano-prime-minister-1968']`.
+M31-2 rewrites it to assert that those two are present among the holders, in
+start order, and that the whole list is in start order; the test's name changes
+with it. Recorded as a deviation.
+
+**A6 — a reinstatement changes five things and nothing else.** All 175
+retracted events carry `actors: []` and 161 carry `place: null`; the fourteen
+retracted Portuguese presidential elections carry `place: null`,
+`region: "europe"`, `supersededBy: null`, a summary saying "nothing in it is
+this atlas's account of the thing" and one citation to the `wikidata` source.
+`review.status` is absent on 174 of the 175, so the handles for finding them
+are `status` and the `m21-retracted` / `m22-retracted` flags, never
+`review.status`. Reinstating means exactly: `status` → `"active"`; `retraction`
+deleted; the `m21-retracted` / `m22-retracted` flag dropped and
+`imported-facts` kept where it is there; `review.status: "draft"` added;
+`revised` set to the day of the run. **No actor line, no place, no region, no
+summary, no title, no `when` and no source is added to or changed on a
+reinstated event.** A thin record that says what it is is the correct outcome;
+completing one from memory is the invented claim this milestone exists to
+avoid.
+
+**A7 — what a citation on this run's records means, said on the record.** Every
+citation this run writes carries `locator: null`, and `review.citations` is
+written on no record. Each tenure's and each new actor's `review.note` says in
+its own words that the citation names the work a reviewer should check the
+claim against, not a work this run read, and that the interval was written from
+memory. `docs/m21-retractions.md`, `docs/m22-retractions.md` and a tombstone's
+`retraction.reason` are this atlas's own unreviewed prose and are **not**
+sources: a date taken from one still carries `review.flags: ["date"]` and is
+still cited to a book. The run ends by repeating the validator's "N of N
+citations not yet checked" line in `STATUS.md` in words.
+
+**A8 — the scaffold's defaults, corrected at the call site.** Every
+`tools/new-record.mjs` call passes
+`--author "Claude (assistant draft, unreviewed)"`, because the scaffold
+otherwise takes `git config user.name` and would put the owner's name on an
+unread draft. Before committing, the run checks each written file for
+`authors: [{ "name": "Claude (assistant draft, unreviewed)", "github": null }]`,
+for `origin: { "tool": "assistant" }` (the scaffold writes none — deviation
+309), and for a non-empty `summary` on an actor
+(`schema/v1/actor.json` requires `minLength: 1`; the scaffold writes `""`). A
+`{ "min": …, "max": … }` bound cannot be scaffolded — `int()` at
+`tools/new-record.mjs:66-70` throws on anything but an integer — so those
+records are scaffolded with a placeholder year and the bound is written by
+editing the file.
+
+**A9 — two spells at one office in one year.** §1's id
+`<person>-<office>-<start year>` collides where a person held one office twice
+in one calendar year, which this period allows. The second such tenure takes
+the suffix `-b`, the third `-c`, and every id so formed is named in
+`STATUS.md`. Merging two spells into one tenure to avoid a collision is
+forbidden: §1's "one record per continuous spell" is the rule.
+
+**A10 — M31-3 waits for the owner, and is capped until it answers.** The First
+Republic's forty-odd ministries and the monarchy's presidents of the Council
+are roughly sixty tenures and close to fifty new person actors, every date and
+every birth year from memory, none of it readable in this sandbox. Owner
+question — the brief's own §10 item 4. Until the owner answers, M31-3 runs
+under this cap: it writes only tenures whose holder, office and **both** year
+bounds it can state without a range wider than two years; it writes at most
+twenty; it names every remaining holder, with the office, in `STATUS.md`; and
+it writes `M31-3 done` over an incomplete strip. The recommendation to the
+owner is that completeness is not wanted here — an office strip with a hole
+that `STATUS.md` names is a correct atlas.
+
+**A11 — the index is the last commit of every run.** `tools/lib/history.mjs`
+reads `git log`, so a record's history cannot be right in the commit that adds
+it and `data/index/` is regenerated in a following commit (deviation 328;
+`data/index/history/` holds 1027 files today, one per record). What §9 does not
+say and this does: every data commit is followed by a
+`node tools/build-index.mjs` commit **before any further record is written**,
+and the last commit of each of the three runs is an index commit. `node
+tools/validate.mjs --index` is run after that commit and must be byte-identical;
+`sources.html` is part of what the build writes and is committed with it.
+
+**A12 — the numbers in the body that do not reproduce.** §5's "sixty-two active
+events matching an election, coup, resignation or succession" is struck:
+counting active events whose id or title matches
+`/election|coup|resign|succession/i` gives 53, and no variant gives 62. The two
+endpoints named are correct. §9's "it is **493 today**" is correct as a
+validator line but is asserted by no test — `tests/build-index.test.mjs:173`
+computes `summary.drafts` from `records.filter(inQueue)` — so nothing has to be
+edited for it; and §9's exact-`manifest.counts` warning is right, that
+assertion (`:119`, `offices: 2, tenures: 4`) is on the fixtures. §9's claim that
+`tenuresByOffice` is filled "for the first time with real data" is loose: it
+already holds the twelve tenures M30a-2 wrote.
+
+**Done when, restated:** every tenure the three runs wrote is at one of the
+three Portuguese offices, carries a person, a year interval — a `{min,max}`
+bound where the year is uncertain and no `date`/`endDate` at all — at least one
+source **already in `data/sources/`**, `review.flags: ["date"]` and a
+`review.note` saying the interval was written from memory and that the citation
+names where a reviewer should check rather than what the run read; every
+citation carries `locator: null` and no record carries `review.citations`; **no
+new `source` record was written**; no tenure duplicates
+`salazar-prime-minister-1932` or `marcelo-caetano-prime-minister-1968`, and two
+spells at one office in one year are distinguished by a `-b` suffix named in
+`STATUS.md`; every new person actor is a draft with a non-empty summary, at
+least one existing source, `authors` naming only the assistant draft marker,
+`origin: { "tool": "assistant" }` and no hand-written `wikidata`, `wikipedia`
+or `sitelinks`; every retracted election a tenure names in `startedBy` is
+active with its `retraction` deleted, its `m21-retracted`/`m22-retracted` flag
+dropped, `review.status: "draft"` added and **nothing else on it touched**, and
+no other election has moved; **all ten** of §6's `allied-with` memberships —
+the European Union included — are `member-of` records carrying their old ids in
+`aliases`, their `created` unchanged, their notes trimmed of the substitution
+sentence and still non-empty, and the other two are named in `STATUS.md`
+untouched; `tests/actor-card.test.mjs`'s heading list and
+`tests/office-card.test.mjs`'s holder list are updated with the change that
+moves them; M31-3 is either the owner's answered scope or the capped one, with
+every unwritten holder named; no edge, no office, no schema and no module under
+`src/` was written or edited; the last commit of each run is a
+`tools/build-index.mjs` commit; `node tools/validate.mjs` reports zero errors;
+`node tools/validate.mjs --index` is byte-identical; `node --test` is green
+with `CHROME` set and the skipped count reported; and `STATUS.md` carries the
+literal lines `M31-1 done`, `M31-2 done`, `M31-3 done` and then, on a line with
+nothing else on it, **`M31 done`**.
+
+---
