@@ -252,6 +252,7 @@ function indexEntries(rows) {
   const placeReferrers = new Map();
   const presencesByOutline = new Map();
   const relationsByType = new Map();
+  const tenureStarts = new Map();
   const claimants = new Map();
   const creatorKeys = new Map();
   const aliases = new Map();
@@ -297,6 +298,11 @@ function indexEntries(rows) {
       // office of it still stands is rule 11 rather than a dangling `of`.
       pushInto(actorReferrers, entry.of, row);
     } else if (kind === 'tenure') {
+      // The event that began it, so the `degree-zero` warning can ask "is
+      // anything hanging off this event" without walking every tenure per
+      // event. An election that made a government is connected to the atlas
+      // whether or not anybody has written an edge from it (plan decision 3).
+      pushInto(tenureStarts, entry.startedBy, row);
       // The person, for the same reason — and because `actor-unused` counts
       // referrers: a person who is in the atlas only because they held an
       // office is referred to by their tenures and by nothing else, and
@@ -305,7 +311,7 @@ function indexEntries(rows) {
       pushInto(actorReferrers, entry.person, row);
     }
   }
-  return { activeEdges, edgesByEndpoint, actorReferrers, placeReferrers, presencesByOutline, relationsByType, claimants, creatorKeys, aliases, aliasOwners };
+  return { activeEdges, edgesByEndpoint, actorReferrers, placeReferrers, presencesByOutline, relationsByType, tenureStarts, claimants, creatorKeys, aliases, aliasOwners };
 }
 
 // The topology's entries as one ordered list, id → row, with `add` left open
@@ -368,6 +374,7 @@ const NO_UNIVERSE = Object.freeze({
   placeReferrers: new Map(),
   presencesByOutline: new Map(),
   relationsByType: new Map(),
+  tenureStarts: new Map(),
   claimants: new Map(),
   creatorKeys: new Map(),
 });
@@ -432,6 +439,7 @@ export function checkRules(records, topology = {}, { universe: prebuilt = null }
   const edgesTouching = (id) => merge(base.edgesByEndpoint.get(id), ours.edgesByEndpoint.get(id), entryId);
   const actorReferrers = (id) => merge(base.actorReferrers.get(id), ours.actorReferrers.get(id), rowId);
   const placeReferrers = (id) => merge(base.placeReferrers.get(id), ours.placeReferrers.get(id), rowId);
+  const tenuresStartedAt = (id) => merge(base.tenureStarts.get(id), ours.tenureStarts.get(id), rowId);
   const aliasOwnersOf = (alias) => merge(base.aliasOwners.get(alias), ours.aliasOwners.get(alias), (id) => id);
   const activeEdges = merge(base.activeEdges, ours.activeEdges, entryId);
 
@@ -1143,6 +1151,26 @@ export function checkRules(records, topology = {}, { universe: prebuilt = null }
     }
   }
 
+  // The event that began a tenure ought to fall in it. A warning and not an
+  // error, for the reason `actor-outside-when` is one: the two dates come
+  // from two records and either may be the one that is wrong — an election
+  // held in November for a government sworn in in January is a year apart and
+  // is not a mistake, and a year is the finest bound this model has. It is
+  // rule 26's third question about a tenure and it is named rather than
+  // numbered, as A9 asks.
+  for (const r of own) {
+    if (r.kind !== 'tenure' || r.status !== 'active') continue;
+    if (typeof r.startedBy !== 'string') continue;
+    const event = lookup(r.startedBy, 'event');
+    if (!event) continue;
+    const held = span(r.when);
+    const began = span(event.when);
+    if (!held || !began) continue;
+    if (began.to < held.from || began.from > held.to) {
+      warning('started-outside-when', r, `the tenure says it was begun by "${event.id}", which falls entirely outside the years it ran`);
+    }
+  }
+
   // --- rule 20: narratives ------------------------------------------------
   // What only the whole walk can say. Whether the refs exist is rule 3 and
   // whether they are still active is rule 11; this is the shape of the
@@ -1300,8 +1328,16 @@ export function checkRules(records, topology = {}, { universe: prebuilt = null }
     if (r.status === 'active') citations(r).forEach((id) => cited.add(id));
   }
   for (const r of own) {
-    if (r.kind === 'event' && r.status === 'active' && edgesTouching(r.id).length === 0) {
-      warning('degree-zero', r, 'event has no edges');
+    // Degree zero is "nothing in the atlas hangs on this", and an edge is no
+    // longer the only way something can. A tenure's `startedBy` is the
+    // election, the coup or the succession that put somebody in office, and
+    // an event that did that is connected whether or not anybody has written
+    // an edge from it — which is the whole point of the field: the editorial
+    // bar stays "one honest edge or a tenure it started, never an invented
+    // edge" (plan decision 3). Active tenures only, like every count here.
+    if (r.kind === 'event' && r.status === 'active'
+      && edgesTouching(r.id).length === 0 && tenuresStartedAt(r.id).length === 0) {
+      warning('degree-zero', r, 'event has no edges and began no tenure');
     }
     if (r.kind === 'source' && r.status === 'active' && !cited.has(r.id)) {
       warning('no-citers', r, 'source is cited by nothing under validation');

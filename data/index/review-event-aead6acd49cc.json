@@ -4179,7 +4179,7 @@
     {
       "id": "iberian-blackout-2025",
       "kind": "event",
-      "message": "event has no edges",
+      "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
     }
   ]

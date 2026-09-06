@@ -279,3 +279,64 @@ test('rule 21: an office may claim a Wikidata item and a tenure may not', async 
   r = await run((fx) => fx.records.push(tenure('synthetic-tenure', { wikidata: 'Q4242' })));
   assert.equal(rulesHit(r, 1).length, 1, messages(r));
 });
+
+// --- what `startedBy` is for ------------------------------------------------
+//
+// Plan decision 3: an election, a coup or a succession that put somebody in
+// office is connected to the atlas whether or not anybody has written an edge
+// from it. The editorial bar stays "one honest edge or a tenure it started,
+// never an invented edge", and the way it stays there is that `degree-zero`
+// counts a tenure's `startedBy`.
+
+test('an event that began a tenure is not degree zero, and a tombstone tenure does not save one', async () => {
+  const zero = (r) => r.warnings.filter((w) => w.rule === 'degree-zero').map((w) => w.id);
+  // fixture-event-h has no edges and is the fixtures' own degree-zero case.
+  assert.ok((await run()).warnings.some((w) => w.rule === 'degree-zero' && w.id === 'fixture-event-h'));
+
+  const began = await run((fx) => {
+    fx.records.push(tenure('fixture-tenure-started', { when: { start: 1290, end: 1295 }, startedBy: 'fixture-event-h' }));
+  });
+  assert.deepEqual(began.errors, [], messages(began));
+  assert.equal(zero(began).includes('fixture-event-h'), false, 'the election that made a government is connected');
+
+  // A withdrawn tenure connects nothing: it is out of the corpus, like every
+  // other count in this pass.
+  const withdrawn = await run((fx) => {
+    fx.records.push(tenure('fixture-tenure-started', {
+      when: { start: 1290, end: 1295 },
+      startedBy: 'fixture-event-h',
+      status: 'retracted',
+      retraction: { on: '2026-01-01', reason: 'Retracted in M0: a synthetic tombstone.' },
+    }));
+  });
+  assert.ok(zero(withdrawn).includes('fixture-event-h'));
+});
+
+test('a startedBy outside the tenure it began is a warning, not an error', async () => {
+  // fixture-event-h is 1290 and this tenure ran 1200–1210.
+  const r = await run((fx) => {
+    fx.records.push(tenure('fixture-tenure-elsewhere', { startedBy: 'fixture-event-h' }));
+  });
+  assert.deepEqual(r.errors, [], messages(r));
+  const hit = r.warnings.filter((w) => w.rule === 'started-outside-when');
+  assert.equal(hit.length, 1);
+  assert.equal(hit[0].id, 'fixture-tenure-elsewhere');
+  assert.match(hit[0].message, /fixture-event-h/);
+
+  // Touching at one end is inside: a year is the finest bound this model has,
+  // and an election in the year somebody took office is the ordinary case.
+  const touching = await run((fx) => {
+    fx.records.push(tenure('fixture-tenure-touching', { startedBy: 'fixture-event-a' }));
+  });
+  assert.equal(touching.warnings.filter((w) => w.rule === 'started-outside-when').length, 0, messages(touching));
+
+  // And a withdrawn tenure is not asked the question.
+  const withdrawn = await run((fx) => {
+    fx.records.push(tenure('fixture-tenure-elsewhere', {
+      startedBy: 'fixture-event-h',
+      status: 'retracted',
+      retraction: { on: '2026-01-01', reason: 'Retracted in M0: a synthetic tombstone.' },
+    }));
+  });
+  assert.equal(withdrawn.warnings.filter((w) => w.rule === 'started-outside-when').length, 0);
+});
