@@ -129,7 +129,8 @@ export function renderNarrativeCard(ctx, { container, narrative, state, mine }) 
       <button type="button" class="link small" data-action="leave-narrative">leave</button></p>
     <header class="narrative-head">
       <h2>${esc(narrative.title)}</h2>
-      <p class="meta"><span class="muted">${authorsLine(narrative)}</span> · <span class="count">step ${index + 1} of ${total}</span></p>
+      <p class="meta"><span class="muted">${authorsLine(narrative)}</span> · <span class="count">step ${index + 1} of ${total}</span>
+        ${ctx.lensControl('narrative', narrative.id)}</p>
       <p class="entry-link"><a href="narratives.html">Every narrative, by the years it is about →</a></p>
       ${ctx.discussLink('narrative', narrative.id)}
     </header>

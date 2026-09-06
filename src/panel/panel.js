@@ -11,7 +11,9 @@ import { formatInterval, bounds, isValidYear } from '../util/dates.js';
 import { articleFor } from '../wikipedia.js';
 import { windowAt, resolveWindow } from '../util/window.js';
 import { OPENINGS, hasOpening } from '../state.js';
-import { formatFocus, lensSet } from '../lens.js';
+import {
+  formatFocus, lensSet, lensLabels, withFocus, onlyFocus, withoutFocus, FOCUS_NONE,
+} from '../lens.js';
 import { lanesFor } from '../lanes.js';
 import { shortestPaths, pathTo } from '../graph.js';
 import { chainEdges } from '../chain.js';
@@ -93,14 +95,29 @@ export function createPanel(container, {
       case 'clear-source':
         state.set({ source: null });
         break;
-      // The lens. Not a selection and never clears one: "show only these"
-      // says which events there are, and what the reader had open stays
-      // open — the card is how they got here.
+      // The lens. Not a selection and never clears one: a focus says which
+      // events there are, and what the reader had open stays open — the card
+      // is how they got here.
+      //
+      // Three verbs since H7, because the lens takes any number of foci:
+      // "Focus on this" adds to the set, "Focus only on this" replaces it, and
+      // a chip's × drops one. Each reads the list that is actually on, which
+      // may be the implicit one-focus lens on an open actor or place — adding
+      // to that is adding to a list of one, which is what a reader who has
+      // opened Angola and then clicks Portugal means.
       case 'focus':
-        state.set({ focus: el.dataset.focus });
+        state.set({ focus: withFocus(currentFocus(s), el.dataset.kind, el.dataset.id) });
         break;
+      case 'focus-only':
+        state.set({ focus: onlyFocus(el.dataset.kind, el.dataset.id) });
+        break;
+      case 'unfocus':
+        state.set({ focus: withoutFocus(currentFocus(s), el.dataset.kind, el.dataset.id) });
+        break;
+      // `none` and not null: an absent parameter is what asks for the lens an
+      // open actor or place gets, so clearing it would put that lens back.
       case 'clear-focus':
-        state.set({ focus: null });
+        state.set({ focus: FOCUS_NONE, focusAll: false });
         break;
       // An edge has no card of its own: opening one from a source's list
       // walks that single step, which names both ends and loads the argument.
@@ -283,14 +300,27 @@ export function createPanel(container, {
     return found && found.kind === 'actor' ? found.record : null;
   }
 
-  // "Show only these" / "show everything", on the card of whatever the lens
-  // can be about. The card asks for it rather than being handed the state,
-  // so a card's signature says what it draws and not how the header works.
+  // The lens list that is actually on, which is not always the parameter:
+  // an open actor or place with no `?focus=` is a lens on itself (lens.js),
+  // and adding to it has to add to that and not to nothing.
+  const currentFocus = (s) => lensLabels(atlas, s).map((f) => f.focus).join(',');
+
+  // The two verbs, on the card of whatever the lens can be about: add to the
+  // set, or make the set this one record. When the record is already a focus
+  // the first becomes its ×, because "focus on this" twice is a control that
+  // does nothing the second time. The card asks for it rather than being
+  // handed the state, so a card's signature says what it draws and not how
+  // the header works.
   function lensControl(kind, id) {
     const focus = formatFocus(kind, id);
-    return state.get().focus === focus
-      ? '<button type="button" class="link small lens-control on" data-action="clear-focus">show everything</button>'
-      : `<button type="button" class="link small lens-control" data-action="focus" data-focus="${esc(focus)}">show only these</button>`;
+    const s = state.get();
+    const on = currentFocus(s).split(',').includes(focus);
+    const attrs = `data-kind="${esc(kind)}" data-id="${esc(id)}"`;
+    if (on) {
+      return `<button type="button" class="link small lens-control on" data-action="unfocus" ${attrs}>stop focusing on this</button>`;
+    }
+    return `<button type="button" class="link small lens-control" data-action="focus" ${attrs}>Focus on this</button>
+      <button type="button" class="link small lens-control" data-action="focus-only" ${attrs}>Focus only on this</button>`;
   }
 
   // The way out to somebody else's account of the same thing. It is offered

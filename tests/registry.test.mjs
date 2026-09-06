@@ -22,7 +22,7 @@ import {
 } from '../src/kinds.js';
 import {
   EDGE_TYPES, EDGE_TYPE_IDS, RELATION_TYPES, RELATION_TYPE_IDS,
-  EDGE_ID, RELATION_ID, FOCUS, GROUPS, FOCUS_KINDS,
+  EDGE_ID, RELATION_ID, FOCUS, FOCUS_PARAM, FOCUS_NONE, GROUPS, FOCUS_KINDS,
   RELATION_ENDPOINTS, RELATION_GROUP_ORDER, ACYCLIC_RELATION_TYPES,
   NARRATIVE_STEP_REF,
 } from '../src/vocab.js';
@@ -174,15 +174,24 @@ test('the vocabularies equal the enums in schema/**', async () => {
     for (const at of [...ends.from, ...ends.to]) assert.ok(actorTypes.has(at), `${type}: ${at}`);
   }
 
-  // The lens's three kinds are kinds, its pattern accepts exactly them, and
-  // the four groupings are the lens kinds plus "none" and "region" — which is
-  // a coincidence of the vocabulary and not a rule, so only the shape of each
-  // is asserted.
+  // The lens's six kinds and its pattern accept exactly each other. Five of
+  // them are record kinds; `region` is not — a region is a lane the atlas
+  // draws in, declared in `regions.json` and named by every event, which is
+  // exactly why a reader may focus on one. The four groupings are three of
+  // the lens kinds plus "none", which is a coincidence of the vocabulary and
+  // not a rule, so only the shape of each is asserted.
   for (const kind of FOCUS_KINDS) {
-    assert.ok(KINDS.includes(kind), kind);
+    assert.ok(KINDS.includes(kind) || kind === 'region', kind);
     assert.ok(FOCUS.test(`${kind}:some-id`), kind);
+    assert.ok(FOCUS_PARAM.test(`${kind}:some-id`), kind);
   }
   assert.ok(!FOCUS.test('edge:a--b--caused'));
+  // The whole parameter is a list of those, or the literal `none`.
+  assert.ok(FOCUS_PARAM.test(FOCUS_KINDS.map((k) => `${k}:some-id`).join(',')));
+  assert.ok(FOCUS_PARAM.test(FOCUS_NONE));
+  assert.ok(!FOCUS_PARAM.test(''));
+  assert.ok(!FOCUS_PARAM.test('actor:a,'));
+  assert.ok(!FOCUS_PARAM.test(`${FOCUS_NONE},actor:a`));
   assert.equal(GROUPS[0], 'none', 'the default grouping is first');
   assert.equal(new Set(GROUPS).size, GROUPS.length);
 });

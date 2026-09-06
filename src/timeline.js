@@ -386,7 +386,7 @@ export function createTimeline(container, { atlas, state, createScale = createLi
   const barHeight = () => Math.max(8, laneHeight - 16);
   const barTop = (i) => AXIS_HEIGHT + i * laneHeight + (laneHeight - barHeight()) / 2;
 
-  function laneBars(bars, badges, lane, i, events, s, window, actorIds, narrativeIds, pathIds, reachable) {
+  function laneBars(bars, badges, lane, i, events, s, window, actorIds, narrativeIds, pathIds, reachable, lensNear) {
     const y = barTop(i);
     const height_ = barHeight();
     // barBox is lanes.js's, and it is the geometry the packing itself used:
@@ -404,7 +404,12 @@ export function createTimeline(container, { atlas, state, createScale = createLi
       const inside = overlaps(event.when, window);
       const box = geometry(event);
       const depth = reachable.get(event.id) ?? null;
-      const item = { id: event.id, event, onPath, selected, ofActor, ofNarrative, inside, depth, ...box };
+      const item = {
+        id: event.id, event, onPath, selected, ofActor, ofNarrative, inside, depth,
+        // A direct neighbour of the lens's focus set, drawn faintly (lens.js).
+        lensNear: lensNear ? lensNear.has(event.id) : false,
+        ...box,
+      };
       if (onPath || selected || ofActor || ofNarrative) alone.push(item);
       else groups[inside ? 'inside' : 'outside'].push(item);
     }
@@ -414,6 +419,7 @@ export function createTimeline(container, { atlas, state, createScale = createLi
         item.instant ? 'instant' : '',
         item.ongoing ? 'ongoing' : '',
         item.inside ? '' : 'faded',
+        item.lensNear ? 'lens-near' : '',
         count ? 'stack' : '',
         item.depth === null ? '' : `in-horizon ${horizonBand(item.depth)}`,
         item.ofNarrative ? 'of-narrative' : '',
@@ -627,7 +633,7 @@ export function createTimeline(container, { atlas, state, createScale = createLi
     }
     const deferred = [];
     lanes.forEach((lane, i) => {
-      for (const item of laneBars(into.bars, into.badges, lane, i, byLane.get(lane.id), s, window, actorIds, narrativeIds, pathIds, reachable)) {
+      for (const item of laneBars(into.bars, into.badges, lane, i, byLane.get(lane.id), s, window, actorIds, narrativeIds, pathIds, reachable, working.lensNear)) {
         deferred.push({ item, i });
       }
     });
@@ -637,6 +643,7 @@ export function createTimeline(container, { atlas, state, createScale = createLi
         item.instant ? 'instant' : '',
         item.ongoing ? 'ongoing' : '',
         item.inside ? '' : 'faded',
+        item.lensNear ? 'lens-near' : '',
         item.depth === null ? '' : `in-horizon ${horizonBand(item.depth)}`,
         item.ofNarrative ? 'of-narrative' : '',
         item.ofActor ? 'of-actor' : '',

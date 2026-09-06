@@ -23,11 +23,18 @@
 // `selected` over `source` over `place` over `actor` — so opening an event
 // from a place's list does not throw the place away.
 //
-// `focus` is the lens — `actor:salazar`, `place:lisbon`, `source:<id>` — and
-// it is not a selection: it says which events exist for the three views at
-// all, where a selection says which of them the reader is holding. One
-// removes, the other dims, and a state that ran them together could say
-// neither.
+// `focus` is the lens — a comma-separated list of `kind:id`, of any length and
+// of any of the six kinds (`actor`, `place`, `source`, `event`, `region`,
+// `narrative`), or the literal `none` — and it is not a selection: it says
+// which events exist for the three views at all, where a selection says which
+// of them the reader is holding. One removes, the other dims, and a state that
+// ran them together could say neither. `focusAll` makes the set the
+// intersection of the foci rather than their union.
+//
+// `none` is a value and not the absence of one, because the absence means
+// something else since H7: an open actor or place with no `?focus=` is a lens
+// on itself (lens.js), and `none` is how a reader says no to that while
+// keeping the card open.
 //
 // `group` is what the timeline's lanes and the graph's bands are — `none`,
 // `actor`, `place`, `region` — and `lanes` is the reader's own ordered list
@@ -78,7 +85,9 @@ import { isValidYear } from './util/dates.js';
 // copies of a closed set drift (health review A, finding 28): `vocab.js` is
 // as free of the data as this file is — it imports nothing at all — so
 // importing it costs this file none of its independence.
-import { EDGE_ID, RELATION_ID, FOCUS, GROUPS, VIEWS } from './vocab.js';
+import {
+  EDGE_ID, RELATION_ID, FOCUS_PARAM, GROUPS, VIEWS,
+} from './vocab.js';
 
 const SLUG = /^[a-z0-9]+(-[a-z0-9]+)*$/;
 export const LAYERS = Object.freeze(['land', 'territories', 'events']);
@@ -88,7 +97,7 @@ const PASSTHROUGH = Object.freeze(['fixtures']);
 
 export function defaultState() {
   return {
-    from: null, to: null, view: 'map', focus: null, group: 'none', lanes: [],
+    from: null, to: null, view: 'map', focus: null, focusAll: false, group: 'none', lanes: [],
     selected: null, source: null, place: null,
     actor: null, chain: [], horizon: null, layers: [...LAYERS], narrative: null, step: 0,
     walk: null,
@@ -198,7 +207,12 @@ export function parseState(search, defaults = defaultState()) {
     const id = params.get('walk');
     if (SLUG.test(id)) state.walk = id;
   }
-  if (params.has('focus') && FOCUS.test(params.get('focus'))) state.focus = params.get('focus');
+  // A comma-separated list of `kind:id` since H7, or the literal `none`; one
+  // focus is the same string it always was, so every link ever shared still
+  // opens on the lens it named. `focusAll` turns the union into an
+  // intersection — "all of these" rather than "any of these".
+  if (params.has('focus') && FOCUS_PARAM.test(params.get('focus'))) state.focus = params.get('focus');
+  state.focusAll = params.get('focusAll') === '1';
   if (params.has('group') && GROUPS.includes(params.get('group'))) state.group = params.get('group');
   // An explicit lane list is the reader's order, so duplicates are dropped
   // rather than sorted away; whether an id names a record at all is decided
@@ -236,6 +250,9 @@ export function formatState(state, search = '') {
   if (state.view && state.view !== 'map') params.set('view', state.view);
   if (state.walk) params.set('walk', state.walk);
   if (state.focus) params.set('focus', state.focus);
+  // Only beside a lens: "all of these" with no foci is an instruction with no
+  // addressee, and it would sit in every link the reader ever copied.
+  if (state.focusAll && state.focus && state.focus !== 'none') params.set('focusAll', '1');
   if (state.group && state.group !== 'none') params.set('group', state.group);
   // A lane list without a grouping to belong to would be an instruction with
   // no addressee, and `none` has no lanes to order.

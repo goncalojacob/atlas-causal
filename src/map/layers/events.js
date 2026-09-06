@@ -68,7 +68,7 @@ function shorten(text, chars = LABEL_CHARS) {
   return text.length > chars ? `${text.slice(0, chars - 1).trimEnd()}…` : text;
 }
 
-function markClasses(event, { selected, pathIds, actorIds, narrativeIds = null, reachable = null, faded = false }) {
+function markClasses(event, { selected, pathIds, actorIds, narrativeIds = null, reachable = null, faded = false, near = null }) {
   // The madder accent belongs to the walked path; an actor's events are
   // emphasised in cobalt so the two never say the same thing. The horizon's
   // reachable set is a ring rather than a fill, fading with distance, so it
@@ -76,6 +76,10 @@ function markClasses(event, { selected, pathIds, actorIds, narrativeIds = null, 
   const band = reachable && reachable.has(event.id) ? `in-horizon ${horizonBand(reachable.get(event.id))}` : '';
   return ['mark',
     faded ? 'faded' : '',
+    // A direct neighbour of the lens's focus set: in the picture, so that a
+    // neighbourhood does not look like an atlas in which nothing else
+    // happened, and drawn faintly so nobody takes it for what was asked for.
+    near && near.has(event.id) ? 'lens-near' : '',
     band,
     narrativeIds && narrativeIds.has(event.id) ? 'of-narrative' : '',
     actorIds && actorIds.has(event.id) ? 'of-actor' : '',
@@ -171,6 +175,7 @@ export function createEventsLayer(group, projection, { pointOf, onSelect, onClus
   return {
     render({
       events, window: timeWindow = null, margin = null, selected, pathIds, actorIds = null, narrativeIds = null, reachable = null,
+      near = null,
       alone: drawnAlone, kept, chainEdges, consequenceEdges, eventById, k = 1, view = null, spread = null,
       exactZoom = false,
     }) {
@@ -270,7 +275,7 @@ export function createEventsLayer(group, projection, { pointOf, onSelect, onClus
         if (cluster.count === 1) {
           appendMark(group, {
             x: cluster.x, y: cluster.y, radius: MARK_RADIUS, title: event.title, id: event.id,
-            classes: markClasses(event, { selected, pathIds, actorIds, narrativeIds, reachable }),
+            classes: markClasses(event, { selected, pathIds, actorIds, narrativeIds, reachable, near }),
           });
           continue;
         }
@@ -284,7 +289,10 @@ export function createEventsLayer(group, projection, { pointOf, onSelect, onClus
           : Infinity;
         appendMark(group, {
           x: cluster.x, y: cluster.y, radius: MARK_RADIUS, title, cluster: cluster.key,
-          classes: `mark cluster ${cluster.coincident ? 'coincident' : 'splittable'}${Number.isFinite(nearest) ? ` in-horizon ${horizonBand(nearest)}` : ''}`,
+          // A stack of nothing but neighbours is a neighbour: it is dimmed
+          // whole, because one full-strength mark over forty faint ones would
+          // say the lens kept something it did not.
+          classes: `mark cluster ${cluster.coincident ? 'coincident' : 'splittable'}${near && cluster.members.every((m) => near.has(m.id)) ? ' lens-near' : ''}${Number.isFinite(nearest) ? ` in-horizon ${horizonBand(nearest)}` : ''}`,
         });
         group.appendChild(textNode(`+${hidden}`, {
           x: cluster.x + (MARK_RADIUS + 2) / k,
@@ -306,7 +314,7 @@ export function createEventsLayer(group, projection, { pointOf, onSelect, onClus
         const mark = appendMark(group, {
           x, y, radius: isSelected ? SELECTED_RADIUS : MARK_RADIUS,
           title: faded ? `${event.title} — outside the window` : event.title, id: event.id,
-          classes: markClasses(event, { selected, pathIds, actorIds, narrativeIds, reachable, faded }),
+          classes: markClasses(event, { selected, pathIds, actorIds, narrativeIds, reachable, faded, near }),
         });
         if (isSelected) selectedMark = mark;
       }

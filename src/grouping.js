@@ -18,7 +18,7 @@
 import { html } from './util/dom.js';
 import { esc } from './util/esc.js';
 import { availableLanes, LANE_CAP } from './lanes.js';
-import { lensSet, lensLabel } from './lens.js';
+import { lensSet, lensLabels, withoutFocus, FOCUS_NONE } from './lens.js';
 import { resolveWindow } from './util/window.js';
 
 const GROUP_LABEL = Object.freeze({
@@ -28,7 +28,9 @@ const GROUP_LABEL = Object.freeze({
   region: 'one lane per region',
 });
 
-const LENS_KIND = Object.freeze({ actor: 'actor', place: 'place', source: 'source' });
+const LENS_KIND = Object.freeze({
+  actor: 'actor', place: 'place', source: 'source', event: 'event', region: 'region', narrative: 'narrative',
+});
 
 // Long lists get a box to search them; short ones do not need one and the
 // box would be one more thing between the reader and the list.
@@ -41,7 +43,7 @@ function fold(text) {
 export function createGrouping(container, { atlas, state }) {
   const button = html('button', { type: 'button', class: 'grouping-button', 'aria-expanded': 'false', 'aria-controls': 'grouping-panel' });
   const panel = html('div', { class: 'grouping-panel', id: 'grouping-panel', hidden: 'hidden', role: 'group', 'aria-label': 'Grouping' });
-  const badge = html('span', { class: 'lens-badge', hidden: 'hidden' });
+  const badge = html('span', { class: 'lens-chips', hidden: 'hidden' });
   container.append(button, panel, badge);
 
   let open = false;
@@ -186,26 +188,49 @@ export function createGrouping(container, { atlas, state }) {
   });
 
   function render(s) {
-    const lens = lensLabel(atlas, s.focus);
+    const foci = lensLabels(atlas, s);
     button.textContent = s.lanes.length && s.group !== 'none'
       ? `${GROUP_LABEL[s.group]} · ${s.lanes.length} chosen`
       : GROUP_LABEL[s.group] ?? GROUP_LABEL.none;
     button.setAttribute('title', 'What the timeline\'s lanes and the graph\'s bands are');
-    // The badge is the header's account of the lens: what is on, and the way
-    // out of it. A lens the reader cannot see they are inside would make the
-    // atlas look like it had lost half its records.
-    badge.hidden = !lens;
-    badge.innerHTML = lens
-      ? `<span class="lens-kind">${esc(LENS_KIND[lens.kind] ?? lens.kind)}</span>
-         <span class="lens-name">${esc(lens.name)}</span>
-         <button type="button" class="link small" data-action="clear-focus">show everything</button>`
-      : '';
+    // The chips are the header's account of the lens: which records are in
+    // focus, one chip each with its own ×, and the two controls that belong to
+    // the whole list. A lens the reader cannot see they are inside would make
+    // the atlas look like it had lost half its records — and with any number
+    // of foci a single badge could not say which ones they were.
+    badge.hidden = foci.length === 0;
+    badge.innerHTML = foci.length === 0 ? '' : `
+      ${foci.map((lens) => `<span class="lens-badge">
+        <span class="lens-kind">${esc(LENS_KIND[lens.kind] ?? lens.kind)}</span>
+        <span class="lens-name">${esc(lens.name)}</span>
+        <button type="button" class="lens-drop" data-action="unfocus" data-focus="${esc(lens.focus)}"
+          aria-label="${esc(`Stop focusing on ${lens.name}`)}" title="${esc(`Stop focusing on ${lens.name}`)}">×</button>
+      </span>`).join('')}
+      ${foci.length > 1 ? `<button type="button" class="link small lens-all" data-action="focus-all"
+        aria-pressed="${s.focusAll ? 'true' : 'false'}"
+        title="Events that every focus keeps, rather than events any of them keeps">all of these</button>` : ''}
+      <button type="button" class="link small" data-action="clear-focus">show everything</button>`;
     if (open) draw();
   }
 
-  // The badge's own button, since it is drawn here and not by the panel.
+  // The chips' own buttons, since they are drawn here and not by the panel.
+  // "Show everything" writes `none` rather than clearing the parameter,
+  // because an absent parameter is what asks for the one-focus lens on an
+  // open actor or place (lens.js): clearing it would put back the lens the
+  // reader has just said no to.
   container.addEventListener('click', (e) => {
-    if (e.target.closest('[data-action="clear-focus"]')) state.set({ focus: null });
+    const el = e.target.closest('[data-action]');
+    if (!el) return;
+    const s = state.get();
+    if (el.dataset.action === 'clear-focus') state.set({ focus: FOCUS_NONE, focusAll: false });
+    else if (el.dataset.action === 'focus-all') state.set({ focusAll: !s.focusAll });
+    else if (el.dataset.action === 'unfocus') {
+      const [kind, id] = String(el.dataset.focus).split(':');
+      // From what is actually on, which may be the implicit one-focus lens:
+      // dropping its chip is the reader saying no to it, and that is `none`.
+      const now = lensLabels(atlas, s).map((f) => f.focus).join(',');
+      state.set({ focus: withoutFocus(now, kind, id) });
+    }
   });
 
   state.subscribe(render);

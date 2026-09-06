@@ -263,7 +263,9 @@ export function reachableBy(adj, id, horizon) {
 // The real atlas always carries its own, so nothing is built per call there.
 function adjacencyOf(atlas) {
   if (atlas.adjacency) return atlas.adjacency;
-  return buildAdjacency([...atlas.events.values()], [...atlas.edges.values()]);
+  const events = atlas.events instanceof Map ? [...atlas.events.values()] : atlas.activeEvents ?? [];
+  const edges = atlas.edges instanceof Map ? [...atlas.edges.values()] : atlas.edges ?? [];
+  return buildAdjacency(events, edges);
 }
 
 const byStartThenId = (a, b) => startOf(a) - startOf(b)

@@ -13,6 +13,7 @@ test('parse and format round trip', () => {
     to: 1250,
     view: 'graph',
     focus: null,
+    focusAll: false,
     group: 'none',
     lanes: [],
     selected: 'fixture-event-t',
@@ -103,7 +104,7 @@ test('the store merges patches and notifies', () => {
   store.set({ to: 1220 });
   assert.deepEqual(seen, [1210, 1210]);
   assert.deepEqual(store.get(), {
-    from: null, to: 1220, view: 'map', focus: null, group: 'none', lanes: [],
+    from: null, to: 1220, view: 'map', focus: null, focusAll: false, group: 'none', lanes: [],
     selected: 'fixture-event-a', source: null,
     place: null, actor: null, chain: [], horizon: null, layers: ['land', 'territories', 'events'],
     narrative: null, step: 0, walk: null, bbox: null,
@@ -187,13 +188,38 @@ test('a decade is the ten years around a year, floored', () => {
 
 // The lens and the grouping: how the atlas is drawn, not what is selected in
 // it, and both in the link for the same reason the view is.
-test('a lens travels in the URL, readably, and only in one of three kinds', () => {
+//
+// Six kinds since H7, and a list of any length. One focus is the same string
+// it always was, so every link ever shared still opens on the lens it named.
+test('a lens travels in the URL, readably, as a list of any of six kinds', () => {
   assert.equal(formatState({ ...defaultState(), focus: 'actor:salazar' }), '?focus=actor:salazar');
   assert.equal(parseState('?focus=actor:salazar').focus, 'actor:salazar');
   assert.equal(parseState('?focus=place:santa-comba-dao').focus, 'place:santa-comba-dao');
   assert.equal(parseState('?focus=source:russell-2000-henry').focus, 'source:russell-2000-henry');
+  assert.equal(parseState('?focus=event:carnation-revolution-1974').focus, 'event:carnation-revolution-1974');
+  assert.equal(parseState('?focus=region:africa').focus, 'region:africa');
+  assert.equal(parseState('?focus=narrative:how-it-ended').focus, 'narrative:how-it-ended');
   assert.equal(parseState('?focus=' + encodeURIComponent('actor:salazar')).focus, 'actor:salazar');
-  for (const bad of ['event:x', 'actor:', 'actor', ':x', 'actor:../secret', 'actor:Salazar', 'narrative:x']) {
+
+  // A list, and the commas stay readable in the address bar.
+  const many = { ...defaultState(), focus: 'actor:salazar,event:x,region:africa' };
+  assert.equal(formatState(many), '?focus=actor:salazar,event:x,region:africa');
+  assert.equal(parseState(formatState(many)).focus, many.focus);
+
+  // `none` is a value: the reader turned off the lens an open card offered.
+  assert.equal(parseState('?focus=none').focus, 'none');
+  assert.equal(formatState({ ...defaultState(), focus: 'none' }), '?focus=none');
+
+  // "All of these" rather than "any of these", and only beside a lens.
+  assert.equal(parseState('?focus=actor:salazar&focusAll=1').focusAll, true);
+  assert.equal(parseState('?focus=actor:salazar').focusAll, false);
+  assert.equal(formatState({ ...many, focusAll: true }), '?focus=actor:salazar,event:x,region:africa&focusAll=1');
+  assert.equal(formatState({ ...defaultState(), focusAll: true }), '', 'with no lens it has no addressee');
+  assert.equal(formatState({ ...defaultState(), focus: 'none', focusAll: true }), '?focus=none');
+
+  // A malformed parameter is refused whole: `parseFoci` is what drops one bad
+  // entry out of a list, and this is the gate that keeps garbage out of state.
+  for (const bad of ['actor:', 'actor', ':x', 'actor:../secret', 'actor:Salazar', 'edge:a--b--caused', 'actor:salazar,', 'none,actor:salazar']) {
     assert.equal(parseState(`?focus=${encodeURIComponent(bad)}`).focus, null, bad);
   }
   assert.equal(formatState({ ...defaultState(), focus: null }), '');

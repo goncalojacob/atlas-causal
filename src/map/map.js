@@ -423,6 +423,9 @@ export function createMap(container, { atlas, state, onCluster = null }) {
       narrativeIds: working.narrative,
       // Empty unless the reader has chosen a horizon year (horizon.js).
       reachable: working.reachable,
+      // The lens's dimmed ring: what the focus set leads to and came from
+      // directly, drawn faintly rather than hidden (lens.js).
+      near: working.lensNear,
       // Everything the reader is holding keeps a mark of its own; the wider
       // set is what is drawn at all, in the window or out of it.
       alone: heldSet(working),

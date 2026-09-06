@@ -79,9 +79,19 @@ export const RELATION_TYPES = Object.freeze([
 // and therefore the right first thing to show.
 export const GROUPS = Object.freeze(['none', 'actor', 'place', 'region']);
 
-// The three kinds a lens can be about. An edge and a narrative are arguments
-// about records rather than records events belong to, so neither is one.
-export const FOCUS_KINDS = Object.freeze(['actor', 'place', 'source']);
+// The kinds a lens can be about. Three until H7, and six since: the owner
+// asked to be able to focus on "parent events, actors, timelines or others, or
+// any number of these together", so an event, a region and a narrative are
+// kinds a focus may name as well. An edge is still not one — it is a single
+// argument between two events, and a lens on it would be a lens on those two.
+export const FOCUS_KINDS = Object.freeze(['actor', 'place', 'source', 'event', 'region', 'narrative']);
+
+// The literal a reader writes when they turn off a lens the atlas offered
+// them. Opening an actor or a place with no `?focus=` behaves as a one-focus
+// lens on it (lens.js), and without this there would be no way to say "no,
+// show me everything" while keeping the card open: an absent parameter is
+// what asks for that lens in the first place.
+export const FOCUS_NONE = 'none';
 
 // The two views the atlas draws the same state in.
 export const VIEWS = Object.freeze(['map', 'graph']);
@@ -111,6 +121,12 @@ export function edgeId(edge) {
 }
 // "actor:salazar" — a lens kind and the id it is about.
 export const FOCUS = new RegExp(`^(${FOCUS_KINDS.join('|')}):(${SLUG_SOURCE})$`);
+
+// The whole `?focus=` parameter since H7: a comma-separated list of those, or
+// the literal `none`. One focus is the same string it always was, so every
+// link ever shared still opens on the lens it named.
+const ONE_FOCUS = `(?:${FOCUS_KINDS.join('|')}):${SLUG_SOURCE}`;
+export const FOCUS_PARAM = new RegExp(`^(?:${FOCUS_NONE}|${ONE_FOCUS}(?:,${ONE_FOCUS})*)$`);
 
 const labelMap = (types, key) => Object.freeze(Object.fromEntries(types.map((t) => [t.id, t[key]])));
 

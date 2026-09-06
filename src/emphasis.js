@@ -29,7 +29,7 @@ import { chainEdges } from './chain.js';
 import { convergence } from './graph.js';
 import { horizonSet, SHOWN } from './horizon.js';
 import { narrativeSet } from './narrative.js';
-import { lensSet } from './lens.js';
+import { lensView } from './lens.js';
 
 // The eight sets, and what each one is:
 //
@@ -44,7 +44,10 @@ import { lensSet } from './lens.js';
 //   reachable     what the selected event had led to by the horizon year, as
 //                 a Map<id, depth> rather than a Set: the depth is what fades
 //                 a mark, and dropping it would cost the view the band
-//   lens          the events a lens kept, or null when there is no lens
+//   lens          the events a lens draws at all — the focus set and its
+//                 direct neighbours — or null when there is no lens
+//   lensNear      the neighbours alone, which are the ones drawn dimmed
+//   lensFocus     the focus set alone, or null when there is no lens
 //
 // `held` is the union of the first six plus the narrative's walk — everything
 // the reader is holding, which is the set a cluster may never swallow and the
@@ -75,7 +78,8 @@ export function workingSet(atlas, state) {
 }
 
 function assemble(atlas, state) {
-  const lens = lensSet(atlas, state);
+  const view = lensView(atlas, state);
+  const lens = view?.shown ?? null;
   const kept = (id) => !lens || lens.has(id);
   const filter = (ids) => new Set([...ids].filter(kept));
 
@@ -123,6 +127,13 @@ function assemble(atlas, state) {
     narrative,
     reachable: lens ? new Map([...reachable].filter(([id]) => lens.has(id))) : reachable,
     lens,
+    // The half of the lens that is drawn faintly: the direct causes and
+    // consequences of the focus set, which are in the picture so that a
+    // neighbourhood does not look like an atlas in which nothing else
+    // happened, and dimmed so that nobody mistakes them for what was asked
+    // for (lens.js). Empty when there is no lens: there is nothing to dim.
+    lensNear: view?.near ?? new Set(),
+    lensFocus: view?.set ?? null,
   };
 }
 

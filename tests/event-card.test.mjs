@@ -27,6 +27,7 @@ function context(atlas) {
     discussLink: () => '<p class="discuss"><a href="#">Discuss this record</a></p>',
     wikipediaHtml: () => '<p class="wikipedia"><a href="#">Read more on Wikipedia</a></p>',
     historyHtml: () => '',
+    lensControl: (kind, id) => `<button type="button" class="link small lens-control" data-action="focus" data-kind="${esc(kind)}" data-id="${esc(id)}">Focus on this</button>`,
     partOfHtml: () => '<ul class="narrative-rows"></ul>',
     highlightedActor: (state) => (state.actor ? atlas.actors.get(state.actor) ?? null : null),
   };

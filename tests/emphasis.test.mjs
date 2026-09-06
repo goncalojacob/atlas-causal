@@ -99,32 +99,44 @@ test('the horizon is reachable and not held: a mark of its own is not what it as
 
 test('the lens removes from every part of it, not only from the marks', async () => {
   const atlas = await fixtureAtlas();
-  // Actor one is in A and B; a lens on actor two is in B and T, so A must
-  // leave the walked path even though the reader is standing on it.
+  // Actor one is in A and B; a lens on actor two is in B and T. A is one hop
+  // from B, so it is in the dimmed ring and not in the focus set — and an
+  // event that is in neither leaves the walked path even though the reader is
+  // standing on the chain that reaches it.
   const state = {
     ...defaultState(), focus: 'actor:fixture-actor-two', selected: B, chain: [A_TO_B], horizon: 3000,
   };
   const w = workingSet(atlas, state);
   assert.ok(w.lens instanceof Set);
-  assert.ok(!w.lens.has(A), 'the lens does not keep A');
+  assert.ok(!w.lensFocus.has(A), 'A is not what was asked for');
+  assert.ok(w.lensNear.has(A), 'it is one hop from B, so it is drawn dimmed');
+  assert.ok(w.lens.has(A), 'and therefore drawn at all');
+  // Nothing outside the lens is drawn by any part of the working set.
   for (const set of [w.selected, w.path, w.consequences, w.converging]) {
     for (const id of set) assert.ok(w.lens.has(id), `${id} is drawn but the lens says it is not there`);
   }
   for (const id of w.reachable.keys()) assert.ok(w.lens.has(id), id);
-  assert.ok(!heldSet(w).has(A));
+  // Something the lens really does remove: an event that is neither in the
+  // set nor one hop from it.
+  const outside = atlas.activeEvents.map((e) => e.id).find((id) => !w.lens.has(id));
+  assert.ok(outside, 'the fixtures are wider than this neighbourhood');
+  assert.ok(!heldSet(w).has(outside));
   // And an actor's emphasis is filtered the same way.
   const withActor = workingSet(atlas, { ...state, actor: 'fixture-actor-one' });
-  assert.deepEqual(sorted(withActor.actor), [B], 'A is outside the lens');
+  for (const id of withActor.actor) assert.ok(w.lens.has(id), id);
 });
 
 test('a lens with nothing else open is what the graph draws one node at a time', async () => {
   const atlas = await fixtureAtlas();
   const w = workingSet(atlas, { ...defaultState(), focus: 'actor:fixture-actor-one' });
-  assert.deepEqual(sorted(w.lens), [A, B]);
+  // A and B are the actor's own; a2 and d are one hop out and drawn dimmed.
+  assert.deepEqual(sorted(w.lensFocus), [A, B]);
+  assert.deepEqual(sorted(w.lens), [A, 'fixture-event-a2', B, 'fixture-event-d'].sort());
+  assert.deepEqual(sorted(w.lensNear), ['fixture-event-a2', 'fixture-event-d']);
   // The map and the timeline filter their own event lists, so the lens is
   // not part of what they hold; the graph asks for it by name.
   assert.equal(heldSet(w).size, 0);
-  assert.deepEqual(sorted(heldSet(w, { lens: true })), [A, B]);
+  assert.deepEqual(sorted(heldSet(w, { lens: true })), sorted(w.lens));
 });
 
 // --- what H4c changed: one working set per state change, and a capped hold

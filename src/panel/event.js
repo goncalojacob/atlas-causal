@@ -286,6 +286,7 @@ export function eventCardHtml(ctx, { event, found, state, remembered = null }) {
         ${whereHtml(ctx, event)}
         · <span class="lane">${esc(ctx.laneLabel(event.region))}</span>
         <button type="button" class="link small" data-action="year" data-year="${esc(ctx.startYear(event))}">map at ${esc(formatYear(ctx.startYear(event)))}</button>
+        ${ctx.lensControl('event', event.id)}
       </p>
       ${actorChipsHtml(ctx, event, highlightedActor?.id ?? null)}
       ${drawnHtml(ctx, event, state)}

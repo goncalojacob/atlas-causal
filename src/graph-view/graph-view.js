@@ -516,8 +516,10 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
     }
 
     // The same lens the arrangement was built from; what it kept is drawn
-    // one event to a node.
+    // one event to a node — the focus set in full, and the direct causes and
+    // consequences around it faintly (lens.js).
     const lens = working.lens;
+    const lensNear = working.lensNear;
     const actorIds = working.actor;
     // The whole of an open narrative's walk: where it is going, not only
     // where the reader has got to.
@@ -642,6 +644,7 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
         nodesGroup.appendChild(svg('circle', {
           cx: stack.x, cy: stack.y, r: radius / k,
           class: classes('node', 'stack', stack.coincident ? 'coincident' : 'splittable', faded ? 'faded' : '',
+            stack.members.every((m) => lensNear.has(m.id)) ? 'lens-near' : '',
             Number.isFinite(nearest) ? `in-horizon ${horizonBand(nearest)}` : ''),
           'data-stack': stack.key,
         }, [svgTitle(`${node.event.title} — and ${hidden} more event${hidden === 1 ? '' : 's'} here, ${span}`)]));
@@ -658,6 +661,7 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
       const cls = classes(
         'node',
         faded ? 'faded' : '',
+        lensNear.has(node.id) ? 'lens-near' : '',
         reachable.has(node.id) ? `in-horizon ${horizonBand(reachable.get(node.id))}` : '',
         narrativeIds && narrativeIds.has(node.id) ? 'of-narrative' : '',
         actorIds && actorIds.has(node.id) ? 'of-actor' : '',

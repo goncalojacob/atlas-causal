@@ -301,6 +301,25 @@ input, select, textarea { accent-color: var(--cobalt); }
 .lens-badge .lens-kind { font-size: var(--text-xs); text-transform: uppercase; letter-spacing: var(--tracking-label); }
 .lens-badge .lens-name { max-width: 22ch; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .lens-control.on { font-weight: 600; }
+/* One chip per focus since H7, each with its own ×, then the two controls
+   that belong to the whole list: "all of these" and "show everything". A
+   reader holding four foci has to be able to see which four and drop one. */
+.lens-chips { display: inline-flex; flex-wrap: wrap; align-items: baseline; gap: 0.35rem; }
+.lens-chips .lens-badge { gap: 0.3rem; }
+.lens-chips .lens-drop {
+  border: 0; background: none; padding: 0 0.1rem; cursor: pointer;
+  color: var(--cobalt); font-size: var(--text-sm); line-height: 1;
+}
+.lens-chips .lens-drop:hover { color: var(--madder); }
+.lens-chips .lens-all[aria-pressed="true"] { font-weight: 600; color: var(--cobalt); }
+/* The events one hop out from the focus set: in the picture, so that a
+   neighbourhood does not read as an atlas in which nothing else happened,
+   and faint enough that nobody takes them for what was asked for. Fainter
+   than `faded`, which means "outside the band" and is a different sentence. */
+.map .mark.lens-near, .graph .node.lens-near, .timeline .bar.lens-near { opacity: 0.22; }
+.map .mark.lens-near.selected, .map .mark.lens-near.on-path,
+.graph .node.lens-near.selected, .graph .node.lens-near.on-path,
+.timeline .bar.lens-near.selected, .timeline .bar.lens-near.on-path { opacity: 0.6; }
 /* A search result the lens does not keep: still listed, plainly marked, and
    still choosable — the lens narrows what is drawn, never what is found. */
 .search-option.outside-lens .search-label { color: var(--ink-soft); }
