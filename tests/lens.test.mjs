@@ -11,6 +11,8 @@ import {
   parseFocus, parseFoci, formatFoci, lensLabel, lensLabels, activeFoci,
   withFocus, onlyFocus, withoutFocus, FOCUS_NONE,
 } from '../src/lens.js';
+import { defaultState } from '../src/state.js';
+import { atlasOf, FIXTURE_DATA } from './helpers.mjs';
 
 const event = (id, { actors = [], place = null, region = 'europe', when = { start: 1970, end: 1970 } } = {}) => ({
   id, title: id, status: 'active', when, place, region, weight: 0,
@@ -148,6 +150,44 @@ test('an event lens is that event, and the neighbourhood is the ring around it',
   t.events.get('a').status = 'merged';
   assert.equal(eventsOfFocus('event:a', t).size, 0);
   assert.equal(eventsOfFocus('event:nothing', topology()).size, 0);
+});
+
+// M30b-2, A6: `event:` narrows to the subtree. A leaf is still one event —
+// which is every event in `data/` today — and a parent is itself and
+// everything inside it, however deep.
+test('an event lens on a parent is the whole subtree, and stops on a cycle', () => {
+  const t = topology();
+  t.childrenOf = new Map([['a', ['b', 'c']], ['c', ['d']]]);
+  assert.deepEqual(sorted(eventsOfFocus('event:a', t)), ['a', 'b', 'c', 'd']);
+  // From inside the tree: the parts of that part, and never back up.
+  assert.deepEqual(sorted(eventsOfFocus('event:c', t)), ['c', 'd']);
+  assert.deepEqual(sorted(eventsOfFocus('event:b', t)), ['b'], 'a leaf is one event');
+
+  // A tombstone among the parts is not an event a lens keeps.
+  t.events.get('b').status = 'merged';
+  assert.deepEqual(sorted(eventsOfFocus('event:a', t)), ['a', 'c', 'd']);
+
+  // Rule 24 refuses a cycle; a lens draws whatever is in the file, and a
+  // visited set is what makes bad data narrow the atlas rather than hang it.
+  const ring = topology();
+  ring.childrenOf = new Map([['a', ['c']], ['c', ['a']]]);
+  assert.deepEqual(sorted(eventsOfFocus('event:a', ring)), ['a', 'c']);
+});
+
+test('the subtree lens reads `parent` and never the adjacency', async () => {
+  const atlas = await atlasOf(FIXTURE_DATA);
+  // fixture-event-f holds fixture-event-t and fixture-event-h.
+  assert.deepEqual(
+    sorted(eventsOfFocus('event:fixture-event-f', atlas)),
+    ['fixture-event-f', 'fixture-event-h', 'fixture-event-t'],
+  );
+  // What the focus set keeps is the subtree; the ring around it is the atlas's
+  // own edges, exactly as it is for every other focus — being part of
+  // something is not a link (CLAUDE.md).
+  const view = lensView(atlas, { ...defaultState(), focus: 'event:fixture-event-f' });
+  assert.deepEqual(sorted(view.set), ['fixture-event-f', 'fixture-event-h', 'fixture-event-t']);
+  for (const id of view.near) assert.ok(!view.set.has(id));
+  assert.ok(view.near.has('fixture-event-d'), 'd → t is an edge into the subtree');
 });
 
 test('a narrative lens is the walk, and only the events still active', () => {

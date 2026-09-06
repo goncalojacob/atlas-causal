@@ -123,6 +123,19 @@ test('a child says what it is part of, and a parent lists its parts in order', (
   );
 });
 
+// A6: no third control, one line. The two verbs `lensControl` already draws
+// mean something new on a parent — the whole subtree rather than one event —
+// and the card is where that is said.
+test('a parent says in one line what focusing only on it would keep', () => {
+  const parent = eventCardHtml(ctx, { event: atlas.events.get('fixture-event-f'), found: { via: [] }, state });
+  assert.match(parent, /<p class="subtree-lens muted">Focusing only on this keeps it and the 2\s*events inside it/);
+  // And no fourth control was added to say it.
+  assert.doesNotMatch(parent, /Show only this/);
+
+  const leaf = eventCardHtml(ctx, { event: atlas.events.get('fixture-event-h'), found: { via: [] }, state });
+  assert.doesNotMatch(leaf, /subtree-lens/, 'a leaf lens is one event and needs no sentence');
+});
+
 test('being part of something changes no consequence and no cause', () => {
   const parent = atlas.events.get('fixture-event-f');
   // The parts are not consequences: what the card counts under Consequences

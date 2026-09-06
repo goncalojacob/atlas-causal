@@ -93,11 +93,18 @@ export function formatFoci(foci) {
 // the whole atlas and call it the source's. Whoever sets the focus is what
 // asks for the file — `main.js` — and the views redraw when it lands.
 //
-// An `event:` focus is the event itself. The brief calls it "a parent, its
-// subtree; or any event, its neighbourhood": the neighbourhood is the `near`
-// ring every focus already gets, and the subtree arrives with parent events
-// (M30) — there is no parent field to read yet, and a lens that guessed at one
-// would be inventing a hierarchy the data does not have.
+// An `event:` focus is the event **and its parts**, all the way down: the
+// brief calls it "a parent, its subtree; or any event, its neighbourhood", and
+// the neighbourhood is the `near` ring every focus already gets. A leaf has no
+// parts, so on the overwhelming majority of events this is the one-event lens
+// it has always been; on a parent it is the answer to "show me only this war".
+//
+// Walked through `topology.childrenOf` — the other direction of `parent`,
+// built once in `createAtlas` (data.js) — and never through the adjacency:
+// `parent` is a display fact and not an argument (CLAUDE.md), so narrowing to
+// a subtree changes which events are drawn and no consequence, cause or
+// convergence. A visited set, because rule 24 refuses a cycle but a lens draws
+// whatever is in the file: bad data should narrow the atlas, not hang it.
 export function eventsOfFocus(focus, topology) {
   const parsed = typeof focus === 'string' ? parseFocus(focus) : focus;
   if (!parsed || !FOCUS_KINDS.includes(parsed.kind)) return null;
@@ -120,7 +127,18 @@ export function eventsOfFocus(focus, topology) {
   }
   if (kind === 'event') {
     const event = topology.events?.get(id) ?? null;
-    if (event && event.status === 'active') ids.add(event.id);
+    if (!event || event.status !== 'active') return ids;
+    const queue = [event.id];
+    while (queue.length) {
+      const at = queue.pop();
+      if (ids.has(at)) continue;
+      ids.add(at);
+      for (const child of topology.childrenOf?.get(at) ?? []) {
+        // `childrenOf` is built from the active events alone, so this is a
+        // guard for a topology written by hand in a test, not a case.
+        if ((topology.events?.get(child)?.status ?? 'active') === 'active') queue.push(child);
+      }
+    }
     return ids;
   }
   if (kind === 'narrative') {

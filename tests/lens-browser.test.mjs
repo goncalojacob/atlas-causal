@@ -15,7 +15,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import path from 'node:path';
 import { withBrowser, open, waitFor, skip } from './browser.mjs';
-import { atlasOf, ROOT } from './helpers.mjs';
+import { atlasOf, FIXTURE_DATA, ROOT } from './helpers.mjs';
 import { lensView } from '../src/lens.js';
 import { defaultState } from '../src/state.js';
 
@@ -234,6 +234,39 @@ test('two hops walked out of an actor keep the selected event drawn', { skip }, 
       for (const id of walked) {
         assert.ok(drawn.includes(id), `${name} left out ${id}, which the reader has just walked to`);
       }
+    }
+  });
+});
+
+// M30b-2, A6: `event:` narrows to the subtree. `data/` holds no event inside
+// another yet, so this one is on the fixtures — which is where the three
+// records that make a parent live (?fixtures=1, src/main.js).
+test('an event lens on a parent narrows every view to its parts', { skip }, async () => {
+  const atlas = await atlasOf(FIXTURE_DATA);
+  const view = lensView(atlas, { ...defaultState(), focus: 'event:fixture-event-f' });
+  assert.deepEqual(
+    [...view.set].sort(),
+    ['fixture-event-f', 'fixture-event-h', 'fixture-event-t'],
+    'the parent and both of its parts',
+  );
+
+  await withBrowser(async (page, url) => {
+    for (const [name, { selector, url: extra }] of Object.entries(VIEWS)) {
+      await open(page, url(`?fixtures=1&focus=event:fixture-event-f${extra}`), ready);
+      await waitFor(page, `return document.querySelectorAll('${selector}').length > 0;`, `${name} to draw a mark`);
+      const drawn = await page.eval(DRAWN(selector));
+      assert.ok(drawn.length > 0, `${name} drew nothing`);
+      for (const id of drawn) assert.ok(view.shown.has(id), `${name} drew ${id}, outside the subtree`);
+      // The parts are drawn wherever the view has somewhere to put them: the
+      // parent itself has no place, so the map has no mark for it, which is
+      // the absence the map has always had for a placeless event.
+      for (const id of ['fixture-event-t', 'fixture-event-h']) {
+        assert.ok(drawn.includes(id), `${name} left out ${id}, which is inside the focus`);
+      }
+      // And the ring is still the atlas's own edges: being part of something
+      // is not a link, so nothing was dimmed for being a sibling.
+      const dimmed = await page.eval(NEAR(selector));
+      for (const id of dimmed) assert.ok(view.near.has(id), `${name} dimmed ${id}, which is not a neighbour`);
     }
   });
 });
