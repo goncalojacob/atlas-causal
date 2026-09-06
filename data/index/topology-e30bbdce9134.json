@@ -2588,6 +2588,24 @@
       }
     },
     {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "hamas",
+      "name": "Hamas",
+      "names": [
+        "Hamas",
+        "Islamic Resistance Movement",
+        "Movimento de Resistência Islâmica",
+        "حركة المقاومة الإسلامية"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 1987
+      }
+    },
+    {
       "actorType": "polity",
       "aliases": [],
       "id": "hawaii",
@@ -6425,6 +6443,24 @@
       }
     },
     {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "wagner-group",
+      "name": "Wagner Group",
+      "names": [
+        "Wagner Group",
+        "Grupo Wagner",
+        "PMC Wagner",
+        "ЧВК «Вагнер»"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 2014
+      }
+    },
+    {
       "actorType": "polity",
       "aliases": [],
       "id": "west-bank",
@@ -7018,6 +7054,16 @@
     },
     {
       "aliases": [],
+      "confidence": "probable",
+      "from": "algerian-war",
+      "id": "algerian-war--angola-war-begins-1961--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "angola-war-begins-1961",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
       "confidence": "consensus",
       "from": "alvor-agreement-1975",
       "id": "alvor-agreement-1975--angola-independence-1975--enabled",
@@ -7089,6 +7135,16 @@
     {
       "aliases": [],
       "confidence": "probable",
+      "from": "assassination-of-archduke-franz-ferdinand",
+      "id": "assassination-of-archduke-franz-ferdinand--world-war-i--caused",
+      "status": "active",
+      "supersededBy": null,
+      "to": "world-war-i",
+      "type": "caused"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
       "from": "azores-agreement-1943",
       "id": "azores-agreement-1943--nato-founding-1949--enabled",
       "status": "active",
@@ -7114,6 +7170,16 @@
       "status": "active",
       "supersededBy": null,
       "to": "coup-28-may-1926",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "boxer-rebellion",
+      "id": "boxer-rebellion--xinhai-revolution--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "xinhai-revolution",
       "type": "precondition-of"
     },
     {
@@ -7244,6 +7310,36 @@
       "status": "active",
       "supersededBy": null,
       "to": "spinola-resigns-1974",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "charter-of-the-united-nations",
+      "id": "charter-of-the-united-nations--international-covenant-on-civil-and-political-rights--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "international-covenant-on-civil-and-political-rights",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "consensus",
+      "from": "charter-of-the-united-nations",
+      "id": "charter-of-the-united-nations--un-admission-1955--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "un-admission-1955",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "chinese-civil-war",
+      "id": "chinese-civil-war--korean-war--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "korean-war",
       "type": "precondition-of"
     },
     {
@@ -7508,6 +7604,16 @@
     },
     {
       "aliases": [],
+      "confidence": "probable",
+      "from": "cuban-revolution",
+      "id": "cuban-revolution--angola-independence-1975--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "angola-independence-1975",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
       "confidence": "consensus",
       "from": "delgado-candidacy-1958",
       "id": "delgado-candidacy-1958--constitutional-revision-1959--caused",
@@ -7555,6 +7661,16 @@
       "supersededBy": null,
       "to": "hat-nipah-and-same-massacres",
       "type": "enabled"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "eastern-front",
+      "id": "eastern-front--potsdam-conference--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "potsdam-conference",
+      "type": "precondition-of"
     },
     {
       "aliases": [],
@@ -7648,6 +7764,86 @@
     },
     {
       "aliases": [],
+      "confidence": "probable",
+      "from": "euromaidan",
+      "id": "euromaidan--russo-ukrainian-war--caused",
+      "status": "active",
+      "supersededBy": null,
+      "to": "russo-ukrainian-war",
+      "type": "caused"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "february-revolution",
+      "id": "february-revolution--october-revolution--enabled",
+      "status": "active",
+      "supersededBy": null,
+      "to": "october-revolution",
+      "type": "enabled"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "first-indochina-war",
+      "id": "first-indochina-war--algerian-war--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "algerian-war",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "first-indochina-war",
+      "id": "first-indochina-war--vietnam-war--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "vietnam-war",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "full-scale-russo-ukrainian-war",
+      "id": "full-scale-russo-ukrainian-war--bucha-massacre--caused",
+      "status": "active",
+      "supersededBy": null,
+      "to": "bucha-massacre",
+      "type": "caused"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "full-scale-russo-ukrainian-war",
+      "id": "full-scale-russo-ukrainian-war--wagner-group-rebellion--caused",
+      "status": "active",
+      "supersededBy": null,
+      "to": "wagner-group-rebellion",
+      "type": "caused"
+    },
+    {
+      "aliases": [],
+      "confidence": "disputed",
+      "from": "gaza-war",
+      "id": "gaza-war--gaza-genocide--caused",
+      "status": "active",
+      "supersededBy": null,
+      "to": "gaza-genocide",
+      "type": "caused"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "gaza-war",
+      "id": "gaza-war--twelve-day-war--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "twelve-day-war",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
       "confidence": "disputed",
       "from": "geringonca-2015",
       "id": "geringonca-2015--legislative-election-2019--precondition-of",
@@ -7705,6 +7901,16 @@
       "supersededBy": null,
       "to": "legislative-election-2025",
       "type": "caused"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "great-depression",
+      "id": "great-depression--salazar-president-of-council-1932--enabled",
+      "status": "active",
+      "supersededBy": null,
+      "to": "salazar-president-of-council-1932",
+      "type": "enabled"
     },
     {
       "aliases": [],
@@ -7769,6 +7975,16 @@
     {
       "aliases": [],
       "confidence": "probable",
+      "from": "gulf-war",
+      "id": "gulf-war--iraq-war--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "iraq-war",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
       "from": "iberian-pact",
       "id": "iberian-pact--azores-agreement-1943--precondition-of",
       "status": "active",
@@ -7809,11 +8025,61 @@
     {
       "aliases": [],
       "confidence": "probable",
+      "from": "indo-pakistani-war-of-1965",
+      "id": "indo-pakistani-war-of-1965--bangladesh-liberation-war--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "bangladesh-liberation-war",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "iranian-revolution",
+      "id": "iranian-revolution--2025-2026-iranian-protests--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "2025-2026-iranian-protests",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "iranian-revolution",
+      "id": "iranian-revolution--imf-agreement-1983--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "imf-agreement-1983",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "katyn-massacre",
+      "id": "katyn-massacre--warsaw-uprising--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "warsaw-uprising",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
       "from": "law-of-separation-1911",
       "id": "law-of-separation-1911--coup-28-may-1926--precondition-of",
       "status": "active",
       "supersededBy": null,
       "to": "coup-28-may-1926",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "lebanese-civil-war",
+      "id": "lebanese-civil-war--2006-lebanon-war--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "2006-lebanon-war",
       "type": "precondition-of"
     },
     {
@@ -7908,6 +8174,26 @@
     },
     {
       "aliases": [],
+      "confidence": "consensus",
+      "from": "maastricht-treaty",
+      "id": "maastricht-treaty--euro-adoption-1999--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "euro-adoption-1999",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "molotov-ribbentrop-pact",
+      "id": "molotov-ribbentrop-pact--world-war-ii--enabled",
+      "status": "active",
+      "supersededBy": null,
+      "to": "world-war-ii",
+      "type": "enabled"
+    },
+    {
+      "aliases": [],
       "confidence": "disputed",
       "from": "monarchy-of-the-north-1919",
       "id": "monarchy-of-the-north-1919--coup-28-may-1926--precondition-of",
@@ -7959,6 +8245,16 @@
     {
       "aliases": [],
       "confidence": "probable",
+      "from": "munich-agreement",
+      "id": "munich-agreement--molotov-ribbentrop-pact--enabled",
+      "status": "active",
+      "supersededBy": null,
+      "to": "molotov-ribbentrop-pact",
+      "type": "enabled"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
       "from": "nationalisations-1975",
       "id": "nationalisations-1975--25-november-1975--reacted-to",
       "status": "active",
@@ -7995,6 +8291,56 @@
       "supersededBy": null,
       "to": "coup-28-may-1926",
       "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "october-revolution",
+      "id": "october-revolution--russian-civil-war--caused",
+      "status": "active",
+      "supersededBy": null,
+      "to": "russian-civil-war",
+      "type": "caused"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "october-revolution",
+      "id": "october-revolution--treaty-of-brest-litovsk--caused",
+      "status": "active",
+      "supersededBy": null,
+      "to": "treaty-of-brest-litovsk",
+      "type": "caused"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "orange-revolution",
+      "id": "orange-revolution--euromaidan--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "euromaidan",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "paris-peace-conference",
+      "id": "paris-peace-conference--treaty-of-trianon--caused",
+      "status": "active",
+      "supersededBy": null,
+      "to": "treaty-of-trianon",
+      "type": "caused"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "paris-peace-conference",
+      "id": "paris-peace-conference--treaty-of-versailles--caused",
+      "status": "active",
+      "supersededBy": null,
+      "to": "treaty-of-versailles",
+      "type": "caused"
     },
     {
       "aliases": [],
@@ -8039,12 +8385,32 @@
     {
       "aliases": [],
       "confidence": "consensus",
+      "from": "portugal-backs-franco-1936",
+      "id": "portugal-backs-franco-1936--spanish-civil-war--reacted-to",
+      "status": "active",
+      "supersededBy": null,
+      "to": "spanish-civil-war",
+      "type": "reacted-to"
+    },
+    {
+      "aliases": [],
+      "confidence": "consensus",
       "from": "portugal-e-o-futuro-1974",
       "id": "portugal-e-o-futuro-1974--carnation-revolution-1974--enabled",
       "status": "active",
       "supersededBy": null,
       "to": "carnation-revolution-1974",
       "type": "enabled"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "potsdam-conference",
+      "id": "potsdam-conference--nato-founding-1949--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "nato-founding-1949",
+      "type": "precondition-of"
     },
     {
       "aliases": [],
@@ -8098,6 +8464,46 @@
     },
     {
       "aliases": [],
+      "confidence": "probable",
+      "from": "russian-revolution-of-1905",
+      "id": "russian-revolution-of-1905--february-revolution--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "february-revolution",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "russian-revolution-of-1905",
+      "id": "russian-revolution-of-1905--treaty-of-portsmouth--caused",
+      "status": "active",
+      "supersededBy": null,
+      "to": "treaty-of-portsmouth",
+      "type": "caused"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "russo-georgian-war",
+      "id": "russo-georgian-war--russo-ukrainian-war--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "russo-ukrainian-war",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "russo-ukrainian-war",
+      "id": "russo-ukrainian-war--full-scale-russo-ukrainian-war--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "full-scale-russo-ukrainian-war",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
       "confidence": "consensus",
       "from": "salazar-finance-minister-1928",
       "id": "salazar-finance-minister-1928--salazar-president-of-council-1932--caused",
@@ -8129,6 +8535,36 @@
     {
       "aliases": [],
       "confidence": "consensus",
+      "from": "schengen-agreement",
+      "id": "schengen-agreement--schengen-in-force-1995--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "schengen-in-force-1995",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "consensus",
+      "from": "second-boer-war",
+      "id": "second-boer-war--treaty-of-windsor--caused",
+      "status": "active",
+      "supersededBy": null,
+      "to": "treaty-of-windsor",
+      "type": "caused"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "second-sino-japanese-war",
+      "id": "second-sino-japanese-war--chinese-civil-war--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "chinese-civil-war",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "consensus",
       "from": "sidonio-pais-assassinated-1918",
       "id": "sidonio-pais-assassinated-1918--monarchy-of-the-north-1919--enabled",
       "status": "active",
@@ -8149,6 +8585,16 @@
     {
       "aliases": [],
       "confidence": "probable",
+      "from": "spanish-civil-war",
+      "id": "spanish-civil-war--iberian-pact--caused",
+      "status": "active",
+      "supersededBy": null,
+      "to": "iberian-pact",
+      "type": "caused"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
       "from": "spinola-resigns-1974",
       "id": "spinola-resigns-1974--coup-attempt-11-march-1975--precondition-of",
       "status": "active",
@@ -8158,12 +8604,82 @@
     },
     {
       "aliases": [],
+      "confidence": "probable",
+      "from": "the-holocaust",
+      "id": "the-holocaust--european-convention-on-human-rights--reacted-to",
+      "status": "active",
+      "supersededBy": null,
+      "to": "european-convention-on-human-rights",
+      "type": "reacted-to"
+    },
+    {
+      "aliases": [],
       "confidence": "consensus",
       "from": "treaty-of-accession-1985",
       "id": "treaty-of-accession-1985--eec-accession-1986--precondition-of",
       "status": "active",
       "supersededBy": null,
       "to": "eec-accession-1986",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "treaty-of-brest-litovsk",
+      "id": "treaty-of-brest-litovsk--battle-of-the-lys-1918--enabled",
+      "status": "active",
+      "supersededBy": null,
+      "to": "battle-of-the-lys-1918",
+      "type": "enabled"
+    },
+    {
+      "aliases": [],
+      "confidence": "consensus",
+      "from": "treaty-of-rome",
+      "id": "treaty-of-rome--efta-accession-1960--caused",
+      "status": "active",
+      "supersededBy": null,
+      "to": "efta-accession-1960",
+      "type": "caused"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "treaty-of-rome",
+      "id": "treaty-of-rome--maastricht-treaty--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "maastricht-treaty",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "treaty-of-sevres",
+      "id": "treaty-of-sevres--turkish-war-of-independence--caused",
+      "status": "active",
+      "supersededBy": null,
+      "to": "turkish-war-of-independence",
+      "type": "caused"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "treaty-of-versailles",
+      "id": "treaty-of-versailles--beer-hall-putsch--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "beer-hall-putsch",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "disputed",
+      "from": "treaty-of-versailles",
+      "id": "treaty-of-versailles--world-war-ii--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "world-war-ii",
       "type": "precondition-of"
     },
     {
@@ -8209,11 +8725,81 @@
     {
       "aliases": [],
       "confidence": "probable",
+      "from": "turkish-war-of-independence",
+      "id": "turkish-war-of-independence--treaty-of-lausanne--caused",
+      "status": "active",
+      "supersededBy": null,
+      "to": "treaty-of-lausanne",
+      "type": "caused"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
       "from": "un-admission-1955",
       "id": "un-admission-1955--angola-war-begins-1961--precondition-of",
       "status": "active",
       "supersededBy": null,
       "to": "angola-war-begins-1961",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "disputed",
+      "from": "wall-street-crash-of-1929",
+      "id": "wall-street-crash-of-1929--great-depression--caused",
+      "status": "active",
+      "supersededBy": null,
+      "to": "great-depression",
+      "type": "caused"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "world-war-i",
+      "id": "world-war-i--armenian-genocide--enabled",
+      "status": "active",
+      "supersededBy": null,
+      "to": "armenian-genocide",
+      "type": "enabled"
+    },
+    {
+      "aliases": [],
+      "confidence": "consensus",
+      "from": "world-war-i",
+      "id": "world-war-i--germany-declares-war-1916--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "germany-declares-war-1916",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "consensus",
+      "from": "world-war-ii",
+      "id": "world-war-ii--azores-agreement-1943--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "azores-agreement-1943",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "yom-kippur-war",
+      "id": "yom-kippur-war--imf-agreement-1978--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "imf-agreement-1978",
+      "type": "precondition-of"
+    },
+    {
+      "aliases": [],
+      "confidence": "probable",
+      "from": "young-turk-revolution-of-1908",
+      "id": "young-turk-revolution-of-1908--armenian-genocide--precondition-of",
+      "status": "active",
+      "supersededBy": null,
+      "to": "armenian-genocide",
       "type": "precondition-of"
     }
   ],
@@ -10243,7 +10829,7 @@
       "place": null,
       "region": "africa",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "1994 Genocide against Tutsi",
       "weight": 0,
@@ -10768,7 +11354,16 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "israel",
+          "role": "belligerent"
+        },
+        {
+          "actor": "lebanon",
+          "role": "belligerent"
+        }
+      ],
       "aliases": [],
       "id": "2006-lebanon-war",
       "place": null,
@@ -10777,7 +11372,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "2006 Lebanon War",
-      "weight": 0,
+      "weight": 3,
       "when": {
         "end": 2006,
         "endDate": "2006-08-14",
@@ -11455,7 +12050,7 @@
       "place": null,
       "region": "asia",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "2016 Turkish coup d'état attempt",
       "weight": 0,
@@ -12070,7 +12665,12 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "iran-persia",
+          "role": "government"
+        }
+      ],
       "aliases": [],
       "id": "2025-2026-iranian-protests",
       "place": null,
@@ -12079,7 +12679,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "2025–2026 Iranian protests",
-      "weight": 0,
+      "weight": 2,
       "when": {
         "date": "2025-12-28",
         "end": 2026,
@@ -12327,7 +12927,16 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "france",
+          "role": "belligerent"
+        },
+        {
+          "actor": "algeria-under-france",
+          "role": "belligerent"
+        }
+      ],
       "aliases": [],
       "id": "algerian-war",
       "place": null,
@@ -12336,7 +12945,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Algerian War",
-      "weight": 0,
+      "weight": 4,
       "when": {
         "date": "1954-11-01",
         "end": 1962,
@@ -12395,7 +13004,7 @@
       "place": null,
       "region": "africa",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "Anglo-Zanzibar War",
       "weight": 0,
@@ -12438,7 +13047,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Independence of Angola",
-      "weight": 7,
+      "weight": 8,
       "when": {
         "calendar": "gregorian",
         "date": "1975-11-11",
@@ -12469,7 +13078,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Beginning of the war in Angola",
-      "weight": 10,
+      "weight": 11,
       "when": {
         "calendar": "gregorian",
         "date": "1961-02-04",
@@ -12484,7 +13093,7 @@
       "place": "berlin",
       "region": "europe",
       "regionMethod": "inside",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "Anti-Comintern Pact",
       "weight": 0,
@@ -12521,7 +13130,12 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "turkey-ottoman-empire",
+          "role": "perpetrator"
+        }
+      ],
       "aliases": [],
       "id": "armenian-genocide",
       "place": null,
@@ -12530,7 +13144,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Armenian Genocide",
-      "weight": 0,
+      "weight": 3,
       "when": {
         "end": 1923,
         "start": 1915
@@ -12650,7 +13264,12 @@
       "wikidata": "Q9386425"
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "austria-hungary",
+          "role": "target"
+        }
+      ],
       "aliases": [],
       "id": "assassination-of-archduke-franz-ferdinand",
       "place": null,
@@ -12659,7 +13278,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "assassination of Archduke Franz Ferdinand",
-      "weight": 0,
+      "weight": 2,
       "when": {
         "date": "1914-06-28",
         "end": 1914,
@@ -12700,7 +13319,7 @@
       "place": null,
       "region": "americas",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "assassination of John F. Kennedy",
       "weight": 0,
@@ -12921,7 +13540,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Anglo-Portuguese agreement on Azores bases",
-      "weight": 4,
+      "weight": 5,
       "when": {
         "calendar": "gregorian",
         "date": "1943-08-17",
@@ -12930,7 +13549,20 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "pakistan",
+          "role": "belligerent"
+        },
+        {
+          "actor": "bangladesh",
+          "role": "belligerent"
+        },
+        {
+          "actor": "republic-of-india",
+          "role": "belligerent"
+        }
+      ],
       "aliases": [],
       "id": "bangladesh-liberation-war",
       "place": null,
@@ -12939,7 +13571,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Bangladesh Liberation War",
-      "weight": 0,
+      "weight": 4,
       "when": {
         "date": "1971-03-26",
         "end": 1971,
@@ -13002,7 +13634,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Battle of the Lys",
-      "weight": 5,
+      "weight": 6,
       "when": {
         "calendar": "gregorian",
         "date": "1918-04-09",
@@ -13016,7 +13648,12 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "germany-prussia",
+          "role": "government"
+        }
+      ],
       "aliases": [],
       "id": "beer-hall-putsch",
       "place": null,
@@ -13025,7 +13662,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Beer Hall Putsch",
-      "weight": 0,
+      "weight": 2,
       "when": {
         "date": "1923-11-09",
         "end": 1923,
@@ -13155,7 +13792,44 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "china",
+          "role": "belligerent"
+        },
+        {
+          "actor": "united-kingdom",
+          "role": "belligerent"
+        },
+        {
+          "actor": "france",
+          "role": "belligerent"
+        },
+        {
+          "actor": "germany-prussia",
+          "role": "belligerent"
+        },
+        {
+          "actor": "russia-soviet-union",
+          "role": "belligerent"
+        },
+        {
+          "actor": "japan",
+          "role": "belligerent"
+        },
+        {
+          "actor": "united-states-of-america",
+          "role": "belligerent"
+        },
+        {
+          "actor": "italy-sardinia",
+          "role": "belligerent"
+        },
+        {
+          "actor": "austria-hungary",
+          "role": "belligerent"
+        }
+      ],
       "aliases": [],
       "id": "boxer-rebellion",
       "place": null,
@@ -13164,7 +13838,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Boxer Rebellion",
-      "weight": 0,
+      "weight": 10,
       "when": {
         "date": "1899-08",
         "end": 1901,
@@ -13201,7 +13875,12 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "russia-soviet-union",
+          "role": "perpetrator"
+        }
+      ],
       "aliases": [],
       "id": "bucha-massacre",
       "place": null,
@@ -13210,7 +13889,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Bucha massacre",
-      "weight": 0,
+      "weight": 2,
       "when": {
         "date": "2022-03-31",
         "end": 2022,
@@ -13356,7 +14035,32 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "united-nations",
+          "role": "founder"
+        },
+        {
+          "actor": "united-states-of-america",
+          "role": "signatory"
+        },
+        {
+          "actor": "russia-soviet-union",
+          "role": "signatory"
+        },
+        {
+          "actor": "united-kingdom",
+          "role": "signatory"
+        },
+        {
+          "actor": "china",
+          "role": "signatory"
+        },
+        {
+          "actor": "france",
+          "role": "signatory"
+        }
+      ],
       "aliases": [],
       "id": "charter-of-the-united-nations",
       "place": null,
@@ -13365,7 +14069,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Charter of the United Nations",
-      "weight": 0,
+      "weight": 8,
       "when": {
         "date": "1945-06-26",
         "end": 1945,
@@ -13399,7 +14103,16 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "china",
+          "role": "belligerent"
+        },
+        {
+          "actor": "taiwan",
+          "role": "belligerent"
+        }
+      ],
       "aliases": [],
       "id": "chinese-civil-war",
       "place": null,
@@ -13408,7 +14121,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Chinese Civil War",
-      "weight": 0,
+      "weight": 4,
       "when": {
         "date": "1946-03-31",
         "end": 1950,
@@ -13610,7 +14323,7 @@
       "place": "new-york",
       "region": "americas",
       "regionMethod": "inside",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "Convention on the Elimination of All Forms of Discrimination against Women",
       "weight": 0,
@@ -13632,7 +14345,7 @@
       "place": "new-york",
       "region": "americas",
       "regionMethod": "inside",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "Convention on the Rights of the Child",
       "weight": 0,
@@ -13848,7 +14561,12 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "cuba",
+          "role": "government"
+        }
+      ],
       "aliases": [],
       "id": "cuban-revolution",
       "place": null,
@@ -13857,7 +14575,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Cuban Revolution",
-      "weight": 0,
+      "weight": 2,
       "when": {
         "date": "1959-01-01",
         "end": 1959,
@@ -13876,7 +14594,7 @@
       "place": null,
       "region": "asia",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "Cultural Revolution",
       "weight": 0,
@@ -14083,7 +14801,16 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "germany-prussia",
+          "role": "belligerent"
+        },
+        {
+          "actor": "russia-soviet-union",
+          "role": "belligerent"
+        }
+      ],
       "aliases": [],
       "id": "eastern-front",
       "place": null,
@@ -14092,7 +14819,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Eastern Front",
-      "weight": 0,
+      "weight": 3,
       "when": {
         "date": "1941-06-22",
         "end": 1945,
@@ -14194,7 +14921,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Portugal joins the European Free Trade Association",
-      "weight": 4,
+      "weight": 5,
       "when": {
         "calendar": "gregorian",
         "date": "1960-01-04",
@@ -14477,7 +15204,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Portugal adopts the euro",
-      "weight": 4,
+      "weight": 5,
       "when": {
         "calendar": "gregorian",
         "date": "1999-01-01",
@@ -14486,7 +15213,12 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "ukraine",
+          "role": "government"
+        }
+      ],
       "aliases": [],
       "id": "euromaidan",
       "place": null,
@@ -14495,7 +15227,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Euromaidan",
-      "weight": 0,
+      "weight": 3,
       "when": {
         "date": "2013-11-21",
         "end": 2014,
@@ -14509,7 +15241,24 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "council-of-europe",
+          "role": "institution"
+        },
+        {
+          "actor": "united-kingdom",
+          "role": "signatory"
+        },
+        {
+          "actor": "france",
+          "role": "signatory"
+        },
+        {
+          "actor": "italy-sardinia",
+          "role": "signatory"
+        }
+      ],
       "aliases": [],
       "id": "european-convention-on-human-rights",
       "place": null,
@@ -14518,7 +15267,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "European Convention on Human Rights",
-      "weight": 0,
+      "weight": 5,
       "when": {
         "date": "1950-11-04",
         "end": 1950,
@@ -14592,7 +15341,7 @@
       "place": null,
       "region": "americas",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "Falklands War",
       "weight": 0,
@@ -14608,7 +15357,12 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "russia-soviet-union",
+          "role": "government"
+        }
+      ],
       "aliases": [],
       "id": "february-revolution",
       "place": null,
@@ -14617,7 +15371,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "February Revolution",
-      "weight": 0,
+      "weight": 3,
       "when": {
         "end": 1917,
         "endDate": "1917-03-16",
@@ -14657,7 +15411,16 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "france",
+          "role": "belligerent"
+        },
+        {
+          "actor": "vietnam-annam-cochin-china-tonkin",
+          "role": "belligerent"
+        }
+      ],
       "aliases": [],
       "id": "first-indochina-war",
       "place": null,
@@ -14666,7 +15429,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "First Indochina War",
-      "weight": 0,
+      "weight": 4,
       "when": {
         "date": "1946-12-19",
         "end": 1954,
@@ -14680,7 +15443,16 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "russia-soviet-union",
+          "role": "invader"
+        },
+        {
+          "actor": "ukraine",
+          "role": "belligerent"
+        }
+      ],
       "aliases": [],
       "id": "full-scale-russo-ukrainian-war",
       "place": null,
@@ -14689,7 +15461,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "full-scale Russo-Ukrainian war",
-      "weight": 0,
+      "weight": 5,
       "when": {
         "date": "2022-02-24",
         "end": null,
@@ -14702,7 +15474,12 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "israel",
+          "role": "perpetrator"
+        }
+      ],
       "aliases": [],
       "id": "gaza-genocide",
       "place": null,
@@ -14711,7 +15488,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Gaza genocide",
-      "weight": 0,
+      "weight": 2,
       "when": {
         "date": "2023-10-07",
         "end": null,
@@ -14724,7 +15501,16 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "israel",
+          "role": "belligerent"
+        },
+        {
+          "actor": "hamas",
+          "role": "belligerent"
+        }
+      ],
       "aliases": [],
       "id": "gaza-war",
       "place": null,
@@ -14733,7 +15519,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Gaza War",
-      "weight": 0,
+      "weight": 4,
       "when": {
         "date": "2023-10-07",
         "end": null,
@@ -14824,7 +15610,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Germany declares war on Portugal",
-      "weight": 6,
+      "weight": 7,
       "when": {
         "calendar": "gregorian",
         "date": "1916-03-09",
@@ -14903,16 +15689,29 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "united-states-of-america",
+          "role": "government"
+        },
+        {
+          "actor": "germany-prussia",
+          "role": "government"
+        },
+        {
+          "actor": "united-kingdom",
+          "role": "government"
+        }
+      ],
       "aliases": [],
       "id": "great-depression",
       "place": null,
-      "region": "asia",
+      "region": "americas",
       "regionMethod": "override",
       "status": "active",
       "supersededBy": null,
       "title": "Great Depression",
-      "weight": 0,
+      "weight": 5,
       "when": {
         "date": "1929-10-29",
         "end": 1941,
@@ -15010,7 +15809,28 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "iraq",
+          "role": "belligerent"
+        },
+        {
+          "actor": "kuwait",
+          "role": "belligerent"
+        },
+        {
+          "actor": "united-states-of-america",
+          "role": "belligerent"
+        },
+        {
+          "actor": "saudi-arabia",
+          "role": "belligerent"
+        },
+        {
+          "actor": "united-nations",
+          "role": "institution"
+        }
+      ],
       "aliases": [],
       "id": "gulf-war",
       "place": null,
@@ -15019,7 +15839,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Gulf War",
-      "weight": 0,
+      "weight": 6,
       "when": {
         "date": "1990-08-02",
         "end": 1991,
@@ -15063,7 +15883,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "Holodomor",
       "weight": 0,
@@ -15084,7 +15904,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "Hungarian Revolution of 1956",
       "weight": 0,
@@ -15159,7 +15979,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "The Iberian Pact",
-      "weight": 5,
+      "weight": 6,
       "when": {
         "calendar": "gregorian",
         "date": "1939-03-17",
@@ -15179,7 +15999,7 @@
       "place": null,
       "region": "asia",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "Ilinden–Preobrazhenie Uprising",
       "weight": 0,
@@ -15217,7 +16037,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "First stabilisation agreement with the IMF",
-      "weight": 5,
+      "weight": 6,
       "when": {
         "calendar": "gregorian",
         "date": "1978-05",
@@ -15248,7 +16068,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Second stabilisation agreement with the IMF",
-      "weight": 6,
+      "weight": 7,
       "when": {
         "calendar": "gregorian",
         "date": "1983-09",
@@ -15257,7 +16077,16 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "republic-of-india",
+          "role": "belligerent"
+        },
+        {
+          "actor": "pakistan",
+          "role": "belligerent"
+        }
+      ],
       "aliases": [],
       "id": "indo-pakistani-war-of-1965",
       "place": null,
@@ -15266,7 +16095,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Indo-Pakistani War of 1965",
-      "weight": 0,
+      "weight": 3,
       "when": {
         "date": "1965-08",
         "end": 1965,
@@ -15280,7 +16109,12 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "united-nations",
+          "role": "institution"
+        }
+      ],
       "aliases": [],
       "id": "international-covenant-on-civil-and-political-rights",
       "place": "new-york",
@@ -15289,7 +16123,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "International Covenant on Civil and Political Rights",
-      "weight": 0,
+      "weight": 2,
       "when": {
         "date": "1966-12-16",
         "end": 1966,
@@ -15302,7 +16136,12 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "iran-persia",
+          "role": "government"
+        }
+      ],
       "aliases": [],
       "id": "iranian-revolution",
       "place": null,
@@ -15311,7 +16150,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Iranian Revolution",
-      "weight": 0,
+      "weight": 3,
       "when": {
         "date": "1978-01",
         "end": 1979,
@@ -15325,7 +16164,20 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "iraq",
+          "role": "belligerent"
+        },
+        {
+          "actor": "united-states-of-america",
+          "role": "belligerent"
+        },
+        {
+          "actor": "united-kingdom",
+          "role": "belligerent"
+        }
+      ],
       "aliases": [],
       "id": "iraq-war",
       "place": null,
@@ -15334,7 +16186,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Iraq War",
-      "weight": 0,
+      "weight": 4,
       "when": {
         "date": "2003-03-20",
         "end": 2011,
@@ -15354,7 +16206,7 @@
       "place": null,
       "region": "americas",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "January 6 United States Capitol attack",
       "weight": 0,
@@ -15370,7 +16222,12 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "russia-soviet-union",
+          "role": "perpetrator"
+        }
+      ],
       "aliases": [],
       "id": "katyn-massacre",
       "place": null,
@@ -15379,7 +16236,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Katyn massacre",
-      "weight": 0,
+      "weight": 2,
       "when": {
         "end": 1940,
         "endDate": "1940-05",
@@ -15414,7 +16271,28 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "korea-people-s-republic-of",
+          "role": "belligerent"
+        },
+        {
+          "actor": "korea-republic-of",
+          "role": "belligerent"
+        },
+        {
+          "actor": "united-states-of-america",
+          "role": "belligerent"
+        },
+        {
+          "actor": "china",
+          "role": "belligerent"
+        },
+        {
+          "actor": "united-nations",
+          "role": "belligerent"
+        }
+      ],
       "aliases": [],
       "id": "korean-war",
       "place": null,
@@ -15423,7 +16301,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Korean War",
-      "weight": 0,
+      "weight": 6,
       "when": {
         "date": "1950-06-25",
         "end": 1953,
@@ -15443,7 +16321,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "Lateran Treaty",
       "weight": 0,
@@ -15491,7 +16369,20 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "lebanon",
+          "role": "belligerent"
+        },
+        {
+          "actor": "syria",
+          "role": "belligerent"
+        },
+        {
+          "actor": "israel",
+          "role": "belligerent"
+        }
+      ],
       "aliases": [],
       "id": "lebanese-civil-war",
       "place": null,
@@ -15500,7 +16391,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Lebanese Civil War",
-      "weight": 0,
+      "weight": 4,
       "when": {
         "date": "1975-04-13",
         "end": 1990,
@@ -15801,7 +16692,7 @@
       "place": null,
       "region": "africa",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "Libyan Civil War",
       "weight": 0,
@@ -15905,7 +16796,12 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "portugal",
+          "role": "signatory"
+        }
+      ],
       "aliases": [],
       "id": "maastricht-treaty",
       "place": null,
@@ -15914,7 +16810,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Maastricht Treaty",
-      "weight": 0,
+      "weight": 3,
       "when": {
         "date": "1992-02-07",
         "end": 1992,
@@ -16041,7 +16937,7 @@
       "place": null,
       "region": "americas",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "Mexican Revolution",
       "weight": 0,
@@ -16058,7 +16954,20 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "germany-prussia",
+          "role": "signatory"
+        },
+        {
+          "actor": "russia-soviet-union",
+          "role": "signatory"
+        },
+        {
+          "actor": "poland",
+          "role": "target"
+        }
+      ],
       "aliases": [],
       "id": "molotov-ribbentrop-pact",
       "place": null,
@@ -16067,7 +16976,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Molotov–Ribbentrop Pact",
-      "weight": 0,
+      "weight": 5,
       "when": {
         "date": "1939-08-23",
         "end": 1941,
@@ -16226,7 +17135,28 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "germany-prussia",
+          "role": "signatory"
+        },
+        {
+          "actor": "united-kingdom",
+          "role": "signatory"
+        },
+        {
+          "actor": "france",
+          "role": "signatory"
+        },
+        {
+          "actor": "italy-sardinia",
+          "role": "signatory"
+        },
+        {
+          "actor": "czechoslovakia",
+          "role": "target"
+        }
+      ],
       "aliases": [],
       "id": "munich-agreement",
       "place": null,
@@ -16235,7 +17165,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Munich agreement",
-      "weight": 0,
+      "weight": 6,
       "when": {
         "date": "1938-09-30",
         "end": 1938,
@@ -16391,7 +17321,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Portugal signs the North Atlantic Treaty",
-      "weight": 5,
+      "weight": 6,
       "when": {
         "calendar": "gregorian",
         "date": "1949-04-04",
@@ -16452,7 +17382,12 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "russia-soviet-union",
+          "role": "government"
+        }
+      ],
       "aliases": [],
       "id": "october-revolution",
       "place": null,
@@ -16461,7 +17396,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "October Revolution",
-      "weight": 0,
+      "weight": 4,
       "when": {
         "date": "1917-10-25",
         "end": 1917,
@@ -16475,7 +17410,12 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "ukraine",
+          "role": "government"
+        }
+      ],
       "aliases": [],
       "id": "orange-revolution",
       "place": null,
@@ -16484,7 +17424,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Orange Revolution",
-      "weight": 0,
+      "weight": 2,
       "when": {
         "date": "2004-11-22",
         "end": 2005,
@@ -16504,7 +17444,7 @@
       "place": "new-york",
       "region": "americas",
       "regionMethod": "inside",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "Paris Agreement",
       "weight": 0,
@@ -16520,7 +17460,28 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "united-states-of-america",
+          "role": "negotiator"
+        },
+        {
+          "actor": "united-kingdom",
+          "role": "negotiator"
+        },
+        {
+          "actor": "france",
+          "role": "negotiator"
+        },
+        {
+          "actor": "italy-sardinia",
+          "role": "negotiator"
+        },
+        {
+          "actor": "portugal",
+          "role": "negotiator"
+        }
+      ],
       "aliases": [],
       "id": "paris-peace-conference",
       "place": null,
@@ -16529,7 +17490,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Paris Peace Conference",
-      "weight": 0,
+      "weight": 7,
       "when": {
         "end": 1920,
         "endDate": "1920-01-21",
@@ -16615,7 +17576,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Portugal supports the Nationalists in the Spanish Civil War",
-      "weight": 5,
+      "weight": 6,
       "when": {
         "calendar": "gregorian",
         "date": "1936-07",
@@ -16775,7 +17736,20 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "united-states-of-america",
+          "role": "negotiator"
+        },
+        {
+          "actor": "russia-soviet-union",
+          "role": "negotiator"
+        },
+        {
+          "actor": "united-kingdom",
+          "role": "negotiator"
+        }
+      ],
       "aliases": [],
       "id": "potsdam-conference",
       "place": null,
@@ -16784,7 +17758,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Potsdam Conference",
-      "weight": 0,
+      "weight": 5,
       "when": {
         "date": "1945-07-17",
         "end": 1945,
@@ -16928,7 +17902,7 @@
       "place": null,
       "region": "asia",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "Ramsar Convention",
       "weight": 0,
@@ -17115,7 +18089,12 @@
       "wikidata": "Q115636352"
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "russia-soviet-union",
+          "role": "belligerent"
+        }
+      ],
       "aliases": [],
       "id": "russian-civil-war",
       "place": null,
@@ -17124,7 +18103,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Russian Civil War",
-      "weight": 0,
+      "weight": 2,
       "when": {
         "date": "1917-11-07",
         "end": 1922,
@@ -17144,7 +18123,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "Russian Revolution",
       "weight": 0,
@@ -17159,7 +18138,12 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "russia-soviet-union",
+          "role": "government"
+        }
+      ],
       "aliases": [],
       "id": "russian-revolution-of-1905",
       "place": null,
@@ -17168,7 +18152,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Russian Revolution of 1905",
-      "weight": 0,
+      "weight": 3,
       "when": {
         "date": "1905-01-22",
         "end": 1907,
@@ -17182,7 +18166,16 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "georgia",
+          "role": "belligerent"
+        },
+        {
+          "actor": "russia-soviet-union",
+          "role": "belligerent"
+        }
+      ],
       "aliases": [],
       "id": "russo-georgian-war",
       "place": null,
@@ -17191,7 +18184,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Russo-Georgian War",
-      "weight": 0,
+      "weight": 3,
       "when": {
         "date": "2008-08-08",
         "end": 2008,
@@ -17205,7 +18198,16 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "ukraine",
+          "role": "belligerent"
+        },
+        {
+          "actor": "russia-soviet-union",
+          "role": "belligerent"
+        }
+      ],
       "aliases": [],
       "id": "russo-ukrainian-war",
       "place": null,
@@ -17214,7 +18216,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Russo-Ukrainian war",
-      "weight": 0,
+      "weight": 5,
       "when": {
         "date": "2014-02-20",
         "end": null,
@@ -17272,7 +18274,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Salazar becomes President of the Council",
-      "weight": 4,
+      "weight": 5,
       "when": {
         "calendar": "gregorian",
         "date": "1932-07-05",
@@ -17308,7 +18310,28 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "france",
+          "role": "signatory"
+        },
+        {
+          "actor": "german-federal-republic",
+          "role": "signatory"
+        },
+        {
+          "actor": "belgium",
+          "role": "signatory"
+        },
+        {
+          "actor": "netherlands",
+          "role": "signatory"
+        },
+        {
+          "actor": "luxembourg",
+          "role": "signatory"
+        }
+      ],
       "aliases": [],
       "id": "schengen-agreement",
       "place": null,
@@ -17317,7 +18340,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Schengen Agreement",
-      "weight": 0,
+      "weight": 6,
       "when": {
         "date": "1985-06-14",
         "end": 1985,
@@ -17352,7 +18375,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Portugal enters the Schengen area",
-      "weight": 4,
+      "weight": 5,
       "when": {
         "calendar": "gregorian",
         "date": "1995-03-26",
@@ -17361,7 +18384,20 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "united-kingdom",
+          "role": "belligerent"
+        },
+        {
+          "actor": "transvaal",
+          "role": "belligerent"
+        },
+        {
+          "actor": "orange-free-state",
+          "role": "belligerent"
+        }
+      ],
       "aliases": [],
       "id": "second-boer-war",
       "place": null,
@@ -17370,7 +18406,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Second Boer War",
-      "weight": 0,
+      "weight": 4,
       "when": {
         "date": "1899-10-11",
         "end": 1902,
@@ -17390,7 +18426,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "Second Chechen War",
       "weight": 0,
@@ -17413,7 +18449,7 @@
       "place": null,
       "region": "asia",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "Second Nagorno-Karabakh War",
       "weight": 0,
@@ -17429,7 +18465,16 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "china",
+          "role": "belligerent"
+        },
+        {
+          "actor": "japan",
+          "role": "belligerent"
+        }
+      ],
       "aliases": [],
       "id": "second-sino-japanese-war",
       "place": null,
@@ -17438,7 +18483,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Second Sino-Japanese War",
-      "weight": 0,
+      "weight": 3,
       "when": {
         "date": "1937-07-07",
         "end": 1945,
@@ -17559,7 +18604,28 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "spain",
+          "role": "belligerent"
+        },
+        {
+          "actor": "germany-prussia",
+          "role": "supporter"
+        },
+        {
+          "actor": "italy-sardinia",
+          "role": "supporter"
+        },
+        {
+          "actor": "russia-soviet-union",
+          "role": "supporter"
+        },
+        {
+          "actor": "portugal",
+          "role": "supporter"
+        }
+      ],
       "aliases": [],
       "id": "spanish-civil-war",
       "place": null,
@@ -17568,7 +18634,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Spanish Civil War",
-      "weight": 0,
+      "weight": 7,
       "when": {
         "date": "1936-07-18",
         "end": 1939,
@@ -17619,7 +18685,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "Srebrenica massacre",
       "weight": 0,
@@ -17642,7 +18708,7 @@
       "place": null,
       "region": "africa",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "Sudanese civil war",
       "weight": 0,
@@ -17663,7 +18729,7 @@
       "place": null,
       "region": "asia",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "Syrian Civil War",
       "weight": 0,
@@ -17700,7 +18766,12 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "germany-prussia",
+          "role": "perpetrator"
+        }
+      ],
       "aliases": [],
       "id": "the-holocaust",
       "place": null,
@@ -17709,7 +18780,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "The Holocaust",
-      "weight": 0,
+      "weight": 2,
       "when": {
         "end": 1945,
         "start": 1933
@@ -17797,7 +18868,28 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "russia-soviet-union",
+          "role": "signatory"
+        },
+        {
+          "actor": "germany-prussia",
+          "role": "signatory"
+        },
+        {
+          "actor": "austria-hungary",
+          "role": "signatory"
+        },
+        {
+          "actor": "turkey-ottoman-empire",
+          "role": "signatory"
+        },
+        {
+          "actor": "bulgaria",
+          "role": "signatory"
+        }
+      ],
       "aliases": [],
       "id": "treaty-of-brest-litovsk",
       "place": null,
@@ -17806,7 +18898,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Treaty of Brest-Litovsk",
-      "weight": 0,
+      "weight": 7,
       "when": {
         "date": "1918-03-03",
         "end": 1918,
@@ -17850,7 +18942,28 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "turkey-ottoman-empire",
+          "role": "signatory"
+        },
+        {
+          "actor": "greece",
+          "role": "signatory"
+        },
+        {
+          "actor": "united-kingdom",
+          "role": "signatory"
+        },
+        {
+          "actor": "france",
+          "role": "signatory"
+        },
+        {
+          "actor": "italy-sardinia",
+          "role": "signatory"
+        }
+      ],
       "aliases": [],
       "id": "treaty-of-lausanne",
       "place": null,
@@ -17859,7 +18972,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Treaty of Lausanne",
-      "weight": 0,
+      "weight": 6,
       "when": {
         "date": "1923-07-24",
         "end": 1923,
@@ -17894,7 +19007,20 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "russia-soviet-union",
+          "role": "signatory"
+        },
+        {
+          "actor": "japan",
+          "role": "signatory"
+        },
+        {
+          "actor": "united-states-of-america",
+          "role": "negotiator"
+        }
+      ],
       "aliases": [],
       "id": "treaty-of-portsmouth",
       "place": null,
@@ -17903,7 +19029,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Treaty of Portsmouth",
-      "weight": 0,
+      "weight": 4,
       "when": {
         "date": "1905-09-05",
         "end": 1905,
@@ -17916,7 +19042,36 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "european-economic-community",
+          "role": "founder"
+        },
+        {
+          "actor": "france",
+          "role": "signatory"
+        },
+        {
+          "actor": "italy-sardinia",
+          "role": "signatory"
+        },
+        {
+          "actor": "belgium",
+          "role": "signatory"
+        },
+        {
+          "actor": "netherlands",
+          "role": "signatory"
+        },
+        {
+          "actor": "luxembourg",
+          "role": "signatory"
+        },
+        {
+          "actor": "german-federal-republic",
+          "role": "signatory"
+        }
+      ],
       "aliases": [],
       "id": "treaty-of-rome",
       "place": null,
@@ -17925,7 +19080,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Treaty of Rome",
-      "weight": 0,
+      "weight": 9,
       "when": {
         "date": "1957-03-25",
         "end": 1957,
@@ -17938,7 +19093,28 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "turkey-ottoman-empire",
+          "role": "signatory"
+        },
+        {
+          "actor": "united-kingdom",
+          "role": "signatory"
+        },
+        {
+          "actor": "france",
+          "role": "signatory"
+        },
+        {
+          "actor": "italy-sardinia",
+          "role": "signatory"
+        },
+        {
+          "actor": "greece",
+          "role": "signatory"
+        }
+      ],
       "aliases": [],
       "id": "treaty-of-sevres",
       "place": null,
@@ -17947,7 +19123,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Treaty of Sèvres",
-      "weight": 0,
+      "weight": 6,
       "when": {
         "date": "1920-08-10",
         "end": 1920,
@@ -17960,7 +19136,28 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "hungary",
+          "role": "signatory"
+        },
+        {
+          "actor": "france",
+          "role": "signatory"
+        },
+        {
+          "actor": "united-kingdom",
+          "role": "signatory"
+        },
+        {
+          "actor": "italy-sardinia",
+          "role": "signatory"
+        },
+        {
+          "actor": "united-states-of-america",
+          "role": "signatory"
+        }
+      ],
       "aliases": [],
       "id": "treaty-of-trianon",
       "place": null,
@@ -17969,7 +19166,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Treaty of Trianon",
-      "weight": 0,
+      "weight": 6,
       "when": {
         "date": "1920-06-04",
         "end": 1920,
@@ -17982,7 +19179,32 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "germany-prussia",
+          "role": "signatory"
+        },
+        {
+          "actor": "france",
+          "role": "signatory"
+        },
+        {
+          "actor": "united-kingdom",
+          "role": "signatory"
+        },
+        {
+          "actor": "united-states-of-america",
+          "role": "signatory"
+        },
+        {
+          "actor": "italy-sardinia",
+          "role": "signatory"
+        },
+        {
+          "actor": "portugal",
+          "role": "signatory"
+        }
+      ],
       "aliases": [],
       "id": "treaty-of-versailles",
       "place": null,
@@ -17991,7 +19213,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Treaty of Versailles",
-      "weight": 0,
+      "weight": 9,
       "when": {
         "date": "1919-06-28",
         "end": 1919,
@@ -18013,7 +19235,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Treaty of Windsor",
-      "weight": 1,
+      "weight": 2,
       "when": {
         "end": 1899,
         "start": 1899
@@ -18030,7 +19252,7 @@
       "place": "new-york",
       "region": "americas",
       "regionMethod": "inside",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "Treaty on the Non-Proliferation of Nuclear Weapons",
       "weight": 0,
@@ -18116,7 +19338,20 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "turkey-ottoman-empire",
+          "role": "belligerent"
+        },
+        {
+          "actor": "greece",
+          "role": "belligerent"
+        },
+        {
+          "actor": "france",
+          "role": "belligerent"
+        }
+      ],
       "aliases": [],
       "id": "turkish-war-of-independence",
       "place": null,
@@ -18125,7 +19360,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Turkish War of Independence",
-      "weight": 0,
+      "weight": 5,
       "when": {
         "date": "1922-10-11",
         "end": 1923,
@@ -18139,7 +19374,20 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "israel",
+          "role": "belligerent"
+        },
+        {
+          "actor": "iran-persia",
+          "role": "belligerent"
+        },
+        {
+          "actor": "united-states-of-america",
+          "role": "belligerent"
+        }
+      ],
       "aliases": [],
       "id": "twelve-day-war",
       "place": null,
@@ -18148,7 +19396,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Twelve-Day War",
-      "weight": 0,
+      "weight": 4,
       "when": {
         "date": "2025-06",
         "end": 2025,
@@ -18184,7 +19432,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Portugal admitted to the United Nations",
-      "weight": 5,
+      "weight": 6,
       "when": {
         "calendar": "gregorian",
         "date": "1955-12-14",
@@ -18199,7 +19447,7 @@
       "place": null,
       "region": "americas",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "United Nations Convention on the Law of the Sea",
       "weight": 0,
@@ -18221,7 +19469,7 @@
       "place": null,
       "region": "europe",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "Velvet Revolution",
       "weight": 0,
@@ -18237,7 +19485,20 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "vietnam-republic-of",
+          "role": "belligerent"
+        },
+        {
+          "actor": "vietnam-democratic-republic-of",
+          "role": "belligerent"
+        },
+        {
+          "actor": "united-states-of-america",
+          "role": "belligerent"
+        }
+      ],
       "aliases": [],
       "id": "vietnam-war",
       "place": null,
@@ -18246,7 +19507,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Vietnam War",
-      "weight": 0,
+      "weight": 4,
       "when": {
         "date": "1955-11-01",
         "end": 1975,
@@ -18260,7 +19521,16 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "wagner-group",
+          "role": "perpetrator"
+        },
+        {
+          "actor": "russia-soviet-union",
+          "role": "target"
+        }
+      ],
       "aliases": [],
       "id": "wagner-group-rebellion",
       "place": null,
@@ -18269,7 +19539,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Wagner Group rebellion",
-      "weight": 0,
+      "weight": 3,
       "when": {
         "date": "2023-06",
         "end": 2023,
@@ -18283,7 +19553,12 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "united-states-of-america",
+          "role": "government"
+        }
+      ],
       "aliases": [],
       "id": "wall-street-crash-of-1929",
       "place": null,
@@ -18292,7 +19567,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Wall Street crash of 1929",
-      "weight": 0,
+      "weight": 2,
       "when": {
         "end": 1929,
         "endDate": "1929-10-29",
@@ -18311,7 +19586,7 @@
       "place": null,
       "region": "asia",
       "regionMethod": "override",
-      "status": "active",
+      "status": "retracted",
       "supersededBy": null,
       "title": "War in Afghanistan (2001–2021)",
       "weight": 0,
@@ -18328,7 +19603,16 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "poland",
+          "role": "belligerent"
+        },
+        {
+          "actor": "germany-prussia",
+          "role": "occupier"
+        }
+      ],
       "aliases": [],
       "id": "warsaw-uprising",
       "place": null,
@@ -18337,7 +19621,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Warsaw Uprising",
-      "weight": 0,
+      "weight": 3,
       "when": {
         "date": "1944-10-02",
         "end": 1944,
@@ -18400,16 +19684,65 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "germany-prussia",
+          "role": "belligerent"
+        },
+        {
+          "actor": "austria-hungary",
+          "role": "belligerent"
+        },
+        {
+          "actor": "turkey-ottoman-empire",
+          "role": "belligerent"
+        },
+        {
+          "actor": "bulgaria",
+          "role": "belligerent"
+        },
+        {
+          "actor": "france",
+          "role": "belligerent"
+        },
+        {
+          "actor": "united-kingdom",
+          "role": "belligerent"
+        },
+        {
+          "actor": "russia-soviet-union",
+          "role": "belligerent"
+        },
+        {
+          "actor": "italy-sardinia",
+          "role": "belligerent"
+        },
+        {
+          "actor": "serbia",
+          "role": "belligerent"
+        },
+        {
+          "actor": "united-states-of-america",
+          "role": "belligerent"
+        },
+        {
+          "actor": "japan",
+          "role": "belligerent"
+        },
+        {
+          "actor": "portugal",
+          "role": "belligerent"
+        }
+      ],
       "aliases": [],
       "id": "world-war-i",
       "place": null,
-      "region": "asia",
+      "region": "europe",
       "regionMethod": "override",
       "status": "active",
       "supersededBy": null,
       "title": "World War I",
-      "weight": 0,
+      "weight": 15,
       "when": {
         "date": "1914-07-28",
         "end": 1918,
@@ -18423,7 +19756,44 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "germany-prussia",
+          "role": "belligerent"
+        },
+        {
+          "actor": "italy-sardinia",
+          "role": "belligerent"
+        },
+        {
+          "actor": "japan",
+          "role": "belligerent"
+        },
+        {
+          "actor": "united-kingdom",
+          "role": "belligerent"
+        },
+        {
+          "actor": "russia-soviet-union",
+          "role": "belligerent"
+        },
+        {
+          "actor": "united-states-of-america",
+          "role": "belligerent"
+        },
+        {
+          "actor": "france",
+          "role": "belligerent"
+        },
+        {
+          "actor": "china",
+          "role": "belligerent"
+        },
+        {
+          "actor": "poland",
+          "role": "belligerent"
+        }
+      ],
       "aliases": [],
       "id": "world-war-ii",
       "place": null,
@@ -18432,7 +19802,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "World War II",
-      "weight": 0,
+      "weight": 12,
       "when": {
         "date": "1939-09-01",
         "end": 1945,
@@ -18483,7 +19853,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Xinhai Revolution",
-      "weight": 0,
+      "weight": 1,
       "when": {
         "date": "1911-10-10",
         "end": 1912,
@@ -18497,7 +19867,20 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "israel",
+          "role": "belligerent"
+        },
+        {
+          "actor": "egypt",
+          "role": "belligerent"
+        },
+        {
+          "actor": "syria",
+          "role": "belligerent"
+        }
+      ],
       "aliases": [],
       "id": "yom-kippur-war",
       "place": null,
@@ -18506,7 +19889,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Yom Kippur War",
-      "weight": 0,
+      "weight": 4,
       "when": {
         "date": "1973-10-06",
         "end": 1973,
@@ -18520,7 +19903,12 @@
       }
     },
     {
-      "actors": [],
+      "actors": [
+        {
+          "actor": "turkey-ottoman-empire",
+          "role": "government"
+        }
+      ],
       "aliases": [],
       "id": "young-turk-revolution-of-1908",
       "place": null,
@@ -18529,7 +19917,7 @@
       "status": "active",
       "supersededBy": null,
       "title": "Young Turk Revolution of 1908",
-      "weight": 0,
+      "weight": 2,
       "when": {
         "date": "1908-07-24",
         "end": 1908,

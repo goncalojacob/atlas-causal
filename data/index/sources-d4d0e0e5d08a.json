@@ -592,7 +592,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 71,
+      "citationCount": 75,
       "citations": [
         {
           "dissent": false,
@@ -752,6 +752,12 @@
         },
         {
           "dissent": false,
+          "id": "charter-of-the-united-nations--un-admission-1955--precondition-of",
+          "kind": "edge",
+          "locator": null
+        },
+        {
+          "dissent": false,
           "id": "constitution-1976--eanes-elected-1976--enabled",
           "kind": "edge",
           "locator": null
@@ -801,6 +807,12 @@
         {
           "dissent": false,
           "id": "portugal-backs-franco-1936--legiao-portuguesa-founded-1936--caused",
+          "kind": "edge",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "portugal-backs-franco-1936--spanish-civil-war--reacted-to",
           "kind": "edge",
           "locator": null
         },
@@ -873,6 +885,12 @@
         {
           "dissent": false,
           "id": "cavaco-absolute-majority-1987",
+          "kind": "event",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "charter-of-the-united-nations",
           "kind": "event",
           "locator": null
         },
@@ -951,6 +969,12 @@
         {
           "dissent": false,
           "id": "soares-elected-president-1986",
+          "kind": "event",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "spanish-civil-war",
           "kind": "event",
           "locator": null
         },
@@ -1051,7 +1075,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 70,
+      "citationCount": 73,
       "citations": [
         {
           "dissent": false,
@@ -1259,6 +1283,12 @@
         },
         {
           "dissent": false,
+          "id": "schengen-agreement--schengen-in-force-1995--precondition-of",
+          "kind": "edge",
+          "locator": null
+        },
+        {
+          "dissent": false,
           "id": "1987-european-parliament-election-in-portugal",
           "kind": "event",
           "locator": null
@@ -1385,6 +1415,12 @@
         },
         {
           "dissent": false,
+          "id": "maastricht-treaty",
+          "kind": "event",
+          "locator": null
+        },
+        {
+          "dissent": false,
           "id": "marcelo-elected-president-2016",
           "kind": "event",
           "locator": null
@@ -1392,6 +1428,12 @@
         {
           "dissent": false,
           "id": "portuguese-regionalisation-referendum-1998",
+          "kind": "event",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "schengen-agreement",
           "kind": "event",
           "locator": null
         },
@@ -8122,7 +8164,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 64,
+      "citationCount": 68,
       "citations": [
         {
           "dissent": false,
@@ -8240,6 +8282,12 @@
         },
         {
           "dissent": false,
+          "id": "algerian-war--angola-war-begins-1961--precondition-of",
+          "kind": "edge",
+          "locator": null
+        },
+        {
+          "dissent": false,
           "id": "alvor-agreement-1975--angola-independence-1975--enabled",
           "kind": "edge",
           "locator": null
@@ -8301,6 +8349,12 @@
         {
           "dissent": false,
           "id": "carnation-revolution-1974--east-timor-invasion-1975--enabled",
+          "kind": "edge",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "cuban-revolution--angola-independence-1975--precondition-of",
           "kind": "edge",
           "locator": null
         },
@@ -8402,6 +8456,12 @@
         },
         {
           "dissent": false,
+          "id": "algerian-war",
+          "kind": "event",
+          "locator": null
+        },
+        {
+          "dissent": false,
           "id": "alvor-agreement-1975",
           "kind": "event",
           "locator": null
@@ -8433,6 +8493,12 @@
         {
           "dissent": false,
           "id": "cabral-assassinated-1973",
+          "kind": "event",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "cuban-revolution",
           "kind": "event",
           "locator": null
         },
@@ -8854,7 +8920,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 32,
+      "citationCount": 37,
       "citations": [
         {
           "dissent": false,
@@ -8972,7 +9038,25 @@
         },
         {
           "dissent": false,
+          "id": "second-boer-war--treaty-of-windsor--caused",
+          "kind": "edge",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "treaty-of-brest-litovsk--battle-of-the-lys-1918--enabled",
+          "kind": "edge",
+          "locator": null
+        },
+        {
+          "dissent": false,
           "id": "treaty-of-windsor--germany-declares-war-1916--precondition-of",
+          "kind": "edge",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "world-war-i--germany-declares-war-1916--precondition-of",
           "kind": "edge",
           "locator": null
         },
@@ -9020,6 +9104,12 @@
         },
         {
           "dissent": false,
+          "id": "second-boer-war",
+          "kind": "event",
+          "locator": null
+        },
+        {
+          "dissent": false,
           "id": "sidonio-pais-assassinated-1918",
           "kind": "event",
           "locator": null
@@ -9033,6 +9123,12 @@
         {
           "dissent": false,
           "id": "treaty-of-windsor",
+          "kind": "event",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "world-war-i",
           "kind": "event",
           "locator": null
         },
@@ -9079,7 +9175,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 16,
+      "citationCount": 18,
       "citations": [
         {
           "dissent": false,
@@ -9108,6 +9204,12 @@
         {
           "dissent": false,
           "id": "coup-28-may-1926--salazar-finance-minister-1928--enabled",
+          "kind": "edge",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "great-depression--salazar-president-of-council-1932--enabled",
           "kind": "edge",
           "locator": null
         },
@@ -9150,6 +9252,12 @@
         {
           "dissent": false,
           "id": "delgado-candidacy-1958",
+          "kind": "event",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "great-depression",
           "kind": "event",
           "locator": null
         },
@@ -9259,7 +9367,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 78,
+      "citationCount": 82,
       "citations": [
         {
           "dissent": false,
@@ -9557,7 +9665,19 @@
         },
         {
           "dissent": false,
+          "id": "second-boer-war--treaty-of-windsor--caused",
+          "kind": "edge",
+          "locator": null
+        },
+        {
+          "dissent": false,
           "id": "sidonio-pais-assassinated-1918--monarchy-of-the-north-1919--enabled",
+          "kind": "edge",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "treaty-of-rome--efta-accession-1960--caused",
           "kind": "edge",
           "locator": null
         },
@@ -9671,7 +9791,19 @@
         },
         {
           "dissent": false,
+          "id": "second-boer-war",
+          "kind": "event",
+          "locator": null
+        },
+        {
+          "dissent": false,
           "id": "treaty-of-friendship-and-cooperation-between-spain-and-portugal",
+          "kind": "event",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "treaty-of-rome",
           "kind": "event",
           "locator": null
         },
@@ -9762,7 +9894,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 25,
+      "citationCount": 26,
       "citations": [
         {
           "dissent": false,
@@ -9845,6 +9977,12 @@
         {
           "dissent": false,
           "id": "imf-agreement-1978--imf-agreement-1983--precondition-of",
+          "kind": "edge",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "maastricht-treaty--euro-adoption-1999--precondition-of",
           "kind": "edge",
           "locator": null
         },
@@ -9984,7 +10122,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 70,
+      "citationCount": 79,
       "citations": [
         {
           "dissent": false,
@@ -10192,6 +10330,12 @@
         },
         {
           "dissent": false,
+          "id": "great-depression--salazar-president-of-council-1932--enabled",
+          "kind": "edge",
+          "locator": null
+        },
+        {
+          "dissent": false,
           "id": "iberian-pact--azores-agreement-1943--precondition-of",
           "kind": "edge",
           "locator": null
@@ -10210,6 +10354,12 @@
         },
         {
           "dissent": false,
+          "id": "portugal-backs-franco-1936--spanish-civil-war--reacted-to",
+          "kind": "edge",
+          "locator": null
+        },
+        {
+          "dissent": false,
           "id": "portugal-e-o-futuro-1974--carnation-revolution-1974--enabled",
           "kind": "edge",
           "locator": null
@@ -10223,6 +10373,24 @@
         {
           "dissent": true,
           "id": "santa-maria-hijacking-1961--angola-war-begins-1961--enabled",
+          "kind": "edge",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "spanish-civil-war--iberian-pact--caused",
+          "kind": "edge",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "treaty-of-rome--efta-accession-1960--caused",
+          "kind": "edge",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "world-war-ii--azores-agreement-1943--precondition-of",
           "kind": "edge",
           "locator": null
         },
@@ -10336,6 +10504,12 @@
         },
         {
           "dissent": false,
+          "id": "great-depression",
+          "kind": "event",
+          "locator": null
+        },
+        {
+          "dissent": false,
           "id": "iberian-pact",
           "kind": "event",
           "locator": null
@@ -10361,6 +10535,24 @@
         {
           "dissent": false,
           "id": "santa-maria-hijacking-1961",
+          "kind": "event",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "spanish-civil-war",
+          "kind": "event",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "treaty-of-rome",
+          "kind": "event",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "world-war-ii",
           "kind": "event",
           "locator": null
         },
@@ -10500,7 +10692,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 133,
+      "citationCount": 144,
       "citations": [
         {
           "dissent": false,
@@ -10906,7 +11098,19 @@
         },
         {
           "dissent": false,
+          "id": "iranian-revolution--imf-agreement-1983--precondition-of",
+          "kind": "edge",
+          "locator": null
+        },
+        {
+          "dissent": false,
           "id": "legislative-election-1976--eec-application-1977--precondition-of",
+          "kind": "edge",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "maastricht-treaty--euro-adoption-1999--precondition-of",
           "kind": "edge",
           "locator": null
         },
@@ -10930,6 +11134,18 @@
         },
         {
           "dissent": false,
+          "id": "potsdam-conference--nato-founding-1949--precondition-of",
+          "kind": "edge",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "schengen-agreement--schengen-in-force-1995--precondition-of",
+          "kind": "edge",
+          "locator": null
+        },
+        {
+          "dissent": false,
           "id": "spinola-resigns-1974--coup-attempt-11-march-1975--precondition-of",
           "kind": "edge",
           "locator": null
@@ -10937,6 +11153,18 @@
         {
           "dissent": false,
           "id": "treaty-of-accession-1985--eec-accession-1986--precondition-of",
+          "kind": "edge",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "world-war-ii--azores-agreement-1943--precondition-of",
+          "kind": "edge",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "yom-kippur-war--imf-agreement-1978--precondition-of",
           "kind": "edge",
           "locator": null
         },
@@ -11158,7 +11386,19 @@
         },
         {
           "dissent": false,
+          "id": "iranian-revolution",
+          "kind": "event",
+          "locator": null
+        },
+        {
+          "dissent": false,
           "id": "legislative-election-1976",
+          "kind": "event",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "maastricht-treaty",
           "kind": "event",
           "locator": null
         },
@@ -11171,6 +11411,12 @@
         {
           "dissent": false,
           "id": "nato-founding-1949",
+          "kind": "event",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "schengen-agreement",
           "kind": "event",
           "locator": null
         },
@@ -11207,6 +11453,18 @@
         {
           "dissent": false,
           "id": "troika-bailout-2011",
+          "kind": "event",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "world-war-ii",
+          "kind": "event",
+          "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "yom-kippur-war",
           "kind": "event",
           "locator": null
         },
@@ -11684,7 +11942,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 146,
+      "citationCount": 118,
       "citations": [
         {
           "dissent": false,
@@ -11844,12 +12102,6 @@
         },
         {
           "dissent": false,
-          "id": "1994-genocide-against-tutsi",
-          "kind": "event",
-          "locator": "Q131297"
-        },
-        {
-          "dissent": false,
           "id": "1995-portuguese-legislative-election",
           "kind": "event",
           "locator": null
@@ -11922,12 +12174,6 @@
         },
         {
           "dissent": false,
-          "id": "2016-turkish-coup-d-etat-attempt",
-          "kind": "event",
-          "locator": "Q25906338"
-        },
-        {
-          "dissent": false,
           "id": "2022-portuguese-social-democratic-party-leadership-election",
           "kind": "event",
           "locator": null
@@ -11970,18 +12216,6 @@
         },
         {
           "dissent": false,
-          "id": "anglo-zanzibar-war",
-          "kind": "event",
-          "locator": "Q170850"
-        },
-        {
-          "dissent": false,
-          "id": "anti-comintern-pact",
-          "kind": "event",
-          "locator": "Q152195"
-        },
-        {
-          "dissent": false,
           "id": "armenian-genocide",
           "kind": "event",
           "locator": "Q80034"
@@ -11991,12 +12225,6 @@
           "id": "assassination-of-archduke-franz-ferdinand",
           "kind": "event",
           "locator": "Q192050"
-        },
-        {
-          "dissent": false,
-          "id": "assassination-of-john-f-kennedy",
-          "kind": "event",
-          "locator": "Q193484"
         },
         {
           "dissent": false,
@@ -12042,18 +12270,6 @@
         },
         {
           "dissent": false,
-          "id": "convention-on-the-elimination-of-all-forms-of-discrimination-against-women",
-          "kind": "event",
-          "locator": "Q277072"
-        },
-        {
-          "dissent": false,
-          "id": "convention-on-the-rights-of-the-child",
-          "kind": "event",
-          "locator": "Q466087"
-        },
-        {
-          "dissent": false,
           "id": "covid-19-pandemic",
           "kind": "event",
           "locator": null
@@ -12069,12 +12285,6 @@
           "id": "cuban-revolution",
           "kind": "event",
           "locator": "Q11264"
-        },
-        {
-          "dissent": false,
-          "id": "cultural-revolution",
-          "kind": "event",
-          "locator": "Q8690"
         },
         {
           "dissent": false,
@@ -12099,12 +12309,6 @@
           "id": "european-convention-on-human-rights",
           "kind": "event",
           "locator": "Q183191"
-        },
-        {
-          "dissent": false,
-          "id": "falklands-war",
-          "kind": "event",
-          "locator": "Q48249"
         },
         {
           "dissent": false,
@@ -12162,27 +12366,9 @@
         },
         {
           "dissent": false,
-          "id": "holodomor",
-          "kind": "event",
-          "locator": "Q165058"
-        },
-        {
-          "dissent": false,
-          "id": "hungarian-revolution-of-1956",
-          "kind": "event",
-          "locator": "Q164348"
-        },
-        {
-          "dissent": false,
           "id": "iberian-pact",
           "kind": "event",
           "locator": "Q884821"
-        },
-        {
-          "dissent": false,
-          "id": "ilinden-preobrazhenie-uprising",
-          "kind": "event",
-          "locator": "Q1145682"
         },
         {
           "dissent": false,
@@ -12210,12 +12396,6 @@
         },
         {
           "dissent": false,
-          "id": "january-6-united-states-capitol-attack",
-          "kind": "event",
-          "locator": "Q104705419"
-        },
-        {
-          "dissent": false,
           "id": "katyn-massacre",
           "kind": "event",
           "locator": "Q134301"
@@ -12228,21 +12408,9 @@
         },
         {
           "dissent": false,
-          "id": "lateran-treaty",
-          "kind": "event",
-          "locator": "Q193270"
-        },
-        {
-          "dissent": false,
           "id": "lebanese-civil-war",
           "kind": "event",
           "locator": "Q208484"
-        },
-        {
-          "dissent": false,
-          "id": "libyan-civil-war",
-          "kind": "event",
-          "locator": "Q81545"
         },
         {
           "dissent": false,
@@ -12255,12 +12423,6 @@
           "id": "maastricht-treaty",
           "kind": "event",
           "locator": "Q11146"
-        },
-        {
-          "dissent": false,
-          "id": "mexican-revolution",
-          "kind": "event",
-          "locator": "Q214426"
         },
         {
           "dissent": false,
@@ -12294,12 +12456,6 @@
         },
         {
           "dissent": false,
-          "id": "paris-agreement",
-          "kind": "event",
-          "locator": "Q21707860"
-        },
-        {
-          "dissent": false,
           "id": "paris-peace-conference",
           "kind": "event",
           "locator": "Q199820"
@@ -12318,21 +12474,9 @@
         },
         {
           "dissent": false,
-          "id": "ramsar-convention",
-          "kind": "event",
-          "locator": "Q170170"
-        },
-        {
-          "dissent": false,
           "id": "russian-civil-war",
           "kind": "event",
           "locator": "Q79911"
-        },
-        {
-          "dissent": false,
-          "id": "russian-revolution",
-          "kind": "event",
-          "locator": "Q8729"
         },
         {
           "dissent": false,
@@ -12366,18 +12510,6 @@
         },
         {
           "dissent": false,
-          "id": "second-chechen-war",
-          "kind": "event",
-          "locator": "Q120843"
-        },
-        {
-          "dissent": false,
-          "id": "second-nagorno-karabakh-war",
-          "kind": "event",
-          "locator": "Q99659280"
-        },
-        {
-          "dissent": false,
           "id": "second-sino-japanese-war",
           "kind": "event",
           "locator": "Q170314"
@@ -12387,24 +12519,6 @@
           "id": "spanish-civil-war",
           "kind": "event",
           "locator": "Q10859"
-        },
-        {
-          "dissent": false,
-          "id": "srebrenica-massacre",
-          "kind": "event",
-          "locator": "Q170334"
-        },
-        {
-          "dissent": false,
-          "id": "sudanese-civil-war",
-          "kind": "event",
-          "locator": "Q117716414"
-        },
-        {
-          "dissent": false,
-          "id": "syrian-civil-war",
-          "kind": "event",
-          "locator": "Q178810"
         },
         {
           "dissent": false,
@@ -12474,12 +12588,6 @@
         },
         {
           "dissent": false,
-          "id": "treaty-on-the-non-proliferation-of-nuclear-weapons",
-          "kind": "event",
-          "locator": "Q186444"
-        },
-        {
-          "dissent": false,
           "id": "turkish-war-of-independence",
           "kind": "event",
           "locator": "Q234738"
@@ -12489,18 +12597,6 @@
           "id": "twelve-day-war",
           "kind": "event",
           "locator": "Q134900605"
-        },
-        {
-          "dissent": false,
-          "id": "united-nations-convention-on-the-law-of-the-sea",
-          "kind": "event",
-          "locator": "Q216996"
-        },
-        {
-          "dissent": false,
-          "id": "velvet-revolution",
-          "kind": "event",
-          "locator": "Q182817"
         },
         {
           "dissent": false,
@@ -12519,12 +12615,6 @@
           "id": "wall-street-crash-of-1929",
           "kind": "event",
           "locator": "Q201684"
-        },
-        {
-          "dissent": false,
-          "id": "war-in-afghanistan-2001-2021",
-          "kind": "event",
-          "locator": "Q182865"
         },
         {
           "dissent": false,
@@ -12593,13 +12683,85 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 55,
+      "citationCount": 216,
       "citations": [
+        {
+          "dissent": false,
+          "id": "hamas",
+          "kind": "actor",
+          "locator": "\"Gaza war\", revision 1372809003"
+        },
+        {
+          "dissent": false,
+          "id": "wagner-group",
+          "kind": "actor",
+          "locator": "\"Wagner Group rebellion\", revision 1372812761"
+        },
         {
           "dissent": false,
           "id": "2024-madeiran-regional-election--2025-madeiran-regional-election--caused",
           "kind": "edge",
           "locator": "\"2025 Madeiran regional election\", revision 1363880650"
+        },
+        {
+          "dissent": false,
+          "id": "algerian-war--angola-war-begins-1961--precondition-of",
+          "kind": "edge",
+          "locator": "\"Algerian War\", revision 1373081356"
+        },
+        {
+          "dissent": false,
+          "id": "assassination-of-archduke-franz-ferdinand--world-war-i--caused",
+          "kind": "edge",
+          "locator": "\"Assassination of Archduke Franz Ferdinand\", revision 1367945761"
+        },
+        {
+          "dissent": false,
+          "id": "assassination-of-archduke-franz-ferdinand--world-war-i--caused",
+          "kind": "edge",
+          "locator": "\"World War I\", revision 1372979664"
+        },
+        {
+          "dissent": false,
+          "id": "boxer-rebellion--xinhai-revolution--precondition-of",
+          "kind": "edge",
+          "locator": "\"1911 Revolution\", revision 1373070054"
+        },
+        {
+          "dissent": false,
+          "id": "boxer-rebellion--xinhai-revolution--precondition-of",
+          "kind": "edge",
+          "locator": "\"Boxer Rebellion\", revision 1372943833"
+        },
+        {
+          "dissent": false,
+          "id": "charter-of-the-united-nations--international-covenant-on-civil-and-political-rights--precondition-of",
+          "kind": "edge",
+          "locator": "\"Charter of the United Nations\", revision 1365430628"
+        },
+        {
+          "dissent": false,
+          "id": "charter-of-the-united-nations--international-covenant-on-civil-and-political-rights--precondition-of",
+          "kind": "edge",
+          "locator": "\"International Covenant on Civil and Political Rights\", revision 1371450720"
+        },
+        {
+          "dissent": false,
+          "id": "charter-of-the-united-nations--un-admission-1955--precondition-of",
+          "kind": "edge",
+          "locator": "\"Charter of the United Nations\", revision 1365430628"
+        },
+        {
+          "dissent": false,
+          "id": "chinese-civil-war--korean-war--precondition-of",
+          "kind": "edge",
+          "locator": "\"Chinese Civil War\", revision 1372330605"
+        },
+        {
+          "dissent": false,
+          "id": "chinese-civil-war--korean-war--precondition-of",
+          "kind": "edge",
+          "locator": "\"Korean War\", revision 1371767674"
         },
         {
           "dissent": false,
@@ -12612,6 +12774,528 @@
           "id": "covid-19-pandemic-in-europe--covid-state-of-emergency-2020--caused",
           "kind": "edge",
           "locator": "\"COVID-19 pandemic in Europe\", revision 1372462868"
+        },
+        {
+          "dissent": false,
+          "id": "cuban-revolution--angola-independence-1975--precondition-of",
+          "kind": "edge",
+          "locator": "\"Cuban Revolution\", revision 1373305240"
+        },
+        {
+          "dissent": false,
+          "id": "eastern-front--potsdam-conference--precondition-of",
+          "kind": "edge",
+          "locator": "\"Eastern Front (World War II)\", revision 1373107377"
+        },
+        {
+          "dissent": false,
+          "id": "eastern-front--potsdam-conference--precondition-of",
+          "kind": "edge",
+          "locator": "\"Potsdam Conference\", revision 1371936780"
+        },
+        {
+          "dissent": false,
+          "id": "euromaidan--russo-ukrainian-war--caused",
+          "kind": "edge",
+          "locator": "\"Euromaidan\", revision 1372581234"
+        },
+        {
+          "dissent": false,
+          "id": "euromaidan--russo-ukrainian-war--caused",
+          "kind": "edge",
+          "locator": "\"Russo-Ukrainian war\", revision 1372896482"
+        },
+        {
+          "dissent": false,
+          "id": "february-revolution--october-revolution--enabled",
+          "kind": "edge",
+          "locator": "\"February Revolution\", revision 1370618162"
+        },
+        {
+          "dissent": false,
+          "id": "february-revolution--october-revolution--enabled",
+          "kind": "edge",
+          "locator": "\"October Revolution\", revision 1370630358"
+        },
+        {
+          "dissent": false,
+          "id": "first-indochina-war--algerian-war--precondition-of",
+          "kind": "edge",
+          "locator": "\"Algerian War\", revision 1373081356"
+        },
+        {
+          "dissent": false,
+          "id": "first-indochina-war--algerian-war--precondition-of",
+          "kind": "edge",
+          "locator": "\"First Indochina War\", revision 1373236226"
+        },
+        {
+          "dissent": false,
+          "id": "first-indochina-war--vietnam-war--precondition-of",
+          "kind": "edge",
+          "locator": "\"First Indochina War\", revision 1373236226"
+        },
+        {
+          "dissent": false,
+          "id": "first-indochina-war--vietnam-war--precondition-of",
+          "kind": "edge",
+          "locator": "\"Vietnam War\", revision 1373025356"
+        },
+        {
+          "dissent": false,
+          "id": "full-scale-russo-ukrainian-war--bucha-massacre--caused",
+          "kind": "edge",
+          "locator": "\"Bucha massacre\", revision 1370596341"
+        },
+        {
+          "dissent": false,
+          "id": "full-scale-russo-ukrainian-war--bucha-massacre--caused",
+          "kind": "edge",
+          "locator": "\"Russo-Ukrainian war (2022–present)\", revision 1373153668"
+        },
+        {
+          "dissent": false,
+          "id": "full-scale-russo-ukrainian-war--wagner-group-rebellion--caused",
+          "kind": "edge",
+          "locator": "\"Russo-Ukrainian war (2022–present)\", revision 1373153668"
+        },
+        {
+          "dissent": false,
+          "id": "full-scale-russo-ukrainian-war--wagner-group-rebellion--caused",
+          "kind": "edge",
+          "locator": "\"Wagner Group rebellion\", revision 1372812761"
+        },
+        {
+          "dissent": false,
+          "id": "gaza-war--gaza-genocide--caused",
+          "kind": "edge",
+          "locator": "\"Gaza genocide\", revision 1371072421"
+        },
+        {
+          "dissent": false,
+          "id": "gaza-war--gaza-genocide--caused",
+          "kind": "edge",
+          "locator": "\"Gaza war\", revision 1372809003"
+        },
+        {
+          "dissent": true,
+          "id": "gaza-war--gaza-genocide--caused",
+          "kind": "edge",
+          "locator": "\"Gaza genocide\", revision 1371072421"
+        },
+        {
+          "dissent": false,
+          "id": "gaza-war--twelve-day-war--precondition-of",
+          "kind": "edge",
+          "locator": "\"Gaza war\", revision 1372809003"
+        },
+        {
+          "dissent": false,
+          "id": "gaza-war--twelve-day-war--precondition-of",
+          "kind": "edge",
+          "locator": "\"Twelve-Day War\", revision 1370751931"
+        },
+        {
+          "dissent": false,
+          "id": "great-depression--salazar-president-of-council-1932--enabled",
+          "kind": "edge",
+          "locator": "\"Great Depression\", revision 1371653684"
+        },
+        {
+          "dissent": false,
+          "id": "gulf-war--iraq-war--precondition-of",
+          "kind": "edge",
+          "locator": "\"Gulf War\", revision 1373369657"
+        },
+        {
+          "dissent": false,
+          "id": "gulf-war--iraq-war--precondition-of",
+          "kind": "edge",
+          "locator": "\"Iraq War\", revision 1373215695"
+        },
+        {
+          "dissent": false,
+          "id": "indo-pakistani-war-of-1965--bangladesh-liberation-war--precondition-of",
+          "kind": "edge",
+          "locator": "\"Bangladesh Liberation War\", revision 1370362676"
+        },
+        {
+          "dissent": false,
+          "id": "indo-pakistani-war-of-1965--bangladesh-liberation-war--precondition-of",
+          "kind": "edge",
+          "locator": "\"India–Pakistan war of 1965\", revision 1371230624"
+        },
+        {
+          "dissent": false,
+          "id": "iranian-revolution--2025-2026-iranian-protests--precondition-of",
+          "kind": "edge",
+          "locator": "\"2025–2026 Iranian protests\", revision 1373363187"
+        },
+        {
+          "dissent": false,
+          "id": "iranian-revolution--2025-2026-iranian-protests--precondition-of",
+          "kind": "edge",
+          "locator": "\"Iranian Revolution\", revision 1373278840"
+        },
+        {
+          "dissent": false,
+          "id": "iranian-revolution--imf-agreement-1983--precondition-of",
+          "kind": "edge",
+          "locator": "\"Iranian Revolution\", revision 1373278840"
+        },
+        {
+          "dissent": false,
+          "id": "katyn-massacre--warsaw-uprising--precondition-of",
+          "kind": "edge",
+          "locator": "\"Katyn massacre\", revision 1368830884"
+        },
+        {
+          "dissent": false,
+          "id": "katyn-massacre--warsaw-uprising--precondition-of",
+          "kind": "edge",
+          "locator": "\"Warsaw Uprising\", revision 1372481662"
+        },
+        {
+          "dissent": false,
+          "id": "lebanese-civil-war--2006-lebanon-war--precondition-of",
+          "kind": "edge",
+          "locator": "\"2006 Lebanon War\", revision 1373390187"
+        },
+        {
+          "dissent": false,
+          "id": "lebanese-civil-war--2006-lebanon-war--precondition-of",
+          "kind": "edge",
+          "locator": "\"Lebanese Civil War\", revision 1370626682"
+        },
+        {
+          "dissent": false,
+          "id": "maastricht-treaty--euro-adoption-1999--precondition-of",
+          "kind": "edge",
+          "locator": "\"Maastricht Treaty\", revision 1360900516"
+        },
+        {
+          "dissent": false,
+          "id": "molotov-ribbentrop-pact--world-war-ii--enabled",
+          "kind": "edge",
+          "locator": "\"Molotov–Ribbentrop Pact\", revision 1371767482"
+        },
+        {
+          "dissent": false,
+          "id": "molotov-ribbentrop-pact--world-war-ii--enabled",
+          "kind": "edge",
+          "locator": "\"World War II\", revision 1372726772"
+        },
+        {
+          "dissent": false,
+          "id": "munich-agreement--molotov-ribbentrop-pact--enabled",
+          "kind": "edge",
+          "locator": "\"Molotov–Ribbentrop Pact\", revision 1371767482"
+        },
+        {
+          "dissent": false,
+          "id": "munich-agreement--molotov-ribbentrop-pact--enabled",
+          "kind": "edge",
+          "locator": "\"Munich Agreement\", revision 1372429724"
+        },
+        {
+          "dissent": false,
+          "id": "october-revolution--russian-civil-war--caused",
+          "kind": "edge",
+          "locator": "\"October Revolution\", revision 1370630358"
+        },
+        {
+          "dissent": false,
+          "id": "october-revolution--russian-civil-war--caused",
+          "kind": "edge",
+          "locator": "\"Russian Civil War\", revision 1372728974"
+        },
+        {
+          "dissent": false,
+          "id": "october-revolution--treaty-of-brest-litovsk--caused",
+          "kind": "edge",
+          "locator": "\"October Revolution\", revision 1370630358"
+        },
+        {
+          "dissent": false,
+          "id": "october-revolution--treaty-of-brest-litovsk--caused",
+          "kind": "edge",
+          "locator": "\"Treaty of Brest-Litovsk\", revision 1368334684"
+        },
+        {
+          "dissent": false,
+          "id": "orange-revolution--euromaidan--precondition-of",
+          "kind": "edge",
+          "locator": "\"Euromaidan\", revision 1372581234"
+        },
+        {
+          "dissent": false,
+          "id": "orange-revolution--euromaidan--precondition-of",
+          "kind": "edge",
+          "locator": "\"Orange Revolution\", revision 1372581321"
+        },
+        {
+          "dissent": false,
+          "id": "paris-peace-conference--treaty-of-trianon--caused",
+          "kind": "edge",
+          "locator": "\"Paris Peace Conference (1919–1920)\", revision 1371739974"
+        },
+        {
+          "dissent": false,
+          "id": "paris-peace-conference--treaty-of-trianon--caused",
+          "kind": "edge",
+          "locator": "\"Treaty of Trianon\", revision 1372701139"
+        },
+        {
+          "dissent": false,
+          "id": "paris-peace-conference--treaty-of-versailles--caused",
+          "kind": "edge",
+          "locator": "\"Paris Peace Conference (1919–1920)\", revision 1371739974"
+        },
+        {
+          "dissent": false,
+          "id": "paris-peace-conference--treaty-of-versailles--caused",
+          "kind": "edge",
+          "locator": "\"Treaty of Versailles\", revision 1371877530"
+        },
+        {
+          "dissent": false,
+          "id": "portugal-backs-franco-1936--spanish-civil-war--reacted-to",
+          "kind": "edge",
+          "locator": "\"Spanish Civil War\", revision 1373335825"
+        },
+        {
+          "dissent": false,
+          "id": "potsdam-conference--nato-founding-1949--precondition-of",
+          "kind": "edge",
+          "locator": "\"Potsdam Conference\", revision 1371936780"
+        },
+        {
+          "dissent": false,
+          "id": "russian-revolution-of-1905--february-revolution--precondition-of",
+          "kind": "edge",
+          "locator": "\"February Revolution\", revision 1370618162"
+        },
+        {
+          "dissent": false,
+          "id": "russian-revolution-of-1905--february-revolution--precondition-of",
+          "kind": "edge",
+          "locator": "\"Russian Revolution of 1905\", revision 1371938345"
+        },
+        {
+          "dissent": false,
+          "id": "russian-revolution-of-1905--treaty-of-portsmouth--caused",
+          "kind": "edge",
+          "locator": "\"Russian Revolution of 1905\", revision 1371938345"
+        },
+        {
+          "dissent": false,
+          "id": "russian-revolution-of-1905--treaty-of-portsmouth--caused",
+          "kind": "edge",
+          "locator": "\"Treaty of Portsmouth\", revision 1369694651"
+        },
+        {
+          "dissent": false,
+          "id": "russo-georgian-war--russo-ukrainian-war--precondition-of",
+          "kind": "edge",
+          "locator": "\"Russo-Georgian War\", revision 1371976175"
+        },
+        {
+          "dissent": false,
+          "id": "russo-georgian-war--russo-ukrainian-war--precondition-of",
+          "kind": "edge",
+          "locator": "\"Russo-Ukrainian war\", revision 1372896482"
+        },
+        {
+          "dissent": false,
+          "id": "russo-ukrainian-war--full-scale-russo-ukrainian-war--precondition-of",
+          "kind": "edge",
+          "locator": "\"Russo-Ukrainian war (2022–present)\", revision 1373153668"
+        },
+        {
+          "dissent": false,
+          "id": "russo-ukrainian-war--full-scale-russo-ukrainian-war--precondition-of",
+          "kind": "edge",
+          "locator": "\"Russo-Ukrainian war\", revision 1372896482"
+        },
+        {
+          "dissent": false,
+          "id": "schengen-agreement--schengen-in-force-1995--precondition-of",
+          "kind": "edge",
+          "locator": "\"Schengen Agreement\", revision 1370029483"
+        },
+        {
+          "dissent": false,
+          "id": "second-boer-war--treaty-of-windsor--caused",
+          "kind": "edge",
+          "locator": "\"Second Boer War\", revision 1372994797"
+        },
+        {
+          "dissent": false,
+          "id": "second-sino-japanese-war--chinese-civil-war--precondition-of",
+          "kind": "edge",
+          "locator": "\"Chinese Civil War\", revision 1372330605"
+        },
+        {
+          "dissent": false,
+          "id": "second-sino-japanese-war--chinese-civil-war--precondition-of",
+          "kind": "edge",
+          "locator": "\"Second Sino-Japanese War\", revision 1372437913"
+        },
+        {
+          "dissent": false,
+          "id": "spanish-civil-war--iberian-pact--caused",
+          "kind": "edge",
+          "locator": "\"Spanish Civil War\", revision 1373335825"
+        },
+        {
+          "dissent": false,
+          "id": "the-holocaust--european-convention-on-human-rights--reacted-to",
+          "kind": "edge",
+          "locator": "\"European Convention on Human Rights\", revision 1366403378"
+        },
+        {
+          "dissent": false,
+          "id": "the-holocaust--european-convention-on-human-rights--reacted-to",
+          "kind": "edge",
+          "locator": "\"The Holocaust\", revision 1373403276"
+        },
+        {
+          "dissent": false,
+          "id": "treaty-of-brest-litovsk--battle-of-the-lys-1918--enabled",
+          "kind": "edge",
+          "locator": "\"Treaty of Brest-Litovsk\", revision 1368334684"
+        },
+        {
+          "dissent": false,
+          "id": "treaty-of-rome--efta-accession-1960--caused",
+          "kind": "edge",
+          "locator": "\"Treaty of Rome\", revision 1311520265"
+        },
+        {
+          "dissent": false,
+          "id": "treaty-of-rome--maastricht-treaty--precondition-of",
+          "kind": "edge",
+          "locator": "\"Maastricht Treaty\", revision 1360900516"
+        },
+        {
+          "dissent": false,
+          "id": "treaty-of-rome--maastricht-treaty--precondition-of",
+          "kind": "edge",
+          "locator": "\"Treaty of Rome\", revision 1311520265"
+        },
+        {
+          "dissent": false,
+          "id": "treaty-of-sevres--turkish-war-of-independence--caused",
+          "kind": "edge",
+          "locator": "\"Treaty of Sèvres\", revision 1369307123"
+        },
+        {
+          "dissent": false,
+          "id": "treaty-of-sevres--turkish-war-of-independence--caused",
+          "kind": "edge",
+          "locator": "\"Turkish War of Independence\", revision 1372145108"
+        },
+        {
+          "dissent": false,
+          "id": "treaty-of-versailles--beer-hall-putsch--precondition-of",
+          "kind": "edge",
+          "locator": "\"Beer Hall Putsch\", revision 1370735026"
+        },
+        {
+          "dissent": false,
+          "id": "treaty-of-versailles--beer-hall-putsch--precondition-of",
+          "kind": "edge",
+          "locator": "\"Treaty of Versailles\", revision 1371877530"
+        },
+        {
+          "dissent": false,
+          "id": "treaty-of-versailles--world-war-ii--precondition-of",
+          "kind": "edge",
+          "locator": "\"Treaty of Versailles\", revision 1371877530"
+        },
+        {
+          "dissent": false,
+          "id": "treaty-of-versailles--world-war-ii--precondition-of",
+          "kind": "edge",
+          "locator": "\"World War II\", revision 1372726772"
+        },
+        {
+          "dissent": true,
+          "id": "treaty-of-versailles--world-war-ii--precondition-of",
+          "kind": "edge",
+          "locator": "\"Treaty of Versailles\", revision 1371877530"
+        },
+        {
+          "dissent": false,
+          "id": "turkish-war-of-independence--treaty-of-lausanne--caused",
+          "kind": "edge",
+          "locator": "\"Treaty of Lausanne\", revision 1370957561"
+        },
+        {
+          "dissent": false,
+          "id": "turkish-war-of-independence--treaty-of-lausanne--caused",
+          "kind": "edge",
+          "locator": "\"Turkish War of Independence\", revision 1372145108"
+        },
+        {
+          "dissent": false,
+          "id": "wall-street-crash-of-1929--great-depression--caused",
+          "kind": "edge",
+          "locator": "\"Great Depression\", revision 1371653684"
+        },
+        {
+          "dissent": false,
+          "id": "wall-street-crash-of-1929--great-depression--caused",
+          "kind": "edge",
+          "locator": "\"Wall Street crash of 1929\", revision 1364914482"
+        },
+        {
+          "dissent": true,
+          "id": "wall-street-crash-of-1929--great-depression--caused",
+          "kind": "edge",
+          "locator": "\"Great Depression\", revision 1371653684"
+        },
+        {
+          "dissent": false,
+          "id": "world-war-i--armenian-genocide--enabled",
+          "kind": "edge",
+          "locator": "\"Armenian genocide\", revision 1367030542"
+        },
+        {
+          "dissent": false,
+          "id": "world-war-i--armenian-genocide--enabled",
+          "kind": "edge",
+          "locator": "\"World War I\", revision 1372979664"
+        },
+        {
+          "dissent": false,
+          "id": "world-war-i--germany-declares-war-1916--precondition-of",
+          "kind": "edge",
+          "locator": "\"World War I\", revision 1372979664"
+        },
+        {
+          "dissent": false,
+          "id": "world-war-ii--azores-agreement-1943--precondition-of",
+          "kind": "edge",
+          "locator": "\"World War II\", revision 1372726772"
+        },
+        {
+          "dissent": false,
+          "id": "yom-kippur-war--imf-agreement-1978--precondition-of",
+          "kind": "edge",
+          "locator": "\"Yom Kippur War\", revision 1373227342"
+        },
+        {
+          "dissent": false,
+          "id": "young-turk-revolution-of-1908--armenian-genocide--precondition-of",
+          "kind": "edge",
+          "locator": "\"Armenian genocide\", revision 1367030542"
+        },
+        {
+          "dissent": false,
+          "id": "young-turk-revolution-of-1908--armenian-genocide--precondition-of",
+          "kind": "edge",
+          "locator": "\"Young Turk Revolution\", revision 1372902192"
         },
         {
           "dissent": false,
@@ -12807,6 +13491,12 @@
         },
         {
           "dissent": false,
+          "id": "2006-lebanon-war",
+          "kind": "event",
+          "locator": "\"2006 Lebanon War\", revision 1373390187"
+        },
+        {
+          "dissent": false,
           "id": "2007-portuguese-abortion-referendum",
           "kind": "event",
           "locator": "\"2007 Portuguese abortion referendum\", revision 1372123133"
@@ -12861,15 +13551,75 @@
         },
         {
           "dissent": false,
+          "id": "2025-2026-iranian-protests",
+          "kind": "event",
+          "locator": "\"2025–2026 Iranian protests\", revision 1373363187"
+        },
+        {
+          "dissent": false,
           "id": "2025-madeiran-regional-election",
           "kind": "event",
           "locator": "\"2025 Madeiran regional election\", revision 1363880650"
         },
         {
           "dissent": false,
+          "id": "algerian-war",
+          "kind": "event",
+          "locator": "\"Algerian War\", revision 1373081356"
+        },
+        {
+          "dissent": false,
+          "id": "armenian-genocide",
+          "kind": "event",
+          "locator": "\"Armenian genocide\", revision 1367030542"
+        },
+        {
+          "dissent": false,
+          "id": "assassination-of-archduke-franz-ferdinand",
+          "kind": "event",
+          "locator": "\"Assassination of Archduke Franz Ferdinand\", revision 1367945761"
+        },
+        {
+          "dissent": false,
+          "id": "bangladesh-liberation-war",
+          "kind": "event",
+          "locator": "\"Bangladesh Liberation War\", revision 1370362676"
+        },
+        {
+          "dissent": false,
           "id": "batepa-massacre",
           "kind": "event",
           "locator": "\"Batepá massacre\", revision 1366289250"
+        },
+        {
+          "dissent": false,
+          "id": "beer-hall-putsch",
+          "kind": "event",
+          "locator": "\"Beer Hall Putsch\", revision 1370735026"
+        },
+        {
+          "dissent": false,
+          "id": "boxer-rebellion",
+          "kind": "event",
+          "locator": "\"Boxer Rebellion\", revision 1372943833"
+        },
+        {
+          "dissent": false,
+          "id": "bucha-massacre",
+          "kind": "event",
+          "locator": "\"Bucha massacre\", revision 1370596341"
+        },
+        {
+          "dissent": false,
+          "id": "charter-of-the-united-nations",
+          "kind": "event",
+          "locator": "\"Charter of the United Nations\", revision 1365430628"
+        },
+        {
+          "dissent": false,
+          "id": "chinese-civil-war",
+          "kind": "event",
+          "locator": "\"Chinese Civil War\", revision 1372330605"
         },
         {
           "dissent": false,
@@ -12885,9 +13635,75 @@
         },
         {
           "dissent": false,
+          "id": "cuban-revolution",
+          "kind": "event",
+          "locator": "\"Cuban Revolution\", revision 1373305240"
+        },
+        {
+          "dissent": false,
+          "id": "eastern-front",
+          "kind": "event",
+          "locator": "\"Eastern Front (World War II)\", revision 1373107377"
+        },
+        {
+          "dissent": false,
+          "id": "euromaidan",
+          "kind": "event",
+          "locator": "\"Euromaidan\", revision 1372581234"
+        },
+        {
+          "dissent": false,
+          "id": "european-convention-on-human-rights",
+          "kind": "event",
+          "locator": "\"European Convention on Human Rights\", revision 1366403378"
+        },
+        {
+          "dissent": false,
+          "id": "february-revolution",
+          "kind": "event",
+          "locator": "\"February Revolution\", revision 1370618162"
+        },
+        {
+          "dissent": false,
+          "id": "first-indochina-war",
+          "kind": "event",
+          "locator": "\"First Indochina War\", revision 1373236226"
+        },
+        {
+          "dissent": false,
+          "id": "full-scale-russo-ukrainian-war",
+          "kind": "event",
+          "locator": "\"Russo-Ukrainian war (2022–present)\", revision 1373153668"
+        },
+        {
+          "dissent": false,
+          "id": "gaza-genocide",
+          "kind": "event",
+          "locator": "\"Gaza genocide\", revision 1371072421"
+        },
+        {
+          "dissent": false,
+          "id": "gaza-war",
+          "kind": "event",
+          "locator": "\"Gaza war\", revision 1372809003"
+        },
+        {
+          "dissent": false,
+          "id": "great-depression",
+          "kind": "event",
+          "locator": "\"Great Depression\", revision 1371653684"
+        },
+        {
+          "dissent": false,
           "id": "guinean-constitutional-referendum-1958",
           "kind": "event",
           "locator": "\"1958 Guinean constitutional referendum\", revision 1368429741"
+        },
+        {
+          "dissent": false,
+          "id": "gulf-war",
+          "kind": "event",
+          "locator": "\"Gulf War\", revision 1373369657"
         },
         {
           "dissent": false,
@@ -12897,9 +13713,87 @@
         },
         {
           "dissent": false,
+          "id": "indo-pakistani-war-of-1965",
+          "kind": "event",
+          "locator": "\"India–Pakistan war of 1965\", revision 1371230624"
+        },
+        {
+          "dissent": false,
+          "id": "international-covenant-on-civil-and-political-rights",
+          "kind": "event",
+          "locator": "\"International Covenant on Civil and Political Rights\", revision 1371450720"
+        },
+        {
+          "dissent": false,
+          "id": "iranian-revolution",
+          "kind": "event",
+          "locator": "\"Iranian Revolution\", revision 1373278840"
+        },
+        {
+          "dissent": false,
+          "id": "iraq-war",
+          "kind": "event",
+          "locator": "\"Iraq War\", revision 1373215695"
+        },
+        {
+          "dissent": false,
+          "id": "katyn-massacre",
+          "kind": "event",
+          "locator": "\"Katyn massacre\", revision 1368830884"
+        },
+        {
+          "dissent": false,
+          "id": "korean-war",
+          "kind": "event",
+          "locator": "\"Korean War\", revision 1371767674"
+        },
+        {
+          "dissent": false,
+          "id": "lebanese-civil-war",
+          "kind": "event",
+          "locator": "\"Lebanese Civil War\", revision 1370626682"
+        },
+        {
+          "dissent": false,
           "id": "lisbon-regicide",
           "kind": "event",
           "locator": "\"Lisbon Regicide\", revision 1366493733"
+        },
+        {
+          "dissent": false,
+          "id": "maastricht-treaty",
+          "kind": "event",
+          "locator": "\"Maastricht Treaty\", revision 1360900516"
+        },
+        {
+          "dissent": false,
+          "id": "molotov-ribbentrop-pact",
+          "kind": "event",
+          "locator": "\"Molotov–Ribbentrop Pact\", revision 1371767482"
+        },
+        {
+          "dissent": false,
+          "id": "munich-agreement",
+          "kind": "event",
+          "locator": "\"Munich Agreement\", revision 1372429724"
+        },
+        {
+          "dissent": false,
+          "id": "october-revolution",
+          "kind": "event",
+          "locator": "\"October Revolution\", revision 1370630358"
+        },
+        {
+          "dissent": false,
+          "id": "orange-revolution",
+          "kind": "event",
+          "locator": "\"Orange Revolution\", revision 1372581321"
+        },
+        {
+          "dissent": false,
+          "id": "paris-peace-conference",
+          "kind": "event",
+          "locator": "\"Paris Peace Conference (1919–1920)\", revision 1371739974"
         },
         {
           "dissent": false,
@@ -12909,9 +13803,75 @@
         },
         {
           "dissent": false,
+          "id": "potsdam-conference",
+          "kind": "event",
+          "locator": "\"Potsdam Conference\", revision 1371936780"
+        },
+        {
+          "dissent": false,
+          "id": "russian-civil-war",
+          "kind": "event",
+          "locator": "\"Russian Civil War\", revision 1372728974"
+        },
+        {
+          "dissent": false,
+          "id": "russian-revolution-of-1905",
+          "kind": "event",
+          "locator": "\"Russian Revolution of 1905\", revision 1371938345"
+        },
+        {
+          "dissent": false,
+          "id": "russo-georgian-war",
+          "kind": "event",
+          "locator": "\"Russo-Georgian War\", revision 1371976175"
+        },
+        {
+          "dissent": false,
+          "id": "russo-ukrainian-war",
+          "kind": "event",
+          "locator": "\"Russo-Ukrainian war\", revision 1372896482"
+        },
+        {
+          "dissent": false,
+          "id": "schengen-agreement",
+          "kind": "event",
+          "locator": "\"Schengen Agreement\", revision 1370029483"
+        },
+        {
+          "dissent": false,
+          "id": "second-boer-war",
+          "kind": "event",
+          "locator": "\"Second Boer War\", revision 1372994797"
+        },
+        {
+          "dissent": false,
+          "id": "second-sino-japanese-war",
+          "kind": "event",
+          "locator": "\"Second Sino-Japanese War\", revision 1372437913"
+        },
+        {
+          "dissent": false,
+          "id": "spanish-civil-war",
+          "kind": "event",
+          "locator": "\"Spanish Civil War\", revision 1373335825"
+        },
+        {
+          "dissent": false,
+          "id": "the-holocaust",
+          "kind": "event",
+          "locator": "\"The Holocaust\", revision 1373403276"
+        },
+        {
+          "dissent": false,
           "id": "treaty-of-accession-1985",
           "kind": "event",
           "locator": "\"Treaty of Accession 1985\", revision 1287624946"
+        },
+        {
+          "dissent": false,
+          "id": "treaty-of-brest-litovsk",
+          "kind": "event",
+          "locator": "\"Treaty of Brest-Litovsk\", revision 1368334684"
         },
         {
           "dissent": false,
@@ -12921,9 +13881,105 @@
         },
         {
           "dissent": false,
+          "id": "treaty-of-lausanne",
+          "kind": "event",
+          "locator": "\"Treaty of Lausanne\", revision 1370957561"
+        },
+        {
+          "dissent": false,
+          "id": "treaty-of-portsmouth",
+          "kind": "event",
+          "locator": "\"Treaty of Portsmouth\", revision 1369694651"
+        },
+        {
+          "dissent": false,
+          "id": "treaty-of-rome",
+          "kind": "event",
+          "locator": "\"Treaty of Rome\", revision 1311520265"
+        },
+        {
+          "dissent": false,
+          "id": "treaty-of-sevres",
+          "kind": "event",
+          "locator": "\"Treaty of Sèvres\", revision 1369307123"
+        },
+        {
+          "dissent": false,
+          "id": "treaty-of-trianon",
+          "kind": "event",
+          "locator": "\"Treaty of Trianon\", revision 1372701139"
+        },
+        {
+          "dissent": false,
+          "id": "treaty-of-versailles",
+          "kind": "event",
+          "locator": "\"Treaty of Versailles\", revision 1371877530"
+        },
+        {
+          "dissent": false,
           "id": "treaty-of-windsor",
           "kind": "event",
           "locator": "\"Treaty of Windsor (1899)\", revision 1370935059"
+        },
+        {
+          "dissent": false,
+          "id": "turkish-war-of-independence",
+          "kind": "event",
+          "locator": "\"Turkish War of Independence\", revision 1372145108"
+        },
+        {
+          "dissent": false,
+          "id": "twelve-day-war",
+          "kind": "event",
+          "locator": "\"Twelve-Day War\", revision 1370751931"
+        },
+        {
+          "dissent": false,
+          "id": "vietnam-war",
+          "kind": "event",
+          "locator": "\"Vietnam War\", revision 1373025356"
+        },
+        {
+          "dissent": false,
+          "id": "wagner-group-rebellion",
+          "kind": "event",
+          "locator": "\"Wagner Group rebellion\", revision 1372812761"
+        },
+        {
+          "dissent": false,
+          "id": "wall-street-crash-of-1929",
+          "kind": "event",
+          "locator": "\"Wall Street crash of 1929\", revision 1364914482"
+        },
+        {
+          "dissent": false,
+          "id": "warsaw-uprising",
+          "kind": "event",
+          "locator": "\"Warsaw Uprising\", revision 1372481662"
+        },
+        {
+          "dissent": false,
+          "id": "world-war-i",
+          "kind": "event",
+          "locator": "\"World War I\", revision 1372979664"
+        },
+        {
+          "dissent": false,
+          "id": "world-war-ii",
+          "kind": "event",
+          "locator": "\"World War II\", revision 1372726772"
+        },
+        {
+          "dissent": false,
+          "id": "yom-kippur-war",
+          "kind": "event",
+          "locator": "\"Yom Kippur War\", revision 1373227342"
+        },
+        {
+          "dissent": false,
+          "id": "young-turk-revolution-of-1908",
+          "kind": "event",
+          "locator": "\"Young Turk Revolution\", revision 1372902192"
         }
       ],
       "created": "2026-09-04",
@@ -12956,7 +14012,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 49,
+      "citationCount": 111,
       "citations": [
         {
           "dissent": false,
@@ -13146,6 +14202,12 @@
         },
         {
           "dissent": false,
+          "id": "2006-lebanon-war",
+          "kind": "event",
+          "locator": "\"Guerra do Líbano de 2006\", revision 72061620"
+        },
+        {
+          "dissent": false,
           "id": "2007-portuguese-abortion-referendum",
           "kind": "event",
           "locator": "\"Referendo à despenalização do aborto em Portugal (2007)\", revision 71782356"
@@ -13194,15 +14256,75 @@
         },
         {
           "dissent": false,
+          "id": "2025-2026-iranian-protests",
+          "kind": "event",
+          "locator": "\"Protestos no Irã (2025–2026)\", revision 72784810"
+        },
+        {
+          "dissent": false,
           "id": "2025-madeiran-regional-election",
           "kind": "event",
           "locator": "\"Eleições legislativas regionais na Madeira em 2025\", revision 71818596"
         },
         {
           "dissent": false,
+          "id": "algerian-war",
+          "kind": "event",
+          "locator": "\"Guerra de Independência Argelina\", revision 72128749"
+        },
+        {
+          "dissent": false,
+          "id": "armenian-genocide",
+          "kind": "event",
+          "locator": "\"Genocídio armênio\", revision 72654348"
+        },
+        {
+          "dissent": false,
+          "id": "assassination-of-archduke-franz-ferdinand",
+          "kind": "event",
+          "locator": "\"Atentado de Sarajevo\", revision 72527573"
+        },
+        {
+          "dissent": false,
+          "id": "bangladesh-liberation-war",
+          "kind": "event",
+          "locator": "\"Guerra de Independência de Bangladesh\", revision 70046456"
+        },
+        {
+          "dissent": false,
           "id": "batepa-massacre",
           "kind": "event",
           "locator": "\"Massacre de Batepá\", revision 67300864"
+        },
+        {
+          "dissent": false,
+          "id": "beer-hall-putsch",
+          "kind": "event",
+          "locator": "\"Putsch da Cervejaria\", revision 72599133"
+        },
+        {
+          "dissent": false,
+          "id": "boxer-rebellion",
+          "kind": "event",
+          "locator": "\"Rebelião dos Boxers\", revision 72333660"
+        },
+        {
+          "dissent": false,
+          "id": "bucha-massacre",
+          "kind": "event",
+          "locator": "\"Massacre de Bucha\", revision 71884669"
+        },
+        {
+          "dissent": false,
+          "id": "charter-of-the-united-nations",
+          "kind": "event",
+          "locator": "\"Carta das Nações Unidas\", revision 72336615"
+        },
+        {
+          "dissent": false,
+          "id": "chinese-civil-war",
+          "kind": "event",
+          "locator": "\"Guerra Civil Chinesa\", revision 72737609"
         },
         {
           "dissent": false,
@@ -13218,9 +14340,75 @@
         },
         {
           "dissent": false,
+          "id": "cuban-revolution",
+          "kind": "event",
+          "locator": "\"Revolução Cubana\", revision 72821388"
+        },
+        {
+          "dissent": false,
+          "id": "eastern-front",
+          "kind": "event",
+          "locator": "\"Frente Oriental (Segunda Guerra Mundial)\", revision 71477173"
+        },
+        {
+          "dissent": false,
           "id": "eleicoes-legislativas-regionais-na-madeira-em-1976",
           "kind": "event",
           "locator": "\"Eleições legislativas regionais na Madeira em 1976\", revision 70848422"
+        },
+        {
+          "dissent": false,
+          "id": "euromaidan",
+          "kind": "event",
+          "locator": "\"Euromaidan\", revision 72442345"
+        },
+        {
+          "dissent": false,
+          "id": "european-convention-on-human-rights",
+          "kind": "event",
+          "locator": "\"Convenção Europeia dos Direitos Humanos\", revision 71694314"
+        },
+        {
+          "dissent": false,
+          "id": "february-revolution",
+          "kind": "event",
+          "locator": "\"Revolução de Fevereiro\", revision 71841706"
+        },
+        {
+          "dissent": false,
+          "id": "first-indochina-war",
+          "kind": "event",
+          "locator": "\"Primeira Guerra da Indochina\", revision 72128882"
+        },
+        {
+          "dissent": false,
+          "id": "full-scale-russo-ukrainian-war",
+          "kind": "event",
+          "locator": "\"Invasão da Ucrânia pela Rússia (2022–presente)\", revision 72854976"
+        },
+        {
+          "dissent": false,
+          "id": "gaza-genocide",
+          "kind": "event",
+          "locator": "\"Genocídio na Faixa de Gaza\", revision 72570368"
+        },
+        {
+          "dissent": false,
+          "id": "gaza-war",
+          "kind": "event",
+          "locator": "\"Guerra de Gaza\", revision 72478904"
+        },
+        {
+          "dissent": false,
+          "id": "great-depression",
+          "kind": "event",
+          "locator": "\"Grande Depressão\", revision 72860906"
+        },
+        {
+          "dissent": false,
+          "id": "gulf-war",
+          "kind": "event",
+          "locator": "\"Guerra do Golfo\", revision 72734273"
         },
         {
           "dissent": false,
@@ -13230,9 +14418,63 @@
         },
         {
           "dissent": false,
+          "id": "indo-pakistani-war-of-1965",
+          "kind": "event",
+          "locator": "\"Guerra Indo-Paquistanesa de 1965\", revision 71856542"
+        },
+        {
+          "dissent": false,
+          "id": "international-covenant-on-civil-and-political-rights",
+          "kind": "event",
+          "locator": "\"Pacto Internacional dos Direitos Civis e Políticos\", revision 70560184"
+        },
+        {
+          "dissent": false,
+          "id": "iranian-revolution",
+          "kind": "event",
+          "locator": "\"Revolução Iraniana\", revision 72685936"
+        },
+        {
+          "dissent": false,
+          "id": "iraq-war",
+          "kind": "event",
+          "locator": "\"Guerra do Iraque\", revision 72919918"
+        },
+        {
+          "dissent": false,
+          "id": "katyn-massacre",
+          "kind": "event",
+          "locator": "\"Massacre de Katyn\", revision 70436501"
+        },
+        {
+          "dissent": false,
+          "id": "korean-war",
+          "kind": "event",
+          "locator": "\"Guerra da Coreia\", revision 72794630"
+        },
+        {
+          "dissent": false,
+          "id": "lebanese-civil-war",
+          "kind": "event",
+          "locator": "\"Guerra Civil Libanesa\", revision 72825388"
+        },
+        {
+          "dissent": false,
           "id": "lisbon-regicide",
           "kind": "event",
           "locator": "\"Regicídio de 1908\", revision 70413642"
+        },
+        {
+          "dissent": false,
+          "id": "maastricht-treaty",
+          "kind": "event",
+          "locator": "\"Tratado de Maastricht\", revision 71853123"
+        },
+        {
+          "dissent": false,
+          "id": "molotov-ribbentrop-pact",
+          "kind": "event",
+          "locator": "\"Pacto Molotov-Ribbentrop\", revision 72134920"
         },
         {
           "dissent": false,
@@ -13242,15 +14484,201 @@
         },
         {
           "dissent": false,
+          "id": "munich-agreement",
+          "kind": "event",
+          "locator": "\"Acordo de Munique\", revision 69311046"
+        },
+        {
+          "dissent": false,
+          "id": "october-revolution",
+          "kind": "event",
+          "locator": "\"Revolução de Outubro\", revision 71345414"
+        },
+        {
+          "dissent": false,
+          "id": "orange-revolution",
+          "kind": "event",
+          "locator": "\"Revolução Laranja\", revision 71828848"
+        },
+        {
+          "dissent": false,
+          "id": "paris-peace-conference",
+          "kind": "event",
+          "locator": "\"Conferência de Paz de Paris (1919–1920)\", revision 72784719"
+        },
+        {
+          "dissent": false,
           "id": "portuguese-regionalisation-referendum-1998",
           "kind": "event",
           "locator": "\"Referendo sobre a regionalização em Portugal (1998)\", revision 72826511"
         },
         {
           "dissent": false,
+          "id": "potsdam-conference",
+          "kind": "event",
+          "locator": "\"Conferência de Potsdam\", revision 72101398"
+        },
+        {
+          "dissent": false,
+          "id": "russian-civil-war",
+          "kind": "event",
+          "locator": "\"Guerra Civil Russa\", revision 72906861"
+        },
+        {
+          "dissent": false,
+          "id": "russian-revolution-of-1905",
+          "kind": "event",
+          "locator": "\"Revolução Russa de 1905\", revision 71589948"
+        },
+        {
+          "dissent": false,
+          "id": "russo-georgian-war",
+          "kind": "event",
+          "locator": "\"Guerra Russo-Georgiana\", revision 71458395"
+        },
+        {
+          "dissent": false,
+          "id": "russo-ukrainian-war",
+          "kind": "event",
+          "locator": "\"Guerra Russo-Ucraniana\", revision 72707172"
+        },
+        {
+          "dissent": false,
+          "id": "schengen-agreement",
+          "kind": "event",
+          "locator": "\"Acordo de Schengen\", revision 68154239"
+        },
+        {
+          "dissent": false,
+          "id": "second-boer-war",
+          "kind": "event",
+          "locator": "\"Segunda Guerra dos Bôeres\", revision 68232995"
+        },
+        {
+          "dissent": false,
+          "id": "second-sino-japanese-war",
+          "kind": "event",
+          "locator": "\"Segunda Guerra Sino-Japonesa\", revision 72853076"
+        },
+        {
+          "dissent": false,
+          "id": "spanish-civil-war",
+          "kind": "event",
+          "locator": "\"Guerra Civil Espanhola\", revision 72792080"
+        },
+        {
+          "dissent": false,
+          "id": "the-holocaust",
+          "kind": "event",
+          "locator": "\"Holocausto\", revision 72716958"
+        },
+        {
+          "dissent": false,
+          "id": "treaty-of-brest-litovsk",
+          "kind": "event",
+          "locator": "\"Tratado de Brest-Litovski\", revision 69632275"
+        },
+        {
+          "dissent": false,
           "id": "treaty-of-friendship-and-cooperation-between-spain-and-portugal",
           "kind": "event",
           "locator": "\"Tratado de Amizade e Cooperação entre Portugal e Espanha (1977)\", revision 66016588"
+        },
+        {
+          "dissent": false,
+          "id": "treaty-of-lausanne",
+          "kind": "event",
+          "locator": "\"Tratado de Lausanne\", revision 69632334"
+        },
+        {
+          "dissent": false,
+          "id": "treaty-of-portsmouth",
+          "kind": "event",
+          "locator": "\"Tratado de Portsmouth\", revision 67280689"
+        },
+        {
+          "dissent": false,
+          "id": "treaty-of-rome",
+          "kind": "event",
+          "locator": "\"Tratado de Roma (1957)\", revision 72036494"
+        },
+        {
+          "dissent": false,
+          "id": "treaty-of-sevres",
+          "kind": "event",
+          "locator": "\"Tratado de Sèvres\", revision 66919817"
+        },
+        {
+          "dissent": false,
+          "id": "treaty-of-trianon",
+          "kind": "event",
+          "locator": "\"Tratado de Trianon\", revision 71341221"
+        },
+        {
+          "dissent": false,
+          "id": "treaty-of-versailles",
+          "kind": "event",
+          "locator": "\"Tratado de Versalhes (1919)\", revision 72254145"
+        },
+        {
+          "dissent": false,
+          "id": "turkish-war-of-independence",
+          "kind": "event",
+          "locator": "\"Guerra de Independência da Turquia\", revision 72807000"
+        },
+        {
+          "dissent": false,
+          "id": "twelve-day-war",
+          "kind": "event",
+          "locator": "\"Guerra dos Doze Dias\", revision 72100689"
+        },
+        {
+          "dissent": false,
+          "id": "vietnam-war",
+          "kind": "event",
+          "locator": "\"Guerra do Vietnã\", revision 72906135"
+        },
+        {
+          "dissent": false,
+          "id": "wagner-group-rebellion",
+          "kind": "event",
+          "locator": "\"Rebelião do Grupo Wagner\", revision 71778928"
+        },
+        {
+          "dissent": false,
+          "id": "wall-street-crash-of-1929",
+          "kind": "event",
+          "locator": "\"Quinta-Feira Negra\", revision 72352350"
+        },
+        {
+          "dissent": false,
+          "id": "warsaw-uprising",
+          "kind": "event",
+          "locator": "\"Revolta de Varsóvia\", revision 72740455"
+        },
+        {
+          "dissent": false,
+          "id": "world-war-i",
+          "kind": "event",
+          "locator": "\"Primeira Guerra Mundial\", revision 72915802"
+        },
+        {
+          "dissent": false,
+          "id": "world-war-ii",
+          "kind": "event",
+          "locator": "\"Segunda Guerra Mundial\", revision 72709515"
+        },
+        {
+          "dissent": false,
+          "id": "yom-kippur-war",
+          "kind": "event",
+          "locator": "\"Guerra do Yom Kippur\", revision 70958475"
+        },
+        {
+          "dissent": false,
+          "id": "young-turk-revolution-of-1908",
+          "kind": "event",
+          "locator": "\"Revolução dos Jovens Turcos\", revision 62934565"
         }
       ],
       "created": "2026-09-04",

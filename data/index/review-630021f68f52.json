@@ -1630,6 +1630,33 @@
         }
       ],
       "cites": [
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "2006-lebanon-war",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "2006 Lebanon War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "costa-pinto-teixeira-2019-political-institutions",
         "telo-2007-historia-contemporanea",
         "wikipedia-en",
@@ -2088,6 +2115,36 @@
         }
       ],
       "cites": [
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "2025-2026-iranian-protests",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted",
+          "date",
+          "facts-thin"
+        ],
+        "note": "A very recent event, drafted from a single cached lead and no other source. Both the interval and the casualty figures should be checked against reporting before this record is signed."
+      },
+      "status": "active",
+      "title": "2025–2026 Iranian protests"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "costa-pinto-teixeira-2019-political-institutions",
         "wikipedia-en",
         "wikipedia-pt",
@@ -2173,6 +2230,57 @@
         "Afonso Augusto da Costa"
       ],
       "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "macqueen-1997-decolonization",
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "algerian-war",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "Algerian War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "macqueen-1997-decolonization",
+        "wikipedia-en"
+      ],
+      "from": "algerian-war",
+      "id": "algerian-war--angola-war-begins-1961--precondition-of",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "angola-war-begins-1961",
+      "type": "precondition-of"
     },
     {
       "authors": [
@@ -2700,6 +2808,82 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "armenian-genocide",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "Armenian Genocide"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "assassination-of-archduke-franz-ferdinand",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "assassination of Archduke Franz Ferdinand"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "from": "assassination-of-archduke-franz-ferdinand",
+      "id": "assassination-of-archduke-franz-ferdinand--world-war-i--caused",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "world-war-i",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -2807,6 +2991,33 @@
         }
       ],
       "cites": [
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "bangladesh-liberation-war",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "Bangladesh Liberation War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "macqueen-1997-decolonization",
         "wikipedia-en",
         "wikipedia-pt",
@@ -2880,6 +3091,33 @@
       "status": "active",
       "to": "coup-28-may-1926",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "beer-hall-putsch",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "Beer Hall Putsch"
     },
     {
       "authors": [
@@ -3002,6 +3240,55 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "boxer-rebellion",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "Boxer Rebellion"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "from": "boxer-rebellion",
+      "id": "boxer-rebellion--xinhai-revolution--precondition-of",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "xinhai-revolution",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -3072,6 +3359,33 @@
       "status": "active",
       "to": "republic-of-india",
       "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "bucha-massacre",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "Bucha massacre"
     },
     {
       "authors": [
@@ -3524,6 +3838,79 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-2003-contemporary-portugal",
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "charter-of-the-united-nations",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "Charter of the United Nations"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "from": "charter-of-the-united-nations",
+      "id": "charter-of-the-united-nations--international-covenant-on-civil-and-political-rights--precondition-of",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "international-covenant-on-civil-and-political-rights",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-2003-contemporary-portugal",
+        "wikipedia-en"
+      ],
+      "from": "charter-of-the-united-nations",
+      "id": "charter-of-the-united-nations--un-admission-1955--precondition-of",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "un-admission-1955",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -3543,6 +3930,57 @@
         "note": "The birth or founding year, and the end where there is one, were written from memory."
       },
       "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "chinese-civil-war",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted",
+          "date"
+        ],
+        "note": "The interval on this record is the imported item's and covers the decisive phase only. The war between the Nationalists and the Communists opens in 1927 and is suspended for the Japanese war; a reviewer should decide whether the record is the whole war or the campaign of 1946–1949 and say so in the title."
+      },
+      "status": "active",
+      "title": "Chinese Civil War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "from": "chinese-civil-war",
+      "id": "chinese-civil-war--korean-war--precondition-of",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "korean-war",
+      "type": "precondition-of"
     },
     {
       "authors": [
@@ -4583,6 +5021,57 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "macqueen-1997-decolonization",
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "cuban-revolution",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "Cuban Revolution"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "macqueen-1997-decolonization",
+        "wikipedia-en"
+      ],
+      "from": "cuban-revolution",
+      "id": "cuban-revolution--angola-independence-1975--precondition-of",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "angola-independence-1975",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -4821,6 +5310,55 @@
       "status": "active",
       "to": "hat-nipah-and-same-massacres",
       "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "eastern-front",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "Eastern Front"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "from": "eastern-front",
+      "id": "eastern-front--potsdam-conference--precondition-of",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "potsdam-conference",
+      "type": "precondition-of"
     },
     {
       "authors": [
@@ -5266,6 +5804,55 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "euromaidan",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "Euromaidan"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "from": "euromaidan",
+      "id": "euromaidan--russo-ukrainian-war--caused",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "russo-ukrainian-war",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -5361,6 +5948,33 @@
       "status": "active",
       "to": "european-union",
       "type": "part-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "european-convention-on-human-rights",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "European Convention on Human Rights"
     },
     {
       "authors": [
@@ -5544,6 +6158,55 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "february-revolution",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "February Revolution"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "from": "february-revolution",
+      "id": "february-revolution--october-revolution--enabled",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "october-revolution",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -5561,6 +6224,77 @@
       },
       "status": "active",
       "title": "Fifty years of 25 April"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "first-indochina-war",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "First Indochina War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "from": "first-indochina-war",
+      "id": "first-indochina-war--algerian-war--precondition-of",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "algerian-war",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "from": "first-indochina-war",
+      "id": "first-indochina-war--vietnam-war--precondition-of",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "vietnam-war",
+      "type": "precondition-of"
     },
     {
       "authors": [
@@ -5696,6 +6430,175 @@
         "note": "A founding year from memory, and for the movements that were founded under another name it is also a question of which year the record should carry."
       },
       "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "full-scale-russo-ukrainian-war",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "full-scale Russo-Ukrainian war"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "from": "full-scale-russo-ukrainian-war",
+      "id": "full-scale-russo-ukrainian-war--bucha-massacre--caused",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "bucha-massacre",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "from": "full-scale-russo-ukrainian-war",
+      "id": "full-scale-russo-ukrainian-war--wagner-group-rebellion--caused",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "wagner-group-rebellion",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "gaza-genocide",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "Gaza genocide"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "gaza-war",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "Gaza War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "from": "gaza-war",
+      "id": "gaza-war--gaza-genocide--caused",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "gaza-genocide",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "from": "gaza-war",
+      "id": "gaza-war--twelve-day-war--precondition-of",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "twelve-day-war",
+      "type": "precondition-of"
     },
     {
       "authors": [
@@ -5908,6 +6811,59 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "rosas-1994-estado-novo",
+        "meneses-2009-salazar",
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "great-depression",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "Great Depression"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "rosas-1994-estado-novo",
+        "meneses-2009-salazar",
+        "wikipedia-en"
+      ],
+      "from": "great-depression",
+      "id": "great-depression--salazar-president-of-council-1932--enabled",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "salazar-president-of-council-1932",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -6074,6 +7030,82 @@
       "status": "active",
       "to": "guinea-war-begins-1963",
       "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "gulf-war",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "Gulf War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "from": "gulf-war",
+      "id": "gulf-war--iraq-war--precondition-of",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "iraq-war",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "id": "hamas",
+      "kind": "actor",
+      "names": [
+        "Hamas",
+        "Islamic Resistance Movement",
+        "Movimento de Resistência Islâmica",
+        "حركة المقاومة الإسلامية"
+      ],
+      "review": {
+        "flags": [
+          "actor-drafted",
+          "date"
+        ],
+        "note": "Drafted in M40b under the exception in CLAUDE.md. The founding year was written from the cached lead and should be checked."
+      },
+      "status": "active"
     },
     {
       "authors": [
@@ -6394,6 +7426,55 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "indo-pakistani-war-of-1965",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "Indo-Pakistani War of 1965"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "from": "indo-pakistani-war-of-1965",
+      "id": "indo-pakistani-war-of-1965--bangladesh-liberation-war--precondition-of",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "bangladesh-liberation-war",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -6409,6 +7490,133 @@
         "República da Indonésia"
       ],
       "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "international-covenant-on-civil-and-political-rights",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "International Covenant on Civil and Political Rights"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "iranian-revolution",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "Iranian Revolution"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "from": "iranian-revolution",
+      "id": "iranian-revolution--2025-2026-iranian-protests--precondition-of",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "2025-2026-iranian-protests",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "wikipedia-en"
+      ],
+      "from": "iranian-revolution",
+      "id": "iranian-revolution--imf-agreement-1983--precondition-of",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "imf-agreement-1983",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "iraq-war",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "Iraq War"
     },
     {
       "authors": [
@@ -6450,6 +7658,82 @@
         ]
       },
       "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "katyn-massacre",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "Katyn massacre"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "from": "katyn-massacre",
+      "id": "katyn-massacre--warsaw-uprising--precondition-of",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "warsaw-uprising",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "korean-war",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "Korean War"
     },
     {
       "authors": [
@@ -6529,6 +7813,55 @@
         "note": "The founding and closing years and the reading of what the intervention of 1916-18 bought were written from memory, not read in the cited works."
       },
       "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "lebanese-civil-war",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "Lebanese Civil War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "from": "lebanese-civil-war",
+      "id": "lebanese-civil-war--2006-lebanon-war--precondition-of",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "2006-lebanon-war",
+      "type": "precondition-of"
     },
     {
       "authors": [
@@ -7067,6 +8400,59 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "costa-pinto-teixeira-2019-political-institutions",
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "maastricht-treaty",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "Maastricht Treaty"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "reis-2013-portuguese-slump",
+        "telo-2007-historia-contemporanea",
+        "wikipedia-en"
+      ],
+      "from": "maastricht-treaty",
+      "id": "maastricht-treaty--euro-adoption-1999--precondition-of",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "euro-adoption-1999",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -7481,6 +8867,55 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "molotov-ribbentrop-pact",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "Molotov–Ribbentrop Pact"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "from": "molotov-ribbentrop-pact",
+      "id": "molotov-ribbentrop-pact--world-war-ii--enabled",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "world-war-ii",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -7711,6 +9146,55 @@
       "status": "active",
       "to": "mozambique-war-begins-1964",
       "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "munich-agreement",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "Munich agreement"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "from": "munich-agreement",
+      "id": "munich-agreement--molotov-ribbentrop-pact--enabled",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "molotov-ribbentrop-pact",
+      "type": "enabled"
     },
     {
       "authors": [
@@ -7963,6 +9447,77 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "october-revolution",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "October Revolution"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "from": "october-revolution",
+      "id": "october-revolution--russian-civil-war--caused",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "russian-civil-war",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "from": "october-revolution",
+      "id": "october-revolution--treaty-of-brest-litovsk--caused",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "treaty-of-brest-litovsk",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -8037,6 +9592,55 @@
       "status": "active",
       "to": "oecd",
       "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "orange-revolution",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "Orange Revolution"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "from": "orange-revolution",
+      "id": "orange-revolution--euromaidan--precondition-of",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "euromaidan",
+      "type": "precondition-of"
     },
     {
       "authors": [
@@ -8145,6 +9749,77 @@
         "Panaji"
       ],
       "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "paris-peace-conference",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "Paris Peace Conference"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "from": "paris-peace-conference",
+      "id": "paris-peace-conference--treaty-of-trianon--caused",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "treaty-of-trianon",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "from": "paris-peace-conference",
+      "id": "paris-peace-conference--treaty-of-versailles--caused",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "treaty-of-versailles",
+      "type": "caused"
     },
     {
       "authors": [
@@ -8789,6 +10464,30 @@
         }
       ],
       "cites": [
+        "rosas-1994-estado-novo",
+        "costa-pinto-2003-contemporary-portugal",
+        "wikipedia-en"
+      ],
+      "from": "portugal-backs-franco-1936",
+      "id": "portugal-backs-franco-1936--spanish-civil-war--reacted-to",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "spanish-civil-war",
+      "type": "reacted-to"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "maxwell-1995-making-of-portuguese-democracy",
         "rosas-1994-estado-novo"
       ],
@@ -8868,6 +10567,56 @@
       },
       "status": "active",
       "title": "Portuguese regionalisation referendum, 1998"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "potsdam-conference",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "Potsdam Conference"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "wikipedia-en"
+      ],
+      "from": "potsdam-conference",
+      "id": "potsdam-conference--nato-founding-1949--precondition-of",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "nato-founding-1949",
+      "type": "precondition-of"
     },
     {
       "authors": [
@@ -9258,6 +11007,202 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "russian-civil-war",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "Russian Civil War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "russian-revolution-of-1905",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "Russian Revolution of 1905"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "from": "russian-revolution-of-1905",
+      "id": "russian-revolution-of-1905--february-revolution--precondition-of",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "february-revolution",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "from": "russian-revolution-of-1905",
+      "id": "russian-revolution-of-1905--treaty-of-portsmouth--caused",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "treaty-of-portsmouth",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "russo-georgian-war",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "Russo-Georgian War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "from": "russo-georgian-war",
+      "id": "russo-georgian-war--russo-ukrainian-war--precondition-of",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "russo-ukrainian-war",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "russo-ukrainian-war",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "Russo-Ukrainian war"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "from": "russo-ukrainian-war",
+      "id": "russo-ukrainian-war--full-scale-russo-ukrainian-war--precondition-of",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "full-scale-russo-ukrainian-war",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -9447,6 +11392,59 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "costa-pinto-teixeira-2019-political-institutions",
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "schengen-agreement",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "Schengen Agreement"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "costa-pinto-teixeira-2019-political-institutions",
+        "wikipedia-en"
+      ],
+      "from": "schengen-agreement",
+      "id": "schengen-agreement--schengen-in-force-1995--precondition-of",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "schengen-in-force-1995",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -9492,6 +11490,108 @@
       },
       "status": "active",
       "title": "Portugal enters the Schengen area"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal",
+        "meneses-2004-portugal-1914-1926",
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "second-boer-war",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "Second Boer War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal",
+        "meneses-2004-portugal-1914-1926",
+        "wikipedia-en"
+      ],
+      "from": "second-boer-war",
+      "id": "second-boer-war--treaty-of-windsor--caused",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "treaty-of-windsor",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "second-sino-japanese-war",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "Second Sino-Japanese War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "from": "second-sino-japanese-war",
+      "id": "second-sino-japanese-war--chinese-civil-war--precondition-of",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "chinese-civil-war",
+      "type": "precondition-of"
     },
     {
       "authors": [
@@ -9633,6 +11733,58 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "rosas-1994-estado-novo",
+        "costa-pinto-2003-contemporary-portugal",
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "spanish-civil-war",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "Spanish Civil War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "rosas-1994-estado-novo",
+        "wikipedia-en"
+      ],
+      "from": "spanish-civil-war",
+      "id": "spanish-civil-war--iberian-pact--caused",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "iberian-pact",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -9711,6 +11863,55 @@
         "Tete district, Mozambique"
       ],
       "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "the-holocaust",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "The Holocaust"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "from": "the-holocaust",
+      "id": "the-holocaust--european-convention-on-human-rights--reacted-to",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "european-convention-on-human-rights",
+      "type": "reacted-to"
     },
     {
       "authors": [
@@ -9861,6 +12062,56 @@
         }
       ],
       "cites": [
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "treaty-of-brest-litovsk",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "Treaty of Brest-Litovsk"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "meneses-2004-portugal-1914-1926",
+        "wikipedia-en"
+      ],
+      "from": "treaty-of-brest-litovsk",
+      "id": "treaty-of-brest-litovsk--battle-of-the-lys-1918--enabled",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "battle-of-the-lys-1918",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "telo-2007-historia-contemporanea",
         "ramos-2009-historia-de-portugal",
         "wikipedia-en",
@@ -9877,6 +12128,282 @@
       },
       "status": "active",
       "title": "Treaty of Friendship and Cooperation between Spain and Portugal"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "treaty-of-lausanne",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "Treaty of Lausanne"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "treaty-of-portsmouth",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "Treaty of Portsmouth"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal",
+        "rosas-1994-estado-novo",
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "treaty-of-rome",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "Treaty of Rome"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal",
+        "rosas-1994-estado-novo",
+        "wikipedia-en"
+      ],
+      "from": "treaty-of-rome",
+      "id": "treaty-of-rome--efta-accession-1960--caused",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "efta-accession-1960",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "from": "treaty-of-rome",
+      "id": "treaty-of-rome--maastricht-treaty--precondition-of",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "maastricht-treaty",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "treaty-of-sevres",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "Treaty of Sèvres"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "from": "treaty-of-sevres",
+      "id": "treaty-of-sevres--turkish-war-of-independence--caused",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "turkish-war-of-independence",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "treaty-of-trianon",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "Treaty of Trianon"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "treaty-of-versailles",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "Treaty of Versailles"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "from": "treaty-of-versailles",
+      "id": "treaty-of-versailles--beer-hall-putsch--precondition-of",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "beer-hall-putsch",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "from": "treaty-of-versailles",
+      "id": "treaty-of-versailles--world-war-ii--precondition-of",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "world-war-ii",
+      "type": "precondition-of"
     },
     {
       "authors": [
@@ -10027,6 +12554,84 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "turkish-war-of-independence",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted",
+          "date"
+        ],
+        "note": "The interval on this record is the imported item's and is too narrow: the campaigns against the Greek, French and Armenian forces, and the Ankara assembly that directed them, run from 1919, not from October 1922. A reviewer should widen the start before the record is signed."
+      },
+      "status": "active",
+      "title": "Turkish War of Independence"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "from": "turkish-war-of-independence",
+      "id": "turkish-war-of-independence--treaty-of-lausanne--caused",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "treaty-of-lausanne",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "twelve-day-war",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "Twelve-Day War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -10166,6 +12771,165 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "vietnam-war",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "Vietnam War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "id": "wagner-group",
+      "kind": "actor",
+      "names": [
+        "Wagner Group",
+        "Grupo Wagner",
+        "PMC Wagner",
+        "ЧВК «Вагнер»"
+      ],
+      "review": {
+        "flags": [
+          "actor-drafted",
+          "date"
+        ],
+        "note": "Drafted in M40b under the exception in CLAUDE.md. The founding year was written from the cached lead and should be checked."
+      },
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "wagner-group-rebellion",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "Wagner Group rebellion"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "wall-street-crash-of-1929",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "Wall Street crash of 1929"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "from": "wall-street-crash-of-1929",
+      "id": "wall-street-crash-of-1929--great-depression--caused",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "great-depression",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "warsaw-uprising",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted",
+          "date"
+        ],
+        "note": "The date on this record is the imported item's and is the surrender, 2 October 1944. The rising began on 1 August and lasted sixty-three days; a reviewer should decide which date the record should carry and correct it."
+      },
+      "status": "active",
+      "title": "Warsaw Uprising"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -10261,6 +13025,132 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "meneses-2004-portugal-1914-1926",
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "world-war-i",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "World War I"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "from": "world-war-i",
+      "id": "world-war-i--armenian-genocide--enabled",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "armenian-genocide",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "meneses-2004-portugal-1914-1926",
+        "wikipedia-en"
+      ],
+      "from": "world-war-i",
+      "id": "world-war-i--germany-declares-war-1916--precondition-of",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "germany-declares-war-1916",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "rosas-1994-estado-novo",
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "world-war-ii",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "World War II"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "rosas-1994-estado-novo",
+        "wikipedia-en"
+      ],
+      "from": "world-war-ii",
+      "id": "world-war-ii--azores-agreement-1943--precondition-of",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "azores-agreement-1943",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -10277,367 +13167,113 @@
       },
       "status": "active",
       "title": "World Youth Day in Lisbon"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "yom-kippur-war",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "Yom Kippur War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "wikipedia-en"
+      ],
+      "from": "yom-kippur-war",
+      "id": "yom-kippur-war--imf-agreement-1978--precondition-of",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "imf-agreement-1978",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "id": "young-turk-revolution-of-1908",
+      "kind": "event",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-drafted"
+        ]
+      },
+      "status": "active",
+      "title": "Young Turk Revolution of 1908"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "from": "young-turk-revolution-of-1908",
+      "id": "young-turk-revolution-of-1908--armenian-genocide--precondition-of",
+      "kind": "edge",
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ]
+      },
+      "status": "active",
+      "to": "armenian-genocide",
+      "type": "precondition-of"
     }
   ],
   "schema": 1,
-  "total": 1097,
+  "total": 1154,
   "warnings": [
     {
-      "id": "1994-genocide-against-tutsi",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2006-lebanon-war",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2016-turkish-coup-d-etat-attempt",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2025-2026-iranian-protests",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "algerian-war",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "anglo-zanzibar-war",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "anti-comintern-pact",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "armenian-genocide",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "assassination-of-archduke-franz-ferdinand",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "assassination-of-john-f-kennedy",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "bangladesh-liberation-war",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "beer-hall-putsch",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "boxer-rebellion",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "bucha-massacre",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "charter-of-the-united-nations",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "chinese-civil-war",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "convention-on-the-elimination-of-all-forms-of-discrimination-against-women",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "convention-on-the-rights-of-the-child",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "cuban-revolution",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "cultural-revolution",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "eastern-front",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "euromaidan",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "european-convention-on-human-rights",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "falklands-war",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "february-revolution",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "first-indochina-war",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "full-scale-russo-ukrainian-war",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "gaza-genocide",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "gaza-war",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "great-depression",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "gulf-war",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "holodomor",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "hungarian-revolution-of-1956",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
       "id": "iberian-blackout-2025",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "ilinden-preobrazhenie-uprising",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "indo-pakistani-war-of-1965",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "international-covenant-on-civil-and-political-rights",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "iranian-revolution",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "iraq-war",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "january-6-united-states-capitol-attack",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "katyn-massacre",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "korean-war",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "lateran-treaty",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "lebanese-civil-war",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "libyan-civil-war",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "maastricht-treaty",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "mexican-revolution",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "molotov-ribbentrop-pact",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "munich-agreement",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "october-revolution",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "orange-revolution",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "paris-agreement",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "paris-peace-conference",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "potsdam-conference",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "ramsar-convention",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "russian-civil-war",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "russian-revolution",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "russian-revolution-of-1905",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "russo-georgian-war",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "russo-ukrainian-war",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"
@@ -10649,202 +13285,10 @@
       "rule": "place-unused"
     },
     {
-      "id": "schengen-agreement",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "second-boer-war",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "second-chechen-war",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "second-nagorno-karabakh-war",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "second-sino-japanese-war",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "spanish-civil-war",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "srebrenica-massacre",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "sudanese-civil-war",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "syrian-civil-war",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "the-holocaust",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "treaty-of-brest-litovsk",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "treaty-of-lausanne",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "treaty-of-portsmouth",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "treaty-of-rome",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "treaty-of-sevres",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "treaty-of-trianon",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "treaty-of-versailles",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "treaty-on-the-non-proliferation-of-nuclear-weapons",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "turkish-war-of-independence",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "twelve-day-war",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
       "id": "uefa-2016-final",
       "kind": "source",
       "message": "source is cited by nothing under validation",
       "rule": "no-citers"
-    },
-    {
-      "id": "united-nations-convention-on-the-law-of-the-sea",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "velvet-revolution",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "vietnam-war",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "wagner-group-rebellion",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "wall-street-crash-of-1929",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "war-in-afghanistan-2001-2021",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "warsaw-uprising",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "world-war-i",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "world-war-ii",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "xinhai-revolution",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "yom-kippur-war",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "young-turk-revolution-of-1908",
-      "kind": "event",
-      "message": "event has no edges",
-      "rule": "degree-zero"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "counts": {
-    "actors": 412,
-    "edges": 161,
+    "actors": 414,
+    "edges": 216,
     "events": 420,
     "narratives": 1,
     "places": 26,
@@ -11,9 +11,9 @@
     "sources": 34
   },
   "files": {
-    "review": "index/review-d5179a783758.json",
-    "sources": "index/sources-6fdb5d8bc1fe.json",
-    "topology": "index/topology-26529d4a7a7d.json"
+    "review": "index/review-630021f68f52.json",
+    "sources": "index/sources-d4d0e0e5d08a.json",
+    "topology": "index/topology-e30bbdce9134.json"
   },
   "land": [
     {
@@ -141,6 +141,7 @@
     "host",
     "in opposition",
     "incumbent",
+    "institution",
     "invader",
     "invoked",
     "junior partner",
@@ -162,6 +163,7 @@
     "nationalised it",
     "negotiated and signed for portugal",
     "negotiator",
+    "occupier",
     "occupying power",
     "opponent",
     "opposition candidate, withdrew",
