@@ -201,6 +201,7 @@ tools/build-regions.mjs    Natural Earth → data/geo/
 tools/new-record.mjs       scaffold a record of any written kind; --new-place writes an event and its place at once
 tools/migrate-places.mjs   one-time: every event's `where` → a place record; kept as documentation
 tools/migrate/led-to-tenures.mjs  one-time: the twelve `led` relations → six offices, twelve tenures and twelve tombstones; kept as documentation
+tools/migrate/roles.mjs    one-time: every actor line's free-text role → one of the 31 of `data/roles.json`, the phrase it was kept beside it as the line's `note`; the table is `docs/roles-mapping.md` and a test holds it there; kept as documentation
 tools/seed-review-flags.mjs  one-time: STATUS.md's "Dates to verify" onto the records as review flags
 tools/serve.mjs            the local server: the repository, plus PUT /__records/<kind>/<id> and GET /__status; 127.0.0.1 only, never deployed
 tools/lib/store.mjs        the server's atlas between saves: the save queue, the topology patched as each save lands, the index rebuilt behind the answer
