@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "freitas-do-amaral",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-06",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "actor-drafted",
+      "date"
+    ],
+    "note": "The years were written from the assistant’s memory in M31-2 and have not been read in a source. The works cited are where a reviewer should check them, not works this run read: every citation carries no locator and none has been checked."
+  },
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    }
+  ],
+  "actorType": "person",
+  "names": [
+    "Diogo Freitas do Amaral",
+    "Diogo Pinto de Freitas do Amaral"
+  ],
+  "summary": "Diogo Freitas do Amaral (1941–2019) was a jurist and a founder of the Democratic and Social Centre who was deputy prime minister under Sá Carneiro and held the headship of the government on an interim basis from Sá Carneiro’s death in December 1980 until Francisco Pinto Balsemão was sworn in the following month. He is in the atlas as the interim holder of the office in those weeks.",
+  "when": {
+    "start": 1941,
+    "end": 2019
+  },
+  "where": null
+}

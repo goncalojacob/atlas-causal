@@ -604,13 +604,20 @@ test('an office opens on a card that names the actor, the category and its holde
     assert.equal(card.title, 'Prime Minister of Portugal');
     assert.equal(card.actor, 'portugal');
     assert.match(card.meta, /Portugal · Head of government/);
-    assert.deepEqual(card.holders, ['salazar-prime-minister-1932', 'marcelo-caetano-prime-minister-1968']);
-    assert.deepEqual(card.people, ['salazar', 'marcelo-caetano']);
+    // Named as members and not as the whole list: M31 fills this post from
+    // 1926 onward, and every row is one holder's turn in start order.
+    const salazar = card.holders.indexOf('salazar-prime-minister-1932');
+    const caetano = card.holders.indexOf('marcelo-caetano-prime-minister-1968');
+    assert.ok(salazar >= 0 && caetano > salazar, 'Salazar and, after him, Marcelo Caetano');
+    assert.deepEqual(card.people.slice(salazar, caetano + 1), ['salazar', 'marcelo-caetano']);
+    assert.equal(card.people.length, card.holders.length, 'a row a holder');
     assert.equal(card.sources, false, 'an office cites nothing and has no Sources section');
     assert.match(card.cites, /^An office says that/);
 
-    // A row opens the person, not the tenure: a tenure has no card.
-    await page.eval('document.querySelector(\'.panel .tenure-row [data-action="actor"]\').click();');
+    // A row opens the person, not the tenure: a tenure has no card. The row is
+    // taken by name and not by position — the first turn at this post is of
+    // 1926 now, and which one is drawn first is not what is being tested.
+    await page.eval('document.querySelector(\'.panel .tenure-row[data-tenure="salazar-prime-minister-1932"] [data-action="actor"]\').click();');
     await waitFor(page, 'return /actor=salazar/.test(location.search) && !/office=/.test(location.search);', 'the holder in the URL and the office out of it');
 
     // A3: an office is one of the openings the trail carries, so Back names
@@ -658,8 +665,16 @@ test('the actor card draws one tenure strip per office, and a bar opens the hold
         empty: document.querySelectorAll('.panel .strip-empty').length,
       };`);
     assert.deepEqual(strip.offices, ['monarch-of-portugal', 'president-of-portugal', 'prime-minister-of-portugal']);
-    assert.deepEqual(strip.holders, ['salazar-prime-minister-1932', 'marcelo-caetano-prime-minister-1968']);
-    assert.equal(strip.empty, 2, 'the two posts with no holder say so');
+    // M31-1 filled the two head-of-state posts, so no strip says it is empty
+    // any more and the bars are clustered at this width: which of them
+    // survives the clustering is the strip's business and not this test's, so
+    // what is asserted is that every bar is a turn at one of the three posts
+    // and that the two prime ministers are still among them.
+    assert.equal(strip.empty, 0, 'every post has a holder now');
+    assert.ok(strip.holders.length > 3, `only ${strip.holders.length} bars`);
+    for (const id of strip.holders) assert.match(id, /-(monarch|president|prime-minister)-\d{4}$/, id);
+    assert.ok(strip.holders.includes('salazar-prime-minister-1932'), 'Salazar');
+    assert.ok(strip.holders.includes('marcelo-caetano-prime-minister-1968'), 'Caetano');
     // It fills whatever width the pane has and keeps the height it was drawn
     // at: that is the whole of "no card measures its container".
     assert.equal(strip.width, strip.pane);
@@ -670,7 +685,7 @@ test('the actor card draws one tenure strip per office, and a bar opens the hold
     // `click()` of its own — that is HTMLElement's — so the event is
     // dispatched, which is what a real click does anyway: the panel listens
     // on its container and the click bubbles out of the SVG to it.
-    await page.eval('document.querySelector(\'.panel .tenure-bar\').dispatchEvent(new MouseEvent("click", { bubbles: true }));');
+    await page.eval('document.querySelector(\'.panel .tenure-bar[data-tenure="salazar-prime-minister-1932"]\').dispatchEvent(new MouseEvent("click", { bubbles: true }));');
     await waitFor(page, 'return /actor=salazar/.test(location.search);', 'the holder in the URL');
   });
 });

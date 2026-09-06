@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "teixeira-de-sousa-prime-minister-1910",
+  "kind": "tenure",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-06",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "date"
+    ],
+    "note": "The interval was written from the assistant’s memory in M31-3 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked."
+  },
+  "sources": [
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    }
+  ],
+  "person": "teixeira-de-sousa",
+  "office": "prime-minister-of-portugal",
+  "when": {
+    "start": 1910,
+    "end": 1910
+  },
+  "startedBy": null,
+  "note": "The last President of the Council of Ministers of the constitutional monarchy; the government ended when the Republic was proclaimed on 5 October 1910."
+}

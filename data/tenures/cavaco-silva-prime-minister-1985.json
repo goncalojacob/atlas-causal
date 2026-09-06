@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "cavaco-silva-prime-minister-1985",
+  "kind": "tenure",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-06",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "date"
+    ],
+    "note": "The interval was written from the assistant’s memory in M31-2 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked."
+  },
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-teixeira-2019-political-institutions",
+      "locator": null
+    }
+  ],
+  "person": "cavaco-silva",
+  "office": "prime-minister-of-portugal",
+  "when": {
+    "start": 1985,
+    "end": 1995
+  },
+  "startedBy": null,
+  "note": "Prime minister from November 1985 to October 1995, across three governments and two absolute majorities."
+}

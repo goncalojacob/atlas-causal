@@ -1,0 +1,2337 @@
+{
+  "kind": "tenure",
+  "records": [
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wheeler-1978-republican-portugal",
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-06",
+      "id": "afonso-costa-prime-minister-1913",
+      "kind": "tenure",
+      "office": "prime-minister-of-portugal",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "afonso-costa",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval was written from the assistant’s memory in M31-3 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wheeler-1978-republican-portugal",
+        "meneses-2004-portugal-1914-1926"
+      ],
+      "created": "2026-09-06",
+      "id": "afonso-costa-prime-minister-1915",
+      "kind": "tenure",
+      "office": "prime-minister-of-portugal",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "afonso-costa",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval was written from the assistant’s memory in M31-3 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wheeler-1978-republican-portugal",
+        "meneses-2004-portugal-1914-1926"
+      ],
+      "created": "2026-09-06",
+      "id": "afonso-costa-prime-minister-1917",
+      "kind": "tenure",
+      "office": "prime-minister-of-portugal",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "afonso-costa",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval was written from the assistant’s memory in M31-3 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "maxwell-1995-making-of-portuguese-democracy"
+      ],
+      "created": "2026-09-03",
+      "id": "alvaro-cunhal-pcp-1961",
+      "kind": "tenure",
+      "office": "leadership-of-pcp",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "alvaro-cunhal",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": "2026-09-06",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "rosas-1994-estado-novo",
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-06",
+      "id": "americo-tomas-president-1958",
+      "kind": "tenure",
+      "office": "president-of-portugal",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "americo-tomas",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval was written from the assistant’s memory in M31-1 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "macqueen-1997-decolonization",
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-03",
+      "id": "amilcar-cabral-paigc-1956",
+      "kind": "tenure",
+      "office": "leadership-of-paigc",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "amilcar-cabral",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": "2026-09-06",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "cne-legislative-2019",
+        "costa-pinto-teixeira-2019-political-institutions"
+      ],
+      "created": "2026-09-03",
+      "id": "andre-ventura-chega-2019",
+      "kind": "tenure",
+      "office": "leadership-of-chega",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "andre-ventura",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": "2026-09-06",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-teixeira-2019-political-institutions"
+      ],
+      "created": "2026-09-03",
+      "id": "antonio-costa-partido-socialista-2014",
+      "kind": "tenure",
+      "office": "leadership-of-partido-socialista",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "antonio-costa",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": "2026-09-06",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "costa-pinto-teixeira-2019-political-institutions"
+      ],
+      "created": "2026-09-06",
+      "id": "antonio-costa-prime-minister-2015",
+      "kind": "tenure",
+      "office": "prime-minister-of-portugal",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "antonio-costa",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval was written from the assistant’s memory in M31-2 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "maxwell-1995-making-of-portuguese-democracy",
+        "telo-2007-historia-contemporanea"
+      ],
+      "created": "2026-09-06",
+      "id": "antonio-de-spinola-president-1974",
+      "kind": "tenure",
+      "office": "president-of-portugal",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "antonio-de-spinola",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval was written from the assistant’s memory in M31-1 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "costa-pinto-teixeira-2019-political-institutions"
+      ],
+      "created": "2026-09-06",
+      "id": "antonio-guterres-prime-minister-1995",
+      "kind": "tenure",
+      "office": "prime-minister-of-portugal",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "antonio-guterres",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval was written from the assistant’s memory in M31-2 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wheeler-1978-republican-portugal",
+        "meneses-2004-portugal-1914-1926"
+      ],
+      "created": "2026-09-06",
+      "id": "antonio-jose-de-almeida-president-1919",
+      "kind": "tenure",
+      "office": "president-of-portugal",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "antonio-jose-de-almeida",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval was written from the assistant’s memory in M31-1 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wheeler-1978-republican-portugal",
+        "meneses-2004-portugal-1914-1926"
+      ],
+      "created": "2026-09-06",
+      "id": "antonio-jose-de-almeida-prime-minister-1916",
+      "kind": "tenure",
+      "office": "prime-minister-of-portugal",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "antonio-jose-de-almeida",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval was written from the assistant’s memory in M31-3 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wheeler-1978-republican-portugal",
+        "meneses-2004-portugal-1914-1926"
+      ],
+      "created": "2026-09-06",
+      "id": "antonio-maria-da-silva-prime-minister-1922",
+      "kind": "tenure",
+      "office": "prime-minister-of-portugal",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "antonio-maria-da-silva",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval was written from the assistant’s memory in M31-3 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wheeler-1978-republican-portugal",
+        "meneses-2004-portugal-1914-1926"
+      ],
+      "created": "2026-09-06",
+      "id": "antonio-maria-da-silva-prime-minister-1925",
+      "kind": "tenure",
+      "office": "prime-minister-of-portugal",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "antonio-maria-da-silva",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval was written from the assistant’s memory in M31-3 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wheeler-1978-republican-portugal",
+        "meneses-2004-portugal-1914-1926"
+      ],
+      "created": "2026-09-06",
+      "id": "bernardino-machado-president-1915",
+      "kind": "tenure",
+      "office": "president-of-portugal",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "bernardino-machado",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval was written from the assistant’s memory in M31-1 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wheeler-1978-republican-portugal",
+        "meneses-2004-portugal-1914-1926"
+      ],
+      "created": "2026-09-06",
+      "id": "bernardino-machado-president-1925",
+      "kind": "tenure",
+      "office": "president-of-portugal",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "bernardino-machado",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval was written from the assistant’s memory in M31-1 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wheeler-1978-republican-portugal",
+        "meneses-2004-portugal-1914-1926"
+      ],
+      "created": "2026-09-06",
+      "id": "canto-e-castro-president-1918",
+      "kind": "tenure",
+      "office": "president-of-portugal",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "canto-e-castro",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval was written from the assistant’s memory in M31-1 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-06",
+      "id": "carlos-i-monarch-1889",
+      "kind": "tenure",
+      "office": "monarch-of-portugal",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "carlos-i",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval was written from the assistant’s memory in M31-1 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "costa-pinto-teixeira-2019-political-institutions"
+      ],
+      "created": "2026-09-06",
+      "id": "cavaco-silva-president-2006",
+      "kind": "tenure",
+      "office": "president-of-portugal",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "cavaco-silva",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval was written from the assistant’s memory in M31-1 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "costa-pinto-teixeira-2019-political-institutions"
+      ],
+      "created": "2026-09-06",
+      "id": "cavaco-silva-prime-minister-1985",
+      "kind": "tenure",
+      "office": "prime-minister-of-portugal",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "cavaco-silva",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval was written from the assistant’s memory in M31-2 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "costa-pinto-teixeira-2019-political-institutions"
+      ],
+      "created": "2026-09-03",
+      "id": "cavaco-silva-psd-1985",
+      "kind": "tenure",
+      "office": "leadership-of-psd",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "cavaco-silva",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": "2026-09-06",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "maxwell-1995-making-of-portuguese-democracy",
+        "telo-2007-historia-contemporanea"
+      ],
+      "created": "2026-09-06",
+      "id": "costa-gomes-president-1974",
+      "kind": "tenure",
+      "office": "president-of-portugal",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "costa-gomes",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval was written from the assistant’s memory in M31-1 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "rosas-1994-estado-novo",
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-06",
+      "id": "craveiro-lopes-president-1951",
+      "kind": "tenure",
+      "office": "president-of-portugal",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "craveiro-lopes",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval was written from the assistant’s memory in M31-1 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-06",
+      "id": "dias-ferreira-prime-minister-1892",
+      "kind": "tenure",
+      "office": "prime-minister-of-portugal",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "dias-ferreira",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval was written from the assistant’s memory in M31-3 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "rosas-1994-estado-novo",
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-06",
+      "id": "domingos-oliveira-prime-minister-1930",
+      "kind": "tenure",
+      "office": "prime-minister-of-portugal",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "domingos-oliveira",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval was written from the assistant’s memory in M31-2 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "costa-pinto-teixeira-2019-political-institutions"
+      ],
+      "created": "2026-09-06",
+      "id": "durao-barroso-prime-minister-2002",
+      "kind": "tenure",
+      "office": "prime-minister-of-portugal",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "durao-barroso",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval was written from the assistant’s memory in M31-2 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "macqueen-1997-decolonization"
+      ],
+      "created": "2026-09-03",
+      "id": "eduardo-mondlane-frelimo-1962",
+      "kind": "tenure",
+      "office": "leadership-of-frelimo",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "eduardo-mondlane",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": "2026-09-06",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-06",
+      "id": "ferreira-do-amaral-prime-minister-1908",
+      "kind": "tenure",
+      "office": "prime-minister-of-portugal",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "ferreira-do-amaral",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval was written from the assistant’s memory in M31-3 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-06",
+      "id": "freitas-do-amaral-prime-minister-1980",
+      "kind": "tenure",
+      "office": "prime-minister-of-portugal",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "freitas-do-amaral",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval was written from the assistant’s memory in M31-2 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "meneses-2004-portugal-1914-1926",
+        "rosas-1994-estado-novo"
+      ],
+      "created": "2026-09-06",
+      "id": "gomes-da-costa-president-1926",
+      "kind": "tenure",
+      "office": "president-of-portugal",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "gomes-da-costa",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval was written from the assistant’s memory in M31-1 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "meneses-2004-portugal-1914-1926",
+        "rosas-1994-estado-novo"
+      ],
+      "created": "2026-09-06",
+      "id": "gomes-da-costa-prime-minister-1926",
+      "kind": "tenure",
+      "office": "prime-minister-of-portugal",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "gomes-da-costa",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval was written from the assistant’s memory in M31-2 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-06",
+      "id": "hintze-ribeiro-prime-minister-1893",
+      "kind": "tenure",
+      "office": "prime-minister-of-portugal",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "hintze-ribeiro",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval was written from the assistant’s memory in M31-3 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-06",
+      "id": "hintze-ribeiro-prime-minister-1900",
+      "kind": "tenure",
+      "office": "prime-minister-of-portugal",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "hintze-ribeiro",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval was written from the assistant’s memory in M31-3 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-06",
+      "id": "hintze-ribeiro-prime-minister-1906",
+      "kind": "tenure",
+      "office": "prime-minister-of-portugal",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "hintze-ribeiro",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval was written from the assistant’s memory in M31-3 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "rosas-1994-estado-novo",
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-06",
+      "id": "ivens-ferraz-prime-minister-1929",
+      "kind": "tenure",
+      "office": "prime-minister-of-portugal",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "ivens-ferraz",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval was written from the assistant’s memory in M31-2 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-06",
+      "id": "joao-crisostomo-prime-minister-1890",
+      "kind": "tenure",
+      "office": "prime-minister-of-portugal",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "joao-crisostomo",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval was written from the assistant’s memory in M31-3 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-06",
+      "id": "joao-franco-prime-minister-1906",
+      "kind": "tenure",
+      "office": "prime-minister-of-portugal",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "joao-franco",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval was written from the assistant’s memory in M31-3 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "costa-pinto-2003-contemporary-portugal"
+      ],
+      "created": "2026-09-06",
+      "id": "jorge-sampaio-president-1996",
+      "kind": "tenure",
+      "office": "president-of-portugal",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "jorge-sampaio",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval was written from the assistant’s memory in M31-1 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-06",
+      "id": "jose-luciano-de-castro-prime-minister-1886",
+      "kind": "tenure",
+      "office": "prime-minister-of-portugal",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "jose-luciano-de-castro",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval was written from the assistant’s memory in M31-3 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-06",
+      "id": "jose-luciano-de-castro-prime-minister-1897",
+      "kind": "tenure",
+      "office": "prime-minister-of-portugal",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "jose-luciano-de-castro",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval was written from the assistant’s memory in M31-3 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-06",
+      "id": "jose-luciano-de-castro-prime-minister-1904",
+      "kind": "tenure",
+      "office": "prime-minister-of-portugal",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "jose-luciano-de-castro",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval was written from the assistant’s memory in M31-3 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "costa-pinto-teixeira-2019-political-institutions"
+      ],
+      "created": "2026-09-06",
+      "id": "jose-socrates-prime-minister-2005",
+      "kind": "tenure",
+      "office": "prime-minister-of-portugal",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "jose-socrates",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval was written from the assistant’s memory in M31-2 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "rosas-1994-estado-novo",
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-06",
+      "id": "jose-vicente-de-freitas-prime-minister-1928",
+      "kind": "tenure",
+      "office": "prime-minister-of-portugal",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "jose-vicente-de-freitas",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval was written from the assistant’s memory in M31-2 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-06",
+      "id": "luis-i-monarch-1861",
+      "kind": "tenure",
+      "office": "monarch-of-portugal",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "luis-i",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval was written from the assistant’s memory in M31-1 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "costa-pinto-teixeira-2019-political-institutions"
+      ],
+      "created": "2026-09-06",
+      "id": "luis-montenegro-prime-minister-2024",
+      "kind": "tenure",
+      "office": "prime-minister-of-portugal",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "luis-montenegro",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval was written from the assistant’s memory in M31-2 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "cne-legislative-2024"
+      ],
+      "created": "2026-09-03",
+      "id": "luis-montenegro-psd-2022",
+      "kind": "tenure",
+      "office": "leadership-of-psd",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "luis-montenegro",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": "2026-09-06",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wheeler-1978-republican-portugal",
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-06",
+      "id": "manuel-de-arriaga-president-1911",
+      "kind": "tenure",
+      "office": "president-of-portugal",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "manuel-de-arriaga",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval was written from the assistant’s memory in M31-1 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal",
+        "wheeler-1978-republican-portugal"
+      ],
+      "created": "2026-09-06",
+      "id": "manuel-ii-monarch-1908",
+      "kind": "tenure",
+      "office": "monarch-of-portugal",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "manuel-ii",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval was written from the assistant’s memory in M31-1 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "rosas-1994-estado-novo",
+        "maxwell-1995-making-of-portuguese-democracy"
+      ],
+      "created": "2026-09-03",
+      "id": "marcelo-caetano-prime-minister-1968",
+      "kind": "tenure",
+      "office": "prime-minister-of-portugal",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "marcelo-caetano",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": "2026-09-06",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "cne-presidential-2016",
+        "costa-pinto-teixeira-2019-political-institutions"
+      ],
+      "created": "2026-09-06",
+      "id": "marcelo-rebelo-de-sousa-president-2016",
+      "kind": "tenure",
+      "office": "president-of-portugal",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "marcelo-rebelo-de-sousa",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval was written from the assistant’s memory in M31-1 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-teixeira-2019-political-institutions"
+      ],
+      "created": "2026-09-03",
+      "id": "marcelo-rebelo-de-sousa-psd-1996",
+      "kind": "tenure",
+      "office": "leadership-of-psd",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "marcelo-rebelo-de-sousa",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": "2026-09-06",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-06",
+      "id": "maria-de-lourdes-pintasilgo-prime-minister-1979",
+      "kind": "tenure",
+      "office": "prime-minister-of-portugal",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "maria-de-lourdes-pintasilgo",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval was written from the assistant’s memory in M31-2 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "maxwell-1995-making-of-portuguese-democracy",
+        "telo-2007-historia-contemporanea"
+      ],
+      "created": "2026-09-03",
+      "id": "mario-soares-partido-socialista-1973",
+      "kind": "tenure",
+      "office": "leadership-of-partido-socialista",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "mario-soares",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": "2026-09-06",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "costa-pinto-2003-contemporary-portugal"
+      ],
+      "created": "2026-09-06",
+      "id": "mario-soares-president-1986",
+      "kind": "tenure",
+      "office": "president-of-portugal",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "mario-soares",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval was written from the assistant’s memory in M31-1 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "maxwell-1995-making-of-portuguese-democracy",
+        "telo-2007-historia-contemporanea"
+      ],
+      "created": "2026-09-06",
+      "id": "mario-soares-prime-minister-1976",
+      "kind": "tenure",
+      "office": "prime-minister-of-portugal",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "mario-soares",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval was written from the assistant’s memory in M31-2 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-06",
+      "id": "mario-soares-prime-minister-1983",
+      "kind": "tenure",
+      "office": "prime-minister-of-portugal",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "mario-soares",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval was written from the assistant’s memory in M31-2 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "meneses-2004-portugal-1914-1926",
+        "rosas-1994-estado-novo"
+      ],
+      "created": "2026-09-06",
+      "id": "mendes-cabecadas-president-1926",
+      "kind": "tenure",
+      "office": "president-of-portugal",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "mendes-cabecadas",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval was written from the assistant’s memory in M31-1 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "meneses-2004-portugal-1914-1926",
+        "rosas-1994-estado-novo"
+      ],
+      "created": "2026-09-06",
+      "id": "mendes-cabecadas-prime-minister-1926",
+      "kind": "tenure",
+      "office": "prime-minister-of-portugal",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "mendes-cabecadas",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval was written from the assistant’s memory in M31-2 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-06",
+      "id": "mota-pinto-prime-minister-1978",
+      "kind": "tenure",
+      "office": "prime-minister-of-portugal",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "mota-pinto",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval was written from the assistant’s memory in M31-2 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-06",
+      "id": "nobre-da-costa-prime-minister-1978",
+      "kind": "tenure",
+      "office": "prime-minister-of-portugal",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "nobre-da-costa",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval was written from the assistant’s memory in M31-2 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "rosas-1994-estado-novo",
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-06",
+      "id": "oscar-carmona-president-1926",
+      "kind": "tenure",
+      "office": "president-of-portugal",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "oscar-carmona",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval was written from the assistant’s memory in M31-1 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "rosas-1994-estado-novo",
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-06",
+      "id": "oscar-carmona-prime-minister-1926",
+      "kind": "tenure",
+      "office": "prime-minister-of-portugal",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "oscar-carmona",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval was written from the assistant’s memory in M31-2 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "maxwell-1995-making-of-portuguese-democracy",
+        "telo-2007-historia-contemporanea"
+      ],
+      "created": "2026-09-06",
+      "id": "palma-carlos-prime-minister-1974",
+      "kind": "tenure",
+      "office": "prime-minister-of-portugal",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "palma-carlos",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval was written from the assistant’s memory in M31-2 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "costa-pinto-teixeira-2019-political-institutions"
+      ],
+      "created": "2026-09-06",
+      "id": "pedro-passos-coelho-prime-minister-2011",
+      "kind": "tenure",
+      "office": "prime-minister-of-portugal",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "pedro-passos-coelho",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval was written from the assistant’s memory in M31-2 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-teixeira-2019-political-institutions"
+      ],
+      "created": "2026-09-03",
+      "id": "pedro-passos-coelho-psd-2010",
+      "kind": "tenure",
+      "office": "leadership-of-psd",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "pedro-passos-coelho",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": "2026-09-06",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wheeler-1978-republican-portugal",
+        "meneses-2004-portugal-1914-1926"
+      ],
+      "created": "2026-09-06",
+      "id": "pimenta-de-castro-prime-minister-1915",
+      "kind": "tenure",
+      "office": "prime-minister-of-portugal",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "pimenta-de-castro",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval was written from the assistant’s memory in M31-3 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "maxwell-1995-making-of-portuguese-democracy",
+        "telo-2007-historia-contemporanea"
+      ],
+      "created": "2026-09-06",
+      "id": "pinheiro-de-azevedo-prime-minister-1975",
+      "kind": "tenure",
+      "office": "prime-minister-of-portugal",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "pinheiro-de-azevedo",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval was written from the assistant’s memory in M31-2 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-06",
+      "id": "pinto-balsemao-prime-minister-1981",
+      "kind": "tenure",
+      "office": "prime-minister-of-portugal",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "pinto-balsemao",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval was written from the assistant’s memory in M31-2 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "costa-pinto-2003-contemporary-portugal"
+      ],
+      "created": "2026-09-06",
+      "id": "ramalho-eanes-president-1976",
+      "kind": "tenure",
+      "office": "president-of-portugal",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "ramalho-eanes",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval was written from the assistant’s memory in M31-1 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-06",
+      "id": "sa-carneiro-prime-minister-1980",
+      "kind": "tenure",
+      "office": "prime-minister-of-portugal",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "sa-carneiro",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval was written from the assistant’s memory in M31-2 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "meneses-2009-salazar",
+        "rosas-2012-salazar-e-o-poder"
+      ],
+      "created": "2026-09-03",
+      "id": "salazar-prime-minister-1932",
+      "kind": "tenure",
+      "office": "prime-minister-of-portugal",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "salazar",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": "2026-09-06",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "costa-pinto-teixeira-2019-political-institutions"
+      ],
+      "created": "2026-09-06",
+      "id": "santana-lopes-prime-minister-2004",
+      "kind": "tenure",
+      "office": "prime-minister-of-portugal",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "santana-lopes",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval was written from the assistant’s memory in M31-2 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-06",
+      "id": "serpa-pimentel-prime-minister-1890",
+      "kind": "tenure",
+      "office": "prime-minister-of-portugal",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "serpa-pimentel",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval was written from the assistant’s memory in M31-3 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wheeler-1978-republican-portugal",
+        "meneses-2004-portugal-1914-1926"
+      ],
+      "created": "2026-09-06",
+      "id": "sidonio-pais-president-1917",
+      "kind": "tenure",
+      "office": "president-of-portugal",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "sidonio-pais",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval was written from the assistant’s memory in M31-1 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wheeler-1978-republican-portugal",
+        "meneses-2004-portugal-1914-1926"
+      ],
+      "created": "2026-09-06",
+      "id": "sidonio-pais-prime-minister-1917",
+      "kind": "tenure",
+      "office": "prime-minister-of-portugal",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "sidonio-pais",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval was written from the assistant’s memory in M31-3 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-06",
+      "id": "teixeira-de-sousa-prime-minister-1910",
+      "kind": "tenure",
+      "office": "prime-minister-of-portugal",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "teixeira-de-sousa",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval was written from the assistant’s memory in M31-3 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wheeler-1978-republican-portugal",
+        "meneses-2004-portugal-1914-1926"
+      ],
+      "created": "2026-09-06",
+      "id": "teixeira-gomes-president-1923",
+      "kind": "tenure",
+      "office": "president-of-portugal",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "teixeira-gomes",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval was written from the assistant’s memory in M31-1 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wheeler-1978-republican-portugal",
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-06",
+      "id": "teofilo-braga-president-1910",
+      "kind": "tenure",
+      "office": "president-of-portugal",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "teofilo-braga",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval was written from the assistant’s memory in M31-1 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wheeler-1978-republican-portugal",
+        "meneses-2004-portugal-1914-1926"
+      ],
+      "created": "2026-09-06",
+      "id": "teofilo-braga-president-1915",
+      "kind": "tenure",
+      "office": "president-of-portugal",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "teofilo-braga",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval was written from the assistant’s memory in M31-1 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "maxwell-1995-making-of-portuguese-democracy",
+        "telo-2007-historia-contemporanea"
+      ],
+      "created": "2026-09-06",
+      "id": "vasco-goncalves-prime-minister-1974",
+      "kind": "tenure",
+      "office": "prime-minister-of-portugal",
+      "origin": {
+        "tool": "assistant"
+      },
+      "person": "vasco-goncalves",
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval was written from the assistant’s memory in M31-2 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    }
+  ],
+  "schema": 1,
+  "warnings": []
+}

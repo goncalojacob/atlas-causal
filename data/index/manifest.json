@@ -62,7 +62,7 @@
     }
   ],
   "counts": {
-    "actors": 412,
+    "actors": 445,
     "edges": 161,
     "events": 329,
     "narratives": 1,
@@ -72,7 +72,7 @@
     "regions": 5,
     "relations": 43,
     "sources": 34,
-    "tenures": 12
+    "tenures": 81
   },
   "explanationShards": [
     {
@@ -92,12 +92,12 @@
     }
   ],
   "files": {
-    "citers": "index/citers-2678d87ce336",
+    "citers": "index/citers-06a247bbfc09",
     "history": "index/history",
-    "review": "index/review-175188718eea.json",
-    "search": "index/search-6da1bcb62212.json",
-    "sources": "index/sources-78108ff40e94.json",
-    "spine": "index/spine-d561eda4427c.json"
+    "review": "index/review-cc93b2fb1e5d.json",
+    "search": "index/search-6cd2db6a2edd.json",
+    "sources": "index/sources-fcc1f1ebd5c8.json",
+    "spine": "index/spine-6dcfefab7f23.json"
   },
   "land": [
     {
@@ -245,25 +245,57 @@
     }
   },
   "officesByEvent": {
+    "1908-portuguese-legislative-election": [
+      "joao-franco-prime-minister-1906",
+      "manuel-ii-monarch-1908"
+    ],
+    "1911-portuguese-presidential-election": [
+      "manuel-de-arriaga-president-1911"
+    ],
+    "1915-portuguese-legislative-election": [
+      "afonso-costa-prime-minister-1915"
+    ],
+    "1928-portuguese-presidential-election": [
+      "oscar-carmona-president-1926",
+      "oscar-carmona-prime-minister-1926"
+    ],
     "1945-portuguese-legislative-election": [
       "salazar-prime-minister-1932"
     ],
+    "1949-portuguese-presidential-election": [
+      "oscar-carmona-president-1926"
+    ],
+    "1965-portuguese-presidential-election": [
+      "americo-tomas-president-1958"
+    ],
     "1969-portuguese-legislative-election": [
+      "americo-tomas-president-1958",
       "marcelo-caetano-prime-minister-1968"
+    ],
+    "1972-portuguese-presidential-election": [
+      "americo-tomas-president-1958"
     ],
     "1973-portuguese-legislative-election": [
+      "americo-tomas-president-1958",
       "marcelo-caetano-prime-minister-1968"
     ],
+    "1980-portuguese-presidential-election": [
+      "ramalho-eanes-president-1976"
+    ],
     "1983-portuguese-legislative-election": [
-      "mario-soares-partido-socialista-1973"
+      "mario-soares-partido-socialista-1973",
+      "mario-soares-prime-minister-1983"
     ],
     "1985-portuguese-legislative-election": [
+      "cavaco-silva-prime-minister-1985",
       "cavaco-silva-psd-1985"
     ],
     "1991-portuguese-legislative-election": [
+      "cavaco-silva-prime-minister-1985",
       "cavaco-silva-psd-1985"
     ],
     "2011-portuguese-legislative-election": [
+      "pedro-passos-coelho-prime-minister-2011",
       "pedro-passos-coelho-psd-2010"
     ],
     "2014-portuguese-socialist-party-prime-ministerial-primary": [
@@ -292,10 +324,13 @@
       "salazar-prime-minister-1932"
     ],
     "carnation-revolution-1974": [
+      "antonio-de-spinola-president-1974",
       "marcelo-caetano-prime-minister-1968"
     ],
     "cavaco-absolute-majority-1987": [
-      "cavaco-silva-psd-1985"
+      "cavaco-silva-prime-minister-1985",
+      "cavaco-silva-psd-1985",
+      "mario-soares-president-1986"
     ],
     "constituent-assembly-election-1975": [
       "alvaro-cunhal-pcp-1961",
@@ -305,41 +340,66 @@
       "salazar-prime-minister-1932"
     ],
     "constitution-1976": [
-      "mario-soares-partido-socialista-1973"
+      "mario-soares-partido-socialista-1973",
+      "mario-soares-prime-minister-1976"
     ],
     "constitutional-revision-1959": [
       "salazar-prime-minister-1932"
     ],
+    "constitutional-revision-1982": [
+      "ramalho-eanes-president-1976"
+    ],
     "costa-resigns-2023": [
-      "antonio-costa-partido-socialista-2014"
+      "antonio-costa-partido-socialista-2014",
+      "antonio-costa-prime-minister-2015",
+      "marcelo-rebelo-de-sousa-president-2016"
+    ],
+    "coup-28-may-1926": [
+      "gomes-da-costa-president-1926",
+      "gomes-da-costa-prime-minister-1926"
     ],
     "covid-state-of-emergency-2020": [
-      "antonio-costa-partido-socialista-2014"
+      "antonio-costa-partido-socialista-2014",
+      "antonio-costa-prime-minister-2015",
+      "marcelo-rebelo-de-sousa-president-2016"
     ],
     "delgado-candidacy-1958": [
       "salazar-prime-minister-1932"
     ],
     "eanes-elected-1976": [
-      "mario-soares-partido-socialista-1973"
+      "mario-soares-partido-socialista-1973",
+      "mario-soares-prime-minister-1976",
+      "ramalho-eanes-president-1976"
     ],
     "eec-accession-1986": [
+      "cavaco-silva-prime-minister-1985",
       "cavaco-silva-psd-1985",
-      "mario-soares-partido-socialista-1973"
+      "mario-soares-partido-socialista-1973",
+      "mario-soares-president-1986"
     ],
     "eec-application-1977": [
-      "mario-soares-partido-socialista-1973"
+      "mario-soares-partido-socialista-1973",
+      "mario-soares-prime-minister-1976"
     ],
     "exposicao-mundo-portugues-1940": [
       "salazar-prime-minister-1932"
     ],
     "fiftieth-anniversary-25-april-2024": [
-      "luis-montenegro-psd-2022"
+      "luis-montenegro-prime-minister-2024",
+      "luis-montenegro-psd-2022",
+      "marcelo-rebelo-de-sousa-president-2016"
     ],
     "geringonca-2015": [
-      "antonio-costa-partido-socialista-2014"
+      "antonio-costa-partido-socialista-2014",
+      "antonio-costa-prime-minister-2015",
+      "cavaco-silva-president-2006"
+    ],
+    "germany-declares-war-1916": [
+      "afonso-costa-prime-minister-1915"
     ],
     "government-falls-2025": [
       "andre-ventura-chega-2019",
+      "luis-montenegro-prime-minister-2024",
       "luis-montenegro-psd-2022"
     ],
     "guinea-war-begins-1963": [
@@ -349,82 +409,143 @@
       "salazar-prime-minister-1932"
     ],
     "imf-agreement-1978": [
-      "mario-soares-partido-socialista-1973"
+      "mario-soares-partido-socialista-1973",
+      "mario-soares-prime-minister-1976"
     ],
     "imf-agreement-1983": [
-      "mario-soares-partido-socialista-1973"
+      "mario-soares-partido-socialista-1973",
+      "mario-soares-prime-minister-1983"
     ],
     "legiao-portuguesa-founded-1936": [
       "salazar-prime-minister-1932"
     ],
     "legislative-election-1976": [
       "alvaro-cunhal-pcp-1961",
-      "mario-soares-partido-socialista-1973"
+      "mario-soares-partido-socialista-1973",
+      "mario-soares-prime-minister-1976"
     ],
     "legislative-election-2015": [
       "antonio-costa-partido-socialista-2014",
+      "antonio-costa-prime-minister-2015",
+      "pedro-passos-coelho-prime-minister-2011",
       "pedro-passos-coelho-psd-2010"
     ],
     "legislative-election-2019": [
       "andre-ventura-chega-2019",
-      "antonio-costa-partido-socialista-2014"
+      "antonio-costa-partido-socialista-2014",
+      "antonio-costa-prime-minister-2015"
     ],
     "legislative-election-2022": [
       "andre-ventura-chega-2019",
-      "antonio-costa-partido-socialista-2014"
+      "antonio-costa-partido-socialista-2014",
+      "antonio-costa-prime-minister-2015"
     ],
     "legislative-election-2024": [
       "andre-ventura-chega-2019",
+      "luis-montenegro-prime-minister-2024",
       "luis-montenegro-psd-2022"
     ],
     "legislative-election-2025": [
       "andre-ventura-chega-2019",
+      "luis-montenegro-prime-minister-2024",
       "luis-montenegro-psd-2022"
+    ],
+    "lisbon-regicide": [
+      "carlos-i-monarch-1889",
+      "joao-franco-prime-minister-1906",
+      "manuel-ii-monarch-1908"
+    ],
+    "marcelo-elected-president-2016": [
+      "cavaco-silva-president-2006",
+      "marcelo-rebelo-de-sousa-president-2016"
     ],
     "marcelo-reelected-2021": [
-      "andre-ventura-chega-2019"
+      "andre-ventura-chega-2019",
+      "marcelo-rebelo-de-sousa-president-2016"
     ],
     "montenegro-government-2024": [
-      "luis-montenegro-psd-2022"
+      "luis-montenegro-prime-minister-2024",
+      "luis-montenegro-psd-2022",
+      "marcelo-rebelo-de-sousa-president-2016"
     ],
     "mozambique-war-begins-1964": [
       "eduardo-mondlane-frelimo-1962"
+    ],
+    "nationalisations-1975": [
+      "vasco-goncalves-prime-minister-1974"
     ],
     "nato-founding-1949": [
       "salazar-prime-minister-1932"
     ],
     "october-fires-2017": [
-      "antonio-costa-partido-socialista-2014"
+      "antonio-costa-partido-socialista-2014",
+      "antonio-costa-prime-minister-2015"
     ],
     "pedrogao-grande-fires-2017": [
-      "antonio-costa-partido-socialista-2014"
+      "antonio-costa-partido-socialista-2014",
+      "antonio-costa-prime-minister-2015"
+    ],
+    "pimenta-de-castro-government-1915": [
+      "afonso-costa-prime-minister-1915",
+      "pimenta-de-castro-prime-minister-1915"
     ],
     "portugal-backs-franco-1936": [
       "salazar-prime-minister-1932"
     ],
     "portugal-e-o-futuro-1974": [
+      "antonio-de-spinola-president-1974",
       "marcelo-caetano-prime-minister-1968"
+    ],
+    "republic-proclaimed-1910": [
+      "manuel-ii-monarch-1908"
+    ],
+    "revolt-14-may-1915": [
+      "afonso-costa-prime-minister-1915",
+      "pimenta-de-castro-prime-minister-1915"
     ],
     "salazar-president-of-council-1932": [
       "salazar-prime-minister-1932"
     ],
+    "sidonio-pais-assassinated-1918": [
+      "sidonio-pais-president-1917",
+      "sidonio-pais-prime-minister-1917"
+    ],
+    "sidonio-pais-coup-1917": [
+      "afonso-costa-prime-minister-1917",
+      "sidonio-pais-president-1917",
+      "sidonio-pais-prime-minister-1917"
+    ],
     "soares-elected-president-1986": [
-      "mario-soares-partido-socialista-1973"
+      "mario-soares-partido-socialista-1973",
+      "mario-soares-president-1986",
+      "ramalho-eanes-president-1976"
+    ],
+    "spinola-resigns-1974": [
+      "antonio-de-spinola-president-1974",
+      "vasco-goncalves-prime-minister-1974"
     ],
     "treaty-of-accession-1985": [
-      "mario-soares-partido-socialista-1973"
+      "mario-soares-partido-socialista-1973",
+      "mario-soares-prime-minister-1983"
     ],
     "treaty-of-friendship-and-cooperation-between-spain-and-portugal": [
-      "mario-soares-partido-socialista-1973"
+      "mario-soares-partido-socialista-1973",
+      "mario-soares-prime-minister-1976"
+    ],
+    "troika-bailout-2011": [
+      "cavaco-silva-president-2006"
     ],
     "troika-programme-ends-2014": [
+      "pedro-passos-coelho-prime-minister-2011",
       "pedro-passos-coelho-psd-2010"
     ],
     "un-admission-1955": [
       "salazar-prime-minister-1932"
     ],
     "world-youth-day-2023": [
-      "antonio-costa-partido-socialista-2014"
+      "antonio-costa-partido-socialista-2014",
+      "antonio-costa-prime-minister-2015",
+      "marcelo-rebelo-de-sousa-president-2016"
     ]
   },
   "palette": "geo/palette.json",
@@ -828,9 +949,82 @@
       "pedro-passos-coelho-psd-2010",
       "luis-montenegro-psd-2022"
     ],
+    "monarch-of-portugal": [
+      "luis-i-monarch-1861",
+      "carlos-i-monarch-1889",
+      "manuel-ii-monarch-1908"
+    ],
+    "president-of-portugal": [
+      "teofilo-braga-president-1910",
+      "manuel-de-arriaga-president-1911",
+      "bernardino-machado-president-1915",
+      "teofilo-braga-president-1915",
+      "sidonio-pais-president-1917",
+      "canto-e-castro-president-1918",
+      "antonio-jose-de-almeida-president-1919",
+      "teixeira-gomes-president-1923",
+      "bernardino-machado-president-1925",
+      "gomes-da-costa-president-1926",
+      "mendes-cabecadas-president-1926",
+      "oscar-carmona-president-1926",
+      "craveiro-lopes-president-1951",
+      "americo-tomas-president-1958",
+      "antonio-de-spinola-president-1974",
+      "costa-gomes-president-1974",
+      "ramalho-eanes-president-1976",
+      "mario-soares-president-1986",
+      "jorge-sampaio-president-1996",
+      "cavaco-silva-president-2006",
+      "marcelo-rebelo-de-sousa-president-2016"
+    ],
     "prime-minister-of-portugal": [
+      "jose-luciano-de-castro-prime-minister-1886",
+      "joao-crisostomo-prime-minister-1890",
+      "serpa-pimentel-prime-minister-1890",
+      "dias-ferreira-prime-minister-1892",
+      "hintze-ribeiro-prime-minister-1893",
+      "jose-luciano-de-castro-prime-minister-1897",
+      "hintze-ribeiro-prime-minister-1900",
+      "jose-luciano-de-castro-prime-minister-1904",
+      "hintze-ribeiro-prime-minister-1906",
+      "joao-franco-prime-minister-1906",
+      "ferreira-do-amaral-prime-minister-1908",
+      "teixeira-de-sousa-prime-minister-1910",
+      "afonso-costa-prime-minister-1913",
+      "afonso-costa-prime-minister-1915",
+      "pimenta-de-castro-prime-minister-1915",
+      "antonio-jose-de-almeida-prime-minister-1916",
+      "afonso-costa-prime-minister-1917",
+      "sidonio-pais-prime-minister-1917",
+      "antonio-maria-da-silva-prime-minister-1922",
+      "antonio-maria-da-silva-prime-minister-1925",
+      "gomes-da-costa-prime-minister-1926",
+      "mendes-cabecadas-prime-minister-1926",
+      "oscar-carmona-prime-minister-1926",
+      "jose-vicente-de-freitas-prime-minister-1928",
+      "ivens-ferraz-prime-minister-1929",
+      "domingos-oliveira-prime-minister-1930",
       "salazar-prime-minister-1932",
-      "marcelo-caetano-prime-minister-1968"
+      "marcelo-caetano-prime-minister-1968",
+      "palma-carlos-prime-minister-1974",
+      "vasco-goncalves-prime-minister-1974",
+      "pinheiro-de-azevedo-prime-minister-1975",
+      "mario-soares-prime-minister-1976",
+      "mota-pinto-prime-minister-1978",
+      "nobre-da-costa-prime-minister-1978",
+      "maria-de-lourdes-pintasilgo-prime-minister-1979",
+      "freitas-do-amaral-prime-minister-1980",
+      "sa-carneiro-prime-minister-1980",
+      "pinto-balsemao-prime-minister-1981",
+      "mario-soares-prime-minister-1983",
+      "cavaco-silva-prime-minister-1985",
+      "antonio-guterres-prime-minister-1995",
+      "durao-barroso-prime-minister-2002",
+      "santana-lopes-prime-minister-2004",
+      "jose-socrates-prime-minister-2005",
+      "pedro-passos-coelho-prime-minister-2011",
+      "antonio-costa-prime-minister-2015",
+      "luis-montenegro-prime-minister-2024"
     ]
   }
 }

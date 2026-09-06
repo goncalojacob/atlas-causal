@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "manuel-ii-monarch-1908",
+  "kind": "tenure",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-06",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "date"
+    ],
+    "note": "The interval was written from the assistant’s memory in M31-1 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked."
+  },
+  "sources": [
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    },
+    {
+      "source": "wheeler-1978-republican-portugal",
+      "locator": null
+    }
+  ],
+  "person": "manuel-ii",
+  "office": "monarch-of-portugal",
+  "when": {
+    "start": 1908,
+    "end": 1910
+  },
+  "startedBy": "lisbon-regicide",
+  "note": "He acceded on the killing of his father and his elder brother, and lost the throne to the revolution of 5 October 1910."
+}

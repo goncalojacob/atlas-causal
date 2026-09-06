@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "2006-portuguese-presidential-election",
   "kind": "event",
-  "status": "retracted",
+  "status": "active",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,18 +13,14 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": "2026-09-04",
+  "revised": "2026-09-06",
   "origin": {
     "tool": "wikidata"
   },
-  "retraction": {
-    "on": "2026-09-04",
-    "reason": "Retracted in M22: the presidential election of 22 January 2006, won in the first round by Aníbal Cavaco Silva with 50.54 per cent, the first president of the democratic period to come from the right. The atlas holds him as prime minister and holds nothing of his presidency, so the election that began it has nothing to attach to in either direction. Worth reviving with the presidency itself, which spans the bailout."
-  },
   "review": {
+    "status": "draft",
     "flags": [
-      "imported-facts",
-      "m22-retracted"
+      "imported-facts"
     ]
   },
   "wikidata": "Q2715397",

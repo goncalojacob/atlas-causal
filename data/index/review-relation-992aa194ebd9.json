@@ -1,0 +1,926 @@
+{
+  "kind": "relation",
+  "records": [
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "cne-legislative-2019"
+      ],
+      "created": "2026-09-03",
+      "from": "andre-ventura",
+      "id": "andre-ventura--chega--member-of",
+      "kind": "relation",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "chega",
+      "type": "member-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-teixeira-2019-political-institutions",
+        "cne-legislative-2015"
+      ],
+      "created": "2026-09-03",
+      "from": "antonio-costa",
+      "id": "antonio-costa--partido-socialista--member-of",
+      "kind": "relation",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "partido-socialista",
+      "type": "member-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-03",
+      "from": "british-india",
+      "id": "british-india--republic-of-india--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "republic-of-india",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "costa-pinto-2003-contemporary-portugal"
+      ],
+      "created": "2026-09-03",
+      "from": "council-of-the-revolution",
+      "id": "council-of-the-revolution--third-portuguese-republic--part-of",
+      "kind": "relation",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "third-portuguese-republic",
+      "type": "part-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-03",
+      "from": "dutch-east-indies",
+      "id": "dutch-east-indies--indonesia--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "indonesia",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "costa-pinto-2003-contemporary-portugal"
+      ],
+      "created": "2026-09-03",
+      "from": "estado-novo",
+      "id": "estado-novo--nato--allied-with",
+      "kind": "relation",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "nato",
+      "type": "allied-with"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "rosas-1994-estado-novo",
+        "costa-pinto-2003-contemporary-portugal"
+      ],
+      "created": "2026-09-03",
+      "from": "estado-novo",
+      "id": "estado-novo--portugal--regime-of",
+      "kind": "relation",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "portugal",
+      "type": "regime-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "reis-2013-portuguese-slump"
+      ],
+      "created": "2026-09-05",
+      "from": "european-central-bank",
+      "id": "european-central-bank--european-union--part-of",
+      "kind": "relation",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "european-union",
+      "type": "part-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-teixeira-2019-political-institutions"
+      ],
+      "created": "2026-09-05",
+      "from": "european-commission",
+      "id": "european-commission--european-union--part-of",
+      "kind": "relation",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "european-union",
+      "type": "part-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "costa-pinto-teixeira-2019-political-institutions"
+      ],
+      "created": "2026-09-05",
+      "from": "european-economic-community",
+      "id": "european-economic-community--european-union--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "european-union",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "reis-2013-portuguese-slump"
+      ],
+      "created": "2026-09-05",
+      "from": "eurozone",
+      "id": "eurozone--european-union--part-of",
+      "kind": "relation",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "european-union",
+      "type": "part-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wheeler-1978-republican-portugal",
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-03",
+      "from": "first-portuguese-republic",
+      "id": "first-portuguese-republic--portugal--regime-of",
+      "kind": "relation",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "portugal",
+      "type": "regime-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "rosas-1994-estado-novo",
+        "costa-pinto-2003-contemporary-portugal"
+      ],
+      "created": "2026-09-03",
+      "from": "legiao-portuguesa",
+      "id": "legiao-portuguesa--estado-novo--part-of",
+      "kind": "relation",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "estado-novo",
+      "type": "part-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "cne-legislative-2024"
+      ],
+      "created": "2026-09-03",
+      "from": "luis-montenegro",
+      "id": "luis-montenegro--psd--member-of",
+      "kind": "relation",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "psd",
+      "type": "member-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-teixeira-2019-political-institutions",
+        "cne-presidential-2016"
+      ],
+      "created": "2026-09-03",
+      "from": "marcelo-rebelo-de-sousa",
+      "id": "marcelo-rebelo-de-sousa--psd--member-of",
+      "kind": "relation",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "psd",
+      "type": "member-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "rosas-1994-estado-novo",
+        "meneses-2004-portugal-1914-1926"
+      ],
+      "created": "2026-09-03",
+      "from": "military-dictatorship",
+      "id": "military-dictatorship--portugal--regime-of",
+      "kind": "relation",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "portugal",
+      "type": "regime-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-05",
+      "from": "oeec",
+      "id": "oeec--oecd--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source. Whether this is a succession or a renaming is the editorial decision argued in the OECD's summary.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "oecd",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-teixeira-2019-political-institutions"
+      ],
+      "created": "2026-09-03",
+      "from": "pedro-passos-coelho",
+      "id": "pedro-passos-coelho--psd--member-of",
+      "kind": "relation",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "psd",
+      "type": "member-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "costa-pinto-2003-contemporary-portugal"
+      ],
+      "created": "2026-09-05",
+      "from": "portugal",
+      "id": "portugal--council-of-europe--member-of",
+      "kind": "relation",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": "2026-09-06",
+      "status": "active",
+      "to": "council-of-europe",
+      "type": "member-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "costa-pinto-2003-contemporary-portugal"
+      ],
+      "created": "2026-09-05",
+      "from": "portugal",
+      "id": "portugal--cplp--member-of",
+      "kind": "relation",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": "2026-09-06",
+      "status": "active",
+      "to": "cplp",
+      "type": "member-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal",
+        "rosas-1994-estado-novo"
+      ],
+      "created": "2026-09-05",
+      "from": "portugal",
+      "id": "portugal--efta--member-of",
+      "kind": "relation",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": "2026-09-06",
+      "status": "active",
+      "to": "efta",
+      "type": "member-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "costa-pinto-teixeira-2019-political-institutions"
+      ],
+      "created": "2026-09-05",
+      "from": "portugal",
+      "id": "portugal--european-union--member-of",
+      "kind": "relation",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": "2026-09-06",
+      "status": "active",
+      "to": "european-union",
+      "type": "member-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "reis-2013-portuguese-slump",
+        "telo-2007-historia-contemporanea"
+      ],
+      "created": "2026-09-05",
+      "from": "portugal",
+      "id": "portugal--eurozone--member-of",
+      "kind": "relation",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": "2026-09-06",
+      "status": "active",
+      "to": "eurozone",
+      "type": "member-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "reis-2013-portuguese-slump"
+      ],
+      "created": "2026-09-05",
+      "from": "portugal",
+      "id": "portugal--imf--member-of",
+      "kind": "relation",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source. The 1961 accession is the least certain date in this batch, and the Bretton Woods institutions were joined together, which is worth checking as one fact.",
+        "status": "draft"
+      },
+      "revised": "2026-09-06",
+      "status": "active",
+      "to": "imf",
+      "type": "member-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal",
+        "meneses-2004-portugal-1914-1926"
+      ],
+      "created": "2026-09-05",
+      "from": "portugal",
+      "id": "portugal--league-of-nations--member-of",
+      "kind": "relation",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": "2026-09-06",
+      "status": "active",
+      "to": "league-of-nations",
+      "type": "member-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-05",
+      "from": "portugal",
+      "id": "portugal--oecd--member-of",
+      "kind": "relation",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": "2026-09-06",
+      "status": "active",
+      "to": "oecd",
+      "type": "member-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal",
+        "rosas-1994-estado-novo"
+      ],
+      "created": "2026-09-05",
+      "from": "portugal",
+      "id": "portugal--oeec--member-of",
+      "kind": "relation",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": "2026-09-06",
+      "status": "active",
+      "to": "oeec",
+      "type": "member-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea"
+      ],
+      "created": "2026-09-05",
+      "from": "portugal",
+      "id": "portugal--schengen-area--member-of",
+      "kind": "relation",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": "2026-09-06",
+      "status": "active",
+      "to": "schengen-area",
+      "type": "member-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "rosas-1994-estado-novo",
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-03",
+      "from": "pvde-pide-dgs",
+      "id": "pvde-pide-dgs--estado-novo--part-of",
+      "kind": "relation",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "estado-novo",
+      "type": "part-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-2003-contemporary-portugal",
+        "telo-2007-historia-contemporanea"
+      ],
+      "created": "2026-09-03",
+      "from": "third-portuguese-republic",
+      "id": "third-portuguese-republic--european-economic-community--allied-with",
+      "kind": "relation",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "european-economic-community",
+      "type": "allied-with"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "costa-pinto-2003-contemporary-portugal"
+      ],
+      "created": "2026-09-03",
+      "from": "third-portuguese-republic",
+      "id": "third-portuguese-republic--portugal--regime-of",
+      "kind": "relation",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "portugal",
+      "type": "regime-of"
+    }
+  ],
+  "schema": 1,
+  "warnings": []
+}
