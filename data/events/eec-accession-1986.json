@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-02",
-  "revised": null,
+  "revised": "2026-09-06",
   "origin": {
     "tool": "assistant"
   },
@@ -43,11 +43,13 @@
   "actors": [
     {
       "actor": "european-economic-community",
-      "role": "admitting body"
+      "role": "member",
+      "note": "admitting body"
     },
     {
       "actor": "third-portuguese-republic",
-      "role": "acceded"
+      "role": "elected",
+      "note": "acceded"
     },
     {
       "actor": "mario-soares",

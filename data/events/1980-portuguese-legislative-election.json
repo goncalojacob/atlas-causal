@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": "2026-09-04",
+  "revised": "2026-09-06",
   "origin": {
     "tool": "wikidata"
   },
@@ -71,15 +71,18 @@
   "actors": [
     {
       "actor": "psd",
-      "role": "led the winning alliance"
+      "role": "leader",
+      "note": "led the winning alliance"
     },
     {
       "actor": "cds-pp",
-      "role": "partner in the winning alliance"
+      "role": "party",
+      "note": "partner in the winning alliance"
     },
     {
       "actor": "third-portuguese-republic",
-      "role": "the state holding the election"
+      "role": "government",
+      "note": "the state holding the election"
     }
   ]
 }

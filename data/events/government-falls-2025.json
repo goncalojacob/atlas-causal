@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-03",
-  "revised": null,
+  "revised": "2026-09-06",
   "origin": {
     "tool": "assistant"
   },
@@ -43,23 +43,24 @@
   "actors": [
     {
       "actor": "luis-montenegro",
-      "role": "prime minister"
+      "role": "head-of-government"
     },
     {
       "actor": "psd",
-      "role": "governing party"
+      "role": "government"
     },
     {
       "actor": "partido-socialista",
-      "role": "opposition party"
+      "role": "opposition"
     },
     {
       "actor": "chega",
-      "role": "opposition party"
+      "role": "opposition"
     },
     {
       "actor": "andre-ventura",
-      "role": "party leader"
+      "role": "leader",
+      "note": "party leader"
     }
   ]
 }

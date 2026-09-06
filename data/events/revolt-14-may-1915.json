@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-02",
-  "revised": null,
+  "revised": "2026-09-06",
   "origin": {
     "tool": "assistant"
   },
@@ -47,11 +47,13 @@
     },
     {
       "actor": "partido-democratico",
-      "role": "restored"
+      "role": "government",
+      "note": "restored"
     },
     {
       "actor": "afonso-costa",
-      "role": "beneficiary"
+      "role": "supporter",
+      "note": "beneficiary"
     }
   ]
 }

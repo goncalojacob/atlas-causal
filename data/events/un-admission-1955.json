@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-02",
-  "revised": null,
+  "revised": "2026-09-06",
   "origin": {
     "tool": "assistant"
   },
@@ -39,11 +39,13 @@
   "actors": [
     {
       "actor": "united-nations",
-      "role": "admitting body"
+      "role": "member",
+      "note": "admitting body"
     },
     {
       "actor": "estado-novo",
-      "role": "admitted"
+      "role": "elected",
+      "note": "admitted"
     },
     {
       "actor": "salazar",

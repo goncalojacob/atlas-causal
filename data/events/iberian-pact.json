@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": "2026-09-04",
+  "revised": "2026-09-06",
   "origin": {
     "tool": "wikidata"
   },
@@ -72,11 +72,13 @@
   "actors": [
     {
       "actor": "salazar",
-      "role": "negotiated and signed for Portugal"
+      "role": "signatory",
+      "note": "negotiated and signed for Portugal"
     },
     {
       "actor": "estado-novo",
-      "role": "the regime whose foreign policy it set"
+      "role": "government",
+      "note": "the regime whose foreign policy it set"
     }
   ]
 }

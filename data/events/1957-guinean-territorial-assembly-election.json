@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": "2026-09-04",
+  "revised": "2026-09-06",
   "origin": {
     "tool": "wikidata"
   },
@@ -64,7 +64,8 @@
   "actors": [
     {
       "actor": "sekou-toure",
-      "role": "won the territorial government"
+      "role": "party",
+      "note": "won the territorial government"
     }
   ]
 }

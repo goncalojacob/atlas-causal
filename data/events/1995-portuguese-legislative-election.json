@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": "2026-09-04",
+  "revised": "2026-09-06",
   "origin": {
     "tool": "wikidata"
   },
@@ -71,11 +71,13 @@
   "actors": [
     {
       "actor": "partido-socialista",
-      "role": "won and formed a minority government"
+      "role": "head-of-government",
+      "note": "won and formed a minority government"
     },
     {
       "actor": "psd",
-      "role": "lost office after ten years"
+      "role": "opposition",
+      "note": "lost office after ten years"
     }
   ]
 }

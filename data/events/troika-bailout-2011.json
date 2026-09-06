@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-02",
-  "revised": null,
+  "revised": "2026-09-06",
   "origin": {
     "tool": "assistant"
   },
@@ -43,15 +43,16 @@
   "actors": [
     {
       "actor": "imf",
-      "role": "lender"
+      "role": "creditor"
     },
     {
       "actor": "third-portuguese-republic",
-      "role": "borrower"
+      "role": "debtor"
     },
     {
       "actor": "cavaco-silva",
-      "role": "president"
+      "role": "head-of-state",
+      "note": "president"
     }
   ]
 }

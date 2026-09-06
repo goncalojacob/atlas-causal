@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": "2026-09-04",
+  "revised": "2026-09-06",
   "origin": {
     "tool": "wikidata"
   },
@@ -71,15 +71,18 @@
   "actors": [
     {
       "actor": "partido-socialista",
-      "role": "came first and led the government"
+      "role": "head-of-government",
+      "note": "came first and led the government"
     },
     {
       "actor": "psd",
-      "role": "junior partner in the Bloco Central"
+      "role": "party",
+      "note": "junior partner in the Bloco Central"
     },
     {
       "actor": "mario-soares",
-      "role": "prime minister from June 1983"
+      "role": "head-of-government",
+      "note": "prime minister from June 1983"
     }
   ]
 }

@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-03",
-  "revised": null,
+  "revised": "2026-09-06",
   "origin": {
     "tool": "assistant"
   },
@@ -47,23 +47,23 @@
   "actors": [
     {
       "actor": "pedro-passos-coelho",
-      "role": "prime minister"
+      "role": "head-of-government"
     },
     {
       "actor": "european-commission",
-      "role": "lender"
+      "role": "creditor"
     },
     {
       "actor": "european-central-bank",
-      "role": "lender"
+      "role": "creditor"
     },
     {
       "actor": "imf",
-      "role": "lender"
+      "role": "creditor"
     },
     {
       "actor": "third-portuguese-republic",
-      "role": "borrower"
+      "role": "debtor"
     }
   ]
 }

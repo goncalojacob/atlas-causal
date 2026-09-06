@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-03",
-  "revised": null,
+  "revised": "2026-09-06",
   "origin": {
     "tool": "assistant"
   },
@@ -47,23 +47,26 @@
   "actors": [
     {
       "actor": "antonio-costa",
-      "role": "prime minister"
+      "role": "head-of-government"
     },
     {
       "actor": "partido-socialista",
-      "role": "governing party"
+      "role": "government"
     },
     {
       "actor": "bloco-de-esquerda",
-      "role": "supporting party"
+      "role": "party",
+      "note": "supporting party"
     },
     {
       "actor": "pcp",
-      "role": "supporting party"
+      "role": "party",
+      "note": "supporting party"
     },
     {
       "actor": "cavaco-silva",
-      "role": "president"
+      "role": "head-of-state",
+      "note": "president"
     }
   ]
 }

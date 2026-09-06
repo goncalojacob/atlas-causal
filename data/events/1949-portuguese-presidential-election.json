@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": "2026-09-04",
+  "revised": "2026-09-06",
   "origin": {
     "tool": "wikidata"
   },
@@ -72,15 +72,18 @@
   "actors": [
     {
       "actor": "norton-de-matos",
-      "role": "opposition candidate, withdrew"
+      "role": "opposition",
+      "note": "opposition candidate, withdrew"
     },
     {
       "actor": "oscar-carmona",
-      "role": "re-elected unopposed for a fourth term"
+      "role": "head-of-state",
+      "note": "re-elected unopposed for a fourth term"
     },
     {
       "actor": "pvde-pide-dgs",
-      "role": "broke up the opposition campaign"
+      "role": "commander",
+      "note": "broke up the opposition campaign"
     }
   ]
 }

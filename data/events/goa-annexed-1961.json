@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-02",
-  "revised": null,
+  "revised": "2026-09-06",
   "origin": {
     "tool": "assistant"
   },
@@ -43,7 +43,8 @@
   "actors": [
     {
       "actor": "republic-of-india",
-      "role": "annexed it"
+      "role": "invader",
+      "note": "annexed it"
     },
     {
       "actor": "jawaharlal-nehru",
@@ -51,7 +52,8 @@
     },
     {
       "actor": "estado-novo",
-      "role": "dispossessed"
+      "role": "government",
+      "note": "dispossessed"
     }
   ]
 }

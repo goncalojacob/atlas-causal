@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": "2026-09-04",
+  "revised": "2026-09-06",
   "origin": {
     "tool": "wikidata"
   },
@@ -73,11 +73,13 @@
   "actors": [
     {
       "actor": "americo-tomas",
-      "role": "returned for a third term"
+      "role": "head-of-state",
+      "note": "returned for a third term"
     },
     {
       "actor": "estado-novo",
-      "role": "the regime filling its own presidency"
+      "role": "government",
+      "note": "the regime filling its own presidency"
     }
   ]
 }

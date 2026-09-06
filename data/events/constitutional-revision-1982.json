@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-02",
-  "revised": null,
+  "revised": "2026-09-06",
   "origin": {
     "tool": "assistant"
   },
@@ -47,15 +47,18 @@
   "actors": [
     {
       "actor": "council-of-the-revolution",
-      "role": "abolished"
+      "role": "government",
+      "note": "abolished"
     },
     {
       "actor": "third-portuguese-republic",
-      "role": "legislator"
+      "role": "author",
+      "note": "legislator"
     },
     {
       "actor": "ramalho-eanes",
-      "role": "president"
+      "role": "head-of-state",
+      "note": "president"
     }
   ]
 }

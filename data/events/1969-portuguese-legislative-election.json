@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": "2026-09-04",
+  "revised": "2026-09-06",
   "origin": {
     "tool": "wikidata"
   },
@@ -72,15 +72,18 @@
   "actors": [
     {
       "actor": "marcelo-caetano",
-      "role": "called the election as his opening"
+      "role": "leader",
+      "note": "called the election as his opening"
     },
     {
       "actor": "uniao-nacional",
-      "role": "took all 130 seats"
+      "role": "party",
+      "note": "took all 130 seats"
     },
     {
       "actor": "americo-tomas",
-      "role": "president under whom it was held"
+      "role": "head-of-state",
+      "note": "president under whom it was held"
     }
   ]
 }

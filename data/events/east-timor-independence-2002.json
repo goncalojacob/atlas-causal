@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-02",
-  "revised": null,
+  "revised": "2026-09-06",
   "origin": {
     "tool": "assistant"
   },
@@ -43,11 +43,13 @@
     },
     {
       "actor": "indonesia",
-      "role": "withdrew"
+      "role": "opposition",
+      "note": "withdrew"
     },
     {
       "actor": "united-nations",
-      "role": "administered"
+      "role": "government",
+      "note": "administered"
     }
   ]
 }

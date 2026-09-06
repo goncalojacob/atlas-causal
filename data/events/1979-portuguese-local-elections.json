@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": "2026-09-04",
+  "revised": "2026-09-06",
   "origin": {
     "tool": "wikidata"
   },
@@ -71,7 +71,8 @@
   "actors": [
     {
       "actor": "third-portuguese-republic",
-      "role": "the state holding the election"
+      "role": "government",
+      "note": "the state holding the election"
     }
   ]
 }

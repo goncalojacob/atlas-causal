@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": "2026-09-04",
+  "revised": "2026-09-06",
   "origin": {
     "tool": "wikidata"
   },
@@ -71,15 +71,17 @@
   "actors": [
     {
       "actor": "psd",
-      "role": "won a second absolute majority"
+      "role": "party",
+      "note": "won a second absolute majority"
     },
     {
       "actor": "cavaco-silva",
-      "role": "prime minister"
+      "role": "head-of-government"
     },
     {
       "actor": "partido-socialista",
-      "role": "in opposition"
+      "role": "opposition",
+      "note": "in opposition"
     }
   ]
 }

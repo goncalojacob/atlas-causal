@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": "2026-09-04",
+  "revised": "2026-09-06",
   "origin": {
     "tool": "wikidata"
   },
@@ -72,15 +72,18 @@
   "actors": [
     {
       "actor": "partido-democratico",
-      "role": "won 106 of 163 seats in the Chamber"
+      "role": "party",
+      "note": "won 106 of 163 seats in the Chamber"
     },
     {
       "actor": "afonso-costa",
-      "role": "leader of the winning party"
+      "role": "leader",
+      "note": "leader of the winning party"
     },
     {
       "actor": "first-portuguese-republic",
-      "role": "the regime restored by the May rising"
+      "role": "government",
+      "note": "the regime restored by the May rising"
     }
   ]
 }

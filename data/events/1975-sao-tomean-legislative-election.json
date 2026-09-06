@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": "2026-09-04",
+  "revised": "2026-09-06",
   "origin": {
     "tool": "wikidata"
   },
@@ -65,15 +65,18 @@
   "actors": [
     {
       "actor": "mlstp",
-      "role": "sole legal party and sole list"
+      "role": "party",
+      "note": "sole legal party and sole list"
     },
     {
       "actor": "sao-tome-and-principe",
-      "role": "the state being founded"
+      "role": "government",
+      "note": "the state being founded"
     },
     {
       "actor": "third-portuguese-republic",
-      "role": "departing colonial power"
+      "role": "government",
+      "note": "departing colonial power"
     }
   ]
 }

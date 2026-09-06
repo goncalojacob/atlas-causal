@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": "2026-09-04",
+  "revised": "2026-09-06",
   "origin": {
     "tool": "wikidata"
   },
@@ -73,11 +73,13 @@
   "actors": [
     {
       "actor": "first-portuguese-republic",
-      "role": "the regime holding the election"
+      "role": "government",
+      "note": "the regime holding the election"
     },
     {
       "actor": "partido-democratico",
-      "role": "won the largest share"
+      "role": "party",
+      "note": "won the largest share"
     }
   ]
 }

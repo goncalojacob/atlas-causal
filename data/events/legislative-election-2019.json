@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-03",
-  "revised": null,
+  "revised": "2026-09-06",
   "origin": {
     "tool": "assistant"
   },
@@ -47,27 +47,27 @@
   "actors": [
     {
       "actor": "antonio-costa",
-      "role": "prime minister"
+      "role": "head-of-government"
     },
     {
       "actor": "partido-socialista",
-      "role": "governing party"
+      "role": "government"
     },
     {
       "actor": "psd",
-      "role": "opposition party"
+      "role": "opposition"
     },
     {
       "actor": "bloco-de-esquerda",
-      "role": "opposition party"
+      "role": "opposition"
     },
     {
       "actor": "pcp",
-      "role": "opposition party"
+      "role": "opposition"
     },
     {
       "actor": "chega",
-      "role": "opposition party"
+      "role": "opposition"
     },
     {
       "actor": "andre-ventura",

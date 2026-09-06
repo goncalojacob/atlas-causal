@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-02",
-  "revised": null,
+  "revised": "2026-09-06",
   "origin": {
     "tool": "assistant"
   },
@@ -47,11 +47,12 @@
   "actors": [
     {
       "actor": "cavaco-silva",
-      "role": "winner"
+      "role": "elected"
     },
     {
       "actor": "mario-soares",
-      "role": "president"
+      "role": "head-of-state",
+      "note": "president"
     }
   ]
 }

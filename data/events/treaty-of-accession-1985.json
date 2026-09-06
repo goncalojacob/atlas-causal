@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": "2026-09-04",
+  "revised": "2026-09-06",
   "origin": {
     "tool": "wikidata"
   },
@@ -66,15 +66,18 @@
   "actors": [
     {
       "actor": "third-portuguese-republic",
-      "role": "acceding state"
+      "role": "member",
+      "note": "acceding state"
     },
     {
       "actor": "european-economic-community",
-      "role": "the Communities being joined"
+      "role": "government",
+      "note": "the Communities being joined"
     },
     {
       "actor": "mario-soares",
-      "role": "signed as prime minister"
+      "role": "head-of-government",
+      "note": "signed as prime minister"
     }
   ]
 }

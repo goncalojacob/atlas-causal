@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-02",
-  "revised": null,
+  "revised": "2026-09-06",
   "origin": {
     "tool": "assistant"
   },
@@ -43,11 +43,13 @@
   "actors": [
     {
       "actor": "marcelo-caetano",
-      "role": "successor"
+      "role": "government",
+      "note": "successor"
     },
     {
       "actor": "salazar",
-      "role": "replaced"
+      "role": "government",
+      "note": "replaced"
     },
     {
       "actor": "estado-novo",

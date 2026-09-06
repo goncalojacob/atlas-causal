@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": "2026-09-04",
+  "revised": "2026-09-06",
   "origin": {
     "tool": "wikidata"
   },
@@ -71,15 +71,18 @@
   "actors": [
     {
       "actor": "psd",
-      "role": "came first and led the government"
+      "role": "head-of-government",
+      "note": "came first and led the government"
     },
     {
       "actor": "cds-pp",
-      "role": "junior partner"
+      "role": "party",
+      "note": "junior partner"
     },
     {
       "actor": "partido-socialista",
-      "role": "lost office"
+      "role": "opposition",
+      "note": "lost office"
     }
   ]
 }

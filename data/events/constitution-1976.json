@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-02",
-  "revised": null,
+  "revised": "2026-09-06",
   "origin": {
     "tool": "assistant"
   },
@@ -43,15 +43,18 @@
   "actors": [
     {
       "actor": "third-portuguese-republic",
-      "role": "constituted"
+      "role": "government",
+      "note": "constituted"
     },
     {
       "actor": "council-of-the-revolution",
-      "role": "created"
+      "role": "government",
+      "note": "created"
     },
     {
       "actor": "mario-soares",
-      "role": "legislator"
+      "role": "author",
+      "note": "legislator"
     }
   ]
 }

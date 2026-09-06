@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-03",
-  "revised": null,
+  "revised": "2026-09-06",
   "origin": {
     "tool": "assistant"
   },
@@ -44,11 +44,11 @@
   "actors": [
     {
       "actor": "antonio-costa",
-      "role": "prime minister"
+      "role": "head-of-government"
     },
     {
       "actor": "marcelo-rebelo-de-sousa",
-      "role": "head of state"
+      "role": "head-of-state"
     }
   ]
 }

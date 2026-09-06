@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-03",
-  "revised": null,
+  "revised": "2026-09-06",
   "origin": {
     "tool": "assistant"
   },
@@ -47,31 +47,35 @@
   "actors": [
     {
       "actor": "pedro-passos-coelho",
-      "role": "incumbent"
+      "role": "head-of-state",
+      "note": "incumbent"
     },
     {
       "actor": "antonio-costa",
-      "role": "opposition leader"
+      "role": "leader",
+      "note": "opposition leader"
     },
     {
       "actor": "psd",
-      "role": "coalition party"
+      "role": "party",
+      "note": "coalition party"
     },
     {
       "actor": "cds-pp",
-      "role": "coalition party"
+      "role": "party",
+      "note": "coalition party"
     },
     {
       "actor": "partido-socialista",
-      "role": "opposition party"
+      "role": "opposition"
     },
     {
       "actor": "bloco-de-esquerda",
-      "role": "opposition party"
+      "role": "opposition"
     },
     {
       "actor": "pcp",
-      "role": "opposition party"
+      "role": "opposition"
     }
   ]
 }

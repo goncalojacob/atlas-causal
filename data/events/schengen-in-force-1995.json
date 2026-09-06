@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": null,
+  "revised": "2026-09-06",
   "origin": {
     "tool": "assistant"
   },
@@ -48,11 +48,13 @@
   "actors": [
     {
       "actor": "portugal",
-      "role": "acceded"
+      "role": "elected",
+      "note": "acceded"
     },
     {
       "actor": "schengen-area",
-      "role": "admitting body"
+      "role": "member",
+      "note": "admitting body"
     },
     {
       "actor": "third-portuguese-republic",

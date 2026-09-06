@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": "2026-09-04",
+  "revised": "2026-09-06",
   "origin": {
     "tool": "wikidata"
   },
@@ -72,11 +72,13 @@
   "actors": [
     {
       "actor": "oscar-carmona",
-      "role": "sole candidate, elected president"
+      "role": "head-of-state",
+      "note": "sole candidate, elected president"
     },
     {
       "actor": "military-dictatorship",
-      "role": "the regime seeking a constitutional form"
+      "role": "government",
+      "note": "the regime seeking a constitutional form"
     }
   ]
 }

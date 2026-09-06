@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": "2026-09-04",
+  "revised": "2026-09-06",
   "origin": {
     "tool": "wikidata"
   },
@@ -67,7 +67,8 @@
   "actors": [
     {
       "actor": "psd",
-      "role": "returned to the regional government without a majority"
+      "role": "head-of-government",
+      "note": "returned to the regional government without a majority"
     }
   ]
 }

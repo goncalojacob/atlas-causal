@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-02",
-  "revised": null,
+  "revised": "2026-09-06",
   "origin": {
     "tool": "assistant"
   },
@@ -43,11 +43,12 @@
   "actors": [
     {
       "actor": "nato",
-      "role": "founded"
+      "role": "founder"
     },
     {
       "actor": "estado-novo",
-      "role": "founding member"
+      "role": "founder",
+      "note": "founding member"
     },
     {
       "actor": "salazar",

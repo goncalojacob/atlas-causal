@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-02",
-  "revised": null,
+  "revised": "2026-09-06",
   "origin": {
     "tool": "assistant"
   },
@@ -47,7 +47,8 @@
     },
     {
       "actor": "otelo-saraiva-de-carvalho",
-      "role": "planner"
+      "role": "leader",
+      "note": "planner"
     },
     {
       "actor": "marcelo-caetano",
@@ -59,11 +60,12 @@
     },
     {
       "actor": "antonio-de-spinola",
-      "role": "figurehead"
+      "role": "head-of-state",
+      "note": "figurehead"
     },
     {
       "actor": "third-portuguese-republic",
-      "role": "founded"
+      "role": "founder"
     }
   ]
 }

@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": "2026-09-04",
+  "revised": "2026-09-06",
   "origin": {
     "tool": "wikidata"
   },
@@ -72,19 +72,22 @@
   "actors": [
     {
       "actor": "uniao-nacional",
-      "role": "as ANP, took all 150 seats"
+      "role": "party",
+      "note": "as ANP, took all 150 seats"
     },
     {
       "actor": "marcelo-caetano",
-      "role": "head of government"
+      "role": "head-of-government"
     },
     {
       "actor": "americo-tomas",
-      "role": "president under whom it was held"
+      "role": "head-of-state",
+      "note": "president under whom it was held"
     },
     {
       "actor": "pcp",
-      "role": "stood clandestinely inside the CDE lists"
+      "role": "party",
+      "note": "stood clandestinely inside the CDE lists"
     }
   ]
 }

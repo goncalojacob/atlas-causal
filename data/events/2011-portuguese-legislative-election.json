@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": "2026-09-04",
+  "revised": "2026-09-06",
   "origin": {
     "tool": "wikidata"
   },
@@ -71,19 +71,22 @@
   "actors": [
     {
       "actor": "psd",
-      "role": "won and led the coalition government"
+      "role": "head-of-government",
+      "note": "won and led the coalition government"
     },
     {
       "actor": "cds-pp",
-      "role": "junior partner"
+      "role": "party",
+      "note": "junior partner"
     },
     {
       "actor": "pedro-passos-coelho",
-      "role": "prime minister"
+      "role": "head-of-government"
     },
     {
       "actor": "partido-socialista",
-      "role": "lost office"
+      "role": "opposition",
+      "note": "lost office"
     }
   ]
 }

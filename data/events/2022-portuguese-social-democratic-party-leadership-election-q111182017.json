@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": "2026-09-04",
+  "revised": "2026-09-06",
   "origin": {
     "tool": "wikidata"
   },
@@ -67,11 +67,13 @@
   "actors": [
     {
       "actor": "psd",
-      "role": "chose a new leader"
+      "role": "leader",
+      "note": "chose a new leader"
     },
     {
       "actor": "luis-montenegro",
-      "role": "won the leadership"
+      "role": "leader",
+      "note": "won the leadership"
     }
   ]
 }

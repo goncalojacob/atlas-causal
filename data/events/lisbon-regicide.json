@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": "2026-09-04",
+  "revised": "2026-09-06",
   "origin": {
     "tool": "wikidata"
   },
@@ -67,23 +67,28 @@
   "actors": [
     {
       "actor": "carlos-i",
-      "role": "king, killed in the attack"
+      "role": "head-of-state",
+      "note": "king, killed in the attack"
     },
     {
       "actor": "luis-filipe",
-      "role": "heir apparent, killed in the attack"
+      "role": "victim",
+      "note": "heir apparent, killed in the attack"
     },
     {
       "actor": "manuel-ii",
-      "role": "younger son, succeeded to the throne"
+      "role": "elected",
+      "note": "younger son, succeeded to the throne"
     },
     {
       "actor": "joao-franco",
-      "role": "head of the government the attack targeted"
+      "role": "head-of-government",
+      "note": "head of the government the attack targeted"
     },
     {
       "actor": "carbonaria",
-      "role": "sheltered and armed the gunmen"
+      "role": "perpetrator",
+      "note": "sheltered and armed the gunmen"
     }
   ]
 }

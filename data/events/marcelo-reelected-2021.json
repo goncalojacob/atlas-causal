@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-03",
-  "revised": null,
+  "revised": "2026-09-06",
   "origin": {
     "tool": "assistant"
   },
@@ -44,7 +44,8 @@
   "actors": [
     {
       "actor": "marcelo-rebelo-de-sousa",
-      "role": "re-elected"
+      "role": "head-of-state",
+      "note": "re-elected"
     },
     {
       "actor": "andre-ventura",

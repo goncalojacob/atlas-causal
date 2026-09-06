@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": "2026-09-04",
+  "revised": "2026-09-06",
   "origin": {
     "tool": "wikidata"
   },
@@ -71,11 +71,13 @@
   "actors": [
     {
       "actor": "psd",
-      "role": "won a majority of the new assembly"
+      "role": "party",
+      "note": "won a majority of the new assembly"
     },
     {
       "actor": "third-portuguese-republic",
-      "role": "the state creating the region"
+      "role": "government",
+      "note": "the state creating the region"
     }
   ]
 }

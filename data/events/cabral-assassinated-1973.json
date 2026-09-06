@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-02",
-  "revised": null,
+  "revised": "2026-09-06",
   "origin": {
     "tool": "assistant"
   },
@@ -51,7 +51,8 @@
     },
     {
       "actor": "pvde-pide-dgs",
-      "role": "alleged accomplice"
+      "role": "perpetrator",
+      "note": "alleged accomplice"
     }
   ]
 }

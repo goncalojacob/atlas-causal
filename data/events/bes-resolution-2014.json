@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-03",
-  "revised": null,
+  "revised": "2026-09-06",
   "origin": {
     "tool": "assistant"
   },
@@ -47,19 +47,23 @@
   "actors": [
     {
       "actor": "banco-de-portugal",
-      "role": "resolution authority"
+      "role": "leader",
+      "note": "resolution authority"
     },
     {
       "actor": "banco-espirito-santo",
-      "role": "resolved"
+      "role": "government",
+      "note": "resolved"
     },
     {
       "actor": "novo-banco",
-      "role": "created"
+      "role": "government",
+      "note": "created"
     },
     {
       "actor": "ricardo-salgado",
-      "role": "executive chairman"
+      "role": "leader",
+      "note": "executive chairman"
     }
   ]
 }

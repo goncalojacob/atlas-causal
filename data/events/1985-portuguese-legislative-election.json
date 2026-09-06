@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": "2026-09-04",
+  "revised": "2026-09-06",
   "origin": {
     "tool": "wikidata"
   },
@@ -71,15 +71,18 @@
   "actors": [
     {
       "actor": "psd",
-      "role": "came first and formed a minority government"
+      "role": "head-of-government",
+      "note": "came first and formed a minority government"
     },
     {
       "actor": "cavaco-silva",
-      "role": "prime minister from November 1985"
+      "role": "head-of-government",
+      "note": "prime minister from November 1985"
     },
     {
       "actor": "partido-socialista",
-      "role": "lost office"
+      "role": "opposition",
+      "note": "lost office"
     }
   ]
 }

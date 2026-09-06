@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": "2026-09-04",
+  "revised": "2026-09-06",
   "origin": {
     "tool": "wikidata"
   },
@@ -71,15 +71,18 @@
   "actors": [
     {
       "actor": "ramalho-eanes",
-      "role": "re-elected"
+      "role": "head-of-state",
+      "note": "re-elected"
     },
     {
       "actor": "psd",
-      "role": "backed the losing candidate"
+      "role": "opposition",
+      "note": "backed the losing candidate"
     },
     {
       "actor": "cds-pp",
-      "role": "backed the losing candidate"
+      "role": "opposition",
+      "note": "backed the losing candidate"
     }
   ]
 }
