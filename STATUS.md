@@ -6,6 +6,98 @@ session ends. `ARCHITECTURE.md` is the target; this file is the position.
 
 ## Last updated
 
+2026-09-06, after H7 (`docs/health/h7-brief.md`), the health cycle's
+fifteenth run, on `m0`: **the reader.** An introduction on first contact, a
+lens that takes any number of foci of any kind, search that finds an event by
+what else it is called, answer lists ordered by what a path costs, an actor
+card that says where its events actually are, and `subgraph()` with the links'
+arguments fetched in bulk. Code only, except the introduction's text, which
+quotes records and asserts nothing historical of its own; nothing under
+`data/` changed, and `data/index/` was rebuilt because the index gained the
+explanations shard and the search shard gained the summaries' first sentences.
+905 tests.
+
+**First contact was a hundred and thirty-seven identical marks and "Pick an
+event".** Everything past the first click is well made — the consequences, the
+convergence, the horizon — and the first click was unguided: nothing said
+which events are the spine of this dataset, which walks somebody has already
+written, or what "follow the consequences" means here (health review A,
+finding 17). `src/intro.js` is a card over the view, because since H1c there
+is no panel when nothing is open and nothing is open on a first visit. It
+carries the narratives with a "Start here" that opens the first one at its
+first step, the six events the most of the atlas hangs on by `weight`, and a
+five-step walkthrough of the interface. **It quotes and does not claim**:
+every title, author and count in it is read off records that are already here,
+the only prose is about the interface, and a test asserts both. Shown on a
+first visit and only when nothing is open — a link somebody was sent opens on
+the record it names — and the "?" in the masthead brings it back, so
+dismissing it is never a door closing.
+
+**The lens takes any number of foci, of any of six kinds** (the owner, 5
+September: "we should be able to choose parent events, actors, timelines or
+others, or any number of these together… hiding what is in no way associated
+and showing direct connections dimmed"). `?focus=` is a comma-separated list
+of `kind:id` over `actor`, `place`, `source`, `event`, `region` and
+`narrative`; the focus set is the union of what each keeps and `&focusAll=1`
+makes it the intersection. Around it is the ring — one hop out in either
+direction, from one depth of `subgraph()` — drawn dimmed on all three views,
+because a neighbourhood with no edges leaving it looks like an atlas in which
+nothing else happened. Each focus is a chip in the header with its own ×;
+every card offers "Focus on this" and "Focus only on this". **Opening an actor
+or a place is now opening its neighbourhood**: `?actor=angola` drew the whole
+atlas with nine marks emphasised in it, which answers a question nobody asked,
+so the absence of `?focus=` means the card's own lens and `?focus=none` is how
+a reader says no to it. `lens.js` stays pure and is tested for each kind, for
+the union, for the intersection and for the ring; a browser test holds the
+three views to the same sets.
+
+**Search finds an event by what else it is called, and by how its summary
+opens.** The atlas's most famous event is filed under "25 April" and nobody
+outside Portugal calls it that (health review B, finding 17). `names` arrived
+with H5b and nothing folded it; the search shard folds it now, and the first
+sentence of the summary with it at `LEAD_RANK` — below every name, so a record
+*called* a thing always comes before a record that merely mentions it.
+"otelo" now finds the actor first and the revolution under it. The shard grew
+223 KB to 252 KB; the whole summary rather than its first sentence would have
+been 145 KB more, which is the trade plan decision 5 took.
+
+**Ranking is an ordering of the answer lists and never a different walk.**
+`shortestPaths` is untouched and stays by hops: the chain the atlas hands a
+reader for a click must not change under them (plan decision 6, review finding
+21). `stepCost` makes confidence dominate type by construction, so a probable
+`caused` is dearer than a consensus `inspired` and every disputed step is
+dearer than every probable one; `rankByCost` re-orders the head of the
+horizon's answer by what each path cost, and `convergenceByDepth` puts the
+other branches in tiers with a count each, the first open and the rest folded.
+
+**An actor with no events of its own now says where they are.** The M27 splits
+made seventy-seven pairs like Angola — a state from 1975 and the colony before
+it, with the same name in the search box and every event filed under the
+colony — so the state's card opened with no appearances at all, which reads as
+"nothing happened here" (health review B, finding 28). A "Before and after"
+section along `succeeded`, both ways round, with the neighbour's own events;
+when the actor has none, that section comes first and the card opens on it.
+
+**And the ground the Why mode stands on.** `subgraph(atlas, ids, depth)`
+returns the events within `depth` hops in *both* directions, the edges with
+both ends inside, the actors those events name and the relations between those
+actors — one answer rather than four walks. The index emits
+`explanations-<from>-<to>-<hash>.json`, a century a file, and
+`atlas.loadExplanations(ids)` reads a six-step walk in one or two requests
+where it was six record fetches (health review B, finding 18). A narrative
+step may now name an actor, a relation or a presence as well as an event or a
+link, so a walk can say "and this is the body that did it" without inventing
+an event for it. `?walk=` is parsed and carried and is deliberately not a
+directory under `data/`.
+
+**What was not done.** Nothing under `data/` was written and the `world`
+branch was not looked at. Two of the brief's "done when" clauses rest on data
+that does not exist yet and that this run was not allowed to write: no event
+carries `names`, so **"carnation" still finds nothing** (deviation 294), and
+there is no `succeeded` relation touching Angola, so the case the finding
+names is shown on `european-union` instead (deviation 295). Ten deviations,
+288 to 297.
+
 2026-09-05, after H6b (`docs/health/h6b-brief.md`), the health cycle's
 fourteenth run, on `m0`: **the review queue is a list of any length, and a
 record comes with its history.** Code only; nothing under `data/` changed, and
@@ -4641,6 +4733,79 @@ gave that to the map and the timeline, and M25 did not widen it.
      thousand rows the first test measures are made in the page, as the
      picker's are.
 
+### H7 — the reader
+
+288. **An `event:` focus is that event alone.** The brief calls it "a parent,
+     its subtree; or any event, its neighbourhood". The neighbourhood is the
+     ring every focus already gets; the subtree waits for parent events (M30),
+     because there is no parent field to read and a lens that guessed at one
+     would be inventing a hierarchy the data does not have.
+
+289. **`?focus=none` is a value.** The absence of the parameter now *means*
+     something — an open actor or place is a lens on itself — so there had to
+     be a way for a reader to say no to that lens while keeping the card open.
+     `none` has no colon and cannot collide with a `kind:id`, and the whole
+     parameter is checked against one pattern built from `FOCUS_KINDS`.
+
+290. **The card's own lens survives a selection.** A place before an actor,
+     which is the precedence the panel already shows cards in; and a selected
+     event does not clear it. The alternative — the lens disappearing on the
+     first click out of a place's list — is the picture flipping under the
+     reader, which is worse than a lens that persists and can be seen in the
+     header and dropped with one ×.
+
+291. **`lensSet` returns the focus set *and* its ring.** The three views
+     filter their event list by it exactly as they did when a lens was one
+     record's events, so what they hide is what is in neither; `working.lensNear`
+     is the half they dim. Two sets rather than one filter in each view, so
+     that "hidden" and "dimmed" cannot come to mean different things in the
+     map and in the graph.
+
+292. **The horizon's ranking is bounded to five times what the panel lists.**
+     A row's cost is the cost of reconstructing its path, and the path is
+     deliberately built only when it is read (graph.js): at twenty thousand
+     events the answer is four thousand rows, and ranking all of them would
+     walk four thousand trees to re-order forty. Past the window the answer
+     stays in the order `reachableBy` found it, which is the order it was in
+     before ranking existed.
+
+293. **"Start here" opens the narrative at step 0.** The brief says "at step
+     1" and means the first step of the walk; the URL numbers from zero and
+     always has, and health review A's own recommendation said step 0.
+
+294. **"carnation" does not find the revolution.** The brief's "done when"
+     asks for it and it cannot hold on today's data: **no event in `data/`
+     carries `names`** (the import that fills them from Wikidata labels has
+     not run), `carnation-revolution-1974` has no `wikidata` and so no article
+     title, and the word is in the *third* sentence of its summary. Folding
+     the whole summary instead of its first sentence would find it and would
+     also undo plan decision 5's scale trade — 145 KB more on this dataset and
+     8.8 MB at twenty thousand events — so the code was built as the plan
+     decided and the gap is a data gap. One line closes it:
+     `"names": ["Carnation Revolution", "Revolução dos Cravos"]` on that
+     record. **For the owner.**
+
+295. **`?actor=angola` lists nothing along `succeeded`, because there is no
+     such relation.** `angola` and `angola-under-portugal` are both in the
+     atlas and neither holds a single event, and no relation joins them; the
+     four `succeeded` relations that exist are elsewhere. The section is built
+     and is shown on the case this dataset does have — `european-union`, with
+     no events of its own and four under the EEC it succeeded — and the
+     browser test opens that one. Writing the Angola relation is a `data/`
+     change this run was not allowed to make. **For the owner.**
+
+296. **`refKind` became `refKinds`.** A narrative step's bare slug is now an
+     event, an actor or a presence, and the shape cannot say which — only the
+     atlas can. It returns all three in the order they are tried in, and
+     `walkedRef` is the one place a rule turns a ref into a record.
+
+297. **The search shard is a superset of what the spine could build.** It
+     carries `names` and the summaries' first sentences, which are not in the
+     topology and should not be — nothing draws them, and the spine is loaded
+     whole by every page. So `tests/search-shard.test.mjs` no longer holds the
+     two to the same answer; it holds the shard to answering with **no less**
+     than a spine-built index, which is what the fallback promise actually is.
+
 ## Dates to verify
 
 Everything below was written from memory and is where the owner's review
@@ -5177,3 +5342,4 @@ H6b started 2026-09-05T23:14:21Z by scheduled
 H6b done
 
 H7 started 2026-09-05T23:50:28Z by scheduled
+H7 done
