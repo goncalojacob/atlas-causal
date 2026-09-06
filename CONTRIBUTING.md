@@ -187,15 +187,30 @@ Notes that catch people out:
 - **`category` says what kind of thing the event was**, from
   `data/categories.json`: `war`, `treaty`, `election`, `revolution`, `law`,
   `founding`, `disaster`, `economy`, `culture`, `science`, `death`, `other`.
-  Optional, and one glyph on the map. Adding a category is an edit to that
-  file, like adding a role.
+  Optional; the form offers the list as a select, and the map will draw one
+  glyph per category once enough records carry one. Adding a category is an
+  edit to that file, like adding a role.
 - **`parent` is the larger event this one is part of** — a battle inside a
   war, a decree inside a revolution — and it is *not* a causal claim: an
   argument that one thing brought about another is an edge, always. One
   parent, no cycles, and a child ought to be dated inside its parent (the
-  validator warns when it is not). Use `scope: "regional"` or
-  `"worldwide"` on the big containing event so that it is drawn as a band
-  across the timeline rather than as a mark on it.
+  validator warns when it is not). Write it when the smaller event is one of
+  the things the larger event *consists of*, so that a reader who opens either
+  finds the other: the card of the part says what it is part of, the card of
+  the whole lists its parts, the timeline draws a rule over them and the graph
+  folds them into the parent when it is zoomed out. Leave it out when the
+  relation is "around the same time as" or "led to" — the first is not a
+  relation at all and the second is an edge.
+- **`scope` says how far an event reached**, `"regional"` or `"worldwide"`,
+  and is absent on an ordinary event. Write it where a single mark on a map
+  would be a lie about the thing: a world war, a pandemic, a continental
+  crisis. It buys nothing else. **It is not a way to make an event look
+  important** — a mark's size is the number of links and actors the record
+  actually holds, and `scope` does not touch it; what it changes is the
+  shape the event is drawn in, a pale band under the timeline's bars and a
+  wash over its lane, so that the smaller events read as standing on it.
+  Written on something ordinary it does not promote the record, it just
+  smears a wash across a continent that nothing happened across.
 - **An actor has no lane.** It is never put on the timeline on its own, so
   unlike an event it needs no `region` when it has no `where`. Its `names`
   list must not be empty; `names[0]` is the display name and the rest are

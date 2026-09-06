@@ -859,7 +859,7 @@ atlas-causal/
 │
 ├── src/
 │   ├── main.js                   ● bootstrap only: load, wire views
-│   ├── state.js                  ● { from, to, view, focus, group, lanes, selected, source, place, actor, chain, horizon, layers, narrative, step } ⇄ URL; data-free
+│   ├── state.js                  ● { from, to, view, focus, group, lanes, selected, source, place, actor, office, chain, horizon, layers, narrative, step, bbox } ⇄ URL; data-free
 │   ├── lanes.js                  ● pure: what the lanes are in each of the four groupings, which one an event is in, and the packing for `none`
 │   ├── lens.js                   ● pure: the events a focus keeps; removed from every view, not dimmed
 │   ├── grouping.js               ● the picker in the header, and the badge that says which lens is on
@@ -879,16 +879,18 @@ atlas-causal/
 │   ├── map/
 │   │   ├── projection.js         ● lon/lat → SVG and back; the only file a projection change touches
 │   │   ├── map.js                ● SVG scaffold, pan/zoom, click into a cluster
-│   │   └── layers/land.js  presences.js  events.js   ●
+│   │   └── layers/land.js  presences.js  events.js  regions.js   ●
 │   ├── graph-view/
 │   │   ├── layout.js             ● pure: events + edges + lanes → coordinates; x is the year, y is bands and a barycentre pass
 │   │   ├── arrangement.js        ● pure: what is laid out — the band, the margin, what is held — and the key that says when again
+│   │   ├── collapse.js           ● pure: an event's parts drawn inside it below a zoom; after the layout, before the stacking, so no node moves for it
 │   │   ├── layout-message.js  layout-worker.js  layout-runner.js   ● what crosses to a thread, the thread, and when one is worth it
 │   │   └── graph-view.js         ● the SVG: nodes, the five edge types, the window as a shade, pan/zoom, nearest-centre clicks
 │   ├── timeline.js               ● the lanes lanes.js gives, or packed unlabelled rows; the window as a band with two handles; bars stack; one layer per kind of element, kept from render to render
 │   ├── timeline-scale.js         ● linear now; the scale is injected
 │   ├── panel/panel.js            ● the shell: the container, the clicks, the load token, what every card shares
-│   ├── panel/event.js  source.js  place.js  actor.js  cluster.js   ● one card each
+│   ├── panel/event.js  source.js  place.js  actor.js  office.js  cluster.js   ● one card each
+│   ├── large.js                  ● pure: which events are large, and which parents get a bracket rather than a band
 │   ├── panel/horizon.js          ● the "what did this lead to by year X?" section of the event card
 │   ├── sources/main.js  bibliography.js   ● the bibliography page: bootstrap, and the list as markup
 │   ├── narratives/main.js  list.js   ● narratives.html: bootstrap, and the cards grouped by century as markup
@@ -1709,6 +1711,14 @@ earn a label at high zoom. An editorial override is reserved as
 `prominence` in the extension-points table; until that exists, nobody can
 make a mark bigger except by giving it more edges and more actors.
 
+**`scope` is not that override.** It is a written field, decided by the owner
+on 5 September (plan decision 4), and it says how wide an event's reach was —
+a world war, a pandemic — rather than how much it matters. It buys no size:
+a `regional` or `worldwide` event is drawn as a band under the timeline's
+bars and a wash over the polygons of its lane, the ground the smaller events
+stand on, and its mark stays the mark its `weight` earned. The form says as
+much where it asks for it, and `prominence` stays reserved and unbuilt.
+
 **`subtreeWeight`** is the same number for the whole of an event: its own
 `weight` plus every descendant's through `parent`, transitively. It is what
 the graph draws a collapsed parent at when the children are folded into it
@@ -1934,8 +1944,16 @@ the lanes are: how the atlas is drawn rather than what is selected in it, and
 in the link for the reason `view` is. `horizon` is the exception that proves the rule: it
 is written only when a reader chose a year, because its default — the
 window's far end — would lengthen every shared link and answer a question
-nobody asked. `layers` is `land`, `territories`, `events`; a layer switched off costs
-no fetch. `view` is `map` or `graph`: the two share the same slot in the
+nobody asked. `layers` is `land`, `territories`, `events`, and a category of
+events as `events:<id>` beside them; a layer switched off costs no fetch.
+`land` is the one that is no longer a switch: the coastlines are the ground
+everything else is read against and are always drawn (plan decision 14), and
+the name is kept in the list only so that a link somebody shared before the
+checkbox went still parses into the same three. The token `events` means every
+category, so turning one off writes one `events:<id>` per category still on,
+and what the reader did is in the link either way. The state file
+deliberately knows none of the categories: a token is checked for shape, and
+which ids exist is `data/categories.json`'s business. `view` is `map` or `graph`: the two share the same slot in the
 layout, and the graph view is built the first time it is asked for.
 
 The state divides once more, for the browser's Back: a change of **what is
@@ -1986,7 +2004,9 @@ least 40 pixels; a link inside a sentence keeps the line it is set in.
 | `graph-view/layout.js` | Events, edges, the lanes and the data's extent → the coordinates of every node and every edge, plus the bands. x is the year on the whole extent; y is a barycentre pass inside the band of the lane, or over the whole field when there are no lanes. Deterministic — ties by id then weight, neighbour lists sorted — and self-checking: it counts crossings and keeps the best arrangement it saw, the plain order included. `stackLayout` is the second half: those coordinates and a zoom in, the marks and lines actually drawn out, merged within a band and never across one. | The DOM, the state, what is selected, what is in the window, why an id may not be stacked. |
 | `graph-view/graph-view.js` | Draws what the layout gives it: the bands and the year axis once, then the marks, the five edge types by pattern and weight, the window as a shade, the walked chain in madder and the convergence branches filled in. Decides the one thing the layout cannot — which events the reader is working with, and so may never be stacked. Pan and zoom; a click is resolved to the nearest mark centre within reach; clicking a consequence of the open event walks the chain, clicking a stack opens it. | Where a node goes, what merges with what, and how the panel renders anything. |
 | `timeline.js` + `timeline-scale.js` | Lanes from `lanes.js`, or its packed rows when there is no grouping; the scale is injected; the window drawn over them as a band with two handles, which is the atlas's only time control. Bars that would overlap stack, and only within the window, so narrowing the band splits them without moving the scale. | Which regions exist. |
-| `panel/` | The shell plus one file per card. Every card is a head, a summary and collapsible sections with counts: consequences, causes, the other branches, the horizon inside the consequences, supporting and dissenting citations shown apart with their verification marks, confidence and status shown as such; an event's actors as chips in the head, the walked path as a breadcrumb above it, a source's card with everything that cites it, an actor's card with its relations grouped by type and direction, a place's card, and the members of a cluster. | Traversal logic. |
+| `graph-view/collapse.js` | The graph's second level of detail, and pure: below one zoom an event's parts are drawn inside it, the ends of their links moved onto the parent and a link between two parts dropped. It runs on the laid-out layout, after `layoutGraph` and before the geometric stacking, so a collapsed parent is drawn exactly where the parent already was and a wheel notch still lays nothing out again. Nothing the reader is holding is ever folded. | Where a node goes, and what the panel does with a click. |
+| `panel/office.js` | The office card — the actor the post belongs to, its category, and every turn at it in start order, each row opening the person who held it — and the tenure strip the actor card draws from the same list: holders as bars over the actor's own years, merged where they would overlap, a bar opening the holder. An office cites nothing, and the card says why. | Who held what: it is given the tenures. |
+| `panel/` | The shell plus one file per card. Every card is a head, a summary and collapsible sections with counts: consequences, causes, the other branches, the horizon inside the consequences, supporting and dissenting citations shown apart with their verification marks, confidence and status shown as such; an event's actors as chips in the head, the walked path as a breadcrumb above it, a source's card with everything that cites it, an actor's card with its relations grouped by type and direction and one tenure strip per office it owns, an office's card with every turn at it in order, a place's card, and the members of a cluster. | Traversal logic. |
 | `panel/sections.js` | What a collapsible section is, for every card: the header with its count and its dispute mark, which one a card opens on given the arrival and the reader's remembered choice, and the toggle that closes the others. The choice is `localStorage`, never the URL. Pure but for the toggle. | What is inside a section, and which card is asking. |
 | `sources/` | `sources.html`: the manifest and the sources index, and the bibliography as markup. Nothing else — the spine is twenty-eight times the size and lists no books. | The spine, the map, the panel. |
 | `narratives/` | `narratives.html`: a card per account — title, narrator, the years it is about, how many steps, its own summary — grouped by the centuries it crosses, so two accounts of the same years sit side by side. A period is the years of the records walked and not the `window` beside them; a title opens the account at its first step. It needs the spine, because those years live there. | The map, the panel, and how a narrative is read once it is opened. |
