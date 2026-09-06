@@ -6,9 +6,13 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import path from 'node:path';
 import { defaultState } from '../src/state.js';
-import { horizonSet, horizonResults, horizonYear, horizonBand } from '../src/horizon.js';
+import {
+  horizonSet, horizonResults, horizonYear, horizonBand, rankByCost, RANKED,
+} from '../src/horizon.js';
 import { resolveHorizon, horizonIsOpen } from '../src/util/window.js';
-import { shortestPaths, pathTo } from '../src/graph.js';
+import {
+  shortestPaths, pathTo, stepCost, pathCost, convergence, convergenceByDepth, reachableBy,
+} from '../src/graph.js';
 import { horizonHtml } from '../src/panel/horizon.js';
 import { esc } from '../src/util/esc.js';
 import { bounds } from '../src/util/dates.js';
@@ -132,4 +136,78 @@ test('the path of a row is built when it is read and not before', async () => {
     assert.equal(found.disputed, edges.some((e) => e.confidence === 'disputed'));
     assert.equal(found.edges.length, found.depth, 'the path is as long as the depth');
   }
+});
+
+// --- what H7 changed: ranking as an ordering, never as a different walk ----
+
+test('a step costs its confidence first and its type second', () => {
+  const step = (type, confidence) => stepCost({ type, confidence });
+  // Confidence dominates by construction: every disputed step is dearer than
+  // every probable one, whatever the two types are.
+  assert.ok(step('inspired', 'consensus') < step('caused', 'probable'));
+  assert.ok(step('inspired', 'probable') < step('caused', 'disputed'));
+  // And within one confidence the declared order of the types breaks it.
+  assert.ok(step('caused', 'consensus') < step('enabled', 'consensus'));
+  assert.ok(step('enabled', 'consensus') < step('inspired', 'consensus'));
+  assert.equal(step('caused', 'consensus'), 0);
+  // The review's own case: a consensus `caused` path beats a disputed
+  // `inspired` one of the same length.
+  const good = pathCost([{ type: 'caused', confidence: 'consensus' }, { type: 'caused', confidence: 'consensus' }]);
+  const bad = pathCost([{ type: 'inspired', confidence: 'disputed' }, { type: 'inspired', confidence: 'disputed' }]);
+  assert.ok(good < bad);
+  // A type or a confidence this file has never heard of is not free.
+  assert.ok(stepCost({ type: 'invented', confidence: 'certain' }) > step('inspired', 'probable'));
+});
+
+test('the horizon list is ordered by what the path cost, and the chain is not', async () => {
+  const state = { ...defaultState(), selected: REVOLUTION, horizon: 2011 };
+  const results = horizonResults(atlas, state);
+  // Ordered by cost, and never decreasing down the list.
+  const costs = results.map((r) => pathCost(r.edges));
+  for (let i = 1; i < Math.min(costs.length, RANKED); i += 1) {
+    assert.ok(costs[i - 1] <= costs[i], `row ${i} costs no less than the one above it`);
+  }
+  // It is the *same answer*, re-ordered: the same events, no more and no fewer.
+  const raw = reachableBy(atlas.adjacency, REVOLUTION, 2011);
+  assert.deepEqual(results.map((r) => r.event.id).sort(), raw.map((r) => r.event.id).sort());
+  // And the chain each row hands the reader is untouched: `shortestPaths` is
+  // by hops and stays by hops (plan decision 6, review finding 21).
+  const best = shortestPaths(atlas.adjacency, REVOLUTION);
+  for (const row of results) {
+    assert.deepEqual(row.edges.map((e) => e.id), pathTo(best, row.event.id).map((e) => e.id));
+  }
+});
+
+test('ranking re-orders the head of the answer and leaves the tail as it found it', () => {
+  const row = (id, edges) => ({ event: { id }, depth: edges.length, edges });
+  const cheap = [{ type: 'caused', confidence: 'consensus' }];
+  const dear = [{ type: 'inspired', confidence: 'disputed' }];
+  const list = [row('a', dear), row('b', cheap), row('c', dear), row('d', cheap)];
+  assert.deepEqual(rankByCost(list).map((r) => r.event.id), ['b', 'd', 'a', 'c']);
+  // Equal cost keeps the order the answer was found in.
+  assert.deepEqual(rankByCost([row('x', cheap), row('y', cheap)]).map((r) => r.event.id), ['x', 'y']);
+  // Past the window nothing is re-ordered, and nothing is lost either.
+  const ranked = rankByCost(list, { window: 2 });
+  assert.deepEqual(ranked.map((r) => r.event.id), ['b', 'a', 'c', 'd']);
+  assert.equal(rankByCost([]).length, 0);
+});
+
+test('convergence in tiers is the same branches, grouped by how far up', async () => {
+  const walked = ['carnation-revolution-1974', 'constituent-assembly-election-1975'];
+  const rows = convergence(atlas.adjacency, 'constituent-assembly-election-1975', walked);
+  const tiers = convergenceByDepth(rows);
+  assert.ok(tiers.length >= 1);
+  assert.deepEqual(tiers.map((t) => t.depth), [...tiers.map((t) => t.depth)].sort((a, b) => a - b));
+  assert.equal(tiers.reduce((n, t) => n + t.count, 0), rows.length, 'every branch is in exactly one tier');
+  assert.deepEqual(
+    tiers.flatMap((t) => t.rows).map((r) => r.event.id).sort(),
+    rows.map((r) => r.event.id).sort(),
+  );
+  for (const tier of tiers) {
+    assert.equal(tier.rows.length, tier.count);
+    for (const r of tier.rows) assert.equal(r.depth, tier.depth);
+    const costs = tier.rows.map((r) => stepCost(r.edge));
+    for (let i = 1; i < costs.length; i += 1) assert.ok(costs[i - 1] <= costs[i]);
+  }
+  assert.deepEqual(convergenceByDepth([]), []);
 });

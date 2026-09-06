@@ -10,7 +10,7 @@
 // away, and the counts say what is behind each header before it is opened.
 
 import { esc } from '../util/esc.js';
-import { consequences, antecedents, convergence } from '../graph.js';
+import { consequences, antecedents, convergence, convergenceByDepth } from '../graph.js';
 import { chainEdges as walkedEdges } from '../chain.js';
 import { formatInterval, formatYear, defaultCalendar } from '../util/dates.js';
 import { laneExplain } from '../lanes.js';
@@ -117,8 +117,19 @@ function edgeRowsHtml(list, { follow }) {
 // without one there is nothing to be "other" than — what fed the event
 // directly is the Causes section, and everything further up is reached by
 // walking.
+//
+// In tiers by how far up each was met, with a count on
+// each tier. One flat list was forty-four rows for a three-step walk here and
+// thousands at twenty thousand events, in which the branch that fed this event
+// directly and one met eight steps up read alike (health review B, finding
+// 30). "What fed this" and "what fed the thing that fed it" are different
+// questions, so the list divides where they divide; the first tier is open and
+// the rest are folded, because the first is the one a reader can act on.
+//
+// Inside a tier the branches are ordered by what the edge costs — confidence
+// before type (graph.js) — which is the same ordering the horizon's list uses.
 function branchesHtml(ctx, list, selectedId) {
-  const items = list.map(({ event, edge, to, depth }) => `<li class="edge-row ${esc(edge.confidence)}">
+  const row = ({ event, edge, to, depth }) => `<li class="edge-row ${esc(edge.confidence)}">
     <div class="edge-head">
       ${ctx.eventLink(event)}
       <span class="arrow">${esc(TYPE_LABEL[edge.type] ?? edge.type)}</span> ${badge(edge.confidence)}
@@ -126,8 +137,15 @@ function branchesHtml(ctx, list, selectedId) {
       ${depth > 1 ? `<span class="depth">${depth} steps up</span>` : ''}
     </div>
     <details data-edge="${esc(edge.id)}"><summary>Why</summary><div data-slot="explanation"><p class="muted">Loading…</p></div></details>
-  </li>`);
-  return `<ul class="edges">${items.join('')}</ul>`;
+  </li>`;
+  const tiers = convergenceByDepth(list);
+  // One tier is not a grouping: it is the same list with a header nobody needs.
+  if (tiers.length <= 1) return `<ul class="edges">${list.map(row).join('')}</ul>`;
+  return tiers.map((tier, i) => `<details class="branch-tier" data-depth="${tier.depth}"${i === 0 ? ' open' : ''}>
+    <summary>${tier.depth === 1 ? 'Fed this event directly' : `${tier.depth} steps up`}
+      <span class="count">${tier.count}</span></summary>
+    <ul class="edges">${tier.rows.map(row).join('')}</ul>
+  </details>`).join('');
 }
 
 // Where it happened: the place record, by name, and a way into its card. An

@@ -55,8 +55,10 @@ export function horizonHtml(ctx, { event, state }) {
         ${chosen ? '<button type="button" class="link small" data-action="clear-horizon">back to the window’s end</button>' : ''}
       </p>
       <p class="hint">Everything this event leads to, however far away, that had begun by then —
-        ordered by how many steps away it is, then by when. Choosing one walks the shortest path
-        to it${chosen ? ', and the whole set is lit on the map, the graph and the timeline' : ''}.</p>
+        the best-supported first: a path of consensus links before a path of the same length
+        through a dispute, and a chain of causes before a chain of inspirations. Choosing one
+        walks the shortest path to it, which is the same path this list was ranked
+        by${chosen ? ', and the whole set is lit on the map, the graph and the timeline' : ''}.</p>
       ${results.length
     ? `<ul class="actor-rows">${shown.map((r) => rowHtml(ctx, r)).join('')}</ul>
         ${hidden > 0 ? `<p class="muted">and ${hidden} more, further out.</p>` : ''}`

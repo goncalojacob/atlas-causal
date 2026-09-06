@@ -1061,6 +1061,18 @@ svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align:
 .panel details { margin-top: var(--space-1); }
 .panel summary { cursor: pointer; color: var(--ink-soft); font-size: var(--text-sm); }
 .panel summary:hover { color: var(--cobalt); }
+/* The other branches, in tiers by how far up each was met. The tier that fed
+   the event directly is open; the rest are a line each until they are asked
+   for, so a walk with a thousand ancestors is still a list a reader can see
+   the shape of (health review B, finding 30). */
+.panel .branch-tier { margin-top: var(--space-2); border-top: 1px solid var(--line); }
+.panel .branch-tier > summary {
+  padding: var(--space-2) 0; font-family: var(--font-ui); font-size: var(--text-sm);
+  letter-spacing: var(--tracking-label); text-transform: uppercase; color: var(--ink-soft);
+}
+.panel .branch-tier[open] > summary { color: var(--cobalt); }
+.panel .branch-tier > summary .count { margin-left: var(--space-2); }
+
 .panel .dispute { border-left: 3px dashed var(--madder); padding-left: var(--space-3); margin-top: var(--space-2); }
 .panel .last-step.disputed { border-left: 3px solid var(--madder); padding-left: var(--space-3); }
 

@@ -18,6 +18,41 @@ function rank(list, value) {
   return i < 0 ? list.length : i;
 }
 
+// ─── what a step costs ─────────────────────────────────────────────────────
+//
+// `shortestPaths` is by hops and stays by hops (plan decision 6, review
+// finding 21): the chain the atlas hands a reader must not change silently
+// under them, and a weighted shortest path would hand them a different
+// argument for the same click. Ranking is a *separate ordering of the answer
+// lists* — the horizon's list and the convergence branches — and never a
+// different walk.
+//
+// Confidence dominates type, and by construction rather than by tuning: a
+// step's confidence cost is multiplied past the whole type scale, so a
+// probable `caused` is dearer than a consensus `inspired` and a disputed
+// anything is dearer than every probable thing. That is this project's own
+// order of worries — presenting a disputed link as fact is the worst mistake
+// it can make (CLAUDE.md) — and it is what "a consensus caused path should
+// beat a disputed inspired one of the same length" asks for (health review B,
+// finding 30). Within one confidence the types break the tie in the order
+// they are declared in: the strongest claim first, the loosest last.
+export const CONFIDENCE_COST = Object.freeze({ consensus: 0, probable: 1, disputed: 3 });
+
+// A type this file has never heard of costs as much as the loosest one, and a
+// confidence it has never heard of as much as the least certain: an unknown
+// is not free, and the vocabularies are closed anyway (vocab.js).
+export function stepCost(edge) {
+  const type = rank(TYPE_ORDER, edge?.type);
+  const confidence = CONFIDENCE_COST[edge?.confidence] ?? CONFIDENCE_COST.disputed;
+  return confidence * (TYPE_ORDER.length + 1) + type;
+}
+
+export function pathCost(edges) {
+  let total = 0;
+  for (const edge of edges) total += stepCost(edge);
+  return total;
+}
+
 export function compareEdges(a, b) {
   return rank(TYPE_ORDER, a.type) - rank(TYPE_ORDER, b.type)
     || rank(CONFIDENCE_ORDER, a.confidence) - rank(CONFIDENCE_ORDER, b.confidence)
@@ -329,4 +364,30 @@ function converging(adj, target, path) {
   }
   results.sort((a, b) => compareEdges(a.edge, b.edge) || a.depth - b.depth);
   return results;
+}
+
+// The convergence answer, grouped by how far up it was met, with a count per
+// tier. Forty-four rows for a three-step walk today and thousands at twenty
+// thousand events, in one flat list where the nearest branch and one met eight
+// steps up read alike (health review B, finding 30). Depth is the thing a
+// reader can act on — "what fed this directly" is a different question from
+// "what fed the thing that fed it" — so it is what the list divides on, and
+// within a tier the branches are ordered by what their edge costs.
+//
+// Pure and given the answer rather than asking for it: `convergence` is
+// memoised on the adjacency and the walk (above), and this must not miss that
+// cache by asking again.
+export function convergenceByDepth(rows) {
+  const tiers = new Map();
+  for (const row of rows) {
+    if (!tiers.has(row.depth)) tiers.set(row.depth, []);
+    tiers.get(row.depth).push(row);
+  }
+  return [...tiers.entries()]
+    .sort((a, b) => a[0] - b[0])
+    .map(([depth, list]) => ({
+      depth,
+      count: list.length,
+      rows: [...list].sort((a, b) => stepCost(a.edge) - stepCost(b.edge) || compareEdges(a.edge, b.edge)),
+    }));
 }

@@ -6,7 +6,7 @@
 //
 // Pure: an atlas and a state in, records out. Nothing here knows the DOM.
 
-import { reachableBy } from './graph.js';
+import { reachableBy, pathCost } from './graph.js';
 import { resolveWindow, resolveHorizon, horizonIsOpen } from './util/window.js';
 import { keyedCache, SEP } from './util/memo.js';
 
@@ -44,10 +44,37 @@ export function horizonYear(atlas, state) {
 // or push to it. Nothing does: the panel slices, and the views count.
 const answered = keyedCache(4);
 
+// How many of the answer are re-ordered by cost. `reachableBy` orders by path
+// length, then year, then id — the order the question is asked in — and the
+// ranking is a *second* ordering laid over the head of it, never a different
+// walk (plan decision 6, review finding 21): `shortestPaths` is untouched and
+// the chain a reader is handed for the same click is the same chain.
+//
+// Bounded because the cost of a row is the cost of reconstructing its path,
+// and the path is deliberately reconstructed only when it is read (graph.js):
+// at twenty thousand events this list is four thousand rows, and ranking all
+// of them would walk four thousand trees to re-order forty. Five times what
+// the panel lists is the window — enough that the rows a reader can reach are
+// the ones ranked, and past it the answer stays in the order it was found,
+// which is also the order it was in before this existed.
+export const RANKED = SHOWN * 5;
+
+// Ordered by what the path to each row cost — confidence first, then type
+// (graph.js) — and then by the order it already had, so that two rows of equal
+// cost keep the depth-then-year answer the question was asked in.
+export function rankByCost(results, { window = RANKED } = {}) {
+  if (results.length < 2) return results;
+  const head = results.slice(0, window);
+  const cost = new Map(head.map((row) => [row, pathCost(row.edges)]));
+  const at = new Map(head.map((row, i) => [row, i]));
+  head.sort((a, b) => cost.get(a) - cost.get(b) || at.get(a) - at.get(b));
+  return head.length === results.length ? head : [...head, ...results.slice(window)];
+}
+
 export function horizonResults(atlas, state, id = state.selected) {
   const year = horizonYear(atlas, state);
   if (year === null || !id || !atlas.events.has(id)) return [];
-  return answered(atlas.adjacency, `${id}${SEP}${year}`, () => reachableBy(atlas.adjacency, id, year));
+  return answered(atlas.adjacency, `${id}${SEP}${year}`, () => rankByCost(reachableBy(atlas.adjacency, id, year)));
 }
 
 // The same answer as a Map<event id, depth>, for whatever draws it — and
