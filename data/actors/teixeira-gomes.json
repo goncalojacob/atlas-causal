@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "teixeira-gomes",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-06",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "actor-drafted",
+      "date"
+    ],
+    "note": "The years were written from the assistant’s memory in M31-1 and have not been read in a source. The works cited are where a reviewer should check them, not works this run read: every citation carries no locator and none has been checked."
+  },
+  "where": null,
+  "sources": [
+    {
+      "source": "wheeler-1978-republican-portugal",
+      "locator": null
+    },
+    {
+      "source": "meneses-2004-portugal-1914-1926",
+      "locator": null
+    }
+  ],
+  "actorType": "person",
+  "names": [
+    "Manuel Teixeira Gomes"
+  ],
+  "summary": "Manuel Teixeira Gomes (1860–1941) was a writer and diplomat, elected President of the Republic in 1923 and in office from October of that year until he resigned in December 1925.",
+  "when": {
+    "start": 1860,
+    "end": 1941
+  }
+}
