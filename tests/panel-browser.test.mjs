@@ -604,13 +604,20 @@ test('an office opens on a card that names the actor, the category and its holde
     assert.equal(card.title, 'Prime Minister of Portugal');
     assert.equal(card.actor, 'portugal');
     assert.match(card.meta, /Portugal · Head of government/);
-    assert.deepEqual(card.holders, ['salazar-prime-minister-1932', 'marcelo-caetano-prime-minister-1968']);
-    assert.deepEqual(card.people, ['salazar', 'marcelo-caetano']);
+    // Named as members and not as the whole list: M31 fills this post from
+    // 1926 onward, and every row is one holder's turn in start order.
+    const salazar = card.holders.indexOf('salazar-prime-minister-1932');
+    const caetano = card.holders.indexOf('marcelo-caetano-prime-minister-1968');
+    assert.ok(salazar >= 0 && caetano > salazar, 'Salazar and, after him, Marcelo Caetano');
+    assert.deepEqual(card.people.slice(salazar, caetano + 1), ['salazar', 'marcelo-caetano']);
+    assert.equal(card.people.length, card.holders.length, 'a row a holder');
     assert.equal(card.sources, false, 'an office cites nothing and has no Sources section');
     assert.match(card.cites, /^An office says that/);
 
-    // A row opens the person, not the tenure: a tenure has no card.
-    await page.eval('document.querySelector(\'.panel .tenure-row [data-action="actor"]\').click();');
+    // A row opens the person, not the tenure: a tenure has no card. The row is
+    // taken by name and not by position — the first turn at this post is of
+    // 1926 now, and which one is drawn first is not what is being tested.
+    await page.eval('document.querySelector(\'.panel .tenure-row[data-tenure="salazar-prime-minister-1932"] [data-action="actor"]\').click();');
     await waitFor(page, 'return /actor=salazar/.test(location.search) && !/office=/.test(location.search);', 'the holder in the URL and the office out of it');
 
     // And the card's own close control takes the office out of the URL

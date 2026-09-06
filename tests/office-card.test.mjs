@@ -9,6 +9,7 @@ import assert from 'node:assert/strict';
 import { officeCardHtml } from '../src/panel/office.js';
 import { discussUrl } from '../src/share.js';
 import { esc } from '../src/util/esc.js';
+import { extent } from '../src/util/dates.js';
 import path from 'node:path';
 import { atlasOf, FIXTURE_DATA, ROOT } from './helpers.mjs';
 
@@ -90,11 +91,21 @@ test('nothing from a record reaches the markup unescaped', () => {
   assert.match(html, /&lt;script&gt;/);
 });
 
-test("the atlas's own card: the prime ministership of Portugal, and its two holders", async () => {
+test("the atlas's own card: the prime ministership of Portugal, and its holders in start order", async () => {
   const own = await atlasOf(path.join(ROOT, 'data'));
   const html = officeCardHtml(context(own), own.offices.get('prime-minister-of-portugal'));
   assert.match(html, /<h2>Prime Minister of Portugal<\/h2>/);
   assert.match(html, /<span class="office-category">Head of government<\/span>/);
-  assert.deepEqual(rows(html), ['salazar-prime-minister-1932', 'marcelo-caetano-prime-minister-1968']);
+  // The two M30a-2 made out of the `led` relations are asserted as members and
+  // not as the whole list: M31 fills this post from 1926 onward, and a test
+  // that named every turn would have to be edited by every run that writes one.
+  const holders = rows(html);
+  const salazar = holders.indexOf('salazar-prime-minister-1932');
+  const caetano = holders.indexOf('marcelo-caetano-prime-minister-1968');
+  assert.ok(salazar >= 0, 'Salazar holds this post');
+  assert.ok(caetano > salazar, 'and Marcelo Caetano after him');
+  // What the card promises is the order, so the whole list is checked for it.
+  const starts = holders.map((id) => extent(own.tenures.get(id).when).min);
+  assert.deepEqual(starts, [...starts].sort((a, b) => a - b));
   assert.match(html, /data-action="actor" data-id="portugal"/);
 });

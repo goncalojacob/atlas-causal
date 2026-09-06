@@ -113,13 +113,21 @@ test('nothing from a record reaches the strip unescaped', () => {
   assert.match(section.body, /&lt;script&gt;/);
 });
 
-test("the atlas's own strip: Portugal's three posts, and the two prime ministers", async () => {
+test("the atlas's own strip: Portugal's three posts, and every turn counted", async () => {
   const own = await atlasOf(path.join(ROOT, 'data'));
   const section = officeStripsSection(context(own), own.actors.get('portugal'));
   assert.equal(section.count, 3, 'monarch, president, prime minister');
   assert.match(section.body, /data-action="office" data-id="prime-minister-of-portugal"/);
   assert.match(section.body, /data-action="actor" data-id="salazar"/);
-  assert.match(section.body, /data-action="actor" data-id="marcelo-caetano"/);
+  // Which bars survive the clustering is the strip's business and moves with
+  // the corpus — Marcelo Caetano's is inside a cluster now that M31-2 has
+  // written twenty-five more turns at this post. What each row must say is how
+  // many turns there are, which is the number of records and not a number
+  // written out here.
+  for (const office of ['monarch-of-portugal', 'president-of-portugal', 'prime-minister-of-portugal']) {
+    const count = section.body.match(new RegExp(`data-id="${office}"[\\s\\S]*?<span class="count">(\\d+)</span>`))?.[1];
+    assert.equal(Number(count), (own.tenuresByOffice.get(office) ?? []).length, office);
+  }
   // Until M31-1 two of the three had no holder recorded and said so rather
   // than drawing an empty picture. The crown and the presidency have their
   // holders now, so nothing says it.
