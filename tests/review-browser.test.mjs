@@ -210,7 +210,14 @@ test('a reviewer can set an event\'s category, and the diff says so', { skip }, 
     assert.match(drawn.kind, /\bevent\b/, 'the queue opens on an event');
     assert.ok(drawn.parentIsPicker, 'Part of is a picker over the events');
     assert.deepEqual(drawn.scope, ['', 'regional', 'worldwide']);
-    assert.equal(drawn.category, '', 'no record in data/ carries a category yet');
+    // M32b-2 gave every imported event the category its Wikidata class
+    // carries, so the select opens on what the record says rather than on
+    // nothing — which is the stronger assertion, and the one the field was
+    // always for: the editor reads a category as well as writing one.
+    const opened = JSON.parse(await readFile(
+      path.join(ROOT, 'data', 'events', '1908-portuguese-legislative-election.json'), 'utf8'));
+    assert.equal(opened.category, 'election', 'the record the queue opens on');
+    assert.equal(drawn.category, opened.category, 'the select shows the record\'s own category');
     assert.equal(drawn.blank, '— not said —');
     // M32b-1: the role is a closed list, since a role outside
     // `data/roles.json` is rule 25 and the dashboard must not offer what the
