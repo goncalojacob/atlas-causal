@@ -1,6 +1,9 @@
 # On push to main, one job: validate, rebuild data/index/, commit it if it
 # changed, then upload and deploy the same checkout to GitHub Pages. The
-# index is owned by main, post-merge; PRs never carry it. The commit uses
+# index and the prerendered pages are owned by main, post-merge; a pull
+# request the contribution form opens carries neither, and validate.yml asks
+# for the index only of a pull request that touched `data/index/` itself
+# (health review of 6 September, R2 and R12). The commit uses
 # the default token on purpose: pushes made with it start no workflows, and
 # the deploy happens right here, so no loop and no stale site.
 #

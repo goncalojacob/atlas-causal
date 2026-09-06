@@ -481,10 +481,14 @@ node tools/import/cshapes.mjs --source cshapes_2_gw.topojson   # territories; ra
 ```
 
 Both commands must pass before a pull request is ready. There are no runtime
-dependencies, no build step, no map library and no CDN. `data/index/` is
-generated and `main` owns it — a pull request that touches no record leaves it
-alone entirely, and one that changes a record rebuilds it in the same commits,
-because the gate then checks that the index is the one those records build.
+dependencies, no build step, no map library and no CDN. `data/index/` and the
+prerendered pages are generated and `main` owns them: a pull request that adds
+or changes records leaves both alone, and the deploy rebuilds them on merge.
+A branch that opens the hashed index is a branch that will conflict with the
+next one, which is why the contribution form's own pull requests carry the
+records and nothing else. Rebuild them locally to see your records on the
+page; commit them only if you are changing how they are *built*, and then the
+gate checks that what you committed is what those records produce.
 
 ### When the shape of a record changes
 

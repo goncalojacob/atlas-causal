@@ -66,17 +66,17 @@ jobs:
             node tools/bundle-to-files.mjs 2>&1 | tee "$RUNNER_TEMP/report.log"
           fi
 
-      # The pull request this opens changes data/, and validate.yml checks the
-      # index of any branch that does. The records were written a step ago, so
-      # the index they belong to is built here and committed with them; main
-      # rebuilds it on merge either way.
-      - name: Rebuild the index for the records just written
-        run: node tools/build-index.mjs
-
+      # No index and no prerendered pages. A contribution's pull request
+      # carries the records and nothing else: `main` owns what the build
+      # produces, deploy.yml rebuilds both on merge, and two contribution
+      # branches that each committed the hashed index could not merge past one
+      # another (health review of 6 September, R2 and R12; plan-review 11).
+      # validate.yml runs `--index` only where a pull request touched
+      # `data/index/` itself, so this branch is not asked for one.
       - name: Validate the whole dataset
         run: |
           set -o pipefail
-          node tools/validate.mjs --index 2>&1 | tee -a "$RUNNER_TEMP/report.log"
+          node tools/validate.mjs 2>&1 | tee -a "$RUNNER_TEMP/report.log"
 
       - name: Tests
         run: node --test
@@ -103,7 +103,11 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git checkout -b "contribution/${ISSUE_NUMBER}"
-          git add data
+          # The records only: `data/index/` is not built on this branch, and
+          # naming the record directories rather than `data` keeps it that way
+          # if it ever is.
+          git add data/sources data/places data/actors data/events data/edges \
+            data/relations data/narratives
           git commit \
             --author="${ISSUE_AUTHOR} <${ISSUE_AUTHOR}@users.noreply.github.com>" \
             -m "data: records from issue #${ISSUE_NUMBER}" \

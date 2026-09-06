@@ -1,10 +1,15 @@
 # On every pull request: schemas, rules, tests. It never builds or commits
 # data/index/ — that is deploy.yml's on main, so two open pull requests cannot
-# conflict on the index. What it does do, when the pull request changes
-# anything under data/, is check that the index committed with it is the one
-# those records build: a change to the records or to the shape they are
-# written in invalidates the index, and finding that out at deploy time is
-# finding it out on main (docs/review-2026-09-05-health-plan.md, finding 16).
+# conflict on the index.
+#
+# What it does do, when the pull request itself touches `data/index/`, is
+# check that what was committed there is what those records build. Until
+# 6 September it asked that of any branch that touched `data/` at all, which
+# made every contribution the form opened fail the gate: the branch carried
+# the new records and the base branch's `sources.html`, and rule 16 covers
+# the prerendered pages too (health review of 6 September, R2 and R12). A
+# branch that adds records and no index is not stale — it is a branch that
+# left the generated files to the branch that owns them.
 name: validate
 
 on:
@@ -29,17 +34,17 @@ jobs:
         run: node tools/validate.mjs
       - name: Tests
         run: node --test
-      - name: Whether this pull request touches data/
+      - name: Whether this pull request touches data/index/
         id: data
         env:
           BASE_SHA: ${{ github.event.pull_request.base.sha }}
           HEAD_SHA: ${{ github.event.pull_request.head.sha }}
         run: |
           touched=false
-          if [ -n "$BASE_SHA" ] && [ -n "$(git diff --name-only "$BASE_SHA" "$HEAD_SHA" -- data/)" ]; then
+          if [ -n "$BASE_SHA" ] && [ -n "$(git diff --name-only "$BASE_SHA" "$HEAD_SHA" -- data/index/)" ]; then
             touched=true
           fi
           echo "touched=$touched" >> "$GITHUB_OUTPUT"
-      - name: The index committed with those records is the one they build
+      - name: The index committed here is the one those records build
         if: steps.data.outputs.touched == 'true'
         run: node tools/validate.mjs --index

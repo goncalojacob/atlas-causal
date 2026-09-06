@@ -100,19 +100,20 @@ test('contribution.yml runs only on the maintainer label, with the scoped PAT', 
   assert.match(text, /continue-on-error: true/);
 });
 
-test('the index is built on main, and checked on a pull request that changes data/', async () => {
+test('the index is built on main, and checked on a pull request that carries one', async () => {
   const validate = await read(WORKFLOWS, 'validate.yml');
   assert.match(validate, /on:\s*\n\s*pull_request:/);
   // Never built and never committed here: that is deploy.yml's, on main, so
   // two open pull requests cannot conflict on the index.
   assert.doesNotMatch(validate, /build-index/);
   assert.doesNotMatch(validate, /git commit/);
-  // But checked, when the records it is an index of have changed. The step is
-  // conditional on that and on nothing else: a pull request that touches no
-  // record has no index to be stale (review of the health plan, finding 16).
+  // Checked when the pull request carries an index, and not when it merely
+  // adds records: a branch that leaves the generated files to the branch that
+  // owns them is not a stale index, and asking rule 16 of it failed every
+  // contribution the form opened (health review of 6 September, R2 and R12).
   assert.match(validate, /node tools\/validate\.mjs --index/);
   assert.match(validate, /if: steps\.data\.outputs\.touched == 'true'/);
-  assert.match(validate, /git diff --name-only "\$BASE_SHA" "\$HEAD_SHA" -- data\//);
+  assert.match(validate, /git diff --name-only "\$BASE_SHA" "\$HEAD_SHA" -- data\/index\//);
   // The base commit is only there to diff against with the full history.
   assert.match(validate, /fetch-depth: 0/);
   const deploy = await read(WORKFLOWS, 'deploy.yml');
@@ -219,4 +220,27 @@ test('the review checklist and CODEOWNERS still cover data and the plumbing', as
   const owners = await readFile(path.join(ROOT, '.github', 'CODEOWNERS'), 'utf8');
   assert.match(owners, /^\/data\//m);
   assert.match(owners, /^\/\.github\//m);
+});
+
+// R2 and R12: the two halves of one decision. The form's pull request carries
+// the records; `main` owns the index and the pages. A branch that committed
+// the hashed index would conflict with the next deploy's regenerate commit,
+// and a branch that committed records without the pages it changes failed
+// rule 16 on `sources.html` — so it commits neither, and the gate asks for
+// neither.
+test('a contribution pull request carries the records and neither the index nor the pages', async () => {
+  const text = await read(WORKFLOWS, 'contribution.yml');
+  assert.doesNotMatch(text, /build-index/, 'the branch does not build the index');
+  assert.doesNotMatch(text, /validate\.mjs --index/, 'and is not asked whether it is fresh');
+  assert.match(text, /node tools\/validate\.mjs 2>&1/, 'the records themselves are still validated');
+  // The record directories by name, so that `data/index/` cannot be swept in.
+  const add = text.slice(text.indexOf('git add'), text.indexOf('git commit'));
+  assert.doesNotMatch(add, /data\/index/);
+  assert.doesNotMatch(add, /sources\.html|narratives\.html|entry/);
+  for (const dir of ['sources', 'places', 'actors', 'events', 'edges', 'relations', 'narratives']) {
+    assert.match(add, new RegExp(`data/${dir}\\b`), `the branch commits data/${dir}`);
+  }
+  // And deploy.yml's header says which branch owns them, in one place.
+  const deploy = await read(WORKFLOWS, 'deploy.yml');
+  assert.match(deploy.slice(0, deploy.indexOf('name: deploy')), /owned by main[\s\S]*carries neither/);
 });
