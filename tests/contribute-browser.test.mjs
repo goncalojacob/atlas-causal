@@ -221,6 +221,56 @@ test('a new place under an id the atlas already has is named as a replacement', 
   });
 });
 
+// R21: Claim reads the name box when the button is pressed, not when the
+// record was painted. A reviewer who opened a record and then typed their name
+// was told to put their name in the box that already had it in it, and only a
+// name left in localStorage by an earlier visit ever worked.
+test('Claim reads the name typed after the record was opened', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    // The save is intercepted in the page: `tools/serve.mjs` really does write
+    // the record and rebuild the index, and a test that claims a record leaves
+    // a claim in the repository. What is being tested is which name the button
+    // reads, not the writing, so the PUT is answered here and goes no further.
+    await page.send('Page.addScriptToEvaluateOnNewDocument', {
+      source: `window.__put = [];
+        const real = window.fetch;
+        window.fetch = (input, init = {}) => {
+          if ((init.method || "GET") !== "GET") {
+            window.__put.push({ url: String(input), body: init.body });
+            return Promise.resolve(new Response(JSON.stringify({ ok: true }), {
+              status: 200, headers: { "content-type": "application/json" },
+            }));
+          }
+          return real(input, init);
+        };`,
+    });
+    await open(page, url('review.html'), 'return document.querySelectorAll(".editor").length > 0;');
+    // Nothing in the box and nothing in storage: the state a first visit is in.
+    const claim = '[...document.querySelectorAll("button")].find((b) => b.textContent === "Claim")';
+    await waitFor(page, `return Boolean(${claim});`, 'the Claim button');
+    await page.eval(`${claim}.click(); return true;`);
+    await waitFor(page, 'return /put your name in the box/.test(document.querySelector(".save-note")?.textContent ?? "");',
+      'the note asking for a name');
+
+    // Typed now, with the record already open, and pressed again.
+    await page.eval(`const box = document.querySelector("#reviewer-name, .reviewer input");
+      box.value = "Ana Reviewer";
+      box.dispatchEvent(new Event("input", { bubbles: true }));
+      return true;`);
+    await page.eval(`${claim}.click(); return true;`);
+    await waitFor(page, 'return window.__put.length > 0;', 'the claim to be written with the name that was typed');
+    assert.doesNotMatch(await page.eval('return document.querySelector(".save-note")?.textContent ?? "";'),
+      /put your name in the box/);
+    // The name in the record is the one typed after it was opened, which is
+    // the whole of R21: it was read at paint, when the box was still empty.
+    const written = await page.eval('return JSON.parse(window.__put[0].body);');
+    const claimed = written.records[0].review.claimedBy;
+    assert.equal(claimed.name, 'Ana Reviewer');
+    await waitFor(page, 'return /You are reading this/.test(document.querySelector(".claim-held")?.textContent ?? "");',
+      'the line above the button to say the claim is hers');
+  });
+});
+
 // The other end of the pipeline: the address a pull request body carries, so
 // that a maintainer reading a stranger's diff has one link to the page the
 // review actually happens on rather than a queue to find the record in
@@ -243,5 +293,16 @@ test('?open= opens the record the pull request names, not the first in the queue
     // record rather than pretending the address was right.
     await open(page, url('review.html?open=no-such-record-anywhere'), 'return document.querySelectorAll(".editor").length > 0;');
     assert.match(await page.eval('return document.querySelector(".save-note")?.textContent ?? "";'), /no-such-record-anywhere/);
+
+    // R21: `<kind>/<id>`, which is the shape contribute.html?edit= reads and
+    // the shape a pull request body is written in. It was not parsed at all,
+    // so the address opened the queue's first record with nothing said.
+    await open(page, url(`review.html?open=event/${wanted}`), 'return document.querySelectorAll(".editor").length > 0;');
+    assert.equal(await page.eval('return document.querySelector(".record-id").textContent;'), `event · ${wanted}`);
+    assert.equal(await page.eval('return document.querySelector(".save-note")?.textContent ?? "";'), '');
+    // The kind has to be the record's own: the right id under the wrong kind
+    // is an address that names nothing, and says so.
+    await open(page, url(`review.html?open=place/${wanted}`), 'return document.querySelectorAll(".editor").length > 0;');
+    assert.match(await page.eval('return document.querySelector(".save-note")?.textContent ?? "";'), new RegExp(`place/${wanted}`));
   });
 });

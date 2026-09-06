@@ -29,6 +29,7 @@ import { createEditor } from './editor.js';
 import { preparedFor } from '../contribute/bundle.js';
 import { pickerIndex } from '../contribute/picker.js';
 import { formatInterval } from '../util/dates.js';
+import { parseEdit } from '../share.js';
 
 const REVIEWER_KEY = 'atlas.reviewer';
 // Every row is exactly this tall, in pixels. The list places rows by
@@ -247,6 +248,10 @@ function render({ topology, summary, shardOf, historyOf, schemas, citersOf, sear
     input.addEventListener('input', () => {
       writeReviewer({ name: nameInput.value, github: handleInput.value });
       paintReviewer();
+      // Whose claim this is depends on the name in the box, so the line above
+      // the button is redrawn with it: "Ana is reading this" becomes "You are"
+      // the moment Ana types her own name.
+      paintClaim();
     });
   }
 
@@ -558,7 +563,14 @@ function render({ topology, summary, shardOf, historyOf, schemas, citersOf, sear
     claimEl.textContent = '';
     if (!drafted) return;
     const held = heldBy(claimOf(drafted), today());
-    const who = normalizeReviewer({ name: nameInput.value, github: handleInput.value });
+    // Read at click, never at paint. `who` below is the name as it stood when
+    // the record was drawn, which is before the reviewer has typed one: a name
+    // put in the box after opening always got "put your name in the box below
+    // first", and only a name already in localStorage worked (health review of
+    // 6 September, R21). What it is drawn *with* — whose claim this is — is
+    // still a paint-time question, and is repainted whenever the box changes.
+    const reviewer = () => normalizeReviewer({ name: nameInput.value, github: handleInput.value });
+    const who = reviewer();
     const mine = held && ((who.github && held.github === who.github) || held.name === who.name);
     if (held) {
       const left = claimDaysLeft(held, today());
@@ -570,11 +582,12 @@ function render({ topology, summary, shardOf, historyOf, schemas, citersOf, sear
     if (held && !mine) button.title = 'the claim is somebody else’s; it expires on its own';
     button.addEventListener('click', async () => {
       if (!drafted) return;
-      if (!held && !who.name) {
+      const claiming = reviewer();
+      if (!held && !claiming.name) {
         noteEl.textContent = 'A claim says who is reading it: put your name in the box below first.';
         return;
       }
-      const next = held ? releaseClaim(drafted) : claimRecord(drafted, who, { today: today() });
+      const next = held ? releaseClaim(drafted) : claimRecord(drafted, claiming, { today: today() });
       const outcome = await send([next], held ? 'Released' : `Claimed for ${CLAIM_DAYS} days`);
       if (outcome.mode === 'saved') {
         drafted = next;
@@ -761,16 +774,23 @@ function render({ topology, summary, shardOf, historyOf, schemas, citersOf, sear
     }
   });
 
-  // `?open=<id>` opens one record by name. It is what the contribution
+  // `?open=<id>` — or `?open=<kind>/<id>` — opens one record by name. It is
+  // what the contribution
   // pipeline puts in a pull request body: a maintainer reading the diff of a
   // stranger's records has one link to the page the review actually happens
   // on, instead of a queue to find the record in (health review A, finding
   // 30). Any record, not only a queued one — a record somebody has already
   // signed is still a record to open — and an id that names nothing says so
   // rather than silently opening something else.
-  function asked(id) {
-    if (!id) return null;
-    const queued = queue.find((item) => item.id === id);
+  // `<kind>/<id>` as well as a bare id, which is the shape `contribute.html`
+  // reads (`?edit=place/lisbon`, share.js) and the shape a pull request body
+  // is written in. It was not parsed here at all, so such an address opened
+  // the queue's first record instead (health review of 6 September, R21).
+  function asked(text) {
+    if (!text) return null;
+    const named = parseEdit(text);
+    const id = named ? named.id : text;
+    const queued = queue.find((item) => item.id === id && (!named || item.kind === named.kind));
     if (queued) return queued;
     // By kind, because an edge out of the spine carries no `kind` of its own:
     // it is the list it is in that says what it is.
@@ -779,6 +799,7 @@ function render({ topology, summary, shardOf, historyOf, schemas, citersOf, sear
       ['place', topology.places], ['relation', topology.relations],
       ['narrative', topology.narratives], ['source', topology.sources],
     ]) {
+      if (named && named.kind !== kind) continue;
       const record = (records ?? []).find((r) => r.id === id);
       if (record) {
         return {
@@ -815,7 +836,7 @@ function render({ topology, summary, shardOf, historyOf, schemas, citersOf, sear
     // After opening, because opening a record clears this line: an address
     // that names nothing is said out loud rather than silently ignored, and
     // what was opened instead is the queue's own first record.
-    if (wanted && !opening) noteEl.textContent = `Nothing here has the id ${wanted}.`;
+    if (wanted && !opening) noteEl.textContent = `Nothing here has the id ${wanted}; the queue's first record is open instead.`;
     else progressEl.classList.add('good');
   });
 }
