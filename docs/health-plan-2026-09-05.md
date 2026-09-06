@@ -214,3 +214,20 @@ the owner's decision); the timeline's lanes following the window (M6's
 decision stands); `?edge=` and a shorter chain; offices, parents and the
 base map (M30–M38). B's finding 33 (roles) is M32; the Why mode (M35)
 stands on H7's `subgraph` and the session-only walk.
+
+## After the closing review (6 September)
+
+The closing review (`docs/health-review-2026-09-06-result.md`) counted 48
+of 70 findings resolved, measured the hot paths 5–600× cheaper, and
+found the state acceptable only after one corrective run, **H9**
+(`docs/health/h9-brief.md`: R7 the graph from a narrow window, R8 the
+implicit lens emptying the atlas, R10 imports and scaffolds bypassing the
+queue, R1 the deploy's shallow histories, R2/R12 the contribution gate,
+and the smaller items). A **second cycle on the index** follows beside
+M30a–M35 and before M40–M43: the spine compact (R5, in H9), presences out
+of the whole-corpus file into the period index, attributes by period, the
+history directory sharded, the graph's stacks memoised per bucket, the
+lane cap, the rename tool before `led` is retired, `names` on events and
+`succeeded` relations for the colony/state pairs, and the Why mode's
+missing ground (a generated marker, a producer for `?walk=`, condition
+endpoints).
