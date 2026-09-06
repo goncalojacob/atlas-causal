@@ -110,6 +110,76 @@ Dating the crown against an actor record that starts in 1886 would be an
 invented claim (A13), and rule 26's overlap check is skipped where an office
 has no interval. Who held them is M31's.
 
+### M31-1, on the branch `m31`: the heads of state, and the ten memberships
+
+**Two of the three Portuguese offices have holders now.** Twenty-four
+tenures: three at `monarch-of-portugal` — `luis-i-monarch-1861`,
+`carlos-i-monarch-1889`, `manuel-ii-monarch-1908` — and twenty-one at
+`president-of-portugal`, one record per continuous spell from the
+provisional government of October 1910 to the second term that ended in
+March 2026. Ten person actors were written for them: `luis-i`,
+`teofilo-braga`, `bernardino-machado`, `canto-e-castro`,
+`antonio-jose-de-almeida`, `teixeira-gomes`, `mendes-cabecadas`,
+`craveiro-lopes`, `costa-gomes` and `jorge-sampaio`. No id needed amendment
+A9's `-b` suffix: the three spells that begin in 1926 are three different
+people, and so are the two that begin in 1915.
+
+**Every date in it was written from memory and none has been read.** Every
+tenure and every new actor carries `origin: { "tool": "assistant" }`,
+`review.status: "draft"`, the `date` flag and a note saying in plain words
+that the interval came from the assistant's memory and that the books cited
+are where a reviewer should check it rather than works this run read. No
+tenure carries a `date` or an `endDate`: an ISO date is a claim to have read
+one. **74 citations were written and not one of them has been checked
+against its source; the whole corpus stands at 2,002 of 2,002 unchecked**,
+which is what `node tools/validate.mjs` prints on its last line.
+
+**Nine retracted presidential elections came back, and exactly the nine a
+tenure names.** `may-1915-…` (for `teofilo-braga-president-1915`),
+`august-1915-…` (`bernardino-machado-president-1915`), `1918-…`
+(`canto-e-castro-president-1918`), `1919-…`
+(`antonio-jose-de-almeida-president-1919`), `1923-…`
+(`teixeira-gomes-president-1923`), `1925-…`
+(`bernardino-machado-president-1925`), `1951-…`
+(`craveiro-lopes-president-1951`), `1996-…` (`jorge-sampaio-president-1996`)
+and `2006-…` (`cavaco-silva-president-2006`), each
+`<year>-portuguese-presidential-election`. A re-election inside a continuous
+spell began no tenure and stays retracted: 1935, 1942, 1991, 2001 and 2011
+have not moved. Reinstating one changed five things and nothing else — the
+status, the deleted retraction, the dropped `m21-retracted`/`m22-retracted`
+flag, `review.status: "draft"` and `revised` — so those records are still
+the thin imported ones they were, and completing them from memory is the
+invented claim this milestone exists to avoid. The `degree-zero` count did
+not move: an event that began a tenure is connected, which is the whole of
+plan decision 3.
+
+**The ten memberships say `member-of`.** Each is renamed
+`portugal--<body>--member-of`, carries its old `allied-with` id in `aliases`
+so every link still resolves, keeps `created`, `when`, `sources`, `review`
+and `origin`, and has lost the sentence saying the type was a substitution.
+Portugal's card now has "Member of" and no "Allied with" section at all —
+the ten were the whole of it. **Left for the owner, untouched:**
+`estado-novo--nato--allied-with`, because NATO is an alliance as well as a
+membership and which the atlas means is an editorial decision; and
+`third-portuguese-republic--european-economic-community--allied-with`,
+because it is written from the regime and not the state, and re-typing it
+would silently answer a second question about which actor joins a community.
+
+**Holders the run did not write, and why** (§2 rule 3 — a strip with a hole
+the status file names is a correct atlas):
+
+- **The President of the Republic since March 2026.** Marcelo Rebelo de
+  Sousa's second term ended then and the constitution bars a third. The
+  atlas holds no event later than 2025, so there is nothing to name in
+  `startedBy`, and this run cannot say who won the election of January 2026.
+  No tenure is written and none is open: no head of state is recorded as
+  still in post.
+- **The interim headship of state between April and July 1951**, between
+  Óscar Carmona's death in post and Craveiro Lopes's inauguration. Whether an
+  interim exercise of the office by the head of government is a tenure this
+  atlas records is a question about the model rather than about a date, and
+  it is the owner's.
+
 ## Next
 
 The owner's list in full is in the history file. Still waiting:
@@ -145,8 +215,9 @@ In full in the history file. The ones that decide something:
   `allied-with` with a note — a substitution, reported and never adopted. The
   owner chose widening over a new type (plan decision 12) and **M30a-2 widened
   it**: a polity or an institution may be `member-of` an institution now.
-  What is left is the data — **M31 re-types the ten** — and until it runs
-  Portugal's card still says the wrong word.
+  **M31-1 re-typed the ten** on the branch `m31`, so Portugal's card says the
+  word the claim always meant. What is left is the owner's: the two
+  `allied-with` records M31-1 did not touch, named in its paragraph above.
 - **Does the role vocabulary close, and to what? Answered and half done.**
   The owner approved `docs/roles-mapping.md` — the list of 31 — on 5
   September, and **M30a-3 wrote `data/roles.json` and the `role-unknown`
@@ -455,6 +526,73 @@ In full in the history file. The ones that decide something:
      `docs/health/h9-brief.md`, in the review it answers and in the git log.
      M30a-1's and M30a-2's paragraphs are kept.
 
+### M31-1, the heads of state
+
+352. **The numbering restarts at 352 on two branches at once.** M30b-1 is
+     running on `m0` while this runs on `m31`, and both number on from 351,
+     which is what `STATUS.md` said when each of them started. Renumbering
+     here would mean guessing what the other run wrote; the collision is one
+     the merge resolves, and this is the note that says so.
+353. **Luís I is a holder the brief's survey missed.** §4 lists `carlos-i` and
+     `manuel-ii` as the monarchs of the window, and Luís I reigned until 1889
+     — the first three years of it. §4 says a holder the survey missed is
+     still a holder, so the spell is written, whole (§1: one record per
+     continuous spell), from 1861, and `luis-i` is a new actor.
+354. **Nobody is written as still in post**, against §2 rule 5's expectation
+     of two. Marcelo Rebelo de Sousa's second term ended in March 2026 and the
+     run cannot name who won the election of January 2026, which the atlas
+     does not hold. His tenure ends in 2026 and the holder since is named
+     above instead. `end: null` appears on no tenure this run wrote.
+355. **Amendment A4's heading list is wrong and the test asserts the true
+     one.** A4 gives `['Regimes', 'Member of', 'Allied with']`; Portugal has
+     no `allied-with` relation left, because the ten were the whole of that
+     section — the two records that remain stand at `estado-novo` and at
+     `third-portuguese-republic`. `tests/actor-card.test.mjs` asserts
+     `['Regimes', 'Member of']`, and its count at the next line did not move.
+356. **Three tests moved with the data and not one.** A4 names
+     `actor-card.test.mjs` and A5 gives `office-card.test.mjs` to M31-2.
+     `tenure-strip.test.mjs` and `panel-browser.test.mjs` each asserted in so
+     many words that two of Portugal's three posts had no holder recorded,
+     which is exactly what this run changes; and `seed-review-flags.test.mjs`
+     asked every active tenure for the sentence the one-time seeding wrote,
+     which a tenure written after the seeding says in its own words instead
+     (A7 requires it to). Nothing was weakened: the seeding's own sentence is
+     still asserted on every active relation, and a tenure is asked for the
+     `date` flag and a note of its own.
+357. **The strip test stopped asserting its bars as a list.** With
+     twenty-six turns at three posts the strip clusters, and which bars
+     survive that is the strip's business rather than this run's: the test
+     asks that every bar is a turn at one of the three posts and that the two
+     prime ministers are among them, and it clicks Salazar's bar by name
+     rather than whichever one is drawn first.
+358. **Luís I's bar is drawn nowhere.** The strip is held to what the corpus
+     holds — 1899 to 2025 — and the reign ends in 1889. The record is right
+     and the window is M33's; an office strip that began at the earliest
+     tenure rather than at the corpus would be a change to the drawing, which
+     §7 forbids this run.
+359. **`data/index/` is not committed on this branch**, by the run's own
+     instruction, and A11 is suspended with it: the assistant rebuilds the
+     index once after `m31` is merged into `m0`. The index was rebuilt locally
+     to run the tests at every commit and reverted before each of them, so
+     `node tools/validate.mjs --index` is stale on `m31` and is expected to
+     be. `node tools/validate.mjs` reports zero errors at every commit and
+     `node --test` is green with `CHROME` set: 1,022 tests, none skipped.
+360. **The ten re-types were not kept as a one-off tool.** M30a-2 kept
+     `tools/migrate/led-to-tenures.mjs` because it made thirty records out of
+     twelve; this is ten renames whose diff is the whole account of them, and
+     a script that can only be run once and fails afterwards is not
+     documentation this repository needs a second copy of.
+361. **Teófilo Braga's first spell is a turn at `president-of-portugal`
+     though the post was called president of the provisional government**, and
+     so are the three of 1926, when the office and the headship of the
+     government were held together. The alternative was a fourth office
+     record, which §7 forbids. The distinction is in each tenure's `note`.
+362. **Américo Tomás's tenure is begun by `delgado-candidacy-1958`.** The
+     imported record of the 1958 election is `merged` into that event, and
+     rule 11 refuses a `startedBy` that names anything but an active record.
+     The event is this atlas's account of that election, so it is the one
+     named; nothing was reinstated for it.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
@@ -555,3 +693,4 @@ M30a done
 M30b-1 started 2026-09-06T14:31:33Z by scheduled
 M31-1 started 2026-09-06T15:09:18Z by scheduled (branch m31)
 M31-1 started 2026-09-06T17:01:56Z by scheduled (branch m31)
+M31-1 done
