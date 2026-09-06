@@ -13,6 +13,50 @@ hundred lines again, cut it the same way.
 
 ## Last updated
 
+2026-09-06, after **M30b-2** (`docs/m30b-brief.md`, amendment A1: the second of
+M30b's three runs), on `m0`: **the two views draw what an event is part of.**
+
+**The `event:` lens is a subtree now.** `eventsOfFocus` walks
+`atlas.childrenOf` with a visited set, so "Focus only on this" on a parent
+narrows the map, the graph and the timeline to that event and everything
+inside it. No new control — `lensControl` has drawn both verbs since H7 — and
+a parent's card says in one line what they would keep, because that is the one
+thing their labels cannot say. A leaf is still one event, which is every event
+in `data/` today.
+
+**The graph has a second level of detail, and it runs first.** `collapse.js`
+is pure, takes the laid-out layout and gives one back: below `COLLAPSE_ZOOM`
+(2, `LABEL_ALL_ZOOM`'s number, and the comment says why) an event's parts are
+drawn inside it, the ends of their links moved onto it and a link between two
+parts dropped. M25's `stackLayout` then runs on that node set, both under the
+one stacking cache. **No node moves for it**: a collapsed parent is drawn
+where the parent already was, `arrangementKey` never sees the zoom, and a
+wheel notch still lays nothing out again (H4b). Nothing in `alone` is folded,
+and a parent holding anything in it is not collapsed at all.
+
+**A large event is a band and a wash rather than a mark.** `src/large.js`
+decides which events those are, once, for both pictures: `scope` where a
+person wrote it, or parts falling in more than one **region** lane — judged
+against the region lanes always and never the reader's grouping. The timeline
+draws a rect the height of the drawing under the bars, at `--cobalt-faint`,
+with no handle and its title on the axis; the map washes the polygons of the
+event's lane; an event that spans the whole map is **named in the corner**
+instead, because a tint over the viewport would film over every coastline,
+territory and mark. The card says which of the three it is and why. Beside it,
+A10's count: the events of this window with no place at all, bottom-left, on
+paper and lined rather than in madder — the picture saying what it is not
+drawing, which is not the same as the picture being wrong.
+
+The bracket is written and drawn and **nothing in the repository draws one**:
+the fixtures' single parent is a large event twice over, so it gets the band.
+Deviation 358.
+
+No record under `data/` changed and nothing was rebuilt: `node
+tools/validate.mjs --index` is byte-identical. **1051 tests, none skipped**,
+with `CHROME` set. What M30b-3 owns — the coastline toggle, `?layers=`
+widened, the form and the review editor, the documents, and the sixth gate
+check M30a left (deviation 352) — is untouched.
+
 2026-09-06, after **M30b-1** (`docs/m30b-brief.md`, amendment A1: the first of
 M30b's three runs), on `m0`: **the records M30a wrote are reachable now.**
 `?office=` opens a real card — the actor the post belongs to, its category,
@@ -521,6 +565,63 @@ In full in the history file. The ones that decide something:
      browser test asserts the rendered height, so a change to one without the
      other fails rather than draws.
 
+### M30b-2, the two views
+
+357. **The collapsed mark's badge counts, and its title carries the weight.**
+     A7 asks for a badge reading `subtreeWeight ?? weight` with the member
+     count beside it. Two bare numbers on one mark — "6" and "+2" — are two
+     numbers with nothing to say which is which, which is the very confusion
+     the amendment's "a weight is not a count" warns against. So the badge is
+     the count, in the idiom the map's and the timeline's stacks already use,
+     the subtree's weight is what sizes the mark and ranks its label, and the
+     title says both in words. The two numbers are also different questions:
+     `subtreeWeight` is summed over every descendant through `parent`, and the
+     count is of the parts actually laid out in this band.
+358. **The bracket has no browser test, because nothing can draw one here.**
+     A9's bracket wants a parent that is *not* large whose parts share a lane.
+     `data/` has no `parent` at all, and the fixtures' one parent —
+     `fixture-event-f` — is written `scope: regional` and holds two events in
+     two lanes, so it is large twice over and gets the band. Writing a third
+     fixture parent would have been a record, which this run may not write.
+     The decision is tested in full in `tests/large.test.mjs` and the layer is
+     checked to be empty in the browser in both groupings; the geometry that
+     draws the rule is the one thing no test here executes.
+359. **The band and the wash are added to the bar and the mark, not put in
+     their place.** Plan decision 4 and the brief's body say "rather than a
+     mark"; A8, which overrides them, says what the band and the wash are and
+     never says the bar goes. It stays, because the band is not a control — no
+     title, no click, no place in the roving tab order — and an event that
+     could no longer be opened or reached with the keyboard would be an event
+     the view had hidden, which is the one thing ARCHITECTURE.md's never-hide
+     rule forbids. A reader sees the ground and can still open the record.
+360. **`loadAtlas` keeps the region polygons it was already fetching.** A8
+     says they are "already loaded at first paint"; they were fetched, reduced
+     to one box each and dropped (`util/geo.js`, and the comment saying so). A
+     box is enough to answer "is a placeless event in view" and is not enough
+     to draw a lane: where a region wraps, its box is a rectangle across the
+     whole northern strip. So `atlas.regionShapes` holds the collection on the
+     pages that ask for it — the same 221 KB the health review's §5.4 names as
+     the first thing a base-map budget should reclaim, which is where the two
+     will be settled together.
+361. **Two modules the brief did not name, beside the one it did.**
+     `src/large.js`, because which events are large is asked by the timeline,
+     the map and the event card, and three copies of one rule is how two
+     pictures come to disagree; and `src/map/layers/regions.js`, because the
+     wash is a layer and every other thing the map draws is one. Both are in
+     `CLAUDE.md`'s layout tree in the commit that added them, as A17 asks of
+     `collapse.js`.
+362. **A node in a ring of parents stands for itself.** Rule 24 refuses the
+     ring, and `subtreeWeights` already gives such a node its own weight
+     (M30a, A11). Without the same rule here the two ends of a two-cycle each
+     folded into the other and neither was drawn — a file with bad data would
+     have lost two records from the picture rather than gaining a strange one.
+363. **The wash and the corner go off with the events layer**, and `radiusFor`
+     is clamped. A tinted continent with no mark on it would be an event the
+     reader has just switched off, still drawn; and a collapsed parent carries
+     the weight of its whole subtree, which is outside the range the sizes
+     were measured over, so the heaviest mark is the heaviest size and not a
+     larger one.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
@@ -622,3 +723,4 @@ M30b-1 started 2026-09-06T14:31:33Z by scheduled
 M30b-1 started 2026-09-06T17:02:03Z by scheduled
 M30b-1 done
 M30b-2 started 2026-09-06T17:15:45Z by scheduled
+M30b-2 done
