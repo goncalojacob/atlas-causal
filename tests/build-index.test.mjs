@@ -7,7 +7,7 @@ import { canonical, serialize, compact, buildIndex, writeIndex, readIndex, compa
 import { runValidation } from '../tools/validate.mjs';
 import { buildTopology, eventWeights } from '../src/validate/core.js';
 import { checkRules } from '../src/validate/rules.js';
-import { buildQueue, isDraft, DIGEST_KEYS } from '../src/review/queue.js';
+import { buildQueue, inQueue, DIGEST_KEYS } from '../src/review/queue.js';
 import { readRecords, readRegions } from '../tools/lib/read.mjs';
 import { FIXTURE_DATA, ROOT, fixtures } from './helpers.mjs';
 
@@ -116,7 +116,7 @@ test('manifest names the hashed files, counts, lanes and land', async () => {
   const built = await buildIndex(FIXTURE_DATA);
   const manifest = JSON.parse(built.files['manifest.json']);
   assert.equal(manifest.schema, 1);
-  assert.deepEqual(manifest.counts, { events: 12, edges: 10, sources: 4, actors: 4, presences: 3, places: 11, relations: 3, offices: 1, tenures: 3, narratives: 1, regions: 3 });
+  assert.deepEqual(manifest.counts, { events: 12, edges: 10, sources: 4, actors: 4, presences: 3, places: 11, relations: 3, offices: 2, tenures: 4, narratives: 1, regions: 3 });
   assert.match(manifest.files.spine, /^index\/spine-[0-9a-f]{12}\.json$/);
   assert.match(manifest.files.sources, /^index\/sources-[0-9a-f]{12}\.json$/);
   assert.ok(Object.hasOwn(built.files, path.basename(manifest.files.spine)));
@@ -146,7 +146,10 @@ test('the review index lists the drafts, the count and the warnings', async () =
   const { entries } = await readRecords(path.join(ROOT, 'data'));
   const records = entries.map((e) => e.record);
   const regions = await readRegions(path.join(ROOT, 'data'));
-  const drafts = records.filter(isDraft);
+  // A withdrawn record is in no queue, whatever its review block says
+  // (queue.js, inQueue): the twelve `led` tombstones would otherwise stand in
+  // the list behind the twelve tenures that replaced them.
+  const drafts = records.filter(inQueue);
   // The number the page reports is the validator's own, not a second count.
   assert.equal(summary.drafts, drafts.length);
   assert.equal(summary.total, records.filter((r) => r.kind !== 'presence').length);

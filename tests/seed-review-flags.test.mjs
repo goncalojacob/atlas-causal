@@ -16,8 +16,12 @@ test('every record the table names exists, is a draft, and carries the block', a
   const { entries, problems } = await readRecords(path.join(ROOT, 'data'));
   assert.deepEqual(problems, []);
   const byId = new Map(entries.map((e) => [e.record.id, e.record]));
-  const relations = entries.filter((e) => e.kind === 'relation').map((e) => e.record.id);
-  const entriesPlanned = plan(relations);
+  // Relations and tenures, and only the ones still standing: M30a-2 re-filed
+  // the twelve `led` records and their flags went to the tenures with them.
+  const dated = entries
+    .filter((e) => (e.kind === 'relation' || e.kind === 'tenure') && e.record.status === 'active')
+    .map((e) => e.record.id);
+  const entriesPlanned = plan(dated);
   assert.ok(entriesPlanned.length > 50, 'STATUS.md names more than fifty records');
 
   for (const item of entriesPlanned) {
@@ -37,8 +41,9 @@ test('every record the table names exists, is a draft, and carries the block', a
     for (const flag of item.flags) assert.match(flag, FLAG, item.id);
   }
 
-  // Every relation is flagged, and the note says which of the two cases it is.
-  for (const id of relations) {
+  // Every one of them is flagged, and the note says which of the two cases it
+  // is — including the twelve tenures, which carried the note across.
+  for (const id of dated) {
     assert.ok(byId.get(id).review.note.includes(RELATION_NOTE), id);
   }
 });

@@ -54,21 +54,25 @@ test('the chain applied to a tree: 2 writes, 3 takes it back, the bytes are equa
   assert.deepEqual(up.errors, []);
   // Migration 2 has the one record with a `review` block; migration 4 taken
   // back off has the three that carry `sitelinks`, which it reshaped, and the
-  // tombstone, whose reason goes back into the note it was read out of.
+  // two tombstones, whose reasons go back into the notes they were read out
+  // of. The `led` relation is the second of those since M30a-2 re-filed it,
+  // which is what its retraction opening with the sentence migration 4 knows
+  // how to read is for.
   assert.deepEqual(up.changes.map((c) => c.file).sort(), [
     'actors/fixture-actor-one.json',
     'edges/fixture-event-e--fixture-event-t--inspired.json',
     'events/fixture-event-a.json',
     'places/fixture-place-a.json',
+    'relations/fixture-actor-one--fixture-actor-two--led.json',
   ]);
-  assert.equal(up.written, 4);
+  assert.equal(up.written, 5);
   const at2 = JSON.parse(await readFile(path.join(dataDir, 'events', 'fixture-event-a.json'), 'utf8'));
   assert.deepEqual(at2.review.citations, {});
   assert.equal(at2.sitelinks, 2, 'a tree at step 2 carries the shape step 4 replaced');
 
   const down = await apply(dataDir, { to: LATEST });
   assert.deepEqual(down.errors, []);
-  assert.equal(down.written, 4);
+  assert.equal(down.written, 5);
   assert.deepEqual([...(await treeOf(dataDir)).entries()], [...before.entries()]);
 });
 
@@ -83,7 +87,7 @@ test('applying it twice writes nothing the second time', async (t) => {
 test('a dry run says what would change and changes nothing', async (t) => {
   const { dataDir, before } = await scratch(t);
   const result = await apply(dataDir, { to: 2, dryRun: true });
-  assert.equal(result.changes.length, 4);
+  assert.equal(result.changes.length, 5);
   assert.equal(result.written, 0);
   assert.deepEqual([...(await treeOf(dataDir)).entries()], [...before.entries()]);
 });

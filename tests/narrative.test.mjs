@@ -51,9 +51,9 @@ test('a step may name an actor, a relation or a presence, and none of them is an
   assert.equal(actor.record.id, 'fixture-actor-one');
   assert.equal(actor.event, null);
 
-  const relation = resolveRef(atlas, 'fixture-actor-one--fixture-actor-two--led');
+  const relation = resolveRef(atlas, 'fixture-actor-one--fixture-actor-two--member-of');
   assert.equal(relation.kind, 'relation');
-  assert.equal(relation.record.type, 'led');
+  assert.equal(relation.record.type, 'member-of');
   assert.equal(relation.event, null);
 
   const presence = resolveRef(atlas, 'fixture-polity-four-1120');

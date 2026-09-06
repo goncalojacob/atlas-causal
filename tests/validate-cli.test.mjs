@@ -17,10 +17,10 @@ test('validate.mjs passes on the fixtures and prints the warnings', () => {
   assert.match(r.out, /warning \[degree-zero\] events\/fixture-event-h\.json/);
   // 50 of them are `unread`: no fixture record carries a review block, which
   // is what the warning R10 asked for says about a corpus nobody has read.
-  assert.match(r.out, /52 records, 3 regions: 0 error\(s\), 53 warning\(s\)/);
+  assert.match(r.out, /54 records, 3 regions: 0 error\(s\), 54 warning\(s\)/);
   // And the terminal is not asked to scroll through all of them: a rule past
   // the cap prints its first twenty and then says how many more there are.
-  assert.match(r.out, /warning \[unread\]: and 30 more like the 20 above/);
+  assert.match(r.out, /warning \[unread\]: and 31 more like the 20 above/);
   assert.equal((r.out.match(/warning \[unread\] /g) ?? []).length, 20);
 });
 
@@ -55,7 +55,7 @@ test('build-index.mjs writes an index that validate.mjs --index accepts', async 
     assert.equal(cli('validate.mjs', '--data', dir, '--index').status, 1);
     const b = cli('build-index.mjs', '--data', dir);
     assert.equal(b.status, 0, b.err);
-    assert.match(b.out, /12 events, 10 edges, 4 actors, 3 relations, 1 offices, 3 tenures, 1 narratives, 11 places, 3 presences, 4 sources/);
+    assert.match(b.out, /12 events, 10 edges, 4 actors, 3 relations, 2 offices, 4 tenures, 1 narratives, 11 places, 3 presences, 4 sources/);
     assert.equal(cli('validate.mjs', '--data', dir, '--index').status, 0);
   } finally {
     await rm(dir, { recursive: true, force: true });

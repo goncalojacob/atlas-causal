@@ -146,8 +146,23 @@ export function degreesOf(topology = {}) {
   return degrees;
 }
 
+// Nobody is waiting on a tombstone. `isDraft` answers "has a person read
+// this", which is a different question from "is this in the corpus at all",
+// and the queue asks both: a record that has been withdrawn or merged away
+// has nothing left for a reviewer to sign, and signing one would put their
+// name on a claim the atlas no longer makes. It is the same line the `unread`
+// warning draws for the same reason (H9, item 12).
+//
+// It became visible when M30a-2 re-filed the twelve `led` relations: a
+// tombstone keeps the draft marker in `authors` and Retract takes
+// `review.status` off, so migration 004 puts `draft` back on read and twelve
+// withdrawn records walked into the queue behind their own replacements. That
+// was already true of anything a reviewer retracted from the dashboard; there
+// were simply none of those yet.
+export const inQueue = (record) => isDraft(record) && (!record?.status || record.status === 'active');
+
 export function countDrafts(records) {
-  return (records ?? []).filter(isDraft).length;
+  return (records ?? []).filter(inQueue).length;
 }
 
 // What the record is called in a list: the display name of the thing, not
@@ -195,7 +210,7 @@ function kindRank(kind) {
 export function buildQueue(records, { warnings = [] } = {}) {
   const byId = warningsById(warnings);
   return (records ?? [])
-    .filter(isDraft)
+    .filter(inQueue)
     .map((record) => ({
       kind: record.kind,
       id: record.id,
@@ -313,7 +328,7 @@ export function sortQueue(queue, key = 'kind') {
 // there are, presences excluded.
 export function progressOf(records, { total = null } = {}) {
   const all = (records ?? []).filter((r) => r?.kind !== 'presence');
-  const remaining = all.filter(isDraft);
+  const remaining = all.filter(inQueue);
   const byKind = groupByKind(buildQueue(remaining)).map((g) => ({ kind: g.kind, count: g.count }));
   const size = total ?? all.length;
   return { total: size, remaining: remaining.length, reviewed: size - remaining.length, byKind };

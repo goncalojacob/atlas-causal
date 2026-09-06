@@ -116,10 +116,15 @@ export const SEED = Object.freeze([
   },
 ]);
 
-// Every relation in the dataset: the four regime-of and three part-of
-// intervals follow the actor records they join, and the rest were written
-// from memory. Both wanted checking, so all of them are flagged and the note
-// says which case a reviewer is in.
+// Every dated claim between two actors in the dataset: the four regime-of and
+// three part-of intervals follow the actor records they join, and the rest
+// were written from memory. Both wanted checking, so all of them are flagged
+// and the note says which case a reviewer is in.
+//
+// It is relations *and tenures* since M30a-2, and only the active ones. The
+// twelve `led` records were re-filed as tenures and their flags went with
+// them (amendment A4); the tombstones they left behind claim nothing anybody
+// is waiting to check, and a withdrawn record is in no queue to filter.
 export const RELATION_NOTE = 'The interval is either the actors\' own, and only as good as those records, or it was written from memory. Neither has been read in a source.';
 
 function isObject(v) {
@@ -163,12 +168,26 @@ async function fileFor(dataDir, id) {
   return null;
 }
 
+// The ids of the active records of one kind, read off the directory: the
+// tombstones are the ones this has to leave out.
+async function activeIdsIn(dataDir, kind) {
+  const dir = path.join(dataDir, KIND_DIRS[kind]);
+  if (!existsSync(dir)) return [];
+  const out = [];
+  for (const name of (await readdir(dir)).sort()) {
+    if (!name.endsWith('.json')) continue;
+    const record = JSON.parse(await readFile(path.join(dir, name), 'utf8'));
+    if (record.status === 'active') out.push(record.id);
+  }
+  return out;
+}
+
 export async function seed(dataDir = DEFAULT_DATA, { dryRun = false } = {}) {
-  const relationsDir = path.join(dataDir, KIND_DIRS.relation);
-  const relationIds = existsSync(relationsDir)
-    ? (await readdir(relationsDir)).filter((n) => n.endsWith('.json')).map((n) => n.slice(0, -5)).sort()
-    : [];
-  const entries = plan(relationIds);
+  const intervalIds = [
+    ...await activeIdsIn(dataDir, 'relation'),
+    ...await activeIdsIn(dataDir, 'tenure'),
+  ].sort();
+  const entries = plan(intervalIds);
 
   const written = [];
   const missing = [];

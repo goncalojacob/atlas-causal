@@ -67,16 +67,18 @@ test('actors resolve and carry the events they appear in, chronologically', asyn
 
 test('relations are adjacency by actor, read from both ends', async () => {
   const atlas = await loadAtlas({ dataRoot: 'tests/fixtures/data/', fetchJson });
-  assert.equal(atlas.relations.size, 3);
-  // The person's end: two relations out, oldest first.
+  // Two of the three are still standing: M30a-2 re-filed the pair's `led`
+  // record as a tenure and adjacency is active relations only.
+  assert.equal(atlas.relations.size, 2);
+  // The person's end.
   assert.deepEqual(
     atlas.relationsByActor.get('fixture-actor-one').map((r) => [r.relation.type, r.direction, r.other]),
-    [['member-of', 'out', 'fixture-actor-two'], ['led', 'out', 'fixture-actor-two']],
+    [['member-of', 'out', 'fixture-actor-two']],
   );
-  // The body's end: the same two records, pointing the other way.
+  // The body's end: the same record, pointing the other way.
   assert.deepEqual(
     atlas.relationsByActor.get('fixture-actor-two').map((r) => [r.relation.type, r.direction, r.other]),
-    [['member-of', 'in', 'fixture-actor-one'], ['led', 'in', 'fixture-actor-one']],
+    [['member-of', 'in', 'fixture-actor-one']],
   );
   assert.deepEqual(
     atlas.relationsByActor.get('fixture-polity-three').map((r) => [r.relation.type, r.direction, r.other]),

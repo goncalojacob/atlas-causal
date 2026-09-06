@@ -1,0 +1,162 @@
+{
+  "citations": [
+    {
+      "dissent": false,
+      "id": "fixture-actor-one",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "fixture-polity-three",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "fixture-event-a--fixture-event-a2--enabled",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "fixture-event-a--fixture-event-b--caused",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "fixture-event-b--fixture-event-d--enabled",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "fixture-event-c--fixture-event-t--precondition-of",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "fixture-event-f--fixture-event-t--reacted-to",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "fixture-event-g--fixture-event-t--caused",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "fixture-event-o--fixture-event-e--enabled",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "fixture-event-a",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "fixture-event-a2",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "fixture-event-b",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "fixture-event-c",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "fixture-event-d",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "fixture-event-e",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "fixture-event-f",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "fixture-event-g",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "fixture-event-h",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "fixture-event-o",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "fixture-event-t",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "fixture-narrative-one",
+      "kind": "narrative",
+      "locator": "pp. 1-10"
+    },
+    {
+      "dissent": false,
+      "id": "fixture-polity-four-1200",
+      "kind": "presence",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "fixture-polity-three-1100",
+      "kind": "presence",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "fixture-polity-four--fixture-polity-three--regime-of",
+      "kind": "relation",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "fixture-actor-one-fixture-actor-two-1210",
+      "kind": "tenure",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "fixture-tenure-one",
+      "kind": "tenure",
+      "locator": null
+    }
+  ],
+  "id": "fixture-source-1",
+  "schema": 1
+}

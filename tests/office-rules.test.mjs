@@ -66,15 +66,18 @@ async function run(mutate = () => {}) {
 const rulesHit = (result, rule) => result.errors.filter((e) => e.rule === rule);
 const messages = (result) => result.errors.map((e) => `${e.rule} ${e.id}${e.path}: ${e.message}`).join('\n');
 
-test('the fixtures carry an office and three tenures, one pair of them overlapping', async () => {
+test('the fixtures carry two offices and four tenures, one pair of them overlapping', async () => {
   const r = await run();
   assert.equal(r.errors.length, 0, messages(r));
   const fx = await fixtures();
   const topology = buildTopology(fx.records, fx.regions);
-  assert.deepEqual(topology.offices.map((o) => o.id), ['fixture-office-one']);
+  // The second office and the fourth tenure are M30a-2's: the pair's `led`
+  // relation was re-filed by tools/migrate/led-to-tenures.mjs, so the fixture
+  // corpus carries the shape the repository's own twelve are in.
+  assert.deepEqual(topology.offices.map((o) => o.id), ['fixture-office-one', 'leadership-of-fixture-actor-two']);
   assert.deepEqual(
     topology.tenures.map((t) => t.id),
-    ['fixture-tenure-one', 'fixture-tenure-three', 'fixture-tenure-two'],
+    ['fixture-actor-one-fixture-actor-two-1210', 'fixture-tenure-one', 'fixture-tenure-three', 'fixture-tenure-two'],
   );
   // Two of the three run over the same years. A regency is not a mistake and
   // a year is the finest bound this model has, so nothing reports it (plan
@@ -88,7 +91,7 @@ test('the fixtures carry an office and three tenures, one pair of them overlappi
 test('an office reaches the topology and the spine whole, and a tenure with it', async () => {
   const fx = await fixtures();
   const topology = buildTopology(fx.records, fx.regions);
-  const [record] = topology.offices;
+  const record = topology.offices.find((o) => o.id === 'fixture-office-one');
   assert.deepEqual(record, {
     id: 'fixture-office-one',
     of: 'fixture-polity-three',
@@ -103,9 +106,9 @@ test('an office reaches the topology and the spine whole, and a tenure with it',
   // The prose stays out, as it does for every other kind: a card fetches it.
   assert.equal(Object.hasOwn(record, 'summary'), false);
   const spine = buildSpine(topology);
-  assert.equal(spine.offices.length, 1);
+  assert.equal(spine.offices.length, 2);
   assert.equal(spine.offices[0].kind, 'office');
-  assert.equal(spine.tenures.length, 3);
+  assert.equal(spine.tenures.length, 4);
   assert.equal(spine.tenures[0].kind, 'tenure');
   assert.equal(spine.tenures[0].person, 'fixture-actor-one');
 });
@@ -117,9 +120,10 @@ test('an office is in the search shard and a tenure is not', async () => {
   const topology = buildTopology(fx.records, fx.regions);
   const entries = buildSearchIndex(topology);
   const found = entries.filter((e) => e.kind === 'office');
-  assert.deepEqual(found.map((e) => e.id), ['fixture-office-one']);
+  assert.deepEqual(found.map((e) => e.id), ['fixture-office-one', 'leadership-of-fixture-actor-two']);
   assert.equal(found[0].label, 'Fixture Crown');
   assert.equal(found[0].detail, 'head-of-state');
+  assert.equal(found[1].detail, 'party-leadership');
   assert.equal(entries.some((e) => e.kind === 'tenure'), false);
 });
 

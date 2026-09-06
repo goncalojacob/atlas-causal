@@ -20,6 +20,14 @@
         "review"
       ],
       "on": "2026-09-03"
+    },
+    {
+      "fields": [
+        "retraction",
+        "review",
+        "status"
+      ],
+      "on": "2026-09-06"
     }
   ]
 }

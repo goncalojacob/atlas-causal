@@ -7,6 +7,13 @@
     {
       "first": true,
       "on": "2026-01-01"
+    },
+    {
+      "fields": [
+        "retraction",
+        "status"
+      ],
+      "on": "2026-01-01"
     }
   ]
 }

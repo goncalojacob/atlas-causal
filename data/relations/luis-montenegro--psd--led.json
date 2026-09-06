@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "luis-montenegro--psd--led",
   "kind": "relation",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,16 +13,16 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-03",
-  "revised": null,
+  "revised": "2026-09-06",
   "origin": {
     "tool": "assistant"
   },
+  "retraction": {
+    "on": "2026-09-06",
+    "reason": "Retracted in M30a-2 and re-filed as the tenure \"luis-montenegro-psd-2022\": who led a body is an office somebody held and not a link between two actors, because a relation's id is from--to--type and one person may lead one body more than once. The type \"led\" is deprecated and no active relation may take it; nothing this record claimed was changed in the move."
+  },
   "review": {
-    "status": "draft",
-    "flags": [
-      "date"
-    ],
-    "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source."
+    "status": "draft"
   },
   "sources": [
     {

@@ -10,7 +10,7 @@
 
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { cp, mkdtemp, readFile, rm } from 'node:fs/promises';
+import { cp, mkdtemp, readFile, rm, writeFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import path from 'node:path';
 import { execFile } from 'node:child_process';
@@ -30,10 +30,27 @@ const run = promisify(execFile);
 const TOOL = path.join(ROOT, 'tools', 'migrate', 'led-to-tenures.mjs');
 const TODAY = '2026-09-06';
 
+// A copy of the fixture dataset as it stood before the tool was run over it:
+// the pair's `led` relation active again, and the office and tenure it became
+// taken back out. The tool has already been run over the fixtures in the
+// repository — that is what put an office and a tenure there — so a scratch
+// copy alone would have nothing left to do, and the case being proved here is
+// what it does to a corpus that still has a `led` record in it.
+const RE_FILED_OFFICE = 'offices/leadership-of-fixture-actor-two.json';
+const RE_FILED_TENURE = 'tenures/fixture-actor-one-fixture-actor-two-1210.json';
+const FIXTURE_LED = 'relations/fixture-actor-one--fixture-actor-two--led.json';
+
 async function scratch() {
   const dir = await mkdtemp(path.join(tmpdir(), 'led-to-tenures-'));
-  await cp(FIXTURE_DATA, path.join(dir, 'data'), { recursive: true });
-  return { dir, data: path.join(dir, 'data') };
+  const data = path.join(dir, 'data');
+  await cp(FIXTURE_DATA, data, { recursive: true });
+  await rm(path.join(data, RE_FILED_OFFICE));
+  await rm(path.join(data, RE_FILED_TENURE));
+  const led = await read(data, FIXTURE_LED);
+  delete led.retraction;
+  await writeFile(path.join(data, FIXTURE_LED),
+    `${JSON.stringify({ ...led, status: 'active', revised: null }, null, 2)}\n`, 'utf8');
+  return { dir, data };
 }
 
 const read = async (data, rel) => JSON.parse(await readFile(path.join(data, rel), 'utf8'));
@@ -185,9 +202,9 @@ test('the tool run over a scratch copy of the fixtures leaves a corpus that stil
     const first = await run(process.execPath, [TOOL, '--data', data, '--today', TODAY]);
     assert.match(first.stdout, /1 office\(s\), 1 tenure\(s\), 1 tombstone\(s\)/);
 
-    const office = await read(data, 'offices/leadership-of-fixture-actor-two.json');
-    const tenure = await read(data, 'tenures/fixture-actor-one-fixture-actor-two-1210.json');
-    const tomb = await read(data, 'relations/fixture-actor-one--fixture-actor-two--led.json');
+    const office = await read(data, RE_FILED_OFFICE);
+    const tenure = await read(data, RE_FILED_TENURE);
+    const tomb = await read(data, FIXTURE_LED);
     assert.equal(office.of, 'fixture-actor-two');
     assert.equal(tenure.person, 'fixture-actor-one');
     assert.equal(tenure.office, office.id);
@@ -209,7 +226,7 @@ test('the tool run over a scratch copy of the fixtures leaves a corpus that stil
     // Idempotent: a second run finds the work done and writes nothing.
     const again = await run(process.execPath, [TOOL, '--data', data, '--today', '2026-09-07']);
     assert.match(again.stdout, /0 office\(s\), 0 tenure\(s\), 0 tombstone\(s\), 1 already re-filed/);
-    assert.deepEqual(await read(data, 'tenures/fixture-actor-one-fixture-actor-two-1210.json'), tenure);
+    assert.deepEqual(await read(data, RE_FILED_TENURE), tenure);
   } finally {
     await rm(dir, { recursive: true, force: true });
   }

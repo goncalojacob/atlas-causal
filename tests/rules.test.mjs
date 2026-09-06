@@ -281,7 +281,7 @@ test('rule 11: a retired actor cannot be referenced by an active event', async (
   assert.ok(hits.some((e) => e.id === 'fixture-event-a' && e.path === '/actors/0/actor'), messages(r));
   // A relation is a reference like any other: an active one naming a retired
   // actor is the same error from both ends.
-  assert.ok(hits.some((e) => e.id === 'fixture-actor-one--fixture-actor-two--led' && e.path === '/from'), messages(r));
+  assert.ok(hits.some((e) => e.id === 'fixture-actor-one--fixture-actor-two--member-of' && e.path === '/from'), messages(r));
   // Retired and unreferenced is fine — by no event, no relation and no
   // tenure, the third kind of reference an actor can be named by.
   r = await run((fx) => {
@@ -296,10 +296,15 @@ test('rule 11: a retired actor cannot be referenced by an active event', async (
 });
 
 test('warnings: an unused actor, and an event outside an actor\'s dates', async () => {
-  // Unused means named by no event and standing in no relation: an actor
-  // reachable from another actor's card is used.
+  // Unused means named by no event, standing in no relation and holding no
+  // office: an actor reachable from another actor's card is used. The office
+  // is the fourth kind of reference and it goes with its tenure, which would
+  // otherwise be a turn at a post that is not there.
   let r = await run((fx) => {
     fx.records = fx.records.filter((rec) => rec.kind !== 'relation' || rec.to !== 'fixture-actor-two');
+    const offices = fx.records.filter((rec) => rec.kind === 'office' && rec.of === 'fixture-actor-two').map((o) => o.id);
+    fx.records = fx.records.filter((rec) => !(rec.kind === 'office' && offices.includes(rec.id)));
+    fx.records = fx.records.filter((rec) => !(rec.kind === 'tenure' && offices.includes(rec.office)));
     for (const rec of fx.records) {
       if (rec.kind === 'event') rec.actors = (rec.actors ?? []).filter((a) => a.actor !== 'fixture-actor-two');
     }

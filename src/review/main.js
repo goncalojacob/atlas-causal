@@ -15,7 +15,7 @@ import { html } from '../util/dom.js';
 import { expandSpine } from '../data.js';
 import { loadSchemas } from '../validate/schemas.js';
 import {
-  buildQueue, flagCounts, toolCounts, filterQueue, sortQueue, isDraft, labelOf,
+  buildQueue, flagCounts, toolCounts, filterQueue, sortQueue, isDraft, inQueue, labelOf,
   SORT_KEYS, SORT_LABELS, BY_HAND,
 } from './queue.js';
 import { createList } from './list.js';
@@ -288,7 +288,7 @@ function render({ topology, summary, shardOf, historyOf, schemas, citersOf, sear
     shards.set(kind, { records: [], warnings: [] });
     try {
       const shard = await shardOf(kind);
-      shards.set(kind, { records: (shard.records ?? []).filter(isDraft), warnings: shard.warnings ?? [] });
+      shards.set(kind, { records: (shard.records ?? []).filter(inQueue), warnings: shard.warnings ?? [] });
     } catch (error) {
       shards.delete(kind);
       countEl.textContent = `The ${kind} queue could not be fetched: ${error.message}`;

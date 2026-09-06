@@ -114,7 +114,19 @@ function envelopeFrom(relation, { id, kind, today, sources = [] }) {
 export function officeRecord(relation, { id, title, today }) {
   return inEnvelopeOrder({
     ...envelopeFrom(relation, { id, kind: 'office', today, sources: [] }),
-    review: { status: 'draft', note: officeSummaryOf(title, relation.to) },
+    // Unlike the tenure, an office is a record that did not exist before
+    // today: nothing was re-filed into it, so it is created now and has never
+    // been revised. Only its authorship and its draft standing come from the
+    // relations it was read off.
+    created: today,
+    revised: null,
+    // The office inherits the standing of the records it was read off and
+    // invents none: the twelve are drafts, so the six are, and nobody has
+    // read this one either. A relation that records no standing gives the
+    // office none — writing `draft` onto a corpus that has never claimed one
+    // would put a status on it that migration 4 could not reconstruct after a
+    // rollback, which is deviation 307's reason for the fixtures having none.
+    review: relation.review ? { status: 'draft', note: officeSummaryOf(title, relation.to) } : undefined,
     of: relation.to,
     title,
     category: 'party-leadership',
@@ -141,8 +153,12 @@ export function tenureRecord(relation, { id, office, today }) {
   });
 }
 
+// It opens with the sentence migration 4 knows how to read back out of a
+// note, and the retraction is dated the day the record was revised, because
+// `down` refuses a reason it could not put back and the round trip under
+// every migration is the one safety net there is (migrate.js, RETRACTION_TEXT).
 export function tombstoneReason(relation, tenureId) {
-  return `Re-filed as the tenure "${tenureId}" in M30a-2: who led a body is an office somebody held and not a link between two actors, because a relation's id is from--to--type and one person may lead one body more than once. The type "led" is deprecated and no active relation may take it; nothing of this record's claim was changed in the move.`;
+  return `Retracted in M30a-2 and re-filed as the tenure "${tenureId}": who led a body is an office somebody held and not a link between two actors, because a relation's id is from--to--type and one person may lead one body more than once. The type "led" is deprecated and no active relation may take it; nothing this record claimed was changed in the move.`;
 }
 
 // The plan, worked out in memory: which offices to write, which tenures, and

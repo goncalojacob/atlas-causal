@@ -60,11 +60,15 @@ test('a relation is headed one way on one card and the other way on the other', 
   assert.match(state, /Synthetic: a regime of a synthetic state\./);
 });
 
-test('two relations between the same pair are two groups, in a fixed order', async () => {
+// The pair used to stand in two relations at once, `member-of` and `led`.
+// M30a-2 re-filed the second as a tenure and left a tombstone, and a card
+// draws active relations only, so one group is left at each end. What the
+// `led` record said is a tenure now and M30b is what draws it.
+test('a relation is one group at each end, in a fixed order', async () => {
   const ctx = context(atlas);
-  assert.deepEqual(headings(actorCardHtml(ctx, atlas.actors.get('fixture-actor-one'))), ['Member of', 'Led']);
-  assert.deepEqual(headings(actorCardHtml(ctx, atlas.actors.get('fixture-actor-two'))), ['Members', 'Led by']);
-  assert.equal(count(actorCardHtml(ctx, atlas.actors.get('fixture-actor-one')), 'relations'), '2');
+  assert.deepEqual(headings(actorCardHtml(ctx, atlas.actors.get('fixture-actor-one'))), ['Member of']);
+  assert.deepEqual(headings(actorCardHtml(ctx, atlas.actors.get('fixture-actor-two'))), ['Members']);
+  assert.equal(count(actorCardHtml(ctx, atlas.actors.get('fixture-actor-one')), 'relations'), '1');
 });
 
 test('an actor in no relation has no relations section at all', async () => {
@@ -73,7 +77,7 @@ test('an actor in no relation has no relations section at all', async () => {
   assert.doesNotMatch(html, /data-section="relations"/);
 });
 
-test("the atlas's own cards: Portugal's four regimes and what Salazar led", async () => {
+test("the atlas's own cards: Portugal's four regimes, and Salazar's turn is not one", async () => {
   const atlas = await atlasOf(path.join(ROOT, 'data'));
   const ctx = context(atlas);
 
@@ -94,15 +98,23 @@ test("the atlas's own cards: Portugal's four regimes and what Salazar led", asyn
   for (const [i, at] of positions.entries()) assert.notEqual(at, -1, memberships[i]);
   assert.deepEqual(positions, [...positions].sort((a, b) => a - b), 'memberships in date order');
 
+  // Salazar stood in exactly one relation, `led`, and M30a-2 re-filed it as
+  // the tenure `salazar-prime-minister-1932`. The record is in the atlas and
+  // nothing draws it until M30b, so his card has no relations section at all
+  // — which is the visible cost of the re-filing and is meant to be paid back
+  // by the office strip.
   const salazar = actorCardHtml(ctx, atlas.actors.get('salazar'));
-  assert.deepEqual(headings(salazar), ['Led']);
-  assert.match(salazar, /data-action="actor" data-id="estado-novo"/);
-  assert.match(salazar, /1932 – 1968/);
+  assert.deepEqual(headings(salazar), []);
+  assert.doesNotMatch(salazar, /data-section="relations"/);
+  const tenure = atlas.tenures.get('salazar-prime-minister-1932');
+  assert.ok(tenure, 'the claim is a tenure now');
+  assert.equal(tenure.office, 'prime-minister-of-portugal');
+  assert.deepEqual(tenure.when, { start: 1932, end: 1968 });
 
-  // The regime's own card is where all six directions meet.
+  // The regime's own card keeps every direction that is still a relation.
   assert.deepEqual(
     headings(actorCardHtml(ctx, atlas.actors.get('estado-novo'))),
-    ['Regime of', 'Parts of it', 'Led by', 'Allied with'],
+    ['Regime of', 'Parts of it', 'Allied with'],
   );
   // Both successions are drawn from the colony's end and the state's.
   assert.deepEqual(headings(actorCardHtml(ctx, atlas.actors.get('british-india'))), ['Succeeded by']);

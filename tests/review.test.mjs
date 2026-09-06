@@ -9,7 +9,7 @@ import assert from 'node:assert/strict';
 import path from 'node:path';
 import { readFile } from 'node:fs/promises';
 import {
-  DRAFT_AUTHOR, KIND_ORDER, NO_IDENTIFIER, isDraft, countDrafts, labelOf, warningsById, flagsOf,
+  DRAFT_AUTHOR, KIND_ORDER, NO_IDENTIFIER, isDraft, inQueue, countDrafts, labelOf, warningsById, flagsOf,
   buildQueue, groupByKind, flagCounts, filterQueue, progressOf, digestOf,
   degreesOf, sortQueue, toolCounts, BY_HAND,
 } from '../src/review/queue.js';
@@ -56,6 +56,18 @@ test('a draft is a review status, and not a name in authors', () => {
   assert.ok(!isDraft(undefined));
   assert.ok(!isDraft({ review: { status: 'reviewed' } }));
   assert.equal(countDrafts([draft(), draft({ id: 'b' }), { authors: DRAFT }]), 2);
+
+  // Nobody is waiting on a tombstone. `isDraft` still says "nobody has read
+  // this", which is true of a withdrawn record too; the queue asks the other
+  // question as well, because signing one would put a reviewer's name on a
+  // claim the atlas no longer makes. M30a-2's twelve `led` tombstones keep
+  // the draft marker in `authors`, so migration 4 puts `draft` back on them.
+  const withdrawn = draft({ id: 'c', status: 'retracted' });
+  assert.ok(isDraft(withdrawn));
+  assert.ok(!inQueue(withdrawn));
+  assert.ok(inQueue(draft()), 'a record with no status at all is in the corpus');
+  assert.equal(countDrafts([draft(), withdrawn]), 1);
+  assert.deepEqual(buildQueue([draft(), withdrawn]).map((r) => r.id), [draft().id]);
 });
 
 test('a record is named in the list by the thing it is', () => {

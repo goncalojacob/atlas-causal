@@ -151,7 +151,10 @@ test('rules 6 and 12: a narrative is cited and signed like everything else', asy
 test('a walk may name an actor, a relation or a presence', async () => {
   for (const ref of [
     'fixture-actor-one',
-    'fixture-actor-one--fixture-actor-two--led',
+    // The pair's still-standing relation. The `led` one beside it is a
+    // tombstone since M30a-2 and walking a tombstone is rule 11's, which is
+    // the case below.
+    'fixture-actor-one--fixture-actor-two--member-of',
     'fixture-polity-four-1120',
   ]) {
     const result = await run({

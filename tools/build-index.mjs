@@ -16,7 +16,7 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 import { buildSpine, buildTopology, byId, citerFiles, rolesInUse } from '../src/validate/core.js';
 import { checkRules } from '../src/validate/rules.js';
 import { createRegionDeriver } from '../src/util/geo.js';
-import { degreesOf, digestOf, isDraft, KIND_ORDER } from '../src/review/queue.js';
+import { degreesOf, digestOf, inQueue, KIND_ORDER } from '../src/review/queue.js';
 import { searchIndexFor } from '../src/search.js';
 import { explanationShards, shardName } from '../src/explanations.js';
 import { licensingTable } from '../src/licensing.js';
@@ -174,7 +174,7 @@ export async function buildIndex(dataDir = DEFAULT_DATA, prepared = {}) {
   // fifteen rows (health review B, finding 7). A reviewer works through one
   // kind at a time and the queue was always grouped that way, so that is
   // where the file divides.
-  const drafts = records.filter(isDraft);
+  const drafts = records.filter(inQueue);
   const degrees = degreesOf(topology);
   const warnings = (prepared.warnings ?? checkRules(records, topology).warnings)
     .map((w) => ({ id: w.id, kind: w.kind, rule: w.rule, message: w.message }))
