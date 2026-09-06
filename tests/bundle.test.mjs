@@ -382,6 +382,22 @@ test('the form builds an actor, and puts actors with roles on an event', async (
   // An actor without a source is not submittable, as rule 6 now says.
   assert.equal(everythingCited({ records: [{ ...actor, sources: [] }] }), false);
 
+  // Nor is a tenure: who held a post and when is a claim like any other, and
+  // the submit control hangs on this rather than on rule 6's error list.
+  const tenure = buildRecord('tenure', {
+    ...emptyValues('tenure'),
+    id: 'fixture-tenure-new',
+    person: 'fixture-actor-one',
+    office: 'fixture-office-one',
+    start: '1300',
+    citations: [{ source: 'fixture-source-1', locator: 'p. 2' }],
+  }, CONTEXT);
+  assert.equal(everythingCited({ records: [tenure] }), true);
+  assert.equal(everythingCited({ records: [{ ...tenure, sources: [] }] }), false);
+  // An office is the exception on purpose: it asserts that a post existed,
+  // which is not an argument about the world (rule 6's exemption).
+  assert.equal(everythingCited({ records: [{ kind: 'office', sources: [] }] }), true);
+
   const event = buildRecord('event', {
     ...eventValues,
     actors: [
