@@ -16,6 +16,7 @@ import { formatInterval, formatYear, defaultCalendar } from '../util/dates.js';
 import { laneExplain } from '../lanes.js';
 import { horizonHtml } from './horizon.js';
 import { eventsOfFocus } from '../lens.js';
+import { largeEvent } from '../large.js';
 import { sectionHtml, openSection } from './sections.js';
 import { EDGE_TYPE_LABEL } from '../vocab.js';
 
@@ -164,6 +165,26 @@ function partOfEventHtml(ctx, event) {
   return `<p class="part-of-event">Part of
     <button type="button" class="link" data-action="select" data-id="${esc(parent.id)}">${esc(parent.title)}</button>
     <span class="when">${esc(formatInterval(parent.when))}</span></p>`;
+}
+
+// A large event is drawn unlike every other event — a band across the whole
+// timeline, and a wash, a line in the corner or nothing at all on the map —
+// and a reader who is looking for its mark deserves to be told which of the
+// three it is and why, rather than hunting for a dot that was never drawn
+// (m30b-brief, A8). Which it is, is `large.js`'s answer and not a second one.
+export function largeEventHtml(ctx, event) {
+  const large = largeEvent(ctx.atlas, event);
+  if (!large) return '';
+  const onTheMap = large.scope === 'worldwide'
+    ? 'the map names it in its corner instead of washing the whole world, which would put a film over every coastline and mark'
+    : large.region
+      ? `the map washes ${esc(ctx.laneLabel(large.region))} rather than putting a dot in one city`
+      : 'it is in no lane, so the map has nothing to wash and it is on the timeline alone';
+  const why = large.reason === 'scope'
+    ? `Its record says its reach is <strong>${esc(event.scope)}</strong>.`
+    : 'The events inside it fall in more than one lane.';
+  return `<p class="large-event muted">A large event: a band across the whole timeline, and
+    ${onTheMap}. ${why}</p>`;
 }
 
 // What "Focus only on this" would leave, said once on the card of an event
@@ -350,6 +371,7 @@ export function eventCardHtml(ctx, { event, found, state, remembered = null }) {
       ${subtreeLensHtml(ctx, event)}
       ${actorChipsHtml(ctx, event, highlightedActor?.id ?? null)}
       ${drawnHtml(ctx, event, state)}
+      ${largeEventHtml(ctx, event)}
       <div class="head-links">${ctx.entryLink('event', event.id)}${ctx.wikipediaHtml(event)}${ctx.discussLink('event', event.id)}</div>
     </header>
     <section class="summary" data-slot="summary"><p class="muted">Loading…</p></section>

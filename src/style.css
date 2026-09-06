@@ -1187,6 +1187,12 @@ svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align:
    it is a fact about the record rather than one of the questions the card
    answers: `parent` never enters the adjacency. */
 .panel .part-of-event { margin: var(--space-2) 0 0; font-size: var(--text-sm); color: var(--ink-soft); }
+/* Two more facts about how this event is drawn rather than about what it was:
+   what a lens on it would keep, and — where it is a large event — the band,
+   the wash and the corner it is drawn as instead of a mark. Beside "Part of"
+   and "Drawn in …", at the size those are: the head says how to read the
+   pictures, and the sections below answer the questions. */
+.panel .subtree-lens, .panel .large-event { margin: var(--space-2) 0 0; font-size: var(--text-sm); }
 /* The note beside a role: what this actor did in *this* event, on a line of
    its own under the row so that a phrase never pushes the lane off the end. */
 .panel .actor-row .row-note { grid-column: 1 / -1; font-size: var(--text-sm); }

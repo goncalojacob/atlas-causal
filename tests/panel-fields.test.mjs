@@ -136,6 +136,22 @@ test('a parent says in one line what focusing only on it would keep', () => {
   assert.doesNotMatch(leaf, /subtree-lens/, 'a leaf lens is one event and needs no sentence');
 });
 
+// A8: a large event is drawn as a band and a wash rather than as a mark, and
+// the card says which of the three it is, so a reader is not hunting for a dot
+// that was never drawn.
+test('a large event says on its card how it is drawn, and why', () => {
+  const parent = eventCardHtml(ctx, { event: atlas.events.get('fixture-event-f'), found: { via: [] }, state });
+  const line = parent.match(/<p class="large-event muted">([\s\S]*?)<\/p>/)?.[1] ?? '';
+  assert.match(line, /A large event: a band across the whole timeline/);
+  assert.match(line, /the map washes Fixture lane 3/);
+  assert.match(line, /Its record says its reach is <strong>regional<\/strong>/);
+
+  // An ordinary event says nothing of the kind: it has a mark like everything
+  // else, and a line explaining that would be a line about nothing.
+  const plain = eventCardHtml(ctx, { event: atlas.events.get('fixture-event-h'), found: { via: [] }, state });
+  assert.doesNotMatch(plain, /large-event/);
+});
+
 test('being part of something changes no consequence and no cause', () => {
   const parent = atlas.events.get('fixture-event-f');
   // The parts are not consequences: what the card counts under Consequences
