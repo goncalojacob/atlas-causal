@@ -613,6 +613,17 @@ test('an office opens on a card that names the actor, the category and its holde
     await page.eval('document.querySelector(\'.panel .tenure-row [data-action="actor"]\').click();');
     await waitFor(page, 'return /actor=salazar/.test(location.search) && !/office=/.test(location.search);', 'the holder in the URL and the office out of it');
 
+    // A3: an office is one of the openings the trail carries, so Back names
+    // the post the reader came from. Without its branch in `openingLabel`
+    // this reads "← the atlas", which is the label for an opening the panel
+    // does not recognise and would be a card the reader cannot name.
+    await waitFor(page, 'return Boolean(document.querySelector(".panel .card-history .go-back"));',
+      'the trail on the holder\'s card');
+    assert.equal(
+      await page.eval('return document.querySelector(".panel .card-history .go-back").textContent.trim();'),
+      '← Prime Minister of Portugal',
+    );
+
     // And the card's own close control takes the office out of the URL
     // without opening anything in its place.
     await open(page, url('?office=prime-minister-of-portugal'));

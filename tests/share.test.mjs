@@ -32,6 +32,7 @@ test('a record\'s address is the page and the one parameter that opens it', () =
   assert.equal(recordUrl('source', 'maxwell-1995', { base }), `${base}?source=maxwell-1995`);
   assert.equal(recordUrl('place', 'lisbon', { base }), `${base}?place=lisbon`);
   assert.equal(recordUrl('actor', 'salazar', { base }), `${base}?actor=salazar`);
+  assert.equal(recordUrl('office', 'prime-minister-of-portugal', { base }), `${base}?office=prime-minister-of-portugal`);
   assert.equal(recordUrl('narrative', 'the-empire-unravels', { base }), `${base}?narrative=the-empire-unravels`);
   // An edge is walked, not opened, so it has no address of its own; nor has a
   // record with no id. Either way the page itself is still where it lives.
@@ -39,6 +40,25 @@ test('a record\'s address is the page and the one parameter that opens it', () =
   assert.equal(recordUrl('event', null, { base }), base);
   assert.equal(recordUrl('event', 'x'), '?selected=x');
   assert.equal(recordUrl('edge', 'x'), null);
+});
+
+// A3: an office is a card with an address, so the two links in its head have
+// to carry that address and not the bare page. `OPENING_OF` is what decides
+// it, and a kind missing from that table fails silently — the links are still
+// drawn, they just point at the atlas with nothing open.
+test('an office carries its own address into Discuss and into Edit', () => {
+  const base = 'https://example.test/index.html';
+  const seen = recordUrl('office', 'prime-minister-of-portugal', { base });
+  assert.equal(seen, `${base}?office=prime-minister-of-portugal`);
+  const notes = new URL(discussUrl('office', 'prime-minister-of-portugal', { url: seen })).searchParams.get('notes');
+  assert.match(notes, /Record: `office\/prime-minister-of-portugal`/);
+  assert.match(notes, /Seen at: https:\/\/example\.test\/index\.html\?office=prime-minister-of-portugal$/m);
+  // And the form opens on the record itself, which is the other half: the
+  // kind has to be one the form writes as well as one the page can open.
+  assert.deepEqual(
+    parseEdit(new URL(editUrl('office', 'prime-minister-of-portugal', { base })).searchParams.get('edit')),
+    { kind: 'office', id: 'prime-minister-of-portugal' },
+  );
 });
 
 // The reader's own URL used to go into the issue whole, box, window, horizon
