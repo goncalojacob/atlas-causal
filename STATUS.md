@@ -13,14 +13,52 @@ hundred lines again, cut it the same way.
 
 ## Last updated
 
-2026-09-06, after **M30a-2** (`docs/m30a-brief.md`, amendment A19: the second
-of M30a's three runs), on `m0`: **the twelve `led` relations are twelve
-tenures at six offices, and `led` is a type the atlas reads and no longer
-writes.** The one-off tool, the re-filing, `member-of` widened, and the
-`degree-zero` warning counting `startedBy`. Nothing is drawn (M30b draws) and
-nothing about events (M30a-3). 975 tests.
+2026-09-06, after **M30a-3** (`docs/m30a-brief.md`, amendment A19: the last of
+M30a's three runs), on `m0`: **an event can be part of another event, can say
+what kind of thing it was, and its roles are a vocabulary.** `parent` with
+rule 24, `scope`, `category`, a `note` beside a role, `region` optional
+everywhere, `historicalNames` on places, and the two closed lists in data.
+Nothing is drawn — M30b draws — and no record under `data/` changed but the
+Wikidata class table. **M30a is done.** 995 tests.
 
-**Nothing historical was added, and that was the whole job.** Every field of
+**Two vocabularies moved out of code and into data.** `data/roles.json` holds
+the 31 roles the owner approved on 5 September and `data/categories.json` the
+twelve categories of plan decision 13, each with a label and a line saying
+what it covers. Both are read by `tools/lib/read.mjs`, carried by
+`buildTopology` and named in the manifest, so the contribution form and the
+review dashboard run the same rules the CLI does. **114 of the 137 active
+events warn `role-unknown` today** — 142 distinct strings against a
+vocabulary of 31 — and none warns `category-unknown`, because no record
+carries a category yet. Both are warnings until M32b applies the mappings.
+
+**An absent list means no check, never an empty closed set.** A dataset with
+no `data/roles.json` is not a dataset whose every record is wrong: no file, no
+key in the topology, no key in the manifest, no warning. The fixtures have
+neither file, which is what makes them the test of it.
+
+**`parent` is a display fact and the rules say so.** Rule 24 asks the three
+things the shape cannot: the parent is an event, an active event's parent is
+active, and no chain of parents closes on itself. A child dated outside its
+parent is the warning `child-outside-parent`, as `actor-outside-when` is a
+warning, because the two intervals come from two records. Rules 4 and 5 never
+see it, `?chain=` is untouched, and the graph, the horizon and the convergence
+query are exactly what they were.
+
+**`region` stopped being required and started being reported.** An event with
+neither a place nor a region was refused by rule 10; it is drawn in no lane
+and warns `no-lane` now. Nothing in `data/` is in that state — every placeless
+event carries a lane — so this is a door opened rather than a wall knocked
+down.
+
+**The index derives two more things.** `subtreeWeight` is an event's weight
+plus every descendant's through `parent`, for the collapsed node M30b draws;
+it is omitted wherever it equals `weight`, which is every leaf. And the
+manifest carries `officesByEvent` and `tenuresByOffice`, so that M33's lanes
+are a lookup rather than a scan of every tenure per event.
+
+The two runs before it, kept because M30a is one milestone:
+
+**Nothing historical was added, and that was the whole job.** (M30a-2.) Every field of
 a tenure is the relation's own: the person is `from`, the years, the sources,
 the note, the whole `review` block and `origin` are carried across unchanged,
 `created` is the day the claim was written and `revised` the day it was
@@ -72,45 +110,6 @@ Dating the crown against an actor record that starts in 1886 would be an
 invented claim (A13), and rule 26's overlap check is skipped where an office
 has no interval. Who held them is M31's.
 
-**Three of them were the atlas not working.** The graph's pan-and-zoom
-`transform` was declared below the first `arrange()`, so opening the graph
-from a narrative step or from any shared `?from=&to=&view=graph` link threw
-before it could be drawn — every graph test passed because the default window
-is too wide to reach the assignment. An open actor or place with no `?focus=`
-was a lens on itself, and 350 of the 412 actors are polities imported with
-their borders and no event, so the search's commonest answer opened a blank
-map and a blank timeline; an actor with no events is not a lens now, the card
-says why, and the lens nobody asked for never removes the selection, the
-walked chain or the selected event's consequences. And the three tools that
-create records — `new-record.mjs` and both imports — wrote no `review.status`,
-so nothing they made was ever in the review queue: they write `draft`, and the
-validator warns about the 1,040 records already there with neither a status
-nor a signature.
-
-**The deploy was committing degraded histories.** `build-index` derives a
-record's versions from `git log`; `deploy.yml` checked out one commit deep, so
-all 1,006 histories collapsed to one version each, said `from: "git"` about
-it, and were written over the full ones on every run — and `compareIndex`
-exempted `history/` from rule 16 for exactly that reason, which made the rule
-false by construction for 1,006 of the 1,054 index files. `fetch-depth: 0`;
-`recordHistories` refuses a shallow clone and falls back to `revised` in the
-file; the exemption is gone.
-
-**A contribution's pull request carries the records and nothing else.**
-`contribution.yml` built the index and validated it in its own checkout, then
-committed `data/` alone, so every bundle that touched a source failed the
-gate on the base branch's `sources.html`; and the hashed index it did commit
-would have conflicted with the next deploy. It commits the seven record
-directories, `validate.yml` asks for `--index` only where a pull request
-touched `data/index/`, and `deploy.yml`'s header says so.
-
-**And the spine lost its indentation.** 837,425 bytes → **539,033**, the
-search shard 252,053 → **169,652**; gzip already hid most of it (67.5 → 60.3
-KB and 34.6 → 32.3 KB) and `JSON.parse`, which every page runs on every
-device, never did. `CLAUDE.md`'s layout tree, a cycle behind at 28 unnamed
-modules, names every module under `src/` and `tools/`, and a test holds the
-two together.
-
 ## Next
 
 The owner's list in full is in the history file. Still waiting:
@@ -148,13 +147,27 @@ In full in the history file. The ones that decide something:
   it**: a polity or an institution may be `member-of` an institution now.
   What is left is the data — **M31 re-types the ten** — and until it runs
   Portugal's card still says the wrong word.
-- **Does the role vocabulary close, and to what?** **Answered, 5 September:
-  the owner approved `docs/roles-mapping.md`** — the list of 31 — and M30a-1
-  records the approval here (amendment A16). So the vocabulary closes to those
-  31: M30a-3 writes `data/roles.json` and the `role-unknown` warning, and M32b
-  applies the mapping to the 163 strings in use and turns the warning into an
-  error. What is still open is only what the mapping does with the hedges that
-  belong in a summary rather than in a role.
+- **Does the role vocabulary close, and to what? Answered and half done.**
+  The owner approved `docs/roles-mapping.md` — the list of 31 — on 5
+  September, and **M30a-3 wrote `data/roles.json` and the `role-unknown`
+  warning**: 114 of the 137 active events warn today. What is left is the data
+  — **M32b applies the mapping** to the 142 strings still in use, fills the
+  notes and turns the warning into an error. What is still open is only what
+  the mapping does with the hedges that belong in a summary rather than in a
+  role; the `note` beside the role is where they go.
+- **Seventeen Wikidata classes have no category** (amendment A17). Fifty of
+  the sixty-seven event classes in `data/imports/wikidata-seeds.json` are
+  filled — the wars, the treaties, the elections, the coup, the disasters and
+  the killings. These are the ones whose mapping is a judgement rather than a
+  synonym, and the import writes no category for them: **the three
+  referendums** (Q43109, Q2515494, Q126723767 — a vote, but not an election of
+  anybody); **the violent crimes** (Q53706, Q806824, Q2334719, Q5711091
+  robbery, Q365680 assault, Q891854 bomb attack, Q2223653 terrorist attack,
+  Q3199915 massacre, Q81672 attempted murder — `death` fits a killing and not
+  an attempt or a theft); **the four empty classes** (Q1190554 occurrence,
+  Q1656682 event, Q13418847 historical event, Q3454916 untyped), which say
+  nothing about what a thing was; and **Q102100590, a NATO operation**, which
+  may be a war or may not.
 - **89 more CShapes codes** are one id for a dependency and the state after
   it; which are two things is a judgement, not an import.
 - **When contributions open to strangers**; whether four container kinds are
@@ -388,6 +401,60 @@ In full in the history file. The ones that decide something:
      exactly, run as a watcher that wakes the run when the line lands instead
      of costing a model turn every ten minutes.
 
+### M30a-3, the event's fields
+
+342. **The fixtures carry neither `roles.json` nor `categories.json`, on
+     purpose.** A8 asks for a test that an absent list means no check at all,
+     and the honest test of that is a whole corpus without one rather than a
+     topology built to lack it. So the fixture event's `category` is
+     unchecked, and every case that wants a vocabulary hands the repository's
+     own to `buildTopology` — which is how every rule 26 case is written.
+343. **The five new fields are carried across a save, not drawn.** M30b owns
+     the form and the review editor for them, but the round-trip byte-identity
+     test means a save must not *delete* a field the editor cannot see. So
+     `parent`, `scope`, `category` and a place's `historicalNames` are a
+     `KEPT_KEYS` table beside `IDENTITY_KEYS` in `bundle.js`, and a role's
+     `note` travels in the actor row's value object with no input drawn for
+     it. The day M30b adds the inputs, each key moves into that kind's
+     `fields`.
+344. **The fixtures' parent is an event that was already there.**
+     `fixture-event-f` (1260–1300) with `fixture-event-h` and
+     `fixture-event-t` inside it, rather than three new records: adding events
+     would have moved every count the suite asserts, for a shape three
+     existing records already had.
+345. **A fixture place carries `historicalNames` though the brief's fixture
+     list does not name it.** A kept key with no record carrying it is a key
+     nothing tests, and deviation 343 is exactly the kind of plumbing that
+     fails silently.
+346. **`role-unknown` is one warning a record, naming the roles.** One a line
+     would be two thousand lines of the same sentence over this dataset, and
+     a reviewer opens the record once. `category-unknown` is one a record
+     because an event has one category.
+347. **Rule 24 asks whether the parent is active as well.** The brief gives
+     the rule "resolves to an active event", and M30a-2 split the same
+     question about a tenure's `startedBy` between rules 3 and 11. Here all
+     three checks are rule 24's: the cycle walk has to resolve the chain
+     anyway, and a rule that reads a reference twice is a rule that can
+     disagree with itself.
+348. **`officesByEvent` maps an event to *tenure* ids.** §3 of the brief says
+     "the office ids whose tenures hold a person the event names"; A10, which
+     overrides it, defines the values as tenure ids — which is the more useful
+     of the two, since the office is one lookup away and the tenure is what
+     the strip draws.
+349. **The manifest carries the vocabularies whole**, `{ id, label,
+     description }` each, and not just the ids: M30b's legend and the form's
+     select need the label, and a second fetch for twelve short lines would be
+     a request to save nothing.
+350. **`checkImportSeeds` takes a third argument.** A17's check is against
+     `data/categories.json`, which the function had no way to see; it is
+     passed in, and absent means unchecked, exactly as it does for the two
+     warnings.
+351. **The H9 account left `STATUS.md`'s "Last updated".** Three milestones
+     have landed since; the file is the position and not the history, its own
+     header says to cut it when it grows, and H9's account is in
+     `docs/health/h9-brief.md`, in the review it answers and in the git log.
+     M30a-1's and M30a-2's paragraphs are kept.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
@@ -483,3 +550,5 @@ M30a-1 done
 M30a-2 started 2026-09-06T13:11:20Z by scheduled
 M30a-2 done
 M30a-3 started 2026-09-06T13:54:28Z by scheduled
+M30a-3 done
+M30a done
