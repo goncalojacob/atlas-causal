@@ -585,28 +585,39 @@ test('the timeline lights a reachable event past the margin, as the hint promise
   });
 });
 
-// A14: `?office=` is an address as of M30a-1 and the strips are M30b's, so
-// what the address opens until then is a three-line card. An address that
-// opened an empty sheet would be worse than no address at all.
-test('an office opens on a placeholder that names the actor and the category', { skip }, async () => {
+// A3 and A4: `?office=` opens a real card — the actor it belongs to, the
+// category, and every turn at the post in order — and closes on its own
+// control. A tenure has no address, so a row opens the person who held it.
+test('an office opens on a card that names the actor, the category and its holders', { skip }, async () => {
   await withBrowser(async (page, url) => {
-    // The office's card has no sections, which is what `open` waits for by
-    // default: the card itself is the readiness signal here.
-    const ready = 'return Boolean(document.querySelector(".panel .office-card"));';
-    await open(page, url('?office=prime-minister-of-portugal'), ready);
+    await open(page, url('?office=prime-minister-of-portugal'));
     const card = await page.eval(`const el = document.querySelector('.panel .office-card');
       return {
         title: el.querySelector('h2').textContent,
         meta: el.querySelector('.meta').textContent.replace(/\\s+/g, ' ').trim(),
         actor: el.querySelector('.meta [data-action="actor"]')?.dataset.id ?? null,
+        holders: [...el.querySelectorAll('.tenure-row')].map((r) => r.dataset.tenure),
+        people: [...el.querySelectorAll('.tenure-row [data-action="actor"]')].map((b) => b.dataset.id),
+        sources: Boolean(el.querySelector('[data-section="sources"]')),
+        cites: el.querySelector('.office-cites')?.textContent.trim().slice(0, 20) ?? null,
       };`);
     assert.equal(card.title, 'Prime Minister of Portugal');
     assert.equal(card.actor, 'portugal');
     assert.match(card.meta, /Portugal · Head of government/);
-    // And the actor it belongs to is a click away: the placeholder is a card
-    // in the atlas, not a dead end.
-    await page.eval('document.querySelector(\'.panel .office-card [data-action="actor"]\').click();');
-    await waitFor(page, 'return /actor=portugal/.test(location.search) && !/office=/.test(location.search);', 'the actor in the URL and the office out of it');
+    assert.deepEqual(card.holders, ['salazar-prime-minister-1932', 'marcelo-caetano-prime-minister-1968']);
+    assert.deepEqual(card.people, ['salazar', 'marcelo-caetano']);
+    assert.equal(card.sources, false, 'an office cites nothing and has no Sources section');
+    assert.match(card.cites, /^An office says that/);
+
+    // A row opens the person, not the tenure: a tenure has no card.
+    await page.eval('document.querySelector(\'.panel .tenure-row [data-action="actor"]\').click();');
+    await waitFor(page, 'return /actor=salazar/.test(location.search) && !/office=/.test(location.search);', 'the holder in the URL and the office out of it');
+
+    // And the card's own close control takes the office out of the URL
+    // without opening anything in its place.
+    await open(page, url('?office=prime-minister-of-portugal'));
+    await page.eval('document.querySelector(\'.panel [data-action="clear-office"]\').click();');
+    await waitFor(page, 'return !/office=/.test(location.search);', 'the office out of the URL');
 
     // An id that names nothing says so, rather than showing the intro as if
     // the reader had asked for nothing.

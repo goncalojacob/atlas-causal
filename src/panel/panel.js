@@ -4,7 +4,8 @@
 // text of a card the reader has already left, and the helpers every card
 // needs — citations, the link to an event, the lane's name. The cards
 // themselves are one file each: event.js, source.js, place.js, actor.js,
-// cluster.js. Which one is shown is decided in render() and nowhere else.
+// office.js, cluster.js. Which one is shown is decided in render() and
+// nowhere else.
 
 import { esc, safeUrl } from '../util/esc.js';
 import { formatInterval, bounds, isValidYear } from '../util/dates.js';
@@ -18,9 +19,9 @@ import { lanesFor } from '../lanes.js';
 import { shortestPaths, pathTo } from '../graph.js';
 import { chainEdges } from '../chain.js';
 import { identifiers, containerText } from '../citation.js';
-import { OFFICE_CATEGORY_LABEL } from '../vocab.js';
 import { renderEventCard, drawnHtml } from './event.js';
 import { renderActorCard } from './actor.js';
+import { renderOfficeCard } from './office.js';
 import { renderPlaceCard, placeEventsSection, EVENTS_SECTION } from './place.js';
 import { renderSourceCard } from './source.js';
 import { clusterHtml } from './cluster.js';
@@ -134,6 +135,9 @@ export function createPanel(container, {
       }
       case 'clear-place':
         state.set({ place: null });
+        break;
+      case 'clear-office':
+        state.set({ office: null });
         break;
       case 'clear-actor':
         state.set({ actor: null });
@@ -436,33 +440,6 @@ export function createPanel(container, {
       <p class="muted">${n} events, ${[...atlas.edges.values()].filter((e) => e.status === 'active').length} links, ${atlas.actors.size} actors, ${atlas.sources.size} sources.${fixtures ? ' Synthetic fixtures: nothing here is history.' : ''}</p></section>`;
   }
 
-  // The office's card, which M30b draws properly: the title, the actor whose
-  // office it is, and the category. It is here and not in a module of its own
-  // because it is a placeholder — `?office=` is an address as of M30a-1, and
-  // an address that opened an empty sheet until the interface half landed
-  // would be worse than no address at all (amendment A14). The tenures are
-  // deliberately not listed: the strip is M30b's, and a bare list of ids
-  // would be a picture nobody asked for.
-  function officeCardHtml(office) {
-    const of = atlas.actors.get(office.of) ?? null;
-    const belongs = of
-      ? `<button type="button" class="link" data-action="actor" data-id="${esc(of.id)}">${esc(of.name)}</button>`
-      : esc(office.of ?? '');
-    const category = OFFICE_CATEGORY_LABEL[office.category] ?? office.category ?? '';
-    const held = office.when ? ` · ${esc(formatInterval(office.when))}` : '';
-    return `<section class="card office-card">
-      ${historyHtml()}
-      <h2>${esc(office.title ?? office.id)}</h2>
-      <p class="meta">${belongs} · ${esc(category)}${held}</p>
-      <p class="muted">Who held this office is not drawn yet.</p>
-      ${discussLink('office', office.id)}
-    </section>`;
-  }
-
-  function renderOfficeCard(office) {
-    container.innerHTML = officeCardHtml(office);
-  }
-
   function notFound(kind, id) {
     container.innerHTML = `<section class="intro"><h2>Not found</h2><p>No ${esc(kind)} with id <code>${esc(id)}</code>.</p></section>`;
   }
@@ -587,8 +564,11 @@ export function createPanel(container, {
       }
       if (s.office) {
         const found = atlas.resolve(s.office);
-        if (found && found.kind === 'office') renderOfficeCard(found.record);
-        else notFound('office', s.office);
+        if (found && found.kind === 'office') {
+          renderOfficeCard(ctx, {
+            container, office: found.record, mine, state: s, remembered: readOpenSection(storage),
+          });
+        } else notFound('office', s.office);
         return;
       }
       if (s.place) {

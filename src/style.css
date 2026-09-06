@@ -1164,6 +1164,15 @@ svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align:
 .panel .part-of .narrative-row { display: flex; flex-wrap: wrap; gap: var(--space-2); align-items: baseline; }
 .panel .cluster-list .when { min-width: 4ch; display: inline-block; }
 
+/* --- offices --------------------------------------------------------- */
+
+/* The line under the holders, saying why there is no Sources section: an
+   office asserts that the post exists and nothing more, and the sources are
+   on the tenures. Quiet, because it is a note about the model and not a
+   claim about the post. */
+.panel .office-cites { font-size: var(--text-sm); margin: var(--space-3) 0 0; }
+.panel .tenure-row .row-meta .link { font-style: normal; }
+
 /* --- places ---------------------------------------------------------- */
 
 .panel .place-events .when { min-width: 4ch; display: inline-block; }

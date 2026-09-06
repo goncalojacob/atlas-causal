@@ -158,7 +158,8 @@ src/graph-view/layout-worker.js  the layout on a thread of its own; it fetches n
 src/graph-view/layout-message.js  pure: what crosses to that thread and back — ids, years, weights and lanes, and no records
 src/timeline.js            one lane per region; the window as a band with two handles; bars stack
 src/panel/panel.js         the shell: container, clicks, load token, what the cards share
-src/panel/event.js         one card each: event.js, source.js, place.js, actor.js, cluster.js, narrative.js;  horizon.js  the "led to by year X" section; the actor card also lists its relations, both ways round
+src/panel/event.js         one card each: event.js, source.js, place.js, actor.js, office.js, cluster.js, narrative.js;  horizon.js  the "led to by year X" section; the actor card also lists its relations, both ways round
+src/panel/office.js        the office card — the actor it belongs to, its category, every turn at it in order — and the tenure strip the actor card draws from the same list
 src/panel/sections.js      the shape every card shares: a collapsible section per question, its count in the header, and which one opens
 entry/<id>.html            GENERATED: the static rendering of a record that carries a body, canonical to entry.html?id=
 src/entry/entry.js         pure: a record's full entry as markup, from the record and what it cites;  preview.js  the same prose as one paragraph, for a card;  main.js  bootstrap for entry.html
