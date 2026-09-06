@@ -1,10 +1,12 @@
 {
   "schema": 1,
-  "id": "portugal--cplp--allied-with",
+  "id": "portugal--council-of-europe--member-of",
   "kind": "relation",
   "status": "active",
   "supersededBy": null,
-  "aliases": [],
+  "aliases": [
+    "portugal--council-of-europe--allied-with"
+  ],
   "authors": [
     {
       "name": "Claude (assistant draft, unreviewed)",
@@ -13,7 +15,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": null,
+  "revised": "2026-09-06",
   "origin": {
     "tool": "assistant"
   },
@@ -35,11 +37,11 @@
     }
   ],
   "from": "portugal",
-  "to": "cplp",
-  "type": "allied-with",
+  "to": "council-of-europe",
+  "type": "member-of",
   "when": {
-    "start": 1996,
+    "start": 1976,
     "end": null
   },
-  "note": "Founding member at Lisbon in July 1996. Membership, not an alliance: rule 19 reserves member-of for persons."
+  "note": "Admitted in September 1976, once the new constitution made Portugal eligible."
 }

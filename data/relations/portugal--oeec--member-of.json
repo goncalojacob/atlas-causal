@@ -1,10 +1,12 @@
 {
   "schema": 1,
-  "id": "portugal--efta--allied-with",
+  "id": "portugal--oeec--member-of",
   "kind": "relation",
   "status": "active",
   "supersededBy": null,
-  "aliases": [],
+  "aliases": [
+    "portugal--oeec--allied-with"
+  ],
   "authors": [
     {
       "name": "Claude (assistant draft, unreviewed)",
@@ -13,7 +15,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": null,
+  "revised": "2026-09-06",
   "origin": {
     "tool": "assistant"
   },
@@ -35,11 +37,11 @@
     }
   ],
   "from": "portugal",
-  "to": "efta",
-  "type": "allied-with",
+  "to": "oeec",
+  "type": "member-of",
   "when": {
-    "start": 1960,
-    "end": 1986
+    "start": 1948,
+    "end": 1961
   },
-  "note": "Founding member in 1960; left on entering the European Communities in 1986. Membership, not an alliance: rule 19 reserves member-of for persons."
+  "note": "Founding member in 1948, after first declining Marshall aid."
 }

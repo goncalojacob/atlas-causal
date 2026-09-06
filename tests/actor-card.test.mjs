@@ -83,9 +83,14 @@ test("the atlas's own cards: Portugal's four regimes, and Salazar's turn is not 
 
   const portugal = actorCardHtml(ctx, atlas.actors.get('portugal'));
   // Since M29 the state's card carries its memberships of international
-  // bodies beside its regimes. They are `allied-with` and not `member-of`
-  // because rule 19 reserves `member-of` for a person at the `from` end.
-  assert.deepEqual(headings(portugal), ['Regimes', 'Allied with']);
+  // bodies beside its regimes. M29 had to write them as `allied-with`,
+  // because rule 19 then reserved `member-of` for a person at the `from`
+  // end; M30a-2 widened the rule and M31-1 re-typed the ten, so the card
+  // says the word the claim always meant. Nothing is left under "Allied
+  // with": the two `allied-with` records the atlas still holds are the
+  // Estado Novo's alliance with NATO and the Third Republic's with the
+  // Community, and neither stands at this actor.
+  assert.deepEqual(headings(portugal), ['Regimes', 'Member of']);
   assert.equal(count(portugal, 'relations'), '14');
   for (const regime of ['first-portuguese-republic', 'military-dictatorship', 'estado-novo', 'third-portuguese-republic']) {
     assert.match(portugal, new RegExp(`data-action="actor" data-id="${regime}"`), regime);

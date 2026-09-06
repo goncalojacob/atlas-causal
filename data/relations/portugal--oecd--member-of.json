@@ -1,10 +1,12 @@
 {
   "schema": 1,
-  "id": "portugal--oeec--allied-with",
+  "id": "portugal--oecd--member-of",
   "kind": "relation",
   "status": "active",
   "supersededBy": null,
-  "aliases": [],
+  "aliases": [
+    "portugal--oecd--allied-with"
+  ],
   "authors": [
     {
       "name": "Claude (assistant draft, unreviewed)",
@@ -13,7 +15,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": null,
+  "revised": "2026-09-06",
   "origin": {
     "tool": "assistant"
   },
@@ -28,18 +30,14 @@
     {
       "source": "ramos-2009-historia-de-portugal",
       "locator": null
-    },
-    {
-      "source": "rosas-1994-estado-novo",
-      "locator": null
     }
   ],
   "from": "portugal",
-  "to": "oeec",
-  "type": "allied-with",
+  "to": "oecd",
+  "type": "member-of",
   "when": {
-    "start": 1948,
-    "end": 1961
+    "start": 1961,
+    "end": null
   },
-  "note": "Founding member in 1948, after first declining Marshall aid. Membership, not an alliance: rule 19 reserves member-of for persons."
+  "note": "Founding member in 1961, carried over from the OEEC."
 }

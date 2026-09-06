@@ -1,10 +1,12 @@
 {
   "schema": 1,
-  "id": "portugal--council-of-europe--allied-with",
+  "id": "portugal--efta--member-of",
   "kind": "relation",
   "status": "active",
   "supersededBy": null,
-  "aliases": [],
+  "aliases": [
+    "portugal--efta--allied-with"
+  ],
   "authors": [
     {
       "name": "Claude (assistant draft, unreviewed)",
@@ -13,7 +15,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": null,
+  "revised": "2026-09-06",
   "origin": {
     "tool": "assistant"
   },
@@ -26,20 +28,20 @@
   },
   "sources": [
     {
-      "source": "telo-2007-historia-contemporanea",
+      "source": "ramos-2009-historia-de-portugal",
       "locator": null
     },
     {
-      "source": "costa-pinto-2003-contemporary-portugal",
+      "source": "rosas-1994-estado-novo",
       "locator": null
     }
   ],
   "from": "portugal",
-  "to": "council-of-europe",
-  "type": "allied-with",
+  "to": "efta",
+  "type": "member-of",
   "when": {
-    "start": 1976,
-    "end": null
+    "start": 1960,
+    "end": 1986
   },
-  "note": "Admitted in September 1976, once the new constitution made Portugal eligible. Membership, not an alliance: rule 19 reserves member-of for persons."
+  "note": "Founding member in 1960; left on entering the European Communities in 1986."
 }

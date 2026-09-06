@@ -1,10 +1,12 @@
 {
   "schema": 1,
-  "id": "portugal--european-union--allied-with",
+  "id": "portugal--eurozone--member-of",
   "kind": "relation",
   "status": "active",
   "supersededBy": null,
-  "aliases": [],
+  "aliases": [
+    "portugal--eurozone--allied-with"
+  ],
   "authors": [
     {
       "name": "Claude (assistant draft, unreviewed)",
@@ -13,7 +15,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": null,
+  "revised": "2026-09-06",
   "origin": {
     "tool": "assistant"
   },
@@ -26,20 +28,20 @@
   },
   "sources": [
     {
-      "source": "telo-2007-historia-contemporanea",
+      "source": "reis-2013-portuguese-slump",
       "locator": null
     },
     {
-      "source": "costa-pinto-teixeira-2019-political-institutions",
+      "source": "telo-2007-historia-contemporanea",
       "locator": null
     }
   ],
   "from": "portugal",
-  "to": "european-union",
-  "type": "allied-with",
+  "to": "eurozone",
+  "type": "member-of",
   "when": {
-    "start": 1993,
+    "start": 1999,
     "end": null
   },
-  "note": "Member state from 1993, continuous with the Community joined in 1986. Membership, not an alliance: rule 19 reserves member-of for persons."
+  "note": "Among the eleven that entered the third stage of monetary union on 1 January 1999."
 }
