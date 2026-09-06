@@ -3122,9 +3122,15 @@ gave that to the map and the timeline, and M25 did not widen it.
      about 2h55m each. **This is the owner's call and needs the billing page,
      which no run here can read.** The sandbox cannot reach Wikidata either
      (the proxy answers CONNECT with 403 for both `query.wikidata.org` and
-     `www.wikidata.org`), so there is no local way round it. Reverse by
-     re-running `import/candidates-pt2-2026-09-06b` once Actions runs again;
-     nothing else about M41a needs redoing.
+     `www.wikidata.org`), so there is no local way round it. That 403 is the
+     policy and not a misconfiguration: `$HTTPS_PROXY/__agentproxy/status`
+     reports an allowlist whose `noProxy` names GitHub and the package
+     registries and nothing else, and logs the same `connect_rejected` for
+     every other host. The job was re-run six times between 11:08Z and
+     14:57Z — attempts 1 to 6 of run 34029395019 — and every one died in two
+     to four seconds in the same way. Reverse by re-running
+     `import/candidates-pt2-2026-09-06b` once Actions runs again; nothing
+     else about M41a needs redoing.
 
 202. **Why the two finished candidate rounds were not ticked.** The rule M41a
      was given — the 150 with the most sitelinks that are not here, at least
