@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "id": "prime-minister-of-portugal",
+  "kind": "office",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-06",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "note": "Asserts only that Portugal has had this office and what it is called: no dates, no sources, and no claim about when the post began or ended. The tenures that say who held it, and the dates and sources for them, are not written yet."
+  },
+  "sources": [],
+  "of": "portugal",
+  "title": "Prime Minister of Portugal",
+  "category": "head-of-government",
+  "when": null,
+  "summary": null
+}

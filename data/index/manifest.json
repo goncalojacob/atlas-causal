@@ -4,7 +4,7 @@
     "edges": 161,
     "events": 329,
     "narratives": 1,
-    "offices": 0,
+    "offices": 3,
     "places": 26,
     "presences": 710,
     "regions": 5,
@@ -32,10 +32,10 @@
   "files": {
     "citers": "index/citers-53fa8cafa5d4",
     "history": "index/history",
-    "review": "index/review-713906d988bd.json",
-    "search": "index/search-74e59167b77e.json",
+    "review": "index/review-7ef23bc54b76.json",
+    "search": "index/search-cee2eedb0ea5.json",
     "sources": "index/sources-78108ff40e94.json",
-    "spine": "index/spine-a8e8a80c51b2.json"
+    "spine": "index/spine-d1e9312c47b0.json"
   },
   "land": [
     {
