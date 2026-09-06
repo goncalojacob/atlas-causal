@@ -60,6 +60,21 @@ export function serialize(value) {
   return `${JSON.stringify(canonical(value), null, 2)}\n`;
 }
 
+// The same bytes with the indentation left out, for the two files nobody
+// reads with their eyes and every device parses whole on every page: the
+// spine and the search shard. At 20 000 records the spine is 15.3 MB on disk
+// of which about 5.6 MB is spaces — gzip hides that over the wire and
+// `JSON.parse` does not (health review of 6 September, R5). Canonical all the
+// same: the key order is what makes the hash a function of the content, and
+// two builds of one dataset have to produce one file name.
+//
+// Everything else stays indented. A record file, the manifest, a review shard
+// and a history are read by people, in a diff and in a terminal, and the few
+// kilobytes they cost are the cost of being readable.
+export function compact(value) {
+  return `${JSON.stringify(canonical(value))}\n`;
+}
+
 export function hashOf(text) {
   return createHash('sha256').update(text, 'utf8').digest('hex').slice(0, 12);
 }
@@ -97,7 +112,7 @@ export async function buildIndex(dataDir = DEFAULT_DATA, prepared = {}) {
   // `topology` above stays in memory: it is what this projection is taken
   // from and what the rules below are checked against, and the whole of it
   // was written out beside the spine only while the pages moved over (H3b).
-  const spineText = serialize(buildSpine(topology));
+  const spineText = compact(buildSpine(topology));
   // The sources index without its citer rows, since H3b: every bibliographic
   // field and `citationCount`, and the rows themselves in the citer directory
   // below, fetched for one source at a time. This is the whole of the saving
@@ -128,7 +143,7 @@ export async function buildIndex(dataDir = DEFAULT_DATA, prepared = {}) {
   // sentence of its `summary` — read straight off the records (search.js; plan
   // decision 5). Neither is in the spine and neither should be, because
   // nothing draws them and the spine is loaded whole by every page.
-  const searchText = serialize({
+  const searchText = compact({
     schema: 1,
     entries: searchIndexFor(topology, records).map((entry) => ({ ...entry, status: 'active' })),
   });

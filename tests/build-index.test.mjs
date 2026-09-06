@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { mkdtemp, cp, writeFile, readdir, readFile, mkdir, rm } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import path from 'node:path';
-import { canonical, serialize, buildIndex, writeIndex, readIndex, compareIndex } from '../tools/build-index.mjs';
+import { canonical, serialize, compact, buildIndex, writeIndex, readIndex, compareIndex } from '../tools/build-index.mjs';
 import { runValidation } from '../tools/validate.mjs';
 import { buildTopology, eventWeights } from '../src/validate/core.js';
 import { checkRules } from '../src/validate/rules.js';
@@ -16,6 +16,41 @@ async function tempCopyOfFixtures() {
   await cp(FIXTURE_DATA, dir, { recursive: true });
   return dir;
 }
+
+// R5: the spine is parsed whole by every page on every device, and about a
+// third of it was indentation. gzip hides that over the wire; JSON.parse does
+// not. The two files nobody reads with their eyes are written compact; every
+// file somebody does read stays indented.
+test('the spine and the search shard are compact, and everything else is not', async () => {
+  const dir = await tempCopyOfFixtures();
+  try {
+    const built = await buildIndex(dir);
+    const manifest = JSON.parse(built.files['manifest.json']);
+    for (const key of ['spine', 'search']) {
+      const name = path.basename(manifest.files[key]);
+      const text = built.files[name];
+      assert.equal(text.split('\n').length, 2, `${key} is one line and a newline`);
+      // Compact is not the same as unordered: the hash in the file's own name
+      // is a function of the bytes, so two builds of one dataset have to
+      // agree on the key order.
+      assert.equal(text, compact(JSON.parse(text)), `${key} is canonical`);
+    }
+    for (const name of ['manifest.json', path.basename(manifest.files.review)]) {
+      assert.match(built.files[name], /\n {2}"/, `${name} is still readable`);
+    }
+    const history = Object.keys(built.files).find((n) => n.startsWith('history/'));
+    assert.match(built.files[history], /\n {2}"/, 'a history is read in a terminal and stays indented');
+  } finally {
+    await rm(dir, { recursive: true, force: true });
+  }
+});
+
+test('compact is canonical and ends with a newline, like serialize without the spaces', () => {
+  assert.equal(compact({ b: 1, a: { z: [{ y: 1, x: 2 }], 'é': 3, Z: 4 } }),
+    '{"a":{"Z":4,"z":[{"x":2,"y":1}],"é":3},"b":1}\n');
+  assert.equal(compact({ a: 1 }).replace(/\s/g, ''), serialize({ a: 1 }).replace(/\s/g, ''),
+    'the same value, the same bytes but for the whitespace');
+});
 
 test('canonical sorts keys recursively by code unit and serialize ends with a newline', () => {
   const text = serialize({ b: 1, a: { z: [{ y: 1, x: 2 }], 'é': 3, Z: 4 } });
