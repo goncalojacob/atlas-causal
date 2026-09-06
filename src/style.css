@@ -738,6 +738,12 @@ body:not(.phone) .layout.panel-empty > .split-panel { display: none; }
 /* A stack no zoom can part is not a promise of "zoom in": it opens the list
    in the panel instead, and says so by not inviting the wheel. */
 .graph .node.stack.coincident { stroke-dasharray: 3 2; }
+/* An event with its parts drawn inside it (collapse.js). Ringed as heavily as
+   a stack, because it also stands for more than one mark, and filled rather
+   than hollow: a stack is several records that happen to be close together,
+   this is one record that the others are inside. */
+.graph .node.collapsed { fill: var(--cobalt-faint); stroke: var(--cobalt); stroke-width: 2.5; }
+.graph .node.collapsed:hover { fill: var(--cobalt-soft); }
 .graph .cluster-count {
   fill: var(--cobalt); font-family: var(--font-ui); font-weight: 600;
   font-variant-numeric: tabular-nums; letter-spacing: 0.01em; pointer-events: none;

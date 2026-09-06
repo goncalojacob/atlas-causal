@@ -79,6 +79,13 @@ export const MAX_ZOOM = 8;
 // a mark on that one. Below it two nodes cannot both be aimed at, which is
 // the honest moment to stop drawing them as two.
 export const STACK_DISTANCE = 13;
+// And the other level of detail, the semantic one: below this zoom an event's
+// parts are drawn inside it (collapse.js). It is `LABEL_ALL_ZOOM`'s number on
+// purpose — at or above that zoom the graph names every node on screen, which
+// is the zoom at which the picture stops being about the shape of the web and
+// starts being about which records are in it, and that is exactly when a
+// reader wants the parts of a war rather than the war.
+export const COLLAPSE_ZOOM = 2;
 
 // Sorting anything that feeds a floating-point sum: two runs given the same
 // records in a different order must produce the same numbers, and addition

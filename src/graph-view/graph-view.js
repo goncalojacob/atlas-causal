@@ -32,6 +32,7 @@ import { horizonBand } from '../horizon.js';
 import { workingSet, heldSet } from '../emphasis.js';
 import { arrangementOf, holdingKey } from './arrangement.js';
 import { layoutGraph, stackLayout, MIN_ZOOM, MAX_ZOOM } from './layout.js';
+import { collapseLayout } from './collapse.js';
 import { createLayoutRunner } from './layout-runner.js';
 import { exportButton } from '../share.js';
 
@@ -114,7 +115,10 @@ function shorten(text, chars = LABEL_CHARS) {
 // argument the data does not make.
 function radiusFor(weight, weights) {
   if (weights.max === weights.min) return MIN_RADIUS;
-  const t = (weight - weights.min) / (weights.max - weights.min);
+  // Clamped, because a collapsed parent carries the weight of its whole
+  // subtree and the range was measured over the events (collapse.js): the
+  // heaviest mark is the heaviest size and not a larger one.
+  const t = Math.min(1, Math.max(0, (weight - weights.min) / (weights.max - weights.min)));
   return MIN_RADIUS + t * (MAX_RADIUS - MIN_RADIUS);
 }
 
@@ -556,8 +560,15 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
     // The stacking is kept by the same three things it depends on: which
     // arrangement, how far in, and what may not be swallowed. A wheel notch
     // that returns to a zoom already seen redraws rather than re-clusters.
+    //
+    // Two levels of detail, in this order: the semantic one first — an event's
+    // parts drawn inside it while the reader is zoomed out (collapse.js) — and
+    // M25's geometric one on the node set that comes out of it. Both are
+    // filed under the same key, because both depend on exactly these three
+    // things and on nothing else.
     const stackKey = `${laidFor}|${k}|${holdingKey(s)}`;
-    stacked = stackings.get(stackKey) ?? stackings.set(stackKey, stackLayout(laid, { k, alone }));
+    stacked = stackings.get(stackKey)
+      ?? stackings.set(stackKey, stackLayout(collapseLayout(laid, { k, alone }), { k, alone }));
     // A stack is in the window if any event under it is, and in the horizon
     // at the band of its nearest member: the same rule the map's stacks
     // follow. Both are only ever asked of a stack of one in practice, since
@@ -666,8 +677,14 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
       }
       const faded = !inWindow.get(node.id);
       const isSelected = node.id === s.selected;
+      // An event with its parts drawn inside it. It is still one record and
+      // still opens its own card — the card is where the parts are listed —
+      // so it keeps its `data-id`; what it gains is a count of what is folded
+      // into it and a ring saying there is something to zoom into.
+      const collapsed = node.collapsed ?? null;
       const cls = classes(
         'node',
+        collapsed ? 'collapsed' : '',
         faded ? 'faded' : '',
         lensNear.has(node.id) ? 'lens-near' : '',
         reachable.has(node.id) ? `in-horizon ${horizonBand(reachable.get(node.id))}` : '',
@@ -677,11 +694,23 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
         pathIds.has(node.id) ? 'on-path' : '',
         isSelected ? 'selected' : '',
       );
-      const title = `${node.event.title} — ${formatInterval(node.event.when)}${faded ? ' — outside the window' : ''}`;
+      const parts = collapsed
+        ? ` — ${collapsed.count} part${collapsed.count === 1 ? '' : 's'} drawn inside it, weight ${collapsed.weight}; zoom in to part them`
+        : '';
+      const title = `${node.event.title} — ${formatInterval(node.event.when)}${parts}${faded ? ' — outside the window' : ''}`;
       const mark = svg('circle', {
         cx: node.x, cy: node.y, r: radius / k, class: cls, 'data-id': node.id,
       }, [svgTitle(title)]);
       nodesGroup.appendChild(mark);
+      if (collapsed) {
+        nodesGroup.appendChild(textNode(`+${collapsed.count}`, {
+          x: node.x + (radius + 2) / k,
+          y: node.y - (radius + 1) / k,
+          class: classes('cluster-count', faded ? 'faded' : ''),
+          'font-size': BADGE_SIZE / k,
+          'data-collapsed': node.id,
+        }));
+      }
       if (isSelected) selectedMark = mark;
     }
     if (selectedMark) nodesGroup.appendChild(selectedMark);

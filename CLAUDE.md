@@ -152,6 +152,7 @@ src/map/map.js             SVG scaffold, pan/zoom, click into a cluster
 src/map/layers/land.js     coastlines;  layers/presences.js  territories;  layers/events.js  marks, clusters and chain lines
 src/graph-view/layout.js   pure: where every node goes — x is the year, y is bands and a barycentre pass
 src/graph-view/graph-view.js  the graph drawn: nodes, the five edge types, the window shaded, pan/zoom
+src/graph-view/collapse.js pure: the semantic level of detail — an event's parts drawn inside it below a zoom, the endpoints of their links moved onto it and the links inside it dropped. Runs after the layout and before M25's geometric stacking, so no node ever moves for it
 src/graph-view/arrangement.js  pure: which events an arrangement is of — the band, its margin and whatever the reader is holding beyond it — and the key it is filed under
 src/graph-view/layout-runner.js  which of the two paths a layout takes, and the fallback: the Worker above 600 events, the synchronous call below it and whenever a thread is absent or fails
 src/graph-view/layout-worker.js  the layout on a thread of its own; it fetches nothing, so no data root can be got wrong there

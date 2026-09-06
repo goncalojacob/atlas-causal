@@ -18,7 +18,7 @@ import path from 'node:path';
 import { createServer, HOST } from '../tools/serve.mjs';
 import { findChrome } from '../tools/screens.mjs';
 import { ROOT } from './helpers.mjs';
-import { withBrowser, open, seenIntro, watchErrors, errorsOn } from './browser.mjs';
+import { withBrowser, open, waitFor, seenIntro, watchErrors, errorsOn } from './browser.mjs';
 
 const chrome = findChrome();
 const skip = chrome ? false : 'no headless browser found; set $CHROME to one';
@@ -171,5 +171,55 @@ test('a narrative step opens the graph without throwing', { skip }, async () => 
     await open(page, url('?narrative=how-the-colonial-war-ended-the-regime&step=3&view=graph'), drawnGraph);
     assert.deepEqual(await errorsOn(page), [], 'the console is clean');
     assert.ok(await page.eval(drawnGraph), 'and the graph has nodes on the page');
+  });
+});
+
+// --- the semantic level of detail ------------------------------------------
+//
+// M30b-2, A7: below `COLLAPSE_ZOOM` an event's parts are drawn inside it, and
+// at or above it they are drawn one node each. No event in `data/` is inside
+// another yet, so this is on the fixtures, where `fixture-event-f` holds two.
+const NODE = (id) => `return Boolean(document.querySelector('svg.graph circle.node[data-id="${id}"]'));`;
+
+test('a parent holds its parts at the default zoom and gives them up when the reader zooms in', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await watchErrors(page);
+    await open(page, url('?fixtures=1&view=graph'), drawnGraph);
+
+    const collapsed = await page.eval(`
+      const el = document.querySelector('svg.graph circle.node[data-id="fixture-event-f"]');
+      const badge = document.querySelector('svg.graph .cluster-count[data-collapsed="fixture-event-f"]');
+      return {
+        classes: el ? el.getAttribute('class') : null,
+        badge: badge ? badge.textContent : null,
+        title: el ? el.querySelector('title').textContent : null,
+      };`);
+    assert.match(collapsed.classes ?? '', /\bcollapsed\b/, 'the parent says it is holding something');
+    assert.equal(collapsed.badge, '+2', 'and how many');
+    // The count is counted; the weight is the subtree's, which the index
+    // derived. A weight is not a count, so both are said and neither is
+    // said twice.
+    assert.match(collapsed.title, /2 parts drawn inside it, weight 6/);
+    for (const id of ['fixture-event-t', 'fixture-event-h']) {
+      assert.equal(await page.eval(NODE(id)), false, `${id} is inside its parent, not beside it`);
+    }
+
+    // One notch of the wheel past the threshold, on the graph itself: the
+    // parts come back, where they always were.
+    await page.eval(`
+      const svg = document.querySelector('svg.graph');
+      const box = svg.getBoundingClientRect();
+      svg.dispatchEvent(new WheelEvent('wheel', {
+        bubbles: true, cancelable: true, deltaY: -600,
+        clientX: box.left + box.width / 2, clientY: box.top + box.height / 2,
+      }));
+      return true;`);
+    await waitFor(page, NODE('fixture-event-t'), 'the parts to be drawn on their own');
+    assert.equal(await page.eval(NODE('fixture-event-h')), true, 'both of them');
+    const parent = await page.eval(`
+      const el = document.querySelector('svg.graph circle.node[data-id="fixture-event-f"]');
+      return el ? el.getAttribute('class') : null;`);
+    assert.doesNotMatch(parent ?? '', /\bcollapsed\b/, 'and the parent is a node like any other');
+    assert.deepEqual(await errorsOn(page), [], 'the console is clean');
   });
 });
