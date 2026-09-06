@@ -1265,8 +1265,8 @@ record.
 `actors` names the actors *of* the event — not everyone alive — each with the
 role it played in it; every id must resolve to an active actor (rule 14). A
 role comes from the closed list in **`data/roles.json`**, the owner's 31
-(`docs/roles-mapping.md`); one outside it is the warning `role-unknown` until
-M32b applies the mapping and turns it into an error. `note` beside it is the
+(`docs/roles-mapping.md`); on an active event one outside it is rule 25, an
+error, since M32b-1 re-filed the 163 phrases that were in use. `note` beside it is the
 free text the role no longer carries — "president under whom it was held" —
 and it is the one field inside a list the translation overlay addresses by
 index. No `tags`: a junk drawer until there is a closed vocabulary with a
@@ -1618,9 +1618,11 @@ honest place for them (plan decisions 7 and 13).
 the twelve categories an event may be. Both are read by
 `tools/lib/read.mjs`, carried by `buildTopology` as `rolesAllowed` and
 `categoriesAllowed`, and named in the manifest, so the browser's half of the
-validator holds a record to them without fetching anything more. Neither is
-enforced as an error yet: `role-unknown` and `category-unknown` are warnings
-until M32b applies the mappings. Adding a role or a category is an edit to one
+validator holds a record to them without fetching anything more. The roles are
+enforced and the categories are not: M32b-1 applied the roles mapping and made
+a role outside the list rule 25, while `category-unknown` stays a warning
+because most of the corpus carries no category at all. Adding a role or a
+category is an edit to one
 file and never a change to code — unlike an event's `scope`, which is a closed
 vocabulary in `src/vocab.js` because it says how the atlas *draws*.
 
@@ -2161,6 +2163,13 @@ Errors:
     its parent is a warning and not an error, for the reason
     `actor-outside-when` is one. Rules 4 and 5 never see a parent: it is not
     part of the edge graph.
+25. An **active** event's every `actors[].role` is an id of
+    `data/roles.json`. One error a record and not one a line, naming the
+    roles; the phrase the role used to be goes in the `note` beside it. Only
+    active events: a tombstone is a record of what the atlas used to say, and
+    refusing to validate one would mean editing history. A dataset with **no**
+    `data/roles.json` is checked against nothing, which is the property this
+    rule is likeliest to lose (M32b-1, from the warning `role-unknown`).
 
 `data/imports/` is not records and has no rule number. `tools/validate.mjs`
 picks the schema from the file's `kind` — `import-map`, `import-seeds` or
@@ -2218,17 +2227,18 @@ their successors, and the dates of an actor and of an imported outline come
 from two sources of which either may be the wrong one.
 
 Warnings are **named and not numbered**: a rule number is a promise that a
-record is wrong, and these say something weaker. Five of them are M30a's.
+record is wrong, and these say something weaker. Four of them are M30a's; the
+fifth, `role-unknown`, became rule 25 in M32b-1.
 `started-outside-when`: a tenure begun by an event that falls outside the
 years it ran. `child-outside-parent`: an event not dated inside the event it
-is part of. `role-unknown` and `category-unknown`: a role or a category
-outside `data/roles.json` or `data/categories.json` — warnings and not errors
-because 163 role strings are in use against a vocabulary of 31 and no event
-carries a category yet, and M32b is the run that applies both mappings and
-makes the first an error. `no-lane`: an active event with neither a place nor
-a region, drawn in no lane. Both vocabularies live in data, and an **absent**
-file means no check at all rather than an empty closed set: a fork with no
-`data/roles.json` is not a fork whose every record is wrong.
+is part of. `category-unknown`: a category outside
+`data/categories.json` — a warning and not an error because most of the corpus
+carries no category at all and M32b-2 is the run that assigns them. Its pair
+`role-unknown` was the fifth until M32b-1 applied the roles mapping and made
+it rule 25. `no-lane`: an active event with neither a place nor a region,
+drawn in no lane. Both vocabularies live in data, and an **absent** file means
+no check at all rather than an empty closed set: a fork with no
+`data/roles.json` is not a fork whose every record is refused.
 
 ## Extension points
 

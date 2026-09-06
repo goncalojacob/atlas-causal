@@ -2,6 +2,8 @@
 
 Written by the assistant on 5 September 2026 for the owner's approval (plan of 5 September, decision 7). Nothing is applied until approved; M32b applies it. Retracted and merged events are not counted; their roles migrate by the same table.
 
+**Applied on 6 September 2026 by `tools/migrate/roles.mjs` (M32b-1)**, which re-filed 245 of the corpus's 349 actor lines and kept 184 old phrases as the `note` beside the role; the other 104 lines already read as one of the 31. `tests/roles-migrate.test.mjs` holds the tool's table to the `Role in use`, `Becomes` and `Note kept` columns below, row for row, so the two cannot drift. The `Count` column was **not** applied and is stale — see `STATUS.md` for the five rows that disagree with the corpus.
+
 ## The list (31)
 
 Four were added to the 27 in the plan while mapping: `appointed` (a holder who was not elected), `creditor` and `debtor` (the IMF and bailout events), `supporter` (backers and patrons). The owner strikes any of them by saying so.

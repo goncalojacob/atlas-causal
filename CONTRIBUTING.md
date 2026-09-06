@@ -175,15 +175,18 @@ Notes that catch people out:
 - **`authors`, `created` and `revised` are set by the Action**, not by you.
   Whatever the form puts there is replaced.
 - **`actors` names the actors *of* the event**, not everyone alive at the
-  time, each with the role it played in it. A role comes from the closed list
-  in `data/roles.json` — `leader`, `signatory`, `deposed` — compared
+  time, each with the role it played in it. **An actor line is a role and a
+  note**: the role from the closed list in `data/roles.json` — `leader`,
+  `signatory`, `deposed` — and the note the phrase the role cannot carry:
+  "president under whom it was held", "junior partner in the coalition", in a
+  phrase and not a sentence. Both writing pages draw it that way, the role as
+  a list you choose from and the note as a box beside it. The role is compared
   lowercased and trimmed, so the same actor may appear twice in one event only
-  under different roles. One outside the list is a warning for now, and will
-  be an error; if a role you need is genuinely missing, add it to that file in
-  the same pull request and say why. Every id must resolve to an active actor
-  record. Anything the role itself cannot carry goes in `note` beside it —
-  "president under whom it was held", "junior partner in the coalition" — in a
-  phrase, not a sentence.
+  under different roles. **A role outside the list is rule 25, an error** —
+  the whole point of the note is that you no longer have to bend one: if the
+  role you need is genuinely missing, that is a pull request against
+  `data/roles.json` saying why, and never a string written into an event.
+  Every id must resolve to an active actor record.
 - **`category` says what kind of thing the event was**, from
   `data/categories.json`: `war`, `treaty`, `election`, `revolution`, `law`,
   `founding`, `disaster`, `economy`, `culture`, `science`, `death`, `other`.
