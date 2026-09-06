@@ -149,10 +149,15 @@ test('the manifest carries the roles and the categories a dataset allows, and no
   const real = JSON.parse((await buildIndex(path.join(ROOT, 'data'))).files['manifest.json']);
   assert.deepEqual(real.rolesAllowed, JSON.parse(await readFile(path.join(ROOT, 'data', 'roles.json'), 'utf8')));
   assert.deepEqual(real.categoriesAllowed, JSON.parse(await readFile(path.join(ROOT, 'data', 'categories.json'), 'utf8')));
-  // `roles` is the other list and stays what it was: the strings people
-  // actually wrote, which is the evidence for the vocabulary rather than the
-  // vocabulary itself.
+  // `roles` is the other list and stays what it was: the roles actually in
+  // use. Until M32b-1 that was 163 free-text strings and this said so; since
+  // the re-filing it is a *subset* of the vocabulary — 29 of the 31, in the
+  // order they are used rather than the order the owner wrote them — so the
+  // two lists are still not the same list, for a different reason than they
+  // used to be. The assertion is the same assertion (amendment A12).
   assert.notDeepEqual(real.roles, real.rolesAllowed.map((r) => r.id));
+  const vocabulary = new Set(real.rolesAllowed.map((r) => r.id));
+  assert.deepEqual(real.roles.filter((role) => !vocabulary.has(role)), []);
 });
 
 // The dashboard's queue is this file: the browser has no way to read a
@@ -189,8 +194,9 @@ test('the review index lists the drafts, the count and the warnings', async () =
   // A shard carries the warnings about its own drafts: what the list puts on
   // a row, and nothing about records nobody is waiting on.
   // Against the same topology the build used, vocabularies and all: without
-  // them `role-unknown` would not fire here and the shards would be compared
-  // against a shorter list than the one they were written from.
+  // them `category-unknown` and rule 25 would not fire here and the shards
+  // would be compared against a shorter list than the one they were written
+  // from.
   const rules = checkRules(records, buildTopology(records, regions, {
     roles: await readRoles(path.join(ROOT, 'data')),
     categories: await readCategories(path.join(ROOT, 'data')),

@@ -116,7 +116,9 @@ test('a parent never enters the adjacency: rules 4 and 5 do not see it', async (
 
 // --- the two vocabularies --------------------------------------------------
 
-test('a role outside data/roles.json is a warning, once a record and naming the roles', async () => {
+// M32b-1: the warning became rule 25. The shape is the warning's — one a
+// record, naming the roles, active events only — and only the level moved.
+test('a role outside data/roles.json is rule 25, once a record and naming the roles', async () => {
   const { roles } = await vocabularies();
   const r = await run((fx) => {
     event(fx, 'fixture-event-b').actors = [
@@ -125,11 +127,29 @@ test('a role outside data/roles.json is a warning, once a record and naming the 
       { actor: 'fixture-actor-one', role: 'leader' },
     ];
   }, { roles });
-  const warned = warningsOf(r, 'role-unknown').filter((w) => w.id === 'fixture-event-b');
-  assert.equal(warned.length, 1, 'one warning a record, not one a line');
-  assert.match(warned[0].message, /"a role nobody approved", "another one nobody approved"/);
-  assert.doesNotMatch(warned[0].message, /leader/);
-  assert.equal(r.errors.length, 0, messages(r));
+  const refused = errorsOf(r, 25).filter((e) => e.id === 'fixture-event-b');
+  assert.equal(refused.length, 1, 'one error a record, not one a line');
+  assert.equal(refused[0].path, '/actors');
+  assert.match(refused[0].message, /"a role nobody approved", "another one nobody approved"/);
+  assert.doesNotMatch(refused[0].message, /"leader"/);
+  // And nothing warns about it any more: the code is gone, not doubled up.
+  assert.deepEqual(warningsOf(r, 'role-unknown'), []);
+  assert.deepEqual(r.errors.filter((e) => e.rule !== 25), [], messages(r));
+});
+
+// A tombstone written before the list closed is a record of what the atlas
+// used to say. Refusing to validate it would mean editing history, so rule 25
+// is the warning's scope exactly: active events, and nothing else.
+test('rule 25 is active events only, and says nothing about any other kind', async () => {
+  const { roles } = await vocabularies();
+  const retracted = await run((fx) => {
+    const e = event(fx, 'fixture-event-b');
+    e.actors = [{ actor: 'fixture-actor-one', role: 'a role nobody approved' }];
+    e.status = 'retracted';
+    e.retraction = { on: '2026-09-06', reason: 'Withdrawn in a test, and the role it carries is not rule 25\'s business.' };
+    e.review = undefined;
+  }, { roles });
+  assert.deepEqual(errorsOf(retracted, 25), [], messages(retracted));
 });
 
 test('a category outside data/categories.json is a warning, and one inside it is not', async () => {
@@ -153,7 +173,18 @@ test('a dataset with no vocabulary is not a dataset whose every role is wrong', 
   const absent = await run(mutate);
   assert.deepEqual(warningsOf(absent, 'role-unknown'), []);
   assert.deepEqual(warningsOf(absent, 'category-unknown'), []);
+  // The half that matters now that the role is rule 25: an absent list is not
+  // an empty closed set, so a fork with no `data/roles.json` is not a fork
+  // whose every event is refused. This is the one property easiest to lose
+  // when a warning becomes an error (amendments A8 and A7).
+  assert.deepEqual(errorsOf(absent, 25), [], messages(absent));
   assert.equal(absent.errors.length, 0, messages(absent));
+
+  // And with the list carried, the same corpus is refused: it is the presence
+  // of the vocabulary that decides, not the record.
+  const { roles: closed } = await vocabularies();
+  const checked = await run(mutate, { roles: closed });
+  assert.deepEqual(errorsOf(checked, 25).map((e) => e.id), ['fixture-event-b']);
 
   // And the topology carries neither key rather than carrying an empty one,
   // which is what the manifest and the browser read.

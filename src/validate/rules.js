@@ -1150,6 +1150,51 @@ export function checkRules(records, topology = {}, { universe: prebuilt = null }
     }
   }
 
+  // --- the two vocabularies in data ---------------------------------------
+  // An **absent** vocabulary means no check at all, never an empty closed set:
+  // a dataset with no roles.json is not a dataset whose every role is wrong
+  // (M30a, amendment A8). That is what the `undefined` guard is, and it is why
+  // the sets are built from the topology rather than defaulted to empty. It is
+  // the one property easiest to lose now that the roles are a rule and not a
+  // warning, and tests/event-fields.test.mjs says so about the error.
+  const vocabularyIds = (list) => (list === undefined || list === null
+    ? null
+    : new Set(list.map((entry) => (typeof entry === 'string' ? entry : entry?.id)).filter((id) => typeof id === 'string')));
+  const rolesAllowed = vocabularyIds(topology.rolesAllowed);
+  const categoriesAllowed = vocabularyIds(topology.categoriesAllowed);
+
+  // --- rule 25: an actor line's role is one of the vocabulary's ------------
+  // The roles were free text until 5 September, when the owner closed the
+  // list at 31 (plan decision 7); M32b-1 re-filed the 163 phrases in use onto
+  // it and kept each phrase as the `note` beside the role, which is where a
+  // sentence like "president under whom it was held" belongs. From here a
+  // role this atlas does not have is a pull request against `data/roles.json`
+  // and not a string somebody wrote into an event.
+  //
+  // **Active events only**, which is exactly the scope of the warning this
+  // replaces. A tombstone written before the list closed is a record of what
+  // the atlas used to say, and turning it into a hard error would mean either
+  // editing history or refusing to validate it. (No tombstone carries an
+  // actor line today — all 349 sit on active events — so this is a door held
+  // open rather than a case in the corpus.)
+  //
+  // One error a record and not one a line: a reviewer opens the record once,
+  // and deviation 346 settled the same question for the warning. The roles
+  // are named, in the order they appear, each once.
+  if (rolesAllowed) {
+    for (const r of own) {
+      if (r.status !== 'active' || r.kind !== 'event') continue;
+      const unknown = [];
+      for (const a of Array.isArray(r.actors) ? r.actors : []) {
+        const role = normalizeRole(a?.role);
+        if (role !== '' && !rolesAllowed.has(role) && !unknown.includes(role)) unknown.push(role);
+      }
+      if (unknown.length) {
+        error(25, r, '/actors', `${unknown.length === 1 ? 'a role' : 'roles'} outside data/roles.json: ${unknown.map((role) => `"${role}"`).join(', ')}. Adding a role is an edit to that file; the phrase this one is goes in the note beside it`);
+      }
+    }
+  }
+
   // --- rule 26: offices and tenures ---------------------------------------
   // What holds an office and a tenure together, which neither schema can
   // say. An office belongs to an actor, and which kind of actor that may be
@@ -1368,43 +1413,21 @@ export function checkRules(records, topology = {}, { universe: prebuilt = null }
     }
   }
 
-  // --- warnings: the two vocabularies, the lane, the parent's dates --------
+  // --- warnings: the category, the lane, the parent's dates ----------------
   //
-  // Three warnings and not three errors, each for its own reason. A role
-  // outside `data/roles.json` is one because 163 strings are in use and the
-  // mapping that reduces them to 31 is M32b's, which is the run that turns
-  // this into an error (amendment A16). A category outside
-  // `data/categories.json` is one because no event carries a category yet and
-  // the pass that assigns them runs with M32b too. And an event in no lane is
-  // one because `region` became optional everywhere (plan decision 5): an
-  // event nobody can place on a continent is a fact about the record, not a
-  // defect in it.
+  // Two warnings and not two errors, each for its own reason. A category
+  // outside `data/categories.json` is one because most of the corpus carries
+  // no category at all and the pass that assigns them is M32b-2's; the roles
+  // were the other one until M32b-1 applied the mapping and made them rule 25
+  // above. And an event in no lane is one because `region` became optional
+  // everywhere (plan decision 5): an event nobody can place on a continent is
+  // a fact about the record, not a defect in it.
   //
-  // An **absent** vocabulary means no check at all, never an empty closed set:
-  // a dataset with no roles.json is not a dataset whose every role is wrong
-  // (amendment A8). That is what the `undefined` guard is, and it is why the
-  // sets are built from the topology rather than defaulted to empty.
-  const vocabularyIds = (list) => (list === undefined || list === null
-    ? null
-    : new Set(list.map((entry) => (typeof entry === 'string' ? entry : entry?.id)).filter((id) => typeof id === 'string')));
-  const rolesAllowed = vocabularyIds(topology.rolesAllowed);
-  const categoriesAllowed = vocabularyIds(topology.categoriesAllowed);
+  // `categoriesAllowed` is built above, beside rule 25's `rolesAllowed`, and
+  // an absent vocabulary means no check here for the same reason it means
+  // none there.
   for (const r of own) {
     if (r.status !== 'active') continue;
-    if (r.kind === 'event' && rolesAllowed) {
-      // One warning a record and not one a line: a reviewer opens the record
-      // once, and 163 strings over 900 events would otherwise be two thousand
-      // lines of the same sentence. The roles are named, in the order they
-      // appear, each once.
-      const unknown = [];
-      for (const a of Array.isArray(r.actors) ? r.actors : []) {
-        const role = normalizeRole(a?.role);
-        if (role !== '' && !rolesAllowed.has(role) && !unknown.includes(role)) unknown.push(role);
-      }
-      if (unknown.length) {
-        warning('role-unknown', r, `${unknown.length === 1 ? 'a role' : 'roles'} outside data/roles.json: ${unknown.map((role) => `"${role}"`).join(', ')}`);
-      }
-    }
     if (r.kind === 'event' && categoriesAllowed && typeof r.category === 'string' && !categoriesAllowed.has(r.category)) {
       warning('category-unknown', r, `"${r.category}" is not a category in data/categories.json`);
     }

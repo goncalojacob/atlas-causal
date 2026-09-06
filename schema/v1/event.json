@@ -72,14 +72,14 @@
       ]
     },
     "category": {
-      "description": "What kind of thing this event is, from the closed list in data/categories.json — war, treaty, election and the rest. In data and not in code, so that adding one is an edit to that file (plan decision 13); a category outside the list is the warning `category-unknown`, not an error, until every event carries one. The contribution form and the review editor offer the list as a select; the map draws one glyph per category from M32b, which is the run that gives events a category.",
+      "description": "What kind of thing this event is, from the closed list in data/categories.json — war, treaty, election and the rest. In data and not in code, so that adding one is an edit to that file (plan decision 13); a category outside the list is the warning `category-unknown`, not an error, while most of the corpus carries none; an absent category is not warned about at all. The contribution form and the review editor offer the list as a select; the map draws one glyph per category from M32b-2, which is the run that gives events a category.",
       "oneOf": [
         { "type": "null" },
         { "$ref": "../common/provenance.json#/properties/id" }
       ]
     },
     "actors": {
-      "description": "The actors of this event and what each did in it — not everyone alive. A role comes from the closed list in data/roles.json; one outside it is the warning `role-unknown` until M32b applies the mapping and makes it an error. `note` is the free text beside the role — \"president under whom it was held\" — which is what the phrase a drafting run wrote becomes once the role itself is a vocabulary. That every actor resolves is rule 14.",
+      "description": "The actors of this event and what each did in it — not everyone alive. A role comes from the closed list in data/roles.json, and one outside it is rule 25, an error, on an active event; M32b-1 applied the mapping (docs/roles-mapping.md) and closed the list. `note` is the free text beside the role — \"president under whom it was held\" — which is what the phrase a drafting run wrote becomes once the role itself is a vocabulary. That every actor resolves is rule 14.",
       "type": "array",
       "items": {
         "type": "object",
