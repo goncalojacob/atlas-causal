@@ -19,7 +19,7 @@ as three, and this is the first), on `m0`: **the two new record kinds,
 frozen list, rules 6, 15 and 26, `?office=` with a placeholder card, three
 office records for Portugal, the fixtures' one office and three tenures, and
 both indexes. Nothing about `led` (M30a-2) and nothing about events
-(M30a-3). 965 tests.
+(M30a-3). 966 tests.
 
 **A kind is nine files and thirteen tables, not thirty places.** What
 `src/kinds.js` and `src/vocab.js` promised after H2 held: the two entries in
@@ -391,3 +391,4 @@ H8 done
 H9 started 2026-09-06T11:01:12Z by scheduled
 H9 done
 M30a-1 started 2026-09-06T12:19:24Z by scheduled
+M30a-1 done
