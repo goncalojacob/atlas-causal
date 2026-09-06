@@ -13,6 +13,61 @@ hundred lines again, cut it the same way.
 
 ## Last updated
 
+2026-09-06, after **M32b-1** (`docs/m32b-brief.md`, §8: the first of M32b's
+two runs), on `m0`: **the roles are a vocabulary and not a phrase any more.**
+
+**245 of the 349 actor lines were re-filed, and 184 of them kept what they
+used to say.** `tools/migrate/roles.mjs` walked all 329 event files and put
+every free-text role onto one of the 31 ids of `data/roles.json`, keeping the
+old phrase as the `note` beside it — the record's own string, character for
+character, so the twelve that differ from their folded form only in case kept
+their capitals. The other 104 lines already read as an id and were left alone,
+gaining no note. Three keys move in the whole of `data/`: `role`, `note` and
+`revised`. Nothing was added about the past.
+
+**The table is `docs/roles-mapping.md` and the code cannot drift from it.**
+The 163 rows live at the top of the tool, as `led-to-tenures.mjs` keeps its
+two judgement tables, and `tests/roles-migrate.test.mjs` asserts them against
+the document's `Role in use`, `Becomes` and `Note kept` columns row for row —
+never its `Count` column, which is stale. The tool refuses a role with no row
+rather than inventing a target; there were none.
+
+**`role-unknown` is rule 25.** An active event carrying a role outside
+`data/roles.json` is an error now, one a record and naming the roles, and 114
+warnings became 0 before the rule was written rather than after. Active events
+only: a tombstone is a record of what the atlas used to say. A dataset with
+**no** `data/roles.json` is still checked against nothing — the property
+easiest to lose when a warning becomes an error, and `event-fields.test.mjs`
+now says it about the error and not only about the warning. The fixture
+warning totals in `rules.test.mjs` and `validate-cli.test.mjs` did not move,
+which is the same guarantee seen from the other side. `category-unknown` is
+still a warning and M32b-2 is still the run that assigns categories.
+
+**Both writing pages offer the list and cannot leave it.** The contribution
+form and the review editor draw the role as a `<select>` of the manifest's
+`rolesAllowed`, labelled and titled from the vocabulary, blank first so an
+unfilled row still reports at `/actors/<i>/role`, with the note beside it. A
+citation's locator and a narrative step's text stay free text. A role the list
+does not have keeps an option of its own rather than being silently blanked,
+because opening a record must not change it.
+
+**What is left for the owner**, and not guessed at: `minister` and
+`institution` are the two roles no row targets — `docs/roles-mapping.md` says
+`minister` is there for events that do not exist yet, and `institution` is in
+the same position. Five rows of the document's `Count` column disagree with
+the corpus — `government` says 8 against 11, `founded` 6 against 8, `admitting
+body` 2 against 3, `acceded` 1 against 2, `founding member` 1 against 3 — and
+the column sums to 340 against 349 lines; the mapping itself is right and was
+applied unedited. No role string in the corpus lacked a row, no row matched
+nothing, no actor line carried a `note` already, and **no record was skipped
+as `reviewed`**: there are none in `data/events/`. Every one of the 349 lines
+sits on an active event, so the 192 tombstones changed not at all.
+
+**1069 tests, none skipped**, with `CHROME` set; `node tools/validate.mjs`
+reports 1839 records, 0 errors and 1043 warnings, none of them `role-unknown`;
+`node tools/validate.mjs --index` is byte-identical. **M32b-2 owns the
+categories** and nothing here touched them.
+
 2026-09-06, after **M30b-3** (`docs/m30b-brief.md`, amendment A1: the last of
 M30b's three runs), on `m0`: **the controls and the writing. M30b is done.**
 
@@ -1170,6 +1225,91 @@ In full in the history file. The ones that decide something:
      reports zero errors at every commit and `node --test` is green with
      `CHROME` set.
 
+### M32b-1, the roles applied
+
+The numbering continues from 401, which is M31-3's last.
+
+402. **The claim push was rejected and the run re-claimed rather than
+     stopping.** Run protocol §2 says a rejected claim push means another run
+     got there first: stop, no pull, no rebase. What had landed was the
+     owner's own commit — `4d2b9fc`, "the assistant's agent worktrees are not
+     part of the repository" — pushed twenty seconds before, and `origin/m0`
+     carried no `M32b-1 started` line at all. The rule's premise was checked
+     and did not hold, so the run re-ran step 1 from the new tip
+     (`git checkout -B m0 origin/m0`, claim, push) exactly as a fresh run
+     would, once. Nothing was pulled, nothing was rebased and no work of
+     anybody's was merged over. Had the second push been rejected too, the run
+     would have stopped.
+403. **The index was rebuilt before anything else was written.** `origin/m0`
+     arrived with a stale `data/index/`: M31 worked on its own branch and, by
+     its deviations 390 and 401, did not commit the index there, so the merge
+     landed 102 history files `build-index.mjs` no longer produces and rule 16
+     failed at the branch tip. Two tests were red on `origin/m0` before this
+     run touched anything (`the repository data/ validates and its index is
+     fresh`, `validate.mjs passes on the repository data`), which is what
+     A11's suspension in M31 was always going to cost. This run owns
+     `data/index/`, so the first commit is the rebuild and every commit after
+     it is green.
+404. **A role already in the vocabulary is checked before the note, and that
+     is what makes the tool idempotent.** §1 gives three rules — an id is left
+     alone, a line with a note is left alone entirely, an unmapped role is
+     refused — and does not say in which order. It has to be that one:
+     `head-of-government` is an id and is not one of the document's 163
+     phrases, so a second run over a corpus the first re-filed would refuse
+     every line it had just written if the table were consulted first.
+405. **A role the list does not have keeps an option of its own.** A `<select>`
+     set to a value it has no option for silently reports the empty one, so
+     drawing the closed list naively would blank the role of any record merely
+     opened in the review dashboard — a tombstone written before the list
+     closed is exactly such a record, and rule 25 does not reach one.
+     `roleOptionsFor` in `bundle.js` adds an option for the record's own value,
+     marked as outside the file. Rule 25 refuses such a role on a save, with a
+     message; a control that eats it while nobody is looking is worse than the
+     error.
+406. **The tool falls back to its own table's targets where a dataset has no
+     `data/roles.json`.** It needs a list to answer "is this role already
+     filed", and the fixtures have no vocabulary file. Defaulting to the empty
+     set would have made every fixture role unmapped, which is the empty
+     closed set amendment A8 rules out. The 29 ids the table can produce are
+     that list; the repository's own 31 are used where the file is there.
+407. **Rule 25 reports at `/actors` and its message says where a role is
+     added.** §5 leaves the wording to the run. The path is the list and not a
+     line, because the error is one a record; the message names the roles in
+     the order they appear, as the warning did, and then says that adding a
+     role is an edit to `data/roles.json` and that the phrase goes in the note
+     — the two things a writer who hits it needs to know.
+408. **The last commit of the run is `STATUS.md`, not the index.** A11 asks
+     for a `build-index.mjs` commit last so that no record fix can follow the
+     rebuild and leave `--index` failing for no visible reason. That reason is
+     served — no commit after the index rebuild touches `data/` at all — but
+     the run protocol §4 requires the `M32b-1 done` line to be committed and
+     pushed, and an empty index commit after it would be a commit that says
+     nothing. `node tools/validate.mjs --index` is byte-identical at the tip.
+409. **`roleChoices` changed shape, and `tests/bundle.test.mjs` moved with
+     it.** It returned bare ids for a `<datalist>`; a closed list needs a
+     label, a description for the option's title and a blank first row, so it
+     returns the same rows `vocabularyChoices` does. One assertion in
+     `bundle.test.mjs` was restaged. It is the only test assertion this run
+     changed that was not about the thing it was testing.
+410. **`tests/build-index.test.mjs:155` gained an assertion rather than only a
+     comment.** §6 and A12 ask for the comment to change and the
+     `notDeepEqual` to stay, and both did. What the comment now claims — that
+     the roles in use are a *subset* of the vocabulary — is worth asserting
+     rather than describing, so a second line says it. The old assertion is
+     untouched and unweakened.
+411. **`.contrib .citation-row select` went from `flex: 2` to `flex: 1`.** The
+     rule had no select to style until this run put one in the row; at 2 the
+     role would have been as wide as the actor picker beside it and twice the
+     note. It takes the width of the input it replaced.
+412. **A0's counts were re-verified and two of them have moved**, as A0 said
+     they might. 1839 records, not 1737, and 146 active events, not 137 — M31
+     wrote tenures and reinstated nine elections between the brief and this
+     run. Everything this run depends on held exactly: 329 event files, 349
+     actor lines all on active events, 163 distinct role strings raw and
+     folded, 21 of them already ids, 163 rows in the document with 31 em-dash
+     rows, reaching 184 lines, and `minister` and `institution` targeted by
+     nothing.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
@@ -1284,3 +1424,4 @@ M31-3 started 2026-09-06T17:42:55Z by scheduled (branch m31)
 M31-3 done
 M31 done
 M32b-1 started 2026-09-06T18:17:42Z by scheduled
+M32b-1 done
