@@ -8,7 +8,7 @@ leave the rest alone. Untick is the default, and a row nobody ticks is a
 record that is never created. Nothing else on a row is meant to be edited by
 hand; the import reads the ticks and nothing else.
 
-1892 candidate(s) over 35 period(s), of which 312 already
+2217 candidate(s) over 42 period(s), of which 340 already
 have a record here. An item that two queries return is listed once, under the
 first of them.
 
@@ -34,7 +34,19 @@ to that file and another run, never an edit here.
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
 | [ ] | [`Q2518953`](https://www.wikidata.org/wiki/Q2518953) | Treaty of Windsor | Tratado de Windsor | 1899-01-01 | treaty | 6 | yes |
 
-## 1900s — 1 candidate(s), 1 already in the atlas
+## 1900s — 8 candidate(s), 8 already in the atlas
+
+### elections-1900s — 7
+
+| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
+| :--: | --- | --- | --- | --- | --- | --: | :--: |
+| [ ] | [`Q7232742`](https://www.wikidata.org/wiki/Q7232742) | 1900 Portuguese legislative election | — | 1900-11-25 | Portuguese legislative election | 3 | yes |
+| [ ] | [`Q7232744`](https://www.wikidata.org/wiki/Q7232744) | 1901 Portuguese legislative election | — | 1901-10-06 | Portuguese legislative election | 3 | yes |
+| [ ] | [`Q7232745`](https://www.wikidata.org/wiki/Q7232745) | 1904 Portuguese legislative election | — | 1904-06-26 | Portuguese legislative election | 2 | yes |
+| [ ] | [`Q7232746`](https://www.wikidata.org/wiki/Q7232746) | 1905 Portuguese legislative election | — | 1905-12-12 | Portuguese legislative election | 2 | yes |
+| [ ] | [`Q7232771`](https://www.wikidata.org/wiki/Q7232771) | April 1906 Portuguese legislative election | — | 1906-04-29 | Portuguese legislative election | 2 | yes |
+| [ ] | [`Q7232772`](https://www.wikidata.org/wiki/Q7232772) | August 1906 Portuguese legislative election | — | 1906-08-19 | Portuguese legislative election | 2 | yes |
+| [ ] | [`Q7232747`](https://www.wikidata.org/wiki/Q7232747) | 1908 Portuguese legislative election | Eleições legislativas portuguesas de 1908 | 1908-04-05 | Portuguese legislative election | 4 | yes |
 
 ### disasters-1900s — 1
 
@@ -60,7 +72,7 @@ to that file and another run, never an edit here.
 | [ ] | [`Q7232750`](https://www.wikidata.org/wiki/Q7232750) | 1919 Portuguese legislative election | eleições legislativas portuguesas de 1919 | 1919-05-11 | Portuguese legislative election | 5 | yes |
 | [ ] | [`Q21872497`](https://www.wikidata.org/wiki/Q21872497) | 1919 Portuguese presidential election | eleições presidenciais portuguesas de 1919 | 1919-12-06 | Portuguese presidential election | 2 | yes |
 
-## 1920s — 10 candidate(s), 9 already in the atlas
+## 1920s — 9 candidate(s), 9 already in the atlas
 
 ### elections-1920s — 6
 
@@ -73,12 +85,6 @@ to that file and another run, never an edit here.
 | [ ] | [`Q21714331`](https://www.wikidata.org/wiki/Q21714331) | 1925 Portuguese presidential election | eleições presidenciais portuguesas de 1925 | 1925-12-11 | Portuguese presidential election | 2 | yes |
 | [ ] | [`Q18167373`](https://www.wikidata.org/wiki/Q18167373) | 1928 Portuguese presidential election | eleições presidenciais portuguesas de 1928 | 1928-03-25 | Portuguese presidential election | 4 | yes |
 
-### treaties-and-agreements-1920s — 1
-
-| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
-| :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q2659185`](https://www.wikidata.org/wiki/Q2659185) | Nine-Power Treaty | Tratado das Nove Potências | 1922-02-06 | ennead | 20 | — |
-
 ### massacres-1920s — 1
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
@@ -89,7 +95,7 @@ to that file and another run, never an edit here.
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q641898`](https://www.wikidata.org/wiki/Q641898) | Bloody Night | Noite sangrenta | 1921-10-19 | rebellion | 8 | yes |
+| [ ] | [`Q641898`](https://www.wikidata.org/wiki/Q641898) | Bloody Night | Noite sangrenta | 1921-10-19 | magnicide | 8 | yes |
 | [ ] | [`Q10372022`](https://www.wikidata.org/wiki/Q10372022) | 1926 Horta earthquake | Sismo da Horta de 1926 | 1926-08-31 | earthquake | 2 | yes |
 
 ## 1930s — 5 candidate(s), 5 already in the atlas
@@ -114,7 +120,7 @@ to that file and another run, never an edit here.
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
 | [ ] | [`Q7232706`](https://www.wikidata.org/wiki/Q7232706) | Portuguese constitutional referendum, 1933 | Referendo constitucional em Portugal (1933) | 1933-03-19 | constitutional referendum | 5 | yes |
 
-## 1940s — 7 candidate(s), 6 already in the atlas
+## 1940s — 6 candidate(s), 6 already in the atlas
 
 ### elections-1940s — 5
 
@@ -125,12 +131,6 @@ to that file and another run, never an edit here.
 | [ ] | [`Q7232758`](https://www.wikidata.org/wiki/Q7232758) | 1945 Portuguese legislative election | eleições legislativas portuguesas de 1945 | 1945-11-18 | Portuguese legislative election | 4 | yes |
 | [ ] | [`Q3277291`](https://www.wikidata.org/wiki/Q3277291) | 1949 Portuguese presidential election | Eleições presidenciais portuguesas de 1949 | 1949-02-13 | Portuguese presidential election | 6 | yes |
 | [ ] | [`Q7232761`](https://www.wikidata.org/wiki/Q7232761) | 1949 Portuguese legislative election | eleições legislativas portuguesas de 1949 | 1949-11-13 | Portuguese legislative election | 4 | yes |
-
-### coups-and-uprisings-1940s — 1
-
-| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
-| :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q28678044`](https://www.wikidata.org/wiki/Q28678044) | — | Revolta da Mealhada | 1946-01-01 | rebellion | 1 | — |
 
 ### treaties-and-agreements-1940s — 1
 
@@ -193,7 +193,7 @@ to that file and another run, never an edit here.
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q111584941`](https://www.wikidata.org/wiki/Q111584941) | Assault on the Santa Maria steamship | Assalto ao paquete Santa Maria | 1961-01-22 | assault | 0 | yes |
+| [ ] | [`Q111584941`](https://www.wikidata.org/wiki/Q111584941) | Assault on the Santa Maria steamship | Assalto ao paquete Santa Maria | 1961-01-22 | murder | 0 | yes |
 | [ ] | [`Q10261580`](https://www.wikidata.org/wiki/Q10261580) | 1964 Rosais earthquake | Crise sísmica dos Rosais | 1964-02-15 | earthquake | 4 | yes |
 | [ ] | [`Q48876710`](https://www.wikidata.org/wiki/Q48876710) | 1967 Portugal floods | Cheias de 1967 na região de Lisboa | 1967-11-25 | natural disaster | 2 | yes |
 | [ ] | [`Q3510571`](https://www.wikidata.org/wiki/Q3510571) | 1969 Portugal earthquake | Sismo de Portugal de 1969 | 1969-02-28 | earthquake | 7 | yes |
@@ -257,7 +257,7 @@ to that file and another run, never an edit here.
 | [ ] | [`Q112073029`](https://www.wikidata.org/wiki/Q112073029) | Murder of Jorge Augusto de Carvalho, Porto Judiciary Police officer | Assassínio de Jorge Augusto de Carvalho, agente da Polícia Judiciária do Porto | 1978-03-21 | deliberate murder | 0 | yes |
 | [ ] | [`Q109529478`](https://www.wikidata.org/wiki/Q109529478) | Murder of Jose Manuel Placido | Assassinato de José Manuel Plácido | 1979-11-15 | murder | 0 | yes |
 
-## 1980s — 18 candidate(s), 18 already in the atlas
+## 1980s — 33 candidate(s), 33 already in the atlas
 
 ### elections-1980s — 17
 
@@ -274,7 +274,7 @@ to that file and another run, never an edit here.
 | [ ] | [`Q371408`](https://www.wikidata.org/wiki/Q371408) | 1985 Portuguese legislative election | eleições legislativas portuguesas de 1985 | 1985-10-06 | Portuguese legislative election | 9 | yes |
 | [ ] | [`Q7232778`](https://www.wikidata.org/wiki/Q7232778) | 1985 Portuguese local elections | eleições autárquicas portuguesas de 1985 | 1985-12-15 | Portuguese local elections | 2 | yes |
 | [ ] | [`Q3586628`](https://www.wikidata.org/wiki/Q3586628) | 1986 Portuguese presidential election | eleições presidenciais portuguesas de 1986 | 1986-01-26 | Portuguese presidential election | 7 | yes |
-| [ ] | [`Q2404857`](https://www.wikidata.org/wiki/Q2404857) | 1987 European Parliament election in Portugal | eleições parlamentares europeias de 1987 em Portugal | 1987-07-19 | off-year election to the European Parliament | 8 | yes |
+| [ ] | [`Q2404857`](https://www.wikidata.org/wiki/Q2404857) | 1987 European Parliament election in Portugal | eleições parlamentares europeias de 1987 em Portugal | 1987-07-19 | European Parliament election | 8 | yes |
 | [ ] | [`Q1343967`](https://www.wikidata.org/wiki/Q1343967) | 1987 Portuguese legislative election | eleições legislativas portuguesas de 1987 | 1987-07-19 | Portuguese legislative election | 10 | yes |
 | [ ] | [`Q10271600`](https://www.wikidata.org/wiki/Q10271600) | — | eleições legislativas regionais na Madeira em 1988 | 1988-10-09 | parliamentary election in Madeira | 2 | yes |
 | [ ] | [`Q10271609`](https://www.wikidata.org/wiki/Q10271609) | — | eleições legislativas regionais nos Açores em 1988 | 1988-10-09 | parliamentary election in the Azores | 2 | yes |
@@ -286,6 +286,26 @@ to that file and another run, never an edit here.
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
 | [ ] | [`Q9360737`](https://www.wikidata.org/wiki/Q9360737) | Treaty of Accession 1985 | Tratado de Madrid-Lisboa (1985) | 1985-06-12 | Treaty of Accession to the EU | 9 | yes |
+
+### disasters-1980s — 15
+
+| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
+| :--: | --- | --- | --- | --- | --- | --: | :--: |
+| [ ] | [`Q3306615`](https://www.wikidata.org/wiki/Q3306615) | 1980 Azores Islands earthquake | Sismo da Terceira de 1980 | 1980-01-01 | earthquake | 8 | yes |
+| [ ] | [`Q115691683`](https://www.wikidata.org/wiki/Q115691683) | Assault on Tabaqueira, by the PRP-BR, on January 31, 1980 | assalto feito à Tabaqueira, pelo PRP-BR, em 31 de janeiro de 1980 | 1980-01-31 | armed robbery | 0 | yes |
+| [ ] | [`Q115210882`](https://www.wikidata.org/wiki/Q115210882) | Murder of Delfim de Almeida Fernandes, by the PRP-BR | Assassínio de Delfim de Almeida Fernandes, pelo PRP-BR | 1980-02-25 | murder | 0 | yes |
+| [ ] | [`Q115187238`](https://www.wikidata.org/wiki/Q115187238) | Assault on Sintra's Finance Department, by the PRP-BR on 25-02-1980 | Assalto à Repartição de Finanças de Sintra, feito pelo PRP-BR, em 25-02-1980 | 1980-02-25 | assault | 0 | yes |
+| [ ] | [`Q115636352`](https://www.wikidata.org/wiki/Q115636352) | Robbery of the Totta & Açores Bank in Malveira, on 6 October 1980 | Assalto ao Banco Totta & Açores, da Malveira, em 6 de outubro de 1980 | 1980-10-06 | bank robbery | 0 | yes |
+| [ ] | [`Q139913681`](https://www.wikidata.org/wiki/Q139913681) | — | Assalto ao Banco Nacional Ultramarino, da Malveira, em 6 de outubro de 1980 | 1980-10-06 | bank robbery | 0 | yes |
+| [ ] | [`Q115635121`](https://www.wikidata.org/wiki/Q115635121) | assassination attempt on Fernando da Costa Rolo | tentativa de assassinato de Fernando da Costa Rolo | 1981-03-19 | terrorist attack | 0 | yes |
+| [ ] | [`Q111788515`](https://www.wikidata.org/wiki/Q111788515) | Robbery of Banco Fonsecas & Burnay, in Póvoa de Santo Adrião, on October 13, 1981 | Assalto ao Banco Fonsecas & Burnay, na Póvoa de Santo Adrião, em 13 de Outubro de 1981 | 1981-10-13 | bank robbery | 0 | yes |
+| [ ] | [`Q9386425`](https://www.wikidata.org/wiki/Q9386425) | Assassination attempt on John Paul II (1982) | — | 1982-05-12 | attempted murder | 1 | yes |
+| [ ] | [`Q4808506`](https://www.wikidata.org/wiki/Q4808506) | assassination of Erkut Akbay | Assassinato de Erkut Akbay | 1982-06-07 | political murder | 6 | yes |
+| [ ] | [`Q349875`](https://www.wikidata.org/wiki/Q349875) | 1983 Turkish embassy attack in Lisbon | Ataque à Embaixada da Turquia em Lisboa | 1983-07-27 | terrorist attack | 12 | yes |
+| [ ] | [`Q115779750`](https://www.wikidata.org/wiki/Q115779750) | Assault on the Grupo 8 cash van, in Lisbon, carried out by the FP-25, which yielded 108 thousand contos, on February 7, 1984 | Assalto a carrinha de valores do Grupo 8, em Lisboa, feito pelas FP-25, que rendeu 108 mil contos, em 7 de fevereiro de 1984 | 1984-02-07 | armed robbery | 0 | yes |
+| [ ] | [`Q138783119`](https://www.wikidata.org/wiki/Q138783119) | — | Assassinato de Rogério Canha e Sá | 1984-05-29 | murder | 0 | yes |
+| [ ] | [`Q10301908`](https://www.wikidata.org/wiki/Q10301908) | Chiado Fire | Incêndio do Chiado | 1988-08-25 | conflagration | 2 | yes |
+| [ ] | [`Q112726955`](https://www.wikidata.org/wiki/Q112726955) | — | Desastre ambiental de Almograve | 1989-07-14 | oil spill | 1 | yes |
 
 ## 1990s — 22 candidate(s), 22 already in the atlas
 
@@ -331,7 +351,7 @@ to that file and another run, never an edit here.
 | [ ] | [`Q108485945`](https://www.wikidata.org/wiki/Q108485945) | 1998 Azores Islands earthquake | — | 1998-01-01 | earthquake | 3 | yes |
 | [ ] | [`Q5942951`](https://www.wikidata.org/wiki/Q5942951) | — | — | 1998-07-09 | earthquake | 1 | yes |
 
-## 2000s — 27 candidate(s), 27 already in the atlas
+## 2000s — 24 candidate(s), 24 already in the atlas
 
 ### elections-2000s — 19
 
@@ -375,14 +395,6 @@ to that file and another run, never an edit here.
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
 | [ ] | [`Q1536157`](https://www.wikidata.org/wiki/Q1536157) | Telecoms Package | — | 2007-01-01 | legislative package of the European Union | 6 | yes |
-
-### disasters-2000s — 3
-
-| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
-| :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q264468`](https://www.wikidata.org/wiki/Q264468) | murder of Joana Cipriano | Caso Joana Cipriano | 2004-09-12 | murder | 7 | yes |
-| [ ] | [`Q111918021`](https://www.wikidata.org/wiki/Q111918021) | Espírito Santo Bank of Campolide robbery | Assalto ao BES de Campolide | 2008-08-07 | robbery | 2 | yes |
-| [ ] | [`Q6143030`](https://www.wikidata.org/wiki/Q6143030) | — | Sismo de Portugal de 2009 | 2009-12-17 | earthquake | 3 | yes |
 
 ### battles-and-wars-2000s — 1
 
@@ -517,7 +529,7 @@ to that file and another run, never an edit here.
 | [ ] | [`Q2704441`](https://www.wikidata.org/wiki/Q2704441) | Chilean Civil War of 1891 | Guerra Civil chilena de 1891 | 1891-01-16 | civil war | 12 | — |
 | [ ] | [`Q4120277`](https://www.wikidata.org/wiki/Q4120277) | Second Samoan Civil War | Segunda Guerra Civil de Samoa | 1898-01-01 | civil war | 12 | — |
 | [ ] | [`Q2935437`](https://www.wikidata.org/wiki/Q2935437) | Congo–Arab War | — | 1892-04-01 | proxy war | 12 | — |
-| [ ] | [`Q3966451`](https://www.wikidata.org/wiki/Q3966451) | Benin Expedition of 1897 | Expedição punitiva de Benin | 1897-02-09 | colonial war | 11 | — |
+| [ ] | [`Q3966451`](https://www.wikidata.org/wiki/Q3966451) | Benin Expedition of 1897 | Expedição punitiva de Benin | 1897-02-09 | punitive expedition | 11 | — |
 | [ ] | [`Q2201391`](https://www.wikidata.org/wiki/Q2201391) | Dutch intervention in Lombok and Karangasem | — | 1894-11-01 | war | 9 | — |
 | [ ] | [`Q1822896`](https://www.wikidata.org/wiki/Q1822896) | Liberal Revolution of Ecuador | — | 1895-06-01 | civil war | 7 | — |
 | [ ] | [`Q2523337`](https://www.wikidata.org/wiki/Q2523337) | Federalist Riograndense Revolution | Revolução Federalista | 1893-01-01 | civil war | 7 | — |
@@ -558,13 +570,13 @@ to that file and another run, never an edit here.
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
 | [ ] | [`Q2302690`](https://www.wikidata.org/wiki/Q2302690) | Tobacco Protest | — | 1890-01-01 | revolution | 17 | — |
-| [ ] | [`Q930925`](https://www.wikidata.org/wiki/Q930925) | Cretan Revolt of 1897–1898 | Revolta de Creta de 1897-1898 | 1897-01-01 | revolution | 11 | — |
+| [ ] | [`Q930925`](https://www.wikidata.org/wiki/Q930925) | Cretan Revolt of 1897–1898 | Revolta de Creta de 1897-1898 | 1897-01-01 | armed conflict | 11 | — |
 
 ### world-pandemics-1890s — 1
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q7533201`](https://www.wikidata.org/wiki/Q7533201) | sixth cholera pandemic | Pandemia de cólera de 1899–1923 | 1899-01-01 | pandemic | 22 | — |
+| [ ] | [`Q7533201`](https://www.wikidata.org/wiki/Q7533201) | sixth cholera pandemic | Pandemia de cólera de 1899–1923 | 1899-01-01 | cholera outbreak | 22 | — |
 
 ### world-coups-1890s — 13
 
@@ -640,7 +652,7 @@ to that file and another run, never an edit here.
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
 | [ ] | [`Q548067`](https://www.wikidata.org/wiki/Q548067) | Treaty of Portsmouth | Tratado de Portsmouth | 1905-09-05 | peace treaty | 53 | yes |
 | [ ] | [`Q464399`](https://www.wikidata.org/wiki/Q464399) | Entente Cordiale | Entente Cordiale | 1904-04-08 | treaty | 49 | — |
-| [ ] | [`Q672556`](https://www.wikidata.org/wiki/Q672556) | Boxer Protocol | Protocolo Boxer | 1901-09-07 | book | 28 | — |
+| [ ] | [`Q672556`](https://www.wikidata.org/wiki/Q672556) | Boxer Protocol | Protocolo Boxer | 1901-09-07 | manuscript | 28 | — |
 | [ ] | [`Q541195`](https://www.wikidata.org/wiki/Q541195) | Anglo-Japanese Alliance | Aliança Anglo-Japonesa | 1902-01-30 | treaty | 28 | — |
 | [ ] | [`Q233254`](https://www.wikidata.org/wiki/Q233254) | Japan–Korea Treaty of November 1905 | Tratado de Eulsa | 1905-11-17 | unequal treaties | 28 | — |
 | [ ] | [`Q927606`](https://www.wikidata.org/wiki/Q927606) | Treaty of Vereeniging | Tratado de Vereeniging | 1902-05-31 | treaty | 21 | — |
@@ -660,8 +672,8 @@ to that file and another run, never an edit here.
 | [ ] | [`Q705443`](https://www.wikidata.org/wiki/Q705443) | Gando Convention | — | 1909-09-04 | treaty | 7 | — |
 | [ ] | [`Q1632568`](https://www.wikidata.org/wiki/Q1632568) | — | — | 1905-09-23 | treaty | 7 | — |
 | [ ] | [`Q3179689`](https://www.wikidata.org/wiki/Q3179689) | Cuban–American Treaty | Tratado Cubano-Norte Americano | 1903-02-16 | treaty | 7 | — |
-| [ ] | [`Q473661`](https://www.wikidata.org/wiki/Q473661) | Treaty of Peace and love | Tratado de Paz e Amizade de 1904 entre Chile e Bolívia | 1904-10-20 | peace treaty | 7 | — |
 | [ ] | [`Q17050031`](https://www.wikidata.org/wiki/Q17050031) | Japan–Korea Agreement of April 1905 | — | 1905-04-01 | unequal treaties | 7 | — |
+| [ ] | [`Q473661`](https://www.wikidata.org/wiki/Q473661) | Treaty of Peace and love | Tratado de Paz e Amizade de 1904 entre Chile e Bolívia | 1904-10-20 | peace treaty | 7 | — |
 | [ ] | [`Q3536875`](https://www.wikidata.org/wiki/Q3536875) | Velarde-Río Branco Treaty | Tratado do Rio de Janeiro (1909) | 1909-09-08 | treaty | 6 | — |
 | [ ] | [`Q7123137`](https://www.wikidata.org/wiki/Q7123137) | Pacts of May | Pactos de Maio | 1902-05-28 | treaty | 6 | — |
 | [ ] | [`Q13021956`](https://www.wikidata.org/wiki/Q13021956) | Franco–Siamese Treaty of 1904 | Tratado Franco-Siamês de 1904 | 1904-02-11 | treaty | 6 | — |
@@ -700,9 +712,9 @@ to that file and another run, never an edit here.
 | [ ] | [`Q538650`](https://www.wikidata.org/wiki/Q538650) | Revolt of the Languedoc winegrowers | — | 1907-03-11 | rebellion | 8 | — |
 | [ ] | [`Q12601111`](https://www.wikidata.org/wiki/Q12601111) | Namdaemun Battle | — | 1907-08-01 | rebellion | 7 | — |
 | [ ] | [`Q4126381`](https://www.wikidata.org/wiki/Q4126381) | Potemkin Mutiny | — | 1905-06-26 | mutiny | 7 | — |
-| [ ] | [`Q4231746`](https://www.wikidata.org/wiki/Q4231746) | Ottoman countercoup of 1909 | Contrarrevolução otomana de 1909 | 1909-04-13 | coup d'état | 6 | — |
 | [ ] | [`Q4411939`](https://www.wikidata.org/wiki/Q4411939) | Sevastopol Uprising | — | 1905-11-24 | rebellion | 6 | — |
 | [ ] | [`Q5682791`](https://www.wikidata.org/wiki/Q5682791) | Hauran Druze Rebellion | — | 1909-05-01 | rebellion | 6 | — |
+| [ ] | [`Q4231746`](https://www.wikidata.org/wiki/Q4231746) | Ottoman countercoup of 1909 | Contrarrevolução otomana de 1909 | 1909-04-13 | coup d'état | 6 | — |
 
 ### world-economic-crises-1900s — 1
 
@@ -725,7 +737,7 @@ to that file and another run, never an edit here.
 | [ ] | [`Q1628090`](https://www.wikidata.org/wiki/Q1628090) | Bulgarian Declaration of Independence | Independência da Bulgária | 1908-09-22 | declaration of independence | 18 | — |
 | [ ] | [`Q3089201`](https://www.wikidata.org/wiki/Q3089201) | separation of Panama from Colombia | Separação do Panamá da Colômbia | 1903-11-03 | declaration of independence | 15 | — |
 
-## world 1910s — 143 candidate(s), 13 already in the atlas
+## world 1910s — 139 candidate(s), 13 already in the atlas
 
 ### world-wars-1910s — 36
 
@@ -738,16 +750,16 @@ to that file and another run, never an edit here.
 | [ ] | [`Q186284`](https://www.wikidata.org/wiki/Q186284) | Polish–Soviet War | Guerra Polaco-Soviética | 1919-02-01 | war | 71 | — |
 | [ ] | [`Q184183`](https://www.wikidata.org/wiki/Q184183) | Second Balkan War | Segunda Guerra Balcânica | 1913-06-29 | war | 70 | — |
 | [ ] | [`Q214426`](https://www.wikidata.org/wiki/Q214426) | Mexican Revolution | Revolução Mexicana | 1910-11-20 | civil war | 69 | yes |
-| [ ] | [`Q234738`](https://www.wikidata.org/wiki/Q234738) | Turkish War of Independence | Guerra de Independência da Turquia | 1919-05-19 | war of national liberation | 68 | yes |
+| [ ] | [`Q234738`](https://www.wikidata.org/wiki/Q234738) | Turkish War of Independence | Guerra de Independência da Turquia | 1919-05-19 | war of independence | 68 | yes |
 | [ ] | [`Q203824`](https://www.wikidata.org/wiki/Q203824) | Italo-Turkish War | Guerra Ítalo-Turca | 1911-09-29 | war | 62 | — |
 | [ ] | [`Q211855`](https://www.wikidata.org/wiki/Q211855) | Finnish Civil War | Guerra Civil Finlandesa | 1918-01-27 | civil war | 60 | — |
 | [ ] | [`Q208297`](https://www.wikidata.org/wiki/Q208297) | Irish War of Independence | Guerra da Independência da Irlanda | 1919-01-21 | war of independence | 57 | — |
 | [ ] | [`Q87138`](https://www.wikidata.org/wiki/Q87138) | Greco-Turkish War | Guerra Greco-Turca de 1919–1922 | 1919-05-15 | war | 55 | — |
 | [ ] | [`Q1127302`](https://www.wikidata.org/wiki/Q1127302) | Estonian War of Independence | Guerra de Independência da Estônia | 1918-11-28 | war of independence | 47 | — |
 | [ ] | [`Q842774`](https://www.wikidata.org/wiki/Q842774) | Polish–Ukrainian War | Guerra Polaco-Ucraniana | 1918-11-01 | war | 40 | — |
-| [ ] | [`Q766437`](https://www.wikidata.org/wiki/Q766437) | Rif War | Guerra do Rife | 1911-06-08 | war | 38 | — |
+| [ ] | [`Q766437`](https://www.wikidata.org/wiki/Q766437) | Rif War | Guerra do Rife | 1911-06-08 | war | 39 | — |
 | [ ] | [`Q1259237`](https://www.wikidata.org/wiki/Q1259237) | Third Anglo-Afghan War | Terceira Guerra Anglo-Afegã | 1919-05-06 | war | 38 | — |
-| [ ] | [`Q2479606`](https://www.wikidata.org/wiki/Q2479606) | Ukrainian War of Independence | Guerra de Independência da Ucrânia | 1917-11-08 | historical period | 38 | — |
+| [ ] | [`Q2479606`](https://www.wikidata.org/wiki/Q2479606) | Ukrainian War of Independence | Guerra de Independência da Ucrânia | 1917-11-08 | war of independence | 38 | — |
 | [ ] | [`Q1495944`](https://www.wikidata.org/wiki/Q1495944) | Polish–Lithuanian War | Guerra polaco-lituana | 1919-01-01 | war | 28 | — |
 | [ ] | [`Q1859103`](https://www.wikidata.org/wiki/Q1859103) | Georgian–Armenian War | Guerra Georgiano-Armênia | 1918-01-01 | war | 28 | — |
 | [ ] | [`Q252298`](https://www.wikidata.org/wiki/Q252298) | Hungarian–Romanian War | Guerra húngaro-romena de 1919 | 1918-11-01 | war | 27 | — |
@@ -811,7 +823,7 @@ to that file and another run, never an edit here.
 | [ ] | [`Q321955`](https://www.wikidata.org/wiki/Q321955) | Constantinople Agreement | — | 1915-03-18 | treaty | 12 | — |
 | [ ] | [`Q2201387`](https://www.wikidata.org/wiki/Q2201387) | Franco-Monegasque Treaty | Tratados Franco-Monegascos | 1918-01-01 | treaty | 12 | — |
 | [ ] | [`Q7836972`](https://www.wikidata.org/wiki/Q7836972) | Treaty of Athens | — | 1913-11-14 | treaty | 12 | — |
-| [ ] | [`Q2632683`](https://www.wikidata.org/wiki/Q2632683) | Treaty of Poti | — | 1918-05-28 | treaty | 11 | — |
+| [ ] | [`Q3313588`](https://www.wikidata.org/wiki/Q3313588) | Protocol of Corfu | Protocolo de Corfu | 1914-05-17 | peace treaty | 11 | — |
 
 ### world-revolutions-1910s — 11
 
@@ -825,15 +837,15 @@ to that file and another run, never an edit here.
 | [ ] | [`Q689527`](https://www.wikidata.org/wiki/Q689527) | Aster Revolution | Revolução dos Crisântemos | 1918-10-31 | revolution | 30 | — |
 | [ ] | [`Q1993171`](https://www.wikidata.org/wiki/Q1993171) | 1919 Egyptian revolution | Revolução Egípcia de 1919 | 1919-01-01 | revolution | 29 | — |
 | [ ] | [`Q4301694`](https://www.wikidata.org/wiki/Q4301694) | Monegasque Revolution | Revolução Monegasca | 1910-01-01 | revolution | 11 | — |
-| [ ] | [`Q4391832`](https://www.wikidata.org/wiki/Q4391832) | Khivan Revolution | — | 1917-01-01 | revolution | 9 | — |
 | [ ] | [`Q429324`](https://www.wikidata.org/wiki/Q429324) | 1917 Spanish general strike | — | 1917-08-01 | revolutionary general strike | 9 | — |
+| [ ] | [`Q4391832`](https://www.wikidata.org/wiki/Q4391832) | Khivan Revolution | — | 1917-01-01 | revolution | 9 | — |
 | [ ] | [`Q4391827`](https://www.wikidata.org/wiki/Q4391827) | Bukharan Revolution | — | 1917-01-01 | revolution | 8 | — |
 
 ### world-pandemics-1910s — 2
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q178275`](https://www.wikidata.org/wiki/Q178275) | 1918–1920 flu pandemic | gripe de 1918 | 1918-01-01 | influenza pandemic | 102 | — |
+| [ ] | [`Q178275`](https://www.wikidata.org/wiki/Q178275) | 1918–1920 flu pandemic | gripe de 1918 | 1918-01-01 | zoonosis | 102 | — |
 | [ ] | [`Q91900320`](https://www.wikidata.org/wiki/Q91900320) | Manchurian plague | — | 1910-01-01 | plague epidemic | 16 | — |
 
 ### world-coups-1910s — 39
@@ -877,15 +889,15 @@ to that file and another run, never an edit here.
 | [ ] | [`Q1534814`](https://www.wikidata.org/wiki/Q1534814) | Ohrid–Debar Uprising | Revolta de Ohrid-Debar | 1913-09-23 | rebellion | 10 | — |
 | [ ] | [`Q1632838`](https://www.wikidata.org/wiki/Q1632838) | Second Guangzhou Uprising | Segunda Revolta do Cantão | 1911-04-27 | rebellion | 10 | — |
 | [ ] | [`Q28492393`](https://www.wikidata.org/wiki/Q28492393) | Junker mutiny | Motim junker | 1917-11-11 | mutiny | 10 | — |
-| [ ] | [`Q3449178`](https://www.wikidata.org/wiki/Q3449178) | Peasant Revolt in Albania | Revolta Camponesa na Albânia | 1914-05-21 | peasant revolt | 10 | — |
 | [ ] | [`Q1039500`](https://www.wikidata.org/wiki/Q1039500) | Red Week | — | 1914-06-01 | insurgency | 10 | — |
+| [ ] | [`Q3449178`](https://www.wikidata.org/wiki/Q3449178) | Peasant Revolt in Albania | Revolta Camponesa na Albânia | 1914-05-21 | peasant revolt | 10 | — |
 
 ### world-assassinations-1910s — 3
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q192050`](https://www.wikidata.org/wiki/Q192050) | assassination of Archduke Franz Ferdinand | assassinato de Sarajevo | 1914-06-28 | political murder | 65 | yes |
-| [ ] | [`Q1356047`](https://www.wikidata.org/wiki/Q1356047) | execution of the Romanov family | execução da família Romanov | 1918-07-16 | political murder | 44 | — |
+| [ ] | [`Q192050`](https://www.wikidata.org/wiki/Q192050) | assassination of Archduke Franz Ferdinand | assassinato de Sarajevo | 1914-06-28 | casus belli | 65 | yes |
+| [ ] | [`Q1356047`](https://www.wikidata.org/wiki/Q1356047) | execution of the Romanov family | execução da família Romanov | 1918-07-16 | regicide | 44 | — |
 | [ ] | [`Q2866969`](https://www.wikidata.org/wiki/Q2866969) | Assassination of Jean Jaurès | — | 1914-07-31 | political murder | 6 | — |
 
 ### world-genocides-1910s — 4
@@ -897,15 +909,6 @@ to that file and another run, never an edit here.
 | [ ] | [`Q911233`](https://www.wikidata.org/wiki/Q911233) | Greek genocide | Genocídio grego | 1913-01-01 | genocide | 36 | — |
 | [ ] | [`Q2464639`](https://www.wikidata.org/wiki/Q2464639) | decossackization | descossaquização | 1919-01-01 | ethnic cleansing | 16 | — |
 
-### world-independence-declarations-1910s — 4
-
-| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
-| :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q166981`](https://www.wikidata.org/wiki/Q166981) | Act of Independence of Lithuania | Declaração de Independência da Lituânia | 1918-02-16 | declaration of independence | 33 | — |
-| [ ] | [`Q16414371`](https://www.wikidata.org/wiki/Q16414371) | Declaration of Independence of Azerbaijan | — | 1918-05-28 | declaration of independence | 24 | — |
-| [ ] | [`Q27916528`](https://www.wikidata.org/wiki/Q27916528) | Independence of Finland | Independência da Finlândia | 1917-12-06 | independence | 16 | — |
-| [ ] | [`Q12868917`](https://www.wikidata.org/wiki/Q12868917) | Georgian Declaration of Independence, 1918 | — | 1918-05-26 | declaration of independence | 12 | — |
-
 ### world-international-conferences-1910s — 4
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
@@ -915,7 +918,7 @@ to that file and another run, never an edit here.
 | [ ] | [`Q59491`](https://www.wikidata.org/wiki/Q59491) | London Conference of 1912–1913 | Conferência de Londres de 1912-1913 | 1912-09-01 | summit | 13 | — |
 | [ ] | [`Q7023695`](https://www.wikidata.org/wiki/Q7023695) | Niagara Falls peace conference | — | 1914-05-20 | peace conference | 6 | — |
 
-## world 1920s — 75 candidate(s), 7 already in the atlas
+## world 1920s — 109 candidate(s), 7 already in the atlas
 
 ### world-wars-1920s — 19
 
@@ -941,7 +944,7 @@ to that file and another run, never an edit here.
 | [ ] | [`Q8061347`](https://www.wikidata.org/wiki/Q8061347) | Yunnan–Guangxi War | — | 1925-03-18 | war of succession | 7 | — |
 | [ ] | [`Q4505476`](https://www.wikidata.org/wiki/Q4505476) | Jiangsu–Zhejiang War | — | 1924-09-03 | war | 6 | — |
 
-### world-treaties-1920s — 38
+### world-treaties-1920s — 39
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
@@ -957,8 +960,8 @@ to that file and another run, never an edit here.
 | [ ] | [`Q461891`](https://www.wikidata.org/wiki/Q461891) | Svalbard Treaty | Tratado de Svalbard | 1920-02-09 | treaty | 44 | — |
 | [ ] | [`Q1056439`](https://www.wikidata.org/wiki/Q1056439) | Treaty of Tartu | Tratado de Tartu | 1920-02-02 | peace treaty | 43 | — |
 | [ ] | [`Q620854`](https://www.wikidata.org/wiki/Q620854) | Treaty of Tartu | Tratado de Tartu | 1920-10-14 | peace treaty | 35 | — |
+| [ ] | [`Q871407`](https://www.wikidata.org/wiki/Q871407) | Treaty of Rapallo | Tratado de Rapallo | 1920-11-12 | treaty | 34 | — |
 | [ ] | [`Q696550`](https://www.wikidata.org/wiki/Q696550) | Washington Naval Treaty | Tratado Naval de Washington de 1922 | 1921-11-01 | multilateral treaty | 34 | — |
-| [ ] | [`Q871407`](https://www.wikidata.org/wiki/Q871407) | Treaty of Rapallo | Tratado de Rapallo | 1920-11-12 | treaty | 33 | — |
 | [ ] | [`Q1443926`](https://www.wikidata.org/wiki/Q1443926) | Treaty on the Creation of the Union of Soviet Socialist Republics | Tratado de Criação da União Soviética | 1922-12-29 | treaty | 33 | — |
 | [ ] | [`Q2607023`](https://www.wikidata.org/wiki/Q2607023) | Treaty of Moscow | Tratado de Moscou | 1921-01-01 | treaty | 32 | — |
 | [ ] | [`Q6541445`](https://www.wikidata.org/wiki/Q6541445) | Armistice of Mudanya | Armistício de Mudanya | 1922-10-11 | armistice | 28 | — |
@@ -970,15 +973,16 @@ to that file and another run, never an edit here.
 | [ ] | [`Q2358950`](https://www.wikidata.org/wiki/Q2358950) | Treaty of Ankara | Tratado de Ancara | 1921-10-20 | peace treaty | 23 | — |
 | [ ] | [`Q695215`](https://www.wikidata.org/wiki/Q695215) | Treaty of Berlin (1926) | Tratado de Berlim (1926) | 1926-04-24 | treaty | 20 | — |
 | [ ] | [`Q1262485`](https://www.wikidata.org/wiki/Q1262485) | Treaty of Rome | — | 1924-01-27 | treaty | 20 | — |
+| [ ] | [`Q2659185`](https://www.wikidata.org/wiki/Q2659185) | Nine-Power Treaty | Tratado das Nove Potências | 1922-02-06 | treaty | 20 | — |
 | [ ] | [`Q29321`](https://www.wikidata.org/wiki/Q29321) | Soviet–Lithuanian Peace Treaty | Tratado de paz soviético-lituano de 1920 | 1920-07-12 | peace treaty | 19 | — |
 | [ ] | [`Q956429`](https://www.wikidata.org/wiki/Q956429) | Suwałki Agreement | — | 1920-10-07 | treaty | 18 | — |
 | [ ] | [`Q2722786`](https://www.wikidata.org/wiki/Q2722786) | Treaty of Paris | Tratado de Paris | 1920-10-28 | multilateral treaty | 17 | — |
 | [ ] | [`Q516642`](https://www.wikidata.org/wiki/Q516642) | Treaty of Berlin (1921) | — | 1921-08-25 | treaty | 15 | — |
 | [ ] | [`Q2594768`](https://www.wikidata.org/wiki/Q2594768) | Geneva Convention on Prisoners of War | — | 1929-07-27 | treaty | 15 | — |
+| [ ] | [`Q17035545`](https://www.wikidata.org/wiki/Q17035545) | Treaty of Jeddah | Tratado de Jeddah | 1927-01-01 | treaty | 15 | — |
 | [ ] | [`Q94635`](https://www.wikidata.org/wiki/Q94635) | Uqair Protocol of 1922 | Protocolo de Uqair de 1922 | 1922-12-02 | treaty | 14 | — |
 | [ ] | [`Q1580896`](https://www.wikidata.org/wiki/Q1580896) | Litvinov's Pact | — | 1929-02-09 | treaty | 14 | — |
 | [ ] | [`Q2625552`](https://www.wikidata.org/wiki/Q2625552) | Soviet–Japanese Basic Convention | — | 1925-02-26 | treaty | 14 | — |
-| [ ] | [`Q17035545`](https://www.wikidata.org/wiki/Q17035545) | Treaty of Jeddah | Tratado de Jeddah | 1927-01-01 | treaty | 14 | — |
 | [ ] | [`Q1874850`](https://www.wikidata.org/wiki/Q1874850) | Treaty of Moscow | Tratado de Moscou | 1920-05-07 | peace treaty | 14 | — |
 | [ ] | [`Q7875960`](https://www.wikidata.org/wiki/Q7875960) | US–Austrian Peace Treaty | — | 1921-08-24 | peace treaty | 14 | — |
 | [ ] | [`Q2066232`](https://www.wikidata.org/wiki/Q2066232) | Treaty of Warsaw | Tratado de Varsóvia | 1920-04-21 | treaty | 13 | — |
@@ -994,6 +998,45 @@ to that file and another run, never an edit here.
 | [ ] | [`Q732219`](https://www.wikidata.org/wiki/Q732219) | 28 May 1926 coup d'état | Golpe de Estado de 28 de Maio de 1926 | 1926-05-28 | revolution | 12 | — |
 | [ ] | [`Q2745716`](https://www.wikidata.org/wiki/Q2745716) | Paulista Revolution | Revolta Paulista de 1924 | 1924-01-01 | revolution | 7 | — |
 
+### world-coups-1920s — 34
+
+| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
+| :--: | --- | --- | --- | --- | --- | --: | :--: |
+| [ ] | [`Q36749`](https://www.wikidata.org/wiki/Q36749) | Beer Hall Putsch | Putsch da Cervejaria | 1923-11-08 | attempted coup d'état | 64 | yes |
+| [ ] | [`Q208300`](https://www.wikidata.org/wiki/Q208300) | Kronstadt rebellion | Revolta de Kronstadt | 1921-01-01 | rebellion | 58 | — |
+| [ ] | [`Q468823`](https://www.wikidata.org/wiki/Q468823) | March on Rome | Marcha sobre Roma | 1922-10-01 | coup d'état | 48 | — |
+| [ ] | [`Q161141`](https://www.wikidata.org/wiki/Q161141) | Kapp Putsch | Kapp-Putsch | 1920-03-13 | attempted coup d'état | 38 | — |
+| [ ] | [`Q279662`](https://www.wikidata.org/wiki/Q279662) | Cristero War | Guerra Cristera | 1926-01-01 | rebellion | 34 | — |
+| [ ] | [`Q811250`](https://www.wikidata.org/wiki/Q811250) | Tambov Rebellion | Revolta de Tambov | 1920-08-19 | rebellion | 34 | — |
+| [ ] | [`Q476634`](https://www.wikidata.org/wiki/Q476634) | Nanchang Uprising | Revolta de Nanchang | 1927-08-01 | rebellion | 31 | — |
+| [ ] | [`Q760629`](https://www.wikidata.org/wiki/Q760629) | August Uprising | Revolta de Agosto | 1924-08-28 | rebellion | 26 | — |
+| [ ] | [`Q1851730`](https://www.wikidata.org/wiki/Q1851730) | May Coup | Golpe de Maio | 1926-05-12 | coup d'état | 25 | — |
+| [ ] | [`Q619712`](https://www.wikidata.org/wiki/Q619712) | Sheikh Said rebellion | Rebelião do Xeque Said | 1925-02-13 | rebellion | 25 | — |
+| [ ] | [`Q6445763`](https://www.wikidata.org/wiki/Q6445763) | Kurdish–Turkish conflict | Conflito curdo-turco | 1921-03-06 | rebellion | 25 | — |
+| [ ] | [`Q1195058`](https://www.wikidata.org/wiki/Q1195058) | Shanghai massacre of 1927 | Massacre de Xangai de 1927 | 1927-04-12 | coup d'état | 24 | — |
+| [ ] | [`Q266909`](https://www.wikidata.org/wiki/Q266909) | Ruhr Uprising | Revolta do Ruhr | 1920-03-13 | rebellion | 22 | — |
+| [ ] | [`Q992318`](https://www.wikidata.org/wiki/Q992318) | Autumn Harvest Uprising | Revolta da Colheita de Outono | 1927-09-07 | rebellion | 21 | — |
+| [ ] | [`Q2602809`](https://www.wikidata.org/wiki/Q2602809) | 1924 Estonian coup d'état attempt | Tentativa de golpe de Estado na Estônia em 1924 | 1924-12-01 | attempted coup d'état | 21 | — |
+| [ ] | [`Q2570156`](https://www.wikidata.org/wiki/Q2570156) | 1926 Lithuanian coup d'état | Golpe de Estado na Lituânia em 1926 | 1926-12-17 | coup d'état | 20 | — |
+| [ ] | [`Q1131857`](https://www.wikidata.org/wiki/Q1131857) | Iranian events of 1921 | Golpe de Estado na Pérsia em 1921 | 1921-02-21 | coup d'état | 19 | — |
+| [ ] | [`Q460280`](https://www.wikidata.org/wiki/Q460280) | Hamburg Uprising | Revolta de Hamburgo | 1923-10-25 | rebellion | 19 | — |
+| [ ] | [`Q941932`](https://www.wikidata.org/wiki/Q941932) | September Uprising | — | 1923-09-29 | rebellion | 17 | — |
+| [ ] | [`Q684762`](https://www.wikidata.org/wiki/Q684762) | July Revolt of 1927 | Massacre de Viena de 1927 | 1927-07-15 | rebellion | 16 | — |
+| [ ] | [`Q960894`](https://www.wikidata.org/wiki/Q960894) | 1923 Bulgarian coup d'état | Golpe de Estado na Bulgária em 1923 | 1923-06-09 | coup d'état | 15 | — |
+| [ ] | [`Q3272511`](https://www.wikidata.org/wiki/Q3272511) | Zhongshan Warship Incident | — | 1926-03-20 | coup d'état | 15 | — |
+| [ ] | [`Q626264`](https://www.wikidata.org/wiki/Q626264) | Ararat rebellion | Revolta de Ararate | 1927-10-01 | rebellion | 14 | — |
+| [ ] | [`Q944568`](https://www.wikidata.org/wiki/Q944568) | Malabar Rebellion | — | 1921-01-01 | rebellion | 14 | — |
+| [ ] | [`Q4116959`](https://www.wikidata.org/wiki/Q4116959) | Żeligowski's Mutiny | Revolta de Żeligowski | 1920-10-01 | mutiny | 14 | — |
+| [ ] | [`Q386955`](https://www.wikidata.org/wiki/Q386955) | 1920 Ganja revolt | — | 1920-05-26 | coup d'état | 13 | — |
+| [ ] | [`Q2996706`](https://www.wikidata.org/wiki/Q2996706) | East Karelian Uprising | — | 1921-11-06 | rebellion | 13 | — |
+| [ ] | [`Q1049741`](https://www.wikidata.org/wiki/Q1049741) | Beijing Coup | Golpe de Pequim | 1924-10-23 | coup d'état | 12 | — |
+| [ ] | [`Q1038900`](https://www.wikidata.org/wiki/Q1038900) | Guangzhou Uprising | — | 1927-12-11 | rebellion | 12 | — |
+| [ ] | [`Q5439864`](https://www.wikidata.org/wiki/Q5439864) | February Uprising | Revolta de Fevereiro | 1921-02-01 | rebellion | 12 | — |
+| [ ] | [`Q1494320`](https://www.wikidata.org/wiki/Q1494320) | Küstrin Putsch | — | 1923-10-01 | attempted coup d'état | 11 | — |
+| [ ] | [`Q4560833`](https://www.wikidata.org/wiki/Q4560833) | 1920 Georgian coup attempt | Tentativa de golpe de Estado na Geórgia em 1920 | 1920-05-01 | attempted coup d'état | 11 | — |
+| [ ] | [`Q878528`](https://www.wikidata.org/wiki/Q878528) | March Action | Ação de Março | 1921-03-01 | rebellion | 10 | — |
+| [ ] | [`Q16950966`](https://www.wikidata.org/wiki/Q16950966) | May Uprising | Revolta de Maio | 1920-05-01 | attempted coup d'état | 10 | — |
+
 ### world-assassinations-1920s — 1
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
@@ -1004,15 +1047,9 @@ to that file and another run, never an edit here.
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q8698`](https://www.wikidata.org/wiki/Q8698) | Great Depression | Grande Depressão | 1929-10-29 | economic crisis | 133 | yes |
-| [ ] | [`Q3002770`](https://www.wikidata.org/wiki/Q3002770) | Shōwa financial crisis | — | 1927-03-01 | economic crisis | 12 | — |
+| [ ] | [`Q8698`](https://www.wikidata.org/wiki/Q8698) | Great Depression | Grande Depressão | 1929-10-29 | recession | 133 | yes |
+| [ ] | [`Q3002770`](https://www.wikidata.org/wiki/Q3002770) | Shōwa financial crisis | — | 1927-03-01 | financial crisis | 12 | — |
 | [ ] | [`Q696482`](https://www.wikidata.org/wiki/Q696482) | Great Depression in the United States | — | 1929-10-24 | economic crisis | 11 | — |
-
-### world-financial-crises-1920s — 1
-
-| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
-| :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q201684`](https://www.wikidata.org/wiki/Q201684) | Wall Street crash of 1929 | Quinta-Feira Negra | 1929-01-01 | stock market crash | 66 | yes |
 
 ### world-genocides-1920s — 4
 
@@ -1037,7 +1074,7 @@ to that file and another run, never an edit here.
 | [ ] | [`Q5533024`](https://www.wikidata.org/wiki/Q5533024) | Geneva Naval Conference | Conferência Naval de Genebra | 1927-01-01 | international conference | 7 | — |
 | [ ] | [`Q3686584`](https://www.wikidata.org/wiki/Q3686584) | Conference of London | — | 1920-01-01 | peace conference | 6 | — |
 
-## world 1930s — 109 candidate(s), 8 already in the atlas
+## world 1930s — 71 candidate(s), 8 already in the atlas
 
 ### world-wars-1930s — 16
 
@@ -1064,7 +1101,7 @@ to that file and another run, never an edit here.
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q130796`](https://www.wikidata.org/wiki/Q130796) | Molotov–Ribbentrop Pact | Pacto Molotov-Ribbentrop | 1939-08-23 | non-aggression pact | 105 | yes |
+| [ ] | [`Q130796`](https://www.wikidata.org/wiki/Q130796) | Molotov–Ribbentrop Pact | Pacto Molotov-Ribbentrop | 1939-08-23 | secret treaty | 105 | yes |
 | [ ] | [`Q154255`](https://www.wikidata.org/wiki/Q154255) | Munich agreement | Acordo de Munique | 1938-09-30 | treaty | 86 | yes |
 | [ ] | [`Q152195`](https://www.wikidata.org/wiki/Q152195) | Anti-Comintern Pact | Pacto Anticomintern | 1936-11-25 | treaty | 64 | yes |
 | [ ] | [`Q869500`](https://www.wikidata.org/wiki/Q869500) | Montreux Convention | Convenção de Montreux | 1936-01-01 | multilateral treaty | 38 | — |
@@ -1114,49 +1151,6 @@ to that file and another run, never an edit here.
 | [ ] | [`Q2592295`](https://www.wikidata.org/wiki/Q2592295) | Constitutionalist Revolution | Revolução Constitucionalista de 1932 | 1932-01-01 | revolution | 14 | — |
 | [ ] | [`Q2027494`](https://www.wikidata.org/wiki/Q2027494) | 1935 Brazilian Communist uprising | Intentona Comunista | 1935-11-23 | communist revolution | 10 | — |
 
-### world-coups-1930s — 38
-
-| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
-| :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q46057`](https://www.wikidata.org/wiki/Q46057) | 1936–1939 Arab revolt in Palestine | Revolta árabe de 1936-1939 | 1936-04-01 | rebellion | 36 | — |
-| [ ] | [`Q1327772`](https://www.wikidata.org/wiki/Q1327772) | Dersim massacre | Massacre de Dersim | 1937-05-01 | rebellion | 30 | — |
-| [ ] | [`Q477958`](https://www.wikidata.org/wiki/Q477958) | February 26 Incident | Incidente de 26 de fevereiro | 1936-02-26 | attempted coup d'état | 30 | — |
-| [ ] | [`Q244941`](https://www.wikidata.org/wiki/Q244941) | Xi'an Incident | Incidente de Xi’an | 1936-12-12 | mutiny | 28 | — |
-| [ ] | [`Q451046`](https://www.wikidata.org/wiki/Q451046) | Preußenschlag | Golpe de estado na Prússia | 1932-07-20 | coup d'état | 22 | — |
-| [ ] | [`Q873152`](https://www.wikidata.org/wiki/Q873152) | July Putsch | Golpe de Julho | 1934-07-25 | coup d'état | 21 | — |
-| [ ] | [`Q2436825`](https://www.wikidata.org/wiki/Q2436825) | Spanish coup of July 1936 | Golpe de Estado na Espanha em julho de 1936 | 1936-07-17 | coup d'état | 21 | — |
-| [ ] | [`Q3182543`](https://www.wikidata.org/wiki/Q3182543) | 1934 Latvian coup d'état | — | 1934-05-15 | coup d'état | 21 | — |
-| [ ] | [`Q244926`](https://www.wikidata.org/wiki/Q244926) | May 15 Incident | Incidente 15 de Maio | 1932-05-15 | assassination | 20 | — |
-| [ ] | [`Q714535`](https://www.wikidata.org/wiki/Q714535) | Musha incident | — | 1930-10-26 | rebellion | 16 | — |
-| [ ] | [`Q939859`](https://www.wikidata.org/wiki/Q939859) | 1932 Salvadoran peasant massacre | Levante camponês de 1932 em El Salvador | 1932-01-01 | rebellion | 16 | — |
-| [ ] | [`Q2634783`](https://www.wikidata.org/wiki/Q2634783) | Revolution of 1930 | Revolução de 1930 | 1930-10-01 | coup d'état | 15 | — |
-| [ ] | [`Q1532978`](https://www.wikidata.org/wiki/Q1532978) | Oster Conspiracy | — | 1938-09-01 | attempted coup d'état | 15 | — |
-| [ ] | [`Q2441292`](https://www.wikidata.org/wiki/Q2441292) | Mäntsälä rebellion | Rebelião de Mäntsälä | 1932-02-27 | attempted coup d'état | 14 | — |
-| [ ] | [`Q2070956`](https://www.wikidata.org/wiki/Q2070956) | Carpathian Sich | — | 1939-03-14 | rebellion | 13 | — |
-| [ ] | [`Q4247016`](https://www.wikidata.org/wiki/Q4247016) | Kumul Rebellion | Rebelião de Kumul | 1931-04-04 | rebellion | 12 | — |
-| [ ] | [`Q516749`](https://www.wikidata.org/wiki/Q516749) | March Incident | — | 1931-03-01 | attempted coup d'état | 12 | — |
-| [ ] | [`Q2915943`](https://www.wikidata.org/wiki/Q2915943) | October Incident | Incidente de Outubro | 1931-10-21 | attempted coup d'état | 12 | — |
-| [ ] | [`Q15726836`](https://www.wikidata.org/wiki/Q15726836) | Sudeten German uprising | — | 1938-10-01 | rebellion | 11 | — |
-| [ ] | [`Q3149891`](https://www.wikidata.org/wiki/Q3149891) | Military Academy incident | — | 1934-11-01 | attempted coup d'état | 11 | — |
-| [ ] | [`Q4402025`](https://www.wikidata.org/wiki/Q4402025) | 1930 Argentine coup | Golpe de Estado na Argentina em 1930 | 1930-09-06 | coup d'état | 10 | — |
-| [ ] | [`Q4996248`](https://www.wikidata.org/wiki/Q4996248) | 1934 Bulgarian coup d'état | Golpe de Estado na Bulgária em 1934 | 1934-05-19 | coup d'état | 10 | — |
-| [ ] | [`Q707956`](https://www.wikidata.org/wiki/Q707956) | Tungchow Mutiny | Motim de Tongchow | 1937-07-29 | rape | 10 | — |
-| [ ] | [`Q11161771`](https://www.wikidata.org/wiki/Q11161771) | Imam Reza shrine rebellion | — | 1935-08-01 | rebellion | 10 | — |
-| [ ] | [`Q1074957`](https://www.wikidata.org/wiki/Q1074957) | Chittagong armoury raid | — | 1930-04-18 | mutiny | 10 | — |
-| [ ] | [`Q3328100`](https://www.wikidata.org/wiki/Q3328100) | Casas Viejas incident | — | 1933-01-01 | massacre | 10 | — |
-| [ ] | [`Q2527587`](https://www.wikidata.org/wiki/Q2527587) | Kazym Rebellion | — | 1931-01-01 | rebellion | 9 | — |
-| [ ] | [`Q3813618`](https://www.wikidata.org/wiki/Q3813618) | July 1936 military uprising in Barcelona | — | 1936-07-19 | rebellion | 9 | — |
-| [ ] | [`Q3891598`](https://www.wikidata.org/wiki/Q3891598) | Siege of the Montaña Barracks | — | 1936-07-18 | rebellion | 9 | — |
-| [ ] | [`Q3041786`](https://www.wikidata.org/wiki/Q3041786) | Yên Bái Mutiny | — | 1930-02-10 | mutiny | 9 | — |
-| [ ] | [`Q3773859`](https://www.wikidata.org/wiki/Q3773859) | Anarchist insurrection of January 1933 | — | 1933-01-01 | insurgency | 9 | — |
-| [ ] | [`Q3091100`](https://www.wikidata.org/wiki/Q3091100) | Jaca uprising | — | 1930-12-12 | pronunciamiento | 9 | — |
-| [ ] | [`Q884351`](https://www.wikidata.org/wiki/Q884351) | Stennes Revolt | — | 1931-04-01 | attempted coup d'état | 9 | — |
-| [ ] | [`Q3109574`](https://www.wikidata.org/wiki/Q3109574) | Sanjurjada | — | 1932-08-10 | attempted coup d'état | 9 | — |
-| [ ] | [`Q3302300`](https://www.wikidata.org/wiki/Q3302300) | Kyrgyz Rebellion | Rebelião quirguiz | 1932-01-01 | rebellion | 8 | — |
-| [ ] | [`Q4563705`](https://www.wikidata.org/wiki/Q4563705) | 1935–1936 Iraqi Shia revolts | Revoltas xiitas no Iraque de 1935-1936 | 1935-01-01 | rebellion | 8 | — |
-| [ ] | [`Q4695762`](https://www.wikidata.org/wiki/Q4695762) | Ahmed Barzani revolt | Revolta de Ahmed Barzani | 1931-01-01 | rebellion | 8 | — |
-| [ ] | [`Q6310467`](https://www.wikidata.org/wiki/Q6310467) | July 1936 military uprising in Melilla | — | 1936-07-17 | rebellion | 8 | — |
-
 ### world-assassinations-1930s — 1
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
@@ -1167,7 +1161,7 @@ to that file and another run, never an edit here.
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q2763`](https://www.wikidata.org/wiki/Q2763) | The Holocaust | Holocausto | 1933-01-01 | genocide | 204 | yes |
+| [ ] | [`Q2763`](https://www.wikidata.org/wiki/Q2763) | The Holocaust | Holocausto | 1933-01-01 | racism | 204 | yes |
 | [ ] | [`Q165058`](https://www.wikidata.org/wiki/Q165058) | Holodomor | Holodomor | 1932-01-01 | genocide | 92 | yes |
 | [ ] | [`Q117571`](https://www.wikidata.org/wiki/Q117571) | Porajmos | Porajmos | 1935-01-01 | genocide | 52 | — |
 | [ ] | [`Q85125`](https://www.wikidata.org/wiki/Q85125) | population transfer in the Soviet Union | transferências populacionais na União Soviética | 1930-01-01 | genocide | 46 | — |
@@ -1225,7 +1219,7 @@ to that file and another run, never an edit here.
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
 | [ ] | [`Q171328`](https://www.wikidata.org/wiki/Q171328) | Charter of the United Nations | Carta das Nações Unidas | 1945-06-26 | charter | 112 | yes |
 | [ ] | [`Q151187`](https://www.wikidata.org/wiki/Q151187) | Potsdam Conference | Conferência de Potsdam | 1945-07-17 | treaty | 77 | yes |
-| [ ] | [`Q877399`](https://www.wikidata.org/wiki/Q877399) | North Atlantic Treaty | Tratado do Atlântico Norte | 1949-01-01 | constitutive treaty | 62 | — |
+| [ ] | [`Q877399`](https://www.wikidata.org/wiki/Q877399) | North Atlantic Treaty | Tratado do Atlântico Norte | 1949-01-01 | pact | 62 | — |
 | [ ] | [`Q153122`](https://www.wikidata.org/wiki/Q153122) | Tripartite Pact | Pacto Tripartite | 1940-09-27 | treaty | 61 | — |
 | [ ] | [`Q865344`](https://www.wikidata.org/wiki/Q865344) | Genocide Convention | Convenção para a Prevenção e a Repressão do Crime de Genocídio | 1948-12-09 | United Nations treaty | 60 | — |
 | [ ] | [`Q188532`](https://www.wikidata.org/wiki/Q188532) | Bretton Woods system | Acordos de Bretton Woods | 1944-07-22 | treaty | 59 | — |
@@ -1313,8 +1307,8 @@ to that file and another run, never an edit here.
 | [ ] | [`Q66310588`](https://www.wikidata.org/wiki/Q66310588) | Afghan tribal revolts of 1944–1947 | — | 1944-02-01 | rebellion | 8 | — |
 | [ ] | [`Q10459578`](https://www.wikidata.org/wiki/Q10459578) | Uprising in Serbia | Revolta Sérvia de 1941 | 1941-07-07 | insurgency | 8 | — |
 | [ ] | [`Q17151908`](https://www.wikidata.org/wiki/Q17151908) | Jesselton Revolt | — | 1943-10-09 | insurgency | 8 | — |
-| [ ] | [`Q8046810`](https://www.wikidata.org/wiki/Q8046810) | Alwaziri coup | Golpe Alwaziri | 1948-02-17 | attempted coup d'état | 8 | — |
 | [ ] | [`Q484437`](https://www.wikidata.org/wiki/Q484437) | Autumn Uprising of 1946 | — | 1946-01-01 | peasant revolt | 8 | — |
+| [ ] | [`Q8046810`](https://www.wikidata.org/wiki/Q8046810) | Alwaziri coup | Golpe Alwaziri | 1948-02-17 | attempted coup d'état | 8 | — |
 | [ ] | [`Q4565206`](https://www.wikidata.org/wiki/Q4565206) | 1943 Barzani revolt | — | 1943-01-01 | rebellion | 7 | — |
 
 ### world-economic-crises-1940s — 1
@@ -1327,29 +1321,29 @@ to that file and another run, never an edit here.
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q134301`](https://www.wikidata.org/wiki/Q134301) | Katyn massacre | Massacre de Katyn | 1940-01-01 | war crime | 75 | yes |
+| [ ] | [`Q134301`](https://www.wikidata.org/wiki/Q134301) | Katyn massacre | Massacre de Katyn | 1940-01-01 | mass murder | 75 | yes |
 | [ ] | [`Q127013`](https://www.wikidata.org/wiki/Q127013) | Final Solution | solução final | 1941-01-01 | genocide | 59 | — |
-| [ ] | [`Q1775286`](https://www.wikidata.org/wiki/Q1775286) | deportation of the Crimean Tatars | Deportação dos tártaros da Crimeia | 1944-05-18 | ethnic cleansing | 49 | — |
+| [ ] | [`Q1775286`](https://www.wikidata.org/wiki/Q1775286) | deportation of the Crimean Tatars | Deportação dos tártaros da Crimeia | 1944-05-18 | deportation | 49 | — |
 | [ ] | [`Q695020`](https://www.wikidata.org/wiki/Q695020) | Massacres of Poles in Volhynia and Eastern Galicia | Massacres de Poloneses na Volínia e Galícia oriental | 1942-01-01 | genocide | 43 | — |
 | [ ] | [`Q158044`](https://www.wikidata.org/wiki/Q158044) | Operation Reinhard | Operação Reinhardt | 1942-01-01 | The Holocaust | 40 | — |
 | [ ] | [`Q2587808`](https://www.wikidata.org/wiki/Q2587808) | The Holocaust in Poland | Holocausto na Polônia | 1940-01-01 | genocide | 26 | — |
 | [ ] | [`Q2655890`](https://www.wikidata.org/wiki/Q2655890) | NKVD prisoner massacres | Massacres de prisioneiros da NKVD | 1941-01-01 | massacre | 22 | — |
 | [ ] | [`Q13220089`](https://www.wikidata.org/wiki/Q13220089) | 1948 Palestinian exodus | — | 1948-01-01 | ethnic cleansing | 21 | — |
 | [ ] | [`Q153325`](https://www.wikidata.org/wiki/Q153325) | Operation Harvest Festival | — | 1943-11-03 | The Holocaust | 20 | — |
-| [ ] | [`Q1294142`](https://www.wikidata.org/wiki/Q1294142) | Foibe massacres | — | 1943-09-01 | war crime | 20 | — |
+| [ ] | [`Q1294142`](https://www.wikidata.org/wiki/Q1294142) | Foibe massacres | — | 1943-09-01 | ethnic cleansing | 20 | — |
 | [ ] | [`Q4499410`](https://www.wikidata.org/wiki/Q4499410) | The Holocaust in Ukraine | Holocausto na Ucrânia | 1940-01-01 | genocide | 18 | — |
-| [ ] | [`Q22796`](https://www.wikidata.org/wiki/Q22796) | destruction of Warsaw | Destruição de Varsóvia | 1944-10-01 | cultural genocide | 18 | — |
+| [ ] | [`Q22796`](https://www.wikidata.org/wiki/Q22796) | destruction of Warsaw | Destruição de Varsóvia | 1944-10-01 | destruction | 18 | — |
 | [ ] | [`Q965477`](https://www.wikidata.org/wiki/Q965477) | Grossaktion Warsaw | Grossaktion Varsóvia | 1942-07-22 | genocide | 16 | — |
 | [ ] | [`Q450355`](https://www.wikidata.org/wiki/Q450355) | Polish population transfers in 1944–1946 | — | 1944-01-01 | ethnic cleansing | 16 | — |
 | [ ] | [`Q4158587`](https://www.wikidata.org/wiki/Q4158587) | deportation of the Kalmyks | — | 1943-01-01 | genocide | 13 | — |
-| [ ] | [`Q3376121`](https://www.wikidata.org/wiki/Q3376121) | The Holocaust in Romania | — | 1941-01-01 | history | 12 | — |
+| [ ] | [`Q3376121`](https://www.wikidata.org/wiki/Q3376121) | The Holocaust in Romania | — | 1941-01-01 | genocide | 12 | — |
 | [ ] | [`Q774054`](https://www.wikidata.org/wiki/Q774054) | 1948 Palestinian exodus from Lydda and Ramle | — | 1948-07-01 | ethnic cleansing | 10 | — |
 | [ ] | [`Q3297456`](https://www.wikidata.org/wiki/Q3297456) | Safsaf massacre | — | 1948-10-29 | genocide | 9 | — |
 | [ ] | [`Q7140651`](https://www.wikidata.org/wiki/Q7140651) | 1947 Rawalpindi massacres | — | 1947-03-01 | ethnic cleansing | 8 | — |
 | [ ] | [`Q12504990`](https://www.wikidata.org/wiki/Q12504990) | Pontianak incidents | — | 1943-01-01 | genocide | 6 | — |
 | [ ] | [`Q27628321`](https://www.wikidata.org/wiki/Q27628321) | 1947 Jammu massacres | — | 1947-01-01 | genocide | 6 | — |
-| [ ] | [`Q25536389`](https://www.wikidata.org/wiki/Q25536389) | Zaleszany massacre | — | 1946-01-29 | war crime | 6 | — |
 | [ ] | [`Q4566702`](https://www.wikidata.org/wiki/Q4566702) | 1949–1956 Palestinian exodus | — | 1949-01-01 | ethnic cleansing | 6 | — |
+| [ ] | [`Q25536389`](https://www.wikidata.org/wiki/Q25536389) | Zaleszany massacre | — | 1946-01-29 | mass murder | 6 | — |
 
 ### world-independence-declarations-1940s — 3
 
@@ -1370,7 +1364,7 @@ to that file and another run, never an edit here.
 | [ ] | [`Q8052301`](https://www.wikidata.org/wiki/Q8052301) | Adana Conference | — | 1943-01-01 | international conference | 9 | — |
 | [ ] | [`Q5782887`](https://www.wikidata.org/wiki/Q5782887) | Paris Peace Conference, 1946 | — | 1946-01-01 | peace conference | 7 | — |
 
-## world 1950s — 85 candidate(s), 7 already in the atlas
+## world 1950s — 60 candidate(s), 6 already in the atlas
 
 ### world-wars-1950s — 12
 
@@ -1394,7 +1388,7 @@ to that file and another run, never an edit here.
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
 | [ ] | [`Q182814`](https://www.wikidata.org/wiki/Q182814) | Antarctic Treaty System | Tratado da Antártida | 1959-12-01 | treaty | 81 | — |
-| [ ] | [`Q183191`](https://www.wikidata.org/wiki/Q183191) | European Convention on Human Rights | Convenção Europeia dos Direitos Humanos | 1950-11-04 | international human rights instrument | 75 | yes |
+| [ ] | [`Q183191`](https://www.wikidata.org/wiki/Q183191) | European Convention on Human Rights | Convenção Europeia dos Direitos Humanos | 1950-11-04 | Council of Europe treaty | 75 | yes |
 | [ ] | [`Q167457`](https://www.wikidata.org/wiki/Q167457) | Treaty of Rome | Tratado de Roma | 1957-03-25 | treaty of the European Union | 72 | yes |
 | [ ] | [`Q392541`](https://www.wikidata.org/wiki/Q392541) | Treaty of San Francisco | Tratado de São Francisco | 1951-09-08 | peace treaty | 55 | — |
 | [ ] | [`Q295875`](https://www.wikidata.org/wiki/Q295875) | ANZUS | ANZUS | 1951-09-01 | treaty | 53 | — |
@@ -1407,7 +1401,7 @@ to that file and another run, never an edit here.
 | [ ] | [`Q1566342`](https://www.wikidata.org/wiki/Q1566342) | Hague Convention for the Protection of Cultural Property in the Event of Armed Conflict | Convenção para a Proteção dos Bens Culturais em Caso de Conflito Armado | 1954-01-01 | United Nations treaty | 27 | — |
 | [ ] | [`Q900482`](https://www.wikidata.org/wiki/Q900482) | Agreement concerning the International Carriage of Dangerous Goods by Road | — | 1957-09-30 | treaty | 25 | — |
 | [ ] | [`Q805061`](https://www.wikidata.org/wiki/Q805061) | Balkan Pact | Pacto dos Bálcãs de 1953 | 1953-02-28 | treaty | 24 | — |
-| [ ] | [`Q5166300`](https://www.wikidata.org/wiki/Q5166300) | Convention on the Political Rights of Women | Convenção sobre os Direitos Políticos da Mulher | 1952-12-20 | United Nations treaty | 24 | — |
+| [ ] | [`Q5166300`](https://www.wikidata.org/wiki/Q5166300) | Convention on the Political Rights of Women | Convenção sobre os Direitos Políticos da Mulher | 1952-12-20 | convention | 24 | — |
 | [ ] | [`Q2052417`](https://www.wikidata.org/wiki/Q2052417) | Paris Agreements | Convenções Bonn-Paris | 1954-10-23 | treaty | 21 | — |
 | [ ] | [`Q1667500`](https://www.wikidata.org/wiki/Q1667500) | CMR Convention | — | 1956-05-19 | treaty | 20 | — |
 | [ ] | [`Q660521`](https://www.wikidata.org/wiki/Q660521) | Reparations Agreement between Israel and West Germany | — | 1952-09-10 | bilateral treaty | 20 | — |
@@ -1420,8 +1414,8 @@ to that file and another run, never an edit here.
 | [ ] | [`Q682566`](https://www.wikidata.org/wiki/Q682566) | Abolition of Forced Labour Convention | — | 1957-06-25 | International Labour Organization Convention | 17 | — |
 | [ ] | [`Q320302`](https://www.wikidata.org/wiki/Q320302) | Agreement on German External Debts | — | 1953-02-27 | treaty | 16 | — |
 | [ ] | [`Q684485`](https://www.wikidata.org/wiki/Q684485) | Treaty of Zgorzelec | Tratado de Zgorzelec | 1950-07-06 | treaty | 16 | — |
-| [ ] | [`Q1208440`](https://www.wikidata.org/wiki/Q1208440) | Sino-Soviet Treaty of Friendship, Alliance and Mutual Assistance | Tratado de Amizade, Aliança e Assistência Mútua Sino-Soviético | 1950-02-14 | bilateral treaty | 16 | — |
 | [ ] | [`Q680031`](https://www.wikidata.org/wiki/Q680031) | Convention on the Recognition and Enforcement of Foreign Arbitral Awards | Convenção sobre o Reconhecimento e a Execução de Sentenças Arbitrais Estrangeiras (Convenção de Nova York de 1958) | 1958-06-10 | United Nations treaty | 16 | — |
+| [ ] | [`Q1208440`](https://www.wikidata.org/wiki/Q1208440) | Sino-Soviet Treaty of Friendship, Alliance and Mutual Assistance | Tratado de Amizade, Aliança e Assistência Mútua Sino-Soviético | 1950-02-14 | bilateral treaty | 16 | — |
 | [ ] | [`Q7445004`](https://www.wikidata.org/wiki/Q7445004) | Security Treaty Between the United States and Japan | Tratado de Segurança entre Estados Unidos e Japão | 1951-09-08 | treaty | 15 | — |
 | [ ] | [`Q368235`](https://www.wikidata.org/wiki/Q368235) | US–UK Mutual Defence Agreement | Acordo de defesa mútua entre Estados Unidos e Reino Unido de 1958 | 1958-01-01 | treaty | 14 | — |
 | [ ] | [`Q3176586`](https://www.wikidata.org/wiki/Q3176586) | Protocol of Sèvres | — | 1956-10-24 | treaty | 12 | — |
@@ -1446,43 +1440,8 @@ to that file and another run, never an edit here.
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q12199`](https://www.wikidata.org/wiki/Q12199) | HIV/AIDS | síndrome da imunodeficiência adquirida | 1959-01-01 | disease | 209 | — |
+| [ ] | [`Q12199`](https://www.wikidata.org/wiki/Q12199) | HIV/AIDS | síndrome da imunodeficiência adquirida | 1959-01-01 | pandemic | 209 | — |
 | [ ] | [`Q1434550`](https://www.wikidata.org/wiki/Q1434550) | 1957–1958 influenza pandemic | Gripe asiática | 1957-01-01 | pandemic | 35 | — |
-
-### world-coups-1950s — 23
-
-| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
-| :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q164348`](https://www.wikidata.org/wiki/Q164348) | Hungarian Revolution of 1956 | Revolução Húngara de 1956 | 1956-01-01 | rebellion | 81 | yes |
-| [ ] | [`Q593774`](https://www.wikidata.org/wiki/Q593774) | 1953 Iranian coup d'état | Operação Ajax | 1953-08-18 | coup d'état | 51 | — |
-| [ ] | [`Q157682`](https://www.wikidata.org/wiki/Q157682) | East German uprising of 1953 | revolta de 1953 na Alemanha Oriental | 1953-06-16 | rebellion | 45 | — |
-| [ ] | [`Q476855`](https://www.wikidata.org/wiki/Q476855) | Mau Mau rebellion | Revolta dos Mau-Mau | 1952-01-01 | insurgency | 41 | — |
-| [ ] | [`Q508258`](https://www.wikidata.org/wiki/Q508258) | 1959 Tibetan uprising | Revolta no Tibete em 1959 | 1959-03-10 | rebellion | 34 | — |
-| [ ] | [`Q2988530`](https://www.wikidata.org/wiki/Q2988530) | Iraqi 14 July revolution | Revolução de 14 de Julho | 1958-07-14 | coup d'état | 33 | — |
-| [ ] | [`Q976887`](https://www.wikidata.org/wiki/Q976887) | 1954 Guatemalan coup d'état | Golpe de Estado na Guatemala em 1954 | 1954-06-01 | coup d'état | 32 | — |
-| [ ] | [`Q1125513`](https://www.wikidata.org/wiki/Q1125513) | Insurgency in Northeast India | Insurgência no nordeste da Índia | 1954-01-01 | insurgency | 17 | — |
-| [ ] | [`Q16146587`](https://www.wikidata.org/wiki/Q16146587) | Cyprus Emergency | Emergência de Chipre | 1955-04-01 | insurgency | 17 | — |
-| [ ] | [`Q2507413`](https://www.wikidata.org/wiki/Q2507413) | Escambray rebellion | — | 1959-01-01 | rebellion | 16 | — |
-| [ ] | [`Q10854408`](https://www.wikidata.org/wiki/Q10854408) | August Faction Incident | — | 1956-01-01 | attempted coup d'état | 14 | — |
-| [ ] | [`Q4114551`](https://www.wikidata.org/wiki/Q4114551) | 1958 Pakistani coup d'état | Golpe de Estado no Paquistão em 1958 | 1958-10-07 | coup d'état | 13 | — |
-| [ ] | [`Q12203911`](https://www.wikidata.org/wiki/Q12203911) | 1959 Mosul Uprising | — | 1959-03-07 | rebellion | 13 | — |
-| [ ] | [`Q3798246`](https://www.wikidata.org/wiki/Q3798246) | 1958 Venezuelan coup d'état | Golpe de Estado na Venezuela em 1958 | 1958-01-01 | coup d'état | 11 | — |
-| [ ] | [`Q891808`](https://www.wikidata.org/wiki/Q891808) | Bombing of Plaza de Mayo | Bombardeio da Praça de Maio | 1955-06-16 | attempted coup d'état | 11 | — |
-| [ ] | [`Q8964623`](https://www.wikidata.org/wiki/Q8964623) | 1952 Cuban coup d'état | Golpe de Estado em Cuba de 1952 | 1952-03-10 | coup d'état | 10 | — |
-| [ ] | [`Q10332838`](https://www.wikidata.org/wiki/Q10332838) | 1955 Brazilian coup d'état | Movimento de 11 de Novembro | 1955-11-11 | coup d'état | 10 | — |
-| [ ] | [`Q7899217`](https://www.wikidata.org/wiki/Q7899217) | Uprising in Plzeň | — | 1953-01-01 | rebellion | 8 | — |
-| [ ] | [`Q60996885`](https://www.wikidata.org/wiki/Q60996885) | Xunhua Incident | Incidente Xunhua | 1958-04-01 | rebellion | 8 | — |
-| [ ] | [`Q3604457`](https://www.wikidata.org/wiki/Q3604457) | 1954 Syrian coup d'état | Golpe de Estado na Síria em 1954 | 1954-02-01 | coup d'état | 7 | — |
-| [ ] | [`Q30586190`](https://www.wikidata.org/wiki/Q30586190) | 1954 Paraguayan coup d'etat | Golpe de Estado no Paraguai em 1954 | 1954-05-01 | coup d'état | 7 | — |
-| [ ] | [`Q16826045`](https://www.wikidata.org/wiki/Q16826045) | Cazin uprising | — | 1950-05-01 | rebellion | 7 | — |
-| [ ] | [`Q1140690`](https://www.wikidata.org/wiki/Q1140690) | Algiers putsch | Crise de Maio de 1958 | 1958-05-13 | coup d'état | 6 | — |
-
-### world-economic-crises-1950s — 2
-
-| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
-| :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q1059474`](https://www.wikidata.org/wiki/Q1059474) | Japanese economic miracle | Milagre económico japonês | 1954-12-01 | economic miracle | 35 | — |
-| [ ] | [`Q3315831`](https://www.wikidata.org/wiki/Q3315831) | Spanish miracle | Milagre econômico espanhol | 1959-01-01 | economic growth | 19 | — |
 
 ### world-genocides-1950s — 1
 
@@ -1497,7 +1456,7 @@ to that file and another run, never an edit here.
 | [ ] | [`Q544107`](https://www.wikidata.org/wiki/Q544107) | Messina Conference | — | 1955-06-01 | international conference | 18 | — |
 | [ ] | [`Q4892411`](https://www.wikidata.org/wiki/Q4892411) | Berlin Conference | Conferência de Berlim | 1954-01-01 | international conference | 9 | — |
 
-## world 1960s — 131 candidate(s), 5 already in the atlas
+## world 1960s — 130 candidate(s), 5 already in the atlas
 
 ### world-wars-1960s — 31
 
@@ -1520,7 +1479,7 @@ to that file and another run, never an edit here.
 | [ ] | [`Q1993848`](https://www.wikidata.org/wiki/Q1993848) | South African Border War | Guerra sul-africana na fronteira | 1966-08-26 | war | 34 | — |
 | [ ] | [`Q521199`](https://www.wikidata.org/wiki/Q521199) | North Yemen civil war | Guerra Civil do Iêmen do Norte | 1962-09-26 | civil war | 34 | — |
 | [ ] | [`Q2609193`](https://www.wikidata.org/wiki/Q2609193) | Guinea-Bissau War of Independence | Guerra de Independência da Guiné-Bissau | 1963-01-23 | war of national liberation | 30 | — |
-| [ ] | [`Q4850939`](https://www.wikidata.org/wiki/Q4850939) | Years of Lead | Anos de chumbo | 1969-12-12 | political violence | 30 | — |
+| [ ] | [`Q4850939`](https://www.wikidata.org/wiki/Q4850939) | Years of Lead | Anos de chumbo | 1969-12-12 | civil disorder | 30 | — |
 | [ ] | [`Q1361929`](https://www.wikidata.org/wiki/Q1361929) | Indonesia–Malaysia confrontation | confronto Indonésia-Malásia | 1963-01-20 | war | 28 | — |
 | [ ] | [`Q979845`](https://www.wikidata.org/wiki/Q979845) | Naxalite–Maoist insurgency | Insurgência Naxalita | 1967-05-18 | civil war | 28 | — |
 | [ ] | [`Q1891008`](https://www.wikidata.org/wiki/Q1891008) | Sand War | Guerra das Areias | 1963-09-25 | war | 26 | — |
@@ -1650,7 +1609,7 @@ to that file and another run, never an edit here.
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
 | [ ] | [`Q193484`](https://www.wikidata.org/wiki/Q193484) | assassination of John F. Kennedy | assassinato de John F. Kennedy | 1963-11-22 | political murder | 63 | yes |
 | [ ] | [`Q1187550`](https://www.wikidata.org/wiki/Q1187550) | assassination of Robert F. Kennedy | assassinato de Robert F. Kennedy | 1968-06-05 | political murder | 33 | — |
-| [ ] | [`Q799299`](https://www.wikidata.org/wiki/Q799299) | crushing The Rebellions of 1965–1966 | Massacre na Indonésia de 1965-66 | 1965-01-01 | politicide | 31 | — |
+| [ ] | [`Q799299`](https://www.wikidata.org/wiki/Q799299) | crushing The Rebellions of 1965–1966 | Massacre na Indonésia de 1965-66 | 1965-01-01 | genocide | 31 | — |
 | [ ] | [`Q757963`](https://www.wikidata.org/wiki/Q757963) | assassination of Martin Luther King Jr. | assassinato de Martin Luther King Jr. | 1968-04-04 | political murder | 27 | — |
 | [ ] | [`Q1003866`](https://www.wikidata.org/wiki/Q1003866) | arrest and assassination of Ngo Dinh Diem | — | 1963-11-02 | magnicide | 12 | — |
 | [ ] | [`Q10858954`](https://www.wikidata.org/wiki/Q10858954) | assassination of Malcolm X | Assassinato de Malcolm X | 1965-02-21 | political murder | 8 | — |
@@ -1674,15 +1633,177 @@ to that file and another run, never an edit here.
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
 | [ ] | [`Q7321053`](https://www.wikidata.org/wiki/Q7321053) | Rhodesia's Unilateral Declaration of Independence | Declaração Unilateral de Independência da Rodésia | 1965-11-11 | unilateral declaration of independence | 17 | — |
 
-### world-international-conferences-1960s — 1
+## world 1970s — 121 candidate(s), 6 already in the atlas
+
+### world-wars-1970s — 27
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q3513409`](https://www.wikidata.org/wiki/Q3513409) | Congolese Round Table Conference | — | 1960-01-20 | international conference | 6 | — |
+| [ ] | [`Q83085`](https://www.wikidata.org/wiki/Q83085) | Soviet-Afghan War | Invasão soviética do Afeganistão | 1979-12-25 | war | 101 | — |
+| [ ] | [`Q49100`](https://www.wikidata.org/wiki/Q49100) | Yom Kippur War | Guerra do Yom Kipur | 1973-10-06 | war | 93 | yes |
+| [ ] | [`Q371394`](https://www.wikidata.org/wiki/Q371394) | Bangladesh Liberation War | Guerra de Independência de Bangladesh | 1971-03-26 | war | 67 | yes |
+| [ ] | [`Q208484`](https://www.wikidata.org/wiki/Q208484) | Lebanese Civil War | Guerra Civil Libanesa | 1975-04-13 | civil war | 64 | yes |
+| [ ] | [`Q1922071`](https://www.wikidata.org/wiki/Q1922071) | Indo-Pakistani War of 1971 | Guerra Indo-Paquistanesa de 1971 | 1971-12-03 | war | 51 | — |
+| [ ] | [`Q623171`](https://www.wikidata.org/wiki/Q623171) | Sino-Vietnamese War | Guerra sino-vietnamita | 1979-02-17 | war | 50 | — |
+| [ ] | [`Q12055176`](https://www.wikidata.org/wiki/Q12055176) | Angolan Civil War | Guerra Civil Angolana | 1975-11-11 | civil war | 49 | — |
+| [ ] | [`Q318250`](https://www.wikidata.org/wiki/Q318250) | Ogaden War | Guerra de Ogaden | 1977-07-12 | war | 46 | — |
+| [ ] | [`Q635533`](https://www.wikidata.org/wiki/Q635533) | Cambodian–Vietnamese War | Guerra do Camboja (1979–1989) | 1977-04-30 | war | 46 | — |
+| [ ] | [`Q154288`](https://www.wikidata.org/wiki/Q154288) | Black September | Setembro Negro | 1970-09-06 | civil war | 45 | — |
+| [ ] | [`Q257724`](https://www.wikidata.org/wiki/Q257724) | Ethiopian Civil War | Guerra Civil da Etiópia | 1974-09-12 | civil war | 39 | — |
+| [ ] | [`Q202465`](https://www.wikidata.org/wiki/Q202465) | Uganda–Tanzania War | Guerra Uganda-Tanzânia | 1978-10-09 | war | 37 | — |
+| [ ] | [`Q657661`](https://www.wikidata.org/wiki/Q657661) | Mozambican Civil War | Guerra Civil Moçambicana | 1977-05-30 | civil war | 34 | — |
+| [ ] | [`Q1783607`](https://www.wikidata.org/wiki/Q1783607) | Salvadoran Civil War | Guerra Civil de El Salvador | 1979-10-15 | civil war | 32 | — |
+| [ ] | [`Q22948406`](https://www.wikidata.org/wiki/Q22948406) | Iran–Saudi Arabia proxy conflict | Conflito iraniano-saudita | 1979-02-11 | proxy war | 32 | — |
+| [ ] | [`Q1519107`](https://www.wikidata.org/wiki/Q1519107) | Afghan Conflict | Guerra Civil do Afeganistão | 1978-04-27 | series of wars | 32 | — |
+| [ ] | [`Q611071`](https://www.wikidata.org/wiki/Q611071) | Chadian–Libyan War | Conflito entre Chade e Líbia | 1978-01-01 | war | 28 | — |
+| [ ] | [`Q1434602`](https://www.wikidata.org/wiki/Q1434602) | Libyan–Egyptian War | Guerra Líbia-Egito | 1977-07-21 | war | 27 | — |
+| [ ] | [`Q1093550`](https://www.wikidata.org/wiki/Q1093550) | Western Sahara War | Conflito do Saara Ocidental | 1975-10-30 | war | 22 | — |
+| [ ] | [`Q796498`](https://www.wikidata.org/wiki/Q796498) | Third Indochina War | Terceira Guerra da Indochina | 1975-05-01 | war | 16 | — |
+| [ ] | [`Q4116897`](https://www.wikidata.org/wiki/Q4116897) | Second Kurdish–Iraqi War | Segunda Guerra Curdo-Iraquiana | 1974-01-01 | war | 14 | — |
+| [ ] | [`Q16126368`](https://www.wikidata.org/wiki/Q16126368) | First Yemenite War | Guerra Iemenita de 1972 | 1972-09-26 | war | 11 | — |
+| [ ] | [`Q3290619`](https://www.wikidata.org/wiki/Q3290619) | First Shaba War | Primeira Guerra de Shaba | 1977-05-26 | war | 10 | — |
+| [ ] | [`Q12207418`](https://www.wikidata.org/wiki/Q12207418) | Second Yemenite War | Guerra Iemenita de 1979 | 1979-02-24 | war | 10 | — |
+| [ ] | [`Q2745406`](https://www.wikidata.org/wiki/Q2745406) | Shaba II | Segunda Guerra de Shaba | 1978-06-01 | war | 9 | — |
+| [ ] | [`Q2139988`](https://www.wikidata.org/wiki/Q2139988) | Eritrean Civil Wars | Guerras Civis da Eritreia | 1974-10-13 | civil war | 8 | — |
+| [ ] | [`Q633862`](https://www.wikidata.org/wiki/Q633862) | Cold War (1979–1985) | Guerra Fria | 1979-01-01 | war phase | 7 | — |
 
-## world 1980s — 122 candidate(s), 5 already in the atlas
+### world-treaties-1970s — 39
 
-### world-wars-1980s — 33
+| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
+| :--: | --- | --- | --- | --- | --- | --: | :--: |
+| [ ] | [`Q170170`](https://www.wikidata.org/wiki/Q170170) | Ramsar Convention | Convenção sobre as Zonas Húmidas de Importância Internacional | 1971-02-02 | international environmental agreement | 78 | yes |
+| [ ] | [`Q277072`](https://www.wikidata.org/wiki/Q277072) | Convention on the Elimination of All Forms of Discrimination against Women | Convenção sobre a Eliminação de Todas as Formas de Discriminação contra as Mulheres | 1979-12-18 | United Nations treaty | 69 | yes |
+| [ ] | [`Q191836`](https://www.wikidata.org/wiki/Q191836) | CITES | Convenção sobre o Comércio Internacional das Espécies da Fauna e da Flora Silvestres Ameaçadas de Extinção | 1973-03-03 | multilateral treaty | 69 | — |
+| [ ] | [`Q318161`](https://www.wikidata.org/wiki/Q318161) | Helsinki Accords | Acordos de Helsínquia | 1975-08-01 | treaty | 51 | — |
+| [ ] | [`Q309204`](https://www.wikidata.org/wiki/Q309204) | Camp David Accords | Acordos de Camp David | 1978-09-17 | peace treaty | 50 | — |
+| [ ] | [`Q623994`](https://www.wikidata.org/wiki/Q623994) | Strategic Arms Limitation Talks | Conversações sobre Limites para Armas Estratégicas | 1979-06-18 | treaty | 37 | — |
+| [ ] | [`Q696802`](https://www.wikidata.org/wiki/Q696802) | Paris Peace Accords | Acordos de Paz de Paris | 1973-01-27 | peace treaty | 36 | — |
+| [ ] | [`Q375083`](https://www.wikidata.org/wiki/Q375083) | Convention on the Conservation of European Wildlife and Natural Habitats | Convenção sobre a Vida Selvagem e os Habitats Naturais na Europa | 1979-09-19 | Council of Europe treaty | 35 | — |
+| [ ] | [`Q1129412`](https://www.wikidata.org/wiki/Q1129412) | Egypt–Israel Peace Treaty | Tratado de paz israelo-egípcio | 1979-03-26 | peace treaty | 34 | — |
+| [ ] | [`Q281140`](https://www.wikidata.org/wiki/Q281140) | Moon Treaty | Tratado da Lua | 1979-01-01 | United Nations treaty | 33 | — |
+| [ ] | [`Q287422`](https://www.wikidata.org/wiki/Q287422) | Anti-Ballistic Missile Treaty | Tratado ABM | 1972-05-26 | treaty | 32 | — |
+| [ ] | [`Q803887`](https://www.wikidata.org/wiki/Q803887) | Biological Weapons Convention | Convenção sobre as Armas Biológicas | 1972-04-10 | treaty | 32 | — |
+| [ ] | [`Q1470998`](https://www.wikidata.org/wiki/Q1470998) | Simla Agreement | Tratado de Simla | 1972-07-02 | peace treaty | 32 | — |
+| [ ] | [`Q933745`](https://www.wikidata.org/wiki/Q933745) | Treaty of Osimo | Tratado de Osimo | 1975-11-10 | treaty | 31 | — |
+| [ ] | [`Q125371`](https://www.wikidata.org/wiki/Q125371) | Bonn Convention | Convenção de Bona | 1979-01-01 | treaty | 28 | — |
+| [ ] | [`Q2096669`](https://www.wikidata.org/wiki/Q2096669) | World Heritage Convention | Anexo:Lista de Estados signatários da Convenção do Património Mundial | 1972-01-01 | treaty | 28 | — |
+| [ ] | [`Q1056771`](https://www.wikidata.org/wiki/Q1056771) | Patent Cooperation Treaty | Tratado de Cooperação em Matéria de Patentes | 1970-06-19 | treaty | 26 | — |
+| [ ] | [`Q321865`](https://www.wikidata.org/wiki/Q321865) | 1975 Algiers Agreement | Acordos de Argel (1975) | 1975-03-06 | treaty | 25 | — |
+| [ ] | [`Q658048`](https://www.wikidata.org/wiki/Q658048) | Treaty of Warsaw | Tratado de Varsóvia | 1970-01-01 | treaty | 24 | — |
+| [ ] | [`Q1156234`](https://www.wikidata.org/wiki/Q1156234) | Convention on the Prevention of Marine Pollution by Dumping of Wastes and Other Matter | Convenção de Londres | 1972-12-29 | international environmental agreement | 24 | — |
+| [ ] | [`Q1429332`](https://www.wikidata.org/wiki/Q1429332) | Convention on Psychotropic Substances | Convenção sobre Substâncias Psicotrópicas | 1971-02-21 | treaty | 23 | — |
+| [ ] | [`Q277343`](https://www.wikidata.org/wiki/Q277343) | Torrijos–Carter Treaties | Tratados Torrijos-Carter | 1977-09-07 | bilateral treaty | 23 | — |
+| [ ] | [`Q2229133`](https://www.wikidata.org/wiki/Q2229133) | Protocol I | — | 1977-01-01 | protocol | 21 | — |
+| [ ] | [`Q549912`](https://www.wikidata.org/wiki/Q549912) | Declaration of Principles on Western Sahara by Spain, Morocco and Mauritania | Acordo de Madrid | 1975-11-14 | treaty | 19 | — |
+| [ ] | [`Q641309`](https://www.wikidata.org/wiki/Q641309) | Treaty of Moscow | Tratado de Moscou (1970) | 1970-08-12 | treaty | 19 | — |
+| [ ] | [`Q1378173`](https://www.wikidata.org/wiki/Q1378173) | European Patent Convention | Convenção sobre a Patente Europeia | 1973-10-05 | treaty | 19 | — |
+| [ ] | [`Q488546`](https://www.wikidata.org/wiki/Q488546) | Environmental Modification Convention | Convenção de Modificação Ambiental | 1977-05-18 | United Nations treaty | 19 | — |
+| [ ] | [`Q2401715`](https://www.wikidata.org/wiki/Q2401715) | Protocol II | — | 1977-01-01 | treaty | 18 | — |
+| [ ] | [`Q1274517`](https://www.wikidata.org/wiki/Q1274517) | Treaty on the Prohibition of the Emplacement of Nuclear Weapons and Other Weapons of Mass Destruction on the Sea-Bed and the Ocean Floor and in the Subsoil thereof | Tratado sobre a Proibição da Colocação de Armas Nucleares e Outras Armas de Destruição em Massa no Leito do Mar e no Fundo do Oceano | 1971-02-11 | multilateral treaty | 18 | — |
+| [ ] | [`Q519875`](https://www.wikidata.org/wiki/Q519875) | Four Power Agreement on Berlin | Acordo das Quatro Potências sobre Berlim | 1971-09-03 | treaty | 17 | — |
+| [ ] | [`Q672112`](https://www.wikidata.org/wiki/Q672112) | Basic Treaty | — | 1972-12-21 | bilateral treaty | 17 | — |
+| [ ] | [`Q2118997`](https://www.wikidata.org/wiki/Q2118997) | Barcelona Convention | Convenção de Barcelona | 1976-02-16 | treaty | 16 | — |
+| [ ] | [`Q1054948`](https://www.wikidata.org/wiki/Q1054948) | Treaty of Amity and Cooperation in Southeast Asia | Tratado de Amizade e Cooperação no Sudeste Asiático | 1976-02-24 | peace treaty | 15 | — |
+| [ ] | [`Q1248976`](https://www.wikidata.org/wiki/Q1248976) | Vienna Convention on Succession of States in Respect of Treaties | — | 1978-08-23 | United Nations treaty | 13 | — |
+| [ ] | [`Q7309441`](https://www.wikidata.org/wiki/Q7309441) | Registration Convention | — | 1974-11-12 | United Nations treaty | 13 | — |
+| [ ] | [`Q2898734`](https://www.wikidata.org/wiki/Q2898734) | Minimum Age Convention | — | 1973-01-01 | International Labour Organization Convention | 13 | — |
+| [ ] | [`Q5166252`](https://www.wikidata.org/wiki/Q5166252) | Convention for the Protection of Producers of Phonograms Against Unauthorized Duplication of Their Phonograms | — | 1971-10-29 | treaty | 12 | — |
+| [ ] | [`Q446495`](https://www.wikidata.org/wiki/Q446495) | Treaty of Peace and Friendship between Japan and the People's Republic of China | — | 1978-08-12 | peace treaty | 12 | — |
+| [ ] | [`Q449550`](https://www.wikidata.org/wiki/Q449550) | Alvor Agreement | Acordo do Alvor | 1975-01-15 | peace treaty | 12 | — |
+
+### world-revolutions-1970s — 4
+
+| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
+| :--: | --- | --- | --- | --- | --- | --: | :--: |
+| [ ] | [`Q126065`](https://www.wikidata.org/wiki/Q126065) | Iranian Revolution | Revolução Iraniana | 1970-01-01 | revolution | 102 | yes |
+| [ ] | [`Q193245`](https://www.wikidata.org/wiki/Q193245) | Carnation Revolution | Revolução dos Cravos | 1974-04-25 | revolution | 65 | — |
+| [ ] | [`Q1341539`](https://www.wikidata.org/wiki/Q1341539) | Saur Revolution | Revolução de Saur | 1978-04-27 | revolution | 44 | — |
+| [ ] | [`Q9068538`](https://www.wikidata.org/wiki/Q9068538) | Ethiopian Revolution | Revolução etíope de 1974 | 1974-02-01 | revolution | 9 | — |
+
+### world-pandemics-1970s — 3
+
+| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
+| :--: | --- | --- | --- | --- | --- | --: | :--: |
+| [ ] | [`Q2110883`](https://www.wikidata.org/wiki/Q2110883) | 1972 Yugoslav smallpox outbreak | Surto de varíola na Iugoslávia de 1972 | 1972-01-01 | smallpox epidemic | 15 | — |
+| [ ] | [`Q2646583`](https://www.wikidata.org/wiki/Q2646583) | 1977–1978 Russian flu epidemic | Gripe russa de 1977 | 1977-05-01 | influenza pandemic | 14 | — |
+| [ ] | [`Q4576372`](https://www.wikidata.org/wiki/Q4576372) | 1974 smallpox epidemic in India | — | 1974-01-01 | smallpox epidemic | 6 | — |
+
+### world-coups-1970s — 39
+
+| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
+| :--: | --- | --- | --- | --- | --- | --: | :--: |
+| [ ] | [`Q856670`](https://www.wikidata.org/wiki/Q856670) | 1973 Chilean coup d'état | Golpe de Estado no Chile em 1973 | 1973-09-11 | coup d'état | 51 | — |
+| [ ] | [`Q153081`](https://www.wikidata.org/wiki/Q153081) | Soweto uprising | Levante de Soweto | 1976-06-16 | rebellion | 39 | — |
+| [ ] | [`Q1048750`](https://www.wikidata.org/wiki/Q1048750) | 1976 Argentine coup d'état | Golpe de Estado na Argentina em 1976 | 1976-03-24 | coup d'état | 20 | — |
+| [ ] | [`Q2069434`](https://www.wikidata.org/wiki/Q2069434) | 1974 Cypriot coup d'état | Golpe de Estado no Chipre em 1974 | 1974-07-15 | coup d'état | 19 | — |
+| [ ] | [`Q14947304`](https://www.wikidata.org/wiki/Q14947304) | Corrective Movement | Revolução Corretiva na Síria de 1970 | 1970-11-13 | coup d'état | 18 | — |
+| [ ] | [`Q931943`](https://www.wikidata.org/wiki/Q931943) | 1971 Turkish military memorandum | — | 1971-03-12 | coup d'état | 17 | — |
+| [ ] | [`Q4919446`](https://www.wikidata.org/wiki/Q4919446) | 1970 Cambodian coup d'état | Golpe de Estado no Camboja em 1970 | 1970-03-18 | coup d'état | 17 | — |
+| [ ] | [`Q30070166`](https://www.wikidata.org/wiki/Q30070166) | 1973 Afghan coup d'état | Golpe de Estado no Afeganistão em 1973 | 1973-07-17 | coup d'état | 17 | — |
+| [ ] | [`Q11982546`](https://www.wikidata.org/wiki/Q11982546) | 1979 Kurdish rebellion in Iran | Rebelião curda no Irã em 1979 | 1979-03-01 | rebellion | 16 | — |
+| [ ] | [`Q249853`](https://www.wikidata.org/wiki/Q249853) | Insurgency in Laos | Insurgência no Laos | 1975-12-02 | rebellion | 14 | — |
+| [ ] | [`Q4575745`](https://www.wikidata.org/wiki/Q4575745) | 1973 Thai popular uprising | Revolta popular tailandesa de 1973 | 1973-10-14 | rebellion | 14 | — |
+| [ ] | [`Q623641`](https://www.wikidata.org/wiki/Q623641) | Coup d'état of December Twelfth | Golpe de Estado de 12 de Dezembro | 1979-12-12 | coup d'état | 13 | — |
+| [ ] | [`Q389853`](https://www.wikidata.org/wiki/Q389853) | 1973 Uruguayan coup d'état | Golpe de Estado no Uruguai em 1973 | 1973-06-27 | coup d'état | 12 | — |
+| [ ] | [`Q3653895`](https://www.wikidata.org/wiki/Q3653895) | 1971 Ugandan coup d'état | Golpe de Estado em Uganda em 1971 | 1971-01-25 | coup d'état | 12 | — |
+| [ ] | [`Q742728`](https://www.wikidata.org/wiki/Q742728) | 1972 Moroccan coup attempt | Golpe de Estado no Marrocos em 1972 | 1972-08-16 | attempted murder | 12 | — |
+| [ ] | [`Q2670013`](https://www.wikidata.org/wiki/Q2670013) | Insurgency in Aceh | Insurgência em Aceh | 1976-01-01 | insurgency | 11 | — |
+| [ ] | [`Q7248975`](https://www.wikidata.org/wiki/Q7248975) | Project 571 | — | 1971-01-01 | plan | 11 | — |
+| [ ] | [`Q1099135`](https://www.wikidata.org/wiki/Q1099135) | Golpe Borghese | Golpe Borghese | 1970-12-08 | attempted coup d'état | 11 | — |
+| [ ] | [`Q20977839`](https://www.wikidata.org/wiki/Q20977839) | 1979 Equatorial Guinea coup d'état | Golpe de Estado em Guiné Equatorial em 1979 | 1979-08-18 | coup d'état | 10 | — |
+| [ ] | [`Q4578716`](https://www.wikidata.org/wiki/Q4578716) | 1979 Herat uprising | Insurreição em Herat de 1979 | 1979-03-15 | rebellion | 10 | — |
+| [ ] | [`Q12182813`](https://www.wikidata.org/wiki/Q12182813) | 1979 Khuzestan uprising | Revolta no Khuzistão em 1979 | 1979-04-01 | rebellion | 10 | — |
+| [ ] | [`Q11355226`](https://www.wikidata.org/wiki/Q11355226) | Mishima incident | — | 1970-11-25 | attempted coup d'état | 10 | — |
+| [ ] | [`Q623792`](https://www.wikidata.org/wiki/Q623792) | October Yushin | Yushin de Outubro | 1972-10-10 | self-coup | 10 | — |
+| [ ] | [`Q1136770`](https://www.wikidata.org/wiki/Q1136770) | 1971 Moroccan coup attempt | Golpe de Estado de Skhirat | 1971-07-10 | attempted coup d'état | 10 | — |
+| [ ] | [`Q1715348`](https://www.wikidata.org/wiki/Q1715348) | Operation Galaxia | Operação Galaxia | 1978-11-11 | attempted coup d'état | 10 | — |
+| [ ] | [`Q4114552`](https://www.wikidata.org/wiki/Q4114552) | 1977 Pakistani military coup | Golpe de Estado no Paquistão em 1977 | 1977-07-05 | coup d'état | 9 | — |
+| [ ] | [`Q4575699`](https://www.wikidata.org/wiki/Q4575699) | 1973 Rwandan coup d'état | Golpe de Estado em Ruanda em 1973 | 1973-07-05 | coup d'état | 9 | — |
+| [ ] | [`Q18214240`](https://www.wikidata.org/wiki/Q18214240) | Operation Caban | Operação Caban | 1979-09-21 | coup d'état | 9 | — |
+| [ ] | [`Q28441384`](https://www.wikidata.org/wiki/Q28441384) | 1977 Benin coup d'état attempt | Tentativa de golpe de Estado em Benin em 1977 | 1977-01-16 | attempted coup d'état | 9 | — |
+| [ ] | [`Q48815086`](https://www.wikidata.org/wiki/Q48815086) | 1970 Omani coup d'état | Golpe de Estado em Omã em 1970 | 1970-07-23 | coup d'état | 8 | — |
+| [ ] | [`Q84806169`](https://www.wikidata.org/wiki/Q84806169) | 1979 Salvadoran coup d'état | Golpe de Estado em El Salvador em 1979 | 1979-10-15 | coup d'état | 8 | — |
+| [ ] | [`Q5783195`](https://www.wikidata.org/wiki/Q5783195) | Bala Hissar uprising | Levante de Bala Hissar | 1979-08-05 | insurgency | 8 | — |
+| [ ] | [`Q96363613`](https://www.wikidata.org/wiki/Q96363613) | 1978 Somali coup d'état attempt | Tentativa de golpe de Estado na Somália em 1978 | 1978-04-09 | attempted coup d'état | 8 | — |
+| [ ] | [`Q2279763`](https://www.wikidata.org/wiki/Q2279763) | Tanquetazo | Tanquetazo | 1973-06-29 | attempted coup d'état | 8 | — |
+| [ ] | [`Q4574531`](https://www.wikidata.org/wiki/Q4574531) | 1971 JVP Insurrection | Insurreição no Ceilão em 1971 | 1971-04-05 | attempted coup d'état | 8 | — |
+| [ ] | [`Q63121298`](https://www.wikidata.org/wiki/Q63121298) | 1977 Seychelles coup d'état | Golpe de Estado nas Seychelles em 1977 | 1977-06-04 | coup d'état | 7 | — |
+| [ ] | [`Q63123297`](https://www.wikidata.org/wiki/Q63123297) | 1972 Dahomeyan coup d'état | Golpe de Estado na República do Daomé em 1972 | 1972-10-26 | coup d'état | 7 | — |
+| [ ] | [`Q60792490`](https://www.wikidata.org/wiki/Q60792490) | 1977 Angolan coup d'état attempt | Tentativa de golpe de Estado em Angola em 1977 | 1977-05-27 | attempted coup d'état | 7 | — |
+| [ ] | [`Q90723868`](https://www.wikidata.org/wiki/Q90723868) | 1979–1980 Shia uprising in Iraq | Revolta dos xiitas no Iraque em 1979–1980 | 1979-01-01 | rebellion | 6 | — |
+
+### world-economic-crises-1970s — 3
+
+| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
+| :--: | --- | --- | --- | --- | --- | --: | :--: |
+| [ ] | [`Q316817`](https://www.wikidata.org/wiki/Q316817) | 1973 oil crisis | Crise petrolífera de 1973 | 1973-01-01 | economic crisis | 60 | — |
+| [ ] | [`Q1925730`](https://www.wikidata.org/wiki/Q1925730) | 1979 energy crisis | Crise petrolífera de 1979 | 1979-01-01 | oil crisis | 26 | — |
+| [ ] | [`Q4574284`](https://www.wikidata.org/wiki/Q4574284) | 1970s energy crisis | Crise do petróleo | 1970-01-01 | oil crisis | 21 | — |
+
+### world-genocides-1970s — 4
+
+| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
+| :--: | --- | --- | --- | --- | --- | --: | :--: |
+| [ ] | [`Q2885072`](https://www.wikidata.org/wiki/Q2885072) | Cambodian genocide | Genocídio cambojano | 1970-01-01 | mass murder | 51 | — |
+| [ ] | [`Q2916113`](https://www.wikidata.org/wiki/Q2916113) | Bangladesh genocide | Genocídio em Bangladesh em 1971 | 1971-03-26 | genocide | 30 | — |
+| [ ] | [`Q28136238`](https://www.wikidata.org/wiki/Q28136238) | East Timor genocide | Genocídio no Timor-Leste | 1975-01-01 | genocide | 13 | — |
+| [ ] | [`Q65067658`](https://www.wikidata.org/wiki/Q65067658) | 1972 Genocide of Burundian Hutus | — | 1972-04-01 | genocide | 8 | — |
+
+### world-independence-declarations-1970s — 1
+
+| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
+| :--: | --- | --- | --- | --- | --- | --: | :--: |
+| [ ] | [`Q115632732`](https://www.wikidata.org/wiki/Q115632732) | independence of Bangladesh | — | 1971-03-26 | independence | 6 | — |
+
+### world-international-conferences-1970s — 1
+
+| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
+| :--: | --- | --- | --- | --- | --- | --: | :--: |
+| [ ] | [`Q5532992`](https://www.wikidata.org/wiki/Q5532992) | Geneva Conference | Conferência de Genebra | 1973-01-01 | international conference | 8 | — |
+
+## world 1980s — 79 candidate(s), 5 already in the atlas
+
+### world-wars-1980s — 31
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
@@ -1691,12 +1812,10 @@ to that file and another run, never an edit here.
 | [ ] | [`Q381375`](https://www.wikidata.org/wiki/Q381375) | First Nagorno-Karabakh War | Primeira Guerra de Nagorno-Karabakh | 1988-02-20 | war | 67 | — |
 | [ ] | [`Q213394`](https://www.wikidata.org/wiki/Q213394) | Sri Lankan civil war | Guerra civil do Sri Lanka | 1983-07-23 | civil war | 55 | — |
 | [ ] | [`Q49103`](https://www.wikidata.org/wiki/Q49103) | 1982 Lebanon War | Guerra do Líbano de 1982 | 1982-06-06 | war | 54 | — |
-| [ ] | [`Q635533`](https://www.wikidata.org/wiki/Q635533) | Cambodian–Vietnamese War | Guerra do Camboja (1979–1989) | 1989-09-26 | war | 46 | — |
 | [ ] | [`Q842380`](https://www.wikidata.org/wiki/Q842380) | Second Sudanese Civil War | Segunda Guerra Civil Sudanesa | 1983-06-05 | civil war | 37 | — |
 | [ ] | [`Q2405009`](https://www.wikidata.org/wiki/Q2405009) | Afghan Civil War | Guerra Civil do Afeganistão | 1989-02-15 | civil war | 32 | — |
 | [ ] | [`Q29242`](https://www.wikidata.org/wiki/Q29242) | Georgian–Ossetian conflict | Conflito georgiano-osseta | 1989-11-10 | war | 30 | — |
 | [ ] | [`Q1477500`](https://www.wikidata.org/wiki/Q1477500) | First Liberian Civil War | Primeira Guerra Civil da Libéria | 1989-12-24 | civil war | 30 | — |
-| [ ] | [`Q611071`](https://www.wikidata.org/wiki/Q611071) | Chadian–Libyan War | Conflito entre Chade e Líbia | 1987-09-11 | war | 28 | — |
 | [ ] | [`Q15059994`](https://www.wikidata.org/wiki/Q15059994) | Iran–Israel proxy conflict | conflito por procuração entre Irã e Israel | 1985-02-16 | proxy war | 27 | — |
 | [ ] | [`Q644589`](https://www.wikidata.org/wiki/Q644589) | Toyota War | Guerra dos Toyota | 1986-12-16 | war | 26 | — |
 | [ ] | [`Q2479435`](https://www.wikidata.org/wiki/Q2479435) | South Lebanon conflict | Conflito no sul do Líbano | 1985-02-16 | war | 23 | — |
@@ -1705,7 +1824,7 @@ to that file and another run, never an edit here.
 | [ ] | [`Q1760930`](https://www.wikidata.org/wiki/Q1760930) | Paquisha War | Guerra de Paquisha | 1981-01-28 | war | 17 | — |
 | [ ] | [`Q3119017`](https://www.wikidata.org/wiki/Q3119017) | Ugandan Bush War | Guerra Civil de Uganda | 1980-10-06 | civil war | 17 | — |
 | [ ] | [`Q303801`](https://www.wikidata.org/wiki/Q303801) | Lord's Resistance Army insurgency | Insurgência em Uganda | 1987-01-01 | war | 15 | — |
-| [ ] | [`Q4581203`](https://www.wikidata.org/wiki/Q4581203) | 1983 Soviet nuclear false alarm incident | Incidente do alarme de mísseis falso na União Soviética em 1983 | 1983-09-26 | nuclear warfare | 15 | — |
+| [ ] | [`Q4581203`](https://www.wikidata.org/wiki/Q4581203) | 1983 Soviet nuclear false alarm incident | Incidente do alarme de mísseis falso na União Soviética em 1983 | 1983-09-26 | incident | 15 | — |
 | [ ] | [`Q1915188`](https://www.wikidata.org/wiki/Q1915188) | Surinamese Interior War | Guerra Civil do Suriname | 1986-01-01 | civil war | 14 | — |
 | [ ] | [`Q10360270`](https://www.wikidata.org/wiki/Q10360270) | Bougainville conflict | Revolução dos Cocos | 1988-12-01 | civil war | 14 | — |
 | [ ] | [`Q652284`](https://www.wikidata.org/wiki/Q652284) | 1982 Ethiopian–Somali Border War | Guerra de fronteira etíope-somali de 1982 | 1982-01-01 | war | 13 | — |
@@ -1760,53 +1879,21 @@ to that file and another run, never an edit here.
 | [ ] | [`Q1455864`](https://www.wikidata.org/wiki/Q1455864) | Treaty of Peace and Friendship of 1984 between Chile and Argentina | Tratado de Paz e Amizade entre Argentina e Chile | 1984-11-29 | peace treaty | 6 | — |
 | [ ] | [`Q4789489`](https://www.wikidata.org/wiki/Q4789489) | Argentine surrender in the Falklands War | — | 1982-06-14 | capitulation | 6 | — |
 
+### world-revolutions-1980s — 3
+
+| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
+| :--: | --- | --- | --- | --- | --- | --: | :--: |
+| [ ] | [`Q182817`](https://www.wikidata.org/wiki/Q182817) | Velvet Revolution | Revolução de Veludo | 1989-01-01 | revolution | 64 | yes |
+| [ ] | [`Q204213`](https://www.wikidata.org/wiki/Q204213) | Romanian Revolution (1989) | Revolução Romena de 1989 | 1989-12-15 | revolution | 51 | — |
+| [ ] | [`Q1274389`](https://www.wikidata.org/wiki/Q1274389) | People Power Revolution | Revolução do Poder Popular | 1986-02-22 | United States involvement in regime change | 38 | — |
+
 ### world-pandemics-1980s — 1
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
 | [ ] | [`Q671297`](https://www.wikidata.org/wiki/Q671297) | 1983 West Bank fainting epidemic | Epidemia de desmaios na Cisjordânia (1983) | 1983-03-21 | epidemic | 6 | — |
 
-### world-coups-1980s — 35
-
-| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
-| :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q49105`](https://www.wikidata.org/wiki/Q49105) | First Intifada | Primeira Intifada | 1987-12-08 | intifada | 51 | — |
-| [ ] | [`Q174990`](https://www.wikidata.org/wiki/Q174990) | Gwangju Uprising | Massacre de Gwangju | 1980-05-18 | social movement | 38 | — |
-| [ ] | [`Q215337`](https://www.wikidata.org/wiki/Q215337) | 1981 Spanish coup d'état attempt | golpe de Estado na Espanha em 1981 | 1981-02-23 | attempted coup d'état | 32 | — |
-| [ ] | [`Q1758028`](https://www.wikidata.org/wiki/Q1758028) | 1980 Turkish coup d'état | Golpe de Estado na Turquia em 1980 | 1980-09-12 | coup d'état | 31 | — |
-| [ ] | [`Q749970`](https://www.wikidata.org/wiki/Q749970) | insurgency in Jammu and Kashmir | Insurgência em Jammu e Caxemira | 1989-07-13 | resistance | 27 | — |
-| [ ] | [`Q2592077`](https://www.wikidata.org/wiki/Q2592077) | Islamist revolution in Syria | Revolta islâmica na Síria | 1982-02-28 | rebellion | 22 | — |
-| [ ] | [`Q1634613`](https://www.wikidata.org/wiki/Q1634613) | 1988 Maldives coup d'état attempt | Operação Cactus | 1988-11-03 | coup d'état | 12 | — |
-| [ ] | [`Q2998924`](https://www.wikidata.org/wiki/Q2998924) | 1987 Fijian coups d'état | Golpes de Estado em Fiji em 1987 | 1987-05-14 | coup d'état | 12 | — |
-| [ ] | [`Q3446722`](https://www.wikidata.org/wiki/Q3446722) | Coconut War | Guerra do Coco | 1980-01-01 | rebellion | 12 | — |
-| [ ] | [`Q60764387`](https://www.wikidata.org/wiki/Q60764387) | 1987 Burkinabé coup d'état | Golpe de Estado em Burkina Faso em 1987 | 1987-10-15 | coup d'état | 11 | — |
-| [ ] | [`Q485728`](https://www.wikidata.org/wiki/Q485728) | Coup d'état of May Seventeenth | Golpe de Estado de 17 de Maio | 1980-05-17 | coup d'état | 10 | — |
-| [ ] | [`Q606081`](https://www.wikidata.org/wiki/Q606081) | 1989 Sudanese coup d'état | Golpe de Estado no Sudão em 1989 | 1989-06-30 | coup d'état | 9 | — |
-| [ ] | [`Q967981`](https://www.wikidata.org/wiki/Q967981) | 1980 Surinamese coup d'état | Golpe de Estado no Suriname em 1980 | 1980-02-25 | coup d'état | 9 | — |
-| [ ] | [`Q8676049`](https://www.wikidata.org/wiki/Q8676049) | 1987 Tunisian coup d'état | Golpe de Estado na Tunísia em 1987 | 1987-11-07 | coup d'état | 9 | — |
-| [ ] | [`Q19601700`](https://www.wikidata.org/wiki/Q19601700) | 1989 Paraguayan coup d'etat | Golpe de Estado no Paraguai em 1989 | 1989-02-02 | coup d'état | 9 | — |
-| [ ] | [`Q6398539`](https://www.wikidata.org/wiki/Q6398539) | 1982 Amol Uprising | — | 1982-01-25 | rebellion | 9 | — |
-| [ ] | [`Q2743454`](https://www.wikidata.org/wiki/Q2743454) | Operation Red Dog | Operação Red Dog | 1981-04-27 | attempted coup d'état | 9 | — |
-| [ ] | [`Q39046971`](https://www.wikidata.org/wiki/Q39046971) | 1986 Lesotho coup d'état | Golpe de Estado no Lesoto em 1986 | 1986-01-15 | coup d'état | 8 | — |
-| [ ] | [`Q60750351`](https://www.wikidata.org/wiki/Q60750351) | 1984 Guinean coup d'état | Golpe de Estado na Guiné em 1984 | 1984-04-03 | coup d'état | 8 | — |
-| [ ] | [`Q6445746`](https://www.wikidata.org/wiki/Q6445746) | 1983–1986 Kurdish rebellions in Iraq | Revolta curda de 1983-1988 | 1983-09-01 | rebellion | 8 | — |
-| [ ] | [`Q1995577`](https://www.wikidata.org/wiki/Q1995577) | Nojeh coup plot | Golpe Nojeh | 1980-07-10 | attempted coup d'état | 8 | — |
-| [ ] | [`Q4583594`](https://www.wikidata.org/wiki/Q4583594) | 1987 Burundian coup d'état | Golpe de Estado no Burundi em 1987 | 1987-09-03 | coup d'état | 7 | — |
-| [ ] | [`Q60750764`](https://www.wikidata.org/wiki/Q60750764) | 1980 Guinea-Bissau coup d'état | Golpe de Estado na Guiné-Bissau em 1980 | 1980-11-14 | coup d'état | 7 | — |
-| [ ] | [`Q947194`](https://www.wikidata.org/wiki/Q947194) | carapintadas | carapintadas | 1987-01-01 | rebellion | 7 | — |
-| [ ] | [`Q4584263`](https://www.wikidata.org/wiki/Q4584263) | 1987–89 JVP Insurrection | Insurreição de 1987–1989 no Sri Lanka | 1987-01-01 | rebellion | 7 | — |
-| [ ] | [`Q29378733`](https://www.wikidata.org/wiki/Q29378733) | 1981 Seychelles coup d'état attempt | Tentativa de golpe de Estado nas Seychelles em 1981 | 1981-11-25 | attempted coup d'état | 7 | — |
-| [ ] | [`Q63125602`](https://www.wikidata.org/wiki/Q63125602) | 1986 Togolese coup d'état attempt | Tentativa de golpe de Estado no Togo em 1986 | 1986-09-23 | attempted coup d'état | 7 | — |
-| [ ] | [`Q47004507`](https://www.wikidata.org/wiki/Q47004507) | 3 Hoot uprising | Levante de 3 de Hoot | 1980-01-01 | insurgency | 7 | — |
-| [ ] | [`Q6312034`](https://www.wikidata.org/wiki/Q6312034) | June 1988 Haitian coup d'état | Golpe de Estado no Haiti em junho de 1988 | 1988-06-20 | coup d'état | 6 | — |
-| [ ] | [`Q63099653`](https://www.wikidata.org/wiki/Q63099653) | 1985 Sudanese coup d'état | Golpe de Estado no Sudão em 1985 | 1985-04-06 | coup d'état | 6 | — |
-| [ ] | [`Q63111212`](https://www.wikidata.org/wiki/Q63111212) | 1984 Mauritanian coup d'état | Golpe de Estado na Mauritânia em 1984 | 1984-12-12 | coup d'état | 6 | — |
-| [ ] | [`Q108570220`](https://www.wikidata.org/wiki/Q108570220) | 1983 Upper Voltan coup d'état | Golpe de Estado no Alto Volta em 1983 | 1983-08-04 | coup d'état | 6 | — |
-| [ ] | [`Q2225408`](https://www.wikidata.org/wiki/Q2225408) | Amsterdam coronation riots | — | 1980-04-30 | rebellion | 6 | — |
-| [ ] | [`Q1185360`](https://www.wikidata.org/wiki/Q1185360) | 1982 Spanish coup attempt | Tentativa de golpe de Estado na Espanha em 1982 | 1982-10-27 | attempted coup d'état | 6 | — |
-| [ ] | [`Q18600449`](https://www.wikidata.org/wiki/Q18600449) | 1989 Burkinabé coup d'état attempt | Tentativa de golpe de Estado em Burkina Faso em 1989 | 1989-09-18 | attempted coup d'état | 6 | — |
-
-### world-assassinations-1980s — 5
+### world-assassinations-1980s — 4
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
@@ -1814,33 +1901,14 @@ to that file and another run, never an edit here.
 | [ ] | [`Q3284177`](https://www.wikidata.org/wiki/Q3284177) | assassination of Olof Palme | — | 1986-02-28 | political murder | 24 | — |
 | [ ] | [`Q2756743`](https://www.wikidata.org/wiki/Q2756743) | assassination of Anwar Sadat | — | 1981-10-06 | political murder | 16 | — |
 | [ ] | [`Q583569`](https://www.wikidata.org/wiki/Q583569) | December murders | Assassinatos de dezembro de 1982 | 1982-12-08 | political murder | 15 | — |
-| [ ] | [`Q4808506`](https://www.wikidata.org/wiki/Q4808506) | assassination of Erkut Akbay | Assassinato de Erkut Akbay | 1982-06-07 | political murder | 6 | yes |
 
-### world-economic-crises-1980s — 4
-
-| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
-| :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q643802`](https://www.wikidata.org/wiki/Q643802) | North American video game crash of 1983 | Crash dos videogames de 1983 | 1983-01-01 | recession | 29 | — |
-| [ ] | [`Q1806854`](https://www.wikidata.org/wiki/Q1806854) | Abraha de la Cruz | Crise da dívida externa latino-americana | 1982-01-01 | financial crisis | 15 | — |
-| [ ] | [`Q1326489`](https://www.wikidata.org/wiki/Q1326489) | savings and loan crisis | Crise de Poupanças e Empréstimos | 1986-01-01 | bailout | 14 | — |
-| [ ] | [`Q4581056`](https://www.wikidata.org/wiki/Q4581056) | 1983 Israel bank stock crisis | — | 1983-01-01 | economic crisis | 6 | — |
-
-### world-financial-crises-1980s — 1
+### world-financial-crises-1980s — 3
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
 | [ ] | [`Q868261`](https://www.wikidata.org/wiki/Q868261) | Black Monday | Segunda-feira negra | 1987-10-19 | stock market crash | 38 | — |
-
-### world-genocides-1980s — 6
-
-| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
-| :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q2789344`](https://www.wikidata.org/wiki/Q2789344) | Guatemalan genocide | Genocídio na Guatemala | 1985-01-01 | genocide | 17 | — |
-| [ ] | [`Q1414900`](https://www.wikidata.org/wiki/Q1414900) | El Mozote massacre | Massacre de El Mozote | 1981-12-11 | genocide | 16 | — |
-| [ ] | [`Q490844`](https://www.wikidata.org/wiki/Q490844) | Gukurahundi | Gukurahundi | 1983-01-03 | genocide | 14 | — |
-| [ ] | [`Q28450472`](https://www.wikidata.org/wiki/Q28450472) | Isaaq Genocide | Genocídio Isaaq | 1987-01-01 | genocide | 14 | — |
-| [ ] | [`Q7200922`](https://www.wikidata.org/wiki/Q7200922) | Big Excursion | — | 1989-05-01 | ethnic cleansing | 8 | — |
-| [ ] | [`Q3297496`](https://www.wikidata.org/wiki/Q3297496) | Tadmor Prison massacre | — | 1980-06-27 | genocide | 6 | — |
+| [ ] | [`Q1806854`](https://www.wikidata.org/wiki/Q1806854) | Abraha de la Cruz | Crise da dívida externa latino-americana | 1982-01-01 | financial crisis | 15 | — |
+| [ ] | [`Q1326489`](https://www.wikidata.org/wiki/Q1326489) | savings and loan crisis | Crise de Poupanças e Empréstimos | 1986-01-01 | bailout | 14 | — |
 
 ### world-independence-declarations-1980s — 2
 
@@ -1849,7 +1917,7 @@ to that file and another run, never an edit here.
 | [ ] | [`Q1816561`](https://www.wikidata.org/wiki/Q1816561) | Palestinian Declaration of Independence | Declaração de Independência da Palestina | 1988-11-15 | declaration of independence | 29 | — |
 | [ ] | [`Q1230986`](https://www.wikidata.org/wiki/Q1230986) | Patriation | — | 1982-04-17 | independence | 7 | — |
 
-## world 1990s — 138 candidate(s), 5 already in the atlas
+## world 1990s — 127 candidate(s), 3 already in the atlas
 
 ### world-wars-1990s — 39
 
@@ -1860,7 +1928,7 @@ to that file and another run, never an edit here.
 | [ ] | [`Q190029`](https://www.wikidata.org/wiki/Q190029) | Kosovo War | Guerra do Kosovo | 1998-02-01 | war | 73 | — |
 | [ ] | [`Q68969`](https://www.wikidata.org/wiki/Q68969) | Croatian War of Independence | Guerra de Independência da Croácia | 1991-03-31 | war | 64 | — |
 | [ ] | [`Q120843`](https://www.wikidata.org/wiki/Q120843) | Second Chechen War | Segunda Guerra na Chechênia | 1999-08-26 | war | 64 | yes |
-| [ ] | [`Q242352`](https://www.wikidata.org/wiki/Q242352) | Yugoslav Wars | Guerra Civil Iugoslava | 1991-03-31 | series of wars | 64 | — |
+| [ ] | [`Q242352`](https://www.wikidata.org/wiki/Q242352) | Yugoslav Wars | Guerra Civil Iugoslava | 1991-03-31 | ethnic conflict | 64 | — |
 | [ ] | [`Q404517`](https://www.wikidata.org/wiki/Q404517) | Kargil War | Guerra de Kargil | 1999-01-01 | war | 54 | — |
 | [ ] | [`Q243620`](https://www.wikidata.org/wiki/Q243620) | Somali Civil War | Guerra Civil da Somália | 1991-01-26 | civil war | 54 | — |
 | [ ] | [`Q75756`](https://www.wikidata.org/wiki/Q75756) | Second Congo War | Segunda Guerra do Congo | 1998-08-02 | war | 51 | — |
@@ -1951,7 +2019,7 @@ to that file and another run, never an edit here.
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q221382`](https://www.wikidata.org/wiki/Q221382) | 1991 Soviet coup d'état attempt | Tentativa de golpe de Estado na União Soviética em 1991 | 1991-08-19 | attempted coup d'état | 62 | — |
+| [ ] | [`Q221382`](https://www.wikidata.org/wiki/Q221382) | 1991 Soviet coup d'état attempt | Tentativa de golpe de Estado na União Soviética em 1991 | 1991-08-19 | military coup | 62 | — |
 | [ ] | [`Q862099`](https://www.wikidata.org/wiki/Q862099) | 1993 Russian constitutional crisis | Crise constitucional russa de 1993 | 1992-01-01 | coup d'état | 41 | — |
 | [ ] | [`Q760002`](https://www.wikidata.org/wiki/Q760002) | 1991 Iraqi uprisings | Revoltas no Iraque de 1991 | 1991-01-01 | rebellion | 21 | — |
 | [ ] | [`Q2352036`](https://www.wikidata.org/wiki/Q2352036) | 1999 Pakistani coup d'état | Golpe de Estado no Paquistão em 1999 | 1999-10-12 | coup d'état | 17 | — |
@@ -1970,10 +2038,10 @@ to that file and another run, never an edit here.
 | [ ] | [`Q4589458`](https://www.wikidata.org/wiki/Q4589458) | 1994 Gambian coup d'état | Golpe de Estado na Gâmbia em 1994 | 1994-07-22 | coup d'état | 7 | — |
 | [ ] | [`Q16822144`](https://www.wikidata.org/wiki/Q16822144) | 1992 Sierra Leonean coup d'état | Golpe de Estado na Serra Leoa em 1992 | 1992-04-29 | coup d'état | 7 | — |
 | [ ] | [`Q19955933`](https://www.wikidata.org/wiki/Q19955933) | 1991 Malian coup d'état | Golpe de Estado no Mali em 1991 | 1991-03-26 | coup d'état | 7 | — |
-| [ ] | [`Q8868`](https://www.wikidata.org/wiki/Q8868) | 1992 Venezuelan coup d'état attempts | Golpe de Estado de 1992 na Venezuela | 1992-01-01 | attempted coup d'état | 7 | — |
+| [ ] | [`Q18126038`](https://www.wikidata.org/wiki/Q18126038) | Insurgency in Kosovo | Insurgência no Kosovo | 1995-05-27 | insurgency | 7 | — |
 | [ ] | [`Q2893606`](https://www.wikidata.org/wiki/Q2893606) | 1992 Peruvian self-coup d'état | Crise constitucional no Peru em 1992 | 1992-04-05 | self-coup | 7 | — |
 | [ ] | [`Q104530713`](https://www.wikidata.org/wiki/Q104530713) | 1995 Qatari coup d'état | Golpe de Estado no Catar em 1995 | 1995-06-27 | palace coup | 7 | — |
-| [ ] | [`Q18126038`](https://www.wikidata.org/wiki/Q18126038) | Insurgency in Kosovo | Insurgência no Kosovo | 1995-05-27 | insurgency | 7 | — |
+| [ ] | [`Q8868`](https://www.wikidata.org/wiki/Q8868) | 1992 Venezuelan coup d'état attempts | Golpe de Estado de 1992 na Venezuela | 1992-01-01 | attempted coup d'état | 7 | — |
 | [ ] | [`Q4591257`](https://www.wikidata.org/wiki/Q4591257) | 1996 Burundian coup d'état | Golpe de Estado no Burundi em 1996 | 1996-07-25 | coup d'état | 6 | — |
 | [ ] | [`Q6585266`](https://www.wikidata.org/wiki/Q6585266) | 1991 Thai coup d'état | — | 1991-02-23 | coup d'état | 6 | — |
 | [ ] | [`Q14466700`](https://www.wikidata.org/wiki/Q14466700) | 1990 Surinamese coup d'état | Golpe de Estado no Suriname em 1990 | 1990-12-24 | coup d'état | 6 | — |
@@ -1995,22 +2063,6 @@ to that file and another run, never an edit here.
 | [ ] | [`Q7263298`](https://www.wikidata.org/wiki/Q7263298) | pyramid schemes in Albania | Esquemas em pirâmide na Albânia | 1997-01-01 | economic crisis | 13 | — |
 | [ ] | [`Q2301116`](https://www.wikidata.org/wiki/Q2301116) | Special Period | Período Especial em Cuba | 1990-01-01 | economic crisis | 10 | — |
 
-### world-genocides-1990s — 11
-
-| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
-| :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q131297`](https://www.wikidata.org/wiki/Q131297) | 1994 Genocide against Tutsi | Genocídio em Ruanda | 1994-01-01 | genocide | 88 | yes |
-| [ ] | [`Q170334`](https://www.wikidata.org/wiki/Q170334) | Srebrenica massacre | Genocídio de Srebrenica | 1995-07-01 | genocide | 74 | yes |
-| [ ] | [`Q3288108`](https://www.wikidata.org/wiki/Q3288108) | Bosnian Genocide | Genocídio na Bósnia | 1995-07-13 | genocide | 26 | — |
-| [ ] | [`Q2749287`](https://www.wikidata.org/wiki/Q2749287) | May 1998 riots of Indonesia | Tumultos na Indonésia em maio de 1998 | 1998-05-04 | genocide | 16 | — |
-| [ ] | [`Q2504602`](https://www.wikidata.org/wiki/Q2504602) | Lašva Valley ethnic cleansing | — | 1992-05-01 | ethnic cleansing | 13 | — |
-| [ ] | [`Q4533032`](https://www.wikidata.org/wiki/Q4533032) | ethnic cleansing in the Bosnian War | — | 1992-01-01 | ethnic cleansing | 13 | — |
-| [ ] | [`Q609510`](https://www.wikidata.org/wiki/Q609510) | Ethnic cleansing of Georgians in Sukhumi | — | 1993-09-16 | ethnic cleansing | 9 | — |
-| [ ] | [`Q1634039`](https://www.wikidata.org/wiki/Q1634039) | Operation Horseshoe | — | 1999-01-01 | ethnic cleansing | 9 | — |
-| [ ] | [`Q503678`](https://www.wikidata.org/wiki/Q503678) | Saborsko massacre | — | 1991-11-12 | ethnic cleansing | 8 | — |
-| [ ] | [`Q136301701`](https://www.wikidata.org/wiki/Q136301701) | Genocost | — | 1998-08-02 | genocide | 7 | — |
-| [ ] | [`Q5685722`](https://www.wikidata.org/wiki/Q5685722) | Haximu massacre | Massacre de Haximu | 1993-01-01 | genocide | 6 | — |
-
 ### world-independence-declarations-1990s — 5
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
@@ -2029,7 +2081,7 @@ to that file and another run, never an edit here.
 | [ ] | [`Q653521`](https://www.wikidata.org/wiki/Q653521) | BOBCATSSS | — | 1993-01-01 | academic conference series | 8 | — |
 | [ ] | [`Q4594068`](https://www.wikidata.org/wiki/Q4594068) | 1998 United Nations Climate Change Conference | Conferência das Nações Unidas sobre as Mudanças Climáticas de 1998 | 1998-11-02 | United Nations Climate Change Conference | 6 | — |
 
-## world 2000s — 93 candidate(s), 4 already in the atlas
+## world 2000s — 118 candidate(s), 4 already in the atlas
 
 ### world-wars-2000s — 24
 
@@ -2065,7 +2117,7 @@ to that file and another run, never an edit here.
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
 | [ ] | [`Q189066`](https://www.wikidata.org/wiki/Q189066) | Treaty establishing a Constitution for Europe | Constituição Europeia | 2004-10-29 | treaty of the European Union | 54 | — |
-| [ ] | [`Q1069706`](https://www.wikidata.org/wiki/Q1069706) | Convention on the Rights of Persons with Disabilities | Convenção Internacional sobre os Direitos das Pessoas com Deficiência | 2006-12-13 | international human rights instrument | 52 | — |
+| [ ] | [`Q1069706`](https://www.wikidata.org/wiki/Q1069706) | Convention on the Rights of Persons with Disabilities | Convenção Internacional sobre os Direitos das Pessoas com Deficiência | 2006-12-13 | United Nations treaty | 52 | — |
 | [ ] | [`Q208688`](https://www.wikidata.org/wiki/Q208688) | Treaty of Nice | Tratado de Nice | 2001-02-26 | treaty of the European Union | 50 | — |
 | [ ] | [`Q192135`](https://www.wikidata.org/wiki/Q192135) | Anti-Counterfeiting Trade Agreement | Acordo Comercial Anticontrafação | 2006-01-01 | treaty | 47 | — |
 | [ ] | [`Q82908`](https://www.wikidata.org/wiki/Q82908) | Stockholm Convention on Persistent Organic Pollutants | Convenção de Estocolmo | 2001-05-22 | treaty | 41 | — |
@@ -2078,10 +2130,10 @@ to that file and another run, never an edit here.
 | [ ] | [`Q3924288`](https://www.wikidata.org/wiki/Q3924288) | Maputo Protocol | Protocolo de Maputo | 2003-07-11 | international human rights instrument | 25 | — |
 | [ ] | [`Q832200`](https://www.wikidata.org/wiki/Q832200) | Cotonou Agreement | Acordo de Cotonou | 2000-06-23 | treaty | 23 | — |
 | [ ] | [`Q331504`](https://www.wikidata.org/wiki/Q331504) | Convention against Transnational Organized Crime | — | 2000-11-15 | United Nations treaty | 23 | — |
-| [ ] | [`Q1424647`](https://www.wikidata.org/wiki/Q1424647) | Comprehensive Peace Agreement | Tratado de Naivasha | 2005-01-09 | peace treaty | 20 | — |
 | [ ] | [`Q814930`](https://www.wikidata.org/wiki/Q814930) | Treaty of Accession 2003 | Tratado de Adesão | 2003-04-16 | Treaty of Accession to the EU | 20 | — |
-| [ ] | [`Q15767316`](https://www.wikidata.org/wiki/Q15767316) | Council of Europe Convention on the Protection of Children against Sexual Exploitation and Sexual Abuse | — | 2007-10-25 | Council of Europe treaty | 20 | — |
+| [ ] | [`Q1424647`](https://www.wikidata.org/wiki/Q1424647) | Comprehensive Peace Agreement | Tratado de Naivasha | 2005-01-09 | peace treaty | 20 | — |
 | [ ] | [`Q2152104`](https://www.wikidata.org/wiki/Q2152104) | 2001 Sino-Russian Treaty of Friendship | — | 2001-07-16 | bilateral treaty | 20 | — |
+| [ ] | [`Q15767316`](https://www.wikidata.org/wiki/Q15767316) | Council of Europe Convention on the Protection of Children against Sexual Exploitation and Sexual Abuse | — | 2007-10-25 | Council of Europe treaty | 20 | — |
 | [ ] | [`Q1093069`](https://www.wikidata.org/wiki/Q1093069) | Convention on Cybercrime | Convenção sobre o Cibercrime | 2001-11-08 | Council of Europe treaty | 19 | — |
 | [ ] | [`Q1378142`](https://www.wikidata.org/wiki/Q1378142) | European Landscape Convention | Convenção Europeia da Paisagem | 2000-10-20 | international environmental agreement | 18 | — |
 | [ ] | [`Q746993`](https://www.wikidata.org/wiki/Q746993) | Treaty of Accession 2005 | — | 2005-04-25 | Treaty of Accession to the EU | 17 | — |
@@ -2100,7 +2152,7 @@ to that file and another run, never an edit here.
 | [ ] | [`Q2744514`](https://www.wikidata.org/wiki/Q2744514) | UNASUR Constitutive Treaty | Tratado Constitutivo da Unasul | 2008-05-23 | constitutive treaty | 11 | — |
 | [ ] | [`Q1355161`](https://www.wikidata.org/wiki/Q1355161) | Cusco Declaration | Declaração de Cusco | 2004-12-08 | treaty | 10 | — |
 | [ ] | [`Q2474460`](https://www.wikidata.org/wiki/Q2474460) | International Convention for the Control and Management of Ships' Ballast Water and Sediments | — | 2004-02-13 | treaty | 10 | — |
-| [ ] | [`Q740462`](https://www.wikidata.org/wiki/Q740462) | Optional Protocol to the Convention against Torture and other Cruel, Inhuman or Degrading Treatment or Punishment | — | 2002-12-18 | international human rights instrument | 10 | — |
+| [ ] | [`Q740462`](https://www.wikidata.org/wiki/Q740462) | Optional Protocol to the Convention against Torture and other Cruel, Inhuman or Degrading Treatment or Punishment | — | 2002-12-18 | United Nations treaty | 10 | — |
 
 ### world-revolutions-2000s — 5
 
@@ -2121,18 +2173,56 @@ to that file and another run, never an edit here.
 | [ ] | [`Q153678`](https://www.wikidata.org/wiki/Q153678) | 2008 Zimbabwean cholera outbreak | Epidemia de cólera no Zimbábue | 2008-08-01 | cholera outbreak | 16 | — |
 | [ ] | [`Q2579041`](https://www.wikidata.org/wiki/Q2579041) | 2009–2010 West African meningitis outbreak | — | 2009-01-01 | epidemic | 9 | — |
 
-### world-economic-crises-2000s — 9
+### world-coups-2000s — 37
+
+| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
+| :--: | --- | --- | --- | --- | --- | --: | :--: |
+| [ ] | [`Q49106`](https://www.wikidata.org/wiki/Q49106) | Second Intifada | Segunda Intifada | 2000-09-28 | intifada | 48 | — |
+| [ ] | [`Q817137`](https://www.wikidata.org/wiki/Q817137) | 2001 insurgency in Macedonia | Conflito na Macedônia de 2001 | 2001-01-01 | insurgency | 38 | — |
+| [ ] | [`Q714820`](https://www.wikidata.org/wiki/Q714820) | Satsuma Rebellion | Rebelião Satsuma | 2005-01-29 | shizoku rebellion | 32 | — |
+| [ ] | [`Q860423`](https://www.wikidata.org/wiki/Q860423) | 2006 Thai coup d'état | Golpe de Estado na Tailândia em 2006 | 2006-09-19 | coup d'état | 30 | — |
+| [ ] | [`Q545068`](https://www.wikidata.org/wiki/Q545068) | 2008 Tibetan unrest | Distúrbios no Tibete em 2008 | 2008-01-01 | rebellion | 30 | — |
+| [ ] | [`Q1569328`](https://www.wikidata.org/wiki/Q1569328) | Boko Haram insurgency | Insurgência islâmica na Nigéria | 2009-07-26 | insurgency | 29 | — |
+| [ ] | [`Q255997`](https://www.wikidata.org/wiki/Q255997) | Houthi insurgency | Rebelião Houthi no Iêmen | 2004-06-01 | rebellion | 27 | — |
+| [ ] | [`Q926905`](https://www.wikidata.org/wiki/Q926905) | Iraqi insurgency | insurgência iraquiana | 2003-01-01 | insurgency | 26 | — |
+| [ ] | [`Q849563`](https://www.wikidata.org/wiki/Q849563) | insurgency in the North Caucasus | Insurgência no Cáucaso Norte | 2009-04-16 | insurgency | 23 | — |
+| [ ] | [`Q8807`](https://www.wikidata.org/wiki/Q8807) | 2002 Venezuelan coup d'état attempt | Golpe de Estado na Venezuela de 2002 | 2002-04-01 | attempted coup d'état | 20 | — |
+| [ ] | [`Q1149912`](https://www.wikidata.org/wiki/Q1149912) | 2005 Belize unrest | — | 2005-01-01 | rebellion | 19 | — |
+| [ ] | [`Q1073488`](https://www.wikidata.org/wiki/Q1073488) | 2009 Honduran coup d'état | golpe militar em Honduras em 2009 | 2009-06-28 | coup d'état | 18 | — |
+| [ ] | [`Q2883469`](https://www.wikidata.org/wiki/Q2883469) | 2004 Haitian coup d'état | Golpe de Estado no Haiti de 2004 | 2004-02-01 | coup d'état | 18 | — |
+| [ ] | [`Q1752743`](https://www.wikidata.org/wiki/Q1752743) | Taliban insurgency | Insurgência talibã | 2001-12-17 | insurgency | 15 | — |
+| [ ] | [`Q632663`](https://www.wikidata.org/wiki/Q632663) | South Yemen insurgency | insurgência no sul do Iêmen | 2009-04-27 | rebellion | 14 | — |
+| [ ] | [`Q2282672`](https://www.wikidata.org/wiki/Q2282672) | 2008 Guinean coup d'état | Golpe de Estado na Guiné em 2008 | 2008-12-23 | coup d'état | 13 | — |
+| [ ] | [`Q2567468`](https://www.wikidata.org/wiki/Q2567468) | 2006 Fijian coup d'état | Golpe de Estado em Fiji de 2006 | 2006-12-01 | coup d'état | 13 | — |
+| [ ] | [`Q2465567`](https://www.wikidata.org/wiki/Q2465567) | 2008 Mauritanian coup d'état | Golpe de Estado na Mauritânia em 2008 | 2008-08-06 | coup d'état | 12 | — |
+| [ ] | [`Q3495710`](https://www.wikidata.org/wiki/Q3495710) | 2005 Mauritanian coup d'état | Golpe de Estado na Mauritânia em 2005 | 2005-08-03 | coup d'état | 11 | — |
+| [ ] | [`Q3152953`](https://www.wikidata.org/wiki/Q3152953) | 2001 uprising in Herat | Insurreição em Herat de 2001 | 2001-10-07 | rebellion | 11 | — |
+| [ ] | [`Q4597438`](https://www.wikidata.org/wiki/Q4597438) | 2000 Fijian coup d'état | Golpe de Estado nas Fiji de 2000 | 2000-05-19 | coup d'état | 10 | — |
+| [ ] | [`Q4372932`](https://www.wikidata.org/wiki/Q4372932) | 2004 Equatorial Guinea coup d'état attempt | Tentativa de golpe de Estado na Guiné Equatorial em 2004 | 2004-03-07 | attempted coup d'état | 9 | — |
+| [ ] | [`Q2046972`](https://www.wikidata.org/wiki/Q2046972) | 2009 Georgian mutiny | Motim na Geórgia de 2009 | 2009-05-05 | mutiny | 8 | — |
+| [ ] | [`Q4120789`](https://www.wikidata.org/wiki/Q4120789) | 2000 Ecuadorian coup d'état | Golpe de Estado no Equador em 2000 | 2000-01-01 | coup d'état | 7 | — |
+| [ ] | [`Q2411274`](https://www.wikidata.org/wiki/Q2411274) | 2009 Boko Haram uprising | — | 2009-07-26 | rebellion | 7 | — |
+| [ ] | [`Q20310973`](https://www.wikidata.org/wiki/Q20310973) | insurgency in Sistan and Balochistan | Insurgência no Sistão-Baluchistão | 2004-01-01 | insurgency | 7 | — |
+| [ ] | [`Q5321521`](https://www.wikidata.org/wiki/Q5321521) | E-memorandum | — | 2007-01-01 | attempted coup d'état | 7 | — |
+| [ ] | [`Q85728158`](https://www.wikidata.org/wiki/Q85728158) | 2003 Mauritanian coup d'état attempt | Tentativa de golpe de Estado da Mauritânia em 2003 | 2003-06-08 | attempted coup d'état | 7 | — |
+| [ ] | [`Q17512048`](https://www.wikidata.org/wiki/Q17512048) | 2003 Central African Republic coup d'état | Golpe de Estado na República Centro-Africana em 2003 | 2003-03-01 | coup d'état | 6 | — |
+| [ ] | [`Q19659502`](https://www.wikidata.org/wiki/Q19659502) | 2005 Nepal coup d'état | Golpe de Estado no Nepal em 2005 | 2005-02-01 | coup d'état | 6 | — |
+| [ ] | [`Q61946226`](https://www.wikidata.org/wiki/Q61946226) | 2003 Guinea-Bissau coup d'état | Golpe de Estado na Guiné-Bissau em 2003 | 2003-09-14 | coup d'état | 6 | — |
+| [ ] | [`Q2136379`](https://www.wikidata.org/wiki/Q2136379) | Independence Intifada | Intifada da Independência | 2005-05-01 | intifada | 6 | — |
+| [ ] | [`Q7288716`](https://www.wikidata.org/wiki/Q7288716) | Ramadan Offensive | Ofensiva do Ramadã de 2003 | 2003-10-26 | insurgency | 6 | — |
+| [ ] | [`Q757980`](https://www.wikidata.org/wiki/Q757980) | 2008 East Timorese assassination attempts | Atentados em Timor-Leste em 2008 | 2008-02-11 | attempted coup d'état | 6 | — |
+| [ ] | [`Q3518181`](https://www.wikidata.org/wiki/Q3518181) | 2006 Malagasy coup d'état attempt | Tentativa de golpe de Estado em Madagascar em 2006 | 2006-11-17 | attempted coup d'état | 6 | — |
+| [ ] | [`Q4605943`](https://www.wikidata.org/wiki/Q4605943) | 2006 Chadian coup d'état attempt | Tentativa de golpe de Estado no Chade em 2006 | 2006-03-14 | attempted coup d'état | 6 | — |
+| [ ] | [`Q27860366`](https://www.wikidata.org/wiki/Q27860366) | 2003 São Tomé and Príncipe coup d'état attempt | Golpe de Estado em São Tomé e Príncipe em 2003 | 2003-07-16 | attempted coup d'état | 6 | — |
+
+### world-financial-crises-2000s — 5
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
 | [ ] | [`Q896666`](https://www.wikidata.org/wiki/Q896666) | 2007–2008 financial crisis | Crise financeira de 2007–2008 | 2007-01-01 | financial crisis | 80 | — |
-| [ ] | [`Q154510`](https://www.wikidata.org/wiki/Q154510) | Great Recession | Grande Recessão | 2000-01-01 | recession | 57 | — |
-| [ ] | [`Q956475`](https://www.wikidata.org/wiki/Q956475) | Greek government-debt crisis | Crise financeira da Grécia | 2009-01-01 | economic crisis | 43 | — |
-| [ ] | [`Q844541`](https://www.wikidata.org/wiki/Q844541) | United States subprime mortgage crisis | Crise do subprime | 2007-01-01 | economic crisis | 32 | — |
 | [ ] | [`Q1137483`](https://www.wikidata.org/wiki/Q1137483) | 2008–2011 Icelandic financial crisis | Crise financeira na Islândia de 2008-2009 | 2008-01-01 | financial crisis | 27 | — |
 | [ ] | [`Q2479178`](https://www.wikidata.org/wiki/Q2479178) | 2008–2014 Spanish financial crisis | — | 2008-01-01 | financial crisis | 13 | — |
 | [ ] | [`Q972891`](https://www.wikidata.org/wiki/Q972891) | 2008–2013 Irish financial crisis | — | 2008-01-01 | financial crisis | 7 | — |
-| [ ] | [`Q3002742`](https://www.wikidata.org/wiki/Q3002742) | 2000–2001 California electricity crisis | — | 2000-05-01 | energy crisis | 7 | — |
 | [ ] | [`Q2047190`](https://www.wikidata.org/wiki/Q2047190) | 2008 Latvian financial crisis | — | 2008-01-01 | financial crisis | 6 | — |
 
 ### world-genocides-2000s — 4
@@ -2144,22 +2234,172 @@ to that file and another run, never an edit here.
 | [ ] | [`Q39086159`](https://www.wikidata.org/wiki/Q39086159) | Effacer le tableau | Effacer le tableau | 2002-10-01 | genocide | 7 | — |
 | [ ] | [`Q108733451`](https://www.wikidata.org/wiki/Q108733451) | Native American genocide in the United States | Genocídio indígena nos Estados Unidos | 2000-01-01 | genocide | 6 | — |
 
-### world-international-conferences-2000s — 10
+### world-independence-declarations-2000s — 2
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q244444`](https://www.wikidata.org/wiki/Q244444) | 2009 United Nations Climate Change Conference | Conferência das Nações Unidas sobre as Mudanças Climáticas de 2009 | 2009-01-01 | United Nations Climate Change Conference | 37 | — |
-| [ ] | [`Q2086525`](https://www.wikidata.org/wiki/Q2086525) | Annapolis Conference | Conferência de Annapolis | 2007-11-27 | peace conference | 16 | — |
-| [ ] | [`Q1633080`](https://www.wikidata.org/wiki/Q1633080) | 2007 United Nations Climate Change Conference | Conferência das Nações Unidas sobre as Mudanças Climáticas de 2007 | 2007-01-01 | United Nations Climate Change Conference | 16 | — |
-| [ ] | [`Q912652`](https://www.wikidata.org/wiki/Q912652) | 2008 United Nations Climate Change Conference | — | 2008-12-01 | United Nations Climate Change Conference | 10 | — |
-| [ ] | [`Q4605015`](https://www.wikidata.org/wiki/Q4605015) | 2005 United Nations Climate Change Conference | Conferência das Nações Unidas sobre as Mudanças Climáticas de 2005 | 2005-11-28 | United Nations Climate Change Conference | 9 | — |
-| [ ] | [`Q4599196`](https://www.wikidata.org/wiki/Q4599196) | 2001 United Nations Climate Change Conference | Conferência das Nações Unidas sobre as Mudanças Climáticas de 2001 | 2001-10-29 | United Nations Climate Change Conference | 8 | — |
-| [ ] | [`Q4600595`](https://www.wikidata.org/wiki/Q4600595) | 2002 United Nations Climate Change Conference | Conferência das Nações Unidas sobre as Mudanças Climáticas de 2002 | 2002-10-23 | United Nations Climate Change Conference | 8 | — |
-| [ ] | [`Q4601948`](https://www.wikidata.org/wiki/Q4601948) | 2003 United Nations Climate Change Conference | Conferência das Nações Unidas sobre as Mudanças Climáticas de 2003 | 2003-12-01 | United Nations Climate Change Conference | 8 | — |
-| [ ] | [`Q4603420`](https://www.wikidata.org/wiki/Q4603420) | 2004 United Nations Climate Change Conference | Conferência das Nações Unidas sobre as Mudanças Climáticas de 2004 | 2004-12-06 | United Nations Climate Change Conference | 8 | — |
-| [ ] | [`Q4607091`](https://www.wikidata.org/wiki/Q4607091) | 2006 United Nations Climate Change Conference | Conferência das Nações Unidas sobre as Mudanças Climáticas de 2006 | 2006-11-06 | United Nations Climate Change Conference | 7 | — |
+| [ ] | [`Q861510`](https://www.wikidata.org/wiki/Q861510) | 2008 Kosovo declaration of independence | Independência do Kosovo | 2008-02-17 | historical document | 43 | — |
+| [ ] | [`Q97168325`](https://www.wikidata.org/wiki/Q97168325) | East Timor independence | — | 2002-05-20 | declaration of independence | 7 | — |
 
-## world 2020s — 116 candidate(s), 10 already in the atlas
+## world 2010s — 121 candidate(s), 6 already in the atlas
+
+### world-wars-2010s — 26
+
+| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
+| :--: | --- | --- | --- | --- | --- | --: | :--: |
+| [ ] | [`Q15860072`](https://www.wikidata.org/wiki/Q15860072) | Russo-Ukrainian war | Guerra Russo-Ucraniana | 2014-02-20 | war | 120 | yes |
+| [ ] | [`Q178810`](https://www.wikidata.org/wiki/Q178810) | Syrian Civil War | Guerra Civil Síria | 2011-03-15 | civil war | 116 | yes |
+| [ ] | [`Q33761`](https://www.wikidata.org/wiki/Q33761) | Arab Spring | Primavera Árabe | 2010-12-17 | civil war | 112 | — |
+| [ ] | [`Q81545`](https://www.wikidata.org/wiki/Q81545) | Libyan Civil War | Guerra Civil Líbia | 2011-02-15 | civil war | 89 | yes |
+| [ ] | [`Q19686631`](https://www.wikidata.org/wiki/Q19686631) | Yemeni Civil War | Guerra Civil Iemenita | 2014-09-16 | civil war | 57 | — |
+| [ ] | [`Q2946372`](https://www.wikidata.org/wiki/Q2946372) | Mali War | Guerra Civil do Mali | 2012-01-16 | civil war | 47 | — |
+| [ ] | [`Q16911838`](https://www.wikidata.org/wiki/Q16911838) | Libyan Civil War | Guerra Civil Líbia (2014-presente) | 2014-05-16 | civil war | 39 | — |
+| [ ] | [`Q15353665`](https://www.wikidata.org/wiki/Q15353665) | South Sudanese Civil War | crise política de 2013 no Sudão do Sul | 2013-12-15 | civil war | 34 | — |
+| [ ] | [`Q17984356`](https://www.wikidata.org/wiki/Q17984356) | Iraqi Civil War of 2014–2017 | Guerra Civil Iraquiana | 2014-01-01 | civil war | 32 | — |
+| [ ] | [`Q17512479`](https://www.wikidata.org/wiki/Q17512479) | Arab Winter | Inverno Árabe | 2012-01-01 | war | 29 | — |
+| [ ] | [`Q3411181`](https://www.wikidata.org/wiki/Q3411181) | Central African Republic Civil War | Conflito na República Centro-Africana (2012–presente) | 2012-12-10 | civil war | 28 | — |
+| [ ] | [`Q14746872`](https://www.wikidata.org/wiki/Q14746872) | Syrian revolution | Revolução síria | 2011-03-15 | revolution | 19 | — |
+| [ ] | [`Q42161041`](https://www.wikidata.org/wiki/Q42161041) | 2017 Iraqi–Kurdish conflict | Conflito curdo-iraquiano | 2017-10-15 | war | 17 | — |
+| [ ] | [`Q909819`](https://www.wikidata.org/wiki/Q909819) | 2010–2011 Ivorian crisis | crise na Costa do Marfim de 2010–2011 | 2010-11-28 | civil war | 16 | — |
+| [ ] | [`Q18702324`](https://www.wikidata.org/wiki/Q18702324) | Libyan crisis | Crise Líbia | 2011-02-15 | civil war | 16 | — |
+| [ ] | [`Q1087909`](https://www.wikidata.org/wiki/Q1087909) | Second Ivorian Civil War | Segunda Guerra Civil da Costa do Marfim | 2010-11-28 | civil war | 15 | — |
+| [ ] | [`Q89035147`](https://www.wikidata.org/wiki/Q89035147) | Jihadist insurgency in Burkina Faso | Insurreição jihadista no Burkina Faso | 2015-08-23 | war | 14 | — |
+| [ ] | [`Q139236054`](https://www.wikidata.org/wiki/Q139236054) | Ngogo chimpanzee war | guerra dos chimpanzés de Ngogo | 2015-01-01 | civil war | 12 | — |
+| [ ] | [`Q54448834`](https://www.wikidata.org/wiki/Q54448834) | 2018 Armenian–Azerbaijani clashes | Confrontos entre Armênia e Azerbaijão em 2018 | 2018-05-20 | war | 11 | — |
+| [ ] | [`Q86831539`](https://www.wikidata.org/wiki/Q86831539) | War in the Sahel | Guerra do Sahel | 2011-02-15 | series of wars | 11 | — |
+| [ ] | [`Q18920712`](https://www.wikidata.org/wiki/Q18920712) | War in Afghanistan (2015–2021) | guerra do Afeganistão (2015–2021) | 2015-01-01 | war | 10 | — |
+| [ ] | [`Q21730772`](https://www.wikidata.org/wiki/Q21730772) | 2015 Zaria Massacre | Massacre de Zaria em 2015 | 2015-12-12 | war | 10 | — |
+| [ ] | [`Q106575438`](https://www.wikidata.org/wiki/Q106575438) | Insurgency in Northern Chad | Insurgência no norte do Chade | 2016-01-01 | war | 10 | — |
+| [ ] | [`Q30324743`](https://www.wikidata.org/wiki/Q30324743) | Pool War | Guerra de Pool | 2010-01-01 | war | 6 | — |
+| [ ] | [`Q15287550`](https://www.wikidata.org/wiki/Q15287550) | Central African Republic conflict under the Djotodia administration | — | 2013-04-13 | civil war | 6 | — |
+| [ ] | [`Q29454795`](https://www.wikidata.org/wiki/Q29454795) | early insurgency phase of the Syrian Civil War | — | 2011-07-29 | war phase | 6 | — |
+
+### world-treaties-2010s — 40
+
+| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
+| :--: | --- | --- | --- | --- | --- | --: | :--: |
+| [ ] | [`Q21707860`](https://www.wikidata.org/wiki/Q21707860) | Paris Agreement | Acordo de Paris | 2015-12-12 | treaty | 89 | yes |
+| [ ] | [`Q1697391`](https://www.wikidata.org/wiki/Q1697391) | Convention on preventing and combating violence against women and domestic violence | Convenção do Conselho da Europa para a Prevenção e o Combate à Violência Contra as Mulheres e a Violência Doméstica | 2011-05-11 | Council of Europe treaty | 54 | — |
+| [ ] | [`Q28130514`](https://www.wikidata.org/wiki/Q28130514) | Treaty on the Prohibition of Nuclear Weapons | Tratado sobre a Proibição das Armas Nucleares | 2017-09-20 | treaty | 47 | — |
+| [ ] | [`Q1366688`](https://www.wikidata.org/wiki/Q1366688) | Trans-Pacific Partnership | Parceria Transpacífica | 2016-02-04 | trade agreement | 39 | — |
+| [ ] | [`Q688993`](https://www.wikidata.org/wiki/Q688993) | Arms Trade Treaty | Tratado de Comércio de Armas Convencionais | 2013-04-02 | United Nations treaty | 37 | — |
+| [ ] | [`Q55153903`](https://www.wikidata.org/wiki/Q55153903) | Prespa agreement | Acordo de Prespa | 2018-06-17 | treaty | 33 | — |
+| [ ] | [`Q56761730`](https://www.wikidata.org/wiki/Q56761730) | Escazu Agreement | Acordo de Escazú | 2018-03-04 | treaty | 31 | — |
+| [ ] | [`Q2002064`](https://www.wikidata.org/wiki/Q2002064) | New START | New START | 2010-04-08 | treaty | 29 | — |
+| [ ] | [`Q1121969`](https://www.wikidata.org/wiki/Q1121969) | Comprehensive Economic and Trade Agreement | Acordo Integral de Economia e Comércio | 2016-10-30 | trade agreement | 29 | — |
+| [ ] | [`Q18001626`](https://www.wikidata.org/wiki/Q18001626) | Minsk Protocol | Protocolo de Minsk | 2014-09-05 | peace treaty | 29 | — |
+| [ ] | [`Q1963613`](https://www.wikidata.org/wiki/Q1963613) | Nagoya Protocol | Protocolo de Nagoia | 2014-11-12 | international environmental agreement | 29 | — |
+| [ ] | [`Q56839716`](https://www.wikidata.org/wiki/Q56839716) | United States–Mexico–Canada Agreement | Acordo Estados Unidos-México-Canadá | 2018-11-30 | trade agreement | 28 | — |
+| [ ] | [`Q6862837`](https://www.wikidata.org/wiki/Q6862837) | Minamata Convention on Mercury | — | 2013-10-10 | treaty | 26 | — |
+| [ ] | [`Q19249259`](https://www.wikidata.org/wiki/Q19249259) | Minsk II | Minsk II | 2015-02-12 | treaty | 26 | — |
+| [ ] | [`Q1377817`](https://www.wikidata.org/wiki/Q1377817) | European Fiscal Compact | Tratado sobre a Estabilidade, Coordenação e Governação na UEM | 2012-03-02 | treaty | 24 | — |
+| [ ] | [`Q60727566`](https://www.wikidata.org/wiki/Q60727566) | Treaty of Aachen | — | 2019-01-22 | treaty | 23 | — |
+| [ ] | [`Q55612707`](https://www.wikidata.org/wiki/Q55612707) | Global Compact on Migration | Pacto Global pela Migração | 2018-01-01 | treaty | 21 | — |
+| [ ] | [`Q15991255`](https://www.wikidata.org/wiki/Q15991255) | Marrakesh Treaty to Facilitate Access to Published Works for Persons Who Are Blind, Visually Impaired or Otherwise Print Disabled | Tratado de Marraquexe | 2013-06-27 | United Nations treaty | 21 | — |
+| [ ] | [`Q2077856`](https://www.wikidata.org/wiki/Q2077856) | Kharkiv Pact | Pacto de Kharkiv de 2010 | 2010-04-21 | treaty | 20 | — |
+| [ ] | [`Q48852287`](https://www.wikidata.org/wiki/Q48852287) | Comprehensive and Progressive Agreement for Trans-Pacific Partnership | Acordo Abrangente e Progressivo para a Parceria Transpacífica | 2018-01-01 | free trade agreement | 20 | — |
+| [ ] | [`Q50822331`](https://www.wikidata.org/wiki/Q50822331) | African Continental Free Trade Agreement | Acordo de Livre Comércio Continental Africano | 2018-03-21 | trade agreement | 18 | — |
+| [ ] | [`Q12163419`](https://www.wikidata.org/wiki/Q12163419) | Ukraine–European Union Association Agreement | — | 2014-03-21 | European Union Association Agreement | 18 | — |
+| [ ] | [`Q2526639`](https://www.wikidata.org/wiki/Q2526639) | Treaty of Accession 2011 | — | 2011-12-09 | Treaty of Accession to the EU | 16 | — |
+| [ ] | [`Q14605366`](https://www.wikidata.org/wiki/Q14605366) | Brussels Agreement | Acordo de Bruxelas (2013) | 2013-04-19 | multilateral treaty | 15 | — |
+| [ ] | [`Q706392`](https://www.wikidata.org/wiki/Q706392) | Economic Cooperation Framework Agreement | — | 2010-06-29 | treaty | 13 | — |
+| [ ] | [`Q56062455`](https://www.wikidata.org/wiki/Q56062455) | Convention on the legal status of the Caspian Sea | Convenção sobre o Estatuto do Mar Cáspio | 2018-08-12 | pentalateral treaty | 13 | — |
+| [ ] | [`Q15284773`](https://www.wikidata.org/wiki/Q15284773) | Bali Package | Pacote de Bali | 2013-12-07 | trade agreement | 12 | — |
+| [ ] | [`Q15240451`](https://www.wikidata.org/wiki/Q15240451) | Cross-Strait Service Trade Agreement | — | 2013-06-21 | treaty | 10 | — |
+| [ ] | [`Q7663260`](https://www.wikidata.org/wiki/Q7663260) | Syrian peace process | — | 2017-01-01 | treaty | 9 | — |
+| [ ] | [`Q15963166`](https://www.wikidata.org/wiki/Q15963166) | Treaty on the Adoption of the Republic of Crimea to Russia | Tratado de Adesão da República da Crimeia à Federação Russa | 2014-03-18 | treaty | 9 | — |
+| [ ] | [`Q22906629`](https://www.wikidata.org/wiki/Q22906629) | Bangkok Rules | Regras das Nações Unidas para o tratamento de mulheres presas e medidas não privativas de liberdade para mulheres infratoras | 2010-12-21 | treaty | 9 | — |
+| [ ] | [`Q4881201`](https://www.wikidata.org/wiki/Q4881201) | Beijing Treaty on Audiovisual Performances | — | 2012-06-26 | treaty | 8 | — |
+| [ ] | [`Q63078193`](https://www.wikidata.org/wiki/Q63078193) | Regional Roaming Agreement | — | 2019-04-04 | treaty | 8 | — |
+| [ ] | [`Q5176397`](https://www.wikidata.org/wiki/Q5176397) | Council of Europe Convention on the Counterfeiting of Medical Products | — | 2011-10-28 | Council of Europe treaty | 8 | — |
+| [ ] | [`Q5166292`](https://www.wikidata.org/wiki/Q5166292) | Convention on Domestic Workers | — | 2011-06-16 | International Labour Organization Convention | 8 | — |
+| [ ] | [`Q106411467`](https://www.wikidata.org/wiki/Q106411467) | Violence and Harassment Convention | — | 2019-06-21 | International Labour Organization Convention | 7 | — |
+| [ ] | [`Q5858325`](https://www.wikidata.org/wiki/Q5858325) | Colombian peace process | Acordo de paz entre a Colômbia e as FARC | 2012-09-17 | treaty | 6 | — |
+| [ ] | [`Q22348131`](https://www.wikidata.org/wiki/Q22348131) | Japan–South Korea Comfort Women Agreement | — | 2015-12-28 | treaty | 6 | — |
+| [ ] | [`Q30970873`](https://www.wikidata.org/wiki/Q30970873) | Canada-Ukraine Free Trade Agreement | — | 2016-07-11 | treaty | 6 | — |
+| [ ] | [`Q5477971`](https://www.wikidata.org/wiki/Q5477971) | Framework Agreement on the Bangsamoro | — | 2012-10-15 | peace treaty | 6 | — |
+
+### world-revolutions-2010s — 4
+
+| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
+| :--: | --- | --- | --- | --- | --- | --: | :--: |
+| [ ] | [`Q15733401`](https://www.wikidata.org/wiki/Q15733401) | Revolution of Dignity | Revolução Ucraniana de 2014 | 2010-01-01 | revolution | 47 | — |
+| [ ] | [`Q236023`](https://www.wikidata.org/wiki/Q236023) | Kyrgyz Revolution of 2010 | Revoltas no Quirguistão em 2010 | 2010-01-01 | revolution | 37 | — |
+| [ ] | [`Q2384201`](https://www.wikidata.org/wiki/Q2384201) | Rojava Revolution | Conflito no Curdistão sírio | 2012-07-19 | social revolution | 25 | — |
+| [ ] | [`Q16976566`](https://www.wikidata.org/wiki/Q16976566) | Abkhazian Revolution | Revolução Abecásia | 2014-04-29 | revolution | 12 | — |
+
+### world-pandemics-2010s — 11
+
+| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
+| :--: | --- | --- | --- | --- | --- | --: | :--: |
+| [ ] | [`Q15989108`](https://www.wikidata.org/wiki/Q15989108) | Western African Ebola virus epidemic | Surto de Ebola na África Ocidental | 2013-12-01 | epidemic | 60 | — |
+| [ ] | [`Q21686043`](https://www.wikidata.org/wiki/Q21686043) | 2015–16 Zika virus epidemic | Epidemia de febre zica em 2015–2016 | 2015-04-01 | epidemic | 28 | — |
+| [ ] | [`Q55887234`](https://www.wikidata.org/wiki/Q55887234) | 2018–2020 Kivu Ebola epidemic | Surto de ébola em Quivu de 2018–2020 | 2018-08-01 | epidemic | 21 | — |
+| [ ] | [`Q327056`](https://www.wikidata.org/wiki/Q327056) | 2011 Germany E. coli O104:H4 outbreak | Surto de E. coli O104:H4 de 2011 | 2011-05-01 | epidemic | 20 | — |
+| [ ] | [`Q1075913`](https://www.wikidata.org/wiki/Q1075913) | 2010–2012 Haiti cholera outbreak | Surto de cólera no Haiti de 2010 | 2010-10-01 | cholera outbreak | 20 | — |
+| [ ] | [`Q30682954`](https://www.wikidata.org/wiki/Q30682954) | 2016-2020 Yemen cholera outbreak | Surto de cólera no Iêmen em 2016–2018 | 2016-01-01 | cholera outbreak | 15 | — |
+| [ ] | [`Q17999999`](https://www.wikidata.org/wiki/Q17999999) | 2014 Democratic Republic of the Congo Ebola virus outbreak | Surto de vírus Ébola na República Democrática do Congo em 2014 | 2014-08-01 | epidemic | 13 | — |
+| [ ] | [`Q36302993`](https://www.wikidata.org/wiki/Q36302993) | Gorakhpur hospital deaths | — | 2017-08-07 | epidemic | 12 | — |
+| [ ] | [`Q20024455`](https://www.wikidata.org/wiki/Q20024455) | 2015 South Korea respiratory syndrome coronavirus outbreak | — | 2015-01-01 | epidemic | 10 | — |
+| [ ] | [`Q48296418`](https://www.wikidata.org/wiki/Q48296418) | 2017–2018 flu season | — | 2017-01-01 | Northern Hemisphere flu season | 8 | — |
+| [ ] | [`Q25052814`](https://www.wikidata.org/wiki/Q25052814) | Sleep hollow | — | 2013-03-01 | epidemic | 7 | — |
+
+### world-coups-2010s — 35
+
+| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
+| :--: | --- | --- | --- | --- | --- | --: | :--: |
+| [ ] | [`Q25906338`](https://www.wikidata.org/wiki/Q25906338) | 2016 Turkish coup d'état attempt | Tentativa de golpe de Estado na Turquia em 2016 | 2016-07-15 | attempted coup d'état | 77 | yes |
+| [ ] | [`Q15224558`](https://www.wikidata.org/wiki/Q15224558) | Euromaidan | Euromaidan | 2010-01-01 | coup d'état | 76 | yes |
+| [ ] | [`Q210005`](https://www.wikidata.org/wiki/Q210005) | 2011 Yemeni revolution | Revolução Iemenita | 2011-01-27 | rebellion | 39 | — |
+| [ ] | [`Q13605743`](https://www.wikidata.org/wiki/Q13605743) | 2013 Egyptian coup d'état | Golpe de Estado no Egito em 2013 | 2013-07-03 | coup d'état | 38 | — |
+| [ ] | [`Q242864`](https://www.wikidata.org/wiki/Q242864) | 2011 Bahraini uprising | Revolta no Barém de 2011 | 2011-02-14 | civil disobedience | 36 | — |
+| [ ] | [`Q15871713`](https://www.wikidata.org/wiki/Q15871713) | 2014 pro-Russian unrest in Ukraine | Protestos pró-russos na Ucrânia em 2014 | 2014-02-23 | riot | 36 | — |
+| [ ] | [`Q43172549`](https://www.wikidata.org/wiki/Q43172549) | 2017 Zimbabwean coup d'état attempt | Golpe de Estado no Zimbabwe em 2017 | 2017-11-14 | attempted coup d'état | 33 | — |
+| [ ] | [`Q16914766`](https://www.wikidata.org/wiki/Q16914766) | 2014 Thai coup d'état | Golpe de Estado na Tailândia em 2014 | 2014-05-22 | coup d'état | 30 | — |
+| [ ] | [`Q63096026`](https://www.wikidata.org/wiki/Q63096026) | 2019 Sudanese coup d'état | Golpe de Estado no Sudão em 2019 | 2019-04-11 | coup d'état | 23 | — |
+| [ ] | [`Q875912`](https://www.wikidata.org/wiki/Q875912) | 2012 Malian coup d'état | Golpe de Estado no Mali em 2012 | 2012-03-21 | coup d'état | 22 | — |
+| [ ] | [`Q2165215`](https://www.wikidata.org/wiki/Q2165215) | Iraqi insurgency | Guerra Civil Iraquiana (2011–presente) | 2011-01-01 | insurgency | 22 | — |
+| [ ] | [`Q7521684`](https://www.wikidata.org/wiki/Q7521684) | Sinai insurgency | Insurgência no Sinai | 2011-02-05 | insurgency | 20 | — |
+| [ ] | [`Q18380506`](https://www.wikidata.org/wiki/Q18380506) | 2014 Burkinabé uprising | Revolta em Burquina Fasso em 2014 | 2014-01-01 | rebellion | 19 | — |
+| [ ] | [`Q924625`](https://www.wikidata.org/wiki/Q924625) | 2010 Nigerien coup d'état | Golpe de Estado no Níger em 2010 | 2010-02-18 | coup d'état | 18 | — |
+| [ ] | [`Q1525846`](https://www.wikidata.org/wiki/Q1525846) | 2012 Tuareg rebellion | Rebelião tuaregue | 2012-01-01 | coup d'état | 17 | — |
+| [ ] | [`Q20977821`](https://www.wikidata.org/wiki/Q20977821) | 2015 Burkinabé coup d'état attempt | Golpe de Estado em Burkina Faso em 2015 | 2015-09-16 | attempted coup d'état | 16 | — |
+| [ ] | [`Q60474140`](https://www.wikidata.org/wiki/Q60474140) | 2019 Gabonese coup d'etat attempt | Tentativa de golpe no Gabão em 2019 | 2019-01-01 | attempted coup d'état | 16 | — |
+| [ ] | [`Q18145759`](https://www.wikidata.org/wiki/Q18145759) | Houthi takeover in Yemen | Golpe de Estado no Iêmen em 2014-2015 | 2014-09-21 | coup d'état | 15 | — |
+| [ ] | [`Q621827`](https://www.wikidata.org/wiki/Q621827) | 2012 Guinea-Bissau coup d'état | Golpe de Estado na Guiné-Bissau em 2012 | 2012-04-12 | coup d'état | 13 | — |
+| [ ] | [`Q82962`](https://www.wikidata.org/wiki/Q82962) | M23 Rebellion | Rebelião no leste da República Democrática do Congo em 2012-2013 | 2012-04-04 | rebellion | 13 | — |
+| [ ] | [`Q64787084`](https://www.wikidata.org/wiki/Q64787084) | 2019 Amhara Region coup d'état attempt | Tentativa de golpe de Estado da região de Amara de 2019 | 2019-06-22 | attempted coup d'état | 12 | — |
+| [ ] | [`Q57890365`](https://www.wikidata.org/wiki/Q57890365) | Islamic State insurgency in Iraq | Insurgência jihadista no Iraque (2017–presente) | 2017-12-09 | insurgency | 11 | — |
+| [ ] | [`Q19905149`](https://www.wikidata.org/wiki/Q19905149) | 2015 Burundian coup d'état attempt | Tentativa de golpe de Estado no Burundi em 2015 | 2015-05-13 | attempted coup d'état | 10 | — |
+| [ ] | [`Q63395926`](https://www.wikidata.org/wiki/Q63395926) | 2019 Venezuelan uprising attempt | Levantamento militar de 30 de abril na Venezuela | 2019-04-30 | rebellion | 9 | — |
+| [ ] | [`Q154788`](https://www.wikidata.org/wiki/Q154788) | Wukan protests | — | 2011-01-01 | rebellion | 8 | — |
+| [ ] | [`Q4617394`](https://www.wikidata.org/wiki/Q4617394) | 2010 Guinea-Bissau military unrest | Revolta militar em Guiné-Bissau de 2010 | 2010-01-01 | rebellion | 8 | — |
+| [ ] | [`Q28234538`](https://www.wikidata.org/wiki/Q28234538) | 2017 Ivory Coast mutiny | Motim na Costa do Marfim em 2017 | 2017-01-08 | mutiny | 8 | — |
+| [ ] | [`Q17684684`](https://www.wikidata.org/wiki/Q17684684) | 2014 Lesotho political crisis | — | 2014-08-30 | attempted coup d'état | 7 | — |
+| [ ] | [`Q22935835`](https://www.wikidata.org/wiki/Q22935835) | Timeline of terrorism in Egypt (2013–present) | Linha do tempo do terrorismo no Egito (2013-presente) | 2013-07-03 | insurgency | 7 | — |
+| [ ] | [`Q4442941`](https://www.wikidata.org/wiki/Q4442941) | 2012 Bani Walid uprising | Insurreição em Bani Walid em 2012 | 2012-01-01 | rebellion | 6 | — |
+| [ ] | [`Q2998927`](https://www.wikidata.org/wiki/Q2998927) | 2011 Democratic Republic of the Congo coup d'état attempt | Tentativa de golpe de Estado na República Democrática do Congo em 2011 | 2011-02-27 | attempted coup d'état | 6 | — |
+| [ ] | [`Q15070113`](https://www.wikidata.org/wiki/Q15070113) | 2013 Libyan coup d'état attempt | Tentativa de golpe de Estado na Líbia em 2013 | 2013-10-10 | attempted coup d'état | 6 | — |
+| [ ] | [`Q16147351`](https://www.wikidata.org/wiki/Q16147351) | 2014 Libyan coup d'état attempts | Tentativas de golpes de Estado na Líbia em 2014 | 2014-02-14 | attempted coup d'état | 6 | — |
+| [ ] | [`Q20312530`](https://www.wikidata.org/wiki/Q20312530) | 2014 Gambian coup d'état attempt | Tentativa de golpe de Estado na Gâmbia em 2014 | 2014-12-30 | attempted coup d'état | 6 | — |
+| [ ] | [`Q40890413`](https://www.wikidata.org/wiki/Q40890413) | 2016 Burkinabé coup d'état attempt | — | 2016-10-08 | attempted coup d'état | 6 | — |
+
+### world-assassinations-2010s — 2
+
+| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
+| :--: | --- | --- | --- | --- | --- | --: | :--: |
+| [ ] | [`Q57527214`](https://www.wikidata.org/wiki/Q57527214) | assassination of Jamal Khashoggi | Assassinato de Jamal Khashoggi | 2018-10-02 | political murder | 15 | — |
+| [ ] | [`Q24661988`](https://www.wikidata.org/wiki/Q24661988) | murder of Jo Cox | morte de Jo Cox | 2016-06-16 | political murder | 10 | — |
+
+### world-independence-declarations-2010s — 3
+
+| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
+| :--: | --- | --- | --- | --- | --- | --: | :--: |
+| [ ] | [`Q41796018`](https://www.wikidata.org/wiki/Q41796018) | Catalan declaration of independence | Declaração de independência da Catalunha | 2017-10-27 | resolution | 31 | — |
+| [ ] | [`Q15925292`](https://www.wikidata.org/wiki/Q15925292) | declaration of Independence of the Republic of Crimea | Declaração de Independência da República da Crimeia | 2014-03-11 | declaration of independence | 18 | — |
+| [ ] | [`Q1055742`](https://www.wikidata.org/wiki/Q1055742) | Azawadi declaration of independence | Declaração de independência de Azauade | 2012-04-06 | declaration of independence | 12 | — |
+
+## world 2020s — 117 candidate(s), 10 already in the atlas
 
 ### world-wars-2020s — 9
 
@@ -2170,7 +2410,7 @@ to that file and another run, never an edit here.
 | [ ] | [`Q134900605`](https://www.wikidata.org/wiki/Q134900605) | Twelve-Day War | guerra dos doze dias | 2025-06-01 | war | 76 | yes |
 | [ ] | [`Q99659280`](https://www.wikidata.org/wiki/Q99659280) | Second Nagorno-Karabakh War | Guerra de Nagorno-Karabakh de 2020 | 2020-01-01 | war | 73 | yes |
 | [ ] | [`Q117716414`](https://www.wikidata.org/wiki/Q117716414) | Sudanese civil war | Conflito no Sudão em 2023 | 2023-01-01 | civil war | 68 | yes |
-| [ ] | [`Q134884640`](https://www.wikidata.org/wiki/Q134884640) | Operation Rising Lion | Operação Leão em Ascensão | 2025-06-01 | sabotage | 48 | — |
+| [ ] | [`Q134884640`](https://www.wikidata.org/wiki/Q134884640) | Operation Rising Lion | Operação Leão em Ascensão | 2025-06-01 | airstrike | 48 | — |
 | [ ] | [`Q110613097`](https://www.wikidata.org/wiki/Q110613097) | Myanmar Civil War | Guerra Civil de Mianmar | 2021-05-05 | civil war | 39 | — |
 | [ ] | [`Q130388076`](https://www.wikidata.org/wiki/Q130388076) | 2024 Lebanon War | Invasão do Líbano por Israel em 2024 | 2020-01-01 | war | 27 | — |
 | [ ] | [`Q129730552`](https://www.wikidata.org/wiki/Q129730552) | August 2024 Lebanon strikes | — | 2024-08-25 | airstrike | 8 | — |
@@ -2209,7 +2449,7 @@ to that file and another run, never an edit here.
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q87070975`](https://www.wikidata.org/wiki/Q87070975) | COVID-19 pandemic in Israel | Pandemia de COVID-19 em Israel | 2020-01-01 | public health emergency | 31 | — |
+| [ ] | [`Q87070975`](https://www.wikidata.org/wiki/Q87070975) | COVID-19 pandemic in Israel | Pandemia de COVID-19 em Israel | 2020-01-01 | epidemic | 31 | — |
 | [ ] | [`Q129099995`](https://www.wikidata.org/wiki/Q129099995) | 2023-2024 mpox epidemic | surto de varíola dos macacos de 2024 | 2023-09-01 | epidemic | 29 | — |
 | [ ] | [`Q131645357`](https://www.wikidata.org/wiki/Q131645357) | HMPV outbreak in Northeast Asia | Surto de metapneumovírus humano | 2024-12-01 | epidemic | 16 | — |
 | [ ] | [`Q89277064`](https://www.wikidata.org/wiki/Q89277064) | 2020 COVID-19 pandemic in Nauru | — | 2022-04-02 | epidemic | 11 | — |
@@ -2218,13 +2458,13 @@ to that file and another run, never an edit here.
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q104705419`](https://www.wikidata.org/wiki/Q104705419) | January 6 United States Capitol attack | Invasão do Capitólio dos Estados Unidos em 2021 | 2021-01-06 | insurgency | 75 | yes |
+| [ ] | [`Q104705419`](https://www.wikidata.org/wiki/Q104705419) | January 6 United States Capitol attack | Invasão do Capitólio dos Estados Unidos em 2021 | 2021-01-06 | rebellion | 75 | yes |
 | [ ] | [`Q119860532`](https://www.wikidata.org/wiki/Q119860532) | Wagner Group rebellion | rebelião do Grupo Wagner | 2023-06-01 | rebellion | 68 | yes |
-| [ ] | [`Q137612545`](https://www.wikidata.org/wiki/Q137612545) | 2025–2026 Iranian protests | protestos no Irã em 2025–2026 | 2020-01-01 | rebellion | 65 | yes |
+| [ ] | [`Q137612545`](https://www.wikidata.org/wiki/Q137612545) | 2025–2026 Iranian protests | protestos no Irã em 2025–2026 | 2020-01-01 | demonstration | 65 | yes |
 | [ ] | [`Q105180889`](https://www.wikidata.org/wiki/Q105180889) | 2021 Myanmar coup d'état | Golpe de Estado no Mianmar em 2021 | 2021-02-01 | coup d'état | 61 | — |
 | [ ] | [`Q114065797`](https://www.wikidata.org/wiki/Q114065797) | Mahsa Amini protests | Protestos contra a morte de Mahsa Amini | 2022-01-01 | rebellion | 53 | — |
 | [ ] | [`Q117100709`](https://www.wikidata.org/wiki/Q117100709) | 2023 Nigerien coup d'état | Golpe de Estado no Níger em 2023 | 2023-07-26 | coup d'état | 46 | — |
-| [ ] | [`Q116142348`](https://www.wikidata.org/wiki/Q116142348) | 2023 Brazilian Congress attack | Ataques de 8 de janeiro em Brasília | 2023-01-01 | storming | 39 | — |
+| [ ] | [`Q116142348`](https://www.wikidata.org/wiki/Q116142348) | 2023 Brazilian Congress attack | Ataques de 8 de janeiro em Brasília | 2023-01-01 | demonstration | 39 | — |
 | [ ] | [`Q122053772`](https://www.wikidata.org/wiki/Q122053772) | 2023 Gabon coup d'état | Golpe de Estado no Gabão de 2023 | 2023-01-01 | military coup | 36 | — |
 | [ ] | [`Q109229068`](https://www.wikidata.org/wiki/Q109229068) | 2021 Sudanese coup d'état | Golpe de Estado no Sudão em 2021 | 2021-10-25 | coup d'état | 30 | — |
 | [ ] | [`Q98457371`](https://www.wikidata.org/wiki/Q98457371) | 2020 Malian coup d'état | Golpe de Estado no Mali em 2020 | 2020-08-18 | coup d'état | 28 | — |
@@ -2236,7 +2476,7 @@ to that file and another run, never an edit here.
 | [ ] | [`Q136430456`](https://www.wikidata.org/wiki/Q136430456) | Gen Z protests | Protestos da Geração Z | 2020-01-01 | rebellion | 21 | — |
 | [ ] | [`Q114341504`](https://www.wikidata.org/wiki/Q114341504) | September 2022 Burkina Faso coup d'état | Golpe de Estado em Burquina Fasso de setembro de 2022 | 2022-09-30 | coup d'état | 20 | — |
 | [ ] | [`Q137036104`](https://www.wikidata.org/wiki/Q137036104) | 2025 Guinea-Bissau coup d'état | golpe de Estado na Guiné-Bissau em 2025 | 2025-11-26 | coup d'état | 19 | — |
-| [ ] | [`Q115626981`](https://www.wikidata.org/wiki/Q115626981) | 2022 Peruvian self-coup attempt | Tentativa de autogolpe no Peru em 2022 | 2022-12-07 | self-coup | 19 | — |
+| [ ] | [`Q115626981`](https://www.wikidata.org/wiki/Q115626981) | 2022 Peruvian self-coup attempt | Tentativa de autogolpe no Peru em 2022 | 2022-12-07 | constitutional crisis | 19 | — |
 | [ ] | [`Q106975429`](https://www.wikidata.org/wiki/Q106975429) | 2021 Malian coup d'état | Golpe de Estado no Mali em 2021 | 2021-05-24 | coup d'état | 16 | — |
 | [ ] | [`Q136487699`](https://www.wikidata.org/wiki/Q136487699) | 2025 Malagasy coup d'état | Golpe de Estado em Madagáscar em 2025 | 2025-10-12 | coup d'état | 15 | — |
 | [ ] | [`Q110778876`](https://www.wikidata.org/wiki/Q110778876) | 2022 Guinea-Bissau coup d'état attempt | — | 2022-02-01 | attempted coup d'état | 13 | — |
@@ -2248,12 +2488,12 @@ to that file and another run, never an edit here.
 | [ ] | [`Q125988461`](https://www.wikidata.org/wiki/Q125988461) | 2024 Democratic Republic of the Congo coup attempt | Tentativa de golpe de Estado na República Democrática do Congo em 2024 | 2024-05-19 | attempted coup d'état | 12 | — |
 | [ ] | [`Q108622320`](https://www.wikidata.org/wiki/Q108622320) | September 2021 Sudanese coup d'état attempt | Tentativa de golpe de Estado no Sudão em setembro de 2021 | 2021-09-21 | attempted coup d'état | 11 | — |
 | [ ] | [`Q131575509`](https://www.wikidata.org/wiki/Q131575509) | Western Syria clashes (December 2024–present) | — | 2024-12-11 | insurgency | 9 | — |
-| [ ] | [`Q115438612`](https://www.wikidata.org/wiki/Q115438612) | 2022 São Tomé and Príncipe coup d'état attempt | Tentativa de golpe de Estado em São Tomé e Príncipe em 2022 | 2022-11-25 | storming | 9 | — |
+| [ ] | [`Q115438612`](https://www.wikidata.org/wiki/Q115438612) | 2022 São Tomé and Príncipe coup d'état attempt | Tentativa de golpe de Estado em São Tomé e Príncipe em 2022 | 2022-11-25 | attempted coup d'état | 9 | — |
 | [ ] | [`Q105453271`](https://www.wikidata.org/wiki/Q105453271) | insurgency in Southeastern Nigeria | Insurgência no leste da Nigéria | 2021-01-22 | insurgency | 7 | — |
 | [ ] | [`Q106906095`](https://www.wikidata.org/wiki/Q106906095) | 2021 Salvadoran political crisis | Crise política em El Salvador em 2021 | 2021-05-01 | political crisis | 7 | — |
 | [ ] | [`Q106357052`](https://www.wikidata.org/wiki/Q106357052) | 2021 alleged Jordanian coup d'état attempt | Tentativa de golpe de estado na Jordânia em 2021 | 2021-04-03 | attempted coup d'état | 7 | — |
-| [ ] | [`Q136243381`](https://www.wikidata.org/wiki/Q136243381) | Druze insurgency in Southern Syria | — | 2025-02-28 | insurgency | 6 | — |
 | [ ] | [`Q113115005`](https://www.wikidata.org/wiki/Q113115005) | Balkhab uprising | — | 2022-06-23 | rebellion | 6 | — |
+| [ ] | [`Q136243381`](https://www.wikidata.org/wiki/Q136243381) | Druze insurgency in Southern Syria | — | 2025-02-28 | insurgency | 6 | — |
 | [ ] | [`Q121703811`](https://www.wikidata.org/wiki/Q121703811) | 2023 Sierra Leone coup plot | — | 2023-08-01 | attempted coup d'état | 6 | — |
 | [ ] | [`Q123004839`](https://www.wikidata.org/wiki/Q123004839) | 2023 Burkina Faso coup d'état attempt | Tentativa de golpe de Estado em Burquina Fasso em 2023 | 2023-09-26 | attempted coup d'état | 6 | — |
 
@@ -2261,7 +2501,7 @@ to that file and another run, never an edit here.
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q136210698`](https://www.wikidata.org/wiki/Q136210698) | assassination of Charlie Kirk | assassinato de Charlie Kirk | 2025-09-10 | assassination | 40 | — |
+| [ ] | [`Q136210698`](https://www.wikidata.org/wiki/Q136210698) | assassination of Charlie Kirk | assassinato de Charlie Kirk | 2025-09-10 | political murder | 40 | — |
 | [ ] | [`Q124556504`](https://www.wikidata.org/wiki/Q124556504) | death and funeral of Alexei Navalny | morte de Alexei Navalny | 2024-02-16 | political murder | 22 | — |
 | [ ] | [`Q108902202`](https://www.wikidata.org/wiki/Q108902202) | murder of David Amess | morte de David Amess | 2021-10-15 | political murder | 15 | — |
 | [ ] | [`Q134734156`](https://www.wikidata.org/wiki/Q134734156) | assassination of Miguel Uribe Turbay | assassinato de Miguel Uribe Turbay | 2025-06-07 | murder | 10 | — |
@@ -2279,7 +2519,7 @@ to that file and another run, never an edit here.
 | [ ] | [`Q108676409`](https://www.wikidata.org/wiki/Q108676409) | Evergrande default crisis | Crise de liquidez da Evergrande | 2021-01-01 | liquidity crisis | 11 | — |
 | [ ] | [`Q61061877`](https://www.wikidata.org/wiki/Q61061877) | Iranian economic crisis | — | 2024-01-01 | economic crisis | 9 | — |
 | [ ] | [`Q116259568`](https://www.wikidata.org/wiki/Q116259568) | United States debt-ceiling crisis of 2023 | — | 2023-01-01 | debt crisis | 8 | — |
-| [ ] | [`Q130711450`](https://www.wikidata.org/wiki/Q130711450) | German economic crisis | — | 2022-01-01 | recession | 6 | — |
+| [ ] | [`Q130711450`](https://www.wikidata.org/wiki/Q130711450) | German economic crisis | — | 2022-01-01 | economic crisis | 6 | — |
 
 ### world-financial-crises-2020s — 3
 
@@ -2293,9 +2533,9 @@ to that file and another run, never an edit here.
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q124086054`](https://www.wikidata.org/wiki/Q124086054) | Gaza genocide | Genocídio em Gaza | 2023-10-07 | genocide | 89 | yes |
+| [ ] | [`Q124086054`](https://www.wikidata.org/wiki/Q124086054) | Gaza genocide | Genocídio em Gaza | 2023-10-07 | genocide | 90 | yes |
 | [ ] | [`Q111467700`](https://www.wikidata.org/wiki/Q111467700) | Bucha massacre | Massacre de Bucha | 2022-02-27 | genocide | 71 | yes |
-| [ ] | [`Q101231200`](https://www.wikidata.org/wiki/Q101231200) | Tigray war | Guerra do Tigré | 2020-11-03 | conflict | 44 | — |
+| [ ] | [`Q101231200`](https://www.wikidata.org/wiki/Q101231200) | Tigray war | Guerra do Tigré | 2020-11-03 | ethnic cleansing | 44 | — |
 | [ ] | [`Q133309815`](https://www.wikidata.org/wiki/Q133309815) | Operation Might and Sword | Ataques israelenses na Faixa de Gaza em março de 2025 | 2025-03-18 | genocide | 21 | — |
 | [ ] | [`Q122982851`](https://www.wikidata.org/wiki/Q122982851) | Israeli blockade of the Gaza Strip (2023–present) | Bloqueio israelense à Faixa de Gaza em outubro de 2023 | 2023-01-01 | genocide | 20 | — |
 | [ ] | [`Q111648183`](https://www.wikidata.org/wiki/Q111648183) | Allegations of genocide of Ukrainians in the Russo-Ukrainian war | Alegações de genocídio de ucranianos na guerra entre a Rússia e a Ucrânia | 2022-01-01 | genocide | 18 | — |
@@ -2305,7 +2545,7 @@ to that file and another run, never an edit here.
 | [ ] | [`Q126180008`](https://www.wikidata.org/wiki/Q126180008) | May 2024 Al-Mawasi refugee camp attack | Ataque ao campo de refugiados de Al-Mawasi em Maio de 2024 | 2024-05-28 | genocide | 6 | — |
 | [ ] | [`Q123466017`](https://www.wikidata.org/wiki/Q123466017) | Masalit genocide | — | 2023-04-24 | ethnic cleansing | 6 | — |
 
-### world-international-conferences-2020s — 12
+### world-international-conferences-2020s — 13
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
@@ -2319,282 +2559,17 @@ to that file and another run, never an edit here.
 | [ ] | [`Q56760666`](https://www.wikidata.org/wiki/Q56760666) | 2022 UN Biodiversity Conference | — | 2021-10-11 | Conference of the parties of the Convention on Biological Diversity | 14 | — |
 | [ ] | [`Q115777615`](https://www.wikidata.org/wiki/Q115777615) | 2024 United Nations Biodiversity Conference | — | 2024-01-01 | Conference of the parties of the Convention on Biological Diversity | 12 | — |
 | [ ] | [`Q134889759`](https://www.wikidata.org/wiki/Q134889759) | July 2025 Conference on the Implementation of the Two-State Solution | Conferência de Paz em Gaza de Nova Iorque | 2025-07-28 | convention | 9 | — |
+| [ ] | [`Q4599196`](https://www.wikidata.org/wiki/Q4599196) | 2001 United Nations Climate Change Conference | Conferência das Nações Unidas sobre as Mudanças Climáticas de 2001 | 2021-10-29 | climate change | 8 | — |
 | [ ] | [`Q132201282`](https://www.wikidata.org/wiki/Q132201282) | Artificial Intelligence Action Summit | — | 2025-02-10 | summit | 8 | — |
 | [ ] | [`Q112939195`](https://www.wikidata.org/wiki/Q112939195) | Recovery of Ukraine Conference in Lugano | — | 2022-07-04 | international conference | 7 | — |
 
-## world 1970s — 95 candidate(s), 3 already in the atlas
+## pt2 1930s — 22 candidate(s), 0 already in the atlas
 
-### world-treaties-1970s — 39
-
-| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
-| :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q170170`](https://www.wikidata.org/wiki/Q170170) | Ramsar Convention | Convenção sobre as Zonas Húmidas de Importância Internacional | 1971-02-02 | international environmental agreement | 78 | yes |
-| [ ] | [`Q191836`](https://www.wikidata.org/wiki/Q191836) | CITES | Convenção sobre o Comércio Internacional das Espécies da Fauna e da Flora Silvestres Ameaçadas de Extinção | 1973-03-03 | multilateral treaty | 69 | — |
-| [ ] | [`Q277072`](https://www.wikidata.org/wiki/Q277072) | Convention on the Elimination of All Forms of Discrimination against Women | Convenção sobre a Eliminação de Todas as Formas de Discriminação contra as Mulheres | 1979-12-18 | international human rights instrument | 69 | yes |
-| [ ] | [`Q318161`](https://www.wikidata.org/wiki/Q318161) | Helsinki Accords | Acordos de Helsínquia | 1975-08-01 | treaty | 51 | — |
-| [ ] | [`Q309204`](https://www.wikidata.org/wiki/Q309204) | Camp David Accords | Acordos de Camp David | 1978-09-17 | peace treaty | 50 | — |
-| [ ] | [`Q623994`](https://www.wikidata.org/wiki/Q623994) | Strategic Arms Limitation Talks | Conversações sobre Limites para Armas Estratégicas | 1979-06-18 | treaty | 37 | — |
-| [ ] | [`Q696802`](https://www.wikidata.org/wiki/Q696802) | Paris Peace Accords | Acordos de Paz de Paris | 1973-01-27 | peace treaty | 36 | — |
-| [ ] | [`Q375083`](https://www.wikidata.org/wiki/Q375083) | Convention on the Conservation of European Wildlife and Natural Habitats | Convenção sobre a Vida Selvagem e os Habitats Naturais na Europa | 1979-09-19 | Council of Europe treaty | 35 | — |
-| [ ] | [`Q1129412`](https://www.wikidata.org/wiki/Q1129412) | Egypt–Israel Peace Treaty | Tratado de paz israelo-egípcio | 1979-03-26 | peace treaty | 34 | — |
-| [ ] | [`Q281140`](https://www.wikidata.org/wiki/Q281140) | Moon Treaty | Tratado da Lua | 1979-01-01 | multilateral treaty | 33 | — |
-| [ ] | [`Q287422`](https://www.wikidata.org/wiki/Q287422) | Anti-Ballistic Missile Treaty | Tratado ABM | 1972-05-26 | treaty | 32 | — |
-| [ ] | [`Q803887`](https://www.wikidata.org/wiki/Q803887) | Biological Weapons Convention | Convenção sobre as Armas Biológicas | 1972-04-10 | treaty | 32 | — |
-| [ ] | [`Q1470998`](https://www.wikidata.org/wiki/Q1470998) | Simla Agreement | Tratado de Simla | 1972-07-02 | peace treaty | 32 | — |
-| [ ] | [`Q933745`](https://www.wikidata.org/wiki/Q933745) | Treaty of Osimo | Tratado de Osimo | 1975-11-10 | treaty | 31 | — |
-| [ ] | [`Q125371`](https://www.wikidata.org/wiki/Q125371) | Bonn Convention | Convenção de Bona | 1979-01-01 | treaty | 28 | — |
-| [ ] | [`Q2096669`](https://www.wikidata.org/wiki/Q2096669) | World Heritage Convention | Anexo:Lista de Estados signatários da Convenção do Património Mundial | 1972-01-01 | treaty | 28 | — |
-| [ ] | [`Q1056771`](https://www.wikidata.org/wiki/Q1056771) | Patent Cooperation Treaty | Tratado de Cooperação em Matéria de Patentes | 1970-06-19 | treaty | 26 | — |
-| [ ] | [`Q321865`](https://www.wikidata.org/wiki/Q321865) | 1975 Algiers Agreement | Acordos de Argel (1975) | 1975-03-06 | treaty | 25 | — |
-| [ ] | [`Q658048`](https://www.wikidata.org/wiki/Q658048) | Treaty of Warsaw | Tratado de Varsóvia | 1970-01-01 | treaty | 24 | — |
-| [ ] | [`Q1156234`](https://www.wikidata.org/wiki/Q1156234) | Convention on the Prevention of Marine Pollution by Dumping of Wastes and Other Matter | Convenção de Londres | 1972-12-29 | international environmental agreement | 24 | — |
-| [ ] | [`Q1429332`](https://www.wikidata.org/wiki/Q1429332) | Convention on Psychotropic Substances | Convenção sobre Substâncias Psicotrópicas | 1971-02-21 | treaty | 23 | — |
-| [ ] | [`Q277343`](https://www.wikidata.org/wiki/Q277343) | Torrijos–Carter Treaties | Tratados Torrijos-Carter | 1977-09-07 | bilateral treaty | 23 | — |
-| [ ] | [`Q2229133`](https://www.wikidata.org/wiki/Q2229133) | Protocol I | — | 1977-01-01 | protocol | 21 | — |
-| [ ] | [`Q549912`](https://www.wikidata.org/wiki/Q549912) | Declaration of Principles on Western Sahara by Spain, Morocco and Mauritania | Acordo de Madrid | 1975-11-14 | treaty | 19 | — |
-| [ ] | [`Q641309`](https://www.wikidata.org/wiki/Q641309) | Treaty of Moscow | Tratado de Moscou (1970) | 1970-08-12 | treaty | 19 | — |
-| [ ] | [`Q1378173`](https://www.wikidata.org/wiki/Q1378173) | European Patent Convention | Convenção sobre a Patente Europeia | 1973-10-05 | treaty | 19 | — |
-| [ ] | [`Q488546`](https://www.wikidata.org/wiki/Q488546) | Environmental Modification Convention | Convenção de Modificação Ambiental | 1977-05-18 | United Nations treaty | 19 | — |
-| [ ] | [`Q2401715`](https://www.wikidata.org/wiki/Q2401715) | Protocol II | — | 1977-01-01 | treaty | 18 | — |
-| [ ] | [`Q1274517`](https://www.wikidata.org/wiki/Q1274517) | Treaty on the Prohibition of the Emplacement of Nuclear Weapons and Other Weapons of Mass Destruction on the Sea-Bed and the Ocean Floor and in the Subsoil thereof | Tratado sobre a Proibição da Colocação de Armas Nucleares e Outras Armas de Destruição em Massa no Leito do Mar e no Fundo do Oceano | 1971-02-11 | multilateral treaty | 18 | — |
-| [ ] | [`Q519875`](https://www.wikidata.org/wiki/Q519875) | Four Power Agreement on Berlin | Acordo das Quatro Potências sobre Berlim | 1971-09-03 | treaty | 17 | — |
-| [ ] | [`Q672112`](https://www.wikidata.org/wiki/Q672112) | Basic Treaty | — | 1972-12-21 | bilateral treaty | 17 | — |
-| [ ] | [`Q2118997`](https://www.wikidata.org/wiki/Q2118997) | Barcelona Convention | Convenção de Barcelona | 1976-02-16 | treaty | 16 | — |
-| [ ] | [`Q1054948`](https://www.wikidata.org/wiki/Q1054948) | Treaty of Amity and Cooperation in Southeast Asia | Tratado de Amizade e Cooperação no Sudeste Asiático | 1976-02-24 | peace treaty | 15 | — |
-| [ ] | [`Q1248976`](https://www.wikidata.org/wiki/Q1248976) | Vienna Convention on Succession of States in Respect of Treaties | — | 1978-08-23 | multilateral treaty | 13 | — |
-| [ ] | [`Q7309441`](https://www.wikidata.org/wiki/Q7309441) | Registration Convention | — | 1974-11-12 | United Nations treaty | 13 | — |
-| [ ] | [`Q2898734`](https://www.wikidata.org/wiki/Q2898734) | Minimum Age Convention | — | 1973-01-01 | International Labour Organization Convention | 13 | — |
-| [ ] | [`Q5166252`](https://www.wikidata.org/wiki/Q5166252) | Convention for the Protection of Producers of Phonograms Against Unauthorized Duplication of Their Phonograms | — | 1971-10-29 | treaty | 12 | — |
-| [ ] | [`Q446495`](https://www.wikidata.org/wiki/Q446495) | Treaty of Peace and Friendship between Japan and the People's Republic of China | — | 1978-08-12 | peace treaty | 12 | — |
-| [ ] | [`Q449550`](https://www.wikidata.org/wiki/Q449550) | Alvor Agreement | Acordo do Alvor | 1975-01-15 | peace treaty | 12 | — |
-
-### world-revolutions-1970s — 4
+### pt2-laws-and-constitutions-1930s — 1
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q126065`](https://www.wikidata.org/wiki/Q126065) | Iranian Revolution | Revolução Iraniana | 1970-01-01 | revolution | 102 | yes |
-| [ ] | [`Q193245`](https://www.wikidata.org/wiki/Q193245) | Carnation Revolution | Revolução dos Cravos | 1974-04-25 | revolution | 65 | — |
-| [ ] | [`Q1341539`](https://www.wikidata.org/wiki/Q1341539) | Saur Revolution | Revolução de Saur | 1978-04-27 | revolution | 44 | — |
-| [ ] | [`Q9068538`](https://www.wikidata.org/wiki/Q9068538) | Ethiopian Revolution | Revolução etíope de 1974 | 1974-02-01 | revolution | 9 | — |
-
-### world-coups-1970s — 39
-
-| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
-| :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q856670`](https://www.wikidata.org/wiki/Q856670) | 1973 Chilean coup d'état | Golpe de Estado no Chile em 1973 | 1973-09-11 | coup d'état | 51 | — |
-| [ ] | [`Q153081`](https://www.wikidata.org/wiki/Q153081) | Soweto uprising | Levante de Soweto | 1976-06-16 | rebellion | 39 | — |
-| [ ] | [`Q1048750`](https://www.wikidata.org/wiki/Q1048750) | 1976 Argentine coup d'état | Golpe de Estado na Argentina em 1976 | 1976-03-24 | coup d'état | 20 | — |
-| [ ] | [`Q2069434`](https://www.wikidata.org/wiki/Q2069434) | 1974 Cypriot coup d'état | Golpe de Estado no Chipre em 1974 | 1974-07-15 | coup d'état | 19 | — |
-| [ ] | [`Q14947304`](https://www.wikidata.org/wiki/Q14947304) | Corrective Movement | Revolução Corretiva na Síria de 1970 | 1970-11-13 | coup d'état | 18 | — |
-| [ ] | [`Q931943`](https://www.wikidata.org/wiki/Q931943) | 1971 Turkish military memorandum | — | 1971-03-12 | coup d'état | 17 | — |
-| [ ] | [`Q4919446`](https://www.wikidata.org/wiki/Q4919446) | 1970 Cambodian coup d'état | Golpe de Estado no Camboja em 1970 | 1970-03-18 | coup d'état | 17 | — |
-| [ ] | [`Q30070166`](https://www.wikidata.org/wiki/Q30070166) | 1973 Afghan coup d'état | Golpe de Estado no Afeganistão em 1973 | 1973-07-17 | coup d'état | 17 | — |
-| [ ] | [`Q11982546`](https://www.wikidata.org/wiki/Q11982546) | 1979 Kurdish rebellion in Iran | Rebelião curda no Irã em 1979 | 1979-03-01 | rebellion | 16 | — |
-| [ ] | [`Q249853`](https://www.wikidata.org/wiki/Q249853) | Insurgency in Laos | Insurgência no Laos | 1975-12-02 | rebellion | 14 | — |
-| [ ] | [`Q4575745`](https://www.wikidata.org/wiki/Q4575745) | 1973 Thai popular uprising | Revolta popular tailandesa de 1973 | 1973-10-14 | rebellion | 14 | — |
-| [ ] | [`Q623641`](https://www.wikidata.org/wiki/Q623641) | Coup d'état of December Twelfth | Golpe de Estado de 12 de Dezembro | 1979-12-12 | coup d'état | 13 | — |
-| [ ] | [`Q389853`](https://www.wikidata.org/wiki/Q389853) | 1973 Uruguayan coup d'état | Golpe de Estado no Uruguai em 1973 | 1973-06-27 | coup d'état | 12 | — |
-| [ ] | [`Q3653895`](https://www.wikidata.org/wiki/Q3653895) | 1971 Ugandan coup d'état | Golpe de Estado em Uganda em 1971 | 1971-01-25 | coup d'état | 12 | — |
-| [ ] | [`Q742728`](https://www.wikidata.org/wiki/Q742728) | 1972 Moroccan coup attempt | Golpe de Estado no Marrocos em 1972 | 1972-08-16 | attempted murder | 12 | — |
-| [ ] | [`Q2670013`](https://www.wikidata.org/wiki/Q2670013) | Insurgency in Aceh | Insurgência em Aceh | 1976-01-01 | insurgency | 11 | — |
-| [ ] | [`Q7248975`](https://www.wikidata.org/wiki/Q7248975) | Project 571 | — | 1971-01-01 | plan | 11 | — |
-| [ ] | [`Q1099135`](https://www.wikidata.org/wiki/Q1099135) | Golpe Borghese | Golpe Borghese | 1970-12-08 | attempted coup d'état | 11 | — |
-| [ ] | [`Q20977839`](https://www.wikidata.org/wiki/Q20977839) | 1979 Equatorial Guinea coup d'état | Golpe de Estado em Guiné Equatorial em 1979 | 1979-08-18 | coup d'état | 10 | — |
-| [ ] | [`Q4578716`](https://www.wikidata.org/wiki/Q4578716) | 1979 Herat uprising | Insurreição em Herat de 1979 | 1979-03-15 | rebellion | 10 | — |
-| [ ] | [`Q12182813`](https://www.wikidata.org/wiki/Q12182813) | 1979 Khuzestan uprising | Revolta no Khuzistão em 1979 | 1979-04-01 | rebellion | 10 | — |
-| [ ] | [`Q11355226`](https://www.wikidata.org/wiki/Q11355226) | Mishima incident | — | 1970-11-25 | attempted coup d'état | 10 | — |
-| [ ] | [`Q623792`](https://www.wikidata.org/wiki/Q623792) | October Yushin | Yushin de Outubro | 1972-10-10 | self-coup | 10 | — |
-| [ ] | [`Q1136770`](https://www.wikidata.org/wiki/Q1136770) | 1971 Moroccan coup attempt | Golpe de Estado de Skhirat | 1971-07-10 | attempted coup d'état | 10 | — |
-| [ ] | [`Q1715348`](https://www.wikidata.org/wiki/Q1715348) | Operation Galaxia | Operação Galaxia | 1978-11-11 | attempted coup d'état | 10 | — |
-| [ ] | [`Q4114552`](https://www.wikidata.org/wiki/Q4114552) | 1977 Pakistani military coup | Golpe de Estado no Paquistão em 1977 | 1977-07-05 | coup d'état | 9 | — |
-| [ ] | [`Q4575699`](https://www.wikidata.org/wiki/Q4575699) | 1973 Rwandan coup d'état | Golpe de Estado em Ruanda em 1973 | 1973-07-05 | coup d'état | 9 | — |
-| [ ] | [`Q18214240`](https://www.wikidata.org/wiki/Q18214240) | Operation Caban | Operação Caban | 1979-09-21 | coup d'état | 9 | — |
-| [ ] | [`Q28441384`](https://www.wikidata.org/wiki/Q28441384) | 1977 Benin coup d'état attempt | Tentativa de golpe de Estado em Benin em 1977 | 1977-01-16 | attempted coup d'état | 9 | — |
-| [ ] | [`Q48815086`](https://www.wikidata.org/wiki/Q48815086) | 1970 Omani coup d'état | Golpe de Estado em Omã em 1970 | 1970-07-23 | coup d'état | 8 | — |
-| [ ] | [`Q84806169`](https://www.wikidata.org/wiki/Q84806169) | 1979 Salvadoran coup d'état | Golpe de Estado em El Salvador em 1979 | 1979-10-15 | coup d'état | 8 | — |
-| [ ] | [`Q5783195`](https://www.wikidata.org/wiki/Q5783195) | Bala Hissar uprising | Levante de Bala Hissar | 1979-08-05 | insurgency | 8 | — |
-| [ ] | [`Q96363613`](https://www.wikidata.org/wiki/Q96363613) | 1978 Somali coup d'état attempt | Tentativa de golpe de Estado na Somália em 1978 | 1978-04-09 | attempted coup d'état | 8 | — |
-| [ ] | [`Q2279763`](https://www.wikidata.org/wiki/Q2279763) | Tanquetazo | Tanquetazo | 1973-06-29 | attempted coup d'état | 8 | — |
-| [ ] | [`Q4574531`](https://www.wikidata.org/wiki/Q4574531) | 1971 JVP Insurrection | Insurreição no Ceilão em 1971 | 1971-04-05 | attempted coup d'état | 8 | — |
-| [ ] | [`Q63121298`](https://www.wikidata.org/wiki/Q63121298) | 1977 Seychelles coup d'état | Golpe de Estado nas Seychelles em 1977 | 1977-06-04 | coup d'état | 7 | — |
-| [ ] | [`Q63123297`](https://www.wikidata.org/wiki/Q63123297) | 1972 Dahomeyan coup d'état | Golpe de Estado na República do Daomé em 1972 | 1972-10-26 | coup d'état | 7 | — |
-| [ ] | [`Q60792490`](https://www.wikidata.org/wiki/Q60792490) | 1977 Angolan coup d'état attempt | Tentativa de golpe de Estado em Angola em 1977 | 1977-05-27 | attempted coup d'état | 7 | — |
-| [ ] | [`Q90723868`](https://www.wikidata.org/wiki/Q90723868) | 1979–1980 Shia uprising in Iraq | Revolta dos xiitas no Iraque em 1979–1980 | 1979-01-01 | rebellion | 6 | — |
-
-### world-assassinations-1970s — 4
-
-| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
-| :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q975430`](https://www.wikidata.org/wiki/Q975430) | Tajbeg Palace assault | Operação Shtorm-333 | 1979-12-27 | military operation | 28 | — |
-| [ ] | [`Q482859`](https://www.wikidata.org/wiki/Q482859) | assassination of Park Chung-hee | — | 1979-10-26 | murder | 13 | — |
-| [ ] | [`Q4992248`](https://www.wikidata.org/wiki/Q4992248) | Assassination of Luis Carrero Blanco | — | 1973-12-20 | political murder | 12 | — |
-| [ ] | [`Q3975708`](https://www.wikidata.org/wiki/Q3975708) | Acca Larentia killings | — | 1978-01-07 | political murder | 7 | — |
-
-### world-economic-crises-1970s — 3
-
-| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
-| :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q316817`](https://www.wikidata.org/wiki/Q316817) | 1973 oil crisis | Crise petrolífera de 1973 | 1973-01-01 | economic crisis | 60 | — |
-| [ ] | [`Q1925730`](https://www.wikidata.org/wiki/Q1925730) | 1979 energy crisis | Crise petrolífera de 1979 | 1979-01-01 | oil crisis | 26 | — |
-| [ ] | [`Q4574284`](https://www.wikidata.org/wiki/Q4574284) | 1970s energy crisis | Crise do petróleo | 1970-01-01 | oil crisis | 21 | — |
-
-### world-genocides-1970s — 4
-
-| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
-| :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q2885072`](https://www.wikidata.org/wiki/Q2885072) | Cambodian genocide | Genocídio cambojano | 1970-01-01 | mass murder | 51 | — |
-| [ ] | [`Q2916113`](https://www.wikidata.org/wiki/Q2916113) | Bangladesh genocide | Genocídio em Bangladesh em 1971 | 1971-03-26 | genocide | 30 | — |
-| [ ] | [`Q28136238`](https://www.wikidata.org/wiki/Q28136238) | East Timor genocide | Genocídio no Timor-Leste | 1975-01-01 | genocide | 13 | — |
-| [ ] | [`Q65067658`](https://www.wikidata.org/wiki/Q65067658) | 1972 Genocide of Burundian Hutus | — | 1972-04-01 | genocide | 8 | — |
-
-### world-independence-declarations-1970s — 1
-
-| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
-| :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q115632732`](https://www.wikidata.org/wiki/Q115632732) | independence of Bangladesh | — | 1971-03-26 | independence | 6 | — |
-
-### world-international-conferences-1970s — 1
-
-| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
-| :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q5532992`](https://www.wikidata.org/wiki/Q5532992) | Geneva Conference | Conferência de Genebra | 1973-01-01 | international conference | 8 | — |
-
-## world 2010s — 103 candidate(s), 4 already in the atlas
-
-### world-treaties-2010s — 40
-
-| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
-| :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q21707860`](https://www.wikidata.org/wiki/Q21707860) | Paris Agreement | Acordo de Paris | 2015-12-12 | treaty | 89 | yes |
-| [ ] | [`Q1697391`](https://www.wikidata.org/wiki/Q1697391) | Convention on preventing and combating violence against women and domestic violence | Convenção do Conselho da Europa para a Prevenção e o Combate à Violência Contra as Mulheres e a Violência Doméstica | 2011-05-11 | international human rights instrument | 54 | — |
-| [ ] | [`Q28130514`](https://www.wikidata.org/wiki/Q28130514) | Treaty on the Prohibition of Nuclear Weapons | Tratado sobre a Proibição das Armas Nucleares | 2017-09-20 | treaty | 47 | — |
-| [ ] | [`Q1366688`](https://www.wikidata.org/wiki/Q1366688) | Trans-Pacific Partnership | Parceria Transpacífica | 2016-02-04 | trade agreement | 39 | — |
-| [ ] | [`Q688993`](https://www.wikidata.org/wiki/Q688993) | Arms Trade Treaty | Tratado de Comércio de Armas Convencionais | 2013-04-02 | United Nations treaty | 37 | — |
-| [ ] | [`Q55153903`](https://www.wikidata.org/wiki/Q55153903) | Prespa agreement | Acordo de Prespa | 2018-06-17 | treaty | 33 | — |
-| [ ] | [`Q56761730`](https://www.wikidata.org/wiki/Q56761730) | Escazu Agreement | Acordo de Escazú | 2018-03-04 | treaty | 31 | — |
-| [ ] | [`Q2002064`](https://www.wikidata.org/wiki/Q2002064) | New START | New START | 2010-04-08 | treaty | 29 | — |
-| [ ] | [`Q1121969`](https://www.wikidata.org/wiki/Q1121969) | Comprehensive Economic and Trade Agreement | Acordo Integral de Economia e Comércio | 2016-10-30 | trade agreement | 29 | — |
-| [ ] | [`Q18001626`](https://www.wikidata.org/wiki/Q18001626) | Minsk Protocol | Protocolo de Minsk | 2014-09-05 | peace treaty | 29 | — |
-| [ ] | [`Q1963613`](https://www.wikidata.org/wiki/Q1963613) | Nagoya Protocol | Protocolo de Nagoia | 2014-11-12 | protocol | 29 | — |
-| [ ] | [`Q56839716`](https://www.wikidata.org/wiki/Q56839716) | United States–Mexico–Canada Agreement | Acordo Estados Unidos-México-Canadá | 2018-11-30 | trade agreement | 28 | — |
-| [ ] | [`Q6862837`](https://www.wikidata.org/wiki/Q6862837) | Minamata Convention on Mercury | — | 2013-10-10 | treaty | 26 | — |
-| [ ] | [`Q19249259`](https://www.wikidata.org/wiki/Q19249259) | Minsk II | Minsk II | 2015-02-12 | treaty | 26 | — |
-| [ ] | [`Q1377817`](https://www.wikidata.org/wiki/Q1377817) | European Fiscal Compact | Tratado sobre a Estabilidade, Coordenação e Governação na UEM | 2012-03-02 | treaty | 24 | — |
-| [ ] | [`Q60727566`](https://www.wikidata.org/wiki/Q60727566) | Treaty of Aachen | — | 2019-01-22 | treaty | 23 | — |
-| [ ] | [`Q55612707`](https://www.wikidata.org/wiki/Q55612707) | Global Compact on Migration | Pacto Global pela Migração | 2018-01-01 | treaty | 21 | — |
-| [ ] | [`Q15991255`](https://www.wikidata.org/wiki/Q15991255) | Marrakesh Treaty to Facilitate Access to Published Works for Persons Who Are Blind, Visually Impaired or Otherwise Print Disabled | Tratado de Marraquexe | 2013-06-27 | multilateral treaty | 21 | — |
-| [ ] | [`Q2077856`](https://www.wikidata.org/wiki/Q2077856) | Kharkiv Pact | Pacto de Kharkiv de 2010 | 2010-04-21 | treaty | 20 | — |
-| [ ] | [`Q48852287`](https://www.wikidata.org/wiki/Q48852287) | Comprehensive and Progressive Agreement for Trans-Pacific Partnership | Acordo Abrangente e Progressivo para a Parceria Transpacífica | 2018-01-01 | free trade agreement | 20 | — |
-| [ ] | [`Q50822331`](https://www.wikidata.org/wiki/Q50822331) | African Continental Free Trade Agreement | Acordo de Livre Comércio Continental Africano | 2018-03-21 | trade agreement | 18 | — |
-| [ ] | [`Q12163419`](https://www.wikidata.org/wiki/Q12163419) | Ukraine–European Union Association Agreement | — | 2014-03-21 | European Union Association Agreement | 18 | — |
-| [ ] | [`Q2526639`](https://www.wikidata.org/wiki/Q2526639) | Treaty of Accession 2011 | — | 2011-12-09 | Treaty of Accession to the EU | 16 | — |
-| [ ] | [`Q14605366`](https://www.wikidata.org/wiki/Q14605366) | Brussels Agreement | Acordo de Bruxelas (2013) | 2013-04-19 | multilateral treaty | 15 | — |
-| [ ] | [`Q706392`](https://www.wikidata.org/wiki/Q706392) | Economic Cooperation Framework Agreement | — | 2010-06-29 | treaty | 13 | — |
-| [ ] | [`Q56062455`](https://www.wikidata.org/wiki/Q56062455) | Convention on the legal status of the Caspian Sea | Convenção sobre o Estatuto do Mar Cáspio | 2018-08-12 | pentalateral treaty | 13 | — |
-| [ ] | [`Q15284773`](https://www.wikidata.org/wiki/Q15284773) | Bali Package | Pacote de Bali | 2013-12-07 | trade agreement | 12 | — |
-| [ ] | [`Q15240451`](https://www.wikidata.org/wiki/Q15240451) | Cross-Strait Service Trade Agreement | — | 2013-06-21 | treaty | 10 | — |
-| [ ] | [`Q7663260`](https://www.wikidata.org/wiki/Q7663260) | Syrian peace process | — | 2017-01-01 | treaty | 9 | — |
-| [ ] | [`Q15963166`](https://www.wikidata.org/wiki/Q15963166) | Treaty on the Adoption of the Republic of Crimea to Russia | Tratado de Adesão da República da Crimeia à Federação Russa | 2014-03-18 | treaty | 9 | — |
-| [ ] | [`Q22906629`](https://www.wikidata.org/wiki/Q22906629) | Bangkok Rules | Regras das Nações Unidas para o tratamento de mulheres presas e medidas não privativas de liberdade para mulheres infratoras | 2010-12-21 | treaty | 9 | — |
-| [ ] | [`Q4881201`](https://www.wikidata.org/wiki/Q4881201) | Beijing Treaty on Audiovisual Performances | — | 2012-06-26 | treaty | 8 | — |
-| [ ] | [`Q63078193`](https://www.wikidata.org/wiki/Q63078193) | Regional Roaming Agreement | — | 2019-04-04 | treaty | 8 | — |
-| [ ] | [`Q5166292`](https://www.wikidata.org/wiki/Q5166292) | Convention on Domestic Workers | — | 2011-06-16 | International Labour Organization Convention | 8 | — |
-| [ ] | [`Q5176397`](https://www.wikidata.org/wiki/Q5176397) | Council of Europe Convention on the Counterfeiting of Medical Products | — | 2011-10-28 | Council of Europe treaty | 8 | — |
-| [ ] | [`Q106411467`](https://www.wikidata.org/wiki/Q106411467) | Violence and Harassment Convention | — | 2019-06-21 | International Labour Organization Convention | 7 | — |
-| [ ] | [`Q5858325`](https://www.wikidata.org/wiki/Q5858325) | Colombian peace process | Acordo de paz entre a Colômbia e as FARC | 2012-09-17 | treaty | 6 | — |
-| [ ] | [`Q22348131`](https://www.wikidata.org/wiki/Q22348131) | Japan–South Korea Comfort Women Agreement | — | 2015-12-28 | treaty | 6 | — |
-| [ ] | [`Q30970873`](https://www.wikidata.org/wiki/Q30970873) | Canada-Ukraine Free Trade Agreement | — | 2016-07-11 | treaty | 6 | — |
-| [ ] | [`Q101417030`](https://www.wikidata.org/wiki/Q101417030) | Pact of Free Cities | — | 2019-01-01 | treaty | 6 | — |
-
-### world-revolutions-2010s — 7
-
-| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
-| :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q33761`](https://www.wikidata.org/wiki/Q33761) | Arab Spring | Primavera Árabe | 2010-12-17 | civil war | 112 | — |
-| [ ] | [`Q81545`](https://www.wikidata.org/wiki/Q81545) | Libyan Civil War | Guerra Civil Líbia | 2011-02-15 | civil war | 89 | yes |
-| [ ] | [`Q15733401`](https://www.wikidata.org/wiki/Q15733401) | Revolution of Dignity | Revolução Ucraniana de 2014 | 2010-01-01 | coup d'état | 47 | — |
-| [ ] | [`Q236023`](https://www.wikidata.org/wiki/Q236023) | Kyrgyz Revolution of 2010 | Revoltas no Quirguistão em 2010 | 2010-01-01 | revolution | 37 | — |
-| [ ] | [`Q2384201`](https://www.wikidata.org/wiki/Q2384201) | Rojava Revolution | Conflito no Curdistão sírio | 2012-07-19 | social revolution | 25 | — |
-| [ ] | [`Q14746872`](https://www.wikidata.org/wiki/Q14746872) | Syrian revolution | Revolução síria | 2011-03-15 | revolution | 19 | — |
-| [ ] | [`Q16976566`](https://www.wikidata.org/wiki/Q16976566) | Abkhazian Revolution | Revolução Abecásia | 2014-04-29 | revolution | 12 | — |
-
-### world-coups-2010s — 37
-
-| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
-| :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q25906338`](https://www.wikidata.org/wiki/Q25906338) | 2016 Turkish coup d'état attempt | Tentativa de golpe de Estado na Turquia em 2016 | 2016-07-15 | attempted coup d'état | 77 | yes |
-| [ ] | [`Q15224558`](https://www.wikidata.org/wiki/Q15224558) | Euromaidan | Euromaidan | 2010-01-01 | coup d'état | 76 | yes |
-| [ ] | [`Q210005`](https://www.wikidata.org/wiki/Q210005) | 2011 Yemeni revolution | Revolução Iemenita | 2011-01-27 | rebellion | 39 | — |
-| [ ] | [`Q13605743`](https://www.wikidata.org/wiki/Q13605743) | 2013 Egyptian coup d'état | Golpe de Estado no Egito em 2013 | 2013-07-03 | coup d'état | 38 | — |
-| [ ] | [`Q242864`](https://www.wikidata.org/wiki/Q242864) | 2011 Bahraini uprising | Revolta no Barém de 2011 | 2011-02-14 | civil disobedience | 36 | — |
-| [ ] | [`Q15871713`](https://www.wikidata.org/wiki/Q15871713) | 2014 pro-Russian unrest in Ukraine | Protestos pró-russos na Ucrânia em 2014 | 2014-02-23 | riot | 36 | — |
-| [ ] | [`Q43172549`](https://www.wikidata.org/wiki/Q43172549) | 2017 Zimbabwean coup d'état attempt | Golpe de Estado no Zimbabwe em 2017 | 2017-11-14 | attempted coup d'état | 33 | — |
-| [ ] | [`Q16914766`](https://www.wikidata.org/wiki/Q16914766) | 2014 Thai coup d'état | Golpe de Estado na Tailândia em 2014 | 2014-05-22 | coup d'état | 30 | — |
-| [ ] | [`Q255997`](https://www.wikidata.org/wiki/Q255997) | Houthi insurgency | Rebelião Houthi no Iêmen | 2015-02-06 | rebellion | 27 | — |
-| [ ] | [`Q63096026`](https://www.wikidata.org/wiki/Q63096026) | 2019 Sudanese coup d'état | Golpe de Estado no Sudão em 2019 | 2019-04-11 | coup d'état | 23 | — |
-| [ ] | [`Q875912`](https://www.wikidata.org/wiki/Q875912) | 2012 Malian coup d'état | Golpe de Estado no Mali em 2012 | 2012-03-21 | coup d'état | 22 | — |
-| [ ] | [`Q2165215`](https://www.wikidata.org/wiki/Q2165215) | Iraqi insurgency | Guerra Civil Iraquiana (2011–presente) | 2011-01-01 | insurgency | 22 | — |
-| [ ] | [`Q7521684`](https://www.wikidata.org/wiki/Q7521684) | Sinai insurgency | Insurgência no Sinai | 2011-02-05 | insurgency | 20 | — |
-| [ ] | [`Q18380506`](https://www.wikidata.org/wiki/Q18380506) | 2014 Burkinabé uprising | Revolta em Burquina Fasso em 2014 | 2014-01-01 | rebellion | 19 | — |
-| [ ] | [`Q924625`](https://www.wikidata.org/wiki/Q924625) | 2010 Nigerien coup d'état | Golpe de Estado no Níger em 2010 | 2010-02-18 | coup d'état | 18 | — |
-| [ ] | [`Q1525846`](https://www.wikidata.org/wiki/Q1525846) | 2012 Tuareg rebellion | Rebelião tuaregue | 2012-01-01 | coup d'état | 17 | — |
-| [ ] | [`Q20977821`](https://www.wikidata.org/wiki/Q20977821) | 2015 Burkinabé coup d'état attempt | Golpe de Estado em Burkina Faso em 2015 | 2015-09-16 | attempted coup d'état | 16 | — |
-| [ ] | [`Q60474140`](https://www.wikidata.org/wiki/Q60474140) | 2019 Gabonese coup d'etat attempt | Tentativa de golpe no Gabão em 2019 | 2019-01-01 | attempted coup d'état | 16 | — |
-| [ ] | [`Q18145759`](https://www.wikidata.org/wiki/Q18145759) | Houthi takeover in Yemen | Golpe de Estado no Iêmen em 2014-2015 | 2014-09-21 | coup d'état | 15 | — |
-| [ ] | [`Q621827`](https://www.wikidata.org/wiki/Q621827) | 2012 Guinea-Bissau coup d'état | Golpe de Estado na Guiné-Bissau em 2012 | 2012-04-12 | coup d'état | 13 | — |
-| [ ] | [`Q82962`](https://www.wikidata.org/wiki/Q82962) | M23 Rebellion | Rebelião no leste da República Democrática do Congo em 2012-2013 | 2012-04-04 | rebellion | 13 | — |
-| [ ] | [`Q64787084`](https://www.wikidata.org/wiki/Q64787084) | 2019 Amhara Region coup d'état attempt | Tentativa de golpe de Estado da região de Amara de 2019 | 2019-06-22 | attempted coup d'état | 12 | — |
-| [ ] | [`Q57890365`](https://www.wikidata.org/wiki/Q57890365) | Islamic State insurgency in Iraq | Insurgência jihadista no Iraque (2017–presente) | 2017-12-09 | insurgency | 11 | — |
-| [ ] | [`Q106575438`](https://www.wikidata.org/wiki/Q106575438) | Insurgency in Northern Chad | Insurgência no norte do Chade | 2016-01-01 | war | 10 | — |
-| [ ] | [`Q19905149`](https://www.wikidata.org/wiki/Q19905149) | 2015 Burundian coup d'état attempt | Tentativa de golpe de Estado no Burundi em 2015 | 2015-05-13 | attempted coup d'état | 10 | — |
-| [ ] | [`Q63395926`](https://www.wikidata.org/wiki/Q63395926) | 2019 Venezuelan uprising attempt | Levantamento militar de 30 de abril na Venezuela | 2019-04-30 | rebellion | 9 | — |
-| [ ] | [`Q154788`](https://www.wikidata.org/wiki/Q154788) | Wukan protests | — | 2011-01-01 | rebellion | 8 | — |
-| [ ] | [`Q4617394`](https://www.wikidata.org/wiki/Q4617394) | 2010 Guinea-Bissau military unrest | Revolta militar em Guiné-Bissau de 2010 | 2010-01-01 | rebellion | 8 | — |
-| [ ] | [`Q28234538`](https://www.wikidata.org/wiki/Q28234538) | 2017 Ivory Coast mutiny | Motim na Costa do Marfim em 2017 | 2017-01-08 | mutiny | 8 | — |
-| [ ] | [`Q17684684`](https://www.wikidata.org/wiki/Q17684684) | 2014 Lesotho political crisis | — | 2014-08-30 | political crisis | 7 | — |
-| [ ] | [`Q22935835`](https://www.wikidata.org/wiki/Q22935835) | Timeline of terrorism in Egypt (2013–present) | Linha do tempo do terrorismo no Egito (2013-presente) | 2013-07-03 | insurgency | 7 | — |
-| [ ] | [`Q4442941`](https://www.wikidata.org/wiki/Q4442941) | 2012 Bani Walid uprising | Insurreição em Bani Walid em 2012 | 2012-01-01 | rebellion | 6 | — |
-| [ ] | [`Q2998927`](https://www.wikidata.org/wiki/Q2998927) | 2011 Democratic Republic of the Congo coup d'état attempt | Tentativa de golpe de Estado na República Democrática do Congo em 2011 | 2011-02-27 | attempted coup d'état | 6 | — |
-| [ ] | [`Q15070113`](https://www.wikidata.org/wiki/Q15070113) | 2013 Libyan coup d'état attempt | Tentativa de golpe de Estado na Líbia em 2013 | 2013-10-10 | attempted coup d'état | 6 | — |
-| [ ] | [`Q16147351`](https://www.wikidata.org/wiki/Q16147351) | 2014 Libyan coup d'état attempts | Tentativas de golpes de Estado na Líbia em 2014 | 2014-02-14 | attempted coup d'état | 6 | — |
-| [ ] | [`Q20312530`](https://www.wikidata.org/wiki/Q20312530) | 2014 Gambian coup d'état attempt | Tentativa de golpe de Estado na Gâmbia em 2014 | 2014-12-30 | attempted coup d'état | 6 | — |
-| [ ] | [`Q40890413`](https://www.wikidata.org/wiki/Q40890413) | 2016 Burkinabé coup d'état attempt | — | 2016-10-08 | attempted coup d'état | 6 | — |
-
-### world-financial-crises-2010s — 4
-
-| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
-| :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q95946139`](https://www.wikidata.org/wiki/Q95946139) | Lebanese liquidity crisis | Crise de liquidez no Líbano | 2019-08-01 | financial crisis | 11 | — |
-| [ ] | [`Q1427217`](https://www.wikidata.org/wiki/Q1427217) | 2010 Flash Crash | Flash Crash de 2010 | 2010-05-06 | flash crash | 11 | — |
-| [ ] | [`Q20651241`](https://www.wikidata.org/wiki/Q20651241) | 2015 Chinese stock market crash | — | 2015-06-12 | financial crisis | 10 | — |
-| [ ] | [`Q3002776`](https://www.wikidata.org/wiki/Q3002776) | crisis portugal | Crise financeira em Portugal de 2010–Presente | 2010-01-01 | financial crisis | 9 | — |
-
-### world-independence-declarations-2010s — 3
-
-| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
-| :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q41796018`](https://www.wikidata.org/wiki/Q41796018) | Catalan declaration of independence | Declaração de independência da Catalunha | 2017-10-27 | resolution | 31 | — |
-| [ ] | [`Q15925292`](https://www.wikidata.org/wiki/Q15925292) | declaration of Independence of the Republic of Crimea | Declaração de Independência da República da Crimeia | 2014-03-11 | declaration of independence | 18 | — |
-| [ ] | [`Q1055742`](https://www.wikidata.org/wiki/Q1055742) | Azawadi declaration of independence | Declaração de independência de Azauade | 2012-04-06 | declaration of independence | 12 | — |
-
-### world-international-conferences-2010s — 12
-
-| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
-| :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q15715792`](https://www.wikidata.org/wiki/Q15715792) | 2015 United Nations Climate Change Conference | Conferência das Nações Unidas sobre as alterações climáticas de 2015 | 2015-11-30 | United Nations Climate Change Conference | 45 | — |
-| [ ] | [`Q60651434`](https://www.wikidata.org/wiki/Q60651434) | 2019 United Nations Climate Change Conference | Conferência das Nações Unidas sobre as Mudanças Climáticas de 2019 | 2019-12-02 | United Nations Climate Change Conference | 19 | — |
-| [ ] | [`Q27887990`](https://www.wikidata.org/wiki/Q27887990) | 2018 United Nations Climate Change Conference | — | 2018-01-01 | United Nations Climate Change Conference | 18 | — |
-| [ ] | [`Q1970109`](https://www.wikidata.org/wiki/Q1970109) | 2010 United Nations Climate Change Conference | Conferência das Nações Unidas sobre as Mudanças Climáticas de 2010 | 2010-11-29 | United Nations Climate Change Conference | 17 | — |
-| [ ] | [`Q152321`](https://www.wikidata.org/wiki/Q152321) | 2012 United Nations Climate Change Conference | Conferência das Nações Unidas sobre as Mudanças Climáticas de 2012 | 2012-11-26 | United Nations Climate Change Conference | 15 | — |
-| [ ] | [`Q544247`](https://www.wikidata.org/wiki/Q544247) | 2011 United Nations Climate Change Conference | Conferência das Nações Unidas sobre as Mudanças Climáticas de 2011 | 2011-11-28 | United Nations Climate Change Conference | 15 | — |
-| [ ] | [`Q12252411`](https://www.wikidata.org/wiki/Q12252411) | 2013 United Nations Climate Change Conference | — | 2013-11-11 | United Nations Climate Change Conference | 15 | — |
-| [ ] | [`Q15707573`](https://www.wikidata.org/wiki/Q15707573) | 2014 United Nations Climate Change Conference | — | 2014-12-01 | United Nations Climate Change Conference | 14 | — |
-| [ ] | [`Q22683784`](https://www.wikidata.org/wiki/Q22683784) | 2016 United Nations Climate Change Conference | COP22 - Conferência de Marraquexe | 2016-11-07 | United Nations Climate Change Conference | 14 | — |
-| [ ] | [`Q27887963`](https://www.wikidata.org/wiki/Q27887963) | 2017 United Nations Climate Change Conference | Conferência das Nações Unidas sobre as Mudanças Climáticas de 2017 | 2017-11-06 | United Nations Climate Change Conference | 14 | — |
-| [ ] | [`Q2750460`](https://www.wikidata.org/wiki/Q2750460) | Donostia-San Sebastián International Peace Conference | — | 2011-10-17 | peace conference | 8 | — |
-| [ ] | [`Q15613979`](https://www.wikidata.org/wiki/Q15613979) | Geneva II Conference on Syria | — | 2014-01-22 | peace conference | 6 | — |
-
-## pt2 1930s — 1 candidate(s), 0 already in the atlas
+| [ ] | [`Q18245126`](https://www.wikidata.org/wiki/Q18245126) | Constitution of Portugal of 1933 | Constituição portuguesa de 1933 | 1933-01-01 | constitution | 6 | — |
 
 ### pt2-strikes-and-protests-1930s — 1
 
@@ -2602,13 +2577,93 @@ to that file and another run, never an edit here.
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
 | [ ] | [`Q105663868`](https://www.wikidata.org/wiki/Q105663868) | Portuguese general strike of 1934 | Greve geral portuguesa de 1934 | 1934-01-18 | general strike | 3 | — |
 
-## pt2 2010s — 54 candidate(s), 2 already in the atlas
+### pt2-crises-1930s — 1
+
+| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
+| :--: | --- | --- | --- | --- | --- | --: | :--: |
+| [ ] | [`Q124881826`](https://www.wikidata.org/wiki/Q124881826) | 1937 dispute between Czechoslovakia and Portugal | — | 1937-01-01 | international incident | 1 | — |
+
+### pt2-foundings-and-nationalisations-1930s — 13
+
+| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
+| :--: | --- | --- | --- | --- | --- | --: | :--: |
+| [ ] | [`Q954010`](https://www.wikidata.org/wiki/Q954010) | National Union | União Nacional | 1930-07-30 | political party | 21 | — |
+| [ ] | [`Q2562540`](https://www.wikidata.org/wiki/Q2562540) | National Syndicalists | Movimento Nacional-Sindicalista | 1932-01-01 | political party | 10 | — |
+| [ ] | [`Q2644063`](https://www.wikidata.org/wiki/Q2644063) | Douro and Port Wine Institute | Instituto dos Vinhos do Douro e do Porto | 1933-01-01 | government agency | 5 | — |
+| [ ] | [`Q10351044`](https://www.wikidata.org/wiki/Q10351044) | State Surveillance and Defense Police | Polícia de Vigilância e Defesa do Estado | 1933-01-01 | political police | 4 | — |
+| [ ] | [`Q91226605`](https://www.wikidata.org/wiki/Q91226605) | — | Associação Humanitária dos Bombeiros Voluntários de Seia | 1934-05-31 | volunteer fire department | 1 | — |
+| [ ] | [`Q91313715`](https://www.wikidata.org/wiki/Q91313715) | — | Associação Humanitária dos Bombeiros Voluntários de Montemor-o-Novo | 1930-08-10 | volunteer fire department | 1 | — |
+| [ ] | [`Q92758397`](https://www.wikidata.org/wiki/Q92758397) | Associação Humanitária de Bombeiros Voluntários de Agualva-Cacém | Associação Humanitária de Bombeiros Voluntários de Agualva-Cacém | 1931-11-13 | volunteer fire department | 1 | — |
+| [ ] | [`Q93390390`](https://www.wikidata.org/wiki/Q93390390) | — | Associação Humanitária de Bombeiros Voluntários de Esmoriz | 1931-01-01 | volunteer fire department | 1 | — |
+| [ ] | [`Q108781696`](https://www.wikidata.org/wiki/Q108781696) | General Directorate of Prison Services (DGSP) | Direcção Geral dos Serviços Prisionais (DGSP) | 1933-06-20 | government agency | 1 | — |
+| [ ] | [`Q9554230`](https://www.wikidata.org/wiki/Q9554230) | Domingos Oliveira Cabinet | VII Governo da Segunda República | 1930-01-21 | Council of Ministers | 1 | — |
+| [ ] | [`Q9554609`](https://www.wikidata.org/wiki/Q9554609) | 1st Salazar Cabinet | VIII Governo da Segunda República | 1932-07-05 | Council of Ministers | 1 | — |
+| [ ] | [`Q16144675`](https://www.wikidata.org/wiki/Q16144675) | 2nd Salazar Cabinet | IX Governo da Segunda República | 1933-04-11 | Council of Ministers | 1 | — |
+| [ ] | [`Q16482723`](https://www.wikidata.org/wiki/Q16482723) | 3rd Oliveira de Salazar Cabinet | X Governo da Segunda República | 1936-01-18 | Council of Ministers | 1 | — |
+
+### pt2-infrastructure-1930s — 6
+
+| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
+| :--: | --- | --- | --- | --- | --- | --: | :--: |
+| [ ] | [`Q10351328`](https://www.wikidata.org/wiki/Q10351328) | Ponte Rodoviaria da Regua | Ponte Rodoviária de Pêso da Régua | 1932-01-01 | road bridge | 4 | — |
+| [ ] | [`Q112623785`](https://www.wikidata.org/wiki/Q112623785) | Ponte de Odeceixe | Ponte de Odeceixe | 1936-01-01 | road bridge | 2 | — |
+| [ ] | [`Q115842492`](https://www.wikidata.org/wiki/Q115842492) | Ponte da Ribeira do Roxo | Ponte da Ribeira do Roxo | 1932-04-23 | road bridge | 2 | — |
+| [ ] | [`Q111918188`](https://www.wikidata.org/wiki/Q111918188) | — | Ponte sobre a Ribeira do Torgal | 1930-01-01 | road bridge | 2 | — |
+| [ ] | [`Q4135446`](https://www.wikidata.org/wiki/Q4135446) | Carvalhas railway bridge | Ponte das Carvalhas | 1932-03-20 | truss bridge | 2 | — |
+| [ ] | [`Q120776529`](https://www.wikidata.org/wiki/Q120776529) | Santa Margarida do Sado Bridge | Ponte de Santa Margarida do Sado | 1938-01-01 | road bridge | 1 | — |
+
+## pt2 1960s — 22 candidate(s), 0 already in the atlas
+
+### pt2-strikes-and-protests-1960s — 2
+
+| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
+| :--: | --- | --- | --- | --- | --- | --: | :--: |
+| [ ] | [`Q3182793`](https://www.wikidata.org/wiki/Q3182793) | 12-3 incident | Motim 1-2-3 | 1966-11-18 | riot | 10 | — |
+| [ ] | [`Q4671129`](https://www.wikidata.org/wiki/Q4671129) | Academic Crisis | Crise académica de 1962 | 1962-01-01 | student protest | 3 | — |
+
+### pt2-foundings-and-nationalisations-1960s — 8
+
+| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
+| :--: | --- | --- | --- | --- | --- | --: | :--: |
+| [ ] | [`Q613464`](https://www.wikidata.org/wiki/Q613464) | Portuguese Democratic Movement | Movimento Democrático Português / Comissão Democrática Eleitoral | 1969-01-01 | political party | 10 | — |
+| [ ] | [`Q15296483`](https://www.wikidata.org/wiki/Q15296483) | General Directorate for Security | Direcção-Geral de Segurança | 1969-01-01 | political police | 5 | — |
+| [ ] | [`Q1660907`](https://www.wikidata.org/wiki/Q1660907) | Inapa | Inapa | 1965-01-01 | public company | 4 | — |
+| [ ] | [`Q25419371`](https://www.wikidata.org/wiki/Q25419371) | Instituto José de Figueiredo | Instituto José de Figueiredo | 1965-01-01 | government agency | 2 | — |
+| [ ] | [`Q101002519`](https://www.wikidata.org/wiki/Q101002519) | Siderurgia Nacional | Siderurgia Nacional, S.A.R.L. | 1961-08-24 | combine | 2 | — |
+| [ ] | [`Q9827413`](https://www.wikidata.org/wiki/Q9827413) | Comissão Eleitoral Monárquica | Comissão Eleitoral Monárquica | 1969-01-01 | political party | 1 | — |
+| [ ] | [`Q18244701`](https://www.wikidata.org/wiki/Q18244701) | Democratic Electoral Commission | Comissão Democrática Eleitoral (CDE) | 1969-01-01 | political party | 1 | — |
+| [ ] | [`Q16142337`](https://www.wikidata.org/wiki/Q16142337) | Caetano Cabinet | XI Governo da Segunda República | 1968-09-27 | Council of Ministers | 1 | — |
+
+### pt2-infrastructure-1960s — 12
+
+| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
+| :--: | --- | --- | --- | --- | --- | --: | :--: |
+| [ ] | [`Q639161`](https://www.wikidata.org/wiki/Q639161) | Madeira Cristiano-Ronaldo Airport | Aeroporto da Madeira | 1964-07-18 | airport | 39 | — |
+| [ ] | [`Q667001`](https://www.wikidata.org/wiki/Q667001) | Faro Airport | Aeroporto Internacional de Faro | 1965-01-01 | airport | 38 | — |
+| [ ] | [`Q721152`](https://www.wikidata.org/wiki/Q721152) | 25 de Abril Bridge | Ponte 25 de Abril | 1966-08-06 | suspension bridge | 33 | — |
+| [ ] | [`Q1432424`](https://www.wikidata.org/wiki/Q1432424) | João Paulo II Airport | Aeroporto João Paulo II | 1969-01-01 | airport | 27 | — |
+| [ ] | [`Q1432485`](https://www.wikidata.org/wiki/Q1432485) | Porto Santo Airport | Aeroporto do Porto Santo | 1960-01-01 | cultural heritage | 25 | — |
+| [ ] | [`Q1785740`](https://www.wikidata.org/wiki/Q1785740) | Arrábida Bridge | Ponte da Arrábida | 1963-01-01 | cultural heritage | 13 | — |
+| [ ] | [`Q3375894`](https://www.wikidata.org/wiki/Q3375894) | Miranda Dam | Barragem de Miranda do Douro | 1960-01-01 | dam | 10 | — |
+| [ ] | [`Q3375842`](https://www.wikidata.org/wiki/Q3375842) | Régua Dam | Barragem da Régua | 1965-01-01 | gravity dam | 9 | — |
+| [ ] | [`Q3375975`](https://www.wikidata.org/wiki/Q3375975) | Carrapatelo Dam | Barragem do Carrapatelo | 1964-01-01 | dam | 8 | — |
+| [ ] | [`Q3246881`](https://www.wikidata.org/wiki/Q3246881) | Barragem de Santa Clara | Barragem de Santa Clara | 1968-01-01 | cultural heritage | 5 | — |
+| [ ] | [`Q9649148`](https://www.wikidata.org/wiki/Q9649148) | Roxo Dam | Barragem do Roxo | 1968-06-30 | dam | 4 | — |
+| [ ] | [`Q121433970`](https://www.wikidata.org/wiki/Q121433970) | — | Ponte de Mértola sobre o Rio Guadiana | 1961-06-21 | beam bridge | 2 | — |
+
+## pt2 2010s — 55 candidate(s), 2 already in the atlas
 
 ### pt2-strikes-and-protests-2010s — 1
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
 | [ ] | [`Q65058412`](https://www.wikidata.org/wiki/Q65058412) | 2019 Portuguese fuel-tanker drivers' strike | — | 2019-01-01 | strike | 1 | — |
+
+### pt2-crises-2010s — 1
+
+| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
+| :--: | --- | --- | --- | --- | --- | --: | :--: |
+| [ ] | [`Q3002776`](https://www.wikidata.org/wiki/Q3002776) | crisis portugal | Crise financeira em Portugal de 2010–Presente | 2010-01-01 | financial crisis | 9 | — |
 
 ### pt2-foundings-and-nationalisations-2010s — 40
 
@@ -2625,7 +2680,7 @@ to that file and another run, never an edit here.
 | [ ] | [`Q71014092`](https://www.wikidata.org/wiki/Q71014092) | XXII Constitutional Government of Portugal | XXII Governo Constitucional de Portugal | 2019-10-26 | Council of Ministers | 8 | — |
 | [ ] | [`Q19694667`](https://www.wikidata.org/wiki/Q19694667) | Together for the People | Juntos pelo Povo | 2015-01-27 | political party | 7 | — |
 | [ ] | [`Q65164025`](https://www.wikidata.org/wiki/Q65164025) | React–Include–Recycle | Reagir Incluir Reciclar | 2019-05-30 | political party | 6 | — |
-| [ ] | [`Q3302210`](https://www.wikidata.org/wiki/Q3302210) | Ministry of Education of Portugal | Ministério da Educação e Ciência | 2015-01-01 | ministry of Portugal | 6 | — |
+| [ ] | [`Q3302210`](https://www.wikidata.org/wiki/Q3302210) | Ministry of Education of Portugal | Ministério da Educação e Ciência | 2015-01-01 | ministry of education | 6 | — |
 | [ ] | [`Q10345627`](https://www.wikidata.org/wiki/Q10345627) | National Democratic Alternative | Alternativa Democrática Nacional | 2014-10-05 | political party | 5 | — |
 | [ ] | [`Q29572173`](https://www.wikidata.org/wiki/Q29572173) | Património Cultural, I.P. | Património Cultural, I.P. | 2011-01-01 | government agency | 5 | — |
 | [ ] | [`Q21554845`](https://www.wikidata.org/wiki/Q21554845) | XX Constitutional Government of Portugal | XX Governo Constitucional de Portugal | 2015-10-30 | Council of Ministers | 5 | — |
@@ -2644,13 +2699,13 @@ to that file and another run, never an edit here.
 | [ ] | [`Q28678830`](https://www.wikidata.org/wiki/Q28678830) | — | Dinheiro Vivo | 2011-01-01 | newspaper | 2 | — |
 | [ ] | [`Q25420839`](https://www.wikidata.org/wiki/Q25420839) | Design Centre Nini Andrade Silva | Design Centre Nini Andrade Silva | 2015-10-22 | restaurant | 2 | — |
 | [ ] | [`Q80116485`](https://www.wikidata.org/wiki/Q80116485) | Landka | Landka | 2010-01-01 | video game developer | 2 | — |
-| [ ] | [`Q21625222`](https://www.wikidata.org/wiki/Q21625222) | Ministry of Economy of Portugal | Ministério da Economia | 2013-01-01 | economic affairs ministry | 2 | — |
 | [ ] | [`Q86734105`](https://www.wikidata.org/wiki/Q86734105) | Ministry of the Environment and Climate Action | Ministério do Ambiente e da Ação Climática | 2019-01-01 | environment ministry | 2 | — |
 | [ ] | [`Q56349789`](https://www.wikidata.org/wiki/Q56349789) | Rodoviária do Lis | Rodoviária do Lis | 2016-01-01 | transport company | 2 | — |
-| [ ] | [`Q113381618`](https://www.wikidata.org/wiki/Q113381618) | WhiteBIT | — | 2018-01-01 | privately held company | 2 | — |
-| [ ] | [`Q25422181`](https://www.wikidata.org/wiki/Q25422181) | Ministry of Labour, Solidarity and Social Protection of Portugal | Ministério do Trabalho, Solidariedade e Segurança Social | 2015-01-01 | ministry of Portugal | 2 | — |
-| [ ] | [`Q61002045`](https://www.wikidata.org/wiki/Q61002045) | Ministério do Ambiente e da Transição Energética do Portugal | Ministério do Ambiente e da Transição Energética | 2018-01-01 | ministry of Portugal | 2 | — |
+| [ ] | [`Q21625222`](https://www.wikidata.org/wiki/Q21625222) | Ministry of Economy of Portugal | Ministério da Economia | 2013-01-01 | economic affairs ministry | 2 | — |
 | [ ] | [`Q18672490`](https://www.wikidata.org/wiki/Q18672490) | Primeira Idade | Primeira Idade | 2014-01-01 | business | 2 | — |
+| [ ] | [`Q113381618`](https://www.wikidata.org/wiki/Q113381618) | WhiteBIT | — | 2018-01-01 | business | 2 | — |
+| [ ] | [`Q25422181`](https://www.wikidata.org/wiki/Q25422181) | Ministry of Labour, Solidarity and Social Protection of Portugal | Ministério do Trabalho, Solidariedade e Segurança Social | 2015-01-01 | ministry of social affairs | 2 | — |
+| [ ] | [`Q61002045`](https://www.wikidata.org/wiki/Q61002045) | Ministério do Ambiente e da Transição Energética do Portugal | Ministério do Ambiente e da Transição Energética | 2018-01-01 | ministry of Portugal | 2 | — |
 | [ ] | [`Q10302957`](https://www.wikidata.org/wiki/Q10302957) | — | Instituto do Desporto e Juventude | 2011-01-01 | government agency | 1 | — |
 | [ ] | [`Q25442332`](https://www.wikidata.org/wiki/Q25442332) | Secretaria Regional da Economia, Turismo e Cultura | Secretaria Regional da Economia, Turismo e Cultura | 2015-01-01 | government agency | 1 | — |
 | [ ] | [`Q25442437`](https://www.wikidata.org/wiki/Q25442437) | Secretaria Regional da Inclusão e Assuntos Sociais | Secretaria Regional da Inclusão e Assuntos Sociais | 2015-01-01 | government agency | 1 | — |
@@ -2666,10 +2721,10 @@ to that file and another run, never an edit here.
 | [ ] | [`Q9649153`](https://www.wikidata.org/wiki/Q9649153) | Foz Tua Dam | Barragem de Foz Tua | 2011-01-01 | pumped-storage power station | 4 | — |
 | [ ] | [`Q10386060`](https://www.wikidata.org/wiki/Q10386060) | Marão Tunnel | Túnel do Marão | 2016-05-07 | tunnel | 3 | — |
 | [ ] | [`Q110824083`](https://www.wikidata.org/wiki/Q110824083) | Ponte Pedonal de Odemira | Ponte Pedonal de Odemira | 2013-01-01 | cable-stayed bridge | 2 | — |
-| [ ] | [`Q106159072`](https://www.wikidata.org/wiki/Q106159072) | Rio Chanca Bridge | Ponte Internacional do rio Chança | 2012-01-01 | international bridge | 1 | — |
 | [ ] | [`Q56371707`](https://www.wikidata.org/wiki/Q56371707) | Frades II Hydroelectric Power Plant | Central Hidroelétrica de Frades II | 2010-01-01 | pumped-storage power station | 1 | — |
-| [ ] | [`Q33110235`](https://www.wikidata.org/wiki/Q33110235) | Castelo Branco Airfield | Aeródromo de Castelo Branco | 2013-08-12 | airport | 1 | — |
+| [ ] | [`Q106159072`](https://www.wikidata.org/wiki/Q106159072) | Rio Chanca Bridge | Ponte Internacional do rio Chança | 2012-01-01 | road bridge | 1 | — |
 | [ ] | [`Q56371738`](https://www.wikidata.org/wiki/Q56371738) | Hydroelectric Power Station of Ribeiradio | Central hidroeléctrica de Ribeiradio | 2010-01-01 | hydroelectric power station | 1 | — |
+| [ ] | [`Q33110235`](https://www.wikidata.org/wiki/Q33110235) | Castelo Branco Airfield | Aeródromo de Castelo Branco | 2013-08-12 | airport | 1 | — |
 
 ### pt2-attacks-trials-and-disasters-2010s — 2
 
@@ -2685,8 +2740,8 @@ to that file and another run, never an edit here.
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
 | [ ] | [`Q137362412`](https://www.wikidata.org/wiki/Q137362412) | 2025 Portuguese general strike | Greve Geral de 2025 | 2025-12-11 | general strike | 3 | — |
-| [ ] | [`Q136722615`](https://www.wikidata.org/wiki/Q136722615) | 2023 Portuguese public sector strikes | — | 2023-01-01 | strike | 1 | — |
 | [ ] | [`Q122887747`](https://www.wikidata.org/wiki/Q122887747) | — | Manifestação pela habitação e pela justiça climática 2023.09.30 | 2023-09-30 | protest march | 1 | — |
+| [ ] | [`Q136722615`](https://www.wikidata.org/wiki/Q136722615) | 2023 Portuguese public sector strikes | — | 2023-01-01 | strike | 1 | — |
 
 ### pt2-foundings-and-nationalisations-2020s — 19
 
@@ -2697,28 +2752,28 @@ to that file and another run, never an edit here.
 | [ ] | [`Q134130064`](https://www.wikidata.org/wiki/Q134130064) | XXV Constitutional Government of Portugal | XXV Governo Constitucional de Portugal | 2025-06-05 | Council of Ministers | 7 | — |
 | [ ] | [`Q97303443`](https://www.wikidata.org/wiki/Q97303443) | Volt Portugal | Volt Portugal | 2020-06-25 | political party | 4 | — |
 | [ ] | [`Q133273478`](https://www.wikidata.org/wiki/Q133273478) | Social Liberal Party | Partido Liberal Social | 2025-03-11 | political party | 3 | — |
-| [ ] | [`Q126949971`](https://www.wikidata.org/wiki/Q126949971) | Mensagem de Lisboa | Mensagem de Lisboa | 2020-01-01 | business | 2 | — |
-| [ ] | [`Q123263116`](https://www.wikidata.org/wiki/Q123263116) | — | Ministério da Economia e do Mar | 2022-01-01 | ministry of Portugal | 2 | — |
-| [ ] | [`Q106547799`](https://www.wikidata.org/wiki/Q106547799) | Agency for Integration, Migration and Asylum | Agência para a Integração, Migrações e Asilo | 2023-01-01 | government agency | 2 | — |
 | [ ] | [`Q111611112`](https://www.wikidata.org/wiki/Q111611112) | Carris Metropolitana | Carris Metropolitana | 2022-01-01 | transport company | 2 | — |
+| [ ] | [`Q106547799`](https://www.wikidata.org/wiki/Q106547799) | Agency for Integration, Migration and Asylum | Agência para a Integração, Migrações e Asilo | 2023-01-01 | government agency | 2 | — |
+| [ ] | [`Q126949971`](https://www.wikidata.org/wiki/Q126949971) | Mensagem de Lisboa | Mensagem de Lisboa | 2020-01-01 | business | 2 | — |
+| [ ] | [`Q123263116`](https://www.wikidata.org/wiki/Q123263116) | — | Ministério da Economia e do Mar | 2022-01-01 | economic affairs ministry | 2 | — |
 | [ ] | [`Q97656636`](https://www.wikidata.org/wiki/Q97656636) | Casa dos Ecos | Casa dos Ecos | 2020-07-18 | restaurant | 1 | — |
 | [ ] | [`Q127693833`](https://www.wikidata.org/wiki/Q127693833) | A Praça | A Praça | 2020-07-27 | restaurant | 1 | — |
-| [ ] | [`Q126917508`](https://www.wikidata.org/wiki/Q126917508) | LaPutaria | LaPutaria | 2021-01-01 | business | 1 | — |
-| [ ] | [`Q127548459`](https://www.wikidata.org/wiki/Q127548459) | Locky | Locky | 2022-01-01 | business | 1 | — |
-| [ ] | [`Q130863237`](https://www.wikidata.org/wiki/Q130863237) | Digi Portugal | Digi Portugal | 2021-01-01 | business | 1 | — |
 | [ ] | [`Q105497555`](https://www.wikidata.org/wiki/Q105497555) | Banco Português de Fomento | Banco Português de Fomento | 2020-11-03 | bank | 1 | — |
-| [ ] | [`Q30281678`](https://www.wikidata.org/wiki/Q30281678) | Unidade Local de Saúde de Gaia e Espinho | Unidade Local de Saúde de Gaia e Espinho | 2024-01-01 | Unidade Local de Saúde | 1 | — |
 | [ ] | [`Q124098736`](https://www.wikidata.org/wiki/Q124098736) | UNIR | UNIR | 2023-12-01 | transport company | 1 | — |
 | [ ] | [`Q138752241`](https://www.wikidata.org/wiki/Q138752241) | Sintra434 | Sintra434 | 2025-01-01 | transport company | 1 | — |
+| [ ] | [`Q126917508`](https://www.wikidata.org/wiki/Q126917508) | LaPutaria | LaPutaria | 2021-01-01 | public company | 1 | — |
 | [ ] | [`Q139493086`](https://www.wikidata.org/wiki/Q139493086) | BRAINR | BRAINR | 2023-01-01 | software company | 1 | — |
+| [ ] | [`Q127548459`](https://www.wikidata.org/wiki/Q127548459) | Locky | Locky | 2022-01-01 | business | 1 | — |
+| [ ] | [`Q130863237`](https://www.wikidata.org/wiki/Q130863237) | Digi Portugal | Digi Portugal | 2021-01-01 | business | 1 | — |
+| [ ] | [`Q30281678`](https://www.wikidata.org/wiki/Q30281678) | Unidade Local de Saúde de Gaia e Espinho | Unidade Local de Saúde de Gaia e Espinho | 2024-01-01 | hospital network | 1 | — |
 
 ### pt2-infrastructure-2020s — 3
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q100166601`](https://www.wikidata.org/wiki/Q100166601) | 516 Arouca | Ponte 516 Arouca | 2021-04-30 | footbridge | 16 | — |
-| [ ] | [`Q118213963`](https://www.wikidata.org/wiki/Q118213963) | Ponte Hintze Ribeiro | Ponte Hintze Ribeiro | 2022-05-04 | road bridge | 2 | — |
-| [ ] | [`Q131414381`](https://www.wikidata.org/wiki/Q131414381) | Barragem do Pico da Urze | Barragem do Pico da Urze | 2020-01-01 | pumped-storage power station | 1 | — |
+| [ ] | [`Q100166601`](https://www.wikidata.org/wiki/Q100166601) | 516 Arouca | Ponte 516 Arouca | 2021-04-30 | suspension bridge | 16 | — |
+| [ ] | [`Q118213963`](https://www.wikidata.org/wiki/Q118213963) | Ponte Hintze Ribeiro | Ponte Hintze Ribeiro | 2022-05-04 | truss bridge | 2 | — |
+| [ ] | [`Q131414381`](https://www.wikidata.org/wiki/Q131414381) | Barragem do Pico da Urze | Barragem do Pico da Urze | 2020-01-01 | reservoir | 1 | — |
 
 ### pt2-attacks-trials-and-disasters-2020s — 3
 
@@ -2728,116 +2783,431 @@ to that file and another run, never an edit here.
 | [ ] | [`Q97957820`](https://www.wikidata.org/wiki/Q97957820) | Soure train crash | Acidente ferroviário de Soure | 2020-07-31 | railway accident | 3 | — |
 | [ ] | [`Q105532824`](https://www.wikidata.org/wiki/Q105532824) | Murder of Ihor Humenyuk | Homicídio de Ihor Humenyuk | 2020-03-12 | homicide | 1 | — |
 
-## pt2 1910s — 1 candidate(s), 0 already in the atlas
+## pt2 1970s — 52 candidate(s), 3 already in the atlas
 
-### pt2-crises-1910s — 1
-
-| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
-| :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q30904810`](https://www.wikidata.org/wiki/Q30904810) | Battle of Monsanto | tomada de Monsanto | 1919-01-22 | attempted coup d'état | 1 | — |
-
-## pt2 1960s — 1 candidate(s), 0 already in the atlas
-
-### pt2-crises-1960s — 1
+### pt2-crises-1970s — 5
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q3773188`](https://www.wikidata.org/wiki/Q3773188) | — | Golpe Botelho Moniz | 1961-04-12 | attempted coup d'état | 3 | — |
+| [ ] | [`Q2583734`](https://www.wikidata.org/wiki/Q2583734) | Indonesian invasion of East Timor | Invasão indonésia de Timor-Leste | 1975-12-07 | invasion | 24 | — |
+| [ ] | [`Q5177976`](https://www.wikidata.org/wiki/Q5177976) | Coup of 25 November 1975 | Golpe de 25 de Novembro de 1975 | 1975-11-25 | attempted coup d'état | 5 | — |
+| [ ] | [`Q18480997`](https://www.wikidata.org/wiki/Q18480997) | March 1975 Portuguese coup d'état attempt | Golpe de 11 de Março de 1975 | 1975-03-11 | attempted coup d'état | 3 | — |
+| [ ] | [`Q139594621`](https://www.wikidata.org/wiki/Q139594621) | — | Tentativa de golpe de Estado em São Tomé e Príncipe em 1978 | 1978-03-01 | attempted coup d'état | 1 | — |
+| [ ] | [`Q4416392`](https://www.wikidata.org/wiki/Q4416392) | Maioria silenciosa | Maioria silenciosa | 1974-01-01 | political crisis | 1 | — |
 
-## pt2 2000s — 62 candidate(s), 0 already in the atlas
-
-### pt2-foundings-and-nationalisations-2000s — 40
-
-| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
-| :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q842108`](https://www.wikidata.org/wiki/Q842108) | Euronext | Euronext | 2000-09-22 | business | 47 | — |
-| [ ] | [`Q922693`](https://www.wikidata.org/wiki/Q922693) | European Maritime Safety Agency | Agência Europeia de Segurança Marítima | 2002-08-25 | decentralised agency of the European Union | 28 | — |
-| [ ] | [`Q993079`](https://www.wikidata.org/wiki/Q993079) | European Gendarmerie Force | Força de Gendarmaria Europeia | 2007-10-18 | gendarmerie | 22 | — |
-| [ ] | [`Q281710`](https://www.wikidata.org/wiki/Q281710) | Hi Fly | Air Luxor | 2005-01-01 | airline | 20 | — |
-| [ ] | [`Q618093`](https://www.wikidata.org/wiki/Q618093) | White Airways | White Airways | 2005-01-01 | airline | 18 | — |
-| [ ] | [`Q4782260`](https://www.wikidata.org/wiki/Q4782260) | Aptoide | Aptoide | 2009-11-17 | free software | 15 | — |
-| [ ] | [`Q444971`](https://www.wikidata.org/wiki/Q444971) | Altri | Altri | 2005-03-01 | company | 14 | — |
-| [ ] | [`Q1118859`](https://www.wikidata.org/wiki/Q1118859) | Fox Crime | FOX Crime | 2005-01-01 | television production company | 14 | — |
-| [ ] | [`Q2667744`](https://www.wikidata.org/wiki/Q2667744) | Orbest | Orbest | 2007-01-01 | airline | 13 | — |
-| [ ] | [`Q686182`](https://www.wikidata.org/wiki/Q686182) | The Navigator Company | Portucel | 2001-01-01 | business | 13 | — |
-| [ ] | [`Q4374070`](https://www.wikidata.org/wiki/Q4374070) | Embassy of Ukraine, Lisbon | Embaixada da Ucrânia em Lisboa | 2001-10-01 | embassy | 13 | — |
-| [ ] | [`Q18712957`](https://www.wikidata.org/wiki/Q18712957) | Farfetch | Farfetch | 2007-06-01 | business | 12 | — |
-| [ ] | [`Q1365938`](https://www.wikidata.org/wiki/Q1365938) | MEO | MEO | 2007-06-01 | business | 11 | — |
-| [ ] | [`Q2054681`](https://www.wikidata.org/wiki/Q2054681) | Rise up! | Ergue-te! | 2000-04-12 | political party | 10 | — |
-| [ ] | [`Q4033474`](https://www.wikidata.org/wiki/Q4033474) | Aero VIP | — | 2000-01-01 | airline | 10 | — |
-| [ ] | [`Q634443`](https://www.wikidata.org/wiki/Q634443) | high-speed rail in Portugal | Rede Ferroviária de Alta Velocidade | 2000-12-19 | railway infrastructure manager | 8 | — |
-| [ ] | [`Q202085`](https://www.wikidata.org/wiki/Q202085) | IGESPAR | Instituto de Gestão do Património Arquitectónico e Arqueológico | 2006-01-01 | government agency | 8 | — |
-| [ ] | [`Q605026`](https://www.wikidata.org/wiki/Q605026) | New Democracy Party | Nova Democracia | 2003-06-18 | political party | 7 | — |
-| [ ] | [`Q202689`](https://www.wikidata.org/wiki/Q202689) | Medway - Transportes e Logística | Medway - Transporte & Logística | 2009-07-13 | transport company | 7 | — |
-| [ ] | [`Q7232654`](https://www.wikidata.org/wiki/Q7232654) | Portuguese Labour Party | Partido Trabalhista Português | 2009-07-01 | political party | 6 | — |
-| [ ] | [`Q2274374`](https://www.wikidata.org/wiki/Q2274374) | Serviço de Informações Estratégicas de Defesa | Serviço de Informações Estratégicas de Defesa | 2004-01-01 | government agency | 6 | — |
-| [ ] | [`Q2389196`](https://www.wikidata.org/wiki/Q2389196) | Takargo Rail | Takargo | 2006-01-01 | business | 6 | — |
-| [ ] | [`Q1143305`](https://www.wikidata.org/wiki/Q1143305) | Sumol Compal | Sumol  Compal | 2009-01-01 | public company | 6 | — |
-| [ ] | [`Q239352`](https://www.wikidata.org/wiki/Q239352) | XVII Constitutional Government of Portugal | XVII Governo Constitucional de Portugal | 2005-03-12 | Council of Ministers | 6 | — |
-| [ ] | [`Q1146060`](https://www.wikidata.org/wiki/Q1146060) | XVI Constitutional Government of Portugal | XVI Governo Constitucional de Portugal | 2004-07-17 | Council of Ministers | 6 | — |
-| [ ] | [`Q1568610`](https://www.wikidata.org/wiki/Q1568610) | XVIII Constitutional Government of Portugal | XVIII Governo Constitucional de Portugal | 2009-10-26 | Council of Ministers | 6 | — |
-| [ ] | [`Q2105350`](https://www.wikidata.org/wiki/Q2105350) | Portugal Pro-Life | Portugal pro Vida | 2009-07-01 | political party | 5 | — |
-| [ ] | [`Q111920377`](https://www.wikidata.org/wiki/Q111920377) | — | — | 2008-11-28 | company | 5 | — |
-| [ ] | [`Q1719859`](https://www.wikidata.org/wiki/Q1719859) | XV Constitutional Government of Portugal | XV Governo Constitucional de Portugal | 2002-04-06 | Council of Ministers | 5 | — |
-| [ ] | [`Q1129197`](https://www.wikidata.org/wiki/Q1129197) | Global Media Group | Global Media Group | 2005-01-01 | mass media | 4 | — |
-| [ ] | [`Q60772401`](https://www.wikidata.org/wiki/Q60772401) | COS | — | 2007-03-01 | fashion | 4 | — |
-| [ ] | [`Q220114`](https://www.wikidata.org/wiki/Q220114) | Zoo Lagos | Zoo de Lagos | 2000-11-16 | zoo | 4 | — |
-| [ ] | [`Q9592659`](https://www.wikidata.org/wiki/Q9592659) | Portuguese Environment Agency | Agência Portuguesa do Ambiente | 2007-04-27 | government agency | 4 | — |
-| [ ] | [`Q2933390`](https://www.wikidata.org/wiki/Q2933390) | Caixa Mágica Software | Caixa Mágica Software | 2004-01-01 | business | 4 | — |
-| [ ] | [`Q60742778`](https://www.wikidata.org/wiki/Q60742778) | The Social Hub | — | 2005-01-01 | business | 4 | — |
-| [ ] | [`Q105871995`](https://www.wikidata.org/wiki/Q105871995) | The Walt Disney Company Portugal | The Walt Disney Company Portugal | 2003-01-01 | business | 4 | — |
-| [ ] | [`Q108195506`](https://www.wikidata.org/wiki/Q108195506) | Fidelidade Seguros | Fidelidade Mundial | 2004-01-01 | business | 4 | — |
-| [ ] | [`Q24293069`](https://www.wikidata.org/wiki/Q24293069) | Tekever | Tekever | 2001-01-01 | enterprise | 4 | — |
-| [ ] | [`Q4294767`](https://www.wikidata.org/wiki/Q4294767) | Ministry of Labour and Social Solidarity | Ministério do Trabalho e da Solidariedade Social | 2005-01-01 | ministry of labour | 3 | — |
-| [ ] | [`Q4294818`](https://www.wikidata.org/wiki/Q4294818) | Ministry of Economy, Innovation and Development | Ministério da Economia, da Inovação e do Desenvolvimento | 2009-01-01 | ministry | 3 | — |
-
-### pt2-infrastructure-2000s — 15
+### pt2-foundings-and-nationalisations-1970s — 40
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q29757`](https://www.wikidata.org/wiki/Q29757) | Metro do Porto | Metro do Porto | 2002-12-07 | light rail | 26 | — |
-| [ ] | [`Q1431141`](https://www.wikidata.org/wiki/Q1431141) | Corvo Airport | Aeródromo do Corvo | 2005-01-01 | airport | 17 | — |
-| [ ] | [`Q2165228`](https://www.wikidata.org/wiki/Q2165228) | Alqueva Dam | Barragem de Alqueva | 2002-01-01 | arch dam | 15 | — |
-| [ ] | [`Q3375350`](https://www.wikidata.org/wiki/Q3375350) | Bemposta Dam | Barragem de Bemposta | 2008-01-01 | dam | 10 | — |
-| [ ] | [`Q3375706`](https://www.wikidata.org/wiki/Q3375706) | Picote Dam | Barragem de Picote | 2007-01-01 | dam | 10 | — |
-| [ ] | [`Q9064482`](https://www.wikidata.org/wiki/Q9064482) | Infante Dom Henrique bridge | Ponte Infante Dom Henrique | 2002-01-01 | road bridge | 7 | — |
-| [ ] | [`Q53244`](https://www.wikidata.org/wiki/Q53244) | Lezíria Bridge | Ponte da Lezíria | 2007-07-01 | road bridge | 5 | — |
-| [ ] | [`Q10351349`](https://www.wikidata.org/wiki/Q10351349) | Lower Guadiana International Bridge | Ponte Internacional do Baixo Guadiana | 2009-01-01 | road bridge | 4 | — |
-| [ ] | [`Q16496934`](https://www.wikidata.org/wiki/Q16496934) | Sabugal dam | Barragem de Sabugal | 2000-03-01 | dam | 3 | — |
-| [ ] | [`Q30916358`](https://www.wikidata.org/wiki/Q30916358) | — | Ponte Internacional do Marco | 2008-01-01 | beam bridge | 3 | — |
-| [ ] | [`Q7228106`](https://www.wikidata.org/wiki/Q7228106) | Circular Pedestrian Bridge | Ponte Pedonal Circular | 2006-05-01 | footbridge | 3 | — |
-| [ ] | [`Q56098632`](https://www.wikidata.org/wiki/Q56098632) | Ponte da Amizade | Ponte da Amizade | 2004-06-10 | international bridge | 3 | — |
-| [ ] | [`Q25226869`](https://www.wikidata.org/wiki/Q25226869) | Ponte de Aljezur | Ponte de Aljezur | 2000-01-01 | arch bridge | 2 | — |
-| [ ] | [`Q56016450`](https://www.wikidata.org/wiki/Q56016450) | — | — | 2008-01-01 | pumped-storage power station | 2 | — |
-| [ ] | [`Q140130443`](https://www.wikidata.org/wiki/Q140130443) | Ponte de Entre-os-Rios | Ponte de Entre-os-Rios | 2004-02-06 | road bridge | 2 | — |
+| [ ] | [`Q847263`](https://www.wikidata.org/wiki/Q847263) | Socialist Party | Partido Socialista | 1973-04-19 | political party | 42 | yes |
+| [ ] | [`Q595575`](https://www.wikidata.org/wiki/Q595575) | Social Democratic Party | Partido Social Democrata | 1974-05-06 | political party | 39 | yes |
+| [ ] | [`Q1054298`](https://www.wikidata.org/wiki/Q1054298) | CDS - Partido Popular | CDS - Partido Popular | 1974-07-19 | political party | 21 | yes |
+| [ ] | [`Q29673`](https://www.wikidata.org/wiki/Q29673) | University of Minho | Universidade do Minho | 1973-08-11 | open-access publisher | 18 | — |
+| [ ] | [`Q29671`](https://www.wikidata.org/wiki/Q29671) | University of Aveiro | Universidade de Aveiro | 1973-01-01 | public university | 18 | — |
+| [ ] | [`Q1341222`](https://www.wikidata.org/wiki/Q1341222) | Energias de Portugal | Energias de Portugal | 1976-01-01 | business | 15 | — |
+| [ ] | [`Q1461089`](https://www.wikidata.org/wiki/Q1461089) | University of the Azores | Universidade dos Açores | 1976-01-01 | public university | 15 | — |
+| [ ] | [`Q1851550`](https://www.wikidata.org/wiki/Q1851550) | People's Monarchist Party | Partido Popular Monárquico | 1974-05-23 | political party | 14 | — |
+| [ ] | [`Q2054628`](https://www.wikidata.org/wiki/Q2054628) | Portuguese Workers' Communist Party/Re-Organized Movement of the Party of the Proletariat | PCTP/MRPP | 1970-01-01 | political party | 12 | — |
+| [ ] | [`Q740205`](https://www.wikidata.org/wiki/Q740205) | Government of Portugal | Governo da República Portuguesa | 1974-01-01 | executive branch | 12 | — |
+| [ ] | [`Q381415`](https://www.wikidata.org/wiki/Q381415) | Aerocondor | Aerocondor | 1975-01-01 | airline | 12 | — |
+| [ ] | [`Q1972136`](https://www.wikidata.org/wiki/Q1972136) | University of Algarve | Universidade do Algarve | 1976-01-01 | open-access publisher | 12 | — |
+| [ ] | [`Q2054807`](https://www.wikidata.org/wiki/Q2054807) | Revolutionary Socialist Party | PSR | 1979-04-02 | political party | 11 | — |
+| [ ] | [`Q2119074`](https://www.wikidata.org/wiki/Q2119074) | People's Democratic Union | União Democrática Popular (UDP) | 1974-12-16 | political party | 11 | — |
+| [ ] | [`Q260897`](https://www.wikidata.org/wiki/Q260897) | Azores Liberation Front | Frente de Libertação dos Açores | 1975-01-01 | political party | 10 | — |
+| [ ] | [`Q587719`](https://www.wikidata.org/wiki/Q587719) | Brisa – Auto-estradas de Portugal | Brisa | 1972-01-01 | business | 10 | — |
+| [ ] | [`Q1332539`](https://www.wikidata.org/wiki/Q1332539) | Workers Party of Socialist Unity | Partido Operário de Unidade Socialista | 1979-08-23 | political party | 7 | — |
+| [ ] | [`Q1819658`](https://www.wikidata.org/wiki/Q1819658) | Democratic Party of the Atlantic | Partido Democrático do Atlântico | 1979-11-05 | political party | 7 | — |
+| [ ] | [`Q3112915`](https://www.wikidata.org/wiki/Q3112915) | Leftwing Union for the Socialist Democracy | União da Esquerda para a Democracia Socialista | 1979-08-20 | political party | 5 | — |
+| [ ] | [`Q3306054`](https://www.wikidata.org/wiki/Q3306054) | Portuguese Marxist–Leninist Communist Organization | Organização Comunista Marxista-Leninista Portuguesa | 1976-10-25 | political party | 5 | — |
+| [ ] | [`Q6926764`](https://www.wikidata.org/wiki/Q6926764) | Movement of Socialist Left | Movimento de Esquerda Socialista | 1975-02-20 | political party | 5 | — |
+| [ ] | [`Q782854`](https://www.wikidata.org/wiki/Q782854) | Embassy of Australia, Lisbon | Embaixada da Austrália em Lisboa | 1970-03-08 | embassy | 5 | — |
+| [ ] | [`Q678051`](https://www.wikidata.org/wiki/Q678051) | I Constitutional Government of Portugal | I Governo Constitucional de Portugal | 1976-07-23 | Council of Ministers | 5 | — |
+| [ ] | [`Q683287`](https://www.wikidata.org/wiki/Q683287) | II Constitutional Government of Portugal | II Governo Constitucional de Portugal | 1978-01-23 | Council of Ministers | 5 | — |
+| [ ] | [`Q3293542`](https://www.wikidata.org/wiki/Q3293542) | Worker–Peasant Alliance | Partido Trabalhista | 1974-11-17 | political party | 4 | — |
+| [ ] | [`Q3327061`](https://www.wikidata.org/wiki/Q3327061) | Popular Unity Party | Partido de Unidade Popular | 1975-02-27 | political party | 4 | — |
+| [ ] | [`Q6055362`](https://www.wikidata.org/wiki/Q6055362) | Internationalist Communist League | Liga Comunista Internacionalista (Portugal) | 1973-12-01 | political party | 4 | — |
+| [ ] | [`Q7165776`](https://www.wikidata.org/wiki/Q7165776) | People's Socialist Front | Frente Socialista Popular | 1975-02-27 | political party | 4 | — |
+| [ ] | [`Q1281360`](https://www.wikidata.org/wiki/Q1281360) | IV Constitutional Government of Portugal | IV Governo Constitucional de Portugal | 1978-11-22 | Council of Ministers | 4 | — |
+| [ ] | [`Q1720177`](https://www.wikidata.org/wiki/Q1720177) | III Constitutional Government of Portugal | III Governo Constitucional de Portugal | 1978-08-29 | Council of Ministers | 4 | — |
+| [ ] | [`Q10388603`](https://www.wikidata.org/wiki/Q10388603) | V Constitutional Government of Portugal | V Governo Constitucional de Portugal | 1979-07-07 | Council of Ministers | 4 | — |
+| [ ] | [`Q5154439`](https://www.wikidata.org/wiki/Q5154439) | Communist Party of Portugal | Partido Comunista de Portugal (marxista-leninista) | 1976-03-26 | political party | 3 | — |
+| [ ] | [`Q5202448`](https://www.wikidata.org/wiki/Q5202448) | Workers' Revolutionary Party (Portugal) | Partido Revolucionário dos Trabalhadores (Portugal) | 1975-01-01 | political party | 3 | — |
+| [ ] | [`Q7010657`](https://www.wikidata.org/wiki/Q7010657) | New Order (party) | Ordem Nova (partido) | 1978-01-01 | political party | 3 | — |
+| [ ] | [`Q9635257`](https://www.wikidata.org/wiki/Q9635257) | Associação para a Defesa dos Interesses de Macau | Associação para a Defesa dos Interesses de Macau | 1974-01-01 | political party | 3 | — |
+| [ ] | [`Q10332811`](https://www.wikidata.org/wiki/Q10332811) | Movimento Independente para a Reconstrução Nacional / Partido da Direita Portuguesa | Movimento Independente para a Reconstrução Nacional / Partido da Direita Portuguesa | 1979-07-27 | political party | 3 | — |
+| [ ] | [`Q10345700`](https://www.wikidata.org/wiki/Q10345700) | Christian Democratic Party | Partido da Democracia Cristã | 1975-02-13 | political party | 3 | — |
+| [ ] | [`Q7455919`](https://www.wikidata.org/wiki/Q7455919) | Serviço de Estrangeiros e Fronteiras | Serviço de Estrangeiros e Fronteiras | 1974-01-01 | criminal police | 3 | — |
+| [ ] | [`Q4671102`](https://www.wikidata.org/wiki/Q4671102) | Academia de Marinha | Academia de Marinha | 1978-01-01 | research institute | 2 | — |
+| [ ] | [`Q6973518`](https://www.wikidata.org/wiki/Q6973518) | National Industrial Property Institute | Instituto Nacional da Propriedade Industrial (Portugal) | 1976-07-28 | patent office | 2 | — |
 
-### pt2-attacks-trials-and-disasters-2000s — 7
+### pt2-infrastructure-1970s — 7
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q28680319`](https://www.wikidata.org/wiki/Q28680319) | — | Desastre Ferroviário de Ermida | 2000-12-11 | railway accident | 1 | — |
-| [ ] | [`Q28680463`](https://www.wikidata.org/wiki/Q28680463) | — | Desastre Ferroviário da Lousã | 2002-04-04 | railway accident | 1 | — |
-| [ ] | [`Q28680509`](https://www.wikidata.org/wiki/Q28680509) | — | Acidente Ferroviário de Abela | 2003-05-14 | railway accident | 1 | — |
-| [ ] | [`Q30929666`](https://www.wikidata.org/wiki/Q30929666) | — | Acidente Ferroviário de Bias | 2003-06-18 | railway accident | 1 | — |
-| [ ] | [`Q30932128`](https://www.wikidata.org/wiki/Q30932128) | — | Acidente Ferroviário de Castanheiro | 2007-02-12 | railway accident | 1 | — |
-| [ ] | [`Q30932617`](https://www.wikidata.org/wiki/Q30932617) | — | Acidente Ferroviário de Brunheda | 2008-08-22 | railway accident | 1 | — |
-| [ ] | [`Q48873291`](https://www.wikidata.org/wiki/Q48873291) | — | Acidente ferroviário de Baião | 2009-09-01 | railway accident | 1 | — |
+| [ ] | [`Q1431519`](https://www.wikidata.org/wiki/Q1431519) | Horta Airport | Aeroporto da Horta | 1971-01-01 | airport | 18 | — |
+| [ ] | [`Q9648934`](https://www.wikidata.org/wiki/Q9648934) | Aguieira Dam | Barragem da Aguieira | 1972-01-01 | bridge | 9 | — |
+| [ ] | [`Q3359757`](https://www.wikidata.org/wiki/Q3359757) | Valeira Dam | Barragem da Valeira | 1971-01-01 | cultural heritage | 9 | — |
+| [ ] | [`Q3375955`](https://www.wikidata.org/wiki/Q3375955) | Crestuma-Lever Dam | Barragem de Crestuma-Lever | 1976-01-01 | gravity dam | 8 | — |
+| [ ] | [`Q9649056`](https://www.wikidata.org/wiki/Q9649056) | Barragem de Torrão | Barragem de Torrão | 1979-01-01 | pumped-storage power station | 5 | — |
+| [ ] | [`Q110864612`](https://www.wikidata.org/wiki/Q110864612) | Ponte de Vila Nova de Milfontes | Ponte de Vila Nova de Milfontes | 1978-01-01 | road bridge | 2 | — |
+| [ ] | [`Q25419197`](https://www.wikidata.org/wiki/Q25419197) | — | Barragem de Covas | 1976-01-01 | embankment dam | 1 | — |
 
-## pt2 1990s — 17 candidate(s), 0 already in the atlas
+## pt2 1890s — 16 candidate(s), 0 already in the atlas
 
-### pt2-infrastructure-1990s — 12
+### pt2-foundings-and-nationalisations-1890s — 10
+
+| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
+| :--: | --- | --- | --- | --- | --- | --: | :--: |
+| [ ] | [`Q17014172`](https://www.wikidata.org/wiki/Q17014172) | Polícia Judiciária | Polícia Judiciária | 1893-01-01 | law enforcement agency | 5 | — |
+| [ ] | [`Q555837`](https://www.wikidata.org/wiki/Q555837) | Caminhos de Ferro do Estado | Caminhos de Ferro do Estado | 1899-01-01 | railway company | 3 | — |
+| [ ] | [`Q16502097`](https://www.wikidata.org/wiki/Q16502097) | Bombeiros Voluntários de Soure | Associação Humanitária dos Bombeiros Voluntários do Concelho de Soure | 1890-11-19 | volunteer fire department | 2 | — |
+| [ ] | [`Q10266748`](https://www.wikidata.org/wiki/Q10266748) | Directorate-General of Health | Direção-Geral da Saúde | 1899-01-01 | government agency | 2 | — |
+| [ ] | [`Q9661188`](https://www.wikidata.org/wiki/Q9661188) | — | Bombeiros Voluntários de Paço de Arcos | 1893-10-30 | volunteer fire department | 1 | — |
+| [ ] | [`Q91665044`](https://www.wikidata.org/wiki/Q91665044) | Associação Humanitária dos Bombeiros Voluntários de Vila Real – Cruz Verde | Associação Humanitária dos Bombeiros Voluntários de Vila Real – Cruz Verde | 1891-01-01 | volunteer fire department | 1 | — |
+| [ ] | [`Q92090203`](https://www.wikidata.org/wiki/Q92090203) | Associação Humanitária dos Bombeiros Voluntários do Sul e Sueste | Associação Humanitária dos Bombeiros Voluntários do Sul e Sueste | 1894-07-23 | volunteer fire department | 1 | — |
+| [ ] | [`Q92278324`](https://www.wikidata.org/wiki/Q92278324) | — | Associação Humanitária de Bombeiros Voluntários da Marinha Grande | 1899-10-28 | volunteer fire department | 1 | — |
+| [ ] | [`Q92387549`](https://www.wikidata.org/wiki/Q92387549) | Associação Humanitária dos Bombeiros Voluntários das Caldas da Rainha | Associação Humanitária dos Bombeiros Voluntários das Caldas da Rainha | 1895-09-14 | volunteer fire department | 1 | — |
+| [ ] | [`Q115282245`](https://www.wikidata.org/wiki/Q115282245) | Escola Oficial do Bombarral | Escola Oficial do Bombarral | 1892-01-01 | cultural heritage | 1 | — |
+
+### pt2-infrastructure-1890s — 6
+
+| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
+| :--: | --- | --- | --- | --- | --- | --: | :--: |
+| [ ] | [`Q7228164`](https://www.wikidata.org/wiki/Q7228164) | Ponte metálica de Fão | Ponte de Fão | 1892-08-07 | road bridge | 3 | — |
+| [ ] | [`Q25422468`](https://www.wikidata.org/wiki/Q25422468) | Alferrarede railway bridge | Ponte Ferroviária de Alferrarede | 1891-09-06 | railway bridge | 2 | — |
+| [ ] | [`Q110630884`](https://www.wikidata.org/wiki/Q110630884) | Ponte sobre o Rio Mira | Ponte sobre o Rio Mira | 1891-08-01 | road bridge | 2 | — |
+| [ ] | [`Q122900970`](https://www.wikidata.org/wiki/Q122900970) | Tua railway bridge | Ponte do Tua | 1893-01-01 | railway bridge | 1 | — |
+| [ ] | [`Q106921084`](https://www.wikidata.org/wiki/Q106921084) | — | Ponte sobre a Ribeira Maria Delgada | 1890-01-01 | road bridge | 1 | — |
+| [ ] | [`Q123655173`](https://www.wikidata.org/wiki/Q123655173) | — | Ponte de Ferro sobre o rio Zêzere | 1892-01-01 | road bridge | 1 | — |
+
+## pt2 1900s — 16 candidate(s), 0 already in the atlas
+
+### pt2-foundings-and-nationalisations-1900s — 4
+
+| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
+| :--: | --- | --- | --- | --- | --- | --: | :--: |
+| [ ] | [`Q75660`](https://www.wikidata.org/wiki/Q75660) | Liberal Regenerator Party | Partido Regenerador Liberal | 1901-05-16 | political party | 4 | — |
+| [ ] | [`Q10345652`](https://www.wikidata.org/wiki/Q10345652) | — | Partido Nacionalista (Portugal) | 1903-01-01 | political party | 3 | — |
+| [ ] | [`Q10267209`](https://www.wikidata.org/wiki/Q10267209) | Progressive Dissidence | Dissidência Progressista | 1905-01-01 | political party | 2 | — |
+| [ ] | [`Q93207085`](https://www.wikidata.org/wiki/Q93207085) | — | Associação Humanitária dos Bombeiros Voluntários da Amadora | 1905-01-10 | volunteer fire department | 1 | — |
+
+### pt2-infrastructure-1900s — 11
+
+| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
+| :--: | --- | --- | --- | --- | --- | --: | :--: |
+| [ ] | [`Q1504273`](https://www.wikidata.org/wiki/Q1504273) | Roman Bridge of Chaves | Ponte de Trajano | 1900-01-01 | cultural heritage | 11 | — |
+| [ ] | [`Q3331246`](https://www.wikidata.org/wiki/Q3331246) | Pocinho Bridge | Ponte do Pocinho | 1903-11-01 | road-rail bridge | 4 | — |
+| [ ] | [`Q3179616`](https://www.wikidata.org/wiki/Q3179616) | Ponte Ferroviária de Montemor-o-Novo | Ponte Ferroviária de Montemor-o-Novo | 1909-09-02 | truss bridge | 3 | — |
+| [ ] | [`Q5396166`](https://www.wikidata.org/wiki/Q5396166) | Dona Amélia Bridge | Ponte Rainha D. Amélia | 1903-01-01 | truss bridge | 3 | — |
+| [ ] | [`Q17390261`](https://www.wikidata.org/wiki/Q17390261) | Ponte de Torre de Dona Chama | Ponte de Pedra sobre o Rio Tuela | 1900-01-01 | cultural heritage | 3 | — |
+| [ ] | [`Q66170306`](https://www.wikidata.org/wiki/Q66170306) | Gustave Eiffel bridge in Pinhão | Ponte Gustave Eiffel, no Pinhão | 1903-01-01 | road bridge | 3 | — |
+| [ ] | [`Q18464303`](https://www.wikidata.org/wiki/Q18464303) | Ponte de Ponte da Barca | Ponte de Ponte da Barca | 1900-01-01 | bridge | 2 | — |
+| [ ] | [`Q74473900`](https://www.wikidata.org/wiki/Q74473900) | Ponte de Parada | Ponte de Parada | 1909-01-01 | bridge | 2 | — |
+| [ ] | [`Q10351348`](https://www.wikidata.org/wiki/Q10351348) | Ponte Isidro Reis | Ponte Isidro dos Reis | 1909-01-01 | truss bridge | 2 | — |
+| [ ] | [`Q136646543`](https://www.wikidata.org/wiki/Q136646543) | Bridge over the Oeiras River | Ponte sobre a Ribeira de Oeiras | 1900-01-01 | road bridge | 2 | — |
+| [ ] | [`Q109655037`](https://www.wikidata.org/wiki/Q109655037) | Ponte Hintze Ribeiro | Ponte Hintze Ribeiro | 1904-01-01 | bridge | 1 | — |
+
+### pt2-attacks-trials-and-disasters-1900s — 1
+
+| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
+| :--: | --- | --- | --- | --- | --- | --: | :--: |
+| [ ] | [`Q122182192`](https://www.wikidata.org/wiki/Q122182192) | — | Desastre ferroviário da Ponte de Papa-Galos | 1901-09-08 | railway accident | 1 | — |
+
+## pt2 1910s — 41 candidate(s), 0 already in the atlas
+
+### pt2-foundings-and-nationalisations-1910s — 40
+
+| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
+| :--: | --- | --- | --- | --- | --- | --: | :--: |
+| [ ] | [`Q1422903`](https://www.wikidata.org/wiki/Q1422903) | University of Porto | Universidade do Porto | 1911-01-01 | organization | 31 | — |
+| [ ] | [`Q1280906`](https://www.wikidata.org/wiki/Q1280906) | National Republican Guard | Guarda Nacional Republicana | 1911-05-03 | gendarmerie | 21 | — |
+| [ ] | [`Q1783440`](https://www.wikidata.org/wiki/Q1783440) | Democratic Party | Partido Democrático | 1910-01-01 | political party | 9 | — |
+| [ ] | [`Q1412194`](https://www.wikidata.org/wiki/Q1412194) | National Institute of Statistics | Instituto Nacional de Estatística | 1911-01-01 | database | 9 | — |
+| [ ] | [`Q1720273`](https://www.wikidata.org/wiki/Q1720273) | Evolutionist Party | Partido Republicano Evolucionista | 1912-02-24 | political party | 8 | — |
+| [ ] | [`Q1513692`](https://www.wikidata.org/wiki/Q1513692) | National Republican Party | Partido Nacional Republicano | 1918-01-01 | political party | 7 | — |
+| [ ] | [`Q2054660`](https://www.wikidata.org/wiki/Q2054660) | Republican Liberal Party | Partido Liberal Republicano | 1919-01-01 | political party | 5 | — |
+| [ ] | [`Q18243216`](https://www.wikidata.org/wiki/Q18243216) | Catholic Centre Party | Centro Católico Português | 1915-01-01 | political party | 5 | — |
+| [ ] | [`Q4294674`](https://www.wikidata.org/wiki/Q4294674) | Ministry of Agriculture, Rural Development and Fisheries | Ministério da Agricultura | 1918-01-01 | ministry of agriculture | 5 | — |
+| [ ] | [`Q2054820`](https://www.wikidata.org/wiki/Q2054820) | Republican Union | Partido da União Republicana | 1912-01-01 | political party | 4 | — |
+| [ ] | [`Q1139920`](https://www.wikidata.org/wiki/Q1139920) | Soares da Costa | Soares da Costa | 1918-01-01 | public company | 4 | — |
+| [ ] | [`Q28135987`](https://www.wikidata.org/wiki/Q28135987) | Senate | — | 1911-01-01 | senate | 4 | — |
+| [ ] | [`Q10290771`](https://www.wikidata.org/wiki/Q10290771) | 1st Portuguese Government | Governo Provisório da República Portuguesa | 1910-10-05 | Council of Ministers | 4 | — |
+| [ ] | [`Q25422097`](https://www.wikidata.org/wiki/Q25422097) | Monarchist Cause | Causa Monárquica | 1914-01-01 | political party | 2 | — |
+| [ ] | [`Q56353451`](https://www.wikidata.org/wiki/Q56353451) | Polícia Marítima | Polícia Marítima | 1919-01-01 | police | 2 | — |
+| [ ] | [`Q10330400`](https://www.wikidata.org/wiki/Q10330400) | Ministry of the Colonies of Portugal | Ministério das Colónias | 1911-01-01 | ministry | 2 | — |
+| [ ] | [`Q2233137`](https://www.wikidata.org/wiki/Q2233137) | 13th Portuguese Government | XIII Governo Republicano | 1916-03-15 | Council of Ministers | 2 | — |
+| [ ] | [`Q10330433`](https://www.wikidata.org/wiki/Q10330433) | Ministry of Labour and Social Security of Portugal | Ministério do Trabalho e Previdência Social | 1916-01-01 | ministry of social affairs | 1 | — |
+| [ ] | [`Q92029433`](https://www.wikidata.org/wiki/Q92029433) | — | Associação Humanitária de Bombeiros Mistos de Santiago do Cacém | 1913-10-20 | fire department | 1 | — |
+| [ ] | [`Q92713121`](https://www.wikidata.org/wiki/Q92713121) | Associação Humanitária de Bombeiros de Carnaxide | Associação Humanitária de Bombeiros de Carnaxide | 1912-09-01 | fire department | 1 | — |
+| [ ] | [`Q93643349`](https://www.wikidata.org/wiki/Q93643349) | Bombeiros Voluntários de Santa Comba Dão | Associação Humanitária dos Bombeiros Voluntários de Santa Comba Dão | 1915-11-06 | volunteer fire department | 1 | — |
+| [ ] | [`Q9545740`](https://www.wikidata.org/wiki/Q9545740) | 10th Portuguese Government | X Governo Republicano | 1915-05-15 | Council of Ministers | 1 | — |
+| [ ] | [`Q9546488`](https://www.wikidata.org/wiki/Q9546488) | 14th Portuguese Government | XIV Governo Republicano | 1917-04-25 | Council of Ministers | 1 | — |
+| [ ] | [`Q9546914`](https://www.wikidata.org/wiki/Q9546914) | 18th Portuguese government | XVIII Governo Republicano | 1919-01-07 | Council of Ministers | 1 | — |
+| [ ] | [`Q9549746`](https://www.wikidata.org/wiki/Q9549746) | 2nd Portuguese Government | II Governo Republicano | 1911-09-03 | Council of Ministers | 1 | — |
+| [ ] | [`Q9551493`](https://www.wikidata.org/wiki/Q9551493) | 3rd Portuguese Government | III Governo Republicano | 1911-11-12 | Council of Ministers | 1 | — |
+| [ ] | [`Q9552938`](https://www.wikidata.org/wiki/Q9552938) | 4th Portuguese Government | IV Governo Republicano | 1912-06-16 | Council of Ministers | 1 | — |
+| [ ] | [`Q9554237`](https://www.wikidata.org/wiki/Q9554237) | 7th Portuguese Government | VII Governo Republicano | 1914-06-23 | Council of Ministers | 1 | — |
+| [ ] | [`Q9554795`](https://www.wikidata.org/wiki/Q9554795) | 9th Portuguese Government | IX Governo Republicano | 1915-01-25 | Council of Ministers | 1 | — |
+| [ ] | [`Q16142109`](https://www.wikidata.org/wiki/Q16142109) | 21st Portuguese Government | XXI Governo Republicano | 1919-06-29 | Council of Ministers | 1 | — |
+| [ ] | [`Q16142352`](https://www.wikidata.org/wiki/Q16142352) | 11th Portuguese Government | XI Governo Republicano | 1915-06-19 | Council of Ministers | 1 | — |
+| [ ] | [`Q16142461`](https://www.wikidata.org/wiki/Q16142461) | 12th Portuguese Government | XII Governo Republicano | 1915-11-29 | Council of Ministers | 1 | — |
+| [ ] | [`Q16142802`](https://www.wikidata.org/wiki/Q16142802) | 15th Portuguese Government | XV Governo Republicano | 1917-12-11 | Council of Ministers | 1 | — |
+| [ ] | [`Q16142921`](https://www.wikidata.org/wiki/Q16142921) | 16th Portuguese Government | XVI governo republicano | 1918-05-15 | Council of Ministers | 1 | — |
+| [ ] | [`Q16142985`](https://www.wikidata.org/wiki/Q16142985) | 20th Portuguese Government | XX Governo Republicano | 1919-03-30 | Council of Ministers | 1 | — |
+| [ ] | [`Q16143028`](https://www.wikidata.org/wiki/Q16143028) | 17th Portuguese Government | XVII Governo Republicano | 1918-12-23 | Council of Ministers | 1 | — |
+| [ ] | [`Q16143271`](https://www.wikidata.org/wiki/Q16143271) | 19th Portuguese Government | XIX Governo Republicano | 1919-01-27 | Council of Ministers | 1 | — |
+| [ ] | [`Q16143763`](https://www.wikidata.org/wiki/Q16143763) | 5th Portuguese Government | V Governo Republicano | 1913-01-09 | Council of Ministers | 1 | — |
+| [ ] | [`Q16484249`](https://www.wikidata.org/wiki/Q16484249) | 6th Portuguese Government | VI Governo Republicano | 1914-02-09 | Council of Ministers | 1 | — |
+| [ ] | [`Q16484295`](https://www.wikidata.org/wiki/Q16484295) | 8th Portuguese Government | VIII Governo Republicano | 1914-12-12 | Council of Ministers | 1 | — |
+
+### pt2-infrastructure-1910s — 1
+
+| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
+| :--: | --- | --- | --- | --- | --- | --: | :--: |
+| [ ] | [`Q18473818`](https://www.wikidata.org/wiki/Q18473818) | Tancos AB Airport | Aeródromo Militar de Tancos | 1919-01-01 | airbase | 3 | — |
+
+## pt2 1920s — 42 candidate(s), 1 already in the atlas
+
+### pt2-foundings-and-nationalisations-1920s — 40
+
+| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
+| :--: | --- | --- | --- | --- | --- | --: | :--: |
+| [ ] | [`Q769829`](https://www.wikidata.org/wiki/Q769829) | Portuguese Communist Party | Partido Comunista Português | 1921-03-06 | communist party | 31 | yes |
+| [ ] | [`Q847883`](https://www.wikidata.org/wiki/Q847883) | Nationalist Republican Party | Partido Republicano Nacionalista | 1923-02-07 | political party | 5 | — |
+| [ ] | [`Q16528160`](https://www.wikidata.org/wiki/Q16528160) | Embassy of Poland, Lisbon | Embaixada da Polónia em Lisboa | 1922-01-01 | embassy | 5 | — |
+| [ ] | [`Q19383581`](https://www.wikidata.org/wiki/Q19383581) | Embassy of Norway, Lisbon | Embaixada da Noruega em Lisboa | 1921-01-01 | embassy | 5 | — |
+| [ ] | [`Q2054732`](https://www.wikidata.org/wiki/Q2054732) | Reconstitution Party | Partido Republicano da Reconstituição Nacional | 1920-01-01 | political party | 4 | — |
+| [ ] | [`Q555443`](https://www.wikidata.org/wiki/Q555443) | Companhia dos Caminhos de Ferro do Norte de Portugal | Companhia dos Caminhos de Ferro do Norte de Portugal | 1927-01-14 | railway company | 4 | — |
+| [ ] | [`Q3366682`](https://www.wikidata.org/wiki/Q3366682) | Democratic Leftwing Republican Party | Partido Republicano da Esquerda Democrática | 1920-01-01 | political party | 3 | — |
+| [ ] | [`Q61000215`](https://www.wikidata.org/wiki/Q61000215) | Agência Geral das Colónias | Agência Geral das Colónias | 1924-09-30 | government agency | 3 | — |
+| [ ] | [`Q10388133`](https://www.wikidata.org/wiki/Q10388133) | Union of Economic Interests | União dos Interesses Económicos | 1925-01-01 | political party | 2 | — |
+| [ ] | [`Q16142871`](https://www.wikidata.org/wiki/Q16142871) | Gomes da Costa Cabinet | II Governo da Segunda República | 1926-06-17 | Council of Ministers | 2 | — |
+| [ ] | [`Q4375952`](https://www.wikidata.org/wiki/Q4375952) | Ferraz Cabinet | VI Governo da Segunda República | 1929-07-08 | Council of Ministers | 2 | — |
+| [ ] | [`Q9550099`](https://www.wikidata.org/wiki/Q9550099) | 22nd Portuguese Government | XXII Governo Republicano | 1920-01-15 | Council of Ministers | 2 | — |
+| [ ] | [`Q9552934`](https://www.wikidata.org/wiki/Q9552934) | 1st Freitas Cabinet | IV Governo da Segunda República | 1928-04-18 | Council of Ministers | 1 | — |
+| [ ] | [`Q9552981`](https://www.wikidata.org/wiki/Q9552981) | 41st Portuguese Government | XLI Governo Republicano | 1924-11-22 | Council of Ministers | 1 | — |
+| [ ] | [`Q9553013`](https://www.wikidata.org/wiki/Q9553013) | 42nd Portuguese Government | XLII Governo Republicano | 1925-02-15 | Council of Ministers | 1 | — |
+| [ ] | [`Q9553037`](https://www.wikidata.org/wiki/Q9553037) | 43rd Portuguese Government | XLIII Governo Republicano | 1925-07-01 | Council of Ministers | 1 | — |
+| [ ] | [`Q9553068`](https://www.wikidata.org/wiki/Q9553068) | 45th Portuguese Government | XLV Governo Republicano | 1925-12-17 | Council of Ministers | 1 | — |
+| [ ] | [`Q9553419`](https://www.wikidata.org/wiki/Q9553419) | 2nd Freitas Cabinet | V Governo da Segunda República | 1928-11-10 | Council of Ministers | 1 | — |
+| [ ] | [`Q16141971`](https://www.wikidata.org/wiki/Q16141971) | Cabeçadas Cabinet | I Governo da Segunda República | 1926-05-30 | Council of Ministers | 1 | — |
+| [ ] | [`Q16142466`](https://www.wikidata.org/wiki/Q16142466) | 27th Portuguese Government | XXVII Governo Republicano | 1920-11-20 | Council of Ministers | 1 | — |
+| [ ] | [`Q16142878`](https://www.wikidata.org/wiki/Q16142878) | 32nd Portuguese Government | XXXII Governo Republicano | 1921-10-19 | Council of Ministers | 1 | — |
+| [ ] | [`Q16142910`](https://www.wikidata.org/wiki/Q16142910) | 34th Portuguese Government | XXXIV Governo Republicano | 1921-12-16 | Council of Ministers | 1 | — |
+| [ ] | [`Q16143246`](https://www.wikidata.org/wiki/Q16143246) | 40th Portuguese Government | XL Governo Republicano | 1924-07-06 | Council of Ministers | 1 | — |
+| [ ] | [`Q16143387`](https://www.wikidata.org/wiki/Q16143387) | 44th Portuguese Government | XLIV Governo Republicano | 1925-08-01 | Council of Ministers | 1 | — |
+| [ ] | [`Q16484124`](https://www.wikidata.org/wiki/Q16484124) | 29th Portuguese Government | XXIX Governo Republicano | 1921-03-02 | Council of Ministers | 1 | — |
+| [ ] | [`Q16484140`](https://www.wikidata.org/wiki/Q16484140) | Carmona Cabinet | III Governo da Segunda República | 1926-07-09 | Council of Ministers | 1 | — |
+| [ ] | [`Q16484161`](https://www.wikidata.org/wiki/Q16484161) | 38th Portuguese Government | XXXVIII Governo Republicano | 1923-11-15 | Council of Ministers | 1 | — |
+| [ ] | [`Q9550205`](https://www.wikidata.org/wiki/Q9550205) | 23rd Government of Portugal | XXIII Governo Republicano | 1920-01-21 | Council of Ministers | 1 | — |
+| [ ] | [`Q9550270`](https://www.wikidata.org/wiki/Q9550270) | 24th Portuguese Government | XXIV Governo Republicano | 1920-03-08 | Council of Ministers | 1 | — |
+| [ ] | [`Q9550363`](https://www.wikidata.org/wiki/Q9550363) | 25th Portuguese Government | XXV Governo Republicano | 1920-06-26 | Council of Ministers | 1 | — |
+| [ ] | [`Q9550493`](https://www.wikidata.org/wiki/Q9550493) | Granjo Cabinet | XXVI Governo Republicano | 1920-07-19 | Council of Ministers | 1 | — |
+| [ ] | [`Q9550835`](https://www.wikidata.org/wiki/Q9550835) | 28th Portuguese Government | XXVIII Governo Republicano | 1920-11-30 | Council of Ministers | 1 | — |
+| [ ] | [`Q9551502`](https://www.wikidata.org/wiki/Q9551502) | 30th Portuguese Government | XXX Governo Republicano | 1921-05-23 | Council of Ministers | 1 | — |
+| [ ] | [`Q9551566`](https://www.wikidata.org/wiki/Q9551566) | 31st Portuguese Government | XXXI Governo Republicano | 1921-08-30 | Council of Ministers | 1 | — |
+| [ ] | [`Q9551758`](https://www.wikidata.org/wiki/Q9551758) | 33rd Portuguese Government | XXXIII Governo Republicano | 1921-11-05 | Council of Ministers | 1 | — |
+| [ ] | [`Q9551950`](https://www.wikidata.org/wiki/Q9551950) | 35th Portuguese Government | XXXV Governo Republicano | 1922-02-06 | Council of Ministers | 1 | — |
+| [ ] | [`Q9552087`](https://www.wikidata.org/wiki/Q9552087) | 36th Portuguese Government | XXXVI Governo Republicano | 1922-11-30 | Council of Ministers | 1 | — |
+| [ ] | [`Q9552243`](https://www.wikidata.org/wiki/Q9552243) | 37th Portuguese Government | XXXVII Governo Republicano | 1922-12-07 | Council of Ministers | 1 | — |
+| [ ] | [`Q9552577`](https://www.wikidata.org/wiki/Q9552577) | 39th Portuguese Government | XXXIX Governo Republicano | 1923-12-18 | Council of Ministers | 1 | — |
+| [ ] | [`Q91408931`](https://www.wikidata.org/wiki/Q91408931) | — | Associação Humanitária de Bombeiros Voluntários de Faro - Cruz Lusa | 1923-01-08 | volunteer fire department | 1 | — |
+
+### pt2-infrastructure-1920s — 2
+
+| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
+| :--: | --- | --- | --- | --- | --- | --: | :--: |
+| [ ] | [`Q1430974`](https://www.wikidata.org/wiki/Q1430974) | Braga Airport | Aeródromo de Braga | 1929-01-01 | airport | 11 | — |
+| [ ] | [`Q551612`](https://www.wikidata.org/wiki/Q551612) | Portimão Railway Bridge | Ponte Ferroviária de Portimão | 1922-01-01 | truss bridge | 4 | — |
+
+## pt2 1940s — 24 candidate(s), 1 already in the atlas
+
+### pt2-foundings-and-nationalisations-1940s — 9
+
+| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
+| :--: | --- | --- | --- | --- | --- | --: | :--: |
+| [ ] | [`Q208232`](https://www.wikidata.org/wiki/Q208232) | TAP Air Portugal | TAP Air Portugal | 1945-03-14 | airline | 51 | — |
+| [ ] | [`Q958917`](https://www.wikidata.org/wiki/Q958917) | PIDE | Polícia Internacional e de Defesa do Estado | 1945-10-22 | secret police | 21 | yes |
+| [ ] | [`Q1243903`](https://www.wikidata.org/wiki/Q1243903) | SATA Air Açores | SATA Air Açores | 1941-01-01 | airline | 20 | — |
+| [ ] | [`Q1800787`](https://www.wikidata.org/wiki/Q1800787) | Lajes Field | Base Aérea das Lajes | 1943-01-01 | government agency | 18 | — |
+| [ ] | [`Q6926747`](https://www.wikidata.org/wiki/Q6926747) | Movement of Democratic Unity | Movimento de Unidade Democrática | 1945-10-08 | political party | 5 | — |
+| [ ] | [`Q4294868`](https://www.wikidata.org/wiki/Q4294868) | Ministry of Justice | — | 1940-01-01 | justice ministry | 5 | — |
+| [ ] | [`Q15261129`](https://www.wikidata.org/wiki/Q15261129) | National Authority of Civil Aviation of Portugal | Autoridade Nacional de Aviação Civil | 1944-01-01 | government agency | 2 | — |
+| [ ] | [`Q10330403`](https://www.wikidata.org/wiki/Q10330403) | Ministério das Comunicações | Ministério das Comunicações (Portugal) | 1946-12-27 | ministry | 1 | — |
+| [ ] | [`Q18500768`](https://www.wikidata.org/wiki/Q18500768) | — | Corpo de Bombeiros Municipais de Leiria | 1940-01-01 | public fire company | 1 | — |
+
+### pt2-infrastructure-1940s — 12
+
+| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
+| :--: | --- | --- | --- | --- | --- | --: | :--: |
+| [ ] | [`Q403671`](https://www.wikidata.org/wiki/Q403671) | Humberto Delgado Airport | Aeroporto de Lisboa Humberto Delgado | 1942-10-15 | cultural heritage | 50 | — |
+| [ ] | [`Q943743`](https://www.wikidata.org/wiki/Q943743) | Francisco de Sá Carneiro Airport | Aeroporto Francisco Sá Carneiro | 1945-01-01 | international airport | 36 | — |
+| [ ] | [`Q5049759`](https://www.wikidata.org/wiki/Q5049759) | Castelo do Bode Dam | Barragem de Castelo do Bode | 1945-01-01 | dam | 9 | — |
+| [ ] | [`Q16496928`](https://www.wikidata.org/wiki/Q16496928) | Belver Dam | Barragem de Belver | 1945-01-01 | dam | 9 | — |
+| [ ] | [`Q5179324`](https://www.wikidata.org/wiki/Q5179324) | Covilhã Airport | Aeródromo Municipal da Covilhã | 1946-01-01 | airport | 4 | — |
+| [ ] | [`Q9648966`](https://www.wikidata.org/wiki/Q9648966) | Venda Nova Dam | Barragem da Venda Nova | 1948-01-01 | embankment dam | 4 | — |
+| [ ] | [`Q18413335`](https://www.wikidata.org/wiki/Q18413335) | Barragem de Andorinhas | Barragem de Andorinhas | 1945-01-01 | dam | 3 | — |
+| [ ] | [`Q135977119`](https://www.wikidata.org/wiki/Q135977119) | — | Ponte do Vascão | 1946-01-01 | truss bridge | 2 | — |
+| [ ] | [`Q130983746`](https://www.wikidata.org/wiki/Q130983746) | — | Ponte da Linha da Beira Alta sobre o Rio Côa | 1948-01-01 | railway bridge | 2 | — |
+| [ ] | [`Q117827213`](https://www.wikidata.org/wiki/Q117827213) | — | Ponte-sifão de Sacavém | 1940-01-01 | bridge | 1 | — |
+| [ ] | [`Q136806163`](https://www.wikidata.org/wiki/Q136806163) | — | Ponte dos Dois Irmãos | 1944-01-01 | road bridge | 1 | — |
+| [ ] | [`Q122922755`](https://www.wikidata.org/wiki/Q122922755) | Tâmega railway bridge | Ponte do Tâmega | 1947-01-01 | railway bridge | 1 | — |
+
+### pt2-attacks-trials-and-disasters-1940s — 3
+
+| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
+| :--: | --- | --- | --- | --- | --- | --: | :--: |
+| [ ] | [`Q786906`](https://www.wikidata.org/wiki/Q786906) | 1949 Air France Lockheed Constellation crash | — | 1949-10-28 | aviation accident | 12 | — |
+| [ ] | [`Q10335801`](https://www.wikidata.org/wiki/Q10335801) | 1947 wreckage | Naufrágio de 1947 | 1947-12-02 | shipwreck | 1 | — |
+| [ ] | [`Q111740802`](https://www.wikidata.org/wiki/Q111740802) | — | Desastre ferroviário de Vila Franca de Xira | 1947-08-16 | railway accident | 1 | — |
+
+## pt2 1950s — 12 candidate(s), 0 already in the atlas
+
+### pt2-foundings-and-nationalisations-1950s — 5
+
+| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
+| :--: | --- | --- | --- | --- | --- | --: | :--: |
+| [ ] | [`Q4294480`](https://www.wikidata.org/wiki/Q4294480) | Ministry of National Defense of Portugal | Ministério da Defesa Nacional | 1950-01-01 | defence ministry | 7 | — |
+| [ ] | [`Q7835315`](https://www.wikidata.org/wiki/Q7835315) | Transportes Aéreos da Índia Portuguesa | Transportes Aéreos da Índia Portuguesa (TAIP) | 1955-01-01 | airline | 6 | — |
+| [ ] | [`Q4294357`](https://www.wikidata.org/wiki/Q4294357) | Ministry of Health of Portugal | Ministério da Saúde | 1958-01-01 | ministry of Portugal | 5 | — |
+| [ ] | [`Q10330438`](https://www.wikidata.org/wiki/Q10330438) | Ministério do Ultramar | Ministério do Ultramar | 1951-01-01 | ministry | 3 | — |
+| [ ] | [`Q1201837`](https://www.wikidata.org/wiki/Q1201837) | German-Portuguese Chamber of Industry and Commerce | Câmara de Comércio e Indústria Luso-Alemã | 1954-11-10 | chamber of commerce and industry | 2 | — |
+
+### pt2-infrastructure-1950s — 5
+
+| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
+| :--: | --- | --- | --- | --- | --- | --: | :--: |
+| [ ] | [`Q746032`](https://www.wikidata.org/wiki/Q746032) | Lisbon Metro | Metropolitano de Lisboa | 1959-12-29 | rapid transit | 44 | — |
+| [ ] | [`Q9649091`](https://www.wikidata.org/wiki/Q9649091) | Alto Rabagão Dam | Barragem do Alto Rabagão | 1957-01-01 | pumped-storage power station | 8 | — |
+| [ ] | [`Q16496938`](https://www.wikidata.org/wiki/Q16496938) | Vilar Dam | Barragem de Vilar | 1958-01-01 | embankment dam | 7 | — |
+| [ ] | [`Q18761828`](https://www.wikidata.org/wiki/Q18761828) | Barragem da Bravura | Barragem de Odeáxere | 1959-05-10 | dam | 3 | — |
+| [ ] | [`Q18914298`](https://www.wikidata.org/wiki/Q18914298) | Vale do Rossim Dam | Barragem de Vale do Rossim | 1956-01-01 | dam | 3 | — |
+
+### pt2-attacks-trials-and-disasters-1950s — 2
+
+| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
+| :--: | --- | --- | --- | --- | --- | --: | :--: |
+| [ ] | [`Q540545`](https://www.wikidata.org/wiki/Q540545) | Gibalta rail accident | Tragédia da Gibalta | 1952-03-31 | railway accident | 3 | — |
+| [ ] | [`Q8355026`](https://www.wikidata.org/wiki/Q8355026) | — | Desastre do Rápido do Algarve | 1954-09-13 | railway accident | 3 | — |
+
+## pt2 1980s — 42 candidate(s), 0 already in the atlas
+
+### pt2-foundings-and-nationalisations-1980s — 32
+
+| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
+| :--: | --- | --- | --- | --- | --- | --: | :--: |
+| [ ] | [`Q618058`](https://www.wikidata.org/wiki/Q618058) | Portugália | Portugália Airlines | 1989-01-01 | airline | 23 | — |
+| [ ] | [`Q118581`](https://www.wikidata.org/wiki/Q118581) | Banco Comercial Português | Banco Comercial Português | 1985-01-01 | credit institution | 20 | — |
+| [ ] | [`Q978086`](https://www.wikidata.org/wiki/Q978086) | Ecologist Party "The Greens" | Partido Ecologista Os Verdes | 1982-01-01 | political party | 18 | — |
+| [ ] | [`Q28973970`](https://www.wikidata.org/wiki/Q28973970) | TAP Express | TAP Express | 1988-01-01 | airline | 12 | — |
+| [ ] | [`Q537886`](https://www.wikidata.org/wiki/Q537886) | Portuguese Investment Bank | Banco Português de Investimento | 1981-10-06 | credit institution | 12 | — |
+| [ ] | [`Q138324`](https://www.wikidata.org/wiki/Q138324) | Portuguese Constitutional Court | Tribunal Constitucional de Portugal | 1982-01-01 | constitutional court | 10 | — |
+| [ ] | [`Q13403867`](https://www.wikidata.org/wiki/Q13403867) | Air Luxor | Air Luxor | 1988-01-01 | airline | 10 | — |
+| [ ] | [`Q406832`](https://www.wikidata.org/wiki/Q406832) | Air Atlantis | Air Atlantis | 1985-01-01 | airline | 9 | — |
+| [ ] | [`Q3391585`](https://www.wikidata.org/wiki/Q3391585) | Universidade Aberta de Portugal | Universidade Aberta | 1988-01-01 | public university | 9 | — |
+| [ ] | [`Q980864`](https://www.wikidata.org/wiki/Q980864) | Democratic Renewal Party | Partido Renovador Democrático | 1985-01-01 | political party | 8 | — |
+| [ ] | [`Q3295407`](https://www.wikidata.org/wiki/Q3295407) | Communist Party (Reconstructed) | Partido Comunista (Reconstruído) | 1981-02-03 | political party | 7 | — |
+| [ ] | [`Q4045768`](https://www.wikidata.org/wiki/Q4045768) | Omni Aviation | Omni Aviação SGPS | 1988-01-01 | airline | 6 | — |
+| [ ] | [`Q1518932`](https://www.wikidata.org/wiki/Q1518932) | Sistema de Informações da República Portuguesa | Sistema de Informações da República Portuguesa | 1984-01-01 | government agency | 6 | — |
+| [ ] | [`Q3480562`](https://www.wikidata.org/wiki/Q3480562) | Serviço de Informações de Segurança | Serviço de Informações de Segurança | 1984-01-01 | government agency | 6 | — |
+| [ ] | [`Q9006487`](https://www.wikidata.org/wiki/Q9006487) | IX Constitutional Government of Portugal | IX Governo Constitucional de Portugal | 1983-06-09 | Council of Ministers | 6 | — |
+| [ ] | [`Q1536126`](https://www.wikidata.org/wiki/Q1536126) | Humanist Party | Partido Humanista | 1984-01-01 | political party | 5 | — |
+| [ ] | [`Q6516904`](https://www.wikidata.org/wiki/Q6516904) | Socialist Alternative Movement | Movimento Alternativa Socialista | 1983-01-01 | political party | 5 | — |
+| [ ] | [`Q407006`](https://www.wikidata.org/wiki/Q407006) | Air Columbus | — | 1988-01-01 | airline | 5 | — |
+| [ ] | [`Q3570393`](https://www.wikidata.org/wiki/Q3570393) | XI Constitutional Government of Portugal | XI Governo Constitucional de Portugal | 1987-08-17 | Council of Ministers | 5 | — |
+| [ ] | [`Q3570848`](https://www.wikidata.org/wiki/Q3570848) | X Constitutional Government of Portugal | X Governo Constitucional de Portugal | 1985-11-06 | Council of Ministers | 5 | — |
+| [ ] | [`Q2823707`](https://www.wikidata.org/wiki/Q2823707) | Independent Social Democratic Association | Acção Social Democrata Independente | 1980-06-27 | political party | 4 | — |
+| [ ] | [`Q3552943`](https://www.wikidata.org/wiki/Q3552943) | VIII Constitutional Government of Portugal | VIII Governo Constitucional de Portugal | 1981-09-04 | Council of Ministers | 4 | — |
+| [ ] | [`Q3552948`](https://www.wikidata.org/wiki/Q3552948) | VII Constitutional Government of Portugal | VII Governo Constitucional de Portugal | 1981-01-09 | Council of Ministers | 4 | — |
+| [ ] | [`Q10388572`](https://www.wikidata.org/wiki/Q10388572) | VI Constitutional Government of Portugal | VI Governo Constitucional de Portugal | 1980-01-03 | Council of Ministers | 4 | — |
+| [ ] | [`Q10284314`](https://www.wikidata.org/wiki/Q10284314) | Popular Unity Force | Força de Unidade Popular | 1980-07-28 | political party | 3 | — |
+| [ ] | [`Q48855456`](https://www.wikidata.org/wiki/Q48855456) | Ministry of Social Infrastructure | Ministério do Equipamento Social | 1983-01-01 | ministry | 3 | — |
+| [ ] | [`Q6041513`](https://www.wikidata.org/wiki/Q6041513) | Instituto Superior de Ciências Policiais e Segurança Interna | Instituto Superior de Ciências Policiais e Segurança Interna | 1988-01-01 | university institute | 3 | — |
+| [ ] | [`Q10330343`](https://www.wikidata.org/wiki/Q10330343) | Ministry of Parliamentary Affairs | Ministério dos Assuntos Parlamentares | 1981-01-01 | ministry of parliamentary affairs | 3 | — |
+| [ ] | [`Q10341420`](https://www.wikidata.org/wiki/Q10341420) | Workers Politics Communist Organisation | Organização Comunista Política Operária | 1985-01-01 | political party | 2 | — |
+| [ ] | [`Q4826948`](https://www.wikidata.org/wiki/Q4826948) | Autoridade Nacional de Comunicações | Autoridade Nacional de Comunicações | 1989-01-01 | government agency | 2 | — |
+| [ ] | [`Q48855410`](https://www.wikidata.org/wiki/Q48855410) | Ministry of Agriculture, Fisheries and Food of Portugal | Ministério da Agricultura, Pescas e Alimentação | 1985-01-01 | ministry of agriculture | 1 | — |
+| [ ] | [`Q104905674`](https://www.wikidata.org/wiki/Q104905674) | embassy of Luxembourg in Portugal | embaixada do Grão-Ducado do Luxemburgo em Portugal | 1988-12-07 | embassy | 1 | — |
+
+### pt2-infrastructure-1980s — 5
+
+| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
+| :--: | --- | --- | --- | --- | --- | --: | :--: |
+| [ ] | [`Q1432366`](https://www.wikidata.org/wiki/Q1432366) | Pico Airport | Aeroporto do Pico | 1982-01-01 | airport | 15 | — |
+| [ ] | [`Q3375542`](https://www.wikidata.org/wiki/Q3375542) | Pocinho Dam | Barragem do Pocinho | 1982-01-01 | gravity dam | 8 | — |
+| [ ] | [`Q2103700`](https://www.wikidata.org/wiki/Q2103700) | Edgar Cardoso Bridge | Ponte Edgar Cardoso | 1982-01-01 | cable-stayed bridge | 5 | — |
+| [ ] | [`Q5816672`](https://www.wikidata.org/wiki/Q5816672) | Ponte Ferroviária de Ferradosa | Ponte Ferroviária de Ferradosa | 1980-01-01 | cultural heritage | 3 | — |
+| [ ] | [`Q59356069`](https://www.wikidata.org/wiki/Q59356069) | International bridge Salvaterra do Miño - Monção | Ponte Internacional Salvaterra do Miño - Monção | 1989-01-01 | bridge | 1 | — |
+
+### pt2-attacks-trials-and-disasters-1980s — 5
+
+| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
+| :--: | --- | --- | --- | --- | --- | --: | :--: |
+| [ ] | [`Q555848`](https://www.wikidata.org/wiki/Q555848) | Moimenta-Alcafache train crash | Desastre Ferroviário de Moimenta-Alcafache | 1985-09-11 | railway accident | 6 | — |
+| [ ] | [`Q15080410`](https://www.wikidata.org/wiki/Q15080410) | 1980 Camarate air crash | Acidente de Camarate | 1980-12-04 | aviation accident | 5 | — |
+| [ ] | [`Q110355934`](https://www.wikidata.org/wiki/Q110355934) | Póvoa de Santa Iria train collision | Desastre Ferroviário de Póvoa de Santa Iria | 1986-05-05 | railway accident | 2 | — |
+| [ ] | [`Q116757222`](https://www.wikidata.org/wiki/Q116757222) | — | Desastre Ferroviário de Chão de Maçãs - Fátima | 1981-09-11 | railway accident | 1 | — |
+| [ ] | [`Q124097732`](https://www.wikidata.org/wiki/Q124097732) | — | Desastre Ferroviário de Amadora | 1980-01-31 | railway accident by collision | 1 | — |
+
+## pt2 1990s — 56 candidate(s), 1 already in the atlas
+
+### pt2-foundings-and-nationalisations-1990s — 40
+
+| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
+| :--: | --- | --- | --- | --- | --- | --: | :--: |
+| [ ] | [`Q2205178`](https://www.wikidata.org/wiki/Q2205178) | Azores Airlines | Azores Airlines | 1998-01-01 | airline | 28 | — |
+| [ ] | [`Q81123`](https://www.wikidata.org/wiki/Q81123) | — | Comboios de Portugal | 1997-01-01 | transport company | 27 | — |
+| [ ] | [`Q1377256`](https://www.wikidata.org/wiki/Q1377256) | European Union Drugs Agency | Agência da União Europeia sobre Drogas | 1993-01-01 | decentralised agency of the European Union | 25 | — |
+| [ ] | [`Q884840`](https://www.wikidata.org/wiki/Q884840) | Left Bloc | Bloco de Esquerda | 1999-03-24 | political party | 23 | yes |
+| [ ] | [`Q618132`](https://www.wikidata.org/wiki/Q618132) | EuroAtlantic Airways | EuroAtlantic Airways | 1993-08-25 | airline | 20 | — |
+| [ ] | [`Q1492739`](https://www.wikidata.org/wiki/Q1492739) | Galp Energia | Galp | 1999-01-01 | public company | 17 | — |
+| [ ] | [`Q2105426`](https://www.wikidata.org/wiki/Q2105426) | Altice Portugal | Altice Portugal | 1994-01-01 | public company | 15 | — |
+| [ ] | [`Q1862842`](https://www.wikidata.org/wiki/Q1862842) | Redes Energéticas Nacionais | Redes Energéticas Nacionais | 1994-01-01 | transmission system operator for electricity | 12 | — |
+| [ ] | [`Q1408210`](https://www.wikidata.org/wiki/Q1408210) | Fertagus | Fertagus | 1999-01-01 | railway line/metro line | 11 | — |
+| [ ] | [`Q295619`](https://www.wikidata.org/wiki/Q295619) | ANA – Aeroportos de Portugal | ANA Aeroportos de Portugal S.A. | 1998-01-01 | fixed-base operator | 11 | — |
+| [ ] | [`Q1365938`](https://www.wikidata.org/wiki/Q1365938) | MEO | MEO | 1991-03-22 | business | 11 | — |
+| [ ] | [`Q1862723`](https://www.wikidata.org/wiki/Q1862723) | Semapa | Semapa | 1991-01-01 | business | 11 | — |
+| [ ] | [`Q2495255`](https://www.wikidata.org/wiki/Q2495255) | New Macau Association | Associação Novo Macau | 1992-07-10 | political party | 10 | — |
+| [ ] | [`Q786690`](https://www.wikidata.org/wiki/Q786690) | Volkswagen Autoeuropa | Autoeuropa | 1991-01-01 | automobile manufacturer | 10 | — |
+| [ ] | [`Q794939`](https://www.wikidata.org/wiki/Q794939) | B&B Hotels | — | 1990-01-01 | brand | 9 | — |
+| [ ] | [`Q1546030`](https://www.wikidata.org/wiki/Q1546030) | Earth Party | Partido da Terra | 1993-08-12 | green party | 9 | — |
+| [ ] | [`Q29685`](https://www.wikidata.org/wiki/Q29685) | Metro de Mirandela | Metro Ligeiro de Mirandela | 1995-01-01 | transport company | 8 | — |
+| [ ] | [`Q1411661`](https://www.wikidata.org/wiki/Q1411661) | REFER | Rede Ferroviária Nacional | 1997-01-01 | railway infrastructure manager | 8 | — |
+| [ ] | [`Q1817568`](https://www.wikidata.org/wiki/Q1817568) | Optimus Telecomunicações | Optimus | 1998-09-15 | public company | 8 | — |
+| [ ] | [`Q1352945`](https://www.wikidata.org/wiki/Q1352945) | Politics XXI | Política XXI | 1994-01-01 | political party | 7 | — |
+| [ ] | [`Q1805857`](https://www.wikidata.org/wiki/Q1805857) | RS (Part of RS Group plc) | RS Components | 1991-01-01 | brick and mortar | 7 | — |
+| [ ] | [`Q1121894`](https://www.wikidata.org/wiki/Q1121894) | Martifer | Martifer | 1990-01-01 | business | 7 | — |
+| [ ] | [`Q1125649`](https://www.wikidata.org/wiki/Q1125649) | Impresa | Impresa | 1991-01-01 | business | 7 | — |
+| [ ] | [`Q3562042`](https://www.wikidata.org/wiki/Q3562042) | Vodafone Portugal | Vodafone Portugal | 1992-01-01 | business | 7 | — |
+| [ ] | [`Q4043282`](https://www.wikidata.org/wiki/Q4043282) | Luzair | Luzair | 1997-01-01 | airline | 6 | — |
+| [ ] | [`Q284147`](https://www.wikidata.org/wiki/Q284147) | SAPO | SAPO | 1995-01-01 | brand | 6 | — |
+| [ ] | [`Q6867530`](https://www.wikidata.org/wiki/Q6867530) | Ministry of Science, Technology and Higher Education | Ministério da Ciência, Tecnologia e Ensino Superior | 1995-01-01 | ministry of science | 6 | — |
+| [ ] | [`Q18484034`](https://www.wikidata.org/wiki/Q18484034) | Centro Português de Fotografia | Centro Português de Fotografia | 1997-01-01 | national archives | 6 | — |
+| [ ] | [`Q7232685`](https://www.wikidata.org/wiki/Q7232685) | Securities Market Commission | Comissão do Mercado de Valores Mobiliários | 1991-04-10 | registration authority | 5 | — |
+| [ ] | [`Q110709358`](https://www.wikidata.org/wiki/Q110709358) | Salsa Jeans | Salsa Jeans | 1994-01-01 | trademark | 5 | — |
+| [ ] | [`Q2136194`](https://www.wikidata.org/wiki/Q2136194) | Rede Nacional de Expressos | Rede Nacional de Expressos | 1995-01-01 | transport company | 5 | — |
+| [ ] | [`Q260669`](https://www.wikidata.org/wiki/Q260669) | Medialivre | Medialivre | 1995-01-01 | conglomerate | 5 | — |
+| [ ] | [`Q249850`](https://www.wikidata.org/wiki/Q249850) | Águas de Portugal | Águas de Portugal | 1993-01-01 | business | 5 | — |
+| [ ] | [`Q10394039`](https://www.wikidata.org/wiki/Q10394039) | Worten | Worten | 1996-01-01 | business | 5 | — |
+| [ ] | [`Q684129`](https://www.wikidata.org/wiki/Q684129) | XIV Constitutional Government of Portugal | XIV Governo Constitucional de Portugal | 1999-10-25 | Council of Ministers | 5 | — |
+| [ ] | [`Q1719936`](https://www.wikidata.org/wiki/Q1719936) | XIII Constitutional Government of Portugal | XIII Governo Constitucional de Portugal | 1995-10-28 | Council of Ministers | 5 | — |
+| [ ] | [`Q3570375`](https://www.wikidata.org/wiki/Q3570375) | XII Constitutional Government of Portugal | XII Governo Constitucional de Portugal | 1991-10-31 | Council of Ministers | 5 | — |
+| [ ] | [`Q4294438`](https://www.wikidata.org/wiki/Q4294438) | Ministry of Culture of Portugal | Ministério da Cultura | 1995-01-01 | ministry of Portugal | 5 | — |
+| [ ] | [`Q5509000`](https://www.wikidata.org/wiki/Q5509000) | Fundação para a Ciência e Tecnologia | Fundação para a Ciência e a Tecnologia | 1997-07-28 | nonprofit organization | 4 | — |
+| [ ] | [`Q558036`](https://www.wikidata.org/wiki/Q558036) | Rail Equipment Maintenance Company | EMEF | 1993-01-01 | business | 4 | — |
+
+### pt2-infrastructure-1990s — 11
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
 | [ ] | [`Q233737`](https://www.wikidata.org/wiki/Q233737) | Vasco da Gama Bridge | Ponte Vasco da Gama | 1995-01-01 | cable-stayed bridge | 52 | — |
-| [ ] | [`Q3375894`](https://www.wikidata.org/wiki/Q3375894) | Miranda Dam | Barragem de Miranda do Douro | 1995-01-01 | dam | 10 | — |
 | [ ] | [`Q1548495`](https://www.wikidata.org/wiki/Q1548495) | Guadiana International Bridge | Ponte Internacional do Guadiana | 1991-01-01 | cable-stayed bridge | 10 | — |
 | [ ] | [`Q951109`](https://www.wikidata.org/wiki/Q951109) | Freixo Bridge | Ponte do Freixo | 1995-01-01 | road bridge | 10 | — |
 | [ ] | [`Q1321630`](https://www.wikidata.org/wiki/Q1321630) | João Gomes Bridge | Ponte João Gomes | 1994-01-01 | road bridge | 6 | — |
 | [ ] | [`Q13101568`](https://www.wikidata.org/wiki/Q13101568) | New Portimão Bridge | Ponte Nova de Portimão | 1991-01-01 | cable-stayed bridge | 5 | — |
-| [ ] | [`Q52105940`](https://www.wikidata.org/wiki/Q52105940) | Ponte Miguel Torga | Ponte Miguel Torga | 1997-01-01 | road bridge | 2 | — |
 | [ ] | [`Q18694539`](https://www.wikidata.org/wiki/Q18694539) | — | Barragem de Corte Brique | 1993-01-01 | embankment dam | 2 | — |
 | [ ] | [`Q97163052`](https://www.wikidata.org/wiki/Q97163052) | Pragal Tunnel | Túnel do Pragal | 1999-01-01 | railway tunnel | 2 | — |
+| [ ] | [`Q52105940`](https://www.wikidata.org/wiki/Q52105940) | Ponte Miguel Torga | Ponte Miguel Torga | 1997-01-01 | concrete bridge | 2 | — |
 | [ ] | [`Q59356418`](https://www.wikidata.org/wiki/Q59356418) | International bridge Arbo - Melgaço | Ponte Internacional Arbo - Melgaço | 1998-01-01 | bridge | 1 | — |
 | [ ] | [`Q59357910`](https://www.wikidata.org/wiki/Q59357910) | International bridge Tui - Valença | Ponte Internacional Tui - Valença | 1996-01-01 | bridge | 1 | — |
 | [ ] | [`Q123655152`](https://www.wikidata.org/wiki/Q123655152) | — | Ponte de Betão sobre o rio Zêzere (Constância) | 1995-01-01 | bridge | 1 | — |
@@ -2852,6 +3222,85 @@ to that file and another run, never an edit here.
 | [ ] | [`Q28680172`](https://www.wikidata.org/wiki/Q28680172) | — | Desastre Ferroviário de Rates | 1994-05-29 | traffic collision | 1 | — |
 | [ ] | [`Q28680186`](https://www.wikidata.org/wiki/Q28680186) | — | Desastre Ferroviário de Estômbar | 1997-11-08 | railway accident | 1 | — |
 
+## pt2 2000s — 62 candidate(s), 1 already in the atlas
+
+### pt2-foundings-and-nationalisations-2000s — 39
+
+| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
+| :--: | --- | --- | --- | --- | --- | --: | :--: |
+| [ ] | [`Q842108`](https://www.wikidata.org/wiki/Q842108) | Euronext | Euronext | 2000-09-22 | public company | 47 | — |
+| [ ] | [`Q922693`](https://www.wikidata.org/wiki/Q922693) | European Maritime Safety Agency | Agência Europeia de Segurança Marítima | 2002-08-25 | decentralised agency of the European Union | 28 | — |
+| [ ] | [`Q993079`](https://www.wikidata.org/wiki/Q993079) | European Gendarmerie Force | Força de Gendarmaria Europeia | 2007-10-18 | gendarmerie | 22 | — |
+| [ ] | [`Q281710`](https://www.wikidata.org/wiki/Q281710) | Hi Fly | Air Luxor | 2005-01-01 | airline | 20 | — |
+| [ ] | [`Q618093`](https://www.wikidata.org/wiki/Q618093) | White Airways | White Airways | 2005-01-01 | airline | 18 | — |
+| [ ] | [`Q4782260`](https://www.wikidata.org/wiki/Q4782260) | Aptoide | Aptoide | 2009-11-17 | free software | 15 | — |
+| [ ] | [`Q444971`](https://www.wikidata.org/wiki/Q444971) | Altri | Altri | 2005-03-01 | company | 14 | — |
+| [ ] | [`Q1118859`](https://www.wikidata.org/wiki/Q1118859) | Fox Crime | FOX Crime | 2005-01-01 | television channel | 14 | — |
+| [ ] | [`Q2667744`](https://www.wikidata.org/wiki/Q2667744) | Orbest | Orbest | 2007-01-01 | airline | 13 | — |
+| [ ] | [`Q686182`](https://www.wikidata.org/wiki/Q686182) | The Navigator Company | Portucel | 2001-01-01 | business | 13 | — |
+| [ ] | [`Q4374070`](https://www.wikidata.org/wiki/Q4374070) | Embassy of Ukraine, Lisbon | Embaixada da Ucrânia em Lisboa | 2001-10-01 | embassy | 13 | — |
+| [ ] | [`Q18712957`](https://www.wikidata.org/wiki/Q18712957) | Farfetch | Farfetch | 2007-06-01 | business | 12 | — |
+| [ ] | [`Q2054681`](https://www.wikidata.org/wiki/Q2054681) | Rise up! | Ergue-te! | 2000-04-12 | political party | 10 | — |
+| [ ] | [`Q4033474`](https://www.wikidata.org/wiki/Q4033474) | Aero VIP | — | 2000-01-01 | airline | 10 | — |
+| [ ] | [`Q202085`](https://www.wikidata.org/wiki/Q202085) | IGESPAR | Instituto de Gestão do Património Arquitectónico e Arqueológico | 2006-01-01 | government agency | 8 | — |
+| [ ] | [`Q634443`](https://www.wikidata.org/wiki/Q634443) | high-speed rail in Portugal | Rede Ferroviária de Alta Velocidade | 2000-12-19 | railway infrastructure manager | 8 | — |
+| [ ] | [`Q605026`](https://www.wikidata.org/wiki/Q605026) | New Democracy Party | Nova Democracia | 2003-06-18 | political party | 7 | — |
+| [ ] | [`Q202689`](https://www.wikidata.org/wiki/Q202689) | Medway - Transportes e Logística | Medway - Transporte & Logística | 2009-07-13 | transport company | 7 | — |
+| [ ] | [`Q7232654`](https://www.wikidata.org/wiki/Q7232654) | Portuguese Labour Party | Partido Trabalhista Português | 2009-07-01 | political party | 6 | — |
+| [ ] | [`Q2274374`](https://www.wikidata.org/wiki/Q2274374) | Serviço de Informações Estratégicas de Defesa | Serviço de Informações Estratégicas de Defesa | 2004-01-01 | intelligence agency | 6 | — |
+| [ ] | [`Q1143305`](https://www.wikidata.org/wiki/Q1143305) | Sumol Compal | Sumol  Compal | 2009-01-01 | brewery | 6 | — |
+| [ ] | [`Q2389196`](https://www.wikidata.org/wiki/Q2389196) | Takargo Rail | Takargo | 2006-01-01 | business | 6 | — |
+| [ ] | [`Q239352`](https://www.wikidata.org/wiki/Q239352) | XVII Constitutional Government of Portugal | XVII Governo Constitucional de Portugal | 2005-03-12 | Council of Ministers | 6 | — |
+| [ ] | [`Q1146060`](https://www.wikidata.org/wiki/Q1146060) | XVI Constitutional Government of Portugal | XVI Governo Constitucional de Portugal | 2004-07-17 | Council of Ministers | 6 | — |
+| [ ] | [`Q1568610`](https://www.wikidata.org/wiki/Q1568610) | XVIII Constitutional Government of Portugal | XVIII Governo Constitucional de Portugal | 2009-10-26 | Council of Ministers | 6 | — |
+| [ ] | [`Q2105350`](https://www.wikidata.org/wiki/Q2105350) | Portugal Pro-Life | Portugal pro Vida | 2009-07-01 | political party | 5 | — |
+| [ ] | [`Q111920377`](https://www.wikidata.org/wiki/Q111920377) | — | — | 2008-11-28 | company | 5 | — |
+| [ ] | [`Q1719859`](https://www.wikidata.org/wiki/Q1719859) | XV Constitutional Government of Portugal | XV Governo Constitucional de Portugal | 2002-04-06 | Council of Ministers | 5 | — |
+| [ ] | [`Q1129197`](https://www.wikidata.org/wiki/Q1129197) | Global Media Group | Global Media Group | 2005-01-01 | mass media | 4 | — |
+| [ ] | [`Q60772401`](https://www.wikidata.org/wiki/Q60772401) | COS | — | 2007-03-01 | fashion | 4 | — |
+| [ ] | [`Q220114`](https://www.wikidata.org/wiki/Q220114) | Zoo Lagos | Zoo de Lagos | 2000-11-16 | zoo | 4 | — |
+| [ ] | [`Q9592659`](https://www.wikidata.org/wiki/Q9592659) | Portuguese Environment Agency | Agência Portuguesa do Ambiente | 2007-04-27 | government agency | 4 | — |
+| [ ] | [`Q108195506`](https://www.wikidata.org/wiki/Q108195506) | Fidelidade Seguros | Fidelidade Mundial | 2004-01-01 | insurance company | 4 | — |
+| [ ] | [`Q2933390`](https://www.wikidata.org/wiki/Q2933390) | Caixa Mágica Software | Caixa Mágica Software | 2004-01-01 | business | 4 | — |
+| [ ] | [`Q60742778`](https://www.wikidata.org/wiki/Q60742778) | The Social Hub | — | 2005-01-01 | business | 4 | — |
+| [ ] | [`Q105871995`](https://www.wikidata.org/wiki/Q105871995) | The Walt Disney Company Portugal | The Walt Disney Company Portugal | 2003-01-01 | business | 4 | — |
+| [ ] | [`Q24293069`](https://www.wikidata.org/wiki/Q24293069) | Tekever | Tekever | 2001-01-01 | enterprise | 4 | — |
+| [ ] | [`Q4294818`](https://www.wikidata.org/wiki/Q4294818) | Ministry of Economy, Innovation and Development | Ministério da Economia, da Inovação e do Desenvolvimento | 2009-01-01 | ministry | 3 | — |
+| [ ] | [`Q4294767`](https://www.wikidata.org/wiki/Q4294767) | Ministry of Labour and Social Solidarity | Ministério do Trabalho e da Solidariedade Social | 2005-01-01 | ministry of social affairs | 3 | — |
+
+### pt2-infrastructure-2000s — 15
+
+| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
+| :--: | --- | --- | --- | --- | --- | --: | :--: |
+| [ ] | [`Q29757`](https://www.wikidata.org/wiki/Q29757) | Metro do Porto | Metro do Porto | 2002-12-07 | light rail | 26 | — |
+| [ ] | [`Q1431141`](https://www.wikidata.org/wiki/Q1431141) | Corvo Airport | Aeródromo do Corvo | 2005-01-01 | commercial traffic aerodrome | 17 | — |
+| [ ] | [`Q2165228`](https://www.wikidata.org/wiki/Q2165228) | Alqueva Dam | Barragem de Alqueva | 2002-01-01 | hydroelectric power station | 15 | — |
+| [ ] | [`Q3375350`](https://www.wikidata.org/wiki/Q3375350) | Bemposta Dam | Barragem de Bemposta | 2008-01-01 | dam | 10 | — |
+| [ ] | [`Q3375706`](https://www.wikidata.org/wiki/Q3375706) | Picote Dam | Barragem de Picote | 2007-01-01 | dam | 10 | — |
+| [ ] | [`Q9064482`](https://www.wikidata.org/wiki/Q9064482) | Infante Dom Henrique bridge | Ponte Infante Dom Henrique | 2002-01-01 | road bridge | 7 | — |
+| [ ] | [`Q53244`](https://www.wikidata.org/wiki/Q53244) | Lezíria Bridge | Ponte da Lezíria | 2007-07-01 | road bridge | 5 | — |
+| [ ] | [`Q10351349`](https://www.wikidata.org/wiki/Q10351349) | Lower Guadiana International Bridge | Ponte Internacional do Baixo Guadiana | 2009-01-01 | road bridge | 4 | — |
+| [ ] | [`Q16496934`](https://www.wikidata.org/wiki/Q16496934) | Sabugal dam | Barragem de Sabugal | 2000-03-01 | dam | 3 | — |
+| [ ] | [`Q30916358`](https://www.wikidata.org/wiki/Q30916358) | — | Ponte Internacional do Marco | 2008-01-01 | beam bridge | 3 | — |
+| [ ] | [`Q7228106`](https://www.wikidata.org/wiki/Q7228106) | Circular Pedestrian Bridge | Ponte Pedonal Circular | 2006-05-01 | footbridge | 3 | — |
+| [ ] | [`Q56098632`](https://www.wikidata.org/wiki/Q56098632) | Ponte da Amizade | Ponte da Amizade | 2004-06-10 | international bridge | 3 | — |
+| [ ] | [`Q25226869`](https://www.wikidata.org/wiki/Q25226869) | Ponte de Aljezur | Ponte de Aljezur | 2000-01-01 | arch bridge | 2 | — |
+| [ ] | [`Q56016450`](https://www.wikidata.org/wiki/Q56016450) | — | — | 2008-01-01 | hydroelectric power station | 2 | — |
+| [ ] | [`Q140130443`](https://www.wikidata.org/wiki/Q140130443) | Ponte de Entre-os-Rios | Ponte de Entre-os-Rios | 2004-02-06 | road bridge | 2 | — |
+
+### pt2-attacks-trials-and-disasters-2000s — 8
+
+| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
+| :--: | --- | --- | --- | --- | --- | --: | :--: |
+| [ ] | [`Q264468`](https://www.wikidata.org/wiki/Q264468) | murder of Joana Cipriano | Caso Joana Cipriano | 2004-09-12 | murder | 7 | yes |
+| [ ] | [`Q28680319`](https://www.wikidata.org/wiki/Q28680319) | — | Desastre Ferroviário de Ermida | 2000-12-11 | railway accident | 1 | — |
+| [ ] | [`Q28680463`](https://www.wikidata.org/wiki/Q28680463) | — | Desastre Ferroviário da Lousã | 2002-04-04 | railway accident | 1 | — |
+| [ ] | [`Q28680509`](https://www.wikidata.org/wiki/Q28680509) | — | Acidente Ferroviário de Abela | 2003-05-14 | railway accident | 1 | — |
+| [ ] | [`Q30929666`](https://www.wikidata.org/wiki/Q30929666) | — | Acidente Ferroviário de Bias | 2003-06-18 | railway accident | 1 | — |
+| [ ] | [`Q30932128`](https://www.wikidata.org/wiki/Q30932128) | — | Acidente Ferroviário de Castanheiro | 2007-02-12 | railway accident | 1 | — |
+| [ ] | [`Q30932617`](https://www.wikidata.org/wiki/Q30932617) | — | Acidente Ferroviário de Brunheda | 2008-08-22 | railway accident | 1 | — |
+| [ ] | [`Q48873291`](https://www.wikidata.org/wiki/Q48873291) | — | Acidente ferroviário de Baião | 2009-09-01 | railway accident | 1 | — |
+
 ## Queries the service did not answer
 
 Each of these came back an error or a timeout, so whatever it would have
@@ -2859,29 +3308,32 @@ returned is missing from the period it belongs to, and that period's count is
 short by that much. Wikidata's query service gives a query sixty seconds and
 refuses it after that; running `--candidates` again asks all of them again.
 
-- `coups-and-uprisings-1890s`: 502
-- `legislation-1890s`: 504
-- `independences-1890s`: 504
+- `coups-and-uprisings-1890s`: 504
+- `referendums-1890s`: 502
 - `battles-and-wars-1890s`: 504
-- `elections-1900s`: 502
 - `coups-and-uprisings-1900s`: 504
+- `independences-1900s`: 504
 - `battles-and-wars-1900s`: 504
-- `coups-and-uprisings-1910s`: 502
+- `coups-and-uprisings-1910s`: 504
+- `legislation-1910s`: 504
+- `independences-1910s`: 504
 - `battles-and-wars-1910s`: 504
-- `coups-and-uprisings-1920s`: 504
-- `legislation-1920s`: 504
+- `coups-and-uprisings-1920s`: 502
+- `treaties-and-agreements-1920s`: 502
+- `legislation-1920s`: 502
 - `independences-1920s`: 504
 - `battles-and-wars-1920s`: 504
-- `coups-and-uprisings-1930s`: 502
-- `legislation-1930s`: 504
+- `coups-and-uprisings-1930s`: 504
+- `legislation-1930s`: 502
 - `independences-1930s`: 504
 - `battles-and-wars-1930s`: 504
-- `legislation-1940s`: 504
+- `coups-and-uprisings-1940s`: 504
+- `legislation-1940s`: 502
 - `independences-1940s`: 504
 - `battles-and-wars-1940s`: 504
 - `coups-and-uprisings-1950s`: 504
-- `legislation-1950s`: 502
-- `independences-1950s`: 504
+- `legislation-1950s`: 504
+- `independences-1950s`: 502
 - `battles-and-wars-1950s`: 504
 - `coups-and-uprisings-1960s`: 504
 - `legislation-1960s`: 504
@@ -2890,86 +3342,48 @@ refuses it after that; running `--candidates` again asks all of them again.
 - `coups-and-uprisings-1970s`: 504
 - `legislation-1970s`: 504
 - `independences-1970s`: 504
-- `battles-and-wars-1970s`: 504
-- `coups-and-uprisings-1980s`: 504
-- `legislation-1980s`: 502
-- `independences-1980s`: 502
-- `disasters-1980s`: 502
-- `independences-1990s`: 504
+- `battles-and-wars-1970s`: 502
+- `coups-and-uprisings-1990s`: 504
+- `legislation-1990s`: 504
 - `battles-and-wars-1990s`: 502
-- `independences-2000s`: 502
-- `world-wars-1970s`: 502
-- `world-wars-2010s`: 502
-- `world-revolutions-1980s`: 502
-- `world-pandemics-1970s`: 502
-- `world-pandemics-1990s`: 502
-- `world-pandemics-2010s`: 504
-- `world-coups-1920s`: 502
-- `world-coups-2000s`: 504
+- `disasters-2000s`: 502
+- `world-pandemics-1930s`: 504
+- `world-pandemics-1990s`: 504
+- `world-coups-1930s`: 502
+- `world-coups-1950s`: 502
+- `world-coups-1980s`: 504
+- `world-assassinations-1970s`: 504
 - `world-assassinations-1990s`: 502
-- `world-assassinations-2000s`: 502
-- `world-assassinations-2010s`: 502
-- `world-economic-crises-2010s`: 502
-- `world-financial-crises-2000s`: 504
-- `world-genocides-2010s`: 504
-- `world-independence-declarations-2000s`: 500
+- `world-assassinations-2000s`: 504
+- `world-economic-crises-1950s`: 502
+- `world-economic-crises-1980s`: 500
+- `world-economic-crises-2000s`: 504
+- `world-economic-crises-2010s`: 504
+- `world-financial-crises-1920s`: 502
+- `world-financial-crises-1930s`: 502
+- `world-financial-crises-2010s`: 504
+- `world-genocides-1980s`: 502
+- `world-genocides-1990s`: 502
+- `world-genocides-2010s`: 502
+- `world-independence-declarations-1910s`: 502
+- `world-international-conferences-1960s`: 504
+- `world-international-conferences-2000s`: 504
+- `world-international-conferences-2010s`: 504
 - `pt2-laws-and-constitutions-1890s`: 504
-- `pt2-laws-and-constitutions-1900s`: 504
-- `pt2-laws-and-constitutions-1920s`: 504
-- `pt2-laws-and-constitutions-1930s`: 502
-- `pt2-laws-and-constitutions-1940s`: 504
-- `pt2-laws-and-constitutions-1950s`: 504
-- `pt2-treaties-and-agreements-1890s`: 504
-- `pt2-treaties-and-agreements-1900s`: 504
-- `pt2-treaties-and-agreements-1920s`: 504
-- `pt2-treaties-and-agreements-1930s`: 504
-- `pt2-treaties-and-agreements-1940s`: 504
-- `pt2-treaties-and-agreements-1950s`: 504
-- `pt2-treaties-and-agreements-1960s`: 504
-- `pt2-treaties-and-agreements-1970s`: 504
-- `pt2-strikes-and-protests-1890s`: 504
-- `pt2-strikes-and-protests-1910s`: 504
-- `pt2-strikes-and-protests-1920s`: 504
-- `pt2-strikes-and-protests-1940s`: 502
-- `pt2-strikes-and-protests-1950s`: 500
-- `pt2-strikes-and-protests-1960s`: 504
-- `pt2-strikes-and-protests-1970s`: 504
-- `pt2-strikes-and-protests-1980s`: 502
+- `pt2-laws-and-constitutions-1960s`: 504
+- `pt2-laws-and-constitutions-1970s`: 504
+- `pt2-crises-1890s`: 504
 - `pt2-crises-1900s`: 504
-- `pt2-crises-1920s`: fetch failed
-- `pt2-crises-1930s`: 504
-- `pt2-crises-1940s`: 504
-- `pt2-crises-1950s`: 504
-- `pt2-crises-1970s`: 504
-- `pt2-crises-1990s`: 502
-- `pt2-foundings-and-nationalisations-1890s`: 502
-- `pt2-foundings-and-nationalisations-1900s`: 504
-- `pt2-foundings-and-nationalisations-1910s`: 504
-- `pt2-foundings-and-nationalisations-1920s`: 504
-- `pt2-foundings-and-nationalisations-1930s`: 504
-- `pt2-foundings-and-nationalisations-1940s`: 504
-- `pt2-foundings-and-nationalisations-1950s`: 500
-- `pt2-foundings-and-nationalisations-1960s`: 504
-- `pt2-foundings-and-nationalisations-1970s`: 504
-- `pt2-foundings-and-nationalisations-1980s`: 504
-- `pt2-foundings-and-nationalisations-1990s`: 504
-- `pt2-infrastructure-1890s`: 504
-- `pt2-infrastructure-1900s`: 504
-- `pt2-infrastructure-1910s`: 502
-- `pt2-infrastructure-1920s`: 504
-- `pt2-infrastructure-1930s`: 504
-- `pt2-infrastructure-1940s`: 504
-- `pt2-infrastructure-1950s`: 502
-- `pt2-infrastructure-1960s`: 502
-- `pt2-infrastructure-1970s`: 504
-- `pt2-infrastructure-1980s`: 504
-- `pt2-attacks-trials-and-disasters-1890s`: 504
-- `pt2-attacks-trials-and-disasters-1900s`: 504
+- `pt2-crises-1910s`: 504
+- `pt2-crises-1960s`: 504
+- `pt2-crises-1980s`: 502
 - `pt2-attacks-trials-and-disasters-1910s`: 504
-- `pt2-attacks-trials-and-disasters-1920s`: 504
-- `pt2-attacks-trials-and-disasters-1930s`: 504
-- `pt2-attacks-trials-and-disasters-1940s`: 504
-- `pt2-attacks-trials-and-disasters-1950s`: 504
 - `pt2-attacks-trials-and-disasters-1960s`: 504
 - `pt2-attacks-trials-and-disasters-1970s`: 504
-- `pt2-attacks-trials-and-disasters-1980s`: 502
+- `pt2-laws-and-constitutions-overseas`: 504
+- `pt2-treaties-and-agreements-overseas`: 504
+- `pt2-strikes-and-protests-overseas`: 504
+- `pt2-crises-overseas`: 504
+- `pt2-foundings-and-nationalisations-overseas`: 504
+- `pt2-infrastructure-overseas`: 504
+- `pt2-attacks-trials-and-disasters-overseas`: 504

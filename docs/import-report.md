@@ -1,1 +1,1 @@
-candidates: 1892 row(s)
+candidates: 2217 row(s)
