@@ -116,18 +116,37 @@ test('rule 19: which kind of actor may stand at each end', async () => {
   // An institution is not a state, so nothing is a regime of it.
   r = await run((fx) => { fx.records.push(relation('fixture-polity-four', 'fixture-actor-two', 'regime-of')); });
   assert.equal(rulesHit(r, 19)[0].path, '/to', messages(r));
-  // A body is part-of; a person is member-of. Neither takes the other's type.
+  // A person is not part of a body: joining one is `member-of`.
   r = await run((fx) => { fx.records.push(relation('fixture-actor-one', 'fixture-actor-two', 'part-of')); });
   assert.equal(rulesHit(r, 19).length, 1, messages(r));
-  r = await run((fx) => { fx.records.push(relation('fixture-actor-two', 'fixture-polity-three', 'member-of')); });
-  assert.equal(rulesHit(r, 19).length, 1, messages(r));
+  // A state can be a member (plan decision 12): M29 found that only a person
+  // could stand at the `from` end, so Portugal's ten memberships of
+  // international bodies had to be written as `allied-with` with a note
+  // saying they were not alliances. All three kinds may join a body now.
+  r = await run((fx) => {
+    fx.records.push(relation('fixture-actor-two', 'fixture-polity-three', 'member-of'));
+    fx.records.push(relation('fixture-polity-four', 'fixture-actor-two', 'member-of'));
+  });
+  assert.equal(rulesHit(r, 19).length, 0, messages(r));
+  // Nothing joins a person, which is the end that did not widen.
+  r = await run((fx) => { fx.records.push(relation('fixture-polity-four', 'fixture-actor-one', 'member-of')); });
+  assert.equal(rulesHit(r, 19)[0].path, '/to', messages(r));
   // And the passing cases really pass.
   r = await run((fx) => {
     fx.records.push(relation('fixture-actor-two', 'fixture-polity-three', 'part-of'));
-    fx.records.push(relation('fixture-actor-one', 'fixture-polity-four', 'led'));
     fx.records.push(relation('fixture-polity-three', 'fixture-polity-four', 'allied-with'));
   });
   assert.equal(r.errors.length, 0, messages(r));
+
+  // A retired type: an active record may not take it, and the tombstone the
+  // fixtures carry is not reported (A2).
+  r = await run((fx) => { fx.records.push(relation('fixture-actor-one', 'fixture-polity-four', 'led')); });
+  const retired = rulesHit(r, 19).filter((e) => e.path === '/type');
+  assert.equal(retired.length, 1, messages(r));
+  assert.match(retired[0].message, /retired relation type/);
+  assert.equal(retired[0].id, 'fixture-actor-one--fixture-polity-four--led');
+  r = await run();
+  assert.equal(rulesHit(r, 19).length, 0, 'the fixture tombstone keeps validating');
   // The table itself covers every type in the enum: a type with no row would
   // be checked by nothing.
   assert.deepEqual(Object.keys(RELATION_ENDPOINTS).sort(), [...RELATION_TYPES].sort());

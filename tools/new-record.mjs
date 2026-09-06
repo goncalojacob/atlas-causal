@@ -30,7 +30,7 @@ import { existsSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
-import { ACTOR_TYPES, EDGE_TYPES, RELATION_TYPES, SLUG } from '../src/validate/rules.js';
+import { ACTOR_TYPES, EDGE_TYPES, WRITABLE_RELATION_TYPES as RELATION_TYPES, SLUG } from '../src/validate/rules.js';
 import { OFFICE_CATEGORY_IDS as OFFICE_CATEGORIES } from '../src/vocab.js';
 import { KIND_DIRS, CONTRIBUTED_KINDS } from './lib/read.mjs';
 
@@ -190,6 +190,9 @@ export function scaffold(kind, positional, options) {
   if (kind === 'relation') {
     const [from, to, type] = positional;
     if (!from || !to || !type) throw new Error('relation needs <from> <to> <type>');
+    // The writable half of the vocabulary: `led` is still a type the atlas
+    // reads, on the tombstones M30a-2 left, and not one a new record may take
+    // (rule 19).
     if (!RELATION_TYPES.includes(type)) throw new Error(`type must be one of ${RELATION_TYPES.join(', ')}`);
     const start = int(options.start, 'start');
     if (start === undefined) throw new Error('relation needs --start <year>');

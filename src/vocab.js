@@ -58,14 +58,30 @@ export const RELATION_TYPES = Object.freeze([
   }),
   Object.freeze({
     id: 'member-of', out: 'Member of', in: 'Members',
-    endpoints: Object.freeze({ from: Object.freeze(['person']), to: Object.freeze(['institution', 'polity']) }),
+    // A state can be a member. M29 found that a person at the `from` end is
+    // all this allowed, so Portugal's ten memberships of international bodies
+    // were written as `allied-with` with a note saying they were not
+    // alliances; M31 re-types them and `allied-with` goes back to meaning an
+    // alliance (plan decision 12). The `to` end is unchanged: what a person
+    // may be a member of, a state may be a member of too.
+    endpoints: Object.freeze({ from: Object.freeze(['person', 'polity', 'institution']), to: Object.freeze(['institution', 'polity']) }),
   }),
   Object.freeze({
     id: 'part-of', out: 'Part of', in: 'Parts of it',
     endpoints: Object.freeze({ from: Object.freeze(['institution']), to: Object.freeze(['institution', 'polity']) }),
   }),
+  // Deprecated, and here on purpose. Who led a body is an office somebody
+  // held: a relation's id is `from--to--type`, so this type could say that one
+  // person led one body once and no more, and Soares led the Partido
+  // Socialista and held three governments (plan review, finding 1). M30a-2
+  // re-filed its twelve records as tenures and left twelve tombstones, and a
+  // tombstone still has to validate — which is why the type stays in this
+  // list, in the schema's enum and id pattern, in the narrative step pattern
+  // and in the group order below, all of which name it. Rule 19 is where the
+  // deprecation bites: no *active* relation may be of a type marked here, and
+  // the scaffold and the form do not offer one.
   Object.freeze({
-    id: 'led', out: 'Led', in: 'Led by',
+    id: 'led', out: 'Led', in: 'Led by', deprecated: true,
     endpoints: Object.freeze({ from: Object.freeze(['person']), to: Object.freeze(['institution', 'polity']) }),
   }),
   Object.freeze({
@@ -161,6 +177,17 @@ export const RELATION_LABEL = Object.freeze(Object.fromEntries(
 
 export const RELATION_ENDPOINTS = labelMap(RELATION_TYPES, 'endpoints');
 export const ACYCLIC_RELATION_TYPES = Object.freeze(RELATION_TYPES.filter((t) => t.acyclic).map((t) => t.id));
+
+// A type the atlas still reads and no longer writes. The records that carry
+// one are tombstones and keep validating; rule 19 refuses an active relation
+// of one, so a deprecation cannot be undone by accident.
+export const DEPRECATED_RELATION_TYPES = Object.freeze(RELATION_TYPES.filter((t) => t.deprecated).map((t) => t.id));
+
+// What a writer may choose from: the closed vocabulary less what has been
+// retired out of it. The scaffold and the contribution form offer this, and
+// `RELATION_TYPE_IDS` stays the whole list, because the schema's enum, the id
+// pattern and every tombstone are written against that.
+export const WRITABLE_RELATION_TYPE_IDS = Object.freeze(RELATION_TYPES.filter((t) => !t.deprecated).map((t) => t.id));
 
 // { 'head-of-state': ['polity'], … } — the actor types an office of each
 // category may belong to (rule 26), and { 'head-of-state': 'Head of state' }

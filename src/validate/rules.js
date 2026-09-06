@@ -14,6 +14,7 @@ import { bodyCitations, bodyLinks } from '../markdown.js';
 import {
   EDGE_ID, EDGE_TYPE_IDS, RELATION_ID, RELATION_TYPE_IDS,
   RELATION_ENDPOINTS, ACYCLIC_RELATION_TYPES, OFFICE_ENDPOINTS,
+  DEPRECATED_RELATION_TYPES, WRITABLE_RELATION_TYPE_IDS,
 } from '../vocab.js';
 import { kindsWhere, licensesOf } from '../kinds.js';
 import { NC_ORIGINS, REVIEW_STATUS, mayBeNonCommercial, originTool } from '../origin.js';
@@ -40,7 +41,8 @@ export const ACTOR_TYPES = Object.freeze(['person', 'polity', 'institution', 'pe
 // the oldest readers of them, but there is one definition now.
 export const EDGE_TYPES = EDGE_TYPE_IDS;
 export const RELATION_TYPES = RELATION_TYPE_IDS;
-export { EDGE_ID, RELATION_ID, RELATION_ENDPOINTS, ACYCLIC_RELATION_TYPES, OFFICE_ENDPOINTS };
+export const WRITABLE_RELATION_TYPES = WRITABLE_RELATION_TYPE_IDS;
+export { EDGE_ID, RELATION_ID, RELATION_ENDPOINTS, ACYCLIC_RELATION_TYPES, OFFICE_ENDPOINTS, DEPRECATED_RELATION_TYPES };
 // The identity a record may claim on Wikidata, and the kinds that may claim
 // one: a Wikidata item is about a thing in the world, which an event, an
 // actor and a place are, and an edge and a narrative are not — those are
@@ -1031,6 +1033,15 @@ export function checkRules(records, topology = {}, { universe: prebuilt = null }
   // are years is rule 15; this is everything left that only the pair can say.
   for (const r of own) {
     if (r.kind !== 'relation') continue;
+    // A type the atlas has retired may still be read — the twelve `led`
+    // tombstones and the fixture's are records, and an old link to one has to
+    // resolve and say why it went — but nothing standing may be of one. It is
+    // an error and not a warning because the replacement exists: `led` became
+    // a tenure of an office in M30a-2, and writing a thirteenth would put one
+    // claim in the atlas under two shapes.
+    if (r.status === 'active' && DEPRECATED_RELATION_TYPES.includes(r.type)) {
+      error(19, r, '/type', `"${r.type}" is a retired relation type: an existing record may keep it, an active one may not`);
+    }
     if (r.from === r.to) {
       error(19, r, '/to', 'a relation runs between two different actors');
       continue;

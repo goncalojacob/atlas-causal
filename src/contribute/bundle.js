@@ -10,7 +10,7 @@
 
 import { validate } from '../validate/core.js';
 import { createValidator } from '../validate/schema.js';
-import { ACTOR_TYPES, EDGE_TYPES, RELATION_TYPES, buildUniverse } from '../validate/rules.js';
+import { ACTOR_TYPES, EDGE_TYPES, WRITABLE_RELATION_TYPES as RELATION_TYPES, buildUniverse } from '../validate/rules.js';
 import { OFFICE_CATEGORY_IDS as OFFICE_CATEGORIES } from '../vocab.js';
 import { CONTAINER_KINDS } from '../citation.js';
 import { KIND, CONTRIBUTED_KINDS, listsOf } from '../kinds.js';
@@ -116,7 +116,7 @@ const DESCRIPTORS = Object.freeze({
   relation: Object.freeze([
     { key: 'from', label: 'From', input: 'select', optionsFrom: 'actors', path: '/from', required: true, hint: 'the regime, the body, the person: the end the type is written from' },
     { key: 'to', label: 'To', input: 'select', optionsFrom: 'actors', path: '/to', required: true },
-    { key: 'type', label: 'Type', input: 'select', options: ['', ...RELATION_TYPES], path: '/type', required: true, hint: 'regime-of a state, succeeded by, member-of a body, part-of a body, led it, allied-with it' },
+    { key: 'type', label: 'Type', input: 'select', options: ['', ...RELATION_TYPES], path: '/type', required: true, hint: 'regime-of a state, succeeded by, member-of a body, part-of a body, allied-with it. Who led a body is an office and a tenure, not a relation' },
     { key: 'start', label: 'Start year', input: 'text', path: '/when/start', required: true, hint: 'the year the relation began; a range as 1400..1450' },
     { key: 'end', label: 'End year', input: 'text', path: '/when/end', hint: 'blank means the same year as the start; write "ongoing" for one that still holds' },
     { key: 'date', label: 'Exact date', input: 'text', path: '/when/date', hint: 'display only, for a relation that began on a known day: YYYY-MM-DD or YYYY-MM' },

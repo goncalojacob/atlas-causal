@@ -38,8 +38,8 @@ test('scaffolded records have the envelope and pass their schema; the text is le
   assert.equal(actor.where, null);
   assert.deepEqual(v.validate('v1/actor.json', actor).map((e) => e.path), ['/summary']);
 
-  const relation = scaffold('relation', ['salazar', 'estado-novo', 'led'], { ...opts, start: '1932', end: '1968', note: 'as President of the Council' });
-  assert.equal(relation.id, 'salazar--estado-novo--led');
+  const relation = scaffold('relation', ['estado-novo', 'portugal', 'regime-of'], { ...opts, start: '1932', end: '1968', note: 'as President of the Council' });
+  assert.equal(relation.id, 'estado-novo--portugal--regime-of');
   assert.deepEqual(relation.when, { start: 1932, end: 1968 });
   assert.equal(relation.note, 'as President of the Council');
   // A relation is complete as scaffolded: its argument is the two ids, the
@@ -119,7 +119,10 @@ test('scaffold refuses bad input', () => {
   assert.throws(() => scaffold('presence', ['x'], opts), /kind must be/);
   assert.throws(() => scaffold('relation', ['a', 'b', 'friend-of'], { ...opts, start: '1' }), /type must be one of/);
   assert.throws(() => scaffold('relation', ['a', 'b'], { ...opts, start: '1' }), /<from> <to> <type>/);
-  assert.throws(() => scaffold('relation', ['a', 'b', 'led'], opts), /--start/);
+  assert.throws(() => scaffold('relation', ['a', 'b', 'regime-of'], opts), /--start/);
+  // A retired type is one the scaffold does not offer, though the records
+  // that carry it still validate (A2).
+  assert.throws(() => scaffold('relation', ['a', 'b', 'led'], { ...opts, start: '1932' }), /type must be one of/);
   assert.throws(() => scaffold('narrative', ['x'], { ...opts, step: ['fixture-event-a'] }), /at least two --step/);
   assert.throws(() => scaffold('narrative', ['Bad Id'], { ...opts, step: ['a', 'b'] }), /slug/);
   assert.throws(() => scaffold('place', ['x'], opts), /--lon and --lat/);
