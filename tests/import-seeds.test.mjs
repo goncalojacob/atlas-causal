@@ -10,8 +10,8 @@ import { tmpdir } from 'node:os';
 import path from 'node:path';
 import { createValidator } from '../src/validate/schema.js';
 import { checkImportSeeds, seedsAreEmpty, IMPORT_SCHEMAS, runValidation } from '../tools/validate.mjs';
-import { readImportMaps, DEFAULT_IMPORT_KIND } from '../tools/lib/read.mjs';
-import { schemas } from './helpers.mjs';
+import { readImportMaps, readCategories, DEFAULT_IMPORT_KIND } from '../tools/lib/read.mjs';
+import { ROOT, schemas } from './helpers.mjs';
 
 const SEEDS = 'v1/import-seeds.json';
 const STATE = 'v1/import-state.json';
@@ -63,6 +63,36 @@ test('duplicates in a seeds file are caught by the checks a shape cannot make', 
   assert.deepEqual(checkImportSeeds('imports/x.json', seeds({ items: [] })), []);
   assert.equal(seedsAreEmpty(seeds({ items: [] })), true);
   assert.equal(seedsAreEmpty(seeds()), false);
+});
+
+// The class table's `category` column (amendment A17): what a shape cannot
+// say — that it belongs to an event class and that it names a category the
+// atlas has.
+test('a class says which category its events become, or says nothing', async () => {
+  const v = await validator();
+  const categories = await readCategories(path.join(ROOT, 'data'));
+  const withClass = (entry) => seeds({ classes: { Q1: entry } });
+  const check = (entry) => checkImportSeeds('imports/x.json', withClass(entry), { categories });
+
+  assert.deepEqual(v.validate(SEEDS, withClass({ kind: 'event', category: 'war' })), []);
+  assert.deepEqual(check({ kind: 'event', category: 'war' }), []);
+  // A class with no category is the ordinary case and the import writes none.
+  assert.deepEqual(check({ kind: 'event' }), []);
+
+  const outside = check({ kind: 'event', category: 'not-a-category' });
+  assert.equal(outside.length, 1);
+  assert.match(outside[0].message, /is not a category in data\/categories\.json/);
+  assert.equal(outside[0].path, '/classes/Q1');
+
+  const misplaced = check({ kind: 'place', category: 'war' });
+  assert.equal(misplaced.length, 1);
+  assert.match(misplaced[0].message, /category means nothing on a place class/);
+
+  // The schema holds the spelling; the file holds the list.
+  assert.equal(v.validate(SEEDS, withClass({ kind: 'event', category: 'Not A Slug' })).length, 1);
+  // And with no vocabulary at all, a category is not checked against one —
+  // the same rule the two warnings follow (amendment A8).
+  assert.deepEqual(checkImportSeeds('imports/x.json', withClass({ kind: 'event', category: 'not-a-category' })), []);
 });
 
 test('the state schema holds one cursor per mode', async () => {

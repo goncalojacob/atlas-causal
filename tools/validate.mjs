@@ -81,9 +81,13 @@ export function checkImportMap(file, map) {
 // what a shape cannot say. Uniqueness above all — the keyword subset has no
 // uniqueItems, and an item listed twice would be fetched twice and counted
 // twice against the call budget.
-export function checkImportSeeds(file, seeds) {
+// `categories` is data/categories.json, or null where the dataset has none —
+// in which case a class's `category` is not checked against anything, for the
+// reason the two warnings are not raised without a vocabulary (A8).
+export function checkImportSeeds(file, seeds, { categories = null } = {}) {
   const problems = [];
   const say = (path, message) => problems.push({ path, message, file });
+  const allowed = categories === null ? null : new Set(categories.map((c) => c?.id).filter(Boolean));
   const seen = new Set();
   (seeds?.items ?? []).forEach((qid, i) => {
     if (seen.has(qid)) say(`/items/${i}`, `${qid} is listed twice`);
@@ -95,6 +99,15 @@ export function checkImportSeeds(file, seeds) {
     // with no actorType would create actors of no type at all.
     if (entry?.kind === 'actor' && !entry?.actorType) say(`/classes/${qid}`, 'an actor class has to say which actorType its items become');
     if (entry?.kind !== 'actor' && entry?.actorType) say(`/classes/${qid}`, `actorType means nothing on a ${entry?.kind} class`);
+    // The same shape of check for the category column (A17): it says what an
+    // event of this class is, so it means nothing on a class that makes
+    // something else, and a category outside data/categories.json would be
+    // written onto every record the class creates. A class with no category
+    // is the ordinary case — the import writes none.
+    if (entry?.category !== undefined) {
+      if (entry?.kind !== 'event') say(`/classes/${qid}`, `category means nothing on a ${entry?.kind} class`);
+      else if (allowed && !allowed.has(entry.category)) say(`/classes/${qid}`, `"${entry.category}" is not a category in data/categories.json`);
+    }
   }
   const names = new Set();
   (seeds?.queries ?? []).forEach((query, i) => {
@@ -237,7 +250,7 @@ export async function runValidation(dataDir = DEFAULT_DATA, { index = false, sit
       for (const e of validator.validate(schema, map)) {
         errors.push({ rule: kind, id: null, file, path: e.path, message: e.message, alternatives: e.alternatives });
       }
-      const checks = kind === 'import-seeds' ? checkImportSeeds(file, map) : kind === DEFAULT_IMPORT_KIND ? checkImportMap(file, map) : [];
+      const checks = kind === 'import-seeds' ? checkImportSeeds(file, map, { categories }) : kind === DEFAULT_IMPORT_KIND ? checkImportMap(file, map) : [];
       for (const p of checks) {
         errors.push({ rule: kind, id: null, file, path: p.path, message: p.message });
       }

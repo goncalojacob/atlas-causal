@@ -387,6 +387,14 @@ export function classify(read, classes = {}) {
     return { kind: null, reason: `its classes disagree: ${known.map(([q, e]) => `${q} → ${e.kind}`).join(', ')}` };
   }
   const kind = kinds[0];
+  if (kind === 'event') {
+    // What kind of thing the event was, off the class table (A17). Classes
+    // that disagree leave it unset rather than refusing the item: a category
+    // is a label on a record, not the record's right to exist, and a person
+    // sets it when the table cannot.
+    const categories = [...new Set(known.map(([, e]) => e.category).filter(Boolean))];
+    return { kind, actorType: null, category: categories.length === 1 ? categories[0] : null, via: known.map(([q]) => q) };
+  }
   if (kind !== 'actor') return { kind, actorType: null, via: known.map(([q]) => q) };
   const types = [...new Set(known.map(([, e]) => e.actorType).filter(Boolean))];
   if (types.length !== 1) {
@@ -539,7 +547,7 @@ export function actorRecord(read, { id, created, actorType, when }) {
   });
 }
 
-export function eventRecord(read, { id, created, when, place, region = null, regionNote = null }) {
+export function eventRecord(read, { id, created, when, place, region = null, regionNote = null, category = null }) {
   return envelope(id, 'event', created, {
     ...identityOf(read, created),
     sources: [{ source: SOURCE_ID, locator: read.qid }],
@@ -549,6 +557,10 @@ export function eventRecord(read, { id, created, when, place, region = null, reg
     place,
     region,
     regionNote: region ? regionNote : null,
+    // Only where the class table says one. A class with no category writes no
+    // key at all rather than a guess or a null: what an event was is an
+    // editorial judgement, and an import that had none should say nothing.
+    ...(category ? { category } : {}),
     // P710 names participants, and who took part is not the same question as
     // what they did in it: `role` is the argument and a person writes it.
     actors: [],
@@ -953,7 +965,11 @@ export async function runImportMode(dataDir, { fetcher, today, batchSize = BATCH
           continue;
         }
       }
-      const record = eventRecord(read, { id, created: today, when, place, region, regionNote: laneNote(lane, { placeless: true }) });
+      const record = eventRecord(read, {
+        id, created: today, when, place, region,
+        regionNote: laneNote(lane, { placeless: true }),
+        category: classified.category ?? null,
+      });
       written.push(await writeRecord(dataDir, 'events', record));
       taken.add(id);
       report.created.push({ id, qid, kind: 'event', place });

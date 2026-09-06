@@ -174,7 +174,16 @@ test('a coordinate and a sitelink count are read, or honestly absent', async () 
 // --- what an item is -------------------------------------------------------
 
 test('an item is classified only by what the seeds file says', async () => {
-  assert.deepEqual(classify(await read('Q9000001'), CLASSES), { kind: 'event', actorType: null, via: ['Q9100001'] });
+  // An event class with no `category` column classifies to no category, which
+  // is what makes the import write none (amendment A17).
+  assert.deepEqual(classify(await read('Q9000001'), CLASSES), { kind: 'event', actorType: null, category: null, via: ['Q9100001'] });
+  assert.equal(classify(await read('Q9000001'), { Q9100001: { kind: 'event', category: 'revolution' } }).category, 'revolution');
+  // Two event classes that name two categories: the item is still an event
+  // and a person decides what kind of one.
+  assert.equal(classify({ classes: ['Q9100001', 'Q9100006'] }, {
+    Q9100001: { kind: 'event', category: 'revolution' },
+    Q9100006: { kind: 'event', category: 'war' },
+  }).category, null);
   assert.deepEqual(classify(await read('Q9000002'), CLASSES), { kind: 'actor', actorType: 'person', via: ['Q9100002'] });
   assert.equal(classify(await read('Q9000003'), CLASSES).kind, 'place');
 
