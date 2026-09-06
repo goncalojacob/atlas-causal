@@ -257,6 +257,13 @@ export async function buildIndex(dataDir = DEFAULT_DATA, prepared = {}) {
     // nothing in it".
     ...(topology.rolesAllowed === undefined ? {} : { rolesAllowed: topology.rolesAllowed }),
     ...(topology.categoriesAllowed === undefined ? {} : { categoriesAllowed: topology.categoriesAllowed }),
+    // The two joins the offices need (amendment A10), in the manifest and not
+    // in the spine: they are derived from records the spine already carries
+    // whole, so a page that wanted to recompute them could, and putting them
+    // beside `regions` is what makes `lanes.js` a lookup in M33. Both are
+    // small — one line per event that names somebody who held an office.
+    officesByEvent: topology.officesByEvent ?? {},
+    tenuresByOffice: topology.tenuresByOffice ?? {},
     // Paleo-coastlines will list a year range here; the present covers all.
     land: land.map((l) => ({ file: l.file, epoch: l.epoch, from: null, to: null })),
     // The territory shards, in year order. The site loads the one that

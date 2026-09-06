@@ -4177,10 +4177,694 @@
   "schema": 1,
   "warnings": [
     {
+      "id": "1908-portuguese-legislative-election",
+      "kind": "event",
+      "message": "roles outside data/roles.json: \"largest party, 62 seats\", \"king in whose name it was called\", \"outgoing head of government\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "1911-portuguese-constituent-national-assembly-election",
+      "kind": "event",
+      "message": "roles outside data/roles.json: \"won 229 of 234 seats\", \"the regime being constituted\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "1911-portuguese-presidential-election",
+      "kind": "event",
+      "message": "roles outside data/roles.json: \"elected first president\", \"the regime whose office was filled\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "1915-portuguese-legislative-election",
+      "kind": "event",
+      "message": "roles outside data/roles.json: \"won 106 of 163 seats in the chamber\", \"leader of the winning party\", \"the regime restored by the may rising\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "1921-portuguese-legislative-election",
+      "kind": "event",
+      "message": "a role outside data/roles.json: \"the regime holding the election\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "1925-portuguese-legislative-election",
+      "kind": "event",
+      "message": "roles outside data/roles.json: \"the regime holding the election\", \"won the largest share\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "1928-portuguese-presidential-election",
+      "kind": "event",
+      "message": "roles outside data/roles.json: \"sole candidate, elected president\", \"the regime seeking a constitutional form\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "1945-portuguese-legislative-election",
+      "kind": "event",
+      "message": "roles outside data/roles.json: \"dissolved the assembly and set the terms\", \"sole party, took all 120 seats\", \"opposition front, withdrew before the poll\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "1949-portuguese-presidential-election",
+      "kind": "event",
+      "message": "roles outside data/roles.json: \"opposition candidate, withdrew\", \"re-elected unopposed for a fourth term\", \"broke up the opposition campaign\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "1957-guinean-territorial-assembly-election",
+      "kind": "event",
+      "message": "a role outside data/roles.json: \"won the territorial government\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "1965-portuguese-presidential-election",
+      "kind": "event",
+      "message": "roles outside data/roles.json: \"re-elected for a second term\", \"the regime filling its own presidency\", \"held every seat of the electing assembly\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "1969-portuguese-legislative-election",
+      "kind": "event",
+      "message": "roles outside data/roles.json: \"called the election as his opening\", \"took all 130 seats\", \"president under whom it was held\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "1972-portuguese-presidential-election",
+      "kind": "event",
+      "message": "roles outside data/roles.json: \"returned for a third term\", \"the regime filling its own presidency\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "1973-portuguese-legislative-election",
+      "kind": "event",
+      "message": "roles outside data/roles.json: \"as anp, took all 150 seats\", \"head of government\", \"president under whom it was held\", \"stood clandestinely inside the cde lists\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "1975-sao-tomean-legislative-election",
+      "kind": "event",
+      "message": "roles outside data/roles.json: \"sole legal party and sole list\", \"the state being founded\", \"departing colonial power\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "1976-azorean-regional-election",
+      "kind": "event",
+      "message": "roles outside data/roles.json: \"won a majority of the new assembly\", \"the state creating the region\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "1976-portuguese-local-elections",
+      "kind": "event",
+      "message": "a role outside data/roles.json: \"the state constituting local power\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "1977-mozambican-general-election",
+      "kind": "event",
+      "message": "a role outside data/roles.json: \"sole legal party\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "1979-portuguese-legislative-election",
+      "kind": "event",
+      "message": "roles outside data/roles.json: \"led the winning alliance\", \"partner in the winning alliance\", \"lost office\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "1979-portuguese-local-elections",
+      "kind": "event",
+      "message": "a role outside data/roles.json: \"the state holding the election\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "1980-portuguese-legislative-election",
+      "kind": "event",
+      "message": "roles outside data/roles.json: \"led the winning alliance\", \"partner in the winning alliance\", \"the state holding the election\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "1980-portuguese-presidential-election",
+      "kind": "event",
+      "message": "roles outside data/roles.json: \"re-elected\", \"backed the losing candidate\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "1983-portuguese-legislative-election",
+      "kind": "event",
+      "message": "roles outside data/roles.json: \"came first and led the government\", \"junior partner in the bloco central\", \"prime minister from june 1983\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "1985-portuguese-legislative-election",
+      "kind": "event",
+      "message": "roles outside data/roles.json: \"came first and formed a minority government\", \"prime minister from november 1985\", \"lost office\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "1987-european-parliament-election-in-portugal",
+      "kind": "event",
+      "message": "roles outside data/roles.json: \"the state holding the election\", \"the parliament being elected to\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "1991-portuguese-legislative-election",
+      "kind": "event",
+      "message": "roles outside data/roles.json: \"won a second absolute majority\", \"prime minister\", \"in opposition\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "1995-portuguese-legislative-election",
+      "kind": "event",
+      "message": "roles outside data/roles.json: \"won and formed a minority government\", \"lost office after ten years\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "1998-portuguese-abortion-referendum",
+      "kind": "event",
+      "message": "a role outside data/roles.json: \"the state putting the question\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "1999-macanese-chief-executive-election",
+      "kind": "event",
+      "message": "a role outside data/roles.json: \"the successor sovereign\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "2001-portuguese-local-elections",
+      "kind": "event",
+      "message": "roles outside data/roles.json: \"lost the main cities and the government\", \"won lisbon and porto\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "2002-portuguese-legislative-election",
+      "kind": "event",
+      "message": "roles outside data/roles.json: \"came first and led the government\", \"junior partner\", \"lost office\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "2005-portuguese-legislative-election",
+      "kind": "event",
+      "message": "roles outside data/roles.json: \"won its first absolute majority\", \"lost office\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "2007-portuguese-abortion-referendum",
+      "kind": "event",
+      "message": "roles outside data/roles.json: \"the state putting the question\", \"called the referendum and legislated on the result\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "2009-portuguese-legislative-election",
+      "kind": "event",
+      "message": "roles outside data/roles.json: \"returned without a majority\", \"in opposition\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "2011-portuguese-legislative-election",
+      "kind": "event",
+      "message": "roles outside data/roles.json: \"won and led the coalition government\", \"junior partner\", \"prime minister\", \"lost office\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "2011-portuguese-socialist-party-leadership-election",
+      "kind": "event",
+      "message": "a role outside data/roles.json: \"chose a new secretary-general\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "2014-portuguese-socialist-party-prime-ministerial-primary",
+      "kind": "event",
+      "message": "roles outside data/roles.json: \"held the primary\", \"won it and took the leadership\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "2022-portuguese-social-democratic-party-leadership-election",
+      "kind": "event",
+      "message": "a role outside data/roles.json: \"chose its leader and candidate for prime minister\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "2022-portuguese-social-democratic-party-leadership-election-q111182017",
+      "kind": "event",
+      "message": "roles outside data/roles.json: \"chose a new leader\", \"won the leadership\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "2023-madeiran-regional-election",
+      "kind": "event",
+      "message": "a role outside data/roles.json: \"returned to the regional government without a majority\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "2024-madeiran-regional-election",
+      "kind": "event",
+      "message": "a role outside data/roles.json: \"returned to the regional government without a majority\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "2025-madeiran-regional-election",
+      "kind": "event",
+      "message": "a role outside data/roles.json: \"led the minority government that was censured\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "25-november-1975",
+      "kind": "event",
+      "message": "roles outside data/roles.json: \"removed\", \"divided\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "angola-independence-1975",
+      "kind": "event",
+      "message": "a role outside data/roles.json: \"withdrew\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "angola-war-begins-1961",
+      "kind": "event",
+      "message": "a role outside data/roles.json: \"claimed responsibility\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "batepa-massacre",
+      "kind": "event",
+      "message": "a role outside data/roles.json: \"colonial administration responsible\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "battle-of-the-lys-1918",
+      "kind": "event",
+      "message": "a role outside data/roles.json: \"defeated\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "bes-resolution-2014",
+      "kind": "event",
+      "message": "roles outside data/roles.json: \"resolution authority\", \"resolved\", \"created\", \"executive chairman\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "bpn-nationalisation-2008",
+      "kind": "event",
+      "message": "a role outside data/roles.json: \"nationalised it\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "cabral-assassinated-1973",
+      "kind": "event",
+      "message": "a role outside data/roles.json: \"alleged accomplice\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "caetano-succeeds-salazar-1968",
+      "kind": "event",
+      "message": "roles outside data/roles.json: \"successor\", \"replaced\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "carnation-revolution-1974",
+      "kind": "event",
+      "message": "roles outside data/roles.json: \"planner\", \"figurehead\", \"founded\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "cavaco-absolute-majority-1987",
+      "kind": "event",
+      "message": "roles outside data/roles.json: \"winner\", \"president\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "constituent-assembly-election-1975",
+      "kind": "event",
+      "message": "a role outside data/roles.json: \"organiser\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "constitution-1911",
+      "kind": "event",
+      "message": "a role outside data/roles.json: \"constituted\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "constitution-1933",
+      "kind": "event",
+      "message": "roles outside data/roles.json: \"founded\", \"superseded\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "constitution-1976",
+      "kind": "event",
+      "message": "roles outside data/roles.json: \"constituted\", \"created\", \"legislator\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "constitutional-revision-1959",
+      "kind": "event",
+      "message": "a role outside data/roles.json: \"legislator\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "constitutional-revision-1982",
+      "kind": "event",
+      "message": "roles outside data/roles.json: \"abolished\", \"legislator\", \"president\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "costa-resigns-2023",
+      "kind": "event",
+      "message": "roles outside data/roles.json: \"president\", \"governing party\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "coup-28-may-1926",
+      "kind": "event",
+      "message": "a role outside data/roles.json: \"founded\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "coup-attempt-11-march-1975",
+      "kind": "event",
+      "message": "a role outside data/roles.json: \"opponent\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "covid-state-of-emergency-2020",
+      "kind": "event",
+      "message": "roles outside data/roles.json: \"declared it\", \"prime minister\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "cplp-founding-1996",
+      "kind": "event",
+      "message": "roles outside data/roles.json: \"founded\", \"founding member\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "eanes-elected-1976",
+      "kind": "event",
+      "message": "a role outside data/roles.json: \"backer\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "east-timor-independence-2002",
+      "kind": "event",
+      "message": "roles outside data/roles.json: \"withdrew\", \"administered\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "east-timor-invasion-1975",
+      "kind": "event",
+      "message": "a role outside data/roles.json: \"withdrew\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "eec-accession-1986",
+      "kind": "event",
+      "message": "roles outside data/roles.json: \"admitting body\", \"acceded\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "efta-accession-1960",
+      "kind": "event",
+      "message": "roles outside data/roles.json: \"founded\", \"founding member\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "eleicoes-legislativas-regionais-na-madeira-em-1976",
+      "kind": "event",
+      "message": "roles outside data/roles.json: \"won a majority of the new assembly\", \"the state creating the region\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "euro-adoption-1999",
+      "kind": "event",
+      "message": "a role outside data/roles.json: \"adopter\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "exposicao-mundo-portugues-1940",
+      "kind": "event",
+      "message": "a role outside data/roles.json: \"patron\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "fiftieth-anniversary-25-april-2024",
+      "kind": "event",
+      "message": "roles outside data/roles.json: \"president\", \"prime minister\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "geringonca-2015",
+      "kind": "event",
+      "message": "roles outside data/roles.json: \"prime minister\", \"governing party\", \"supporting party\", \"president\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "goa-annexed-1961",
+      "kind": "event",
+      "message": "roles outside data/roles.json: \"annexed it\", \"dispossessed\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "government-falls-2025",
+      "kind": "event",
+      "message": "roles outside data/roles.json: \"prime minister\", \"governing party\", \"opposition party\", \"party leader\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "guinea-bissau-declares-independence-1973",
+      "kind": "event",
+      "message": "a role outside data/roles.json: \"declared it\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "guinean-constitutional-referendum-1958",
+      "kind": "event",
+      "message": "a role outside data/roles.json: \"led the campaign for a no vote\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "hat-nipah-and-same-massacres",
+      "kind": "event",
+      "message": "a role outside data/roles.json: \"occupying power\"",
+      "rule": "role-unknown"
+    },
+    {
       "id": "iberian-blackout-2025",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
+    },
+    {
+      "id": "iberian-pact",
+      "kind": "event",
+      "message": "roles outside data/roles.json: \"negotiated and signed for portugal\", \"the regime whose foreign policy it set\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "imf-agreement-1978",
+      "kind": "event",
+      "message": "roles outside data/roles.json: \"lender\", \"borrower\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "imf-agreement-1983",
+      "kind": "event",
+      "message": "roles outside data/roles.json: \"lender\", \"borrower\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "law-of-separation-1911",
+      "kind": "event",
+      "message": "a role outside data/roles.json: \"legislator\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "legiao-portuguesa-founded-1936",
+      "kind": "event",
+      "message": "a role outside data/roles.json: \"founded\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "legislative-election-1976",
+      "kind": "event",
+      "message": "a role outside data/roles.json: \"winner\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "legislative-election-2015",
+      "kind": "event",
+      "message": "roles outside data/roles.json: \"incumbent\", \"opposition leader\", \"coalition party\", \"opposition party\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "legislative-election-2019",
+      "kind": "event",
+      "message": "roles outside data/roles.json: \"prime minister\", \"governing party\", \"opposition party\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "legislative-election-2022",
+      "kind": "event",
+      "message": "roles outside data/roles.json: \"prime minister\", \"governing party\", \"opposition party\", \"party leader\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "legislative-election-2024",
+      "kind": "event",
+      "message": "roles outside data/roles.json: \"winner\", \"coalition party\", \"outgoing party\", \"opposition party\", \"party leader\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "legislative-election-2025",
+      "kind": "event",
+      "message": "roles outside data/roles.json: \"prime minister\", \"coalition party\", \"opposition party\", \"party leader\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "lisbon-regicide",
+      "kind": "event",
+      "message": "roles outside data/roles.json: \"king, killed in the attack\", \"heir apparent, killed in the attack\", \"younger son, succeeded to the throne\", \"head of the government the attack targeted\", \"sheltered and armed the gunmen\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "macau-handover-1999",
+      "kind": "event",
+      "message": "a role outside data/roles.json: \"withdrew\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "marcelo-elected-president-2016",
+      "kind": "event",
+      "message": "roles outside data/roles.json: \"outgoing president\", \"party of origin\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "marcelo-reelected-2021",
+      "kind": "event",
+      "message": "a role outside data/roles.json: \"re-elected\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "monarchy-of-the-north-1919",
+      "kind": "event",
+      "message": "a role outside data/roles.json: \"invoked\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "montenegro-government-2024",
+      "kind": "event",
+      "message": "roles outside data/roles.json: \"prime minister\", \"president\", \"governing party\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "mueda-massacre",
+      "kind": "event",
+      "message": "a role outside data/roles.json: \"colonial power whose troops fired\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "nato-founding-1949",
+      "kind": "event",
+      "message": "roles outside data/roles.json: \"founded\", \"founding member\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "noite-sangrenta-1921",
+      "kind": "event",
+      "message": "a role outside data/roles.json: \"discredited\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "october-fires-2017",
+      "kind": "event",
+      "message": "a role outside data/roles.json: \"prime minister\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "pedrogao-grande-fires-2017",
+      "kind": "event",
+      "message": "a role outside data/roles.json: \"prime minister\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "pimenta-de-castro-government-1915",
+      "kind": "event",
+      "message": "a role outside data/roles.json: \"excluded\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "portuguese-regionalisation-referendum-1998",
+      "kind": "event",
+      "message": "roles outside data/roles.json: \"the state putting the question\", \"proposed the regions\", \"campaigned against\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "republic-proclaimed-1910",
+      "kind": "event",
+      "message": "a role outside data/roles.json: \"founded\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "revolt-14-may-1915",
+      "kind": "event",
+      "message": "roles outside data/roles.json: \"restored\", \"beneficiary\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "schengen-in-force-1995",
+      "kind": "event",
+      "message": "roles outside data/roles.json: \"acceded\", \"admitting body\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "soares-elected-president-1986",
+      "kind": "event",
+      "message": "a role outside data/roles.json: \"outgoing\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "spinola-resigns-1974",
+      "kind": "event",
+      "message": "roles outside data/roles.json: \"opponent\", \"prime minister\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "treaty-of-accession-1985",
+      "kind": "event",
+      "message": "roles outside data/roles.json: \"acceding state\", \"the communities being joined\", \"signed as prime minister\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "treaty-of-friendship-and-cooperation-between-spain-and-portugal",
+      "kind": "event",
+      "message": "a role outside data/roles.json: \"signed as prime minister\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "troika-bailout-2011",
+      "kind": "event",
+      "message": "roles outside data/roles.json: \"lender\", \"borrower\", \"president\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "troika-programme-ends-2014",
+      "kind": "event",
+      "message": "roles outside data/roles.json: \"prime minister\", \"lender\", \"borrower\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "un-admission-1955",
+      "kind": "event",
+      "message": "roles outside data/roles.json: \"admitting body\", \"admitted\"",
+      "rule": "role-unknown"
+    },
+    {
+      "id": "world-youth-day-2023",
+      "kind": "event",
+      "message": "roles outside data/roles.json: \"prime minister\", \"head of state\"",
+      "rule": "role-unknown"
     }
   ]
 }

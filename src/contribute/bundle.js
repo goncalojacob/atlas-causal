@@ -317,7 +317,16 @@ function parseNumber(text) {
 function actorsOf(list) {
   return (Array.isArray(list) ? list : [])
     .filter((a) => trimmed(a?.actor) !== '')
-    .map((a) => ({ actor: trimmed(a.actor), role: trimmed(a.role) }));
+    .map((a) => {
+      const line = { actor: trimmed(a.actor), role: trimmed(a.role) };
+      // The free text beside the role — "president under whom it was held" —
+      // which is what a drafting run's phrase becomes now that the role
+      // itself is a vocabulary (plan decision 7). The form has no input for
+      // it until M30b; an empty note writes no key at all, so a record
+      // written before the field existed is byte-identical after a save.
+      if (trimmed(a.note) !== '') line.note = trimmed(a.note);
+      return line;
+    });
 }
 
 // A row with nothing chosen is a row the contributor has not filled in yet,
@@ -610,7 +619,7 @@ export function valuesFromRecord(kind, record) {
       endDate: when.endDate ?? '',
       place: r.place ?? '',
       region: r.region ?? '',
-      actors: (Array.isArray(r.actors) ? r.actors : []).map((a) => ({ actor: a?.actor ?? '', role: a?.role ?? '' })),
+      actors: (Array.isArray(r.actors) ? r.actors : []).map((a) => ({ actor: a?.actor ?? '', role: a?.role ?? '', note: a?.note ?? '' })),
     };
   }
 
@@ -766,6 +775,16 @@ const ENVELOPE_KEYS = Object.freeze(['schema', 'id', 'kind', 'status', 'supersed
 // here: it is a field of its own, and buildRecord writes what was typed.
 const IDENTITY_KEYS = Object.freeze(['wikipedia', 'sitelinks']);
 
+// The fields M30a-3 put in the schemas and M30b draws. The form has no input
+// for any of them yet, and a field the editor cannot see is a field the
+// editor must not delete — the same rule IDENTITY_KEYS exists for — so a save
+// through the form or the dashboard carries them across untouched. The day
+// M30b adds the inputs, each key moves from here into that kind's `fields`.
+const KEPT_KEYS = Object.freeze({
+  event: Object.freeze(['parent', 'scope', 'category']),
+  place: Object.freeze(['historicalNames']),
+});
+
 // Rebuild `built` in the key order of `original`, recursively, so that a save
 // that changed nothing produces the same bytes. Keys the original does not
 // have go last, in the order buildRecord wrote them.
@@ -785,7 +804,7 @@ function orderLike(built, original) {
 // values, the envelope from what was already on disk.
 export function applyValues(kind, record, values) {
   const built = buildRecord(kind, values, {});
-  for (const key of [...ENVELOPE_KEYS, ...IDENTITY_KEYS]) {
+  for (const key of [...ENVELOPE_KEYS, ...IDENTITY_KEYS, ...(KEPT_KEYS[kind] ?? [])]) {
     if (Object.hasOwn(record ?? {}, key)) built[key] = record[key];
   }
   // A place's point carries a label, which buildRecord sets from the display

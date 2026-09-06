@@ -188,8 +188,11 @@ test('rule 10: WGS84 bounds, region required without a place', async () => {
   assert.equal(rulesHit(r, 10)[0].path, '/where/lat');
   r = await run((fx) => { fx.byId['fixture-actor-one'].where.lon = 181; });
   assert.equal(rulesHit(r, 10)[0].path, '/where/lon');
+  // A placeless event with no lane was rule 10 until M30a-3, when `region`
+  // became optional everywhere; it is the warning `no-lane` now, and
+  // tests/event-fields.test.mjs is where that is asserted.
   r = await run((fx) => { fx.byId['fixture-event-f'].region = null; });
-  assert.equal(rulesHit(r, 10)[0].path, '/region');
+  assert.deepEqual(rulesHit(r, 10), []);
 });
 
 test('rule 11: status rules', async () => {

@@ -28,10 +28,12 @@
   },
   "place": "fixture-place-t",
   "region": null,
+  "parent": "fixture-event-f",
   "actors": [
     {
       "actor": "fixture-actor-two",
-      "role": "signatory"
+      "role": "signatory",
+      "note": "signed it for the synthetic party"
     }
   ]
 }

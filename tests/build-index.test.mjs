@@ -8,7 +8,7 @@ import { runValidation } from '../tools/validate.mjs';
 import { buildTopology, eventWeights } from '../src/validate/core.js';
 import { checkRules } from '../src/validate/rules.js';
 import { buildQueue, inQueue, DIGEST_KEYS } from '../src/review/queue.js';
-import { readRecords, readRegions } from '../tools/lib/read.mjs';
+import { readRecords, readRegions, readRoles, readCategories } from '../tools/lib/read.mjs';
 import { FIXTURE_DATA, ROOT, fixtures } from './helpers.mjs';
 
 async function tempCopyOfFixtures() {
@@ -188,7 +188,13 @@ test('the review index lists the drafts, the count and the warnings', async () =
 
   // A shard carries the warnings about its own drafts: what the list puts on
   // a row, and nothing about records nobody is waiting on.
-  const rules = checkRules(records, buildTopology(records, regions));
+  // Against the same topology the build used, vocabularies and all: without
+  // them `role-unknown` would not fire here and the shards would be compared
+  // against a shorter list than the one they were written from.
+  const rules = checkRules(records, buildTopology(records, regions, {
+    roles: await readRoles(path.join(ROOT, 'data')),
+    categories: await readCategories(path.join(ROOT, 'data')),
+  }));
   const draftIds = new Set(drafts.map((r) => r.id));
   assert.deepEqual(
     shards.flatMap((s) => s.warnings).map((w) => w.id).sort(),

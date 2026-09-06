@@ -26,7 +26,10 @@ const ENVELOPE = ['id', 'kind', 'status', 'supersededBy', 'aliases'];
 // is asked for with (`?v=`, H3b). A presence and a relation have no file
 // anybody fetches, so they do not carry it.
 const FIELDS = {
-  event: [...ENVELOPE, 'wikidata', 'wikipedia', 'title', 'revised', 'when', 'place', 'region', 'weight', 'actors', 'citesCount'],
+  // `parent`, `scope` and `category` are on an event that carries them and on
+  // no other; `subtreeWeight` is on a parent whose parts add to more than its
+  // own weight, and on no leaf (M30a-3, amendment A11).
+  event: [...ENVELOPE, 'wikidata', 'wikipedia', 'title', 'revised', 'when', 'place', 'region', 'parent', 'scope', 'category', 'weight', 'subtreeWeight', 'actors', 'citesCount'],
   actor: [...ENVELOPE, 'wikidata', 'wikipedia', 'name', 'names', 'revised', 'actorType', 'when', 'citesCount'],
   place: [...ENVELOPE, 'wikidata', 'wikipedia', 'name', 'names', 'revised', 'where', 'region', 'citesCount'],
   presence: [...ENVELOPE, 'wikidata', 'wikipedia', 'actor', 'when', 'geometry', 'dependencyOf', 'dependencyKind', 'capital', 'confidence'],

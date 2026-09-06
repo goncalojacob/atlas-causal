@@ -103,11 +103,16 @@ test('rule 6: a place cites nothing, and rule 10 still wants a point on Earth', 
   ({ result } = await run(withPlace({ where: { lon: 181, lat: 40, precision: 'city', label: 'Off the edge' } })));
   assert.equal(hit(result, 10)[0].path, '/where/lon');
 
-  // An event with no place needs a lane of its own; with one it does not.
+  // An event with no place and no lane of its own is drawn nowhere, which
+  // rule 10 refused until M30a-3 and the warning `no-lane` says now.
   ({ result } = await run((fx) => {
     Object.assign(fx.byId['fixture-event-a'], { place: null, region: null });
   }));
-  assert.match(hit(result, 10)[0].message, /region is required when the event has no place/);
+  assert.deepEqual(hit(result, 10), []);
+  assert.deepEqual(
+    result.warnings.filter((w) => w.rule === 'no-lane').map((w) => w.id),
+    ['fixture-event-a'],
+  );
 });
 
 test('rule 11: an active event cannot stand at a retracted place', async () => {

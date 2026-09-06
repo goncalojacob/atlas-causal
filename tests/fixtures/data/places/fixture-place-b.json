@@ -18,6 +18,18 @@
   "names": [
     "Fixture place B"
   ],
+  "historicalNames": [
+    {
+      "name": "Fixture Place B, as it was called",
+      "from": null,
+      "to": 1300
+    },
+    {
+      "name": "Fixture place B",
+      "from": 1300,
+      "to": null
+    }
+  ],
   "where": {
     "lon": -25,
     "lat": 35,

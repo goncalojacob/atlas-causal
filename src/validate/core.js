@@ -8,6 +8,7 @@ import { createValidator } from './schema.js';
 import { buildUniverse, checkRules, normalizeRole } from './rules.js';
 import { KINDS } from '../kinds.js';
 import { edgeId } from '../vocab.js';
+import { astronomicalBounds } from '../util/dates.js';
 
 export { KINDS, edgeId, buildUniverse };
 export const SCHEMA_VERSION = 1;
@@ -123,6 +124,111 @@ export function eventWeights(events, edges) {
   return weights;
 }
 
+// How much the whole of an event carries: its own `weight` plus every
+// descendant's, through `parent`, transitively. It is what the graph draws a
+// collapsed parent at when the children are folded into it (plan decision 4),
+// and it is derived exactly as `weight` is — nobody can make a node bigger
+// except by giving it more edges, more actors or more parts.
+//
+// `weight` itself is untouched: the two are different questions and a reader
+// zoomed in on a battle should see the battle's own size.
+//
+// A node inside a `parent` cycle keeps its own weight and nothing more. Such
+// a cycle is rule 24's error and never reaches a committed index; this is
+// what stops the walk from being an infinite loop while the validator is
+// still deciding to reject it (amendment A11).
+export function subtreeWeights(events, weights) {
+  const parents = new Map();
+  for (const event of events) {
+    if (typeof event.parent === 'string' && event.parent !== event.id) parents.set(event.id, event.parent);
+  }
+  const sums = new Map(events.map((e) => [e.id, weights.get(e.id) ?? 0]));
+  if (parents.size === 0) return sums;
+  for (const [child, first] of parents) {
+    const own = weights.get(child) ?? 0;
+    const seen = new Set([child]);
+    for (let at = first; at !== undefined && sums.has(at) && !seen.has(at); at = parents.get(at)) {
+      seen.add(at);
+      sums.set(at, sums.get(at) + own);
+    }
+  }
+  return sums;
+}
+
+// The two joins the offices need, pre-computed here so that `lanes.js` is a
+// lookup in M33 and never a scan of every tenure per event (plan decision 2;
+// amendment A10).
+//
+// `tenuresByOffice` is the strip: one office, its holders in the order they
+// held it — by the year each began, then by id, so that two tenures beginning
+// in one year still come out in one order on every machine.
+//
+// `officesByEvent` is the other direction and the harder one: which turn at
+// an office was running when this event happened, for the events that name
+// its holder. A tenure is listed against an event when both are active, the
+// tenure's person is one of the event's actors under any role at all, and the
+// event begins inside the tenure — its start's lower astronomical bound, so
+// that a century-wide event is placed by the year it can first have begun,
+// and an open tenure (`end: null`) covers every year after its start.
+//
+// What it deliberately is not: a claim that the holder acted *as* the holder.
+// The atlas cannot know that, and M33 draws the join as "who was in office",
+// which is what it is.
+export function officeJoins(topology) {
+  const bounds = (value) => (value === null || value === undefined ? null : astronomicalBounds(value));
+  const active = (topology.tenures ?? []).filter((t) => t.status === 'active');
+
+  const startOf = (tenure) => {
+    try {
+      return bounds(tenure.when?.start)?.min ?? null;
+    } catch {
+      return null;
+    }
+  };
+  const tenuresByOffice = {};
+  for (const tenure of [...active].sort((a, b) => (startOf(a) ?? 0) - (startOf(b) ?? 0) || byId(a, b))) {
+    if (typeof tenure.office !== 'string') continue;
+    (tenuresByOffice[tenure.office] ??= []).push(tenure.id);
+  }
+
+  // person → the tenures they held, so an event is asked about its own actors
+  // rather than about every tenure in the atlas.
+  const held = new Map();
+  for (const tenure of active) {
+    if (typeof tenure.person !== 'string') continue;
+    const list = held.get(tenure.person);
+    if (list) list.push(tenure);
+    else held.set(tenure.person, [tenure]);
+  }
+  const officesByEvent = {};
+  for (const event of topology.events ?? []) {
+    if (event.status !== 'active') continue;
+    let began;
+    try {
+      began = bounds(event.when?.start)?.min ?? null;
+    } catch {
+      began = null;
+    }
+    if (began === null) continue;
+    const found = new Set();
+    for (const line of event.actors ?? []) {
+      for (const tenure of held.get(line?.actor) ?? []) {
+        const from = startOf(tenure);
+        if (from === null) continue;
+        let to;
+        try {
+          to = tenure.when?.end === null || tenure.when?.end === undefined ? Infinity : bounds(tenure.when.end).max;
+        } catch {
+          continue;
+        }
+        if (began >= from && began <= to) found.add(tenure.id);
+      }
+    }
+    if (found.size) officesByEvent[event.id] = [...found].sort();
+  }
+  return { officesByEvent, tenuresByOffice };
+}
+
 // Who cites what, the other way round: Map<source id, [{ kind, id, locator,
 // dissent }]>. A source is shared by reference — fifty records citing one
 // book cite one file — and that direction is the one nothing could answer
@@ -210,6 +316,20 @@ function versionOf(record) {
   return typeof day === 'string' ? day : null;
 }
 
+// The three optional fields an event may carry, for the topology: the larger
+// event it is part of, how wide it is, and what kind of thing it was. Written
+// only where the record has one, the way `identityOf` writes `wikidata` only
+// where there is one: nothing draws them until M30b, and `"parent": null` on
+// every one of a thousand events is a thousand keys in a file every device
+// parses whole (health review of 6 September, R5).
+function partsOf(record) {
+  const out = {};
+  if (typeof record.parent === 'string') out.parent = record.parent;
+  if (typeof record.scope === 'string') out.scope = record.scope;
+  if (typeof record.category === 'string') out.category = record.category;
+  return out;
+}
+
 // The identity a record claims, for the topology. `wikidata` is carried
 // because rule 21's uniqueness has to hold against the whole atlas and not
 // only against the bundle in hand, and `wikipedia` because the card offers
@@ -294,11 +414,17 @@ export function buildTopology(records, regions, { deriveRegion, roles, categorie
         place: typeof r.place === 'string' ? r.place : null,
         region,
         regionMethod,
+        ...partsOf(r),
         ...identityOf(r),
         status: r.status,
         supersededBy: r.supersededBy ?? null,
         aliases: r.aliases ?? [],
-        actors: (Array.isArray(r.actors) ? r.actors : []).map((a) => ({ actor: a.actor, role: a.role })),
+        // The note beside a role, where there is one: it is short by schema
+        // and the actor's card shows it, so it travels with the line rather
+        // than costing a fetch of the record (plan decision 7).
+        actors: (Array.isArray(r.actors) ? r.actors : []).map((a) => (typeof a.note === 'string'
+          ? { actor: a.actor, role: a.role, note: a.note }
+          : { actor: a.actor, role: a.role })),
       });
     } else if (r.kind === 'edge') {
       edges.push({
@@ -417,6 +543,14 @@ export function buildTopology(records, regions, { deriveRegion, roles, categorie
   }
   const weights = eventWeights(events, edges);
   for (const event of events) event.weight = weights.get(event.id);
+  const subtree = subtreeWeights(events, weights);
+  for (const event of events) {
+    const sum = subtree.get(event.id);
+    // Omitted where it equals the event's own weight, which is every leaf and
+    // therefore nearly every event: an equal second number says nothing and
+    // the spine is read whole by every page (amendment A11).
+    if (sum !== undefined && sum !== event.weight) event.subtreeWeight = sum;
+  }
   // Every source carries its own citers and how many there are, so a source
   // card and a bibliography are both one fetch of the sources index and no
   // more. The count is written out beside the list rather than left to
@@ -465,7 +599,7 @@ export function buildTopology(records, regions, { deriveRegion, roles, categorie
   // topology and into the manifest instead of becoming an empty closed set.
   if (roles !== null && roles !== undefined) topology.rolesAllowed = roles;
   if (categories !== null && categories !== undefined) topology.categoriesAllowed = categories;
-  return topology;
+  return { ...topology, ...officeJoins(topology) };
 }
 
 // ─── The spine ──────────────────────────────────────────────────────────────
@@ -538,7 +672,17 @@ export function buildSpine(topology) {
       when: e.when,
       place: e.place,
       region: e.region,
+      // `parent`, `scope` and `category` where the record has them, and
+      // `subtreeWeight` where it differs from `weight` — all four absent
+      // otherwise, which is what keeps them off the thousand events that
+      // carry none. A tombstone keeps none of them: TOMBSTONE_KEYS is what
+      // a retracted card's head is built from, and a part of a war is not
+      // part of that (amendment A11).
+      ...(e.parent === undefined ? {} : { parent: e.parent }),
+      ...(e.scope === undefined ? {} : { scope: e.scope }),
+      ...(e.category === undefined ? {} : { category: e.category }),
       weight: e.weight,
+      ...(e.subtreeWeight === undefined ? {} : { subtreeWeight: e.subtreeWeight }),
       actors: e.actors ?? [],
       citesCount: citesCount('event', e.id),
     })),

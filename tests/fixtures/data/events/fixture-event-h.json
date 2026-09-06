@@ -28,5 +28,6 @@
   },
   "place": "fixture-place-h",
   "region": null,
+  "parent": "fixture-event-f",
   "actors": []
 }

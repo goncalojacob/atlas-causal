@@ -809,16 +809,13 @@ export function checkRules(records, topology = {}, { universe: prebuilt = null }
     if (typeof r.regionNote === 'string' && typeof r.region !== 'string') {
       error(10, r, '/regionNote', 'a note about the lane belongs beside a lane this record sets; the derived one needs no note');
     }
-    // An event has no coordinates of its own any more: it names a place and
-    // the place holds the point. What is left to check on an event is that a
-    // placeless one says which lane it belongs to — an actor needs no lane,
-    // being reached through its events and never put on the timeline alone.
-    if (r.kind === 'event') {
-      if (typeof r.place !== 'string' && typeof r.region !== 'string') {
-        error(10, r, '/region', 'region is required when the event has no place');
-      }
-      continue;
-    }
+    // An event has no coordinates of its own: it names a place and the place
+    // holds the point. Nothing else is asked of an event here. A placeless
+    // event used to be *required* to name a lane; since M30a-3 `region` is
+    // optional everywhere (plan decision 5) and an event with neither is the
+    // warning `no-lane` below — it is drawn in no lane, which is a thing the
+    // atlas can say plainly rather than a record it must refuse.
+    if (r.kind === 'event') continue;
     if (!['actor', 'presence', 'place'].includes(r.kind)) continue;
     // A presence's point is its capital; it has no `where` of its own,
     // because the outline says where it was.
@@ -1104,6 +1101,55 @@ export function checkRules(records, topology = {}, { universe: prebuilt = null }
     }
   }
 
+  // --- rule 24: an event inside an event -----------------------------------
+  // A battle is part of a war and a decree is part of a revolution, and the
+  // atlas has had no way to say so: an edge is an argument that one thing
+  // brought about another, and "part of" is not that. `parent` is, and it is
+  // a *display* fact — it never enters the adjacency, so consequences,
+  // ancestors, convergence and the horizon stay edge-only and `?chain=` stays
+  // a list of edge ids (owner, 5 September; plan decision 4).
+  //
+  // One parent, so the events form a forest. What this rule holds is the
+  // three things that shape says: the parent is an event, an active event's
+  // parent is active, and no chain of parents closes on itself. Resolution is
+  // here rather than in rule 3 because the cycle check has to walk the chain
+  // anyway and a rule that reads a reference twice is a rule that can
+  // disagree with itself.
+  //
+  // A child dated outside its parent is a *warning* (below), for the reason
+  // `actor-outside-when` is one: the two intervals come from two records and
+  // either may be the one that is wrong.
+  const parentOf = (event) => {
+    const id = typeof event?.parent === 'string' ? event.parent : null;
+    return id === null ? null : lookup(id, 'event');
+  };
+  for (const r of own) {
+    if (r.kind !== 'event' || typeof r.parent !== 'string') continue;
+    const parent = parentOf(r);
+    if (!parent) {
+      error(24, r, '/parent', `"${r.parent}" is not an event record`);
+      continue;
+    }
+    if (r.status === 'active' && parent.status !== 'active') {
+      error(24, r, '/parent', `an active event cannot be part of the ${parent.status} event "${parent.id}"`);
+    }
+    // Up the chain from this record. `seen` stops the walk on a cycle that
+    // does not pass through the record under validation — the atlas cannot
+    // hold one, since every commit passes this rule, but a bundle can propose
+    // one and the walk must still end.
+    const seen = new Set([r.id]);
+    const walked = [r.id];
+    for (let at = parent; at; at = parentOf(at)) {
+      walked.push(at.id);
+      if (at.id === r.id) {
+        error(24, r, '/parent', `an event cannot be part of itself: ${[...new Set(walked)].join(' → ')}`);
+        break;
+      }
+      if (seen.has(at.id)) break;
+      seen.add(at.id);
+    }
+  }
+
   // --- rule 26: offices and tenures ---------------------------------------
   // What holds an office and a tenure together, which neither schema can
   // say. An office belongs to an actor, and which kind of actor that may be
@@ -1319,6 +1365,67 @@ export function checkRules(records, topology = {}, { universe: prebuilt = null }
     // those names does.
     if (originTool(r) === null && (r.authors ?? []).some((a) => WRITER_NAMES.includes(a?.name))) {
       error(29, r, '/origin', 'a record an automated writer created says so in origin, so that nothing has to read authors to find out');
+    }
+  }
+
+  // --- warnings: the two vocabularies, the lane, the parent's dates --------
+  //
+  // Three warnings and not three errors, each for its own reason. A role
+  // outside `data/roles.json` is one because 163 strings are in use and the
+  // mapping that reduces them to 31 is M32b's, which is the run that turns
+  // this into an error (amendment A16). A category outside
+  // `data/categories.json` is one because no event carries a category yet and
+  // the pass that assigns them runs with M32b too. And an event in no lane is
+  // one because `region` became optional everywhere (plan decision 5): an
+  // event nobody can place on a continent is a fact about the record, not a
+  // defect in it.
+  //
+  // An **absent** vocabulary means no check at all, never an empty closed set:
+  // a dataset with no roles.json is not a dataset whose every role is wrong
+  // (amendment A8). That is what the `undefined` guard is, and it is why the
+  // sets are built from the topology rather than defaulted to empty.
+  const vocabularyIds = (list) => (list === undefined || list === null
+    ? null
+    : new Set(list.map((entry) => (typeof entry === 'string' ? entry : entry?.id)).filter((id) => typeof id === 'string')));
+  const rolesAllowed = vocabularyIds(topology.rolesAllowed);
+  const categoriesAllowed = vocabularyIds(topology.categoriesAllowed);
+  for (const r of own) {
+    if (r.status !== 'active') continue;
+    if (r.kind === 'event' && rolesAllowed) {
+      // One warning a record and not one a line: a reviewer opens the record
+      // once, and 163 strings over 900 events would otherwise be two thousand
+      // lines of the same sentence. The roles are named, in the order they
+      // appear, each once.
+      const unknown = [];
+      for (const a of Array.isArray(r.actors) ? r.actors : []) {
+        const role = normalizeRole(a?.role);
+        if (role !== '' && !rolesAllowed.has(role) && !unknown.includes(role)) unknown.push(role);
+      }
+      if (unknown.length) {
+        warning('role-unknown', r, `${unknown.length === 1 ? 'a role' : 'roles'} outside data/roles.json: ${unknown.map((role) => `"${role}"`).join(', ')}`);
+      }
+    }
+    if (r.kind === 'event' && categoriesAllowed && typeof r.category === 'string' && !categoriesAllowed.has(r.category)) {
+      warning('category-unknown', r, `"${r.category}" is not a category in data/categories.json`);
+    }
+    // Neither a place to derive a lane from nor a lane of its own: the
+    // timeline has nowhere to draw it once the lanes are shown, and the map
+    // never had. Rule 10 refused such a record until M30a-3; saying so is
+    // more honest than requiring a continent nobody can name.
+    if (r.kind === 'event' && typeof r.place !== 'string' && typeof r.region !== 'string') {
+      warning('no-lane', r, 'neither a place nor a region: this event is drawn in no lane');
+    }
+    // A child whose years reach outside its parent's. `span()` on both, and
+    // "inside" means inside at both ends — a battle in 1916 is not part of a
+    // war that ended in 1914, and neither is a war that outlasts the century
+    // it is said to be part of.
+    if (r.kind === 'event' && typeof r.parent === 'string') {
+      const parent = parentOf(r);
+      const child = span(r.when);
+      const whole = parent ? span(parent.when) : null;
+      if (child && whole && (child.from < whole.from || child.to > whole.to)) {
+        warning('child-outside-parent', r, `the event is part of "${parent.id}" and is not dated inside it`);
+      }
     }
   }
 

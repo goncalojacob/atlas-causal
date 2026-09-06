@@ -25,7 +25,7 @@
     "review": "index/review-8bf748a55c61.json",
     "search": "index/search-755e4c7ff6e5.json",
     "sources": "index/sources-be024864c060.json",
-    "spine": "index/spine-bc713c1e2033.json"
+    "spine": "index/spine-7f8e671c3e12.json"
   },
   "land": [],
   "licenses": {
@@ -165,6 +165,15 @@
       ]
     }
   },
+  "officesByEvent": {
+    "fixture-event-a": [
+      "fixture-tenure-one"
+    ],
+    "fixture-event-b": [
+      "fixture-actor-one-fixture-actor-two-1210",
+      "fixture-tenure-two"
+    ]
+  },
   "palette": "geo/palette.json",
   "presenceShards": [
     {
@@ -200,5 +209,15 @@
     "leader",
     "signatory"
   ],
-  "schema": 1
+  "schema": 1,
+  "tenuresByOffice": {
+    "fixture-office-one": [
+      "fixture-tenure-one",
+      "fixture-tenure-two",
+      "fixture-tenure-three"
+    ],
+    "leadership-of-fixture-actor-two": [
+      "fixture-actor-one-fixture-actor-two-1210"
+    ]
+  }
 }

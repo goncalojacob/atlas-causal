@@ -7,6 +7,12 @@
     {
       "first": true,
       "on": "2026-09-03"
+    },
+    {
+      "fields": [
+        "historicalNames"
+      ],
+      "on": "2026-09-03"
     }
   ]
 }
