@@ -13,13 +13,41 @@ hundred lines again, cut it the same way.
 
 ## Last updated
 
-2026-09-06, after **M30a-1** (`docs/m30a-brief.md`, amendment A19: M30a runs
-as three, and this is the first), on `m0`: **the two new record kinds,
-`office` and `tenure`, end to end.** The registry, two schema files, every
-frozen list, rules 6, 15 and 26, `?office=` with a placeholder card, three
-office records for Portugal, the fixtures' one office and three tenures, and
-both indexes. Nothing about `led` (M30a-2) and nothing about events
-(M30a-3). 966 tests.
+2026-09-06, after **M30a-2** (`docs/m30a-brief.md`, amendment A19: the second
+of M30a's three runs), on `m0`: **the twelve `led` relations are twelve
+tenures at six offices, and `led` is a type the atlas reads and no longer
+writes.** The one-off tool, the re-filing, `member-of` widened, and the
+`degree-zero` warning counting `startedBy`. Nothing is drawn (M30b draws) and
+nothing about events (M30a-3). 975 tests.
+
+**Nothing historical was added, and that was the whole job.** Every field of
+a tenure is the relation's own: the person is `from`, the years, the sources,
+the note, the whole `review` block and `origin` are carried across unchanged,
+`created` is the day the claim was written and `revised` the day it was
+re-filed. The twelve `date` flags are in the review queue on the tenures now,
+which is what A4 asked. The two judgements the tool makes are the brief's —
+leading the regime polity is a turn at `prime-minister-of-portugal`, and a
+party's post is called what the relations' own notes call it — and both are
+tables at the top of the file.
+
+**Six offices, twelve tenures, twelve tombstones.** `leadership-of-chega`,
+`-frelimo`, `-paigc`, `-partido-socialista`, `-pcp` and `-psd`, each `of` its
+party with `when: null` and no sources, as A13 has the Portuguese three. Ten
+party leaderships and the Estado Novo's two: Salazar and Caetano are turns at
+the head of government of Portugal, not of the regime of the moment. Each old
+relation is a retracted record naming the tenure that replaced it, so an old
+link still resolves and says why it went.
+
+**`led` is deprecated and not removed.** It is still in `RELATION_TYPES`, in
+the schema's enum and id pattern, in the narrative step pattern and in
+`RELATION_GROUP_ORDER` — all four name it, and thirteen tombstones have to
+keep validating. Rule 19 refuses an *active* relation of a retired type, and
+`WRITABLE_RELATION_TYPE_IDS` is what the scaffold and the form offer.
+
+**The re-filing cost the atlas a section, on purpose.** Salazar's card has no
+relations at all now and the Estado Novo's has lost "Led by": the claims are
+records nothing draws until M30b's office strip. `about.html` says that
+rather than promising a section that is not there.
 
 **A kind is nine files and thirteen tables, not thirty places.** What
 `src/kinds.js` and `src/vocab.js` promised after H2 held: the two entries in
@@ -113,10 +141,13 @@ The owner's list in full is in the history file. Still waiting:
 
 In full in the history file. The ones that decide something:
 
-- **The seventh relation type.** Rule 19 refuses `portugal member-of
-  european-union`, so ten memberships are `allied-with` with a note. That is
-  a substitution, reported and never adopted: widen `member-of` or add
-  `member-state-of`. Until then Portugal's card says the wrong word.
+- **The seventh relation type. Answered, and half done.** Rule 19 refused
+  `portugal member-of european-union`, so ten memberships were written as
+  `allied-with` with a note — a substitution, reported and never adopted. The
+  owner chose widening over a new type (plan decision 12) and **M30a-2 widened
+  it**: a polity or an institution may be `member-of` an institution now.
+  What is left is the data — **M31 re-types the ten** — and until it runs
+  Portugal's card still says the wrong word.
 - **Does the role vocabulary close, and to what?** **Answered, 5 September:
   the owner approved `docs/roles-mapping.md`** — the list of 31 — and M30a-1
   records the approval here (amendment A16). So the vocabulary closes to those
@@ -300,6 +331,63 @@ In full in the history file. The ones that decide something:
      together are one change; the message says rules 6 and 15 only. Already
      pushed, and history on `m0` is not rewritten.
 
+### M30a-2, `led`
+
+332. **The tombstones walked back into the review queue, and the queue asks a
+     second question now.** Migration 4 reconstructs `review.status: draft`
+     from the draft marker in `authors`, and Retract takes the status off, so
+     the twelve withdrawn relations came back as drafts standing behind the
+     twelve tenures that replaced them. `inQueue` in `queue.js` is `isDraft`
+     *and* still in the corpus — the line H9's `unread` warning already draws,
+     for the same reason: nobody is waiting on a tombstone and signing one
+     would put a reviewer's name on a claim the atlas no longer makes.
+     `countDrafts`, `buildQueue`, `progressOf`, the review index and the
+     dashboard's shards read it. It was already true of anything a reviewer
+     retracted from the dashboard; there was simply one such record and it is
+     `euro-2016-final`, which leaves the queue here. 493 drafts, not 494.
+333. **A tombstone's reason opens with the sentence migration 4 can read back
+     out of a note.** `down` throws on a retraction it could not put back
+     (`RETRACTION_TEXT`), and the up/down round trip is the one safety net
+     under every migration, so the reason is "Retracted in M30a-2 and re-filed
+     as the tenure …" and not "Re-filed as …".
+334. **`tools/migrate/apply.mjs` was run over the tree after the tool.** The
+     tool leaves a tombstone with no `review` block, which is exactly what
+     Retract produces; migration 4 then writes `review.status: draft` on read,
+     and the form's byte-identity test says a record on disk must be what a
+     save of it writes. The twelve carry the status in the file.
+335. **An office inherits the standing of the records it was read off and
+     invents none.** The six are drafts because the twelve were; the fixture
+     one has no `review` block because the fixture relation has none — a
+     hand-written `draft` cannot survive `down` then `up` on a corpus whose
+     authors are not the draft marker, which is deviation 307's reason for the
+     fixtures having no standing at all.
+336. **`seed-review-flags.mjs` names the *active* relations and the tenures.**
+     Its table is the dated claims between actors, and twelve of those changed
+     kind; a tombstone claims nothing anybody is waiting to check.
+337. **The fixture `led` relation was re-filed by the same tool.** A2 asks
+     that it keep validating and rule 19 refuses an active `led`, so the
+     synthetic corpus is in the shape the real one is: a second office, a
+     fourth tenure, a second tombstone. Its own test builds a scratch copy in
+     the state the fixtures were in *before* the run, because the tool has
+     nothing left to do to them now.
+338. **`member-of` widened at the `from` end only.** Plan decision 12 asks
+     that a polity or an institution may be `member-of` an institution; the
+     `to` end already allowed both, and narrowing it would have made a shape
+     that is already in the atlas invalid for nothing.
+339. **The `startedBy` warning is `started-outside-when`, and its cases are
+     synthetic.** A9 names warnings rather than numbering them. The fixture
+     corpus is not grown a third time in one run for a case that `run(mutate)`
+     states more precisely — which is how every other rule 26 case in
+     `office-rules.test.mjs` is written.
+340. **CONTRIBUTING.md's office and tenure section is here.** The brief's §4
+     gives it to M30a and A19 to none of the three runs; a contributor reading
+     the file was being told to write a `led` relation, which rule 19 now
+     refuses.
+341. **The gate was one background poll, not a chain of ten-minute calls.**
+     Run protocol §1's loop, its `grep -qxF` and its twelve-hour deadline
+     exactly, run as a watcher that wakes the run when the line lands instead
+     of costing a model turn every ten minutes.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
@@ -393,3 +481,4 @@ H9 done
 M30a-1 started 2026-09-06T12:19:24Z by scheduled
 M30a-1 done
 M30a-2 started 2026-09-06T13:11:20Z by scheduled
+M30a-2 done
