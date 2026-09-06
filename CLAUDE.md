@@ -248,8 +248,13 @@ of `data/LICENSE`; a card or an entry page carrying NC material says so.
 
 A **relation** is a dated, typed link between two *actors* — the link an edge
 cannot be, because an edge runs between events. `regime-of`, `succeeded`,
-`member-of`, `part-of`, `led`, `allied-with`: six, closed, with which kind of
-actor may stand at each end fixed by rule 19. It cites at least one source, as
+`member-of`, `part-of`, `allied-with`: five to write, with which kind of actor
+may stand at each end fixed by rule 19. A sixth, `led`, is **deprecated** and
+kept: who led a body is an office somebody held (an `office` and a `tenure`),
+because a relation's id is `from--to--type` and one person may lead one body
+more than once. Its twelve records are tombstones since M30a-2, the type is
+still in every vocabulary and pattern so that they keep validating, and rule
+19 refuses an active relation of it. It cites at least one source, as
 an edge does; a missing type is reported in `STATUS.md`, never replaced by a
 generic one. Relations have no card of their own — they are read from the
 actor card at either end.

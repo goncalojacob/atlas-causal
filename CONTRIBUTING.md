@@ -210,9 +210,9 @@ Notes that catch people out:
   two, and the form lists every place the atlas already has.
 
 - **A relation links two actors**, which is the one thing an edge cannot do:
-  an edge runs between events. `from`, `to`, a `type` from a closed set of six
-  — `regime-of`, `succeeded`, `member-of`, `part-of`, `led`, `allied-with` —
-  an interval, and an optional short `note`. The id is derived,
+  an edge runs between events. `from`, `to`, a `type` from a closed set —
+  `regime-of`, `succeeded`, `member-of`, `part-of`, `allied-with` — an
+  interval, and an optional short `note`. The id is derived,
   `from--to--type`, as an edge's is.
 
 ```json
@@ -230,11 +230,57 @@ Notes that catch people out:
 ```
 
   Which kind of actor may stand at each end is checked (rule 19): a regime and
-  the state it is a regime of are both polities, `member-of` and `led` start
-  at a person, `part-of` at an institution, and a succession runs between two
-  actors of the same kind. **A relation cites at least one source**, like an
-  edge: who belonged to what is argued from evidence. There is no card for a
-  relation — it is read on the card of the actor at either end.
+  the state it is a regime of are both polities, `part-of` starts at an
+  institution, `member-of` at a person, a polity or an institution (a state
+  can be a member of a body), and a succession runs between two actors of the
+  same kind. **A relation cites at least one source**, like an edge: who
+  belonged to what is argued from evidence. There is no card for a relation —
+  it is read on the card of the actor at either end.
+
+  A sixth type, `led`, is **retired**. Who led a body is an office somebody
+  held: write an office and a tenure instead, below. The type is still in the
+  schema so that the records written under it keep validating as tombstones,
+  and the form no longer offers it.
+
+- **An office is a post, and a tenure is one person's turn at it.** They are
+  two records because a relation could not be one: a relation's id is
+  `from--to--type`, so it could say that a person led a body once and no more,
+  and Soares led the Partido Socialista and held three governments.
+
+  An office belongs to an actor (`of`) — a state, a party, a body — and
+  carries a `title` and a `category` from a closed set: `head-of-state`,
+  `head-of-government`, `legislature`, `party-leadership`, `military-command`,
+  `religious`, `other`. The category decides which kind of actor may stand at
+  `of` (rule 26). **An office cites nothing** — that a post exists is a fact
+  about how an actor is arranged, not an argument — and `when` may be `null`
+  where the atlas asserts only that the post exists and what its tenures were.
+  Do not date an office with a guess.
+
+  A tenure names the `person`, the `office`, the years, and **at least one
+  source**, because that is the claim: this person held this post in these
+  years. Its id is a free slug, so one person may hold one office more than
+  once — `soares-prime-minister-1976`. Two tenures of one office may overlap:
+  a regency is not a mistake and a year is the finest bound this model has.
+  `startedBy` is optional and names the event that began it — the election,
+  the coup, the succession — which is how a result that changed a government
+  stays connected to the atlas without an invented edge; the validator warns
+  if that event falls outside the years the tenure ran. `note` is an optional
+  short line, as a relation's is.
+
+```json
+{
+  "...envelope",
+  "kind": "tenure",
+  "id": "salazar-prime-minister-1932",
+  "sources": [{ "source": "meneses-2009-salazar", "locator": null }],
+  "person": "salazar",
+  "office": "prime-minister-of-portugal",
+  "when": { "start": 1932, "end": 1968 },
+  "startedBy": null,
+  "note": "President of the Council from 1932."
+}
+```
+
 
 - **A narrative is your account of records that are already here**, walked in
   order. `steps` is a list of `{ ref, text }`: each `ref` is an event id or an

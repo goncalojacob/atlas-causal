@@ -552,7 +552,8 @@ this model that does not run between events.
 
 *Relations are records.* `data/relations/<id>.json`: `from` and `to` are actor
 ids, `type` is one of six closed values — `regime-of`, `succeeded`,
-`member-of`, `part-of`, `led`, `allied-with` — `when` is an interval and
+`member-of`, `part-of`, `led` (deprecated in M30a-2; see below),
+`allied-with` — `when` is an interval and
 `note` is an optional short line. The envelope is an edge's: **sources
 required**, because a relation is an assertion about two actors and not a
 fact about the world. It answers the question `STATUS.md` had carried open
@@ -1378,15 +1379,25 @@ and the decision waits for that evidence.
   `succeeded`, `member-of`, `part-of`, `led`, `allied-with`. **Do not add a
   generic type** — a missing one is reported in `STATUS.md`, which is what
   keeps the vocabulary meaning something.
+- **`led` is deprecated and not removed** (M30a-2). Who led a body is an
+  office somebody held: a relation's id is `from--to--type`, so this type
+  could say that one person led one body once and no more. Its twelve records
+  are retracted tombstones naming the tenure that replaced each, and the type
+  stays in `RELATION_TYPES`, in the schema's `type` enum and `id` pattern, in
+  the narrative step pattern and in `RELATION_GROUP_ORDER` so that they keep
+  validating. Rule 19 refuses an *active* relation of it, and neither
+  `new-record.mjs` nor the contribution form offers it:
+  `WRITABLE_RELATION_TYPE_IDS` in `vocab.js` is the writable half, and
+  `RELATION_TYPE_IDS` stays the whole list.
 - Which kind of actor may stand at each end is fixed, and is rule 19:
 
   | type | from | to |
   |---|---|---|
   | regime-of | polity | polity |
   | succeeded | polity or institution | the same kind as `from` |
-  | member-of | person | institution or polity |
+  | member-of | person, polity or institution | institution or polity |
   | part-of | institution | institution or polity |
-  | led | person | institution or polity |
+  | led *(deprecated)* | person | institution or polity |
   | allied-with | polity or institution | polity or institution |
 
 - `regime-of` and `succeeded` are **acyclic, each on its own**: both describe
