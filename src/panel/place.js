@@ -90,6 +90,7 @@ export function placeCardHtml(ctx, place, state, { remembered = null } = {}) {
 
   return `
     ${place.status !== 'active' ? `<p class="notice status">This place is <strong>${esc(place.status)}</strong>.</p>` : ''}
+    ${events.length === 0 ? '<p class="notice no-events">No event here happens in this place, so the pictures are not narrowed to it.</p>' : ''}
     <header class="place-head">
       ${ctx.historyHtml()}
       <h2>${esc(place.name)}</h2>

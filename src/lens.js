@@ -204,6 +204,12 @@ export function ringOf(atlas, set) {
 // reader walking from a place's list is still inside that place's
 // neighbourhood, and an atlas that opened up again on the first click would be
 // flipping the picture under them.
+// **An actor or a place with no events at all is not a lens.** 350 of the 412
+// actors are polities imported with their borders and no event yet, and a lens
+// on one of them drew a blank map and a blank timeline — the search's most
+// common answer opened an empty atlas (health review of 6 September, R8). A
+// focus the reader typed themselves still draws nothing and says so, which is
+// what `?focus=` is for; this is only about the lens nobody asked for.
 export function activeFoci(atlas, state) {
   if (state?.focus === FOCUS_NONE) return [];
   const explicit = parseFoci(state?.focus);
@@ -211,12 +217,44 @@ export function activeFoci(atlas, state) {
   for (const [key, kind] of [['place', 'place'], ['actor', 'actor']]) {
     if (!state?.[key]) continue;
     const found = atlas.resolve?.(state[key]) ?? null;
-    if (found && found.kind === kind) return [{ kind, id: found.id }];
+    if (!found || found.kind !== kind) continue;
+    const focus = { kind, id: found.id };
+    return (eventsOfFocus(focus, atlas)?.size ?? 0) > 0 ? [focus] : [];
   }
   return [];
 }
 
-// The lens the views apply, from the state: `{ foci, all, set, near, shown }`,
+// Whether the lens on screen is one the reader set. An implicit lens keeps
+// what the reader has just clicked (see `lensView`); an explicit one is a
+// question they asked, and its answer is allowed to be narrow.
+export function isImplicitLens(state) {
+  return state?.focus !== FOCUS_NONE && parseFoci(state?.focus).length === 0;
+}
+
+// The events an implicit lens never removes: the open event, both ends of
+// every walked step, and where the open event leads directly. Read straight
+// from the atlas and the state, so that `lens.js` and `emphasis.js` cannot
+// come to disagree about what is drawn.
+export function keptRegardless(atlas, state) {
+  const ids = new Set();
+  if (state?.selected && atlas.events?.get(state.selected)?.status === 'active') {
+    ids.add(state.selected);
+    for (const edge of atlas.adjacency?.out.get(state.selected) ?? []) {
+      ids.add(edge.from);
+      ids.add(edge.to);
+    }
+  }
+  for (const id of state?.chain ?? []) {
+    const edge = atlas.edges?.get(id);
+    if (!edge || edge.status !== 'active') break;
+    ids.add(edge.from);
+    ids.add(edge.to);
+  }
+  return ids;
+}
+
+// The lens the views apply, from the state:
+// `{ foci, all, set, near, shown, implicit }`,
 // or null for "no lens" — which is not the same as an empty set, since a focus
 // that matches nothing draws nothing and says so.
 //
@@ -246,7 +284,18 @@ export function lensView(atlas, state) {
   const near = ringOf(atlas, set);
   const shown = new Set(set);
   for (const id of near) shown.add(id);
-  const value = { foci, all, set, near, shown };
+  // **What the reader has just clicked is associated by definition.** An
+  // implicit lens is nobody's question, so it may not take away the event
+  // whose card is open, the chain walked out of it, or where that event led:
+  // two hops out of an actor and the selected event was in neither the focus
+  // set nor the ring, and the card showed an event the pictures did not
+  // (health review of 6 September, R8). An explicit `?focus=` is a question
+  // and keeps its own narrow answer.
+  const implicit = isImplicitLens(state);
+  if (implicit) for (const id of keptRegardless(atlas, state)) shown.add(id);
+  const value = {
+    foci, all, set, near, shown, implicit,
+  };
   if (state) held.set(state, { atlas, stamp, value });
   return value;
 }

@@ -206,6 +206,7 @@ export function actorCardHtml(ctx, actor, { state = null, remembered = null } = 
 
   return `
     ${actor.status !== 'active' ? `<p class="notice status">This actor is <strong>${esc(actor.status)}</strong>.</p>` : ''}
+    ${appearances.length === 0 ? `<p class="notice no-events">No event here names this actor, so the pictures are not narrowed to it${successionSection ? ' — see <em>Before and after</em>' : ''}.</p>` : ''}
     <header class="actor-head">
       ${ctx.historyHtml()}
       <h2>${esc(actor.name)}</h2>

@@ -177,3 +177,43 @@ test('what is held out of the stacks stops at what the panel lists', async () =>
   assert.ok(capped.has('far-000'));
   assert.ok(!capped.has(`far-${String(SHOWN).padStart(3, '0')}`), 'past the cap it may be stacked');
 });
+
+// R8, the correction of 6 September. A lens the reader set is a question and
+// its answer may be narrow; the lens they got for opening a card is not, and
+// what they have just clicked is associated with it by definition.
+test('an implicit lens never removes the selection, the walk or the consequences', async () => {
+  const atlas = await fixtureAtlas();
+  const O = 'fixture-event-o';
+  const E = 'fixture-event-e';
+  const C = 'fixture-event-c';
+  // Actor two is at B and T; O and E are outside both its events and the ring
+  // around them, and the reader has walked O → E and is standing on E.
+  const state = {
+    ...defaultState(), actor: 'fixture-actor-two', selected: E, chain: [`${O}--${E}--enabled`],
+  };
+  const w = workingSet(atlas, state);
+  assert.ok(!w.lensFocus.has(E) && !w.lensNear.has(E), 'the open event is outside the lens and its ring');
+  assert.deepEqual(sorted(w.selected), [E], 'and is drawn all the same');
+  assert.deepEqual(sorted(w.path), [E, O], 'with both ends of the step walked to it');
+  assert.deepEqual(sorted(w.consequences), [C, E], 'and where it leads');
+  for (const id of [O, E, C]) assert.ok(w.lens.has(id), `${id} is what the reader is looking at`);
+  // The lens is still a lens: what it never asked for and nobody clicked is
+  // gone, so the picture is still Actor two's neighbourhood.
+  assert.ok(!w.lens.has('fixture-event-a2'), 'an event nothing here reaches is still removed');
+
+  // The same walk under a focus the reader typed: their question, their
+  // narrow answer.
+  const asked = workingSet(atlas, { ...state, focus: 'actor:fixture-actor-two' });
+  assert.equal(asked.selected.size, 0);
+  assert.equal(asked.path.size, 0);
+});
+
+test('an actor with no events at all leaves the atlas whole', async () => {
+  const atlas = await fixtureAtlas();
+  // Most of the atlas's actors are polities imported with their borders and
+  // no event yet; opening one drew a blank map and a blank timeline.
+  assert.deepEqual(atlas.eventsByActor.get('fixture-polity-three') ?? [], []);
+  const w = workingSet(atlas, { ...defaultState(), actor: 'fixture-polity-three' });
+  assert.equal(w.lens, null, 'no lens, so every view draws everything');
+  assert.deepEqual(sorted(w.actor), [], 'and there is nothing to emphasise');
+});

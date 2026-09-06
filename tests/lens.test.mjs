@@ -302,3 +302,45 @@ test('a focus is labelled by the record it names, or by its id', () => {
   );
   assert.deepEqual(lensLabels(t, { focus: null }), []);
 });
+
+// R8, the two halves of the correction of 6 September. The lens nobody asked
+// for may not empty the atlas, and it may not take away what the reader has
+// just clicked.
+
+test('an actor or a place with no events is not an implicit lens', () => {
+  const t = withResolve(topology());
+  t.actors.set('unknown-party', { id: 'unknown-party', name: 'A party with no events' });
+  t.places.set('nowhere', { id: 'nowhere', name: 'Nowhere' });
+  // 350 of the atlas's 412 actors are polities imported with their borders
+  // and no event yet: a lens on one drew a blank map and a blank timeline.
+  assert.deepEqual(activeFoci(t, { actor: 'unknown-party' }), []);
+  assert.equal(lensView(t, { actor: 'unknown-party' }), null, 'the atlas stays whole');
+  assert.deepEqual(activeFoci(t, { place: 'nowhere' }), []);
+  assert.equal(lensView(t, { place: 'nowhere' }), null);
+  // A place with no events does not hand the lens to the actor behind it
+  // either: the reader has a place open, and nothing is narrowed.
+  assert.deepEqual(activeFoci(t, { place: 'nowhere', actor: 'salazar' }), []);
+  // A focus the reader typed is a question, and its answer may be empty.
+  const asked = lensView(t, { focus: 'actor:unknown-party' });
+  assert.ok(asked, 'an explicit focus is still a lens');
+  assert.equal(asked.set.size, 0, 'and it draws nothing, which is the answer');
+  assert.equal(asked.implicit, false);
+});
+
+test('an implicit lens keeps the selection, the walked chain and the consequences', () => {
+  const t = withResolve(topology());
+  // `pide` is at b and c; a is outside its lens and outside the ring of it
+  // only if nothing joins them — a--b--caused puts a in the ring, so the
+  // event held out here is d, which the retracted edge does not reach.
+  const state = { actor: 'pide', selected: 'd', chain: ['a--b--caused'] };
+  const view = lensView(t, state);
+  assert.equal(view.implicit, true);
+  assert.ok(!view.set.has('d') && !view.near.has('d'), 'the open event is outside the focus and its ring');
+  assert.ok(view.shown.has('d'), 'and is drawn all the same');
+  assert.ok(view.shown.has('a') && view.shown.has('b'), 'and so are both ends of every walked step');
+  // An explicit lens is a question the reader asked, and keeps its own narrow
+  // answer: `?focus=` is how they say "only this".
+  const asked = lensView(t, { ...state, focus: 'actor:pide' });
+  assert.equal(asked.implicit, false);
+  assert.ok(!asked.shown.has('d'), 'an explicit lens still removes it');
+});

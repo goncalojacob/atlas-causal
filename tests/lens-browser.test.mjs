@@ -163,3 +163,63 @@ test('a card adds to the lens, or replaces it, and never clears the selection', 
     );
   });
 });
+
+// R8, in the browser: the two pictures the correction of 6 September is about.
+// The atlas has 412 actors and 350 of them are polities imported with their
+// borders and no event, so a blank map is the search's most common answer.
+const NO_EVENTS = 'angola';
+
+test('an actor with no events draws the whole atlas, and its card says so', { skip }, async () => {
+  const atlas = await atlasOf(dataDir);
+  assert.deepEqual(atlas.eventsByActor.get(NO_EVENTS) ?? [], [], `${NO_EVENTS} has no events`);
+  assert.equal(lensView(atlas, { ...defaultState(), actor: NO_EVENTS }), null, 'so it is not a lens');
+
+  await withBrowser(async (page, url) => {
+    for (const [name, { selector, url: extra }] of Object.entries(VIEWS)) {
+      await open(page, url(`?actor=${NO_EVENTS}&from=1800&to=2030${extra}`), ready);
+      await waitFor(page, `return document.querySelectorAll('${selector}').length > 0;`, `${name} to draw a mark`);
+      const drawn = await page.eval(DRAWN(selector));
+      assert.ok(drawn.length > 0, `${name} drew nothing at all`);
+      const dimmed = await page.eval(NEAR(selector));
+      assert.deepEqual(dimmed, [], `${name} dimmed something, so a lens is on`);
+    }
+    // And the card says why the pictures were not narrowed, rather than
+    // leaving the reader with an atlas that looks unchanged for no reason.
+    await open(page, url(`?actor=${NO_EVENTS}&from=1800&to=2030`));
+    await waitFor(page, 'return Boolean(document.querySelector(".panel .notice.no-events"));', 'the card to say it has no events');
+    assert.equal(await page.eval("return document.querySelectorAll('.lens-chips .lens-badge').length;"), 0, 'and no chip claims one');
+  });
+});
+
+test('two hops walked out of an actor keep the selected event drawn', { skip }, async () => {
+  const OPEN = 'regenerator-party';
+  const FIRST = '1908-portuguese-legislative-election--republic-proclaimed-1910--precondition-of';
+  const SECOND = 'republic-proclaimed-1910--1911-portuguese-constituent-national-assembly-election--caused';
+  const END = '1911-portuguese-constituent-national-assembly-election';
+  const chain = `${FIRST},${SECOND}`;
+
+  const atlas = await atlasOf(dataDir);
+  const view = lensView(atlas, {
+    ...defaultState(), actor: OPEN, chain: chain.split(','), selected: END,
+  });
+  assert.ok(view, 'the actor has an event, so it is a lens');
+  assert.ok(!view.set.has(END) && !view.near.has(END), 'and the walk has left its neighbourhood');
+
+  await withBrowser(async (page, url) => {
+    for (const [name, { selector, url: extra }] of Object.entries(VIEWS)) {
+      await open(page, url(`?actor=${OPEN}&chain=${chain}&selected=${END}&from=1800&to=2030${extra}`), ready);
+      await waitFor(page, `return document.querySelectorAll('${selector}').length > 0;`, `${name} to draw a mark`);
+      const drawn = await page.eval(DRAWN(selector));
+      // What the card is showing is in the picture, and so is every step of
+      // the walk that reached it. Both elections are events with no place —
+      // the map has nowhere to put one, which is a different absence and one
+      // the map has always had.
+      const walked = [END, 'republic-proclaimed-1910', '1908-portuguese-legislative-election']
+        .filter((id) => name !== 'map' || atlas.events.get(id).place);
+      assert.ok(walked.length > 0, `${name} has something of the walk to draw`);
+      for (const id of walked) {
+        assert.ok(drawn.includes(id), `${name} left out ${id}, which the reader has just walked to`);
+      }
+    }
+  });
+});
