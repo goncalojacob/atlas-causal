@@ -8,9 +8,15 @@ not only Portuguese.
   translation is an **overlay**: `data/i18n/<bcp47>/<kind>/<id>.json`
   carrying only the translatable fields of one record (`title`,
   `summary`, `body`, `names`, an edge's `explanation` and `dispute.text`,
-  a narrative's step texts) and nothing structural — never dates, ids,
-  sources, confidence or types. A missing overlay falls back to English
-  field by field, never whole-record.
+  a narrative's step texts, and an event's `actors[].note`) and nothing
+  structural — never dates, ids, sources, confidence or types. A missing
+  overlay falls back to English field by field, never whole-record.
+- A field inside a list is **addressed by index**, not matched by content:
+  `actors[].note` is the note on the *n*th actor line, and an overlay whose
+  list is shorter than the record's simply falls back for the rest. The role
+  beside it is not translatable — it is an id from `data/roles.json`, and the
+  label a reader sees is that file's, translated once there rather than on
+  every event that uses it. The same holds for `data/categories.json`.
 - Interface strings are separate from record translations:
   `src/i18n/<bcp47>.json`, keyed by string id, English the source of
   truth, missing keys falling back to English. No string of the interface

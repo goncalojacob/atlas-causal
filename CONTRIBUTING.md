@@ -73,7 +73,9 @@ resolve. It cannot read. For every record touched:
 ## The record format
 
 One JSON file per record, under `data/events/`, `data/edges/`, `data/actors/`,
-`data/places/`, `data/relations/`, `data/narratives/`, `data/sources/` or `data/presences/`; the id is the file name. The schemas in `schema/v1/` and
+`data/places/`, `data/relations/`, `data/offices/`, `data/tenures/`,
+`data/narratives/`, `data/sources/` or `data/presences/`; the id is the file
+name. The schemas in `schema/v1/` and
 `schema/common/` are authoritative — what follows is a synthetic example, of
 the kind that lives in `tests/fixtures/`, not a historical claim.
 
@@ -160,20 +162,40 @@ Notes that catch people out:
   is the id of a record under `data/places/`, and the coordinates live there,
   written once however many events happen there. `place: null` is a long
   process with no honest point — a timeline-only record rather than a dot in
-  the ocean — and then `region` is required.
+  the ocean — and then give it a `region` if you can say which lane it
+  belongs in.
 - **`region` is normally `null`.** The timeline lane is derived from the
   place's coordinates at index time. Set it on the place when the derivation
   would be wrong for everything that happens there (the Azores are outside
   every lane polygon at this resolution), and on the event only when this
   event belongs somewhere else than where it happened — Tordesillas is about
-  the Americas and was signed in Castile.
+  the Americas and was signed in Castile. It is optional everywhere: an event
+  with neither a place nor a region is drawn in no lane and the validator says
+  so (`no-lane`) rather than refusing it.
 - **`authors`, `created` and `revised` are set by the Action**, not by you.
   Whatever the form puts there is replaced.
 - **`actors` names the actors *of* the event**, not everyone alive at the
-  time, each with the role it played in it. Roles are free text for now —
-  `leader`, `signatory`, `deposed` — compared lowercased and trimmed, so the
-  same actor may appear twice in one event only under different roles. Every
-  id must resolve to an active actor record.
+  time, each with the role it played in it. A role comes from the closed list
+  in `data/roles.json` — `leader`, `signatory`, `deposed` — compared
+  lowercased and trimmed, so the same actor may appear twice in one event only
+  under different roles. One outside the list is a warning for now, and will
+  be an error; if a role you need is genuinely missing, add it to that file in
+  the same pull request and say why. Every id must resolve to an active actor
+  record. Anything the role itself cannot carry goes in `note` beside it —
+  "president under whom it was held", "junior partner in the coalition" — in a
+  phrase, not a sentence.
+- **`category` says what kind of thing the event was**, from
+  `data/categories.json`: `war`, `treaty`, `election`, `revolution`, `law`,
+  `founding`, `disaster`, `economy`, `culture`, `science`, `death`, `other`.
+  Optional, and one glyph on the map. Adding a category is an edit to that
+  file, like adding a role.
+- **`parent` is the larger event this one is part of** — a battle inside a
+  war, a decree inside a revolution — and it is *not* a causal claim: an
+  argument that one thing brought about another is an edge, always. One
+  parent, no cycles, and a child ought to be dated inside its parent (the
+  validator warns when it is not). Use `scope: "regional"` or
+  `"worldwide"` on the big containing event so that it is drawn as a band
+  across the timeline rather than as a mark on it.
 - **An actor has no lane.** It is never put on the timeline on its own, so
   unlike an event it needs no `region` when it has no `where`. Its `names`
   list must not be empty; `names[0]` is the display name and the rest are
@@ -181,8 +203,11 @@ Notes that catch people out:
 - **An actor cites a source too**, like every other node.
 - **A place does not.** It is a geographic fact rather than a
   historiographical argument, so `sources` may be empty — the same exemption
-  `source` and `region` records have. Everything else about it is the usual
-  envelope:
+  `source` and `region` records have. What it was called when goes in
+  `historicalNames`, a list of `{ name, from, to }` beside `names` and never
+  instead of it, so that a base map can label a city by the year on screen —
+  Lourenço Marques until 1976, Maputo after. Everything else about it is the
+  usual envelope:
 
 ```json
 {
