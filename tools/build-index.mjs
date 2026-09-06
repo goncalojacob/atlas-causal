@@ -20,11 +20,18 @@ import { degreesOf, digestOf, isDraft, KIND_ORDER } from '../src/review/queue.js
 import { searchIndexFor } from '../src/search.js';
 import { explanationShards, shardName } from '../src/explanations.js';
 import { licensingTable } from '../src/licensing.js';
+import { createAtlasFromSpine, expandSpine } from '../src/data.js';
 import { readRecords, readRegions, readRegionPolygons, readLandFiles, readPresenceShards, paletteFile } from './lib/read.mjs';
 import { recordHistories, HISTORY_DIR } from './lib/history.mjs';
+import { sitePages, ENTRY_DIR } from './lib/prerender.mjs';
 
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 export const DEFAULT_DATA = path.join(ROOT, 'data');
+// The three hand-written pages the build writes into or from. They are the
+// site's own files and live at the site root, never under data/: one of them
+// is the template every entry page is cut from, and the other two carry a
+// generated region inside a page a person wrote.
+export const TEMPLATES = ['entry.html', 'sources.html', 'narratives.html'];
 // The immutable files, named by content, and the one immutable *directory*:
 // the citers are a file per source, so a hash each would put a line per
 // source in a manifest that is fetched no-store on every page load, and
@@ -195,7 +202,7 @@ export async function buildIndex(dataDir = DEFAULT_DATA, prepared = {}) {
   const searchName = `search-${hashOf(searchText)}.json`;
   const sourcesName = `sources-${hashOf(sourcesText)}.json`;
   const reviewName = `review-${hashOf(reviewText)}.json`;
-  const manifest = serialize({
+  const manifestValue = {
     schema: 1,
     counts: {
       events: topology.events.length,
@@ -238,10 +245,35 @@ export async function buildIndex(dataDir = DEFAULT_DATA, prepared = {}) {
     // index itself carried no licence at all while projecting NC actors and
     // presences into the same files as CC BY-SA records.
     licenses: licensingTable(),
+  };
+  const manifest = serialize(manifestValue);
+
+  // The pages the build writes beside the index (H8). Built from the same
+  // atlas the browser assembles — the spine, the sources index and the citer
+  // rows this build has just produced, through `createAtlasFromSpine` — so
+  // that a prerendered page cannot be a rendering of anything but what the
+  // index says. Nothing is written here: `sitePages` is pure and `writeSite`
+  // below is what touches disk, the way `writeIndex` is for the index.
+  const atlas = createAtlasFromSpine({
+    manifest: canonical(manifestValue),
+    spine: JSON.parse(spineText),
+    sources: JSON.parse(sourcesText).sources,
+    citers: new Map(citers.map(([name, text]) => [name.replace(/\.json$/, ''), JSON.parse(text).citations ?? []])),
+    fetchJson: () => Promise.reject(new Error('the build has every record in hand and fetches nothing')),
+  });
+  const expanded = expandSpine(JSON.parse(spineText));
+  const pages = sitePages({
+    atlas,
+    records,
+    narratives: expanded.narratives,
+    events: new Map(expanded.events.map((e) => [e.id, e])),
+    edges: new Map(expanded.edges.map((e) => [e.id, e])),
+    templates: prepared.templates ?? await readTemplates(),
   });
 
   const unresolved = topology.events.filter((e) => e.status === 'active' && e.place && !e.region);
   return {
+    pages,
     files: {
       'manifest.json': manifest,
       [searchName]: searchText,
@@ -328,15 +360,98 @@ export async function writeIndex(dataDir, built) {
   }
 }
 
+// ─── The pages ─────────────────────────────────────────────────────────────
+//
+// Same three verbs as the index above, and for the same reason: a generated
+// file that nobody compares goes stale the first time a record changes, and
+// a stale page is worse than no page because it looks authoritative.
+
+export async function readTemplates(siteDir = ROOT) {
+  const out = {};
+  for (const name of TEMPLATES) out[name] = await readFile(path.join(siteDir, name), 'utf8');
+  return out;
+}
+
+// What is on disk of the pages the build owns: the two pages with a generated
+// region — read whole, because the region's markers are inside them — and
+// every entry page under entry/.
+export async function readSite(siteDir = ROOT) {
+  const files = {};
+  for (const name of ['sources.html', 'narratives.html']) {
+    files[name] = await readFile(path.join(siteDir, name), 'utf8');
+  }
+  const dir = path.join(siteDir, ENTRY_DIR);
+  if (existsSync(dir)) {
+    for (const name of (await readdir(dir)).sort()) {
+      if (name.endsWith('.html')) files[`${ENTRY_DIR}/${name}`] = await readFile(path.join(dir, name), 'utf8');
+    }
+  }
+  return files;
+}
+
+export function compareSite(existing, pages) {
+  const problems = [];
+  for (const name of Object.keys(pages)) {
+    if (!Object.hasOwn(existing, name)) problems.push(`missing ${name}`);
+    else if (existing[name] !== pages[name]) problems.push(`differs ${name}`);
+  }
+  for (const name of Object.keys(existing)) {
+    if (!Object.hasOwn(pages, name)) problems.push(`stale ${name}`);
+  }
+  return problems;
+}
+
+// An entry page the build no longer names is a page for a record that has
+// lost its `body` or gone altogether, and it would otherwise stay on the site
+// for ever under a URL the atlas no longer links to.
+export async function writeSite(siteDir, pages) {
+  const dir = path.join(siteDir, ENTRY_DIR);
+  if (existsSync(dir)) {
+    for (const name of await readdir(dir)) {
+      if (name.endsWith('.html') && !Object.hasOwn(pages, `${ENTRY_DIR}/${name}`)) await unlink(path.join(dir, name));
+    }
+    if ((await readdir(dir)).length === 0) await rmdir(dir);
+  }
+  for (const [name, text] of Object.entries(pages)) {
+    const file = path.join(siteDir, ...name.split('/'));
+    if (name.includes('/')) await mkdir(path.dirname(file), { recursive: true });
+    await writeFile(file, text, 'utf8');
+  }
+}
+
+// What the build prints about the pages: the count and the bytes, which is
+// the number the owner asked to see (health plan, decision 4). Entries are
+// counted apart from the two lists because they are the part that grows with
+// the dataset.
+export function pageReport(pages) {
+  const rows = Object.entries(pages).map(([name, text]) => ({ name, bytes: Buffer.byteLength(text, 'utf8') }));
+  const entries = rows.filter((r) => r.name.startsWith(`${ENTRY_DIR}/`));
+  return {
+    rows,
+    files: rows.length,
+    bytes: rows.reduce((n, r) => n + r.bytes, 0),
+    entries: entries.length,
+    entryBytes: entries.reduce((n, r) => n + r.bytes, 0),
+  };
+}
+
 async function main(argv) {
   let dataDir = DEFAULT_DATA;
+  let siteDir;
   for (let i = 0; i < argv.length; i += 1) {
     if (argv[i] === '--data') dataDir = path.resolve(argv[++i]);
+    else if (argv[i] === '--site') siteDir = path.resolve(argv[++i]);
     else {
       console.error(`unknown argument ${argv[i]}`);
       return 2;
     }
   }
+  // The pages are the repository's own site, so they are written only when
+  // the build is of the repository's own data. A build of the fixtures — or
+  // of any other dataset — computes them all the same, and says where to put
+  // them with --site; what it must never do is quietly overwrite the real
+  // sources.html with a list of three invented books.
+  if (siteDir === undefined) siteDir = dataDir === DEFAULT_DATA ? ROOT : null;
   const built = await buildIndex(dataDir);
   if (built.unresolved.length) {
     for (const e of built.unresolved) {
@@ -347,6 +462,15 @@ async function main(argv) {
   await writeIndex(dataDir, built);
   const c = built.topology;
   console.log(`index written to ${path.relative(process.cwd(), path.join(dataDir, 'index')) || '.'}: ${c.events.length} events, ${c.edges.length} edges, ${c.actors.length} actors, ${c.relations.length} relations, ${c.narratives.length} narratives, ${c.places.length} places, ${c.presences.length} presences, ${c.sources.length} sources`);
+  if (siteDir) {
+    await writeSite(siteDir, built.pages);
+    const report = pageReport(built.pages);
+    console.log(`pages written to ${path.relative(process.cwd(), siteDir) || '.'}: ${report.files} files, ${report.bytes.toLocaleString('en-US')} bytes`);
+    for (const row of report.rows.slice(0, 2)) {
+      console.log(`  ${row.name.padEnd(24)} ${String(row.bytes.toLocaleString('en-US')).padStart(9)} bytes`);
+    }
+    console.log(`  ${`${ENTRY_DIR}/*.html`.padEnd(24)} ${String(report.entryBytes.toLocaleString('en-US')).padStart(9)} bytes  (${report.entries} record${report.entries === 1 ? '' : 's'} with a full entry)`);
+  }
   return 0;
 }
 

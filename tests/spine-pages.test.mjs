@@ -23,10 +23,15 @@ const ATLAS_READY = 'return document.querySelectorAll(".map .mark, .timeline .ba
 // graph at all; none for the bibliography, which has read the sources index
 // alone since M10 and needs nothing else — a page that started fetching
 // 791 KB to list books would be caught by the zero.
+//
+// **narratives.html joined it at zero in H8.** Listing the accounts needed
+// the whole graph, because a narrative's period is the years of the records
+// it walks; the list is now written into the file by the build, and the
+// script leaves it alone. The cards are on screen before the first request.
 const PAGES = [
   ['index.html', ATLAS_READY, 1],
   ['entry.html?id=carnation-revolution-1974', 'return document.querySelectorAll(".entry-body").length > 0;', 1],
-  ['narratives.html', 'return document.querySelectorAll(".narrative-card").length > 0;', 1],
+  ['narratives.html', 'return document.querySelectorAll(".narrative-card").length > 0;', 0],
   ['sources.html', 'return document.querySelectorAll(".bib-entry").length > 0;', 0],
   ['contribute.html', 'return document.querySelectorAll(".add-row button").length > 0;', 1],
   ['review.html', 'return document.querySelectorAll(".queue-list .queue-item, .queue-list button").length > 0;', 1],

@@ -5,7 +5,7 @@
 // invariant 16: data/index/ is byte-identical to a fresh build. Exit code
 // 1 on any error; warnings never fail.
 //
-//   node tools/validate.mjs [--data <dir>] [--index] [--quiet]
+//   node tools/validate.mjs [--data <dir>] [--index] [--site <dir>] [--quiet]
 
 import path from 'node:path';
 import { existsSync } from 'node:fs';
@@ -14,7 +14,7 @@ import { validate, buildTopology } from '../src/validate/core.js';
 import { createValidator } from '../src/validate/schema.js';
 import { createRegionDeriver, NEAREST_TOLERANCE } from '../src/util/geo.js';
 import { readSchemaFiles, readRecords, readRegions, readRegionPolygons, readPresenceShards, readPresenceGeometry, readImportMaps, readCachedLeads, DEFAULT_IMPORT_KIND, KIND_DIRS } from './lib/read.mjs';
-import { buildIndex, readIndex, compareIndex } from './build-index.mjs';
+import { buildIndex, readIndex, compareIndex, readSite, compareSite } from './build-index.mjs';
 import { buildPalette, readPalette, comparePalette, PALETTE_FILE } from './build-palette.mjs';
 import { countDrafts } from '../src/review/queue.js';
 import { countCitations } from '../src/review/citations.js';
@@ -119,7 +119,11 @@ export const LEAD_CACHE = 'tools/import/cache/wikipedia';
 const SCHEMA_DIR = path.join(ROOT, 'schema');
 const DEFAULT_DATA = path.join(ROOT, 'data');
 
-export async function runValidation(dataDir = DEFAULT_DATA, { index = false } = {}) {
+// `site` says which directory the prerendered pages of this dataset live in,
+// and `null` says the dataset has none. The default is the repository's own
+// site for the repository's own data, which is build-index.mjs's rule too.
+export async function runValidation(dataDir = DEFAULT_DATA, { index = false, site } = {}) {
+  const siteDir = site === undefined ? (dataDir === DEFAULT_DATA ? ROOT : null) : site;
   const errors = [];
   const warnings = [];
   const schemas = await readSchemaFiles(SCHEMA_DIR);
@@ -284,6 +288,17 @@ export async function runValidation(dataDir = DEFAULT_DATA, { index = false } = 
     for (const p of compareIndex(existing, built)) {
       errors.push({ rule: 16, id: null, file: `index/${p.split(' ')[1]}`, path: '', message: `data/index/ is not what build-index.mjs produces (${p}); run node tools/build-index.mjs` });
     }
+    // The prerendered pages, under the same invariant and for the same
+    // reason (H8): sources.html's list, narratives.html's cards and the entry
+    // pages are generated from these records, and a page that no longer says
+    // what the records say is a page that lies to a reader with no script.
+    // Only for the repository's own data — a build of the fixtures has no
+    // site of its own to be stale (build-index.mjs, --site).
+    if (siteDir) {
+      for (const p of compareSite(await readSite(siteDir), built.pages)) {
+        errors.push({ rule: 16, id: null, file: p.split(' ')[1], path: '', message: `the prerendered pages are not what build-index.mjs produces (${p}); run node tools/build-index.mjs` });
+      }
+    }
   }
 
   return {
@@ -319,10 +334,12 @@ function formatItem(kind, item) {
 async function main(argv) {
   let dataDir = DEFAULT_DATA;
   let index = false;
+  let site;
   let quiet = false;
   for (let i = 0; i < argv.length; i += 1) {
     if (argv[i] === '--data') dataDir = path.resolve(argv[++i]);
     else if (argv[i] === '--index') index = true;
+    else if (argv[i] === '--site') site = path.resolve(argv[++i]);
     else if (argv[i] === '--quiet') quiet = true;
     else {
       console.error(`unknown argument ${argv[i]}`);
@@ -333,7 +350,7 @@ async function main(argv) {
     console.error(`no such data directory: ${dataDir}`);
     return 2;
   }
-  const { errors, warnings, counts } = await runValidation(dataDir, { index });
+  const { errors, warnings, counts } = await runValidation(dataDir, { index, site });
   for (const e of errors) console.error(formatItem('error', e));
   if (!quiet) for (const w of warnings) console.log(formatItem('warning', w));
   console.log(`${counts.records} records, ${counts.regions} regions: ${errors.length} error(s), ${warnings.length} warning(s)`);

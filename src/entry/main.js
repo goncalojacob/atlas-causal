@@ -23,7 +23,15 @@ function setTitle(text) {
   document.title = text ? `${text} — Atlas causal` : 'Entry — Atlas causal';
 }
 
-if (id === '') {
+// A prerendered page — entry/<id>.html, written by tools/build-index.mjs from
+// this same entryHtml() — is already the whole entry, with its title in
+// <title> and a canonical link back to entry.html?id=. Nothing here would
+// change a pixel of it, and re-rendering it would mean fetching the spine to
+// arrive at the markup already on screen. `entry.html?id=` is the address and
+// still does all of the work below.
+if (slot.dataset.prerendered === '1') {
+  // Nothing: the build wrote this page.
+} else if (id === '') {
   slot.innerHTML = `<header class="entry-head"><h1>No record asked for</h1></header>
     <section class="entry-body"><p>This page shows one record's full entry, and the address says which:
     <code>entry.html?id=…</code>. <a href="index.html">The atlas</a> links here from every card.</p></section>`;

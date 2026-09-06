@@ -60,8 +60,8 @@ These are not preferences. Ask before breaking any of them.
 
 ```bash
 node tools/validate.mjs            # schemas, cross-record rules, region derivation
-node tools/validate.mjs --index    # also: data/index/ is byte-identical to a fresh build (main only)
-node tools/build-index.mjs         # regenerate data/index/ after touching data/
+node tools/validate.mjs --index    # also: data/index/ and the prerendered pages are byte-identical to a fresh build (main only)
+node tools/build-index.mjs         # regenerate data/index/ and the prerendered pages after touching data/
 node tools/build-palette.mjs       # regenerate data/geo/palette.json after touching the territories; before build-index, which names it
 CHROME=... node tools/screens.mjs  # the screenshots under docs/screens/, through a headless browser's own command line
 node tools/build-regions.mjs       # regenerate data/geo/ from Natural Earth; rarely
@@ -110,8 +110,8 @@ schema/v1/                 event, edge, source, actor, place, relation, narrativ
 index.html                 the atlas; no build step, plain ES modules
 contribute.html            the contribution form; not linked from the atlas while contributions are closed
 about.html                 what it is, how to read confidence and a dispute, the licences
-sources.html               the bibliography, generated from the sources index at render
-narratives.html            every narrative as a card, grouped by the centuries it crosses; generated from the spine at render
+sources.html               the bibliography, written into the file by the build from the sources index
+narratives.html            every narrative as a card, grouped by the centuries it crosses; written into the file by the build
 review.html                the review queue; a maintainer's page, unlinked, and the only one that can write
 README.md  CONTRIBUTING.md for people reading the repository
 src/main.js                bootstrap only: load, wire views; ?fixtures=1 reads tests/fixtures/data/
@@ -137,6 +137,7 @@ src/graph-view/graph-view.js  the graph drawn: nodes, the five edge types, the w
 src/timeline.js            one lane per region; the window as a band with two handles; bars stack
 src/panel/panel.js         the shell: container, clicks, load token, what the cards share
 src/panel/event.js         one card each: event.js, source.js, place.js, actor.js, cluster.js, narrative.js;  horizon.js  the "led to by year X" section; the actor card also lists its relations, both ways round
+entry/<id>.html            GENERATED: the static rendering of a record that carries a body, canonical to entry.html?id=
 src/sources/main.js        bootstrap for sources.html;  bibliography.js  the list as markup, pure
 src/narratives/main.js     bootstrap for narratives.html;  list.js  the cards, grouped by the centuries each account crosses, pure
 src/phone.js               under 720px: what raises the panel's sheet over the view, what a drag of its grip ends as; the layout is one media query in style.css
@@ -159,7 +160,7 @@ src/util/geo.js            point-in-polygon and nearest-lane region derivation
 src/util/esc.js  dom.js    esc() and safeUrl(); SVG/HTML element helpers
 src/style.css              azulejo tokens; every colour is a variable here
 tools/validate.mjs         CLI over core, plus the disk-only checks and --index
-tools/build-index.mjs      deterministic index: manifest + the hashed spine, search shard, citer directory, sources and review files
+tools/build-index.mjs      deterministic index: manifest + the hashed spine, search shard, citer directory, sources and review files; and, since H8, the prerendered pages — lib/prerender.mjs is their pure half
 tools/build-regions.mjs    Natural Earth → data/geo/
 tools/new-record.mjs       scaffold a record of any written kind; --new-place writes an event and its place at once
 tools/migrate-places.mjs   one-time: every event's `where` → a place record; kept as documentation
