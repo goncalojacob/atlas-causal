@@ -13,6 +13,106 @@ hundred lines again, cut it the same way.
 
 ## Last updated
 
+2026-09-06, after **M32b-2** (`docs/m32b-brief.md`, §4 and §5 under amendments
+A4, A5, A9 and A11: the second of M32b's two runs, and the last of M32b), on
+`m0`: **175 events know what kind of thing they were, and 154 still do not.**
+
+**The reach is 175 of the 329 events and 54 of the 146 active ones**: 151
+`election`, 13 `disaster`, 6 `death` and 5 `treaty`. Every one of them is a
+record the Wikidata import titled. `tools/migrate/categories.mjs` reads the
+`category` column M30a-3 filled on the 67 event classes of
+`data/imports/wikidata-seeds.json` — 50 of them carry one — and matches each
+class's English label against the event's own `title`, longest label first, so
+that "legislative election" is tried before "election" and a title reached by
+both takes the longer. The match is case-insensitive and whole-word with an
+optional plural `s`, which keeps "Portuguese local elections" and refuses
+`war` inside "Warsaw". Nothing else moved: `revised` on the 175 files, and the
+`category` key itself.
+
+**The tool reads only a title an import copied.** Amendment A5, and it is the
+whole of the run's caution: of the 191 events the class table reaches, 16 have
+titles a person wrote, and one of them is
+`constitutional-revision-1959` — "The revision that ends direct presidential
+elections", which the table would file as an `election` and which is a `law`.
+A pattern over a composed title is a guess dressed as a rule. So those 16 are
+left uncategorised and named below with the category the table would have
+given them, as a suggestion for a person and not as a record of anything:
+`angola-war-begins-1961` war, `battle-of-the-lys-1918` war,
+`constituent-assembly-election-1975` election, `constitutional-revision-1959`
+election, `covid-state-of-emergency-2020` disaster, `germany-declares-war-1916`
+war, `guinea-war-begins-1963` war, `legislative-election-1976` election,
+`legislative-election-2015` election, `legislative-election-2019` election,
+`legislative-election-2022` election, `legislative-election-2024` election,
+`legislative-election-2025` election, `mozambique-war-begins-1964` war,
+`nato-founding-1949` treaty, `portugal-backs-franco-1936` war.
+
+**No event carries `other` and none was overwritten.** `other` is a person's
+judgement that nothing in the list fits, so it is filtered out of the table
+rather than used as a fallback; the one record that already carried a category
+is a fixture, and no record in `data/` had one. `category-unknown` is still a
+warning, and there are none: `node tools/validate.mjs` reports 1839 records, 0
+errors and 1043 warnings, exactly the totals M32b-1 left.
+
+**What is left for the owner, and not guessed at.** 154 of the 329 events
+carry no category — 92 active and 62 inactive (59 retracted, 3 merged). The 16
+above are one part of the 92. The other 76 active ones are the
+assistant-drafted Portuguese core and the records whose class the table does
+not reach: `1998-portuguese-abortion-referendum`,
+`2007-portuguese-abortion-referendum`,
+`2014-portuguese-socialist-party-prime-ministerial-primary`,
+`25-november-1975`, `alvor-agreement-1975`, `angola-independence-1975`,
+`azores-agreement-1943`, `batepa-massacre`, `bes-resolution-2014`,
+`botelho-moniz-coup-attempt-1961`, `bpn-nationalisation-2008`,
+`cabral-assassinated-1973`, `caetano-succeeds-salazar-1968`,
+`carnation-revolution-1974`, `cavaco-absolute-majority-1987`,
+`constitution-1911`, `constitution-1933`, `constitution-1976`,
+`constitutional-revision-1982`, `costa-resigns-2023`, `coup-28-may-1926`,
+`coup-attempt-11-march-1975`, `cplp-founding-1996`,
+`delgado-assassinated-1965`, `delgado-candidacy-1958`, `eanes-elected-1976`,
+`east-timor-independence-2002`, `east-timor-invasion-1975`,
+`eec-accession-1986`, `eec-application-1977`, `efta-accession-1960`,
+`eleicoes-legislativas-regionais-na-madeira-em-1976`, `euro-adoption-1999`,
+`expo-98`, `exposicao-mundo-portugues-1940`,
+`fiftieth-anniversary-25-april-2024`, `geringonca-2015`, `goa-annexed-1961`,
+`government-falls-2025`, `guinea-bissau-declares-independence-1973`,
+`guinean-constitutional-referendum-1958`, `hat-nipah-and-same-massacres`,
+`iberian-blackout-2025`, `iberian-pact`, `imf-agreement-1978`,
+`imf-agreement-1983`, `law-of-separation-1911`,
+`legiao-portuguesa-founded-1936`, `macau-handover-1999`,
+`marcelo-elected-president-2016`, `marcelo-reelected-2021`,
+`monarchy-of-the-north-1919`, `montenegro-government-2024`, `mueda-massacre`,
+`nationalisations-1975`, `noite-sangrenta-1921`, `october-fires-2017`,
+`pedrogao-grande-fires-2017`, `pimenta-de-castro-government-1915`,
+`portugal-e-o-futuro-1974`, `portuguese-regionalisation-referendum-1998`,
+`republic-proclaimed-1910`, `revolt-14-may-1915`,
+`salazar-finance-minister-1928`, `salazar-president-of-council-1932`,
+`santa-maria-hijacking-1961`, `schengen-in-force-1995`,
+`sidonio-pais-assassinated-1918`, `sidonio-pais-coup-1917`,
+`soares-elected-president-1986`, `spinola-resigns-1974`,
+`troika-bailout-2011`, `troika-programme-ends-2014`, `un-admission-1955`,
+`wiriyamu-massacre-1972`, `world-youth-day-2023`. The 62 inactive ones are
+tombstones: 59 retracted, mostly the violent-crime and regional-election items
+M28 retracted, and 3 merged.
+
+**M30a amendment A17's four open groups are unchanged and are the owner's**,
+repeated here as §4 asks: the three **referendums** (Q43109, Q2515494,
+Q126723767 — a vote that fills no office and no chamber, which `election`'s own
+description does not cover), the nine **violent crimes** (Q53706, Q806824,
+Q2334719, Q5711091, Q365680, Q891854, Q2223653, Q3199915, Q81672 — `death`
+fits a killing and not a robbery or an attempt), the four **empty classes**
+(Q1190554, Q1656682, Q13418847, Q3454916) and **Q102100590**, a NATO
+operation. They carry no category in the class table and so reach no record.
+M32b-1's two unused roles (`minister`, `institution`) and the five stale rows
+of `docs/roles-mapping.md`'s `Count` column stand exactly as it left them.
+**No record was skipped as `reviewed`**: there are still none in
+`data/events/`, and the tool would have left and reported one.
+
+**1082 tests, none skipped**, with `CHROME` set; `node tools/validate.mjs`
+reports 0 errors and no `category-unknown`; `node tools/validate.mjs --index`
+is byte-identical at the tip. **M32b is done.** The map's glyph per category,
+which M30b deferred until there were categories to draw (its amendment A2), is
+the next thing this makes possible.
+
 2026-09-06, after **M32b-1** (`docs/m32b-brief.md`, §8: the first of M32b's
 two runs), on `m0`: **the roles are a vocabulary and not a phrase any more.**
 
@@ -578,7 +678,19 @@ In full in the history file. The ones that decide something:
   — **M32b applies the mapping** to the 142 strings still in use, fills the
   notes and turns the warning into an error. What is still open is only what
   the mapping does with the hedges that belong in a summary rather than in a
-  role; the `note` beside the role is where they go.
+  role; the `note` beside the role is where they go. **M32b-1 applied it**,
+  and the vocabulary is closed.
+- **Two decisions the category pass took for the owner** (brief amendments A4
+  and A5, both marked "Owner question", both followed until overruled).
+  First, the match is whole-word with an optional plural rather than a plain
+  substring: it keeps "elections" and "wildfires" and refuses `war` inside
+  "Warsaw", and over today's corpus it costs one record a substring would have
+  reached. Second, and the larger one, **only a title an import copied is
+  read**, which costs 16: a hand-written title is composed, and the table
+  files `constitutional-revision-1959` — a `law` — as an `election`.
+  Overruling either is one edit to `tools/migrate/categories.mjs` and one
+  re-run; the 16 are named above with what the table would have said, so
+  overruling the second costs nothing but the owner's word.
 - **Seventeen Wikidata classes have no category** (amendment A17). Fifty of
   the sixty-seven event classes in `data/imports/wikidata-seeds.json` are
   filled — the wars, the treaties, the elections, the coup, the disasters and
@@ -1309,6 +1421,56 @@ The numbering continues from 401, which is M31-3's last.
      folded, 21 of them already ids, 163 rows in the document with 31 em-dash
      rows, reaching 184 lines, and `minister` and `institution` targeted by
      nothing.
+413. **The word boundary is a Unicode lookaround and not `\b`.** Amendment A4
+     asks for `\b<label>s?\b`; `\b` is defined over ASCII word characters, so
+     a label ending in an accented letter — `coup d'état` is in the table
+     already, filed as `revolution` and reaching nothing yet — would have its
+     boundary inverted rather than enforced, matching only when the next
+     character *is* a letter. The pattern is
+     `(?<![\p{L}\p{N}])<label>s?(?![\p{L}\p{N}])` instead, which is what A4
+     means by whole-word. Checked on all 50 labels against all 329 titles: the
+     two agree exactly, and the reach below is the same under either.
+414. **Every figure in §4 moved, as A4 said they would.** A4 struck them and
+     asked for the measured reach; it is **175 of 329 events and 54 of 146
+     active**, against §4's 192 and 62 for a plain substring match and A5's
+     "45 of the 62 active substring matches". The breakdown moved with it: 151
+     `election`, 13 `disaster`, 6 `death`, 5 `treaty` and no `war`, where §4
+     predicted 159, 14, 7, 6 and 6. Three things account for it — the
+     whole-word rule, the restriction to imported titles, and M31's nine
+     reinstated elections, which took the active count from 137 to 146.
+415. **The tool refuses two things the brief does not mention.** A class table
+     that gives one label two categories is refused rather than resolved by
+     sort order, and a category the table names that is not in
+     `data/categories.json` is refused rather than written onto every record
+     that class reaches. Neither happens today. Both are the same rule the
+     roles tool follows for an unmapped role: a question for the owner is not
+     a thing to guess at. An absent `data/categories.json` is still checked
+     against nothing (M30a amendment A8), which is the case the fixtures are.
+416. **`category` is written before `actors` and not appended.** Every one of
+     the 246 imported events ends `place, region, actors`, and the schema and
+     the contribution form both order the key after `scope` and before the
+     actor list. A new key at the end of a record would be a diff nobody can
+     read beside the other 174.
+417. **The tool reads every `import-seeds` file under `data/imports/` rather
+     than `wikidata-seeds.json` by name.** There is one today. A second
+     source's class table then works the day it arrives without the tool
+     naming a file, which is how `tools/lib/read.mjs` already reads that
+     directory — by the `kind` field and never by the file name.
+418. **One test assertion was restaged, and it was about the corpus rather
+     than about the thing it tested.**
+     `tests/review-browser.test.mjs`'s category case asserted that the select
+     opened empty, with the reason "no record in `data/` carries a category
+     yet". That reason expired with this run. It now asserts that the select
+     shows the category the record itself carries, which is the stronger
+     claim and the one the field was always for: the editor reads a category
+     as well as writing one. No other assertion moved, and the fixture warning
+     totals in `rules.test.mjs` and `validate-cli.test.mjs` did not.
+419. **The last commit of the run is `STATUS.md`, not the index**, as in
+     deviation 408 and for its reason. A11 wants no record fix after the
+     rebuild; no commit after it touches `data/` at all, and
+     `node tools/validate.mjs --index` is byte-identical at the tip. The run
+     protocol §4 requires the done lines committed and pushed, and an empty
+     index commit after them would be a commit that says nothing.
 
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
@@ -1426,3 +1588,5 @@ M31 done
 M32b-1 started 2026-09-06T18:17:42Z by scheduled
 M32b-1 done
 M32b-2 started 2026-09-06T18:43:37Z by scheduled
+M32b-2 done
+M32b done
