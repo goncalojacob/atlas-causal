@@ -7,7 +7,9 @@ endpoint. First slice of a larger project about human history.
 See `CONTEXT.md` for the reasoning behind the constraints below,
 `ARCHITECTURE.md` for the target structure, and `STATUS.md` for where the
 project stands right now. Read `STATUS.md` first in every new session and
-update it whenever a decision is taken or a milestone moves.
+update it whenever a decision is taken or a milestone moves. It is the
+position and nothing else since H8; the run-by-run account behind it, and
+deviations 1 to 297, are in `docs/history/status-2026-09-05.md`.
 
 Everything is in English: interface, data, code, comments, commit messages.
 (Decided 2026-09-01; Portuguese returns later as an i18n overlay.) Talk to me

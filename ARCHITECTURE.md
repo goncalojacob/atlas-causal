@@ -941,7 +941,7 @@ atlas-causal/
     ├── workflows/
     │   ├── validate.yml          ● on PR: validator + tests; never touches data/index/
     │   ├── contribution.yml      ● on label "accepted" (maintainer-only): bundle → validate → branch → PR, using a scoped PAT
-    │   ├── deploy.yml            ● on push to main, one job: build-index → commit if changed → drop the import cache → upload → deploy from the same checkout
+    │   ├── deploy.yml            ● on push to main, one job: build-index → commit if changed → stage _site from the allowlist → upload → deploy
     │   └── import-wikidata.yml   ● on push to import/**: the only job with a network; mode from the branch name, commits to that branch and never to m0
     ├── CODEOWNERS                ● data/ and .github/ → owner
     └── PULL_REQUEST_TEMPLATE.md  ● the review checklist
@@ -1171,6 +1171,23 @@ a record of the kind they name (rule 23). The spine does not carry `body` —
 it carries the refs and not a word of the prose, as it never carried
 `summary` — and `data/index/review-<hash>.json` carries only `entry: true`,
 so the dashboard can say which records have one.
+
+Since **H8** a record that carries one also gets a **static page**,
+`entry/<id>.html`, written by `tools/build-index.mjs` from the same
+`entryHtml()` the script runs and committed like `data/index/`. It exists
+because a record's page is what a search engine indexes and what somebody
+shares, and until H8 that page was an empty `<div>` until ~1.5 MB had
+downloaded and parsed (health review A, finding 15). **`entry.html?id=` is
+still the address** (health plan, decision 4): the static page is a second
+rendering of the same record, carries `<link rel="canonical">` back to the
+parameterised URL, sits under a `<base href="../">` so every relative link in
+the template still resolves, and links to other records as
+`entry.html?id=` like everything else. Its bootstrap sees the slot marked
+prerendered and does nothing. `sources.html` and `narratives.html` are the
+same idea in a page a person wrote: the list lives between two marks in the
+file and the build replaces what is between them. `tools/lib/prerender.mjs`
+is the pure half; `validate --index` compares all of it byte for byte, so a
+generated page is stale under rule 16 exactly as the index is.
 
 ### Identity ● — where else the same thing is catalogued
 
@@ -1814,12 +1831,37 @@ server. The repo is the queue, GitHub does the plumbing, a person judges.
    `CODEOWNERS` covers `data/` and `.github/`. Not a limitation to engineer
    away: this is "no sources, no merge" and "no AI-generated claims" made
    real.
-6. **`deploy.yml`**, one job on push to `main`: `build-index`, commit if
-   changed with the default token, upload the same checkout, deploy.
+6. **`deploy.yml`**, one job on push to `main`: `build-index`, commit
+   `data/index/`, the palette and the prerendered pages if they changed with
+   the default token, stage the artifact, deploy.
    `concurrency: { group: deploy, cancel-in-progress: false }`. PRs never
    touch `data/index/`; freshness is asserted on `main`, not on PRs — two
    open PRs would otherwise conflict on the index every time. Branch
    protection lets the Actions bot push to `main`.
+
+### The artifact ● — what is actually published
+
+Since **H8** the artifact is a staged `_site` built from an **allowlist**,
+not the checkout (health review A, finding 35; B, finding 29). What is in it,
+and nothing else:
+
+| In the artifact | Why |
+| --- | --- |
+| `*.html` at the root — `index`, `entry`, `sources`, `narratives`, `about`, `contribute`, `review` | the site's pages. `review.html` is one of them and carries a banner off localhost saying it cannot write, rather than being hidden |
+| `entry/<id>.html` | the prerendered entries, when any record carries a `body` |
+| `src/` | the modules and the stylesheet; there is no bundle to ship instead |
+| `schema/` | the browser validates a contribution against them |
+| `data/` **minus `data/imports/`** | the records, the geometry and `data/index/`. The import maps and the 200 KB of seeds are how the tools are pointed at a source, not something a reader loads |
+| `tests/fixtures/data/` | `?fixtures=1` is a page of the site: the interface shown against a graph that asserts nothing historical (review of the health plan, finding 24) |
+| `CONTRIBUTING.md` | an entry page for a record with no `body` links to it |
+
+What is deliberately out: `tools/` — the maintainer's tools and, with them,
+`tools/import/cache/`, which is somebody else's text and would be
+republishing Wikipedia; `tests/` beyond the fixture data; `docs/`, including
+this file and `STATUS.md`; `.github/`; the git history. **A list of what may
+be published cannot be widened by adding a directory to the repository**, and
+an exclusion list can; that is the whole reason it is written this way round.
+`tests/workflows.test.mjs` holds the list to its shape.
 
 **The review checklist**, the part no tool does: sources exist, are
 locatable, and actually support the claim; the explanation argues rather
