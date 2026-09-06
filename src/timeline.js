@@ -528,11 +528,18 @@ export function createTimeline(container, { atlas, state, createScale = createLi
     // is the whole working set now, not the walk alone: an actor's events and
     // an open narrative's walk were being taken away by a box the reader had
     // panned somewhere else.
-    const shown = eventsInView(inLens, s.bbox, atlas.places, { keep: heldSet(working), regions: atlas.regionBoxes });
+    // `{ reachable: true }` for the same reason the map passes it (map.js):
+    // an answer to "what did this lead to by 2011" that the band had hidden
+    // would not be an answer. Without it a reachable event past the fifty-year
+    // margin went into the density strip with no `in-horizon` class and no
+    // click, while `panel/horizon.js` said it was lit on all three views
+    // (health review of 6 September, R11) — invisible on a 135-year corpus,
+    // and wrong at 1415→.
+    const held = heldSet(working, { reachable: true });
+    const shown = eventsInView(inLens, s.bbox, atlas.places, { keep: held, regions: atlas.regionBoxes });
     // The margin's two halves. What the reader is holding is a bar wherever
     // it falls, as it is exempt from the box: a walk whose next step was a
     // tick would be a walk the reader cannot follow.
-    const held = heldSet(working);
     const near = [];
     const far = [];
     for (const event of shown) {

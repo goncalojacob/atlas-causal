@@ -12,25 +12,55 @@
 // files are on disk; and data/index/ is rebuilt afterwards, in the
 // background, with `/__status` saying so while it runs.
 //
-// The one thing this gives up is noticing an edit made to data/ behind the
-// server's back — `git checkout` in another terminal, say. The store says
-// when it was loaded and `reload()` is one call; restarting the server is
-// the other. It is a tool for one maintainer's own machine, and it was
-// always the only writer.
+// It is not, however, the only writer: `git checkout`, a hand edit,
+// `new-record.mjs` or `migrate/apply.mjs` all change `data/` while the server
+// is running, and a save validated against the copy in memory would then have
+// been judged against records that no longer exist — and the background
+// rebuild would write an index built from memory over the newer files
+// (health review of 6 September, R13). `reload()` existed and nothing reached
+// it. So every save begins by asking the disk whether it still looks the way
+// it did: one `stat` per record file, about 20 ms on this dataset against the
+// 1.6 s a full re-read costs, and a re-read only when the answer is no.
 
 import path from 'node:path';
-import { mkdir, writeFile } from 'node:fs/promises';
+import { mkdir, readdir, stat, writeFile } from 'node:fs/promises';
 import { buildTopology, validate } from '../../src/validate/core.js';
 import { buildUniverse } from '../../src/validate/rules.js';
 import { createValidator } from '../../src/validate/schema.js';
 import { createRegionDeriver } from '../../src/util/geo.js';
 import { buildIndex, writeIndex } from '../build-index.mjs';
-import { readRecords, readRegions, readRegionPolygons, readSchemaFiles } from './read.mjs';
+import { readRecords, readRegions, readRegionPolygons, readSchemaFiles, KIND_DIRS } from './read.mjs';
 
 // How long a burst of saves is allowed to coalesce into one index build. A
 // reviewer signing a run of records fires them a second or two apart, and
 // rebuilding between two of them is work nobody waits for.
 export const REBUILD_DELAY = 250;
+
+// What `data/`'s record files look like right now: every file's name, size
+// and modification time, in one string. Not a hash of the contents — that is
+// the re-read this exists to avoid — and not the newest mtime alone, which
+// misses a file deleted or one restored to an older copy by `git checkout`.
+// `regions.json` is in it too: it is read at load like the records are.
+export async function stampOf(dataDir) {
+  const parts = [];
+  for (const dir of [...new Set(Object.values(KIND_DIRS))].sort()) {
+    let names;
+    try {
+      names = (await readdir(path.join(dataDir, dir))).filter((n) => n.endsWith('.json')).sort();
+    } catch {
+      continue;
+    }
+    for (const name of names) {
+      const info = await stat(path.join(dataDir, dir, name));
+      parts.push(`${dir}/${name}:${info.size}:${info.mtimeMs}`);
+    }
+  }
+  try {
+    const info = await stat(path.join(dataDir, 'regions.json'));
+    parts.push(`regions.json:${info.size}:${info.mtimeMs}`);
+  } catch { /* a dataset with no regions file is the validator's business */ }
+  return parts.join('\u001f');
+}
 
 export class StoreError extends Error {
   constructor(status, message, detail = null) {
@@ -70,6 +100,9 @@ export function createStore({ dataDir, schemaDir }) {
       loadedAt: new Date().toISOString(),
       topology: null,
       universe: null,
+      // What the disk looked like when these records were read. Taken after
+      // the read, so a change made while it ran is seen as a change.
+      stamp: await stampOf(dataDir),
     };
     retopologise(next);
     return next;
@@ -168,7 +201,15 @@ export function createStore({ dataDir, schemaDir }) {
   // --- one save ------------------------------------------------------------
 
   async function applySave(checked, bundle, target) {
-    const state = await loaded();
+    let state = await loaded();
+    // Somebody else wrote to `data/` since this copy was read, so the copy is
+    // not the atlas any more: re-read before judging anything against it. In
+    // the queue, so the save that follows this one sees what this one wrote
+    // and not the disk twice.
+    if (await stampOf(dataDir) !== state.stamp) {
+      atlas = await read();
+      state = atlas;
+    }
     if (target && !checked.some((c) => c.record.kind === target.kind && c.id === target.id)) {
       throw new StoreError(400, `the bundle contains no ${target.kind} "${target.id}": the URL names the record being saved`);
     }
@@ -213,6 +254,9 @@ export function createStore({ dataDir, schemaDir }) {
     state.records = merged;
     state.topology = next;
     state.universe = buildUniverse(next);
+    // The files this save wrote are the store's own and must not read as
+    // somebody else's edit on the next one.
+    state.stamp = await stampOf(dataDir);
     return { written, warnings };
   }
 
@@ -237,6 +281,13 @@ export function createStore({ dataDir, schemaDir }) {
         waiting -= 1;
         throw error;
       });
+    },
+    // Whether `data/` has changed under the store since it was read. What
+    // the next save asks before it validates anything, and what a test asks
+    // to prove that it does.
+    async stale() {
+      if (!atlas) return false;
+      return (await stampOf(dataDir)) !== atlas.stamp;
     },
     status() {
       return {

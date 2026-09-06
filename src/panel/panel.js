@@ -458,12 +458,21 @@ export function createPanel(container, {
       card: OPENINGS.map((field) => s[field] ?? '').join('|'),
       chain: s.chain.join(','),
       horizon: s.horizon ?? null,
+      // The lens the card is drawn under. `lensControl` reads it at render —
+      // "Focus on this" or "stop focusing on this" — and nothing patched it in
+      // place, so clicking the control left a header chip beside a button that
+      // still offered to add the focus it had just added (health review of
+      // 6 September, R9). It is the labels and not the raw parameter: an
+      // implicit lens writes no `focus=` at all, and turning one into an
+      // explicit chip is a change the card has to be redrawn for.
+      lens: lensLabels(atlas, s).map((f) => f.focus).join(','),
       from: window ? window.from : null,
       to: window ? window.to : null,
     };
   }
 
-  const sameCard = (a, b) => a.card === b.card && a.chain === b.chain && a.horizon === b.horizon;
+  const sameCard = (a, b) => a.card === b.card && a.chain === b.chain && a.horizon === b.horizon
+    && a.lens === b.lens;
   const sameWindow = (a, b) => a.from === b.from && a.to === b.to;
 
   // The window's own bits, put back into the card that is on screen. Each is

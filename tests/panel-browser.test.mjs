@@ -8,7 +8,12 @@
 
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { withBrowser, open, waitFor, skip } from './browser.mjs';
+import path from 'node:path';
+import { withBrowser, open, waitFor, seenIntro, skip } from './browser.mjs';
+import { atlasOf, ROOT } from './helpers.mjs';
+import { defaultState } from '../src/state.js';
+import { horizonSet } from '../src/horizon.js';
+import { MARGIN_YEARS } from '../src/util/window.js';
 
 // A real drag of one end of the time band: press on the handle, move across
 // the lanes, let go. The events are dispatched rather than synthesised at a
@@ -505,5 +510,77 @@ test('an actor with no events of its own opens on what came before it', { skip }
     await page.eval(`document.querySelector('.succession [data-action="select"][data-id="${first}"]').click(); return true;`);
     await waitFor(page, `return new URLSearchParams(location.search).get('selected') === '${first}';`,
       'the event to open');
+  });
+});
+
+// R9: the card's own lens control was computed at render and the render key
+// did not carry the lens, so nothing redrew it. Clicking "Focus on this" put
+// a chip in the header, wrote the focus into the URL, and left the button
+// still offering to add the focus it had just added.
+test('“Focus on this” becomes “stop focusing on this” without leaving the card', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await seenIntro(page);
+    await open(page, url('?selected=carnation-revolution-1974&from=1800&to=2030'));
+    await waitFor(page, 'return Boolean(document.querySelector(".panel .lens-control"));', 'the card to offer the lens');
+    assert.equal(
+      await page.eval('return document.querySelector(".panel .lens-control").textContent;'),
+      'Focus on this',
+    );
+    // The card is marked, so that what follows can say it was patched rather
+    // than thrown away and built again — the whole reason the key exists.
+    await page.eval('document.querySelector(".panel .card-section").dataset.witness = "kept"; return true;');
+
+    await page.eval('document.querySelector(\'.panel [data-action="focus"]\').click(); return true;');
+    await waitFor(page, 'return document.querySelectorAll(".lens-chips .lens-badge").length === 1;', 'the header chip');
+    await waitFor(
+      page,
+      'return document.querySelector(".panel .lens-control")?.textContent === "stop focusing on this";',
+      'the control to say what it does now',
+    );
+    assert.equal(
+      await page.eval('return document.querySelector(".panel [data-action=\'focus\']") ? "still there" : "gone";'),
+      'gone',
+      'and “Focus on this” is not offered twice',
+    );
+
+    // And back again: the × on the chip leaves `focus=none`, and the card
+    // offers the lens once more.
+    await page.eval('document.querySelector(".panel [data-action=\'unfocus\']").click(); return true;');
+    await waitFor(
+      page,
+      'return document.querySelector(".panel .lens-control")?.textContent === "Focus on this";',
+      'the control to offer the lens again',
+    );
+  });
+});
+
+// R11: `panel/horizon.js` says the reachable set is lit "on the map, the graph
+// and the timeline". The timeline held out the working set without
+// `{ reachable: true }`, so a reachable event past the fifty-year margin went
+// into the density strip with no `in-horizon` class and nothing to click.
+test('the timeline lights a reachable event past the margin, as the hint promises', { skip }, async () => {
+  // What the horizon answers, from the module the page runs, and the half of
+  // that answer which falls outside the band and its fifty-year margin: the
+  // events the timeline was dropping into the density strip.
+  const atlas = await atlasOf(path.join(ROOT, 'data'));
+  const state = {
+    ...defaultState(), selected: 'republic-proclaimed-1910', horizon: 2011, from: 1908, to: 1912,
+  };
+  const reachable = [...horizonSet(atlas, state).keys()];
+  const beyond = reachable.filter((id) => (atlas.events.get(id)?.when?.start ?? 0) > 1912 + MARGIN_YEARS);
+  assert.ok(beyond.length > 0, 'the fixture question has an answer past the margin');
+
+  await withBrowser(async (page, url) => {
+    await seenIntro(page);
+    await open(page, url('?selected=republic-proclaimed-1910&from=1908&to=1912&horizon=2011'));
+    await waitFor(page, 'return document.querySelectorAll(".timeline-area svg rect.bar").length > 0;', 'the bars');
+    const lit = new Set(await page.eval(`return [...document.querySelectorAll(".timeline-area svg rect.bar.in-horizon")]
+      .map((el) => el.dataset.id).filter(Boolean);`));
+    assert.ok(lit.size > 0, 'the timeline lights the reachable set at all');
+    // A bar, and lit: which is to say it can be seen, and clicked, and walked
+    // to. It was a tick in the density strip with no class and no click.
+    const found = beyond.filter((id) => lit.has(id));
+    assert.ok(found.length > 0, `none of the ${beyond.length} events past the margin is lit`);
+    assert.ok(await page.eval(`return Boolean(document.querySelector('.timeline-area svg rect.bar.in-horizon[data-id="${found[0]}"]'));`));
   });
 });

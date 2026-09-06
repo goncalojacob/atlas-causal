@@ -10,7 +10,7 @@
 
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { cp, mkdtemp, readFile, readdir, writeFile } from 'node:fs/promises';
+import { cp, mkdtemp, readFile, readdir, rm, writeFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import path from 'node:path';
 import { createStore } from '../tools/lib/store.mjs';
@@ -168,4 +168,74 @@ test('the server answers a save before the index, and /__status says so', async 
     real.close();
     await new Promise((resolve) => real.once('close', resolve));
   }
+});
+
+// R13: the store was the only writer that knew it was writing. A hand edit,
+// `git checkout`, `new-record.mjs` or `migrate/apply.mjs` while the server
+// runs changed `data/` behind it, and the next save was validated against
+// records that no longer existed — then the background rebuild wrote an index
+// built from memory over the newer files. `reload()` existed and nothing
+// reached it.
+test('a change made to data/ behind the store is read before the next save', async () => {
+  const options = await scratch();
+  const store = createStore(options);
+  await store.load();
+  assert.equal(await store.stale(), false, 'nothing has touched it yet');
+
+  // Somebody else writes a record: a new event, which the store has never
+  // seen, and an edit to one it holds.
+  const [first] = await activeEvents(options.dataDir);
+  const outside = { ...first, id: 'fixture-event-behind-the-store', title: 'Written behind the store' };
+  await writeFile(
+    path.join(options.dataDir, 'events', `${outside.id}.json`),
+    `${JSON.stringify(outside, null, 2)}\n`,
+    'utf8',
+  );
+  assert.equal(await store.stale(), true, 'the disk no longer looks the way it did');
+
+  // The save that follows is judged against the disk, not against the copy:
+  // an edge to the new event resolves, where the stale copy would have called
+  // it a dangling reference.
+  const edge = {
+    ...JSON.parse(await readFile(path.join(options.dataDir, 'edges', 'fixture-event-a--fixture-event-b--caused.json'), 'utf8')),
+    id: `${first.id}--${outside.id}--caused`,
+    from: first.id,
+    to: outside.id,
+  };
+  const bundle = bundleOf(edge);
+  const saved = await store.save(checkBundle(bundle), bundle);
+  assert.deepEqual(saved.written.map((w) => w.id), [edge.id]);
+  assert.equal(await store.stale(), false, 'and the store is level with the disk again');
+
+  // The rebuild that follows is a build of what is on disk, the record
+  // somebody else wrote included — not of the copy the store was holding.
+  await store.settled();
+  const built = await buildIndex(options.dataDir);
+  const spine = Object.entries(built.files).find(([name]) => name.startsWith('spine-'));
+  assert.ok(JSON.parse(spine[1]).events.some((e) => e.id === outside.id), 'the index carries the record written behind the store');
+  const written = new Set(await readdir(path.join(options.dataDir, 'index')));
+  for (const name of Object.keys(built.files)) {
+    if (name.includes('/')) continue;
+    assert.ok(written.has(name), `${name} is on disk`);
+  }
+});
+
+test('the stamp sees a file removed, and a file put back as an older copy', async () => {
+  const options = await scratch();
+  const store = createStore(options);
+  await store.load();
+  const file = path.join(options.dataDir, 'places', 'fixture-place-m.json');
+  const bytes = await readFile(file, 'utf8');
+
+  await rm(file);
+  assert.equal(await store.stale(), true, 'a record deleted is a change');
+
+  // Restored byte for byte, but not to the mtime it had: `git checkout` does
+  // exactly this, and a stamp of the newest mtime alone would have missed it.
+  await writeFile(file, bytes, 'utf8');
+  assert.equal(await store.stale(), true);
+  // `load()` hands back the copy it is holding, which is the point of it;
+  // `reload()` is the one that goes to the disk.
+  await store.reload();
+  assert.equal(await store.stale(), false);
 });

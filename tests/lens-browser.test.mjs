@@ -153,7 +153,21 @@ test('a card adds to the lens, or replaces it, and never clears the selection', 
       'a lens is not a selection and never takes one away',
     );
 
-    // "Focus only on this" replaces the list with one focus.
+    // And the card says what it did: since R9 the lens is in the panel's
+    // render key, so the control that added the focus now offers to drop it,
+    // and neither "Focus on this" nor "Focus only on this" is offered for a
+    // record that is already the lens.
+    await waitFor(
+      page,
+      'return document.querySelector(".panel .lens-control")?.textContent === "stop focusing on this";',
+      'the control to say what it does now',
+    );
+    assert.equal(await page.eval('return document.querySelectorAll(".panel [data-action=\'focus-only\']").length;'), 0);
+
+    // "Focus only on this" replaces the list with one focus — from a card
+    // that is not the lens yet, which is the only state that offers it.
+    await open(page, url(`?focus=${SALAZAR}&selected=carnation-revolution-1974&from=1800&to=2030`));
+    await waitFor(page, 'return Boolean(document.querySelector(".panel [data-action=\'focus-only\']"));', 'the card to offer it');
     await page.eval('document.querySelector(\'.panel [data-action="focus-only"]\').click(); return true;');
     await waitFor(page, 'return document.querySelectorAll(".lens-chips .lens-badge").length === 1;', 'one chip');
     await waitFor(
