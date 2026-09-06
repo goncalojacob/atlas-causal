@@ -30,6 +30,30 @@
       "type": "array",
       "items": { "type": "string", "minLength": 1, "maxLength": 200 }
     },
+    "historicalNames": {
+      "description": "What this place was called when, so the base map can label a city by the year on the slider — Lourenço Marques until 1976, Maputo after. A sibling of `names` and never a replacement for it: `names` stays a list of strings because search, rule 18, the topology and the translation overlay all depend on that shape (plan decision 6). `from` and `to` are years, `to: null` meaning still current; nothing reads this yet — the base-map label layer and the place card will.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name"],
+        "additionalProperties": false,
+        "properties": {
+          "name": { "type": "string", "minLength": 1, "maxLength": 200 },
+          "from": {
+            "oneOf": [
+              { "type": "null" },
+              { "type": "integer" }
+            ]
+          },
+          "to": {
+            "oneOf": [
+              { "type": "null" },
+              { "type": "integer" }
+            ]
+          }
+        }
+      }
+    },
     "where": {
       "description": "The point itself. Required: a place with no coordinates is a word, and an event that wants one is placeless instead.",
       "$ref": "../common/place.json"

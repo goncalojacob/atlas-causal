@@ -25,6 +25,7 @@ import {
   EDGE_ID, RELATION_ID, FOCUS, FOCUS_PARAM, FOCUS_NONE, GROUPS, FOCUS_KINDS,
   RELATION_ENDPOINTS, RELATION_GROUP_ORDER, ACYCLIC_RELATION_TYPES,
   NARRATIVE_STEP_REF, OFFICE_CATEGORY_IDS, OFFICE_ENDPOINTS, OFFICE_CATEGORY_LABEL,
+  EVENT_SCOPES,
 } from '../src/vocab.js';
 import { KIND_DIRS as READ_KIND_DIRS } from '../tools/lib/read.mjs';
 import { SCHEMA_FILES, TOOL_SIDE } from '../src/validate/schemas.js';
@@ -189,6 +190,14 @@ test('the vocabularies equal the enums in schema/**', async () => {
   for (const category of OFFICE_CATEGORY_IDS) {
     assert.equal(typeof OFFICE_CATEGORY_LABEL[category], 'string', category);
   }
+
+  // An event's `scope` is a closed vocabulary in code, so it is a second copy
+  // in the schema like the types above. `category` is deliberately *not* here:
+  // it is a closed list in data (data/categories.json), the schema says only
+  // that it is an id, and the warning is what holds it to the list.
+  const event = await schema('v1/event.json');
+  const scope = event.properties.scope.oneOf.find((branch) => Array.isArray(branch.enum));
+  assert.deepEqual([...EVENT_SCOPES], scope.enum);
 
   // The lens's six kinds and its pattern accept exactly each other. Five of
   // them are record kinds; `region` is not — a region is a lane the atlas
