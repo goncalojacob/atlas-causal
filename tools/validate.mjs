@@ -13,7 +13,7 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 import { validate, buildTopology } from '../src/validate/core.js';
 import { createValidator } from '../src/validate/schema.js';
 import { createRegionDeriver, NEAREST_TOLERANCE } from '../src/util/geo.js';
-import { readSchemaFiles, readRecords, readRegions, readRegionPolygons, readPresenceShards, readPresenceGeometry, readImportMaps, readCachedLeads, DEFAULT_IMPORT_KIND, KIND_DIRS } from './lib/read.mjs';
+import { readSchemaFiles, readRecords, readRegions, readRegionPolygons, readRoles, readCategories, readPresenceShards, readPresenceGeometry, readImportMaps, readCachedLeads, DEFAULT_IMPORT_KIND, KIND_DIRS } from './lib/read.mjs';
 import { buildIndex, readIndex, compareIndex, readSite, compareSite } from './build-index.mjs';
 import { buildPalette, readPalette, comparePalette, PALETTE_FILE } from './build-palette.mjs';
 import { countDrafts } from '../src/review/queue.js';
@@ -147,8 +147,10 @@ export async function runValidation(dataDir = DEFAULT_DATA, { index = false, sit
   const records = entries.map((e) => e.record);
   const regions = await readRegions(dataDir);
   const polygons = await readRegionPolygons(dataDir);
+  const roles = await readRoles(dataDir);
+  const categories = await readCategories(dataDir);
   const deriveRegion = polygons ? createRegionDeriver(polygons) : undefined;
-  const topology = buildTopology(records, regions, { deriveRegion });
+  const topology = buildTopology(records, regions, { deriveRegion, roles, categories });
 
   // One validator for the run: createValidator checks every schema file and
   // compiles every pattern, and it was built twice — once inside validate()

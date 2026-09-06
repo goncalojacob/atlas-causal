@@ -14,7 +14,7 @@ import { buildTopology, validate } from '../src/validate/core.js';
 import { createRegionDeriver } from '../src/util/geo.js';
 import { buildIndex } from '../tools/build-index.mjs';
 import { buildPalette, paletteInputHash } from '../tools/build-palette.mjs';
-import { readRecords, readRegions, readRegionPolygons, readPresenceShards, readPresenceGeometry } from '../tools/lib/read.mjs';
+import { readRecords, readRegions, readRegionPolygons, readRoles, readCategories, readPresenceShards, readPresenceGeometry } from '../tools/lib/read.mjs';
 import { ROOT, FIXTURE_DATA, schemas } from './helpers.mjs';
 
 async function readEverything(dataDir) {
@@ -23,7 +23,15 @@ async function readEverything(dataDir) {
   const records = entries.map((e) => e.record);
   const regions = await readRegions(dataDir);
   const polygons = await readRegionPolygons(dataDir);
-  const topology = buildTopology(records, regions, { deriveRegion: polygons ? createRegionDeriver(polygons) : undefined });
+  // Everything tools/validate.mjs reads before it builds the topology, in the
+  // same order and with the same arguments: the two vocabularies are part of
+  // the topology it hands on, so a reader here that skipped them would be
+  // asserting that two different topologies produce one index.
+  const topology = buildTopology(records, regions, {
+    deriveRegion: polygons ? createRegionDeriver(polygons) : undefined,
+    roles: await readRoles(dataDir),
+    categories: await readCategories(dataDir),
+  });
   const shards = await readPresenceShards(dataDir);
   return { records, regions, polygons, topology, shards };
 }

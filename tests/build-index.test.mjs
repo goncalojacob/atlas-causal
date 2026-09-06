@@ -136,6 +136,25 @@ test('manifest names the hashed files, counts, lanes and land', async () => {
   assert.deepEqual(built.unresolved, []);
 });
 
+// The two vocabularies that live in data reach the browser through the
+// manifest, and the fixtures are the other half of the same claim: a dataset
+// with no roles.json and no categories.json carries no key at all, which is
+// what "absent means no check" is made of (amendment A8). The fixtures have
+// neither file on purpose, so this pair of assertions is the whole contract.
+test('the manifest carries the roles and the categories a dataset allows, and nothing where it has none', async () => {
+  const fixture = JSON.parse((await buildIndex(FIXTURE_DATA)).files['manifest.json']);
+  assert.equal(Object.hasOwn(fixture, 'rolesAllowed'), false);
+  assert.equal(Object.hasOwn(fixture, 'categoriesAllowed'), false);
+
+  const real = JSON.parse((await buildIndex(path.join(ROOT, 'data'))).files['manifest.json']);
+  assert.deepEqual(real.rolesAllowed, JSON.parse(await readFile(path.join(ROOT, 'data', 'roles.json'), 'utf8')));
+  assert.deepEqual(real.categoriesAllowed, JSON.parse(await readFile(path.join(ROOT, 'data', 'categories.json'), 'utf8')));
+  // `roles` is the other list and stays what it was: the strings people
+  // actually wrote, which is the evidence for the vocabulary rather than the
+  // vocabulary itself.
+  assert.notDeepEqual(real.roles, real.rolesAllowed.map((r) => r.id));
+});
+
 // The dashboard's queue is this file: the browser has no way to read a
 // thousand record files, and the spine drops `authors`.
 test('the review index lists the drafts, the count and the warnings', async () => {

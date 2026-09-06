@@ -150,6 +150,31 @@ export async function readRegions(dataDir) {
   return readJson(file);
 }
 
+// The two closed vocabularies that live in data rather than in code: what an
+// actor did in an event, and what kind of thing an event was. Adding a role
+// or a category is an edit to a file somebody can argue with in a pull
+// request, never a code change (plan decisions 7 and 13).
+//
+// `null` and not `[]` when the file is absent, and the difference is the
+// whole point: an absent list means the dataset has no vocabulary and
+// nothing is checked, while an empty one would mean a closed set with
+// nothing in it, under which every role and every category in the atlas is
+// unknown. A fork with no data/roles.json is not a fork whose every record
+// is wrong (amendment A8).
+async function readVocabulary(dataDir, name) {
+  const file = path.join(dataDir, name);
+  if (!existsSync(file)) return null;
+  return readJson(file);
+}
+
+export function readRoles(dataDir) {
+  return readVocabulary(dataDir, 'roles.json');
+}
+
+export function readCategories(dataDir) {
+  return readVocabulary(dataDir, 'categories.json');
+}
+
 // GeoJSON FeatureCollection with one feature per lane, or null when the
 // polygons have not been generated.
 export async function readRegionPolygons(dataDir) {

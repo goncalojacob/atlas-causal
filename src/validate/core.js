@@ -242,7 +242,12 @@ function laneOf(record, where, deriveRegion) {
 // place's lane (the place's own override or what deriveRegion says of its
 // point). An actor's `summary` and `where` stay out for the same reason: the
 // panel fetches the record when the card is opened.
-export function buildTopology(records, regions, { deriveRegion } = {}) {
+// `roles` and `categories` are the two vocabularies in data (plan decisions 7
+// and 13). They are carried through unchanged so that `checkRules` can hold a
+// record to them without a second fetch in the browser, and undefined where
+// the dataset has none: the keys are then absent from the topology and from
+// the manifest, and the two warnings never fire (amendment A8).
+export function buildTopology(records, regions, { deriveRegion, roles, categories } = {}) {
   const events = [];
   const edges = [];
   const sources = [];
@@ -443,7 +448,7 @@ export function buildTopology(records, regions, { deriveRegion } = {}) {
   offices.sort(byId);
   tenures.sort(byId);
   narratives.sort(byId);
-  return {
+  const topology = {
     events,
     edges,
     sources,
@@ -456,6 +461,11 @@ export function buildTopology(records, regions, { deriveRegion } = {}) {
     narratives,
     regions: [...(regions ?? [])].sort((a, b) => a.order - b.order || byId(a, b)),
   };
+  // Written only where there is one, so that "absent" survives into the
+  // topology and into the manifest instead of becoming an empty closed set.
+  if (roles !== null && roles !== undefined) topology.rolesAllowed = roles;
+  if (categories !== null && categories !== undefined) topology.categoriesAllowed = categories;
+  return topology;
 }
 
 // ─── The spine ──────────────────────────────────────────────────────────────

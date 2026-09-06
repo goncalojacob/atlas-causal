@@ -21,7 +21,7 @@ import { searchIndexFor } from '../src/search.js';
 import { explanationShards, shardName } from '../src/explanations.js';
 import { licensingTable } from '../src/licensing.js';
 import { createAtlasFromSpine, expandSpine } from '../src/data.js';
-import { readRecords, readRegions, readRegionPolygons, readLandFiles, readPresenceShards, paletteFile } from './lib/read.mjs';
+import { readRecords, readRegions, readRegionPolygons, readRoles, readCategories, readLandFiles, readPresenceShards, paletteFile } from './lib/read.mjs';
 import { recordHistories, HISTORY_DIR } from './lib/history.mjs';
 import { sitePages, ENTRY_DIR } from './lib/prerender.mjs';
 
@@ -105,7 +105,11 @@ export async function buildIndex(dataDir = DEFAULT_DATA, prepared = {}) {
   let topology = prepared.topology ?? null;
   if (!topology) {
     const polygons = prepared.polygons ?? await readRegionPolygons(dataDir);
-    topology = buildTopology(records, regions, { deriveRegion: polygons ? createRegionDeriver(polygons) : undefined });
+    topology = buildTopology(records, regions, {
+      deriveRegion: polygons ? createRegionDeriver(polygons) : undefined,
+      roles: await readRoles(dataDir),
+      categories: await readCategories(dataDir),
+    });
   }
 
   // The graph every page loads whole, and the only file that carries it.
@@ -241,9 +245,18 @@ export async function buildIndex(dataDir = DEFAULT_DATA, prepared = {}) {
       review: `index/${reviewName}`,
     },
     regions: topology.regions,
-    // What people actually wrote in `role`, normalised. The vocabulary is
-    // open on purpose; this is the evidence for closing it later.
+    // What people actually wrote in `role`, normalised — which is not the
+    // same list as `rolesAllowed` below and is not meant to be. This one is
+    // the evidence: the 163 strings in use, against the 31 the vocabulary
+    // closes to, and M32b is what makes the two agree.
     roles: rolesInUse(topology.events),
+    // The two closed vocabularies that live in data, carried here so that the
+    // browser's half of the validator holds a record to them without a second
+    // fetch (plan decision 7; amendment A8). Absent where the dataset has no
+    // such file, which is what says "no check" rather than "a closed set with
+    // nothing in it".
+    ...(topology.rolesAllowed === undefined ? {} : { rolesAllowed: topology.rolesAllowed }),
+    ...(topology.categoriesAllowed === undefined ? {} : { categoriesAllowed: topology.categoriesAllowed }),
     // Paleo-coastlines will list a year range here; the present covers all.
     land: land.map((l) => ({ file: l.file, epoch: l.epoch, from: null, to: null })),
     // The territory shards, in year order. The site loads the one that

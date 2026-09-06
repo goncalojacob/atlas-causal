@@ -1,4 +1,66 @@
 {
+  "categoriesAllowed": [
+    {
+      "description": "A war, a campaign, a battle or a siege: organised armed force between polities.",
+      "id": "war",
+      "label": "War"
+    },
+    {
+      "description": "An agreement between polities: a treaty, a pact, an accession, a concordat.",
+      "id": "treaty",
+      "label": "Treaty"
+    },
+    {
+      "description": "A vote that fills an office or a chamber, and the leadership contests that decide who stands in one.",
+      "id": "election",
+      "label": "Election"
+    },
+    {
+      "description": "A seizure or a loss of power outside the ordinary rules: a revolution, a coup, an uprising, a mutiny.",
+      "id": "revolution",
+      "label": "Revolution"
+    },
+    {
+      "description": "A constitution, a statute, a decree or a court ruling: the state changing what the rules are.",
+      "id": "law",
+      "label": "Law"
+    },
+    {
+      "description": "Something coming into existence or ending: a state, an institution, a party, a company.",
+      "id": "founding",
+      "label": "Founding"
+    },
+    {
+      "description": "Harm from something nobody chose: an earthquake, a flood, a fire, an epidemic, a wreck.",
+      "id": "disaster",
+      "label": "Disaster"
+    },
+    {
+      "description": "Money and what it does: a crisis, a bailout, a nationalisation, a currency, a trade agreement.",
+      "id": "economy",
+      "label": "Economy"
+    },
+    {
+      "description": "A work, a movement, a building, an exhibition, a broadcast, a sporting occasion.",
+      "id": "culture",
+      "label": "Culture"
+    },
+    {
+      "description": "A discovery, an expedition, a technology or a piece of engineering.",
+      "id": "science",
+      "label": "Science"
+    },
+    {
+      "description": "A person's death, whether by illness, accident, execution or assassination.",
+      "id": "death",
+      "label": "Death"
+    },
+    {
+      "description": "None of the above. A category the atlas has too few of to name yet, never a category nobody looked for.",
+      "id": "other",
+      "label": "Other"
+    }
+  ],
   "counts": {
     "actors": 412,
     "edges": 161,
@@ -401,6 +463,163 @@
     "won the leadership",
     "won the territorial government",
     "younger son, succeeded to the throne"
+  ],
+  "rolesAllowed": [
+    {
+      "description": "Led the thing the event is about, without a named office to say so.",
+      "id": "leader",
+      "label": "Leader"
+    },
+    {
+      "description": "The king, president or equivalent, acting as such.",
+      "id": "head-of-state",
+      "label": "Head of state"
+    },
+    {
+      "description": "The prime minister or equivalent, acting as such.",
+      "id": "head-of-government",
+      "label": "Head of government"
+    },
+    {
+      "description": "Held a department and acted through it.",
+      "id": "minister",
+      "label": "Minister"
+    },
+    {
+      "description": "Commanded the force involved.",
+      "id": "commander",
+      "label": "Commander"
+    },
+    {
+      "description": "The state, regime or administration whose act this was.",
+      "id": "government",
+      "label": "Government"
+    },
+    {
+      "description": "Stood against it, lost by it, or was excluded from it.",
+      "id": "opposition",
+      "label": "Opposition"
+    },
+    {
+      "description": "A party that stood, won seats, or joined a coalition.",
+      "id": "party",
+      "label": "Party"
+    },
+    {
+      "description": "Stood for the office at issue.",
+      "id": "candidate",
+      "label": "Candidate"
+    },
+    {
+      "description": "Won the vote, the seat or the admission.",
+      "id": "elected",
+      "label": "Elected"
+    },
+    {
+      "description": "Was put in place by somebody else rather than elected.",
+      "id": "appointed",
+      "label": "Appointed"
+    },
+    {
+      "description": "Was removed from power by the event.",
+      "id": "deposed",
+      "label": "Deposed"
+    },
+    {
+      "description": "Left office by their own act.",
+      "id": "resigned",
+      "label": "Resigned"
+    },
+    {
+      "description": "Fought in it, on either side.",
+      "id": "belligerent",
+      "label": "Belligerent"
+    },
+    {
+      "description": "Crossed into or annexed somebody else's ground.",
+      "id": "invader",
+      "label": "Invader"
+    },
+    {
+      "description": "Held ground it had taken.",
+      "id": "occupier",
+      "label": "Occupier"
+    },
+    {
+      "description": "Was killed, injured or dispossessed by it.",
+      "id": "victim",
+      "label": "Victim"
+    },
+    {
+      "description": "Did the killing or the harm, or is said to have.",
+      "id": "perpetrator",
+      "label": "Perpetrator"
+    },
+    {
+      "description": "The thing or person the act was aimed at.",
+      "id": "target",
+      "label": "Target"
+    },
+    {
+      "description": "Signed the agreement.",
+      "id": "signatory",
+      "label": "Signatory"
+    },
+    {
+      "description": "Negotiated it without necessarily signing it.",
+      "id": "negotiator",
+      "label": "Negotiator"
+    },
+    {
+      "description": "Lent the money or set the terms of the loan.",
+      "id": "creditor",
+      "label": "Creditor"
+    },
+    {
+      "description": "Borrowed it and owed it.",
+      "id": "debtor",
+      "label": "Debtor"
+    },
+    {
+      "description": "Backed, funded or patronised it without being party to it.",
+      "id": "supporter",
+      "label": "Supporter"
+    },
+    {
+      "description": "Founded the thing the event brought into existence.",
+      "id": "founder",
+      "label": "Founder"
+    },
+    {
+      "description": "Joined it, or was the body joined.",
+      "id": "member",
+      "label": "Member"
+    },
+    {
+      "description": "Asked to be admitted.",
+      "id": "applicant",
+      "label": "Applicant"
+    },
+    {
+      "description": "Held the occasion on its own ground.",
+      "id": "host",
+      "label": "Host"
+    },
+    {
+      "description": "Wrote or drafted the text at issue.",
+      "id": "author",
+      "label": "Author"
+    },
+    {
+      "description": "A movement or front acting as one, without a party's shape.",
+      "id": "movement",
+      "label": "Movement"
+    },
+    {
+      "description": "A body acting in its institutional capacity — a bank, a church, an army, a court.",
+      "id": "institution",
+      "label": "Institution"
+    }
   ],
   "schema": 1
 }

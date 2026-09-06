@@ -115,6 +115,13 @@ try {
       presences: expanded.presences,
       sources: sourcesIndex.sources ?? [],
       regions: manifest.regions ?? [],
+      // The two vocabularies in data, off the manifest and onto the topology
+      // the dashboard's rules read: without them the browser would say
+      // nothing about a role or a category that the CLI warns about. Spread
+      // rather than defaulted, so a manifest that carries neither leaves the
+      // keys absent and the checks off (amendment A8).
+      ...(manifest.rolesAllowed === undefined ? {} : { rolesAllowed: manifest.rolesAllowed }),
+      ...(manifest.categoriesAllowed === undefined ? {} : { categoriesAllowed: manifest.categoriesAllowed }),
     },
     summary,
     // One kind's digests and the warnings about them.

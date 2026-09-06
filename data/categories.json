@@ -1,0 +1,14 @@
+[
+  { "id": "war", "label": "War", "description": "A war, a campaign, a battle or a siege: organised armed force between polities." },
+  { "id": "treaty", "label": "Treaty", "description": "An agreement between polities: a treaty, a pact, an accession, a concordat." },
+  { "id": "election", "label": "Election", "description": "A vote that fills an office or a chamber, and the leadership contests that decide who stands in one." },
+  { "id": "revolution", "label": "Revolution", "description": "A seizure or a loss of power outside the ordinary rules: a revolution, a coup, an uprising, a mutiny." },
+  { "id": "law", "label": "Law", "description": "A constitution, a statute, a decree or a court ruling: the state changing what the rules are." },
+  { "id": "founding", "label": "Founding", "description": "Something coming into existence or ending: a state, an institution, a party, a company." },
+  { "id": "disaster", "label": "Disaster", "description": "Harm from something nobody chose: an earthquake, a flood, a fire, an epidemic, a wreck." },
+  { "id": "economy", "label": "Economy", "description": "Money and what it does: a crisis, a bailout, a nationalisation, a currency, a trade agreement." },
+  { "id": "culture", "label": "Culture", "description": "A work, a movement, a building, an exhibition, a broadcast, a sporting occasion." },
+  { "id": "science", "label": "Science", "description": "A discovery, an expedition, a technology or a piece of engineering." },
+  { "id": "death", "label": "Death", "description": "A person's death, whether by illness, accident, execution or assassination." },
+  { "id": "other", "label": "Other", "description": "None of the above. A category the atlas has too few of to name yet, never a category nobody looked for." }
+]

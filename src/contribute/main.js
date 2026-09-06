@@ -78,6 +78,12 @@ try {
       tenures: [...(atlas.tenures?.values() ?? [])],
       narratives: [...(atlas.narratives?.values() ?? [])],
       regions: atlas.regions,
+      // The roles and the categories the atlas allows, off the manifest: the
+      // form runs the same `checkRules` the CLI does, and without these two
+      // it would accept a role the validator warns about on the pull request.
+      // Absent stays absent, which is what turns the check off (A8).
+      ...(atlas.manifest?.rolesAllowed === undefined ? {} : { rolesAllowed: atlas.manifest.rolesAllowed }),
+      ...(atlas.manifest?.categoriesAllowed === undefined ? {} : { categoriesAllowed: atlas.manifest.categoriesAllowed }),
     },
     schemas,
     searchEntries,
