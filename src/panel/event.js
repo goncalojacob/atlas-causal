@@ -190,7 +190,7 @@ export function largeEventHtml(ctx, event) {
 // What "Focus only on this" would leave, said once on the card of an event
 // that has parts. The lens on an `event:` focus is the event and everything
 // inside it (lens.js), which is not what the two controls above it meant
-// before M30b and is not what a reader would guess from their labels. No third
+// before M30b-2 and is not what a reader would guess from their labels. No third
 // control: `lensControl` already draws both verbs, and a "Show only this" with
 // the same effect as "Focus only on this" would be one control too many
 // (m30b-brief, A6).

@@ -272,8 +272,8 @@ export function createAtlas({
   // --- offices and tenures ------------------------------------------------
   // An office belongs to an actor and is held by people one after another;
   // the tenures are the strip drawn under it. Grouped here rather than in a
-  // card so that the office's own placeholder, the actor's card and, in M30b,
-  // the office strips all read one list. Sorted by start then id, so a strip
+  // card so that the office's own card, the actor's card and the office
+  // strips on it all read one list. Sorted by start then id, so a strip
   // is drawn in the order it happened.
   const activeTenures = (topology.tenures ?? []).filter((t) => t.status === 'active');
   const tenures = new Map(activeTenures.map((t) => [t.id, t]));

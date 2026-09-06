@@ -72,7 +72,7 @@
       ]
     },
     "category": {
-      "description": "What kind of thing this event is, from the closed list in data/categories.json — war, treaty, election and the rest. In data and not in code, so that adding one is an edit to that file (plan decision 13); a category outside the list is the warning `category-unknown`, not an error, until every event carries one. The map draws one glyph per category (M30b).",
+      "description": "What kind of thing this event is, from the closed list in data/categories.json — war, treaty, election and the rest. In data and not in code, so that adding one is an edit to that file (plan decision 13); a category outside the list is the warning `category-unknown`, not an error, until every event carries one. The contribution form and the review editor offer the list as a select; the map draws one glyph per category from M32b, which is the run that gives events a category.",
       "oneOf": [
         { "type": "null" },
         { "$ref": "../common/provenance.json#/properties/id" }

@@ -13,6 +13,51 @@ hundred lines again, cut it the same way.
 
 ## Last updated
 
+2026-09-06, after **M30b-3** (`docs/m30b-brief.md`, amendment A1: the last of
+M30b's three runs), on `m0`: **the controls and the writing. M30b is done.**
+
+**The coastlines stopped being a switch.** Plan decision 14: they are the
+ground everything else on the map is read against, so the checkbox is gone and
+the layer is drawn unconditionally. `land` is still one of `LAYERS` and still
+in `defaultState()`, so every `?layers=` link ever shared parses into the same
+three and `tests/state.test.mjs` is untouched where A11 says it should be; a
+link that named `events` alone now draws the coastlines anyway, which is the
+one behaviour the amendment asked to change.
+
+**`?layers=` carries a category of events.** `parseState` accepts any token
+matching `events:<slug>` beside the three names, and `formatState` writes back
+whatever it is given, so turning one category off will be in the link. Which
+categories exist is still not known to `state.js` — a token is checked for
+shape and nothing else. **Plumbing only** (A11): no category toggle is drawn
+and `src/map/glyphs.js` is not written, because until M32b gives events a
+`category` twelve toggles would match nothing (A2).
+
+**The layer control is generated.** The three checkboxes were static markup in
+`index.html`; `main.js` builds them now, with every label and id through
+`esc()`, which is what makes room for switches labelled out of
+`data/categories.json` — data from `data/`, and therefore untrusted.
+
+**The form and the review editor write what M30a wrote into the schemas.**
+`parent`, `scope` and `category` are in `KIND.event.fields` with descriptors —
+the parent a picker over the events, the reach a select of the two, the
+category a select filled from the manifest — and the actor row has its third
+column, the note beside the role, with the 31 roles offered as a `<datalist>`
+and not enforced, because the check is a warning until M32b. Each of the three
+writes **no key at all** when it is blank, so the 137 events in `data/` are
+byte-identical after a save; the fixtures that carry one round-trip with it.
+This is the sixth gate check deviation 352 left, and the last thing that stood
+between the two pages and the fields.
+
+**The documents say all of it.** `CLAUDE.md`'s tree and data-model section;
+`ARCHITECTURE.md` with rows for `collapse.js` and the office card, `?layers=`
+widened, and — beside the reserved `prominence` — the paragraph A17 asked for,
+saying that `scope` is a written claim about reach and buys no size;
+`about.html` on offices and tenures, parts of events and large events;
+`CONTRIBUTING.md` on when to write `parent` and `scope`, and on what `scope`
+is not. No record under `data/` changed and nothing was rebuilt: `node
+tools/validate.mjs --index` is byte-identical. **1059 tests, none skipped**,
+with `CHROME` set.
+
 2026-09-06, after **M30b-2** (`docs/m30b-brief.md`, amendment A1: the second of
 M30b's three runs), on `m0`: **the two views draw what an event is part of.**
 
@@ -622,6 +667,60 @@ In full in the history file. The ones that decide something:
      were measured over, so the heaviest mark is the heaviest size and not a
      larger one.
 
+### M30b-3, the controls and the writing
+
+364. **The layer control is built from a table in `main.js` and not from the
+     manifest.** A12 asks for it to be built from the manifest; what the
+     manifest would supply is the twelve categories, and A2 forbids drawing a
+     toggle for one in this run. Reading `categoriesAllowed` here today would
+     be a list nothing may draw. What A12 exists for is done: the control is
+     generated rather than written into `index.html`, and every label and id
+     goes through `esc()` on the way in, so the day the categories arrive
+     their labels are already escaped and the `<details>` A12 describes is one
+     block to add.
+365. **`historicalNames` is still not an input.** A16 enumerates what the form
+     and the editor gain and does not name it; the wider "every new field" in
+     the restated Done-when is what A16 overrides. A dated name is
+     `{ name, from, to }` and a list of them — three fields a row, not a text
+     box — and drawing it as one is how a year gets lost quietly. It stays in
+     `KEPT_KEYS`, carried across a save untouched, and the place card lists it
+     (A14). The editor it wants belongs with M38's dated labels, or with M34's
+     one renderer for the form and the dashboard.
+366. **Two of A16's four items were already there.** `tenure` in
+     `everythingCited` and `tenure` in `CITER_ORDER` were both written before
+     this run, exactly as A16 allows for ("check each at the gate and write
+     only what is missing"). What was missing was the test: nothing said a
+     tenure cannot be submitted uncited, and nothing said the office is the
+     exemption beside it. Both are asserted now.
+367. **`?layers=events:war` turns the events layer off rather than narrowing
+     it.** A11 makes the token plumbing only, so nothing reads one yet and
+     `map.js` still asks `layers.includes('events')`. A hand-written link
+     naming categories alone therefore draws no marks. Nothing in the
+     interface can produce such a link — no toggle writes one until M32b — and
+     the alternative was a filter in the map for a vocabulary no record uses.
+368. **The two vocabularies a reference field may be a `<select>` over are one
+     table.** A16 names only the category descriptor, but `regionChoices` in
+     the review editor and `regionSelect` in the form were already two copies
+     of one idea and the category would have made it three, in the one place
+     the two pages must agree. `VOCABULARIES` in `bundle.js` is pure, names
+     the blank row per vocabulary — "derived from the place" and "not said"
+     are not the same absence — and treats an absent list as an empty one,
+     which is what M30a's A8 means by a check that is off. M34 unifies the two
+     renderers; this is the four lines of it that were in the way.
+369. **The `scope` input is labelled "Reach".** The field is `scope` in the
+     schema and everywhere else; on the form the word beside the box is the
+     one that makes the hint land, because "scope" invites a contributor to
+     read it as importance and the whole caution A17 asks for is that it is
+     not.
+370. **One existing browser test timed out once, under a suite that now runs
+     three more of them.** `review-browser.test.mjs`'s "the record pane shows
+     the history, the claim and the diff" waited out its ten seconds for the
+     history block on one full run and passed on the two either side of it,
+     and on every run of its own file. Nothing this run touched is in its
+     path; what changed is the contention, since the browser tests share one
+     machine and this run added three. Reported rather than papered over: if
+     it recurs, the readiness signal is the thing to fix, not the timeout.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
@@ -725,3 +824,5 @@ M30b-1 done
 M30b-2 started 2026-09-06T17:15:45Z by scheduled
 M30b-2 done
 M30b-3 started 2026-09-06T17:43:56Z by scheduled
+M30b-3 done
+M30b done

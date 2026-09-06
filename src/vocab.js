@@ -112,8 +112,8 @@ export const OFFICE_CATEGORIES = Object.freeze([
 
 // How wide an event is. Two values and no third: an event is either an
 // ordinary one, which is a mark, or it is big enough that a mark would lie
-// about it — a world war, a pandemic, an empire's long retreat — and M30b
-// draws those as a band across the timeline and a wash over the map (plan
+// about it — a world war, a pandemic, an empire's long retreat — and the two
+// views draw those as a band across the timeline and a wash over the map (plan
 // decision 4). It is a closed vocabulary and not data, unlike `category`,
 // because it says how the atlas *draws* an event rather than what the event
 // was: adding a third value is a change to the drawing and therefore code.

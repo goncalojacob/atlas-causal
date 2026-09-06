@@ -362,7 +362,7 @@ function actorsOf(list) {
       // The free text beside the role — "president under whom it was held" —
       // which is what a drafting run's phrase becomes now that the role
       // itself is a vocabulary (plan decision 7). The form has no input for
-      // it until M30b; an empty note writes no key at all, so a record
+      // it until M30b-3; an empty note writes no key at all, so a record
       // written before the field existed is byte-identical after a save.
       if (trimmed(a.note) !== '') line.note = trimmed(a.note);
       return line;

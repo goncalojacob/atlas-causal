@@ -319,7 +319,7 @@ function versionOf(record) {
 // The three optional fields an event may carry, for the topology: the larger
 // event it is part of, how wide it is, and what kind of thing it was. Written
 // only where the record has one, the way `identityOf` writes `wikidata` only
-// where there is one: nothing draws them until M30b, and `"parent": null` on
+// where there is one: nothing drew them before M30b, and `"parent": null` on
 // every one of a thousand events is a thousand keys in a file every device
 // parses whole (health review of 6 September, R5).
 function partsOf(record) {
