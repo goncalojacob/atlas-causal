@@ -11,6 +11,13 @@ on:
   pull_request:
   workflow_dispatch:
 
+# A push that supersedes another on the same pull request cancels the run it
+# supersedes: the health cycle pushed 168 commits in a day and paid for a
+# check on every one of them.
+concurrency:
+  group: validate-${{ github.ref }}
+  cancel-in-progress: true
+
 permissions:
   contents: read
 
