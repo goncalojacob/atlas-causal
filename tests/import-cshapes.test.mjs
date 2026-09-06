@@ -10,7 +10,8 @@ import { tmpdir } from 'node:os';
 import path from 'node:path';
 import { decodeCollection, ringFrom, arcIndex, decodeArcs } from '../tools/import/topojson.mjs';
 import { douglasPeucker, quantize, simplifyArc, pruneGeometry, ringArea, keepRing, round } from '../tools/import/simplify.mjs';
-import { planImport, slug, yearOf, shardsTouched, shardFile, dayAfter, runImport, reportMarkdown, IMPORT_AUTHOR, ORIGIN_TOOL, SHARDS, DATA_END, MAP_FILE } from '../tools/import/cshapes.mjs';
+import { planImport, slug, yearOf, shardsTouched, shardFile, dayAfter, runImport, reportMarkdown, sourceRecord, IMPORT_AUTHOR, ORIGIN_TOOL, SHARDS, DATA_END, MAP_FILE } from '../tools/import/cshapes.mjs';
+import { isDraft } from '../src/origin.js';
 
 const SHARD_CUT = [{ from: 1886, to: 1913 }, { from: 1914, to: 1945 }, { from: 1946, to: 2019 }];
 
@@ -474,4 +475,17 @@ test('a re-run leaves a signed actor alone, signature and all', async () => {
   assert.equal(again.written.some((f) => f.endsWith(`eastland.json`)), false, 'and it is not among what was written');
   assert.deepEqual(again.removed, [], 'nor is it treated as a record the import no longer produces');
   assert.equal(await readFile(actorFile, 'utf8'), text, 'byte for byte as the reviewer left it');
+});
+
+// R10: the import wrote no `review` block at all, so `isDraft` said no to
+// every actor and every presence it created and the dashboard listed none of
+// them — "all 62446 records carry a person's name" over a corpus nobody had
+// read. Every record the import creates is a draft now.
+test('every record the import creates is in the review queue', () => {
+  const { actors, presences } = plan();
+  assert.ok(actors.length > 0 && presences.length > 0, 'the plan writes both kinds');
+  for (const record of [...actors, ...presences, sourceRecord({ created: '2026-09-02' })]) {
+    assert.deepEqual(record.review, { status: 'draft' }, record.id);
+    assert.ok(isDraft(record), `${record.id} is in the queue`);
+  }
 });

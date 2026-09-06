@@ -2,7 +2,12 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { scaffold, scaffoldAll } from '../tools/new-record.mjs';
 import { createValidator } from '../src/validate/schema.js';
-import { schemas } from './helpers.mjs';
+import { cp, mkdtemp, readFile, rm, writeFile } from 'node:fs/promises';
+import { tmpdir } from 'node:os';
+import path from 'node:path';
+import { schemas, FIXTURE_DATA } from './helpers.mjs';
+import { isDraft, isReviewed } from '../src/origin.js';
+import { buildIndex } from '../tools/build-index.mjs';
 
 const opts = { author: 'Fixture Author', github: 'fixture-author', source: ['fixture-source-1'] };
 
@@ -93,4 +98,43 @@ test('scaffold refuses bad input', () => {
   assert.throws(() => scaffold('place', ['x'], opts), /--lon and --lat/);
   assert.throws(() => scaffold('place', ['Bad Id'], { ...opts, lon: '1', lat: '2' }), /slug/);
   assert.throws(() => scaffold('event', ['fixture-x'], { ...opts, start: '1', place: 'Not A Slug' }), /--place/);
+});
+
+// R10: a scaffolded record and an imported one both reach review.html.
+// Nothing wrote `review.status`, so `isDraft` said no to every record the
+// tools created and the dashboard's "nothing left" was a claim about a corpus
+// it had never seen. The queue is built from the drafts, so what is asserted
+// here is that the record is in the file the dashboard reads.
+test('a scaffolded record and an imported one are both in the review queue', async () => {
+  for (const [kind, positional, extra] of [
+    ['event', ['fixture-scaffold-queue'], { title: 'Fixture', start: '1300' }],
+    ['edge', ['fixture-event-a', 'fixture-event-b', 'caused'], {}],
+    ['actor', ['fixture-scaffold-queued-actor'], { type: 'person', names: 'A Person', start: '1900' }],
+    ['place', ['fixture-scaffold-queued-place'], { lon: '0', lat: '0', names: 'Nowhere' }],
+  ]) {
+    const record = scaffold(kind, positional, { ...opts, ...extra });
+    assert.deepEqual(record.review, { status: 'draft' }, `${kind} is a draft`);
+    assert.ok(isDraft(record), `${kind} is in the queue`);
+    assert.equal(isReviewed(record), false);
+  }
+
+  // And through the index the dashboard actually fetches. (The two imports
+  // are held to the same thing by their own tests, over their own records.)
+  const dir = await mkdtemp(path.join(tmpdir(), 'atlas-queue-'));
+  try {
+    await cp(FIXTURE_DATA, dir, { recursive: true });
+    const scaffolded = scaffold('event', ['fixture-scaffold-queue'], { ...opts, title: 'Fixture', start: '1300', place: 'fixture-place-a' });
+    scaffolded.summary = 'A synthetic record, written to prove that a scaffold reaches the queue.';
+    scaffolded.region = null;
+    await writeFile(path.join(dir, 'events', 'fixture-scaffold-queue.json'), `${JSON.stringify(scaffolded, null, 2)}\n`, 'utf8');
+    const built = await buildIndex(dir);
+    const manifest = JSON.parse(built.files['manifest.json']);
+    const review = JSON.parse(built.files[path.basename(manifest.files.review)]);
+    assert.equal(review.drafts, 1, 'the one record the tools wrote is the one in the queue');
+    const shard = review.kinds.find((k) => k.kind === 'event');
+    const rows = JSON.parse(built.files[path.basename(shard.file)]);
+    assert.ok(rows.records.some((r) => r.id === 'fixture-scaffold-queue'), 'and the dashboard can see it');
+  } finally {
+    await rm(dir, { recursive: true, force: true });
+  }
 });

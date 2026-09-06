@@ -1209,6 +1209,18 @@ export function checkRules(records, topology = {}, { universe: prebuilt = null }
     if (r.kind === 'source' && r.status === 'active' && !cited.has(r.id)) {
       warning('no-citers', r, 'source is cited by nothing under validation');
     }
+    // A record with neither a status nor a signature has no standing at all:
+    // `isDraft` says no and `isReviewed` says no, so it is in no queue and on
+    // no dashboard, and the review.html count is a promise about a corpus it
+    // has not seen. That is how every record the two imports created fell out
+    // of the queue (health review of 6 September, R10). A warning and not an
+    // error: what is already in the atlas without one is not wrong, it is
+    // unaccounted for, and the writers that create records say `draft` now.
+    // Active only, like the two warnings above it: a tombstone and a merged
+    // record are out of the corpus, and no reviewer is waiting on either.
+    if (r.status === 'active' && r.review?.status === undefined && !(r.review?.signedBy?.length > 0)) {
+      warning('unread', r, 'neither review.status nor a signature: this record is in no queue and on no dashboard');
+    }
   }
 
   // An actor nothing references is the actor equivalent of degree zero, and

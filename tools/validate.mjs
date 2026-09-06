@@ -331,6 +331,28 @@ function formatItem(kind, item) {
   return lines.join('\n');
 }
 
+// How many of one warning are worth printing before the rest become a count.
+// Not a cap on the warnings themselves — they are all in the returned list,
+// which is what the review index and the tests read — only on what the
+// terminal is asked to scroll through. `unread` fires on 1 231 records the
+// two imports created before they wrote `review.status`, and a command
+// CLAUDE.md tells every session to run cannot answer with 1 231 lines.
+export const SHOWN_PER_RULE = 20;
+
+export function warningLines(warnings, shown = SHOWN_PER_RULE) {
+  const seen = new Map();
+  const lines = [];
+  for (const w of warnings) {
+    const count = (seen.get(w.rule) ?? 0) + 1;
+    seen.set(w.rule, count);
+    if (count <= shown) lines.push(formatItem('warning', w));
+  }
+  for (const [rule, count] of seen) {
+    if (count > shown) lines.push(`warning [${rule}]: and ${count - shown} more like the ${shown} above`);
+  }
+  return lines;
+}
+
 async function main(argv) {
   let dataDir = DEFAULT_DATA;
   let index = false;
@@ -352,7 +374,7 @@ async function main(argv) {
   }
   const { errors, warnings, counts } = await runValidation(dataDir, { index, site });
   for (const e of errors) console.error(formatItem('error', e));
-  if (!quiet) for (const w of warnings) console.log(formatItem('warning', w));
+  if (!quiet) for (const line of warningLines(warnings)) console.log(line);
   console.log(`${counts.records} records, ${counts.regions} regions: ${errors.length} error(s), ${warnings.length} warning(s)`);
   if (counts.unreviewed) console.log(`${counts.unreviewed} record(s) nobody has read yet (review.status: draft): open review.html`);
   console.log(`${counts.unverified} of ${counts.citations} citation(s) not yet checked against the source`);

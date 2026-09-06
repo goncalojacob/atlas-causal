@@ -46,7 +46,7 @@ import { existsSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { createRegionDeriver } from '../../src/util/geo.js';
-import { handWritten, isReviewed } from '../../src/origin.js';
+import { handWritten, isReviewed, REVIEW_STATUS } from '../../src/origin.js';
 import { IMPORT_KINDS } from '../../src/kinds.js';
 import { mergeIdentity } from './identity.mjs';
 import { readRecords, readRegionPolygons } from '../lib/read.mjs';
@@ -505,8 +505,11 @@ function envelope(id, kind, created, fields) {
     // (rule 29). It is what says this record is the import's own.
     origin: { tool: ORIGIN_TOOL },
     // Facts nobody has checked, marked as such. Sign clears the flag; until
-    // then the queue counts the record and the dashboard shows why.
-    review: { flags: [IMPORTED_FLAG] },
+    // then the queue counts the record and the dashboard shows why — which it
+    // could not, without `status`: `isDraft` reads that and nothing else, so
+    // an imported record with only a flag was never in the queue at all
+    // (health review of 6 September, R10).
+    review: { status: REVIEW_STATUS.draft, flags: [IMPORTED_FLAG] },
     ...fields,
   };
 }

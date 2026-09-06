@@ -3,6 +3,7 @@
 
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
+import { isDraft } from '../src/origin.js';
 import path from 'node:path';
 import {
   citationsOf, citationRows, unverified, countCitations, setVerified, clearVerified,
@@ -46,6 +47,18 @@ test('ticking and unticking leave the record exactly as they found it', async ()
   const back = clearVerified(ticked, 'fixture-source-1');
   assert.equal(Object.hasOwn(back, 'review'), false, 'an empty review block goes with the last tick');
   assert.equal(JSON.stringify(back), before);
+});
+
+// R10 again, from the other end: the queue is `review.status`, so anything
+// that drops the block drops the record off the dashboard. Unticking the last
+// citation did exactly that.
+test('unticking the last citation leaves a draft a draft', async () => {
+  const { byId } = await fixtures();
+  const event = { ...clone(byId['fixture-event-a']), review: { status: 'draft' } };
+  const ticked = setVerified(event, 'fixture-source-1', WHO, { today: TODAY });
+  const back = clearVerified(ticked, 'fixture-source-1');
+  assert.deepEqual(back.review, { status: 'draft' }, 'the tick goes, the standing stays');
+  assert.equal(isDraft(back), true);
 });
 
 test('a tick keeps the flags and the note a draft already carries', async () => {

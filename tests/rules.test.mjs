@@ -18,15 +18,37 @@ async function run(mutate = () => {}) {
 const rulesHit = (result, rule) => result.errors.filter((e) => e.rule === rule);
 const messages = (result) => result.errors.map((e) => `${e.rule} ${e.id}${e.path}: ${e.message}`).join('\n');
 
-test('the fixture dataset passes with exactly the two intended warnings', async () => {
+test('the fixture dataset passes with exactly the three intended warnings', async () => {
   const r = await run();
   assert.equal(r.errors.length, 0, messages(r));
   assert.deepEqual(
-    r.warnings.map((w) => `${w.rule}:${w.id}`).sort(),
+    r.warnings.filter((w) => w.rule !== 'unread').map((w) => `${w.rule}:${w.id}`).sort(),
     // fixture-place-m is where the tombstoned event happened: no active event
     // stands there any more, and that is exactly what place-unused says.
     ['degree-zero:fixture-event-h', 'no-citers:fixture-source-4', 'place-unused:fixture-place-m'],
   );
+});
+
+// R10: a record with neither `review.status` nor a signature is in no queue
+// and on no dashboard, and until this warning existed nothing said so. The
+// fixture corpus is exactly such a corpus — nobody has read a synthetic
+// record — so it is what the warning is counted on.
+test('a record with neither a status nor a signature is reported as unread', async () => {
+  const r = await run();
+  const unread = r.warnings.filter((w) => w.rule === 'unread');
+  const active = (await fixtures()).records.filter((x) => x.status === 'active');
+  assert.equal(unread.length, active.length, 'one per active record, and none for a tombstone');
+  for (const w of unread) assert.match(w.message, /neither review\.status nor a signature/);
+
+  // A draft is accounted for, and so is a record somebody has signed.
+  const drafted = await run((fx) => { fx.byId['fixture-event-a'].review = { status: 'draft' }; });
+  assert.ok(!drafted.warnings.some((w) => w.rule === 'unread' && w.id === 'fixture-event-a'));
+  const signed = await run((fx) => {
+    fx.byId['fixture-event-a'].review = { signedBy: [{ name: 'A Reviewer', github: null, on: '2026-09-06' }] };
+  });
+  assert.ok(!signed.warnings.some((w) => w.rule === 'unread' && w.id === 'fixture-event-a'));
+  // And a tombstone never was: nobody is waiting to read a withdrawn record.
+  assert.ok(!unread.some((w) => w.id === 'fixture-event-e--fixture-event-t--inspired'));
 });
 
 test('rule 1: schema version and shape', async () => {
@@ -318,7 +340,8 @@ test('a bundle validates against a topology it is not part of', async () => {
   newEdge.type = 'caused';
   const r = validate([newEvent, newEdge], topology, await schemas());
   assert.equal(r.errors.length, 0, messages(r));
-  assert.deepEqual(r.warnings, []);
+  // Both are records nobody has read, which is the one thing said about them.
+  assert.deepEqual(r.warnings.map((w) => w.rule), ['unread', 'unread']);
   // Referencing something in neither the bundle nor the topology fails.
   newEdge.from = 'fixture-event-ghost';
   newEdge.id = 'fixture-event-ghost--fixture-event-new--caused';

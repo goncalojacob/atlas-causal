@@ -21,6 +21,7 @@ import {
   IMPORT_AUTHOR, IMPORTED_FLAG, USER_AGENT, SOURCE_ID, MAXLAG, BATCH,
 } from '../tools/import/wikidata.mjs';
 import { schemas, ROOT } from './helpers.mjs';
+import { isDraft } from '../src/origin.js';
 
 const FIXTURES = path.join(ROOT, 'tests', 'fixtures', 'wikidata');
 const load = async (name) => JSON.parse(await readFile(path.join(FIXTURES, name), 'utf8'));
@@ -319,7 +320,10 @@ test('a created record validates, cites the item and says it is unchecked', asyn
   for (const [name, record, schema] of [['place', place, 'v1/place.json'], ['actor', actor, 'v1/actor.json'], ['event', event, 'v1/event.json']]) {
     assert.deepEqual(v.validate(schema, record), [], `${name} record`);
     assert.deepEqual(record.authors, [IMPORT_AUTHOR]);
-    assert.deepEqual(record.review, { flags: [IMPORTED_FLAG] });
+    // `status: draft` and not the flag alone: `isDraft` reads the status, so
+    // a record with only a flag was in no queue at all (R10).
+    assert.deepEqual(record.review, { status: 'draft', flags: [IMPORTED_FLAG] });
+    assert.ok(isDraft(record), `${name} record is in the review queue`);
     assert.deepEqual(record.sources, [{ source: SOURCE_ID, locator: record.wikidata }]);
   }
   assert.deepEqual(event.actors, [], 'who took part is not what they did, and the import does not write roles');

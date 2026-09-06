@@ -29,7 +29,7 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 import { decodeCollection } from './topojson.mjs';
 import { simplifyArc, pruneGeometry } from './simplify.mjs';
 import { identityOnDisk, mergeIdentity } from './identity.mjs';
-import { isReviewed, writtenBy } from '../../src/origin.js';
+import { isReviewed, writtenBy, REVIEW_STATUS } from '../../src/origin.js';
 
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..');
 export const DEFAULT_DATA = path.join(ROOT, 'data');
@@ -192,6 +192,10 @@ function record(id, kind, fields, { created }) {
     // for it, and what a re-run reads to know its own records apart from
     // somebody's (health review A, findings 22 and 24).
     origin: { tool: ORIGIN_TOOL },
+    // And nobody has read it. The import wrote no `review` at all, so every
+    // territory it created was neither draft nor reviewed and the dashboard
+    // never listed one (health review of 6 September, R10).
+    review: { status: REVIEW_STATUS.draft },
     ...fields,
   };
 }
@@ -211,6 +215,7 @@ export function sourceRecord({ created }) {
     created,
     revised: null,
     origin: { tool: ORIGIN_TOOL },
+    review: { status: REVIEW_STATUS.draft },
     type: 'dataset',
     creators: [
       'Guy Schvitz',

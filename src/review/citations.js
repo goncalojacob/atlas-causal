@@ -83,6 +83,11 @@ export function clearVerified(record, source) {
   if (Object.keys(citations).length === 0) delete review.citations;
   else review.citations = citations;
   const out = { ...record, review };
-  if (Object.keys(review).length === 1 && (review.flags ?? []).length === 0) delete out.review;
+  // What "no trace" means: nothing left but an empty `flags`. A `status` is
+  // not a trace of a tick — a draft whose last tick was taken back is still a
+  // draft, and dropping the block would take the record off the queue that
+  // sent the reviewer to it (health review of 6 September, R10).
+  const left = Object.keys(review).filter((key) => key !== 'flags' || (review.flags ?? []).length > 0);
+  if (left.length === 0) delete out.review;
   return out;
 }

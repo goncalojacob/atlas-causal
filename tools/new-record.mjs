@@ -88,6 +88,12 @@ export function scaffold(kind, positional, options) {
     license: 'CC-BY-SA-4.0',
     created: today(),
     revised: null,
+    // Nobody has read this yet, which is what a scaffold is. Without it the
+    // record carried no standing at all and fell straight past review.html:
+    // the owner's own first records of the 1415→ period would have bypassed
+    // the dashboard the way the imports' did (health review of 6 September,
+    // R10). A person signs it in the dashboard and it becomes `reviewed`.
+    review: { status: 'draft' },
   });
 
   if (kind === 'event') {
