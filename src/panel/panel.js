@@ -78,8 +78,13 @@ export function createPanel(container, {
         // they are read one after another.
         state.set({ selected: el.dataset.id, chain: [] });
         break;
+      // The office goes with it, and it is the one card that does: an office
+      // outranks an actor in the precedence, so the actor whose office it is
+      // could not be opened from the office's own card without this. An
+      // actor is a highlight the atlas keeps; an office is a card, and a
+      // reader asking for the actor is asking to leave it.
       case 'actor':
-        state.set({ actor: el.dataset.id, selected: null, chain: [] });
+        state.set({ actor: el.dataset.id, selected: null, office: null, chain: [] });
         break;
       // Choosing a place clears the event and the path and keeps the actor,
       // the way choosing an actor does: they are different questions about
@@ -441,7 +446,7 @@ export function createPanel(container, {
   function officeCardHtml(office) {
     const of = atlas.actors.get(office.of) ?? null;
     const belongs = of
-      ? `<button type="button" class="link" data-open="actor" data-id="${esc(of.id)}">${esc(of.name)}</button>`
+      ? `<button type="button" class="link" data-action="actor" data-id="${esc(of.id)}">${esc(of.name)}</button>`
       : esc(office.of ?? '');
     const category = OFFICE_CATEGORY_LABEL[office.category] ?? office.category ?? '';
     const held = office.when ? ` · ${esc(formatInterval(office.when))}` : '';

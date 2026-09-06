@@ -584,3 +584,33 @@ test('the timeline lights a reachable event past the margin, as the hint promise
     assert.ok(await page.eval(`return Boolean(document.querySelector('.timeline-area svg rect.bar.in-horizon[data-id="${found[0]}"]'));`));
   });
 });
+
+// A14: `?office=` is an address as of M30a-1 and the strips are M30b's, so
+// what the address opens until then is a three-line card. An address that
+// opened an empty sheet would be worse than no address at all.
+test('an office opens on a placeholder that names the actor and the category', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    // The office's card has no sections, which is what `open` waits for by
+    // default: the card itself is the readiness signal here.
+    const ready = 'return Boolean(document.querySelector(".panel .office-card"));';
+    await open(page, url('?office=prime-minister-of-portugal'), ready);
+    const card = await page.eval(`const el = document.querySelector('.panel .office-card');
+      return {
+        title: el.querySelector('h2').textContent,
+        meta: el.querySelector('.meta').textContent.replace(/\\s+/g, ' ').trim(),
+        actor: el.querySelector('.meta [data-action="actor"]')?.dataset.id ?? null,
+      };`);
+    assert.equal(card.title, 'Prime Minister of Portugal');
+    assert.equal(card.actor, 'portugal');
+    assert.match(card.meta, /Portugal · Head of government/);
+    // And the actor it belongs to is a click away: the placeholder is a card
+    // in the atlas, not a dead end.
+    await page.eval('document.querySelector(\'.panel .office-card [data-action="actor"]\').click();');
+    await waitFor(page, 'return /actor=portugal/.test(location.search) && !/office=/.test(location.search);', 'the actor in the URL and the office out of it');
+
+    // An id that names nothing says so, rather than showing the intro as if
+    // the reader had asked for nothing.
+    const missing = 'return /No office with id/.test(document.querySelector(".panel")?.textContent ?? "");';
+    await open(page, url('?office=no-such-office'), missing);
+  });
+});
