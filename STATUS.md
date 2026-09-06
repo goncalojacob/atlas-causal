@@ -6,6 +6,18 @@ session ends. `ARCHITECTURE.md` is the target; this file is the position.
 
 ## Last updated
 
+On the branch `world`, 2026-09-06: **M41a is stopped, not finished, and it is
+stopped on something only the owner can clear.** Since about 07:00Z every
+GitHub Actions run in this repository — this branch's and `m0`'s alike — has
+failed in seconds without reaching a runner, and the Action is the only way to
+Wikidata from any of these sandboxes. The queries that two rounds of refusals
+proved wrong are diagnosed and fixed on `import/candidates-pt2-2026-09-06b`,
+ready to run the moment Actions runs again; nothing was ticked and nothing was
+imported, deliberately, because the pool those two rounds returned misses five
+decades and is two thirds company foundings. Deviations 201, 202 and 203 are
+the whole of it. The rest of this section is `m0`'s and this paragraph does not
+touch it.
+
 On the branch `world`, 2026-09-05, after M40b (`docs/m40-brief.md`): **the
 imported world is written and wired.** Every one of M40a's 91 world events now
 has a drafted summary and its actors, or is retracted with its reason:
@@ -3093,6 +3105,66 @@ gave that to the map and the timeline, and M25 did not widen it.
      The single index-rebuild commit on top of the merge into `m0`, which
      deviation 193 already plans for, is what makes the branch green as
      committed.
+
+201. **M41a stopped unfinished: GitHub Actions stopped starting jobs, and the
+     Action is the only way to the network.** Since about 07:00Z on 6
+     September every workflow run in this repository has failed in two to
+     four seconds with no step executed and no log to download — a 404 —
+     across both workflows and both branches: `import-wikidata` runs 17
+     attempt 1 and attempt 2 on `import/candidates-pt2-2026-09-06b`, and
+     `validate` runs 395, 396, 397 and 398 on `m0`, which belong to the
+     health cycle and not to this branch. The last run that reached a runner
+     finished at 04:06Z. A job that dies in two seconds without a log never
+     reached a runner at all, so this is not the workflow file, not the
+     branch and not the seeds: it is the account. On a private repository the
+     likely cause is the Actions minute allowance or a spending limit, after
+     roughly six hours of runner time overnight — two candidates rounds at
+     about 2h55m each. **This is the owner's call and needs the billing page,
+     which no run here can read.** The sandbox cannot reach Wikidata either
+     (the proxy answers CONNECT with 403 for both `query.wikidata.org` and
+     `www.wikidata.org`), so there is no local way round it. Reverse by
+     re-running `import/candidates-pt2-2026-09-06b` once Actions runs again;
+     nothing else about M41a needs redoing.
+
+202. **Why the two finished candidate rounds were not ticked.** The rule M41a
+     was given — the 150 with the most sitelinks that are not here, at least
+     eight per decade from the 1890s to the 2020s — cannot be satisfied by
+     what those two rounds returned, and satisfying the 150 alone would have
+     been worse than not ticking. The union of the two is 221 pt2 candidates
+     the atlas does not hold, over nine of the fourteen decades: the 1890s,
+     1900s, 1920s, 1940s and 1950s returned nothing at all, the 1910s two and
+     the 1930s one. And 137 of the 221 are company foundings; sorted by
+     sitelinks the head of the list is airlines, telecom brands, embassies,
+     dams, a hotel chain and the constitutional governments. The two families
+     that carry the most consequence, `pt2-laws-and-constitutions` and
+     `pt2-treaties-and-agreements`, returned zero rows across both runs.
+     Ticking 150 of that pool would have repeated what M21 and M22 had to
+     retract, with company registrations in place of ballots, and — because a
+     tick is written into the seeds file's `items`, which is what `--import`
+     walks — it would have committed that selection for the next run to
+     import. So nothing was ticked and `items` was not touched.
+
+203. **What the refusals actually cost, and the fix that is pushed and
+     waiting.** Forty-seven of the 98 pt2 queries were refused in both rounds
+     — a 500, 502 or 504, the query service giving up at sixty seconds — and
+     which ones is not random. Counting each query's territory set against
+     whether both rounds refused it: of the 21 that name one territory, none;
+     of the 14 that name two, two; of the 63 that name eight, forty-five. The
+     restriction is a `VALUES` set of territories crossed with three
+     properties, so eight territories is twenty-four join branches where
+     Portugal alone is three. The rewrite of 6 September at 01:06Z read the
+     symptom correctly and left that crossing in place, which is why it moved
+     nothing: 47 of the 49 queries it touched failed again, and that round
+     returned fewer pt2 rows than the one before it (164 against 222). The
+     47 now name Portugal alone, and each of the seven families gains one
+     query over 1890–1979 for the other seven territories, with the
+     participant property left out so those are fourteen branches rather than
+     twenty-one: 385 queries, inside the call budget of 400, which a
+     candidates run spends one at a time because a 502 and a 504 are not
+     retryable. That is commit `212cf65` on
+     `import/candidates-pt2-2026-09-06b`; validator without `--index` clean
+     and `node --test` green on it. Nothing under `data/` moves but the seeds
+     file, and the other 331 queries are untouched.
 
 
 ## Dates to verify
