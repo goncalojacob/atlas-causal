@@ -263,6 +263,105 @@ Spínola's presidency. Nothing under `data/events/` was touched by this run.
   both. The note on the record says "interim" in so many words; a reviewer
   who decides against it has one file to delete.
 
+### M31-3, on the branch `m31`: the heads of government, 1886 to 1926
+
+**Twenty tenures, which is amendment A10's cap and not the period's list.**
+The owner has not answered §10 question 4, so M31-3 ran capped: only
+tenures whose holder, office and both year bounds this run could state
+without a range wider than two years, at most twenty of them, and
+`M31-3 done` written over an incomplete strip. Twelve are presidents of
+the Council of the constitutional monarchy —
+`jose-luciano-de-castro-prime-minister-1886`,
+`serpa-pimentel-prime-minister-1890`, `joao-crisostomo-prime-minister-1890`,
+`dias-ferreira-prime-minister-1892`, `hintze-ribeiro-prime-minister-1893`,
+`jose-luciano-de-castro-prime-minister-1897`,
+`hintze-ribeiro-prime-minister-1900`,
+`jose-luciano-de-castro-prime-minister-1904`,
+`hintze-ribeiro-prime-minister-1906`, `joao-franco-prime-minister-1906`,
+`ferreira-do-amaral-prime-minister-1908` and
+`teixeira-de-sousa-prime-minister-1910` — and eight are presidents of the
+Ministry of the First Republic — `afonso-costa-prime-minister-1913`,
+`pimenta-de-castro-prime-minister-1915`, `afonso-costa-prime-minister-1915`,
+`antonio-jose-de-almeida-prime-minister-1916`,
+`afonso-costa-prime-minister-1917`, `sidonio-pais-prime-minister-1917`,
+`antonio-maria-da-silva-prime-minister-1922` and
+`antonio-maria-da-silva-prime-minister-1925`. No id needed amendment A9's
+`-b` suffix: no person here began two spells in one calendar year.
+
+**Eight person actors were written for them**: `jose-luciano-de-castro`,
+`serpa-pimentel`, `joao-crisostomo`, `dias-ferreira`, `hintze-ribeiro`,
+`ferreira-do-amaral`, `teixeira-de-sousa` and `antonio-maria-da-silva`.
+Each is a draft with a summary, a book from `data/sources/` and no
+hand-written identifier; all eight warned `actor-unused` in the commit
+before the tenures landed and none does now. The other five holders —
+`joao-franco`, `afonso-costa`, `pimenta-de-castro`,
+`antonio-jose-de-almeida` and `sidonio-pais` — were already in the corpus,
+and three of them (`joao-franco`, `afonso-costa`, `pimenta-de-castro`) were
+in the brief's §4 survey as prime ministers with no tenure recorded.
+
+**Every date in it was written from memory and none has been read.** Every
+tenure and every new actor carries `origin: { "tool": "assistant" }`,
+`review.status: "draft"`, the `date` flag and a note saying so in plain
+words. No tenure carries a `date` or an `endDate` and none carries
+`end: null`. **Thirty-seven citations were written and not one of them has
+been checked against its source; the whole corpus stands at 2,119 of 2,119
+unchecked**, which is what `node tools/validate.mjs` prints on its last
+line.
+
+**No election was reinstated, and that is the correct outcome, not a gap.**
+The nineteen retracted events of this window are legislative elections, and
+§5's own sentence says a legislative election does not appoint a head of
+government in Portugal. Three tenures name an event in `startedBy` and all
+three name one that was already active: `lisbon-regicide` for Ferreira do
+Amaral, `pimenta-de-castro-government-1915` for Pimenta de Castro and
+`sidonio-pais-coup-1917` for Sidónio Pais. Nothing under `data/events/` was
+touched by this run.
+
+**Holders the run did not write, and why** (§2 rule 3). The cap is twenty
+and this period put more than fifty ministries in office, so the list below
+is the larger half of it. **The list is itself written from the assistant's
+memory, is a roll of names and not of dates, and is certainly incomplete**;
+a reviewer should treat it as a starting point rather than as the period's
+register.
+
+- **President of the Council of Ministers, before 1886.** Fontes Pereira de
+  Melo held the office into the first weeks of 1886, so his last government
+  begins before this window and is not written.
+- **President of the Council of Ministers, 1908 to 1910.** The four
+  caretaker governments between Ferreira do Amaral and Teixeira de Sousa:
+  Artur Alberto de Campos Henriques, Sebastião Teles, Venceslau de Lima and
+  Francisco da Veiga Beirão. The run can name them and put them in that
+  order; it is out of cap, and its confidence in the order is lower than in
+  anything it wrote.
+- **President of the Ministry of the First Republic, 1910 to 1926**, the
+  holders this run can name and did not write: João Chagas, Augusto de
+  Vasconcelos, Duarte Leite, Bernardino Machado, Vítor Hugo de Azevedo
+  Coutinho, José de Castro, João Tamagnini Barbosa, José Relvas, Domingos
+  Pereira, Alfredo Sá Cardoso, António Maria Baptista, José Ramos Preto,
+  António Granjo, Álvaro de Castro, Liberato Pinto, Tomé de Barros Queirós,
+  Manuel Maria Coelho, Francisco Cunha Leal, António Ginestal Machado,
+  Alfredo Rodrigues Gaspar and Vitorino Guimarães. Several of them held the
+  office more than once, and António Maria da Silva held it more times than
+  the two turns written here. Teófilo Braga headed the provisional
+  government of 1910–11, which M31-1 filed as a turn at
+  `president-of-portugal` (deviation 361) and which is not filed again here.
+
+**For the owner, undecided here:**
+
+- **§10 question 4 is still open**, and this run is the reason it matters:
+  whether the First Republic's forty-odd ministries belong in the atlas at
+  the granularity of one tenure each. A10's recommendation, which this run
+  followed, is that completeness is not wanted — an office strip with a hole
+  that this file names is a correct atlas. Answering it the other way means
+  a further run, more than thirty tenures and about twenty-five new person
+  actors, every date from memory.
+- **Whether a roll of names written from memory belongs in this file at
+  all.** The list above is not a record under `data/` and carries no review
+  flag, so nothing puts it in front of a reviewer the way a draft record is.
+  It is here because §2 rule 3 asks for the gap to be visible; if the owner
+  would rather the gap were silent than named unreliably, deleting the third
+  bullet is the whole change.
+
 ## Next
 
 The owner's list in full is in the history file. Still waiting:
@@ -738,6 +837,74 @@ In full in the history file. The ones that decide something:
      zero errors at every commit and `node --test` is green with `CHROME`
      set: 1,022 tests, none skipped.
 
+### M31-3, the heads of government before 1926
+
+372. **The numbering continues from 371, which is `m31`'s own last**, for
+     the reason deviation 363 gives: this is the third run on this branch
+     and it reads the file it is editing. Whatever M30b's runs wrote on `m0`
+     is still the merge's to resolve.
+373. **Twelve of the twenty are the monarchy's and only eight the
+     Republic's, which is not a judgement about the two periods.** A10 caps
+     the run at twenty and tells it to write what it can state; the
+     rotativismo governments are few and long — three men held the office
+     for most of 1886 to 1910 — where the First Republic's are many and
+     short, so confidence and coverage happen to point the same way in the
+     first period and to pull apart in the second. The Republic's holders
+     are the larger part of the list left unwritten.
+374. **Sidónio Pais has two tenures for the same months.** Deviation 369's
+     case again: M31-1 filed December 1917 to December 1918 as a turn at
+     `president-of-portugal`, and this run files it again as a turn at
+     `prime-minister-of-portugal`, because he held both posts and two
+     offices held at once are two tenures. The note on each says so.
+375. **`lisbon-regicide` is named in a `startedBy`, which is a judgement.**
+     The regicide of 1 February 1908 removed João Franco's government and
+     Ferreira do Amaral's was formed within days, so it began that tenure
+     rather than merely preceding it — the test §1 sets. It is the same
+     event M31-1 gave `manuel-ii-monarch-1908`, and one event may begin more
+     than one tenure.
+376. **`pimenta-de-castro-government-1915` is an event that *is* the
+     government it begins.** Naming it in `startedBy` stretches "the event
+     that began this tenure" a little; the event record's own summary opens
+     "General Pimenta de Castro was appointed head of government in January
+     1915", so the record is the appointment as well as the government, and
+     that is why it is named.
+377. **No election was reinstated and none had to be**, as in deviation 364.
+     Every retracted event of this window is a legislative election, which
+     §5 forbids naming on a head of government; the three tenures that name
+     anything name an event that was already active. No byte under
+     `data/events/` was written.
+378. **The monarchy's twelve tenures cite one work each.**
+     `ramos-2009-historia-de-portugal` is the only source under
+     `data/sources/` that reaches back before 1910 — `wheeler-1978-republican-portugal`
+     begins in 1910 and `meneses-2004-portugal-1914-1926` in 1914 — rule 6
+     asks for at least one, and amendment A1 forbids this run to write a new
+     source record. The eight Republic tenures cite two.
+379. **The office's title is not what the post was called in this period.**
+     The office record carries "Prime Minister of Portugal"; between 1886 and
+     1910 the post was President of the Council of Ministers and under the
+     First Republic President of the Ministry. §7 forbids this run to edit an
+     office, so each tenure's `note` names the title its own years used, and
+     the office record is left saying the modern one.
+380. **The roll of unwritten holders is unreviewable.** §2 rule 3 asks that
+     every holder left out be named, and the run named them — but a list in
+     `STATUS.md` is not a record, carries no `review` block and stands in no
+     queue, so a name in it that is wrong is wrong where nothing will catch
+     it. The paragraph says in its own words that it is written from memory
+     and incomplete, and the second owner bullet above asks whether it should
+     be there at all.
+381. **No test moved.** M31-1 and M31-2 each had to restage assertions that
+     named the holders of an office as a list; those runs replaced them with
+     claims about counts and order derived from the corpus, so twenty more
+     turns at an office that already had twenty-seven changed nothing any
+     test asserts. 1,022 tests, none skipped, none edited.
+382. **`data/index/` is not committed on this branch**, by the run's own
+     instruction, as in deviations 359 and 371: A11 stays suspended until
+     `m31` is merged into `m0`. The index was rebuilt locally to run the
+     tests and reverted before each commit, so `node tools/validate.mjs --index`
+     is stale on `m31` and is expected to be. `node tools/validate.mjs`
+     reports zero errors at every commit and `node --test` is green with
+     `CHROME` set.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
@@ -842,3 +1009,5 @@ M31-1 done
 M31-2 started 2026-09-06T17:24:43Z by scheduled (branch m31)
 M31-2 done
 M31-3 started 2026-09-06T17:42:55Z by scheduled (branch m31)
+M31-3 done
+M31 done
