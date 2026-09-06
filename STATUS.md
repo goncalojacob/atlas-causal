@@ -180,6 +180,89 @@ the status file names is a correct atlas):
   atlas records is a question about the model rather than about a date, and
   it is the owner's.
 
+### M31-2, on the branch `m31`: the heads of government, 1926 to today
+
+**The third Portuguese office has holders now, and the strip has no hole in
+it.** Twenty-five tenures at `prime-minister-of-portugal`, from the coup of
+28 May 1926 to the government in office as this was written: the six
+presidents of the Ministry of the Ditadura Nacional
+(`mendes-cabecadas-prime-minister-1926`, `gomes-da-costa-prime-minister-1926`,
+`oscar-carmona-prime-minister-1926`,
+`jose-vicente-de-freitas-prime-minister-1928`,
+`ivens-ferraz-prime-minister-1929`, `domingos-oliveira-prime-minister-1930`),
+the three provisional governments of 1974–76
+(`palma-carlos-prime-minister-1974`, `vasco-goncalves-prime-minister-1974`,
+`pinheiro-de-azevedo-prime-minister-1975`) and the sixteen constitutional
+governments since (`mario-soares-prime-minister-1976`,
+`nobre-da-costa-prime-minister-1978`, `mota-pinto-prime-minister-1978`,
+`maria-de-lourdes-pintasilgo-prime-minister-1979`,
+`sa-carneiro-prime-minister-1980`, `freitas-do-amaral-prime-minister-1980`,
+`pinto-balsemao-prime-minister-1981`, `mario-soares-prime-minister-1983`,
+`cavaco-silva-prime-minister-1985`, `antonio-guterres-prime-minister-1995`,
+`durao-barroso-prime-minister-2002`, `santana-lopes-prime-minister-2004`,
+`jose-socrates-prime-minister-2005`,
+`pedro-passos-coelho-prime-minister-2011`,
+`antonio-costa-prime-minister-2015`, `luis-montenegro-prime-minister-2024`).
+`salazar-prime-minister-1932` and `marcelo-caetano-prime-minister-1968` were
+already here and were not touched. No id needed amendment A9's `-b` suffix:
+the three spells that begin in 1926 are three different men, and the two of
+1978 are two.
+
+**Fifteen person actors were written for them**: `jose-vicente-de-freitas`,
+`ivens-ferraz`, `domingos-oliveira`, `palma-carlos`, `pinheiro-de-azevedo`,
+`nobre-da-costa`, `mota-pinto`, `maria-de-lourdes-pintasilgo`, `sa-carneiro`,
+`freitas-do-amaral`, `pinto-balsemao`, `antonio-guterres`, `durao-barroso`,
+`santana-lopes` and `jose-socrates`. Each is a draft with a summary, two
+books from `data/sources/` and no hand-written identifier; each of the
+fifteen warned `actor-unused` in the commit before the tenures landed and
+none does now, which is amendment A7's referrer rule confirmed on the
+records rather than assumed.
+
+**Every date in it was written from memory and none has been read.** Every
+tenure and every new actor carries `origin: { "tool": "assistant" }`,
+`review.status: "draft"`, the `date` flag and a note saying so in plain
+words. No tenure carries a `date` or an `endDate`. **Eighty citations were
+written and not one of them has been checked against its source; the whole
+corpus stands at 2,082 of 2,082 unchecked**, which is what
+`node tools/validate.mjs` prints on its last line.
+
+**No election was reinstated, and that is the correct outcome, not a gap.**
+The brief's §5 test is that an election comes back exactly when a tenure
+names it in `startedBy`, and its own next sentence says that in Portugal a
+legislative election does not appoint a prime minister. So only two of the
+twenty-five name anything, and both name an event that is already active:
+`coup-28-may-1926` for Mendes Cabeçadas, who was made head of the government
+two days after it, and `carnation-revolution-1974` for Palma Carlos, whose
+government the revolution's junta named — the same event M31-1 gave
+Spínola's presidency. Nothing under `data/events/` was touched by this run.
+
+**Holders the run did not write, and why** (§2 rule 3):
+
+- **The presidents of the Council before 28 May 1926** — the monarchy's and
+  the First Republic's — are M31-3's list and not this run's.
+- **Nobody after Luís Montenegro.** His tenure is the one record in the
+  atlas with `end: null`. The run's own knowledge of the world ends before
+  the day it ran, so "still in post" is a claim about the present that
+  carries the `date` flag like every interval here; if the government
+  changed in the summer of 2026, this is the record that is wrong.
+
+**For the owner, undecided here:**
+
+- **`ARCHITECTURE.md` and the brief disagree about `startedBy` on a prime
+  minister.** The document's worked example is `soares-prime-minister-1976`
+  with `startedBy: "legislative-election-1976"`; §5 of `docs/m31-brief.md`
+  says naming a legislative election that way would be a claim about how the
+  office is filled. This run followed the brief and wrote `null` on that
+  record and on twenty-two others. One of the two texts should change, and
+  which is an editorial decision; nothing was edited to settle it.
+- **Whether an interim turn is a tenure.** `freitas-do-amaral-prime-minister-1980`
+  is written, where M31-1 left the interim headship of state of 1951 to the
+  owner. The cases are not the same — in 1951 the head of government
+  exercised another office, and in December 1980 the deputy prime minister
+  held this one — but they are near enough that one answer should cover
+  both. The note on the record says "interim" in so many words; a reviewer
+  who decides against it has one file to delete.
+
 ## Next
 
 The owner's list in full is in the history file. Still waiting:
@@ -593,6 +676,68 @@ In full in the history file. The ones that decide something:
      The event is this atlas's account of that election, so it is the one
      named; nothing was reinstated for it.
 
+### M31-2, the heads of government
+
+363. **The numbering continues from 362, which is `m31`'s own last.**
+     Deviation 352 said the collision with whatever M30b-1 wrote on `m0` is
+     the merge's to resolve; this run is the second on this branch and reads
+     the file it is editing, so its numbers follow M31-1's and not `m0`'s.
+364. **No election was reinstated and none had to be.** §5's mechanism is
+     that a retracted election comes back exactly when a tenure names it, and
+     §5's own next sentence forbids naming a legislative election on a prime
+     minister. Twenty-three of the twenty-five carry `startedBy: null`; the
+     two that name an event name one that was already active. So the run
+     wrote no byte under `data/events/`, and the `degree-zero` count did not
+     move.
+365. **`ARCHITECTURE.md`'s worked tenure example disagrees with the record
+     this run wrote.** The document shows `soares-prime-minister-1976` with
+     `startedBy: "legislative-election-1976"`; the file says `null`. §7
+     forbids this run to edit a module, a schema or an office, and the
+     disagreement is editorial rather than mechanical, so it is named above
+     for the owner and neither text was changed.
+366. **The interim turn of December 1980 is written; the interim turn of
+     1951 is still the owner's.** Freitas do Amaral held this office, on an
+     interim basis, between Sá Carneiro's death in post and Pinto Balsemão's
+     swearing-in; the 1951 case M31-1 reserved is a head of government
+     exercising the *head of state's* office, which is a different question.
+     Writing it and naming it is what §2 rule 3 asks for — a hole a reviewer
+     can see beats a hole nobody was told about — and deleting one file
+     reverses it.
+367. **Domingos Oliveira's birth and death are `{min,max}` ranges**, the
+     second record in `data/` to carry one after `carbonaria`. §2 rule 2 says
+     a range is the model's one honest way of saying "one of these"; his
+     summary says the same thing in words, because a range in `when` is not
+     something a reader of the card meets anywhere else yet.
+368. **Luís Montenegro is the only person in the atlas recorded as still in
+     post.** §2 rule 5 expects two and M31-1 wrote none, for the reason its
+     own paragraph gives. `end: null` here is a claim about the day the
+     record was written, and it carries the `date` flag with every other
+     interval this run wrote.
+369. **The three men of 1926 have two tenures each.** Deviation 361 filed
+     their spells as turns at `president-of-portugal`, saying in each note
+     that the two posts were held together; this run files the same months
+     again as turns at `prime-minister-of-portugal`. Two offices held at once
+     are two tenures — that is what a tenure is — and the alternative was a
+     strip for the head of government with 1926 to 1928 missing from it.
+370. **Three tests moved with the data and none was weakened.** A5 names
+     `office-card.test.mjs`; `panel-browser.test.mjs` and
+     `tenure-strip.test.mjs` also asserted the two prime ministers as the
+     whole of the post. The first two now assert that Salazar and, after him,
+     Marcelo Caetano are among the holders and that the whole list is in
+     start order — a claim about every row, where the old one was a claim
+     about two. The strip's asserts each row's count against the number of
+     records at that office instead of naming bars, because at twenty-seven
+     turns the strip clusters and which bars survive is the strip's business;
+     and the browser test clicks Salazar's row by name rather than whichever
+     is drawn first, which is deviation 357 again one card over.
+371. **`data/index/` is not committed on this branch**, by the run's own
+     instruction, as in deviation 359: A11 stays suspended until `m31` is
+     merged into `m0`. The index was rebuilt locally to run the tests and
+     reverted before each commit, so `node tools/validate.mjs --index` is
+     stale on `m31` and is expected to be. `node tools/validate.mjs` reports
+     zero errors at every commit and `node --test` is green with `CHROME`
+     set: 1,022 tests, none skipped.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
@@ -695,3 +840,4 @@ M31-1 started 2026-09-06T15:09:18Z by scheduled (branch m31)
 M31-1 started 2026-09-06T17:01:56Z by scheduled (branch m31)
 M31-1 done
 M31-2 started 2026-09-06T17:24:43Z by scheduled (branch m31)
+M31-2 done
