@@ -209,6 +209,20 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
   let fitted = false;
   const runner = createLayoutRunner({ records: { events: atlas.events, edges: atlas.edges } });
 
+  // Pan e zoom, como o mapa os tem. Não estão no estado: o URL carrega o que
+  // o leitor está a ver, não até onde deslocou a vista.
+  //
+  // Declarados aqui, acima do primeiro `arrange()`, e não junto aos gestos que
+  // os usam: o primeiro `adopt()` chama `fitToWindow()`, que atribui
+  // `transform` e chama `applyTransform`. Numa janela estreita — um passo de
+  // narrativa, ou um `?from=&to=&view=graph` partilhado — `fitToWindow` não
+  // sai mais cedo e morria com `Cannot access 'transform' before
+  // initialization`, deixando o painel do grafo escondido.
+  let transform = { x: 0, y: 0, k: 1 };
+  const applyTransform = () => {
+    viewport.setAttribute('transform', `translate(${transform.x} ${transform.y}) scale(${transform.k})`);
+  };
+
   // The frame the reader keeps their bearings by: the bands and the year
   // axis. Redrawn only when the arrangement is.
   function drawFrame() {
@@ -302,12 +316,6 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
   }
   arrange(state.get());
 
-  // Pan and zoom, as the map has them. Not in the state: the URL carries
-  // what the reader is looking at, not how far they scrolled.
-  let transform = { x: 0, y: 0, k: 1 };
-  const applyTransform = () => {
-    viewport.setAttribute('transform', `translate(${transform.x} ${transform.y}) scale(${transform.k})`);
-  };
   const view = () => ({
     x0: -transform.x / transform.k,
     y0: -transform.y / transform.k,

@@ -18,6 +18,7 @@ import path from 'node:path';
 import { createServer, HOST } from '../tools/serve.mjs';
 import { findChrome } from '../tools/screens.mjs';
 import { ROOT } from './helpers.mjs';
+import { withBrowser, open, seenIntro, watchErrors, errorsOn } from './browser.mjs';
 
 const chrome = findChrome();
 const skip = chrome ? false : 'no headless browser found; set $CHROME to one';
@@ -143,4 +144,32 @@ test('the selected event and its chain are never inside a stack', { skip }, asyn
   const plain = graphOf(await withServer((url) => dumpDom(chrome, url('?view=graph'))));
   assert.ok(stacks(graph) < stacks(plain), `${stacks(graph)} stacks with a selection, ${stacks(plain)} without`);
   assert.equal(marks(graph) + badges(graph).reduce((a, b) => a + b, 0), events);
+});
+
+// R7: o grafo aberto numa janela estreita. `fitToWindow` só atribui
+// `transform` quando a janela é uma fracção da extensão, de modo que a janela
+// por omissão nunca lá chegava e nenhum teste via a excepção; um passo de
+// narrativa e um `?from=&to=` partilhado chegam sempre. Estes dois abrem-no
+// pelo caminho real — o browser conduzido, não `--dump-dom`, porque o que se
+// afirma é que a consola ficou limpa.
+const drawnGraph = 'return document.querySelectorAll("svg.graph .layer-nodes circle").length;';
+
+test('a narrow window opens the graph without throwing', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await watchErrors(page);
+    await seenIntro(page);
+    await open(page, url('?from=1970&to=1980&view=graph'), drawnGraph);
+    assert.deepEqual(await errorsOn(page), [], 'the console is clean');
+    assert.ok(await page.eval(drawnGraph), 'and the graph has nodes on the page');
+  });
+});
+
+test('a narrative step opens the graph without throwing', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await watchErrors(page);
+    await seenIntro(page);
+    await open(page, url('?narrative=how-the-colonial-war-ended-the-regime&step=3&view=graph'), drawnGraph);
+    assert.deepEqual(await errorsOn(page), [], 'the console is clean');
+    assert.ok(await page.eval(drawnGraph), 'and the graph has nodes on the page');
+  });
 });

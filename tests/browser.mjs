@@ -176,6 +176,29 @@ export async function open(page, url, ready = 'return document.querySelectorAll(
   assert.fail(`the page never became ready. It says: ${dom}`);
 }
 
+// Guarda o que a página deitou para a consola de erro, para que um teste possa
+// afirmar que não houve nenhum. Instalado no documento antes de qualquer
+// script da página correr, e em cada navegação seguinte: um erro no arranque
+// — que é onde os módulos do atlas se montam — acontece antes de qualquer
+// `Runtime.evaluate` poder chegar a tempo.
+export async function watchErrors(page) {
+  await page.send('Page.addScriptToEvaluateOnNewDocument', {
+    source: `
+      window.__errors = [];
+      window.addEventListener('error', (e) => {
+        window.__errors.push(String((e.error && e.error.stack) || e.message));
+      });
+      window.addEventListener('unhandledrejection', (e) => {
+        window.__errors.push(String((e.reason && e.reason.stack) || e.reason));
+      });
+      const original = console.error;
+      console.error = (...args) => { window.__errors.push(args.map(String).join(' ')); original(...args); };
+    `,
+  });
+}
+
+export const errorsOn = (page) => page.eval('return window.__errors || [];');
+
 // One finger, down and up on the same point: what a reader does to a mark.
 // Chromium turns it into the pointer and click events the views listen for,
 // so this exercises the real path and not a synthetic .click().
