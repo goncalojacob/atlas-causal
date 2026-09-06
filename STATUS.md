@@ -13,10 +13,36 @@ hundred lines again, cut it the same way.
 
 ## Last updated
 
-2026-09-06, after H9 (`docs/health/h9-brief.md`), the corrective run the
-closing review of the health cycle asked for, on `m0`: **the twelve things
-that were wrong.** Code only; no record under `data/` changed, and
-`data/index/` was regenerated for item 11 alone. 952 tests.
+2026-09-06, after **M30a-1** (`docs/m30a-brief.md`, amendment A19: M30a runs
+as three, and this is the first), on `m0`: **the two new record kinds,
+`office` and `tenure`, end to end.** The registry, two schema files, every
+frozen list, rules 6, 15 and 26, `?office=` with a placeholder card, three
+office records for Portugal, the fixtures' one office and three tenures, and
+both indexes. Nothing about `led` (M30a-2) and nothing about events
+(M30a-3). 965 tests.
+
+**A kind is nine files and thirteen tables, not thirty places.** What
+`src/kinds.js` and `src/vocab.js` promised after H2 held: the two entries in
+the registry, the two schemas, the `kind` enum, and then only the tables no
+registry can derive — `collectRows` and `indexEntries` in the validator, the
+topology and the spine, `data.js`'s kind list, the search shard, the picker,
+the bundle's descriptors and both directions of its record/values pair, the
+two hand-built topology objects, `DIGEST_KEYS`, the scaffold, `data/LICENSE`
+and the contribution branch's directory list. Every one of those is named in
+amendments A6 and A7, and every one of them was needed.
+
+**Rule 26 in four checks, not three.** A5's three are the tenure's: the
+person is a person, the office is an office, and the years overlap the
+office's own where it has any. The fourth is the office's: which kind of
+actor may stand at its `of` is decided by its category, in a table beside
+`RELATION_ENDPOINTS` in `vocab.js`, and a table nothing read would not be a
+rule.
+
+**An office asserts that a post exists and nothing else.** The three
+Portuguese records carry `when: null`, no sources and `review.status: draft`.
+Dating the crown against an actor record that starts in 1886 would be an
+invented claim (A13), and rule 26's overlap check is skipped where an office
+has no interval. Who held them is M31's.
 
 **Three of them were the atlas not working.** The graph's pan-and-zoom
 `transform` was declared below the first `arrange()`, so opening the graph
@@ -91,8 +117,13 @@ In full in the history file. The ones that decide something:
   european-union`, so ten memberships are `allied-with` with a note. That is
   a substitution, reported and never adopted: widen `member-of` or add
   `member-state-of`. Until then Portugal's card says the wrong word.
-- **Does the role vocabulary close, and to what?** Free text, 163 strings in
-  use; some are hedges that belong in a summary.
+- **Does the role vocabulary close, and to what?** **Answered, 5 September:
+  the owner approved `docs/roles-mapping.md`** — the list of 31 — and M30a-1
+  records the approval here (amendment A16). So the vocabulary closes to those
+  31: M30a-3 writes `data/roles.json` and the `role-unknown` warning, and M32b
+  applies the mapping to the 163 strings in use and turns the warning into an
+  error. What is still open is only what the mapping does with the hedges that
+  belong in a summary rather than in a role.
 - **89 more CShapes codes** are one id for a dependency and the state after
   it; which are two things is a judgement, not an import.
 - **When contributions open to strangers**; whether four container kinds are
@@ -205,6 +236,69 @@ In full in the history file. The ones that decide something:
 320. **`data/index/` moved for item 11 only**: the spine, the search shard and
      the manifest line naming them. Every other index file, the histories
      included, came back byte-identical.
+
+### M30a-1, the two kinds
+
+321. **`startedBy` is checked by rules 3 and 11, which A19 does not list.**
+     M30a-1's list is "rules 6/15/26"; the brief's §1 says in so many words
+     that `startedBy` "resolves under rule 3, may not name a non-active event
+     (rule 11)". A field the validator ignores is worse than a field that does
+     not exist, so both checks are here. The third thing §1 asks for — a
+     warning when the event lies outside the tenure's `when` — is not: it is a
+     named warning, and A9 gives this run none.
+322. **Rule 26 has a fourth check**, the office's. A5's three are the
+     tenure's; the category→actor-type table A5 introduces would otherwise be
+     a table nothing reads. It is in rule 26 because rule 26 is the office and
+     tenure rule.
+323. **Rule 11 also refuses an active tenure at a retracted office.** Not
+     named anywhere, and the same hole rule 11 exists to close everywhere
+     else. There is no referrer index from an office to its tenures — an
+     office is reached through them and through nothing else — so the
+     tombstone is caught from the tenure's end.
+324. **`tenure` has no `note`.** A4 gives it one and A19 gives A4 to M30a-2,
+     so the field arrives with the tool that carries the twelve `led` notes
+     across, not before it.
+325. **`data/tenures/` is committed with a `.gitkeep`.** The registry test
+     asks that every kind's directory exist under `data/`, git does not track
+     an empty one, and this run writes no tenure — M31's is the run that does.
+     `readRecords` reads only `*.json`, so the file is invisible to everything
+     but git. `data/offices/` has one too, and three records beside it.
+326. **The panel's `actor` case clears `office`.** Not in the brief. An office
+     outranks an actor in the precedence, so the actor button on A14's
+     placeholder card left the reader looking at the card they clicked out of.
+     An actor is a highlight the atlas keeps; an office is a card, and asking
+     for the actor is asking to leave it.
+327. **The office card is its own readiness signal in the browser test.**
+     `open()` in `tests/browser.mjs` waits for a `.card-section`, and a
+     three-line placeholder has none, so the test passes its own expression.
+328. **A record's history cannot be right in the commit that adds the
+     record.** `recordHistories` reads `git log`, so the fixtures' four
+     histories and the three offices' were written `from: "revised"` and
+     regenerated in the commit after. Two commits per set of new records, and
+     rule 16 is momentarily false on the first of the two — which is a
+     property of deriving the histories from git and not of this run.
+329. **Ten assertions moved with the corpus, and none was weakened.** Six are
+     A18's own category — `manifest.counts` twice in
+     `tests/build-index.test.mjs` (the fixtures and the empty dataset), the
+     fixture manifest's counts, the validator CLI's warning total, its
+     `unread` cap line and its build-summary line. Three are exhaustive lists
+     that grow by construction: the state's field table in
+     `render-key.test.mjs`, two whole-state comparisons in `state.test.mjs`,
+     and the spine's allowed-key table in `spine.test.mjs`. One test was
+     *extended*: "retired and unreferenced" in `rules.test.mjs` now has a
+     third kind of reference to drop, a tenure's `person`. And
+     `workflows.test.mjs` reads the contribution branch's directory list off
+     the registry instead of writing out seven names, which is a stronger
+     claim than the one it made.
+330. **ARCHITECTURE.md is updated here and not left to M30a-3.** The brief's
+     §4 gives it to M30a and A19 assigns it to no one of the three. Three of
+     its sentences became false the moment the registry gained a kind that may
+     claim a Wikidata item and a kind that cites nothing, so they are
+     corrected rather than added to.
+331. **The commit that carries rule 26 does not name it in its subject.** It
+     landed with the registry, because a kind and the rule that holds it
+     together are one change; the message says rules 6 and 15 only. Already
+     pushed, and history on `m0` is not rewritten.
 
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
