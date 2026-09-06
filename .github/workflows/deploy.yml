@@ -29,7 +29,13 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      # The whole history, not one commit: build-index writes a version of
+      # every record from `git log`, and on a shallow clone every one of the
+      # 1 006 histories collapsed to a single version — which this job then
+      # committed over the full ones (health review of 6 September, R1).
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version-file: .nvmrc

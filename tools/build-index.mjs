@@ -312,21 +312,19 @@ export async function readIndex(dataDir = DEFAULT_DATA) {
 
 // Differences between what is on disk and a fresh build: [] when fresh.
 //
-// Every file is compared byte for byte except the histories, which are
-// compared by name. A history is derived from the repository's own commits
-// and not from `data/` alone, and the two builds rule 16 puts side by side do
-// not always have the same commits to read: the deploy checks out one commit
-// deep, and a build made before a change is committed cannot see the commit
-// that is about to carry it. Comparing those bytes would fail the gate on
-// every push and say nothing true about the data. The names still have to
-// match, so a record added or retired without a rebuild is caught.
-const isHistory = (name) => name.startsWith(`${HISTORY_DIR}/`);
-
+// Every file is compared byte for byte, the histories included. They were
+// exempt until 6 September, "because the deploy checks out one commit deep" —
+// which made rule 16 false by construction for 1 006 of the 1 054 index
+// files, and let the deploy commit a one-version history for every record
+// over the full ones (health review of 6 September, R1). The deploy checks
+// out the whole history now, and a build that cannot see one falls back to
+// `revised` and says so in the file (tools/lib/history.mjs), so the two sides
+// of rule 16 agree again and the exemption has nothing left to excuse.
 export function compareIndex(existing, built) {
   const problems = [];
   for (const name of Object.keys(built.files)) {
     if (!Object.hasOwn(existing, name)) problems.push(`missing ${name}`);
-    else if (!isHistory(name) && existing[name] !== built.files[name]) problems.push(`differs ${name}`);
+    else if (existing[name] !== built.files[name]) problems.push(`differs ${name}`);
   }
   for (const name of Object.keys(existing)) {
     if (!Object.hasOwn(built.files, name)) problems.push(`stale ${name}`);

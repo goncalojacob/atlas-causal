@@ -24,6 +24,12 @@
 // no repository, no git, a shallow clone, a record nothing has committed yet
 // — the history falls back to what the record itself says: the day it was
 // created and the day it was last revised, with the changed fields unknown.
+//
+// A shallow clone is refused outright rather than read for what it holds
+// (`isShallow` below). It is the one case where git answers and the answer is
+// wrong: every record looks as though it was written once and never touched,
+// and the file says `from: 'git'` about it. The deploy checked out one commit
+// deep until 6 September and committed those histories over the full ones.
 
 import { spawn } from 'node:child_process';
 import path from 'node:path';
@@ -113,6 +119,18 @@ async function repoOf(dataDir) {
   return out === null ? null : out.toString('utf8').trim() || null;
 }
 
+// A clone with a horizon rather than a history. `git log` answers on one of
+// these — with whatever it happens to hold — so nothing about the answer says
+// it is short: a `--depth 1` checkout produced one version for every record
+// and a build that looked exactly like a good one (health review of
+// 6 September, R1). Asked outright, git says so, and the histories fall back
+// to `revised` for the whole tree rather than quietly inventing a corpus in
+// which nothing has ever been revised.
+export async function isShallow(repo) {
+  const out = await run('git', ['rev-parse', '--is-shallow-repository'], { cwd: repo });
+  return out === null ? true : out.toString('utf8').trim() === 'true';
+}
+
 // The history of every record handed in. → { from, histories }, where `from`
 // is 'git' when the states came out of the repository and 'revised' when the
 // records' own two dates are all there was.
@@ -121,7 +139,10 @@ async function repoOf(dataDir) {
 // same way `bundle-to-files.mjs` derives it, from the registry.
 export async function recordHistories(records, { dataDir, git = true } = {}) {
   const wanted = records.filter((r) => r?.id && KIND_DIRS[r?.kind]);
-  const repo = git ? await repoOf(dataDir) : null;
+  const found = git ? await repoOf(dataDir) : null;
+  // A shallow repository is not half a history, it is a different one, and
+  // `from: 'git'` over it would be a claim this file cannot support.
+  const repo = found && !(await isShallow(found)) ? found : null;
   const prefix = repo ? path.relative(repo, dataDir).split(path.sep).filter(Boolean) : [];
   const pathOf = (record) => [...prefix, KIND_DIRS[record.kind], `${record.id}.json`].join('/');
   let states = null;
