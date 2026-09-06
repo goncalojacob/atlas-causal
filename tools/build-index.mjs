@@ -17,7 +17,7 @@ import { buildSpine, buildTopology, byId, citerFiles, rolesInUse } from '../src/
 import { checkRules } from '../src/validate/rules.js';
 import { createRegionDeriver } from '../src/util/geo.js';
 import { degreesOf, digestOf, isDraft, KIND_ORDER } from '../src/review/queue.js';
-import { buildSearchIndex } from '../src/search.js';
+import { searchIndexFor } from '../src/search.js';
 import { explanationShards, shardName } from '../src/explanations.js';
 import { licensingTable } from '../src/licensing.js';
 import { readRecords, readRegions, readRegionPolygons, readLandFiles, readPresenceShards, paletteFile } from './lib/read.mjs';
@@ -115,9 +115,15 @@ export async function buildIndex(dataDir = DEFAULT_DATA, prepared = {}) {
   // what the box builds from the topology today, so the shard cannot fall
   // out of step with what the box expects to be handed (A9). The terms are
   // the only precomputed thing in the index; the prose stays out (Scale).
+  //
+  // `searchIndexFor` and not `buildSearchIndex`: the shard carries the two
+  // fields the topology deliberately drops — an event's `names` and the first
+  // sentence of its `summary` — read straight off the records (search.js; plan
+  // decision 5). Neither is in the spine and neither should be, because
+  // nothing draws them and the spine is loaded whole by every page.
   const searchText = serialize({
     schema: 1,
-    entries: buildSearchIndex(topology).map((entry) => ({ ...entry, status: 'active' })),
+    entries: searchIndexFor(topology, records).map((entry) => ({ ...entry, status: 'active' })),
   });
 
   // The links' arguments, sharded by period (src/explanations.js). Read off

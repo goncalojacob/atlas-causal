@@ -5,6 +5,7 @@
       "id": "1908-portuguese-legislative-election",
       "kind": "event",
       "label": "1908 Portuguese legislative election",
+      "lead": "portugal elected the 157 deputies of the chamber on 5 april 1908, nine weeks after the regicide and the fall of joao franco’s government, in the first ballot of what contemporaries called the acalmacao — the attempt to put the constitutional forms back after a year of rule by decree.",
       "status": "active",
       "terms": [
         "1908 portuguese legislative election",
@@ -23,6 +24,7 @@
       "id": "1911-portuguese-constituent-national-assembly-election",
       "kind": "event",
       "label": "1911 Constituent Assembly election",
+      "lead": "portugal elected a constituent assembly on 28 may 1911, seven months after the revolution and in the first ballot of the republic.",
       "status": "active",
       "terms": [
         "1911 constituent assembly election",
@@ -42,6 +44,7 @@
       "id": "1911-portuguese-presidential-election",
       "kind": "event",
       "label": "1911 Portuguese presidential election",
+      "lead": "on 24 august 1911, three days after promulgating the constitution, the constituent assembly sitting as the congress of the republic elected manuel de arriaga the first president of the portuguese republic, for a term of four years.",
       "status": "active",
       "terms": [
         "1911 portuguese presidential election",
@@ -61,6 +64,7 @@
       "id": "1915-portuguese-legislative-election",
       "kind": "event",
       "label": "1915 Portuguese legislative election",
+      "lead": "portugal voted on 13 june 1915, a month after the rising of 14 may had thrown out pimenta de castro’s government and restored the parliamentary republic by force.",
       "status": "active",
       "terms": [
         "1915 portuguese legislative election",
@@ -80,6 +84,7 @@
       "id": "1921-portuguese-legislative-election",
       "kind": "event",
       "label": "1921 Portuguese legislative election",
+      "lead": "the election of 10 july 1921 returned the republican liberal party, formed months earlier by the merger of the republican union with the evolutionists, as the largest in a parliament of 163 deputies with 79 of them, against a democratic party that had held the chamber for most of the republic's life",
       "status": "active",
       "terms": [
         "1921 portuguese legislative election",
@@ -98,6 +103,7 @@
       "id": "1925-portuguese-legislative-election",
       "kind": "event",
       "label": "1925 Portuguese legislative election",
+      "lead": "the election of 8 november 1925 gave the democratic party 83 of the 163 seats in the chamber and 39 of the 70 in the senate, under the incomplete-list system that reserved part of each circle to the minorities.",
       "status": "active",
       "terms": [
         "1925 portuguese legislative election",
@@ -116,6 +122,7 @@
       "id": "1928-portuguese-presidential-election",
       "kind": "event",
       "label": "1928 Portuguese presidential election",
+      "lead": "oscar carmona, who had been running the military dictatorship as head of state since november 1926, stood for the presidency on 25 march 1928 and ran unopposed.",
       "status": "active",
       "terms": [
         "1928 portuguese presidential election",
@@ -135,6 +142,7 @@
       "id": "1945-portuguese-legislative-election",
       "kind": "event",
       "label": "1945 Portuguese legislative election",
+      "lead": "salazar dissolved the national assembly a year early, on 6 july 1945, and called an election for 18 november under rules that for the first time in the estado novo allowed opposition candidates to stand.",
       "status": "active",
       "terms": [
         "1945 portuguese legislative election",
@@ -154,6 +162,7 @@
       "id": "1949-portuguese-presidential-election",
       "kind": "event",
       "label": "1949 Portuguese presidential election",
+      "lead": "oscar carmona stood for a fourth term on 13 february 1949 and was elected for the fourth time without an opponent — though not, this time, without a challenger.",
       "status": "active",
       "terms": [
         "1949 portuguese presidential election",
@@ -173,6 +182,7 @@
       "id": "1957-guinean-territorial-assembly-election",
       "kind": "event",
       "label": "1957 Guinean Territorial Assembly election",
+      "lead": "elections to the territorial assembly of french guinea on 31 march 1957, the first under the loi-cadre that gave the french african territories elected governments of their own, gave sekou toure's democratic party of guinea 56 of the 60 seats on a turnout of about sixty per cent.",
       "status": "active",
       "terms": [
         "1957 guinean territorial assembly election",
@@ -190,6 +200,7 @@
       "id": "1965-portuguese-presidential-election",
       "kind": "event",
       "label": "1965 Portuguese presidential election",
+      "lead": "americo tomas was returned to the presidency on 25 july 1965 for a second seven-year term, by the national assembly.",
       "status": "active",
       "terms": [
         "1965 portuguese presidential election",
@@ -209,6 +220,7 @@
       "id": "1969-portuguese-legislative-election",
       "kind": "event",
       "label": "1969 Portuguese legislative election",
+      "lead": "the first election after salazar was held on 26 october 1969, in the atmosphere of controlled opening portugal called the marcelist spring.",
       "status": "active",
       "terms": [
         "1969 portuguese legislative election",
@@ -228,6 +240,7 @@
       "id": "1972-portuguese-presidential-election",
       "kind": "event",
       "label": "1972 Portuguese presidential election",
+      "lead": "the national assembly returned americo tomas unopposed on 25 july 1972 for a third seven-year term that would have run to 1979.",
       "status": "active",
       "terms": [
         "1972 portuguese presidential election",
@@ -246,6 +259,7 @@
       "id": "1973-portuguese-legislative-election",
       "kind": "event",
       "label": "1973 Portuguese legislative election",
+      "lead": "the last election of the estado novo was held on 28 october 1973, five months before the regime fell.",
       "status": "active",
       "terms": [
         "1973 portuguese legislative election",
@@ -265,6 +279,7 @@
       "id": "1975-sao-tomean-legislative-election",
       "kind": "event",
       "label": "1975 São Toméan legislative election",
+      "lead": "the fifty-two members of a people's assembly for sao tome and principe were elected on 7 and 8 july 1975, four days before the islands became independent of portugal.",
       "status": "active",
       "terms": [
         "1975 sao tomean legislative election",
@@ -281,6 +296,7 @@
       "id": "1976-azorean-regional-election",
       "kind": "event",
       "label": "1976 Azorean regional election",
+      "lead": "the first legislative assembly of the autonomous region of the azores was elected on 27 june 1976, the same day as the presidential election on the mainland.",
       "status": "active",
       "terms": [
         "1976 azorean regional election",
@@ -299,6 +315,7 @@
       "id": "1976-portuguese-local-elections",
       "kind": "event",
       "label": "1976 Portuguese local elections",
+      "lead": "portugal elected its municipal chambers and parish assemblies on 12 december 1976, in the first local elections held under the constitution approved that april.",
       "status": "active",
       "terms": [
         "1976 portuguese local elections",
@@ -317,6 +334,7 @@
       "id": "1977-mozambican-general-election",
       "kind": "event",
       "label": "1977 Mozambican general election",
+      "lead": "mozambique held its first elections after independence in 1977, with frelimo as the only legal party.",
       "status": "active",
       "terms": [
         "1977 mozambican general election",
@@ -334,6 +352,7 @@
       "id": "1979-portuguese-legislative-election",
       "kind": "event",
       "label": "1979 Portuguese legislative election",
+      "lead": "an early legislative election was held on 2 december 1979 and returned 250 deputies, thirteen fewer than in 1976.",
       "status": "active",
       "terms": [
         "1979 portuguese legislative election",
@@ -352,6 +371,7 @@
       "id": "1979-portuguese-local-elections",
       "kind": "event",
       "label": "1979 Portuguese local elections",
+      "lead": "local elections were held on 16 december 1979, a fortnight after the legislative election, and were the second under the constitution of 1976.",
       "status": "active",
       "terms": [
         "1979 portuguese local elections",
@@ -370,6 +390,7 @@
       "id": "1980-portuguese-legislative-election",
       "kind": "event",
       "label": "1980 Portuguese legislative election",
+      "lead": "a legislative election was held on 5 october 1980, ten months after the last one, because the december 1979 ballot had only filled out the legislature elected in 1976, which the constitution ran to 14 october 1980.",
       "status": "active",
       "terms": [
         "1980 portuguese legislative election",
@@ -388,6 +409,7 @@
       "id": "1980-portuguese-presidential-election",
       "kind": "event",
       "label": "1980 Portuguese presidential election",
+      "lead": "the second direct presidential election of the new regime was held on 7 december 1980, three days after francisco sa carneiro died in the camarate air crash.",
       "status": "active",
       "terms": [
         "1980 portuguese presidential election",
@@ -406,6 +428,7 @@
       "id": "1983-portuguese-legislative-election",
       "kind": "event",
       "label": "1983 Portuguese legislative election",
+      "lead": "an early election was held on 25 april 1983 after the democratic alliance came apart under pinto balsemao.",
       "status": "active",
       "terms": [
         "1983 portuguese legislative election",
@@ -424,6 +447,7 @@
       "id": "1985-portuguese-legislative-election",
       "kind": "event",
       "label": "1985 Portuguese legislative election",
+      "lead": "an early election was held on 6 october 1985 after the bloco central broke: anibal cavaco silva, newly elected leader of the social democrats and a critic of the arrangement, pulled his party out and mario soares resigned.",
       "status": "active",
       "terms": [
         "1985 portuguese legislative election",
@@ -442,6 +466,7 @@
       "id": "1987-european-parliament-election-in-portugal",
       "kind": "event",
       "label": "1987 European Parliament election in Portugal",
+      "lead": "portugal elected its twenty-four members of the european parliament for the first time on 19 july 1987, the same day as the legislative election that gave the social democrats their absolute majority.",
       "status": "active",
       "terms": [
         "1987 european parliament election in portugal",
@@ -460,6 +485,7 @@
       "id": "1991-portuguese-legislative-election",
       "kind": "event",
       "label": "1991 Portuguese legislative election",
+      "lead": "the election of 6 october 1991 returned the social democrats to an absolute majority under anibal cavaco silva, and was the first in the democratic period held at the end of a legislature that had run its full four years.",
       "status": "active",
       "terms": [
         "1991 portuguese legislative election",
@@ -478,6 +504,7 @@
       "id": "1995-portuguese-legislative-election",
       "kind": "event",
       "label": "1995 Portuguese legislative election",
+      "lead": "the election of 1 october 1995 ended ten years of social democrat government and brought the socialists to office under antonio guterres, four seats short of a majority.",
       "status": "active",
       "terms": [
         "1995 portuguese legislative election",
@@ -496,6 +523,7 @@
       "id": "1998-portuguese-abortion-referendum",
       "kind": "event",
       "label": "1998 Portuguese abortion referendum",
+      "lead": "the first referendum held in portugal under the constitution asked on 28 june 1998 whether abortion on the woman's request up to ten weeks should cease to be a crime.",
       "status": "active",
       "terms": [
         "1998 portuguese abortion referendum",
@@ -515,6 +543,7 @@
       "id": "1999-macanese-chief-executive-election",
       "kind": "event",
       "label": "1999 Macanese Chief Executive election",
+      "lead": "a selection committee of two hundred chose edmund ho as the first chief executive of the macau special administrative region on 15 may 1999, seven months before the transfer of administration to china.",
       "status": "active",
       "terms": [
         "1999 macanese chief executive election",
@@ -532,6 +561,7 @@
       "id": "2001-portuguese-local-elections",
       "kind": "event",
       "label": "2001 Portuguese local elections",
+      "lead": "local elections were held on 16 december 2001 for the chambers and assemblies of 308 municipalities and more than four thousand parishes.",
       "status": "active",
       "terms": [
         "2001 portuguese local elections",
@@ -550,6 +580,7 @@
       "id": "2002-portuguese-legislative-election",
       "kind": "event",
       "label": "2002 Portuguese legislative election",
+      "lead": "the early election of 17 march 2002 followed guterres's resignation after the local defeat of december.",
       "status": "active",
       "terms": [
         "2002 portuguese legislative election",
@@ -568,6 +599,7 @@
       "id": "2005-portuguese-legislative-election",
       "kind": "event",
       "label": "2005 Portuguese legislative election",
+      "lead": "the early election of 20 february 2005, called after president sampaio dismissed santana lopes's government, gave the socialists the first absolute majority they had ever won, under jose socrates.",
       "status": "active",
       "terms": [
         "2005 portuguese legislative election",
@@ -586,6 +618,7 @@
       "id": "2007-portuguese-abortion-referendum",
       "kind": "event",
       "label": "2007 Portuguese abortion referendum",
+      "lead": "portugal was asked again on 11 february 2007 whether abortion at the woman's request up to ten weeks should cease to be a crime, and this time the yes won, with about fifty-nine per cent.",
       "status": "active",
       "terms": [
         "2007 portuguese abortion referendum",
@@ -604,6 +637,7 @@
       "id": "2009-portuguese-legislative-election",
       "kind": "event",
       "label": "2009 Portuguese legislative election",
+      "lead": "the election of 27 september 2009 returned the socialists to office without the majority they had held since 2005, ninety-seven seats of two hundred and thirty.",
       "status": "active",
       "terms": [
         "2009 portuguese legislative election",
@@ -622,6 +656,7 @@
       "id": "2011-portuguese-legislative-election",
       "kind": "event",
       "label": "2011 Portuguese legislative election",
+      "lead": "the early election of 5 june 2011 was held six weeks after the request for external assistance and under a memorandum the two largest opposition parties had already signed.",
       "status": "active",
       "terms": [
         "2011 portuguese legislative election",
@@ -640,6 +675,7 @@
       "id": "2011-portuguese-socialist-party-leadership-election",
       "kind": "event",
       "label": "2011 Portuguese Socialist Party leadership election",
+      "lead": "the socialists chose a new secretary-general on 22 and 23 july 2011, jose socrates having resigned the leadership after the june defeat.",
       "status": "active",
       "terms": [
         "2011 portuguese socialist party leadership election",
@@ -657,6 +693,7 @@
       "id": "2014-portuguese-socialist-party-prime-ministerial-primary",
       "kind": "event",
       "label": "2014 Portuguese Socialist Party prime ministerial primary",
+      "lead": "on 28 september 2014 the socialists held the first open primary in portuguese politics — a ballot any voter could register for, not only party members — to choose the candidate for prime minister at the coming election.",
       "status": "active",
       "terms": [
         "2014 portuguese socialist party prime ministerial primary",
@@ -675,6 +712,7 @@
       "id": "2022-portuguese-social-democratic-party-leadership-election",
       "kind": "event",
       "label": "2021 Portuguese Social Democratic Party leadership election",
+      "lead": "the social democrats voted on 27 november 2021 for the leader who would take them into the early legislative election called for 30 january 2022.",
       "status": "active",
       "terms": [
         "2021 portuguese social democratic party leadership election",
@@ -694,6 +732,7 @@
       "id": "2022-portuguese-social-democratic-party-leadership-election-q111182017",
       "kind": "event",
       "label": "2022 Portuguese Social Democratic Party leadership election",
+      "lead": "the social democrats chose a new leader on 28 may 2022, four months after losing the january election to an absolute socialist majority.",
       "status": "active",
       "terms": [
         "2022 portuguese social democratic party leadership election",
@@ -712,6 +751,7 @@
       "id": "2023-madeiran-regional-election",
       "kind": "event",
       "label": "2023 Madeiran regional election",
+      "lead": "madeira elected its regional assembly on 24 september 2023, returning the social democrats under miguel albuquerque without a majority.",
       "status": "active",
       "terms": [
         "2023 madeiran regional election",
@@ -730,6 +770,7 @@
       "id": "2024-madeiran-regional-election",
       "kind": "event",
       "label": "2024 Madeiran regional election",
+      "lead": "a snap regional election was held in madeira on 26 may 2024, more than three years before the legislature was due to end, after miguel albuquerque resigned as president of the regional government on 5 february, having been named a suspect in a corruption investigation.",
       "status": "active",
       "terms": [
         "2024 madeiran regional election",
@@ -748,6 +789,7 @@
       "id": "2025-madeiran-regional-election",
       "kind": "event",
       "label": "2025 Madeiran regional election",
+      "lead": "the third madeiran regional election in eighteen months was held on 23 march 2025, after a motion of censure against miguel albuquerque's minority government was approved in december 2024 and the assembly was dissolved in january.",
       "status": "active",
       "terms": [
         "2025 madeiran regional election",
@@ -766,6 +808,7 @@
       "id": "25-november-1975",
       "kind": "event",
       "label": "25 November",
+      "lead": "paratroopers from the bases north of lisbon seized several air force units on 25 november 1975; the moderate wing of the armed forces movement read the seizures as an attempted left-wing coup, while parts of the left described them as a reaction to the removal of radical officers already under way.",
       "status": "active",
       "terms": [
         "25 november"
@@ -783,6 +826,7 @@
       "id": "alvor-agreement-1975",
       "kind": "event",
       "label": "The Alvor Agreement",
+      "lead": "portugal and the three angolan liberation movements — the mpla, the fnla and unita — signed the alvor agreement in the algarve on 15 january 1975, with mario soares negotiating for lisbon.",
       "status": "active",
       "terms": [
         "the alvor agreement"
@@ -800,6 +844,7 @@
       "id": "angola-independence-1975",
       "kind": "event",
       "label": "Independence of Angola",
+      "lead": "portuguese sovereignty over angola lapsed at midnight on 11 november 1975 without being transferred to anyone: the alvor agreement had collapsed, and the high commissioner left luanda having handed power, in the formula used at the time, to the angolan people.",
       "status": "active",
       "terms": [
         "independence of angola"
@@ -817,6 +862,7 @@
       "id": "angola-war-begins-1961",
       "kind": "event",
       "label": "Beginning of the war in Angola",
+      "lead": "an attack on the prisons and police stations of luanda on 4 february 1961, meant to free political prisoners, was beaten off with heavy losses among the attackers and followed by reprisals in the african quarters of the city.",
       "status": "active",
       "terms": [
         "beginning of the war in angola"
@@ -834,6 +880,7 @@
       "id": "azores-agreement-1943",
       "kind": "event",
       "label": "Anglo-Portuguese agreement on Azores bases",
+      "lead": "britain invoked the alliance of 1373 to ask for facilities in the azores, and the agreement signed on 17 august 1943 gave british forces the use of the islands from october, with the airfield at lajes on terceira the most important of them.",
       "status": "active",
       "terms": [
         "anglo-portuguese agreement on azores bases"
@@ -851,6 +898,7 @@
       "id": "batepa-massacre",
       "kind": "event",
       "label": "Batepá massacre",
+      "lead": "on 3 february 1953 the colonial administration and portuguese landowners on sao tome killed forros — the creole population descended from the freed — in numbers still disputed: sao tomean sources give about 1,032, portuguese ones about 200.",
       "status": "active",
       "terms": [
         "batepa massacre",
@@ -869,6 +917,7 @@
       "id": "battle-of-the-lys-1918",
       "kind": "event",
       "label": "Battle of the Lys",
+      "lead": "the german offensive of 9 april 1918 fell on the lys sector held by the 2nd division of the portuguese expeditionary corps, which was below strength, long overdue for relief and due to be withdrawn within days.",
       "status": "active",
       "terms": [
         "battle of the lys",
@@ -888,6 +937,7 @@
       "id": "bes-resolution-2014",
       "kind": "event",
       "label": "Resolution of Banco Espírito Santo",
+      "lead": "on 3 august 2014 the banco de portugal applied a resolution measure to banco espirito santo, one of the largest private banks in the country, splitting it into a bridge bank called novo banco and a residual entity that kept the losses of the family group behind it.",
       "status": "active",
       "terms": [
         "resolution of banco espirito santo"
@@ -905,6 +955,7 @@
       "id": "botelho-moniz-coup-attempt-1961",
       "kind": "event",
       "label": "Botelho Moniz's failed move against Salazar",
+      "lead": "in april 1961, weeks after the rising in angola, the minister of defence botelho moniz sought the president's support for replacing salazar and changing course in africa.",
       "status": "active",
       "terms": [
         "botelho moniz's failed move against salazar"
@@ -922,6 +973,7 @@
       "id": "bpn-nationalisation-2008",
       "kind": "event",
       "label": "Nationalisation of the Banco Português de Negócios",
+      "lead": "the state took over bpn in november 2008 after losses and fraud were uncovered, in the first weeks of the global financial crisis.",
       "status": "active",
       "terms": [
         "nationalisation of the banco portugues de negocios"
@@ -939,6 +991,7 @@
       "id": "cabral-assassinated-1973",
       "kind": "event",
       "label": "Assassination of Amílcar Cabral",
+      "lead": "amilcar cabral was shot dead outside his house in conakry on the night of 20 january 1973 by members of the paigc, the movement he had founded and led.",
       "status": "active",
       "terms": [
         "assassination of amilcar cabral"
@@ -956,6 +1009,7 @@
       "id": "caetano-succeeds-salazar-1968",
       "kind": "event",
       "label": "Marcelo Caetano succeeds Salazar",
+      "lead": "salazar was incapacitated in early august 1968 by a haemorrhage after a fall, and on 27 september president americo tomas appointed marcelo caetano president of the council in his place.",
       "status": "active",
       "terms": [
         "marcelo caetano succeeds salazar"
@@ -973,6 +1027,7 @@
       "id": "carnation-revolution-1974",
       "kind": "event",
       "label": "25 April",
+      "lead": "units led by the armed forces movement — a clandestine organisation of middle-ranking officers formed over the previous year around the colonial war and a grievance about promotions — left barracks in the early hours of 25 april 1974 on a plan drawn up by otelo saraiva de carvalho, and held lisbon b",
       "status": "active",
       "terms": [
         "25 april"
@@ -990,6 +1045,7 @@
       "id": "cavaco-absolute-majority-1987",
       "kind": "event",
       "label": "Cavaco Silva's absolute majority",
+      "lead": "the social democrats won an absolute majority in july 1987, the first in the democratic period, opening ten years of stable single-party government and a decade of european structural funds.",
       "status": "active",
       "terms": [
         "cavaco silva's absolute majority"
@@ -1007,6 +1063,7 @@
       "id": "constituent-assembly-election-1975",
       "kind": "event",
       "label": "Constituent Assembly election",
+      "lead": "the election of 25 april 1975, held on the first anniversary of the coup, was the first in portugal with universal adult suffrage and the first free election since the 1920s; turnout was over ninety per cent.",
       "status": "active",
       "terms": [
         "constituent assembly election"
@@ -1024,6 +1081,7 @@
       "id": "constitution-1911",
       "kind": "event",
       "label": "Constitution of 1911",
+      "lead": "the constituent assembly elected in may 1911 approved the republic's first constitution on 21 august: a two-chamber congress, a president elected by that congress rather than by the country and unable to dissolve it, and the separation of church and state already legislated in april.",
       "status": "active",
       "terms": [
         "constitution of 1911"
@@ -1041,6 +1099,7 @@
       "id": "constitution-1933",
       "kind": "event",
       "label": "Constitution of 1933",
+      "lead": "the constitution drafted under salazar's direction was approved by plebiscite on 19 march 1933 and gave the estado novo its legal shape: a corporative state, a national assembly in the hands of a single party, a head of government answerable to the president of the republic rather than to parliament",
       "status": "active",
       "terms": [
         "constitution of 1933"
@@ -1058,6 +1117,7 @@
       "id": "constitution-1976",
       "kind": "event",
       "label": "Constitution of 1976",
+      "lead": "the constitution approved on 2 april 1976 and in force from 25 april was written by the assembly elected a year earlier, within the limits the parties had accepted in their pacts with the armed forces movement.",
       "status": "active",
       "terms": [
         "constitution of 1976"
@@ -1075,6 +1135,7 @@
       "id": "constitutional-revision-1959",
       "kind": "event",
       "label": "The revision that ends direct presidential elections",
+      "lead": "after the shock of the 1958 campaign the constitution was revised so that the president would be chosen by an electoral college rather than by direct suffrage.",
       "status": "active",
       "terms": [
         "the revision that ends direct presidential elections"
@@ -1092,6 +1153,7 @@
       "id": "constitutional-revision-1982",
       "kind": "event",
       "label": "The revision that abolishes the Council of the Revolution",
+      "lead": "the first revision of the 1976 constitution removed the council of the revolution, put constitutional review in the hands of a new constitutional court, and ended the military tutelage written into the text in 1976.",
       "status": "active",
       "terms": [
         "the revision that abolishes the council of the revolution"
@@ -1109,6 +1171,7 @@
       "id": "costa-resigns-2023",
       "kind": "event",
       "label": "António Costa resigns",
+      "lead": "antonio costa resigned on 7 november 2023, hours after searches in an inquiry into lithium and hydrogen projects and after a communique of the public prosecutor's office said his conduct was being examined separately at the supreme court.",
       "status": "active",
       "terms": [
         "antonio costa resigns"
@@ -1126,6 +1189,7 @@
       "id": "coup-28-may-1926",
       "kind": "event",
       "label": "Coup of 28 May",
+      "lead": "the rising began in braga on 28 may 1926 under general gomes da costa, met almost no resistance as it moved south, and brought down the government of antonio maria da silva within two days.",
       "status": "active",
       "terms": [
         "coup of 28 may"
@@ -1143,6 +1207,7 @@
       "id": "coup-attempt-11-march-1975",
       "kind": "event",
       "label": "The failed coup of 11 March",
+      "lead": "on 11 march 1975 officers associated with antonio de spinola moved against the left of the armed forces movement, with an air attack on the ral-1 artillery barracks in lisbon at its centre; the attempt found little support and collapsed the same day.",
       "status": "active",
       "terms": [
         "the failed coup of 11 march"
@@ -1160,6 +1225,7 @@
       "id": "covid-19-pandemic",
       "kind": "event",
       "label": "COVID-19 pandemic",
+      "lead": "an outbreak of a new coronavirus disease in wuhan at the end of 2019 spread through asia and then worldwide in the first months of 2020.",
       "status": "active",
       "terms": [
         "covid-19 pandemic",
@@ -1178,6 +1244,7 @@
       "id": "covid-19-pandemic-in-europe",
       "kind": "event",
       "label": "COVID-19 pandemic in Europe",
+      "lead": "the pandemic reached europe with a case confirmed at bordeaux on 24 january 2020 and spread across the continent through february and march; by 17 march every european country had confirmed a case.",
       "status": "active",
       "terms": [
         "covid-19 pandemic in europe",
@@ -1196,6 +1263,7 @@
       "id": "covid-state-of-emergency-2020",
       "kind": "event",
       "label": "First state of emergency of the pandemic",
+      "lead": "the president declared a state of emergency on 18 march 2020, the first under the 1976 constitution, and parliament renewed it twice before it lapsed on 2 may; it was declared again in november.",
       "status": "active",
       "terms": [
         "first state of emergency of the pandemic"
@@ -1214,6 +1282,7 @@
       "id": "cplp-founding-1996",
       "kind": "event",
       "label": "The Community of Portuguese Language Countries is founded",
+      "lead": "seven states — portugal, brazil, angola, cape verde, guinea-bissau, mozambique and sao tome and principe — founded the community of portuguese language countries at lisbon on 17 july 1996; east timor joined once it was independent.",
       "status": "active",
       "terms": [
         "the community of portuguese language countries is founded"
@@ -1231,6 +1300,7 @@
       "id": "delgado-assassinated-1965",
       "kind": "event",
       "label": "Humberto Delgado murdered by the PIDE",
+      "lead": "delgado and his brazilian secretary arajaryr moreira de campos were lured across the spanish border and killed by a pide team in february 1965; the bodies were found near villanueva del fresno two months later.",
       "status": "active",
       "terms": [
         "humberto delgado murdered by the pide"
@@ -1248,6 +1318,7 @@
       "id": "delgado-candidacy-1958",
       "kind": "event",
       "label": "Humberto Delgado's presidential candidacy",
+      "lead": "general humberto delgado stood against the regime's candidate americo tomas in the presidential election of 8 june 1958, and answered a journalist's question about what he would do with salazar with the phrase that made his campaign: obviously, i will dismiss him.",
       "status": "active",
       "terms": [
         "humberto delgado's presidential candidacy"
@@ -1265,6 +1336,7 @@
       "id": "eanes-elected-1976",
       "kind": "event",
       "label": "Ramalho Eanes elected president",
+      "lead": "ramalho eanes, the officer who had commanded the operation of 25 november 1975, was elected president of the republic on 27 june 1976 in the first round, with about sixty per cent of the vote and the support of the socialists, the social democrats and the cds.",
       "status": "active",
       "terms": [
         "ramalho eanes elected president"
@@ -1282,6 +1354,7 @@
       "id": "east-timor-independence-2002",
       "kind": "event",
       "label": "Independence of East Timor",
+      "lead": "east timor became independent on 20 may 2002, twenty-seven years after portugal's administration ended and indonesia invaded.",
       "status": "active",
       "terms": [
         "independence of east timor"
@@ -1299,6 +1372,7 @@
       "id": "east-timor-invasion-1975",
       "kind": "event",
       "label": "Indonesia invades East Timor",
+      "lead": "indonesian forces invaded east timor on 7 december 1975, nine days after fretilin had declared independence and with the portuguese administration withdrawn to atauro.",
       "status": "active",
       "terms": [
         "indonesia invades east timor"
@@ -1316,6 +1390,7 @@
       "id": "eec-accession-1986",
       "kind": "event",
       "label": "Portugal joins the EEC",
+      "lead": "portugal became a member of the european economic community on 1 january 1986, alongside spain, after nine years of negotiation; the treaty had been signed at the jeronimos monastery in lisbon on 12 june 1985.",
       "status": "active",
       "terms": [
         "portugal joins the eec"
@@ -1333,6 +1408,7 @@
       "id": "eec-application-1977",
       "kind": "event",
       "label": "Portugal applies to join the EEC",
+      "lead": "the first constitutional government, led by mario soares, submitted portugal's application for membership of the european economic community on 28 march 1977, eleven months after the constitution came into force.",
       "status": "active",
       "terms": [
         "portugal applies to join the eec"
@@ -1350,6 +1426,7 @@
       "id": "efta-accession-1960",
       "kind": "event",
       "label": "Portugal joins the European Free Trade Association",
+      "lead": "portugal signed the stockholm convention on 4 january 1960 as one of the founding members of the european free trade association, which came into force on 3 may.",
       "status": "active",
       "terms": [
         "portugal joins the european free trade association"
@@ -1367,6 +1444,7 @@
       "id": "eleicoes-legislativas-regionais-na-madeira-em-1976",
       "kind": "event",
       "label": "eleições legislativas regionais na Madeira em 1976",
+      "lead": "madeira elected the first legislative assembly of its autonomous region on 27 june 1976, the same day as the azores and as the presidential election.",
       "status": "active",
       "terms": [
         "eleicoes legislativas regionais na madeira em 1976",
@@ -1384,6 +1462,7 @@
       "id": "euro-adoption-1999",
       "kind": "event",
       "label": "Portugal adopts the euro",
+      "lead": "portugal was among the eleven states that entered the third stage of economic and monetary union on 1 january 1999, fixing the escudo irrevocably against the euro; notes and coins replaced escudos in 2002.",
       "status": "active",
       "terms": [
         "portugal adopts the euro"
@@ -1401,6 +1480,7 @@
       "id": "expo-98",
       "kind": "event",
       "label": "Expo 98",
+      "lead": "the world exposition held in lisbon from may to september 1998, on the theme of the oceans and the fifth centenary of vasco da gama's voyage to india.",
       "status": "active",
       "terms": [
         "expo 98",
@@ -1420,6 +1500,7 @@
       "id": "exposicao-mundo-portugues-1940",
       "kind": "event",
       "label": "Exhibition of the Portuguese World",
+      "lead": "the great exhibition held at belem from june to december 1940, marking the eight hundredth anniversary of the founding of the kingdom and the third centenary of the restoration of 1640.",
       "status": "active",
       "terms": [
         "exhibition of the portuguese world"
@@ -1437,6 +1518,7 @@
       "id": "fiftieth-anniversary-25-april-2024",
       "kind": "event",
       "label": "Fifty years of 25 April",
+      "lead": "the fiftieth anniversary of the coup was marked on 25 april 2024 by a solemn session in parliament and by the march down the avenida da liberdade, three weeks after a legislative election that had changed the arithmetic of the chamber it was held in.",
       "status": "active",
       "terms": [
         "fifty years of 25 april"
@@ -1454,6 +1536,7 @@
       "id": "geringonca-2015",
       "kind": "event",
       "label": "The PS minority government of 2015",
+      "lead": "the xxi constitutional government, a ps minority under antonio costa, took office on 26 november 2015 with written agreements with the bloco de esquerda, the pcp and the greens: the first time since 1974 that the parties to the left of the ps supported a government without joining it.",
       "status": "active",
       "terms": [
         "the ps minority government of 2015"
@@ -1471,6 +1554,7 @@
       "id": "germany-declares-war-1916",
       "kind": "event",
       "label": "Germany declares war on Portugal",
+      "lead": "portugal requisitioned the german and austrian merchant ships interned in the tagus and other ports on 23 february 1916, at britain's request and under the terms of the alliance; germany declared war on 9 march.",
       "status": "active",
       "terms": [
         "germany declares war on portugal"
@@ -1488,6 +1572,7 @@
       "id": "goa-annexed-1961",
       "kind": "event",
       "label": "India annexes Goa, Daman and Diu",
+      "lead": "indian forces entered goa, daman and diu on 18 december 1961 and the portuguese governor-general surrendered the following day, ending four and a half centuries of portuguese rule in india.",
       "status": "active",
       "terms": [
         "india annexes goa, daman and diu"
@@ -1505,6 +1590,7 @@
       "id": "government-falls-2025",
       "kind": "event",
       "label": "The government loses a confidence vote",
+      "lead": "the government tabled a motion of confidence over questions about a company owned by the prime minister's family and lost it on 11 march 2025, the ps and chega voting against.",
       "status": "active",
       "terms": [
         "the government loses a confidence vote"
@@ -1522,6 +1608,7 @@
       "id": "guinea-bissau-declares-independence-1973",
       "kind": "event",
       "label": "PAIGC declares the independence of Guinea-Bissau",
+      "lead": "on 24 september 1973 the paigc unilaterally proclaimed the republic of guinea-bissau in the liberated zone of boe; dozens of states recognised it within weeks.",
       "status": "active",
       "terms": [
         "paigc declares the independence of guinea-bissau"
@@ -1539,6 +1626,7 @@
       "id": "guinea-war-begins-1963",
       "kind": "event",
       "label": "Beginning of the war in Guinea",
+      "lead": "the paigc attacked the barracks at tite, south of bissau, on 23 january 1963, opening the armed struggle in portuguese guinea.",
       "status": "active",
       "terms": [
         "beginning of the war in guinea"
@@ -1556,6 +1644,7 @@
       "id": "guinean-constitutional-referendum-1958",
       "kind": "event",
       "label": "1958 Guinean constitutional referendum",
+      "lead": "on 28 september 1958 french guinea voted in the referendum de gaulle had put to the whole french union on his new constitution, and was the only territory in it to vote no.",
       "status": "active",
       "terms": [
         "1958 guinean constitutional referendum",
@@ -1574,6 +1663,7 @@
       "id": "hat-nipah-and-same-massacres",
       "kind": "event",
       "label": "Hat Nipah and Same massacres",
+      "lead": "massacres were carried out at hat nipah and at same, in the interior of east timor, between 27 and 29 january 1976, five weeks after indonesian forces landed at dili.",
       "status": "active",
       "terms": [
         "hat nipah and same massacres"
@@ -1591,6 +1681,7 @@
       "id": "iberian-blackout-2025",
       "kind": "event",
       "label": "The Iberian blackout",
+      "lead": "electricity supply failed across mainland portugal and spain around midday on 28 april 2025 and took most of a day to restore.",
       "status": "active",
       "terms": [
         "the iberian blackout"
@@ -1608,6 +1699,7 @@
       "id": "iberian-pact",
       "kind": "event",
       "label": "The Iberian Pact",
+      "lead": "salazar and the spanish ambassador nicolas franco — the victor’s brother — signed the treaty of friendship and non-aggression in lisbon on 17 march 1939, a fortnight before the spanish civil war formally ended and with its outcome already settled; it was ratified on the 25th.",
       "status": "active",
       "terms": [
         "the iberian pact",
@@ -1627,6 +1719,7 @@
       "id": "imf-agreement-1978",
       "kind": "event",
       "label": "First stabilisation agreement with the IMF",
+      "lead": "facing a balance-of-payments crisis, portugal agreed a stabilisation programme with the international monetary fund: devaluation, credit ceilings and restraint on wages and public spending.",
       "status": "active",
       "terms": [
         "first stabilisation agreement with the imf"
@@ -1644,6 +1737,7 @@
       "id": "imf-agreement-1983",
       "kind": "event",
       "label": "Second stabilisation agreement with the IMF",
+      "lead": "a second payments crisis brought a second fund programme under the central-bloc government of soares and mota pinto's successors, with devaluation and severe restriction; the recession that followed was the deepest since the war.",
       "status": "active",
       "terms": [
         "second stabilisation agreement with the imf"
@@ -1661,6 +1755,7 @@
       "id": "law-of-separation-1911",
       "kind": "event",
       "label": "Law of Separation of Church and State",
+      "lead": "the decree of 20 april 1911, drafted by afonso costa, separated church and state: it ended the catholic religion's official standing, transferred church property to the state, subjected worship to registration and public control, expelled or restricted the religious orders, and secularised registers",
       "status": "active",
       "terms": [
         "law of separation of church and state",
@@ -1679,6 +1774,7 @@
       "id": "legiao-portuguesa-founded-1936",
       "kind": "event",
       "label": "Foundation of the Portuguese Legion",
+      "lead": "the legiao portuguesa was created in september 1936 as an anti-communist volunteer militia, alongside the youth organisation mocidade portuguesa.",
       "status": "active",
       "terms": [
         "foundation of the portuguese legion"
@@ -1696,6 +1792,7 @@
       "id": "legislative-election-1976",
       "kind": "event",
       "label": "First legislative election under the constitution",
+      "lead": "the first election to the assembly of the republic under the new constitution was held on 25 april 1976, two years to the day after the coup and a year after the constituent election.",
       "status": "active",
       "terms": [
         "first legislative election under the constitution"
@@ -1713,6 +1810,7 @@
       "id": "legislative-election-2015",
       "kind": "event",
       "label": "Legislative election of 2015",
+      "lead": "the portugal a frente coalition of the psd and the cds-pp won the most votes on 4 october 2015 and lost its absolute majority; the ps, the bloco de esquerda, the pcp and the greens together held a majority of the seats.",
       "status": "active",
       "terms": [
         "legislative election of 2015"
@@ -1730,6 +1828,7 @@
       "id": "legislative-election-2019",
       "kind": "event",
       "label": "Legislative election of 2019",
+      "lead": "the ps won on 6 october 2019 with more votes and more seats than in 2015 and still without a majority, and formed a government without renewing the written agreements of four years before.",
       "status": "active",
       "terms": [
         "legislative election of 2019"
@@ -1747,6 +1846,7 @@
       "id": "legislative-election-2022",
       "kind": "event",
       "label": "Legislative election of 2022",
+      "lead": "called after the bloco de esquerda and the pcp joined the right in voting down the budget for 2022, the election of 30 january returned the ps with an absolute majority, the first any party had won since 2005.",
       "status": "active",
       "terms": [
         "legislative election of 2022"
@@ -1764,6 +1864,7 @@
       "id": "legislative-election-2024",
       "kind": "event",
       "label": "Legislative election of 2024",
+      "lead": "the alianca democratica of the psd and the cds-pp won on 10 march 2024 by a margin of about two seats over the ps, and chega went from twelve deputies to fifty.",
       "status": "active",
       "terms": [
         "legislative election of 2024"
@@ -1781,6 +1882,7 @@
       "id": "legislative-election-2025",
       "kind": "event",
       "label": "Legislative election of 2025",
+      "lead": "the election of 18 may 2025 returned the ad as the largest list and left chega and the ps close enough for second place that the order was settled weeks later by the seats of the emigrant circles.",
       "status": "active",
       "terms": [
         "legislative election of 2025"
@@ -1798,6 +1900,7 @@
       "id": "lisbon-regicide",
       "kind": "event",
       "label": "The Lisbon Regicide",
+      "lead": "on 1 february 1908 king carlos i and his heir luis filipe were shot dead in an open carriage crossing the terreiro do paco in lisbon.",
       "status": "active",
       "terms": [
         "the lisbon regicide",
@@ -1816,6 +1919,7 @@
       "id": "macau-handover-1999",
       "kind": "event",
       "label": "Handover of Macau",
+      "lead": "portugal transferred the administration of macau to the people's republic of china at midnight on 20 december 1999, under the joint declaration signed in 1987, which provided for a special administrative region with its own system for fifty years.",
       "status": "active",
       "terms": [
         "handover of macau",
@@ -1835,6 +1939,7 @@
       "id": "marcelo-elected-president-2016",
       "kind": "event",
       "label": "Marcelo Rebelo de Sousa elected president",
+      "lead": "marcelo rebelo de sousa was elected in the first round on 24 january 2016.",
       "status": "active",
       "terms": [
         "marcelo rebelo de sousa elected president"
@@ -1852,6 +1957,7 @@
       "id": "marcelo-reelected-2021",
       "kind": "event",
       "label": "Marcelo Rebelo de Sousa re-elected",
+      "lead": "the president was re-elected in the first round on 24 january 2021, in a poll held in the worst weeks of the winter wave, with the campaign curtailed and turnout below forty per cent.",
       "status": "active",
       "terms": [
         "marcelo rebelo de sousa re-elected"
@@ -1869,6 +1975,7 @@
       "id": "monarchy-of-the-north-1919",
       "kind": "event",
       "label": "The Monarchy of the North",
+      "lead": "monarchists led by paiva couceiro proclaimed the restoration of the monarchy in porto on 19 january 1919 and held the north for about a month before republican forces retook the city in mid-february.",
       "status": "active",
       "terms": [
         "the monarchy of the north"
@@ -1886,6 +1993,7 @@
       "id": "montenegro-government-2024",
       "kind": "event",
       "label": "The Montenegro government takes office",
+      "lead": "the xxiv constitutional government, an ad minority under luis montenegro, took office on 2 april 2024 with no agreement with any other party and in a chamber where no two groups but the ad and the ps made a majority between them.",
       "status": "active",
       "terms": [
         "the montenegro government takes office"
@@ -1903,6 +2011,7 @@
       "id": "mozambique-war-begins-1964",
       "kind": "event",
       "label": "Beginning of the war in Mozambique",
+      "lead": "frelimo opened the armed struggle in mozambique with an attack on the administrative post at chai, in cabo delgado, on 25 september 1964.",
       "status": "active",
       "terms": [
         "beginning of the war in mozambique"
@@ -1920,6 +2029,7 @@
       "id": "mueda-massacre",
       "kind": "event",
       "label": "Mueda massacre",
+      "lead": "on 16 june 1960 portuguese troops fired on a crowd gathered at the administrative post at mueda, on the makonde plateau in northern mozambique, where makonde leaders had come to put the case for their cooperative movement and against forced cultivation.",
       "status": "active",
       "terms": [
         "mueda massacre",
@@ -1937,6 +2047,7 @@
       "id": "nationalisations-1975",
       "kind": "event",
       "label": "Nationalisation of banks and insurance",
+      "lead": "three days after the failed coup of 11 march 1975, the newly created council of the revolution nationalised the portuguese banks, and the insurance companies followed the next day.",
       "status": "active",
       "terms": [
         "nationalisation of banks and insurance"
@@ -1954,6 +2065,7 @@
       "id": "nato-founding-1949",
       "kind": "event",
       "label": "Portugal signs the North Atlantic Treaty",
+      "lead": "portugal was one of the twelve states that signed the north atlantic treaty in washington on 4 april 1949, and the only signatory that was not a democracy.",
       "status": "active",
       "terms": [
         "portugal signs the north atlantic treaty"
@@ -1971,6 +2083,7 @@
       "id": "noite-sangrenta-1921",
       "kind": "event",
       "label": "Noite Sangrenta",
+      "lead": "a military rising in lisbon on 19 october 1921 overthrew the government of antonio granjo, and during the night that followed groups of armed men took granjo, the former president machado santos and other republican figures from custody and murdered them.",
       "status": "active",
       "terms": [
         "noite sangrenta",
@@ -1990,6 +2103,7 @@
       "id": "october-fires-2017",
       "kind": "event",
       "label": "The fires of October 2017",
+      "lead": "on 15 and 16 october 2017 fires across the centre and north killed about forty-five people in a day, in conditions the meteorological services had warned of.",
       "status": "active",
       "terms": [
         "the fires of october 2017"
@@ -2008,6 +2122,7 @@
       "id": "pedrogao-grande-fires-2017",
       "kind": "event",
       "label": "The Pedrógão Grande fires",
+      "lead": "a fire that began on the afternoon of 17 june 2017 near pedrogao grande killed 66 people, most of them caught in their cars on the roads out, and burned for a week.",
       "status": "active",
       "terms": [
         "the pedrogao grande fires"
@@ -2026,6 +2141,7 @@
       "id": "pimenta-de-castro-government-1915",
       "kind": "event",
       "label": "Pimenta de Castro's authoritarian government",
+      "lead": "general pimenta de castro was appointed head of government in january 1915, suspended parliament and governed by decree with the democrats excluded and monarchists readmitted to public life.",
       "status": "active",
       "terms": [
         "pimenta de castro's authoritarian government"
@@ -2043,6 +2159,7 @@
       "id": "portugal-backs-franco-1936",
       "kind": "event",
       "label": "Portugal supports the Nationalists in the Spanish Civil War",
+      "lead": "from the outbreak of the spanish war in july 1936, salazar's government supported the nationalist side: it allowed men and supplies to cross portuguese territory, gave the rebels a diplomatic and broadcasting platform, returned spanish republican refugees who crossed the border, and let some eight t",
       "status": "active",
       "terms": [
         "portugal supports the nationalists in the spanish civil war"
@@ -2060,6 +2177,7 @@
       "id": "portugal-e-o-futuro-1974",
       "kind": "event",
       "label": "Publication of Portugal e o Futuro",
+      "lead": "general antonio de spinola's portugal e o futuro was published on 22 february 1974 and argued that the colonial war could not be won by military means and that the answer was a federal political solution.",
       "status": "active",
       "terms": [
         "publication of portugal e o futuro"
@@ -2077,6 +2195,7 @@
       "id": "portuguese-regionalisation-referendum-1998",
       "kind": "event",
       "label": "Portuguese regionalisation referendum, 1998",
+      "lead": "on 8 november 1998 voters were asked two questions: whether administrative regions should be created at all, and whether they approved of the particular region drawn for the area where they were voting.",
       "status": "active",
       "terms": [
         "portuguese regionalisation referendum, 1998",
@@ -2095,6 +2214,7 @@
       "id": "republic-proclaimed-1910",
       "kind": "event",
       "label": "Proclamation of the Republic",
+      "lead": "a rising by republican civilians and units of the army and navy began in lisbon on the night of 3 october 1910 and the republic was proclaimed from the balcony of the city hall on the morning of the 5th, after the warships in the tagus had shelled the royal palace.",
       "status": "active",
       "terms": [
         "proclamation of the republic"
@@ -2112,6 +2232,7 @@
       "id": "revolt-14-may-1915",
       "kind": "event",
       "label": "The revolt of 14 May restores the Democrats",
+      "lead": "armed civilians, naval units and part of the lisbon garrison rose on 14 may 1915 against the government of general pimenta de castro, which had been appointed by president manuel de arriaga and had governed without parliament while readmitting monarchists to public life.",
       "status": "active",
       "terms": [
         "the revolt of 14 may restores the democrats"
@@ -2129,6 +2250,7 @@
       "id": "salazar-finance-minister-1928",
       "kind": "event",
       "label": "Salazar becomes Minister of Finance",
+      "lead": "antonio de oliveira salazar, a professor of finance at coimbra, accepted the finance portfolio in the military dictatorship's government on 27 april 1928, having refused it briefly in 1926, and on the condition that no ministry could spend without his agreement.",
       "status": "active",
       "terms": [
         "salazar becomes minister of finance"
@@ -2146,6 +2268,7 @@
       "id": "salazar-president-of-council-1932",
       "kind": "event",
       "label": "Salazar becomes President of the Council",
+      "lead": "salazar was appointed president of the council of ministers on 5 july 1932 by president oscar carmona, and held the office until september 1968.",
       "status": "active",
       "terms": [
         "salazar becomes president of the council"
@@ -2163,6 +2286,7 @@
       "id": "santa-maria-hijacking-1961",
       "kind": "event",
       "label": "The seizure of the liner Santa Maria",
+      "lead": "a group led by henrique galvao took over the portuguese liner santa maria in the caribbean on 22 january 1961 and held it for eleven days, drawing the world press to the portuguese dictatorship before surrendering at recife on 2 february.",
       "status": "active",
       "terms": [
         "the seizure of the liner santa maria"
@@ -2180,6 +2304,7 @@
       "id": "schengen-in-force-1995",
       "kind": "event",
       "label": "Portugal enters the Schengen area",
+      "lead": "checks at portugal's border with spain ended on 26 march 1995, when the schengen convention took effect for the first states to apply it.",
       "status": "active",
       "terms": [
         "portugal enters the schengen area"
@@ -2197,6 +2322,7 @@
       "id": "sidonio-pais-assassinated-1918",
       "kind": "event",
       "label": "Assassination of Sidónio Pais",
+      "lead": "sidonio pais was shot at the rossio station in lisbon on the evening of 14 december 1918 by jose julio da costa, and died the same night.",
       "status": "active",
       "terms": [
         "assassination of sidonio pais",
@@ -2216,6 +2342,7 @@
       "id": "sidonio-pais-coup-1917",
       "kind": "event",
       "label": "Sidónio Pais's coup",
+      "lead": "sidonio pais, an officer and former minister who had been portugal's envoy in berlin, rose against the democratic government on 5 december 1917 and took lisbon after three days of fighting; afonso costa was arrested and president bernardino machado deposed and exiled.",
       "status": "active",
       "terms": [
         "sidonio pais's coup"
@@ -2233,6 +2360,7 @@
       "id": "soares-elected-president-1986",
       "kind": "event",
       "label": "Mário Soares elected president",
+      "lead": "soares won the second round in february 1986, narrowly, becoming the first civilian head of state in sixty years and completing the return of the military to barracks begun by the revision of 1982.",
       "status": "active",
       "terms": [
         "mario soares elected president"
@@ -2250,6 +2378,7 @@
       "id": "spinola-resigns-1974",
       "kind": "event",
       "label": "Spínola resigns the presidency",
+      "lead": "antonio de spinola called on the \"silent majority\" to demonstrate in lisbon on 28 september 1974 in support of his own authority against the armed forces movement; barricades put up by left-wing parties and by military units loyal to the movement stopped the demonstration from happening.",
       "status": "active",
       "terms": [
         "spinola resigns the presidency"
@@ -2267,6 +2396,7 @@
       "id": "treaty-of-accession-1985",
       "kind": "event",
       "label": "Treaty of Accession 1985",
+      "lead": "the treaty by which portugal and spain joined the european communities was signed on 12 june 1985 — for portugal at the jeronimos monastery in lisbon — and came into force on 1 january 1986.",
       "status": "active",
       "terms": [
         "treaty of accession 1985",
@@ -2284,6 +2414,7 @@
       "id": "treaty-of-friendship-and-cooperation-between-spain-and-portugal",
       "kind": "event",
       "label": "Treaty of Friendship and Cooperation between Spain and Portugal",
+      "lead": "mario soares and adolfo suarez signed a treaty of friendship and cooperation between portugal and spain on 22 november 1977; portugal ratified it on 17 april 1978 and spain on 25 april.",
       "status": "active",
       "terms": [
         "treaty of friendship and cooperation between spain and portugal",
@@ -2302,6 +2433,7 @@
       "id": "treaty-of-windsor",
       "kind": "event",
       "label": "Treaty of Windsor",
+      "lead": "a secret anglo-portuguese declaration was signed in london on 14 october 1899 by lord salisbury and the marquis of soveral, and is called the treaty of windsor after the alliance of 1386 that it reaffirmed.",
       "status": "active",
       "terms": [
         "treaty of windsor",
@@ -2318,6 +2450,7 @@
       "id": "troika-bailout-2011",
       "kind": "event",
       "label": "Request for financial assistance",
+      "lead": "portugal requested external financial assistance on 6 april 2011, after the parliament had rejected the fourth austerity package and the government of jose socrates had resigned, and with borrowing costs at a level the treasury could not sustain.",
       "status": "active",
       "terms": [
         "request for financial assistance"
@@ -2335,6 +2468,7 @@
       "id": "troika-programme-ends-2014",
       "kind": "event",
       "label": "Exit from the adjustment programme",
+      "lead": "the three-year programme agreed with the european commission, the european central bank and the imf ended on 17 may 2014, and the government left it without the precautionary credit line that had been under discussion.",
       "status": "active",
       "terms": [
         "exit from the adjustment programme"
@@ -2352,6 +2486,7 @@
       "id": "un-admission-1955",
       "kind": "event",
       "label": "Portugal admitted to the United Nations",
+      "lead": "portugal joined the united nations on 14 december 1955, in a package of sixteen admissions agreed between the western and soviet blocs to unblock a membership question that had been frozen since 1946.",
       "status": "active",
       "terms": [
         "portugal admitted to the united nations"
@@ -2369,6 +2504,7 @@
       "id": "wiriyamu-massacre-1972",
       "kind": "event",
       "label": "The Wiriyamu massacre",
+      "lead": "portuguese troops killed a large number of villagers in the tete district of mozambique in december 1972.",
       "status": "active",
       "terms": [
         "the wiriyamu massacre"
@@ -2386,6 +2522,7 @@
       "id": "world-youth-day-2023",
       "kind": "event",
       "label": "World Youth Day in Lisbon",
+      "lead": "world youth day was held in lisbon from 1 to 6 august 2023, postponed from 2022 because of the pandemic, with the closing mass on ground cleared for it by the river.",
       "status": "active",
       "terms": [
         "world youth day in lisbon"

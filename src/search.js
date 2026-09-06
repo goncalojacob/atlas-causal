@@ -21,6 +21,31 @@ export function fold(text) {
   return String(text).normalize('NFD').replace(/\p{Diacritic}/gu, '').toLowerCase().trim();
 }
 
+// The rank a match in the summary's first sentence is given: worse than any
+// match in a name, whatever kind of match it is. A reader typing "carnation"
+// means the record called that before they mean the record whose opening
+// sentence happens to say the word, and the two must never be interleaved.
+export const LEAD_RANK = 3;
+
+// The first sentence of a summary, which is the only part of the prose the
+// index folds. Capped, because a summary written without a full stop is a
+// summary, not an error, and it must not put a thousand characters a record
+// into the shard.
+//
+// Why the first sentence and not the whole summary: the shard is linear in
+// the corpus and is the one precomputed thing in `data/index/` (Scale). Every
+// summary here is 145 KB of prose today and 8.8 MB at twenty thousand events;
+// the first sentences are 39 KB and 2.4 MB. Plan decision 5 took that trade,
+// and this is where it is taken.
+export const LEAD_CHARS = 300;
+
+export function firstSentence(text) {
+  if (typeof text !== 'string') return '';
+  const trimmed = text.trim();
+  const end = /^[\s\S]*?[.!?](?=\s|$)/.exec(trimmed);
+  return (end ? end[0] : trimmed).slice(0, LEAD_CHARS);
+}
+
 // 0 — the name starts with what was typed; 1 — a word inside it does;
 // 2 — it is in there somewhere. Anything else is not a match. Prefixes come
 // first because that is what a reader typing three letters means.
@@ -39,6 +64,12 @@ export function buildSearchIndex({ events = [], actors = [], places = [], source
   const entries = [];
   for (const event of events) {
     if (event.status && event.status !== 'active') continue;
+    // `names` since H5b: what else this event is called, where the title is
+    // the formal name — "Carnation Revolution" for a record filed under
+    // "25 April" (health review B, finding 17). Only the shard folds them; the
+    // spine does not carry them, because nothing draws them.
+    const names = Array.isArray(event.names) ? event.names : [];
+    const lead = fold(firstSentence(event.summary ?? ''));
     entries.push({
       kind: 'event',
       id: event.id,
@@ -46,7 +77,13 @@ export function buildSearchIndex({ events = [], actors = [], places = [], source
       detail: null,
       when: event.when,
       weight: event.weight ?? 0,
-      terms: [fold(event.title), ...articleTitles(event).map(fold)],
+      // The other names are shown beside the title the way an actor's are, so
+      // a reader who searched for one of them can see why this row answered.
+      ...(names.length ? { variants: names } : {}),
+      terms: [fold(event.title), ...names.map(fold), ...articleTitles(event).map(fold)],
+      // Searched at `LEAD_RANK`, below every name: the record called that,
+      // before the record whose first sentence happens to say the word.
+      ...(lead ? { lead } : {}),
     });
   }
   for (const actor of actors) {
@@ -94,6 +131,26 @@ export function buildSearchIndex({ events = [], actors = [], places = [], source
     });
   }
   return entries;
+}
+
+// The index the *shard* holds: the topology, plus the two fields it
+// deliberately drops — an event's `names` and its `summary` — read off the
+// records. Neither is in the spine and neither should be, because nothing
+// draws them and the spine is loaded whole by every page; the shard is where
+// the prose is allowed, and only the first sentence of it.
+//
+// Here rather than in `tools/build-index.mjs` so that the build and the test
+// that holds the shard to its promise merge the two the same way.
+export function searchIndexFor(topology, records = []) {
+  const text = new Map();
+  for (const record of records) {
+    if (record.kind !== 'event') continue;
+    text.set(record.id, { names: record.names ?? [], summary: record.summary ?? '' });
+  }
+  return buildSearchIndex({
+    ...topology,
+    events: (topology.events ?? []).map((e) => ({ ...e, ...text.get(e.id) })),
+  });
 }
 
 const startOf = (when) => {
@@ -154,6 +211,15 @@ export function search(entries, query, { limit = 8 } = {}) {
       if (r !== null && (best === null || r < best || (r === best && term.length < length))) {
         best = r;
         length = term.length;
+      }
+    }
+    // The summary's first sentence, and only when nothing the record is
+    // *called* matched: a name beats a mention, always.
+    if (best === null && entry.lead) {
+      const r = rank(entry.lead, folded);
+      if (r !== null) {
+        best = LEAD_RANK + r;
+        length = entry.lead.length;
       }
     }
     if (best === null) continue;

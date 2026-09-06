@@ -116,3 +116,34 @@ test('typing a word in a burst draws the list once, and Enter does not wait', { 
     );
   });
 });
+
+// H7: the box searches an event's other names and the first sentence of its
+// summary, below every name (health review B, finding 17). Nothing in this
+// dataset carries `names` yet — the import that fills them is still to run —
+// so what a browser can show today is the summary half, and that a match
+// there never outranks a match in something a record is actually called.
+test('the box finds an event by its summary, below anything called that', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await open(page, url('?from=1900&to=2030'),
+      'return document.querySelectorAll("#search-input").length > 0 && Boolean(document.querySelector(".timeline-area svg"));');
+
+    // "Otelo" is an actor's name and is also in the revolution's opening
+    // sentence: both are offered, and the actor is first.
+    await page.eval(type('otelo'));
+    await waitFor(page, `return Boolean(document.querySelector('[role="option"][data-id="carnation-revolution-1974"]'));`,
+      'the summary match to be offered');
+    const order = await page.eval('return [...document.querySelectorAll(\'[role="option"]\')].map((el) => el.dataset.id);');
+    assert.equal(order[0], 'otelo-saraiva-de-carvalho', 'the record called that comes first');
+    assert.ok(order.indexOf('carnation-revolution-1974') > 0, 'and the record that mentions it comes after');
+
+    // The years are beside every actor, which is what tells the two "Angola"s
+    // apart (health review B, finding 28).
+    await page.eval(type('angola'));
+    await waitFor(page, `return Boolean(document.querySelector('[role="option"][data-id="angola-under-portugal"]'));`,
+      'the two Angolas to be offered');
+    const years = await page.eval(`return [...document.querySelectorAll('[role="option"][data-kind="actor"]')]
+      .map((el) => el.querySelector('.when')?.textContent?.trim() ?? '');`);
+    assert.ok(years.length >= 2, 'the split created more than one Angola');
+    for (const text of years) assert.match(text, /\d{3,4}/, 'every actor row carries its years');
+  });
+});

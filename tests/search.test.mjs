@@ -3,7 +3,9 @@
 
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { fold, rank, buildSearchIndex, search, flatten } from '../src/search.js';
+import {
+  fold, rank, buildSearchIndex, search, flatten, firstSentence, LEAD_RANK, LEAD_CHARS,
+} from '../src/search.js';
 import { extent } from '../src/util/dates.js';
 
 const EVENTS = [
@@ -225,5 +227,89 @@ test('holding the best eight finds exactly what sorting all of them found', () =
       flatten(search(entries, 'a', { limit: 25 })).map((i) => i.id),
       flatten(sortEverything(entries, 'a', { limit: 25 })).map((i) => i.id),
     );
+  }
+});
+
+// ─── what H7 added: an event's other names, and its opening sentence ───────
+//
+// The atlas's most famous event is filed under "25 April" and nobody outside
+// Portugal calls it that (health review B, finding 17). `names` is what a
+// record says it is also called; the summary's first sentence is a last
+// resort, ranked below every name so that a record *called* a thing always
+// comes before a record that merely mentions it.
+
+const NAMED = [
+  {
+    id: 'carnation-revolution-1974',
+    title: '25 April',
+    names: ['Carnation Revolution', 'Revolução dos Cravos'],
+    summary: 'Units led by the Armed Forces Movement left barracks in the early hours and held Lisbon by the morning, two years before the constitution. The carnations put into gun barrels gave the day its name.',
+    when: { start: 1974, end: 1974 },
+    weight: 9,
+    status: 'active',
+  },
+  {
+    id: 'constitution-1976',
+    title: 'The 1976 constitution',
+    summary: 'The Constituent Assembly approved a text committing the state to a transition to socialism.',
+    when: { start: 1976, end: 1976 },
+    weight: 4,
+    status: 'active',
+  },
+];
+const named = buildSearchIndex({ events: NAMED });
+const found = (query) => flatten(search(named, query, { limit: 8 })).map((i) => i.id);
+
+test('the first sentence of a summary is folded, capped, and nothing beyond it', () => {
+  assert.equal(firstSentence('One. Two. Three.'), 'One.');
+  assert.equal(firstSentence('No full stop at all'), 'No full stop at all');
+  assert.equal(firstSentence('  Leading space. And more.'), 'Leading space.');
+  assert.equal(firstSentence('An abbreviation of 3.5 metres. Then more.'), 'An abbreviation of 3.5 metres.');
+  assert.equal(firstSentence(''), '');
+  assert.equal(firstSentence(null), '');
+  assert.equal(firstSentence(`${'a'.repeat(400)}. and more`).length, LEAD_CHARS);
+  // Only the first sentence is in the entry, so the second one's words are
+  // not searchable — which is the trade plan decision 5 took.
+  const entry = named.find((e) => e.id === 'carnation-revolution-1974');
+  assert.match(entry.lead, /^units led by the armed forces movement/);
+  assert.equal(entry.lead.includes('carnation'), false, 'the word is in the second sentence');
+});
+
+test('an event is found by any of its names, which are shown beside the title', () => {
+  assert.deepEqual(found('carnation revolution'), ['carnation-revolution-1974']);
+  assert.deepEqual(found('cravos'), ['carnation-revolution-1974'], 'diacritics stay optional');
+  assert.deepEqual(found('25 april'), ['carnation-revolution-1974'], 'and the title still finds it');
+  const entry = named.find((e) => e.id === 'carnation-revolution-1974');
+  assert.deepEqual(entry.variants, ['Carnation Revolution', 'Revolução dos Cravos']);
+  // An event with no other names carries no key at all, as its record does.
+  assert.equal('variants' in named.find((e) => e.id === 'constitution-1976'), false);
+});
+
+test('the summary answers when nothing is called that, and always ranks below a name', () => {
+  // Nothing is *called* "barracks"; one summary opens with the word.
+  assert.deepEqual(found('barracks'), ['carnation-revolution-1974']);
+  assert.deepEqual(found('constituent assembly'), ['constitution-1976']);
+  // Nothing in the second sentence is searchable.
+  assert.deepEqual(found('gun barrels'), []);
+
+  // A name beats a mention. "Constitution" is in one record's title and in
+  // the other's first sentence: the title comes first, whatever the weights.
+  const both = search(named, 'constitu', { limit: 8 });
+  assert.deepEqual(flatten(both).map((i) => i.id), ['constitution-1976', 'carnation-revolution-1974']);
+  const [first, second] = flatten(both);
+  assert.ok(first.rank < LEAD_RANK, 'a title match');
+  assert.ok(second.rank >= LEAD_RANK, 'and a summary match, below it');
+});
+
+// The two "Angola"s the M27 splits created are told apart by their years, and
+// the box has drawn them since the entry carried a `when` (health review B,
+// finding 28). Held here so that nothing quietly stops carrying it.
+test('an actor entry carries the years the box puts beside it', () => {
+  const salazar = index.find((e) => e.kind === 'actor' && e.id === 'salazar');
+  assert.deepEqual(salazar.when, { start: 1889, end: 1970 });
+  const angola = index.find((e) => e.kind === 'actor' && e.id === 'angola');
+  assert.deepEqual(angola.when, { start: 1886, end: null }, 'an open end is still an end to draw');
+  for (const entry of index.filter((e) => e.kind === 'actor')) {
+    assert.ok(entry.when && Number.isInteger(extent(entry.when).min), entry.id);
   }
 });
