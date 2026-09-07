@@ -12,6 +12,41 @@ hand; the import reads the ticks and nothing else.
 have a record here. An item that two queries return is listed once, under the
 first of them.
 
+**The rule these ticks follow.** M41a, 7 September 2026, under the delegation
+in `docs/m41-brief.md` and by the same rule as M40a: the choice is a rule, not
+a hand. The pool is the `pt2-*` rows only — the second Portuguese round, the
+classes that carry consequence, no election class — taken as the union of the
+three candidate runs of 5 and 6 September, because each of them was refused a
+different set of queries and no single run holds them all. Kept are the **150**
+candidates with the most sitelinks that this atlas does not already hold, with
+a floor of the **eight best of each decade** from the 1890s to the 2020s — 112
+rows — and the remaining 38 slots given to the highest sitelink counts anywhere
+in the pool. "Already held" means the Wikidata id is on a record under `data/`,
+or the English or Portuguese label matches a record's title or one of its
+aliases. Ties are broken by the item id, so the same files yield the same list
+twice. Nothing was struck or added by hand.
+
+The pool is 493 rows; 150 are ticked. What came out, by decade:
+1890s 8, 1900s 8, 1910s 8, 1920s 8, 1930s 8, 1940s 8, 1950s 8, 1960s 11, 1970s 18, 1980s 10, 1990s 20, 2000s 19, 2010s 8, 2020s 8. By family: `pt2-foundings-and-nationalisations` 95, `pt2-infrastructure` 41, `pt2-attacks-trials-and-disasters` 9, `pt2-crises` 2, `pt2-strikes-and-protests` 2, `pt2-laws-and-constitutions` 1.
+The lowest sitelink count kept is 1, which is a decade floor and not the
+top-up's cut; that cut stands at 8.
+
+**What that shape means, said plainly.** 95 of the 150 are company or
+institution foundings and 41 are infrastructure openings, because those are
+the two families Wikidata answers richly for Portugal; `pt2-treaties-and-agreements`
+returned nothing at all across the three runs and `pt2-laws-and-constitutions`
+returned one row. The decade floors for the 1890s to the 1930s are therefore
+filled with railway bridges, embassies and volunteer fire brigades at two to
+five sitelinks. The rule is what the owner delegated and it is what was
+followed; M41b is where a candidate that earns no honest edge is retracted,
+as M40b retracted 28 of M40a's 91.
+
+2 row(s) ticked here were carried by hand from the candidate file of the
+5 September run, under a query heading this run's file does not have: the
+query was refused on 6 September in both rounds, and dropping the row would
+have let a refusal decide the list. They are `Q2853075` and `Q60323`.
+
+
 The queries are in `data/imports/wikidata-seeds.json`; changing what is proposed is an edit
 to that file and another run, never an edit here.
 
@@ -2569,13 +2604,13 @@ to that file and another run, never an edit here.
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q18245126`](https://www.wikidata.org/wiki/Q18245126) | Constitution of Portugal of 1933 | Constituição portuguesa de 1933 | 1933-01-01 | constitution | 6 | — |
+| [x] | [`Q18245126`](https://www.wikidata.org/wiki/Q18245126) | Constitution of Portugal of 1933 | Constituição portuguesa de 1933 | 1933-01-01 | constitution | 6 | — |
 
 ### pt2-strikes-and-protests-1930s — 1
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q105663868`](https://www.wikidata.org/wiki/Q105663868) | Portuguese general strike of 1934 | Greve geral portuguesa de 1934 | 1934-01-18 | general strike | 3 | — |
+| [x] | [`Q105663868`](https://www.wikidata.org/wiki/Q105663868) | Portuguese general strike of 1934 | Greve geral portuguesa de 1934 | 1934-01-18 | general strike | 3 | — |
 
 ### pt2-crises-1930s — 1
 
@@ -2587,10 +2622,10 @@ to that file and another run, never an edit here.
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q954010`](https://www.wikidata.org/wiki/Q954010) | National Union | União Nacional | 1930-07-30 | political party | 21 | — |
-| [ ] | [`Q2562540`](https://www.wikidata.org/wiki/Q2562540) | National Syndicalists | Movimento Nacional-Sindicalista | 1932-01-01 | political party | 10 | — |
-| [ ] | [`Q2644063`](https://www.wikidata.org/wiki/Q2644063) | Douro and Port Wine Institute | Instituto dos Vinhos do Douro e do Porto | 1933-01-01 | government agency | 5 | — |
-| [ ] | [`Q10351044`](https://www.wikidata.org/wiki/Q10351044) | State Surveillance and Defense Police | Polícia de Vigilância e Defesa do Estado | 1933-01-01 | political police | 4 | — |
+| [x] | [`Q954010`](https://www.wikidata.org/wiki/Q954010) | National Union | União Nacional | 1930-07-30 | political party | 21 | — |
+| [x] | [`Q2562540`](https://www.wikidata.org/wiki/Q2562540) | National Syndicalists | Movimento Nacional-Sindicalista | 1932-01-01 | political party | 10 | — |
+| [x] | [`Q2644063`](https://www.wikidata.org/wiki/Q2644063) | Douro and Port Wine Institute | Instituto dos Vinhos do Douro e do Porto | 1933-01-01 | government agency | 5 | — |
+| [x] | [`Q10351044`](https://www.wikidata.org/wiki/Q10351044) | State Surveillance and Defense Police | Polícia de Vigilância e Defesa do Estado | 1933-01-01 | political police | 4 | — |
 | [ ] | [`Q91226605`](https://www.wikidata.org/wiki/Q91226605) | — | Associação Humanitária dos Bombeiros Voluntários de Seia | 1934-05-31 | volunteer fire department | 1 | — |
 | [ ] | [`Q91313715`](https://www.wikidata.org/wiki/Q91313715) | — | Associação Humanitária dos Bombeiros Voluntários de Montemor-o-Novo | 1930-08-10 | volunteer fire department | 1 | — |
 | [ ] | [`Q92758397`](https://www.wikidata.org/wiki/Q92758397) | Associação Humanitária de Bombeiros Voluntários de Agualva-Cacém | Associação Humanitária de Bombeiros Voluntários de Agualva-Cacém | 1931-11-13 | volunteer fire department | 1 | — |
@@ -2605,11 +2640,11 @@ to that file and another run, never an edit here.
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q10351328`](https://www.wikidata.org/wiki/Q10351328) | Ponte Rodoviaria da Regua | Ponte Rodoviária de Pêso da Régua | 1932-01-01 | road bridge | 4 | — |
+| [x] | [`Q10351328`](https://www.wikidata.org/wiki/Q10351328) | Ponte Rodoviaria da Regua | Ponte Rodoviária de Pêso da Régua | 1932-01-01 | road bridge | 4 | — |
 | [ ] | [`Q112623785`](https://www.wikidata.org/wiki/Q112623785) | Ponte de Odeceixe | Ponte de Odeceixe | 1936-01-01 | road bridge | 2 | — |
 | [ ] | [`Q115842492`](https://www.wikidata.org/wiki/Q115842492) | Ponte da Ribeira do Roxo | Ponte da Ribeira do Roxo | 1932-04-23 | road bridge | 2 | — |
 | [ ] | [`Q111918188`](https://www.wikidata.org/wiki/Q111918188) | — | Ponte sobre a Ribeira do Torgal | 1930-01-01 | road bridge | 2 | — |
-| [ ] | [`Q4135446`](https://www.wikidata.org/wiki/Q4135446) | Carvalhas railway bridge | Ponte das Carvalhas | 1932-03-20 | truss bridge | 2 | — |
+| [x] | [`Q4135446`](https://www.wikidata.org/wiki/Q4135446) | Carvalhas railway bridge | Ponte das Carvalhas | 1932-03-20 | truss bridge | 2 | — |
 | [ ] | [`Q120776529`](https://www.wikidata.org/wiki/Q120776529) | Santa Margarida do Sado Bridge | Ponte de Santa Margarida do Sado | 1938-01-01 | road bridge | 1 | — |
 
 ## pt2 1960s — 22 candidate(s), 0 already in the atlas
@@ -2618,14 +2653,14 @@ to that file and another run, never an edit here.
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q3182793`](https://www.wikidata.org/wiki/Q3182793) | 12-3 incident | Motim 1-2-3 | 1966-11-18 | riot | 10 | — |
+| [x] | [`Q3182793`](https://www.wikidata.org/wiki/Q3182793) | 12-3 incident | Motim 1-2-3 | 1966-11-18 | riot | 10 | — |
 | [ ] | [`Q4671129`](https://www.wikidata.org/wiki/Q4671129) | Academic Crisis | Crise académica de 1962 | 1962-01-01 | student protest | 3 | — |
 
 ### pt2-foundings-and-nationalisations-1960s — 8
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q613464`](https://www.wikidata.org/wiki/Q613464) | Portuguese Democratic Movement | Movimento Democrático Português / Comissão Democrática Eleitoral | 1969-01-01 | political party | 10 | — |
+| [x] | [`Q613464`](https://www.wikidata.org/wiki/Q613464) | Portuguese Democratic Movement | Movimento Democrático Português / Comissão Democrática Eleitoral | 1969-01-01 | political party | 10 | — |
 | [ ] | [`Q15296483`](https://www.wikidata.org/wiki/Q15296483) | General Directorate for Security | Direcção-Geral de Segurança | 1969-01-01 | political police | 5 | — |
 | [ ] | [`Q1660907`](https://www.wikidata.org/wiki/Q1660907) | Inapa | Inapa | 1965-01-01 | public company | 4 | — |
 | [ ] | [`Q25419371`](https://www.wikidata.org/wiki/Q25419371) | Instituto José de Figueiredo | Instituto José de Figueiredo | 1965-01-01 | government agency | 2 | — |
@@ -2638,18 +2673,27 @@ to that file and another run, never an edit here.
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q639161`](https://www.wikidata.org/wiki/Q639161) | Madeira Cristiano-Ronaldo Airport | Aeroporto da Madeira | 1964-07-18 | airport | 39 | — |
-| [ ] | [`Q667001`](https://www.wikidata.org/wiki/Q667001) | Faro Airport | Aeroporto Internacional de Faro | 1965-01-01 | airport | 38 | — |
-| [ ] | [`Q721152`](https://www.wikidata.org/wiki/Q721152) | 25 de Abril Bridge | Ponte 25 de Abril | 1966-08-06 | suspension bridge | 33 | — |
-| [ ] | [`Q1432424`](https://www.wikidata.org/wiki/Q1432424) | João Paulo II Airport | Aeroporto João Paulo II | 1969-01-01 | airport | 27 | — |
-| [ ] | [`Q1432485`](https://www.wikidata.org/wiki/Q1432485) | Porto Santo Airport | Aeroporto do Porto Santo | 1960-01-01 | cultural heritage | 25 | — |
-| [ ] | [`Q1785740`](https://www.wikidata.org/wiki/Q1785740) | Arrábida Bridge | Ponte da Arrábida | 1963-01-01 | cultural heritage | 13 | — |
-| [ ] | [`Q3375894`](https://www.wikidata.org/wiki/Q3375894) | Miranda Dam | Barragem de Miranda do Douro | 1960-01-01 | dam | 10 | — |
-| [ ] | [`Q3375842`](https://www.wikidata.org/wiki/Q3375842) | Régua Dam | Barragem da Régua | 1965-01-01 | gravity dam | 9 | — |
+| [x] | [`Q639161`](https://www.wikidata.org/wiki/Q639161) | Madeira Cristiano-Ronaldo Airport | Aeroporto da Madeira | 1964-07-18 | airport | 39 | — |
+| [x] | [`Q667001`](https://www.wikidata.org/wiki/Q667001) | Faro Airport | Aeroporto Internacional de Faro | 1965-01-01 | airport | 38 | — |
+| [x] | [`Q721152`](https://www.wikidata.org/wiki/Q721152) | 25 de Abril Bridge | Ponte 25 de Abril | 1966-08-06 | suspension bridge | 33 | — |
+| [x] | [`Q1432424`](https://www.wikidata.org/wiki/Q1432424) | João Paulo II Airport | Aeroporto João Paulo II | 1969-01-01 | airport | 27 | — |
+| [x] | [`Q1432485`](https://www.wikidata.org/wiki/Q1432485) | Porto Santo Airport | Aeroporto do Porto Santo | 1960-01-01 | cultural heritage | 25 | — |
+| [x] | [`Q1785740`](https://www.wikidata.org/wiki/Q1785740) | Arrábida Bridge | Ponte da Arrábida | 1963-01-01 | cultural heritage | 13 | — |
+| [x] | [`Q3375894`](https://www.wikidata.org/wiki/Q3375894) | Miranda Dam | Barragem de Miranda do Douro | 1960-01-01 | dam | 10 | — |
+| [x] | [`Q3375842`](https://www.wikidata.org/wiki/Q3375842) | Régua Dam | Barragem da Régua | 1965-01-01 | gravity dam | 9 | — |
 | [ ] | [`Q3375975`](https://www.wikidata.org/wiki/Q3375975) | Carrapatelo Dam | Barragem do Carrapatelo | 1964-01-01 | dam | 8 | — |
 | [ ] | [`Q3246881`](https://www.wikidata.org/wiki/Q3246881) | Barragem de Santa Clara | Barragem de Santa Clara | 1968-01-01 | cultural heritage | 5 | — |
 | [ ] | [`Q9649148`](https://www.wikidata.org/wiki/Q9649148) | Roxo Dam | Barragem do Roxo | 1968-06-30 | dam | 4 | — |
 | [ ] | [`Q121433970`](https://www.wikidata.org/wiki/Q121433970) | — | Ponte de Mértola sobre o Rio Guadiana | 1961-06-21 | beam bridge | 2 | — |
+
+### pt2-attacks-trials-and-disasters-1960s — 1
+
+Carried from the round of 5 September 2026, which is the only one this query
+answered; the runs of 6 September were both refused it.
+
+| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
+| :--: | --- | --- | --- | --- | --- | --: | :--: |
+| [x] | [`Q60323`](https://www.wikidata.org/wiki/Q60323) | Viasa Flight 897 | Voo VIASA 897 | 1961-05-30 | aviation accident | 11 | no |
 
 ## pt2 2010s — 55 candidate(s), 2 already in the atlas
 
@@ -2663,20 +2707,20 @@ to that file and another run, never an edit here.
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q3002776`](https://www.wikidata.org/wiki/Q3002776) | crisis portugal | Crise financeira em Portugal de 2010–Presente | 2010-01-01 | financial crisis | 9 | — |
+| [x] | [`Q3002776`](https://www.wikidata.org/wiki/Q3002776) | crisis portugal | Crise financeira em Portugal de 2010–Presente | 2010-01-01 | financial crisis | 9 | — |
 
 ### pt2-foundings-and-nationalisations-2010s — 40
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
 | [ ] | [`Q63645885`](https://www.wikidata.org/wiki/Q63645885) | Chega | CHEGA | 2019-04-09 | political party | 30 | yes |
-| [ ] | [`Q2054840`](https://www.wikidata.org/wiki/Q2054840) | People–Animals–Nature | Pessoas–Animais–Natureza | 2011-01-13 | political party | 15 | — |
-| [ ] | [`Q16947563`](https://www.wikidata.org/wiki/Q16947563) | LIVRE | LIVRE | 2014-03-19 | political party | 13 | — |
-| [ ] | [`Q46122950`](https://www.wikidata.org/wiki/Q46122950) | Liberal Initiative | Iniciativa Liberal | 2017-12-13 | political party | 13 | — |
-| [ ] | [`Q136331`](https://www.wikidata.org/wiki/Q136331) | NOS | NOS | 2014-01-01 | internet service provider | 10 | — |
-| [ ] | [`Q21224349`](https://www.wikidata.org/wiki/Q21224349) | XXI Constitutional Government of Portugal | XXI Governo Constitucional de Portugal | 2015-11-26 | Council of Ministers | 10 | — |
+| [x] | [`Q2054840`](https://www.wikidata.org/wiki/Q2054840) | People–Animals–Nature | Pessoas–Animais–Natureza | 2011-01-13 | political party | 15 | — |
+| [x] | [`Q16947563`](https://www.wikidata.org/wiki/Q16947563) | LIVRE | LIVRE | 2014-03-19 | political party | 13 | — |
+| [x] | [`Q46122950`](https://www.wikidata.org/wiki/Q46122950) | Liberal Initiative | Iniciativa Liberal | 2017-12-13 | political party | 13 | — |
+| [x] | [`Q136331`](https://www.wikidata.org/wiki/Q136331) | NOS | NOS | 2014-01-01 | internet service provider | 10 | — |
+| [x] | [`Q21224349`](https://www.wikidata.org/wiki/Q21224349) | XXI Constitutional Government of Portugal | XXI Governo Constitucional de Portugal | 2015-11-26 | Council of Ministers | 10 | — |
 | [ ] | [`Q17488861`](https://www.wikidata.org/wiki/Q17488861) | Novo Banco | Novo Banco | 2014-08-04 | bank | 8 | yes |
-| [ ] | [`Q1626916`](https://www.wikidata.org/wiki/Q1626916) | XIX Constitutional Government of Portugal | XIX Governo Constitucional de Portugal | 2011-06-21 | Council of Ministers | 8 | — |
+| [x] | [`Q1626916`](https://www.wikidata.org/wiki/Q1626916) | XIX Constitutional Government of Portugal | XIX Governo Constitucional de Portugal | 2011-06-21 | Council of Ministers | 8 | — |
 | [ ] | [`Q71014092`](https://www.wikidata.org/wiki/Q71014092) | XXII Constitutional Government of Portugal | XXII Governo Constitucional de Portugal | 2019-10-26 | Council of Ministers | 8 | — |
 | [ ] | [`Q19694667`](https://www.wikidata.org/wiki/Q19694667) | Together for the People | Juntos pelo Povo | 2015-01-27 | political party | 7 | — |
 | [ ] | [`Q65164025`](https://www.wikidata.org/wiki/Q65164025) | React–Include–Recycle | Reagir Incluir Reciclar | 2019-05-30 | political party | 6 | — |
@@ -2730,7 +2774,7 @@ to that file and another run, never an edit here.
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q61000232`](https://www.wikidata.org/wiki/Q61000232) | Air Astana Flight 1388 | Voo Air Astana KC1388 | 2018-11-11 | aviation accident | 14 | — |
+| [x] | [`Q61000232`](https://www.wikidata.org/wiki/Q61000232) | Air Astana Flight 1388 | Voo Air Astana KC1388 | 2018-11-11 | aviation accident | 14 | — |
 | [ ] | [`Q18207303`](https://www.wikidata.org/wiki/Q18207303) | Alfarelos train crash | Desastre Ferroviário de Alfarelos | 2013-01-21 | railway accident | 2 | — |
 
 ## pt2 2020s — 28 candidate(s), 0 already in the atlas
@@ -2747,11 +2791,11 @@ to that file and another run, never an edit here.
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q123509897`](https://www.wikidata.org/wiki/Q123509897) | XXIV Constitutional Government of Portugal | XXIV Governo Constitucional de Portugal | 2024-04-02 | Council of Ministers | 10 | — |
-| [ ] | [`Q110819776`](https://www.wikidata.org/wiki/Q110819776) | XXIII Constitutional Government of Portugal | XXIII Governo Constitucional de Portugal | 2022-03-30 | Council of Ministers | 8 | — |
-| [ ] | [`Q134130064`](https://www.wikidata.org/wiki/Q134130064) | XXV Constitutional Government of Portugal | XXV Governo Constitucional de Portugal | 2025-06-05 | Council of Ministers | 7 | — |
-| [ ] | [`Q97303443`](https://www.wikidata.org/wiki/Q97303443) | Volt Portugal | Volt Portugal | 2020-06-25 | political party | 4 | — |
-| [ ] | [`Q133273478`](https://www.wikidata.org/wiki/Q133273478) | Social Liberal Party | Partido Liberal Social | 2025-03-11 | political party | 3 | — |
+| [x] | [`Q123509897`](https://www.wikidata.org/wiki/Q123509897) | XXIV Constitutional Government of Portugal | XXIV Governo Constitucional de Portugal | 2024-04-02 | Council of Ministers | 10 | — |
+| [x] | [`Q110819776`](https://www.wikidata.org/wiki/Q110819776) | XXIII Constitutional Government of Portugal | XXIII Governo Constitucional de Portugal | 2022-03-30 | Council of Ministers | 8 | — |
+| [x] | [`Q134130064`](https://www.wikidata.org/wiki/Q134130064) | XXV Constitutional Government of Portugal | XXV Governo Constitucional de Portugal | 2025-06-05 | Council of Ministers | 7 | — |
+| [x] | [`Q97303443`](https://www.wikidata.org/wiki/Q97303443) | Volt Portugal | Volt Portugal | 2020-06-25 | political party | 4 | — |
+| [x] | [`Q133273478`](https://www.wikidata.org/wiki/Q133273478) | Social Liberal Party | Partido Liberal Social | 2025-03-11 | political party | 3 | — |
 | [ ] | [`Q111611112`](https://www.wikidata.org/wiki/Q111611112) | Carris Metropolitana | Carris Metropolitana | 2022-01-01 | transport company | 2 | — |
 | [ ] | [`Q106547799`](https://www.wikidata.org/wiki/Q106547799) | Agency for Integration, Migration and Asylum | Agência para a Integração, Migrações e Asilo | 2023-01-01 | government agency | 2 | — |
 | [ ] | [`Q126949971`](https://www.wikidata.org/wiki/Q126949971) | Mensagem de Lisboa | Mensagem de Lisboa | 2020-01-01 | business | 2 | — |
@@ -2771,7 +2815,7 @@ to that file and another run, never an edit here.
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q100166601`](https://www.wikidata.org/wiki/Q100166601) | 516 Arouca | Ponte 516 Arouca | 2021-04-30 | suspension bridge | 16 | — |
+| [x] | [`Q100166601`](https://www.wikidata.org/wiki/Q100166601) | 516 Arouca | Ponte 516 Arouca | 2021-04-30 | suspension bridge | 16 | — |
 | [ ] | [`Q118213963`](https://www.wikidata.org/wiki/Q118213963) | Ponte Hintze Ribeiro | Ponte Hintze Ribeiro | 2022-05-04 | truss bridge | 2 | — |
 | [ ] | [`Q131414381`](https://www.wikidata.org/wiki/Q131414381) | Barragem do Pico da Urze | Barragem do Pico da Urze | 2020-01-01 | reservoir | 1 | — |
 
@@ -2779,8 +2823,8 @@ to that file and another run, never an edit here.
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q136090574`](https://www.wikidata.org/wiki/Q136090574) | 2025 Ascensor da Glória derailment | acidente do Elevador da Glória em 2025 | 2025-09-03 | derailment | 19 | — |
-| [ ] | [`Q97957820`](https://www.wikidata.org/wiki/Q97957820) | Soure train crash | Acidente ferroviário de Soure | 2020-07-31 | railway accident | 3 | — |
+| [x] | [`Q136090574`](https://www.wikidata.org/wiki/Q136090574) | 2025 Ascensor da Glória derailment | acidente do Elevador da Glória em 2025 | 2025-09-03 | derailment | 19 | — |
+| [x] | [`Q97957820`](https://www.wikidata.org/wiki/Q97957820) | Soure train crash | Acidente ferroviário de Soure | 2020-07-31 | railway accident | 3 | — |
 | [ ] | [`Q105532824`](https://www.wikidata.org/wiki/Q105532824) | Murder of Ihor Humenyuk | Homicídio de Ihor Humenyuk | 2020-03-12 | homicide | 1 | — |
 
 ## pt2 1970s — 52 candidate(s), 3 already in the atlas
@@ -2789,7 +2833,7 @@ to that file and another run, never an edit here.
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q2583734`](https://www.wikidata.org/wiki/Q2583734) | Indonesian invasion of East Timor | Invasão indonésia de Timor-Leste | 1975-12-07 | invasion | 24 | — |
+| [x] | [`Q2583734`](https://www.wikidata.org/wiki/Q2583734) | Indonesian invasion of East Timor | Invasão indonésia de Timor-Leste | 1975-12-07 | invasion | 24 | — |
 | [ ] | [`Q5177976`](https://www.wikidata.org/wiki/Q5177976) | Coup of 25 November 1975 | Golpe de 25 de Novembro de 1975 | 1975-11-25 | attempted coup d'état | 5 | — |
 | [ ] | [`Q18480997`](https://www.wikidata.org/wiki/Q18480997) | March 1975 Portuguese coup d'état attempt | Golpe de 11 de Março de 1975 | 1975-03-11 | attempted coup d'état | 3 | — |
 | [ ] | [`Q139594621`](https://www.wikidata.org/wiki/Q139594621) | — | Tentativa de golpe de Estado em São Tomé e Príncipe em 1978 | 1978-03-01 | attempted coup d'état | 1 | — |
@@ -2802,19 +2846,19 @@ to that file and another run, never an edit here.
 | [ ] | [`Q847263`](https://www.wikidata.org/wiki/Q847263) | Socialist Party | Partido Socialista | 1973-04-19 | political party | 42 | yes |
 | [ ] | [`Q595575`](https://www.wikidata.org/wiki/Q595575) | Social Democratic Party | Partido Social Democrata | 1974-05-06 | political party | 39 | yes |
 | [ ] | [`Q1054298`](https://www.wikidata.org/wiki/Q1054298) | CDS - Partido Popular | CDS - Partido Popular | 1974-07-19 | political party | 21 | yes |
-| [ ] | [`Q29673`](https://www.wikidata.org/wiki/Q29673) | University of Minho | Universidade do Minho | 1973-08-11 | open-access publisher | 18 | — |
-| [ ] | [`Q29671`](https://www.wikidata.org/wiki/Q29671) | University of Aveiro | Universidade de Aveiro | 1973-01-01 | public university | 18 | — |
-| [ ] | [`Q1341222`](https://www.wikidata.org/wiki/Q1341222) | Energias de Portugal | Energias de Portugal | 1976-01-01 | business | 15 | — |
-| [ ] | [`Q1461089`](https://www.wikidata.org/wiki/Q1461089) | University of the Azores | Universidade dos Açores | 1976-01-01 | public university | 15 | — |
-| [ ] | [`Q1851550`](https://www.wikidata.org/wiki/Q1851550) | People's Monarchist Party | Partido Popular Monárquico | 1974-05-23 | political party | 14 | — |
-| [ ] | [`Q2054628`](https://www.wikidata.org/wiki/Q2054628) | Portuguese Workers' Communist Party/Re-Organized Movement of the Party of the Proletariat | PCTP/MRPP | 1970-01-01 | political party | 12 | — |
-| [ ] | [`Q740205`](https://www.wikidata.org/wiki/Q740205) | Government of Portugal | Governo da República Portuguesa | 1974-01-01 | executive branch | 12 | — |
-| [ ] | [`Q381415`](https://www.wikidata.org/wiki/Q381415) | Aerocondor | Aerocondor | 1975-01-01 | airline | 12 | — |
-| [ ] | [`Q1972136`](https://www.wikidata.org/wiki/Q1972136) | University of Algarve | Universidade do Algarve | 1976-01-01 | open-access publisher | 12 | — |
-| [ ] | [`Q2054807`](https://www.wikidata.org/wiki/Q2054807) | Revolutionary Socialist Party | PSR | 1979-04-02 | political party | 11 | — |
-| [ ] | [`Q2119074`](https://www.wikidata.org/wiki/Q2119074) | People's Democratic Union | União Democrática Popular (UDP) | 1974-12-16 | political party | 11 | — |
-| [ ] | [`Q260897`](https://www.wikidata.org/wiki/Q260897) | Azores Liberation Front | Frente de Libertação dos Açores | 1975-01-01 | political party | 10 | — |
-| [ ] | [`Q587719`](https://www.wikidata.org/wiki/Q587719) | Brisa – Auto-estradas de Portugal | Brisa | 1972-01-01 | business | 10 | — |
+| [x] | [`Q29673`](https://www.wikidata.org/wiki/Q29673) | University of Minho | Universidade do Minho | 1973-08-11 | open-access publisher | 18 | — |
+| [x] | [`Q29671`](https://www.wikidata.org/wiki/Q29671) | University of Aveiro | Universidade de Aveiro | 1973-01-01 | public university | 18 | — |
+| [x] | [`Q1341222`](https://www.wikidata.org/wiki/Q1341222) | Energias de Portugal | Energias de Portugal | 1976-01-01 | business | 15 | — |
+| [x] | [`Q1461089`](https://www.wikidata.org/wiki/Q1461089) | University of the Azores | Universidade dos Açores | 1976-01-01 | public university | 15 | — |
+| [x] | [`Q1851550`](https://www.wikidata.org/wiki/Q1851550) | People's Monarchist Party | Partido Popular Monárquico | 1974-05-23 | political party | 14 | — |
+| [x] | [`Q2054628`](https://www.wikidata.org/wiki/Q2054628) | Portuguese Workers' Communist Party/Re-Organized Movement of the Party of the Proletariat | PCTP/MRPP | 1970-01-01 | political party | 12 | — |
+| [x] | [`Q740205`](https://www.wikidata.org/wiki/Q740205) | Government of Portugal | Governo da República Portuguesa | 1974-01-01 | executive branch | 12 | — |
+| [x] | [`Q381415`](https://www.wikidata.org/wiki/Q381415) | Aerocondor | Aerocondor | 1975-01-01 | airline | 12 | — |
+| [x] | [`Q1972136`](https://www.wikidata.org/wiki/Q1972136) | University of Algarve | Universidade do Algarve | 1976-01-01 | open-access publisher | 12 | — |
+| [x] | [`Q2054807`](https://www.wikidata.org/wiki/Q2054807) | Revolutionary Socialist Party | PSR | 1979-04-02 | political party | 11 | — |
+| [x] | [`Q2119074`](https://www.wikidata.org/wiki/Q2119074) | People's Democratic Union | União Democrática Popular (UDP) | 1974-12-16 | political party | 11 | — |
+| [x] | [`Q260897`](https://www.wikidata.org/wiki/Q260897) | Azores Liberation Front | Frente de Libertação dos Açores | 1975-01-01 | political party | 10 | — |
+| [x] | [`Q587719`](https://www.wikidata.org/wiki/Q587719) | Brisa – Auto-estradas de Portugal | Brisa | 1972-01-01 | business | 10 | — |
 | [ ] | [`Q1332539`](https://www.wikidata.org/wiki/Q1332539) | Workers Party of Socialist Unity | Partido Operário de Unidade Socialista | 1979-08-23 | political party | 7 | — |
 | [ ] | [`Q1819658`](https://www.wikidata.org/wiki/Q1819658) | Democratic Party of the Atlantic | Partido Democrático do Atlântico | 1979-11-05 | political party | 7 | — |
 | [ ] | [`Q3112915`](https://www.wikidata.org/wiki/Q3112915) | Leftwing Union for the Socialist Democracy | União da Esquerda para a Democracia Socialista | 1979-08-20 | political party | 5 | — |
@@ -2844,13 +2888,22 @@ to that file and another run, never an edit here.
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q1431519`](https://www.wikidata.org/wiki/Q1431519) | Horta Airport | Aeroporto da Horta | 1971-01-01 | airport | 18 | — |
-| [ ] | [`Q9648934`](https://www.wikidata.org/wiki/Q9648934) | Aguieira Dam | Barragem da Aguieira | 1972-01-01 | bridge | 9 | — |
-| [ ] | [`Q3359757`](https://www.wikidata.org/wiki/Q3359757) | Valeira Dam | Barragem da Valeira | 1971-01-01 | cultural heritage | 9 | — |
+| [x] | [`Q1431519`](https://www.wikidata.org/wiki/Q1431519) | Horta Airport | Aeroporto da Horta | 1971-01-01 | airport | 18 | — |
+| [x] | [`Q9648934`](https://www.wikidata.org/wiki/Q9648934) | Aguieira Dam | Barragem da Aguieira | 1972-01-01 | bridge | 9 | — |
+| [x] | [`Q3359757`](https://www.wikidata.org/wiki/Q3359757) | Valeira Dam | Barragem da Valeira | 1971-01-01 | cultural heritage | 9 | — |
 | [ ] | [`Q3375955`](https://www.wikidata.org/wiki/Q3375955) | Crestuma-Lever Dam | Barragem de Crestuma-Lever | 1976-01-01 | gravity dam | 8 | — |
 | [ ] | [`Q9649056`](https://www.wikidata.org/wiki/Q9649056) | Barragem de Torrão | Barragem de Torrão | 1979-01-01 | pumped-storage power station | 5 | — |
 | [ ] | [`Q110864612`](https://www.wikidata.org/wiki/Q110864612) | Ponte de Vila Nova de Milfontes | Ponte de Vila Nova de Milfontes | 1978-01-01 | road bridge | 2 | — |
 | [ ] | [`Q25419197`](https://www.wikidata.org/wiki/Q25419197) | — | Barragem de Covas | 1976-01-01 | embankment dam | 1 | — |
+
+### pt2-attacks-trials-and-disasters-1970s — 1
+
+Carried from the round of 5 September 2026, which is the only one this query
+answered; the runs of 6 September were both refused it.
+
+| keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
+| :--: | --- | --- | --- | --- | --- | --: | :--: |
+| [x] | [`Q2853075`](https://www.wikidata.org/wiki/Q2853075) | TAP Portugal Flight 425 | Voo TAP Portugal 425 | 1977-11-19 | aviation accident | 16 | no |
 
 ## pt2 1890s — 16 candidate(s), 0 already in the atlas
 
@@ -2858,11 +2911,11 @@ to that file and another run, never an edit here.
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q17014172`](https://www.wikidata.org/wiki/Q17014172) | Polícia Judiciária | Polícia Judiciária | 1893-01-01 | law enforcement agency | 5 | — |
-| [ ] | [`Q555837`](https://www.wikidata.org/wiki/Q555837) | Caminhos de Ferro do Estado | Caminhos de Ferro do Estado | 1899-01-01 | railway company | 3 | — |
-| [ ] | [`Q16502097`](https://www.wikidata.org/wiki/Q16502097) | Bombeiros Voluntários de Soure | Associação Humanitária dos Bombeiros Voluntários do Concelho de Soure | 1890-11-19 | volunteer fire department | 2 | — |
-| [ ] | [`Q10266748`](https://www.wikidata.org/wiki/Q10266748) | Directorate-General of Health | Direção-Geral da Saúde | 1899-01-01 | government agency | 2 | — |
-| [ ] | [`Q9661188`](https://www.wikidata.org/wiki/Q9661188) | — | Bombeiros Voluntários de Paço de Arcos | 1893-10-30 | volunteer fire department | 1 | — |
+| [x] | [`Q17014172`](https://www.wikidata.org/wiki/Q17014172) | Polícia Judiciária | Polícia Judiciária | 1893-01-01 | law enforcement agency | 5 | — |
+| [x] | [`Q555837`](https://www.wikidata.org/wiki/Q555837) | Caminhos de Ferro do Estado | Caminhos de Ferro do Estado | 1899-01-01 | railway company | 3 | — |
+| [x] | [`Q16502097`](https://www.wikidata.org/wiki/Q16502097) | Bombeiros Voluntários de Soure | Associação Humanitária dos Bombeiros Voluntários do Concelho de Soure | 1890-11-19 | volunteer fire department | 2 | — |
+| [x] | [`Q10266748`](https://www.wikidata.org/wiki/Q10266748) | Directorate-General of Health | Direção-Geral da Saúde | 1899-01-01 | government agency | 2 | — |
+| [x] | [`Q9661188`](https://www.wikidata.org/wiki/Q9661188) | — | Bombeiros Voluntários de Paço de Arcos | 1893-10-30 | volunteer fire department | 1 | — |
 | [ ] | [`Q91665044`](https://www.wikidata.org/wiki/Q91665044) | Associação Humanitária dos Bombeiros Voluntários de Vila Real – Cruz Verde | Associação Humanitária dos Bombeiros Voluntários de Vila Real – Cruz Verde | 1891-01-01 | volunteer fire department | 1 | — |
 | [ ] | [`Q92090203`](https://www.wikidata.org/wiki/Q92090203) | Associação Humanitária dos Bombeiros Voluntários do Sul e Sueste | Associação Humanitária dos Bombeiros Voluntários do Sul e Sueste | 1894-07-23 | volunteer fire department | 1 | — |
 | [ ] | [`Q92278324`](https://www.wikidata.org/wiki/Q92278324) | — | Associação Humanitária de Bombeiros Voluntários da Marinha Grande | 1899-10-28 | volunteer fire department | 1 | — |
@@ -2873,9 +2926,9 @@ to that file and another run, never an edit here.
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q7228164`](https://www.wikidata.org/wiki/Q7228164) | Ponte metálica de Fão | Ponte de Fão | 1892-08-07 | road bridge | 3 | — |
-| [ ] | [`Q25422468`](https://www.wikidata.org/wiki/Q25422468) | Alferrarede railway bridge | Ponte Ferroviária de Alferrarede | 1891-09-06 | railway bridge | 2 | — |
-| [ ] | [`Q110630884`](https://www.wikidata.org/wiki/Q110630884) | Ponte sobre o Rio Mira | Ponte sobre o Rio Mira | 1891-08-01 | road bridge | 2 | — |
+| [x] | [`Q7228164`](https://www.wikidata.org/wiki/Q7228164) | Ponte metálica de Fão | Ponte de Fão | 1892-08-07 | road bridge | 3 | — |
+| [x] | [`Q25422468`](https://www.wikidata.org/wiki/Q25422468) | Alferrarede railway bridge | Ponte Ferroviária de Alferrarede | 1891-09-06 | railway bridge | 2 | — |
+| [x] | [`Q110630884`](https://www.wikidata.org/wiki/Q110630884) | Ponte sobre o Rio Mira | Ponte sobre o Rio Mira | 1891-08-01 | road bridge | 2 | — |
 | [ ] | [`Q122900970`](https://www.wikidata.org/wiki/Q122900970) | Tua railway bridge | Ponte do Tua | 1893-01-01 | railway bridge | 1 | — |
 | [ ] | [`Q106921084`](https://www.wikidata.org/wiki/Q106921084) | — | Ponte sobre a Ribeira Maria Delgada | 1890-01-01 | road bridge | 1 | — |
 | [ ] | [`Q123655173`](https://www.wikidata.org/wiki/Q123655173) | — | Ponte de Ferro sobre o rio Zêzere | 1892-01-01 | road bridge | 1 | — |
@@ -2886,8 +2939,8 @@ to that file and another run, never an edit here.
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q75660`](https://www.wikidata.org/wiki/Q75660) | Liberal Regenerator Party | Partido Regenerador Liberal | 1901-05-16 | political party | 4 | — |
-| [ ] | [`Q10345652`](https://www.wikidata.org/wiki/Q10345652) | — | Partido Nacionalista (Portugal) | 1903-01-01 | political party | 3 | — |
+| [x] | [`Q75660`](https://www.wikidata.org/wiki/Q75660) | Liberal Regenerator Party | Partido Regenerador Liberal | 1901-05-16 | political party | 4 | — |
+| [x] | [`Q10345652`](https://www.wikidata.org/wiki/Q10345652) | — | Partido Nacionalista (Portugal) | 1903-01-01 | political party | 3 | — |
 | [ ] | [`Q10267209`](https://www.wikidata.org/wiki/Q10267209) | Progressive Dissidence | Dissidência Progressista | 1905-01-01 | political party | 2 | — |
 | [ ] | [`Q93207085`](https://www.wikidata.org/wiki/Q93207085) | — | Associação Humanitária dos Bombeiros Voluntários da Amadora | 1905-01-10 | volunteer fire department | 1 | — |
 
@@ -2895,12 +2948,12 @@ to that file and another run, never an edit here.
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q1504273`](https://www.wikidata.org/wiki/Q1504273) | Roman Bridge of Chaves | Ponte de Trajano | 1900-01-01 | cultural heritage | 11 | — |
-| [ ] | [`Q3331246`](https://www.wikidata.org/wiki/Q3331246) | Pocinho Bridge | Ponte do Pocinho | 1903-11-01 | road-rail bridge | 4 | — |
-| [ ] | [`Q3179616`](https://www.wikidata.org/wiki/Q3179616) | Ponte Ferroviária de Montemor-o-Novo | Ponte Ferroviária de Montemor-o-Novo | 1909-09-02 | truss bridge | 3 | — |
-| [ ] | [`Q5396166`](https://www.wikidata.org/wiki/Q5396166) | Dona Amélia Bridge | Ponte Rainha D. Amélia | 1903-01-01 | truss bridge | 3 | — |
-| [ ] | [`Q17390261`](https://www.wikidata.org/wiki/Q17390261) | Ponte de Torre de Dona Chama | Ponte de Pedra sobre o Rio Tuela | 1900-01-01 | cultural heritage | 3 | — |
-| [ ] | [`Q66170306`](https://www.wikidata.org/wiki/Q66170306) | Gustave Eiffel bridge in Pinhão | Ponte Gustave Eiffel, no Pinhão | 1903-01-01 | road bridge | 3 | — |
+| [x] | [`Q1504273`](https://www.wikidata.org/wiki/Q1504273) | Roman Bridge of Chaves | Ponte de Trajano | 1900-01-01 | cultural heritage | 11 | — |
+| [x] | [`Q3331246`](https://www.wikidata.org/wiki/Q3331246) | Pocinho Bridge | Ponte do Pocinho | 1903-11-01 | road-rail bridge | 4 | — |
+| [x] | [`Q3179616`](https://www.wikidata.org/wiki/Q3179616) | Ponte Ferroviária de Montemor-o-Novo | Ponte Ferroviária de Montemor-o-Novo | 1909-09-02 | truss bridge | 3 | — |
+| [x] | [`Q5396166`](https://www.wikidata.org/wiki/Q5396166) | Dona Amélia Bridge | Ponte Rainha D. Amélia | 1903-01-01 | truss bridge | 3 | — |
+| [x] | [`Q17390261`](https://www.wikidata.org/wiki/Q17390261) | Ponte de Torre de Dona Chama | Ponte de Pedra sobre o Rio Tuela | 1900-01-01 | cultural heritage | 3 | — |
+| [x] | [`Q66170306`](https://www.wikidata.org/wiki/Q66170306) | Gustave Eiffel bridge in Pinhão | Ponte Gustave Eiffel, no Pinhão | 1903-01-01 | road bridge | 3 | — |
 | [ ] | [`Q18464303`](https://www.wikidata.org/wiki/Q18464303) | Ponte de Ponte da Barca | Ponte de Ponte da Barca | 1900-01-01 | bridge | 2 | — |
 | [ ] | [`Q74473900`](https://www.wikidata.org/wiki/Q74473900) | Ponte de Parada | Ponte de Parada | 1909-01-01 | bridge | 2 | — |
 | [ ] | [`Q10351348`](https://www.wikidata.org/wiki/Q10351348) | Ponte Isidro Reis | Ponte Isidro dos Reis | 1909-01-01 | truss bridge | 2 | — |
@@ -2919,15 +2972,15 @@ to that file and another run, never an edit here.
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q1422903`](https://www.wikidata.org/wiki/Q1422903) | University of Porto | Universidade do Porto | 1911-01-01 | organization | 31 | — |
-| [ ] | [`Q1280906`](https://www.wikidata.org/wiki/Q1280906) | National Republican Guard | Guarda Nacional Republicana | 1911-05-03 | gendarmerie | 21 | — |
-| [ ] | [`Q1783440`](https://www.wikidata.org/wiki/Q1783440) | Democratic Party | Partido Democrático | 1910-01-01 | political party | 9 | — |
-| [ ] | [`Q1412194`](https://www.wikidata.org/wiki/Q1412194) | National Institute of Statistics | Instituto Nacional de Estatística | 1911-01-01 | database | 9 | — |
-| [ ] | [`Q1720273`](https://www.wikidata.org/wiki/Q1720273) | Evolutionist Party | Partido Republicano Evolucionista | 1912-02-24 | political party | 8 | — |
-| [ ] | [`Q1513692`](https://www.wikidata.org/wiki/Q1513692) | National Republican Party | Partido Nacional Republicano | 1918-01-01 | political party | 7 | — |
-| [ ] | [`Q2054660`](https://www.wikidata.org/wiki/Q2054660) | Republican Liberal Party | Partido Liberal Republicano | 1919-01-01 | political party | 5 | — |
+| [x] | [`Q1422903`](https://www.wikidata.org/wiki/Q1422903) | University of Porto | Universidade do Porto | 1911-01-01 | organization | 31 | — |
+| [x] | [`Q1280906`](https://www.wikidata.org/wiki/Q1280906) | National Republican Guard | Guarda Nacional Republicana | 1911-05-03 | gendarmerie | 21 | — |
+| [x] | [`Q1783440`](https://www.wikidata.org/wiki/Q1783440) | Democratic Party | Partido Democrático | 1910-01-01 | political party | 9 | — |
+| [x] | [`Q1412194`](https://www.wikidata.org/wiki/Q1412194) | National Institute of Statistics | Instituto Nacional de Estatística | 1911-01-01 | database | 9 | — |
+| [x] | [`Q1720273`](https://www.wikidata.org/wiki/Q1720273) | Evolutionist Party | Partido Republicano Evolucionista | 1912-02-24 | political party | 8 | — |
+| [x] | [`Q1513692`](https://www.wikidata.org/wiki/Q1513692) | National Republican Party | Partido Nacional Republicano | 1918-01-01 | political party | 7 | — |
+| [x] | [`Q2054660`](https://www.wikidata.org/wiki/Q2054660) | Republican Liberal Party | Partido Liberal Republicano | 1919-01-01 | political party | 5 | — |
 | [ ] | [`Q18243216`](https://www.wikidata.org/wiki/Q18243216) | Catholic Centre Party | Centro Católico Português | 1915-01-01 | political party | 5 | — |
-| [ ] | [`Q4294674`](https://www.wikidata.org/wiki/Q4294674) | Ministry of Agriculture, Rural Development and Fisheries | Ministério da Agricultura | 1918-01-01 | ministry of agriculture | 5 | — |
+| [x] | [`Q4294674`](https://www.wikidata.org/wiki/Q4294674) | Ministry of Agriculture, Rural Development and Fisheries | Ministério da Agricultura | 1918-01-01 | ministry of agriculture | 5 | — |
 | [ ] | [`Q2054820`](https://www.wikidata.org/wiki/Q2054820) | Republican Union | Partido da União Republicana | 1912-01-01 | political party | 4 | — |
 | [ ] | [`Q1139920`](https://www.wikidata.org/wiki/Q1139920) | Soares da Costa | Soares da Costa | 1918-01-01 | public company | 4 | — |
 | [ ] | [`Q28135987`](https://www.wikidata.org/wiki/Q28135987) | Senate | — | 1911-01-01 | senate | 4 | — |
@@ -2973,12 +3026,12 @@ to that file and another run, never an edit here.
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
 | [ ] | [`Q769829`](https://www.wikidata.org/wiki/Q769829) | Portuguese Communist Party | Partido Comunista Português | 1921-03-06 | communist party | 31 | yes |
-| [ ] | [`Q847883`](https://www.wikidata.org/wiki/Q847883) | Nationalist Republican Party | Partido Republicano Nacionalista | 1923-02-07 | political party | 5 | — |
-| [ ] | [`Q16528160`](https://www.wikidata.org/wiki/Q16528160) | Embassy of Poland, Lisbon | Embaixada da Polónia em Lisboa | 1922-01-01 | embassy | 5 | — |
-| [ ] | [`Q19383581`](https://www.wikidata.org/wiki/Q19383581) | Embassy of Norway, Lisbon | Embaixada da Noruega em Lisboa | 1921-01-01 | embassy | 5 | — |
-| [ ] | [`Q2054732`](https://www.wikidata.org/wiki/Q2054732) | Reconstitution Party | Partido Republicano da Reconstituição Nacional | 1920-01-01 | political party | 4 | — |
-| [ ] | [`Q555443`](https://www.wikidata.org/wiki/Q555443) | Companhia dos Caminhos de Ferro do Norte de Portugal | Companhia dos Caminhos de Ferro do Norte de Portugal | 1927-01-14 | railway company | 4 | — |
-| [ ] | [`Q3366682`](https://www.wikidata.org/wiki/Q3366682) | Democratic Leftwing Republican Party | Partido Republicano da Esquerda Democrática | 1920-01-01 | political party | 3 | — |
+| [x] | [`Q847883`](https://www.wikidata.org/wiki/Q847883) | Nationalist Republican Party | Partido Republicano Nacionalista | 1923-02-07 | political party | 5 | — |
+| [x] | [`Q16528160`](https://www.wikidata.org/wiki/Q16528160) | Embassy of Poland, Lisbon | Embaixada da Polónia em Lisboa | 1922-01-01 | embassy | 5 | — |
+| [x] | [`Q19383581`](https://www.wikidata.org/wiki/Q19383581) | Embassy of Norway, Lisbon | Embaixada da Noruega em Lisboa | 1921-01-01 | embassy | 5 | — |
+| [x] | [`Q2054732`](https://www.wikidata.org/wiki/Q2054732) | Reconstitution Party | Partido Republicano da Reconstituição Nacional | 1920-01-01 | political party | 4 | — |
+| [x] | [`Q555443`](https://www.wikidata.org/wiki/Q555443) | Companhia dos Caminhos de Ferro do Norte de Portugal | Companhia dos Caminhos de Ferro do Norte de Portugal | 1927-01-14 | railway company | 4 | — |
+| [x] | [`Q3366682`](https://www.wikidata.org/wiki/Q3366682) | Democratic Leftwing Republican Party | Partido Republicano da Esquerda Democrática | 1920-01-01 | political party | 3 | — |
 | [ ] | [`Q61000215`](https://www.wikidata.org/wiki/Q61000215) | Agência Geral das Colónias | Agência Geral das Colónias | 1924-09-30 | government agency | 3 | — |
 | [ ] | [`Q10388133`](https://www.wikidata.org/wiki/Q10388133) | Union of Economic Interests | União dos Interesses Económicos | 1925-01-01 | political party | 2 | — |
 | [ ] | [`Q16142871`](https://www.wikidata.org/wiki/Q16142871) | Gomes da Costa Cabinet | II Governo da Segunda República | 1926-06-17 | Council of Ministers | 2 | — |
@@ -3017,8 +3070,8 @@ to that file and another run, never an edit here.
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q1430974`](https://www.wikidata.org/wiki/Q1430974) | Braga Airport | Aeródromo de Braga | 1929-01-01 | airport | 11 | — |
-| [ ] | [`Q551612`](https://www.wikidata.org/wiki/Q551612) | Portimão Railway Bridge | Ponte Ferroviária de Portimão | 1922-01-01 | truss bridge | 4 | — |
+| [x] | [`Q1430974`](https://www.wikidata.org/wiki/Q1430974) | Braga Airport | Aeródromo de Braga | 1929-01-01 | airport | 11 | — |
+| [x] | [`Q551612`](https://www.wikidata.org/wiki/Q551612) | Portimão Railway Bridge | Ponte Ferroviária de Portimão | 1922-01-01 | truss bridge | 4 | — |
 
 ## pt2 1940s — 24 candidate(s), 1 already in the atlas
 
@@ -3026,10 +3079,10 @@ to that file and another run, never an edit here.
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q208232`](https://www.wikidata.org/wiki/Q208232) | TAP Air Portugal | TAP Air Portugal | 1945-03-14 | airline | 51 | — |
+| [x] | [`Q208232`](https://www.wikidata.org/wiki/Q208232) | TAP Air Portugal | TAP Air Portugal | 1945-03-14 | airline | 51 | — |
 | [ ] | [`Q958917`](https://www.wikidata.org/wiki/Q958917) | PIDE | Polícia Internacional e de Defesa do Estado | 1945-10-22 | secret police | 21 | yes |
-| [ ] | [`Q1243903`](https://www.wikidata.org/wiki/Q1243903) | SATA Air Açores | SATA Air Açores | 1941-01-01 | airline | 20 | — |
-| [ ] | [`Q1800787`](https://www.wikidata.org/wiki/Q1800787) | Lajes Field | Base Aérea das Lajes | 1943-01-01 | government agency | 18 | — |
+| [x] | [`Q1243903`](https://www.wikidata.org/wiki/Q1243903) | SATA Air Açores | SATA Air Açores | 1941-01-01 | airline | 20 | — |
+| [x] | [`Q1800787`](https://www.wikidata.org/wiki/Q1800787) | Lajes Field | Base Aérea das Lajes | 1943-01-01 | government agency | 18 | — |
 | [ ] | [`Q6926747`](https://www.wikidata.org/wiki/Q6926747) | Movement of Democratic Unity | Movimento de Unidade Democrática | 1945-10-08 | political party | 5 | — |
 | [ ] | [`Q4294868`](https://www.wikidata.org/wiki/Q4294868) | Ministry of Justice | — | 1940-01-01 | justice ministry | 5 | — |
 | [ ] | [`Q15261129`](https://www.wikidata.org/wiki/Q15261129) | National Authority of Civil Aviation of Portugal | Autoridade Nacional de Aviação Civil | 1944-01-01 | government agency | 2 | — |
@@ -3040,10 +3093,10 @@ to that file and another run, never an edit here.
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q403671`](https://www.wikidata.org/wiki/Q403671) | Humberto Delgado Airport | Aeroporto de Lisboa Humberto Delgado | 1942-10-15 | cultural heritage | 50 | — |
-| [ ] | [`Q943743`](https://www.wikidata.org/wiki/Q943743) | Francisco de Sá Carneiro Airport | Aeroporto Francisco Sá Carneiro | 1945-01-01 | international airport | 36 | — |
-| [ ] | [`Q5049759`](https://www.wikidata.org/wiki/Q5049759) | Castelo do Bode Dam | Barragem de Castelo do Bode | 1945-01-01 | dam | 9 | — |
-| [ ] | [`Q16496928`](https://www.wikidata.org/wiki/Q16496928) | Belver Dam | Barragem de Belver | 1945-01-01 | dam | 9 | — |
+| [x] | [`Q403671`](https://www.wikidata.org/wiki/Q403671) | Humberto Delgado Airport | Aeroporto de Lisboa Humberto Delgado | 1942-10-15 | cultural heritage | 50 | — |
+| [x] | [`Q943743`](https://www.wikidata.org/wiki/Q943743) | Francisco de Sá Carneiro Airport | Aeroporto Francisco Sá Carneiro | 1945-01-01 | international airport | 36 | — |
+| [x] | [`Q5049759`](https://www.wikidata.org/wiki/Q5049759) | Castelo do Bode Dam | Barragem de Castelo do Bode | 1945-01-01 | dam | 9 | — |
+| [x] | [`Q16496928`](https://www.wikidata.org/wiki/Q16496928) | Belver Dam | Barragem de Belver | 1945-01-01 | dam | 9 | — |
 | [ ] | [`Q5179324`](https://www.wikidata.org/wiki/Q5179324) | Covilhã Airport | Aeródromo Municipal da Covilhã | 1946-01-01 | airport | 4 | — |
 | [ ] | [`Q9648966`](https://www.wikidata.org/wiki/Q9648966) | Venda Nova Dam | Barragem da Venda Nova | 1948-01-01 | embankment dam | 4 | — |
 | [ ] | [`Q18413335`](https://www.wikidata.org/wiki/Q18413335) | Barragem de Andorinhas | Barragem de Andorinhas | 1945-01-01 | dam | 3 | — |
@@ -3057,7 +3110,7 @@ to that file and another run, never an edit here.
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q786906`](https://www.wikidata.org/wiki/Q786906) | 1949 Air France Lockheed Constellation crash | — | 1949-10-28 | aviation accident | 12 | — |
+| [x] | [`Q786906`](https://www.wikidata.org/wiki/Q786906) | 1949 Air France Lockheed Constellation crash | — | 1949-10-28 | aviation accident | 12 | — |
 | [ ] | [`Q10335801`](https://www.wikidata.org/wiki/Q10335801) | 1947 wreckage | Naufrágio de 1947 | 1947-12-02 | shipwreck | 1 | — |
 | [ ] | [`Q111740802`](https://www.wikidata.org/wiki/Q111740802) | — | Desastre ferroviário de Vila Franca de Xira | 1947-08-16 | railway accident | 1 | — |
 
@@ -3067,9 +3120,9 @@ to that file and another run, never an edit here.
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q4294480`](https://www.wikidata.org/wiki/Q4294480) | Ministry of National Defense of Portugal | Ministério da Defesa Nacional | 1950-01-01 | defence ministry | 7 | — |
-| [ ] | [`Q7835315`](https://www.wikidata.org/wiki/Q7835315) | Transportes Aéreos da Índia Portuguesa | Transportes Aéreos da Índia Portuguesa (TAIP) | 1955-01-01 | airline | 6 | — |
-| [ ] | [`Q4294357`](https://www.wikidata.org/wiki/Q4294357) | Ministry of Health of Portugal | Ministério da Saúde | 1958-01-01 | ministry of Portugal | 5 | — |
+| [x] | [`Q4294480`](https://www.wikidata.org/wiki/Q4294480) | Ministry of National Defense of Portugal | Ministério da Defesa Nacional | 1950-01-01 | defence ministry | 7 | — |
+| [x] | [`Q7835315`](https://www.wikidata.org/wiki/Q7835315) | Transportes Aéreos da Índia Portuguesa | Transportes Aéreos da Índia Portuguesa (TAIP) | 1955-01-01 | airline | 6 | — |
+| [x] | [`Q4294357`](https://www.wikidata.org/wiki/Q4294357) | Ministry of Health of Portugal | Ministério da Saúde | 1958-01-01 | ministry of Portugal | 5 | — |
 | [ ] | [`Q10330438`](https://www.wikidata.org/wiki/Q10330438) | Ministério do Ultramar | Ministério do Ultramar | 1951-01-01 | ministry | 3 | — |
 | [ ] | [`Q1201837`](https://www.wikidata.org/wiki/Q1201837) | German-Portuguese Chamber of Industry and Commerce | Câmara de Comércio e Indústria Luso-Alemã | 1954-11-10 | chamber of commerce and industry | 2 | — |
 
@@ -3077,9 +3130,9 @@ to that file and another run, never an edit here.
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q746032`](https://www.wikidata.org/wiki/Q746032) | Lisbon Metro | Metropolitano de Lisboa | 1959-12-29 | rapid transit | 44 | — |
-| [ ] | [`Q9649091`](https://www.wikidata.org/wiki/Q9649091) | Alto Rabagão Dam | Barragem do Alto Rabagão | 1957-01-01 | pumped-storage power station | 8 | — |
-| [ ] | [`Q16496938`](https://www.wikidata.org/wiki/Q16496938) | Vilar Dam | Barragem de Vilar | 1958-01-01 | embankment dam | 7 | — |
+| [x] | [`Q746032`](https://www.wikidata.org/wiki/Q746032) | Lisbon Metro | Metropolitano de Lisboa | 1959-12-29 | rapid transit | 44 | — |
+| [x] | [`Q9649091`](https://www.wikidata.org/wiki/Q9649091) | Alto Rabagão Dam | Barragem do Alto Rabagão | 1957-01-01 | pumped-storage power station | 8 | — |
+| [x] | [`Q16496938`](https://www.wikidata.org/wiki/Q16496938) | Vilar Dam | Barragem de Vilar | 1958-01-01 | embankment dam | 7 | — |
 | [ ] | [`Q18761828`](https://www.wikidata.org/wiki/Q18761828) | Barragem da Bravura | Barragem de Odeáxere | 1959-05-10 | dam | 3 | — |
 | [ ] | [`Q18914298`](https://www.wikidata.org/wiki/Q18914298) | Vale do Rossim Dam | Barragem de Vale do Rossim | 1956-01-01 | dam | 3 | — |
 
@@ -3087,8 +3140,8 @@ to that file and another run, never an edit here.
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q540545`](https://www.wikidata.org/wiki/Q540545) | Gibalta rail accident | Tragédia da Gibalta | 1952-03-31 | railway accident | 3 | — |
-| [ ] | [`Q8355026`](https://www.wikidata.org/wiki/Q8355026) | — | Desastre do Rápido do Algarve | 1954-09-13 | railway accident | 3 | — |
+| [x] | [`Q540545`](https://www.wikidata.org/wiki/Q540545) | Gibalta rail accident | Tragédia da Gibalta | 1952-03-31 | railway accident | 3 | — |
+| [x] | [`Q8355026`](https://www.wikidata.org/wiki/Q8355026) | — | Desastre do Rápido do Algarve | 1954-09-13 | railway accident | 3 | — |
 
 ## pt2 1980s — 42 candidate(s), 0 already in the atlas
 
@@ -3096,15 +3149,15 @@ to that file and another run, never an edit here.
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q618058`](https://www.wikidata.org/wiki/Q618058) | Portugália | Portugália Airlines | 1989-01-01 | airline | 23 | — |
-| [ ] | [`Q118581`](https://www.wikidata.org/wiki/Q118581) | Banco Comercial Português | Banco Comercial Português | 1985-01-01 | credit institution | 20 | — |
-| [ ] | [`Q978086`](https://www.wikidata.org/wiki/Q978086) | Ecologist Party "The Greens" | Partido Ecologista Os Verdes | 1982-01-01 | political party | 18 | — |
-| [ ] | [`Q28973970`](https://www.wikidata.org/wiki/Q28973970) | TAP Express | TAP Express | 1988-01-01 | airline | 12 | — |
-| [ ] | [`Q537886`](https://www.wikidata.org/wiki/Q537886) | Portuguese Investment Bank | Banco Português de Investimento | 1981-10-06 | credit institution | 12 | — |
-| [ ] | [`Q138324`](https://www.wikidata.org/wiki/Q138324) | Portuguese Constitutional Court | Tribunal Constitucional de Portugal | 1982-01-01 | constitutional court | 10 | — |
-| [ ] | [`Q13403867`](https://www.wikidata.org/wiki/Q13403867) | Air Luxor | Air Luxor | 1988-01-01 | airline | 10 | — |
-| [ ] | [`Q406832`](https://www.wikidata.org/wiki/Q406832) | Air Atlantis | Air Atlantis | 1985-01-01 | airline | 9 | — |
-| [ ] | [`Q3391585`](https://www.wikidata.org/wiki/Q3391585) | Universidade Aberta de Portugal | Universidade Aberta | 1988-01-01 | public university | 9 | — |
+| [x] | [`Q618058`](https://www.wikidata.org/wiki/Q618058) | Portugália | Portugália Airlines | 1989-01-01 | airline | 23 | — |
+| [x] | [`Q118581`](https://www.wikidata.org/wiki/Q118581) | Banco Comercial Português | Banco Comercial Português | 1985-01-01 | credit institution | 20 | — |
+| [x] | [`Q978086`](https://www.wikidata.org/wiki/Q978086) | Ecologist Party "The Greens" | Partido Ecologista Os Verdes | 1982-01-01 | political party | 18 | — |
+| [x] | [`Q28973970`](https://www.wikidata.org/wiki/Q28973970) | TAP Express | TAP Express | 1988-01-01 | airline | 12 | — |
+| [x] | [`Q537886`](https://www.wikidata.org/wiki/Q537886) | Portuguese Investment Bank | Banco Português de Investimento | 1981-10-06 | credit institution | 12 | — |
+| [x] | [`Q138324`](https://www.wikidata.org/wiki/Q138324) | Portuguese Constitutional Court | Tribunal Constitucional de Portugal | 1982-01-01 | constitutional court | 10 | — |
+| [x] | [`Q13403867`](https://www.wikidata.org/wiki/Q13403867) | Air Luxor | Air Luxor | 1988-01-01 | airline | 10 | — |
+| [x] | [`Q406832`](https://www.wikidata.org/wiki/Q406832) | Air Atlantis | Air Atlantis | 1985-01-01 | airline | 9 | — |
+| [x] | [`Q3391585`](https://www.wikidata.org/wiki/Q3391585) | Universidade Aberta de Portugal | Universidade Aberta | 1988-01-01 | public university | 9 | — |
 | [ ] | [`Q980864`](https://www.wikidata.org/wiki/Q980864) | Democratic Renewal Party | Partido Renovador Democrático | 1985-01-01 | political party | 8 | — |
 | [ ] | [`Q3295407`](https://www.wikidata.org/wiki/Q3295407) | Communist Party (Reconstructed) | Partido Comunista (Reconstruído) | 1981-02-03 | political party | 7 | — |
 | [ ] | [`Q4045768`](https://www.wikidata.org/wiki/Q4045768) | Omni Aviation | Omni Aviação SGPS | 1988-01-01 | airline | 6 | — |
@@ -3133,7 +3186,7 @@ to that file and another run, never an edit here.
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q1432366`](https://www.wikidata.org/wiki/Q1432366) | Pico Airport | Aeroporto do Pico | 1982-01-01 | airport | 15 | — |
+| [x] | [`Q1432366`](https://www.wikidata.org/wiki/Q1432366) | Pico Airport | Aeroporto do Pico | 1982-01-01 | airport | 15 | — |
 | [ ] | [`Q3375542`](https://www.wikidata.org/wiki/Q3375542) | Pocinho Dam | Barragem do Pocinho | 1982-01-01 | gravity dam | 8 | — |
 | [ ] | [`Q2103700`](https://www.wikidata.org/wiki/Q2103700) | Edgar Cardoso Bridge | Ponte Edgar Cardoso | 1982-01-01 | cable-stayed bridge | 5 | — |
 | [ ] | [`Q5816672`](https://www.wikidata.org/wiki/Q5816672) | Ponte Ferroviária de Ferradosa | Ponte Ferroviária de Ferradosa | 1980-01-01 | cultural heritage | 3 | — |
@@ -3155,23 +3208,23 @@ to that file and another run, never an edit here.
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q2205178`](https://www.wikidata.org/wiki/Q2205178) | Azores Airlines | Azores Airlines | 1998-01-01 | airline | 28 | — |
-| [ ] | [`Q81123`](https://www.wikidata.org/wiki/Q81123) | — | Comboios de Portugal | 1997-01-01 | transport company | 27 | — |
-| [ ] | [`Q1377256`](https://www.wikidata.org/wiki/Q1377256) | European Union Drugs Agency | Agência da União Europeia sobre Drogas | 1993-01-01 | decentralised agency of the European Union | 25 | — |
+| [x] | [`Q2205178`](https://www.wikidata.org/wiki/Q2205178) | Azores Airlines | Azores Airlines | 1998-01-01 | airline | 28 | — |
+| [x] | [`Q81123`](https://www.wikidata.org/wiki/Q81123) | — | Comboios de Portugal | 1997-01-01 | transport company | 27 | — |
+| [x] | [`Q1377256`](https://www.wikidata.org/wiki/Q1377256) | European Union Drugs Agency | Agência da União Europeia sobre Drogas | 1993-01-01 | decentralised agency of the European Union | 25 | — |
 | [ ] | [`Q884840`](https://www.wikidata.org/wiki/Q884840) | Left Bloc | Bloco de Esquerda | 1999-03-24 | political party | 23 | yes |
-| [ ] | [`Q618132`](https://www.wikidata.org/wiki/Q618132) | EuroAtlantic Airways | EuroAtlantic Airways | 1993-08-25 | airline | 20 | — |
-| [ ] | [`Q1492739`](https://www.wikidata.org/wiki/Q1492739) | Galp Energia | Galp | 1999-01-01 | public company | 17 | — |
-| [ ] | [`Q2105426`](https://www.wikidata.org/wiki/Q2105426) | Altice Portugal | Altice Portugal | 1994-01-01 | public company | 15 | — |
-| [ ] | [`Q1862842`](https://www.wikidata.org/wiki/Q1862842) | Redes Energéticas Nacionais | Redes Energéticas Nacionais | 1994-01-01 | transmission system operator for electricity | 12 | — |
-| [ ] | [`Q1408210`](https://www.wikidata.org/wiki/Q1408210) | Fertagus | Fertagus | 1999-01-01 | railway line/metro line | 11 | — |
-| [ ] | [`Q295619`](https://www.wikidata.org/wiki/Q295619) | ANA – Aeroportos de Portugal | ANA Aeroportos de Portugal S.A. | 1998-01-01 | fixed-base operator | 11 | — |
-| [ ] | [`Q1365938`](https://www.wikidata.org/wiki/Q1365938) | MEO | MEO | 1991-03-22 | business | 11 | — |
-| [ ] | [`Q1862723`](https://www.wikidata.org/wiki/Q1862723) | Semapa | Semapa | 1991-01-01 | business | 11 | — |
-| [ ] | [`Q2495255`](https://www.wikidata.org/wiki/Q2495255) | New Macau Association | Associação Novo Macau | 1992-07-10 | political party | 10 | — |
-| [ ] | [`Q786690`](https://www.wikidata.org/wiki/Q786690) | Volkswagen Autoeuropa | Autoeuropa | 1991-01-01 | automobile manufacturer | 10 | — |
-| [ ] | [`Q794939`](https://www.wikidata.org/wiki/Q794939) | B&B Hotels | — | 1990-01-01 | brand | 9 | — |
-| [ ] | [`Q1546030`](https://www.wikidata.org/wiki/Q1546030) | Earth Party | Partido da Terra | 1993-08-12 | green party | 9 | — |
-| [ ] | [`Q29685`](https://www.wikidata.org/wiki/Q29685) | Metro de Mirandela | Metro Ligeiro de Mirandela | 1995-01-01 | transport company | 8 | — |
+| [x] | [`Q618132`](https://www.wikidata.org/wiki/Q618132) | EuroAtlantic Airways | EuroAtlantic Airways | 1993-08-25 | airline | 20 | — |
+| [x] | [`Q1492739`](https://www.wikidata.org/wiki/Q1492739) | Galp Energia | Galp | 1999-01-01 | public company | 17 | — |
+| [x] | [`Q2105426`](https://www.wikidata.org/wiki/Q2105426) | Altice Portugal | Altice Portugal | 1994-01-01 | public company | 15 | — |
+| [x] | [`Q1862842`](https://www.wikidata.org/wiki/Q1862842) | Redes Energéticas Nacionais | Redes Energéticas Nacionais | 1994-01-01 | transmission system operator for electricity | 12 | — |
+| [x] | [`Q1408210`](https://www.wikidata.org/wiki/Q1408210) | Fertagus | Fertagus | 1999-01-01 | railway line/metro line | 11 | — |
+| [x] | [`Q295619`](https://www.wikidata.org/wiki/Q295619) | ANA – Aeroportos de Portugal | ANA Aeroportos de Portugal S.A. | 1998-01-01 | fixed-base operator | 11 | — |
+| [x] | [`Q1365938`](https://www.wikidata.org/wiki/Q1365938) | MEO | MEO | 1991-03-22 | business | 11 | — |
+| [x] | [`Q1862723`](https://www.wikidata.org/wiki/Q1862723) | Semapa | Semapa | 1991-01-01 | business | 11 | — |
+| [x] | [`Q2495255`](https://www.wikidata.org/wiki/Q2495255) | New Macau Association | Associação Novo Macau | 1992-07-10 | political party | 10 | — |
+| [x] | [`Q786690`](https://www.wikidata.org/wiki/Q786690) | Volkswagen Autoeuropa | Autoeuropa | 1991-01-01 | automobile manufacturer | 10 | — |
+| [x] | [`Q794939`](https://www.wikidata.org/wiki/Q794939) | B&B Hotels | — | 1990-01-01 | brand | 9 | — |
+| [x] | [`Q1546030`](https://www.wikidata.org/wiki/Q1546030) | Earth Party | Partido da Terra | 1993-08-12 | green party | 9 | — |
+| [x] | [`Q29685`](https://www.wikidata.org/wiki/Q29685) | Metro de Mirandela | Metro Ligeiro de Mirandela | 1995-01-01 | transport company | 8 | — |
 | [ ] | [`Q1411661`](https://www.wikidata.org/wiki/Q1411661) | REFER | Rede Ferroviária Nacional | 1997-01-01 | railway infrastructure manager | 8 | — |
 | [ ] | [`Q1817568`](https://www.wikidata.org/wiki/Q1817568) | Optimus Telecomunicações | Optimus | 1998-09-15 | public company | 8 | — |
 | [ ] | [`Q1352945`](https://www.wikidata.org/wiki/Q1352945) | Politics XXI | Política XXI | 1994-01-01 | political party | 7 | — |
@@ -3200,9 +3253,9 @@ to that file and another run, never an edit here.
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q233737`](https://www.wikidata.org/wiki/Q233737) | Vasco da Gama Bridge | Ponte Vasco da Gama | 1995-01-01 | cable-stayed bridge | 52 | — |
-| [ ] | [`Q1548495`](https://www.wikidata.org/wiki/Q1548495) | Guadiana International Bridge | Ponte Internacional do Guadiana | 1991-01-01 | cable-stayed bridge | 10 | — |
-| [ ] | [`Q951109`](https://www.wikidata.org/wiki/Q951109) | Freixo Bridge | Ponte do Freixo | 1995-01-01 | road bridge | 10 | — |
+| [x] | [`Q233737`](https://www.wikidata.org/wiki/Q233737) | Vasco da Gama Bridge | Ponte Vasco da Gama | 1995-01-01 | cable-stayed bridge | 52 | — |
+| [x] | [`Q1548495`](https://www.wikidata.org/wiki/Q1548495) | Guadiana International Bridge | Ponte Internacional do Guadiana | 1991-01-01 | cable-stayed bridge | 10 | — |
+| [x] | [`Q951109`](https://www.wikidata.org/wiki/Q951109) | Freixo Bridge | Ponte do Freixo | 1995-01-01 | road bridge | 10 | — |
 | [ ] | [`Q1321630`](https://www.wikidata.org/wiki/Q1321630) | João Gomes Bridge | Ponte João Gomes | 1994-01-01 | road bridge | 6 | — |
 | [ ] | [`Q13101568`](https://www.wikidata.org/wiki/Q13101568) | New Portimão Bridge | Ponte Nova de Portimão | 1991-01-01 | cable-stayed bridge | 5 | — |
 | [ ] | [`Q18694539`](https://www.wikidata.org/wiki/Q18694539) | — | Barragem de Corte Brique | 1993-01-01 | embankment dam | 2 | — |
@@ -3216,7 +3269,7 @@ to that file and another run, never an edit here.
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q3153850`](https://www.wikidata.org/wiki/Q3153850) | Martinair Flight 495 | Voo Martinair 495 | 1992-12-21 | aviation accident | 15 | — |
+| [x] | [`Q3153850`](https://www.wikidata.org/wiki/Q3153850) | Martinair Flight 495 | Voo Martinair 495 | 1992-12-21 | aviation accident | 15 | — |
 | [ ] | [`Q61002083`](https://www.wikidata.org/wiki/Q61002083) | — | Desastre Ferroviário de Cruz da Pedra | 1990-05-28 | railway accident | 1 | — |
 | [ ] | [`Q61002563`](https://www.wikidata.org/wiki/Q61002563) | — | Desastre Ferroviário de São Marcos da Serra | 1994-02-17 | railway accident | 1 | — |
 | [ ] | [`Q28680172`](https://www.wikidata.org/wiki/Q28680172) | — | Desastre Ferroviário de Rates | 1994-05-29 | traffic collision | 1 | — |
@@ -3228,20 +3281,20 @@ to that file and another run, never an edit here.
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q842108`](https://www.wikidata.org/wiki/Q842108) | Euronext | Euronext | 2000-09-22 | public company | 47 | — |
-| [ ] | [`Q922693`](https://www.wikidata.org/wiki/Q922693) | European Maritime Safety Agency | Agência Europeia de Segurança Marítima | 2002-08-25 | decentralised agency of the European Union | 28 | — |
-| [ ] | [`Q993079`](https://www.wikidata.org/wiki/Q993079) | European Gendarmerie Force | Força de Gendarmaria Europeia | 2007-10-18 | gendarmerie | 22 | — |
-| [ ] | [`Q281710`](https://www.wikidata.org/wiki/Q281710) | Hi Fly | Air Luxor | 2005-01-01 | airline | 20 | — |
-| [ ] | [`Q618093`](https://www.wikidata.org/wiki/Q618093) | White Airways | White Airways | 2005-01-01 | airline | 18 | — |
-| [ ] | [`Q4782260`](https://www.wikidata.org/wiki/Q4782260) | Aptoide | Aptoide | 2009-11-17 | free software | 15 | — |
-| [ ] | [`Q444971`](https://www.wikidata.org/wiki/Q444971) | Altri | Altri | 2005-03-01 | company | 14 | — |
-| [ ] | [`Q1118859`](https://www.wikidata.org/wiki/Q1118859) | Fox Crime | FOX Crime | 2005-01-01 | television channel | 14 | — |
-| [ ] | [`Q2667744`](https://www.wikidata.org/wiki/Q2667744) | Orbest | Orbest | 2007-01-01 | airline | 13 | — |
-| [ ] | [`Q686182`](https://www.wikidata.org/wiki/Q686182) | The Navigator Company | Portucel | 2001-01-01 | business | 13 | — |
-| [ ] | [`Q4374070`](https://www.wikidata.org/wiki/Q4374070) | Embassy of Ukraine, Lisbon | Embaixada da Ucrânia em Lisboa | 2001-10-01 | embassy | 13 | — |
-| [ ] | [`Q18712957`](https://www.wikidata.org/wiki/Q18712957) | Farfetch | Farfetch | 2007-06-01 | business | 12 | — |
-| [ ] | [`Q2054681`](https://www.wikidata.org/wiki/Q2054681) | Rise up! | Ergue-te! | 2000-04-12 | political party | 10 | — |
-| [ ] | [`Q4033474`](https://www.wikidata.org/wiki/Q4033474) | Aero VIP | — | 2000-01-01 | airline | 10 | — |
+| [x] | [`Q842108`](https://www.wikidata.org/wiki/Q842108) | Euronext | Euronext | 2000-09-22 | public company | 47 | — |
+| [x] | [`Q922693`](https://www.wikidata.org/wiki/Q922693) | European Maritime Safety Agency | Agência Europeia de Segurança Marítima | 2002-08-25 | decentralised agency of the European Union | 28 | — |
+| [x] | [`Q993079`](https://www.wikidata.org/wiki/Q993079) | European Gendarmerie Force | Força de Gendarmaria Europeia | 2007-10-18 | gendarmerie | 22 | — |
+| [x] | [`Q281710`](https://www.wikidata.org/wiki/Q281710) | Hi Fly | Air Luxor | 2005-01-01 | airline | 20 | — |
+| [x] | [`Q618093`](https://www.wikidata.org/wiki/Q618093) | White Airways | White Airways | 2005-01-01 | airline | 18 | — |
+| [x] | [`Q4782260`](https://www.wikidata.org/wiki/Q4782260) | Aptoide | Aptoide | 2009-11-17 | free software | 15 | — |
+| [x] | [`Q444971`](https://www.wikidata.org/wiki/Q444971) | Altri | Altri | 2005-03-01 | company | 14 | — |
+| [x] | [`Q1118859`](https://www.wikidata.org/wiki/Q1118859) | Fox Crime | FOX Crime | 2005-01-01 | television channel | 14 | — |
+| [x] | [`Q2667744`](https://www.wikidata.org/wiki/Q2667744) | Orbest | Orbest | 2007-01-01 | airline | 13 | — |
+| [x] | [`Q686182`](https://www.wikidata.org/wiki/Q686182) | The Navigator Company | Portucel | 2001-01-01 | business | 13 | — |
+| [x] | [`Q4374070`](https://www.wikidata.org/wiki/Q4374070) | Embassy of Ukraine, Lisbon | Embaixada da Ucrânia em Lisboa | 2001-10-01 | embassy | 13 | — |
+| [x] | [`Q18712957`](https://www.wikidata.org/wiki/Q18712957) | Farfetch | Farfetch | 2007-06-01 | business | 12 | — |
+| [x] | [`Q2054681`](https://www.wikidata.org/wiki/Q2054681) | Rise up! | Ergue-te! | 2000-04-12 | political party | 10 | — |
+| [x] | [`Q4033474`](https://www.wikidata.org/wiki/Q4033474) | Aero VIP | — | 2000-01-01 | airline | 10 | — |
 | [ ] | [`Q202085`](https://www.wikidata.org/wiki/Q202085) | IGESPAR | Instituto de Gestão do Património Arquitectónico e Arqueológico | 2006-01-01 | government agency | 8 | — |
 | [ ] | [`Q634443`](https://www.wikidata.org/wiki/Q634443) | high-speed rail in Portugal | Rede Ferroviária de Alta Velocidade | 2000-12-19 | railway infrastructure manager | 8 | — |
 | [ ] | [`Q605026`](https://www.wikidata.org/wiki/Q605026) | New Democracy Party | Nova Democracia | 2003-06-18 | political party | 7 | — |
@@ -3272,11 +3325,11 @@ to that file and another run, never an edit here.
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q29757`](https://www.wikidata.org/wiki/Q29757) | Metro do Porto | Metro do Porto | 2002-12-07 | light rail | 26 | — |
-| [ ] | [`Q1431141`](https://www.wikidata.org/wiki/Q1431141) | Corvo Airport | Aeródromo do Corvo | 2005-01-01 | commercial traffic aerodrome | 17 | — |
-| [ ] | [`Q2165228`](https://www.wikidata.org/wiki/Q2165228) | Alqueva Dam | Barragem de Alqueva | 2002-01-01 | hydroelectric power station | 15 | — |
-| [ ] | [`Q3375350`](https://www.wikidata.org/wiki/Q3375350) | Bemposta Dam | Barragem de Bemposta | 2008-01-01 | dam | 10 | — |
-| [ ] | [`Q3375706`](https://www.wikidata.org/wiki/Q3375706) | Picote Dam | Barragem de Picote | 2007-01-01 | dam | 10 | — |
+| [x] | [`Q29757`](https://www.wikidata.org/wiki/Q29757) | Metro do Porto | Metro do Porto | 2002-12-07 | light rail | 26 | — |
+| [x] | [`Q1431141`](https://www.wikidata.org/wiki/Q1431141) | Corvo Airport | Aeródromo do Corvo | 2005-01-01 | commercial traffic aerodrome | 17 | — |
+| [x] | [`Q2165228`](https://www.wikidata.org/wiki/Q2165228) | Alqueva Dam | Barragem de Alqueva | 2002-01-01 | hydroelectric power station | 15 | — |
+| [x] | [`Q3375350`](https://www.wikidata.org/wiki/Q3375350) | Bemposta Dam | Barragem de Bemposta | 2008-01-01 | dam | 10 | — |
+| [x] | [`Q3375706`](https://www.wikidata.org/wiki/Q3375706) | Picote Dam | Barragem de Picote | 2007-01-01 | dam | 10 | — |
 | [ ] | [`Q9064482`](https://www.wikidata.org/wiki/Q9064482) | Infante Dom Henrique bridge | Ponte Infante Dom Henrique | 2002-01-01 | road bridge | 7 | — |
 | [ ] | [`Q53244`](https://www.wikidata.org/wiki/Q53244) | Lezíria Bridge | Ponte da Lezíria | 2007-07-01 | road bridge | 5 | — |
 | [ ] | [`Q10351349`](https://www.wikidata.org/wiki/Q10351349) | Lower Guadiana International Bridge | Ponte Internacional do Baixo Guadiana | 2009-01-01 | road bridge | 4 | — |
