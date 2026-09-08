@@ -13270,8 +13270,20 @@
     }
   ],
   "schema": 1,
-  "total": 1158,
+  "total": 1166,
   "warnings": [
+    {
+      "id": "altice-portugal",
+      "kind": "actor",
+      "message": "actor is referenced by no event and no relation, and holds no territory",
+      "rule": "actor-unused"
+    },
+    {
+      "id": "altri",
+      "kind": "actor",
+      "message": "actor is referenced by no event and no relation, and holds no territory",
+      "rule": "actor-unused"
+    },
     {
       "id": "banco-comercial-portugues",
       "kind": "actor",
@@ -13279,7 +13291,25 @@
       "rule": "actor-unused"
     },
     {
+      "id": "ecologist-party-the-greens",
+      "kind": "actor",
+      "message": "actor is referenced by no event and no relation, and holds no territory",
+      "rule": "actor-unused"
+    },
+    {
+      "id": "energias-de-portugal",
+      "kind": "actor",
+      "message": "actor is referenced by no event and no relation, and holds no territory",
+      "rule": "actor-unused"
+    },
+    {
       "id": "euronext",
+      "kind": "actor",
+      "message": "actor is referenced by no event and no relation, and holds no territory",
+      "rule": "actor-unused"
+    },
+    {
+      "id": "galp-energia",
       "kind": "actor",
       "message": "actor is referenced by no event and no relation, and holds no territory",
       "rule": "actor-unused"
@@ -13297,10 +13327,28 @@
       "rule": "actor-unused"
     },
     {
+      "id": "people-animals-nature",
+      "kind": "actor",
+      "message": "actor is referenced by no event and no relation, and holds no territory",
+      "rule": "actor-unused"
+    },
+    {
+      "id": "people-s-monarchist-party",
+      "kind": "actor",
+      "message": "actor is referenced by no event and no relation, and holds no territory",
+      "rule": "actor-unused"
+    },
+    {
       "id": "saint-denis",
       "kind": "place",
       "message": "place is referenced by no event",
       "rule": "place-unused"
+    },
+    {
+      "id": "the-navigator-company",
+      "kind": "actor",
+      "message": "actor is referenced by no event and no relation, and holds no territory",
+      "rule": "actor-unused"
     },
     {
       "id": "uefa-2016-final",

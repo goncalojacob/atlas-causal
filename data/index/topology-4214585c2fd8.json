@@ -112,6 +112,46 @@
       }
     },
     {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "altice-portugal",
+      "name": "Altice Portugal",
+      "names": [
+        "Altice Portugal"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 1994
+      },
+      "wikidata": "Q2105426",
+      "wikipedia": {
+        "en": "Altice Portugal",
+        "pt": "Altice Portugal"
+      }
+    },
+    {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "altri",
+      "name": "Altri",
+      "names": [
+        "Altri"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 2005
+      },
+      "wikidata": "Q444971",
+      "wikipedia": {
+        "en": "Altri",
+        "pt": "Altri"
+      }
+    },
+    {
       "actorType": "person",
       "aliases": [],
       "id": "alvaro-cunhal",
@@ -1690,6 +1730,28 @@
       }
     },
     {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "ecologist-party-the-greens",
+      "name": "Ecologist Party \"The Greens\"",
+      "names": [
+        "Ecologist Party \"The Greens\"",
+        "Partido Ecologista Os Verdes",
+        "Partido Ecologista \"Os Verdes\""
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 1982
+      },
+      "wikidata": "Q978086",
+      "wikipedia": {
+        "en": "Ecologist Party \"The Greens\"",
+        "pt": "Partido Ecologista \"Os Verdes\""
+      }
+    },
+    {
       "actorType": "polity",
       "aliases": [],
       "id": "ecuador",
@@ -1785,6 +1847,28 @@
       "when": {
         "end": null,
         "start": 1886
+      }
+    },
+    {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "energias-de-portugal",
+      "name": "Energias de Portugal",
+      "names": [
+        "Energias de Portugal",
+        "EDP Group",
+        "EDP"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 1976
+      },
+      "wikidata": "Q1341222",
+      "wikipedia": {
+        "en": "EDP Group",
+        "pt": "EDP"
       }
     },
     {
@@ -2289,6 +2373,27 @@
       "when": {
         "end": 1960,
         "start": 1886
+      }
+    },
+    {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "galp-energia",
+      "name": "Galp Energia",
+      "names": [
+        "Galp Energia",
+        "Galp"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 1999
+      },
+      "wikidata": "Q1492739",
+      "wikipedia": {
+        "en": "Galp Energia",
+        "pt": "Galp"
       }
     },
     {
@@ -4846,6 +4951,50 @@
       }
     },
     {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "people-animals-nature",
+      "name": "People–Animals–Nature",
+      "names": [
+        "People–Animals–Nature",
+        "Pessoas–Animais–Natureza",
+        "People Animals Nature"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 2009
+      },
+      "wikidata": "Q2054840",
+      "wikipedia": {
+        "en": "People Animals Nature",
+        "pt": "Pessoas–Animais–Natureza"
+      }
+    },
+    {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "people-s-monarchist-party",
+      "name": "People's Monarchist Party",
+      "names": [
+        "People's Monarchist Party",
+        "Partido Popular Monárquico",
+        "People's Monarchist Party (Portugal)"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 1974
+      },
+      "wikidata": "Q1851550",
+      "wikipedia": {
+        "en": "People's Monarchist Party (Portugal)",
+        "pt": "Partido Popular Monárquico"
+      }
+    },
+    {
       "actorType": "polity",
       "aliases": [],
       "id": "perak",
@@ -6021,6 +6170,27 @@
       "when": {
         "end": null,
         "start": 1886
+      }
+    },
+    {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "the-navigator-company",
+      "name": "The Navigator Company",
+      "names": [
+        "The Navigator Company",
+        "Portucel"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 2001
+      },
+      "wikidata": "Q686182",
+      "wikipedia": {
+        "en": "The Navigator Company",
+        "pt": "The Navigator Company"
       }
     },
     {

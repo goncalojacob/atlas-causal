@@ -11942,13 +11942,37 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 122,
+      "citationCount": 130,
       "citations": [
+        {
+          "dissent": false,
+          "id": "altice-portugal",
+          "kind": "actor",
+          "locator": "Q2105426"
+        },
+        {
+          "dissent": false,
+          "id": "altri",
+          "kind": "actor",
+          "locator": "Q444971"
+        },
         {
           "dissent": false,
           "id": "banco-comercial-portugues",
           "kind": "actor",
           "locator": "Q118581"
+        },
+        {
+          "dissent": false,
+          "id": "ecologist-party-the-greens",
+          "kind": "actor",
+          "locator": "Q978086"
+        },
+        {
+          "dissent": false,
+          "id": "energias-de-portugal",
+          "kind": "actor",
+          "locator": "Q1341222"
         },
         {
           "dissent": false,
@@ -11958,9 +11982,33 @@
         },
         {
           "dissent": false,
+          "id": "galp-energia",
+          "kind": "actor",
+          "locator": "Q1492739"
+        },
+        {
+          "dissent": false,
           "id": "national-union",
           "kind": "actor",
           "locator": "Q954010"
+        },
+        {
+          "dissent": false,
+          "id": "people-animals-nature",
+          "kind": "actor",
+          "locator": "Q2054840"
+        },
+        {
+          "dissent": false,
+          "id": "people-s-monarchist-party",
+          "kind": "actor",
+          "locator": "Q1851550"
+        },
+        {
+          "dissent": false,
+          "id": "the-navigator-company",
+          "kind": "actor",
+          "locator": "Q686182"
         },
         {
           "dissent": false,
