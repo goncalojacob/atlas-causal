@@ -3101,6 +3101,101 @@ The numbering continues from 401, which is M31-3's last.
      same reason, and the fix is either a shorter body or a run that is not
      asked to edit it.
 
+507. **The rectangle the cull uses is the letterboxed one, not the nominal
+     viewBox.** `view()` in `graph-view.js` was `laid.width` and `laid.height`
+     under the transform, which is fine for choosing which marks are worth
+     naming and wrong for deciding which are drawn at all: the `<svg>` carries
+     a viewBox and no `preserveAspectRatio`, so in the pane this atlas gives it
+     the visible units run from about −2 to about 1,650 where the nominal box
+     says 0 to 960. Culling to the nominal box took away marks the reader could
+     see — the two collapse tests in `graph-browser` caught it at once. It goes
+     through the element's own matrix now, as the map's `visibleBox` has since
+     H4a (health review A, finding 4).
+
+508. **That measurement is taken once and kept, or the cull pays for itself.**
+     `getScreenCTM` forces a layout of the whole drawing, and it is already
+     asked once per notch in the wheel handler to find the point under the
+     pointer; asking again inside `draw` cost **3.05 s for ten notches against
+     2.45 s**. The rectangle is in the SVG's own units and moves only when the
+     element does, so it is cached and a `ResizeObserver` — the map's own
+     pattern — throws it away when the pane changes size. A browser test widens
+     the window and asks for the marks that were outside the old rectangle.
+
+509. **Only the selection is exempt from the cull, not the whole held set.**
+     The brief's §1 says "what the reader is holding is exempt at every
+     distance, as it is everywhere else"; everywhere else is
+     `map/layers/events.js`, which exempts the selected mark alone and culls
+     the rest of the working set like any other. The brief's own test list asks
+     for exactly that ("a stack outside the visible rectangle is not in the DOM
+     and the selection is, wherever it is"), and the wider reading would have
+     meant no cull at all while a lens is open, since the lens's events are in
+     the held set. M25's never-hide rule is about *stacking* and is untouched:
+     nothing the reader is working with is ever swallowed by a stack.
+
+510. **Amendment A2's element reuse was tried, measured and dropped.** The
+     edges layer alternates `<line>` and `<polygon>` at stable indices, so
+     `reuse` (util/dom.js) can hand every one of them back; it was written,
+     the tests passed, and ten notches cost **2,472 ms against 2,446 ms**.
+     `createElementNS` fell from 350 ms to 135 ms and `setAttribute` rose from
+     378 to 565, plus 164 ms in `apply` and 146 in `getAttribute`: a zoom
+     changes every coordinate of every element, so there is nothing to keep.
+     The commit was reverted. **The timeline's H4c win is a different case** —
+     a state change at the same geometry, where only classes move — and the
+     graph would get that one too; nobody has measured it, so it is not in.
+
+511. **The target is not met, and this is the number.** "Ten notches on the
+     whole window at 10⁴ costing less than a second" against the review's
+     5.3 s: they cost **2.4 s**. The cull took the drawing from 24,310 elements
+     to 10,177 at k = 4.5 and the double measurement went, which is 2.5× — the
+     rest is the browser laying out and painting the ten thousand elements that
+     really are on the screen (39 % of the profile is inside the browser and
+     attributed to no script) and 135 ms of stacking. Under a second at this
+     corpus needs fewer elements on screen, not faster code: the next lever is
+     drawing a stack of a stack, or not drawing 6,437 lines at all until the
+     reader is close enough to read them. **For the owner.**
+
+512. **The todo test's two assertions moved with the rule it was waiting for.**
+     "The lanes are laid out again when the window changes height" asserted
+     *the same lanes, squeezed into what is left*, which is what a fixed cap
+     does; a cap derived from the pane gives **fewer rows at the floor**
+     instead — fifteen at 900 px, five at 460. It now asserts fewer lanes, none
+     below the floor, a drawing exactly the height of its pane, and the rows
+     coming back when the window does. The todo is off and the test passes.
+
+513. **The region grouping is not capped, and can still overflow its pane.**
+     The rule is applied to the packed rows and to `actor` and `place`, whose
+     overflow has an "Other" lane to fall into. A region lane has none: a
+     region dropped for room would be events with nowhere to stand. Five region
+     lanes at the 22 px floor want 168 px, and a 380 px window leaves a 113 px
+     pane, so `?group=region` in a short window still scrolls. The honest
+     alternatives are the two D10 rejected — a floor below 22 px, or a pane
+     that scrolls by design — and this is the second one, in the one grouping
+     where it cannot be avoided. **For the owner.**
+
+514. **`lanesFor` gained a `cap` option** rather than the timeline reaching
+     into `LANE_CAP`'s meaning: `LANE_CAP` is still the ceiling and the
+     reader's own list of lanes is still uncapped. "Other" counts against the
+     room like any other lane, so a pane with room for three asks for two and
+     lets Other be the third — one recomputation, only in a pane too short for
+     what the first pass produced.
+
+515. **The lens-chip flake that turned the check red on this run's own bench
+     push was fixed on a branch `m0` never took.** `33259de`, "a lens chip is
+     read once its record's century has landed", is on `origin/m30c-lens-chip-race`
+     and is not an ancestor of `m0`; the test on `m0` reads the names as soon
+     as the badges exist. The wait comes here, with a count on it — `every` over
+     an empty list is true, and the header is emptied and written again in one
+     go, so a poll between the two would pass on no chips at all. Deviation 499
+     on that branch is a different 499 from this file's.
+
+516. **There is a browser in this sandbox, so nothing skipped.** The brief says
+     `node --test` skips every `*-browser.test.mjs` here; `findChrome()` finds
+     Playwright's Chromium at `/opt/pw-browsers/chromium-1194`, and the whole
+     suite ran with the browser tests in it — **1,170 tests, 0 skipped, 0
+     todo** at the last commit. The GitHub check was read after every push all
+     the same, and the browser measurements above were taken locally rather
+     than being unavailable.
+
 ## I6: what the graph's notch actually costs
 
 Written before anything was changed, which is what the index2 review's
@@ -3158,6 +3253,63 @@ at k=4 the viewport holds 6,100 of 20,000 stacks and 12,925 of 39,265 lines —
 so the cull is the change expected to move the number, exactly as amendment A2
 says. The bucketing goes in anyway: it is cheap, it is correct, and it is worth
 1.58× to the reader who zooms back out.
+
+
+## I6: what the notch costs now, and what the timeline draws
+
+**Ten wheel notches on the whole window at 20,000 events: 6.1 s → 2.4 s**, and
+one notch 175–787 ms → 164–330 ms. Same machine, same corpus, same method as
+the measurement above — headless Chromium 152 at 1440×900 over
+`tools/serve.mjs`, on the synthetic 20,000-event corpus built out to a real
+`data/index/`, one notch dispatched at the middle of the view — so the two
+tables can be read against each other.
+
+| | before | after |
+|---|---|---|
+| elements at rest, k = 1 | 24,310 | 24,310 (nothing is off screen at rest) |
+| elements after ten notches, k = 4.5 | — | **10,177** of the 24,310 the old drawing kept |
+| ten notches | **6,088 ms** | **2,446 ms** |
+| the last notch of the ten | 756 ms | 164 ms |
+| `getScreenCTM` | 1,283 ms, 35.2 % | out of the top five |
+| building and inserting the DOM | 1,281 ms, 35.2 % | 378 + 350 + 135 ms |
+| `stackLayout` and everything under it | 338 ms, 9.3 % | 149 ms |
+| the browser's own work, attributed to no script | — | 1,734 ms, 40.5 % |
+
+Where the time went, in order: **the cull** (two thirds of the elements, and
+with them two thirds of the layout and the painting), then **the second
+`getScreenCTM`** the cull itself introduced and deviation 508 took back out,
+then **the bucket**, which on the way in is worth nothing at all — a notch is
+×1.16 and a bucket ×1.044 — and 1.58× on the way back. It is not the notch's
+cost that the bucketing pays for; it is the reader who zooms out again, and
+nine of nineteen stackings on that trip are now cache hits. The bench case was
+run again at the end of the run and says the same thing more loudly on this
+machine: ten notches in and ten back out cost **4,042 ms on the raw `k` and
+1,690 ms on the bucket**, 2.4×, with the same nine hits of nineteen; forward
+only, 1,965 against 1,681 ms with no hits either way, which is noise and not a
+saving.
+
+What is left is not code: 40.5 % of the profile is inside the browser laying
+out and painting the ten thousand elements that really are on the screen. The
+target of a second is in deviation 511.
+
+**The timeline.** The row cap is `clamp(floor((paneHeight − AXIS_HEIGHT) /
+floor), 1, ceiling)`, with the floor a row's 14 px or a named lane's 22 px and
+the ceiling `MAX_ROWS` or `LANE_CAP`; a pane that has measured nothing is not
+capped at all. Measured in a browser, on the world data:
+
+| window | pane | group | before | after |
+|---|---|---|---|---|
+| 900 px | 269 px | none | 20 rows, 338 px drawn in a 269 px pane | **15 rows, 269 px** |
+| 460 px | 137 px | none | 20 rows, 338 px in 137 | **5 rows, 137 px** |
+| 900 px | 269 px | actor | 7 lanes, 269 px | 7 lanes, 269 px (unchanged: they fit) |
+| 460 px | 137 px | actor | 7 lanes, 212 px in 137 | **3 lanes, 137 px** |
+| 380 px | 113 px | actor | 7 lanes, 212 px in 113 | **2 lanes, 113 px** |
+| 380 px | 113 px | region | 5 lanes, 168 px in 113 | 5 lanes, 168 px — deviation 513 |
+
+`MAX_ROWS` is a ceiling now and its comment says so. The todo on "the lanes
+are laid out again when the window changes height" is off: at 900 px the pane
+holds fifteen rows and at 460 px five, so a shorter window is a different
+drawing and the test can see it.
 
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
@@ -3310,3 +3462,4 @@ I5 started 2026-09-08T11:52:56Z by scheduled
 I5 done
 I6 started 2026-09-08T12:21:33Z by scheduled
 I6 started 2026-09-08T14:12:43Z by scheduled
+I6 done
