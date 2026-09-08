@@ -3406,6 +3406,15 @@ The numbering continues from 401, which is M31-3's last.
      or without `$CHROME` set, so the browser tests ran in this sandbox too:
      **1,209 tests, 0 skipped, 0 todo, 0 failed**, against 1,191 before the
      run. The GitHub check was read after every push all the same.
+539. **The I8 section is a comment on pull request #1 and not in its body**,
+     as I4a's, M30c's, I5's and I6's are (deviations 483, 498, 506, 517), for
+     the same reason: the body is 172 KB on one line, the tool replaces the
+     whole of it, and one dropped line would silently destroy the record of
+     thirty milestones. Posted whole and ready to paste in above `### I3`:
+     https://github.com/goncalojacob/atlas-causal/pull/1#issuecomment-5588565574
+     **For the owner:** five runs have now done this, and the answer is
+     either a shorter body — the milestone sections are what this file is for
+     — or a run that is not asked to edit it.
 
 ## I8: what was derived, and what the Action must still run
 
