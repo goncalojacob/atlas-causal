@@ -928,6 +928,20 @@ svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align:
 .timeline .bar.in-horizon.far { opacity: 0.45; }
 .timeline .bar.in-horizon.on-path, .timeline .bar.in-horizon.selected { opacity: 1; }
 
+/* An event that has parts: a second, thinner outline outside its bar, saying
+   there is more inside — the same ring the map and the graph draw, under every
+   grouping, wherever the bracket is not (m30c-brief, §1). It carries the bar's
+   own emphasis classes and not the word `bar`, so it reddens and fades with
+   the bar and no selector that counts bars counts outlines. */
+.timeline .ring { fill: none; stroke: var(--cobalt); pointer-events: none; }
+.timeline .ring.on-path, .timeline .ring.selected { stroke: var(--madder); }
+.timeline .ring.faded { opacity: 0.28; }
+.timeline .ring.lens-near { opacity: 0.22; }
+.timeline .ring.lens-near.selected, .timeline .ring.lens-near.on-path { opacity: 0.6; }
+.timeline .ring.in-horizon.mid { opacity: 0.72; }
+.timeline .ring.in-horizon.far { opacity: 0.45; }
+.timeline .ring.in-horizon.on-path, .timeline .ring.in-horizon.selected { opacity: 1; }
+
 /* A large event: a band the whole height of the drawing rather than a bar in
    one lane (large.js). Faint, because it is the ground the other events stand
    on and not a mark competing with them; and with no handle and no cursor of

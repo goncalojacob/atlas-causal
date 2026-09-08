@@ -270,3 +270,78 @@ test('no bracket where the parts cross lanes, and none at all with no grouping',
     assert.equal(await page.eval(brackets), 0, 'and with no grouping there are no lanes to draw one on');
   }, { device: { width: 1280, height: 700, deviceScaleFactor: 1 } });
 });
+
+// --- a parent looks like one, wherever the bracket is not --------------------
+//
+// M30c, §1: the bracket of A9 is drawn only where the parts share a lane and
+// the lanes are named, so under `group: none` — the default — and over a
+// parent whose parts cross lanes, nothing said a parent was one. The ring is
+// what a reader sees where the bracket is not, and it is drawn under every
+// grouping. `fixture-event-f` is the one parent either corpus carries; its
+// parts fall in two lanes, so it never has a bracket at all.
+const RING_AROUND = (id) => `
+  const svg = document.querySelector('#timeline svg.timeline');
+  const bar = svg.querySelector('rect[data-id="${id}"]');
+  if (!bar) return { bar: null };
+  const box = (el) => ({
+    x: Number(el.getAttribute('x')), y: Number(el.getAttribute('y')),
+    width: Number(el.getAttribute('width')), height: Number(el.getAttribute('height')),
+  });
+  const b = box(bar);
+  const rings = [...svg.querySelectorAll('rect.ring')];
+  const ring = rings.find((el) => Math.abs(box(el).x - (b.x - 2)) < 0.01) ?? null;
+  const style = ring ? getComputedStyle(ring) : null;
+  return {
+    bar: b,
+    bars: svg.querySelectorAll('rect.bar').length,
+    rings: rings.length,
+    layer: ring ? ring.parentNode.getAttribute('class') : null,
+    ring: ring === null ? null : {
+      ...box(ring),
+      classes: ring.getAttribute('class'),
+      id: ring.getAttribute('data-id'),
+      tabindex: ring.getAttribute('tabindex'),
+      title: ring.querySelector('title') ? ring.querySelector('title').textContent : null,
+      fill: style.fill,
+      events: style.pointerEvents,
+      stroke: Number(ring.getAttribute('stroke-width')),
+    },
+  };`;
+
+test('a parent\'s bar is ringed under no grouping and under the region lanes', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    // With no grouping at all, where there is no vertical room for a bracket
+    // and the card's "Part of" line used to be the only word on it.
+    await open(page, url('?fixtures=1'), READY);
+    const packed = await page.eval(RING_AROUND('fixture-event-f'));
+    assert.ok(packed.bar, 'the parent has a bar of its own in the packed rows');
+    assert.equal(packed.rings, 1, 'one ring, for the one parent on the fixtures');
+    assert.ok(packed.ring, 'and it is around that bar');
+    assert.equal(packed.ring.y, packed.bar.y - 2, 'two pixels outside it on every side');
+    assert.equal(packed.ring.width, packed.bar.width + 4);
+    assert.equal(packed.ring.height, packed.bar.height + 4);
+    assert.equal(packed.ring.fill, 'none', 'an outline and not a second bar');
+    assert.equal(packed.ring.id, null, 'it names no record');
+    assert.equal(packed.ring.tabindex, null, 'and is not in the tab order');
+    assert.equal(packed.ring.title, null, 'nor does it offer a tooltip of its own');
+    assert.equal(packed.ring.events, 'none', 'the bar under it takes every click');
+    assert.ok(packed.ring.stroke > 0 && packed.ring.stroke < 1, `thinner than the bar: ${packed.ring.stroke}`);
+    assert.equal(packed.layer, 'layer layer-bars', 'drawn through the bars\' own pool');
+
+    // And in the region lanes, where this parent's parts cross lanes and it is
+    // drawn as a band rather than a bracket. Selected, because that is the
+    // only way to be sure of a bar of its own there (the band test above), and
+    // it exercises the layer the reader's own records are drawn in.
+    await open(page, url('?fixtures=1&group=region&selected=fixture-event-f'), READY);
+    const banded = await page.eval(RING_AROUND('fixture-event-f'));
+    assert.ok(banded.ring, 'the ring is drawn under a grouping too');
+    assert.equal(banded.layer, 'layer layer-held', 'in the layer its bar is in');
+    assert.match(banded.ring.classes, /\bselected\b/, 'and it carries the emphasis its bar carries');
+    assert.doesNotMatch(banded.ring.classes, /\bbar\b/, 'a ring is an outline, not a record');
+
+    // A leaf is drawn exactly as it was.
+    const leaf = await page.eval(RING_AROUND('fixture-event-b'));
+    assert.ok(leaf.bar, 'the leaf has a bar');
+    assert.equal(leaf.ring, null, 'and nothing around it');
+  }, { device: { width: 1280, height: 700, deviceScaleFactor: 1 } });
+});

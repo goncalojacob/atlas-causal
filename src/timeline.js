@@ -34,6 +34,7 @@ import { workingSet, heldSet } from './emphasis.js';
 import { walkOrSelect } from './chain.js';
 import { lanesFor, rowLanes, laneOf, barBox } from './lanes.js';
 import { largeEventsIn, bracketsIn } from './large.js';
+import { isParent, ringClasses } from './parts.js';
 import { eventsInView } from './util/viewport.js';
 import { densityPath } from './density.js';
 
@@ -68,6 +69,12 @@ const PADDING = 0.04;
 const BAR_MERGE = 11;
 const HANDLE_WIDTH = 9;
 const BADGE_SIZE = 10;
+// The corner a bar is rounded by, and the ring outside a parent's bar: how far
+// outside it on every side, and how thin. A ring says "there is more inside"
+// and nothing else, so it is thinner than the bar's own outline.
+const BAR_ROUND = 3;
+const RING_GAP = 2;
+const RING_WIDTH = 0.8;
 // The stub an event past the margin is drawn as: a tick on the floor of its
 // lane, faded, with no title and no click. It is not a bar — it says the
 // dataset carries on past what the reader is looking at, and nothing else
@@ -445,9 +452,17 @@ export function createTimeline(container, { atlas, state, createScale = createLi
         ? { 'data-id': item.id, 'data-cluster': null }
         : { 'data-cluster': key, 'data-id': null };
       const el = bars.take('rect', {
-        x: item.x, y, width: item.width, height: height_, rx: 3, class: classes, ...data,
+        x: item.x, y, width: item.width, height: height_, rx: BAR_ROUND, class: classes, ...data,
         ...barControl(lane.id, title),
       }, { title });
+      // An event with parts: a second, thinner outline two pixels outside its
+      // bar on every side, under every grouping including `none` — the one
+      // look a parent has on the three views (m30c-brief, §1). Through the
+      // same pool as the bars, so a state change still updates the drawing in
+      // place rather than rebuilding it. A stack gets none: a stack is a count
+      // and not a record, and the ring would be a claim about whichever of the
+      // bars under it happens to be on top.
+      if (!count && isParent(atlas, item.event)) ring(item, { classes, y, height: height_ });
       if (count) {
         badges.take('text', {
           x: item.x + item.width + 3, y: y + height_ / 2, class: `cluster-count ${item.inside ? '' : 'faded'}`.trim(),
@@ -455,6 +470,17 @@ export function createTimeline(container, { atlas, state, createScale = createLi
         }, { text: `+${count}` });
       }
       return el;
+    };
+
+    // Not a control: no id, no title, no focus. What an event's parts are is
+    // read on its card, and the bar under the ring opens it.
+    const ring = (item, { classes, y: top, height: tall }) => {
+      bars.take('rect', {
+        x: item.x - RING_GAP, y: top - RING_GAP,
+        width: item.width + RING_GAP * 2, height: tall + RING_GAP * 2,
+        rx: BAR_ROUND + RING_GAP, class: ringClasses(classes, 'bar'),
+        'stroke-width': RING_WIDTH,
+      });
     };
 
     // Stacks, per group: the events in the window merge with each other and
@@ -713,9 +739,20 @@ export function createTimeline(container, { atlas, state, createScale = createLi
       ].filter(Boolean).join(' ');
       const name = labelOf(atlas, item.event);
       into.held.take('rect', {
-        x: item.x, y, width: item.width, height: barHeight(), rx: 3, class: classes, 'data-id': item.id,
+        x: item.x, y, width: item.width, height: barHeight(), rx: BAR_ROUND, class: classes, 'data-id': item.id,
         ...barControl(lanes[i]?.id ?? '', name ?? LOADING_LABEL),
       }, { title: name ?? LOADING_LABEL });
+      // And the ring around a parent the reader is holding, through this
+      // layer's own pool rather than the bars': it has to sit above the
+      // neighbours its bar sits above.
+      if (isParent(atlas, item.event)) {
+        into.held.take('rect', {
+          x: item.x - RING_GAP, y: y - RING_GAP,
+          width: item.width + RING_GAP * 2, height: barHeight() + RING_GAP * 2,
+          rx: BAR_ROUND + RING_GAP, class: ringClasses(classes, 'bar'),
+          'stroke-width': RING_WIDTH,
+        });
+      }
       if (item.selected || item.onPath) {
         into.heldLabels.take('text', {
           x: item.x + item.width + 4, y: y + barHeight() / 2, class: `bar-label ${item.selected ? 'selected' : ''}`, 'dominant-baseline': 'middle',

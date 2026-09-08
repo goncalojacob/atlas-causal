@@ -26,6 +26,7 @@ import {
 } from '../../cluster.js';
 import { horizonBand } from '../../horizon.js';
 import { LOADING_LABEL } from '../../attributes.js';
+import { ringClasses } from '../../parts.js';
 
 // Sizes in SVG units at k = 1; every one of them is divided by k when drawn,
 // so a mark, a badge and a label keep their size on screen at any zoom.
@@ -92,16 +93,6 @@ function markClasses(event, { selected, pathIds, actorIds, narrativeIds = null, 
     pathIds.has(event.id) ? 'on-path' : '',
     event.id === selected ? 'selected' : '',
   ].join(' ').replace(/\s+/g, ' ').trim();
-}
-
-// A parent's ring carries the mark's own emphasis, minus the word `mark`
-// itself: it reddens with the walked chain, dims with the lens and fades
-// outside the window exactly as the mark does, and it can never say something
-// the mark is not saying. Dropping `mark` is what keeps every selector that
-// counts `circle.mark` — the tests, the prerendered pages — counting records
-// and not outlines.
-function ringClasses(classes) {
-  return ['ring', ...classes.split(' ').filter((c) => c !== 'mark')].join(' ');
 }
 
 // pointOf resolves an event to the coordinates of the place it names; the
@@ -263,7 +254,7 @@ export function createEventsLayer(group, projection, {
         // hair thick at the world would be a band at a city.
         if (ring) {
           target.appendChild(svg('circle', {
-            cx: x, cy: y, r: (radius + RING_GAP) / k, class: ringClasses(classes),
+            cx: x, cy: y, r: (radius + RING_GAP) / k, class: ringClasses(classes, 'mark'),
             'stroke-width': RING_WIDTH / k,
           }));
         }
