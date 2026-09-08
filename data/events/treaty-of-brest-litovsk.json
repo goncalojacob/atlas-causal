@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "treaty-of-brest-litovsk",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": "2026-09-05",
+  "review": {
+    "flags": [
+      "imported-facts",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q122371",
+  "sitelinks": 62,
+  "wikipedia": {
+    "en": "Treaty of Brest-Litovsk",
+    "pt": "Tratado de Brest-Litovski"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Brest-Litovsk\", revision 1368334684"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Tratado de Brest-Litovski\", revision 69632275"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q122371"
+    }
+  ],
+  "title": "Treaty of Brest-Litovsk",
+  "summary": "Signed on 3 March 1918, the treaty took Russia out of the First World War on terms that gave up Poland, the Baltic provinces, Finland, Ukraine and the Caucasus districts — a third of the empire's population and most of its coal and iron. Lenin carried it against half his own party on the argument that the revolution needed to survive more than it needed territory. It was annulled in November when Germany itself capitulated. For this atlas its consequence is in the west: the divisions it released from the eastern front are the ones that attacked in Flanders in the spring of 1918.",
+  "when": {
+    "start": 1918,
+    "end": 1918,
+    "date": "1918-03-03"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": [
+    {
+      "actor": "russia-soviet-union",
+      "role": "signatory"
+    },
+    {
+      "actor": "germany-prussia",
+      "role": "signatory"
+    },
+    {
+      "actor": "austria-hungary",
+      "role": "signatory"
+    },
+    {
+      "actor": "turkey-ottoman-empire",
+      "role": "signatory"
+    },
+    {
+      "actor": "bulgaria",
+      "role": "signatory"
+    }
+  ]
+}

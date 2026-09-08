@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "cuban-revolution",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": "2026-09-05",
+  "review": {
+    "flags": [
+      "imported-facts",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q11264",
+  "sitelinks": 85,
+  "wikipedia": {
+    "en": "Cuban Revolution",
+    "pt": "Revolução Cubana"
+  },
+  "sources": [
+    {
+      "source": "macqueen-1997-decolonization",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Cuban Revolution\", revision 1373305240"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Revolução Cubana\", revision 72821388"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q11264"
+    }
+  ],
+  "title": "Cuban Revolution",
+  "summary": "Fidel Castro's 26 July Movement, reduced to a handful of survivors after landing from the Granma in 1956, built a guerrilla force in the Sierra Maestra and took Havana on 1 January 1959 when Batista's government collapsed. Within three years the revolution had nationalised American property, survived an invasion at the Bay of Pigs and taken the world to the edge of nuclear war over Soviet missiles. Its consequence for this atlas is elsewhere: a small state with an army, a doctrine of internationalism and a willingness to use both, which is what arrived in Angola in the autumn of 1975.",
+  "when": {
+    "start": 1959,
+    "end": 1959,
+    "date": "1959-01-01"
+  },
+  "place": null,
+  "region": "americas",
+  "actors": [
+    {
+      "actor": "cuba",
+      "role": "government"
+    }
+  ]
+}

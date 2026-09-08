@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "banco-comercial-portugues",
+  "kind": "actor",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-08",
+  "revised": "2026-09-08",
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m41-retracted"
+    ],
+    "note": "Retracted in M41b: BCP, founded in 1985 in the liberalisation that followed nearly a decade of state control of Portuguese banking, and now the largest private bank. The atlas holds the nationalisation of the banks in 1975 and the resolution of Banco Espírito Santo in 2014, and BCP was an actor in neither. It would need a record of the banking law of the mid-1980s, or of the privatisations of the 1990s, before it had anything to be joined to."
+  },
+  "wikidata": "Q118581",
+  "sitelinks": 19,
+  "wikipedia": {
+    "en": "Banco Comercial Português",
+    "pt": "Banco Comercial Português"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q118581"
+    }
+  ],
+  "actorType": "institution",
+  "names": [
+    "Banco Comercial Português"
+  ],
+  "summary": "Wikidata item Q118581, imported by tools/import/wikidata.mjs. The item's own description reads \"Portuguese bank\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1985,
+    "end": null
+  },
+  "where": null
+}

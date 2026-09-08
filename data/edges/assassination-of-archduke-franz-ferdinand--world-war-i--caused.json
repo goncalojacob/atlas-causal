@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "assassination-of-archduke-franz-ferdinand--world-war-i--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Assassination of Archduke Franz Ferdinand\", revision 1367945761"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"World War I\", revision 1372979664"
+    }
+  ],
+  "from": "assassination-of-archduke-franz-ferdinand",
+  "to": "world-war-i",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The claim is about the trigger and the five weeks after it, not about the origins of the war. Vienna decided on war with Serbia within a fortnight of the killing, obtained Berlin's guarantee, and sent an ultimatum drafted so that it would be rejected; the mobilisations of the last week of July followed from that, and the war was general by 4 August. Why the powers were in a position where a murder could do this — the alliance blocs, the naval and colonial rivalries, the timetables that made mobilisation hard to stop — is a separate argument this edge does not make.",
+  "dispute": null
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "lebanese-civil-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": "2026-09-05",
+  "review": {
+    "flags": [
+      "imported-facts",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q208484",
+  "sitelinks": 61,
+  "wikipedia": {
+    "en": "Lebanese Civil War",
+    "pt": "Guerra Civil Libanesa"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Lebanese Civil War\", revision 1370626682"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Guerra Civil Libanesa\", revision 72825388"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q208484"
+    }
+  ],
+  "title": "Lebanese Civil War",
+  "summary": "Fifteen years of war from April 1975 between Lebanon's Maronite, Sunni, Shia, Druze and Palestinian forces, with Syrian and Israeli armies in the country for most of it and a multinational force for part. About a hundred and twenty thousand people were killed and a million displaced; Beirut was divided by a green line for the duration. The Taif agreement of 1989 ended it by adjusting the confessional division of offices that had helped cause it. Its most consequential product outlasted it: Hezbollah, formed in the Israeli occupation of the south after 1982, was the one militia that did not disarm.",
+  "when": {
+    "start": 1975,
+    "end": 1990,
+    "date": "1975-04-13",
+    "endDate": "1990-10-13"
+  },
+  "place": null,
+  "region": "asia",
+  "actors": [
+    {
+      "actor": "lebanon",
+      "role": "belligerent"
+    },
+    {
+      "actor": "syria",
+      "role": "belligerent"
+    },
+    {
+      "actor": "israel",
+      "role": "belligerent"
+    }
+  ]
+}

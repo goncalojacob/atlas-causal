@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "wall-street-crash-of-1929",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": "2026-09-05",
+  "review": {
+    "flags": [
+      "imported-facts",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q201684",
+  "sitelinks": 62,
+  "wikipedia": {
+    "en": "Wall Street crash of 1929",
+    "pt": "Quinta-Feira Negra"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Wall Street crash of 1929\", revision 1364914482"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Quinta-Feira Negra\", revision 72352350"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q201684"
+    }
+  ],
+  "title": "Wall Street crash of 1929",
+  "summary": "Share prices on the New York Stock Exchange broke in the last week of October 1929, on Black Thursday the 24th and Black Tuesday the 29th, ending a speculative boom that had run for five years and much of it on margin. The market went on falling until the summer of 1932, by which time it had lost about nine tenths of its 1929 value. The crash ruined the confidence of American depositors and lenders and is conventionally the date the Great Depression is counted from, though what it actually contributed to the Depression is one of the longest arguments in economic history.",
+  "when": {
+    "start": 1929,
+    "end": 1929,
+    "endDate": "1929-10-29"
+  },
+  "place": null,
+  "region": "americas",
+  "actors": [
+    {
+      "actor": "united-states-of-america",
+      "role": "government"
+    }
+  ]
+}

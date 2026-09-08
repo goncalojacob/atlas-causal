@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "revolutionary-socialist-party",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-08",
+  "revised": "2026-09-08",
+  "review": {
+    "flags": [
+      "imported-facts",
+      "summary-drafted"
+    ],
+    "note": "Summary drafted in M41b from the two cached leads and from the Portuguese lead of the Popular Democratic Union, which is what names the PSR among the Bloco's three founders. Both leads date the merger that made the PSR to 1978 and the item opens its interval in 1979; the interval is left as the item had it."
+  },
+  "wikidata": "Q2054807",
+  "sitelinks": 10,
+  "wikipedia": {
+    "en": "Revolutionary Socialist Party (Portugal)",
+    "pt": "Partido Socialista Revolucionário (Portugal)"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Revolutionary Socialist Party (Portugal)\", revision 1352992980"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Partido Socialista Revolucionário (Portugal)\", revision 72197991"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q2054807"
+    }
+  ],
+  "actorType": "institution",
+  "names": [
+    "Revolutionary Socialist Party",
+    "PSR",
+    "Revolutionary Socialist Party (Portugal)",
+    "Partido Socialista Revolucionário (Portugal)"
+  ],
+  "summary": "The Revolutionary Socialist Party was formed by the merger of two Trotskyist organisations, the Internationalist Communist League and the Workers' Revolutionary Party, and was recognised as the Portuguese section of the Fourth International. In 1999 it was one of the three parties at the origin of the Bloco de Esquerda.",
+  "when": {
+    "start": 1979,
+    "end": 1999
+  },
+  "where": null
+}

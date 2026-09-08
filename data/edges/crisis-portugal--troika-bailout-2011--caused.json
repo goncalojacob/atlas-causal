@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "crisis-portugal--troika-bailout-2011--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-08",
+  "revised": null,
+  "review": {
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"2010–2014 Portuguese financial crisis\", revision 1372626457"
+    },
+    {
+      "source": "reis-2013-portuguese-slump",
+      "locator": null
+    }
+  ],
+  "from": "crisis-portugal",
+  "to": "troika-bailout-2011",
+  "type": "caused",
+  "confidence": "consensus",
+  "explanation": "The request of 6 April 2011 is what the crisis produced. By the spring of 2011 the state could not repay or refinance its debt on the market at a rate the treasury could carry; parliament had rejected the fourth austerity package, the government had resigned, and the memorandum with the Commission, the European Central Bank and the Fund was signed six weeks later. The direction is not in question and the record at the other end says the same thing from its own side. What is argued about is the composition of the crisis rather than this link, and the atlas puts that argument on the edge from the euro."
+}

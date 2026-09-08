@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "october-revolution",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": "2026-09-05",
+  "review": {
+    "flags": [
+      "imported-facts",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q42976",
+  "sitelinks": 107,
+  "wikipedia": {
+    "en": "October Revolution",
+    "pt": "Revolução de Outubro"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"October Revolution\", revision 1370630358"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Revolução de Outubro\", revision 71345414"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q42976"
+    }
+  ],
+  "title": "October Revolution",
+  "summary": "On the night of 25 October 1917 in the old calendar — 7 November in ours — Bolshevik forces under the Petrograd Soviet's Military Revolutionary Committee occupied the bridges, the telegraph and the Winter Palace, and the Second Congress of Soviets, meeting as they did so, declared that power had passed to itself. There was almost no fighting in Petrograd. What followed was not almost anything: the dissolution of the Constituent Assembly in January, a separate peace with Germany in March, and five years of civil war. It is in the atlas as the event from which the Soviet Union, and the communist parties of the rest of the century, are counted.",
+  "when": {
+    "start": 1917,
+    "end": 1917,
+    "date": "1917-10-25",
+    "endDate": "1917-10-26"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": [
+    {
+      "actor": "russia-soviet-union",
+      "role": "government"
+    }
+  ]
+}

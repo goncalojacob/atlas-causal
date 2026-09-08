@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "2006-lebanon-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": "2026-09-05",
+  "review": {
+    "flags": [
+      "imported-facts",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q49104",
+  "sitelinks": 67,
+  "wikipedia": {
+    "en": "2006 Lebanon War",
+    "pt": "Guerra do Líbano de 2006"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"2006 Lebanon War\", revision 1373390187"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Guerra do Líbano de 2006\", revision 72061620"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q49104"
+    }
+  ],
+  "title": "2006 Lebanon War",
+  "summary": "Hezbollah crossed the frontier on 12 July 2006, killed and captured Israeli soldiers, and Israel answered with thirty-four days of air attack and a ground incursion into southern Lebanon. About twelve hundred Lebanese and a hundred and sixty Israelis were killed, much of the southern suburbs of Beirut and the country's infrastructure were destroyed, and a million people were displaced. It ended in a Security Council ceasefire with a strengthened peacekeeping force and no disarmament. Both sides claimed it; the party that had not lost against the strongest army in the region emerged from it as the dominant force in Lebanese politics.",
+  "when": {
+    "start": 2006,
+    "end": 2006,
+    "endDate": "2006-08-14"
+  },
+  "place": null,
+  "region": "asia",
+  "actors": [
+    {
+      "actor": "israel",
+      "role": "belligerent"
+    },
+    {
+      "actor": "lebanon",
+      "role": "belligerent"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "first-indochina-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": "2026-09-05",
+  "review": {
+    "flags": [
+      "imported-facts",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q748780",
+  "sitelinks": 65,
+  "wikipedia": {
+    "en": "First Indochina War",
+    "pt": "Primeira Guerra da Indochina"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Indochina War\", revision 1373236226"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Primeira Guerra da Indochina\", revision 72128882"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q748780"
+    }
+  ],
+  "title": "First Indochina War",
+  "summary": "France went back to Indochina after 1945 and found a state already declared there: the Democratic Republic of Vietnam, proclaimed by Ho Chi Minh in September 1945. The war that began in December 1946 lasted eight years, was paid for towards the end largely by the United States, and ended at Dien Bien Phu in May 1954, where a French expeditionary force was besieged and destroyed by an army it had assumed could not bring artillery to the hills. Geneva then partitioned Vietnam at the seventeenth parallel pending elections that were never held. It is in the atlas as the first European colonial war of the century to be lost outright in the field.",
+  "when": {
+    "start": 1946,
+    "end": 1954,
+    "date": "1946-12-19",
+    "endDate": "1954-08-01"
+  },
+  "place": null,
+  "region": "asia",
+  "actors": [
+    {
+      "actor": "france",
+      "role": "belligerent"
+    },
+    {
+      "actor": "vietnam-annam-cochin-china-tonkin",
+      "role": "belligerent"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "bucha-massacre",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": "2026-09-05",
+  "review": {
+    "flags": [
+      "imported-facts",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q111467700",
+  "sitelinks": 67,
+  "wikipedia": {
+    "en": "Bucha massacre",
+    "pt": "Massacre de Bucha"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Bucha massacre\", revision 1370596341"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Massacre de Bucha\", revision 71884669"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q111467700"
+    }
+  ],
+  "title": "Bucha massacre",
+  "summary": "Russian forces occupied Bucha, north-west of Kyiv, for a month from the end of February 2022, and when they withdrew at the end of March the bodies of several hundred civilians were found in the streets, in yards and in a mass grave beside the church — shot, many with their hands tied. Ukrainian and international investigators have documented torture, rape and summary execution; Russia has said the scene was staged. It is in the atlas because it is the point at which the invasion stopped being argued about as a question of borders in most of Europe.",
+  "when": {
+    "start": 2022,
+    "end": 2022,
+    "date": "2022-03-31",
+    "endDate": "2022-03-31"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": [
+    {
+      "actor": "russia-soviet-union",
+      "role": "perpetrator"
+    }
+  ]
+}

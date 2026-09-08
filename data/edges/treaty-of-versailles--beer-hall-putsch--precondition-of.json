@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "treaty-of-versailles--beer-hall-putsch--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Versailles\", revision 1371877530"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Beer Hall Putsch\", revision 1370735026"
+    }
+  ],
+  "from": "treaty-of-versailles",
+  "to": "beer-hall-putsch",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The putsch was mounted in the worst month of the German crisis of 1923, and that crisis was a crisis of the treaty: France and Belgium had occupied the Ruhr in January because Germany had defaulted on reparations deliveries, the government answered with passive resistance financed by printing money, and by November the mark had gone. The politics of the Kampfbund were built entirely on the treaty — the stab in the back, the November criminals, the reparations. The claim is about the occasion and the grievance, not that Versailles produced Nazism: the same treaty was also being fulfilled, at the same moment, by governments that survived it.",
+  "dispute": null
+}

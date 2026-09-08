@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "war-in-afghanistan-2001-2021",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": "2026-09-05",
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m40-retracted"
+    ],
+    "note": "Retracted in M40b: twenty years of war from October 2001 to the Taliban's return in August 2021. Its cause is the attacks of 11 September 2001, which is not a record here — the War on Terrorism as a series was among the twenty-nine candidates the import refused for want of a lane — and its consequences in this dataset are none. Portugal sent forces under ISAF for most of the war and the atlas holds no record of that either. It would need 11 September first."
+  },
+  "wikidata": "Q182865",
+  "sitelinks": 73,
+  "wikipedia": {
+    "en": "War in Afghanistan (2001–2021)",
+    "pt": "Guerra do Afeganistão (2001–2021)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q182865"
+    }
+  ],
+  "title": "War in Afghanistan (2001–2021)",
+  "summary": "Wikidata item Q182865, imported by tools/import/wikidata.mjs. The item's own description reads \"armed conflict between NATO countries and Afghanistan from 2001 to 2021\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2001,
+    "end": 2021,
+    "date": "2001-10-07",
+    "endDate": "2021-08-30"
+  },
+  "place": null,
+  "region": "asia",
+  "actors": []
+}

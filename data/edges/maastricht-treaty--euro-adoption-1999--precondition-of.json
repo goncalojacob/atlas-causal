@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "maastricht-treaty--euro-adoption-1999--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "reis-2013-portuguese-slump",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Maastricht Treaty\", revision 1360900516"
+    }
+  ],
+  "from": "maastricht-treaty",
+  "to": "euro-adoption-1999",
+  "type": "precondition-of",
+  "confidence": "consensus",
+  "explanation": "The criteria Portugal spent the 1990s meeting are in the treaty: a deficit under three per cent, debt under sixty or falling towards it, inflation and long rates within a margin of the best three, and two years in the exchange rate mechanism. Portugal was in the first group of eleven on 1 January 1999 because it had met them, and the meeting of them is what Portuguese fiscal policy after 1992 consisted of. The treaty also decided what kind of union it would be — a single monetary policy with no common budget and no lender of last resort for governments — which is the design that made the fall in interest rates after 1999 arrive without any brake on what it financed.",
+  "dispute": null
+}

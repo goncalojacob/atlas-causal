@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "russo-georgian-war--russo-ukrainian-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Russo-Georgian War\", revision 1371976175"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Russo-Ukrainian war\", revision 1372896482"
+    }
+  ],
+  "from": "russo-georgian-war",
+  "to": "russo-ukrainian-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "What happened in Georgia in 2008 was done again in Ukraine in 2014 in the same order: a separatist territory supported and then garrisoned, a passportisation of its residents that supplied a protection claim, a rapid operation the West was not prepared for, and a recognition of the result that nobody was going to reverse. The four months of Western sanction that followed 2008 lapsed and the reset with Moscow was under way within a year. The claim is that the precedent and its cost were both established in 2008; the causes of 2014 are in Ukraine, and this edge does not reach for them.",
+  "dispute": null
+}

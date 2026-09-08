@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "2016-turkish-coup-d-etat-attempt",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": "2026-09-05",
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m40-retracted"
+    ],
+    "note": "Retracted in M40b: the failed coup of 15 July 2016 and the purges that followed it. The atlas holds nothing in Turkey between the treaty of Lausanne in 1923 and this night, so there is no record here the attempt can be argued to have changed and none that produced it, and no Portuguese link at all. It would need the Turkish republic's own history — the coups of 1960, 1971 and 1980 at least — before it had an honest edge."
+  },
+  "wikidata": "Q25906338",
+  "sitelinks": 69,
+  "wikipedia": {
+    "en": "2016 Turkish coup d'état attempt",
+    "pt": "Tentativa de golpe de Estado na Turquia em 2016"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q25906338"
+    }
+  ],
+  "title": "2016 Turkish coup d'état attempt",
+  "summary": "Wikidata item Q25906338, imported by tools/import/wikidata.mjs. The item's own description reads \"July 2016 attempted military junta coup in Turkey\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2016,
+    "end": 2016,
+    "date": "2016-07-16"
+  },
+  "place": null,
+  "region": "asia",
+  "actors": []
+}

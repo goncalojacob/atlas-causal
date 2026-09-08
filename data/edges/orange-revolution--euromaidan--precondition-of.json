@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "orange-revolution--euromaidan--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Orange Revolution\", revision 1372581321"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Euromaidan\", revision 1372581234"
+    }
+  ],
+  "from": "orange-revolution",
+  "to": "euromaidan",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Euromaidan is the same square, over the same question of which way the country faces, against the same politician. What 2004 established was the repertoire — the permanent occupation of Independence Square as the way a Ukrainian government is challenged — and what it failed to establish is the reason the repertoire was needed again: the constitutional and anti-corruption settlement of 2005 did not hold, and Yanukovych returned to the presidency by election in 2010. The claim is about the precedent and the unfinished business, not that 2004 caused 2013, whose trigger was the association agreement and Russian pressure against it.",
+  "dispute": null
+}

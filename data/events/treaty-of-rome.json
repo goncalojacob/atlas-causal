@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "id": "treaty-of-rome",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": "2026-09-05",
+  "review": {
+    "flags": [
+      "imported-facts",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q167457",
+  "sitelinks": 68,
+  "wikipedia": {
+    "en": "Treaty of Rome",
+    "pt": "Tratado de Roma (1957)"
+  },
+  "sources": [
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    },
+    {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Rome\", revision 1311520265"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Tratado de Roma (1957)\", revision 72036494"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q167457"
+    }
+  ],
+  "title": "Treaty of Rome",
+  "summary": "Signed on 25 March 1957 by Belgium, France, Italy, Luxembourg, the Netherlands and West Germany, the treaty created the European Economic Community: a customs union with a common external tariff, common policies for agriculture and transport, and institutions — a Commission, a Council, an Assembly and a Court — with powers of their own. It is the constitutional beginning of what became the European Union. For Portugal it arrived as a problem rather than an opportunity: the economy was too protected and too poor to enter, and the regime was in no position to accept the political conditions, so the answer had to be found somewhere else.",
+  "when": {
+    "start": 1957,
+    "end": 1957,
+    "date": "1957-03-25"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": [
+    {
+      "actor": "european-economic-community",
+      "role": "founder"
+    },
+    {
+      "actor": "france",
+      "role": "signatory"
+    },
+    {
+      "actor": "italy-sardinia",
+      "role": "signatory"
+    },
+    {
+      "actor": "belgium",
+      "role": "signatory"
+    },
+    {
+      "actor": "netherlands",
+      "role": "signatory"
+    },
+    {
+      "actor": "luxembourg",
+      "role": "signatory"
+    },
+    {
+      "actor": "german-federal-republic",
+      "role": "signatory"
+    }
+  ]
+}

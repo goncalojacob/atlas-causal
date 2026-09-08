@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "lateran-treaty",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": "2026-09-05",
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m40-retracted"
+    ],
+    "note": "Retracted in M40b: the settlement of the Roman question between Mussolini's Italy and the Holy See in February 1929. The link that would matter is the Portuguese one — the Concordat and Missionary Accord of 1940, negotiated in the same spirit — and the atlas holds no record of either, nor any other Italian or papal event before 2023. Wiring it would mean inventing a link across seventy years. It needs the Concordat of 1940 as a record first."
+  },
+  "wikidata": "Q193270",
+  "sitelinks": 64,
+  "wikipedia": {
+    "en": "Lateran Treaty",
+    "pt": "Tratado de Latrão"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q193270"
+    }
+  ],
+  "title": "Lateran Treaty",
+  "summary": "Wikidata item Q193270, imported by tools/import/wikidata.mjs. The item's own description reads \"Treaty between the Holy See and Kingdom of Italy\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1929,
+    "end": 1985,
+    "date": "1929-02-11",
+    "endDate": "1985-06-03"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}

@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "spanish-civil-war--iberian-pact--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Spanish Civil War\", revision 1373335825"
+    }
+  ],
+  "from": "spanish-civil-war",
+  "to": "iberian-pact",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The pact of 17 March 1939 was signed a fortnight before the war formally ended and with its outcome settled, and the thing it settled was the danger the war had created for Lisbon: a Spain under a victorious military regime, indebted to Berlin and Rome, on the only land frontier Portugal has. The atlas already holds the argument that Portugal's own support for the Nationalists earned it the pact. This edge makes the other half of the claim — that what Salazar wanted from the pact was a Spain bound to stay out of a European war, which is what the Iberian bloc turned out to be worth in 1940.",
+  "dispute": null
+}

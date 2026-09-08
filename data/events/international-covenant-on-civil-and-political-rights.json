@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "international-covenant-on-civil-and-political-rights",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": "2026-09-05",
+  "review": {
+    "flags": [
+      "imported-facts",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q392119",
+  "sitelinks": 54,
+  "wikipedia": {
+    "en": "International Covenant on Civil and Political Rights",
+    "pt": "Pacto Internacional dos Direitos Civis e Políticos"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"International Covenant on Civil and Political Rights\", revision 1371450720"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Pacto Internacional dos Direitos Civis e Políticos\", revision 70560184"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q392119"
+    }
+  ],
+  "title": "International Covenant on Civil and Political Rights",
+  "summary": "Adopted by the General Assembly on 16 December 1966 and in force from 1976, the covenant is the binding half of what the Universal Declaration had proclaimed: life, conscience, expression, assembly, a fair trial and the vote, owed by states to individuals, with a committee to receive reports and, for states that accept the optional protocol, complaints. It was split from the covenant on economic and social rights because the two blocs could not agree that the same machinery should enforce both. Portugal, which could not have signed it in 1966, acceded in 1978, after the constitution that had already written most of it into domestic law.",
+  "when": {
+    "start": 1966,
+    "end": 1966,
+    "date": "1966-12-16"
+  },
+  "place": "new-york",
+  "region": null,
+  "actors": [
+    {
+      "actor": "united-nations",
+      "role": "institution"
+    }
+  ]
+}

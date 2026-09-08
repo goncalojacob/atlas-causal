@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "sidonio-pais--national-republican-party--led",
+  "kind": "relation",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-08",
+  "revised": null,
+  "review": {
+    "flags": [
+      "date",
+      "relation-drafted"
+    ],
+    "note": "Written in M41b from the cached Wikipedia leads it cites, to join an actor the second Portuguese round imported to a record the atlas already held. The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source."
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"National Republican Party (Portugal)\", revision 1254903555"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Partido Nacional Republicano (Portugal)\", revision 71995027"
+    }
+  ],
+  "from": "sidonio-pais",
+  "to": "national-republican-party",
+  "type": "led",
+  "when": {
+    "start": 1918,
+    "end": 1918
+  },
+  "note": "Founded in April 1918 around him and known as the Sidonist party; he was killed that December. Neither lead says who, if anyone, led it afterwards."
+}

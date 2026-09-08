@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "charter-of-the-united-nations",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": "2026-09-05",
+  "review": {
+    "flags": [
+      "imported-facts",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q171328",
+  "sitelinks": 84,
+  "wikipedia": {
+    "en": "Charter of the United Nations",
+    "pt": "Carta das Nações Unidas"
+  },
+  "sources": [
+    {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Charter of the United Nations\", revision 1365430628"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Carta das Nações Unidas\", revision 72336615"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q171328"
+    }
+  ],
+  "title": "Charter of the United Nations",
+  "summary": "Signed at San Francisco on 26 June 1945 by fifty states, the Charter is the founding treaty of the United Nations: a General Assembly of all members, a Security Council of five permanent members with a veto and a standing responsibility for peace and security, a Court, and a Trusteeship Council for the territories taken from the defeated empires. It bound members to settle disputes peacefully and to respect human rights and self-determination, and it made membership itself a thing the great powers could withhold. Portugal, neutral and authoritarian, was kept out for a decade; when it was finally admitted the Assembly's anti-colonial majority became the standing external pressure on its African policy.",
+  "when": {
+    "start": 1945,
+    "end": 1945,
+    "date": "1945-06-26"
+  },
+  "place": null,
+  "region": "americas",
+  "actors": [
+    {
+      "actor": "united-nations",
+      "role": "founder"
+    },
+    {
+      "actor": "united-states-of-america",
+      "role": "signatory"
+    },
+    {
+      "actor": "russia-soviet-union",
+      "role": "signatory"
+    },
+    {
+      "actor": "united-kingdom",
+      "role": "signatory"
+    },
+    {
+      "actor": "china",
+      "role": "signatory"
+    },
+    {
+      "actor": "france",
+      "role": "signatory"
+    }
+  ]
+}

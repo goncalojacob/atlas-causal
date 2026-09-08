@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "full-scale-russo-ukrainian-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": "2026-09-05",
+  "review": {
+    "flags": [
+      "imported-facts",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q110999040",
+  "sitelinks": 151,
+  "wikipedia": {
+    "en": "Russo-Ukrainian war (2022–present)",
+    "pt": "Invasão da Ucrânia pela Rússia (2022–presente)"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Russo-Ukrainian war (2022–present)\", revision 1373153668"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Invasão da Ucrânia pela Rússia (2022–presente)\", revision 72854976"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q110999040"
+    }
+  ],
+  "title": "full-scale Russo-Ukrainian war",
+  "summary": "Russia invaded Ukraine along its whole northern, eastern and southern frontier on 24 February 2022, expecting Kyiv to fall in days. It did not: the northern axis was abandoned in April, the Kharkiv and Kherson counter-offensives followed, and the war settled into artillery, drones and minefields along a front of a thousand kilometres. Hundreds of thousands of soldiers have been killed or wounded, six or seven million Ukrainians have left the country and eight million more are displaced inside it, and about a fifth of Ukraine is occupied. It is the largest war in Europe since 1945 and it is not over.",
+  "when": {
+    "start": 2022,
+    "end": null,
+    "date": "2022-02-24"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": [
+    {
+      "actor": "russia-soviet-union",
+      "role": "invader"
+    },
+    {
+      "actor": "ukraine",
+      "role": "belligerent"
+    }
+  ]
+}

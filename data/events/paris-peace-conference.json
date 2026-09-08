@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "paris-peace-conference",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": "2026-09-05",
+  "review": {
+    "flags": [
+      "imported-facts",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q199820",
+  "sitelinks": 77,
+  "wikipedia": {
+    "en": "Paris Peace Conference (1919–1920)",
+    "pt": "Conferência de Paz de Paris (1919–1920)"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Paris Peace Conference (1919–1920)\", revision 1371739974"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Conferência de Paz de Paris (1919–1920)\", revision 72784719"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q199820"
+    }
+  ],
+  "title": "Paris Peace Conference",
+  "summary": "From January 1919 the victors met in Paris to settle the war, and the settlement was made by four of them — Wilson, Lloyd George, Clemenceau and Orlando — with the defeated powers excluded from the deliberations and presented with the results. Five treaties came out of it, remaking Europe, the Ottoman lands, Africa and the Pacific, and the League of Nations was written into each. Portugal sat as a belligerent and took very little: a strip of northern Mozambique, a share of reparations that was never paid, and the confirmation of colonies it had feared losing since 1898.",
+  "when": {
+    "start": 1919,
+    "end": 1920,
+    "endDate": "1920-01-21"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": [
+    {
+      "actor": "united-states-of-america",
+      "role": "negotiator"
+    },
+    {
+      "actor": "united-kingdom",
+      "role": "negotiator"
+    },
+    {
+      "actor": "france",
+      "role": "negotiator"
+    },
+    {
+      "actor": "italy-sardinia",
+      "role": "negotiator"
+    },
+    {
+      "actor": "portugal",
+      "role": "negotiator"
+    }
+  ]
+}

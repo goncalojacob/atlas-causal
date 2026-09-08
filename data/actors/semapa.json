@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "semapa",
+  "kind": "actor",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-08",
+  "revised": "2026-09-08",
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m41-retracted"
+    ],
+    "note": "Retracted in M41b: the holding company founded in 1991 with interests in cement, pulp and paper and environmental services. The same gap as Altri's and the Navigator Company's: three records of the same industry, none of them attached to an event, and an atlas with no Portuguese industrial history between 1975 and today."
+  },
+  "wikidata": "Q1862723",
+  "sitelinks": 11,
+  "wikipedia": {
+    "en": "Semapa",
+    "pt": "Semapa"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1862723"
+    }
+  ],
+  "actorType": "institution",
+  "names": [
+    "Semapa"
+  ],
+  "summary": "Wikidata item Q1862723, imported by tools/import/wikidata.mjs. The item's own description reads \"Portuguese conglomerate mainly in pulp, paper and cement\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1991,
+    "end": null
+  },
+  "where": null
+}

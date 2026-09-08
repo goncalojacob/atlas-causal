@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "russian-revolution-of-1905",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": "2026-09-05",
+  "review": {
+    "flags": [
+      "imported-facts",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q184928",
+  "sitelinks": 66,
+  "wikipedia": {
+    "en": "Russian Revolution of 1905",
+    "pt": "Revolução Russa de 1905"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Russian Revolution of 1905\", revision 1371938345"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Revolução Russa de 1905\", revision 71589948"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q184928"
+    }
+  ],
+  "title": "Russian Revolution of 1905",
+  "summary": "The revolution of 1905 began on 22 January, when troops fired on a procession of workers carrying a petition to the Winter Palace, and ran through two years of strikes, peasant risings and mutinies. It ended in a bargain rather than a defeat: the October Manifesto conceded a legislative Duma and civil liberties, the first Russian constitution followed in 1906, and the government then spent the next decade narrowing both. For this atlas it is the first of the three Russian revolutions and the one that supplied the other two with their vocabulary — the soviet of workers' deputies was invented in St Petersburg in 1905 — and it is also the reason the war with Japan was ended when it was.",
+  "when": {
+    "start": 1905,
+    "end": 1907,
+    "date": "1905-01-22",
+    "endDate": "1907-06-16"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": [
+    {
+      "actor": "russia-soviet-union",
+      "role": "government"
+    }
+  ]
+}

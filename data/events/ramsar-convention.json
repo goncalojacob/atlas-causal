@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "ramsar-convention",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": "2026-09-05",
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m40-retracted"
+    ],
+    "note": "Retracted in M40b: the 1971 convention on wetlands of international importance. The atlas holds no environmental record before the fires of 2017 and nothing at all on conservation, so there is no record here the convention can be argued to have changed and none that produced it. Portugal acceded in 1980 and has designated sites under it since, none of which is an event this atlas holds. It would need a Portuguese conservation record first."
+  },
+  "wikidata": "Q170170",
+  "sitelinks": 75,
+  "wikipedia": {
+    "en": "Ramsar Convention",
+    "pt": "Convenção sobre as Zonas Húmidas de Importância Internacional"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q170170"
+    }
+  ],
+  "title": "Ramsar Convention",
+  "summary": "Wikidata item Q170170, imported by tools/import/wikidata.mjs. The item's own description reads \"international treaty for the conservation and sustainable utilization of wetlands\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1971,
+    "end": 1971,
+    "date": "1971-02-02"
+  },
+  "place": null,
+  "region": "asia",
+  "actors": []
+}

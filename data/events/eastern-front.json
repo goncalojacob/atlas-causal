@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "eastern-front",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": "2026-09-05",
+  "review": {
+    "flags": [
+      "imported-facts",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q189266",
+  "sitelinks": 86,
+  "wikipedia": {
+    "en": "Eastern Front (World War II)",
+    "pt": "Frente Oriental (Segunda Guerra Mundial)"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Eastern Front (World War II)\", revision 1373107377"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Frente Oriental (Segunda Guerra Mundial)\", revision 71477173"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q189266"
+    }
+  ],
+  "title": "Eastern Front",
+  "summary": "The German-Soviet war ran from the invasion of 22 June 1941 to the surrender in May 1945 and was where the Second World War in Europe was decided: some thirty million of the war's dead, the great majority of German losses, and by most counts over four fifths of the fighting. It was also a war of extermination by design — the commissar order, the starvation of Soviet prisoners, the shooting of Jews behind the lines by the Einsatzgruppen — and not a campaign that became one. Its shape at the end, with the Red Army in Berlin and in every capital east of it, is the fact every post-war settlement in Europe had to start from.",
+  "when": {
+    "start": 1941,
+    "end": 1945,
+    "date": "1941-06-22",
+    "endDate": "1945-05-07"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": [
+    {
+      "actor": "germany-prussia",
+      "role": "belligerent"
+    },
+    {
+      "actor": "russia-soviet-union",
+      "role": "belligerent"
+    }
+  ]
+}

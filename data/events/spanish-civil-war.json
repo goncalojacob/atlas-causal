@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "spanish-civil-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": "2026-09-05",
+  "review": {
+    "flags": [
+      "imported-facts",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q10859",
+  "sitelinks": 118,
+  "wikipedia": {
+    "en": "Spanish Civil War",
+    "pt": "Guerra Civil Espanhola"
+  },
+  "sources": [
+    {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Spanish Civil War\", revision 1373335825"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Guerra Civil Espanhola\", revision 72792080"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q10859"
+    }
+  ],
+  "title": "Spanish Civil War",
+  "summary": "A partial coup against the Republic in July 1936 turned into three years of war between the Popular Front government and the Nationalist rebels, and into the first proxy war of the European crisis: Germany and Italy flew Franco's Army of Africa across the Straits and supplied him thereafter, the Soviet Union supplied the Republic, and Britain and France organised a non-intervention that neither Berlin nor Rome observed. Franco's victory on 1 April 1939 opened a dictatorship that lasted until 1975. Portugal was a belligerent in everything but name — the frontier open to the Nationalists, republican refugees handed back, eight thousand volunteers sent — and the war it fought next door is what fixed the Estado Novo's shape for the following decade.",
+  "when": {
+    "start": 1936,
+    "end": 1939,
+    "date": "1936-07-18",
+    "endDate": "1939-04-01"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": [
+    {
+      "actor": "spain",
+      "role": "belligerent"
+    },
+    {
+      "actor": "germany-prussia",
+      "role": "supporter"
+    },
+    {
+      "actor": "italy-sardinia",
+      "role": "supporter"
+    },
+    {
+      "actor": "russia-soviet-union",
+      "role": "supporter"
+    },
+    {
+      "actor": "portugal",
+      "role": "supporter"
+    }
+  ]
+}

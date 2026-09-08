@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "velvet-revolution",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": "2026-09-05",
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m40-retracted"
+    ],
+    "note": "Retracted in M40b: the Czechoslovak revolution of November 1989. The atlas's whole 1989 is this one national revolution — the fall of the Wall, German unification and the dissolution of the Soviet Union are not records here, and the Cold War itself was refused by the import for want of a lane. The argument that would matter, 1989 as the end of the Cold War, has no node to run from, and running it from Prague alone would credit one revolution with the year."
+  },
+  "wikidata": "Q182817",
+  "sitelinks": 64,
+  "wikipedia": {
+    "en": "Velvet Revolution",
+    "pt": "Revolução de Veludo"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q182817"
+    }
+  ],
+  "title": "Velvet Revolution",
+  "summary": "Wikidata item Q182817, imported by tools/import/wikidata.mjs. The item's own description reads \"democratization process in Czechoslovakia in 1989\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1989,
+    "end": 1989,
+    "endDate": "1989-12-29"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "assassination-of-archduke-franz-ferdinand",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": "2026-09-05",
+  "review": {
+    "flags": [
+      "imported-facts",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q192050",
+  "sitelinks": 63,
+  "wikipedia": {
+    "en": "Assassination of Archduke Franz Ferdinand",
+    "pt": "Atentado de Sarajevo"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Assassination of Archduke Franz Ferdinand\", revision 1367945761"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Atentado de Sarajevo\", revision 72527573"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q192050"
+    }
+  ],
+  "title": "assassination of Archduke Franz Ferdinand",
+  "summary": "Franz Ferdinand, heir presumptive to the Austro-Hungarian throne, and his wife Sophie were shot in Sarajevo on 28 June 1914 by Gavrilo Princip, a Bosnian Serb student, one of a group armed and passed across the frontier with the help of officers of Serbian military intelligence. Vienna treated the killing as an act of the Serbian state, and the ultimatum it sent four weeks later was written to be refused. The atlas holds the assassination as the trigger of the July crisis and not as the cause of the war: what turned a murder in a provincial capital into a general war was the system of alliances and mobilisation timetables it was fired into.",
+  "when": {
+    "start": 1914,
+    "end": 1914,
+    "date": "1914-06-28"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": [
+    {
+      "actor": "austria-hungary",
+      "role": "target"
+    }
+  ]
+}

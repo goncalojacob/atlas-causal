@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "id": "boxer-rebellion",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": "2026-09-05",
+  "review": {
+    "flags": [
+      "imported-facts",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q150229",
+  "sitelinks": 77,
+  "wikipedia": {
+    "en": "Boxer Rebellion",
+    "pt": "Rebelião dos Boxers"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Boxer Rebellion\", revision 1372943833"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Rebelião dos Boxers\", revision 72333660"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q150229"
+    }
+  ],
+  "title": "Boxer Rebellion",
+  "summary": "The Society of Righteous and Harmonious Fists rose in northern China from 1899 against foreigners, missionaries and Chinese Christians, and in June 1900 the Qing court declared for the rebels and the legations in Peking were besieged. An expedition of eight powers — Britain, France, Germany, Russia, Japan, the United States, Italy and Austria-Hungary — relieved the legations, sacked the capital and imposed the Boxer Protocol of 1901, with an indemnity of 450 million taels, foreign garrisons on the road to the sea and the execution of officials. The dynasty had backed a rising against the powers, lost, and then had to pay for it: the humiliation is what the last decade of Qing reform was conducted under, and it is why this event is in the atlas.",
+  "when": {
+    "start": 1899,
+    "end": 1901,
+    "date": "1899-08",
+    "endDate": "1901-09"
+  },
+  "place": null,
+  "region": "asia",
+  "actors": [
+    {
+      "actor": "china",
+      "role": "belligerent"
+    },
+    {
+      "actor": "united-kingdom",
+      "role": "belligerent"
+    },
+    {
+      "actor": "france",
+      "role": "belligerent"
+    },
+    {
+      "actor": "germany-prussia",
+      "role": "belligerent"
+    },
+    {
+      "actor": "russia-soviet-union",
+      "role": "belligerent"
+    },
+    {
+      "actor": "japan",
+      "role": "belligerent"
+    },
+    {
+      "actor": "united-states-of-america",
+      "role": "belligerent"
+    },
+    {
+      "actor": "italy-sardinia",
+      "role": "belligerent"
+    },
+    {
+      "actor": "austria-hungary",
+      "role": "belligerent"
+    }
+  ]
+}

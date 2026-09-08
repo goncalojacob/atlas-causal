@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "gulf-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": "2026-09-05",
+  "review": {
+    "flags": [
+      "imported-facts",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q37643",
+  "sitelinks": 107,
+  "wikipedia": {
+    "en": "Gulf War",
+    "pt": "Guerra do Golfo"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Gulf War\", revision 1373369657"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Guerra do Golfo\", revision 72734273"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q37643"
+    }
+  ],
+  "title": "Gulf War",
+  "summary": "Iraq invaded and annexed Kuwait on 2 August 1990; the Security Council, with the Soviet Union no longer vetoing, authorised the use of force, and a coalition of some forty states under American command destroyed the Iraqi army in Kuwait in six weeks of bombing and a hundred hours of ground fighting. The war stopped at the border: Saddam Hussein was left in power and put down the risings that followed. What was left behind — sanctions, two no-fly zones, a disarmament inspectorate and American forces in Saudi Arabia — is the arrangement that the next twelve years of the region were argued about, and that the war of 2003 was fought to end.",
+  "when": {
+    "start": 1990,
+    "end": 1991,
+    "date": "1990-08-02",
+    "endDate": "1991-02-28"
+  },
+  "place": null,
+  "region": "asia",
+  "actors": [
+    {
+      "actor": "iraq",
+      "role": "belligerent"
+    },
+    {
+      "actor": "kuwait",
+      "role": "belligerent"
+    },
+    {
+      "actor": "united-states-of-america",
+      "role": "belligerent"
+    },
+    {
+      "actor": "saudi-arabia",
+      "role": "belligerent"
+    },
+    {
+      "actor": "united-nations",
+      "role": "institution"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "azores-liberation-front",
+  "kind": "actor",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-08",
+  "revised": "2026-09-08",
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m41-retracted"
+    ],
+    "note": "Retracted in M41b: the FLA, the right-wing Azorean separatist organisation that appeared immediately after the Carnation Revolution and attacked political opponents in the islands in 1975. The atlas holds the revolution and the first Azorean regional election of 1976, and its record of that election speaks of the archipelago's autonomist movement without naming this one. It would need a record of the Azorean agitation of the summer of 1975, which is the event the FLA belongs to."
+  },
+  "wikidata": "Q260897",
+  "sitelinks": 9,
+  "wikipedia": {
+    "en": "Azores Liberation Front",
+    "pt": "Frente de Libertação dos Açores"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q260897"
+    }
+  ],
+  "actorType": "institution",
+  "names": [
+    "Azores Liberation Front",
+    "Frente de Libertação dos Açores"
+  ],
+  "summary": "Wikidata item Q260897, imported by tools/import/wikidata.mjs. The item's own description reads \"political party in Portugal\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1975,
+    "end": 1978
+  },
+  "where": null
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "national-union",
+  "kind": "actor",
+  "status": "merged",
+  "supersededBy": "uniao-nacional",
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-08",
+  "revised": "2026-09-08",
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m41-merged"
+    ],
+    "note": "Merged in M41b into uniao-nacional, which is the same actor: the sole legal party of the Estado Novo, founded in July 1930 and wound up with the regime in 1974, and called Acção Nacional Popular from 1970. The atlas already held it under its Portuguese name, with the same dates and three of the same names, and three election records already name it. This record keeps the Wikidata id the import brought and names its survivor rather than becoming an anonymous tombstone."
+  },
+  "wikidata": "Q954010",
+  "sitelinks": 20,
+  "wikipedia": {
+    "en": "National Union (Portugal)",
+    "pt": "União Nacional"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q954010"
+    }
+  ],
+  "actorType": "institution",
+  "names": [
+    "National Union",
+    "União Nacional",
+    "National Union (Portugal)"
+  ],
+  "summary": "Wikidata item Q954010, imported by tools/import/wikidata.mjs. The item's own description reads \"Portuguese political party\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1930,
+    "end": 1974
+  },
+  "where": null
+}

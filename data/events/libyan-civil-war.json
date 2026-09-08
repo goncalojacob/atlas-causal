@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "libyan-civil-war",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": "2026-09-05",
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m40-retracted"
+    ],
+    "note": "Retracted in M40b: the rising against Gaddafi from February 2011 and the NATO-supported war that ended with his death in October. Its cause, the Arab Spring, was among the twenty-nine candidates the import refused for want of a lane; its consequences — the second Libyan war, the collapse of the state, the central Mediterranean route — are not records here, and neither is the Security Council's later refusal over Syria, which is the argument that would have run out of it."
+  },
+  "wikidata": "Q81545",
+  "sitelinks": 74,
+  "wikipedia": {
+    "en": "Libyan civil war (2011)",
+    "pt": "Guerra Civil Líbia (2011)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q81545"
+    }
+  ],
+  "title": "Libyan Civil War",
+  "summary": "Wikidata item Q81545, imported by tools/import/wikidata.mjs. The item's own description reads \"2011 armed conflict in the North African country of Libya\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2011,
+    "end": 2011,
+    "date": "2011-02-15",
+    "endDate": "2011-10-23"
+  },
+  "place": null,
+  "region": "africa",
+  "actors": []
+}

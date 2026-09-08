@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "armenian-genocide",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": "2026-09-05",
+  "review": {
+    "flags": [
+      "imported-facts",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q80034",
+  "sitelinks": 109,
+  "wikipedia": {
+    "en": "Armenian genocide",
+    "pt": "Genocídio armênio"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Armenian genocide\", revision 1367030542"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Genocídio armênio\", revision 72654348"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q80034"
+    }
+  ],
+  "title": "Armenian Genocide",
+  "summary": "From April 1915 the Ottoman government destroyed the Armenian population of Anatolia: the community leaders of Constantinople arrested and killed, the men of the provinces shot, and the women and children driven on death marches into the Syrian desert, with survivors forcibly Islamised. Estimates of the dead run from eight hundred thousand to one and a half million. It was directed by the Committee of Union and Progress, under the cover of the war, and it is the case against which the word genocide was later coined. Turkey has denied that the killings were a state programme ever since, which is why the denial rather than the fact is what the record of the twentieth century mostly argues about.",
+  "when": {
+    "start": 1915,
+    "end": 1923
+  },
+  "place": null,
+  "region": "asia",
+  "actors": [
+    {
+      "actor": "turkey-ottoman-empire",
+      "role": "perpetrator"
+    }
+  ]
+}

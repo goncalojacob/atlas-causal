@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "iranian-revolution--2025-2026-iranian-protests--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Iranian Revolution\", revision 1373278840"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"2025–2026 Iranian protests\", revision 1373363187"
+    }
+  ],
+  "from": "iranian-revolution",
+  "to": "2025-2026-iranian-protests",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "What is being protested against is the constitutional order the revolution built. The rial's collapse, the inflation and the shortages are the occasion, but the demands reported are not about a minister or a budget: they are about the system in which an unelected jurist stands above the elected government, and the crackdown the lead describes was ordered from that office. The lead itself measures the rising against 1979, which is the comparison the participants make. The claim is that the revolution created the state and the office now in question, not that it made these protests inevitable.",
+  "dispute": null
+}

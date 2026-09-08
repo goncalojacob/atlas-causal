@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "university-of-porto",
+  "kind": "actor",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-08",
+  "revised": "2026-09-08",
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m41-retracted"
+    ],
+    "note": "Retracted in M41b: the university founded on 22 March 1911, the second largest in the country. The Republic created the universities of Lisbon and Porto by decree in its first year, and that is a real consequence of the records this atlas already holds — the proclamation of October 1910, the constitution and the law of separation of 1911. But the atlas has no record of the decree, and an actor cannot be joined to an event nobody has written."
+  },
+  "wikidata": "Q1422903",
+  "sitelinks": 30,
+  "wikipedia": {
+    "en": "University of Porto",
+    "pt": "Universidade do Porto"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1422903"
+    }
+  ],
+  "actorType": "institution",
+  "names": [
+    "University of Porto",
+    "Universidade do Porto"
+  ],
+  "summary": "Wikidata item Q1422903, imported by tools/import/wikidata.mjs. The item's own description reads \"public research university in Porto, Portugal\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1911,
+    "end": null
+  },
+  "where": null
+}

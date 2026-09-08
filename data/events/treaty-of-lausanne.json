@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "treaty-of-lausanne",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": "2026-09-05",
+  "review": {
+    "flags": [
+      "imported-facts",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q193258",
+  "sitelinks": 70,
+  "wikipedia": {
+    "en": "Treaty of Lausanne",
+    "pt": "Tratado de Lausanne"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Lausanne\", revision 1370957561"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Tratado de Lausanne\", revision 69632334"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q193258"
+    }
+  ],
+  "title": "Treaty of Lausanne",
+  "summary": "Signed at Lausanne on 24 July 1923, the treaty replaced the unratified Sèvres and settled the frontiers of the Republic of Turkey, which was proclaimed three months later. It ended the capitulations, left the Straits demilitarised but Turkish, made no provision for an Armenian or a Kurdish state, and gave legal form to the compulsory exchange of Orthodox Christians and Muslims between Greece and Turkey — some one and a half million people moved by treaty. It is in the atlas as the settlement that closed the Eastern question, and as the first treaty to make a population exchange an instrument of peace rather than a crime.",
+  "when": {
+    "start": 1923,
+    "end": 1923,
+    "date": "1923-07-24"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": [
+    {
+      "actor": "turkey-ottoman-empire",
+      "role": "signatory"
+    },
+    {
+      "actor": "greece",
+      "role": "signatory"
+    },
+    {
+      "actor": "united-kingdom",
+      "role": "signatory"
+    },
+    {
+      "actor": "france",
+      "role": "signatory"
+    },
+    {
+      "actor": "italy-sardinia",
+      "role": "signatory"
+    }
+  ]
+}

@@ -158,6 +158,88 @@ is byte-identical at the tip. **M32b is done.** The map's glyph per category,
 which M30b deferred until there were categories to draw (its amendment A2), is
 the next thing this makes possible.
 
+On the branch `world`, 2026-09-08, after M41b: **the second Portuguese round is
+drafted and wired, and it took twenty-four retractions to do it.** Of M41a's
+forty-two records, **sixteen were kept, twenty-four retracted (57%, against
+M40b's 31%) and two merged** into records the atlas already held and the
+import's reconciliation had missed — `uniao-nacional` and `partido-democratico`
+(deviation 449). The one event, the 2010–2014 financial crisis, is drafted and
+carries **three edges**: `caused` the request for assistance of April 2011
+(consensus) and the early election of that June (probable), with the euro as a
+`precondition-of` it (probable, and it is Reis's argument). The forty-one actors
+could take no edge at all — an edge runs between events — so the one-edge rule
+was read across into **ten actor lines** on records whose own prose already
+names the actor and **eight relations**, which is deviation 446; the First
+Republic's party system is the part that gained most, with the two mergers of
+1923 and the Evolutionists into the Liberals now drawn. Fourteen of the
+twenty-four retracted are companies, and the reason is one gap: this atlas has
+no economic history of Portugal after the nationalisations of 1975.
+`docs/m41-retractions.md` names all twenty-four and says what each would need.
+Deviations 446 to 450 are this run's; 447 and 448 are the brief asking for
+`data/roles.json` and a `retraction` block that exist on `m0` and not here, and
+450 is why M41b's section is a **comment** on pull request #1 rather than in its
+body, and wants a minute of the owner's time in the browser.
+`node tools/validate.mjs` without `--index` is clean and the warnings are down
+from 45 to 3, none of them M41's; `node --test` is 602 of 604, still the two
+deliberate index-staleness failures of deviation 444. The rest of this section
+is `m0`'s and this paragraph does not touch it.
+
+On the branch `world`, 2026-09-08: **M41a is done — the 150 ticked candidates
+are imported and merged — but it returned institutions where the brief asked
+for consequence, and `world` is knowingly red on two tests.** 42 records
+created out of 150 (41 actors, every one an `institution`, and 1 event), 108
+refused for classes the seeds table does not name, 83 Wikipedia leads cached;
+branch head `26ac5c4`. Getting there cost two Action failures worth reading
+about: a browser test hung and ate a whole 5.5-hour run without committing
+anything (deviation 442), and the import was writing an actor's exact date and
+a place's citation, neither of which survives a save through the contribute
+form (deviation 443). Both are fixed. `node tools/validate.mjs` without
+`--index` is clean; `node --test` is 602 of 604, and the two failures are only
+the index being deliberately stale on this branch — one `build-index.mjs`
+commit on the far side of the merge into `m0` clears them (deviation 444). The
+yield is the thing to look at, not the plumbing: deviation 445 says why the
+round came back as companies and what the two options are. Deviations 442 to
+445 are this run's; 439, 440 and 441 above are now history, since Actions came
+back and the queries they describe did run. The rest of this section is `m0`'s
+and this paragraph does not touch it.
+
+On the branch `world`, 2026-09-06: **M41a is stopped, not finished, and it is
+stopped on something only the owner can clear.** Since about 07:00Z every
+GitHub Actions run in this repository — this branch's and `m0`'s alike — has
+failed in seconds without reaching a runner, and the Action is the only way to
+Wikidata from any of these sandboxes. The queries that two rounds of refusals
+proved wrong are diagnosed and fixed on `import/candidates-pt2-2026-09-06b`,
+ready to run the moment Actions runs again; nothing was ticked and nothing was
+imported, deliberately, because the pool those two rounds returned misses five
+decades and is two thirds company foundings. Deviations 439, 440 and 441 are
+the whole of it. The rest of this section is `m0`'s and this paragraph does not
+touch it.
+
+On the branch `world`, 2026-09-05, after M40b (`docs/m40-brief.md`): **the
+imported world is written and wired.** Every one of M40a's 91 world events now
+has a drafted summary and its actors, or is retracted with its reason:
+**63 wired, 28 retracted** (31%), **55 edges**, of which **16 reach a record
+the atlas already held** — the Boer war to the declaration of Windsor, the
+Depression to Salazar's accession, the Spanish war to the Iberian Pact,
+Brest-Litovsk to the Lys, the Atlantic to the Azores, Rome to EFTA, Algeria to
+Angola, the two oil shocks to the two Fund programmes, Maastricht to the euro.
+Three edges are `disputed` and carry their dispute: Versailles to the second
+war, the crash to the Depression, and the Gaza war to the finding of genocide.
+Two actors were created, the Wagner Group and Hamas. `docs/m40-retractions.md`
+lists the 28 and says what the atlas would need for each. The rest of this
+section is `m0`'s and this paragraph does not touch it.
+
+Before that, on `world`, after M40a (`docs/m40-brief.md`): **the
+world Portugal answered to is imported.** 154 queries for 1890–2025 with no
+geographic restriction returned **1,873 candidates**; a rule, not a hand, kept
+**120** of them — the most sitelinks this atlas does not already hold, with a
+floor of the six best of every decade from the 1890s to the 2020s — and the
+import created **91 events**, every one with `origin: wikidata`,
+`review.flags: ["imported-facts"]` and its Wikipedia lead cached. Twenty-nine
+were refused for want of a lane and are named below. No edges yet: that is
+M40b, and until then the 91 are `degree-zero` warnings. The rest of this
+section is `m0`'s and this paragraph does not touch it.
+
 2026-09-06, after **M32b-1** (`docs/m32b-brief.md`, §8: the first of M32b's
 two runs), on `m0`: **the roles are a vocabulary and not a phrase any more.**
 
@@ -1595,6 +1677,395 @@ The numbering continues from 401, which is M31-3's last.
      loop opening them again was six page loads of contention that made the
      suite flaky rather than a claim it could not make where it stood.
 
+429. **The world candidate list is `docs/wikidata-candidates.md`, not
+     `docs/m40-candidates.md`.** The M40 brief names the second file. The
+     Action runs `node tools/import/wikidata.mjs --candidates` with no `--to`,
+     so the tool wrote its own default, `CANDIDATES_FILE`; the workflow takes
+     the mode from the branch name and nothing else, and giving it a
+     per-milestone destination is a change to a file `m0` also carries. The
+     list is what the brief asked for and it is under the name the tool uses.
+     Reverse by passing `--to` from the workflow, once somebody wants the two
+     lists side by side.
+
+430. **Twenty-nine of the 120 ticked candidates are not imported, because a
+     placeless event has no lane.** An event that names no place record takes
+     its timeline lane from a point: its own `P625`, else the point of a
+     location, an administrative unit or a country it names. These 29 have
+     none the import can reach — a war fought across four countries carries no
+     coordinate, and a `P276` location's point is never fetched, because only
+     `P17`/`P131` are looked up for their points (and only 25 of those per
+     batch). So they are refused rather than given a lane by guess, which is
+     the tool obeying its own rule. They are: the Spanish–American, First
+     Sino-Japanese, Philippine–American, Russo-Japanese, First and Second
+     Balkan, Polish–Soviet, Winter, Six-Day, Soviet-Afghan, Iran–Iraq, First
+     Nagorno-Karabakh, First Chechen and Kosovo Wars; the Balkan Wars and the
+     Yugoslav Wars as series; the Cold War, the Arab Spring and the War on
+     Terrorism; the Entente Cordiale, the Sykes–Picot Agreement, the Antarctic
+     Treaty System, CITES, the Kyoto Protocol and the European Charter for
+     Regional or Minority Languages; HIV/AIDS, the 1918–1920 flu pandemic, the
+     2009 swine flu pandemic and the 2007–2008 financial crisis. Every one is
+     still ticked and still in the seeds file's `items`; they sit in the
+     import cursor's `done`, so a run that fixes this has to rewind them as
+     M40a rewound the 63 the class table unblocked. **This is the owner's
+     call**, because the fix is a change to `tools/import/wikidata.mjs` — read
+     a `P276` location's point, or let a placeless event take a region the
+     seeds file names — and not to any table. A war with no ground is a real
+     question for a map, not only a bug.
+
+431. **`data/index/` moves on `world`, because the Action commits it.** The
+     M40 brief says never to commit the index on this branch, so that the
+     merge into `m0` needs one index-rebuild commit rather than a conflict.
+     But `import-wikidata.yml` rebuilds and validates the index inside every
+     batch it commits, and `tests/validate-cli.test.mjs` runs
+     `validate.mjs --index` against the repository — so a merge that stripped
+     the index back would leave `node --test` red, which the run is also
+     required to keep green. The index on `world` is therefore the Action's,
+     never this run's own commit, and it is current: `--index` passes. Reverse
+     by rebuilding it once on top of the merge into `m0`, exactly as planned.
+
+432. **M40b's counts, by decade.** Imported is M40a's 91; every one of them is
+     now wired or retracted. "Reaching a record already here" counts edges
+     with one end outside the 91 — that is, in the Portuguese dataset the
+     atlas already held.
+
+     | decade | imported | wired | retracted | edges | of those, reaching a record already here |
+     |---|---|---|---|---|---|
+     | 1890s | 3 | 2 | 1 | 2 | 1 |
+     | 1900s | 4 | 3 | 1 | 3 | 0 |
+     | 1910s | 12 | 10 | 2 | 11 | 2 |
+     | 1920s | 8 | 7 | 1 | 4 | 1 |
+     | 1930s | 8 | 6 | 2 | 7 | 3 |
+     | 1940s | 7 | 7 | 0 | 8 | 2 |
+     | 1950s | 7 | 6 | 1 | 4 | 3 |
+     | 1960s | 5 | 2 | 3 | 1 | 0 |
+     | 1970s | 6 | 4 | 2 | 4 | 2 |
+     | 1980s | 5 | 1 | 4 | 1 | 1 |
+     | 1990s | 5 | 2 | 3 | 2 | 1 |
+     | 2000s | 5 | 4 | 1 | 2 | 0 |
+     | 2010s | 6 | 2 | 4 | 2 | 0 |
+     | 2020s | 10 | 7 | 3 | 4 | 0 |
+     | **total** | **91** | **63** | **28** | **55** | **16** |
+
+     Edges are counted in the decade of the event they run *from*, which is
+     why the 1960s show one edge for two wired events: the Kashmir war's edge
+     runs to Bangladesh in 1971 and the covenant's incoming edge is counted in
+     the 1940s, with the Charter. By confidence the 55 are 44 `probable`,
+     8 `consensus` and 3 `disputed`; by type, 31 `precondition-of`,
+     16 `caused`, 6 `enabled` and 2 `reacted-to`. No edge is `inspired`:
+     nothing in this material could be argued to that type without guessing at
+     what somebody read. Two actors were created — `wagner-group` and `hamas`
+     — and no relations: no pair of actors in this material made one plain
+     that the atlas did not already hold.
+
+433. **The three decades that barely wire say something about the import, not
+     about the century.** The 1980s wire one event of five, the 2010s two of
+     six, the 1960s two of five. The cause is in `docs/m40-retractions.md`:
+     the import's rule kept the most-linked events the atlas did not hold, and
+     famous events lead to other famous events, most of which were not kept or
+     were refused for want of a lane. The atlas has the Velvet Revolution and
+     not the Wall, the second Chechen war and not the first, the second
+     Nagorno-Karabakh war and not the first, Libya and Syria and not the Arab
+     Spring, Afghanistan and not 11 September. **Eight of the 28 retractions
+     name one of the twenty-nine deviation 430 lists.** Importing those
+     twenty-nine — which needs the change to `tools/import/wikidata.mjs` that
+     deviation 430 leaves to the owner — would turn much of the retraction
+     list back into records with edges, and is the single highest-value thing
+     that could be done to this dataset next.
+
+434. **`role` is from `docs/roles-mapping.md`'s closed list of 31, and carries
+     no note.** The brief asks for the approved role "with a `note` where the
+     phrase says more", and there is nowhere to put one: the actor line in
+     `schema/v1/event.json` is `{ actor, role }` with `additionalProperties:
+     false`, and adding the field is M32b's job, not a data run's. So every
+     one of M40b's actor lines is a bare role from the list, and where the
+     phrase would have said more — which power was the occupier, which the
+     departing one — the summary says it instead. Eleven of the 31 are used,
+     and nothing outside the list: `belligerent` (87), `signatory` (54),
+     `government` (14), `negotiator` (9), `perpetrator` (6), `target` (4),
+     `supporter` (4), `institution` (3), `founder` (2), `invader` (1),
+     `occupier` (1).
+
+435. **A genocide record names the perpetrator and not the victims**, which is
+     the atlas's own precedent (`batepa-massacre`, `mueda-massacre`,
+     `hat-nipah-and-same-massacres` all name the responsible power alone). The
+     alternative was to create `people` actors — Armenians, Jews, Tutsi — with
+     a founding year, which is a claim about the origin of a people that
+     nothing here could source, and the first draft of `armenian-genocide`
+     tripped the `actor-outside-when` warning by reaching for the Republic of
+     Armenia of 1991 instead. The victims are named in the summaries.
+
+436. **The Gaza war and the Gaza genocide are kept as two records with one
+     `disputed` edge between them.** Merging them would take a side on a live
+     dispute in the direction of the framing chosen, and dropping either would
+     take it in the other. The edge `gaza-war--gaza-genocide--caused` exists
+     because a reader who finds both is owed the relation, and its `dispute`
+     block names who has found genocide (a UN special committee and commission
+     of inquiry, the IAGS, Amnesty, Human Rights Watch, the case before the
+     ICJ) and who rejects it and on what ground, and states what is not in
+     dispute at all. It is the only place in this run where an edge's
+     `confidence` is carrying a disagreement about a characterisation rather
+     than about a causal link, and a reviewer should decide whether that is a
+     use the field should have.
+
+437. **`region` was corrected on wired records where the import's derivation
+     was plainly wrong, and nowhere else.** The import takes a placeless
+     event's lane from a point it can reach, which put the First World War,
+     the Great Depression and the Boxer rebellion in the Asia lane and left
+     the Great Depression beside events in Manchuria. Each wired record's lane
+     was set to where the record itself says the thing happened; no retracted
+     record's lane was touched, and no `when` was changed anywhere. Three
+     wired records instead carry a `date` flag and a note asking a reviewer to
+     fix an interval this run would not decide alone: `turkish-war-of-
+     independence` (the item's interval opens in 1922 and the war opens in
+     1919), `warsaw-uprising` (the item's date is the surrender, not the
+     rising) and `chinese-civil-war` (the item covers 1946–49 and the war
+     opens in 1927).
+
+438. **`node --test` is green in the working tree and red on the branch as
+     pushed**, for exactly the reason deviation 431 gives. Two tests —
+     `tests/build-index.test.mjs` and `tests/validate-cli.test.mjs` — run
+     `validate.mjs --index`, and every commit of this run changes `data/` and
+     so stales the index. The index was rebuilt locally before each test
+     run and never staged, because the M40 brief forbids committing
+     `data/index/` on this branch; `git add` named `data/events`, `data/edges`
+     and `data/actors` explicitly and never `-A`. The gate this run actually
+     held to at every commit is `node tools/validate.mjs` without `--index`,
+     clean of errors, plus `node --test` green against a freshly built index.
+     The single index-rebuild commit on top of the merge into `m0`, which
+     deviation 431 already plans for, is what makes the branch green as
+     committed.
+
+439. **M41a stopped unfinished: GitHub Actions stopped starting jobs, and the
+     Action is the only way to the network.** Since about 07:00Z on 6
+     September every workflow run in this repository has failed in two to
+     four seconds with no step executed and no log to download — a 404 —
+     across both workflows and both branches: `import-wikidata` runs 17
+     attempt 1 and attempt 2 on `import/candidates-pt2-2026-09-06b`, and
+     `validate` runs 395, 396, 397 and 398 on `m0`, which belong to the
+     health cycle and not to this branch. The last run that reached a runner
+     finished at 04:06Z. A job that dies in two seconds without a log never
+     reached a runner at all, so this is not the workflow file, not the
+     branch and not the seeds: it is the account. On a private repository the
+     likely cause is the Actions minute allowance or a spending limit, after
+     roughly six hours of runner time overnight — two candidates rounds at
+     about 2h55m each. **This is the owner's call and needs the billing page,
+     which no run here can read.** The sandbox cannot reach Wikidata either
+     (the proxy answers CONNECT with 403 for both `query.wikidata.org` and
+     `www.wikidata.org`), so there is no local way round it. That 403 is the
+     policy and not a misconfiguration: `$HTTPS_PROXY/__agentproxy/status`
+     reports an allowlist whose `noProxy` names GitHub and the package
+     registries and nothing else, and logs the same `connect_rejected` for
+     every other host. The job was re-run six times between 11:08Z and
+     14:57Z — attempts 1 to 6 of run 34029395019 — and every one died in two
+     to four seconds in the same way. Reverse by re-running
+     `import/candidates-pt2-2026-09-06b` once Actions runs again; nothing
+     else about M41a needs redoing.
+
+440. **Why the two finished candidate rounds were not ticked.** The rule M41a
+     was given — the 150 with the most sitelinks that are not here, at least
+     eight per decade from the 1890s to the 2020s — cannot be satisfied by
+     what those two rounds returned, and satisfying the 150 alone would have
+     been worse than not ticking. The union of the two is 221 pt2 candidates
+     the atlas does not hold, over nine of the fourteen decades: the 1890s,
+     1900s, 1920s, 1940s and 1950s returned nothing at all, the 1910s two and
+     the 1930s one. And 137 of the 221 are company foundings; sorted by
+     sitelinks the head of the list is airlines, telecom brands, embassies,
+     dams, a hotel chain and the constitutional governments. The two families
+     that carry the most consequence, `pt2-laws-and-constitutions` and
+     `pt2-treaties-and-agreements`, returned zero rows across both runs.
+     Ticking 150 of that pool would have repeated what M21 and M22 had to
+     retract, with company registrations in place of ballots, and — because a
+     tick is written into the seeds file's `items`, which is what `--import`
+     walks — it would have committed that selection for the next run to
+     import. So nothing was ticked and `items` was not touched.
+
+441. **What the refusals actually cost, and the fix that is pushed and
+     waiting.** Forty-seven of the 98 pt2 queries were refused in both rounds
+     — a 500, 502 or 504, the query service giving up at sixty seconds — and
+     which ones is not random. Counting each query's territory set against
+     whether both rounds refused it: of the 21 that name one territory, none;
+     of the 14 that name two, two; of the 63 that name eight, forty-five. The
+     restriction is a `VALUES` set of territories crossed with three
+     properties, so eight territories is twenty-four join branches where
+     Portugal alone is three. The rewrite of 6 September at 01:06Z read the
+     symptom correctly and left that crossing in place, which is why it moved
+     nothing: 47 of the 49 queries it touched failed again, and that round
+     returned fewer pt2 rows than the one before it (164 against 222). The
+     47 now name Portugal alone, and each of the seven families gains one
+     query over 1890–1979 for the other seven territories, with the
+     participant property left out so those are fourteen branches rather than
+     twenty-one: 385 queries, inside the call budget of 400, which a
+     candidates run spends one at a time because a 502 and a 504 are not
+     retryable. That is commit `212cf65` on
+     `import/candidates-pt2-2026-09-06b`; validator without `--index` clean
+     and `node --test` green on it. Nothing under `data/` moves but the seeds
+     file, and the other 331 queries are untouched.
+
+442. **The import Action lost five and a half hours to a hung test, and the
+     gate is now bounded.** The `--import` run pushed on 7 September walked
+     batch 1, built its index and validated, then stopped printing partway
+     through `node --test` — after 339 of 603 tests — and sat there until
+     GitHub killed the job at its 330-minute limit. The cleanup log names what
+     it was holding: two node processes and two headless Chromiums still
+     alive. The step never reached its `git commit`, so batch 1 was discarded
+     and the cursor did not move: five and a half hours, nothing committed,
+     nothing to read. The cause is in `tests/browser.mjs`, which drives
+     Chromium over the DevTools protocol. Its polling waits are bounded —
+     `waitFor` and `open` give up after 200 tries — but `send` resolves only
+     when a reply with a matching id arrives and `once` only when an event
+     does, and neither has a deadline; a reply or a `Page.loadEventFired`
+     that never comes is a promise that never settles, and because the
+     browser is still open the event loop stays alive, so node does not
+     notice and simply waits. Reproduced here both ways: a test awaiting a
+     pending promise while holding a live handle runs until it is killed, and
+     the same test under `--test-timeout` is cancelled and reported. The
+     Action now runs `node --test --test-timeout=120000`; the slowest single
+     test in the suite takes 4s, so that is not a deadline an honest test
+     comes near, and a hang is now a failed batch rather than a lost run —
+     which matters because the loop pushes each batch as it goes, so the
+     batches already committed stand and pushing the branch again resumes
+     from the cursor. **The unbounded waits themselves are not fixed.** They
+     are shared test infrastructure that `m0` runs too, this branch's job was
+     the import, and the same hang can still take a batch on any branch. That
+     is a change to `tests/browser.mjs` and it is the owner's to schedule.
+
+443. **The import was writing two fields the contribute form cannot carry
+     back, and both are fixed in the tool rather than in `src/`.** With the
+     gate bounded, batch 1 failed one test out of 603: `bundle.test.mjs`, an
+     unedited save of a record in `data/` is byte identical — on
+     `data/actors/euronext.json`, which the import had written a minute
+     earlier. That test is the contract that keeps an imported record the
+     same kind of object as one a person wrote by hand: same fields, editable
+     in the same place, nothing in it the form would silently drop. Two
+     breaches. First, an actor's exact date: `common/interval.json` allows
+     `date` on any interval and the validator is content, but the form offers
+     an exact date for an event and a relation and not for an actor, so a
+     save drops it; Euronext, founded on a day Wikidata knows, was the first
+     actor an import ever created with one, and all 414 actors already here
+     carry years alone. Second, a place's citation: this had never fired
+     because no import had yet put a place into `data/`, and it would have
+     fired on this run, since the M41a candidates are foundings and
+     infrastructure and a bridge is a place. Rule 6 lists the kinds that must
+     cite and place is not among them, and `CITATION_LISTS` in
+     `src/contribute/bundle.js` gives the place form no citation field and
+     says why — a place is a geographic fact, not an argument. So
+     `intervalFor` keeps the day for an event and not for an actor, and
+     `placeRecord` cites nothing; no provenance is lost, because the item is
+     on the record already in `wikidata`. Both were found by running the
+     import against its own fixtures and round-tripping what it wrote, which
+     is now a test in `tests/import-wikidata.test.mjs` — `bundle.test.mjs`
+     holds the same invariant but only over records already in the tree,
+     which for an import means after the Action has walked a batch, so a
+     mismatch costs a run rather than a test. **The other reading is the
+     owner's to take**: that the actor form should carry an exact date, and
+     that a place should cite. Both are changes to the contribute interface
+     and to what every contributor is asked for, so this branch did not make
+     them.
+
+444. **`world` is red on two tests, on purpose, because its index is
+     deliberately stale.** The rule for this run was to commit nothing under
+     `data/index/` on `world` — the index is `m0`'s, its shard names are
+     content hashes, and two branches rebuilding it in parallel conflict over
+     files whose only difference is which tree they describe. The merge
+     therefore kept `world`'s existing index rather than the import branch's,
+     and `node tools/validate.mjs` without `--index`, which is this run's
+     stated gate, is clean: 1906 records, 0 errors. But `data/` grew by 42
+     records and the index no longer describes it, so the two tests that
+     check the index against the tree fail: `the repository data/ validates
+     and its index is fresh` in `tests/build-index.test.mjs` and
+     `validate.mjs passes on the repository data` in
+     `tests/validate-cli.test.mjs`. 602 of 604 pass; those two are the whole
+     of the failure, and nothing else regressed. This is new: `world` was
+     green before this merge, because M40a's merge carried the import
+     branch's index with it. **One `node tools/build-index.mjs` commit on top
+     of the merge into `m0` clears it**, the way M31 and M32b were cleared,
+     and until then `world` should not be read as green.
+
+445. **The second Portuguese round returned institutions, not events.** The
+     brief asked for classes that carry consequence and no election class,
+     and what came back is 41 actors and 1 event out of 150 ticked — every
+     one of the 41 an `institution`. 108 items were refused, all for the same
+     reason: their Wikidata classes are not in the seeds file's `classes`
+     table, which by its own rule refuses an unnamed class rather than
+     guessing. The heads of that list are Q210272 (17 items), Q46970 (14),
+     Q15911738 (11), Q537127 (10), Q1248784 (10) and Q94993988 (9), and the
+     report on the branch names all of them with their counts. This is not a
+     new surprise so much as the shape the candidate rule already warned of
+     in its own header: 95 of the 150 were company or institution foundings
+     and 41 infrastructure, because those are the two families Wikidata
+     answers richly for Portugal, while `pt2-treaties-and-agreements`
+     returned nothing at all across three runs and `pt2-laws-and-constitutions`
+     returned one row. **Two things follow and neither is this run's to
+     decide.** Naming the refused classes and walking those 108 again is the
+     move M40a made with its own 27 classes, and it would raise the yield;
+     but it is an editorial judgement about what each class *is*, made in a
+     sandbox that cannot read a class label from Wikidata, and the M41 brief
+     does not ask for it. And a round that yields institutions is a poor
+     answer to a brief about consequence, which is a question about the
+     queries rather than about the import. M41b is where a candidate that
+     earns no honest edge is retracted, and it will be retracting mostly
+     companies.
+446. **An actor takes no edge, so M41b's rule is not M40b's.** The brief says
+     "edges to what is here", which is what M40b did with ninety-one imported
+     *events*. Forty-one of M41a's forty-two are **actors**, and an edge runs
+     between events; there is no such thing as an edge to an actor. So the
+     owner's one-edge rule was read across into the only two things that
+     honestly attach an actor to the graph, and `docs/m41-retractions.md`
+     states the reading at the top: an **actor line on an event the atlas
+     already holds**, where that event's own prose already names the actor or
+     the actor's cached lead says plainly that it took part in it; or a
+     **relation** to an actor already here, cited like any other relation.
+     Ten actor lines and eight relations came out of it. The bar's second half
+     was kept exactly: nothing was written in order to keep a record, which is
+     why no company got the `part-of Portugal` relation that would have
+     cleared all twenty-four warnings and said nothing.
+447. **`data/roles.json`, `data/categories.json` and the `category` field are
+     on `m0` and not on `world`.** The brief asks for every actor line's role
+     to be one of the thirty-one and for a `category` from the list where the
+     title makes it unambiguous. This branch forked before M32b: it has no
+     `data/roles.json`, no `docs/roles-mapping.md`, roles free text in
+     `schema/v1/event.json`, and no `category` property at all — and that
+     schema is `additionalProperties: false`, so writing one would have been
+     an error here. The ten roles written are therefore taken from `m0`'s
+     thirty-one anyway (`party`, `opposition`, `supporter`, `institution`,
+     `debtor`), so that rule 25 passes when `world` is merged; no category was
+     written on any record. The event `crisis-portugal` would be `economy`
+     when the field exists.
+448. **There is no `retraction: { on, reason }` in this schema.** The brief
+     names that shape; the envelope has no such property, and
+     `additionalProperties: false` would refuse it. M40b's pattern was used
+     instead, which is the same information in the fields that exist:
+     `status: "retracted"`, `m41-retracted` in `review.flags`, and the reason
+     as `review.note`, capped at the schema's five hundred characters. The
+     two merges use M22's: `status: "merged"`, `supersededBy`, `m41-merged`.
+449. **Two of the forty-two were neither wired nor retracted but merged, and
+     that is a finding about the import.** Q954010 is the `uniao-nacional`
+     this atlas has held since M7 — same interval, three names in common,
+     three election records already naming it — and Q1783440 is
+     `partido-democratico`, which six records from 1915 to 1926 name. The
+     import's reconciliation, whose whole job is to catch this, matched
+     neither, and both survivors carry no `wikidata` for it to have matched
+     *on*: the reconciliation is by identifier and these two were only ever
+     matchable by name. M40a's ninety-one events produced no duplicate at all
+     and M22's elections produced several; the difference is that an event's
+     name is a date and an actor's is a name. Nothing was done about the
+     reconciler here — the brief does not ask and the tool has no network in
+     this sandbox — but a name-and-interval pass before the import writes an
+     actor is the obvious fix, and M42 will hit this harder than M41 did.
+450. **M41b's section is a comment on pull request #1 and not in its body.**
+     The body is about 157,000 characters after thirty-odd milestones, and the
+     only tool this session has for it replaces the whole thing: adding one
+     section means re-emitting every other one verbatim, and a transcription
+     slip there would silently damage the record of every milestone before
+     this. The section was posted as a comment instead, saying at its top
+     where it belongs and that it is a comment for this reason. **Two things
+     follow for whoever reads this next.** Pasting the comment into the body
+     under M41a's section is a minute's work in the browser and is the fix.
+     And the body has outgrown the tool: the sections marked *(summarised)*
+     are the convention that was keeping it down, and either the older ones
+     want summarising again or the milestone log wants moving into a file in
+     the repository, where a run can edit it the way it edits everything else.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
@@ -1717,3 +2188,18 @@ I1 started 2026-09-07T18:45:37Z by scheduled
 I1 started 2026-09-08T02:01:46Z by scheduled
 I1 done
 I2 started 2026-09-08T02:43:14Z by scheduled
+M40a started 2026-09-05T11:57:48Z by scheduled (branch world)
+M40a resumed 2026-09-05T19:48:38Z by scheduled (branch world)
+M40a resumed 2026-09-05T21:02:41Z by scheduled (branch world)
+M40a done
+M40b started 2026-09-05T21:22:14Z by scheduled (branch world)
+M40b done
+M41a started 2026-09-05T22:06:25Z by scheduled (branch world)
+M41a resumed 2026-09-06T02:02:44Z by scheduled (branch world)
+M41a resumed 2026-09-06T11:01:13Z by scheduled (branch world)
+M41a resumed 2026-09-07T18:46:34Z by scheduled (branch world)
+M41a resumed 2026-09-08T02:02:02Z by scheduled (branch world)
+M41a done
+M41b started 2026-09-08T02:52:04Z by scheduled (branch world)
+M41b done
+M41 done

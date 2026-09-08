@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "fertagus",
+  "kind": "actor",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-08",
+  "revised": "2026-09-08",
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m41-retracted"
+    ],
+    "note": "Retracted in M41b: the suburban railway that has run across the Ponte 25 de Abril to the Setúbal peninsula under concession since 1999. The atlas holds no record of the bridge, of its railway deck opened in that year, or of the Lisbon suburban network, and the operator cannot be joined to a crossing the atlas has never mentioned."
+  },
+  "wikidata": "Q1408210",
+  "sitelinks": 10,
+  "wikipedia": {
+    "en": "Fertagus",
+    "pt": "Fertagus"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1408210"
+    }
+  ],
+  "actorType": "institution",
+  "names": [
+    "Fertagus"
+  ],
+  "summary": "Wikidata item Q1408210, imported by tools/import/wikidata.mjs. The item's own description reads \"railway line in Portugal\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1999,
+    "end": null
+  },
+  "where": null
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "treaty-of-portsmouth",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": "2026-09-05",
+  "review": {
+    "flags": [
+      "imported-facts",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q548067",
+  "sitelinks": 48,
+  "wikipedia": {
+    "en": "Treaty of Portsmouth",
+    "pt": "Tratado de Portsmouth"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Portsmouth\", revision 1369694651"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Tratado de Portsmouth\", revision 67280689"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q548067"
+    }
+  ],
+  "title": "Treaty of Portsmouth",
+  "summary": "The treaty signed on 5 September 1905 at the naval yard at Kittery, Maine, ended the Russo-Japanese War. Russia recognised Japan's paramountcy in Korea and gave up the Liaodong lease, the South Manchuria Railway and the southern half of Sakhalin; Theodore Roosevelt, who had mediated, took the Nobel Peace Prize for it. It is in the atlas as the first occasion on which an Asian power defeated a European empire in a war and was conceded the spoils at a European-style congress, a fact read at the time — in Constantinople and in Peking as much as in Tokyo — as evidence that the arrangement of the world was not fixed.",
+  "when": {
+    "start": 1905,
+    "end": 1905,
+    "date": "1905-09-05"
+  },
+  "place": null,
+  "region": "americas",
+  "actors": [
+    {
+      "actor": "russia-soviet-union",
+      "role": "signatory"
+    },
+    {
+      "actor": "japan",
+      "role": "signatory"
+    },
+    {
+      "actor": "united-states-of-america",
+      "role": "negotiator"
+    }
+  ]
+}

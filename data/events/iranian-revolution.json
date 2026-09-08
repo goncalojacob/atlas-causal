@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "iranian-revolution",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": "2026-09-05",
+  "review": {
+    "flags": [
+      "imported-facts",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q126065",
+  "sitelinks": 94,
+  "wikipedia": {
+    "en": "Iranian Revolution",
+    "pt": "Revolução Iraniana"
+  },
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Iranian Revolution\", revision 1373278840"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Revolução Iraniana\", revision 72685936"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q126065"
+    }
+  ],
+  "title": "Iranian Revolution",
+  "summary": "A year of strikes, demonstrations and funerals brought down the Pahlavi monarchy: the Shah left Iran in January 1979, Khomeini returned in February, and a referendum in April established an Islamic republic whose constitution put a jurist above the elected government. It was a revolution made in the cities by a coalition of clergy, bazaar, left and liberals, and then closed by one part of it against the others. Its immediate effect on the rest of the world was economic — Iranian output collapsed and the oil price doubled again in 1979, which is the second shock that runs through every European economy of the early 1980s.",
+  "when": {
+    "start": 1978,
+    "end": 1979,
+    "date": "1978-01",
+    "endDate": "1979-02"
+  },
+  "place": null,
+  "region": "asia",
+  "actors": [
+    {
+      "actor": "iran-persia",
+      "role": "government"
+    }
+  ]
+}

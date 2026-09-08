@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "lebanese-civil-war--2006-lebanon-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Lebanese Civil War\", revision 1370626682"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"2006 Lebanon War\", revision 1373390187"
+    }
+  ],
+  "from": "lebanese-civil-war",
+  "to": "2006-lebanon-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The war of 2006 was fought between Israel and a party-militia that the civil war produced and that the settlement ending it left armed. Hezbollah was formed during the Israeli invasion and occupation of the south from 1982, and the Taif agreement of 1989, which disarmed the other militias, exempted the resistance to the occupation; when Israel withdrew in 2000 the exemption stayed. That is why in July 2006 the state of Lebanon was not the belligerent and could not restrain the one that was. The claim is about that inheritance, not about the raid that started the fighting.",
+  "dispute": null
+}

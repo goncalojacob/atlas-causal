@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "reconstitution-party",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-08",
+  "revised": "2026-09-08",
+  "review": {
+    "flags": [
+      "imported-facts",
+      "summary-drafted"
+    ],
+    "note": "Summary drafted in M41b from the two cached leads. The interval's end was set to 1923 from the merger the Portuguese lead states; the Wikidata item had left it open, which would have made the party outlive the First Republic."
+  },
+  "wikidata": "Q2054732",
+  "sitelinks": 4,
+  "wikipedia": {
+    "en": "Reconstitution Party",
+    "pt": "Partido Republicano da Reconstituição Nacional"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Reconstitution Party\", revision 1282917164"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Partido Republicano da Reconstituição Nacional\", revision 65247385"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q2054732"
+    }
+  ],
+  "actorType": "institution",
+  "names": [
+    "Reconstitution Party",
+    "Partido Republicano da Reconstituição Nacional"
+  ],
+  "summary": "The Republican Party of National Reconstitution, generally called the Reconstitution Party, was founded in 1920 as a breakaway from the Republican Liberal Party and was led by Álvaro de Castro. In 1923 it merged back with the Liberals to form the Nationalist Republican Party, which is where this record reaches the atlas.",
+  "when": {
+    "start": 1920,
+    "end": 1923
+  },
+  "where": null
+}

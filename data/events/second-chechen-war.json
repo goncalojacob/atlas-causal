@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "second-chechen-war",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": "2026-09-05",
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m40-retracted"
+    ],
+    "note": "Retracted in M40b: the Russian campaign in Chechnya from August 1999. The first Chechen war was among the twenty-nine candidates the import refused for want of a lane, the dissolution of the Soviet Union is not a record here, and neither is Putin's accession — which is where the argument that this war made a career would have to run. There is no Portuguese link. It would need the first war, or the presidency of 2000, as a record."
+  },
+  "wikidata": "Q120843",
+  "sitelinks": 61,
+  "wikipedia": {
+    "en": "Second Chechen War",
+    "pt": "Segunda Guerra da Chechênia"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q120843"
+    }
+  ],
+  "title": "Second Chechen War",
+  "summary": "Wikidata item Q120843, imported by tools/import/wikidata.mjs. The item's own description reads \"war in Chechnya\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1999,
+    "end": 2009,
+    "date": "1999-08-26",
+    "endDate": "2009-04-16"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}

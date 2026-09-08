@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "katyn-massacre",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": "2026-09-05",
+  "review": {
+    "flags": [
+      "imported-facts",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q134301",
+  "sitelinks": 73,
+  "wikipedia": {
+    "en": "Katyn massacre",
+    "pt": "Massacre de Katyn"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Katyn massacre\", revision 1368830884"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Massacre de Katyn\", revision 70436501"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q134301"
+    }
+  ],
+  "title": "Katyn massacre",
+  "summary": "On Stalin's written order of March 1940 the NKVD shot some twenty-two thousand Polish officers, policemen, border guards, officials and professional men taken prisoner when the Soviet Union occupied eastern Poland in September 1939, at Katyn and in the prisons of Kalinin and Kharkiv. The graves were found by the Germans in 1943 and used for propaganda; Moscow blamed the Germans, broke relations with the Polish government in London for asking the Red Cross to investigate, and maintained the denial until 1990. It is in the atlas because it removed the officer class of a country the Soviet Union was about to occupy, and because the lie about it governed Polish-Soviet relations for half a century.",
+  "when": {
+    "start": 1940,
+    "end": 1940,
+    "endDate": "1940-05"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": [
+    {
+      "actor": "russia-soviet-union",
+      "role": "perpetrator"
+    }
+  ]
+}

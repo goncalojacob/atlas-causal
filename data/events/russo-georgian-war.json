@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "russo-georgian-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": "2026-09-05",
+  "review": {
+    "flags": [
+      "imported-facts",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q620735",
+  "sitelinks": 74,
+  "wikipedia": {
+    "en": "Russo-Georgian War",
+    "pt": "Guerra Russo-Georgiana"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Russo-Georgian War\", revision 1371976175"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Guerra Russo-Georgiana\", revision 71458395"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q620735"
+    }
+  ],
+  "title": "Russo-Georgian War",
+  "summary": "Five days of fighting in August 2008 between Georgia and Russia with the separatist forces of South Ossetia and Abkhazia, opened by a Georgian attempt to retake Tskhinvali and answered by a Russian advance into Georgia proper. It ended with a French-brokered ceasefire, Russian recognition of the two territories as states, and Russian garrisons in both. It is usually called the first European war of the twenty-first century, and its lasting significance is the precedent: force used against a neighbour that had been promised eventual membership of NATO, and no consequence for it that outlasted the season.",
+  "when": {
+    "start": 2008,
+    "end": 2008,
+    "date": "2008-08-08",
+    "endDate": "2008-08-12"
+  },
+  "place": null,
+  "region": "asia",
+  "actors": [
+    {
+      "actor": "georgia",
+      "role": "belligerent"
+    },
+    {
+      "actor": "russia-soviet-union",
+      "role": "belligerent"
+    }
+  ]
+}

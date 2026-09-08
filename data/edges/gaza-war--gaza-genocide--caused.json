@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "gaza-war--gaza-genocide--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Gaza war\", revision 1372809003"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Gaza genocide\", revision 1371072421"
+    }
+  ],
+  "from": "gaza-war",
+  "to": "gaza-genocide",
+  "type": "caused",
+  "confidence": "disputed",
+  "explanation": "The two records describe the same eighteen months from different positions: one is the war, the other is the finding that the way it has been fought amounts to the destruction of a people as such. The edge exists because the atlas holds both and a reader is owed the relation between them; it is marked disputed because that relation is the thing in dispute, and this project's worst available mistake would be to present either side of it as settled. What is not in dispute and is not the subject of this edge: the scale of the killing, the destruction of the housing, hospitals and universities of the Strip, and the displacement of nearly its whole population.",
+  "dispute": {
+    "text": "A United Nations special committee and a commission of inquiry, the International Association of Genocide Scholars, Amnesty International and Human Rights Watch, several governments, and a large body of genocide and international-law scholarship have concluded that the conduct of the war in Gaza constitutes genocide; South Africa's case is before the International Court of Justice, which has ordered provisional measures without yet ruling on the merits. Israel and the United States, and other scholars, reject the finding, arguing over the requirement of specific intent and over whether the acts are attributable to a policy rather than to the conduct of hostilities. The atlas takes no side and a reviewer should replace these citations with the reports and the judgments themselves.",
+    "sources": [
+      {
+        "source": "wikipedia-en",
+        "locator": "\"Gaza genocide\", revision 1371072421"
+      }
+    ]
+  }
+}

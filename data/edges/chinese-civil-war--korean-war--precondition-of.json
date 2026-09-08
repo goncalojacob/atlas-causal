@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "chinese-civil-war--korean-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "review": {
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Chinese Civil War\", revision 1372330605"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Korean War\", revision 1371767674"
+    }
+  ],
+  "from": "chinese-civil-war",
+  "to": "korean-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Two things about June 1950 follow from the Communist victory of 1949. Kim Il-sung got Stalin's consent for the attack only after the People's Republic existed and could be presented as a guarantor, and the Korean veterans of the Chinese armies were transferred back to build his divisions; and when the United Nations force reached the Yalu in October, it was a Chinese state four months short of its first anniversary that sent a million men across the river. Without the outcome of 1949 neither the decision to attack nor the intervention that saved the North has its condition.",
+  "dispute": null
+}

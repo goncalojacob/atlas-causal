@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "redes-energeticas-nacionais",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-08",
+  "revised": "2026-09-08",
+  "review": {
+    "flags": [
+      "imported-facts",
+      "summary-drafted"
+    ],
+    "note": "Summary drafted in M41b from the two cached leads, and joined to the atlas as the transmission system operator of the supply failure of 28 April 2025 — whose record cites REN's own account of the interruption as its only source, and says the cause was still being examined by the operators."
+  },
+  "wikidata": "Q1862842",
+  "sitelinks": 11,
+  "wikipedia": {
+    "en": "Redes Energéticas Nacionais",
+    "pt": "Redes Energéticas Nacionais"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Redes Energéticas Nacionais\", revision 1359680480"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Redes Energéticas Nacionais\", revision 71084168"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q1862842"
+    }
+  ],
+  "actorType": "institution",
+  "names": [
+    "Redes Energéticas Nacionais"
+  ],
+  "summary": "REN – Redes Energéticas Nacionais holds the concessions for the two national energy transmission grids, for electricity and for natural gas, and is responsible for the planning and the technical management of both.",
+  "when": {
+    "start": 1994,
+    "end": null
+  },
+  "where": null
+}

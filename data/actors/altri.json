@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "altri",
+  "kind": "actor",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-08",
+  "revised": "2026-09-08",
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m41-retracted"
+    ],
+    "note": "Retracted in M41b: the pulp, forestry and cogeneration group headquartered in Porto, split off in 2005 and in steel before 2008. The atlas holds nothing about Portuguese industry after the nationalisations of 1975 and the privatisations that undid them, and the leads offer no event this company took part in."
+  },
+  "wikidata": "Q444971",
+  "sitelinks": 14,
+  "wikipedia": {
+    "en": "Altri",
+    "pt": "Altri"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q444971"
+    }
+  ],
+  "actorType": "institution",
+  "names": [
+    "Altri"
+  ],
+  "summary": "Wikidata item Q444971, imported by tools/import/wikidata.mjs. The item's own description reads \"a Portuguese industrial conglomerate headquartered in Porto\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2005,
+    "end": null
+  },
+  "where": null
+}
