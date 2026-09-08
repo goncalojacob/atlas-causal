@@ -203,3 +203,21 @@ test('a narrative that does not resolve is not a mode to be in', async () => {
   assert.equal(store.get().narrative, 'no-such-narrative');
   assert.equal(store.get().selected, 'fixture-event-t', 'nothing derived from nothing');
 });
+
+// Everything downstream is given the wrapper and not the store (main.js), so
+// a session's generated walk has to pass through it. It is not the
+// narrative's: reading mode owns the selection, the chain and the window, and
+// a walk the atlas put together is beside all three (walk.js, I9).
+test('the wrapper passes the session\'s generated walk through', async () => {
+  const atlas = await atlasPromise;
+  const store = createState({ selected: 'fixture-event-t' });
+  const state = createReadingMode(store, atlas);
+  const walk = { target: 'fixture-event-t', steps: [], provenance: { by: 'atlas' } };
+
+  assert.equal(state.walk(), null);
+  state.setWalk(walk);
+  assert.equal(state.walk(), walk);
+  assert.equal(store.walk(), walk, 'the same one the store is holding');
+  state.clearWalk();
+  assert.equal(state.walk(), null);
+});

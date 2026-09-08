@@ -332,6 +332,22 @@ const TRAIL = 50;
 // changed, replacing otherwise — and notifies subscribers.
 export function createState(initial, { window: win = null, restore = (s) => s } = {}) {
   let state = { ...defaultState(), ...initial };
+  // The walk the atlas assembled, when one has been (walk.js). Beside the
+  // state and never in it, for two reasons that pull the same way.
+  //
+  // It is not a *field* of the state: the state is what a URL says, every
+  // field of it is written and parsed, and a walk is a small object of edge
+  // ids and a provenance that no address bar should ever carry. And it is not
+  // in `data/` either — a stitched path is a claim, and an unsigned claim does
+  // not enter the corpus (plan decision 7, D13). Between the two there is
+  // exactly one place left for it: the session, which is here.
+  //
+  // `state.walk` is a different thing and stays what it has always been: the
+  // reserved `?walk=` parameter, parsed so it survives a state write, written
+  // by nothing. The address of a generated walk is the Why mode's decision
+  // (M35, `?why=`, whose inputs *are* the walk), and a URL that means nothing
+  // in another session is a link the atlas would break.
+  let generated = null;
   const listeners = new Set();
   const notify = () => {
     for (const fn of listeners) fn(state);
@@ -441,6 +457,23 @@ export function createState(initial, { window: win = null, restore = (s) => s } 
   }
   return {
     get: () => state,
+    // The generated walk this session is holding, or null. Read by the card,
+    // which says on it that the atlas put this path together and the reader
+    // did not (panel/event.js).
+    walk: () => generated,
+    // Setting one notifies, exactly as a state change does: nothing in the
+    // state says a walk arrived, so the card would otherwise be drawn from a
+    // key that cannot see it. The chain it draws is set separately and by
+    // whoever asked for the walk — this does one thing.
+    setWalk(walk) {
+      generated = walk ?? null;
+      notify();
+    },
+    clearWalk() {
+      if (generated === null) return;
+      generated = null;
+      notify();
+    },
     // What Back would return to and Forward go on to, as openings; null on
     // either side when there is nowhere to go. The panel names them.
     trail: () => ({

@@ -71,5 +71,18 @@ export function createReadingMode(store, atlas) {
     return store.set(patch);
   }
 
-  return { get: store.get, subscribe: store.subscribe, trail: store.trail, set };
+  // The generated walk passes straight through: it is the session's and not
+  // the narrative's, and reading mode owns `selected`, `chain`, `from` and
+  // `to` and nothing else. Everything downstream is given this wrapper rather
+  // than the store (main.js), so a walk it did not forward would be a walk the
+  // card could not see.
+  return {
+    get: store.get,
+    subscribe: store.subscribe,
+    trail: store.trail,
+    walk: store.walk,
+    setWalk: store.setWalk,
+    clearWalk: store.clearWalk,
+    set,
+  };
 }

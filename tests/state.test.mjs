@@ -620,3 +620,47 @@ test('?walk= is reserved: parsed, carried, and never a record id it makes up', (
     '?narrative=n&step=2&walk=w',
   );
 });
+
+// I9 gives the parameter a producer (walk.js) and leaves the parameter alone.
+// The walk it produces is held beside the state, in the session, and the
+// address of one is the Why mode's decision (M35, `?why=`, whose inputs *are*
+// the walk): a URL that means nothing in another session is a link the atlas
+// would break, and this is the first such link the project would have written.
+test('a generated walk is held beside the state and never written to the URL', () => {
+  const win = fakeWindow('?selected=fixture-event-a');
+  const store = createState({ selected: 'fixture-event-a' }, { window: win });
+  const seen = [];
+  store.subscribe(() => seen.push(store.walk()));
+
+  assert.equal(store.walk(), null, 'a session holds no walk until one is put together');
+  const walk = { target: 'fixture-event-t', steps: ['a--b--caused'], provenance: { by: 'atlas' } };
+  store.setWalk(walk);
+  assert.equal(store.walk(), walk);
+  // Nothing in the state says a walk arrived, so the notification is the only
+  // way the card could be redrawn for one.
+  assert.deepEqual(seen, [walk]);
+  // And the address bar is untouched: no `?walk=`, and no push either.
+  win.frame();
+  assert.deepEqual(win.pushed, []);
+  assert.ok(!win.location.search.includes('walk='), win.location.search);
+  assert.equal(store.get().walk, null, 'the reserved parameter is a different thing');
+
+  store.clearWalk();
+  assert.equal(store.walk(), null);
+  assert.deepEqual(seen, [walk, null]);
+  // Clearing nothing is not a change and does not redraw anything.
+  store.clearWalk();
+  assert.equal(seen.length, 2);
+});
+
+// A walk id in a link that was made in somebody else's session names nothing
+// here. It has always been parsed and never resolved, and it stays that way:
+// what the reader sees is the selection the same link carries.
+test('a walk id that names nothing in this session leaves the selection alone', () => {
+  const win = fakeWindow('?selected=fixture-event-a&walk=someone-elses-question');
+  const store = createState(parseState(win.location.search), { window: win });
+  assert.equal(store.get().selected, 'fixture-event-a');
+  assert.equal(store.get().walk, 'someone-elses-question');
+  assert.equal(store.walk(), null, 'nothing was resolved from it');
+  assert.equal(store.get().chain.length, 0);
+});
