@@ -3664,6 +3664,14 @@ The numbering continues from 401, which is M31-3's last.
      milestone reports. Reverse by pushing one commit at a time and waiting
      about three minutes for each, at the cost of a run's whole night.
 
+550. **The M44-0 section is a comment on pull request #1 and not in its
+     body**, as I4a's, M30c's, I5's, I6's, I8's and I9's are (deviations 483,
+     498, 506, 517, 539, 540), for the same reason and with the same request
+     to the owner: the body is 172 KB on one line, the tool replaces the whole
+     of it, and one dropped line would silently destroy the record of thirty
+     milestones. Posted whole and ready to paste in above `### I3`:
+     https://github.com/goncalojacob/atlas-causal/pull/1#issuecomment-5591489867
+
 ## I8: what was derived, and what the Action must still run
 
 **The successions.** `node tools/import/cshapes.mjs --relations` reads
