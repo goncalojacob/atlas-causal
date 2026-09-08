@@ -3090,6 +3090,17 @@ The numbering continues from 401, which is M31-3's last.
      history line, so the brief's "the deploy allowlist must still name the
      histories" had nothing to edit. Checked, not changed.
 
+506. **The I5 section is a comment on pull request #1 and not in its body**, as
+     I4a's and M30c's were (deviations 483, 498). Step 4 asks for it in the
+     body. The body is 168 KB and the tool that writes it replaces the whole of
+     it — there is no append — so adding four kilobytes means re-sending the
+     record of thirty milestones through a tool call, where one dropped line
+     destroys it silently. The section is posted whole and ready to paste in
+     above `### I3`, and this records that the body itself is untouched. **For
+     the owner:** three runs have now put their section in a comment for the
+     same reason, and the fix is either a shorter body or a run that is not
+     asked to edit it.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
