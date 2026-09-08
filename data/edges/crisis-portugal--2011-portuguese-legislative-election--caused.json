@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "crisis-portugal--2011-portuguese-legislative-election--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-08",
+  "revised": null,
+  "review": {
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"2010–2014 Portuguese financial crisis\", revision 1372626457"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"2011 Portuguese legislative election\", revision 1372702329"
+    }
+  ],
+  "from": "crisis-portugal",
+  "to": "2011-portuguese-legislative-election",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The ballot of 5 June 2011 was early and it was about the crisis: the fourth austerity package was voted down in March, José Sócrates resigned, and the country voted six weeks after the request for assistance, under a memorandum the two largest opposition parties had already signed. Probable rather than settled because an early election always has more than one proximate cause — the arithmetic of the minority government returned in 2009 is the other, and the atlas already draws that line to the bailout rather than here."
+}
