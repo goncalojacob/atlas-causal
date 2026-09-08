@@ -771,6 +771,20 @@ body:not(.phone) .layout.panel-empty > .split-panel { display: none; }
 .graph .node.in-horizon.mid { opacity: 0.72; }
 .graph .node.in-horizon.far { opacity: 0.45; }
 .graph .node.in-horizon.on-path, .graph .node.in-horizon.selected { opacity: 1; }
+/* An event that has parts: the same ring the map and the timeline draw, at
+   every zoom — the collapse above is a behaviour and this is the look, and a
+   reader zoomed past the threshold was being told nothing at all. It carries
+   the node's own emphasis classes and not the word `node`; its width is set
+   per zoom by the view, so nothing is declared here. */
+.graph .ring { fill: none; stroke: var(--cobalt); pointer-events: none; }
+.graph .ring.on-path, .graph .ring.selected { stroke: var(--madder); }
+.graph .ring.faded { opacity: 0.28; }
+.graph .ring.faded.selected, .graph .ring.faded.on-path { opacity: 0.6; }
+.graph .ring.lens-near { opacity: 0.22; }
+.graph .ring.lens-near.selected, .graph .ring.lens-near.on-path { opacity: 0.6; }
+.graph .ring.in-horizon.mid { opacity: 0.72; }
+.graph .ring.in-horizon.far { opacity: 0.45; }
+.graph .ring.in-horizon.on-path, .graph .ring.in-horizon.selected { opacity: 1; }
 .graph .node-label { fill: var(--ink); font-family: var(--font-ui); paint-order: stroke; stroke: var(--paper); stroke-width: 3; pointer-events: none; }
 .graph .node-label.selected { fill: var(--madder); font-weight: 600; }
 /* The key — in the corner of the graph, and again in about.html — is drawn

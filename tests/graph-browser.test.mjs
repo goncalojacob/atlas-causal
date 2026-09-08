@@ -237,3 +237,74 @@ test('a parent holds its parts at the default zoom and gives them up when the re
     assert.deepEqual(await errorsOn(page), [], 'the console is clean');
   });
 });
+
+// M30c, §1: the collapse above is a *behaviour* — it happens below
+// `COLLAPSE_ZOOM` and stops above it — and the ring is the *look*, which the
+// parent keeps at every zoom. Before this the reader who had zoomed in far
+// enough to see the parts was told nothing about the event holding them.
+const RING = `
+  const svg = document.querySelector('svg.graph');
+  const node = svg.querySelector('circle.node[data-id="fixture-event-f"]');
+  if (!node) return { node: null };
+  const near = (a, b) => Math.abs(Number(a) - Number(b)) < 0.001;
+  const ring = [...svg.querySelectorAll('circle.ring')].find((el) => (
+    near(el.getAttribute('cx'), node.getAttribute('cx'))
+      && near(el.getAttribute('cy'), node.getAttribute('cy'))
+  )) ?? null;
+  const style = ring ? getComputedStyle(ring) : null;
+  return {
+    node: { r: Number(node.getAttribute('r')), classes: node.getAttribute('class') },
+    rings: svg.querySelectorAll('circle.ring').length,
+    ring: ring === null ? null : {
+      r: Number(ring.getAttribute('r')),
+      classes: ring.getAttribute('class'),
+      id: ring.getAttribute('data-id'),
+      fill: style.fill,
+      events: style.pointerEvents,
+      stroke: Number(ring.getAttribute('stroke-width')),
+      sibling: ring.parentNode === node.parentNode,
+    },
+  };`;
+
+test('a parent keeps its ring at every zoom, collapsed or parted', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await watchErrors(page);
+    await open(page, url('?fixtures=1&view=graph'), drawnGraph);
+    await waitFor(page, TITLED('fixture-event-f'), "the parent's century to land");
+
+    const held = await page.eval(RING);
+    assert.match(held.node.classes, /\bcollapsed\b/, 'at this zoom the parts are inside it');
+    assert.equal(held.rings, 1, 'one ring, for the one parent on the fixtures');
+    assert.ok(held.ring, 'and the parent has it');
+    assert.ok(held.ring.sibling, 'beside the node, in the same layer');
+    assert.ok(held.ring.r > held.node.r, `outside it: ${held.ring.r} around ${held.node.r}`);
+    assert.equal(held.ring.fill, 'none', 'an outline and not a disc');
+    assert.equal(held.ring.id, null, 'it names no record, so a click still opens the node');
+    assert.equal(held.ring.events, 'none');
+    assert.doesNotMatch(held.ring.classes, /\bnode\b/, 'a ring is an outline, not a record');
+
+    // One notch of the wheel past the threshold: the parts come out and the
+    // parent stops being collapsed. The ring stays, because it is not about
+    // the zoom — it is about the record having parts at all.
+    await page.eval(`
+      const svg = document.querySelector('svg.graph');
+      const box = svg.getBoundingClientRect();
+      svg.dispatchEvent(new WheelEvent('wheel', {
+        bubbles: true, cancelable: true, deltaY: -600,
+        clientX: box.left + box.width / 2, clientY: box.top + box.height / 2,
+      }));
+      return true;`);
+    await waitFor(page, NODE('fixture-event-t'), 'the parts to be drawn on their own');
+    const parted = await page.eval(RING);
+    assert.doesNotMatch(parted.node.classes, /\bcollapsed\b/, 'nothing is folded into it now');
+    assert.ok(parted.ring, 'and it is still ringed');
+    assert.ok(parted.ring.r > parted.node.r);
+    // The stroke is divided by the zoom, so the ring is as thin on the screen
+    // at four times in as it is at one, like the labels' halo.
+    assert.ok(parted.ring.stroke < held.ring.stroke, `${parted.ring.stroke} against ${held.ring.stroke}`);
+    // And the parts themselves are leaves: a ring on a leaf would say there is
+    // something inside it that is not there.
+    assert.equal(parted.rings, 1, 'still the one ring');
+    assert.deepEqual(await errorsOn(page), [], 'the console is clean');
+  });
+});

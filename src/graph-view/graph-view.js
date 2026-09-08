@@ -31,6 +31,7 @@ import { EDGE_TYPE_IDS } from '../vocab.js';
 import { chainEdges as walkedEdges, walkOrSelect } from '../chain.js';
 import { horizonBand } from '../horizon.js';
 import { workingSet, heldSet } from '../emphasis.js';
+import { isParent, ringClasses } from '../parts.js';
 import { arrangementOf, holdingKey } from './arrangement.js';
 import { layoutGraph, stackLayout, MIN_ZOOM, MAX_ZOOM } from './layout.js';
 import { collapseLayout } from './collapse.js';
@@ -59,6 +60,11 @@ const BAND_LABEL_CHARS = 12;
 const LABEL_ALL_ZOOM = 2;
 const LABEL_LIMIT = 14;
 const BADGE_SIZE = 10;
+// The ring outside the node of an event that has parts: how far outside it,
+// and how thin. A ring says "there is more inside" and nothing else, so it is
+// thinner than the node's own outline.
+const RING_GAP = 2.5;
+const RING_WIDTH = 1;
 // How much heavier a merged line is drawn. Logarithmic, so a line carrying
 // twenty links is thicker than one carrying two without being a ribbon:
 // weight here says "several", not "exactly n" — the count is in the title.
@@ -707,6 +713,18 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
         cx: node.x, cy: node.y, r: radius / k, class: cls, 'data-id': node.id,
       }, [svgTitle(title)]);
       nodesGroup.appendChild(mark);
+      // An event with parts carries the ring at every zoom, whether or not
+      // the parts are folded into it: the collapse is a behaviour and the ring
+      // is the look, and a reader zoomed past the threshold was being told
+      // nothing at all (m30c-brief, §1). The badge sits on top of it while the
+      // parts are inside. Not a control — no `data-id` — so a click still
+      // lands on the node and opens the one record.
+      if (isParent(atlas, node.event)) {
+        nodesGroup.appendChild(svg('circle', {
+          cx: node.x, cy: node.y, r: (radius + RING_GAP) / k, class: ringClasses(cls, 'node'),
+          'stroke-width': RING_WIDTH / k,
+        }));
+      }
       if (collapsed) {
         nodesGroup.appendChild(textNode(`+${collapsed.count}`, {
           x: node.x + (radius + 2) / k,
