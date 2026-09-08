@@ -1673,8 +1673,8 @@ spine, the presence index, the search shard, the citer directory and the
 review and sources indexes (all served `immutable`), the set of `roles` in
 use, land files with their epochs, and the presence shards with their year
 ranges. The generation is `manifest.schema` and it goes up by one in every run
-that changes the index's shape — 2 since I1 — and the graph file carries the
-same number rather than one of its own, because two numbers for one artifact
+that changes the index's shape — 3 since I2, and 2 since I1 — and the graph
+file carries the same number rather than one of its own, because two numbers for one artifact
 is two things to forget to bump. `src/data.js` **refuses a generation it does
 not know**, with the number it found and the number it expected: a manifest
 from one generation beside a page from another is a half-applied deploy, and
@@ -1783,23 +1783,51 @@ rules are checked against it; no file holds it.
 
 | File | Read by | Carries |
 |---|---|---|
-| `spine-<hash>.json` | every page, whole | every record: `id`, `kind`, `status`, `aliases`, `supersededBy`, `wikidata`, `wikipedia`, and the per-kind fields below |
+| `spine-<hash>.json` | every page, whole | every record as a **positional row** over the file's own `ids` table, with the closed vocabularies as integers and the columns named in the file: `id`, `status`, `wikidata`, `wikipedia` and the per-kind slots below. `kind` is the list the row is in; `aliases` and `supersededBy` are the `merges` list |
 | `search-<hash>.json` | the search box, contribute, review | per active record: `id`, `kind`, `label`, `detail`, `terms` (folded), `variants`, `weight`, `when`, `status`; an event also carries `lead`, the folded first sentence of its summary |
 | `explanations-<from>-<to>-<hash>.json` | whatever reads a path — the Why mode (M35), a narrative writer | `{ from, to, explanations: { <edge id>: text } }`, a century a file, filed by the year the link's **cause** begins in |
 | `citers-<hash>/<source-id>.json` | the source card, a source lens, `retractionPlan` | the rows that cite that one source |
 | `sources-<hash>.json` | `sources.html`, the source card | every bibliographic field and `citationCount`, and no citer rows |
 
+The slots each kind carries, which since I2 is one table — `SPINE_COLUMNS` in
+`src/spine.js` — read forwards by `buildSpine` and backwards by
+`topologyFromSpine`. **A tenth kind is a row in that table and nothing else**,
+which is what the third of the owner's considerations asks for; until I2 it was
+nine hand-written object literals in `validate/core.js` and a hand-written
+inverse in `data.js`, and a tenth kind meant writing both again.
+
 | Kind | And |
 |---|---|
 | event | `title`, `revised`, `when` (verbatim), `place`, `region`, `weight`, `actors` as `[{ actor, role, note? }]`, `citesCount`; and where the record has them, `parent`, `scope`, `category` and `subtreeWeight` |
-| edge | `[from, to, type, confidence, status, revised]` — six elements, the id synthesised as `from--to--type` on load |
+| edge | `[from, to, type, confidence, status, revised]` — the tuple H3a wrote, still the first six slots and still in that order — and a seventh for an id that is not `from--to--type`, which is `null` on every edge there has ever been |
 | actor | `name`, `names`, `revised`, `actorType`, `when`, `citesCount` |
 | place | `name`, `names`, `revised`, `where`, `region`, `citesCount` |
-| presence | `actor`, `when`, `geometry.key`, `dependencyOf`, `dependencyKind`, `capital`, `confidence` |
+| presence | `actor`, `when`, `geometry.key`, `dependencyOf`, `dependencyKind`, `capital`, `confidence` — in the presence index, with an id table and a vocabulary of its own, because it is fetched on its own |
 | relation | `from`, `to`, `type`, `when`, `note` |
 | office | `of`, `title`, `category`, `revised`, `when` |
 | tenure | `person`, `office`, `when`, `startedBy` |
 | narrative | `title`, `revised`, `summary`, `authors`, `window`, `steps` (refs only) |
+
+**How a row is read.** An integer in an `id` slot is an index into `ids`; an
+integer in a vocabulary slot is an index into the named list in `vocab` — the
+statuses, the edge and relation types, the confidences, the actor types, the
+scopes, the office categories and the dependency kinds from the code, the lanes,
+the event categories and the roles from their own data files, and anything met
+in a record and in neither list appended in first-seen order. Everything else is
+the value verbatim. **A row stops where its values stop**: a slot that is not
+there means "absent", and what absent *means* is the column's to say — `place`
+is a key with no value, `parent` is no key at all (index2 review, finding 22).
+That is what puts `parent`, `scope`, `category` and `subtreeWeight` back to
+costing nothing on the events that carry none. The file names its own columns,
+so a reader one generation behind refuses a column by name rather than reading
+the slot in that position as something else.
+
+**`aliases` and `supersededBy` are one `merges` list**, not two slots on every
+row of nine kinds: they are the hop `resolve()` walks and are on every record
+whatever its kind, and 1,703 of the 1,720 on the real data carry `[]` and
+`null`. That list is also where an edge that carries either one goes; until I2
+such an edge was written as a whole object beside the tuples, and the loader had
+to take both shapes.
 
 Four things the spine does **not** do. It never reduces `when` to a pair of
 years: fourteen readers want the object, two of them validator rules that run
@@ -1821,7 +1849,10 @@ used to count it out of the citer rows the sources index carried; those rows
 left that index in H3b, so it is written at build time instead and the card
 reads it off the record. **`citationCount`**, on a source, is how many
 records cite it. A tombstone
-carries neither: it keeps `title`, `when`, `place`, `region`, `wikidata`,
+carries neither: `TOMBSTONE_KEYS` is a **slot mask** and is applied by the
+encoder and the decoder alike, so a retired relation carries no `note` where an
+active one carries `note: null` — a difference a per-slot rule alone could not
+say. It keeps `title`, `when`, `place`, `region`, `wikidata`,
 `status`, `supersededBy`, `aliases`, `revised` and its kind's own label, which
 is what a retracted card's head and meta line are built from, plus what its
 own file is asked for with — 175 retracted events reach a card — and nothing
@@ -2405,6 +2436,43 @@ graph file was 542.9 KB. On that corpus this change lands at 269.4 KB and
 307.2 KB and 492.0 KB, because M30b, M31 and M32b added 38.8 KB of events,
 actors and tenures to the file in between. Nothing in I1 can close that gap:
 the excess is not presences.
+
+**And what I2 did**, on the same corpus, by making every record a positional
+row over one shared id table with the closed vocabularies as integers, and
+dropping no field:
+
+| | before I2 | after I2 | |
+|---|---|---|---|
+| the graph file, raw | 314,567 | 162,695 | 1.93× |
+| the graph file, gzipped | 40,961 | 38,047 | 1.08× |
+| `presences-<hash>.json`, raw | 267,134 | 137,693 | 1.94× |
+| `presences-<hash>.json`, gzipped | 23,265 | 22,849 | 1.02× |
+| **first paint**, raw | **503,804 (492.0 KB)** | **351,932 (343.7 KB)** | 1.43× |
+| the same at 10⁴, raw | 9,702,450 | 3,821,229 | 2.54× |
+| the same at 10⁴, gzipped | 462,537 | 439,444 | 1.05× |
+
+which is what the plan said it would be and for the reason the plan gave: gzip
+had already hidden most of this over the wire, and what the change buys is
+`JSON.parse` and heap. The graph file is 158.9 KB and the whole first paint
+343.7 KB; at 10⁴ the file every page loads whole is 3.65 MB raw and 429.1 KB
+gzipped, against the brief's 4.3 MB and 460 KB, and both are met.
+
+**On the real data the brief's 175 KB is not.** That number is the plan's two
+measured re-encoding rows added together — the core at 50.0 KB and the
+attributes at 116.2 KB (index2-plan §0) — and those two rows are not an
+inventory of the whole file. Between them they name ids, merges, an event's
+years, status, place, region, weight, actors, title, `when`, roles and notes,
+identity, `citesCount`, `revised`, `parent`/`scope`/`category`/`subtreeWeight`,
+names and `where`. They name **no presence field at all**, and the presences
+were 267,108 B — 49.2 % — of the 530.2 KB spine the rows were measured against.
+The same information as rows is 300,388 B here: 162,695 in the graph file and
+137,693 in the presence index, and 94.3 KB of the second is a presence's
+`capital` (49,517) and its `when` (44,827), neither of which is in either row.
+Nor are `wikipedia`, the offices, the tenures or a relation's `note`. The
+target could not have been met by any encoding that drops no field, which is
+the brief's other rule; the run reports rather than trims. Reducing those bytes
+means deciding which of them a first paint needs, and that decision is I3's —
+the core and the attribute shards — which is where the plan puts it.
 
 ## Milestones
 
