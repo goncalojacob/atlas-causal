@@ -561,6 +561,27 @@ the longest contiguous run of edges ending at the step, and a step that does
 not join the one before it simply breaks the run, because a narrative may jump
 and a jump is not a causal path.
 
+*A walk the atlas assembled lives in the session, and its address is not
+`?walk=`.* `walk.js` is the producer (I9): an atlas, a target and a state in,
+and out comes the path into that endpoint as a list of edge ids with a
+provenance object beside it — `{ by: 'atlas', question, on, steps }`. It is
+built out of `shortestPaths`, `pathTo`, `pathCost` and `subgraph` and adds no
+traversal of its own, so the chain it hands a reader is the chain they would
+have clicked out for the same question; `shortestPaths` stays by hops (plan
+decision 6). The walk is held **beside** the state by the store —
+`setWalk` / `clearWalk` / `walk()`, notified like a state change, forwarded by
+`narrative-mode.js` — because it belongs in neither of the two places a thing
+usually goes: not in the URL, and not in `data/`, since a stitched path is
+itself a claim and an unsigned claim does not enter the corpus (plan
+decision 7). `?walk=` stays what it has been since H7, parsed and reserved and
+written by nothing; the address of a generated walk is the Why mode's decision
+(M35, `?why=`, whose inputs *are* the walk), because a URL that means nothing
+in another session would be the first link the atlas broke. What the reader
+sees of all this is one line on the card, drawn only while the chain on screen
+is that walk: who put it together, what question it answers, and that every
+step is a link somebody wrote with its confidence and its dispute marks
+unchanged.
+
 *Rule 20 is what only the whole walk can say*: at least two steps, real prose
 at every one and in the summary, no record twice running, and a window that
 opens before it closes. Everything else is the rules the other kinds already
@@ -883,7 +904,7 @@ atlas-causal/
 │
 ├── src/
 │   ├── main.js                   ● bootstrap only: load, wire views
-│   ├── state.js                  ● { from, to, view, focus, group, lanes, selected, source, place, actor, office, chain, horizon, layers, narrative, step, bbox } ⇄ URL; data-free
+│   ├── state.js                  ● { from, to, view, focus, group, lanes, selected, source, place, actor, office, chain, horizon, layers, narrative, step, walk, bbox } ⇄ URL; data-free. The store also holds the session's generated walk beside the state — set, cleared and notified, never written to either the URL or a file
 │   ├── lanes.js                  ● pure: what the lanes are in each of the four groupings, which one an event is in, and the packing for `none`
 │   ├── lens.js                   ● pure: the events a focus keeps; removed from every view, not dimmed
 │   ├── grouping.js               ● the picker in the header, and the badge that says which lens is on
@@ -891,7 +912,8 @@ atlas-causal/
 │   ├── data.js                   ● manifest → the core (whole) → the attribute shards behind it → record text on demand; lookup tables, adjacency of events by edge and of actors by relation, events by actor and by place, an event's point through its place
 │   ├── graph.js                  ● consequences, ancestors, convergence, shortest paths outward and what an event led to by a year; pure functions over adjacency
 │   ├── horizon.js                ● pure: the traversal and the horizon year put together; what the panel lists and the views light
-│   ├── chain.js                  ● pure: the walked chain against the status of its steps; cut at the first that has been retracted, since the later ones were reached through it
+│   ├── chain.js                  ● pure: the walked chain against the status of its steps; cut at the first that has been retracted, since the later ones were reached through it; and whether the chain on screen is the walk the atlas assembled, which is when the card says so
+│   ├── walk.js                   ● pure: the walk the atlas assembles — the best path into an endpoint from where the question starts, as edge ids, with a provenance beside it. Out of `shortestPaths`, `pathTo`, `pathCost` and `subgraph`, adding no traversal; the ground the Why mode (M35) stands on
 │   ├── citation.js               ● pure: a source as a citation, its identifiers as links, a bibliography's order
 │   ├── markdown.js               ● pure: the closed Markdown subset a `body` is written in; everything outside it comes out as text
 │   ├── cluster.js                ● pure: which marks overlap at this zoom, which of them no zoom can part, which are held out of the grouping, and how the links between two groups merge; the timeline uses it in one dimension and the graph in two
@@ -1298,6 +1320,18 @@ by touching records. Since M30a-3 `region` is optional **everywhere** (plan
 decision 5): an event with neither a place nor a region is drawn in no lane,
 and the validator says so with the warning `no-lane` rather than refusing the
 record.
+
+*An endpoint may be a **condition***, and the schema has allowed one since M9
+without anything saying so (plan decision 11a). A condition is a process with
+no point and often no end — "Angolan economy dependent on oil, 1975–" — and it
+is an event record like any other: the same envelope, the same sources, the
+same edges into and out of it, `end: null` where it has not ended. It matters
+because a reader arrives with a question rather than an event, and the atlas
+answers a question only through the endpoints it holds; a corpus of moments
+alone has nowhere to put *why is Angola poor?* A condition is not the same
+thing as a placeless event: whether a thing lasted and whether it can be put
+on a map are different questions, and most of the records carrying
+`place: null` are moments.
 
 `actors` names the actors *of* the event — not everyone alive — each with the
 role it played in it; every id must resolve to an active actor (rule 14). A
@@ -2212,6 +2246,7 @@ least 40 pixels; a link inside a sentence keeps the line it is set in.
 | Module | Job | Must not know |
 |---|---|---|
 | `state.js` | Owns the state object; parses and writes the URL — pushing a history entry when *what is open* changed and replacing it when only the view moved; keeps the trail of those openings, because the browser will not say what Back returns to; notifies views. | Anything about SVG or data files, and what a record is called. |
+| `walk.js` | The walk the atlas assembles rather than the reader clicking it out: the best path into an endpoint from where the question starts, as edge ids, with a provenance beside it saying who put it together, to answer what, and on what day. Pure, and built out of what `graph.js` already answers — it adds no traversal, so the chain it hands back is the chain the reader would have walked. | The DOM, the URL, and any way of writing itself down: a walk is not a record and never enters `data/`. |
 | `lanes.js` | What a lane is, in all four groupings: which lanes the window offers, which six of them are drawn, which single lane each event belongs in and why, and — with no grouping — the packing of the bars into rows that do not overlap. Pure. | The DOM, the state, and which of the two pictures is asking. |
 | `lens.js` | The set of events a focus keeps — an actor's, a place's, a source's — and what the header calls it. Pure. | The DOM, and that a narrative suspends it, which is one line of state it is given. |
 | `grouping.js` | The picker beside Map \| Graph: the grouping as a select, the lanes as checkboxes with up/down and a filter box, keyboard first; and the badge that says which lens is on. Writes `group`, `lanes` and `focus` and nothing else. | What a lane is, and how anything is drawn. |

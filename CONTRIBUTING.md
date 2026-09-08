@@ -158,6 +158,19 @@ Notes that catch people out:
 - **Years are integers**, negative for BCE, and there is no year 0. `date` is
   display-only, recorded exactly as the source gives it. A bound may be a range,
   `{ "min": 1400, "max": 1450 }`, and `"end": null` means ongoing.
+- **An endpoint may be a condition rather than a moment, and conditions are
+  worth writing.** A reader arrives with a question — *why is Angola poor?* —
+  and the atlas can only answer it through the endpoints it holds. Most of
+  those are moments; some are not. "Angolan economy dependent on oil, 1975–"
+  is a process with no point and often no end, and it is an event like any
+  other: a title, a summary somebody wrote, the same sources, and edges into
+  and out of it that are arguments and not labels. `"end": null` says it has
+  not ended. The schema has allowed this since M9 and nothing about it is a
+  special case — what was missing was anybody saying it was allowed.
+  A condition is **not** the same thing as an event with no place: plenty of
+  moments have no honest point either, and a great many of the records that
+  carry `place: null` are moments. Which of the two you are writing is decided
+  by whether the thing *lasted*, not by whether it can be put on a map.
 - **An event points at a place; it has no coordinates of its own.** `place`
   is the id of a record under `data/places/`, and the coordinates live there,
   written once however many events happen there. `place: null` is a long
