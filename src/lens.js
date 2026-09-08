@@ -341,19 +341,34 @@ export function shownEvents(atlas, state) {
 // What the header calls one focus. The record's own name where it resolves,
 // the bare id where it does not — a link to a record that has since been
 // retracted still says what it was pointing at.
+//
+// Since I4 a record can resolve and still have no name yet: the core carries
+// the ids and the shards carry the names, and the core's fallback for a missing
+// name is the id itself. That is a third case and not the second — the record
+// is there and this is a chip that has not been told what it is called — so it
+// is `null` here and the header says it is loading rather than printing a slug
+// a reader would take for a name (index2 review, finding 21). It becomes the
+// name when the shard lands, which the header is redrawn for.
 export function lensLabel(atlas, focus) {
   const parsed = typeof focus === 'string' ? parseFocus(focus) : focus;
   if (!parsed || !FOCUS_KINDS.includes(parsed.kind)) return null;
   const { kind, id } = parsed;
-  const named = {
-    actor: () => atlas.actors.get(id)?.name,
-    place: () => atlas.places.get(id)?.name,
-    source: () => atlas.sources.get(id)?.title,
-    event: () => atlas.events.get(id)?.title,
-    narrative: () => atlas.narratives?.get(id)?.title,
-    region: () => atlas.regions?.find((r) => r.id === id)?.label,
-  }[kind];
-  return { kind, id, focus: formatFocus(kind, id), name: named?.() ?? id };
+  const record = {
+    actor: () => atlas.actors.get(id),
+    place: () => atlas.places.get(id),
+    source: () => atlas.sources.get(id),
+    event: () => atlas.events.get(id),
+    narrative: () => atlas.narratives?.get(id),
+    // A region is not a record and is read off the manifest, so its label is
+    // in hand from the first frame and there is nothing to wait for.
+    region: () => atlas.regions?.find((r) => r.id === id),
+  }[kind]?.();
+  if (!record) return { kind, id, focus: formatFocus(kind, id), name: id };
+  const named = record.name ?? record.title ?? record.label ?? id;
+  // `?? true` for an atlas that has no shards to wait for: one built from the
+  // spine, and the plain topology objects the tests hand this.
+  const waiting = kind !== 'region' && kind !== 'source' && !(atlas.attributesLoaded?.(id) ?? true);
+  return { kind, id, focus: formatFocus(kind, id), name: waiting ? null : named };
 }
 
 // One chip per focus, in the reader's own order. Empty when no lens is on.

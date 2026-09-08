@@ -15,6 +15,21 @@ const WIDE = { width: 1400, height: 620, deviceScaleFactor: 1 };
 
 const wide = (fn) => withBrowser(fn, { device: WIDE });
 
+// Waits until the attribute shards have stopped arriving: two readings of the
+// page's own resource timeline the same, a beat apart. The count is not known
+// here — it is a property of the build — and what a caller actually wants is
+// "nothing more is coming", which this is (attributes.js, I4a).
+async function settledShards(page) {
+  const count = 'return performance.getEntriesByType("resource").filter((e) => e.name.includes("/index/attributes-")).length;';
+  let last = -1;
+  for (let tries = 0; tries < 40; tries += 1) {
+    const now = await page.eval(count);
+    if (now > 0 && now === last) return;
+    last = now;
+    await new Promise((resolve) => { setTimeout(resolve, 100); });
+  }
+}
+
 const READY = 'return Boolean(document.querySelector(".map .mark"));';
 
 // A real pan: press near the right edge on empty ground, move across the
@@ -319,9 +334,12 @@ const SPLITTABLE = `return Boolean(document.querySelector('#map circle.mark.clus
 test('a click on a splittable cluster splits it, and the animation redraws once', { skip }, async () => {
   await wide(async (page, url) => {
     // Without the territories: a shard of borders arriving is a redraw of
-    // its own, and what is being counted here is the animation's.
+    // its own, and what is being counted here is the animation's. Since I4a an
+    // attribute shard landing is the same thing — it is what puts the names on
+    // the marks — so the count starts once they are all in.
     await open(page, url('?layers=land,events'), SPLITTABLE);
     await page.eval(FREEZE_TIMELINE);
+    await settledShards(page);
 
     // Count the times the layer is emptied and drawn again. Before H4a the
     // 260 ms animation did it on every one of its frames.

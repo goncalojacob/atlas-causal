@@ -1,4 +1,5 @@
-// The pages on the spine (H3b): what each one actually fetches.
+// The pages and the graph file each one reads (H3b, and I4a's switch to the
+// core): what each one actually fetches.
 //
 // It is a promise about requests, not about code, so it is asserted against
 // the requests a real browser made. `performance`'s resource timeline is the
@@ -11,44 +12,68 @@
 
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
+import path from 'node:path';
+import { readFile } from 'node:fs/promises';
 import { withBrowser, open, waitFor, skip } from './browser.mjs';
+import { ROOT } from './helpers.mjs';
+
+// How many attribute shards this build has, read off the manifest on disk
+// rather than fetched from inside the page: a fetch of the page's own would
+// land in `performance`'s resource timeline, which is the thing every
+// assertion here is made against.
+async function shardCount() {
+  const manifest = JSON.parse(await readFile(path.join(ROOT, 'data', 'index', 'manifest.json'), 'utf8'));
+  return (manifest.attributeShards ?? []).length;
+}
 
 // What says the atlas has finished loading. Not the panel's first card: with
 // nothing open there is no card, and the empty panel is the page's own
 // resting state (main.js).
 const ATLAS_READY = 'return document.querySelectorAll(".map .mark, .timeline .bar").length > 0;';
 
-// query, what says the page has finished loading its data, and how many
-// times the page should ask for the spine. One for every page that needs the
-// graph at all; none for the bibliography, which has read the sources index
-// alone since M10 and needs nothing else — a page that started fetching
+// query, what says the page has finished loading its data, which graph file
+// the page reads and how many times it asks for it. One for every page that
+// needs the graph at all; none for the bibliography, which has read the sources
+// index alone since M10 and needs nothing else — a page that started fetching
 // 791 KB to list books would be caught by the zero.
 //
 // **narratives.html joined it at zero in H8.** Listing the accounts needed
 // the whole graph, because a narrative's period is the years of the records
 // it walks; the list is now written into the file by the build, and the
 // script leaves it alone. The cards are on screen before the first request.
+//
+// **`core` since I4a**, for the two pages that have moved: the whole-corpus
+// file they parsed is now the core, which is the graph and what a mark, a bar
+// and a lane need, with the titles and the roles arriving a century at a time
+// behind it (docs/index2-plan.md, D4). `contribute.html` and `review.html` are
+// I4b's and still read the spine; when they move, `spine` leaves this table
+// altogether and so does the file.
 const PAGES = [
-  ['index.html', ATLAS_READY, 1],
-  ['entry.html?id=carnation-revolution-1974', 'return document.querySelectorAll(".entry-body").length > 0;', 1],
-  ['narratives.html', 'return document.querySelectorAll(".narrative-card").length > 0;', 0],
-  ['sources.html', 'return document.querySelectorAll(".bib-entry").length > 0;', 0],
-  ['contribute.html', 'return document.querySelectorAll(".add-row button").length > 0;', 1],
-  ['review.html', 'return document.querySelectorAll(".queue-list .queue-item, .queue-list button").length > 0;', 1],
+  ['index.html', ATLAS_READY, 'core', 1],
+  ['entry.html?id=carnation-revolution-1974', 'return document.querySelectorAll(".entry-body").length > 0;', 'spine', 1],
+  ['narratives.html', 'return document.querySelectorAll(".narrative-card").length > 0;', 'spine', 0],
+  ['sources.html', 'return document.querySelectorAll(".bib-entry").length > 0;', 'spine', 0],
+  ['contribute.html', 'return document.querySelectorAll(".add-row button").length > 0;', 'spine', 1],
+  ['review.html', 'return document.querySelectorAll(".queue-list .queue-item, .queue-list button").length > 0;', 'spine', 1],
 ];
 
 // Everything the page asked the network for, as the browser recorded it.
 const REQUESTS = 'return performance.getEntriesByType("resource").map((e) => e.name);';
 
-for (const [query, ready, spines] of PAGES) {
-  test(`${query} asks for the spine exactly ${spines} time(s)`, { skip }, async () => {
+for (const [query, ready, graph, times] of PAGES) {
+  test(`${query} asks for the ${graph} exactly ${times} time(s)`, { skip }, async () => {
     await withBrowser(async (page, url) => {
       await open(page, url(query), ready);
       // The index files are hashed and immutable, so a name is enough to tell
-      // them apart: `spine-` cannot appear in a record's.
+      // them apart: `core-` and `spine-` cannot appear in a record's.
       const requests = await page.eval(REQUESTS);
       const named = (part) => requests.filter((name) => name.includes(`/index/${part}`));
-      assert.equal(named('spine-').length, spines, `${query} asked for the spine ${named('spine-').length} times`);
+      assert.equal(named(`${graph}-`).length, times, `${query} asked for the ${graph} ${named(`${graph}-`).length} times`);
+      // And never the other one: a page that read both would be paying for the
+      // split twice over, and a page falling back to the file it left would be
+      // caught here and nowhere else.
+      const other = graph === 'core' ? 'spine' : 'core';
+      assert.equal(named(`${other}-`).length, 0, `${query} also asked for the ${other}`);
       // I1: 221 KB of lane polygons left every page. The four numbers per
       // lane that answered the viewport question are in the manifest, and the
       // shapes themselves are fetched only by the wash a `regional` event is
@@ -61,7 +86,51 @@ for (const [query, ready, spines] of PAGES) {
   });
 }
 
-test('the atlas draws its three views out of the spine', { skip }, async () => {
+// The shards, and the promise the whole split rests on: the picture is on
+// screen before the last century has landed, and every bar is named once they
+// have. Asserted on the elements and the text and never on a wall-clock
+// duration (R3's lesson) — the first assertion is made the moment the bars
+// exist, which is before the shards the second one waits for.
+//
+// A bar with no name yet carries no label and no title element at all: the
+// core's fallback is the record's id, and a slug drawn where a title goes
+// would be a derived string presented as the name of the thing (attributes.js).
+test('the atlas draws its bars before the last century lands, and names them when it has', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await open(page, url('index.html'), ATLAS_READY);
+    const every = await shardCount();
+    const landed = () => page.eval('return performance.getEntriesByType("resource").filter((e) => e.name.includes("/index/attributes-")).length;');
+    assert.ok(every > 1, `${every} attribute shards to arrive`);
+
+    // The picture, before the corpus. Whatever has landed by now, it is not the
+    // whole of it, and there are bars on the screen either way.
+    const drawn = await page.eval('return document.querySelectorAll(".timeline .bar").length;');
+    assert.ok(drawn > 10, `${drawn} bars drawn`);
+
+    await waitFor(page, `return performance.getEntriesByType("resource").filter((e) => e.name.includes("/index/attributes-")).length >= ${every};`, 'every attribute shard');
+    assert.ok(await landed() >= every, 'the shards all arrived');
+
+    // And then the names, on every bar the timeline is holding. The <title> is
+    // the bar's own tooltip and `aria-label` is what a screen reader calls it;
+    // neither may be a record id.
+    await waitFor(page, 'return [...document.querySelectorAll(".timeline .bar:not(.stub)")].every((b) => (b.querySelector("title")?.textContent ?? "") !== "" && (b.querySelector("title").textContent !== "still loading"));', 'every bar named');
+    const named = await page.eval(`return [...document.querySelectorAll(".timeline .bar:not(.stub)")].map((b) => ({
+      title: b.querySelector("title")?.textContent ?? "",
+      label: b.getAttribute("aria-label") ?? "",
+      id: b.getAttribute("data-id") ?? "",
+    }));`);
+    assert.ok(named.length > 10, `${named.length} bars`);
+    for (const bar of named) {
+      assert.notEqual(bar.title, '', 'a bar with no tooltip at all');
+      assert.notEqual(bar.title, 'still loading', `${bar.id} is still waiting after every shard landed`);
+      // The one that would go unnoticed: a title that is the record's id.
+      if (bar.id) assert.ok(!bar.title.startsWith(bar.id), `${bar.id} is labelled with its own id`);
+      assert.equal(bar.label === '' , false, 'a control nobody can name');
+    }
+  });
+});
+
+test('the atlas draws its three views out of the core', { skip }, async () => {
   await withBrowser(async (page, url) => {
     await open(page, url('index.html'), ATLAS_READY);
     const drawn = await page.eval(`return {
@@ -95,10 +164,10 @@ test('index.html draws before the presence file arrives, and draws it when it do
     await open(page, url('index.html'), ATLAS_READY);
     await waitFor(page, 'return document.querySelectorAll(".layer-presences .presence").length > 0;', 'territories drawn');
     const order = await page.eval(`return performance.getEntriesByType("resource")
-      .filter((e) => /\\/index\\/(spine|presences)-/.test(e.name))
+      .filter((e) => /\\/index\\/(core|presences)-/.test(e.name))
       .sort((a, b) => a.startTime - b.startTime)
-      .map((e) => (e.name.includes("/index/spine-") ? "spine" : "presences"));`);
-    assert.deepEqual(order, ['spine', 'presences'], `the order they were asked for: ${order.join(' → ')}`);
+      .map((e) => (e.name.includes("/index/core-") ? "core" : "presences"));`);
+    assert.deepEqual(order, ['core', 'presences'], `the order they were asked for: ${order.join(' → ')}`);
   });
 });
 

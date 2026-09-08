@@ -732,3 +732,45 @@ test('the card names what an event is part of, and a parent lists its parts', { 
     assert.equal(parts.partOf, false, 'the parent is itself inside nothing');
   });
 });
+
+// I4a: a link somebody was sent, opened cold, into a century that is not the
+// first shard the page asks for. The card is what a reader reads, so it never
+// draws out of the core's fallbacks — a title that is the record's id, a count
+// of 0, a year computed from an astronomical bound (index2 review, finding 21).
+// It says it is loading, the shard the record is filed in is asked for and
+// pinned, and the card is drawn whole when it lands.
+test('a link into a later century opens the card with the record’s own title', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    // 1974: the second of the three century shards on the repository's data,
+    // so the page cannot have got there by fetching only the first.
+    await open(page, url('index.html?selected=carnation-revolution-1974'), 'return document.querySelectorAll(".panel .card-section").length > 0;');
+    const card = await page.eval(`return {
+      head: (document.querySelector(".panel .event-head")?.textContent ?? "").replace(/\\s+/g, " ").trim(),
+      chips: [...document.querySelectorAll(".panel .event-head .chip")].map((c) => c.textContent.replace(/\\s+/g, " ").trim()),
+      shards: performance.getEntriesByType("resource").filter((e) => e.name.includes("/index/attributes-")).map((e) => e.name),
+    };`);
+    // The card is the record's own words: the actors are named, not slugged.
+    assert.ok(card.chips.length > 0, `no actors on the card: ${card.head}`);
+    for (const chip of card.chips) {
+      assert.ok(!/^[a-z0-9-]+ ·/.test(chip), `${chip} is an id where a name goes`);
+    }
+    assert.match(card.chips.join(' · '), /Armed Forces Movement/);
+    assert.ok(
+      card.shards.some((n) => /attributes-1900-1999-/.test(n)),
+      `the century it is filed in was asked for: ${card.shards.join(' · ')}`,
+    );
+  });
+});
+
+// The office cards are the ones that would have shown it first: all nine
+// offices carry `when: null`, so they are filed in the `null` shard, and the
+// card printed `prime-minister-of-portugal` where the title goes until this
+// run stopped it drawing before that shard landed.
+test('a card waits for its own shard rather than drawing the core’s fallbacks', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await open(page, url('index.html?office=prime-minister-of-portugal'), 'return document.querySelectorAll(".panel .office-head").length > 0;');
+    const title = await page.eval('return document.querySelector(".panel .office-head h2")?.textContent ?? "";');
+    assert.equal(title, 'Prime Minister of Portugal');
+    assert.notEqual(title, 'prime-minister-of-portugal', 'never the id where the title goes');
+  });
+});

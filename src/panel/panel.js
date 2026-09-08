@@ -66,6 +66,11 @@ export function createPanel(container, {
   // the half of its contract H1b deliberately did not touch.
   let covered = false;
   let asked = false;
+  // And which cluster it is, since I4a: the members are named out of the
+  // attribute shards like everything else, so a shard landing has to redraw the
+  // list — in place, because putting it through `onState` would replace it with
+  // the card the state names (`refresh`).
+  let shown = null;
   const links = createLinks({ fixtures });
   const laneLabel = (id) => atlas.regions.find((r) => r.id === id)?.label ?? id ?? '—';
   const startYear = (event) => bounds(event.when.start).min;
@@ -466,6 +471,21 @@ export function createPanel(container, {
     container.innerHTML = `<section class="intro"><h2>Not found</h2><p>No ${esc(kind)} with id <code>${esc(id)}</code>.</p></section>`;
   }
 
+  // A card whose century has not landed says so, and draws nothing (index2
+  // review, finding 21). The three views may draw a bar and a mark out of the
+  // core and label them later; a card may not, because everything on it is the
+  // record's own words — and the core's fallbacks are a title that is the id, a
+  // count of 0 and the astronomical bounds of a date. A reader would take all
+  // three for the record, and a slug where a title goes is the atlas presenting
+  // a derived string as the name of the thing.
+  //
+  // It is the same line the source card shows while its citers are in flight,
+  // and it lasts exactly as long: `holdShards` has already asked for the shard,
+  // and its arrival redraws this through the key.
+  function loadingCard() {
+    container.innerHTML = '<section class="intro"><p class="muted">Loading…</p></section>';
+  }
+
   // --- when the card is drawn again, and when it is only touched up -------
   //
   // The card used to be rebuilt on every state change, so a wheel notch over
@@ -489,13 +509,6 @@ export function createPanel(container, {
     const window = resolveWindow(s, atlas.extent);
     return {
       card: OPENINGS.map((field) => s[field] ?? '').join('|'),
-      // A card draws nothing out of a fallback (index2 review, finding 21), so
-      // until the record's shard has landed it is the loading line and not the
-      // entry; when the shard lands the card is drawn again with its title, its
-      // roles and its counts. Nothing in the state says the shard arrived, so
-      // the count of arrivals is in the key — the same integer the three views
-      // carry (render-key.js).
-      shards: shardsArrived(atlas),
       chain: s.chain.join(','),
       horizon: s.horizon ?? null,
       // The lens the card is drawn under. `lensControl` reads it at render —
@@ -511,8 +524,14 @@ export function createPanel(container, {
     };
   }
 
+  // Deliberately not `shards`. A shard landing is not a state change and never
+  // arrives as one: it comes through `refresh` below, which knows that a
+  // cluster's list is on screen and the card is not. Comparing it here would
+  // make the next state change after a shard — the `bbox` the zoom publishes
+  // when it settles, say — a different card, and the list the reader is
+  // choosing from would be replaced by the intro (A5).
   const sameCard = (a, b) => a.card === b.card && a.chain === b.chain && a.horizon === b.horizon
-    && a.lens === b.lens && a.shards === b.shards;
+    && a.lens === b.lens;
   const sameWindow = (a, b) => a.from === b.from && a.to === b.to;
 
   // The window's own bits, put back into the card that is on screen. Each is
@@ -604,20 +623,59 @@ export function createPanel(container, {
     for (const shard of wanted) atlas.loadAttributes(shard).then(refresh, () => {});
   }
 
-  // A shard landing is not a state change, so nothing would tell the panel. The
-  // key carries the count of arrivals, so this is the same comparison every
-  // other notification goes through and it redraws only when one really landed.
+  // A shard landing is not a state change, so nothing would tell the panel.
+  // Every ask goes through here, including the ones already in hand, so the
+  // arrival count is what says whether anything actually happened.
+  //
+  // A cluster's list is the one thing that is not redrawn as a card: it is not
+  // state — nothing in the URL says it is open — so `onState` would find a key
+  // it has never seen and put the intro back over it, which is the failure the
+  // zoom's own `bbox` write used to cause (A5). The members are named out of the
+  // same shards as everything else, so the list is drawn again in place.
+  //
+  // The brief puts the count of arrivals in `keyOf` beside the three views'
+  // keys. It is here instead, as a comparison of its own, because `keyOf`'s
+  // one consumer is `sameCard` and `sameCard` must not see it: the state change
+  // after a shard would then be a different card and would take a cluster's
+  // list off the screen. Same integer, same rule — this is where a shard is
+  // what the notification is about, and `keyOf` is where a state change is.
+  let seenShards = shardsArrived(atlas);
   function refresh() {
-    onState(state.get());
+    const now = shardsArrived(atlas);
+    if (now === seenShards) return;
+    seenShards = now;
+    if (covered && shown) {
+      container.innerHTML = clusterHtml(ctx, shown);
+      return;
+    }
+    // And the card itself, unconditionally: what changed is not in the state,
+    // so `onState` would compare two keys that say the same thing and skip it.
+    render(state.get());
   }
 
   function render(s) {
     drawnFor = keyOf(s);
     covered = false;
+    shown = null;
     holdShards(s);
     onCard(hasOpening(s));
     token += 1;
     const mine = token;
+    // Whatever this card is about, it is not drawn until that record's own
+    // attributes are in hand; `holdShards` above has just asked for them. The
+    // token is bumped first, so the text still loading for the card being
+    // replaced is cancelled either way.
+    //
+    // "Filed in a shard" and not "has a shard in hand": a source is not in the
+    // graph file at all, so nothing about it ever arrives in a shard and its
+    // card would otherwise say it was loading for ever. It is also what makes
+    // this nothing on an atlas built from the spine, which shards nothing.
+    const opened = openingOf(s);
+    if (opened && (atlas.attributeShardsOf?.([opened.id]) ?? []).length > 0
+      && !atlas.attributesLoaded(opened.id)) {
+      loadingCard();
+      return;
+    }
     // Reading a narrative is a mode and wins the panel: everything else in
     // the state was derived from the step.
     if (s.narrative) {
@@ -681,6 +739,7 @@ export function createPanel(container, {
   function showCluster(cluster) {
     token += 1;
     covered = true;
+    shown = cluster;
     onCard(true);
     container.innerHTML = clusterHtml(ctx, cluster);
   }

@@ -15,7 +15,8 @@ import { createPanes } from './panes.js';
 import { createPhone } from './phone.js';
 import { createIntro } from './intro.js';
 import { createReadingMode, openingState } from './narrative-mode.js';
-import { parseFocus } from './lens.js';
+import { parseFocus, lensSet } from './lens.js';
+import { resolveWindow } from './util/window.js';
 import { bindNarrativeKeys } from './panel/narrative.js';
 import { esc } from './util/esc.js';
 
@@ -25,12 +26,16 @@ const panelEl = document.getElementById('panel');
 const dataRoot = fixtures ? 'tests/fixtures/data/' : 'data/';
 
 try {
-  // The spine, whole: the graph file the index emits (ARCHITECTURE.md, "The
-  // spine, the search shard and the citers"). Nothing below knows the shape
-  // it arrived in.
+  // The core, whole: the graph and what a mark, a bar and a lane need, which is
+  // the file every page loads because convergence cannot be answered from a
+  // window (docs/index2-plan.md, D4). What a card, a label or a strip reads —
+  // the titles, the roles, the notes, the counts — is in the attribute shards,
+  // one per century, asked for below and never waited for. Nothing else in this
+  // file knows the shape any of it arrived in.
   const atlas = await loadAtlas({
     dataRoot,
     landFile: fixtures ? 'data/geo/land-present.json' : null,
+    from: 'core',
   });
   // Started here and never awaited: the search shard is not needed to draw
   // anything, and blocking the first frame on it would trade the whole of
@@ -139,7 +144,7 @@ try {
   createIntro(document.getElementById('intro'), {
     atlas, state, toggle: document.getElementById('intro-button'),
   });
-  createGrouping(document.getElementById('grouping'), { atlas, state });
+  const grouping = createGrouping(document.getElementById('grouping'), { atlas, state });
   bindNarrativeKeys(document, { atlas, state });
 
   // The graph view takes the map's slot behind the toggle. It is built the
@@ -205,6 +210,57 @@ try {
 
   state.subscribe(fetchLensCiters);
   fetchLensCiters(state.get());
+
+  // --- the attribute shards ------------------------------------------------
+  //
+  // The picture is drawn out of the core, and the names on it arrive a century
+  // at a time. Nothing here waits: a bar and a mark are drawn unlabelled and
+  // labelled when their shard lands (attributes.js), which is the discipline
+  // `loadGeometry`, `loadCiters` and `loadExplanations` already follow. What
+  // makes the redraw happen is the shard count in each view's key
+  // (render-key.js), so this asks and then tells the views to look again.
+  // The three pictures, the card, and the header's chips: a lens chip names a
+  // record too, and it is drawn in the masthead rather than by the panel.
+  const shardLanded = () => { remeasure(); panel.refresh(); grouping.render(state.get()); };
+  const askFor = (shards) => {
+    for (const shard of shards) atlas.loadAttributes(shard).then(shardLanded, () => {});
+  };
+
+  // The window's shards, and the lens's: both are on screen, so both are held
+  // outside the LRU cap while they are (data.js, ATTRIBUTE_SHARD_CAP). The new
+  // pin is taken before the old is released, so a shard the reader is still
+  // looking at is never dropped and fetched again as the band moves.
+  //
+  // The cap is what keeps a session that has scrubbed across six centuries from
+  // holding six centuries; what the reader is looking at now is not that. At
+  // the whole extent this is every shard, which is what "a reader at the whole
+  // extent gets the picture and then the titles" means (i4-brief §1).
+  let releaseWindow = null;
+  const onScreenShards = (s) => {
+    const wanted = [...atlas.attributeShardsIn(resolveWindow(s, atlas.extent))];
+    const lens = lensSet(atlas, s);
+    if (lens) {
+      for (const shard of atlas.attributeShardsOf(lens)) {
+        if (!wanted.some((w) => w.key === shard.key)) wanted.push(shard);
+      }
+    }
+    return wanted;
+  };
+  const holdWindow = (s) => {
+    const wanted = onScreenShards(s);
+    const release = atlas.pinAttributes(wanted);
+    releaseWindow?.();
+    releaseWindow = release;
+    askFor(wanted);
+  };
+  state.subscribe(holdWindow);
+  holdWindow(state.get());
+
+  // And then the rest, in year order, once the picture is on screen — unpinned,
+  // so a reader who never leaves 1974 does not end up holding the corpus. A
+  // frame and then a turn of the loop: `requestAnimationFrame` runs before the
+  // paint it belongs to, and the timeout after it.
+  requestAnimationFrame(() => setTimeout(() => askFor(atlas.attributeShards), 0));
 } catch (error) {
   panelEl.innerHTML = `<section class="intro"><h2>Could not load the atlas</h2><p><code>${esc(error.message)}</code></p>
     <p>Serve the repository root (<code>python3 -m http.server 8000</code>) and make sure <code>data/index/</code> exists (<code>node tools/build-index.mjs</code>).</p></section>`;

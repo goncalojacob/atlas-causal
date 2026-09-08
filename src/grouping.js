@@ -198,14 +198,23 @@ export function createGrouping(container, { atlas, state }) {
     // the whole list. A lens the reader cannot see they are inside would make
     // the atlas look like it had lost half its records — and with any number
     // of foci a single badge could not say which ones they were.
+    //
+    // A focus whose record has resolved but whose century has not landed has no
+    // name yet, and the chip says so: the core's fallback is the record's id,
+    // and a slug in a chip would be read as what the thing is called
+    // (lens.js, index2 review finding 21). The header is drawn again when the
+    // shard arrives (main.js).
     badge.hidden = foci.length === 0;
     badge.innerHTML = foci.length === 0 ? '' : `
-      ${foci.map((lens) => `<span class="lens-badge">
+      ${foci.map((lens) => {
+        const name = lens.name ?? 'loading…';
+        return `<span class="lens-badge">
         <span class="lens-kind">${esc(LENS_KIND[lens.kind] ?? lens.kind)}</span>
-        <span class="lens-name">${esc(lens.name)}</span>
+        <span class="lens-name">${esc(name)}</span>
         <button type="button" class="lens-drop" data-action="unfocus" data-focus="${esc(lens.focus)}"
-          aria-label="${esc(`Stop focusing on ${lens.name}`)}" title="${esc(`Stop focusing on ${lens.name}`)}">×</button>
-      </span>`).join('')}
+          aria-label="${esc(`Stop focusing on ${name}`)}" title="${esc(`Stop focusing on ${name}`)}">×</button>
+      </span>`;
+      }).join('')}
       ${foci.length > 1 ? `<button type="button" class="link small lens-all" data-action="focus-all"
         aria-pressed="${s.focusAll ? 'true' : 'false'}"
         title="Events that every focus keeps, rather than events any of them keeps">all of these</button>` : ''}
