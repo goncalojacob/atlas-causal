@@ -68,6 +68,7 @@ node tools/build-palette.mjs       # regenerate data/geo/palette.json after touc
 CHROME=... node tools/screens.mjs  # the screenshots under docs/screens/, through a headless browser's own command line
 node tools/build-regions.mjs       # regenerate data/geo/ from Natural Earth; rarely
 node tools/import/cshapes.mjs --source cshapes_2_gw.topojson [--report]  # territories, 1886-2019; rarely
+node tools/import/cshapes.mjs --relations   # the successions the split table states; no topology needed, and it runs here
 node tools/import/wikidata.mjs --reconcile|--import|--candidates   # NOT here: no network in this sandbox — it runs in the Action, on an import/** branch
 node tools/new-record.mjs event|edge|source|actor|place|relation|narrative …   # scaffold a record; the text is yours to write
 node tools/migrate/apply.mjs       # the migration chain of src/validate/migrate.js applied to data/; in the same commit as any migration that changes bytes
@@ -216,7 +217,7 @@ tools/serve.mjs            the local server: the repository, plus PUT /__records
 tools/lib/store.mjs        the server's atlas between saves: the save queue, the topology patched as each save lands, the index rebuilt behind the answer
 tools/bundle-to-files.mjs  issue body → data/<kind>s/<id>.json; ids slug-checked before any path
 tools/lookup-sources.mjs   what the catalogues say a DOI or ISBN names; a review aid, never a gate
-tools/import/cshapes.mjs   CShapes 2.0 → actors, presences, geometry shards; topojson.mjs is its pure half and simplify.mjs the name it knows src/util/simplify.js by
+tools/import/cshapes.mjs   CShapes 2.0 → actors, presences, geometry shards, and the `succeeded` relation each split in data/imports/cshapes-actors.json states; topojson.mjs is its pure half and simplify.mjs the name it knows src/util/simplify.js by
 tools/import/wikidata.mjs  identifiers and records from Wikidata; injectable fetch layer, tested on fixtures, additive on disk
 tools/import/identity.mjs  the additive rule both imports obey: fill a gap, never change a value, never sign
 tools/import/cache/        GENERATED: Wikipedia leads with their revision; never published, never data, not under data/
@@ -332,10 +333,15 @@ nothing** — not the map, not `weight`, not `prominence`. An edge may not be
 
 **What the Wikidata import may do** is narrow, and it is narrow on purpose.
 It never writes an edge. On a record that already exists it fills in an
-identity field that is absent and nothing else: it never changes a value,
-never touches `summary`, `title`, `when`, `place`, `actors` or `sources`, and
-never adds itself to `authors` — the rule is `tools/import/identity.mjs` and
-`cshapes.mjs` obeys it too. Records it *creates* carry its own author entry,
+identity field that is absent, and — since I8, decided by the owner on
+2026-09-06 as question 3 of `docs/index2-plan.md` — the other **names** the
+item gives, under one further clause: only where the field is absent, only on
+a record whose `review.status` is `draft`, and with `imported-names` added to
+`review.flags` so the reviewer can see where they came from and take them
+off. Nothing else: it never changes a value, never touches `summary`,
+`title`, `when`, `place`, `actors` or `sources`, and never adds itself to
+`authors` — the rule is `tools/import/identity.mjs` and `cshapes.mjs` obeys
+it too. Records it *creates* carry its own author entry,
 `review.flags: ["imported-facts"]`, and a summary that quotes the item's
 description and says it is not this atlas's account of anything. Which
 Wikidata class becomes which kind of record here is **data, not code**:

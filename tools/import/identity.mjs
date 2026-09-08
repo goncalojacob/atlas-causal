@@ -69,6 +69,62 @@ export function mergeIdentity(record, identity) {
   return { record: result, added, kept };
 }
 
+// --- the other names, one clause narrower ---------------------------------
+//
+// `names` is not an identity field: it is a claim about what a thing is
+// called, which is why it is not in ENRICHABLE and has a rule of its own
+// (I8, owner question 3; docs/index2-plan.md, D12). The owner allowed the
+// import to write it onto a record it did not create, on three conditions,
+// and this is all three:
+//
+//   1. only where the field is **absent** — never adding to a list, never
+//      reordering one, never replacing a name somebody chose;
+//   2. only on a record whose `review.status` is `draft` — never on one a
+//      person has signed, and never on one with no standing at all, because
+//      a record nobody has claimed either way is not in the queue where this
+//      would be seen and cleared;
+//   3. with `imported-names` added to `review.flags`, so the reviewer is
+//      told where the names came from and can take them off.
+//
+// Everything else the additive rule says still holds: no other field is
+// touched, and nothing is added to `authors` for having done it.
+//
+// Condition 3 is the one place an import writes into `review`, which
+// CREATOR_ONLY otherwise forbids, and it is narrow on purpose: a flag added,
+// never a flag removed, never `status`, never `signedBy`, never `note`. The
+// forbidding is what keeps `names` out of ENRICHABLE — it is not an
+// identifier and it is not written by the generic pass — and this function is
+// the whole of the exception the owner allowed.
+export const NAMES_FLAG = 'imported-names';
+
+// → { record, added }. `record` is the same object back when nothing was
+// written, so a caller can write only what changed. `names` is expected
+// already deduplicated and non-empty — an empty list is refused by rule 18,
+// so the caller writes no key rather than an empty one.
+export function mergeNames(record, names) {
+  const wanted = (names ?? []).filter((n) => typeof n === 'string' && n.trim() !== '');
+  if (!wanted.length) return { record, added: false };
+  if (!isEmpty(record?.names)) return { record, added: false };
+  if (record?.review?.status !== 'draft') return { record, added: false };
+
+  const flags = record.review.flags ?? [];
+  const review = { ...record.review, flags: flags.includes(NAMES_FLAG) ? [...flags] : [...flags, NAMES_FLAG] };
+  // Written where the schemas list it — after `title`, before `summary` —
+  // for the reason mergeIdentity writes its fields where it does: a record an
+  // import touches should read like one the form wrote, and the diff should
+  // be the field and not a reshuffle. A record with no `title` (an actor, a
+  // place) keeps its own order and takes the key at the end, which cannot
+  // happen in practice because both kinds require `names` already.
+  const out = {};
+  for (const key of Object.keys(record)) {
+    if (key === 'names') continue;
+    out[key] = key === 'review' ? review : record[key];
+    if (key === 'title') out.names = wanted;
+  }
+  if (!Object.hasOwn(out, 'names')) out.names = wanted;
+  return { record: out, added: true };
+}
+
 // The identity fields a record already on disk carries, for an import that is
 // about to rewrite it. A re-run of an import must not wipe an identifier
 // somebody or another import added between runs, and `created` is not the

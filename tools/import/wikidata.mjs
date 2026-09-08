@@ -48,7 +48,7 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 import { createRegionDeriver } from '../../src/util/geo.js';
 import { handWritten, isReviewed, REVIEW_STATUS } from '../../src/origin.js';
 import { IMPORT_KINDS } from '../../src/kinds.js';
-import { mergeIdentity } from './identity.mjs';
+import { mergeIdentity, mergeNames } from './identity.mjs';
 import { readRecords, readRegionPolygons } from '../lib/read.mjs';
 
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..');
@@ -487,6 +487,37 @@ export function namesFor(read) {
   return names;
 }
 
+// What else the item says it is called: the labels **and the aliases** in the
+// languages this atlas shows, which is what `namesFor` above is not — that
+// one folds labels and article titles, for a record the import is creating,
+// and an alias is exactly the "Carnation Revolution" a reader types when the
+// record is filed under "25 April" (health review B, finding 17; i8-brief,
+// A4). Deduplicated against the title and against each other in the form
+// `src/search.js` compares names in, so the shard is not filled with the same
+// string twice, and never containing the title itself, which rule 18 refuses.
+//
+// One language at a time, in the order LANGUAGES names them, and a language's
+// own label before its own aliases: the first name in the list is what the
+// card shows first under "also", so it should be what the item calls itself
+// rather than the first alias anybody added.
+//
+// Returns a list, possibly empty; the caller writes no `names` key at all for
+// an empty one, because rule 18 refuses an empty list too.
+export function otherNames(read, title) {
+  const names = [];
+  const seen = new Set([foldName(title)].filter(Boolean));
+  for (const lang of LANGUAGES) {
+    for (const name of [read.labels?.[lang], ...(read.aliases?.[lang] ?? [])]) {
+      if (typeof name !== 'string' || name.trim() === '') continue;
+      const folded = foldName(name);
+      if (seen.has(folded)) continue;
+      seen.add(folded);
+      names.push(name);
+    }
+  }
+  return names;
+}
+
 // --- the records ------------------------------------------------------------
 
 // `on` is the day the item was read. A sitelink count changes without this
@@ -617,7 +648,7 @@ export { handWritten };
 
 // The rule itself is in identity.mjs, because cshapes.mjs obeys it too; it is
 // re-exported here so that the tool's whole surface is one import.
-export { ENRICHABLE, mergeIdentity, identityOnDisk } from './identity.mjs';
+export { ENRICHABLE, mergeIdentity, mergeNames, identityOnDisk, NAMES_FLAG } from './identity.mjs';
 
 // --- matching (used in earnest by M17) --------------------------------------
 
@@ -839,7 +870,18 @@ export const KINDS = IMPORT_KINDS;
 
 // Everything the run did, in the shape the report prints and the tests read.
 function emptyReport() {
-  return { created: [], enriched: [], signed: [], refused: [], unclassified: new Map(), ambiguous: [], leads: [], calls: 0, batch: [], remaining: 0 };
+  return { created: [], enriched: [], signed: [], named: [], refused: [], unclassified: new Map(), ambiguous: [], leads: [], calls: 0, batch: [], remaining: 0 };
+}
+
+// The identity fields and the other names, in one pass over one record, so
+// that a record wanting both is written once. `names` is not an identity
+// field and has its own three conditions (identity.mjs); what is shared is
+// that neither touches anything else and neither signs anything.
+// → { record, added, names } where `added` is the identity fields written.
+function enrich(record, read, today) {
+  const merged = mergeIdentity(record, identityOf(read, today));
+  const named = mergeNames(merged.record, otherNames(read, merged.record.title));
+  return { record: named.record, added: merged.added, names: named.added ? named.record.names : null };
 }
 
 function refuse(report, qid, why) {
@@ -928,10 +970,11 @@ export async function runImportMode(dataDir, { fetcher, today, batchSize = BATCH
     if (existing) {
       const entry = entries.find((e) => e.record.id === existing);
       if (skipSigned(report, entry.record, qid)) continue;
-      const { record, added } = mergeIdentity(entry.record, identityOf(read, today));
-      if (added.length) {
+      const { record, added, names } = enrich(entry.record, read, today);
+      if (added.length || names) {
         written.push(await writeRecord(dataDir, path.dirname(entry.file), record));
-        report.enriched.push({ id: existing, qid, added });
+        if (added.length) report.enriched.push({ id: existing, qid, added });
+        if (names) report.named.push({ id: existing, qid, names });
       }
       report.leads.push(...(await fetchLeads(fetcher, read, { cacheDir, today })).map((l) => ({ qid, ...l })));
       continue;
@@ -1072,10 +1115,11 @@ export async function runReconcileMode(dataDir, { fetcher, today, batchSize = BA
       });
       continue;
     }
-    const merged = mergeIdentity(record, identityOf(certain, today));
-    if (merged.added.length) {
+    const merged = enrich(record, certain, today);
+    if (merged.added.length || merged.names) {
       written.push(await writeRecord(dataDir, path.dirname(entry.file), merged.record));
-      report.enriched.push({ id, qid: certain.qid, added: merged.added });
+      if (merged.added.length) report.enriched.push({ id, qid: certain.qid, added: merged.added });
+      if (merged.names) report.named.push({ id, qid: certain.qid, names: merged.names });
     }
     report.leads.push(...(await fetchLeads(fetcher, certain, { cacheDir, today })).map((l) => ({ qid: certain.qid, ...l })));
   }
@@ -1315,6 +1359,11 @@ export function reportLines(report, mode) {
   lines.push(`${mode}: ${report.batch.length} item(s) this batch, ${report.remaining} left after it, ${report.calls} call(s) spent`);
   for (const c of report.created) lines.push(`created ${c.kind} ${c.id} from ${c.qid}${c.lane ? ` (lane ${c.lane})` : ''}`);
   for (const e of report.enriched) lines.push(`enriched ${e.id} from ${e.qid}: ${e.added.join(', ')}`);
+  // Named separately from enriched, and by name rather than by count: what
+  // the import wrote onto somebody else's record as "what this is also
+  // called" is the one thing here a reviewer may want to read before opening
+  // the queue, and `imported-names` is on the record so they can find it.
+  for (const n of report.named ?? []) lines.push(`named ${n.id} from ${n.qid}: ${n.names.join(', ')}`);
   for (const g of report.signed ?? []) lines.push(`left alone ${g.id}: reviewed and signed, so ${g.qid} was not written onto it`);
   for (const r of report.refused) lines.push(`refused ${r.qid}: ${r.why}`);
   for (const a of report.ambiguous) lines.push(`ambiguous ${a.id}: ${a.candidates?.length ? `${a.candidates.length} candidates (${a.candidates.join(', ')})` : a.why}`);
@@ -1323,7 +1372,7 @@ export function reportLines(report, mode) {
   }
   const leads = report.leads.filter((l) => l.file).length;
   if (leads) lines.push(`${leads} Wikipedia lead(s) cached under ${LEAD_CACHE}`);
-  lines.push(`${report.created.length} created, ${report.enriched.length} enriched, ${(report.signed ?? []).length} left alone, ${report.refused.length} refused, ${report.ambiguous.length} ambiguous`);
+  lines.push(`${report.created.length} created, ${report.enriched.length} enriched, ${(report.named ?? []).length} named, ${(report.signed ?? []).length} left alone, ${report.refused.length} refused, ${report.ambiguous.length} ambiguous`);
   return lines;
 }
 

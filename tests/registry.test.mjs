@@ -34,7 +34,7 @@ import { CARDS, OPENINGS } from '../src/state.js';
 import {
   ORIGIN_TOOLS, IMPORT_TOOLS, NC_ORIGINS, REVIEW_STATUS,
 } from '../src/origin.js';
-import { ENRICHABLE, CREATOR_ONLY } from '../tools/import/identity.mjs';
+import { ENRICHABLE, CREATOR_ONLY, NAMES_FLAG, mergeNames } from '../tools/import/identity.mjs';
 import {
   REFERENCES, IMPORT_REFERENCES, VOCABULARY_FIELDS, BODY_FIELD, ITEM, VALUES, ANY_KIND,
 } from '../src/references.js';
@@ -263,6 +263,24 @@ test('an enrichment pass can never be told to write what a creator writes', () =
   assert.ok(CREATOR_ONLY.includes('review'));
   assert.ok(CREATOR_ONLY.includes('retraction'));
   assert.ok(CREATOR_ONLY.includes('authors'));
+
+  // I8: `names` is not an identifier and is not in ENRICHABLE — it has a rule
+  // of its own, one clause narrower (owner question 3). It is also the one
+  // place an import touches `review`, which CREATOR_ONLY otherwise forbids,
+  // and the touch is a flag added and nothing else.
+  assert.ok(!ENRICHABLE.includes('names'));
+  const signedBy = [{ name: 'A Reviewer', github: null, on: '2026-09-05' }];
+  const draft = { id: 'x', title: 'A title', review: { status: 'draft', flags: ['date'], note: 'look at the year' } };
+  const { record } = mergeNames(draft, ['Another name']);
+  assert.deepEqual(record.review, { status: 'draft', flags: ['date', NAMES_FLAG], note: 'look at the year' });
+  assert.deepEqual(record.names, ['Another name']);
+  // Never onto a record somebody has signed, and never onto one with no
+  // standing at all: `status` decides, and it is never written.
+  for (const review of [{ status: 'reviewed', signedBy }, { flags: [] }, undefined]) {
+    const out = mergeNames({ id: 'x', title: 'A title', ...(review ? { review } : {}) }, ['Another name']);
+    assert.equal(out.added, false, JSON.stringify(review ?? null));
+    assert.equal(Object.hasOwn(out.record, 'names'), false);
+  }
 });
 
 // The path an id-shaped field sits at in a schema, as `references.js` writes

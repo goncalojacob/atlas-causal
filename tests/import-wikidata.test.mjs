@@ -18,7 +18,7 @@ import {
   mergeIdentity, ENRICHABLE, matchesFor, nameMatches, datesMatch, laneFor, laneNote,
   placeRecord, actorRecord, eventRecord, leadRecord, importedSummary,
   nextBatch, advance, emptyState, itemIndex, candidatesMarkdown, ambiguousMarkdown, reportLines, appendReport,
-  runImportMode, runReconcileMode, runCandidatesMode,
+  runImportMode, runReconcileMode, runCandidatesMode, otherNames, mergeNames,
   IMPORT_AUTHOR, IMPORTED_FLAG, USER_AGENT, SOURCE_ID, MAXLAG, BATCH,
 } from '../tools/import/wikidata.mjs';
 import { schemas, ROOT } from './helpers.mjs';
@@ -739,7 +739,7 @@ test('the report says what happened, including what it would not decide', async 
   assert.match(text, /created event northfield-rising from Q9000001/);
   assert.match(text, /refused Q9000004/);
   assert.match(text, /unclassified class Q9100009/);
-  assert.match(text, /4 created, 0 enriched, 0 left alone, 3 refused, 0 ambiguous/);
+  assert.match(text, /4 created, 0 enriched, 0 named, 0 left alone, 3 refused, 0 ambiguous/);
 });
 
 test('itemIndex finds the records that already carry an item, per kind', () => {
@@ -765,4 +765,129 @@ test('the report can be appended to a file, batch after batch', async () => {
   assert.deepEqual((await readFile(file, 'utf8')).trim().split('\n'), [
     'import: batch 1', 'created event a from Q1', 'import: batch 2', 'refused Q2: because',
   ]);
+});
+
+// --- the other names, onto a record the import did not create --------------
+//
+// I8, owner question 3: "carnation" found nothing because no event carried
+// `names` — H7 taught the search shard to fold them and left the field empty
+// on all 421 events (docs/index2-plan.md, D12). `names` is a claim about what
+// a thing is called rather than an identifier, so the owner allowed it under
+// three conditions and no more: absent only, `draft` only, and flagged.
+
+const DRAFT = {
+  schema: 1, id: 'the-rising', kind: 'event', status: 'active', supersededBy: null, aliases: [],
+  authors: [{ name: 'A Person', github: null }], license: 'CC-BY-SA-4.0', created: '2026-01-01', revised: null,
+  review: { status: 'draft', flags: ['date'] },
+  wikidata: 'Q9000001', sources: [{ source: 's', locator: null }],
+  title: 'The Rising', summary: 'A person wrote this.', when: { start: 1974, end: 1974 },
+  place: null, region: 'testland', actors: [],
+};
+
+async function afterImport(record) {
+  const { dir, cacheDir } = await scratch({ items: ['Q9000001'] });
+  await writeFile(path.join(dir, 'events', 'the-rising.json'), `${JSON.stringify(record, null, 2)}\n`, 'utf8');
+  const { fetcher } = await fixtureFetcher();
+  const { report } = await runImportMode(dir, { fetcher, today: '2026-09-04', cacheDir, deriveRegion });
+  return { report, after: await readJson(path.join(dir, 'events', 'the-rising.json')) };
+}
+
+test('the item\'s labels and aliases become an event\'s other names, flagged', async () => {
+  const { report, after } = await afterImport(DRAFT);
+  // Labels *and* aliases, one language at a time in the order LANGUAGES names
+  // them — the label of a language before its own aliases — and the alias is
+  // the point: it is the name a reader types for a record filed under
+  // something else.
+  assert.deepEqual(after.names, ['Northfield Rising', 'Rising of Northfield', 'Levantamento de Northfield']);
+  assert.deepEqual(report.named, [{ id: 'the-rising', qid: 'Q9000001', names: after.names }]);
+  assert.match(reportLines(report, 'import').join('\n'), /named the-rising from Q9000001: Northfield Rising, /);
+
+  // Where the schema lists it: after the title, before the summary, so the
+  // diff is the field and not a reshuffle.
+  const keys = Object.keys(after);
+  assert.equal(keys[keys.indexOf('title') + 1], 'names');
+  assert.equal(keys[keys.indexOf('names') + 1], 'summary');
+
+  // The reviewer is told where they came from and can take them off.
+  assert.deepEqual(after.review.flags, ['date', 'imported-names']);
+  assert.equal(after.review.status, 'draft');
+
+  // And nothing else moved: not the title, not the text, not the dates, not
+  // the sources, and nobody was added to `authors` for having done it.
+  for (const key of ['title', 'summary', 'when', 'place', 'region', 'actors', 'sources', 'authors', 'created', 'license', 'id']) {
+    assert.deepEqual(after[key], DRAFT[key], key);
+  }
+});
+
+test('an event that already says what it is called keeps every name it has', async () => {
+  const mine = { ...DRAFT, names: ['What we call it'] };
+  const { report, after } = await afterImport(mine);
+  assert.deepEqual(after.names, ['What we call it'], 'never added to, never reordered');
+  assert.deepEqual(report.named, []);
+  assert.deepEqual(after.review.flags, ['date'], 'and no flag about names it did not write');
+});
+
+test('nothing is written onto a record nobody has claimed either way', async () => {
+  // No `review.status` at all: the record is in no queue, so a name written
+  // onto it is a name nobody would be shown and asked about.
+  const { review, ...unclaimed } = DRAFT;
+  const { report, after } = await afterImport(unclaimed);
+  assert.equal(Object.hasOwn(after, 'names'), false);
+  assert.deepEqual(report.named, []);
+  assert.equal(Object.hasOwn(after, 'review'), false);
+  assert.ok(review.status === 'draft');
+});
+
+test('nothing is written onto a record somebody has signed', async () => {
+  const reviewer = { name: 'A Reviewer', github: 'reviewer' };
+  const signed = { ...DRAFT, review: { status: 'reviewed', signedBy: [{ ...reviewer, on: '2026-09-05' }] } };
+  const { report, after } = await afterImport(signed);
+  assert.equal(Object.hasOwn(after, 'names'), false);
+  assert.deepEqual(report.named, []);
+  assert.deepEqual(report.signed, [{ id: 'the-rising', qid: 'Q9000001' }]);
+  assert.deepEqual(after.review.signedBy, signed.review.signedBy);
+});
+
+test('the same pass again writes nothing: the names are there and are not added to', async () => {
+  const { dir, cacheDir } = await scratch({ items: ['Q9000001'] });
+  await writeFile(path.join(dir, 'events', 'the-rising.json'), `${JSON.stringify(DRAFT, null, 2)}\n`, 'utf8');
+  const { fetcher } = await fixtureFetcher();
+  await runImportMode(dir, { fetcher, today: '2026-09-04', cacheDir, deriveRegion });
+  const once = await readFile(path.join(dir, 'events', 'the-rising.json'), 'utf8');
+  const { fetcher: again } = await fixtureFetcher();
+  const { report } = await runImportMode(dir, { fetcher: again, today: '2026-09-06', cacheDir, deriveRegion });
+  assert.deepEqual(report.named, []);
+  assert.equal(await readFile(path.join(dir, 'events', 'the-rising.json'), 'utf8'), once, 'byte for byte');
+});
+
+test('the names are the item\'s, folded against the title and each other', () => {
+  const read = {
+    labels: { en: 'The Rising', pt: 'O Levantamento' },
+    aliases: { en: ['the rising', 'Rising of Northfield'], pt: ['O Levantamento'] },
+  };
+  // The title in another case is the title, and rule 18 refuses it in the
+  // list; a name repeated in two languages is one name.
+  assert.deepEqual(otherNames(read, 'The Rising'), ['Rising of Northfield', 'O Levantamento']);
+  // Diacritics are not a difference either, which is how src/search.js
+  // compares them.
+  assert.deepEqual(otherNames({ labels: { en: 'Revolucao' }, aliases: {} }, 'Revolução'), []);
+  // An item with nothing to add gives an empty list, and the caller writes no
+  // key: rule 18 refuses an empty one.
+  assert.deepEqual(otherNames({ labels: {}, aliases: {} }, 'A title'), []);
+  assert.equal(mergeNames({ review: { status: 'draft' } }, []).added, false);
+});
+
+// The other pass that writes onto a record the import did not create: the
+// same rule, because it is one rule and not two (identity.mjs).
+test('--reconcile writes the names onto the record it matched, under the same rule', async () => {
+  const { dir, cacheDir } = await scratch({ items: [] });
+  await writeFile(path.join(dir, 'events', 'the-rising.json'),
+    `${JSON.stringify({ ...DRAFT, wikidata: undefined, names: undefined, title: 'Northfield Rising' }, null, 2)}\n`, 'utf8');
+  const { fetcher } = await fixtureFetcher();
+  const { report } = await runReconcileMode(dir, { fetcher, today: '2026-09-04', cacheDir, kinds: ['event'] });
+  const after = await readJson(path.join(dir, 'events', 'the-rising.json'));
+  assert.deepEqual(report.named.map((n) => n.id), ['the-rising']);
+  assert.deepEqual(after.names, ['Rising of Northfield', 'Levantamento de Northfield'], 'less the title itself');
+  assert.ok(after.review.flags.includes('imported-names'));
+  assert.equal(after.wikidata, 'Q9000001', 'and the identifier the pass was for');
 });
