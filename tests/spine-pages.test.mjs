@@ -45,8 +45,9 @@ const ATLAS_READY = 'return document.querySelectorAll(".map .mark, .timeline .ba
 // **`core` since I4a**, for the pages that have moved: the whole-corpus file
 // they parsed is now the core, which is the graph and what a mark, a bar and a
 // lane need, with the titles and the roles arriving a century at a time behind
-// it (docs/index2-plan.md, D4). `narratives.html` is the last of I4b's; when it
-// moves, `spine` leaves this table altogether and so does the file.
+// it (docs/index2-plan.md, D4). Every page has moved as of I4b, so `spine` is
+// here only as the file none of them may ask for — and it is not written any
+// more either.
 //
 // `contribute.html` and `review.html` are whole-universe readers and fetch
 // every attribute shard behind their draw (A2), which is a different promise
@@ -55,8 +56,8 @@ const ATLAS_READY = 'return document.querySelectorAll(".map .mark, .timeline .ba
 const PAGES = [
   ['index.html', ATLAS_READY, 'core', 1],
   ['entry.html?id=carnation-revolution-1974', 'return document.querySelectorAll(".entry-body").length > 0;', 'core', 1],
-  ['narratives.html', 'return document.querySelectorAll(".narrative-card").length > 0;', 'spine', 0],
-  ['sources.html', 'return document.querySelectorAll(".bib-entry").length > 0;', 'spine', 0],
+  ['narratives.html', 'return document.querySelectorAll(".narrative-card").length > 0;', 'core', 0],
+  ['sources.html', 'return document.querySelectorAll(".bib-entry").length > 0;', 'core', 0],
   ['contribute.html', 'return document.querySelectorAll(".add-row button").length > 0;', 'core', 1],
   ['review.html', 'return document.querySelectorAll(".queue-list .queue-item, .queue-list button").length > 0;', 'core', 1],
 ];
@@ -397,3 +398,26 @@ async function drawsThenHoldsTheCorpus(page) {
   // wait for either.
   await waitFor(page, 'return performance.getEntriesByType("resource").some((e) => e.name.includes("/index/search-"));', 'the search shard');
 }
+
+// narratives.html asked for the whole graph to list the accounts, and since H8
+// it asks for nothing at all: the cards are written into the file by the build.
+// The synthetic set is not prerendered, and what it fetches is the shape of the
+// promise — the core, and the shards its walks cross, and never the corpus
+// (i4-brief, section 1.5).
+test('narratives.html fetches nothing until the fixtures are asked for, and then the shards its walks cross', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await open(page, url('narratives.html'), 'return document.querySelectorAll(".narrative-card").length > 0;');
+    const quiet = await page.eval(REQUESTS);
+    assert.equal(quiet.filter((name) => name.includes('/index/')).length, 0, `the prerendered page fetched ${quiet.join(' · ')}`);
+
+    await open(page, url('narratives.html?fixtures=1'), 'return !document.getElementById("fixtures-badge").hidden;');
+    const asked = await page.eval(REQUESTS);
+    const index = (part) => asked.filter((name) => name.includes(`/index/${part}`)).length;
+    assert.equal(index('core-'), 1, 'the core, once');
+    assert.equal(index('spine-'), 0, 'and never the file it replaced');
+    const shards = asked.filter((name) => name.includes('/index/attributes-'));
+    assert.ok(shards.length > 0, 'the shard the one synthetic walk is filed in');
+    const fixtureShards = JSON.parse(await readFile(path.join(ROOT, 'tests', 'fixtures', 'data', 'index', 'manifest.json'), 'utf8')).attributeShards ?? [];
+    assert.ok(shards.length < fixtureShards.length, `${shards.length} of ${fixtureShards.length} shards for one account`);
+  });
+});

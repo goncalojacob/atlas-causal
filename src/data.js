@@ -894,14 +894,28 @@ function fillFromShard(byKey, file) {
 // page that holds the whole corpus by definition has nothing to choose between.
 export function expandCore(core) {
   const topology = decodeSpineFile(core, SPINE_KINDS, CORE_COLUMNS);
+  const eventsById = new Map(topology.events.map((e) => [e.id, e]));
   const byKey = new Map();
+  // Which shard each record's attributes are in, by the one table the build
+  // files them with (index2-plan, A8). The core carries every field that table
+  // reads, which is what lets a caller say what to fetch before a single shard
+  // has landed — `narratives.html` asks for the ones its walks cross and for
+  // nothing else.
+  const shardOfId = new Map();
   for (const kind of SPINE_KINDS) {
     for (const record of topology[`${kind}s`] ?? []) {
       byKey.set(`${kind}:${record.id}`, record);
       fillFallbacks(record, boundsOf(record));
+      if (!shardOfId.has(record.id)) {
+        shardOfId.set(record.id, attributeShardKey(attributePeriod(kind, record, eventsById)));
+      }
     }
   }
-  return { topology, fill: (file) => fillFromShard(byKey, file) };
+  return {
+    topology,
+    fill: (file) => fillFromShard(byKey, file),
+    shardKeyOf: (id) => shardOfId.get(id) ?? null,
+  };
 }
 
 export function createAtlasFromCore({ core, attributes = [], manifest, ...rest }) {
@@ -1149,19 +1163,41 @@ export async function loadSources({ dataRoot = 'data/', fetchJson = defaultFetch
 // The narratives and the records they walk. narratives.html cannot do what
 // the bibliography does and read one small index: a narrative's period is the
 // years of the events its steps arrive at, and a step may name a link rather
-// than an event, so both are needed. Since H3b that is the spine, which
-// carries every step's title and every edge's ends — and nothing that is only
-// drawn: no coastlines, no territories, no palette, and no sources index
-// either, since this page lists no books.
+// than an event, so both are needed. Since I4b that is the core, which carries
+// every edge's ends and every event's year bounds, plus **the shards the walks
+// cross** — the titles the cards print and the narratives' own summaries are
+// attributes and are in no core row (i4-brief, section 1.5).
+//
+// Which is a handful of shards and never the corpus: an account is a walk
+// through a period, and its steps are in the centuries that period covers. And
+// nothing that is only drawn is fetched — no coastlines, no territories, no
+// palette, and no sources index either, since this page lists no books.
+//
+// It is awaited rather than drawn behind, unlike the atlas: this is one list
+// written once and the cards are the titles, so there is no picture to put on
+// screen first (index2 review, finding 21 — a card draws out of a shard that
+// has landed or it says it is loading).
 export async function loadNarratives({ dataRoot = 'data/', fetchJson = defaultFetchJson } = {}) {
-  const { manifest, spine } = await loadSpine({ dataRoot, fetchJson });
-  const expanded = topologyFromSpine(spine);
-  return {
-    manifest,
-    narratives: expanded.narratives,
-    events: new Map(expanded.events.map((e) => [e.id, e])),
-    edges: new Map(expanded.edges.map((e) => [e.id, e])),
-  };
+  const { manifest, core } = await loadCore({ dataRoot, fetchJson });
+  const { topology, fill, shardKeyOf } = expandCore(core);
+  const events = new Map(topology.events.map((e) => [e.id, e]));
+  const edges = new Map(topology.edges.map((e) => [e.id, e]));
+
+  // Every narrative, and every record its steps reach — a step naming a link
+  // is at the far end of it, which is the event `periodOf` reads (list.js).
+  const wanted = new Set();
+  for (const narrative of topology.narratives) {
+    wanted.add(shardKeyOf(narrative.id));
+    for (const step of narrative.steps ?? []) {
+      wanted.add(shardKeyOf(step.ref));
+      const edge = edges.get(step.ref);
+      if (edge) wanted.add(shardKeyOf(edge.to));
+    }
+  }
+  const shards = (manifest.attributeShards ?? []).filter((shard) => wanted.has(shard.key));
+  await Promise.all(shards.map((shard) => fetchJson(`${dataRoot}${shard.file}`).then(fill)));
+
+  return { manifest, narratives: topology.narratives, events, edges };
 }
 
 // The search box's whole index, folded at build time rather than on every
