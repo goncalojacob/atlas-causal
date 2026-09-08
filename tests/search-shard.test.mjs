@@ -114,11 +114,13 @@ test('the search shard is named in the manifest and stable between builds', asyn
 });
 
 // A9: findSimilar, which the contribution form runs against every candidate,
-// keeps its three inputs — and all three are in the spine, so the form does
-// not need the shard as well.
-test('what findSimilar reads is in the spine, not only in the shard', async () => {
-  const { built, manifest } = await shardAndTopology(DATA);
-  const spine = expandSpine(JSON.parse(built.files[path.basename(manifest.files.spine)]));
+// keeps its three inputs — and all three are in the projection the core and the
+// attribute shards add up to, so the form does not need the search shard as
+// well. Since I4b it holds every attribute shard for exactly this reason
+// (i4-brief, A2), and the projection is what it holds them to make.
+test('what findSimilar reads is in the whole-corpus projection, not only in the shard', async () => {
+  const { built } = await shardAndTopology(DATA);
+  const spine = expandSpine(JSON.parse(built.spineText));
   for (const event of spine.events) {
     assert.ok(Object.hasOwn(event, 'title') && Object.hasOwn(event, 'id') && Object.hasOwn(event, 'aliases'), event.id);
   }

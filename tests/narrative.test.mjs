@@ -19,7 +19,16 @@ async function fetchJson(url) {
   return JSON.parse(await readFile(path.join(FIXTURE_DATA, '..', '..', '..', url.split('?')[0]), 'utf8'));
 }
 
-const atlasPromise = loadAtlas({ dataRoot: 'tests/fixtures/data/', fetchJson });
+// The atlas as a page has it once the centuries have landed: `loadAtlas`
+// answers with the core, and the roles, the titles and the names arrive behind
+// it (I4b). A narrative step names a record and prints what it is called, so
+// this suite wants the whole of it.
+const atlasPromise = (async () => {
+  const atlas = await loadAtlas({ dataRoot: 'tests/fixtures/data/', fetchJson });
+  atlas.pinAttributes(atlas.attributeShards);
+  await Promise.all(atlas.attributeShards.map((shard) => atlas.loadAttributes(shard)));
+  return atlas;
+})();
 const NARRATIVE = 'fixture-narrative-one';
 
 async function walk() {

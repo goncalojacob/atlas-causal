@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import path from 'node:path';
 import {
-  createAtlas, loadAtlas, loadNarratives, loadSources, loadSpine,
+  createAtlas, loadAtlas, loadNarratives, loadSources,
 } from '../src/data.js';
 import { FIXTURE_DATA, atlasOf } from './helpers.mjs';
 
@@ -19,10 +19,26 @@ async function fetchJson(url) {
   return JSON.parse(await readFile(onDisk(url), 'utf8'));
 }
 
-test('loadAtlas reads the manifest, both indexes, and record text on demand', async () => {
+// The atlas as a page has it once the centuries have landed. `loadAtlas`
+// answers with the **core** since I4b — the graph, and what a mark, a bar and
+// a lane need — and the titles, the names, the roles and the counts arrive
+// behind it, a century at a time, because no page waits for them
+// (docs/index2-plan.md, D4). A test about what a record is *called* asks for
+// them; a test about what the loader fetches does not.
+async function loadedAtlas(options) {
+  const atlas = await loadAtlas(options);
+  atlas.pinAttributes(atlas.attributeShards);
+  await Promise.all(atlas.attributeShards.map((shard) => atlas.loadAttributes(shard)));
+  return atlas;
+}
+
+test('loadAtlas reads the manifest, the core, and record text on demand', async () => {
   calls.length = 0;
   const atlas = await loadAtlas({ dataRoot: 'tests/fixtures/data/', fetchJson });
   assert.equal(calls[0], 'tests/fixtures/data/index/manifest.json');
+  assert.match(calls[1], /^tests\/fixtures\/data\/index\/core-[0-9a-f]{12}\.json$/);
+  assert.equal(calls.filter((url) => url.includes('/index/attributes-')).length, 0,
+    'and not one attribute shard: the loader draws the picture, the page asks for the names');
   assert.equal(atlas.events.size, 12);
   assert.equal(atlas.activeEvents.length, 11);
   assert.equal(atlas.sources.size, 4);
@@ -34,8 +50,12 @@ test('loadAtlas reads the manifest, both indexes, and record text on demand', as
   const record = await atlas.record('event', 'fixture-event-a');
   assert.equal(record.summary.startsWith('Synthetic record'), true);
   await atlas.record('event', 'fixture-event-a');
-  assert.equal(calls.length, before + 1, 'cached');
-  assert.match(calls[before], /^tests\/fixtures\/data\/events\/fixture-event-a\.json\?v=\d{4}-\d{2}-\d{2}$/);
+  // Two requests the first time and none the second: `record()` awaits the
+  // shard that carries the record's `revised` before it asks for the file, so
+  // the `?v=` is always what the index says (index2 review, finding 3).
+  assert.equal(calls.length, before + 2, 'cached');
+  assert.match(calls[before], /^tests\/fixtures\/data\/index\/attributes-.+\.json$/);
+  assert.match(calls[before + 1], /^tests\/fixtures\/data\/events\/fixture-event-a\.json\?v=\d{4}-\d{2}-\d{2}$/);
 });
 
 test('resolve follows aliases and merged tombstones', async () => {
@@ -53,7 +73,7 @@ test('resolve follows aliases and merged tombstones', async () => {
 });
 
 test('actors resolve and carry the events they appear in, chronologically', async () => {
-  const atlas = await loadAtlas({ dataRoot: 'tests/fixtures/data/', fetchJson });
+  const atlas = await loadedAtlas({ dataRoot: 'tests/fixtures/data/', fetchJson });
   assert.equal(atlas.actors.size, 4);
   assert.equal(atlas.actors.get('fixture-actor-one').name, 'Fixture Actor One');
   assert.deepEqual(
@@ -68,7 +88,7 @@ test('actors resolve and carry the events they appear in, chronologically', asyn
 });
 
 test('relations are adjacency by actor, read from both ends', async () => {
-  const atlas = await loadAtlas({ dataRoot: 'tests/fixtures/data/', fetchJson });
+  const atlas = await loadedAtlas({ dataRoot: 'tests/fixtures/data/', fetchJson });
   // Two of the three are still standing: M30a-2 re-filed the pair's `led`
   // record as a tenure and adjacency is active relations only.
   assert.equal(atlas.relations.size, 2);
@@ -135,10 +155,10 @@ test('the window\'s far end is clamped to the years the outlines cover', async (
 // expects. In the loaders and never in `createAtlas`, which is handed
 // hand-made manifests all over this suite (index2 review, finding 17).
 test('a manifest from a generation this build does not read is refused', async () => {
-  const manifest = { schema: 99, regions: [], land: [], files: { spine: 'index/spine-000000000000.json', sources: 'index/sources-000000000000.json' } };
+  const manifest = { schema: 99, regions: [], land: [], files: { core: 'index/core-000000000000.json', sources: 'index/sources-000000000000.json' } };
   const fetchOld = async (url) => (url.endsWith('manifest.json') ? manifest : { events: [], edges: [], sources: [] });
-  for (const [what, load] of [['loadAtlas', loadAtlas], ['loadSpine', loadSpine], ['loadSources', loadSources], ['loadNarratives', loadNarratives]]) {
-    await assert.rejects(load({ dataRoot: 'nowhere/', fetchJson: fetchOld }), /generation 99.*reads 4/, what);
+  for (const [what, load] of [['loadAtlas', loadAtlas], ['loadSources', loadSources], ['loadNarratives', loadNarratives]]) {
+    await assert.rejects(load({ dataRoot: 'nowhere/', fetchJson: fetchOld }), /generation 99.*reads 5/, what);
   }
   // The number it found, whatever it found, including nothing at all.
   await assert.rejects(loadAtlas({ dataRoot: 'nowhere/', fetchJson: async () => ({}) }), /generation unstated/);

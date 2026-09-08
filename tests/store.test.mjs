@@ -212,8 +212,9 @@ test('a change made to data/ behind the store is read before the next save', asy
   // somebody else wrote included — not of the copy the store was holding.
   await store.settled();
   const built = await buildIndex(options.dataDir);
-  const spine = Object.entries(built.files).find(([name]) => name.startsWith('spine-'));
-  assert.ok(expandSpine(JSON.parse(spine[1])).events.some((e) => e.id === outside.id), 'the index carries the record written behind the store');
+  // Read off the whole-corpus projection, which the build assembles in memory
+  // for the prerendered pages and no longer writes out (I4b).
+  assert.ok(expandSpine(JSON.parse(built.spineText)).events.some((e) => e.id === outside.id), 'the index carries the record written behind the store');
   const written = new Set(await readdir(path.join(options.dataDir, 'index')));
   for (const name of Object.keys(built.files)) {
     if (name.includes('/')) continue;

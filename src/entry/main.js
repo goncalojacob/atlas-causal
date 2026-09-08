@@ -43,7 +43,7 @@ if (slot.dataset.prerendered === '1') {
 } else {
   try {
     const atlas = await loadAtlas({
-      dataRoot: fixtures ? 'tests/fixtures/data/' : 'data/', landFile: false, from: 'core',
+      dataRoot: fixtures ? 'tests/fixtures/data/' : 'data/', landFile: false,
     });
     const found = atlas.resolve(id);
     if (!found) {

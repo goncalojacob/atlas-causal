@@ -179,10 +179,15 @@ test('the territory section says "loading" until the presences land, then the li
     .find((part) => part.startsWith('territory">')) ?? null;
   // An atlas that has not fetched them yet: the same fixture atlas with the
   // seeding taken out, which is what the browser holds on its first frame.
+  // The attribute shards are put in, because the presences are the one thing
+  // this test is about and a card with no titles would differ from `loaded`
+  // for a second reason (I4b).
   const waiting = await loadAtlas({
     dataRoot: 'tests/fixtures/data/',
     fetchJson: async (url) => JSON.parse(await readFile(path.join(ROOT, url.split('?')[0]), 'utf8')),
   });
+  waiting.pinAttributes(waiting.attributeShards);
+  await Promise.all(waiting.attributeShards.map((shard) => waiting.loadAttributes(shard)));
   assert.equal(waiting.presencesLoaded(), false);
 
   // A polity that holds ground: a line where the periods will be.

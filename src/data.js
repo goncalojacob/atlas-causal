@@ -1,16 +1,22 @@
-// Reads the manifest, loads the spine whole, fetches record text on demand,
+// Reads the manifest, loads the core whole, fetches record text on demand,
 // resolves aliases and supersededBy, builds adjacency — of events to events
 // through edges, and of actors to the events they appear in. Knows nothing
 // about how things are drawn.
 //
-// The spine is always loaded whole because consequences, ancestors and
+// The **core** is always loaded whole because consequences, ancestors and
 // convergence need the whole graph; a window would make convergence return
-// a subset and present it as complete (ARCHITECTURE.md).
+// a subset and present it as complete (ARCHITECTURE.md). It is the graph and
+// what a mark, a bar and a lane need, and it is the only graph file there is
+// since I4b: the whole-corpus spine the index used to write is now the core
+// plus the attribute shards, which arrive a century at a time behind the
+// picture and which nothing waits for (docs/index2-plan.md, D4).
 //
-// The spine is the only graph file there is since H3c. `createAtlas` below
-// assembles the atlas out of the lists the spine expands into — the shape
-// `buildTopology` builds in memory and the index used to write out whole —
-// and `createAtlasFromSpine` is the expansion in front of it.
+// `createAtlas` below assembles the atlas out of the lists a graph file expands
+// into — the shape `buildTopology` builds in memory — and
+// `createAtlasFromCore` is the expansion in front of it. `createAtlasFromSpine`
+// is still here for the build and the tests: the build assembles the
+// prerendered pages from `buildSpine(topology)` in memory, which is what makes
+// their byte-identity a check on the whole projection (i4-brief, A5).
 
 import { buildAdjacency } from './graph.js';
 import { narrativeEventIds } from './narrative.js';
@@ -35,14 +41,17 @@ async function defaultFetchJson(url, init) {
 // D6). What the number is for is the half-applied deploy: a manifest from one
 // generation beside a page from another would otherwise be read as though it
 // were the shape the page expects, silently and wrongly. It goes up by one in
-// every run that changes the index's shape — 4 since I3, which wrote the core
-// and the attribute shards beside the spine; 3 was I2, which made every record
-// a positional row over a shared id table, and 2 was I1, which took the
-// presences out of the spine and put the region boxes in the manifest.
+// every run that changes the index's shape — 5 since I4b, which stopped writing
+// the whole-corpus file altogether, so a build from before it names a
+// `files.spine` no page here reads and a page from before it would find no such
+// key; 4 was I3, which wrote the core and the attribute shards beside it; 3 was
+// I2, which made every record a positional row over a shared id table, and 2
+// was I1, which took the presences out of the spine and put the region boxes in
+// the manifest.
 //
 // The graph file carries the same number rather than one of its own: two
 // numbers for one artifact is two things to forget to bump.
-export const INDEX_GENERATION = 4;
+export const INDEX_GENERATION = 5;
 // A single set, because a deploy may serve one generation while the last is
 // still in a cache; today it holds one number and it is the place to add the
 // second when that becomes true.
@@ -1129,27 +1138,6 @@ export async function loadCore({ dataRoot = 'data/', fetchJson = defaultFetchJso
   return { manifest, core: await coreCache.get(url) };
 }
 
-// The spine is named by the manifest under a content hash and served
-// `immutable`, so it is fetched once and kept — while the manifest itself is
-// read `no-store` every time, which is how a new build is noticed at all.
-// Same discipline as loadGeometry: one request in flight per file, and a
-// rejection is not an answer, so the entry goes when the promise rejects and
-// the next call really is a new attempt rather than a cached failure.
-const spineCache = new Map();
-export async function loadSpine({ dataRoot = 'data/', fetchJson = defaultFetchJson } = {}) {
-  const manifest = assertGeneration(await fetchJson(`${dataRoot}index/manifest.json`, { cache: 'no-store' }));
-  const url = `${dataRoot}${manifest.files.spine}`;
-  if (!spineCache.has(url)) {
-    const pending = fetchJson(url).catch((error) => {
-      // Only if it is still this attempt's: a later one may have replaced it.
-      if (spineCache.get(url) === pending) spineCache.delete(url);
-      throw error;
-    });
-    spineCache.set(url, pending);
-  }
-  return { manifest, spine: await spineCache.get(url) };
-}
-
 // The sources index alone: the manifest names it, and it carries every
 // source with its citers and their count. The bibliography page needs
 // nothing else — not the topology, not the coastlines — and this is why the
@@ -1214,32 +1202,26 @@ export async function loadSearchShard({ dataRoot = 'data/', manifest, fetchJson 
 // `false` loads no coastlines at all: the contribution form needs the
 // records and nothing that is only drawn.
 //
-// The graph comes from the spine and from nowhere else since H3c. The flag
-// that chose between the two files existed only while the pages moved over
-// one at a time (H3b), and it went with the file it named.
-//
-// `regions: false` went the same way in I1: it existed to spare `entry.html`
-// and `contribute.html` 221 KB of polygons that no page fetches here any
-// more, and there is nothing left for it to turn off.
-//
-// `from` chooses which graph file to read, and it is `'spine'` for every page
-// in the tree: I3 writes the core and the shards beside the spine and moves
-// nothing over, so that a run which finds the split does not pay can stop
-// without leaving the tree half-changed (docs/index2-plan.md, D5). I4 is what
-// passes `'core'`, one page per commit.
+// The graph comes from the **core** and from nowhere else since I4b, and what
+// the core does not carry — the titles, the roles, the names, the counts —
+// arrives behind it a century at a time and is never waited for
+// (docs/index2-plan.md, D4). The `from` flag that chose between the core and
+// the spine existed only while the pages moved over one at a time, as H3b's
+// did before it, and it went with the file it named — the way `regions: false`
+// went with the polygons in I1, and for the same reason: there is nothing left
+// for either of them to turn off.
 export async function loadAtlas({
-  dataRoot = 'data/', landFile = null, fetchJson = defaultFetchJson, from = 'spine',
+  dataRoot = 'data/', landFile = null, fetchJson = defaultFetchJson,
 } = {}) {
   const manifest = assertGeneration(await fetchJson(`${dataRoot}index/manifest.json`, { cache: 'no-store' }));
-  const graphFile = from === 'core' ? manifest.files.core : manifest.files.spine;
-  const [spine, sourcesIndex] = await Promise.all([
-    fetchJson(`${dataRoot}${graphFile}`),
+  const [core, sourcesIndex] = await Promise.all([
+    fetchJson(`${dataRoot}${manifest.files.core}`),
     fetchJson(`${dataRoot}${manifest.files.sources}`),
   ]);
   const landPath = landFile === false ? null : landFile ?? (manifest.land?.[0] ? `${dataRoot}${manifest.land[0].file}` : null);
   const land = landPath ? await fetchJson(landPath) : null;
   // The palette is tiny — one number per actor — and the map wants it on the
-  // first frame it draws territories in, so it comes with the spine rather
+  // first frame it draws territories in, so it comes with the core rather
   // than with the shard whose outlines it colours.
   const palette = manifest.palette ? await fetchJson(`${dataRoot}${manifest.palette}`) : null;
   // The box of each region, for the events with no place: a placeless event
@@ -1261,7 +1243,5 @@ export async function loadAtlas({
     dataRoot,
     fetchJson,
   };
-  return from === 'core'
-    ? createAtlasFromCore({ ...pieces, core: spine })
-    : createAtlasFromSpine({ ...pieces, spine });
+  return createAtlasFromCore({ ...pieces, core });
 }

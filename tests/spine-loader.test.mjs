@@ -1,23 +1,26 @@
-// The loader reading the spine: loadSpine() and createAtlasFromSpine(), from
-// the second half of H3a (docs/health/h3a-brief.md, A0). Every page reads it
-// since H3b and there is no other graph file since H3c.
+// The safety net the whole index cycle is held to (docs/index2-plan.md,
+// section 1, "Robust"): an atlas built from **the files this repository has
+// committed** against an atlas built from `buildTopology`'s own output, which
+// is what says the projection drops nothing a reader wants. Every run in the
+// cycle keeps this test and none of them edits it to pass.
 //
 // `topology` here is not a file: it is what `buildTopology` builds in memory
-// out of the records, which is what `buildSpine` projects and what the rules
-// read. Asserting the atlas built from the projection against the atlas built
-// from what was projected is what says the projection drops nothing a reader
-// wants — the seven card, page and query suites made the same point by
-// running twice while both files existed (A12), and they run once now.
+// out of the records. What is on disk since I4b is the core and the attribute
+// shards, and `atlasOf` reads all of them (helpers.mjs) — so this is the
+// committed index against the records, where `core-loader.test.mjs` is the
+// two halves against their own definition, built in memory.
 //
-// Beside that: the surface A11 names, the edge tuple expanded back, the
-// fetching discipline, and the two readers that do not go through an atlas at
-// all, search and `retractionPlan`.
+// The surface A11 named is that file's list now, asserted there on the same
+// atlas this one builds: one hand-written list of names and not two.
+//
+// Beside all that: the edge tuple expanded back, the fetching discipline, and
+// the two readers that do not go through an atlas at all, search and
+// `retractionPlan`.
 
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import path from 'node:path';
 import { readFile } from 'node:fs/promises';
-import { createAtlasFromSpine, loadSpine } from '../src/data.js';
 import { buildSearchIndex, search, flatten } from '../src/search.js';
 import { retractionPlan } from '../src/review/sign.js';
 import { edgeId } from '../src/vocab.js';
@@ -40,61 +43,29 @@ function reader(dir, calls) {
   };
 }
 
-// ─── The surface ───────────────────────────────────────────────────────────
-
-// A11, from an audit of every reader under `src/`: what `graph.js`,
-// `horizon.js`, `lens.js` and the views ask an atlas for. Written out because
-// this is the one place the promise is a list of names rather than a
-// behaviour — the behaviour is the seven parameterised suites.
-const SURFACE = [
-  'activeEvents', 'events', 'edges', 'adjacency', 'actors', 'places', 'sources',
-  'relations', 'relationsByActor', 'narratives', 'activeNarratives', 'narrativesByRef',
-  'eventsByActor', 'eventsByPlace', 'placeOf', 'pointOf', 'citationCount', 'resolve',
-  'record', 'regions', 'extent', 'land', 'presences', 'presencesByActor',
-  'dependenciesOf', 'presencesAt', 'presenceCoverage', 'territoryYear',
-  'shardForYear', 'loadedGeometry', 'loadGeometry', 'hueOfActor',
-  // I1: the presences are their own file, so the atlas has the two halves
-  // every deferred load here has — the answer if it is in hand, and the way
-  // to ask for it.
-  'presencesLoaded', 'loadPresences',
-  // I3: whether a record's own attributes are in hand. On an atlas from the
-  // spine it is true of everything and always was; on one from the core it is
-  // what tells "no title" from "no title yet" (index2 review, finding 21).
-  'attributesLoaded',
-];
-
 for (const [label, dir] of DATASETS) {
-  test(`the atlas built from the spine has every member a reader asks for, over ${label}`, async () => {
-    const spine = await atlasOf(dir);
-    const topology = await atlasFromTopology(dir);
-    for (const member of SURFACE) {
-      assert.ok(member in spine, `missing ${member}`);
-      assert.equal(typeof spine[member], typeof topology[member], member);
-    }
-  });
-
   test(`the same records, the same ids, the same order, over ${label}`, async () => {
-    const spine = await atlasOf(dir);
+    const fromIndex = await atlasOf(dir);
     const topology = await atlasFromTopology(dir);
     for (const map of ['events', 'edges', 'actors', 'places', 'presences', 'relations', 'narratives', 'sources']) {
-      assert.deepEqual([...spine[map].keys()], [...topology[map].keys()], map);
+      assert.deepEqual([...fromIndex[map].keys()], [...topology[map].keys()], map);
     }
-    assert.deepEqual(spine.activeEvents.map((e) => e.id), topology.activeEvents.map((e) => e.id));
-    assert.deepEqual(spine.extent, topology.extent);
-    assert.deepEqual(spine.regions, topology.regions);
-    assert.deepEqual(spine.activeNarratives.map((n) => n.id), topology.activeNarratives.map((n) => n.id));
+    assert.deepEqual(fromIndex.activeEvents.map((e) => e.id), topology.activeEvents.map((e) => e.id));
+    assert.deepEqual(fromIndex.extent, topology.extent);
+    assert.deepEqual(fromIndex.regions, topology.regions);
+    assert.deepEqual(fromIndex.activeNarratives.map((n) => n.id), topology.activeNarratives.map((n) => n.id));
   });
 
   // The five slots become an object again, and the id is synthesised from the
   // three parts `EDGE_ID` matches. An edge that carries an alias or a merge
   // hop is written whole in the spine and keeps the id it was given (A2).
   test(`every edge comes back with its id, its type, its confidence and its status, over ${label}`, async () => {
-    const spine = await atlasOf(dir);
+    const fromIndex = await atlasOf(dir);
     const topology = await atlasFromTopology(dir);
     assert.ok(topology.edges.size > 0);
     for (const [id, edge] of topology.edges) {
-      const got = spine.edges.get(id);
-      assert.ok(got, `${id}: not in the spine`);
+      const got = fromIndex.edges.get(id);
+      assert.ok(got, `${id}: not in the index`);
       assert.deepEqual(
         [got.id, got.from, got.to, got.type, got.confidence, got.status],
         [edge.id, edge.from, edge.to, edge.type, edge.confidence, edge.status],
@@ -106,15 +77,15 @@ for (const [label, dir] of DATASETS) {
   // What keeps a retracted argument out of consequences and convergence: the
   // fifth slot. The fixtures hold one on purpose.
   test(`a retracted edge resolves and is not walkable, over ${label}`, async () => {
-    const spine = await atlasOf(dir);
+    const fromIndex = await atlasOf(dir);
     const topology = await atlasFromTopology(dir);
     const retracted = [...topology.edges.values()].filter((e) => e.status !== 'active');
     for (const edge of retracted) {
-      assert.equal(spine.edges.get(edge.id).status, edge.status);
-      assert.equal((spine.adjacency.out.get(edge.from) ?? []).some((e) => e.id === edge.id), false, edge.id);
+      assert.equal(fromIndex.edges.get(edge.id).status, edge.status);
+      assert.equal((fromIndex.adjacency.out.get(edge.from) ?? []).some((e) => e.id === edge.id), false, edge.id);
     }
     assert.deepEqual(
-      [...spine.adjacency.edges.keys()].sort(),
+      [...fromIndex.adjacency.edges.keys()].sort(),
       [...topology.adjacency.edges.keys()].sort(),
     );
   });
@@ -122,7 +93,7 @@ for (const [label, dir] of DATASETS) {
   // An old link still opens: `aliases` and `supersededBy` are in the spine on
   // every record, empty or not, because they are the hops `resolve()` walks.
   test(`resolve answers the same for every id, alias and tombstone, over ${label}`, async () => {
-    const spine = await atlasOf(dir);
+    const fromIndex = await atlasOf(dir);
     const topology = await atlasFromTopology(dir);
     const shape = (found) => (found ? [found.kind, found.record.id, found.via] : null);
     const ids = new Set();
@@ -134,10 +105,10 @@ for (const [label, dir] of DATASETS) {
     }
     let hops = 0;
     for (const id of ids) {
-      assert.deepEqual(shape(spine.resolve(id)), shape(topology.resolve(id)), id);
+      assert.deepEqual(shape(fromIndex.resolve(id)), shape(topology.resolve(id)), id);
       if ((topology.resolve(id)?.via ?? []).length) hops += 1;
     }
-    assert.equal(spine.resolve('no-such-record-anywhere'), null);
+    assert.equal(fromIndex.resolve('no-such-record-anywhere'), null);
     assert.ok(hops > 0, 'the dataset has at least one alias or merged record to follow');
   });
 
@@ -145,13 +116,13 @@ for (const [label, dir] of DATASETS) {
   // read off the record on the other. A tombstone cites nothing, which is
   // zero either way.
   test(`citationCount says the same on both paths, over ${label}`, async () => {
-    const spine = await atlasOf(dir);
+    const fromIndex = await atlasOf(dir);
     const topology = await atlasFromTopology(dir);
     let counted = 0;
     for (const [kind, map] of [['event', 'events'], ['actor', 'actors'], ['place', 'places']]) {
       for (const id of topology[map].keys()) {
         const wanted = topology.citationCount(kind, id);
-        assert.equal(spine.citationCount(kind, id), wanted, `${kind}:${id}`);
+        assert.equal(fromIndex.citationCount(kind, id), wanted, `${kind}:${id}`);
         if (wanted > 0) counted += 1;
       }
     }
@@ -162,7 +133,7 @@ for (const [label, dir] of DATASETS) {
   // topology does; this proves the *atlas* does, which is what the search box
   // is actually handed (search-box.js builds its index off the atlas).
   test(`the search box answers the same off either atlas, over ${label}`, async () => {
-    const spine = await atlasOf(dir);
+    const fromIndex = await atlasOf(dir);
     const topology = await atlasFromTopology(dir);
     const indexOf = (atlas) => buildSearchIndex({
       events: atlas.activeEvents,
@@ -178,12 +149,12 @@ for (const [label, dir] of DATASETS) {
     const queries = dir === FIXTURE_DATA
       ? ['fix', 'event a', 'place', 'source 3', 'polity', 'fixture-event-a', 'zzzz']
       : ['sal', 'carn', 'lisb', 'oliveira', 'angola', 'carnation-revolution', 'zzzz'];
-    const fromSpine = indexOf(spine);
+    const fromDisk = indexOf(fromIndex);
     const fromTopology = indexOf(topology);
-    assert.deepEqual(fromSpine, fromTopology, 'the entries themselves, terms and all');
+    assert.deepEqual(fromDisk, fromTopology, 'the entries themselves, terms and all');
     let answered = 0;
     for (const query of queries) {
-      const got = search(fromSpine, query);
+      const got = search(fromDisk, query);
       assert.deepEqual(shape(got), shape(search(fromTopology, query)), `"${query}"`);
       if (got.total > 0) answered += 1;
     }
@@ -222,63 +193,4 @@ test('a citers map that was never filled answers empty, index and all', async ()
   assert.ok(busiest.citationCount > 100, 'one source carries most of the citations');
   assert.deepEqual(retractionPlan({ kind: 'source', id: busiest.id }, { citers: new Map() }), { retract: [], blockers: [] });
   assert.deepEqual(retractionPlan({ kind: 'source', id: busiest.id }, { sources }).blockers, []);
-});
-
-// ─── loadSpine ─────────────────────────────────────────────────────────────
-
-test('loadSpine reads the manifest every time and the spine once', async () => {
-  const calls = [];
-  const options = { dataRoot: 'tests/fixtures/data/', fetchJson: reader(FIXTURE_DATA, calls) };
-  const first = await loadSpine(options);
-  assert.equal(calls[0], 'tests/fixtures/data/index/manifest.json');
-  assert.match(calls[1], /^tests\/fixtures\/data\/index\/spine-[0-9a-f]{12}\.json$/);
-  // The graph file's own number is the manifest's, from I1 on: one generation
-  // per artifact rather than two to forget to bump (data.js, D6).
-  assert.equal(first.spine.schema, 4);
-  assert.equal(first.spine.events.length, 12);
-
-  const before = calls.length;
-  const second = await loadSpine(options);
-  // The manifest again — it is read `no-store`, which is how a new build is
-  // noticed — and the spine not: it is named by its own hash and immutable.
-  assert.deepEqual(calls.slice(before), ['tests/fixtures/data/index/manifest.json']);
-  assert.equal(second.spine, first.spine, 'the same object, not a second parse');
-});
-
-test('a spine that failed to arrive is not the answer for the rest of the session', async () => {
-  const spine = 'index/spine-000000000000.json';
-  let fail = true;
-  const fetchJson = async (url) => {
-    if (url.endsWith('manifest.json')) return { schema: 4, files: { spine } };
-    if (fail) throw new Error('the train went into a tunnel');
-    return { schema: 4, events: [], edges: [] };
-  };
-  await assert.rejects(loadSpine({ dataRoot: 'nowhere/', fetchJson }), /tunnel/);
-  fail = false;
-  // The next attempt really is one, rather than the cached rejection.
-  const { spine: loaded } = await loadSpine({ dataRoot: 'nowhere/', fetchJson });
-  assert.deepEqual(loaded.events, []);
-});
-
-test('createAtlasFromSpine takes the pieces loadSpine hands it', async () => {
-  const calls = [];
-  const { manifest, spine } = await loadSpine({ dataRoot: 'tests/fixtures/data/', fetchJson: reader(FIXTURE_DATA, calls) });
-  const sources = await read(FIXTURE_DATA, manifest.files.sources);
-  const atlas = createAtlasFromSpine({
-    manifest,
-    spine,
-    sources: sources.sources,
-    dataRoot: 'tests/fixtures/data/',
-    fetchJson: reader(FIXTURE_DATA, calls),
-  });
-  assert.equal(atlas.events.size, 12);
-  assert.equal(atlas.activeEvents.length, 11);
-  assert.equal(atlas.sources.size, 4);
-  assert.deepEqual(atlas.extent, { min: 1200, max: 1300 });
-  // Record text is still fetched on demand and is not in any index file —
-  // asked for with the day the record was last written, which the spine
-  // carries for exactly this (H3b).
-  const record = await atlas.record('event', 'fixture-event-a');
-  assert.equal(record.summary.startsWith('Synthetic record'), true);
-  assert.match(calls.at(-1), /^tests\/fixtures\/data\/events\/fixture-event-a\.json\?v=\d{4}-\d{2}-\d{2}$/);
 });

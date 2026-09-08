@@ -35,11 +35,10 @@ try {
   const atlas = await loadAtlas({
     dataRoot,
     landFile: fixtures ? 'data/geo/land-present.json' : null,
-    from: 'core',
   });
   // Started here and never awaited: the search shard is not needed to draw
   // anything, and blocking the first frame on it would trade the whole of
-  // what the spine just saved.
+  // what the core just saved.
   const shard = loadSearchShard({ dataRoot, manifest: atlas.manifest });
 
   // Nothing is filled in here: a window bound left null means "as far as the

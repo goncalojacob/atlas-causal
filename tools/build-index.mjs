@@ -121,10 +121,17 @@ export async function buildIndex(dataDir = DEFAULT_DATA, prepared = {}) {
     });
   }
 
-  // The graph every page loads whole, and the only file that carries it.
-  // `topology` above stays in memory: it is what this projection is taken
-  // from and what the rules below are checked against, and the whole of it
-  // was written out beside the spine only while the pages moved over (H3b).
+  // The whole-corpus projection, **built and not written** since I4b. Every
+  // page reads the core and the attribute shards now, and this is what the two
+  // of them are defined as adding up to: `CORE_COLUMNS ∪ ATTRIBUTE_COLUMNS =
+  // SPINE_COLUMNS` is asserted against it, and the prerendered pages are
+  // rendered from an atlas assembled out of it, so their byte-identity stays a
+  // check on the definition rather than on one half of it (i4-brief, section 3
+  // and A5; index2 review, finding 20).
+  //
+  // `writeIndex` deletes the file it used to be: `spine-` is still in `HASHED`
+  // for exactly that reason, and a directory built before I4b comes out of a
+  // rebuild without one.
   const spineText = compact(buildSpine(topology));
 
   // The territory metadata, out of that file in I1 (D1). Compact for the same
@@ -139,11 +146,10 @@ export async function buildIndex(dataDir = DEFAULT_DATA, prepared = {}) {
   const presencesText = presenceIndex.presences.length ? compact(presenceIndex) : null;
   const presencesName = presencesText ? `presences-${hashOf(presencesText)}.json` : null;
 
-  // The split the second index cycle is for, written **beside** the spine and
-  // read by nothing yet: the core every page will load whole, and the
-  // attributes filed by century (docs/index2-plan.md, D4 and D5). I3 emits them
-  // and prints the bytes; I4 is what moves the pages over, and only if those
-  // bytes say the split pays.
+  // The split the second index cycle is for, and since I4b the whole of what
+  // the index carries the graph in: the core every page loads whole, and the
+  // attributes filed by century, fetched for a window and never waited for
+  // (docs/index2-plan.md, D4 and D5).
   //
   // Compact for the reason the spine is: nobody reads a row of integers with
   // their eyes, and the device that fetches it parses the whole of it.
@@ -269,7 +275,6 @@ export async function buildIndex(dataDir = DEFAULT_DATA, prepared = {}) {
   const regionBoxes = boxes === null ? null
     : Object.fromEntries(boxOrder.map((id) => [id, boxes.get(id).map(round)]));
 
-  const spineName = `spine-${hashOf(spineText)}.json`;
   const searchName = `search-${hashOf(searchText)}.json`;
   const sourcesName = `sources-${hashOf(sourcesText)}.json`;
   const reviewName = `review-${hashOf(reviewText)}.json`;
@@ -292,10 +297,9 @@ export async function buildIndex(dataDir = DEFAULT_DATA, prepared = {}) {
       citers: `index/${citersDir}`,
       history: `index/${HISTORY_DIR}`,
       search: `index/${searchName}`,
-      spine: `index/${spineName}`,
-      // The core of I3, beside the spine and read by nothing yet. Named all the
-      // same: a file the manifest does not name is a file no page could ask
-      // for, and I4's first commit is a page asking for this one.
+      // The graph, whole, and the only file that carries it since I4b. What
+      // the shards add to it — the titles, the roles, the names, the counts —
+      // is in `attributeShards` below and is fetched a century at a time.
       core: `index/${coreName}`,
       sources: `index/${sourcesName}`,
       review: `index/${reviewName}`,
@@ -360,12 +364,15 @@ export async function buildIndex(dataDir = DEFAULT_DATA, prepared = {}) {
   };
   const manifest = serialize(manifestValue);
 
-  // The pages the build writes beside the index (H8). Built from the same
-  // atlas the browser assembles — the spine, the sources index and the citer
-  // rows this build has just produced, through `createAtlasFromSpine` — so
-  // that a prerendered page cannot be a rendering of anything but what the
-  // index says. Nothing is written here: `sitePages` is pure and `writeSite`
-  // below is what touches disk, the way `writeIndex` is for the index.
+  // The pages the build writes beside the index (H8). Built from an atlas over
+  // the whole-corpus projection above, the sources index and the citer rows
+  // this build has just produced, so that a prerendered page cannot be a
+  // rendering of anything but what the index says. It is the *definition* that
+  // is rendered from, not the file — there is no file — and what carries the
+  // definition to the core and the shards is I3's `CORE ∪ ATTRIBUTE = SPINE`
+  // test (A5; index2 review, finding 20). Nothing is written here: `sitePages`
+  // is pure and `writeSite` below is what touches disk, the way `writeIndex`
+  // is for the index.
   const atlas = createAtlasFromSpine({
     manifest: canonical(manifestValue),
     spine: JSON.parse(spineText),
@@ -390,10 +397,13 @@ export async function buildIndex(dataDir = DEFAULT_DATA, prepared = {}) {
   const unresolved = topology.events.filter((e) => e.status === 'active' && e.place && !e.region);
   return {
     pages,
+    // The projection the two halves are measured against, carried beside the
+    // files rather than among them: it is not written any more and the report
+    // below still says what the core is smaller than.
+    spineText,
     files: {
       'manifest.json': manifest,
       [searchName]: searchText,
-      [spineName]: spineText,
       [coreName]: coreText,
       ...Object.fromEntries(attributes.map(({ name, text }) => [name, text])),
       ...(presencesName === null ? {} : { [presencesName]: presencesText }),
@@ -561,26 +571,26 @@ export function pageReport(pages) {
 // file every `index.html` parses — 171 KB today and 2.75 MB at 10^4 — and the
 // decision after this one is taken against a number rather than an argument
 // (index2-plan, A3; i3-brief, A6). The spine is there to say what the core is
-// being compared with.
+// being compared with — built in memory and no longer written (I4b), so it is
+// read off `built.spineText` and not off a file.
 //
 // Gzip because that is what a page pays over the wire and raw because that is
 // what `JSON.parse` and the heap pay, and the second is where the wall is.
 export function indexReport(built) {
   const manifest = JSON.parse(built.files['manifest.json']);
-  const of = (file) => {
-    const name = path.basename(file);
-    const text = built.files[name];
-    if (text === undefined) return null;
+  const bytesOf = (name, text) => {
+    if (text === undefined || text === null) return null;
     const raw = Buffer.from(text, 'utf8');
     return { name, bytes: raw.byteLength, gzip: gzipSync(raw, { level: 9 }).byteLength };
   };
+  const of = (file) => bytesOf(path.basename(file), built.files[path.basename(file)]);
   const core = of(manifest.files.core);
   const shards = (manifest.attributeShards ?? []).map((shard) => ({ key: shard.key, ...of(shard.file) }));
   return {
     core,
     shards,
     search: of(manifest.files.search),
-    spine: of(manifest.files.spine),
+    spine: bytesOf('the whole-corpus projection', built.spineText),
     totals: {
       bytes: (core?.bytes ?? 0) + shards.reduce((n, s) => n + s.bytes, 0),
       gzip: (core?.gzip ?? 0) + shards.reduce((n, s) => n + s.gzip, 0),
@@ -590,11 +600,11 @@ export function indexReport(built) {
 
 function printIndexReport(report) {
   const row = (label, entry) => `  ${label.padEnd(30)} ${String(entry.bytes.toLocaleString('en-US')).padStart(11)} B  ${String(entry.gzip.toLocaleString('en-US')).padStart(10)} B gzipped`;
-  console.log('the core and the attribute shards (I3; nothing reads them yet):');
+  console.log('the core and the attribute shards (every page reads them since I4b):');
   if (report.core) console.log(row(report.core.name, report.core));
   for (const shard of report.shards) console.log(row(shard.name, shard));
   console.log(row('— the two together', report.totals));
-  if (report.spine) console.log(row(`the spine, for comparison`, report.spine));
+  if (report.spine) console.log(row('the spine, for comparison (unwritten)', report.spine));
   if (report.search) console.log(row('the search shard, beside it', report.search));
 }
 

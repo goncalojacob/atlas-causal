@@ -486,16 +486,22 @@ test('a tombstone keeps its head and meta line and drops the rest', async () => 
   assert.ok(decoded.relations.some((r) => r.status === 'active' && Object.hasOwn(r, 'note')));
 });
 
-test('the spine is in the built index, named in the manifest, and stable', async () => {
+// The whole-corpus projection this file is about is built and not written since
+// I4b: the core and the attribute shards are what the index carries, and this
+// is the definition they add up to. It is still stable between builds — the
+// prerendered pages are rendered out of it, and their byte-identity is a check
+// on it (i4-brief, A5).
+test('the whole-corpus projection is built, stable, and no longer a file', async () => {
   const first = await buildIndex(FIXTURE_DATA);
   const second = await buildIndex(FIXTURE_DATA);
   const manifest = JSON.parse(first.files['manifest.json']);
-  assert.match(manifest.files.spine, /^index\/spine-[0-9a-f]{12}\.json$/);
-  const name = path.basename(manifest.files.spine);
-  assert.ok(Object.hasOwn(first.files, name));
-  assert.equal(first.files[name], second.files[name]);
-  // And it is the only graph file: since H3c the index writes the projection
-  // and not the thing projected.
+  assert.equal(typeof first.spineText, 'string');
+  assert.equal(first.spineText, second.spineText);
+  assert.equal(Object.hasOwn(manifest.files, 'spine'), false);
+  assert.deepEqual(Object.keys(first.files).filter((f) => f.startsWith('spine')), []);
+  // The graph file the index does write, and the only one: since H3c the index
+  // writes the projection and not the thing projected.
+  assert.match(manifest.files.core, /^index\/core-[0-9a-f]{12}\.json$/);
   assert.deepEqual(
     Object.keys(first.files).filter((f) => f.startsWith('topology')),
     [],

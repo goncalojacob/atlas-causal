@@ -10,14 +10,13 @@
 
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { readFile, readdir } from 'node:fs/promises';
+import { readFile } from 'node:fs/promises';
 import path from 'node:path';
 import {
   layoutGraph, stackLayout, crosses, BAND_HEIGHT, AXIS_HEIGHT, STACK_DISTANCE, MAX_ZOOM,
 } from '../src/graph-view/layout.js';
 import { lanesFor } from '../src/lanes.js';
-import { expandSpine } from '../src/data.js';
-import { ROOT } from './helpers.mjs';
+import { ROOT, corpusOf } from './helpers.mjs';
 
 const REGIONS = [
   { id: 'europe', label: 'Europe', order: 1 },
@@ -319,13 +318,11 @@ test('links between two stacks are one line, counted, and keep a dispute', () =>
   assert.deepEqual([line.x1, line.y1, line.x2, line.y2], [from.x, from.y, to.x, to.y]);
 });
 
-// The real dataset, through the same index the browser reads: the spine,
-// expanded back into lists exactly as the loader expands it — an edge is
-// five slots there and an object here.
+// The real dataset, through the same index the browser reads: the core and
+// every attribute shard, expanded back into lists exactly as the loader
+// expands them — an edge is five slots there and an object here.
 async function topology() {
-  const dir = path.join(ROOT, 'data', 'index');
-  const file = (await readdir(dir)).find((n) => n.startsWith('spine-'));
-  return expandSpine(JSON.parse(await readFile(path.join(dir, file), 'utf8')));
+  return corpusOf(path.join(ROOT, 'data'));
 }
 
 test('the whole atlas lays out: every event placed, every edge drawn', async () => {

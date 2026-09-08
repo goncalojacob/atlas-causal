@@ -3,7 +3,7 @@
 import path from 'node:path';
 import { readFile, readdir } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
-import { createAtlas, createAtlasFromSpine, presencesFromIndex } from '../src/data.js';
+import { createAtlas, createAtlasFromCore, expandCore, presencesFromIndex } from '../src/data.js';
 import { buildTopology } from '../src/validate/core.js';
 import { createRegionDeriver } from '../src/util/geo.js';
 import { readSchemaFiles, readRecords, readRegions, readRegionPolygons } from '../tools/lib/read.mjs';
@@ -77,14 +77,35 @@ export async function presencesOnDisk(dataDir) {
   return presencesFromIndex(file);
 }
 
-// The atlas as the site builds it: the spine and the sources index the
-// manifest names, with the citer rows and the presences seeded.
+// The atlas as the site builds it: the core and the sources index the manifest
+// names, with the citer rows and the presences seeded — and **every** attribute
+// shard, handed over rather than fetched, which is how "the core plus every
+// shard" is asserted (data.js, `createAtlasFromCore`). A test that wants the
+// atlas a reader has a century into a session pins its own shards; this is the
+// whole of it, because that is what an assertion about the projection is made
+// against.
 export async function atlasOf(dataDir, options = {}) {
   const { manifest, read } = await indexOf(dataDir);
-  const [spine, sources, citers, presences] = await Promise.all([
-    read(manifest.files.spine), read(manifest.files.sources), citersOnDisk(dataDir), presencesOnDisk(dataDir),
+  const [core, sources, citers, presences, attributes] = await Promise.all([
+    read(manifest.files.core), read(manifest.files.sources), citersOnDisk(dataDir), presencesOnDisk(dataDir),
+    Promise.all((manifest.attributeShards ?? []).map(async (shard) => ({ key: shard.key, file: await read(shard.file) }))),
   ]);
-  return createAtlasFromSpine({ manifest, spine, sources: sources.sources, citers, presences, fetchJson: refuse, ...options });
+  return createAtlasFromCore({
+    manifest, core, attributes, sources: sources.sources, citers, presences, fetchJson: refuse, ...options,
+  });
+}
+
+// The whole corpus as the index carries it since I4b: the core, and every
+// attribute shard filled into it. This is what `expandSpine` over the
+// whole-corpus file gave until that file stopped being written, and it is the
+// same records — which is exactly what I3's `CORE ∪ ATTRIBUTE = SPINE` test
+// says (tests/core-loader.test.mjs). A test that wants the lists rather than an
+// atlas reads them here.
+export async function corpusOf(dataDir) {
+  const { manifest, read } = await indexOf(dataDir);
+  const { topology, fill } = expandCore(await read(manifest.files.core));
+  for (const shard of manifest.attributeShards ?? []) fill(await read(shard.file));
+  return topology;
 }
 
 // The in-memory build the spine is a projection of, read from the records
@@ -100,8 +121,9 @@ export async function topologyOf(dataDir) {
 }
 
 // An atlas over that in-memory build, for the same purpose. `createAtlas` is
-// the assembly `createAtlasFromSpine` delegates to once the spine's lists are
-// expanded, so this is the atlas with one step of the projection taken out.
+// the assembly `createAtlasFromCore` delegates to once the core's lists are
+// expanded and its shards are in, so this is the atlas with the whole
+// projection taken out.
 export async function atlasFromTopology(dataDir, options = {}) {
   const { manifest, read } = await indexOf(dataDir);
   const [topology, sources, citers] = await Promise.all([

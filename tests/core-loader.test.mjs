@@ -1,6 +1,7 @@
-// The loader reading the core and the attribute shards (I3), which no page
-// reads yet: `docs/index2-plan.md` D5 says the split is emitted and measured
-// before it is spent, and this is what says it can be spent at all.
+// The loader reading the core and the attribute shards, which since I4b is the
+// only graph loader there is: `docs/index2-plan.md` D5 said the split was to be
+// emitted and measured before it was spent, and this is what said it could be
+// spent at all.
 //
 // The claim is one sentence: **the core plus every shard is the atlas the
 // spine builds**. Not "deep-equals an atlas" — an atlas is an object of Maps
@@ -289,8 +290,10 @@ test('a record asked for before its shard is still fetched with ?v=<revised>', a
     return read(FIXTURE_DATA, rel);
   };
   const { manifest: loaded, core } = await loadCore({ dataRoot: 'tests/fixtures/data/', fetchJson });
-  assert.equal(loaded.schema, 4);
-  assert.equal(core.schema, 4);
+  // The graph file's own number is the manifest's, from I1 on: one generation
+  // per artifact rather than two to forget to bump (data.js, D6).
+  assert.equal(loaded.schema, 5);
+  assert.equal(core.schema, 5);
   assert.match(calls[1], /^tests\/fixtures\/data\/index\/core-[0-9a-f]{12}\.json$/);
 
   const atlas = createAtlasFromCore({

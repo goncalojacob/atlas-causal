@@ -14,7 +14,7 @@ import { readFile } from 'node:fs/promises';
 import {
   PERIOD, periodOf, periodOfEdge, shardName, explanationShards,
 } from '../src/explanations.js';
-import { createAtlasFromSpine } from '../src/data.js';
+import { createAtlasFromCore } from '../src/data.js';
 import { FIXTURE_DATA, citersOnDisk } from './helpers.mjs';
 
 test('a period is a century, floored the same way either side of year zero', () => {
@@ -77,8 +77,9 @@ test('the shards are by period, in year order, and hold only live arguments', ()
 async function countedAtlas({ fail = false } = {}) {
   const read = async (rel) => JSON.parse(await readFile(path.join(FIXTURE_DATA, rel), 'utf8'));
   const manifest = await read('index/manifest.json');
-  const [spine, sources, citers] = await Promise.all([
-    read(manifest.files.spine), read(manifest.files.sources), citersOnDisk(FIXTURE_DATA),
+  const [core, sources, citers, attributes] = await Promise.all([
+    read(manifest.files.core), read(manifest.files.sources), citersOnDisk(FIXTURE_DATA),
+    Promise.all((manifest.attributeShards ?? []).map(async (shard) => ({ key: shard.key, file: await read(shard.file) }))),
   ]);
   const asked = [];
   const fetchJson = (url) => {
@@ -86,8 +87,8 @@ async function countedAtlas({ fail = false } = {}) {
     if (fail) return Promise.reject(new Error('offline'));
     return read(url.replace(/^fixtures\//, ''));
   };
-  const atlas = createAtlasFromSpine({
-    manifest, spine, sources: sources.sources, citers, dataRoot: 'fixtures/', fetchJson,
+  const atlas = createAtlasFromCore({
+    manifest, core, attributes, sources: sources.sources, citers, dataRoot: 'fixtures/', fetchJson,
   });
   return { atlas, asked };
 }

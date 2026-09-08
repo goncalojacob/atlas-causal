@@ -13,13 +13,11 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { spawn } from 'node:child_process';
-import { readFile, readdir } from 'node:fs/promises';
 import path from 'node:path';
 import { createServer, HOST } from '../tools/serve.mjs';
 import { findChrome } from '../tools/screens.mjs';
-import { ROOT } from './helpers.mjs';
+import { ROOT, corpusOf } from './helpers.mjs';
 import { withBrowser, open, waitFor, seenIntro, watchErrors, errorsOn } from './browser.mjs';
-import { expandSpine } from '../src/data.js';
 import { LOADING_LABEL } from '../src/attributes.js';
 
 const chrome = findChrome();
@@ -85,11 +83,12 @@ const badges = (graph) => [...graph.matchAll(/class="cluster-count[^"]*"[^>]*>\+
 // index the browser reads: the number the marks and the badges have to add
 // back up to.
 async function activeEvents() {
-  const dir = path.join(ROOT, 'data', 'index');
-  const file = (await readdir(dir)).find((n) => n.startsWith('spine-'));
-  // Rows over an id table since I2, read back the way the browser reads them.
-  const spine = expandSpine(JSON.parse(await readFile(path.join(dir, file), 'utf8')));
-  return spine.events.filter((e) => e.status === 'active').length;
+  // Rows over an id table since I2, read back the way the browser reads them:
+  // the core, and the attribute shards filled into it (I4b). `status` is a core
+  // column, so the count is the core's own answer either way — reading the
+  // whole of it is what keeps this helper honest about what the index holds.
+  const corpus = await corpusOf(path.join(ROOT, 'data'));
+  return corpus.events.filter((e) => e.status === 'active').length;
 }
 
 test('at the default zoom the graph draws stacks, and they add up to the events', { skip }, async () => {

@@ -12,16 +12,14 @@ import {
 } from '../src/narratives/list.js';
 import { buildIndex } from '../tools/build-index.mjs';
 import { expandSpine } from '../src/data.js';
-import { FIXTURE_DATA, ROOT } from './helpers.mjs';
+import { FIXTURE_DATA, ROOT, corpusOf } from './helpers.mjs';
 
-// `null` is the repository's own index, read as the page reads it: the spine
-// expanded back into lists, which is what loadNarratives hands this module.
-// Anything else is a data directory the index is built from.
+// `null` is the repository's own index, read as the page reads it: the core and
+// every attribute shard, expanded back into lists, which is what
+// loadNarratives hands this module. Anything else is a data directory the index
+// is built from.
 async function topologyOf(dir) {
-  if (dir === null) {
-    const manifest = JSON.parse(await readFile(path.join(ROOT, 'data', 'index', 'manifest.json'), 'utf8'));
-    return expandSpine(JSON.parse(await readFile(path.join(ROOT, 'data', manifest.files.spine), 'utf8')));
-  }
+  if (dir === null) return corpusOf(path.join(ROOT, 'data'));
   return (await buildIndex(dir)).topology;
 }
 

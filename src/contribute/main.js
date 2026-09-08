@@ -43,7 +43,7 @@ const correction = params.get('correction') === '1' || edit !== null;
 
 try {
   const [atlas, schemas] = await Promise.all([
-    loadAtlas({ dataRoot, landFile: false, from: 'core' }),
+    loadAtlas({ dataRoot, landFile: false }),
     loadSchemas({ root: 'schema/' }),
   ]);
   // The presences, which left the spine in I1 and which rule 17 and the

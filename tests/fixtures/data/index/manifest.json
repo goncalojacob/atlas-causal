@@ -1,25 +1,25 @@
 {
   "attributeShards": [
     {
-      "file": "index/attributes-1100-1199-a16fbf443335.json",
+      "file": "index/attributes-1100-1199-9d85426ee07b.json",
       "from": 1100,
       "key": "1100-1199",
       "to": 1199
     },
     {
-      "file": "index/attributes-1200-1299-188a99aa5798.json",
+      "file": "index/attributes-1200-1299-be9113c1d67e.json",
       "from": 1200,
       "key": "1200-1299",
       "to": 1299
     },
     {
-      "file": "index/attributes-null-c46938a59403.json",
+      "file": "index/attributes-null-de2b2d7f3acb.json",
       "from": null,
       "key": "null",
       "to": null
     },
     {
-      "file": "index/attributes-place-23dc6f6d8db8.json",
+      "file": "index/attributes-place-2c3a5e7ffe36.json",
       "from": null,
       "key": "place",
       "to": null
@@ -47,13 +47,12 @@
   ],
   "files": {
     "citers": "index/citers-77d329bd5e9b",
-    "core": "index/core-699814c959ee.json",
+    "core": "index/core-86560aca5893.json",
     "history": "index/history",
-    "presences": "index/presences-208702fe80e6.json",
+    "presences": "index/presences-77f75771f79b.json",
     "review": "index/review-8bf748a55c61.json",
     "search": "index/search-755e4c7ff6e5.json",
-    "sources": "index/sources-be024864c060.json",
-    "spine": "index/spine-e2cdfed2d254.json"
+    "sources": "index/sources-be024864c060.json"
   },
   "land": [],
   "licenses": {
@@ -257,7 +256,7 @@
     "leader",
     "signatory"
   ],
-  "schema": 4,
+  "schema": 5,
   "tenuresByOffice": {
     "fixture-office-one": [
       "fixture-tenure-one",

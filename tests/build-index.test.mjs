@@ -20,16 +20,17 @@ async function tempCopyOfFixtures() {
   return dir;
 }
 
-// R5: the spine is parsed whole by every page on every device, and about a
-// third of it was indentation. gzip hides that over the wire; JSON.parse does
-// not. The two files nobody reads with their eyes are written compact; every
-// file somebody does read stays indented.
-test('the spine and the search shard are compact, and everything else is not', async () => {
+// R5: the graph file is parsed whole by every page on every device, and about
+// a third of it was indentation. gzip hides that over the wire; JSON.parse does
+// not. The files nobody reads with their eyes are written compact; every file
+// somebody does read stays indented. `core` since I4b, which is what the whole
+// corpus file became; the attribute shards are held to the same line below.
+test('the core and the search shard are compact, and everything else is not', async () => {
   const dir = await tempCopyOfFixtures();
   try {
     const built = await buildIndex(dir);
     const manifest = JSON.parse(built.files['manifest.json']);
-    for (const key of ['spine', 'search']) {
+    for (const key of ['core', 'search']) {
       const name = path.basename(manifest.files[key]);
       const text = built.files[name];
       assert.equal(text.split('\n').length, 2, `${key} is one line and a newline`);
@@ -78,7 +79,7 @@ test('two builds of the repository name and write exactly the same files', async
   assert.deepEqual(Object.keys(first.files).sort(), Object.keys(second.files).sort());
   for (const [name, text] of Object.entries(first.files)) assert.equal(text, second.files[name], name);
   const manifest = JSON.parse(first.files['manifest.json']);
-  for (const key of ['spine', 'search', 'sources', 'review']) {
+  for (const key of ['core', 'search', 'sources', 'review']) {
     assert.match(manifest.files[key], new RegExp(`^index/${key}-[0-9a-f]{12}\\.json$`), key);
     assert.ok(Object.hasOwn(first.files, path.basename(manifest.files[key])), key);
   }
@@ -118,16 +119,20 @@ test('key order and file order in the source records do not change the bytes', a
 test('manifest names the hashed files, counts, lanes and land', async () => {
   const built = await buildIndex(FIXTURE_DATA);
   const manifest = JSON.parse(built.files['manifest.json']);
-  // 4 since I3: the generation goes up by one in every run that changes the
+  // 5 since I4b: the generation goes up by one in every run that changes the
   // index's shape (index2-plan, D6).
-  assert.equal(manifest.schema, 4);
+  assert.equal(manifest.schema, 5);
   // `counts.presences` stays where it is: a count is not a file, and it is
   // what the manifest says about a dataset whether or not the file exists.
   assert.deepEqual(manifest.counts, { events: 12, edges: 10, sources: 4, actors: 4, presences: 3, places: 11, relations: 3, offices: 2, tenures: 4, narratives: 1, regions: 3 });
-  assert.match(manifest.files.spine, /^index\/spine-[0-9a-f]{12}\.json$/);
+  // The whole-corpus file is not named and not written since I4b: the graph is
+  // the core, and what the core drops is in the attribute shards.
+  assert.equal(Object.hasOwn(manifest.files, 'spine'), false);
+  assert.equal(Object.keys(built.files).filter((name) => name.startsWith('spine-')).length, 0);
+  assert.match(manifest.files.core, /^index\/core-[0-9a-f]{12}\.json$/);
   assert.match(manifest.files.sources, /^index\/sources-[0-9a-f]{12}\.json$/);
   assert.match(manifest.files.presences, /^index\/presences-[0-9a-f]{12}\.json$/);
-  assert.ok(Object.hasOwn(built.files, path.basename(manifest.files.spine)));
+  assert.ok(Object.hasOwn(built.files, path.basename(manifest.files.core)));
   assert.ok(Object.hasOwn(built.files, path.basename(manifest.files.presences)));
   assert.equal(manifest.regions[0].id, 'fixture-lane-1');
   assert.deepEqual(manifest.land, []);
@@ -140,12 +145,14 @@ test('manifest names the hashed files, counts, lanes and land', async () => {
     assert.ok(box[0] <= box[2] && box[1] <= box[3]);
   }
   // The lane an event is drawn in and how it was arrived at: derived here and
-  // carried into the spine, except `regionMethod`, which nothing draws and
+  // carried into the projection, except `regionMethod`, which nothing draws and
   // which the projection drops (h3a-brief, A3). So the lane is read off the
-  // file and the method off the build.
+  // projection and the method off the build.
   // Read through the one decoder since I2: the file is positional rows over an
   // id table, and a test that read its slots by hand would be a second decoder.
-  const spine = expandSpine(JSON.parse(built.files[path.basename(manifest.files.spine)]));
+  // `spineText` since I4b: the whole-corpus projection is built in memory for
+  // the prerendered pages and no longer written out (A5).
+  const spine = expandSpine(JSON.parse(built.spineText));
   const byId = Object.fromEntries(spine.events.map((e) => [e.id, e]));
   const builtBy = Object.fromEntries(built.topology.events.map((e) => [e.id, e]));
   assert.equal(byId['fixture-event-a'].region, 'fixture-lane-1');
@@ -264,12 +271,14 @@ test('weight counts active edges in and out plus the actors named', async () => 
 test('weight is in the built index and does not change between builds', async () => {
   const first = await buildIndex(FIXTURE_DATA);
   const second = await buildIndex(FIXTURE_DATA);
-  const name = path.basename(JSON.parse(first.files['manifest.json']).files.spine);
-  // A tombstone carries no weight in the spine: it is drawn nowhere, and the
-  // tombstone list is the five fields a card still needs (h3a-brief, A10).
-  const events = expandSpine(JSON.parse(first.files[name])).events.filter((e) => e.status === 'active');
+  const name = path.basename(JSON.parse(first.files['manifest.json']).files.core);
+  // A tombstone carries no weight in the projection: it is drawn nowhere, and
+  // the tombstone list is the five fields a card still needs (h3a-brief, A10).
+  const events = expandSpine(JSON.parse(first.spineText)).events.filter((e) => e.status === 'active');
   assert.ok(events.every((e) => Number.isInteger(e.weight)), 'every active event in the index carries a weight');
   assert.ok(events.some((e) => e.weight > 0));
+  // `weight` is a core column, so the file every page loads is the one that
+  // has to come out the same twice.
   assert.equal(first.files[name], second.files[name]);
 });
 
@@ -278,7 +287,7 @@ test('weight is in the built index and does not change between builds', async ()
 test('the manifest names the core and the attribute shards, and both are written', async () => {
   const built = await buildIndex(FIXTURE_DATA);
   const manifest = JSON.parse(built.files['manifest.json']);
-  assert.equal(manifest.schema, 4);
+  assert.equal(manifest.schema, 5);
   assert.match(manifest.files.core, /^index\/core-[0-9a-f]{12}\.json$/);
   assert.ok(Object.hasOwn(built.files, path.basename(manifest.files.core)));
   // The centuries in year order, then the two that answer no year: the places,
@@ -301,9 +310,10 @@ test('the manifest names the core and the attribute shards, and both are written
   for (const name of [path.basename(manifest.files.core), path.basename(shards[0].file)]) {
     assert.equal(built.files[name].split('\n').length, 2, `${name} is one line and a newline`);
   }
-  // And nothing switched over: every page still reads the spine, which is what
-  // I3 is (docs/index2-plan.md, D5).
-  assert.match(manifest.files.spine, /^index\/spine-[0-9a-f]{12}\.json$/);
+  // And the switch is complete: every page reads the core, and the whole-corpus
+  // file is neither named nor written (i4-brief, section 3).
+  assert.equal(Object.hasOwn(manifest.files, 'spine'), false);
+  assert.equal(Object.keys(built.files).filter((name) => name.startsWith('spine-')).length, 0);
 });
 
 test('the core and the shards do not change between builds', async () => {
@@ -332,7 +342,9 @@ test('the printed report totals are the bytes of the files it names', async () =
   // The search shard beside them: the other whole-corpus file every index.html
   // parses, so the next decision is taken against a number (index2-plan, A3).
   assert.equal(report.search.bytes, bytesOf(manifest.files.search));
-  assert.equal(report.spine.bytes, bytesOf(manifest.files.spine));
+  // And the projection the core is being compared with, which is built in
+  // memory and not written since I4b: the report reads it off `spineText`.
+  assert.equal(report.spine.bytes, Buffer.byteLength(built.spineText, 'utf8'));
 });
 
 // A4: the pattern that decides which files `readIndex` reads and `writeIndex`
@@ -365,6 +377,10 @@ test('writeIndex removes stale hashed files and the result is fresh', async () =
   const dir = await tempCopyOfFixtures();
   try {
     await mkdir(path.join(dir, 'index'), { recursive: true });
+    // The whole-corpus file a build from before I4b left behind. It is not
+    // written any more and `spine-` is still in `HASHED` for exactly this:
+    // a rebuild is what removes it, and until it does it is served `immutable`
+    // under a hash that describes a shape nothing here reads.
     await writeFile(path.join(dir, 'index', 'spine-deadbeef0000.json'), '{}\n');
     // A presence file from an earlier build: hashed and `immutable` like the
     // rest, so a name the fresh build does not write has to go (I1).
@@ -385,6 +401,11 @@ test('writeIndex removes stale hashed files and the result is fresh', async () =
       Object.keys(await readIndex(dir)).filter((n) => n.startsWith('presences-')),
       [path.basename(JSON.parse(built.files['manifest.json']).files.presences)],
       'the stale presence file is gone and the fresh one is there',
+    );
+    assert.deepEqual(
+      Object.keys(await readIndex(dir)).filter((n) => n.startsWith('spine-')),
+      [],
+      'the whole-corpus file a build from before I4b left is gone, and no new one is written',
     );
     assert.deepEqual(
       Object.keys(await readIndex(dir)).filter((n) => n.startsWith('core-')),
