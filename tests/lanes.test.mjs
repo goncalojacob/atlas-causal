@@ -147,6 +147,47 @@ test('the automatic list is capped at six, plus Other', () => {
   assert.equal(lanes[LANE_CAP].members.size, events.filter((e) => Number(e.id.slice(1, 3)) >= LANE_CAP).length);
 });
 
+// The pane says how many lanes there is room for and hands the number down;
+// six is still the most this file will draw of its own accord (I6, and
+// tests/timeline-rows.test.mjs for where the number comes from).
+test('the automatic list is cut to the room the caller has, and never widened past six', () => {
+  const events = [];
+  const actors = new Map();
+  for (let i = 0; i < 20; i += 1) {
+    const id = `a${String(i).padStart(2, '0')}`;
+    actors.set(id, { id, name: `Actor ${i}` });
+    for (let n = 0; n < 20 - i; n += 1) events.push(event(`${id}-${n}`, { actors: [id], start: 1900 + n }));
+  }
+  const t = { activeEvents: events, actors, places: new Map(), regions: [] };
+  const named = (lanes) => lanes.filter((l) => l.id !== OTHER_ID);
+
+  // Room for three: the three heaviest, in the same order, and the rest in
+  // Other — which is a lane too, and is why a pane with room for four asks
+  // for three.
+  const three = lanesFor('actor', t, null, null, null, { cap: 3 });
+  assert.deepEqual(idsOf(named(three)), ['a00', 'a01', 'a02']);
+  assert.equal(three[three.length - 1].id, OTHER_ID);
+
+  // Room for more than six is still six: the cap narrows and never widens.
+  assert.equal(named(lanesFor('actor', t, null, null, null, { cap: 40 })).length, LANE_CAP);
+  // And no room at all is still one lane: a grouping that drew none would be
+  // an empty timeline.
+  assert.equal(named(lanesFor('actor', t, null, null, null, { cap: 0 })).length, 1);
+
+  // Whatever the cap, every event is still in exactly one lane.
+  for (const cap of [1, 3, 6, 40]) {
+    const lanes = lanesFor('actor', t, null, null, null, { cap });
+    const members = lanes.flatMap((l) => [...l.members]);
+    assert.equal(new Set(members).size, members.length, `cap ${cap}: no event in two lanes`);
+    assert.equal(members.length, events.length, `cap ${cap}: no event left out`);
+  }
+
+  // The reader's own list is not capped: naming ten actors is asking for ten
+  // lanes, however short the pane is (i6-brief §2).
+  const chosen = [...actors.keys()].slice(0, 10);
+  assert.deepEqual(idsOf(named(lanesFor('actor', t, null, null, chosen, { cap: 2 }))), chosen);
+});
+
 test('the window decides which lanes there are and never which events are in them', () => {
   const t = topology();
   // 1958–1974 counts PIDE twice and Salazar once, so PIDE leads.

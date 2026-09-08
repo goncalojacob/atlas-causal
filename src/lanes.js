@@ -93,7 +93,7 @@ export function availableLanes(group, topology, window = null, lens = null) {
 // nowhere to be drawn. `chosen`, when given, is the reader's own ordered
 // list and replaces the automatic six; "Other" joins it only if something
 // falls outside.
-export function lanesFor(group, topology, window = null, lens = null, chosen = null) {
+export function lanesFor(group, topology, window = null, lens = null, chosen = null, { cap = LANE_CAP } = {}) {
   const all = topology.activeEvents ?? [];
   const shown = lens ? all.filter((e) => lens.has(e.id)) : all;
   if (group === 'region') {
@@ -119,7 +119,12 @@ export function lanesFor(group, topology, window = null, lens = null, chosen = n
     // is dropped rather than drawn as an empty lane with a slug for a name.
     ? chosen.filter((id, i) => chosen.indexOf(id) === i
       && (group === 'actor' ? topology.actors?.has(id) : topology.places?.has(id)))
-    : available.slice(0, LANE_CAP).map((a) => a.id);
+    // `cap` is how many the caller has room for, never more than the six this
+    // file thinks a picture can carry: the timeline works it out from the
+    // height of its pane, and a caller that says nothing gets the six (I6).
+    // The reader's own list above is not capped at all — naming fifteen
+    // actors is asking for fifteen lanes.
+    : available.slice(0, Math.max(1, Math.min(LANE_CAP, cap))).map((a) => a.id);
 
   const lanes = wanted.map((id) => lane(id, labelOf(group, id, topology)));
   const position = new Map(lanes.map((l, i) => [l.id, i]));

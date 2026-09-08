@@ -32,7 +32,7 @@ import { labelOf, LOADING_LABEL } from './attributes.js';
 import { horizonBand } from './horizon.js';
 import { workingSet, heldSet } from './emphasis.js';
 import { walkOrSelect } from './chain.js';
-import { lanesFor, rowLanes, laneOf, barBox } from './lanes.js';
+import { lanesFor, rowLanes, laneOf, barBox, LANE_CAP } from './lanes.js';
 import { largeEventsIn, bracketsIn } from './large.js';
 import { isParent, ringClasses } from './parts.js';
 import { eventsInView } from './util/viewport.js';
@@ -45,12 +45,20 @@ const LANE_HEIGHT = 34;
 const ROW_HEIGHT = 22;
 // How far a lane and a row may be squeezed to fit the pane. A named lane has
 // to keep room for its label; a packed row only for a bar and a hair of air
-// around it. Past this the lanes stop shrinking and the pane scrolls, which
-// is the honest answer: a row two pixels high is not a row.
+// around it. Since I6 this is also what decides how many there are: rather
+// than shrink past the floor and let the pane scroll, the drawing takes as
+// many lanes as the pane holds at it. A row two pixels high is not a row, and
+// a row below the fold is not a row either.
 const MIN_LANE_HEIGHT = 22;
 const MIN_ROW_HEIGHT = 14;
 // Past this the rows share and stacking draws the overlap as one bar with a
 // count, which is what the timeline did before packing existed.
+//
+// A ceiling and not a promise: what the timeline actually draws is what its
+// pane can hold at the floor above, which in a 269 px pane is fifteen rows
+// and not twenty (index2 plan, D10; owner question 1). Twenty rows at 14 px
+// plus the axis want 338, and a drawing taller than its pane is a bottom row
+// the reader cannot see.
 const MAX_ROWS = 20;
 // The gap the packing leaves between two bars in one row. Wider than the
 // hairline that would technically not overlap: two bars touching read as one
@@ -63,6 +71,21 @@ const LABEL_WIDTH = 120;
 // line, and a window as wide as the data drew "1911" over "1911 of 1911".
 const MARKER_HEIGHT = 32;
 const AXIS_HEIGHT = MARKER_HEIGHT + 26;
+// How many lanes a pane of this height holds: as many as fit under the axis
+// at the floor a lane of this kind may be squeezed to, never more than the
+// ceiling and never fewer than one. A pane that has not been laid out
+// measures nothing — a test with no layout behind it, or the first render
+// before the panes are sized — and then nothing is capped, which is what this
+// file did before I6 and what `MAX_ROWS` alone used to mean.
+//
+// Exported because it is the whole of the rule and it is worth a test of its
+// own: `tests/timeline-rows.test.mjs`.
+export function lanesThatFit(paneHeight, floorHeight, ceiling) {
+  const room = Math.max(0, (paneHeight ?? 0) - AXIS_HEIGHT);
+  if (room <= 0 || !(floorHeight > 0)) return ceiling;
+  return Math.min(ceiling, Math.max(1, Math.floor(room / floorHeight)));
+}
+export const ROW_LIMITS = { AXIS_HEIGHT, MIN_ROW_HEIGHT, MIN_LANE_HEIGHT, MAX_ROWS, ROW_HEIGHT, LANE_HEIGHT };
 const PADDING = 0.04;
 // Two bars whose middles are closer than this are drawn as one. In pixels of
 // the lane, not years: what overlaps is a question about the drawing.
@@ -603,15 +626,45 @@ export function createTimeline(container, { atlas, state, createScale = createLi
     // other instead of scattered down the rows.
     let natural = ROW_HEIGHT;
     let minimum = MIN_ROW_HEIGHT;
+    // The room under the axis, and therefore how many lanes there is room
+    // for. The cap used to be a constant, and twenty packed rows at the 14 px
+    // floor plus the axis do not fit the 269 px pane a 900 px window leaves:
+    // the drawing overflowed, the pane scrolled, and a window made shorter
+    // could not change a height that was already at the floor (index2 plan,
+    // D10; the owner's own "the timeline fits its pane").
+    //
+    // A pane that has not been laid out measures nothing — a test with no
+    // layout behind it, the first render before the panes are sized — and
+    // then nothing is capped and the ceiling is the one it always was.
+    const room = Math.max(0, paneHeight - AXIS_HEIGHT);
+    const fits = (floorHeight, ceiling) => lanesThatFit(paneHeight, floorHeight, ceiling);
     if (s.group === 'none') {
       lanes = rowLanes(near, scale, width, {
         openEnd: domain[1],
         gap: ROW_GAP,
-        maxRows: MAX_ROWS,
+        maxRows: fits(MIN_ROW_HEIGHT, MAX_ROWS),
         affinity: (event) => (pathIds.has(event.id) ? 'chain' : event.place ?? null),
       });
     } else {
-      lanes = lanesFor(s.group, atlas, window, lens, s.lanes);
+      // The same rule for a named grouping, against a lane's own floor: a lane
+      // keeps room for its label, so it is squeezed less far than a row.
+      //
+      // Two things are outside it. A grouping by region draws one lane per
+      // region and has no "Other" to put the rest in, so a region dropped for
+      // room would be events with nowhere to stand; there are five of them and
+      // they fit. And the reader's own list of lanes is unlimited by design —
+      // somebody who names fifteen actors has said they want fifteen — which
+      // is the one case that may still overflow, and `lanesFor` already lets
+      // that list past the cap.
+      //
+      // "Other" is a lane like any other and counts against the room, so if it
+      // appears and takes the drawing past what fits, the cap comes down by
+      // one and the lanes are made again.
+      const cap = fits(MIN_LANE_HEIGHT, LANE_CAP);
+      lanes = lanesFor(s.group, atlas, window, lens, s.lanes, { cap });
+      if (room > 0 && lanes.length > fits(MIN_LANE_HEIGHT, lanes.length) && cap > 1) {
+        lanes = lanesFor(s.group, atlas, window, lens, s.lanes, { cap: cap - 1 });
+      }
       natural = LANE_HEIGHT;
       minimum = MIN_LANE_HEIGHT;
     }
@@ -622,7 +675,6 @@ export function createTimeline(container, { atlas, state, createScale = createLi
     // the pane either, so the band and its handles run its whole height and
     // there is no dead strip under the last lane.
     const rows = Math.max(lanes.length, 1);
-    const room = Math.max(0, paneHeight - AXIS_HEIGHT);
     laneHeight = room > 0 ? Math.max(minimum, Math.min(natural, room / rows)) : natural;
     height = Math.max(AXIS_HEIGHT + rows * laneHeight, paneHeight);
     resize();

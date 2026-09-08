@@ -74,11 +74,43 @@ test('when the rows have the room they take it, and the pane does not scroll', {
   }, { device: { width: 1280, height: 500, deviceScaleFactor: 1 } });
 });
 
-// Known failing since the world merge of 8 September 2026: with the world's
-// events the rows overflow the pane at the 14 px floor, so a shorter window
-// cannot change the svg's height. I6 derives the row cap from the pane and
-// takes this todo off (docs/index2/i6-brief.md).
-test('the lanes are laid out again when the window changes height', { skip, todo: 'until I6 caps the rows by the pane' }, async () => {
+// The same rule for a named grouping, against a lane's own floor: a lane keeps
+// room for its label, so it is squeezed less far than a packed row and a short
+// pane holds fewer of them. "Other" is a lane like any other and counts
+// against the room (timeline.js, `fits`; i6-brief §2).
+test('a named grouping takes the lanes its pane holds, and drops one rather than overflow', { skip }, async () => {
+  const at = async (height) => {
+    let fit = null;
+    await withBrowser(async (page, url) => {
+      await open(page, url('?group=actor'), READY);
+      fit = await page.eval(FIT);
+    }, { device: { width: 1280, height, deviceScaleFactor: 1 } });
+    return fit;
+  };
+
+  const tall = await at(900);
+  fits(tall, 'the actor lanes in a 900 px window');
+  assert.ok(tall.lanes > 2, `the atlas drew several lanes (${tall.lanes})`);
+  assert.equal(tall.svgHeight, tall.paneHeight, 'the drawing is exactly the pane');
+  assert.equal(tall.scrollHeight, tall.paneHeight, 'so nothing scrolls');
+
+  const short = await at(460);
+  fits(short, 'the actor lanes in a 460 px window');
+  assert.equal(short.svgHeight, short.paneHeight, 'still exactly the pane');
+  assert.equal(short.scrollHeight, short.paneHeight, 'and still nothing scrolls');
+  assert.ok(short.lanes < tall.lanes, `fewer lanes in a shorter pane (${short.lanes} of ${tall.lanes})`);
+  assert.ok(short.lanes >= 1, 'and never none');
+  // Never below the floor a lane with a label needs, which is the whole
+  // reason the count comes down instead.
+  assert.ok(short.laneHeight >= 22, `no lane below the floor (${short.laneHeight})`);
+});
+
+// Failing from the world merge of 8 September 2026 until I6: with the world's
+// events the rows overflowed the pane at the 14 px floor, so a shorter window
+// could not change the svg's height — both were the same overflowing drawing.
+// The row cap comes from the pane now (timeline.js, `fits`), so a shorter
+// window is fewer rows.
+test('the lanes are laid out again when the window changes height', { skip }, async () => {
   await withBrowser(async (page, url) => {
     await open(page, url(''), READY);
     const tall = await page.eval(FIT);
@@ -102,8 +134,12 @@ test('the lanes are laid out again when the window changes height', { skip, todo
 
     const short = await page.eval(FIT);
     fits(short, 'after the window was made short');
-    assert.equal(short.lanes, tall.lanes, 'the same lanes');
-    assert.ok(short.laneHeight < tall.laneHeight, 'squeezed into what is left');
+    // Fewer rows, not thinner ones: past the floor a row stops shrinking and
+    // the count comes down instead, which is what keeps the drawing inside
+    // the pane (timeline.js, `fits`; index2 plan, D10).
+    assert.ok(short.lanes < tall.lanes, `fewer rows in a shorter pane (${short.lanes} of ${tall.lanes})`);
+    assert.ok(short.laneHeight >= 14, `and none of them below the floor (${short.laneHeight})`);
+    assert.equal(short.svgHeight, short.paneHeight, 'the drawing is exactly the pane');
 
     // And back again: nothing is one-way.
     await page.send('Emulation.setDeviceMetricsOverride', {
@@ -114,7 +150,9 @@ test('the lanes are laid out again when the window changes height', { skip, todo
       `return Number(document.querySelector('#timeline svg.timeline').getAttribute('height')) === ${tall.svgHeight};`,
       'the lanes to come back',
     );
-    fits(await page.eval(FIT), 'back at 900 px');
+    const back = await page.eval(FIT);
+    fits(back, 'back at 900 px');
+    assert.equal(back.lanes, tall.lanes, 'and the rows the taller pane had are back');
   }, { device: { width: 1280, height: 900, deviceScaleFactor: 1 } });
 });
 
