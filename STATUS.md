@@ -2956,6 +2956,15 @@ The numbering continues from 401, which is M31-3's last.
      comment instead, whole and ready to paste in above `### I3`, and this
      records that the body itself is untouched.
 
+499. **Deviation 488's flake is a race, and it is fixed here.** I4b recorded
+     `lens-browser`'s "the header carries a chip per focus, and each chip drops
+     its own" failing once in twelve local runs and asked that the next run
+     that saw it say so. CI saw it on this run's `M30c done` push: a chip whose
+     record's century has not landed says "loading…", and the test read the
+     names in between. It waits for the names now. Third instance of the same
+     I4 race in three days, after the record pane's history and the event
+     card's summary; nothing about it is M30c's.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done

@@ -127,6 +127,16 @@ test('the header carries a chip per focus, and each chip drops its own', { skip 
     await open(page, url(`?focus=${SALAZAR},${REGIME}&from=1800&to=2030`), ready);
     await waitFor(page, 'return document.querySelectorAll(".lens-chips .lens-badge").length === 2;',
       'two chips in the header');
+    // A chip whose record's century has not landed has no name yet and says
+    // "loading…"; the header is drawn again when the shard arrives (lens.js,
+    // index2 review finding 21). The names are what this asserts, so the names
+    // are what it waits for — never a duration. Deviation 488 saw this fail
+    // once in twelve local runs during I4b and CI has now seen it too.
+    await waitFor(
+      page,
+      'return [...document.querySelectorAll(".lens-chips .lens-name")].every((el) => el.textContent !== "loading…");',
+      'both chips to be named',
+    );
     const names = await page.eval('return [...document.querySelectorAll(".lens-chips .lens-name")].map((el) => el.textContent);');
     assert.deepEqual(names, ['António de Oliveira Salazar', 'Estado Novo'], 'each chip names its own record');
 
@@ -145,7 +155,7 @@ test('the header carries a chip per focus, and each chip drops its own', { skip 
   });
 });
 
-test('a card adds to the lens, or replaces it, and never clears the selection', { skip }, async () => {
+test('a card adds to the lens and never clears the selection', { skip }, async () => {
   await withBrowser(async (page, url) => {
     await open(page, url(`?focus=${SALAZAR}&selected=carnation-revolution-1974&from=1800&to=2030`));
     await waitFor(page, 'return Boolean(document.querySelector(".panel .lens-control"));', 'the card to offer the lens');
