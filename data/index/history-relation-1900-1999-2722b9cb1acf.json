@@ -2,6 +2,15 @@
   "from": 1900,
   "kind": "relation",
   "records": {
+    "algeria-under-france--algeria--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        }
+      ]
+    },
     "alvaro-cunhal--pcp--led": {
       "from": "git",
       "versions": [
@@ -62,6 +71,69 @@
         }
       ]
     },
+    "angola-under-portugal--angola--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "bahamas-under-united-kingdom--bahamas--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "barbados-under-united-kingdom--barbados--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "belize-under-united-kingdom--belize--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "benin-under-france--benin--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "bhutan-under-united-kingdom--bhutan--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "botswana-under-united-kingdom--botswana--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        }
+      ]
+    },
     "british-india--republic-of-india--succeeded": {
       "from": "git",
       "versions": [
@@ -81,6 +153,51 @@
             "review"
           ],
           "on": "2026-09-03"
+        }
+      ]
+    },
+    "brunei-under-united-kingdom--brunei--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "burkina-faso-upper-volta-under-france--burkina-faso-upper-volta--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "cambodia-kampuchea-under-france--cambodia-kampuchea--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "cameroon-under-france--cameroon--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "cape-verde-under-portugal--cape-verde--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
         }
       ]
     },
@@ -114,6 +231,60 @@
         }
       ]
     },
+    "central-african-republic-under-france--central-african-republic--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "chad-under-france--chad--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "comoros-under-france--comoros--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "congo-democratic-republic-of-zaire-under-belgium--congo-democratic-republic-of-zaire--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "congo-under-france--congo--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "cote-d-ivoire-under-france--cote-d-ivoire--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        }
+      ]
+    },
     "council-of-the-revolution--third-portuguese-republic--part-of": {
       "from": "git",
       "versions": [
@@ -136,6 +307,24 @@
         }
       ]
     },
+    "cyprus-under-united-kingdom--cyprus--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "djibouti-under-france--djibouti--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        }
+      ]
+    },
     "dutch-east-indies--indonesia--succeeded": {
       "from": "git",
       "versions": [
@@ -155,6 +344,15 @@
             "review"
           ],
           "on": "2026-09-03"
+        }
+      ]
+    },
+    "east-timor-under-portugal--east-timor--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
         }
       ]
     },
@@ -201,6 +399,33 @@
             "status"
           ],
           "on": "2026-09-06"
+        }
+      ]
+    },
+    "egypt-under-united-kingdom--egypt--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "equatorial-guinea-under-spain--equatorial-guinea--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "eritrea-under-italy-sardinia--eritrea--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
         }
       ]
     },
@@ -328,6 +553,15 @@
         }
       ]
     },
+    "fiji-under-united-kingdom--fiji--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        }
+      ]
+    },
     "first-portuguese-republic--portugal--regime-of": {
       "from": "git",
       "versions": [
@@ -347,6 +581,87 @@
             "review"
           ],
           "on": "2026-09-03"
+        }
+      ]
+    },
+    "gabon-under-france--gabon--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "gambia-under-united-kingdom--gambia--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "ghana-under-united-kingdom--ghana--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "guinea-bissau-under-portugal--guinea-bissau--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "guinea-under-france--guinea--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "guyana-under-united-kingdom--guyana--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "iceland-under-denmark--iceland--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "iraq-under-united-kingdom--iraq--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "jamaica-under-united-kingdom--jamaica--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
         }
       ]
     },
@@ -374,6 +689,42 @@
         }
       ]
     },
+    "jordan-under-united-kingdom--jordan--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "kenya-under-united-kingdom--kenya--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "laos-under-france--laos--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "lebanon-under-france--lebanon--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        }
+      ]
+    },
     "legiao-portuguesa--estado-novo--part-of": {
       "from": "git",
       "versions": [
@@ -393,6 +744,69 @@
             "review"
           ],
           "on": "2026-09-03"
+        }
+      ]
+    },
+    "lesotho-under-united-kingdom--lesotho--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "libya-under-italy-sardinia--libya--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "malawi-under-united-kingdom--malawi--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "malaysia-under-united-kingdom--malaysia--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "maldives-under-united-kingdom--maldives--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "mali-under-france--mali--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "malta-under-united-kingdom--malta--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
         }
       ]
     },
@@ -508,6 +922,24 @@
         }
       ]
     },
+    "mauritania-under-france--mauritania--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "mauritius-under-united-kingdom--mauritius--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        }
+      ]
+    },
     "military-dictatorship--portugal--regime-of": {
       "from": "git",
       "versions": [
@@ -530,6 +962,60 @@
         }
       ]
     },
+    "mozambique-under-portugal--mozambique--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "myanmar-burma-under-united-kingdom--myanmar-burma--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "namibia-under-south-africa--namibia--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "new-zealand-under-united-kingdom--new-zealand--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "niger-under-france--niger--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "nigeria-under-united-kingdom--nigeria--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        }
+      ]
+    },
     "oeec--oecd--succeeded": {
       "from": "git",
       "versions": [
@@ -546,6 +1032,15 @@
         }
       ]
     },
+    "papua-new-guinea-under-australia--papua-new-guinea--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        }
+      ]
+    },
     "people-s-democratic-union--bloco-de-esquerda--succeeded": {
       "from": "git",
       "versions": [
@@ -558,6 +1053,15 @@
             "origin",
             "review"
           ],
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "philippines-under-united-states-of-america--philippines--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-09-08"
         }
       ]
@@ -834,6 +1338,15 @@
         }
       ]
     },
+    "qatar-under-united-kingdom--qatar--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        }
+      ]
+    },
     "reconstitution-party--nationalist-republican-party--succeeded": {
       "from": "git",
       "versions": [
@@ -912,6 +1425,15 @@
         }
       ]
     },
+    "senegal-under-france--senegal--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        }
+      ]
+    },
     "sidonio-pais--national-republican-party--led": {
       "from": "git",
       "versions": [
@@ -932,6 +1454,96 @@
             "origin",
             "review"
           ],
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "sierra-leone-under-united-kingdom--sierra-leone--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "singapore-under-united-kingdom--singapore--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "solomon-islands-under-united-kingdom--solomon-islands--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "sri-lanka-ceylon-under-united-kingdom--sri-lanka-ceylon--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "sudan-under-united-kingdom--sudan--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "surinam-under-netherlands--surinam--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "swaziland-eswatini-under-united-kingdom--swaziland-eswatini--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "syria-under-france--syria--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "taiwan-under-japan--taiwan--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "tanzania-tanganyika-under-united-kingdom--tanzania-tanganyika--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-09-08"
         }
       ]
@@ -977,6 +1589,78 @@
             "review"
           ],
           "on": "2026-09-03"
+        }
+      ]
+    },
+    "togo-under-france--togo--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "trinidad-and-tobago-under-united-kingdom--trinidad-and-tobago--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "tunisia-under-france--tunisia--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "uganda-under-united-kingdom--uganda--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "united-arab-emirates-under-united-kingdom--united-arab-emirates--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "zambia-under-united-kingdom--zambia--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "zanzibar-under-united-kingdom--zanzibar--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "zimbabwe-rhodesia-under-united-kingdom--zimbabwe-rhodesia--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
         }
       ]
     }

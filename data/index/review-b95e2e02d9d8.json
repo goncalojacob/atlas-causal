@@ -1,5 +1,5 @@
 {
-  "drafts": 752,
+  "drafts": 829,
   "kinds": [
     {
       "count": 33,
@@ -27,8 +27,8 @@
       "kind": "edge"
     },
     {
-      "count": 37,
-      "file": "index/review-relation-ea0c49562fc1.json",
+      "count": 114,
+      "file": "index/review-relation-9aec5ce318aa.json",
       "kind": "relation"
     },
     {
@@ -48,5 +48,5 @@
     }
   ],
   "schema": 1,
-  "total": 1334
+  "total": 1411
 }

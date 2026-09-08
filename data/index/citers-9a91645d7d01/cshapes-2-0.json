@@ -6236,15 +6236,477 @@
     },
     {
       "dissent": false,
+      "id": "algeria-under-france--algeria--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 615"
+    },
+    {
+      "dissent": false,
+      "id": "angola-under-portugal--angola--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 540"
+    },
+    {
+      "dissent": false,
+      "id": "bahamas-under-united-kingdom--bahamas--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 31"
+    },
+    {
+      "dissent": false,
+      "id": "barbados-under-united-kingdom--barbados--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 53"
+    },
+    {
+      "dissent": false,
+      "id": "belize-under-united-kingdom--belize--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 80"
+    },
+    {
+      "dissent": false,
+      "id": "benin-under-france--benin--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 434"
+    },
+    {
+      "dissent": false,
+      "id": "bhutan-under-united-kingdom--bhutan--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 760"
+    },
+    {
+      "dissent": false,
+      "id": "botswana-under-united-kingdom--botswana--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 571"
+    },
+    {
+      "dissent": false,
       "id": "british-india--republic-of-india--succeeded",
       "kind": "relation",
       "locator": "gwcode 750"
     },
     {
       "dissent": false,
+      "id": "brunei-under-united-kingdom--brunei--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 835"
+    },
+    {
+      "dissent": false,
+      "id": "burkina-faso-upper-volta-under-france--burkina-faso-upper-volta--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 439"
+    },
+    {
+      "dissent": false,
+      "id": "cambodia-kampuchea-under-france--cambodia-kampuchea--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 811"
+    },
+    {
+      "dissent": false,
+      "id": "cameroon-under-france--cameroon--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 471"
+    },
+    {
+      "dissent": false,
+      "id": "cape-verde-under-portugal--cape-verde--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 402"
+    },
+    {
+      "dissent": false,
+      "id": "central-african-republic-under-france--central-african-republic--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 482"
+    },
+    {
+      "dissent": false,
+      "id": "chad-under-france--chad--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 483"
+    },
+    {
+      "dissent": false,
+      "id": "comoros-under-france--comoros--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 581"
+    },
+    {
+      "dissent": false,
+      "id": "congo-democratic-republic-of-zaire-under-belgium--congo-democratic-republic-of-zaire--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 490"
+    },
+    {
+      "dissent": false,
+      "id": "congo-under-france--congo--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 484"
+    },
+    {
+      "dissent": false,
+      "id": "cote-d-ivoire-under-france--cote-d-ivoire--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 437"
+    },
+    {
+      "dissent": false,
+      "id": "cuba-under-spain--cuba--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 40"
+    },
+    {
+      "dissent": false,
+      "id": "cyprus-under-united-kingdom--cyprus--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 352"
+    },
+    {
+      "dissent": false,
+      "id": "djibouti-under-france--djibouti--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 522"
+    },
+    {
+      "dissent": false,
       "id": "dutch-east-indies--indonesia--succeeded",
       "kind": "relation",
       "locator": "gwcode 850"
+    },
+    {
+      "dissent": false,
+      "id": "east-timor-under-portugal--east-timor--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 860"
+    },
+    {
+      "dissent": false,
+      "id": "egypt-under-united-kingdom--egypt--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 651"
+    },
+    {
+      "dissent": false,
+      "id": "equatorial-guinea-under-spain--equatorial-guinea--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 411"
+    },
+    {
+      "dissent": false,
+      "id": "eritrea-under-italy-sardinia--eritrea--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 531"
+    },
+    {
+      "dissent": false,
+      "id": "fiji-under-united-kingdom--fiji--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 950"
+    },
+    {
+      "dissent": false,
+      "id": "gabon-under-france--gabon--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 481"
+    },
+    {
+      "dissent": false,
+      "id": "gambia-under-united-kingdom--gambia--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 420"
+    },
+    {
+      "dissent": false,
+      "id": "ghana-under-united-kingdom--ghana--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 452"
+    },
+    {
+      "dissent": false,
+      "id": "guinea-bissau-under-portugal--guinea-bissau--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 404"
+    },
+    {
+      "dissent": false,
+      "id": "guinea-under-france--guinea--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 438"
+    },
+    {
+      "dissent": false,
+      "id": "guyana-under-united-kingdom--guyana--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 110"
+    },
+    {
+      "dissent": false,
+      "id": "iceland-under-denmark--iceland--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 395"
+    },
+    {
+      "dissent": false,
+      "id": "iraq-under-united-kingdom--iraq--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 645"
+    },
+    {
+      "dissent": false,
+      "id": "jamaica-under-united-kingdom--jamaica--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 51"
+    },
+    {
+      "dissent": false,
+      "id": "jordan-under-united-kingdom--jordan--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 663"
+    },
+    {
+      "dissent": false,
+      "id": "kenya-under-united-kingdom--kenya--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 501"
+    },
+    {
+      "dissent": false,
+      "id": "laos-under-france--laos--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 812"
+    },
+    {
+      "dissent": false,
+      "id": "lebanon-under-france--lebanon--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 660"
+    },
+    {
+      "dissent": false,
+      "id": "lesotho-under-united-kingdom--lesotho--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 570"
+    },
+    {
+      "dissent": false,
+      "id": "libya-under-italy-sardinia--libya--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 620"
+    },
+    {
+      "dissent": false,
+      "id": "malawi-under-united-kingdom--malawi--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 553"
+    },
+    {
+      "dissent": false,
+      "id": "malaysia-under-united-kingdom--malaysia--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 820"
+    },
+    {
+      "dissent": false,
+      "id": "maldives-under-united-kingdom--maldives--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 781"
+    },
+    {
+      "dissent": false,
+      "id": "mali-under-france--mali--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 432"
+    },
+    {
+      "dissent": false,
+      "id": "malta-under-united-kingdom--malta--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 338"
+    },
+    {
+      "dissent": false,
+      "id": "mauritania-under-france--mauritania--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 435"
+    },
+    {
+      "dissent": false,
+      "id": "mauritius-under-united-kingdom--mauritius--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 590"
+    },
+    {
+      "dissent": false,
+      "id": "mozambique-under-portugal--mozambique--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 541"
+    },
+    {
+      "dissent": false,
+      "id": "myanmar-burma-under-united-kingdom--myanmar-burma--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 775"
+    },
+    {
+      "dissent": false,
+      "id": "namibia-under-south-africa--namibia--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 565"
+    },
+    {
+      "dissent": false,
+      "id": "new-zealand-under-united-kingdom--new-zealand--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 920"
+    },
+    {
+      "dissent": false,
+      "id": "niger-under-france--niger--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 436"
+    },
+    {
+      "dissent": false,
+      "id": "nigeria-under-united-kingdom--nigeria--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 475"
+    },
+    {
+      "dissent": false,
+      "id": "papua-new-guinea-under-australia--papua-new-guinea--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 910"
+    },
+    {
+      "dissent": false,
+      "id": "philippines-under-united-states-of-america--philippines--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 840"
+    },
+    {
+      "dissent": false,
+      "id": "qatar-under-united-kingdom--qatar--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 694"
+    },
+    {
+      "dissent": false,
+      "id": "senegal-under-france--senegal--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 433"
+    },
+    {
+      "dissent": false,
+      "id": "sierra-leone-under-united-kingdom--sierra-leone--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 451"
+    },
+    {
+      "dissent": false,
+      "id": "singapore-under-united-kingdom--singapore--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 830"
+    },
+    {
+      "dissent": false,
+      "id": "solomon-islands-under-united-kingdom--solomon-islands--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 940"
+    },
+    {
+      "dissent": false,
+      "id": "sri-lanka-ceylon-under-united-kingdom--sri-lanka-ceylon--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 780"
+    },
+    {
+      "dissent": false,
+      "id": "sudan-under-united-kingdom--sudan--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 625"
+    },
+    {
+      "dissent": false,
+      "id": "surinam-under-netherlands--surinam--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 115"
+    },
+    {
+      "dissent": false,
+      "id": "swaziland-eswatini-under-united-kingdom--swaziland-eswatini--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 572"
+    },
+    {
+      "dissent": false,
+      "id": "syria-under-france--syria--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 652"
+    },
+    {
+      "dissent": false,
+      "id": "taiwan-under-japan--taiwan--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 713"
+    },
+    {
+      "dissent": false,
+      "id": "tanzania-tanganyika-under-united-kingdom--tanzania-tanganyika--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 510"
+    },
+    {
+      "dissent": false,
+      "id": "togo-under-france--togo--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 461"
+    },
+    {
+      "dissent": false,
+      "id": "trinidad-and-tobago-under-united-kingdom--trinidad-and-tobago--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 52"
+    },
+    {
+      "dissent": false,
+      "id": "tunisia-under-france--tunisia--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 616"
+    },
+    {
+      "dissent": false,
+      "id": "uganda-under-united-kingdom--uganda--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 500"
+    },
+    {
+      "dissent": false,
+      "id": "united-arab-emirates-under-united-kingdom--united-arab-emirates--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 696"
+    },
+    {
+      "dissent": false,
+      "id": "zambia-under-united-kingdom--zambia--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 551"
+    },
+    {
+      "dissent": false,
+      "id": "zanzibar-under-united-kingdom--zanzibar--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 511"
+    },
+    {
+      "dissent": false,
+      "id": "zimbabwe-rhodesia-under-united-kingdom--zimbabwe-rhodesia--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 552"
     }
   ],
   "id": "cshapes-2-0",

@@ -1,0 +1,17 @@
+{
+  "from": 1800,
+  "kind": "relation",
+  "records": {
+    "cuba-under-spain--cuba--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        }
+      ]
+    }
+  },
+  "schema": 1,
+  "to": 1899
+}

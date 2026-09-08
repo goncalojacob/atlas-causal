@@ -28,7 +28,7 @@
       ]
     },
     "fixture-polity-four--fixture-polity-three--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,

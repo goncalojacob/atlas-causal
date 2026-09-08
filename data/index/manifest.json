@@ -1,13 +1,13 @@
 {
   "attributeShards": [
     {
-      "file": "index/attributes-1800-1899-3eabc7618992.json",
+      "file": "index/attributes-1800-1899-1733b3f5f5ac.json",
       "from": 1800,
       "key": "1800-1899",
       "to": 1899
     },
     {
-      "file": "index/attributes-1900-1999-599fd8e2767e.json",
+      "file": "index/attributes-1900-1999-8fe1c307bb27.json",
       "from": 1900,
       "key": "1900-1999",
       "to": 1999
@@ -102,7 +102,7 @@
     "places": 26,
     "presences": 710,
     "regions": 5,
-    "relations": 51,
+    "relations": 128,
     "sources": 34,
     "tenures": 83
   },
@@ -124,12 +124,12 @@
     }
   ],
   "files": {
-    "citers": "index/citers-148217de806c",
-    "core": "index/core-db511a226d38.json",
+    "citers": "index/citers-9a91645d7d01",
+    "core": "index/core-2db3b5d28fc3.json",
     "presences": "index/presences-3f84fbd6eaf7.json",
-    "review": "index/review-d8f7c0ae1089.json",
+    "review": "index/review-b95e2e02d9d8.json",
     "search": "index/search-f068a1a222c2.json",
-    "sources": "index/sources-6ca202841cab.json"
+    "sources": "index/sources-bbd00bd3fd2f.json"
   },
   "historyShards": [
     {
@@ -210,7 +210,14 @@
       "to": null
     },
     {
-      "file": "index/history-relation-1900-1999-eaec7d626336.json",
+      "file": "index/history-relation-1800-1899-8cccf24d2365.json",
+      "from": 1800,
+      "key": "1800-1899",
+      "kind": "relation",
+      "to": 1899
+    },
+    {
+      "file": "index/history-relation-1900-1999-2722b9cb1acf.json",
       "from": 1900,
       "key": "1900-1999",
       "kind": "relation",
