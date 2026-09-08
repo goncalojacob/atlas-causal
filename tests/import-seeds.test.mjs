@@ -10,7 +10,7 @@ import { tmpdir } from 'node:os';
 import path from 'node:path';
 import { createValidator } from '../src/validate/schema.js';
 import { checkImportSeeds, seedsAreEmpty, IMPORT_SCHEMAS, runValidation } from '../tools/validate.mjs';
-import { readImportMaps, readCategories, DEFAULT_IMPORT_KIND } from '../tools/lib/read.mjs';
+import { readImportMaps, readCategories, readRegions, DEFAULT_IMPORT_KIND } from '../tools/lib/read.mjs';
 import { ROOT, schemas } from './helpers.mjs';
 
 const SEEDS = 'v1/import-seeds.json';
@@ -93,6 +93,39 @@ test('a class says which category its events become, or says nothing', async () 
   // And with no vocabulary at all, a category is not checked against one —
   // the same rule the two warnings follow (amendment A8).
   assert.deepEqual(checkImportSeeds('imports/x.json', withClass({ kind: 'event', category: 'not-a-category' })), []);
+});
+
+// The lane table (M44-0): the answer to deviation 447, where an event with no
+// place and no reachable point can be given a lane by a person rather than
+// refused. What a shape cannot say is that the key is an item and that the
+// value is a lane this atlas actually has.
+test('a lane table names items and lanes this atlas has, or is an error', async () => {
+  const v = await validator();
+  const regions = await readRegions(path.join(ROOT, 'data'));
+  const withLanes = (lanes) => seeds({ lanes });
+  const check = (lanes) => checkImportSeeds('imports/x.json', withLanes(lanes), { regions });
+
+  assert.deepEqual(v.validate(SEEDS, withLanes({ Q8683: 'europe' })), []);
+  assert.deepEqual(check({ Q8683: 'europe' }), []);
+  // No table at all is the ordinary case: nothing is placed by hand.
+  assert.deepEqual(check(undefined), []);
+  assert.deepEqual(checkImportSeeds('imports/x.json', seeds(), { regions }), []);
+
+  const outside = check({ Q8683: 'antarctica' });
+  assert.equal(outside.length, 1);
+  assert.match(outside[0].message, /is not a lane in data\/regions\.json/);
+  assert.equal(outside[0].path, '/lanes/Q8683');
+
+  const notAnItem = check({ 'cold-war': 'europe' });
+  assert.equal(notAnItem.length, 1);
+  assert.match(notAnItem[0].message, /is not an item of the source/);
+
+  // The schema holds the spelling of the lane; the file holds the list.
+  assert.equal(v.validate(SEEDS, withLanes({ Q8683: 'Not A Slug' })).length, 1);
+  assert.equal(v.validate(SEEDS, withLanes({ Q8683: 3 })).length, 1);
+  // And with no vocabulary, a lane is not checked against one — the rule the
+  // class table's category already follows (amendment A8).
+  assert.deepEqual(checkImportSeeds('imports/x.json', withLanes({ Q8683: 'antarctica' })), []);
 });
 
 test('the state schema holds one cursor per mode', async () => {

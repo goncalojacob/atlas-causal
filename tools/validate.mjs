@@ -84,10 +84,12 @@ export function checkImportMap(file, map) {
 // `categories` is data/categories.json, or null where the dataset has none —
 // in which case a class's `category` is not checked against anything, for the
 // reason the two warnings are not raised without a vocabulary (A8).
-export function checkImportSeeds(file, seeds, { categories = null } = {}) {
+// `regions` is data/regions.json and answers for the lane table the same way.
+export function checkImportSeeds(file, seeds, { categories = null, regions = null } = {}) {
   const problems = [];
   const say = (path, message) => problems.push({ path, message, file });
   const allowed = categories === null ? null : new Set(categories.map((c) => c?.id).filter(Boolean));
+  const lanes = regions === null ? null : new Set(regions.map((r) => r?.id).filter(Boolean));
   const seen = new Set();
   (seeds?.items ?? []).forEach((qid, i) => {
     if (seen.has(qid)) say(`/items/${i}`, `${qid} is listed twice`);
@@ -108,6 +110,14 @@ export function checkImportSeeds(file, seeds, { categories = null } = {}) {
       if (entry?.kind !== 'event') say(`/classes/${qid}`, `category means nothing on a ${entry?.kind} class`);
       else if (allowed && !allowed.has(entry.category)) say(`/classes/${qid}`, `"${entry.category}" is not a category in data/categories.json`);
     }
+  }
+  // The lane table (M44-0). The shape cannot say that a key is an item of the
+  // source or that a value is a lane this atlas has, and a lane spelled wrong
+  // here would be written onto every record the table places — onto the
+  // records, that is, that have nothing else to be placed by.
+  for (const [qid, region] of Object.entries(seeds?.lanes ?? {})) {
+    if (!/^Q[1-9][0-9]*$/.test(qid)) say(`/lanes/${qid}`, `"${qid}" is not an item of the source`);
+    if (lanes && !lanes.has(region)) say(`/lanes/${qid}`, `"${region}" is not a lane in data/regions.json`);
   }
   const names = new Set();
   (seeds?.queries ?? []).forEach((query, i) => {
@@ -250,7 +260,7 @@ export async function runValidation(dataDir = DEFAULT_DATA, { index = false, sit
       for (const e of validator.validate(schema, map)) {
         errors.push({ rule: kind, id: null, file, path: e.path, message: e.message, alternatives: e.alternatives });
       }
-      const checks = kind === 'import-seeds' ? checkImportSeeds(file, map, { categories }) : kind === DEFAULT_IMPORT_KIND ? checkImportMap(file, map) : [];
+      const checks = kind === 'import-seeds' ? checkImportSeeds(file, map, { categories, regions }) : kind === DEFAULT_IMPORT_KIND ? checkImportMap(file, map) : [];
       for (const p of checks) {
         errors.push({ rule: kind, id: null, file, path: p.path, message: p.message });
       }

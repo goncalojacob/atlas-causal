@@ -27,6 +27,15 @@
         "maxLength": 20
       }
     },
+    "lanes": {
+      "description": "Which timeline lane an item's event takes when nothing the import can reach gives it one, keyed by the source's identifier for the item. An event that names no place record of this atlas takes its lane from a point — its own, or one of the country or location it names — and a war fought across four countries has no point at all, so twenty-nine of them were refused rather than given a lane by guess (STATUS.md, deviation 447). This table is the answer: like the class table it is data and not code, because which continent a stateless thing belongs to is an editorial decision somebody should have to argue for in a pull request, and unlike a coordinate it is nobody's measurement. Each value is an id of data/regions.json, which tools/validate.mjs checks; each key is an item of the source, which it checks too, the shape being unable to. It is read only where an item has no place record and no point that reaches a lane: a lane a coordinate gives is never overridden by one written here.",
+      "type": "object",
+      "additionalProperties": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+        "maxLength": 120
+      }
+    },
     "queries": {
       "description": "Searches that find items nobody has listed by hand. Run by --candidates, which writes a list for a person to tick and nothing under data/: a query is a way of proposing records, never of creating them.",
       "type": "array",
