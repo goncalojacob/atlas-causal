@@ -508,6 +508,49 @@ node tools/import/cshapes.mjs --source cshapes_2_gw.topojson --report
 node tools/build-index.mjs
 ```
 
+## Correcting an id
+
+An id is a name and names are got wrong. A record is **never** renamed by
+hand: an id stands in the file name, in the record, in every reference to it,
+in the derived id of every link that touches it, and in the shared links and
+narrative steps of people who are not reading this. One tool does the lot:
+
+```bash
+node tools/migrate/ids.mjs event/<wrong-id> <right-id> --dry-run
+node tools/migrate/ids.mjs event/<wrong-id> <right-id>
+```
+
+`--dry-run` prints exactly what the run would do and writes nothing. The run
+itself renames the file, sets the new id, puts the old one in `aliases` —
+which is the whole of "the old link still works": everything in the atlas
+resolves a former id to the record that stands for it now — rewrites every
+reference in every record, rebuilds the index and runs the validator. It
+changes not one word of what any record *says*.
+
+An edge's id and a relation's are `from--to--type`, so renaming an event
+renames every link at it and renaming an actor renames every relation at
+either end. Each of those gets **its** former id as an alias too, which is why
+a `?chain=` somebody was sent last year still walks after a correction.
+
+Naming a link directly is how a **type** is corrected —
+`node tools/migrate/ids.mjs relation/a--b--allied-with a--b--member-of` — and
+the ends may not be moved that way: a link between two other records is a
+different claim, not a corrected name.
+
+It refuses, and says why, before writing anything:
+
+- the new id is not a slug (or, for a link, not `from--to--type` in that
+  kind's own vocabulary);
+- the new id is already some record's id, or already somebody's former id —
+  both must stay unique across the whole atlas;
+- the old id names nothing;
+- the record is a tombstone — rename whatever superseded it, not the marker
+  left where it stood;
+- **an import created the record.** A territory is corrected in
+  `data/imports/cshapes-actors.json` and by a re-run, as above, and the same
+  goes for anything the Wikidata import wrote: the next run derives its ids
+  from those files again and would write the new id beside the old one.
+
 ## Proposing what the Wikidata import should draw from
 
 The atlas can take identifiers and skeleton records from

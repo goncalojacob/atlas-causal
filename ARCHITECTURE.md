@@ -954,6 +954,7 @@ atlas-causal/
 │   ├── bundle-to-files.mjs       ● fenced JSON in an issue body → data/<kind>/<id>.json; slug-checked before any path
 │   ├── new-record.mjs            ● scaffold a record locally, of any of the six written kinds; --new-place writes the event and its place at once
 │   ├── migrate/apply.mjs         ● the chain of src/validate/migrate.js applied to the tree; idempotent, validated before writing, --to <version>
+│   ├── migrate/ids.mjs           ● correcting an id: the record renamed, the old id into `aliases`, every reference rewritten, the derived id of every link that touches it carried with it, the index rebuilt and the validator run; refuses a taken id, a tombstone and a record an import created
 │   ├── migrate-places.mjs        ● one-time: every event's `where` → a place record it points at; kept as documentation
 │   ├── seed-review-flags.mjs     ● one-time: STATUS.md's "Dates to verify" onto the records as review flags; kept as documentation
 │   ├── serve.mjs                 ● local only, never deployed: the repository + PUT /__records/<kind>/<id> on 127.0.0.1
@@ -1017,6 +1018,17 @@ later as `i18n` overlays; the base never changes.
   written against a record's former id all name the record that stands for it
   now. `aliases` holds former ids only; alternative names for search are a
   separate field, later.
+  **Correcting one is `tools/migrate/ids.mjs` and never a hand edit** (I7,
+  plan decision 3's other half): it renames the file, puts the old id in
+  `aliases`, rewrites every reference through the table in
+  `src/references.js`, carries the derived id of every edge and relation that
+  touches the record — each with *its* own former id as an alias, which is
+  what keeps a `?chain=` shared before the correction walking — rebuilds the
+  index and validates. It changes nothing about what any record says, and it
+  refuses a record an import created, whose id comes from a file under
+  `data/imports/` and is re-derived on the next run. `tools/lib/history.mjs`
+  reads a renamed record's former paths too, so the versions it had under its
+  old name are still its own.
 - `status`: `active | merged | retracted`. A `merged` or `retracted` record
   must have no active edges and, if merged, a `supersededBy` that resolves.
   Nothing is ever deleted; a wrong record becomes a tombstone that still
@@ -2482,7 +2494,7 @@ no check at all rather than an empty closed set: a fork with no
 | Checking a citation ● | built in M15: `review.citations`, the dashboard's boxes, the queue's count, the validator's line | keyed by the source id rather than by position, so editing the citation list does not move anybody's ticks; a flag and not a gate, so making it one later is one line in Sign |
 | Level of detail in the graph ● | built in M25: `alone` and `mergeEdges` in `src/cluster.js`, `stackLayout` in `src/graph-view/layout.js`, stacks and merged lines in `graph-view.js`, a `graph` case in `panel/cluster.js` | the threshold and the zoom limit are one constant each and live together, so a denser atlas is one number; the never-stacked set is one `Set` built in `render`, so a new thing the reader works with joins it in one line |
 | Editorial emphasis on the map | a `prominence` field on the event record; `cluster.js` reads `prominence ?? weight` | ○ reserved by this line: derived `weight` in the index is the only measure now, and it is mechanical. `sitelinks` is **not** it: how many encyclopedias wrote about something is not this atlas's judgement of it |
-| A ninth record kind ● | since H2: **add to the registry** (`src/kinds.js`), **add the schema file** (`schema/v1/<kind>.json` and its line in `validate/schemas.js`), **add the enum** (`kind` in `schema/common/provenance.json`), then one projection in `buildTopology` and one card module in `panel/` | the entry carries the directory, the schema file, the licences, identity and body, the citation, actor and step lists, the form fields' names, the URL parameter and the labels, and the lists the rest of the atlas used to keep are derived from it; `tests/registry.test.mjs` fails on a registry that has drifted from the schemas, which are the one copy that cannot be removed |
+| A ninth record kind ● | since H2: **add to the registry** (`src/kinds.js`), **add the schema file** (`schema/v1/<kind>.json` and its line in `validate/schemas.js`), **add the enum** (`kind` in `schema/common/provenance.json`), **add its row of reference fields** (`src/references.js`, so a rename reaches them), then one projection in `buildTopology` and one card module in `panel/` | the entry carries the directory, the schema file, the licences, identity and body, the citation, actor and step lists, the form fields' names, the URL parameter and the labels, and the lists the rest of the atlas used to keep are derived from it; `tests/registry.test.mjs` fails on a registry that has drifted from the schemas, which are the one copy that cannot be removed |
 | A sixth edge type or a seventh relation type ● | since H2: **add to the registry** (`src/vocab.js`, with its label and — for a relation — both directions, its endpoints and whether it is acyclic), **add the enum** (`schema/v1/edge.json` or `relation.json`, the `type` enum *and* the `id` pattern, plus `narrative.json`'s step pattern for an edge type), one `.type-*` rule in `style.css`, one line in `about.html` | the two id patterns, the id `edgeId` synthesises for a spine tuple, the graph's key, `graph.js`'s ordering, the panel cards' labels and rule 19's endpoint table are all built from the list, so the type arrives with them; the consistency test compares the list against the schemas' enums and against the third part of each id pattern |
 | A fifth grouping or a seventh lens kind ● | since H2: `GROUPS` or `FOCUS_KINDS` in `src/vocab.js`, one case in `lanesFor` or in `eventsOfFocus`, one label in `lensLabel` | both focus patterns are built from `FOCUS_KINDS` and `state.js` imports them, so the URL grammar follows the vocabulary rather than a second copy of it; the cards' controls take a kind and an id and need no case at all |
 | A fourth view of the same state | one module, `VIEWS` in `src/vocab.js`, `main.js`'s switch, `index.html`, `style.css`, a `panel/cluster.js` case | since H2 it reads `workingSet(atlas, state)` from `src/emphasis.js` for what the reader is holding, rather than assembling that set a fourth time |
