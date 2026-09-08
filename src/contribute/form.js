@@ -20,6 +20,7 @@ import { reorderControls, refreshAll } from './reorder.js';
 import { submitBundle } from './submit.js';
 import { previewHtml } from '../entry/preview.js';
 import { byKind, CONTRIBUTED_KINDS } from '../kinds.js';
+import { LOADING_CORPUS } from '../attributes.js';
 
 // What each kind is called and the sentence under it, and the field whose
 // text suggests an id: the registry's, so a kind arrives with its name, its
@@ -72,14 +73,26 @@ function messageOf(error, view) {
 
 export function createForm(container, {
   topology, schemas, template, fixtures = false, prepared = null, searchEntries = null, initial = null,
+  universe = null, pickers = null,
 } = {}) {
   // The indexed universe and the compiled schema set, once for the life of
   // the form rather than once per keystroke (health review B, finding 27).
-  const reuse = prepared ?? preparedFor(topology, schemas);
+  const own = prepared ?? preparedFor(topology, schemas);
+  // Since I4b the page may not have the whole corpus yet: `contribute.html`
+  // draws out of the core and fetches every attribute shard behind it, and
+  // `universe()` answers `null` until the last one is in (i4-brief, A2). It is
+  // asked on every refresh rather than read once, so a form drawn before the
+  // shards land starts reporting the moment they have. A page that hands over
+  // no such function has the whole corpus by construction, which is what every
+  // caller but that one is.
+  const universeOf = universe ?? (() => own);
   // What every picker on the page searches, built once for the same reason.
   // `searchEntries` is the shard the build folded; without one the index
-  // folds the topology itself, which is what the fixtures do.
-  const pickers = pickerIndex({ topology, entries: searchEntries });
+  // folds the topology itself, which is what the fixtures do. A page that
+  // does not have the shard when it draws builds the index itself and hands
+  // it over here, so that it can put the real entries in when they land
+  // (picker.js, `replace`; i4-brief, A2).
+  const index = pickers ?? pickerIndex({ topology, entries: searchEntries });
   const entries = [];
   const state = { author: '' };
 
@@ -165,10 +178,16 @@ export function createForm(container, {
     return rows;
   }
 
+  // Every picker on the page, so that they can all be repainted when what they
+  // search changes underneath them. A row that has been dropped stays in the
+  // list; repainting a detached control is a no-op, and this runs once a page
+  // load, when the corpus lands (i4-brief, A2).
+  const drawn = [];
+
   function pickerFor(name, { value, label, id: domId, onChange }) {
-    return createPicker({
+    const picker = createPicker({
       name,
-      index: pickers,
+      index,
       value,
       label,
       id: domId,
@@ -176,6 +195,8 @@ export function createForm(container, {
       local: () => bundleRows(name),
       onChange,
     });
+    drawn.push(picker);
+    return picker;
   }
 
   // --- entries -----------------------------------------------------------
@@ -516,7 +537,7 @@ export function createForm(container, {
       if (other === entry || other.kind !== entry.kind) continue;
       if ((record.id ?? '').trim()) mine.push(comparableOf(record));
     }
-    return [...(reuse.comparables?.get(entry.kind) ?? []), ...mine];
+    return [...(universeOf()?.comparables?.get(entry.kind) ?? []), ...mine];
   }
 
   function paintSimilar(entry, built) {
@@ -652,8 +673,31 @@ export function createForm(container, {
     return ready;
   }
 
+  // What the form shows while the last attribute shards are in flight: the
+  // bundle as it will be filed, and one line where the verdict goes. Nothing
+  // is claimed about it — not the errors, not the near-matches, not the
+  // summary — and the submit control stays shut.
+  function waiting(bundle) {
+    reportEl.textContent = '';
+    reportEl.appendChild(html('p', { class: 'muted' }, LOADING_CORPUS));
+    summaryEl = null;
+    lastCount = 0;
+    lastResult = { errors: [], warnings: [], ok: false };
+    previewEl.textContent = JSON.stringify(bundle, null, 2);
+    for (const entry of entries) drawPreviews(entry);
+    submitButton.disabled = true;
+    submitNote.textContent = '';
+    return { bundle, result: lastResult, ready: false };
+  }
+
   function refresh({ now = false } = {}) {
     const bundle = currentBundle();
+    const reuse = universeOf();
+    // The corpus is still arriving. `checkRules` would warn about things the
+    // CLI does not and `findSimilar` would file a duplicate as new, so neither
+    // runs: the report says what it is waiting for, and the bundle cannot be
+    // filed on a verdict nobody gave (i4-brief, A2).
+    if (reuse === null) return waiting(bundle);
     const result = validateBundle(bundle, topology, schemas, reuse);
     const byId = new Map();
     bundle.records.forEach((record, i) => {
@@ -748,5 +792,14 @@ export function createForm(container, {
   refresh({ now: true });
   if (fixtures) root.classList.add('fixtures');
 
-  return { root, entries, addEntry, refresh, currentBundle };
+  // Every picker's label again, on an index that has changed underneath it.
+  // A form opened from "Edit this record" writes its references' labels out of
+  // whatever the index held when it was drawn, and on `contribute.html` that
+  // is before the search shard and the attribute shards have landed: `set`
+  // repaints one from what the index says now (i4-brief, A2).
+  function repaintPickers() {
+    for (const picker of drawn) picker.set(picker.value());
+  }
+
+  return { root, entries, addEntry, refresh, currentBundle, repaintPickers };
 }

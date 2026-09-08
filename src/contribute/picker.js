@@ -57,13 +57,14 @@ export function pickerIndex({ topology = {}, entries = null } = {}) {
   const events = asArray(topology.events);
   const edges = asArray(topology.edges);
 
-  const shard = entries ?? buildSearchIndex({
+  const foldTopology = () => buildSearchIndex({
     events,
     actors: asArray(topology.actors),
     places: asArray(topology.places),
     sources: asArray(topology.sources),
     offices: asArray(topology.offices),
   });
+  let shard = entries ?? foldTopology();
 
   // One pass, the first time anything asks: the entries by kind, the events
   // by id, and the places by id, so a row's place has a name on it.
@@ -195,6 +196,27 @@ export function pickerIndex({ topology = {}, entries = null } = {}) {
         ids.set(name, byId);
       }
       return byId.get(id) ?? null;
+    },
+    // The same index over entries the page did not have when it was built.
+    // Since I4b `contribute.html` draws before the search shard and the
+    // attribute shards have landed (i4-brief, A2), and every picker on the
+    // page holds *this* object, so replacing what it searches reaches all of
+    // them at once. Every memo above goes with it: the labels the shards
+    // filled in are in most of them, and a link's label is two event titles.
+    //
+    // `null` folds the topology again, which is what a page whose search
+    // shard would not load falls back to and what the fixtures do — and it is
+    // a different answer after the shards have landed than it was before them,
+    // which is the whole reason this can be called twice.
+    replace(next) {
+      shard = next ?? foldTopology();
+      byKind = null;
+      eventsById = null;
+      placeNames = null;
+      degrees = null;
+      edgeEntries = null;
+      lists.clear();
+      ids.clear();
     },
   };
 }

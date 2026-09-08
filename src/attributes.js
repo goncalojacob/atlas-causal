@@ -128,3 +128,15 @@ export function labelOf(atlas, record) {
 // still loading — the same thing the source card says about its citers — and
 // never a fallback that could be read as the record's own name.
 export const LOADING_LABEL = 'still loading';
+
+// And what the two writer pages say in place of a verdict. `contribute.html`
+// and `review.html` are whole-universe readers — rule 21 asks whether a
+// `wikidata` id is unique across the atlas, `findSimilar` reads every title
+// and every alias — so they draw out of the core and then fetch **every**
+// attribute shard, and neither `checkRules` nor `findSimilar` runs until the
+// last one is in (i4-brief, A2; index2 review, finding 2).
+//
+// A verdict on half the corpus is worse than none: it would file a duplicate
+// as new and warn about things the CLI does not. So the form and the editor
+// print this beside the rule output until the corpus is whole.
+export const LOADING_CORPUS = 'still loading the corpus';

@@ -51,7 +51,10 @@ const ORDER = `const rows = [...document.querySelectorAll(".field.steps .step-ro
 
 async function withForm(fn) {
   await withBrowser(async (page, url) => {
-    await open(page, url('contribute.html?fixtures=1'), 'return document.querySelectorAll(".add-row button").length > 0;');
+    // The verdict on the page, not merely the controls: the form draws out of
+    // the core and the pickers are given the search shard's entries when it
+    // lands behind it (i4-brief, A2).
+    await open(page, url('contribute.html?fixtures=1'), 'return Boolean(document.querySelector(".contrib .report .summary"));');
     assert.equal(await page.eval(THREE_STEPS), 3);
     await fn(page);
   });

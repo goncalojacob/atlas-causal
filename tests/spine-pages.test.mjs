@@ -42,18 +42,23 @@ const ATLAS_READY = 'return document.querySelectorAll(".map .mark, .timeline .ba
 // it walks; the list is now written into the file by the build, and the
 // script leaves it alone. The cards are on screen before the first request.
 //
-// **`core` since I4a**, for the two pages that have moved: the whole-corpus
-// file they parsed is now the core, which is the graph and what a mark, a bar
-// and a lane need, with the titles and the roles arriving a century at a time
-// behind it (docs/index2-plan.md, D4). `contribute.html` and `review.html` are
-// I4b's and still read the spine; when they move, `spine` leaves this table
-// altogether and so does the file.
+// **`core` since I4a**, for the pages that have moved: the whole-corpus file
+// they parsed is now the core, which is the graph and what a mark, a bar and a
+// lane need, with the titles and the roles arriving a century at a time behind
+// it (docs/index2-plan.md, D4). `review.html` and `narratives.html` are the
+// rest of I4b's; when they move, `spine` leaves this table altogether and so
+// does the file.
+//
+// `contribute.html` is a whole-universe reader and fetches every attribute
+// shard behind its draw (A2), which is a different promise from this one and
+// is asserted on its own below. What this row says is what it says of every
+// other page: the core once, and never the file the core replaced.
 const PAGES = [
   ['index.html', ATLAS_READY, 'core', 1],
   ['entry.html?id=carnation-revolution-1974', 'return document.querySelectorAll(".entry-body").length > 0;', 'core', 1],
   ['narratives.html', 'return document.querySelectorAll(".narrative-card").length > 0;', 'spine', 0],
   ['sources.html', 'return document.querySelectorAll(".bib-entry").length > 0;', 'spine', 0],
-  ['contribute.html', 'return document.querySelectorAll(".add-row button").length > 0;', 'spine', 1],
+  ['contribute.html', 'return document.querySelectorAll(".add-row button").length > 0;', 'core', 1],
   ['review.html', 'return document.querySelectorAll(".queue-list .queue-item, .queue-list button").length > 0;', 'spine', 1],
 ];
 
@@ -259,14 +264,18 @@ test('a narrow window leaves stubs on the timeline and nothing on the map', { sk
   });
 });
 
-// The contribution form, on the spine and on the repository's own records:
-// the pickers are filled from it, the duplicate search finds a title that is
-// already there, and `checkRules` runs against the whole universe. All three
-// are what the form would lose first if a field had been dropped from the
-// projection.
-test('the form fills its pickers, finds a duplicate and validates, off the spine', { skip }, async () => {
+// The contribution form, on the core plus every attribute shard and on the
+// repository's own records: the pickers are filled from it, the duplicate
+// search finds a title that is already there, and `checkRules` runs against the
+// whole universe. All three are what the form would lose first if a field had
+// been dropped from the projection — or, since I4b, if a shard had been left
+// out of the corpus it holds (A2).
+//
+// The verdict on the page is what says the corpus is in: until then the report
+// says it is still loading and nothing has been judged (form.js).
+test('the form fills its pickers, finds a duplicate and validates, off the core and every shard', { skip }, async () => {
   await withBrowser(async (page, url) => {
-    await open(page, url('contribute.html'), 'return document.querySelectorAll(".add-row button").length > 0;');
+    await open(page, url('contribute.html'), 'return Boolean(document.querySelector(".contrib .report .summary"));');
     // The place picker, typed into: the rows come off the search shard and
     // what stands beside each one — the kind, and how many events happened
     // there — comes off the spine. The `<select>` of every place this
@@ -340,5 +349,34 @@ test('a record is fetched with the day it was last revised', { skip }, async () 
     for (const name of asked) {
       assert.match(name, /\.json\?v=\d{4}-\d{2}-\d{2}$/, name);
     }
+  });
+});
+
+
+// A2: `contribute.html` is a whole-universe reader — rule 21 asks whether a
+// `wikidata` id is unique across the atlas, `findSimilar` reads every title —
+// so it holds the whole corpus and not a window of it. What it may not do is
+// wait for it: the form is on the page first, and the shards and the search
+// shard arrive behind it.
+//
+// The 2.0 MB the brief holds this page to is the second half of the same
+// promise: at 10^4 the search shard alone is 2.75 MB, so a page that awaited it
+// could not meet the line however small the core became.
+test('contribute.html draws on the core alone and then fetches every attribute shard', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await open(page, url('contribute.html'), 'return document.querySelectorAll(".add-row button").length > 0;');
+    const drawn = await page.eval(REQUESTS);
+    const index = (part) => drawn.filter((name) => name.includes(`/index/${part}`)).length;
+    assert.equal(index('core-'), 1, 'the core, once');
+    assert.equal(index('spine-'), 0, 'and never the file it replaced');
+
+    const every = await shardCount();
+    await waitFor(page, `return performance.getEntriesByType("resource").filter((e) => e.name.includes("/index/attributes-")).length >= ${every};`, 'every attribute shard');
+    const after = await page.eval(SHARDS);
+    assert.equal(new Set(after).size, every, `${new Set(after).size} of ${every} shards, once each`);
+    assert.equal(after.length, every, `a shard asked for twice: ${after.join(' · ')}`);
+    // And the search shard, which the pickers read and which the page does not
+    // wait for either.
+    await waitFor(page, 'return performance.getEntriesByType("resource").some((e) => e.name.includes("/index/search-"));', 'the search shard');
   });
 });

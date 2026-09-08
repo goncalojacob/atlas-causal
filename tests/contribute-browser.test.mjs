@@ -15,7 +15,13 @@ import path from 'node:path';
 import { withBrowser, open, waitFor, watchErrors, errorsOn, skip } from './browser.mjs';
 import { ROOT } from './helpers.mjs';
 
-const FORM_READY = 'return document.querySelectorAll(".add-row button").length > 0;';
+// The form is drawn out of the core and the report is written when the last
+// attribute shard and the search shard have landed (i4-brief, A2), so "ready"
+// is the verdict being on the page and not merely the controls: before it, the
+// report says it is still loading the corpus and a reference's label is the id
+// the picker index could not name yet.
+const FORM_READY = 'return Boolean(document.querySelector(".contrib .report .summary"));'
+const FORM_DRAWN = 'return document.querySelectorAll(".add-row button").length > 0;';
 
 test('"Edit this record" on a card opens the form on that record', { skip }, async () => {
   await withBrowser(async (page, url) => {
@@ -319,7 +325,7 @@ test('?open= opens the record the pull request names, not the first in the queue
 test('the form builds a tenure and its office picker answers, and review.html opens an office', { skip }, async () => {
   await withBrowser(async (page, url) => {
     await watchErrors(page);
-    await open(page, url('contribute.html'), 'return document.querySelectorAll(".add-row button").length > 0;');
+    await open(page, url('contribute.html'), FORM_READY);
     const buttons = await page.eval('return [...document.querySelectorAll(".add-row button")].map((b) => b.textContent.trim());');
     assert.ok(buttons.includes('Add office'), buttons.join(' · '));
     assert.ok(buttons.includes('Add tenure'), buttons.join(' · '));
@@ -439,5 +445,49 @@ test('the form writes an event\'s parent, reach, category and an actor\'s note',
     assert.deepEqual(event.actors, []);
     assert.equal(Object.hasOwn(event, 'parent'), false, 'nothing chosen writes no key');
     assert.deepEqual(await errorsOn(page), []);
+  });
+});
+
+// I4b, A2: the page draws out of the core and then fetches **every** attribute
+// shard, because it is a whole-universe reader — rule 21 asks whether a
+// `wikidata` id is unique across the atlas and `findSimilar` reads every title
+// there is. What pins that the shards really were folded in is a duplicate
+// found by *title*: a title is in no core row, so a form that answered from the
+// core alone would file "Carnation Revolution" as new. The label beside the hit
+// is the same evidence from the other side — it is the record's own title, and
+// the core knows the record only by its id.
+//
+// And before the corpus is in the form says so rather than passing judgement on
+// half of it. That is asserted without racing the network: the report at the
+// moment the controls are drawn either carries the verdict already or says it
+// is still loading, and never a verdict on half a corpus.
+test('the form finds Carnation Revolution as a duplicate, and says so only once the corpus is in', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await watchErrors(page);
+    await open(page, url('contribute.html'), FORM_DRAWN);
+    const early = await page.eval(`return {
+      verdict: Boolean(document.querySelector('.report .summary')),
+      report: (document.querySelector('.report') || {}).textContent || '',
+      submit: (document.querySelector('button.submit') || {}).disabled,
+    };`);
+    if (!early.verdict) {
+      assert.match(early.report, /still loading the corpus/);
+      assert.equal(early.submit, true, 'and nothing can be filed on a verdict nobody gave');
+    }
+
+    await open(page, url('contribute.html'), FORM_READY);
+    await page.eval(`const type = (selector, value) => {
+        const el = document.querySelector(selector);
+        el.value = value;
+        el.dispatchEvent(new Event('input', { bubbles: true }));
+      };
+      type('section.entry.event .field-title input', 'Carnation Revolution');
+      return true;`);
+    await waitFor(page, 'return document.querySelectorAll("section.entry.event .similar li").length > 0;', 'the near-match');
+    const rows = await page.eval('return [...document.querySelectorAll("section.entry.event .similar li")].map((li) => li.textContent.replace(/\\s+/g, " ").trim());');
+    assert.ok(rows.some((t) => t.includes('(carnation-revolution-1974)')), rows.join(' · '));
+    // The label is the record's title, which lives only in an attribute shard.
+    assert.ok(rows.some((t) => t.startsWith('25 April ')), rows.join(' · '));
+    assert.deepEqual(await errorsOn(page), [], 'the console is clean');
   });
 });
