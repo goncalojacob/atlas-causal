@@ -13,6 +13,8 @@ import path from 'node:path';
 import { readFile } from 'node:fs/promises';
 import {
   PERIOD, periodOf, periodOfEdge, shardName, explanationShards,
+  attributePeriod, attributeShardKey, attributeShardName, historyShardName,
+  PLACE_SHARD, SOURCE_SHARD,
 } from '../src/explanations.js';
 import { createAtlasFromCore } from '../src/data.js';
 import { FIXTURE_DATA, citersOnDisk } from './helpers.mjs';
@@ -53,6 +55,26 @@ test('an edge is filed under the period its cause begins in', () => {
   assert.deepEqual(periodOfEdge(edge('e2', 'c', 'b'), events), { from: 1400, to: 1499 });
   assert.equal(periodOfEdge(edge('e3', 'missing', 'b'), events), null);
   assert.equal(periodOfEdge(edge('e4', 'bad', 'b'), events), null);
+});
+
+// The one filing table, which I3's attribute shards and I5's history shards
+// both read (index2-plan, A8). A source is the kind only the histories ask
+// about: it is in no attribute shard, because it is no part of the spine.
+test('a source is filed by its kind, like a place, and neither is in the null shard', () => {
+  assert.equal(attributePeriod('place', { id: 'p' }, events), PLACE_SHARD);
+  assert.equal(attributePeriod('source', { id: 's' }, events), SOURCE_SHARD);
+  assert.equal(attributeShardKey(attributePeriod('source', { id: 's' }, events)), 'source');
+  // Which is the point: a book has no year, and without a kind of its own
+  // every source would land in the shard of every dateless record there is.
+  assert.equal(attributeShardKey(attributePeriod('office', { id: 'o', when: null }, events)), 'null');
+  assert.equal(attributeShardKey(attributePeriod('event', { id: 'e', when: { start: 1974, end: 1974 } }, events)), '1900-1999');
+});
+
+test('a shard says its kind and its key in its own name', () => {
+  assert.equal(attributeShardName('1900-1999', 'abcdef012345'), 'attributes-1900-1999-abcdef012345.json');
+  assert.equal(historyShardName('event', '1900-1999', 'abcdef012345'), 'history-event-1900-1999-abcdef012345.json');
+  assert.equal(historyShardName('edge', '-100--1', 'abcdef012345'), 'history-edge--100--1-abcdef012345.json');
+  assert.equal(historyShardName('source', 'source', 'abcdef012345'), 'history-source-source-abcdef012345.json');
 });
 
 test('the shards are by period, in year order, and hold only live arguments', () => {

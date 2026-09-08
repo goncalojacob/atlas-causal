@@ -78,8 +78,16 @@ export function shardName(period, hash) {
 // `null` shard, which is fetched with the first century.
 export const PLACE_SHARD = 'place';
 
+// A source has no year either — a book is not an event — and it is the one kind
+// this table answers for that is in no attribute shard at all, being no part of
+// the spine. I5's histories are what ask: 200 sources at 10^4 are one file, not
+// two hundred of them in the `null` shard beside every dateless record of every
+// other kind (index2-plan, A8; index2 review, finding 10).
+export const SOURCE_SHARD = 'source';
+
 export function attributePeriod(kind, record, events) {
   if (kind === 'place') return PLACE_SHARD;
+  if (kind === 'source') return SOURCE_SHARD;
   if (kind === 'edge') return periodOfEdge(record, events);
   if (kind === 'narrative') {
     const from = record?.window?.from;
@@ -95,14 +103,24 @@ export function attributePeriod(kind, record, events) {
 
 // What that answer is called, in the file's name and in the manifest: the
 // middle of `attributes-<key>-<hash>.json`. A string, so that "the shard this
-// record is in" is one comparison whichever of the three answers it was.
+// record is in" is one comparison whichever of the answers it was — the two
+// that are a kind rather than a period included.
 export function attributeShardKey(period) {
-  if (period === PLACE_SHARD) return PLACE_SHARD;
+  if (typeof period === 'string') return period;
   return period === null || period === undefined ? 'null' : `${period.from}-${period.to}`;
 }
 
 export function attributeShardName(key, hash) {
   return `attributes-${key}-${hash}.json`;
+}
+
+// `history-<kind>-<key>-<hash>.json` (I5). The kind is in the name as well as
+// the key because a history shard holds one kind and one period, where an
+// attribute shard holds one period of every kind: a reviewer opens a record,
+// not a century. So `history-place-place-<hash>.json` repeats itself, which is
+// the price of one naming rule rather than one per kind.
+export function historyShardName(kind, key, hash) {
+  return `history-${kind}-${key}-${hash}.json`;
 }
 
 // Every shard, in year order: the edges grouped by period, each group's
