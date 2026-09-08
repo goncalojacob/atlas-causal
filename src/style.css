@@ -662,6 +662,22 @@ body:not(.phone) .layout.panel-empty > .split-panel { display: none; }
 .map .mark.in-horizon.far { opacity: 0.45; }
 .map .mark.in-horizon.on-path, .map .mark.in-horizon.selected { opacity: 1; }
 
+/* An event that has parts: a second, thinner outline outside its mark, saying
+   there is more inside. It carries the mark's own emphasis classes, so it
+   reddens with the walked chain and dims and fades exactly as the mark does;
+   what it does not carry is `mark`, since it is an outline and not a record.
+   Its width is set per zoom by the events layer, so nothing is declared here.
+   Not a control: it takes no click, and the mark under it takes them all. */
+.map .ring { fill: none; stroke: var(--cobalt); pointer-events: none; }
+.map .ring.on-path, .map .ring.selected { stroke: var(--madder); }
+.map .ring.faded { opacity: 0.3; }
+.map .ring.faded.selected, .map .ring.faded.on-path { opacity: 0.55; }
+.map .ring.lens-near { opacity: 0.22; }
+.map .ring.lens-near.selected, .map .ring.lens-near.on-path { opacity: 0.6; }
+.map .ring.in-horizon.mid { opacity: 0.72; }
+.map .ring.in-horizon.far { opacity: 0.45; }
+.map .ring.in-horizon.on-path, .map .ring.in-horizon.selected { opacity: 1; }
+
 /* --- graph view ------------------------------------------------------- */
 
 /* The five edge types are told apart by the pattern of the line and its

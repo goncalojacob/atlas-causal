@@ -516,3 +516,122 @@ test('the coastlines have no switch and are always drawn', { skip }, async () =>
     assert.deepEqual(after.checked, [false, true]);
   });
 });
+
+// --- a parent looks like one -----------------------------------------------
+//
+// M30c, §1: an event with parts is drawn with a second, thinner outline
+// outside its mark, at every zoom and whatever the reader is doing. The one
+// parent either corpus carries is `fixture-event-f`, and it has no place — it
+// is the long process the map deliberately draws no dot for — so the drawing
+// itself is exercised on a layer built here, over two synthetic events, in the
+// real browser and through the real module. What the fixtures can say is the
+// other half, and they say it on the page below: no leaf is ringed.
+const SYNTHETIC_RING = `return (async () => {
+  const [{ createEventsLayer }, { createProjection }] = await Promise.all([
+    import('/src/map/layers/events.js'),
+    import('/src/map/projection.js'),
+  ]);
+  const NS = 'http://www.w3.org/2000/svg';
+  const root = document.createElementNS(NS, 'svg');
+  root.setAttribute('class', 'map');
+  const group = document.createElementNS(NS, 'g');
+  root.appendChild(group);
+  document.body.appendChild(root);
+  const where = { parent: { lon: -9, lat: 38 }, leaf: { lon: 40, lat: -10 }, walked: { lon: 100, lat: 20 } };
+  const events = ['parent', 'leaf', 'walked'].map((id) => ({
+    id, title: id, status: 'active', weight: 1, place: id, when: { start: 1500, end: 1500 },
+  }));
+  const layer = createEventsLayer(group, createProjection({ width: 960, height: 480 }), {
+    pointOf: (event) => where[event.id],
+    onSelect: () => {},
+    isParent: (event) => event.id !== 'leaf',
+  });
+  layer.render({
+    events,
+    selected: null,
+    pathIds: new Set(['walked']),
+    alone: new Set(['walked']),
+    kept: new Set(['walked']),
+    chainEdges: [],
+    consequenceEdges: [],
+    eventById: new Map(events.map((e) => [e.id, e])),
+  });
+  const read = (id) => {
+    const mark = group.querySelector('circle.mark[data-id="' + id + '"]');
+    const ring = [...group.querySelectorAll('circle.ring')].find((el) => (
+      el.getAttribute('cx') === mark.getAttribute('cx') && el.getAttribute('cy') === mark.getAttribute('cy')
+    )) ?? null;
+    const style = ring ? getComputedStyle(ring) : null;
+    return {
+      radius: Number(mark.getAttribute('r')),
+      ring: ring === null ? null : {
+        sibling: ring.parentNode === mark.parentNode,
+        radius: Number(ring.getAttribute('r')),
+        classes: ring.getAttribute('class'),
+        id: ring.getAttribute('data-id'),
+        mark: ring.getAttribute('data-mark'),
+        tabindex: ring.getAttribute('tabindex'),
+        fill: style.fill,
+        stroke: style.stroke,
+        width: Number(ring.getAttribute('stroke-width')),
+        events: style.pointerEvents,
+      },
+    };
+  };
+  const out = {
+    parent: read('parent'),
+    leaf: read('leaf'),
+    walked: read('walked'),
+    marks: group.querySelectorAll('circle.mark').length,
+    rings: group.querySelectorAll('circle.ring').length,
+    focusable: group.querySelectorAll('circle.ring[tabindex]').length,
+  };
+  root.remove();
+  return out;
+})();`;
+
+test('a parent is drawn with a ring outside its mark, and a leaf is not', { skip }, async () => {
+  await wide(async (page, url) => {
+    await open(page, url('?fixtures=1'), READY);
+    const drawn = await page.eval(SYNTHETIC_RING);
+
+    assert.equal(drawn.leaf.ring, null, 'an event with no parts has no ring');
+    assert.equal(drawn.marks, 3, 'three records, three marks');
+    assert.equal(drawn.rings, 2, 'and a ring on each of the two parents');
+    assert.equal(drawn.focusable, 0, 'a ring is not a control and takes no focus');
+
+    const { ring, radius } = drawn.parent;
+    assert.ok(ring, 'the parent has one');
+    assert.ok(ring.sibling, 'beside the mark, in the same layer');
+    assert.ok(ring.radius > radius, `outside it: ${ring.radius} around ${radius}`);
+    assert.equal(ring.id, null, 'it names no record, so nothing opens it');
+    assert.equal(ring.mark, null, 'and the keyboard path does not see it');
+    assert.equal(ring.tabindex, null);
+    assert.equal(ring.fill, 'none', 'an outline and not a disc');
+    assert.equal(ring.events, 'none', 'the mark under it takes every click');
+    assert.ok(ring.width > 0 && ring.width < 1.5, `thinner than the mark: ${ring.width}`);
+
+    // The hierarchy of emphasis: the ring is the colour the mark itself has,
+    // so a parent on the walked chain is a madder ring around a madder mark
+    // and cobalt never overrules the accent.
+    assert.match(drawn.walked.ring.classes, /\bon-path\b/);
+    assert.doesNotMatch(drawn.walked.ring.classes, /\bmark\b/, 'a ring is an outline, not a record');
+    assert.notEqual(drawn.walked.ring.stroke, drawn.parent.ring.stroke, 'the accent is not the cobalt');
+  });
+});
+
+test('no event on the fixtures has parts and a place, so no mark on the map is ringed', { skip }, async () => {
+  await wide(async (page, url) => {
+    await open(page, url('?fixtures=1'), READY);
+    await settledShards(page);
+    const seen = await page.eval(`return {
+      rings: document.querySelectorAll('#map circle.ring').length,
+      marks: document.querySelectorAll('#map circle.mark[data-id]').length,
+    };`);
+    assert.equal(seen.rings, 0, 'fixture-event-f is the one parent and it is placeless');
+    assert.ok(seen.marks > 0, 'the marks are drawn all the same');
+    // Where that parent *is* drawn it is ringed like any other, and the two
+    // views that draw every event, placed or not, say so
+    // (timeline-browser.test.mjs, graph-browser.test.mjs).
+  });
+});

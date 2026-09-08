@@ -16,6 +16,7 @@ import { DEEPEST_ZOOM } from '../cluster.js';
 import { resolveWindow, withMargin, overlaps } from '../util/window.js';
 import { workingSet, heldSet } from '../emphasis.js';
 import { largeEventsIn } from '../large.js';
+import { isParent } from '../parts.js';
 import { esc } from '../util/esc.js';
 import { normalizeBbox } from '../state.js';
 import { renderKey, shardsArrived } from '../render-key.js';
@@ -106,6 +107,9 @@ export function createMap(container, { atlas, state, onCluster = null }) {
     // A mark is drawn as soon as the core says where and when; what it is
     // called arrives with its century (attributes.js).
     nameOf: (event) => labelOf(atlas, event),
+    // A ring outside the mark of an event that has parts, the same look the
+    // timeline and the graph give one (parts.js).
+    isParent: (event) => isParent(atlas, event),
     // One rule for the three pictures: a click on a consequence of what is
     // open follows that link, anything else starts afresh (chain.js). The map
     // draws the consequence line and then refused to follow it.

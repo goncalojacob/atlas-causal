@@ -35,6 +35,11 @@ const HIT_RADIUS = 10;
 const BADGE_SIZE = 10;
 const LABEL_SIZE = 11;
 const LABEL_HALO = 3; // the paper halo behind a label, in screen pixels
+// The ring outside a parent's mark: how far outside it, and how thin. A ring
+// says "there is more inside" and nothing else, so it is thinner than the
+// mark's own outline and never reaches the hit circle around it.
+const RING_GAP = 3;
+const RING_WIDTH = 1;
 // Labels would be noise on the whole world; they start once the reader has
 // zoomed to about a country, and only the heaviest clusters on screen get
 // one.
@@ -89,14 +94,29 @@ function markClasses(event, { selected, pathIds, actorIds, narrativeIds = null, 
   ].join(' ').replace(/\s+/g, ' ').trim();
 }
 
+// A parent's ring carries the mark's own emphasis, minus the word `mark`
+// itself: it reddens with the walked chain, dims with the lens and fades
+// outside the window exactly as the mark does, and it can never say something
+// the mark is not saying. Dropping `mark` is what keeps every selector that
+// counts `circle.mark` — the tests, the prerendered pages — counting records
+// and not outlines.
+function ringClasses(classes) {
+  return ['ring', ...classes.split(' ').filter((c) => c !== 'mark')].join(' ');
+}
+
 // pointOf resolves an event to the coordinates of the place it names; the
 // coordinates are the place's, never the event's own (M9).
 // `nameOf` is what an event may be called on the map: its title once the
 // century carrying it has landed, and null before that (attributes.js). The
 // layer draws the mark either way and labels it when the shard arrives; the
 // default is the title, for a caller whose atlas has every attribute in hand.
+// `isParent` is what the layer asks about an event to decide whether it gets a
+// ring; the answer is parts.js's and the same one the timeline and the graph
+// draw from. The default is "nobody has parts", for a caller with no atlas to
+// ask — a test, or a pane drawing a single record.
 export function createEventsLayer(group, projection, {
   pointOf, onSelect, onCluster = null, nameOf = (event) => event.title ?? null,
+  isParent = () => false,
 }) {
   // What a mark says it is. "Outside the window" is the map's own word about a
   // mark it has drawn and is said whether or not the name has arrived.
@@ -221,7 +241,15 @@ export function createEventsLayer(group, projection, {
       // and answers the keys. The hit circle behind it is left unfocusable, or
       // Tab would visit every mark twice and the focus ring would land on
       // something that is not drawn.
-      const appendMark = (target, { x, y, radius, classes, title, id = null, cluster = null }) => {
+      //
+      // An event with parts gets a second, thinner outline outside its own,
+      // at a fixed gap from it: the one look a parent has on the three views
+      // (m30c-brief, §1). It is not a control — no `data-id`, no `data-mark`,
+      // no `tabindex` — so the keyboard visits a record once and every
+      // selector naming a mark still finds marks. A cluster never gets one: a
+      // cluster is a count, not a record, and the ring would be a claim about
+      // whichever of the events under it happens to be on top.
+      const appendMark = (target, { x, y, radius, classes, title, id = null, cluster = null, ring = false }) => {
         const data = id === null ? { 'data-cluster': cluster } : { 'data-id': id };
         target.appendChild(svg('circle', { cx: x, cy: y, r: HIT_RADIUS / k, class: 'hit', ...data }));
         const mark = svg('circle', {
@@ -229,6 +257,16 @@ export function createEventsLayer(group, projection, {
           'data-mark': '', tabindex: '0', role: 'button', 'aria-label': title,
         }, [svgTitle(title)]);
         target.appendChild(mark);
+        // The gap is the mark's own radius plus the constant, so the selected
+        // event's larger mark keeps the same air around it as any other; the
+        // stroke is divided by k like the label's halo, or a ring drawn a
+        // hair thick at the world would be a band at a city.
+        if (ring) {
+          target.appendChild(svg('circle', {
+            cx: x, cy: y, r: (radius + RING_GAP) / k, class: ringClasses(classes),
+            'stroke-width': RING_WIDTH / k,
+          }));
+        }
         return mark;
       };
 
@@ -291,6 +329,7 @@ export function createEventsLayer(group, projection, {
           appendMark(group, {
             x: cluster.x, y: cluster.y, radius: MARK_RADIUS, title: nameOf(event) ?? LOADING_LABEL, id: event.id,
             classes: markClasses(event, { selected, pathIds, actorIds, narrativeIds, reachable, near }),
+            ring: isParent(event),
           });
           continue;
         }
@@ -330,6 +369,7 @@ export function createEventsLayer(group, projection, {
           x, y, radius: isSelected ? SELECTED_RADIUS : MARK_RADIUS,
           title: named(event, { faded }), id: event.id,
           classes: markClasses(event, { selected, pathIds, actorIds, narrativeIds, reachable, faded, near }),
+          ring: isParent(event),
         });
         if (isSelected) selectedMark = mark;
       }
@@ -358,6 +398,7 @@ export function createEventsLayer(group, projection, {
           appendMark(ring, {
             x, y, radius: MARK_RADIUS, title: nameOf(member.event) ?? LOADING_LABEL, id: member.id,
             classes: markClasses(member.event, { selected, pathIds, actorIds, narrativeIds, reachable }),
+            ring: isParent(member.event),
           });
           const right = positions[i].x >= 0;
           ring.appendChild(textNode(shorten(nameOf(member.event) ?? ''), {
