@@ -2948,6 +2948,14 @@ The numbering continues from 401, which is M31-3's last.
      in a file I4b did not touch. It waits for the text now, never for a
      duration. Both were on `m0` before M30c and neither is caused by a ring.
 
+498. **The M30c section is a comment on pull request #1, not a section of its
+     body.** Step 4 asks for it in the body. The body is 169 KB and the tool
+     that writes it replaces the whole of it — there is no append — so adding
+     four kilobytes means re-sending the record of thirty milestones verbatim,
+     where one dropped line destroys it silently. The section is posted as a
+     comment instead, whole and ready to paste in above `### I3`, and this
+     records that the body itself is untouched.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
