@@ -1,12 +1,17 @@
 // Bootstrap for entry.html: resolve ?id=, fetch the record, draw the page.
 //
-// It loads the spine because an entry is not only its own text — it names the
+// It loads the core because an entry is not only its own text — it names the
 // actors of an event, the relations of an actor, the narratives that walk
-// through it — and the spine carries every one of those links. The record
-// file itself is fetched second, for the prose. No coastlines: nothing here
-// is drawn on a map.
+// through it — and the core carries every one of those links. What those links
+// are *called* is in the attribute shards, one per century, and an entry is the
+// one page whose lists are unwindowed: an actor's events span every century it
+// was in. So it asks for the centuries its own lists reach and no others, and
+// holds them while the page is on screen (i4-brief, A3; index2 review, finding
+// 9). The record file itself is fetched for the prose. No coastlines: nothing
+// here is drawn on a map.
 
 import { loadAtlas } from '../data.js';
+import { shardsOnScreen } from '../attributes.js';
 import { esc } from '../util/esc.js';
 import { entryHtml, elsewhereHtml, notFoundHtml, createLinks, displayName, ENTRY_KINDS } from './entry.js';
 
@@ -37,7 +42,9 @@ if (slot.dataset.prerendered === '1') {
     <code>entry.html?id=…</code>. <a href="index.html">The atlas</a> links here from every card.</p></section>`;
 } else {
   try {
-    const atlas = await loadAtlas({ dataRoot: fixtures ? 'tests/fixtures/data/' : 'data/', landFile: false });
+    const atlas = await loadAtlas({
+      dataRoot: fixtures ? 'tests/fixtures/data/' : 'data/', landFile: false, from: 'core',
+    });
     const found = atlas.resolve(id);
     if (!found) {
       setTitle('');
@@ -46,20 +53,36 @@ if (slot.dataset.prerendered === '1') {
       setTitle('');
       slot.innerHTML = elsewhereHtml(found.kind, found.id, links);
     } else {
-      // The spine entry is enough for the title and the meta line, so the
-      // page has a head before the record file has arrived.
-      setTitle(displayName(found.record));
+      // The core's entry says the record exists and nothing about what it is
+      // called: the fallback for a missing title is the record's id, and a slug
+      // in the tab's name is a derived string presented as the name of the
+      // thing (index2 review, finding 21). So the head waits, as the body does,
+      // and `atlas.record()` below is what it waits for — since I3 that awaits
+      // the record's own shard before it asks for the file, so the title is
+      // real by the time either arrives.
       slot.innerHTML = '<p class="muted">Loading the entry…</p>';
       const record = await atlas.record(found.kind, found.id);
       setTitle(displayName(record));
-      slot.innerHTML = entryHtml(atlas, {
-        kind: found.kind,
-        record,
-        topologyEntry: found.record,
-        found,
-        links,
-        languages,
-      });
+
+      // The centuries this entry's own lists reach — an actor's events, a
+      // place's, the relations, the accounts that walk it — asked for and held
+      // while the page is on screen. Never waited for: the page is drawn out of
+      // what has landed and drawn again as the rest does, which is one redraw
+      // per century and not one per row.
+      const draw = () => {
+        slot.innerHTML = entryHtml(atlas, {
+          kind: found.kind,
+          record,
+          topologyEntry: found.record,
+          found,
+          links,
+          languages,
+        });
+      };
+      draw();
+      const wanted = shardsOnScreen(atlas, found.kind, found.id);
+      atlas.pinAttributes?.(wanted);
+      for (const shard of wanted) atlas.loadAttributes(shard).then(draw, () => {});
     }
   } catch (error) {
     slot.innerHTML = `<p class="muted">Could not load the entry: <code>${esc(error.message)}</code>.

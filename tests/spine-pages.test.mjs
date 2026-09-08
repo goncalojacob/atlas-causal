@@ -50,7 +50,7 @@ const ATLAS_READY = 'return document.querySelectorAll(".map .mark, .timeline .ba
 // altogether and so does the file.
 const PAGES = [
   ['index.html', ATLAS_READY, 'core', 1],
-  ['entry.html?id=carnation-revolution-1974', 'return document.querySelectorAll(".entry-body").length > 0;', 'spine', 1],
+  ['entry.html?id=carnation-revolution-1974', 'return document.querySelectorAll(".entry-body").length > 0;', 'core', 1],
   ['narratives.html', 'return document.querySelectorAll(".narrative-card").length > 0;', 'spine', 0],
   ['sources.html', 'return document.querySelectorAll(".bib-entry").length > 0;', 'spine', 0],
   ['contribute.html', 'return document.querySelectorAll(".add-row button").length > 0;', 'spine', 1],
@@ -85,6 +85,38 @@ for (const [query, ready, graph, times] of PAGES) {
     });
   });
 }
+
+// The attribute shards, which are the other half of what the switch means: the
+// atlas asks for the ones its window needs, and an entry for the centuries its
+// own lists span — one shard per century and never the corpus (i4-brief, A3).
+// An entry is the unwindowed reader: an actor's events are every century it was
+// in, and a cap that dropped one would draw that actor incomplete for ever
+// (index2 review, finding 9).
+test('entry.html asks for the core and the centuries its lists span, and no more', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await open(page, url('entry.html?id=carnation-revolution-1974'), 'return document.querySelectorAll(".entry-body").length > 0;');
+    const shards = await page.eval(SHARDS);
+    assert.ok(shards.length > 0, 'the century the record is filed in was asked for');
+    assert.equal(new Set(shards).size, shards.length, `a shard twice: ${shards.join(' · ')}`);
+    // One record's lists are narrower than the corpus, which is the file this
+    // run split: an entry that asked for every century would have moved the
+    // whole-corpus parse rather than removed it.
+    const every = await shardCount();
+    assert.ok(shards.length < every, `${shards.length} of ${every} shards for one record`);
+    // And the head is the record's own name, never the id the core falls back
+    // to (index2 review, finding 21) — nor the tab's name, which a reader with
+    // eleven tabs open is reading them by.
+    const head = await page.eval(`return {
+      h1: document.querySelector(".entry-head h1")?.textContent ?? "",
+      tab: document.title,
+    };`);
+    assert.ok(head.h1.length > 0, 'the entry has a head');
+    assert.notEqual(head.h1, 'carnation-revolution-1974', 'never the id where the name goes');
+    assert.ok(!head.tab.startsWith('carnation-revolution-1974'), `the tab is named ${head.tab}`);
+  });
+});
+
+const SHARDS = 'return performance.getEntriesByType("resource").map((e) => e.name).filter((n) => n.includes("/index/attributes-"));';
 
 // The shards, and the promise the whole split rests on: the picture is on
 // screen before the last century has landed, and every bar is named once they
