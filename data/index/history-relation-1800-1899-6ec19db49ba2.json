@@ -3,7 +3,7 @@
   "kind": "relation",
   "records": {
     "cuba-under-spain--cuba--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,

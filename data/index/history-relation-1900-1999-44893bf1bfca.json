@@ -3,7 +3,7 @@
   "kind": "relation",
   "records": {
     "algeria-under-france--algeria--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -72,7 +72,7 @@
       ]
     },
     "angola-under-portugal--angola--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -81,7 +81,7 @@
       ]
     },
     "bahamas-under-united-kingdom--bahamas--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -90,7 +90,7 @@
       ]
     },
     "barbados-under-united-kingdom--barbados--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -99,7 +99,7 @@
       ]
     },
     "belize-under-united-kingdom--belize--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -108,7 +108,7 @@
       ]
     },
     "benin-under-france--benin--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -117,7 +117,7 @@
       ]
     },
     "bhutan-under-united-kingdom--bhutan--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -126,7 +126,7 @@
       ]
     },
     "botswana-under-united-kingdom--botswana--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -157,7 +157,7 @@
       ]
     },
     "brunei-under-united-kingdom--brunei--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -166,7 +166,7 @@
       ]
     },
     "burkina-faso-upper-volta-under-france--burkina-faso-upper-volta--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -175,7 +175,7 @@
       ]
     },
     "cambodia-kampuchea-under-france--cambodia-kampuchea--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -184,7 +184,7 @@
       ]
     },
     "cameroon-under-france--cameroon--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -193,7 +193,7 @@
       ]
     },
     "cape-verde-under-portugal--cape-verde--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -232,7 +232,7 @@
       ]
     },
     "central-african-republic-under-france--central-african-republic--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -241,7 +241,7 @@
       ]
     },
     "chad-under-france--chad--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -250,7 +250,7 @@
       ]
     },
     "comoros-under-france--comoros--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -259,7 +259,7 @@
       ]
     },
     "congo-democratic-republic-of-zaire-under-belgium--congo-democratic-republic-of-zaire--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -268,7 +268,7 @@
       ]
     },
     "congo-under-france--congo--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -277,7 +277,7 @@
       ]
     },
     "cote-d-ivoire-under-france--cote-d-ivoire--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -308,7 +308,7 @@
       ]
     },
     "cyprus-under-united-kingdom--cyprus--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -317,7 +317,7 @@
       ]
     },
     "djibouti-under-france--djibouti--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -348,7 +348,7 @@
       ]
     },
     "east-timor-under-portugal--east-timor--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -403,7 +403,7 @@
       ]
     },
     "egypt-under-united-kingdom--egypt--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -412,7 +412,7 @@
       ]
     },
     "equatorial-guinea-under-spain--equatorial-guinea--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -421,7 +421,7 @@
       ]
     },
     "eritrea-under-italy-sardinia--eritrea--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -554,7 +554,7 @@
       ]
     },
     "fiji-under-united-kingdom--fiji--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -585,7 +585,7 @@
       ]
     },
     "gabon-under-france--gabon--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -594,7 +594,7 @@
       ]
     },
     "gambia-under-united-kingdom--gambia--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -603,7 +603,7 @@
       ]
     },
     "ghana-under-united-kingdom--ghana--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -612,7 +612,7 @@
       ]
     },
     "guinea-bissau-under-portugal--guinea-bissau--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -621,7 +621,7 @@
       ]
     },
     "guinea-under-france--guinea--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -630,7 +630,7 @@
       ]
     },
     "guyana-under-united-kingdom--guyana--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -639,7 +639,7 @@
       ]
     },
     "iceland-under-denmark--iceland--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -648,7 +648,7 @@
       ]
     },
     "iraq-under-united-kingdom--iraq--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -657,7 +657,7 @@
       ]
     },
     "jamaica-under-united-kingdom--jamaica--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -690,7 +690,7 @@
       ]
     },
     "jordan-under-united-kingdom--jordan--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -699,7 +699,7 @@
       ]
     },
     "kenya-under-united-kingdom--kenya--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -708,7 +708,7 @@
       ]
     },
     "laos-under-france--laos--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -717,7 +717,7 @@
       ]
     },
     "lebanon-under-france--lebanon--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -748,7 +748,7 @@
       ]
     },
     "lesotho-under-united-kingdom--lesotho--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -757,7 +757,7 @@
       ]
     },
     "libya-under-italy-sardinia--libya--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -766,7 +766,7 @@
       ]
     },
     "malawi-under-united-kingdom--malawi--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -775,7 +775,7 @@
       ]
     },
     "malaysia-under-united-kingdom--malaysia--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -784,7 +784,7 @@
       ]
     },
     "maldives-under-united-kingdom--maldives--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -793,7 +793,7 @@
       ]
     },
     "mali-under-france--mali--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -802,7 +802,7 @@
       ]
     },
     "malta-under-united-kingdom--malta--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -923,7 +923,7 @@
       ]
     },
     "mauritania-under-france--mauritania--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -932,7 +932,7 @@
       ]
     },
     "mauritius-under-united-kingdom--mauritius--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -963,7 +963,7 @@
       ]
     },
     "mozambique-under-portugal--mozambique--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -972,7 +972,7 @@
       ]
     },
     "myanmar-burma-under-united-kingdom--myanmar-burma--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -981,7 +981,7 @@
       ]
     },
     "namibia-under-south-africa--namibia--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -990,7 +990,7 @@
       ]
     },
     "new-zealand-under-united-kingdom--new-zealand--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -999,7 +999,7 @@
       ]
     },
     "niger-under-france--niger--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -1008,7 +1008,7 @@
       ]
     },
     "nigeria-under-united-kingdom--nigeria--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -1033,7 +1033,7 @@
       ]
     },
     "papua-new-guinea-under-australia--papua-new-guinea--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -1058,7 +1058,7 @@
       ]
     },
     "philippines-under-united-states-of-america--philippines--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -1339,7 +1339,7 @@
       ]
     },
     "qatar-under-united-kingdom--qatar--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -1426,7 +1426,7 @@
       ]
     },
     "senegal-under-france--senegal--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -1459,7 +1459,7 @@
       ]
     },
     "sierra-leone-under-united-kingdom--sierra-leone--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -1468,7 +1468,7 @@
       ]
     },
     "singapore-under-united-kingdom--singapore--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -1477,7 +1477,7 @@
       ]
     },
     "solomon-islands-under-united-kingdom--solomon-islands--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -1486,7 +1486,7 @@
       ]
     },
     "sri-lanka-ceylon-under-united-kingdom--sri-lanka-ceylon--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -1495,7 +1495,7 @@
       ]
     },
     "sudan-under-united-kingdom--sudan--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -1504,7 +1504,7 @@
       ]
     },
     "surinam-under-netherlands--surinam--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -1513,7 +1513,7 @@
       ]
     },
     "swaziland-eswatini-under-united-kingdom--swaziland-eswatini--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -1522,7 +1522,7 @@
       ]
     },
     "syria-under-france--syria--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -1531,7 +1531,7 @@
       ]
     },
     "taiwan-under-japan--taiwan--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -1540,7 +1540,7 @@
       ]
     },
     "tanzania-tanganyika-under-united-kingdom--tanzania-tanganyika--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -1593,7 +1593,7 @@
       ]
     },
     "togo-under-france--togo--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -1602,7 +1602,7 @@
       ]
     },
     "trinidad-and-tobago-under-united-kingdom--trinidad-and-tobago--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -1611,7 +1611,7 @@
       ]
     },
     "tunisia-under-france--tunisia--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -1620,7 +1620,7 @@
       ]
     },
     "uganda-under-united-kingdom--uganda--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -1629,7 +1629,7 @@
       ]
     },
     "united-arab-emirates-under-united-kingdom--united-arab-emirates--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -1638,7 +1638,7 @@
       ]
     },
     "zambia-under-united-kingdom--zambia--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -1647,7 +1647,7 @@
       ]
     },
     "zanzibar-under-united-kingdom--zanzibar--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -1656,7 +1656,7 @@
       ]
     },
     "zimbabwe-rhodesia-under-united-kingdom--zimbabwe-rhodesia--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
