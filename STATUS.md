@@ -3196,6 +3196,18 @@ The numbering continues from 401, which is M31-3's last.
      the same, and the browser measurements above were taken locally rather
      than being unavailable.
 
+517. **The I6 section is a comment on pull request #1 and not in its body**,
+     as I4a's, M30c's and I5's are (deviations 483, 498, 506). Step 4 asks for
+     it in the body. The body is 170 KB on one line: reading it costs some
+     forty thousand tokens, writing it back costs as many again in a single
+     tool call, and the tool replaces the whole of it — one dropped line
+     destroys the record of thirty milestones silently. The section is posted
+     whole and ready to paste in above `### I3`:
+     https://github.com/goncalojacob/atlas-causal/pull/1#issuecomment-5587182624
+     **For the owner:** four runs have now done this for the same reason, and
+     the answer is either a shorter body — the milestone sections are what
+     `STATUS.md` is for — or a run that is not asked to edit it.
+
 ## I6: what the graph's notch actually costs
 
 Written before anything was changed, which is what the index2 review's
