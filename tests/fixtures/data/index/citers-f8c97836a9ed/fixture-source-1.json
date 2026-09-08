@@ -146,6 +146,12 @@
     },
     {
       "dissent": false,
+      "id": "fixture-polity-four--fixture-polity-three--succeeded",
+      "kind": "relation",
+      "locator": null
+    },
+    {
+      "dissent": false,
       "id": "fixture-actor-one-fixture-actor-two-1210",
       "kind": "tenure",
       "locator": null

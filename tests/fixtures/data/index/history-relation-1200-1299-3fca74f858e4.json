@@ -26,6 +26,15 @@
           "on": "2026-01-01"
         }
       ]
+    },
+    "fixture-polity-four--fixture-polity-three--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-01-01"
+        }
+      ]
     }
   },
   "schema": 1,

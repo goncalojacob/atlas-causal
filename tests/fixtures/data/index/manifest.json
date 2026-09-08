@@ -1,25 +1,25 @@
 {
   "attributeShards": [
     {
-      "file": "index/attributes-1100-1199-cdfa92eccb3a.json",
+      "file": "index/attributes-1100-1199-dcbe76fbc00b.json",
       "from": 1100,
       "key": "1100-1199",
       "to": 1199
     },
     {
-      "file": "index/attributes-1200-1299-58abc43c6677.json",
+      "file": "index/attributes-1200-1299-902199d40a6f.json",
       "from": 1200,
       "key": "1200-1299",
       "to": 1299
     },
     {
-      "file": "index/attributes-null-e67a6b456834.json",
+      "file": "index/attributes-null-8186c18011bf.json",
       "from": null,
       "key": "null",
       "to": null
     },
     {
-      "file": "index/attributes-place-94bb592a8b0c.json",
+      "file": "index/attributes-place-a1e73d12e4b2.json",
       "from": null,
       "key": "place",
       "to": null
@@ -34,7 +34,7 @@
     "places": 11,
     "presences": 3,
     "regions": 3,
-    "relations": 3,
+    "relations": 4,
     "sources": 4,
     "tenures": 4
   },
@@ -46,16 +46,16 @@
     }
   ],
   "files": {
-    "citers": "index/citers-77d329bd5e9b",
-    "core": "index/core-4fa927c76227.json",
+    "citers": "index/citers-f8c97836a9ed",
+    "core": "index/core-39fe3e65b247.json",
     "presences": "index/presences-7dc62eab392c.json",
-    "review": "index/review-8bf748a55c61.json",
-    "search": "index/search-755e4c7ff6e5.json",
-    "sources": "index/sources-be024864c060.json"
+    "review": "index/review-529a25f3de7f.json",
+    "search": "index/search-6418b284f92f.json",
+    "sources": "index/sources-b593ceee8617.json"
   },
   "historyShards": [
     {
-      "file": "index/history-event-1200-1299-e9700c2bccfd.json",
+      "file": "index/history-event-1200-1299-1dfbe17030da.json",
       "from": 1200,
       "key": "1200-1299",
       "kind": "event",
@@ -97,7 +97,7 @@
       "to": 1199
     },
     {
-      "file": "index/history-relation-1200-1299-b333e00268a5.json",
+      "file": "index/history-relation-1200-1299-3fca74f858e4.json",
       "from": 1200,
       "key": "1200-1299",
       "kind": "relation",
@@ -252,9 +252,16 @@
       ]
     },
     "data/relations/": {
-      "attribution": [],
+      "attribution": [
+        {
+          "license": "CC-BY-NC-SA-4.0",
+          "name": "CShapes 2.0 — Schvitz, Girardin, Rüegger, Weidmann, Cederman and Gleditsch",
+          "source": "https://doi.org/10.1177/00220027211013563"
+        }
+      ],
       "licenses": [
-        "CC-BY-SA-4.0"
+        "CC-BY-SA-4.0",
+        "CC-BY-NC-SA-4.0"
       ]
     },
     "data/sources/": {
