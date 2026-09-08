@@ -3672,6 +3672,40 @@ The numbering continues from 401, which is M31-3's last.
      milestones. Posted whole and ready to paste in above `### I3`:
      https://github.com/goncalojacob/atlas-causal/pull/1#issuecomment-5591489867
 
+551. **The check hangs in `node --test` on `m0`, and it is not this
+     milestone's doing.** Run 567 on `3a17336` sat in the Tests step for 37
+     minutes and a second attempt for 20 more; both were stopped by hand
+     rather than by anything the runner said. The control was to re-run the
+     check on **`b7b7e443`**, the `briefs-map` merge that landed before M44-0
+     claimed the milestone and carries none of its code: **it sat in Tests
+     for over 39 minutes too.** So the hang is on `m0` before this run, and
+     the last commit that ever went green is `bd56b37` (run 558, three
+     minutes). What lies between them is that merge: `docs/` and about 15 MB
+     of gzipped Natural Earth and CShapes under `vendor/`, no code at all —
+     its own check, run 559, was cancelled by M44-0's claim push and so
+     nobody had seen it.
+
+     The same suite the same way — `node --test`, no timeout, as
+     `.github/workflows/validate.yml` runs it — is **1,229 tests, 1,229
+     passing, 0 skipped, in 124 seconds** in this sandbox, browser tests
+     included, on `3a17336`. So this is not a test that fails; it is a wait
+     that never ends, which is deviation 445 still open: `connect()` awaits a
+     WebSocket handshake with no bound, and `withBrowser`'s `server.close()`
+     waits for every connection Chromium leaves behind before its promise
+     resolves (`tests/browser.mjs`). Deviation 543 bounded `walk-browser`
+     alone. And the Tests step runs `node --test` with **no
+     `--test-timeout`**, unlike the import Action, so a hang there has no
+     bound at all and publishes no logs — nothing in the job says which test
+     it is stopped in.
+
+     **Not fixed here, and deliberately.** The fix is either a bound on those
+     two waits or `--test-timeout=120000` in `validate.yml`, and the second
+     turns the hang into a red check rather than a green one, which is a
+     decision about the Action and not about a lane table. M44-0 does not
+     widen itself into it. **For the owner:** every M44 run and every run on
+     `m0` after this one meets the same wall, and the fastest thing that
+     would tell anybody which test it is, is that timeout.
+
 ## I8: what was derived, and what the Action must still run
 
 **The successions.** `node tools/import/cshapes.mjs --relations` reads
