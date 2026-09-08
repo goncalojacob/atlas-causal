@@ -16,6 +16,7 @@ import {
   readEntity, parseTime, claimPoint, countLanguageEditions, articleTitles,
   classify, intervalFor, slug, foldName, idFor, namesFor, identityOf,
   mergeIdentity, ENRICHABLE, matchesFor, nameMatches, datesMatch, laneFor, laneNote,
+  seededLane, SEEDED_LANE,
   placeRecord, actorRecord, eventRecord, leadRecord, importedSummary,
   nextBatch, advance, emptyState, itemIndex, candidatesMarkdown, ambiguousMarkdown, reportLines, appendReport,
   runImportMode, runReconcileMode, runCandidatesMode, otherNames, mergeNames,
@@ -485,6 +486,56 @@ test('every record --import writes survives an unedited save through the form', 
     }
   }
   assert.ok(seen > 0, 'the import wrote nothing to round-trip');
+});
+
+// M44-0, the answer to deviation 447: an event with no place record, no
+// coordinate of its own and nothing to borrow one from is refused, and the
+// only thing that can rescue it is a lane somebody wrote in the seeds file.
+// Q9000009 is that case — dated, classed as an event, and over no ground.
+test('a placeless event with no point takes the lane the seeds file names for it', async () => {
+  const { dir, cacheDir } = await scratch({ items: ['Q9000009'] });
+  const { fetcher } = await fixtureFetcher();
+  const refused = await runImportMode(dir, { fetcher, today: '2026-09-04', cacheDir, deriveRegion });
+  assert.deepEqual(refused.report.created, [], 'without a lane it is still refused');
+  assert.match(refused.report.refused[0].why, /no lane named for it in the seeds file/);
+
+  // The same item, the same fixtures, one line of data different.
+  const { dir: named, cacheDir: cache2 } = await scratch({ items: ['Q9000009'], lanes: { Q9000009: 'testland' } });
+  const { fetcher: second } = await fixtureFetcher();
+  const { report } = await runImportMode(named, { fetcher: second, today: '2026-09-04', cacheDir: cache2, deriveRegion });
+  assert.deepEqual(report.refused, []);
+  assert.deepEqual(report.created.map((c) => [c.qid, c.kind, c.place]), [['Q9000009', 'event', null]]);
+
+  const event = await readJson(path.join(named, 'events', 'wide-northfield-war.json'));
+  assert.equal(event.region, 'testland');
+  assert.equal(event.place, null);
+  // The record says a person decided this, not a coordinate: a later change
+  // to the polygons moves the derived lanes and must not move this one.
+  assert.equal(event.regionNote,
+    'Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.');
+  assert.deepEqual(createValidator(await schemas()).validate('v1/event.json', event), []);
+
+  // A lane for an item the table does not name changes nothing, and neither
+  // does an empty entry: the table answers for one item at a time.
+  assert.equal(seededLane({ Q9000009: 'testland' }, 'Q9000001'), null);
+  assert.equal(seededLane({ Q9000009: '' }, 'Q9000009'), null);
+  assert.equal(seededLane(undefined, 'Q9000009'), null);
+  assert.deepEqual(seededLane({ Q9000009: 'testland' }, 'Q9000009'), { region: 'testland', how: SEEDED_LANE });
+});
+
+// The measurement comes first: a lane written by hand never overrides one a
+// coordinate gives, so an item that can be placed is placed the same way it
+// was before the table existed.
+test('a lane in the seeds file does not override a lane a point reaches', async () => {
+  const { dir, cacheDir } = await scratch({ items: ['Q9000001', 'Q9000003'], lanes: { Q9000001: 'elsewhere', Q9000003: 'elsewhere' } });
+  const { fetcher } = await fixtureFetcher();
+  await runImportMode(dir, { fetcher, today: '2026-09-04', cacheDir, deriveRegion });
+  const event = await readJson(path.join(dir, 'events', 'northfield-rising.json'));
+  assert.equal(event.place, 'northfield', 'it points at a place record, so no lane is written at all');
+  assert.equal(event.region, null);
+  assert.equal(event.regionNote, null);
+  const place = await readJson(path.join(dir, 'places', 'northfield.json'));
+  assert.equal(place.region, null, 'a place is placed by its own coordinate and the table is not read for it');
 });
 
 test('--import stops at the batch size and the next run continues', async () => {

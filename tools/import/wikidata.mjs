@@ -725,6 +725,18 @@ export function laneFor(point, { deriveRegion, countryPoints = [] } = {}) {
   return { region: null, how: null };
 }
 
+// The lane the seeds file writes for an item, or null. It is the last thing
+// tried and never the first: a point is a measurement and this is somebody's
+// judgement, so it answers only where nothing was measured (deviation 447).
+// `how` says where it came from, because a record has to be able to say that
+// its lane was written by a person and not derived from anything.
+export const SEEDED_LANE = 'named for this item in data/imports/wikidata-seeds.json';
+
+export function seededLane(lanes, qid) {
+  const region = lanes?.[qid];
+  return typeof region === 'string' && region ? { region, how: SEEDED_LANE } : null;
+}
+
 // Why a record carries a lane of its own rather than one derived from a
 // point. A lane a tool gave is not the same fact as one a coordinate gave,
 // and a later change to the polygons will move the derived ones and not these
@@ -753,7 +765,7 @@ export async function readSeeds(dataDir = DEFAULT_DATA) {
   const file = path.join(dataDir, ...SEEDS_FILE.split('/'));
   const seeds = existsSync(file) ? await readJson(file) : null;
   if (seeds === null) return null;
-  return { items: [], queries: [], classes: {}, reconcile: false, ...seeds };
+  return { items: [], queries: [], classes: {}, lanes: {}, reconcile: false, ...seeds };
 }
 
 export function emptyState() {
@@ -1030,7 +1042,17 @@ export async function runImportMode(dataDir, { fetcher, today, batchSize = BATCH
         // have derived it.
         region = lane.how === null ? null : lane.region ?? deriveRegion?.(point)?.region ?? null;
         if (!region) {
-          refuse(report, qid, 'no place record for its location and no lane reachable from its point; a placeless event must carry a region');
+          // Nothing was measured, so the last thing left is what somebody
+          // wrote in the seeds file. Without it the item is refused, which is
+          // where the twenty-nine of deviation 447 have been sitting.
+          const seeded = seededLane(seeds.lanes, qid);
+          if (seeded) {
+            lane = seeded;
+            region = seeded.region;
+          }
+        }
+        if (!region) {
+          refuse(report, qid, 'no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region');
           continue;
         }
       }

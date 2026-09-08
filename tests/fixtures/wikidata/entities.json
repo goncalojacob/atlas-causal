@@ -93,6 +93,19 @@
       },
       "sitelinks": {}
     },
+    "Q9000009": {
+      "type": "item",
+      "id": "Q9000009",
+      "labels": { "en": { "language": "en", "value": "Wide Northfield War" } },
+      "descriptions": { "en": { "language": "en", "value": "an invented war over no ground in particular, used only to test an import" } },
+      "aliases": {},
+      "claims": {
+        "P31": [{ "mainsnak": { "snaktype": "value", "property": "P31", "datavalue": { "type": "wikibase-entityid", "value": { "entity-type": "item", "id": "Q9100001" } } }, "rank": "normal" }],
+        "P580": [{ "mainsnak": { "snaktype": "value", "property": "P580", "datavalue": { "type": "time", "value": { "time": "+1912-00-00T00:00:00Z", "precision": 9 } } }, "rank": "normal" }],
+        "P582": [{ "mainsnak": { "snaktype": "value", "property": "P582", "datavalue": { "type": "time", "value": { "time": "+1913-00-00T00:00:00Z", "precision": 9 } } }, "rank": "normal" }]
+      },
+      "sitelinks": {}
+    },
     "Q9000008": { "id": "Q9000008", "missing": "" }
   },
   "success": 1
