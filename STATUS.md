@@ -23,8 +23,10 @@ Republic's party system is the part that gained most, with the two mergers of
 twenty-four retracted are companies, and the reason is one gap: this atlas has
 no economic history of Portugal after the nationalisations of 1975.
 `docs/m41-retractions.md` names all twenty-four and says what each would need.
-Deviations 208 to 211 are this run's; 209 and 210 are the brief asking for
-`data/roles.json` and a `retraction` block that exist on `m0` and not here.
+Deviations 208 to 212 are this run's; 209 and 210 are the brief asking for
+`data/roles.json` and a `retraction` block that exist on `m0` and not here, and
+212 is why M41b's section is a **comment** on pull request #1 rather than in its
+body, and wants a minute of the owner's time in the browser.
 `node tools/validate.mjs` without `--index` is clean and the warnings are down
 from 45 to 3, none of them M41's; `node --test` is 602 of 604, still the two
 deliberate index-staleness failures of deviation 206. The rest of this section
@@ -3366,6 +3368,19 @@ gave that to the map and the timeline, and M25 did not widen it.
      reconciler here — the brief does not ask and the tool has no network in
      this sandbox — but a name-and-interval pass before the import writes an
      actor is the obvious fix, and M42 will hit this harder than M41 did.
+212. **M41b's section is a comment on pull request #1 and not in its body.**
+     The body is about 157,000 characters after thirty-odd milestones, and the
+     only tool this session has for it replaces the whole thing: adding one
+     section means re-emitting every other one verbatim, and a transcription
+     slip there would silently damage the record of every milestone before
+     this. The section was posted as a comment instead, saying at its top
+     where it belongs and that it is a comment for this reason. **Two things
+     follow for whoever reads this next.** Pasting the comment into the body
+     under M41a's section is a minute's work in the browser and is the fix.
+     And the body has outgrown the tool: the sections marked *(summarised)*
+     are the convention that was keeping it down, and either the older ones
+     want summarising again or the milestone log wants moving into a file in
+     the repository, where a run can edit it the way it edits everything else.
 
 
 ## Dates to verify
