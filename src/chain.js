@@ -11,11 +11,26 @@
 // withdrawn step no longer follows from anything. state.js cuts a chain the
 // same way, for the same reason, when a step is not an edge id at all.
 
+// The edge one step of a walk names, whatever it was called on the day the
+// link was shared. `atlas.edges` is keyed by the id an edge carries now, and
+// an edge's id is derived — `from--to--type` — so correcting one event's slug
+// renames every link that touches it (`tools/migrate/ids.mjs`, I7). A chain
+// written before that rename would find nothing there, and the walk would be
+// cut at a step that stands perfectly well. `resolve()` is the one answer to
+// "which record does this id name now" and it walks the aliases, which is
+// where the former id is.
+function edgeAt(atlas, id) {
+  const edge = atlas.edges.get(id);
+  if (edge) return edge;
+  const found = atlas.resolve ? atlas.resolve(id) : null;
+  return found && found.kind === 'edge' ? found.record : null;
+}
+
 // The steps that still stand, in the order they were walked.
 export function chainEdges(atlas, chain) {
   const edges = [];
   for (const id of chain) {
-    const edge = atlas.edges.get(id);
+    const edge = edgeAt(atlas, id);
     if (!edge || edge.status !== 'active') break;
     edges.push(edge);
   }
@@ -30,7 +45,7 @@ export function chainEdges(atlas, chain) {
 export function retractedSteps(atlas, chain) {
   const stood = chainEdges(atlas, chain).length;
   if (stood === chain.length) return 0;
-  return atlas.edges.has(chain[stood]) ? chain.length - stood : 0;
+  return edgeAt(atlas, chain[stood]) ? chain.length - stood : 0;
 }
 
 // --- one click, three pictures ---------------------------------------------
