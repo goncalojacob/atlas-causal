@@ -13270,7 +13270,7 @@
     }
   ],
   "schema": 1,
-  "total": 1178,
+  "total": 1186,
   "warnings": [
     {
       "id": "altice-portugal",
@@ -13285,7 +13285,31 @@
       "rule": "actor-unused"
     },
     {
+      "id": "azores-liberation-front",
+      "kind": "actor",
+      "message": "actor is referenced by no event and no relation, and holds no territory",
+      "rule": "actor-unused"
+    },
+    {
       "id": "banco-comercial-portugues",
+      "kind": "actor",
+      "message": "actor is referenced by no event and no relation, and holds no territory",
+      "rule": "actor-unused"
+    },
+    {
+      "id": "brisa-auto-estradas-de-portugal",
+      "kind": "actor",
+      "message": "actor is referenced by no event and no relation, and holds no territory",
+      "rule": "actor-unused"
+    },
+    {
+      "id": "crisis-portugal",
+      "kind": "event",
+      "message": "event has no edges",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "democratic-party",
       "kind": "actor",
       "message": "actor is referenced by no event and no relation, and holds no territory",
       "rule": "actor-unused"
@@ -13351,7 +13375,19 @@
       "rule": "actor-unused"
     },
     {
+      "id": "national-syndicalists",
+      "kind": "actor",
+      "message": "actor is referenced by no event and no relation, and holds no territory",
+      "rule": "actor-unused"
+    },
+    {
       "id": "national-union",
+      "kind": "actor",
+      "message": "actor is referenced by no event and no relation, and holds no territory",
+      "rule": "actor-unused"
+    },
+    {
+      "id": "new-macau-association",
       "kind": "actor",
       "message": "actor is referenced by no event and no relation, and holds no territory",
       "rule": "actor-unused"
@@ -13381,6 +13417,12 @@
       "rule": "actor-unused"
     },
     {
+      "id": "portuguese-democratic-movement",
+      "kind": "actor",
+      "message": "actor is referenced by no event and no relation, and holds no territory",
+      "rule": "actor-unused"
+    },
+    {
       "id": "portuguese-investment-bank",
       "kind": "actor",
       "message": "actor is referenced by no event and no relation, and holds no territory",
@@ -13400,6 +13442,12 @@
     },
     {
       "id": "revolutionary-socialist-party",
+      "kind": "actor",
+      "message": "actor is referenced by no event and no relation, and holds no territory",
+      "rule": "actor-unused"
+    },
+    {
+      "id": "rise-up",
       "kind": "actor",
       "message": "actor is referenced by no event and no relation, and holds no territory",
       "rule": "actor-unused"

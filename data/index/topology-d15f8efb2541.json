@@ -411,6 +411,27 @@
       }
     },
     {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "azores-liberation-front",
+      "name": "Azores Liberation Front",
+      "names": [
+        "Azores Liberation Front",
+        "Frente de Libertação dos Açores"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": 1978,
+        "start": 1975
+      },
+      "wikidata": "Q260897",
+      "wikipedia": {
+        "en": "Azores Liberation Front",
+        "pt": "Frente de Libertação dos Açores"
+      }
+    },
+    {
       "actorType": "polity",
       "aliases": [],
       "id": "bahamas",
@@ -807,6 +828,28 @@
       "when": {
         "end": null,
         "start": 1886
+      }
+    },
+    {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "brisa-auto-estradas-de-portugal",
+      "name": "Brisa – Auto-estradas de Portugal",
+      "names": [
+        "Brisa – Auto-estradas de Portugal",
+        "Brisa",
+        "Brisa (empresa)"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 1972
+      },
+      "wikidata": "Q587719",
+      "wikipedia": {
+        "en": "Brisa – Auto-estradas de Portugal",
+        "pt": "Brisa (empresa)"
       }
     },
     {
@@ -1606,6 +1649,29 @@
       "when": {
         "end": 1938,
         "start": 1919
+      }
+    },
+    {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "democratic-party",
+      "name": "Democratic Party",
+      "names": [
+        "Democratic Party",
+        "Partido Democrático",
+        "Democratic Party (Portugal)",
+        "Partido Democrático (Portugal)"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": 1926,
+        "start": 1910
+      },
+      "wikidata": "Q1783440",
+      "wikipedia": {
+        "en": "Democratic Party (Portugal)",
+        "pt": "Partido Democrático (Portugal)"
       }
     },
     {
@@ -4340,6 +4406,28 @@
     {
       "actorType": "institution",
       "aliases": [],
+      "id": "national-syndicalists",
+      "name": "National Syndicalists",
+      "names": [
+        "National Syndicalists",
+        "Movimento Nacional-Sindicalista",
+        "National Syndicalists (Portugal)"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": 1934,
+        "start": 1932
+      },
+      "wikidata": "Q2562540",
+      "wikipedia": {
+        "en": "National Syndicalists (Portugal)",
+        "pt": "Movimento Nacional-Sindicalista"
+      }
+    },
+    {
+      "actorType": "institution",
+      "aliases": [],
       "id": "national-union",
       "name": "National Union",
       "names": [
@@ -4440,6 +4528,27 @@
       "when": {
         "end": 1949,
         "start": 1886
+      }
+    },
+    {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "new-macau-association",
+      "name": "New Macau Association",
+      "names": [
+        "New Macau Association",
+        "Associação Novo Macau"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 1992
+      },
+      "wikidata": "Q2495255",
+      "wikipedia": {
+        "en": "New Macau Association",
+        "pt": "Associação Novo Macau"
       }
     },
     {
@@ -5255,6 +5364,28 @@
     {
       "actorType": "institution",
       "aliases": [],
+      "id": "portuguese-democratic-movement",
+      "name": "Portuguese Democratic Movement",
+      "names": [
+        "Portuguese Democratic Movement",
+        "Movimento Democrático Português / Comissão Democrática Eleitoral",
+        "Movimento Democrático Português"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": 1987,
+        "start": 1969
+      },
+      "wikidata": "Q613464",
+      "wikipedia": {
+        "en": "Portuguese Democratic Movement",
+        "pt": "Movimento Democrático Português"
+      }
+    },
+    {
+      "actorType": "institution",
+      "aliases": [],
       "id": "portuguese-expeditionary-corps",
       "name": "Portuguese Expeditionary Corps",
       "names": [
@@ -5563,6 +5694,28 @@
       "wikipedia": {
         "en": "Ricardo Salgado",
         "pt": "Ricardo Salgado"
+      }
+    },
+    {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "rise-up",
+      "name": "Rise up!",
+      "names": [
+        "Rise up!",
+        "Ergue-te!",
+        "Ergue-te"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": 2025,
+        "start": 2000
+      },
+      "wikidata": "Q2054681",
+      "wikipedia": {
+        "en": "Ergue-te",
+        "pt": "Ergue-te"
       }
     },
     {
@@ -15066,6 +15219,27 @@
         "date": "1996-07-17",
         "end": 1996,
         "start": 1996
+      }
+    },
+    {
+      "actors": [],
+      "aliases": [],
+      "id": "crisis-portugal",
+      "place": null,
+      "region": "europe",
+      "regionMethod": "override",
+      "status": "active",
+      "supersededBy": null,
+      "title": "crisis portugal",
+      "weight": 0,
+      "when": {
+        "end": 2014,
+        "start": 2010
+      },
+      "wikidata": "Q3002776",
+      "wikipedia": {
+        "en": "2010–2014 Portuguese financial crisis",
+        "pt": "Crise financeira em Portugal de 2010–2014"
       }
     },
     {

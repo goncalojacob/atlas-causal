@@ -11942,7 +11942,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 142,
+      "citationCount": 150,
       "citations": [
         {
           "dissent": false,
@@ -11958,9 +11958,27 @@
         },
         {
           "dissent": false,
+          "id": "azores-liberation-front",
+          "kind": "actor",
+          "locator": "Q260897"
+        },
+        {
+          "dissent": false,
           "id": "banco-comercial-portugues",
           "kind": "actor",
           "locator": "Q118581"
+        },
+        {
+          "dissent": false,
+          "id": "brisa-auto-estradas-de-portugal",
+          "kind": "actor",
+          "locator": "Q587719"
+        },
+        {
+          "dissent": false,
+          "id": "democratic-party",
+          "kind": "actor",
+          "locator": "Q1783440"
         },
         {
           "dissent": false,
@@ -12018,9 +12036,21 @@
         },
         {
           "dissent": false,
+          "id": "national-syndicalists",
+          "kind": "actor",
+          "locator": "Q2562540"
+        },
+        {
+          "dissent": false,
           "id": "national-union",
           "kind": "actor",
           "locator": "Q954010"
+        },
+        {
+          "dissent": false,
+          "id": "new-macau-association",
+          "kind": "actor",
+          "locator": "Q2495255"
         },
         {
           "dissent": false,
@@ -12048,6 +12078,12 @@
         },
         {
           "dissent": false,
+          "id": "portuguese-democratic-movement",
+          "kind": "actor",
+          "locator": "Q613464"
+        },
+        {
+          "dissent": false,
           "id": "portuguese-investment-bank",
           "kind": "actor",
           "locator": "Q537886"
@@ -12069,6 +12105,12 @@
           "id": "revolutionary-socialist-party",
           "kind": "actor",
           "locator": "Q2054807"
+        },
+        {
+          "dissent": false,
+          "id": "rise-up",
+          "kind": "actor",
+          "locator": "Q2054681"
         },
         {
           "dissent": false,
@@ -12423,6 +12465,12 @@
           "id": "covid-19-pandemic-in-europe",
           "kind": "event",
           "locator": null
+        },
+        {
+          "dissent": false,
+          "id": "crisis-portugal",
+          "kind": "event",
+          "locator": "Q3002776"
         },
         {
           "dissent": false,
