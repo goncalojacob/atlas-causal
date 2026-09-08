@@ -308,3 +308,96 @@ test('a parent keeps its ring at every zoom, collapsed or parted', { skip }, asy
     assert.deepEqual(await errorsOn(page), [], 'the console is clean');
   });
 });
+
+// --- the viewport cull, and ten notches of the wheel (I6) -------------------
+//
+// The graph drew every stack of the whole arrangement at every zoom, where
+// the map has drawn only what is on screen since H4a: at 20,000 events that
+// was 24,310 elements to build and lay out for a picture of which two thirds
+// were off the screen, and it is where a wheel notch's time went (STATUS.md,
+// "what the graph's notch actually costs"). What is asserted here is what is
+// drawn and what is not — never how long it took, which is the bench's
+// question and not a test's (R3).
+
+// The rectangle the reader can see, in the graph's own coordinates, read off
+// the page the way the view itself reads it: through the element's own
+// matrix, because the SVG is letterboxed and the nominal viewBox is not what
+// is on the screen. With every node in the drawing, and where it is.
+const DRAWING = `
+  const svg = document.querySelector('svg.graph');
+  const rect = svg.getBoundingClientRect();
+  const inverse = svg.getScreenCTM().inverse();
+  const a = new DOMPoint(rect.left, rect.top).matrixTransform(inverse);
+  const b = new DOMPoint(rect.right, rect.bottom).matrixTransform(inverse);
+  // No attribute at all until the first gesture: the picture is at rest.
+  const t = /translate\\((-?[\\d.]+) (-?[\\d.]+)\\) scale\\(([\\d.]+)\\)/
+    .exec(svg.querySelector('g.viewport').getAttribute('transform') || 'translate(0 0) scale(1)');
+  const [tx, ty, k] = [Number(t[1]), Number(t[2]), Number(t[3])];
+  const box = {
+    x0: (Math.min(a.x, b.x) - tx) / k, x1: (Math.max(a.x, b.x) - tx) / k,
+    y0: (Math.min(a.y, b.y) - ty) / k, y1: (Math.max(a.y, b.y) - ty) / k,
+  };
+  const nodes = [...svg.querySelectorAll('.layer-nodes circle.node')].map((n) => ({
+    id: n.getAttribute('data-id'),
+    stack: n.classList.contains('stack'),
+    selected: n.classList.contains('selected'),
+    x: Number(n.getAttribute('cx')), y: Number(n.getAttribute('cy')),
+  }));
+  return { box, k, nodes, lines: svg.querySelectorAll('.layer-edges line').length };`;
+
+// One notch of the wheel over a point of the drawing, by the element's own
+// matrix so the pointer lands where the caller means it to.
+const NOTCH_AT = (id, notches = 1) => `
+  const svg = document.querySelector('svg.graph');
+  const at = svg.querySelector('circle.node[data-id="${id}"]').getBoundingClientRect();
+  for (let i = 0; i < ${notches}; i += 1) {
+    svg.dispatchEvent(new WheelEvent('wheel', {
+      bubbles: true, cancelable: true, deltaY: -100,
+      clientX: at.x + at.width / 2, clientY: at.y + at.height / 2,
+    }));
+  }
+  return true;`;
+
+test('a mark outside the rectangle on screen is not drawn, and the selection is drawn wherever it is', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await watchErrors(page);
+    // The leftmost event of the fixtures is the selected one, and the wheel
+    // is turned over the rightmost: ten notches later the selection is a long
+    // way off the left of the screen.
+    await open(page, url('?fixtures=1&view=graph&selected=fixture-event-a'), drawnGraph);
+    await waitFor(page, TITLED('fixture-event-g'), 'the fixtures to be named');
+    const rest = await page.eval(DRAWING);
+    assert.ok(rest.nodes.length > 4, `the whole picture is drawn at rest (${rest.nodes.length} marks)`);
+    assert.ok(rest.nodes.some((n) => n.id === 'fixture-event-a' && n.selected), 'the selection is on a mark of its own');
+
+    // Ten notches, which is the sweep the health review of 6 September timed.
+    // The graph is drawn again after every one of them.
+    for (let i = 0; i < 10; i += 1) {
+      await page.eval(NOTCH_AT('fixture-event-g'));
+      const drawn = await page.eval(DRAWING);
+      assert.ok(drawn.nodes.length > 0, `notch ${i + 1} still draws a graph`);
+      assert.ok(drawn.nodes.some((n) => n.id === 'fixture-event-a' && n.selected),
+        `notch ${i + 1} keeps the selection drawn`);
+    }
+
+    const close = await page.eval(DRAWING);
+    assert.ok(close.k > 4, `ten notches is a long way in (k = ${close.k})`);
+    assert.ok(close.nodes.length < rest.nodes.length,
+      `and fewer marks are drawn than at rest (${close.nodes.length} of ${rest.nodes.length})`);
+    // Everything drawn is on the screen, but for the selection: a mark
+    // outside the rectangle is a mark the reader cannot see, and building it
+    // was a third of what a notch cost.
+    const margin = 18 / close.k;
+    const inside = (n) => n.x >= close.box.x0 - margin && n.x <= close.box.x1 + margin
+      && n.y >= close.box.y0 - margin && n.y <= close.box.y1 + margin;
+    for (const node of close.nodes) {
+      if (node.selected) continue;
+      assert.ok(inside(node), `${node.id ?? 'a stack'} at ${node.x},${node.y} is inside ${JSON.stringify(close.box)}`);
+    }
+    const selection = close.nodes.find((n) => n.selected);
+    assert.ok(selection, 'the selection is still drawn');
+    assert.equal(inside(selection), false, 'and it is off the screen, which is the point of the exemption');
+    assert.equal(selection.stack, false, 'drawn alone, as the never-hide rule has it');
+    assert.deepEqual(await errorsOn(page), [], 'the console is clean');
+  });
+});

@@ -32,6 +32,8 @@ import { chainEdges as walkedEdges, walkOrSelect } from '../chain.js';
 import { horizonBand } from '../horizon.js';
 import { workingSet, heldSet } from '../emphasis.js';
 import { isParent, ringClasses } from '../parts.js';
+import { zoomBucket } from '../cluster.js';
+import { onScreen } from '../map/layers/events.js';
 import { arrangementOf, holdingKey } from './arrangement.js';
 import { layoutGraph, stackLayout, MIN_ZOOM, MAX_ZOOM } from './layout.js';
 import { collapseLayout } from './collapse.js';
@@ -60,6 +62,11 @@ const BAND_LABEL_CHARS = 12;
 const LABEL_ALL_ZOOM = 2;
 const LABEL_LIMIT = 14;
 const BADGE_SIZE = 10;
+// How far outside the rectangle on screen a mark is still worth putting in
+// the DOM: a node whose centre is just past the edge still has half of
+// itself, its ring and its count inside it. The map's `DRAW_MARGIN` is the
+// same sum for the same reason (map/layers/events.js).
+const DRAW_MARGIN = HIT_RADIUS + BADGE_SIZE;
 // The ring outside the node of an event that has parts: how far outside it,
 // and how thin. A ring says "there is more inside" and nothing else, so it is
 // thinner than the node's own outline.
@@ -230,6 +237,13 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
   // sai mais cedo e morria com `Cannot access 'transform' before
   // initialization`, deixando o painel do grafo escondido.
   let transform = { x: 0, y: 0, k: 1 };
+  // Whether the zoom in force was chosen to part a stack, in which case the
+  // stacking is done at exactly it rather than at the bucket below it: the
+  // bucket below `coreZoom` is a zoom that does not part them, and the click
+  // would have moved the picture and parted nothing. The map has kept the
+  // same flag for the same reason since H4a (map.js, `exactZoom`; cluster.js,
+  // `zoomBucket`). Cleared by every other way the zoom can move.
+  let exactZoom = false;
   const applyTransform = () => {
     viewport.setAttribute('transform', `translate(${transform.x} ${transform.y}) scale(${transform.k})`);
   };
@@ -327,12 +341,49 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
   }
   arrange(state.get());
 
-  const view = () => ({
-    x0: -transform.x / transform.k,
-    y0: -transform.y / transform.k,
-    x1: (laid.width - transform.x) / transform.k,
-    y1: (laid.height - transform.y) / transform.k,
-  });
+  // --- what the reader can actually see -------------------------------------
+  //
+  // The `<svg>` carries a viewBox and no preserveAspectRatio of its own, and
+  // CSS gives it the whole pane, so it is letterboxed: in a pane wider than
+  // the arrangement's ratio the visible SVG units run a few hundred either
+  // side of it, and a third of what is on the screen lies outside the nominal
+  // box. That did not matter while this rectangle only chose which marks were
+  // worth naming; it matters now that it decides which are drawn at all, so
+  // it goes through the element's own matrix, exactly as the map's does
+  // (map.js, `visibleBox`; health review A, finding 4).
+  //
+  // The nominal box is the answer when there is nothing to measure — a test
+  // with no layout behind it, or a pane collapsed to nothing — which is what
+  // this returned before.
+  const nominalBox = () => ({ x0: 0, y0: 0, x1: laid?.width ?? 0, y1: laid?.height ?? 0 });
+  const visibleBox = () => {
+    if (typeof DOMPoint !== 'function' || typeof root.getScreenCTM !== 'function') return nominalBox();
+    const ctm = root.getScreenCTM();
+    const rect = root.getBoundingClientRect?.();
+    if (!ctm || ctm.a === 0 || ctm.d === 0 || !rect || !rect.width || !rect.height) return nominalBox();
+    const inverse = ctm.inverse();
+    const a = new DOMPoint(rect.left, rect.top).matrixTransform(inverse);
+    const b = new DOMPoint(rect.right, rect.bottom).matrixTransform(inverse);
+    return {
+      x0: Math.min(a.x, b.x), y0: Math.min(a.y, b.y), x1: Math.max(a.x, b.x), y1: Math.max(a.y, b.y),
+    };
+  };
+  // That rectangle in the graph's own coordinates, under the pan and zoom.
+  //
+  // Measured once per drawing and handed down, never asked for again from
+  // inside `draw`: `getScreenCTM` on an element whose children have just been
+  // replaced forces the browser to lay the whole picture out again, and at
+  // 20,000 events that one call was a third of a wheel notch (STATUS.md,
+  // "what the graph's notch actually costs").
+  const view = () => {
+    const box = visibleBox();
+    return {
+      x0: (box.x0 - transform.x) / transform.k,
+      y0: (box.y0 - transform.y) / transform.k,
+      x1: (box.x1 - transform.x) / transform.k,
+      y1: (box.y1 - transform.y) / transform.k,
+    };
+  };
   // Client coordinates into the coordinates of the viewBox, through the
   // SVG's own matrix: the element is letterboxed inside its box, so scaling
   // by the bounding rectangle would be a few units out — enough to miss a
@@ -396,11 +447,13 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
     const k = Math.min(MAX_ZOOM, Math.max(MIN_ZOOM, transform.k * factor));
     const ratio = k / transform.k;
     transform = { k, x: x - (x - transform.x) * ratio, y: y - (y - transform.y) * ratio };
+    exactZoom = false;
     applyTransform();
     render(state.get());
   }, { passive: false });
   root.addEventListener('dblclick', () => {
     transform = { x: 0, y: 0, k: 1 };
+    exactZoom = false;
     applyTransform();
     render(state.get());
   });
@@ -455,6 +508,11 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
       });
     }
     if (!stack.splittable) return;
+    // And that zoom is not rounded to a bucket when the stack named one:
+    // `coreZoom` is the zoom at which this stack comes apart, and the bucket
+    // below it is a zoom that does not (review of the health plan, finding
+    // 12).
+    exactZoom = stack.coreZoom !== null && stack.coreZoom !== undefined;
     zoomTo(stack.centre, Math.max(stack.coreZoom ?? 0, transform.k * CLUSTER_ZOOM_STEP));
   }
 
@@ -502,10 +560,14 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
       Math.round(box.x0), Math.round(box.y0), Math.round(box.x1), Math.round(box.y1));
     if (!force && !arranged && key === drawnFor) return;
     drawnFor = key;
-    draw(s);
+    draw(s, box);
   }
 
-  function draw(s) {
+  // `box` is the rectangle on screen, measured by `render` before the drawing
+  // is touched. A default for the one caller that has no measurement of its
+  // own to hand: the fixture-free tests that call `draw` through `render`
+  // always pass one.
+  function draw(s, box = view()) {
     note.hidden = !s.bbox;
     const timeWindow = resolveWindow(s, atlas.extent);
     // One period either side of the band is as far out as the graph draws,
@@ -573,15 +635,43 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
     // M25's geometric one on the node set that comes out of it. Both are
     // filed under the same key, because both depend on exactly these three
     // things and on nothing else.
-    const stackKey = `${laidFor}|${k}|${holdingKey(s)}`;
+    //
+    // And the zoom it is filed under is the bucket below the one the picture
+    // is drawn at, as the map's grouping has been since H4a: what decides a
+    // stacking is the threshold D / k, so what matters is the ratio between
+    // two zooms and not the difference (cluster.js, `zoomBucket`). Sixteen
+    // buckets to the octave, so no bucket is more than about 4.4 % of
+    // threshold wide; a wheel notch is ×1.16 and never lands in the bucket it
+    // left, but the way back does, and so do a trackpad's small deltas and
+    // every animation between two zooms. `exactZoom` is this view saying the
+    // zoom in force was chosen to part a stack, and a bucket below it would
+    // not part it.
+    const groupAt = exactZoom ? k : zoomBucket(k);
+    const stackKey = `${laidFor}|${groupAt}|${holdingKey(s)}`;
     stacked = stackings.get(stackKey)
-      ?? stackings.set(stackKey, stackLayout(collapseLayout(laid, { k, alone }), { k, alone }));
+      ?? stackings.set(stackKey, stackLayout(collapseLayout(laid, { k: groupAt, alone }), { k: groupAt, alone }));
     // A stack is in the window if any event under it is, and in the horizon
     // at the band of its nearest member: the same rule the map's stacks
     // follow. Both are only ever asked of a stack of one in practice, since
     // the horizon's own events are held out above, but the picture should
     // not depend on that staying true.
     const stackInWindow = (stack) => stack.members.some((m) => inWindow.get(m.id));
+    // What is worth putting in the DOM. The map has drawn only the marks
+    // inside its viewport since H4a; the graph drew every stack of the whole
+    // arrangement at every notch, and at 20,000 events that is 24,310
+    // elements to build, insert and lay out for a picture of which two
+    // thirds are off the screen (STATUS.md, "what the graph's notch actually
+    // costs"). The rectangle is already in this view's render key, so a pan
+    // redraws and the cull can never leave a stale picture behind.
+    //
+    // The selected event keeps its mark wherever it is, exactly as it does on
+    // the map: it is what the panel is showing, and the picture must not
+    // disagree with the panel about whether the thing exists. The rest of the
+    // working set is drawn when it is on screen — being drawn alone rather
+    // than inside a stack (M25's never-hide rule, `alone` above) is a
+    // question about stacking and is untouched by this.
+    const drawable = (stack) => Boolean(stack) && (stack.representative.id === s.selected
+      || onScreen(stack.x, stack.y, box, DRAW_MARGIN / k));
     const radiusOf = new Map(stacked.nodes.map((stack) => [
       stack.key,
       stack.representative.id === s.selected
@@ -609,6 +699,11 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
     const stackByKey = new Map(stacked.nodes.map((stack) => [stack.key, stack]));
     edgesGroup.replaceChildren();
     for (const line of stacked.edges) {
+      // A line is drawn when either of its ends is: an arrow into the view
+      // from a cause off the left of it is half the point of the picture, and
+      // one whose both ends are outside it is a line across a rectangle it
+      // never enters (index2 review, finding 11's amendment).
+      if (!drawable(stackByKey.get(line.from)) && !drawable(stackByKey.get(line.to))) continue;
       const any = (ids) => line.members.some((m) => ids.has(m.id));
       const faded = !stackInWindow(stackByKey.get(line.from)) || !stackInWindow(stackByKey.get(line.to));
       const marks = classes(
@@ -658,6 +753,7 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
     nodesGroup.replaceChildren();
     let selectedMark = null;
     for (const stack of stacked.nodes) {
+      if (!drawable(stack)) continue;
       const node = stack.representative;
       const radius = radiusOf.get(stack.key);
       if (stack.count > 1) {
@@ -738,7 +834,7 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
     }
     if (selectedMark) nodesGroup.appendChild(selectedMark);
 
-    drawLabels(s, k);
+    drawLabels(s, k, box);
   }
 
   // Zoomed out, only the heaviest marks on screen are named and a label
@@ -751,9 +847,8 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
   // would be the wrong kind of tidy. A label that collides is moved to the
   // other side of its mark first, and only drawn over another if neither
   // side is free.
-  function drawLabels(s, k) {
+  function drawLabels(s, k, box) {
     labelsGroup.replaceChildren();
-    const box = view();
     const all = k >= LABEL_ALL_ZOOM;
     const onScreen = stacked.nodes.filter((n) => n.x >= box.x0 && n.x <= box.x1 && n.y >= box.y0 && n.y <= box.y1);
     const candidates = [...onScreen].sort(
@@ -817,6 +912,7 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
     if (span > whole * FIT_SHARE) return;
     const k = Math.min(FIT_ZOOM, laid.width / span);
     transform = { k, x: laid.width / 2 - ((x0 + x1) / 2) * k, y: laid.height / 2 - (laid.height / 2) * k };
+    exactZoom = false;
     applyTransform();
   }
 

@@ -15,6 +15,7 @@ import path from 'node:path';
 import {
   layoutGraph, stackLayout, crosses, BAND_HEIGHT, AXIS_HEIGHT, STACK_DISTANCE, MAX_ZOOM,
 } from '../src/graph-view/layout.js';
+import { zoomBucket, ZOOM_BUCKETS_PER_OCTAVE, SPLIT_MARGIN } from '../src/cluster.js';
 import { lanesFor } from '../src/lanes.js';
 import { ROOT, corpusOf } from './helpers.mjs';
 
@@ -287,6 +288,61 @@ test('what the reader is working with is never inside a stack', () => {
   for (const node of l.nodes) {
     const one = stackLayout(l, { k: 1, alone: new Set([node.id]) });
     assert.ok(one.nodes.some((n) => n.key === node.id && n.count === 1), node.id);
+  }
+});
+
+// --- the zoom a stacking is filed under (I6) --------------------------------
+//
+// The view keys its stacking on `zoomBucket(k)` rather than on the zoom the
+// picture is drawn at, as the map's grouping has since H4a: what decides a
+// stacking is the threshold D / k, so what matters is the ratio between two
+// zooms. These hold the two files to each other — the arithmetic is in
+// `src/cluster.js` and the consequence is here.
+
+test('two zooms in one bucket are one stacking, and the next bucket is another filing', () => {
+  const l = layoutGraph(crowd());
+  const k = 1.7;
+  // A hair off a zoom already seen is what a wheel does on the way back: it
+  // never retraces its own floating point, and a hair is inside a bucket.
+  const hair = k * 1.001;
+  assert.equal(zoomBucket(hair), zoomBucket(k), 'a hair is inside the bucket');
+  assert.equal(
+    stackShape(stackLayout(l, { k: zoomBucket(hair) })),
+    stackShape(stackLayout(l, { k: zoomBucket(k) })),
+    'so the same stacks, with the same members, and the second is a cache hit',
+  );
+  // One bucket further in is another key, and the picture is free to change.
+  const up = k * 2 ** (1 / ZOOM_BUCKETS_PER_OCTAVE);
+  assert.notEqual(zoomBucket(up), zoomBucket(k), 'a bucket apart is filed apart');
+  // And the bucket is never above the zoom the reader is at, which is the
+  // whole of the rounding's safety: a stacking computed at a zoom that does
+  // not part a cluster is a picture with no mark where the reader clicks.
+  for (const at of [1, 1.03, 1.7, 2.46, 7.9]) assert.ok(zoomBucket(at) <= at, `${at} rounds down`);
+});
+
+test("the margin on `coreZoom` is wider than a bucket, so a rounded zoom still parts the stack", () => {
+  // `coreZoom` is a hair past the zoom at which a cluster comes apart —
+  // `SPLIT_MARGIN`, five per cent — and a bucket is sixteen to the octave,
+  // 4.4 per cent. The click that opens a stack is answered at exactly the
+  // zoom it named (`exactZoom` in graph-view.js and map.js, and finding 12 of
+  // the review of the health plan); this says that even without that
+  // exemption the rounding could not swallow the split, which is why
+  // bucketing a stacking is safe at all.
+  assert.ok(SPLIT_MARGIN > 2 ** (1 / ZOOM_BUCKETS_PER_OCTAVE),
+    `a split margin of ${SPLIT_MARGIN} against a bucket of ${2 ** (1 / ZOOM_BUCKETS_PER_OCTAVE)}`);
+
+  const l = layoutGraph(crowd());
+  const stacks = stackLayout(l, { k: 1 }).nodes.filter((n) => n.count > 1 && n.splittable);
+  assert.ok(stacks.length, 'the crowded sample stacks something that can be parted');
+  for (const stack of stacks) {
+    const ids = stack.members.map((m) => m.id);
+    const together = (k) => {
+      const at = stackLayout(l, { k }).nodes.find((n) => n.members.some((m) => m.id === ids[0]));
+      return ids.every((id) => at.members.some((m) => m.id === id));
+    };
+    assert.equal(together(1), true, `${stack.key} is one mark at k = 1`);
+    assert.equal(together(stack.coreZoom), false, `${stack.key} comes apart at its own zoom`);
+    assert.equal(together(zoomBucket(stack.coreZoom)), false, 'and at the bucket below it');
   }
 });
 
