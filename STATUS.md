@@ -13,7 +13,87 @@ hundred lines again, cut it the same way.
 
 ## Last updated
 
-2026-09-08, after **M30c** (`docs/m30c-brief.md`), on `m0`: **a parent event has
+2026-09-08, after **I5** (`docs/index2/i5-brief.md` and its amendments, the
+sixth run of the second index cycle, `docs/index2-plan.md` D8 and A8), on `m0`:
+**the histories are one hashed file per kind and century, named in the
+manifest, and `data/index/` holds 74 files where it held 1,390.**
+
+**What went, and what is in its place.** `data/index/history/` was one file per
+record — 1,334 files and 471 KB on this data, 62,446 files and 11.1 MB at 10⁴,
+every one of them committed on `main` and shipped in the artifact so that a
+reviewer could see the versions of the one record in front of them. It is
+`history-<kind>-<key>-<hash>.json` now: one kind and one century a file, keyed
+by record id inside, carrying the same per-record object the old file did minus
+the `id` and `kind` it repeated. `files.history` — the unhashed directory name —
+is gone, `historyShards` is in the manifest in kind order and then year order,
+and there is no unhashed thing left in the index.
+
+| | files | apparent bytes | on disk |
+|---|---|---|---|
+| `data/index/` before | 1,390 | 2,186,109 | 7.1 MB |
+| `data/index/` after | **74** | 2,252,146 | **2.4 MB** |
+| — the histories before | 1,334 | 482,403 | 5.3 MB |
+| — the histories after | **18** | 545,495 | 96 KB |
+| `tests/fixtures/data/index/` | 65 → **25** | 46,706 → 50,048 | |
+
+**At 10⁴, which is what the run is measured by.** The bench atlas of 20,000
+events (`node tests/bench/run.mjs --dataset <dir>`'s own dataset) builds
+**234 files where it built 62,665**, and `node tools/build-index.mjs --data
+<it>` takes **12.1 s where it took 32.8 s** — 2.7× — of which the difference is
+almost all the 62,446 `writeFile` calls. `node tools/validate.mjs --data <it>
+--index`, which walks every one of those entries twice, takes **14.4 s where it
+took 27.6 s** — 1.92×. The histories themselves are **11,365,609 B against
+11,636,758**, a 2.3 % saving: at 10⁴ the `id`, `kind` and `schema` each of
+62,446 files repeated cost more than the two extra levels of indentation the
+shard's own shape adds.
+
+**On the real data the bytes went the other way, by 63 KB.** 545,495 against
+482,403, 13.1 % more, for the same reason read backwards: this repository's ids
+are short, so the three repeated keys were cheap and the indentation is not.
+The histories stay indented because a history is read in a terminal and in a
+diff, which is the line `compact` draws in `build-index.mjs` and which
+`tests/build-index.test.mjs` holds them to. **For the owner:** compacting them
+would take the 63 KB back and about 30 % more besides, at the cost of that
+line; nothing else in the index would change. Deviation 503.
+
+**What a reviewer gets.** The dashboard looks the open record's shard up by its
+kind and its own filing key — worked out from the core, which carries the year
+bounds the filing table reads, so it is answered before an attribute shard has
+landed — and holds the shard. Six records of one kind and century cost **one
+request**, measured in a real browser (`tests/review-browser.test.mjs`); it was
+one request per record, always, before this. `src/review/history.js` is
+untouched: it is handed the same per-record object it was handed before.
+
+**The filing key is one table for three schemes now.** `attributePeriod` in
+`src/explanations.js` — an event by the year it begins, an edge by the year its
+cause begins, a place and a source by their kind, anything else with no year in
+the `null` shard — is what the explanation shards, I3's attribute shards and
+I5's histories all file by (plan A8; index2 review, finding 10). It gained one
+answer here: `source`, the kind that is in no attribute shard because it is no
+part of the spine. Without it every source's history would have landed in the
+`null` shard beside every dateless record of every other kind — and at 10⁴ every
+edge history would have landed there too, which is the hole the review found.
+
+**The invariant H9 restored is untouched.** `compareIndex` compares the
+histories byte for byte, the exemption is still gone, `deploy.yml` still checks
+out at `fetch-depth: 0`, and `recordHistories` still refuses `from: "git"` on a
+shallow clone. A new test builds an index over a real shallow clone of the
+fixtures and asserts both halves: every record says `revised`, and two builds of
+that clone are byte-identical with rule 16 finding nothing.
+
+**The shape's own cost, for the record.** At 10⁴ the largest shard is
+**1,288,338 B** — one century of edges — and a reviewer opening one edge fetches
+it. That is the trade D8 took knowingly when it rejected one file per kind
+(10 MB to show one record's history at 10⁵); it is written here so the next
+decision is taken against the number.
+
+`node tools/validate.mjs --index` is byte-identical and the prerendered pages
+are unchanged (plan D7). `node --test` is **1,159 of 1,160 green, 0 skipped, 1
+todo** — the timeline row test I6 owns. `manifest.schema` is 6. Nothing under
+`data/` was created or edited: `data/index/` and `tests/fixtures/data/index/`
+were regenerated and nothing else.
+
+Before this, 2026-09-08, after **M30c** (`docs/m30c-brief.md`), on `m0`: **a parent event has
 one look on the three views — a ring outside its mark — at every zoom and under
 every grouping, and "Focus only on this" is gone.**
 
@@ -2956,6 +3036,60 @@ The numbering continues from 401, which is M31-3's last.
      comment instead, whole and ready to paste in above `### I3`, and this
      records that the body itself is untouched.
 
+### I5
+
+499. **`historyShards` carries `key` as well as `kind`, `from` and `to`**, which
+     §1 of the brief does not list. It is the shape `attributeShards` has and it
+     is there for I3's reason: the dashboard computes the record's filing key
+     and matches it, which is one comparison, where `from` and `to` would have
+     to be turned back into a key first. `key` is also the middle of the file's
+     own name, so a file found on disk says what is in it.
+
+500. **`attributePeriod` gained a `source` answer** (plan A8, and the amendment
+     the index2 review's finding 10 asks for). A source is in no attribute
+     shard — it is no part of the spine — so nothing but the histories asks,
+     and `attributeShardKey` now reads any string answer rather than the one
+     `place` it knew.
+
+501. **`writeIndex` no longer prunes a `history/` directory, because the special
+     case that named it is gone.** The brief asks for exactly that (§1, and A3:
+     the special cases are two). The consequence is that a working copy built
+     before I5 keeps the directory after a rebuild: `readIndex` does not read
+     it, so `node tools/validate.mjs --index` stays green and nothing serves
+     it, and `rm -r data/index/history` clears it. Both directories were
+     removed here, so nothing on `m0` or `main` carries one. The alternative —
+     one line naming `history` in `writeIndex` for one release — is the special
+     case the brief says to take out.
+
+502. **The shallow-clone test is in `tests/history.test.mjs`**, where the brief's
+     test list puts it in `tests/build-index.test.mjs`. The git plumbing, the
+     `git` helper and the real shallow clone are in the first file and the test
+     needs all three; what it asserts is what the brief asks for — a shallow
+     build says `revised` in every shard, two shallow builds are byte-identical,
+     and `compareIndex` finds nothing between them.
+
+503. **The histories are 63 KB bigger on the real data and 271 KB smaller at
+     10⁴.** 545,495 B against 482,403 here (+13.1 %) and 11,365,609 against
+     11,636,758 there (−2.3 %). The shard's records sit two levels deeper than
+     the old file's did, so every line of every version costs four more spaces;
+     against that, the `schema`, `id` and `kind` each of the old files repeated
+     are saved once per record. Which wins depends on how long the ids are, and
+     this repository's are short. They stay indented because a history is read
+     in a terminal and in a diff, which is the line `compact` draws in
+     `build-index.mjs`; **for the owner**, compacting them takes the 63 KB back
+     and about a third of the rest, and nothing else in the index changes.
+
+504. **The browser test counts requests for `history-event-` and not for every
+     history file.** The page opens a record of its own as it draws — a source,
+     in this queue's order — and that request does not reliably land before the
+     first click, so a baseline taken at that moment is a race. Counting the
+     shards of the kind the test itself opens is the same claim without one.
+
+505. **`deploy.yml` and `tests/workflows.test.mjs` were not touched**, per
+     amendment A2: the workflow copies `data/.` whole and the test names no
+     history line, so the brief's "the deploy allowlist must still name the
+     histories" had nothing to edit. Checked, not changed.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
@@ -3104,3 +3238,4 @@ I4 done
 M30c started 2026-09-08T11:20:51Z by scheduled
 M30c done
 I5 started 2026-09-08T11:52:56Z by scheduled
+I5 done
