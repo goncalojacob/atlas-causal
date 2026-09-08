@@ -9,15 +9,21 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-08",
-  "revised": null,
+  "revised": "2026-09-08",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "summary-drafted"
+    ],
+    "note": "Summary drafted in M41b from the two cached leads. It is joined to the atlas by the election of 4 October 2015 and the agreements of that November, both of whose records already name the Greens, and by the standing coalition with the PCP that this record carries as a relation."
   },
   "wikidata": "Q978086",
   "sitelinks": 17,
@@ -26,6 +32,14 @@
     "pt": "Partido Ecologista \"Os Verdes\""
   },
   "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Ecologist Party \"The Greens\"\", revision 1351442110"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Partido Ecologista \"Os Verdes\"\", revision 72696956"
+    },
     {
       "source": "wikidata",
       "locator": "Q978086"
@@ -37,7 +51,7 @@
     "Partido Ecologista Os Verdes",
     "Partido Ecologista \"Os Verdes\""
   ],
-  "summary": "Wikidata item Q978086, imported by tools/import/wikidata.mjs. The item's own description reads \"eco-socialist political party in Portugal\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The Ecologist Party \"The Greens\" was founded in 1982 and has stood at every election in coalition with the Communist Party — in the Aliança Povo Unido and then in the Coligação Democrática Unitária. It is a member of the European Greens and was a founding member of the European Federation of Green Parties.",
   "when": {
     "start": 1982,
     "end": null

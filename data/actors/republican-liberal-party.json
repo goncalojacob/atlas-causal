@@ -9,15 +9,21 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-08",
-  "revised": null,
+  "revised": "2026-09-08",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "summary-drafted"
+    ],
+    "note": "Summary drafted in M41b from the two cached Wikipedia leads this record now cites, and joined to the atlas through the election of 1921, whose own record names the party and gives its seat count."
   },
   "wikidata": "Q2054660",
   "sitelinks": 5,
@@ -26,6 +32,14 @@
     "pt": "Partido Liberal Republicano"
   },
   "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Republican Liberal Party (Portugal)\", revision 1282916904"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Partido Liberal Republicano\", revision 72060049"
+    },
     {
       "source": "wikidata",
       "locator": "Q2054660"
@@ -37,7 +51,7 @@
     "Partido Liberal Republicano",
     "Republican Liberal Party (Portugal)"
   ],
-  "summary": "Wikidata item Q2054660, imported by tools/import/wikidata.mjs. The item's own description reads \"Defunct political party in Portugal\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The Republican Liberal Party was formed in 1919 out of the two largest conservative republican parties of the day, the Evolutionists and the Unionists, together with figures from Sidónio Pais's party, in order to face the predominance the Democrats had held since 1912. It came first at the legislative election of 10 July 1921 with 79 of the 163 seats in the Chamber — the ballot this atlas holds as the one behind the Noite Sangrenta — and in 1923 it merged with the Reconstitution Party into the Nationalist Republican Party.",
   "when": {
     "start": 1919,
     "end": 1923

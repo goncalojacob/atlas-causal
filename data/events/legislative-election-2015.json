@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-03",
-  "revised": null,
+  "revised": "2026-09-08",
   "review": {
     "flags": [
       "date"
@@ -68,6 +68,14 @@
     {
       "actor": "pcp",
       "role": "opposition party"
+    },
+    {
+      "actor": "ecologist-party-the-greens",
+      "role": "party"
+    },
+    {
+      "actor": "people-animals-nature",
+      "role": "party"
     }
   ]
 }

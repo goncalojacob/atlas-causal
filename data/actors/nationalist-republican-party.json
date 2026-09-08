@@ -9,15 +9,21 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-08",
-  "revised": null,
+  "revised": "2026-09-08",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "summary-drafted"
+    ],
+    "note": "Summary drafted in M41b from the two cached leads. It reaches the atlas through the Liberals, whose 1923 merger into it this record carries as a relation, and through them the election of 1921; no record here names the Nationalists directly."
   },
   "wikidata": "Q847883",
   "sitelinks": 5,
@@ -26,6 +32,14 @@
     "pt": "Partido Republicano Nacionalista"
   },
   "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Nationalist Republican Party (Portugal)\", revision 1346340035"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Partido Republicano Nacionalista\", revision 71995030"
+    },
     {
       "source": "wikidata",
       "locator": "Q847883"
@@ -37,7 +51,7 @@
     "Partido Republicano Nacionalista",
     "Nationalist Republican Party (Portugal)"
   ],
-  "summary": "Wikidata item Q847883, imported by tools/import/wikidata.mjs. The item's own description reads \"political party in Portugal\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The Nationalist Republican Party was formed in 1923 out of the Republican Liberal Party, the Reconstitution Party and scattered figures of Sidónio Pais's old National Republican Party. It began as a moderate conservative party and drifted rightwards and towards Catholic opinion over the First Republic's last three years.",
   "when": {
     "start": 1923,
     "end": 1926

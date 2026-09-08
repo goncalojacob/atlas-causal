@@ -9,15 +9,21 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-08",
-  "revised": null,
+  "revised": "2026-09-08",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "summary-drafted"
+    ],
+    "note": "Summary drafted in M41b from the two cached leads, which say no more than this. It reaches the atlas through the relation that says Franco led it, and so through the election of 5 April 1908 — held nine weeks after the regicide and the fall of his ministry, and already in the atlas with him named as its outgoing head of government."
   },
   "wikidata": "Q75660",
   "sitelinks": 4,
@@ -26,6 +32,14 @@
     "pt": "Partido Regenerador Liberal"
   },
   "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Liberal Regenerator Party\", revision 1371473198"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Partido Regenerador Liberal\", revision 69829967"
+    },
     {
       "source": "wikidata",
       "locator": "Q75660"
@@ -36,7 +50,7 @@
     "Liberal Regenerator Party",
     "Partido Regenerador Liberal"
   ],
-  "summary": "Wikidata item Q75660, imported by tools/import/wikidata.mjs. The item's own description reads \"political party\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The Liberal Regenerator Party, formally the Centro Regenerador Liberal, was founded on 16 May 1901 by João Franco after he broke with Hintze Ribeiro, then leader of the Regenerator Party.",
   "when": {
     "start": 1901,
     "end": 1910

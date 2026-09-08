@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": "2026-09-04",
+  "revised": "2026-09-08",
   "review": {
     "flags": [
       "imported-facts",
@@ -71,6 +71,10 @@
     {
       "actor": "partido-democratico",
       "role": "won the largest share"
+    },
+    {
+      "actor": "democratic-leftwing-republican-party",
+      "role": "party"
     }
   ]
 }

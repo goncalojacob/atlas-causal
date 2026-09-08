@@ -9,15 +9,21 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-08",
-  "revised": null,
+  "revised": "2026-09-08",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "summary-drafted"
+    ],
+    "note": "Summary drafted in M41b from the two cached leads, and joined to the atlas by the 1999 merger, which the Bloco's own record here describes from the other end."
   },
   "wikidata": "Q2119074",
   "sitelinks": 10,
@@ -26,6 +32,14 @@
     "pt": "União Democrática Popular"
   },
   "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Popular Democratic Union (Portugal)\", revision 1352555139"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"União Democrática Popular\", revision 69821974"
+    },
     {
       "source": "wikidata",
       "locator": "Q2119074"
@@ -38,7 +52,7 @@
     "Popular Democratic Union (Portugal)",
     "União Democrática Popular"
   ],
-  "summary": "Wikidata item Q2119074, imported by tools/import/wikidata.mjs. The item's own description reads \"Portuguese political party (1974-1999)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The Popular Democratic Union was a Marxist party founded in 1974 which, at its fifteenth congress in 1999, turned itself into a political association on merging with other parties of the left to form the Bloco de Esquerda.",
   "when": {
     "start": 1974,
     "end": 1999

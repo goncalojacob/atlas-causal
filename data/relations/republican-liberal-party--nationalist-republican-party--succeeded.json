@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "republican-liberal-party--nationalist-republican-party--succeeded",
+  "kind": "relation",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-08",
+  "revised": null,
+  "review": {
+    "flags": [
+      "date",
+      "relation-drafted"
+    ],
+    "note": "Written in M41b from the cached Wikipedia leads it cites, to join an actor the second Portuguese round imported to a record the atlas already held. The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source."
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Nationalist Republican Party (Portugal)\", revision 1346340035"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Partido Republicano da Reconstituição Nacional\", revision 65247385"
+    }
+  ],
+  "from": "republican-liberal-party",
+  "to": "nationalist-republican-party",
+  "type": "succeeded",
+  "when": {
+    "start": 1923,
+    "end": 1923
+  },
+  "note": "The merger of 1923 that made the Nationalists, together with the Reconstitution Party and figures of the old Sidonist party."
+}

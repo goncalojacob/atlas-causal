@@ -9,15 +9,21 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-08",
-  "revised": null,
+  "revised": "2026-09-08",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "summary-drafted"
+    ],
+    "note": "Summary drafted in M41b from the two cached leads, which say what the party was and where it went and very little else. Its part in the wartime governments is not in this record because no source here states it."
   },
   "wikidata": "Q1720273",
   "sitelinks": 8,
@@ -26,6 +32,14 @@
     "pt": "Partido Republicano Evolucionista"
   },
   "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Evolutionist Party\", revision 1292285375"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Partido Republicano Evolucionista\", revision 71995021"
+    },
     {
       "source": "wikidata",
       "locator": "Q1720273"
@@ -36,7 +50,7 @@
     "Evolutionist Party",
     "Partido Republicano Evolucionista"
   ],
-  "summary": "Wikidata item Q1720273, imported by tools/import/wikidata.mjs. The item's own description reads \"former Portuguese political party\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The Evolutionist Party, formally the Republican Evolutionist Party, appeared on 24 February 1912 as the first secession from the Portuguese Republican Party, and was led by António José de Almeida. In 1919 it was one of the two conservative republican parties that merged into the Republican Liberal Party, which came first at the election of 1921.",
   "when": {
     "start": 1912,
     "end": 1919

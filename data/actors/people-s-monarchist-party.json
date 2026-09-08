@@ -9,15 +9,21 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-08",
-  "revised": null,
+  "revised": "2026-09-08",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "summary-drafted"
+    ],
+    "note": "Summary drafted in M41b from the two cached leads, and joined to the atlas through the legislative election of 2 December 1979, whose record already names the PPM as the third party of the Democratic Alliance."
   },
   "wikidata": "Q1851550",
   "sitelinks": 13,
@@ -26,6 +32,14 @@
     "pt": "Partido Popular Monárquico"
   },
   "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"People's Monarchist Party (Portugal)\", revision 1370597330"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Partido Popular Monárquico\", revision 72528291"
+    },
     {
       "source": "wikidata",
       "locator": "Q1851550"
@@ -37,7 +51,7 @@
     "Partido Popular Monárquico",
     "People's Monarchist Party (Portugal)"
   ],
-  "summary": "Wikidata item Q1851550, imported by tools/import/wikidata.mjs. The item's own description reads \"monarchist political party in Portugal\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The People's Monarchist Party was founded on 23 May 1974 by Gonçalo Ribeiro Telles, a month after the coup, to gather the monarchist forces that had opposed the Estado Novo and supported the restoration of democracy.",
   "when": {
     "start": 1974,
     "end": null

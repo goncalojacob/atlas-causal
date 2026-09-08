@@ -9,15 +9,21 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-08",
-  "revised": null,
+  "revised": "2026-09-08",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "summary-drafted"
+    ],
+    "note": "Summary drafted in M41b from the two cached leads, and joined to the atlas through the legislative election of 4 October 2015, which is the ballot at which the English lead says the party first entered the Assembly."
   },
   "wikidata": "Q2054840",
   "sitelinks": 14,
@@ -26,6 +32,14 @@
     "pt": "Pessoas–Animais–Natureza"
   },
   "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"People Animals Nature\", revision 1371114057"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Pessoas–Animais–Natureza\", revision 72472222"
+    },
     {
       "source": "wikidata",
       "locator": "Q2054840"
@@ -37,7 +51,7 @@
     "Pessoas–Animais–Natureza",
     "People Animals Nature"
   ],
-  "summary": "Wikidata item Q2054840, imported by tools/import/wikidata.mjs. The item's own description reads \"Portuguese political party\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "People-Animals-Nature was founded in 2009 and calls itself a party of causes, for human rights, for animals and for nature. It won a seat in the Madeiran regional assembly in 2011 and its first seat in the Assembly of the Republic in 2015.",
   "when": {
     "start": 2009,
     "end": null

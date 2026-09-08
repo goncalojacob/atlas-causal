@@ -9,15 +9,21 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-08",
-  "revised": null,
+  "revised": "2026-09-08",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "summary-drafted"
+    ],
+    "note": "Summary drafted in M41b from the two cached leads. They disagree with the item about the founding: the English lead says 1925, the Wikidata interval opens in 1920. The interval is left as the item had it and the difference is what a reviewer should settle first."
   },
   "wikidata": "Q3366682",
   "sitelinks": 3,
@@ -26,6 +32,14 @@
     "pt": "Partido Republicano da Esquerda Democrática"
   },
   "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Democratic Leftwing Republican Party\", revision 1254932259"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Partido Republicano da Esquerda Democrática\", revision 64722661"
+    },
     {
       "source": "wikidata",
       "locator": "Q3366682"
@@ -36,7 +50,7 @@
     "Democratic Leftwing Republican Party",
     "Partido Republicano da Esquerda Democrática"
   ],
-  "summary": "Wikidata item Q3366682, imported by tools/import/wikidata.mjs. The item's own description reads \"Portuguese political party\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The Republican Party of the Democratic Left was a party of the First Republic, founded as a breakaway on the left of the Democratic Party and led by José Domingues dos Santos; its members were known as the canhotos. It contested one election only, the legislative election of 8 November 1925 that this atlas holds, where it took about 3.7 per cent of the vote and seven seats, and it lasted about two years.",
   "when": {
     "start": 1920,
     "end": 1927

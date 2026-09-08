@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": "2026-09-04",
+  "revised": "2026-09-08",
   "review": {
     "flags": [
       "imported-facts",
@@ -78,6 +78,10 @@
     {
       "actor": "pcp",
       "role": "stood clandestinely inside the CDE lists"
+    },
+    {
+      "actor": "portuguese-democratic-movement",
+      "role": "opposition"
     }
   ]
 }
