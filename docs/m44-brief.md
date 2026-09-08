@@ -599,3 +599,157 @@ the Soviet Union, the Bosnian War, the Cuban missile crisis, the Prague Spring,
 the East German uprising of 1953, the European refugee crisis of 2015, the
 collectivisation of Soviet agriculture, the Pact of Steel, and any United
 States presidential election.
+
+## Amendments after review
+
+A0. These amendments override the body of `docs/m44-brief.md` wherever the two
+differ. Every claim in them was checked against `origin/m0` at `de697a9`, not
+at `2246f23`; if `m0` has moved again, recheck the three files they name
+before starting.
+
+A1. **Twenty-nine of Appendix A's thirty-six items are already in
+`data/imports/wikidata-state.json` -> `runs.import.done`, so ticking them
+imports nothing.** `nextBatch` in `tools/import/wikidata.mjs` filters the
+wanted list by `done`, and deviation 447 put these there: Q12583, Q178687,
+Q214456, Q159950, Q464399, Q177918, Q184183, Q165725, Q186284, Q211674,
+Q178275, Q134949, Q8683, Q12199, Q182814, Q49077, Q83085, Q191836, Q82664,
+Q381375, Q29269, Q190029, Q242352, Q47359, Q106308, Q185729, Q101452,
+Q896666, Q33761. Only seven Appendix A items are new: Q153122, Q1048750,
+Q190315, Q426722, Q1429076, Q190758, Q15353665. M44a does not rewind them and
+does not pretend to import them; set 1 is those seven, and the twenty-nine are
+listed in `STATUS.md` as blocked on the lane question, naming the owner.
+
+A2. **The lane fix is not part of M44.** Owner question 3's recommendation
+cannot be implemented as written: `runImportMode` walks `seeds.items` and
+never reads `seeds.queries`, so a region on a query is unreachable, and
+`schema/v1/import-seeds.json` sets `additionalProperties: false` on both the
+root and each query. Any fix must be a new per-item table at the root of the
+seeds file plus a schema change plus a tool change plus a test, which is a
+code milestone. M44a runs without it. If the owner orders that milestone
+first, M44a is re-scoped afterwards and the rewind of A1's twenty-nine happens
+there, in a commit of its own whose body names all twenty-nine.
+
+A3. **A tick adds an id to `items` only if `items` does not already hold it.**
+All twenty-nine of A1 are already in `items` (deviation 447), and appending
+them fails `tests/import-seeds.test.mjs`. The commit body says how many rows
+were ticked, how many ids were added, and how many were already there. The
+"Done when" of section 3f reads "`items` holds 592 + the ids actually added,
+with no duplicate", not "592 + the ticks".
+
+A4. **`consensus` requires a citation that is not Wikidata and not Wikipedia.**
+Rule 22 tests only `wikipedia-en` and `wikipedia-pt`
+(`WIKIPEDIA_SOURCES` in `src/validate/rules.js`), so an edge citing
+`wikidata` alone, or Wikipedia plus `wikidata`, passes it while resting on
+nothing anybody read. M44b may write `confidence: "consensus"` only on an edge
+citing at least one source record that is none of `wikidata`, `wikipedia-en`,
+`wikipedia-pt`; otherwise `probable`, or `disputed` with a `dispute` naming
+who. Widening rule 22 is somebody else's milestone and is noted in
+`STATUS.md`.
+
+A5. **Eleven of the twelve rows in section 4c un-retract an actor, not an
+event, and an actor takes no edge (deviation 455).** `energias-de-portugal`,
+`national-syndicalists`, `university-of-porto`, `banco-comercial-portugues`,
+`portuguese-investment-bank`, `altice-portugal`, `nos`,
+`brisa-auto-estradas-de-portugal`, `semapa`, `altri` and
+`the-navigator-company` are retracted actors; only `lateran-treaty`,
+`assassination-of-john-f-kennedy`, `cultural-revolution`,
+`convention-on-the-elimination-of-all-forms-of-discrimination-against-women`
+and `united-nations-convention-on-the-law-of-the-sea` are events. An actor is
+reinstated by being named in an active event's `actors` with a role from
+`data/roles.json`, and rule 11 makes a retracted actor referenced by an active
+event a hard error, so the reinstatement and the event that names it are one
+commit. Section 4b's table gains a second shape for these: record, the event
+that names it, the role, and the sentence that argues it. The two-hop bar of
+section 4a is about events and is not applied to an actor.
+
+A6. **Strike the Azores row of section 4c.** `data/events/azores-agreement-1943.json`
+exists and is active; drafting it again writes a duplicate nothing validates
+against. If the 1962 renewal is a separate event, it is a separate record and
+the 1943 one is left alone.
+
+A7. **Set 3 is `revolution` only, eight rows.** No class in
+`data/imports/wikidata-seeds.json` -> `classes` carries
+`category: "economy"` or `category: "founding"`; `revolution` has exactly one
+(`Q45382`, coup d'etat). The eight slots section 3b gave to `economy` go to
+set 4.
+
+A8. **Set 4 is the remainder to the cap, whatever the earlier sets leave.**
+Appendix A holds thirty-six rows, not sixty, and after A1 and A7 sets 1 to 3
+yield far fewer than the table says. The rule is: sets 1, 2 and 3 as amended,
+then the best remaining world rows by sitelinks, ties by item id, until the
+total ticked reaches 140. The rule as run, and the count each set contributed,
+is written at the top of `docs/wikidata-candidates.md` before any tick.
+
+A9. **Expect a second refusal class besides the lane.** Six Appendix A rows
+print a class the table does not hold — `proxy war`, `zoonosis`, `ethnic
+conflict`, `charter`, `multilateral treaty`, `disease outbreak`. They are
+refused and listed, the table is not widened to force a yield, and the count
+goes in `STATUS.md` beside the lane refusals.
+
+A10. **The claim line and the three done lines go on `m0`, alone in their own
+commits.** The gate of `docs/run-protocol.md` reads
+`origin/m0:STATUS.md` with `grep -qxF`; a done line on `m44` is invisible to
+every run that waits on it. Records, docs and counts go on `m44`; `STATUS.md`
+gains its `M44 started` claim and its `M44a done` / `M44b done` / `M44 done`
+lines on `m0`, each as a single-file commit that touches nothing else. M44's
+first commit on `m0` also amends `docs/run-protocol.md` to say that a
+milestone branch `m44` cut from `m0` is this run's own and not another agent.
+
+A11. **Reinstating a record deletes its `retraction` block**, because rule 27
+makes a retraction on a non-retracted record an error, and the block's
+`reason` is copied verbatim into `docs/m44-retractions.md` under a heading
+"Reinstated" in the same commit, so the account of the withdrawal survives the
+undoing of it.
+
+A12. **(B) is a target, not a second criterion.** A record with an edge to a
+stranded world event and an edge that gives the pair Portuguese reach is
+itself within one hop of a Portuguese event, so it is already (P). Keep the
+count of stranded records unstranded as the number section 4b reports; drop
+(B) as a separate keep rule.
+
+A13. **M44b is split.** M44b wires the imported records and writes
+`docs/m44-connections.md` and `docs/m44-retractions.md`. **M44c** drafts the
+Portuguese events of section 4c under the exception and lands the actor
+reinstatements of A5. M40b's single run did sixty-three wirings and nothing
+else; one run does not carry ninety wirings, twelve drafted events, eleven
+reinstatements, two new documents and a recomputed hop table.
+
+A14. **Every hand-drafted record carries `origin: { "tool": "assistant" }` and
+`review: { "status": "draft" }`**, is inside the dated exception of
+2 September for twentieth- and twenty-first-century Portugal, and is written
+only where a source already in `data/sources/` carries the claim, cited with a
+locator. There are thirty-four source records and most of section 4c's twelve
+have no obvious one among them; an event with no such source is not written
+and goes on the owner's list at the end of `docs/m44-connections.md`, naming
+the work the atlas would need. No new source record, no invented DOI, ISBN or
+URL, and no date the run cannot point at in a source it has read.
+
+A15. **Every count in this brief is restated from `data/` at the start of the
+run**, not read from section 1. The measurement is from `2246f23`; `m0` is at
+`de697a9` and `wikidata-state.json` was written on 8 September. The
+Portuguese-event rule of section 4a is written out — the place ids and the
+actor ids, listed — into `docs/m44-connections.md` before the first hop is
+counted, and the hop count is computed over active events and active edges
+only.
+
+A16. **A small code milestone, M44-0, runs before M44a and answers A2.** On `m0`, gated on `I9 done`: a per-item table at the root of `data/imports/wikidata-seeds.json` (`lanes: { "<Q-id>": "<region id>" }`, checked by the schema against `data/regions.json`), read by `runImportMode` where an item has no place to derive a lane from, with a test; the twenty-nine of A1 given their lanes there from the retraction notes; the cursor rewound for those twenty-nine in a commit of its own naming them and deviation 447; `docs/run-protocol.md` amended for the `m44` branch (A10). After it, set 1 is the thirty-six of Appendix A and A1's restriction to seven no longer applies. Nothing else of M44 moves onto `m0`.
+
+**Done when, restated.** M44a: the tick rule as amended by A1, A3, A7 and A8
+is at the top of `docs/wikidata-candidates.md` with each set's actual count;
+`items` holds only ids it did not already hold; the Action has pushed
+`import: done` on `import/run-m44-<date>`; that branch is fast-forward-merged
+into `m44`; the refusals are counted by reason — lane, class, no date — in
+`STATUS.md` on `m0`; `node tools/validate.mjs` without `--index` reports zero
+errors; `M44a done` is a line of its own in `STATUS.md` on `m0`. M44b: every
+imported record is wired under (P) or retracted with its reason in
+`docs/m44-retractions.md`; `docs/m44-connections.md` holds the frozen
+Portuguese-event rule, the row-per-record table and both recomputed numbers —
+how many of M44's records are Portuguese-reaching, and how many previously
+stranded world events stopped being stranded; no edge is `consensus` without a
+citation that is neither Wikidata nor Wikipedia (A4); `node --test
+--test-timeout=120000` is green against a locally rebuilt, unstaged index;
+`M44b done` is a line of its own in `STATUS.md` on `m0`. M44c: the Portuguese
+events of section 4c that a held source supports are drafted under A14, the
+rest are on the owner's list, the actor reinstatements of A5 land each with
+the event that names it, and `M44c done` is a line of its own on `m0`.
+`M44 done` goes in only after all three, with the section on pull request #1.
