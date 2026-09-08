@@ -48,6 +48,25 @@ export function retractedSteps(atlas, chain) {
   return edgeAt(atlas, chain[stood]) ? chain.length - stood : 0;
 }
 
+// --- who put this path together --------------------------------------------
+//
+// A chain is a chain wherever it came from: the reader clicked it out, or the
+// atlas assembled it (walk.js) and it was set into the state. The three views
+// draw both the same way, madder over the picture, and they should — the steps
+// are the same edges, with the same confidence and the same dispute marks.
+//
+// What differs is who is making the argument, and that is not something a
+// reader can see by looking. So the card says it, and this is the one place
+// that decides when: the session is holding a walk, and the chain on screen is
+// that walk, step for step. Anything else — a walk from a question the reader
+// has since walked away from, a chain they have taken a step back along — is
+// their own path again and the card says nothing extra, because they know.
+export function walkProvenance(walk, chain = []) {
+  const steps = walk?.steps ?? [];
+  if (steps.length === 0 || steps.length !== chain.length) return null;
+  return steps.every((id, i) => id === chain[i]) ? walk.provenance ?? null : null;
+}
+
 // --- one click, three pictures ---------------------------------------------
 //
 // Clicking a mark that is a consequence of the event already open means

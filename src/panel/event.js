@@ -11,7 +11,7 @@
 
 import { esc } from '../util/esc.js';
 import { consequences, antecedents, convergence, convergenceByDepth } from '../graph.js';
-import { chainEdges as walkedEdges } from '../chain.js';
+import { chainEdges as walkedEdges, walkProvenance } from '../chain.js';
 import { formatInterval, formatYear, defaultCalendar } from '../util/dates.js';
 import { laneExplain } from '../lanes.js';
 import { horizonHtml } from './horizon.js';
@@ -80,6 +80,28 @@ function breadcrumbHtml(ctx, chainEdges, event) {
     <p class="actions"><button type="button" data-action="back">Step back</button>
       <button type="button" data-action="clear">Clear the path</button></p>
   </nav>`;
+}
+
+// The line that says the atlas put this path together and the reader did not.
+//
+// It is the whole difference between "the atlas suggests" and "the atlas
+// asserts", and it is one sentence because a reader who is following an
+// argument will read one. Who produced it, what question it answers, and that
+// every step of it is a link somebody wrote — with its confidence and its
+// dispute marks exactly as they are on every other path, because they are the
+// same records.
+//
+// A path the reader walked themselves says nothing extra: they know. So this
+// is drawn only while the chain on screen *is* the walk the session is holding
+// (chain.js), and it goes as soon as they take a step of their own.
+function generatedWalkHtml(ctx, state) {
+  const provenance = walkProvenance(ctx.walk?.(), state.chain ?? []);
+  if (!provenance) return '';
+  const steps = provenance.steps.length;
+  return `<p class="notice generated">The <strong>atlas</strong> put this path together on ${esc(provenance.on)},
+    to answer “${esc(provenance.question)}” — you did not walk it.
+    Each of its ${esc(steps)} ${steps === 1 ? 'step' : 'steps'} is a link somebody wrote, with its confidence
+    and its dispute marks unchanged. Nothing on it was written by a machine.</p>`;
 }
 
 // The actors of one event as chips in the head, with what each did in it.
@@ -276,9 +298,12 @@ export function eventCardHtml(ctx, { event, found, state, remembered = null }) {
   // still on its way (data.js).
   const sourceCount = atlas.citationCount ? atlas.citationCount('event', event.id) : 0;
 
-  const notices = found.via.map((v) => (v.reason === 'alias'
+  // First of the notices, above the alias and the status: who assembled the
+  // path is the frame everything under it is read in.
+  const notices = [generatedWalkHtml(ctx, state)].filter(Boolean);
+  notices.push(...found.via.map((v) => (v.reason === 'alias'
     ? `<p class="notice"><code>${esc(v.id)}</code> is a former id of this event.</p>`
-    : `<p class="notice"><code>${esc(v.id)}</code> was merged into this event.</p>`));
+    : `<p class="notice"><code>${esc(v.id)}</code> was merged into this event.</p>`)));
   if (event.status !== 'active') notices.push(`<p class="notice status">This event is <strong>${esc(event.status)}</strong>; it has no active links.</p>`);
   // The link this page was opened with named a step that has been withdrawn
   // since; main.js cut the walk there. A path quietly shorter than the one

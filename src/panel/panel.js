@@ -450,6 +450,11 @@ export function createPanel(container, {
     eventLink,
     highlightedActor,
     walkWasCut,
+    // The walk the atlas assembled, when the session is holding one (walk.js,
+    // state.js). Not a field of the state and deliberately not one: it is read
+    // through the store, as the card reads the trail through it, and the card
+    // uses it to say who put the path on screen together.
+    walk: () => state.walk?.() ?? null,
     isCurrent: (mine) => mine === token,
   };
 
@@ -508,6 +513,12 @@ export function createPanel(container, {
     return {
       card: OPENINGS.map((field) => s[field] ?? '').join('|'),
       chain: s.chain.join(','),
+      // Whether the chain on screen is a walk the atlas put together, which is
+      // a line on the card and cannot be seen in the state: `setWalk` notifies
+      // with every field of the state as it was (state.js), so a key without
+      // this would compare two keys that say the same thing and skip the
+      // redraw the walk arrived for.
+      walk: (state.walk?.()?.steps ?? []).join(','),
       horizon: s.horizon ?? null,
       // The lens the card is drawn under. `lensControl` reads it at render —
       // "Focus on this" or "stop focusing on this" — and nothing patched it in
@@ -529,7 +540,7 @@ export function createPanel(container, {
   // when it settles, say — a different card, and the list the reader is
   // choosing from would be replaced by the intro (A5).
   const sameCard = (a, b) => a.card === b.card && a.chain === b.chain && a.horizon === b.horizon
-    && a.lens === b.lens;
+    && a.lens === b.lens && a.walk === b.walk;
   const sameWindow = (a, b) => a.from === b.from && a.to === b.to;
 
   // The window's own bits, put back into the card that is on screen. Each is

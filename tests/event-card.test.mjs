@@ -11,6 +11,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import path from 'node:path';
 import { eventCardHtml } from '../src/panel/event.js';
+import { walkTo } from '../src/walk.js';
 import { esc } from '../src/util/esc.js';
 import { bounds } from '../src/util/dates.js';
 import { atlasOf, FIXTURE_DATA, ROOT } from './helpers.mjs';
@@ -201,4 +202,71 @@ test('nothing a record carries reaches the card unescaped', () => {
   assert.doesNotMatch(html, /<img/);
   assert.doesNotMatch(html, /<b>r<\/b>/);
   assert.match(html, /&lt;img onerror=/);
+});
+
+// --- who put this path together --------------------------------------------
+//
+// A generated walk is drawn as a walked chain is — the same breadcrumb, the
+// same madder, the same badges — because the steps are the same records. What
+// a reader cannot see by looking is who made the argument, so the card says
+// it in one line (I9, plan decision 11).
+
+const DAY = Date.UTC(2026, 8, 8);
+
+const withWalk = (atlas, walk) => ({ ...context(atlas), walk: () => walk });
+
+test('a walk the atlas assembled says so on the card, once, at the top', async () => {
+  const atlas = await atlasOf(FIXTURE_DATA);
+  const walk = walkTo(atlas, 'fixture-event-t', { selected: 'fixture-event-a' }, { now: DAY });
+  assert.equal(walk.steps.length, 3);
+  const html = eventCardHtml(withWalk(atlas, walk), {
+    event: atlas.events.get('fixture-event-t'),
+    found,
+    state: state({ selected: 'fixture-event-t', chain: [...walk.steps] }),
+  });
+
+  const notices = [...html.matchAll(/<p class="notice generated">([\s\S]*?)<\/p>/g)];
+  assert.equal(notices.length, 1, 'one line, not one per step');
+  const line = notices[0][1].replace(/\s+/g, ' ');
+  assert.match(line, /The <strong>atlas<\/strong> put this path together on 2026-09-08/);
+  assert.match(line, /Why Fixture event T\?/, 'what question it answers');
+  assert.match(line, /you did not walk it/);
+  assert.match(line, /3 steps is a link somebody wrote, with its confidence and its dispute marks unchanged/);
+  // Above the head, so that everything under it is read in that frame, and
+  // the breadcrumb of the path itself is still the first thing on the card.
+  assert.ok(html.indexOf('notice generated') < html.indexOf('<header class="event-head">'));
+  assert.ok(html.indexOf('class="breadcrumb"') < html.indexOf('notice generated'));
+});
+
+// The steps are records and are drawn as records: a disputed link is marked in
+// the breadcrumb and warned about on arrival whoever assembled the path.
+test('each step of a generated walk keeps its own confidence and dispute marks', async () => {
+  const atlas = await atlasOf(FIXTURE_DATA);
+  const walk = walkTo(atlas, 'fixture-event-t', { selected: 'fixture-event-g' }, { now: DAY });
+  assert.deepEqual([...walk.steps], ['fixture-event-g--fixture-event-t--caused']);
+  const html = eventCardHtml(withWalk(atlas, walk), {
+    event: atlas.events.get('fixture-event-t'),
+    found,
+    state: state({ selected: 'fixture-event-t', chain: [...walk.steps] }),
+  });
+  assert.match(html, /notice generated/);
+  assert.match(html, /1 step is a link somebody wrote/, 'one step, not "1 steps"');
+  assert.match(html, /<nav class="breadcrumb"[\s\S]*?<span class="badge disputed"/);
+  assert.match(html, /You arrived here through a <strong>disputed<\/strong> link/);
+});
+
+// The reader takes a step of their own, or walks a path of their own that
+// happens to end in the same place: it is theirs, and the card says nothing
+// extra, because they know.
+test('a path the reader walked themselves carries no such line', async () => {
+  const atlas = await atlasOf(FIXTURE_DATA);
+  const walk = walkTo(atlas, 'fixture-event-t', { selected: 'fixture-event-a' }, { now: DAY });
+  const card = (chain, ctx) => eventCardHtml(ctx, {
+    event: atlas.events.get('fixture-event-t'), found, state: state({ selected: 'fixture-event-t', chain }),
+  });
+  assert.doesNotMatch(card([...walk.steps], context(atlas)), /notice generated/, 'no walk in the session');
+  assert.doesNotMatch(card([...walk.steps], withWalk(atlas, null)), /notice generated/);
+  // A step back: the chain on screen is no longer the walk that was produced.
+  assert.doesNotMatch(card(walk.steps.slice(0, 2), withWalk(atlas, walk)), /notice generated/);
+  assert.doesNotMatch(card([], withWalk(atlas, walk)), /notice generated/);
 });

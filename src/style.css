@@ -1024,6 +1024,10 @@ svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align:
   background: var(--ground); margin: 0 0 var(--space-3); font-size: var(--text-sm);
 }
 .panel .notice.disputed { border-color: var(--madder); background: var(--madder-faint); }
+/* Who put the path on screen together. Madder, because the chain it is about
+   is drawn madder: the notice and the picture it explains are the same colour,
+   and it is a fact about the argument, so it is as loud as a dispute is. */
+.panel .notice.generated { border-color: var(--madder); }
 /* Whose material this is, where it is not the atlas's own. Quieter than a
    dispute — it is a fact about the file and not about the argument — but it
    is set apart, because the licence asks for it to be legible beside the

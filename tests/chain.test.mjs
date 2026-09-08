@@ -4,7 +4,9 @@
 
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { chainEdges, retractedSteps, walkPatch, walkOrSelect } from '../src/chain.js';
+import {
+  chainEdges, retractedSteps, walkPatch, walkOrSelect, walkProvenance,
+} from '../src/chain.js';
 
 const edge = (id, status = 'active') => [id, { id, status, from: `${id}-from`, to: `${id}-to` }];
 const atlas = {
@@ -83,4 +85,25 @@ test('walkOrSelect is that rule, applied to the store', () => {
   const store = { get: () => ({ selected: 'revolution', chain: [] }), set: (p) => patches.push(p) };
   walkOrSelect(store, walkable, 'elections');
   assert.deepEqual(patches, [{ selected: 'elections', chain: ['revolution--elections--caused'] }]);
+});
+
+// --- who put this path together --------------------------------------------
+//
+// A chain is drawn the same way whoever assembled it, so the one thing that
+// can tell a reader is the card. This is when it says so: the session holds a
+// walk (walk.js) and the chain on screen is that walk, step for step.
+const provenance = { by: 'atlas', question: 'Why?', on: '2026-09-08', steps: ['a--b--caused', 'c--d--caused'] };
+const generated = { target: 'd', steps: ['a--b--caused', 'c--d--caused'], provenance };
+
+test('the card says the atlas assembled a path only while that path is on screen', () => {
+  assert.equal(walkProvenance(generated, ['a--b--caused', 'c--d--caused']), provenance);
+  assert.equal(walkProvenance(generated, ['a--b--caused']), null, 'a step back is the reader\'s own path');
+  assert.equal(walkProvenance(generated, ['a--b--caused', 'c--d--caused', 'd--e--caused']), null, 'a step on');
+  assert.equal(walkProvenance(generated, ['c--d--caused', 'a--b--caused']), null, 'the same steps, walked otherwise');
+  assert.equal(walkProvenance(generated, []), null);
+  assert.equal(walkProvenance(null, ['a--b--caused', 'c--d--caused']), null, 'no walk in the session');
+  assert.equal(walkProvenance(undefined), null);
+  // A walk with no steps to draw — no path to the endpoint — is not a path on
+  // screen, so there is nothing for the card to say it assembled.
+  assert.equal(walkProvenance({ steps: [], provenance }, []), null);
 });
