@@ -163,12 +163,23 @@ export function createPresencesLayer(group, projection, {
         return { drawn: 0, pending: false, failed };
       }
       const outlines = atlas.loadedGeometry(shard.file);
-      if (!outlines) {
+      // Two files, asked for together and in the same place: the outlines of
+      // this shard, and — since I1 — the metadata that says who held which of
+      // them, which left the spine for a file of its own and is fetched the
+      // first time a territory is actually drawn (docs/index2-plan.md, D1).
+      // Either one missing means there is nothing honest to draw yet, and
+      // either one failing is the same "the territories could not be loaded"
+      // the layer already says.
+      const havePresences = atlas.presencesLoaded ? atlas.presencesLoaded() : true;
+      if (!outlines || !havePresences) {
         // Nothing is cleared while a shard loads: the year before it is
         // usually the same map, and a blank flash would be worse than a
         // frame of staleness.
         const mine = (token += 1);
-        const fetchIt = () => atlas.loadGeometry(shard.file).then(() => {
+        const fetchIt = () => Promise.all([
+          outlines ? null : atlas.loadGeometry(shard.file),
+          havePresences ? null : atlas.loadPresences(),
+        ]).then(() => {
           report(false);
           if (mine === token && onReady) onReady();
         }, () => {

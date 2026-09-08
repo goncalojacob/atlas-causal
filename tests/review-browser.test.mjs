@@ -144,6 +144,28 @@ test('the record pane shows the history, the claim and the diff against the draf
   });
 });
 
+// I1 and index2 review finding 2. The dashboard runs the browser's half of
+// the validator against the whole universe, and the presences are part of it:
+// rule 17 and `actor-unused` read them (rules.js). They left the spine, so
+// the page draws its queue first and fetches them beside it, then rebuilds
+// the universe every editor opened after that is validated against.
+// What the missing list would cost is
+// `tests/presence-rules.test.mjs`, over the same rules.
+test('review.html draws its queue and fetches the presences beside it', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await open(page, url('review.html'), QUEUE_READY);
+    await waitFor(page, 'return performance.getEntriesByType("resource").some((e) => /\\/index\\/presences-/.test(e.name));', 'the presence file');
+    // Asked for once, and after the spine it is no longer part of.
+    const timing = await page.eval(`return performance.getEntriesByType("resource")
+      .filter((e) => /\\/index\\/(spine|presences)-/.test(e.name))
+      .map((e) => ({ what: e.name.includes("/index/spine-") ? "spine" : "presences", at: e.startTime }));`);
+    assert.equal(timing.filter((e) => e.what === 'presences').length, 1, JSON.stringify(timing));
+    const spine = timing.find((e) => e.what === 'spine');
+    const presences = timing.find((e) => e.what === 'presences');
+    assert.ok(presences.at >= spine.at, JSON.stringify(timing));
+  });
+});
+
 // An edge was reviewed as two ids and a textarea: what ran between the two
 // events could not be judged without leaving the page (health review B,
 // finding 7).

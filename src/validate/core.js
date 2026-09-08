@@ -9,6 +9,9 @@ import { buildUniverse, checkRules, normalizeRole } from './rules.js';
 import { KINDS } from '../kinds.js';
 import { edgeId } from '../vocab.js';
 import { astronomicalBounds } from '../util/dates.js';
+// The number the *reader* refuses an unknown value of, which is why it lives
+// there and is imported here rather than written out twice (data.js).
+import { INDEX_GENERATION } from '../data.js';
 
 export { KINDS, edgeId, buildUniverse };
 export const SCHEMA_VERSION = 1;
@@ -664,7 +667,7 @@ export function buildSpine(topology) {
   const cites = citesCountByRecord(topology.sources);
   const citesCount = (kind, id) => cites.get(`${kind}:${id}`) ?? 0;
   return {
-    schema: 1,
+    schema: INDEX_GENERATION,
     events: (topology.events ?? []).map((e) => spineEntry({
       ...envelopeOf(e, 'event'),
       title: e.title,
@@ -705,18 +708,9 @@ export function buildSpine(topology) {
       region: p.region,
       citesCount: citesCount('place', p.id),
     })),
-    // Only the key of the outline: the shard that holds it is chosen by year
-    // from the manifest, and `geometry.files` is read nowhere.
-    presences: (topology.presences ?? []).map((p) => spineEntry({
-      ...envelopeOf(p, 'presence'),
-      actor: p.actor,
-      when: p.when,
-      geometry: { key: p.geometry?.key ?? null },
-      dependencyOf: p.dependencyOf ?? null,
-      dependencyKind: p.dependencyKind ?? null,
-      capital: p.capital ?? null,
-      confidence: p.confidence,
-    })),
+    // No presences: they were 49.2 % of this file on the real data and
+    // nothing draws them until the territory layer does, so since I1 they are
+    // `buildPresenceIndex` below and a file of their own (index2-plan, D1).
     relations: (topology.relations ?? []).map((r) => spineEntry({
       ...envelopeOf(r, 'relation'),
       from: r.from,
@@ -752,6 +746,37 @@ export function buildSpine(topology) {
       authors: n.authors ?? [],
       window: n.window ?? null,
       steps: n.steps ?? [],
+    })),
+  };
+}
+
+// ─── The presences ─────────────────────────────────────────────────────────
+//
+// What `buildSpine` used to write under `presences`, moved out of it whole in
+// I1 and not otherwise touched: 261 KB of metadata that is half the graph
+// file on the real data and that nothing asks for until the territory layer
+// draws (docs/index2-plan.md, D1). The entries are the same entries, field
+// for field and in the same id order, so the bytes that moved are the bytes
+// that left and `tests/spine-loader.test.mjs` still builds the same atlas.
+//
+// Only the key of the outline: the shard that holds it is chosen by year from
+// the manifest, and `geometry.files` is read nowhere.
+//
+// Kept whole rather than sharded by period like the outlines: the interval
+// index in `data.js` is what makes `presencesAt` 0.07 ms against 2.39 ms
+// scanned, and it is an index over all of them.
+export function buildPresenceIndex(topology) {
+  return {
+    schema: INDEX_GENERATION,
+    presences: (topology.presences ?? []).map((p) => spineEntry({
+      ...envelopeOf(p, 'presence'),
+      actor: p.actor,
+      when: p.when,
+      geometry: { key: p.geometry?.key ?? null },
+      dependencyOf: p.dependencyOf ?? null,
+      dependencyKind: p.dependencyKind ?? null,
+      capital: p.capital ?? null,
+      confidence: p.confidence,
     })),
   };
 }

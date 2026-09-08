@@ -16,7 +16,15 @@ import { countPoints, simplifyGeometry } from '../src/util/simplify.js';
 import { ROOT } from './helpers.mjs';
 
 const fetchJson = async (url) => JSON.parse(await readFile(path.join(ROOT, url.split('?')[0]), 'utf8'));
-const atlas = () => loadAtlas({ dataRoot: 'tests/fixtures/data/', fetchJson });
+// The presence metadata is its own file since I1 and the atlas answers
+// emptily until it lands, so the cases below that are about *which* presences
+// a year shows ask for it first. That it is asked for at all, and that the
+// layer redraws when it arrives, is held further down.
+const atlas = async () => {
+  const a = await loadAtlas({ dataRoot: 'tests/fixtures/data/', fetchJson });
+  await a.loadPresences();
+  return a;
+};
 const nameOf = (id) => ({ 'fixture-polity-three': 'Fixture Polity Three', 'fixture-polity-four': 'Fixture Polity Four' })[id] ?? null;
 
 test('a presence says who, how long, and whose', () => {
@@ -150,6 +158,43 @@ test('a shard that will not load is said once, and unsaid when one arrives', asy
   assert.deepEqual(said, [true, false], 'and taken back when the shard arrives');
 });
 
+// I1: the metadata that says who held which outline is not in the spine any
+// more, so the layer asks for it where it already asks for the outlines and
+// redraws when it lands. Until then it draws nothing rather than drawing the
+// coastline with no borders on it and calling that a map of 1150.
+// The drawing itself is a DOM and is asserted in the browser
+// (tests/map-browser.test.mjs); what is held here is the request and what the
+// layer reports about it.
+test('the layer asks for the presence file and draws when it arrives', async () => {
+  const group = { addEventListener() {}, replaceChildren() {}, appendChild() {} };
+  const asked = [];
+  const a = await loadAtlas({
+    dataRoot: 'tests/fixtures/data/',
+    fetchJson: (url) => { asked.push(url); return fetchJson(url); },
+  });
+  const before = asked.length;
+  let redrawn = 0;
+  const layer = createPresencesLayer(group, { project: ([lon, lat]) => [lon, lat] }, {
+    atlas: a, onSelect: () => {}, onFailed: () => {}, defer: (fn) => fn(),
+  });
+  const settle = () => new Promise((resolve) => { setTimeout(resolve, 0); });
+
+  const first = layer.render({ year: 1150, onReady: () => { redrawn += 1; } });
+  assert.deepEqual(first, { drawn: 0, pending: true, failed: false }, 'nothing yet, and it says so');
+  // Polled rather than counted in macrotasks: the fetch here is a read off
+  // disk, and how many turns of the loop that takes is not this test's claim.
+  for (let i = 0; i < 200 && redrawn === 0; i += 1) await settle();
+  assert.equal(redrawn, 1, 'and it asked to be drawn again');
+  const fetched = asked.slice(before);
+  assert.equal(fetched.filter((url) => /\/index\/presences-[0-9a-f]{12}\.json$/.test(url)).length, 1,
+    `asked for the presence file once: ${fetched.join(' · ')}`);
+
+  // And the atlas has them, which is what the next render draws.
+  assert.equal(a.presencesLoaded(), true);
+  assert.deepEqual(a.presencesAt(1150).map((p) => p.id),
+    ['fixture-polity-four-1120', 'fixture-polity-three-1100']);
+});
+
 // --- the interval index ----------------------------------------------------
 //
 // H4a put an interval index under `presencesAt`, which was a scan of every
@@ -185,6 +230,7 @@ function yearsWorthAsking(presences) {
 test('the index answers what the scan answered, on every year that can differ', async () => {
   for (const [what, dataRoot] of [['the fixtures', 'tests/fixtures/data/'], ['the atlas', 'data/']]) {
     const a = await loadAtlas({ dataRoot, fetchJson });
+    await a.loadPresences();
     const all = [...a.presences.values()];
     assert.ok(all.length > 0, `${what} has presences`);
     const years = yearsWorthAsking(all);

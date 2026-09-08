@@ -49,6 +49,14 @@ for (const [query, ready, spines] of PAGES) {
       const requests = await page.eval(REQUESTS);
       const named = (part) => requests.filter((name) => name.includes(`/index/${part}`));
       assert.equal(named('spine-').length, spines, `${query} asked for the spine ${named('spine-').length} times`);
+      // I1: 221 KB of lane polygons left every page. The four numbers per
+      // lane that answered the viewport question are in the manifest, and the
+      // shapes themselves are fetched only by the wash a `regional` event is
+      // drawn as (index2-plan, D2) — which no default window here holds.
+      assert.equal(
+        requests.filter((name) => name.includes('geo/regions.json')).length, 0,
+        `${query} fetched the lane polygons: ${requests.join(' · ')}`,
+      );
     });
   });
 }
@@ -72,6 +80,41 @@ test('the atlas draws its three views out of the spine', { skip }, async () => {
     await waitFor(page, 'return document.querySelectorAll(".graph .node").length > 0;', 'nodes in the graph');
     const nodes = await page.eval('return document.querySelectorAll(".graph .node").length;');
     assert.ok(nodes > 10, `${nodes} nodes`);
+  });
+});
+
+// I1: 261 KB of presence metadata left the graph file for one of its own,
+// fetched by the territory layer — which is to say after the picture is
+// drawn and not before it.
+test('index.html draws before the presence file arrives, and draws it when it does', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    // ATLAS_READY is a mark or a bar on the screen — the picture the reader
+    // came for. The presence file has not necessarily even been asked for at
+    // that point, which is the whole claim; what is asserted below is that
+    // when it does arrive it arrived second, and that it draws.
+    await open(page, url('index.html'), ATLAS_READY);
+    await waitFor(page, 'return document.querySelectorAll(".layer-presences .presence").length > 0;', 'territories drawn');
+    const order = await page.eval(`return performance.getEntriesByType("resource")
+      .filter((e) => /\\/index\\/(spine|presences)-/.test(e.name))
+      .sort((a, b) => a.startTime - b.startTime)
+      .map((e) => (e.name.includes("/index/spine-") ? "spine" : "presences"));`);
+    assert.deepEqual(order, ['spine', 'presences'], `the order they were asked for: ${order.join(' → ')}`);
+  });
+});
+
+// A4: the polygons are still the only thing that can draw a lane as a shape,
+// so the wash a `regional` event is drawn as asks for them — and only then.
+// The fixtures hold one such event, from 1260 to 1300.
+test('a window holding a regional event fetches the polygons, and one that does not never asks', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await open(page, url('index.html?fixtures=1&from=1000&to=1150'), ATLAS_READY);
+    const quiet = await page.eval(REQUESTS);
+    assert.equal(quiet.filter((name) => name.includes('geo/regions.json')).length, 0, quiet.join(' · '));
+
+    await open(page, url('index.html?fixtures=1&from=1260&to=1300'), ATLAS_READY);
+    await waitFor(page, 'return document.querySelectorAll(".layer-regions .region-wash").length > 0;', 'a lane washed');
+    const asked = await page.eval(REQUESTS);
+    assert.equal(asked.filter((name) => name.includes('geo/regions.json')).length, 1, asked.join(' · '));
   });
 });
 

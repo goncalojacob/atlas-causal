@@ -217,7 +217,11 @@ function benchNotch() {
 // written out here, and the interval index that replaced it. The layer asks
 // this once per render, so what the numbers describe is a tick of the
 // timeline's band.
-function benchPresences(atlas) {
+async function benchPresences(atlas) {
+  // The presence metadata is its own file since I1 and the atlas answers
+  // emptily until it lands (data.js, D1). `realAtlas()` fetches off disk, so
+  // this is the same list it always measured, one read later.
+  await atlas.loadPresences();
   console.log(`presencesAt — ${atlas.presences.size} presences, a sweep of the years the outlines cover`);
   const { from, to } = atlas.presenceCoverage ?? { from: 1886, to: 2019 };
   const years = [];

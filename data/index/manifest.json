@@ -94,10 +94,11 @@
   "files": {
     "citers": "index/citers-06a247bbfc09",
     "history": "index/history",
+    "presences": "index/presences-f4439f705608.json",
     "review": "index/review-db70a5fce6e1.json",
     "search": "index/search-6cd2db6a2edd.json",
     "sources": "index/sources-fcc1f1ebd5c8.json",
-    "spine": "index/spine-21700ba1c093.json"
+    "spine": "index/spine-1be635ed9d11.json"
   },
   "land": [
     {
@@ -576,6 +577,38 @@
       "to": 2019
     }
   ],
+  "regionBoxes": {
+    "africa": [
+      -17.625043,
+      -34.819166,
+      51.13387,
+      37.349994
+    ],
+    "americas": [
+      -171.791111,
+      -55.61183,
+      -12.20855,
+      83.64513
+    ],
+    "asia": [
+      26.043351,
+      -10.359987,
+      145.543137,
+      55.38525
+    ],
+    "europe": [
+      -180,
+      2.053389,
+      180,
+      81.2504
+    ],
+    "oceania": [
+      -180,
+      -46.641235,
+      180,
+      -2.500002
+    ]
+  },
   "regions": [
     {
       "id": "europe",
@@ -791,7 +824,7 @@
       "label": "Institution"
     }
   ],
-  "schema": 1,
+  "schema": 2,
   "tenuresByOffice": {
     "leadership-of-chega": [
       "andre-ventura-chega-2019"

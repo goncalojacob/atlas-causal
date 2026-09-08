@@ -2,7 +2,9 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import path from 'node:path';
-import { createAtlas, loadAtlas } from '../src/data.js';
+import {
+  createAtlas, loadAtlas, loadNarratives, loadSources, loadSpine,
+} from '../src/data.js';
 import { FIXTURE_DATA, atlasOf } from './helpers.mjs';
 
 // A fetchJson over the fixture directory, so loadAtlas runs without a
@@ -99,18 +101,98 @@ test('createAtlas copes with an empty dataset', () => {
   assert.equal(atlas.resolve('x'), null);
 });
 
+// The clamp is read off `manifest.presenceShards` and not off the records, so
+// it is the same before the presence file lands and after it: the far end of
+// the window must not move under the reader while a file is in flight (I1).
 test('the window\'s far end is clamped to the years the outlines cover', async () => {
   const atlas = await loadAtlas({ dataRoot: 'tests/fixtures/data/', fetchJson });
+  const clamps = () => [atlas.territoryYear(1250), atlas.territoryYear(1400), atlas.territoryYear(1000), atlas.territoryYear(null)];
   assert.deepEqual(atlas.presenceCoverage, { from: 1100, to: 1299 });
-  assert.equal(atlas.territoryYear(1250), 1250, 'inside the coverage, the year asked for');
-  assert.equal(atlas.territoryYear(1400), 1299, 'past it, the last year there is');
-  assert.equal(atlas.territoryYear(1000), 1000, 'before it, unchanged — and nothing is drawn');
-  assert.equal(atlas.territoryYear(null), null);
+  // inside the coverage the year asked for; past it the last year there is;
+  // before it unchanged, and nothing is drawn.
+  assert.deepEqual(clamps(), [1250, 1299, 1000, null]);
+  const before = clamps();
+
+  // Before the file lands there are no territories to answer with, the way
+  // `loadedGeometry` answers null until an outline lands.
+  assert.equal(atlas.presencesLoaded(), false);
+  assert.deepEqual(atlas.presencesAt(1250), []);
+  assert.equal(atlas.presencesByActor.size, 0);
+  assert.equal(atlas.dependenciesOf.size, 0);
+
+  await atlas.loadPresences();
+  assert.equal(atlas.presencesLoaded(), true);
+  assert.deepEqual(clamps(), before, 'the coverage did not move when the file arrived');
   // presencesAt clamps the same way, so the map, the actor card and the
   // band's marker cannot end up disagreeing about which year is drawn.
   assert.deepEqual(atlas.presencesAt(1400).map((p) => p.id), atlas.presencesAt(1299).map((p) => p.id));
   assert.deepEqual(atlas.presencesAt(1000), []);
   assert.deepEqual(atlas.presencesAt(1250).map((p) => p.id), ['fixture-polity-four-1200', 'fixture-polity-three-1100']);
+});
+
+// D6: the index carries a generation and `src/data.js` refuses one it does
+// not know, loudly, rather than reading a file as though it were the shape it
+// expects. In the loaders and never in `createAtlas`, which is handed
+// hand-made manifests all over this suite (index2 review, finding 17).
+test('a manifest from a generation this build does not read is refused', async () => {
+  const manifest = { schema: 99, regions: [], land: [], files: { spine: 'index/spine-000000000000.json', sources: 'index/sources-000000000000.json' } };
+  const fetchOld = async (url) => (url.endsWith('manifest.json') ? manifest : { events: [], edges: [], sources: [] });
+  for (const [what, load] of [['loadAtlas', loadAtlas], ['loadSpine', loadSpine], ['loadSources', loadSources], ['loadNarratives', loadNarratives]]) {
+    await assert.rejects(load({ dataRoot: 'nowhere/', fetchJson: fetchOld }), /generation 99.*reads 2/, what);
+  }
+  // The number it found, whatever it found, including nothing at all.
+  await assert.rejects(loadAtlas({ dataRoot: 'nowhere/', fetchJson: async () => ({}) }), /generation unstated/);
+  // And the guard is not on `createAtlas`: it is handed pieces, not files.
+  assert.equal(createAtlas({
+    manifest: { schema: 1, regions: [], land: [], files: {} },
+    topology: { events: [], edges: [] },
+    sources: [],
+  }).manifest.schema, 1);
+});
+
+// A dataset with no presences writes no file and no manifest key, and absent
+// is what says there are none: the atlas answers empty without a request.
+test('a manifest that names no presence file answers empty and asks for nothing', async () => {
+  const asked = [];
+  const atlas = createAtlas({
+    manifest: { schema: 1, regions: [], land: [], files: {} },
+    topology: { events: [], edges: [] },
+    sources: [],
+    fetchJson: async (url) => { asked.push(url); throw new Error('nothing to fetch'); },
+  });
+  assert.equal(atlas.presencesLoaded(), false);
+  assert.deepEqual(await atlas.loadPresences(), []);
+  assert.equal(atlas.presencesLoaded(), true);
+  assert.deepEqual(asked, []);
+});
+
+// The same discipline as a record and a geometry shard: a rejection is not an
+// answer, so the entry goes and the next ask really is a new attempt.
+test('a presence file that failed to load is fetched again the next time it is asked for', async () => {
+  const asked = [];
+  let fail = true;
+  const atlas = await loadAtlas({
+    dataRoot: 'tests/fixtures/data/',
+    fetchJson: async (url) => {
+      if (url.includes('/presences-')) {
+        asked.push(url);
+        if (fail) throw new Error('offline');
+      }
+      return fetchJson(url);
+    },
+  });
+  await assert.rejects(atlas.loadPresences(), /offline/);
+  await assert.rejects(atlas.loadPresences(), /offline/, 'still failing, and still trying');
+  assert.equal(asked.length, 2, 'the rejection was not kept as the answer');
+  assert.deepEqual(atlas.presencesAt(1150), [], 'and nothing is drawn meanwhile');
+
+  fail = false;
+  const list = await atlas.loadPresences();
+  assert.equal(list.length, 3);
+  assert.deepEqual(atlas.presencesAt(1150).map((p) => p.id), ['fixture-polity-four-1120', 'fixture-polity-three-1100']);
+  const settled = asked.length;
+  await atlas.loadPresences();
+  assert.equal(asked.length, settled, 'and once it has arrived it is kept');
 });
 
 test('an atlas with no outlines at all has no coverage and clamps nothing', () => {

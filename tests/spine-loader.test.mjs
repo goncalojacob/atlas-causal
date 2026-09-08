@@ -53,6 +53,10 @@ const SURFACE = [
   'record', 'regions', 'extent', 'land', 'presences', 'presencesByActor',
   'dependenciesOf', 'presencesAt', 'presenceCoverage', 'territoryYear',
   'shardForYear', 'loadedGeometry', 'loadGeometry', 'hueOfActor',
+  // I1: the presences are their own file, so the atlas has the two halves
+  // every deferred load here has — the answer if it is in hand, and the way
+  // to ask for it.
+  'presencesLoaded', 'loadPresences',
 ];
 
 for (const [label, dir] of DATASETS) {
@@ -224,7 +228,9 @@ test('loadSpine reads the manifest every time and the spine once', async () => {
   const first = await loadSpine(options);
   assert.equal(calls[0], 'tests/fixtures/data/index/manifest.json');
   assert.match(calls[1], /^tests\/fixtures\/data\/index\/spine-[0-9a-f]{12}\.json$/);
-  assert.equal(first.spine.schema, 1);
+  // The graph file's own number is the manifest's, from I1 on: one generation
+  // per artifact rather than two to forget to bump (data.js, D6).
+  assert.equal(first.spine.schema, 2);
   assert.equal(first.spine.events.length, 12);
 
   const before = calls.length;
@@ -239,9 +245,9 @@ test('a spine that failed to arrive is not the answer for the rest of the sessio
   const spine = 'index/spine-000000000000.json';
   let fail = true;
   const fetchJson = async (url) => {
-    if (url.endsWith('manifest.json')) return { schema: 1, files: { spine } };
+    if (url.endsWith('manifest.json')) return { schema: 2, files: { spine } };
     if (fail) throw new Error('the train went into a tunnel');
-    return { schema: 1, events: [], edges: [] };
+    return { schema: 2, events: [], edges: [] };
   };
   await assert.rejects(loadSpine({ dataRoot: 'nowhere/', fetchJson }), /tunnel/);
   fail = false;

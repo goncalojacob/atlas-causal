@@ -12,7 +12,7 @@
 
 import { esc } from '../util/esc.js';
 import { html } from '../util/dom.js';
-import { expandSpine } from '../data.js';
+import { assertGeneration, expandSpine } from '../data.js';
 import { loadSchemas } from '../validate/schemas.js';
 import {
   buildQueue, flagCounts, toolCounts, filterQueue, sortQueue, isDraft, inQueue, labelOf,
@@ -82,7 +82,11 @@ function writeReviewer(reviewer) {
 }
 
 try {
-  const manifest = await getJson(`${dataRoot}index/manifest.json`, { cache: 'no-store' });
+  // This page fetches the spine itself rather than going through `loadAtlas`,
+  // so it asks the guard the same question the loaders do (index2 review,
+  // finding 17): a manifest from a generation this build does not read is not
+  // half-read, it is refused with the number it found.
+  const manifest = assertGeneration(await getJson(`${dataRoot}index/manifest.json`, { cache: 'no-store' }));
   const [spine, sourcesIndex, summary, schemas, searchEntries] = await Promise.all([
     getJson(`${dataRoot}${manifest.files.spine}`),
     getJson(`${dataRoot}${manifest.files.sources}`),
@@ -102,7 +106,7 @@ try {
   const expanded = expandSpine(spine);
 
   document.getElementById('fixtures-badge').hidden = !fixtures;
-  render({
+  const page = render({
     topology: {
       events: expanded.events,
       edges: expanded.edges,
@@ -112,7 +116,13 @@ try {
       offices: expanded.offices,
       tenures: expanded.tenures,
       narratives: expanded.narratives,
-      presences: expanded.presences,
+      // Empty until the presence file lands: it left the spine in I1, and
+      // rule 17 and the `actor-unused` warning read it (rules.js). The
+      // dashboard draws its queue first and the universe is rebuilt below
+      // when the file arrives — an editor opened before then would otherwise
+      // warn that an imported actor holds no territory, which the CLI does
+      // not (index2 review, finding 2).
+      presences: [],
       sources: sourcesIndex.sources ?? [],
       regions: manifest.regions ?? [],
       // The two vocabularies in data, off the manifest and onto the topology
@@ -143,6 +153,16 @@ try {
     citersOf: (id) => getJson(`${dataRoot}${manifest.files.citers}/${encodeURIComponent(id)}.json`)
       .then((file) => file.citations ?? []),
   });
+  // And the presences, after the queue is on screen. A manifest that names no
+  // file has none — the build writes neither for a dataset without them — and
+  // a fetch that fails leaves the universe as it is rather than the page
+  // blank: the editor then warns about a little more than the CLI does, which
+  // is what it did before this file existed at all.
+  if (manifest.files.presences) {
+    getJson(`${dataRoot}${manifest.files.presences}`)
+      .then((file) => page.setPresences(file.presences ?? []))
+      .catch(() => {});
+  }
 } catch (error) {
   mount.innerHTML = `<p class="field-error"><code>${esc(error.message)}</code></p>
     <p>The dashboard needs the atlas index. Serve the repository root
@@ -155,7 +175,7 @@ function render({ topology, summary, shardOf, historyOf, schemas, citersOf, sear
   // The atlas's half of validation, built once for the page: a reviewer
   // opens one record after another and every editor validates against the
   // same universe and the same schema set (health review A, finding 11).
-  const prepared = preparedFor(topology, schemas);
+  let prepared = preparedFor(topology, schemas);
   // And the pickers' half: every reference field in every editor searches
   // this one index, built once for the page rather than once per record
   // opened (health review B, finding 6).
@@ -849,4 +869,17 @@ function render({ topology, summary, shardOf, historyOf, schemas, citersOf, sear
     if (wanted && !opening) noteEl.textContent = `Nothing here has the id ${wanted}; the queue's first record is open instead.`;
     else progressEl.classList.add('good');
   });
+
+  return {
+    // The universe rebuilt around the presence file, once it lands (I1). Only
+    // the universe: the pickers search for records a reference may name, and
+    // a presence is not addressable and is in none of them. An editor already
+    // open keeps the universe it was built with — it is one record's rules
+    // against a list that has just grown, and the next record opened has the
+    // whole of it.
+    setPresences(list) {
+      topology.presences = list ?? [];
+      prepared = preparedFor(topology, schemas);
+    },
+  };
 }

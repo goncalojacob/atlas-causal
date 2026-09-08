@@ -211,15 +211,26 @@ test('the placeless events answer with the region boxes the atlas loaded', async
   const box = [-10, 36, -6, 43];
 
   assert.deepEqual([...atlas.regionBoxes.keys()].sort(), ['africa', 'americas', 'asia', 'europe', 'oceania']);
-  // And a page with no viewport does not fetch a couple of hundred kilobytes
-  // of polygons to answer a question it never asks.
+  // And no page fetches a couple of hundred kilobytes of polygons to get four
+  // numbers per lane: since I1 the boxes are in the manifest, and the
+  // polygons are asked for only by the wash a `regional` event is drawn as
+  // (index2-plan, D2). The `regions: false` that spared the entry page and
+  // the contribution form went with the fetch it turned off.
   const asked = [];
-  await loadAtlas({
+  const lean = await loadAtlas({
     dataRoot: 'data/',
-    regions: false,
     fetchJson: (url, init) => { asked.push(url); return fetchJson(url, init); },
   });
-  assert.ok(!asked.some((url) => url.includes('geo/regions.json')));
+  assert.ok(!asked.some((url) => url.includes('geo/regions.json')), asked.join(' · '));
+  assert.deepEqual([...lean.regionBoxes.keys()].sort(), [...atlas.regionBoxes.keys()].sort());
+  assert.equal(lean.regionShapes, null, 'and the shapes are not in hand until something asks');
+  // Asked for, they arrive, once.
+  const before = asked.length;
+  const shapes = await lean.loadRegionPolygons();
+  assert.ok(shapes.features.length > 0);
+  assert.equal(lean.regionShapes, shapes);
+  await lean.loadRegionPolygons();
+  assert.equal(asked.filter((url) => url.includes('geo/regions.json')).length, 1, `one request: ${asked.slice(before).join(' · ')}`);
   const placeless = atlas.activeEvents.filter((e) => !atlas.pointOf(e));
   assert.ok(placeless.length > 0, 'the atlas has events with no place');
   assert.ok(placeless.every((e) => atlas.regionBoxes.has(e.region)), 'and every one of them names a region');

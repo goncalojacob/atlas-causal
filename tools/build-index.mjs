@@ -13,14 +13,14 @@ import { mkdir, readdir, readFile, rmdir, unlink, writeFile } from 'node:fs/prom
 import { existsSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
-import { buildSpine, buildTopology, byId, citerFiles, rolesInUse } from '../src/validate/core.js';
+import { buildPresenceIndex, buildSpine, buildTopology, byId, citerFiles, rolesInUse } from '../src/validate/core.js';
 import { checkRules } from '../src/validate/rules.js';
-import { createRegionDeriver } from '../src/util/geo.js';
+import { createRegionDeriver, regionBounds } from '../src/util/geo.js';
 import { degreesOf, digestOf, inQueue, KIND_ORDER } from '../src/review/queue.js';
 import { searchIndexFor } from '../src/search.js';
 import { explanationShards, shardName } from '../src/explanations.js';
 import { licensingTable } from '../src/licensing.js';
-import { createAtlasFromSpine, expandSpine } from '../src/data.js';
+import { createAtlasFromSpine, expandSpine, INDEX_GENERATION } from '../src/data.js';
 import { readRecords, readRegions, readRegionPolygons, readRoles, readCategories, readLandFiles, readPresenceShards, paletteFile } from './lib/read.mjs';
 import { recordHistories, HISTORY_DIR } from './lib/history.mjs';
 import { sitePages, ENTRY_DIR } from './lib/prerender.mjs';
@@ -41,7 +41,8 @@ export const TEMPLATES = ['entry.html', 'sources.html', 'narratives.html'];
 // `review-<hash>.json` beside it is the summary that names them (H6b).
 // `explanations-<from>-<to>-<hash>.json` is the period shard of H7, whose
 // middle part is two years and may carry a minus sign.
-const HASHED = /^(?:(?:spine|search|sources|review)-(?:[a-z]+-)?|explanations--?\d+--?\d+-)[0-9a-f]{12}\.json$/;
+// `presences-<hash>.json` is the territory metadata, out of the spine in I1.
+const HASHED = /^(?:(?:spine|search|sources|review|presences)-(?:[a-z]+-)?|explanations--?\d+--?\d+-)[0-9a-f]{12}\.json$/;
 const HASHED_DIR = /^citers-[0-9a-f]{12}$/;
 
 // Deep copy with keys sorted by UTF-16 code unit (Array.prototype.sort's
@@ -99,12 +100,15 @@ export async function buildIndex(dataDir = DEFAULT_DATA, prepared = {}) {
   // that would land in the file as an empty object.
   const presenceShards = (prepared.presenceShards ?? await readPresenceShards(dataDir))
     .map(({ file, from, to }) => ({ file, from, to }));
+  // Read whether or not the topology was handed over: since I1 the manifest
+  // carries a box per region, so the polygons are wanted even on the path
+  // where `deriveRegion` has already been run (D2).
+  const polygons = prepared.polygons ?? await readRegionPolygons(dataDir);
   // The validator has already read all of this and built the topology from
   // it; doing it again was the whole of the doubling `validate --index`
   // measured (health review B, finding 5).
   let topology = prepared.topology ?? null;
   if (!topology) {
-    const polygons = prepared.polygons ?? await readRegionPolygons(dataDir);
     topology = buildTopology(records, regions, {
       deriveRegion: polygons ? createRegionDeriver(polygons) : undefined,
       roles: await readRoles(dataDir),
@@ -117,6 +121,19 @@ export async function buildIndex(dataDir = DEFAULT_DATA, prepared = {}) {
   // from and what the rules below are checked against, and the whole of it
   // was written out beside the spine only while the pages moved over (H3b).
   const spineText = compact(buildSpine(topology));
+
+  // The territory metadata, out of that file in I1 (D1). Compact for the same
+  // reason the spine is: nobody reads 710 outline keys with their eyes, and
+  // the device that fetches it parses the whole of it.
+  //
+  // A dataset with no presences writes **no file and no manifest key**:
+  // absent means "there are none", the way an absent `rolesAllowed` means "no
+  // check" (M30a, A8). `counts.presences` stays in the manifest either way —
+  // a count is not a file.
+  const presenceIndex = buildPresenceIndex(topology);
+  const presencesText = presenceIndex.presences.length ? compact(presenceIndex) : null;
+  const presencesName = presencesText ? `presences-${hashOf(presencesText)}.json` : null;
+
   // The sources index without its citer rows, since H3b: every bibliographic
   // field and `citationCount`, and the rows themselves in the citer directory
   // below, fetched for one source at a time. This is the whole of the saving
@@ -217,12 +234,27 @@ export async function buildIndex(dataDir = DEFAULT_DATA, prepared = {}) {
   );
   const historyEntries = histories.map((h) => [`${HISTORY_DIR}/${h.id}.json`, serialize(h)]);
 
+  // The lane boxes for the manifest, in the lane list's own order — which the
+  // canonical key sort then decides anyway, and that is the point: two builds
+  // of one dataset write one file.
+  // Every box the polygons yield and not only the lanes `regions.json` names,
+  // because that is exactly what `loadAtlas` derived here until I1 and a box
+  // this dropped would be an event that stopped being in view.
+  const boxes = polygons ? regionBounds(polygons) : null;
+  const round = (n) => Math.round(n * 1e6) / 1e6;
+  const boxOrder = boxes === null ? [] : [
+    ...topology.regions.map((region) => region.id).filter((id) => boxes.has(id)),
+    ...[...boxes.keys()].filter((id) => !topology.regions.some((region) => region.id === id)),
+  ];
+  const regionBoxes = boxes === null ? null
+    : Object.fromEntries(boxOrder.map((id) => [id, boxes.get(id).map(round)]));
+
   const spineName = `spine-${hashOf(spineText)}.json`;
   const searchName = `search-${hashOf(searchText)}.json`;
   const sourcesName = `sources-${hashOf(sourcesText)}.json`;
   const reviewName = `review-${hashOf(reviewText)}.json`;
   const manifestValue = {
-    schema: 1,
+    schema: INDEX_GENERATION,
     counts: {
       events: topology.events.length,
       edges: topology.edges.length,
@@ -243,8 +275,20 @@ export async function buildIndex(dataDir = DEFAULT_DATA, prepared = {}) {
       spine: `index/${spineName}`,
       sources: `index/${sourcesName}`,
       review: `index/${reviewName}`,
+      // Absent for a dataset with no presences, which is what says there are
+      // none: `loadPresences()` then answers [] without a request.
+      ...(presencesName === null ? {} : { presences: `index/${presencesName}` }),
     },
     regions: topology.regions,
+    // One box per region — [minLon, minLat, maxLon, maxLat] — so that a page
+    // can ask "is this placeless event in view" without the 221 KB of
+    // polygons it took to answer it until I1 (D2). The build has the
+    // collection in hand for `deriveRegion` and this is `regionBounds` over
+    // the same features. Six decimals: a degree is 111 km, so the sixth is
+    // about 11 cm, and rounding is what keeps two builds byte-identical
+    // whatever floating point does on the way. Absent where the dataset has
+    // no polygons, which gives the atlas the empty map it already had.
+    ...(regionBoxes === null ? {} : { regionBoxes }),
     // What people actually wrote in `role`, normalised — which is not the
     // same list as `rolesAllowed` below and is not meant to be. This one is
     // the evidence: the 163 strings in use, against the 31 the vocabulary
@@ -296,6 +340,10 @@ export async function buildIndex(dataDir = DEFAULT_DATA, prepared = {}) {
     spine: JSON.parse(spineText),
     sources: JSON.parse(sourcesText).sources,
     citers: new Map(citers.map(([name, text]) => [name.replace(/\.json$/, ''), JSON.parse(text).citations ?? []])),
+    // Seeded, not fetched: the presences left the spine in I1 and this caller
+    // has them, so the prerendered pages are rendered from a complete atlas
+    // and cannot change their bytes because a file was in flight (D7).
+    presences: presencesText === null ? [] : JSON.parse(presencesText).presences,
     fetchJson: () => Promise.reject(new Error('the build has every record in hand and fetches nothing')),
   });
   const expanded = expandSpine(JSON.parse(spineText));
@@ -315,6 +363,7 @@ export async function buildIndex(dataDir = DEFAULT_DATA, prepared = {}) {
       'manifest.json': manifest,
       [searchName]: searchText,
       [spineName]: spineText,
+      ...(presencesName === null ? {} : { [presencesName]: presencesText }),
       [sourcesName]: sourcesText,
       [reviewName]: reviewText,
       ...Object.fromEntries(shards.map(({ name, text }) => [name, text])),

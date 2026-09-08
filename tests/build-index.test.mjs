@@ -115,13 +115,27 @@ test('key order and file order in the source records do not change the bytes', a
 test('manifest names the hashed files, counts, lanes and land', async () => {
   const built = await buildIndex(FIXTURE_DATA);
   const manifest = JSON.parse(built.files['manifest.json']);
-  assert.equal(manifest.schema, 1);
+  // 2 since I1: the generation goes up by one in every run that changes the
+  // index's shape (index2-plan, D6).
+  assert.equal(manifest.schema, 2);
+  // `counts.presences` stays where it is: a count is not a file, and it is
+  // what the manifest says about a dataset whether or not the file exists.
   assert.deepEqual(manifest.counts, { events: 12, edges: 10, sources: 4, actors: 4, presences: 3, places: 11, relations: 3, offices: 2, tenures: 4, narratives: 1, regions: 3 });
   assert.match(manifest.files.spine, /^index\/spine-[0-9a-f]{12}\.json$/);
   assert.match(manifest.files.sources, /^index\/sources-[0-9a-f]{12}\.json$/);
+  assert.match(manifest.files.presences, /^index\/presences-[0-9a-f]{12}\.json$/);
   assert.ok(Object.hasOwn(built.files, path.basename(manifest.files.spine)));
+  assert.ok(Object.hasOwn(built.files, path.basename(manifest.files.presences)));
   assert.equal(manifest.regions[0].id, 'fixture-lane-1');
   assert.deepEqual(manifest.land, []);
+  // The four numbers per lane that replaced the 221 KB of polygons at first
+  // paint (index2-plan, D2). Six decimals, so two builds agree to the byte.
+  assert.deepEqual(Object.keys(manifest.regionBoxes).sort(), ['fixture-lane-1', 'fixture-lane-2', 'fixture-lane-3']);
+  for (const box of Object.values(manifest.regionBoxes)) {
+    assert.equal(box.length, 4);
+    assert.ok(box.every((n) => Number.isFinite(n) && Math.round(n * 1e6) === n * 1e6), box.join(','));
+    assert.ok(box[0] <= box[2] && box[1] <= box[3]);
+  }
   // The lane an event is drawn in and how it was arrived at: derived here and
   // carried into the spine, except `regionMethod`, which nothing draws and
   // which the projection drops (h3a-brief, A3). So the lane is read off the
@@ -259,6 +273,9 @@ test('writeIndex removes stale hashed files and the result is fresh', async () =
   try {
     await mkdir(path.join(dir, 'index'), { recursive: true });
     await writeFile(path.join(dir, 'index', 'spine-deadbeef0000.json'), '{}\n');
+    // A presence file from an earlier build: hashed and `immutable` like the
+    // rest, so a name the fresh build does not write has to go (I1).
+    await writeFile(path.join(dir, 'index', 'presences-deadbeef0000.json'), '{}\n');
     await mkdir(path.join(dir, 'index', 'citers-deadbeef0000'), { recursive: true });
     await writeFile(path.join(dir, 'index', 'citers-deadbeef0000', 'fixture-source-a.json'), '[]\n');
     const built = await buildIndex(dir);
@@ -267,6 +284,11 @@ test('writeIndex removes stale hashed files and the result is fresh', async () =
     // here exactly as it is in the build: `citers-<hash>/<source-id>.json`.
     assert.deepEqual(Object.keys(await readIndex(dir)).sort(), Object.keys(built.files).sort());
     assert.ok(Object.keys(built.files).some((name) => /^citers-[0-9a-f]{12}\/.+\.json$/.test(name)));
+    assert.deepEqual(
+      Object.keys(await readIndex(dir)).filter((n) => n.startsWith('presences-')),
+      [path.basename(JSON.parse(built.files['manifest.json']).files.presences)],
+      'the stale presence file is gone and the fresh one is there',
+    );
     assert.deepEqual(await readdir(path.join(dir, 'index', 'citers-deadbeef0000')).catch(() => null), null, 'the stale directory is gone');
     assert.deepEqual(compareIndex(await readIndex(dir), built), []);
     await writeFile(path.join(dir, 'index', 'manifest.json'), '{}\n');
@@ -319,7 +341,15 @@ test('an empty dataset builds a manifest with zero records and validates', async
   try {
     await writeFile(path.join(dir, 'regions.json'), '[]\n');
     const built = await buildIndex(dir);
-    assert.deepEqual(JSON.parse(built.files['manifest.json']).counts, { events: 0, edges: 0, sources: 0, actors: 0, presences: 0, places: 0, relations: 0, offices: 0, tenures: 0, narratives: 0, regions: 0 });
+    const manifest = JSON.parse(built.files['manifest.json']);
+    assert.deepEqual(manifest.counts, { events: 0, edges: 0, sources: 0, actors: 0, presences: 0, places: 0, relations: 0, offices: 0, tenures: 0, narratives: 0, regions: 0 });
+    // No presences: no file and no key, because absent is what says there are
+    // none — the way an absent `rolesAllowed` says "no check" (M30a, A8). The
+    // count above stays, because a count is not a file.
+    assert.equal(Object.hasOwn(manifest.files, 'presences'), false);
+    assert.deepEqual(Object.keys(built.files).filter((n) => n.startsWith('presences-')), []);
+    // And no polygons: no boxes, which gives the atlas the empty map it had.
+    assert.equal(Object.hasOwn(manifest, 'regionBoxes'), false);
     await writeIndex(dir, built);
     const result = await runValidation(dir, { index: true });
     assert.deepEqual(result.errors, []);

@@ -56,6 +56,11 @@ test('a step may name an actor, a relation or a presence, and none of them is an
   assert.equal(relation.record.type, 'member-of');
   assert.equal(relation.event, null);
 
+  // A presence is not in the spine since I1, so a step that names one
+  // resolves once the file has landed and reads as a gap before then — the
+  // discipline every deferred load on this atlas follows (data.js, D1).
+  assert.equal(resolveRef(atlas, 'fixture-polity-four-1120').kind, null, 'before the file lands');
+  await atlas.loadPresences();
   const presence = resolveRef(atlas, 'fixture-polity-four-1120');
   assert.equal(presence.kind, 'presence');
   assert.equal(presence.record.actor, 'fixture-polity-four');

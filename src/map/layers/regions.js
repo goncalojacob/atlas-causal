@@ -17,18 +17,29 @@
 import { svg, svgTitle } from '../../util/dom.js';
 import { geometryPath } from './land.js';
 
-export function createRegionsLayer(group, projection, { shapes = null } = {}) {
-  // One path per region, built once: the projection does not change under the
-  // reader (a change of projection rebuilds the map), and these are the
-  // largest shapes on the page.
-  const paths = new Map();
-  for (const feature of shapes?.features ?? []) {
-    const id = feature?.properties?.region;
-    if (typeof id !== 'string' || !feature.geometry) continue;
-    const d = geometryPath(feature.geometry, projection.project);
-    if (!d) continue;
-    paths.set(id, (paths.get(id) ?? '') + d);
+// `loadShapes` is how the collection is asked for when the layer was not
+// given one: since I1 `data/geo/regions.json` is not at first paint at all —
+// the manifest carries the four numbers per region that the viewport question
+// needed — and a wash is the one thing that still wants the shapes
+// (index2 review, finding 6). Asked for the first time a wash is actually
+// wanted, once, and `onReady` is what redraws when it lands.
+export function createRegionsLayer(group, projection, { shapes = null, loadShapes = null, onReady = null } = {}) {
+  // One path per region, built once the shapes are in hand: the projection
+  // does not change under the reader (a change of projection rebuilds the
+  // map), and these are the largest shapes on the page.
+  let paths = null;
+  function build(collection) {
+    paths = new Map();
+    for (const feature of collection?.features ?? []) {
+      const id = feature?.properties?.region;
+      if (typeof id !== 'string' || !feature.geometry) continue;
+      const d = geometryPath(feature.geometry, projection.project);
+      if (!d) continue;
+      paths.set(id, (paths.get(id) ?? '') + d);
+    }
   }
+  if (shapes) build(shapes);
+  let asked = false;
 
   return {
     // washes: [{ region, title }], in the order they are to be drawn. A region
@@ -36,6 +47,23 @@ export function createRegionsLayer(group, projection, { shapes = null } = {}) {
     // and one piece of ground, and stacking the tint would make the second one
     // look heavier than the first.
     render(washes) {
+      if (paths === null) {
+        // No shapes yet. Nothing is drawn and nothing is cleared, and the
+        // request is made only if there is something to draw when they come:
+        // a window with no `regional` event in it never fetches the file.
+        if (washes.length > 0 && loadShapes && !asked) {
+          asked = true;
+          loadShapes().then((collection) => {
+            build(collection);
+            if (onReady) onReady();
+          }, () => {
+            // A rejection is not an answer: the next window with a wash in it
+            // asks again, and until then the map is what it was.
+            asked = false;
+          });
+        }
+        return 0;
+      }
       group.replaceChildren();
       const seen = new Map();
       for (const { region, title } of washes) {

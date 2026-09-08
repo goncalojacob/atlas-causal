@@ -9,7 +9,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import path from 'node:path';
-import { buildSpine, buildTopology, edgeId } from '../src/validate/core.js';
+import { buildPresenceIndex, buildSpine, buildTopology, edgeId } from '../src/validate/core.js';
 import { KINDS } from '../src/kinds.js';
 import { buildIndex } from '../tools/build-index.mjs';
 import { atlasFromTopology, FIXTURE_DATA, ROOT, fixtures, topologyOf } from './helpers.mjs';
@@ -32,7 +32,6 @@ const FIELDS = {
   event: [...ENVELOPE, 'wikidata', 'wikipedia', 'title', 'revised', 'when', 'place', 'region', 'parent', 'scope', 'category', 'weight', 'subtreeWeight', 'actors', 'citesCount'],
   actor: [...ENVELOPE, 'wikidata', 'wikipedia', 'name', 'names', 'revised', 'actorType', 'when', 'citesCount'],
   place: [...ENVELOPE, 'wikidata', 'wikipedia', 'name', 'names', 'revised', 'where', 'region', 'citesCount'],
-  presence: [...ENVELOPE, 'wikidata', 'wikipedia', 'actor', 'when', 'geometry', 'dependencyOf', 'dependencyKind', 'capital', 'confidence'],
   relation: [...ENVELOPE, 'wikidata', 'wikipedia', 'from', 'to', 'type', 'when', 'note'],
   // An office carries `revised` because `?office=` is an address and the
   // card may fetch the record; a tenure has no address of its own and does
@@ -41,17 +40,22 @@ const FIELDS = {
   tenure: [...ENVELOPE, 'wikidata', 'wikipedia', 'person', 'office', 'when', 'startedBy', 'note'],
   narrative: [...ENVELOPE, 'wikidata', 'wikipedia', 'title', 'revised', 'summary', 'authors', 'window', 'steps'],
 };
+// The presences are not in the spine since I1 — they are half of it on the
+// real data and nothing draws them until the territory layer does — so their
+// row of the same table belongs to their own file (index2-plan, D1).
+const PRESENCE_FIELDS = [...ENVELOPE, 'wikidata', 'wikipedia', 'actor', 'when', 'geometry', 'dependencyOf', 'dependencyKind', 'capital', 'confidence'];
 // A tombstone is fetched like any other record — 175 retracted events reach
 // a card with their own fields — so it keeps `revised` too.
 const TOMBSTONE = ['id', 'kind', 'status', 'supersededBy', 'aliases', 'wikidata', 'title', 'name', 'names', 'when', 'place', 'region', 'revised'];
 
 // Against the registry, not against a list written twice: a ninth kind is
 // one entry in src/kinds.js, and it must not be able to arrive with nowhere
-// in the spine to go. `edge` is here as a tuple and `source` is deliberately
-// out — the sources index carries every bibliographic field and the spine
-// would only repeat it (A3).
+// in the index to go. Three of them are not object entries in the spine:
+// `edge` is a tuple, `source` is the sources index — which carries every
+// bibliographic field the spine would only repeat (A3) — and `presence` is
+// its own file since I1 (index2-plan, D1).
 test('every kind the registry knows is in the spine, or is the one that is not', () => {
-  assert.deepEqual([...KINDS].sort(), [...Object.keys(FIELDS), 'edge', 'source'].sort());
+  assert.deepEqual([...KINDS].sort(), [...Object.keys(FIELDS), 'edge', 'presence', 'source'].sort());
 });
 
 for (const [label, dir] of [['the fixtures', FIXTURE_DATA], ['the repository', DATA]]) {
@@ -70,19 +74,46 @@ for (const [label, dir] of [['the fixtures', FIXTURE_DATA], ['the repository', D
       }
     }
     assert.ok(seen > 0);
-    // The two fields nothing draws, and the shard list the year already
-    // answers: dropped from the spine, kept in the topology (A3).
+    // The field nothing draws: dropped from the spine, kept in the topology
+    // (A3).
     assert.ok(spine.events.every((e) => !Object.hasOwn(e, 'regionMethod')));
     assert.ok(spine.places.every((p) => !Object.hasOwn(p, 'regionMethod')));
-    assert.ok(spine.presences.every((p) => !Object.hasOwn(p, 'presenceType')));
-    assert.ok(spine.presences.every((p) => Object.keys(p.geometry).length === 1));
+    // And no presences at all, which is I1: half this file on the real data.
+    assert.ok(!Object.hasOwn(spine, 'presences'), 'the spine still carries the presences');
+  });
+
+  // The same table, the same tombstone rule and the same two dropped fields,
+  // over the file the presences moved to (I1). Every presence the topology
+  // has is in it, in id order, with the fields it had in the spine.
+  test(`the presence index carries every presence over ${label}, and the same fields`, async () => {
+    const topology = await topologyOf(dir);
+    const index = buildPresenceIndex(topology);
+    assert.ok(topology.presences.length > 0, `${label} has presences`);
+    assert.deepEqual(index.presences.map((p) => p.id), topology.presences.map((p) => p.id), 'every one, in id order');
+    const inTopology = new Map(topology.presences.map((p) => [p.id, p]));
+    for (const entry of index.presences) {
+      assert.equal(entry.kind, 'presence', entry.id);
+      const keys = entry.status === 'active' ? PRESENCE_FIELDS : TOMBSTONE;
+      for (const key of Object.keys(entry)) {
+        assert.ok(keys.includes(key), `${entry.id} (${entry.status}) carries ${key}`);
+      }
+      for (const [key, value] of Object.entries(entry)) {
+        if (key === 'kind' || key === 'geometry') continue;
+        assert.deepEqual(value, inTopology.get(entry.id)[key], `${entry.id}: ${key}`);
+      }
+      assert.deepEqual(entry.when, inTopology.get(entry.id).when, `${entry.id}: the interval verbatim`);
+    }
+    // The two the projection drops: `presenceType`, which nothing draws, and
+    // every key of `geometry` but the one the shard is looked up by.
+    assert.ok(index.presences.every((p) => !Object.hasOwn(p, 'presenceType')));
+    assert.ok(index.presences.every((p) => Object.keys(p.geometry).length === 1));
     assert.ok(topology.presences.every((p) => Object.hasOwn(p, 'presenceType')), 'the topology is unchanged');
   });
 
   test(`every field the spine keeps is the record's own over ${label}`, async () => {
     const topology = await topologyOf(dir);
     const spine = buildSpine(topology);
-    for (const kind of ['event', 'actor', 'place', 'presence', 'relation', 'narrative']) {
+    for (const kind of ['event', 'actor', 'place', 'relation', 'narrative']) {
       const inTopology = new Map(topology[`${kind}s`].map((r) => [r.id, r]));
       for (const entry of spine[`${kind}s`]) {
         const source = inTopology.get(entry.id);
@@ -101,7 +132,7 @@ for (const [label, dir] of [['the fixtures', FIXTURE_DATA], ['the repository', D
   test(`an interval is carried verbatim over ${label}`, async () => {
     const topology = await topologyOf(dir);
     const spine = buildSpine(topology);
-    for (const kind of ['event', 'actor', 'presence', 'relation']) {
+    for (const kind of ['event', 'actor', 'relation']) {
       const inTopology = new Map(topology[`${kind}s`].map((r) => [r.id, r]));
       for (const entry of spine[`${kind}s`]) {
         assert.deepEqual(entry.when, inTopology.get(entry.id).when, entry.id);
@@ -200,4 +231,17 @@ test('the spine is in the built index, named in the manifest, and stable', async
     [],
     'the index still writes a topology file',
   );
+});
+
+test('the presence index is in the built index, named in the manifest, and stable', async () => {
+  const first = await buildIndex(FIXTURE_DATA);
+  const second = await buildIndex(FIXTURE_DATA);
+  const manifest = JSON.parse(first.files['manifest.json']);
+  assert.match(manifest.files.presences, /^index\/presences-[0-9a-f]{12}\.json$/);
+  const name = path.basename(manifest.files.presences);
+  assert.ok(Object.hasOwn(first.files, name));
+  assert.equal(first.files[name], second.files[name]);
+  const file = JSON.parse(first.files[name]);
+  assert.equal(file.schema, manifest.schema, 'one generation, not two');
+  assert.equal(file.presences.length, manifest.counts.presences);
 });

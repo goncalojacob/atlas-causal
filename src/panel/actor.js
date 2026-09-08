@@ -30,10 +30,16 @@ const DEPENDENCY_LABEL = Object.freeze({
 });
 
 // What the map draws for this actor, and when. Presences carry no text, so
-// this is built entirely from the topology — no record fetched, however many
+// this is built entirely from the index — no record fetched, however many
 // periods an entity has. Two lists: the ground it held itself, and the ground
 // it held through somebody else.
-function territoryHtml(ctx, actor) {
+//
+// Since I1 the presence metadata is its own file and is not in hand when the
+// card is first drawn, so this answers null while it is on its way and the
+// card draws a "loading" line in place of the section, exactly as the source
+// card does for its citers. Null once it has landed means what it always
+// meant: this actor held no ground, and there is no section at all.
+export function territoryHtml(ctx, actor) {
   const own = ctx.atlas.presencesByActor.get(actor.id) ?? [];
   const held = ctx.atlas.dependenciesOf.get(actor.id) ?? [];
   if (own.length === 0 && held.length === 0) return null;
@@ -70,6 +76,22 @@ function territoryHtml(ctx, actor) {
         <ul class="actor-rows">${heldRows.join('')}</ul>` : ''}
     </div>`,
   };
+}
+
+// Whether the atlas has the presence metadata yet. An atlas that predates
+// `loadPresences` — the build's own, a hand-made one in a test — has it by
+// construction and says so.
+const territoryKnown = (ctx) => (ctx.atlas.presencesLoaded ? ctx.atlas.presencesLoaded() : true);
+
+// The Territory section, or none. Three states and not two: the list, the
+// "loading" line while the file is on its way, and nothing at all for an
+// actor that held no ground — which is most of them, so a permanent empty
+// section would be a lie on nearly every card.
+export function territorySection(ctx, actor) {
+  const territory = territoryHtml(ctx, actor);
+  if (territory) return { key: 'territory', label: 'Territory', ...territory };
+  if (territoryKnown(ctx)) return null;
+  return { key: 'territory', label: 'Territory', count: null, body: '<p class="muted">Loading…</p>' };
 }
 
 // The relations this actor stands in, both ways round, grouped by type. Built
@@ -174,7 +196,7 @@ export function actorCardHtml(ctx, actor, { state = null, remembered = null } = 
   const narratives = ctx.atlas.narrativesByRef?.get(actor.id) ?? [];
   const rows = appearances.map((row) => appearanceRow(ctx, row));
   const relations = relationsHtml(ctx, actor);
-  const territory = territoryHtml(ctx, actor);
+  const territory = territorySection(ctx, actor);
 
   // The same arrangement the event card has (sections.js): the head and
   // whatever text there is, then one collapsible section per question with
@@ -201,7 +223,7 @@ export function actorCardHtml(ctx, actor, { state = null, remembered = null } = 
   // offices rather than of its links.
   const offices = officeStripsSection(ctx, actor);
   if (offices) sections.push(offices);
-  if (territory) sections.push({ key: 'territory', label: 'Territory', ...territory });
+  if (territory) sections.push(territory);
   sections.push({
     key: 'sources',
     label: 'Sources',
@@ -236,8 +258,41 @@ export function actorCardHtml(ctx, actor, { state = null, remembered = null } = 
     ${sections.map((s) => sectionHtml({ ...s, open: s.key === open })).join('')}`;
 }
 
+// The Territory section rewritten in place once the presence file lands, the
+// way the source card rewrites its citers: the head, the summary and whatever
+// the reader has already opened stay where they are. An actor with no ground
+// loses the section altogether, because that is what the card says about the
+// four hundred actors that never held any.
+function swapTerritory(ctx, container, actor) {
+  const held = container.querySelector('.card-section[data-section="territory"]');
+  if (!held) return;
+  const section = territorySection(ctx, actor);
+  if (!section) {
+    held.remove();
+    return;
+  }
+  held.outerHTML = sectionHtml({ ...section, open: held.classList.contains('open') });
+}
+
 export function renderActorCard(ctx, { container, actor, mine, state = null, remembered = null }) {
   container.innerHTML = actorCardHtml(ctx, actor, { state, remembered });
+  // The presences left the spine in I1, so a card opened before the file
+  // lands has no territory to show yet and asks for it here (index2-plan D1).
+  // A rejection leaves the "loading" line saying what happened; the layer's
+  // own note on the map says the same thing about the same file.
+  if (!territoryKnown(ctx)) {
+    ctx.atlas.loadPresences().then(
+      () => {
+        if (!ctx.isCurrent(mine)) return;
+        swapTerritory(ctx, container, actor);
+      },
+      () => {
+        if (!ctx.isCurrent(mine)) return;
+        const held = container.querySelector('.card-section[data-section="territory"] .section-body');
+        if (held) held.innerHTML = '<p class="muted">The territory this actor held could not be loaded.</p>';
+      },
+    );
+  }
   ctx.atlas.record('actor', actor.id).then(
     (rec) => {
       if (!ctx.isCurrent(mine)) return;

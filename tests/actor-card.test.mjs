@@ -7,7 +7,9 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import path from 'node:path';
+import { readFile } from 'node:fs/promises';
 import { discussUrl } from '../src/share.js';
+import { loadAtlas } from '../src/data.js';
 import { actorCardHtml } from '../src/panel/actor.js';
 import { articleFor } from '../src/wikipedia.js';
 import { esc } from '../src/util/esc.js';
@@ -161,6 +163,45 @@ test('the actor card is sections with counts, opening on where it appears', asyn
   // The reader's own choice stands where the arrival says nothing.
   const remembered = actorCardHtml(ctx, atlas.actors.get('fixture-polity-three'), { remembered: 'relations' });
   assert.match(remembered, /<section class="card-section open" data-section="relations">/);
+});
+
+// I1: the presences left the spine, so the card is drawn before the list of
+// what an actor held can be known. Three states and not two — the list, "not
+// yet", and "none" — because an actor that held no ground has no section at
+// all, and that is most of them.
+test('the territory section says "loading" until the presences land, then the list or nothing', async () => {
+  const loaded = await atlasOf(FIXTURE_DATA);
+  const sections = (html) => [...html.matchAll(/<section class="card-section(?: open)?" data-section="([a-z-]+)">/g)].map((m) => m[1]);
+  // One section's own markup, so that the summary slot's "Loading…" and the
+  // sources slot's are not read as the territory's.
+  const territoryOf = (html) => html
+    .split(/<section class="card-section(?: open)?" data-section="/)
+    .find((part) => part.startsWith('territory">')) ?? null;
+  // An atlas that has not fetched them yet: the same fixture atlas with the
+  // seeding taken out, which is what the browser holds on its first frame.
+  const waiting = await loadAtlas({
+    dataRoot: 'tests/fixtures/data/',
+    fetchJson: async (url) => JSON.parse(await readFile(path.join(ROOT, url.split('?')[0]), 'utf8')),
+  });
+  assert.equal(waiting.presencesLoaded(), false);
+
+  // A polity that holds ground: a line where the periods will be.
+  const held = actorCardHtml(context(waiting), waiting.actors.get('fixture-polity-three'));
+  assert.match(territoryOf(held), /Loading…/);
+  // And an actor that holds none: the same line, because "none" is not known
+  // yet either.
+  assert.match(territoryOf(actorCardHtml(context(waiting), waiting.actors.get('fixture-actor-one'))), /Loading…/);
+
+  await waiting.loadPresences();
+  const after = actorCardHtml(context(waiting), waiting.actors.get('fixture-polity-three'));
+  assert.doesNotMatch(territoryOf(after), /Loading…/);
+  assert.match(territoryOf(after), /Shown on the map/);
+  // And the card is now exactly the card the seeded atlas draws.
+  assert.equal(after, actorCardHtml(context(loaded), loaded.actors.get('fixture-polity-three')));
+  // Now that it is known, an actor with no ground has no section at all.
+  const none = actorCardHtml(context(waiting), waiting.actors.get('fixture-actor-one'));
+  assert.equal(territoryOf(none), null);
+  assert.equal(sections(none).includes('territory'), false);
 });
 
 // ─── before and after, along `succeeded` ───────────────────────────────────

@@ -15,7 +15,6 @@
 import { buildAdjacency } from './graph.js';
 import { narrativeEventIds } from './narrative.js';
 import { extent as intervalExtent } from './util/dates.js';
-import { regionBounds } from './util/geo.js';
 import { edgeId } from './vocab.js';
 import { periodOfEdge } from './explanations.js';
 
@@ -25,10 +24,40 @@ async function defaultFetchJson(url, init) {
   return response.json();
 }
 
+// ─── The index's generation ────────────────────────────────────────────────
+//
+// `data/index/` is a projection of `data/`, not a second copy of it, so a
+// change to its shape is a rebuild and never a migration (docs/index2-plan.md,
+// D6). What the number is for is the half-applied deploy: a manifest from one
+// generation beside a page from another would otherwise be read as though it
+// were the shape the page expects, silently and wrongly. It goes up by one in
+// every run that changes the index's shape — 2 since I1, which took the
+// presences out of the spine and put the region boxes in the manifest.
+//
+// The graph file carries the same number rather than one of its own: two
+// numbers for one artifact is two things to forget to bump.
+export const INDEX_GENERATION = 2;
+// A single set, because a deploy may serve one generation while the last is
+// still in a cache; today it holds one number and it is the place to add the
+// second when that becomes true.
+export const KNOWN_GENERATIONS = Object.freeze(new Set([INDEX_GENERATION]));
+
+// Called by the loaders and by nothing else (index2 review, finding 17):
+// `createAtlas` is handed manifests by hand all over the test suite, and a
+// guard there would refuse them for saying nothing about a file layout they
+// do not use. A loader has just fetched the manifest and is about to read the
+// files it names, which is exactly where the number means something.
+export function assertGeneration(manifest) {
+  const found = manifest?.schema;
+  if (KNOWN_GENERATIONS.has(found)) return manifest;
+  throw new Error(`data/index/ is generation ${found === undefined ? 'unstated' : String(found)}; this build reads ${[...KNOWN_GENERATIONS].join(', ')}. Rebuild it: node tools/build-index.mjs`);
+}
+
 // Pure assembly from already-loaded pieces; loadAtlas() does the fetching.
 export function createAtlas({
   manifest, topology, sources, land = null, palette = null, regionBoxes = null, regionShapes = null,
   dataRoot = 'data/', fetchJson = defaultFetchJson, citers: seededCiters = null,
+  presences: seededPresences = null,
 }) {
   const events = new Map(topology.events.map((e) => [e.id, e]));
   const edges = new Map(topology.edges.map((e) => [e.id, e]));
@@ -365,27 +394,98 @@ export function createAtlas({
   }
 
   // --- territories -------------------------------------------------------
-  // The topology carries every presence without its coordinates, so an
-  // actor's territory over time is a list the panel can draw at once. The
-  // outlines themselves are sharded by period and fetched one shard at a
-  // time, by year: moving the band inside a period costs nothing, and
-  // crossing into another one costs a single request that is then cached.
-  const activePresences = (topology.presences ?? []).filter((p) => p.status === 'active');
-  const presences = new Map(activePresences.map((p) => [p.id, p]));
-  const presencesByActor = new Map();
-  const dependenciesOf = new Map();
-  for (const presence of activePresences) {
-    if (!presencesByActor.has(presence.actor)) presencesByActor.set(presence.actor, []);
-    presencesByActor.get(presence.actor).push(presence);
-    if (presence.dependencyOf) {
-      if (!dependenciesOf.has(presence.dependencyOf)) dependenciesOf.set(presence.dependencyOf, []);
-      dependenciesOf.get(presence.dependencyOf).push(presence);
-    }
-  }
+  // The presence metadata carries every presence without its coordinates, so
+  // an actor's territory over time is a list the panel can draw without
+  // fetching an outline. The outlines themselves are sharded by period and
+  // fetched one shard at a time, by year: moving the band inside a period
+  // costs nothing, and crossing into another one costs a single request that
+  // is then cached.
+  //
+  // Since I1 the metadata is not in the spine either: it was 49.2 % of it on
+  // the real data and nothing draws it until the territory layer does
+  // (docs/index2-plan.md, D1). So the atlas answers emptily about territory
+  // until `loadPresences()` lands — `presencesAt` gives [], the two indexes
+  // are empty — exactly as `loadedGeometry` answers null until an outline
+  // does, and the layer and the actor card ask for it the way the source card
+  // asks for its citers.
+  //
+  // `presenceShards`, `presenceCoverage` and `territoryYear` are deliberately
+  // NOT behind that load: they are read off the manifest, so the far end of
+  // the window cannot move under the reader while a file is in flight.
+  //
+  // The three collections are filled in place rather than replaced: a card or
+  // a layer holds `atlas.presencesByActor` itself, and swapping the Map would
+  // leave it reading the empty one for ever.
   const byStart = (a, b) => intervalExtent(a.when).min - intervalExtent(b.when).min
     || (a.id < b.id ? -1 : a.id > b.id ? 1 : 0);
-  for (const list of presencesByActor.values()) list.sort(byStart);
-  for (const list of dependenciesOf.values()) list.sort(byStart);
+  let activePresences = [];
+  let boundaries = [];
+  const presences = new Map();
+  const presencesByActor = new Map();
+  const dependenciesOf = new Map();
+  const standingIn = new Map();
+
+  function indexPresences(list) {
+    activePresences = (list ?? []).filter((p) => p.status === 'active');
+    presences.clear();
+    presencesByActor.clear();
+    dependenciesOf.clear();
+    standingIn.clear();
+    for (const presence of activePresences) {
+      presences.set(presence.id, presence);
+      if (!presencesByActor.has(presence.actor)) presencesByActor.set(presence.actor, []);
+      presencesByActor.get(presence.actor).push(presence);
+      if (presence.dependencyOf) {
+        if (!dependenciesOf.has(presence.dependencyOf)) dependenciesOf.set(presence.dependencyOf, []);
+        dependenciesOf.get(presence.dependencyOf).push(presence);
+      }
+    }
+    for (const each of presencesByActor.values()) each.sort(byStart);
+    for (const each of dependenciesOf.values()) each.sort(byStart);
+    boundaries = [...new Set(activePresences.flatMap((presence) => {
+      const { min, max } = intervalExtent(presence.when);
+      return max === null ? [min] : [min, max + 1];
+    }))].sort((a, b) => a - b);
+  }
+
+  // A caller that already has them hands them over — the build has every
+  // record in memory, and a test reads the file off disk — and then nothing
+  // is ever fetched. A caller handing over a whole topology has them in it,
+  // which is what `buildTopology`'s own output is and what the rules read;
+  // the spine has not carried them since I1, so an atlas from the spine has
+  // neither and asks for the file.
+  const seeded = seededPresences ?? topology.presences ?? null;
+  let havePresences = seeded !== null;
+  if (havePresences) indexPresences(seeded);
+
+  let presencesPending = null;
+  // The synchronous half, for a render that cannot wait: whether the answers
+  // above are the real ones yet. A layer needs it to tell "no territory" from
+  // "no territory yet", the way `loadedGeometry` tells it for an outline.
+  const presencesLoaded = () => havePresences;
+  // Same cache discipline as loadGeometry and the citers: one request in
+  // flight, and a rejection is not an answer. A manifest that names no
+  // presence file has none to name — the build writes neither the file nor
+  // the key for a dataset with no presences — so that is an empty answer and
+  // not a failure.
+  function loadPresences() {
+    if (havePresences) return Promise.resolve([...presences.values()]);
+    if (!presencesPending) {
+      const file = manifest?.files?.presences;
+      const pending = (file ? fetchJson(`${dataRoot}${file}`) : Promise.resolve({ presences: [] }))
+        .then((loaded) => {
+          indexPresences(loaded.presences ?? []);
+          havePresences = true;
+          return [...presences.values()];
+        })
+        .catch((error) => {
+          if (presencesPending === pending) presencesPending = null;
+          throw error;
+        });
+      presencesPending = pending;
+    }
+    return presencesPending;
+  }
 
   const presenceShards = manifest.presenceShards ?? [];
   // The years the outlines actually cover. Past the far end there is nothing
@@ -458,11 +558,10 @@ export function createAtlas({
   // It is an index over the intervals and not a bucket per year on purpose:
   // a presence may have no end at all, and a year domain with an open end has
   // no last bucket.
-  const boundaries = [...new Set(activePresences.flatMap((presence) => {
-    const { min, max } = intervalExtent(presence.when);
-    return max === null ? [min] : [min, max + 1];
-  }))].sort((a, b) => a - b);
-  const standingIn = new Map();
+  //
+  // `boundaries` and `standingIn` are built by `indexPresences` above, when
+  // the file lands: before that there are no intervals to index, and the
+  // binary search below answers −1 for every year, which is [].
 
   // The last boundary at or below the year, or −1 for a year before the first
   // border on the map.
@@ -491,21 +590,54 @@ export function createAtlas({
     return [...standingIn.get(segment)];
   }
 
+  // --- the lane polygons, on demand ---------------------------------------
+  //
+  // 221 KB that `index.html` used to fetch before it drew anything, to answer
+  // one question — is a placeless event's region inside the viewport — which
+  // `regionBounds` reduces to four numbers per region. Since I1 those four
+  // numbers are in the manifest and the file is not at first paint at all
+  // (docs/index2-plan.md, D2).
+  //
+  // The polygons themselves are still the only thing that can draw a lane as
+  // a shape, which is what M30b-2's wash over a `regional` event is, so they
+  // stay reachable: one request, cached, a rejection dropped, asked for by
+  // the wash when a large event is actually in the window (index2 review,
+  // finding 6). `regionShapes` is the synchronous half — the collection if it
+  // is in hand, null if it is not.
+  let shapes = regionShapes ?? null;
+  let shapesPending = null;
+  function loadRegionPolygons() {
+    if (shapes) return Promise.resolve(shapes);
+    if (!shapesPending) {
+      const pending = fetchJson(`${dataRoot}geo/regions.json`).then((collection) => {
+        shapes = collection;
+        return collection;
+      }).catch((error) => {
+        if (shapesPending === pending) shapesPending = null;
+        throw error;
+      });
+      shapesPending = pending;
+    }
+    return shapesPending;
+  }
+
   return {
     manifest,
     regions: [...manifest.regions].sort((a, b) => a.order - b.order),
-    // One box per region, for the events with no place: derived from
-    // `data/geo/regions.json` at load and never from the index (util/geo.js).
-    // Empty when the file did not arrive, which puts those events back where
-    // they were rather than taking the atlas down with it.
+    // One box per region, for the events with no place: four numbers each,
+    // read off the manifest since I1 rather than derived at load from 221 KB
+    // of polygons (util/geo.js, build-index.mjs). Empty for a dataset whose
+    // manifest names none, which is what a dataset with no polygons already
+    // got — those events then stay out of a box rather than taking the atlas
+    // down with them.
     regionBoxes: regionBoxes ?? new Map(),
     // And the polygons themselves, for the wash a regional event is drawn as
-    // (large.js, map/layers/regions.js). The boxes above were all this file
-    // kept until M30b-2 — a box is enough to answer "is a placeless event in
-    // view" and it is not enough to draw a lane on the map, which is a shape.
-    // Null on a page that did not ask for the file at all.
-    regionShapes: regionShapes ?? null,
+    // (large.js, map/layers/regions.js). Null until something asks.
+    get regionShapes() { return shapes; },
+    loadRegionPolygons,
     presences,
+    presencesLoaded,
+    loadPresences,
     presencesByActor,
     dependenciesOf,
     presenceShards,
@@ -586,7 +718,8 @@ function topologyFromSpine(spine) {
     edges: (spine.edges ?? []).map(edgeFromSpine),
     actors: spine.actors ?? [],
     places: spine.places ?? [],
-    presences: spine.presences ?? [],
+    // No `presences`: they are their own file since I1 and reach the atlas
+    // through `loadPresences()`, not through the graph file.
     relations: spine.relations ?? [],
     offices: spine.offices ?? [],
     tenures: spine.tenures ?? [],
@@ -595,7 +728,9 @@ function topologyFromSpine(spine) {
 }
 
 // Sources stay where they are: they are not in the spine, and `atlas.sources`
-// is the sources index exactly as it is today (A3).
+// is the sources index exactly as it is today (A3). `presences` likewise
+// since I1, and it is optional: a caller with the list already in hand — the
+// build, a test reading the file off disk — passes it and nothing is fetched.
 export function createAtlasFromSpine({ spine, ...rest }) {
   return createAtlas({ ...rest, topology: topologyFromSpine(spine) });
 }
@@ -612,7 +747,7 @@ export { topologyFromSpine as expandSpine };
 // the next call really is a new attempt rather than a cached failure.
 const spineCache = new Map();
 export async function loadSpine({ dataRoot = 'data/', fetchJson = defaultFetchJson } = {}) {
-  const manifest = await fetchJson(`${dataRoot}index/manifest.json`, { cache: 'no-store' });
+  const manifest = assertGeneration(await fetchJson(`${dataRoot}index/manifest.json`, { cache: 'no-store' }));
   const url = `${dataRoot}${manifest.files.spine}`;
   if (!spineCache.has(url)) {
     const pending = fetchJson(url).catch((error) => {
@@ -630,7 +765,7 @@ export async function loadSpine({ dataRoot = 'data/', fetchJson = defaultFetchJs
 // nothing else — not the topology, not the coastlines — and this is why the
 // counts are in the index rather than computed from records at render.
 export async function loadSources({ dataRoot = 'data/', fetchJson = defaultFetchJson } = {}) {
-  const manifest = await fetchJson(`${dataRoot}index/manifest.json`, { cache: 'no-store' });
+  const manifest = assertGeneration(await fetchJson(`${dataRoot}index/manifest.json`, { cache: 'no-store' }));
   const index = await fetchJson(`${dataRoot}${manifest.files.sources}`);
   return { manifest, sources: index.sources ?? [] };
 }
@@ -670,10 +805,14 @@ export async function loadSearchShard({ dataRoot = 'data/', manifest, fetchJson 
 // The graph comes from the spine and from nowhere else since H3c. The flag
 // that chose between the two files existed only while the pages moved over
 // one at a time (H3b), and it went with the file it named.
+//
+// `regions: false` went the same way in I1: it existed to spare `entry.html`
+// and `contribute.html` 221 KB of polygons that no page fetches here any
+// more, and there is nothing left for it to turn off.
 export async function loadAtlas({
-  dataRoot = 'data/', landFile = null, regions = true, fetchJson = defaultFetchJson,
+  dataRoot = 'data/', landFile = null, fetchJson = defaultFetchJson,
 } = {}) {
-  const manifest = await fetchJson(`${dataRoot}index/manifest.json`, { cache: 'no-store' });
+  const manifest = assertGeneration(await fetchJson(`${dataRoot}index/manifest.json`, { cache: 'no-store' }));
   const [spine, sourcesIndex] = await Promise.all([
     fetchJson(`${dataRoot}${manifest.files.spine}`),
     fetchJson(`${dataRoot}${manifest.files.sources}`),
@@ -684,32 +823,23 @@ export async function loadAtlas({
   // first frame it draws territories in, so it comes with the spine rather
   // than with the shard whose outlines it colours.
   const palette = manifest.palette ? await fetchJson(`${dataRoot}${manifest.palette}`) : null;
-  // The lane polygons, for the box of each region. A placeless event answers
-  // "am I in view" with its region, so the boxes have to be in hand before the
-  // first frame; a dataset without the file simply has none, and the events
-  // with no place stay out of a box as they were.
+  // The box of each region, for the events with no place: a placeless event
+  // answers "am I in view" with its region, so the boxes have to be in hand
+  // before the first frame. Until I1 that meant fetching 221 KB of polygons
+  // and reducing them to four numbers each on every page load; the build has
+  // the polygons in hand for `deriveRegion` and writes the boxes into the
+  // manifest instead (docs/index2-plan.md, D2). A manifest with none gives an
+  // empty Map, which is what a dataset with no polygons already gave.
   //
-  // `regions: false` for a page with no viewport to be in or out of — the
-  // entry page and the contribution form — because the polygons are a couple
-  // of hundred kilobytes and only the map ever asks the question.
-  //
-  // The shapes are kept as well as the boxes since M30b-2: a regional event is
-  // washed over its lane's polygons, and a box is a rectangle across a whole
-  // northern strip where a region wraps (util/geo.js). It is the file that was
-  // already fetched and already parsed, held rather than dropped — and the
-  // health review's §5.4 names these 221 KB as the first thing a base-map
-  // budget should reclaim, which is where the two will be settled together.
-  const collection = regions
-    ? await fetchJson(`${dataRoot}geo/regions.json`).catch(() => null)
-    : null;
+  // The polygons themselves are `atlas.loadRegionPolygons()` now, fetched by
+  // the wash a `regional` event is drawn as and by nothing at first paint.
   return createAtlasFromSpine({
     manifest,
     spine,
     sources: sourcesIndex.sources,
     land,
     palette,
-    regionBoxes: collection ? regionBounds(collection) : new Map(),
-    regionShapes: collection,
+    regionBoxes: new Map(Object.entries(manifest.regionBoxes ?? {})),
     dataRoot,
     fetchJson,
   });

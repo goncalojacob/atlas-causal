@@ -3,7 +3,10 @@ import assert from 'node:assert/strict';
 import {
   pointInRing, pointInGeometry, distanceToGeometry, createRegionDeriver, bbox, regionBounds,
 } from '../src/util/geo.js';
-import { fixtures } from './helpers.mjs';
+import path from 'node:path';
+import { readFile } from 'node:fs/promises';
+import { readRegionPolygons } from '../tools/lib/read.mjs';
+import { fixtures, FIXTURE_DATA, ROOT } from './helpers.mjs';
 
 const square = [[0, 0], [10, 0], [10, 10], [0, 10], [0, 0]];
 
@@ -74,3 +77,21 @@ test('the fixture regions come back one box each', async () => {
   assert.equal(regionBounds({ features: [{ properties: {}, geometry: { type: 'Polygon', coordinates: [square] } }] }).size, 0);
   assert.equal(regionBounds(null).size, 0);
 });
+
+// D2: the boxes are in the manifest since I1 and the polygons are not fetched
+// at first paint. The build writes them and this is the other half of the
+// claim — that what the manifest carries is `regionBounds` over the very file
+// the atlas used to reduce on every page load, to the rounding.
+for (const [label, dataDir] of [['the fixtures', FIXTURE_DATA], ['the repository', path.join(ROOT, 'data')]]) {
+  test(`the manifest's boxes are regionBounds over the polygons, over ${label}`, async () => {
+    const manifest = JSON.parse(await readFile(path.join(dataDir, 'index', 'manifest.json'), 'utf8'));
+    const polygons = await readRegionPolygons(dataDir);
+    const wanted = regionBounds(polygons);
+    assert.ok(wanted.size > 0, `${label} has lane polygons`);
+    assert.deepEqual(Object.keys(manifest.regionBoxes).sort(), [...wanted.keys()].sort());
+    const round = (n) => Math.round(n * 1e6) / 1e6;
+    for (const [id, box] of wanted) {
+      assert.deepEqual(manifest.regionBoxes[id], box.map(round), id);
+    }
+  });
+}

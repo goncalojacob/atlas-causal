@@ -63,7 +63,15 @@ export function createMap(container, { atlas, state, onCluster = null }) {
   const root = svg('svg', { viewBox: `0 0 ${WIDTH} ${HEIGHT}`, class: 'map', role: 'img', 'aria-label': 'Map' }, [viewport]);
 
   const land = createLandLayer(landGroup, projection);
-  const regionsLayer = createRegionsLayer(regionsGroup, projection, { shapes: atlas.regionShapes });
+  // The lane polygons are not at first paint since I1 (data.js, D2), so the
+  // layer is given the way to ask for them rather than the shapes themselves;
+  // it asks the first time a `regional` event is in the window, and this
+  // redraws when they land.
+  const regionsLayer = createRegionsLayer(regionsGroup, projection, {
+    shapes: atlas.regionShapes,
+    loadShapes: atlas.loadRegionPolygons ? () => atlas.loadRegionPolygons() : null,
+    onReady: () => render(state.get()),
+  });
   // A shard of borders that will not load leaves the map showing the year
   // before it, which is usually the same picture and therefore says nothing.
   // This is the one place it is said. It is not state and never reaches the

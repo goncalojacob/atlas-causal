@@ -6,6 +6,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { validate, buildTopology } from '../src/validate/core.js';
+import { checkRules } from '../src/validate/rules.js';
 import { createRegionDeriver } from '../src/util/geo.js';
 import { fixtures, schemas, clone } from './helpers.mjs';
 
@@ -27,6 +28,34 @@ test('the fixture presences pass, and hold no unused actors', async () => {
   // The two imported-style polities are named by no event at all; they are
   // used because they hold territory, and that is the point of the change.
   assert.equal(r.warnings.filter((w) => w.rule === 'actor-unused').length, 0);
+});
+
+// I1 and index2 review finding 2: the presences left the spine, and the two
+// pages that run the browser's half of the validator built their universe out
+// of the spine. A universe without them says an imported polity holds no
+// ground and is used by nothing — which the CLI does not say — so both pages
+// fetch the file and rebuild. This is the difference the fetch closes.
+test('a universe without the presences warns what the CLI does not', async () => {
+  const fx = await fixtures();
+  // An actor whose only reference is the ground it held. The fixtures' two
+  // polities are also the ends of a relation, so they answer "used" either
+  // way; the case this is about is the 325 actors the CShapes import created
+  // and that nothing but a presence names.
+  const actor = {
+    ...clone(fx.byId['fixture-polity-three']), id: 'fixture-polity-five', names: ['Fixture Polity Five'], aliases: [],
+  };
+  const presence = {
+    ...clone(fx.byId['fixture-polity-three-1100']), id: 'fixture-polity-five-1100', actor: actor.id, aliases: [],
+  };
+  const records = [...fx.records, actor, presence];
+  const topology = buildTopology(records, fx.regions, { deriveRegion: createRegionDeriver(fx.polygons) });
+  // One record against the universe, which is what an editor validates: the
+  // page runs the rules over the record in the inputs, not over the corpus.
+  const unused = (universe) => checkRules([actor], universe).warnings
+    .filter((w) => w.rule === 'actor-unused').map((w) => w.id);
+  assert.deepEqual(unused(topology), [], 'what the CLI says: it holds territory');
+  assert.deepEqual(unused({ ...topology, presences: [] }), [actor.id],
+    'and what a page that had not fetched the file would say');
 });
 
 test('the topology carries presences without their coordinates', async () => {

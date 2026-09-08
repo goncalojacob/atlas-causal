@@ -22,10 +22,11 @@
   "files": {
     "citers": "index/citers-77d329bd5e9b",
     "history": "index/history",
+    "presences": "index/presences-9d98874ab38e.json",
     "review": "index/review-8bf748a55c61.json",
     "search": "index/search-755e4c7ff6e5.json",
     "sources": "index/sources-be024864c060.json",
-    "spine": "index/spine-7f8e671c3e12.json"
+    "spine": "index/spine-45ce6b58c219.json"
   },
   "land": [],
   "licenses": {
@@ -187,6 +188,26 @@
       "to": 1299
     }
   ],
+  "regionBoxes": {
+    "fixture-lane-1": [
+      -40,
+      20,
+      -10,
+      50
+    ],
+    "fixture-lane-2": [
+      -40,
+      -20,
+      -10,
+      10
+    ],
+    "fixture-lane-3": [
+      10,
+      -20,
+      40,
+      50
+    ]
+  },
   "regions": [
     {
       "id": "fixture-lane-1",
@@ -209,7 +230,7 @@
     "leader",
     "signatory"
   ],
-  "schema": 1,
+  "schema": 2,
   "tenuresByOffice": {
     "fixture-office-one": [
       "fixture-tenure-one",

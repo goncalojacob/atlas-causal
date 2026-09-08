@@ -33,9 +33,20 @@ const correction = params.get('correction') === '1' || edit !== null;
 
 try {
   const [atlas, schemas] = await Promise.all([
-    loadAtlas({ dataRoot, landFile: false, regions: false }),
+    loadAtlas({ dataRoot, landFile: false }),
     loadSchemas({ root: 'schema/' }),
   ]);
+  // The presences, which left the spine in I1 and which rule 17 and the
+  // `actor-unused` warning read (rules.js; index2 review, finding 2). Awaited
+  // rather than swapped in when it lands, unlike the atlas and the review
+  // dashboard: `createForm` builds its universe once and rebuilding it would
+  // throw away whatever the contributor has typed. This page already waits
+  // for the whole graph before it draws a field, so one more file beside it
+  // moves nothing (deviation 305).
+  //
+  // A rejection leaves the form working on the universe without them, which
+  // is the universe it had before this file existed.
+  await atlas.loadPresences().catch(() => {});
   const searchEntries = await loadSearchShard({ dataRoot, manifest: atlas.manifest }).catch(() => null);
 
   // The record being corrected, if the address named one. A record that
@@ -77,6 +88,11 @@ try {
       offices: [...(atlas.offices?.values() ?? [])],
       tenures: [...(atlas.tenures?.values() ?? [])],
       narratives: [...(atlas.narratives?.values() ?? [])],
+      // The ground each actor held: not a choice the form offers — a presence
+      // has no address and is in no picker — but part of the universe the
+      // rules read, so that the form's `actor-unused` and rule 17 say what
+      // the CLI says (index2 review, finding 2).
+      presences: [...atlas.presences.values()],
       regions: atlas.regions,
       // The roles and the categories the atlas allows, off the manifest: the
       // form runs the same `checkRules` the CLI does, and without these two

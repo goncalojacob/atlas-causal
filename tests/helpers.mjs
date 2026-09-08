@@ -58,14 +58,31 @@ export async function citersOnDisk(dataDir) {
   return rows;
 }
 
+// The presence metadata off disk, whole. Its own file since I1, and the
+// browser fetches it when the territory layer first draws; every atlas built
+// here is built with `fetchJson: refuse`, so a suite that did not seed it
+// would have no territory at all and `spine-loader.test.mjs` would fail on
+// I1's own commit (index2 review, finding 5). Seeded exactly as the citers
+// are: what is proved by seeding is what a card does with the list, not how
+// it arrived — `tests/data.test.mjs` is where the fetching is held.
+//
+// An empty list where the manifest names no file: that is what says a dataset
+// has no presences, and the atlas answers the same way.
+export async function presencesOnDisk(dataDir) {
+  const manifest = JSON.parse(await readFile(path.join(dataDir, 'index', 'manifest.json'), 'utf8'));
+  if (!manifest.files?.presences) return [];
+  const file = JSON.parse(await readFile(path.join(dataDir, manifest.files.presences), 'utf8'));
+  return file.presences ?? [];
+}
+
 // The atlas as the site builds it: the spine and the sources index the
-// manifest names, with the citer rows seeded.
+// manifest names, with the citer rows and the presences seeded.
 export async function atlasOf(dataDir, options = {}) {
   const { manifest, read } = await indexOf(dataDir);
-  const [spine, sources, citers] = await Promise.all([
-    read(manifest.files.spine), read(manifest.files.sources), citersOnDisk(dataDir),
+  const [spine, sources, citers, presences] = await Promise.all([
+    read(manifest.files.spine), read(manifest.files.sources), citersOnDisk(dataDir), presencesOnDisk(dataDir),
   ]);
-  return createAtlasFromSpine({ manifest, spine, sources: sources.sources, citers, fetchJson: refuse, ...options });
+  return createAtlasFromSpine({ manifest, spine, sources: sources.sources, citers, presences, fetchJson: refuse, ...options });
 }
 
 // The in-memory build the spine is a projection of, read from the records

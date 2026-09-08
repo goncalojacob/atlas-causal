@@ -37,7 +37,7 @@ if (slot.dataset.prerendered === '1') {
     <code>entry.html?id=…</code>. <a href="index.html">The atlas</a> links here from every card.</p></section>`;
 } else {
   try {
-    const atlas = await loadAtlas({ dataRoot: fixtures ? 'tests/fixtures/data/' : 'data/', landFile: false, regions: false });
+    const atlas = await loadAtlas({ dataRoot: fixtures ? 'tests/fixtures/data/' : 'data/', landFile: false });
     const found = atlas.resolve(id);
     if (!found) {
       setTitle('');
