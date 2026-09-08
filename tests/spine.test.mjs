@@ -10,6 +10,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import path from 'node:path';
 import { buildPresenceIndex, buildSpine, buildTopology, edgeId } from '../src/validate/core.js';
+import { expandSpine } from '../src/data.js';
 import { KINDS } from '../src/kinds.js';
 import { buildIndex } from '../tools/build-index.mjs';
 import { atlasFromTopology, FIXTURE_DATA, ROOT, fixtures, topologyOf } from './helpers.mjs';
@@ -19,6 +20,165 @@ const DATA = path.join(ROOT, 'data');
 // The atlas over the in-memory build the spine is projected from — the
 // reference every count in the spine is checked against (helpers.mjs).
 const atlasOf = (dataDir) => atlasFromTopology(dataDir);
+
+
+// ─── The oracle ────────────────────────────────────────────────────────────
+//
+// The nine object literals of `buildSpine` and `buildPresenceIndex`, copied
+// here whole before I2 turns them into rows over an id table: `spineEntry` for
+// the tombstones, `envelopeOf` for what every record carries whatever its kind,
+// and `edgeInSpine` for the one kind that was already a row.
+//
+// They are installed *before* the change, against the projection they are a
+// copy of, so that the oracle is proved right about the code it was taken from
+// rather than written to fit the code that replaces it (index2 review,
+// finding 7). Not a line of it may import the encoder's own tables: a test that
+// shared them could not tell a wrong table from a wrong file.
+//
+// It does not move again. When a later run drops a field on purpose, the field
+// comes out of here in the same commit and the diff says which.
+
+const ORACLE_TOMBSTONE_KEYS = new Set(['id', 'kind', 'status', 'supersededBy', 'aliases', 'wikidata', 'title', 'name', 'names', 'when', 'place', 'region', 'revised']);
+const isObject = (v) => v !== null && typeof v === 'object' && !Array.isArray(v);
+
+function oracleEntry(entry) {
+  if (entry.status === 'active') return entry;
+  return Object.fromEntries(Object.entries(entry).filter(([key]) => ORACLE_TOMBSTONE_KEYS.has(key)));
+}
+
+function oracleEnvelope(record, kind) {
+  const out = { id: record.id, kind, status: record.status, supersededBy: record.supersededBy ?? null, aliases: record.aliases ?? [] };
+  if (typeof record.wikidata === 'string') out.wikidata = record.wikidata;
+  if (isObject(record.wikipedia)) out.wikipedia = record.wikipedia;
+  return out;
+}
+
+function oracleEdge(edge) {
+  const named = edge.id === edgeId(edge);
+  if (named && !edge.supersededBy && (edge.aliases ?? []).length === 0) {
+    return [edge.from, edge.to, edge.type, edge.confidence, edge.status, edge.revised ?? null];
+  }
+  const out = {
+    from: edge.from, to: edge.to, type: edge.type, confidence: edge.confidence,
+    status: edge.status, revised: edge.revised ?? null,
+    supersededBy: edge.supersededBy ?? null, aliases: edge.aliases ?? [],
+  };
+  if (!named) out.id = edge.id;
+  return out;
+}
+
+// What an edge row decodes to, so that the oracle's edges can be held against
+// the loader's records: the id the loader synthesises, and the two fields every
+// other kind carries in its envelope.
+function oracleEdgeDecoded(entry) {
+  if (!Array.isArray(entry)) return { ...entry, id: entry.id ?? edgeId(entry) };
+  const [from, to, type, confidence, status, revised = null] = entry;
+  return {
+    id: edgeId({ from, to, type }), from, to, type, confidence, status, revised,
+    supersededBy: null, aliases: [],
+  };
+}
+
+// The number the projection asks the sources index for. Counted here rather
+// than imported, for the same reason the literals are copied.
+function oracleCites(topology) {
+  const counts = new Map();
+  for (const source of topology.sources ?? []) {
+    for (const citation of source.citations ?? []) {
+      const key = `${citation.kind}:${citation.id}`;
+      counts.set(key, (counts.get(key) ?? 0) + 1);
+    }
+  }
+  return (kind, id) => counts.get(`${kind}:${id}`) ?? 0;
+}
+
+export function projectV1(topology) {
+  const citesCount = oracleCites(topology);
+  return {
+    events: (topology.events ?? []).map((e) => oracleEntry({
+      ...oracleEnvelope(e, 'event'),
+      title: e.title,
+      revised: e.revised ?? null,
+      when: e.when,
+      place: e.place,
+      region: e.region,
+      // `parent`, `scope` and `category` where the record has them, and
+      // `subtreeWeight` where it differs from `weight` — all four absent
+      // otherwise, which is what keeps them off the thousand events that carry
+      // none. A tombstone keeps none of them (M30a-3, amendment A11).
+      ...(e.parent === undefined ? {} : { parent: e.parent }),
+      ...(e.scope === undefined ? {} : { scope: e.scope }),
+      ...(e.category === undefined ? {} : { category: e.category }),
+      weight: e.weight,
+      ...(e.subtreeWeight === undefined ? {} : { subtreeWeight: e.subtreeWeight }),
+      actors: e.actors ?? [],
+      citesCount: citesCount('event', e.id),
+    })),
+    edges: (topology.edges ?? []).map(oracleEdge).map(oracleEdgeDecoded),
+    actors: (topology.actors ?? []).map((a) => oracleEntry({
+      ...oracleEnvelope(a, 'actor'),
+      name: a.name,
+      revised: a.revised ?? null,
+      names: a.names ?? [],
+      actorType: a.actorType,
+      when: a.when,
+      citesCount: citesCount('actor', a.id),
+    })),
+    places: (topology.places ?? []).map((p) => oracleEntry({
+      ...oracleEnvelope(p, 'place'),
+      name: p.name,
+      revised: p.revised ?? null,
+      names: p.names ?? [],
+      where: p.where,
+      region: p.region,
+      citesCount: citesCount('place', p.id),
+    })),
+    relations: (topology.relations ?? []).map((r) => oracleEntry({
+      ...oracleEnvelope(r, 'relation'),
+      from: r.from,
+      to: r.to,
+      type: r.type,
+      when: r.when,
+      note: r.note ?? null,
+    })),
+    offices: (topology.offices ?? []).map((o) => oracleEntry({
+      ...oracleEnvelope(o, 'office'),
+      of: o.of,
+      title: o.title,
+      category: o.category,
+      revised: o.revised ?? null,
+      when: o.when ?? null,
+    })),
+    tenures: (topology.tenures ?? []).map((t) => oracleEntry({
+      ...oracleEnvelope(t, 'tenure'),
+      person: t.person,
+      office: t.office,
+      when: t.when,
+      startedBy: t.startedBy ?? null,
+      note: t.note ?? null,
+    })),
+    narratives: (topology.narratives ?? []).map((n) => oracleEntry({
+      ...oracleEnvelope(n, 'narrative'),
+      title: n.title,
+      revised: n.revised ?? null,
+      summary: n.summary,
+      authors: n.authors ?? [],
+      window: n.window ?? null,
+      steps: n.steps ?? [],
+    })),
+    // Its own file since I1; the same row of the same table (index2-plan, D1).
+    presences: (topology.presences ?? []).map((p) => oracleEntry({
+      ...oracleEnvelope(p, 'presence'),
+      actor: p.actor,
+      when: p.when,
+      geometry: { key: p.geometry?.key ?? null },
+      dependencyOf: p.dependencyOf ?? null,
+      dependencyKind: p.dependencyKind ?? null,
+      capital: p.capital ?? null,
+      confidence: p.confidence,
+    })),
+  };
+}
 
 const ENVELOPE = ['id', 'kind', 'status', 'supersededBy', 'aliases'];
 // `revised` is on the five kinds a card fetches the record file of — the
@@ -59,6 +219,28 @@ test('every kind the registry knows is in the spine, or is the one that is not',
 });
 
 for (const [label, dir] of [['the fixtures', FIXTURE_DATA], ['the repository', DATA]]) {
+  // The claim the encoding is held to, and the only assertion that could catch
+  // a dropped field: what the loader gives back is what the nine literals
+  // wrote. True of the projection this oracle was copied from, and it has to
+  // stay true of whatever writes the file after it.
+  test(`what comes back out of the index is what the nine literals wrote, over ${label}`, async () => {
+    const topology = await topologyOf(dir);
+    const oracle = projectV1(topology);
+    const decoded = {
+      ...expandSpine(buildSpine(topology)),
+      presences: buildPresenceIndex(topology).presences,
+    };
+    let seen = 0;
+    for (const [list, want] of Object.entries(oracle)) {
+      assert.equal((decoded[list] ?? []).length, want.length, list);
+      for (const [i, entry] of want.entries()) {
+        assert.deepEqual(decoded[list][i], entry, `${list}[${i}]: ${entry.id}`);
+        seen += 1;
+      }
+    }
+    assert.ok(seen > 0);
+  });
+
   test(`the spine carries the field table over ${label}, and nothing else`, async () => {
     const topology = await topologyOf(dir);
     const spine = buildSpine(topology);
