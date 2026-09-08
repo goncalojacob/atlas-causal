@@ -7,6 +7,8 @@
 // office.js, cluster.js. Which one is shown is decided in render() and
 // nowhere else.
 
+import { shardsArrived } from '../render-key.js';
+import { shardsOnScreen } from '../attributes.js';
 import { esc, safeUrl } from '../util/esc.js';
 import { formatInterval, bounds, isValidYear } from '../util/dates.js';
 import { articleFor } from '../wikipedia.js';
@@ -487,6 +489,13 @@ export function createPanel(container, {
     const window = resolveWindow(s, atlas.extent);
     return {
       card: OPENINGS.map((field) => s[field] ?? '').join('|'),
+      // A card draws nothing out of a fallback (index2 review, finding 21), so
+      // until the record's shard has landed it is the loading line and not the
+      // entry; when the shard lands the card is drawn again with its title, its
+      // roles and its counts. Nothing in the state says the shard arrived, so
+      // the count of arrivals is in the key — the same integer the three views
+      // carry (render-key.js).
+      shards: shardsArrived(atlas),
       chain: s.chain.join(','),
       horizon: s.horizon ?? null,
       // The lens the card is drawn under. `lensControl` reads it at render —
@@ -503,7 +512,7 @@ export function createPanel(container, {
   }
 
   const sameCard = (a, b) => a.card === b.card && a.chain === b.chain && a.horizon === b.horizon
-    && a.lens === b.lens;
+    && a.lens === b.lens && a.shards === b.shards;
   const sameWindow = (a, b) => a.from === b.from && a.to === b.to;
 
   // The window's own bits, put back into the card that is on screen. Each is
@@ -557,9 +566,55 @@ export function createPanel(container, {
     render(s);
   }
 
+  // --- the shards the open card is drawn out of ----------------------------
+  //
+  // Which record is open, in render()'s own precedence, so that the shards held
+  // below are the ones the card actually reads. A source resolves here and asks
+  // for nothing: it is not in the graph file, and `attributeShardsOf` says so
+  // by finding no shard for it.
+  const OPENING_KINDS = [
+    ['narrative', 'narrative'], ['selected', 'event'], ['source', 'source'],
+    ['office', 'office'], ['place', 'place'], ['actor', 'actor'],
+  ];
+  function openingOf(s) {
+    for (const [field, kind] of OPENING_KINDS) {
+      if (!s[field]) continue;
+      const found = atlas.resolve(s[field]);
+      return found && found.kind === kind ? found : null;
+    }
+    return null;
+  }
+
+  // Asked for, and held outside the LRU cap while the card is on screen. The
+  // cards are per-entity and not windowed, so an actor whose events span five
+  // centuries would otherwise be drawn incomplete for ever (data.js,
+  // ATTRIBUTE_SHARD_CAP). The new pin is taken before the old one is released,
+  // so a shard both cards want is never dropped and fetched again in between.
+  //
+  // Nothing here waits: the card is drawn now out of what has landed, and drawn
+  // again when the rest does — which is what the shard count in `keyOf` is for.
+  let releaseShards = null;
+  function holdShards(s) {
+    if (typeof atlas.pinAttributes !== 'function') return;
+    const opened = openingOf(s);
+    const wanted = opened ? shardsOnScreen(atlas, opened.kind, opened.id) : [];
+    const release = atlas.pinAttributes(wanted);
+    releaseShards?.();
+    releaseShards = release;
+    for (const shard of wanted) atlas.loadAttributes(shard).then(refresh, () => {});
+  }
+
+  // A shard landing is not a state change, so nothing would tell the panel. The
+  // key carries the count of arrivals, so this is the same comparison every
+  // other notification goes through and it redraws only when one really landed.
+  function refresh() {
+    onState(state.get());
+  }
+
   function render(s) {
     drawnFor = keyOf(s);
     covered = false;
+    holdShards(s);
     onCard(hasOpening(s));
     token += 1;
     const mine = token;
@@ -632,5 +687,5 @@ export function createPanel(container, {
 
   state.subscribe(onState);
   render(state.get());
-  return { render, showCluster };
+  return { render, showCluster, refresh };
 }

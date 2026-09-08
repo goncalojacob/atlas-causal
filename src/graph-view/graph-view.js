@@ -24,7 +24,8 @@
 import { svg, svgTitle } from '../util/dom.js';
 import { formatInterval, formatYear } from '../util/dates.js';
 import { overlaps, resolveWindow } from '../util/window.js';
-import { renderKey } from '../render-key.js';
+import { renderKey, shardsArrived } from '../render-key.js';
+import { labelOf, LOADING_LABEL } from '../attributes.js';
 import { convergence } from '../graph.js';
 import { EDGE_TYPE_IDS } from '../vocab.js';
 import { chainEdges as walkedEdges, walkOrSelect } from '../chain.js';
@@ -491,7 +492,7 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
     // it does on this turn at every size this atlas has held (layout-runner).
     if (!laid) return;
     const box = view();
-    const key = renderKey(s, transform.x, transform.y, transform.k,
+    const key = renderKey(s, transform.x, transform.y, transform.k, shardsArrived(atlas),
       Math.round(box.x0), Math.round(box.y0), Math.round(box.x1), Math.round(box.y1));
     if (!force && !arranged && key === drawnFor) return;
     drawnFor = key;
@@ -666,7 +667,7 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
             stack.members.every((m) => lensNear.has(m.id)) ? 'lens-near' : '',
             Number.isFinite(nearest) ? `in-horizon ${horizonBand(nearest)}` : ''),
           'data-stack': stack.key,
-        }, [svgTitle(`${node.event.title} — and ${hidden} more event${hidden === 1 ? '' : 's'} here, ${span}`)]));
+        }, [svgTitle(`${labelOf(atlas, node.event) ?? LOADING_LABEL} — and ${hidden} more event${hidden === 1 ? '' : 's'} here, ${span}`)]));
         nodesGroup.appendChild(textNode(`+${hidden}`, {
           x: stack.x + (radius + 2) / k,
           y: stack.y - (radius + 1) / k,
@@ -697,7 +698,11 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
       const parts = collapsed
         ? ` — ${collapsed.count} part${collapsed.count === 1 ? '' : 's'} drawn inside it, weight ${collapsed.weight}; zoom in to part them`
         : '';
-      const title = `${node.event.title} — ${formatInterval(node.event.when)}${parts}${faded ? ' — outside the window' : ''}`;
+      // The node is drawn out of the core; what it is called arrives with its
+      // century, and until then it is a node with no name (attributes.js).
+      const name = labelOf(atlas, node.event);
+      const title = name === null ? LOADING_LABEL
+        : `${name} — ${formatInterval(node.event.when)}${parts}${faded ? ' — outside the window' : ''}`;
       const mark = svg('circle', {
         cx: node.x, cy: node.y, r: radius / k, class: cls, 'data-id': node.id,
       }, [svgTitle(title)]);
@@ -754,7 +759,10 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
     const free = (rect) => !placed.some((p) => rect.x0 < p.x1 && p.x0 < rect.x1 && rect.y0 < p.y1 && p.y0 < rect.y1);
     for (const node of candidates) {
       if (!all && placed.length >= LABEL_LIMIT) break;
-      const text = shorten(node.representative.event.title);
+      // No name yet is no label, and the next node still gets its own.
+      const named = labelOf(atlas, node.representative.event);
+      if (named === null) continue;
+      const text = shorten(named);
       let rect = boxFor(node, text, true);
       if (!free(rect)) {
         const other = boxFor(node, text, false);

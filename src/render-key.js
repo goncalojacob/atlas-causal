@@ -39,3 +39,16 @@ export function stateKey(state) {
 export function renderKey(state, ...parts) {
   return [stateKey(state), ...parts.map(flat)].join('|');
 }
+
+// The attribute shards, as one integer (I4a). Since I4 the three views and the
+// panel draw out of an atlas built from the core, where a title, a role and a
+// name arrive after the picture does; a shard landing changes what is drawn and
+// nothing in the state says so, exactly as a territory shard landing does for
+// the map. So every key carries this, and it is read here rather than in each
+// view so that the four cannot come to disagree about what a shard means.
+//
+// Zero for an atlas built from the spine, which has every attribute in hand
+// from the moment it exists and never changes underneath a view.
+export function shardsArrived(atlas) {
+  return atlas?.attributeShardsArrived?.() ?? 0;
+}

@@ -39,6 +39,10 @@ const SURFACE = [
   'shardForYear', 'loadedGeometry', 'loadGeometry', 'hueOfActor',
   'presencesLoaded', 'loadPresences',
   'attributesLoaded', 'loadAttributes', 'attributesFor', 'attributeShardsIn', 'pinAttributes',
+  // I4a: which shards a set of records is filed in, for the readers that are
+  // per-entity and not windowed, and how many times the set in hand has
+  // changed, for the four render keys.
+  'attributeShardsOf', 'attributeShardsArrived',
 ];
 
 // The two atlases: one from the spine, one from the core with as many shards
@@ -308,4 +312,47 @@ test('a record asked for before its shard is still fetched with ?v=<revised>', a
   // And the shard that landed on the way is the record's own, so the card that
   // asked has its title too.
   assert.equal(atlas.events.get('fixture-event-a').title.startsWith('Fixture'), true);
+});
+
+// I4a: the integer the four render keys carry. It counts changes to the set of
+// shards in hand and not the size of it, because `applyShard` loads and then
+// evicts: a fifth shard arriving over a full cap leaves the size at four while
+// every record in the shard it dropped has just lost its title, and a view
+// keyed on the size would skip exactly that redraw.
+test('the arrival count moves on a shard landing and on a shard being dropped', async () => {
+  const { atlas, shards } = await loadingAtlas(6);
+  assert.equal(atlas.attributeShardsArrived(), 0);
+  for (const shard of shards.slice(0, 4)) await atlas.loadAttributes(shard);
+  assert.equal(atlas.attributeShardsArrived(), 4);
+  assert.equal(atlas.loadedAttributeShards().length, 4);
+
+  // A shard already in hand is not an arrival.
+  await atlas.loadAttributes(shards[0]);
+  assert.equal(atlas.attributeShardsArrived(), 4);
+
+  // The fifth over a full cap: one arrival and one eviction, and the count of
+  // shards held has not moved at all.
+  await atlas.loadAttributes(shards[4]);
+  assert.equal(atlas.loadedAttributeShards().length, 4, 'the same number are held');
+  assert.equal(atlas.attributeShardsArrived(), 6, 'and two things happened to them');
+});
+
+// The shards a set of records is filed in, which is what a card, an entry page
+// and a lens ask for: those readers are per-entity and not windowed
+// (index2 review, finding 9).
+test('the shards of a set of records are the manifest entries, deduplicated and in order', async () => {
+  const { fromCore } = await atlases(FIXTURE_DATA);
+  const every = fromCore.attributeShardsOf(fromCore.activeEvents.map((e) => e.id));
+  assert.ok(every.length > 0, 'the fixtures span at least one century');
+  assert.deepEqual(every, fromCore.attributeShards.filter((s) => every.includes(s)), 'the manifest order');
+  assert.equal(new Set(every.map((s) => s.key)).size, every.length, 'no shard twice');
+
+  // One record asks for one shard, and it is the one `attributesLoaded` reads.
+  const one = fromCore.activeEvents[0];
+  const its = fromCore.attributeShardsOf([one.id]);
+  assert.equal(its.length, 1, `${one.id} is filed once`);
+  assert.ok(every.some((s) => s.key === its[0].key));
+
+  // An id the atlas has never heard of is filed nowhere and asks for nothing.
+  assert.deepEqual(fromCore.attributeShardsOf(['no-such-record']), []);
 });

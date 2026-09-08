@@ -27,7 +27,8 @@ import { createLinearScale } from './timeline-scale.js';
 import { clusterPoints } from './cluster.js';
 import { fromAstronomical, formatYear } from './util/dates.js';
 import { resolveWindow, overlaps, decadeOf, zoomWindow, withMargin } from './util/window.js';
-import { renderKey } from './render-key.js';
+import { renderKey, shardsArrived } from './render-key.js';
+import { labelOf, LOADING_LABEL } from './attributes.js';
 import { horizonBand } from './horizon.js';
 import { workingSet, heldSet } from './emphasis.js';
 import { walkOrSelect } from './chain.js';
@@ -428,9 +429,15 @@ export function createTimeline(container, { atlas, state, createScale = createLi
         item.onPath ? 'on-path' : '',
         item.selected ? 'selected' : '',
       ].filter(Boolean).join(' ');
+      // No name until the century carrying it has landed: a bar is drawn, and
+      // labelled when the shard arrives (attributes.js). The count and the
+      // "outside the window" are the timeline's own words about a bar it has
+      // drawn, so they are said either way.
+      const name = labelOf(atlas, item.event);
       const title = count
-        ? `${item.event.title} — and ${count} more here`
-        : item.inside ? item.event.title : `${item.event.title} — outside the window`;
+        ? `${name ?? LOADING_LABEL} — and ${count} more here`
+        : name === null ? LOADING_LABEL
+          : item.inside ? name : `${name} — outside the window`;
       // One of the two, never both: an element kept from the last render
       // would otherwise still name the cluster it used to stand for. `reuse`
       // drops an attribute it set before and is not given now.
@@ -497,7 +504,8 @@ export function createTimeline(container, { atlas, state, createScale = createLi
   let drawnFor = null;
 
   function render(s, { force = false } = {}) {
-    const key = renderKey(s, container.clientWidth || 0, container.clientHeight || 0);
+    const key = renderKey(s, container.clientWidth || 0, container.clientHeight || 0,
+      shardsArrived(atlas));
     if (!force && key === drawnFor) return;
     drawnFor = key;
     draw(s);
@@ -617,9 +625,10 @@ export function createTimeline(container, { atlas, state, createScale = createLi
           x: box.x, y: AXIS_HEIGHT, width: box.width, height: Math.max(0, height - AXIS_HEIGHT),
           class: 'large-band', 'aria-hidden': 'true',
         });
+        const name = labelOf(atlas, event) ?? '';
         into.bandLabels.take('text', {
           x: box.x + 4, y: AXIS_HEIGHT - 22, class: 'large-band-label',
-        }, { text: event.title.length > 28 ? `${event.title.slice(0, 27).trimEnd()}…` : event.title });
+        }, { text: name.length > 28 ? `${name.slice(0, 27).trimEnd()}…` : name });
       }
     }
 
@@ -679,7 +688,7 @@ export function createTimeline(container, { atlas, state, createScale = createLi
           y2: y,
           class: 'bracket',
           'data-parent': event.id,
-        }, { title: `${event.title} — the ${parts.length} event${parts.length === 1 ? '' : 's'} inside it` });
+        }, { title: `${labelOf(atlas, event) ?? LOADING_LABEL} — the ${parts.length} event${parts.length === 1 ? '' : 's'} inside it` });
       }
     }
 
@@ -702,14 +711,15 @@ export function createTimeline(container, { atlas, state, createScale = createLi
         item.onPath ? 'on-path' : '',
         item.selected ? 'selected' : '',
       ].filter(Boolean).join(' ');
+      const name = labelOf(atlas, item.event);
       into.held.take('rect', {
         x: item.x, y, width: item.width, height: barHeight(), rx: 3, class: classes, 'data-id': item.id,
-        ...barControl(lanes[i]?.id ?? '', item.event.title),
-      }, { title: item.event.title });
+        ...barControl(lanes[i]?.id ?? '', name ?? LOADING_LABEL),
+      }, { title: name ?? LOADING_LABEL });
       if (item.selected || item.onPath) {
         into.heldLabels.take('text', {
           x: item.x + item.width + 4, y: y + barHeight() / 2, class: `bar-label ${item.selected ? 'selected' : ''}`, 'dominant-baseline': 'middle',
-        }, { text: item.event.title });
+        }, { text: name ?? '' });
       }
     }
 

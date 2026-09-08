@@ -132,7 +132,8 @@ src/emphasis.js            pure: `workingSet(atlas, state)` — the selection, t
 src/lens.js                pure: which foci are on — the reader's `?focus=` list, or the record whose card is open as a lens of one — the events they reach, the one-hop ring drawn dimmed, and the four ways a control writes the parameter. An actor or place with no events is not a lens, and the implicit one never removes the selection, the chain or the consequences
 src/large.js               pure: which events are large — `scope` written by a person, or parts falling in more than one region lane, judged against the region lanes always and never the reader's grouping — and which parents get a bracket over their parts. The timeline's band, the map's wash and its corner line all read this one answer
 src/chain.js               pure: the walked chain as edges, where a withdrawal cut it, and how many steps it lost
-src/render-key.js          pure: whether two states draw the same picture, per view; the one place a view asks "has anything I draw changed?"
+src/render-key.js          pure: whether two states draw the same picture, per view; the one place a view asks "has anything I draw changed?" — and the count of attribute-shard arrivals every one of the four keys carries, since a century landing changes what is drawn and the state cannot see it
+src/attributes.js          pure: which records are on screen when one is open, and therefore which attribute shards a card or an entry page pins while it is; and what a view may print as a name, which is nothing until the record's century has landed
 src/grouping.js            pure: which band a record belongs to under each grouping, and the bands in order
 src/lanes.js               the one file that decides what a lane is: the region lanes, an actor's, a place's, and where a bar goes in one
 src/panes.js               which of the three views is on screen and how the panes divide, from the state

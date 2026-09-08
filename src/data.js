@@ -906,6 +906,18 @@ export function createAtlasFromCore({ core, attributes = [], manifest, ...rest }
   const pins = new Map();
   const inFlight = new Map();
 
+  // How many times the set of shards in hand has changed, arrivals and
+  // evictions alike. It is what the three views and the panel put in their
+  // render keys (render-key.js, I4a): a shard landing is a change to the
+  // picture that the state cannot see, so a key that could not see it would
+  // skip exactly the redraw that puts the titles on.
+  //
+  // A *count* of the shards held would not do, which is the one place this
+  // differs from the map's `shardsIn` for territories: `applyShard` loads and
+  // then evicts, so a fifth shard arriving where four are held leaves the count
+  // at four while every record in the dropped one has just lost its title.
+  // Counting the changes cannot say four twice about two different atlases.
+  let arrived = 0;
   const keyOf = (shard) => (typeof shard === 'string' ? shard : shard?.key ?? null);
   const attributesLoaded = (id) => loaded.has(shardOfId.get(id) ?? null);
   const touch = (key) => {
@@ -924,6 +936,7 @@ export function createAtlasFromCore({ core, attributes = [], manifest, ...rest }
       }
       loaded.delete(key);
       order.splice(order.indexOf(key), 1);
+      arrived += 1;
       dropped = true;
     }
     return dropped;
@@ -942,6 +955,7 @@ export function createAtlasFromCore({ core, attributes = [], manifest, ...rest }
     }
     loaded.set(key, file);
     touch(key);
+    arrived += 1;
     evictIfOver();
     atlas.reindexRecords();
   }
@@ -1017,14 +1031,30 @@ export function createAtlasFromCore({ core, attributes = [], manifest, ...rest }
     // never without one (index2 review, finding 3).
     beforeRecord: (kind, id) => loadAttributes(shardOfRecord.get(`${kind}:${id}`) ?? null),
   });
+  // Which shards a set of records' attributes are filed in, deduplicated and in
+  // the manifest's own order. A card, an entry page and a lens are per-entity
+  // and not windowed — an actor's events may span five centuries — so what they
+  // ask for and pin is this and not a window (index2 review, finding 9).
+  const attributeShardsOf = (ids) => {
+    const wanted = new Set();
+    for (const id of ids) {
+      const key = shardOfId.get(id);
+      if (key !== undefined) wanted.add(key);
+    }
+    return shards.filter((shard) => wanted.has(shard.key));
+  };
+
   Object.assign(atlas, {
     attributeShards: shards,
     attributesFor,
     attributeShardsIn,
+    attributeShardsOf,
     loadAttributes,
     pinAttributes,
     // Which shards are in hand, for a test and for the panel's key in I4.
     loadedAttributeShards: () => [...order],
+    // And how many times that set has changed, for the render keys (I4a).
+    attributeShardsArrived: () => arrived,
   });
   // A caller that already has shards in hand — the build, a test reading them
   // off disk — hands them over as `{ key, file }` and nothing is fetched. They

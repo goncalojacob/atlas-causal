@@ -18,7 +18,8 @@ import { workingSet, heldSet } from '../emphasis.js';
 import { largeEventsIn } from '../large.js';
 import { esc } from '../util/esc.js';
 import { normalizeBbox } from '../state.js';
-import { renderKey } from '../render-key.js';
+import { renderKey, shardsArrived } from '../render-key.js';
+import { labelOf } from '../attributes.js';
 import { exportButton } from '../share.js';
 
 const WIDTH = 960;
@@ -102,6 +103,9 @@ export function createMap(container, { atlas, state, onCluster = null }) {
   // keyboard.
   const events = createEventsLayer(eventsGroup, projection, {
     pointOf: atlas.pointOf,
+    // A mark is drawn as soon as the core says where and when; what it is
+    // called arrives with its century (attributes.js).
+    nameOf: (event) => labelOf(atlas, event),
     // One rule for the three pictures: a click on a consequence of what is
     // open follows that link, anything else starts afresh (chain.js). The map
     // draws the consequence line and then refused to follow it.
@@ -389,12 +393,18 @@ export function createMap(container, { atlas, state, onCluster = null }) {
   // asks for a redraw when a shard lands, and a key that could not see it
   // would skip exactly that redraw and leave the borders undrawn for ever
   // (render-key.js).
+  //
+  // The attribute shards are the same thing said about the marks since I4a: a
+  // century landing is what puts the titles on them, and it is one integer for
+  // all four keys so the map, the timeline, the graph and the panel cannot
+  // disagree about whether it has happened.
   let drawnFor = null;
   let shardsIn = 0;
 
   function render(s, { force = false } = {}) {
     const box = view();
     const key = renderKey(s, transform.x, transform.y, transform.k, spread ?? '', shardsIn, exactZoom,
+      shardsArrived(atlas),
       Math.round(box.x0), Math.round(box.y0), Math.round(box.x1), Math.round(box.y1));
     if (!force && key === drawnFor) return;
     drawnFor = key;

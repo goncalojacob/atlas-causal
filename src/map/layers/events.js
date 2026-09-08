@@ -25,6 +25,7 @@ import {
   clusterPoints, spreadPositions, zoomBucket, SPREAD_RADIUS, SPREAD_GAP,
 } from '../../cluster.js';
 import { horizonBand } from '../../horizon.js';
+import { LOADING_LABEL } from '../../attributes.js';
 
 // Sizes in SVG units at k = 1; every one of them is divided by k when drawn,
 // so a mark, a badge and a label keep their size on screen at any zoom.
@@ -90,7 +91,21 @@ function markClasses(event, { selected, pathIds, actorIds, narrativeIds = null, 
 
 // pointOf resolves an event to the coordinates of the place it names; the
 // coordinates are the place's, never the event's own (M9).
-export function createEventsLayer(group, projection, { pointOf, onSelect, onCluster = null }) {
+// `nameOf` is what an event may be called on the map: its title once the
+// century carrying it has landed, and null before that (attributes.js). The
+// layer draws the mark either way and labels it when the shard arrives; the
+// default is the title, for a caller whose atlas has every attribute in hand.
+export function createEventsLayer(group, projection, {
+  pointOf, onSelect, onCluster = null, nameOf = (event) => event.title ?? null,
+}) {
+  // What a mark says it is. "Outside the window" is the map's own word about a
+  // mark it has drawn and is said whether or not the name has arrived.
+  const named = (event, { faded = false } = {}) => {
+    const name = nameOf(event);
+    if (name === null) return LOADING_LABEL;
+    return faded ? `${name} — outside the window` : name;
+  };
+
   // What the last render drew, so a click on a cluster can be answered with
   // the cluster itself rather than with an id the caller would have to look
   // the members up from.
@@ -274,13 +289,13 @@ export function createEventsLayer(group, projection, { pointOf, onSelect, onClus
         const event = cluster.representative.event;
         if (cluster.count === 1) {
           appendMark(group, {
-            x: cluster.x, y: cluster.y, radius: MARK_RADIUS, title: event.title, id: event.id,
+            x: cluster.x, y: cluster.y, radius: MARK_RADIUS, title: nameOf(event) ?? LOADING_LABEL, id: event.id,
             classes: markClasses(event, { selected, pathIds, actorIds, narrativeIds, reachable, near }),
           });
           continue;
         }
         const hidden = cluster.count - 1;
-        const title = `${event.title} — and ${hidden} more event${hidden === 1 ? '' : 's'} here`;
+        const title = `${nameOf(event) ?? LOADING_LABEL} — and ${hidden} more event${hidden === 1 ? '' : 's'} here`;
         // A stack is in the horizon when any event under it is, at the band
         // of its nearest member: forty marks in Lisbon are not pulled apart
         // to say so, but the stack does not hide that the answer is in there.
@@ -313,7 +328,7 @@ export function createEventsLayer(group, projection, { pointOf, onSelect, onClus
         if (!isSelected && !drawable(x, y)) continue;
         const mark = appendMark(group, {
           x, y, radius: isSelected ? SELECTED_RADIUS : MARK_RADIUS,
-          title: faded ? `${event.title} — outside the window` : event.title, id: event.id,
+          title: named(event, { faded }), id: event.id,
           classes: markClasses(event, { selected, pathIds, actorIds, narrativeIds, reachable, faded, near }),
         });
         if (isSelected) selectedMark = mark;
@@ -341,11 +356,11 @@ export function createEventsLayer(group, projection, { pointOf, onSelect, onClus
           const y = cluster.y + positions[i].y / k;
           ring.appendChild(svg('line', { x1: cluster.x, y1: cluster.y, x2: x, y2: y, class: 'spread-leg' }));
           appendMark(ring, {
-            x, y, radius: MARK_RADIUS, title: member.event.title, id: member.id,
+            x, y, radius: MARK_RADIUS, title: nameOf(member.event) ?? LOADING_LABEL, id: member.id,
             classes: markClasses(member.event, { selected, pathIds, actorIds, narrativeIds, reachable }),
           });
           const right = positions[i].x >= 0;
-          ring.appendChild(textNode(shorten(member.event.title), {
+          ring.appendChild(textNode(shorten(nameOf(member.event) ?? ''), {
             x: x + (right ? 1 : -1) * (MARK_RADIUS + 3) / k,
             y: y + (LABEL_SIZE * 0.35) / k,
             class: 'mark-label spread-label',
@@ -368,7 +383,9 @@ export function createEventsLayer(group, projection, { pointOf, onSelect, onClus
         const placed = [];
         for (const cluster of candidates) {
           if (placed.length >= LABEL_LIMIT) break;
-          const text = shorten(cluster.representative.event.title);
+          const name = nameOf(cluster.representative.event);
+          if (name === null) continue;
+          const text = shorten(name);
           const x = cluster.x + (HIT_RADIUS + 2) / k;
           const y = cluster.y;
           // Rough, and deliberately so: an em is about half the font size,

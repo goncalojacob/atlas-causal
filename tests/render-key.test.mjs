@@ -5,7 +5,7 @@
 
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { renderKey, stateKey } from '../src/render-key.js';
+import { renderKey, stateKey, shardsArrived } from '../src/render-key.js';
 import { MARGIN_YEARS, withMargin, resolveWindow, overlaps } from '../src/util/window.js';
 import { createState } from '../src/state.js';
 
@@ -51,6 +51,38 @@ test("a view's own parts are in the key beside the state", () => {
   assert.equal(renderKey(s, 1, 2, 3), renderKey(s, 1, 2, 3));
   assert.notEqual(renderKey(s, 1, 2, 3), renderKey(s, 1, 2, 4));
   assert.notEqual(renderKey(s, 1, 2, 3), stateKey(s));
+});
+
+// I4a: since the pages read the core, a title arrives after the picture does,
+// and a shard landing is a change no field of the state can see. So it is one
+// integer in every one of the four keys, read in one place so the map, the
+// timeline, the graph and the panel cannot come to disagree about it.
+test('an atlas with no shards to speak of keys the same for ever', () => {
+  const s = store().get();
+  // What an atlas built from the spine gives: it has every attribute in hand
+  // from the moment it exists and never changes underneath a view.
+  assert.equal(shardsArrived({ events: new Map() }), 0);
+  assert.equal(shardsArrived(null), 0);
+  assert.equal(renderKey(s, shardsArrived(null)), renderKey(s, shardsArrived(undefined)));
+});
+
+test('a shard arriving changes the key, and nothing else about the state does', () => {
+  const s = store().get();
+  let arrived = 0;
+  const atlas = { attributeShardsArrived: () => arrived };
+  const key = () => renderKey(s, shardsArrived(atlas));
+  const before = key();
+  assert.equal(key(), before, 'nothing happened, nothing to draw again');
+  arrived += 1;
+  const after = key();
+  assert.notEqual(after, before, 'a shard landed and the view has to draw again');
+  // And an eviction is an arrival for this purpose: the records in the shard
+  // that was dropped have just lost their titles, which is as much a change to
+  // the picture as gaining them was. A count of the shards *held* would say
+  // "four" before and after a fifth arriving over a full cap, and the view
+  // would skip exactly the redraw that took the labels off.
+  arrived += 1;
+  assert.notEqual(key(), after, 'a shard was dropped and the view has to draw again');
 });
 
 test('the margin is one period each side, and null stays null', () => {
