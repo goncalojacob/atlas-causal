@@ -20,6 +20,7 @@ import { findChrome } from '../tools/screens.mjs';
 import { ROOT } from './helpers.mjs';
 import { withBrowser, open, waitFor, seenIntro, watchErrors, errorsOn } from './browser.mjs';
 import { expandSpine } from '../src/data.js';
+import { LOADING_LABEL } from '../src/attributes.js';
 
 const chrome = findChrome();
 const skip = chrome ? false : 'no headless browser found; set $CHROME to one';
@@ -183,10 +184,22 @@ test('a narrative step opens the graph without throwing', { skip }, async () => 
 // another yet, so this is on the fixtures, where `fixture-event-f` holds two.
 const NODE = (id) => `return Boolean(document.querySelector('svg.graph circle.node[data-id="${id}"]'));`;
 
+// The collapse itself is the core's: `parent` and `subtreeWeight` are core
+// columns (spine.js, `CORE_BY_KIND`), so the ring, the badge and the weight
+// are right on the first frame. What waits is the *name*, which arrives with
+// the century (I4a) and puts the graph's node titles back on when it lands.
+// So this waits for the title rather than for a duration — the assertions
+// below are about the drawing, not about how fast a shard is fetched (R3).
+const TITLED = (id) => `
+  const el = document.querySelector('svg.graph circle.node[data-id="${id}"]');
+  const title = el && el.querySelector('title');
+  return Boolean(title) && title.textContent !== ${JSON.stringify(LOADING_LABEL)};`;
+
 test('a parent holds its parts at the default zoom and gives them up when the reader zooms in', { skip }, async () => {
   await withBrowser(async (page, url) => {
     await watchErrors(page);
     await open(page, url('?fixtures=1&view=graph'), drawnGraph);
+    await waitFor(page, TITLED('fixture-event-f'), "the parent's century to land");
 
     const collapsed = await page.eval(`
       const el = document.querySelector('svg.graph circle.node[data-id="fixture-event-f"]');
