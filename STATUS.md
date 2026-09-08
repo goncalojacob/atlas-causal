@@ -13,6 +13,73 @@ hundred lines again, cut it the same way.
 
 ## Last updated
 
+2026-09-08, after **I9** (`docs/index2/i9-brief.md` and its amendments, the
+last run of the second index cycle, `docs/index2-plan.md` D13; owner
+question 9, answered as recommended): **the Why mode has ground to stand on,
+and no URL that lies.**
+
+Plan decision 11 lists what M35 needs, and most of it was already built —
+`subgraph`, the explanation shards, ranking as an ordering of the answer
+lists, convergence grouped by depth, the multi-focus lens. Three sentences in
+this file described things the code did not do. All three are now true.
+
+**The producer is `src/walk.js`.** An atlas, a target and a state in; out
+comes the path into that endpoint as an ordered list of edge ids, the events
+along it, and a provenance object beside them —
+`{ by: 'atlas', question, on, steps }`. It is built out of `shortestPaths`,
+`pathTo`, `pathCost` and `subgraph` and **adds no traversal of its own**, so
+the chain it hands a reader is the chain they would have clicked out for the
+same question; `shortestPaths` stays by hops (plan decision 6). A question
+starts where the state says it does — the event the reader's own walk began
+at, then the one they have open — and of the paths from those, the one that
+costs least wins: confidence before type, then the shorter, then by id, so
+two calls with the same arguments answer the same walk. A target with no path
+answers with no steps and says which of `no-target`, `no-start`, `arrived`
+and `no-path` it was.
+
+**The provenance is the session's, and it is never a record.** The store
+holds it beside the state — `setWalk` / `clearWalk` / `walk()`, notified like
+a state change and forwarded by `narrative-mode.js` — because a walk belongs
+in neither of the two places a thing usually goes: not in the URL, and not in
+`data/`, since a stitched path is itself a claim and an unsigned claim does
+not enter the corpus (plan decision 7). It carries no envelope, is frozen,
+and `ORIGIN_TOOLS` gains no `generated` value: `origin` says who wrote a
+*record*, and this is not one.
+
+**The line on the card is the whole difference between "the atlas suggests"
+and "the atlas asserts".** A generated walk is drawn exactly as a walked
+chain is — the same breadcrumb, the same madder, the same badges, because the
+steps are the same records — so a reader cannot see by looking who made the
+argument. The card says it in one sentence: who put it together, on what day,
+what question it answers, and that every step is a link somebody wrote with
+its confidence and its dispute marks unchanged. A path the reader walked
+themselves says nothing extra, because they know.
+
+**The URL grammar is M35's, and this run wrote none of it.** `?walk=` is
+exactly what it has been since H7: parsed, reserved, written by nothing.
+`?why=` was not added — M30a's amendment A14 gave it to M35 and that stands —
+and the address of a generated walk is M35's to decide, because the producer
+is deterministic and the honest address of a deterministic answer is its
+inputs. A `?walk=<session id>` would have been the first link the atlas
+wrote that means nothing in anybody else's session (review finding 16, owner
+question 9).
+
+**And a condition is now named as an endpoint** where a contributor reads it.
+The schema has allowed a process with no point since M9 and no document said
+so; `CONTRIBUTING.md`, `ARCHITECTURE.md` and `about.html` now do, each
+careful that a condition is *not* the same thing as a placeless event —
+whether a thing lasted and whether it can be put on a map are different
+questions.
+
+**Nothing under `data/` was created or edited**, no historical claim was
+written, and `node tools/validate.mjs --index` is byte-identical without a
+rebuild. `node --test`: **1,226 tests, 0 skipped, 0 failed**, from 1,209 — the
+seventeen new ones are the producer, the store's walk, the line on the card
+and the two in a real browser.
+The second index cycle is done.
+
+The section below and the ones further down are the runs before it.
+
 2026-09-08, after **I8** (`docs/index2/i8-brief.md` and its amendments, the
 ninth run of the second index cycle, `docs/index2-plan.md` D12; owner
 questions 3 and 4, answered as recommended): **the two gaps the reader
@@ -3415,6 +3482,34 @@ The numbering continues from 401, which is M31-3's last.
      **For the owner:** five runs have now done this, and the answer is
      either a shorter body — the milestone sections are what this file is for
      — or a run that is not asked to edit it.
+540. **The I9 section is a comment on pull request #1 and not in its body**,
+     as I4a's, M30c's, I5's, I6's and I8's are (deviations 483, 498, 506,
+     517, 539), for the same reason and with the same request to the owner.
+541. **Three files the brief's list does not name were touched, and one it
+     implies was left alone.** `src/narrative-mode.js` forwards the store's
+     `walk()` / `setWalk` / `clearWalk`, because everything downstream is
+     given that wrapper and not the store (main.js), so a walk it did not
+     forward would be a walk no card could see. `src/panel/panel.js` puts the
+     walk in `ctx` and in the card's key — `setWalk` notifies with every field
+     of the state unchanged, so a key that could not see it would compare two
+     keys that say the same thing and skip the redraw the walk arrived for.
+     `src/style.css` gains one line, `.panel .notice.generated`, bordered
+     `--madder`: the colour the chain it is about is already drawn in, and no
+     new one. **`src/main.js` was not touched**: nothing in the running atlas
+     calls `setWalk` yet, because the control that would is the Why mode's
+     (A1), and a `window` hook for the browser test to reach the live store
+     would be a public surface the owner did not ask for. The browser test
+     mounts a panel of its own over the fixture atlas instead, as
+     `review-browser` and `contribute-browser` already do.
+542. **The producer takes the day as an argument.** `walkTo(atlas, target,
+     state, { question, now })`: a producer that read the clock itself could
+     not be compared with itself, and the brief's own test asks that two calls
+     with the same arguments answer the same walk. `provenance.on` is a bare
+     date and not a timestamp — what the line owes a reader is that the path
+     was assembled and when, not a stamp precise enough to tell one session
+     from another. And a lens is not a start: `?focus=` says which events
+     exist for the views, not where an argument begins, which is the same
+     reason the hand tables gain no member for a walk.
 
 ## I8: what was derived, and what the Action must still run
 
@@ -3805,3 +3900,5 @@ I7 done
 I8 started 2026-09-08T15:33:49Z by scheduled
 I8 done
 I9 started 2026-09-08T16:38:01Z by scheduled
+I9 done
+Index cycle 2 done
