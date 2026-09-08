@@ -115,7 +115,11 @@ test('the queue draws 20 000 drafts and answers a keystroke', { skip }, async ()
 test('the record pane shows the history, the claim and the diff against the draft', { skip }, async () => {
   await withBrowser(async (page, url) => {
     await open(page, url('review.html'), QUEUE_READY);
-    await waitFor(page, 'return document.querySelector(".record-history summary") !== null;', 'the history block');
+    // The block is on the page before its versions are: the history is one
+    // fetch per record opened, and since I4b the record pane is drawn out of
+    // the core rather than behind the whole corpus, so it gets there sooner.
+    // Wait for what is asserted, never for a duration (R3's lesson).
+    await waitFor(page, 'return /version/.test((document.querySelector(".record-history summary") || {}).textContent || "");', 'the history block');
     const shown = await page.eval(`return {
       history: (document.querySelector(".record-history summary") || {}).textContent || "",
       versions: document.querySelectorAll(".record-history .history-list li").length,
