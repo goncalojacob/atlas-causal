@@ -844,6 +844,8 @@ atlas-causal/
 │       ├── manifest.json         ● the index's generation, counts, hashed file names, lanes and regionBoxes (one [minLon,minLat,maxLon,maxLat] per lane, since I1), roles in use, the two vocabularies (rolesAllowed, categoriesAllowed), officesByEvent and tenuresByOffice, land epochs, presence shards, explanation shards, the palette's file name; never cached
 │       ├── spine-<hash>.json     ● the graph, loaded whole by every page: every event {id,title,when,place,region,status,actors,weight,citesCount} with parent, scope, category and subtreeWeight where it has them, every place {id,name,names,where,region,status}, every edge as [from,to,type,confidence,status,revised], every actor {id,actorType,name,names,when,status}, every relation {id,from,to,type,when,note,status}, every office {id,of,title,category,when,status} with every tenure {id,person,office,when,startedBy,status}, every narrative {id,title,summary,authors,window,steps:[{ref}],status} — the refs and not a word of the prose. No presences since I1: they are the file below
 │       ├── presences-<hash>.json ● every presence {id,actor,dependencyOf,dependencyKind,when,geometry.key,capital,confidence,status} — half the spine on the real data, and nothing reads it until the territory layer draws, so it is fetched there and not at first paint (I1). Absent, with its manifest key, where a dataset has no presences
+│       ├── core-<hash>.json      ● the graph and what a mark, a bar and a lane are drawn from: every record's id and status, an event's year bounds, place, lane, weight, subtreeWeight, parent and its actors' **ids**, an edge's [from,to,type,confidence,status], an actor's type and years, a place's point, the two ids a relation, an office and a tenure join and their years, and the merges list. Written beside the spine since I3 and read by no page: I4 is what moves them over
+│       ├── attributes-<key>-<hash>.json ● what a card, a label or a strip reads and the core drops: title, `when` verbatim, revised, citesCount, wikidata, wikipedia, scope, category, an actor line's role and note, names, a place's label and precision, a relation's and a tenure's note, an office's title, a narrative's summary, authors, window and step refs. One file per century plus `place` (a place has no year) and `null`, filed by attributePeriod() and fetched for the window
 │       ├── search-<hash>.json    ● what the search box scans, folded at build time: per active record {id,kind,label,detail,terms,variants,weight,when,status} and, for an event, `lead` — the folded first sentence of its summary, matched below every name; fetched beside the spine and never waited for
 │       ├── explanations-<from>-<to>-<hash>.json  ● the links' arguments, a century a file, keyed by edge id: fetched in bulk by whatever reads a *path* and never to draw anything
 │       ├── citers-<hash>/<source-id>.json  ● the records that cite that one source, with locator and dissent; one file, fetched when a reader opens the source
@@ -1788,6 +1790,8 @@ rules are checked against it; no file holds it.
 | `explanations-<from>-<to>-<hash>.json` | whatever reads a path — the Why mode (M35), a narrative writer | `{ from, to, explanations: { <edge id>: text } }`, a century a file, filed by the year the link's **cause** begins in |
 | `citers-<hash>/<source-id>.json` | the source card, a source lens, `retractionPlan` | the rows that cite that one source |
 | `sources-<hash>.json` | `sources.html`, the source card | every bibliographic field and `citationCount`, and no citer rows |
+| `core-<hash>.json` | nothing yet; every page after I4 | the graph and what the three views draw: the same rows over the same id table, with the columns below |
+| `attributes-<key>-<hash>.json` | nothing yet; the window after I4 | what a card, a label or a strip reads, a century a file |
 
 The slots each kind carries, which since I2 is one table — `SPINE_COLUMNS` in
 `src/spine.js` — read forwards by `buildSpine` and backwards by
@@ -1841,6 +1845,84 @@ less than one shard's own budget, while `eventsByActor`, an actor's capitals
 and a selected event are all unwindowed — so the split cost four cards and
 bought nothing. The mechanism is reserved here for a per-event field that is
 genuinely large, against a measurement.
+
+#### The core and the attribute shards, beside the spine since I3
+
+The spine is **split in two**, and both halves are written beside it while
+nothing reads either: `core-<hash>.json`, which every page will load whole, and
+`attributes-<key>-<hash>.json`, one per century, fetched for the window and
+never waited for (`docs/index2-plan.md`, D4). I3 emits them and prints the
+bytes; **I4 is what moves the pages over**, one per commit, and only if those
+bytes say the split pays — which is H3a's own lesson, where period shards were
+built first and measured after and bought nothing (D5).
+
+The line is drawn once, as two column lists beside `SPINE_COLUMNS` in
+`src/spine.js`, and `tests/spine.test.mjs` holds them to being one partition of
+it: per kind, the core's columns and the shard's are the spine's between them,
+with nothing invented and nothing dropped. Four columns are in **both**, because
+they are split inside — the core takes a date's astronomical bounds, the point
+of a place and which actor a line names; the shard takes the record's own
+numbering (`when` verbatim, with its day, its calendar and its BCE years), the
+label and the precision, and the role and the note.
+
+| In the core | In the shard |
+|---|---|
+| every record's `id` and `status`, and the `merges` list | `revised`, `wikidata`, `wikipedia` |
+| an event's year bounds, `place`, `region`, `weight`, `subtreeWeight`, `parent`, and its actors' **ids** | its `title`, `when` verbatim, `citesCount`, `scope`, `category`, and each actor line's `role` and `note` |
+| an edge's `from`, `to`, `type`, `confidence`, `status` | its `revised` |
+| an actor's type and years; a place's point and lane | their `name`, `names`, `citesCount`; a place's `label` and `precision` |
+| the two ids a relation, an office and a tenure join, and their years | their `note`, `title`, `category`, `startedBy`, and `when` verbatim |
+| — | a narrative's `summary`, `authors`, `window` and step refs |
+
+**Why the joins are in the core and never in a shard.** `eventsByActor`,
+`eventsByPlace`, the `actor:` and `place:` lenses and the actor card's list are
+all **unwindowed**: an actor whose events span five centuries is asked about as
+one list. A join that arrived by century would answer half the question and
+look like a complete answer, which is the same mistake a windowed graph would
+make of convergence. So an event's actors' ids, its place and its parent are
+core whatever they cost; if a later feature needs an *attribute* unwindowed, it
+either moves to the core with a measured cost or it fetches (index2-plan,
+section 6 risk 4).
+
+**The writer pages are whole-universe readers** and are the other side of that
+rule: rule 21 reads `wikidata` off every row, `findSimilar` reads titles and
+aliases, rules 17 and the referrer warnings read the presences, and every rule
+comparing another record's interval reads `when` verbatim — none of which is in
+the core. So `contribute.html` and `review.html` hold **every** attribute shard,
+exempt from the cap, and say so while they are loading rather than reporting on
+half a corpus (I4b; index2 review, finding 2).
+
+**A record is filed by `attributePeriod(kind, record, events)`** in
+`src/explanations.js`, beside `periodOfEdge`, which the explanation shards
+already use: an event by the year it begins in, an edge by the year its *cause*
+begins in, an actor, a relation, a tenure or an office by the year its interval
+begins in, a narrative by its window. Two answers are not a century — a **place**
+has no year and every event points at one, so the places are a single shard, and
+a record whose key is null is in the `null` shard, which is fetched with the
+first century. One table, used by these shards and by I5's histories, so two
+sharding schemes cannot come to disagree.
+
+**What a record reads as before its shard lands**: the core, plus a title that
+is the id, `citesCount` 0, `names` empty, and a `when` built from the core's own
+bounds. **The three views may draw that and a card may not** — a mark, a bar and
+a node appear untitled for one frame at the whole extent, which is the
+discipline the territories, the citers and the explanations already follow,
+while a card, an entry page and a search row show the "loading" line the source
+card shows for its citers. `atlas.attributesLoaded(id)` is what decides, and it
+is `true` on every atlas built from the spine (index2 review, finding 21).
+
+**The loader**: `loadCore()` caches the core as `loadSpine` caches the spine;
+`loadAttributes(shard)` holds one request in flight and drops a rejection;
+`attributesFor(year)` and `attributeShardsIn(window)` say which shards a picture
+needs; and an LRU holds **four unpinned shards**, so a session that has scrubbed
+across six centuries does not hold six centuries. A shard an open card, an entry
+page or a lens needs is **pinned** and never evicted — those readers are
+per-entity and not windowed (finding 9). When a shard lands or is dropped, the
+joins over the records are built again in place: three of them are sorted or
+keyed by something a shard carries. And `record()` waits for the record's own
+shard before it fetches the file, because `revised` — what `?v=` is made of — is
+in the shard, and a card that fetched without it could draw a stale copy for the
+rest of the session (finding 3).
 
 Two counts with two names, because they mean opposite things:
 **`citesCount`**, on an active event, actor or place, is how many citations
@@ -2473,6 +2555,51 @@ target could not have been met by any encoding that drops no field, which is
 the brief's other rule; the run reports rather than trims. Reducing those bytes
 means deciding which of them a first paint needs, and that decision is I3's —
 the core and the attribute shards — which is where the plan puts it.
+
+**And what I3 measured**, which is the number I4 is gated on. The split is
+written beside the spine and read by nothing, so nothing here is what a page
+pays today; it is what a page *would* pay after I4. On the real corpus
+(1,839 records; 329 events, 161 edges, 445 actors, 26 places, 43 relations, 9
+offices, 81 tenures, 1 narrative, 710 presences, 34 sources):
+
+| | raw | gzipped |
+|---|---|---|
+| `core-<hash>.json` | **53,387 (52.1 KB)** | **14,767 (14.4 KB)** |
+| the five attribute shards | 160,672 | 40,269 |
+| — 1800–1899 | 29,011 | 7,025 |
+| — 1900–1999 | 98,174 | 24,250 |
+| — 2000–2099 | 26,518 | 6,515 |
+| — `null` | 2,287 | 843 |
+| — `place` | 4,682 | 1,636 |
+| the two together | 214,059 | 55,036 |
+| the spine, which they are a split of | 162,695 | 37,944 |
+| `search-<hash>.json`, beside them | 183,424 | 33,917 |
+| **first paint reading the core** | **243,367 (237.7 KB)** | |
+| first paint reading the spine | 352,675 (344.4 KB) | |
+
+At 10⁴ — the bench atlas of 20,000 events of which 8,000 tombstones, 39,996
+edges, 500 actors, 1,750 places, 200 sources and no presences:
+
+| | raw | gzipped |
+|---|---|---|
+| `core-<hash>.json` | **2,016,667 (1.92 MB)** | **336,979 (329.1 KB)** |
+| the eight attribute shards | 3,260,536 | 339,621 |
+| the spine | 3,821,229 | 434,746 |
+| `search-<hash>.json` | 2,753,125 | 125,508 |
+| **first paint reading the core** | **2,165,575** | |
+| first paint reading the spine | 3,970,137 | |
+
+**The threshold is met on the real data and not at 10⁴.** Plan §3 asks for a
+core of ≤ 60 KB raw on the real data — it is 52.1 — and of ≤ 2.0 MB raw and
+≤ 320 KB gzipped at 10⁴, where it is 1.92 MB and **329.1 KB**. The gzipped
+figure misses by 2.9 %, and the raw one clears 2.0 MB read as 1,048,576 bytes
+and misses it by 0.8 % read as 1,000,000. Per record the core costs **21.0 B
+per id** and **18.9 B per edge**, which are the plan's own measured figures to
+the tenth, and **35.8 B per event** against the 31.6 the plan measured; the id
+table is 467,251 B of it and, as §0 says, is the floor. What the split buys is
+not in doubt — 1.45× off the real first paint and 1.83× at 10⁴, with the
+titles, the roles and the notes arriving a century at a time — but the number
+I4 was gated on is not met, and saying so is what this run is for.
 
 ## Milestones
 

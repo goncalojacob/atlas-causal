@@ -13,7 +13,90 @@ hundred lines again, cut it the same way.
 
 ## Last updated
 
-2026-09-08, after **I2** (`docs/index2/i2-brief.md` and its amendments, the
+2026-09-08, after **I3** (`docs/index2/i3-brief.md` and its amendments, the
+third run of the second index cycle, `docs/index2-plan.md` D4 and D5), on `m0`:
+**the index writes a core every page could load whole and attribute shards by
+century, beside the spine, and nothing switched over. The core is 52.1 KB on
+the real data and 1.92 MB raw / 329.1 KB gzipped at 10⁴.**
+
+**The verdict I4 is gated on, in one sentence: the plan's threshold is met on
+the real data and is NOT met at 10⁴, so by the brief's own rule I4 should not
+run until the owner decides otherwise.** Plan §3 asks for a core of ≤ 60 KB raw
+on the real data — it is 53,387 B, 52.1 KB, and 14,767 B gzipped — and of
+≤ 2.0 MB raw **and** ≤ 320 KB gzipped at 10⁴, where it is 2,016,667 B and
+**336,979 B, which is 329.1 KB**. The gzipped figure misses by 2.9 %; the raw
+one clears 2.0 MB read as 1,048,576 bytes and misses by 0.8 % read as
+1,000,000. Two of the three thresholds are met on the kinder reading of each
+and one is met on neither, and the rule is an AND, so the honest reading is
+that it fails.
+
+**What the split would buy, for the decision that follows.** Reading the core
+instead of the spine takes the real first paint from 352,675 B to **243,367 B**
+(1.45×) and the same at 10⁴ from 3,970,137 to **2,165,575** (1.83×), with the
+titles, the roles and the notes arriving a century at a time behind the
+picture. Per record the core costs **21.0 B per id** and **18.9 B per edge** —
+the plan's own measured figures to the tenth — and **35.8 B per event** against
+the 31.6 the plan measured; the id table is 467,251 B of the 2,016,667 at 10⁴
+and, as the plan says, is the floor. The run does not go on to guess at the
+rest: the brief says to write the numbers and stop, and this is that.
+
+| the real data | raw | gzipped |
+|---|---|---|
+| `core-<hash>.json` | **53,387 (52.1 KB)** | **14,767 (14.4 KB)** |
+| the five attribute shards | 160,672 | 40,269 |
+| — 1800–1899 · 1900–1999 · 2000–2099 | 29,011 · 98,174 · 26,518 | 7,025 · 24,250 · 6,515 |
+| — `null` · `place` | 2,287 · 4,682 | 843 · 1,636 |
+| the two together | 214,059 | 55,036 |
+| the spine they are a split of | 162,695 | 37,944 |
+| `search-<hash>.json`, beside them (A6) | 183,424 | 33,917 |
+| **first paint reading the core** | **243,367 (237.7 KB)** | |
+| first paint reading the spine | 352,675 (344.4 KB) | |
+
+| at 10⁴ | raw | gzipped |
+|---|---|---|
+| `core-<hash>.json` | **2,016,667 (1.92 MB)** | **336,979 (329.1 KB)** |
+| the eight attribute shards | 3,260,536 | 339,621 |
+| the spine | 3,821,229 | 434,746 |
+| `search-<hash>.json` (A6) | 2,753,125 | 125,508 |
+| **first paint reading the core** | **2,165,575** | |
+| first paint reading the spine | 3,970,137 | |
+
+**Nothing switched over, which is the other half of the run.** Every page still
+fetches the spine, `tests/spine-pages.test.mjs` is untouched, and `loadAtlas`
+gained `{ from: 'spine' | 'core' }` that nothing outside the tests passes. The
+prerendered pages are byte-identical.
+
+**The line is a table and the test is the partition.** `CORE_COLUMNS` and
+`ATTRIBUTE_COLUMNS` sit beside `SPINE_COLUMNS` in `src/spine.js` and are one
+partition of it: per kind, the core's columns and the shard's are the spine's
+between them, with no overlap but the four that are split *inside* — the core
+takes a date's astronomical bounds, a place's point and which actor a line
+names, and the shard takes the record's own numbering, the label and precision,
+and the role and the note. `tests/core-loader.test.mjs` is the claim on the
+records rather than on the tables: an atlas from the core plus every shard has
+the same ids in the same order and every record deep-equal to the spine's, over
+the fixtures and over the repository, and an atlas from the core **alone**
+answers `consequences`, `ancestors`, `convergence`, `shortestPaths` and
+`reachableBy` identically on every active event — which is the argument of the
+split, since convergence cannot be answered from a window.
+
+A record is filed by `attributePeriod(kind, record, events)` beside
+`periodOfEdge` (plan A8), so I5's histories will file by the same table: an
+event by the year it begins, an edge by the year its cause begins, a place in
+the one shard of places, and anything with no year in the `null` shard, which is
+fetched with the first century. Before its shard lands a record's title is its
+id, its `citesCount` 0 and its dates the core's own bounds; `attributesLoaded`
+is what lets the three views draw that and a card refuse to. Four unpinned
+shards are held, a shard an open card needs is pinned outside the cap, and
+`record()` waits for the shard that carries its own `revised` so a file is never
+asked for without the `?v=` the index says.
+
+`manifest.schema` is 4, the core and the spine carry the same number, `node
+tools/validate.mjs --index` is byte-identical, `node --test` is 1,131 tests
+green with `CHROME` set and 0 skipped, and the prerendered pages are unchanged
+(plan D7).
+
+Before this, **I2** (`docs/index2/i2-brief.md` and its amendments, the
 second run of the second index cycle, `docs/index2-plan.md` D3 and D6), on
 `m0`: **every record in `data/index/` is a positional row over one shared id
 table, and the two files that carry the graph are 1.94× smaller — 581,701
@@ -1741,6 +1824,75 @@ The numbering continues from 401, which is M31-3's last.
      loop opening them again was six page loads of contention that made the
      suite flaky rather than a claim it could not make where it stood.
 
+### I3
+
+435. **The core is 329.1 KB gzipped at 10⁴ against the plan's 320, and 1.92 MB
+     raw against its 2.0** — the threshold `docs/index2/i3-brief.md` makes this
+     run's "Done when" and the one I4 is gated on. On the real data it is
+     52.1 KB raw and 14.4 KB gzipped against 60 and 15, and clears both. At 10⁴
+     the raw figure clears 2.0 MB read as 1,048,576 bytes and misses by 0.8 %
+     read as 1,000,000; the gzipped figure misses on either reading, by 2.9 %.
+     The rule is an AND over the three, so **the threshold is not met and the
+     brief says I4 should not run**. The run does not go on to guess why, as the
+     brief also says: the numbers are above and in `ARCHITECTURE.md` under
+     "Scale, for the record", the per-record costs are the plan's own to the
+     tenth for an id (21.0 B) and an edge (18.9 B) and 4.2 B over it for an
+     event, and what the split *would* buy — 1.45× off the real first paint,
+     1.83× at 10⁴ — is stated beside them so that overruling this is a decision
+     taken against numbers.
+436. **An attribute row says which record it is about by id**, which the brief
+     does not specify. The alternative was keying a shard's rows by their
+     position in the core's lists, which is smaller — no id table in the
+     shards, and the shards would not add 51 KB of duplication on the real data
+     — and which attaches a title to the wrong record if a shard and a core
+     from two builds ever meet. This project's worst mistake is a claim
+     presented as something it is not, so the rows carry ids. The one kind that
+     does not is the edge: it says `from`, `to` and `type`, three integers into
+     the shard's own table, because its id is made of those and 39,996 long
+     strings at 10⁴ are what the derived id exists to avoid.
+437. **The manifest's `attributeShards` entries carry a `key` as well as
+     `{ file, from, to }`**, where the brief says "exactly as
+     `explanationShards` is written". Two shards answer no year — the places and
+     the `null` one — so `from: null` cannot tell them apart, and a record's
+     filing key is a string that names its shard exactly (`1900-1999`, `place`,
+     `null`), which is also the middle of the file's own name. Fifteen bytes a
+     shard in a manifest fetched `no-store`.
+438. **`createAtlas` gained three things, where the brief names only
+     `createAtlasFromCore`.** `attributesLoaded(id)` and `beforeRecord` are
+     parameters with defaults that make an atlas from the spine exactly what it
+     was — every attribute in hand, and no promise between a click and the
+     request. The third is `reindexRecords`, and it is the substantive one: the
+     joins over the records are built by one function that fills the existing
+     Maps in place, called at assembly and again whenever a shard lands or the
+     LRU drops one. Three joins are sorted or keyed by something a shard
+     carries — an actor line's `role`, an office's `title`, a narrative's
+     `steps` — and a list built before the shard arrived would have been a list
+     the reader never sees corrected. It is the discipline `indexPresences`
+     already follows for the presence file.
+439. **`when` is one column in both tables rather than a `bounds` column in the
+     core.** The core's slot carries `[min, max]` astronomical and decodes to a
+     `when` the scales read identically; the shard's carries the record's own
+     numbering and replaces it. Naming them both `when` is what makes "the two
+     tables are the spine between them" a partition with a stated overlap —
+     `SPLIT_COLUMNS`, four names — rather than a union with a field the spine
+     never had. `where` and `actors` are split the same way, and a narrative's
+     `window` is the fourth.
+440. **The two files together are 31 % larger than the spine** — 214,059 B
+     against 162,695 on the real data — because every record's id is written
+     twice, once in the core's table and once in its shard's (deviation 436).
+     Nothing pays that at once: a page pays the core and the centuries in its
+     window, which is 243,367 B at first paint against 352,675.
+441. **I3 costs today's first paint 743 bytes**, which is what the manifest
+     grew by to name a core and five shards that no page fetches. It is the
+     price of D5's "nothing switches over" and it goes when I4 either moves the
+     pages or removes the files.
+442. **`tests/spine-loader.test.mjs` was edited in four places**: three are the
+     generation number, exactly as I2's deviation 422 records, and the fourth is
+     `SURFACE` gaining `attributesLoaded`, which the brief's hand-table list
+     asks for. Not one assertion about the projection moved. The five members
+     that exist only on an atlas from the core are asserted in the new
+     `tests/core-loader.test.mjs`, which carries its own copy of the list.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
@@ -1865,3 +2017,4 @@ I1 done
 I2 started 2026-09-08T02:43:14Z by scheduled
 I2 done
 I3 started 2026-09-08T03:27:15Z by scheduled
+I3 done

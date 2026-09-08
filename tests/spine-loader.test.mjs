@@ -57,6 +57,10 @@ const SURFACE = [
   // every deferred load here has — the answer if it is in hand, and the way
   // to ask for it.
   'presencesLoaded', 'loadPresences',
+  // I3: whether a record's own attributes are in hand. On an atlas from the
+  // spine it is true of everything and always was; on one from the core it is
+  // what tells "no title" from "no title yet" (index2 review, finding 21).
+  'attributesLoaded',
 ];
 
 for (const [label, dir] of DATASETS) {
