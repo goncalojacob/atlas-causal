@@ -151,11 +151,27 @@ export async function recordHistories(records, { dataDir, git = true } = {}) {
   // `from: 'git'` over it would be a claim this file cannot support.
   const repo = found && !(await isShallow(found)) ? found : null;
   const prefix = repo ? path.relative(repo, dataDir).split(path.sep).filter(Boolean) : [];
-  const pathOf = (record) => [...prefix, KIND_DIRS[record.kind], `${record.id}.json`].join('/');
+  const fileAt = (kind, id) => [...prefix, KIND_DIRS[kind], `${id}.json`].join('/');
+  const pathOf = (record) => fileAt(record.kind, record.id);
+  // Every path this record's versions have lived at, oldest first. An alias is
+  // a former id and a former id is a former file name, so the versions before
+  // a rename are under `<kind dir>/<alias>.json` — where `git log` will not
+  // find them from here, because the rename commit is an `R` that
+  // `--diff-filter=AM` drops and this walk asks only about the path the
+  // record is at now. Without them a record `tools/migrate/ids.mjs` renamed
+  // reads in the dashboard as one written once and never touched (index2
+  // review, finding 13; i7-brief A1).
+  //
+  // A record renamed twice has both former names in `aliases`, in the order
+  // they were given up, which is the order the versions belong in.
+  const pathsOf = (record) => [
+    ...(record.aliases ?? []).filter((alias) => typeof alias === 'string').map((alias) => fileAt(record.kind, alias)),
+    pathOf(record),
+  ];
   let states = null;
 
   if (repo) {
-    const byPath = new Set(wanted.map(pathOf));
+    const byPath = new Set(wanted.flatMap(pathsOf));
     const dirs = [...new Set(wanted.map((r) => [...prefix, KIND_DIRS[r.kind]].join('/')))].sort();
     const pairs = await changedPaths(repo, dirs);
     if (pairs) {
@@ -177,7 +193,10 @@ export async function recordHistories(records, { dataDir, git = true } = {}) {
 
   const from = states ? 'git' : 'revised';
   const histories = wanted.map((record) => {
-    const known = states?.get(pathOf(record));
+    // The states of every path the record has lived at, its former names
+    // first: one history across a rename rather than two halves of one.
+    const walked = states ? pathsOf(record).flatMap((file) => states.get(file) ?? []) : null;
+    const known = walked && walked.length ? walked : null;
     return {
       schema: 1,
       id: record.id,

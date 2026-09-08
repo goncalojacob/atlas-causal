@@ -563,131 +563,251 @@
       ]
     },
     "portugal--council-of-europe--member-of": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-09-05"
         },
         {
-          "fields": [],
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "aliases",
+            "id",
+            "note",
+            "type"
+          ],
           "on": "2026-09-06"
         }
       ]
     },
     "portugal--cplp--member-of": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-09-05"
         },
         {
-          "fields": [],
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "aliases",
+            "id",
+            "note",
+            "type"
+          ],
           "on": "2026-09-06"
         }
       ]
     },
     "portugal--efta--member-of": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-09-05"
         },
         {
-          "fields": [],
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "aliases",
+            "id",
+            "note",
+            "type"
+          ],
           "on": "2026-09-06"
         }
       ]
     },
     "portugal--european-union--member-of": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-09-05"
         },
         {
-          "fields": [],
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "aliases",
+            "id",
+            "note",
+            "type"
+          ],
           "on": "2026-09-06"
         }
       ]
     },
     "portugal--eurozone--member-of": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-09-05"
         },
         {
-          "fields": [],
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "aliases",
+            "id",
+            "note",
+            "type"
+          ],
           "on": "2026-09-06"
         }
       ]
     },
     "portugal--imf--member-of": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-09-05"
         },
         {
-          "fields": [],
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "aliases",
+            "id",
+            "note",
+            "type"
+          ],
           "on": "2026-09-06"
         }
       ]
     },
     "portugal--league-of-nations--member-of": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-09-05"
         },
         {
-          "fields": [],
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "aliases",
+            "id",
+            "note",
+            "type"
+          ],
           "on": "2026-09-06"
         }
       ]
     },
     "portugal--oecd--member-of": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-09-05"
         },
         {
-          "fields": [],
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "aliases",
+            "id",
+            "note",
+            "type"
+          ],
           "on": "2026-09-06"
         }
       ]
     },
     "portugal--oeec--member-of": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-09-05"
         },
         {
-          "fields": [],
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "aliases",
+            "id",
+            "note",
+            "type"
+          ],
           "on": "2026-09-06"
         }
       ]
     },
     "portugal--schengen-area--member-of": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-09-05"
         },
         {
-          "fields": [],
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "aliases",
+            "id",
+            "note",
+            "type"
+          ],
           "on": "2026-09-06"
         }
       ]
