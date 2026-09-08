@@ -148,8 +148,10 @@ test('25 April, horizon 2011, on the repository dataset', async () => {
   const adj = await adjacencyIn(path.join(ROOT, 'data'));
   const list = reachableBy(adj, 'carnation-revolution-1974', 2011);
   // 30 until M29 added Schengen 1995 and the CPLP 1996, both downstream of
-  // the revolution and both before the horizon.
-  assert.equal(list.length, 32);
+  // the revolution and both before the horizon; 32 until the merge of `world`
+  // brought M41b's `crisis-portugal`, which is what reaches the legislative
+  // election of 2011 and, through it, that year's Socialist leadership.
+  assert.equal(list.length, 35);
   assert.equal(list.filter((r) => r.depth === 1).length, 8);
   // Every one of them has begun by the horizon, and none of them is the
   // event itself.
