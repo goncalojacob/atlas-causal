@@ -27,6 +27,7 @@ import {
   NARRATIVE_STEP_REF, OFFICE_CATEGORY_IDS, OFFICE_ENDPOINTS, OFFICE_CATEGORY_LABEL,
   EVENT_SCOPES,
 } from '../src/vocab.js';
+import { ACTOR_TYPES, CONFIDENCE_ORDER, DEPENDENCY_KINDS, RECORD_STATUSES } from '../src/validate/rules.js';
 import { KIND_DIRS as READ_KIND_DIRS } from '../tools/lib/read.mjs';
 import { SCHEMA_FILES, TOOL_SIDE } from '../src/validate/schemas.js';
 import { CARDS, OPENINGS } from '../src/state.js';
@@ -127,6 +128,20 @@ test('the vocabularies equal the enums in schema/**', async () => {
 
   assert.deepEqual([...EDGE_TYPE_IDS], edge.properties.type.enum);
   assert.deepEqual([...RELATION_TYPE_IDS], relation.properties.type.enum);
+
+  // The four lists I2 writes into the index as integers. A file's integer is
+  // an index into one of these, so a list that had drifted from the schema's
+  // enum would be a file that decoded to the wrong word — in the same order,
+  // not only the same set.
+  const provenance = await schema('common/provenance.json');
+  const actor = await schema('v1/actor.json');
+  const presence = await schema('v1/presence.json');
+  const confidence = await schema('common/confidence.json');
+  assert.deepEqual([...RECORD_STATUSES], provenance.properties.status.enum);
+  assert.deepEqual([...ACTOR_TYPES], actor.properties.actorType.enum);
+  assert.deepEqual([...CONFIDENCE_ORDER], confidence.enum);
+  assert.deepEqual([...DEPENDENCY_KINDS], presence.properties.dependencyKind.oneOf.find((s) => s.enum).enum);
+  assert.deepEqual([...EVENT_SCOPES], (await schema('v1/event.json')).properties.scope.oneOf.find((s) => s.enum).enum);
 
   // The id patterns are built from the type lists; the schemas write theirs
   // out. Same types, in the same order, in all four places.

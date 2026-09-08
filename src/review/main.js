@@ -12,7 +12,7 @@
 
 import { esc } from '../util/esc.js';
 import { html } from '../util/dom.js';
-import { assertGeneration, expandSpine } from '../data.js';
+import { assertGeneration, expandSpine, presencesFromIndex } from '../data.js';
 import { loadSchemas } from '../validate/schemas.js';
 import {
   buildQueue, flagCounts, toolCounts, filterQueue, sortQueue, isDraft, inQueue, labelOf,
@@ -160,7 +160,7 @@ try {
   // is what it did before this file existed at all.
   if (manifest.files.presences) {
     getJson(`${dataRoot}${manifest.files.presences}`)
-      .then((file) => page.setPresences(file.presences ?? []))
+      .then((file) => page.setPresences(presencesFromIndex(file)))
       .catch(() => {});
   }
 } catch (error) {

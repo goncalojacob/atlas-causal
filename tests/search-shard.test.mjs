@@ -13,6 +13,7 @@ import {
 import { buildIndex } from '../tools/build-index.mjs';
 import { readRecords } from '../tools/lib/read.mjs';
 import { FIXTURE_DATA, ROOT } from './helpers.mjs';
+import { expandSpine } from '../src/data.js';
 
 const DATA = path.join(ROOT, 'data');
 
@@ -112,7 +113,7 @@ test('the search shard is named in the manifest and stable between builds', asyn
 // not need the shard as well.
 test('what findSimilar reads is in the spine, not only in the shard', async () => {
   const { built, manifest } = await shardAndTopology(DATA);
-  const spine = JSON.parse(built.files[path.basename(manifest.files.spine)]);
+  const spine = expandSpine(JSON.parse(built.files[path.basename(manifest.files.spine)]));
   for (const event of spine.events) {
     assert.ok(Object.hasOwn(event, 'title') && Object.hasOwn(event, 'id') && Object.hasOwn(event, 'aliases'), event.id);
   }

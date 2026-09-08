@@ -34,6 +34,11 @@ function span(when) {
 export const SLUG = /^[a-z0-9]+(-[a-z0-9]+)*$/;
 export const CONFIDENCE_ORDER = Object.freeze(['consensus', 'probable', 'disputed']);
 export const ACTOR_TYPES = Object.freeze(['person', 'polity', 'institution', 'people']);
+// What a record's `status` may be, in the order `schema/common/provenance.json`
+// writes it. Named here beside the other two lists the schemas close, because
+// I2 writes it into the index as an integer and an index into a list that is
+// not the schema's list would be a file that says the wrong word.
+export const RECORD_STATUSES = Object.freeze(['active', 'merged', 'retracted']);
 // The vocabularies and the two id patterns come from src/vocab.js, and the
 // kinds' licences and fields from src/kinds.js. They were written out here
 // and copied into `state.js`, `lanes.js`, `graph.js` and two panel cards

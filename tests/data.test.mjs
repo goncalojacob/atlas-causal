@@ -138,7 +138,7 @@ test('a manifest from a generation this build does not read is refused', async (
   const manifest = { schema: 99, regions: [], land: [], files: { spine: 'index/spine-000000000000.json', sources: 'index/sources-000000000000.json' } };
   const fetchOld = async (url) => (url.endsWith('manifest.json') ? manifest : { events: [], edges: [], sources: [] });
   for (const [what, load] of [['loadAtlas', loadAtlas], ['loadSpine', loadSpine], ['loadSources', loadSources], ['loadNarratives', loadNarratives]]) {
-    await assert.rejects(load({ dataRoot: 'nowhere/', fetchJson: fetchOld }), /generation 99.*reads 2/, what);
+    await assert.rejects(load({ dataRoot: 'nowhere/', fetchJson: fetchOld }), /generation 99.*reads 3/, what);
   }
   // The number it found, whatever it found, including nothing at all.
   await assert.rejects(loadAtlas({ dataRoot: 'nowhere/', fetchJson: async () => ({}) }), /generation unstated/);

@@ -3,7 +3,7 @@
 import path from 'node:path';
 import { readFile, readdir } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
-import { createAtlas, createAtlasFromSpine } from '../src/data.js';
+import { createAtlas, createAtlasFromSpine, presencesFromIndex } from '../src/data.js';
 import { buildTopology } from '../src/validate/core.js';
 import { createRegionDeriver } from '../src/util/geo.js';
 import { readSchemaFiles, readRecords, readRegions, readRegionPolygons } from '../tools/lib/read.mjs';
@@ -72,7 +72,9 @@ export async function presencesOnDisk(dataDir) {
   const manifest = JSON.parse(await readFile(path.join(dataDir, 'index', 'manifest.json'), 'utf8'));
   if (!manifest.files?.presences) return [];
   const file = JSON.parse(await readFile(path.join(dataDir, manifest.files.presences), 'utf8'));
-  return file.presences ?? [];
+  // Rows over the file's own id table since I2, and read back through the one
+  // decoder rather than off the file's keys.
+  return presencesFromIndex(file);
 }
 
 // The atlas as the site builds it: the spine and the sources index the

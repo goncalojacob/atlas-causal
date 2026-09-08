@@ -20,7 +20,7 @@ import { degreesOf, digestOf, inQueue, KIND_ORDER } from '../src/review/queue.js
 import { searchIndexFor } from '../src/search.js';
 import { explanationShards, shardName } from '../src/explanations.js';
 import { licensingTable } from '../src/licensing.js';
-import { createAtlasFromSpine, expandSpine, INDEX_GENERATION } from '../src/data.js';
+import { createAtlasFromSpine, expandSpine, presencesFromIndex, INDEX_GENERATION } from '../src/data.js';
 import { readRecords, readRegions, readRegionPolygons, readRoles, readCategories, readLandFiles, readPresenceShards, paletteFile } from './lib/read.mjs';
 import { recordHistories, HISTORY_DIR } from './lib/history.mjs';
 import { sitePages, ENTRY_DIR } from './lib/prerender.mjs';
@@ -343,7 +343,7 @@ export async function buildIndex(dataDir = DEFAULT_DATA, prepared = {}) {
     // Seeded, not fetched: the presences left the spine in I1 and this caller
     // has them, so the prerendered pages are rendered from a complete atlas
     // and cannot change their bytes because a file was in flight (D7).
-    presences: presencesText === null ? [] : JSON.parse(presencesText).presences,
+    presences: presencesText === null ? [] : presencesFromIndex(JSON.parse(presencesText)),
     fetchJson: () => Promise.reject(new Error('the build has every record in hand and fetches nothing')),
   });
   const expanded = expandSpine(JSON.parse(spineText));

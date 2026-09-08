@@ -20,6 +20,7 @@ import { readRecords } from '../tools/lib/read.mjs';
 import { buildIndex } from '../tools/build-index.mjs';
 import { valuesFromRecord, applyValues } from '../src/contribute/bundle.js';
 import { ROOT, FIXTURE_DATA } from './helpers.mjs';
+import { expandSpine } from '../src/data.js';
 
 async function scratch() {
   const root = await mkdtemp(path.join(tmpdir(), 'atlas-store-'));
@@ -212,7 +213,7 @@ test('a change made to data/ behind the store is read before the next save', asy
   await store.settled();
   const built = await buildIndex(options.dataDir);
   const spine = Object.entries(built.files).find(([name]) => name.startsWith('spine-'));
-  assert.ok(JSON.parse(spine[1]).events.some((e) => e.id === outside.id), 'the index carries the record written behind the store');
+  assert.ok(expandSpine(JSON.parse(spine[1])).events.some((e) => e.id === outside.id), 'the index carries the record written behind the store');
   const written = new Set(await readdir(path.join(options.dataDir, 'index')));
   for (const name of Object.keys(built.files)) {
     if (name.includes('/')) continue;

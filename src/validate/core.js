@@ -5,9 +5,15 @@
 // out of the rules pass: the rules assume the shapes the schema guarantees.
 
 import { createValidator } from './schema.js';
-import { buildUniverse, checkRules, normalizeRole } from './rules.js';
+import {
+  ACTOR_TYPES, CONFIDENCE_ORDER, DEPENDENCY_KINDS, RECORD_STATUSES,
+  buildUniverse, checkRules, normalizeRole,
+} from './rules.js';
 import { KINDS } from '../kinds.js';
-import { edgeId } from '../vocab.js';
+import { EDGE_TYPE_IDS, EVENT_SCOPES, OFFICE_CATEGORY_IDS, RELATION_TYPE_IDS, edgeId } from '../vocab.js';
+// The column table, the encoder and the decoder, in one leaf module because
+// `data.js` reads the same table backwards and cannot import this file.
+import { PRESENCE_KINDS, SPINE_KINDS, encodeSpineFile } from '../spine.js';
 import { astronomicalBounds } from '../util/dates.js';
 // The number the *reader* refuses an unknown value of, which is why it lives
 // there and is imported here rather than written out twice (data.js).
@@ -619,135 +625,64 @@ export function buildTopology(records, regions, { deriveRegion, roles, categorie
 // and are never stored in place of the record's own numbering, which is why
 // there is no `start`/`end` pair here (h3a-brief, A1).
 
-// A tombstone still resolves its own URL and still reaches a card — 175
-// retracted events do — but it is not part of the graph, so it carries what
-// the card's head and meta line are built from and nothing else (A10). The
-// label is kept whatever its kind calls it: a merged actor with no name
-// would give the panel nothing to say it was merged *from* (deviation 215).
-const TOMBSTONE_KEYS = new Set(['id', 'kind', 'status', 'supersededBy', 'aliases', 'wikidata', 'title', 'name', 'names', 'when', 'place', 'region', 'revised']);
-
-function spineEntry(entry) {
-  if (entry.status === 'active') return entry;
-  return Object.fromEntries(Object.entries(entry).filter(([key]) => TOMBSTONE_KEYS.has(key)));
-}
-
-// What every record carries, whatever its kind. `aliases` and `supersededBy`
-// are the merge hop `resolve()` walks, so they are here even when empty.
-function envelopeOf(record, kind) {
-  const out = { id: record.id, kind, status: record.status, supersededBy: record.supersededBy ?? null, aliases: record.aliases ?? [] };
-  if (typeof record.wikidata === 'string') out.wikidata = record.wikidata;
-  if (isObject(record.wikipedia)) out.wikipedia = record.wikipedia;
-  return out;
-}
-
-// An edge id is `from--to--type` on every one of them, so the tuple carries
-// no id and the loader synthesises it. Six elements: `status` is what keeps a
-// retracted argument out of consequences, convergence and the shortest path
-// (A2), and `revised` is what an edge's own file is asked for with, since
-// H3b serves every record `?v=<revised>` and the panel fetches an edge's
-// argument like any other record. An edge that carries an alias or a merge
-// hop cannot be said in six slots and is written whole instead; the loader
-// takes either. `edgeId` itself is in `vocab.js`, beside the pattern it is
-// the inverse of.
-function edgeInSpine(edge) {
-  const named = edge.id === edgeId(edge);
-  if (named && !edge.supersededBy && (edge.aliases ?? []).length === 0) {
-    return [edge.from, edge.to, edge.type, edge.confidence, edge.status, edge.revised ?? null];
-  }
-  const out = {
-    from: edge.from, to: edge.to, type: edge.type, confidence: edge.confidence,
-    status: edge.status, revised: edge.revised ?? null,
-    supersededBy: edge.supersededBy ?? null, aliases: edge.aliases ?? [],
+// Every slot of every kind is `record[name]`, except for the three the record
+// does not carry as it stands: `citesCount` is counted here at build time,
+// `geometry` is one key of an object whose other key nothing reads, and
+// `wikidata`/`wikipedia` are written only where they are of the shape rule 21
+// requires — a malformed one is not carried into the index under a name that
+// says it is an identifier.
+//
+// This is the whole of what the nine hand-written object literals were. The
+// order of the slots, what a trimmed one means and which kinds carry which are
+// `SPINE_COLUMNS` in `src/spine.js`, and a tenth kind is a row in that table.
+function slotReader(citesCount) {
+  return (kind, name, record) => {
+    switch (name) {
+      case 'citesCount': return citesCount(kind, record.id);
+      case 'geometry': return record.geometry ?? null;
+      case 'wikidata': return typeof record.wikidata === 'string' ? record.wikidata : undefined;
+      case 'wikipedia': return isObject(record.wikipedia) ? record.wikipedia : undefined;
+      default: return record[name];
+    }
   };
-  if (!named) out.id = edge.id;
-  return out;
+}
+
+// The base list of every vocabulary the encoder writes as integers. A closed
+// one comes from `vocab.js` or from the rules and never from what the data
+// happens to hold, so that two datasets produce the same table for the same
+// code; a data-defined one (`region`, `category`, `role`) comes from its own
+// file in that file's order. A value met in a record and in neither is appended
+// in first-seen order by the encoder (index2 review, finding 8).
+function vocabBaseOf(topology) {
+  const idsOf = (list) => (list ?? []).map((entry) => entry?.id).filter((id) => typeof id === 'string');
+  return {
+    status: RECORD_STATUSES,
+    edgeType: EDGE_TYPE_IDS,
+    relationType: RELATION_TYPE_IDS,
+    officeCategory: OFFICE_CATEGORY_IDS,
+    scope: EVENT_SCOPES,
+    confidence: CONFIDENCE_ORDER,
+    actorType: ACTOR_TYPES,
+    dependencyKind: DEPENDENCY_KINDS,
+    region: idsOf(topology.regions),
+    category: idsOf(topology.categoriesAllowed),
+    role: idsOf(topology.rolesAllowed),
+  };
 }
 
 export function buildSpine(topology) {
   const cites = citesCountByRecord(topology.sources);
   const citesCount = (kind, id) => cites.get(`${kind}:${id}`) ?? 0;
-  return {
+  // No presences: they were 49.2 % of this file on the real data and nothing
+  // draws them until the territory layer does, so since I1 they are
+  // `buildPresenceIndex` below and a file of their own (index2-plan, D1).
+  return encodeSpineFile({
     schema: INDEX_GENERATION,
-    events: (topology.events ?? []).map((e) => spineEntry({
-      ...envelopeOf(e, 'event'),
-      title: e.title,
-      revised: e.revised ?? null,
-      when: e.when,
-      place: e.place,
-      region: e.region,
-      // `parent`, `scope` and `category` where the record has them, and
-      // `subtreeWeight` where it differs from `weight` — all four absent
-      // otherwise, which is what keeps them off the thousand events that
-      // carry none. A tombstone keeps none of them: TOMBSTONE_KEYS is what
-      // a retracted card's head is built from, and a part of a war is not
-      // part of that (amendment A11).
-      ...(e.parent === undefined ? {} : { parent: e.parent }),
-      ...(e.scope === undefined ? {} : { scope: e.scope }),
-      ...(e.category === undefined ? {} : { category: e.category }),
-      weight: e.weight,
-      ...(e.subtreeWeight === undefined ? {} : { subtreeWeight: e.subtreeWeight }),
-      actors: e.actors ?? [],
-      citesCount: citesCount('event', e.id),
-    })),
-    edges: (topology.edges ?? []).map(edgeInSpine),
-    actors: (topology.actors ?? []).map((a) => spineEntry({
-      ...envelopeOf(a, 'actor'),
-      name: a.name,
-      revised: a.revised ?? null,
-      names: a.names ?? [],
-      actorType: a.actorType,
-      when: a.when,
-      citesCount: citesCount('actor', a.id),
-    })),
-    places: (topology.places ?? []).map((p) => spineEntry({
-      ...envelopeOf(p, 'place'),
-      name: p.name,
-      revised: p.revised ?? null,
-      names: p.names ?? [],
-      where: p.where,
-      region: p.region,
-      citesCount: citesCount('place', p.id),
-    })),
-    // No presences: they were 49.2 % of this file on the real data and
-    // nothing draws them until the territory layer does, so since I1 they are
-    // `buildPresenceIndex` below and a file of their own (index2-plan, D1).
-    relations: (topology.relations ?? []).map((r) => spineEntry({
-      ...envelopeOf(r, 'relation'),
-      from: r.from,
-      to: r.to,
-      type: r.type,
-      when: r.when,
-      note: r.note ?? null,
-    })),
-    // An office and a tenure are read together — one strip per office with
-    // its holders as bars — so both come whole and neither is fetched by a
-    // card. They are small: a title, two ids and an interval each.
-    offices: (topology.offices ?? []).map((o) => spineEntry({
-      ...envelopeOf(o, 'office'),
-      of: o.of,
-      title: o.title,
-      category: o.category,
-      revised: o.revised ?? null,
-      when: o.when ?? null,
-    })),
-    tenures: (topology.tenures ?? []).map((t) => spineEntry({
-      ...envelopeOf(t, 'tenure'),
-      person: t.person,
-      office: t.office,
-      when: t.when,
-      startedBy: t.startedBy ?? null,
-      note: t.note ?? null,
-    })),
-    narratives: (topology.narratives ?? []).map((n) => spineEntry({
-      ...envelopeOf(n, 'narrative'),
-      title: n.title,
-      revised: n.revised ?? null,
-      summary: n.summary,
-      authors: n.authors ?? [],
-      window: n.window ?? null,
-      steps: n.steps ?? [],
-    })),
-  };
+    kinds: SPINE_KINDS,
+    listOf: (kind) => topology[`${kind}s`] ?? [],
+    vocabBase: vocabBaseOf(topology),
+    read: slotReader(citesCount),
+  });
 }
 
 // ─── The presences ─────────────────────────────────────────────────────────
@@ -765,18 +700,18 @@ export function buildSpine(topology) {
 // Kept whole rather than sharded by period like the outlines: the interval
 // index in `data.js` is what makes `presencesAt` 0.07 ms against 2.39 ms
 // scanned, and it is an index over all of them.
+//
+// A row of the same table and through the same encoder since I2, with an id
+// table and a vocabulary of its own: it is fetched on its own, by a layer that
+// has not necessarily got the spine's table in hand, and an integer that meant
+// something only against another file would be the one thing this encoding
+// must not be.
 export function buildPresenceIndex(topology) {
-  return {
+  return encodeSpineFile({
     schema: INDEX_GENERATION,
-    presences: (topology.presences ?? []).map((p) => spineEntry({
-      ...envelopeOf(p, 'presence'),
-      actor: p.actor,
-      when: p.when,
-      geometry: { key: p.geometry?.key ?? null },
-      dependencyOf: p.dependencyOf ?? null,
-      dependencyKind: p.dependencyKind ?? null,
-      capital: p.capital ?? null,
-      confidence: p.confidence,
-    })),
-  };
+    kinds: PRESENCE_KINDS,
+    listOf: (kind) => topology[`${kind}s`] ?? [],
+    vocabBase: vocabBaseOf(topology),
+    read: slotReader(() => 0),
+  });
 }

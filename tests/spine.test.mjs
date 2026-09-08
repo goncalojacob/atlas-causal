@@ -1,16 +1,25 @@
 // The spine: the projection of the in-memory topology that every page reads
-// whole, and since H3c the only graph file the index writes. Held here to
-// the field table in docs/health/h3a-brief.md (A3), to `when` carried
-// verbatim (A1), to the edge tuple (A2) and to the tombstone list (A10) —
-// over the fixtures and over the repository's own data, because the two
-// disagree about which shapes exist: only the fixtures hold a retracted
-// edge, only the repository holds a merged event.
+// whole, and since H3c the only graph file the index writes.
+//
+// Since I2 it is nine lists of **positional rows** over one shared table of
+// ids, with the closed vocabularies as integers. What a record *is* is
+// `projectV1` below — the nine object literals `buildSpine` used to be, moved
+// here whole in the commit before the encoding changed — and the claim of the
+// run is one assertion: what comes back out of the index is what those
+// literals wrote, per kind, over both datasets. The rest of this file is about
+// the encoding itself: the id table's order, the vocabularies' provenance, the
+// trailing trim, and the file naming its own columns.
+//
+// Both datasets are run because they disagree about which shapes exist: only
+// the fixtures hold a retracted edge, only the repository holds a merged event
+// and a retired relation.
 
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import path from 'node:path';
 import { buildPresenceIndex, buildSpine, buildTopology, edgeId } from '../src/validate/core.js';
-import { expandSpine } from '../src/data.js';
+import { expandSpine, presencesFromIndex } from '../src/data.js';
+import { SPINE_COLUMNS } from '../src/spine.js';
 import { KINDS } from '../src/kinds.js';
 import { buildIndex } from '../tools/build-index.mjs';
 import { atlasFromTopology, FIXTURE_DATA, ROOT, fixtures, topologyOf } from './helpers.mjs';
@@ -20,7 +29,6 @@ const DATA = path.join(ROOT, 'data');
 // The atlas over the in-memory build the spine is projected from — the
 // reference every count in the spine is checked against (helpers.mjs).
 const atlasOf = (dataDir) => atlasFromTopology(dataDir);
-
 
 // ─── The oracle ────────────────────────────────────────────────────────────
 //
@@ -180,42 +188,19 @@ export function projectV1(topology) {
   };
 }
 
-const ENVELOPE = ['id', 'kind', 'status', 'supersededBy', 'aliases'];
-// `revised` is on the five kinds a card fetches the record file of — the
-// four here plus the edge tuple's sixth slot — because that is what the file
-// is asked for with (`?v=`, H3b). A presence and a relation have no file
-// anybody fetches, so they do not carry it.
-const FIELDS = {
-  // `parent`, `scope` and `category` are on an event that carries them and on
-  // no other; `subtreeWeight` is on a parent whose parts add to more than its
-  // own weight, and on no leaf (M30a-3, amendment A11).
-  event: [...ENVELOPE, 'wikidata', 'wikipedia', 'title', 'revised', 'when', 'place', 'region', 'parent', 'scope', 'category', 'weight', 'subtreeWeight', 'actors', 'citesCount'],
-  actor: [...ENVELOPE, 'wikidata', 'wikipedia', 'name', 'names', 'revised', 'actorType', 'when', 'citesCount'],
-  place: [...ENVELOPE, 'wikidata', 'wikipedia', 'name', 'names', 'revised', 'where', 'region', 'citesCount'],
-  relation: [...ENVELOPE, 'wikidata', 'wikipedia', 'from', 'to', 'type', 'when', 'note'],
-  // An office carries `revised` because `?office=` is an address and the
-  // card may fetch the record; a tenure has no address of its own and does
-  // not, the way a relation does not.
-  office: [...ENVELOPE, 'wikidata', 'wikipedia', 'of', 'title', 'category', 'revised', 'when'],
-  tenure: [...ENVELOPE, 'wikidata', 'wikipedia', 'person', 'office', 'when', 'startedBy', 'note'],
-  narrative: [...ENVELOPE, 'wikidata', 'wikipedia', 'title', 'revised', 'summary', 'authors', 'window', 'steps'],
-};
-// The presences are not in the spine since I1 — they are half of it on the
-// real data and nothing draws them until the territory layer does — so their
-// row of the same table belongs to their own file (index2-plan, D1).
-const PRESENCE_FIELDS = [...ENVELOPE, 'wikidata', 'wikipedia', 'actor', 'when', 'geometry', 'dependencyOf', 'dependencyKind', 'capital', 'confidence'];
-// A tombstone is fetched like any other record — 175 retracted events reach
-// a card with their own fields — so it keeps `revised` too.
-const TOMBSTONE = ['id', 'kind', 'status', 'supersededBy', 'aliases', 'wikidata', 'title', 'name', 'names', 'when', 'place', 'region', 'revised'];
 
-// Against the registry, not against a list written twice: a ninth kind is
-// one entry in src/kinds.js, and it must not be able to arrive with nowhere
-// in the index to go. Three of them are not object entries in the spine:
-// `edge` is a tuple, `source` is the sources index — which carries every
-// bibliographic field the spine would only repeat (A3) — and `presence` is
-// its own file since I1 (index2-plan, D1).
-test('every kind the registry knows is in the spine, or is the one that is not', () => {
-  assert.deepEqual([...KINDS].sort(), [...Object.keys(FIELDS), 'edge', 'presence', 'source'].sort());
+// Both files, decoded, as one set of lists to hold against the oracle.
+function decodedOf(topology) {
+  return { ...expandSpine(buildSpine(topology)), presences: presencesFromIndex(buildPresenceIndex(topology)) };
+}
+
+// Against the registry, not against a list written twice: a tenth kind is one
+// entry in src/kinds.js and one row in SPINE_COLUMNS, and it must not be able
+// to arrive with nowhere in the index to go. `source` is the one kind that is
+// not a row: it is the sources index, which carries every bibliographic field
+// a spine row would only repeat (h3a-brief, A3).
+test('every kind the registry knows is a row in the column table, or is the one that is not', () => {
+  assert.deepEqual([...KINDS].sort(), [...Object.keys(SPINE_COLUMNS), 'source'].sort());
 });
 
 for (const [label, dir] of [['the fixtures', FIXTURE_DATA], ['the repository', DATA]]) {
@@ -226,10 +211,7 @@ for (const [label, dir] of [['the fixtures', FIXTURE_DATA], ['the repository', D
   test(`what comes back out of the index is what the nine literals wrote, over ${label}`, async () => {
     const topology = await topologyOf(dir);
     const oracle = projectV1(topology);
-    const decoded = {
-      ...expandSpine(buildSpine(topology)),
-      presences: buildPresenceIndex(topology).presences,
-    };
+    const decoded = decodedOf(topology);
     let seen = 0;
     for (const [list, want] of Object.entries(oracle)) {
       assert.equal((decoded[list] ?? []).length, want.length, list);
@@ -241,110 +223,65 @@ for (const [label, dir] of [['the fixtures', FIXTURE_DATA], ['the repository', D
     assert.ok(seen > 0);
   });
 
-  test(`the spine carries the field table over ${label}, and nothing else`, async () => {
+  // The two fields nothing draws: dropped from the projection, kept in the
+  // topology (h3a-brief, A3). Said on the decoded side as well, because the
+  // oracle would carry them if the encoder ever started to.
+  test(`the fields nothing draws stay out over ${label}`, async () => {
     const topology = await topologyOf(dir);
-    const spine = buildSpine(topology);
-    let seen = 0;
-    for (const [kind, allowed] of Object.entries(FIELDS)) {
-      for (const entry of spine[`${kind}s`]) {
-        seen += 1;
-        assert.equal(entry.kind, kind, entry.id);
-        const keys = entry.status === 'active' ? allowed : TOMBSTONE;
-        for (const key of Object.keys(entry)) {
-          assert.ok(keys.includes(key), `${entry.id} (${entry.status}) carries ${key}`);
-        }
-      }
-    }
-    assert.ok(seen > 0);
-    // The field nothing draws: dropped from the spine, kept in the topology
-    // (A3).
-    assert.ok(spine.events.every((e) => !Object.hasOwn(e, 'regionMethod')));
-    assert.ok(spine.places.every((p) => !Object.hasOwn(p, 'regionMethod')));
-    // And no presences at all, which is I1: half this file on the real data.
-    assert.ok(!Object.hasOwn(spine, 'presences'), 'the spine still carries the presences');
-  });
-
-  // The same table, the same tombstone rule and the same two dropped fields,
-  // over the file the presences moved to (I1). Every presence the topology
-  // has is in it, in id order, with the fields it had in the spine.
-  test(`the presence index carries every presence over ${label}, and the same fields`, async () => {
-    const topology = await topologyOf(dir);
-    const index = buildPresenceIndex(topology);
-    assert.ok(topology.presences.length > 0, `${label} has presences`);
-    assert.deepEqual(index.presences.map((p) => p.id), topology.presences.map((p) => p.id), 'every one, in id order');
-    const inTopology = new Map(topology.presences.map((p) => [p.id, p]));
-    for (const entry of index.presences) {
-      assert.equal(entry.kind, 'presence', entry.id);
-      const keys = entry.status === 'active' ? PRESENCE_FIELDS : TOMBSTONE;
-      for (const key of Object.keys(entry)) {
-        assert.ok(keys.includes(key), `${entry.id} (${entry.status}) carries ${key}`);
-      }
-      for (const [key, value] of Object.entries(entry)) {
-        if (key === 'kind' || key === 'geometry') continue;
-        assert.deepEqual(value, inTopology.get(entry.id)[key], `${entry.id}: ${key}`);
-      }
-      assert.deepEqual(entry.when, inTopology.get(entry.id).when, `${entry.id}: the interval verbatim`);
-    }
-    // The two the projection drops: `presenceType`, which nothing draws, and
-    // every key of `geometry` but the one the shard is looked up by.
-    assert.ok(index.presences.every((p) => !Object.hasOwn(p, 'presenceType')));
-    assert.ok(index.presences.every((p) => Object.keys(p.geometry).length === 1));
+    const decoded = decodedOf(topology);
+    assert.ok(decoded.events.every((e) => !Object.hasOwn(e, 'regionMethod')));
+    assert.ok(decoded.places.every((p) => !Object.hasOwn(p, 'regionMethod')));
+    assert.ok(decoded.presences.every((p) => !Object.hasOwn(p, 'presenceType')));
+    assert.ok(decoded.presences.every((p) => Object.keys(p.geometry).length === 1));
     assert.ok(topology.presences.every((p) => Object.hasOwn(p, 'presenceType')), 'the topology is unchanged');
-  });
-
-  test(`every field the spine keeps is the record's own over ${label}`, async () => {
-    const topology = await topologyOf(dir);
-    const spine = buildSpine(topology);
-    for (const kind of ['event', 'actor', 'place', 'relation', 'narrative']) {
-      const inTopology = new Map(topology[`${kind}s`].map((r) => [r.id, r]));
-      for (const entry of spine[`${kind}s`]) {
-        const source = inTopology.get(entry.id);
-        assert.ok(source, `${entry.id} is in the spine and not in the topology`);
-        for (const [key, value] of Object.entries(entry)) {
-          if (key === 'kind' || key === 'citesCount' || key === 'geometry') continue;
-          assert.deepEqual(value, source[key], `${entry.id}: ${key}`);
-        }
-      }
-      assert.equal(spine[`${kind}s`].length, topology[`${kind}s`].length);
-    }
+    // And no presences in the spine at all, which is I1: half that file on the
+    // real data.
+    assert.ok(!Object.hasOwn(buildSpine(topology), 'presences'), 'the spine still carries the presences');
   });
 
   // A1: an event that runs from a date to no end at all, and one whose
-  // calendar is not the reader's, are both drawn from the object.
+  // calendar is not the reader's, are both drawn from the object. `when` is a
+  // slot and is carried verbatim into it, never reduced to a pair of years.
   test(`an interval is carried verbatim over ${label}`, async () => {
     const topology = await topologyOf(dir);
-    const spine = buildSpine(topology);
+    const decoded = decodedOf(topology);
     for (const kind of ['event', 'actor', 'relation']) {
       const inTopology = new Map(topology[`${kind}s`].map((r) => [r.id, r]));
-      for (const entry of spine[`${kind}s`]) {
+      for (const entry of decoded[`${kind}s`]) {
         assert.deepEqual(entry.when, inTopology.get(entry.id).when, entry.id);
       }
     }
-    assert.ok(spine.events.some((e) => Object.hasOwn(e.when ?? {}, 'date')), 'a day, not only a year');
+    assert.ok(decoded.events.some((e) => Object.hasOwn(e.when ?? {}, 'date')), 'a day, not only a year');
   });
 
-  // A2: the id is synthesised on load, so it had better be synthesisable.
+  // A2: the id is synthesised on load, so it had better be synthesisable — and
+  // the first six slots of the row are still the tuple H3a wrote, in order.
   test(`every edge id is from--to--type over ${label}`, async () => {
     const topology = await topologyOf(dir);
     for (const edge of topology.edges) assert.equal(edge.id, edgeId(edge), edge.id);
     const spine = buildSpine(topology);
     assert.equal(spine.edges.length, topology.edges.length);
-    for (const [i, tuple] of spine.edges.entries()) {
+    assert.deepEqual(spine.columns.edge.slice(0, 6), ['from', 'to', 'type', 'confidence', 'status', 'revised']);
+    for (const [i, row] of spine.edges.entries()) {
       const edge = topology.edges[i];
-      assert.ok(Array.isArray(tuple), `${edge.id} is not a tuple`);
-      assert.deepEqual(tuple, [edge.from, edge.to, edge.type, edge.confidence, edge.status, edge.revised ?? null]);
-      assert.equal(edgeId({ from: tuple[0], to: tuple[1], type: tuple[2] }), edge.id);
+      assert.ok(Array.isArray(row), `${edge.id} is not a row`);
+      // The seventh slot is the explicit id, and it is not there on an edge
+      // whose id is derived — which is every edge in both datasets.
+      assert.ok(row.length <= 6, `${edge.id} carries an explicit id`);
+      assert.equal(spine.ids[row[0]], edge.from);
+      assert.equal(spine.ids[row[1]], edge.to);
+      assert.equal(spine.vocab.edgeType[row[2]], edge.type);
     }
   });
 
-  // A8: `citesCount` is the number three cards print beside a record, and
-  // the atlas built from the topology is what prints it today.
+  // A8: `citesCount` is the number three cards print beside a record, and the
+  // atlas built from the topology is what prints it today.
   test(`citesCount equals what the card counts over ${label}`, async () => {
-    const spine = buildSpine(await topologyOf(dir));
+    const decoded = decodedOf(await topologyOf(dir));
     const atlas = await atlasOf(dir);
     let counted = 0;
     for (const kind of ['event', 'actor', 'place']) {
-      for (const entry of spine[`${kind}s`]) {
+      for (const entry of decoded[`${kind}s`]) {
         if (entry.status !== 'active') {
           assert.ok(!Object.hasOwn(entry, 'citesCount'), `${entry.id}: a tombstone cites nothing`);
           continue;
@@ -355,39 +292,147 @@ for (const [label, dir] of [['the fixtures', FIXTURE_DATA], ['the repository', D
     }
     assert.ok(counted > 0, 'nothing cites anything');
   });
+
+  // ─── The encoding itself ─────────────────────────────────────────────────
+
+  // The id table is the whole of the file's determinism (i2-brief, section 1):
+  // record ids in registry order and in id order within a kind, then anything
+  // else in the order it is met. Two builds therefore agree on every integer.
+  test(`the id table is in the defined order and a second build agrees, over ${label}`, async () => {
+    const topology = await topologyOf(dir);
+    const spine = buildSpine(topology);
+    const front = ['event', 'actor', 'place', 'relation', 'office', 'tenure', 'narrative']
+      .flatMap((kind) => topology[`${kind}s`].map((r) => r.id));
+    assert.deepEqual(spine.ids.slice(0, front.length), front, 'the records first, in registry order');
+    assert.equal(new Set(spine.ids).size, spine.ids.length, 'each id once');
+    // No edge id: they are `from--to--type` and the loader makes them, which is
+    // what keeps 39,996 of them out of the table at 10^4.
+    for (const edge of topology.edges) assert.ok(!spine.ids.includes(edge.id), edge.id);
+    assert.deepEqual(buildSpine(topology).ids, spine.ids);
+    assert.deepEqual(buildSpine(topology).vocab, spine.vocab);
+  });
+
+  // A4: the closed lists come from the code and the data-defined ones from
+  // their own file, and neither from what the records happen to hold.
+  test(`the vocabularies are the lists and not the corpus, over ${label}`, async () => {
+    const spine = buildSpine(await topologyOf(dir));
+    assert.deepEqual(spine.vocab.status, ['active', 'merged', 'retracted']);
+    assert.deepEqual(spine.vocab.edgeType, ['caused', 'enabled', 'reacted-to', 'precondition-of', 'inspired']);
+    assert.deepEqual(spine.vocab.scope, ['regional', 'worldwide']);
+    assert.deepEqual(spine.vocab.confidence, ['consensus', 'probable', 'disputed']);
+    // Every column that is a vocabulary names a list the file carries, so a
+    // reader never has to guess which list an integer is against.
+    for (const [kind, spec] of Object.entries(SPINE_COLUMNS)) {
+      if (!spine.columns[kind]) continue;
+      for (const c of spec.columns) {
+        if (c.type === 'vocab') assert.ok(Array.isArray(spine.vocab[c.vocab]), `${kind}.${c.name}: ${c.vocab}`);
+      }
+    }
+  });
+
+  // What the trim is for: `parent`, `scope` and `subtreeWeight` are the last
+  // slots of an event and cost nothing on an event that carries none.
+  test(`a row stops where its values stop, over ${label}`, async () => {
+    const spine = buildSpine(await topologyOf(dir));
+    const columns = spine.columns.event;
+    assert.deepEqual(columns.slice(-3), ['parent', 'scope', 'subtreeWeight']);
+    assert.ok(spine.events.some((row) => row.length < columns.length), 'no row was trimmed at all');
+    for (const row of spine.events) {
+      assert.ok(row.length <= columns.length, 'a row longer than its columns');
+      assert.notEqual(row[row.length - 1], null, 'a trailing null survived the trim');
+    }
+  });
+
+  // And the other half of the run: nine kinds through one table, and the file
+  // saying what it is rather than leaving a reader to assume.
+  test(`the file names its own columns, over ${label}`, async () => {
+    const topology = await topologyOf(dir);
+    const spine = buildSpine(topology);
+    const presences = buildPresenceIndex(topology);
+    assert.deepEqual(Object.keys(spine.columns).sort(), ['actor', 'edge', 'event', 'narrative', 'office', 'place', 'relation', 'tenure']);
+    assert.deepEqual(Object.keys(presences.columns), ['presence']);
+    for (const [kind, names] of Object.entries(spine.columns)) {
+      assert.deepEqual(names, SPINE_COLUMNS[kind].columns.map((c) => c.name), kind);
+    }
+    assert.equal(spine.schema, presences.schema, 'one generation, not two');
+  });
 }
 
-// A2 again: the two shapes that cannot be said in six slots. Neither exists
-// in either dataset today — no edge has ever been renamed or merged — and
+// Finding 22 and amendment A5: a trimmed slot and a `null` one are the same
+// thing in the file, and what they decode to is the column table's to say —
+// `place: null` is a key with no value, `parent` is no key at all.
+test('a trimmed row decodes to the same record as a full one', async () => {
+  const topology = await topologyOf(FIXTURE_DATA);
+  const spine = buildSpine(topology);
+  const columns = spine.columns.event;
+  const padded = {
+    ...spine,
+    events: spine.events.map((row) => [...row, ...Array(columns.length - row.length).fill(null)]),
+  };
+  assert.ok(padded.events.every((row) => row.length === columns.length));
+  assert.deepEqual(expandSpine(padded).events, expandSpine(spine).events);
+});
+
+// The decoder reads the file's own column names, so a file from a shape this
+// build does not know is refused by the name it could not read — not read as
+// though the slot in that position were something else.
+test('a column this build does not know is refused, by name', async () => {
+  const spine = buildSpine(await topologyOf(FIXTURE_DATA));
+  const strange = { ...spine, columns: { ...spine.columns, event: [...spine.columns.event, 'weightiness'] } };
+  assert.throws(() => expandSpine(strange), /weightiness/);
+});
+
+// A4 again: a category the data file does not list still round-trips, because
+// a value met and in no list is appended to the file's own vocabulary.
+test('a record carrying a category no file lists still round-trips', async () => {
+  const fx = await fixtures();
+  const topology = buildTopology(fx.records, fx.regions, { categories: [{ id: 'war' }] });
+  const [first] = topology.events;
+  const invented = { ...topology, events: [{ ...first, category: 'not-in-categories-json' }, ...topology.events.slice(1)] };
+  const spine = buildSpine(invented);
+  assert.ok(spine.vocab.category.includes('not-in-categories-json'), 'appended in first-seen order');
+  assert.equal(spine.vocab.category[0], 'war', 'and after the ones the data file names');
+  assert.equal(expandSpine(spine).events[0].category, 'not-in-categories-json');
+});
+
+// A2 again: the two shapes the six-slot tuple could not say, which is why an
+// edge that carried either used to be written as a whole object. Neither
+// exists in either dataset — no edge has ever been renamed or merged — and
 // both are what keeps an old ?chain= URL opening, so they are made here.
-test('an edge with an alias or a merge hop is written whole', async () => {
+test('an edge with an alias or a merge hop is a row like any other', async () => {
   const fx = await fixtures();
   const topology = buildTopology(fx.records, fx.regions);
   const edge = topology.edges[0];
+
   const aliased = buildSpine({ ...topology, edges: [{ ...edge, aliases: ['fixture-old-edge-id'] }] });
-  assert.deepEqual(aliased.edges[0], {
-    from: edge.from, to: edge.to, type: edge.type, confidence: edge.confidence,
-    status: edge.status, revised: edge.revised ?? null, supersededBy: null, aliases: ['fixture-old-edge-id'],
-  });
+  assert.ok(Array.isArray(aliased.edges[0]), 'still a row');
+  assert.deepEqual(expandSpine(aliased).edges[0].aliases, ['fixture-old-edge-id']);
+
   const merged = buildSpine({ ...topology, edges: [{ ...edge, status: 'merged', supersededBy: 'a--b--caused' }] });
-  assert.equal(merged.edges[0].supersededBy, 'a--b--caused');
-  // And an id that is not from--to--type keeps itself, rather than being
-  // silently renamed by the loader that synthesises one.
+  assert.equal(expandSpine(merged).edges[0].supersededBy, 'a--b--caused');
+
+  // And an id that is not from--to--type keeps itself in the row's last slot,
+  // rather than being silently renamed by the loader that synthesises one.
   const odd = buildSpine({ ...topology, edges: [{ ...edge, id: 'hand-written-edge-id' }] });
-  assert.equal(odd.edges[0].id, 'hand-written-edge-id');
+  assert.equal(odd.edges[0].length, 7, 'the explicit id is the seventh slot');
+  assert.equal(expandSpine(odd).edges[0].id, 'hand-written-edge-id');
 });
 
 test('a retracted edge keeps its status, which is what keeps it out of the graph', async () => {
-  const spine = buildSpine(await topologyOf(FIXTURE_DATA));
-  const retracted = spine.edges.filter((e) => (Array.isArray(e) ? e[4] : e.status) !== 'active');
+  const decoded = expandSpine(buildSpine(await topologyOf(FIXTURE_DATA)));
+  const retracted = decoded.edges.filter((e) => e.status !== 'active');
   assert.equal(retracted.length, 1, 'the fixtures hold one retracted edge');
+  // And its ends and its type, which the tombstone mask would have taken away
+  // and the id is made of. The edge is the one kind the mask does not touch.
+  assert.equal(retracted[0].id, edgeId(retracted[0]));
 });
 
 // A10: 175 retracted events reach a card, and the card's head and meta line
-// are built from the region, the start year and the place.
+// are built from the region, the start year and the place. The tombstone list
+// is a slot mask now, and it is applied in both directions.
 test('a tombstone keeps its head and meta line and drops the rest', async () => {
-  const spine = buildSpine(await topologyOf(DATA));
-  const tombstones = spine.events.filter((e) => e.status !== 'active');
+  const decoded = expandSpine(buildSpine(await topologyOf(DATA)));
+  const tombstones = decoded.events.filter((e) => e.status !== 'active');
   assert.ok(tombstones.length > 100, `${tombstones.length} tombstones`);
   for (const entry of tombstones) {
     assert.ok(Object.hasOwn(entry, 'title') && Object.hasOwn(entry, 'when'));
@@ -395,7 +440,18 @@ test('a tombstone keeps its head and meta line and drops the rest', async () => 
     assert.ok(!Object.hasOwn(entry, 'weight') && !Object.hasOwn(entry, 'actors'));
     assert.ok(!Object.hasOwn(entry, 'wikipedia'));
   }
-  assert.ok(spine.events.some((e) => e.status === 'merged' && e.supersededBy), 'the merge hop survives');
+  assert.ok(decoded.events.some((e) => e.status === 'merged' && e.supersededBy), 'the merge hop survives');
+  // The twelve relations M30a-2 left behind: a tombstone relation carries no
+  // `note`, where an active one carries `note: null`. That is the difference a
+  // per-slot rule alone could not say (index2 review, finding 22), and it is
+  // why the mask is read by the decoder and not only by the encoder.
+  const retired = decoded.relations.filter((r) => r.status !== 'active');
+  assert.ok(retired.length > 0, 'the repository holds a retired relation');
+  for (const relation of retired) {
+    assert.ok(!Object.hasOwn(relation, 'note'), relation.id);
+    assert.ok(!Object.hasOwn(relation, 'type'), relation.id);
+  }
+  assert.ok(decoded.relations.some((r) => r.status === 'active' && Object.hasOwn(r, 'note')));
 });
 
 test('the spine is in the built index, named in the manifest, and stable', async () => {
@@ -426,4 +482,15 @@ test('the presence index is in the built index, named in the manifest, and stabl
   const file = JSON.parse(first.files[name]);
   assert.equal(file.schema, manifest.schema, 'one generation, not two');
   assert.equal(file.presences.length, manifest.counts.presences);
+});
+
+// The size assertion the brief asks for, and not a time assertion (R3, the
+// picker test's lesson): the same information as rows is smaller than the same
+// information as objects, and the number is printed rather than gated on.
+test('the rows are smaller than the objects they replace, and the number is said', async () => {
+  const topology = await topologyOf(FIXTURE_DATA);
+  const rows = JSON.stringify(buildSpine(topology)).length + JSON.stringify(buildPresenceIndex(topology)).length;
+  const objects = JSON.stringify(projectV1(topology)).length;
+  assert.ok(rows < objects, `${rows} is not smaller than ${objects}`);
+  console.log(`    the fixtures as rows: ${rows} B against ${objects} B as objects (${(objects / rows).toFixed(2)}x)`);
 });

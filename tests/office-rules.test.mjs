@@ -13,6 +13,7 @@ import { createRegionDeriver } from '../src/util/geo.js';
 import { OFFICE_ENDPOINTS } from '../src/validate/rules.js';
 import { buildSearchIndex } from '../src/search.js';
 import { fixtures, schemas } from './helpers.mjs';
+import { expandSpine } from '../src/data.js';
 
 const AUTHORS = [{ name: 'Fixture Author', github: 'fixture-author' }];
 
@@ -105,7 +106,7 @@ test('an office reaches the topology and the spine whole, and a tenure with it',
   });
   // The prose stays out, as it does for every other kind: a card fetches it.
   assert.equal(Object.hasOwn(record, 'summary'), false);
-  const spine = buildSpine(topology);
+  const spine = expandSpine(buildSpine(topology));
   assert.equal(spine.offices.length, 2);
   assert.equal(spine.offices[0].kind, 'office');
   assert.equal(spine.tenures.length, 4);

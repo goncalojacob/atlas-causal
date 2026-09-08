@@ -7,6 +7,7 @@ import { canonical, serialize, compact, buildIndex, writeIndex, readIndex, compa
 import { runValidation } from '../tools/validate.mjs';
 import { buildTopology, eventWeights } from '../src/validate/core.js';
 import { checkRules } from '../src/validate/rules.js';
+import { expandSpine } from '../src/data.js';
 import { buildQueue, inQueue, DIGEST_KEYS } from '../src/review/queue.js';
 import { readRecords, readRegions, readRoles, readCategories } from '../tools/lib/read.mjs';
 import { FIXTURE_DATA, ROOT, fixtures } from './helpers.mjs';
@@ -115,9 +116,9 @@ test('key order and file order in the source records do not change the bytes', a
 test('manifest names the hashed files, counts, lanes and land', async () => {
   const built = await buildIndex(FIXTURE_DATA);
   const manifest = JSON.parse(built.files['manifest.json']);
-  // 2 since I1: the generation goes up by one in every run that changes the
+  // 3 since I2: the generation goes up by one in every run that changes the
   // index's shape (index2-plan, D6).
-  assert.equal(manifest.schema, 2);
+  assert.equal(manifest.schema, 3);
   // `counts.presences` stays where it is: a count is not a file, and it is
   // what the manifest says about a dataset whether or not the file exists.
   assert.deepEqual(manifest.counts, { events: 12, edges: 10, sources: 4, actors: 4, presences: 3, places: 11, relations: 3, offices: 2, tenures: 4, narratives: 1, regions: 3 });
@@ -140,7 +141,9 @@ test('manifest names the hashed files, counts, lanes and land', async () => {
   // carried into the spine, except `regionMethod`, which nothing draws and
   // which the projection drops (h3a-brief, A3). So the lane is read off the
   // file and the method off the build.
-  const spine = JSON.parse(built.files[path.basename(manifest.files.spine)]);
+  // Read through the one decoder since I2: the file is positional rows over an
+  // id table, and a test that read its slots by hand would be a second decoder.
+  const spine = expandSpine(JSON.parse(built.files[path.basename(manifest.files.spine)]));
   const byId = Object.fromEntries(spine.events.map((e) => [e.id, e]));
   const builtBy = Object.fromEntries(built.topology.events.map((e) => [e.id, e]));
   assert.equal(byId['fixture-event-a'].region, 'fixture-lane-1');
@@ -262,7 +265,7 @@ test('weight is in the built index and does not change between builds', async ()
   const name = path.basename(JSON.parse(first.files['manifest.json']).files.spine);
   // A tombstone carries no weight in the spine: it is drawn nowhere, and the
   // tombstone list is the five fields a card still needs (h3a-brief, A10).
-  const events = JSON.parse(first.files[name]).events.filter((e) => e.status === 'active');
+  const events = expandSpine(JSON.parse(first.files[name])).events.filter((e) => e.status === 'active');
   assert.ok(events.every((e) => Number.isInteger(e.weight)), 'every active event in the index carries a weight');
   assert.ok(events.some((e) => e.weight > 0));
   assert.equal(first.files[name], second.files[name]);

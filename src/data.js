@@ -15,8 +15,9 @@
 import { buildAdjacency } from './graph.js';
 import { narrativeEventIds } from './narrative.js';
 import { extent as intervalExtent } from './util/dates.js';
-import { edgeId } from './vocab.js';
 import { periodOfEdge } from './explanations.js';
+// The index's column table, read backwards here and forwards by the build.
+import { PRESENCE_KINDS, SPINE_KINDS, decodeSpineFile } from './spine.js';
 
 async function defaultFetchJson(url, init) {
   const response = await fetch(url, init);
@@ -31,12 +32,13 @@ async function defaultFetchJson(url, init) {
 // D6). What the number is for is the half-applied deploy: a manifest from one
 // generation beside a page from another would otherwise be read as though it
 // were the shape the page expects, silently and wrongly. It goes up by one in
-// every run that changes the index's shape — 2 since I1, which took the
+// every run that changes the index's shape — 3 since I2, which made every
+// record a positional row over a shared id table; 2 was I1, which took the
 // presences out of the spine and put the region boxes in the manifest.
 //
 // The graph file carries the same number rather than one of its own: two
 // numbers for one artifact is two things to forget to bump.
-export const INDEX_GENERATION = 2;
+export const INDEX_GENERATION = 3;
 // A single set, because a deploy may serve one generation while the last is
 // still in a cache; today it holds one number and it is the place to add the
 // second when that becomes true.
@@ -474,7 +476,7 @@ export function createAtlas({
       const file = manifest?.files?.presences;
       const pending = (file ? fetchJson(`${dataRoot}${file}`) : Promise.resolve({ presences: [] }))
         .then((loaded) => {
-          indexPresences(loaded.presences ?? []);
+          indexPresences(presencesFromIndex(loaded));
           havePresences = true;
           return [...presences.values()];
         })
@@ -697,34 +699,23 @@ export function createAtlas({
 // The spine differs from the topology in exactly three ways: an edge is a
 // tuple, `regionMethod` and `presenceType` are gone because nothing draws
 // them, and a record says how many citations it makes on itself.
-
-// Six slots when the id is `from--to--type` and the edge carries neither an
-// alias nor a merge hop; the whole object when it is not, because those two
-// feed the alias map and `resolve()`'s merge hop and cannot be said in six
-// slots. The loader takes either (h3a-brief, A2). The sixth is `revised`,
-// which is what the edge's own file is asked for with.
-function edgeFromSpine(entry) {
-  if (!Array.isArray(entry)) return { ...entry, id: entry.id ?? edgeId(entry) };
-  const [from, to, type, confidence, status, revised = null] = entry;
-  return {
-    id: edgeId({ from, to, type }), from, to, type, confidence, status, revised,
-    supersededBy: null, aliases: [],
-  };
-}
+//
+// Since I2 every kind is that tuple: a positional row over the file's own id
+// table, with the closed vocabularies as integers. `edgeFromSpine` folded into
+// the one decoder with the other eight — the "an object when the id is not
+// derived" case it existed for is now the row's last slot, which is `null` on
+// every edge whose id is `from--to--type` (docs/index2-plan.md, D3).
 
 function topologyFromSpine(spine) {
-  return {
-    events: spine.events ?? [],
-    edges: (spine.edges ?? []).map(edgeFromSpine),
-    actors: spine.actors ?? [],
-    places: spine.places ?? [],
-    // No `presences`: they are their own file since I1 and reach the atlas
-    // through `loadPresences()`, not through the graph file.
-    relations: spine.relations ?? [],
-    offices: spine.offices ?? [],
-    tenures: spine.tenures ?? [],
-    narratives: spine.narratives ?? [],
-  };
+  // No `presences`: they are their own file since I1 and reach the atlas
+  // through `loadPresences()`, not through the graph file.
+  return decodeSpineFile(spine, SPINE_KINDS);
+}
+
+// The same decoder over the file the presences moved to in I1, which carries
+// an id table and a vocabulary of its own because it is fetched on its own.
+export function presencesFromIndex(file) {
+  return decodeSpineFile(file, PRESENCE_KINDS).presences;
 }
 
 // Sources stay where they are: they are not in the spine, and `atlas.sources`

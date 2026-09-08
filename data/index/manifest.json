@@ -94,11 +94,11 @@
   "files": {
     "citers": "index/citers-06a247bbfc09",
     "history": "index/history",
-    "presences": "index/presences-f4439f705608.json",
+    "presences": "index/presences-59a337d8efa1.json",
     "review": "index/review-db70a5fce6e1.json",
     "search": "index/search-6cd2db6a2edd.json",
     "sources": "index/sources-fcc1f1ebd5c8.json",
-    "spine": "index/spine-1be635ed9d11.json"
+    "spine": "index/spine-b224722125ca.json"
   },
   "land": [
     {
@@ -824,7 +824,7 @@
       "label": "Institution"
     }
   ],
-  "schema": 2,
+  "schema": 3,
   "tenuresByOffice": {
     "leadership-of-chega": [
       "andre-ventura-chega-2019"

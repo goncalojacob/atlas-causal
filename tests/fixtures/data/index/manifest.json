@@ -22,11 +22,11 @@
   "files": {
     "citers": "index/citers-77d329bd5e9b",
     "history": "index/history",
-    "presences": "index/presences-9d98874ab38e.json",
+    "presences": "index/presences-d5fdc60ccc9e.json",
     "review": "index/review-8bf748a55c61.json",
     "search": "index/search-755e4c7ff6e5.json",
     "sources": "index/sources-be024864c060.json",
-    "spine": "index/spine-45ce6b58c219.json"
+    "spine": "index/spine-48b695212847.json"
   },
   "land": [],
   "licenses": {
@@ -230,7 +230,7 @@
     "leader",
     "signatory"
   ],
-  "schema": 2,
+  "schema": 3,
   "tenuresByOffice": {
     "fixture-office-one": [
       "fixture-tenure-one",

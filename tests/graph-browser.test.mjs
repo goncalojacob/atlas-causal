@@ -19,6 +19,7 @@ import { createServer, HOST } from '../tools/serve.mjs';
 import { findChrome } from '../tools/screens.mjs';
 import { ROOT } from './helpers.mjs';
 import { withBrowser, open, waitFor, seenIntro, watchErrors, errorsOn } from './browser.mjs';
+import { expandSpine } from '../src/data.js';
 
 const chrome = findChrome();
 const skip = chrome ? false : 'no headless browser found; set $CHROME to one';
@@ -85,7 +86,8 @@ const badges = (graph) => [...graph.matchAll(/class="cluster-count[^"]*"[^>]*>\+
 async function activeEvents() {
   const dir = path.join(ROOT, 'data', 'index');
   const file = (await readdir(dir)).find((n) => n.startsWith('spine-'));
-  const spine = JSON.parse(await readFile(path.join(dir, file), 'utf8'));
+  // Rows over an id table since I2, read back the way the browser reads them.
+  const spine = expandSpine(JSON.parse(await readFile(path.join(dir, file), 'utf8')));
   return spine.events.filter((e) => e.status === 'active').length;
 }
 
