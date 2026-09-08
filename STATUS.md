@@ -13,7 +13,77 @@ hundred lines again, cut it the same way.
 
 ## Last updated
 
-2026-09-08, after **I3** (`docs/index2/i3-brief.md` and its amendments, the
+2026-09-08, after **I4a** (`docs/index2/i4-brief.md`, its amendment A0 and
+`docs/review-2026-09-06-index2-plan.md` finding 23, the fourth run of the second
+index cycle, `docs/index2-plan.md` D4 and D5), on `m0`: **`index.html` and
+`entry.html` read the core. The atlas waits for 61.7 KB of graph where it waited
+for 190.2 KB, and its whole first paint is 247.7 KB where it was 376.1 KB; the
+titles, the roles and the counts arrive a century at a time behind the picture.**
+
+**What each page fetches before it draws.** `index.html` waits for the manifest,
+the core, the sources index, the coastlines and the palette, and for nothing
+else: the search shard and the attribute shards are started beside them and
+never awaited. `entry.html` waits for the manifest, the core and the record's
+own shard — `atlas.record()` has awaited that since I3, so the `?v=` is always
+what the index says — and then asks for the centuries its own lists reach, one
+shard per century and never the corpus.
+
+| the real data, 2,044 records | raw | gzipped |
+|---|---|---|
+| `core-<hash>.json`, what the atlas now waits for | **63,223 (61.7 KB)** | 17,827 |
+| `spine-<hash>.json`, what it waited for | 194,796 (190.2 KB) | 47,039 |
+| manifest · sources · land · palette | 26,685 · 33,681 · 125,938 · 4,071 | |
+| **whole first paint, reading the core** | **253,598 (247.7 KB)** | |
+| whole first paint, reading the spine | 385,171 (376.1 KB) | |
+| started beside it and never waited for: search | 223,317 | 45,088 |
+| the five attribute shards, likewise | 190,858 | 48,828 |
+
+**The threshold, honestly.** The brief asks for first-paint index bytes **under
+60 KB raw** on the real data. They are **61.7 KB — a miss of 2.8 %.** The core
+was 53,387 B when I3 measured it and the corpus has grown from 1,737 records to
+2,044 since, in the world merge that landed between the two runs; per record the
+core is what I3 measured. The other line is met with room: the whole first paint
+is **247.7 KB against the 300 KB asked for**, and against the 949.6 KB the cycle
+started from. The measurements at 10⁴ are I4b's (A0), and the owner may want to
+read the 60 KB line against the corpus it was written for before I4b is held to
+it.
+
+**Nothing waits for a shard, and no view prints an id.** A bar, a mark and a
+node are drawn out of the core and labelled when their century lands — the
+discipline `loadGeometry`, `loadCiters` and `loadExplanations` already follow.
+A card, an entry page and a lens chip are the other rule: they are the record's
+own words, so they show the loading line until the shard is in hand and never
+the core's fallbacks, which are a title that is the record's id, a `citesCount`
+of 0 and the astronomical bounds of a date (index2 review, finding 21). The
+switch found three places that were about to print one — the office cards, the
+lens chips in the masthead and `entry.html`'s tab name — and each is named in
+the deviations below.
+
+**One integer in four keys.** `shardsArrived(atlas)` in `src/render-key.js` is
+in the map's key, the timeline's and the graph's, and is compared by the panel;
+it counts *changes* to the set of shards in hand rather than the size of it,
+because a fifth shard arriving over a full cap leaves the size at four while
+every record in the shard it dropped has just lost its title.
+
+**What is pinned.** `src/attributes.js` says which records are on screen when
+one is open — an event's actors, place and links; an actor's events, relations,
+offices and their turns — and the panel and `entry.html` hold those shards while
+the card is there. `index.html` holds the shards of its window and its lens.
+The LRU's four unpinned then bound what a session has scrolled *past*, which is
+what it is for; at the whole extent the window is every shard, which is what
+"a reader at the whole extent gets the picture and then the titles" means.
+
+**`contribute.html`, `review.html` and `narratives.html` are untouched and still
+read the spine**, `manifest.schema` is still 4, `buildSpine` still writes the
+file, and `ARCHITECTURE.md` is not yet rewritten: all of that is I4b's, which
+has its own run (A0).
+
+`node tools/validate.mjs --index` is byte-identical and the prerendered pages
+are unchanged (plan D7). `node --test` with `CHROME` set is **1,143 of 1,146
+green, 0 skipped**; the three failures are inherited from the world merge and
+are named in deviation 470.
+
+Before this, **I3** (`docs/index2/i3-brief.md` and its amendments, the
 third run of the second index cycle, `docs/index2-plan.md` D4 and D5), on `m0`:
 **the index writes a core every page could load whole and attribute shards by
 century, beside the spine, and nothing switched over. The core is 52.1 KB on
@@ -2499,6 +2569,92 @@ The numbering continues from 401, which is M31-3's last.
      the rebuild belongs to whoever lands this on `m0`. The suite was green
      against the fresh index.
 
+### I4a
+
+470. **`m0` was already red when this run claimed it, and three of those
+     failures are still there.** `node --test` on `origin/m0` at `d3bb563`:
+     1,127 of 1,132 green. Two were rule 16 — 214 of the git-derived history
+     files were a commit stale, because `recordHistories` reads `git log` and
+     the rebuild inside the merge commit could not see the merge commit
+     itself; this run regenerated them (deviation 471). The other three are
+     browser tests, none of them this run's, all reproducible in isolation
+     against the base: `lens-browser` "with ?actor=portugal every view draws
+     that actor and its direct neighbours" (the map leaves out
+     `maastricht-treaty`), `timeline-browser` "the lanes are laid out again
+     when the window changes height" (which times out — the shape D10 and I6
+     exist to fix), and `panel-browser` "a drag of the band leaves the open
+     explanation open and moves the horizon". They look like fallout from the
+     world merge's corpus growth, they are in files I4a does not own, and no
+     test was edited to make them pass. **They are on the owner's plate, and
+     I4b will otherwise inherit them.**
+471. **The 214 stale histories were regenerated in a commit of their own**
+     before any I4a work, because two tests read `data/index/` against
+     `data/` and a run that cannot tell its own breakage from the base's has
+     no gate. Deviation 469 says the rebuild belongs to whoever lands the
+     merge on `m0`; the merge landed it and could not finish the job, so this
+     did. A second `node tools/build-index.mjs` after it changes nothing.
+472. **The count in the four keys counts arrivals, not shards held.** The
+     brief says "the number of attribute shards loaded". A number of shards
+     *held* cannot say what a view needs to know: `applyShard` loads and then
+     evicts, so a fifth shard over a full cap leaves the count at four while
+     every record in the shard it dropped has just lost its title, and a view
+     keyed on it would skip exactly that redraw. It counts changes to the set
+     instead — arrivals and evictions alike — which is the same device the map
+     already uses for the territory shards, whose `shardsIn` is also a count
+     of arrivals and not of shards held.
+473. **The panel compares the count outside `keyOf`.** The brief puts it in
+     `keyOf` beside the three views' keys. `keyOf`'s one consumer is
+     `sameCard`, and `sameCard` must not see it: a cluster's list is not state,
+     and the first state change after a shard — the `bbox` the zoom publishes
+     when it settles — would then be "a different card" and would replace the
+     list the reader is choosing from with the intro, which is the failure
+     `tests/panel-browser.test.mjs` has guarded since A5. So the panel holds
+     the count in a comparison of its own, in `refresh`, which knows that a
+     list is on screen and redraws it in place. Same integer, same rule, one
+     line lower.
+474. **The window's shards are pinned, which I3 A5's list did not name.** It
+     named an open card, an entry page and a lens. The three views are as much
+     on screen as those are, and the brief's own sentence — "a reader at the
+     whole extent gets the picture and then the titles" — is only true if the
+     shards the window spans are held: the real data has five shards and the
+     cap is four unpinned, so at the whole extent one would be evicted and the
+     bars in that century would lose their names again. The cap now bounds
+     what a session has scrolled past rather than what it is looking at. **The
+     consequence to weigh at 10⁵ is that a reader at the whole extent holds
+     the whole attribute payload**, which the plan's §3 heap ceiling did not
+     intend; I4b measures it, and the alternative is to stop the year-order
+     sweep short of the cap and accept that the far centuries are never named.
+475. **Three cards were printing an id where a name goes, and the switch is
+     what showed it.** The office cards printed `prime-minister-of-portugal`
+     (all nine offices carry `when: null`, so they are filed in the `null`
+     shard); the lens chips in the masthead printed `salazar` and
+     `estado-novo`; and `entry.html` set the tab's name off the index entry
+     before the record arrived. Each now waits: a card whose record is filed
+     in a shard shows the loading line until it lands, `lensLabel` tells "no
+     name" from "no name yet" and the chip says loading, and the entry's head
+     waits for the same fetch its body already waited for. A source is filed
+     in no shard at all, so its card is unaffected — which is also what makes
+     every one of these nothing on an atlas built from the spine.
+476. **`src/attributes.js` is new**, and is in `CLAUDE.md`'s layout tree. The
+     brief names no file for it; it exists because the panel and `entry.html`
+     ask the same question — which records are on screen when one is open, and
+     therefore which shards to hold — and a copy of that answer in each would
+     be two answers.
+477. **Two tests gained a wait, and neither lost an assertion.**
+     `map-browser`'s "the animation redraws once" counts the times the events
+     layer is emptied; it already excluded the territories because "a shard of
+     borders arriving is a redraw of its own", and an attribute shard landing
+     is now the same thing, so the count starts once they have stopped
+     arriving. `tests/spine-pages.test.mjs` reads the number of shards off the
+     manifest on disk rather than fetching it from inside the page, because a
+     fetch of the page's own would land in the resource timeline every
+     assertion in that file is made against.
+478. **`tests/spine-pages.test.mjs` keeps its name.** It is the core's for two
+     of its six pages and the spine's for the other four until I4b moves them;
+     renaming it now would name it after a file three of its rows still read.
+     Its table says which graph file each page reads, and asserts that no page
+     reads the other one.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
@@ -2640,3 +2796,4 @@ M41b started 2026-09-08T02:52:04Z by scheduled (branch world)
 M41b done
 M41 done
 I4a started 2026-09-08T09:19:50Z by scheduled
+I4a done
