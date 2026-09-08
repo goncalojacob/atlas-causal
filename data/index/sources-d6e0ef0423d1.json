@@ -11942,7 +11942,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 130,
+      "citationCount": 142,
       "citations": [
         {
           "dissent": false,
@@ -11982,9 +11982,39 @@
         },
         {
           "dissent": false,
+          "id": "farfetch",
+          "kind": "actor",
+          "locator": "Q18712957"
+        },
+        {
+          "dissent": false,
+          "id": "fertagus",
+          "kind": "actor",
+          "locator": "Q1408210"
+        },
+        {
+          "dissent": false,
           "id": "galp-energia",
           "kind": "actor",
           "locator": "Q1492739"
+        },
+        {
+          "dissent": false,
+          "id": "liberal-initiative",
+          "kind": "actor",
+          "locator": "Q46122950"
+        },
+        {
+          "dissent": false,
+          "id": "livre",
+          "kind": "actor",
+          "locator": "Q16947563"
+        },
+        {
+          "dissent": false,
+          "id": "meo",
+          "kind": "actor",
+          "locator": "Q1365938"
         },
         {
           "dissent": false,
@@ -11994,15 +12024,57 @@
         },
         {
           "dissent": false,
+          "id": "nos",
+          "kind": "actor",
+          "locator": "Q136331"
+        },
+        {
+          "dissent": false,
           "id": "people-animals-nature",
           "kind": "actor",
           "locator": "Q2054840"
         },
         {
           "dissent": false,
+          "id": "people-s-democratic-union",
+          "kind": "actor",
+          "locator": "Q2119074"
+        },
+        {
+          "dissent": false,
           "id": "people-s-monarchist-party",
           "kind": "actor",
           "locator": "Q1851550"
+        },
+        {
+          "dissent": false,
+          "id": "portuguese-investment-bank",
+          "kind": "actor",
+          "locator": "Q537886"
+        },
+        {
+          "dissent": false,
+          "id": "portuguese-workers-communist-party-re-organized-movement-of-the-party-of-the-proletariat",
+          "kind": "actor",
+          "locator": "Q2054628"
+        },
+        {
+          "dissent": false,
+          "id": "redes-energeticas-nacionais",
+          "kind": "actor",
+          "locator": "Q1862842"
+        },
+        {
+          "dissent": false,
+          "id": "revolutionary-socialist-party",
+          "kind": "actor",
+          "locator": "Q2054807"
+        },
+        {
+          "dissent": false,
+          "id": "semapa",
+          "kind": "actor",
+          "locator": "Q1862723"
         },
         {
           "dissent": false,

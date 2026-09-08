@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "farfetch",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-08",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q18712957",
+  "sitelinks": 11,
+  "wikipedia": {
+    "en": "Farfetch",
+    "pt": "Farfetch"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q18712957"
+    }
+  ],
+  "actorType": "institution",
+  "names": [
+    "Farfetch"
+  ],
+  "summary": "Wikidata item Q18712957, imported by tools/import/wikidata.mjs. The item's own description reads \"online luxury fashion marketplace\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2007,
+    "end": null
+  },
+  "where": null
+}

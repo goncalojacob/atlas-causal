@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "portuguese-investment-bank",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-08",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q537886",
+  "sitelinks": 11,
+  "wikipedia": {
+    "en": "Banco BPI",
+    "pt": "Banco Português de Investimento"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q537886"
+    }
+  ],
+  "actorType": "institution",
+  "names": [
+    "Portuguese Investment Bank",
+    "Banco Português de Investimento",
+    "Banco BPI"
+  ],
+  "summary": "Wikidata item Q537886, imported by tools/import/wikidata.mjs. The item's own description reads \"Portugal banking institution\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1981,
+    "end": null
+  },
+  "where": null
+}

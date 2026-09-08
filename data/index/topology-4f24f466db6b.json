@@ -2109,6 +2109,26 @@
       }
     },
     {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "farfetch",
+      "name": "Farfetch",
+      "names": [
+        "Farfetch"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 2007
+      },
+      "wikidata": "Q18712957",
+      "wikipedia": {
+        "en": "Farfetch",
+        "pt": "Farfetch"
+      }
+    },
+    {
       "actorType": "polity",
       "aliases": [],
       "id": "federated-malay-states",
@@ -2151,6 +2171,26 @@
       "when": {
         "end": 1967,
         "start": 1962
+      }
+    },
+    {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "fertagus",
+      "name": "Fertagus",
+      "names": [
+        "Fertagus"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 1999
+      },
+      "wikidata": "Q1408210",
+      "wikipedia": {
+        "en": "Fertagus",
+        "pt": "Fertagus"
       }
     },
     {
@@ -3513,6 +3553,27 @@
       }
     },
     {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "liberal-initiative",
+      "name": "Liberal Initiative",
+      "names": [
+        "Liberal Initiative",
+        "Iniciativa Liberal"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 2017
+      },
+      "wikidata": "Q46122950",
+      "wikipedia": {
+        "en": "Liberal Initiative",
+        "pt": "Iniciativa Liberal"
+      }
+    },
+    {
       "actorType": "polity",
       "aliases": [],
       "id": "liberia",
@@ -3570,6 +3631,27 @@
       "when": {
         "end": null,
         "start": 1918
+      }
+    },
+    {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "livre",
+      "name": "LIVRE",
+      "names": [
+        "LIVRE",
+        "Livre (partido político)"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 2014
+      },
+      "wikidata": "Q16947563",
+      "wikipedia": {
+        "en": "LIVRE",
+        "pt": "Livre (partido político)"
       }
     },
     {
@@ -3979,6 +4061,27 @@
       "when": {
         "end": 1968,
         "start": 1886
+      }
+    },
+    {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "meo",
+      "name": "MEO",
+      "names": [
+        "MEO",
+        "MEO (telecommunication company)"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 1991
+      },
+      "wikidata": "Q1365938",
+      "wikipedia": {
+        "en": "MEO (telecommunication company)",
+        "pt": "MEO"
       }
     },
     {
@@ -4553,6 +4656,27 @@
     {
       "actorType": "institution",
       "aliases": [],
+      "id": "nos",
+      "name": "NOS",
+      "names": [
+        "NOS",
+        "NOS (Portuguese company)"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 2014
+      },
+      "wikidata": "Q136331",
+      "wikipedia": {
+        "en": "NOS (Portuguese company)",
+        "pt": "NOS"
+      }
+    },
+    {
+      "actorType": "institution",
+      "aliases": [],
       "id": "novo-banco",
       "name": "Novo Banco",
       "names": [
@@ -4975,6 +5099,29 @@
     {
       "actorType": "institution",
       "aliases": [],
+      "id": "people-s-democratic-union",
+      "name": "People's Democratic Union",
+      "names": [
+        "People's Democratic Union",
+        "União Democrática Popular (UDP)",
+        "Popular Democratic Union (Portugal)",
+        "União Democrática Popular"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": 1999,
+        "start": 1974
+      },
+      "wikidata": "Q2119074",
+      "wikipedia": {
+        "en": "Popular Democratic Union (Portugal)",
+        "pt": "União Democrática Popular"
+      }
+    },
+    {
+      "actorType": "institution",
+      "aliases": [],
       "id": "people-s-monarchist-party",
       "name": "People's Monarchist Party",
       "names": [
@@ -5130,6 +5277,51 @@
     {
       "actorType": "institution",
       "aliases": [],
+      "id": "portuguese-investment-bank",
+      "name": "Portuguese Investment Bank",
+      "names": [
+        "Portuguese Investment Bank",
+        "Banco Português de Investimento",
+        "Banco BPI"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 1981
+      },
+      "wikidata": "Q537886",
+      "wikipedia": {
+        "en": "Banco BPI",
+        "pt": "Banco Português de Investimento"
+      }
+    },
+    {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "portuguese-workers-communist-party-re-organized-movement-of-the-party-of-the-proletariat",
+      "name": "Portuguese Workers' Communist Party/Re-Organized Movement of the Party of the Proletariat",
+      "names": [
+        "Portuguese Workers' Communist Party/Re-Organized Movement of the Party of the Proletariat",
+        "PCTP/MRPP",
+        "Portuguese Workers' Communist Party",
+        "Partido Comunista dos Trabalhadores Portugueses"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 1970
+      },
+      "wikidata": "Q2054628",
+      "wikipedia": {
+        "en": "Portuguese Workers' Communist Party",
+        "pt": "Partido Comunista dos Trabalhadores Portugueses"
+      }
+    },
+    {
+      "actorType": "institution",
+      "aliases": [],
       "id": "psd",
       "name": "Partido Social Democrata",
       "names": [
@@ -5259,6 +5451,26 @@
     {
       "actorType": "institution",
       "aliases": [],
+      "id": "redes-energeticas-nacionais",
+      "name": "Redes Energéticas Nacionais",
+      "names": [
+        "Redes Energéticas Nacionais"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 1994
+      },
+      "wikidata": "Q1862842",
+      "wikipedia": {
+        "en": "Redes Energéticas Nacionais",
+        "pt": "Redes Energéticas Nacionais"
+      }
+    },
+    {
+      "actorType": "institution",
+      "aliases": [],
       "id": "regenerator-party",
       "name": "Regenerator Party",
       "names": [
@@ -5307,6 +5519,29 @@
       "when": {
         "end": null,
         "start": 1886
+      }
+    },
+    {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "revolutionary-socialist-party",
+      "name": "Revolutionary Socialist Party",
+      "names": [
+        "Revolutionary Socialist Party",
+        "PSR",
+        "Revolutionary Socialist Party (Portugal)",
+        "Partido Socialista Revolucionário (Portugal)"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": 1999,
+        "start": 1979
+      },
+      "wikidata": "Q2054807",
+      "wikipedia": {
+        "en": "Revolutionary Socialist Party (Portugal)",
+        "pt": "Partido Socialista Revolucionário (Portugal)"
       }
     },
     {
@@ -5519,6 +5754,26 @@
       "when": {
         "end": 1896,
         "start": 1886
+      }
+    },
+    {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "semapa",
+      "name": "Semapa",
+      "names": [
+        "Semapa"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 1991
+      },
+      "wikidata": "Q1862723",
+      "wikipedia": {
+        "en": "Semapa",
+        "pt": "Semapa"
       }
     },
     {

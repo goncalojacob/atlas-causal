@@ -13270,7 +13270,7 @@
     }
   ],
   "schema": 1,
-  "total": 1166,
+  "total": 1178,
   "warnings": [
     {
       "id": "altice-portugal",
@@ -13309,6 +13309,18 @@
       "rule": "actor-unused"
     },
     {
+      "id": "farfetch",
+      "kind": "actor",
+      "message": "actor is referenced by no event and no relation, and holds no territory",
+      "rule": "actor-unused"
+    },
+    {
+      "id": "fertagus",
+      "kind": "actor",
+      "message": "actor is referenced by no event and no relation, and holds no territory",
+      "rule": "actor-unused"
+    },
+    {
       "id": "galp-energia",
       "kind": "actor",
       "message": "actor is referenced by no event and no relation, and holds no territory",
@@ -13321,7 +13333,31 @@
       "rule": "degree-zero"
     },
     {
+      "id": "liberal-initiative",
+      "kind": "actor",
+      "message": "actor is referenced by no event and no relation, and holds no territory",
+      "rule": "actor-unused"
+    },
+    {
+      "id": "livre",
+      "kind": "actor",
+      "message": "actor is referenced by no event and no relation, and holds no territory",
+      "rule": "actor-unused"
+    },
+    {
+      "id": "meo",
+      "kind": "actor",
+      "message": "actor is referenced by no event and no relation, and holds no territory",
+      "rule": "actor-unused"
+    },
+    {
       "id": "national-union",
+      "kind": "actor",
+      "message": "actor is referenced by no event and no relation, and holds no territory",
+      "rule": "actor-unused"
+    },
+    {
+      "id": "nos",
       "kind": "actor",
       "message": "actor is referenced by no event and no relation, and holds no territory",
       "rule": "actor-unused"
@@ -13333,7 +13369,37 @@
       "rule": "actor-unused"
     },
     {
+      "id": "people-s-democratic-union",
+      "kind": "actor",
+      "message": "actor is referenced by no event and no relation, and holds no territory",
+      "rule": "actor-unused"
+    },
+    {
       "id": "people-s-monarchist-party",
+      "kind": "actor",
+      "message": "actor is referenced by no event and no relation, and holds no territory",
+      "rule": "actor-unused"
+    },
+    {
+      "id": "portuguese-investment-bank",
+      "kind": "actor",
+      "message": "actor is referenced by no event and no relation, and holds no territory",
+      "rule": "actor-unused"
+    },
+    {
+      "id": "portuguese-workers-communist-party-re-organized-movement-of-the-party-of-the-proletariat",
+      "kind": "actor",
+      "message": "actor is referenced by no event and no relation, and holds no territory",
+      "rule": "actor-unused"
+    },
+    {
+      "id": "redes-energeticas-nacionais",
+      "kind": "actor",
+      "message": "actor is referenced by no event and no relation, and holds no territory",
+      "rule": "actor-unused"
+    },
+    {
+      "id": "revolutionary-socialist-party",
       "kind": "actor",
       "message": "actor is referenced by no event and no relation, and holds no territory",
       "rule": "actor-unused"
@@ -13343,6 +13409,12 @@
       "kind": "place",
       "message": "place is referenced by no event",
       "rule": "place-unused"
+    },
+    {
+      "id": "semapa",
+      "kind": "actor",
+      "message": "actor is referenced by no event and no relation, and holds no territory",
+      "rule": "actor-unused"
     },
     {
       "id": "the-navigator-company",
