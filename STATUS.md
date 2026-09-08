@@ -13,6 +13,53 @@ hundred lines again, cut it the same way.
 
 ## Last updated
 
+2026-09-08, after **M44-0** (`docs/m44-brief.md`, amendment A16, which
+answers amendment A2 and review finding 2; owner question 3 of that brief,
+taken as recommended in its second form): **a placeless event can be given a
+lane by data, and six of the twenty-nine can be given one honestly.**
+
+**The table is `lanes` at the root of `data/imports/wikidata-seeds.json`**:
+one region id per item, `{ "<Q-id>": "<lane>" }`, every value an id of
+`data/regions.json`. `schema/v1/import-seeds.json` holds the shape of a value
+and `checkImportSeeds` holds what a shape cannot say — that the key is an item
+of the source and the value a lane this atlas has. It sits beside the class
+table because it is the same kind of thing: an editorial decision about what a
+class or a stateless event *is*, in a file somebody can argue with in a pull
+request rather than in the tool.
+
+**`runImportMode` reads it at the point of refusal and nowhere else.** A
+placeless event still takes its lane from its own point, then from the point
+of the location or the country it names; only when none of those reaches a
+lane does the tool look in the table, and a lane a coordinate gives is never
+overridden by one a person wrote. The record says which it is holding —
+`regionNote` reads "Lane written by the Wikidata import (named for this item
+in `data/imports/wikidata-seeds.json`)" — so a later change to the polygons
+moves the derived lanes and not these. The refusal that remains now names the
+third thing that was missing, so the report says what would fix it.
+
+**Six of the twenty-nine got a lane; twenty-three did not, and that is the
+owner's decision to take.** The rule was written before it was applied: a lane
+is written only where `docs/m40-retractions.md`, `docs/m41-retractions.md` or
+deviation 447 names the item's own **ground**, and where that ground lies in
+exactly one lane of `data/regions.json`. Who fought is not where. Deviation
+545 lists all twenty-three with the reason each fails the rule; each is one
+line of data whenever the owner settles it.
+
+**The cursor is rewound for all twenty-nine**, from 592 done to 563, in a
+commit of its own naming them — the rewind deviation 447 said a run that
+fixed this would have to make. The twenty-three without a lane will be walked
+and refused again, by name, which is the honest state of them.
+
+`docs/run-protocol.md` gains the two amendments of 8 September: `m44` cut from
+`m0` is M44's own branch and not another agent on `m0`, and M44's claim and
+done lines stay on `m0` where the gate can read them (A10). Nothing under
+`data/` was touched except the two files under `data/imports/`, no historical
+claim was written, and `node tools/validate.mjs --index` is byte-identical
+without a rebuild. `node --test`: **1,229 tests, 0 skipped**, from 1,226.
+M44a is unblocked and has its own run.
+
+The section below and the ones further down are the runs before it.
+
 2026-09-08, after **I9** (`docs/index2/i9-brief.md` and its amendments, the
 last run of the second index cycle, `docs/index2-plan.md` D13; owner
 question 9, answered as recommended): **the Why mode has ground to stand on,
@@ -1435,6 +1482,16 @@ In full in the history file. The ones that decide something:
   Q1656682 event, Q13418847 historical event, Q3454916 untyped), which say
   nothing about what a thing was; and **Q102100590, a NATO operation**, which
   may be a war or may not.
+- **Twenty-three events with no lane anybody has settled** (deviation 545).
+  The mechanism exists now — `lanes` in `data/imports/wikidata-seeds.json`,
+  one region id per item — and six of deviation 447's twenty-nine are filled
+  in from what the retraction files say. The other twenty-three are named in
+  545 with why each is unsettled: eleven are named for who fought and not for
+  where, eight have no ground at all (the Cold War, the pandemics, the
+  financial crisis), the Arab Spring and the two Caucasus wars span two lanes,
+  and the Antarctic Treaty System's ground is in no lane this atlas has.
+  Whether a war with no single continent belongs on a timeline lane at all,
+  and which, is the owner's to answer; each answer is one line of data.
 - **89 more CShapes codes** are one id for a dependency and the state after
   it; which are two things is a judgement, not an import.
 - **When contributions open to strangers**; whether four container kinds are
@@ -3525,6 +3582,87 @@ The numbering continues from 401, which is M31-3's last.
      provable from here — a hung run publishes no logs — but the fix costs
      nothing and the same trap is there for the next test that awaits the
      page.
+
+544. **The lane table is read where a placeless event is refused, and not
+     where a place is.** `runImportMode` has two lane refusals: a place whose
+     own point reaches no polygon and whose country's point does not either,
+     and a placeless event with nothing to derive a lane from. Deviation 447
+     is the second one, and only the second one is now answered. A place
+     carries a coordinate by definition — "a place with no coordinate is a
+     word, not a place" — so a lane written by hand onto one would contradict
+     a measurement the record itself holds, which is the thing this table is
+     built never to do. Reverse by reading the table in the place branch too;
+     it is two lines and it needs somebody to decide that the map may draw a
+     mark whose lane disagrees with its own coordinate.
+545. **Six of the twenty-nine were given a lane and twenty-three were not,
+     under a rule written before it was applied.** A lane is written only
+     where `docs/m40-retractions.md`, `docs/m41-retractions.md` or deviation
+     447 names the item's own **ground**, and where that ground lies in
+     exactly one lane of `data/regions.json`. The name of a belligerent is
+     not ground: "the Iran-Iraq War" says who fought, and where they fought
+     is a historical fact this run would be supplying rather than reading,
+     which `CLAUDE.md` forbids and which deviation 447 called giving a lane
+     by guess. The six: **Q177918**, **Q184183**, **Q165725** — the Balkans,
+     in the items' own designations; **Q242352**, which
+     `docs/m40-retractions.md` puts in the Balkans in so many words under
+     `srebrenica-massacre`; **Q190029**, Kosovo; and **Q106308**, the Council
+     of Europe's charter, European in its own designation. All six are
+     `europe`. The twenty-three, by why they fail:
+
+     - *Named for who took part or how long it lasted, not for where* (11):
+       Q12583 Spanish-American War, Q178687 First Sino-Japanese War, Q214456
+       Philippine-American War, Q159950 Russo-Japanese War, Q186284
+       Polish-Soviet War, Q83085 Soviet-Afghan War, Q82664 Iran-Iraq War,
+       Q464399 Entente Cordiale, Q211674 Sykes-Picot Agreement (two
+       negotiators), Q134949 Winter War (a season), Q49077 Six-Day War (a
+       length).
+     - *No ground at all — a subject rather than a place* (8): Q8683 Cold
+       War, Q185729 War on Terrorism, Q12199 HIV/AIDS, Q178275 1918-1920 flu
+       pandemic, Q101452 2009 swine flu pandemic, Q896666 2007-2008
+       financial crisis, Q191836 CITES, and Q47359 Kyoto Protocol — named
+       for the city it was signed in, which is not what it is about, and
+       whether a lane may mean where a thing was signed is a question this
+       run did not answer for the owner.
+     - *Ground that spans two lanes* (3): Q33761 Arab Spring, across Africa
+       and Asia; Q381375 First Nagorno-Karabakh War and Q29269 First Chechen
+       War, in what `docs/m40-retractions.md` calls "the Caucasus", which is
+       in both Europe and Asia. **A war with no single continent is exactly
+       the question deviation 447 left to the owner.**
+     - *Ground settled and in no lane this atlas has* (1): Q182814 Antarctic
+       Treaty System. `data/regions.json` has five lanes and none of them is
+       Antarctica; giving it one would be worse than leaving it out.
+
+     **This is the owner's call and the run does not take it.** Each of the
+     twenty-three is one line in `lanes` and one commit to undo.
+546. **All twenty-nine were rewound, not the six with lanes.** The other
+     twenty-three are unfinished business rather than settled business: in
+     `done` they are silent, and walked again they are named in every import
+     report under a refusal that now says what would fix them. The cost is
+     one item's share of a batch each, inside a walk that already fetches
+     twenty-five at a time. Reverse by putting the twenty-three back in
+     `runs.import.done`.
+547. **The lane table's keys are checked by the validator and not by the
+     schema.** `src/validate/schema.js` implements a fixed list of keywords
+     and fails closed on any other, and `propertyNames` is not among them.
+     Adding it would be a change to the validator in a milestone that is not
+     about the validator, so the key check sits in `checkImportSeeds` beside
+     the class table's, which is the same check for the same reason. The
+     schema still holds the shape of every value.
+548. **A fixture item was added: `Q9000009`, an invented war over no ground.**
+     `tests/fixtures/wikidata/entities.json` had no dated event without a
+     place and without a coordinate — the case the table exists for — so the
+     two new tests would have had nothing to run against. It is a `Q9…`
+     identifier Wikidata does not use and a plainly invented label, which is
+     what `tests/fixtures/wikidata/README.md` requires of every item there;
+     the README's table now says the fixtures hold that case.
+549. **Only the last push's check can be read, because the earlier ones are
+     cancelled.** The `validate` workflow runs on the pull request with
+     `cancel-in-progress`, so each push to `m0` cancels the run of the one
+     before it: runs 560, 561 and 562 are `cancelled`, not red. The brief
+     asks for the check after every push, and what that can honestly mean
+     here is the check on the last commit of the run, which is what this
+     milestone reports. Reverse by pushing one commit at a time and waiting
+     about three minutes for each, at the cost of a run's whole night.
 
 ## I8: what was derived, and what the Action must still run
 
