@@ -356,7 +356,17 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
   // with no layout behind it, or a pane collapsed to nothing — which is what
   // this returned before.
   const nominalBox = () => ({ x0: 0, y0: 0, x1: laid?.width ?? 0, y1: laid?.height ?? 0 });
+  // Measured once and kept. This rectangle is in the SVG's own units and
+  // moves only when the element does — a pan or a zoom moves the picture
+  // *inside* it — and asking the browser for the matrix is asking it to lay
+  // the whole drawing out first. At 20,000 events one such question was a
+  // third of a wheel notch, and a notch would otherwise ask two: one in the
+  // handler, to find the point under the pointer, and one here. What makes it
+  // stale is the pane changing size, which the observer at the end of this
+  // file is watching for.
+  let measured = null;
   const visibleBox = () => {
+    if (measured) return measured;
     if (typeof DOMPoint !== 'function' || typeof root.getScreenCTM !== 'function') return nominalBox();
     const ctm = root.getScreenCTM();
     const rect = root.getBoundingClientRect?.();
@@ -364,9 +374,10 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
     const inverse = ctm.inverse();
     const a = new DOMPoint(rect.left, rect.top).matrixTransform(inverse);
     const b = new DOMPoint(rect.right, rect.bottom).matrixTransform(inverse);
-    return {
+    measured = {
       x0: Math.min(a.x, b.x), y0: Math.min(a.y, b.y), x1: Math.max(a.x, b.x), y1: Math.max(a.y, b.y),
     };
+    return measured;
   };
   // That rectangle in the graph's own coordinates, under the pan and zoom.
   //
@@ -914,6 +925,21 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
     transform = { k, x: laid.width / 2 - ((x0 + x1) / 2) * k, y: laid.height / 2 - (laid.height / 2) * k };
     exactZoom = false;
     applyTransform();
+  }
+
+  // A pane that has changed size shows a different rectangle of the picture,
+  // and that rectangle decides what is drawn: the measurement above is thrown
+  // away and the graph is drawn again. The same observer the map keeps, with
+  // the same guard against the size that has not actually changed.
+  if (typeof ResizeObserver !== 'undefined') {
+    let last = '';
+    new ResizeObserver(() => {
+      const now = `${container.clientWidth}x${container.clientHeight}`;
+      if (now === last) return;
+      last = now;
+      measured = null;
+      render(state.get());
+    }).observe(container);
   }
 
   state.subscribe(render);

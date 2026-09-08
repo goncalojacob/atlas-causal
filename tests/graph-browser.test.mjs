@@ -401,3 +401,35 @@ test('a mark outside the rectangle on screen is not drawn, and the selection is 
     assert.deepEqual(await errorsOn(page), [], 'the console is clean');
   });
 });
+
+test('a pane that changes size shows more of the picture, and the drawing follows it', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await watchErrors(page);
+    await open(page, url('?fixtures=1&view=graph'), drawnGraph);
+    await waitFor(page, TITLED('fixture-event-g'), 'the fixtures to be named');
+    // A few notches in, so that the rectangle on screen is narrower than the
+    // arrangement and there is something outside it to draw.
+    await page.eval(NOTCH_AT('fixture-event-g', 4));
+    const narrow = await page.eval(DRAWING);
+    assert.ok(narrow.k > 1.5, `zoomed in (k = ${narrow.k})`);
+
+    // The rectangle is measured once and kept — asking the browser for it
+    // inside a notch is a forced layout of the whole picture — so what makes
+    // it stale has to say so. A wider window is exactly that.
+    await page.send('Emulation.setDeviceMetricsOverride', {
+      mobile: false, width: 1900, height: 900, deviceScaleFactor: 1,
+    });
+    await waitFor(page, 'return innerWidth === 1900;', 'the window to be wide');
+    await waitFor(
+      page,
+      `return document.querySelectorAll('svg.graph .layer-nodes circle.node').length !== ${narrow.nodes.length};`,
+      'the graph to be drawn again for the wider pane',
+    );
+    const wide = await page.eval(DRAWING);
+    assert.ok(wide.box.x1 - wide.box.x0 > narrow.box.x1 - narrow.box.x0,
+      `the rectangle grew (${wide.box.x1 - wide.box.x0} from ${narrow.box.x1 - narrow.box.x0})`);
+    assert.ok(wide.nodes.length > narrow.nodes.length,
+      `and more of the picture is drawn (${wide.nodes.length} of ${narrow.nodes.length})`);
+    assert.deepEqual(await errorsOn(page), [], 'the console is clean');
+  }, { device: { width: 1280, height: 900, deviceScaleFactor: 1 } });
+});
