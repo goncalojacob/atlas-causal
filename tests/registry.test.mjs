@@ -35,6 +35,10 @@ import {
   ORIGIN_TOOLS, IMPORT_TOOLS, NC_ORIGINS, REVIEW_STATUS,
 } from '../src/origin.js';
 import { ENRICHABLE, CREATOR_ONLY } from '../tools/import/identity.mjs';
+import {
+  REFERENCES, IMPORT_REFERENCES, VOCABULARY_FIELDS, BODY_FIELD, ITEM, VALUES, ANY_KIND,
+} from '../src/references.js';
+import { IMPORT_SCHEMAS } from '../tools/validate.mjs';
 import { ROOT, SCHEMA_DIR } from './helpers.mjs';
 
 const schema = async (file) => JSON.parse(await readFile(path.join(SCHEMA_DIR, file), 'utf8'));
@@ -259,4 +263,77 @@ test('an enrichment pass can never be told to write what a creator writes', () =
   assert.ok(CREATOR_ONLY.includes('review'));
   assert.ok(CREATOR_ONLY.includes('retraction'));
   assert.ok(CREATOR_ONLY.includes('authors'));
+});
+
+// The path an id-shaped field sits at in a schema, as `references.js` writes
+// one: `/properties/actors/items/properties/actor` → `['actors', ITEM,
+// 'actor']`. `oneOf` is how a nullable field is declared and says nothing
+// about where the field is, so it is dropped along with the branch index.
+function pathsToIds(node, at = [], out = []) {
+  if (node === null || typeof node !== 'object') return out;
+  if (typeof node.$ref === 'string' && node.$ref.includes('provenance.json#/properties/id')) out.push(at);
+  for (const [key, value] of Object.entries(node)) {
+    if (key === 'properties' || key === 'oneOf' || key === 'anyOf') pathsToIds(value, at, out);
+    else if (key === 'items') pathsToIds(value, [...at, ITEM], out);
+    else if (key === 'additionalProperties') pathsToIds(value, [...at, VALUES], out);
+    else if (Array.isArray(node) || /^\d+$/.test(key)) pathsToIds(value, at, out);
+    else if (at.length || key !== '$id') pathsToIds(value, [...at, key], out);
+  }
+  return out;
+}
+
+test('the reference table covers every kind and every id-shaped field the schemas declare', async () => {
+  // Every kind has a row, in the registry's order: a tenth kind is a row here
+  // and not a branch in the rename tool (i7-brief §2).
+  assert.deepEqual(Object.keys(REFERENCES), [...KINDS]);
+
+  const own = new Set(['id']);
+  for (const kind of KINDS) {
+    const declared = pathsToIds(await schema(KIND[kind].schema))
+      .map((p) => p.join('/'))
+      // The record's own id is what a rename changes, not a reference to one;
+      // `aliases` holds its former ones, which the tool appends to rather
+      // than rewrites.
+      .filter((p) => !own.has(p) && p !== `aliases/${ITEM}`);
+    const known = new Set([
+      ...REFERENCES[kind].map((r) => r.at.join('/')),
+      ...(VOCABULARY_FIELDS[kind] ?? []),
+    ]);
+    for (const field of declared) {
+      assert.ok(known.has(field), `${kind}: /${field} is an id in the schema and is in no table`);
+    }
+    // And nothing in the table is a field the schema does not have: a row
+    // left behind by a renamed field would silently rewrite nothing. The two
+    // envelope rows are exempt, because a kind may not carry the field at
+    // all — a source cites nothing, so `schema/v1/source.json` declares no
+    // `sources`, and the row is simply matched by no source record.
+    const properties = new Set(Object.keys((await schema(KIND[kind].schema)).properties ?? {}));
+    const envelope = new Set(['supersededBy', `sources/${ITEM}/source`]);
+    for (const row of REFERENCES[kind]) {
+      if (envelope.has(row.at.join('/'))) continue;
+      assert.ok(properties.has(row.at[0]), `${kind}: /${row.at.join('/')} is in the table and not in the schema`);
+    }
+  }
+
+  // The envelope's two are on every kind, and the narrative step is the one
+  // reference whose kind the id decides rather than the field.
+  for (const kind of KINDS) {
+    const at = REFERENCES[kind].map((r) => r.at.join('/'));
+    assert.ok(at.includes('supersededBy'), kind);
+    assert.ok(at.includes(`sources/${ITEM}/source`), kind);
+  }
+  assert.equal(REFERENCES.narrative.find((r) => r.at[0] === 'steps').to, ANY_KIND);
+
+  // A full entry's citation marks and links by id are references too, and
+  // they are in prose rather than in a field of their own: rule 23 checks
+  // them, so `rewriteReferences` moves them, and the kinds that carry one are
+  // the registry's.
+  for (const kind of kindsWhere('body')) {
+    const properties = (await schema(KIND[kind].schema)).properties ?? {};
+    assert.ok(Object.hasOwn(properties, BODY_FIELD), `${kind} carries a body and the schema does not declare one`);
+  }
+
+  // The import files are keyed by the `kind` field tools/lib/read.mjs
+  // dispatches on, and every one of those kinds has a row.
+  assert.deepEqual(Object.keys(IMPORT_REFERENCES).sort(), Object.keys(IMPORT_SCHEMAS).sort());
 });
