@@ -13,6 +13,53 @@ hundred lines again, cut it the same way.
 
 ## Last updated
 
+2026-09-08, after **I8** (`docs/index2/i8-brief.md` and its amendments, the
+ninth run of the second index cycle, `docs/index2-plan.md` D12; owner
+questions 3 and 4, answered as recommended): **the two gaps the reader
+notices are closed by the imports.**
+
+**`?actor=angola` is no longer empty.** `data/imports/cshapes-actors.json`
+already said which entity code is two actors over its life and on what day
+the source draws the cut, and that is a `succeeded` relation. The CShapes
+import derives them now — `node tools/import/cshapes.mjs --relations`, which
+needs no topology and so runs where the 7.6 MB source file is not — and
+**77 relations were written**, one per split: 79 entries carry `splits`, and
+two of the pairs (British India, the Dutch East Indies) already had a
+hand-written relation, which the pass reported and left alone. `data/` holds
+**2,121 records** and the queue **829 drafts**, from 2,044 and 752.
+
+Nothing in them is a claim this run makes. The pair is the mapping file's,
+the date the source's, `when` the moment a succession is — one year at both
+bounds with the day beside it — and the note the entry's own, copied whole
+because that is where the table says a cut is doubtful. Every one carries
+`origin: { tool: "cshapes" }`, `review.status: "draft"` and
+`imported-facts`, cites `cshapes-2-0` by gwcode, and is **CC BY-NC-SA 4.0**.
+Eleven fall a year outside the colony's own interval and the validator says
+so (deviation 534).
+
+**The licence boundary now follows the origin and not the directory** (owner
+question 4). A record an import created carries its source's licence
+wherever it lives: `KIND.relation.licenses` gains the NC licence, rule 12
+asks the three kinds that may carry one — actor, relation, presence — for an
+import's `origin.tool`, and the table at the head of `data/LICENSE` says the
+same. A relation has no card, so its licence rides in the topology and the
+attribute rows, and the actor card and the entry page print the line once
+for whatever they draw.
+
+**The Wikidata `names` fill is code and tests only, and the Action has still
+to run it.** There is no network in this sandbox. `tools/import/wikidata.mjs`
+will write an event's other names — the item's labels *and its aliases*,
+folded against the title and each other — onto a record it did not create,
+under the three conditions of owner question 3: only where the field is
+absent, only on a `draft`, and with `imported-names` in `review.flags`. It
+runs in `.github/workflows/import-wikidata.yml`, on an `import/**` branch,
+and **the owner is the one who runs it**; whether "Carnation Revolution"
+then finds the 25th of April is that run's to say. No event in `data/`
+carries `names` yet.
+
+The section below and the two `## I6:` sections further down are the runs
+before it.
+
 2026-09-08, after **I7** (`docs/index2/i7-brief.md` and its amendments, the
 eighth run of the second index cycle, `docs/index2-plan.md` D11): **an id can
 be corrected.** `tools/migrate/ids.mjs` renames the record, keeps the former
@@ -3272,6 +3319,162 @@ The numbering continues from 401, which is M31-3's last.
      in it: **1,191 tests, 0 skipped, 0 todo, 0 failed** at the last commit,
      against 1,170 before the run. The GitHub check was read after every push
      all the same.
+526. **The NC hole is asked of a *mixed* kind only.** Amendment A3 says "any
+     kind whose licences include an NC licence"; office, tenure, narrative
+     and the rest allow CC BY-SA and nothing else, so the directory check
+     above already refuses an NC licence there and the origin check would
+     only print a second message about one mistake. It is asked of the three
+     kinds `licensesOf()` gives both to: actor, relation, presence.
+527. **A presence no longer carries the NC licence "with no ceremony".** The
+     one standing assertion A3 contradicts: `data/presences/` is an NC
+     directory because everything in it was imported, which is a fact about
+     the records, and the rule asks them now instead of trusting the
+     directory to have been right. Nothing under `data/` changed — every
+     presence already carries `origin.tool: cshapes` — and
+     `tests/presence-rules.test.mjs` says the new thing rather than being
+     loosened.
+528. **`note`'s cap in `schema/v1/relation.json` goes from 200 to 400.**
+     A2 asks for the entry's note verbatim; 14 of the 79 are longer than
+     200 and the longest is 371. Cuba's, at 319, is the one the reviewer
+     must see — it says the split date is earlier than the state's first
+     independent date — and truncating would drop the caveat and keep the
+     claim.
+529. **A relation's `license` is projected, in the topology and in the
+     attribute row.** A3 asks the card and the entry page to print the line
+     "when any relation they draw is NC-licensed", and nothing projected
+     said which was. One vocabulary column, two words over the whole corpus,
+     in the attribute row and not the core, so it is not at first paint.
+     `manifest.schema` is not moved: a file names its own columns, and the
+     plan's section 4 table has I8 leaving the generation where it is.
+530. **The successions carry `origin: { tool: "cshapes" }` and no `run`.**
+     The brief's body names `run`; the only value this pass has for one is
+     the day it ran, which is `created` exactly. Migration 4 restores
+     `origin` off `authors` without it, so a `run` here would be a field the
+     migration chain silently drops — worse than no field.
+531. **The fixture succession is hand-written and CC BY-SA, not an import's
+     draft**, and the NC case is exercised by mutation instead — rule 12 in
+     `tests/presence-rules.test.mjs`, the card and the page in
+     `tests/licensing.test.mjs` and `tests/entry.test.mjs`. A draft an import
+     created cannot survive `tools/migrate/apply.mjs --to 2` and back:
+     migration 4's `down` strips `origin` and `review.status`, and its `up`
+     puts `origin` back off `authors` but restores `draft` only where the
+     assistant's own marker is in `authors`. **That is already true of the
+     1,100 imported records in `data/`** — the fixture only exposed it — and
+     `src/validate/migrate.js` is "—" for every run of this cycle in the
+     plan's section 4, so this run did not touch it. **Worth the owner's
+     eye**: a migration whose `down` drops what its `up` cannot restore
+     should refuse the record, the way it already refuses a signed one.
+532. **An event's `names` is carried across a save, not drawn.** `KEPT_KEYS`
+     in `src/contribute/bundle.js` gains it. No form draws the field — H7
+     added it to the schema and the search shard and not to the form — so
+     the first save through the review dashboard, which is the save that
+     clears the `imported-names` flag, would have deleted what the flag is
+     about. Drawing an input for it is a decision about the form and is the
+     owner's.
+533. **The `date` seeding is narrowed to the records a person wrote.**
+     `tools/seed-review-flags.mjs` flagged every active relation and tenure,
+     and `RELATION_NOTE` says the interval was written from memory or taken
+     from the actor records. Neither is true of one read off a cited source,
+     so `handWritten` filters it and the test says so.
+534. **Eleven of the 77 fall a year outside the colony's own interval**, and
+     the validator says so in 12 `relation-outside-actor-when` warnings
+     (Bhutan, Brunei, Cameroon, East Timor, Senegal, Singapore twice, Sudan,
+     Syria, Taiwan, Tunisia, Zambia). CShapes draws the cut on the first day
+     of the year after the colony's last feature ends, and an actor's
+     interval is in years. A warning on a draft is what that should be: the
+     reviewer sees it beside the entry's own note.
+535. **`CLAUDE.md` was edited, which the brief's file list does not name.**
+     Its "What the Wikidata import may do" paragraph said the import fills
+     in an identity field "and nothing else", which the `names` fill
+     contradicts; it now states owner question 3's three conditions. The
+     commands block gains `--relations`.
+536. **The check was red on `5065ba0` and green after.** The history shards
+     are read out of `git log`, so a record written in one commit has no
+     version to shard until the commit after it: the fixture succession
+     landed in `df399b4` and its shard could only be built in the next
+     commit — the same step `11d40ca` took for the eighteen records M30a
+     wrote, and the same one the 77 needed. Rule 16 is what caught it, which
+     is the rule working.
+537. **A data commit and its index commit are separate, so `--index` is
+     stale for exactly one commit each time.** Step 3's two clauses cannot
+     both hold literally; the pair is the unit, and each pair was pushed
+     together so that only the index commit is checked. The last commit is
+     the `STATUS.md` one that step 4 asks for, which touches no record and
+     so cannot move the index.
+538. **Nothing skipped, as in deviations 516 and 525.** `findChrome()`
+     answers `/opt/pw-browsers/chromium-1194/chrome-linux/chrome` here with
+     or without `$CHROME` set, so the browser tests ran in this sandbox too:
+     **1,209 tests, 0 skipped, 0 todo, 0 failed**, against 1,191 before the
+     run. The GitHub check was read after every push all the same.
+
+## I8: what was derived, and what the Action must still run
+
+**The successions.** `node tools/import/cshapes.mjs --relations` reads
+`data/imports/cshapes-actors.json` and nothing else — no topology, so it runs
+where the 7.6 MB source file is not — and writes one
+`data/relations/<colony>--<state>--succeeded.json` per split. The full import
+runs the same pass, so a re-import cannot leave them behind.
+
+| | |
+|---|---|
+| entries in the split table | 79 |
+| entries carrying `splits` | 79 |
+| splits, and so successions | 79 |
+| already on disk, hand-written, reported and left alone | 2 |
+| **written by this run** | **77** |
+
+The two left alone are `british-india--republic-of-india--succeeded` and
+`dutch-east-indies--indonesia--succeeded`. The pass only ever *creates*: a
+relation whose id exists is reported and left alone whatever its standing —
+hand-written, imported, signed or retracted — because the id is derived from
+the pair and the type, so a file under that name is already somebody's answer
+to the question the pass asks. A second pass writes nothing.
+
+**What a reviewer will see in the queue.** 829 drafts, from 752. Each of the
+77 carries `imported-facts`, cites `cshapes-2-0` at `gwcode <code>`, and
+carries the split table's own note where the entry has one — which is where
+the table says a cut is doubtful. Cuba's is the case to read first: the split
+date, 1898-12-10, is earlier than the state's first independent date, and the
+occupation between them is the state's own record. A reviewer may retract a
+draft relation and write a CC BY-SA one from another source.
+
+**The licence.** A record an import created is CC BY-NC-SA 4.0 wherever it
+lives (owner question 4). Said in four places that a test holds together:
+`KIND.relation.licenses` in `src/kinds.js`, rule 12 in
+`src/validate/rules.js`, the table at the head of `data/LICENSE`, and the
+manifest's `licenses` block, which `licensingTable()` writes off the
+registry. A relation has no card of its own, so the licence is projected into
+the topology and the attribute rows, and `src/panel/actor.js` and
+`src/entry/entry.js` print the line once for whichever record on the page is
+somebody else's material — the record itself first, where that is one of
+them.
+
+**The Wikidata half is code and tests. The Action has still to be run, and
+the owner is the one who runs it.**
+`node tools/import/wikidata.mjs --import` (and `--reconcile`) will now, on a
+record it did not create:
+
+- write `names` **only where the field is absent** — never adding to a list,
+  never reordering one, never replacing a name somebody chose;
+- **only on a record whose `review.status` is `draft`** — never on one a
+  person has signed, and never on one with no standing at all, which is in no
+  queue where the names would be seen and cleared;
+- add **`imported-names`** to `review.flags`, which is the one place an
+  import writes into `review`: a flag added, never one removed, never
+  `status`, never `signedBy`;
+- touch nothing else, and add nobody to `authors`.
+
+The names are the item's own labels **and its aliases** in `LANGUAGES`, one
+language at a time, folded with `foldName` against the title and against each
+other, and **no `names` key at all** for an empty list, which rule 18
+refuses. `namesFor` is untouched: it folds labels and article titles for a
+record the import is *creating*, and the alias is what this needed.
+
+It runs in `.github/workflows/import-wikidata.yml`, on a branch called
+`import/…`, which commits to that branch and never to `m0` — the one job with
+a network. Until it is run, **no event in `data/` carries `names`** and
+"carnation" still finds nothing; the fixtures carry one so that the feature
+is tested end to end here.
 
 ## I7: the rename tool, and what it refuses
 
@@ -3591,3 +3794,4 @@ I6 done
 I7 started 2026-09-08T15:01:40Z by scheduled
 I7 done
 I8 started 2026-09-08T15:33:49Z by scheduled
+I8 done
