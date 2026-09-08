@@ -1,0 +1,810 @@
+{
+  "citations": [
+    {
+      "dissent": false,
+      "id": "americo-tomas",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "amilcar-cabral",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "antonio-maria-da-silva",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "banco-de-portugal",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "carbonaria",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "carlos-i",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "craveiro-lopes",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "dias-ferreira",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "domingos-oliveira",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "efta",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "ferreira-do-amaral",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "first-portuguese-republic",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "freitas-do-amaral",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "gomes-da-costa",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "hintze-ribeiro",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "humberto-delgado",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "ivens-ferraz",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "joao-crisostomo",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "joao-franco",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "jose-luciano-de-castro",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "jose-vicente-de-freitas",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "league-of-nations",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "luis-filipe",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "luis-i",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "manuel-de-arriaga",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "manuel-ii",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "maria-de-lourdes-pintasilgo",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "mota-pinto",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "mpla",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "nobre-da-costa",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "norton-de-matos",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "oecd",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "oeec",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "paigc",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "paiva-couceiro",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "partido-republicano-portugues",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "pcp",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "pinto-balsemao",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "pvde-pide-dgs",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "regenerator-party",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "sa-carneiro",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "serpa-pimentel",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "teixeira-de-sousa",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "teofilo-braga",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "united-nations",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "1908-portuguese-legislative-election--republic-proclaimed-1910--precondition-of",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "1911-portuguese-constituent-national-assembly-election--constitution-1911--caused",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "1945-portuguese-legislative-election--1949-portuguese-presidential-election--inspired",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "1949-portuguese-presidential-election--delgado-candidacy-1958--inspired",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "1965-portuguese-presidential-election--caetano-succeeds-salazar-1968--enabled",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": true,
+      "id": "battle-of-the-lys-1918--coup-28-may-1926--precondition-of",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": true,
+      "id": "cabral-assassinated-1973--guinea-bissau-declares-independence-1973--caused",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "constitution-1911--1911-portuguese-presidential-election--enabled",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "constitution-1976--1976-azorean-regional-election--enabled",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "constitution-1976--1976-portuguese-local-elections--enabled",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "constitution-1976--1979-portuguese-local-elections--enabled",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "constitution-1976--eleicoes-legislativas-regionais-na-madeira-em-1976--enabled",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "constitutional-revision-1959--1965-portuguese-presidential-election--caused",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "coup-28-may-1926--constitution-1933--precondition-of",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "delgado-candidacy-1958--constitutional-revision-1959--caused",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "efta-accession-1960--eec-application-1977--precondition-of",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "iberian-pact--treaty-of-friendship-and-cooperation-between-spain-and-portugal--reacted-to",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "law-of-separation-1911--coup-28-may-1926--precondition-of",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "lisbon-regicide--1908-portuguese-legislative-election--caused",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "lisbon-regicide--republic-proclaimed-1910--enabled",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "noite-sangrenta-1921--coup-28-may-1926--precondition-of",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "republic-proclaimed-1910--1911-portuguese-constituent-national-assembly-election--caused",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "republic-proclaimed-1910--constitution-1911--caused",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "republic-proclaimed-1910--law-of-separation-1911--caused",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "second-boer-war--treaty-of-windsor--caused",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "sidonio-pais-assassinated-1918--monarchy-of-the-north-1919--enabled",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-rome--efta-accession-1960--caused",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-windsor--germany-declares-war-1916--precondition-of",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "1908-portuguese-legislative-election",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "1911-portuguese-constituent-national-assembly-election",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "1911-portuguese-presidential-election",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "1949-portuguese-presidential-election",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "1965-portuguese-presidential-election",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "1976-azorean-regional-election",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "1976-portuguese-local-elections",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "1979-portuguese-local-elections",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "cabral-assassinated-1973",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "constitutional-revision-1959",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "delgado-assassinated-1965",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "efta-accession-1960",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "eleicoes-legislativas-regionais-na-madeira-em-1976",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "exposicao-mundo-portugues-1940",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "lisbon-regicide",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "monarchy-of-the-north-1919",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "republic-proclaimed-1910",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "second-boer-war",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-friendship-and-cooperation-between-spain-and-portugal",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-rome",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-windsor",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "first-portuguese-republic--portugal--regime-of",
+      "kind": "relation",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "oeec--oecd--succeeded",
+      "kind": "relation",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "portugal--efta--member-of",
+      "kind": "relation",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "portugal--league-of-nations--member-of",
+      "kind": "relation",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "portugal--oecd--member-of",
+      "kind": "relation",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "portugal--oeec--member-of",
+      "kind": "relation",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "pvde-pide-dgs--estado-novo--part-of",
+      "kind": "relation",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "afonso-costa-prime-minister-1913",
+      "kind": "tenure",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "americo-tomas-president-1958",
+      "kind": "tenure",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "amilcar-cabral-paigc-1956",
+      "kind": "tenure",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "carlos-i-monarch-1889",
+      "kind": "tenure",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "craveiro-lopes-president-1951",
+      "kind": "tenure",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "dias-ferreira-prime-minister-1892",
+      "kind": "tenure",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "domingos-oliveira-prime-minister-1930",
+      "kind": "tenure",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "ferreira-do-amaral-prime-minister-1908",
+      "kind": "tenure",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "freitas-do-amaral-prime-minister-1980",
+      "kind": "tenure",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "hintze-ribeiro-prime-minister-1893",
+      "kind": "tenure",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "hintze-ribeiro-prime-minister-1900",
+      "kind": "tenure",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "hintze-ribeiro-prime-minister-1906",
+      "kind": "tenure",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "ivens-ferraz-prime-minister-1929",
+      "kind": "tenure",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "joao-crisostomo-prime-minister-1890",
+      "kind": "tenure",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "joao-franco-prime-minister-1906",
+      "kind": "tenure",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "jose-luciano-de-castro-prime-minister-1886",
+      "kind": "tenure",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "jose-luciano-de-castro-prime-minister-1897",
+      "kind": "tenure",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "jose-luciano-de-castro-prime-minister-1904",
+      "kind": "tenure",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "jose-vicente-de-freitas-prime-minister-1928",
+      "kind": "tenure",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "luis-i-monarch-1861",
+      "kind": "tenure",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "manuel-de-arriaga-president-1911",
+      "kind": "tenure",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "manuel-ii-monarch-1908",
+      "kind": "tenure",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "maria-de-lourdes-pintasilgo-prime-minister-1979",
+      "kind": "tenure",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "mario-soares-prime-minister-1983",
+      "kind": "tenure",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "mota-pinto-prime-minister-1978",
+      "kind": "tenure",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "nobre-da-costa-prime-minister-1978",
+      "kind": "tenure",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "oscar-carmona-president-1926",
+      "kind": "tenure",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "oscar-carmona-prime-minister-1926",
+      "kind": "tenure",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "pinto-balsemao-prime-minister-1981",
+      "kind": "tenure",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "sa-carneiro-prime-minister-1980",
+      "kind": "tenure",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "serpa-pimentel-prime-minister-1890",
+      "kind": "tenure",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "teixeira-de-sousa-prime-minister-1910",
+      "kind": "tenure",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "teofilo-braga-president-1910",
+      "kind": "tenure",
+      "locator": null
+    }
+  ],
+  "id": "ramos-2009-historia-de-portugal",
+  "schema": 1
+}

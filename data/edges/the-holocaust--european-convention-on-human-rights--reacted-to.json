@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "the-holocaust--european-convention-on-human-rights--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"The Holocaust\", revision 1373403276"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"European Convention on Human Rights\", revision 1366403378"
+    }
+  ],
+  "from": "the-holocaust",
+  "to": "european-convention-on-human-rights",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The convention of 1950 was drafted by governments that had just watched a state destroy its own citizens legally, and it is built against that: rights held by individuals against the state rather than granted by it, a court that a person may reach, and a list — life, torture, slavery, arbitrary detention — that reads as an inventory of what had been done. The claim is about what the drafters were answering, which the preamble and the drafting record say plainly. It is not that the Holocaust alone produced the convention: the Soviet presence in eastern Europe and the wish to bind the new German state are in it too.",
+  "dispute": null
+}

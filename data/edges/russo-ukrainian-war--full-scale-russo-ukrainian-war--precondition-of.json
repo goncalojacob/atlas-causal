@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "russo-ukrainian-war--full-scale-russo-ukrainian-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Russo-Ukrainian war\", revision 1372896482"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Russo-Ukrainian war (2022–present)\", revision 1373153668"
+    }
+  ],
+  "from": "russo-ukrainian-war",
+  "to": "full-scale-russo-ukrainian-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The invasion of February 2022 is not the beginning of a war but a decision to end by force what eight years of the existing one had failed to settle. The Minsk agreements had committed Ukraine to a constitutional status for the occupied districts that no Ukrainian parliament would pass and Russia to a withdrawal it never made, so the front line froze and the political instrument for changing it was exhausted; Moscow recognised the two republics as states on 21 February 2022 and invaded three days later. The claim is that the earlier war supplied the stalemate, the pretext and the recognised entities the invasion was launched to protect.",
+  "dispute": null
+}

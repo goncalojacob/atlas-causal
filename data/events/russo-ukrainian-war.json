@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "russo-ukrainian-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": "2026-09-05",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q15860072",
+  "sitelinks": {
+    "count": 110,
+    "on": "2026-09-05"
+  },
+  "wikipedia": {
+    "en": "Russo-Ukrainian war",
+    "pt": "Guerra Russo-Ucraniana"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Russo-Ukrainian war\", revision 1372896482"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Guerra Russo-Ucraniana\", revision 72707172"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q15860072"
+    }
+  ],
+  "title": "Russo-Ukrainian war",
+  "summary": "Russia occupied and annexed Crimea in March 2014 and then armed and directed a separatist war in the Donbas that ran for eight years, killing some fourteen thousand people and settling into a front line that two agreements signed at Minsk failed to move. Ukraine declared the region occupied in 2018. The war's second phase opened with the full-scale invasion of February 2022 and it continues. The record covers the whole of it from 2014; the invasion has a record of its own, because what changed in 2022 was not the war's existence but its scale.",
+  "when": {
+    "start": 2014,
+    "end": null,
+    "date": "2014-02-20"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": [
+    {
+      "actor": "ukraine",
+      "role": "belligerent"
+    },
+    {
+      "actor": "russia-soviet-union",
+      "role": "belligerent"
+    }
+  ]
+}

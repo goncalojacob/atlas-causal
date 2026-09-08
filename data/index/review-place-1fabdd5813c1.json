@@ -1,0 +1,642 @@
+{
+  "kind": "place",
+  "records": [
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-03",
+      "degree": 1,
+      "id": "alvor",
+      "kind": "place",
+      "names": [
+        "Alvor, Algarve"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-03",
+      "degree": 1,
+      "id": "belem",
+      "kind": "place",
+      "names": [
+        "Belém, Lisbon"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-03",
+      "degree": 1,
+      "id": "berlin",
+      "kind": "place",
+      "names": [
+        "Berlin"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "wikidata-assigned-by-assistant"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-03",
+      "degree": 1,
+      "id": "boe",
+      "kind": "place",
+      "names": [
+        "Boé"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-03",
+      "degree": 1,
+      "id": "braga",
+      "kind": "place",
+      "names": [
+        "Braga"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-03",
+      "degree": 1,
+      "id": "central-portugal",
+      "kind": "place",
+      "names": [
+        "Central Portugal",
+        "Portugal central"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "place"
+        ],
+        "note": "A point invented to stand for an area, not a settlement. Either name the place the events happened at or say in the summary what the point stands for.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-03",
+      "degree": 1,
+      "id": "chai",
+      "kind": "place",
+      "names": [
+        "Chai, Cabo Delgado"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-03",
+      "degree": 1,
+      "id": "conakry",
+      "kind": "place",
+      "names": [
+        "Conakry"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-03",
+      "degree": 2,
+      "id": "dili",
+      "kind": "place",
+      "names": [
+        "Dili"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-03",
+      "degree": 1,
+      "id": "flanders",
+      "kind": "place",
+      "names": [
+        "Flanders, near Laventie"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-03",
+      "degree": 1,
+      "id": "lajes",
+      "kind": "place",
+      "names": [
+        "Lajes, Terceira"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-03",
+      "degree": 60,
+      "id": "lisbon",
+      "kind": "place",
+      "names": [
+        "Lisbon"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "wikidata-assigned-by-assistant"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-03",
+      "degree": 2,
+      "id": "luanda",
+      "kind": "place",
+      "names": [
+        "Luanda"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "wikidata-assigned-by-assistant"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-03",
+      "degree": 2,
+      "id": "macau",
+      "kind": "place",
+      "names": [
+        "Macau"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "wikidata-assigned-by-assistant"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-03",
+      "degree": 1,
+      "id": "near-villanueva-del-fresno",
+      "kind": "place",
+      "names": [
+        "near Villanueva del Fresno, Spain"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-03",
+      "degree": 2,
+      "id": "new-york",
+      "kind": "place",
+      "names": [
+        "New York"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "wikidata-assigned-by-assistant"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-03",
+      "degree": 1,
+      "id": "panaji",
+      "kind": "place",
+      "names": [
+        "Panaji"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-03",
+      "degree": 1,
+      "id": "parque-das-nacoes",
+      "kind": "place",
+      "names": [
+        "Parque das Nações, Lisbon"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-03",
+      "degree": 1,
+      "id": "pedrogao-grande",
+      "kind": "place",
+      "names": [
+        "Pedrógão Grande"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "wikidata-assigned-by-assistant"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-03",
+      "degree": 1,
+      "id": "porto",
+      "kind": "place",
+      "names": [
+        "Porto"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "wikidata-assigned-by-assistant"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-03",
+      "degree": 1,
+      "id": "recife",
+      "kind": "place",
+      "names": [
+        "Recife, at the end of the voyage"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-03",
+      "id": "saint-denis",
+      "kind": "place",
+      "names": [
+        "Saint-Denis"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-05",
+      "degree": 1,
+      "id": "stockholm",
+      "kind": "place",
+      "names": [
+        "Stockholm",
+        "Estocolmo"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "place"
+        ],
+        "note": "The coordinates are the city centre, written from memory; no cached lead exists for Stockholm, so the record carries no identity fields.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-03",
+      "degree": 1,
+      "id": "tete-district",
+      "kind": "place",
+      "names": [
+        "Tete district, Mozambique"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-03",
+      "degree": 1,
+      "id": "tite",
+      "kind": "place",
+      "names": [
+        "Tite"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-03",
+      "degree": 1,
+      "id": "washington",
+      "kind": "place",
+      "names": [
+        "Washington"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    }
+  ],
+  "schema": 1,
+  "warnings": [
+    {
+      "id": "saint-denis",
+      "kind": "place",
+      "message": "place is referenced by no event",
+      "rule": "place-unused"
+    }
+  ]
+}

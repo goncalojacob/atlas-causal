@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "energias-de-portugal",
+  "kind": "actor",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-08",
+  "revised": "2026-09-08",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-08",
+    "reason": "Retracted in M41b: EDP, the electricity utility founded in 1976 out of the merger of fourteen nationalised companies. The link to the atlas is real and it has no record to hang on: the nationalisations this atlas holds are those of March 1975, a year earlier, and EDP was not an actor in them but a body made afterwards out of what they took. It would need an event for the creation of EDP in 1976, or for the nationalisation of electricity that followed the banks over that summer."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m41-retracted"
+    ]
+  },
+  "wikidata": "Q1341222",
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-09-08"
+  },
+  "wikipedia": {
+    "en": "EDP Group",
+    "pt": "EDP"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1341222"
+    }
+  ],
+  "actorType": "institution",
+  "names": [
+    "Energias de Portugal",
+    "EDP Group",
+    "EDP"
+  ],
+  "summary": "Wikidata item Q1341222, imported by tools/import/wikidata.mjs. The item's own description reads \"Portuguese energy company\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1976,
+    "end": null
+  },
+  "where": null
+}

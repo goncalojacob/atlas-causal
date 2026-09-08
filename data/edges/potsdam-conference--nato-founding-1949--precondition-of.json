@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "potsdam-conference--nato-founding-1949--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Potsdam Conference\", revision 1371936780"
+    }
+  ],
+  "from": "potsdam-conference",
+  "to": "nato-founding-1949",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Potsdam left Germany divided into zones under four administrations with no agreed future, and the four years that followed — the failure of the councils of foreign ministers, the currency reform, the Berlin blockade — turned the provisional line into a frontier. The Atlantic treaty of April 1949 is the western answer to that, and it is the door through which Portugal, a dictatorship that had spent the war neutral and had been kept out of the United Nations, entered the western system as a founder member. The claim is about the sequence from a deferred German question to a standing alliance, not that Potsdam was intended to produce one.",
+  "dispute": null
+}

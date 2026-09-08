@@ -1,0 +1,12 @@
+{
+  "from": "revised",
+  "id": "paris-agreement",
+  "kind": "event",
+  "schema": 1,
+  "versions": [
+    {
+      "first": true,
+      "on": "2026-09-05"
+    }
+  ]
+}

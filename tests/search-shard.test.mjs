@@ -66,9 +66,14 @@ for (const [label, dir, queries] of [['the fixtures', FIXTURE_DATA, QUERIES.fixt
   test(`the shard finds everything the topology alone would over ${label}`, async () => {
     const { shard, topology } = await shardAndTopology(dir);
     const fromTopology = buildSearchIndex(topology);
+    // Every match and not the first fifty. A one-letter query matches more
+    // than fifty records since `world` was merged, and two truncated
+    // rankings are not the claim: the shard carries terms the topology does
+    // not, so it ranks differently, and a row falling off page one of one
+    // list and not of the other says nothing about anything being lost.
     for (const query of queries) {
-      const thin = flatten(search(fromTopology, query, { limit: 50 })).map((i) => `${i.kind}:${i.id}`);
-      const full = new Set(flatten(search(shard.entries, query, { limit: 50 })).map((i) => `${i.kind}:${i.id}`));
+      const thin = flatten(search(fromTopology, query, { limit: Number.MAX_SAFE_INTEGER })).map((i) => `${i.kind}:${i.id}`);
+      const full = new Set(flatten(search(shard.entries, query, { limit: Number.MAX_SAFE_INTEGER })).map((i) => `${i.kind}:${i.id}`));
       for (const id of thin) assert.ok(full.has(id), `"${query}": the shard lost ${id}`);
       assert.ok(search(shard.entries, query).total >= search(fromTopology, query).total, `"${query}"`);
     }

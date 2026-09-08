@@ -136,7 +136,9 @@ test("the atlas's own strip: Portugal's three posts, and every turn counted", as
   assert.match(section.body, /data-action="office" data-id="president-of-portugal"/);
   // Portugal starts in 1886, the earliest record is 1899, and the strip is
   // held to what the atlas holds: it starts at the corpus and not at the
-  // actor's own first year.
-  assert.deepEqual(own.extent, { min: 1899, max: 2025 });
-  assert.match(section.body, /<span>1899<\/span>\s*<span>2025<\/span>/);
+  // actor's own first year. The far end was 2025 until the merge of `world`
+  // brought `2025-2026-iranian-protests`, which runs into February 2026 —
+  // the strip follows the corpus, and this actor's own last year is neither.
+  assert.deepEqual(own.extent, { min: 1899, max: 2026 });
+  assert.match(section.body, /<span>1899<\/span>\s*<span>2026<\/span>/);
 });

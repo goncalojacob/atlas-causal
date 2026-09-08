@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "russian-civil-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": "2026-09-05",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q79911",
+  "sitelinks": {
+    "count": 97,
+    "on": "2026-09-05"
+  },
+  "wikipedia": {
+    "en": "Russian Civil War",
+    "pt": "Guerra Civil Russa"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Russian Civil War\", revision 1372728974"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Guerra Civil Russa\", revision 72906861"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q79911"
+    }
+  ],
+  "title": "Russian Civil War",
+  "summary": "From 1917 to 1922 the Bolshevik government fought the officers' armies of the south and Siberia, the socialist and peasant risings of the Volga and Ukraine, the new states of the borderlands and the expeditionary forces of a dozen foreign powers. It was won by the Red Army, and won at a price that shaped everything after it: war communism, requisitioning, the Cheka, and a party that had learned to govern by emergency. The Soviet Union was constituted at the end of it, in December 1922. The atlas holds it as the war that made the Soviet state what it was, rather than as a sequel to October.",
+  "when": {
+    "start": 1917,
+    "end": 1922,
+    "date": "1917-11-07",
+    "endDate": "1922-10-25"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": [
+    {
+      "actor": "russia-soviet-union",
+      "role": "belligerent"
+    }
+  ]
+}

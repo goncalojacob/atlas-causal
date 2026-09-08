@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "yom-kippur-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": "2026-09-05",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q49100",
+  "sitelinks": {
+    "count": 88,
+    "on": "2026-09-05"
+  },
+  "wikipedia": {
+    "en": "Yom Kippur War",
+    "pt": "Guerra do Yom Kippur"
+  },
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Yom Kippur War\", revision 1373227342"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Guerra do Yom Kippur\", revision 70958475"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q49100"
+    }
+  ],
+  "title": "Yom Kippur War",
+  "summary": "Egypt and Syria attacked across the Suez Canal and into the Golan on 6 October 1973, on the day of Yom Kippur, to recover the territory Israel had held since 1967. The initial success was reversed within a fortnight and the war ended with Israeli forces across the canal, but the political result belonged to Egypt: the fact of the crossing made the negotiation possible that ended at Camp David. What the war did to the rest of the world it did through oil. The Arab producers cut output and embargoed the states that had supplied Israel, and the price of crude quadrupled between October and January — including for Portugal, which imported all of it and was a year away from a revolution.",
+  "when": {
+    "start": 1973,
+    "end": 1973,
+    "date": "1973-10-06",
+    "endDate": "1973-10-26"
+  },
+  "place": null,
+  "region": "africa",
+  "actors": [
+    {
+      "actor": "israel",
+      "role": "belligerent"
+    },
+    {
+      "actor": "egypt",
+      "role": "belligerent"
+    },
+    {
+      "actor": "syria",
+      "role": "belligerent"
+    }
+  ]
+}

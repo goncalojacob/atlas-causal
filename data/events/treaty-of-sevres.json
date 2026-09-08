@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "treaty-of-sevres",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": "2026-09-05",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q182515",
+  "sitelinks": {
+    "count": 63,
+    "on": "2026-09-05"
+  },
+  "wikipedia": {
+    "en": "Treaty of Sèvres",
+    "pt": "Tratado de Sèvres"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Sèvres\", revision 1369307123"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Tratado de Sèvres\", revision 66919817"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q182515"
+    }
+  ],
+  "title": "Treaty of Sèvres",
+  "summary": "Signed at Sèvres on 10 August 1920, the treaty would have dismembered what was left of the Ottoman Empire: Greek administration in Smyrna and eastern Thrace, French and Italian zones in Anatolia, an independent Armenia, an autonomous Kurdistan, the Straits under international control and Ottoman finances under Allied supervision. The sultan's government signed it; it was never ratified and never applied. Its importance is entirely in what it provoked — it is the document the Turkish national movement organised itself against, and the settlement it was replaced by three years later was drawn by the side that had rejected it.",
+  "when": {
+    "start": 1920,
+    "end": 1920,
+    "date": "1920-08-10"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": [
+    {
+      "actor": "turkey-ottoman-empire",
+      "role": "signatory"
+    },
+    {
+      "actor": "united-kingdom",
+      "role": "signatory"
+    },
+    {
+      "actor": "france",
+      "role": "signatory"
+    },
+    {
+      "actor": "italy-sardinia",
+      "role": "signatory"
+    },
+    {
+      "actor": "greece",
+      "role": "signatory"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "the-holocaust",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": "2026-09-05",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q2763",
+  "sitelinks": {
+    "count": 173,
+    "on": "2026-09-05"
+  },
+  "wikipedia": {
+    "en": "The Holocaust",
+    "pt": "Holocausto"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"The Holocaust\", revision 1373403276"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Holocausto\", revision 72716958"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q2763"
+    }
+  ],
+  "title": "The Holocaust",
+  "summary": "Nazi Germany and its collaborators murdered about six million European Jews, some two thirds of the Jewish population of the continent: from 1941 by mass shootings behind the eastern front, and from 1942 in the gas chambers of Chełmno, Bełżec, Sobibór, Treblinka, Majdanek and Auschwitz-Birkenau. Romani people, Soviet prisoners of war, disabled people and political prisoners were killed in the same system. The record's interval opens in 1933 because that is when the persecution began, with exclusion, expropriation and emigration; the extermination is a decision of the war years. It is in the atlas as the event against which the post-war law of human rights was written.",
+  "when": {
+    "start": 1933,
+    "end": 1945
+  },
+  "place": null,
+  "region": "europe",
+  "actors": [
+    {
+      "actor": "germany-prussia",
+      "role": "perpetrator"
+    }
+  ]
+}

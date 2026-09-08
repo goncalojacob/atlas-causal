@@ -1,0 +1,1452 @@
+{
+  "citations": [
+    {
+      "dissent": false,
+      "id": "democratic-leftwing-republican-party",
+      "kind": "actor",
+      "locator": "\"Democratic Leftwing Republican Party\", revision 1254932259"
+    },
+    {
+      "dissent": false,
+      "id": "ecologist-party-the-greens",
+      "kind": "actor",
+      "locator": "\"Ecologist Party \"The Greens\"\", revision 1351442110"
+    },
+    {
+      "dissent": false,
+      "id": "evolutionist-party",
+      "kind": "actor",
+      "locator": "\"Evolutionist Party\", revision 1292285375"
+    },
+    {
+      "dissent": false,
+      "id": "hamas",
+      "kind": "actor",
+      "locator": "\"Gaza war\", revision 1372809003"
+    },
+    {
+      "dissent": false,
+      "id": "liberal-initiative",
+      "kind": "actor",
+      "locator": "\"Liberal Initiative\", revision 1371115608"
+    },
+    {
+      "dissent": false,
+      "id": "liberal-regenerator-party",
+      "kind": "actor",
+      "locator": "\"Liberal Regenerator Party\", revision 1371473198"
+    },
+    {
+      "dissent": false,
+      "id": "national-republican-party",
+      "kind": "actor",
+      "locator": "\"National Republican Party (Portugal)\", revision 1254903555"
+    },
+    {
+      "dissent": false,
+      "id": "nationalist-republican-party",
+      "kind": "actor",
+      "locator": "\"Nationalist Republican Party (Portugal)\", revision 1346340035"
+    },
+    {
+      "dissent": false,
+      "id": "people-animals-nature",
+      "kind": "actor",
+      "locator": "\"People Animals Nature\", revision 1371114057"
+    },
+    {
+      "dissent": false,
+      "id": "people-s-democratic-union",
+      "kind": "actor",
+      "locator": "\"Popular Democratic Union (Portugal)\", revision 1352555139"
+    },
+    {
+      "dissent": false,
+      "id": "people-s-monarchist-party",
+      "kind": "actor",
+      "locator": "\"People's Monarchist Party (Portugal)\", revision 1370597330"
+    },
+    {
+      "dissent": false,
+      "id": "portuguese-democratic-movement",
+      "kind": "actor",
+      "locator": "\"Portuguese Democratic Movement\", revision 1352557501"
+    },
+    {
+      "dissent": false,
+      "id": "reconstitution-party",
+      "kind": "actor",
+      "locator": "\"Reconstitution Party\", revision 1282917164"
+    },
+    {
+      "dissent": false,
+      "id": "redes-energeticas-nacionais",
+      "kind": "actor",
+      "locator": "\"Redes Energéticas Nacionais\", revision 1359680480"
+    },
+    {
+      "dissent": false,
+      "id": "republican-liberal-party",
+      "kind": "actor",
+      "locator": "\"Republican Liberal Party (Portugal)\", revision 1282916904"
+    },
+    {
+      "dissent": false,
+      "id": "revolutionary-socialist-party",
+      "kind": "actor",
+      "locator": "\"Revolutionary Socialist Party (Portugal)\", revision 1352992980"
+    },
+    {
+      "dissent": false,
+      "id": "wagner-group",
+      "kind": "actor",
+      "locator": "\"Wagner Group rebellion\", revision 1372812761"
+    },
+    {
+      "dissent": false,
+      "id": "2024-madeiran-regional-election--2025-madeiran-regional-election--caused",
+      "kind": "edge",
+      "locator": "\"2025 Madeiran regional election\", revision 1363880650"
+    },
+    {
+      "dissent": false,
+      "id": "algerian-war--angola-war-begins-1961--precondition-of",
+      "kind": "edge",
+      "locator": "\"Algerian War\", revision 1373081356"
+    },
+    {
+      "dissent": false,
+      "id": "assassination-of-archduke-franz-ferdinand--world-war-i--caused",
+      "kind": "edge",
+      "locator": "\"Assassination of Archduke Franz Ferdinand\", revision 1367945761"
+    },
+    {
+      "dissent": false,
+      "id": "assassination-of-archduke-franz-ferdinand--world-war-i--caused",
+      "kind": "edge",
+      "locator": "\"World War I\", revision 1372979664"
+    },
+    {
+      "dissent": false,
+      "id": "boxer-rebellion--xinhai-revolution--precondition-of",
+      "kind": "edge",
+      "locator": "\"1911 Revolution\", revision 1373070054"
+    },
+    {
+      "dissent": false,
+      "id": "boxer-rebellion--xinhai-revolution--precondition-of",
+      "kind": "edge",
+      "locator": "\"Boxer Rebellion\", revision 1372943833"
+    },
+    {
+      "dissent": false,
+      "id": "charter-of-the-united-nations--international-covenant-on-civil-and-political-rights--precondition-of",
+      "kind": "edge",
+      "locator": "\"Charter of the United Nations\", revision 1365430628"
+    },
+    {
+      "dissent": false,
+      "id": "charter-of-the-united-nations--international-covenant-on-civil-and-political-rights--precondition-of",
+      "kind": "edge",
+      "locator": "\"International Covenant on Civil and Political Rights\", revision 1371450720"
+    },
+    {
+      "dissent": false,
+      "id": "charter-of-the-united-nations--un-admission-1955--precondition-of",
+      "kind": "edge",
+      "locator": "\"Charter of the United Nations\", revision 1365430628"
+    },
+    {
+      "dissent": false,
+      "id": "chinese-civil-war--korean-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Chinese Civil War\", revision 1372330605"
+    },
+    {
+      "dissent": false,
+      "id": "chinese-civil-war--korean-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Korean War\", revision 1371767674"
+    },
+    {
+      "dissent": false,
+      "id": "covid-19-pandemic--covid-19-pandemic-in-europe--caused",
+      "kind": "edge",
+      "locator": "\"COVID-19 pandemic\", revision 1373210817"
+    },
+    {
+      "dissent": false,
+      "id": "covid-19-pandemic-in-europe--covid-state-of-emergency-2020--caused",
+      "kind": "edge",
+      "locator": "\"COVID-19 pandemic in Europe\", revision 1372462868"
+    },
+    {
+      "dissent": false,
+      "id": "crisis-portugal--2011-portuguese-legislative-election--caused",
+      "kind": "edge",
+      "locator": "\"2010–2014 Portuguese financial crisis\", revision 1372626457"
+    },
+    {
+      "dissent": false,
+      "id": "crisis-portugal--2011-portuguese-legislative-election--caused",
+      "kind": "edge",
+      "locator": "\"2011 Portuguese legislative election\", revision 1372702329"
+    },
+    {
+      "dissent": false,
+      "id": "crisis-portugal--troika-bailout-2011--caused",
+      "kind": "edge",
+      "locator": "\"2010–2014 Portuguese financial crisis\", revision 1372626457"
+    },
+    {
+      "dissent": false,
+      "id": "cuban-revolution--angola-independence-1975--precondition-of",
+      "kind": "edge",
+      "locator": "\"Cuban Revolution\", revision 1373305240"
+    },
+    {
+      "dissent": false,
+      "id": "eastern-front--potsdam-conference--precondition-of",
+      "kind": "edge",
+      "locator": "\"Eastern Front (World War II)\", revision 1373107377"
+    },
+    {
+      "dissent": false,
+      "id": "eastern-front--potsdam-conference--precondition-of",
+      "kind": "edge",
+      "locator": "\"Potsdam Conference\", revision 1371936780"
+    },
+    {
+      "dissent": false,
+      "id": "euro-adoption-1999--crisis-portugal--precondition-of",
+      "kind": "edge",
+      "locator": "\"2010–2014 Portuguese financial crisis\", revision 1372626457"
+    },
+    {
+      "dissent": false,
+      "id": "euromaidan--russo-ukrainian-war--caused",
+      "kind": "edge",
+      "locator": "\"Euromaidan\", revision 1372581234"
+    },
+    {
+      "dissent": false,
+      "id": "euromaidan--russo-ukrainian-war--caused",
+      "kind": "edge",
+      "locator": "\"Russo-Ukrainian war\", revision 1372896482"
+    },
+    {
+      "dissent": false,
+      "id": "february-revolution--october-revolution--enabled",
+      "kind": "edge",
+      "locator": "\"February Revolution\", revision 1370618162"
+    },
+    {
+      "dissent": false,
+      "id": "february-revolution--october-revolution--enabled",
+      "kind": "edge",
+      "locator": "\"October Revolution\", revision 1370630358"
+    },
+    {
+      "dissent": false,
+      "id": "first-indochina-war--algerian-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Algerian War\", revision 1373081356"
+    },
+    {
+      "dissent": false,
+      "id": "first-indochina-war--algerian-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"First Indochina War\", revision 1373236226"
+    },
+    {
+      "dissent": false,
+      "id": "first-indochina-war--vietnam-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"First Indochina War\", revision 1373236226"
+    },
+    {
+      "dissent": false,
+      "id": "first-indochina-war--vietnam-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Vietnam War\", revision 1373025356"
+    },
+    {
+      "dissent": false,
+      "id": "full-scale-russo-ukrainian-war--bucha-massacre--caused",
+      "kind": "edge",
+      "locator": "\"Bucha massacre\", revision 1370596341"
+    },
+    {
+      "dissent": false,
+      "id": "full-scale-russo-ukrainian-war--bucha-massacre--caused",
+      "kind": "edge",
+      "locator": "\"Russo-Ukrainian war (2022–present)\", revision 1373153668"
+    },
+    {
+      "dissent": false,
+      "id": "full-scale-russo-ukrainian-war--wagner-group-rebellion--caused",
+      "kind": "edge",
+      "locator": "\"Russo-Ukrainian war (2022–present)\", revision 1373153668"
+    },
+    {
+      "dissent": false,
+      "id": "full-scale-russo-ukrainian-war--wagner-group-rebellion--caused",
+      "kind": "edge",
+      "locator": "\"Wagner Group rebellion\", revision 1372812761"
+    },
+    {
+      "dissent": false,
+      "id": "gaza-war--gaza-genocide--caused",
+      "kind": "edge",
+      "locator": "\"Gaza genocide\", revision 1371072421"
+    },
+    {
+      "dissent": false,
+      "id": "gaza-war--gaza-genocide--caused",
+      "kind": "edge",
+      "locator": "\"Gaza war\", revision 1372809003"
+    },
+    {
+      "dissent": true,
+      "id": "gaza-war--gaza-genocide--caused",
+      "kind": "edge",
+      "locator": "\"Gaza genocide\", revision 1371072421"
+    },
+    {
+      "dissent": false,
+      "id": "gaza-war--twelve-day-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Gaza war\", revision 1372809003"
+    },
+    {
+      "dissent": false,
+      "id": "gaza-war--twelve-day-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Twelve-Day War\", revision 1370751931"
+    },
+    {
+      "dissent": false,
+      "id": "great-depression--salazar-president-of-council-1932--enabled",
+      "kind": "edge",
+      "locator": "\"Great Depression\", revision 1371653684"
+    },
+    {
+      "dissent": false,
+      "id": "gulf-war--iraq-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Gulf War\", revision 1373369657"
+    },
+    {
+      "dissent": false,
+      "id": "gulf-war--iraq-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Iraq War\", revision 1373215695"
+    },
+    {
+      "dissent": false,
+      "id": "indo-pakistani-war-of-1965--bangladesh-liberation-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Bangladesh Liberation War\", revision 1370362676"
+    },
+    {
+      "dissent": false,
+      "id": "indo-pakistani-war-of-1965--bangladesh-liberation-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"India–Pakistan war of 1965\", revision 1371230624"
+    },
+    {
+      "dissent": false,
+      "id": "iranian-revolution--2025-2026-iranian-protests--precondition-of",
+      "kind": "edge",
+      "locator": "\"2025–2026 Iranian protests\", revision 1373363187"
+    },
+    {
+      "dissent": false,
+      "id": "iranian-revolution--2025-2026-iranian-protests--precondition-of",
+      "kind": "edge",
+      "locator": "\"Iranian Revolution\", revision 1373278840"
+    },
+    {
+      "dissent": false,
+      "id": "iranian-revolution--imf-agreement-1983--precondition-of",
+      "kind": "edge",
+      "locator": "\"Iranian Revolution\", revision 1373278840"
+    },
+    {
+      "dissent": false,
+      "id": "katyn-massacre--warsaw-uprising--precondition-of",
+      "kind": "edge",
+      "locator": "\"Katyn massacre\", revision 1368830884"
+    },
+    {
+      "dissent": false,
+      "id": "katyn-massacre--warsaw-uprising--precondition-of",
+      "kind": "edge",
+      "locator": "\"Warsaw Uprising\", revision 1372481662"
+    },
+    {
+      "dissent": false,
+      "id": "lebanese-civil-war--2006-lebanon-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"2006 Lebanon War\", revision 1373390187"
+    },
+    {
+      "dissent": false,
+      "id": "lebanese-civil-war--2006-lebanon-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Lebanese Civil War\", revision 1370626682"
+    },
+    {
+      "dissent": false,
+      "id": "maastricht-treaty--euro-adoption-1999--precondition-of",
+      "kind": "edge",
+      "locator": "\"Maastricht Treaty\", revision 1360900516"
+    },
+    {
+      "dissent": false,
+      "id": "molotov-ribbentrop-pact--world-war-ii--enabled",
+      "kind": "edge",
+      "locator": "\"Molotov–Ribbentrop Pact\", revision 1371767482"
+    },
+    {
+      "dissent": false,
+      "id": "molotov-ribbentrop-pact--world-war-ii--enabled",
+      "kind": "edge",
+      "locator": "\"World War II\", revision 1372726772"
+    },
+    {
+      "dissent": false,
+      "id": "munich-agreement--molotov-ribbentrop-pact--enabled",
+      "kind": "edge",
+      "locator": "\"Molotov–Ribbentrop Pact\", revision 1371767482"
+    },
+    {
+      "dissent": false,
+      "id": "munich-agreement--molotov-ribbentrop-pact--enabled",
+      "kind": "edge",
+      "locator": "\"Munich Agreement\", revision 1372429724"
+    },
+    {
+      "dissent": false,
+      "id": "october-revolution--russian-civil-war--caused",
+      "kind": "edge",
+      "locator": "\"October Revolution\", revision 1370630358"
+    },
+    {
+      "dissent": false,
+      "id": "october-revolution--russian-civil-war--caused",
+      "kind": "edge",
+      "locator": "\"Russian Civil War\", revision 1372728974"
+    },
+    {
+      "dissent": false,
+      "id": "october-revolution--treaty-of-brest-litovsk--caused",
+      "kind": "edge",
+      "locator": "\"October Revolution\", revision 1370630358"
+    },
+    {
+      "dissent": false,
+      "id": "october-revolution--treaty-of-brest-litovsk--caused",
+      "kind": "edge",
+      "locator": "\"Treaty of Brest-Litovsk\", revision 1368334684"
+    },
+    {
+      "dissent": false,
+      "id": "orange-revolution--euromaidan--precondition-of",
+      "kind": "edge",
+      "locator": "\"Euromaidan\", revision 1372581234"
+    },
+    {
+      "dissent": false,
+      "id": "orange-revolution--euromaidan--precondition-of",
+      "kind": "edge",
+      "locator": "\"Orange Revolution\", revision 1372581321"
+    },
+    {
+      "dissent": false,
+      "id": "paris-peace-conference--treaty-of-trianon--caused",
+      "kind": "edge",
+      "locator": "\"Paris Peace Conference (1919–1920)\", revision 1371739974"
+    },
+    {
+      "dissent": false,
+      "id": "paris-peace-conference--treaty-of-trianon--caused",
+      "kind": "edge",
+      "locator": "\"Treaty of Trianon\", revision 1372701139"
+    },
+    {
+      "dissent": false,
+      "id": "paris-peace-conference--treaty-of-versailles--caused",
+      "kind": "edge",
+      "locator": "\"Paris Peace Conference (1919–1920)\", revision 1371739974"
+    },
+    {
+      "dissent": false,
+      "id": "paris-peace-conference--treaty-of-versailles--caused",
+      "kind": "edge",
+      "locator": "\"Treaty of Versailles\", revision 1371877530"
+    },
+    {
+      "dissent": false,
+      "id": "portugal-backs-franco-1936--spanish-civil-war--reacted-to",
+      "kind": "edge",
+      "locator": "\"Spanish Civil War\", revision 1373335825"
+    },
+    {
+      "dissent": false,
+      "id": "potsdam-conference--nato-founding-1949--precondition-of",
+      "kind": "edge",
+      "locator": "\"Potsdam Conference\", revision 1371936780"
+    },
+    {
+      "dissent": false,
+      "id": "russian-revolution-of-1905--february-revolution--precondition-of",
+      "kind": "edge",
+      "locator": "\"February Revolution\", revision 1370618162"
+    },
+    {
+      "dissent": false,
+      "id": "russian-revolution-of-1905--february-revolution--precondition-of",
+      "kind": "edge",
+      "locator": "\"Russian Revolution of 1905\", revision 1371938345"
+    },
+    {
+      "dissent": false,
+      "id": "russian-revolution-of-1905--treaty-of-portsmouth--caused",
+      "kind": "edge",
+      "locator": "\"Russian Revolution of 1905\", revision 1371938345"
+    },
+    {
+      "dissent": false,
+      "id": "russian-revolution-of-1905--treaty-of-portsmouth--caused",
+      "kind": "edge",
+      "locator": "\"Treaty of Portsmouth\", revision 1369694651"
+    },
+    {
+      "dissent": false,
+      "id": "russo-georgian-war--russo-ukrainian-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Russo-Georgian War\", revision 1371976175"
+    },
+    {
+      "dissent": false,
+      "id": "russo-georgian-war--russo-ukrainian-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Russo-Ukrainian war\", revision 1372896482"
+    },
+    {
+      "dissent": false,
+      "id": "russo-ukrainian-war--full-scale-russo-ukrainian-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Russo-Ukrainian war (2022–present)\", revision 1373153668"
+    },
+    {
+      "dissent": false,
+      "id": "russo-ukrainian-war--full-scale-russo-ukrainian-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Russo-Ukrainian war\", revision 1372896482"
+    },
+    {
+      "dissent": false,
+      "id": "schengen-agreement--schengen-in-force-1995--precondition-of",
+      "kind": "edge",
+      "locator": "\"Schengen Agreement\", revision 1370029483"
+    },
+    {
+      "dissent": false,
+      "id": "second-boer-war--treaty-of-windsor--caused",
+      "kind": "edge",
+      "locator": "\"Second Boer War\", revision 1372994797"
+    },
+    {
+      "dissent": false,
+      "id": "second-sino-japanese-war--chinese-civil-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Chinese Civil War\", revision 1372330605"
+    },
+    {
+      "dissent": false,
+      "id": "second-sino-japanese-war--chinese-civil-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Second Sino-Japanese War\", revision 1372437913"
+    },
+    {
+      "dissent": false,
+      "id": "spanish-civil-war--iberian-pact--caused",
+      "kind": "edge",
+      "locator": "\"Spanish Civil War\", revision 1373335825"
+    },
+    {
+      "dissent": false,
+      "id": "the-holocaust--european-convention-on-human-rights--reacted-to",
+      "kind": "edge",
+      "locator": "\"European Convention on Human Rights\", revision 1366403378"
+    },
+    {
+      "dissent": false,
+      "id": "the-holocaust--european-convention-on-human-rights--reacted-to",
+      "kind": "edge",
+      "locator": "\"The Holocaust\", revision 1373403276"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-brest-litovsk--battle-of-the-lys-1918--enabled",
+      "kind": "edge",
+      "locator": "\"Treaty of Brest-Litovsk\", revision 1368334684"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-rome--efta-accession-1960--caused",
+      "kind": "edge",
+      "locator": "\"Treaty of Rome\", revision 1311520265"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-rome--maastricht-treaty--precondition-of",
+      "kind": "edge",
+      "locator": "\"Maastricht Treaty\", revision 1360900516"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-rome--maastricht-treaty--precondition-of",
+      "kind": "edge",
+      "locator": "\"Treaty of Rome\", revision 1311520265"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-sevres--turkish-war-of-independence--caused",
+      "kind": "edge",
+      "locator": "\"Treaty of Sèvres\", revision 1369307123"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-sevres--turkish-war-of-independence--caused",
+      "kind": "edge",
+      "locator": "\"Turkish War of Independence\", revision 1372145108"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-versailles--beer-hall-putsch--precondition-of",
+      "kind": "edge",
+      "locator": "\"Beer Hall Putsch\", revision 1370735026"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-versailles--beer-hall-putsch--precondition-of",
+      "kind": "edge",
+      "locator": "\"Treaty of Versailles\", revision 1371877530"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-versailles--world-war-ii--precondition-of",
+      "kind": "edge",
+      "locator": "\"Treaty of Versailles\", revision 1371877530"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-versailles--world-war-ii--precondition-of",
+      "kind": "edge",
+      "locator": "\"World War II\", revision 1372726772"
+    },
+    {
+      "dissent": true,
+      "id": "treaty-of-versailles--world-war-ii--precondition-of",
+      "kind": "edge",
+      "locator": "\"Treaty of Versailles\", revision 1371877530"
+    },
+    {
+      "dissent": false,
+      "id": "turkish-war-of-independence--treaty-of-lausanne--caused",
+      "kind": "edge",
+      "locator": "\"Treaty of Lausanne\", revision 1370957561"
+    },
+    {
+      "dissent": false,
+      "id": "turkish-war-of-independence--treaty-of-lausanne--caused",
+      "kind": "edge",
+      "locator": "\"Turkish War of Independence\", revision 1372145108"
+    },
+    {
+      "dissent": false,
+      "id": "wall-street-crash-of-1929--great-depression--caused",
+      "kind": "edge",
+      "locator": "\"Great Depression\", revision 1371653684"
+    },
+    {
+      "dissent": false,
+      "id": "wall-street-crash-of-1929--great-depression--caused",
+      "kind": "edge",
+      "locator": "\"Wall Street crash of 1929\", revision 1364914482"
+    },
+    {
+      "dissent": true,
+      "id": "wall-street-crash-of-1929--great-depression--caused",
+      "kind": "edge",
+      "locator": "\"Great Depression\", revision 1371653684"
+    },
+    {
+      "dissent": false,
+      "id": "world-war-i--armenian-genocide--enabled",
+      "kind": "edge",
+      "locator": "\"Armenian genocide\", revision 1367030542"
+    },
+    {
+      "dissent": false,
+      "id": "world-war-i--armenian-genocide--enabled",
+      "kind": "edge",
+      "locator": "\"World War I\", revision 1372979664"
+    },
+    {
+      "dissent": false,
+      "id": "world-war-i--germany-declares-war-1916--precondition-of",
+      "kind": "edge",
+      "locator": "\"World War I\", revision 1372979664"
+    },
+    {
+      "dissent": false,
+      "id": "world-war-ii--azores-agreement-1943--precondition-of",
+      "kind": "edge",
+      "locator": "\"World War II\", revision 1372726772"
+    },
+    {
+      "dissent": false,
+      "id": "yom-kippur-war--imf-agreement-1978--precondition-of",
+      "kind": "edge",
+      "locator": "\"Yom Kippur War\", revision 1373227342"
+    },
+    {
+      "dissent": false,
+      "id": "young-turk-revolution-of-1908--armenian-genocide--precondition-of",
+      "kind": "edge",
+      "locator": "\"Armenian genocide\", revision 1367030542"
+    },
+    {
+      "dissent": false,
+      "id": "young-turk-revolution-of-1908--armenian-genocide--precondition-of",
+      "kind": "edge",
+      "locator": "\"Young Turk Revolution\", revision 1372902192"
+    },
+    {
+      "dissent": false,
+      "id": "1908-portuguese-legislative-election",
+      "kind": "event",
+      "locator": "\"1908 Portuguese legislative election\", revision 1277160529"
+    },
+    {
+      "dissent": false,
+      "id": "1911-portuguese-constituent-national-assembly-election",
+      "kind": "event",
+      "locator": "\"1911 Portuguese National Constituent Assembly election\", revision 1366576929"
+    },
+    {
+      "dissent": false,
+      "id": "1911-portuguese-presidential-election",
+      "kind": "event",
+      "locator": "\"1911 Portuguese presidential election\", revision 1276453192"
+    },
+    {
+      "dissent": false,
+      "id": "1915-portuguese-legislative-election",
+      "kind": "event",
+      "locator": "\"1915 Portuguese legislative election\", revision 1304350333"
+    },
+    {
+      "dissent": false,
+      "id": "1921-portuguese-legislative-election",
+      "kind": "event",
+      "locator": "\"1921 Portuguese legislative election\", revision 1286452947"
+    },
+    {
+      "dissent": false,
+      "id": "1925-portuguese-legislative-election",
+      "kind": "event",
+      "locator": "\"1925 Portuguese legislative election\", revision 1309774511"
+    },
+    {
+      "dissent": false,
+      "id": "1928-portuguese-presidential-election",
+      "kind": "event",
+      "locator": "\"1928 Portuguese presidential election\", revision 1348300118"
+    },
+    {
+      "dissent": false,
+      "id": "1945-portuguese-legislative-election",
+      "kind": "event",
+      "locator": "\"1945 Portuguese legislative election\", revision 1302540015"
+    },
+    {
+      "dissent": false,
+      "id": "1949-portuguese-presidential-election",
+      "kind": "event",
+      "locator": "\"1949 Portuguese presidential election\", revision 1323415397"
+    },
+    {
+      "dissent": false,
+      "id": "1957-guinean-territorial-assembly-election",
+      "kind": "event",
+      "locator": "\"1957 Guinean Territorial Assembly election\", revision 1367762808"
+    },
+    {
+      "dissent": false,
+      "id": "1965-portuguese-presidential-election",
+      "kind": "event",
+      "locator": "\"1965 Portuguese presidential election\", revision 1334103559"
+    },
+    {
+      "dissent": false,
+      "id": "1969-portuguese-legislative-election",
+      "kind": "event",
+      "locator": "\"1969 Portuguese legislative election\", revision 1352375747"
+    },
+    {
+      "dissent": false,
+      "id": "1972-portuguese-presidential-election",
+      "kind": "event",
+      "locator": "\"1972 Portuguese presidential election\", revision 1305366739"
+    },
+    {
+      "dissent": false,
+      "id": "1973-portuguese-legislative-election",
+      "kind": "event",
+      "locator": "\"1973 Portuguese legislative election\", revision 1303988821"
+    },
+    {
+      "dissent": false,
+      "id": "1975-sao-tomean-legislative-election",
+      "kind": "event",
+      "locator": "\"1975 São Toméan parliamentary election\", revision 1367760170"
+    },
+    {
+      "dissent": false,
+      "id": "1976-azorean-regional-election",
+      "kind": "event",
+      "locator": "\"1976 Azorean regional election\", revision 1360996913"
+    },
+    {
+      "dissent": false,
+      "id": "1976-portuguese-local-elections",
+      "kind": "event",
+      "locator": "\"1976 Portuguese local elections\", revision 1368844806"
+    },
+    {
+      "dissent": false,
+      "id": "1977-mozambican-general-election",
+      "kind": "event",
+      "locator": "\"1977 Mozambican general election\", revision 1364484209"
+    },
+    {
+      "dissent": false,
+      "id": "1979-portuguese-legislative-election",
+      "kind": "event",
+      "locator": "\"1979 Portuguese legislative election\", revision 1371827641"
+    },
+    {
+      "dissent": false,
+      "id": "1979-portuguese-local-elections",
+      "kind": "event",
+      "locator": "\"1979 Portuguese local elections\", revision 1355707462"
+    },
+    {
+      "dissent": false,
+      "id": "1980-portuguese-legislative-election",
+      "kind": "event",
+      "locator": "\"1980 Portuguese legislative election\", revision 1372482157"
+    },
+    {
+      "dissent": false,
+      "id": "1980-portuguese-presidential-election",
+      "kind": "event",
+      "locator": "\"1980 Portuguese presidential election\", revision 1371810635"
+    },
+    {
+      "dissent": false,
+      "id": "1983-portuguese-legislative-election",
+      "kind": "event",
+      "locator": "\"1983 Portuguese legislative election\", revision 1372482000"
+    },
+    {
+      "dissent": false,
+      "id": "1985-portuguese-legislative-election",
+      "kind": "event",
+      "locator": "\"1985 Portuguese legislative election\", revision 1372481943"
+    },
+    {
+      "dissent": false,
+      "id": "1987-european-parliament-election-in-portugal",
+      "kind": "event",
+      "locator": "\"1987 European Parliament election in Portugal\", revision 1355729527"
+    },
+    {
+      "dissent": false,
+      "id": "1991-portuguese-legislative-election",
+      "kind": "event",
+      "locator": "\"1991 Portuguese legislative election\", revision 1372483511"
+    },
+    {
+      "dissent": false,
+      "id": "1995-portuguese-legislative-election",
+      "kind": "event",
+      "locator": "\"1995 Portuguese legislative election\", revision 1372483449"
+    },
+    {
+      "dissent": false,
+      "id": "1998-portuguese-abortion-referendum",
+      "kind": "event",
+      "locator": "\"1998 Portuguese abortion referendum\", revision 1356123279"
+    },
+    {
+      "dissent": false,
+      "id": "1999-macanese-chief-executive-election",
+      "kind": "event",
+      "locator": "\"1999 Macanese Chief Executive election\", revision 1291601838"
+    },
+    {
+      "dissent": false,
+      "id": "2001-portuguese-local-elections",
+      "kind": "event",
+      "locator": "\"2001 Portuguese local elections\", revision 1361853776"
+    },
+    {
+      "dissent": false,
+      "id": "2002-portuguese-legislative-election",
+      "kind": "event",
+      "locator": "\"2002 Portuguese legislative election\", revision 1372484114"
+    },
+    {
+      "dissent": false,
+      "id": "2005-portuguese-legislative-election",
+      "kind": "event",
+      "locator": "\"2005 Portuguese legislative election\", revision 1368665672"
+    },
+    {
+      "dissent": false,
+      "id": "2006-lebanon-war",
+      "kind": "event",
+      "locator": "\"2006 Lebanon War\", revision 1373390187"
+    },
+    {
+      "dissent": false,
+      "id": "2007-portuguese-abortion-referendum",
+      "kind": "event",
+      "locator": "\"2007 Portuguese abortion referendum\", revision 1372123133"
+    },
+    {
+      "dissent": false,
+      "id": "2009-portuguese-legislative-election",
+      "kind": "event",
+      "locator": "\"2009 Portuguese legislative election\", revision 1369111843"
+    },
+    {
+      "dissent": false,
+      "id": "2011-portuguese-legislative-election",
+      "kind": "event",
+      "locator": "\"2011 Portuguese legislative election\", revision 1372702329"
+    },
+    {
+      "dissent": false,
+      "id": "2011-portuguese-socialist-party-leadership-election",
+      "kind": "event",
+      "locator": "\"July 2011 Portuguese Socialist Party leadership election\", revision 1360451493"
+    },
+    {
+      "dissent": false,
+      "id": "2014-portuguese-socialist-party-prime-ministerial-primary",
+      "kind": "event",
+      "locator": "\"2014 Portuguese Socialist Party prime ministerial primary\", revision 1360457304"
+    },
+    {
+      "dissent": false,
+      "id": "2022-portuguese-social-democratic-party-leadership-election",
+      "kind": "event",
+      "locator": "\"2021 Portuguese Social Democratic Party leadership election\", revision 1356491687"
+    },
+    {
+      "dissent": false,
+      "id": "2022-portuguese-social-democratic-party-leadership-election-q111182017",
+      "kind": "event",
+      "locator": "\"2022 Portuguese Social Democratic Party leadership election\", revision 1356984264"
+    },
+    {
+      "dissent": false,
+      "id": "2023-madeiran-regional-election",
+      "kind": "event",
+      "locator": "\"2023 Madeiran regional election\", revision 1363880021"
+    },
+    {
+      "dissent": false,
+      "id": "2024-madeiran-regional-election",
+      "kind": "event",
+      "locator": "\"2024 Madeiran regional election\", revision 1363880288"
+    },
+    {
+      "dissent": false,
+      "id": "2025-2026-iranian-protests",
+      "kind": "event",
+      "locator": "\"2025–2026 Iranian protests\", revision 1373363187"
+    },
+    {
+      "dissent": false,
+      "id": "2025-madeiran-regional-election",
+      "kind": "event",
+      "locator": "\"2025 Madeiran regional election\", revision 1363880650"
+    },
+    {
+      "dissent": false,
+      "id": "algerian-war",
+      "kind": "event",
+      "locator": "\"Algerian War\", revision 1373081356"
+    },
+    {
+      "dissent": false,
+      "id": "armenian-genocide",
+      "kind": "event",
+      "locator": "\"Armenian genocide\", revision 1367030542"
+    },
+    {
+      "dissent": false,
+      "id": "assassination-of-archduke-franz-ferdinand",
+      "kind": "event",
+      "locator": "\"Assassination of Archduke Franz Ferdinand\", revision 1367945761"
+    },
+    {
+      "dissent": false,
+      "id": "bangladesh-liberation-war",
+      "kind": "event",
+      "locator": "\"Bangladesh Liberation War\", revision 1370362676"
+    },
+    {
+      "dissent": false,
+      "id": "batepa-massacre",
+      "kind": "event",
+      "locator": "\"Batepá massacre\", revision 1366289250"
+    },
+    {
+      "dissent": false,
+      "id": "beer-hall-putsch",
+      "kind": "event",
+      "locator": "\"Beer Hall Putsch\", revision 1370735026"
+    },
+    {
+      "dissent": false,
+      "id": "boxer-rebellion",
+      "kind": "event",
+      "locator": "\"Boxer Rebellion\", revision 1372943833"
+    },
+    {
+      "dissent": false,
+      "id": "bucha-massacre",
+      "kind": "event",
+      "locator": "\"Bucha massacre\", revision 1370596341"
+    },
+    {
+      "dissent": false,
+      "id": "charter-of-the-united-nations",
+      "kind": "event",
+      "locator": "\"Charter of the United Nations\", revision 1365430628"
+    },
+    {
+      "dissent": false,
+      "id": "chinese-civil-war",
+      "kind": "event",
+      "locator": "\"Chinese Civil War\", revision 1372330605"
+    },
+    {
+      "dissent": false,
+      "id": "covid-19-pandemic",
+      "kind": "event",
+      "locator": "\"COVID-19 pandemic\", revision 1373210817"
+    },
+    {
+      "dissent": false,
+      "id": "covid-19-pandemic-in-europe",
+      "kind": "event",
+      "locator": "\"COVID-19 pandemic in Europe\", revision 1372462868"
+    },
+    {
+      "dissent": false,
+      "id": "crisis-portugal",
+      "kind": "event",
+      "locator": "\"2010–2014 Portuguese financial crisis\", revision 1372626457"
+    },
+    {
+      "dissent": false,
+      "id": "cuban-revolution",
+      "kind": "event",
+      "locator": "\"Cuban Revolution\", revision 1373305240"
+    },
+    {
+      "dissent": false,
+      "id": "eastern-front",
+      "kind": "event",
+      "locator": "\"Eastern Front (World War II)\", revision 1373107377"
+    },
+    {
+      "dissent": false,
+      "id": "euromaidan",
+      "kind": "event",
+      "locator": "\"Euromaidan\", revision 1372581234"
+    },
+    {
+      "dissent": false,
+      "id": "european-convention-on-human-rights",
+      "kind": "event",
+      "locator": "\"European Convention on Human Rights\", revision 1366403378"
+    },
+    {
+      "dissent": false,
+      "id": "february-revolution",
+      "kind": "event",
+      "locator": "\"February Revolution\", revision 1370618162"
+    },
+    {
+      "dissent": false,
+      "id": "first-indochina-war",
+      "kind": "event",
+      "locator": "\"First Indochina War\", revision 1373236226"
+    },
+    {
+      "dissent": false,
+      "id": "full-scale-russo-ukrainian-war",
+      "kind": "event",
+      "locator": "\"Russo-Ukrainian war (2022–present)\", revision 1373153668"
+    },
+    {
+      "dissent": false,
+      "id": "gaza-genocide",
+      "kind": "event",
+      "locator": "\"Gaza genocide\", revision 1371072421"
+    },
+    {
+      "dissent": false,
+      "id": "gaza-war",
+      "kind": "event",
+      "locator": "\"Gaza war\", revision 1372809003"
+    },
+    {
+      "dissent": false,
+      "id": "great-depression",
+      "kind": "event",
+      "locator": "\"Great Depression\", revision 1371653684"
+    },
+    {
+      "dissent": false,
+      "id": "guinean-constitutional-referendum-1958",
+      "kind": "event",
+      "locator": "\"1958 Guinean constitutional referendum\", revision 1368429741"
+    },
+    {
+      "dissent": false,
+      "id": "gulf-war",
+      "kind": "event",
+      "locator": "\"Gulf War\", revision 1373369657"
+    },
+    {
+      "dissent": false,
+      "id": "iberian-pact",
+      "kind": "event",
+      "locator": "\"Iberian Pact\", revision 1368371149"
+    },
+    {
+      "dissent": false,
+      "id": "indo-pakistani-war-of-1965",
+      "kind": "event",
+      "locator": "\"India–Pakistan war of 1965\", revision 1371230624"
+    },
+    {
+      "dissent": false,
+      "id": "international-covenant-on-civil-and-political-rights",
+      "kind": "event",
+      "locator": "\"International Covenant on Civil and Political Rights\", revision 1371450720"
+    },
+    {
+      "dissent": false,
+      "id": "iranian-revolution",
+      "kind": "event",
+      "locator": "\"Iranian Revolution\", revision 1373278840"
+    },
+    {
+      "dissent": false,
+      "id": "iraq-war",
+      "kind": "event",
+      "locator": "\"Iraq War\", revision 1373215695"
+    },
+    {
+      "dissent": false,
+      "id": "katyn-massacre",
+      "kind": "event",
+      "locator": "\"Katyn massacre\", revision 1368830884"
+    },
+    {
+      "dissent": false,
+      "id": "korean-war",
+      "kind": "event",
+      "locator": "\"Korean War\", revision 1371767674"
+    },
+    {
+      "dissent": false,
+      "id": "lebanese-civil-war",
+      "kind": "event",
+      "locator": "\"Lebanese Civil War\", revision 1370626682"
+    },
+    {
+      "dissent": false,
+      "id": "lisbon-regicide",
+      "kind": "event",
+      "locator": "\"Lisbon Regicide\", revision 1366493733"
+    },
+    {
+      "dissent": false,
+      "id": "maastricht-treaty",
+      "kind": "event",
+      "locator": "\"Maastricht Treaty\", revision 1360900516"
+    },
+    {
+      "dissent": false,
+      "id": "molotov-ribbentrop-pact",
+      "kind": "event",
+      "locator": "\"Molotov–Ribbentrop Pact\", revision 1371767482"
+    },
+    {
+      "dissent": false,
+      "id": "munich-agreement",
+      "kind": "event",
+      "locator": "\"Munich Agreement\", revision 1372429724"
+    },
+    {
+      "dissent": false,
+      "id": "october-revolution",
+      "kind": "event",
+      "locator": "\"October Revolution\", revision 1370630358"
+    },
+    {
+      "dissent": false,
+      "id": "orange-revolution",
+      "kind": "event",
+      "locator": "\"Orange Revolution\", revision 1372581321"
+    },
+    {
+      "dissent": false,
+      "id": "paris-peace-conference",
+      "kind": "event",
+      "locator": "\"Paris Peace Conference (1919–1920)\", revision 1371739974"
+    },
+    {
+      "dissent": false,
+      "id": "portuguese-regionalisation-referendum-1998",
+      "kind": "event",
+      "locator": "\"1998 Portuguese regionalisation referendum\", revision 1361503309"
+    },
+    {
+      "dissent": false,
+      "id": "potsdam-conference",
+      "kind": "event",
+      "locator": "\"Potsdam Conference\", revision 1371936780"
+    },
+    {
+      "dissent": false,
+      "id": "russian-civil-war",
+      "kind": "event",
+      "locator": "\"Russian Civil War\", revision 1372728974"
+    },
+    {
+      "dissent": false,
+      "id": "russian-revolution-of-1905",
+      "kind": "event",
+      "locator": "\"Russian Revolution of 1905\", revision 1371938345"
+    },
+    {
+      "dissent": false,
+      "id": "russo-georgian-war",
+      "kind": "event",
+      "locator": "\"Russo-Georgian War\", revision 1371976175"
+    },
+    {
+      "dissent": false,
+      "id": "russo-ukrainian-war",
+      "kind": "event",
+      "locator": "\"Russo-Ukrainian war\", revision 1372896482"
+    },
+    {
+      "dissent": false,
+      "id": "schengen-agreement",
+      "kind": "event",
+      "locator": "\"Schengen Agreement\", revision 1370029483"
+    },
+    {
+      "dissent": false,
+      "id": "second-boer-war",
+      "kind": "event",
+      "locator": "\"Second Boer War\", revision 1372994797"
+    },
+    {
+      "dissent": false,
+      "id": "second-sino-japanese-war",
+      "kind": "event",
+      "locator": "\"Second Sino-Japanese War\", revision 1372437913"
+    },
+    {
+      "dissent": false,
+      "id": "spanish-civil-war",
+      "kind": "event",
+      "locator": "\"Spanish Civil War\", revision 1373335825"
+    },
+    {
+      "dissent": false,
+      "id": "the-holocaust",
+      "kind": "event",
+      "locator": "\"The Holocaust\", revision 1373403276"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-accession-1985",
+      "kind": "event",
+      "locator": "\"Treaty of Accession 1985\", revision 1287624946"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-brest-litovsk",
+      "kind": "event",
+      "locator": "\"Treaty of Brest-Litovsk\", revision 1368334684"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-friendship-and-cooperation-between-spain-and-portugal",
+      "kind": "event",
+      "locator": "\"Treaty of Friendship and Cooperation between Spain and Portugal\", revision 1223766457"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-lausanne",
+      "kind": "event",
+      "locator": "\"Treaty of Lausanne\", revision 1370957561"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-portsmouth",
+      "kind": "event",
+      "locator": "\"Treaty of Portsmouth\", revision 1369694651"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-rome",
+      "kind": "event",
+      "locator": "\"Treaty of Rome\", revision 1311520265"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-sevres",
+      "kind": "event",
+      "locator": "\"Treaty of Sèvres\", revision 1369307123"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-trianon",
+      "kind": "event",
+      "locator": "\"Treaty of Trianon\", revision 1372701139"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-versailles",
+      "kind": "event",
+      "locator": "\"Treaty of Versailles\", revision 1371877530"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-windsor",
+      "kind": "event",
+      "locator": "\"Treaty of Windsor (1899)\", revision 1370935059"
+    },
+    {
+      "dissent": false,
+      "id": "turkish-war-of-independence",
+      "kind": "event",
+      "locator": "\"Turkish War of Independence\", revision 1372145108"
+    },
+    {
+      "dissent": false,
+      "id": "twelve-day-war",
+      "kind": "event",
+      "locator": "\"Twelve-Day War\", revision 1370751931"
+    },
+    {
+      "dissent": false,
+      "id": "vietnam-war",
+      "kind": "event",
+      "locator": "\"Vietnam War\", revision 1373025356"
+    },
+    {
+      "dissent": false,
+      "id": "wagner-group-rebellion",
+      "kind": "event",
+      "locator": "\"Wagner Group rebellion\", revision 1372812761"
+    },
+    {
+      "dissent": false,
+      "id": "wall-street-crash-of-1929",
+      "kind": "event",
+      "locator": "\"Wall Street crash of 1929\", revision 1364914482"
+    },
+    {
+      "dissent": false,
+      "id": "warsaw-uprising",
+      "kind": "event",
+      "locator": "\"Warsaw Uprising\", revision 1372481662"
+    },
+    {
+      "dissent": false,
+      "id": "world-war-i",
+      "kind": "event",
+      "locator": "\"World War I\", revision 1372979664"
+    },
+    {
+      "dissent": false,
+      "id": "world-war-ii",
+      "kind": "event",
+      "locator": "\"World War II\", revision 1372726772"
+    },
+    {
+      "dissent": false,
+      "id": "yom-kippur-war",
+      "kind": "event",
+      "locator": "\"Yom Kippur War\", revision 1373227342"
+    },
+    {
+      "dissent": false,
+      "id": "young-turk-revolution-of-1908",
+      "kind": "event",
+      "locator": "\"Young Turk Revolution\", revision 1372902192"
+    },
+    {
+      "dissent": false,
+      "id": "people-s-democratic-union--bloco-de-esquerda--succeeded",
+      "kind": "relation",
+      "locator": "\"Popular Democratic Union (Portugal)\", revision 1352555139"
+    },
+    {
+      "dissent": false,
+      "id": "reconstitution-party--nationalist-republican-party--succeeded",
+      "kind": "relation",
+      "locator": "\"Nationalist Republican Party (Portugal)\", revision 1346340035"
+    },
+    {
+      "dissent": false,
+      "id": "republican-liberal-party--nationalist-republican-party--succeeded",
+      "kind": "relation",
+      "locator": "\"Nationalist Republican Party (Portugal)\", revision 1346340035"
+    },
+    {
+      "dissent": false,
+      "id": "joao-franco-liberal-regenerator-party-1901",
+      "kind": "tenure",
+      "locator": "\"Liberal Regenerator Party\", revision 1371473198"
+    },
+    {
+      "dissent": false,
+      "id": "sidonio-pais-national-republican-party-1918",
+      "kind": "tenure",
+      "locator": "\"National Republican Party (Portugal)\", revision 1254903555"
+    }
+  ],
+  "id": "wikipedia-en",
+  "schema": 1
+}

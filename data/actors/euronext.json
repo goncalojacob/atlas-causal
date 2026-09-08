@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "euronext",
+  "kind": "actor",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-08",
+  "revised": "2026-09-08",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-08",
+    "reason": "Retracted in M41b: the pan-European exchange that operates the Lisbon bourse among seven others, spun off from ICE in 2014. The atlas holds nothing about the Lisbon stock exchange at all — not its merger into Euronext in 2002, not the PSI, not a single listing — so there is no Portuguese record for a European exchange to be joined to. It is also the only one of the 42 that is not a Portuguese body."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m41-retracted"
+    ]
+  },
+  "wikidata": "Q842108",
+  "sitelinks": {
+    "count": 47,
+    "on": "2026-09-08"
+  },
+  "wikipedia": {
+    "en": "Euronext",
+    "pt": "Euronext"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q842108"
+    }
+  ],
+  "actorType": "institution",
+  "names": [
+    "Euronext"
+  ],
+  "summary": "Wikidata item Q842108, imported by tools/import/wikidata.mjs. The item's own description reads \"pan-European bourse\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2000,
+    "end": null
+  },
+  "where": null
+}

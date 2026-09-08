@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "algerian-war--angola-war-begins-1961--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "macqueen-1997-decolonization",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Algerian War\", revision 1373081356"
+    }
+  ],
+  "from": "algerian-war",
+  "to": "angola-war-begins-1961",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Algeria is present at both ends of what happened in Angola in 1961. The Portuguese officer corps had spent the late 1950s reading the French literature of guerre révolutionnaire out of Algeria and Indochina, and the doctrine of counter-subversion it applied in the north — resettlement into aldeamentos, psychological action, the primacy of the political over the military — is that literature; the war ministry had begun the courses before the risings. And for the movements, Algeria was the standing demonstration that a European power governing a settler territory as part of itself could be fought. The claim is about doctrine and example on both sides, not that Algeria caused the risings of February and March: those had causes in Angola, in the coffee districts and in the city.",
+  "dispute": null
+}

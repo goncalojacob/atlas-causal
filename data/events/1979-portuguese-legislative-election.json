@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": "2026-09-06",
+  "revised": "2026-09-08",
   "origin": {
     "tool": "wikidata"
   },
@@ -84,6 +84,10 @@
       "actor": "partido-socialista",
       "role": "opposition",
       "note": "lost office"
+    },
+    {
+      "actor": "people-s-monarchist-party",
+      "role": "party"
     }
   ]
 }

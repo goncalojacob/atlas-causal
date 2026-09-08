@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "first-indochina-war--vietnam-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Indochina War\", revision 1373236226"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Vietnam War\", revision 1373025356"
+    }
+  ],
+  "from": "first-indochina-war",
+  "to": "vietnam-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Geneva ended the French war by dividing Vietnam at the seventeenth parallel as a temporary military line, with national elections promised for 1956 that the southern government and the United States then refused to hold. Everything the second war was fought over is in that arrangement: a partition treated as a frontier, a northern state that regarded the country as unfinished, and a southern one whose legitimacy rested on an election that never took place. The American commitment that followed is a further step this edge does not make.",
+  "dispute": null
+}

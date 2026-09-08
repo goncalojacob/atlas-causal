@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "national-republican-party",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-08",
+  "revised": "2026-09-08",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-drafted"
+    ],
+    "note": "Summary drafted in M41b from the two cached leads, which do not say when the party ended; the item leaves the interval open and so does this record. It reaches the atlas through the relation that says Pais led it, and so through his coup of December 1917 and his assassination a year later."
+  },
+  "wikidata": "Q1513692",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-09-08"
+  },
+  "wikipedia": {
+    "en": "National Republican Party (Portugal)",
+    "pt": "Partido Nacional Republicano (Portugal)"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"National Republican Party (Portugal)\", revision 1254903555"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Partido Nacional Republicano (Portugal)\", revision 71995027"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q1513692"
+    }
+  ],
+  "actorType": "institution",
+  "names": [
+    "National Republican Party",
+    "Partido Nacional Republicano",
+    "National Republican Party (Portugal)",
+    "Partido Nacional Republicano (Portugal)"
+  ],
+  "summary": "The National Republican Party was founded in April 1918 around Sidónio Pais, to contest the triple elections he had called for the 28th of that month, and was generally known simply as the Sidonist Party. It had no existence apart from him.",
+  "when": {
+    "start": 1918,
+    "end": null
+  },
+  "where": null
+}

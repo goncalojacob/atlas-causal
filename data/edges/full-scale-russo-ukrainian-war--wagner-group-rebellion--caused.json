@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "full-scale-russo-ukrainian-war--wagner-group-rebellion--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Russo-Ukrainian war (2022–present)\", revision 1373153668"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Wagner Group rebellion\", revision 1372812761"
+    }
+  ],
+  "from": "full-scale-russo-ukrainian-war",
+  "to": "wagner-group-rebellion",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The mutiny of June 2023 came out of a quarrel about the conduct of one war: Wagner had been given the assault on Bakhmut, had recruited tens of thousands of convicts to do it, and Prigozhin spent the spring accusing the Ministry of Defence of starving his men of ammunition. The order to bring private companies under ministry contracts, which would have ended Wagner as a separate army, is what he moved against. Without the war there is no force of that size under a private command and no quarrel over its supply.",
+  "dispute": null
+}

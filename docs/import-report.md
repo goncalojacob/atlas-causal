@@ -1,262 +1,286 @@
-import: 25 item(s) this batch, 207 left after it, 40 call(s) spent
-created event 1890-portuguese-legislative-election from Q7232736
-created event 1892-portuguese-legislative-election from Q7232737
-created event 1894-portuguese-legislative-election from Q7232738
-created event 1895-portuguese-legislative-election from Q7232739
-created event 1897-portuguese-legislative-election from Q7232740
-created event 1899-portuguese-legislative-election from Q7232743
-created event 1900-portuguese-legislative-election from Q7232742
-created event 1901-portuguese-legislative-election from Q7232744
-created event 1904-portuguese-legislative-election from Q7232745
-created event 1905-portuguese-legislative-election from Q7232746
-created event april-1906-portuguese-legislative-election from Q7232771
-created event august-1906-portuguese-legislative-election from Q7232772
-created event 1908-portuguese-legislative-election from Q7232747
-created event lisbon-regicide from Q2665185
-created event 1910-portuguese-legislative-election from Q7232748
-created event 1911-portuguese-constituent-national-assembly-election from Q7232627
-created event 1913-portuguese-legislative-election from Q28679597
-created event 1915-portuguese-legislative-election from Q7232749
-created event 1918-portuguese-general-election from Q7232714
-created event 1918-portuguese-presidential-election from Q21872940
-created event 1919-portuguese-legislative-election from Q7232750
-created event 1919-portuguese-presidential-election from Q21872497
-created event 1921-portuguese-legislative-election from Q7232751
-created event 1922-portuguese-legislative-election from Q7232752
-created event 1923-portuguese-presidential-election from Q21714338
-38 Wikipedia lead(s) cached under tools/import/cache/wikipedia
-25 created, 0 enriched, 0 refused, 0 ambiguous
-import: 25 item(s) this batch, 182 left after it, 45 call(s) spent
-created event 1925-portuguese-legislative-election from Q10271595
-created event 1925-portuguese-presidential-election from Q21714331
-created event 1928-portuguese-presidential-election from Q18167373
-created event q11077889 from Q11077889
-created event 1926-horta-earthquake from Q10372022
-created event 1934-portuguese-legislative-election from Q7232754
-created event 1935-portuguese-presidential-election from Q18166737
-created event 1938-portuguese-legislative-election from Q7232755
-created event portuguese-constitutional-referendum-1933 from Q7232706
-created event 1942-portuguese-presidential-election from Q18166741
-created event 1942-portuguese-legislative-election from Q7232757
-created event 1945-portuguese-legislative-election from Q7232758
-created event 1949-portuguese-presidential-election from Q3277291
-created event 1949-portuguese-legislative-election from Q7232761
-created event 1951-portuguese-presidential-election from Q18166749
-created event 1953-portuguese-legislative-election from Q7232759
-created event 1957-portuguese-legislative-election from Q7232763
-created event 1958-portuguese-presidential-election from Q3741753
-created event guinean-constitutional-referendum-1958 from Q5616514
-created event batepa-massacre from Q1851212
-created event 1961-guinean-presidential-election from Q2114993
-created event 1961-portuguese-legislative-election from Q7232766
-created event 1963-guinean-legislative-election from Q5616525
-created event 1965-portuguese-presidential-election from Q16153770
-refused Q2659185: no place record for its location and no lane reachable from its point; a placeless event must carry a region
-43 Wikipedia lead(s) cached under tools/import/cache/wikipedia
-24 created, 0 enriched, 1 refused, 0 ambiguous
-import: 25 item(s) this batch, 157 left after it, 40 call(s) spent
-created event 1965-portuguese-legislative-election from Q7232768
-created event 1969-portuguese-legislative-election from Q7232769
-created event mueda-massacre from Q10327164
-created event assault-on-the-santa-maria-steamship from Q111584941
-created event 1964-rosais-earthquake from Q10261580
-created event 1967-portugal-floods from Q48876710
-created event 1969-portugal-earthquake from Q3510571
-created event 1972-portuguese-presidential-election from Q16153777
-created event 1973-angolan-legislative-assembly-election from Q18160604
-created event 1973-portuguese-legislative-election from Q7232770
-created event 1974-guinean-general-election from Q5616517
-created event 1975-sao-tomean-legislative-election from Q7665728
-created event 1975-portuguese-constituent-assembly-election from Q3179037
-created event 1976-portuguese-legislative-election from Q1933123
-created event 1976-portuguese-presidential-election from Q1329844
-created event 1976-azorean-regional-election from Q4832852
-created event eleicoes-legislativas-regionais-na-madeira-em-1976 from Q10271597
-created event 1976-portuguese-local-elections from Q7232774
-created event 1977-mozambican-general-election from Q1731920
-created event 1979-portuguese-legislative-election from Q1579644
-created event 1979-portuguese-local-elections from Q7232776
-created event equality-statute-between-brazil-and-portugal from Q10275511
-created event wiriyamu-massacre from Q51750785
-created event q55499125 from Q55499125
-refused Q3586973: no place record for its location and no lane reachable from its point; a placeless event must carry a region
-38 Wikipedia lead(s) cached under tools/import/cache/wikipedia
-24 created, 0 enriched, 1 refused, 0 ambiguous
-import: 25 item(s) this batch, 132 left after it, 14 call(s) spent
-created event q55499135 from Q55499135
-created event hat-nipah-and-same-massacres from Q131364064
-created event bomb-attack-by-the-revolutionary-brigades-on-the-recruitment-and-mobilization-district-n-1-drm-1 from Q112154773
-created event bomb-attack-by-the-revolutionary-brigades-on-the-quartel-mestre-general-building-in-lisbon-portugal from Q112157664
-created event bomb-attack-on-the-army-mechanographic-services-in-lisbon-portugal from Q112154101
-created event robbery-of-banco-totta-and-azores-in-mira-de-aire-on-october-15-1975 from Q116465304
-created event assalto-ao-banco-de-angola-na-damaia-em-21-de-outubro-de-1975 from Q110585299
-created event assassination-of-jose-ferreira-da-rocha-by-the-prp-br from Q115473111
-created event assassinato-de-jose-oscar-de-vasconcelos from Q139223832
-created event assault-on-banco-totta-e-acores-on-avenida-da-republica-in-lisbon-on-may-21-1976 from Q117311793
-created event assalto-ao-banco-pinto-e-sottomayor-em-albufeira-em-17-de-agosto-de-1976 from Q117321949
-created event robbery-of-banco-totta-e-acores-in-seia-on-february-1-1977 from Q115539271
-created event assalto-ao-banco-pinto-e-sottomayor-de-lisboa-em-soure from Q138782318
-created event q5941661 from Q5941661
-created event robbery-of-banco-borges-irmao-in-monte-dos-burgos-porto-november-4-1977 from Q117768823
-created event murder-of-jorge-augusto-de-carvalho-porto-judiciary-police-officer from Q112073029
-created event murder-of-jose-manuel-placido from Q109529478
-created event eleicoes-legislativas-regionais-nos-acores-em-1980 from Q10271607
-created event 1980-portuguese-legislative-election from Q606275
-created event eleicoes-legislativas-regionais-na-madeira-em-1980 from Q10271598
-created event 1980-portuguese-presidential-election from Q3069005
-created event 1982-portuguese-local-elections from Q7232777
-created event 1983-portuguese-legislative-election from Q597504
-created event eleicoes-legislativas-regionais-nos-acores-em-1984 from Q16144649
-created event eleicoes-legislativas-regionais-na-madeira-em-1984 from Q10271599
-12 Wikipedia lead(s) cached under tools/import/cache/wikipedia
-25 created, 0 enriched, 0 refused, 0 ambiguous
-import: 25 item(s) this batch, 107 left after it, 27 call(s) spent
-created event 1985-portuguese-legislative-election from Q371408
-created event 1985-portuguese-local-elections from Q7232778
-created event 1986-portuguese-presidential-election from Q3586628
-created event 1987-european-parliament-election-in-portugal from Q2404857
-created event 1987-portuguese-legislative-election from Q1343967
-created event eleicoes-legislativas-regionais-na-madeira-em-1988 from Q10271600
-created event eleicoes-legislativas-regionais-nos-acores-em-1988 from Q10271609
-created event 1989-european-parliament-election-in-portugal from Q2405083
-created event 1989-portuguese-local-elections from Q24541619
-created event treaty-of-accession-1985 from Q9360737
-created event 1980-azores-islands-earthquake from Q3306615
-created event assault-on-tabaqueira-by-the-prp-br-on-january-31-1980 from Q115691683
-created event murder-of-delfim-de-almeida-fernandes-by-the-prp-br from Q115210882
-created event assault-on-sintra-s-finance-department-by-the-prp-br-on-25-02-1980 from Q115187238
-created event robbery-of-the-totta-acores-bank-in-malveira-on-6-october-1980 from Q115636352
-created event assalto-ao-banco-nacional-ultramarino-da-malveira-em-6-de-outubro-de-1980 from Q139913681
-created event assassination-attempt-on-fernando-da-costa-rolo from Q115635121
-created event robbery-of-banco-fonsecas-burnay-in-povoa-de-santo-adriao-on-october-13-1981 from Q111788515
-created event assassination-attempt-on-john-paul-ii-1982 from Q9386425
-created event assassination-of-erkut-akbay from Q4808506
-created event 1983-turkish-embassy-attack-in-lisbon from Q349875
-created event assault-on-the-grupo-8-cash-van-in-lisbon-carried-out-by-the-fp-25-which-yielded-108-thousand-contos-on-february-7-1984 from Q115779750
-created event assassinato-de-rogerio-canha-e-sa from Q138783119
-created event chiado-fire from Q10301908
-created event desastre-ambiental-de-almograve from Q112726955
-25 Wikipedia lead(s) cached under tools/import/cache/wikipedia
-25 created, 0 enriched, 0 refused, 0 ambiguous
-import: 25 item(s) this batch, 82 left after it, 46 call(s) spent
-created event 1991-portuguese-presidential-election from Q3586629
-created event 1991-portuguese-legislative-election from Q2053113
-created event eleicoes-legislativas-regionais-na-madeira-em-1992 from Q10271602
-created event eleicoes-legislativas-regionais-nos-acores-em-1992 from Q10271611
-created event 1993-portuguese-local-elections from Q25421711
-created event 1994-european-parliament-election-in-portugal from Q3066311
-created event 1995-portuguese-legislative-election from Q1511117
-created event 1996-portuguese-presidential-election from Q3066523
-created event 1996-azorean-regional-election from Q4832856
-created event 1996-madeiran-regional-election from Q10271601
-created event 1997-portuguese-local-elections from Q25421741
-created event 1999-european-parliament-election from Q1851815
-created event 1999-macanese-chief-executive-election from Q55719546
-created event 1999-european-parliament-election-in-portugal from Q2404815
-created event 1999-portuguese-legislative-election from Q2053121
-created event lisbon-recognition-convention from Q1546127
-created event 1998-portuguese-abortion-referendum from Q2105455
-created event portuguese-regionalisation-referendum-1998 from Q7232796
-created event 1998-azores-islands-earthquake from Q108485945
-created event q5942951 from Q5942951
-created event 2000-azorean-regional-election from Q4832854
-created event 2000-madeiran-regional-election from Q10271603
-created event 2001-portuguese-presidential-election from Q3131667
-created event 2001-portuguese-local-elections from Q18471358
-created event 2002-portuguese-legislative-election from Q2053133
-44 Wikipedia lead(s) cached under tools/import/cache/wikipedia
-25 created, 0 enriched, 0 refused, 0 ambiguous
-import: 25 item(s) this batch, 57 left after it, 47 call(s) spent
-created event 2004-european-parliament-election-in-portugal from Q959901
-created event 2004-madeiran-regional-election from Q10271604
-created event 2004-azorean-regional-election from Q10271610
-created event 2005-portuguese-legislative-election from Q2031494
-created event 2005-portuguese-local-elections from Q7232780
-created event 2006-portuguese-presidential-election from Q2715397
-created event 2007-madeiran-regional-election from Q10271605
-created event 2007-lisbon-local-elections from Q61000371
-created event 2008-azorean-regional-election from Q10271612
-created event 2009-european-parliament-election-in-portugal from Q788057
-created event 2009-portuguese-legislative-election from Q1228693
-created event 2009-portuguese-local-elections from Q15727888
-created event 2009-porto-local-election from Q48866840
-created event 2009-lisbon-local-elections from Q48866852
-created event treaty-of-lisbon from Q52843
-created event portuguese-european-constitution-referendum from Q3454893
-created event 2007-portuguese-abortion-referendum from Q250247
-created event telecoms-package from Q1536157
-created event murder-of-joana-cipriano from Q264468
-created event espirito-santo-bank-of-campolide-robbery from Q111918021
-created event sismo-de-portugal-de-2009 from Q6143030
-created event 2011-portuguese-presidential-election from Q1576195
-created event 2011-portuguese-legislative-election from Q1457926
-created event 2011-madeiran-regional-election from Q1389069
-refused Q545449: no place record for its location and no lane reachable from its point; a placeless event must carry a region
-45 Wikipedia lead(s) cached under tools/import/cache/wikipedia
-24 created, 0 enriched, 1 refused, 0 ambiguous
-import: 25 item(s) this batch, 32 left after it, 48 call(s) spent
-created event 2012-azorean-regional-election from Q967262
-created event 2013-portuguese-local-elections from Q10271413
-created event 2013-lisbon-local-elections from Q25443201
-created event 2013-porto-local-election from Q25443212
-created event 2014-european-parliament-election-in-portugal from Q15411498
-created event 2015-madeiran-regional-election from Q17510556
-created event 2015-portuguese-legislative-election from Q17016934
-created event 2016-portuguese-presidential-election from Q17514691
-created event 2016-portuguese-social-democratic-party-leadership-election from Q110079930
-created event 2016-azorean-regional-election from Q20311823
-created event 2017-portuguese-local-elections from Q27922078
-created event 2017-lisbon-local-elections from Q48871688
-created event 2017-porto-local-election from Q48871696
-created event 2018-portuguese-social-democratic-party-leadership-election from Q85871536
-created event 2019-european-parliament-election-in-portugal from Q56192519
-created event 2019-madeiran-regional-election from Q30634252
-created event 2019-portuguese-legislative-election from Q25041164
-created event 2013-20-olive-quick-decline-syndrome-outbreak from Q90536205
-created event 2014-legionella-outbreak-in-portugal from Q18529916
-created event 2016-portugal-wildfires from Q26252770
-created event 2017-pedrogao-grande-wildfire from Q30327722
-created event monchique-fire from Q56351504
-created event hurricane-leslie from Q57243792
-created event tragedia-de-borba from Q61000290
-created event covid-19-pandemic from Q81068910
-46 Wikipedia lead(s) cached under tools/import/cache/wikipedia
-25 created, 0 enriched, 0 refused, 0 ambiguous
-import: 25 item(s) this batch, 7 left after it, 52 call(s) spent
-created event resolute-support-mission from Q18651204
-created event 2020-portuguese-social-democratic-party-leadership-election from Q83094746
-created event 2020-azorean-regional-election from Q39060523
-created event 2021-portuguese-presidential-election from Q48861733
-created event 2021-portuguese-local-elections from Q96370956
-created event 2021-lisbon-local-elections from Q106544440
-created event 2021-porto-local-elections from Q108691293
-created event 2022-portuguese-social-democratic-party-leadership-election from Q108542274
-created event 2022-portuguese-legislative-election from Q84081925
-created event 2022-portuguese-social-democratic-party-leadership-election-q111182017 from Q111182017
-created event 2023-madeiran-regional-election from Q97356966
-created event 2024-azorean-regional-election from Q104876829
-created event 2024-portuguese-legislative-election from Q111181270
-created event 2024-madeiran-regional-election from Q123685068
-created event 2024-european-parliament-election from Q70253009
-created event 2024-european-parliament-election-in-portugal from Q114422643
-created event 2025-madeiran-regional-election from Q126708649
-created event 2025-portuguese-legislative-election from Q125201429
-created event 2025-portuguese-local-elections from Q120913144
-created event 2025-lisbon-local-election from Q131926909
-created event 2025-porto-local-election from Q131933411
-created event 2025-setubal-local-elections from Q135509611
-created event 2025-amadora-local-elections from Q135509723
-created event 2025-sintra-local-elections from Q135509724
-created event 2025-viseu-local-elections from Q135509797
-50 Wikipedia lead(s) cached under tools/import/cache/wikipedia
-25 created, 0 enriched, 0 refused, 0 ambiguous
-import: 7 item(s) this batch, 0 left after it, 11 call(s) spent
-created event covid-19-pandemic-in-europe from Q86458103
-created event 2022-european-drought from Q113394119
-created event murder-of-diamantino-monteiro-pereira from Q115460814
-created event december-2022-floods-in-portugal from Q115707122
-created event 2024-madeira-wildfires from Q129462983
-created event 2024-portugal-wildfires from Q130324056
-created event killing-of-odair-moniz from Q130648555
+import: 25 item(s) this batch, 125 left after it, 10 call(s) spent
+created actor euronext from Q842108
+created actor university-of-porto from Q1422903
+created actor national-union from Q954010
+created actor banco-comercial-portugues from Q118581
+refused Q233737: none of its classes (Q158555, Q181348, Q537127, Q210272, Q3397516) is in data/imports/wikidata-seeds.json → classes
+refused Q208232: none of its classes (Q46970) is in data/imports/wikidata-seeds.json → classes
+refused Q403671: none of its classes (Q644371, Q1248784, Q210272, Q94993988) is in data/imports/wikidata-seeds.json → classes
+refused Q746032: none of its classes (Q5503) is in data/imports/wikidata-seeds.json → classes
+refused Q639161: none of its classes (Q644371, Q1248784, Q94993988) is in data/imports/wikidata-seeds.json → classes
+refused Q667001: none of its classes (Q644371, Q1248784, Q94993988) is in data/imports/wikidata-seeds.json → classes
+refused Q943743: none of its classes (Q644371, Q94993988, Q1248784) is in data/imports/wikidata-seeds.json → classes
+refused Q721152: none of its classes (Q6636777, Q110848334, Q210272, Q12570, Q1243306) is in data/imports/wikidata-seeds.json → classes
+refused Q922693: none of its classes (Q112827555) is in data/imports/wikidata-seeds.json → classes
+refused Q2205178: none of its classes (Q46970) is in data/imports/wikidata-seeds.json → classes
+refused Q81123: none of its classes (Q740752) is in data/imports/wikidata-seeds.json → classes
+refused Q1432424: none of its classes (Q1248784, Q94993988) is in data/imports/wikidata-seeds.json → classes
+refused Q29757: none of its classes (Q1268865, Q115755619) is in data/imports/wikidata-seeds.json → classes
+refused Q1377256: none of its classes (Q112827555) is in data/imports/wikidata-seeds.json → classes
+refused Q1432485: none of its classes (Q1248784, Q94993988, Q210272) is in data/imports/wikidata-seeds.json → classes
+refused Q2583734: none of its classes (Q467011) is in data/imports/wikidata-seeds.json → classes
+refused Q618058: none of its classes (Q46970) is in data/imports/wikidata-seeds.json → classes
+refused Q993079: none of its classes (Q204310) is in data/imports/wikidata-seeds.json → classes
+refused Q1280906: none of its classes (Q204310) is in data/imports/wikidata-seeds.json → classes
+refused Q281710: none of its classes (Q46970) is in data/imports/wikidata-seeds.json → classes
+refused Q618132: none of its classes (Q46970) is in data/imports/wikidata-seeds.json → classes
+unclassified class Q158555: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q181348: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q537127: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q210272: add it to data/imports/wikidata-seeds.json → classes or the 4 item(s) in it stay refused
+unclassified class Q3397516: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q46970: add it to data/imports/wikidata-seeds.json → classes or the 5 item(s) in it stay refused
+unclassified class Q644371: add it to data/imports/wikidata-seeds.json → classes or the 4 item(s) in it stay refused
+unclassified class Q1248784: add it to data/imports/wikidata-seeds.json → classes or the 6 item(s) in it stay refused
+unclassified class Q94993988: add it to data/imports/wikidata-seeds.json → classes or the 6 item(s) in it stay refused
+unclassified class Q5503: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q6636777: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q110848334: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q12570: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q1243306: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q112827555: add it to data/imports/wikidata-seeds.json → classes or the 2 item(s) in it stay refused
+unclassified class Q740752: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q1268865: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q115755619: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q467011: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q204310: add it to data/imports/wikidata-seeds.json → classes or the 2 item(s) in it stay refused
+8 Wikipedia lead(s) cached under tools/import/cache/wikipedia
+4 created, 0 enriched, 21 refused, 0 ambiguous
+import: 25 item(s) this batch, 100 left after it, 18 call(s) spent
+created actor ecologist-party-the-greens from Q978086
+created actor galp-energia from Q1492739
+created actor energias-de-portugal from Q1341222
+created actor people-animals-nature from Q2054840
+created actor altice-portugal from Q2105426
+created actor altri from Q444971
+created actor people-s-monarchist-party from Q1851550
+created actor the-navigator-company from Q686182
+refused Q1243903: none of its classes (Q46970) is in data/imports/wikidata-seeds.json → classes
+refused Q136090574: none of its classes (Q1331380) is in data/imports/wikidata-seeds.json → classes
+refused Q29671: none of its classes (Q875538, Q45400320) is in data/imports/wikidata-seeds.json → classes
+refused Q29673: none of its classes (Q875538, Q45400320) is in data/imports/wikidata-seeds.json → classes
+refused Q618093: none of its classes (Q46970) is in data/imports/wikidata-seeds.json → classes
+refused Q1431519: none of its classes (Q1248784, Q94993988) is in data/imports/wikidata-seeds.json → classes
+refused Q1800787: none of its classes (Q695850, Q327333) is in data/imports/wikidata-seeds.json → classes
+refused Q1431141: none of its classes (Q1248784, Q94993988) is in data/imports/wikidata-seeds.json → classes
+refused Q2853075: none of its classes (Q744913) is in data/imports/wikidata-seeds.json → classes
+refused Q100166601: none of its classes (Q12570, Q1068842) is in data/imports/wikidata-seeds.json → classes
+refused Q1432366: none of its classes (Q1248784, Q94993988) is in data/imports/wikidata-seeds.json → classes
+refused Q1461089: none of its classes (Q875538) is in data/imports/wikidata-seeds.json → classes
+refused Q2165228: none of its classes (Q890545, Q15911738) is in data/imports/wikidata-seeds.json → classes
+refused Q3153850: none of its classes (Q744913) is in data/imports/wikidata-seeds.json → classes
+refused Q4782260: none of its classes (Q3814081, Q341) is in data/imports/wikidata-seeds.json → classes
+refused Q1118859: none of its classes (Q2001305, Q10689397) is in data/imports/wikidata-seeds.json → classes
+refused Q61000232: none of its classes (Q744913) is in data/imports/wikidata-seeds.json → classes
+unclassified class Q46970: add it to data/imports/wikidata-seeds.json → classes or the 2 item(s) in it stay refused
+unclassified class Q1331380: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q875538: add it to data/imports/wikidata-seeds.json → classes or the 3 item(s) in it stay refused
+unclassified class Q45400320: add it to data/imports/wikidata-seeds.json → classes or the 2 item(s) in it stay refused
+unclassified class Q1248784: add it to data/imports/wikidata-seeds.json → classes or the 3 item(s) in it stay refused
+unclassified class Q94993988: add it to data/imports/wikidata-seeds.json → classes or the 3 item(s) in it stay refused
+unclassified class Q695850: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q327333: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q744913: add it to data/imports/wikidata-seeds.json → classes or the 3 item(s) in it stay refused
+unclassified class Q12570: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q1068842: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q890545: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q15911738: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q3814081: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q341: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q2001305: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q10689397: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+16 Wikipedia lead(s) cached under tools/import/cache/wikipedia
+8 created, 0 enriched, 17 refused, 0 ambiguous
+import: 25 item(s) this batch, 75 left after it, 26 call(s) spent
+created actor livre from Q16947563
+created actor liberal-initiative from Q46122950
+created actor portuguese-investment-bank from Q537886
+created actor redes-energeticas-nacionais from Q1862842
+created actor portuguese-workers-communist-party-re-organized-movement-of-the-party-of-the-proletariat from Q2054628
+created actor farfetch from Q18712957
+created actor meo from Q1365938
+created actor fertagus from Q1408210
+created actor semapa from Q1862723
+created actor revolutionary-socialist-party from Q2054807
+created actor people-s-democratic-union from Q2119074
+created actor nos from Q136331
+refused Q1785740: none of its classes (Q14276458, Q3397659, Q537127, Q210272) is in data/imports/wikidata-seeds.json → classes
+refused Q2667744: none of its classes (Q46970) is in data/imports/wikidata-seeds.json → classes
+refused Q4374070: none of its classes (Q3917681) is in data/imports/wikidata-seeds.json → classes
+refused Q381415: none of its classes (Q46970) is in data/imports/wikidata-seeds.json → classes
+refused Q740205: none of its classes (Q7188, Q35798) is in data/imports/wikidata-seeds.json → classes
+refused Q786906: none of its classes (Q744913) is in data/imports/wikidata-seeds.json → classes
+refused Q1972136: none of its classes (Q875538, Q45400320) is in data/imports/wikidata-seeds.json → classes
+refused Q28973970: none of its classes (Q46970) is in data/imports/wikidata-seeds.json → classes
+refused Q60323: none of its classes (Q744913) is in data/imports/wikidata-seeds.json → classes
+refused Q295619: none of its classes (Q670113) is in data/imports/wikidata-seeds.json → classes
+refused Q1430974: none of its classes (Q1248784) is in data/imports/wikidata-seeds.json → classes
+refused Q1504273: none of its classes (Q3397526, Q158438, Q1223230, Q21752084, Q210272, Q14752696) is in data/imports/wikidata-seeds.json → classes
+refused Q138324: none of its classes (Q190752, Q32766) is in data/imports/wikidata-seeds.json → classes
+unclassified class Q14276458: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q3397659: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q537127: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q210272: add it to data/imports/wikidata-seeds.json → classes or the 2 item(s) in it stay refused
+unclassified class Q46970: add it to data/imports/wikidata-seeds.json → classes or the 3 item(s) in it stay refused
+unclassified class Q3917681: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q7188: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q35798: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q744913: add it to data/imports/wikidata-seeds.json → classes or the 2 item(s) in it stay refused
+unclassified class Q875538: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q45400320: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q670113: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q1248784: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q3397526: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q158438: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q1223230: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q21752084: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q14752696: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q190752: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q32766: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+24 Wikipedia lead(s) cached under tools/import/cache/wikipedia
+12 created, 0 enriched, 13 refused, 0 ambiguous
+import: 25 item(s) this batch, 50 left after it, 18 call(s) spent
+created actor azores-liberation-front from Q260897
+created actor brisa-auto-estradas-de-portugal from Q587719
+created actor portuguese-democratic-movement from Q613464
+created actor rise-up from Q2054681
+created actor new-macau-association from Q2495255
+created actor national-syndicalists from Q2562540
+created actor democratic-party from Q1783440
+created event crisis-portugal from Q3002776
+refused Q786690: none of its classes (Q786820) is in data/imports/wikidata-seeds.json → classes
+refused Q951109: none of its classes (Q537127) is in data/imports/wikidata-seeds.json → classes
+refused Q1548495: none of its classes (Q537127, Q158555, Q25297630) is in data/imports/wikidata-seeds.json → classes
+refused Q3182793: none of its classes (Q124757) is in data/imports/wikidata-seeds.json → classes
+refused Q3375350: none of its classes (Q12323, Q15911738) is in data/imports/wikidata-seeds.json → classes
+refused Q3375706: none of its classes (Q12323, Q1569871, Q210272, Q15911738) is in data/imports/wikidata-seeds.json → classes
+refused Q3375894: none of its classes (Q12323, Q15911738) is in data/imports/wikidata-seeds.json → classes
+refused Q4033474: none of its classes (Q46970) is in data/imports/wikidata-seeds.json → classes
+refused Q13403867: none of its classes (Q46970) is in data/imports/wikidata-seeds.json → classes
+refused Q21224349: none of its classes (Q16850120) is in data/imports/wikidata-seeds.json → classes
+refused Q123509897: none of its classes (Q16850120) is in data/imports/wikidata-seeds.json → classes
+refused Q406832: none of its classes (Q46970) is in data/imports/wikidata-seeds.json → classes
+refused Q794939: none of its classes (Q431289, Q1631129) is in data/imports/wikidata-seeds.json → classes
+refused Q1412194: none of its classes (Q480242, Q8513) is in data/imports/wikidata-seeds.json → classes
+refused Q1546030: none of its classes (Q3778417) is in data/imports/wikidata-seeds.json → classes
+refused Q3359757: none of its classes (Q3497167, Q210272, Q15911738) is in data/imports/wikidata-seeds.json → classes
+refused Q3375842: none of its classes (Q3497167, Q15911738) is in data/imports/wikidata-seeds.json → classes
+unclassified class Q786820: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q537127: add it to data/imports/wikidata-seeds.json → classes or the 2 item(s) in it stay refused
+unclassified class Q158555: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q25297630: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q124757: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q12323: add it to data/imports/wikidata-seeds.json → classes or the 3 item(s) in it stay refused
+unclassified class Q15911738: add it to data/imports/wikidata-seeds.json → classes or the 5 item(s) in it stay refused
+unclassified class Q1569871: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q210272: add it to data/imports/wikidata-seeds.json → classes or the 2 item(s) in it stay refused
+unclassified class Q46970: add it to data/imports/wikidata-seeds.json → classes or the 3 item(s) in it stay refused
+unclassified class Q16850120: add it to data/imports/wikidata-seeds.json → classes or the 2 item(s) in it stay refused
+unclassified class Q431289: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q1631129: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q480242: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q8513: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q3778417: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q3497167: add it to data/imports/wikidata-seeds.json → classes or the 2 item(s) in it stay refused
+16 Wikipedia lead(s) cached under tools/import/cache/wikipedia
+8 created, 0 enriched, 17 refused, 0 ambiguous
+import: 25 item(s) this batch, 25 left after it, 12 call(s) spent
+created actor evolutionist-party from Q1720273
+created actor national-republican-party from Q1513692
+created actor nationalist-republican-party from Q847883
+created actor republican-liberal-party from Q2054660
+created actor liberal-regenerator-party from Q75660
+refused Q3391585: none of its classes (Q875538, Q45400320) is in data/imports/wikidata-seeds.json → classes
+refused Q5049759: none of its classes (Q12323, Q15911738, Q210272) is in data/imports/wikidata-seeds.json → classes
+refused Q9648934: none of its classes (Q890545, Q12280, Q15911738, Q339353) is in data/imports/wikidata-seeds.json → classes
+refused Q16496928: none of its classes (Q12323, Q210272, Q15911738) is in data/imports/wikidata-seeds.json → classes
+refused Q29685: none of its classes (Q740752, Q1268865) is in data/imports/wikidata-seeds.json → classes
+refused Q1626916: none of its classes (Q16850120) is in data/imports/wikidata-seeds.json → classes
+refused Q9649091: none of its classes (Q1244922, Q15911738, Q339353) is in data/imports/wikidata-seeds.json → classes
+refused Q110819776: none of its classes (Q16850120) is in data/imports/wikidata-seeds.json → classes
+refused Q4294480: none of its classes (Q1788820, Q131467261) is in data/imports/wikidata-seeds.json → classes
+refused Q16496938: none of its classes (Q1244922, Q15911738) is in data/imports/wikidata-seeds.json → classes
+refused Q134130064: none of its classes (Q16850120) is in data/imports/wikidata-seeds.json → classes
+refused Q7835315: none of its classes (Q46970) is in data/imports/wikidata-seeds.json → classes
+refused Q18245126: none of its classes (Q7755) is in data/imports/wikidata-seeds.json → classes
+refused Q2644063: none of its classes (Q327333) is in data/imports/wikidata-seeds.json → classes
+refused Q4294357: none of its classes (Q1519799, Q131467261) is in data/imports/wikidata-seeds.json → classes
+refused Q4294674: none of its classes (Q1364302, Q56089124, Q131467261) is in data/imports/wikidata-seeds.json → classes
+refused Q16528160: none of its classes (Q3917681) is in data/imports/wikidata-seeds.json → classes
+refused Q17014172: none of its classes (Q732717, Q6081679) is in data/imports/wikidata-seeds.json → classes
+refused Q19383581: none of its classes (Q3917681) is in data/imports/wikidata-seeds.json → classes
+refused Q551612: none of its classes (Q1210334, Q158218, Q21170235) is in data/imports/wikidata-seeds.json → classes
+unclassified class Q875538: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q45400320: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q12323: add it to data/imports/wikidata-seeds.json → classes or the 2 item(s) in it stay refused
+unclassified class Q15911738: add it to data/imports/wikidata-seeds.json → classes or the 5 item(s) in it stay refused
+unclassified class Q210272: add it to data/imports/wikidata-seeds.json → classes or the 2 item(s) in it stay refused
+unclassified class Q890545: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q12280: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q339353: add it to data/imports/wikidata-seeds.json → classes or the 2 item(s) in it stay refused
+unclassified class Q740752: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q1268865: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q16850120: add it to data/imports/wikidata-seeds.json → classes or the 3 item(s) in it stay refused
+unclassified class Q1244922: add it to data/imports/wikidata-seeds.json → classes or the 2 item(s) in it stay refused
+unclassified class Q1788820: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q131467261: add it to data/imports/wikidata-seeds.json → classes or the 3 item(s) in it stay refused
+unclassified class Q46970: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q7755: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q327333: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q1519799: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q1364302: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q56089124: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q3917681: add it to data/imports/wikidata-seeds.json → classes or the 2 item(s) in it stay refused
+unclassified class Q732717: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q6081679: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q1210334: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q158218: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q21170235: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+10 Wikipedia lead(s) cached under tools/import/cache/wikipedia
+5 created, 0 enriched, 20 refused, 0 ambiguous
+import: 25 item(s) this batch, 0 left after it, 11 call(s) spent
+created actor reconstitution-party from Q2054732
+created actor volt-portugal from Q97303443
+created actor democratic-leftwing-republican-party from Q3366682
+created actor partido-nacionalista-portugal from Q10345652
+created actor social-liberal-party from Q133273478
+refused Q555443: none of its classes (Q249556) is in data/imports/wikidata-seeds.json → classes
+refused Q3331246: none of its classes (Q6636777) is in data/imports/wikidata-seeds.json → classes
+refused Q10351044: none of its classes (Q2101516) is in data/imports/wikidata-seeds.json → classes
+refused Q10351328: none of its classes (Q537127, Q18449828, Q210272) is in data/imports/wikidata-seeds.json → classes
+refused Q540545: none of its classes (Q1078765) is in data/imports/wikidata-seeds.json → classes
+refused Q555837: none of its classes (Q270791, Q249556) is in data/imports/wikidata-seeds.json → classes
+refused Q3179616: none of its classes (Q1210334, Q158218, Q21170235, Q210272) is in data/imports/wikidata-seeds.json → classes
+refused Q5396166: none of its classes (Q537127, Q21170235, Q158218, Q210272, Q1210334) is in data/imports/wikidata-seeds.json → classes
+refused Q7228164: none of its classes (Q537127, Q158218, Q21170235, Q210272) is in data/imports/wikidata-seeds.json → classes
+refused Q8355026: none of its classes (Q1078765) is in data/imports/wikidata-seeds.json → classes
+refused Q17390261: none of its classes (Q21752084, Q1223230, Q537127, Q210272, Q14752696) is in data/imports/wikidata-seeds.json → classes
+refused Q66170306: none of its classes (Q537127, Q12042110) is in data/imports/wikidata-seeds.json → classes
+refused Q97957820: none of its classes (Q1078765) is in data/imports/wikidata-seeds.json → classes
+refused Q105663868: none of its classes (Q49775) is in data/imports/wikidata-seeds.json → classes
+refused Q4135446: none of its classes (Q1210334, Q158218, Q21170235, Q210272) is in data/imports/wikidata-seeds.json → classes
+refused Q10266748: none of its classes (Q327333) is in data/imports/wikidata-seeds.json → classes
+refused Q16502097: none of its classes (Q285852) is in data/imports/wikidata-seeds.json → classes
+refused Q25422468: none of its classes (Q1210334) is in data/imports/wikidata-seeds.json → classes
+refused Q110630884: none of its classes (Q537127, Q210272) is in data/imports/wikidata-seeds.json → classes
+refused Q9661188: none of its classes (Q285852) is in data/imports/wikidata-seeds.json → classes
+unclassified class Q249556: add it to data/imports/wikidata-seeds.json → classes or the 2 item(s) in it stay refused
+unclassified class Q6636777: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q2101516: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q537127: add it to data/imports/wikidata-seeds.json → classes or the 6 item(s) in it stay refused
+unclassified class Q18449828: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q210272: add it to data/imports/wikidata-seeds.json → classes or the 7 item(s) in it stay refused
+unclassified class Q1078765: add it to data/imports/wikidata-seeds.json → classes or the 3 item(s) in it stay refused
+unclassified class Q270791: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q1210334: add it to data/imports/wikidata-seeds.json → classes or the 4 item(s) in it stay refused
+unclassified class Q158218: add it to data/imports/wikidata-seeds.json → classes or the 4 item(s) in it stay refused
+unclassified class Q21170235: add it to data/imports/wikidata-seeds.json → classes or the 4 item(s) in it stay refused
+unclassified class Q21752084: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q1223230: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q14752696: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q12042110: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q49775: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q327333: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q285852: add it to data/imports/wikidata-seeds.json → classes or the 2 item(s) in it stay refused
 9 Wikipedia lead(s) cached under tools/import/cache/wikipedia
-7 created, 0 enriched, 0 refused, 0 ambiguous
+5 created, 0 enriched, 20 refused, 0 ambiguous

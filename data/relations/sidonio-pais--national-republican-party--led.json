@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "sidonio-pais--national-republican-party--led",
+  "kind": "relation",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-08",
+  "revised": "2026-09-08",
+  "origin": {
+    "tool": "assistant"
+  },
+  "retraction": {
+    "on": "2026-09-08",
+    "reason": "Retracted in M30a-2 and re-filed as the tenure \"sidonio-pais-national-republican-party-1918\": who led a body is an office somebody held and not a link between two actors, because a relation's id is from--to--type and one person may lead one body more than once. The type \"led\" is deprecated and no active relation may take it; nothing this record claimed was changed in the move."
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"National Republican Party (Portugal)\", revision 1254903555"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Partido Nacional Republicano (Portugal)\", revision 71995027"
+    }
+  ],
+  "from": "sidonio-pais",
+  "to": "national-republican-party",
+  "type": "led",
+  "when": {
+    "start": 1918,
+    "end": 1918
+  },
+  "note": "Founded in April 1918 around him and known as the Sidonist party; he was killed that December. Neither lead says who, if anyone, led it afterwards."
+}

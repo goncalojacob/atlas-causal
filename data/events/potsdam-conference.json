@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "potsdam-conference",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": "2026-09-05",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q151187",
+  "sitelinks": {
+    "count": 74,
+    "on": "2026-09-05"
+  },
+  "wikipedia": {
+    "en": "Potsdam Conference",
+    "pt": "Conferência de Potsdam"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Potsdam Conference\", revision 1371936780"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Conferência de Potsdam\", revision 72101398"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q151187"
+    }
+  ],
+  "title": "Potsdam Conference",
+  "summary": "Truman, Stalin and Churchill — replaced mid-conference by Attlee, who had just won a general election — met at Potsdam from 17 July to 2 August 1945 to settle the administration of a defeated Germany. They agreed on demilitarisation, denazification, the trial of the leaders, reparations taken by each power mostly from its own zone, and the transfer westward of the German populations of Poland, Czechoslovakia and Hungary; they did not agree on what Germany was to become, and deferred the question. Truman learned of the successful atomic test during the conference and told Stalin, who already knew. It is in the atlas as the last meeting of the wartime alliance, and the first of the Cold War.",
+  "when": {
+    "start": 1945,
+    "end": 1945,
+    "date": "1945-07-17",
+    "endDate": "1945-08-02"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": [
+    {
+      "actor": "united-states-of-america",
+      "role": "negotiator"
+    },
+    {
+      "actor": "russia-soviet-union",
+      "role": "negotiator"
+    },
+    {
+      "actor": "united-kingdom",
+      "role": "negotiator"
+    }
+  ]
+}

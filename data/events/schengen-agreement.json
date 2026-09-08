@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "id": "schengen-agreement",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": "2026-09-05",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q2822795",
+  "sitelinks": {
+    "count": 80,
+    "on": "2026-09-05"
+  },
+  "wikipedia": {
+    "en": "Schengen Agreement",
+    "pt": "Acordo de Schengen"
+  },
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-teixeira-2019-political-institutions",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Schengen Agreement\", revision 1370029483"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Acordo de Schengen\", revision 68154239"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q2822795"
+    }
+  ],
+  "title": "Schengen Agreement",
+  "summary": "Five of the ten members of the Community — France, West Germany, Belgium, the Netherlands and Luxembourg — signed an agreement on a boat moored at Schengen on 14 June 1985 to take the checks off their common borders. It was deliberately built outside the Community treaties, because the other five would not go that far, and the machinery that made it work arrived with the implementing convention of 1990: a common visa list, a shared database, and the rule that whoever holds a stretch of the outer frontier holds it for everybody. Portugal and Spain signed together in 1991 and the checks between them came off in 1995.",
+  "when": {
+    "start": 1985,
+    "end": 1985,
+    "date": "1985-06-14"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": [
+    {
+      "actor": "france",
+      "role": "signatory"
+    },
+    {
+      "actor": "german-federal-republic",
+      "role": "signatory"
+    },
+    {
+      "actor": "belgium",
+      "role": "signatory"
+    },
+    {
+      "actor": "netherlands",
+      "role": "signatory"
+    },
+    {
+      "actor": "luxembourg",
+      "role": "signatory"
+    }
+  ]
+}

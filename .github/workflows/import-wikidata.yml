@@ -28,7 +28,7 @@ concurrency:
 jobs:
   import:
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    timeout-minutes: 330
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -82,7 +82,21 @@ jobs:
             node "tools/import/wikidata.mjs" "--$MODE" --report docs/import-report.md || fail "the import failed on batch $batch"
             node tools/build-index.mjs || fail "the index cannot be built after batch $batch"
             node tools/validate.mjs --index || fail "the tree does not validate after batch $batch"
-            node --test || fail "the tests do not pass after batch $batch"
+            # --test-timeout, because a test that hangs is not a test that
+            # fails. The browser tests drive a headless Chromium over the
+            # DevTools protocol, and tests/browser.mjs waits on a reply and on
+            # Page.loadEventFired with no bound: when one of those never
+            # arrives the suite stops printing and the runner sits there with
+            # the browser still open. That is what happened to the run of
+            # 7 September on this branch — the suite stopped after 339 tests
+            # and the job was killed at its 5.5-hour limit with two Chromiums
+            # orphaned, having committed nothing, so batch 1's import was
+            # thrown away and the cursor never moved. Bounded, the same hang
+            # is a failed batch: the batches already pushed stand, the cursor
+            # keeps them, and pushing this branch again resumes from there.
+            # The slowest single test takes 4s, so 120s is not a deadline any
+            # honest test comes near.
+            node --test --test-timeout=120000 || fail "the tests do not pass after batch $batch"
             if [ -z "$(git status --porcelain)" ]; then
               echo "batch $batch changed nothing; the walk is finished"
               break

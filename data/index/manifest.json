@@ -1,25 +1,25 @@
 {
   "attributeShards": [
     {
-      "file": "index/attributes-1800-1899-fad96912db09.json",
+      "file": "index/attributes-1800-1899-a461485de04c.json",
       "from": 1800,
       "key": "1800-1899",
       "to": 1899
     },
     {
-      "file": "index/attributes-1900-1999-ae2d208225b4.json",
+      "file": "index/attributes-1900-1999-41f3e5b84499.json",
       "from": 1900,
       "key": "1900-1999",
       "to": 1999
     },
     {
-      "file": "index/attributes-2000-2099-55d2f3185918.json",
+      "file": "index/attributes-2000-2099-9d0a18860450.json",
       "from": 2000,
       "key": "2000-2099",
       "to": 2099
     },
     {
-      "file": "index/attributes-null-77b4befa073d.json",
+      "file": "index/attributes-null-213395582e6a.json",
       "from": null,
       "key": "null",
       "to": null
@@ -94,44 +94,44 @@
     }
   ],
   "counts": {
-    "actors": 445,
-    "edges": 161,
-    "events": 329,
+    "actors": 488,
+    "edges": 219,
+    "events": 421,
     "narratives": 1,
-    "offices": 9,
+    "offices": 11,
     "places": 26,
     "presences": 710,
     "regions": 5,
-    "relations": 43,
+    "relations": 51,
     "sources": 34,
-    "tenures": 81
+    "tenures": 83
   },
   "explanationShards": [
     {
-      "file": "index/explanations-1800-1899-b3bd4a8296e8.json",
+      "file": "index/explanations-1800-1899-d9be6ed20166.json",
       "from": 1800,
       "to": 1899
     },
     {
-      "file": "index/explanations-1900-1999-f8f58797ee00.json",
+      "file": "index/explanations-1900-1999-a067390ecc53.json",
       "from": 1900,
       "to": 1999
     },
     {
-      "file": "index/explanations-2000-2099-b942d659f160.json",
+      "file": "index/explanations-2000-2099-134fc0c6fedc.json",
       "from": 2000,
       "to": 2099
     }
   ],
   "files": {
-    "citers": "index/citers-06a247bbfc09",
-    "core": "index/core-2547f84b3bb3.json",
+    "citers": "index/citers-148217de806c",
+    "core": "index/core-4fdb4a531851.json",
     "history": "index/history",
     "presences": "index/presences-66df0e87ed41.json",
-    "review": "index/review-db70a5fce6e1.json",
-    "search": "index/search-6cd2db6a2edd.json",
-    "sources": "index/sources-fcc1f1ebd5c8.json",
-    "spine": "index/spine-9535c0c67551.json"
+    "review": "index/review-d8f7c0ae1089.json",
+    "search": "index/search-f068a1a222c2.json",
+    "sources": "index/sources-6ca202841cab.json",
+    "spine": "index/spine-9485699aec30.json"
   },
   "land": [
     {
@@ -280,6 +280,7 @@
   },
   "officesByEvent": {
     "1908-portuguese-legislative-election": [
+      "joao-franco-liberal-regenerator-party-1901",
       "joao-franco-prime-minister-1906",
       "manuel-ii-monarch-1908"
     ],
@@ -486,6 +487,7 @@
     ],
     "lisbon-regicide": [
       "carlos-i-monarch-1889",
+      "joao-franco-liberal-regenerator-party-1901",
       "joao-franco-prime-minister-1906",
       "manuel-ii-monarch-1908"
     ],
@@ -541,6 +543,7 @@
       "salazar-prime-minister-1932"
     ],
     "sidonio-pais-assassinated-1918": [
+      "sidonio-pais-national-republican-party-1918",
       "sidonio-pais-president-1917",
       "sidonio-pais-prime-minister-1917"
     ],
@@ -685,6 +688,7 @@
     "head-of-government",
     "head-of-state",
     "host",
+    "institution",
     "invader",
     "leader",
     "member",
@@ -864,6 +868,12 @@
     ],
     "leadership-of-frelimo": [
       "eduardo-mondlane-frelimo-1962"
+    ],
+    "leadership-of-liberal-regenerator-party": [
+      "joao-franco-liberal-regenerator-party-1901"
+    ],
+    "leadership-of-national-republican-party": [
+      "sidonio-pais-national-republican-party-1918"
     ],
     "leadership-of-paigc": [
       "amilcar-cabral-paigc-1956"

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "treaty-of-sevres--turkish-war-of-independence--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Sèvres\", revision 1369307123"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Turkish War of Independence\", revision 1372145108"
+    }
+  ],
+  "from": "treaty-of-sevres",
+  "to": "turkish-war-of-independence",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The nationalist movement in Anatolia predates the treaty — the congresses of Erzurum and Sivas met in 1919, against the Greek landing at Smyrna — so the claim is not that Sèvres began the resistance. It is that Sèvres gave it the thing it had lacked: a signed partition, accepted by the sultan's government, that made the movement in Ankara rather than the government in Constantinople the plausible custodian of the Turkish state. From August 1920 the war was fought over whether that document would be applied, and it ended when Lausanne annulled it.",
+  "dispute": null
+}

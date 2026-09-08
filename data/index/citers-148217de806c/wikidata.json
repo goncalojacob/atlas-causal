@@ -1,0 +1,864 @@
+{
+  "citations": [
+    {
+      "dissent": false,
+      "id": "democratic-leftwing-republican-party",
+      "kind": "actor",
+      "locator": "Q3366682"
+    },
+    {
+      "dissent": false,
+      "id": "ecologist-party-the-greens",
+      "kind": "actor",
+      "locator": "Q978086"
+    },
+    {
+      "dissent": false,
+      "id": "evolutionist-party",
+      "kind": "actor",
+      "locator": "Q1720273"
+    },
+    {
+      "dissent": false,
+      "id": "liberal-initiative",
+      "kind": "actor",
+      "locator": "Q46122950"
+    },
+    {
+      "dissent": false,
+      "id": "liberal-regenerator-party",
+      "kind": "actor",
+      "locator": "Q75660"
+    },
+    {
+      "dissent": false,
+      "id": "national-republican-party",
+      "kind": "actor",
+      "locator": "Q1513692"
+    },
+    {
+      "dissent": false,
+      "id": "nationalist-republican-party",
+      "kind": "actor",
+      "locator": "Q847883"
+    },
+    {
+      "dissent": false,
+      "id": "people-animals-nature",
+      "kind": "actor",
+      "locator": "Q2054840"
+    },
+    {
+      "dissent": false,
+      "id": "people-s-democratic-union",
+      "kind": "actor",
+      "locator": "Q2119074"
+    },
+    {
+      "dissent": false,
+      "id": "people-s-monarchist-party",
+      "kind": "actor",
+      "locator": "Q1851550"
+    },
+    {
+      "dissent": false,
+      "id": "portuguese-democratic-movement",
+      "kind": "actor",
+      "locator": "Q613464"
+    },
+    {
+      "dissent": false,
+      "id": "reconstitution-party",
+      "kind": "actor",
+      "locator": "Q2054732"
+    },
+    {
+      "dissent": false,
+      "id": "redes-energeticas-nacionais",
+      "kind": "actor",
+      "locator": "Q1862842"
+    },
+    {
+      "dissent": false,
+      "id": "republican-liberal-party",
+      "kind": "actor",
+      "locator": "Q2054660"
+    },
+    {
+      "dissent": false,
+      "id": "revolutionary-socialist-party",
+      "kind": "actor",
+      "locator": "Q2054807"
+    },
+    {
+      "dissent": false,
+      "id": "1908-portuguese-legislative-election",
+      "kind": "event",
+      "locator": "Q7232747"
+    },
+    {
+      "dissent": false,
+      "id": "1911-portuguese-constituent-national-assembly-election",
+      "kind": "event",
+      "locator": "Q7232627"
+    },
+    {
+      "dissent": false,
+      "id": "1911-portuguese-presidential-election",
+      "kind": "event",
+      "locator": "Q97516175"
+    },
+    {
+      "dissent": false,
+      "id": "1915-portuguese-legislative-election",
+      "kind": "event",
+      "locator": "Q7232749"
+    },
+    {
+      "dissent": false,
+      "id": "1918-portuguese-presidential-election",
+      "kind": "event",
+      "locator": "Q21872940"
+    },
+    {
+      "dissent": false,
+      "id": "1919-portuguese-presidential-election",
+      "kind": "event",
+      "locator": "Q21872497"
+    },
+    {
+      "dissent": false,
+      "id": "1921-portuguese-legislative-election",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "1923-portuguese-presidential-election",
+      "kind": "event",
+      "locator": "Q21714338"
+    },
+    {
+      "dissent": false,
+      "id": "1925-portuguese-legislative-election",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "1925-portuguese-presidential-election",
+      "kind": "event",
+      "locator": "Q21714331"
+    },
+    {
+      "dissent": false,
+      "id": "1928-portuguese-presidential-election",
+      "kind": "event",
+      "locator": "Q18167373"
+    },
+    {
+      "dissent": false,
+      "id": "1945-portuguese-legislative-election",
+      "kind": "event",
+      "locator": "Q7232758"
+    },
+    {
+      "dissent": false,
+      "id": "1949-portuguese-presidential-election",
+      "kind": "event",
+      "locator": "Q3277291"
+    },
+    {
+      "dissent": false,
+      "id": "1951-portuguese-presidential-election",
+      "kind": "event",
+      "locator": "Q18166749"
+    },
+    {
+      "dissent": false,
+      "id": "1957-guinean-territorial-assembly-election",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "1965-portuguese-presidential-election",
+      "kind": "event",
+      "locator": "Q16153770"
+    },
+    {
+      "dissent": false,
+      "id": "1969-portuguese-legislative-election",
+      "kind": "event",
+      "locator": "Q7232769"
+    },
+    {
+      "dissent": false,
+      "id": "1972-portuguese-presidential-election",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "1973-portuguese-legislative-election",
+      "kind": "event",
+      "locator": "Q7232770"
+    },
+    {
+      "dissent": false,
+      "id": "1975-sao-tomean-legislative-election",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "1976-azorean-regional-election",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "1976-portuguese-local-elections",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "1977-mozambican-general-election",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "1979-portuguese-legislative-election",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "1979-portuguese-local-elections",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "1980-portuguese-legislative-election",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "1980-portuguese-presidential-election",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "1983-portuguese-legislative-election",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "1985-portuguese-legislative-election",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "1987-european-parliament-election-in-portugal",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "1991-portuguese-legislative-election",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "1995-portuguese-legislative-election",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "1996-portuguese-presidential-election",
+      "kind": "event",
+      "locator": "Q3066523"
+    },
+    {
+      "dissent": false,
+      "id": "1998-portuguese-abortion-referendum",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "1999-macanese-chief-executive-election",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "2001-portuguese-local-elections",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "2002-portuguese-legislative-election",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "2005-portuguese-legislative-election",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "2006-lebanon-war",
+      "kind": "event",
+      "locator": "Q49104"
+    },
+    {
+      "dissent": false,
+      "id": "2006-portuguese-presidential-election",
+      "kind": "event",
+      "locator": "Q2715397"
+    },
+    {
+      "dissent": false,
+      "id": "2007-portuguese-abortion-referendum",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "2009-portuguese-legislative-election",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "2011-portuguese-legislative-election",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "2011-portuguese-socialist-party-leadership-election",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "2014-portuguese-socialist-party-prime-ministerial-primary",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "2022-portuguese-social-democratic-party-leadership-election",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "2022-portuguese-social-democratic-party-leadership-election-q111182017",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "2023-madeiran-regional-election",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "2024-madeiran-regional-election",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "2025-2026-iranian-protests",
+      "kind": "event",
+      "locator": "Q137612545"
+    },
+    {
+      "dissent": false,
+      "id": "2025-madeiran-regional-election",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "algerian-war",
+      "kind": "event",
+      "locator": "Q200790"
+    },
+    {
+      "dissent": false,
+      "id": "armenian-genocide",
+      "kind": "event",
+      "locator": "Q80034"
+    },
+    {
+      "dissent": false,
+      "id": "assassination-of-archduke-franz-ferdinand",
+      "kind": "event",
+      "locator": "Q192050"
+    },
+    {
+      "dissent": false,
+      "id": "august-1915-portuguese-presidential-election",
+      "kind": "event",
+      "locator": "Q97516196"
+    },
+    {
+      "dissent": false,
+      "id": "bangladesh-liberation-war",
+      "kind": "event",
+      "locator": "Q371394"
+    },
+    {
+      "dissent": false,
+      "id": "batepa-massacre",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "beer-hall-putsch",
+      "kind": "event",
+      "locator": "Q36749"
+    },
+    {
+      "dissent": false,
+      "id": "boxer-rebellion",
+      "kind": "event",
+      "locator": "Q150229"
+    },
+    {
+      "dissent": false,
+      "id": "bucha-massacre",
+      "kind": "event",
+      "locator": "Q111467700"
+    },
+    {
+      "dissent": false,
+      "id": "charter-of-the-united-nations",
+      "kind": "event",
+      "locator": "Q171328"
+    },
+    {
+      "dissent": false,
+      "id": "chinese-civil-war",
+      "kind": "event",
+      "locator": "Q179975"
+    },
+    {
+      "dissent": false,
+      "id": "covid-19-pandemic",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "covid-19-pandemic-in-europe",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "crisis-portugal",
+      "kind": "event",
+      "locator": "Q3002776"
+    },
+    {
+      "dissent": false,
+      "id": "cuban-revolution",
+      "kind": "event",
+      "locator": "Q11264"
+    },
+    {
+      "dissent": false,
+      "id": "eastern-front",
+      "kind": "event",
+      "locator": "Q189266"
+    },
+    {
+      "dissent": false,
+      "id": "eleicoes-legislativas-regionais-na-madeira-em-1976",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "euromaidan",
+      "kind": "event",
+      "locator": "Q15224558"
+    },
+    {
+      "dissent": false,
+      "id": "european-convention-on-human-rights",
+      "kind": "event",
+      "locator": "Q183191"
+    },
+    {
+      "dissent": false,
+      "id": "february-revolution",
+      "kind": "event",
+      "locator": "Q101534"
+    },
+    {
+      "dissent": false,
+      "id": "first-indochina-war",
+      "kind": "event",
+      "locator": "Q748780"
+    },
+    {
+      "dissent": false,
+      "id": "full-scale-russo-ukrainian-war",
+      "kind": "event",
+      "locator": "Q110999040"
+    },
+    {
+      "dissent": false,
+      "id": "gaza-genocide",
+      "kind": "event",
+      "locator": "Q124086054"
+    },
+    {
+      "dissent": false,
+      "id": "gaza-war",
+      "kind": "event",
+      "locator": "Q122962941"
+    },
+    {
+      "dissent": false,
+      "id": "great-depression",
+      "kind": "event",
+      "locator": "Q8698"
+    },
+    {
+      "dissent": false,
+      "id": "guinean-constitutional-referendum-1958",
+      "kind": "event",
+      "locator": "Q5616514"
+    },
+    {
+      "dissent": false,
+      "id": "gulf-war",
+      "kind": "event",
+      "locator": "Q37643"
+    },
+    {
+      "dissent": false,
+      "id": "hat-nipah-and-same-massacres",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "iberian-pact",
+      "kind": "event",
+      "locator": "Q884821"
+    },
+    {
+      "dissent": false,
+      "id": "indo-pakistani-war-of-1965",
+      "kind": "event",
+      "locator": "Q233583"
+    },
+    {
+      "dissent": false,
+      "id": "international-covenant-on-civil-and-political-rights",
+      "kind": "event",
+      "locator": "Q392119"
+    },
+    {
+      "dissent": false,
+      "id": "iranian-revolution",
+      "kind": "event",
+      "locator": "Q126065"
+    },
+    {
+      "dissent": false,
+      "id": "iraq-war",
+      "kind": "event",
+      "locator": "Q545449"
+    },
+    {
+      "dissent": false,
+      "id": "katyn-massacre",
+      "kind": "event",
+      "locator": "Q134301"
+    },
+    {
+      "dissent": false,
+      "id": "korean-war",
+      "kind": "event",
+      "locator": "Q8663"
+    },
+    {
+      "dissent": false,
+      "id": "lebanese-civil-war",
+      "kind": "event",
+      "locator": "Q208484"
+    },
+    {
+      "dissent": false,
+      "id": "lisbon-regicide",
+      "kind": "event",
+      "locator": "Q2665185"
+    },
+    {
+      "dissent": false,
+      "id": "maastricht-treaty",
+      "kind": "event",
+      "locator": "Q11146"
+    },
+    {
+      "dissent": false,
+      "id": "may-1915-portuguese-presidential-election",
+      "kind": "event",
+      "locator": "Q97516248"
+    },
+    {
+      "dissent": false,
+      "id": "molotov-ribbentrop-pact",
+      "kind": "event",
+      "locator": "Q130796"
+    },
+    {
+      "dissent": false,
+      "id": "mueda-massacre",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "munich-agreement",
+      "kind": "event",
+      "locator": "Q154255"
+    },
+    {
+      "dissent": false,
+      "id": "october-revolution",
+      "kind": "event",
+      "locator": "Q42976"
+    },
+    {
+      "dissent": false,
+      "id": "orange-revolution",
+      "kind": "event",
+      "locator": "Q836386"
+    },
+    {
+      "dissent": false,
+      "id": "paris-peace-conference",
+      "kind": "event",
+      "locator": "Q199820"
+    },
+    {
+      "dissent": false,
+      "id": "portuguese-regionalisation-referendum-1998",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "potsdam-conference",
+      "kind": "event",
+      "locator": "Q151187"
+    },
+    {
+      "dissent": false,
+      "id": "russian-civil-war",
+      "kind": "event",
+      "locator": "Q79911"
+    },
+    {
+      "dissent": false,
+      "id": "russian-revolution-of-1905",
+      "kind": "event",
+      "locator": "Q184928"
+    },
+    {
+      "dissent": false,
+      "id": "russo-georgian-war",
+      "kind": "event",
+      "locator": "Q620735"
+    },
+    {
+      "dissent": false,
+      "id": "russo-ukrainian-war",
+      "kind": "event",
+      "locator": "Q15860072"
+    },
+    {
+      "dissent": false,
+      "id": "schengen-agreement",
+      "kind": "event",
+      "locator": "Q2822795"
+    },
+    {
+      "dissent": false,
+      "id": "second-boer-war",
+      "kind": "event",
+      "locator": "Q215112"
+    },
+    {
+      "dissent": false,
+      "id": "second-sino-japanese-war",
+      "kind": "event",
+      "locator": "Q170314"
+    },
+    {
+      "dissent": false,
+      "id": "spanish-civil-war",
+      "kind": "event",
+      "locator": "Q10859"
+    },
+    {
+      "dissent": false,
+      "id": "the-holocaust",
+      "kind": "event",
+      "locator": "Q2763"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-accession-1985",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-brest-litovsk",
+      "kind": "event",
+      "locator": "Q122371"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-friendship-and-cooperation-between-spain-and-portugal",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-lausanne",
+      "kind": "event",
+      "locator": "Q193258"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-portsmouth",
+      "kind": "event",
+      "locator": "Q548067"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-rome",
+      "kind": "event",
+      "locator": "Q167457"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-sevres",
+      "kind": "event",
+      "locator": "Q182515"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-trianon",
+      "kind": "event",
+      "locator": "Q181902"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-versailles",
+      "kind": "event",
+      "locator": "Q8736"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-windsor",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "turkish-war-of-independence",
+      "kind": "event",
+      "locator": "Q234738"
+    },
+    {
+      "dissent": false,
+      "id": "twelve-day-war",
+      "kind": "event",
+      "locator": "Q134900605"
+    },
+    {
+      "dissent": false,
+      "id": "vietnam-war",
+      "kind": "event",
+      "locator": "Q8740"
+    },
+    {
+      "dissent": false,
+      "id": "wagner-group-rebellion",
+      "kind": "event",
+      "locator": "Q119860532"
+    },
+    {
+      "dissent": false,
+      "id": "wall-street-crash-of-1929",
+      "kind": "event",
+      "locator": "Q201684"
+    },
+    {
+      "dissent": false,
+      "id": "warsaw-uprising",
+      "kind": "event",
+      "locator": "Q1402078"
+    },
+    {
+      "dissent": false,
+      "id": "world-war-i",
+      "kind": "event",
+      "locator": "Q361"
+    },
+    {
+      "dissent": false,
+      "id": "world-war-ii",
+      "kind": "event",
+      "locator": "Q362"
+    },
+    {
+      "dissent": false,
+      "id": "xinhai-revolution",
+      "kind": "event",
+      "locator": "Q190517"
+    },
+    {
+      "dissent": false,
+      "id": "yom-kippur-war",
+      "kind": "event",
+      "locator": "Q49100"
+    },
+    {
+      "dissent": false,
+      "id": "young-turk-revolution-of-1908",
+      "kind": "event",
+      "locator": "Q4298662"
+    }
+  ],
+  "id": "wikidata",
+  "schema": 1
+}

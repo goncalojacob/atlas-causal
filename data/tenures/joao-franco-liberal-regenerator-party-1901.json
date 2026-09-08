@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "joao-franco-liberal-regenerator-party-1901",
+  "kind": "tenure",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-08",
+  "revised": "2026-09-08",
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "date",
+      "relation-drafted"
+    ],
+    "note": "Written in M41b from the cached Wikipedia leads it cites, to join an actor the second Portuguese round imported to a record the atlas already held. The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source."
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Liberal Regenerator Party\", revision 1371473198"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Partido Regenerador Liberal\", revision 69829967"
+    }
+  ],
+  "person": "joao-franco",
+  "office": "leadership-of-liberal-regenerator-party",
+  "when": {
+    "start": 1901,
+    "end": 1910
+  },
+  "startedBy": null,
+  "note": "Founded by him on 16 May 1901 after his break with Hintze Ribeiro. The end is the party record's own and was not read in a source."
+}
