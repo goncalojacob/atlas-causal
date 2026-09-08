@@ -418,6 +418,26 @@
     {
       "actorType": "institution",
       "aliases": [],
+      "id": "banco-comercial-portugues",
+      "name": "Banco Comercial Português",
+      "names": [
+        "Banco Comercial Português"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 1985
+      },
+      "wikidata": "Q118581",
+      "wikipedia": {
+        "en": "Banco Comercial Português",
+        "pt": "Banco Comercial Português"
+      }
+    },
+    {
+      "actorType": "institution",
+      "aliases": [],
       "id": "banco-de-portugal",
       "name": "Banco de Portugal",
       "names": [
@@ -1877,6 +1897,26 @@
       "when": {
         "end": null,
         "start": 1886
+      }
+    },
+    {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "euronext",
+      "name": "Euronext",
+      "names": [
+        "Euronext"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 2000
+      },
+      "wikidata": "Q842108",
+      "wikipedia": {
+        "en": "Euronext",
+        "pt": "Euronext"
       }
     },
     {
@@ -4087,6 +4127,28 @@
       "when": {
         "end": 1910,
         "start": 1886
+      }
+    },
+    {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "national-union",
+      "name": "National Union",
+      "names": [
+        "National Union",
+        "União Nacional",
+        "National Union (Portugal)"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": 1974,
+        "start": 1930
+      },
+      "wikidata": "Q954010",
+      "wikipedia": {
+        "en": "National Union (Portugal)",
+        "pt": "União Nacional"
       }
     },
     {
@@ -6314,6 +6376,27 @@
       "when": {
         "end": null,
         "start": 1886
+      }
+    },
+    {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "university-of-porto",
+      "name": "University of Porto",
+      "names": [
+        "University of Porto",
+        "Universidade do Porto"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 1911
+      },
+      "wikidata": "Q1422903",
+      "wikipedia": {
+        "en": "University of Porto",
+        "pt": "Universidade do Porto"
       }
     },
     {

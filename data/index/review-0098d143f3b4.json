@@ -13270,13 +13270,31 @@
     }
   ],
   "schema": 1,
-  "total": 1154,
+  "total": 1158,
   "warnings": [
+    {
+      "id": "banco-comercial-portugues",
+      "kind": "actor",
+      "message": "actor is referenced by no event and no relation, and holds no territory",
+      "rule": "actor-unused"
+    },
+    {
+      "id": "euronext",
+      "kind": "actor",
+      "message": "actor is referenced by no event and no relation, and holds no territory",
+      "rule": "actor-unused"
+    },
     {
       "id": "iberian-blackout-2025",
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"
+    },
+    {
+      "id": "national-union",
+      "kind": "actor",
+      "message": "actor is referenced by no event and no relation, and holds no territory",
+      "rule": "actor-unused"
     },
     {
       "id": "saint-denis",
@@ -13289,6 +13307,12 @@
       "kind": "source",
       "message": "source is cited by nothing under validation",
       "rule": "no-citers"
+    },
+    {
+      "id": "university-of-porto",
+      "kind": "actor",
+      "message": "actor is referenced by no event and no relation, and holds no territory",
+      "rule": "actor-unused"
     }
   ]
 }

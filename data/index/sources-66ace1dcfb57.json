@@ -11942,8 +11942,32 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 118,
+      "citationCount": 122,
       "citations": [
+        {
+          "dissent": false,
+          "id": "banco-comercial-portugues",
+          "kind": "actor",
+          "locator": "Q118581"
+        },
+        {
+          "dissent": false,
+          "id": "euronext",
+          "kind": "actor",
+          "locator": "Q842108"
+        },
+        {
+          "dissent": false,
+          "id": "national-union",
+          "kind": "actor",
+          "locator": "Q954010"
+        },
+        {
+          "dissent": false,
+          "id": "university-of-porto",
+          "kind": "actor",
+          "locator": "Q1422903"
+        },
         {
           "dissent": false,
           "id": "1908-portuguese-legislative-election",
