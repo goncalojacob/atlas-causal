@@ -402,8 +402,25 @@ export function intervalFor(kind, times) {
     : { from: first(times.pointInTime) ?? first(times.start) ?? first(times.inception), to: first(times.end) ?? first(times.pointInTime) ?? first(times.dissolved) };
   if (!pick.from) return null;
   const when = { start: pick.from.year, end: pick.to ? pick.to.year : null };
-  if (pick.from.date) when.date = pick.from.date;
-  if (pick.to?.date && pick.to !== pick.from) when.endDate = pick.to.date;
+  // An actor's span is years and nothing finer. The exact date is not left
+  // off because the schema forbids it — common/interval.json allows `date` on
+  // any interval — but because an actor record has nowhere to keep it: the
+  // contribute form offers a start and an end for an actor and an exact date
+  // only for an event and a relation, so a save through the form drops it and
+  // the record no longer matches the file. That is what bundle.test.mjs means
+  // by an unedited save being byte identical, and it is the rule that keeps an
+  // imported record to what a person could have written by hand. All 414
+  // actors here predate this and carry years alone; Euronext, founded on a day
+  // Wikidata knows, was the first import to hit it.
+  //
+  // The other reading is that the actor form should carry an exact date, which
+  // would keep the day. That is a change to the contribute interface and to
+  // what every contributor is asked for, so it is the owner's to make and not
+  // this run's.
+  if (kind !== 'actor') {
+    if (pick.from.date) when.date = pick.from.date;
+    if (pick.to?.date && pick.to !== pick.from) when.endDate = pick.to.date;
+  }
   // The calendar is display-only and only the year drives anything; saying
   // Gregorian for a date after the reform and nothing before it is the same
   // default the rest of the atlas uses, so it is left off rather than
@@ -503,7 +520,16 @@ export function placeRecord(read, { id, created, region = null }) {
   const label = read.labels.en ?? read.labels.pt ?? read.qid;
   return envelope(id, 'place', created, {
     ...identityOf(read),
-    sources: [{ source: SOURCE_ID, locator: read.qid }],
+    // A place is not cited, and this is the atlas's decision rather than an
+    // oversight: rule 6 lists the kinds that must cite and place is not among
+    // them, and CITATION_LISTS in src/contribute/bundle.js says why — a place
+    // is a geographic fact, not an argument — and gives the place form no
+    // citation field at all. So a place saved through that form comes back
+    // with an empty list, and a place imported with one stops matching its own
+    // file, which is the invariant bundle.test.mjs holds over data/. Nothing
+    // is lost by leaving it empty: the item this place was read from is on the
+    // record already, in `wikidata`.
+    sources: [],
     names: namesFor(read),
     where: { lon: read.point.lon, lat: read.point.lat, precision: 'point', label },
     region,
