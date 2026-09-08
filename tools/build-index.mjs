@@ -9,16 +9,19 @@
 //   node tools/build-index.mjs [--data <dir>]
 
 import { createHash } from 'node:crypto';
+import { gzipSync } from 'node:zlib';
 import { mkdir, readdir, readFile, rmdir, unlink, writeFile } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
-import { buildPresenceIndex, buildSpine, buildTopology, byId, citerFiles, rolesInUse } from '../src/validate/core.js';
+import {
+  buildAttributeShards, buildCore, buildPresenceIndex, buildSpine, buildTopology, byId, citerFiles, rolesInUse,
+} from '../src/validate/core.js';
 import { checkRules } from '../src/validate/rules.js';
 import { createRegionDeriver, regionBounds } from '../src/util/geo.js';
 import { degreesOf, digestOf, inQueue, KIND_ORDER } from '../src/review/queue.js';
 import { searchIndexFor } from '../src/search.js';
-import { explanationShards, shardName } from '../src/explanations.js';
+import { attributeShardName, explanationShards, shardName } from '../src/explanations.js';
 import { licensingTable } from '../src/licensing.js';
 import { createAtlasFromSpine, expandSpine, presencesFromIndex, INDEX_GENERATION } from '../src/data.js';
 import { readRecords, readRegions, readRegionPolygons, readRoles, readCategories, readLandFiles, readPresenceShards, paletteFile } from './lib/read.mjs';
@@ -42,7 +45,9 @@ export const TEMPLATES = ['entry.html', 'sources.html', 'narratives.html'];
 // `explanations-<from>-<to>-<hash>.json` is the period shard of H7, whose
 // middle part is two years and may carry a minus sign.
 // `presences-<hash>.json` is the territory metadata, out of the spine in I1.
-const HASHED = /^(?:(?:spine|search|sources|review|presences)-(?:[a-z]+-)?|explanations--?\d+--?\d+-)[0-9a-f]{12}\.json$/;
+// `core-<hash>.json` and `attributes-<key>-<hash>.json` are I3's split of the
+// spine, where the key is two years, `place` or `null` (i3-brief, A1 and A4).
+const HASHED = /^(?:(?:spine|search|sources|review|presences|core)-(?:[a-z]+-)?|(?:explanations|attributes)-(?:-?\d+--?\d+|null|[a-z]+)-)[0-9a-f]{12}\.json$/;
 const HASHED_DIR = /^citers-[0-9a-f]{12}$/;
 
 // Deep copy with keys sorted by UTF-16 code unit (Array.prototype.sort's
@@ -133,6 +138,21 @@ export async function buildIndex(dataDir = DEFAULT_DATA, prepared = {}) {
   const presenceIndex = buildPresenceIndex(topology);
   const presencesText = presenceIndex.presences.length ? compact(presenceIndex) : null;
   const presencesName = presencesText ? `presences-${hashOf(presencesText)}.json` : null;
+
+  // The split the second index cycle is for, written **beside** the spine and
+  // read by nothing yet: the core every page will load whole, and the
+  // attributes filed by century (docs/index2-plan.md, D4 and D5). I3 emits them
+  // and prints the bytes; I4 is what moves the pages over, and only if those
+  // bytes say the split pays.
+  //
+  // Compact for the reason the spine is: nobody reads a row of integers with
+  // their eyes, and the device that fetches it parses the whole of it.
+  const coreText = compact(buildCore(topology));
+  const coreName = `core-${hashOf(coreText)}.json`;
+  const attributes = buildAttributeShards(topology).map(({ key, from, to, file }) => {
+    const text = compact(file);
+    return { key, from, to, name: attributeShardName(key, hashOf(text)), text };
+  });
 
   // The sources index without its citer rows, since H3b: every bibliographic
   // field and `citationCount`, and the rows themselves in the citer directory
@@ -273,6 +293,10 @@ export async function buildIndex(dataDir = DEFAULT_DATA, prepared = {}) {
       history: `index/${HISTORY_DIR}`,
       search: `index/${searchName}`,
       spine: `index/${spineName}`,
+      // The core of I3, beside the spine and read by nothing yet. Named all the
+      // same: a file the manifest does not name is a file no page could ask
+      // for, and I4's first commit is a page asking for this one.
+      core: `index/${coreName}`,
       sources: `index/${sourcesName}`,
       review: `index/${reviewName}`,
       // Absent for a dataset with no presences, which is what says there are
@@ -316,6 +340,13 @@ export async function buildIndex(dataDir = DEFAULT_DATA, prepared = {}) {
     // The links' arguments, in year order. Fetched in bulk by whatever reads
     // a path — never at load, and never to draw anything.
     explanationShards: explanations.map(({ from, to, name }) => ({ file: `index/${name}`, from, to })),
+    // The attribute shards of I3, in year order and then the two that answer no
+    // year: the places, which have none, and the records whose interval will
+    // not parse or is null (index2-plan, A8). `key` is the middle of the file's
+    // own name and is what a record's filing key stringifies to, so "which
+    // shard is this record in" is one comparison rather than a search by years
+    // that the two un-windowed shards would both answer.
+    attributeShards: attributes.map(({ key, from, to, name }) => ({ file: `index/${name}`, key, from, to })),
     // The hue each actor's territory is drawn in, when there is a palette to
     // draw from: written by tools/build-palette.mjs, not by this tool, and
     // named here so the site fetches it in one request with the rest.
@@ -363,6 +394,8 @@ export async function buildIndex(dataDir = DEFAULT_DATA, prepared = {}) {
       'manifest.json': manifest,
       [searchName]: searchText,
       [spineName]: spineText,
+      [coreName]: coreText,
+      ...Object.fromEntries(attributes.map(({ name, text }) => [name, text])),
       ...(presencesName === null ? {} : { [presencesName]: presencesText }),
       [sourcesName]: sourcesText,
       [reviewName]: reviewText,
@@ -519,6 +552,52 @@ export function pageReport(pages) {
   };
 }
 
+// What the build prints about the split of I3: the core's bytes raw and
+// gzipped, each attribute shard's, and the totals — for the dataset it was
+// pointed at, which is the whole point (`--data <dir>` builds the bench atlas
+// and prints its numbers beside the repository's).
+//
+// The search shard is printed beside them because it is the other whole-corpus
+// file every `index.html` parses — 171 KB today and 2.75 MB at 10^4 — and the
+// decision after this one is taken against a number rather than an argument
+// (index2-plan, A3; i3-brief, A6). The spine is there to say what the core is
+// being compared with.
+//
+// Gzip because that is what a page pays over the wire and raw because that is
+// what `JSON.parse` and the heap pay, and the second is where the wall is.
+export function indexReport(built) {
+  const manifest = JSON.parse(built.files['manifest.json']);
+  const of = (file) => {
+    const name = path.basename(file);
+    const text = built.files[name];
+    if (text === undefined) return null;
+    const raw = Buffer.from(text, 'utf8');
+    return { name, bytes: raw.byteLength, gzip: gzipSync(raw, { level: 9 }).byteLength };
+  };
+  const core = of(manifest.files.core);
+  const shards = (manifest.attributeShards ?? []).map((shard) => ({ key: shard.key, ...of(shard.file) }));
+  return {
+    core,
+    shards,
+    search: of(manifest.files.search),
+    spine: of(manifest.files.spine),
+    totals: {
+      bytes: (core?.bytes ?? 0) + shards.reduce((n, s) => n + s.bytes, 0),
+      gzip: (core?.gzip ?? 0) + shards.reduce((n, s) => n + s.gzip, 0),
+    },
+  };
+}
+
+function printIndexReport(report) {
+  const row = (label, entry) => `  ${label.padEnd(30)} ${String(entry.bytes.toLocaleString('en-US')).padStart(11)} B  ${String(entry.gzip.toLocaleString('en-US')).padStart(10)} B gzipped`;
+  console.log('the core and the attribute shards (I3; nothing reads them yet):');
+  if (report.core) console.log(row(report.core.name, report.core));
+  for (const shard of report.shards) console.log(row(shard.name, shard));
+  console.log(row('— the two together', report.totals));
+  if (report.spine) console.log(row(`the spine, for comparison`, report.spine));
+  if (report.search) console.log(row('the search shard, beside it', report.search));
+}
+
 async function main(argv) {
   let dataDir = DEFAULT_DATA;
   let siteDir;
@@ -546,6 +625,7 @@ async function main(argv) {
   await writeIndex(dataDir, built);
   const c = built.topology;
   console.log(`index written to ${path.relative(process.cwd(), path.join(dataDir, 'index')) || '.'}: ${c.events.length} events, ${c.edges.length} edges, ${c.actors.length} actors, ${c.relations.length} relations, ${c.offices.length} offices, ${c.tenures.length} tenures, ${c.narratives.length} narratives, ${c.places.length} places, ${c.presences.length} presences, ${c.sources.length} sources`);
+  printIndexReport(indexReport(built));
   if (siteDir) {
     await writeSite(siteDir, built.pages);
     const report = pageReport(built.pages);

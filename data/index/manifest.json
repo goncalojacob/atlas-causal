@@ -1,4 +1,36 @@
 {
+  "attributeShards": [
+    {
+      "file": "index/attributes-1800-1899-fad96912db09.json",
+      "from": 1800,
+      "key": "1800-1899",
+      "to": 1899
+    },
+    {
+      "file": "index/attributes-1900-1999-ae2d208225b4.json",
+      "from": 1900,
+      "key": "1900-1999",
+      "to": 1999
+    },
+    {
+      "file": "index/attributes-2000-2099-55d2f3185918.json",
+      "from": 2000,
+      "key": "2000-2099",
+      "to": 2099
+    },
+    {
+      "file": "index/attributes-null-77b4befa073d.json",
+      "from": null,
+      "key": "null",
+      "to": null
+    },
+    {
+      "file": "index/attributes-place-dd7c2b838df4.json",
+      "from": null,
+      "key": "place",
+      "to": null
+    }
+  ],
   "categoriesAllowed": [
     {
       "description": "A war, a campaign, a battle or a siege: organised armed force between polities.",
@@ -93,12 +125,13 @@
   ],
   "files": {
     "citers": "index/citers-06a247bbfc09",
+    "core": "index/core-2547f84b3bb3.json",
     "history": "index/history",
-    "presences": "index/presences-59a337d8efa1.json",
+    "presences": "index/presences-66df0e87ed41.json",
     "review": "index/review-db70a5fce6e1.json",
     "search": "index/search-6cd2db6a2edd.json",
     "sources": "index/sources-fcc1f1ebd5c8.json",
-    "spine": "index/spine-b224722125ca.json"
+    "spine": "index/spine-9535c0c67551.json"
   },
   "land": [
     {
@@ -824,7 +857,7 @@
       "label": "Institution"
     }
   ],
-  "schema": 3,
+  "schema": 4,
   "tenuresByOffice": {
     "leadership-of-chega": [
       "andre-ventura-chega-2019"

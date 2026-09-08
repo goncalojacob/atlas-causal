@@ -3,7 +3,9 @@ import assert from 'node:assert/strict';
 import { mkdtemp, cp, writeFile, readdir, readFile, mkdir, rm } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import path from 'node:path';
-import { canonical, serialize, compact, buildIndex, writeIndex, readIndex, compareIndex } from '../tools/build-index.mjs';
+import {
+  canonical, serialize, compact, buildIndex, writeIndex, readIndex, compareIndex, indexReport,
+} from '../tools/build-index.mjs';
 import { runValidation } from '../tools/validate.mjs';
 import { buildTopology, eventWeights } from '../src/validate/core.js';
 import { checkRules } from '../src/validate/rules.js';
@@ -116,9 +118,9 @@ test('key order and file order in the source records do not change the bytes', a
 test('manifest names the hashed files, counts, lanes and land', async () => {
   const built = await buildIndex(FIXTURE_DATA);
   const manifest = JSON.parse(built.files['manifest.json']);
-  // 3 since I2: the generation goes up by one in every run that changes the
+  // 4 since I3: the generation goes up by one in every run that changes the
   // index's shape (index2-plan, D6).
-  assert.equal(manifest.schema, 3);
+  assert.equal(manifest.schema, 4);
   // `counts.presences` stays where it is: a count is not a file, and it is
   // what the manifest says about a dataset whether or not the file exists.
   assert.deepEqual(manifest.counts, { events: 12, edges: 10, sources: 4, actors: 4, presences: 3, places: 11, relations: 3, offices: 2, tenures: 4, narratives: 1, regions: 3 });
@@ -271,6 +273,94 @@ test('weight is in the built index and does not change between builds', async ()
   assert.equal(first.files[name], second.files[name]);
 });
 
+// ─── The core and the attribute shards (I3) ────────────────────────────────
+
+test('the manifest names the core and the attribute shards, and both are written', async () => {
+  const built = await buildIndex(FIXTURE_DATA);
+  const manifest = JSON.parse(built.files['manifest.json']);
+  assert.equal(manifest.schema, 4);
+  assert.match(manifest.files.core, /^index\/core-[0-9a-f]{12}\.json$/);
+  assert.ok(Object.hasOwn(built.files, path.basename(manifest.files.core)));
+  // The centuries in year order, then the two that answer no year: the places,
+  // which have none, and the records whose interval is null (index2-plan, A8).
+  const shards = manifest.attributeShards;
+  assert.ok(shards.length > 2);
+  for (const shard of shards) {
+    assert.match(shard.file, /^index\/attributes-(?:-?\d+--?\d+|place|null)-[0-9a-f]{12}\.json$/);
+    assert.ok(Object.hasOwn(built.files, path.basename(shard.file)), shard.file);
+    // `key` is the middle of the file's own name: the loader matches a
+    // record's filing key against it, and the two shards that answer no year
+    // would otherwise be told apart by nothing.
+    assert.equal(path.basename(shard.file), `attributes-${shard.key}-${path.basename(shard.file).slice(-17, -5)}.json`);
+  }
+  const years = shards.filter((s) => s.from !== null);
+  assert.deepEqual(years.map((s) => s.from), [...years.map((s) => s.from)].sort((a, b) => a - b));
+  assert.deepEqual(shards.slice(years.length).map((s) => s.key), ['null', 'place']);
+  // Both are compact, for the reason the spine is: nobody reads a row of
+  // integers with their eyes and every device that fetches one parses it whole.
+  for (const name of [path.basename(manifest.files.core), path.basename(shards[0].file)]) {
+    assert.equal(built.files[name].split('\n').length, 2, `${name} is one line and a newline`);
+  }
+  // And nothing switched over: every page still reads the spine, which is what
+  // I3 is (docs/index2-plan.md, D5).
+  assert.match(manifest.files.spine, /^index\/spine-[0-9a-f]{12}\.json$/);
+});
+
+test('the core and the shards do not change between builds', async () => {
+  const first = await buildIndex(FIXTURE_DATA);
+  const second = await buildIndex(FIXTURE_DATA);
+  const manifest = JSON.parse(first.files['manifest.json']);
+  const names = [path.basename(manifest.files.core), ...manifest.attributeShards.map((s) => path.basename(s.file))];
+  assert.deepEqual(manifest.attributeShards, JSON.parse(second.files['manifest.json']).attributeShards);
+  for (const name of names) assert.equal(first.files[name], second.files[name], name);
+});
+
+// A6: what the run is measured by. The totals are the files' own bytes, so a
+// number written into STATUS.md is a number the build could print again.
+test('the printed report totals are the bytes of the files it names', async () => {
+  const built = await buildIndex(FIXTURE_DATA);
+  const manifest = JSON.parse(built.files['manifest.json']);
+  const report = indexReport(built);
+  const bytesOf = (file) => Buffer.byteLength(built.files[path.basename(file)], 'utf8');
+  assert.equal(report.core.bytes, bytesOf(manifest.files.core));
+  assert.equal(report.shards.length, manifest.attributeShards.length);
+  assert.deepEqual(report.shards.map((s) => s.key), manifest.attributeShards.map((s) => s.key));
+  const wanted = bytesOf(manifest.files.core)
+    + manifest.attributeShards.reduce((n, s) => n + bytesOf(s.file), 0);
+  assert.equal(report.totals.bytes, wanted);
+  assert.ok(report.totals.gzip > 0 && report.totals.gzip < report.totals.bytes);
+  // The search shard beside them: the other whole-corpus file every index.html
+  // parses, so the next decision is taken against a number (index2-plan, A3).
+  assert.equal(report.search.bytes, bytesOf(manifest.files.search));
+  assert.equal(report.spine.bytes, bytesOf(manifest.files.spine));
+});
+
+// A4: the pattern that decides which files `readIndex` reads and `writeIndex`
+// prunes. A file it does not match is a file a stale build leaves behind for
+// ever, served `immutable` under a hash that no longer describes it.
+test('every hashed file the build names matches the pattern, and a record could not', async () => {
+  const dir = await tempCopyOfFixtures();
+  try {
+    const built = await buildIndex(dir);
+    await writeIndex(dir, built);
+    const written = Object.keys(await readIndex(dir));
+    for (const name of Object.keys(built.files)) assert.ok(written.includes(name), `${name} was not read back`);
+    const HASHED = /^(?:(?:spine|search|sources|review|presences|core)-(?:[a-z]+-)?|(?:explanations|attributes)-(?:-?\d+--?\d+|null|[a-z]+)-)[0-9a-f]{12}\.json$/;
+    for (const name of written.filter((n) => n !== 'manifest.json' && !n.includes('/'))) {
+      assert.ok(HASHED.test(name), name);
+    }
+    // And nothing a record could be called: the index and the records share no
+    // directory, but the pruning is by name and a name that matched both would
+    // be the one mistake that cannot be undone.
+    for (const name of ['carnation-revolution-1974.json', 'core-values.json', 'attributes-1900-1999.json',
+      'spine.json', 'presences-of-portugal.json', 'attributes-place-not-a-hash.json']) {
+      assert.equal(HASHED.test(name), false, name);
+    }
+  } finally {
+    await rm(dir, { recursive: true, force: true });
+  }
+});
+
 test('writeIndex removes stale hashed files and the result is fresh', async () => {
   const dir = await tempCopyOfFixtures();
   try {
@@ -279,6 +369,10 @@ test('writeIndex removes stale hashed files and the result is fresh', async () =
     // A presence file from an earlier build: hashed and `immutable` like the
     // rest, so a name the fresh build does not write has to go (I1).
     await writeFile(path.join(dir, 'index', 'presences-deadbeef0000.json'), '{}\n');
+    // And the two I3 added: a core and an attribute shard from an earlier
+    // build, hashed and `immutable` like the rest.
+    await writeFile(path.join(dir, 'index', 'core-deadbeef0000.json'), '{}\n');
+    await writeFile(path.join(dir, 'index', 'attributes-1400-1499-deadbeef0000.json'), '{}\n');
     await mkdir(path.join(dir, 'index', 'citers-deadbeef0000'), { recursive: true });
     await writeFile(path.join(dir, 'index', 'citers-deadbeef0000', 'fixture-source-a.json'), '[]\n');
     const built = await buildIndex(dir);
@@ -291,6 +385,16 @@ test('writeIndex removes stale hashed files and the result is fresh', async () =
       Object.keys(await readIndex(dir)).filter((n) => n.startsWith('presences-')),
       [path.basename(JSON.parse(built.files['manifest.json']).files.presences)],
       'the stale presence file is gone and the fresh one is there',
+    );
+    assert.deepEqual(
+      Object.keys(await readIndex(dir)).filter((n) => n.startsWith('core-')),
+      [path.basename(JSON.parse(built.files['manifest.json']).files.core)],
+      'the stale core is gone and the fresh one is there',
+    );
+    assert.deepEqual(
+      Object.keys(await readIndex(dir)).filter((n) => n.startsWith('attributes-')).sort(),
+      JSON.parse(built.files['manifest.json']).attributeShards.map((s) => path.basename(s.file)).sort(),
+      'the stale shard is gone and every fresh one is there',
     );
     assert.deepEqual(await readdir(path.join(dir, 'index', 'citers-deadbeef0000')).catch(() => null), null, 'the stale directory is gone');
     assert.deepEqual(compareIndex(await readIndex(dir), built), []);

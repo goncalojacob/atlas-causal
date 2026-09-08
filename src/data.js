@@ -32,13 +32,14 @@ async function defaultFetchJson(url, init) {
 // D6). What the number is for is the half-applied deploy: a manifest from one
 // generation beside a page from another would otherwise be read as though it
 // were the shape the page expects, silently and wrongly. It goes up by one in
-// every run that changes the index's shape — 3 since I2, which made every
-// record a positional row over a shared id table; 2 was I1, which took the
+// every run that changes the index's shape — 4 since I3, which wrote the core
+// and the attribute shards beside the spine; 3 was I2, which made every record
+// a positional row over a shared id table, and 2 was I1, which took the
 // presences out of the spine and put the region boxes in the manifest.
 //
 // The graph file carries the same number rather than one of its own: two
 // numbers for one artifact is two things to forget to bump.
-export const INDEX_GENERATION = 3;
+export const INDEX_GENERATION = 4;
 // A single set, because a deploy may serve one generation while the last is
 // still in a cache; today it holds one number and it is the place to add the
 // second when that becomes true.
