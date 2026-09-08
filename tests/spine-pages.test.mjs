@@ -45,21 +45,20 @@ const ATLAS_READY = 'return document.querySelectorAll(".map .mark, .timeline .ba
 // **`core` since I4a**, for the pages that have moved: the whole-corpus file
 // they parsed is now the core, which is the graph and what a mark, a bar and a
 // lane need, with the titles and the roles arriving a century at a time behind
-// it (docs/index2-plan.md, D4). `review.html` and `narratives.html` are the
-// rest of I4b's; when they move, `spine` leaves this table altogether and so
-// does the file.
+// it (docs/index2-plan.md, D4). `narratives.html` is the last of I4b's; when it
+// moves, `spine` leaves this table altogether and so does the file.
 //
-// `contribute.html` is a whole-universe reader and fetches every attribute
-// shard behind its draw (A2), which is a different promise from this one and
-// is asserted on its own below. What this row says is what it says of every
-// other page: the core once, and never the file the core replaced.
+// `contribute.html` and `review.html` are whole-universe readers and fetch
+// every attribute shard behind their draw (A2), which is a different promise
+// from this one and is asserted on its own below. What their rows say is what
+// every other row says: the core once, and never the file the core replaced.
 const PAGES = [
   ['index.html', ATLAS_READY, 'core', 1],
   ['entry.html?id=carnation-revolution-1974', 'return document.querySelectorAll(".entry-body").length > 0;', 'core', 1],
   ['narratives.html', 'return document.querySelectorAll(".narrative-card").length > 0;', 'spine', 0],
   ['sources.html', 'return document.querySelectorAll(".bib-entry").length > 0;', 'spine', 0],
   ['contribute.html', 'return document.querySelectorAll(".add-row button").length > 0;', 'core', 1],
-  ['review.html', 'return document.querySelectorAll(".queue-list .queue-item, .queue-list button").length > 0;', 'spine', 1],
+  ['review.html', 'return document.querySelectorAll(".queue-list .queue-item, .queue-list button").length > 0;', 'core', 1],
 ];
 
 // Everything the page asked the network for, as the browser recorded it.
@@ -365,18 +364,36 @@ test('a record is fetched with the day it was last revised', { skip }, async () 
 test('contribute.html draws on the core alone and then fetches every attribute shard', { skip }, async () => {
   await withBrowser(async (page, url) => {
     await open(page, url('contribute.html'), 'return document.querySelectorAll(".add-row button").length > 0;');
-    const drawn = await page.eval(REQUESTS);
-    const index = (part) => drawn.filter((name) => name.includes(`/index/${part}`)).length;
-    assert.equal(index('core-'), 1, 'the core, once');
-    assert.equal(index('spine-'), 0, 'and never the file it replaced');
-
-    const every = await shardCount();
-    await waitFor(page, `return performance.getEntriesByType("resource").filter((e) => e.name.includes("/index/attributes-")).length >= ${every};`, 'every attribute shard');
-    const after = await page.eval(SHARDS);
-    assert.equal(new Set(after).size, every, `${new Set(after).size} of ${every} shards, once each`);
-    assert.equal(after.length, every, `a shard asked for twice: ${after.join(' · ')}`);
-    // And the search shard, which the pickers read and which the page does not
-    // wait for either.
-    await waitFor(page, 'return performance.getEntriesByType("resource").some((e) => e.name.includes("/index/search-"));', 'the search shard');
+    await drawsThenHoldsTheCorpus(page);
   });
 });
+
+// The dashboard is the same reader for the same reason — rule 17, the referrer
+// warnings and rule 21 are all over the whole atlas — and it draws its queue
+// out of the review shards, which carry their own digests and wait for none of
+// this (i4-brief, section 1.4 and A2, A6).
+test('review.html draws on the core alone and then fetches every attribute shard', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await open(page, url('review.html'), 'return document.querySelectorAll(".queue-item").length > 0;');
+    await drawsThenHoldsTheCorpus(page);
+  });
+});
+
+// What both writer pages promise, which is the same promise twice: the core
+// once and never the spine before anything is drawn, then every attribute
+// shard exactly once, then the search shard.
+async function drawsThenHoldsTheCorpus(page) {
+  const drawn = await page.eval(REQUESTS);
+  const index = (part) => drawn.filter((name) => name.includes(`/index/${part}`)).length;
+  assert.equal(index('core-'), 1, 'the core, once');
+  assert.equal(index('spine-'), 0, 'and never the file it replaced');
+
+  const every = await shardCount();
+  await waitFor(page, `return performance.getEntriesByType("resource").filter((e) => e.name.includes("/index/attributes-")).length >= ${every};`, 'every attribute shard');
+  const after = await page.eval(SHARDS);
+  assert.equal(new Set(after).size, every, `${new Set(after).size} of ${every} shards, once each`);
+  assert.equal(after.length, every, `a shard asked for twice: ${after.join(' · ')}`);
+  // And the search shard, which the pickers read and which the page does not
+  // wait for either.
+  await waitFor(page, 'return performance.getEntriesByType("resource").some((e) => e.name.includes("/index/search-"));', 'the search shard');
+}

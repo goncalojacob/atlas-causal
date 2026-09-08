@@ -867,6 +867,43 @@ export { topologyFromSpine as expandSpine };
 // finding 9; h3a-brief, A4).
 export const ATTRIBUTE_SHARD_CAP = 4;
 
+// One attribute shard's rows into the records they are about, in place: a card,
+// a lens or a layer holds the record object itself, and replacing it would
+// leave every one of them reading the version it was handed
+// (spine.js, `applyAttributes`). `byKey` is `<kind>:<id>` over the core's own
+// records, which is the only thing the two callers below share.
+function fillFromShard(byKey, file) {
+  const partials = decodeSpineFile(file, SPINE_KINDS, ATTRIBUTE_COLUMNS);
+  for (const kind of SPINE_KINDS) {
+    for (const partial of partials[`${kind}s`] ?? []) {
+      const record = byKey.get(`${kind}:${partial.id}`);
+      if (record) applyAttributes(record, partial);
+    }
+  }
+}
+
+// `expandSpine` for the two files the spine split into. The dashboard wants the
+// lists and not an atlas — nothing on it is drawn on a map, every rule that runs
+// in the browser runs against these arrays, and `atlas.relations` and
+// `atlas.tenures` are the *active* ones, which is not the universe a reviewer
+// is reading. So it decodes the core here and fills it from the shards as they
+// land (i4-brief, A2 and A6).
+//
+// Until a shard lands its records read as the core plus the fallbacks, exactly
+// as they do in an atlas; there is no cap and nothing is evicted, because a
+// page that holds the whole corpus by definition has nothing to choose between.
+export function expandCore(core) {
+  const topology = decodeSpineFile(core, SPINE_KINDS, CORE_COLUMNS);
+  const byKey = new Map();
+  for (const kind of SPINE_KINDS) {
+    for (const record of topology[`${kind}s`] ?? []) {
+      byKey.set(`${kind}:${record.id}`, record);
+      fillFallbacks(record, boundsOf(record));
+    }
+  }
+  return { topology, fill: (file) => fillFromShard(byKey, file) };
+}
+
 export function createAtlasFromCore({ core, attributes = [], manifest, ...rest }) {
   const { dataRoot = 'data/', fetchJson = defaultFetchJson } = rest;
   const topology = decodeSpineFile(core, SPINE_KINDS, CORE_COLUMNS);
@@ -946,13 +983,7 @@ export function createAtlasFromCore({ core, attributes = [], manifest, ...rest }
   // after it, because three of them are sorted or keyed by something a shard
   // carries (createAtlas's `reindexRecords`).
   function applyShard(key, file) {
-    const partials = decodeSpineFile(file, SPINE_KINDS, ATTRIBUTE_COLUMNS);
-    for (const kind of SPINE_KINDS) {
-      for (const partial of partials[`${kind}s`] ?? []) {
-        const record = byKey.get(`${kind}:${partial.id}`);
-        if (record) applyAttributes(record, partial);
-      }
-    }
+    fillFromShard(byKey, file);
     loaded.set(key, file);
     touch(key);
     arrived += 1;

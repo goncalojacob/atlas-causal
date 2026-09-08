@@ -12,7 +12,7 @@
 
 import { esc } from '../util/esc.js';
 import { html } from '../util/dom.js';
-import { assertGeneration, expandSpine, presencesFromIndex } from '../data.js';
+import { assertGeneration, expandCore, presencesFromIndex } from '../data.js';
 import { loadSchemas } from '../validate/schemas.js';
 import {
   buildQueue, flagCounts, toolCounts, filterQueue, sortQueue, isDraft, inQueue, labelOf,
@@ -87,23 +87,27 @@ try {
   // finding 17): a manifest from a generation this build does not read is not
   // half-read, it is refused with the number it found.
   const manifest = assertGeneration(await getJson(`${dataRoot}index/manifest.json`, { cache: 'no-store' }));
-  const [spine, sourcesIndex, summary, schemas, searchEntries] = await Promise.all([
-    getJson(`${dataRoot}${manifest.files.spine}`),
+  const [core, sourcesIndex, summary, schemas] = await Promise.all([
+    getJson(`${dataRoot}${manifest.files.core}`),
     getJson(`${dataRoot}${manifest.files.sources}`),
     // The queue's summary: how many drafts of each kind there are and which
     // file holds them. The digests themselves are one file per kind and are
     // fetched when a kind is shown (health review B, finding 7).
     getJson(`${dataRoot}${manifest.files.review}`),
     loadSchemas({ root: 'schema/' }),
-    // The search shard, which the pickers scan. Folded at build time, so a
-    // dashboard that has it does not fold the corpus again; a dashboard
-    // whose fetch fails builds the index from the spine instead.
-    getJson(`${dataRoot}${manifest.files.search}`).then((file) => file.entries ?? null).catch(() => null),
   ]);
-  // The spine expanded back into the lists the editor and `checkRules` read.
+  // The core expanded back into the lists the editor and `checkRules` read.
   // The dashboard wants the records, not an atlas: nothing here is drawn on a
   // map, and every rule that runs in the browser runs against these arrays.
-  const expanded = expandSpine(spine);
+  //
+  // The names, the titles, the identifiers and the intervals a rule compares
+  // arrive behind this, a century at a time, and they are filled into these
+  // same objects (data.js, `expandCore`). Until the last one is in, the editor
+  // says so where its verdict goes: this page is a whole-universe reader —
+  // rule 21 asks whether a `wikidata` id is unique across the atlas — and a
+  // warning about half a corpus is one the CLI would not give (i4-brief, A2;
+  // index2 review, finding 2).
+  const { topology: expanded, fill } = expandCore(core);
 
   document.getElementById('fixtures-badge').hidden = !fixtures;
   const page = render({
@@ -145,7 +149,6 @@ try {
     historyOf: (id) => getJson(`${dataRoot}${manifest.files.history}/${encodeURIComponent(id)}.json`)
       .catch(() => null),
     schemas,
-    searchEntries,
     // Which records cite a source: not in the index every page loads, one
     // file per source since H3b. `retractionPlan` is the only thing on this
     // page that needs them, and only for the one source a reviewer is about
@@ -163,6 +166,27 @@ try {
       .then((file) => page.setPresences(presencesFromIndex(file)))
       .catch(() => {});
   }
+
+  // --- the corpus, behind the queue ----------------------------------------
+  //
+  // Every attribute shard, asked for in the manifest's own year order and all
+  // of them held: this page is a whole-universe reader and there is nothing for
+  // an LRU to choose between (i4-brief, A2). The rows the reviewer is looking
+  // at are the review shards' digests and do not wait for any of this; what
+  // waits is the verdict, and the editor says so until it can give one.
+  //
+  // A shard that will not load leaves the editor saying it is loading rather
+  // than warning about a corpus it only half has, which is the failure this
+  // whole discipline exists to avoid.
+  getJson(`${dataRoot}${manifest.files.search}`)
+    .then((file) => page.setSearchEntries(file.entries ?? null))
+    .catch(() => {});
+  const attributeShards = manifest.attributeShards ?? [];
+  if (attributeShards.length === 0) page.setUniverse();
+  else {
+    Promise.all(attributeShards.map((shard) => getJson(`${dataRoot}${shard.file}`).then(fill)))
+      .then(() => page.setUniverse(), () => {});
+  }
 } catch (error) {
   mount.innerHTML = `<p class="field-error"><code>${esc(error.message)}</code></p>
     <p>The dashboard needs the atlas index. Serve the repository root
@@ -171,15 +195,26 @@ try {
   throw error;
 }
 
-function render({ topology, summary, shardOf, historyOf, schemas, citersOf, searchEntries = null }) {
+function render({ topology, summary, shardOf, historyOf, schemas, citersOf }) {
   // The atlas's half of validation, built once for the page: a reviewer
   // opens one record after another and every editor validates against the
   // same universe and the same schema set (health review A, finding 11).
-  let prepared = preparedFor(topology, schemas);
+  //
+  // `null` until the corpus is whole, which is what the editor reads as "still
+  // loading the corpus" (i4-brief, A2). The queue is drawn out of the review
+  // shards and does not wait for it: those carry their own digests.
+  let prepared = null;
   // And the pickers' half: every reference field in every editor searches
   // this one index, built once for the page rather than once per record
   // opened (health review B, finding 6).
-  const pickers = pickerIndex({ topology, entries: searchEntries });
+  // What the pickers search. Empty until the search shard lands and never
+  // folded from the topology in the meantime: an index that offered a record's
+  // id as though it were its name would be the fallback text this cycle refuses
+  // (i4-brief, "no fallback text"). The shard is 2.75 MB at 10⁴ and this page
+  // draws before it, so `replace` is how it reaches every picker on the page at
+  // once (picker.js).
+  let searchEntries = null;
+  const pickers = pickerIndex({ topology, entries: [] });
   // The queue, a kind at a time. Each kind's digests are one file, fetched
   // the first time that kind is shown and kept; signing removes an entry from
   // the list, and reloading the page rebuilds it from the index the save
@@ -477,7 +512,7 @@ function render({ topology, summary, shardOf, historyOf, schemas, citersOf, sear
       record,
       topology,
       schemas,
-      prepared,
+      universe: () => prepared,
       pickers,
       today: today(),
       reviewer: () => normalizeReviewer({ name: nameInput.value, github: handleInput.value }),
@@ -873,13 +908,38 @@ function render({ topology, summary, shardOf, historyOf, schemas, citersOf, sear
   return {
     // The universe rebuilt around the presence file, once it lands (I1). Only
     // the universe: the pickers search for records a reference may name, and
-    // a presence is not addressable and is in none of them. An editor already
-    // open keeps the universe it was built with — it is one record's rules
-    // against a list that has just grown, and the next record opened has the
-    // whole of it.
+    // a presence is not addressable and is in none of them.
+    //
+    // Since I4b it is not built at all until the corpus is whole, so this only
+    // records the list; `setUniverse` below is what puts it together, and an
+    // editor already open is refreshed there rather than left on the universe
+    // it opened with — it read "still loading the corpus" until then, and it
+    // would go on reading it for ever.
     setPresences(list) {
       topology.presences = list ?? [];
+      if (prepared) prepared = preparedFor(topology, schemas);
+    },
+    // The corpus is in: the rules and the duplicate search have every title,
+    // every name and every identifier there is, and the editor on screen says
+    // what the CLI says (i4-brief, A2).
+    setUniverse() {
       prepared = preparedFor(topology, schemas);
+      // The pickers again: their memos hold labels a shard filled in — a link
+      // is named after the two events it runs between — and `null` folds the
+      // topology, which is what a page whose search shard would not load falls
+      // back to, now that it has its names.
+      pickers.replace(searchEntries);
+      editor?.repaintPickers();
+      editor?.refresh();
+    },
+    // The search shard, which the pickers scan. Folded at build time, so a
+    // dashboard that has it does not fold the corpus again; a dashboard whose
+    // fetch fails folds the topology itself once the corpus is in, which is
+    // what it did before the shard existed.
+    setSearchEntries(entries) {
+      searchEntries = entries;
+      pickers.replace(entries);
+      editor?.repaintPickers();
     },
   };
 }

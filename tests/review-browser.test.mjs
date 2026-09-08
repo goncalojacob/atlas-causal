@@ -155,14 +155,14 @@ test('review.html draws its queue and fetches the presences beside it', { skip }
   await withBrowser(async (page, url) => {
     await open(page, url('review.html'), QUEUE_READY);
     await waitFor(page, 'return performance.getEntriesByType("resource").some((e) => /\\/index\\/presences-/.test(e.name));', 'the presence file');
-    // Asked for once, and after the spine it is no longer part of.
+    // Asked for once, and after the core the page draws its queue out of.
     const timing = await page.eval(`return performance.getEntriesByType("resource")
-      .filter((e) => /\\/index\\/(spine|presences)-/.test(e.name))
-      .map((e) => ({ what: e.name.includes("/index/spine-") ? "spine" : "presences", at: e.startTime }));`);
+      .filter((e) => /\\/index\\/(core|presences)-/.test(e.name))
+      .map((e) => ({ what: e.name.includes("/index/core-") ? "core" : "presences", at: e.startTime }));`);
     assert.equal(timing.filter((e) => e.what === 'presences').length, 1, JSON.stringify(timing));
-    const spine = timing.find((e) => e.what === 'spine');
+    const core = timing.find((e) => e.what === 'core');
     const presences = timing.find((e) => e.what === 'presences');
-    assert.ok(presences.at >= spine.at, JSON.stringify(timing));
+    assert.ok(presences.at >= core.at, JSON.stringify(timing));
   });
 });
 
@@ -264,5 +264,52 @@ test('a reviewer can set an event\'s category, and the diff says so', { skip }, 
     };`);
     assert.ok(diff.fields.some((t) => t.includes('category')), diff.fields.join(' | '));
     assert.ok(diff.after.some((t) => t.includes('revolution')), diff.after.join(' | '));
+  });
+});
+
+
+// I4b, A2: the dashboard is a whole-universe reader. It draws its queue out of
+// the review shards and the record out of the core, and fetches every attribute
+// shard behind that — so until the last one is in, the editor says it is still
+// loading the corpus rather than reporting on half of it, and a save hangs on a
+// verdict nobody has given.
+//
+// What pins that the shards really were folded in is rule 21, which asks
+// whether a `wikidata` id is unique **across the atlas**: `wikidata` is in no
+// core row, so an editor reporting from the core alone would let a second
+// record take an item another one already has — which is the one mistake
+// nothing downstream can undo (index2 review, finding 2).
+test('the editor waits for the corpus and then warns what the CLI warns', { skip }, async () => {
+  // The other record's item, read off the repository rather than typed in
+  // here: what is asserted is that the browser finds the collision the CLI
+  // finds, so the CLI's own answer is where the number comes from.
+  const other = JSON.parse(await readFile(path.join(ROOT, 'data', 'events', '1890-portuguese-legislative-election.json'), 'utf8'));
+  assert.ok(other.wikidata, 'the record this test collides with carries a Wikidata item');
+
+  await withBrowser(async (page, url) => {
+    await open(page, url('review.html?open=1908-portuguese-legislative-election'), QUEUE_READY);
+    await waitFor(page, 'return document.querySelectorAll(".editor .field-wikidata input").length > 0;', 'the record open');
+    // Either the corpus is already in, or the editor is saying so and nothing
+    // can be saved on it. Asserted this way round because the alternative is a
+    // race with the network, which is never what a test should be about.
+    const early = await page.eval(`return {
+      loading: !document.querySelector('.editor .corpus-loading').hidden,
+      text: document.querySelector('.editor .corpus-loading').textContent,
+      save: (document.querySelector('.record-actions button, button.save') || {}).disabled,
+    };`);
+    if (early.loading) {
+      assert.match(early.text, /still loading the corpus/);
+      assert.equal(early.save, true, 'nothing is saved on a verdict nobody gave');
+    }
+
+    await waitFor(page, 'return document.querySelector(".editor .corpus-loading").hidden;', 'the corpus');
+    await page.eval(`const box = document.querySelector('.editor .field-wikidata input');
+      box.value = ${JSON.stringify(other.wikidata)};
+      box.dispatchEvent(new Event('input', { bubbles: true }));
+      return true;`);
+    await waitFor(page, 'return document.querySelectorAll(".editor .field-wikidata .field-error:not([hidden]), .editor .entry-errors li").length > 0;', 'rule 21');
+    const said = await page.eval(`return [...document.querySelectorAll('.editor .field-wikidata .field-error, .editor .entry-errors li')]
+      .map((e) => e.textContent).join(' ');`);
+    assert.match(said, /already the Wikidata item of the event 1890-portuguese-legislative-election/);
   });
 });

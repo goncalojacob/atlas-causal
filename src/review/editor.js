@@ -21,6 +21,7 @@ import {
 import { identifiers, citationText } from '../citation.js';
 import { citationRows, setVerified, clearVerified } from './citations.js';
 import { previewHtml } from '../entry/preview.js';
+import { LOADING_CORPUS } from '../attributes.js';
 
 // The error at /where/lon belongs to the longitude input, the one at
 // /sources/0/source to the citation list: walk up the path until a field
@@ -96,11 +97,18 @@ export function identityBlock(record) {
 // with the validation result, so the page can enable or disable Save.
 export function createEditor({
   record, topology, schemas, onChange = () => {}, reviewer = () => ({ name: '' }), today = null,
-  prepared = null, pickers = null, searchEntries = null,
+  prepared = null, pickers = null, searchEntries = null, universe = null,
 }) {
   // Built once per editor, or handed in by the dashboard so that opening
   // one record after another does not rebuild the atlas's half each time.
-  const reuse = prepared ?? preparedFor(topology, schemas);
+  const own = prepared ?? preparedFor(topology, schemas);
+  // Since I4b the dashboard draws its queue out of the review shards and the
+  // record out of the core, while the corpus itself is still arriving a century
+  // at a time; `universe()` answers `null` until the last shard is in
+  // (i4-brief, A2). It is asked on every refresh, so an editor opened before
+  // then starts reporting the moment the corpus is whole — and until then it
+  // says so rather than warning about things the CLI does not.
+  const universeOf = universe ?? (() => own);
   const index = pickers ?? pickerIndex({ topology, entries: searchEntries });
   const kind = record.kind;
   const values = valuesFromRecord(kind, record);
@@ -123,14 +131,23 @@ export function createEditor({
   root.addEventListener('submit', (event) => event.preventDefault());
   const recordErrors = html('ul', { class: 'entry-errors', hidden: 'hidden' });
   root.appendChild(recordErrors);
+  // Beside the rule output, and where it would be: what the editor says while
+  // the corpus is still on its way (attributes.js, LOADING_CORPUS).
+  const loadingEl = html('p', { class: 'muted corpus-loading', role: 'status', hidden: 'hidden' }, LOADING_CORPUS);
+  root.appendChild(loadingEl);
 
   let sequence = 0;
   const uid = (key) => `edit-${kind}-${key}-${(sequence += 1)}`;
 
   // The picker for one reference, wired to whatever holds the value: a field
   // of the record, or one row of a repeatable list.
+  // Every picker in this editor, so that they can all be repainted when what
+  // they search changes underneath them: the dashboard draws before the search
+  // shard lands and gives the index its entries afterwards (i4-brief, A2).
+  const drawn = [];
+
   function pickerFor(name, { value, label, id: domId, onChange: chose }) {
-    return createPicker({
+    const picker = createPicker({
       name,
       index,
       value,
@@ -139,6 +156,8 @@ export function createEditor({
       emptyLabel: name === 'places' ? 'no place: timeline only' : 'nothing chosen yet',
       onChange: chose,
     });
+    drawn.push(picker);
+    return picker;
   }
 
   function renderField(field) {
@@ -431,7 +450,7 @@ export function createEditor({
 
   function refresh() {
     const edited = current();
-    const result = validateBundle({ schema: 1, records: [edited] }, topology, schemas, reuse);
+    const reuse = universeOf();
 
     recordErrors.textContent = '';
     recordErrors.hidden = true;
@@ -440,6 +459,23 @@ export function createEditor({
       view.error.hidden = true;
       view.wrap.classList.remove('has-error');
     }
+
+    // The corpus is still arriving, so nothing is judged: rule 21 reads every
+    // record's `wikidata` and the interval rules read other records' `when`,
+    // and both of those come with the shards. What goes where the verdict
+    // would be is the one line saying so, and a save hangs on the empty
+    // result exactly as it hangs on a failing one (i4-brief, A2).
+    if (reuse === null) {
+      loadingEl.hidden = false;
+      const waiting = { errors: [], warnings: [], ok: false };
+      paintVerify();
+      drawPreviews();
+      onChange({ record: edited, result: waiting });
+      return { record: edited, result: waiting };
+    }
+    loadingEl.hidden = true;
+
+    const result = validateBundle({ schema: 1, records: [edited] }, topology, schemas, reuse);
     for (const error of result.errors) {
       const view = claim(fields, error.path);
       if (view && !view.wrap.hidden) {
@@ -468,6 +504,12 @@ export function createEditor({
     values,
     current,
     refresh,
+    // Every reference's label again, on an index that has changed underneath
+    // it: a record opened before the search shard landed wrote its labels out
+    // of an index that could not name anything yet (picker.js, `set`).
+    repaintPickers() {
+      for (const picker of drawn) picker.set(picker.value());
+    },
     paintVerify,
     result: first.result,
     focus() {
