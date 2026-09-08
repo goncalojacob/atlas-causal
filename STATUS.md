@@ -13,9 +13,54 @@ hundred lines again, cut it the same way.
 
 ## Last updated
 
-2026-09-06, after **M32b-2** (`docs/m32b-brief.md`, §4 and §5 under amendments
-A4, A5, A9 and A11: the second of M32b's two runs, and the last of M32b), on
-`m0`: **175 events know what kind of thing they were, and 154 still do not.**
+2026-09-08, after **I1** (`docs/index2/i1-brief.md` and its amendments, the
+first run of the second index cycle, `docs/index2-plan.md` D1, D2 and D6), on
+`m0`: **the atlas's first paint is half what it was — 991,468 bytes down to
+503,804, 968.2 KB to 492.0 KB.**
+
+**Two files left the first paint and one is new.** The presence metadata was
+49.2 % of the graph file and nothing reads it until the territory layer draws,
+so it is `data/index/presences-<hash>.json` — 267,134 bytes, named in the
+manifest, fetched by that layer beside the shard of outlines it already
+fetches. `data/geo/regions.json` was 221,050 bytes fetched before anything was
+drawn to answer one question, and the four numbers per lane that answer it are
+in the manifest as `regionBoxes`; the polygons themselves stay reachable as
+`atlas.loadRegionPolygons()` for the wash a `regional` event is drawn as, and
+are asked for by nothing else. The graph file is 581,688 → 314,567 bytes.
+
+| | before | after |
+|---|---|---|
+| the graph file | 581,688 | 314,567 |
+| `presences-<hash>.json` | — | 267,134 |
+| `manifest.json` | 25,043 | 25,550 |
+| `data/geo/regions.json`, at first paint | 221,050 | — |
+| **first paint** (with sources, land and palette) | **991,468** | **503,804** |
+
+**The brief's two thresholds are not met, and the arithmetic says why.** A5
+asks for the graph file under 290 KB raw and the whole first paint under 460;
+they land at 307.2 and 492.0. Both numbers were written on 6 September against
+a graph file of 542.9 KB, and M30b, M31 and M32b added 38.8 KB of events,
+actors and tenures to it before this run started — on that corpus this change
+lands at 269.4 and 455.6 and clears both. Nothing in I1 could close the gap:
+what is left in the file is not presences. Deviation 420, and the table is in
+`ARCHITECTURE.md` under "Scale, for the record".
+
+**The atlas answers emptily about territory until the file lands** —
+`presencesAt` gives `[]`, the two indexes are empty — and `presenceCoverage`
+and `territoryYear` do not, because they are read off `manifest.presenceShards`
+and the far end of the window must not move while a file is in flight. The
+actor card draws its Territory section as the source card draws its citers.
+`manifest.schema` is 2, the graph file carries the same number, and
+`assertGeneration` refuses one this build does not read.
+
+`node tools/validate.mjs --index` is byte-identical, `node --test` is 1,096
+tests green with `CHROME` set and 0 skipped, and the prerendered pages are
+byte-identical (plan D7).
+
+Before this, 2026-09-06, after **M32b-2** (`docs/m32b-brief.md`, §4 and §5
+under amendments A4, A5, A9 and A11: the second of M32b's two runs, and the
+last of M32b): **175 events know what kind of thing they were, and 154 still
+do not.**
 
 **The reach is 175 of the 329 events and 54 of the 146 active ones**: 151
 `election`, 13 `disaster`, 6 `death` and 5 `treaty`. Every one of them is a
@@ -1472,6 +1517,84 @@ The numbering continues from 401, which is M31-3's last.
      protocol §4 requires the done lines committed and pushed, and an empty
      index commit after them would be a commit that says nothing.
 
+### I1
+
+420. **The graph file is 307.2 KB and not under 290, and the whole first paint
+     is 492.0 KB and not under 460** — the two numbers the brief's amendment
+     A5 makes the run's "Done when". The change did what it says: the
+     presences left the file (267,134 B, 45.9 % of it) and the lane polygons
+     left the first paint (221,050 B), which is 991,468 bytes down to 503,804,
+     half of it. The thresholds were written on 6 September against a graph
+     file of 542.9 KB; M30b, M31 and M32b then added 38.8 KB to it — events
+     125,196 → 131,224, actors 106,557 → 115,699, and offices, tenures and
+     narratives 7,158 → 31,186, which is M31's twelve tenures becoming
+     eighty-one. On the corpus the thresholds were set against, this run lands
+     at 269.4 KB and 455.6 KB and clears both. On the corpus as it stands it
+     does not, and nothing in I1 could: the excess is not presences, and the
+     runs for it are I2 (rows over an id table) and I3/I4 (the core and the
+     attribute shards). Reported rather than met, and the arithmetic is in
+     `ARCHITECTURE.md` under "Scale, for the record".
+421. **`contribute.html` waits for the presence file; it does not draw first
+     and rebuild.** Amendment A2 asks both writer pages to draw first and
+     rebuild the universe when the file lands. `review.html` does, because its
+     `preparedFor` is rebuilt between records and the editor opened next has
+     the whole universe. `createForm` builds its universe once for the life of
+     the form, and rebuilding it would throw away whatever the contributor has
+     typed. So the form waits — on a page that already blocks on the whole
+     graph before it draws a field, and where one more file beside it is not a
+     frame anybody sees. The correctness A2 is after is the same either way:
+     the form's `actor-unused` and rule 17 say what the CLI says.
+     `contribute.html` also gains `presences` in the topology it hands the
+     form, which it never had: that is the other half of index2 review finding
+     2, and it is why the form no longer reports an imported actor as used by
+     nothing.
+422. **`tests/spine-loader.test.mjs` was edited in three places and not only
+     at `SURFACE`.** The brief says that file is edited at `SURFACE` alone,
+     and amendment A3 then says the graph file's inner `schema` is the
+     manifest's number from this run on — which the file asserts at line 227 —
+     and that every test manifest literal is bumped, which it holds two of, in
+     the fake fetch of "a spine that failed to arrive". All three are the
+     generation number and nothing else. Not one assertion about the
+     projection moved: the atlas from the spine is still compared to the atlas
+     from `buildTopology`, and that test passed on this run's own commit.
+423. **The atlas grew `presencesLoaded` as well as `loadPresences`.** The
+     brief names one addition to the surface. A synchronous half is what lets
+     a layer tell "no territory" from "no territory yet" — it is what
+     `loadedGeometry` is to `loadGeometry` and `citersOf` to `loadCiters` —
+     and without it the layer would either re-ask on every render or never
+     re-ask after a rejection. Both are in `SURFACE`.
+424. **A narrative step that names a presence resolves to a gap until the file
+     lands.** `resolveRef` reads `atlas.presences`, so for one moment a walk
+     that names a presence — the fixtures hold one; no record under `data/`
+     does — reads as a step about nothing rather than about a territory. It is
+     the same "emptily until it lands" every other deferred load on this atlas
+     answers with, and on `index.html` the territory layer asks for the file
+     on the first frame anyway. Said here rather than left to be found.
+425. **The lane boxes are every box the polygons yield, not one per lane in
+     `regions.json`.** The brief says "region ids in `regions.json` order".
+     Order decides nothing — `canonical()` sorts every key in the manifest, so
+     two builds agree whatever order they are built in — and the *set* does:
+     `loadAtlas` derived a box for every `properties.region` in the collection
+     until this run, and dropping one would be an event that stopped being in
+     view. Lane order first, anything else after, and today the two sets are
+     the same five.
+426. **`buildIndex` now reads `data/geo/regions.json` even when it is handed a
+     prepared topology.** It read the polygons only on the path where it built
+     the topology itself, which is not the path `validate --index` takes. The
+     manifest carries a box per lane now, so the file is wanted either way.
+     One read of 221 KB added to a build that already reads 1,839 records.
+427. **`src/validate/core.js` imports one constant from `src/data.js`.** The
+     generation number is a contract between the builder and the reader, and
+     it lives with the reader because the reader is what refuses a value of it
+     (A3 puts `assertGeneration` in `data.js`). The alternative was the number
+     written out in two files, which is what D6 exists to prevent. No cycle:
+     `data.js` imports nothing under `validate/`.
+428. **Two browser assertions were restaged rather than added.** The
+     per-page "asks for the spine N times" loop now also asserts that the page
+     asked for no lane polygons: it opens all six pages already, and a second
+     loop opening them again was six page loads of contention that made the
+     suite flaky rather than a claim it could not make where it stood.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
@@ -1592,3 +1715,4 @@ M32b-2 done
 M32b done
 I1 started 2026-09-07T18:45:37Z by scheduled
 I1 started 2026-09-08T02:01:46Z by scheduled
+I1 done
