@@ -13,6 +13,17 @@ hundred lines again, cut it the same way.
 
 ## Last updated
 
+2026-09-08, after **I7** (`docs/index2/i7-brief.md` and its amendments, the
+eighth run of the second index cycle, `docs/index2-plan.md` D11): **an id can
+be corrected.** `tools/migrate/ids.mjs` renames the record, keeps the former
+id resolving through `aliases`, rewrites every reference in every kind,
+carries the derived id of every edge and relation that touches it, rebuilds
+the palette and the index and runs the validator — and refuses a taken id, a
+tombstone and a record an import created. **No record was renamed in this
+run**; M31's ten `allied-with` re-typings and every pending correction are
+unblocked, and what to rename is the owner's to decide. The section below and
+the two `## I6:` sections further down are the runs before it.
+
 2026-09-08, after **I5** (`docs/index2/i5-brief.md` and its amendments, the
 sixth run of the second index cycle, `docs/index2-plan.md` D8 and A8), on `m0`:
 **the histories are one hashed file per kind and century, named in the
@@ -3208,6 +3219,108 @@ The numbering continues from 401, which is M31-3's last.
      the answer is either a shorter body — the milestone sections are what
      `STATUS.md` is for — or a run that is not asked to edit it.
 
+518. **A full entry's citation marks and its links by id are references too,
+     and the brief's field list leaves them out.** A `body` carries
+     `[^source-id]` and `[label](kind:id)`, rule 23 checks both, and renaming
+     `fixture-source-1` on a scratch copy of the fixtures made the validator
+     refuse before this was found. `body` is on the table with a rewrite over
+     the two patterns `src/markdown.js` declares; not a word of the prose
+     around them is touched, and the test asks `bodyCitations` and `bodyLinks`
+     what the rewritten body says rather than trusting the regexes.
+
+519. **`data/geo/palette.json` is rebuilt too.** It is keyed by actor id and
+     rule 16 refuses a palette that is not what `build-palette.mjs` produces,
+     so renaming an actor left the validator red. The tool rebuilds it before
+     the index rather than leaving a person to discover that from an error.
+
+520. **Renaming an edge or a relation may correct the type and never an end.**
+     The brief's refusal list names "that kind's pattern", so a derived-id
+     target is contemplated and what a rename of one *means* is not said. A
+     link's ends are moved by renaming the records at them, which is what the
+     cascade is for; a link between two other records is a different claim and
+     is refused. This is the shape M31's ten `allied-with` re-typings need.
+
+521. **`src/chain.js` had to change, and the brief's file list does not name
+     it.** `chainEdges` read `atlas.edges` directly, so a `?chain=` shared
+     before a rename was cut at its first step — the brief's own "Done when"
+     asks for the opposite. It now falls through to `resolve()`, which is
+     where the aliases are, and which is what `resolveRef` already did for a
+     narrative step.
+
+522. **The index changed, and was rebuilt.** Nothing under `data/` that is a
+     record changed. The history fix of amendment A1 gives the ten re-typed
+     `allied-with` relations the versions they had under their former ids, so
+     one history shard and the manifest moved: `portugal--oecd--member-of` and
+     its nine siblings read as three versions each — written, envelope filled,
+     re-typed — where they read as one.
+
+523. **`import-state`'s `pending` and `done` are left alone.** Amendment A3
+     puts `cshapes-actors.json` and `wikidata-seeds.json` on the rewrite list;
+     `wikidata-state.json`'s two lists are a cursor into a walk whose entries
+     are Q-numbers for `--import` and record ids for `--reconcile`, and the
+     schema says only "string". A stale entry costs one item re-read on the
+     next run; rewriting a list that may hold somebody else's identifiers
+     would be the tool guessing. Said in `src/references.js`.
+
+524. **The table's coverage test is in `tests/registry.test.mjs`** and not in
+     `tests/migrate-ids.test.mjs`: that file is where the registry is already
+     held against the schemas, and this is the same kind of drift.
+
+525. **Nothing skipped, as in deviation 516.** `findChrome()` answers
+     `/opt/pw-browsers/chromium-1194/chrome-linux/chrome` in this sandbox with
+     or without `$CHROME` set, so the whole suite ran with the browser tests
+     in it: **1,191 tests, 0 skipped, 0 todo, 0 failed** at the last commit,
+     against 1,170 before the run. The GitHub check was read after every push
+     all the same.
+
+## I7: the rename tool, and what it refuses
+
+`node tools/migrate/ids.mjs <kind>/<old-id> <new-id> [--data <dir>]
+[--today YYYY-MM-DD] [--dry-run]`.
+
+**What it does.** Renames the file; sets `id`; appends the old id to
+`aliases`, which is the whole of "a former id keeps resolving" — `resolveId`
+in the validator and `resolve()` in the browser already walk it. Rewrites
+every reference through the table in `src/references.js`: an event's `place`,
+`parent` and `actors[].actor`; an edge's `from`, `to` and its dispute's
+sources; a relation's ends; an office's `of`; a tenure's `person`, `office`
+and `startedBy`; a presence's `actor` and `dependencyOf`; a narrative's
+`steps[].ref`; on every kind `supersededBy`, `sources[].source` and the
+**keys** of `review.citations`; the citation marks and the links by id inside
+a full entry; and the values under `data/imports/`. Carries the cascade — an
+edge's id and a relation's are `from--to--type`, so an event's correction
+renames every link at it and an actor's renames every relation at either end,
+each with **its** own former id as an alias. Writes `revised` on every file it
+rewrote. Rebuilds `data/geo/palette.json` and the index, runs the validator
+and prints its verdict. `--dry-run` prints the same plan and writes nothing.
+
+**What it refuses**, before writing anything, each with the reason: an id that
+is not a slug — or, for a link, not `from--to--type` in that kind's own
+vocabulary; an id already taken as an id or as anybody's alias (rule 2 keeps
+both unique); an id that names nothing; a record of the wrong kind; a
+tombstone, naming what superseded it; a link whose new id moves an end; a
+cascade that would collide with an id already taken; and **a record an import
+created** (amendment A2), whose id comes from a file under `data/imports/` and
+is re-derived on the next run.
+
+**What holds it together.** `renamePlan(records, kind, oldId, newId)` is pure
+and returns the renames, the rewrites and the import-file writes as data; the
+shell writes them. The reference list is a table beside `src/kinds.js`, so a
+tenth kind is a row and not a branch, and `tests/registry.test.mjs` walks
+every schema for id-shaped fields and fails on one the table does not know —
+an event's `region` and `category` are the stated exception, both naming a
+vocabulary in `data/` rather than a record.
+
+**Tested on a scratch copy, never on the repository's own records.** Twenty
+tests in `tests/migrate-ids.test.mjs`: the rename leaves a record's own text
+field-for-field identical but for `id`, `aliases` and `revised`; a `reviewed`
+record keeps `status`, `signedBy`, `flags` and `citations` across one; the old
+id resolves in the validator and in the browser; a narrative step and a
+`?chain=` built from the old edge ids still walk; the ten refusals; `--dry-run`
+writes nothing; the corpus validates afterwards with the same warning count;
+and, on a scratch clone with two commits, a renamed record still lists the
+versions it had under its former name.
+
 ## I6: what the graph's notch actually costs
 
 Written before anything was changed, which is what the index2 review's
@@ -3476,3 +3589,4 @@ I6 started 2026-09-08T12:21:33Z by scheduled
 I6 started 2026-09-08T14:12:43Z by scheduled
 I6 done
 I7 started 2026-09-08T15:01:40Z by scheduled
+I7 done
