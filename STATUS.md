@@ -13,7 +13,62 @@ hundred lines again, cut it the same way.
 
 ## Last updated
 
-2026-09-08, after **I4b** (`docs/index2/i4-brief.md`, its amendment A0 and
+2026-09-08, after **M30c** (`docs/m30c-brief.md`), on `m0`: **a parent event has
+one look on the three views — a ring outside its mark — at every zoom and under
+every grouping, and "Focus only on this" is gone.**
+
+**What each view draws for a parent now.** An event that `atlas.childrenOf`
+lists at least one active child for is drawn with a second, thinner outline
+outside its own, at a fixed gap from it: a `circle.ring` beside the mark on the
+map, a `rect.ring` two pixels outside the bar on every side on the timeline, a
+`circle.ring` outside the node on the graph. The word is `ring` on the three
+views and which events get one is `isParent` in the new `src/parts.js`, so the
+three cannot come to disagree about what a ring means — the argument `large.js`
+makes about a band, one convention over. The ring carries the mark's own
+emphasis classes and not the view's word for a record (`mark`, `bar`, `node`),
+so it reddens with the walked chain, dims with the lens and fades outside the
+window exactly as the mark does, and every selector that counts records goes on
+counting records. It is never a control: no `data-id`, no `data-mark`, no
+`tabindex`, `pointer-events: none`, and the mark under it takes every click. A
+cluster, a stack and a density stub get none — a count is not a record. On the
+map and the graph the stroke is divided by the zoom, as the label halo is, so
+the ring is as thin at four times in as at one.
+
+**The two behaviours of M30b-2 are untouched, and this is what they were
+missing.** The bracket is drawn only where the parts share a lane and the lanes
+are named; the collapse only below its zoom. A parent under `group: none` — the
+default — or zoomed past the threshold, or with parts across lanes, was drawn
+exactly like any other event. The ring is what a reader sees where those are
+not, and it is drawn *as well as* them, not instead: the graph's badge sits on
+top of it while the parts are inside, and the timeline's band and bracket are
+where they were.
+
+**"Focus only on this" is gone** (owner, 8 September). `lensControl` draws one
+verb, "Focus on this", which adds to the foci as it always did; a reader who
+wants a single focus drops the others from the lens bar, which is where the
+list they are editing actually is. `onlyFocus` and the `focus-only` action went
+with it. The `?focus=` grammar is untouched, so every shared link still parses,
+and the parent's card keeps its one line about what a focus would keep, saying
+it now about the verb that is left.
+
+**The map's ring is the one thing the fixtures cannot show end to end.**
+`fixture-event-f` is the only parent in either corpus and it is the placeless
+process the map deliberately draws no dot for; two tests exist *because* it is
+placeless, and the brief's §4 forbids touching data. So the map's drawing is
+exercised on a layer built inside the browser test over three synthetic events,
+through the real module and in the real browser, and the page itself asserts the
+other half: no leaf is ringed. Deviation 489.
+
+**`node --test` is 1,153 of 1,153 green here, 0 skipped, 1 todo** — the timeline
+row test I6 owns. The sandbox had a browser after all, against what this run's
+prompt said, so the three browser tests the brief asks for were written and run
+here rather than blind (deviation 496). CI's two failures on the run's first
+push were the known 20,000-draft queue flake and a race in the event card's
+summary that was already on `m0`; the second is fixed here, the same way I4b
+fixed it one card over. `node tools/validate.mjs --index` is byte-identical, the
+prerendered pages are unchanged, and no record was created or edited.
+
+Before this, 2026-09-08, after **I4b** (`docs/index2/i4-brief.md`, its amendment A0 and
 `docs/review-2026-09-06-index2-plan.md` finding 23, the fifth run of the second
 index cycle, `docs/index2-plan.md` D4 and D5), on `m0`: **every page reads the
 core, the whole-corpus file is not written any more, `manifest.schema` is 5,
@@ -2821,6 +2876,78 @@ The numbering continues from 401, which is M31-3's last.
      next run that sees it knows it has been seen. The queue's 20,000-draft
      timing test, which *is* a known flake, did not fail here at all.
 
+### M30c
+
+489. **The map's ring has no end-to-end test, because the fixtures cannot carry
+     one.** §3 asks that "the fixture parent's mark has a sibling
+     `circle.ring`". `fixture-event-f` is the only parent in either corpus and
+     it has no place, so the map draws no mark for it at all — and it is
+     placeless on purpose: `map-browser` asserts that it is in the lanes and
+     not on the map, and that it comes and goes with its region's box. Giving
+     it a place would destroy both, and §4 says no data is touched. So the
+     positive assertion is made on a layer built inside the browser test over
+     three synthetic events — the real `createEventsLayer`, the real
+     `createProjection`, real SVG, a real browser — and the page asserts the
+     other half, that nothing on it is ringed. **For the owner:** one placed
+     parent in the fixtures would let that test open the page like its two
+     neighbours do.
+
+490. **The ring's radius is the mark's own radius plus the gap**, not
+     `MARK_RADIUS` plus the gap as §1 words it. A selected mark is
+     `SELECTED_RADIUS` and a ring at `MARK_RADIUS + RING_GAP` would have sat
+     one pixel off it; "at a fixed gap from it" is what was implemented.
+
+491. **A stack is never ringed on the timeline or the graph**, as a cluster is
+     never ringed on the map. §1 says it only of the map's clusters; the reason
+     is the same on the three views — a stack is a count and not a record, and
+     the ring would be a claim about whichever of the bars or nodes under it
+     happens to be on top.
+
+492. **`src/parts.js` is a new module, and `ringClasses` lives in it beside
+     `isParent`.** §4 forbids changing `large.js`, which is where a predicate
+     of this shape would otherwise go, and three copies of "an active event
+     with at least one active child" in three views is exactly what `large.js`
+     exists not to be. It is named in `CLAUDE.md`'s layout tree in the same
+     commit, which `tests/site.test.mjs` requires, and it carries the run's one
+     new pure-Node test file.
+
+493. **One test still names the removed control, as a guard that it stays
+     gone.** §"Done when" asks that no test names "Focus only on this";
+     `lens-browser` asserts that a card offers no `[data-action="focus-only"]`.
+     Nothing depends on the control existing, and without the line nothing
+     would catch it coming back.
+
+494. **The subtree line on a parent's card was reworded, not removed.** §2b
+     says the card keeps it, and it read "Focusing only on this keeps it and
+     the N events inside it" — a sentence naming the verb that went. It now
+     reads "Focusing on this keeps it and the N events inside it; with no other
+     focus on, every other event leaves all three views", which is what is true
+     once "only" is not a verb.
+
+495. **`about.html` gained two paragraphs where §2 asks for one sentence**, and
+     `ARCHITECTURE.md` three lines. The paragraph about parts described the
+     bracket and the collapse as though they were what a parent looks like; the
+     ring goes first, as the thing that is always there, and the two behaviours
+     follow as what happens where there is room for them. Neither file names
+     the removed control any more.
+
+496. **The sandbox had a browser, against what the run's prompt said.** It says
+     `node --test` skips every `*-browser.test.mjs` here and that the brief's
+     browser tests must be written blind and read off CI. Chromium is at
+     `/opt/pw-browsers` and `tools/screens.mjs`'s `findChrome()` finds it: the
+     whole suite ran here with 0 skipped, and the three browser tests were run,
+     failed, fixed and rerun locally before any push. Recorded because the next
+     run's prompt will probably say the same thing.
+
+497. **Two CI failures on the first push were not this run's, and one is fixed
+     here.** `review-browser`'s "the queue draws 20 000 drafts and answers a
+     keystroke" is the known timing flake the prompt names. `panel-browser`'s
+     "an event card renders head, summary and the collapsed sections with their
+     counts" read the summary slot before the record's own text had been
+     fetched — the same race I4b fixed on the record pane one commit earlier,
+     in a file I4b did not touch. It waits for the text now, never for a
+     duration. Both were on `m0` before M30c and neither is caused by a ring.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
@@ -2967,3 +3094,4 @@ I4b started 2026-09-08T10:16:13Z by scheduled
 I4b done
 I4 done
 M30c started 2026-09-08T11:20:51Z by scheduled
+M30c done
