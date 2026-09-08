@@ -59,7 +59,16 @@ test('an event card renders head, summary and the collapsed sections with their 
     assert.deepEqual(openOne(sections), ['consequences']);
     assert.deepEqual(sections.filter((s) => !s.open).map((s) => s.hidden), [true, true, true]);
 
-    // The head: the actors are chips, and the summary is its own text.
+    // The head: the actors are chips, and the summary is its own text. The
+    // summary is a slot the card fills once the record's own text has been
+    // fetched (event.js), so what is waited for is that text arriving and
+    // never a duration — on a slow runner the assertion below was reading the
+    // placeholder (I4b's fix to the record pane's history, one card over).
+    await waitFor(
+      page,
+      'return (document.querySelector(".panel .summary p")?.textContent ?? "Loading…") !== "Loading…";',
+      "the record's own text",
+    );
     const head = await page.eval(`return {
       chips: [...document.querySelectorAll(".event-head .chip")].map((c) => c.dataset.id),
       role: document.querySelector(".event-head .chip").title,
