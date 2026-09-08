@@ -19,6 +19,7 @@ import { existsSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { KIND_DIRS } from './lib/read.mjs';
+import { handWritten } from '../src/origin.js';
 import { buildIndex, writeIndex } from './build-index.mjs';
 
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -168,8 +169,13 @@ async function fileFor(dataDir, id) {
   return null;
 }
 
-// The ids of the active records of one kind, read off the directory: the
-// tombstones are the ones this has to leave out.
+// The ids of the active records of one kind that a person wrote, read off the
+// directory. Two are left out: the tombstones, which claim nothing anybody is
+// waiting to check, and the records an import created — since I8 the CShapes
+// split table's successions are relations, and `RELATION_NOTE` would say of
+// them exactly what is not true. Their interval is the source's own, cited by
+// gwcode, and what a reviewer is being asked to look at is already on them,
+// in `imported-facts`.
 async function activeIdsIn(dataDir, kind) {
   const dir = path.join(dataDir, KIND_DIRS[kind]);
   if (!existsSync(dir)) return [];
@@ -177,7 +183,7 @@ async function activeIdsIn(dataDir, kind) {
   for (const name of (await readdir(dir)).sort()) {
     if (!name.endsWith('.json')) continue;
     const record = JSON.parse(await readFile(path.join(dir, name), 'utf8'));
-    if (record.status === 'active') out.push(record.id);
+    if (record.status === 'active' && handWritten(record)) out.push(record.id);
   }
   return out;
 }

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "philippines-under-united-states-of-america--philippines--succeeded",
+  "kind": "relation",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-08",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "gwcode 840"
+    }
+  ],
+  "from": "philippines-under-united-states-of-america",
+  "to": "philippines",
+  "type": "succeeded",
+  "when": {
+    "start": 1946,
+    "end": 1946,
+    "date": "1946-07-04"
+  },
+  "note": "CShapes holds 840 as a colony of United States of America to 1946-07-03; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had. The source gives the held period under more than one power (Spain, then United States of America); the record is named for the one that held it longest (Spain:13y, United States of America:48y)."
+}

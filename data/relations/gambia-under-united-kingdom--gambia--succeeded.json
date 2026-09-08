@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "gambia-under-united-kingdom--gambia--succeeded",
+  "kind": "relation",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-08",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "gwcode 420"
+    }
+  ],
+  "from": "gambia-under-united-kingdom",
+  "to": "gambia",
+  "type": "succeeded",
+  "when": {
+    "start": 1965,
+    "end": 1965,
+    "date": "1965-02-18"
+  },
+  "note": "CShapes holds 420 as a colony of United Kingdom to 1965-02-17; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
+}

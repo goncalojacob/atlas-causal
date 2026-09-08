@@ -8,6 +8,7 @@ import path from 'node:path';
 import { SEED, RELATION_NOTE, plan, withReview, seed } from '../tools/seed-review-flags.mjs';
 import { readRecords, KIND_DIRS } from '../tools/lib/read.mjs';
 import { isDraft } from '../src/review/queue.js';
+import { handWritten } from '../src/origin.js';
 import { ROOT } from './helpers.mjs';
 
 const FLAG = /^[a-z0-9]+(-[a-z0-9]+)*$/;
@@ -18,8 +19,13 @@ test('every record the table names exists, is a draft, and carries the block', a
   const byId = new Map(entries.map((e) => [e.record.id, e.record]));
   // Relations and tenures, and only the ones still standing: M30a-2 re-filed
   // the twelve `led` records and their flags went to the tenures with them.
+  // And only the ones a person wrote: the 77 successions the CShapes import
+  // derived in I8 have their interval from the source they cite, so the
+  // seeding's sentence about memory is not true of them and they are not in
+  // the table (they carry `imported-facts` instead).
   const dated = entries
     .filter((e) => (e.kind === 'relation' || e.kind === 'tenure') && e.record.status === 'active')
+    .filter((e) => handWritten(e.record))
     .map((e) => e.record.id);
   const entriesPlanned = plan(dated);
   assert.ok(entriesPlanned.length > 50, 'STATUS.md names more than fifty records');

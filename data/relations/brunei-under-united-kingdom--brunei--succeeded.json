@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "brunei-under-united-kingdom--brunei--succeeded",
+  "kind": "relation",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-08",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "gwcode 835"
+    }
+  ],
+  "from": "brunei-under-united-kingdom",
+  "to": "brunei",
+  "type": "succeeded",
+  "when": {
+    "start": 1984,
+    "end": 1984,
+    "date": "1984-01-01"
+  },
+  "note": "CShapes holds 835 as a protectorate of United Kingdom to 1983-12-31; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
+}

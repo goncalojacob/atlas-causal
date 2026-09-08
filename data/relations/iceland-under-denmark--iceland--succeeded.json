@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "iceland-under-denmark--iceland--succeeded",
+  "kind": "relation",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-08",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "gwcode 395"
+    }
+  ],
+  "from": "iceland-under-denmark",
+  "to": "iceland",
+  "type": "succeeded",
+  "when": {
+    "start": 1942,
+    "end": 1942,
+    "date": "1942-04-22"
+  },
+  "note": "CShapes holds 395 as a colony of Denmark to 1942-04-21; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had. Earlier than its first independent date, 1944-06-17: the occupation between the two (occupied 1942-04-22..1944-06-16) is the state's own record, not the colony's."
+}

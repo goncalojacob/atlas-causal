@@ -524,6 +524,33 @@ test('an actor with no events of its own opens on what came before it', { skip }
   });
 });
 
+// I8, the reader-facing half of it: `?actor=angola` opened on an empty card
+// because no `succeeded` relation touched it — H7 drew "Before and after"
+// along a relation type nothing in `data/` was of, and the 77 colony/state
+// pairs the M27 splits made were latent in the split table
+// (docs/index2-plan.md, D12). The relations are drafted from that table now,
+// and this is the case the brief names.
+test('the colony a state succeeded is named on its card, and opens', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await open(page, url('?actor=angola&from=1850&to=2030'));
+    await waitFor(page, 'return Boolean(document.querySelector(\'[data-section="succession"]\'));',
+      'the card to say what came before');
+    assert.equal(
+      await page.eval('return document.querySelector(\'.card-section[data-section="succession"]\')?.classList.contains("open") ?? false;'),
+      true,
+      'nothing else on this card has anything in it',
+    );
+    // The predecessor by name, not by id, and the interval of the succession.
+    const heading = await page.eval('return document.querySelector(".succession h3")?.textContent.replace(/\\s+/g, " ").trim() ?? null;');
+    assert.match(heading, /^Before 1975/);
+    assert.match(heading, /Angola under Portugal/);
+    // And it is a way in: clicking it opens the colony's own card.
+    await page.eval('document.querySelector(\'.succession [data-action="actor"][data-id="angola-under-portugal"]\').click(); return true;');
+    await waitFor(page, "return new URLSearchParams(location.search).get('actor') === 'angola-under-portugal';",
+      'the colony to open');
+  });
+});
+
 // R9: the card's own lens control was computed at render and the render key
 // did not carry the lens, so nothing redrew it. Clicking "Focus on this" put
 // a chip in the header, wrote the focus into the URL, and left the button

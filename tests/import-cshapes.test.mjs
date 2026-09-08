@@ -10,7 +10,7 @@ import { tmpdir } from 'node:os';
 import path from 'node:path';
 import { decodeCollection, ringFrom, arcIndex, decodeArcs } from '../tools/import/topojson.mjs';
 import { douglasPeucker, quantize, simplifyArc, pruneGeometry, ringArea, keepRing, round } from '../tools/import/simplify.mjs';
-import { planImport, slug, yearOf, shardsTouched, shardFile, dayAfter, runImport, reportMarkdown, sourceRecord, IMPORT_AUTHOR, ORIGIN_TOOL, SHARDS, DATA_END, MAP_FILE } from '../tools/import/cshapes.mjs';
+import { planImport, planRelations, runRelations, slug, yearOf, shardsTouched, shardFile, dayAfter, runImport, reportMarkdown, sourceRecord, IMPORT_AUTHOR, ORIGIN_TOOL, SHARDS, DATA_END, MAP_FILE } from '../tools/import/cshapes.mjs';
 import { isDraft } from '../src/origin.js';
 
 const SHARD_CUT = [{ from: 1886, to: 1913 }, { from: 1914, to: 1945 }, { from: 1946, to: 2019 }];
@@ -488,4 +488,138 @@ test('every record the import creates is in the review queue', () => {
     assert.deepEqual(record.review, { status: 'draft' }, record.id);
     assert.ok(isDraft(record), `${record.id} is in the queue`);
   }
+});
+
+// --- the successions the split table states -------------------------------
+//
+// I8, D12: `?actor=angola` opened on an empty card because no `succeeded`
+// relation touched it, and 79 of them were latent in the mapping file — the
+// colony, the state after it, and the day the source draws the cut. Nothing
+// here is a claim of this import's: the pair and the date are the entry's,
+// and so is the note, copied whole because it is where the table says a cut
+// is doubtful.
+
+const TABLE = {
+  40: {
+    actor: 'cuba-under-spain',
+    splits: [{ from: '1898-12-10', actor: 'cuba' }],
+    note: 'The cut is the boundary the source draws. Earlier than its first independent date, 1902-05-20.',
+  },
+  750: {
+    actor: 'british-india',
+    splits: [{ from: '1947-08-15', actor: 'republic-of-india' }],
+  },
+  // Two cuts on one code, and a code with none at all.
+  800: { actor: 'first', splits: [{ from: '1900-01-01', actor: 'second' }, { from: '1950-01-01', actor: 'third' }] },
+  900: { actor: 'uncut' },
+};
+
+test('every split becomes one succession, dated, cited, drafted and flagged', () => {
+  const { relations, problems } = planRelations(TABLE, { created: '2026-09-08' });
+  assert.deepEqual(problems, []);
+  assert.deepEqual(relations.map((r) => r.id), [
+    'cuba-under-spain--cuba--succeeded',
+    'british-india--republic-of-india--succeeded',
+    'first--second--succeeded',
+    'first--third--succeeded',
+  ]);
+  const cuba = relations[0];
+  assert.equal(cuba.kind, 'relation');
+  assert.equal(cuba.from, 'cuba-under-spain');
+  assert.equal(cuba.to, 'cuba');
+  assert.equal(cuba.type, 'succeeded');
+  // A succession is a moment: one year at both bounds, with the source's own
+  // day beside it (i8-brief, A1).
+  assert.deepEqual(cuba.when, { start: 1898, end: 1898, date: '1898-12-10' });
+  assert.deepEqual(cuba.sources, [{ source: 'cshapes-2-0', locator: 'gwcode 40' }]);
+  assert.deepEqual(cuba.origin, { tool: ORIGIN_TOOL });
+  assert.equal(isDraft(cuba), true);
+  assert.deepEqual(cuba.review.flags, ['imported-facts']);
+  assert.deepEqual(cuba.authors, [IMPORT_AUTHOR]);
+  assert.equal(cuba.license, 'CC-BY-NC-SA-4.0');
+  assert.equal(cuba.created, '2026-09-08');
+  // The entry's note, whole (A2): the reviewer sees the doubt beside the
+  // claim it produced, and may retract the draft and cite another source.
+  assert.equal(cuba.note, TABLE[40].note);
+  // And no note at all where the entry carries none: an absent key, never an
+  // empty string, so the record reads like one the form wrote.
+  assert.equal(Object.hasOwn(relations[1], 'note'), false);
+  // Nothing else is invented: no summary, no explanation, nobody signed.
+  assert.equal(Object.hasOwn(cuba, 'summary'), false);
+  assert.equal(Object.hasOwn(cuba.review, 'signedBy'), false);
+});
+
+test('a split the table cannot make a relation of is reported, not guessed at', () => {
+  const bad = (entry) => planRelations({ 1: entry }, { created: '2026-09-08' });
+  assert.match(bad({ actor: 'a', splits: [{ from: '1900-01-01', actor: 'a' }] }).problems[0], /on both sides/);
+  assert.match(bad({ actor: 'a', splits: [{ from: 'not-a-date', actor: 'b' }] }).problems[0], /not a date a year can be read off/);
+  assert.match(bad({ splits: [{ from: '1900-01-01', actor: 'b' }] }).problems[0], /no actor id on one side/);
+  for (const entry of [{ actor: 'a', splits: [{ from: '1900-01-01', actor: 'a' }] }, { actor: 'a', splits: [{ from: 'x', actor: 'b' }] }]) {
+    assert.deepEqual(bad(entry).relations, [], 'and no half-written record comes out with it');
+  }
+});
+
+async function relationScratch() {
+  const dir = await mkdtemp(path.join(tmpdir(), 'atlas-cshapes-rel-'));
+  await mkdir(path.join(dir, 'relations'), { recursive: true });
+  await mkdir(path.join(dir, 'imports'), { recursive: true });
+  await writeFile(path.join(dir, ...MAP_FILE.split('/')),
+    JSON.stringify({ schema: 1, source: 'cshapes-2-0', entries: TABLE }), 'utf8');
+  return dir;
+}
+
+test('--relations writes the successions with no topology to decode', async () => {
+  const dir = await relationScratch();
+  const first = await runRelations(dir, { today: '2026-09-08' });
+  assert.deepEqual(first.failed, []);
+  assert.equal(first.written.length, 4);
+  const written = (await readdir(path.join(dir, 'relations'))).sort();
+  assert.deepEqual(written, [
+    'british-india--republic-of-india--succeeded.json',
+    'cuba-under-spain--cuba--succeeded.json',
+    'first--second--succeeded.json',
+    'first--third--succeeded.json',
+  ]);
+
+  // Idempotent: a second pass writes nothing at all, and says why.
+  const second = await runRelations(dir, { today: '2030-01-01' });
+  assert.deepEqual(second.failed, []);
+  assert.deepEqual(second.written, []);
+  assert.equal(second.notes.length, 4);
+  assert.match(second.notes[0], /already exists; the import reports it and leaves it alone/);
+  const record = JSON.parse(await readFile(path.join(dir, 'relations', 'cuba-under-spain--cuba--succeeded.json'), 'utf8'));
+  assert.equal(record.created, '2026-09-08', 'and the record it already wrote is untouched');
+});
+
+test('a relation that already exists is reported and left alone, whatever its standing', async () => {
+  const dir = await relationScratch();
+  // Somebody's own, signed, saying the opposite of what the table would: the
+  // pass reports it and writes nothing over it. The id is derived from the
+  // pair and the type, so a file under that name is already an answer to the
+  // question this pass asks.
+  const theirs = {
+    id: 'cuba-under-spain--cuba--succeeded',
+    kind: 'relation',
+    license: 'CC-BY-SA-4.0',
+    authors: [{ name: 'A Person', github: null }],
+    review: { status: 'reviewed', signedBy: [{ name: 'A Person', github: null, on: '2026-09-07' }] },
+    note: 'Written by a person from another source.',
+  };
+  await writeFile(path.join(dir, 'relations', 'cuba-under-spain--cuba--succeeded.json'),
+    `${JSON.stringify(theirs, null, 2)}\n`, 'utf8');
+  const result = await runRelations(dir, { today: '2026-09-08' });
+  assert.deepEqual(result.failed, []);
+  assert.equal(result.written.length, 3, 'the other three are still written');
+  assert.match(result.notes.join('\n'), /cuba-under-spain--cuba--succeeded\.json already exists/);
+  assert.deepEqual(JSON.parse(await readFile(path.join(dir, 'relations', 'cuba-under-spain--cuba--succeeded.json'), 'utf8')), theirs);
+});
+
+test('the full import writes them too, so a re-import cannot leave them behind', async () => {
+  const { dir, file } = await scratch();
+  await mkdir(path.join(dir, 'imports'), { recursive: true });
+  await writeFile(path.join(dir, ...MAP_FILE.split('/')),
+    JSON.stringify({ schema: 1, source: 'cshapes-2-0', entries: { 1: { actor: 'westland', splits: [{ from: '1913-07-01', actor: 'westland-republic' }] } } }), 'utf8');
+  const result = await runImport(file, dir, { today: '2026-09-02' });
+  assert.deepEqual(result.failed, []);
+  assert.deepEqual(await readdir(path.join(dir, 'relations')), ['westland--westland-republic--succeeded.json']);
 });
