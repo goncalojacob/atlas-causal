@@ -60,8 +60,19 @@ value. The class `ring` is the same word on the three views, and
 
 The event card already says "N parts" (M30b-1). `about.html`'s "How to read
 it" gains one sentence: a mark with a ring around it is an event with parts;
-open it to see them, and "Focus only on this" keeps them. `ARCHITECTURE.md`'s
+open it to see them, and "Focus on this" keeps them. `ARCHITECTURE.md`'s
 paragraph on parts gains the same sentence.
+
+## 2b. "Focus only on this" goes
+
+Asked by the owner on 8 September 2026: the control is unnecessary. The
+lens control (`ctx.lensControl` in `src/panel/panel.js`) keeps **one**
+button, "Focus on this", which adds the record to the foci as it does today;
+the "only" variant, the `focusAll`-clearing path it took and its tests are
+removed, and the `?focus=` grammar is unchanged (a reader who wants one focus
+clears the others from the lens bar). The parent's card keeps the one line
+saying what the focus would keep. `about.html` and `ARCHITECTURE.md` stop
+naming the removed control.
 
 ## 3. Tests
 
@@ -87,6 +98,7 @@ nothing merged into `main`.
 A parent event is told from a leaf at a glance on the map, the timeline and
 the graph, at any zoom and under any grouping, by the same ring; the three
 browser tests above pass with `CHROME` set; `node --test` green, the skipped
-count reported; `node tools/validate.mjs --index` byte-identical;
+count reported; the "Focus only on this" control is gone from every card and
+no test names it; `node tools/validate.mjs --index` byte-identical;
 `about.html` and `ARCHITECTURE.md` say what a ring means; `STATUS.md`
 carries the literal line `M30c done`.
