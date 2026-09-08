@@ -17,9 +17,16 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import path from 'node:path';
-import { buildPresenceIndex, buildSpine, buildTopology, edgeId } from '../src/validate/core.js';
+import {
+  buildAttributeShards, buildCore, buildPresenceIndex, buildSpine, buildTopology, edgeId,
+} from '../src/validate/core.js';
 import { expandSpine, presencesFromIndex } from '../src/data.js';
-import { SPINE_COLUMNS } from '../src/spine.js';
+import {
+  ATTRIBUTE_COLUMNS, CORE_COLUMNS, SPINE_COLUMNS, SPINE_KINDS, SPLIT_COLUMNS,
+  applyAttributes, boundsOf, decodeSpineFile, fillFallbacks,
+} from '../src/spine.js';
+import { attributePeriod, attributeShardKey, periodOf } from '../src/explanations.js';
+import { extent as intervalExtent } from '../src/util/dates.js';
 import { KINDS } from '../src/kinds.js';
 import { buildIndex } from '../tools/build-index.mjs';
 import { atlasFromTopology, FIXTURE_DATA, ROOT, fixtures, topologyOf } from './helpers.mjs';
@@ -192,6 +199,31 @@ export function projectV1(topology) {
 // Both files, decoded, as one set of lists to hold against the oracle.
 function decodedOf(topology) {
   return { ...expandSpine(buildSpine(topology)), presences: presencesFromIndex(buildPresenceIndex(topology)) };
+}
+
+// The astronomical year a record's interval begins in — what the shards are
+// filed by, computed here rather than imported so that a wrong table cannot
+// agree with itself.
+const intervalStart = (record) => intervalExtent(record.when).min;
+
+// I3's two files put back together: the core decoded, then every shard's rows
+// applied to it, which is what a page will hold once every century has landed.
+function mergedFromCore(topology) {
+  const core = decodeSpineFile(buildCore(topology), SPINE_KINDS, CORE_COLUMNS);
+  const byKey = new Map();
+  for (const kind of SPINE_KINDS) {
+    for (const record of core[`${kind}s`]) {
+      byKey.set(`${kind}:${record.id}`, record);
+      fillFallbacks(record, boundsOf(record));
+    }
+  }
+  for (const shard of buildAttributeShards(topology)) {
+    const rows = decodeSpineFile(shard.file, SPINE_KINDS, ATTRIBUTE_COLUMNS);
+    for (const kind of SPINE_KINDS) {
+      for (const partial of rows[`${kind}s`]) applyAttributes(byKey.get(`${kind}:${partial.id}`), partial);
+    }
+  }
+  return core;
 }
 
 // Against the registry, not against a list written twice: a tenth kind is one
@@ -483,6 +515,117 @@ test('the presence index is in the built index, named in the manifest, and stabl
   assert.equal(file.schema, manifest.schema, 'one generation, not two');
   assert.equal(file.presences.length, manifest.counts.presences);
 });
+
+// ─── The core and the attribute shards (I3) ────────────────────────────────
+//
+// The claim of the split, in the one place it can be made cheaply: the two
+// tables are one partition of the spine's. Nothing invented, nothing dropped —
+// the atlas-level proof is `tests/core-loader.test.mjs`, and this is what says
+// which column went where before a single record is read.
+
+test('the core and the attribute shards are the spine between them, per kind', () => {
+  // Every kind the graph file carries, and only those: the presences are their
+  // own file since I1 and are not split — nothing reads them until the
+  // territory layer draws, which is a window of its own (index2-plan, D1).
+  assert.deepEqual(Object.keys(CORE_COLUMNS).sort(), [...SPINE_KINDS].sort());
+  assert.deepEqual(Object.keys(ATTRIBUTE_COLUMNS).sort(), [...SPINE_KINDS].sort());
+  assert.deepEqual(Object.keys(SPINE_COLUMNS).sort(), [...SPINE_KINDS, 'presence'].sort());
+  for (const kind of SPINE_KINDS) {
+    // A key names the record the row is about — `id` and `status`, or an
+    // edge's three ends — and is not one of the shard's values: the core is
+    // what carries them.
+    const core = CORE_COLUMNS[kind].columns.map((c) => c.name);
+    const values = ATTRIBUTE_COLUMNS[kind].columns.filter((c) => !c.key).map((c) => c.name);
+    const wanted = SPINE_COLUMNS[kind].columns.map((c) => c.name);
+    assert.deepEqual([...new Set([...core, ...values])].sort(), [...wanted].sort(), kind);
+    for (const name of core.filter((n) => values.includes(n))) {
+      assert.ok(SPLIT_COLUMNS.has(name), `${kind}.${name} is in both tables and is not split inside`);
+    }
+    // And every key of a shard's row is something the core carries, or the
+    // shard could name a record the core does not have.
+    for (const name of ATTRIBUTE_COLUMNS[kind].keys) assert.ok(core.includes(name), `${kind}.${name}`);
+  }
+});
+
+// A4: the two vocabularies a card reads — an actor line's role and an event's
+// category — are in the shards, and the ones a lane and a mark read are in the
+// core. Said on the tables rather than on the files, because it is the tables
+// that decide.
+test('the core carries no prose vocabulary and the shards no lane', () => {
+  const of = (table, kind) => table[kind].columns.filter((c) => c.type === 'vocab').map((c) => c.vocab);
+  assert.deepEqual(of(CORE_COLUMNS, 'event'), ['status', 'region']);
+  assert.deepEqual(of(ATTRIBUTE_COLUMNS, 'event'), ['status', 'category', 'scope']);
+  assert.deepEqual(of(CORE_COLUMNS, 'edge'), ['edgeType', 'confidence', 'status']);
+});
+
+for (const [label, dir] of [['the fixtures', FIXTURE_DATA], ['the repository', DATA]]) {
+  // A1 and plan A8: one filing key for every kind, so that a record is in one
+  // shard and the loader and the build agree which.
+  test(`every record is in exactly one shard, chosen by its own key, over ${label}`, async () => {
+    const topology = await topologyOf(dir);
+    const shards = buildAttributeShards(topology);
+    const events = new Map(topology.events.map((e) => [e.id, e]));
+    const seen = new Map();
+    let filed = 0;
+    for (const shard of shards) {
+      const rows = decodeSpineFile(shard.file, SPINE_KINDS, ATTRIBUTE_COLUMNS);
+      for (const kind of SPINE_KINDS) {
+        for (const row of rows[`${kind}s`] ?? []) {
+          const key = `${kind}:${row.id}`;
+          assert.ok(!seen.has(key), `${key} is in two shards: ${seen.get(key)} and ${shard.key}`);
+          seen.set(key, shard.key);
+          filed += 1;
+        }
+      }
+    }
+    assert.ok(filed > 0);
+    for (const kind of SPINE_KINDS) {
+      for (const record of topology[`${kind}s`]) {
+        const key = `${kind}:${record.id}`;
+        assert.ok(seen.has(key), `${key} is in no shard at all`);
+        assert.equal(seen.get(key), attributeShardKey(attributePeriod(kind, record, events)), key);
+      }
+    }
+    assert.equal(seen.size, filed);
+
+    // An event is in the century it begins in, a place is in the one shard of
+    // places, and a record with no year at all is in the `null` shard — which
+    // is fetched with the first century whatever the window is.
+    for (const event of topology.events) {
+      const period = periodOf(intervalStart(event));
+      assert.equal(seen.get(`event:${event.id}`), `${period.from}-${period.to}`, event.id);
+    }
+    for (const place of topology.places) assert.equal(seen.get(`place:${place.id}`), 'place', place.id);
+    for (const office of topology.offices.filter((o) => o.when === null)) {
+      assert.equal(seen.get(`office:${office.id}`), 'null', office.id);
+    }
+    // The keys the manifest will name, in the order the build writes them: the
+    // centuries in year order, then the two that answer no year.
+    const years = shards.filter((s) => s.from !== null).map((s) => s.from);
+    assert.deepEqual(years, [...years].sort((a, b) => a - b));
+    assert.deepEqual(shards.slice(years.length).map((s) => s.key), ['null', 'place']);
+  });
+
+  // The other half of "nothing dropped": the two files together decode to the
+  // same lists the spine does, over real records and not only over the tables.
+  test(`the core and every shard decode to what the spine says, over ${label}`, async () => {
+    const topology = await topologyOf(dir);
+    const spine = expandSpine(buildSpine(topology));
+    const core = buildCore(topology);
+    assert.equal(core.schema, buildSpine(topology).schema, 'one generation, not two');
+    // Two builds of one dataset write one file, ids, vocabularies and all.
+    assert.deepEqual(buildCore(topology).ids, core.ids);
+    assert.deepEqual(buildAttributeShards(topology).map((s) => s.key), buildAttributeShards(topology).map((s) => s.key));
+    const merged = mergedFromCore(topology);
+    for (const kind of SPINE_KINDS) {
+      const list = `${kind}s`;
+      assert.equal(merged[list].length, spine[list].length, list);
+      for (const [i, want] of spine[list].entries()) {
+        assert.deepEqual(merged[list][i], want, `${list}[${i}]: ${want.id}`);
+      }
+    }
+  });
+}
 
 // The size assertion the brief asks for, and not a time assertion (R3, the
 // picker test's lesson): the same information as rows is smaller than the same

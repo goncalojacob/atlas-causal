@@ -13,7 +13,12 @@ import { KINDS } from '../kinds.js';
 import { EDGE_TYPE_IDS, EVENT_SCOPES, OFFICE_CATEGORY_IDS, RELATION_TYPE_IDS, edgeId } from '../vocab.js';
 // The column table, the encoder and the decoder, in one leaf module because
 // `data.js` reads the same table backwards and cannot import this file.
-import { PRESENCE_KINDS, SPINE_KINDS, encodeSpineFile } from '../spine.js';
+import {
+  ATTRIBUTE_COLUMNS, CORE_COLUMNS, PRESENCE_KINDS, SPINE_KINDS, encodeSpineFile,
+} from '../spine.js';
+// The filing key, one table for the attribute shards here and the history
+// shards of I5 (docs/index2-plan.md, A8).
+import { attributePeriod, attributeShardKey } from '../explanations.js';
 import { astronomicalBounds } from '../util/dates.js';
 // The number the *reader* refuses an unknown value of, which is why it lives
 // there and is imported here rather than written out twice (data.js).
@@ -714,4 +719,87 @@ export function buildPresenceIndex(topology) {
     vocabBase: vocabBaseOf(topology),
     read: slotReader(() => 0),
   });
+}
+
+// ─── The core and the attribute shards ─────────────────────────────────────
+//
+// The same records as the spine, split along the line docs/index2-plan.md D4
+// draws and written **beside** it: nothing reads either file yet, and I4 is
+// what moves the pages over — but only if the bytes this run prints say the
+// split pays (D5).
+//
+// The core is what every page will load whole: the whole-graph guarantee needs
+// it, and so does every mark, bar and lane. The attributes are what a card, a
+// label or a strip reads, filed by century and fetched for the window. Which
+// column is which is `CORE_COLUMNS` and `ATTRIBUTE_COLUMNS` in `src/spine.js`,
+// and a test holds the two to being the spine between them.
+
+export function buildCore(topology) {
+  const cites = citesCountByRecord(topology.sources);
+  const citesCount = (kind, id) => cites.get(`${kind}:${id}`) ?? 0;
+  return encodeSpineFile({
+    schema: INDEX_GENERATION,
+    kinds: SPINE_KINDS,
+    listOf: (kind) => topology[`${kind}s`] ?? [],
+    vocabBase: vocabBaseOf(topology),
+    read: slotReader(citesCount),
+    table: CORE_COLUMNS,
+  });
+}
+
+// One file per century, plus the places and the records with no year at all.
+// Every list is in the same id order the core's is, so a shard's rows and the
+// core's records are two readings of one corpus; a kind with nothing in a
+// century is an empty list in that shard, which is what makes every file say
+// the same about its own shape.
+//
+// The order of the files is the order they are named in the manifest: the
+// centuries in year order, then the two that answer no year — because those
+// two are fetched with the first century whatever the window is.
+export function buildAttributeShards(topology) {
+  const events = new Map((topology.events ?? []).map((e) => [e.id, e]));
+  const cites = citesCountByRecord(topology.sources);
+  const citesCount = (kind, id) => cites.get(`${kind}:${id}`) ?? 0;
+
+  const groups = new Map();
+  for (const kind of SPINE_KINDS) {
+    for (const record of topology[`${kind}s`] ?? []) {
+      const period = attributePeriod(kind, record, events);
+      const key = attributeShardKey(period);
+      let group = groups.get(key);
+      if (!group) {
+        group = {
+          key,
+          from: typeof period === 'object' && period !== null ? period.from : null,
+          to: typeof period === 'object' && period !== null ? period.to : null,
+          records: new Map(SPINE_KINDS.map((k) => [k, []])),
+        };
+        groups.set(key, group);
+      }
+      group.records.get(kind).push(record);
+    }
+  }
+
+  const ordered = [...groups.values()].sort((a, b) => {
+    if (a.from === null || b.from === null) {
+      return (a.from === null ? 1 : 0) - (b.from === null ? 1 : 0) || (a.key < b.key ? -1 : 1);
+    }
+    return a.from - b.from;
+  });
+  return ordered.map((group) => ({
+    key: group.key,
+    from: group.from,
+    to: group.to,
+    file: encodeSpineFile({
+      schema: INDEX_GENERATION,
+      kinds: SPINE_KINDS,
+      listOf: (kind) => group.records.get(kind) ?? [],
+      vocabBase: vocabBaseOf(topology),
+      read: slotReader(citesCount),
+      table: ATTRIBUTE_COLUMNS,
+      // The merges are on every record whatever its century and are the
+      // core's: `resolve()` walks them before any shard has landed.
+      merges: false,
+    }),
+  }));
 }

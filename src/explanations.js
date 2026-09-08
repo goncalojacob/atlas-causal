@@ -60,6 +60,51 @@ export function shardName(period, hash) {
   return `explanations-${period.from}-${period.to}-${hash}.json`;
 }
 
+// ─── The filing key, for every kind (I3) ───────────────────────────────────
+//
+// One table, used by the attribute shards of I3 and by the history shards of
+// I5, so that two sharding schemes cannot come to disagree about which file a
+// record is in (index2-plan, A8; index2 review, findings 4 and 10).
+//
+// An event is filed by the year it begins in, an edge by the year its **cause**
+// begins in — `periodOfEdge` above, which the explanation shards already use —
+// and an actor, a relation, a tenure, an office or a presence by the year its
+// interval begins in. A narrative goes by the years it says it is about.
+//
+// Two answers are not a century. **A place has no year at all** and every event
+// points at one, so the places are a single shard rather than 470 KB of them at
+// 10^4 in the file that is always fetched. And a record whose key is null — an
+// office with `when: null`, an edge whose cause will not parse — is in the
+// `null` shard, which is fetched with the first century.
+export const PLACE_SHARD = 'place';
+
+export function attributePeriod(kind, record, events) {
+  if (kind === 'place') return PLACE_SHARD;
+  if (kind === 'edge') return periodOfEdge(record, events);
+  if (kind === 'narrative') {
+    const from = record?.window?.from;
+    if (!Number.isInteger(from)) return null;
+    // Through `extent` like every other kind, so that a window and an interval
+    // are read by one rule: `{ from, to }` is an interval whose bounds are two
+    // years.
+    return periodOf(extent({ start: from, end: from }).min);
+  }
+  const year = startOf(record);
+  return year === null ? null : periodOf(year);
+}
+
+// What that answer is called, in the file's name and in the manifest: the
+// middle of `attributes-<key>-<hash>.json`. A string, so that "the shard this
+// record is in" is one comparison whichever of the three answers it was.
+export function attributeShardKey(period) {
+  if (period === PLACE_SHARD) return PLACE_SHARD;
+  return period === null || period === undefined ? 'null' : `${period.from}-${period.to}`;
+}
+
+export function attributeShardName(key, hash) {
+  return `attributes-${key}-${hash}.json`;
+}
+
 // Every shard, in year order: the edges grouped by period, each group's
 // explanations keyed by edge id. Only active edges that have an explanation —
 // a tombstone's argument was withdrawn with it, and an edge with no text
