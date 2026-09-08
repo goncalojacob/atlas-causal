@@ -13,7 +13,78 @@ hundred lines again, cut it the same way.
 
 ## Last updated
 
-2026-09-08, after **I4a** (`docs/index2/i4-brief.md`, its amendment A0 and
+2026-09-08, after **I4b** (`docs/index2/i4-brief.md`, its amendment A0 and
+`docs/review-2026-09-06-index2-plan.md` finding 23, the fifth run of the second
+index cycle, `docs/index2-plan.md` D4 and D5), on `m0`: **every page reads the
+core, the whole-corpus file is not written any more, `manifest.schema` is 5,
+and `ARCHITECTURE.md` says what is actually there.** I4 is done.
+
+**What each page fetches now, before it draws.**
+
+| | index bytes | and then |
+|---|---|---|
+| `index.html` | manifest + core + sources = **123,543** (+ land and palette: **253,552** whole) | its window's shards, then the rest in year order, and the search shard |
+| `entry.html` | + the record's own century = **153,216 to 245,094** | the centuries its own lists span |
+| `contribute.html` | + the presences = **261,236** | **every** shard, held, and the search shard |
+| `review.html` | + the queue's summary = **124,604** | **every** shard, held, the search shard, and the queue's digests a kind at a time |
+| `sources.html` | manifest + sources = **60,320** | nothing |
+| `narratives.html` | **nothing at all** | the core and the shards its walks cross, and only for `?fixtures=1` |
+
+Against what those pages fetched before I4: 385,171 · 255,162 · 616,172 ·
+479,540 · 60,366 · 0. The two writer pages move the most (2.36× and 3.85×)
+because they were awaiting the search shard as well — 223,317 B that nothing
+they draw needs. `entry.html` moves the least, and on this corpus sometimes
+barely at all: it waits for the core *and* a century, and the 20th-century
+shard is 121,551 B, nearly twice the core.
+
+**The writer pages hold the whole corpus, and say so until they do** (A2). The
+form and the review editor are whole-universe readers — rule 21 asks whether a
+`wikidata` id is unique across the atlas, `findSimilar` reads every title and
+every alias — so they draw out of the core and then fetch every attribute shard
+behind that draw. Until the last one is in, the report and the editor print
+**"still loading the corpus"** where the verdict goes and nothing can be filed
+or saved on it. The two browser tests A2 asks for are there: the form finds
+Carnation Revolution as a duplicate and names it "25 April", which is a title
+and lives in no core row, and the editor raises rule 21 on a Wikidata item
+another record already has.
+
+**The measurements at 10⁴, honestly.** The bench atlas of 20,000 events builds a
+core of **2,016,667 B** (336,979 gzipped) and eight attribute shards of
+3,260,536 B. Against the 16.9 / 16.1 / 20.6 / 20.9 MB the health review measured
+for the four pages, they now fetch **2.17 / 2.22–2.67 / 2.17 / 2.17 MB** —
+7.8× · 6.0–7.2× · 9.5× · 9.6×. **The brief's 2.0 MB line is missed**: 3.3 % over
+read as 1,048,576 bytes to the megabyte, 8.3 % read as 1,000,000, and more than
+that for `entry.html` depending on which century its record is in. The core
+alone is 93 % of the figure, so nothing but a smaller core would close the gap,
+and this is I3's own 2.9 % gzipped miss arriving where it was going to. At 10⁵,
+projected linearly from that measurement, the core is ~10.1 MB raw and ~1.68 MB
+gzipped against the plan's ≤ 11 MB and ≤ 1.8 MB — met, with less room than the
+plan expected. The tables are in `ARCHITECTURE.md`, "Scale, for the record",
+which this run rewrote from measurements: it had been quoting an 817.8 KB spine
+that has not existed since H9.
+
+**The whole-corpus file is gone from the artifact.** `buildSpine` stays in
+`src/validate/core.js` and the build still calls it — the prerendered pages are
+assembled from it in memory, which is what makes their byte-identity a check on
+the whole projection and not on half of it (A5), and it is what
+`CORE_COLUMNS ∪ ATTRIBUTE_COLUMNS = SPINE_COLUMNS` is asserted against.
+`loadSpine` and `loadAtlas`'s `from` parameter went with the file; `writeIndex`
+deletes the one an earlier build left behind.
+
+**I4a's one real regression is fixed, and it was the test.** The picture was
+right: `parent` and `subtreeWeight` are core columns, so a collapsed parent's
+ring, badge and weight are correct on the first frame, and the graph does put
+the title on when the shard lands — measured in a browser here as 'still
+loading' on the frame `drawnGraph` waits for and the full title 500 ms later.
+The test was reading between the two and waits for the title now.
+
+`node tools/validate.mjs --index` is byte-identical and the prerendered pages
+are unchanged (plan D7). `node --test` with a browser present is **1,145 of
+1,146 green, 0 skipped**; the one failure is the timeline test marked todo until
+I6. Nothing under `data/` was created or edited: `data/index/` and
+`tests/fixtures/data/index/` were regenerated and nothing else.
+
+Before this, **I4a** (`docs/index2/i4-brief.md`, its amendment A0 and
 `docs/review-2026-09-06-index2-plan.md` finding 23, the fourth run of the second
 index cycle, `docs/index2-plan.md` D4 and D5), on `m0`: **`index.html` and
 `entry.html` read the core. The atlas waits for 61.7 KB of graph where it waited
@@ -2663,6 +2734,93 @@ The numbering continues from 401, which is M31-3's last.
      outstanding** — M41b's and this one — and pasting each in is a minute's
      work in the browser.
 
+### I4b
+
+480. **The 2.0 MB line at 10⁴ is missed, and the run reports rather than
+     trims.** The brief's Done-when asks that `index.html`, `entry.html`,
+     `contribute.html` and `review.html` each fetch under 2.0 MB of index
+     before they draw. Three fetch 2,165,529 B and `entry.html` between
+     2,224,724 and 2,667,366 depending on which century its record is in: 3.3 %
+     over read as 1,048,576 bytes to the megabyte, 8.3 % read as 1,000,000.
+     The core alone is 2,016,667 B — 93 % of the figure — so the only thing
+     that would close the gap is a smaller core, and this is the same miss I3
+     measured and the assistant's decision of 8 September let I4 proceed on.
+     What was asked for and delivered beside it is 6× to 9.6× against the
+     16.9 to 20.9 MB those pages parsed before. **For the owner:** the line
+     was written against a core the plan's §0 re-encoding sketched at
+     1,810.6 KB, and the core that was actually built carries `parent`,
+     `subtreeWeight` and the actor-id join lines the sketch did not.
+
+481. **The search shard moved behind the draw on both writer pages, which the
+     brief did not ask for.** It is 2.75 MB at 10⁴ and both pages awaited it,
+     so no core small enough exists to meet the 2.0 MB line while they do.
+     They now draw first and are given its entries when it lands. Two things
+     follow: `pickerIndex` gains `replace(entries)`, which is how one index
+     reaches every picker holding it and which folds the topology again when
+     there is no shard; and `createForm` and `createEditor` gain
+     `repaintPickers()`, because a form opened from "Edit this record" writes
+     its references' labels out of whatever the index held when it was drawn.
+     Without the repaint, `?edit=` showed ids where names go — which the
+     contribution browser test caught at once.
+
+482. **`contribute.html` still awaits the presence file, and deviation 421's
+     reason has changed.** 421 said the form could not swap its universe in
+     later without throwing away what was typed; it can now, because the
+     universe is built once the corpus is whole and the records are filled in
+     place. It still waits because the file is 137,693 B on the real data and
+     none at all at 10⁴, and because the corpus behind it is 190,858 B anyway
+     — so waiting costs the draw nothing it was not already paying. Changing
+     that is a decision about one number, not about the discipline.
+
+483. **`review.html` does not build an atlas, and `expandCore` is new.** A6
+     says the dashboard fetches the core itself and is not a `loadAtlas`
+     caller, which left the question of what decodes it. An atlas was the
+     obvious answer and is the wrong one: `atlas.relations` and
+     `atlas.tenures` are the **active** ones, and a reviewer's universe is
+     every record there is. So `expandCore(core)` in `src/data.js` is
+     `expandSpine` for the two files the spine split into — the lists, plus
+     `fill(shard)` and `shardKeyOf(id)` — and `createAtlasFromCore` fills a
+     shard through the same function.
+
+484. **`narratives.html` awaits its shards rather than drawing behind them.**
+     The brief's §1.5 says it fetches "the core and the shards the walk
+     crosses" and does not say when. The page is one list of cards and the
+     cards *are* the titles, so there is no picture to put on screen first and
+     a card may not draw the core's fallbacks (index2 review, finding 21). It
+     is a handful of shards and only on `?fixtures=1`; the real page is
+     prerendered and fetches nothing at all.
+
+485. **Ten test files outside the brief's list were edited, and none of them
+     to pass.** `helpers.mjs` (`atlasOf` builds the atlas the site builds, and
+     `corpusOf` is new), `data.test.mjs`, `spine.test.mjs`,
+     `spine-loader.test.mjs`, `core-loader.test.mjs`, `graph-layout`,
+     `graph-browser`, `explanations`, `narratives-page`, `search-shard`,
+     `store` and `actor-card`. Every one of them read the whole-corpus file
+     off disk or through `loadSpine`, and there is no such file: they read the
+     core and every attribute shard now, which is what the index carries. The
+     assertions are the assertions they made before.
+
+486. **`tests/spine-loader.test.mjs` lost its `SURFACE` list rather than
+     gaining a line.** The brief's hand-table note says the list "becomes the
+     core loader's", and `tests/core-loader.test.mjs` already carries it,
+     extended. Two hand-written lists of the same names is what that note is
+     about, so the older copy and the one test that read it are gone; the
+     file keeps the safety net the plan §1 names — the committed index against
+     the records — which is why it keeps its name.
+
+487. **A race the switch opened in `review-browser.test.mjs`, found by CI and
+     not here.** The record pane's history block is drawn as soon as a record
+     opens and its versions arrive with their own fetch; the dashboard now
+     gets to the block sooner, and the test read the summary in between. It
+     waits for what it asserts about now. Two runs of the whole suite here
+     passed before CI failed on it, which is what a race is.
+
+488. **`tests/lens-browser.test.mjs` failed once in twelve local runs of the
+     whole suite and passed alone and on every rerun.** It is not named as a
+     known flake anywhere and this run did not touch it; recorded so that the
+     next run that sees it knows it has been seen. The queue's 20,000-draft
+     timing test, which *is* a known flake, did not fail here at all.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
@@ -2806,3 +2964,5 @@ M41 done
 I4a started 2026-09-08T09:19:50Z by scheduled
 I4a done
 I4b started 2026-09-08T10:16:13Z by scheduled
+I4b done
+I4 done
