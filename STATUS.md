@@ -13,6 +13,55 @@ hundred lines again, cut it the same way.
 
 ## Last updated
 
+2026-09-08, on the branch `merge-world`: **`world` is merged into `m0`, and
+the atlas is 2,044 records.** 1,839 before, 201 from `world` — 92 events, 58
+edges, 43 actors and 8 relations — and four this run wrote itself, which are
+the two offices and two tenures rule 19 asked for below.
+
+**Seventeen files conflicted and none of them needed a judgement about
+history.** `CLAUDE.md` is `m0`'s, whose exception paragraph already says
+everything `world`'s did and H5b's account of the draft marker besides.
+`STATUS.md` is both sides, as `docs/run-protocol.md` asks: `world`'s five
+`Last updated` paragraphs, its deviations renumbered 429 to 450 after `m0`'s
+428, and every milestone line it carries. The nine event records `m0`
+reinstated in M31 or re-filed in M32b are `m0`'s, with the ten actor lines
+M41b added appended to them — every one already naming a role from
+`data/roles.json`. `data/index/` is `m0`'s tree and the three files `m0`
+deleted stay deleted. `tools/import/wikidata.mjs` and its test are `m0`'s with
+M41a's two fixes on top: an imported actor keeps years and not an exact date,
+and an imported place cites nothing, because neither survives a save through
+the contribution form.
+
+**Nothing needed mapping by hand.** `node tools/migrate/roles.mjs` re-filed
+nothing: all 545 actor lines across the 421 events, `world`'s included, are
+already one of the 31 ids of `data/roles.json`, which is deviation 447 doing
+what it said it would. **Rule 3 reported nothing either** — no reference
+`world` wrote points at a record `m0` renamed or merged. **Rule 19 reported
+two**, and both were `led`, the type M30a-2 retired: `tools/migrate/led-to-
+tenures.mjs` re-filed them as two offices and two tenures, which is what the
+other twelve became, and carried every field across unchanged.
+
+**`world` also arrived a migration behind**, since it forked before H5b:
+`node tools/migrate/apply.mjs` wrote `origin`, `review.status`, the day beside
+a `sitelinks` count and a tombstone's reason onto 205 records, all of it read
+off what the record already said.
+
+`node tools/validate.mjs` without `--index`: **2,044 records, 0 errors**,
+1,044 warnings, of which 1,041 are the `unread` family of deviation 306 and
+exactly one of those is new. `node --test`: **989 pass, 0 fail**, 108 skipped
+for want of a browser in this sandbox; five assertions were restaged against
+the corpus the merge made and none was weakened. `data/index/`, `entry/`,
+`sources.html` and `narratives.html` are `m0`'s untouched: they were rebuilt
+locally to run the tests and put back before committing, and the rebuild
+belongs on the far side of this merge.
+
+**Two things are left for somebody else.** `xinhai-revolution` is the one
+imported world event M40b wired and never drafted — it has its edge from the
+Boxer rebellion and still carries the import's own summary, no actors and no
+`review.status` — and `regionNote`, the sentence saying why an import chose a
+lane, has no field on the contribution form, so an imported record carrying
+one does not survive a save. Deviations 455 and 456.
+
 2026-09-08, after **I1** (`docs/index2/i1-brief.md` and its amendments, the
 first run of the second index cycle, `docs/index2-plan.md` D1, D2 and D6), on
 `m0`: **the atlas's first paint is half what it was — 991,468 bytes down to
@@ -2065,6 +2114,87 @@ The numbering continues from 401, which is M31-3's last.
      are the convention that was keeping it down, and either the older ones
      want summarising again or the milestone log wants moving into a file in
      the repository, where a run can edit it the way it edits everything else.
+
+451. **`merge-world` is based on `origin/m0` at `5ac6a3b`, which stopped being
+     its tip while this run worked.** The branch was cut from `origin/m0`
+     after a fetch, at the `I2` claim; three I2 commits landed on `m0`
+     afterwards, so the base is an ancestor of the tip and not the tip. That
+     is the shape the merge into `m0` expects anyway, and it keeps this run
+     out of a milestone that is being written while it reads it. Nothing here
+     touches a file I2 is in: `data/index/`, `entry/`, `sources.html` and
+     `narratives.html` are byte-identical to the base, so I2's newer index
+     wins that merge without a conflict.
+452. **Where `world`'s five `Last updated` paragraphs went, and why its
+     deviations are 429 to 450.** The protocol says keep both sides' blocks
+     and renumber theirs after ours. `m0`'s stop at 428, so `world`'s 191 to
+     212 become 429 to 450 and every cross-reference inside them moved with
+     them — the numbers 191 to 212 were `m0`'s own before H8 moved 1 to 297
+     into `docs/history/`, so leaving them would have made two different
+     deviations share a number. One number in that range was left alone: the
+     "200 tries" of deviation 442 is a count and not a reference. The five
+     paragraphs sit as one block under I1's, which is where the branch's own
+     account arrives whole; they are internally in reverse order, as they were
+     on `world`.
+453. **The retraction reason on the two `led` tombstones names M30a-2 and not
+     this merge.** `tools/migrate/led-to-tenures.mjs` writes one fixed
+     sentence, and it was left as the tool wrote it rather than hand-edited:
+     it is the same sentence on all fourteen tombstones now, and the rule it
+     states — who led a body is an office somebody held — is M30a-2's, which
+     is what the sentence is about. The day the two were re-filed is on the
+     records, in `retraction.on` and `revised`.
+454. **`tools/migrate/apply.mjs` was run over the tree, though no migration
+     was added.** `world` forked before H5b, so its 201 records arrived with
+     no `origin`, no `review.status`, a bare `sitelinks` count and a
+     tombstone's reason still inside `review.note`. `tools/lib/read.mjs` runs
+     the chain on the way in, so the validator and the index never saw it —
+     but `tests/bundle.test.mjs`, which holds a record on disk to what an
+     unedited save would write, did. 205 records changed and not one value
+     was written by hand.
+455. **`regionNote` does not survive a save through the contribution form**,
+     and `world`'s new round-trip test is what found it. The field is `m0`'s:
+     the import writes why it chose the lane it chose, and the event and place
+     forms have no field for it, so `applyValues` drops it. It bites nothing
+     in `data/` today, because no import has written a record there since the
+     field was added — which is exactly the shape of the two breaches
+     deviation 443 describes, found one run later than it should have been.
+     The fix is `regionNote` in `KEPT_KEYS` in `src/contribute/bundle.js`,
+     beside `historicalNames`, and `src/` is not a merge's to edit; the test
+     exempts the one key by name and asserts that nothing else is dropped.
+456. **`xinhai-revolution` is the one imported world event M40b wired and
+     never drafted.** It has its edge — the Boxer rebellion as a
+     `precondition-of` — so it is not a `degree-zero` warning and M40b's count
+     of 63 wired holds. But its summary is still the import's own, it names no
+     actors, and it carries `review.flags: ["imported-facts"]` with no
+     `review.status`, so it is the merge's only new `unread` and it is in no
+     queue. Writing its summary is historical text and not this run's; it
+     wants a paragraph and its actors, or a retraction with a reason, from
+     whoever finishes M40b.
+457. **The roles migration re-filed nothing, and nothing was mapped by hand.**
+     `node tools/migrate/roles.mjs` over the merged tree: 421 events, 545
+     actor lines, 0 re-filed, 0 unmapped, 0 left for a note. `world` wrote its
+     roles from `m0`'s thirty-one on purpose (deviation 447) so that rule 25
+     would pass on the far side of the merge, and it does. The ten actor lines
+     M41b added to `m0`'s nine reinstated events were checked one at a time
+     against `data/roles.json` as they were folded in.
+458. **Rule 3 reported nothing.** The brief expected references `m0` had
+     renamed or merged out from under `world`; there are none. `m0` added no
+     event and renamed none since the fork, and the two duplicate actors M41b
+     found — `uniao-nacional` and `partido-democratico` — were `world`'s own
+     mergers, so both ends of every reference `world` wrote are on `m0` under
+     the id it used.
+459. **The merge commit is not green on its own**, and the commit after it is
+     what makes it so. A merge commit records what the merge was; putting four
+     new records into it would have hidden them in five hundred files. So
+     `f692c64` carries the two rule 19 errors that `world`'s two `led`
+     relations are, and `072d57d` clears them. Every commit from there on is
+     0 errors.
+460. **The index and the two prerendered pages were rebuilt locally and put
+     back.** Six tests read `data/index/` against `data/`, and after this
+     merge they read a stale one; `node tools/build-index.mjs` was run to make
+     the suite mean something and `data/index/`, `entry/`, `sources.html` and
+     `narratives.html` were restored from the base before committing, because
+     the rebuild belongs to whoever lands this on `m0`. The suite was green
+     against the fresh index.
 
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
