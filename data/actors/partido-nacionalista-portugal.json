@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "partido-nacionalista-portugal",
   "kind": "actor",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,11 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-08",
-  "revised": null,
+  "revised": "2026-09-08",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "m41-retracted"
+    ],
+    "note": "Retracted in M41b: the Nationalist Party founded in 1903 by Jacinto Cândido after his break with Hintze Ribeiro. It is the only one of the 42 with no English lead, and the single Portuguese sentence cached for it says who founded it and nothing more. The atlas holds the election of 1908 in which both parties of the rotation had already split, but names only the Regenerators; joining this party to it would need a source that says how it stood, and there is no record here of Jacinto Cândido."
   },
   "wikidata": "Q10345652",
   "sitelinks": 2,

@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "galp-energia",
   "kind": "actor",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,11 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-08",
-  "revised": null,
+  "revised": "2026-09-08",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "m41-retracted"
+    ],
+    "note": "Retracted in M41b: Galp, formed in 1999 by the merger of Petrogal, Gás de Portugal and Transgás, and the largest oil and gas group in the country. The same gap as EDP's and one step further away: Petrogal was itself made out of the nationalisations, and the atlas holds neither its creation nor Galp's. Nothing here can be argued to have caused or been caused by a merger of holding companies in 1999."
   },
   "wikidata": "Q1492739",
   "sitelinks": 17,

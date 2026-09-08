@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "nos",
   "kind": "actor",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,11 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-08",
-  "revised": null,
+  "revised": "2026-09-08",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "m41-retracted"
+    ],
+    "note": "Retracted in M41b: the telecommunications and media group formed in 2013 by the merger of Zon Multimédia with Sonae's Optimus. The atlas holds neither company, neither the cable television of the 1990s nor the mobile licences, so a merger of two records it does not have cannot be argued to follow from anything here."
   },
   "wikidata": "Q136331",
   "sitelinks": 10,

@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "new-macau-association",
   "kind": "actor",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,11 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-08",
-  "revised": null,
+  "revised": "2026-09-08",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "m41-retracted"
+    ],
+    "note": "Retracted in M41b: the pro-democracy association founded in Macau in 1992 by António Ng Kuok Cheong, which won seats in the Legislative Assembly from 2005. The atlas's two Macau records are the chief executive selection of May 1999 and the transfer of administration that December, and this association took part in neither; everything the leads describe about it happened under Chinese sovereignty, after the Portuguese period this atlas covers ends."
   },
   "wikidata": "Q2495255",
   "sitelinks": 10,

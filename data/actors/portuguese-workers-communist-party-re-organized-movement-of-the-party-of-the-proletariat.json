@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "portuguese-workers-communist-party-re-organized-movement-of-the-party-of-the-proletariat",
   "kind": "actor",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,11 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-08",
-  "revised": null,
+  "revised": "2026-09-08",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "m41-retracted"
+    ],
+    "note": "Retracted in M41b: the PCTP/MRPP, the Maoist party founded on 18 September 1970 and legalised in 1975. The atlas holds the revolutionary period in some detail and no record of the far left outside the PCP; the leads say when the party was founded and renamed and nothing about anything it did. There is no honest way from either to the other."
   },
   "wikidata": "Q2054628",
   "sitelinks": 11,

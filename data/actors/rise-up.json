@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "rise-up",
   "kind": "actor",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,11 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-08",
-  "revised": null,
+  "revised": "2026-09-08",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "m41-retracted"
+    ],
+    "note": "Retracted in M41b: Ergue-te, the ultranationalist party founded in 2000 as the Partido Nacional Renovador out of a statute change to the old Partido Renovador Democrático, and dissolved in 2025. It never held a seat, the atlas holds neither the PRD nor any election record that names it, and the leads describe a motto rather than an event."
   },
   "wikidata": "Q2054681",
   "sitelinks": 10,

@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "energias-de-portugal",
   "kind": "actor",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,11 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-08",
-  "revised": null,
+  "revised": "2026-09-08",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "m41-retracted"
+    ],
+    "note": "Retracted in M41b: EDP, the electricity utility founded in 1976 out of the merger of fourteen nationalised companies. The link to the atlas is real and it has no record to hang on: the nationalisations this atlas holds are those of March 1975, a year earlier, and EDP was not an actor in them but a body made afterwards out of what they took. It would need an event for the creation of EDP in 1976, or for the nationalisation of electricity that followed the banks over that summer."
   },
   "wikidata": "Q1341222",
   "sitelinks": 15,

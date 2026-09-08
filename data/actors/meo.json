@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "meo",
   "kind": "actor",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,11 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-08",
-  "revised": null,
+  "revised": "2026-09-08",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "m41-retracted"
+    ],
+    "note": "Retracted in M41b: the fixed and mobile brand of Altice Portugal, which became the group's operating company when Portugal Telecom wound up TMN at the end of 2014. It is a brand and a subsidiary inside a company the atlas has already retracted for want of anything to join it to, and it would need everything Altice Portugal would need first."
   },
   "wikidata": "Q1365938",
   "sitelinks": 10,

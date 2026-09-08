@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "the-navigator-company",
   "kind": "actor",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,11 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-08",
-  "revised": null,
+  "revised": "2026-09-08",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "m41-retracted"
+    ],
+    "note": "Retracted in M41b: the pulp and paper company, under this name since 2001. Its cached leads are one sentence each and say only what it makes. There is no event here it took part in and nothing in the record from which one could be argued."
   },
   "wikidata": "Q686182",
   "sitelinks": 12,

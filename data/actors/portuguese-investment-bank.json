@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "portuguese-investment-bank",
   "kind": "actor",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,11 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-08",
-  "revised": null,
+  "revised": "2026-09-08",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "m41-retracted"
+    ],
+    "note": "Retracted in M41b: Banco BPI, founded in 1981 as Banco Português de Investimento and now owned by CaixaBank. The atlas holds no event of the Portuguese banking system between the nationalisations of 1975 and the resolution of BES in 2014 that BPI took any part in, and the leads say nothing that could be argued from. Same gap as BCP's."
   },
   "wikidata": "Q537886",
   "sitelinks": 11,

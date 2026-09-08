@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "euronext",
   "kind": "actor",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,11 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-08",
-  "revised": null,
+  "revised": "2026-09-08",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "m41-retracted"
+    ],
+    "note": "Retracted in M41b: the pan-European exchange that operates the Lisbon bourse among seven others, spun off from ICE in 2014. The atlas holds nothing about the Lisbon stock exchange at all — not its merger into Euronext in 2002, not the PSI, not a single listing — so there is no Portuguese record for a European exchange to be joined to. It is also the only one of the 42 that is not a Portuguese body."
   },
   "wikidata": "Q842108",
   "sitelinks": 47,

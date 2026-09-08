@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "farfetch",
   "kind": "actor",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,11 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-08",
-  "revised": null,
+  "revised": "2026-09-08",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "m41-retracted"
+    ],
+    "note": "Retracted in M41b: the luxury fashion marketplace founded in 2007 or 2008 by José Neves, headquartered in London and bought by the Korean company Coupang in January 2024. Its founder is Portuguese and almost nothing else about it is; the atlas holds no record of Portuguese technology companies, of the London listing or of the sale, and there is nothing here for it to change or to answer to."
   },
   "wikidata": "Q18712957",
   "sitelinks": 11,

@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "fertagus",
   "kind": "actor",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,11 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-08",
-  "revised": null,
+  "revised": "2026-09-08",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "m41-retracted"
+    ],
+    "note": "Retracted in M41b: the suburban railway that has run across the Ponte 25 de Abril to the Setúbal peninsula under concession since 1999. The atlas holds no record of the bridge, of its railway deck opened in that year, or of the Lisbon suburban network, and the operator cannot be joined to a crossing the atlas has never mentioned."
   },
   "wikidata": "Q1408210",
   "sitelinks": 10,

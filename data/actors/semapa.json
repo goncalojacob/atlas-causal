@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "semapa",
   "kind": "actor",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,11 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-08",
-  "revised": null,
+  "revised": "2026-09-08",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "m41-retracted"
+    ],
+    "note": "Retracted in M41b: the holding company founded in 1991 with interests in cement, pulp and paper and environmental services. The same gap as Altri's and the Navigator Company's: three records of the same industry, none of them attached to an event, and an atlas with no Portuguese industrial history between 1975 and today."
   },
   "wikidata": "Q1862723",
   "sitelinks": 11,

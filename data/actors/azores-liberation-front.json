@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "azores-liberation-front",
   "kind": "actor",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,11 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-08",
-  "revised": null,
+  "revised": "2026-09-08",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "m41-retracted"
+    ],
+    "note": "Retracted in M41b: the FLA, the right-wing Azorean separatist organisation that appeared immediately after the Carnation Revolution and attacked political opponents in the islands in 1975. The atlas holds the revolution and the first Azorean regional election of 1976, and its record of that election speaks of the archipelago's autonomist movement without naming this one. It would need a record of the Azorean agitation of the summer of 1975, which is the event the FLA belongs to."
   },
   "wikidata": "Q260897",
   "sitelinks": 9,

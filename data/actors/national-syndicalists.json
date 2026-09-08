@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "national-syndicalists",
   "kind": "actor",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,11 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-08",
-  "revised": null,
+  "revised": "2026-09-08",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "m41-retracted"
+    ],
+    "note": "Retracted in M41b: the National Syndicalist Movement, founded in February 1932 by Francisco Rolão Preto, the nearest thing to a fascist movement Portugal produced and suppressed by the Estado Novo in 1934. The atlas holds the regime it was absorbed and banned by, and holds nothing about the suppression itself: not the ban, not the exile of Rolão Preto, not the revolt of 1935, and no record of the man. It would need one of those, and it is the retraction here most worth undoing."
   },
   "wikidata": "Q2562540",
   "sitelinks": 10,
