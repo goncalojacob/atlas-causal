@@ -359,3 +359,25 @@ Run protocol: `docs/run-protocol.md` in full — the gate, the claim, a push
 after every commit, validator and tests green at every commit, and
 `M37a done`, `M37b done`, `M37 done` each as its own line under
 `## Milestones landed`.
+
+## Amendments after review
+
+Written 8 September 2026 by an independent Fable reviewer of the map block, against `origin/briefs-map` and `origin/m0` at 81e5bf1, with the owner questions answered as recommended (the ceiling is the base map's, 8 MB, with 24 MB for all of `data/geo/`; M39 split in two; one name on the face and no "local" name; the glyph drawn at the mark's diameter); the owner may overrule. **These override the body where they differ** (run protocol §3). The full review is `docs/review-2026-09-08-map-block.md`.
+
+A0. §1: `"line"` geometry is drawn by a new `linePath` in `land.js` (no
+`Z`), `"polygon"` by `geometryPath`, `"point"` by circles; `detailFor` is
+imported from `presences.js`, where it is already exported, not moved.
+A1. §1: a feature that arrives in more than one cell (lakes, physical) is
+drawn once, keyed by `id`.
+A2. §2: nothing is hidden per cell. The far coastline keeps its fill; its
+stroke (`.layer-land path`) is switched off when every cell
+`cellsFor(view)` names for `coast` is in hand and switched back on when one
+is not, and the near `coast` lines are the coastline from then on.
+A3. §3: strike item 4's contingency; the glyph run precedes this one by the
+plan's order and the "events by category" details is found built.
+A4. §4: `?layers=` semantics unchanged; the category filter itself is the
+glyph run's, in `workingSet`, and this run does not touch it.
+A5. `manifest.schema` and deviations as in the plan's A4; ARCHITECTURE.md
+is cited by heading, not by line.
+A6. `about.html`'s sentence reads "no legend by colour; the layer control
+is the legend for everything else".

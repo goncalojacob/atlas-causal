@@ -336,3 +336,35 @@ M37 521–526, M38 527–531, the glyph run 532–535.
      for.** They were written by an independent pass over the code, the plan
      and the two reviews; each carries an empty "Amendments after review"
      hook, and owner question 12 is whether that review runs before M36.
+
+## Amendments after review
+
+Written 8 September 2026 by an independent Fable reviewer of the map block, against `origin/briefs-map` and `origin/m0` at 81e5bf1, with the owner questions answered as recommended (the ceiling is the base map's, 8 MB, with 24 MB for all of `data/geo/`; M39 split in two; one name on the face and no "local" name; the glyph drawn at the mark's diameter); the owner may overrule. **These override the body where they differ** (run protocol §3). The full review is `docs/review-2026-09-08-map-block.md`.
+
+A0. §3's "the sources become ~5 MB" reads: the seven 10 m files are 49.6
+MB raw and 12.7 MB gzipped, `populated_places` alone 19.4 MB raw; with the
+110 m pair and CShapes the commit is **15.8 MB** gzipped. `vendor/README.md`
+records the measured raw and gzipped size and sha256 of every file.
+A1. §4: `tools/import/cshapes.mjs` and `tools/import/naturalearth.mjs`
+accept a `--source` ending in `.gz`, decompress it with `gunzipSync`, and
+hash the decompressed bytes, so every recorded sha256 is of the file as
+downloaded.
+A2. §2: M39 is two gated sub-runs — **M39a** (projection parameter,
+`clipToBox`, `splitAtMeridian` as two clips, the seam report, every geometry
+file recut, wrapping `?bbox=`, and the contract that `k = 1` is the whole
+world in 960 units) and **M39b** (inland-only borders and the shard's arc
+list); done lines `M39a done`, `M39b done`, `M39 done`.
+A3. §3 and §5 question 1: the 15 MB ceiling is the base map's, held to 8
+MB; `data/geo/` as a whole has a recorded total of 24 MB, printed by
+`--budget` beside the base map's; M43 carries its own budget in its brief
+and does not inherit "2.8 MB".
+A4. §7: deviations are numbered on from the last in `STATUS.md` at each
+run's gate, never from 507; every "manifest.schema n to n+1" in the briefs
+reads "one more than the gate commit's".
+A5. §5 question 6: one name on the face — the dated name where a place
+record gives one for the year, else Natural Earth's `NAME` — and in the
+title `NAME_EN` where it differs plus every dated name with its years;
+there is no "local name" until the i18n overlay names a language.
+A6. §6: `k = 1` is the whole world at 960 units and every zoom threshold in
+the data (`z`, `zl`, `minZoom`) is written in `k`, converted from Natural
+Earth's `min_zoom`/`scalerank` by one recorded table.

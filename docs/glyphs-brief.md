@@ -307,3 +307,21 @@ further from 536.
 Run protocol: `docs/run-protocol.md` in full — the gate, the claim, a push
 after every commit, validator and tests green at every commit, and the
 literal line `glyphs done` as its own line under `## Milestones landed`.
+
+## Amendments after review
+
+Written 8 September 2026 by an independent Fable reviewer of the map block, against `origin/briefs-map` and `origin/m0` at 81e5bf1, with the owner questions answered as recommended (the ceiling is the base map's, 8 MB, with 24 MB for all of `data/geo/`; M39 split in two; one name on the face and no "local" name; the glyph drawn at the mark's diameter); the owner may overrule. **These override the body where they differ** (run protocol §3). The full review is `docs/review-2026-09-08-map-block.md`.
+
+A0. §4: the filter is written in this run — one removal in `workingSet`
+(`src/emphasis.js`), applied where the lens is, so the map, the timeline,
+the graph and the corner count agree; `main.js`'s checkbox handler writes
+A11's token set (`events` replaced by one `events:<id>` per category still
+on); `tests/emphasis.test.mjs` holds the rule that an uncategorised event
+is removed by no category token.
+A1. §2: the glyph's box is the mark's diameter — 10 units at `k = 1`,
+divided by `k` — stroke 1, the mark's fill its ground; six units is struck.
+A2. Tests: `tests/fixtures/data/categories.json` is added with three ids
+and three fixture events take one each; the fixture manifest then carries
+`categoriesAllowed` and `categories`.
+A3. `manifest.schema` is one more than the gate commit's; deviations are
+numbered on from the last in `STATUS.md` at the gate.

@@ -54,3 +54,15 @@ screenshot under `docs/screens/m39-*.png` through `tools/screens.mjs`);
 Pacific (browser tests); every event's derived region unchanged (test);
 `node tools/validate.mjs --index` byte-identical after the rebuild;
 `node --test` green; the literal line `M39 done`.
+
+## Amendments after review (the map block, 8 September 2026)
+
+Written 8 September 2026 by an independent Fable reviewer of the map block, against `origin/briefs-map` and `origin/m0` at 81e5bf1, with the owner questions answered as recommended (the ceiling is the base map's, 8 MB, with 24 MB for all of `data/geo/`; M39 split in two; one name on the face and no "local" name; the glyph drawn at the mark's diameter); the owner may overrule. **These override the body where they differ** (run protocol §3). The full review is `docs/review-2026-09-08-map-block.md`.
+
+A0. **M39 is two gated runs.** M39a: the projection parameter, `clipToBox(geometry, [w, s, e, n])` in `tools/import/geometry.mjs` (Sutherland-Hodgman per ring against the four edges, holes kept, degenerate rings dropped, a line cut into the segments inside the box, tested), `splitAtMeridian` as two clips over the two half-worlds, the seam report, every geometry file recut, wrapping `?bbox=`, and the contract that **`k = 1` is the whole world in 960 units** and the unit every zoom threshold in the data is written in; done line `M39a done`. M39b, gated on it: the inland-only borders and the shard's arc list; done lines `M39b done` then `M39 done`.
+
+A1. **The CShapes source is read gzipped.** `tools/import/cshapes.mjs` accepts a `--source` ending in `.gz`, decompresses it with `gunzipSync` and hashes the decompressed bytes, so `SOURCE_FILE_SHA256` and the hash `data/geo/LICENSE` records stay what they are; the file is `vendor/cshapes/cshapes_2_gw.topojson.gz`, committed by the assistant before the run with its sizes and sha256 in `vendor/README.md`.
+
+A2. **The grid's origin is -180 in data longitudes**, independent of the seam, so a seam change moves no cell; the grid itself is M36's.
+
+A3. `manifest.schema` is one more than the gate commit's where it moves; deviations are numbered on from the last in `STATUS.md` at the gate; `ARCHITECTURE.md` is cited by heading, not by line.

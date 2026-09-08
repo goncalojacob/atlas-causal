@@ -260,3 +260,21 @@ Run protocol: `docs/run-protocol.md` in full — the gate, the claim, a push
 after every commit, validator and tests green at every commit, and
 `M38a done`, `M38b done`, `M38 done` each as its own line under
 `## Milestones landed`.
+
+## Amendments after review
+
+Written 8 September 2026 by an independent Fable reviewer of the map block, against `origin/briefs-map` and `origin/m0` at 81e5bf1, with the owner questions answered as recommended (the ceiling is the base map's, 8 MB, with 24 MB for all of `data/geo/`; M39 split in two; one name on the face and no "local" name; the glyph drawn at the mark's diameter); the owner may overrule. **These override the body where they differ** (run protocol §3). The full review is `docs/review-2026-09-08-map-block.md`.
+
+A0. §3: the three kinds of name are two. Face: the dated name from
+`historicalNames` for the window's far end, else `NAME`; title: `NAME_EN`
+where it differs from `NAME`, then every dated name with its years. No
+"local name" and no `NAME_<lang>` is read until the i18n overlay names a
+language.
+A1. §3: no real place carries `historicalNames` at the gate (0 of 26); the
+dated path is proven on a fixture place and `STATUS.md` says so; nothing
+on the real map is dated until somebody writes one.
+A2. §2: `zl` is in `k` by M36's table (from `min_label`/`LABELRANK` where
+the file has one, `z + 1` otherwise).
+A3. The reading list drops `data/imports/naturalearth-places.json`; the
+place id is on the city feature.
+A4. Tests: `tests/spine-pages.test.mjs` asserts request names only.

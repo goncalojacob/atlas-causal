@@ -445,3 +445,52 @@ Run protocol: `docs/run-protocol.md` in full — the gate, the claim, a push
 after every commit, validator and tests green at every commit, and
 `M36a done`, `M36b done`, `M36c done`, `M36 done` each as its own line under
 `## Milestones landed`.
+
+## Amendments after review
+
+Written 8 September 2026 by an independent Fable reviewer of the map block, against `origin/briefs-map` and `origin/m0` at 81e5bf1, with the owner questions answered as recommended (the ceiling is the base map's, 8 MB, with 24 MB for all of `data/geo/`; M39 split in two; one name on the face and no "local" name; the glyph drawn at the mark's diameter); the owner may overrule. **These override the body where they differ** (run protocol §3). The full review is `docs/review-2026-09-08-map-block.md`.
+
+A0. §0: the sources are read gzipped through `gunzipSync`; `--check`
+hashes the decompressed bytes against the values `vendor/README.md`
+records (§0 of the review), never the plan's estimates.
+A1. §1: the grid's origin is -180° in data longitudes, independent of the
+seam; `cellsFor` wraps a box whose west is east of its east.
+A2. §2: a cell is built with `clipToBox` from M39 per layer: `coast` is the
+coastline as **lines** (`geometry: "line"`, the ring segments inside the
+cell) drawn over `manifest.land`'s fill; `rivers` are lines clipped to the
+cell; `lakes` and `physical` are whole features assigned to every cell
+their bbox overlaps and never clipped, carrying a stable `id` so M37 draws
+each once; points by cell. A cut edge is never part of a stroked ring.
+A3. §2: strike "full detail". The near tolerance of each layer is whatever
+its cap forces, starting at 0.005° and stepped up; `--budget` prints per
+layer the tolerance, points kept and points dropped; both numbers go into
+`STATUS.md` and the "what the import changed" paragraph of
+`data/geo/LICENSE`.
+A4. §2: `z` (and M38's `zl`) are in `k` — one frozen, monotone table in
+`features.mjs` from Natural Earth's `min_zoom`/`scalerank`, everything kept
+visible by `k = 16`, recorded in `STATUS.md`; `minZoom` in the manifest is
+in the same unit.
+A5. §3: `physical` keeps a frozen allow-list of `FEATURECLA` — `Range/mtn`,
+`Desert`, `Plateau`, `Plain`, `Pen/cape`, `Peninsula`, `Basin`,
+`Depression`, `Valley`, `Lowland`, `Delta`, `Isthmus`, `Foothills`,
+`Tundra`, `Wetlands`, `Gorge`, `Geoarea` — and drops `Island`, `Island
+group`, `Coast`, `Continent`, `Lake` and `Dragons-be-here`; `mountains` is
+the elevation points, all 711 of which carry `elevation`, and the
+"no elevations" fallback is struck.
+A6. §3: a city feature carries `place: "<id>"` where
+`data/imports/naturalearth-places.json` names one, because
+`data/imports/` is not in the artifact; the browser never fetches it. A
+city's fields are `id` (`ne_id`), `name` (`NAME`), `nameEn` (`NAME_EN`,
+only where it differs), `lon`, `lat`, `pop`, `z`, `zl`, `wikidata`, `place`.
+A7. §1: `src/util/simplify.js` gains `simplifyLine(line, { tolerance,
+decimals })` over `simplifyArc`, tested; the import uses it for rivers and
+the coast lines.
+A8. §4: `manifest.schema` is one more than the gate commit's; the fixture
+base map covers the fixture places' box (lon -35…-9, lat 0…45) and its
+`coast` cells are lines.
+A9. §5: the ceilings `--budget` enforces are base map ≤ 8 MB and
+`data/geo/` ≤ 24 MB; the "2.8 MB for M43" sentence is struck.
+A10. Tests: `tests/spine-pages.test.mjs` holds request names, not bytes —
+it gains "no `geo/base/` request on any page's first paint"; the measured
+first-paint bytes go into `STATUS.md` and the Scale table only.
+A11. Deviations are numbered on from the last in `STATUS.md` at the gate.
