@@ -238,3 +238,49 @@ unclassified class Q158218: add it to data/imports/wikidata-seeds.json → class
 unclassified class Q21170235: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
 10 Wikipedia lead(s) cached under tools/import/cache/wikipedia
 5 created, 0 enriched, 20 refused, 0 ambiguous
+import: 25 item(s) this batch, 0 left after it, 11 call(s) spent
+created actor reconstitution-party from Q2054732
+created actor volt-portugal from Q97303443
+created actor democratic-leftwing-republican-party from Q3366682
+created actor partido-nacionalista-portugal from Q10345652
+created actor social-liberal-party from Q133273478
+refused Q555443: none of its classes (Q249556) is in data/imports/wikidata-seeds.json → classes
+refused Q3331246: none of its classes (Q6636777) is in data/imports/wikidata-seeds.json → classes
+refused Q10351044: none of its classes (Q2101516) is in data/imports/wikidata-seeds.json → classes
+refused Q10351328: none of its classes (Q537127, Q18449828, Q210272) is in data/imports/wikidata-seeds.json → classes
+refused Q540545: none of its classes (Q1078765) is in data/imports/wikidata-seeds.json → classes
+refused Q555837: none of its classes (Q270791, Q249556) is in data/imports/wikidata-seeds.json → classes
+refused Q3179616: none of its classes (Q1210334, Q158218, Q21170235, Q210272) is in data/imports/wikidata-seeds.json → classes
+refused Q5396166: none of its classes (Q537127, Q21170235, Q158218, Q210272, Q1210334) is in data/imports/wikidata-seeds.json → classes
+refused Q7228164: none of its classes (Q537127, Q158218, Q21170235, Q210272) is in data/imports/wikidata-seeds.json → classes
+refused Q8355026: none of its classes (Q1078765) is in data/imports/wikidata-seeds.json → classes
+refused Q17390261: none of its classes (Q21752084, Q1223230, Q537127, Q210272, Q14752696) is in data/imports/wikidata-seeds.json → classes
+refused Q66170306: none of its classes (Q537127, Q12042110) is in data/imports/wikidata-seeds.json → classes
+refused Q97957820: none of its classes (Q1078765) is in data/imports/wikidata-seeds.json → classes
+refused Q105663868: none of its classes (Q49775) is in data/imports/wikidata-seeds.json → classes
+refused Q4135446: none of its classes (Q1210334, Q158218, Q21170235, Q210272) is in data/imports/wikidata-seeds.json → classes
+refused Q10266748: none of its classes (Q327333) is in data/imports/wikidata-seeds.json → classes
+refused Q16502097: none of its classes (Q285852) is in data/imports/wikidata-seeds.json → classes
+refused Q25422468: none of its classes (Q1210334) is in data/imports/wikidata-seeds.json → classes
+refused Q110630884: none of its classes (Q537127, Q210272) is in data/imports/wikidata-seeds.json → classes
+refused Q9661188: none of its classes (Q285852) is in data/imports/wikidata-seeds.json → classes
+unclassified class Q249556: add it to data/imports/wikidata-seeds.json → classes or the 2 item(s) in it stay refused
+unclassified class Q6636777: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q2101516: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q537127: add it to data/imports/wikidata-seeds.json → classes or the 6 item(s) in it stay refused
+unclassified class Q18449828: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q210272: add it to data/imports/wikidata-seeds.json → classes or the 7 item(s) in it stay refused
+unclassified class Q1078765: add it to data/imports/wikidata-seeds.json → classes or the 3 item(s) in it stay refused
+unclassified class Q270791: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q1210334: add it to data/imports/wikidata-seeds.json → classes or the 4 item(s) in it stay refused
+unclassified class Q158218: add it to data/imports/wikidata-seeds.json → classes or the 4 item(s) in it stay refused
+unclassified class Q21170235: add it to data/imports/wikidata-seeds.json → classes or the 4 item(s) in it stay refused
+unclassified class Q21752084: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q1223230: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q14752696: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q12042110: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q49775: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q327333: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q285852: add it to data/imports/wikidata-seeds.json → classes or the 2 item(s) in it stay refused
+9 Wikipedia lead(s) cached under tools/import/cache/wikipedia
+5 created, 0 enriched, 20 refused, 0 ambiguous

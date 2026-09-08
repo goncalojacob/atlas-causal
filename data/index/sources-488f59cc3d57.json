@@ -11942,7 +11942,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 155,
+      "citationCount": 160,
       "citations": [
         {
           "dissent": false,
@@ -11973,6 +11973,12 @@
           "id": "brisa-auto-estradas-de-portugal",
           "kind": "actor",
           "locator": "Q587719"
+        },
+        {
+          "dissent": false,
+          "id": "democratic-leftwing-republican-party",
+          "kind": "actor",
+          "locator": "Q3366682"
         },
         {
           "dissent": false,
@@ -12084,6 +12090,12 @@
         },
         {
           "dissent": false,
+          "id": "partido-nacionalista-portugal",
+          "kind": "actor",
+          "locator": "Q10345652"
+        },
+        {
+          "dissent": false,
           "id": "people-animals-nature",
           "kind": "actor",
           "locator": "Q2054840"
@@ -12120,6 +12132,12 @@
         },
         {
           "dissent": false,
+          "id": "reconstitution-party",
+          "kind": "actor",
+          "locator": "Q2054732"
+        },
+        {
+          "dissent": false,
           "id": "redes-energeticas-nacionais",
           "kind": "actor",
           "locator": "Q1862842"
@@ -12150,6 +12168,12 @@
         },
         {
           "dissent": false,
+          "id": "social-liberal-party",
+          "kind": "actor",
+          "locator": "Q133273478"
+        },
+        {
+          "dissent": false,
           "id": "the-navigator-company",
           "kind": "actor",
           "locator": "Q686182"
@@ -12159,6 +12183,12 @@
           "id": "university-of-porto",
           "kind": "actor",
           "locator": "Q1422903"
+        },
+        {
+          "dissent": false,
+          "id": "volt-portugal",
+          "kind": "actor",
+          "locator": "Q97303443"
         },
         {
           "dissent": false,

@@ -13270,7 +13270,7 @@
     }
   ],
   "schema": 1,
-  "total": 1191,
+  "total": 1196,
   "warnings": [
     {
       "id": "altice-portugal",
@@ -13307,6 +13307,12 @@
       "kind": "event",
       "message": "event has no edges",
       "rule": "degree-zero"
+    },
+    {
+      "id": "democratic-leftwing-republican-party",
+      "kind": "actor",
+      "message": "actor is referenced by no event and no relation, and holds no territory",
+      "rule": "actor-unused"
     },
     {
       "id": "democratic-party",
@@ -13423,6 +13429,12 @@
       "rule": "actor-unused"
     },
     {
+      "id": "partido-nacionalista-portugal",
+      "kind": "actor",
+      "message": "actor is referenced by no event and no relation, and holds no territory",
+      "rule": "actor-unused"
+    },
+    {
       "id": "people-animals-nature",
       "kind": "actor",
       "message": "actor is referenced by no event and no relation, and holds no territory",
@@ -13454,6 +13466,12 @@
     },
     {
       "id": "portuguese-workers-communist-party-re-organized-movement-of-the-party-of-the-proletariat",
+      "kind": "actor",
+      "message": "actor is referenced by no event and no relation, and holds no territory",
+      "rule": "actor-unused"
+    },
+    {
+      "id": "reconstitution-party",
       "kind": "actor",
       "message": "actor is referenced by no event and no relation, and holds no territory",
       "rule": "actor-unused"
@@ -13495,6 +13513,12 @@
       "rule": "actor-unused"
     },
     {
+      "id": "social-liberal-party",
+      "kind": "actor",
+      "message": "actor is referenced by no event and no relation, and holds no territory",
+      "rule": "actor-unused"
+    },
+    {
       "id": "the-navigator-company",
       "kind": "actor",
       "message": "actor is referenced by no event and no relation, and holds no territory",
@@ -13508,6 +13532,12 @@
     },
     {
       "id": "university-of-porto",
+      "kind": "actor",
+      "message": "actor is referenced by no event and no relation, and holds no territory",
+      "rule": "actor-unused"
+    },
+    {
+      "id": "volt-portugal",
       "kind": "actor",
       "message": "actor is referenced by no event and no relation, and holds no territory",
       "rule": "actor-unused"

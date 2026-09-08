@@ -1654,6 +1654,27 @@
     {
       "actorType": "institution",
       "aliases": [],
+      "id": "democratic-leftwing-republican-party",
+      "name": "Democratic Leftwing Republican Party",
+      "names": [
+        "Democratic Leftwing Republican Party",
+        "Partido Republicano da Esquerda Democrática"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": 1927,
+        "start": 1920
+      },
+      "wikidata": "Q3366682",
+      "wikipedia": {
+        "en": "Democratic Leftwing Republican Party",
+        "pt": "Partido Republicano da Esquerda Democrática"
+      }
+    },
+    {
+      "actorType": "institution",
+      "aliases": [],
       "id": "democratic-party",
       "name": "Democratic Party",
       "names": [
@@ -5191,6 +5212,25 @@
     {
       "actorType": "institution",
       "aliases": [],
+      "id": "partido-nacionalista-portugal",
+      "name": "Partido Nacionalista (Portugal)",
+      "names": [
+        "Partido Nacionalista (Portugal)"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": 1910,
+        "start": 1903
+      },
+      "wikidata": "Q10345652",
+      "wikipedia": {
+        "pt": "Partido Nacionalista (Portugal)"
+      }
+    },
+    {
+      "actorType": "institution",
+      "aliases": [],
       "id": "partido-republicano-portugues",
       "name": "Portuguese Republican Party",
       "names": [
@@ -5664,6 +5704,27 @@
       "wikipedia": {
         "en": "António Ramalho Eanes",
         "pt": "António Ramalho Eanes"
+      }
+    },
+    {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "reconstitution-party",
+      "name": "Reconstitution Party",
+      "names": [
+        "Reconstitution Party",
+        "Partido Republicano da Reconstituição Nacional"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 1920
+      },
+      "wikidata": "Q2054732",
+      "wikipedia": {
+        "en": "Reconstitution Party",
+        "pt": "Partido Republicano da Reconstituição Nacional"
       }
     },
     {
@@ -6192,6 +6253,28 @@
       "when": {
         "end": null,
         "start": 1992
+      }
+    },
+    {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "social-liberal-party",
+      "name": "Social Liberal Party",
+      "names": [
+        "Social Liberal Party",
+        "Partido Liberal Social",
+        "Partido Liberal Social (Portugal)"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 2025
+      },
+      "wikidata": "Q133273478",
+      "wikipedia": {
+        "en": "Partido Liberal Social (Portugal)",
+        "pt": "Partido Liberal Social"
       }
     },
     {
@@ -7210,6 +7293,26 @@
       "when": {
         "end": 1975,
         "start": 1954
+      }
+    },
+    {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "volt-portugal",
+      "name": "Volt Portugal",
+      "names": [
+        "Volt Portugal"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 2020
+      },
+      "wikidata": "Q97303443",
+      "wikipedia": {
+        "en": "Volt Portugal",
+        "pt": "Volt Portugal"
       }
     },
     {

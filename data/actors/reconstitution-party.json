@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "reconstitution-party",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-08",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q2054732",
+  "sitelinks": 4,
+  "wikipedia": {
+    "en": "Reconstitution Party",
+    "pt": "Partido Republicano da Reconstituição Nacional"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2054732"
+    }
+  ],
+  "actorType": "institution",
+  "names": [
+    "Reconstitution Party",
+    "Partido Republicano da Reconstituição Nacional"
+  ],
+  "summary": "Wikidata item Q2054732, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1920,
+    "end": null
+  },
+  "where": null
+}
