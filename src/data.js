@@ -15,9 +15,12 @@
 import { buildAdjacency } from './graph.js';
 import { narrativeEventIds } from './narrative.js';
 import { extent as intervalExtent } from './util/dates.js';
-import { periodOfEdge } from './explanations.js';
-// The index's column table, read backwards here and forwards by the build.
-import { PRESENCE_KINDS, SPINE_KINDS, decodeSpineFile } from './spine.js';
+import { attributePeriod, attributeShardKey, periodOfEdge } from './explanations.js';
+// The index's column tables, read backwards here and forwards by the build.
+import {
+  ATTRIBUTE_COLUMNS, CORE_COLUMNS, PRESENCE_KINDS, SPINE_KINDS,
+  applyAttributes, boundsOf, decodeSpineFile, fillFallbacks, stripAttributes,
+} from './spine.js';
 
 async function defaultFetchJson(url, init) {
   const response = await fetch(url, init);
@@ -61,6 +64,13 @@ export function createAtlas({
   manifest, topology, sources, land = null, palette = null, regionBoxes = null, regionShapes = null,
   dataRoot = 'data/', fetchJson = defaultFetchJson, citers: seededCiters = null,
   presences: seededPresences = null,
+  // Since I3, and only for an atlas built from the core: whether a record's
+  // attribute shard has landed, and what `record()` must wait for before it can
+  // ask for a record file with the `?v=` the shard carries (i3-brief, A2 and
+  // A3). An atlas from the spine has every attribute in hand the moment it
+  // exists, which is what the defaults say.
+  attributesLoaded = () => true,
+  beforeRecord = null,
 }) {
   const events = new Map(topology.events.map((e) => [e.id, e]));
   const edges = new Map(topology.edges.map((e) => [e.id, e]));
@@ -90,10 +100,17 @@ export function createAtlas({
   // name `citesCount` (A8). Only events, actors and places carry it — they
   // are the three kinds a card prints it beside — and a tombstone carries
   // none, which is 0 either way: a retracted record cites nothing.
+  //
+  // Filled by `reindexRecords` below rather than here, because since I3 the
+  // number may arrive after the atlas does: it is one of the attributes, and an
+  // atlas built from the core reads 0 until the record's shard lands.
   const cites = new Map();
-  for (const [kind, map] of kinds) {
-    for (const record of map.values()) {
-      if (typeof record.citesCount === 'number') cites.set(`${kind}:${record.id}`, record.citesCount);
+  function fillCites() {
+    cites.clear();
+    for (const [kind, map] of kinds) {
+      for (const record of map.values()) {
+        if (typeof record.citesCount === 'number') cites.set(`${kind}:${record.id}`, record.citesCount);
+      }
     }
   }
   const citationCount = (kind, id) => cites.get(`${kind}:${id}`) ?? 0;
@@ -242,14 +259,30 @@ export function createAtlas({
   // has no `revised` for is asked for without one, which is what it was
   // before: the parameter is a hint to the cache and never part of the
   // address (ARCHITECTURE.md, "Index and manifest").
+  // Since I3 `revised` is one of the attributes, so an atlas built from the
+  // core waits for the record's own shard — one request, cached, never a
+  // second — before it asks for the file. Without that a card opened in a
+  // century that had not landed would fetch the record with no `?v=` at all and
+  // could draw a stale copy for the rest of the session (index2 review, finding
+  // 3). An atlas from the spine has no `beforeRecord` and is exactly what it
+  // was: no promise between the click and the request.
   const byKind = new Map(kinds);
   const cache = new Map();
+  function fetchRecord(kind, id) {
+    const revised = byKind.get(kind)?.get(id)?.revised ?? null;
+    const version = typeof revised === 'string' ? `?v=${encodeURIComponent(revised)}` : '';
+    return fetchJson(`${dataRoot}${kind}s/${encodeURIComponent(id)}.json${version}`);
+  }
   function record(kind, id) {
     const key = `${kind}/${id}`;
     if (!cache.has(key)) {
-      const revised = byKind.get(kind)?.get(id)?.revised ?? null;
-      const version = typeof revised === 'string' ? `?v=${encodeURIComponent(revised)}` : '';
-      const pending = fetchJson(`${dataRoot}${kind}s/${encodeURIComponent(id)}.json${version}`).catch((error) => {
+      const pending = (beforeRecord === null
+        ? fetchRecord(kind, id)
+        // A shard that will not load leaves the record without its `?v=` rather
+        // than taking the card down with it: the same "a rejection is not an
+        // answer" every deferred load here follows.
+        : Promise.resolve(beforeRecord(kind, id)).catch(() => null).then(() => fetchRecord(kind, id))
+      ).catch((error) => {
         // Only if it is still this attempt's: a later one may have replaced it.
         if (cache.get(key) === pending) cache.delete(key);
         throw error;
@@ -266,17 +299,25 @@ export function createAtlas({
   // The note beside the role travels with the row: it is on the line and not
   // on the actor, so "as prime minister" belongs to this appearance and to no
   // other. The spine carries it (M30a-3), so showing it costs no fetch.
+  //
+  // The role and the note are attributes since I3 and may arrive after the
+  // atlas does, so the rows are built by `reindexRecords` and built again when
+  // a shard lands: a row that kept the role it was given at load would say
+  // "no role" for the rest of the session.
   const eventsByActor = new Map();
-  for (const event of activeEvents) {
-    for (const { actor, role, note } of event.actors ?? []) {
-      if (!actors.has(actor)) continue;
-      if (!eventsByActor.has(actor)) eventsByActor.set(actor, []);
-      eventsByActor.get(actor).push({ event, role, note: typeof note === 'string' ? note : null });
+  function fillEventsByActor() {
+    eventsByActor.clear();
+    for (const event of activeEvents) {
+      for (const { actor, role, note } of event.actors ?? []) {
+        if (!actors.has(actor)) continue;
+        if (!eventsByActor.has(actor)) eventsByActor.set(actor, []);
+        eventsByActor.get(actor).push({ event, role, note: typeof note === 'string' ? note : null });
+      }
     }
-  }
-  for (const list of eventsByActor.values()) {
-    list.sort((a, b) => intervalExtent(a.event.when).min - intervalExtent(b.event.when).min
-      || (a.event.id < b.event.id ? -1 : a.event.id > b.event.id ? 1 : 0));
+    for (const list of eventsByActor.values()) {
+      list.sort((a, b) => intervalExtent(a.event.when).min - intervalExtent(b.event.when).min
+        || (a.event.id < b.event.id ? -1 : a.event.id > b.event.id ? 1 : 0));
+    }
   }
 
   // --- relations between actors ------------------------------------------
@@ -292,13 +333,16 @@ export function createAtlas({
     if (!relationsByActor.has(actorId)) relationsByActor.set(actorId, []);
     relationsByActor.get(actorId).push(entry);
   };
-  for (const relation of activeRelations) {
-    noteRelation(relation.from, { relation, direction: 'out', other: relation.to });
-    noteRelation(relation.to, { relation, direction: 'in', other: relation.from });
-  }
-  for (const list of relationsByActor.values()) {
-    list.sort((a, b) => intervalExtent(a.relation.when).min - intervalExtent(b.relation.when).min
-      || (a.relation.id < b.relation.id ? -1 : a.relation.id > b.relation.id ? 1 : 0));
+  function fillRelationsByActor() {
+    relationsByActor.clear();
+    for (const relation of activeRelations) {
+      noteRelation(relation.from, { relation, direction: 'out', other: relation.to });
+      noteRelation(relation.to, { relation, direction: 'in', other: relation.from });
+    }
+    for (const list of relationsByActor.values()) {
+      list.sort((a, b) => intervalExtent(a.relation.when).min - intervalExtent(b.relation.when).min
+        || (a.relation.id < b.relation.id ? -1 : a.relation.id > b.relation.id ? 1 : 0));
+    }
   }
 
   // --- offices and tenures ------------------------------------------------
@@ -310,28 +354,38 @@ export function createAtlas({
   const activeTenures = (topology.tenures ?? []).filter((t) => t.status === 'active');
   const tenures = new Map(activeTenures.map((t) => [t.id, t]));
   const tenuresByOffice = new Map();
-  for (const tenure of activeTenures) {
-    if (!offices.has(tenure.office)) continue;
-    if (!tenuresByOffice.has(tenure.office)) tenuresByOffice.set(tenure.office, []);
-    tenuresByOffice.get(tenure.office).push(tenure);
-  }
-  for (const list of tenuresByOffice.values()) {
-    list.sort((a, b) => intervalExtent(a.when).min - intervalExtent(b.when).min
-      || (a.id < b.id ? -1 : a.id > b.id ? 1 : 0));
+  function fillTenuresByOffice() {
+    tenuresByOffice.clear();
+    for (const tenure of activeTenures) {
+      if (!offices.has(tenure.office)) continue;
+      if (!tenuresByOffice.has(tenure.office)) tenuresByOffice.set(tenure.office, []);
+      tenuresByOffice.get(tenure.office).push(tenure);
+    }
+    for (const list of tenuresByOffice.values()) {
+      list.sort((a, b) => intervalExtent(a.when).min - intervalExtent(b.when).min
+        || (a.id < b.id ? -1 : a.id > b.id ? 1 : 0));
+    }
   }
 
   // Which offices belong to an actor, in title order: the actor's card draws
   // one tenure strip per office and has no other way to find them, since an
   // office points at its actor and not the other way round.
+  //
+  // Sorted by the office's title, which is an attribute since I3: the order is
+  // right once the shard has landed and is by id — the fallback title — before
+  // that, which is why this is filled again when one does.
   const officesByActor = new Map();
-  for (const office of offices.values()) {
-    if (office.status !== 'active' || !actors.has(office.of)) continue;
-    if (!officesByActor.has(office.of)) officesByActor.set(office.of, []);
-    officesByActor.get(office.of).push(office);
-  }
-  for (const list of officesByActor.values()) {
-    list.sort((a, b) => (a.title < b.title ? -1 : a.title > b.title ? 1 : 0)
-      || (a.id < b.id ? -1 : a.id > b.id ? 1 : 0));
+  function fillOfficesByActor() {
+    officesByActor.clear();
+    for (const office of offices.values()) {
+      if (office.status !== 'active' || !actors.has(office.of)) continue;
+      if (!officesByActor.has(office.of)) officesByActor.set(office.of, []);
+      officesByActor.get(office.of).push(office);
+    }
+    for (const list of officesByActor.values()) {
+      list.sort((a, b) => (a.title < b.title ? -1 : a.title > b.title ? 1 : 0)
+        || (a.id < b.id ? -1 : a.id > b.id ? 1 : 0));
+    }
   }
 
   // --- events inside events ------------------------------------------------
@@ -340,15 +394,18 @@ export function createAtlas({
   // argument (CLAUDE.md), so this is deliberately not in the adjacency —
   // consequences, ancestors, convergence and the horizon never see it.
   const childrenOf = new Map();
-  for (const event of activeEvents) {
-    const parent = typeof event.parent === 'string' ? event.parent : null;
-    if (!parent || !events.has(parent)) continue;
-    if (!childrenOf.has(parent)) childrenOf.set(parent, []);
-    childrenOf.get(parent).push(event.id);
-  }
-  for (const list of childrenOf.values()) {
-    list.sort((a, b) => intervalExtent(events.get(a).when).min - intervalExtent(events.get(b).when).min
-      || (a < b ? -1 : a > b ? 1 : 0));
+  function fillChildrenOf() {
+    childrenOf.clear();
+    for (const event of activeEvents) {
+      const parent = typeof event.parent === 'string' ? event.parent : null;
+      if (!parent || !events.has(parent)) continue;
+      if (!childrenOf.has(parent)) childrenOf.set(parent, []);
+      childrenOf.get(parent).push(event.id);
+    }
+    for (const list of childrenOf.values()) {
+      list.sort((a, b) => intervalExtent(events.get(a).when).min - intervalExtent(events.get(b).when).min
+        || (a < b ? -1 : a > b ? 1 : 0));
+    }
   }
 
   // --- narratives ---------------------------------------------------------
@@ -357,22 +414,32 @@ export function createAtlas({
   // part of. An event counts as walked when a step names it and when a step
   // names an edge that touches it — a narrative that crosses an event through
   // its links is passing through the event, whatever the step happens to name.
-  const activeNarratives = [...narratives.values()].filter((n) => n.status === 'active')
-    .sort((a, b) => (a.title < b.title ? -1 : a.title > b.title ? 1 : 0) || (a.id < b.id ? -1 : a.id > b.id ? 1 : 0));
+  //
+  // The steps and the title are attributes since I3, so an atlas from the core
+  // knows a narrative exists and nothing about where it goes until the shard
+  // lands: "Part of" is empty rather than wrong, and this is filled again with
+  // every shard.
+  const activeNarratives = [];
   const narrativesByRef = new Map();
   const noteNarrative = (ref, narrative) => {
     if (!narrativesByRef.has(ref)) narrativesByRef.set(ref, []);
     if (!narrativesByRef.get(ref).includes(narrative)) narrativesByRef.get(ref).push(narrative);
   };
-  for (const narrative of activeNarratives) {
-    for (const id of narrativeEventIds({ events, edges }, narrative)) noteNarrative(id, narrative);
-    // And the ref itself, for every kind that is not an event: a link, and
-    // since H7 an actor, a relation or a presence. "Part of" is drawn on the
-    // card of whatever a walk names, and an actor whose card said nothing
-    // about the narrative that walks it would be the atlas hiding its own
-    // arguments from the record they are about.
-    for (const step of narrative.steps ?? []) {
-      if (typeof step?.ref === 'string' && !events.has(step.ref)) noteNarrative(step.ref, narrative);
+  function fillNarratives() {
+    activeNarratives.length = 0;
+    narrativesByRef.clear();
+    activeNarratives.push(...[...narratives.values()].filter((n) => n.status === 'active')
+      .sort((a, b) => (a.title < b.title ? -1 : a.title > b.title ? 1 : 0) || (a.id < b.id ? -1 : a.id > b.id ? 1 : 0)));
+    for (const narrative of activeNarratives) {
+      for (const id of narrativeEventIds({ events, edges }, narrative)) noteNarrative(id, narrative);
+      // And the ref itself, for every kind that is not an event: a link, and
+      // since H7 an actor, a relation or a presence. "Part of" is drawn on the
+      // card of whatever a walk names, and an actor whose card said nothing
+      // about the narrative that walks it would be the atlas hiding its own
+      // arguments from the record they are about.
+      for (const step of narrative.steps ?? []) {
+        if (typeof step?.ref === 'string' && !events.has(step.ref)) noteNarrative(step.ref, narrative);
+      }
     }
   }
 
@@ -386,15 +453,40 @@ export function createAtlas({
   // The other direction: which events happened at a place, chronologically.
   // Only active events, and only places that resolve.
   const eventsByPlace = new Map();
-  for (const event of activeEvents) {
-    if (!places.has(event.place)) continue;
-    if (!eventsByPlace.has(event.place)) eventsByPlace.set(event.place, []);
-    eventsByPlace.get(event.place).push(event);
+  function fillEventsByPlace() {
+    eventsByPlace.clear();
+    for (const event of activeEvents) {
+      if (!places.has(event.place)) continue;
+      if (!eventsByPlace.has(event.place)) eventsByPlace.set(event.place, []);
+      eventsByPlace.get(event.place).push(event);
+    }
+    for (const list of eventsByPlace.values()) {
+      list.sort((a, b) => intervalExtent(a.when).min - intervalExtent(b.when).min
+        || (a.id < b.id ? -1 : a.id > b.id ? 1 : 0));
+    }
   }
-  for (const list of eventsByPlace.values()) {
-    list.sort((a, b) => intervalExtent(a.when).min - intervalExtent(b.when).min
-      || (a.id < b.id ? -1 : a.id > b.id ? 1 : 0));
+
+  // Every join over the records, in one place and in one order. Called once at
+  // assembly, and again by the core's loader whenever an attribute shard lands
+  // or the LRU drops one: three of the joins are sorted or keyed by something
+  // the shards carry — an actor line's role, an office's title, a narrative's
+  // steps — and a list built before the shard arrived would be a list the
+  // reader never sees corrected (docs/index2-plan.md, D4).
+  //
+  // It is the same discipline `indexPresences` follows for the presence file:
+  // the collections are filled in place, never replaced, because a card or a
+  // layer holds the Map itself.
+  function reindexRecords() {
+    fillCites();
+    fillEventsByActor();
+    fillRelationsByActor();
+    fillTenuresByOffice();
+    fillOfficesByActor();
+    fillChildrenOf();
+    fillNarratives();
+    fillEventsByPlace();
   }
+  reindexRecords();
 
   // --- territories -------------------------------------------------------
   // The presence metadata carries every presence without its coordinates, so
@@ -683,6 +775,15 @@ export function createAtlas({
     land,
     resolve,
     record,
+    // Whether a record's own attributes are in hand — true always on an atlas
+    // from the spine, and what tells "no title" from "no title yet" on one from
+    // the core. A card, an entry page and a search result row draw nothing
+    // until it is true; the three views draw the mark, the bar and the node
+    // without waiting (index2 review, finding 21).
+    attributesLoaded,
+    // The joins over the records again, for the loader that fills them in when
+    // a shard lands. Nothing but `createAtlasFromCore` calls it.
+    reindexRecords,
   };
 }
 
@@ -730,6 +831,228 @@ export function createAtlasFromSpine({ spine, ...rest }) {
 // The spine expanded back into the shape a topology reader takes: the
 // dashboard and the narratives page want the lists, not an atlas.
 export { topologyFromSpine as expandSpine };
+
+// ─── The core and the attribute shards (I3) ────────────────────────────────
+//
+// The same atlas out of the two files the spine splits into: the **core**,
+// which every page will load whole because the whole-graph guarantee and every
+// mark, bar and lane depend on it, and the **attribute shards**, one per
+// century, fetched for the window and never waited for
+// (docs/index2-plan.md, D4).
+//
+// Nothing on the site calls any of this yet. I3 emits the files and measures
+// them; I4 moves the pages over, one per commit, and only if the bytes say the
+// split pays (D5). What is here is the loader those commits will use, held to
+// one assertion by `tests/core-loader.test.mjs`: the core plus every shard is
+// the atlas the spine builds, record for record.
+//
+// A record with no shard in hand reads as the core plus the fallbacks — a
+// title that is the id, `citesCount` 0, `names` [], and `when` the core's own
+// astronomical bounds. **The three views may draw that and a card may not**:
+// `attributesLoaded(id)` is what decides, and a card, an entry page or a search
+// row shows the "loading" line the source card shows for its citers until it is
+// true (index2 review, finding 21).
+
+// Four shards nothing is holding on to. A session that scrubs across six
+// centuries would otherwise end with the whole corpus in memory, which is the
+// heap ceiling the byte budget rests on (index2-plan, section 6 risk 3) — and
+// four rather than one because the pictures are windowed and a window straddles
+// two centuries often and three sometimes.
+//
+// It counts **unpinned** shards only. A shard an open card, an entry page or a
+// lens needs is pinned while it is on screen and is never evicted: those
+// readers are per-entity and not windowed, so an actor whose events span five
+// centuries would otherwise be drawn incomplete for ever — the fifth shard
+// evicting the first, the redraw asking for the first again (index2 review,
+// finding 9; h3a-brief, A4).
+export const ATTRIBUTE_SHARD_CAP = 4;
+
+export function createAtlasFromCore({ core, attributes = [], manifest, ...rest }) {
+  const { dataRoot = 'data/', fetchJson = defaultFetchJson } = rest;
+  const topology = decodeSpineFile(core, SPINE_KINDS, CORE_COLUMNS);
+  const eventsById = new Map(topology.events.map((e) => [e.id, e]));
+
+  // What the core said about each record's dates, kept beside the atlas so that
+  // dropping a shard cannot lose them: two numbers a record, against the whole
+  // of `when`, which is what the cap exists to stop holding.
+  const bounds = new Map();
+  const byKey = new Map();
+  const shardOfRecord = new Map();
+  const shardOfId = new Map();
+  const recordsByShard = new Map();
+  for (const kind of SPINE_KINDS) {
+    for (const record of topology[`${kind}s`] ?? []) {
+      const key = `${kind}:${record.id}`;
+      bounds.set(key, boundsOf(record));
+      byKey.set(key, record);
+      fillFallbacks(record, bounds.get(key));
+      // Which shard the record's attributes are in, by the same table the build
+      // files them with — an event by the year it begins in, an edge by the
+      // year its cause begins in, a place in the one shard of places
+      // (index2-plan, A8). The core carries every field that table reads, which
+      // is what lets the loader answer before a single shard has landed.
+      const shard = attributeShardKey(attributePeriod(kind, record, eventsById));
+      shardOfRecord.set(key, shard);
+      if (!shardOfId.has(record.id)) shardOfId.set(record.id, shard);
+      if (!recordsByShard.has(shard)) recordsByShard.set(shard, []);
+      recordsByShard.get(shard).push(record);
+    }
+  }
+
+  const shards = manifest?.attributeShards ?? [];
+  const shardByKey = new Map(shards.map((shard) => [shard.key, shard]));
+  const loaded = new Map();
+  const order = [];
+  const pins = new Map();
+  const inFlight = new Map();
+
+  const keyOf = (shard) => (typeof shard === 'string' ? shard : shard?.key ?? null);
+  const attributesLoaded = (id) => loaded.has(shardOfId.get(id) ?? null);
+  const touch = (key) => {
+    const at = order.indexOf(key);
+    if (at !== -1) order.splice(at, 1);
+    order.push(key);
+  };
+
+  function evictIfOver() {
+    let dropped = false;
+    for (const key of [...order]) {
+      if (order.filter((k) => (pins.get(k) ?? 0) === 0).length <= ATTRIBUTE_SHARD_CAP) break;
+      if ((pins.get(key) ?? 0) > 0) continue;
+      for (const record of recordsByShard.get(key) ?? []) {
+        stripAttributes(record, bounds.get(`${record.kind ?? 'edge'}:${record.id}`));
+      }
+      loaded.delete(key);
+      order.splice(order.indexOf(key), 1);
+      dropped = true;
+    }
+    return dropped;
+  }
+
+  // One shard's rows into the records they are about. The joins are built again
+  // after it, because three of them are sorted or keyed by something a shard
+  // carries (createAtlas's `reindexRecords`).
+  function applyShard(key, file) {
+    const partials = decodeSpineFile(file, SPINE_KINDS, ATTRIBUTE_COLUMNS);
+    for (const kind of SPINE_KINDS) {
+      for (const partial of partials[`${kind}s`] ?? []) {
+        const record = byKey.get(`${kind}:${partial.id}`);
+        if (record) applyAttributes(record, partial);
+      }
+    }
+    loaded.set(key, file);
+    touch(key);
+    evictIfOver();
+    atlas.reindexRecords();
+  }
+
+  // Same cache discipline as `loadGeometry`, the citers and the explanations:
+  // one request in flight per shard, and a rejection is dropped rather than
+  // kept as the answer, so the next ask really is a new attempt.
+  function loadAttributes(shard) {
+    const key = keyOf(shard);
+    const entry = shardByKey.get(key);
+    if (loaded.has(key)) {
+      touch(key);
+      return Promise.resolve(loaded.get(key));
+    }
+    if (!entry) return Promise.resolve(null);
+    if (!inFlight.has(key)) {
+      const pending = fetchJson(`${dataRoot}${entry.file}`)
+        .then((file) => {
+          inFlight.delete(key);
+          applyShard(key, file);
+          return file;
+        })
+        .catch((error) => {
+          if (inFlight.get(key) === pending) inFlight.delete(key);
+          throw error;
+        });
+      inFlight.set(key, pending);
+    }
+    return inFlight.get(key);
+  }
+
+  // The two shards that answer no year — the places, and the records whose
+  // interval is null or will not parse — are needed whatever the window is, so
+  // they come with the first century asked for.
+  const always = shards.filter((shard) => shard.from === null);
+  const centuryFor = (year) => shards.filter((shard) => shard.from !== null && year >= shard.from && year <= shard.to);
+  const attributesFor = (year) => (year === null || year === undefined ? [...always]
+    : [...centuryFor(year), ...always]);
+  const attributeShardsIn = (window) => {
+    if (!window) return [...always];
+    const from = window.from ?? window.min ?? null;
+    const to = window.to ?? window.max ?? from;
+    if (from === null) return [...always];
+    return [...shards.filter((shard) => shard.from !== null && shard.from <= to && shard.to >= from), ...always];
+  };
+
+  // A shard an open card, an entry page or a lens needs, held outside the cap
+  // until whatever needed it says so: the release is the return value, so a
+  // caller that forgets to release is a caller that never got the pin.
+  function pinAttributes(wanted) {
+    const keys = (Array.isArray(wanted) ? wanted : [wanted]).map(keyOf).filter((key) => key !== null);
+    for (const key of keys) pins.set(key, (pins.get(key) ?? 0) + 1);
+    let released = false;
+    return () => {
+      if (released) return;
+      released = true;
+      for (const key of keys) {
+        const held = (pins.get(key) ?? 0) - 1;
+        if (held > 0) pins.set(key, held);
+        else pins.delete(key);
+      }
+      if (evictIfOver()) atlas.reindexRecords();
+    };
+  }
+
+  const atlas = createAtlas({
+    ...rest,
+    manifest,
+    topology,
+    attributesLoaded,
+    // What `record()` waits for: the shard that carries this record's
+    // `revised`, so the file is asked for with the `?v=` the index says and
+    // never without one (index2 review, finding 3).
+    beforeRecord: (kind, id) => loadAttributes(shardOfRecord.get(`${kind}:${id}`) ?? null),
+  });
+  Object.assign(atlas, {
+    attributeShards: shards,
+    attributesFor,
+    attributeShardsIn,
+    loadAttributes,
+    pinAttributes,
+    // Which shards are in hand, for a test and for the panel's key in I4.
+    loadedAttributeShards: () => [...order],
+  });
+  // A caller that already has shards in hand — the build, a test reading them
+  // off disk — hands them over as `{ key, file }` and nothing is fetched. They
+  // are pinned: a caller that passed a shard did not ask for it to be dropped
+  // again, and this is how "the core plus every shard" is asserted.
+  for (const { key, file } of attributes) {
+    applyShard(key, file);
+    pins.set(key, (pins.get(key) ?? 0) + 1);
+  }
+  return atlas;
+}
+
+// The core is named by the manifest under a content hash and served
+// `immutable`, exactly as the spine is, and the manifest itself is read
+// `no-store` every time: same discipline, same cache, one file over.
+const coreCache = new Map();
+export async function loadCore({ dataRoot = 'data/', fetchJson = defaultFetchJson } = {}) {
+  const manifest = assertGeneration(await fetchJson(`${dataRoot}index/manifest.json`, { cache: 'no-store' }));
+  const url = `${dataRoot}${manifest.files.core}`;
+  if (!coreCache.has(url)) {
+    const pending = fetchJson(url).catch((error) => {
+      if (coreCache.get(url) === pending) coreCache.delete(url);
+      throw error;
+    });
+    coreCache.set(url, pending);
+  }
+  return { manifest, core: await coreCache.get(url) };
+}
 
 // The spine is named by the manifest under a content hash and served
 // `immutable`, so it is fetched once and kept — while the manifest itself is
@@ -801,12 +1124,19 @@ export async function loadSearchShard({ dataRoot = 'data/', manifest, fetchJson 
 // `regions: false` went the same way in I1: it existed to spare `entry.html`
 // and `contribute.html` 221 KB of polygons that no page fetches here any
 // more, and there is nothing left for it to turn off.
+//
+// `from` chooses which graph file to read, and it is `'spine'` for every page
+// in the tree: I3 writes the core and the shards beside the spine and moves
+// nothing over, so that a run which finds the split does not pay can stop
+// without leaving the tree half-changed (docs/index2-plan.md, D5). I4 is what
+// passes `'core'`, one page per commit.
 export async function loadAtlas({
-  dataRoot = 'data/', landFile = null, fetchJson = defaultFetchJson,
+  dataRoot = 'data/', landFile = null, fetchJson = defaultFetchJson, from = 'spine',
 } = {}) {
   const manifest = assertGeneration(await fetchJson(`${dataRoot}index/manifest.json`, { cache: 'no-store' }));
+  const graphFile = from === 'core' ? manifest.files.core : manifest.files.spine;
   const [spine, sourcesIndex] = await Promise.all([
-    fetchJson(`${dataRoot}${manifest.files.spine}`),
+    fetchJson(`${dataRoot}${graphFile}`),
     fetchJson(`${dataRoot}${manifest.files.sources}`),
   ]);
   const landPath = landFile === false ? null : landFile ?? (manifest.land?.[0] ? `${dataRoot}${manifest.land[0].file}` : null);
@@ -825,14 +1155,16 @@ export async function loadAtlas({
   //
   // The polygons themselves are `atlas.loadRegionPolygons()` now, fetched by
   // the wash a `regional` event is drawn as and by nothing at first paint.
-  return createAtlasFromSpine({
+  const pieces = {
     manifest,
-    spine,
     sources: sourcesIndex.sources,
     land,
     palette,
     regionBoxes: new Map(Object.entries(manifest.regionBoxes ?? {})),
     dataRoot,
     fetchJson,
-  });
+  };
+  return from === 'core'
+    ? createAtlasFromCore({ ...pieces, core: spine })
+    : createAtlasFromSpine({ ...pieces, spine });
 }
