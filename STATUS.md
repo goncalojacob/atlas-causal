@@ -13,10 +13,75 @@ hundred lines again, cut it the same way.
 
 ## Last updated
 
-2026-09-08, after **I1** (`docs/index2/i1-brief.md` and its amendments, the
-first run of the second index cycle, `docs/index2-plan.md` D1, D2 and D6), on
-`m0`: **the atlas's first paint is half what it was — 991,468 bytes down to
-503,804, 968.2 KB to 492.0 KB.**
+2026-09-08, after **I2** (`docs/index2/i2-brief.md` and its amendments, the
+second run of the second index cycle, `docs/index2-plan.md` D3 and D6), on
+`m0`: **every record in `data/index/` is a positional row over one shared id
+table, and the two files that carry the graph are 1.94× smaller — 581,701
+bytes down to 300,388.**
+
+**Nine hand-written object literals became one column table.** `buildSpine`
+was nine projections written out by hand and `topologyFromSpine` a hand-written
+inverse, so a tenth kind meant writing both again. Both now read
+`SPINE_COLUMNS` in the new `src/spine.js` — one column list per kind, what each
+slot is, and what a trimmed slot means — forwards and backwards. **A tenth kind
+is a row in that table and nothing else**, which is the third of the owner's
+seven considerations.
+
+A record is `[0, 2, "1890 Portuguese legislative election", …]`: an integer in
+an id slot is an index into the file's own `ids` table (944 in the graph file,
+1,041 in the presence index), an integer in a vocabulary slot an index into a
+named list in `vocab`, and everything else the value verbatim. `kind` is the
+list the row is in and is not written. A row stops where its values stop —
+an event's are 7, 8, 10, 11 or 13 slots of a possible 16 — and **what an absent
+slot means is the column's to say**: `place` is a key with no value, `parent`
+is no key at all. `aliases` and `supersededBy` left nine kinds' rows for one
+`merges` list of 10 alias pairs and 17 merge hops, where 1,703 of 1,720 records
+carried `[]` and `null`. `TOMBSTONE_KEYS` is a slot mask now and is applied in
+both directions, which is what keeps `note` off a retired relation while an
+active one still carries `note: null`. The edge is the one kind with no mask
+and no `kind`: it was already a row, its first six slots are still
+`[from, to, type, confidence, status, revised]` in that order, and the seventh
+is an explicit id that is `null` on every edge there has ever been.
+
+| | before I2 | after I2 | |
+|---|---|---|---|
+| the graph file, raw | 314,567 | 162,695 | 1.93× |
+| the graph file, gzipped | 40,961 | 38,047 | 1.08× |
+| `presences-<hash>.json`, raw | 267,134 | 137,693 | 1.94× |
+| **first paint**, raw | **503,804 (492.0 KB)** | **351,932 (343.7 KB)** | 1.43× |
+| the spine at 10⁴, raw | 9,702,450 | 3,821,229 | 2.54× |
+| the spine at 10⁴, gzipped | 462,537 | 439,444 | 1.05× |
+
+**At 10⁴ both of the brief's thresholds are met and on the real data one is
+not.** Amendment A1 asks for 4.3 MB raw and 460 KB gzipped at 10⁴: the file is
+3.65 MB and 429.1 KB. It asks for 175 KB raw on the real data: the graph file
+alone is 158.9 KB and clears it, but the same information across both files is
+293.3 KB and does not. That target is the plan's two re-encoding rows added
+together, and those rows name no presence field at all while the presences were
+49.2 % of the file they were measured against — 94.3 KB of the presence index
+is a `capital` and a `when` that appear in neither row. No encoding that drops
+no field could have met it. Deviation 426, and the arithmetic is in
+`ARCHITECTURE.md` under "Scale, for the record".
+
+**The nine literals were not deleted; they are the test.** They moved into
+`tests/spine.test.mjs` as `projectV1` in the commit *before* the encoding
+changed, so the oracle was proved right about the code it was copied from
+rather than written to fit its replacement (index2 review, finding 7). The
+run's whole claim is one assertion: what comes back out of the index is what
+those literals wrote, per kind, over the fixtures and the repository.
+`tests/spine-loader.test.mjs` — the safety net — passes with three lines
+changed and all three the generation number (amendment A3).
+
+`manifest.schema` is 3, both files carry the same number, and
+`assertGeneration` refuses one this build does not read.
+`node tools/validate.mjs --index` is byte-identical, `node --test` is 1,106
+tests green with `CHROME` set and 0 skipped, and the prerendered pages are
+byte-identical (plan D7).
+
+Before this, 2026-09-08, after **I1** (`docs/index2/i1-brief.md` and its
+amendments, the first run of the second index cycle, `docs/index2-plan.md` D1,
+D2 and D6), on `m0`: **the atlas's first paint is half what it was — 991,468
+bytes down to 503,804, 968.2 KB to 492.0 KB.**
 
 **Two files left the first paint and one is new.** The presence metadata was
 49.2 % of the graph file and nothing reads it until the territory layer draws,
@@ -1578,6 +1643,87 @@ The numbering continues from 401, which is M31-3's last.
      until this run, and dropping one would be an event that stopped being in
      view. Lane order first, anything else after, and today the two sets are
      the same five.
+
+### I2
+
+426. **The graph file and the presence index together are 293.3 KB and not
+     under 175** — the real-data threshold amendment A1 makes this run's "Done
+     when". The graph file *alone* is 158.9 KB and clears it, and both of the
+     10⁴ thresholds are met (3.65 MB raw against 4.3, 429.1 KB gzipped against
+     460), so which reading is meant decides whether the run passed. A1 was
+     written on 6 September, before I1 split the presences out, so "the built
+     spine" then meant both files' worth of records and the honest reading is
+     the one that fails. The number itself is the plan's two measured
+     re-encoding rows added together — the core at 50.0 KB and the attributes
+     at 116.2 (index2-plan §0) — and **those two rows are not an inventory of
+     the file**: between them they name no presence field at all, while §0's
+     own per-kind table says the presences were 267,108 B, 49.2 %, of the
+     530.2 KB spine the rows were measured against. Nor do they name
+     `wikipedia`, the offices, the tenures or a relation's `note`. On the built
+     file 94.3 KB of the presence index is a presence's `capital` (49,517 B)
+     and its `when` (44,827) alone. No encoding that drops no field — which is
+     the brief's other rule, and the one that keeps I3 meaningful — could have
+     reached 175 KB. Reported rather than met, as I1 reported deviation 420,
+     and the bytes are I3's: deciding which of them a first paint needs is the
+     core-and-attribute-shards run, which is where the plan puts it.
+427. **`SPINE_COLUMNS` is in a new leaf module `src/spine.js`, not in
+     `src/validate/core.js`.** The brief's §2 puts the table in `core.js`. It
+     cannot be there and be one table: `data.js` reads it backwards and
+     `core.js` already imports `data.js` for `INDEX_GENERATION`, so a decoder
+     in `data.js` importing `core.js` is a cycle. The alternatives were two
+     copies of the table — which is the duplication the run exists to remove —
+     or the table in `data.js`, which is 846 lines and the atlas. A leaf module
+     with one job is what `CLAUDE.md` asks for, and it keeps the encoder's base
+     vocabulary lists *passed in* rather than imported, so nothing of the
+     validator reaches a page through it. `CLAUDE.md`'s layout tree names it.
+428. **An absent value is `null` everywhere in a row, never `-1`.** The brief
+     says a vocabulary value is "its index, `-1` for absent". With trailing
+     slots trimmed, `-1` would give a vocabulary slot two spellings of absent —
+     a written `-1` and a slot that is not there — and the trim could not
+     produce the first. One spelling, and the column table says what it decodes
+     to. `-1` and `null` are four characters either way.
+429. **`role` is a vocabulary, which the brief's list does not name.** The
+     brief names eight and amendment A4 adds an event's `category`, both
+     data-defined lists read from their own file. `data/roles.json` is the same
+     kind of thing said the same way, and a role repeats on every one of the
+     349 actor lines. It follows A4's rule exactly: `roles.json` order first,
+     anything met and not in it appended in first-seen order.
+430. **The presence index carries an id table and a vocabulary of its own.**
+     The brief says "one shared id table". One file's table cannot serve two
+     files that are fetched separately — the territory layer asks for the
+     presence index without necessarily holding the graph file, and an integer
+     that meant something only against another file would be the one thing this
+     encoding must not be. Putting the presences' 710 ids into the graph file's
+     table instead would undo part of I1. One *encoder*, two files, a header
+     each: 944 ids in the graph file and 1,041 in the presence index.
+431. **A `status` list was added to `src/validate/rules.js`.** I2 writes a
+     record's status into the index as an integer, so the list it indexes into
+     has to exist somewhere in code; it did not. `RECORD_STATUSES` sits beside
+     `ACTOR_TYPES` and `CONFIDENCE_ORDER`, which are the same kind of list, and
+     `tests/registry.test.mjs` now holds all five of the lists I2 writes as
+     integers against the schemas' enums **in order** — a list that had drifted
+     from its enum would be a file that decoded to the wrong word.
+432. **Nine test files were edited, not the two the brief names.** The brief
+     names `spine.test.mjs`, `spine-loader.test.mjs` and `build-index.test.mjs`.
+     Six more read the spine's slots as object keys —
+     `event-fields`, `office-rules`, `search-shard`, `store`, `graph-browser`
+     and `helpers.mjs` — and each now reads the same file through `expandSpine`,
+     which is the decoder the browser uses. Not one assertion about the
+     projection moved; what moved is where the assertion reads it from. A test
+     that kept picking slots out of a row by hand would have been a second
+     decoder, and the next change to the table would have had to find it.
+433. **A decoded edge still carries no `kind`.** The other eight kinds have
+     carried one since `envelopeOf`; the edge tuple never did, and the decoder
+     could now add it for nothing. It does not: the brief says this run changes
+     the encoding and nothing else, and adding a field is that rule's other
+     side. `SPINE_COLUMNS` marks the edge as the one kind not written through
+     the record envelope, which is the same fact that exempts it from the
+     tombstone mask.
+434. **`src/review/main.js` was edited, which the brief's file list does not
+     name.** It fetches the presence index and read `file.presences` off the
+     file's keys; those are rows now. One line, through the same
+     `presencesFromIndex` the atlas and the build use. The alternative was a
+     dashboard that silently showed no territory.
 426. **`buildIndex` now reads `data/geo/regions.json` even when it is handed a
      prepared topology.** It read the polygons only on the path where it built
      the topology itself, which is not the path `validate --index` takes. The
@@ -1717,3 +1863,4 @@ I1 started 2026-09-07T18:45:37Z by scheduled
 I1 started 2026-09-08T02:01:46Z by scheduled
 I1 done
 I2 started 2026-09-08T02:43:14Z by scheduled
+I2 done
