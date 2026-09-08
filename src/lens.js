@@ -396,11 +396,6 @@ export function withFocus(focus, kind, id) {
   return formatFoci([...foci, { kind, id }]);
 }
 
-// "Focus only on this": replace the list with this one.
-export function onlyFocus(kind, id) {
-  return formatFocus(kind, id);
-}
-
 // A chip's ×. The last one removed leaves `none` and not an empty parameter:
 // the reader has said what they want, and an absent parameter would put the
 // implicit lens back on the card they still have open.

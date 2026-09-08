@@ -166,20 +166,25 @@ test('a card adds to the lens, or replaces it, and never clears the selection', 
 
     // And the card says what it did: since R9 the lens is in the panel's
     // render key, so the control that added the focus now offers to drop it,
-    // and neither "Focus on this" nor "Focus only on this" is offered for a
-    // record that is already the lens.
+    // and "Focus on this" is not offered for a record that is already the
+    // lens.
     await waitFor(
       page,
       'return document.querySelector(".panel .lens-control")?.textContent === "stop focusing on this";',
       'the control to say what it does now',
     );
-    assert.equal(await page.eval('return document.querySelectorAll(".panel [data-action=\'focus-only\']").length;'), 0);
+    assert.equal(
+      await page.eval('return document.querySelectorAll(".panel [data-action=\'focus\']").length;'),
+      0,
+      'one verb, and it is the × now',
+    );
 
-    // "Focus only on this" replaces the list with one focus — from a card
-    // that is not the lens yet, which is the only state that offers it.
-    await open(page, url(`?focus=${SALAZAR}&selected=carnation-revolution-1974&from=1800&to=2030`));
-    await waitFor(page, 'return Boolean(document.querySelector(".panel [data-action=\'focus-only\']"));', 'the card to offer it');
-    await page.eval('document.querySelector(\'.panel [data-action="focus-only"]\').click(); return true;');
+    // A reader who wants one focus drops the others from the bar, which is
+    // where the list they are editing is. "Focus only on this" was a third
+    // verb saying that from the far side of the interface, and it is gone
+    // (owner, 8 September, M30c §2b).
+    assert.equal(await page.eval('return document.querySelectorAll(".panel [data-action=\'focus-only\']").length;'), 0);
+    await page.eval('document.querySelector(\'.lens-chips .lens-drop\').click(); return true;');
     await waitFor(page, 'return document.querySelectorAll(".lens-chips .lens-badge").length === 1;', 'one chip');
     await waitFor(
       page,

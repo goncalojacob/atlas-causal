@@ -123,12 +123,14 @@ test('a child says what it is part of, and a parent lists its parts in order', (
   );
 });
 
-// A6: no third control, one line. The two verbs `lensControl` already draws
-// mean something new on a parent — the whole subtree rather than one event —
-// and the card is where that is said.
-test('a parent says in one line what focusing only on it would keep', () => {
+// A6: no second control, one line. The verb `lensControl` draws means
+// something new on a parent — the whole subtree rather than one event — and
+// the card is where that is said. "Focus only on this" went in M30c §2b and
+// the line stayed: it is about what a focus keeps, not about which button
+// writes it.
+test('a parent says in one line what focusing on it would keep', () => {
   const parent = eventCardHtml(ctx, { event: atlas.events.get('fixture-event-f'), found: { via: [] }, state });
-  assert.match(parent, /<p class="subtree-lens muted">Focusing only on this keeps it and the 2\s*events inside it/);
+  assert.match(parent, /<p class="subtree-lens muted">Focusing on this keeps it and the 2\s*events inside it/);
   // And no fourth control was added to say it.
   assert.doesNotMatch(parent, /Show only this/);
 

@@ -435,8 +435,10 @@ one hop out over an active edge, in either direction, from one depth of
 `subgraph()`. A view draws the focus set in full, the ring dimmed
 (`.lens-near`), and nothing else — a neighbourhood with no edges leaving it
 would look like an atlas in which nothing else happened. Each focus is a chip
-in the header with its own ×; every card offers "Focus on this", which adds,
-and "Focus only on this", which replaces.
+in the header with its own ×; every card offers one verb, "Focus on this",
+which adds. A reader who wants a single focus drops the others from the bar,
+which is where the list they are editing is — the card had a second verb for
+that until M30c, and it was one control too many (owner, 8 September).
 
 **An open actor or place with no `?focus=` is a lens on itself.**
 `?actor=angola` drew the whole atlas with nine marks emphasised in it, which
@@ -1296,7 +1298,12 @@ argument**: `parent` does not enter the adjacency, so consequences, ancestors,
 convergence and the horizon stay edge-only and `?chain=` stays a list of edge
 ids (owner, 5 September). The card says "Part of", a parent lists its parts,
 the timeline draws a bracket and the graph collapses children into their
-parent when zoomed out (M30b).
+parent when zoomed out (M30b). Those two are *behaviours* and neither is
+always there; the *look* is one and always is: an event with parts is drawn
+with **a second, thinner outline around its mark** — class `ring`, from
+`isParent` in `src/parts.js` — on the three views, at every zoom and under
+every grouping. A ring says there is more inside; open it to see the parts,
+and "Focus on this" keeps them (M30c).
 
 `scope` — `regional` or `worldwide`, and absent on an ordinary event — is for
 the two cases a mark would lie about: a world war or a pandemic is drawn as a

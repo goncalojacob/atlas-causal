@@ -187,13 +187,12 @@ export function largeEventHtml(ctx, event) {
     ${onTheMap}. ${why}</p>`;
 }
 
-// What "Focus only on this" would leave, said once on the card of an event
-// that has parts. The lens on an `event:` focus is the event and everything
-// inside it (lens.js), which is not what the two controls above it meant
-// before M30b-2 and is not what a reader would guess from their labels. No third
-// control: `lensControl` already draws both verbs, and a "Show only this" with
-// the same effect as "Focus only on this" would be one control too many
-// (m30b-brief, A6).
+// What focusing on this would leave, said once on the card of an event that
+// has parts. The lens on an `event:` focus is the event and everything inside
+// it (lens.js), which is not what the control above it meant before M30b-2 and
+// is not what a reader would guess from its label. No second control: "Focus
+// on this" is the one verb `lensControl` draws since M30c, and a "Show only
+// this" beside it would be one control too many (m30b-brief, A6).
 //
 // The count is asked of `eventsOfFocus` itself rather than counted here, so
 // the sentence cannot come to say something the lens does not do.
@@ -201,8 +200,9 @@ function subtreeLensHtml(ctx, event) {
   const kept = eventsOfFocus({ kind: 'event', id: event.id }, ctx.atlas)?.size ?? 0;
   if (kept < 2) return '';
   const parts = kept - 1;
-  return `<p class="subtree-lens muted">Focusing only on this keeps it and the ${parts}
-    ${parts === 1 ? 'event' : 'events'} inside it; every other event leaves all three views.</p>`;
+  return `<p class="subtree-lens muted">Focusing on this keeps it and the ${parts}
+    ${parts === 1 ? 'event' : 'events'} inside it; with no other focus on, every other event
+    leaves all three views.</p>`;
 }
 
 // The other direction: the events inside this one, in the order they

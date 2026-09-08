@@ -15,7 +15,7 @@ import { articleFor } from '../wikipedia.js';
 import { windowAt, resolveWindow } from '../util/window.js';
 import { OPENINGS, hasOpening } from '../state.js';
 import {
-  formatFocus, lensSet, lensLabels, withFocus, onlyFocus, withoutFocus, FOCUS_NONE,
+  formatFocus, lensSet, lensLabels, withFocus, withoutFocus, FOCUS_NONE,
 } from '../lens.js';
 import { lanesFor } from '../lanes.js';
 import { shortestPaths, pathTo } from '../graph.js';
@@ -113,17 +113,17 @@ export function createPanel(container, {
       // events there are, and what the reader had open stays open — the card
       // is how they got here.
       //
-      // Three verbs since H7, because the lens takes any number of foci:
-      // "Focus on this" adds to the set, "Focus only on this" replaces it, and
-      // a chip's × drops one. Each reads the list that is actually on, which
-      // may be the implicit one-focus lens on an open actor or place — adding
-      // to that is adding to a list of one, which is what a reader who has
-      // opened Angola and then clicks Portugal means.
+      // Two verbs, because the lens takes any number of foci: "Focus on this"
+      // adds to the set and a chip's × drops one. Each reads the list that is
+      // actually on, which may be the implicit one-focus lens on an open actor
+      // or place — adding to that is adding to a list of one, which is what a
+      // reader who has opened Angola and then clicks Portugal means. A reader
+      // who wants one focus drops the others from the bar, which is where the
+      // list they are editing actually is; "Focus only on this" was a third
+      // verb saying that from the far side of the interface (owner,
+      // 8 September, M30c §2b).
       case 'focus':
         state.set({ focus: withFocus(currentFocus(s), el.dataset.kind, el.dataset.id) });
-        break;
-      case 'focus-only':
-        state.set({ focus: onlyFocus(el.dataset.kind, el.dataset.id) });
         break;
       case 'unfocus':
         state.set({ focus: withoutFocus(currentFocus(s), el.dataset.kind, el.dataset.id) });
@@ -342,12 +342,11 @@ export function createPanel(container, {
   // and adding to it has to add to that and not to nothing.
   const currentFocus = (s) => lensLabels(atlas, s).map((f) => f.focus).join(',');
 
-  // The two verbs, on the card of whatever the lens can be about: add to the
-  // set, or make the set this one record. When the record is already a focus
-  // the first becomes its ×, because "focus on this" twice is a control that
-  // does nothing the second time. The card asks for it rather than being
-  // handed the state, so a card's signature says what it draws and not how
-  // the header works.
+  // The one verb, on the card of whatever the lens can be about: add this
+  // record to the set. When it is already a focus the control becomes its ×,
+  // because "focus on this" twice is a control that does nothing the second
+  // time. The card asks for it rather than being handed the state, so a card's
+  // signature says what it draws and not how the header works.
   function lensControl(kind, id) {
     const focus = formatFocus(kind, id);
     const s = state.get();
@@ -356,8 +355,7 @@ export function createPanel(container, {
     if (on) {
       return `<button type="button" class="link small lens-control on" data-action="unfocus" ${attrs}>stop focusing on this</button>`;
     }
-    return `<button type="button" class="link small lens-control" data-action="focus" ${attrs}>Focus on this</button>
-      <button type="button" class="link small lens-control" data-action="focus-only" ${attrs}>Focus only on this</button>`;
+    return `<button type="button" class="link small lens-control" data-action="focus" ${attrs}>Focus on this</button>`;
   }
 
   // The way out to somebody else's account of the same thing. It is offered

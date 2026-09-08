@@ -9,7 +9,7 @@ import assert from 'node:assert/strict';
 import {
   lensFor, eventsOfFocus, focusSet, ringOf, lensView, lensSet, lensNear, shownEvents,
   parseFocus, parseFoci, formatFoci, lensLabel, lensLabels, activeFoci,
-  withFocus, onlyFocus, withoutFocus, FOCUS_NONE,
+  withFocus, withoutFocus, FOCUS_NONE,
 } from '../src/lens.js';
 import { defaultState } from '../src/state.js';
 import { atlasOf, FIXTURE_DATA } from './helpers.mjs';
@@ -310,12 +310,11 @@ test('an open actor or place with no lens is a lens of one, until the reader say
 
 // ─── writing the parameter ─────────────────────────────────────────────────
 
-test('the four things a control does to the list', () => {
+test('the three things a control does to the list', () => {
   assert.equal(withFocus('actor:salazar', 'place', 'lisbon'), 'actor:salazar,place:lisbon');
   assert.equal(withFocus(null, 'place', 'lisbon'), 'place:lisbon');
   assert.equal(withFocus(FOCUS_NONE, 'place', 'lisbon'), 'place:lisbon', 'adding to `none` starts a list');
   assert.equal(withFocus('place:lisbon', 'place', 'lisbon'), 'place:lisbon', 'twice is once');
-  assert.equal(onlyFocus('place', 'lisbon'), 'place:lisbon');
   assert.equal(withoutFocus('actor:salazar,place:lisbon', 'actor', 'salazar'), 'place:lisbon');
   // The last chip removed leaves `none`: an empty parameter would put the
   // implicit lens back on the card the reader still has open.
