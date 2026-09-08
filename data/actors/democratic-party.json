@@ -2,8 +2,8 @@
   "schema": 1,
   "id": "democratic-party",
   "kind": "actor",
-  "status": "active",
-  "supersededBy": null,
+  "status": "merged",
+  "supersededBy": "partido-democratico",
   "aliases": [],
   "authors": [
     {
@@ -13,11 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-08",
-  "revised": null,
+  "revised": "2026-09-08",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "m41-merged"
+    ],
+    "note": "Merged in M41b into partido-democratico, which is the same actor: the wing of the Portuguese Republican Party that kept the name and the machine after the split of February 1912, and the largest party of the First Republic. The atlas already held it, with both names, and six records from 1915 to 1926 name it. The item opens the interval in 1910 and this atlas at the split in 1912; that is a question for the survivor. This record keeps the Wikidata id and names it."
   },
   "wikidata": "Q1783440",
   "sitelinks": 9,

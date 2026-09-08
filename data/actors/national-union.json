@@ -2,8 +2,8 @@
   "schema": 1,
   "id": "national-union",
   "kind": "actor",
-  "status": "active",
-  "supersededBy": null,
+  "status": "merged",
+  "supersededBy": "uniao-nacional",
   "aliases": [],
   "authors": [
     {
@@ -13,11 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-08",
-  "revised": null,
+  "revised": "2026-09-08",
   "review": {
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "m41-merged"
+    ],
+    "note": "Merged in M41b into uniao-nacional, which is the same actor: the sole legal party of the Estado Novo, founded in July 1930 and wound up with the regime in 1974, and called Acção Nacional Popular from 1970. The atlas already held it under its Portuguese name, with the same dates and three of the same names, and three election records already name it. This record keeps the Wikidata id the import brought and names its survivor rather than becoming an anonymous tombstone."
   },
   "wikidata": "Q954010",
   "sitelinks": 20,
