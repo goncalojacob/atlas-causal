@@ -18,14 +18,21 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
   "revised": "2026-09-05",
+  "origin": {
+    "tool": "wikidata"
+  },
   "review": {
+    "status": "draft",
     "flags": [
       "imported-facts",
       "summary-drafted"
     ]
   },
   "wikidata": "Q8736",
-  "sitelinks": 122,
+  "sitelinks": {
+    "count": 122,
+    "on": "2026-09-05"
+  },
   "wikipedia": {
     "en": "Treaty of Versailles",
     "pt": "Tratado de Versalhes (1919)"

@@ -18,14 +18,21 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
   "revised": "2026-09-05",
+  "origin": {
+    "tool": "wikidata"
+  },
   "review": {
+    "status": "draft",
     "flags": [
       "imported-facts",
       "summary-drafted"
     ]
   },
   "wikidata": "Q79911",
-  "sitelinks": 97,
+  "sitelinks": {
+    "count": 97,
+    "on": "2026-09-05"
+  },
   "wikipedia": {
     "en": "Russian Civil War",
     "pt": "Guerra Civil Russa"

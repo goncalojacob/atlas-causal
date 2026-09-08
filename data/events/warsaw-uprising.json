@@ -18,7 +18,11 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
   "revised": "2026-09-05",
+  "origin": {
+    "tool": "wikidata"
+  },
   "review": {
+    "status": "draft",
     "flags": [
       "imported-facts",
       "summary-drafted",
@@ -27,7 +31,10 @@
     "note": "The date on this record is the imported item's and is the surrender, 2 October 1944. The rising began on 1 August and lasted sixty-three days; a reviewer should decide which date the record should carry and correct it."
   },
   "wikidata": "Q1402078",
-  "sitelinks": 60,
+  "sitelinks": {
+    "count": 60,
+    "on": "2026-09-05"
+  },
   "wikipedia": {
     "en": "Warsaw Uprising",
     "pt": "Revolta de Varsóvia"

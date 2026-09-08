@@ -14,15 +14,24 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
   "revised": "2026-09-05",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-05",
+    "reason": "Retracted in M40b: fourteen years from the protests of March 2011 to the fall of Assad in December 2024. As with Libya, its cause is the Arab Spring, which the import refused for want of a lane. Everything it can be argued to have changed in this dataset is absent: the Islamic State, the refugee movement of 2015 and the European politics that followed it, and the Russian intervention of 2015. It would need the Arab Spring, or the refugee crisis, as a record."
+  },
   "review": {
     "flags": [
       "imported-facts",
       "m40-retracted"
-    ],
-    "note": "Retracted in M40b: fourteen years from the protests of March 2011 to the fall of Assad in December 2024. As with Libya, its cause is the Arab Spring, which the import refused for want of a lane. Everything it can be argued to have changed in this dataset is absent: the Islamic State, the refugee movement of 2015 and the European politics that followed it, and the Russian intervention of 2015. It would need the Arab Spring, or the refugee crisis, as a record."
+    ]
   },
   "wikidata": "Q178810",
-  "sitelinks": 95,
+  "sitelinks": {
+    "count": 95,
+    "on": "2026-09-05"
+  },
   "wikipedia": {
     "en": "Syrian civil war",
     "pt": "Guerra Civil Síria"

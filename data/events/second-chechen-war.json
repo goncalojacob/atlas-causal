@@ -14,15 +14,24 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
   "revised": "2026-09-05",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-05",
+    "reason": "Retracted in M40b: the Russian campaign in Chechnya from August 1999. The first Chechen war was among the twenty-nine candidates the import refused for want of a lane, the dissolution of the Soviet Union is not a record here, and neither is Putin's accession — which is where the argument that this war made a career would have to run. There is no Portuguese link. It would need the first war, or the presidency of 2000, as a record."
+  },
   "review": {
     "flags": [
       "imported-facts",
       "m40-retracted"
-    ],
-    "note": "Retracted in M40b: the Russian campaign in Chechnya from August 1999. The first Chechen war was among the twenty-nine candidates the import refused for want of a lane, the dissolution of the Soviet Union is not a record here, and neither is Putin's accession — which is where the argument that this war made a career would have to run. There is no Portuguese link. It would need the first war, or the presidency of 2000, as a record."
+    ]
   },
   "wikidata": "Q120843",
-  "sitelinks": 61,
+  "sitelinks": {
+    "count": 61,
+    "on": "2026-09-05"
+  },
   "wikipedia": {
     "en": "Second Chechen War",
     "pt": "Segunda Guerra da Chechênia"

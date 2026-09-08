@@ -14,15 +14,24 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-08",
   "revised": "2026-09-08",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-08",
+    "reason": "Retracted in M41b: the pulp, forestry and cogeneration group headquartered in Porto, split off in 2005 and in steel before 2008. The atlas holds nothing about Portuguese industry after the nationalisations of 1975 and the privatisations that undid them, and the leads offer no event this company took part in."
+  },
   "review": {
     "flags": [
       "imported-facts",
       "m41-retracted"
-    ],
-    "note": "Retracted in M41b: the pulp, forestry and cogeneration group headquartered in Porto, split off in 2005 and in steel before 2008. The atlas holds nothing about Portuguese industry after the nationalisations of 1975 and the privatisations that undid them, and the leads offer no event this company took part in."
+    ]
   },
   "wikidata": "Q444971",
-  "sitelinks": 14,
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-09-08"
+  },
   "wikipedia": {
     "en": "Altri",
     "pt": "Altri"

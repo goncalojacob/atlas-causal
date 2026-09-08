@@ -14,15 +14,24 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
   "revised": "2026-09-05",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-05",
+    "reason": "Retracted in M40b: the Czechoslovak revolution of November 1989. The atlas's whole 1989 is this one national revolution — the fall of the Wall, German unification and the dissolution of the Soviet Union are not records here, and the Cold War itself was refused by the import for want of a lane. The argument that would matter, 1989 as the end of the Cold War, has no node to run from, and running it from Prague alone would credit one revolution with the year."
+  },
   "review": {
     "flags": [
       "imported-facts",
       "m40-retracted"
-    ],
-    "note": "Retracted in M40b: the Czechoslovak revolution of November 1989. The atlas's whole 1989 is this one national revolution — the fall of the Wall, German unification and the dissolution of the Soviet Union are not records here, and the Cold War itself was refused by the import for want of a lane. The argument that would matter, 1989 as the end of the Cold War, has no node to run from, and running it from Prague alone would credit one revolution with the year."
+    ]
   },
   "wikidata": "Q182817",
-  "sitelinks": 64,
+  "sitelinks": {
+    "count": 64,
+    "on": "2026-09-05"
+  },
   "wikipedia": {
     "en": "Velvet Revolution",
     "pt": "Revolução de Veludo"

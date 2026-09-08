@@ -14,15 +14,24 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
   "revised": "2026-09-05",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-05",
+    "reason": "Retracted in M40b: the German-Japanese agreement of November 1936 against the Communist International, joined by Italy in 1937 and by Spain and Hungary in 1939. The atlas holds no record of the formation of the Axis — no Pact of Steel, no Tripartite Pact — and Portugal never adhered. Its clearest documented consequence, the fall of the Hiranuma cabinet in Tokyo when Berlin signed with Moscow in August 1939, is also not a record here, and an edge to it would in any case run backwards."
+  },
   "review": {
     "flags": [
       "imported-facts",
       "m40-retracted"
-    ],
-    "note": "Retracted in M40b: the German-Japanese agreement of November 1936 against the Communist International, joined by Italy in 1937 and by Spain and Hungary in 1939. The atlas holds no record of the formation of the Axis — no Pact of Steel, no Tripartite Pact — and Portugal never adhered. Its clearest documented consequence, the fall of the Hiranuma cabinet in Tokyo when Berlin signed with Moscow in August 1939, is also not a record here, and an edge to it would in any case run backwards."
+    ]
   },
   "wikidata": "Q152195",
-  "sitelinks": 61,
+  "sitelinks": {
+    "count": 61,
+    "on": "2026-09-05"
+  },
   "wikipedia": {
     "en": "Anti-Comintern Pact",
     "pt": "Pacto Anticomintern"

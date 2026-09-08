@@ -14,15 +14,24 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
   "revised": "2026-09-05",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-05",
+    "reason": "Retracted in M40b: the war between the army and the Rapid Support Forces since April 2023. The atlas holds nothing in Sudan — not the Darfur war out of which the RSF came, not the revolution of 2019, not the secession of South Sudan — and there is no Portuguese link. It would need the Sudanese revolution, or Darfur, as a record before an honest edge could be written from either end."
+  },
   "review": {
     "flags": [
       "imported-facts",
       "m40-retracted"
-    ],
-    "note": "Retracted in M40b: the war between the army and the Rapid Support Forces since April 2023. The atlas holds nothing in Sudan — not the Darfur war out of which the RSF came, not the revolution of 2019, not the secession of South Sudan — and there is no Portuguese link. It would need the Sudanese revolution, or Darfur, as a record before an honest edge could be written from either end."
+    ]
   },
   "wikidata": "Q117716414",
-  "sitelinks": 66,
+  "sitelinks": {
+    "count": 66,
+    "on": "2026-09-05"
+  },
   "wikipedia": {
     "en": "Sudanese civil war (2023–present)",
     "pt": "Guerra Civil no Sudão (2023–presente)"

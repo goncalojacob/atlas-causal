@@ -18,14 +18,21 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
   "revised": "2026-09-05",
+  "origin": {
+    "tool": "wikidata"
+  },
   "review": {
+    "status": "draft",
     "flags": [
       "imported-facts",
       "summary-drafted"
     ]
   },
   "wikidata": "Q199820",
-  "sitelinks": 77,
+  "sitelinks": {
+    "count": 77,
+    "on": "2026-09-05"
+  },
   "wikipedia": {
     "en": "Paris Peace Conference (1919–1920)",
     "pt": "Conferência de Paz de Paris (1919–1920)"

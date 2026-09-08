@@ -18,14 +18,21 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
   "revised": "2026-09-05",
+  "origin": {
+    "tool": "wikidata"
+  },
   "review": {
+    "status": "draft",
     "flags": [
       "imported-facts",
       "summary-drafted"
     ]
   },
   "wikidata": "Q110999040",
-  "sitelinks": 151,
+  "sitelinks": {
+    "count": 151,
+    "on": "2026-09-05"
+  },
   "wikipedia": {
     "en": "Russo-Ukrainian war (2022–present)",
     "pt": "Invasão da Ucrânia pela Rússia (2022–presente)"

@@ -18,14 +18,21 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
   "revised": "2026-09-05",
+  "origin": {
+    "tool": "wikidata"
+  },
   "review": {
+    "status": "draft",
     "flags": [
       "imported-facts",
       "summary-drafted"
     ]
   },
   "wikidata": "Q193258",
-  "sitelinks": 70,
+  "sitelinks": {
+    "count": 70,
+    "on": "2026-09-05"
+  },
   "wikipedia": {
     "en": "Treaty of Lausanne",
     "pt": "Tratado de Lausanne"

@@ -18,7 +18,11 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
   "revised": "2026-09-05",
+  "origin": {
+    "tool": "wikidata"
+  },
   "review": {
+    "status": "draft",
     "flags": [
       "imported-facts",
       "summary-drafted",
@@ -27,7 +31,10 @@
     "note": "The interval on this record is the imported item's and covers the decisive phase only. The war between the Nationalists and the Communists opens in 1927 and is suspended for the Japanese war; a reviewer should decide whether the record is the whole war or the campaign of 1946–1949 and say so in the title."
   },
   "wikidata": "Q179975",
-  "sitelinks": 83,
+  "sitelinks": {
+    "count": 83,
+    "on": "2026-09-05"
+  },
   "wikipedia": {
     "en": "Chinese Civil War",
     "pt": "Guerra Civil Chinesa"

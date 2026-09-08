@@ -14,15 +14,24 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-08",
   "revised": "2026-09-08",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-08",
+    "reason": "Retracted in M41b: BCP, founded in 1985 in the liberalisation that followed nearly a decade of state control of Portuguese banking, and now the largest private bank. The atlas holds the nationalisation of the banks in 1975 and the resolution of Banco Espírito Santo in 2014, and BCP was an actor in neither. It would need a record of the banking law of the mid-1980s, or of the privatisations of the 1990s, before it had anything to be joined to."
+  },
   "review": {
     "flags": [
       "imported-facts",
       "m41-retracted"
-    ],
-    "note": "Retracted in M41b: BCP, founded in 1985 in the liberalisation that followed nearly a decade of state control of Portuguese banking, and now the largest private bank. The atlas holds the nationalisation of the banks in 1975 and the resolution of Banco Espírito Santo in 2014, and BCP was an actor in neither. It would need a record of the banking law of the mid-1980s, or of the privatisations of the 1990s, before it had anything to be joined to."
+    ]
   },
   "wikidata": "Q118581",
-  "sitelinks": 19,
+  "sitelinks": {
+    "count": 19,
+    "on": "2026-09-08"
+  },
   "wikipedia": {
     "en": "Banco Comercial Português",
     "pt": "Banco Comercial Português"

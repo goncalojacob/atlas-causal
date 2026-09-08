@@ -14,15 +14,24 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
   "revised": "2026-09-05",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-05",
+    "reason": "Retracted in M40b: the killing of at least half a million Tutsi in Rwanda between April and July 1994. The atlas holds no record of the Rwandan civil war, the Arusha accords, the United Nations mission that was not reinforced, or the wars in Congo that followed, and there is no Portuguese link. Its reach into the rest of this dataset would be through the doctrine of protection that Rwanda and Srebrenica together produced, and that doctrine has no record here either."
+  },
   "review": {
     "flags": [
       "imported-facts",
       "m40-retracted"
-    ],
-    "note": "Retracted in M40b: the killing of at least half a million Tutsi in Rwanda between April and July 1994. The atlas holds no record of the Rwandan civil war, the Arusha accords, the United Nations mission that was not reinforced, or the wars in Congo that followed, and there is no Portuguese link. Its reach into the rest of this dataset would be through the doctrine of protection that Rwanda and Srebrenica together produced, and that doctrine has no record here either."
+    ]
   },
   "wikidata": "Q131297",
-  "sitelinks": 81,
+  "sitelinks": {
+    "count": 81,
+    "on": "2026-09-05"
+  },
   "wikipedia": {
     "en": "Rwandan genocide",
     "pt": "Genocídio em Ruanda"

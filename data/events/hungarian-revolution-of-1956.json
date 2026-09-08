@@ -14,15 +14,24 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
   "revised": "2026-09-05",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-05",
+    "reason": "Retracted in M40b: the rising of October 1956 against the Hungarian government and the Soviet presence, crushed by the Red Army in a fortnight. The atlas holds no record of the eastern bloc's internal history — no Berlin 1953, no Prague 1968 — for it to connect to, and its clearest reach into Portugal, the crisis it caused in the western communist parties and so in the PCP, would need that crisis as a record here. Wiring it forward to 1989 across thirty-three years would be an invention."
+  },
   "review": {
     "flags": [
       "imported-facts",
       "m40-retracted"
-    ],
-    "note": "Retracted in M40b: the rising of October 1956 against the Hungarian government and the Soviet presence, crushed by the Red Army in a fortnight. The atlas holds no record of the eastern bloc's internal history — no Berlin 1953, no Prague 1968 — for it to connect to, and its clearest reach into Portugal, the crisis it caused in the western communist parties and so in the PCP, would need that crisis as a record here. Wiring it forward to 1989 across thirty-three years would be an invention."
+    ]
   },
   "wikidata": "Q164348",
-  "sitelinks": 77,
+  "sitelinks": {
+    "count": 77,
+    "on": "2026-09-05"
+  },
   "wikipedia": {
     "en": "Hungarian Revolution of 1956",
     "pt": "Revolução Húngara de 1956"

@@ -14,15 +14,24 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
   "revised": "2026-09-05",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-05",
+    "reason": "Retracted in M40b: the 1971 convention on wetlands of international importance. The atlas holds no environmental record before the fires of 2017 and nothing at all on conservation, so there is no record here the convention can be argued to have changed and none that produced it. Portugal acceded in 1980 and has designated sites under it since, none of which is an event this atlas holds. It would need a Portuguese conservation record first."
+  },
   "review": {
     "flags": [
       "imported-facts",
       "m40-retracted"
-    ],
-    "note": "Retracted in M40b: the 1971 convention on wetlands of international importance. The atlas holds no environmental record before the fires of 2017 and nothing at all on conservation, so there is no record here the convention can be argued to have changed and none that produced it. Portugal acceded in 1980 and has designated sites under it since, none of which is an event this atlas holds. It would need a Portuguese conservation record first."
+    ]
   },
   "wikidata": "Q170170",
-  "sitelinks": 75,
+  "sitelinks": {
+    "count": 75,
+    "on": "2026-09-05"
+  },
   "wikipedia": {
     "en": "Ramsar Convention",
     "pt": "Convenção sobre as Zonas Húmidas de Importância Internacional"

@@ -18,14 +18,21 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
   "revised": "2026-09-05",
+  "origin": {
+    "tool": "wikidata"
+  },
   "review": {
+    "status": "draft",
     "flags": [
       "imported-facts",
       "summary-drafted"
     ]
   },
   "wikidata": "Q130796",
-  "sitelinks": 88,
+  "sitelinks": {
+    "count": 88,
+    "on": "2026-09-05"
+  },
   "wikipedia": {
     "en": "Molotov–Ribbentrop Pact",
     "pt": "Pacto Molotov-Ribbentrop"

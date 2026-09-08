@@ -18,7 +18,11 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
   "revised": "2026-09-05",
+  "origin": {
+    "tool": "wikidata"
+  },
   "review": {
+    "status": "draft",
     "flags": [
       "imported-facts",
       "summary-drafted",
@@ -27,7 +31,10 @@
     "note": "The interval on this record is the imported item's and is too narrow: the campaigns against the Greek, French and Armenian forces, and the Ankara assembly that directed them, run from 1919, not from October 1922. A reviewer should widen the start before the record is signed."
   },
   "wikidata": "Q234738",
-  "sitelinks": 65,
+  "sitelinks": {
+    "count": 65,
+    "on": "2026-09-05"
+  },
   "wikipedia": {
     "en": "Turkish War of Independence",
     "pt": "Guerra de Independência da Turquia"

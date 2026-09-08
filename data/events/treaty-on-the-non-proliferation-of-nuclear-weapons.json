@@ -14,15 +14,24 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
   "revised": "2026-09-05",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-05",
+    "reason": "Retracted in M40b: the non-proliferation treaty opened for signature on 1 July 1968. Its causes are the Chinese test of 1964 and the missile crisis of 1962, and its consequences are the safeguards system and the tests that broke it; the atlas holds no record of the nuclear age at all. Portugal ratified in 1977, having never had a programme, and there is no Portuguese record the treaty can be argued to have changed."
+  },
   "review": {
     "flags": [
       "imported-facts",
       "m40-retracted"
-    ],
-    "note": "Retracted in M40b: the non-proliferation treaty opened for signature on 1 July 1968. Its causes are the Chinese test of 1964 and the missile crisis of 1962, and its consequences are the safeguards system and the tests that broke it; the atlas holds no record of the nuclear age at all. Portugal ratified in 1977, having never had a programme, and there is no Portuguese record the treaty can be argued to have changed."
+    ]
   },
   "wikidata": "Q186444",
-  "sitelinks": 67,
+  "sitelinks": {
+    "count": 67,
+    "on": "2026-09-05"
+  },
   "wikipedia": {
     "en": "Treaty on the Non-Proliferation of Nuclear Weapons",
     "pt": "Tratado de Não Proliferação de Armas Nucleares"

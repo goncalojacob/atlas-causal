@@ -14,15 +14,24 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
   "revised": "2026-09-05",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-05",
+    "reason": "Retracted in M40b: ten years of civil war from November 1910, the destruction of the Federal Army and the constitution of 1917. The atlas holds no record in Latin America outside Brazil and no record of United States intervention anywhere, so there is nothing here the revolution can be argued to have changed and nothing here that can be argued to have caused it. The coincidence with the Portuguese republic of October 1910 is a coincidence, and an edge saying otherwise would be invented."
+  },
   "review": {
     "flags": [
       "imported-facts",
       "m40-retracted"
-    ],
-    "note": "Retracted in M40b: ten years of civil war from November 1910, the destruction of the Federal Army and the constitution of 1917. The atlas holds no record in Latin America outside Brazil and no record of United States intervention anywhere, so there is nothing here the revolution can be argued to have changed and nothing here that can be argued to have caused it. The coincidence with the Portuguese republic of October 1910 is a coincidence, and an edge saying otherwise would be invented."
+    ]
   },
   "wikidata": "Q214426",
-  "sitelinks": 64,
+  "sitelinks": {
+    "count": 64,
+    "on": "2026-09-05"
+  },
   "wikipedia": {
     "en": "Mexican Revolution",
     "pt": "Revolução Mexicana"

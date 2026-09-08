@@ -14,15 +14,24 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
   "revised": "2026-09-05",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-05",
+    "reason": "Retracted in M40b: the umbrella item for the Russian Revolution of 1917. The atlas already holds the thing itself in three records with dates, actors and edges of their own — the February revolution, the October revolution and the civil war — and a fourth node covering all three would double every path through them in the graph and the timeline without adding an argument. Nothing here is lost: the period is walkable from February to October to the civil war."
+  },
   "review": {
     "flags": [
       "imported-facts",
       "m40-retracted"
-    ],
-    "note": "Retracted in M40b: the umbrella item for the Russian Revolution of 1917. The atlas already holds the thing itself in three records with dates, actors and edges of their own — the February revolution, the October revolution and the civil war — and a fourth node covering all three would double every path through them in the graph and the timeline without adding an argument. Nothing here is lost: the period is walkable from February to October to the civil war."
+    ]
   },
   "wikidata": "Q8729",
-  "sitelinks": 116,
+  "sitelinks": {
+    "count": 116,
+    "on": "2026-09-05"
+  },
   "wikipedia": {
     "en": "Russian Revolution",
     "pt": "Revolução Russa de 1917"

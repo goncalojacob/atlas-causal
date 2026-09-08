@@ -14,15 +14,24 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
   "revised": "2026-09-05",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-05",
+    "reason": "Retracted in M40b: CEDAW, adopted by the General Assembly in December 1979. Its lineage runs through the Commission on the Status of Women and the declaration of 1967, neither of which the atlas holds — unlike the covenant of 1966, which is the direct binding successor of the Charter's own promise and is wired to it on that ground. Its Portuguese reach would be the family law reform of 1977 and the equality legislation that followed, and the atlas holds no record of either."
+  },
   "review": {
     "flags": [
       "imported-facts",
       "m40-retracted"
-    ],
-    "note": "Retracted in M40b: CEDAW, adopted by the General Assembly in December 1979. Its lineage runs through the Commission on the Status of Women and the declaration of 1967, neither of which the atlas holds — unlike the covenant of 1966, which is the direct binding successor of the Charter's own promise and is wired to it on that ground. Its Portuguese reach would be the family law reform of 1977 and the equality legislation that followed, and the atlas holds no record of either."
+    ]
   },
   "wikidata": "Q277072",
-  "sitelinks": 57,
+  "sitelinks": {
+    "count": 57,
+    "on": "2026-09-05"
+  },
   "wikipedia": {
     "en": "Convention on the Elimination of All Forms of Discrimination Against Women",
     "pt": "Convenção sobre a Eliminação de Todas as Formas de Discriminação contra a Mulher"
