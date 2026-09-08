@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "fertagus",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-08",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q1408210",
+  "sitelinks": 10,
+  "wikipedia": {
+    "en": "Fertagus",
+    "pt": "Fertagus"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1408210"
+    }
+  ],
+  "actorType": "institution",
+  "names": [
+    "Fertagus"
+  ],
+  "summary": "Wikidata item Q1408210, imported by tools/import/wikidata.mjs. The item's own description reads \"railway line in Portugal\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1999,
+    "end": null
+  },
+  "where": null
+}

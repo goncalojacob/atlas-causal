@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "revolutionary-socialist-party",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-08",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q2054807",
+  "sitelinks": 10,
+  "wikipedia": {
+    "en": "Revolutionary Socialist Party (Portugal)",
+    "pt": "Partido Socialista Revolucionário (Portugal)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2054807"
+    }
+  ],
+  "actorType": "institution",
+  "names": [
+    "Revolutionary Socialist Party",
+    "PSR",
+    "Revolutionary Socialist Party (Portugal)",
+    "Partido Socialista Revolucionário (Portugal)"
+  ],
+  "summary": "Wikidata item Q2054807, imported by tools/import/wikidata.mjs. The item's own description reads \"Defunct Trotskyist party in Portugal\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1979,
+    "end": 1999
+  },
+  "where": null
+}

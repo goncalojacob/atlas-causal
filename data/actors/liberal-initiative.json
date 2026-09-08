@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "liberal-initiative",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-08",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q46122950",
+  "sitelinks": 13,
+  "wikipedia": {
+    "en": "Liberal Initiative",
+    "pt": "Iniciativa Liberal"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q46122950"
+    }
+  ],
+  "actorType": "institution",
+  "names": [
+    "Liberal Initiative",
+    "Iniciativa Liberal"
+  ],
+  "summary": "Wikidata item Q46122950, imported by tools/import/wikidata.mjs. The item's own description reads \"Portuguese liberal-right political party\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2017,
+    "end": null
+  },
+  "where": null
+}

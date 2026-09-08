@@ -9,6 +9,7 @@ import { mkdtemp, mkdir, readFile, readdir, writeFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import path from 'node:path';
 import { createValidator } from '../src/validate/schema.js';
+import { FIELDS, applyValues, valuesFromRecord } from '../src/contribute/bundle.js';
 import {
   createFetcher, HttpError, BudgetError, isRetryable, backoffMs,
   entitiesUrl, searchUrl, summaryUrl, sparqlUrl, articleUrl, historyUrl,
@@ -193,7 +194,10 @@ test('an item is classified only by what the seeds file says', async () => {
 
 test('an interval comes from the properties that belong to the kind', async () => {
   assert.deepEqual(intervalFor('event', (await read('Q9000001')).times), { start: 1974, end: 1974, date: '1974-04-25' });
-  assert.deepEqual(intervalFor('actor', (await read('Q9000002')).times), { start: 1900, end: 1970, date: '1900-03-02' });
+  // An actor is years alone, even when Wikidata knows the day: the contribute
+  // form has no exact date for an actor, so a record carrying one stops
+  // surviving its own save (bundle.test.mjs, byte identical).
+  assert.deepEqual(intervalFor('actor', (await read('Q9000002')).times), { start: 1900, end: 1970 });
   assert.deepEqual(intervalFor('actor', (await read('Q9000006')).times), { start: 1822, end: null });
   // No usable date at all is a refusal, never a made-up year.
   assert.equal(intervalFor('event', (await read('Q9000007')).times), null);
@@ -314,7 +318,12 @@ test('a created record validates, cites the item and says it is unchecked', asyn
     assert.deepEqual(v.validate(schema, record), [], `${name} record`);
     assert.deepEqual(record.authors, [IMPORT_AUTHOR]);
     assert.deepEqual(record.review, { flags: [IMPORTED_FLAG] });
-    assert.deepEqual(record.sources, [{ source: SOURCE_ID, locator: record.wikidata }]);
+    // Everything rule 6 asks to cite, cites the item it was read from. A place
+    // is not on that list — it is a geographic fact rather than an argument —
+    // and the place form has no citation field, so an imported place cites
+    // nothing and keeps its provenance in `wikidata` like every other record.
+    const cited = name === 'place' ? [] : [{ source: SOURCE_ID, locator: record.wikidata }];
+    assert.deepEqual(record.sources, cited);
   }
   assert.deepEqual(event.actors, [], 'who took part is not what they did, and the import does not write roles');
   assert.equal(place.where.label, 'Northfield');
@@ -409,6 +418,32 @@ test('--import creates what it can, refuses the rest, and leaves a cursor', asyn
   const again = await runImportMode(dir, { fetcher: second, today: '2026-09-05', cacheDir, deriveRegion });
   assert.deepEqual(again.report.batch, []);
   assert.equal(second.calls, 0);
+});
+
+// bundle.test.mjs holds this over data/, but only after a record is already
+// in the tree — which, for an import, means after the Action has walked a
+// batch, and a mismatch there costs a whole run rather than a test. The same
+// check over what the import itself writes is the one that fails on a laptop.
+// It has caught two: an actor carrying an exact date the actor form has no
+// field for, and a place carrying the wikidata citation that rule 6 exempts
+// places from.
+test('every record --import writes survives an unedited save through the form', async () => {
+  const { dir, cacheDir } = await scratch();
+  const { fetcher } = await fixtureFetcher();
+  await runImportMode(dir, { fetcher, today: '2026-09-04', cacheDir, deriveRegion });
+
+  let seen = 0;
+  for (const sub of ['events', 'actors', 'places']) {
+    for (const name of await readdir(path.join(dir, sub))) {
+      const text = await readFile(path.join(dir, sub, name), 'utf8');
+      const record = JSON.parse(text);
+      if (!Object.hasOwn(FIELDS, record.kind)) continue;
+      const back = applyValues(record.kind, record, valuesFromRecord(record.kind, record));
+      assert.equal(`${JSON.stringify(back, null, 2)}\n`, text, `${sub}/${name}`);
+      seen += 1;
+    }
+  }
+  assert.ok(seen > 0, 'the import wrote nothing to round-trip');
 });
 
 test('--import stops at the batch size and the next run continues', async () => {

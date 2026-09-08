@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "new-macau-association",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-08",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q2495255",
+  "sitelinks": 10,
+  "wikipedia": {
+    "en": "New Macau Association",
+    "pt": "Associação Novo Macau"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2495255"
+    }
+  ],
+  "actorType": "institution",
+  "names": [
+    "New Macau Association",
+    "Associação Novo Macau"
+  ],
+  "summary": "Wikidata item Q2495255, imported by tools/import/wikidata.mjs. The item's own description reads \"political party in Macau\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1992,
+    "end": null
+  },
+  "where": null
+}

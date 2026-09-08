@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "national-syndicalists",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-08",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q2562540",
+  "sitelinks": 10,
+  "wikipedia": {
+    "en": "National Syndicalists (Portugal)",
+    "pt": "Movimento Nacional-Sindicalista"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2562540"
+    }
+  ],
+  "actorType": "institution",
+  "names": [
+    "National Syndicalists",
+    "Movimento Nacional-Sindicalista",
+    "National Syndicalists (Portugal)"
+  ],
+  "summary": "Wikidata item Q2562540, imported by tools/import/wikidata.mjs. The item's own description reads \"political movement in Portugal\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1932,
+    "end": 1934
+  },
+  "where": null
+}

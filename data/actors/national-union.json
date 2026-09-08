@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "national-union",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-08",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q954010",
+  "sitelinks": 20,
+  "wikipedia": {
+    "en": "National Union (Portugal)",
+    "pt": "União Nacional"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q954010"
+    }
+  ],
+  "actorType": "institution",
+  "names": [
+    "National Union",
+    "União Nacional",
+    "National Union (Portugal)"
+  ],
+  "summary": "Wikidata item Q954010, imported by tools/import/wikidata.mjs. The item's own description reads \"Portuguese political party\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1930,
+    "end": 1974
+  },
+  "where": null
+}
