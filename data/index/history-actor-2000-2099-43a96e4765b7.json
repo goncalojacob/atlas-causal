@@ -1,0 +1,415 @@
+{
+  "from": 2000,
+  "kind": "actor",
+  "records": {
+    "altri": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "chega": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "review"
+          ],
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "sitelinks",
+            "wikidata",
+            "wikipedia"
+          ],
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-03"
+        }
+      ]
+    },
+    "east-timor": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "euronext": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "farfetch": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "kosovo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "liberal-initiative": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "livre": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "nos": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "novo-banco": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "review"
+          ],
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "sitelinks",
+            "wikidata",
+            "wikipedia"
+          ],
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-03"
+        }
+      ]
+    },
+    "people-animals-nature": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "rise-up": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "social-liberal-party": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "south-sudan": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "the-navigator-company": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "volt-portugal": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "wagner-group": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    }
+  },
+  "schema": 1,
+  "to": 2099
+}

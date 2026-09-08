@@ -16,12 +16,14 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { execFileSync } from 'node:child_process';
-import { mkdtemp, mkdir, readFile, rm, writeFile } from 'node:fs/promises';
+import { cp, mkdtemp, mkdir, readFile, rm, writeFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import path from 'node:path';
-import { recordHistories, isShallow, HISTORY_DIR } from '../tools/lib/history.mjs';
-import { compareIndex } from '../tools/build-index.mjs';
-import { ROOT } from './helpers.mjs';
+import { recordHistories, historyShards, isShallow } from '../tools/lib/history.mjs';
+import { buildIndex, compareIndex, writeIndex, readIndex } from '../tools/build-index.mjs';
+import { buildTopology } from '../src/validate/core.js';
+import { attributePeriod, attributeShardKey, historyShardName } from '../src/explanations.js';
+import { FIXTURE_DATA, ROOT, fixtures } from './helpers.mjs';
 
 const git = (cwd, ...args) => execFileSync('git', args, {
   cwd,
@@ -106,7 +108,7 @@ test('a shallow clone falls back to revised, and says so', async (t) => {
 });
 
 test('rule 16 compares the histories byte for byte, like every other index file', () => {
-  const name = `${HISTORY_DIR}/fixture-history-event.json`;
+  const name = historyShardName('event', '1200-1299', 'abcdef012345');
   const built = { files: { 'manifest.json': '{}', [name]: '{"versions":[1,2,3]}' } };
   // The exemption that stood here until 6 September let this through, and
   // with it every degraded history the shallow deploy committed.
@@ -116,6 +118,126 @@ test('rule 16 compares the histories byte for byte, like every other index file'
   );
   assert.deepEqual(compareIndex({ 'manifest.json': '{}' }, built), [`missing ${name}`]);
   assert.deepEqual(compareIndex({ 'manifest.json': '{}', [name]: '{"versions":[1,2,3]}' }, built), []);
+});
+
+// ─── The shards (I5) ───────────────────────────────────────────────────────
+//
+// One file per kind and century where there was one per record: 1,027 files
+// and 4.1 MB on the real data, 62,446 at 10^4, all of them committed and
+// shipped (index2-plan, D8). What the shard has to hold is exactly what the
+// per-record file held, filed by exactly the table the attribute shards use.
+
+async function fixtureShards() {
+  const { records, regions } = await fixtures();
+  const topology = buildTopology(records, regions);
+  const wanted = records.filter((r) => r.kind !== 'presence');
+  const { histories } = await recordHistories(wanted, { dataDir: FIXTURE_DATA });
+  const events = new Map(topology.events.map((e) => [e.id, e]));
+  return { records: wanted, histories, events, shards: historyShards(histories, wanted, events) };
+}
+
+test('a record read out of its shard is the history the per-record file carried', async () => {
+  const { histories, shards } = await fixtureShards();
+  const found = new Map();
+  for (const shard of shards) {
+    for (const [id, entry] of Object.entries(shard.file.records)) found.set(`${shard.kind}:${id}`, entry);
+  }
+  assert.ok(histories.length > 0);
+  for (const history of histories) {
+    // The same object, minus the `id` and the `kind` every file repeated: the
+    // dashboard is handed this and `src/review/history.js` is unchanged.
+    assert.deepEqual(found.get(`${history.kind}:${history.id}`), { from: history.from, versions: history.versions },
+      `${history.kind}:${history.id}`);
+  }
+  assert.equal(found.size, histories.length, 'every history is in a shard and none is in two');
+});
+
+test('a record is in exactly one shard, chosen by its own filing key', async () => {
+  const { records, events, shards } = await fixtureShards();
+  const seen = new Map();
+  for (const shard of shards) {
+    for (const id of Object.keys(shard.file.records)) {
+      const key = `${shard.kind}:${id}`;
+      assert.ok(!seen.has(key), `${key} is in two shards`);
+      seen.set(key, `${shard.kind}/${shard.key}`);
+    }
+  }
+  for (const record of records) {
+    const key = attributeShardKey(attributePeriod(record.kind, record, events));
+    assert.equal(seen.get(`${record.kind}:${record.id}`), `${record.kind}/${key}`, record.id);
+  }
+  // The three answers that are not a century, which is the half of the table
+  // the histories added: a place and a source by their kind, and a record with
+  // no year at all — an office with `when: null` — in the `null` shard.
+  const of = (kind, id) => seen.get(`${kind}:${id}`);
+  for (const place of records.filter((r) => r.kind === 'place')) assert.equal(of('place', place.id), 'place/place');
+  for (const source of records.filter((r) => r.kind === 'source')) assert.equal(of('source', source.id), 'source/source');
+  const dateless = records.filter((r) => r.kind === 'office' && r.when === null);
+  assert.ok(dateless.length > 0, 'the fixtures carry an office with no interval');
+  for (const office of dateless) assert.equal(of('office', office.id), 'office/null');
+  // And an event is in the century it begins in, which is the other half.
+  for (const event of records.filter((r) => r.kind === 'event' && r.when)) {
+    assert.match(of('event', event.id) ?? '', /^event\/-?\d+--?\d+$/, event.id);
+  }
+});
+
+test('the shards are in kind order and then year order, and their ids are sorted inside', async () => {
+  const built = await buildIndex(FIXTURE_DATA);
+  const manifest = JSON.parse(built.files['manifest.json']);
+  const shards = manifest.historyShards;
+  assert.ok(shards.length > 1);
+  const kinds = shards.map((s) => s.kind);
+  assert.deepEqual([...new Set(kinds)].length, new Set(kinds).size);
+  // Every shard of one kind is contiguous, and within it the centuries run
+  // forwards with the key that answers no year last.
+  for (const kind of new Set(kinds)) {
+    const first = kinds.indexOf(kind);
+    assert.deepEqual(kinds.slice(first, first + kinds.filter((k) => k === kind).length), kinds.filter((k) => k === kind));
+    const years = shards.filter((s) => s.kind === kind && s.from !== null).map((s) => s.from);
+    assert.deepEqual(years, [...years].sort((a, b) => a - b), kind);
+  }
+  for (const shard of shards) {
+    const file = JSON.parse(built.files[path.basename(shard.file)]);
+    const ids = Object.keys(file.records);
+    assert.deepEqual(ids, [...ids].sort(), `${shard.kind} ${shard.key}`);
+  }
+});
+
+// The invariant H9 restored, on the new shape: a shallow clone still says
+// `revised` rather than inventing a corpus in which nothing has been revised,
+// and two builds of one shallow clone still agree to the byte — which is what
+// rule 16 compares now that the exemption is gone (i5-brief, section 4).
+test('a shallow clone builds shards that say revised and are byte-identical twice', async (t) => {
+  const dir = await mkdtemp(path.join(tmpdir(), 'atlas-history-index-'));
+  t.after(() => rm(dir, { recursive: true, force: true }));
+  const repo = path.join(dir, 'repo');
+  await mkdir(repo, { recursive: true });
+  git(dir, 'init', '-q', '-b', 'main', 'repo');
+  await cp(FIXTURE_DATA, path.join(repo, 'data'), { recursive: true });
+  await rm(path.join(repo, 'data', 'index'), { recursive: true, force: true });
+  git(repo, 'add', '-A');
+  git(repo, 'commit', '-q', '-m', 'the fixtures');
+
+  git(dir, 'clone', '-q', '--depth', '1', `file://${repo}`, 'shallow');
+  const shallowData = path.join(dir, 'shallow', 'data');
+  assert.equal(await isShallow(path.join(dir, 'shallow')), true);
+
+  const first = await buildIndex(shallowData);
+  const second = await buildIndex(shallowData);
+  const manifest = JSON.parse(first.files['manifest.json']);
+  const names = manifest.historyShards.map((s) => path.basename(s.file));
+  assert.ok(names.length > 0);
+  for (const name of names) assert.equal(first.files[name], second.files[name], name);
+  // Every record's history says where it came from, and on a shallow clone
+  // that is the record's own dates and never `git`.
+  for (const name of names) {
+    for (const entry of Object.values(JSON.parse(first.files[name]).records)) {
+      assert.equal(entry.from, 'revised', name);
+    }
+  }
+  // And rule 16 has nothing to complain about, histories included.
+  await writeIndex(shallowData, first);
+  assert.deepEqual(compareIndex(await readIndex(shallowData), second), []);
 });
 
 test('the deploy checks out the whole history', async () => {

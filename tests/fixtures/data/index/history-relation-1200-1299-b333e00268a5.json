@@ -1,0 +1,33 @@
+{
+  "from": 1200,
+  "kind": "relation",
+  "records": {
+    "fixture-actor-one--fixture-actor-two--led": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-01-01"
+        },
+        {
+          "fields": [
+            "retraction",
+            "status"
+          ],
+          "on": "2026-01-01"
+        }
+      ]
+    },
+    "fixture-actor-one--fixture-actor-two--member-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-01-01"
+        }
+      ]
+    }
+  },
+  "schema": 1,
+  "to": 1299
+}

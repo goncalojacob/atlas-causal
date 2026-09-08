@@ -1,25 +1,25 @@
 {
   "attributeShards": [
     {
-      "file": "index/attributes-1100-1199-9d85426ee07b.json",
+      "file": "index/attributes-1100-1199-cdfa92eccb3a.json",
       "from": 1100,
       "key": "1100-1199",
       "to": 1199
     },
     {
-      "file": "index/attributes-1200-1299-be9113c1d67e.json",
+      "file": "index/attributes-1200-1299-58abc43c6677.json",
       "from": 1200,
       "key": "1200-1299",
       "to": 1299
     },
     {
-      "file": "index/attributes-null-de2b2d7f3acb.json",
+      "file": "index/attributes-null-e67a6b456834.json",
       "from": null,
       "key": "null",
       "to": null
     },
     {
-      "file": "index/attributes-place-2c3a5e7ffe36.json",
+      "file": "index/attributes-place-94bb592a8b0c.json",
       "from": null,
       "key": "place",
       "to": null
@@ -47,13 +47,91 @@
   ],
   "files": {
     "citers": "index/citers-77d329bd5e9b",
-    "core": "index/core-86560aca5893.json",
-    "history": "index/history",
-    "presences": "index/presences-77f75771f79b.json",
+    "core": "index/core-4fa927c76227.json",
+    "presences": "index/presences-7dc62eab392c.json",
     "review": "index/review-8bf748a55c61.json",
     "search": "index/search-755e4c7ff6e5.json",
     "sources": "index/sources-be024864c060.json"
   },
+  "historyShards": [
+    {
+      "file": "index/history-event-1200-1299-e9700c2bccfd.json",
+      "from": 1200,
+      "key": "1200-1299",
+      "kind": "event",
+      "to": 1299
+    },
+    {
+      "file": "index/history-edge-1200-1299-896bb07f671e.json",
+      "from": 1200,
+      "key": "1200-1299",
+      "kind": "edge",
+      "to": 1299
+    },
+    {
+      "file": "index/history-source-source-31725964722b.json",
+      "from": null,
+      "key": "source",
+      "kind": "source",
+      "to": null
+    },
+    {
+      "file": "index/history-actor-1100-1199-61d08b675f79.json",
+      "from": 1100,
+      "key": "1100-1199",
+      "kind": "actor",
+      "to": 1199
+    },
+    {
+      "file": "index/history-place-place-0ff956b56c2a.json",
+      "from": null,
+      "key": "place",
+      "kind": "place",
+      "to": null
+    },
+    {
+      "file": "index/history-relation-1100-1199-cc9f5fa0ca54.json",
+      "from": 1100,
+      "key": "1100-1199",
+      "kind": "relation",
+      "to": 1199
+    },
+    {
+      "file": "index/history-relation-1200-1299-b333e00268a5.json",
+      "from": 1200,
+      "key": "1200-1299",
+      "kind": "relation",
+      "to": 1299
+    },
+    {
+      "file": "index/history-office-1100-1199-bbd6337ec9a7.json",
+      "from": 1100,
+      "key": "1100-1199",
+      "kind": "office",
+      "to": 1199
+    },
+    {
+      "file": "index/history-office-null-5b506141bab2.json",
+      "from": null,
+      "key": "null",
+      "kind": "office",
+      "to": null
+    },
+    {
+      "file": "index/history-tenure-1200-1299-2ab8b24f5144.json",
+      "from": 1200,
+      "key": "1200-1299",
+      "kind": "tenure",
+      "to": 1299
+    },
+    {
+      "file": "index/history-narrative-1200-1299-fa7d2bac0c93.json",
+      "from": 1200,
+      "key": "1200-1299",
+      "kind": "narrative",
+      "to": 1299
+    }
+  ],
   "land": [],
   "licenses": {
     "data/actors/": {
@@ -256,7 +334,7 @@
     "leader",
     "signatory"
   ],
-  "schema": 5,
+  "schema": 6,
   "tenuresByOffice": {
     "fixture-office-one": [
       "fixture-tenure-one",

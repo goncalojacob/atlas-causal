@@ -13,6 +13,7 @@
 import { esc } from '../util/esc.js';
 import { html } from '../util/dom.js';
 import { assertGeneration, expandCore, presencesFromIndex } from '../data.js';
+import { attributePeriod, attributeShardKey } from '../explanations.js';
 import { loadSchemas } from '../validate/schemas.js';
 import {
   buildQueue, flagCounts, toolCounts, filterQueue, sortQueue, isDraft, inQueue, labelOf,
@@ -109,6 +110,34 @@ try {
   // index2 review, finding 2).
   const { topology: expanded, fill } = expandCore(core);
 
+  // Which history shard a record is in, and the shards already in hand. The
+  // key is the record's own filing key through the one table the build files
+  // by (index2-plan, A8), and the events it needs to answer for an edge are
+  // the core's — which carry the year bounds that table reads, so this is
+  // answered before a single attribute shard has landed.
+  //
+  // One request in flight per shard and the answer held: a reviewer working
+  // through one kind in one century fetches one file for the whole session,
+  // which is what the shards are for. A rejection is dropped rather than kept
+  // as the answer, the discipline every other loader here follows.
+  const historyEvents = new Map(expanded.events.map((event) => [event.id, event]));
+  const historyFiles = new Map();
+  const historyShardFor = (record) => {
+    const key = attributeShardKey(attributePeriod(record.kind, record, historyEvents));
+    return (manifest.historyShards ?? []).find((shard) => shard.kind === record.kind && shard.key === key) ?? null;
+  };
+  const historyFile = (file) => {
+    let pending = historyFiles.get(file);
+    if (!pending) {
+      pending = getJson(`${dataRoot}${file}`).catch((error) => {
+        historyFiles.delete(file);
+        throw error;
+      });
+      historyFiles.set(file, pending);
+    }
+    return pending;
+  };
+
   document.getElementById('fixtures-badge').hidden = !fixtures;
   const page = render({
     topology: {
@@ -144,10 +173,15 @@ try {
       return file ? getJson(`${dataRoot}${file}`) : Promise.resolve({ records: [], warnings: [] });
     },
     // A record's history, written by the index build out of what git holds.
-    // Fetched when a record is opened and not before: there is one file per
-    // record and a dashboard reads a handful of them in an evening.
-    historyOf: (id) => getJson(`${dataRoot}${manifest.files.history}/${encodeURIComponent(id)}.json`)
-      .catch(() => null),
+    // Fetched when a record is opened and not before, one shard per kind and
+    // century since I5: the second record of one kind in one century costs no
+    // request at all, where before it was one file per record and 62,446 of
+    // them at 10^4 (index2-plan, D8).
+    historyOf: (record) => {
+      const shard = historyShardFor(record);
+      if (!shard) return Promise.resolve(null);
+      return historyFile(shard.file).then((file) => file?.records?.[record.id] ?? null, () => null);
+    },
     schemas,
     // Which records cite a source: not in the index every page loads, one
     // file per source since H3b. `retractionPlan` is the only thing on this
@@ -507,7 +541,7 @@ function render({ topology, summary, shardOf, historyOf, schemas, citersOf }) {
     drafted = record;
     paintClaim();
     if (record.kind === 'edge' || record.kind === 'relation') paintContext(record, current);
-    paintHistory(item.id, current);
+    paintHistory(record, current);
     editor = createEditor({
       record,
       topology,
@@ -569,13 +603,16 @@ function render({ topology, summary, shardOf, historyOf, schemas, citersOf }) {
     }
   }
 
-  async function paintHistory(id, current = () => true) {
+  // The record itself and not its id: which shard the history is in is decided
+  // by the record's kind and its own year, through the same table the build
+  // files it by (I5).
+  async function paintHistory(record, current = () => true) {
     const summaryEl = html('summary', {}, 'History');
     historyEl.appendChild(summaryEl);
-    const history = await historyOf(id);
+    const history = await historyOf(record);
     if (!current()) return;
     if (!history) {
-      historyEl.appendChild(html('p', { class: 'hint' }, 'No history file for this record. Rebuild the index (node tools/build-index.mjs).'));
+      historyEl.appendChild(html('p', { class: 'hint' }, 'No history for this record. Rebuild the index (node tools/build-index.mjs).'));
       return;
     }
     const versions = history.versions ?? [];

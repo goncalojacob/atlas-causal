@@ -1,0 +1,127 @@
+{
+  "from": null,
+  "kind": "place",
+  "records": {
+    "fixture-place-a": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "sitelinks",
+            "wikidata",
+            "wikipedia"
+          ],
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "sitelinks"
+          ],
+          "on": "2026-09-03"
+        }
+      ]
+    },
+    "fixture-place-a2": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-03"
+        }
+      ]
+    },
+    "fixture-place-b": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "historicalNames"
+          ],
+          "on": "2026-09-03"
+        }
+      ]
+    },
+    "fixture-place-c": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-03"
+        }
+      ]
+    },
+    "fixture-place-d": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-03"
+        }
+      ]
+    },
+    "fixture-place-e": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-03"
+        }
+      ]
+    },
+    "fixture-place-g": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-03"
+        }
+      ]
+    },
+    "fixture-place-h": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-03"
+        }
+      ]
+    },
+    "fixture-place-m": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-03"
+        }
+      ]
+    },
+    "fixture-place-o": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-03"
+        }
+      ]
+    },
+    "fixture-place-t": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-03"
+        }
+      ]
+    }
+  },
+  "schema": 1,
+  "to": null
+}

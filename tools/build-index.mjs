@@ -21,11 +21,11 @@ import { checkRules } from '../src/validate/rules.js';
 import { createRegionDeriver, regionBounds } from '../src/util/geo.js';
 import { degreesOf, digestOf, inQueue, KIND_ORDER } from '../src/review/queue.js';
 import { searchIndexFor } from '../src/search.js';
-import { attributeShardName, explanationShards, shardName } from '../src/explanations.js';
+import { attributeShardName, explanationShards, historyShardName, shardName } from '../src/explanations.js';
 import { licensingTable } from '../src/licensing.js';
 import { createAtlasFromSpine, expandSpine, presencesFromIndex, INDEX_GENERATION } from '../src/data.js';
 import { readRecords, readRegions, readRegionPolygons, readRoles, readCategories, readLandFiles, readPresenceShards, paletteFile } from './lib/read.mjs';
-import { recordHistories, HISTORY_DIR } from './lib/history.mjs';
+import { recordHistories, historyShards } from './lib/history.mjs';
 import { sitePages, ENTRY_DIR } from './lib/prerender.mjs';
 
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -47,7 +47,10 @@ export const TEMPLATES = ['entry.html', 'sources.html', 'narratives.html'];
 // `presences-<hash>.json` is the territory metadata, out of the spine in I1.
 // `core-<hash>.json` and `attributes-<key>-<hash>.json` are I3's split of the
 // spine, where the key is two years, `place` or `null` (i3-brief, A1 and A4).
-const HASHED = /^(?:(?:spine|search|sources|review|presences|core)-(?:[a-z]+-)?|(?:explanations|attributes)-(?:-?\d+--?\d+|null|[a-z]+)-)[0-9a-f]{12}\.json$/;
+// `history-<kind>-<key>-<hash>.json` is I5's: what changed at each version of
+// a record, one file per kind and period, where `history/` was a directory of
+// one file per record and the last unhashed thing in the index.
+const HASHED = /^(?:(?:spine|search|sources|review|presences|core)-(?:[a-z]+-)?|(?:explanations|attributes)-(?:-?\d+--?\d+|null|[a-z]+)-|history-[a-z]+-(?:-?\d+--?\d+|null|[a-z]+)-)[0-9a-f]{12}\.json$/;
 const HASHED_DIR = /^citers-[0-9a-f]{12}$/;
 
 // Deep copy with keys sorted by UTF-16 code unit (Array.prototype.sort's
@@ -251,14 +254,26 @@ export async function buildIndex(dataDir = DEFAULT_DATA, prepared = {}) {
     kinds: shards.map(({ kind, count, name }) => ({ kind, count, file: `index/${name}` })),
   });
 
-  // One file per record, under an unhashed directory: the dashboard fetches
-  // the history of the record a reviewer just opened, by its id, and a hashed
-  // name would mean reading the manifest for every one of them.
-  const { histories } = await recordHistories(
-    records.filter((r) => r.kind !== 'presence'),
-    { dataDir, git: prepared.git ?? true },
-  );
-  const historyEntries = histories.map((h) => [`${HISTORY_DIR}/${h.id}.json`, serialize(h)]);
+  // What changed at each version of each record, one file per kind and period
+  // since I5 and one file per record before it: 1,027 files and 4.1 MB on the
+  // real data, 62,446 at 10^4, every one of them committed and shipped so that
+  // a reviewer could see the versions of one of them (D8). The dashboard now
+  // fetches the shard the open record is in, which is the file it goes on
+  // reading for every other record of that kind and century.
+  //
+  // Hashed and named in the manifest like every other index file (owner
+  // question 5), which is what took the last unhashed thing out of the index
+  // and the last directory special case out of `readIndex` and `writeIndex`.
+  //
+  // Indented, unlike the core and the search shard: a history is read in a
+  // terminal and in a diff, and one century of one kind is not a file a device
+  // parses whole on every page.
+  const historyRecords = records.filter((r) => r.kind !== 'presence');
+  const { histories } = await recordHistories(historyRecords, { dataDir, git: prepared.git ?? true });
+  const historyFiles = historyShards(histories, historyRecords, eventsById).map((shard) => {
+    const text = serialize(shard.file);
+    return { ...shard, name: historyShardName(shard.kind, shard.key, hashOf(text)), text };
+  });
 
   // The lane boxes for the manifest, in the lane list's own order — which the
   // canonical key sort then decides anyway, and that is the point: two builds
@@ -295,7 +310,6 @@ export async function buildIndex(dataDir = DEFAULT_DATA, prepared = {}) {
     },
     files: {
       citers: `index/${citersDir}`,
-      history: `index/${HISTORY_DIR}`,
       search: `index/${searchName}`,
       // The graph, whole, and the only file that carries it since I4b. What
       // the shards add to it — the titles, the roles, the names, the counts —
@@ -351,6 +365,13 @@ export async function buildIndex(dataDir = DEFAULT_DATA, prepared = {}) {
     // shard is this record in" is one comparison rather than a search by years
     // that the two un-windowed shards would both answer.
     attributeShards: attributes.map(({ key, from, to, name }) => ({ file: `index/${name}`, key, from, to })),
+    // The history shards of I5, in kind order and then year order. `kind` and
+    // `key` together are what the dashboard looks a record up by: the key is
+    // the record's own filing key, the same string `attributeShards` carries,
+    // so "which file is this record's history in" is two comparisons rather
+    // than a search by years that a place and a source would both answer with
+    // nothing. Fetched when a reviewer opens a record, and never by a reader.
+    historyShards: historyFiles.map(({ kind, key, from, to, name }) => ({ file: `index/${name}`, kind, key, from, to })),
     // The hue each actor's territory is drawn in, when there is a palette to
     // draw from: written by tools/build-palette.mjs, not by this tool, and
     // named here so the site fetches it in one request with the rest.
@@ -412,7 +433,7 @@ export async function buildIndex(dataDir = DEFAULT_DATA, prepared = {}) {
       ...Object.fromEntries(shards.map(({ name, text }) => [name, text])),
       ...Object.fromEntries(explanations.map(({ name, text }) => [name, text])),
       ...Object.fromEntries(citerEntries),
-      ...Object.fromEntries(historyEntries),
+      ...Object.fromEntries(historyFiles.map(({ name, text }) => [name, text])),
     },
     topology,
     unresolved,
@@ -428,7 +449,7 @@ export async function readIndex(dataDir = DEFAULT_DATA) {
   if (!existsSync(dir)) return files;
   for (const entry of (await readdir(dir, { withFileTypes: true })).sort((a, b) => (a.name < b.name ? -1 : a.name > b.name ? 1 : 0))) {
     if (entry.isDirectory()) {
-      if (!HASHED_DIR.test(entry.name) && entry.name !== HISTORY_DIR) continue;
+      if (!HASHED_DIR.test(entry.name)) continue;
       for (const name of (await readdir(path.join(dir, entry.name))).sort()) {
         files[`${entry.name}/${name}`] = await readFile(path.join(dir, entry.name, name), 'utf8');
       }
@@ -471,7 +492,7 @@ export async function writeIndex(dataDir, built) {
   for (const entry of await readdir(dir, { withFileTypes: true })) {
     const full = path.join(dir, entry.name);
     if (entry.isDirectory()) {
-      if (!HASHED_DIR.test(entry.name) && entry.name !== HISTORY_DIR) continue;
+      if (!HASHED_DIR.test(entry.name)) continue;
       for (const name of await readdir(full)) {
         if (!Object.hasOwn(built.files, `${entry.name}/${name}`)) await unlink(path.join(full, name));
       }

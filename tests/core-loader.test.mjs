@@ -292,8 +292,8 @@ test('a record asked for before its shard is still fetched with ?v=<revised>', a
   const { manifest: loaded, core } = await loadCore({ dataRoot: 'tests/fixtures/data/', fetchJson });
   // The graph file's own number is the manifest's, from I1 on: one generation
   // per artifact rather than two to forget to bump (data.js, D6).
-  assert.equal(loaded.schema, 5);
-  assert.equal(core.schema, 5);
+  assert.equal(loaded.schema, 6);
+  assert.equal(core.schema, 6);
   assert.match(calls[1], /^tests\/fixtures\/data\/index\/core-[0-9a-f]{12}\.json$/);
 
   const atlas = createAtlasFromCore({

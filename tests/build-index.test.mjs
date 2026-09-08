@@ -42,7 +42,7 @@ test('the core and the search shard are compact, and everything else is not', as
     for (const name of ['manifest.json', path.basename(manifest.files.review)]) {
       assert.match(built.files[name], /\n {2}"/, `${name} is still readable`);
     }
-    const history = Object.keys(built.files).find((n) => n.startsWith('history/'));
+    const history = Object.keys(built.files).find((n) => n.startsWith('history-'));
     assert.match(built.files[history], /\n {2}"/, 'a history is read in a terminal and stays indented');
   } finally {
     await rm(dir, { recursive: true, force: true });
@@ -84,10 +84,18 @@ test('two builds of the repository name and write exactly the same files', async
     assert.ok(Object.hasOwn(first.files, path.basename(manifest.files[key])), key);
   }
   assert.match(manifest.files.citers, /^index\/citers-[0-9a-f]{12}$/);
+  // The histories are hashed files named in the manifest since I5, where they
+  // were a directory of one file per record under `files.history` — the last
+  // unhashed thing in an index served `immutable` (owner question 5).
+  assert.equal(Object.hasOwn(manifest.files, 'history'), false);
+  assert.equal(Object.keys(first.files).filter((name) => name.startsWith('history/')).length, 0);
+  for (const shard of manifest.historyShards) {
+    assert.match(shard.file, /^index\/history-[a-z]+-(?:-?\d+--?\d+|null|[a-z]+)-[0-9a-f]{12}\.json$/);
+    assert.ok(Object.hasOwn(first.files, path.basename(shard.file)), shard.file);
+  }
   // The queue's shards are named in the summary and not in the manifest,
   // which is fetched no-store on every page load and would otherwise carry a
   // line per kind for a page most readers never open.
-  assert.equal(manifest.files.history, 'index/history');
   const summary = JSON.parse(first.files[path.basename(manifest.files.review)]);
   for (const { kind, file } of summary.kinds) {
     assert.match(file, new RegExp(`^index/review-${kind}-[0-9a-f]{12}\\.json$`));
@@ -119,9 +127,9 @@ test('key order and file order in the source records do not change the bytes', a
 test('manifest names the hashed files, counts, lanes and land', async () => {
   const built = await buildIndex(FIXTURE_DATA);
   const manifest = JSON.parse(built.files['manifest.json']);
-  // 5 since I4b: the generation goes up by one in every run that changes the
+  // 6 since I5: the generation goes up by one in every run that changes the
   // index's shape (index2-plan, D6).
-  assert.equal(manifest.schema, 5);
+  assert.equal(manifest.schema, 6);
   // `counts.presences` stays where it is: a count is not a file, and it is
   // what the manifest says about a dataset whether or not the file exists.
   assert.deepEqual(manifest.counts, { events: 12, edges: 10, sources: 4, actors: 4, presences: 3, places: 11, relations: 3, offices: 2, tenures: 4, narratives: 1, regions: 3 });
@@ -241,13 +249,19 @@ test('the review index lists the drafts, the count and the warnings', async () =
   }
   assert.deepEqual(buildQueue(digests, { warnings: shards.flatMap((s) => s.warnings) }).length, drafts.length);
 
-  // And one history file per reviewable record, which is what the dashboard
-  // fetches when it opens one.
-  const histories = Object.keys(built.files).filter((name) => name.startsWith('history/'));
+  // And every reviewable record's history, in the shards of its kind and
+  // century: what the dashboard fetches when it opens one. One file per record
+  // until I5, which is 1,027 of them on this data and 62,446 at 10^4 (D8).
+  const shardsOfHistory = manifest.historyShards.map((s) => JSON.parse(built.files[path.basename(s.file)]));
   assert.deepEqual(
-    histories.map((name) => name.slice('history/'.length, -'.json'.length)).sort(),
+    shardsOfHistory.flatMap((shard) => Object.keys(shard.records)).sort(),
     records.filter((r) => r.kind !== 'presence').map((r) => r.id).sort(),
   );
+  for (const [i, shard] of shardsOfHistory.entries()) {
+    assert.equal(shard.kind, manifest.historyShards[i].kind);
+    assert.equal(shard.from, manifest.historyShards[i].from);
+    assert.equal(shard.to, manifest.historyShards[i].to);
+  }
 });
 
 test('weight counts active edges in and out plus the actors named', async () => {
@@ -287,7 +301,7 @@ test('weight is in the built index and does not change between builds', async ()
 test('the manifest names the core and the attribute shards, and both are written', async () => {
   const built = await buildIndex(FIXTURE_DATA);
   const manifest = JSON.parse(built.files['manifest.json']);
-  assert.equal(manifest.schema, 5);
+  assert.equal(manifest.schema, 6);
   assert.match(manifest.files.core, /^index\/core-[0-9a-f]{12}\.json$/);
   assert.ok(Object.hasOwn(built.files, path.basename(manifest.files.core)));
   // The centuries in year order, then the two that answer no year: the places,
@@ -357,7 +371,7 @@ test('every hashed file the build names matches the pattern, and a record could 
     await writeIndex(dir, built);
     const written = Object.keys(await readIndex(dir));
     for (const name of Object.keys(built.files)) assert.ok(written.includes(name), `${name} was not read back`);
-    const HASHED = /^(?:(?:spine|search|sources|review|presences|core)-(?:[a-z]+-)?|(?:explanations|attributes)-(?:-?\d+--?\d+|null|[a-z]+)-)[0-9a-f]{12}\.json$/;
+    const HASHED = /^(?:(?:spine|search|sources|review|presences|core)-(?:[a-z]+-)?|(?:explanations|attributes)-(?:-?\d+--?\d+|null|[a-z]+)-|history-[a-z]+-(?:-?\d+--?\d+|null|[a-z]+)-)[0-9a-f]{12}\.json$/;
     for (const name of written.filter((n) => n !== 'manifest.json' && !n.includes('/'))) {
       assert.ok(HASHED.test(name), name);
     }
@@ -365,7 +379,8 @@ test('every hashed file the build names matches the pattern, and a record could 
     // directory, but the pruning is by name and a name that matched both would
     // be the one mistake that cannot be undone.
     for (const name of ['carnation-revolution-1974.json', 'core-values.json', 'attributes-1900-1999.json',
-      'spine.json', 'presences-of-portugal.json', 'attributes-place-not-a-hash.json']) {
+      'spine.json', 'presences-of-portugal.json', 'attributes-place-not-a-hash.json',
+      'history-of-portugal.json', 'history-event-1900-1999.json']) {
       assert.equal(HASHED.test(name), false, name);
     }
   } finally {
@@ -389,6 +404,10 @@ test('writeIndex removes stale hashed files and the result is fresh', async () =
     // build, hashed and `immutable` like the rest.
     await writeFile(path.join(dir, 'index', 'core-deadbeef0000.json'), '{}\n');
     await writeFile(path.join(dir, 'index', 'attributes-1400-1499-deadbeef0000.json'), '{}\n');
+    // And a history shard from an earlier build, hashed like the rest since I5:
+    // it is what a record revised since then makes, because the hash is over
+    // the shard's whole content and every version in it.
+    await writeFile(path.join(dir, 'index', 'history-event-1400-1499-deadbeef0000.json'), '{}\n');
     await mkdir(path.join(dir, 'index', 'citers-deadbeef0000'), { recursive: true });
     await writeFile(path.join(dir, 'index', 'citers-deadbeef0000', 'fixture-source-a.json'), '[]\n');
     const built = await buildIndex(dir);
@@ -416,6 +435,11 @@ test('writeIndex removes stale hashed files and the result is fresh', async () =
       Object.keys(await readIndex(dir)).filter((n) => n.startsWith('attributes-')).sort(),
       JSON.parse(built.files['manifest.json']).attributeShards.map((s) => path.basename(s.file)).sort(),
       'the stale shard is gone and every fresh one is there',
+    );
+    assert.deepEqual(
+      Object.keys(await readIndex(dir)).filter((n) => n.startsWith('history-')).sort(),
+      JSON.parse(built.files['manifest.json']).historyShards.map((s) => path.basename(s.file)).sort(),
+      'the stale history shard is gone and every fresh one is there',
     );
     assert.deepEqual(await readdir(path.join(dir, 'index', 'citers-deadbeef0000')).catch(() => null), null, 'the stale directory is gone');
     assert.deepEqual(compareIndex(await readIndex(dir), built), []);

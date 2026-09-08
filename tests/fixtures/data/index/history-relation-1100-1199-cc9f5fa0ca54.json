@@ -1,0 +1,17 @@
+{
+  "from": 1100,
+  "kind": "relation",
+  "records": {
+    "fixture-polity-four--fixture-polity-three--regime-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-01-01"
+        }
+      ]
+    }
+  },
+  "schema": 1,
+  "to": 1199
+}

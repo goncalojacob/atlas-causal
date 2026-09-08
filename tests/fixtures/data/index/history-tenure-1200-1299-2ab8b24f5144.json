@@ -1,0 +1,62 @@
+{
+  "from": 1200,
+  "kind": "tenure",
+  "records": {
+    "fixture-actor-one-fixture-actor-two-1210": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-01-01"
+        }
+      ]
+    },
+    "fixture-tenure-one": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-01-01"
+        },
+        {
+          "fields": [
+            "note"
+          ],
+          "on": "2026-01-01"
+        }
+      ]
+    },
+    "fixture-tenure-three": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-01-01"
+        },
+        {
+          "fields": [
+            "note"
+          ],
+          "on": "2026-01-01"
+        }
+      ]
+    },
+    "fixture-tenure-two": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-01-01"
+        },
+        {
+          "fields": [
+            "note"
+          ],
+          "on": "2026-01-01"
+        }
+      ]
+    }
+  },
+  "schema": 1,
+  "to": 1299
+}

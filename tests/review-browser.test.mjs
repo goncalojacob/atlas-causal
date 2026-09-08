@@ -148,6 +148,54 @@ test('the record pane shows the history, the claim and the diff against the draf
   });
 });
 
+// I5. The histories were a file per record — 1,027 of them on this data and
+// 62,446 at 10^4, every one committed and shipped — and are one file per kind
+// and century now. What that buys a reviewer is this: the second record of one
+// kind in one century costs no request at all, and they work through a kind.
+test('a second record of one kind and century costs no second history request', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await open(page, url('review.html'), QUEUE_READY);
+    // One kind, which is how the queue is worked through: the events are the
+    // kind the repository has most drafts of.
+    await page.eval(`const chip = [...document.querySelectorAll(".queue-filters .chip")].find((b) => b.textContent.startsWith("event ("));
+      if (!chip) throw new Error("no event in the queue");
+      chip.click();
+      return true;`);
+    await waitFor(page, 'return document.querySelectorAll(".queue-item").length > 1;', 'the event rows');
+
+    // The event shards only: the page opens a record of its own when it draws
+    // — a source, in this queue's order — and that one's request is not part
+    // of what is being counted here and does not always land before the first
+    // click.
+    const asked = 'performance.getEntriesByType("resource").filter((e) => /\\/index\\/history-event-/.test(e.name))';
+    const opened = [];
+    for (let row = 0; row < 6; row += 1) {
+      const id = await page.eval(`const rows = [...document.querySelectorAll(".queue-item")];
+        if (!rows[${row}]) return null;
+        const id = rows[${row}].querySelector(".queue-id").textContent;
+        rows[${row}].click();
+        return id;`);
+      if (id === null) break;
+      await waitFor(page, `return (document.querySelector(".record-id") || {}).textContent === "event · ${id}"
+        && /version/.test((document.querySelector(".record-history summary") || {}).textContent || "");`, `the history of ${id}`);
+      opened.push({ id, files: await page.eval(`return [...new Set(${asked}.map((e) => e.name))];`) });
+    }
+
+    assert.ok(opened.length >= 2, `${opened.length} record(s) opened`);
+    const files = opened[opened.length - 1].files;
+    assert.ok(files.length >= 1, 'the histories come out of a shard');
+    for (const name of files) {
+      assert.match(name, /\/index\/history-event-(?:-?\d+--?\d+|null)-[0-9a-f]{12}\.json$/, name);
+    }
+    // Fewer files than records: the shard the first record came out of served
+    // at least one of the others, which is the whole of what the sharding is
+    // for. It was one request per record before I5, always.
+    assert.ok(files.length < opened.length,
+      `${opened.length} records opened and ${files.length} history file(s) fetched: ${files.join(', ')}`);
+    console.log(`      ${opened.length} records opened, ${files.length} history file(s) fetched`);
+  });
+});
+
 // I1 and index2 review finding 2. The dashboard runs the browser's half of
 // the validator against the whole universe, and the presences are part of it:
 // rule 17 and `actor-unused` read them (rules.js). They left the spine, so

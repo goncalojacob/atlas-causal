@@ -6,10 +6,18 @@
 // drafted, or by what. The obvious way — a `git log` endpoint on
 // `tools/serve.mjs` — was refused there and here: that server's whole
 // security argument is that it does one thing, and shelling out to git for a
-// path a page names is a second thing. So the history is a static file per
-// record, written by `build-index` where every record is already in hand, and
-// the dashboard fetches one when a record is opened (review of the health
-// plan, finding 19).
+// path a page names is a second thing. So the histories are static files,
+// written by `build-index` where every record is already in hand, and the
+// dashboard fetches the one that holds the record a reviewer opened (review of
+// the health plan, finding 19).
+//
+// **One file per kind and century since I5**, keyed by record id inside, where
+// it was one file per record: 1,027 files and 4.1 MB on the real data and
+// 62,446 files at 10^4, every one of them committed and shipped, to show a
+// reviewer the versions of the one record in front of them (index2-plan, D8).
+// A reviewer works through one kind in one century, so that is where the files
+// divide — the same argument the review digests divide by kind on, and the same
+// filing table the attribute shards use.
 //
 // **A version is identified by the record's own content, never by the commit
 // that carried it.** No commit hash and no commit date is written. That is
@@ -33,10 +41,9 @@
 
 import { spawn } from 'node:child_process';
 import path from 'node:path';
-import { KIND_DIRS } from '../../src/kinds.js';
+import { KINDS, KIND_DIRS } from '../../src/kinds.js';
+import { attributePeriod, attributeShardKey } from '../../src/explanations.js';
 import { versionsOf, versionsFromRevised } from '../../src/review/history.js';
-
-export const HISTORY_DIR = 'history';
 
 // --- git -------------------------------------------------------------------
 
@@ -180,4 +187,64 @@ export async function recordHistories(records, { dataDir, git = true } = {}) {
     };
   }).sort((a, b) => (a.id < b.id ? -1 : a.id > b.id ? 1 : 0));
   return { from, histories };
+}
+
+// The histories filed into one file per kind and period (I5). The key is
+// `attributePeriod`, which is what the attribute shards file by, so the two
+// schemes cannot come to disagree about which file a record is in — an event
+// by the year it begins, an edge by the year its cause begins, a place and a
+// source by their kind, and anything with no year in the `null` shard
+// (index2-plan, A8; index2 review, finding 10).
+//
+// The key is the *record's* and not the history's: a history carries no `when`,
+// and the browser has to be able to work the same answer out from the core
+// before it fetches anything.
+//
+// A file is `{ schema, kind, from, to, records }`, where `records[id]` is the
+// per-record object the old `history/<id>.json` carried minus the `id` and
+// `kind` it repeated. `from` is two things in one file and deliberately: at the
+// top it is the first year of the period, and inside a record it is `git` or
+// `revised` — where that record's versions came from, which is a fact about the
+// record and not about the file.
+//
+// `records` is an object rather than a list because that is how it is read: the
+// dashboard has an id and wants one entry. Sorting is the serializer's, which
+// sorts every key in the index by code unit.
+export function historyShards(histories, records, events) {
+  const byKey = new Map(records.map((record) => [`${record.kind}:${record.id}`, record]));
+  const groups = new Map();
+  for (const history of histories) {
+    const record = byKey.get(`${history.kind}:${history.id}`);
+    const period = attributePeriod(history.kind, record, events);
+    const key = attributeShardKey(period);
+    const at = `${history.kind}/${key}`;
+    let group = groups.get(at);
+    if (!group) {
+      group = {
+        kind: history.kind,
+        key,
+        from: typeof period === 'object' && period !== null ? period.from : null,
+        to: typeof period === 'object' && period !== null ? period.to : null,
+        records: {},
+      };
+      groups.set(at, group);
+    }
+    group.records[history.id] = { from: history.from, versions: history.versions };
+  }
+
+  // Kinds in registry order, and within a kind the centuries in year order and
+  // then the one key that answers no year — the order the manifest names them
+  // in, and the order `buildAttributeShards` writes its own files in.
+  return [...groups.values()]
+    .sort((a, b) => KINDS.indexOf(a.kind) - KINDS.indexOf(b.kind)
+      || (a.from === null || b.from === null
+        ? (a.from === null ? 1 : 0) - (b.from === null ? 1 : 0) || (a.key < b.key ? -1 : 1)
+        : a.from - b.from))
+    .map((group) => ({
+      kind: group.kind,
+      key: group.key,
+      from: group.from,
+      to: group.to,
+      file: { schema: 1, kind: group.kind, from: group.from, to: group.to, records: group.records },
+    }));
 }

@@ -1,0 +1,313 @@
+{
+  "from": 1800,
+  "kind": "event",
+  "records": {
+    "1890-portuguese-legislative-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1892-portuguese-legislative-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1894-portuguese-legislative-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1895-portuguese-legislative-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1897-portuguese-legislative-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1899-portuguese-legislative-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "anglo-zanzibar-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "boxer-rebellion": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "second-boer-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "treaty-of-windsor": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "authors",
+            "review",
+            "sources",
+            "status",
+            "summary"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    }
+  },
+  "schema": 1,
+  "to": 1899
+}
