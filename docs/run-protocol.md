@@ -85,6 +85,24 @@ migrated hours later.
 - **Daytime runs today** supersede "builds after 18:00" in `STATUS.md`,
   at the owner's request of 4 September.
 
+## Amendments, 8 September 2026
+
+- **A milestone branch `m44`, cut from `m0`, is the third import round's own
+  branch and is not another agent at work on `m0`.** Section 1's "never work
+  on another branch" is about two runs writing to `m0` at once; M44 writes its
+  records, its documents and its counts to `m44` and merges them into `m0`
+  only in a separate merge run, the way `merge-world` landed `world`. Runs on
+  `m0` continue meanwhile and must not wait for it. The import branches of the
+  4 September amendment are cut from `m44` in that round, not from `m0`, and
+  are fast-forward-merged back into it.
+- **The claim line and the done lines of M44 stay on `m0`** (`docs/m44-brief.md`,
+  amendment A10). The gate of section 1 reads `origin/m0:STATUS.md` with
+  `grep -qxF`, so `M44a done` written on `m44` is invisible to every run
+  waiting on it. Each is a single-file commit to `m0` that touches nothing
+  else, and at the merge the branch's own `STATUS.md` — its paragraphs, its
+  counts and its deviations, renumbered by deviation 461's rule — is carried
+  over to join them.
+
 ## Amendments, 5 September 2026
 
 - **`grep` prints nothing on a file that carries a control byte**, because it
