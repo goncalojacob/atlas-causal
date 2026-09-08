@@ -2654,6 +2654,14 @@ The numbering continues from 401, which is M31-3's last.
      renaming it now would name it after a file three of its rows still read.
      Its table says which graph file each page reads, and asserts that no page
      reads the other one.
+479. **I4a's section is a comment on pull request #1 and not in its body**, for
+     exactly the reason deviation 459 gives and which has not been fixed since:
+     the body is about 168,000 characters, the only tool this session has for it
+     replaces the whole thing, and re-emitting every other section verbatim to
+     add one risks silently damaging the record of every milestone before it.
+     The comment says at its top where it belongs. **Two sections are now
+     outstanding** — M41b's and this one — and pasting each in is a minute's
+     work in the browser.
 
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
