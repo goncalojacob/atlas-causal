@@ -225,7 +225,7 @@ onto a grid, works out who touches whom in each period, colours that graph so
 that no two neighbours are ever alike, and writes `data/geo/palette.json` —
 one small integer per actor. `tools/validate.mjs --index` checks it for
 freshness exactly as it checks the index, and the manifest names it so the
-site fetches it in one request with the spine. A hue is a fact about the
+site fetches it in one request with the core. A hue is a fact about the
 map and not about the polity, which is why it is not a field on the record:
 what touches what changes every time the outlines do, and a field would have
 to be re-argued by hand each time.
@@ -344,7 +344,7 @@ search as further names, and the label stays the atlas's own. **`sitelinks`
 feeds nothing**: not `prominence`, whose reservation below stands, and not
 `weight`. It is a stored fact for an editorial decision nobody has taken,
 and storing it is cheaper than fetching it again when they do — which is
-also why it is the one of the three the spine does not carry.
+also why it is the one of the three the index does not carry.
 
 *Rule 21* is what only the set of records can say: one item is claimed by at
 most one record **of a kind** (two kinds may claim it, because a polity and
@@ -460,7 +460,7 @@ field is written by whoever drafts.
 *The index gains a third hashed file.* `review-<hash>.json`: a digest of every
 record still carrying the draft marker — the dozen fields a list needs and no
 prose — the number of reviewable records, and the validator's own warnings.
-The browser cannot read a thousand record files, and the spine drops
+The browser cannot read a thousand record files, and the index drops
 `authors` because the atlas never shows them; without this file the dashboard
 would either be blind or reimplement the rules. **Since H6b it is a summary
 and one shard per kind**, plus a history file per record; see the index tree
@@ -580,7 +580,7 @@ sources exist (6), a tombstone is not referenced (11), the licence is CC BY-SA
 outside an actor's own is a **warning**, for the same reason an event outside
 one is.
 
-*The spine carries relations whole, `note` included.* A relation has no
+*The index carries relations whole, `note` included.* A relation has no
 card of its own: it is read on the actor card at either end, grouped by type
 and direction, so one record is "Regime of Portugal" on one card and a line
 under "Regimes" on the other. Carrying the note is what keeps a card with
@@ -706,7 +706,7 @@ things:
 *The mapping of an import is data.* `data/imports/<source>.json`, validated by
 `schema/v1/import-map.json`, says which actor a source's entity becomes and
 where one entity's code is more than one actor over its life. It is not a
-record — no envelope, no kind, not in the spine, never fetched by the
+record — no envelope, no kind, not in the index, never fetched by the
 browser — and it exists so that correcting a territory is a pull request
 against one file rather than a change to `tools/`. The first thing it decided
 is the question revision 6 left open: a colony and the state that followed it
@@ -727,7 +727,7 @@ lanes to the window would leave a handle no room to widen into.
 `cluster.js` and a lane is the same problem in one dimension. `search.js`
 and `search-box.js` are new and reserved-no-longer: the extension-points
 table promised a generated `search-<hash>.json` and it turned out not to be
-needed at this size — the spine already carries every title and every
+needed at this size — the index already carries every title and every
 name, and scanning a few hundred of them is a keystroke.
 
 **What revision 6 changed, and why.** The `presence` kind moved from ○ to ●,
@@ -754,7 +754,7 @@ circle per event at the event's point, and thirty-seven of the sixty records
 in the test dataset share a point in Lisbon, so the map showed one dot and
 let the reader click one of thirty-seven events. `map/cluster.js` (pure,
 tested) now decides which marks overlap at the current zoom and which of
-them no zoom could ever part; `weight` on every active event in the spine says which
+them no zoom could ever part; `weight` on every active event in the core says which
 member of a stack the mark should show; `prominence` is reserved as the
 editorial override of that, so nothing an editor thinks is smuggled into a
 derived number. Revision 4 is otherwise intact.
@@ -777,8 +777,10 @@ no principle, invariant or module boundary changed.
 
 1. **The repo is the database.** Every event, edge and source is one JSON
    file. For *structure* the site reads a generated graph index — the
-   **spine** — always
-   whole, in one request. For *text* it reads the record file directly —
+   **core** — always
+   whole, in one request; what a card, a label or a strip reads arrives behind
+   it, a century a file, and nothing waits for it. For *text* it reads the
+   record file directly —
    `data/events/<id>.json` is already a static asset and the id is the path.
    The site never scans directories.
 2. **Two kinds of things: nodes and edges.** Node *kinds* grow over time —
@@ -806,7 +808,7 @@ atlas-causal/
 ├── contribute.html               ● the contribution form
 ├── about.html                    ● licence, how to read confidence, why relicensing is impossible
 ├── sources.html                  ● the bibliography, generated at render from the sources index
-├── narratives.html               ● every narrative as a card, grouped by the centuries it crosses; generated at render from the spine
+├── narratives.html               ● every narrative as a card, grouped by the centuries it crosses; prerendered by the build, and drawn from the core and the shards its walks cross when the fixtures are asked for
 ├── entry.html                    ● one record's full entry; ?id=<id>, for an event, an actor or a place
 ├── review.html                   ● the review queue; a maintainer's page, unlinked, the only one that writes
 ├── CLAUDE.md  CONTEXT.md         ● rules / reasoning
@@ -842,11 +844,10 @@ atlas-causal/
 │   │   └── presences/<from>-<to>.json  ● outlines, sharded by period, GENERATED by tools/import/
 │   └── index/                    ● GENERATED by tools/build-index.mjs, committed on main by the deploy job
 │       ├── manifest.json         ● the index's generation, counts, hashed file names, lanes and regionBoxes (one [minLon,minLat,maxLon,maxLat] per lane, since I1), roles in use, the two vocabularies (rolesAllowed, categoriesAllowed), officesByEvent and tenuresByOffice, land epochs, presence shards, explanation shards, the palette's file name; never cached
-│       ├── spine-<hash>.json     ● the graph, loaded whole by every page: every event {id,title,when,place,region,status,actors,weight,citesCount} with parent, scope, category and subtreeWeight where it has them, every place {id,name,names,where,region,status}, every edge as [from,to,type,confidence,status,revised], every actor {id,actorType,name,names,when,status}, every relation {id,from,to,type,when,note,status}, every office {id,of,title,category,when,status} with every tenure {id,person,office,when,startedBy,status}, every narrative {id,title,summary,authors,window,steps:[{ref}],status} — the refs and not a word of the prose. No presences since I1: they are the file below
-│       ├── presences-<hash>.json ● every presence {id,actor,dependencyOf,dependencyKind,when,geometry.key,capital,confidence,status} — half the spine on the real data, and nothing reads it until the territory layer draws, so it is fetched there and not at first paint (I1). Absent, with its manifest key, where a dataset has no presences
-│       ├── core-<hash>.json      ● the graph and what a mark, a bar and a lane are drawn from: every record's id and status, an event's year bounds, place, lane, weight, subtreeWeight, parent and its actors' **ids**, an edge's [from,to,type,confidence,status], an actor's type and years, a place's point, the two ids a relation, an office and a tenure join and their years, and the merges list. Written beside the spine since I3 and read by no page: I4 is what moves them over
+│       ├── presences-<hash>.json ● every presence {id,actor,dependencyOf,dependencyKind,when,geometry.key,capital,confidence,status} — half the whole-corpus projection on the real data, and nothing reads it until the territory layer draws, so it is fetched there and not at first paint (I1). Absent, with its manifest key, where a dataset has no presences
+│       ├── core-<hash>.json      ● the graph and what a mark, a bar and a lane are drawn from: every record's id and status, an event's year bounds, place, lane, weight, subtreeWeight, parent and its actors' **ids**, an edge's [from,to,type,confidence,status], an actor's type and years, a place's point, the two ids a relation, an office and a tenure join and their years, and the merges list. Loaded whole by every page but sources.html since I4b, which is when the whole-corpus file stopped being written
 │       ├── attributes-<key>-<hash>.json ● what a card, a label or a strip reads and the core drops: title, `when` verbatim, revised, citesCount, wikidata, wikipedia, scope, category, an actor line's role and note, names, a place's label and precision, a relation's and a tenure's note, an office's title, a narrative's summary, authors, window and step refs. One file per century plus `place` (a place has no year) and `null`, filed by attributePeriod() and fetched for the window
-│       ├── search-<hash>.json    ● what the search box scans, folded at build time: per active record {id,kind,label,detail,terms,variants,weight,when,status} and, for an event, `lead` — the folded first sentence of its summary, matched below every name; fetched beside the spine and never waited for
+│       ├── search-<hash>.json    ● what the search box scans, folded at build time: per active record {id,kind,label,detail,terms,variants,weight,when,status} and, for an event, `lead` — the folded first sentence of its summary, matched below every name; fetched beside the core and never waited for
 │       ├── explanations-<from>-<to>-<hash>.json  ● the links' arguments, a century a file, keyed by edge id: fetched in bulk by whatever reads a *path* and never to draw anything
 │       ├── citers-<hash>/<source-id>.json  ● the records that cite that one source, with locator and dissent; one file, fetched when a reader opens the source
 │       ├── sources-<hash>.json   ● every source record with its bibliographic fields and `citationCount`; the rows themselves are the citer directory
@@ -867,7 +868,7 @@ atlas-causal/
 │   ├── lens.js                   ● pure: the events a focus keeps; removed from every view, not dimmed
 │   ├── grouping.js               ● the picker in the header, and the badge that says which lens is on
 │   ├── narrative.js              ● pure: what a step is about, the chain at it, how far the window opens; narrative-mode.js applies it to the store
-│   ├── data.js                   ● manifest → the spine (whole) → record text on demand; lookup tables, adjacency of events by edge and of actors by relation, events by actor and by place, an event's point through its place
+│   ├── data.js                   ● manifest → the core (whole) → the attribute shards behind it → record text on demand; lookup tables, adjacency of events by edge and of actors by relation, events by actor and by place, an event's point through its place
 │   ├── graph.js                  ● consequences, ancestors, convergence, shortest paths outward and what an event led to by a year; pure functions over adjacency
 │   ├── horizon.js                ● pure: the traversal and the horizon year put together; what the panel lists and the views light
 │   ├── chain.js                  ● pure: the walked chain against the status of its steps; cut at the first that has been retracted, since the later ones were reached through it
@@ -1186,7 +1187,7 @@ record without one carries **no key**, not a null.
 
 Citation marks are `[^source-id]` or `[^source-id locator]` and must name a
 source in the record's own `sources[]` (rule 23); links by id must resolve to
-a record of the kind they name (rule 23). The spine does not carry `body` —
+a record of the kind they name (rule 23). The index does not carry `body` —
 it carries the refs and not a word of the prose, as it never carried
 `summary` — and `data/index/review-<hash>.json` carries only `entry: true`,
 so the dashboard can say which records have one.
@@ -1231,9 +1232,10 @@ the import has not touched carries none of the keys.
 (rule 21), because the code becomes a hostname in the link the card offers.
 `sitelinks` **feeds nothing** — not `prominence`, not `weight`, not the map,
 not the search — and is stored because the editorial decision it is evidence
-for has not been taken. The spine carries `wikidata` (rule 21's uniqueness
-has to hold against the whole atlas) and `wikipedia` (the card offers the
-link without a fetch); `sitelinks` stays out of it.
+for has not been taken. An attribute shard carries `wikidata` (rule 21's
+uniqueness has to hold against the whole atlas, which is why the two writer
+pages hold **every** shard) and `wikipedia` (the card offers the link without a
+fetch); `sitelinks` stays out of it.
 
 ### Event ●
 
@@ -1467,7 +1469,7 @@ and the decision waits for that evidence.
   is argued from evidence, and a bare type between two ids would be an
   assertion with nothing behind it.
 - `note` is optional, short, and written by a person. It is carried in the
-  spine with the relation, so an actor's card draws every relation it
+  index with the relation, so an actor's card draws every relation it
   stands in without fetching a record each.
 - A relation has **no card of its own**. It is read on the actor card at
   either end, grouped by type and by direction: "Regime of Portugal,
@@ -1671,19 +1673,21 @@ cites this book" and let a reviewer break every record that rests on it.
 
 `manifest.json` — never cached — lists the index's **generation**, counts
 (events, edges, sources, actors, presences, regions), the hashed names of the
-spine, the presence index, the search shard, the citer directory and the
-review and sources indexes (all served `immutable`), the set of `roles` in
-use, land files with their epochs, and the presence shards with their year
-ranges. The generation is `manifest.schema` and it goes up by one in every run
-that changes the index's shape — 3 since I2, and 2 since I1 — and the graph
-file carries the same number rather than one of its own, because two numbers for one artifact
-is two things to forget to bump. `src/data.js` **refuses a generation it does
-not know**, with the number it found and the number it expected: a manifest
-from one generation beside a page from another is a half-applied deploy, and
-reading it as though it were the shape the page expects would be silent and
-wrong. The guard is `assertGeneration`, called by `loadAtlas`, `loadSpine`,
-`loadSources` and `review.html` — the places a file has just been fetched —
-and never by `createAtlas`, which is handed pieces rather than files.
+core, the attribute shards, the presence index, the search shard, the citer
+directory and the review and sources indexes (all served `immutable`), the set
+of `roles` in use, land files with their epochs, and the presence shards with
+their year ranges. The generation is `manifest.schema` and it goes up by one in
+every run that changes the index's shape — **5 since I4b**, which stopped
+writing the whole-corpus file; 4 since I3, 3 since I2, 2 since I1 — and the
+graph file carries the same number rather than one of its own, because two
+numbers for one artifact is two things to forget to bump. `src/data.js`
+**refuses a generation it does not know**, with the number it found and the
+number it expected: a manifest from one generation beside a page from another
+is a half-applied deploy, and reading it as though it were the shape the page
+expects would be silent and wrong. The guard is `assertGeneration`, called by
+`loadAtlas`, `loadCore`, `loadSources`, `loadNarratives` and `review.html` —
+the places a file has just been fetched — and never by `createAtlas`, which is
+handed pieces rather than files.
 
 It also carries **`regionBoxes`**, one `[minLon, minLat, maxLon, maxLat]` per
 lane, rounded to six decimals. A placeless event answers "am I in view" with
@@ -1704,15 +1708,17 @@ meant to be: one is what people wrote, the other what the vocabulary allows.
 And it carries the two joins the offices need (M30a-3): **`officesByEvent`**,
 event id → the ids of the tenures whose holder the event names and which were
 running when it began, and **`tenuresByOffice`**, office id → its tenures in
-the order they were held. Both are derived from records the spine already
+the order they were held. Both are derived from records the index already
 carries whole; they are here so that `lanes.js` is a lookup in M33 rather than
 a scan of every tenure per event. The presence index carries every presence **without its coordinates**, so
 an actor's territory over time is a list the panel draws without fetching an
 outline; the outlines are fetched one shard at a time, by year, and cached,
-so scrubbing the slider inside a period costs nothing. The spine is always loaded whole because
+so scrubbing the slider inside a period costs nothing. The core is always loaded whole because
 consequences, ancestors and convergence need the whole graph; loading a
 window would make convergence return a subset and present it as complete —
-exactly the determinism the query exists to prevent. Record text
+exactly the determinism the query exists to prevent. What the core drops is
+what a card, a label or a strip reads, and that arrives a century at a time
+behind the picture. Record text
 (`summary`, `explanation`, `dispute`) is fetched on demand from the record
 file, **as `<id>.json?v=<revised>`** since H3b: an index file is named by a
 hash and served `immutable`, but a record file is served under its own name
@@ -1747,7 +1753,7 @@ run the browser's half of the validator need the list, because rule 17 and the
 universe when the file lands, and `contribute.html`, which already waits for
 the whole graph before it draws a field, waits for this beside it.
 
-Every active event in the spine also carries **`weight`**: the number of active edges
+Every active event in the core also carries **`weight`**: the number of active edges
 touching it, in and out, plus the number of actors it names. It is derived,
 never written on a record, and it is **not an editorial judgement** — it is
 how much of the graph the record already holds. The map uses it to pick
@@ -1774,31 +1780,40 @@ and therefore nearly every event. A node inside a `parent` cycle keeps its own
 weight and nothing more; such a cycle is rule 24's error and never reaches a
 committed index.
 
-#### The spine, the search shard and the citers
+#### The core, the attribute shards, the search shard and the citers
 
-These files are the whole of the index a page reads. H3a-1 emitted them
+These files are the whole of the index a page reads. H3a-1 emitted the spine
 beside the old `topology-<hash>.json`, which carried the same graph unpicked;
 the pages moved onto the spine one at a time in H3b and **H3c stopped writing
-the topology out**. It is still built — in memory, by `buildTopology`, on
-every index run — because the spine is a projection of it and the validator's
-rules are checked against it; no file holds it.
+the topology out**. I3 split the spine into a core and attribute shards beside
+it and I4 moved the pages over, one per commit; **I4b stopped writing the spine
+out**, which is the same sequence a second time.
+
+Both are still built — the topology in memory by `buildTopology` on every index
+run, the whole-corpus projection by `buildSpine` over it — because the core and
+the shards are a projection of the first and a partition of the second, the
+validator's rules are checked against the first, and the prerendered pages are
+rendered out of the second so that their byte-identity is a check on the whole
+of it. No file holds either.
 
 | File | Read by | Carries |
 |---|---|---|
-| `spine-<hash>.json` | every page, whole | every record as a **positional row** over the file's own `ids` table, with the closed vocabularies as integers and the columns named in the file: `id`, `status`, `wikidata`, `wikipedia` and the per-kind slots below. `kind` is the list the row is in; `aliases` and `supersededBy` are the `merges` list |
+| `core-<hash>.json` | every page but `sources.html`, whole | the graph and what a mark, a bar and a lane need: every record as a **positional row** over the file's own `ids` table, with the closed vocabularies as integers and the columns named in the file. `kind` is the list the row is in; `aliases` and `supersededBy` are the `merges` list |
+| `attributes-<key>-<hash>.json` | the window, an open card's centuries, and the whole corpus on the two writer pages | what a card, a label or a strip reads — the titles, the names, the roles, the counts, the record's own numbering of a date — a century a file, and never waited for |
 | `search-<hash>.json` | the search box, contribute, review | per active record: `id`, `kind`, `label`, `detail`, `terms` (folded), `variants`, `weight`, `when`, `status`; an event also carries `lead`, the folded first sentence of its summary |
 | `explanations-<from>-<to>-<hash>.json` | whatever reads a path — the Why mode (M35), a narrative writer | `{ from, to, explanations: { <edge id>: text } }`, a century a file, filed by the year the link's **cause** begins in |
 | `citers-<hash>/<source-id>.json` | the source card, a source lens, `retractionPlan` | the rows that cite that one source |
 | `sources-<hash>.json` | `sources.html`, the source card | every bibliographic field and `citationCount`, and no citer rows |
-| `core-<hash>.json` | nothing yet; every page after I4 | the graph and what the three views draw: the same rows over the same id table, with the columns below |
-| `attributes-<key>-<hash>.json` | nothing yet; the window after I4 | what a card, a label or a strip reads, a century a file |
+| `presences-<hash>.json` | the territory layer, the actor card, the two writer pages | every presence without its coordinates, with an id table and a vocabulary of its own |
 
 The slots each kind carries, which since I2 is one table — `SPINE_COLUMNS` in
-`src/spine.js` — read forwards by `buildSpine` and backwards by
-`topologyFromSpine`. **A tenth kind is a row in that table and nothing else**,
-which is what the third of the owner's considerations asks for; until I2 it was
-nine hand-written object literals in `validate/core.js` and a hand-written
-inverse in `data.js`, and a tenth kind meant writing both again.
+`src/spine.js`, of which `CORE_COLUMNS` and `ATTRIBUTE_COLUMNS` are one
+partition — read forwards by `buildSpine`, `buildCore` and
+`buildAttributeShards` and backwards by one decoder. **A tenth kind is a row in
+that table and nothing else**, which is what the third of the owner's
+considerations asks for; until I2 it was nine hand-written object literals in
+`validate/core.js` and a hand-written inverse in `data.js`, and a tenth kind
+meant writing both again.
 
 | Kind | And |
 |---|---|
@@ -1833,7 +1848,7 @@ whatever its kind, and 1,703 of the 1,720 on the real data carry `[]` and
 such an edge was written as a whole object beside the tuples, and the loader had
 to take both shapes.
 
-Four things the spine does **not** do. It never reduces `when` to a pair of
+Four things the projection does **not** do. It never reduces `when` to a pair of
 years: fourteen readers want the object, two of them validator rules that run
 in the browser, and astronomical years are for arithmetic — `formatYear`
 takes historians' years and would print 1 BCE as "0". It carries no
@@ -1846,15 +1861,14 @@ and a selected event are all unwindowed — so the split cost four cards and
 bought nothing. The mechanism is reserved here for a per-event field that is
 genuinely large, against a measurement.
 
-#### The core and the attribute shards, beside the spine since I3
+#### The core and the attribute shards
 
-The spine is **split in two**, and both halves are written beside it while
-nothing reads either: `core-<hash>.json`, which every page will load whole, and
-`attributes-<key>-<hash>.json`, one per century, fetched for the window and
-never waited for (`docs/index2-plan.md`, D4). I3 emits them and prints the
-bytes; **I4 is what moves the pages over**, one per commit, and only if those
-bytes say the split pays — which is H3a's own lesson, where period shards were
-built first and measured after and bought nothing (D5).
+The whole-corpus projection is **split in two**: `core-<hash>.json`, which every
+page loads whole, and `attributes-<key>-<hash>.json`, one per century, fetched
+for the window and never waited for (`docs/index2-plan.md`, D4). I3 wrote them
+beside the spine and printed the bytes; I4 moved the pages over, one per commit,
+and I4b stopped writing the spine — which is H3a's own lesson applied twice,
+where a split is measured before it is spent (D5).
 
 The line is drawn once, as two column lists beside `SPINE_COLUMNS` in
 `src/spine.js`, and `tests/spine.test.mjs` holds them to being one partition of
@@ -1911,8 +1925,9 @@ while a card, an entry page and a search row show the "loading" line the source
 card shows for its citers. `atlas.attributesLoaded(id)` is what decides, and it
 is `true` on every atlas built from the spine (index2 review, finding 21).
 
-**The loader**: `loadCore()` caches the core as `loadSpine` caches the spine;
-`loadAttributes(shard)` holds one request in flight and drops a rejection;
+**The loader**: `loadCore()` caches the core under its hash and reads the
+manifest `no-store` every time; `loadAttributes(shard)` holds one request in
+flight and drops a rejection;
 `attributesFor(year)` and `attributeShardsIn(window)` say which shards a picture
 needs; and an LRU holds **four unpinned shards**, so a session that has scrubbed
 across six centuries does not hold six centuries. A shard an open card, an entry
@@ -1962,31 +1977,34 @@ content — its `revised` and the fields that changed — and never by the commi
 that carried it. The names still have to match, so a record added or retired
 without a rebuild is caught.
 
-**The loader reads it, since H3a-2.** `loadSpine()` fetches the manifest
-`no-store` and the spine once — it is named by its own hash and served
-`immutable`, so a second call costs a manifest and no more, and a rejection
-is dropped rather than kept as the answer, exactly as `loadGeometry` does
-with a territory shard. `createAtlasFromSpine()` expands it into
-the atlas `createAtlas()` assembles: the edge tuple becomes an object again
-with its id synthesised as `from--to--type`, and `graph.js`, `horizon.js`,
-`lens.js` and the views cannot tell what it was read out of. That is what
-made H3b a switch rather than a rewrite. While both files existed it was
-held to by running the event, actor, place and source card suites, the entry
-page, the horizon and the graph queries once over each atlas; those suites
-run once now, and what the projection is still measured against is
-`buildTopology`'s own output, built in memory from the records
-(`tests/spine-loader.test.mjs`).
+**The loader reads it.** `loadCore()` fetches the manifest `no-store` and the
+core once — it is named by its own hash and served `immutable`, so a second call
+costs a manifest and no more, and a rejection is dropped rather than kept as the
+answer, exactly as `loadGeometry` does with a territory shard.
+`createAtlasFromCore()` expands it into the atlas `createAtlas()` assembles: the
+edge tuple becomes an object again with its id synthesised as `from--to--type`,
+and `graph.js`, `horizon.js`, `lens.js` and the views cannot tell what it was
+read out of. That is what made H3b and I4 switches rather than rewrites. What
+the projection is measured against is `buildTopology`'s own output, built in
+memory from the records (`tests/spine-loader.test.mjs`), and what the two halves
+are measured against is the projection itself
+(`tests/core-loader.test.mjs`): the core plus every shard has the same ids in
+the same order and every record deep-equal, over both datasets.
 
-`loadAtlas()` does the fetching — the manifest `no-store`, the spine, the
-sources index, the coastlines, the palette, the region boxes — and since
-H3c there is no second graph file for it to be pointed at.
-`tests/spine-pages.test.mjs` asserts against a real browser's own record of
-its requests how many times each page asks for the spine: once for every
-page that needs the graph, and **none** for `sources.html`, which would
-otherwise fetch 817 KB to list books.
+`loadAtlas()` does the fetching — the manifest `no-store`, the core, the sources
+index, the coastlines, the palette, the region boxes — and since I4b there is no
+second graph file for it to be pointed at. `expandCore()` is the same thing for
+a caller that wants the lists rather than an atlas: the dashboard and the
+narratives page, where `atlas.relations` and `atlas.tenures` would be the
+*active* ones and a reviewer's universe is not that.
+`tests/spine-pages.test.mjs` asserts against a real browser's own record of its
+requests how many times each page asks for the core: once for every page that
+needs the graph, and **none** for `sources.html`, which would otherwise fetch a
+graph to list books, nor for `narratives.html`, whose cards the build wrote into
+the file.
 
-One thing an atlas from the spine cannot answer, because the spine does not
-carry it: which records cite a given source. `retractionPlan` takes them
+One thing an atlas from the core cannot answer, because no graph file carries
+it: which records cite a given source. `retractionPlan` takes them
 pre-fetched instead — `citers`, the one citer file the dashboard already
 holds for the source in hand — and reads `kind` and `id` off the rows and
 nothing else.
@@ -2061,7 +2079,7 @@ ordered array of `{ ref, text }` where `ref` is an event id or an edge id and
 `CONTEXT.md`: one person's account of records that are already here, changing
 none of them, and where two disagree both stand.
 
-The spine carries the titles, the summary, the authors and the refs, and
+The index carries the titles, the summary, the authors and the refs, and
 none of the prose — the list of narratives is one fetch and a step's words come
 with the record when that step is read. The other direction, which narratives
 pass through a record, is built in `data.js`: an event is walked when a step
@@ -2140,7 +2158,7 @@ least 40 pixels; a link inside a sentence keeps the line it is set in.
 | `lanes.js` | What a lane is, in all four groupings: which lanes the window offers, which six of them are drawn, which single lane each event belongs in and why, and — with no grouping — the packing of the bars into rows that do not overlap. Pure. | The DOM, the state, and which of the two pictures is asking. |
 | `lens.js` | The set of events a focus keeps — an actor's, a place's, a source's — and what the header calls it. Pure. | The DOM, and that a narrative suspends it, which is one line of state it is given. |
 | `grouping.js` | The picker beside Map \| Graph: the grouping as a select, the lanes as checkboxes with up/down and a filter box, keyboard first; and the badge that says which lens is on. Writes `group`, `lanes` and `focus` and nothing else. | What a lane is, and how anything is drawn. |
-| `data.js` | Reads the manifest, loads the spine whole through `loadAtlas` or `loadSpine`, expands it into the atlas with `createAtlasFromSpine`, fetches record text on demand, resolves aliases and `supersededBy` for every kind, builds adjacency — of events through edges and of actors through relations, each relation listed from both ends — the events of each actor, and each actor's presences and dependencies; loads and caches one geometry shard per year. | How things are drawn. |
+| `data.js` | Reads the manifest, loads the core whole through `loadAtlas` or `loadCore`, expands it into the atlas with `createAtlasFromCore` (or into the lists with `expandCore`), fills each attribute shard into the records in place as it lands and holds four unpinned ones, fetches record text on demand, resolves aliases and `supersededBy` for every kind, builds adjacency — of events through edges and of actors through relations, each relation listed from both ends — the events of each actor, and each actor's presences and dependencies; loads and caches one geometry shard per year. | How things are drawn. |
 | `graph.js` | Consequences, ancestors, convergence, the tree of shortest paths outward and what an event led to by a year. Pure functions over adjacency; results ordered by type, then confidence, or by path length then year. | The DOM. |
 | `horizon.js` | Puts the traversal and the horizon year together: the list the panel draws and the `Map<id, depth>` the map, the graph view and the timeline fade by. Empty unless a year was chosen. | The DOM, and which view is asking. |
 | `citation.js` | One source → the citation as a line, its identifiers as link targets, the order a bibliography sorts in, the grouping of its citers. Escapes nothing: the caller does. | Where it will be drawn. |
@@ -2164,8 +2182,8 @@ least 40 pixels; a link inside a sentence keeps the line it is set in.
 | `panel/office.js` | The office card — the actor the post belongs to, its category, and every turn at it in start order, each row opening the person who held it — and the tenure strip the actor card draws from the same list: holders as bars over the actor's own years, merged where they would overlap, a bar opening the holder. An office cites nothing, and the card says why. | Who held what: it is given the tenures. |
 | `panel/` | The shell plus one file per card. Every card is a head, a summary and collapsible sections with counts: consequences, causes, the other branches, the horizon inside the consequences, supporting and dissenting citations shown apart with their verification marks, confidence and status shown as such; an event's actors as chips in the head, the walked path as a breadcrumb above it, a source's card with everything that cites it, an actor's card with its relations grouped by type and direction and one tenure strip per office it owns, an office's card with every turn at it in order, a place's card, and the members of a cluster. | Traversal logic. |
 | `panel/sections.js` | What a collapsible section is, for every card: the header with its count and its dispute mark, which one a card opens on given the arrival and the reader's remembered choice, and the toggle that closes the others. The choice is `localStorage`, never the URL. Pure but for the toggle. | What is inside a section, and which card is asking. |
-| `sources/` | `sources.html`: the manifest and the sources index, and the bibliography as markup. Nothing else — the spine is twenty-eight times the size and lists no books. | The spine, the map, the panel. |
-| `narratives/` | `narratives.html`: a card per account — title, narrator, the years it is about, how many steps, its own summary — grouped by the centuries it crosses, so two accounts of the same years sit side by side. A period is the years of the records walked and not the `window` beside them; a title opens the account at its first step. It needs the spine, because those years live there. | The map, the panel, and how a narrative is read once it is opened. |
+| `sources/` | `sources.html`: the manifest and the sources index, and the bibliography as markup. Nothing else — the graph is far larger and lists no books. | The graph, the map, the panel. |
+| `narratives/` | `narratives.html`: a card per account — title, narrator, the years it is about, how many steps, its own summary — grouped by the centuries it crosses, so two accounts of the same years sit side by side. A period is the years of the records walked and not the `window` beside them; a title opens the account at its first step. It needs the core, because those years live there, and the shards its walks cross, because the titles do. | The map, the panel, and how a narrative is read once it is opened. |
 | `validate/core.js` | `validate(records, topology)`: schema subset + cross-record rules, pure. Needs the topology to check references, so the form loads it too. | `fs`. |
 | `contribute/*` | Form → bundle → validation → clipboard + issue. | GitHub, beyond one URL in `submit.js`. |
 | `contribute/reorder.js` | Moving one row of an ordered list, in the form and in the review editor alike: the two controls, Alt with an arrow from anywhere in the row, and the ends that have nowhere to go. Moves the row rather than redrawing the list, so nothing half typed is lost. | Which list it is, and what a step means. |
@@ -2408,10 +2426,10 @@ no check at all rather than an empty closed set: a fork with no
 | Relations between actors ● | built in M11: `data/relations/`, `schema/v1/relation.json`, rule 19, the spine's `relations`, the actor card's groups, the form and the tools | the six types are closed and a missing one is reported rather than added; a relation has no card and no URL of its own, so giving it one later is a card file and a state field and nothing else |
 | Narratives ● | built in M12: `data/narratives/`, `schema/v1/narrative.json`, rule 20, the spine's `narratives`, `narrative.js` and `narrative-mode.js`, the reading card, the form and the tools | steps reference ids that never change and tombstones keep old ids resolving; reading is a mode, so a second mode later is a wrapper beside this one rather than a fourth dimension of the state |
 | Other languages | `data/i18n/`, `src/i18n/` | overlay design with `baseRevised` |
-| Search ● | built in M6: `search.js`, `search-box.js`, a box in the header; the shard `search-<hash>.json` in H3a-1 | the shard was reserved through M6 on the grounds that the graph file already carried every title and a few hundred of them is a scan. It is emitted since H3a-1 — folded once at build time rather than on every page load — and fetched beside the spine, never waited for |
+| Search ● | built in M6: `search.js`, `search-box.js`, a box in the header; the shard `search-<hash>.json` in H3a-1 | the shard was reserved through M6 on the grounds that the graph file already carried every title and a few hundred of them is a scan. It is emitted since H3a-1 — folded once at build time rather than on every page load — and fetched beside the core, never waited for |
 | Another import's mapping | one file under `data/imports/`, validated by the same `v1/import-map.json` | keyed by the source's own entity code; splits by date; the schema is tool-side and the browser never fetches it |
 | Contributors without GitHub | `submit.js` target only | bundle format is the wire format |
-| Tens of thousands of records | render only the visible window; the spine stays whole | hashed, immutable index files; manifest uncached |
+| Tens of thousands of records | render only the visible window; the core stays whole | hashed, immutable index files; manifest uncached |
 | Source pages and the bibliography ● | built in M10: `citations` and `citationCount` in the sources index, `?source=`, `sources.html` | the citers are the index's, so a narrative kind joins the grouping by appearing in `CITER_ORDER` and nothing else changes |
 | The horizon ● | built in M10: `shortestPaths`/`pathTo`/`reachableBy` in `graph.js`, `horizon.js`, `?horizon=` | the year is a bound on `start.min`, so a bucketed deep-time scale changes nothing here; the reachable set is a `Map<id, depth>` and a view that wants five bands instead of three changes one function |
 | The lens and the grouping ● | built in M14: `src/lanes.js`, `src/lens.js`, `src/grouping.js`, `focus`/`group`/`lanes` in the state, the bands of `graph-view/layout.js` | a fifth grouping is one case in `lanesFor` and one option in the picker; the cap and the "Other" lane are one constant each; `region` returning as the default is one value in `defaultState()` |
@@ -2440,51 +2458,87 @@ at 100,000 the validator takes half an hour. The graph queries themselves —
 consequences, convergence, horizon — are fine at every size; the cost is in
 loading and drawing.
 
-**What `data/index/` holds after H3c**, measured on this dataset (329 events
-of which 137 active, 161 edges, 412 actors, 710 presences, 34 sources), raw
-and gzipped as Pages serves it:
+**What `data/index/` holds after I4b**, measured on 8 September 2026 on this
+dataset (2,044 records: 421 events of which 210 active, 219 edges, 488 actors,
+26 places, 51 relations, 11 offices, 83 tenures, 1 narrative, 710 presences, 34
+sources; 5 lanes), raw and gzipped as Pages serves it. The run-by-run account of how it
+got here — I1's presences, I2's rows, I3's split, I4's switch — is in the four
+blocks below; this is the position.
 
-| File | Raw | Gzipped | First paint |
+| File | Raw | Gzipped | Before it is drawn |
 |---|---|---|---|
-| `manifest.json` | 6.1 KB | 1.9 KB | every page, `no-store` |
-| `spine-<hash>.json` | 817.8 KB | 61.4 KB | every page but `sources.html` |
-| `sources-<hash>.json` | 29.4 KB | 3.7 KB | every page |
-| `search-<hash>.json` | 217.7 KB | 22.4 KB | no — fetched beside, never waited for |
-| `citers-<hash>/`, 33 files | 255.7 KB | 26.4 KB | no — one file, when a source is opened |
-| `review-<hash>.json`, the summary | 0.8 KB | 0.3 KB | `review.html` only |
-| `review-<kind>-<hash>.json`, 7 files | 334.9 KB | 23.3 KB | `review.html`, the kind it is showing |
-| `history/`, 1,006 files | 345.7 KB | 178.7 KB | no — one file, when a record is opened |
+| `manifest.json` | 26,639 | | every page, `no-store` |
+| `core-<hash>.json` | **63,223** | **17,824** | every page but `sources.html`, whole |
+| `attributes-<key>-<hash>.json`, 5 files | 190,858 | 48,828 | **no** — the window's, a card's centuries, and every one of them on the two writer pages |
+| — 1800–1899 · 1900–1999 · 2000–2099 | 29,673 · 121,551 · 32,510 | 7,259 · 30,456 · 8,371 | |
+| — `null` · `place` | 2,442 · 4,682 | 882 · 1,636 | |
+| `sources-<hash>.json` | 33,681 | | every page |
+| `presences-<hash>.json` | 137,693 | | `contribute.html` only; the territory layer and the actor card fetch it behind the draw |
+| `search-<hash>.json` | 223,317 | 44,593 | no — fetched beside, never waited for |
+| `review-<hash>.json`, the summary | 1,061 | | `review.html` only |
+| `citers-<hash>/` | | | no — one file, when a source is opened |
+| `explanations-<from>-<to>-<hash>.json`, 3 files | | | no — in bulk, by whatever reads a path |
+| `history/` | | | no — one file, when a record is opened |
 
-The two H6b added are counted differently from the rest of the table, and
-should be. The seven shards are 334.9 KB against the single file's 258.9 KB
-— seven envelopes instead of one, and three more fields per digest — but
-`review.html` fetches the summary and the kind it is showing, which is 0.8 KB
-plus one shard rather than all of it, and at twenty thousand drafts that is
-the difference between a megabyte and eleven. The histories are gzipped one
-file at a time here, because that is how they are served: 1,006 small files
-compress far worse each than they would together, and none of them is on the
-path to anything being drawn.
+**What each page fetches before it draws**, which is the promise
+`tests/spine-pages.test.mjs` holds against a real browser's own record of its
+requests. Index bytes only; the coastlines and the palette are counted
+separately because the base map replaces them (M36–M38).
 
-So `index.html` costs **853.2 KB raw and 67.0 KB over the wire**, and
-`sources.html` 35.4 KB and 5.6 KB. Against the 1,240.5 KB / 90.0 KB it cost
-before H3b that is 1.45× less raw and 1.34× less gzipped; H3c itself moved
-first paint by the 52 bytes the manifest lost, and took a 950.9 KB file out
-of the repository (19.1 KB more from the fixtures).
+| | index bytes | and then |
+|---|---|---|
+| `index.html` | manifest + core + sources = **123,543** (+ land 125,938 and palette 4,071: **253,552** whole) | its window's shards, then the rest in year order, and the search shard |
+| `entry.html` | + the record's own century = **153,216 to 245,094** | the centuries its own lists span, one shard each |
+| `contribute.html` | + the presences = **261,236** | every shard, held, and the search shard |
+| `review.html` | + the queue's summary = **124,604** | every shard, held, the search shard, and the queue's own digests a kind at a time |
+| `sources.html` | the manifest and the sources index, **60,320** | nothing |
+| `narratives.html` | **nothing at all** — the cards are in the file | the core and the shards its walks cross, and only for `?fixtures=1` |
 
-Three things that should be said rather than dressed up. The plan projected
-a 522 KB spine and a 2.5× improvement; the measured spine is 817.8 KB.
-Almost all of the saving over the wire was the citer rows leaving the
-sources index (328.8 KB → 29.4 KB), not the spine. And **the wall this
-project actually runs into barely moved**: the file every page loads
-*whole* went from 950.9 KB to 817.8 KB, 1.16×, because convergence cannot
-be answered from a window and so the graph is still held whole in memory.
-Per record the spine costs 694 B per active event, 368 B per tombstone,
-342 B per actor, 539 B per presence and 124 B per edge tuple. The next real
-lever is the presences — 373.8 KB, 47 % of the spine, and nothing needs
-them until the territory layer draws; whether they leave the whole-corpus
-set for a per-period presence index is H4a's question. The `citers/`
-directory is not first paint at all: `cshapes-2-0` alone is 127.3 KB of the
-255.7 KB, and it is fetched only when a reader opens that source.
+At 10⁴ — the bench atlas of 20,000 events of which 8,000 tombstones, 39,996
+edges, 500 actors, 1,750 places, 200 sources and no presences, built with
+`node tools/build-index.mjs --data <dir>`:
+
+| | raw | gzipped |
+|---|---|---|
+| `core-<hash>.json` | **2,016,667** | **336,979** |
+| the eight attribute shards | 3,260,536 | 339,621 |
+| — a century of them | ~501,700 each | ~51,700 each |
+| — `place` | 191,195 | 23,496 |
+| `search-<hash>.json` | 2,753,125 | 125,508 |
+| `sources-<hash>.json` | 142,757 | |
+| `manifest.json` | 6,105 | |
+| the whole-corpus projection, unwritten | 3,821,229 | 434,746 |
+
+| at 10⁴ | index bytes before it draws | the health review measured | |
+|---|---|---|---|
+| `index.html` | **2,165,529** | 16.9 MB | 7.8× |
+| `entry.html` | **2,224,724 to 2,667,366** | 16.1 MB | 6.0–7.2× |
+| `contribute.html` | **2,165,529** | 20.6 MB | 9.5× |
+| `review.html` | **2,165,595** | 20.9 MB | 9.6× |
+
+**The 2.0 MB line, honestly.** The brief asks that each of those four be under
+2.0 MB of index before it draws. Three are **2,165,529 B** and the fourth is
+between that and 2,667,366 B. Read as 1,048,576 bytes to the megabyte the three
+miss by 3.3 %; read as 1,000,000 they miss by 8.3 %; `entry.html` misses by
+between 6 % and 33 % depending on which century its record is in. The line is
+missed, and the improvement it was asked to produce is 6× to 9.6×, from pages
+that parsed 16.9 to 20.9 MB. The core alone is 2,016,667 B — **93 % of the
+figure** — and the manifest and the sources index are the rest, so nothing but
+a smaller core would close the gap. This is I3's own 2.9 % gzipped miss,
+measured and reported then and arriving here where it was always going to
+arrive; what changed in between is that the whole page and not the file alone
+is now being held to a line.
+
+**At 10⁵**, projected linearly from the measurement above on the same generator
+(100,000 events at the same density, ~200,000 edges): the core is **~10.1 MB
+raw and ~1.68 MB gzipped**, against the plan's ≤ 11 MB and ≤ 1.8 MB — met, and
+met with less room than the plan expected. The attribute payload is ~16.3 MB
+over seven century shards of ~2.3 MB each, one at a time and never waited for,
+under an LRU of four; the search shard is ~13.8 MB and is the largest single
+file in the artifact. The projection is a **floor**: real ids are longer than
+the generator's, and the id table is 467,251 B of the core at 10⁴ and scales
+with the ids and not with the graph. Past 10⁵ the lever is outside "plain JSON,
+no build step" and is a new decision (index2-plan, A3).
 
 **And what I1 did about the last of those**, measured on this dataset as it
 stands after M32b (329 events of which 146 active, 161 edges, 445 actors, 81
@@ -2556,9 +2610,10 @@ the brief's other rule; the run reports rather than trims. Reducing those bytes
 means deciding which of them a first paint needs, and that decision is I3's —
 the core and the attribute shards — which is where the plan puts it.
 
-**And what I3 measured**, which is the number I4 is gated on. The split is
-written beside the spine and read by nothing, so nothing here is what a page
-pays today; it is what a page *would* pay after I4. On the real corpus
+**And what I3 measured**, which is the number I4 was gated on. The split was
+written beside the spine and read by nothing at the time, so this was what a
+page *would* pay after I4; the block at the top of this section is what one
+pays now. On the real corpus
 (1,839 records; 329 events, 161 edges, 445 actors, 26 places, 43 relations, 9
 offices, 81 tenures, 1 narrative, 710 presences, 34 sources):
 
@@ -2600,6 +2655,44 @@ table is 467,251 B of it and, as §0 says, is the floor. What the split buys is
 not in doubt — 1.45× off the real first paint and 1.83× at 10⁴, with the
 titles, the roles and the notes arriving a century at a time — but the number
 I4 was gated on is not met, and saying so is what this run is for.
+
+**And what I4 spent it on.** The pages moved over one per commit — the atlas and
+`entry.html` in I4a, the two writer pages and the narratives page in I4b — and
+the whole-corpus file stopped being written. On the real corpus, as it stands
+after the world merge (2,044 records against the 1,839 I3 measured):
+
+| | before I4 | after I4 | |
+|---|---|---|---|
+| the graph file every page loads whole, raw | 194,796 | **63,223** | 3.08× |
+| the same, gzipped | 46,977 | **17,824** | 2.64× |
+| `index.html`'s whole first paint, raw | 385,171 | **253,552** | 1.52× |
+| `entry.html` before it draws | 255,162 | **153,216–245,094** | 1.04–1.67× |
+| `contribute.html` before it draws | 616,172 | **261,236** | 2.36× |
+| `review.html` before it draws | 479,540 | **124,604** | 3.85× |
+| `sources.html`, which never read the graph | 60,366 | **60,320** | — |
+
+The two writer pages move the most because they were awaiting the search shard
+as well — 223,317 B that nothing they draw needs. `entry.html` moves the least
+and sometimes barely at all: it waits for the core *and* a century, and on this
+corpus the 20th-century shard is 121,551 B, nearly twice the core.
+
+At 10⁴ the four pages the health review measured at 16.9, 16.1, 20.6 and
+20.9 MB fetch 2.17 MB, 2.22–2.67 MB, 2.17 MB and 2.17 MB. The whole-corpus file
+is not in the artifact at all: `manifest.schema` is 5, `writeIndex` removes the
+one an earlier build left, and `buildSpine` survives in `src/validate/core.js`
+as the definition the two halves are asserted to add up to and as what the
+prerendered pages are rendered from, which is why those pages came out
+byte-identical through the whole cycle.
+
+Two costs, stated rather than dressed up. **A bar, a mark and a node are drawn
+before their title arrives** and are labelled when it does — one frame at the
+whole extent, the discipline the territories, the citers and the explanations
+already followed, and the owner's own answer to question 6. And **the two writer
+pages fetch more than they used to**, not less: they hold the core *and* every
+shard, 254,081 B against the 194,796 B of the file they replaced, because rule
+21 and `findSimilar` read the whole atlas. What they no longer do is make the
+contributor wait for it — the form is on the screen out of the core, and it
+says it is still loading the corpus rather than passing judgement on half of it.
 
 ## Milestones
 

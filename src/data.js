@@ -796,16 +796,22 @@ export function createAtlas({
   };
 }
 
-// ─── The spine ─────────────────────────────────────────────────────────────
+// ─── The whole-corpus projection ────────────────────────────────────────────
 //
-// The same atlas out of the projection the index emits beside the topology
-// (ARCHITECTURE.md, "The spine, the search shard and the citers"). Nothing
-// above changes: the spine is expanded back into the shape createAtlas reads
-// and hands it the same sources index, so `graph.js`, `horizon.js`,
-// `lens.js` and the views cannot tell which file the atlas was built from.
-// That is the whole point — H3b moves the pages over one at a time, and a
-// page that behaved differently on the spine would make that migration a
-// rewrite instead of a switch.
+// The same atlas out of the projection `buildSpine` takes of the topology
+// (ARCHITECTURE.md, "The core, the attribute shards, the search shard and the
+// citers"). Nothing above changes: it is expanded back into the shape
+// createAtlas reads and handed the same sources index, so `graph.js`,
+// `horizon.js`, `lens.js` and the views cannot tell which file the atlas was
+// built from. That is the whole point — H3b and I4 moved the pages over one at
+// a time, and a page that behaved differently would have made either migration
+// a rewrite instead of a switch.
+//
+// **No page reads this since I4b and no file holds it.** It stays because the
+// build assembles the prerendered pages out of it, which is what makes their
+// byte-identity a check on the whole projection rather than on half of it
+// (i4-brief, A5), and because `CORE_COLUMNS ∪ ATTRIBUTE_COLUMNS =
+// SPINE_COLUMNS` is asserted against it.
 //
 // The spine differs from the topology in exactly three ways: an edge is a
 // tuple, `regionMethod` and `presenceType` are gone because nothing draws
