@@ -13270,7 +13270,7 @@
     }
   ],
   "schema": 1,
-  "total": 1186,
+  "total": 1191,
   "warnings": [
     {
       "id": "altice-portugal",
@@ -13333,6 +13333,12 @@
       "rule": "actor-unused"
     },
     {
+      "id": "evolutionist-party",
+      "kind": "actor",
+      "message": "actor is referenced by no event and no relation, and holds no territory",
+      "rule": "actor-unused"
+    },
+    {
       "id": "farfetch",
       "kind": "actor",
       "message": "actor is referenced by no event and no relation, and holds no territory",
@@ -13363,6 +13369,12 @@
       "rule": "actor-unused"
     },
     {
+      "id": "liberal-regenerator-party",
+      "kind": "actor",
+      "message": "actor is referenced by no event and no relation, and holds no territory",
+      "rule": "actor-unused"
+    },
+    {
       "id": "livre",
       "kind": "actor",
       "message": "actor is referenced by no event and no relation, and holds no territory",
@@ -13375,6 +13387,12 @@
       "rule": "actor-unused"
     },
     {
+      "id": "national-republican-party",
+      "kind": "actor",
+      "message": "actor is referenced by no event and no relation, and holds no territory",
+      "rule": "actor-unused"
+    },
+    {
       "id": "national-syndicalists",
       "kind": "actor",
       "message": "actor is referenced by no event and no relation, and holds no territory",
@@ -13382,6 +13400,12 @@
     },
     {
       "id": "national-union",
+      "kind": "actor",
+      "message": "actor is referenced by no event and no relation, and holds no territory",
+      "rule": "actor-unused"
+    },
+    {
+      "id": "nationalist-republican-party",
       "kind": "actor",
       "message": "actor is referenced by no event and no relation, and holds no territory",
       "rule": "actor-unused"
@@ -13436,6 +13460,12 @@
     },
     {
       "id": "redes-energeticas-nacionais",
+      "kind": "actor",
+      "message": "actor is referenced by no event and no relation, and holds no territory",
+      "rule": "actor-unused"
+    },
+    {
+      "id": "republican-liberal-party",
       "kind": "actor",
       "message": "actor is referenced by no event and no relation, and holds no territory",
       "rule": "actor-unused"

@@ -2177,6 +2177,27 @@
     {
       "actorType": "institution",
       "aliases": [],
+      "id": "evolutionist-party",
+      "name": "Evolutionist Party",
+      "names": [
+        "Evolutionist Party",
+        "Partido Republicano Evolucionista"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": 1919,
+        "start": 1912
+      },
+      "wikidata": "Q1720273",
+      "wikipedia": {
+        "en": "Evolutionist Party",
+        "pt": "Partido Republicano Evolucionista"
+      }
+    },
+    {
+      "actorType": "institution",
+      "aliases": [],
       "id": "farfetch",
       "name": "Farfetch",
       "names": [
@@ -3640,6 +3661,27 @@
       }
     },
     {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "liberal-regenerator-party",
+      "name": "Liberal Regenerator Party",
+      "names": [
+        "Liberal Regenerator Party",
+        "Partido Regenerador Liberal"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": 1910,
+        "start": 1901
+      },
+      "wikidata": "Q75660",
+      "wikipedia": {
+        "en": "Liberal Regenerator Party",
+        "pt": "Partido Regenerador Liberal"
+      }
+    },
+    {
       "actorType": "polity",
       "aliases": [],
       "id": "liberia",
@@ -4406,6 +4448,29 @@
     {
       "actorType": "institution",
       "aliases": [],
+      "id": "national-republican-party",
+      "name": "National Republican Party",
+      "names": [
+        "National Republican Party",
+        "Partido Nacional Republicano",
+        "National Republican Party (Portugal)",
+        "Partido Nacional Republicano (Portugal)"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": null,
+        "start": 1918
+      },
+      "wikidata": "Q1513692",
+      "wikipedia": {
+        "en": "National Republican Party (Portugal)",
+        "pt": "Partido Nacional Republicano (Portugal)"
+      }
+    },
+    {
+      "actorType": "institution",
+      "aliases": [],
       "id": "national-syndicalists",
       "name": "National Syndicalists",
       "names": [
@@ -4445,6 +4510,28 @@
       "wikipedia": {
         "en": "National Union (Portugal)",
         "pt": "União Nacional"
+      }
+    },
+    {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "nationalist-republican-party",
+      "name": "Nationalist Republican Party",
+      "names": [
+        "Nationalist Republican Party",
+        "Partido Republicano Nacionalista",
+        "Nationalist Republican Party (Portugal)"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": 1926,
+        "start": 1923
+      },
+      "wikidata": "Q847883",
+      "wikipedia": {
+        "en": "Nationalist Republican Party (Portugal)",
+        "pt": "Partido Republicano Nacionalista"
       }
     },
     {
@@ -5635,6 +5722,28 @@
       "wikipedia": {
         "en": "India",
         "pt": "Índia"
+      }
+    },
+    {
+      "actorType": "institution",
+      "aliases": [],
+      "id": "republican-liberal-party",
+      "name": "Republican Liberal Party",
+      "names": [
+        "Republican Liberal Party",
+        "Partido Liberal Republicano",
+        "Republican Liberal Party (Portugal)"
+      ],
+      "status": "active",
+      "supersededBy": null,
+      "when": {
+        "end": 1923,
+        "start": 1919
+      },
+      "wikidata": "Q2054660",
+      "wikipedia": {
+        "en": "Republican Liberal Party (Portugal)",
+        "pt": "Partido Liberal Republicano"
       }
     },
     {

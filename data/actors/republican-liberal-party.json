@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "republican-liberal-party",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-08",
+  "revised": null,
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q2054660",
+  "sitelinks": 5,
+  "wikipedia": {
+    "en": "Republican Liberal Party (Portugal)",
+    "pt": "Partido Liberal Republicano"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2054660"
+    }
+  ],
+  "actorType": "institution",
+  "names": [
+    "Republican Liberal Party",
+    "Partido Liberal Republicano",
+    "Republican Liberal Party (Portugal)"
+  ],
+  "summary": "Wikidata item Q2054660, imported by tools/import/wikidata.mjs. The item's own description reads \"Defunct political party in Portugal\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1919,
+    "end": 1923
+  },
+  "where": null
+}

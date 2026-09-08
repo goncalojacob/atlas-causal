@@ -11942,7 +11942,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 150,
+      "citationCount": 155,
       "citations": [
         {
           "dissent": false,
@@ -12000,6 +12000,12 @@
         },
         {
           "dissent": false,
+          "id": "evolutionist-party",
+          "kind": "actor",
+          "locator": "Q1720273"
+        },
+        {
+          "dissent": false,
           "id": "farfetch",
           "kind": "actor",
           "locator": "Q18712957"
@@ -12024,6 +12030,12 @@
         },
         {
           "dissent": false,
+          "id": "liberal-regenerator-party",
+          "kind": "actor",
+          "locator": "Q75660"
+        },
+        {
+          "dissent": false,
           "id": "livre",
           "kind": "actor",
           "locator": "Q16947563"
@@ -12036,6 +12048,12 @@
         },
         {
           "dissent": false,
+          "id": "national-republican-party",
+          "kind": "actor",
+          "locator": "Q1513692"
+        },
+        {
+          "dissent": false,
           "id": "national-syndicalists",
           "kind": "actor",
           "locator": "Q2562540"
@@ -12045,6 +12063,12 @@
           "id": "national-union",
           "kind": "actor",
           "locator": "Q954010"
+        },
+        {
+          "dissent": false,
+          "id": "nationalist-republican-party",
+          "kind": "actor",
+          "locator": "Q847883"
         },
         {
           "dissent": false,
@@ -12099,6 +12123,12 @@
           "id": "redes-energeticas-nacionais",
           "kind": "actor",
           "locator": "Q1862842"
+        },
+        {
+          "dissent": false,
+          "id": "republican-liberal-party",
+          "kind": "actor",
+          "locator": "Q2054660"
         },
         {
           "dissent": false,
