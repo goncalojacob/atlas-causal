@@ -25,7 +25,11 @@ const walkOf = async (from, target = 'fixture-event-t') => walkTo(
   await atlasPromise, target, { selected: from }, { now: DAY, question: QUESTION },
 );
 
-test('a generated walk is drawn madder, step for step, as a walked chain is', { skip }, async () => {
+// A minute is far longer than either of these takes and far shorter than
+// forever: a hung page fails the test instead of stopping the suite.
+const BOUND = { skip, timeout: 60000 };
+
+test('a generated walk is drawn madder, step for step, as a walked chain is', BOUND, async () => {
   const walk = await walkOf('fixture-event-a');
   assert.equal(walk.steps.length, 3);
   await withBrowser(async (page, url) => {
@@ -54,7 +58,13 @@ test('a generated walk is drawn madder, step for step, as a walked chain is', { 
 // nothing writes a walk into the running atlas yet and nothing should: the
 // walk is set through the store, which is what M35 will do with a control of
 // its own.
-const MOUNT = (steps) => `return (async () => {
+//
+// It is raced against a timer, and every test in this file carries a timeout,
+// because `page.eval` awaits the page's promise over the protocol with no
+// bound of its own (browser.mjs): an in-page fetch that never settles would
+// hang `node --test` rather than fail it, and a suite that hangs tells nobody
+// anything. A false here is a failure with a name.
+const MOUNT = (steps) => `return Promise.race([timer(), (async () => {
   const { loadAtlas } = await import("/src/data.js");
   const { createState } = await import("/src/state.js");
   const { createPanel } = await import("/src/panel/panel.js");
@@ -72,7 +82,10 @@ const MOUNT = (steps) => `return (async () => {
   };
   store.set({});
   return true;
-})();`;
+})()]);
+function timer() {
+  return new Promise((resolve) => { setTimeout(() => resolve(false), 20000); });
+}`;
 
 // A card is drawn when the record it names has resolved, so every count here
 // waits for the redraw rather than reading the DOM the moment it asked for one.
@@ -80,13 +93,13 @@ const DRAWN = 'return document.querySelectorAll(".panel .breadcrumb").length > 0
 const SAID = 'return window.__walk.said() === 1;';
 const SILENT = 'return window.__walk.said() === 0;';
 
-test('the card says the atlas assembled the path, and each step keeps its marks', { skip }, async () => {
+test('the card says the atlas assembled the path, and each step keeps its marks', BOUND, async () => {
   const walk = await walkOf('fixture-event-g');
   assert.deepEqual([...walk.steps], ['fixture-event-g--fixture-event-t--caused'], 'a disputed step');
   await withBrowser(async (page, url) => {
     await seenIntro(page);
     await open(page, url('?fixtures=1'), 'return document.querySelector(".layout") !== null;');
-    await page.eval(MOUNT([...walk.steps]));
+    assert.equal(await page.eval(MOUNT([...walk.steps])), true, 'the panel was mounted over the fixtures');
     await waitFor(page, DRAWN, 'the card');
     assert.equal(await page.eval('return window.__walk.said();'), 0, 'a chain nobody said was generated says nothing');
 

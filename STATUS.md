@@ -3512,6 +3512,19 @@ The numbering continues from 401, which is M31-3's last.
      from another. And a lens is not a start: `?focus=` says which events
      exist for the views, not where an argument begins, which is the same
      reason the hand tables gain no member for a walk.
+543. **The check on the first `I9 done` commit hung, and the browser test is
+     now bounded.** `validate` normally finishes in about three minutes; run
+     557 sat in `node --test` for over forty with nothing to show, and a
+     suite that hangs tells nobody anything. `page.eval` awaits the page's
+     promise over the DevTools protocol with **no bound of its own**
+     (`tests/browser.mjs`), so an in-page fetch that never settles stops the
+     runner rather than failing a test — and `tests/walk-browser.test.mjs` is
+     the first test to await an in-page `loadAtlas`. Its mount is now raced
+     against a 20-second timer and both its tests carry a 60-second timeout,
+     so the worst case is a named failure. Whether that was the cause is not
+     provable from here — a hung run publishes no logs — but the fix costs
+     nothing and the same trap is there for the next test that awaits the
+     page.
 
 ## I8: what was derived, and what the Action must still run
 
