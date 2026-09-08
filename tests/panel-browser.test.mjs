@@ -245,7 +245,9 @@ test('a drag of the band leaves the open explanation open and moves the horizon'
         horizon: document.querySelector('.panel .horizon .count').textContent,
         summary: document.querySelector('.panel .summary p').textContent.slice(0, 20),
       };`);
-    assert.equal(before.horizon, '46');
+    // 50 since the world merge of 8 September 2026 joined M40's and M41's
+    // events to 25 April's descendants (46 before it).
+    assert.equal(before.horizon, '50');
 
     await page.eval(dragWindowTo('to', 450));
     await waitFor(page, 'return /to=/.test(location.search);', 'the window in the URL');

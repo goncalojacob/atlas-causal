@@ -13,6 +13,7 @@
 
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
+import fs from 'node:fs';
 import path from 'node:path';
 import { withBrowser, open, waitFor, skip } from './browser.mjs';
 import { atlasOf, FIXTURE_DATA, ROOT } from './helpers.mjs';
@@ -30,7 +31,14 @@ const REGIME = 'actor:estado-novo';
 
 const expected = async (patch) => {
   const atlas = await atlasOf(dataDir);
-  return lensView(atlas, { ...defaultState(), ...patch });
+  const view = lensView(atlas, { ...defaultState(), ...patch });
+  // An event with no place is on the timeline and the graph and never on the
+  // map (M30b's unplaced count says so); the map is not asked to draw it.
+  const placeless = new Set([...view.set].filter((id) => {
+    const file = path.join(dataDir, 'events', `${id}.json`);
+    return !fs.existsSync(file) || !JSON.parse(fs.readFileSync(file, 'utf8')).place;
+  }));
+  return { ...view, placeless };
 };
 
 // Every event id the page has actually drawn a mark, a node or a bar for, in
@@ -69,7 +77,10 @@ test('with ?actor=portugal every view draws that actor and its direct neighbours
         assert.ok(view.shown.has(id), `${name} drew ${id}, which is outside the lens`);
       }
       // The actor's own events are drawn, in full, in every view.
-      for (const id of view.set) assert.ok(drawn.includes(id), `${name} left out ${id}, which is what was asked for`);
+      for (const id of view.set) {
+        if (name === 'map' && view.placeless.has(id)) continue;
+        assert.ok(drawn.includes(id), `${name} left out ${id}, which is what was asked for`);
+      }
 
       // The ring is drawn too, and dimmed: hidden it would say the atlas has
       // nothing next to Portugal, and undimmed it would say Portugal is in it.
