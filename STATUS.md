@@ -6,6 +6,25 @@ session ends. `ARCHITECTURE.md` is the target; this file is the position.
 
 ## Last updated
 
+On the branch `world`, 2026-09-08: **M41a is done — the 150 ticked candidates
+are imported and merged — but it returned institutions where the brief asked
+for consequence, and `world` is knowingly red on two tests.** 42 records
+created out of 150 (41 actors, every one an `institution`, and 1 event), 108
+refused for classes the seeds table does not name, 83 Wikipedia leads cached;
+branch head `26ac5c4`. Getting there cost two Action failures worth reading
+about: a browser test hung and ate a whole 5.5-hour run without committing
+anything (deviation 204), and the import was writing an actor's exact date and
+a place's citation, neither of which survives a save through the contribute
+form (deviation 205). Both are fixed. `node tools/validate.mjs` without
+`--index` is clean; `node --test` is 602 of 604, and the two failures are only
+the index being deliberately stale on this branch — one `build-index.mjs`
+commit on the far side of the merge into `m0` clears them (deviation 206). The
+yield is the thing to look at, not the plumbing: deviation 207 says why the
+round came back as companies and what the two options are. Deviations 204 to
+207 are this run's; 201, 202 and 203 above are now history, since Actions came
+back and the queries they describe did run. The rest of this section is `m0`'s
+and this paragraph does not touch it.
+
 On the branch `world`, 2026-09-06: **M41a is stopped, not finished, and it is
 stopped on something only the owner can clear.** Since about 07:00Z every
 GitHub Actions run in this repository — this branch's and `m0`'s alike — has
@@ -3172,6 +3191,111 @@ gave that to the map and the timeline, and M25 did not widen it.
      and `node --test` green on it. Nothing under `data/` moves but the seeds
      file, and the other 331 queries are untouched.
 
+204. **The import Action lost five and a half hours to a hung test, and the
+     gate is now bounded.** The `--import` run pushed on 7 September walked
+     batch 1, built its index and validated, then stopped printing partway
+     through `node --test` — after 339 of 603 tests — and sat there until
+     GitHub killed the job at its 330-minute limit. The cleanup log names what
+     it was holding: two node processes and two headless Chromiums still
+     alive. The step never reached its `git commit`, so batch 1 was discarded
+     and the cursor did not move: five and a half hours, nothing committed,
+     nothing to read. The cause is in `tests/browser.mjs`, which drives
+     Chromium over the DevTools protocol. Its polling waits are bounded —
+     `waitFor` and `open` give up after 200 tries — but `send` resolves only
+     when a reply with a matching id arrives and `once` only when an event
+     does, and neither has a deadline; a reply or a `Page.loadEventFired`
+     that never comes is a promise that never settles, and because the
+     browser is still open the event loop stays alive, so node does not
+     notice and simply waits. Reproduced here both ways: a test awaiting a
+     pending promise while holding a live handle runs until it is killed, and
+     the same test under `--test-timeout` is cancelled and reported. The
+     Action now runs `node --test --test-timeout=120000`; the slowest single
+     test in the suite takes 4s, so that is not a deadline an honest test
+     comes near, and a hang is now a failed batch rather than a lost run —
+     which matters because the loop pushes each batch as it goes, so the
+     batches already committed stand and pushing the branch again resumes
+     from the cursor. **The unbounded waits themselves are not fixed.** They
+     are shared test infrastructure that `m0` runs too, this branch's job was
+     the import, and the same hang can still take a batch on any branch. That
+     is a change to `tests/browser.mjs` and it is the owner's to schedule.
+
+205. **The import was writing two fields the contribute form cannot carry
+     back, and both are fixed in the tool rather than in `src/`.** With the
+     gate bounded, batch 1 failed one test out of 603: `bundle.test.mjs`, an
+     unedited save of a record in `data/` is byte identical — on
+     `data/actors/euronext.json`, which the import had written a minute
+     earlier. That test is the contract that keeps an imported record the
+     same kind of object as one a person wrote by hand: same fields, editable
+     in the same place, nothing in it the form would silently drop. Two
+     breaches. First, an actor's exact date: `common/interval.json` allows
+     `date` on any interval and the validator is content, but the form offers
+     an exact date for an event and a relation and not for an actor, so a
+     save drops it; Euronext, founded on a day Wikidata knows, was the first
+     actor an import ever created with one, and all 414 actors already here
+     carry years alone. Second, a place's citation: this had never fired
+     because no import had yet put a place into `data/`, and it would have
+     fired on this run, since the M41a candidates are foundings and
+     infrastructure and a bridge is a place. Rule 6 lists the kinds that must
+     cite and place is not among them, and `CITATION_LISTS` in
+     `src/contribute/bundle.js` gives the place form no citation field and
+     says why — a place is a geographic fact, not an argument. So
+     `intervalFor` keeps the day for an event and not for an actor, and
+     `placeRecord` cites nothing; no provenance is lost, because the item is
+     on the record already in `wikidata`. Both were found by running the
+     import against its own fixtures and round-tripping what it wrote, which
+     is now a test in `tests/import-wikidata.test.mjs` — `bundle.test.mjs`
+     holds the same invariant but only over records already in the tree,
+     which for an import means after the Action has walked a batch, so a
+     mismatch costs a run rather than a test. **The other reading is the
+     owner's to take**: that the actor form should carry an exact date, and
+     that a place should cite. Both are changes to the contribute interface
+     and to what every contributor is asked for, so this branch did not make
+     them.
+
+206. **`world` is red on two tests, on purpose, because its index is
+     deliberately stale.** The rule for this run was to commit nothing under
+     `data/index/` on `world` — the index is `m0`'s, its shard names are
+     content hashes, and two branches rebuilding it in parallel conflict over
+     files whose only difference is which tree they describe. The merge
+     therefore kept `world`'s existing index rather than the import branch's,
+     and `node tools/validate.mjs` without `--index`, which is this run's
+     stated gate, is clean: 1906 records, 0 errors. But `data/` grew by 42
+     records and the index no longer describes it, so the two tests that
+     check the index against the tree fail: `the repository data/ validates
+     and its index is fresh` in `tests/build-index.test.mjs` and
+     `validate.mjs passes on the repository data` in
+     `tests/validate-cli.test.mjs`. 602 of 604 pass; those two are the whole
+     of the failure, and nothing else regressed. This is new: `world` was
+     green before this merge, because M40a's merge carried the import
+     branch's index with it. **One `node tools/build-index.mjs` commit on top
+     of the merge into `m0` clears it**, the way M31 and M32b were cleared,
+     and until then `world` should not be read as green.
+
+207. **The second Portuguese round returned institutions, not events.** The
+     brief asked for classes that carry consequence and no election class,
+     and what came back is 41 actors and 1 event out of 150 ticked — every
+     one of the 41 an `institution`. 108 items were refused, all for the same
+     reason: their Wikidata classes are not in the seeds file's `classes`
+     table, which by its own rule refuses an unnamed class rather than
+     guessing. The heads of that list are Q210272 (17 items), Q46970 (14),
+     Q15911738 (11), Q537127 (10), Q1248784 (10) and Q94993988 (9), and the
+     report on the branch names all of them with their counts. This is not a
+     new surprise so much as the shape the candidate rule already warned of
+     in its own header: 95 of the 150 were company or institution foundings
+     and 41 infrastructure, because those are the two families Wikidata
+     answers richly for Portugal, while `pt2-treaties-and-agreements`
+     returned nothing at all across three runs and `pt2-laws-and-constitutions`
+     returned one row. **Two things follow and neither is this run's to
+     decide.** Naming the refused classes and walking those 108 again is the
+     move M40a made with its own 27 classes, and it would raise the yield;
+     but it is an editorial judgement about what each class *is*, made in a
+     sandbox that cannot read a class label from Wikidata, and the M41 brief
+     does not ask for it. And a round that yields institutions is a poor
+     answer to a brief about consequence, which is a question about the
+     queries rather than about the import. M41b is where a candidate that
+     earns no honest edge is retracted, and it will be retracting mostly
+     companies.
+
 
 ## Dates to verify
 
@@ -3664,3 +3788,4 @@ M41a resumed 2026-09-06T02:02:44Z by scheduled (branch world)
 M41a resumed 2026-09-06T11:01:13Z by scheduled (branch world)
 M41a resumed 2026-09-07T18:46:34Z by scheduled (branch world)
 M41a resumed 2026-09-08T02:02:02Z by scheduled (branch world)
+M41a done
