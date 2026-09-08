@@ -23,7 +23,16 @@
     },
     {
       "fields": [
-        "actors"
+        "actors",
+        "origin",
+        "review"
+      ],
+      "on": "2026-09-08"
+    },
+    {
+      "fields": [
+        "origin",
+        "review"
       ],
       "on": "2026-09-08"
     }

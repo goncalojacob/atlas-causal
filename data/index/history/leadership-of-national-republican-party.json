@@ -1,11 +1,17 @@
 {
-  "from": "revised",
+  "from": "git",
   "id": "leadership-of-national-republican-party",
   "kind": "office",
   "schema": 1,
   "versions": [
     {
       "first": true,
+      "on": "2026-09-08"
+    },
+    {
+      "fields": [
+        "origin"
+      ],
       "on": "2026-09-08"
     }
   ]

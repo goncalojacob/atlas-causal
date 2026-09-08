@@ -1,11 +1,29 @@
 {
-  "from": "revised",
+  "from": "git",
   "id": "armenian-genocide",
   "kind": "event",
   "schema": 1,
   "versions": [
     {
       "first": true,
+      "on": "2026-09-05"
+    },
+    {
+      "fields": [
+        "actors",
+        "authors",
+        "review",
+        "sources",
+        "summary"
+      ],
+      "on": "2026-09-05"
+    },
+    {
+      "fields": [
+        "origin",
+        "review",
+        "sitelinks"
+      ],
       "on": "2026-09-05"
     }
   ]

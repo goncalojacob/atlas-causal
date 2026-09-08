@@ -1,11 +1,18 @@
 {
-  "from": "revised",
+  "from": "git",
   "id": "paris-peace-conference--treaty-of-trianon--caused",
   "kind": "edge",
   "schema": 1,
   "versions": [
     {
       "first": true,
+      "on": "2026-09-05"
+    },
+    {
+      "fields": [
+        "origin",
+        "review"
+      ],
       "on": "2026-09-05"
     }
   ]

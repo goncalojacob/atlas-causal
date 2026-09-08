@@ -1,11 +1,32 @@
 {
-  "from": "revised",
+  "from": "git",
   "id": "crisis-portugal",
   "kind": "event",
   "schema": 1,
   "versions": [
     {
       "first": true,
+      "on": "2026-09-08"
+    },
+    {
+      "fields": [
+        "actors",
+        "authors",
+        "place",
+        "region",
+        "review",
+        "sources",
+        "summary",
+        "title"
+      ],
+      "on": "2026-09-08"
+    },
+    {
+      "fields": [
+        "origin",
+        "review",
+        "sitelinks"
+      ],
       "on": "2026-09-08"
     }
   ]

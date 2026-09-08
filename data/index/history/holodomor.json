@@ -1,11 +1,27 @@
 {
-  "from": "revised",
+  "from": "git",
   "id": "holodomor",
   "kind": "event",
   "schema": 1,
   "versions": [
     {
       "first": true,
+      "on": "2026-09-05"
+    },
+    {
+      "fields": [
+        "review",
+        "status"
+      ],
+      "on": "2026-09-05"
+    },
+    {
+      "fields": [
+        "origin",
+        "retraction",
+        "review",
+        "sitelinks"
+      ],
       "on": "2026-09-05"
     }
   ]

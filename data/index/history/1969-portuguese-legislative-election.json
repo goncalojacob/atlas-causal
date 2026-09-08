@@ -41,7 +41,21 @@
     },
     {
       "fields": [
-        "actors"
+        "actors",
+        "category",
+        "origin",
+        "review",
+        "sitelinks"
+      ],
+      "on": "2026-09-08"
+    },
+    {
+      "fields": [
+        "actors",
+        "category",
+        "origin",
+        "review",
+        "sitelinks"
       ],
       "on": "2026-09-08"
     }

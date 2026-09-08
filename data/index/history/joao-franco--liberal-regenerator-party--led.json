@@ -1,11 +1,26 @@
 {
-  "from": "revised",
+  "from": "git",
   "id": "joao-franco--liberal-regenerator-party--led",
   "kind": "relation",
   "schema": 1,
   "versions": [
     {
       "first": true,
+      "on": "2026-09-08"
+    },
+    {
+      "fields": [
+        "retraction",
+        "review",
+        "status"
+      ],
+      "on": "2026-09-08"
+    },
+    {
+      "fields": [
+        "origin",
+        "review"
+      ],
       "on": "2026-09-08"
     }
   ]
