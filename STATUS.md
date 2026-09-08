@@ -3101,6 +3101,64 @@ The numbering continues from 401, which is M31-3's last.
      same reason, and the fix is either a shorter body or a run that is not
      asked to edit it.
 
+## I6: what the graph's notch actually costs
+
+Written before anything was changed, which is what the index2 review's
+finding 11 asks for: it did not believe the brief's diagnosis — that the graph
+pays 280 ms a notch *because* `graph-view.js` keys its stacking on the raw `k`
+where the map has used `zoomBucket(k)` since H4a — and wanted the number first.
+**It was right, and by a wider margin than it argued.** Stacking is under a
+tenth of a notch.
+
+**In Node, `node tests/bench/run.mjs graph-notch`** (new this run; the `layout`
+case's stacking rows are a twenty-year band, which is not the picture the 5.3 s
+was measured on). The whole-window arrangement of the 20,000-event synthetic
+corpus, stacked at the ten zooms ten wheel notches pass through:
+
+| | best | cache hits |
+|---|---|---|
+| `stackLayout` on the whole window, k=1 | 110 ms | → 1,102 stacks, 18,995 lines |
+| k=2 | 145 ms | → 3,764 stacks, 34,247 lines; 2,289 and 22,240 on screen |
+| k=4 | 172 ms | → 20,000 stacks, 39,265 lines; 6,100 and 12,925 on screen |
+| ten notches in, raw `k` | 1,925 ms | 0 of 10 |
+| ten notches in, `zoomBucket(k)` | 1,972 ms | 0 of 10 |
+| ten in and ten out, raw `k` | 3,058 ms | 0 of 19 |
+| ten in and ten out, `zoomBucket(k)` | 1,931 ms | **9 of 19** |
+
+A notch is ×1.16 and a bucket ×1.044, so no two consecutive notches share a
+bucket: **bucketing buys nothing at all on the way in** (1,972 against 1,925 ms,
+which is noise) and 1.58× on the way back, where nine of nineteen stackings
+become cache hits. Finding 11's arithmetic, measured.
+
+**In a browser at 10⁴** — headless Chromium 152 at 1440×900 over
+`tools/serve.mjs`, on the same 20,000-event corpus built out to a real
+`data/index/`, one notch dispatched at the middle of the view and Chromium's
+own sampling profiler over ten of them:
+
+- ready in 2.9 s; the graph at rest holds **24,310 elements** — 3,219 in the
+  nodes layer, 14,860 in the edges layer.
+- one notch: **175 ms** cold, then 224, 331, 425, 555, 638, 927, 761, 697, 787,
+  756 — **6.1 s for ten**, the review's 5.3 s. It gets *worse* the further in
+  the reader goes, because fewer stacks merge and there is more to draw.
+- where those 6.1 s go, by self time over 36,418 samples:
+
+| | share | of ten notches |
+|---|---|---|
+| `getScreenCTM` — one call in the wheel handler, forcing a layout of 24,310 elements | **35.2 %** | 1,283 ms |
+| building and inserting the DOM (`createElementNS`, `setAttribute`, `svg`, `replaceChildren`, `appendChild`) | **35.2 %** | 1,281 ms |
+| the browser's own painting and GC | 10.8 % | 395 ms |
+| `draw`'s loop body and `classes` | 5.3 % | 194 ms |
+| **`stackLayout` and everything under it** (`clusterPoints`, `mergeEdges`) | **9.3 %** | **338 ms** |
+| labels | 0.3 % | 9 ms |
+
+So a notch is roughly a third a forced layout, a third element creation, a
+tenth stacking. **The brief's fix addresses the tenth.** What the two thirds
+have in common is the element count, which is what a viewport cull takes away —
+at k=4 the viewport holds 6,100 of 20,000 stacks and 12,925 of 39,265 lines —
+so the cull is the change expected to move the number, exactly as amendment A2
+says. The bucketing goes in anyway: it is cheap, it is correct, and it is worth
+1.58× to the reader who zooms back out.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done

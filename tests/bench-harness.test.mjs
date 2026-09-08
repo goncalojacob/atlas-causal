@@ -16,8 +16,12 @@ import { readdir } from 'node:fs/promises';
 import { mkdtemp, rm } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import path from 'node:path';
-import { syntheticEvents, syntheticEdges, parseArgs, NEEDS_DATASET } from './bench/run.mjs';
+import {
+  syntheticEvents, syntheticEdges, parseArgs, NEEDS_DATASET,
+  CASE_NAMES, NOTCH, viewportAt, benchGraphNotch,
+} from './bench/run.mjs';
 import { syntheticDataDir } from './bench/dataset.mjs';
+import { zoomBucket } from '../src/cluster.js';
 
 test('importing the harness runs no case', () => {
   // The import at the top of this file is the assertion: a suite that ran on
@@ -58,6 +62,52 @@ test('the synthetic atlas is written where the caller says, and nowhere by defau
   // Generated once per (count, share, seed): the second call is the same
   // directory and writes nothing, which is why the case can be re-run.
   assert.equal(await syntheticDataDir(40, { under }), dir);
+});
+
+// I6's case, and the arithmetic it exists to print. The review of the index
+// plan (finding 11) did not believe that the graph's notch was a missing
+// `zoomBucket`, on the grounds that a notch is x1.16 and a bucket x1.044; the
+// two constants live in different files, and this is what says so.
+test('a wheel notch never lands in the bucket it left, at any zoom the graph allows', () => {
+  assert.equal(NOTCH, Math.exp(-(-100) * 0.0015), "the wheel handler's own factor");
+  for (let k = 0.25; k < 40; k *= 1.037) {
+    assert.notEqual(zoomBucket(k), zoomBucket(k * NOTCH),
+      `k=${k} and one notch in share a bucket, so bucketing would make the notch a cache hit`);
+  }
+  // Which is not to say the bucket is worthless: the way back lands a hair off
+  // the zoom it left, and a hair is inside a bucket.
+  const k = 3;
+  assert.equal(zoomBucket(k), zoomBucket(k * 1.001));
+});
+
+test("the graph's notch case is registered, runs and prints", (t) => {
+  assert.ok(CASE_NAMES.includes('graph-notch'), 'the case is in the table');
+  assert.ok(!NEEDS_DATASET.has('graph-notch'), 'and it writes nothing to disk');
+
+  // The viewport the case culls against: the whole arrangement at k = 1, and
+  // a quarter of its width at k = 4. `graph-view.js`'s own `view()`.
+  const laid = { width: 1000, height: 400 };
+  const whole = viewportAt(laid, 1);
+  // `+ 0` because a pan of nothing divided by a zoom of one is -0.
+  assert.deepEqual([whole.x0 + 0, whole.x1], [0, 1000]);
+  const close = viewportAt(laid, 4);
+  assert.equal(Math.round(close.x1 - close.x0), 250);
+  assert.ok(close.x0 > 0 && close.x1 < 1000, 'and it is inside the arrangement');
+
+  // Three hundred events rather than twenty thousand: what is asserted is
+  // that the case runs and prints rows, not what a row says. Timing a
+  // benchmark inside `node --test` is what this file's header refuses.
+  const lines = [];
+  const log = console.log;
+  console.log = (...args) => lines.push(args.join(' '));
+  t.after(() => { console.log = log; });
+  benchGraphNotch(null, { events: 300 });
+  console.log = log;
+  assert.match(lines[0], /one wheel notch on the whole window/);
+  assert.ok(lines.some((l) => /stackLayout on the whole window, k=1/.test(l)), 'it prints the stacking rows');
+  assert.ok(lines.some((l) => /notches in, zoomBucket\(k\)/.test(l)), 'and both columns of the sweep');
+  assert.ok(lines.some((l) => /ten in and ten out, raw k/.test(l)));
+  for (const line of lines.slice(1)) assert.match(line, /\d+(\.\d+)? ms/, `every row carries a number: ${line}`);
 });
 
 test('the cases that need a corpus on disk are the ones that ask for --dataset', () => {

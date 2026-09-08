@@ -17,7 +17,7 @@
 // The data is generated from a seed, so the two runs measure the same points.
 
 import { pathToFileURL } from 'node:url';
-import { clusterPoints, DEEPEST_ZOOM } from '../../src/cluster.js';
+import { clusterPoints, zoomBucket, DEEPEST_ZOOM } from '../../src/cluster.js';
 import { onScreen } from '../../src/map/layers/events.js';
 import { fitBounds, WORLD } from '../../src/map/projection.js';
 import { rowLanes, laneOf, barBox } from '../../src/lanes.js';
@@ -603,6 +603,120 @@ function benchLayout(atlas) {
   }
 }
 
+// --- the graph's wheel notch ----------------------------------------------
+//
+// The health review of 6 September measured 280 ms for one notch on the
+// graph at 20 000 events and 5.3 s for ten, against 55 ms on the map, and
+// read the difference as a missing `zoomBucket`. The review of the index
+// plan (finding 11) did not believe it: a notch is x1.16 and a bucket
+// x1.044, so no two consecutive notches share a bucket and bucketing can
+// only pay on the way back. Neither number could be checked from the
+// repository — `layout`'s stacking rows are a twenty-year band, which is not
+// the picture the 5.3 s was measured on.
+//
+// This is that picture: the whole-window arrangement, stacked at the ten
+// zooms a reader's ten notches actually pass through, once keyed on the raw
+// zoom and once on the bucket, through the same twelve-entry cache the view
+// keeps. What it cannot measure is the DOM — Node has none — so it prints
+// instead what the drawing would have to append at each of those zooms, and
+// what a viewport cull would leave of it.
+
+// The wheel's own factor, from the graph view's handler: one notch of a
+// mouse wheel is deltaY = -100 and `Math.exp(-deltaY * 0.0015)`. Exported
+// because it is the whole of finding 11's arithmetic — x1.16 against a
+// bucket's x1.044 — and a test holds the two constants to it.
+export const NOTCH = Math.exp(100 * 0.0015);
+const NOTCHES = 10;
+
+// The view's cache, written out here rather than imported: `graph-view.js`
+// keeps it inside a closure with a DOM around it, and what this measures is
+// the arithmetic of the key, which is four lines.
+function stackCache(limit = 12) {
+  const entries = new Map();
+  let hits = 0;
+  return {
+    hits: () => hits,
+    at(key, make) {
+      if (entries.has(key)) {
+        hits += 1;
+        const value = entries.get(key);
+        entries.delete(key);
+        entries.set(key, value);
+        return value;
+      }
+      const value = make();
+      entries.set(key, value);
+      if (entries.size > limit) entries.delete(entries.keys().next().value);
+      return value;
+    },
+  };
+}
+
+// The rectangle the view has on screen at a zoom, in the graph's own
+// coordinates: `view()` in graph-view.js, with the pan a centred zoom leaves.
+// At k = 1 it is the whole arrangement; at k = 4 a quarter of its width.
+export function viewportAt(laid, k) {
+  const x = laid.width / 2 - (laid.width / 2) * k;
+  const y = laid.height / 2 - (laid.height / 2) * k;
+  return { x0: -x / k, y0: -y / k, x1: (laid.width - x) / k, y1: (laid.height - y) / k };
+}
+
+// `events` is the corpus size, and it is an argument only so that
+// `tests/bench-harness.test.mjs` can run the case over three hundred events
+// and see it print. Nothing else passes it: the case measures 20 000.
+export function benchGraphNotch(atlas, { events = 20000 } = {}) {
+  console.log(`the graph at ${events.toLocaleString('en-US').replace(',', ' ')} events — one wheel notch on the whole window, without the DOM`);
+  const whole = layoutCorpus(events, { edges: events * 2 });
+  // Laid out once and outside every measurement: the arrangement is what a
+  // notch does *not* redo (H4b), and it is seconds.
+  const laid = layoutGraph(whole);
+
+  // Where a notch's cost is, at the three zooms the picture passes through.
+  for (const k of [1, 2, 4]) {
+    const stacked = stackLayout(laid, { k });
+    const box = viewportAt(laid, k);
+    const inside = stacked.nodes.filter((n) => n.x >= box.x0 && n.x <= box.x1).length;
+    const lines = stacked.edges.length;
+    const onScreenLines = stacked.edges.filter((e) => (e.x1 >= box.x0 && e.x1 <= box.x1) || (e.x2 >= box.x0 && e.x2 <= box.x1)).length;
+    row(`stackLayout on the whole window, k=${k}`, measure(() => stackLayout(laid, { k }), { budget: 4000, most: 3 }),
+      `→ ${stacked.nodes.length} stacks, ${lines} lines; ${inside} stacks and ${onScreenLines} lines on screen`);
+  }
+
+  // Ten notches, forward: what the review timed. The bucketed column is the
+  // same ten zooms filed under `zoomBucket(k)` through the view's cache.
+  //
+  // The cache is made *inside* the measured body, once per run. A cache that
+  // outlived the run would be warm for the second one, `measure` reports the
+  // best of them, and the whole sweep would print as a fraction of a
+  // millisecond — which is a measurement of a Map and not of a notch.
+  const zooms = [];
+  for (let i = 1, k = 1; i <= NOTCHES; i += 1) {
+    k *= NOTCH;
+    zooms.push(k);
+  }
+  // Ten notches in and ten back out. The way back lands a hair off the zooms
+  // already seen — a wheel does not retrace its own floating point — which is
+  // the case bucketing exists for and the case raw `k` can never hit.
+  const back = [...zooms, ...zooms.slice(0, -1).reverse().map((k) => k * 1.001)];
+
+  const sweep = (list, bucket) => {
+    const cache = stackCache();
+    for (const k of list) {
+      const at = bucket ? zoomBucket(k) : k;
+      cache.at(String(at), () => stackLayout(laid, { k: at }));
+    }
+    return cache.hits();
+  };
+  for (const [label, list] of [[`${NOTCHES} notches in`, zooms], ['ten in and ten out', back]]) {
+    for (const bucket of [false, true]) {
+      const hits = sweep(list, bucket);
+      row(`${label}, ${bucket ? 'zoomBucket(k)' : 'raw k'}`,
+        measure(() => sweep(list, bucket), { budget: 20000, most: 2 }),
+        `→ ${hits} of ${list.length} stackings were cache hits`);
+    }
+  }
+}
+
 // --- the tools -------------------------------------------------------------
 //
 // The three the health review timed and H4d is about: the cross-record rules
@@ -692,6 +806,7 @@ const CASES = {
   cluster: benchCluster,
   layout: benchLayout,
   notch: benchNotch,
+  'graph-notch': benchGraphNotch,
   presences: benchPresences,
   timeline: benchTimeline,
   queries: benchQueries,
@@ -718,6 +833,9 @@ async function realAtlas() {
   });
 }
 const NEEDS_ATLAS = new Set(['presences', 'layout']);
+// What `node tests/bench/run.mjs` with no argument runs, in order. Exported
+// so a test can say a case is registered without importing the table itself.
+export const CASE_NAMES = Object.keys(CASES);
 
 // The two cases that measure the tools over a tree want one on disk — 62 657
 // files
