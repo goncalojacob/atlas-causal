@@ -3485,6 +3485,8 @@ The numbering continues from 401, which is M31-3's last.
 540. **The I9 section is a comment on pull request #1 and not in its body**,
      as I4a's, M30c's, I5's, I6's and I8's are (deviations 483, 498, 506,
      517, 539), for the same reason and with the same request to the owner.
+     Posted whole and ready to paste in above `### I3`:
+     https://github.com/goncalojacob/atlas-causal/pull/1#issuecomment-5588824472
 541. **Three files the brief's list does not name were touched, and one it
      implies was left alone.** `src/narrative-mode.js` forwards the store's
      `walk()` / `setWalk` / `clearWalk`, because everything downstream is
