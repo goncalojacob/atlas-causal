@@ -127,6 +127,20 @@ test('the header carries a chip per focus, and each chip drops its own', { skip 
     await open(page, url(`?focus=${SALAZAR},${REGIME}&from=1800&to=2030`), ready);
     await waitFor(page, 'return document.querySelectorAll(".lens-chips .lens-badge").length === 2;',
       'two chips in the header');
+    // A chip whose record's century has not landed has no name yet and says
+    // "loading…"; the header is drawn again when the shard arrives (lens.js,
+    // index2 review finding 21). The names are what this asserts, so the names
+    // are what it waits for — never a duration. Deviation 488 saw it fail once
+    // in twelve local runs during I4b, and it is what turned the check red on
+    // I6's own bench push. **Both of them, counted**: `every` over an empty
+    // list is true, and the header is emptied and written again in one go, so
+    // a poll that landed between the two would pass on no chips at all.
+    await waitFor(
+      page,
+      `return [...document.querySelectorAll('.lens-chips .lens-name')]
+        .filter((el) => el.textContent !== 'loading…').length === 2;`,
+      'both chips to be named',
+    );
     const names = await page.eval('return [...document.querySelectorAll(".lens-chips .lens-name")].map((el) => el.textContent);');
     assert.deepEqual(names, ['António de Oliveira Salazar', 'Estado Novo'], 'each chip names its own record');
 

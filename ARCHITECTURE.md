@@ -114,6 +114,22 @@ changes which marks are drawn, never where a mark is. Both are pure, both are
 tested for determinism, and the second is tested against the whole atlas as
 well as against the density the feature exists for.
 
+*The zoom a stacking is done at is the bucket below the zoom it is drawn at*,
+sixteen buckets to the octave, as the map's grouping has been since H4a
+(`zoomBucket` in `cluster.js`). What decides a stacking is the threshold
+`STACK_DISTANCE / k`, so what matters is the ratio between two zooms and not
+the difference: a hair off a zoom already seen draws the picture that is
+already in hand, and only the click that opens a stack no zoom quite parts is
+answered at exactly the zoom it named. And the graph draws only what is inside
+the rectangle on screen, widened by a mark, with the selection drawn wherever
+it is and a line kept whenever either of its ends is — the map has culled that
+way since H4a, and the graph was building 24,310 elements for a picture of
+which two thirds were off the screen. That rectangle is the one the reader can
+actually see and not the nominal viewBox: the SVG is letterboxed. It is
+measured through the element's own matrix once and kept, because asking is a
+forced layout of the whole drawing, and a `ResizeObserver` throws it away when
+the pane changes size.
+
 *`cluster.js` is the one module that decides what merges*, for all three
 pictures. It gained `alone` — the set of ids that must keep a mark of their
 own, which every view used to hand-roll — and `mergeEdges`, the other half of
@@ -393,8 +409,10 @@ one thing now — `src/lanes.js`, pure and tested — and which grouping is a
 choice in the state: `none`, `actor`, `place`, `region`. **The default is
 `none`**, which has no named lanes at all: the timeline packs the bars into
 as many unlabelled rows as it takes for none of them to overlap at the
-current width, and the graph drops its bands and lets the barycentre place a
-node wherever its links want it. That is the arrangement that makes the
+current width — up to as many as its pane can hold at the floor a row may be
+squeezed to, past which the rows share and the bars stack, which is what the
+timeline did before packing existed — and the graph drops its bands and lets
+the barycentre place a node wherever its links want it. That is the arrangement that makes the
 fewest claims about the data, which is why a visitor sees it first. `region`
 may well come back as the default when the data is world-scale and a
 continent is again the most useful thing to say; the choice is one value in
@@ -892,7 +910,7 @@ atlas-causal/
 │   │   ├── collapse.js           ● pure: an event's parts drawn inside it below a zoom; after the layout, before the stacking, so no node moves for it
 │   │   ├── layout-message.js  layout-worker.js  layout-runner.js   ● what crosses to a thread, the thread, and when one is worth it
 │   │   └── graph-view.js         ● the SVG: nodes, the five edge types, the window as a shade, pan/zoom, nearest-centre clicks
-│   ├── timeline.js               ● the lanes lanes.js gives, or packed unlabelled rows; the window as a band with two handles; bars stack; one layer per kind of element, kept from render to render
+│   ├── timeline.js               ● the lanes lanes.js gives, or packed unlabelled rows, as many as the pane holds; the window as a band with two handles; bars stack; one layer per kind of element, kept from render to render
 │   ├── timeline-scale.js         ● linear now; the scale is injected
 │   ├── panel/panel.js            ● the shell: the container, the clicks, the load token, what every card shares
 │   ├── panel/event.js  source.js  place.js  actor.js  office.js  cluster.js   ● one card each
@@ -2203,8 +2221,8 @@ least 40 pixels; a link inside a sentence keeps the line it is set in.
 | `map/layers/*` | One layer per thing drawn, in a fixed order: coastlines, then territories, then marks, so an event sits on top of the state it happened in. Renders only records in the visible window. A stack of marks is drawn as one, with a count, and opened by a click. | Each other. |
 | `map/layers/presences.js` | The territories of the window's far end: a thin line for a state, a lighter one over a stronger wash for a dependency, dashed when disputed. Hover names it and its sovereign; click selects the actor. No colour per polity — two hundred of them share one palette. | Which shard the year is in, or how one is fetched. |
 | `graph-view/layout.js` | Events, edges, the lanes and the data's extent → the coordinates of every node and every edge, plus the bands. x is the year on the whole extent; y is a barycentre pass inside the band of the lane, or over the whole field when there are no lanes. Deterministic — ties by id then weight, neighbour lists sorted — and self-checking: it counts crossings and keeps the best arrangement it saw, the plain order included. `stackLayout` is the second half: those coordinates and a zoom in, the marks and lines actually drawn out, merged within a band and never across one. | The DOM, the state, what is selected, what is in the window, why an id may not be stacked. |
-| `graph-view/graph-view.js` | Draws what the layout gives it: the bands and the year axis once, then the marks, the five edge types by pattern and weight, the window as a shade, the walked chain in madder and the convergence branches filled in. Decides the one thing the layout cannot — which events the reader is working with, and so may never be stacked. Pan and zoom; a click is resolved to the nearest mark centre within reach; clicking a consequence of the open event walks the chain, clicking a stack opens it. | Where a node goes, what merges with what, and how the panel renders anything. |
-| `timeline.js` + `timeline-scale.js` | Lanes from `lanes.js`, or its packed rows when there is no grouping; the scale is injected; the window drawn over them as a band with two handles, which is the atlas's only time control. Bars that would overlap stack, and only within the window, so narrowing the band splits them without moving the scale. | Which regions exist. |
+| `graph-view/graph-view.js` | Draws what the layout gives it: the bands and the year axis once, then the marks, the five edge types by pattern and weight, the window as a shade, the walked chain in madder and the convergence branches filled in. Files its stackings under `zoomBucket(k)` and draws only what is inside the rectangle on screen, the selection excepted; that rectangle is the letterboxed one the reader sees, measured through the element's matrix once and thrown away by a `ResizeObserver`. Decides the one thing the layout cannot — which events the reader is working with, and so may never be stacked. Pan and zoom; a click is resolved to the nearest mark centre within reach; clicking a consequence of the open event walks the chain, clicking a stack opens it. | Where a node goes, what merges with what, and how the panel renders anything. |
+| `timeline.js` + `timeline-scale.js` | Lanes from `lanes.js`, or its packed rows when there is no grouping; the scale is injected; the window drawn over them as a band with two handles, which is the atlas's only time control. Bars that would overlap stack, and only within the window, so narrowing the band splits them without moving the scale. How many lanes there are is a question about the pane: as many as fit under the axis at a lane's own floor, never more than the ceiling — `MAX_ROWS` is a ceiling and not a promise — so a short window is fewer rows and never a drawing taller than the pane it is in. | Which regions exist. |
 | `graph-view/collapse.js` | The graph's second level of detail, and pure: below one zoom an event's parts are drawn inside it, the ends of their links moved onto the parent and a link between two parts dropped. It runs on the laid-out layout, after `layoutGraph` and before the geometric stacking, so a collapsed parent is drawn exactly where the parent already was and a wheel notch still lays nothing out again. Nothing the reader is holding is ever folded. | Where a node goes, and what the panel does with a click. |
 | `panel/office.js` | The office card — the actor the post belongs to, its category, and every turn at it in start order, each row opening the person who held it — and the tenure strip the actor card draws from the same list: holders as bars over the actor's own years, merged where they would overlap, a bar opening the holder. An office cites nothing, and the card says why. | Who held what: it is given the tenures. |
 | `panel/` | The shell plus one file per card. Every card is a head, a summary and collapsible sections with counts: consequences, causes, the other branches, the horizon inside the consequences, supporting and dissenting citations shown apart with their verification marks, confidence and status shown as such; an event's actors as chips in the head, the walked path as a breadcrumb above it, a source's card with everything that cites it, an actor's card with its relations grouped by type and direction and one tenure strip per office it owns, an office's card with every turn at it in order, a place's card, and the members of a cluster. | Traversal logic. |
