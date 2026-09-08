@@ -6,6 +6,30 @@ session ends. `ARCHITECTURE.md` is the target; this file is the position.
 
 ## Last updated
 
+On the branch `world`, 2026-09-08, after M41b: **the second Portuguese round is
+drafted and wired, and it took twenty-four retractions to do it.** Of M41a's
+forty-two records, **sixteen were kept, twenty-four retracted (57%, against
+M40b's 31%) and two merged** into records the atlas already held and the
+import's reconciliation had missed — `uniao-nacional` and `partido-democratico`
+(deviation 211). The one event, the 2010–2014 financial crisis, is drafted and
+carries **three edges**: `caused` the request for assistance of April 2011
+(consensus) and the early election of that June (probable), with the euro as a
+`precondition-of` it (probable, and it is Reis's argument). The forty-one actors
+could take no edge at all — an edge runs between events — so the one-edge rule
+was read across into **ten actor lines** on records whose own prose already
+names the actor and **eight relations**, which is deviation 208; the First
+Republic's party system is the part that gained most, with the two mergers of
+1923 and the Evolutionists into the Liberals now drawn. Fourteen of the
+twenty-four retracted are companies, and the reason is one gap: this atlas has
+no economic history of Portugal after the nationalisations of 1975.
+`docs/m41-retractions.md` names all twenty-four and says what each would need.
+Deviations 208 to 211 are this run's; 209 and 210 are the brief asking for
+`data/roles.json` and a `retraction` block that exist on `m0` and not here.
+`node tools/validate.mjs` without `--index` is clean and the warnings are down
+from 45 to 3, none of them M41's; `node --test` is 602 of 604, still the two
+deliberate index-staleness failures of deviation 206. The rest of this section
+is `m0`'s and this paragraph does not touch it.
+
 On the branch `world`, 2026-09-08: **M41a is done — the 150 ticked candidates
 are imported and merged — but it returned institutions where the brief asked
 for consequence, and `world` is knowingly red on two tests.** 42 records
@@ -3295,6 +3319,53 @@ gave that to the map and the timeline, and M25 did not widen it.
      queries rather than about the import. M41b is where a candidate that
      earns no honest edge is retracted, and it will be retracting mostly
      companies.
+208. **An actor takes no edge, so M41b's rule is not M40b's.** The brief says
+     "edges to what is here", which is what M40b did with ninety-one imported
+     *events*. Forty-one of M41a's forty-two are **actors**, and an edge runs
+     between events; there is no such thing as an edge to an actor. So the
+     owner's one-edge rule was read across into the only two things that
+     honestly attach an actor to the graph, and `docs/m41-retractions.md`
+     states the reading at the top: an **actor line on an event the atlas
+     already holds**, where that event's own prose already names the actor or
+     the actor's cached lead says plainly that it took part in it; or a
+     **relation** to an actor already here, cited like any other relation.
+     Ten actor lines and eight relations came out of it. The bar's second half
+     was kept exactly: nothing was written in order to keep a record, which is
+     why no company got the `part-of Portugal` relation that would have
+     cleared all twenty-four warnings and said nothing.
+209. **`data/roles.json`, `data/categories.json` and the `category` field are
+     on `m0` and not on `world`.** The brief asks for every actor line's role
+     to be one of the thirty-one and for a `category` from the list where the
+     title makes it unambiguous. This branch forked before M32b: it has no
+     `data/roles.json`, no `docs/roles-mapping.md`, roles free text in
+     `schema/v1/event.json`, and no `category` property at all — and that
+     schema is `additionalProperties: false`, so writing one would have been
+     an error here. The ten roles written are therefore taken from `m0`'s
+     thirty-one anyway (`party`, `opposition`, `supporter`, `institution`,
+     `debtor`), so that rule 25 passes when `world` is merged; no category was
+     written on any record. The event `crisis-portugal` would be `economy`
+     when the field exists.
+210. **There is no `retraction: { on, reason }` in this schema.** The brief
+     names that shape; the envelope has no such property, and
+     `additionalProperties: false` would refuse it. M40b's pattern was used
+     instead, which is the same information in the fields that exist:
+     `status: "retracted"`, `m41-retracted` in `review.flags`, and the reason
+     as `review.note`, capped at the schema's five hundred characters. The
+     two merges use M22's: `status: "merged"`, `supersededBy`, `m41-merged`.
+211. **Two of the forty-two were neither wired nor retracted but merged, and
+     that is a finding about the import.** Q954010 is the `uniao-nacional`
+     this atlas has held since M7 — same interval, three names in common,
+     three election records already naming it — and Q1783440 is
+     `partido-democratico`, which six records from 1915 to 1926 name. The
+     import's reconciliation, whose whole job is to catch this, matched
+     neither, and both survivors carry no `wikidata` for it to have matched
+     *on*: the reconciliation is by identifier and these two were only ever
+     matchable by name. M40a's ninety-one events produced no duplicate at all
+     and M22's elections produced several; the difference is that an event's
+     name is a date and an actor's is a name. Nothing was done about the
+     reconciler here — the brief does not ask and the tool has no network in
+     this sandbox — but a name-and-interval pass before the import writes an
+     actor is the obvious fix, and M42 will hit this harder than M41 did.
 
 
 ## Dates to verify
@@ -3791,3 +3862,6 @@ M41a resumed 2026-09-08T02:02:02Z by scheduled (branch world)
 M41a done
 
 M41b started 2026-09-08T02:52:04Z by scheduled (branch world)
+M41b done
+
+M41 done
