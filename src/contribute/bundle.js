@@ -863,7 +863,15 @@ const IDENTITY_KEYS = Object.freeze(['wikipedia', 'sitelinks']);
 // `KIND.event.fields`; a place's former names are still nobody's to type,
 // because a dated name is a claim with its own years and belongs in an editor
 // of its own rather than in a text box (M38).
+// An event's `names` is here since I8 and for exactly this reason: H7 gave
+// the search shard an event's other names and the Wikidata import now writes
+// them onto draft events, and no form draws the field. Without this line the
+// first save through the dashboard — the save a reviewer makes to clear the
+// `imported-names` flag — would delete what the flag is about. Drawing an
+// input for it is a decision about the form and is not this run's; carrying
+// it across untouched is the rule this table already states.
 const KEPT_KEYS = Object.freeze({
+  event: Object.freeze(['names']),
   place: Object.freeze(['historicalNames']),
 });
 

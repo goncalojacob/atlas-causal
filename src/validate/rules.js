@@ -17,6 +17,7 @@ import {
   DEPRECATED_RELATION_TYPES, WRITABLE_RELATION_TYPE_IDS,
 } from '../vocab.js';
 import { kindsWhere, licensesOf } from '../kinds.js';
+import { NON_COMMERCIAL } from '../licensing.js';
 import { NC_ORIGINS, REVIEW_STATUS, mayBeNonCommercial, originTool } from '../origin.js';
 
 // An interval as two astronomical bounds for overlap tests: an open end
@@ -926,10 +927,21 @@ export function checkRules(records, topology = {}, { universe: prebuilt = null }
     if (!allowed.includes(r.license)) {
       error(12, r, '/license', `records under data/${r.kind}s/ must be licensed ${allowed.join(' or ')}`);
     }
-    // data/actors/ is a CC BY-SA directory with one hole in it, and the hole
-    // is exactly the actors an import creates for geometry it does not own.
-    if (r.kind === 'actor' && r.license === 'CC-BY-NC-SA-4.0' && !mayBeNonCommercial(r)) {
-      error(12, r, '/license', `an actor may be ${r.license} only when an import wrote it: origin.tool must be ${NC_ORIGINS.join(' or ')}`);
+    // The NC exception follows the *origin* and not the directory (I8, owner
+    // question 4). `data/actors/` and `data/relations/` are CC BY-SA
+    // directories with one hole each, and the hole is the same in both: the
+    // records an import creates out of a dataset this project does not own —
+    // the territories' actors, and the successions the split table states.
+    // Which directories may hold such a record is `licensesOf()` above, and
+    // this is the other half: whoever is in it got there by writing it.
+    //
+    // Only a *mixed* kind is asked. Where a kind is somebody else's material
+    // throughout — `data/presences/`, which carries no other licence and
+    // which the contribution form cannot write — the licence is the
+    // directory's and there is no hole for an origin to open.
+    const mixed = allowed.some((id) => NON_COMMERCIAL.includes(id)) && allowed.some((id) => !NON_COMMERCIAL.includes(id));
+    if (mixed && NON_COMMERCIAL.includes(r.license) && !mayBeNonCommercial(r)) {
+      error(12, r, '/license', `a record may be ${r.license} only when an import wrote it: origin.tool must be ${NC_ORIGINS.join(' or ')}`);
     }
     if (!Array.isArray(r.authors) || r.authors.length === 0) {
       error(12, r, '/authors', 'authors must name at least one contributor');

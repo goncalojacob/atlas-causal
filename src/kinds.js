@@ -191,9 +191,13 @@ const KIND_ENTRIES = {
     schema: 'v1/relation.json',
     label: 'Relation',
     hint: 'A dated link between two actors — a regime of a state, a member of a party, who led a body. The id is derived: from, to and type.',
-    // A relation is written by a person about two actors; nothing imports
-    // one, so there is no NC hole here.
-    licenses: ['CC-BY-SA-4.0'],
+    // A relation is written by a person about two actors — except the
+    // successions the CShapes split table states, which the import derives
+    // from a dataset this project does not own (I8, owner question 4). The
+    // hole is the same one `data/actors/` has and it is opened by the same
+    // thing: rule 12 lets an NC licence stand only where `origin.tool` is an
+    // NC import, so the exception follows the origin and not the directory.
+    licenses: ['CC-BY-SA-4.0', 'CC-BY-NC-SA-4.0'],
     identity: false,
     body: false,
     entryPage: false,

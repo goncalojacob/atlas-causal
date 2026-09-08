@@ -13,7 +13,7 @@ import { ACTOR_TYPE_LABEL } from './event.js';
 import { RELATION_LABEL, RELATION_GROUP_ORDER } from '../vocab.js';
 import { sectionHtml, openSection } from './sections.js';
 import { officeStripsSection } from './office.js';
-import { attributionHtml } from '../licensing.js';
+import { attributionHtml, attributionSource } from '../licensing.js';
 
 // What a relation is called from each end, and the order the groups are drawn
 // in: both from the one list of relation types (vocab.js), which is also
@@ -303,7 +303,13 @@ export function renderActorCard(ctx, { container, actor, mine, state = null, rem
       // A, finding 24). It is rendered here rather than in the card's markup
       // because the spine carries no `license` and this is where the record
       // itself arrives.
-      container.querySelector('[data-slot="actor-summary"]').innerHTML = `${attributionHtml(rec)}<p>${esc(rec.summary)}</p>${place ? `<p class="meta">${place}</p>` : ''}`;
+      // Since I8 the relations this card draws count too: a succession the
+      // CShapes import derived is NC material with no card of its own, and it
+      // is drawn on this one. One line for the page, about the record it is
+      // first true of (I8, A3) — which is this actor whenever the actor is
+      // itself an import's.
+      const drawn = [rec, ...(ctx.atlas.relationsByActor.get(actor.id) ?? []).map((r) => r.relation)];
+      container.querySelector('[data-slot="actor-summary"]').innerHTML = `${attributionHtml(attributionSource(drawn))}<p>${esc(rec.summary)}</p>${place ? `<p class="meta">${place}</p>` : ''}`;
       container.querySelector('[data-slot="actor-sources"]').innerHTML = rec.sources?.length
         ? ctx.citationsHtml(rec.sources, '', rec)
         : '<p class="muted">This actor cites nothing yet.</p>';

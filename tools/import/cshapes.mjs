@@ -1,9 +1,17 @@
 #!/usr/bin/env node
-// CShapes 2.0 → actors, presences and geometry shards. Offline, zero
-// dependencies, idempotent: it rewrites exactly the files it owns and
-// refuses to touch a record whose authors do not name it.
+// CShapes 2.0 → actors, presences, geometry shards and the successions the
+// split table states. Offline, zero dependencies, idempotent: it rewrites
+// exactly the files it owns and refuses to touch a record whose authors do
+// not name it.
 //
 //   node tools/import/cshapes.mjs --source <cshapes_2_gw.topojson> [--data <dir>] [--check] [--report]
+//   node tools/import/cshapes.mjs --relations [--data <dir>]
+//
+// --relations is the one pass that needs no topology: which entity code is
+// two actors over its life is data/imports/cshapes-actors.json, and the cut
+// it records is a `succeeded` relation between the two (docs/index2-plan.md,
+// D12). The full import runs it too, so a re-import cannot leave the
+// successions behind.
 //
 // Which actor a code's territory belongs to is not decided here: it is
 // data/imports/cshapes-actors.json, and --report lists the codes that
@@ -53,6 +61,12 @@ export const IMPORT_AUTHOR = Object.freeze({ name: 'CShapes 2.0 import (tools/im
 // queue read.
 export const ORIGIN_TOOL = 'cshapes';
 export const LICENSE = 'CC-BY-NC-SA-4.0';
+// What a reviewer is being told to look at: a record no person has read,
+// written out of somebody else's database. The same flag the Wikidata
+// import's records carry, because it means the same thing.
+export const IMPORTED_FLAG = 'imported-facts';
+// The relation a split states, and the only type this import writes.
+export const RELATION_TYPE = 'succeeded';
 
 // Simplification: comparable in detail to the Natural Earth 110 m coastlines
 // already under data/geo/, which is what the map draws these over. The
@@ -448,6 +462,66 @@ export function planImport(features, { created, shards = SHARDS, map = {}, exist
   return { source: sourceRecord({ created }), actors, presences, shardFiles, problems, report };
 }
 
+// --- the successions the split table states -------------------------------
+//
+// `entries.<code>.actor` is the colony and `entries.<code>.splits[].actor` the
+// state after it, with `from` the day the source draws the cut. That is a
+// `succeeded` relation and nothing else — the same pair of ids, the same
+// date, already decided by whoever wrote the entry — and 79 of them were
+// latent in the file while `?actor=angola` opened on an empty card (health
+// review B, finding 28; docs/index2-plan.md D12).
+//
+// Nothing here is a historical claim of this run's: the pair is the mapping
+// file's, the date is the source's, and the note is the entry's own, copied
+// verbatim because it is where the table says a cut is doubtful — Cuba's
+// says the split date is earlier than the state's first independent date,
+// and a reviewer must see that beside the relation it produced
+// (docs/index2/i8-brief.md, A2). Pure, like planImport.
+export const relationId = (from, to) => `${from}--${to}--${RELATION_TYPE}`;
+
+export function planRelations(map = {}, { created } = {}) {
+  const relations = [];
+  const problems = [];
+  // Numeric where the codes are numbers, so the report reads in the order the
+  // file does; the writes themselves are one file each and order-free.
+  const codes = Object.keys(map).sort((a, b) => (Number(a) - Number(b)) || (a < b ? -1 : a > b ? 1 : 0));
+  for (const code of codes) {
+    const entry = map[code];
+    for (const split of entry?.splits ?? []) {
+      const from = entry.actor;
+      const to = split.actor;
+      if (typeof from !== 'string' || typeof to !== 'string' || !from || !to) {
+        problems.push(`entity ${code}: a split with no actor id on one side cannot become a relation`);
+        continue;
+      }
+      if (from === to) {
+        problems.push(`entity ${code}: the split names "${from}" on both sides; a succession runs between two different actors`);
+        continue;
+      }
+      const year = yearOf(split.from);
+      if (!Number.isInteger(year) || year === 0) {
+        problems.push(`entity ${code}: "${split.from}" is not a date a year can be read off`);
+        continue;
+      }
+      relations.push(record(relationId(from, to), 'relation', {
+        // Drafted, and flagged as somebody else's facts: review.html is
+        // where a person reads it, and may retract it and write a CC BY-SA
+        // relation from another source instead.
+        review: { status: REVIEW_STATUS.draft, flags: [IMPORTED_FLAG] },
+        sources: [{ source: SOURCE_ID, locator: `gwcode ${code}` }],
+        from,
+        to,
+        type: RELATION_TYPE,
+        // A succession is a moment: one year at both bounds, with the day
+        // the source draws the cut beside it (i8-brief, A1).
+        when: { start: year, end: year, date: split.from },
+        ...(typeof entry.note === 'string' && entry.note.trim() !== '' ? { note: entry.note } : {}),
+      }, { created }));
+    }
+  }
+  return { relations, problems };
+}
+
 // The report as a page, so the owner can work down it in batches: every code
 // the source gives both as somebody's dependency and as its own state, that
 // the mapping file does not yet cut. It is generated; the sentence at the top
@@ -547,6 +621,67 @@ function sortKeys(value) {
   return value;
 }
 
+// The mapping is data (see MAP_FILE). A missing file is not an error — the
+// import then derives every actor from the source's own names — but a broken
+// one is, because carrying on would silently write the wrong actors.
+// → { map, note, failed }: exactly one of `note` and `failed` where there is
+// anything to say.
+async function readMap(dataDir) {
+  const mapPath = path.join(dataDir, ...MAP_FILE.split('/'));
+  if (!existsSync(mapPath)) {
+    return { map: {}, note: `note: no data/${MAP_FILE}; every actor is derived from the source's own names` };
+  }
+  const loaded = await readJson(mapPath);
+  if (loaded === null) return { map: {}, failed: `data/${MAP_FILE} is not valid JSON` };
+  return { map: loaded.entries ?? {} };
+}
+
+// The successions to write, less the ones already on disk. This pass only
+// ever *creates*: a relation whose id exists is reported and left alone
+// whatever its standing — hand-written, imported, signed or retracted —
+// because the id is derived from the pair and the type, so a file under that
+// name is already somebody's answer to the same question. That is
+// identity.mjs's rule applied to a record rather than to a field, and it is
+// what makes a second pass write nothing.
+export async function relationWrites(dataDir, map, { today, notes = [], problems = [] } = {}) {
+  const dir = path.join(dataDir, 'relations');
+  const plan = planRelations(map, { created: today });
+  problems.push(...plan.problems);
+  const existing = existsSync(dir)
+    ? new Set((await readdir(dir)).filter((name) => name.endsWith('.json')))
+    : new Set();
+  const writes = [];
+  for (const rec of plan.relations) {
+    const file = `${rec.id}.json`;
+    if (existing.has(file)) {
+      notes.push(`note: data/relations/${file} already exists; the import reports it and leaves it alone`);
+      continue;
+    }
+    writes.push({ file: path.join(dir, file), text: asText(rec) });
+  }
+  return writes;
+}
+
+// --relations: the successions on their own, with no topology to decode. The
+// split table is the whole input, so this runs where the 7.6 MB source file
+// is not — which is every sandbox but the one the geometry was imported in.
+export async function runRelations(dataDir = DEFAULT_DATA, { today = new Date().toISOString().slice(0, 10) } = {}) {
+  const notes = [];
+  const problems = [];
+  const { map, note, failed: broken } = await readMap(dataDir);
+  if (broken) return { failed: [broken], notes, written: [] };
+  if (note) notes.push(note);
+  const writes = await relationWrites(dataDir, map, { today, notes, problems });
+  if (problems.length) return { failed: problems, notes, written: [] };
+  if (writes.length) await mkdir(path.join(dataDir, 'relations'), { recursive: true });
+  const written = [];
+  for (const { file, text } of writes) {
+    await writeFile(file, text, 'utf8');
+    written.push(path.relative(dataDir, file));
+  }
+  return { failed: [], notes, written };
+}
+
 export async function runImport(sourceFile, dataDir = DEFAULT_DATA, { today = new Date().toISOString().slice(0, 10), check = false } = {}) {
   const buffer = await readFile(sourceFile);
   const digest = sha256(buffer);
@@ -569,18 +704,9 @@ export async function runImport(sourceFile, dataDir = DEFAULT_DATA, { today = ne
   const sourceOnDisk = await readJson(path.join(dataDir, 'sources', `${SOURCE_ID}.json`));
   const createdOf = (dir, id, fallback) => dir.owned.get(`${id}.json`)?.created ?? fallback;
 
-  // The mapping is data (see MAP_FILE). A missing file is not an error — the
-  // import then derives every actor from the source's own names — but a
-  // broken one is, because carrying on would silently write the wrong actors.
-  const mapPath = path.join(dataDir, ...MAP_FILE.split('/'));
-  let map = {};
-  if (existsSync(mapPath)) {
-    const loaded = await readJson(mapPath);
-    if (loaded === null) return { failed: [`data/${MAP_FILE} is not valid JSON`], notes, written: [], removed: [] };
-    map = loaded.entries ?? {};
-  } else {
-    notes.push(`note: no data/${MAP_FILE}; every actor is derived from the source's own names`);
-  }
+  const { map, note: mapNote, failed: mapFailed } = await readMap(dataDir);
+  if (mapFailed) return { failed: [mapFailed], notes, written: [], removed: [] };
+  if (mapNote) notes.push(mapNote);
   // An actor the mapping file names and somebody has already written is
   // reused untouched; one the file names that nobody has written yet is
   // created here, like any other. A record the file does *not* name and that
@@ -629,6 +755,10 @@ export async function runImport(sourceFile, dataDir = DEFAULT_DATA, { today = ne
   };
   claim(actorsDir, 'actors', actorSurvey, plan.actors);
   claim(presencesDir, 'presences', presenceSurvey, plan.presences);
+  // The successions the same mapping file states, so that a re-import cannot
+  // leave them behind. They are not `claim`ed: a relation is never rewritten,
+  // only created (see relationWrites).
+  writes.push(...await relationWrites(dataDir, map, { today, notes, problems: failed }));
 
   const sourceCreated = ownedBy(sourceOnDisk) ? sourceOnDisk.created : sourceOnDisk ? null : today;
   if (sourceCreated === null) {
@@ -644,7 +774,7 @@ export async function runImport(sourceFile, dataDir = DEFAULT_DATA, { today = ne
 
   if (failed.length) return { failed, notes, written: [], removed: [] };
 
-  for (const dir of [actorsDir, presencesDir, geoDir, path.join(dataDir, 'sources')]) await mkdir(dir, { recursive: true });
+  for (const dir of [actorsDir, presencesDir, geoDir, path.join(dataDir, 'sources'), path.join(dataDir, 'relations')]) await mkdir(dir, { recursive: true });
   const wanted = new Set(writes.map((w) => w.file));
   const removed = [];
   // Files the import owns and no longer produces: an entity that left the
@@ -680,10 +810,12 @@ async function main(argv) {
   let dataDir = DEFAULT_DATA;
   let reportFile = null;
   let check = false;
+  let relationsOnly = false;
   for (let i = 0; i < argv.length; i += 1) {
     if (argv[i] === '--source') source = path.resolve(argv[++i]);
     else if (argv[i] === '--data') dataDir = path.resolve(argv[++i]);
     else if (argv[i] === '--check') check = true;
+    else if (argv[i] === '--relations') relationsOnly = true;
     else if (argv[i] === '--report') reportFile = path.join(ROOT, ...REPORT_FILE.split('/'));
     else if (argv[i] === '--report-to') reportFile = path.resolve(argv[++i]);
     else {
@@ -691,8 +823,19 @@ async function main(argv) {
       return 2;
     }
   }
+  if (relationsOnly) {
+    const result = await runRelations(dataDir);
+    for (const note of result.notes) console.error(note);
+    if (result.failed.length) {
+      for (const problem of result.failed) console.error(`error: ${problem}`);
+      return 1;
+    }
+    console.log(`${result.written.length} succession(s) written from data/${MAP_FILE}`);
+    return 0;
+  }
   if (!source) {
     console.error('usage: node tools/import/cshapes.mjs --source <cshapes_2_gw.topojson> [--data <dir>] [--check] [--report | --report-to <file>]');
+    console.error('       node tools/import/cshapes.mjs --relations [--data <dir>]');
     console.error(`the file is inst/extdata/cshapes_2_gw.topojson.xz in the CRAN package, decompressed; sha256 ${SOURCE_FILE_SHA256}`);
     return 2;
   }

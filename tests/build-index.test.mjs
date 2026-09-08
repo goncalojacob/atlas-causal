@@ -132,7 +132,7 @@ test('manifest names the hashed files, counts, lanes and land', async () => {
   assert.equal(manifest.schema, 6);
   // `counts.presences` stays where it is: a count is not a file, and it is
   // what the manifest says about a dataset whether or not the file exists.
-  assert.deepEqual(manifest.counts, { events: 12, edges: 10, sources: 4, actors: 4, presences: 3, places: 11, relations: 3, offices: 2, tenures: 4, narratives: 1, regions: 3 });
+  assert.deepEqual(manifest.counts, { events: 12, edges: 10, sources: 4, actors: 4, presences: 3, places: 11, relations: 4, offices: 2, tenures: 4, narratives: 1, regions: 3 });
   // The whole-corpus file is not named and not written since I4b: the graph is
   // the core, and what the core drops is in the attribute shards.
   assert.equal(Object.hasOwn(manifest.files, 'spine'), false);

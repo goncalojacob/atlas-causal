@@ -1,7 +1,7 @@
 // The relation kind: what the topology carries, rule 19 — the endpoints
 // table, the two different actors, acyclicity per type — and the reach of
 // rules 2, 3, 6, 11, 12 and 15 into it. Every case builds its own synthetic
-// relation over the fixture actors, so the three relations the fixtures carry
+// relation over the fixture actors, so the four relations the fixtures carry
 // are never the thing under test.
 
 import { test } from 'node:test';
@@ -67,7 +67,12 @@ test('a relation reaches the topology whole, note and all', async () => {
   // without fetching one record each.
   assert.match(one.note, /^Synthetic/);
   assert.equal(byId['fixture-actor-one--fixture-actor-two--member-of'].note, null);
-  assert.equal(topology.relations.length, 3);
+  // And the licence comes with it since I8, for the same reason: a relation
+  // has no card that would fetch the record, and the two pages that draw one
+  // have to say whose material it is (owner question 4).
+  assert.equal(one.license, 'CC-BY-SA-4.0');
+  assert.equal(byId['fixture-polity-four--fixture-polity-three--succeeded'].license, 'CC-BY-SA-4.0');
+  assert.equal(topology.relations.length, 4);
   // Sorted by id like every other list in the index.
   assert.deepEqual([...topology.relations].map((r) => r.id).sort(), topology.relations.map((r) => r.id));
 });
@@ -155,7 +160,9 @@ test('rule 19: which kind of actor may stand at each end', async () => {
 test('rule 19: a succession runs between two actors of the same kind', async () => {
   let r = await run((fx) => { fx.records.push(relation('fixture-polity-four', 'fixture-actor-two', 'succeeded')); });
   assert.equal(rulesHit(r, 19).length, 1, messages(r));
-  r = await run((fx) => { fx.records.push(relation('fixture-polity-four', 'fixture-polity-three', 'succeeded', { when: { start: 1260, end: 1260 } })); });
+  // The passing case is the fixture set itself since I8: it carries the
+  // succession the CShapes import derives, between two polities.
+  r = await run();
   assert.equal(r.errors.length, 0, messages(r));
 });
 
@@ -167,11 +174,16 @@ test('rule 19: regime-of and succeeded are acyclic, each on its own', async () =
   });
   assert.ok(rulesHit(r, 19).some((e) => /closes on itself/.test(e.message)), messages(r));
   // Acyclicity is per type: the same pair under two different types is not a
-  // cycle, because neither line closes.
-  r = await run((fx) => {
-    fx.records.push(relation('fixture-polity-three', 'fixture-polity-four', 'succeeded', { when: { start: 1260, end: 1260 } }));
-  });
+  // cycle, because neither line closes. The fixture set is that case since
+  // I8 — four is a regime of three and was also succeeded by it — so the
+  // passing case is the set itself.
+  r = await run();
   assert.equal(r.errors.length, 0, messages(r));
+  // Doubled back on, the succession line does close.
+  r = await run((fx) => {
+    fx.records.push(relation('fixture-polity-three', 'fixture-polity-four', 'succeeded', { when: { start: 1300, end: 1300 } }));
+  });
+  assert.ok(rulesHit(r, 19).some((e) => /closes on itself/.test(e.message)), messages(r));
   // A retracted relation is not in the line either.
   r = await run((fx) => {
     fx.records.push(relation('fixture-polity-three', 'fixture-polity-four', 'regime-of', { status: 'retracted' }));

@@ -46,7 +46,8 @@ test('the three kinds with a page are the three kinds that may carry a body', ()
   assert.equal(displayName({ id: 'only-an-id' }), 'only-an-id');
 });
 
-const page = pageWith(await atlasOf(FIXTURE_DATA));
+const atlas = await atlasOf(FIXTURE_DATA);
+const page = pageWith(atlas);
 
 test('an event entry carries the head, the summary, the actors and the way back', async () => {
   const html = await page('fixture-event-a', 'event');
@@ -97,6 +98,26 @@ test('an actor entry lists relations and appearances; a place entry lists what h
   assert.match(place, /entry.html\?id=fixture-event-a/);
   // A place cites nothing, and the page says why rather than showing a gap.
   assert.match(place, /A place is a geographic fact/);
+});
+
+// I8, A3: a relation has no entry page of its own, so a succession derived
+// from the CShapes split table is somebody else's material on a page whose own
+// record is this project's. The page says so once, and stops saying it when
+// the relation is the atlas's own work.
+test('an entry page says whose material a relation it draws is', async () => {
+  const succession = atlas.relations.get('fixture-polity-four--fixture-polity-three--succeeded');
+  const own = succession.license;
+  assert.doesNotMatch(await page('fixture-polity-three', 'actor'), /not under the licence of the rest of this atlas/);
+  try {
+    // The shape the import writes: NC material, on a CC BY-SA actor's page.
+    succession.license = 'CC-BY-NC-SA-4.0';
+    const html = await page('fixture-polity-three', 'actor');
+    assert.match(html, /class="notice licence"/);
+    assert.match(html, /CShapes 2\.0/);
+    assert.equal(html.match(/class="notice licence"/g).length, 1, 'once for the page');
+  } finally {
+    succession.license = own;
+  }
 });
 
 test('the fixture flag is carried through every link the page writes', async () => {

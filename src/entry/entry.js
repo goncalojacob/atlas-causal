@@ -19,7 +19,7 @@ import { articleFor } from '../wikipedia.js';
 import { ACTOR_TYPE_LABEL } from '../panel/event.js';
 import { RELATION_LABEL, RELATION_ORDER } from '../panel/actor.js';
 import { kindsWhere, byKind } from '../kinds.js';
-import { attributionHtml } from '../licensing.js';
+import { attributionHtml, attributionSource } from '../licensing.js';
 import { editUrl } from '../share.js';
 
 // The kinds with a page. Anything else — an edge, a narrative, a source — is
@@ -247,7 +247,13 @@ export function entryHtml(atlas, {
   // the material. An NC-licensed actor's summary used to be rendered on the
   // same page as CC BY-SA text with nothing to tell them apart (health review
   // A, finding 24).
-  const licence = attributionHtml(record);
+  // Since I8 the relations drawn below count too: a succession derived from
+  // the CShapes split table is NC material on a page whose own record may be
+  // CC BY-SA, and it has no entry page of its own to say so on (I8, A3).
+  const licence = attributionHtml(attributionSource([
+    record,
+    ...(atlas.relationsByActor.get(record.id) ?? []).map((r) => r.relation),
+  ]));
   if (licence) notices.push(licence);
   const variants = kind === 'event' ? [] : (record.names ?? []).slice(1);
   const entry = bodyHtml(atlas, links, record);

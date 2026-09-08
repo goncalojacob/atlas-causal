@@ -48,10 +48,10 @@
       "$ref": "../common/interval.json"
     },
     "note": {
-      "description": "Optional, short, and written by a person: what a bare type and two dates cannot say. Carried in the topology, so an actor's card draws its relations without fetching one record each.",
+      "description": "Optional, short, and written by a person: what a bare type and two dates cannot say. Carried in the topology, so an actor's card draws its relations without fetching one record each. 400 and not 200 since I8: the CShapes split table's own notes are copied verbatim onto the successions derived from it, because that is where the table says a cut is doubtful — Cuba's runs to 319 characters and truncating it would drop the caveat and keep the claim (docs/index2/i8-brief.md, A2).",
       "oneOf": [
         { "type": "null" },
-        { "type": "string", "minLength": 1, "maxLength": 200 }
+        { "type": "string", "minLength": 1, "maxLength": 400 }
       ]
     }
   }

@@ -50,11 +50,14 @@ const atlas = await atlasOf(FIXTURE_DATA);
 
 test('a relation is headed one way on one card and the other way on the other', async () => {
   const ctx = context(atlas);
+  // Two relations at each end since I8: the pair also stands in the
+  // succession the CShapes import would derive, which is what gives "Before
+  // and after" something to draw on the fixtures.
   const regime = actorCardHtml(ctx, atlas.actors.get('fixture-polity-four'));
-  assert.deepEqual(headings(regime), ['Regime of']);
+  assert.deepEqual(headings(regime), ['Regime of', 'Succeeded by']);
   assert.match(regime, /data-action="actor" data-id="fixture-polity-three"/);
   const state = actorCardHtml(ctx, atlas.actors.get('fixture-polity-three'));
-  assert.deepEqual(headings(state), ['Regimes']);
+  assert.deepEqual(headings(state), ['Regimes', 'Successor of']);
   assert.match(state, /data-action="actor" data-id="fixture-polity-four"/);
   assert.match(state, /<span class="when">1120 – 1260<\/span>/);
   // The note the record carries is drawn with it, and comes from the topology
@@ -156,8 +159,11 @@ test('the actor card is sections with counts, opening on where it appears', asyn
   const html = actorCardHtml(ctx, atlas.actors.get('fixture-polity-three'));
   const keys = [...html.matchAll(/<section class="card-section(?: open)?" data-section="([a-z-]+)">/g)].map((m) => m[1]);
   // `offices` since M30b-1: the polity owns one post, so it gets one strip.
-  assert.deepEqual(keys, ['appearances', 'relations', 'offices', 'territory', 'sources']);
-  assert.match(html, /<section class="card-section open" data-section="appearances">/);
+  // `succession` first since I8, and the card opens on it: no event names
+  // this polity, and a card that opened on an empty list to say "nothing
+  // happened here" is the whole of health review B, finding 28.
+  assert.deepEqual(keys, ['succession', 'appearances', 'relations', 'offices', 'territory', 'sources']);
+  assert.match(html, /<section class="card-section open" data-section="succession">/);
   assert.equal(count(html, 'appearances'), String((atlas.eventsByActor.get('fixture-polity-three') ?? []).length));
   assert.equal(count(html, 'sources'), String(atlas.citationCount('actor', 'fixture-polity-three')));
   // The reader's own choice stands where the arrival says nothing.
@@ -215,8 +221,9 @@ test('the territory section says "loading" until the presences land, then the li
 // the colony before it, with the same name in the search box and every event
 // filed under the colony, so the state's card opened with no appearances at
 // all (health review B, finding 28). A synthetic pair rather than a fixture
-// record: what is under test is the card, and the fixtures carry no
-// succession — the repository's own do, and the browser test opens one.
+// record, because what is under test is the card and the pair has to carry
+// events at one end and none at the other; the fixtures carry a succession of
+// their own since I8, asserted below, and the browser test opens a real one.
 function pair({ eventsBefore = 2, eventsAfter = 0 } = {}) {
   const event = (id, year) => ({ id, title: id, when: { start: year, end: year }, region: 'europe', status: 'active' });
   const before = Array.from({ length: eventsBefore }, (_, i) => event(`before-${i}`, 1960 + i));
@@ -282,4 +289,19 @@ test('an actor that succeeds nothing has no such section at all', () => {
   const ctx = context(atlas);
   const html = actorCardHtml(ctx, atlas.actors.get('fixture-actor-one'));
   assert.equal(sectionOf(html, 'succession'), '', 'nothing is said about a succession there is not');
+});
+
+// I8: the feature H7 built had no data behind it on either dataset. The
+// fixtures carry a succession now, and it is drawn from both ends without
+// anything synthetic being handed to the card.
+test('the fixture succession is drawn from both ends of the pair', () => {
+  const ctx = context(atlas);
+  const state = sectionOf(actorCardHtml(ctx, atlas.actors.get('fixture-polity-three')), 'succession');
+  assert.match(state, /<h3>Before /);
+  assert.match(state, /data-action="actor" data-id="fixture-polity-four"/, 'the predecessor is a way in');
+  assert.match(state, /Fixture Polity Four/);
+  assert.match(state, /<span class="when">1260<\/span>/);
+  const colony = sectionOf(actorCardHtml(ctx, atlas.actors.get('fixture-polity-four')), 'succession');
+  assert.match(colony, /<h3>After /);
+  assert.match(colony, /data-action="actor" data-id="fixture-polity-three"/);
 });

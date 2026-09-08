@@ -42,6 +42,17 @@ export const LICENSES = Object.freeze({
   }),
 });
 
+// The licences whose material is somebody else's and not commercially
+// reusable. Rule 12 lets one of these stand on a record only where an import
+// created it (`origin.tool` in NC_ORIGINS), whatever directory the record
+// lives in: the exception follows the origin, not the directory (I8, owner
+// question 4). Derived from the table above rather than listed twice, so a
+// licence added there is covered here by having an attribution at all — which
+// is what "somebody else's material" means in this file.
+export const NON_COMMERCIAL = Object.freeze(
+  Object.keys(LICENSES).filter((id) => id.includes('-NC-')),
+);
+
 // The licence a directory of generated geometry carries, which is per source
 // and not per record — those files have no `license` field of their own, so
 // this is the only place it is written down. `data/index/` is the one entry
@@ -82,6 +93,17 @@ export function attributionOf(record) {
   const licence = LICENSES[id];
   if (!licence?.attribution) return null;
   return { license: id, name: licence.name, url: licence.url, attribution: licence.attribution, source: licence.source };
+}
+
+// The first of these records whose material is somebody else's, or null. A
+// page draws more than one record: an actor's card and its entry page draw
+// the relations the actor stands in, and a relation has no card of its own,
+// so a succession the CShapes import derived would otherwise be NC material
+// shown with nothing beside it (I8, A3). The licence asks for the line once
+// per page and not once per record, and this is what picks which record it is
+// said about — the record itself first, where that is one of them.
+export function attributionSource(records) {
+  return (records ?? []).find((record) => attributionOf(record)) ?? null;
 }
 
 // The line itself, for a card and for an entry page — one function, because

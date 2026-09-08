@@ -105,7 +105,7 @@ test('rule 11: a presence keeps a retired actor alive, and cannot use one', asyn
   assert.match(messagesFor, /cannot reference the retracted actor/);
 });
 
-test('rule 12: only an import may put the NC-SA licence on an actor', async () => {
+test('rule 12: only an import may put the NC-SA licence on a record', async () => {
   let r = await run((fx) => { fx.byId['fixture-polity-three'].license = 'CC-BY-NC-SA-4.0'; });
   assert.match(hit(r, 12)[0].message, /only when an import wrote it/);
   // What opens the hole is `origin`, not a name in `authors`: a person named
@@ -128,8 +128,28 @@ test('rule 12: only an import may put the NC-SA licence on an actor', async () =
     fx.byId['fixture-polity-three'].origin = { tool: 'wikidata' };
   });
   assert.equal(hit(r, 12).length, 1);
-  // A presence may carry it with no ceremony: that is what the directory is.
+  // Not even a presence carries it "with no ceremony" any more (I8, owner
+  // question 4). `data/presences/` is an NC directory because everything in
+  // it was imported, which is a fact about the records; the rule now asks
+  // them rather than trusting the directory to have been right.
   r = await run((fx) => { fx.byId[P3].license = 'CC-BY-NC-SA-4.0'; });
+  assert.equal(hit(r, 12).length, 1);
+  r = await run((fx) => {
+    fx.byId[P3].license = 'CC-BY-NC-SA-4.0';
+    fx.byId[P3].origin = { tool: 'cshapes' };
+  });
+  assert.equal(hit(r, 12).length, 0, messages(r));
+  // A relation is in the hole too since I8, on the same terms: the
+  // successions the CShapes split table states are the import's, and
+  // `data/relations/` held nothing but this project's own work before them.
+  const SUCCESSION = 'fixture-polity-four--fixture-polity-three--succeeded';
+  r = await run((fx) => { fx.byId[SUCCESSION].license = 'CC-BY-NC-SA-4.0'; });
+  assert.match(hit(r, 12)[0].message, /only when an import wrote it/);
+  r = await run((fx) => {
+    fx.byId[SUCCESSION].license = 'CC-BY-NC-SA-4.0';
+    fx.byId[SUCCESSION].origin = { tool: 'cshapes' };
+    fx.byId[SUCCESSION].authors = [{ name: 'CShapes 2.0 import (tools/import/cshapes.mjs)', github: null }];
+  });
   assert.equal(hit(r, 12).length, 0, messages(r));
   // An event may not, whoever wrote it.
   r = await run((fx) => { fx.byId['fixture-event-a'].license = 'CC-BY-NC-SA-4.0'; });

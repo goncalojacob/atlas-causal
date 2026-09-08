@@ -7,17 +7,20 @@ Per directory, with the attribution each one asks for
   notice; src/licensing.js is the one definition and tests/licensing.test.mjs
   holds the three together.
 
-  data/events/  data/edges/  data/sources/  data/places/  data/relations/
-  data/offices/  data/tenures/  data/narratives/
+  data/events/  data/edges/  data/sources/  data/places/  data/offices/
+  data/tenures/  data/narratives/
     CC BY-SA 4.0. Written here. Attribution: the atlas causal contributors
     named in each record's `authors`.
 
-  data/actors/
-    CC BY-SA 4.0, except the actors an import created for territory it does
-    not own, which are CC BY-NC-SA 4.0 and carry that in `license`. Rule 12
-    is what keeps the two apart, and it keys on `origin.tool`, not on a name
-    in `authors`. Attribution for the NC ones: CShapes 2.0 — Schvitz,
-    Girardin, Rüegger, Weidmann, Cederman and Gleditsch.
+  data/actors/  data/relations/
+    CC BY-SA 4.0, except what an import derived from a dataset this project
+    does not own, which is CC BY-NC-SA 4.0 and carries that in `license`:
+    the actors created for territory (data/actors/) and the successions the
+    CShapes split table states (data/relations/). Rule 12 is what keeps the
+    two apart, and it keys on `origin.tool`, not on the directory and not on
+    a name in `authors` — a record an import wrote carries its source's
+    licence wherever it lives. Attribution for the NC ones: CShapes 2.0 —
+    Schvitz, Girardin, Rüegger, Weidmann, Cederman and Gleditsch.
 
   data/presences/
     CC BY-NC-SA 4.0, all of it. Attribution as above.

@@ -155,6 +155,10 @@ export function projectV1(topology) {
       type: r.type,
       when: r.when,
       note: r.note ?? null,
+      // I8: a relation has no card that would fetch the record, so the two
+      // pages that draw one read the licence out of the index (owner
+      // question 4). The tenth literal, and the oracle says so too.
+      license: r.license,
     })),
     offices: (topology.offices ?? []).map((o) => oracleEntry({
       ...oracleEnvelope(o, 'office'),

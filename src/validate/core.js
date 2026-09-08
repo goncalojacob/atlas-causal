@@ -482,6 +482,11 @@ export function buildTopology(records, regions, { deriveRegion, roles, categorie
         type: r.type,
         when: r.when,
         note: typeof r.note === 'string' ? r.note : null,
+        // A relation has no card of its own, so nothing ever fetches the
+        // record to find its licence out — and a succession the CShapes
+        // import derived is NC material drawn on somebody else's card. The
+        // card and the entry page say so once, out of this (I8, A3).
+        license: r.license,
         status: r.status,
         supersededBy: r.supersededBy ?? null,
         aliases: r.aliases ?? [],

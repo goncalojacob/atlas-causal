@@ -145,6 +145,7 @@ const KIND_COLUMNS = {
     col('to', 'id', { absent: OMIT }),
     col('type', 'vocab', { vocab: 'relationType', absent: OMIT }),
     col('note', 'raw'),
+    col('license', 'vocab', { vocab: 'license', absent: OMIT }),
     col('wikidata', 'raw', { absent: OMIT }),
     col('wikipedia', 'raw', { absent: OMIT }),
   ],
@@ -344,6 +345,10 @@ const ATTRIBUTES_BY_KIND = {
     col('when', 'raw'),
     col('type', 'vocab', { vocab: 'relationType', absent: OMIT }),
     col('note', 'raw'),
+    // Two words over the whole corpus, so a vocabulary and not a string per
+    // row: a relation has no card that would fetch the record, and the two
+    // pages that draw one have to know whether it is NC material (I8, A3).
+    col('license', 'vocab', { vocab: 'license', absent: OMIT }),
     col('wikidata', 'raw', { absent: OMIT }),
     col('wikipedia', 'raw', { absent: OMIT }),
   ],

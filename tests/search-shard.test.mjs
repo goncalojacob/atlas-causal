@@ -8,7 +8,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import path from 'node:path';
 import {
-  buildSearchIndex, searchIndexFor, search, flatten,
+  buildSearchIndex, searchIndexFor, search, flatten, LEAD_RANK,
 } from '../src/search.js';
 import { buildIndex } from '../tools/build-index.mjs';
 import { readRecords } from '../tools/lib/read.mjs';
@@ -40,7 +40,10 @@ const shape = (result) => ({
 // with its hyphens, and two that find nothing — the last because an empty
 // answer compared against an empty answer proves nothing on its own.
 const QUERIES = {
-  fixtures: ['fix', 'event a', 'place', 'source 3', 'polity', 'fixture-event-a', 'zzzz'],
+  // `synthetic rising` and `levantamento` are the fixture event's other names
+  // since I8: what H7 taught the shard to fold had nothing to fold on either
+  // dataset, and now one query in this list is answered by `names` alone.
+  fixtures: ['fix', 'event a', 'place', 'source 3', 'polity', 'fixture-event-a', 'synthetic rising', 'levantamento', 'zzzz'],
   repository: ['sal', 'carn', 'lisb', 'oliveira', 'angola', 'carnation-revolution', 'q', 'zzzz'],
 };
 
@@ -124,4 +127,24 @@ test('what findSimilar reads is in the whole-corpus projection, not only in the 
   for (const event of spine.events) {
     assert.ok(Object.hasOwn(event, 'title') && Object.hasOwn(event, 'id') && Object.hasOwn(event, 'aliases'), event.id);
   }
+});
+
+// I8: "carnation" found nothing because no event carried `names` — H7 built
+// the folding and left it with no data (docs/index2-plan.md, D12). The
+// fixtures carry an event with two other names now, and this is the claim
+// H7's ranking makes about them: a name beats a title it is not, a name is
+// found whole or by a prefix, and diacritics stay optional.
+test('an event is found by its other names, ranked as a name and not as a mention', async () => {
+  const { shard } = await shardAndTopology(FIXTURE_DATA);
+  const found = (query) => flatten(search(shard.entries, query, { limit: 8 })).map((i) => `${i.kind}:${i.id}`);
+  assert.deepEqual(found('synthetic rising'), ['event:fixture-event-a']);
+  assert.deepEqual(found('levantamento'), ['event:fixture-event-a'], 'the other language too');
+  assert.deepEqual(found('levantamento sintetico'), ['event:fixture-event-a'], 'diacritics stay optional');
+  // The names are shown beside the title, as an actor's variants are.
+  const entry = shard.entries.find((e) => e.id === 'fixture-event-a' && e.kind === 'event');
+  assert.deepEqual(entry.variants, ['The Synthetic Rising', 'Levantamento Sintético']);
+  // And a name outranks the summary, which is the trade H7 made: the record
+  // *called* a thing comes before the record that merely mentions one.
+  const [first] = flatten(search(shard.entries, 'synthetic', { limit: 8 }));
+  assert.equal(first.rank < LEAD_RANK, true, 'a name match, not a lead match');
 });

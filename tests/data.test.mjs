@@ -89,9 +89,10 @@ test('actors resolve and carry the events they appear in, chronologically', asyn
 
 test('relations are adjacency by actor, read from both ends', async () => {
   const atlas = await loadedAtlas({ dataRoot: 'tests/fixtures/data/', fetchJson });
-  // Two of the three are still standing: M30a-2 re-filed the pair's `led`
-  // record as a tenure and adjacency is active relations only.
-  assert.equal(atlas.relations.size, 2);
+  // Three of the four are still standing: M30a-2 re-filed the pair's `led`
+  // record as a tenure and adjacency is active relations only, and I8 added
+  // the succession the CShapes import derives.
+  assert.equal(atlas.relations.size, 3);
   // The person's end.
   assert.deepEqual(
     atlas.relationsByActor.get('fixture-actor-one').map((r) => [r.relation.type, r.direction, r.other]),
@@ -104,7 +105,9 @@ test('relations are adjacency by actor, read from both ends', async () => {
   );
   assert.deepEqual(
     atlas.relationsByActor.get('fixture-polity-three').map((r) => [r.relation.type, r.direction, r.other]),
-    [['regime-of', 'in', 'fixture-polity-four']],
+    // Two since I8: the pair also stands in the succession the CShapes
+    // import derives, and both are read from this end.
+    [['regime-of', 'in', 'fixture-polity-four'], ['succeeded', 'in', 'fixture-polity-four']],
   );
   // An actor in no relation is absent rather than empty, like eventsByActor.
   assert.equal(atlas.relationsByActor.has('fixture-nobody'), false);

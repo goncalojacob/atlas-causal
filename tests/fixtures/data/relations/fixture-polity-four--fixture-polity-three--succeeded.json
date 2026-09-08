@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "fixture-polity-four--fixture-polity-three--succeeded",
+  "kind": "relation",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Fixture Author",
+      "github": "fixture-author"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-01-01",
+  "revised": null,
+  "sources": [
+    {
+      "source": "fixture-source-1",
+      "locator": null
+    }
+  ],
+  "from": "fixture-polity-four",
+  "to": "fixture-polity-three",
+  "type": "succeeded",
+  "when": {
+    "start": 1260,
+    "end": 1260,
+    "date": "1260-03-04"
+  },
+  "note": "Synthetic: the shape a succession has, so that Before and after has one to draw."
+}
