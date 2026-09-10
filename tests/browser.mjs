@@ -18,6 +18,34 @@ import { findChrome } from '../tools/screens.mjs';
 export const chrome = findChrome();
 export const skip = chrome ? false : 'no headless browser found; set $CHROME to one';
 
+// Neither of the two waits below may be unbounded. A promise that never
+// settles while the browser is still open keeps the event loop alive, so node
+// does not notice and simply sits there: the suite stops printing, the job is
+// killed hours later, and nothing in the log says which test it was in
+// (deviations 445, 543, 551). `bounded` races the wait against a clock and,
+// when the clock wins, rejects with a sentence naming the wait and what was
+// still open — a hang becomes a failure with a name.
+//
+// Both bounds are well under the `--test-timeout` the Actions run: the runner's
+// own timeout would fire first otherwise, and its message says only that a test
+// took too long, which is the thing these sentences exist to replace.
+const HANDSHAKE_MS = 20_000;
+const CLOSE_MS = 15_000;
+
+async function bounded(promise, ms, what) {
+  let timer = null;
+  const alarm = new Promise((_, reject) => {
+    timer = setTimeout(() => reject(new Error(what())), ms);
+  });
+  try {
+    return await Promise.race([promise, alarm]);
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
+const READY_STATE = ['CONNECTING', 'OPEN', 'CLOSING', 'CLOSED'];
+
 // A port has to be known before anything is started: take an ephemeral one,
 // give it back, use that number.
 export async function freePort() {
@@ -34,9 +62,20 @@ export async function freePort() {
 // so nothing here needs to model the protocol beyond that.
 export async function connect(wsUrl) {
   const socket = new WebSocket(wsUrl);
-  await new Promise((resolve, reject) => {
-    socket.addEventListener('open', resolve, { once: true });
-    socket.addEventListener('error', () => reject(new Error(`cannot reach ${wsUrl}`)), { once: true });
+  // The first of the two: a handshake that neither opens nor errors. The
+  // socket is left in CONNECTING and the promise never settles.
+  await bounded(
+    new Promise((resolve, reject) => {
+      socket.addEventListener('open', resolve, { once: true });
+      socket.addEventListener('error', () => reject(new Error(`cannot reach ${wsUrl}`)), { once: true });
+    }),
+    HANDSHAKE_MS,
+    () => `the DevTools WebSocket handshake never finished: ${HANDSHAKE_MS / 1000} s waiting for ${wsUrl}, still ${READY_STATE[socket.readyState] ?? socket.readyState}`,
+  ).catch((error) => {
+    // Nothing else will close it, and an open socket is one more handle
+    // holding the event loop up after the failure has been reported.
+    socket.close();
+    throw error;
   });
   let id = 0;
   const pending = new Map();
@@ -90,6 +129,15 @@ export async function connect(wsUrl) {
 export async function withBrowser(fn, { device = null, touch = false } = {}) {
   const port = await freePort();
   const server = createServer({ port });
+  // What the close below is waiting on, when it waits: `server.close()` stops
+  // the server accepting and then waits for the connections it already has,
+  // and Chromium keeps its own alive. Held here so the failure can say how
+  // many there were and where from, which is what nobody could see before.
+  const connections = new Set();
+  server.on('connection', (socket) => {
+    connections.add(socket);
+    socket.once('close', () => connections.delete(socket));
+  });
   await new Promise((resolve) => server.listen(port, HOST, resolve));
 
   const debugPort = await freePort();
@@ -124,18 +172,45 @@ export async function withBrowser(fn, { device = null, touch = false } = {}) {
   await page.send('Runtime.enable');
   if (device) await page.send('Emulation.setDeviceMetricsOverride', { mobile: false, ...device });
   if (touch) await page.send('Emulation.setTouchEmulationEnabled', { enabled: true, maxTouchPoints: 5 });
+  // Not a `finally`: the teardown below can now fail, and a bound that fires
+  // while a test is already failing must not be thrown over the failure it
+  // would explain. The body's error is kept and rethrown after the teardown
+  // has run in full, exactly as the `finally` ran it.
+  let failure = null;
+  let value;
   try {
-    return await fn(page, (query) => `http://${HOST}:${port}/${query}`);
-  } finally {
-    page.close();
-    child.kill();
-    // The profile is still being written to until the browser is actually
-    // gone, so the wait is not politeness: removing it first fails.
-    await new Promise((resolve) => child.once('exit', resolve));
-    server.close();
-    await new Promise((resolve) => server.once('close', resolve));
-    await rm(profile, { recursive: true, force: true, maxRetries: 5, retryDelay: 100 }).catch(() => {});
+    value = await fn(page, (query) => `http://${HOST}:${port}/${query}`);
+  } catch (error) {
+    failure = error;
   }
+  page.close();
+  child.kill();
+  // The profile is still being written to until the browser is actually
+  // gone, so the wait is not politeness: removing it first fails.
+  await new Promise((resolve) => child.once('exit', resolve));
+  server.close();
+  // The second of the two.
+  let stuck = null;
+  await bounded(
+    new Promise((resolve) => server.once('close', resolve)),
+    CLOSE_MS,
+    () => `the test server never closed: ${CLOSE_MS / 1000} s after server.close() with ${connections.size} connection(s) still open`
+      + `${connections.size ? ` (${[...connections].map((s) => `${s.remoteAddress}:${s.remotePort}`).join(', ')})` : ''}`,
+  ).catch((error) => {
+    // Say it, then let go of them: the report is the point, and a server
+    // still holding sockets keeps the runner alive after it.
+    server.closeAllConnections();
+    stuck = error;
+  });
+  await rm(profile, { recursive: true, force: true, maxRetries: 5, retryDelay: 100 }).catch(() => {});
+  if (failure) {
+    // Both went wrong: the test's own failure is what is reported, with the
+    // teardown's sentence carried on the end of it rather than thrown away.
+    if (stuck && failure instanceof Error) failure.message = `${failure.message}\n  (and ${stuck.message})`;
+    throw failure;
+  }
+  if (stuck) throw stuck;
+  return value;
 }
 
 // A reader who has been here before. The introduction covers the view on a
