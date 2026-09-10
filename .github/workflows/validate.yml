@@ -40,7 +40,16 @@ jobs:
       - name: Validate records
         run: node tools/validate.mjs
       - name: Tests
-        run: node --test
+        # --test-timeout, as import-wikidata.yml has run it since deviation
+        # 445: a test that hangs is not a test that fails. Without it a hung
+        # run sits here until the job's limit, publishes no log, and says
+        # nothing at all about which test it stopped in — runs 567 and 569 sat
+        # 37 and 39 minutes (deviation 551). **This turns a hang into a red
+        # check rather than a green one**, which is the owner's to overrule;
+        # the bounds in tests/browser.mjs are what should make it never fire.
+        # The slowest single test takes about 6s, so 120s is not a deadline an
+        # honest test comes near.
+        run: node --test --test-timeout=120000
       - name: Whether this pull request touches data/index/
         id: data
         env:

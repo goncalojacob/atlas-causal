@@ -117,6 +117,10 @@ test('the index is built on main, and checked on a pull request that carries one
   assert.match(validate, /git diff --name-only "\$BASE_SHA" "\$HEAD_SHA" -- data\/index\//);
   // The base commit is only there to diff against with the full history.
   assert.match(validate, /fetch-depth: 0/);
+  // A test that hangs is not a test that fails: unbounded, the Tests step sat
+  // 37 and 39 minutes and published no log at all (deviation 551). Pinned so
+  // the bound cannot be dropped without somebody deciding to drop it.
+  assert.match(validate, /node --test --test-timeout=120000/);
   const deploy = await read(WORKFLOWS, 'deploy.yml');
   assert.match(deploy, /concurrency:\s*\n\s*group: deploy\s*\n\s*cancel-in-progress: false/);
   assert.match(deploy, /node tools\/build-index\.mjs/);
