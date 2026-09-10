@@ -17,10 +17,13 @@ hundred lines again, cut it the same way.
 (`docs/index2/corrective-brief.md`, from the closing review's section 6): the
 two waits that could stop the suite without naming a test are bounded, the
 Action's `node --test` has a deadline, and the check on `m0` was found to be
-running to the end again — red on one timing assertion, not hung. That run's
-account is **`## Index cycle 2: the corrective run`**, below, with deviations
-552 to 557. What follows immediately here is M44-0's account, of 2026-09-08,
-unchanged.
+running to the end again — three checks in a row now finish the suite, where
+runs 567 and 569 sat 37 and 39 minutes. The check is still red, and on the
+evidence of run 573 the wait that hangs it is **not** either of the two this
+brief bounded but one of the ones deviation 553 names, which is the next
+thing to fix. That run's account is **`## Index cycle 2: the corrective
+run`**, below, with deviations 552 to 559. What follows immediately here is
+M44-0's account, of 2026-09-08, unchanged.
 
 2026-09-08, after **M44-0** (`docs/m44-brief.md`, amendment A16, which
 answers amendment A2 and review finding 2; owner question 3 of that brief,
@@ -3789,6 +3792,24 @@ The numbering continues from 401, which is M31-3's last.
      owner**, who can apply it above in one edit, or ask for the "Other" lane
      that would make it honest — which is a design decision and not a
      correction.
+558. **This run's section on pull request #1 is a comment and not in the
+     body**, as I4a's, M30c's, I5's, I6's, I8's, I9's and M44-0's are
+     (deviations 483, 498, 506, 517, 539, 540, 550), for the same reason and
+     with the same request to the owner: the body is 172 KB on one line, the
+     tool replaces the whole of it, and one dropped line would silently
+     destroy the record of thirty milestones.
+559. **The check's log names the failing tests and this sandbox cannot read
+     that far back in it.** `get_job_logs` returns only the tail, capped at
+     5,000 lines; run 573's log is 7,680, and the three entries are in the
+     first ~2,700. Everything reachable — tests 405 to 1231 — is `ok`, which
+     is how the range in the section above is known and why the names are not.
+     The blob host the raw log redirects to is outside the network this run is
+     allowed. Nothing is wrong with the log: **the owner sees the names in the
+     web UI**. It is worth naming because every future run reads checks the
+     same way and will hit the same wall on any failure early in the suite.
+     Two things would each end it, and both are the owner's: a reporter that
+     prints a failure summary at the *end* (`--test-reporter=spec` puts the
+     failures last), or fetching the log by some route with a byte range.
 
 ## I8: what was derived, and what the Action must still run
 
@@ -4086,6 +4107,39 @@ touched.
 (deviation 556), and **deviation 513 is left open with its arithmetic written
 down** (deviation 557).
 
+### What the check said, and the one thing this run could not read
+
+Run 573, on `c510739` — this run's four commits — finished in **3 m 42 s** and
+was **red**: `1..1231`, **1,228 passing, 2 failing, 1 cancelled**, 0 skipped,
+193 s. Three things follow from that, and the third is the one to act on.
+
+**The Action no longer hangs.** Three checks in a row have now run the suite
+to the end: 571 in 162 s, 573 in 193 s. Whatever stopped runs 567 and 569 for
+37 and 39 minutes does not stop them now.
+
+**`--test-timeout` did the catching, and the two new bounds did not.** A
+cancelled test is the runner's deadline firing at 120 s. Had the wait been the
+handshake or `server.close()`, the bounds of this run would have failed it by
+name at 20 s and 15 s and it would have been a failure, not a cancellation. So
+the wait that hung is **one of the ones deviation 553 names and this brief did
+not cover** — `send`, `once`, `page.eval`, or the `Page.loadEventFired` that
+`open()` awaits before its bounded poll. That deviation was written before
+this evidence arrived and now has it. **For the owner:** the same `bounded`
+helper is the whole of that fix too.
+
+**And the three entries could not be read from here** (deviation 559). They
+are in tests 1 to 404 — everything from 405 to 1231 is `ok`, and the numbering
+is the local numbering shifted by the one extra entry a failure adds — which
+is alphabetically `actor-card` through `identity-rules`, the browser files
+among them being `contribute-browser`, `entry-browser` and `graph-browser`.
+Six chrome processes were terminated as orphans at cleanup, which is what a
+cancelled browser test leaves. It does not reproduce here: the whole suite
+passed twice on this machine, and again under twice the CPU load — 1,230
+passing in 198 s. **The log names it and this sandbox cannot reach that far
+back in it**; the job is
+https://github.com/goncalojacob/atlas-causal/actions/runs/34543249726 and the
+entries are in its first ~2,700 lines.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
@@ -4249,3 +4303,4 @@ M44-0 started 2026-09-08T20:15:20Z by scheduled
 M44-0 done
 Index cycle 2 corrective run started 2026-09-10T08:39:14Z by scheduled
 Index cycle 2 corrective run started 2026-09-10T23:22:40Z by scheduled
+Index cycle 2 corrective run done
