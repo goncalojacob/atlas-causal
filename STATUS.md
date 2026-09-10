@@ -13,6 +13,15 @@ hundred lines again, cut it the same way.
 
 ## Last updated
 
+2026-09-10, after the **corrective run of the second index cycle**
+(`docs/index2/corrective-brief.md`, from the closing review's section 6): the
+two waits that could stop the suite without naming a test are bounded, the
+Action's `node --test` has a deadline, and the check on `m0` was found to be
+running to the end again — red on one timing assertion, not hung. That run's
+account is **`## Index cycle 2: the corrective run`**, below, with deviations
+552 to 557. What follows immediately here is M44-0's account, of 2026-09-08,
+unchanged.
+
 2026-09-08, after **M44-0** (`docs/m44-brief.md`, amendment A16, which
 answers amendment A2 and review finding 2; owner question 3 of that brief,
 taken as recommended in its second form): **a placeless event can be given a
@@ -3706,6 +3715,81 @@ The numbering continues from 401, which is M31-3's last.
      `m0` after this one meets the same wall, and the fastest thing that
      would tell anybody which test it is, is that timeout.
 
+### The corrective run of the second index cycle
+
+552. **`withBrowser`'s teardown is no longer a `finally`.** The bound on
+     `server.close()` can fail, and a `finally` that throws replaces the error
+     the body threw: a test that failed on its own assertion would be reported
+     as a server that would not close, which is the opposite of what this run
+     is for. The body's error is caught, the teardown still runs in full in
+     the same order, and then the body's error is rethrown — with the
+     teardown's sentence carried on the end of its message when both went
+     wrong, so neither fact is lost.
+553. **A third unbounded wait is left, and named rather than fixed.** The brief
+     names two and these are the two. But `send` and `once` still have no
+     deadline of their own — deviation 445's original finding — and `open()`
+     awaits `Page.loadEventFired` through `once` before its bounded poll
+     begins, so a navigation that never fires a load event still stops the
+     runner rather than failing a test. It is out of this brief and it is not
+     hypothetical. **For the owner**, and cheap: the same `bounded` this run
+     added is the whole of the fix.
+554. **`tests/workflows.test.mjs` did not pin the Tests step's command line, so
+     it was added rather than updated.** The brief says to update the pin if
+     one exists; there was none — the test asserted what `validate.yml` must
+     *not* do and never what it runs. A bound nothing holds is a bound the
+     next edit drops without noticing.
+555. **The hang did not reproduce, and the check is red on one timing
+     assertion instead.** This is the substantive finding of the run. Run 571,
+     on `51747e8` and with none of this run's code, **ran the suite to the end
+     in 162 s**: 1,229 tests, 1,228 passing, 0 skipped, 1 failing. So the wall
+     of deviation 551 — runs 567 and 569 sitting 37 and 39 minutes — is not
+     standing on `m0` today, and neither bound this run added has anything to
+     catch there yet. What is red is
+     **`the queue draws 20 000 drafts and answers a keystroke`**
+     (`tests/review-browser.test.mjs:29`), on `KEY_MS = 50`:
+     `a keystroke took 65.6 ms: 18.7, 65.6, 64.6, 10.7`. The same test here is
+     8.4, 16.5, 14.7, 10.1 ms. That is a shared runner under load against a
+     threshold measured on a quiet machine, and it is a decision about the
+     threshold — not a correction — so it is **for the owner** and was not
+     touched. The bounds and the `--test-timeout` stand on their own account:
+     they are what turns the *next* hang into a name, and the hang has taken a
+     whole cycle of runs to be seen twice.
+556. **The rename-history test has a sibling that already passes.** The brief
+     says no test holds the alias merge; `tests/migrate-ids.test.mjs`, "a
+     renamed record keeps the versions it had under its former name", holds it
+     **through the rename tool**. The one added here is a level below it — a
+     bare `git mv` and an alias written by hand, at `recordHistories` — so the
+     merge is held whether or not `tools/migrate/ids.mjs` is the only caller.
+     Both are kept; the tool's own test is not what it costs.
+557. **Deviation 513 is left open, and this is the one line and what it costs.**
+     The brief says to cap the region grouping if it is one call that leaves
+     `tests/timeline-browser.test.mjs` green. It is: `return lanes;` in
+     `lanesFor`'s region branch becomes
+     `return lanes.slice(0, Math.max(1, Math.min(LANE_CAP, cap)));`, the
+     timeline already passes `cap`, and all 32 timeline and lane tests pass
+     with it in. **Measured in a browser on the world data, the same way the
+     I6 table was:**
+
+     | window | pane | before | after |
+     |---|---|---|---|
+     | 380 px | 135 px | 5 lanes, 168 px in 135 — scrolls | 3 lanes, 135 px — fits |
+     | 900 px | 269 px | 5 lanes, 269 px | 5 lanes, 269 px (unchanged) |
+
+     And the cost, which is the reason it is not taken: **the Americas and
+     Oceania stop being drawn at all, and 5 of the 35 bars go with them** —
+     35 bars before, 30 after. A region lane has no "Other" to fall into, so a
+     region dropped for room is not a lane deferred, it is events removed from
+     the picture with nothing saying so. That is what deviation 513 named when
+     it chose a pane that scrolls, and what `src/timeline.js` says in the
+     comment beside the call. The tests pass because none of them asserts that
+     every region's events are drawn, which is a gap in the tests and not
+     evidence that the change is safe. A timeline that quietly omits a
+     continent is the mistake this project is built not to make, so the
+     arithmetic is written down here and the line is not taken. **For the
+     owner**, who can apply it above in one edit, or ask for the "Other" lane
+     that would make it honest — which is a design decision and not a
+     correction.
+
 ## I8: what was derived, and what the Action must still run
 
 **The successions.** `node tools/import/cshapes.mjs --relations` reads
@@ -3937,6 +4021,70 @@ capped at all. Measured in a browser, on the world data:
 are laid out again when the window changes height" is off: at 900 px the pane
 holds fifteen rows and at 460 px five, so a shorter window is a different
 drawing and the test can see it.
+
+## Index cycle 2: the corrective run
+
+The check, not the index. `docs/review-2026-09-09-index2-closing.md` section 6
+asks for this before the map block starts, because M39a and the glyphs run are
+view work whose evidence is browser tests and they would be pushed into an
+Action that had not gone green since `bd56b37` and published no log when it
+hung.
+
+**The two waits are bounded and named** (`tests/browser.mjs`). `connect()`
+awaited the DevTools WebSocket handshake and `withBrowser`'s teardown awaited
+`server.close()`, which waits for every connection Chromium leaves behind.
+Neither settles if the other end never speaks, and with the browser still open
+the event loop stays alive, so node does not notice. Each now races a clock
+and rejects with a sentence saying which wait it was and what was still open.
+Proved against the faults themselves rather than asserted:
+
+| the wait | bound | what it says |
+|---|---|---|
+| the handshake, `connect()` | 20 s | `the DevTools WebSocket handshake never finished: 20 s waiting for ws://…, still CONNECTING` |
+| `server.close()`, `withBrowser` | 15 s | `the test server never closed: 15 s after server.close() with 1 connection(s) still open (127.0.0.1:59114)` |
+
+Measured at 20.0 s against a TCP server that accepts and never completes a
+handshake, and at 15.4 s against a connection the server still held. Both
+processes then **exit** instead of sitting there — the socket is closed and
+the server's connections are let go once the failure has been reported. No
+test's assertions changed and the per-test timeouts deviation 543 gave
+`walk-browser` stand.
+
+**`node --test` has a deadline in the Action.** `.github/workflows/
+validate.yml`'s Tests step ran it with no `--test-timeout`, unlike
+`import-wikidata.yml`, which has carried one since deviation 445; it is now
+`node --test --test-timeout=120000`. **This turns a hang into a red check
+rather than a green one. That is a decision about the Action and it is the
+owner's to overrule** — the two bounds above are what should make it never
+fire, and the slowest single test in the suite takes about 6 s, so 120 s is
+not a deadline an honest test comes near. `tests/workflows.test.mjs` now pins
+the command line (deviation 554).
+
+**The suite, whole.** `node --test` on `m0` in this sandbox, browser tests
+included, against the 1,229 tests / 124 s of 9 September:
+
+| | 9 September | this run |
+|---|---|---|
+| tests | 1,229 | **1,230** (the rename-history test below is the one) |
+| passing | 1,229 | **1,230** |
+| skipped | 0 | **0** (there is a browser here — deviation 516) |
+| wall | 124 s | **124 s** |
+
+Measured with the bound the Action now carries, `node --test
+--test-timeout=120000`, so it is the command the check runs and not a
+neighbour of it. Unbounded and unchanged, the same suite was 1,229 in 127 s
+on this machine an hour earlier, so the deadline costs nothing.
+
+**And the hang did not reproduce.** Run 571, on `51747e8`, ran the suite to
+the end in 162 s and failed on exactly one test — the timing assertion of
+deviation 555, not a wait. So neither bound has anything to catch on `m0`
+today; they are what turns the next hang into a name. `node tools/validate.mjs
+--index` is byte-identical without a rebuild, and no record under `data/` was
+touched.
+
+**The renamed record's history** is held at `recordHistories` itself now
+(deviation 556), and **deviation 513 is left open with its arithmetic written
+down** (deviation 557).
 
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
