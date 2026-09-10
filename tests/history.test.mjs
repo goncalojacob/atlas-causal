@@ -107,6 +107,59 @@ test('a shallow clone falls back to revised, and says so', async (t) => {
   assert.notDeepEqual(histories[0].versions, full.histories[0].versions);
 });
 
+// I7 amendment A1, index2 review finding 13. `git log --diff-filter=AM` drops
+// the rename commit as an `R`, and the walk asks only about the path the
+// record is at now, so without the former names a renamed record reads in the
+// dashboard as one written once and never touched. `tools/lib/history.mjs`
+// merges the states under every alias's former path (`44adf37`), and
+// `tests/migrate-ids.test.mjs` holds that through the rename *tool*. This
+// holds it at `recordHistories` itself, with a bare `git mv` and an alias
+// written by hand: the merge is the thing under test, not the tool that
+// happens to be the only caller today.
+test('a renamed record still lists the versions from before the rename', async (t) => {
+  const { repo, dataDir, record } = await repository(t);
+  const before = await recordHistories([record], { dataDir });
+  assert.equal(before.from, 'git');
+  assert.equal(before.histories[0].versions.length, 3, 'three commits, three versions');
+
+  const renamed = {
+    ...record,
+    id: 'fixture-history-renamed',
+    aliases: [record.id],
+    revised: '2026-04-01',
+  };
+  const events = path.join(dataDir, 'events');
+  git(repo, 'mv', path.join(events, `${record.id}.json`), path.join(events, `${renamed.id}.json`));
+  await writeFile(path.join(events, `${renamed.id}.json`), `${JSON.stringify(renamed, null, 2)}\n`, 'utf8');
+  git(repo, 'add', '-A');
+  git(repo, 'commit', '-q', '-m', 'the rename');
+
+  const { from, histories } = await recordHistories([renamed], { dataDir });
+  // Not `revised`: the fallback would be the record's own two dates, which is
+  // exactly the degraded answer this merge exists to prevent.
+  assert.equal(from, 'git');
+  assert.equal(histories[0].from, 'git');
+  const [history] = histories;
+  assert.equal(history.id, renamed.id);
+  assert.equal(history.versions.length, 4, JSON.stringify(history.versions));
+  // The three from before the rename are the same three, unchanged, and the
+  // fourth is the rename itself.
+  assert.deepEqual(history.versions.slice(0, 3), before.histories[0].versions);
+  assert.equal(history.versions[0].first, true);
+  // `revised` is the version's own date and never one of its changed fields.
+  assert.deepEqual(history.versions[3].fields, ['aliases', 'id']);
+
+  // And the control: the alias is what finds them. Asked about the same
+  // record with an empty `aliases`, the walk sees only the path it is at now
+  // — the one rename commit, and the handed-in record itself, which no longer
+  // matches that commit because the alias was taken out of it. Two versions
+  // where there are four, and none of the three from before the rename: the
+  // record reading as one barely touched, which is finding 13's symptom.
+  const withoutAlias = await recordHistories([{ ...renamed, aliases: [] }], { dataDir });
+  assert.equal(withoutAlias.histories[0].versions.length, 2,
+    JSON.stringify(withoutAlias.histories[0].versions));
+});
+
 test('rule 16 compares the histories byte for byte, like every other index file', () => {
   const name = historyShardName('event', '1200-1299', 'abcdef012345');
   const built = { files: { 'manifest.json': '{}', [name]: '{"versions":[1,2,3]}' } };
