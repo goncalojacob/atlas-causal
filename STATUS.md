@@ -3840,6 +3840,43 @@ The numbering continues from 401, which is M31-3's last.
      `1e-6`° short. The gap is a tenth of a millimetre on the ground and
      3e-9 of an SVG unit at k = 1, and its two sides are at opposite edges of
      the picture, where nothing can be seen to be missing between them.
+564. **`k = 1` is the whole world in 960 units, and the map no longer fits
+     itself to the events.** It fitted to their extent (`map.js:53`), so `k`
+     meant a different scale on every corpus and a zoom threshold written in
+     it meant nothing until the data was known — which is what review finding
+     F4 says the base map cannot be built on. The map now opens on the world
+     with 150°E in the middle, which is also what the brief's item 4 asks for.
+     A reader who has never touched the map is therefore looking at the whole
+     of it and not at the Atlantic.
+565. **`normalizeBbox` no longer sorts the two longitudes.** A box runs east
+     from `west` to `east`, so one whose west end is east of its east end is
+     the strip that crosses ±180 — which, with the middle of the picture at
+     150°E, is thirty degrees right of centre and an ordinary view. Sorting
+     them turned every view of Fiji or Kamchatka into a view of the other 340
+     degrees. `containsPoint` and `boxesOverlap` had always read a box that
+     way and say so in their comments; this was the one place that did not.
+     The latitudes are still sorted, and a longitude outside the world is
+     still clamped rather than wrapped, so an old link that says
+     `-400,36,400,43` still means the world.
+566. **A box that crosses the *seam* is shown as the whole world.** That one
+     is not a view: the picture is cut at 30°W, so the two halves of such a
+     box are at the two opposite edges and no transform holds both. `bbox`
+     wrapping ±180 works; `bbox` across 30°W opens on the world, which is
+     where both halves can be seen. It is the same branch an old link naming
+     the whole world takes.
+567. **A pane that shows more than the world answers "the world".** The SVG is
+     letterboxed, and at `k = 1` a wide pane shows about 810° of longitude —
+     twice round. Wrapping each edge separately would have named a 165°
+     strip and called it the view. `viewBboxIn` now measures the strip first
+     and returns the world when it is 360° or wider, which `normalizeBbox`
+     turns into no box at all: the absence of a box is what "the world" means
+     here, and this is the same rule arriving from the other side.
+568. **The two letterbox browser tests zoom in before they pan.** At `k = 1`
+     the wide pane shows every longitude there is, so there is no strip to
+     name and the assertion they turn on — that a box reaches the URL —
+     cannot hold. They zoom one notch first, and they pan the other way round
+     from before: the fixture places are at the far west of a world centred
+     on 150°E.
 ## I8: what was derived, and what the Action must still run
 
 **The successions.** `node tools/import/cshapes.mjs --relations` reads
@@ -4210,6 +4247,15 @@ cuts two of Cape Verde's, 160°E cuts Iceland, 140°E and 145°E cut Brazil, and
 **So: `CENTRAL_MERIDIAN = 150`, the seam at 30°W.** It runs down the middle of
 the Atlantic, between Flores and the central group of the Azores, 4.7° east of
 Cape Branco and 12.4° west of Africa.
+
+**What it costs the records, measured.** A seam does not only cut coastlines:
+an event west of it is drawn at the right-hand edge of the picture, half a
+world from Lisbon. Of the atlas's **107 placed events, 8 are west of 30°W** —
+the Azores agreement of 1943 is not among them, the mid-Atlantic and American
+ones are. The best any candidate in the range does is 7, at 140°E and 145°E,
+and both of those cut Brazil in two. This is the cost of a Pacific-centred
+projection for a dataset whose first slice is Atlantic, it is the owner's to
+weigh, and it is one constant to change if they want it weighed differently.
 
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled

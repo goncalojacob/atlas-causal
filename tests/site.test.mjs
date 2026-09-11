@@ -89,7 +89,9 @@ test('no source file carries a control byte grep will not read', async () => {
 });
 
 test('geometryPath turns rings into closed subpaths', () => {
-  const p = createProjection({ width: 360, height: 180, scale: 1 });
+  // Centred on Greenwich, so the numbers below are about geometryPath and not
+  // about which meridian the map happens to be centred on.
+  const p = createProjection({ width: 360, height: 180, center: [0, 0], scale: 1 });
   const d = geometryPath({ type: 'Polygon', coordinates: [[[0, 0], [10, 0], [10, 10], [0, 0]]] }, p.project);
   assert.equal(d, 'M180.00 90.00L190.00 90.00L190.00 80.00L180.00 90.00Z');
   const multi = geometryPath({ type: 'MultiPolygon', coordinates: [[[[0, 0], [1, 0], [0, 1], [0, 0]]], [[[5, 5], [6, 5], [5, 6], [5, 5]]]] }, p.project);

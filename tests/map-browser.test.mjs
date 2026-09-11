@@ -38,7 +38,7 @@ const READY = 'return Boolean(document.querySelector(".map .mark"));';
 const panBy = (dx) => `
   const root = document.querySelector('#map svg.map');
   const box = root.getBoundingClientRect();
-  const x = box.right - 8;
+  const x = ${dx} < 0 ? box.right - 8 : box.left + 8;
   const y = box.top + 8;
   const at = (cx, type) => root.dispatchEvent(new PointerEvent(type, {
     bubbles: true, clientX: cx, clientY: y, pointerId: 1,
@@ -46,6 +46,20 @@ const panBy = (dx) => `
   at(x, 'pointerdown');
   for (let i = 1; i <= 10; i += 1) at(x + (${dx} * i) / 10, 'pointermove');
   at(x + ${dx}, 'pointerup');
+  return true;`;
+
+// One notch of the wheel over the middle of the pane. Since M39a, k = 1 is
+// the whole world (projection.js), so a wide pane at rest shows every
+// longitude there is and the map publishes no box at all — the absence of one
+// *is* the world. A test about which strip of the world is on screen has to
+// be somewhere there is a strip, so these zoom in first.
+const zoomIn = (deltaY = -400) => `
+  const root = document.querySelector('#map svg.map');
+  const box = root.getBoundingClientRect();
+  root.dispatchEvent(new WheelEvent('wheel', {
+    bubbles: true, cancelable: true, deltaY: ${deltaY},
+    clientX: box.left + box.width / 2, clientY: box.top + box.height / 2,
+  }));
   return true;`;
 
 // The pane the map is drawn in must not change size while a pan is being
@@ -92,9 +106,12 @@ test('the map is letterboxed, and a mark out in the letterbox has a bar under it
     assert.ok(shown.x0 < -40, `the picture starts left of the viewBox (${Math.round(shown.x0)})`);
     assert.ok(shown.x1 > 1000, `and ends right of it (${Math.round(shown.x1)})`);
 
-    // Move the picture sideways, so that marks land in the strip the nominal
-    // box does not cover, and wait for the box to settle into the URL.
-    await page.eval(panBy(-300));
+    // In one notch, then sideways, so that marks land in the strip the
+    // nominal box does not cover — since M39a the fixture places are at the
+    // far west of a world centred on 150E, so the pan that brings them into
+    // the letterbox is the other way round from the one it was.
+    await page.eval(zoomIn());
+    await page.eval(panBy(150));
     await waitFor(page, 'return new URLSearchParams(location.search).has("bbox");', 'the box to be published');
 
     const marks = await page.eval(VISIBLE_MARKS);
@@ -116,7 +133,8 @@ test('a click on a mark out in the letterbox selects it, and a pan follows the c
   await wide(async (page, url) => {
     await open(page, url('?fixtures=1'), READY);
     await page.eval(FREEZE_TIMELINE);
-    await page.eval(panBy(-300));
+    await page.eval(zoomIn());
+    await page.eval(panBy(150));
     await waitFor(page, 'return new URLSearchParams(location.search).has("bbox");', 'the box to be published');
 
     const marks = await page.eval(VISIBLE_MARKS);

@@ -134,13 +134,28 @@ const clamp = (n, min, max) => Math.min(max, Math.max(min, n));
 // (health review B, finding 15). The absence of a box is what "the world"
 // means here — it is what the timeline's pin restores — so the one rule lives
 // in the one place a box is made, and a pan can no longer write it.
+//
+// **The two longitudes are not sorted.** A box runs east from `west` to
+// `east`, so one whose west end is east of its east end is the strip that
+// crosses ±180 — and since M39a that meridian is an ordinary part of the
+// picture rather than its edge, so it is a strip the map really shows and a
+// link really carries. `containsPoint` and `boxesOverlap` in util/viewport.js
+// have always read a box that way; it was this function, sorting them, that
+// turned every view of the Pacific into a view of everywhere else. The two
+// latitudes are sorted, because nothing wraps in latitude.
+//
+// A longitude outside the world is still clamped rather than wrapped: a box
+// wider than the world is what "the world" is written as in an old link, and
+// wrapping it would turn it into a narrow strip nobody asked for.
 export function normalizeBbox(box) {
   const n = Array.isArray(box) ? box.map(Number) : [];
   if (n.length !== 4 || n.some((v) => !Number.isFinite(v))) return null;
-  const west = clamp(Math.min(n[0], n[2]), -180, 180);
-  const east = clamp(Math.max(n[0], n[2]), -180, 180);
+  const west = clamp(n[0], -180, 180);
+  const east = clamp(n[2], -180, 180);
   const south = clamp(Math.min(n[1], n[3]), -90, 90);
   const north = clamp(Math.max(n[1], n[3]), -90, 90);
+  // Two ends on the same meridian are either no width at all or the whole
+  // world; both are the world, which is no box.
   if (west === east || south === north) return null;
   if (west === -180 && east === 180 && south === -90 && north === 90) return null;
   return [round2(west), round2(south), round2(east), round2(north)];

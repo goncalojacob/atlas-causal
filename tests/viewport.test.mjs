@@ -8,7 +8,8 @@ import {
 } from '../src/util/viewport.js';
 import { onScreen } from '../src/map/layers/events.js';
 import {
-  createProjection, fitBounds, viewBbox, viewBboxIn, bboxTransform, WORLD,
+  createProjection, fitBounds, viewBbox, viewBboxIn, bboxTransform, lonSpan,
+  worldProjection, WORLD, SEAM,
 } from '../src/map/projection.js';
 import { readFile } from 'node:fs/promises';
 import path from 'node:path';
@@ -114,9 +115,16 @@ test('zooming in narrows the box around the same centre', () => {
   // the centre.
   assert.equal(close[0], wide[0]);
   assert.equal(close[3], wide[3]);
-  // Panning right shows what is to the west of it.
-  const panned = viewBbox(projection, { x: 100, y: 0, k: 1 }, SIZE);
-  assert.ok(panned[0] < wide[0] && panned[2] < wide[2]);
+  // Panning right shows what is to the west of it — and since M39a "west of
+  // -180" is a real place rather than the edge of the picture, so the box
+  // that comes back crosses ±180 and is the same width as before it moved.
+  const panned = viewBbox(projection, { x: 100, y: 0, k: 4 }, SIZE);
+  assert.ok(panned[0] > panned[2], `${panned[0]} … ${panned[2]} should wrap`);
+  assert.ok(Math.abs(lonSpan(panned[0], panned[2]) - lonSpan(close[0], close[2])) < 1e-9);
+  assert.ok(panned[0] < 180 && panned[0] > close[0] + 180, 'and it starts west of where it did');
+  // At k = 1 the reader already sees every longitude there is, so panning
+  // shows no new part of the world and the answer is still the whole of it.
+  assert.deepEqual(viewBbox(projection, { x: 100, y: 0, k: 1 }, SIZE), wide);
 });
 
 // A pane wider than 960 × 540's ratio letterboxes the SVG: the reader sees
@@ -126,7 +134,11 @@ test('zooming in narrows the box around the same centre', () => {
 // example — a 959 × 368 map area, whose visible SVG x runs −220 … 1180.
 test('the box is the rectangle the pane really shows, not the nominal one', () => {
   const projection = createProjection({ ...SIZE, center: [0, 0], scale: 960 / 360 });
-  const transform = { x: 0, y: 0, k: 1 };
+  // Zoomed in, because at k = 1 this pane shows more than the whole world and
+  // the honest answer is the world; what is being tested is the difference
+  // between the rectangle and the nominal box, so it is asked where there is
+  // still a strip to name.
+  const transform = { x: 0, y: 0, k: 4 };
   // Fitted to the height, so 368 px of pane carry 540 units and 959 px carry
   // 959 × 540 / 368 = 1407 of them, centred on the nominal box.
   const shownWidth = (959 * HEIGHT) / 368;
@@ -135,14 +147,22 @@ test('the box is the rectangle the pane really shows, not the nominal one', () =
 
   const nominal = viewBbox(projection, transform, SIZE);
   const real = viewBboxIn(projection, transform, box);
-  assert.ok(real[0] < nominal[0] && real[2] > nominal[2], 'wider east and west');
+  assert.ok(lonSpan(real[0], real[2]) > lonSpan(nominal[0], nominal[2]), 'a wider strip');
+  const mid = (real[1] + real[3]) / 2;
+  assert.ok(containsPoint(real, { lon: nominal[0], lat: mid }) && containsPoint(real, { lon: nominal[2], lat: mid }),
+    'and it contains the nominal one, east and west');
   assert.equal(real[1], nominal[1], 'and the same north and south, which is what fitting the height means');
   assert.equal(real[3], nominal[3]);
   // The width in degrees is the width of the strip the reader is looking at.
-  assert.ok(Math.abs((real[2] - real[0]) - (shownWidth / projection.scale)) < 1e-9);
+  assert.ok(Math.abs(lonSpan(real[0], real[2]) - (shownWidth / transform.k / projection.scale)) < 1e-9);
 
   // The nominal box is the same question asked of the rectangle 0 … 960.
   assert.deepEqual(viewBboxIn(projection, transform, { x0: 0, y0: 0, x1: WIDTH, y1: HEIGHT }), nominal);
+
+  // And a pane that shows more than the world says so, at any width past it.
+  const everything = viewBboxIn(projection, { x: 0, y: 0, k: 1 }, box);
+  assert.equal(everything[0], -180);
+  assert.equal(everything[2], 180);
 });
 
 test('a box and the transform that shows it are each other\'s inverse', () => {
@@ -271,4 +291,45 @@ test('a mark is on screen when it is inside the rectangle, or nearly', () => {
   // and everything is in view, which is what the layer did before there was
   // one to ask about.
   assert.equal(onScreen(-9999, 9999, null), true);
+});
+
+// --- a box that crosses the antimeridian, and one that crosses the seam ----
+//
+// Centring the map on 150°E puts ±180 thirty degrees right of the middle of
+// the picture, so a reader looking at Fiji or Kamchatka is looking at a box
+// whose west end is east of its east end. That box is an ordinary view and
+// has to survive the round trip. The seam, 30°W, is the one that cannot: the
+// picture is cut there and its two halves are at opposite edges.
+
+test('a view across the antimeridian comes back as a wrapping box and is shown again', () => {
+  const projection = worldProjection({ ...SIZE });
+  const pacific = [170, -20, -170, 0];
+  const transform = bboxTransform(projection, pacific, { ...SIZE, minZoom: 1, maxZoom: 40 });
+  assert.ok(transform.k > 1, `${transform.k}`);
+  const shown = viewBbox(projection, transform, SIZE);
+  assert.ok(shown[0] > shown[2], 'it still wraps');
+  assert.ok(containsPoint(shown, { lon: 178, lat: -10 }) && containsPoint(shown, { lon: -178, lat: -10 }));
+  assert.ok(containsPoint(shown, { lon: 170, lat: -10 }) && containsPoint(shown, { lon: -170, lat: -10 }));
+  assert.ok(!containsPoint(shown, { lon: 150, lat: -10 }), 'and nothing well outside it');
+  assert.ok(Math.abs(lonSpan(shown[0], shown[2]) - lonSpan(...[pacific[0], pacific[2]])) < 1e-9
+    || lonSpan(shown[0], shown[2]) > lonSpan(pacific[0], pacific[2]), 'as wide as asked for or wider');
+});
+
+test('a box across the seam has no transform, so the whole world is shown', () => {
+  const projection = worldProjection({ ...SIZE });
+  const across = bboxTransform(projection, [SEAM - 10, 30, SEAM + 10, 40], { ...SIZE, minZoom: 1, maxZoom: 40 });
+  assert.equal(across.k, 1, 'the two halves are at the two edges and no zoom holds both');
+  assert.deepEqual(across, { k: 1, x: 0, y: 0 }, 'which is the world, squarely');
+  // A box that merely touches the seam on its eastern side is ordinary.
+  const beside = bboxTransform(projection, [SEAM, 30, SEAM + 10, 40], { ...SIZE, minZoom: 1, maxZoom: 40 });
+  assert.ok(beside.k > 1);
+});
+
+test('Portugal still fits, and the box the map writes for it comes back', () => {
+  const projection = worldProjection({ ...SIZE });
+  const transform = bboxTransform(projection, PORTUGAL, { ...SIZE, minZoom: 1, maxZoom: 40 });
+  const shown = viewBbox(projection, transform, SIZE);
+  assert.ok(containsPoint(shown, { lon: -9.14, lat: 38.72 }), 'Lisbon is in the picture');
+  assert.ok(shown[0] <= PORTUGAL[0] + 1e-9 && shown[2] >= PORTUGAL[2] - 1e-9);
+  assert.ok(Math.abs((shown[3] - shown[1]) - (PORTUGAL[3] - PORTUGAL[1])) < 1e-9, 'the tight dimension fits exactly');
 });

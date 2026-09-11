@@ -307,6 +307,19 @@ test('a bbox that is not one is the world again', () => {
   assert.equal(parseState('?bbox=-180,-90,180,90').bbox, null);
 });
 
+// M39a: the map is centred on 150°E, so ±180 is thirty degrees right of the
+// middle of the picture and a reader looking at Fiji is looking at a box whose
+// west end is east of its east end. Sorting the two — which this function did
+// until now — turned every such view into a view of the other 340 degrees.
+test('a box that crosses the antimeridian keeps its ends where they are', () => {
+  assert.deepEqual(parseBbox('170,-20,-170,0'), [170, -20, -170, 0]);
+  assert.equal(formatBbox([170, -20, -170, 0]), '170,-20,-170,0');
+  assert.deepEqual(parseState('?bbox=170,-20,-170,0').bbox, [170, -20, -170, 0]);
+  assert.equal(formatState({ ...defaultState(), bbox: [170, -20, -170, 0] }), '?bbox=170,-20,-170,0');
+  // The latitudes are still sorted: nothing wraps in latitude.
+  assert.deepEqual(parseBbox('170,0,-170,-20'), [170, -20, -170, 0]);
+});
+
 // The wheel over the timeline: the band narrows and widens around the year
 // under the cursor, and the lanes never move (M6).
 test('the wheel narrows the band around the year the cursor is over', () => {

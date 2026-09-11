@@ -6,7 +6,7 @@
 // end of it would have been a second, quieter answer to the same question.
 
 import { svg } from '../util/dom.js';
-import { fitBounds, WORLD, viewBboxIn, bboxTransform } from './projection.js';
+import { worldProjection, WORLD_WIDTH, viewBboxIn, bboxTransform } from './projection.js';
 import { createLandLayer } from './layers/land.js';
 import { createRegionsLayer } from './layers/regions.js';
 import { createPresencesLayer } from './layers/presences.js';
@@ -23,7 +23,9 @@ import { renderKey, shardsArrived } from '../render-key.js';
 import { labelOf } from '../attributes.js';
 import { exportButton } from '../share.js';
 
-const WIDTH = 960;
+// k = 1 is the whole world in these 960 units, and that is the unit every
+// zoom threshold in the data is written in (projection.js, WORLD_WIDTH).
+const WIDTH = WORLD_WIDTH;
 const HEIGHT = 540;
 const MIN_ZOOM = 1;
 // Shared with cluster.js, which needs it to know whether a cluster can ever
@@ -39,18 +41,13 @@ const ZOOM_DURATION = 260;
 // go and looking down finds the lanes already narrowed.
 const BBOX_SETTLE = 180;
 
-// The box every placed event fits in. An event's coordinates are its place's:
-// pointOf resolves the one to the other.
-function eventBounds(events, pointOf) {
-  const points = events.map(pointOf).filter(Boolean);
-  if (points.length === 0) return WORLD;
-  const lons = points.map((p) => p.lon);
-  const lats = points.map((p) => p.lat);
-  return [[Math.min(...lons), Math.min(...lats)], [Math.max(...lons), Math.max(...lats)]];
-}
-
 export function createMap(container, { atlas, state, onCluster = null }) {
-  const projection = fitBounds(eventBounds(atlas.activeEvents, atlas.pointOf), { width: WIDTH, height: HEIGHT, margin: 0.15 });
+  // The world, centred on the meridian the seam report chose, and not the
+  // extent of the events. Fitting to the events made `k` a number about this
+  // dataset — a threshold of "k = 8" meant a different scale on every
+  // corpus, and the whole map moved when one event was added on the far side
+  // of the world (review of the map block, finding 4).
+  const projection = worldProjection({ width: WIDTH, height: HEIGHT });
   const viewport = svg('g', { class: 'viewport' });
   const landGroup = svg('g', { class: 'layer layer-land' });
   // Territories go between the coastlines and the marks: an event still sits
