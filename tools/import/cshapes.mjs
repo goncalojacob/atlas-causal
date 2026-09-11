@@ -36,7 +36,7 @@ import { mkdir, readdir, readFile, unlink, writeFile } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
-import { decodeCollection } from './topojson.mjs';
+import { arcsOfGeometry, arcUsers, decodeArcs, decodeCollection } from './topojson.mjs';
 import { simplifyArc, pruneGeometry } from './simplify.mjs';
 import { splitAtMeridian } from './geometry.mjs';
 import { readSourceJson, sha256 } from './source.mjs';
@@ -279,6 +279,71 @@ function actorSummary(code, sourceNames, periods, capital, split = null, renamed
 // Whether a feature is somebody else's ground, by the field that says so.
 const isDependent = (p, code) => Number.isInteger(Number(p.owner)) && Number(p.owner) !== code;
 
+// --- which arcs are a border and which are a shore ------------------------
+//
+// CShapes' coastline is not Natural Earth's, and the map draws both: stroking
+// a territory's whole outline put a second shore a few tenths of a degree
+// beside the one `land.js` draws, which is the doubled line in the owner's
+// screenshot of 5 September. So a territory is filled on its outline and
+// stroked only where its boundary is a boundary with somebody — inland — and
+// the coast is Natural Earth's alone.
+//
+// Which is which is the topology's own answer, and this is the whole reason
+// the import reads TopoJSON. Two territories that were neighbours share the
+// arc between them, so an arc walked by two features that are different
+// entities and existed at the same time is an inland border. Every other arc
+// is left unstroked: a shore, the edge of the dataset, or a border with a
+// state Gleditsch and Ward do not list — the arc along Liechtenstein is
+// Switzerland's alone, and a map that stroked it would be inventing the other
+// side of it.
+//
+// The dates are the source's own and not the years a presence carries.
+// Two features of one entity that follow each other share every arc that did
+// not move between them, and `end` and the next `start` fall in the same year
+// often enough that a year is too coarse a bound to tell "next" from "beside".
+export const overlapInTime = (a, b) => a.start <= b.end && b.start <= a.end;
+
+// Given the properties of every feature that walks one arc: is any pair of
+// them two different entities that existed at the same time?
+export function isBorderArc(users) {
+  for (let i = 0; i < users.length; i += 1) {
+    for (let j = i + 1; j < users.length; j += 1) {
+      if (users[i].gwcode !== users[j].gwcode && overlapInTime(users[i], users[j])) return true;
+    }
+  }
+  return false;
+}
+
+// Every border arc of a (simplified) topology, cut at the seam exactly as the
+// outlines are, as arc index → [{ id, line }]. The id numbers the pieces
+// across the whole topology, so a shard can hold each of them once however
+// many of its features walk it. An arc the seam cuts is two pieces and both
+// belong to whoever walked the arc.
+export function borderArcs(topology, { objectName = OBJECT_NAME, seam = SEAM } = {}) {
+  const geometries = topology.objects[objectName]?.geometries ?? [];
+  const users = arcUsers(topology, objectName);
+  const arcs = decodeArcs(topology);
+  const pieces = new Map();
+  let id = 0;
+  for (const index of [...users.keys()].sort((a, b) => a - b)) {
+    if (!isBorderArc(users.get(index).map((i) => geometries[i].properties))) continue;
+    const cut = splitAtMeridian({ type: 'LineString', coordinates: arcs[index] }, seam);
+    const lines = cut === null ? [] : cut.type === 'LineString' ? [cut.coordinates] : cut.coordinates;
+    pieces.set(index, lines.map((line) => ({ id: (id += 1) - 1, line })));
+  }
+  return pieces;
+}
+
+// The border pieces one feature walks: each once, in the topology's own order,
+// so the list a shard writes is the same on every machine.
+export function bordersOf(geometry, pieces) {
+  const out = new Map();
+  for (const index of arcsOfGeometry(geometry)) {
+    for (const piece of pieces.get(index) ?? []) out.set(piece.id, piece);
+  }
+  return [...out.values()].sort((a, b) => a.id - b.id);
+}
+
 // The whole plan, from decoded features to the exact set of files to write.
 // Pure, so the tests can hand it a synthetic collection: `features` is
 // [{ properties, geometry }] as topojson.mjs returns, already simplified.
@@ -417,7 +482,7 @@ export function planImport(features, { created, shards = SHARDS, map = {}, exist
 
         const touched = shardsTouched(from, to, shards);
         const key = String(p.fid);
-        for (const shard of touched) shardMembers.get(shardFile(shard)).push({ key, presence: presenceId, geometry: feature.geometry });
+        for (const shard of touched) shardMembers.get(shardFile(shard)).push({ key, presence: presenceId, geometry: feature.geometry, borders: feature.borders ?? [] });
 
         const when = { start: from, end: to, date: p.start };
         if (closes) when.endDate = p.end;
@@ -455,12 +520,36 @@ export function planImport(features, { created, shards = SHARDS, map = {}, exist
     }
   }
 
+  // A shard holds its own arc list: every inland border of the territories in
+  // it, once, however many of them walk it, with each feature naming the arcs
+  // that are its own by their place in that list. One line and not two is what
+  // keeps the file the size it was, and it is also what the map draws — a
+  // border between two presences is one arc, drawn once.
   const shardFiles = new Map();
   for (const [file, members] of shardMembers) {
     members.sort((a, b) => (a.key < b.key ? -1 : a.key > b.key ? 1 : 0));
+    const local = new Map();
+    const arcs = [];
+    for (const m of members) {
+      for (const piece of m.borders) {
+        if (local.has(piece.id)) continue;
+        local.set(piece.id, arcs.length);
+        arcs.push(piece.line);
+      }
+    }
     shardFiles.set(file, {
       type: 'FeatureCollection',
-      features: members.map((m) => ({ type: 'Feature', id: m.key, properties: { presence: m.presence }, geometry: m.geometry })),
+      arcs,
+      features: members.map((m) => ({
+        type: 'Feature',
+        id: m.key,
+        // A territory with no inland border at all — an island, a colony
+        // nobody was next to — carries no list rather than an empty one.
+        properties: m.borders.length
+          ? { borders: m.borders.map((piece) => local.get(piece.id)), presence: m.presence }
+          : { presence: m.presence },
+        geometry: m.geometry,
+      })),
     });
   }
 
@@ -574,10 +663,16 @@ export { sha256 };
 // it, and an arc does not know which side of a polygon it is on.
 export function simplifyTopology(topology, { tolerance = TOLERANCE, decimals = DECIMALS, minArea = MIN_AREA, seam = SEAM } = {}) {
   const simplified = { ...topology, arcs: topology.arcs.map((arc) => simplifyArc(arc, { tolerance, decimals })) };
+  // Which of those arcs are inland borders, taken from the topology before it
+  // is decoded: once the polygons are rings, the two sides of a border are
+  // two copies of the same points and nothing says they were ever one line.
+  const pieces = borderArcs(simplified, { seam });
+  const geometries = simplified.objects[OBJECT_NAME]?.geometries ?? [];
   return decodeCollection(simplified, OBJECT_NAME)
-    .map((f) => ({
+    .map((f, i) => ({
       properties: f.properties,
       geometry: pruneGeometry(splitAtMeridian(pruneGeometry(f.geometry, { minArea }), seam), { minArea }),
+      borders: bordersOf(geometries[i], pieces),
     }));
 }
 

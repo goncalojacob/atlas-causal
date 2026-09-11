@@ -13,6 +13,38 @@ export function arcIndex(index) {
   return index < 0 ? { index: ~index, reversed: true } : { index, reversed: false };
 }
 
+// The arcs one geometry of the collection walks, each once and without its
+// direction: an arc walked backwards by one of two neighbours is the same
+// line on the ground, and which way round it was walked says nothing about
+// whether it is a border.
+export function arcsOfGeometry(geometry) {
+  const rings = geometry?.type === 'Polygon' ? geometry.arcs
+    : geometry?.type === 'MultiPolygon' ? geometry.arcs.flat() : [];
+  const out = new Set();
+  for (const ring of rings) for (const raw of ring) out.add(arcIndex(raw).index);
+  return out;
+}
+
+// Which geometries walk each arc: arc index → their indices in the
+// collection, in the order the file gives them. This is the question the
+// topology exists to answer and the reason the import reads TopoJSON at all —
+// an arc two features share is the boundary between them, and an arc one
+// feature has to itself is the edge of the world it sits in.
+export function arcUsers(topology, objectName) {
+  const object = topology.objects[objectName];
+  if (!object || object.type !== 'GeometryCollection') {
+    throw new Error(`${objectName} is not a GeometryCollection in this topology`);
+  }
+  const users = new Map();
+  object.geometries.forEach((geometry, index) => {
+    for (const arc of arcsOfGeometry(geometry)) {
+      if (!users.has(arc)) users.set(arc, []);
+      users.get(arc).push(index);
+    }
+  });
+  return users;
+}
+
 // Coordinates are either absolute, or quantized deltas to be summed and
 // scaled back by the topology's transform. CShapes 2.0 has no transform;
 // the branch is here so the module is not a trap for the next file.

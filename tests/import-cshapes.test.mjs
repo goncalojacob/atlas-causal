@@ -8,9 +8,9 @@ import assert from 'node:assert/strict';
 import { mkdtemp, mkdir, readFile, readdir, writeFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import path from 'node:path';
-import { decodeCollection, ringFrom, arcIndex, decodeArcs } from '../tools/import/topojson.mjs';
+import { decodeCollection, ringFrom, arcIndex, decodeArcs, arcUsers, arcsOfGeometry } from '../tools/import/topojson.mjs';
 import { douglasPeucker, quantize, simplifyArc, pruneGeometry, ringArea, keepRing, round } from '../tools/import/simplify.mjs';
-import { planImport, planRelations, runRelations, slug, yearOf, shardsTouched, shardFile, dayAfter, runImport, reportMarkdown, sourceRecord, IMPORT_AUTHOR, ORIGIN_TOOL, SHARDS, DATA_END, MAP_FILE } from '../tools/import/cshapes.mjs';
+import { planImport, planRelations, runRelations, slug, yearOf, shardsTouched, shardFile, dayAfter, runImport, reportMarkdown, sourceRecord, simplifyTopology, borderArcs, isBorderArc, overlapInTime, IMPORT_AUTHOR, ORIGIN_TOOL, SHARDS, DATA_END, MAP_FILE } from '../tools/import/cshapes.mjs';
 import { isDraft } from '../src/origin.js';
 
 const SHARD_CUT = [{ from: 1886, to: 1913 }, { from: 1914, to: 1945 }, { from: 1946, to: 2019 }];
@@ -88,6 +88,17 @@ test('a transform decodes delta-encoded arcs', () => {
     arcs: [[[0, 0], [2, 4], [2, 0]]],
   });
   assert.deepEqual(decoded[0], [[10, 20], [11, 22], [12, 22]]);
+});
+
+test('who walks each arc, with direction dropped and a multipolygon flattened', () => {
+  const users = arcUsers(syntheticTopology(), 'cshapes_2_gw');
+  // Arc 0 is walked forwards by the two Westlands and backwards (~0 = -1) by
+  // Eastland, and it is one arc either way round.
+  assert.deepEqual(users.get(0), [0, 1, 2]);
+  assert.deepEqual(users.get(1), [0, 1]);
+  assert.deepEqual(users.get(2), [2]);
+  assert.deepEqual([...arcsOfGeometry({ type: 'MultiPolygon', arcs: [[[0, 1]], [[-1, 2]]] })].sort((a, b) => a - b), [0, 1, 2]);
+  assert.deepEqual([...arcsOfGeometry({ type: 'Point', arcs: [] })], [], 'a geometry with no rings walks nothing');
 });
 
 test('a geometry that is not a polygon is refused rather than half-decoded', () => {
@@ -488,6 +499,93 @@ test('every record the import creates is in the review queue', () => {
     assert.deepEqual(record.review, { status: 'draft' }, record.id);
     assert.ok(isDraft(record), `${record.id} is in the queue`);
   }
+});
+
+// --- which arcs are a border, and the arc list a shard carries -------------
+//
+// M39b. The shore CShapes draws is not the shore Natural Earth draws, so a
+// territory outlined whole put a second coastline beside the map's own. The
+// import marks each arc of the topology *shared* — an inland border — or not,
+// and the map strokes only the shared ones. The synthetic topology is exactly
+// the case: arc 0 is the edge Westland and Eastland have between them, arcs 1
+// and 2 are the two loops back round the outside.
+
+const westland = { gwcode: 1, start: '1886-01-01', end: '1913-06-30' };
+const westlandRepublic = { gwcode: 1, start: '1913-07-01', end: DATA_END };
+const eastland = { gwcode: 2, start: '1886-01-01', end: '1960-12-31' };
+
+test('an arc two contemporary entities share is a border; anything else is not', () => {
+  assert.equal(isBorderArc([westland, eastland]), true, 'two entities, at the same time');
+  assert.equal(isBorderArc([westland]), false, 'a shore: one territory has it to itself');
+  assert.equal(isBorderArc([westland, westlandRepublic]), false,
+    'one entity before and after itself keeps every arc that did not move');
+  // The successor state's shore is the predecessor's shore and not a border
+  // with it: the two never existed at the same time.
+  assert.equal(isBorderArc([{ gwcode: 3, start: '1886-01-01', end: '1922-10-31' }, { gwcode: 4, start: '1922-11-01', end: DATA_END }]), false);
+  assert.equal(overlapInTime(westland, eastland), true);
+  assert.equal(overlapInTime(westland, westlandRepublic), false, 'the day after is not the same day');
+});
+
+test('the border arcs of a topology are cut at the seam and numbered once', () => {
+  const topology = syntheticTopology();
+  const simplified = { ...topology, arcs: topology.arcs.map((a) => simplifyArc(a, { tolerance: 0.1, decimals: 3 })) };
+  const pieces = borderArcs(simplified);
+  assert.deepEqual([...pieces.keys()], [0], 'the shared edge alone; the two loops back are shore');
+  assert.deepEqual(pieces.get(0).map((p) => p.id), [0]);
+  // Simplification took the two intermediate points off, so the border is the
+  // line from one end of the shared edge to the other.
+  assert.deepEqual(pieces.get(0)[0].line, [[0, 10], [0, 0]]);
+
+  const features = simplifyTopology(topology, { minArea: 0.005 });
+  assert.deepEqual(features.map((f) => f.borders.map((p) => p.id)), [[0], [0], [0]],
+    'all three features walk it, and all three name the same piece');
+  assert.equal(features[0].borders[0].line, features[2].borders[0].line,
+    'and it is the same line, not a copy of it');
+});
+
+test('an island walks no border arc and its feature carries no list', () => {
+  // A fourth entity, a square far away that touches nobody.
+  const topology = syntheticTopology();
+  topology.arcs.push([[40, 0], [50, 0], [50, 10], [40, 10], [40, 0]]);
+  topology.objects.cshapes_2_gw.geometries.push({
+    type: 'Polygon',
+    arcs: [[3]],
+    properties: {
+      gwcode: 3, country_name: 'Islandia', start: '1886-01-01', end: DATA_END,
+      status: 'independent', owner: '3', capname: null, caplong: null, caplat: null, b_def: 1, fid: 31,
+    },
+  });
+  const features = simplifyTopology(topology, { minArea: 0.005 });
+  assert.deepEqual(features[3].borders, [], 'nobody is on the other side of its shore');
+
+  const { shardFiles } = planImport(features, { created: '2026-09-02', shards: SHARD_CUT });
+  const first = shardFiles.get('geo/presences/1886-1913.json');
+  const island = first.features.find((f) => f.id === '31');
+  assert.deepEqual(island.properties, { presence: 'islandia-1886' }, 'no empty list, and no lie about one');
+});
+
+test('a shard holds each border once and its two sides point at it', () => {
+  const features = simplifyTopology(syntheticTopology(), { minArea: 0.005 });
+  const { shardFiles } = planImport(features, { created: '2026-09-02', shards: SHARD_CUT });
+  const first = shardFiles.get('geo/presences/1886-1913.json');
+  assert.deepEqual(first.arcs, [[[0, 10], [0, 0]]], 'one arc in the file, whatever walks it');
+  assert.deepEqual(first.features.map((f) => f.properties.borders), [[0], [0], [0]]);
+  // Every index a feature names is an arc the file holds.
+  for (const f of first.features) {
+    for (const i of f.properties.borders ?? []) assert.ok(first.arcs[i], `${f.id} names arc ${i}`);
+  }
+  // The shard the elder Westland is not in still holds the border its two
+  // survivors share: the list is the shard's own and not the topology's.
+  const later = shardFiles.get('geo/presences/1946-2019.json');
+  assert.deepEqual(later.features.map((f) => f.id), ['12', '21']);
+  assert.deepEqual(later.arcs, [[[0, 10], [0, 0]]]);
+  assert.deepEqual(later.features.map((f) => f.properties.borders), [[0], [0]]);
+});
+
+test('the arc list is deterministic: the same topology twice is the same bytes', () => {
+  const once = planImport(simplifyTopology(syntheticTopology(), { minArea: 0.005 }), { created: '2026-09-02', shards: SHARD_CUT });
+  const twice = planImport(simplifyTopology(syntheticTopology(), { minArea: 0.005 }), { created: '2026-09-02', shards: SHARD_CUT });
+  assert.equal(JSON.stringify([...once.shardFiles]), JSON.stringify([...twice.shardFiles]));
 });
 
 // --- the successions the split table states -------------------------------
