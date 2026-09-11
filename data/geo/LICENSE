@@ -7,7 +7,13 @@ Natural Earth (land-present.json, regions.json)
   Files derived from Natural Earth 1:110m vector data, version 5.1.2, taken
   from the GeoJSON conversions published in the upstream repository:
   https://github.com/nvkelso/natural-earth-vector/tree/v5.1.2/geojson
+  The two files are in this repository, gzipped, under vendor/natural-earth/
+  110m/, with their sha256 in vendor/SHA256SUMS; the tool reads them there.
   Regeneration is reproducible with tools/build-regions.mjs.
+
+  What the import changed: coordinates are Natural Earth's own, to the
+  precision it publishes. Since M39a every outline is cut at 30 degrees
+  west, the meridian the map is cut at (see below); nothing else is altered.
 
 CShapes 2.0 (presences/*.json)
   Licence: CC BY-NC-SA 4.0 — https://creativecommons.org/licenses/by-nc-sa/4.0/
@@ -33,14 +39,27 @@ CShapes 2.0 (presences/*.json)
   decompressed with `xz -dc`.
   sha256 of the decompressed file:
   9f73468bb56aae6a6b22bb5e56bf5f3e013b9ee17c641aba37db97bcb5c1c3bc
-  Regeneration is reproducible with tools/import/cshapes.mjs --source <file>,
-  which verifies that sha256 before it writes anything.
+  The copy in this repository is vendor/cshapes/cshapes_2_gw.topojson.gz —
+  the same bytes, gzipped instead of xz'd, because node:zlib reads gzip and
+  a run has no network. The sha256 above is of the decompressed file either
+  way, which is what the tool checks.
+  Regeneration is reproducible with
+    tools/import/cshapes.mjs --source <file> --check --geometry-only
+  for the outlines alone, or without --geometry-only for the records too;
+  either verifies that sha256 before it writes anything.
 
   What the import changed: coordinates are quantized to three decimals and
   the topology's arcs are simplified (Douglas–Peucker, 0.1° or a sixth of an
   arc's own extent, whichever is less), so the outlines are less detailed
-  than the source. Nothing else is altered; every date, status, owner and
-  capital is the dataset's own.
+  than the source. Since M39a every outline is also cut at 30 degrees west —
+  the map projects longitudes around 150 degrees east, which makes the
+  meridian half a world away both edges of the picture at once, and an
+  outline lying across it would be drawn as a smear from one side to the
+  other. The cut adds points at that one longitude and removes none, except
+  where a vertex was already a repeat of the one before it; no CShapes
+  outline actually reaches 30 degrees west, so the shards lost 1,872 bytes
+  of duplicate vertices and gained nothing. Nothing else is altered; every
+  date, status, owner and capital is the dataset's own.
 
 palette.json
   Derived from the CShapes outlines above — it is the graph colouring of who

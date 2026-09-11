@@ -3877,6 +3877,31 @@ The numbering continues from 401, which is M31-3's last.
      cannot hold. They zoom one notch first, and they pan the other way round
      from before: the fixture places are at the far west of a world centred
      on 150°E.
+569. **`cshapes.mjs --geometry-only` is new, and this run used it.** The
+     brief asks for the geometry recut by re-running the imports and for no
+     record under `data/` to be edited, and a plain re-run edits 1,040 of
+     them: `record()` has written `review: { status: "draft" }` since health
+     review R10, and the actors, presences and source record on disk were
+     written before that and never rewritten. The flag writes the shards and
+     nothing else, so the recut is reproducible — it is the command
+     `data/geo/LICENSE` now names — without carrying an unrelated migration
+     of 1,040 records inside a projection change. **For the owner:** those
+     records are still without a `review` status, so they are in no queue and
+     on no dashboard, and one run of the import without the flag would put
+     them there. It is a one-line run and a large, dull diff, and it is not
+     this run's to take.
+570. **The split runs after the decode, not on the topology's arcs.** The
+     import simplifies arcs so that two countries sharing a border still
+     share it; the cut cannot work there, because an arc does not know which
+     polygon it bounds. It is safe after the decode for the same reason
+     simplification is not: the cut is the same arithmetic at the same
+     longitude on both sides of a shared border, so the two still meet.
+571. **The clipper drops a vertex that repeats the one before it.** That is
+     what made the shards smaller rather than larger — 1,872 bytes across the
+     five, where the ring assembled from two arcs of the topology repeated
+     their shared point. Nothing is drawn by a segment of no length, and the
+     alternative was a clipper that emits a duplicate wherever a vertex sits
+     exactly on an edge of the box.
 ## I8: what was derived, and what the Action must still run
 
 **The successions.** `node tools/import/cshapes.mjs --relations` reads
@@ -4256,6 +4281,50 @@ ones are. The best any candidate in the range does is 7, at 140°E and 145°E,
 and both of those cut Brazil in two. This is the cost of a Pacific-centred
 projection for a dataset whose first slice is Atlantic, it is the owner's to
 weigh, and it is one constant to change if they want it weighed differently.
+
+### The recut, file by file
+
+Every geometry file was regenerated from the vendored sources — Natural Earth
+110 m through `tools/build-regions.mjs`, CShapes through
+`tools/import/cshapes.mjs --geometry-only`, both reading the gzipped file and
+checking the sha256 of the decompressed bytes. **The geometry went from
+4,855,097 to 4,853,971 bytes: 1,126 fewer.** `data/geo/` as a whole is 158
+bytes larger, because `LICENSE` gained a paragraph.
+
+| file | before | after | Δ |
+|---|---|---|---|
+| `land-present.json` | 125,938 | 126,436 | **+498** |
+| `regions.json` | 221,050 | 221,298 | **+248** |
+| `palette.json` | 4,071 | 4,071 | 0 |
+| `presences/1886-1913.json` | 888,209 | 888,017 | −192 |
+| `presences/1914-1932.json` | 1,114,091 | 1,113,499 | −592 |
+| `presences/1933-1945.json` | 774,581 | 774,197 | −384 |
+| `presences/1946-1974.json` | 846,877 | 846,781 | −96 |
+| `presences/1975-2019.json` | 880,280 | 879,672 | −608 |
+| **the geometry** | **4,855,097** | **4,853,971** | **−1,126** |
+| `LICENSE` (prose) | 2,970 | 4,254 | +1,284 |
+| **`data/geo/` whole** | **4,858,067** | **4,858,225** | +158 |
+
+The coastline and the lane polygons grew because Greenland was cut in two,
+which is the one landmass at 30°W; the Americas lane went from 73 polygons to
+74. **The presence shards shrank, and not one of them was cut.** No CShapes
+outline reaches 30°W — which is what the seam report promised — so the split
+found nothing to divide; what it did remove, passing through, was 1,872 bytes
+of vertices that repeated the one before them, left where two arcs of the
+topology join. Russia, New Zealand and Fiji are the features that changed,
+because their outlines run to ±180 and so straddle the seam by their bounding
+box even though no ring of them crosses it.
+
+Three things were checked rather than assumed: **no feature under `data/geo/`
+crosses 30°W** afterwards (0 of them, a test), **the area is conserved** —
+exactly for the shards, and to 3×10⁻⁵ square degrees for Natural Earth, which
+is the seam gap along Greenland's cut — and **no place changed lane**: all 26
+placed records derive the same region by the same method as they do off the
+uncut polygons, and over a one-degree grid of the whole world (64,800 points)
+the region and the method are identical at every one, the only differences
+being in the 15th digit of a `nearest` distance. `node tools/validate.mjs
+--index` is byte-identical, and `palette.json` did not move at all: the
+colouring is keyed on which presences border which, and none of that changed.
 
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled

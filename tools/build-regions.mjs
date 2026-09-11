@@ -31,8 +31,9 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 import { canonical } from './build-index.mjs';
 import { readRegions } from './lib/read.mjs';
 import { readSourceJson } from './import/source.mjs';
-import { ringBbox } from './import/geometry.mjs';
+import { ringBbox, splitAtMeridian } from './import/geometry.mjs';
 import { ringArea } from '../src/util/simplify.js';
+import { SEAM } from '../src/map/projection.js';
 
 // Compact, not indented: coordinate arrays are three times the size when
 // pretty-printed and nobody reads them in a diff. Keys still sorted.
@@ -190,16 +191,21 @@ function polygonsOf(geometry) {
   return [];
 }
 
-export function buildLand(land) {
+// The coastline, cut at the seam so that nothing it draws crosses the one
+// meridian that is both edges of the picture (tools/import/geometry.mjs).
+// A feature the seam misses comes back as it was, byte for byte.
+export function buildLand(land, { seam = SEAM } = {}) {
   return {
     type: 'FeatureCollection',
-    features: land.features.map((f) => ({ type: 'Feature', properties: {}, geometry: f.geometry })),
+    features: land.features
+      .map((f) => ({ type: 'Feature', properties: {}, geometry: splitAtMeridian(f.geometry, seam) }))
+      .filter((f) => f.geometry),
   };
 }
 
 // lanes: data/regions.json. Returns the FeatureCollection and the countries
 // that fell into no lane, for the log.
-export function buildLanes(countries, lanes) {
+export function buildLanes(countries, lanes, { seam = SEAM } = {}) {
   const members = new Map(lanes.map((l) => [l.id, []]));
   const skipped = [];
   for (const f of countries.features) {
@@ -209,7 +215,12 @@ export function buildLanes(countries, lanes) {
       skipped.push(`${name} (${f.properties.CONTINENT})`);
       continue;
     }
-    members.get(lane).push({ name, polygons: polygonsOf(f.geometry) });
+    // Cut at the seam like the coastline, because the wash a regional event
+    // draws is projected too. The cut adds points at one longitude and takes
+    // none away, so the point-in-polygon answer — which lane a place is on —
+    // is the same for every point but the ones exactly on the seam.
+    const cut = splitAtMeridian(f.geometry, seam);
+    members.get(lane).push({ name, polygons: cut ? polygonsOf(cut) : [] });
   }
   const features = [...lanes]
     .sort((a, b) => a.order - b.order)

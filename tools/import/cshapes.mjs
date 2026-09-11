@@ -4,7 +4,7 @@
 // exactly the files it owns and refuses to touch a record whose authors do
 // not name it.
 //
-//   node tools/import/cshapes.mjs --source <cshapes_2_gw.topojson> [--data <dir>] [--check] [--report]
+//   node tools/import/cshapes.mjs --source <cshapes_2_gw.topojson[.gz]> [--data <dir>] [--check] [--geometry-only] [--report]
 //   node tools/import/cshapes.mjs --relations [--data <dir>]
 //
 // --relations is the one pass that needs no topology: which entity code is
@@ -38,7 +38,9 @@ import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { decodeCollection } from './topojson.mjs';
 import { simplifyArc, pruneGeometry } from './simplify.mjs';
+import { splitAtMeridian } from './geometry.mjs';
 import { readSourceJson, sha256 } from './source.mjs';
+import { SEAM } from '../../src/map/projection.js';
 import { identityOnDisk, mergeIdentity } from './identity.mjs';
 import { isReviewed, writtenBy, REVIEW_STATUS } from '../../src/origin.js';
 
@@ -562,10 +564,21 @@ export { sha256 };
 
 // Arcs are simplified before any polygon is decoded, so a border two
 // countries share stays one line and they still meet along it.
-export function simplifyTopology(topology, { tolerance = TOLERANCE, decimals = DECIMALS, minArea = MIN_AREA } = {}) {
+//
+// Then every outline is cut at the projection's seam (geometry.mjs), because
+// the map wraps longitudes around a central meridian and an outline left
+// lying across the meridian half a world away from it is drawn as a smear
+// from one side of the picture to the other. The cut runs after the decode
+// and not on the arcs: two countries that share a border across the seam are
+// cut at the same longitude by the same arithmetic, so they still meet along
+// it, and an arc does not know which side of a polygon it is on.
+export function simplifyTopology(topology, { tolerance = TOLERANCE, decimals = DECIMALS, minArea = MIN_AREA, seam = SEAM } = {}) {
   const simplified = { ...topology, arcs: topology.arcs.map((arc) => simplifyArc(arc, { tolerance, decimals })) };
   return decodeCollection(simplified, OBJECT_NAME)
-    .map((f) => ({ properties: f.properties, geometry: pruneGeometry(f.geometry, { minArea }) }));
+    .map((f) => ({
+      properties: f.properties,
+      geometry: pruneGeometry(splitAtMeridian(pruneGeometry(f.geometry, { minArea }), seam), { minArea }),
+    }));
 }
 
 // The import's own records, by what created them rather than by a name in
@@ -683,7 +696,13 @@ export async function runRelations(dataDir = DEFAULT_DATA, { today = new Date().
   return { failed: [], notes, written };
 }
 
-export async function runImport(sourceFile, dataDir = DEFAULT_DATA, { today = new Date().toISOString().slice(0, 10), check = false } = {}) {
+// `geometryOnly` writes the shards and nothing else: the outlines are cut at
+// the projection's seam and every record the import owns is left exactly as
+// it is on disk. It is how M39a recut the borders without editing a record,
+// and it is what `data/geo/LICENSE` names as the way to regenerate them.
+// The plan is still built in full and its problems are still reported — a
+// geometry pass that hides a broken mapping file would be worse than none.
+export async function runImport(sourceFile, dataDir = DEFAULT_DATA, { today = new Date().toISOString().slice(0, 10), check = false, geometryOnly = false } = {}) {
   // A `--source` ending in `.gz` is decompressed and the sha256 is of the
   // decompressed bytes, so SOURCE_FILE_SHA256 and the hash data/geo/LICENSE
   // records are the file as it was downloaded either way (review of the map
@@ -756,20 +775,22 @@ export async function runImport(sourceFile, dataDir = DEFAULT_DATA, { today = ne
       writes.push({ file: path.join(dir, file), text: asText(record) });
     }
   };
-  claim(actorsDir, 'actors', actorSurvey, plan.actors);
-  claim(presencesDir, 'presences', presenceSurvey, plan.presences);
-  // The successions the same mapping file states, so that a re-import cannot
-  // leave them behind. They are not `claim`ed: a relation is never rewritten,
-  // only created (see relationWrites).
-  writes.push(...await relationWrites(dataDir, map, { today, notes, problems: failed }));
+  if (!geometryOnly) {
+    claim(actorsDir, 'actors', actorSurvey, plan.actors);
+    claim(presencesDir, 'presences', presenceSurvey, plan.presences);
+    // The successions the same mapping file states, so that a re-import cannot
+    // leave them behind. They are not `claim`ed: a relation is never rewritten,
+    // only created (see relationWrites).
+    writes.push(...await relationWrites(dataDir, map, { today, notes, problems: failed }));
 
-  const sourceCreated = ownedBy(sourceOnDisk) ? sourceOnDisk.created : sourceOnDisk ? null : today;
-  if (sourceCreated === null) {
-    failed.push(`data/sources/${SOURCE_ID}.json was not written by the import; the tool will not overwrite it`);
-  } else if (isReviewed(sourceOnDisk)) {
-    notes.push(`note: data/sources/${SOURCE_ID}.json has been reviewed and signed; the import will not rewrite it`);
-  } else {
-    writes.push({ file: path.join(dataDir, 'sources', `${SOURCE_ID}.json`), text: asText({ ...plan.source, created: sourceCreated }) });
+    const sourceCreated = ownedBy(sourceOnDisk) ? sourceOnDisk.created : sourceOnDisk ? null : today;
+    if (sourceCreated === null) {
+      failed.push(`data/sources/${SOURCE_ID}.json was not written by the import; the tool will not overwrite it`);
+    } else if (isReviewed(sourceOnDisk)) {
+      notes.push(`note: data/sources/${SOURCE_ID}.json has been reviewed and signed; the import will not rewrite it`);
+    } else {
+      writes.push({ file: path.join(dataDir, 'sources', `${SOURCE_ID}.json`), text: asText({ ...plan.source, created: sourceCreated }) });
+    }
   }
   for (const [file, collection] of plan.shardFiles) {
     writes.push({ file: path.join(dataDir, ...file.split('/')), text: asCompact(collection) });
@@ -782,7 +803,7 @@ export async function runImport(sourceFile, dataDir = DEFAULT_DATA, { today = ne
   const removed = [];
   // Files the import owns and no longer produces: an entity that left the
   // dataset, or a shard cut that changed.
-  for (const [dir, surveyed] of [[actorsDir, actorSurvey], [presencesDir, presenceSurvey]]) {
+  for (const [dir, surveyed] of geometryOnly ? [] : [[actorsDir, actorSurvey], [presencesDir, presenceSurvey]]) {
     for (const name of surveyed.owned.keys()) {
       const file = path.join(dir, name);
       if (!wanted.has(file)) {
@@ -813,11 +834,13 @@ async function main(argv) {
   let dataDir = DEFAULT_DATA;
   let reportFile = null;
   let check = false;
+  let geometryOnly = false;
   let relationsOnly = false;
   for (let i = 0; i < argv.length; i += 1) {
     if (argv[i] === '--source') source = path.resolve(argv[++i]);
     else if (argv[i] === '--data') dataDir = path.resolve(argv[++i]);
     else if (argv[i] === '--check') check = true;
+    else if (argv[i] === '--geometry-only') geometryOnly = true;
     else if (argv[i] === '--relations') relationsOnly = true;
     else if (argv[i] === '--report') reportFile = path.join(ROOT, ...REPORT_FILE.split('/'));
     else if (argv[i] === '--report-to') reportFile = path.resolve(argv[++i]);
@@ -837,13 +860,13 @@ async function main(argv) {
     return 0;
   }
   if (!source) {
-    console.error('usage: node tools/import/cshapes.mjs --source <cshapes_2_gw.topojson[.gz]> [--data <dir>] [--check] [--report | --report-to <file>]');
+    console.error('usage: node tools/import/cshapes.mjs --source <cshapes_2_gw.topojson[.gz]> [--data <dir>] [--check] [--geometry-only] [--report | --report-to <file>]');
     console.error('       node tools/import/cshapes.mjs --relations [--data <dir>]');
     console.error('the file in this repository is vendor/cshapes/cshapes_2_gw.topojson.gz');
     console.error(`it is inst/extdata/cshapes_2_gw.topojson.xz in the CRAN package, decompressed; sha256 ${SOURCE_FILE_SHA256}`);
     return 2;
   }
-  const result = await runImport(source, dataDir, { check });
+  const result = await runImport(source, dataDir, { check, geometryOnly });
   for (const note of result.notes) console.error(note);
   if (result.failed.length) {
     for (const problem of result.failed) console.error(`error: ${problem}`);

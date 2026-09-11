@@ -1,13 +1,15 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { existsSync } from 'node:fs';
-import { readFile } from 'node:fs/promises';
+import { readFile, readdir } from 'node:fs/promises';
 import path from 'node:path';
 import {
   buildLanes, buildLand, CONTINENT_TO_LANE, FILES, SOURCE_SHA256, VENDOR_110M,
   seamReport, chooseSeam, excludedAs, SEAM_CANDIDATES,
 } from '../tools/build-regions.mjs';
 import { readSourceJson } from '../tools/import/source.mjs';
+import { crossesMeridian } from '../tools/import/geometry.mjs';
+import { SEAM } from '../src/map/projection.js';
 import { createRegionDeriver } from '../src/util/geo.js';
 import { ROOT } from './helpers.mjs';
 
@@ -152,4 +154,56 @@ test('the committed sources choose 150E', async (t) => {
   assert.equal(chosen.polygons, 0);
   assert.ok(chosen.clearance > 4.7 && chosen.clearance < 4.8, `${chosen.clearance}`);
   assert.deepEqual(chosen.setAside, ['Antarctica', 'Greenland'], 'and it is the only zero-cut seam that leaves Iceland whole');
+});
+
+// M39a: the cut is the whole point of the seam, so the committed files have to
+// carry it. Nothing under data/geo/ may cross 30°W — one ring across it is one
+// shape drawn as a smear across the whole picture.
+test('no committed geometry crosses the seam', async () => {
+  const files = [
+    path.join(ROOT, 'data', 'geo', 'land-present.json'),
+    path.join(ROOT, 'data', 'geo', 'regions.json'),
+    ...(await readdir(path.join(ROOT, 'data', 'geo', 'presences')))
+      .filter((name) => name.endsWith('.json'))
+      .map((name) => path.join(ROOT, 'data', 'geo', 'presences', name)),
+  ];
+  assert.ok(files.length >= 4);
+  for (const file of files) {
+    if (!existsSync(file)) continue;
+    const collection = JSON.parse(await readFile(file, 'utf8'));
+    const across = collection.features
+      .filter((f) => f.geometry && crossesMeridian(f.geometry, SEAM))
+      .map((f) => f.id ?? f.properties?.region ?? f.properties?.presence ?? '?');
+    assert.deepEqual(across, [], `${path.basename(file)} has ${across.length} feature(s) across ${SEAM}`);
+  }
+});
+
+// And the cut must not move a single event to another lane. It adds vertices
+// at one longitude and takes none away, so point-in-polygon answers the same
+// everywhere but exactly on the seam — asserted here against the records
+// rather than argued for in a comment.
+test('the recut lane polygons put every place on the lane they were on', async () => {
+  const file = path.join(ROOT, 'data', 'geo', 'regions.json');
+  const dir = path.join(ROOT, 'data', 'places');
+  if (!existsSync(file) || !existsSync(dir)) return;
+  const derive = createRegionDeriver(JSON.parse(await readFile(file, 'utf8')));
+  // The lane polygons as Natural Earth publishes them, uncut: the same build
+  // with the seam put where nothing is, which is the honest control.
+  const source = path.join(ROOT, ...VENDOR_110M.split('/'));
+  if (!existsSync(path.join(source, `${FILES.countries}.gz`))) return;
+  const countries = (await readSourceJson(path.join(source, `${FILES.countries}.gz`), SOURCE_SHA256[FILES.countries])).json;
+  const lanes = JSON.parse(await readFile(path.join(ROOT, 'data', 'regions.json'), 'utf8'));
+  const uncut = createRegionDeriver(buildLanes(countries, lanes, { seam: -180 }).collection);
+
+  let places = 0;
+  for (const name of (await readdir(dir)).filter((f) => f.endsWith('.json'))) {
+    const record = JSON.parse(await readFile(path.join(dir, name), 'utf8'));
+    if (!record.where) continue;
+    places += 1;
+    const a = uncut(record.where);
+    const b = derive(record.where);
+    assert.equal(b?.region ?? null, a?.region ?? null, `${record.id} changed lane`);
+    assert.equal(b?.method ?? null, a?.method ?? null, `${record.id} changed how it was derived`);
+  }
+  assert.ok(places >= 20, `${places} placed records were checked`);
 });
