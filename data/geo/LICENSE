@@ -63,8 +63,17 @@ CShapes 2.0 (presences/*.json)
   outline actually reaches 30 degrees west, so the shards lost 1,872 bytes
   of duplicate vertices and gained nothing: 888,209 → 888,017, 1,114,091 →
   1,113,499, 774,581 → 774,197, 846,877 → 846,781 and 880,280 → 879,672 bytes
-  for the five periods in order. Nothing else is altered; every date, status,
-  owner and capital is the dataset's own.
+  for the five periods in order. Since M39b each shard also carries `arcs`,
+  its own list of the boundaries between the territories in it — an arc of the
+  source's topology that two features share, of different entities, whose
+  dates overlap — each held once and named by index from the features on
+  either side; the map fills a territory's outline and strokes only these,
+  because the coastline it draws is Natural Earth's and CShapes' shore beside
+  it was a second shore. Those lines are the source's own vertices, taken from
+  the same simplified arcs the outlines are built from, and nothing is added
+  to them. The five shards went to 961,628, 1,194,272, 845,342, 918,623 and
+  957,462 bytes. Nothing else is altered; every date, status, owner and
+  capital is the dataset's own.
 
 palette.json
   Derived from the CShapes outlines above — it is the graph colouring of who
