@@ -221,6 +221,7 @@ tools/lookup-sources.mjs   what the catalogues say a DOI or ISBN names; a review
 tools/import/cshapes.mjs   CShapes 2.0 → actors, presences, geometry shards, and the `succeeded` relation each split in data/imports/cshapes-actors.json states; topojson.mjs is its pure half and simplify.mjs the name it knows src/util/simplify.js by
 tools/import/wikidata.mjs  identifiers and records from Wikidata; injectable fetch layer, tested on fixtures, additive on disk
 tools/import/identity.mjs  the additive rule both imports obey: fill a gap, never change a value, never sign
+tools/import/geometry.mjs  clipToBox (Sutherland-Hodgman, holes kept, lines cut into their runs) and splitAtMeridian over it: where the geometry is cut at the projection's seam
 tools/import/cache/        GENERATED: Wikipedia leads with their revision; never published, never data, not under data/
 tools/lib/read.mjs         all filesystem access for the tools, everything under data/imports/ included
 tests/                     node --test, zero deps; tests/fixtures/data/ is the synthetic graph
