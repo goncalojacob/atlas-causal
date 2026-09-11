@@ -3811,6 +3811,35 @@ The numbering continues from 401, which is M31-3's last.
      prints a failure summary at the *end* (`--test-reporter=spec` puts the
      failures last), or fetching the log by some route with a byte range.
 
+560. **`tools/build-regions.mjs` reads `vendor/natural-earth/110m` by
+     default** and `--network` is how the download is asked for. A run has no
+     network, so the download was the one path nothing could take; the
+     repository's own copy is now the default and `--check` refuses to write
+     on a sha256 that does not match what `vendor/SHA256SUMS` records.
+561. **"The Atlantic islands" is written out as the archipelagos it means** —
+     the Azores, Madeira, the Canaries, Cape Verde and the South Atlantic
+     islands — one tight box each, beside Iceland, Greenland and Antarctica,
+     and the list is read in order because Greenland's box contains Iceland's.
+     One box for the whole Atlantic was tried first and it swallowed Western
+     Sahara, Senegal, the Gambia, Guinea and Guinea-Bissau, which are not
+     islands: the seam report then said 165°E cut two countries when it cuts
+     seven. A rule that sets aside a country by accident is worse than no
+     rule, so each box names a place.
+562. **A tie at nothing cut is broken by clearance**, which the brief does not
+     name. Three of the seven candidates cut no continent, and "pick the one
+     that cuts least" does not choose between them. Clearance — the distance
+     from the seam to the nearest land it misses — is the same question asked
+     of a more detailed coastline in advance, and it agrees with both of the
+     other two readings (Iceland, and the 10 m measurement).
+563. **The western half of a split stops a millionth of a degree short of the
+     seam** (`SEAM_GAP`, `tools/import/geometry.mjs`). The seam is one
+     meridian and two edges of the picture, and the projection has to send a
+     point on it to one of them: it sends it to the left. A point of the
+     *western* half left exactly on the seam would go to that same left edge
+     and drag its shape across the whole map, so the western clip stops
+     `1e-6`° short. The gap is a tenth of a millimetre on the ground and
+     3e-9 of an SVG unit at k = 1, and its two sides are at opposite edges of
+     the picture, where nothing can be seen to be missing between them.
 ## I8: what was derived, and what the Action must still run
 
 **The successions.** `node tools/import/cshapes.mjs --relations` reads
@@ -4139,6 +4168,48 @@ passing in 198 s. **The log names it and this sandbox cannot reach that far
 back in it**; the job is
 https://github.com/goncalojacob/atlas-causal/actions/runs/34543249726 and the
 entries are in its first ~2,700 lines.
+
+## M39a: where the world is cut
+
+The owner asked on 5 September 2026 for the world map centred on Asia. That
+is one number — `CENTRAL_MERIDIAN` in `src/map/projection.js` — and one
+consequence: the meridian half a world away from it becomes the left edge of
+the picture and the right edge at the same time, and every outline lying
+across it would be drawn as a smear from one side of the map to the other.
+The whole of `data/geo/` is therefore cut at that meridian, the **seam**, when
+it is imported.
+
+**Which meridian was measured and not chosen.** `node tools/build-regions.mjs
+--seam-report` counts, over Natural Earth's own 110 m coastline, what each
+candidate from 140°E to 170°E cuts, setting aside what no candidate in the
+range avoids — Antarctica, Greenland, Iceland and the Atlantic islands, which
+the brief names and which the tool holds as eight boxes, one per place:
+
+| central meridian | seam | polygons cut | land area cut (deg²) | clearance | what is cut |
+|---|---|---|---|---|---|
+| 140°E | 40°W | 1 | 4,158.3 | 3.33° | Brazil |
+| 145°E | 35°W | 1 | 4,158.3 | 8.33° | Brazil |
+| **150°E** | **30°W** | **0** | **0.0** | **4.73°** | **—** |
+| 155°E | 25°W | 0 | 0.0 | 0.67° | — |
+| 160°E | 20°W | 0 | 0.0 | 2.38° | — |
+| 165°E | 15°W | 1 | 8,900.1 | 5.02° | Gambia, Guinea, Guinea-Bissau, Mauritania, Morocco, Senegal, W. Sahara |
+| 170°E | 10°W | 1 | 8,900.1 | 0.02° | Guinea, Liberia, Mali, Mauritania, Morocco, W. Sahara |
+
+Three of the seven cut nothing, which is a real tie and not a result, so it is
+broken by **clearance**: how far the seam runs from the nearest land it misses.
+150°E wins it at 4.73°, against 160°E's 2.38° and 155°E's 0.67°. Two things
+say the same thing again. The seams of 155°E and 160°E **cut Iceland**, which
+is set aside from the count only because no candidate could have been asked to
+miss Greenland; 150°E's does not. And measured against the **10 m** coastline
+the base map will be built from (M36 — `ne_10m_land` and
+`ne_10m_minor_islands`, 9,632 polygons), 30°W is the only candidate in the
+range that cuts no polygon at all except Greenland's and Antarctica's: 155°E
+cuts two of Cape Verde's, 160°E cuts Iceland, 140°E and 145°E cut Brazil, and
+165°E and 170°E cut West Africa.
+
+**So: `CENTRAL_MERIDIAN = 150`, the seam at 30°W.** It runs down the middle of
+the Atlantic, between Flores and the central group of the Azores, 4.7° east of
+Cape Branco and 12.4° west of Africa.
 
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled

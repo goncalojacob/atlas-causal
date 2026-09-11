@@ -3,7 +3,11 @@ import assert from 'node:assert/strict';
 import { existsSync } from 'node:fs';
 import { readFile } from 'node:fs/promises';
 import path from 'node:path';
-import { buildLanes, buildLand, CONTINENT_TO_LANE } from '../tools/build-regions.mjs';
+import {
+  buildLanes, buildLand, CONTINENT_TO_LANE, FILES, SOURCE_SHA256, VENDOR_110M,
+  seamReport, chooseSeam, excludedAs, SEAM_CANDIDATES,
+} from '../tools/build-regions.mjs';
+import { readSourceJson } from '../tools/import/source.mjs';
 import { createRegionDeriver } from '../src/util/geo.js';
 import { ROOT } from './helpers.mjs';
 
@@ -79,4 +83,73 @@ test('the committed lane polygons put well-known coordinates on the expected lan
   // on the record exists as an override. The lane it lands on is not
   // asserted; only that it is a nearest-lane guess.
   assert.equal(derive({ lon: -5.32, lat: 35.89 }).method, 'nearest');
+});
+
+// --- where the world is cut -----------------------------------------------
+
+test('the seam report counts what each candidate meridian cuts, and sets aside what none can miss', () => {
+  const land = {
+    type: 'FeatureCollection',
+    features: [
+      // Across the seam of 150E and of nothing else.
+      country('across -30', '', { type: 'Polygon', coordinates: square(-35, 0, -25, 10) }),
+      // Across every candidate seam, and Antarctica's box.
+      country('antarctic', '', { type: 'Polygon', coordinates: square(-180, -85, 180, -65) }),
+      // Across the seam of 150E too, but inside the Azores' box: set aside.
+      country('azores', '', { type: 'Polygon', coordinates: square(-31, 37, -25, 39) }),
+      country('far east', '', { type: 'Polygon', coordinates: square(100, 0, 120, 20) }),
+    ],
+  };
+  const rows = seamReport(land, { type: 'FeatureCollection', features: land.features });
+  assert.deepEqual(rows.map((r) => r.meridian), [...SEAM_CANDIDATES]);
+  assert.deepEqual(rows.map((r) => r.seam), [-40, -35, -30, -25, -20, -15, -10]);
+  const at = (meridian) => rows.find((r) => r.meridian === meridian);
+
+  assert.equal(at(150).polygons, 1, 'the one shape across -30 that is nobody\'s island');
+  assert.equal(at(150).area, 100);
+  assert.deepEqual(at(150).names, ['across -30']);
+  // Both the Antarctic ring and the Azores are cut at -30, and neither is
+  // counted: they are reported on their own line instead.
+  assert.deepEqual(at(150).setAside, ['Antarctica', 'the Azores']);
+  assert.equal(at(145).polygons, 0);
+  assert.deepEqual(at(145).setAside, ['Antarctica']);
+
+  // Clearance is to the nearest land the seam does *not* cut, set aside or
+  // not: -20 is five degrees from the eastern edge of both Atlantic shapes.
+  assert.equal(at(160).clearance, 5);
+  assert.equal(at(145).clearance, 0, 'a seam that runs along an edge clears nothing');
+
+  // Fewest cut, then least area, then the seam that clears land by furthest.
+  assert.equal(chooseSeam([at(150), at(140)]).meridian, 140, 'fewest cut comes first');
+  assert.equal(chooseSeam([at(145), at(140)]).meridian, 140, 'and a tie at none is broken by the clearance');
+});
+
+test('a polygon is set aside only when it sits wholly inside a named box', () => {
+  // Western Sahara is in the Atlantic and is not an Atlantic island.
+  assert.equal(excludedAs([-17.1, 21, -8.7, 27.7]), null);
+  assert.equal(excludedAs([-24.33, 63.5, -13.61, 66.53]), 'Iceland', 'and not Greenland, whose box contains it');
+  assert.equal(excludedAs([-73.3, 60, -12.2, 83.6]), 'Greenland');
+  assert.equal(excludedAs([-180, -90, 180, -63.3]), 'Antarctica');
+  assert.equal(excludedAs([-31.3, 36.9, -25, 39.7]), 'the Azores');
+});
+
+// The measurement the seam was chosen by, against the coastline itself. It is
+// in STATUS.md and in ARCHITECTURE.md as a table; this is the same run of the
+// same tool, so the two cannot drift apart without a test saying so.
+test('the committed sources choose 150E', async (t) => {
+  const source = path.join(ROOT, ...VENDOR_110M.split('/'));
+  if (!existsSync(path.join(source, `${FILES.land}.gz`))) {
+    t.skip('the vendored Natural Earth 110m is not here');
+    return;
+  }
+  const read = async (name) => (await readSourceJson(path.join(source, `${name}.gz`), SOURCE_SHA256[name])).json;
+  const rows = seamReport(await read(FILES.land), await read(FILES.countries));
+  assert.deepEqual(rows.filter((r) => r.polygons === 0).map((r) => r.meridian), [150, 155, 160],
+    'three candidates cut no continent; the clearance is what parts them');
+  const chosen = chooseSeam(rows);
+  assert.equal(chosen.meridian, 150);
+  assert.equal(chosen.seam, -30);
+  assert.equal(chosen.polygons, 0);
+  assert.ok(chosen.clearance > 4.7 && chosen.clearance < 4.8, `${chosen.clearance}`);
+  assert.deepEqual(chosen.setAside, ['Antarctica', 'Greenland'], 'and it is the only zero-cut seam that leaves Iceland whole');
 });

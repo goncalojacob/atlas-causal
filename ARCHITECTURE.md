@@ -158,6 +158,41 @@ edge of the screen is still a chain. The graph view has no viewport of its own
 and is not narrowed by one; it says so rather than leaving the reader to
 wonder why the lanes below are shorter.
 
+*The map is centred on 150°E, and the world is cut at 30°W.* The owner asked
+for the world centred on Asia (5 September 2026). `CENTRAL_MERIDIAN` in
+`map/projection.js` is the parameter: every longitude is shifted by it and
+wrapped into [−180, 180) before it is projected, and unshifted on the way
+back. That makes the meridian half a world away — the **seam** — the left edge
+of the picture and the right edge at once, so an outline left lying across it
+would be drawn as a smear from one side of the map to the other. Every
+geometry file under `data/geo/` is therefore cut at the seam when it is
+imported (`tools/import/geometry.mjs`), and the seam is the one meridian
+nothing the map draws crosses.
+
+Which meridian is a measurement, not a taste. `node tools/build-regions.mjs
+--seam-report` counts, over Natural Earth's own coastline, what each candidate
+from 140°E to 170°E would cut, setting aside what no candidate avoids —
+Antarctica, Greenland, Iceland and the Atlantic islands:
+
+| central meridian | seam | polygons cut | land area cut (deg²) | clearance | what is cut |
+|---|---|---|---|---|---|
+| 140°E | 40°W | 1 | 4,158.3 | 3.33° | Brazil |
+| 145°E | 35°W | 1 | 4,158.3 | 8.33° | Brazil |
+| **150°E** | **30°W** | **0** | **0.0** | **4.73°** | **—** |
+| 155°E | 25°W | 0 | 0.0 | 0.67° | — |
+| 160°E | 20°W | 0 | 0.0 | 2.38° | — |
+| 165°E | 15°W | 1 | 8,900.1 | 5.02° | Gambia, Guinea, Guinea-Bissau, Mauritania, Morocco, Senegal, W. Sahara |
+| 170°E | 10°W | 1 | 8,900.1 | 0.02° | Guinea, Liberia, Mali, Mauritania, Morocco, W. Sahara |
+
+Three cut nothing, so the tie is broken by *clearance* — how far the seam runs
+from the nearest land it misses — and 150°E wins it at 4.73°, against 2.38°
+and 0.67°. It is also the only one of the three that leaves **Iceland** whole:
+the seams of 155°E and 160°E cut it, and it is set aside from the count only
+because no candidate could have been asked to miss Greenland. Measured again
+against the 10 m coastline the base map will be built from (M36), 30°W is the
+only candidate in the range that cuts no polygon at all but Greenland's and
+Antarctica's.
+
 *The automatic lanes are six.* Twelve was a list with gaps: the seventh lane
 down was never looked at, and everything under it was noise with a name. An
 explicit `lanes` list is unlimited as before — a reader who names ten actors
@@ -982,11 +1017,15 @@ atlas-causal/
 │   ├── serve.mjs                 ● local only, never deployed: the repository + PUT /__records/<kind>/<id> on 127.0.0.1
 │   ├── import/topojson.mjs  cshapes.mjs               ● offline, zero-dependency import of borders over time
 │   ├── import/simplify.mjs                            ● the name the import knows src/util/simplify.js by
+│   ├── import/geometry.mjs                            ● clipToBox (Sutherland–Hodgman, holes kept, lines cut into their runs) and splitAtMeridian over it: the cut at the projection's seam
+│   ├── import/source.mjs                              ● reading a vendored source: gunzipped by its name, and the sha256 is of the decompressed bytes
 │   ├── import/wikidata.mjs       ● identifiers and records from Wikidata; injectable fetch layer, three modes, additive
 │   ├── import/identity.mjs       ● the additive rule itself, obeyed by both imports
 │   └── import/cache/wikipedia/   ● GENERATED: article leads with their revision; never published, never data
 │
 ├── tests/                        ● node --test, zero deps: schema subset, rules, graph, dates, projection, build-index determinism
+│
+├── vendor/                       ● INPUTS, gzipped: the Natural Earth and CShapes files the geometry imports run on, because a run has no network. Never data, never a record, never served — it is not in deploy.yml's allowlist and must never be added to it. vendor/SHA256SUMS is of the decompressed files, which is what the tools check
 │
 └── .github/
     ├── ISSUE_TEMPLATE/
