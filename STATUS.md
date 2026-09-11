@@ -4288,8 +4288,8 @@ Every geometry file was regenerated from the vendored sources — Natural Earth
 110 m through `tools/build-regions.mjs`, CShapes through
 `tools/import/cshapes.mjs --geometry-only`, both reading the gzipped file and
 checking the sha256 of the decompressed bytes. **The geometry went from
-4,855,097 to 4,853,971 bytes: 1,126 fewer.** `data/geo/` as a whole is 158
-bytes larger, because `LICENSE` gained a paragraph.
+4,855,097 to 4,853,971 bytes: 1,126 fewer.** `data/geo/` as a whole is 489
+bytes larger, because `LICENSE` gained two paragraphs saying what the cut did.
 
 | file | before | after | Δ |
 |---|---|---|---|
@@ -4302,8 +4302,8 @@ bytes larger, because `LICENSE` gained a paragraph.
 | `presences/1946-1974.json` | 846,877 | 846,781 | −96 |
 | `presences/1975-2019.json` | 880,280 | 879,672 | −608 |
 | **the geometry** | **4,855,097** | **4,853,971** | **−1,126** |
-| `LICENSE` (prose) | 2,970 | 4,254 | +1,284 |
-| **`data/geo/` whole** | **4,858,067** | **4,858,225** | +158 |
+| `LICENSE` (prose) | 2,970 | 4,585 | +1,615 |
+| **`data/geo/` whole** | **4,858,067** | **4,858,556** | +489 |
 
 The coastline and the lane polygons grew because Greenland was cut in two,
 which is the one landmass at 30°W; the Americas lane went from 73 polygons to

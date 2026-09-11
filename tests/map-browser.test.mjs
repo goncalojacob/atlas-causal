@@ -237,6 +237,31 @@ const CHAIN = 'return new URLSearchParams(location.search).get("chain");';
 // The map drew the consequence line and then refused to follow it: the same
 // click walked the chain in the graph and threw it away here (health review
 // B, finding 10).
+// M39a. With 150E in the middle of the picture, +-180 is thirty degrees right
+// of centre and a box across it is an ordinary view. The state used to sort
+// the two longitudes, which turned this box into its complement — the other
+// 340 degrees — and put nearly every event back in view. The fixture places
+// run -35 to 25 east with one at 100, so the honest answer for the Pacific is
+// that none of them is in it.
+test('a box across the antimeridian is the strip it names, not its complement', { skip }, async () => {
+  await wide(async (page, url) => {
+    // Not READY: no fixture mark is in the Pacific, so there is no mark to
+    // wait for — which is the point. The note under the lanes is the signal.
+    const COUNTED = 'return (document.querySelector(".timeline-note span")?.textContent ?? "").includes("in view");';
+    await open(page, url('?fixtures=1&bbox=170,-20,-170,0'), COUNTED);
+    const shown = await page.eval(TIMELINE);
+    assert.match(shown.search, /bbox=170,-20,-170,0/, 'the box survives being read and written again');
+    assert.equal(shown.filtered, true);
+    assert.equal(shown.note, '0 of 11 events in view');
+    assert.deepEqual(shown.bars, []);
+
+    // And the same strip the other way round really is the rest of the world.
+    await open(page, url('?fixtures=1&bbox=-170,-20,170,0'), READY);
+    const wideBox = await page.eval(TIMELINE);
+    assert.ok(wideBox.bars.length > 0, 'the complement holds the fixtures');
+  });
+});
+
 test('a click on a consequence walks the chain on the map and on the timeline', { skip }, async () => {
   await wide(async (page, url) => {
     await open(page, url('?fixtures=1&selected=fixture-event-a'), READY);

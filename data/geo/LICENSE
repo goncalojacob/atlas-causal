@@ -14,6 +14,9 @@ Natural Earth (land-present.json, regions.json)
   What the import changed: coordinates are Natural Earth's own, to the
   precision it publishes. Since M39a every outline is cut at 30 degrees
   west, the meridian the map is cut at (see below); nothing else is altered.
+  The cut divides Greenland, which is the one landmass there, and nothing
+  else: land-present.json went from 125,938 to 126,436 bytes and
+  regions.json from 221,050 to 221,298.
 
 CShapes 2.0 (presences/*.json)
   Licence: CC BY-NC-SA 4.0 — https://creativecommons.org/licenses/by-nc-sa/4.0/
@@ -58,8 +61,10 @@ CShapes 2.0 (presences/*.json)
   other. The cut adds points at that one longitude and removes none, except
   where a vertex was already a repeat of the one before it; no CShapes
   outline actually reaches 30 degrees west, so the shards lost 1,872 bytes
-  of duplicate vertices and gained nothing. Nothing else is altered; every
-  date, status, owner and capital is the dataset's own.
+  of duplicate vertices and gained nothing: 888,209 → 888,017, 1,114,091 →
+  1,113,499, 774,581 → 774,197, 846,877 → 846,781 and 880,280 → 879,672 bytes
+  for the five periods in order. Nothing else is altered; every date, status,
+  owner and capital is the dataset's own.
 
 palette.json
   Derived from the CShapes outlines above — it is the graph colouring of who
